@@ -20,6 +20,11 @@ function pointBuyCost(score) {
     }
 }
 
+// MOD 4535992 convert a score 
+function pointBuyCost2(score) {
+    return score-10;
+}
+
 // recalculate the point buy total selected in the point buy system section
 function pointBuySum() {
   var i;
@@ -38,9 +43,60 @@ function pointBuySum() {
   return point_buy_total;
 }
 
+// MOD 4535992 recalculate the point buy total selected in the point buy system section
+function pointBuySum2() {
+  var i;
+  var point_buy_total = 0;
+
+
+  for (i = 0; i < 6; i++) {
+  console.log(
+      document.getElementById("pb" + i + "X_cost").innerHTML
+      );
+    point_buy_total += parseInt(
+      document.getElementById("pb" + i + "X_cost").innerHTML
+    );
+  }
+
+  return point_buy_total;
+}
+
 // Returns a random integer between min (included) and max (included)
 function getRandomIntInclusive(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+//MOD 4535992
+function roll4droplowestAtLeast3(element) {
+  // 4d6
+  var dice = [
+    getRandomIntInclusive(3, 6),//MOD 4535992 lowe is 3 not 1
+    getRandomIntInclusive(3, 6),//MOD 4535992 lowe is 3 not 1
+    getRandomIntInclusive(3, 6),//MOD 4535992 lowe is 3 not 1
+    getRandomIntInclusive(3, 6)//MOD 4535992 lowe is 3 not 1
+  ];
+
+  // find lowest
+  var lowest = dice[0];
+  for (var i = 1; i < dice.length; i++) {
+    if (dice[i] < lowest) {
+      lowest = dice[i];
+    }
+  }
+
+  // sum & drop lowest
+  var result = (dice.reduce(function(a, b) { return a + b; }) - lowest);
+
+  // pretty print output & shove results into the given element
+  var result_string = '';
+  for (i = 0; i < dice.length; i++) {
+    result_string += dice[i] + ((i < dice.length -1) ? ' + ' : '');
+  }
+
+  result_string += ' (drop ' + lowest + ') = '
+    + ((result < 10) ? '<b>0</b>' : '') + '<b>'+ result + '</b>';
+  element.innerHTML = result_string;
+
+  return result;
 }
 
 // roll 4 six sided dice, sum the results, drop the lowest value, and
@@ -99,6 +155,28 @@ function rollAbilityScores(list_id, total_id) {
   document.getElementById(total_id).innerHTML = point_buy_total;
 }
 
+//MOD 4535992
+// fill the given list with newly rolled ability scores. assumes list has a
+// child <li> for each score.
+function rollAbilityScoresAtleast3(list_id, total_id) {
+  var list = document.getElementById(list_id);
+  var point_buy_total = 0;
+
+  for (var i = 0; i < list.childElementCount; i++) {
+    // roll each ability score and grab it's point buy cost
+	ability_score = roll4droplowestAtLeast3(list.children[i]);
+    point_buy_cost = pointBuyCost2(ability_score);
+    point_buy_total += point_buy_cost;
+
+    // shove the results into the page
+    list.children[i].innerHTML +=
+      ', point stat cost = ' + '<b>' + point_buy_cost + '<b>';
+  }
+
+  // dont forget to put in the point buy total
+  document.getElementById(total_id).innerHTML = point_buy_total;
+}
+
 // Increment a given ability score
 function incrScore(element_id) {
   return changeScore(element_id, 1);
@@ -129,6 +207,37 @@ function changeScore(element_id, delta) {
   document.getElementById(element_id).innerHTML = score;
   document.getElementById("pbs_total").innerHTML = pointBuySum();
 }
+
+// MOD 4535992 Increment a given ability score
+function incrScore2(element_id) {
+  return changeScore2(element_id, 1);
+}
+
+// MOD 4535992 Decrement a given ability score
+function decrScore2(element_id) {
+  return changeScore2(element_id, -1);
+}
+
+// MOD 4535992 Implementation of actual score changes: calculates bonus and point buy totals
+function changeScore2(element_id, delta) {
+  // calculate the new current score and make sure it's sensible
+  score = parseInt(document.getElementById(element_id).innerHTML);
+  score += delta;
+  if ((score > 16) || (score < 1)) {
+    return;
+  }
+
+  // figure out the new score's point value and modifier
+  point_buy_cost = pointBuyCost2(score);
+  score_mod = Math.floor((score - 10) / 2);
+
+
+  // shove the results in the page and recalc the tot point buy value
+  document.getElementById(element_id + "_cost").innerHTML = point_buy_cost;
+  document.getElementById(element_id + "_mod").innerHTML = score_mod;
+  document.getElementById(element_id).innerHTML = score;
+  document.getElementById("pbsX_total").innerHTML = pointBuySum2();
+}
 </script>
 </head>
 
@@ -150,6 +259,7 @@ function changeScore(element_id, delta) {
   <div style="padding:10px;">
     <u>Point Buy Total</u> = <b> <span id="pb_total"> 0 </span> </b>
   </div>
+  <br></br>
   <h2> Point Buy System </h2>
   <table id="pb_table">
     <tr>
@@ -221,7 +331,99 @@ function changeScore(element_id, delta) {
   </table>
   <div style="padding:10px;">
     <u>Point Buy Total</u> = <b> <span id="pbs_total"> 0 </span> </b>
+  </div>  
+  <br></br>
+  <br></br> 
+  <div>
+    <button type="button" onclick="rollAbilityScoresAtleast3('as_list_2', 'pb_total_2')"/>
+      Roll 4d6 (drop lowest at least 3)
+    </button>
   </div>
+  <list id="as_list_2">
+    <li id="as1">0 </li>
+    <li id="as2">0 </li>
+    <li id="as3">0 </li>
+    <li id="as4">0 </li>
+    <li id="as5">0 </li>
+    <li id="as6">0 </li>
+  </list>
+  <div style="padding:10px;">
+    <u>Point Stat Total</u> = <b> <span id="pb_total_2"> 0 </span> </b>
+  </div>
+  <br></br>
+  <h2> Point Stat System </h2>
+  <table id="pb_table_2">
+    <tr>
+      <td> STR </td>
+      <td>
+        <span id="pb0X">10</span> (<span id="pb0X_mod">-1</span>)
+      </td>
+      <td>
+        <button type="button" onclick="incrScore2('pb0X')"> + </button>
+        <button type="button" onclick="decrScore2('pb0X')"> - </button>
+        Point Stat Cost = <span id="pb0X_cost">0</span>
+      </td>
+    </tr>
+    <tr>
+      <td> DEX </td>
+      <td>
+        <span id="pb1X">10</span> (<span id="pb1X_mod">-1</span>)
+      </td>
+      <td>
+        <button type="button" onclick="incrScore2('pb1X')"> + </button>
+        <button type="button" onclick="decrScore2('pb1X')"> - </button>
+        Point Stat Cost = <span id="pb1X_cost">0</span>
+      </td>
+    </tr>
+    <tr>
+      <td> CON </td>
+      <td>
+        <span id="pb2X">10</span> (<span id="pb2X_mod">-1</span>)
+      </td>
+      <td>
+        <button type="button" onclick="incrScore2('pb2X')"> + </button>
+        <button type="button" onclick="decrScore2('pb2X')"> - </button>
+        Point Stat Cost = <span id="pb2X_cost">0</span>
+      </td>
+    </tr>
+    <tr>
+      <td> INT </td>
+      <td>
+        <span id="pb3X">10</span> (<span id="pb3X_mod">-1</span>)
+      </td>
+      <td>
+        <button type="button" onclick="incrScore2('pb3X')"> + </button>
+        <button type="button" onclick="decrScore2('pb3X')"> - </button>
+        Point Stat Cost = <span id="pb3X_cost">0</span>
+      </td>
+    </tr>
+    <tr>
+      <td> WIS </td>
+      <td>
+        <span id="pb4X">10</span> (<span id="pb4X_mod">-1</span>)
+      </td>
+      <td>
+        <button type="button" onclick="incrScore2('pb4X')"> + </button>
+        <button type="button" onclick="decrScore2('pb4X')"> - </button>
+        Point Stat Cost = <span id="pb4X_cost">0</span>
+      </td>
+    </tr>
+    <tr>
+      <td> CHA </td>
+      <td>
+        <span id="pb5X">10</span> (<span id="pb5X_mod">-1</span>)
+      </td>
+      <td>
+        <button type="button" onclick="incrScore2('pb5X')"> + </button>
+        <button type="button" onclick="decrScore2('pb5X')"> - </button>
+        Point Stat Cost = <span id="pb5X_cost">0</span>
+      </td>
+    </tr>
+  </table>
+  <div style="padding:10px;">
+    <u>Point Stat Total</u> = <b> <span id="pbsX_total"> 0 </span> </b>
+  </div>
+  
 </body>
 
 </html>
