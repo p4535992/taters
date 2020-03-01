@@ -223,7 +223,7 @@ function changeScore2(element_id, delta) {
   // calculate the new current score and make sure it's sensible
   score = parseInt(document.getElementById(element_id).innerHTML);
   score += delta;
-  if ((score > 16) || (score < 1)) {
+  if ((score > 20) || (score < 1)) {
     return;
   }
 
