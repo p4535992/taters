@@ -1,0 +1,219 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "GUARDS",
+				"abbreviation": "GUARDS",
+				"full": "Guards (version 1.0)",
+				"authors": [
+					"Igor Moreno"
+				],
+				"convertedBy": [
+					"p4535992"
+				],
+				"version": "2020.03.14",
+				"url": "",
+				"targetSchema": "1.6.3"
+			}
+		],
+		"dateAdded": 1555319662,
+		"dateLastModified": 1555319662
+	},
+	"monster": [
+		{
+			"name": "Guard (Simple)[GUARD01_Guard]",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"source": "GUARDS",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"Chain Shirt",
+						"Shield"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d8 + 2",
+				"average": 11
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 12,
+			"con": 12,
+			"int": 10,
+			"wis": 11,
+			"cha": 10,
+			"passive": 12,
+			"cr": "1/8",
+			"shortName": "Guard (Simple)",
+			"languages": [
+				"Any One Language (Usually Common)"
+			],
+			"fluff": {
+				"entries": [
+					"Simple Guard"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/BzTPqtu.png"
+						}
+					}
+				]
+			},
+			"isNpc": true,
+			"damageTags": [
+				"P"
+			],
+			"tokenUrl": "https://i.imgur.com/BzTPqtu.png",
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"perception": "+2"
+			},
+			"action": [
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 20/60 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Guard Captain (dandwiki)[GUARD02_Guard_Captain]",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"source": "BAROVIANVAMPIRES",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"Chain Shirt",
+						"Shield"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d8 + 14",
+				"average": 45
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 14,
+			"con": 14,
+			"int": 10,
+			"wis": 12,
+			"cha": 13,
+			"passive": 13,
+			"cr": "1",
+			"languages": [
+				"Any One Language (Usually Common)"
+			],
+			"fluff": {
+				"entries": [
+					"Guard captains<\\/a> are particularly influential guards<\\/a>,\\r\\n being effectively one step higher in their chain of command. One may \\r\\nhave authority over anywhere from two to twenty lower-ranking guards. \\r\\nWhen keeping watch over a large area with a sizeable unit, the captain \\r\\ntends towards a central position from which commands can be issued most \\r\\neffectively. If a captain swears fealty to a kingdom or other large \\r\\norganization, it is likely subservient to knights<\\/a>, generals, or high-ranking nobles<\\/a>. <\\/p>"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/uGGJTnY.png"
+						}
+					}
+				]
+			},
+			"isNpc": true,
+			"damageTags": [
+				"S",
+				"P"
+			],
+			"tokenUrl": "https://i.imgur.com/uGGJTnY.png",
+			"languageTags": [
+				"C"
+			],
+			"action": [
+				{
+					"name": "Multittack",
+					"entries": [
+						"The captain makes two melee attacks"
+					]
+				},
+				{
+					"name": "Longsword (One-Handed)",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) slashing damage."
+					]
+				},
+				{
+					"name": "Longsword (Two-Handed)",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d10 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "ShortBow",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 80/320 ft., one target. {@h}5 ({@damage 1d6}) piercing damage.",
+						"Ammunition: You can use a weapon that has the ammunition property to make a ranged attack only if you have ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack. At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.",
+						"If you use a weapon that has the ammunition property to make a melee attack, you treat the weapon as an improvised weapon (see \"Improvised Weapons\" later in the section). A sling must be loaded to deal any damage when used in this way."
+					]
+				},
+				{
+					"name": "Leadership (Recharges after a Short or Long Rest)",
+					"entries": [
+						"For 1 minute, the captain can utter a special command or warning whenever a nonhostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a {@dice d4} to its roll provided it can hear and understand the captain. A creature can benefit from only one Leadership die at a time. This effect ends if the captain is {@condition incapacitated}. (An {@condition incapacitated} creature can't take actions or reactions.)"
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RNG"
+			],
+			"shortName": "Guard Captain (dandwiki)",
+			"save": {
+				"wis": "+3"
+			},
+			"skill": {
+				"insight": "+3",
+				"perception": "+3",
+				"persuasion": "+3"
+			}
+		}
+	]
+}
