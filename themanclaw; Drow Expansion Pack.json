@@ -377,6 +377,181 @@
 				}
 			],
 			"isNpc": true
+		},
+		{
+			"name": "DROW - Drow Rogue",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Elf",
+					"Drow",
+					"Rogue"
+				]
+			},
+			"source": "DROWS",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"studded leather"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d8 + 7",
+				"average": 38
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 17,
+			"con": 12,
+			"int": 11,
+			"wis": 14,
+			"cha": 15,
+			"passive": 16,
+			"cr": "3",
+			"shortName": "Drow Rogue",
+			"fluff": {
+				"entries": [
+					"tttt"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/GgfBhE0.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/GgfBhE0.png",
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languages": [
+				"Elvish",
+				"Undercommon"
+			],
+			"languageTags": [
+				"E",
+				"U"
+			],
+			"save": {
+				"dex": "+5",
+				"wis": "+4"
+			},
+			"trait": [
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"The drow rogue has advantage on saving throws against being {@condition charmed}, and magic can't put the drow rogue to sleep."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the drow rogue has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Nimble Escape",
+					"entries": [
+						"The drow rogue can take the Disengage or Hide action as a bonus action on each of its turns."
+					]
+				},
+				{
+					"name": "SneakAttack (1/turn)",
+					"entries": [
+						"The drow rogue deals an extra 7({@dice 2d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the drow rogue that isn't {@condition incapacitated} and the drow rogue doesn't have disadvantage on the attack roll."
+					]
+				}
+			],
+			"traitTags": [
+				"Fey Ancestry",
+				"Sunlight Sensitivity"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The drow makes two ranged or two mele attacks."
+					]
+				},
+				{
+					"name": "Repeating light Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 80/320 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage, plus 7 ({@damage 2d6}) poison damage."
+					]
+				},
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) slashing damage, plus 7 ({@damage 2d6}) poison damage."
+					]
+				},
+				{
+					"name": "Dagger (Thrown)",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage, plus 7 ({@damage 2d6}) poison damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"I",
+				"S"
+			],
+			"miscTags": [
+				"RW",
+				"RNG",
+				"MW"
+			],
+			"skill": {
+				"stealth": "+9",
+				"acrobatics": "+5",
+				"deception": "+4",
+				"sleight of hand": "+5"
+			},
+			"isNpc": true,
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The drow's spellcasting ability is Charisma (spell save {@dc 11}). It can innately cast the following spells, requiring no material components:  At will: dancing lights 1/day each: darkness, faerie fire"
+					],
+					"will": [
+						"{@spell dancing lights|PHB}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell darkness|PHB}",
+							"{@spell faerie fire|PHB}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"conditionInflict": [
+				"incapacitated"
+			]
 		}
 		
 	]
