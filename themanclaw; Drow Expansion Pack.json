@@ -1,0 +1,191 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "DROWS",
+				"abbreviation": "DROWS",
+				"full": "Drow Expansion Pack(version 1.0)",
+				"authors": [
+					"themanclaw"
+				],
+				"convertedBy": [
+					"p4535992"
+				],
+				"version": "2020.03.21",
+				"url": "https://imgur.com/a/P8S84",
+				"targetSchema": "1.6.3"
+			}
+		],
+		"dateAdded": 1555319662,
+		"dateLastModified": 1555319662
+	},
+	"monster": [
+		{
+			"name": "DROW - Drow Stalker",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Elf",
+					"Drow"
+				]
+			},
+			"source": "DROWS",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"studded leather"
+					]
+				}
+			],
+			"hp": {
+				"formula": "11d8 + 11",
+				"average": 60
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 18,
+			"con": 12,
+			"int": 13,
+			"wis": 15,
+			"cha": 12,
+			"passive": 17,
+			"cr": "6",
+			"shortName": "Drow Stalker",
+			"fluff": {
+				"entries": [
+					"<div class=\"note-editable\" style=\"max-height: 300px;\" contenteditable=\"true\"><p><a href=\"https:\/\/imgur.com\/a\/P8S84\">Drow Stalker<\/a><\/p><p><span class=\"userscript-fontstyle0\">Drow Stalkers are expert hunters of sentient prey. They attack unseen, and by the time their enemies know what is happening, it is already too late, as they are hit with a barrage of poisonous arrows and flurry of blades from shadows in all directions. In the rare event that an enemy manages to flee, they are quickly overtaken by the skilled trackers, only to realize their fate is inescapable.<\/span> \r\n<br style=\"font-style: normal ; font-variant: normal ; font-weight: normal ; letter-spacing: normal ; line-height: normal ; text-indent: 0px ; text-transform: none ; white-space: normal ; word-spacing: 0px\"><\/p><\/div>"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/c4dnyTe.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/c4dnyTe.png",
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languages": [
+				"Elvish",
+				"Undercommon"
+			],
+			"languageTags": [
+				"E",
+				"U"
+			],
+			"save": {
+				"dex": "+10",
+				"int": "+4",
+				"wis": "+5"
+			},
+			"skill": {
+				"acrobatics": "+7",
+				"perception": "+7",
+				"stealth": "+10",
+				"survival": "+5"
+			},
+			"trait": [
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"The drow stalker has advantage on saving throws against being {@condition charmed}, and magic can't put the stalker to sleep."
+					]
+				},
+				{
+					"name": "Innate Spellcasting",
+					"entries": [
+						"The drow stalker's innate spellcasting ability is Charisma (spell save {@dc 12}, {@hit 4} to hit with spell attacks). It can innately cast the following spells, requirining no material components:",
+						"At will: dancing lights ",
+						"1/day each: darkness, faerie fire"
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the drow stalker has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Ambusher",
+					"entries": [
+						"The drow stalker has advantage on attack rolls against any creature it has surprised."
+					]
+				},
+				{
+					"name": "Evasive Fire",
+					"entries": [
+						"After making a ranged attack, as a bonus action, the drow may move up to 15 ft. directly away from its target.",
+						"This action does not provoke an attack of opportunity even if  there was an enemy within 5 ft., so long as that enemy is also the one targeted for the ranged attack, which still has disadvantage under those circumstances."
+					]
+				},
+				{
+					"name": "Sneak Attack (1/turn)",
+					"entries": [
+						"The drow stalker deals an extra 10 ({@damage 3d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the drow stalker that isn't {@condition incapacitated} and the drow stalker doesn't have disadvantage on the attack roll."
+					]
+				}
+			],
+			"traitTags": [
+				"Fey Ancestry",
+				"Sunlight Sensitivity",
+				"Ambusher",
+				"Sneak Attack"
+			],
+			"conditionInflict": [
+				"unconscious",
+				"poisoned",
+				"incapacitated"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The drow makes two melee or ranged attack."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage, plus 10({@damage 3d6}) poison damage"
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 150/600 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage, plus 10({@damage 3d6}) poison damage.",
+						"Description:",
+						"Ranged WeaponAttack: {@hit 7} to hit, range 150/600 ft. one creature. {@h}8 ({@damage 1d8 + 4}) piercing damage, plus 10 ({@damage 3d6}) poison damage, and the target must succeed on a {@dc 15} Constitution saving throw or be {@condition poisoned} for 1 hour. If the saving throw fails by 5 or more, the target is also {@condition unconscious} while {@condition poisoned} in this way. The target wakes up if it take damage or if another creature takes an action to shake it awake."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			]
+		}
+		
+	]
+}
