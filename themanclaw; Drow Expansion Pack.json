@@ -202,7 +202,10 @@
 			"spellcastingTags": [
 				"I"
 			],
-			"isNpc": true
+			"isNpc": true,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "DROW - Drow Scourge",
@@ -376,7 +379,10 @@
 					]
 				}
 			],
-			"isNpc": true
+			"isNpc": true,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "DROW - Drow Rogue",
@@ -551,6 +557,797 @@
 			],
 			"conditionInflict": [
 				"incapacitated"
+			],
+			"environment": [
+				"underdark"
+			]
+		},
+		{
+			"name": "DROW - Drow Raider (Lesser)",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Elf",
+					"Drow",
+					"Raider"
+				]
+			},
+			"source": "DROWS",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"studded leather"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d8 + 8",
+				"average": 32
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 12,
+			"int": 11,
+			"wis": 12,
+			"cha": 12,
+			"passive": 13,
+			"cr": "2",
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languages": [
+				"Elvish",
+				"Undercommon"
+			],
+			"languageTags": [
+				"E",
+				"U"
+			],
+			"shortName": "Drow Raider (Lesser)",
+			"save": {
+				"dex": "+5"
+			},
+			"skill": {
+				"perception": "+3",
+				"stealth": "+5"
+			},
+			"trait": [
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"The drow raider has advantage on saving throws against being {@condition charmed}, and magic can't put the drow",
+						"raider to sleep"
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the drow raider has disadvantage on attack roils, as well as on Wisdom (Perception) checks that rely on sight."
+					]
+				}
+			],
+			"traitTags": [
+				"Fey Ancestry",
+				"Sunlight Sensitivity"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The drow raider's innate spellcasting ability is Charisma (spell save {@dc 11}, +3 to hit with spell attacks). It can innately cast the following spells, requiring no material components:",
+						"At will: dancing lights",
+						"1/day: darkness, faerie fire"
+					],
+					"will": [
+						"{@spell dancing lights|PHB}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell darkness|PHB}",
+							"{@spell faerie fire|PHB}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"isNpc": true,
+			"action": [
+				{
+					"name": "Swift Strike",
+					"entries": [
+						"If the drow makes a dash action in a direct line toward a creature, it may make a single melee attack against it."
+					]
+				},
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The drow makes two shortsword attacks."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Hand Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 30/120 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage.",
+						"Description:",
+						"{@atk rw} {@hit 5} to hit. range 30/120 ft., one creature. {@h}6 ({@damage 1d6 + 3}) piercing damage and the target must succeed on a {@dc 13} Constitution saving throw or be {@condition poisoned} for 1 hour. If the saving throw fails by 5 or more, the target is also {@condition unconscious} while {@condition poisoned} in this way. The target wakes up if it takes damage or if another creature takes an action to shake it awake."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			],
+			"conditionInflict": [
+				"unconscious",
+				"poisoned"
+			],
+			"fluff": {
+				"entries": [
+					"<div class=\"note-editable\" style=\"max-height: 300px;\" contenteditable=\"true\"><p><a href=\"https:\/\/imgur.com\/a\/P8S84\">Drow raider<\/a><\/p><p>One of the reasons the drow have garnered so much animosity is the raids they launch on the surface, plundering settlements for riches, and taking some of those who survive the slaughter and rape as slaves.<br><\/p>The raiders who carry out these acts are not only cold-hearted individuals, but also warriors fierce enough to destroy local resistance.<br><br>VARIANT: CR 1 DROW RAIDERS<br>If slightly less powerful drow fighters better suit you game, their Challenge Rating can easily be reduced<br>1 by doing the following: Lower their hit points to 3 remove their shields (reducing their AC to 15), and<br>take away the poison damage done with their shortdwords.<span class=\"userscript-fontstyle0\" style=\"font-size: 8pt\"><\/span><p><span class=\"userscript-fontstyle0\" style=\"font-size: 6pt\"><\/span>&nbsp;<br style=\"font-style: normal ; font-variant: normal ; font-weight: normal ; letter-spacing: normal ; line-height: normal ; text-indent: 0px ; text-transform: none ; white-space: normal ; word-spacing: 0px\"><\/p><\/div>"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/nIpgNNR.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"underdark"
+			],
+			"tokenUrl": "https://i.imgur.com/nIpgNNR.png"
+		},
+		{
+			"name": "DROW - Drow Raider",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Elf",
+					"Drow",
+					"Raider"
+				]
+			},
+			"source": "DROWS",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"studded leather",
+						"shield"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d8 + 8",
+				"average": 44
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 12,
+			"int": 11,
+			"wis": 12,
+			"cha": 12,
+			"passive": 13,
+			"cr": "2",
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languages": [
+				"Elvish",
+				"Undercommon"
+			],
+			"languageTags": [
+				"E",
+				"U"
+			],
+			"shortName": "Drow Raider",
+			"save": {
+				"dex": "+5"
+			},
+			"skill": {
+				"perception": "+3",
+				"stealth": "+5"
+			},
+			"trait": [
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"The drow raider has advantage on saving throws against being {@condition charmed}, and magic can't put the drow",
+						"raider to sleep"
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the drow raider has disadvantage on attack roils, as well as on Wisdom (Perception) checks that rely on sight."
+					]
+				}
+			],
+			"traitTags": [
+				"Fey Ancestry",
+				"Sunlight Sensitivity"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The drow raider's innate spellcasting ability is Charisma (spell save {@dc 11}, +3 to hit with spell attacks). It can innately cast the following spells, requiring no material components:",
+						"At will: dancing lights",
+						"1/day: darkness, faerie fire"
+					],
+					"will": [
+						"{@spell dancing lights|PHB}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell darkness|PHB}",
+							"{@spell faerie fire|PHB}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"isNpc": true,
+			"action": [
+				{
+					"name": "Swift Strike",
+					"entries": [
+						"If the drow makes a dash action in a direct line toward a creature, it may make a single melee attack against it."
+					]
+				},
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The drow makes two shortsword attacks."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage, plus 3 ({@damage 1d6}) poison damage."
+					]
+				},
+				{
+					"name": "Hand Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 30/120 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage.",
+						"Description:",
+						"{@atk rw} {@hit 5} to hit. range 30/120 ft., one creature. {@h}6 ({@damage 1d6 + 3}) piercing damage and the target must succeed on a {@dc 13} Constitution saving throw or be {@condition poisoned} for 1 hour. If the saving throw fails by 5 or more, the target is also {@condition unconscious} while {@condition poisoned} in this way. The target wakes up if it takes damage or if another creature takes an action to shake it awake."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			],
+			"conditionInflict": [
+				"unconscious",
+				"poisoned"
+			],
+			"fluff": {
+				"entries": [
+					"<div class=\"note-editable\" style=\"max-height: 300px;\" contenteditable=\"true\"><p><a href=\"https:\/\/imgur.com\/a\/P8S84\">Drow raider<\/a><\/p><p>One of the reasons the drow have garnered so much animosity is the raids they launch on the surface, plundering settlements for riches, and taking some of those who survive the slaughter and rape as slaves.<br><\/p>The raiders who carry out these acts are not only cold-hearted individuals, but also warriors fierce enough to destroy local resistance.<br><br>VARIANT: CR 1 DROW RAIDERS<br>If slightly less powerful drow fighters better suit you game, their Challenge Rating can easily be reduced<br>1 by doing the following: Lower their hit points to 3 remove their shields (reducing their AC to 15), and<br>take away the poison damage done with their shortdwords.<span class=\"userscript-fontstyle0\" style=\"font-size: 8pt\"><\/span><p><span class=\"userscript-fontstyle0\" style=\"font-size: 6pt\"><\/span>&nbsp;<br style=\"font-style: normal ; font-variant: normal ; font-weight: normal ; letter-spacing: normal ; line-height: normal ; text-indent: 0px ; text-transform: none ; white-space: normal ; word-spacing: 0px\"><\/p><\/div>"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/JmI2w1H.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"underdark"
+			],
+			"tokenUrl": "https://i.imgur.com/JmI2w1H.png"
+		},
+		{
+			"name": "DROW - Drow Novice Mage",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Elf",
+					"Drow",
+					"Mage",
+					"Novice"
+				]
+			},
+			"source": "DROWS",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 11,
+					"from": [
+						"14 with mage armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d8 + 0",
+				"average": 18
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 12,
+			"con": 10,
+			"int": 15,
+			"wis": 12,
+			"cha": 11,
+			"passive": 13,
+			"cr": "1",
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languages": [
+				"Elvish",
+				"Undercommon",
+				"Abyssal"
+			],
+			"languageTags": [
+				"E",
+				"U",
+				"AB"
+			],
+			"shortName": "Drow Novice Mage",
+			"skill": {
+				"arcana": "+4",
+				"perception": "+3",
+				"stealth": "+3"
+			},
+			"trait": [
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"The drow novice mage has advantage on saving throws against being {@condition charmed}, and magic can't put the drow novice mage to sleep"
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the drow novice mage has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight"
+					]
+				}
+			],
+			"traitTags": [
+				"Fey Ancestry",
+				"Sunlight Sensitivity"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The drow novice mage's innate spellcasting ability is Charisma (spell save {@dc 10}, +2 to hit with spell attacks). It can innately cast",
+						"the following spells, requiring no material components:",
+						"At will: dancing lights",
+						"1/day: darkness,faerie fire"
+					],
+					"will": [
+						"{@spell dancing lights|PHB}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell darkness|PHB}",
+							"{@spell faerie fire|PHB}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The drow novice mage is a 4th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC12, +4 to hit with spell attacks).",
+						"The drow novice mage has the following spells prepared:",
+						"Cantrip (at will): mage hand, minor illusion, poison spray",
+						"1st level (4 slots): mage armor, magic missile,",
+						"2nd level (3 slots): alter self,scorching ray"
+					],
+					"will": [
+						"{@spell mage hand|PHB}",
+						"{@spell minor illusion|PHB}",
+						"{@spell poison spray|PHB}"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell mage armor|PHB}",
+								"{@spell magic missile|PHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell alter self|PHB}",
+								"{@spell scorching ray|PHB}"
+							],
+							"slots": 3
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"isNpc": true,			
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			],
+			"conditionInflict": [
+				"unconscious",
+				"poisoned"
+			],
+			"fluff": {
+				"entries": [
+					"<div class=\"note-editable\" style=\"max-height: 300px;\" contenteditable=\"true\"><p><a href=\"https:\/\/imgur.com\/a\/P8S84\">Drow Novice Mage<\/a><\/p><p><span class=\"userscript-fontstyle0\">One of the reasons drow mages are so powerful is that they have several human lifetimes to study magic. Gaining true mastery of magic for most drow mages takes a long time. It can be difficult for a drow mage to find a master because, in the true unforgiving spirit of drow society, a master might see a student as a threat to his own power or life. As such, an aspiring drow mage will spend decades working to forge (usually) his own fate<\/span> \r\n<br style=\"font-style: normal ; font-variant: normal ; font-weight: normal ; letter-spacing: normal ; line-height: normal ; text-indent: 0px ; text-transform: none ; white-space: normal ; word-spacing: 0px\"><\/p><\/div>"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/GOBSNhd.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"underdark"
+			],
+			"tokenUrl": "https://i.imgur.com/GOBSNhd.png"
+		},
+		{
+			"name": "DROW - Drow Matriarch",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Elf",
+					"Drow",
+					"Matriarch"
+				]
+			},
+			"source": "DROWS",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"enchanted studded leather"
+					]
+				}
+			],
+			"hp": {
+				"formula": "21d8 + 42",
+				"average": 136
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 18,
+			"con": 14,
+			"int": 16,
+			"wis": 16,
+			"cha": 16,
+			"passive": 21,
+			"cr": "12",
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languages": [
+				"Elvish",
+				"Undercommon",
+				"Abyssal",
+				"Common"
+			],
+			"languageTags": [
+				"E",
+				"U",
+				"AB",
+				"C"
+			],
+			"shortName": "Drow Matriarch",
+			"skill": {
+				"perception": "+11",
+				"stealth": "+8",
+				"deception": "+7",
+				"history": "+7",
+				"intimidation": "+7",
+				"persuasion": "+7"
+			},
+			"trait": [
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"The drow matriarch has advantage on saving throws against being {@condition charmed}, and magic can't put the matriarch to sleep"
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the drow matriarch has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+					]
+				}
+			],
+			"traitTags": [
+				"Fey Ancestry",
+				"Sunlight Sensitivity"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The matriarch's innate spellcasting ability is Charisma (spell save {@dc 17}, +7 to hit with spell attacks). She can innately cast the following spells, requiring no material components:",
+						"At will: dancing lights",
+						"1/day: darkness,faerie fire, levitate (self only)"
+					],
+					"will": [
+						"{@spell dancing lights|PHB}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell darkness|PHB}",
+							"{@spell faerie fire|PHB}",
+							"{@spell levitate|PHB}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The matriarch is a 10th-level spellcaster. Her spellcasting ability is Wisdom (spell save {@dc 15}, +7 to hit with spell attacks). The drow matriarch has the following spells prepared:",
+						"Cantrip (at will): message, mending, thaumaturgy",
+						"1st level (4 slots): absorb elements, animal friendship, fog cloud",
+						"2nd level (3 slots): silence, spider climb, suggestion, web",
+						"3rd level (3 slots): bestow curse, haste, protection from energy",
+						"4th level (3 slots): freedom of movement, otiluke's resilient sphere",
+						"5th level (2 slots): Insect plague (spiders)"
+					],
+					"will": [
+						"{@spell mending|PHB}",
+						"{@spell message|PHB}",
+						"{@spell thaumaturgy|PHB}"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell absorb elements|XGE}",
+								"{@spell animal friendship|PHB}",
+								"{@spell fog cloud|PHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell silence|PHB}",
+								"{@spell spider climb|PHB}",
+								"{@spell suggestion|PHB}",
+								"{@spell web|PHB}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell bestow curse|PHB}",
+								"{@spell haste|PHB}",
+								"{@spell protection from energy|PHB}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell freedom of movement|PHB}",
+								"{@spell Otiluke's resilient sphere|PHB}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell insect plague|PHB} (spiders)"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"isNpc": true,
+			"action": [
+				{
+					"name": "Leadership (recharges after a long or short rest)",
+					"entries": [
+						"For 1 minute, the matriarch can utter a special command or warning whenever a non-hostile creature that she can see within 30 feet of her makes an attack roll or a saving throw. The creature can add a {@dice d6} to its roll provided it can hear and understand the matriarch. A creature can benefit from only one Leadership die at a time. This effect ends if the matriarch is {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The matriarch makes two attacks with her shortsword."
+					]
+				},
+				{
+					"name": "(Enchanted) Rapier",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d8 + 6}) piercing damage, plus 10 ({@damage 3d6}) poison damage."
+					]
+				},
+				{
+					"name": "Hand Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 30/120 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage.",
+						"Description:",
+						"Ranged WeaponAttack: {@hit 8} to hit, range 30/120 ft., one creature. Hit 7 ({@damage 1d6 + 4}) piercing damage, and the target must succeed on a {@dc 17} Constitution saving throw or be {@condition poisoned} for 1 hour. If the saving throw fails by 5 or more, the target is also {@condition unconscious} while {@condition poisoned} in this way. The target wakes up if it takes damage or another creature takes an action to shake it awake."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"damageTags": [
+				"P",
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			],
+			"conditionInflict": [
+				"unconscious",
+				"poisoned"
+			],
+			"fluff": {
+				"entries": [
+					"<div class=\"note-editable\" style=\"max-height: 300px;\" contenteditable=\"true\"><p><a href=\"https:\/\/imgur.com\/a\/P8S84\">Drow Matriarch<\/a><\/p><p>Drow have a matriarchal society. Females of noble birth must fight tooth and nail with other female. competitors to secure a place power. Sometimes this is done way of shrewd power politics. Other times, a noble female drow will have to use her own physical force to get her way. <br><\/p><\/div>"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/qmbFgUB.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"underdark"
+			],
+			"tokenUrl": "https://i.imgur.com/qmbFgUB.png",
+			"save": {
+				"dex": "+8",
+				"cha": "+7",
+				"con": "+6",
+				"wis": "+7"
+			},
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"The matriarch adds 4 to its AC against one melee attack that would hit her. So, the matriarch must see the attacked and be wielding a weapon."
+					]
+				}
+			],
+			"legendaryActions": 4,
+			"legendaryHeader": [
+				"The drow matriarch can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The drow matriarch regains spent legendary actions at the start of its tum."
+			],
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"The matriarch moves up to her speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Rapier (Limit 2/Turn)",
+					"entries": [
+						"The matriarch makes one attack with her rapier (or other melee weapon if disarmed)."
+					]
+				},
+				{
+					"name": "Hand Crossbow (Limit 1/Turn)",
+					"entries": [
+						"If the matriarch has not already fired her crossbow, she may make an attack with it."
+					]
+				},
+				{
+					"name": "Ward (Costs 2 Actions)",
+					"entries": [
+						"Any creature who targets the matriarch must first make a {@dc 15} Wisdom saving throw. On a failed save, the creature must choose a new target or lose the attack or spell. This ability doesn't protect the matriarch from area effects, such as the explosion of a fireball. If the matriarch makes an attack or casts a spell that affects an enemy creature, the ward effect ends."
+					]
+				}
 			]
 		}
 		
