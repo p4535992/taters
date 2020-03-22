@@ -184,7 +184,7 @@
 					"headerEntries": [
 						"The drow stalker's innate spellcasting ability is Charisma (spell save {@dc 12}, +4 to hit with spell attacks). It can innately cast the following spells, requirining no material components:",
 						"At will: dancing lights ",
-						"1/day each: darkness, faerie fire"
+						"1/day each: darkness, faerie fire, levitate (self only)"
 					],
 					"will": [
 						"{@spell dancing lights|PHB}"
@@ -192,7 +192,8 @@
 					"daily": {
 						"1e": [
 							"{@spell darkness|PHB}",
-							"{@spell faerie fire|PHB}"
+							"{@spell faerie fire|PHB}",
+							"{@spell levitate|PHB}"
 						]
 					},
 					"ability": "cha",
@@ -348,7 +349,7 @@
 					"name": "Innate Spellcasting",
 					"headerEntries": [
 						"The drow scourge's innate spellcasting ability is Charisma (spell save {@dc 13}, +5 to hit with spell attacks). It can innately cast the following spell, requiring no material components:",
-						"At will: dancing lights 1/day each: darkness, faerie fire"
+						"At will: dancing lights 1/day each: darkness, faerie fire, levitate (self only)"
 					],
 					"will": [
 						"{@spell dancing lights|PHB}"
@@ -356,7 +357,8 @@
 					"daily": {
 						"1e": [
 							"{@spell darkness|PHB}",
-							"{@spell faerie fire|PHB}"
+							"{@spell faerie fire|PHB}",
+							"{@spell levitate|PHB}"
 						]
 					},
 					"ability": "cha",
@@ -1349,7 +1351,763 @@
 					]
 				}
 			]
-		}
-		
+		},
+		{
+			"name": "DROW - Drow Diviner",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Elf",
+					"Drow",
+					"Diviner"
+				]
+			},
+			"source": "DROWS",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"breastplate"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d8 + 0",
+				"average": 36
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 12,
+			"con": 10,
+			"int": 14,
+			"wis": 16,
+			"cha": 14,
+			"passive": 15,
+			"cr": "4",
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languages": [
+				"Elvish",
+				"Undercommon",
+				"Common"
+			],
+			"languageTags": [
+				"E",
+				"U",
+				"C"
+			],
+			"shortName": "Drow Diviner",
+			"trait": [
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"The drow diviner has advantage on saving throws against being {@condition charmed}, and magic can't put the drow diviner to sleep."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the drow diviner disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+					]
+				}
+			],
+			"traitTags": [
+				"Fey Ancestry",
+				"Sunlight Sensitivity"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The drow diviner's innate spellcastin ability is Charisma (spell save {@dc 14} +5 to hit with spell attacks). It can innately cast the following spells, requirin no material components:",
+						"At will: dancing lights",
+						"1/day: darkness,faerie fire, levitate (self only)"
+					],
+					"will": [
+						"{@spell dancing lights|PHB}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell darkness|PHB}",
+							"{@spell faerie fire|PHB}",
+							"{@spell levitate|PHB}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The drow diviner is a 8th-level spellcaster.",
+						"spellcasting ability is Wisdom (spell save {@dc 14} +5 to hit",
+						"with spell attacks). The drow diviner has the following s prepared:",
+						"Cantrip (at will): guidance, spare the dying, thaumaturgy,",
+						"poison spray",
+						"1st level (4 slots): cure wounds, detect poison or disease,ray of",
+						"sickness",
+						"2nd level (3 slots): lesser restoration, protection from poison, web",
+						"3rd level (3 slots): conjure animals (1 giant spider), dispel",
+						"magic",
+						"4th level (2 slots): divination, evard's black tentacles"
+					],
+					"will": [
+						"{@spell guidance|PHB}",
+						"{@spell poison spray|PHB}",
+						"{@spell spare the dying|PHB}",
+						"{@spell thaumaturgy|PHB}"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell cure wounds|PHB}",
+								"{@spell detect poison and disease|PHB}",
+								"{@spell ray of sickness|PHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell lesser restoration|PHB}",
+								"{@spell protection from poison|PHB}",
+								"{@spell web|PHB}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell conjure animals|PHB} (1 giant spider)",
+								"{@spell dispel magic|PHB}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell divination|PHB}",
+								"{@spell Evard's black tentacles|PHB}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"isNpc": true,
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The drow diviner makes two melee attacks."
+					]
+				},
+				{
+					"name": "Staff",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) bludgeoning damage, plus 3 ({@damage 1d6}) poison damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			],
+			"conditionInflict": [
+				"unconscious",
+				"poisoned"
+			],
+			"fluff": {
+				"entries": [
+					"<div class=\"note-editable\" style=\"max-height: 300px;\" contenteditable=\"true\"><p><a href=\"https:\/\/imgur.com\/a\/P8S84\">Drow Diviner<\/a><br><\/p><p>Drow mages are often powerful in the arcane arts. However, many drow spell-weavers specialize in other forms of magic. Diviners are male drow who do not fit the bill for traditional mages, or female drow who wish to avoid the cutthroat power politics of drow society, but still seek to make a name for themselves with other magic. In many ways, they act similarly to priestesses of Lolth, but not wielding the same levels of power; personal or political. With these abilities, other drow seek out diviners as healers or what could pass for sages in their society. That said, diviners tend to have a few highly destructive magic tricks up their sleeves, just in case things do not go their way.<br><\/p><\/div>"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/MxndmOB.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"underdark"
+			],
+			"tokenUrl": "https://i.imgur.com/MxndmOB.png",
+			"save": {
+				"cha": "+4",
+				"wis": "+6"
+			},
+			"skill": {
+				"insight": "+6",
+				"medicine": "+5",
+				"perception": "+5",
+				"religion": "+4",
+				"stealth": "+3"
+			}
+		},
+		{
+			"name": "DROW - Drow Assassin",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Elf",
+					"Drow",
+					"Assassin"
+				]
+			},
+			"source": "DROWS",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"enchanted studded leather"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d8 + 0",
+				"average": 81
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 19,
+			"con": 10,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 14,
+			"cr": "10",
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languages": [
+				"Elvish",
+				"Undercommon"
+			],
+			"languageTags": [
+				"E",
+				"U"
+			],
+			"shortName": "Drow Assassin",
+			"trait": [
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"The drow assassin has advantage on saving throws against being {@condition charmed}, and magic can't put the assassin to sleep"
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the drow assassin disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Assassinate",
+					"entries": [
+						"During its first turn, the drow assassin has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the drow assassin scores against a surprised creature is a critical hit."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"If the drow assassin is subjected to an effect tha allows it to make a Dexterity saving throw to take only half damage, the drow assassin instead takes no damage if it succeeds on the saving throw, and only half damage if it fail."
+					]
+				},
+				{
+					"name": "Sneak Attack",
+					"entries": [
+						"Once per turn, the drow assassin deals an 17 ({@damage 5d6}) damage when it hits a target with a weapon atta and has advantage on the attack roll, or when the target within 5 feet of an ally of the drow assassin that isn't {@condition incapacitated} and the drow assassin doesn't have disadvantage on the attack roll."
+					]
+				}
+			],
+			"traitTags": [
+				"Fey Ancestry",
+				"Sunlight Sensitivity",
+				"Sneak Attack"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The drow assassin's innate spellcastin ability is Charisma (spell save {@dc 12}, +4 to hit with spell attacks). It can innately cast the following spells, requiring material components:",
+						"At will: dancing lights",
+						"1/day: darkness,faerie fire, levitate (self only)"
+					],
+					"will": [
+						"{@spell dancing lights|PHB}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell darkness|PHB}",
+							"{@spell faerie fire|PHB}",
+							"{@spell levitate|PHB}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"isNpc": true,
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The drow makes up to two ranged attacks or three melee attacks, or one of each."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage, plus 14 ({@damage 4d6}) poison damage."
+					]
+				},
+				{
+					"name": "Enchanted Repeating Hand Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 10} to hit, range 30/120 ft., one target. {@h}9 ({@damage 1d6 + 6}) piercing damage, plus 17 ({@damage 5d6}) poison damage.",
+						"Description:",
+						"Ranged Weapon At {@hit 10} to hit, range 30/120 ft., one creature. {@h}9 (l{@dice d6 + 6}) piercing damage, plus 17 ({@damage 5d6}) poison damage, and the must succeed on a {@dc 15} Constitution saving throw or be {@condition poisoned} for 1 hour. If the saving throw fails by 5 or more target is also {@condition unconscious} while {@condition poisoned} in this way. The target wakes up if it takes damage or if another creature an action to shake it awake."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			],
+			"conditionInflict": [
+				"unconscious"
+			],
+			"fluff": {
+				"entries": [
+					"<div class=\"note-editable\" style=\"max-height: 300px;\" contenteditable=\"true\"><p><a href=\"https:\/\/imgur.com\/a\/P8S84\">Drow Assassin<\/a><br><\/p><p>People do not fear drow assassins as much as they fear the drow scourges, due to the difference in notoriety. A lesser breed of killers would allow for a reputation of bloodshed to precede them, but drow assassins are not the most reputable humanoid killers of the Underdark, they are the deadliest. Little is known to others about these drow Occasionally, a noble will be found with their throat slit, or a party of adventurers will suddenly go missing. Drow assassins are not only careful in masking their handiwork, but will execute it with unheard of proficiency<br><\/p><\/div>"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/cjuaIAe.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"underdark"
+			],
+			"tokenUrl": "https://i.imgur.com/cjuaIAe.png",
+			"save": {
+				"dex": "+12",
+				"int": "+4",
+				"wis": "+4"
+			},
+			"skill": {
+				"acrobatics": "+8",
+				"deception": "+4",
+				"perception": "+4",
+				"stealth": "+12"
+			}
+		},
+		{
+			"name": "DROW - Drow Assassin (By RavenVonBloodimir)",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Elf",
+					"Drow",
+					"Assassin"
+				]
+			},
+			"source": "DROWS",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"half plate"
+					]
+				}
+			],
+			"hp": {
+				"formula": "11d8 + 22",
+				"average": 71
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 13,
+			"dex": 19,
+			"con": 14,
+			"int": 12,
+			"wis": 10,
+			"cha": 12,
+			"passive": 13,
+			"cr": "8",
+			"senses": [
+				"darkvision 120 ft.",
+				"blindsight 10 ft."
+			],
+			"senseTags": [
+				"SD",
+				"B"
+			],
+			"languages": [
+				"Elvish",
+				"Undercommon"
+			],
+			"languageTags": [
+				"E",
+				"U"
+			],
+			"shortName": "Drow Assassin (By RavenVonBloodimir)",
+			"trait": [
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"The drow has advantage on saving throws against being {@condition prone}d, and magic can't put the drow to sleep"
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom(Perception) checks that rely on sight"
+					]
+				},
+				{
+					"name": "Cunning Action",
+					"entries": [
+						"On each of its turns, the drow can use a bonus action to take the Dash, Disengage, or Hide action."
+					]
+				},
+				{
+					"name": "Sneak Attack (1/turn)",
+					"entries": [
+						"The drow deals an extra 7 ({@damage 2d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll , or when the target is within 5 feet of an ally of the drow that isn't {@condition incapacitated} and the drow doesn't have disadvantage on the attack roll."
+					]
+				},
+				{
+					"name": "Web Walker",
+					"entries": [
+						"The Drow ignores movement restrictions caused by webbing."
+					]
+				}
+			],
+			"traitTags": [
+				"Fey Ancestry",
+				"Sunlight Sensitivity",
+				"Sneak Attack",
+				"Web Walker"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The drow's spellcasting ability is Charisma (spell save {@dc 11}). It can innately cast the following spells, requiring no material components:",
+						"At will: Dancing lights, Spider Climb.",
+						"1 f day each: Darkness, Faerie fire, Slow, Sleep, Misty Step."
+					],
+					"will": [
+						"{@spell dancing lights|PHB}",
+						"{@spell spider climb|PHB}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell darkness|PHB}",
+							"{@spell faerie fire|PHB}",
+							"{@spell misty step|PHB}",
+							"{@spell sleep|PHB}",
+							"{@spell slow|PHB}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"isNpc": true,
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The drow makcs three shortsword attacks"
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage, plus 10 ({@damage 3d6}) poison damage"
+					]
+				},
+				{
+					"name": "Hand Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 30/120 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage.",
+						"Description:",
+						"the target must succeed on a {@dc 13} Constitution saving throw or",
+						"be {@condition poisoned} for | hour. If the saving throw fails by 7 or less,",
+						"the target is also {@condition unconscious} while poisoncd in this way. The",
+						"targct wakes up if it takes damage or if another creature takes",
+						"an action to shake it awake."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW",
+				"RNG"
+			],
+			"conditionInflict": [
+				"unconscious",
+				"incapacitated"
+			],
+			"fluff": {
+				"entries": [
+					"<div class=\"note-editable\" style=\"max-height: 300px;\" contenteditable=\"true\"><p><a href=\"https:\/\/www.deviantart.com\/ravenvonbloodimir\/art\/Drow-assassin-DnD-5E-571077325\">Drow Assassin<\/a><br><\/p><p>Drow assassins&nbsp; were trained in the deepness of the underdark, under the tutelage of elite drow soldiers and mages. They can often come to the surface under their own motives or due to being contracted to dispach a kill order. They are the best in the business when it comes to silence and discretion.<br><br>Cutthroat Politics.<\/p><p>Drow politics are cutthroat and rife with intrigue. When drow work together, it is typically to destroy a common foe and ensure their own survival, and such alliances are short lived and fraught with peril.<br><\/p><\/div>"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/1JUdq3r.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"underdark"
+			],
+			"tokenUrl": "https://i.imgur.com/1JUdq3r.png",
+			"save": {
+				"dex": "+1"
+			},
+			"skill": {
+				"insight": "+4",
+				"persuasion": "+5",
+				"investigation": "+5",
+				"perception": "+6",
+				"sleight of hand": "+4",
+				"stealth": "+4"
+			},
+			"resist": [
+				{
+					"resist": [
+						"piercing",
+						"slashing"
+					],
+					"note": "from not magical weapons"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			]
+		},
+		{
+			"name": "Drow ( MM p128 )",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Elf",
+					"Drow"
+				]
+			},
+			"source": "DROWS",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item chain shirt|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d8 + 0",
+				"average": 13
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 10,
+			"int": 11,
+			"wis": 11,
+			"cha": 12,
+			"passive": 12,
+			"cr": "1/4",
+			"senses": [
+				"darkvision 120 ft.",
+				"blindsight 10 ft."
+			],
+			"senseTags": [
+				"SD",
+				"B"
+			],
+			"languages": [
+				"Elvish",
+				"Undercommon"
+			],
+			"languageTags": [
+				"E",
+				"U"
+			],
+			"shortName": "Drow Assassin (MM p128)",
+			"trait": [
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"The drow has advantage on saving throws against being {@condition charmed}, and magic can't put the drow to sleep"
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						" While in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight"
+					]
+				}
+			],
+			"traitTags": [
+				"Fey Ancestry",
+				"Sunlight Sensitivity"
+			],
+			"isNpc": true,
+			"action": [
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage"
+					]
+				},
+				{
+					"name": "Hand Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 30/120 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage. The target must succeed on a dc 13 constitution saving throw or be {@condition poisoned} for 1 hour If the saving throw fails by 5 or more, the target is also {@condition unconscious} while {@condition poisoned} in this way. The target wakes up if it takes damage or if another creature takes an action to shake it awake"
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			],
+			"fluff": {
+				"entries": [
+					"Drow ( MM p128 )"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/pJPe9ja.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"underdark"
+			],
+			"tokenUrl": "https://i.imgur.com/pJPe9ja.png",
+			"skill": {
+				"perception": "+2",
+				"stealth": "+4"
+			},
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The drow's spellcasting ability is Charisma (spell save {@dc 11}). It can innately cast the following spells, requiring no material components:",
+						"At will: dancing lights",
+						"1/day each: darkness, faerie fire"
+					],
+					"will": [
+						"{@spell dancing lights|PHB}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell darkness|PHB}",
+							"{@spell faerie fire|PHB}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"conditionInflict": [
+				"unconscious",
+				"poisoned"
+			]
+		}		
 	]
 }
