@@ -12,7 +12,7 @@
 					"p4535992"
 				],
 				"version": "2020.03.29",
-				"url": "https://www.reddit.com/r/UnearthedArcana/comments/3piisk/pack_the_kings_army_complete_monster_pack/",
+				"url": "https://drive.google.com/drive/folders/0B2UyuHLUuCjxeWRULTRHSk9jZEE",
 				"targetSchema": "1.6.3"
 			}
 		],
@@ -21,7 +21,7 @@
 	},
 	"monster": [
 		{
-			"name": "Queen Adria Durron",
+			"name": "KINGARMY - Queen Adria Durron",
 			"size": "M",
 			"type": {
 				"type": "humanoid",
@@ -148,7 +148,7 @@
 			}
 		},
 		{
-			"name": "King Paul Shapechanger",
+			"name": "KINGARMY - King Paul Shapechanger",
 			"size": "M",
 			"type": {
 				"type": "humanoid",
@@ -274,6 +274,445 @@
 				"wis": "+6",
 				"cha": "+4"
 			}
-		}		
+		},
+		{
+			"name": "KINGARMY - Commander Paige Truestrike",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human",
+					"legendary"
+				]
+			},
+			"source": "KINGARMY",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item plate armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "21d10 + 105",
+				"average": 220
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 12,
+			"con": 20,
+			"int": 14,
+			"wis": 17,
+			"cha": 18,
+			"passive": 13,
+			"cr": "20",
+			"shortName": "Commander Paige Truestrike",
+			"fluff": {
+				"entries": [
+					"COMMANDERS OF THE KING'S ARMY",
+					"All of the troops under the King report up to one of three commanders. Each of the commanders is a fearsome",
+					"warrior in his or her own right, having earned the respect of his or her troops through feats of great bravery and intellect.",
+					"The largest portion of the army reports up to Tai Feng, a fearsome half-orc warrior turned strategist. Paige Truestrike, a pious woman, leads the King’s specialist troops, ranging from the wyvern riders to the mithril guard. The final commander, a powerful spell caster named Nix Riversong, oversees all the spell casters under the King.",
+					"COMMANDER PAIGE TRUESTRIKE",
+					"Paige Truestrike, a devout worshipper of Arawai, keeps out of the spotlight. A serious and distant woman, Paige operates those under her command with cold efficiency. Not many have seen her in battle, but her skill with the blade is unquestioned.",
+					"Humble Beginnings.",
+					"Not much is known about Paige’s childhood. However, she slowly made a name of herself throughout the Kingdom as an adventurer, doing great tasks and finding legendary treasures. She does not speak about her past adventures without coaxing, holding those personal memories dear.",
+					"Special Equipment.",
+					"Through her adventures, Paige has collected a variety of magical equipment. The two most prominent pieces of treasure are her blade, Frost, and her animated shield. When asked how she got any of her magical items, she usually just smirks and says, “It was an adventure with friends, in a different time.”",
+					"Master of the Blade.",
+					"Paige has not taken up her blade since she became a commander. However, she frequents the practice fields, sparring with all who challenge her. She quickly and effortlessly dismantles all her opponents. Many who spar bet on how long each will last against the commander."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/qaRm5CN.png"
+						}
+					}
+				]
+			},
+			"languages": [
+				"Common",
+				"Elvish"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"isNpc": true,
+			"tokenUrl": "https://i.imgur.com/qaRm5CN.png",
+			"trait": [
+				{
+					"name": "Animated Shield",
+					"entries": [
+						"With a whispered word of power, Paige can activate her animated shield, which will begin floating around her. This gives her the bonus of the shield for 1 minute while freeing up both her hands."
+					]
+				},
+				{
+					"name": "Divine Smite",
+					"entries": [
+						"AII of Paige's attacks carry divine power. Each attack deals an additional ({@damage 1d8}) radiant damage. She can increase this damage by expendinq a spell slot. The damage increases by ({@damage 1d8}) per spell slot level."
+					]
+				},
+				{
+					"name": "Aura of Courage",
+					"entries": [
+						"All allies within 30 feet of Paige are immune to fear affects"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Paige can make 4 attacks with her longsword, Frost."
+					]
+				},
+				{
+					"name": "Longsword (Frost)",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}12 ({@damage 1d8 + 8}) thunder damage, plus 4({@damage 1d8}) radiant damage."
+					]
+				},
+				{
+					"name": "Lay On Hands (5/Day)",
+					"entries": [
+						"Paige has a blessed healing touch. She can touch one creature within range, or target herself, and heal them for 35 hit points."
+					]
+				},
+				{
+					"name": "Sprout Wings (1/Day)",
+					"entries": [
+						"Paige channels her devotion to her goddess, and sprouts angel wings from her back. The wings last for 1 hour and Paige gains a flying speed of 60 feet."
+					]
+				}
+			],
+			"damageTags": [
+				"T"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"save": {
+				"wis": "+9",
+				"cha": "+10"
+			},
+			"skill": {
+				"insight": "+9",
+				"religion": "+8"
+			},
+			"conditionImmune": [
+				"frightened"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Spellcasting Ability=CHA",
+						"Global Magic Attack Modifier=10",
+						"Magic Caster Level=10",
+						"Spell Save DC Mod=18",
+						"Paige is a spellcaster. Her spellcasting ability is Charisma (spell save {@dc 18}, +10 to hit with spell attacks).",
+						"Paige can use any spell from the Paladin spell list. She has the following spell slots at the listed levels:",
+						"1st Level: 4 slots",
+						"2nd Level: 3 slots",
+						"3nd Level: 3 slots",
+						"4nd Level: 3 slots",
+						"5nd Level: 2 slots "
+					],
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CP"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"The paige truestrike can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The paige truestrike regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Dash",
+					"entries": [
+						"Paige moves or flies half of her total movement in a given direction. This does not provoke opportunity attacks. Find Weakness (2 Actions). Paige quickly inspects one creature, gaining advantage on her next attack roll against the target creature."
+					]
+				},
+				{
+					"name": "Expoint Weakness (3 Actions)",
+					"entries": [
+						"Paige looks for a weakness In one creature's armor. She makes a {@dc 12} Perception check. On a success, if her next attack against that target hits, it will automatically critically hit."
+					]
+				},
+				{
+					"name": "Find Weakness (2 action)",
+					"entries": [
+						"Paige quickly inspect one creature, gaining advantage on her next attack roll againts the target creature."
+					]
+				}
+			]
+		},
+		{
+			"name": "KINGARMY - Commander Nix Riversong",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"elf"
+				]
+			},
+			"source": "KINGARMY",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"condition": "(17 with mage armor)"
+				}
+			],
+			"hp": {
+				"formula": "20d6 + 100",
+				"average": 170
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 18,
+			"con": 20,
+			"int": 20,
+			"wis": 15,
+			"cha": 17,
+			"passive": 19,
+			"cr": "21",
+			"shortName": "Commander Nix Riversong",
+			"fluff": {
+				"entries": [
+					"COMMANDERS OF THE KING'S ARMY",
+					"All of the troops under the King report up to one of three commanders. Each of the commanders is a fearsome",
+					"warrior in his or her own right, having earned the respect of his or her troops through feats of great bravery and intellect.",
+					"The largest portion of the army reports up to Tai Feng, a fearsome half-orc warrior turned strategist. Paige Truestrike, a pious woman, leads the King’s specialist troops, ranging from the wyvern riders to the mithril guard. The final commander, a powerful spell caster named Nix Riversong, oversees all the spell casters under the King.",
+					"COMMANDER NIX RIVERSONG",
+					"Nix Riversong is very different from the other commanders. A pale elf, Nix is a master of magic. In addition to leading all of the magical forces under the King, he leads the School of Magic.",
+					"Wild Past.",
+					"Nix, like Commander Paige, is a former adventurer. Unlike his fellow commander, he loves to talk about his adventures and the great feats he has accomplished. For this reason, he is loved by the new troops, who enjoy hearing his grand tales.",
+					"Summoner.",
+					"Nix has developed his own special brand of magic. Spawning off of the school of conjuration, Nix devised spells to summon a wide variety of creatures into the world. He is constantly pulling creatures into the world to show off to students at the School of Magic."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/exfwNBV.png"
+						}
+					}
+				]
+			},
+			"languages": [
+				"Common",
+				"Elvish"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"isNpc": true,
+			"tokenUrl": "https://i.imgur.com/exfwNBV.png",
+			"trait": [
+				{
+					"name": "Master of ice",
+					"entries": [
+						"Nix is a master of all cold magic. All of Nix's summons deal an additional ({@damage 1d8}) cold damage on attacks. "
+					]
+				},
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"Nix has advantage against being {@condition charmed} and magic cannot put him to sleep."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Summon minor creature",
+					"entries": [
+						"Nix channels his magic to summon a creature to fight for him. He can summon any creature CR 7 or lower as long as it is not an undead. The creature lasts for 1 minute or until it dies. It takes it's turn directly after Nix's."
+					]
+				},
+				{
+					"name": "Summon Major Creature (3/Day)",
+					"entries": [
+						"Nix delves into powerful magic to summon a greater creature. Nix can summon any creature CR 15 or lower as long as it is not undead. The creature lasts for 10 minutes or until it dies. It takes its turn directly after Nix's."
+					]
+				},
+				{
+					"name": "Quarterstaff (One-Handed)",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Quarterstaff (Two-Handed)",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d8}) bludgeoning damage."
+					]
+				}
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"save": {
+				"wis": "+9",
+				"int": "+12"
+			},
+			"skill": {
+				"insight": "+9",
+				"arcana": "+12",
+				"perception": "+9"
+			},
+			"conditionImmune": [],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Spellcasting Ability=INT",
+						"Global Magic Attack Modifier=12",
+						"Magic Caster Level=16",
+						"Spell Save DC Mod=20",
+						"Nix Riversong Is a 20th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 20}, +12 to hit with spell attacks}. Nix Riversong has the following wizard spells prepared:",
+						"Cantrips (at will): chill touch, dancing lights, frostbite. gust. ray of frost",
+						"1st level (4 slots): absorb elements, charm person, fog cloud, mage armor",
+						"2nd level (3 slots): misty step, web, see invisibility",
+						"3rd level (3 slots): counterspell, sleet storm, stinking cloud",
+						"4th level (3 slots}: arcane eye, conjure minor elementals, ice storm",
+						"5th level (3 slots): cloudkill, wall of stone, conjure elemental",
+						"6th level (2 slots): flesh to stone, wall of ice",
+						"7th level (2 slots): force cage, teleport",
+						"8th level (1 slots): contro! weather"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell chill touch|PHB}",
+								"{@spell dancing lights|PHB}",
+								"{@spell frostbite|XGE}",
+								"{@spell gust|XGE}",
+								"{@spell ray of frost|PHB}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell absorb elements|XGE}",
+								"{@spell charm person|PHB}",
+								"{@spell fog cloud|PHB}",
+								"{@spell mage armor|PHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell misty step|PHB}",
+								"{@spell see invisibility|PHB}",
+								"{@spell web|PHB}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell|PHB}",
+								"{@spell sleet storm|PHB}",
+								"{@spell stinking cloud|PHB}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell arcane eye|PHB}",
+								"{@spell conjure minor elementals|PHB}",
+								"{@spell ice storm|PHB}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cloudkill|PHB}",
+								"{@spell conjure elemental|PHB}",
+								"{@spell wall of stone|PHB}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell flesh to stone|PHB}",
+								"{@spell wall of ice|PHB}"
+							],
+							"slots": 2
+						},
+						"7": {
+							"spells": [
+								"{@spell forcecage|PHB}",
+								"{@spell teleport|PHB}"
+							],
+							"slots": 2
+						},
+						"8": {
+							"spells": [
+								"{@spell control weather|PHB}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"Nix Riversong can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. Nix Riversong regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Summon: Move!",
+					"entries": [
+						"Nix directs one of his summons to move up to its movement speed. This movement does provoke opportunity attacks."
+					]
+				},
+				{
+					"name": "Summon: Attack! (2 Actions)",
+					"entries": [
+						"Nix commands one of his summons to attack an enemy creature."
+					]
+				}
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"traitTags": [
+				"Fey Ancestry"
+			]
+		}
+
 	]
 }
