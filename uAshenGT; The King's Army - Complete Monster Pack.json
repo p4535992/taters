@@ -1,0 +1,279 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "KINGARMY",
+				"abbreviation": "KINGARMY",
+				"full": "The King's Army - Complete Monster Pack (version 1.0)",
+				"authors": [
+					"AshenBolt (u/AshenGT)"
+				],
+				"convertedBy": [
+					"p4535992"
+				],
+				"version": "2020.03.29",
+				"url": "https://www.reddit.com/r/UnearthedArcana/comments/3piisk/pack_the_kings_army_complete_monster_pack/",
+				"targetSchema": "1.6.3"
+			}
+		],
+		"dateAdded": 1555319662,
+		"dateLastModified": 1555319662
+	},
+	"monster": [
+		{
+			"name": "Queen Adria Durron",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Half-Elf"
+				]
+			},
+			"source": "KINGARMY",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d8 + 16",
+				"average": 88
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 16,
+			"con": 12,
+			"int": 13,
+			"wis": 14,
+			"cha": 18,
+			"passive": 15,
+			"cr": "8",
+			"shortName": "Queen Adria Durron",
+			"fluff": {
+				"entries": [
+					"The King And the Queen",
+					"King Paul Shapechanger and Queen Adria Durron lead the kingdom. Though Paul is King, he is actually not a royal, having married then Princess Adria Durron many years ago. Since the death of Adria’s father, King Patil took the throne besides his wife.",
+					"QUEEN ADRIA DURRON",
+					"The Queen, a born royal, spent most of her youth living the life of a princess. Though she excelled at nuances and mannerisms expected of a royal princess, she thirsted for adventure. When she met the adventurer Paul Shapechanger, she was enchanted by his stories and his adventuring nature.",
+					"Ruler of the People.",
+					"Though her husband is the ruler of the kingdom, it would not run without Queen Adria. Her many classes as a child taught her how to be a good ruler, tough yet kind. However, her greatest strength lies in her ability to inspire people with her words and small smiles. Queen Adria’s natural leadership allows her to sit in the background, helping and guiding the King as he rules the people of her family’s kingdom."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/w1Z5SrC.png"
+						}
+					}
+				]
+			},
+			"skill": {
+				"perception": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Elvish"
+			],
+			"languageTags": [
+				"C",
+				"E",
+				"O"
+			],
+			"isNpc": true,
+			"tokenUrl": "https://i.imgur.com/w1Z5SrC.png",
+			"trait": [
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"Queen Adria has advantage on saving throws against being {@condition charmed}, and magic can't put her to sleep."
+					]
+				},
+				{
+					"name": "Disarming Smile",
+					"entries": [
+						"Queen Adria is well versed in royal politics. She has advantage on all Charisma checks and saving throws."
+					]
+				}
+			],
+			"traitTags": [
+				"Fey Ancestry"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Queen Adria makes two attacks with her rapier, Whisper"
+					]
+				},
+				{
+					"name": "Whisper",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d8 + 6}) poison damage."
+					]
+				},
+				{
+					"name": "Inspire! (5/Day}",
+					"entries": [
+						"The Queen inspires one of her loyal subjects, giving them advantage on their next attack roll with a bonus ({@damage 1d8})  to hit."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"save": {
+				"dex": "+6",
+				"cha": "+7"
+			}
+		},
+		{
+			"name": "King Paul Shapechanger",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Elf"
+				]
+			},
+			"source": "KINGARMY",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 20",
+				"average": 65
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 13,
+			"con": 14,
+			"int": 14,
+			"wis": 17,
+			"cha": 12,
+			"passive": 16,
+			"cr": "7",
+			"shortName": "King Paul Shapechanger",
+			"fluff": {
+				"entries": [
+					"The King And the Queen",
+					"King Paul Shapechanger and Queen Adria Durron lead the kingdom. Though Paul is King, he is actually not a royal, having married then Princess Adria Durron many years ago. Since the death of Adria’s father, King Patil took the throne besides his wife.",
+					"KING PAUL SHAPECHANGER",
+					"King Paul fell into royalty. He began like many do, a young adventurer eager to make his name in the world. During",
+					"one of these adventures, he met the Princess Adria Durron and fell instantly in love. Since becoming King, he has lead the kingdom in what he hopes is a fair and just way. Shapechanger. Though his peculiar last name, King Paul is not a shapechanger. His curious name comes from a rumor, that Paul spent time as a half-orc. The tale says that he died during a great battle, only to be resurrected by a friendly druid as a half-orc. Angered with the new body, he undertook a long journey to return to his natural elven form."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/ZUbTq8S.png"
+						}
+					}
+				]
+			},
+			"skill": {
+				"intimidation": "+7",
+				"perception": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Elvish",
+				"Orc"
+			],
+			"languageTags": [
+				"C",
+				"E",
+				"O"
+			],
+			"isNpc": true,
+			"tokenUrl": "https://i.imgur.com/ZUbTq8S.png",
+			"trait": [
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"King Paul has advantage on saving throws against being {@condition charmed}, and magic can't put him to sleep."
+					]
+				},
+				{
+					"name": "Royal Immunity",
+					"entries": [
+						"King Paul is immune to the spell crown of madness"
+					]
+				}
+			],
+			"traitTags": [
+				"Fey Ancestry"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"King Paul makes two attacks with his greataxe Songbringer"
+					]
+				},
+				{
+					"name": "Songbringer",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d12 + 5}) thunder damage."
+					]
+				},
+				{
+					"name": "Call Lightning",
+					"entries": [
+						"King Paul calls down lightning to strike one creature within 30 feet. The target creature must succeed on a {@dc 14} Wisdom saving throw or take 28 ({@damage 8d6}) thunder damage. On a successful save, the creature takes half damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"T"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"save": {
+				"wis": "+6",
+				"cha": "+4"
+			}
+		}		
+	]
+}
