@@ -1071,7 +1071,7 @@
 			]
 		},
 		{
-			"name": "Twin Assassin of eldor Sane",
+			"name": "KINGARMY - Twin Assassin of eldor Sane",
 			"size": "M",
 			"type": {
 				"type": "humanoid",
@@ -1302,6 +1302,314 @@
 			"conditionInflict": [
 				"exhaustion",
 				"stunned"
+			]
+		},
+		{
+			"name": "KINGARMY - Mithril Guard",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"source": "KINGARMY",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "11d12 + 66",
+				"average": 115
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 15,
+			"con": 22,
+			"int": 13,
+			"wis": 14,
+			"cha": 10,
+			"passive": 12,
+			"cr": "7",
+			"fluff": {
+				"entries": [
+					"Mithril Guard",
+					"The Mithril Guard is known throughout the kingdom. The personal bodyguards of the king, they follow His Majesty to all destinations, a fearsome and deadly entourage. Little is known about these guards, except that they are tough warriors who are loyal only to the King.",
+					"Birthright.",
+					"The men and women who make up the Mithril Guard are chosen at birth. Their growth is carefully watched, and if the Overseers deem the child fit, he is chosen to become a guard. Once they reach the age of ten, these young children begin training which will last them ten years, during which their bodies and minds will be carved into the perfect king’s guard.",
+					"Well-Travelled.",
+					"Every guard travels throughout the kingdom during his training. He spends times amongst the dwarves and the elves, learning their culture, not to be closer to the King’s subjects, but so they can think like potential enemies of the King. A Mithril Guard has memorized the layout of the land and is never lost inside the King’s domain.",
+					"Special Equipment.",
+					"The Mithril Guard gets its name from the dull green glow of their full plate armor and their great swords. The common people whisper, attributing the glow to magic, others saying that the glow is a visualization of their power. The truth, known only to a select few, is that that their armor and weaponry is specially crafted. The unique metal mithril is used to create the weapons and armor of the guard, making his armor stronger and his weapons hit harder. The aftereffect of this special treatment process is the dull green glow ever-present on every Mithril Guard."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/muvP7kJ.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/muvP7kJ.png",
+			"shortName": "Mithril Guard",
+			"languages": [
+				"Common",
+				"Elvish"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"trait": [
+				{
+					"name": "Magical Armor",
+					"entries": [
+						"The guard's armor is made out of a special mithril blend, causing it to be resistant to all magical effects, such as the spell heat metal."
+					]
+				},
+				{
+					"name": "Indomitable",
+					"entries": [
+						"The guard is unable to be intimidated."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The mithril guard can make up to three attacks with his great sword. He can use Sweeping Strike or Trip Attack in place of two of the attacks."
+					]
+				},
+				{
+					"name": "Great Sword",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Sweeping Strike",
+					"entries": [
+						"The guard swings his sword in a large arc, hitting all creatures in a 5 feet radius. The guard makes an attack role against all enemies within 5 feet, dealing damage to all targets hit."
+					]
+				},
+				{
+					"name": "Trip Attack",
+					"entries": [
+						"The guard chooses one creature within 5 feet and delivers a devastating blow aimed at knocking the target creature {@condition prone}. The guard makes a weapon attack roll, and on a successful hit, the target creature must pass a {@dc 16} Dexterity saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"isNpc": true,
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "KINGARMY - Blue Elf",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"elf"
+				]
+			},
+			"source": "KINGARMY",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"condition": "(16 with mage armor)"
+				}
+			],
+			"hp": {
+				"formula": "10d6 + 40",
+				"average": 75
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 18,
+			"int": 14,
+			"wis": 12,
+			"cha": 20,
+			"passive": 16,
+			"cr": "5",
+			"fluff": {
+				"entries": [
+					"Blue Elf",
+					"INFANTRY",
+					"Blue elves are peculiar creatures.",
+					"Many elves show a natural disposition to magic at an early age; blue elves, however, display this proficiency differently. As these elves reach their teenage years, their skin develops a light blue sheen, a glow which distinguishes them from their peers and all others. Around the same age, they begin showing an aptitude in magic, a few years after other elves.",
+					"Primitive Casting.",
+					"Once a blue elf’s magical aptitude is revealed, they immediately begin training at the Magic Academy. However, though they go through the same rigorous training all initiates go through, the blue elves never show an aptitude with offensive spells, excelling instead at domination and manipulative spells.",
+					"Magnetic Aura.",
+					"Blue elves are trained separately from other initiates. This is not meant to segregate them for their skin color or primitive casting. Each blue elf is separated because the magic of others seem to be attracted to him. A spell cast in his vicinity will be redirected towards the elf and spit back at the unintentional assailant. At first, a blue elf has no control over this, but through years of study and training, learns to control this mysterious and powerful ability.",
+					"Magical Lightning Rod.",
+					"The King and his military advisors saw the power of the blue elves and knew that their power can be used to protect the large army under the King’s control. Blue elves are used as a magical deterrent, their control of domination and manipulation spells make them the most effective tools at killing enemy magic users."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/OOuoBXY.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/OOuoBXY.png",
+			"shortName": "Blue Elf",
+			"languages": [
+				"Common",
+				"Elvish"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"trait": [
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"A blue elf has advantage on saving throws against being {@condition charmed}, and magic can't put him to sleep."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Quarterstaff (One-Handed)",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6 + 0}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Quarterstaff (Two-Handed)",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d8 + 0}) bludgeoning damage."
+					]
+				}
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"isNpc": true,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"save": {
+				"con": "+7",
+				"cha": "+8"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The blue elf is a 10th level spellcaster. His spellcasting ability is Charisma (spell save {@dc 16}, +8 to hit with spell attacks). The blue elf has the following sorcerer spells prepared:",
+						"Cantrips (at will): blade ward, firebolt, message, minor illusion",
+						"1st level (4 slots): charm person, fog cloud, magic missile, mage armor",
+						"2nd level (3 slots): hold person, levitate, misty step",
+						"3rd level (3 slots): blink, fireball. fly",
+						"4th level (3 slots): confusion, dimension door, ice storm",
+						"5th level (2 slots): cone of cold, dominate person"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell blade ward|PHB}",
+								"{@spell fire bolt|PHB}",
+								"{@spell message|PHB}",
+								"{@spell minor illusion|PHB}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell charm person|PHB}",
+								"{@spell fog cloud|PHB}",
+								"{@spell mage armor|PHB}",
+								"{@spell magic missile|PHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell hold person|PHB}",
+								"{@spell levitate|PHB}",
+								"{@spell misty step|PHB}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell blink|PHB}",
+								"{@spell fireball|PHB}",
+								"{@spell fly|PHB}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell confusion|PHB}",
+								"{@spell dimension door|PHB}",
+								"{@spell ice storm|PHB}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cone of cold|PHB}",
+								"{@spell dominate person|PHB}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CS"
+			],
+			"traitTags": [
+				"Fey Ancestry"
+			],
+			"reaction": [
+				{
+					"name": "Reflect Spell (5/Day)",
+					"entries": [
+						"Magic is attracted to the blue elf as If he were a magnet. If a spell is cast targeting the blue elf or another creature within 15 feet, the blue elf can roll a Charisma saving throw against the spellcaster's spell save DC. If the blue elf's roll succeeds, he absorbs the magic, taking no damage, and reflects it back at the caster, including all additional effects and modifiers tied to the spell, using the blue elf's spell save DC and spell attack bonus. This works for spells of all levels and does not consume a spell slot. On a failed save, the spell continues as intended, but deals only half damage."
+					]
+				}
 			]
 		}
 
