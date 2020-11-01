@@ -1150,6 +1150,600 @@
 			"conditionInflict": [
 				"grappled"
 			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Dray Priest",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"dragonborn",
+					"dray"
+				]
+			},
+			"source": "p4535992Humanoid",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d8 + 13",
+				"average": 71
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 16,
+			"con": 13,
+			"int": 11,
+			"wis": 18,
+			"cha": 12,
+			"passive": 11,
+			"cr": "7",
+			"shortName": "Dray Priest",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"save": {
+				"con": "+4",
+				"wis": "+6",
+				"cha": "+4"
+			},
+			"skill": {
+				"arcana": "+3",
+				"deception": "+7",
+				"religion": "+3",
+				"stealth": "+5"
+			},
+			"resist": [
+				"fire"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The dray priest is a 9th-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 15}, +7 to hit with spell attacks). The dray has the following Cleric spells prepared.",
+						"Spellcasting Ability=WIS",
+						"Global Magic Attack Modifier=7",
+						"Magic Caster Level=9",
+						"Spell Save DC Mod=15"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell guidance}",
+								"{@spell resistance}",
+								"{@spell sacred flame}",
+								"{@spell thaumaturgy}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell bane}",
+								"{@spell cure wounds}",
+								"{@spell divine favor}",
+								"{@spell inflict wounds}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell aid}",
+								"{@spell enhance ability}",
+								"{@spell silence}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell bestow curse}",
+								"{@spell spirit guardians}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell locate creature}",
+								"{@spell stone shape}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell scrying}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"trait": [
+				{
+					"name": "Dregoth’s Blessing",
+					"entries": [
+						"The dray deals an extra 4 ({@damage 1d8}) damage when it hits with a weapon attack (included in the attack)."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The dray’s weapon attacks are magical"
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Weapons"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dray makes two longsword attacks"
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d8 + 2}) slashing damage, or 13 ({@damage 2d10 + 2}) slashing damage if used with both hands."
+					]
+				},
+				{
+					"name": "Acid Spray (1/Day)",
+					"entries": [
+						"The dray spits acid in a 10 ft range towards up to two creatures if they are within 5 ft. of eachother. Each creature must make a {@dc 12} Dexterity saving throw, taking 29 ({@damage 6d8}) acid damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S",
+				"A"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"isNpc": true,
+			"environment": [
+				"desert",
+				"underdark"
+			],
+			"tokenUrl": "https://i.imgur.com/OElAIFQ.png",
+			"fluff": {
+				"entries": [
+					"Dray Priest"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/JH1Jqdp.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "DARKSUNCREATURE - Dray Soldier",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"dragonborn",
+					"dray"
+				]
+			},
+			"source": "p4535992Humanoid",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item splint armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d8 + 8",
+				"average": 26
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 14,
+			"int": 11,
+			"wis": 10,
+			"cha": 12,
+			"passive": 10,
+			"cr": "2",
+			"shortName": "Dray Soldier",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Draconic"
+			],
+			"languageTags": [
+				"DR"
+			],
+			"skill": {
+				"athletics": "+5",
+				"intimidation": "+3"
+			},
+			"resist": [
+				"fire"
+			],
+			"trait": [
+				{
+					"name": "Dregoth’s Blessing",
+					"entries": [
+						"The dray deals an extra 4 ({@damage 1d8}) damage when it hits with a weapon attack (included in the attack)."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Scimitar",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d6 + 3}) slashing damage, plus 7 ({@damage 1d8}) slashing damage."
+					]
+				},
+				{
+					"name": "Acid Spray (1/Day)",
+					"entries": [
+						"The dray spits acid in a 10 ft range towards up to two creatures if they are within 5 ft. of eachother. Each creature must make a {@dc 12} Dexterity saving throw, taking 18 ({@damage 4d8}) acid damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"damageTags": [
+				"S",
+				"A"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://i.imgur.com/mQO7Kdx.png",
+			"fluff": {
+				"entries": [
+					"Dray Soldier"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/kfYmL3W.jpg"
+						}
+					}
+				]
+			},
+			"environment": [
+				"desert",
+				"underdark"
+			],
+			"isNpc": true
+		},
+		{
+			"name": "DARKSUNCREATURE - Dray Templar",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"dragonborn",
+					"dray"
+				]
+			},
+			"source": "p4535992Humanoid",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "24d8 + 72",
+				"average": 180
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 19,
+			"dex": 13,
+			"con": 16,
+			"int": 12,
+			"wis": 15,
+			"cha": 18,
+			"passive": 16,
+			"cr": "10",
+			"shortName": "Dray Templar",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"skill": {
+				"athletics": "+8",
+				"arcana": "+5",
+				"perception": "+6",
+				"religion": "+5"
+			},
+			"resist": [
+				"fire"
+			],
+			"damageTags": [
+				"S",
+				"A",
+				"R"
+			],
+			"tokenUrl": "https://i.imgur.com/nExLrBQ.png",
+			"fluff": {
+				"entries": [
+					"Dray Templar"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/CXTcVS5.jpg"
+						}
+					}
+				]
+			},
+			"environment": [
+				"desert",
+				"underdark"
+			],
+			"isNpc": true,
+			"save": {
+				"str": "+8",
+				"wis": "+5",
+				"cha": "+7"
+			},
+			"trait": [
+				{
+					"name": "Dregoth’s Blessing",
+					"entries": [
+						"The dray deals an extra 4 ({@damage 1d8}) damage when it hits with a weapon attack (included in the attack)."
+					]
+				},
+				{
+					"name": "Defiling Eminence",
+					"entries": [
+						"As a bonus action, the dray can expend a spell slot to cause its melee weapon attack to magically deal an extra 11 ({@damage 2d10}) radiant damage to a target on a hit. If the dray expends a spell slot of 2nd level or higher, the extra damage increases by {@dice 1d10} for each level above 1st."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The dray’s weapon attacks are magical."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Weapons"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The dray is a 13th-level spellcaster. Her spellcasting ability is Charisma (spell save {@dc 16}, +8 to hit with spell attacks). The dray has the following Paladin spells prepared.",
+						"Spellcasting Ability=CHA",
+						"Global Magic Attack Modifier=8",
+						"Magic Caster Level=13",
+						"Spell Save DC Mod=16"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell command}",
+								"{@spell compelled duel}",
+								"{@spell detect magic}",
+								"{@spell wrathful smite}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell branding smite}",
+								"{@spell find steed}",
+								"{@spell zone of truth}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell blinding smite}",
+								"{@spell dispel magic}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell staggering smite}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CP"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dray makes two greatsword attacks."
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d6 + 4}) slashing damage, plus 7 ({@damage 1d8}) slashing damage."
+					]
+				},
+				{
+					"name": "Acid Spray (1/Day)",
+					"entries": [
+						"The dray spits acid in a 10 ft range towards up to two creatures if they are within 5 ft. of eachother. Each creature must make a {@dc 15} Dexterity saving throw, taking 29 ({@damage 6d8}) acid damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Dray",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"dragonborn",
+					"dray"
+				]
+			},
+			"source": "p4535992Humanoid",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "24d8 + 24",
+				"average": 132
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 11,
+			"con": 13,
+			"int": 10,
+			"wis": 10,
+			"cha": 11,
+			"passive": 10,
+			"cr": "1/4",
+			"shortName": "Dray",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Draconic"
+			],
+			"languageTags": [
+				"DR"
+			],
+			"resist": [
+				"acid"
+			],
+			"damageTags": [
+				"S",
+				"A"
+			],
+			"tokenUrl": "https://i.imgur.com/qTG9FwH.png",
+			"fluff": {
+				"entries": [
+					"Dray"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/Xw6Ae2z.jpg"
+						}
+					}
+				]
+			},
+			"environment": [
+				"desert",
+				"underdark"
+			],
+			"isNpc": true,
+			"action": [
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) slashing damage."
+					]
+				},
+				{
+					"name": "Acid Spray (1/Day)",
+					"entries": [
+						"The dray spits acid toward a creature within a 5-foot range. The creature must make a {@dc 11} Dexterity saving throw, taking 9 ({@damage 2d8}) acid damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			]
 		}
 	]
 }
