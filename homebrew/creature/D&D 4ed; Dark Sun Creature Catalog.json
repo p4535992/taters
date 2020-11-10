@@ -1334,7 +1334,7 @@
 				{
 					"name": "Kama",
 					"entries": [
-						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 3}) slashing damage."
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 3}) slashing damage."
 					]
 				},
 				{
@@ -1401,6 +1401,348 @@
 			],
 			"actionTags": [
 				"Multiattack"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Bazzrag",
+			"size": "L",
+			"type": "beast",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d10 + 16",
+				"average": 60
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 12,
+			"con": 14,
+			"int": 5,
+			"wis": 14,
+			"cha": 12,
+			"passive": 12,
+			"cr": "2",
+			"shortName": "Bazzrag",
+			"fluff": {
+				"entries": [
+					"Lore",
+					"In the broken crags and tiny caves of the barrens lives the timid baazrag. Two feet long or less, it is one of the smallest omnivores in the stony barren regions. The baazrag's face is protected by a bony covering that reaches down on either side of the head and across the nose, with holes for the creature’s nostrils and eyes.",
+					"Solo Hunter",
+					"Baazrags are solitary creatures. Their territory extends to a 2-mile radius from their lair. Baazrags usually take over deserted baazrag lairs. If there is no water readily available, Baazrags will dig until they hit water. Deserted Baazrag lairs have been known to save the lives of thirsty travelers because of the well that may be found in some of them. If there is no prey available, Baazrags can survive on vegetation for as long as three months, or can go as long as one month without food at all."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/Tt6zH2g.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/HOGpSOD.png",
+			"environment": [
+				"desert"
+			],
+			"isNpc": true,
+			"trait": [
+				{
+					"name": "Psychic Focus",
+					"entries": [
+						"Baazrag has advantage on initiative rolls."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Baazrag makes one claw attack and one bite attack or only one psionic blast."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Psionic Blast",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 5/60 ft., one target. {@h}9 ({@damage 1d8 + 5}) psychic damage."
+					]
+				}
+			],
+			"damageTags": [
+				"S",
+				"P",
+				"Y"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"save": {
+				"str": "+6",
+				"con": "+5"
+			},
+			"actionTags": [
+				"Multiattack"
+			],
+			"resist": [
+				"psychic"
+			]
+		},
+		{
+			"name": "Bazzrag Gnawer",
+			"size": "S",
+			"type": {
+				"type": "beast",
+				"tags": [
+					"reptile"
+				]
+			},
+			"source": "p4535992Dev",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 11,
+					"from": [
+						"natural armor"
+					]
+				},
+				{
+					"ac": 13,
+					"from": [
+						"latched"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d6 + 3",
+				"average": 11
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 10,
+			"dex": 15,
+			"con": 13,
+			"int": 2,
+			"wis": 14,
+			"cha": 10,
+			"passive": 14,
+			"cr": "1/4",
+			"shortName": "Bazzrag Gnawer",
+			"fluff": {
+				"entries": [
+					"A lone baazrag stalks the desert plains",
+					"hunting a large, six-legged beast amid the dunes and rocks. When the prey realizes the danger, it attempts to escape, but not before the baazrag's jaws shut over a back leg. The quarry whirls and hisses, its jagged mandibles clicking furiously. The baazrag pads backward a few paces and looses a piercing squeal. Within seconds, further squeaks answer from nearby, and a dozen more baazrags bound over the dunes. The fero cious pack closes around the beetlelike creature and takes it down, one vicious bite at a time.",
+					"Lore",
+					"Anywhere that rough terrain provides cover for their burrows, baazrags can be found in large numbers. These wild beasts are vermin that eat anything they can find. Each individual sees to its own needs, fattening up on weeds and tiny prey, and storing water in a sac under its bony back shell. When larger prey is found, the pack works together for the promise ofa good meal for all. All baazrags are born female. Some members of a pack become male when an egg-laying breeder is nearby. These males tend to the breeder, defending her and her eggs as well as any hatchlings. Powerful baazrags have a natural psychic sensitivity. Large psychic disturbances irritate these creatures and can drive them to attack.",
+					"Encounters",
+					"Humanoids of all sorts domesticate baazrags, which make good house guards and pest hunters. Baazrags are also used to carry small loads or pull small vehicles. If a baazrag is born among other types of creatures or becomes accustomed to those who offer it food and comfort, it considers such beings to be part of its pack. Clever humanoids use this trait to tame baazrags as guard beasts. Baazrags tend to ignore creatures they cannot eat, such as undead. These inedible creatures, in turn, treat the baazrags similarly and ignore them. Thus, explorers might find a lair being shared by the two groups. Baazrags gain confidence, focus, and ferocity in numbers. Although they hunt singly, each baazrag acts as a scout for the pack. When a hunter finds prey, its distinct call brings its mates to swarm over the target. The baazrags relentlessly bite this prey and follow the creature until it falls or it proves too tough to pull down, forcing the baazrags to retreat. A baazrag breeder enters combat by culling a victim from the herd with psychiClure. Then it pounces on that individual, distinguishing it as a target for at least a few of its brood."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/x6a9KPN.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/bfXDvMd.png",
+			"environment": [
+				"desert"
+			],
+			"isNpc": true,
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"The gnawer lives near its packmates in hollows found in stony barrens. It bounds among the rocks, making chirps and clicks to keep the other baazrags informed about what it finds. The gnawer is the most tenacious hunter of the pack-once it clamps onto its prey, it refuses to let go."
+					]
+				},
+				{
+					"name": "Pack Harrier",
+					"entries": [
+						"A baazrag has advantage on attack rolls against a creature if at least one of the baazrag's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Latcher",
+					"entries": [
+						"While latched onto a creature, the gnawer gains +2 bonus to AC."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 2}) piercing damage and the target must succeed on a {@dc 12} Constitution saving throw or be {@condition poisoned} for 1 minute. The gnawer latches onto the target. While the gnawer is latched onto a target, whenever the target moves, the gnawer moves with it, ending this movement in a square of its choice adjacent to the target. This movement doesn't provoke opportunity attacks. The gnawer can be latched onto no more than one creature at a time."
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"skill": {
+				"perception": "+4"
+			},
+			"conditionInflict": [
+				"poisoned"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Bazzrag Swarm",
+			"size": "M",
+			"type": {
+				"type": "beast",
+				"swarmSize": "T"
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d8 + 8",
+				"average": 56
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 8,
+			"dex": 15,
+			"con": 13,
+			"int": 2,
+			"wis": 14,
+			"cha": 10,
+			"passive": 14,
+			"cr": "2",
+			"shortName": "Bazzrag Swarm",
+			"fluff": {
+				"entries": [
+					"A lone baazrag stalks the desert plains",
+					"hunting a large, six-legged beast amid the dunes and rocks. When the prey realizes the danger, it attempts to escape, but not before the baazrag's jaws shut over a back leg. The quarry whirls and hisses, its jagged mandibles clicking furiously. The baazrag pads backward a few paces and looses a piercing squeal. Within seconds, further squeaks answer from nearby, and a dozen more baazrags bound over the dunes. The fero cious pack closes around the beetlelike creature and takes it down, one vicious bite at a time.",
+					"Lore",
+					"Anywhere that rough terrain provides cover for their burrows, baazrags can be found in large numbers. These wild beasts are vermin that eat anything they can find. Each individual sees to its own needs, fattening up on weeds and tiny prey, and storing water in a sac under its bony back shell. When larger prey is found, the pack works together for the promise ofa good meal for all. All baazrags are born female. Some members of a pack become male when an egg-laying breeder is nearby. These males tend to the breeder, defending her and her eggs as well as any hatchlings. Powerful baazrags have a natural psychic sensitivity. Large psychic disturbances irritate these creatures and can drive them to attack.",
+					"Encounters",
+					"Humanoids of all sorts domesticate baazrags, which make good house guards and pest hunters. Baazrags are also used to carry small loads or pull small vehicles. If a baazrag is born among other types of creatures or becomes accustomed to those who offer it food and comfort, it considers such beings to be part of its pack. Clever humanoids use this trait to tame baazrags as guard beasts. Baazrags tend to ignore creatures they cannot eat, such as undead. These inedible creatures, in turn, treat the baazrags similarly and ignore them. Thus, explorers might find a lair being shared by the two groups. Baazrags gain confidence, focus, and ferocity in numbers. Although they hunt singly, each baazrag acts as a scout for the pack. When a hunter finds prey, its distinct call brings its mates to swarm over the target. The baazrags relentlessly bite this prey and follow the creature until it falls or it proves too tough to pull down, forcing the baazrags to retreat. A baazrag breeder enters combat by culling a victim from the herd with psychiClure. Then it pounces on that individual, distinguishing it as a target for at least a few of its brood."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/baVv8xF.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/E4Y2Esw.png",
+			"environment": [
+				"desert"
+			],
+			"isNpc": true,
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Clicking and squeaking as they swarm a creature, the baazrag hatchlings make a noise that is unforgettable. A single baazrag is trouble, though not necessarily deadly. A swarm ofhatchlings, however, can easily knock down a foe and bite it to death."
+					]
+				},
+				{
+					"name": "Pack Harrier",
+					"entries": [
+						"A swarm of baazrag has advantage on attack rolls against a creature if at least one of the baazrag's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Swarm",
+					"entries": [
+						"The swarm can occupy another creature’s space and vice versa, and the swarm can move through any opening large enough for a Tiny creature. The swarm can’t regain hit points or gain temporary hit points."
+					]
+				},
+				{
+					"name": "Bloodthirsty swarm",
+					"entries": [
+						"The swarm is frenzied by blood and inflict {@damage 2d6} extra damage on melee attack against any creature that doesn't have all its hit points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}8 ({@damage 2d6}) piercing damage and the target must succeed on a {@dc 13} Constitution saving throw or be {@condition poisoned} for 1 minute."
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"skill": {
+				"perception": "+4"
+			},
+			"conditionInflict": [
+				"poisoned"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"prone",
+				"restrained",
+				"stunned"
 			]
 		},
 		{
