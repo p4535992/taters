@@ -7,8 +7,9 @@
 				"full": "Dark Sun Creature Catalog (5e)",
 				"authors": [
 					"Dungeons & Dragons 4rd edition Wizard of the Coast (https://www.drivethrurpg.com/product/133464/Dark-Sun-Creature-Catalog-4e)",
-					"Athas Arena Forum (http://arena.athas.org/t/monster-manual-v5-for-dark-sun/229)",
-					"The dread lord dregoth and dray dark sun (https://www.reddit.com/r/UnearthedArcana/comments/9vzwgr/the_dread_lord_dregoth_and_dray_dark_sun/ and https://darksun.fandom.com/wiki/Dregoth)",
+					"Reddit - Monster Manual - Dark Sun 5th Edition by Stanislav Zabielin (@auquid) (https://www.reddit.com/r/DarkSun/comments/7ws6kq/monster_manual_dark_sun_5th_edition_by_auquid/ and https://drive.google.com/file/d/1R4dJNW7Gx19N809bB7HAJMMlE72fPsPH/view)",
+					"Athas Arena Forum by Nathan Hasle (http://arena.athas.org/t/monster-manual-v5-for-dark-sun/229 and https://www.dropbox.com/s/0mu0yblgq8x53l6/5th%20Edition%20Dark%20Sun%20Creatures.pdf?dl=0)",
+					"Reddit - The dread lord dregoth and dray dark sun by u/scarlettspider (https://www.reddit.com/r/UnearthedArcana/comments/9vzwgr/the_dread_lord_dregoth_and_dray_dark_sun/ and https://darksun.fandom.com/wiki/Dregoth)",
 					"DMDave (https://dmdave.com/dark-sun-bestiary-part-1-domestic-beasts-new-monsters-for-fifth-edition/ and https://dmdave.com/dark-sun-bestiary-part-2/)"
 				],
 				"convertedBy": [
@@ -585,6 +586,129 @@
 			"tokenUrl": "https://i.imgur.com/X1Lfz3L.png"
 		},
 		{
+			"name": "DARKSUNCREATURE - Anakore",
+			"size": "M",
+			"type": "aberration",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 18",
+				"average": 45
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 20
+			},
+			"str": 17,
+			"dex": 14,
+			"con": 16,
+			"int": 7,
+			"wis": 12,
+			"cha": 6,
+			"passive": 11,
+			"cr": "2",
+			"shortName": "Anakore",
+			"fluff": {
+				"entries": [
+					"The dune freaks, or anakore, are a race of dimwitted humanoids with bony, wedgelike heads, small ears pressed close to the sides of their heads, and sunken, beady eyes covered by clear membranes to prevent sand from scratching these delicate tissues.",
+					"The anakore have an unusual dorsal ridge running along their spine. This fin is actually a sensitive organ which picks up minute vibrations traveling through the sand. With it, they can locate a solitary creature walking on the sand from as far away as five miles. Anakore usually attack their foes by burrowing underneath them, then striking from beneath the victim with their sharp claws.",
+					"The anakore are nomadic burrowers who are constantly moving through the sandy wastes of Athas. It is often possible to identify an area through which"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/7DOXqAC.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/EdQOAZU.png",
+			"environment": [
+				"desert"
+			],
+			"isNpc": true,
+			"senses": [
+				"darkvision 60 ft.",
+				"tremorsense 60 ft."
+			],
+			"senseTags": [
+				"D",
+				"T"
+			],
+			"languages": [
+				"Deep Speech"
+			],
+			"languageTags": [
+				"DS"
+			],
+			"save": {
+				"str": "+5",
+				"dex": "-1",
+				"con": "+5"
+			},
+			"skill": {
+				"stealth": "+6",
+				"survival": "+5"
+			},
+			"trait": [
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the anakore has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+					]
+				}
+			],
+			"traitTags": [
+				"Sunlight Sensitivity"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Tne Anakore makes 2 claw attacks"
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) slashing damage. , can grapple target instead of dealing damage."
+					]
+				},
+				{
+					"name": "Drag Under",
+					"entries": [
+						"The anakore can drag underground target its grappling dealing {@damage 2d4} bludgeoning damage. Also target becomes {@condition blinded} and {@condition restrained} and starts to suffocating and taking {@damage 2d4} blungeoning damage each turn while underground (PHB p.183). Target can make {@dc 13} Strenght saving throw to resurface."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"blinded",
+				"restrained"
+			]
+		},		
+		{
 			"name": "DARKSUNCREATURE - Anakore Hunter",
 			"size": "M",
 			"type": "aberration",
@@ -1003,6 +1127,281 @@
 				"dex": "+6",
 				"con": "+5"
 			}
+		},
+		{
+			"name": "DARKSUNCREATURE - Armand",
+			"size": "S",
+			"type": "humanoid",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d6 + 6",
+				"average": 17
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 10,
+			"dex": 15,
+			"con": 15,
+			"int": 10,
+			"wis": 13,
+			"cha": 8,
+			"passive": 11,
+			"cr": "1/4",
+			"shortName": "Armand",
+			"fluff": {
+				"entries": [
+					"Lore",
+					"Armands are nomadic humanoids who wander the desert of Athas in search of new experiences. They operate as a democratic unit with all adult armands able to voice and vote in council. They don’t believe in individual ownership and share all possessions and resources among other armands. Their philosophy scorns wealth because of its transitory nature. Of infinitely greater value are experiences, and those armands who have traveled, adventured, and returned to the tribe are deemed “wise ones” whose advice carries the most weight. Thus, many young adult armands leave their families and seek to see more of the world.",
+					"Armands worship through their philosophy the ideal of travel, nature, and the sun. They spend long moments meditating on the meaning of event but prefer to stray away from other races, avoiding conflicts when possible.",
+					"This pacifist mentality makes the armands the exception in the unforgiving land of Athas. Armand avoid at all cost the city states of the sorcerer-kings, despising the tyrannical rule that is law there. They enjoy civil relations with the giants of the Sea of Silt and trade with them often. They also do business with various aarakocra tribes of mountain chain of the Ringing Mountains. A tribe of armands will typically build a caravanserai around or near a desert oasis and open its gates to traders, adventurers, and other peaceful visitors.",
+					"In the south-east armands wandered freely across the deserts, maintaining a large monastery and trading post on the slopes of the Estuary of the Forked Tongue. However, the Dead Land undead’s raids destroyed the armand monastery, and the few armand tribes that survived were driven north, into the inhospitable Salt Meres of Bodach and armand nomads have wandered the desert as free folk ever since.",
+					"Encounter",
+					"An armand tribe usually consists of several small, closely knit family groups that come together to share resources. When faced with a deadly common foe, many tribes will converge on a defensible location to “make their stand.” Tribes look to the wardens for leadership, and a single tribe may have several wardens leading it. The armands rarely build permanent dwellings. They live in large communal tents or take advantage of ready shelter, such as caves."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/5Mz8u6L.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/8k112kw.png",
+			"environment": [
+				"desert"
+			],
+			"isNpc": true,
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"An armand prefers to avoid combat. It enjoys living and treasures new experiences. An armand rarely starts a conflict because combat too often causes an untimely end and deprives the armand or its foe of the pleasures of life. However, it will certainly fight if attacked."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) slashing damage."
+					]
+				}
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Armandish",
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"history": "+2",
+				"insight": "+5"
+			},
+			"reaction": [
+				{
+					"name": "Stable Stance",
+					"entries": [
+						"When the armand is subjected to an effect that would move it, knock it {@condition prone}, or both, it can use its reaction to neither moved nor knocked {@condition prone}."
+					]
+				}
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Armand Warden",
+			"size": "S",
+			"type": "humanoid",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d6 + 30",
+				"average": 65
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 10,
+			"dex": 17,
+			"con": 17,
+			"int": 10,
+			"wis": 15,
+			"cha": 8,
+			"passive": 12,
+			"cr": "3",
+			"shortName": "Armand Warden",
+			"fluff": {
+				"entries": [
+					"Lore",
+					"Armands are nomadic humanoids who wander the desert of Athas in search of new experiences. They operate as a democratic unit with all adult armands able to voice and vote in council. They don’t believe in individual ownership and share all possessions and resources among other armands. Their philosophy scorns wealth because of its transitory nature. Of infinitely greater value are experiences, and those armands who have traveled, adventured, and returned to the tribe are deemed “wise ones” whose advice carries the most weight. Thus, many young adult armands leave their families and seek to see more of the world.",
+					"Armands worship through their philosophy the ideal of travel, nature, and the sun. They spend long moments meditating on the meaning of event but prefer to stray away from other races, avoiding conflicts when possible.",
+					"This pacifist mentality makes the armands the exception in the unforgiving land of Athas. Armand avoid at all cost the city states of the sorcerer-kings, despising the tyrannical rule that is law there. They enjoy civil relations with the giants of the Sea of Silt and trade with them often. They also do business with various aarakocra tribes of mountain chain of the Ringing Mountains. A tribe of armands will typically build a caravanserai around or near a desert oasis and open its gates to traders, adventurers, and other peaceful visitors.",
+					"In the south-east armands wandered freely across the deserts, maintaining a large monastery and trading post on the slopes of the Estuary of the Forked Tongue. However, the Dead Land undead’s raids destroyed the armand monastery, and the few armand tribes that survived were driven north, into the inhospitable Salt Meres of Bodach and armand nomads have wandered the desert as free folk ever since.",
+					"Encounter",
+					"An armand tribe usually consists of several small, closely knit family groups that come together to share resources. When faced with a deadly common foe, many tribes will converge on a defensible location to “make their stand.” Tribes look to the wardens for leadership, and a single tribe may have several wardens leading it. The armands rarely build permanent dwellings. They live in large communal tents or take advantage of ready shelter, such as caves."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/cRS3CjZ.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/o6KEslt.png",
+			"environment": [
+				"desert"
+			],
+			"isNpc": true,
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Armand leaders arise from those who have traveled widely and experienced much. It is the duty of an armand warden to return to the tribe and lend its wisdom to the group. An armand warden fights fiercely to defend itself or any other armand."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"If an armand makes a successful Dexterity saving throw against an attack that normally deals half damage on a successful save, he instead takes no damage, and only half damage if he fails."
+					]
+				},
+				{
+					"name": "Magical Strikes",
+					"entries": [
+						"The unarmed strikes and kama strikes of the armand count as magical weapons for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
+					]
+				},
+				{
+					"name": "Stunning Strike",
+					"entries": [
+						"Once per turn, the armand can make a stunning strike. A creature hit by a melee weapon attack of the armand must succeed on a {@dc 13} Constitution saving throw or be {@condition stunned} until the end of the armand’s next turn."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The armand makes three attacks with its kama or three attacks with claws"
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Kama",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Wholeness of Body (Recharge after a Long Rest)",
+					"entries": [
+						"The armand focus his mind and regains 30 hit points."
+					]
+				}
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Armandish",
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"history": "+2",
+				"insight": "+4"
+			},
+			"reaction": [
+				{
+					"name": "Deflect Missile",
+					"entries": [
+						"When the armand is hit by a ranged weapon attack it can use its reaction to reduce the damage by {@dice 1d10 + 13}."
+					]
+				},
+				{
+					"name": "Stable Stance",
+					"entries": [
+						"When the armand is subjected to an effect that would move it, knock it {@condition prone}, or both, it can use its reaction to neither moved nor knocked {@condition prone}."
+					]
+				}
+			],
+			"save": {
+				"str": "+2",
+				"dex": "+5"
+			},
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned",
+				{
+					"special": "disease"
+				}
+			],
+			"conditionInflict": [
+				"stunned"
+			],
+			"actionTags": [
+				"Multiattack"
+			]
 		},
 		{
 			"name": "DARKSUNCREATURE - Dregoth, Sorcerer King",
