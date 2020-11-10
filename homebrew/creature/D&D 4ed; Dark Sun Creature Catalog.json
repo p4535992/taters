@@ -1518,7 +1518,7 @@
 			]
 		},
 		{
-			"name": "Bazzrag Gnawer",
+			"name": "DARKSUNCREATURE - Bazzrag Gnawer",
 			"size": "S",
 			"type": {
 				"type": "beast",
@@ -1526,7 +1526,7 @@
 					"reptile"
 				]
 			},
-			"source": "p4535992Dev",
+			"source": "DarkSunCreatureCatalog",
 			"alignment": [
 				"U"
 			],
@@ -1743,6 +1743,127 @@
 				"prone",
 				"restrained",
 				"stunned"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Bazzrag Breeder",
+			"size": "L",
+			"type": {
+				"type": "beast",
+				"tags": [
+					"reptile"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "11d10 + 33",
+				"average": 105
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 16,
+			"int": 3,
+			"wis": 14,
+			"cha": 10,
+			"passive": 14,
+			"cr": "5",
+			"shortName": "Bazzrag Breeder",
+			"fluff": {
+				"entries": [
+					"A lone baazrag stalks the desert plains",
+					"hunting a large, six-legged beast amid the dunes and rocks. When the prey realizes the danger, it attempts to escape, but not before the baazrag's jaws shut over a back leg. The quarry whirls and hisses, its jagged mandibles clicking furiously. The baazrag pads backward a few paces and looses a piercing squeal. Within seconds, further squeaks answer from nearby, and a dozen more baazrags bound over the dunes. The fero cious pack closes around the beetlelike creature and takes it down, one vicious bite at a time.",
+					"Lore",
+					"Anywhere that rough terrain provides cover for their burrows, baazrags can be found in large numbers. These wild beasts are vermin that eat anything they can find. Each individual sees to its own needs, fattening up on weeds and tiny prey, and storing water in a sac under its bony back shell. When larger prey is found, the pack works together for the promise ofa good meal for all. All baazrags are born female. Some members of a pack become male when an egg-laying breeder is nearby. These males tend to the breeder, defending her and her eggs as well as any hatchlings. Powerful baazrags have a natural psychic sensitivity. Large psychic disturbances irritate these creatures and can drive them to attack.",
+					"Encounters",
+					"Humanoids of all sorts domesticate baazrags, which make good house guards and pest hunters. Baazrags are also used to carry small loads or pull small vehicles. If a baazrag is born among other types of creatures or becomes accustomed to those who offer it food and comfort, it considers such beings to be part of its pack. Clever humanoids use this trait to tame baazrags as guard beasts. Baazrags tend to ignore creatures they cannot eat, such as undead. These inedible creatures, in turn, treat the baazrags similarly and ignore them. Thus, explorers might find a lair being shared by the two groups. Baazrags gain confidence, focus, and ferocity in numbers. Although they hunt singly, each baazrag acts as a scout for the pack. When a hunter finds prey, its distinct call brings its mates to swarm over the target. The baazrags relentlessly bite this prey and follow the creature until it falls or it proves too tough to pull down, forcing the baazrags to retreat. A baazrag breeder enters combat by culling a victim from the herd with psychiClure. Then it pounces on that individual, distinguishing it as a target for at least a few of its brood."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/3s12vBT.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/pIGgRpj.png",
+			"environment": [
+				"desert"
+			],
+			"isNpc": true,
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Most baazrags never grow beyond a certain size. A few, however, develop into much larger creatures that can produce eggs. A baazrag breeder defends its egg clutches and progeny with heedless ferocity."
+					]
+				},
+				{
+					"name": "Pack Harrier",
+					"entries": [
+						"A baazrag has advantage on attack rolls against a creature if at least one of the baazrag's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Psychic Provocation",
+					"entries": [
+						"If a spell or power dealing psychic damages or used by a psionic creature is used in a 60ft radius around the Baazrag Breeder the creature can use a bonus action to Dash toward the creature. If the Baazrag is already in contact with the creature it can make a bonus bite attack instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The baazrag makes two attacks. One with its bite and one with its claws."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d10 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}20 ({@damage 3d8 + 4}) piercing damage and the target must succeed on a {@dc 15} Constitution saving throw or be {@condition poisoned} for 1 minute."
+					]
+				}
+			],
+			"damageTags": [
+				"S",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"skill": {
+				"perception": "+4"
+			},
+			"conditionInflict": [
+				"poisoned"
+			],
+			"resist": [
+				"psychic"
+			],
+			"actionTags": [
+				"Multiattack"
 			]
 		},
 		{
