@@ -1867,6 +1867,854 @@
 			]
 		},
 		{
+			"name": "DARKSUNCREATURE - Belgoi",
+			"size": "M",
+			"type": "fey",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item hide armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 10",
+				"average": 55
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 16,
+			"con": 12,
+			"int": 13,
+			"wis": 13,
+			"cha": 16,
+			"passive": 11,
+			"cr": "3",
+			"fluff": {
+				"entries": [
+					"Once a proud, evil race of fey, the belgoi were stranded in the barrens of Athas by the destruction of their homelands. They came to hate the desert world and all its residents, and they degenerated into a madness that has led them to devour other humanoids and despoil all they touch. Life force literally leaks from some of the wounds inflicted by belgoi.",
+					"Belgoi gather in small, nomadic tribes that are led by the strongest member. They ruin wherever they live, consuming everything they can and destroying or polluting the rest. While the tribe camps, hunting parties scour the surrounding area for game. Belgoi kill and eat whatever they can catch, but they prefer meat seasoned with the terror that a sentient creature feels when it faces impending death."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/iLpwFm3.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/19WvDy8.png",
+			"environment": [
+				"desert"
+			],
+			"isNpc": true,
+			"shortName": "Belgoi",
+			"languages": [
+				"Common",
+				"Elvish",
+				"Sylvan"
+			],
+			"languageTags": [
+				"C",
+				"E",
+				"S"
+			],
+			"save": {
+				"int": "+3",
+				"wis": "+3",
+				"cha": "+5"
+			},
+			"skill": {
+				"athletics": "+6",
+				"stealth": "+7",
+				"survival": "+5"
+			},
+			"trait": [
+				{
+					"name": "Thought Shield",
+					"entries": [
+						"Thoughts of belgoi immune to magic that allows other creatures to read its thoughts, determine whether its lying."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The belgoi's spellcasting ability is Charisma (spell save {@dc 13}). The belgoi can innately cast the following spells, requiring no material components.",
+						"Spellcasting Ability=CHA",
+						"Global Magic Attack Modifier=5",
+						"Magic Caster Level=7",
+						"Spell Save DC Mod=13"
+					],
+					"will": [
+						"{@spell sleep}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell blur}",
+							"{@spell crown of madness}",
+							"{@spell misty step}"
+						],
+						"1e": [
+							"{@spell invisibility}",
+							"{@spell locate creature}",
+							"{@spell phantasmal force}",
+							"{@spell slow}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Belgoi makes 2 attacks with claws or longbow."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 150/600 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Compelling Bell {@recharge 5}",
+					"entries": [
+						"The belgoi rings his bell and target one humanoid or beast that he can see with 30ft of him. If the target can hear the bell it must succeed on a Wisdom saving throw {@dc 13} or being magically {@condition charmed}. Deafened creatures are immune to this capacity. The {@condition charmed} creature regards the belgoi as a frightening master to be heeded and obeyed. Although the target isn't under the belgoi's control, it takes the belgoi's requests or actions in the most favorable way it can. Each time the belgoi or its allies do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts for an hour or until the belgoi dies, is on a different plane of existence from the target, or ends the effect as a bonus action. If a target's saving throw is successful, the target is immune to the belgoi's Compelling Bell for the next 24 hours. The belgoi can have no more than one humanoid and up to three beasts {@condition charmed} at a time."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Belgoi Craven",
+			"size": "M",
+			"type": "fey",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"{@item hide armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8",
+				"average": 32
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 14,
+			"con": 10,
+			"int": 13,
+			"wis": 13,
+			"cha": 14,
+			"passive": 11,
+			"cr": "1",
+			"fluff": {
+				"entries": [
+					"TERRIBLE SOUNDS ARE CARRIED ",
+					"across the Athasian plains, but perhaps the most insidious is the jingling of small bells- the work of belgoi. The dissonant chimes of these gaunt humanoids tug at travelers' minds, entrancing victims and luring them out into the wastes, where they become easy prey for the hungry belgoi.",
+					"LORE ",
+					"Once a proud, evil race of fey, the belgoi were stranded in the barrens of Athas by the destruction of their homelands. They came to hate the desert world and all its residents, and they degenerated into a madness that has led them to devour other humanoids and despoil all they touch. Life force literally leaks from some of the wounds inflicted by belgoi.",
+					"Belgoi gather in small, nomadic tribes that are led by the strongest member. They ruin wherever they live, consuming everything they can and destroying or polluting the rest. While the tribe camps, hunting parties scour the surrounding area for game. Belgoi kill and eat whatever they can catch, but they prefer meat seasoned with the terror that a sentient creature feels when it faces impending death.",
+					"BeJgoi have another reason for devouring humanoids-they believe that eating the flesh of a victim grants them the fallen one's power. The strongest belgoi have consumed numerous enemies. For the sake of gaining and conserving personal power, belgoi also eat their own dead. They harbor a special taste for eladrin, whom they blame for destroying their home.",
+					"ENCOUNTERS ",
+					"Wicked humanoids such as gith might ally with belgoi or take in a few stalkers or hunters that lack the numbers to form their own raiding band or tribe. Like other humanoids, belgoi catch and tame wild beasts such as baazrags, chathrangs, and drakes. In particular, belgoi keep creatures that are skilled trackers or that can sniffout wounded prey. These beasts are intentionally malnourished by the belgoi, making them vicious and forcing them to fend for themselves."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/iLpwFm3.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/19WvDy8.png",
+			"environment": [
+				"desert"
+			],
+			"isNpc": true,
+			"shortName": "Belgoi Craven",
+			"languages": [
+				"Common",
+				"Elvish",
+				"Sylvan"
+			],
+			"languageTags": [
+				"C",
+				"E",
+				"S"
+			],
+			"save": {
+				"int": "+3",
+				"wis": "+3",
+				"cha": "+4"
+			},
+			"skill": {
+				"athletics": "+4",
+				"stealth": "+4"
+			},
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"The weakest belgoi are cowardly creatures that rely on their stronger kin for cover and aid. They seek to gang up on wounded or isolated foes."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 2}) slashing damage."
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage in melee, or 5 ({@damage 1d6 + 2}) piercing damage at range, or 7 ({@damage 1d8 + 2}) piercing damage if used with both hands."
+					]
+				},
+				{
+					"name": "Short bow",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 80/320 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Compelling Bell {@recharge 5}",
+					"entries": [
+						"The belgoi rings his bell and target one humanoid or beast that he can see with 30ft of him. If the target can hear the bell it must succeed on a Wisdom saving throw {@dc 13} or being magically {@condition charmed}. Deafened creatures are immune to this capacity. The {@condition charmed} creature regards the belgoi as a frightening master to be heeded and obeyed. Although the target isn't under the belgoi's control, it takes the belgoi's requests or actions in the most favorable way it can. Each time the",
+						"belgoi or its allies do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts for an hour or until the belgoi dies, is on a different plane of existence from the target, or ends the effect as a bonus action. If a target’s saving throw is successful, the target is immune to the belgoi's Compelling Bell for the next 24 hours. The belgoi can have no more than one humanoid and up to three beasts {@condition charmed} at a time."
+					]
+				}
+			],
+			"damageTags": [
+				"S",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Psionics)",
+					"headerEntries": [
+						"The belgoi's innate spellcasting ability is Charisma (spell save {@dc 12}). The belgoi can innately cast the following spells, requiring no material components.",
+						"Spellcasting Ability=CHA",
+						"Global Magic Attack Modifier=3",
+						"Magic Caster Level=5",
+						"Spell Save DC Mod=12"
+					],
+					"will": [
+						"{@spell sleep}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell blur}",
+							"{@spell crown of madness}",
+							"{@spell misty step}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"P",
+				"I"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Belgoi Hunter",
+			"size": "M",
+			"type": "fey",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item hide armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 10",
+				"average": 54
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 16,
+			"con": 12,
+			"int": 13,
+			"wis": 13,
+			"cha": 16,
+			"passive": 11,
+			"cr": "3",
+			"fluff": {
+				"entries": [
+					"TERRIBLE SOUNDS ARE CARRIED ",
+					"across the Athasian plains, but perhaps the most insidious is the jingling of small bells- the work of belgoi. The dissonant chimes of these gaunt humanoids tug at travelers' minds, entrancing victims and luring them out into the wastes, where they become easy prey for the hungry belgoi.",
+					"LORE ",
+					"Once a proud, evil race of fey, the belgoi were stranded in the barrens of Athas by the destruction of their homelands. They came to hate the desert world and all its residents, and they degenerated into a madness that has led them to devour other humanoids and despoil all they touch. Life force literally leaks from some of the wounds inflicted by belgoi.",
+					"Belgoi gather in small, nomadic tribes that are led by the strongest member. They ruin wherever they live, consuming everything they can and destroying or polluting the rest. While the tribe camps, hunting parties scour the surrounding area for game. Belgoi kill and eat whatever they can catch, but they prefer meat seasoned with the terror that a sentient creature feels when it faces impending death.",
+					"BeJgoi have another reason for devouring humanoids-they believe that eating the flesh of a victim grants them the fallen one's power. The strongest belgoi have consumed numerous enemies. For the sake of gaining and conserving personal power, belgoi also eat their own dead. They harbor a special taste for eladrin, whom they blame for destroying their home.",
+					"ENCOUNTERS ",
+					"Wicked humanoids such as gith might ally with belgoi or take in a few stalkers or hunters that lack the numbers to form their own raiding band or tribe. Like other humanoids, belgoi catch and tame wild beasts such as baazrags, chathrangs, and drakes. In particular, belgoi keep creatures that are skilled trackers or that can sniffout wounded prey. These beasts are intentionally malnourished by the belgoi, making them vicious and forcing them to fend for themselves."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/iLpwFm3.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/19WvDy8.png",
+			"environment": [
+				"desert"
+			],
+			"isNpc": true,
+			"shortName": "Belgoi Hunter",
+			"languages": [
+				"Common",
+				"Elvish",
+				"Sylvan"
+			],
+			"languageTags": [
+				"C",
+				"E",
+				"S"
+			],
+			"save": {
+				"int": "+3",
+				"wis": "+3",
+				"cha": "+5"
+			},
+			"skill": {
+				"athletics": "+4",
+				"stealth": "+7",
+				"survival": "+3"
+			},
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Slinking through the wastes alone, a belgoi stalker watches for travelers who are struggling to survive, engaged in a fight, or otherwise distracted. Flitting on the edges of a battle, the stalker gently rings its bell, drawing a lone victim away from the group."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The belgoi makes two attacks. Two with its claws or two with its longbow."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 2}) slashing damage."
+					]
+				},
+				{
+					"name": "Net",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 5/15 ft., one target. {@h}Special (p.148 of the Player’s Handbook). A Large or smaller creature hit by a net is {@condition restrained} until it is freed. A Large or smaller creature hit by a net is {@condition restrained} until it is freed. A net has no effect on creatures that are formless, or creatures that are Huge or larger. A creature can use its action to make a {@dc 10} Strength check, freeing itself or another creature within its reach on a success. Dealing 5 slashing damage to the net (AC 10) also frees the creature without harming it, ending the effect and destroying the net. When you use an action, bonus action, or reaction to attack with a net, you can make only one attack regardless of the number of attacks you can normally make."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 150/600 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage and the target must make a {@dc 13} Constitution saving throw, taking 5 ({@damage 2d4}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Compelling Bell {@recharge 5}",
+					"entries": [
+						"The belgoi rings his bell and target one humanoid or beast that he can see with 30ft of him. If the target can hear the bell it must succeed on a Wisdom saving throw {@dc 13} or being magically {@condition charmed}. Deafened creatures are immune to this capacity. The {@condition charmed} creature regards the belgoi as a frightening master to be heeded and obeyed. Although the target isn't under the belgoi's control, it takes the belgoi's requests or actions in the most favorable way it can. Each time the belgoi or its allies do anything harmful to the target, it can repeat the saving throw, ending the effect on",
+						"itself on a success. Otherwise, the effect lasts for an hour or until the belgoi dies, is on a different plane of existence from the target, or ends the effect as a bonus action. If a target’s saving throw is successful, the target is immune to the belgoi's Compelling Bell for the next 24 hours. The belgoi can have no more than one humanoid and up to three beasts {@condition charmed} at a time."
+					]
+				}
+			],
+			"damageTags": [
+				"S",
+				"P",
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW",
+				"RNG"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Psionics)",
+					"headerEntries": [
+						"The belgoi's innate spellcasting ability is Charisma (spell save {@dc 13}). The belgoi can innately cast the following spells, requiring no material components.",
+						"Spellcasting Ability=CHA",
+						"Global Magic Attack Modifier=5",
+						"Magic Caster Level=7",
+						"Spell Save DC Mod=13"
+					],
+					"will": [
+						"{@spell sleep}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell blur}",
+							"{@spell crown of madness}",
+							"{@spell hunter's mark}",
+							"{@spell misty step}"
+						],
+						"1e": [
+							"{@spell invisibility}",
+							"{@spell locate creature}",
+							"{@spell slow}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"P",
+				"I"
+			],
+			"actionTags": [
+				"Multiattack"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Belgoi Manhunter",
+			"size": "M",
+			"type": "fey",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"bone {@item half plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d8 + 28",
+				"average": 94
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 16,
+			"con": 15,
+			"int": 13,
+			"wis": 13,
+			"cha": 18,
+			"passive": 11,
+			"cr": "8",
+			"fluff": {
+				"entries": [
+					"TERRIBLE SOUNDS ARE CARRIED ",
+					"across the Athasian plains, but perhaps the most insidious is the jingling of small bells- the work of belgoi. The dissonant chimes of these gaunt humanoids tug at travelers' minds, entrancing victims and luring them out into the wastes, where they become easy prey for the hungry belgoi.",
+					"LORE ",
+					"Once a proud, evil race of fey, the belgoi were stranded in the barrens of Athas by the destruction of their homelands. They came to hate the desert world and all its residents, and they degenerated into a madness that has led them to devour other humanoids and despoil all they touch. Life force literally leaks from some of the wounds inflicted by belgoi.",
+					"Belgoi gather in small, nomadic tribes that are led by the strongest member. They ruin wherever they live, consuming everything they can and destroying or polluting the rest. While the tribe camps, hunting parties scour the surrounding area for game. Belgoi kill and eat whatever they can catch, but they prefer meat seasoned with the terror that a sentient creature feels when it faces impending death.",
+					"BeJgoi have another reason for devouring humanoids-they believe that eating the flesh of a victim grants them the fallen one's power. The strongest belgoi have consumed numerous enemies. For the sake of gaining and conserving personal power, belgoi also eat their own dead. They harbor a special taste for eladrin, whom they blame for destroying their home.",
+					"ENCOUNTERS ",
+					"Wicked humanoids such as gith might ally with belgoi or take in a few stalkers or hunters that lack the numbers to form their own raiding band or tribe. Like other humanoids, belgoi catch and tame wild beasts such as baazrags, chathrangs, and drakes. In particular, belgoi keep creatures that are skilled trackers or that can sniffout wounded prey. These beasts are intentionally malnourished by the belgoi, making them vicious and forcing them to fend for themselves."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/iLpwFm3.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/19WvDy8.png",
+			"environment": [
+				"desert"
+			],
+			"isNpc": true,
+			"shortName": "Belgoi Manhunter",
+			"languages": [
+				"Common",
+				"Elvish",
+				"Sylvan"
+			],
+			"languageTags": [
+				"C",
+				"E",
+				"S"
+			],
+			"save": {
+				"int": "+4",
+				"wis": "+4",
+				"cha": "+7"
+			},
+			"skill": {
+				"athletics": "+9",
+				"stealth": "+6"
+			},
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Most belgoi devour enemies for their strength and believe that each fallen enemy grant them strength. The belgoi manhunter have embraced this idea and indulge in extreme cannibalism, crafting armors with the bones of their fallen foes. This gruesome diet bolsters their psychic abilities to an unparalleled level in their race. They like nothing more than devouring the flesh of a terrified prey."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The belgoi makes two attacks. Two with its claws or two psychic lash."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 3}) slashing damage, plus 9 ({@damage 2d8}) psychic damage."
+					]
+				},
+				{
+					"name": "Psychic Lash",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 5/120 ft., one target. {@h}16 ({@damage 4d6}) psychic damage and the target must make a {@dc 15} Intelligence saving throw, or become {@condition stunned} until the end of the belgoi next turn."
+					]
+				},
+				{
+					"name": "Bell of Terror {@recharge 4}",
+					"entries": [
+						"The belgoi rings his bell and target one humanoid or beast that he can see with 30ft of him. If the target can hear the bell it must succeed on a Wisdom saving throw {@dc 15} or being magically {@condition frightened}. Deafened creatures are immune to this capacity. The effect lasts for one minute or until the belgoi dies, is on a different plane of existence from the target, or ends the effect as a bonus action. A {@condition frightened} target can repeat the saving throw at each of its turns, ending the effect on itself on a success. If a target’s saving throw is successful, the target is immune to the belgoi's Bell of Terror for the next 24 hours."
+					]
+				}
+			],
+			"damageTags": [
+				"S",
+				"Y"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Psionics)",
+					"headerEntries": [
+						"The belgoi's innate spellcasting ability is Charisma (spell save {@dc 15}). The belgoi can innately cast the following spells, requiring no material components.",
+						"Spellcasting Ability=CHA",
+						"Global Magic Attack Modifier=7",
+						"Magic Caster Level=9",
+						"Spell Save DC Mod=15"
+					],
+					"will": [
+						"{@spell sleep}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell blur}",
+							"{@spell crown of madness}",
+							"{@spell misty step}"
+						],
+						"2e": [
+							"{@spell haste}",
+							"{@spell hypnotic pattern}",
+							"{@spell vampiric touch}"
+						],
+						"1e": [
+							"{@spell hallucinatory terrain}",
+							"{@spell insect plague}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"P",
+				"I"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"conditionInflict": [
+				"stunned"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Belgoi Caller",
+			"size": "M",
+			"type": "fey",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"bone {@item half plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "19d8 + 38",
+				"average": 161
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 17,
+			"con": 14,
+			"int": 15,
+			"wis": 15,
+			"cha": 20,
+			"passive": 12,
+			"cr": "13",
+			"fluff": {
+				"entries": [
+					"TERRIBLE SOUNDS ARE CARRIED ",
+					"across the Athasian plains, but perhaps the most insidious is the jingling of small bells- the work of belgoi. The dissonant chimes of these gaunt humanoids tug at travelers' minds, entrancing victims and luring them out into the wastes, where they become easy prey for the hungry belgoi.",
+					"LORE ",
+					"Once a proud, evil race of fey, the belgoi were stranded in the barrens of Athas by the destruction of their homelands. They came to hate the desert world and all its residents, and they degenerated into a madness that has led them to devour other humanoids and despoil all they touch. Life force literally leaks from some of the wounds inflicted by belgoi.",
+					"Belgoi gather in small, nomadic tribes that are led by the strongest member. They ruin wherever they live, consuming everything they can and destroying or polluting the rest. While the tribe camps, hunting parties scour the surrounding area for game. Belgoi kill and eat whatever they can catch, but they prefer meat seasoned with the terror that a sentient creature feels when it faces impending death.",
+					"BeJgoi have another reason for devouring humanoids-they believe that eating the flesh of a victim grants them the fallen one's power. The strongest belgoi have consumed numerous enemies. For the sake of gaining and conserving personal power, belgoi also eat their own dead. They harbor a special taste for eladrin, whom they blame for destroying their home.",
+					"ENCOUNTERS ",
+					"Wicked humanoids such as gith might ally with belgoi or take in a few stalkers or hunters that lack the numbers to form their own raiding band or tribe. Like other humanoids, belgoi catch and tame wild beasts such as baazrags, chathrangs, and drakes. In particular, belgoi keep creatures that are skilled trackers or that can sniffout wounded prey. These beasts are intentionally malnourished by the belgoi, making them vicious and forcing them to fend for themselves."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/iLpwFm3.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/19WvDy8.png",
+			"environment": [
+				"desert"
+			],
+			"isNpc": true,
+			"shortName": "Belgoi Caller",
+			"languages": [
+				"Common",
+				"Elvish",
+				"Sylvan"
+			],
+			"languageTags": [
+				"C",
+				"E",
+				"S"
+			],
+			"save": {
+				"int": "+7",
+				"wis": "+7",
+				"cha": "+10"
+			},
+			"skill": {
+				"athletics": "+7",
+				"stealth": "+8"
+			},
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"When a caller leads the belgoi on a hunt, they are emboldened by the rallying presence of this powerful war chief. The caller strides fearlessly among the belgoi's foes, lashing their minds, sapping their wills, and turning them against one another. Through it all, the discordant jingling of the caller's bell never ceases."
+					]
+				},
+				{
+					"name": "Foresight",
+					"entries": [
+						"The belgoi has a limited ability to see into the immediate future. It can’t be surprised, and has advantage on attack rolls, ability checks and saving throws. Additionally other creatures have disadvantages on attack rolls against the belgoi."
+					]
+				},
+				{
+					"name": "Psychic Defense",
+					"entries": [
+						"While the belgoi is wearing no armor and wielding no shield, its AC includes its Charisma modifier."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The belgoi makes two attacks. Two with its claws or two psychic lash."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 2}) slashing damage, plus 24 ({@damage 5d8}) psychic damage."
+					]
+				},
+				{
+					"name": "Psychic Lash",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 5/120 ft., one target. {@h}28 ({@damage 5d10}) psychic damage and the target must make a {@dc 18} Intelligence saving throw, or become {@condition stunned} until the end of the belgoi next turn."
+					]
+				},
+				{
+					"name": "Command of the Bell {@recharge 4}",
+					"entries": [
+						"The belgoi rings his bell and each humanoid and beast within 60ft of him that can hear the bell must succeed on a Wisdom saving throw {@dc 18} or being magically {@condition charmed}. Deafened creatures are immune to this capacity. The {@condition charmed} creature regards the belgoi as a frightening master to be heeded and obeyed. Although the target isn't under the belgoi's control, it takes the belgoi's requests or actions in the most favorable way it can. Each time the belgoi or its allies do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts for 24 hours or until the belgoi dies, is on a different plane of existence from the target, or ends the effect as a bonus action. If a target’s saving throw is successful, the target is immune to the belgoi's Command of the Bell for the next 24 hours. The belgoi have no limit on the number of humanoids and beasts he can have {@condition charmed} at a time."
+					]
+				}
+			],
+			"damageTags": [
+				"S",
+				"Y"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Psionics)",
+					"headerEntries": [
+						"The belgoi's innate spellcasting ability is Charisma (spell save {@dc 18}). The belgoi can innately cast the following spells, requiring no material components.",
+						"Spellcasting Ability=CHA",
+						"Global Magic Attack Modifier=10",
+						"Magic Caster Level=11",
+						"Spell Save DC Mod=18"
+					],
+					"will": [
+						"{@spell sleep}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell blur}",
+							"{@spell crown of madness}",
+							"{@spell misty step}"
+						],
+						"2e": [
+							"{@spell confusion}",
+							"{@spell greater invisibility}",
+							"{@spell hypnotic pattern}",
+							"{@spell phantasmal killer}"
+						],
+						"1e": [
+							"{@spell dominate monster}",
+							"{@spell etherealness}",
+							"{@spell hallucinatory terrain}",
+							"{@spell true seeing}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"P",
+				"I"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"conditionInflict": [
+				"stunned"
+			],
+			"reaction": [
+				{
+					"name": "Teleport",
+					"entries": [
+						"The belgoi psionically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see."
+					]
+				}
+			]
+		},		
+		{
 			"name": "DARKSUNCREATURE - Dregoth, Sorcerer King",
 			"size": "H",
 			"type": {
