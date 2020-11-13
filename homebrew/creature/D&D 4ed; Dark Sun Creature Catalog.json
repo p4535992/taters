@@ -3935,7 +3935,7 @@
 				13,
 				{
 					"ac": 15,
-					"condition": "with mage armor",
+					"condition": "with {@spell mage armor}",
 					"braces": true
 				}
 			],
@@ -4707,6 +4707,131 @@
 						"When the Hunter Cactus suffers damages and has at least one creature grabbed it can use its reaction to use psychic feedback. One of the creature suffers psychic damages equal to the damage suffered by the cactus."
 					]
 				}
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Chathrang",
+			"size": "L",
+			"type": "beast",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				14,
+				{
+					"ac": 19,
+					"condition": "while in its shell",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "9d10 + 45",
+				"average": 113
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 14,
+			"dex": 16,
+			"con": 20,
+			"int": 2,
+			"wis": 13,
+			"cha": 13,
+			"passive": 14,
+			"cr": "4",
+			"shortName": "Chathrang",
+			"fluff": {
+				"entries": [
+					"The parched travelers",
+					"finally catch sight of a small, reedy oasis. One of their number, versed in nature magic, follows the course of a desert hawk. As the group descends the side of a small mesa, a sharp screech pierces the air. Their bird guide flaps its wings in panic as it is pulled into a patch of what looks like bamboo. It disappears with a crunch.",
+					"Lore",
+					"Veteran desert travelers know to be wary near an oasis. These locales can hide disguised predators such as chathrangs. A chathrang looks like an outsized tortoise, its back covered with reed like protrusions. These tubes shoot quills covered with a sticky toxin. Each quill is attached to the beast by a long, sinewy cord by which it pulls its quarry closer. Chathrangs prey on small flying birds or insects, but they capture land-dwelling prey if nothing else is available.",
+					"Encounters",
+					"Slow and cowardly, chathrangs live and travel in groups of three. They make their homes near sources of plentiful prey, sharing the food they capture with other predators in exchange for protection. Training a chathrang is difficult and rarely worth the effort, though dune traders and assassins sometimes keep the creatures to harvest the toxin they secrete. Captive chathrangs aren't reliable guards, but they might become agitated and attack in chaotic situations."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/jLXSHFO.png"
+						}
+					}
+				]
+			},
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Chathrangs aren't smart. They use their tethers to poison and drag prey to them without stopping to consider that a captured creature might be dangerous. They prefer to attack flying enemies instead of those on the ground. As it waits for prey to approach, a chathrang digs a shallow burrow in which it hides with only its spines visible, so that it looks like a pile of broken reeds or bamboo. When hurt, a chathrang instinctively hides inside its bony shell."
+					]
+				},
+				{
+					"name": "Oasis Camouflage",
+					"entries": [
+						"The chathrang has advantage on Dexterity (Stealth) checks made to hide in oasis-like terrain."
+					]
+				},
+				{
+					"name": "Spiny Shell",
+					"entries": [
+						"When a creature attack the chathrang with a melee attack with a reach of 5ft or less she must make a Dexterity saving throw {@dc 14} or take {@damage 2d6} piercing damage."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/G8WqPrn.png",
+			"environment": [
+				"desert"
+			],
+			"isNpc": true,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+8"
+			},
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The chathrang makes two {@condition poisoned} tether attacks, two spine volley attacks or any combination of the two."
+					]
+				},
+				{
+					"name": "Poisoned Tether",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 20 ft., one target. {@h}9 ({@damage 2d6 + 3}) piercing damage, plus 6 ({@damage 2d6}) poison damage. If the target is Medium or smaller, it is {@condition grappled} (escape {@dc 14}) and pulled 5 feet toward the chathrang. If at the end of its turn a {@condition grappled} creature is within 5ft of the chathrang it automatically suffers {@damage 2d6} piercing damage from the spiny shell feature. Until this grapple ends, the target is {@condition restrained}."
+					]
+				},
+				{
+					"name": "Spine Volley",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 30/60 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage and the target must succeed on a {@dc 14} Constitution saving throw or be {@condition poisoned} for 1 minute. Until this poison ends, the target is {@condition paralyzed}. The target can repeat the saving throw at the end of each of its turns, ending the poison on itself on a success."
+					]
+				},
+				{
+					"name": "Shell Retreat",
+					"entries": [
+						"The chathrang retreat in its shell and gains a +5 bonus to its AC until the beginning of its next turn. While in this stance, the damage from its Spiny Shell feature increase by {@dice 1d6}."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"restrained",
+				"grappled",
+				"paralyzed",
+				"poisoned"
 			]
 		},
 		{
