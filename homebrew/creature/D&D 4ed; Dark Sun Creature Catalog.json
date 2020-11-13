@@ -4835,6 +4835,238 @@
 			]
 		},
 		{
+			"name": "DARKSUNCREATURE - Cilops (version 2)",
+			"size": "L",
+			"type": "beast",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d10 + 14",
+				"average": 52
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 12,
+			"con": 14,
+			"int": 2,
+			"wis": 16,
+			"cha": 12,
+			"passive": 13,
+			"cr": "3",
+			"shortName": "Cilops (version 2)",
+			"fluff": {
+				"entries": [
+					"Cilops are relentless hunters who are prized by the templars of all the city-states for their unique tracking abilities. The creatures look like enormous centipedes that reach lengths exceeding 15 feet. Their segmented bodies are long and flat and form a hard exoskeleton. Their hooked legs allow them to crawl onto virtually any surface and to scale walls with ease.",
+					"Cilops seem to require no sleep and will track their prey for weeks without stopping. Their unique object reading ability allows them to touch an object and then associate that object with an individual. While they ordinarily track by scent, if they are in danger of losing a trail, they will use an ability similar to sensitivity to psychic impressions. This ability allows a cilops to detect the psychic residue of its prey and to resume tracking.",
+					"Cilops have no lairs or consistent nesting areas, but constantly roam in search of food. They will occasionally hunt in small packs, but there appears to be no clear structure to the group. The cilops can be captured and trained. The creature seems to become familiar with its handler and can be used to hunt individuals if it is provided a fresh trail or an object that has been handled by the victim. Cilops have not been successfully bred in captivity and must be captured."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/o8e5nVx.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"desert"
+			],
+			"isNpc": true,
+			"tokenUrl": "https://i.imgur.com/e9IG3eb.png",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"save": {
+				"dex": "+3",
+				"wis": "+5"
+			},
+			"skill": {
+				"perception": "+7"
+			},
+			"trait": [
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The cilops can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				}
+			],
+			"traitTags": [
+				"Spider Climb"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Cilops can make 3 bite attacks against same target.or dazing antennae and one bite attack against same target."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Dazing Antennae",
+					"entries": [
+						"Cilops targets creature within 10 ft. of him, that creature must make {@dc 14} Constitution saving throw. On fail target takes 7 ({@damage 2d6}) psychic damage and it is {@condition stunned} until the end of the cilops’s next turn. On success it is not {@condition stunned} and takes half of the damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"Y"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"reaction": [
+				{
+					"name": "Psychic Trail",
+					"entries": [
+						"The cilops is an unparalleled tracker once it sawa creature. As reaction cilops can choose a creature that it can see and gain advantages on attack rolls against this creature and inflict an extra {@damage 1d6} psychic damage on its attacks. The creature cannot hide or be {@condition invisible} from the cilops and the cilops gain a psionic effect similar to a Locate Creature spell for the next 24 hours to track the creature. The cylops cannot use this feature one more than one creature at a time."
+					]
+				}
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Cilops",
+			"size": "L",
+			"type": "beast",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d10 + 8",
+				"average": 62
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 14,
+			"con": 12,
+			"int": 2,
+			"wis": 13,
+			"cha": 10,
+			"passive": 13,
+			"cr": "3",
+			"shortName": "Cilops",
+			"fluff": {
+				"entries": [
+					"Cilopses prowl sandy wastes",
+					"and deserted streets at night, seeking an easy meal. Templars favor cilopses as hunters because of their psionic-based tracking talents. Enemies of the sorcerer-kings shut their doors and slink away into the shadows when they hear the scuttling sound of a cilops approach.",
+					"Lore",
+					"Mundane centipedes of Athas infest any area where water collects, and these larger predatory versions are found in the same environments. Cilopses have tougher shells than their smaller kin, as well as psionic abilities that debilitate prey and keep it within striking range.",
+					"Encounters",
+					"Captured cilopses can be trained as pets or guardians. Some templars train cilops stalkers as lone hunters, then turn them loose in the streets of the city-states."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/k6DYLPW.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"desert"
+			],
+			"isNpc": true,
+			"tokenUrl": "https://i.imgur.com/gtCRzyZ.png",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"skill": {
+				"perception": "+3"
+			},
+			"trait": [
+				{
+					"name": "Psychic Trail",
+					"entries": [
+						"The cilops is an unparalleled tracker once it saw a creature. The cilops can use its reaction to choose a creature that it can see and gain advantages on attack rolls against this creature and inflict an extra {@damage 1d6} psychic damage on its attacks. The creature cannot hide or be {@condition invisible} from the cilops and the cilops gain a psionic effect similar to a Locate Creature spell for the next 24hours to track the creature. The cylops cannot use this feature one more than one creature at a time."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The cilops can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The cilops makes two attacks, one with its dazing antennae and one with its pincer."
+					]
+				},
+				{
+					"name": "Dazing Antennae",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 2d6}) lightning damage and the target must succeed on a {@dc 13} Constitution save throw or be {@condition stunned} until the end of the cilops’s next turn."
+					]
+				},
+				{
+					"name": "Pincer.",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 2d4 + 2}) piercing damage and target must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"L",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"traitTags": [
+				"Spider Climb"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
 			"name": "DARKSUNCREATURE - Dregoth, Sorcerer King",
 			"size": "H",
 			"type": {
