@@ -4128,6 +4128,588 @@
 			]
 		},
 		{
+			"name": "DARKSUNCREATURE - Cactus Hunting",
+			"size": "S",
+			"type": "plant",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"formula": "10d6 + 10",
+				"average": 45
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 8,
+			"dex": 4,
+			"con": 12,
+			"int": 15,
+			"wis": 10,
+			"cha": 1,
+			"passive": 10,
+			"cr": "4",
+			"tokenUrl": "https://i.imgur.com/jsiSll6.png",
+			"shortName": "Cactus Hunting",
+			"fluff": {
+				"entries": [
+					"Hunting cacti are a pale green color. They stand 3 feet high and have a number of oval shaped pods attached to the main trunk. They have no sensory organs, so they rely on their psionic abilities to detect prey.",
+					"Hunting cacti are normally found alone, although they are occasionally found in pairs. They build no lair, resting wherever they happen to be. They often rest among a group of normal cacti if one is available. Hunting cacti prefer meat, but can survive on plants indefinitely. Although the cacti regard this as a form of cannibalism, they prefer consuming plants to starvation."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/sFf57mL.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"desert"
+			],
+			"isNpc": true,
+			"senses": [
+				"blindsight 30 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"resist": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"deafened",
+				"frightened"
+			],
+			"trait": [
+				{
+					"name": "False Appearance",
+					"entries": [
+						"While the sand cactus remains motionless, it is indistinguishable from an normal cactus."
+					]
+				}
+			],
+			"traitTags": [
+				"False Appearance"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Hauting Cactus makes 5 spine attacks."
+					]
+				},
+				{
+					"name": "Spine",
+					"entries": [
+						"{@atk rw} {@hit 2} to hit, range 10/30 ft., one target. {@h}2 ({@damage 1d4}) piercing damage. Creature hit by spine must make a {@dc 13} Conctitution saving throw or be {@condition paralyzed} until end of cactus turn."
+					]
+				},
+				{
+					"name": "Insert Spines",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) damage. If creature hitted by insert spines is {@condition paralyzed} then hauting cactus deals additional {@damage 2d4} necrotic damage and heals for same amount."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"RW",
+				"MW"
+			],
+			"conditionInflict": [
+				"paralyzed"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Cactus Sand",
+			"size": "M",
+			"type": "plant",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				8
+			],
+			"hp": {
+				"formula": "8d8 + 8",
+				"average": 44
+			},
+			"speed": {
+				"walk": 0
+			},
+			"str": 5,
+			"dex": 1,
+			"con": 12,
+			"int": 1,
+			"wis": 3,
+			"cha": 1,
+			"passive": 6,
+			"cr": "3",
+			"tokenUrl": "https://i.imgur.com/uol0hld.png",
+			"shortName": "Cactus Sand",
+			"fluff": {
+				"entries": [
+					"Sand Cacti are a vile form of plant life that dwells anywhere there is sand. It feeds on the blood of its victims. Sand cacti are well protected; the entire plant (except the needles) is hidden below the sand. The body is from 5-8 feet across and about 4 feet thick. It has many barbed needles attached to it with long, thin, fibrous strands. The bulbous body of the plant and the strands are sickly white, while the needles very closely resemble the color of the sand in the area. The sand cactus is a solitary creature, existing wherever the sand blows.",
+					"The sand cactus is a trapper, existing on any food that comes along. It is unable to digest kank blood; a cactus releases a snagged kank after one round of blood draining. Anything else is fair game."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/ORqGnOv.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"desert"
+			],
+			"isNpc": true,
+			"senses": [
+				"blindsight 30 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"conditionImmune": [
+				"blinded",
+				"deafened",
+				"frightened"
+			],
+			"trait": [
+				{
+					"name": "False Appearance",
+					"entries": [
+						"While the sand cactus remains motionless, it is indistinguishable from an small group of cactuses on the ground. "
+					]
+				},
+				{
+					"name": "Underground Plant",
+					"entries": [
+						"The cactus is very difficult to attack since its body is 7 ({@dice 1d6 + 4}) feet below the sand. While its underground it has +10 AC to all nonmagical attacks. If the body is exposed, the sand cactus is easy to kill. Attackers can dig 1 feet of sand per round."
+					]
+				}
+			],
+			"traitTags": [
+				"False Appearance"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Sand Cactus makes 6 needle attacks."
+					]
+				},
+				{
+					"name": "Needle",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) piercing damage. Sand cactus can grapple target instead of dealing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Cactus Rock",
+			"size": "T",
+			"type": "plant",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				8
+			],
+			"hp": {
+				"formula": "8d8",
+				"average": 44
+			},
+			"speed": {
+				"walk": 0
+			},
+			"str": 1,
+			"dex": 1,
+			"con": 10,
+			"int": 1,
+			"wis": 1,
+			"cha": 1,
+			"passive": 5,
+			"cr": "1/8",
+			"tokenUrl": "https://i.imgur.com/UDM84O8.png",
+			"shortName": "Cactus Rock",
+			"fluff": {
+				"entries": [
+					"Rock cacti are small, spherical plants that can be found anywhere water is not plentiful. They are generally brown in color, but deepen to black as they increase their fluid storage. During spring and summer rock cacti produce a bright yellow flower that lasts only a few hours. The rest of the time, rock cacti appear to be roughly spherical rocks, about 1 foot in diameter.",
+					"Rock cacti are found near game trails in small clumps of as many as 10 plants. They are non-ambulatory and so have no territory. They have been successfully transplanted to the gardens of Tyr, where they keep the rodent population in check. Rock cacti exude a perfume that is undetectable by demihumans but attracts small rodents and mammals. Like most plants, rock cacti rely on insects to assist them to reproduce."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/ntPb5Uk.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"desert"
+			],
+			"isNpc": true,
+			"senses": [
+				"blindsight 10 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"conditionImmune": [
+				"blinded",
+				"deafened",
+				"frightened"
+			],
+			"trait": [
+				{
+					"name": "False Appearance",
+					"entries": [
+						"While the sand cactus remains motionless, it is indistinguishable from an normal cactus."
+					]
+				}
+			],
+			"traitTags": [
+				"False Appearance"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Rock Cactus makes 3 spine attacks."
+					]
+				},
+				{
+					"name": "Spine",
+					"entries": [
+						"{@atk mw} {@hit 0} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Cactus Zombie",
+			"size": "L",
+			"type": "plant",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "11d10 + 44",
+				"average": 110
+			},
+			"speed": {
+				"walk": {
+					"number": 5,
+					"condition": "(earth walk)"
+				}
+			},
+			"str": 15,
+			"dex": 15,
+			"con": 19,
+			"int": 4,
+			"wis": 15,
+			"cha": 17,
+			"passive": 12,
+			"cr": "5",
+			"tokenUrl": "https://i.imgur.com/VGRYeiS.png",
+			"shortName": "Cactus Zombie",
+			"fluff": {
+				"entries": [
+					"Athas's cacti are important",
+					"sources of water and sustenance, but a few species are mobile, hazardous, or monstrous. Although most carnivorous plants are stationary hazards for the unwary, some actively hunt prey.",
+					"Lore",
+					"A zombie cactus blooms with flowerlike protrusions sprouting four to eight violet berries filled with refreshing nectar. It closely resembles the rare flowering oasis cactus, whose juicy fruit is salvation for lost and thirsty travelers. With this tempting disguise it draws in its prey, then lashes out with life-stealing tendrils.",
+					"Sages believe that zombie cacti were created as traps by psionics-using slavers, aided by defilers, but their creations were ultimately uncontrollable. Those cacti that were not destroyed found their way into the desert. Hunter cacti are opportunistic hunters that grow and stay where prey is plentiful, moving on from poor hunting grounds. They rely on their camouflage as they wait for distracted or unobservant creatures to come close. A cactus might leave an occasional corpse uneaten, in hopes of attracting scavengers that make a better meal. The flesh of a hunter cactus is succulent and nourishing, a tasty reward for those who turn the tables on it.",
+					"Encounters",
+					"A zombie cactus exists alone or in a small patch amid a number of thralls. Sometimes zombie cacti are encountered in pairs.  Although simple and self-serving, zombie cacti have a low cunning. They might form short-term alliances with creatures that lure prey to them. A few are forced into the service of more powerful beings and constantly look for a chance to escape.",
+					"Humanoids can train hunter cacti to coexist with them by feeding the predatory plants. Such cacti learn to attack intruders other than their usual feeders and serve as easily overlooked guardians."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/Q7RaUBB.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"desert"
+			],
+			"isNpc": true,
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Not all cacti are drab and prickly. The zombie cactus is a beautiful plant, with delicate spines and plenty of juicy berries. It attracts thirsty creatures, then dominates and desiccates them, creating a small army of undying servitors in the process."
+					]
+				},
+				{
+					"name": "False Appearance",
+					"entries": [
+						"While the cactus remains motionless, it is indistinguishable from a normal cactus."
+					]
+				},
+				{
+					"name": "Poison Fruit",
+					"entries": [
+						"The cactus bears between four and eight nectar-filled fruit. A creature can pick a fruit and drink its liquid in a single action. Any creature that drinks the liquid must succeed on a {@dc 15} Constitution saving throw or is dominated as if by the cactus's dominating spores."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The zombie cactus regains 15 hit points at the start of its turn if it has at least 1 hit point."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"languages": [
+				"telepathy 60 ft."
+			],
+			"languageTags": [
+				"TP"
+			],
+			"resist": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning"
+			],
+			"immune": [
+				"necrotic",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"deafened",
+				"frightened"
+			],
+			"traitTags": [
+				"False Appearance",
+				"Regeneration"
+			],
+			"action": [
+				{
+					"name": "Lashing Tendrils",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}5 ({@damage 1d6 + 2}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Needles",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 30/60 ft., one target. {@h}8 ({@damage 2d6 + 2}) piercing damage and the target must succeed on a {@dc 15} Constitution saving throw or is under the influence of the dominating spores and act as if under the influence of a {@spell Dominate Person} spell. While at 0 hit points or fewer, the target cannot save against this power. When a creature dominated by the cactus dies, it becomes a zombie thrall at the start of the zombie cactus's next turn. The zombie thrall acts immediately after the zombie cactus. The slain humanoid cannot be raised until the thrall is destroyed. A {@spell Lesser Restoration}, {@spell Greater Restoration}, {@spell Heal} or {@spell Wish} spell can end the effect of the dominating spores on a creature."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Cactus Hunter",
+			"size": "L",
+			"type": "plant",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d10 + 32",
+				"average": 163
+			},
+			"speed": {
+				"walk": {
+					"number": 10,
+					"condition": "(earth walk)"
+				}
+			},
+			"str": 17,
+			"dex": 19,
+			"con": 15,
+			"int": 2,
+			"wis": 15,
+			"cha": 3,
+			"passive": 12,
+			"cr": "7",
+			"tokenUrl": "https://i.imgur.com/hpctkhG.png",
+			"shortName": "Cactus Hunter",
+			"fluff": {
+				"entries": [
+					"Athas's cacti are important",
+					"sources of water and sustenance, but a few species are mobile, hazardous, or monstrous. Although most carnivorous plants are stationary hazards for the unwary, some actively hunt prey.",
+					"Lore",
+					"A zombie cactus blooms with flowerlike protrusions sprouting four to eight violet berries filled with refreshing nectar. It closely resembles the rare flowering oasis cactus, whose juicy fruit is salvation for lost and thirsty travelers. With this tempting disguise it draws in its prey, then lashes out with life-stealing tendrils.",
+					"Sages believe that zombie cacti were created as traps by psionics-using slavers, aided by defilers, but their creations were ultimately uncontrollable. Those cacti that were not destroyed found their way into the desert. Hunter cacti are opportunistic hunters that grow and stay where prey is plentiful, moving on from poor hunting grounds. They rely on their camouflage as they wait for distracted or unobservant creatures to come close. A cactus might leave an occasional corpse uneaten, in hopes of attracting scavengers that make a better meal. The flesh of a hunter cactus is succulent and nourishing, a tasty reward for those who turn the tables on it.",
+					"Encounters",
+					"A zombie cactus exists alone or in a small patch amid a number of thralls. Sometimes zombie cacti are encountered in pairs.  Although simple and self-serving, zombie cacti have a low cunning. They might form short-term alliances with creatures that lure prey to them. A few are forced into the service of more powerful beings and constantly look for a chance to escape.",
+					"Humanoids can train hunter cacti to coexist with them by feeding the predatory plants. Such cacti learn to attack intruders other than their usual feeders and serve as easily overlooked guardians."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/BMpH77z.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"desert"
+			],
+			"isNpc": true,
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Bristling with poisonous needles and long feeding spines a hunter cactus resembles a mundane desert plant until unsuspecting prey wanders too close. A hunter cactus blends in with normal cacti around it. Waiting for creatures to stop to gather sustenance from the plants. It launches poisonous spines then moves in to inject {@condition blinded} and disoriented prey with its feeding spines. The cactus is interested in food not battle. Once it has captured its quarry it tries to keep other attackers at bay so that it can escape to feed."
+					]
+				},
+				{
+					"name": "False Appearance",
+					"entries": [
+						"While the cactus remains motionless, it is indistinguishable from a normal cactus."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"I"
+			],
+			"conditionImmune": [
+				"blinded",
+				"deafened",
+				"frightened"
+			],
+			"traitTags": [
+				"False Appearance"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The cactus makes two slam attacks, two feeding spine attacks or any combination of the two."
+					]
+				},
+				{
+					"name": "Feeding Spine",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}10 ({@damage 2d6 + 4}) bludgeoning damage. If the target is Medium or smaller, it is {@condition grappled} (escape {@dc 15}) and pulled 5 feet toward the cactus. Until this grapple ends, the target is {@condition restrained}."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}16 ({@damage 3d8 + 4}) piercing damage, plus 20 ({@damage 4d10}) poison damage."
+					]
+				},
+				{
+					"name": "Spine Burst {@recharge 5}",
+					"entries": [
+						"The cactus fires a volley of spine and needles in a 60-foot cone. Each creature in that area take 30 ({@damage 6d10}) poison damage and must succeed on a {@dc 15} Constitution saving throw or be {@condition blinded} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"conditionInflict": [
+				"restrained",
+				"grappled",
+				"blinded"
+			],
+			"reaction": [
+				{
+					"name": "Psychic Feedback",
+					"entries": [
+						"When the Hunter Cactus suffers damages and has at least one creature grabbed it can use its reaction to use psychic feedback. One of the creature suffers psychic damages equal to the damage suffered by the cactus."
+					]
+				}
+			]
+		},
+		{
 			"name": "DARKSUNCREATURE - Dregoth, Sorcerer King",
 			"size": "H",
 			"type": {
