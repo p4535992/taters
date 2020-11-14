@@ -6012,7 +6012,229 @@
 					]
 				}
 			]
-		},		
+		},
+		{
+			"name": "Drake Water",
+			"size": "G",
+			"type": "dragon",
+			"source": "p4535992Dev",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 22,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "28d20 + 252",
+				"average": 546
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40,
+				"swim": 80
+			},
+			"str": 30,
+			"dex": 14,
+			"con": 29,
+			"int": 2,
+			"wis": 19,
+			"cha": 14,
+			"passive": 28,
+			"cr": "24",
+			"tokenUrl": "https://i.imgur.com/mSzpIBm.png",
+			"fluff": {
+				"entries": [
+					"Drakes loom large in the myths of athas",
+					"Though tales of them might scare children, few people believe these giant monsters exist. Those who find out the truth rarely survive the experience-the soft flesh of humanoids is drakes' favorite food.",
+					"Lore",
+					"Athasian drakes are enormous, fearsome predators having only animal intelligence and strong instincts. Each variety of drake is attuned to a specific element and has psionic control over that element, making its home in areas dominated by its associated element.",
+					"Athasian drakes collect objects in their lairs or expand their territory, depending on the individual drake's nature. Although some hoards are valuable, drakes also amass trinkets or souvenirs that have no worth to anyone else. Air drakes maintain multiple lairs atop rocky spires or mesas and divide their few precious belongings among these lairs.",
+					"Encounters",
+					"Drakes use terrain to their advantage, and the setting for a battle with a drake can be as important as the monster. Precarious cliffs are a great setup for air drakes, volcanic fissures favor fire drakes, and unstable underground burrows make tricky settings for encounters with earth drakes. Water drakes might appear anywhere precious reserves of water exist. Any location might also have been booby-trapped or fortified before the drake claimed it."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/al9ufiu.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"desert",
+				"swamp"
+			],
+			"isNpc": true,
+			"shortName": "Drake Water",
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"As the guides near the oasis, they listen closely. Though the area looks fertile, they see no signs of animals or other occupants. Perhaps mundane predators living nearby chased them off but if this oasis is home to a water drake, then nothing still lives-and the explorers are the next meal. A water drake prefers to remain in or close to a body of water, using psionic drone to send out duplicates that scout for food or investigate nearby disturbances. In combat, it uses these duplicates to help overcome powerful opponents. It can transport a small amount of water from the Elemental Chaos to the world as either boiling water or elemental ice."
+					]
+				},
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The drake can breathe air and water."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the dragon fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"save": {
+				"dex": "+9",
+				"con": "+16",
+				"wis": "+11",
+				"cha": "+9"
+			},
+			"skill": {
+				"perception": "+18",
+				"stealth": "+9"
+			},
+			"traitTags": [
+				"Amphibious",
+				"Legendary Resistances"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The drake uses his Frightful Presence and makes three melee attacks, two claw attacks, and one bite."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 17} to hit, reach 15 ft., one target. {@h}21 ({@damage 2d10 + 10}) piercing damage, plus 14 ({@damage 4d6}) cold damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 17} to hit, reach 10 ft., one target. {@h}17 ({@damage 2d6 + 10}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 17} to hit, reach 20 ft., one target. {@h}19 ({@damage 2d8 + 10}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Each creature of the dragon's choice that is within 120 feet of the drake and aware of it must succeed on a {@dc 21} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the drake's Frightful Presence for the next 24 hours."
+					]
+				},
+				{
+					"name": "Breath of Elemental Water {@recharge 5}",
+					"entries": [
+						"The drake uses one of the following breath weapons. Steam Breath. The drake exhales scalding steam in a 90ft cone. Each creature in that area must make a {@dc 24} Dexterity saving throw, taking 91 ({@damage 26d6}) fire damage on a failed save, or half as much damage on a successful one. Being underwater does not grant resistance against this damage. Ice Breath. The drake exhales freezing ice in a 90ft cone. Each creature in that area must make a {@dc 24} Dexterity saving throw, taking 91 ({@damage 26d6}) cold damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"actionTags": [
+				"Frightful Presence",
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"C",
+				"S",
+				"B",
+				"F"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"frightened",
+				"prone",
+				"charmed"
+			],
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"The drake can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. The dragon regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Detect",
+					"entries": [
+						"The drake makes a Wisdom (Perception) check."
+					]
+				},
+				{
+					"name": "Tail Attack",
+					"entries": [
+						"The drake makes a tail attack."
+					]
+				},
+				{
+					"name": "Psionic Clone",
+					"entries": [
+						"The drake creates a duplicate of itself on a solid or liquid surface in an unoccupied space adjacent to it. The duplicate lasts for an hour. It can be targeted by attacks and has 1 hit point. The duplicate uses the same statistics as the drake and is considered to have expended the same powers as the drake; those powers share one recharge roll, which is still made at the start of the drake's turn. The duplicate cannot use this power. The drake senses anything the duplicate senses. The duplicate acts on an initiative as the drake. All damages inflicted by the Psionic Clone are psychic damage, regardless of the attack."
+					]
+				}
+			],
+			"mythicHeader": [
+				"On initiative count 20 (losing initiative ties), the dragon takes a lair action to cause one of the following effects; the dragon can't use the same effect two rounds in a row."
+			],
+			"mythic": [
+				{
+					"name": "Lair Action - Pools of water",
+					"entries": [
+						"Pools of water that the dragon can see within 120 feet of it surge outward in a grasping tide. Any creature on the ground within 20 feet of such a pool must succeed on a {@dc 15} Strength saving throw or be pulled up to 20 feet into the water and knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Lair Action - Magical fog",
+					"entries": [
+						"Magical fog billows around one creature the dragon can see within 120 feet of it. The creature must succeed on a {@dc 15} Wisdom saving throw or be {@condition charmed} by the dragon until initiative count 20 on the next round."
+					]
+				},
+				{
+					"name": "Lair Action - Pools of Mud",
+					"entries": [
+						"The dragon chooses a 10-foot-square area on the ground that it can see within 120 feet of it. The ground in that area turns into 3-foot-deep mud. Each creature on the ground in that area when the mud appears must succeed on a {@dc 15} Dexterity saving throw or sink into the mud and become {@condition restrained}. A creature can take an action to attempt a {@dc 15} Strength check, freeing itself or another creature within its reach and ending the {@condition restrained} condition on a success. Moving 1 foot in the mud costs 2 feet of movement. On initiative count 20 on the next round, the mud hardens, and the Strength DC to work free increases to 20."
+					]
+				}
+			],
+			"variant": [
+				{
+					"name": "Regional Effect",
+					"entries": [
+						"The region containing a water drake’s lair is warped by the dragon's elemental magic, which creates one or more of the following effects:",
+						" Fog lightly obscure the land within 6 miles of the lair.",
+						" Whenever a creature with an Intelligence of 3 or higher comes within 30 feet of a water source within 1 mile of the dragon’s lair, the dragon become aware of the creature’s presence and location.",
+						" Once per day, the dragon can alter the weather in a 6 miles radius centered on its lair. The dragon doesn’t need to be outdoor; otherwise the effects is identical to the Control Weather spell.",
+						" Natural springs and pools within 1 mile of the lair form intermittent portals to the Elemental Plane of Water, allowing elemental creatures into the mortal world to dwell near those points.",
+						"If the drake dies, these effects fade over the course of {@dice 1d10} days."
+					],
+					"type": "variant"
+				}
+			]
+		},	
 		{
 			"name": "DARKSUNCREATURE - Dregoth, Sorcerer King",
 			"size": "H",
