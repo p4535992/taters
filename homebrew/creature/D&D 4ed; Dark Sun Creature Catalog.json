@@ -5886,6 +5886,134 @@
 			]
 		},
 		{
+			"name": "DARKSUNCREATURE - Dagorran",
+			"size": "M",
+			"type": "monstrosity",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d8 + 70",
+				"average": 154
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 20,
+			"dex": 18,
+			"con": 20,
+			"int": 4,
+			"wis": 18,
+			"cha": 15,
+			"passive": 20,
+			"cr": "7",
+			"shortName": "Dagorran",
+			"fluff": {
+				"entries": [
+					"Vicious predators of the wastes",
+					"these reptilian creatures are feared throughout Athas. They track the unique traces of sentient minds, running in packs as they relentlessly hunt down their quarry.",
+					"Lore",
+					"Dagorrans are pack predators. A dagorran can latch onto a sentient creature's mind, whether through direct contact or by stumbling upon that creature's psychic trail. The pack is relentless once on the scent of prey, tracking a target for days or weeks before closing for the kill. Dagorrans spend nearly all their time hunting, and sleep for just a few hours every couple of days. They must stop to rear young, but only for a few weeks until the pups can run with the pack.",
+					"Encounters",
+					"Wild dagorrans avoid any companions other than the pack. Occasionally, templars train young dagorrans as psionic hounds to hunt down fugitives or escaped slaves. These tame beasts fight alongside their humanoid masters."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/HuPWxUn.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"desert"
+			],
+			"isNpc": true,
+			"tokenUrl": "https://i.imgur.com/JCKnWoJ.png",
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Once they have tracked down their prey, dagorrans use a combination of tactics. Ambushers move ahead to lurk in wait or to sneak up on unaware targets. Mindhounds charge in packs, seeking to surround and distract their prey. Once in combat, the pack leader keeps track of the main target with psychic scent while the rest of the pack does the same with other foes."
+					]
+				},
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The dagorran has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The dagorran has advantage on attack rolls against a creature if at least one of the dagorran’s allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Psychic Scent",
+					"entries": [
+						"The dagorran can choose one living creature, or the tracks of a living creature, within 10ft of him. That creature doesn't benefit from invisibility or other sensory effects (such as illusions) against the dagorran. In addition, the ambusher knows the creature's location until the creature dies or until the ambusher uses this power again. This feature work as the Locate Creature spell."
+					]
+				},
+				{
+					"name": "Surprise Attack",
+					"entries": [
+						"If the dagorran deals {@dice 2d6} extra psychic damage against any creature that cannot see it."
+					]
+				}
+			],
+			"languages": [
+				"Common",
+				"telepathy 60 ft. (other dagorrans only))"
+			],
+			"languageTags": [
+				"C",
+				"TP"
+			],
+			"skill": {
+				"perception": "+10",
+				"stealth": "+10",
+				"survival": "+10"
+			},
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics"
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}20 ({@damage 3d10 + 5}) piercing damage and the dagorran becomes {@condition invisible} to the target until the end of the dagorran’s next turn."
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"reaction": [
+				{
+					"name": "Fade to Nothingness",
+					"entries": [
+						"The dagorran uses this psionic power to become {@condition invisible} until it attacks or until the end of its next turn."
+					]
+				}
+			]
+		},		
+		{
 			"name": "DARKSUNCREATURE - Dregoth, Sorcerer King",
 			"size": "H",
 			"type": {
