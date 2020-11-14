@@ -4,7 +4,7 @@
 			{
 				"json": "DarkSunCreatureCatalog",
 				"abbreviation": "DarkSunCreatureCatalog",
-				"full": "Dark Sun Creature Catalog (5e)",
+				"full": "Dark Sun Creature Catalog (converted for 5e)",
 				"authors": [
 					"Dungeons & Dragons 4rd edition Wizard of the Coast (https://www.drivethrurpg.com/product/133464/Dark-Sun-Creature-Catalog-4e)",
 					"Reddit - Monster Manual - Dark Sun 5th Edition by Stanislav Zabielin (@auquid) (https://www.reddit.com/r/DarkSun/comments/7ws6kq/monster_manual_dark_sun_5th_edition_by_auquid/ and https://drive.google.com/file/d/1R4dJNW7Gx19N809bB7HAJMMlE72fPsPH/view)",
@@ -5066,6 +5066,503 @@
 				"prone"
 			]
 		},
+		{
+			"name": "Cloud Ray",
+			"size": "G",
+			"type": "beast",
+			"source": "p4535992Dev",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d20 + 120",
+				"average": 330
+			},
+			"speed": {
+				"walk": 15,
+				"fly": 60,
+				"canHover": false
+			},
+			"str": 26,
+			"dex": 16,
+			"con": 22,
+			"int": 2,
+			"wis": 18,
+			"cha": 18,
+			"passive": 16,
+			"cr": "21",
+			"fluff": {
+				"entries": [
+					"Through the skies and clouds of Athas, slowly fly these deadly giants. Cloud rays can sometimes be seen crossing the evening sky.",
+					"Cloud rays have a broad, flattened body and flap their huge pectoral fins to aid their psionic flight powers. They are speckled-brown on top and drab olive and white underneath. Sets of ridges protect the creatures’ eyes. They have four jetblack eyes, two mounted on each side of the snout and the other two on each side of the cranial bulge. Down the back from the bulge runs a spine that becomes a long, thin, whip-like tail that ends in an appendage known as a zip. The zip is comprised of razor-sharp, barbed ridges that grow at the tip of the spine. The interior mouth or maw (20 + feet across) is lined with row upon row of razor-sharp cartilage ridges.",
+					"The zip is also used in a complex signaling system that is only understood by other cloud rays.",
+					"Predator of the Skies",
+					"Cloud rays wander aimlessly through the Athasian skies always searching for their next meal. On rare occasions, they land on the ground and may be mistaken for an outcropping of rock. Those hapless enough to be standing on a ray when it decides to become airborne may become its next meal. A cloud ray has preferred diet consists of devouring other flying creatures. They have a special fondness for rocs, pterrax, and flying humanoids. The ray has no true stomach, preferring to swallow prey completely and grind the victim to liquid on its interior jaw ridges to help aid with digestion. After a good meal, cloud rays will sometimes psionically dream travel while their meal digests. Cloud rays have territorial respect for others of their species and, with very few exceptions, do not intrude into another ray’s air space.",
+					"Although innately psionic, cloud rays become infuriated when a psionicist contacts them. It drives them into a tremendous rage, and they will do anything they can (except land) to capture and devour the offending psionicist. The Dragon is the only creature in the world that cloud rays truly fear.",
+					"Not an easy prey"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/V69IPCS.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"desert"
+			],
+			"isNpc": true,
+			"shortName": "Cloud Ray",
+			"senses": [
+				"darkvision 300 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"save": {
+				"str": "+15",
+				"dex": "+10",
+				"int": "+3",
+				"con": "+13",
+				"wis": "+11"
+			},
+			"skill": {
+				"perception": "+6"
+			},
+			"immune": [
+				"lightning",
+				"thunder"
+			],
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "damage from non magical weapons"
+				},
+				{
+					"resist": [
+						"psychic"
+					]
+				}
+			],
+			"conditionImmune": [
+				"stunned"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The cloud ray's spellcasting ability is Wisdom (spell save {@dc 19}). The cloud ray can innately cast the following spells, requiring no material components.",
+						"Spellcasting Ability=WIS",
+						"Global Magic Attack Modifier=11",
+						"Magic Caster Level=18",
+						"Spell Save DC Mod=19"
+					],
+					"will": [
+						"{@spell control winds|XGE}",
+						"{@spell wind wall}"
+					],
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Cloud Ray makes 1 tail attack following 1 bite attack. "
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 5 ft., one target. {@h}19 ({@damage 2d10 + 8}) slashing damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 5 ft., one target. {@h}21 ({@damage 3d8 + 8}) piercing damage. If the target is a Large or smaller creature, that creature is swallowed. Cloud ray can only swallow one Large creature or two Medium and etc. While swallowed, the creature is {@condition blinded} and {@condition restrained}, it has total cover against attacks and other effects outside the cloud ray, and it takes 42 ({@damage 12d6}) acid damage at the start of each of the cloud ray’s turns. If the cloud ray takes 50 damage or more on a single turn from a creature inside it, the cloud ray must succeed on a {@dc 25} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall {@condition prone} in a space within 10 feet of the cloud ray. If the cloud ray dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse using 15 feet of movement, exiting {@condition prone}."
+					]
+				},
+				{
+					"name": "Dream Flight",
+					"entries": [
+						"The cloud ray falls asleep and make use of a psionic ability similar to the Teleport spell, in a location of her choice. Creatures currently with Sft of the cloud ray teleport with her unless they succeed on a {@dc 18} Wisdom saving throw. A target failing this first saving throw must make a second one or fall {@condition unconscious} for an hour."
+					]
+				},
+				{
+					"name": "Thunder Wave {@recharge 5}",
+					"entries": [
+						"The cloud ray emits a wave of lightning, striking in a 60ft cone. Each creature in that area must make a {@dc 18} Dexterity saving throw, taking 50 ({@damage 10d10}) lightning damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Swallow"
+			],
+			"damageTags": [
+				"S",
+				"P",
+				"A",
+				"L",
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"conditionInflict": [
+				"blinded",
+				"restrained",
+				"prone"
+			],
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"The cloud ray can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The cloud ray regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Detect",
+					"entries": [
+						"The cloud ray makes a Wisdom (Perception) check."
+					]
+				},
+				{
+					"name": "Tail Attack",
+					"entries": [
+						"The clou ray makes a tail attack."
+					]
+				},
+				{
+					"name": "Wing Attack (Costs 2 Actions)",
+					"entries": [
+						"The cloud ray beats its wings. Each creature within 15 feet ofthe cloud ray must succeed on a {@dc 24} Dexterity saving throw or take 16 ({@damage 2d6 + 9}) bludgeoning damage and be knocked {@condition prone}. The cloud ray can then fly up to half its flying speed ."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/8SdckSd.png"
+		},
+		{
+			"name": "Cloud Ray Elder",
+			"size": "G",
+			"type": "beast",
+			"source": "p4535992Dev",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 22,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "28d20 + 252",
+				"average": 546
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 80,
+				"canHover": false
+			},
+			"str": 30,
+			"dex": 17,
+			"con": 29,
+			"int": 2,
+			"wis": 17,
+			"cha": 8,
+			"passive": 19,
+			"cr": "20",
+			"fluff": {
+				"entries": [
+					"Creatures with primeval origins",
+					"cloud rays are as rare as they are tremendous in size. They float in from the Sea of Silt to feed and rest, and are rarely dangerous unless disturbed.",
+					"Lore",
+					"Although cloud rays are big enough to consume whole villages, these exotic beasts subsist largely on psychic, entropic, and magical energy. Despite their great size, they require a tiny amount of physical sustenance-even less as they grow older-so they are rarely dangerous.",
+					"Cloud ray elders settle onto the land, cover themselves in sand or debris, and fall into deep slumber until material hunger or an external disturbance rouses them. Tales tell of travelers who camped on a choice piece of high ground that turned out to be a sleeping elder and awoke high in the sky or in unfamiliar surroundings.",
+					"Sometimes cloud rays disappear during their repose, reappearing in a distant place of which they dreamed. Wounded rays can tap into this \"dream space\" briefly, sapping their enemies in the process.",
+					"Encounters",
+					"A cloud ray elder is as much a setting for combat as it is an opponent, if adventurers inadvertently set foot on it. While riding the creature's back, they are sitting ducks for other flying predators, including younger cloud rays. Cloud ray pups gather around a creature that feeds them (usually an older cloud ray) or follow a predator that allows them to scavenge its scraps."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/6ZYNKoe.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"desert"
+			],
+			"isNpc": true,
+			"shortName": "Cloud Ray Elder",
+			"senses": [
+				"darkvision 300 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"save": {
+				"str": "+16",
+				"con": "+15",
+				"wis": "+9"
+			},
+			"skill": {
+				"perception": "+9"
+			},
+			"immune": [
+				"lightning",
+				"thunder"
+			],
+			"conditionImmune": [
+				"stunned"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The cloud ray makes two attacks, one with its bite and one with its sting."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 16} to hit, reach 10 ft., one target. {@h}40 ({@damage 6d10 + 10}) piercing damage, plus 10 ({@damage 3d6}) lightning damage. If the target is a creature, it is {@condition grappled} (escape {@dc 20}). Until this grapple ends, the target is {@condition restrained}, and the cloud ray can't bite another target."
+					]
+				},
+				{
+					"name": "Dream Flight",
+					"entries": [
+						"The cloud ray falls asleep and make use of a psionic ability similar to the Teleport spell, in a location of her choice. Creatures currently within 5ft of the cloud ray teleport with her unless they succeed on a {@dc 20} Wisdom saving throw. A target failing this first saving throw must make a second one or fall {@condition unconscious} for an hour."
+					]
+				},
+				{
+					"name": "Sting",
+					"entries": [
+						"{@atk mw} {@hit 16} to hit, reach 20 ft., one target. {@h}32 ({@damage 4d10 + 10}) bludgeoning damage, plus 10 ({@damage 3d6}) lightning damage. If the target is a creature, it must succeed on a {@dc 20} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Storm {@recharge 5}",
+					"entries": [
+						"A storm made up of sheets of lightning and dark clouds appears in a location the cloud ray choose within range. The area of the storm consists of up to ten 10-foot cubes, which it can arrange as it wishes. Each cube must have at least one face adjacent to the face of another cube. Each creature in the area must make a {@dc 20} Dexterity saving throw. It takes {@damage 6d10} thunder damage and {@damage 6d10} lightning damage, or half as much damage on a successful one."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"L",
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"tokenUrl": "https://i.imgur.com/CHkZtUh.png",
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"These 50-foot-long giants of the sky are exceedingly rare. They drift lazily through the air or settle for long naps on the warm sands. When attacking, the gigantic ray wings among its enemies to lash them with thunder or grab them in its crushing jaws. Like younger cloud rays, it might drop grabbed prey. But the elder tries to ensure that dropped creatures end up close together so that it can grab them all up again during its next flyby."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the cloud ray fails a saving throw, it can choose to succeed instead. Thunder Aura."
+					]
+				},
+				{
+					"name": "Thunder Aura",
+					"entries": [
+						"At the start of each of the cloud ray’s turns, each creature within 5 feet of it takes 10 ({@damage 3d6}) lightning damage. A creature that touches the cloud ray or hits it with a melee attack while within 5 feet of it takes 10 ({@damage 3d6}) lightning damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"conditionInflict": [
+				"restrained",
+				"grappled",
+				"prone"
+			]
+		},
+		{
+			"name": "Cloud Ray Adult",
+			"size": "G",
+			"type": "beast",
+			"source": "p4535992Dev",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d20 + 100",
+				"average": 296
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 80,
+				"canHover": false
+			},
+			"str": 25,
+			"dex": 17,
+			"con": 20,
+			"int": 2,
+			"wis": 17,
+			"cha": 8,
+			"passive": 19,
+			"cr": "16",
+			"fluff": {
+				"entries": [
+					"Creatures with primeval origins",
+					"cloud rays are as rare as they are tremendous in size. They float in from the Sea of Silt to feed and rest, and are rarely dangerous unless disturbed.",
+					"Lore",
+					"Although cloud rays are big enough to consume whole villages, these exotic beasts subsist largely on psychic, entropic, and magical energy. Despite their great size, they require a tiny amount of physical sustenance-even less as they grow older-so they are rarely dangerous.",
+					"Cloud ray elders settle onto the land, cover themselves in sand or debris, and fall into deep slumber until material hunger or an external disturbance rouses them. Tales tell of travelers who camped on a choice piece of high ground that turned out to be a sleeping elder and awoke high in the sky or in unfamiliar surroundings.",
+					"Sometimes cloud rays disappear during their repose, reappearing in a distant place of which they dreamed. Wounded rays can tap into this \"dream space\" briefly, sapping their enemies in the process.",
+					"Encounters",
+					"A cloud ray elder is as much a setting for combat as it is an opponent, if adventurers inadvertently set foot on it. While riding the creature's back, they are sitting ducks for other flying predators, including younger cloud rays. Cloud ray pups gather around a creature that feeds them (usually an older cloud ray) or follow a predator that allows them to scavenge its scraps."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/knWXL8R.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"desert"
+			],
+			"isNpc": true,
+			"shortName": "Cloud Ray Adult",
+			"senses": [
+				"darkvision 300 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"save": {
+				"str": "+12",
+				"con": "+10",
+				"wis": "+8"
+			},
+			"skill": {
+				"perception": "+9"
+			},
+			"immune": [
+				"lightning",
+				"thunder"
+			],
+			"conditionImmune": [
+				"stunned"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The cloud ray makes two attacks, one with its bite and one with its sting."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}27 ({@damage 4d10 + 7}) piercing damage, plus 10 ({@damage 3d6}) lightning damage. If the target is a creature, it is {@condition grappled} (escape {@dc 18}). Until this grapple ends, the target is {@condition restrained}, and the cloud ray can't bite another target."
+					]
+				},
+				{
+					"name": "Dream Flight",
+					"entries": [
+						"The cloud ray falls asleep and make use of a psionic ability similar to the Teleport spell, in a location of her choice. Creatures currently with 5ft of the cloud ray teleport with her unless they succeed on a {@dc 18} Wisdom saving throw. A target failing this first saving throw must make a second one or fall {@condition unconscious} for an hour."
+					]
+				},
+				{
+					"name": "Sting",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 20 ft., one target. {@h}17 ({@damage 2d10 + 7}) bludgeoning damage, plus 10 ({@damage 3d6}) lightning damage. If the target is a creature, it must succeed on a {@dc 18} Strength saving",
+						"throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Thunder Wave {@recharge 5}",
+					"entries": [
+						"The cloud ray emits a wave of lightning, striking in a 60ft cone. Each creature in that area must make a {@dc 18} Dexterity saving throw, taking 50 ({@damage 10d10}) lightning damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"L",
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"tokenUrl": "https://i.imgur.com/mfnikgg.png",
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Despite its bulk this diamond-shaped monster glides easily on finlike wings. It cruises the skies continually, dropping only to rest or to attack landbound prey. A cloud ray adult swoops from the skies to attack as it flies by its enemies. It grabs up and crushes one creature in its mouth, carrying its prize aloft. It might drop a grabbed creature to soften it up, freeing the cloud ray to make another pass through its remaining enemies."
+					]
+				},
+				{
+					"name": "Thunder Aura",
+					"entries": [
+						"At the start of each of the cloud ray’s turns, each creature within 5 feet of it takes 10 ({@damage 3d6}) lightning damage. A creature that touches the cloud ray or hits it with a melee attack while within 5 feet of it takes 10 ({@damage 3d6}) lightning damage."
+					]
+				}
+			],
+			"conditionInflict": [
+				"restrained",
+				"grappled",
+				"prone"
+			]
+		},		
 		{
 			"name": "DARKSUNCREATURE - Dregoth, Sorcerer King",
 			"size": "H",
