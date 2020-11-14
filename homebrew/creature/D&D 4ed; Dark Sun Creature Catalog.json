@@ -27,35 +27,16 @@
 	},
 	"legendaryGroup": [
 		{
-			"name": "DARKSUNCREATURE - Lair Action - Dregoth, Sorcerer King",
+			"name": "LairActionsDregothSorcereKing",
 			"source": "DarkSunCreatureCatalog",
 			"lairActions": [
 				"On initiative count 20 (losing initiative ties), Dregoth takes a lair action to cause one of the following effects; Dregoth can't use the same effect two rounds in a row:",
 				{
 					"type": "list",
 					"items": [
-						{
-							"name": "Magma erupts",
-							"entries": [
-								"Magma erupts from a point on the ground that Dregoth can see within 120 feet of him, creating a 20-foot-high, 5-foot-radius geyser. Each creature in the geyser's area must make a {@dc 15} Dexterity saving throw, taking 21 ({@damage 6d6}) fire damage on a failed save, or half as much on a successful one."
-							]
-						},
-						{
-							"name": "Summon Ally",
-							"entries": [
-								"Dregoth summons his citizens and soldiers to his side. They act on their own initiative as a group. Dregoth can summon either:",
-								"- {@dice 1d10 + 2} Dray",
-								"- {@dice 1d6 + 1} Dray Soldiers",
-								"- {@dice 1d2} Dray Templars or Priests."
-							]
-						},
-						{
-							"name": "Manipulate Creatures",
-							"entries": [
-								"Dregoth defiles all living creatures near him, draining moisture and vitality from them. Each creature within a 10-foot-radius of Dregoth must make a {@dc 20} Constitution saving throw. A target takes 27 ({@damage 4d12}) necrotic damage on a failed save, or half as much damage on a successful one. Dregoth regains health points equal to half the damage dealth to all creatures in total.",
-								"Any plant creature or magical plant makes the saving throw with disadvantage, and the defilement deals maximum damage to it. If a target is a nonmagical plant that isn't a creature, such as a tree or shrub, it doesn't make a saving throw; it simply withers and dies."
-							]
-						}
+						"Magma erupts from a point on the ground that Dregoth can see within 120 feet of him, creating a 20-foot-high, 5-foot-radius geyser. Each creature in the geyser's area must make a {@dc 15} Dexterity saving throw, taking 21 ({@damage 6d6}) fire damage on a failed save, or half as much on a successful one.",
+						"Dregoth summons his citizens and soldiers to his side. They act on their own initiative as a group. Dregoth can summon either: {@dice 1d10 + 2} Dray or {@dice 1d6 + 1} Dray Soldiers or {@dice 1d2} Dray Templars or Priests",
+						"Dregoth defiles all living creatures near him, draining moisture and vitality from them. Each creature within a 10-foot-radius of Dregoth must make a {@dc 20} Constitution saving throw. A target takes 27 ({@damage 4d12}) necrotic damage on a failed save, or half as much damage on a successful one. Dregoth regains health points equal to half the damage dealth to all creatures in total. Any plant creature or magical plant makes the saving throw with disadvantage, and the defilement deals maximum damage to it. If a target is a nonmagical plant that isn't a creature, such as a tree or shrub, it doesn't make a saving throw; it simply withers and dies."
 					]
 				}
 			],
@@ -66,43 +47,23 @@
 				{
 					"type": "list",
 					"items": [
-						{
-							"name": "Dregoth's Lair",
-							"entries": [
-								"Dregoth is considered in his lair as long as he is within New Giustenal. If Dregoth is encountered in his lair he has a challenge rating of 26 (90,000 XP)."
-							]
-						}
+						"Dregoth's Lair: Dregoth is considered in his lair as long as he is within New Giustenal. If Dregoth is encountered in his lair he has a challenge rating of 26 (90,000 XP)."
 					]
 				},
-				"If Dregoth's is destroyed, these effects fade over the course of 20d10 days."
+				"If Dregoth's is destroyed, these effects fade over the course of {@dice 20d10} days."
 			]
 		},
 		{
-			"name": "DARKSUNCREATURE - Lair Action - Drake Water",
+			"name": "LairActionsDrakeWater",
 			"source": "DarkSunCreatureCatalog",
 			"lairActions": [
 				"On initiative count 20 (losing initiative ties), the dragon takes a lair action to cause one of the following effects; the dragon can't use the same effect two rounds in a row:",
 				{
 					"type": "list",
 					"items": [
-						{
-							"name": "Pools of water",
-							"entries": [
-								"Pools of water that the dragon can see within 120 feet of it surge outward in a grasping tide. Any creature on the ground within 20 feet of such a pool must succeed on a {@dc 15} Strength saving throw or be pulled up to 20 feet into the water and knocked {@condition prone}."
-							]
-						},
-						{
-							"name": "Magical fog",
-							"entries": [
-								"Magical fog billows around one creature the dragon can see within 120 feet of it. The creature must succeed on a {@dc 15} Wisdom saving throw or be {@condition charmed} by the dragon until initiative count 20 on the next round."
-							]
-						},
-						{
-							"name": "Pools of Mud",
-							"entries": [
-								"The dragon chooses a 10-foot-square area on the ground that it can see within 120 feet of it. The ground in that area turns into 3-foot-deep mud. Each creature on the ground in that area when the mud appears must succeed on a {@dc 15} Dexterity saving throw or sink into the mud and become {@condition restrained}. A creature can take an action to attempt a {@dc 15} Strength check, freeing itself or another creature within its reach and ending the {@condition restrained} condition on a success. Moving 1 foot in the mud costs 2 feet of movement. On initiative count 20 on the next round, the mud hardens, and the Strength DC to work free increases to 20."
-							]
-						}
+						"Pools of water that the dragon can see within 120 feet of it surge outward in a grasping tide. Any creature on the ground within 20 feet of such a pool must succeed on a {@dc 15} Strength saving throw or be pulled up to 20 feet into the water and knocked {@condition prone}.",
+						"Magical fog billows around one creature the dragon can see within 120 feet of it. The creature must succeed on a {@dc 15} Wisdom saving throw or be {@condition charmed} by the dragon until initiative count 20 on the next round.",
+						"The dragon chooses a 10-foot-square area on the ground that it can see within 120 feet of it. The ground in that area turns into 3-foot-deep mud. Each creature on the ground in that area when the mud appears must succeed on a {@dc 15} Dexterity saving throw or sink into the mud and become {@condition restrained}. A creature can take an action to attempt a {@dc 15} Strength check, freeing itself or another creature within its reach and ending the {@condition restrained} condition on a success. Moving 1 foot in the mud costs 2 feet of movement. On initiative count 20 on the next round, the mud hardens, and the Strength DC to work free increases to 20."
 					]
 				}
 			],
@@ -111,15 +72,13 @@
 				{
 					"type": "list",
 					"items": [
-						"The region containing a water drake’s lair is warped by the dragon's elemental magic, which creates one or more of the following effects:",
 						"Fog lightly obscure the land within 6 miles of the lair.",
 						"Whenever a creature with an Intelligence of 3 or higher comes within 30 feet of a water source within 1 mile of the dragon’s lair, the dragon become aware of the creature’s presence and location.",
 						"Once per day, the dragon can alter the weather in a 6 miles radius centered on its lair. The dragon doesn’t need to be outdoor; otherwise the effects is identical to the Control Weather spell.",
-						"Natural springs and pools within 1 mile of the lair form intermittent portals to the Elemental Plane of Water, allowing elemental creatures into the mortal world to dwell near those points.",
-						"If the drake dies, these effects fade over the course of {@dice 1d10} days."
+						"Natural springs and pools within 1 mile of the lair form intermittent portals to the Elemental Plane of Water, allowing elemental creatures into the mortal world to dwell near those points."
 					]
 				},
-				"If the drake dies, these effects fade over the course of 1d10 days."
+				"If the drake dies, these effects fade over the course of {@dice 1d10} days."
 			]
 		}
 	],
@@ -6272,7 +6231,7 @@
 				"charmed"
 			],
 			"legendaryGroup": {
-				"name": "DARKSUNCREATURE - Lair Action - Drake Water",
+				"name": "LairActionsDrakeWater",
 				"source": "DarkSunCreatureCatalog"
 			},
 			"legendaryActions": 3,
@@ -6667,7 +6626,7 @@
 				"Turn Immunity"
 			],
 			"legendaryGroup": {
-				"name": "DARKSUNCREATURE - Lair Action - Dregoth, Sorcerer King",
+				"name": "LairActionsDregothSorcereKing",
 				"source": "DarkSunCreatureCatalog"
 			},
 			"legendaryHeader": [
