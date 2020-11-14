@@ -6014,10 +6014,10 @@
 			]
 		},
 		{
-			"name": "Drake Water",
+			"name": "DARKSUNCREATURE - Drake Water",
 			"size": "G",
 			"type": "dragon",
-			"source": "p4535992Dev",
+			"source": "DarkSunCreatureCatalog",
 			"alignment": [
 				"U"
 			],
@@ -6521,12 +6521,6 @@
 					]
 				},
 				{
-					"name": "Lair Actions",
-					"entries": [
-						"On initiative count 20 (losing initiative ties), Dregoth takes a lair action to cause one of the following effects; Dregoth can't use the same effect two rounds in a row"
-					]
-				},
-				{
 					"name": "Legendary Resistance (3/Day)",
 					"entries": [
 						"if Dregoth fails a saving throw, he can choose to succeed instead."
@@ -6559,28 +6553,6 @@
 				"B"
 			],
 			"action": [
-				{
-					"name": "Lair Action - Magma erupts",
-					"entries": [
-						"Magma erupts from a point on the ground that Dregoth can see within 120 feet of him, creating a 20-foot-high, 5-foot-radius geyser. Each creature in the geyser's area must make a {@dc 15} Dexterity saving throw, taking 21 ({@damage 6d6}) fire damage on a failed save, or half as much on a successful one."
-					]
-				},
-				{
-					"name": "Lair Action - Summon Ally",
-					"entries": [
-						"Dregoth summons his citizens and soldiers to his side. They act on their own initiative as a group. Dregoth can summon either:",
-						"- {@dice 1d10 + 2} Dray",
-						"-  {@dice 1d6 + 1} Dray Soldiers",
-						"-  {@dice 1d2} Dray Templars or Priests."
-					]
-				},
-				{
-					"name": "Lair Action - Manipulate Creatures",
-					"entries": [
-						"Dregoth defiles all living creatures near him, draining moisture and vitality from them. Each creature within a 10-foot-radius of Dregoth must make a {@dc 20} Constitution saving throw. A target takes 27 ({@damage 4d12}) necrotic damage on a failed save, or half as much damage on a successful one. Dregoth regains health points equal to half the damage dealth to all creatures in total.",
-						"Any plant creature or magical plant makes the saving throw with disadvantage, and the defilement deals maximum damage to it. If a target is a nonmagical plant that isn't a creature, such as a tree or shrub, it doesn't make a saving throw; it simply withers and dies."
-					]
-				},
 				{
 					"name": "Multiattack",
 					"entries": [
@@ -6658,6 +6630,33 @@
 					"name": "Wing Attack (Costs 2 Actions) Dregoth beats his tattered wings",
 					"entries": [
 						"Each creature within 10 feet of Dregoth must succeed on a {@dc 21} Dexterity saving throw or take 13 ({@damage 2d6 + 6}) bludgeoning damage and be knocked {@condition prone}. After beating his wings in this way, Dregoth can fly up to half his flying speed."
+					]
+				}
+			],
+			"mythicHeader": [
+				"On initiative count 20 (losing initiative ties), Dregoth takes a lair action to cause one of the following effects; Dregoth can't use the same effect two rounds in a row"
+			],
+			"mythic": [
+				{
+					"name": "Lair Action - Magma erupts",
+					"entries": [
+						"Magma erupts from a point on the ground that Dregoth can see within 120 feet of him, creating a 20-foot-high, 5-foot-radius geyser. Each creature in the geyser's area must make a {@dc 15} Dexterity saving throw, taking 21 ({@damage 6d6}) fire damage on a failed save, or half as much on a successful one."
+					]
+				},
+				{
+					"name": "Lair Action - Summon Ally",
+					"entries": [
+						"Dregoth summons his citizens and soldiers to his side. They act on their own initiative as a group. Dregoth can summon either:",
+						"- {@dice 1d10 + 2} Dray",
+						"-  {@dice 1d6 + 1} Dray Soldiers",
+						"-  {@dice 1d2} Dray Templars or Priests."
+					]
+				},
+				{
+					"name": "Lair Action - Manipulate Creatures",
+					"entries": [
+						"Dregoth defiles all living creatures near him, draining moisture and vitality from them. Each creature within a 10-foot-radius of Dregoth must make a {@dc 20} Constitution saving throw. A target takes 27 ({@damage 4d12}) necrotic damage on a failed save, or half as much damage on a successful one. Dregoth regains health points equal to half the damage dealth to all creatures in total.",
+						"Any plant creature or magical plant makes the saving throw with disadvantage, and the defilement deals maximum damage to it. If a target is a nonmagical plant that isn't a creature, such as a tree or shrub, it doesn't make a saving throw; it simply withers and dies."
 					]
 				}
 			],
