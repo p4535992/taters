@@ -5067,10 +5067,10 @@
 			]
 		},
 		{
-			"name": "Cloud Ray",
+			"name": "DARKSUNCREATURE - Cloud Ray",
 			"size": "G",
 			"type": "beast",
-			"source": "p4535992Dev",
+			"source": "DarkSunCreatureCatalog",
 			"alignment": [
 				"U"
 			],
@@ -5262,10 +5262,10 @@
 			"tokenUrl": "https://i.imgur.com/8SdckSd.png"
 		},
 		{
-			"name": "Cloud Ray Elder",
+			"name": "DARKSUNCREATURE - Cloud Ray Elder",
 			"size": "G",
 			"type": "beast",
-			"source": "p4535992Dev",
+			"source": "DarkSunCreatureCatalog",
 			"alignment": [
 				"U"
 			],
@@ -5417,10 +5417,10 @@
 			]
 		},
 		{
-			"name": "Cloud Ray Adult",
+			"name": "DARKSUNCREATURE - Cloud Ray Adult",
 			"size": "G",
 			"type": "beast",
-			"source": "p4535992Dev",
+			"source": "DarkSunCreatureCatalog",
 			"alignment": [
 				"U"
 			],
@@ -5562,7 +5562,329 @@
 				"grappled",
 				"prone"
 			]
-		},		
+		},
+		{
+			"name": "DARKSUNCREATURE - Crodlu (version 2)",
+			"size": "L",
+			"type": "beast",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d10 + 8",
+				"average": 30
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 14,
+			"int": 1,
+			"wis": 12,
+			"cha": 4,
+			"passive": 11,
+			"cr": "2",
+			"shortName": "Crodlu (version 2)",
+			"fluff": {
+				"entries": [
+					"Crodlu are large reptiles that roam the deserts and scrub land in herds. Crodlu resemble large ostriches, but their forearms end in wicked claws and their tough, scaly hides are yellow to red, with other colors along their sides and belly. They have poor eyesight and an excellent sense of smell. They can run at high speed for long periods.",
+					"Wild crodlus form small herds of about a dozen members, each led by a dominant female. In a given herd, females outnumber males and are related to one another. The dominant female's mate outranks other males but is otherwise part of the herd. Males leave their birth herd on reaching adulthood to seek a mate in another herd."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/FG93eKN.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/e5zjnD7.png",
+			"isNpc": true,
+			"environment": [
+				"desert"
+			],
+			"save": {
+				"str": "+5",
+				"dex": "+3"
+			},
+			"trait": [
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"The crodlu crawler has advantage on Wisdom (Perception) checks that rely on smell."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Crodlu makes 2 attacks: one leg punch and one with bite."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d8 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Leg Punch",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) bludgeoning damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Crodlu",
+			"size": "L",
+			"type": {
+				"type": "beast",
+				"tags": [
+					"reptile"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 11,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d10 + 3",
+				"average": 19
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 14,
+			"dex": 12,
+			"con": 12,
+			"int": 2,
+			"wis": 10,
+			"cha": 5,
+			"passive": 10,
+			"cr": "1/2",
+			"shortName": "Crodlu",
+			"fluff": {
+				"entries": [
+					"Small herds of these vicious omnivores",
+					"roam the wastes. They resemble featherless birds with powerful legs and clawed forelimbs instead of wings. Some are bred and trained to bear humanoids into combat, yet even those are unpredictable and aggressive.",
+					"Lore",
+					"Wild crodlus form small herds of about a dozen members, each led by a dominant female. In a given herd, females outnumber males and are related to one another. The dominant female's mate outranks other males but is otherwise part of the herd. Males leave their birth herd on reaching adulthood to seek a mate in another herd. Once per year, crodlus mate and lay eggs. The young can run and hunt within minutes of hatching, though few escape predators and humanoid raiders.",
+					"Crodlus are curious-sometimes to a fault-and have been observed examining objects and holding such items with their forelimbs. In the wild, they use simple tools such as sticks to drive small prey out of hiding.",
+					"Encounters",
+					"In the wild, crodlus live and travel in herds. They flee from larger predators and treat weaker or smaller creatures as prey. Humanoids train crodlus as mounts, despite their unpredictable nature. Domesticated crodlus are found among any beings capable of handling and feeding the beasts."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/mF9UV43.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/l2H06ep.png",
+			"isNpc": true,
+			"environment": [
+				"desert"
+			],
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"A crodlu sprints at its target and pounces. Groups use pack tactics against larger or more numerous targets. Once prey is down, the crodlus surround it and stab it with their beaks until it's dead. A few circle to pounce on enemies that manage to stand again. Crodlus are erratic and extremely aggressive, attacking with no concern for retaliation."
+					]
+				},
+				{
+					"name": "Pounce",
+					"entries": [
+						"If the crodlu moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the crodlu can make one beak attack against it as a bonus action."
+					]
+				}
+			],
+			"damageTags": [
+				"S"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"traitTags": [
+				"Pounce"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The crodlu makes two attacks, one with its beak and one with its claws."
+					]
+				},
+				{
+					"name": "Beak",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) slashing damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 2}) slashing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Crodlu War",
+			"size": "L",
+			"type": {
+				"type": "beast",
+				"tags": [
+					"reptile"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d10 + 10",
+				"average": 38
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 15,
+			"int": 2,
+			"wis": 10,
+			"cha": 5,
+			"passive": 10,
+			"cr": "1",
+			"shortName": "Crodlu War",
+			"fluff": {
+				"entries": [
+					"Small herds of these vicious omnivores",
+					"roam the wastes. They resemble featherless birds with powerful legs and clawed forelimbs instead of wings. Some are bred and trained to bear humanoids into combat, yet even those are unpredictable and aggressive.",
+					"Lore",
+					"Wild crodlus form small herds of about a dozen members, each led by a dominant female. In a given herd, females outnumber males and are related to one another. The dominant female's mate outranks other males but is otherwise part of the herd. Males leave their birth herd on reaching adulthood to seek a mate in another herd. Once per year, crodlus mate and lay eggs. The young can run and hunt within minutes of hatching, though few escape predators and humanoid raiders.",
+					"Crodlus are curious-sometimes to a fault-and have been observed examining objects and holding such items with their forelimbs. In the wild, they use simple tools such as sticks to drive small prey out of hiding.",
+					"Encounters",
+					"In the wild, crodlus live and travel in herds. They flee from larger predators and treat weaker or smaller creatures as prey. Humanoids train crodlus as mounts, despite their unpredictable nature. Domesticated crodlus are found among any beings capable of handling and feeding the beasts."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/eIBE4Pq.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/yb7XNQs.png",
+			"isNpc": true,
+			"environment": [
+				"desert"
+			],
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Tougher than regular specimen of their species the War Crodlu are bred for war and travels in the armies of Sorcerer-Kings, tribe of Raiders, caravans or other factions of the wasteland."
+					]
+				},
+				{
+					"name": "Pounce",
+					"entries": [
+						"If the crodlu moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the crodlu can make one beak attack against it as a bonus action."
+					]
+				}
+			],
+			"damageTags": [
+				"S"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"traitTags": [
+				"Pounce"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The crodlu makes two attacks, one with its beak and one with its claws."
+					]
+				},
+				{
+					"name": "Beak",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
 		{
 			"name": "DARKSUNCREATURE - Dregoth, Sorcerer King",
 			"size": "H",
