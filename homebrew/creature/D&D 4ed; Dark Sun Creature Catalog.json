@@ -80,6 +80,60 @@
 				},
 				"If the drake dies, these effects fade over the course of {@dice 1d10} days."
 			]
+		},
+		{
+			"name": "LairActionsDrakeWaterV2",
+			"source": "DarkSunCreatureCatalog",
+			"lairActions": [
+				"On initiative count 20 (losing initiative ties), the drake takes a lair action to cause one of the following effects; the drake can't use the same effect two rounds in a row:",
+				{
+					"type": "list",
+					"items": [
+						"A strong current moves through the drake's lair. Each creature within 60 feet of the drake must succeed on a DC 15 Strength saving throw or be pushed up to 30 feet away from the drake. On a success, the creature is pushed 10 feet away from the drake.",
+						"The drake conjures poisoned gas or water around it. Each creature within 60 feet of the drake must succeed on a DC 15 Constitution saving throw or be poisoned for 1 minute. A poisoned target can repeat the saving throw at the end of each of its turns, ending the poisoned condition on itself on a success.",
+						"Creatures in the water within 60 feet of the drake have vulnerability to psychic damage until initiative count 20 on the next round."
+					]
+				}
+			],
+			"regionalEffects": [
+				"The region containing a fire drake's lair is warped by the drake's power, which creates one or more of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"The drake can alter the weather at will in a 6-mile radius centered on its lair. The effect is identical to the control weather spell.",
+						"Rifts within 1 mile of the drake's lair form portals to the Elemental Plane of Water, allowing creatures of elemental water into the world to dwell nearby."
+					]
+				},
+				"If the drake dies, these effects fade over the course of {@dice 1d10} days."
+			]
+		},
+		{
+			"name": "LairActionsDrakeFire",
+			"source": "DarkSunCreatureCatalog",
+			"lairActions": [
+				"On initiative count 20 (losing initiative ties), the dragon takes a lair action to cause one of the following effects; the dragon can't use the same effect two rounds in a row:",
+				{
+					"type": "list",
+					"items": [
+						"Magma erupts from a point on the ground the dragon can see within 120 feet of it, creating a 20-foot-high, 5-foot-radius geyser. Each creature in the geyser's area must make a DC 15 Dexterity saving throw, taking 21 (6d6) fire damage on a failed save, or half as much damage on a successful one.",
+						"A tremor shakes the lair in a 60-foot radius around the dragon. Each creature other than the dragon on the ground in that area must succeed on a DC 15 Dexterity saving throw or be knocked prone.",
+						"Volcanic gases form a cloud in a 20-foot-radius sphere centered on a point the dragon can see within 120 feet of it. The sphere spreads a round corners, and its area is lightly obscured. It lasts until initiative count 20 on the next round. Each creature that starts its turn in the cloud must succeed on a DC 13 Constitution saving throw or be poisoned until the end of its turn. While poisoned in this way, a creature is incapacitated."
+					]
+				}
+			],
+			"regionalEffects": [
+				"The region containing a fire drake’s lair is warped by the dragon's elemental magic, which creates one or more of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"Water sources within 1 mile of the lair are supernaturally warm and tainted by sulfur.",
+						"Lava fountains erupt from the ground within 1 mile of the drake’s lair. Every hour, there is a ten percent chance that characters in this area are close enough to an erupting lava fountain to be in danger. A lava fountain create a vent 20 feet in diameter, and hurls globs of lava up to 200 feet away. Each character within this area must succeed on a DC 21 Dexterity saving throw or take 11 (2d10) bludgeoning damage plus 17 (5d6) fire damage. A fountains lasts for 2d10 rounds before subsiding.",
+						"Rocky fissures within 1 mile of the drake’s lair form portals to the Elemental Plane of Fire, allowing creatures of elemental fire into the world to dwell nearby.",
+						"Given days or longer to work, the dragon can make cooled magma within its lair as solid as stone, forming structures and other basaltic maze were he likes to hunt."
+					]
+				},
+				"If the drake dies, these effects fade over the course of {@dice 1d10} days."
+			]
 		}
 	],
 	"monster": [
@@ -6125,11 +6179,19 @@
 				]
 			},
 			"environment": [
-				"desert",
-				"swamp"
+				"arctic",
+				"coastal",
+				"swamp",
+				"underwater"
 			],
 			"isNpc": true,
 			"shortName": "Drake Water",
+			"languages": [
+				"Draconic"
+			],
+			"languageTags": [
+				"DR"
+			],
 			"trait": [
 				{
 					"name": "Info",
@@ -6258,9 +6320,399 @@
 					]
 				}
 			]
-		},	
+		},
+		{
+			"name": "DARKSUNCREATURE - Drake Water (version 2)",
+			"size": "G",
+			"type": "dragon",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 22,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d20 + 160",
+				"average": 370
+			},
+			"speed": {
+				"walk": 40,
+				"burrow": 40,
+				"swim": 60
+			},
+			"str": 26,
+			"dex": 16,
+			"con": 26,
+			"int": 6,
+			"wis": 20,
+			"cha": 16,
+			"passive": 19,
+			"cr": "22",
+			"fluff": {
+				"entries": [
+					"The water drake is the most elusive of all drakes. This is due mostly to the hatred they hold for what humanity has done to Athas. Water drakes are pale, grey-blue in color, with a blow hole centered in the back of their heads. Water drakes are the slimmest of the drake family. Their four webbed feet end in sharp, triangular claws. Water drakes tails are thinner and flatter than other drakes, and they provide excellent propulsion when in water. Water drakes are reclusive and prefer as little contact with humanity as possible. They will avoid intruders, but will kill without hesitation those humanoids who trespass upon their lair. Because of the horrors rent upon the planet by humanoids, water drakes have absolutely no regard for such life. Their four webbed feet help them move large quantities of sand. All four feet have sharp, triangular claws designed for digging into and holding onto prey, or for raking. ",
+					"A Water Drake Lair",
+					"They make their home near a deep water source, if possible; many guard passages to aquafilters trapped deep below the ground."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/ONkXyka.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"arctic",
+				"coastal",
+				"swamp",
+				"underwater"
+			],
+			"shortName": "Drake Water (version 2)",
+			"languages": [
+				"Draconic"
+			],
+			"languageTags": [
+				"DR"
+			],
+			"senses": [
+				"truesight 120 ft."
+			],
+			"senseTags": [
+				"U"
+			],
+			"save": {
+				"str": "+14",
+				"dex": "+9",
+				"con": "+14",
+				"int": "+11",
+				"cha": "+9"
+			},
+			"skill": {
+				"perception": "+9"
+			},
+			"immune": [
+				"cold"
+			],
+			"resist": [
+				"psychic"
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the drake fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The water drake's spellcasting ability is Wisdom (spell save {@dc 20}). The water drake can innately cast the following spells, requiring no material components.",
+						"Spellcasting Ability=WIS",
+						"Global Magic Attack Modifier=12",
+						"Magic Caster Level=19",
+						"Spell Save DC Mod=20"
+					],
+					"will": [
+						"{@spell control water}",
+						"{@spell maelstrom|XGE}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell tsunami}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The earth drake makes three attacks: one with its bite and two with ts claws."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d6 + 8}) slashing damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 5 ft., one target. {@h}19 ({@damage 2d10 + 8}) piercing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 5 ft., one target. {@h}17 ({@damage 2d8 + 8}) slashing damage."
+					]
+				},
+				{
+					"name": "Mind Storm {@recharge 5}",
+					"entries": [
+						"Drake chooses a point it can see within 60 feet of it. Each creature in a 20-foot-radius sphere centered on that point must make a {@dc 22} Wisdom saving throw. On a failed save, a target takes 66 ({@damage 10d12}) psychic damage and suffers disadvantage on all saving throws until the end of its next turn. On a successful save, a creature takes half as much damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"damageTags": [
+				"S",
+				"P",
+				"Y"
+			],
+			"legendaryGroup": {
+				"name": "LairActionsDrakeWaterV2",
+				"source": "DarkSunCreatureCatalog"
+			},
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"The water drake can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The water drake regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Tail",
+					"entries": [
+						"Drake makes tail attack"
+					]
+				},
+				{
+					"name": "Distracting Haze",
+					"entries": [
+						"Drake chooses one creature it can see within 60 feet of it. That creature must make an {@dc 22} Intelligence saving throw. On a failed save, it takes {@damage 1d10} psychic damage and can't see anything more than 10 feet from until end of drake’s next turn. On a successful save, it takes half as much damage."
+					]
+				},
+				{
+					"name": "Daze (Costs 2 Actions)",
+					"entries": [
+						"Drake chooses one creature it can see within 60 feet of it. That creature must make an {@dc 22} Intelligence saving throw. On a failed save, the target is {@condition incapacitated} until the end of drake’s next turn or until it takes any damage."
+					]
+				}
+			],
+			"conditionInflict": [
+				"incapacitated"
+			],
+			"tokenUrl": "https://i.imgur.com/sOONz18.png",
+			"isNpc": true
+		},
+		{
+			"name": "Drake Fire",
+			"size": "G",
+			"type": "dragon",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "22d20 + 154",
+				"average": 385
+			},
+			"speed": {
+				"walk": 40,
+				"burrow": 40,
+				"climb": 40
+			},
+			"str": 27,
+			"dex": 12,
+			"con": 25,
+			"int": 3,
+			"wis": 15,
+			"cha": 14,
+			"passive": 26,
+			"cr": "22",
+			"fluff": {
+				"entries": [
+					"Drakes loom large in the myths of athas",
+					"Though tales of them might scare children, few people believe these giant monsters exist. Those who find out the truth rarely survive the experience-the soft flesh of humanoids is drakes' favorite food.",
+					"Lore",
+					"Athasian drakes are enormous, fearsome predators having only animal intelligence and strong instincts. Each variety of drake is attuned to a specific element and has psionic control over that element, making its home in areas dominated by its associated element.",
+					"Athasian drakes collect objects in their lairs or expand their territory, depending on the individual drake's nature. Although some hoards are valuable, drakes also amass trinkets or souvenirs that have no worth to anyone else. Air drakes maintain multiple lairs atop rocky spires or mesas and divide their few precious belongings among these lairs.",
+					"Encounters",
+					"Drakes use terrain to their advantage, and the setting for a battle with a drake can be as important as the monster. Precarious cliffs are a great setup for air drakes, volcanic fissures favor fire drakes, and unstable underground burrows make tricky settings for encounters with earth drakes. Water drakes might appear anywhere precious reserves of water exist. Any location might also have been booby-trapped or fortified before the drake claimed it."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/5JkXrje.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/Dpi7BNJ.png",
+			"environment": [
+				"hill",
+				"mountain",
+				"underdark"
+			],
+			"isNpc": true,
+			"shortName": "Drake Fire",
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"The prisoner pleads for the halfling shamans to release him, yet they insist he is a sacrifice to the god of fire. As if answering their call, a creature arises from the crater, magma dripping from its thick, rocky scales. With a bestial rumble like a laugh, it suddenly slashes, felling and devouring the halflings. Before the victim can give thanks, the beast turns its scorching breath and razor-sharp claws on him. A fire drake opens with breath of elemental fire to scorch as many enemies as possible, moving the fiery zone about the battlefield to herd them. It grabs an enemy and uses it to deflect blows, for fun as well as defense. Fire drakes thrive on tormenting their victims, using blazing pain to amplify suffering."
+					]
+				},
+				{
+					"name": "Blazing Pain",
+					"entries": [
+						"While it has 200 hit points or lower, the drake has advantage on attack rolls. In addition I deals and extra 10 ({@damage 2d10}) fire damage plus 10 ({@damage 2d10}) psychic damage to any target it hits with a melee attack."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day).",
+					"entries": [
+						"If the dragon fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"languages": [
+				"Draconic"
+			],
+			"languageTags": [
+				"DR"
+			],
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"skill": {
+				"perception": "+16",
+				"stealth": "+8"
+			},
+			"immune": [
+				"fire"
+			],
+			"damageTags": [
+				"P",
+				"F",
+				"S",
+				"B",
+				"Y"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The drake uses his Frightful Presence and makes three melee attacks, two claw attacks, and one bite."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 15 ft., one target. {@h}19 ({@damage 2d10 + 8}) piercing damage, plus 10 ({@damage 3d6}) fire damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d6 + 8}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 20 ft., one target. {@h}17 ({@damage 2d8 + 8}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Each creature of the dragon's choice that is within 120 feet of the drake and aware of it must succeed on a {@dc 19} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the drake's Frightful Presence for the next 24 hours."
+					]
+				},
+				{
+					"name": "Breath of Elemental Fire {@recharge 5}",
+					"entries": [
+						"The drake exhales scorching fire in a 90ft cone. Each creature in that area must make a {@dc 22} Dexterity saving throw, taking 77 ({@damage 22d6}) fire damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"actionTags": [
+				"Frightful Presence",
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"frightened",
+				"restrained",
+				"grappled"
+			],
+			"legendaryGroup": {
+				"name": "LairActionsDrakeFire",
+				"source": "DarkSunCreatureCatalog"
+			},
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"The drake can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. The dragon regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Detect",
+					"entries": [
+						"The drake makes a Wisdom (Perception) check."
+					]
+				},
+				{
+					"name": "Tail Attack",
+					"entries": [
+						"The drake makes a tail attack."
+					]
+				},
+				{
+					"name": "Living Shield",
+					"entries": [
+						"The drake makes a claws attack, if the target is Medium or smaller, it is {@condition grappled} (escape {@dc 20}). Until this grapple ends, the target is {@condition restrained}. The next attack that hits the drake will deal half damage to the drake and half damage to the grabbed creature."
+					]
+				}
+			]
+		},
 		{
 			"name": "DARKSUNCREATURE - Dregoth, Sorcerer King",
+			"source": "DarkSunCreatureCatalog",
 			"size": "H",
 			"type": {
 				"type": "undead",
@@ -6269,8 +6721,7 @@
 					"dray",
 					"demon"
 				]
-			},
-			"source": "DarkSunCreatureCatalog",
+			},			
 			"alignment": [
 				"C",
 				"E"
