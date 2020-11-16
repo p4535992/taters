@@ -90,7 +90,6 @@
 - [ENTITY][Search Anywhere](https://gitlab.com/riccisi/foundryvtt-search-anywhere ) - https://gitlab.com/riccisi/foundryvtt-search-anywhere/raw/master/module/module.json
 - [TOKEN][Show Drag Dinstance](https://github.com/wsaunders1014/ShowDragDistance ) - https://raw.githubusercontent.com/wsaunders1014/ShowDragDistance/master/module.json
 - [JOURNAL][Journal Sync](https://github.com/sytone/foundry-vtt-journal-sync ) - https://raw.githubusercontent.com/sytone/foundry-vtt-journal-sync/master/module.json
-- [CHAT][Actually Private Rolls](https://github.com/syl3r86/Actually-Private-Rolls) - https://raw.githubusercontent.com/syl3r86/Actually-Private-Rolls/master/module.json
 
 - [ENTITY][Compendiumn Browse](https://github.com/syl3r86/compendium-browser ) - https://raw.githubusercontent.com/syl3r86/compendium-browser/master/module.json
 
@@ -149,10 +148,16 @@
 - [MAP/TOKEN/CONDITION][Illandril's Token Hud Scale](https://foundryvtt.com/packages/illandril-token-hud-scale/ ) - 
 - [CHAT][Illandril's Chat Enhancements](https://github.com/illandril/FoundryVTT-chat-enhancements ) - https://raw.githubusercontent.com/illandril/FoundryVTT-chat-enhancements/master/module.json
 - [TOKEN][Illandril's Token Tooltips (5e)](https://github.com/illandril/FoundryVTT-token-tooltips ) - https://raw.githubusercontent.com/illandril/FoundryVTT-token-tooltips/master/module.json
+- [TOKEN][Illandril's NPC Quick Actions (5e)](https://github.com/illandril/FoundryVTT-npc-quick-actions ) - https://raw.githubusercontent.com/illandril/FoundryVTT-npc-quick-actions/master/module.json 
+- [INVENTORY][Illandril's Inventory Sorter (5e)](https://github.com/illandril/FoundryVTT-inventory-sorter ) - https://raw.githubusercontent.com/illandril/FoundryVTT-inventory-sorter/master/module.json 
+- [INVENTORY][Illandril's Pact Slot Third Caster (5e)](https://github.com/illandril/FoundryVTT-third-pact ) - https://raw.githubusercontent.com/illandril/FoundryVTT-third-pact/master/module.json
 
 - [SCENE/TELEPORT][Point of Interest Teleporter](https://github.com/zeel01/poi-teleport )
 - [SCENE/TELEPORT][REMAIN FOR OLD VERSION][Teleport](https://github.com/knassher/FVTT-Teleport )
 - [UTILITY][FVVT POINTER](https://github.com/Moerill/fvtt-pointer ) - https://raw.githubusercontent.com/Moerill/fvtt-pointer/master/module.json
+- [JOURNAL][Thumbnails for Journal Entries](https://github.com/J-Guenther/foundryvtt-journal-thumbnail ) - https://raw.githubusercontent.com/J-Guenther/foundryvtt-journal-thumbnail/main/module.json
+- [UTILITY][Progress Clocks](https://github.com/troygoode/fvtt-clocks ) - https://raw.githubusercontent.com/troygoode/fvtt-clocks/main/module.json
+
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
@@ -189,7 +194,9 @@
 - [COMBAT][mookAI](https://github.com/dwonderley/mookAI/ )
 - [COMBAT][Blood and guts](https://github.com/edzillion/blood-n-guts )
 - [COMBAT][IS BETTER MIDI QOL][Better Rolls for 5e](https://github.com/RedReign/FoundryVTT-BetterRolls5e ) - https://raw.githubusercontent.com/RedReign/FoundryVTT-BetterRolls5e/master/betterrolls5e/module.json 
-
+- [COMBAT][Terrain Layer](https://github.com/wsaunders1014/TerrainLayer )
+- [COMBAT][Difficult Terrain](https://github.com/Nordiii/difficultterrain ) - 
+- [COMBAT][Combat Numbers](https://github.com/1000nettles/combat-numbers ) - https://raw.githubusercontent.com/1000nettles/combat-numbers/main/module.json
 
 ## [MUST HAVE] MODULES COMPENDIUM
 
@@ -206,6 +213,7 @@
 - [MAP][Inline Webviewer](https://github.com/ardittristan/VTTInlineWebviewer )
 - [MAP/WORLD][The Cycle of Cerberus](https://www.patreon.com/posts/39846150 )
 - [MAP/WORLD][The Turtle Guild](https://turtleguild-giftoftheweb.s3.us-east-2.amazonaws.com/world.json ) - https://topoturtle.com/products/gift-of-the-web-foundry-edition
+- [MAP][The Mad Cartographer](https://www.patreon.com/themadcartographer )
 
 # ======================================================================
 # NOT ESSENTIAL JUST A REMAINDER OF THE WORK FROM THER WONDERUL DEVEOPER
@@ -224,7 +232,6 @@
 - [CHARACTR SHEET][NOT ESSENTIAL][(5e) Different Prepared and Equipped Colors](https://github.com/sparkcity/foundryvtt/tree/master/5edifferentpreparedandequippedcolors ) - https://raw.githubusercontent.com/sparkcity/foundryvtt/master/5edifferentpreparedandequippedcolors/module.json 
 - [CHAT][Tabbed Chatlog][NOT ESSENTIAL](https://github.com/cswendrowski/FoundryVTT-Tabbed-Chatlog ) - https://raw.githubusercontent.com/cswendrowski/FoundryVTT-Tabbed-Chatlog/master/module.json
 - [MAP][Less Fog][NOT ESSENTIAL][(https://github.com/trdischat/lessfog ) - https://raw.githubusercontent.com/trdischat/lessfog/master/module.json
-- [LIGHT][NOT ESSENTIAL][Day Night Lights](https://github.com/EndlesNights/daynightlights ) - https://raw.githubusercontent.com/EndlesNights/daynightlights/master/daynightlights/module.json
 - [TOKEN/LIGHT][NOT ESSENTIAL][Point of Vision](https://github.com/eadorin/point-of-vision ) - https://raw.githubusercontent.com/eadorin/point-of-vision/master/module.json
 - [EXTERNAL][NOT ESSENTIAL][Popout](https://github.com/kakaroto/fvtt-module-popout ) - https://raw.githubusercontent.com/kakaroto/fvtt-module-popout/master/module.json
 - [EXTERNAL][NOT ESSENTIAL][Popout Resizer](https://gitlab.com/cardagon/popout-resizer/ ) - https://gitlab.com/cardagon/popout-resizer/raw/master/module.json
@@ -245,7 +252,7 @@
 - [AUDIO][IS BETTER Playlist Import][Audio FOlder](https://github.com/megastruktur/foundryvtt-audio-folder ) - https://raw.githubusercontent.com/megastruktur/foundryvtt-audio-folder/master/module.json
 - [SCENE][GOOD BUT NOT ESSENSIAL][scene-transitions](https://github.com/wsaunders1014/scene-transitions ) - https://raw.githubusercontent.com/wsaunders1014/scene-transitions/master/module.json
 - [MAP/GRID][GOOD BUT NOT ESSENSIAL][Scale grid](https://github.com/UberV/scaleGrid ) - https://raw.githubusercontent.com/UberV/scaleGrid/master/module.json
-- [MAP][Terrain Layer](https://github.com/wsaunders1014/TerrainLayer )
+
 
 
 - [NOT ESSENTIAL][TEMPLATES][Better Templates](https://github.com/VanceCole/bettertemplates ) - https://raw.githubusercontent.com/VanceCole/bettertemplates/master/module.json
@@ -262,6 +269,7 @@
 - [NOT ESSENTIAL][Utility][Actor Sheet Macro](https://bitbucket.org/Fyorl/sheet-macro/src/master/ )
 - [INTEGRATED IN THE CORE FOR 0.7.5][MAP/TOKEN][Token Drag Visibility](https://github.com/SteffanPoulsen/token-drag-visibility ) - https://raw.githubusercontent.com/SteffanPoulsen/token-drag-visibility/master/src/module.json
 - [NOT ESSENTIAL][COMBAT][Combat Template Cleanup](https://github.com/Kekilla0/combat-template-cleanup ) - https://raw.githubusercontent.com/Kekilla0/combat-template-cleanup/master/module.json
+- [CHAT][NOT SUPPORTED ANYMORE][Actually Private Rolls](https://github.com/syl3r86/Actually-Private-Rolls ) - https://raw.githubusercontent.com/syl3r86/Actually-Private-Rolls/master/module.json
 
 
 ## [MINOR MODULES] NOT ESSENTIAL 1
@@ -329,6 +337,7 @@
 
 ## [MINOR MODULES] NEED UPDATE OR DEPRECATED OR BE TESTED
 
+- [LIGHT][DEPRECATED WITH 0.7.5][Day Night Lights](https://github.com/EndlesNights/daynightlights ) - https://raw.githubusercontent.com/EndlesNights/daynightlights/master/daynightlights/module.json
 - [DEPRECTAED 0.7.X(for 0.7.x use Dynamic Active Effects)][ENTITY][Dynamic Effects](https://gitlab.com/tposney/dynamiceffects ) - https://gitlab.com/tposney/dynamiceffects/raw/master/src/module.json
 - [DEPRECATED][ENTITY][IS BETTER DYNAMIC EFFECTS][Effectifier](https://gitlab.com/ohporter/effectifier ) - https://gitlab.com/ohporter/effectifier/raw/master/module.json
 - [DEPRECATED 0.7.X (Core feature, there is a new module, see https://www.reddit.com/r/FoundryVTT/comments/jgrpxq/075_community_lighting_announcement/)][MAP][Dancing Lights](https://github.com/BlitzKraig/fvtt-DancingLights ) - https://raw.githubusercontent.com/BlitzKraig/fvtt-DancingLights/master/module.json
