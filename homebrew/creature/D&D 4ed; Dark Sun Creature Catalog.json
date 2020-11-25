@@ -160,6 +160,115 @@
 				},
 				"If the drake dies, these effects fade over the course of {@dice 1d10} days."
 			]
+		},
+		{
+			"name": "LairActionsDrakeAir",
+			"source": "DarkSunCreatureCatalog",
+			"lairActions": [
+				"On initiative count 20 (losing initiative ties), the dragon takes a lair action to cause one of the following effects; the dragon can't use the same effect two rounds in a row:",
+				{
+					"type": "list",
+					"items": [
+						"A cloud of sand swirls about in a 20-foot-radius sphere centered on a point the dragon can see within 120 feet of it. The cloud spreads around corners. Each creature in the cloud must succeed on a DC 15 Constitution saving throw or be blinded for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+						"Lightning arcs, forming a 5-foot-wide line between two of the lair's solid surfaces that the dragon can see. They must be within 120 feet of the dragon and 120 feet of each other. Each creature in that line must succeed on a DC 15 Dexterity saving throw or take 10 (3d6) lightning damage.",
+						"A strong wind blows around the dragon. Each creature within 60 feet of the dragon must succeed on a DC 15 Strength saving throw or be pushed 15 feet away from the dragon and knocked prone. Gases and vapors are dispersed by the wind, and unprotected flames are extinguished. Protected flames; such as lanterns, have a 50 percent chance of being extinguished."
+					]
+				}
+			],
+			"regionalEffects": [
+				"The region containing an air drake’s lair is warped by the dragon's elemental magic, which creates one or more of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"Thunderstorms and sandstorms rage within 6 miles of the lair.",
+						"Dust devils scour the land within 6 miles of the lair. A dust devil has the statistics of an air elemental, but it can't fly, has a speed of 50 feet, and has an Intelligence and Charisma of 1 (- 5).",
+						"Within 1 mile of its lair, the dragon leaves no physical evidence of its passage unless it wishes to. Tracking it there is impossible except by magical means.",
+						"Natural caverns and windblown canyons within 1 mile of the drake’s lair form intermittent portals to the Elemental Plane of Air, allowing elemental creatures into the mortal world to dwell near those locations."
+					]
+				},
+				"If the drake dies, these effects fade over the course of {@dice 1d10} days."
+			]
+		},
+		{
+			"name": "LairActionsDrakeAirV2",
+			"source": "DarkSunCreatureCatalog",
+			"lairActions": [
+				"On initiative count 20 (losing initiative ties), the drake takes a lair action to cause one of the following effects; the drake can't use the same effect two rounds in a row:",
+				{
+					"type": "list",
+					"items": [
+						"A line of strong wind 60 feet long and 10 feet wide blasts from a point drake chooses within 60 feet of it. Any creature caught in wind must succeed on a DC 15 Dexterity saving throw or take 10 ({@dice 3d6}) bludgeoning damage and be pushed 15 feet away from drake in a direction following the line.",
+						"A 120-feet sphere of tornado-like winds from the elemental plane of air appears centered on a point the drake chooses within 120 feet of it. When the sphere appears, each Large or smaller creature within sphere that is currently flying must make a DC 15 Dexterity saving throw. On a failed save, a creature is knocked prone and then if that creature is still in the air it is pushed 60 feet to the ground. Gases and vapors are dispersed by the wind, and unprotected flames are extinguished. Protected flames; such as lanterns, have a 50 percent chance of being extinguished.",
+						"A strong wind blows around the drake. Each creature within 60 feet of the drake must succeed on a DC 15 Strength saving throw or be pushed 15 feet away from the drake and knocked prone. Gases and vapors are dispersed by the wind, and unprotected flames are extinguished. Protected flames; such as lanterns, have a 50 percent chance of being extinguished."
+					]
+				}
+			],
+			"regionalEffects": [
+				"The region containing an air drake's lair is warped by the drake's power, which creates one or more of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"Strong winds blow within 6 miles of the drake's lair.",
+						"Once per day, the drake can alter the weather in a 6-mile radius centered on its lair. The drake doesn't need to be outdoors; otherwise the effect is identical to the control weather spell.",
+						"Whenever a creature with an Intelligence of 3 or higher flies more than 30 feet in the air within 1 mile of the drake's lair, the drake becomes aware of the creature's presence and location."
+					]
+				},
+				"If the drake dies, these effects fade over the course of {@dice 1d10} days."
+			]
+		},
+		{
+			"name": "LairActionsDrakeEarth",
+			"source": "DarkSunCreatureCatalog",
+			"lairActions": [
+				"On initiative count 20 (losing initiative ties), the dragon takes a lair action to cause one of the following effects; the dragon can't use the same effect two rounds in a row:",
+				{
+					"type": "list",
+					"items": [
+						"Part of the ceiling collapses above one creature that the dragon can see within 120 feet of it. The creature must succeed on a DC 15 Dexterity saving throw or take 10 ({@dice 3d6}) bludgeoning damage and be knocked prone and buried. The buried target is restrained and unable to breathe or stand up. A creature can take an action to make a DC 10 Strength check, ending the buried state on a success.",
+						"The dragon chooses a point on the ground that it can see within 120 feet of it. Stone spikes sprout from the ground in a 20-foot radius centered on that point. The effect is otherwise identical to the spike growth spell and lasts until the dragon uses this lair action again or until the dragon dies.",
+						"The dragon chooses a 10-foot-square area on the ground that it can see within 120 feet of it. The ground in that area turns into 3-foot-deep mud. Each creature on the ground in that area when the mud appears must succeed on a DC 15 Dexterity saving throw or sink into the mud and become restrained. A creature can take an action to attempt a DC 15 Strength check, freeing itself or another creature within its reach and ending the restrained condition on a success. Moving 1 foot in the mud costs 2 feet of movement. On initiative count 20 on the next round, the mud hardens, and the Strength DC to work free increases to 20."
+					]
+				}
+			],
+			"regionalEffects": [
+				"The region containing an earth drake’s lair is warped by the dragon's elemental magic, which creates one or more of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"Hidden sinkholes form in and around the dragon's lair. A sinkhole can be spotted from a safe distance with a successful DC 20 Wisdom (Perception) check. Otherwise, the first creature to step on the thin crust covering the sinkhole must succeed on a DC 15 Dexterity saving throw or fall {@dice 1d6 x 10} feet into the sinkhole.",
+						"Small earthquake are common within 6 miles of the dragon’s lair.",
+						"Gems and pearls within 1 mile of the dragon’s lair sparkle and gleam, shedding dim light in a 5ft radius.",
+						"Natural caves and tunnels within 1 miles of the drake’s lair form intermittent portals to the Elemental Plane of Earth, allowing elemental creatures into the mortal world to dwell near those points."
+					]
+				},
+				"If the drake dies, these effects fade over the course of {@dice 1d10} days."
+			]
+		},
+		{
+			"name": "LairActionsDrakeEarthV2",
+			"source": "DarkSunCreatureCatalog",
+			"lairActions": [
+				"On initiative count 20 (losing initiative ties), the drake takes a lair action to cause one of the following effects; the drake can't use the same effect two rounds in a row:",
+				{
+					"type": "list",
+					"items": [
+						"Part of the ceiling collapses above one creature that the drake can see within 120 feet of it. The creature must succeed on a DC 15 Dexterity saving throw or take 10 ({@dice 3d6}) bludgeoning damage and be knocked prone and buried. The buried target is restrained and unable to breathe or stand up. A creature can take an action to make a DC 10 Strength check, ending the buried state on a success.",
+						"A tremor shakes the lair in a 60-foot radius around the drake. Each creature other than the drake on the ground in that area must succeed on a DC 15 Dexterity saving throw or be knocked prone.",
+						"The drake creates a wall of dirt, stones, and boulders from the elemental plane of earth on a solid surface it can see within 120 feet of it. The wall can be up to 30 feet long, 30 feet high, and 1 foot thick. When the wall appears, each creature within its area is pushed 5 feet out of the wall's space; appearing on whichever side of the wall, it wants. Each 10-foot section of the wall has AC 13, 20 hit points, resistance to all damage and immunity to acid, cold, necrotic, poison, and psychic damage. The wall disappears when the drake uses this lair action again or when the drake dies."
+					]
+				}
+			],
+			"regionalEffects": [
+				"The region containing an earth drake's lair is warped by the drake's power, which creates one or more of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"Small earthquakes are common within 6 miles of the drake's lair.",
+						"Rocky fissures within 1 mile of the drake's lair form portals to the Elemental Plane of Earth, allowing creatures of elemental earth into the world to dwell nearby."
+					]
+				},
+				"If the drake dies, these effects fade over the course of {@dice 1d10} days."
+			]
 		}
 	],
 	"monster": [
@@ -6847,7 +6956,7 @@
 			],
 			"action": [
 				{
-					"name": "Claw",
+					"name": "Claws",
 					"entries": [
 						"{@atk mw} {@hit 15} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d6 + 8}) slashing damage."
 					]
@@ -6926,6 +7035,597 @@
 				}
 			],
 			"tokenUrl": "https://i.imgur.com/Aolzi1G.png"
+		},
+		{
+			"name": "DARKSUNCREATURE - Drake Air",
+			"size": "G",
+			"type": "dragon",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"natural armor"
+					]
+				},
+				{
+					"ac": 26,
+					"condition": "againts ranged weapon attacks"
+				}
+			],
+			"hp": {
+				"formula": "26d20 + 208",
+				"average": 481
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40,
+				"fly": 80,
+				"canHover": false
+			},
+			"str": 29,
+			"dex": 16,
+			"con": 27,
+			"int": 4,
+			"wis": 20,
+			"cha": 16,
+			"passive": 31,
+			"cr": "23",
+			"fluff": {
+				"entries": [
+					"The caravan drivers look warily down at the deep canyons on each side of the narrow path they traverse. A sudden wind whips up, and they struggle to keep the inixes on course. Looking back to the other wagons, they watch in awe as people and kanks rise into the air, suspended by an unseen force, then plummet into the rocky depths. From midair bursts a monster amid a flurry of raking claws and buffeting winds. Air drakes are ambush predators that prefer to tenderize their food by dropping it from a great height. They commonly attack creatures traveling along dangerous precipices. A drake sails in surrounded by its wind veil and rips at its target, then buffets the victim with a blast of wind to force it over the edge. It does not risk counterattacks by focusing too long on anyone target."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/al9ufiu.png"
+						}
+					}
+				]
+			},
+			"isNpc": true,
+			"environment": [
+				"coastal",
+				"forest",
+				"mountain"
+			],
+			"tokenUrl": "https://i.imgur.com/mSzpIBm.png",
+			"shortName": "Drake Air",
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"languages": [
+				"Draconic"
+			],
+			"languageTags": [
+				"DR"
+			],
+			"skill": {
+				"stealth": "+10",
+				"perception": "+21"
+			},
+			"save": {
+				"dex": "+10",
+				"con": "+15",
+				"wis": "+12",
+				"cha": "+10"
+			},
+			"immune": [
+				"lightning",
+				"thunder"
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the dragon fails a saving throw, it can choose to succeed instead. Wind Veil. The drake is constantly wrapped in a veil of winds, granting him three-quarter cover against ranged weapon attacks."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The drake uses his Frightful Presence and makes three melee attacks, two claw attacks, and one bite."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 16} to hit, reach 15 ft., one target. {@h}20 ({@damage 2d10 + 9}) piercing damage, plus 11 ({@damage 2d10}) lightning damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 16} to hit, reach 10 ft., one target. {@h}16 ({@damage 2d6 + 9}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 16} to hit, reach 20 ft., one target. {@h}18 ({@damage 2d8 + 10}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Each creature of the dragon's choice that is within 120 feet of the drake and aware of it must succeed on a {@dc 20} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the drake's Frightful Presence for the next 24 hours."
+					]
+				},
+				{
+					"name": "Breath of Elemental Air {@recharge 5}",
+					"entries": [
+						"The dragon exhales lightning and thunder in a 120-foot line that is 10 feet wide. Each creature in that line must make a {@dc 23} Dexterity saving throw, taking 44 ({@damage 8d10}) lightning damage plus 44 ({@damage 8d10}) thunder damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"actionTags": [
+				"Frightful Presence",
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"L",
+				"S",
+				"B",
+				"T"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"legendaryGroup": {
+				"name": "LairActionsDrakeAir",
+				"source": "DarkSunCreatureCatalog"
+			},
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"The drake can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. The dragon regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Detect",
+					"entries": [
+						"The drake makes a Wisdom (Perception) check."
+					]
+				},
+				{
+					"name": "Tail attack",
+					"entries": [
+						"The drake makes a tail attack."
+					]
+				},
+				{
+					"name": "Control the Wind",
+					"entries": [
+						"The drake uses a psionic power similar to the {@spell Control Winds|xge}* spell."
+					]
+				}
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Drake Air (version 2)",
+			"size": "G",
+			"type": "dragon",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 23,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "25d20 + 175",
+				"average": 437
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40,
+				"fly": 80,
+				"canHover": false
+			},
+			"str": 22,
+			"dex": 18,
+			"con": 26,
+			"int": 6,
+			"wis": 20,
+			"cha": 18,
+			"passive": 15,
+			"cr": "23",
+			"fluff": {
+				"entries": [
+					"Air drakes are the most flighty and unpredictable of the species, making them dangerous adversaries. They spend most of their time soaring the Athasian skies.",
+					"Air drakes are the longest and leanest of the four drake types. They have folds of loose skin that stretch between their front and back legs. This skin unfolds when they extend their legs creating a wing membrane. They have a long, lean frame and are light of bone, contributing to their speed and agility.",
+					"Air drakes prefer their food thoroughly softened before eating it. To accomplish this, a drake will swoop, grab its prey, soar into the sky, and then drop it. Air drakes often choose crags or rocky outcroppings for “tenderizing their meat”. If the prey can fly, it will take the victim aloft and dive straight for the ground, releasing its prey and pulling up at the last minute.",
+					"AN AIR DRAKE'S LAIR",
+					"Air drakes do not keep a single residence. They prefer a dozen or so safe areas. Because they move around so much, air drakes gather and horde few possessions and treasure. Often if they find an object that pleases them, they will store it at a lofty, inaccessible location. They will leave it and return to visit only when the mood strikes them. Little infuriates an air drake more than having one of these precious items stolen.",
+					"If air drake is taken by surprise in its lair, it will try to use hurricane winds around its lair to gain advantage over invaders with its now magnified aerial superiority."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/ugdxlgM.png"
+						}
+					}
+				]
+			},
+			"isNpc": true,
+			"environment": [
+				"coastal",
+				"forest",
+				"mountain"
+			],
+			"tokenUrl": "https://i.imgur.com/HNrHVAN.png",
+			"shortName": "Drake Air (version 2)",
+			"languages": [
+				"Draconic"
+			],
+			"languageTags": [
+				"DR"
+			],
+			"save": {
+				"str": "+13",
+				"dex": "+11",
+				"con": "+15",
+				"wis": "+12",
+				"cha": "+11"
+			},
+			"immune": [
+				"lightning",
+				"thunder"
+			],
+			"damageTags": [
+				"S",
+				"P",
+				"Y"
+			],
+			"legendaryGroup": {
+				"name": "LairActionsDrakeAirV2",
+				"source": "DarkSunCreatureCatalog"
+			},
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"The air drake can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The air drake regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Tail Attack",
+					"entries": [
+						"The drake makes a tail attack."
+					]
+				},
+				{
+					"name": "Detect",
+					"entries": [
+						"The drake makes a Wisdom (Perception) check."
+					]
+				},
+				{
+					"name": "The Drop (Costs 3 Actions)",
+					"entries": [
+						"Drake can make bite attack. Then drake can fly up to half its flying speed and drop creature that its grappling, Creature lands {@condition prone}."
+					]
+				}
+			],
+			"senses": [
+				"truesight 120 ft."
+			],
+			"senseTags": [
+				"U"
+			],
+			"resist": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"stunned"
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the drake fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spelicasting",
+					"headerEntries": [
+						"The air drake's spellcasting ability is Wisdom (spell save {@dc 20}). The air drake can innately cast the following spells, requiring no material components.",
+						"Spellcasting Ability=WIS",
+						"Global Magic Attack Modifier=12",
+						"Magic Caster Level=19",
+						"Spell Save DC Mod=20"
+					],
+					"will": [
+						"{@spell control winds|XGE}",
+						"{@spell invisibility}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell storm of vengeance}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The air drake makes three attacks: one with its bite and two with its claws."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d6 + 6}) slashing damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}17 ({@damage 2d10 + 6}) piercing damage. If hitted creature is Large or smaller, air drake can grapple target. Air Drake can only grapply one target."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d8 + 6}) slashing damage."
+					]
+				},
+				{
+					"name": "Psychic Crush {@recharge 5}",
+					"entries": [
+						"Drake creates a 20-foot cube of psychic energy within 120 feet of him. Each creature in that area must make a {@dc 22} Intelligence saving throw. On a failed save, a target takes 66 ({@damage 10d12}) psychic damage and is {@condition stunned} until the end of your next turn. Ona successful save, a target takes half as much damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"conditionInflict": [
+				"stunned"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Drake Earth",
+			"size": "G",
+			"type": "dragon",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 23,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "25d20 + 250",
+				"average": 507
+			},
+			"speed": {
+				"walk": 40,
+				"burrow": 20
+			},
+			"str": 30,
+			"dex": 10,
+			"con": 30,
+			"int": 3,
+			"wis": 14,
+			"cha": 16,
+			"passive": 26,
+			"cr": "24",
+			"fluff": {
+				"entries": [
+					"The explorer sifts through a pile of loose dirt in search of precious water. In the blink of an eye, she falls to the ground, bowled over by a leaping horror covered in rocky plates. Her companions turn to run but, with a resounding boom, a mass of soil and stone coalesces around them and engulfs them. These beasts like to play with their food and prefer a meal that puts up a fight before the kill-they might provoke attacks just for the chance to lash out against the attacker. A drake bowls over as many targets as possible with its orb of elemental earth, growing to immense size to intimidate and torment immobilized prey."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/MnVwek9.png"
+						}
+					}
+				]
+			},
+			"isNpc": true,
+			"environment": [
+				"desert",
+				"hill",
+				"mountain",
+				"underdark"
+			],
+			"tokenUrl": "https://i.imgur.com/9gT3THo.png",
+			"shortName": "Drake Earth",
+			"languages": [
+				"Draconic"
+			],
+			"languageTags": [
+				"DR"
+			],
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"save": {
+				"dex": "+7",
+				"con": "+17",
+				"wis": "+9",
+				"cha": "+10"
+			},
+			"skill": {
+				"stealth": "+7",
+				"perception": "+16"
+			},
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"acid",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned",
+				"prone"
+			],
+			"trait": [
+				{
+					"name": "Immovable Stone",
+					"entries": [
+						"The drake is immune to effects that would move it."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the dragon fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The drake uses his Frightful Presence and makes three melee attacks, two claw attacks, and one bite."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 17} to hit, reach 15 ft., one target. {@h}21 ({@damage 2d10 + 10}) piercing damage, plus 14 ({@damage 4d6}) acid damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 17} to hit, reach 10 ft., one target. {@h}17 ({@damage 2d6 + 10}) slashing damage."
+					]
+				},
+				{
+					"name": "Stomp",
+					"entries": [
+						"{@atk mw} {@hit 17} to hit, reach 20 ft., one target. {@h}30 ({@damage 4d10 + 10}) bludgeoning damage and that target must succeed on a {@dc 21} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Each creature of the dragon's choice that is within 120 feet of the drake and aware of it must succeed on a {@dc 21} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the drake's Frightful Presence for the next 24 hours."
+					]
+				},
+				{
+					"name": "Breath of Elemental Earth {@recharge 5}",
+					"entries": [
+						"The drake uses one of the following breath weapons. ",
+						"Acid Breath. The dragon exhales acid in a 120-foot line that is 10 feet wide. Each creature in that line must make a {@dc 24} Dexterity saving throw, taking 91 ({@damage 26d6}) acid damage on a failed save, or half as much damage on a successful one.",
+						" Poison Breath. The dragon exhales poisonous gas in a 90-foot cone. Each creature in that area must make a {@dc 24} Constitution saving throw, taking 91 ({@damage 26d6}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"actionTags": [
+				"Frightful Presence",
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"A",
+				"S",
+				"B",
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"conditionInflict": [
+				"prone",
+				"frightened"
+			],
+			"legendaryGroup": {
+				"name": "LairActionsDrakeEarth",
+				"source": "DarkSunCreatureCatalog"
+			},			
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"The drake can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. The dragon regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Detect",
+					"entries": [
+						"The drake makes a Wisdom (Perception) check."
+					]
+				},
+				{
+					"name": "Stomp Attack",
+					"entries": [
+						"The drake makes a stomp attack."
+					]
+				},
+				{
+					"name": "Tremor",
+					"entries": [
+						"The drake raise on two legs and fall hard on the ground, every creature in a 60ft radius around the drake must make a {@dc 21} Strength saving throw, being knocked {@condition prone} on a failed one. This effect might collapse the surrounding area."
+					]
+				}
+			]
 		},
 		{
 			"name": "DARKSUNCREATURE - Dregoth, Sorcerer King",
