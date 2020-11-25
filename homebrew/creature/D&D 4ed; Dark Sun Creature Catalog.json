@@ -7628,6 +7628,219 @@
 			]
 		},
 		{
+			"name": "DARKSUNCREATURE - Drake Earth (version 2)",
+			"size": "G",
+			"type": "dragon",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 24,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "25d20 + 250",
+				"average": 512
+			},
+			"speed": {
+				"walk": 40,
+				"burrow": 40
+			},
+			"str": 30,
+			"dex": 10,
+			"con": 30,
+			"int": 6,
+			"wis": 18,
+			"cha": 18,
+			"passive": 19,
+			"cr": "24",
+			"fluff": {
+				"entries": [
+					"Often mistaken for an outcropping of rock, earth drakes are by far the physically strongest of the species. The gray, black, and brown reptilian creature is covered with thousands of small, spiny scales. The massive forelegs are designed for digging through solid stone. The hindlegs are equally as powerful and may be used for digging, but most often serve as anchors. Earth drakes’ tails are short but incredibly thick, which forces the monsters to swagger when they walk.",
+					"Earth drakes’ heads are wedge-shaped. The scales on the top of the head overlap to protect the earholes. The creature’s eyes are inset and covered by two eyelids - a soft, inner eyelid that is airtight, and an outer, protective, scaly eyelid that is highly puncture-resistant.",
+					"Earth drakes resent the encroachments of humanity, and they especially dislike any type of permanent buildings. An earth drake thinks nothing of travelling many miles in order to destroy man-made settlements.",
+					"Earth drakes enjoy a battle before a meal. The more fight a creature puts up, the better the drake will enjoy eating it. Earth drakes are known to dig themselves in along trading routes for opportunities to do battle and dine on mekillots.",
+					"AN EARTH DRAKE'S LAIR",
+					"Whether they dig into the bedrock beneath the sands of the Athasian desert or into a hillside, earth drakes always cover the front of their habitat with loose dirt. This creates a collapsible front entrance which the earth drake uses to defend its lair."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/rQ8aEYv.png"
+						}
+					}
+				]
+			},
+			"isNpc": true,
+			"environment": [
+				"desert",
+				"hill",
+				"mountain",
+				"underdark"
+			],
+			"tokenUrl": "https://i.imgur.com/Sy0x5k4.png",
+			"shortName": "Drake Earth (version 2)",
+			"languages": [
+				"Draconic"
+			],
+			"languageTags": [
+				"DR"
+			],
+			"save": {
+				"dex": "+7",
+				"con": "+17",
+				"wis": "+11",
+				"cha": "+11",
+				"str": "+17"
+			},
+			"skill": {
+				"perception": "+19",
+				"athletics": "+24"
+			},
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"psychic",
+						"slashing"
+					],
+					"note": "from nonmagical weapons"
+				},
+				{
+					"resist": [
+						"acid"
+					]
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the drake fails a saving throw, it can choose to succeed instead. "
+					]
+				},
+				{
+					"name": "Psychic Redoubt",
+					"entries": [
+						"Earth Drake has resistance to psychic damage and advantage on Intelligence, Wisdom, and Charisma saving throws. "
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The earth drake makes three attacks: one with its bite and two with its claws."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 17} to hit, reach 5 ft., one target. {@h}17 ({@damage 2d6 + 10}) slashing damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 17} to hit, reach 5 ft., one target. {@h}21 ({@damage 2d10 + 10}) piercing damage."
+					]
+				},
+				{
+					"name": "Psychic Blast {@recharge 5}",
+					"entries": [
+						"Drake unleashes devastating psychic energy in a 60-foot cone. Each creature in that area must make an {@dc 22} Intelligence saving throw, taking 66 ({@damage 10d12}) psychic damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S",
+				"P",
+				"Y"
+			],
+			"legendaryGroup": {
+				"name": "LairActionsDrakeEarthV2",
+				"source": "DarkSunCreatureCatalog"
+			},
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"The earth drake can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The earth drake regains spent legendary actions at the start of its turn."
+			],
+			"senses": [
+				"truesight 120 ft."
+			],
+			"senseTags": [
+				"U"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The earth drake's spellcasting ability is Charisma (spell save {@dc 19}). The earth drake can innately cast the following spells, requiring no material components.",
+						"Spellcasting Ability=CHA",
+						"Global Magic Attack Modifier=11",
+						"Magic Caster Level=18",
+						"Spell Save DC Mod=19"
+					],
+					"will": [
+						"{@spell bones of the earth|XGE}",
+						"{@spell move earth}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell earthquake}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"legendary": [
+				{
+					"name": "Bite",
+					"entries": [
+						"Drake makes bite attack."
+					]
+				},
+				{
+					"name": "Psionic Blast",
+					"entries": [
+						"Drake chooses one creature it can see within 60 feet of it. The target takes {@damage 1d8} psychic damage."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"Earth Drake moves 10 feet without provoking attack opportunities."
+					]
+				}
+			]
+		},
+		{
 			"name": "DARKSUNCREATURE - Dregoth, Sorcerer King",
 			"source": "DarkSunCreatureCatalog",
 			"size": "H",
