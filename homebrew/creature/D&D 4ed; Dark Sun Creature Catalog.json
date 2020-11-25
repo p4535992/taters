@@ -134,6 +134,32 @@
 				},
 				"If the drake dies, these effects fade over the course of {@dice 1d10} days."
 			]
+		},
+		{
+			"name": "LairActionsDrakeFireV2",
+			"source": "DarkSunCreatureCatalog",
+			"lairActions": [
+				"On initiative count 20 (losing initiative ties), the drake takes a lair action to cause one of the following effects; the drake can't use the same effect two rounds in a row:",
+				{
+					"type": "list",
+					"items": [
+						"Volcanic gases form a cloud in a 20-foot-radius sphere centered on a point the drake can see within 120 feet of it. The sphere spreads around corners, and its area is lightly obscured. It lasts until initiative count 20 on the next round. Each creature that starts its turn in the cloud must succeed on a DC 13 Constitution saving throw or be poisoned until the end of its turn. While poisoned in this way, a creature is incapacitated.",
+						"Magma erupts from a point on the ground the drake can see within 120 feet of it, creating a 20-foot-high, 5-foot-radius geyser. Each creature in the geyser's area must make a DC 15 Dexterity saving throw, taking 10 ({@dice 3d6}) fire damage on a failed save, or half as much damage on a successful one.",
+						"The drake creates a wall of fire on a solid surface within 120 feet of it. The wall can be up to 60 feet long, 20 feet high, and 1 foot thick, or a ringed wall up to 20 feet in diameter, 20 feet high, and 1 foot thick. The wall is opaque and lasts until initiative count 20 on the next round. When the wall appears, each creature within its area must make a DC 15 Dexterity saving throw. On a failed save, a creature takes 10 ({@dice 3d6}) fire damage, or half as much damage on a successful save. Wall deals 10 ({@dice 3d6}) fire damage to each creature that ends its turn within 5 feet of wall or inside the wall. A creature takes the same damage when it enters the wall for the first time on a turn or ends its turn there."
+					]
+				}
+			],
+			"regionalEffects": [
+				"The region containing a fire drake's lair is warped by the drake's power, which creates one or more of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"Water sources within 1 mile of the lair are supernaturally warm and tainted by sulfur.",
+						"Rocky fissures within 1 mile of the drake's lair form portals to the Elemental Plane of Fire, allowing creatures of elemental fire into the world to dwell nearby."
+					]
+				},
+				"If the drake dies, these effects fade over the course of {@dice 1d10} days."
+			]
 		}
 	],
 	"monster": [
@@ -6352,7 +6378,7 @@
 			"int": 6,
 			"wis": 20,
 			"cha": 16,
-			"passive": 19,
+			"passive": 15,
 			"cr": "22",
 			"fluff": {
 				"entries": [
@@ -6397,7 +6423,7 @@
 				"cha": "+9"
 			},
 			"skill": {
-				"perception": "+9"
+				"perception": "+19"
 			},
 			"immune": [
 				"cold"
@@ -6709,6 +6735,197 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Drake Fire (version 2)",
+			"size": "G",
+			"type": "dragon",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 22,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d20 + 180",
+				"average": 390
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 28,
+			"dex": 14,
+			"con": 28,
+			"int": 6,
+			"wis": 18,
+			"cha": 16,
+			"passive": 14,
+			"cr": "22",
+			"shortName": "Drake Fire (version 2)",
+			"fluff": {
+				"entries": [
+					"Fire drakes are the most evil and malicious of the drakes. They enjoy inflicting pain for the pleasure of watching their victims writhe in agony. A fire drake’s greatest delight comes from torturing a potential meal.",
+					"Fire drakes are large, spiny, reptilian creatures with pebble like skin. Each pebble is actually a scale. They are red-and-black mottled, similar in color to the dying embers of a fire, and their skin is very glossy. Fire drakes have four legs. The front two are smaller with very sharp claws, while the back legs are longer and thicker."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/IqITM4X.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"hill",
+				"mountain",
+				"underdark"
+			],
+			"isNpc": true,
+			"languages": [
+				"Draconic"
+			],
+			"languageTags": [
+				"DR"
+			],
+			"senses": [
+				"truesight 120 ft."
+			],
+			"senseTags": [
+				"U"
+			],
+			"save": {
+				"str": "+16",
+				"dex": "+9",
+				"con": "+16",
+				"wis": "+11",
+				"cha": "+10"
+			},
+			"skill": {
+				"athletics": "+24",
+				"perception": "+19"
+			},
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"resist": [
+				"psychic"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The fire drake's spellcasting ability is Charisma (spell save {@dc 18}). The fire drake can innately cast the following spells, requiring no material components.",
+						"Spellcasting Ability=CHA",
+						"Global Magic Attack Modifier=10",
+						"Magic Caster Level=17",
+						"Spell Save DC Mod=18"
+					],
+					"will": [
+						"{@spell fire bolt} (4d10)",
+						"{@spell wall of fire}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell flame strike} (9th level)"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"action": [
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d6 + 8}) slashing damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 5 ft., one target. {@h}19 ({@damage 2d10 + 8}) piercing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 5 ft., one target. {@h}17 ({@damage 2d8 + 8}) slashing damage."
+					]
+				},
+				{
+					"name": "Psychic Blast {@recharge 5}",
+					"entries": [
+						"Drake unleashes devastating psychic energy in a 60-foot cone. Each creature in that area must make an {@dc 22} Intelligence saving throw, taking 66 ({@damage 10d12}) psychic damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"damageTags": [
+				"S",
+				"P",
+				"Y"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the drake fails a saving throw, it can choose to succeed instead. "
+					]
+				},
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The earth drake makes three attacks: one with its bite and two with its claws."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"legendaryGroup": {
+				"name": "LairActionsDrakeFireV2",
+				"source": "DarkSunCreatureCatalog"
+			},
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"The fire drake can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The fire drake regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Tail",
+					"entries": [
+						"Drake makes tail attack"
+					]
+				},
+				{
+					"name": "Combustion (Costs 2 Actions)",
+					"entries": [
+						"Drake chooses one creature or object it can see within 120 feet of it. The target must make a {@dc 22} Constitution save. On a failed save, the target takes {@damage 1d10} fire damage and it catches on fire, taking {@damage 1d6} fire damage at the end of each of its turns until a creature adjacent to it extinguishes the flames with an action. On a successful save, the target takes half as much damage and doesn’t catch on fire."
+					]
+				},
+				{
+					"name": "Fire Bolt",
+					"entries": [
+						"Drake casts fire bolt."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/Aolzi1G.png"
 		},
 		{
 			"name": "DARKSUNCREATURE - Dregoth, Sorcerer King",
