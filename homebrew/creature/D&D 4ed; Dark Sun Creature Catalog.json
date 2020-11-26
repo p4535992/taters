@@ -8860,6 +8860,756 @@
 			"miscTags": [
 				"MW"
 			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Dray Slaver",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"dragonborn",
+					"dray"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 11,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 10",
+				"average": 36
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 11,
+			"con": 14,
+			"int": 10,
+			"wis": 10,
+			"cha": 12,
+			"passive": 10,
+			"cr": "1/2",
+			"fluff": {
+				"entries": [
+					"Athasian dragonborn descend from humanoids",
+					"transformed during the reign of an ancient sorcerer-king. They call themselves dray, the name bestowed on them by their creator.",
+					"Lore",
+					"The dragonborn were born from the mad genius of the sorcerer-king Dregoth, ruler of the former city-state of GiustenaL He created the race to serve him but deemed the result imperfect, so the capricious sorcerer cast the dray out into the sands ofAthas in scorn. A few were allowed to stay in Giustenal, but when the other sorcerer-kings banded together to slay Dregoth, those dray that remained either were killed or barely escaped.",
+					"Dragonborn are now extremely rare and band together in small tribes for survival. All that most know of their origin is that their creator tossed them aside, and none are aware that Dregoth persists in a state of undeath.",
+					"Among the few people who know of their existence, dragonborn have a reputation as slavers and sorcerers. Though not true ofall their kind, this reputation is well deserved. Many dray use the cruelty of their origin as a justification for slavery-they once belonged to Dregoth, and now they take slaves of their own. Others follow the path of the defiler, caring little for the preservation ofAthas in the pursuit ofever more power.",
+					"Encounters",
+					"Hostile dragonborn are slavers and mercenaries. They can be found alongside anyone who pays them enough. Dragonborn respect the strong, and their bands might include other tough humanoids and dangerous beasts."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/Zletbnf.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/pM3ArCX.png",
+			"environment": [
+				"desert",
+				"underdark"
+			],
+			"isNpc": true,
+			"shortName": "Dray Slaver",
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Aggressive warriors, dragonborn slavers scour the desert taking captives to trade for the sorcerer-kings' favor. Dragonborn slavers surround their targets. Since a Single blow is not enough to take out a slaver, it is unafraid to move between a foe and a possible escape route."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The slaver has advantage on an attack roll against a creature if at least one of the thug’s allies is within 5ft of the creature the ally isn’t {@condition incapacitated}."
+					]
+				}
+			],
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"skill": {
+				"intimidation": "+2"
+			},
+			"resist": [
+				"fire"
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dragonborn makes two melee attacks."
+					]
+				},
+				{
+					"name": "Breath Weapon (1/Day)",
+					"entries": [
+						"the dragonborn exhale a cone of 15ft, every creatures in the area must make a {@dc 12} Dexterity saving throw, taking 9 ({@damage 3d6}) fire damage on a failed one, and half damage on a successful one."
+					]
+				},
+				{
+					"name": "Mace",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 2} to hit, range 150/600 ft., one target. {@h}4 ({@damage 1d8}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"F",
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Dray Scorned Champion",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"dragonborn",
+					"dray"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item studded leather armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d8 + 45",
+				"average": 112
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 15,
+			"con": 16,
+			"int": 10,
+			"wis": 12,
+			"cha": 16,
+			"passive": 11,
+			"cr": "5",
+			"fluff": {
+				"entries": [
+					"Athasian dragonborn descend from humanoids",
+					"transformed during the reign of an ancient sorcerer-king. They call themselves dray, the name bestowed on them by their creator.",
+					"Lore",
+					"The dragonborn were born from the mad genius of the sorcerer-king Dregoth, ruler of the former city-state of GiustenaL He created the race to serve him but deemed the result imperfect, so the capricious sorcerer cast the dray out into the sands ofAthas in scorn. A few were allowed to stay in Giustenal, but when the other sorcerer-kings banded together to slay Dregoth, those dray that remained either were killed or barely escaped.",
+					"Dragonborn are now extremely rare and band together in small tribes for survival. All that most know of their origin is that their creator tossed them aside, and none are aware that Dregoth persists in a state of undeath.",
+					"Among the few people who know of their existence, dragonborn have a reputation as slavers and sorcerers. Though not true ofall their kind, this reputation is well deserved. Many dray use the cruelty of their origin as a justification for slavery-they once belonged to Dregoth, and now they take slaves of their own. Others follow the path of the defiler, caring little for the preservation ofAthas in the pursuit ofever more power.",
+					"Encounters",
+					"Hostile dragonborn are slavers and mercenaries. They can be found alongside anyone who pays them enough. Dragonborn respect the strong, and their bands might include other tough humanoids and dangerous beasts."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/TcHU8Bi.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/3JnzDc1.png",
+			"environment": [
+				"desert",
+				"underdark"
+			],
+			"isNpc": true,
+			"shortName": "Dray Scorned Champion",
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"A few dray embrace their heritage as a race scorned by its creator. They become tribal leaders and strike down anyone who challenges them. A scorned champion leads a band of dragonborn raiders, risking itself to benefit its fellows in combat. It slashes away as it moves into the midst of enemies, then keeps them off balance so that its allies can seize the advantage."
+					]
+				},
+				{
+					"name": "Brave",
+					"entries": [
+						"The dragonborn has advantage on saving throws against being {@condition frightened}."
+					]
+				},
+				{
+					"name": "Brute",
+					"entries": [
+						"A melee weapon deals one extra dice of its damage when the dragonborn hits with it (included in the attack)."
+					]
+				}
+			],
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"resist": [
+				"fire"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dragonborn makes three melee attacks or two ranged attacks."
+					]
+				},
+				{
+					"name": "Breath Weapon (1/Day)",
+					"entries": [
+						"the dragonborn exhale a cone of 15ft, every creatures in the area must make a {@dc 15} Dexterity saving throw, taking 15 ({@damage 5d6}) fire damage on a failed one, and half damage on a successful one."
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw,rw} {@hit 8} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}12 ({@damage 2d6 + 5}) piercing damage in melee, or 12 ({@damage 2d6 + 5}) piercing damage at range, or 14 ({@damage 2d8 + 5}) piercing damage if used with both hands."
+					]
+				},
+				{
+					"name": "Shield Bash",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d4 + 5}) bludgeoning damage. If the target is a Medium or smaller creature, it must succeed on a {@dc 15} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"damageTags": [
+				"F",
+				"P",
+				"B"
+			],
+			"save": {
+				"str": "+8",
+				"dex": "+5",
+				"con": "+6"
+			},
+			"skill": {
+				"athletics": "+11",
+				"intimidation": "+6"
+			},
+			"traitTags": [
+				"Brute"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"THW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"The dragonborn adds 3 to its AC against one melee attack that would hit it. To do so, the dragonborn must see the attacker and be wielding a melee weapon."
+					]
+				}
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Dray Defiler",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"dragonborn",
+					"dray"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "with mage armor",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "18d8 + 72",
+				"average": 142
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30,
+				"canHover": false
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 16,
+			"int": 14,
+			"wis": 15,
+			"cha": 20,
+			"passive": 12,
+			"cr": "13",
+			"fluff": {
+				"entries": [
+					"Athasian dragonborn descend from humanoids",
+					"transformed during the reign of an ancient sorcerer-king. They call themselves dray, the name bestowed on them by their creator.",
+					"Lore",
+					"The dragonborn were born from the mad genius of the sorcerer-king Dregoth, ruler of the former city-state of GiustenaL He created the race to serve him but deemed the result imperfect, so the capricious sorcerer cast the dray out into the sands ofAthas in scorn. A few were allowed to stay in Giustenal, but when the other sorcerer-kings banded together to slay Dregoth, those dray that remained either were killed or barely escaped.",
+					"Dragonborn are now extremely rare and band together in small tribes for survival. All that most know of their origin is that their creator tossed them aside, and none are aware that Dregoth persists in a state of undeath.",
+					"Among the few people who know of their existence, dragonborn have a reputation as slavers and sorcerers. Though not true ofall their kind, this reputation is well deserved. Many dray use the cruelty of their origin as a justification for slavery-they once belonged to Dregoth, and now they take slaves of their own. Others follow the path of the defiler, caring little for the preservation ofAthas in the pursuit ofever more power.",
+					"Encounters",
+					"Hostile dragonborn are slavers and mercenaries. They can be found alongside anyone who pays them enough. Dragonborn respect the strong, and their bands might include other tough humanoids and dangerous beasts."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/GUNBf8R.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/uON4A0Y.png",
+			"environment": [
+				"desert",
+				"underdark"
+			],
+			"isNpc": true,
+			"shortName": "Dray Defiler",
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"These dragonborn are notorious sorcerers. They remember their race's ancient glory, when dray could walk the streets displaying arcane power openly and dare anyone to challenge them. Power is what they desire above all, and defiling offers a quicker path to that power. A dragonborn defiler rules through fear and raw arcane might, expecting lackeys to put themselves between it and its enemies. It readily includes allies within the area of defiling breath to extend the duration of its attack and damage bonuses. Although its powers can benefit its followers, the defiler uses them only when it stands to gain."
+					]
+				},
+				{
+					"name": "Defiling",
+					"entries": [
+						"When the dragonborn stands in an area with living plants, he can drain their energy to power his spells, treating them as if cast with a spell slot one level higher than he actually spends. The dragonborn can also cause each creature within 5ft of to make a Constitution saving throw {@dc 18} or take {@damage 1d6} necrotic damage. If he does do, and at least one creature is damaged by this feature, he has advantage on the attack roll of the spell, if it requires one, or else targets of the spell he is casting have disadvantage on their saving throw. When he uses this feature, all plant life within 5ft of him turns black and withers, he cannot use this feature in an area that has been defiled already."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The dragonborn has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"languages": [
+				"Common",
+				"Draconic",
+				"Auran",
+				"Deep Speech",
+				"Ignan",
+				"Undercommon",
+				"Igne"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"AU",
+				"DS",
+				"IG",
+				"U"
+			],
+			"resist": [
+				{
+					"resist": [
+						"fire",
+						"lightning"
+					]
+				},
+				{
+					"resist": [],
+					"preNote": "damage from spells"
+				},
+				{
+					"resist": [],
+					"preNote": "nonmagical bludgeoning"
+				},
+				{
+					"resist": [
+						"piercing",
+						"slashing"
+					],
+					"note": "(from stoneskin)"
+				}
+			],
+			"damageTags": [
+				"B",
+				"F"
+			],
+			"save": {
+				"con": "+8",
+				"cha": "+10"
+			},
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"skill": {
+				"arcana": "+7",
+				"history": "+7"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The dragonborn is an 18th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 17}, +9 to hit with spell attacks). The dragonborn has the following wizard spells prepared.",
+						"Spellcasting Ability=CHA",
+						"Global Magic Attack Modifier=9",
+						"Magic Caster Level=18",
+						"Spell Save DC Mod=17"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell blade ward}",
+								"{@spell dancing lights}",
+								"{@spell mage hand}",
+								"{@spell minor illusion}",
+								"{@spell poison spray}",
+								"{@spell ray of frost}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell detect magic}",
+								"{@spell mage armor}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell darkness}",
+								"{@spell scorching ray}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell lightning bolt}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell confusion}",
+								"{@spell stoneskin}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell telekinesis}",
+								"{@spell wall of stone}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell chain lightning}",
+								"{@spell globe of invulnerability}"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"{@spell reverse gravity}"
+							],
+							"slots": 1
+						},
+						"8": {
+							"spells": [
+								"{@spell Abi-Dalzim's horrid wilting|XGE}"
+							],
+							"slots": 1
+						},
+						"9": {
+							"spells": [
+								"{@spell gate}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"action": [
+				{
+					"name": "Staff",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) bludgeoning damage, or 7 ({@damage 1d8 + 3}) bludgeoning damage if used with both hands."
+					]
+				},
+				{
+					"name": "Breath Weapon (1/Day)",
+					"entries": [
+						"the dragonborn exhale a 5 by 30ft line of lightning, every creatures in the area must make a {@dc 18} Dexterity saving throw, taking 15 ({@damage 5d6}) fire damage on a failed one, and half damage on a successful one."
+					]
+				},
+				{
+					"name": "Blood Magic",
+					"entries": [
+						"The dragonborn may use this power to force each creature in a 5ft radius to make a {@dc 18} Constitution saving throw, taking {@damage 1d6} necrotic damage in case of failure. The dragonborn regains {@dice 2d8} hit points, plus {@dice 1d6} hit points for each creature that failed the Constitution saving throw."
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Each creature of the dragonborn's choice that is within 60 feet of the dragonborn and aware of it must succeed on a {@dc 18} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragonborn's Frightful Presence for the next 24 hours."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"actionTags": [
+				"Frightful Presence"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Dray Atavist",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"dragonborn",
+					"dray"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d8 + 90",
+				"average": 206
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 16,
+			"con": 20,
+			"int": 10,
+			"wis": 12,
+			"cha": 11,
+			"passive": 16,
+			"cr": "10",
+			"fluff": {
+				"entries": [
+					"Athasian dragonborn descend from humanoids",
+					"transformed during the reign of an ancient sorcerer-king. They call themselves dray, the name bestowed on them by their creator.",
+					"Lore",
+					"The dragonborn were born from the mad genius of the sorcerer-king Dregoth, ruler of the former city-state of GiustenaL He created the race to serve him but deemed the result imperfect, so the capricious sorcerer cast the dray out into the sands ofAthas in scorn. A few were allowed to stay in Giustenal, but when the other sorcerer-kings banded together to slay Dregoth, those dray that remained either were killed or barely escaped.",
+					"Dragonborn are now extremely rare and band together in small tribes for survival. All that most know of their origin is that their creator tossed them aside, and none are aware that Dregoth persists in a state of undeath.",
+					"Among the few people who know of their existence, dragonborn have a reputation as slavers and sorcerers. Though not true ofall their kind, this reputation is well deserved. Many dray use the cruelty of their origin as a justification for slavery-they once belonged to Dregoth, and now they take slaves of their own. Others follow the path of the defiler, caring little for the preservation ofAthas in the pursuit ofever more power.",
+					"Encounters",
+					"Hostile dragonborn are slavers and mercenaries. They can be found alongside anyone who pays them enough. Dragonborn respect the strong, and their bands might include other tough humanoids and dangerous beasts."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/EEnpCdu.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/74koBY8.png",
+			"environment": [
+				"desert",
+				"underdark"
+			],
+			"isNpc": true,
+			"shortName": "Dray Atavist",
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"A dragonborn atavist revels in the bestial nature of its dragon heritage, developing brutal combat power through ritual and devotion to its inner beast. A dragon born atavist plunges boldly into the midst of its foes. Then it rips into adversaries with tooth and claw, emulating the fury of the dragon it reveres."
+					]
+				},
+				{
+					"name": "Blood Frenzy",
+					"entries": [
+						"The dragonborn has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+					]
+				},
+				{
+					"name": "Brute",
+					"entries": [
+						"A melee weapon deals one extra die of its damage when the dragonborn hits with it (included in the attack)."
+					]
+				},
+				{
+					"name": "Rampage",
+					"entries": [
+						"When the dragonborn reduces a creature to 0 hit points with a melee attack on its turn, the dragonborn can take a bonus action to move up to half its speed and make a bite attack."
+					]
+				}
+			],
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"resist": [
+				{
+					"resist": [
+						"acid",
+						"bludgeoning",
+						"fire",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapon"
+				}
+			],
+			"damageTags": [
+				"P",
+				"A",
+				"S"
+			],
+			"traitTags": [
+				"Brute",
+				"Rampage"
+			],
+			"skill": {
+				"arcana": "+10",
+				"insight": "+6",
+				"perception": "+6",
+				"stealth": "+8"
+			},
+			"save": {
+				"str": "+9",
+				"dex": "+8",
+				"con": "+9"
+			},
+			"senses": [
+				"blindsight 10 ft.",
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dragonborn makes three melee attacks, two claw attacks and one bite."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d10 + 5}) piercing damage, plus 6 ({@damage 2d6}) acid damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Acid Breath {@recharge 5}",
+					"entries": [
+						"The dragon exhales acid in a 15-foot line that is 5 feet wide. Each creature in that line must make a {@dc 16} Dexterity saving throw, taking 22 ({@damage 5d8}) acid damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Each creature of the dragonborn's choice that is within 60 feet of the dragonborn and aware of it must succeed on a {@dc 16} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragonborn's Frightful Presence for the next 24 hours."
+					]
+				}
+			],
+			"actionTags": [
+				"Frightful Presence",
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"conditionInflict": [
+				"frightened"
+			]
 		}
+
 	]
 }
