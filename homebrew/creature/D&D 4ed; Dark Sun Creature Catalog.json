@@ -9973,6 +9973,274 @@
 				"RCH",
 				"RW"
 			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Dune Reaper Shriek",
+			"size": "M",
+			"type": "aberration",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d8 + 52",
+				"average": 106
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 16,
+			"con": 18,
+			"int": 3,
+			"wis": 13,
+			"cha": 8,
+			"passive": 14,
+			"cr": "6",
+			"shortName": "Dune Reaper Shriek",
+			"isNpc": true,
+			"environment": [
+				"desert",
+				"mountain",
+				"underdark"
+			],
+			"fluff": {
+				"entries": [
+					"A chorus of wailing howls",
+					"and shrieks and a sickly sweet odor on the night breeze warn a traveler that a dune reaper pack is on the hunt nearby. By the time luminescent eyes gleam like floating lanterns against the darkened dunes, escape is no longer possible.",
+					"Lore",
+					"These territorial predators came into existence through defiling magic. Dune reapers consume everything they find: They devour humanoids and beasts, graze on plants, and even chew through wagons and buildings. They sometimes eat stones to aid digestion of tougher materials. Reapers that go too long without food resort to cannibalism. Familial groups called prides break into packs to hunt the wastes. A pride makes its home near a water source, forming a hive that becomes the center of the pride's territory. Hives are mounds of sand, earth, and rock sealed together with secretions from the drones. Within the mounds are tunnels and chambers, which might be connected to existing underground spaces or structures, especially those containing sources of water. Humanoids can exist close to a hive only if the reapers have another plentiful source of food.",
+					"Dune reaper warriors are always female and rule over the smaller drones and shrieks, all of which are male. Each warrior forms a hunting pack with multiple drones and shrieks as mates; the other reapers can become erratic if she is slain. A warrior's mates closely match her in power, ensuring that only the strongest reapers reproduce. The dominant female in the pride, known as the matron, makes all decisions, guides the pride to new territory, and directs followers in creating the hive. A matron can be unseated only by another female that defeats her in a duel to the death.",
+					"Dune reapers are extremely dangerous during their annual mating season, when they hunt for prey to feed growing young. The pack's matron lays eggs in the bodies of living creatures. When the eggs hatch, the young reapers devour the helpless captives. The stronger hatchlings then set upon their brood mates, killing and eating the weak ones. Young reapers that survive are driven from the hive after about two months and must either join another pride or form a new one. These juveniles are as deadly as adults.",
+					"Encounters",
+					"Dune reapers hunt in packs, which can number from five to more than a dozen. A patient and calculating hunter, a dune reaper warrior learns the travel patterns of prey and can hold its pack for days in a hidden position.",
+					"A dune reaper is extremely aggressive in isolation from its pride or pack, making it hard to tame. Nevertheless, Athasians value the beasts as arena combatants and as sources of leather, armor plates, and bone blades. Rarely, a clutch of reaper young imprints on humanoids present at the hatching."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/WA7k3hA.png"
+						}
+					}
+				]
+			},
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"A dune reaper pride includes specialized drones with the ability to leap through time and space. Each time such a reaper does so, it utters a terrifying cry-hence its name. Shrieks have the added advantage of being able to teleport into and out of melee. When a shriek arrives after a shrieking warp, it often chooses to push away all but one enemy that it hits, focusing subsequent attacks on the creature it did not push."
+					]
+				},
+				{
+					"name": "Forceful Silence",
+					"entries": [
+						"When the dune reaper takes force damage, it cannot use shrieking warp until the end of its next turn."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/dd9HOdu.png",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"skill": {
+				"stealth": "+6",
+				"perception": "+4"
+			},
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dune reaper makes two melee attacks with its arm blade."
+					]
+				},
+				{
+					"name": "Arm Blade",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d8 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Shrieking Warp",
+					"entries": [
+						"The shriek uses a psionic ability identical to the Blink spell. In addition when the shriek reappears every creatures in a 10ft radius around the shriek must make a DC15 Constitution saving throw, taking 16 ({@damage 4d8}) thunder damage and being {@condition deafened} for one minute on a failed one, and half as much damage on a successful one. A creature succeeding its saving throw is not {@condition deafened}."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"T"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"deafened"
+			],
+			"reaction": [
+				{
+					"name": "Leap",
+					"entries": [
+						"The shriek can leap through the battlefield with ease, it can use the Dash action as a reaction during its turn. This extra movement does not cause opportunity attacks."
+					]
+				}
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Dune Reaper Matriarch",
+			"size": "L",
+			"type": "aberration",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d10 + 96",
+				"average": 196
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 14,
+			"con": 22,
+			"int": 3,
+			"wis": 18,
+			"cha": 14,
+			"passive": 18,
+			"cr": "11",
+			"shortName": "Dune Reaper Matriarch",
+			"isNpc": true,
+			"environment": [
+				"desert",
+				"mountain",
+				"underdark"
+			],
+			"fluff": {
+				"entries": [
+					"A chorus of wailing howls",
+					"and shrieks and a sickly sweet odor on the night breeze warn a traveler that a dune reaper pack is on the hunt nearby. By the time luminescent eyes gleam like floating lanterns against the darkened dunes, escape is no longer possible.",
+					"Lore",
+					"These territorial predators came into existence through defiling magic. Dune reapers consume everything they find: They devour humanoids and beasts, graze on plants, and even chew through wagons and buildings. They sometimes eat stones to aid digestion of tougher materials. Reapers that go too long without food resort to cannibalism. Familial groups called prides break into packs to hunt the wastes. A pride makes its home near a water source, forming a hive that becomes the center of the pride's territory. Hives are mounds of sand, earth, and rock sealed together with secretions from the drones. Within the mounds are tunnels and chambers, which might be connected to existing underground spaces or structures, especially those containing sources of water. Humanoids can exist close to a hive only if the reapers have another plentiful source of food.",
+					"Dune reaper warriors are always female and rule over the smaller drones and shrieks, all of which are male. Each warrior forms a hunting pack with multiple drones and shrieks as mates; the other reapers can become erratic if she is slain. A warrior's mates closely match her in power, ensuring that only the strongest reapers reproduce. The dominant female in the pride, known as the matron, makes all decisions, guides the pride to new territory, and directs followers in creating the hive. A matron can be unseated only by another female that defeats her in a duel to the death.",
+					"Dune reapers are extremely dangerous during their annual mating season, when they hunt for prey to feed growing young. The pack's matron lays eggs in the bodies of living creatures. When the eggs hatch, the young reapers devour the helpless captives. The stronger hatchlings then set upon their brood mates, killing and eating the weak ones. Young reapers that survive are driven from the hive after about two months and must either join another pride or form a new one. These juveniles are as deadly as adults.",
+					"Encounters",
+					"Dune reapers hunt in packs, which can number from five to more than a dozen. A patient and calculating hunter, a dune reaper warrior learns the travel patterns of prey and can hold its pack for days in a hidden position.",
+					"A dune reaper is extremely aggressive in isolation from its pride or pack, making it hard to tame. Nevertheless, Athasians value the beasts as arena combatants and as sources of leather, armor plates, and bone blades. Rarely, a clutch of reaper young imprints on humanoids present at the hatching."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/7NASXMh.png"
+						}
+					}
+				]
+			},
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Dune reaper matriarch leads the hunting packs. These hulking terrors brandish huge arm blades and snap at their prey with powerful mandibles. When a matriarch detects a prey, it springs forward with its allies to make a quick kill. Its pheromones and tactical leadership make other pack members more dangerous in battle. When a battle goes badly, the matriarch retreats for reinforcements and leaves the shrieks to sacrifice themselves to hinder pursuit."
+					]
+				},
+				{
+					"name": "Forceful Silence",
+					"entries": [
+						"When the dune reaper takes force damage, it cannot use psychic echo until the end of its next turn."
+					]
+				},
+				{
+					"name": "Inciting Pheromones",
+					"entries": [
+						"Dune reapers in a 30ft radius surrounding the matriarch gain advantage on their attack rolls. Additionally the dune reapers gain a resistance to psychic damage."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/4FxM8Sf.png",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"skill": {
+				"stealth": "+6",
+				"perception": "+8"
+			},
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The matriarch makes three melee attacks, two with its arm blades and one with its mandible."
+					]
+				},
+				{
+					"name": "Arm Blade",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}20 ({@damage 3d10 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Mandible",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 5}) piercing damage. If the target is Medium or smaller, it is {@condition grappled} (escape {@dc 17}). Until this grapple ends, the target is {@condition restrained}."
+					]
+				},
+				{
+					"name": "Psychic Echo {@recharge 5}",
+					"entries": [
+						"The matriarch scream and the psychic echo rip the mind of every creatures in a 30ft radius around the matriarch, forcing them to make a DC17 Constitution saving throw, taking 20 ({@damage 5d8}) thunder damage plus 20 ({@damage 5d8}) psychic damage and being {@condition stunned} until the end of the matriarch next turn on a failed save. Succeeding on the saving throw reduce the damage taken by half and cancel the stunning effect."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"T",
+				"Y"
+			],
+			"reaction": [
+				{
+					"name": "Leap",
+					"entries": [
+						"The matriarch can leap through the battlefield with ease, it can use the Dash action as a reaction during its turn. This extra movement does not cause opportunity attacks."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"restrained",
+				"grappled"
+			]
 		}
 
 	]
