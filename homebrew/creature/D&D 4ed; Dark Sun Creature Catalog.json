@@ -10241,7 +10241,154 @@
 				"restrained",
 				"grappled"
 			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Dune Stalker",
+			"size": "L",
+			"type": "elemental",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d10 + 39",
+				"average": 131
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 16,
+			"int": 13,
+			"wis": 15,
+			"cha": 11,
+			"passive": 16,
+			"cr": "9",
+			"fluff": {
+				"entries": [
+					"Dune stalkers are creatures native to the Elemental Plane of Earth",
+					"though they are also frequently found on the Gray Waste of Hades. These monsters revel in evil and take their only joy from spreading its blight. They despise the Material Plane and avoid it as much as possible. Even so, they are sometimes summoned there by evil characters to kill targets or carry out other quests.",
+					"Lore",
+					"A dune stalker appears humanoid. It stands approximately 7 feet tall, but it would be taller if stretched out or forced to stand erect. Its head is triangular, and the neck attaches near the top of the head, causing its leering, toothy face and pointed chin to hang below its shoulders. The dune stalker’s gangly body is hairless, and its red, dusty, abrasive skin has no pores. The combination of short legs, long arms, and stooped posture causes its hands to drag on the ground. Its fingers and toes (four on each limb) are long and bony. The creature has massive shoulders and an enormous chest, which tapers to a narrow waist and hips. A dune stalker that has been assigned a mission by its summoner pursues the literal fulfillment of its instructions to the exclusion of all else. It resents its time on the Material Plane and wants to make its stay there as short as possible. Occasionally, a summoner’s instructions are phrased in such a way that the dune stalker cannot actually carry them out. In this case, it is trapped on the Material Plane, where it takes out its frustration by killing all creatures it finds. Despite their sonic abilities, dune stalkers do not speak, though they understand Common and Terran.",
+					"Encounters",
+					"A dune stalker’s preferred tactic is to hide in a rocky area and attack from ambush. When possible, it tries to gain higher ground on its opponents by climbing up on a rock or a structure to conceal itself. It often begins an assault by using its shout ability to disorient a group of opponents, then leaping into combat to deliver its kiss of death. Against foes within its reach, a dune stalker usually prefers to deliver a kiss of death against just one target rather than a shout against the whole group. The preferred target is the one it seeks to slay, or the one that presents the greatest danger, or the one that appears to have the strongest good alignment. (Given the dune stalker’s demented psychology, this last could be just about anyone, but paladins usually stand out.)"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/uFl23dP.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"desert",
+				"hill",
+				"mountain",
+				"underwater"
+			],
+			"shortName": "Dune Stalker",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Terran"
+			],
+			"languageTags": [
+				"C",
+				"T"
+			],
+			"skill": {
+				"perception": "+6",
+				"stealth": "+8",
+				"survival": "+10"
+			},
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The dune stalker has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Relentless Tracker",
+					"entries": [
+						"The dune stalker has advantages on Wisdom (Survival) checks to track creatures."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dune stalker makes two melee attacks with its claws."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d8 + 4}) slashing damage. If the target is Medium or smaller, it is {@condition grappled} (escape {@dc 16}). Until this grapple ends, the target is {@condition restrained}."
+					]
+				},
+				{
+					"name": "Shout {@recharge 5}",
+					"entries": [
+						"The dune stalker screams in a 30ft cone and every creatures in the area must make a DC16 Constitution saving throw, taking 28 ({@damage 7d8}) thunder damage on a failed save or half as much on a successful one. A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw. A nonmagical object that isn’t being worn or carried also takes the damage if it’s in the spell's area."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S",
+				"T"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"restrained",
+				"grappled"
+			],
+			"reaction": [
+				{
+					"name": "Kiss of Death",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5ft., one {@condition restrained} humanoid {@condition grappled} by the dune stalker. {@h}The target takes 55 ({@damage 10d10}) thunder damage. If this damage reduces the target to 0 hit points, the dune stalker kills the target by setting up lethal vibration in the body, resulting in instant death."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/N85XW3a.png"
 		}
-
 	]
 }
