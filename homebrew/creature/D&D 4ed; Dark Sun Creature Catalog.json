@@ -9609,6 +9609,370 @@
 			"conditionInflict": [
 				"frightened"
 			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Dune Locust Hunter",
+			"size": "M",
+			"type": "monstrosity",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 30",
+				"average": 76
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 40,
+				"canHover": false
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 16,
+			"int": 3,
+			"wis": 15,
+			"cha": 6,
+			"passive": 14,
+			"cr": "3",
+			"fluff": {
+				"entries": [
+					"The Sky Darkens",
+					"as the loud buzzing becomes unbearable. The sand locust are the plague of the wasteland, razing entire community on their passage. A swarm of dune locust is driven by an insatiable hunger, endlessly flying the wastes, always looking for a new source of food.",
+					"Lore",
+					"Locusts have formed plagues since the beginning of the desert age. The city of Raam have them carved on their tombs and the insects are mentioned in several parchments from the Red age as well. Swarms have devastated crops and been a contributory cause of famines and human migrations. More recently, city states have changed special group of mercenaries and Templars to hunt nests of the beast, in order to protect their agriculture. Locations where swarms tend to originate are tracked down by groups of adventurers, very few survive that trial, but the ones who do make it back are paid generously for their effort.",
+					"In Athasian superstition locust play the role of harbinger of change, chaos and doom. The sighting of a plague is one of the worst omen that can possibly exist and folks rush to buy protective charms and ask for elemental priest blessing against the times to come.",
+					"Locust do not necessarily move in swarm and isolated individuals can be encountered frequently, but swarming behavior has increased in the last century, when suitable climatic conditions occur and vigilance lapses, plagues occur. Locust build mounds, where they lay eggs and wait for them to sprout. During that time the swarm increase its hunting, capturing beasts and humanoid to feed them to the young starving locust. Swarm nests in area difficult to reach, usually on dangerous to climb cliffs, hidden valley or high plateau.",
+					"The swarm have a hierarchy, focused on the need for reproduction, Dune Locust Hunter are the more common, feeding on everything they can and sometime scouting for food source for the rest of the swarm. Sandhorrors are the warrior cast of the Dune Locust, they live exclusively to mate with the Queen Locust and protect the swarm against treats. The Queen Locust is the only type of locust incapable of flying, and as such is much more vulnerable than the rest of her species. A Queen sole purpose is to create mounds and lay eggs, waiting the hunters to come back and feed her. When the time is right the Queen emits a powerful psychic wave to signal the beginning of a plague, this wave can be felt miles around by other psychic creatures, which usually leave the surrounding region as fast as the possibly can.",
+					"Encounters",
+					"The region of Raam is particularly famous for the dangerous nest that abound around, making contracts on hive a lucrative job for mercenaries. Outside the time of plague, lone locust can easily be encountered. Small group of them are common as well, ranging from five to fifteen individuals. When the time of a plague has come hundreds of them can be seen, darkening the sky in the distance, leaving only bone picked clean and devastated areas in their wake."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/hMiIxhW.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/C3IM0QM.png",
+			"environment": [
+				"desert",
+				"swamp"
+			],
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"The common Dune Locust are the Dune Locust Hunters, scouting the wastelands for food. They are extremely aggressive and will attack any creature they can best, leaving the dangerous predators alone. In groups, they hunt bigger preys and nothing is safe from their hunger. All Dune Locust are poisonous, they prefer to attack directly, rushing from the sky and dismembering their prey with their mandibles but are not above waiting for their poison to take effect on a strong prey, lurking out of reach until their prey is weaken enough."
+					]
+				},
+				{
+					"name": "Mind of the swarm",
+					"entries": [
+						"Dune Locust are united by a psychic link, connecting them constantly to the swarm. As long as a locust is within 3 miles of another one, it gets advantage on saving throws against being {@condition charmed} or {@condition frightened}. Other locust can use this connection to find a member of their swarm or communicate basic information, such as “food”, “danger” or “attack”."
+					]
+				}
+			],
+			"isNpc": true,
+			"shortName": "Dune Locust Hunter",
+			"skill": {
+				"perception": "+4"
+			},
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"psychic"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dune locust makes two melee attacks, one with its mandible and one with its stinger."
+					]
+				},
+				{
+					"name": "Mandible",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Stinger",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage and the target must succeed on a {@dc 13} Constitution saving throw or be {@condition poisoned} for 1 minute. While {@condition poisoned} the target takes {@damage 1d6} poison damage at the beginning of each of its turn. The target can repeat the saving throw at the end of each of its turns, ending the poison on itself on a success."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"poisoned"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Dune Locust Sandhorrors",
+			"size": "L",
+			"type": "monstrosity",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d10 + 60",
+				"average": 140
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30,
+				"canHover": false
+			},
+			"str": 20,
+			"dex": 10,
+			"con": 18,
+			"int": 3,
+			"wis": 15,
+			"cha": 6,
+			"passive": 15,
+			"cr": "7",
+			"fluff": {
+				"entries": [
+					"The Sky Darkens",
+					"as the loud buzzing becomes unbearable. The sand locust are the plague of the wasteland, razing entire community on their passage. A swarm of dune locust is driven by an insatiable hunger, endlessly flying the wastes, always looking for a new source of food.",
+					"Lore",
+					"Locusts have formed plagues since the beginning of the desert age. The city of Raam have them carved on their tombs and the insects are mentioned in several parchments from the Red age as well. Swarms have devastated crops and been a contributory cause of famines and human migrations. More recently, city states have changed special group of mercenaries and Templars to hunt nests of the beast, in order to protect their agriculture. Locations where swarms tend to originate are tracked down by groups of adventurers, very few survive that trial, but the ones who do make it back are paid generously for their effort.",
+					"In Athasian superstition locust play the role of harbinger of change, chaos and doom. The sighting of a plague is one of the worst omen that can possibly exist and folks rush to buy protective charms and ask for elemental priest blessing against the times to come.",
+					"Locust do not necessarily move in swarm and isolated individuals can be encountered frequently, but swarming behavior has increased in the last century, when suitable climatic conditions occur and vigilance lapses, plagues occur. Locust build mounds, where they lay eggs and wait for them to sprout. During that time the swarm increase its hunting, capturing beasts and humanoid to feed them to the young starving locust. Swarm nests in area difficult to reach, usually on dangerous to climb cliffs, hidden valley or high plateau.",
+					"The swarm have a hierarchy, focused on the need for reproduction, Dune Locust Hunter are the more common, feeding on everything they can and sometime scouting for food source for the rest of the swarm. Sandhorrors are the warrior cast of the Dune Locust, they live exclusively to mate with the Queen Locust and protect the swarm against treats. The Queen Locust is the only type of locust incapable of flying, and as such is much more vulnerable than the rest of her species. A Queen sole purpose is to create mounds and lay eggs, waiting the hunters to come back and feed her. When the time is right the Queen emits a powerful psychic wave to signal the beginning of a plague, this wave can be felt miles around by other psychic creatures, which usually leave the surrounding region as fast as the possibly can.",
+					"Encounters",
+					"The region of Raam is particularly famous for the dangerous nest that abound around, making contracts on hive a lucrative job for mercenaries. Outside the time of plague, lone locust can easily be encountered. Small group of them are common as well, ranging from five to fifteen individuals. When the time of a plague has come hundreds of them can be seen, darkening the sky in the distance, leaving only bone picked clean and devastated areas in their wake."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/9ird7tp.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/tek4Yim.png",
+			"environment": [
+				"desert",
+				"swamp"
+			],
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Sandhorrors are far bigger and nastier than they lesser counterpart. They have bright colors, usually vivid yellow, blue or red, depending on the species. Sandhorrors are seldom encountered in the wilderness for no reason, they usually come to the rescue of hunters in difficulty or near the nest of a hive, defending their territory. As other dune locust they are extremely aggressive and will even attack bigger predators without hesitation. Just as Hunters, Sandhorrors prefer direct attacks, falling on their prey and tearing them apart before moving to the next one. Their poison is usually strong enough to kill instantly most preys."
+					]
+				},
+				{
+					"name": "Mind of the swarm",
+					"entries": [
+						"Dune Locust are united by a psychic link, connecting them constantly to the swarm. As long as a locust is within 3 miles of another one, it gets advantage on saving throws against being {@condition charmed} or {@condition frightened}. Other locust can use this connection to find a member of their swarm or communicate basic information, such as “food”, “danger” or “attack”."
+					]
+				}
+			],
+			"isNpc": true,
+			"shortName": "Dune Locust Sandhorrors",
+			"skill": {
+				"perception": "+5"
+			},
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"psychic"
+			],
+			"damageTags": [
+				"P",
+				"I"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dune locust makes two melee attacks, one with its mandible and one with its stinger."
+					]
+				},
+				{
+					"name": "Mandible",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d10 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Stinger",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d10 + 5}) piercing damage and the target must succeed on a {@dc 15} constitution saving throw, taking 18 ({@damage 6d6}) poison damage on a failed save, or half as much damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Spit",
+					"entries": [
+						"{@atk rw} {@hit 3} to hit, range 0/60 ft., one target. {@h} the target must succeed on a {@dc 15} Constitution saving throw, taking 18 ({@damage 6d6}) poison damage on a failed save, or half as much damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Dune Locust Queen",
+			"size": "H",
+			"type": "monstrosity",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d12 + 120",
+				"average": 240
+			},
+			"speed": {
+				"walk": 15
+			},
+			"str": 20,
+			"dex": 6,
+			"con": 22,
+			"int": 4,
+			"wis": 20,
+			"cha": 6,
+			"passive": 19,
+			"cr": "12",
+			"fluff": {
+				"entries": [
+					"The Sky Darkens",
+					"as the loud buzzing becomes unbearable. The sand locust are the plague of the wasteland, razing entire community on their passage. A swarm of dune locust is driven by an insatiable hunger, endlessly flying the wastes, always looking for a new source of food.",
+					"Lore",
+					"Locusts have formed plagues since the beginning of the desert age. The city of Raam have them carved on their tombs and the insects are mentioned in several parchments from the Red age as well. Swarms have devastated crops and been a contributory cause of famines and human migrations. More recently, city states have changed special group of mercenaries and Templars to hunt nests of the beast, in order to protect their agriculture. Locations where swarms tend to originate are tracked down by groups of adventurers, very few survive that trial, but the ones who do make it back are paid generously for their effort.",
+					"In Athasian superstition locust play the role of harbinger of change, chaos and doom. The sighting of a plague is one of the worst omen that can possibly exist and folks rush to buy protective charms and ask for elemental priest blessing against the times to come.",
+					"Locust do not necessarily move in swarm and isolated individuals can be encountered frequently, but swarming behavior has increased in the last century, when suitable climatic conditions occur and vigilance lapses, plagues occur. Locust build mounds, where they lay eggs and wait for them to sprout. During that time the swarm increase its hunting, capturing beasts and humanoid to feed them to the young starving locust. Swarm nests in area difficult to reach, usually on dangerous to climb cliffs, hidden valley or high plateau.",
+					"The swarm have a hierarchy, focused on the need for reproduction, Dune Locust Hunter are the more common, feeding on everything they can and sometime scouting for food source for the rest of the swarm. Sandhorrors are the warrior cast of the Dune Locust, they live exclusively to mate with the Queen Locust and protect the swarm against treats. The Queen Locust is the only type of locust incapable of flying, and as such is much more vulnerable than the rest of her species. A Queen sole purpose is to create mounds and lay eggs, waiting the hunters to come back and feed her. When the time is right the Queen emits a powerful psychic wave to signal the beginning of a plague, this wave can be felt miles around by other psychic creatures, which usually leave the surrounding region as fast as the possibly can.",
+					"Encounters",
+					"The region of Raam is particularly famous for the dangerous nest that abound around, making contracts on hive a lucrative job for mercenaries. Outside the time of plague, lone locust can easily be encountered. Small group of them are common as well, ranging from five to fifteen individuals. When the time of a plague has come hundreds of them can be seen, darkening the sky in the distance, leaving only bone picked clean and devastated areas in their wake."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/R1gquCL.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/OyiKUPC.png",
+			"environment": [
+				"desert",
+				"swamp"
+			],
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Queen Locust are the heart of a swarm, the other cast of locust revolving around her needs: the hunters working to satiable her gluttonous appetite and the sandhorrors protecting her monstrous body. Few swarm have more than on queen among them, but the birth of one is always celebrated by the hive with a chorus of psychic excitement that rushes through the land. If threatened a Queen is perfectly capable to defend herself by her voluminous body prevents her to flee. A Queen body resembles the one of a giant larva with plates of chitin covering it. Its head is similar to a classic dune locust, with a gigantic double pair of mandible. It moves on small legs that looks barely solid enough to carry her massive abdomen while a malformed pair of wings sprout from her back, too weak to allow her to fly."
+					]
+				},
+				{
+					"name": "Heart of the Hive",
+					"entries": [
+						"The Queen is the most important member of the locust hive and other members will go to great length to defend it. Locust in a 30ft radius of the Queen have advantage on attack rolls and saving throws. Additionally the Queen can transmit telepathic orders to any locust in a 30 mile radius."
+					]
+				},
+				{
+					"name": "Psychic Might",
+					"entries": [
+						"The Queen Locust is the psychic center of the hive and as such its mere presence can crush the mind of lesser creatures. A creature (other than locust) starting their turn in a 20ft radius of the Queen Locust takes 10 ({@damage 2d10}) psychic damage and must make a {@dc 17} Wisdom saving throw or being {@condition stunned} until the end of its next turn."
+					]
+				}
+			],
+			"isNpc": true,
+			"shortName": "Dune Locust Queen",
+			"skill": {
+				"perception": "+9"
+			},
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"psychic"
+			],
+			"damageTags": [
+				"P",
+				"I",
+				"Y"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"prone",
+				"stunned"
+			],
+			"conditionInflict": [
+				"stunned"
+			],
+			"action": [
+				{
+					"name": "Mandibles",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}35 ({@damage 6d10 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Spit",
+					"entries": [
+						"{@atk rw} {@hit 2} to hit, range 0/60 ft., one target. {@h} the target must succeed on a {@dc 17} Constitution saving throw, taking 32 ({@damage 8d8}) poison damage on a failed save, or half as much damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			]
 		}
 
 	]
