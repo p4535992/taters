@@ -10981,6 +10981,724 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Eladrin Veiled Warrior",
+			"size": "M",
+			"type": "fey",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d8 + 8",
+				"average": 56
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 14,
+			"dex": 20,
+			"con": 12,
+			"int": 15,
+			"wis": 12,
+			"cha": 15,
+			"passive": 11,
+			"cr": "3",
+			"fluff": {
+				"entries": [
+					"A mysterious, vanishing people",
+					"who now cling to a handful of crumbling palaces in the Lands Within the Wind, eladrin are rare in the cities and villages of Athas. They guard the few remaining passages between the world and their realm, bewitching or slaying travelers who wander too close to their ancient places.",
+					"Lore",
+					"Great eladrin realms once spanned the Lands Within the Wind, but over the centuries the fey otherworld has slowly receded, consumed by the defiling magic that ravaged Athas. As their world died, the fey kingdoms fell into ruin. The eladrin now inhabit a handful of palaces and castles, a small remnant of their former numbers. They guard the hidden doors to their diminished realm with illusions and mazes of psionic enchantment.",
+					"A rare few eladrin, twisted by the slow death of their realm, have become so hate· filled that they sacrifice themselves for the opportunity to hunt those they blame for their home's destruction. These windwalkers allow their essence to slowly bleed into the Lands Within the Wind in exchange for infusion with the energy of that plane. They haunt the trade ways near eladrin lands, slaying every humanoid they can catch unprotected. During their final years of existence, windwalkers fade to ghostlike, semisolid embodiments of murderous hatred.",
+					"Encounters",
+					"Eladrin have little in common with their elf cousins, but both races recognize their old kinship and honor it. Eladrin emissaries might travel with elf tribes for a time to spy on the deserts and cities of Athas. More vicious eladrin, especially windwalkers, occasionally throw in with bandits or other violent humanoids dwelling at the edges of their territory."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/7WKMmlk.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/C2bxNRW.png",
+			"environment": [
+				"desert",
+				"forest",
+				"grassland",
+				"swamp",
+				"urban"
+			],
+			"isNpc": true,
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"They appear from nowhere, stepping from the wavering heat and mirages of the desert. Scouts and hunters, veiled warriors haunt the far reaches of Athas, spying out and defending their lands. A veiled warrior is elusive in combat. It uses veiling dart as it moves in to attack, incapacitating a chosen enemy. It exploits its longspear's reach, moving about quickly while staying with its target."
+					]
+				},
+				{
+					"name": "Speak with Beasts and Plants",
+					"entries": [
+						"The eladrin can communicate with beasts and plans as if they shared a language."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The eladrin has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"shortName": "Eladrin Veiled Warrior",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Elvish",
+				"Sylvan"
+			],
+			"languageTags": [
+				"C",
+				"E",
+				"S"
+			],
+			"save": {
+				"dex": "+7",
+				"wis": "+4",
+				"cha": "+4"
+			},
+			"skill": {
+				"athletics": "+4",
+				"stealth": "+7"
+			},
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Psionics)",
+					"headerEntries": [
+						"The eladrin innate spellcasting ability is Charisma (spell save {@dc 12}). The eladrin can innately cast the following spells, requiring no material components.",
+						"Spellcasting Ability=CHA",
+						"Global Magic Attack Modifier=4",
+						"Magic Caster Level=4",
+						"Spell Save DC Mod=12"
+					],
+					"will": [
+						"{@spell misty step}"
+					],
+					"daily": {
+						"2e": [
+							"{@spell invisibility}",
+							"{@spell phantasmal force}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"P",
+				"I"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The eladrin makes two melee attacks or two range attacks."
+					]
+				},
+				{
+					"name": "Halberd",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d10 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Veiling Dart",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 20/60 ft., one target. {@h}7 ({@damage 1d4 + 5}) piercing damage, plus 4 ({@damage 1d8}) psychic damage and the target must make a {@dc 13} Intelligence saving throw, or become {@condition blinded} until the end of the eladrin next turn."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S",
+				"P",
+				"Y"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"conditionInflict": [
+				"blinded"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Eladrin Mirage Adept",
+			"size": "M",
+			"type": "fey",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d8 + 28",
+				"average": 111
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 14,
+			"int": 15,
+			"wis": 14,
+			"cha": 18,
+			"passive": 11,
+			"cr": "7",
+			"fluff": {
+				"entries": [
+					"A mysterious, vanishing people",
+					"who now cling to a handful of crumbling palaces in the Lands Within the Wind, eladrin are rare in the cities and villages of Athas. They guard the few remaining passages between the world and their realm, bewitching or slaying travelers who wander too close to their ancient places.",
+					"Lore",
+					"Great eladrin realms once spanned the Lands Within the Wind, but over the centuries the fey otherworld has slowly receded, consumed by the defiling magic that ravaged Athas. As their world died, the fey kingdoms fell into ruin. The eladrin now inhabit a handful of palaces and castles, a small remnant of their former numbers. They guard the hidden doors to their diminished realm with illusions and mazes of psionic enchantment.",
+					"A rare few eladrin, twisted by the slow death of their realm, have become so hate· filled that they sacrifice themselves for the opportunity to hunt those they blame for their home's destruction. These windwalkers allow their essence to slowly bleed into the Lands Within the Wind in exchange for infusion with the energy of that plane. They haunt the trade ways near eladrin lands, slaying every humanoid they can catch unprotected. During their final years of existence, windwalkers fade to ghostlike, semisolid embodiments of murderous hatred.",
+					"Encounters",
+					"Eladrin have little in common with their elf cousins, but both races recognize their old kinship and honor it. Eladrin emissaries might travel with elf tribes for a time to spy on the deserts and cities of Athas. More vicious eladrin, especially windwalkers, occasionally throw in with bandits or other violent humanoids dwelling at the edges of their territory."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/7WKMmlk.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/C2bxNRW.png",
+			"environment": [
+				"desert",
+				"forest",
+				"grassland",
+				"swamp",
+				"urban"
+			],
+			"isNpc": true,
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"The wavering mirages and blowing winds open like a curtain, and the mirage adepts step through behind the veiled warriors. Around them, reality ripples and shifts. Mirage adepts are powerful psions who use illusion to hide eladrin ruins and outposts from the sorcerer-kings' spies. They prefer to fight at a distance, retreating to defensible positions behind allies."
+					]
+				},
+				{
+					"name": "Speak with Beasts and Plants",
+					"entries": [
+						"The eladrin can communicate with beasts and plans as if they shared a language."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The eladrin has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"shortName": "Eladrin Mirage Adept",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Elvish",
+				"Sylvan"
+			],
+			"languageTags": [
+				"C",
+				"E",
+				"S"
+			],
+			"save": {
+				"dex": "+7",
+				"wis": "+4",
+				"cha": "+4"
+			},
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The eladrin makes two melee attacks."
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage, plus 6 ({@damage 2d6}) psychic damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S",
+				"Y"
+			],
+			"skill": {
+				"arcana": "+5",
+				"deception": "+7",
+				"insight": "+5"
+			},
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Psionics)",
+					"headerEntries": [
+						"The eladrin innate spellcasting ability is Charisma (spell save {@dc 15}). The eladrin can innately cast the following spells, requiring no material components.",
+						"Spellcasting Ability=CHA",
+						"Global Magic Attack Modifier=7",
+						"Magic Caster Level=7",
+						"Spell Save DC Mod=15"
+					],
+					"will": [
+						"{@spell disguise self}",
+						"{@spell dissonant whispers} (4th level spell)",
+						"{@spell misty step}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell confusion}",
+							"{@spell dispel magic}",
+							"{@spell mirror image}",
+							"{@spell mislead}"
+						],
+						"1e": [
+							"{@spell mirage arcane}",
+							"{@spell prismatic spray}",
+							"{@spell true seeing}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"P",
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"reaction": [
+				{
+					"name": "Illusory Self {@recharge 5}",
+					"entries": [
+						"The eladrin can create an illusory duplicate of himself as an instant, almost instinctual reaction to danger. When a creature makes an attack roll against the eladrin, it can use its reaction to interpose an illusory duplicate between him and the attacker. The attack automatically misses, then the illusion dissipates."
+					]
+				}
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Eladrin Windwalker",
+			"size": "M",
+			"type": "fey",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d8 + 24",
+				"average": 80
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 14,
+			"dex": 20,
+			"con": 14,
+			"int": 13,
+			"wis": 12,
+			"cha": 15,
+			"passive": 14,
+			"cr": "6",
+			"fluff": {
+				"entries": [
+					"A mysterious, vanishing people",
+					"who now cling to a handful of crumbling palaces in the Lands Within the Wind, eladrin are rare in the cities and villages of Athas. They guard the few remaining passages between the world and their realm, bewitching or slaying travelers who wander too close to their ancient places.",
+					"Lore",
+					"Great eladrin realms once spanned the Lands Within the Wind, but over the centuries the fey otherworld has slowly receded, consumed by the defiling magic that ravaged Athas. As their world died, the fey kingdoms fell into ruin. The eladrin now inhabit a handful of palaces and castles, a small remnant of their former numbers. They guard the hidden doors to their diminished realm with illusions and mazes of psionic enchantment.",
+					"A rare few eladrin, twisted by the slow death of their realm, have become so hate· filled that they sacrifice themselves for the opportunity to hunt those they blame for their home's destruction. These windwalkers allow their essence to slowly bleed into the Lands Within the Wind in exchange for infusion with the energy of that plane. They haunt the trade ways near eladrin lands, slaying every humanoid they can catch unprotected. During their final years of existence, windwalkers fade to ghostlike, semisolid embodiments of murderous hatred.",
+					"Encounters",
+					"Eladrin have little in common with their elf cousins, but both races recognize their old kinship and honor it. Eladrin emissaries might travel with elf tribes for a time to spy on the deserts and cities of Athas. More vicious eladrin, especially windwalkers, occasionally throw in with bandits or other violent humanoids dwelling at the edges of their territory."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/tdetnAl.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/XWn6bhG.png",
+			"environment": [
+				"desert",
+				"forest",
+				"grassland",
+				"swamp",
+				"urban"
+			],
+			"isNpc": true,
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"A blur of movement brings flashing sabers, searing pain, and flowing blood. Like ghosts, the windwalkers flicker and vanish into the blinding sun. Windwalkers always fight the same way regardless of allies' actions. Through stealth, invisibility, and constant movement, a windwalker focuses on a single foe-the tougher the better."
+					]
+				},
+				{
+					"name": "Speak with Beasts and Plants",
+					"entries": [
+						"The eladrin can communicate with beasts and plans as if they shared a language."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The eladrin has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Between the Winds",
+					"entries": [
+						"The eladrin can use a bonus action to teleport up to 30ft to an unoccupied space he can see. Additionally when the eladrin teleport or end its turn without attacking it phases away, until it attacks or until the end of its next turn. This effect is similar to the {@spell Etherealness|phb} spell."
+					]
+				}
+			],
+			"shortName": "Eladrin Windwalker",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Elvish",
+				"Sylvan"
+			],
+			"languageTags": [
+				"C",
+				"E",
+				"S"
+			],
+			"save": {
+				"dex": "+8",
+				"wis": "+4",
+				"cha": "+5"
+			},
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The eladrin makes three melee attacks."
+					]
+				},
+				{
+					"name": "Scimitar",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 5}) slashing damage, plus 6 ({@damage 2d6}) psychic damage."
+					]
+				},
+				{
+					"name": "Dance of Blades",
+					"entries": [
+						"The eladrin makes a scimitar attack against any number of creature within 5ft of him, with a separate attack roll for each target."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S",
+				"Y"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Psionics)",
+					"headerEntries": [
+						"The eladrin innate spellcasting ability is Charisma (spell save {@dc 13}). The eladrin can innately cast the following spells, requiring no material components.",
+						"Spellcasting Ability=CHA",
+						"Global Magic Attack Modifier=5",
+						"Magic Caster Level=5",
+						"Spell Save DC Mod=13"
+					],
+					"will": [
+						"{@spell thunderous smite}",
+						"{@spell wrathful smite}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell haste}",
+							"{@spell lightning bolt} (half is psychic damage)"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"P",
+				"I"
+			],
+			"skill": {
+				"athletics": "+5",
+				"perception": "+4",
+				"stealth": "+8"
+			},
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Eladrin White Lady",
+			"size": "M",
+			"type": "fey",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d8 + 24",
+				"average": 80
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 14,
+			"int": 17,
+			"wis": 19,
+			"cha": 22,
+			"passive": 11,
+			"cr": "16",
+			"fluff": {
+				"entries": [
+					"A mysterious, vanishing people",
+					"who now cling to a handful of crumbling palaces in the Lands Within the Wind, eladrin are rare in the cities and villages of Athas. They guard the few remaining passages between the world and their realm, bewitching or slaying travelers who wander too close to their ancient places.",
+					"Lore",
+					"Great eladrin realms once spanned the Lands Within the Wind, but over the centuries the fey otherworld has slowly receded, consumed by the defiling magic that ravaged Athas. As their world died, the fey kingdoms fell into ruin. The eladrin now inhabit a handful of palaces and castles, a small remnant of their former numbers. They guard the hidden doors to their diminished realm with illusions and mazes of psionic enchantment.",
+					"A rare few eladrin, twisted by the slow death of their realm, have become so hate· filled that they sacrifice themselves for the opportunity to hunt those they blame for their home's destruction. These windwalkers allow their essence to slowly bleed into the Lands Within the Wind in exchange for infusion with the energy of that plane. They haunt the trade ways near eladrin lands, slaying every humanoid they can catch unprotected. During their final years of existence, windwalkers fade to ghostlike, semisolid embodiments of murderous hatred.",
+					"Encounters",
+					"Eladrin have little in common with their elf cousins, but both races recognize their old kinship and honor it. Eladrin emissaries might travel with elf tribes for a time to spy on the deserts and cities of Athas. More vicious eladrin, especially windwalkers, occasionally throw in with bandits or other violent humanoids dwelling at the edges of their territory."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/7YNUxj1.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/mPlXiP5.png",
+			"environment": [
+				"desert",
+				"forest",
+				"grassland",
+				"swamp",
+				"urban"
+			],
+			"isNpc": true,
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"These enigmatic and powerful psychic are only female eladrin. They are guiding the eladrin and acting as sage, oracle and spiritual leader in the eladrin’s society. They are rarely seen on the world of Athas and most of them stay in the dying Land Within the Winds but on some occasion some cross the veil and take actions in the wastes. A white lady shape the battlefield with her illusions, changing the world with her sheer will. She supports the eladrin veiled warrior and windwalker from a distance and retreat into Etherealness if her life is threatened."
+					]
+				},
+				{
+					"name": "Speak with Beasts and Plants",
+					"entries": [
+						"The eladrin can communicate with beasts and plans as if they shared a language."
+					]
+				},
+				{
+					"name": "Limited Magic Immunity",
+					"entries": [
+						"the white lady is immune to spells of 6th level or lower unless she wishes to be affected. She has advantages on saving throws against all other spells and magical effects."
+					]
+				},
+				{
+					"name": "Psychic Might",
+					"entries": [
+						"the white lady spells are casted as 6th level spells if she decides so. She can cast the spell at lower levels if she wishes to. Spells of 7th level or higher are not affected by this feature."
+					]
+				}
+			],
+			"shortName": "Eladrin White Lady",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Elvish",
+				"Sylvan"
+			],
+			"languageTags": [
+				"C",
+				"E",
+				"S"
+			],
+			"save": {
+				"dex": "+8",
+				"wis": "+9",
+				"cha": "+11"
+			},
+			"damageTags": [
+				"B",
+				"Y"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Psionics)",
+					"headerEntries": [
+						"The eladrin innate spellcasting ability is Charisma (spell save {@dc 19}). The eladrin can innately cast the following spells, requiring no material components.",
+						"Spellcasting Ability=CHA",
+						"Global Magic Attack Modifier=11",
+						"Magic Caster Level=11",
+						"Spell Save DC Mod=19"
+					],
+					"will": [
+						"{@spell dissonant whispers}",
+						"{@spell misty step}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell conjure fey}",
+							"{@spell counterspell}",
+							"{@spell insect plague}"
+						],
+						"2e": [
+							"{@spell disintegrate}",
+							"{@spell etherealness}",
+							"{@spell mirage arcane}",
+							"{@spell prismatic spray}"
+						],
+						"1e": [
+							"{@spell foresight}",
+							"{@spell prismatic wall}",
+							"{@spell time stop}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"P",
+				"I"
+			],
+			"skill": {
+				"arcana": "+8",
+				"deception": "+11",
+				"insight": "+14",
+				"medicine": "+14",
+				"persuasion": "+11"
+			},
+			"vulnerable": [
+				{
+					"vulnerable": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from magical cold iron weapon"
+				}
+			],
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons"
+				}
+			],
+			"action": [
+				{
+					"name": "Quarterstaff",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 3}) bludgeoning damage, or 9 ({@damage 1d8 + 3}) bludgeoning damage if used with both hands, plus 16 ({@damage 4d8}) psychic damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			]
 		}
 
 	]
