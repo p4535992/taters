@@ -9839,7 +9839,7 @@
 				{
 					"name": "Spit",
 					"entries": [
-						"{@atk rw} {@hit 3} to hit, range 0/60 ft., one target. {@h} the target must succeed on a {@dc 15} Constitution saving throw, taking 18 ({@damage 6d6}) poison damage on a failed save, or half as much damage on a failed save, or half as much damage on a successful one."
+						"{@atk rw} {@hit 3} to hit, range 5/60 ft., one target. {@h} the target must succeed on a {@dc 15} Constitution saving throw, taking 18 ({@damage 6d6}) poison damage on a failed save, or half as much damage on a failed save, or half as much damage on a successful one."
 					]
 				}
 			],
@@ -9964,7 +9964,7 @@
 				{
 					"name": "Spit",
 					"entries": [
-						"{@atk rw} {@hit 2} to hit, range 0/60 ft., one target. {@h} the target must succeed on a {@dc 17} Constitution saving throw, taking 32 ({@damage 8d8}) poison damage on a failed save, or half as much damage on a failed save, or half as much damage on a successful one."
+						"{@atk rw} {@hit 2} to hit, range 5/60 ft., one target. {@h} the target must succeed on a {@dc 17} Constitution saving throw, taking 32 ({@damage 8d8}) poison damage on a failed save, or half as much damage on a failed save, or half as much damage on a successful one."
 					]
 				}
 			],
@@ -11698,6 +11698,469 @@
 			],
 			"miscTags": [
 				"MW"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Elf Peddler",
+			"size": "M",
+			"type": "humanoid",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d8",
+				"average": 13
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 13,
+			"dex": 15,
+			"con": 10,
+			"int": 10,
+			"wis": 12,
+			"cha": 12,
+			"passive": 13,
+			"cr": "1/2",
+			"fluff": {
+				"entries": [
+					"Tribes of elves roam the deserts of athas",
+					"and bring their wares to the scattered settlements. Though they are considered shifty and untrustworthy, the elves bring unique items to their traveling markets that ensure plenty of business.",
+					"Lore",
+					"Stories of elves describe swindlers in elven bazaars and wandering bands of raiders that strip caravans of goods. Entire elf tribes have disappeared from city-states after a single member ran afoul of the templars.",
+					"Though considered dangerous by most other races, the elven markets of the various city-states are an important source of contraband, particularly that of the magical variety. However, most people know to be cautious when dealing with elves, since being cheated in a deal is the least of what they have been known to do. Most elves simply seek to get the most out of any bargain, and the more cutthroat members of a tribe might use that motivation as an excuse to murder and steal.",
+					"Encounters",
+					"Outcast elves join members of other races, frequently in raiding bands. Elves might travel with beasts of burden, which are unassuming in appearance but trained for battle. Unless it is badly injured, however, no elf ever rides. Beasts are for transporting goods or making war- elves define themselves by their ability to run."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/8lCjQW3.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/n1wzlc4.png",
+			"isNpc": true,
+			"environment": [
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"mountain",
+				"urban"
+			],
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"The elven markets bring goods both legitimate and illegal to the city-states. Any deal made with an elf merchant can go bad, though, and the cheater might disappear without a trace. An unlucky customer might be the target of a swift, deadly attack to steal his or her remaining possessions."
+					]
+				},
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"The elf has advantage on saving throws against being {@condition charmed}, and magic can’t put him to sleep."
+					]
+				},
+				{
+					"name": "Mask of the Wild",
+					"entries": [
+						"The elf can attempt to hide even when only lightly obscured by foliage, mist, sand storm or other natural phenomena."
+					]
+				}
+			],
+			"shortName": "Elf Peddler",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Elvish"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"skill": {
+				"deception": "+5",
+				"perception": "+3",
+				"stealth": "+6",
+				"sleight of hand": "+6"
+			},
+			"traitTags": [
+				"Fey Ancestry"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The elf makes two melee attacks or two ranged attacks."
+					]
+				},
+				{
+					"name": "Bone Longbow",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 150/600 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Bone Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"RW",
+				"RNG",
+				"MW"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Elf Dune Strider",
+			"size": "M",
+			"type": "humanoid",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				},
+				{
+					"ac": 17,
+					"condition": "against opportunity attack"
+				}
+			],
+			"hp": {
+				"formula": "9d8 + 7",
+				"average": 55
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 14,
+			"dex": 17,
+			"con": 13,
+			"int": 10,
+			"wis": 14,
+			"cha": 12,
+			"passive": 15,
+			"cr": "3",
+			"fluff": {
+				"entries": [
+					"Tribes of elves roam the deserts of athas",
+					"and bring their wares to the scattered settlements. Though they are considered shifty and untrustworthy, the elves bring unique items to their traveling markets that ensure plenty of business.",
+					"Lore",
+					"Stories of elves describe swindlers in elven bazaars and wandering bands of raiders that strip caravans of goods. Entire elf tribes have disappeared from city-states after a single member ran afoul of the templars.",
+					"Though considered dangerous by most other races, the elven markets of the various city-states are an important source of contraband, particularly that of the magical variety. However, most people know to be cautious when dealing with elves, since being cheated in a deal is the least of what they have been known to do. Most elves simply seek to get the most out of any bargain, and the more cutthroat members of a tribe might use that motivation as an excuse to murder and steal.",
+					"Encounters",
+					"Outcast elves join members of other races, frequently in raiding bands. Elves might travel with beasts of burden, which are unassuming in appearance but trained for battle. Unless it is badly injured, however, no elf ever rides. Beasts are for transporting goods or making war- elves define themselves by their ability to run."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/fS5NybN.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/YYWPlQq.png",
+			"isNpc": true,
+			"environment": [
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"mountain",
+				"urban"
+			],
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Tribes of elves lope across the wastelands. Lithe and hardy, they cover vast distances over dangerous terrain every day. Dune striders swoop down on travelers, seizing anything of value before retreating. Operating in small groups, dune striders try to spread out their attacks to force enemies to surrender their possessions. If this tactic doesn't work, they retreat."
+					]
+				},
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"The elf has advantage on saving throws against being {@condition charmed}, and magic can’t put him to sleep."
+					]
+				},
+				{
+					"name": "Mask of the Wild",
+					"entries": [
+						"The elf can attempt to hide even when only lightly obscured by foliage, mist, sand storm or other natural phenomena."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"If the elf is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the elf instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				},
+				{
+					"name": "Move Like the Wind",
+					"entries": [
+						"The speed of the elf is increase by 10ft. (already included in its profile) and the AC of the elf is increased by 3 against opportunity attacks. Additionally the elf can move through nonmagical terrain without any extra movement cost."
+					]
+				},
+				{
+					"name": "Tactian",
+					"entries": [
+						"The elf can use poison on the weapons and has the ranger power of multi shot, and commander {@spell power|phb } from tactician"
+					]
+				}
+			],
+			"shortName": "Elf Dune Strider",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Elvish"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"traitTags": [
+				"Fey Ancestry"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The elf makes two melee attacks or two ranged attacks."
+					]
+				},
+				{
+					"name": "Bone Longbow",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 150/600 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Obsidian Spear",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 5/60 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage in melee, or 6 ({@damage 1d6 + 3}) piercing damage at range, or 8 ({@damage 1d8 + 3}) piercing damage if used with both hands."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"skill": {
+				"perception": "+5",
+				"stealth": "+6",
+				"survival": "+7"
+			},
+			"miscTags": [
+				"RW",
+				"RNG",
+				"MW",
+				"THW"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Elf Raid Leader",
+			"size": "M",
+			"type": "humanoid",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				},
+				{
+					"ac": 19,
+					"condition": "against opportunity attack"
+				}
+			],
+			"hp": {
+				"formula": "12d8 + 24",
+				"average": 78
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 14,
+			"dex": 19,
+			"con": 14,
+			"int": 13,
+			"wis": 14,
+			"cha": 12,
+			"passive": 15,
+			"cr": "8",
+			"fluff": {
+				"entries": [
+					"Tribes of elves roam the deserts of athas",
+					"and bring their wares to the scattered settlements. Though they are considered shifty and untrustworthy, the elves bring unique items to their traveling markets that ensure plenty of business.",
+					"Lore",
+					"Stories of elves describe swindlers in elven bazaars and wandering bands of raiders that strip caravans of goods. Entire elf tribes have disappeared from city-states after a single member ran afoul of the templars.",
+					"Though considered dangerous by most other races, the elven markets of the various city-states are an important source of contraband, particularly that of the magical variety. However, most people know to be cautious when dealing with elves, since being cheated in a deal is the least of what they have been known to do. Most elves simply seek to get the most out of any bargain, and the more cutthroat members of a tribe might use that motivation as an excuse to murder and steal.",
+					"Encounters",
+					"Outcast elves join members of other races, frequently in raiding bands. Elves might travel with beasts of burden, which are unassuming in appearance but trained for battle. Unless it is badly injured, however, no elf ever rides. Beasts are for transporting goods or making war- elves define themselves by their ability to run."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/LyrEK4V.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/lugXnV2.png",
+			"isNpc": true,
+			"environment": [
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"mountain",
+				"urban"
+			],
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"The elves launch an all-out attack on an outsider community, either as vengeance for ill treatment or to grab resources. They charge into battle under the direction and the watchful gaze of a raid leader. A raid leader remains at extreme range, constantly maneuvering for distance if foes attempt to close with it. When a companion is hindered by a debilitating condition, the raid leader does not hesitate to snap the ally out of it."
+					]
+				},
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"The elf has advantage on saving throws against being {@condition charmed}, and magic can’t put him to sleep."
+					]
+				},
+				{
+					"name": "Mask of the Wild",
+					"entries": [
+						"The elf can attempt to hide even when only lightly obscured by foliage, mist, sand storm or other natural phenomena."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"If the elf is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the elf instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				},
+				{
+					"name": "Move Like the Wind",
+					"entries": [
+						"The speed of the elf is increase by 10ft. (already included in its profile) and the AC of the elf is increased by 3 against opportunity attacks. Additionally the elf can move through nonmagical terrain without any extra movement cost."
+					]
+				}
+			],
+			"shortName": "Elf Raid Leader",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Elvish"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"traitTags": [
+				"Fey Ancestry"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The elf makes two melee attacks or two ranged attacks."
+					]
+				},
+				{
+					"name": "Bone Longbow",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 150/600 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage, and the target must make a {@dc 15} Constitution saving throw, taking 24 ({@damage 7d6}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Obsidian shortsword",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage, and the target must make a {@dc 15} Constitution saving throw, taking 24 ({@damage 7d6}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Volley",
+					"entries": [
+						"The elf makes a ranged attack against any number of creatures within 10ft of a point he can see within his weapon’s range. He must have enough ammunition for each target, as normal, and make a separate attack roll for each target."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"I"
+			],
+			"skill": {
+				"perception": "+5",
+				"stealth": "+7",
+				"survival": "+7"
+			},
+			"miscTags": [
+				"RW",
+				"RNG",
+				"MW"
+			],
+			"reaction": [
+				{
+					"name": "Maneuvering Attack",
+					"entries": [
+						"When the elf hit a creature with a weapon attack, he can use his reaction to maneuver one of his comrades into a more advantageous position. The elf choose a friendly creature who can see or hear it. That creature can use its reaction to move up to half its speed without provoking opportunity attacks from the target of the elf’s attack."
+					]
+				}
 			]
 		}
 
