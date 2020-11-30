@@ -12669,6 +12669,514 @@
 			"vulnerable": [
 				"thunder"
 			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Elemental Weird Fire",
+			"size": "L",
+			"type": "elemental",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d10 + 45",
+				"average": 128
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60,
+				"canHover": false
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 17,
+			"int": 20,
+			"wis": 20,
+			"cha": 20,
+			"passive": 20,
+			"cr": "16",
+			"shortName": "Elemental Weird Fire",
+			"fluff": {
+				"entries": [
+					"Lore",
+					"Weirds are cryptic beings of elemental force who are powerful in the art of divination. They are oracles, soothsayers, and seers of knowledge past, present, and future. Each weird is composed of material from one of the four elements (air, earth, fire, or water) and has special knowledge of the particular aspect of fate with which its element is associated (see below). These creatures dwell in remote or hidden locations on the Material Plane—a fact that makes travel difficult for those seeking their counsel. The upper body of a weird always resembles that of a beautiful female humanoid. The lower half may be either humanoid or a serpentine column. A weird rises from a pool of the appropriate element, which it can never leave.",
+					"A weird can divine information that could change the very course of history. It has its finger on the pulse of fate and knows exactly where possible courses of action might lead. Like most seers, an elemental weird never provides a clear, concise prophecy. Some of the message may seem forthright, but some is always confusing or just difficult to decipher because the listener does not have enough information to understand the weird’s meaning. Though its messages can be misinterpreted, a weird’s warnings and advice are never wrong. Its counsel is seldom free, however, so anyone beseeching a weird had best bring offerings or be prepared to undertake a quest of vital importance to the creature.",
+					"Encounter",
+					"All weirds, regardless of their elemental subtypes, are connected to each other in fundamental ways. They share a unique, secret bond that is evidenced in their level of cooperation. A weird that cannot provide the desired knowledge to a supplicant usually guides him or her to another weird for better counsel. Weirds of different elements often place their pools close to one another to broaden the range of divination services available to supplicants in an area. Weirds are strongly linked to the Material Plane. They have all chosen to leave their native planes and serve as diviners for the humanoid races. Though they are bound to their pools, weirds can interact with other races though mortal agents that specialize in divination magic.",
+					"Elemental weirds do not fight if they can avoid it. If they must fight, they begin by summoning elementals to defend them. If any other elementals are present (regardless of type), the weird attempts to gain control of them and turn them against its foes. Meanwhile, the weird remains in the center of its pool, using divination magic to foresee possible consequences of the battle and acting accordingly. If forced into melee, a weird uses its reach to lash out at nearby foes. If seriously threatened, a weird retreats back to its plane of origin.",
+					"Elemental Pool",
+					"Each weird dwells within a large pool (at least 20 feet across and 40 feet deep) filled with the purest form of its element. The pool is always secured to a flat surface (floor, wall, or ceiling; see individual entries for possible orientations) such that its depth forms a hollow within that surface. The surface must have sufficient depth to accommodate the pool. An elemental pool can also exist as a separate area inside a larger volume of the same element; for example, a water weird’s pool might be situated at the bottom of an ocean or lake. The base of the pool contains a portal to the weird’s native plane. Creatures granted access to the pool by the weird must provide their own protection from the elemental material, as well as the means to breathe and move within that enviroment. Otherwise, they suffer the effects given in the individual entry. A weird is physically tied to its pool and cannot leave except to return to its native plane through the portal. A weird may rise up to a height of 10 feet above the surface of its pool, but the lower part of its body must always remain in contact with the elemental material. Once a weird exits the pool for its native plane, the portal closes, and the pool loses its special effects. Air Pool. An air weird’s pool is filled with billowing, gusting vapors of breathable air and mist. Creatures without the ability to fly cannot move through it, except by falling. An air weird’s pool may be affixed to any vertical or horizontal surface, and it may be right side up or upside down (if affixed to a ceiling, for example). Fire Pool. This pool contains a torrent of dancing flames that burn and smoke continually. Unprotected flammable materials within a fire pool catch on fire immediately, and any creature within the pool takes 3d10 fire damage per round. Creatures without the ability to fly cannot move through this pool, except by falling. A fire weird’s pool may be affixed to any vertical or horizontal surface, and it may appear only in a right side up position (such as on the floor of a cavern). Earth Pool. This pool is filled with churning mud, rocks, and earth. Every creature within it (except the earth weird and earth elementals) takes 4d8 bludgeonning damage per round from the ever-grinding earth. In addition, creatures entering the pool suffocate if they do not have a way to breathe and are entombed (restrained) if they cannot burrow. An earth weird’s pool may be affixed only to a horizontal surface, and it may appear only in a right side up position (such as in the floor of a cavern). Water Pool. This pool is filled with bubbling, swirling water. Any creature within it that cannot breathe water immediately begins to drown. Any creature without the ability to swim cannot move through a water pool, except by falling. A water weird’s pool may be affixed only to a horizontal surface, and it may appear only in a right side up position (such as on the floor of a cavern)."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/g3TUNKV.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/xY9lHdA.png",
+			"isNpc": true,
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Fire weirds are the diviners of hope. They shed light when all is dark and illuminate lore that has been long lost and nearly forgotten. They guide the long-suffering and ignorant to new peace and prosperity. The beautiful, feminine half of a fire weird is a humanoid form composed of flickering flames and wreathed with smoke. The lower half of the body snakes away in a fiery trail into the hazy, flame-filled pool."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The weird regains 10 hit points at the start of its turn if it has at least 1 hit point."
+					]
+				},
+				{
+					"name": "Prescience",
+					"entries": [
+						"At will and as a bonus action, a weird can duplicate the effect of any of the following divination spells: {@spell contact other plane|phb}, {@spell detect thoughts|phb}, {@spell divination|phb}, {@spell find the path|phb}, {@spell foresight|phb}, {@spell legend lore|phb}, {@spell locate creature|phb}, {@spell locate object|phb}, {@spell scrying|phb}, {@spell tongues|phb}, {@spell true seeing|phb}."
+					]
+				}
+			],
+			"languages": [
+				"all languages"
+			],
+			"languageTags": [
+				"XX"
+			],
+			"skill": {
+				"history": "+10",
+				"nature": "+10",
+				"perception": "+10",
+				"persuasion": "+10"
+			},
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons"
+				}
+			],
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
+			"traitTags": [
+				"Regeneration"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The weird is an 18th level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 18}, +10 to hit with spell attacks). The weird has the following cleric spells prepared.",
+						"Spellcasting Ability=WIS",
+						"Global Magic Attack Modifier=10",
+						"Magic Caster Level=18",
+						"Spell Save DC Mod=18"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell light}",
+								"{@spell resistance}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell bless}",
+								"{@spell burning hands}",
+								"Create Elemental Node"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell pyrotechnics|XGE}",
+								"{@spell scorching ray}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell daylight}",
+								"{@spell mass healing word}",
+								"{@spell protection from energy}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell banishment} (Fire Plane only)",
+								"{@spell elemental bane|XGE}",
+								"{@spell fire shield}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell geas}",
+								"{@spell immolation|XGE}",
+								"Rejuvenate"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell forbiddance}",
+								"{@spell sunbeam}"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"{@spell fire storm}",
+								"{@spell resurrection}"
+							],
+							"slots": 1
+						},
+						"8": {
+							"spells": [
+								"{@spell holy aura}",
+								"{@spell incendiary cloud}"
+							],
+							"slots": 1
+						},
+						"9": {
+							"spells": [
+								"{@spell astral projection}",
+								"{@spell mass heal}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The weird makes two slam attacks."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 5 ({@damage 1d10}) fire damage at the start of each of its turns."
+					]
+				},
+				{
+					"name": "Elemental Command",
+					"entries": [
+						"As an action, the weird targets one elemental creature of any element it can see within 30 feet of it. The elemental must make a {@dc 18} Wisdom saving throw. On a failed save, the target must obey the weird’s commands for the next 24 hours. An elemental whose challenge rating is equal to or greater than the weird’s challenge rating is immune to this effect."
+					]
+				},
+				{
+					"name": "Summon Elemental (3/Day)",
+					"entries": [
+						"The weird magically summons {@dice 1d4} Fire Elemental. The summoned elemental appears in an unoccupied space within the elemental pool and acts as an ally of the weird. It remains for 10 minutes, until it or the weird dies, or until the weird dismisses it as an action."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"F"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"vulnerable": [
+				"cold"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Elemental Weird Water",
+			"size": "L",
+			"type": "elemental",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d10 + 45",
+				"average": 128
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 90
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 17,
+			"int": 20,
+			"wis": 20,
+			"cha": 20,
+			"passive": 20,
+			"cr": "16",
+			"shortName": "Elemental Weird Water",
+			"fluff": {
+				"entries": [
+					"Lore",
+					"Weirds are cryptic beings of elemental force who are powerful in the art of divination. They are oracles, soothsayers, and seers of knowledge past, present, and future. Each weird is composed of material from one of the four elements (air, earth, fire, or water) and has special knowledge of the particular aspect of fate with which its element is associated (see below). These creatures dwell in remote or hidden locations on the Material Plane—a fact that makes travel difficult for those seeking their counsel. The upper body of a weird always resembles that of a beautiful female humanoid. The lower half may be either humanoid or a serpentine column. A weird rises from a pool of the appropriate element, which it can never leave.",
+					"A weird can divine information that could change the very course of history. It has its finger on the pulse of fate and knows exactly where possible courses of action might lead. Like most seers, an elemental weird never provides a clear, concise prophecy. Some of the message may seem forthright, but some is always confusing or just difficult to decipher because the listener does not have enough information to understand the weird’s meaning. Though its messages can be misinterpreted, a weird’s warnings and advice are never wrong. Its counsel is seldom free, however, so anyone beseeching a weird had best bring offerings or be prepared to undertake a quest of vital importance to the creature.",
+					"Encounter",
+					"All weirds, regardless of their elemental subtypes, are connected to each other in fundamental ways. They share a unique, secret bond that is evidenced in their level of cooperation. A weird that cannot provide the desired knowledge to a supplicant usually guides him or her to another weird for better counsel. Weirds of different elements often place their pools close to one another to broaden the range of divination services available to supplicants in an area. Weirds are strongly linked to the Material Plane. They have all chosen to leave their native planes and serve as diviners for the humanoid races. Though they are bound to their pools, weirds can interact with other races though mortal agents that specialize in divination magic.",
+					"Elemental weirds do not fight if they can avoid it. If they must fight, they begin by summoning elementals to defend them. If any other elementals are present (regardless of type), the weird attempts to gain control of them and turn them against its foes. Meanwhile, the weird remains in the center of its pool, using divination magic to foresee possible consequences of the battle and acting accordingly. If forced into melee, a weird uses its reach to lash out at nearby foes. If seriously threatened, a weird retreats back to its plane of origin.",
+					"Elemental Pool",
+					"Each weird dwells within a large pool (at least 20 feet across and 40 feet deep) filled with the purest form of its element. The pool is always secured to a flat surface (floor, wall, or ceiling; see individual entries for possible orientations) such that its depth forms a hollow within that surface. The surface must have sufficient depth to accommodate the pool. An elemental pool can also exist as a separate area inside a larger volume of the same element; for example, a water weird’s pool might be situated at the bottom of an ocean or lake. The base of the pool contains a portal to the weird’s native plane. Creatures granted access to the pool by the weird must provide their own protection from the elemental material, as well as the means to breathe and move within that enviroment. Otherwise, they suffer the effects given in the individual entry. A weird is physically tied to its pool and cannot leave except to return to its native plane through the portal. A weird may rise up to a height of 10 feet above the surface of its pool, but the lower part of its body must always remain in contact with the elemental material. Once a weird exits the pool for its native plane, the portal closes, and the pool loses its special effects. Air Pool. An air weird’s pool is filled with billowing, gusting vapors of breathable air and mist. Creatures without the ability to fly cannot move through it, except by falling. An air weird’s pool may be affixed to any vertical or horizontal surface, and it may be right side up or upside down (if affixed to a ceiling, for example). Fire Pool. This pool contains a torrent of dancing flames that burn and smoke continually. Unprotected flammable materials within a fire pool catch on fire immediately, and any creature within the pool takes 3d10 fire damage per round. Creatures without the ability to fly cannot move through this pool, except by falling. A fire weird’s pool may be affixed to any vertical or horizontal surface, and it may appear only in a right side up position (such as on the floor of a cavern). Earth Pool. This pool is filled with churning mud, rocks, and earth. Every creature within it (except the earth weird and earth elementals) takes 4d8 bludgeonning damage per round from the ever-grinding earth. In addition, creatures entering the pool suffocate if they do not have a way to breathe and are entombed (restrained) if they cannot burrow. An earth weird’s pool may be affixed only to a horizontal surface, and it may appear only in a right side up position (such as in the floor of a cavern). Water Pool. This pool is filled with bubbling, swirling water. Any creature within it that cannot breathe water immediately begins to drown. Any creature without the ability to swim cannot move through a water pool, except by falling. A water weird’s pool may be affixed only to a horizontal surface, and it may appear only in a right side up position (such as on the floor of a cavern)."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/JPHeRXC.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/WNhVPO3.png",
+			"isNpc": true,
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Water weirds are soothsayers that bring words of healing to the wounded. They offer curative knowledge for suffering lands and new options for people who seek a better way. When there is little hope for life, water weirds offer a way to snatch victory from the jaws of defeat against all odds. A water weird appears as a translucent, blue humanoid woman composed entirely of water. Its feet remain below the surface of its pool at all times."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The weird regains 10 hit points at the start of its turn if it has at least 1 hit point."
+					]
+				},
+				{
+					"name": "Prescience",
+					"entries": [
+						"At will and as a bonus action, a weird can duplicate the effect of any of the following divination spells: {@spell contact other plane|phb}, {@spell detect thoughts|phb}, {@spell divination|phb}, {@spell find the path|phb}, {@spell foresight|phb}, {@spell legend lore|phb}, {@spell locate creature|phb}, {@spell locate object|phb}, {@spell scrying|phb}, {@spell tongues|phb}, {@spell true seeing|phb}."
+					]
+				}
+			],
+			"languages": [
+				"all languages"
+			],
+			"languageTags": [
+				"XX"
+			],
+			"skill": {
+				"history": "+10",
+				"nature": "+10",
+				"perception": "+10",
+				"persuasion": "+10"
+			},
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons"
+				}
+			],
+			"immune": [
+				"cold",
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
+			"traitTags": [
+				"Regeneration"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The weird is an 18th level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 18}, +10 to hit with spell attacks). The weird has the following cleric spells prepared.",
+						"Spellcasting Ability=WIS",
+						"Global Magic Attack Modifier=10",
+						"Magic Caster Level=18",
+						"Spell Save DC Mod=18"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell light}",
+								"{@spell resistance}"
+							]
+						},
+						"1": {
+							"spells": [
+								"Create Elemental Node",
+								"{@spell create or destroy water}",
+								"{@spell sanctuary}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell hold person}",
+								"{@spell prayer of healing}",
+								"{@spell silence}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell mass healing word}",
+								"{@spell tidal wave|XGE}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell banishment} (Water Plane only)",
+								"{@spell elemental bane|XGE}",
+								"{@spell ice storm}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell geas}",
+								"{@spell maelstrom|XGE}",
+								"Rejuvenate"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell Otiluke's freezing sphere}",
+								"{@spell wall of ice}"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"{@spell divine word}",
+								"{@spell regenerate}"
+							],
+							"slots": 1
+						},
+						"8": {
+							"spells": [
+								"{@spell control weather}",
+								"{@spell tsunami}"
+							],
+							"slots": 1
+						},
+						"9": {
+							"spells": [
+								"{@spell astral projection}",
+								"{@spell mass heal}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The weird makes two slam attacks."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage, plus 10 ({@damage 3d6}) cold damage."
+					]
+				},
+				{
+					"name": "Elemental Command",
+					"entries": [
+						"As an action, the weird targets one elemental creature of any element it can see within 30 feet of it. The elemental must make a {@dc 18} Wisdom saving throw. On a failed save, the target must obey the weird’s commands for the next 24 hours. An elemental whose challenge rating is equal to or greater than the weird’s challenge rating is immune to this effect."
+					]
+				},
+				{
+					"name": "Summon Elemental (3/Day)",
+					"entries": [
+						"The weird magically summons {@dice 1d4} Water Elemental. The summoned elemental appears in an unoccupied space within the elemental pool and acts as an ally of the weird. It remains for 10 minutes, until it or the weird dies, or until the weird dismisses it as an action."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"C"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"vulnerable": [
+				"fire"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			]
 		}
 
 	]
