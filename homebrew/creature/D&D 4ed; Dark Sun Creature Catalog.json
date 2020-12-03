@@ -13296,6 +13296,7 @@
 			"cha": 8,
 			"passive": 18,
 			"cr": "6",
+			"isNpc": true,
 			"shortName": "Feral Yowler",
 			"environment": [
 				"desert",
@@ -13432,6 +13433,425 @@
 			"conditionInflict": [
 				"prone",
 				"frightened"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Floating Mantle",
+			"size": "M",
+			"type": "aberration",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 20",
+				"average": 74
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 30,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 10,
+			"dex": 17,
+			"con": 14,
+			"int": 5,
+			"wis": 14,
+			"cha": 10,
+			"passive": 16,
+			"cr": "5",
+			"isNpc": true,
+			"environment": [
+				"desert",
+				"forest",
+				"mountain",
+				"underdark"
+			],
+			"tokenUrl": "https://i.imgur.com/r3WDaEL.png",
+			"fluff": {
+				"entries": [
+					"The churning dust storms of the sea of silt",
+					"sweep up wonders from its farthest reaches and deposit them on Tyr's rocky shores. Arriving amid the relics and wreckage are the bizarre floating mantles. These beasts resemble jellyfish that float on the coastal breezes as they feed and commune with one another.",
+					"Lore",
+					"Floating mantles should not be able to fly: Their baglike bodies lack wings or any other method of propulsion. Scholars who study captured specimens theorize that special glands produce a Iighter-than-air gas that is stored in their flexible bodies to provide lift. Valves release it in small jets to propel the creatures with amazing maneuverability. The gas is flammable and explodes if exposed to fire or lightning.",
+					"A floating mantle's coloration reveals its mood. Normally, males tend toward red and females toward yellow; their hues are pale but intensify when the creatures are angered. When a floating mantle enters its reproductive stage, it bloats to half again its original size and takes on a bruise-blue color. Now called a bluesting, it can no longer hunt, instead using nutrients stored over previous months to feed its developing young. During this uncomfortable period, bluestings are irritable and far more aggressive than other floating mantles.",
+					"A bluesting gives birth to scores of polyps, though few survive long enough to bond with the colony. The exertion of combat can cause a bluesting to birth a few young prematurely. The ravenously hungry polyps fight alongside their parent, only to die minutes after the battle ends.",
+					"Encounters",
+					"Floating mantles collect in small colonies and share a group consciousness, allowing them to communicate primitive ideas and concepts with one another. They have few predators but defend themselves and their surviving young with unexpected ferocity."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/EjTWkm1.png"
+						}
+					}
+				]
+			},
+			"shortName": "Floating Mantle",
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Floating mantles hover above coastal mudflats, where they graze and make their nests. Quiet and inoffensive, floating mantles attack only when they feel threatened. They surround enemies, injecting them with slowing toxins from their long tentacles. A mantle then draws a creature up to its body and drains its vitality using the same appendages. When injured, a floating mantle looses a psychic scream, both to drive off its attacker and to warn its fellows."
+					]
+				},
+				{
+					"name": "Sudden Explosion",
+					"entries": [
+						"When the floating mantle is reduced to 0 hit points by fire or lightning damage it explodes violently, and each creature in a 10ft radius must make a {@dc 15} Dexterity saving throw, taking 15 ({@damage 3d10}) fire damage on a failed one, or half as much damage on a successful save. The explosion ignite flammables objects in that area that aren’t being worn or carried."
+					]
+				}
+			],
+			"senses": [
+				"blindsight 60 ft. (blind beyond that)"
+			],
+			"senseTags": [
+				"B"
+			],
+			"skill": {
+				"perception": "+6"
+			},
+			"conditionImmune": [
+				"blinded",
+				"prone"
+			],
+			"vulnerable": [
+				"fire",
+				"lightning"
+			],
+			"damageTags": [
+				"B",
+				"I",
+				"N",
+				"Y",
+				"F"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The floating mantle makes two melee attacks, one with its tentacles and one with its pseudopod."
+					]
+				},
+				{
+					"name": "Tentacle",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) bludgeoning damage, and the target must make a {@dc 15} Constitution saving throw, taking 12 ({@damage 4d6}) poison damage on a failed save, or half as much damage on a successful one. Additionally a target that fails the saving throw see its speed halved for 1 minute. In addition, the creature can't take reactions, and it can take either an action or a bonus action on its turn, not both. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Pseudopod",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d10 + 3}) necrotic damage. The target must succeed on a {@dc 15} Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0. Additionally the floating mantle gains a number of temporary hit points equal to the damage inflicted."
+					]
+				},
+				{
+					"name": "Psychic Scream {@recharge 5}",
+					"entries": [
+						"The floating mantle silent scream echoes in the mind of every creature in 30ft radius around the mantle. Each creature in the area must make a {@dc 15} Wisdom saving throw, taking 16 ({@damage 4d8}) psychic damage on a failed save and being {@condition stunned} until the end of the mantle’s next turn. A successful saving throw reduces the damage by half and prevent to being {@condition stunned}. Other mantles are immune to this power."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Tentacles"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Floating Mantle Bluestings",
+			"size": "L",
+			"type": "aberration",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d10 + 45",
+				"average": 146
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 40,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 14,
+			"dex": 18,
+			"con": 16,
+			"int": 5,
+			"wis": 14,
+			"cha": 10,
+			"passive": 20,
+			"cr": "9",
+			"isNpc": true,
+			"environment": [
+				"desert",
+				"forest",
+				"mountain",
+				"underdark"
+			],
+			"tokenUrl": "https://i.imgur.com/u3SfCd9.png",
+			"fluff": {
+				"entries": [
+					"The churning dust storms of the sea of silt",
+					"sweep up wonders from its farthest reaches and deposit them on Tyr's rocky shores. Arriving amid the relics and wreckage are the bizarre floating mantles. These beasts resemble jellyfish that float on the coastal breezes as they feed and commune with one another.",
+					"Lore",
+					"Floating mantles should not be able to fly: Their baglike bodies lack wings or any other method of propulsion. Scholars who study captured specimens theorize that special glands produce a Iighter-than-air gas that is stored in their flexible bodies to provide lift. Valves release it in small jets to propel the creatures with amazing maneuverability. The gas is flammable and explodes if exposed to fire or lightning.",
+					"A floating mantle's coloration reveals its mood. Normally, males tend toward red and females toward yellow; their hues are pale but intensify when the creatures are angered. When a floating mantle enters its reproductive stage, it bloats to half again its original size and takes on a bruise-blue color. Now called a bluesting, it can no longer hunt, instead using nutrients stored over previous months to feed its developing young. During this uncomfortable period, bluestings are irritable and far more aggressive than other floating mantles.",
+					"A bluesting gives birth to scores of polyps, though few survive long enough to bond with the colony. The exertion of combat can cause a bluesting to birth a few young prematurely. The ravenously hungry polyps fight alongside their parent, only to die minutes after the battle ends.",
+					"Encounters",
+					"Floating mantles collect in small colonies and share a group consciousness, allowing them to communicate primitive ideas and concepts with one another. They have few predators but defend themselves and their surviving young with unexpected ferocity."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/mCudGRJ.png"
+						}
+					}
+				]
+			},
+			"shortName": "Floating Mantle Bluestings",
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Bluestings prefer to remain at a distance surrounded by polyps. An injured or threatened bluesting might expel polyps in the stress of battle. It forms no attachment to such premature offspring, though, and leaves them to swarm foes while it launches waves of poisonous barbs."
+					]
+				},
+				{
+					"name": "Sudden Explosion",
+					"entries": [
+						"When the floating mantle is reduced to 0 hit points by fire or lightning damage it explodes violently, and each creature in a 10ft radius must make a {@dc 16} Dexterity saving throw, taking 36 ({@damage 6d12}) fire damage on a failed one, or half as much damage on a successful save. The explosion ignite flammables objects in that area that aren’t being worn or carried."
+					]
+				}
+			],
+			"senses": [
+				"blindsight 60 ft. (blind beyond that)"
+			],
+			"senseTags": [
+				"B"
+			],
+			"skill": {
+				"perception": "+10"
+			},
+			"conditionImmune": [
+				"blinded",
+				"prone"
+			],
+			"vulnerable": [
+				"fire",
+				"lightning"
+			],
+			"damageTags": [
+				"P",
+				"I",
+				"B",
+				"Y",
+				"F"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The floating mantle makes two melee attacks or two ranged attack, two with its tentacles; or two flinging netles."
+					]
+				},
+				{
+					"name": "Flinging Netles",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 30/60 ft., one target. {@h}12 ({@damage 2d8 + 4}) piercing damage and the target must make a {@dc 16} Constitution saving throw, taking 19 ({@damage 6d6}) poison damage on a failed save, or half as much damage on a successful one. Additionally a target that fails the saving throw see its speed halved for 1 minute. In addition, the creature can't take reactions, and it can take either an action or a bonus action on its turn, not both. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Tentacle",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}8 ({@damage 2d6 + 2}) bludgeoning damage, and the target must make a {@dc 16} Constitution saving throw, taking 19 ({@damage 6d6}) poison damage on a failed save, or half as much damage on a successful one. Additionally a target that fails the saving throw see its speed halved for 1 minute. In addition, the creature can't take reactions, and it can take either an action or a bonus action on its turn, not both. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Psychic Scream {@recharge 5}",
+					"entries": [
+						"The floating mantle silent scream echoes in the mind of every creature in 30ft radius around the mantle. Each creature in the area must make a {@dc 16} Wisdom saving throw, taking 24 ({@damage 6d8}) psychic damage on a failed save and being {@condition stunned} until the end of the mantle’s next turn. A successful saving throw reduces the damage by half and prevent to being {@condition stunned}. Other mantles are immune to this power."
+					]
+				},
+				{
+					"name": "Sudden Birth {@recharge 4}",
+					"entries": [
+						"Floating mantle polyps are birthed by the bluesting in the mist of battle. A swarm of polyp appears in the same space as the floating mantle bluesting."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Tentacles"
+			],
+			"miscTags": [
+				"RW",
+				"MW"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Floating Mantle Polyp Swarm",
+			"size": "M",
+			"type": {
+				"type": "aberration",
+				"swarmSize": "T"
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 6",
+				"average": 33
+			},
+			"speed": {
+				"walk": 0,
+				"fly": 30,
+				"canHover": false
+			},
+			"str": 8,
+			"dex": 18,
+			"con": 13,
+			"int": 2,
+			"wis": 14,
+			"cha": 10,
+			"passive": 14,
+			"cr": "1/2",
+			"isNpc": true,
+			"environment": [
+				"desert",
+				"forest",
+				"mountain",
+				"underdark"
+			],
+			"tokenUrl": "https://i.imgur.com/uxHUwJg.png",
+			"fluff": {
+				"entries": [
+					"The churning dust storms of the sea of silt",
+					"sweep up wonders from its farthest reaches and deposit them on Tyr's rocky shores. Arriving amid the relics and wreckage are the bizarre floating mantles. These beasts resemble jellyfish that float on the coastal breezes as they feed and commune with one another.",
+					"Lore",
+					"Floating mantles should not be able to fly: Their baglike bodies lack wings or any other method of propulsion. Scholars who study captured specimens theorize that special glands produce a Iighter-than-air gas that is stored in their flexible bodies to provide lift. Valves release it in small jets to propel the creatures with amazing maneuverability. The gas is flammable and explodes if exposed to fire or lightning.",
+					"A floating mantle's coloration reveals its mood. Normally, males tend toward red and females toward yellow; their hues are pale but intensify when the creatures are angered. When a floating mantle enters its reproductive stage, it bloats to half again its original size and takes on a bruise-blue color. Now called a bluesting, it can no longer hunt, instead using nutrients stored over previous months to feed its developing young. During this uncomfortable period, bluestings are irritable and far more aggressive than other floating mantles.",
+					"A bluesting gives birth to scores of polyps, though few survive long enough to bond with the colony. The exertion of combat can cause a bluesting to birth a few young prematurely. The ravenously hungry polyps fight alongside their parent, only to die minutes after the battle ends.",
+					"Encounters",
+					"Floating mantles collect in small colonies and share a group consciousness, allowing them to communicate primitive ideas and concepts with one another. They have few predators but defend themselves and their surviving young with unexpected ferocity."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/e2SoU3e.png"
+						}
+					}
+				]
+			},
+			"shortName": "Floating Mantle Polyp Swarm",
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"A bluesting gives birth to scores of polyps, though few survive long enough to bond with the colony. The exertion of combat can cause a bluesting to birth a few young prematurely. The ravenously hungry polyps fight alongside their parent, only to die minutes after the battle ends."
+					]
+				},
+				{
+					"name": "Psychic Scream",
+					"entries": [
+						"When the swarm is reduced to 0 hit points it emits a psychic scream, and each creature in a 10ft radius must make a {@dc 13} Wisdom saving throw, taking 12 ({@damage 3d8}) psychic damage on a failed save and being {@condition stunned} until the end of its next turn. A successful saving throw reduces the damage by half and prevent to being {@condition stunned}. Other mantles are immune to this power."
+					]
+				},
+				{
+					"name": "Swarm",
+					"entries": [
+						"The swarm can occupy another creature’s space and vice versa, and the swarm can move through any opening large enough for a Tiny creature. The swarm can’t regain hit points or gain temporary hit points."
+					]
+				}
+			],
+			"senses": [
+				"blindsight 60 ft. (blind beyond that)"
+			],
+			"senseTags": [
+				"B"
+			],
+			"skill": {
+				"perception": "+4"
+			},
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"prone",
+				"restrained",
+				"stunned"
+			],
+			"vulnerable": [
+				"fire",
+				"lightning"
+			],
+			"damageTags": [
+				"B",
+				"Y"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"action": [
+				{
+					"name": "Tentacles",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 0 ft., one target. {@h}8 ({@damage 2d8}) bludgeoning damage and the target must succeed on a {@dc 13} Constitution saving throw or be {@condition poisoned} for 1 minute."
+					]
+				}
+			],
+			"actionTags": [
+				"Tentacles"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"poisoned"
 			]
 		}
 
