@@ -19854,6 +19854,184 @@
 				"str": "+4",
 				"cha": "+1"
 			}
+		},
+		{
+			"name": "DARKSUNCREATURE - Kank",
+			"size": "L",
+			"type": "beast",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d10 + 18",
+				"average": 53
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 16,
+			"int": 2,
+			"wis": 12,
+			"cha": 6,
+			"passive": 11,
+			"cr": "2",
+			"shortName": "Kank",
+			"tokenUrl": "https://i.imgur.com/Gd8KZ0y.png",
+			"environment": [
+				"desert",
+				"swamp",
+				"underdark"
+			],
+			"fluff": {
+				"entries": [
+					"Oversized hive insects",
+					"kanks viciously attack strangers. Patient trainers can domesticate these beasts to collect their tasty nectar or employ them as guard beasts. Kanks are also valued as hardy creatures that can survive in most Athasian environments.",
+					"Lore",
+					"Kanks are hive insects that can be tamed and trained. Spitters specialize in collecting organic forage and producing nectar that nourishes other kanks. Soldiers have vicious mandibles that help them defend the tribe.",
+					"Every kank hive has a brood queen. This lethargic creature does little besides produce kank eggs. A brood queen is unable to defend herself from attack, and she has little actual control over the hive. She relies on soldiers to defend her and spitters to produce food.",
+					"Encounters",
+					"A hive of kanks is easy to domesticate-any creature that feeds the hive regularly can tame its kanks. Because kanks can consume any organic matter, they require minimal care. They consider creatures that feed them to be part of the hive."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/4nqh3mA.png"
+						}
+					}
+				]
+			},
+			"isNpc": true,
+			"resist": [
+				"acid",
+				"poison"
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage and the target must succeed on a {@dc 13} Constitution saving throw or be {@condition poisoned} for 1 minute. Until this poison ends, the target is {@condition paralyzed}. The target can repeat the saving throw at the end of each of its turns, ending the poison on itself on a success."
+					]
+				},
+				{
+					"name": "Spit",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 20/60 ft., one target. {@h}10 ({@damage 2d8 + 2}) acid damage and the target must succeed on a {@dc 13} Constitution saving throw or be {@condition poisoned} for 1 minute. Until this poison ends, the target is {@condition paralyzed}. The target can repeat the saving throw at the end of each of its turns, ending the poison on itself on a success."
+					]
+				}
+			],
+			"damageTags": [
+				"P",
+				"A"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"paralyzed",
+				"poisoned"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Kank (version 2)",
+			"size": "L",
+			"type": "beast",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d10 + 10",
+				"average": 37
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 16,
+			"int": 2,
+			"wis": 12,
+			"cha": 6,
+			"passive": 11,
+			"cr": "1",
+			"shortName": "Kank (version 2)",
+			"tokenUrl": "https://i.imgur.com/C0UXHTV.png",
+			"environment": [
+				"desert",
+				"swamp",
+				"underdark"
+			],
+			"fluff": {
+				"entries": [
+					"Kanks are large docile insects often used as mounts by the people of the Tablelands. A black exoskeleton of chitin covers their segmented bodies. The three body sections are the head, thorax, and abdomen. They weigh as much as 400 pounds, grow to heights of 4 feet at the back, and as long as 8 feet from head to abdomen. Around their mouths, they have multi-jointed pincers that they can use to carry objects, feed themselves, or fight. Six lanky legs descend from their thoraxes. Each ends in a single flexible claw that allows them to grip the surfaces they walk upon.",
+					"Kanks are often used as caravan mounts. They can travel a full day at their top speed, carrying a 200-pound passenger and 200 pounds of cargo. Kanks make decent herd animals, but usually only elves employ them as such. As kanks can digest almost any sort of organic matter, they can thrive in most terrain types. In addition, these creatures require little special attention. A kank hive instinctively organizes itself into food producers, soldiers, and brood queens."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/BWk044S.png"
+						}
+					}
+				]
+			},
+			"isNpc": true,
+			"damageTags": [
+				"P"
+			],
+			"save": {
+				"dex": "+4",
+				"con": "+4"
+			},
+			"trait": [
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"The Kank crawler has advantage on Wisdom (perception) checks that rely on smell."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"action": [
+				{
+					"name": "Pincers",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage. Target must succeed on a {@dc 13} Constitution saving throw or be {@condition poisoned} for 1 minute. Until this poison ends, the target is {@condition paralyzed}. The target can repeat the saving throw at the end of each of its turns, ending the poison on itself on a success."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"paralyzed",
+				"poisoned"
+			]
 		}
 
 
