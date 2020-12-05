@@ -16031,6 +16031,698 @@
 			"miscTags": [
 				"MW"
 			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Golem Salt",
+			"size": "L",
+			"type": "construct",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d10 + 48",
+				"average": 112
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 9,
+			"con": 18,
+			"int": 3,
+			"wis": 10,
+			"cha": 1,
+			"passive": 10,
+			"cr": "9",
+			"isNpc": true,
+			"environment": [
+				"arctic",
+				"coastal",
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"mountain",
+				"swamp",
+				"underdark",
+				"urban"
+			],
+			"shortName": "Golem Salt",
+			"fluff": {
+				"entries": [
+					"Unthinking automatons",
+					"energized by potent magic, golems can be found in desert ruins or in the treasuries of the sorcerer-kings. Powerful defilers craft golems from bone, clay, flesh, stone, and more unusual materials. The relative abundance of obsidian, salt, and sand on Athas has inspired creators to rely on these substances when constructing golems.",
+					"Lore",
+					"Golems abide by the instructions of their creators, or anyone their creators order them to obey. They are fearless and unflinching, executing their masters' commands without concern for their own survival. They plow straight ahead in battle, mashing anyone or anything that obstructs their progress.",
+					"The creation of a golem requires potent arcane rituals and expensive components. Such resources are exceedingly rare On Athas. Much of the lore regarding golems comes from ages past, and a great deal of it is lost even to sorcerer-kings. The few ritualists who can create golems do not necessarily even understand why their rituals work.",
+					"Legends tell of golems far more potent than any created today. Constructed from substances now rare on Athas, these creatures still haunt the depths of forgotten ruins, obeying orders uttered by creators thousands of years ago.",
+					"Encounters",
+					"Golems cooperate with any creature their master dictates. They are often placed alongside other constructs, though they can be found with demons, devils, and other long-lived guardians. Golems are frequently stationed to protect a specific area, but some creators use them as loyal bodyguards."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/8y8sapO.png"
+						}
+					}
+				]
+			},
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"The air grows hazy as a salt golem approaches. The ambient particles from its body sting the flesh and burn the eyes. A blocky, rocklike form of white and gray becomes more distinct as it draws close enough for its heavy limbs to strike. Salt golems leave tiny toxic shards in the wounds they inflict, causing agonizing pain. Like most golems, they aren't capable of sophisticated tactics. They are cunning enough, though, to distinguish between strong and injured foes."
+					]
+				},
+				{
+					"name": "Toxic Salt",
+					"entries": [
+						"Any creature that starts its turn within 5ft of the golem has disadvantage on its attack rolls, until the end of its next turn. If the creature is missing some of its hit points, it also takes 6 ({@damage 2d6}) poison damage."
+					]
+				},
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"The golem is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The golem has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The golem's weapon attacks are magical."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/kMKOJt3.png",
+			"languages": [
+				"understands the languages of its creator but can’t speak"
+			],
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"immune": [
+				{
+					"immune": [
+						"poison",
+						"psychic"
+					]
+				},
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons that aren't adamantine"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"damageTags": [
+				"B",
+				"I"
+			],
+			"traitTags": [
+				"Immutable Form",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The golem makes two melee attacks."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}18 ({@damage 3d8 + 5}) bludgeoning damage and the target must make a {@dc 16} Constitution saving throw or take 9 ({@damage 3d6}) poison damage at the beginning of its turn for one minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Horrid Dehydration {@recharge 5}",
+					"entries": [
+						"The golem absorb all the moisture in a 15-foot cone. Each creature in that area must make a {@dc 16} Constitution saving throw, gaining one level of {@condition exhaustion} on a failed save. This attack has no effect on undead or constructs. If it target a plant creature or a magical plant, it makes the saving throw with disadvantage. If it targets a nonmagical plant that isn’t a creature, such as a tree or shrub, it doesn’t make a saving throw; it simply withers and dies."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Golem Dune",
+			"size": "L",
+			"type": "construct",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d10 + 75",
+				"average": 150
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 22,
+			"dex": 9,
+			"con": 20,
+			"int": 3,
+			"wis": 10,
+			"cha": 1,
+			"passive": 10,
+			"cr": "10",
+			"isNpc": true,
+			"environment": [
+				"arctic",
+				"coastal",
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"mountain",
+				"swamp",
+				"underdark",
+				"urban"
+			],
+			"shortName": "Golem Dune",
+			"fluff": {
+				"entries": [
+					"Unthinking automatons",
+					"energized by potent magic, golems can be found in desert ruins or in the treasuries of the sorcerer-kings. Powerful defilers craft golems from bone, clay, flesh, stone, and more unusual materials. The relative abundance of obsidian, salt, and sand on Athas has inspired creators to rely on these substances when constructing golems.",
+					"Lore",
+					"Golems abide by the instructions of their creators, or anyone their creators order them to obey. They are fearless and unflinching, executing their masters' commands without concern for their own survival. They plow straight ahead in battle, mashing anyone or anything that obstructs their progress.",
+					"The creation of a golem requires potent arcane rituals and expensive components. Such resources are exceedingly rare On Athas. Much of the lore regarding golems comes from ages past, and a great deal of it is lost even to sorcerer-kings. The few ritualists who can create golems do not necessarily even understand why their rituals work.",
+					"Legends tell of golems far more potent than any created today. Constructed from substances now rare on Athas, these creatures still haunt the depths of forgotten ruins, obeying orders uttered by creators thousands of years ago.",
+					"Encounters",
+					"Golems cooperate with any creature their master dictates. They are often placed alongside other constructs, though they can be found with demons, devils, and other long-lived guardians. Golems are frequently stationed to protect a specific area, but some creators use them as loyal bodyguards."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/0SKz1L5.png"
+						}
+					}
+				]
+			},
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"A sudden flurry sweeps the desert as the sands rise in a loosely humanoid form. Particles sift and flow as though blown by a constant wind, but the creature never loses its substance. Gaping pits at the top of the churning sand simulate a mouth and eyes. These semisolid animates ambush foes by bursting upward from the ground. Once engaged in battle, a dune golem is a straightforward combatant, grabbing and engulfing the first available target while pounding on others."
+					]
+				},
+				{
+					"name": "Shifting Sands",
+					"entries": [
+						"The golem can occupy another creature’s space, and the golem can move through any opening large enough for a grain of sand, the golem’s move do not create opportunity attacks. When a creature starts its turn in the same space as the dune golem it starts to suffocate (see suffocating p.183 of the player’s handbook)."
+					]
+				},
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"The golem is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The golem has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The golem's weapon attacks are magical."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/pZhAQ2W.png",
+			"languages": [
+				"understands the languages of its creator but can’t speak"
+			],
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"immune": [
+				{
+					"immune": [
+						"poison",
+						"psychic"
+					]
+				},
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons that aren't adamantine"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"damageTags": [
+				"B"
+			],
+			"traitTags": [
+				"Immutable Form",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The golem makes two melee attacks."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}19 ({@damage 3d8 + 6}) bludgeoning damage. If the target is a creature, it is {@condition grappled} (escape {@dc 16}). Until this grapple ends, the target is {@condition restrained}. The {@condition grappled} creature start to suffocate."
+					]
+				},
+				{
+					"name": "Moving Sands {@recharge 5}",
+					"entries": [
+						"The golem select a 20ft radius area that it can see within 120ft of him. The area selected must be made of sand or earth. When a creature enters the area, it sinks {@dice 1d4 + 1} feet into the quicksand and becomes {@condition restrained}. At the start of each of the creature's turns, it sinks another {@dice 1d4} feet. As long as the creature isn't completely submerged in quicksand, it can escape by using its action and succeeding on a Strength check. The DC is 10 plus the number of feet the creature has sunk into the quicksand. A creature that is completely submerged in quicksand can't breathe (see the suffocation rules in the Player's Handbook). A creature can pull another creature within its reach out of a quicksand pit by using its action and succeeding on a Strength check. The DC is 5 plus the number of feet the target creature has sunk into the quicksand."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"restrained",
+				"grappled"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Golem Shadesteel",
+			"size": "L",
+			"type": "construct",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d10 + 75",
+				"average": 150
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 25,
+			"dex": 16,
+			"con": 20,
+			"int": 3,
+			"wis": 10,
+			"cha": 1,
+			"passive": 10,
+			"cr": "14",
+			"isNpc": true,
+			"environment": [
+				"arctic",
+				"coastal",
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"mountain",
+				"swamp",
+				"underdark",
+				"urban"
+			],
+			"shortName": "Golem Shadesteel",
+			"fluff": {
+				"entries": [
+					"Unthinking automatons",
+					"energized by potent magic, golems can be found in desert ruins or in the treasuries of the sorcerer-kings. Powerful defilers craft golems from bone, clay, flesh, stone, and more unusual materials. The relative abundance of obsidian, salt, and sand on Athas has inspired creators to rely on these substances when constructing golems.",
+					"Lore",
+					"Golems abide by the instructions of their creators, or anyone their creators order them to obey. They are fearless and unflinching, executing their masters' commands without concern for their own survival. They plow straight ahead in battle, mashing anyone or anything that obstructs their progress.",
+					"The creation of a golem requires potent arcane rituals and expensive components. Such resources are exceedingly rare On Athas. Much of the lore regarding golems comes from ages past, and a great deal of it is lost even to sorcerer-kings. The few ritualists who can create golems do not necessarily even understand why their rituals work.",
+					"Legends tell of golems far more potent than any created today. Constructed from substances now rare on Athas, these creatures still haunt the depths of forgotten ruins, obeying orders uttered by creators thousands of years ago.",
+					"Encounters",
+					"Golems cooperate with any creature their master dictates. They are often placed alongside other constructs, though they can be found with demons, devils, and other long-lived guardians. Golems are frequently stationed to protect a specific area, but some creators use them as loyal bodyguards."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/nN2OAwT.png"
+						}
+					}
+				]
+			},
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Crafted from metal mined and forged entirely in the Grey, shadesteel golems are silent and powerful guardians. Necromancers, liches, and defilers create these planar golems to defend their crypts from clerics unlikely to be hampered by undead minions. Those seeing a shadesteel golem often mistakenly identify it as undead, since it has a dark shadowy appearance and moves as quietly as a wraith. Unlike most constructs, a shadesteel golem is very stealthy, capable of blending into even the faintest of shadows. Their creators use them as hidden guardians in conjunction with more obvious deterrents, such as iron golems or zombies. A shadesteel golem stands 2,20 meters tall and weighs about 700 kilos, though it usually floats with such ease that it appears to be almost weightless.",
+						"Jahakinir the Shadow-Wizard, a lich of terrible power, created the first four shadesteel golems on the plane of the Grey, and offered them to his master, the Sorcerer-King Kalak. One day, she simply vanished from the face and depths of the world. His servants claim that she hid her wealth in secret subterranean vaults guarded by Jahakinir’s shadesteel golems, but these sepulchers have never been found. Whether the lich created other shadesteel golems and whether the secrets of their construction have been passed on remain mysteries as well. Other rulers from different city-states have sponsored expeditions into ruins known to countain shadesteel golem unearth the lost knowledge of their construction, but it is not known whether these explorations have borne fruit."
+					]
+				},
+				{
+					"name": "Necrotic Absorption",
+					"entries": [
+						"Whenever the golem is subjected to necrotic damage, it takes no damage and instead regains a number of hit points equal to the necrotic damage dealt."
+					]
+				},
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"The golem is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The golem has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The golem's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Shadow Blend",
+					"entries": [
+						"In any condition of illumination other than bright light, a shadesteel golem can become {@condition invisible} into the shadows with a bonus action. Artificial illumination, even a light or continual flame spell, does not negate this ability, though a {@spell daylight|phb} spell does."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/yFHkFK3.png",
+			"languages": [
+				"understands the languages of its creator but can’t speak"
+			],
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"immune": [
+				{
+					"immune": [
+						"necrotic",
+						"poison",
+						"psychic"
+					]
+				},
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons that aren't adamantine"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"damageTags": [
+				"S"
+			],
+			"traitTags": [
+				"Damage Absorption",
+				"Immutable Form",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The golem makes two melee attacks."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}20 ({@damage 3d8 + 7}) slashing damage."
+					]
+				},
+				{
+					"name": "Negative Pulse Wave {@recharge 5}",
+					"entries": [
+						"The shadesteel golem can radiate a burst of inky black negative energy. The pulse wave drains life from all living creatures within 40 feet of the golem, dealing 42 ({@dice 12d6}) points of necrotic damage. A {@dc 18} Constitution saving throw succeeded halves the damage. Undead creatures within the area are healed of {@dice 12d6} points of damage instead, and any turning effect they are under is broken."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Golem Obsidian",
+			"size": "L",
+			"type": "construct",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "22d10 + 110",
+				"average": 220
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 28,
+			"dex": 9,
+			"con": 20,
+			"int": 3,
+			"wis": 10,
+			"cha": 1,
+			"passive": 10,
+			"cr": "17",
+			"isNpc": true,
+			"environment": [
+				"arctic",
+				"coastal",
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"mountain",
+				"swamp",
+				"underdark",
+				"urban"
+			],
+			"shortName": "Golem Obsidian",
+			"fluff": {
+				"entries": [
+					"Unthinking automatons",
+					"energized by potent magic, golems can be found in desert ruins or in the treasuries of the sorcerer-kings. Powerful defilers craft golems from bone, clay, flesh, stone, and more unusual materials. The relative abundance of obsidian, salt, and sand on Athas has inspired creators to rely on these substances when constructing golems.",
+					"Lore",
+					"Golems abide by the instructions of their creators, or anyone their creators order them to obey. They are fearless and unflinching, executing their masters' commands without concern for their own survival. They plow straight ahead in battle, mashing anyone or anything that obstructs their progress.",
+					"The creation of a golem requires potent arcane rituals and expensive components. Such resources are exceedingly rare On Athas. Much of the lore regarding golems comes from ages past, and a great deal of it is lost even to sorcerer-kings. The few ritualists who can create golems do not necessarily even understand why their rituals work.",
+					"Legends tell of golems far more potent than any created today. Constructed from substances now rare on Athas, these creatures still haunt the depths of forgotten ruins, obeying orders uttered by creators thousands of years ago.",
+					"Encounters",
+					"Golems cooperate with any creature their master dictates. They are often placed alongside other constructs, though they can be found with demons, devils, and other long-lived guardians. Golems are frequently stationed to protect a specific area, but some creators use them as loyal bodyguards."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/5xhiRUU.png"
+						}
+					}
+				]
+			},
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Crystallized darkness strides ponderously as the shriek of glass grows louder. Powdered obsidian trails from the form's stiffly flexing joints. On its jagged fists are crimson stains, recalling the fate of the last trespasser. Obsidian golems are festooned with sharp, glassy edges, and their crushing blows inflict deep cuts that bleed profusely. Although nearly mindless, they have sufficient acumen to try to catch at least two foes at a time with stunning handclap."
+					]
+				},
+				{
+					"name": "Lightning Absorption",
+					"entries": [
+						"Whenever the golem is subjected to lightning damage, it takes no damage and instead regains a number of hit points equal to the lightning damage dealt."
+					]
+				},
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"The golem is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The golem has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The golem's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Razor Sharp",
+					"entries": [
+						"Whenever a creature within 5ft of the golem hits it with a melee attack the obsidian shards cut it deep. The creature takes (8) {@damage 2d8} slashing damage. Creatures attacking with melee natural weaponry always take the damage, regardless of the distance."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/tx6EDDT.png",
+			"languages": [
+				"understands the languages of its creator but can’t speak"
+			],
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"immune": [
+				{
+					"immune": [
+						"lightning",
+						"poison",
+						"psychic"
+					]
+				},
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons that aren't adamantine"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"damageTags": [
+				"S",
+				"L"
+			],
+			"traitTags": [
+				"Damage Absorption",
+				"Immutable Form",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The golem makes two melee attacks."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 5 ft., one target. {@h}22 ({@damage 3d8 + 9}) slashing damage and the target suffers {@dice 2d8} extra slashing damage at the beginning of each of its turn from blood loss. Undead, elementals, plants and constructs are not suffering from the extra damage. The bleeding can be stopped if a character takes an action and make a successful Wisdom (Medicine) check {@dc 15}. A spell giving hit points back to the bleeding target also stops the bleeding."
+					]
+				},
+				{
+					"name": "Stunning Handclap {@recharge 5}",
+					"entries": [
+						"The golem claps its hands and release a wave of lighting. Each creature in a 20ft radius around the golem makes a {@dc 19} Dexterity saving throw, taking 35 ({@damage 10d6}) lightning damage and is {@condition stunned} until the end of the golem’s next turn on a failed save. A successful saving throw reduces the damage taken by half and prevent on being {@condition stunned}."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			]
 		}
 
 
