@@ -17298,6 +17298,195 @@
 			"miscTags": [
 				"MW"
 			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Grisgol",
+			"size": "L",
+			"type": "construct",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d10 + 80",
+				"average": 185
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 18,
+			"int": 3,
+			"wis": 10,
+			"cha": 1,
+			"passive": 10,
+			"cr": "17",
+			"tokenUrl": "https://i.imgur.com/OMs5Afu.png",
+			"shortName": "Grisgol",
+			"fluff": {
+				"entries": [
+					"Lore",
+					"A grisgol is a horrifying construct composed of broken and worn-out magic items, animated by a powerful spellcaster who has harnessed the spirit of a lich. Its skeleton is fabricated from old staffs and wands and its skin from expended scrolls wrapped about it like a mummy’s burial cloth. Woven into this are rings, bracers, fragments of leather or chainmail, and the like. Inside the creature are scores of half-empty vials of potions, unguents, and oils, vaguely resembling sets of internal organs. It typically wears a rune-scribed cloak or robe. Pinpoints of red light glare from underneath a hood or old helmet. Nestled inside the construct, among miscellaneous junk, is the original lich’s phylactery. Unless one knows what animates a grisgol, the phylactery appears as another piece of spent magic trash tossed loosely and randomly into the insides of the construct. From a distance, a grisgol appears to be a mummy, even moving with a similar stiff gait. When it walks, one can hear the tinkling of glass touching glass, the sloshing of half-filled vials and bottles, the squeaking of leather, the rubbing of wood and bone against each other, and, most prominently, the shuffl ing of paper as if pages of a tome were caught in a slight breeze. Thin tendrils of black smoke escape from cracks in its body. A grisgol leaves a sooty, oily residue upon whatever it touches. A grisgol is in every way a magic construct, possessing all traits native to golems in addition to the abilities of the lich that powers it. A grisgol’s damaging and paralyzing touch attacks are the same as a lich and the construct retains a fraction of the original lich’s spell-casting ability. A grisgol only casts the spells scribed by its creator on the scrolls and tome pages that make up its outer skin.",
+					"The spells a grisgol can cast are, however, restricted to the spell levels, domains, and specializations the lich (a 20th-level cleric, sorcerer, or wizard) could have cast. Destroying a grisgol does not destroy the lich that powers it. To kill the lich, its phylactery must be destroyed after the grisgol is destroyed. Otherwise, the lich is free to return in a physical form in 1d10 days. The escaped lich retains all the powers and abilities it had previous to its entrapment. The lich seeks vengeance upon whoever possesses its phylactery and the wizard, sorcerer, or cleric who originally entrapped it in the body of a grisgol. A grisgol stands 8 feet tall and weighs about 400 pounds. It knows all the languages known by the lich whose phylactery animates it.",
+					"Encounters",
+					"Grisgol are rare, even by golem standards. They are solitary construct that exist solely to serve the will of their master. Once this master has died it continues to fulfil his duty, oblivious of the pointless reason behind it. In the region of Raam, particularly ancient tombs are rumored to hold mysterious string of parchment, driving those reading them to madness and death. Other reports from adventurers tell the stories of strange mummies invulnerable to most of their known weaknesses.",
+					"Lich sometimes create grisgol as punishment for their rivals, hiding their phylactery in the construct and sending them to impossible and pointless mission. They are reveling in the knowledge that their enemy can do nothing but rage silently while his immortality is wasted away."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/6lDm2oc.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"desert",
+				"mountain",
+				"underdark",
+				"urban"
+			],
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languages": [
+				"understands the languages of its creator but can’t speak"
+			],
+			"immune": [
+				{
+					"immune": [
+						"poison",
+						"psychic"
+					]
+				},
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons that aren't adamantine"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Choking Dust",
+					"entries": [
+						"Striking the golem with any kind of implement other than a piercing weapon invites a disease causing, choking cloud of dust and mold to explode from the creature. All within a 10-foot radius must make a {@dc 18} Constitution saving throw or contract the {@disease cackle fever} (see p.252 of the Dungeon Master’s Guide). The DC of the disease is the one of the Grisgol, not the conventional disease."
+					]
+				},
+				{
+					"name": "Incite Madness",
+					"entries": [
+						"After a grisgol is killed, anyone examining the strips of scroll parchment or tome pages that comprise the creature’s wrappings invokes a curse that renders the reader insane, unless he succeeds on a {@dc 19} Wisdom saving throw. The victim of this insanity becomes convinced that the   thousands of scraps of parchment contain great and lost arcane secrets, and that he must discover these secrets by painstakingly fitting every last piece of ripped parchment and torn page back together in the right order. He dedicates every waking hour to this massive undertaking, barely pausing to eat or rest, in order to finish this task as fast as possible. The victim always thinks, and tries to convince others, that he is on the brink of a revelation. His personal study becomes cluttered with diagrams, charts, and plans extrapolating how the pieces might fit together, constantly rearranging them to fit current theories or hunches. The victim of the curse loses {@dice 1d4} point of Intelligence per day. Once it reach 0, the creature dies. The Intelligence cannot be restored while the curse is lasting. Only a heal spell or similarly powerful magic can relieve a victim of this curse, the Intelligence lost is then recovered after the victim finish a short or long rest. A victim dying of the curse can only be brought back to life with by a true resurrection or a wish spell."
+					]
+				},
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"The golem is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The golem has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The golem's weapon attacks are magical."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"damageTags": [
+				"S",
+				"N"
+			],
+			"traitTags": [
+				"Immutable Form",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"spellcasting": [
+				{
+					"name": "Spell-Like Abilities",
+					"headerEntries": [
+						"A grisgol is created with the ability to use nine different spells as spell-like abilities (one each of levels 1 through 9th), each one once per day (spell {@dc 17}, +9 to hit with spell attacks). These spells can vary based on the creator’s whim, and are either cleric spells (if the animating lich was a templar) or sorcerer/wizard spells (if the animating lich was a sorcerer or wizard). Most creators choose simple spells, reasoning that the grisgol’s lack of intelligence prevents it from using strategy. The golem has the following wizard spells prepared.",
+						"Spellcasting Ability=CON",
+						"Global Magic Attack Modifier=9",
+						"Magic Caster Level=0",
+						"Spell Save DC Mod=17"
+					],
+					"daily": {
+						"1e": [
+							"{@spell chromatic orb}",
+							"{@spell cone of cold}",
+							"{@spell confusion}",
+							"{@spell finger of death}",
+							"{@spell globe of invulnerability}",
+							"{@spell haste}",
+							"{@spell incendiary cloud}",
+							"{@spell Melf's acid arrow}",
+							"{@spell meteor swarm}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CC",
+				"CS",
+				"CW"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The golem makes two melee attacks."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d10 + 4}) slashing damage, plus 10 ({@damage 2d8}) necrotic damage. The target must succeed on a {@dc 18} Constitution saving throw or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"conditionInflict": [
+				"paralyzed"
+			]
 		}
 
 
