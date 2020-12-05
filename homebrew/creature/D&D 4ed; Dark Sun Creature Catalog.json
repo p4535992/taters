@@ -9178,7 +9178,7 @@
 				12,
 				{
 					"ac": 15,
-					"condition": "with mage armor",
+					"condition": "with {@spell mage armor}",
 					"braces": true
 				}
 			],
@@ -17486,6 +17486,531 @@
 			],
 			"conditionInflict": [
 				"paralyzed"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Halfling Forest Runner",
+			"size": "S",
+			"type": "humanoid",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d6 + 6",
+				"average": 29
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 12,
+			"dex": 17,
+			"con": 13,
+			"int": 8,
+			"wis": 14,
+			"cha": 9,
+			"passive": 14,
+			"cr": "1",
+			"fluff": {
+				"entries": [
+					"Natives of the rain-kissed forest ridge",
+					"halflings are tribal people who maintain their distance from other humanoid races of Athas. They interact little with the Seven Cities or the people of the desert and are notorious for eating captured enemies. They're not above stealing livestock or ambushing unwary travelers to remedy an empty cook pot. Most halflings want nothing to do with outsiders, though. They defend their home with poisoned darts and primal magic.",
+					"Some halflings roam the desert, although they are a rare sight in the Seven Cities. Small bands venture down from the Forest Ridge and find employment as guides, trackers, hunters, and occasionally slavers. Individual halflings indulge their wanderlust by exploring unfamiliar areas of the world. On occasion, bloodthirsty renegade tribes aggressively raid villages or waylay caravans in the vast wastes.",
+					"Lore",
+					"Halflings are among the oldest of the speaking peoples of Athas, and they have a rich oral tradition, a deep understanding of nature, and a complex culture. Halfling tribes on Athas openly practice cannibalism, though usually as a ritualistic matter. Though they rarely deal with outsiders, halflings have been known to work with others for mutual gain. However, anyone who breaks an oath to a halfling tribe will find himself or herself quickly pursued by a band of head hunters. These marauders pose a threat to any traveler who wanders into their hunting grounds.",
+					"Encounters",
+					"Halflings distrust other intelligent humanoids and are rarely found in their company. They do take forest monsters as pets, domesticating drakes, griffons, kirres, panthers, and similar beasts."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/pvwEN05.png"
+						}
+					}
+				]
+			},
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"As masters of ambush, forest runners embody the halfling reputation for stealth and cunning. Whether patrolling halfling lands or wandering the wastes, they harry enemies rather than engaging them in pitched battles. Fierce warriors, forest runners do not fear enemies even two or three times their size. They rely on stealth, poison, teamwork, and pure savagery to defeat their foes. They favor moving up to their enemies and then using strike and slip away to vanish back into the surrounding terrain."
+					]
+				},
+				{
+					"name": "Forest Stalker",
+					"entries": [
+						"The Halfling can move through nonmagical terrain without any extra movement cost. The Halfling has advantages on Dexterity (Stealth) and Wisdom (Survival) checks made in the forest."
+					]
+				},
+				{
+					"name": "Naturally Stealthy",
+					"entries": [
+						"The Halfling can attempt to hide even when he is obscured by a creature only one size larger than him."
+					]
+				},
+				{
+					"name": "Sneak Attack (1/Turn)",
+					"entries": [
+						"The halfling deals an extra 9 ({@damage 3d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the halfling that isn't incapacitated and the halfling doesn't have disadvantage on the attack roll."
+					]
+				}
+			],
+			"shortName": "Halfling Forest Runner",
+			"languages": [
+				"Common",
+				"Halfling"
+			],
+			"languageTags": [
+				"C",
+				"H"
+			],
+			"skill": {
+				"nature": "+4",
+				"perception": "+4",
+				"stealth": "+7",
+				"survival": "+4"
+			},
+			"traitTags": [
+				"Sneak Attack"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The halfling makes two melee or range attack."
+					]
+				},
+				{
+					"name": "Bone Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage and the target must make a {@dc 10} Constitution saving throw, taking 4 ({@damage 2d4}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Blowgun",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 25/100 ft., one target. {@h}6 ({@damage 1}) piercing damage and the target must make a {@dc 11} Constitution saving throw, taking 6 ({@damage 2d6}) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but {@condition poisoned} for 1 hour, even after regaining hit points, and is {@condition paralyzed} while {@condition poisoned} in this way."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S",
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			],
+			"conditionInflict": [
+				"poisoned",
+				"paralyzed"
+			],
+			"environment": [
+				"desert",
+				"forest",
+				"grassland",
+				"swamp",
+				"urban"
+			],
+			"tokenUrl": "https://i.imgur.com/u7SUJ3e.png",
+			"isNpc": true
+		},
+		{
+			"name": "DARKSUNCREATURE - Halfling Headhunter",
+			"size": "S",
+			"type": "humanoid",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d6 + 28",
+				"average": 75
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 14,
+			"dex": 18,
+			"con": 14,
+			"int": 10,
+			"wis": 16,
+			"cha": 11,
+			"passive": 16,
+			"cr": "7",
+			"fluff": {
+				"entries": [
+					"Natives of the rain-kissed forest ridge",
+					"halflings are tribal people who maintain their distance from other humanoid races of Athas. They interact little with the Seven Cities or the people of the desert and are notorious for eating captured enemies. They're not above stealing livestock or ambushing unwary travelers to remedy an empty cook pot. Most halflings want nothing to do with outsiders, though. They defend their home with poisoned darts and primal magic.",
+					"Some halflings roam the desert, although they are a rare sight in the Seven Cities. Small bands venture down from the Forest Ridge and find employment as guides, trackers, hunters, and occasionally slavers. Individual halflings indulge their wanderlust by exploring unfamiliar areas of the world. On occasion, bloodthirsty renegade tribes aggressively raid villages or waylay caravans in the vast wastes.",
+					"Lore",
+					"Halflings are among the oldest of the speaking peoples of Athas, and they have a rich oral tradition, a deep understanding of nature, and a complex culture. Halfling tribes on Athas openly practice cannibalism, though usually as a ritualistic matter. Though they rarely deal with outsiders, halflings have been known to work with others for mutual gain. However, anyone who breaks an oath to a halfling tribe will find himself or herself quickly pursued by a band of head hunters. These marauders pose a threat to any traveler who wanders into their hunting grounds.",
+					"Encounters",
+					"Halflings distrust other intelligent humanoids and are rarely found in their company. They do take forest monsters as pets, domesticating drakes, griffons, kirres, panthers, and similar beasts."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/VqZB6GW.png"
+						}
+					}
+				]
+			},
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"A halfling headhunter is a tribal champion who inspires its fellows through its grisly deeds. A headhunter acts with stealth and ruthless efficiency to dispatch the worst enemies that a halfling tribe might encounter. A headhunter skirts a fight, scouting a good opportunity to rush an enemy leader or ranged combatant. It isn't afraid to withdraw from a fight, provoking opportunity attacks if necessary, to reach a new hiding place and prepare another ambush."
+					]
+				},
+				{
+					"name": "Naturally Stealthy",
+					"entries": [
+						"The Halfling can attempt to hide even when he is obscured by a creature only one size larger than him."
+					]
+				},
+				{
+					"name": "One with the Forest",
+					"entries": [
+						"The Halfling can move through nonmagical terrain without any extra movement cost. The Halfling has advantages on Dexterity (Stealth) and Wisdom (Survival) checks made in the forest. Additionally the Halfling can use the Hide action as a bonus action on its turn. He cannot be tracked by nonmagical means unless he leaves a trail on purpose"
+					]
+				},
+				{
+					"name": "Sneak Attack (1/Turn)",
+					"entries": [
+						"The halfling deals an extra 18 ({@damage 6d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the halfling that isn't incapacitated and the halfling doesn't have disadvantage on the attack roll."
+					]
+				}
+			],
+			"shortName": "Halfling Headhunter",
+			"languages": [
+				"Common",
+				"Halfling"
+			],
+			"languageTags": [
+				"C",
+				"H"
+			],
+			"skill": {
+				"nature": "+6",
+				"perception": "+6",
+				"stealth": "+10",
+				"survival": "+6"
+			},
+			"traitTags": [
+				"Sneak Attack"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The halfling makes two melee or range attack."
+					]
+				},
+				{
+					"name": "Stone Handaxe",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 2}) slashing damage and the target must succeed on a {@dc 13} Constitution saving throw or be {@condition poisoned} for 1 minute. Until this poison ends, the target is {@condition paralyzed}. The target can repeat the saving throw at the end of each of its turns, ending the poison on itself on a success."
+					]
+				},
+				{
+					"name": "Short Bow",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 80/320 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage and the target must make a {@dc 11} Constitution saving throw, taking 18 ({@damage 4d8}) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but {@condition poisoned} for 1 hour, even after regaining hit points, and is {@condition paralyzed} while {@condition poisoned} in this way."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S",
+				"P",
+				"I"
+			],
+			"environment": [
+				"desert",
+				"forest",
+				"grassland",
+				"swamp",
+				"urban"
+			],
+			"tokenUrl": "https://i.imgur.com/CJEvHr8.png",
+			"isNpc": true,
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The halfling is a 14th-level spellcaster. Its spellcasting ability is Wisdom (spell {@dc 15}, +7 to hit with spell attacks). The halfling has the following ranger spells prepared.",
+						"Spellcasting Ability=WIS",
+						"Global Magic Attack Modifier=7",
+						"Magic Caster Level=14",
+						"Spell Save DC Mod=15"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell ensnaring strike}",
+								"{@spell fog cloud}",
+								"{@spell hunter's mark}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell barkskin}",
+								"{@spell beast sense}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell nondetection}",
+								"{@spell wind walk} (3th level spell)"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell freedom of movement}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CR"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"paralyzed",
+				"poisoned"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Halfling Forest Keeper",
+			"size": "S",
+			"type": "humanoid",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 16,
+					"condition": "with {@spell barkskin|phb}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "10d6 + 20",
+				"average": 55
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 12,
+			"int": 10,
+			"wis": 18,
+			"cha": 14,
+			"passive": 16,
+			"cr": "4",
+			"fluff": {
+				"entries": [
+					"Natives of the rain-kissed forest ridge",
+					"halflings are tribal people who maintain their distance from other humanoid races of Athas. They interact little with the Seven Cities or the people of the desert and are notorious for eating captured enemies. They're not above stealing livestock or ambushing unwary travelers to remedy an empty cook pot. Most halflings want nothing to do with outsiders, though. They defend their home with poisoned darts and primal magic.",
+					"Some halflings roam the desert, although they are a rare sight in the Seven Cities. Small bands venture down from the Forest Ridge and find employment as guides, trackers, hunters, and occasionally slavers. Individual halflings indulge their wanderlust by exploring unfamiliar areas of the world. On occasion, bloodthirsty renegade tribes aggressively raid villages or waylay caravans in the vast wastes.",
+					"Lore",
+					"Halflings are among the oldest of the speaking peoples of Athas, and they have a rich oral tradition, a deep understanding of nature, and a complex culture. Halfling tribes on Athas openly practice cannibalism, though usually as a ritualistic matter. Though they rarely deal with outsiders, halflings have been known to work with others for mutual gain. However, anyone who breaks an oath to a halfling tribe will find himself or herself quickly pursued by a band of head hunters. These marauders pose a threat to any traveler who wanders into their hunting grounds.",
+					"Encounters",
+					"Halflings distrust other intelligent humanoids and are rarely found in their company. They do take forest monsters as pets, domesticating drakes, griffons, kirres, panthers, and similar beasts."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/og1ehbj.png"
+						}
+					}
+				]
+			},
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Shamanistic forest keepers tap both the benevolence and the threat of nature. They wield great influence among their kind, repaying that respect by preserving halfling traditions and lore and by shielding the tribe from harm. Forest keepers prefer to remain at range. They open a battle neutralizing spells, hoping to render a prominent enemy vulnerable to poison attacks from other halflings."
+					]
+				},
+				{
+					"name": "Forest Stalker",
+					"entries": [
+						"The Halfling can move through nonmagical terrain without any extra movement cost. The Halfling has advantages on Dexterity (Stealth) and Wisdom (Survival) checks made in the forest."
+					]
+				},
+				{
+					"name": "Naturally Stealthy",
+					"entries": [
+						"The Halfling can attempt to hide even when he is obscured by a creature only one size larger than him."
+					]
+				}
+			],
+			"shortName": "Halfling Forest Keeper",
+			"languages": [
+				"Common",
+				"Halfling",
+				"Druidic"
+			],
+			"languageTags": [
+				"C",
+				"H",
+				"DU"
+			],
+			"damageTags": [
+				"B"
+			],
+			"environment": [
+				"desert",
+				"forest",
+				"grassland",
+				"swamp",
+				"urban"
+			],
+			"tokenUrl": "https://i.imgur.com/WX7hVXi.png",
+			"isNpc": true,
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The halfling is a 10th-level spellcaster. Its spellcasting ability is Wisdom (spell {@dc 14}, +6 to hit with spell attacks). The halfling has the following druid spells prepared.",
+						"Spellcasting Ability=WIS",
+						"Global Magic Attack Modifier=6",
+						"Magic Caster Level=10",
+						"Spell Save DC Mod=14"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell druidcraft}",
+								"{@spell guidance}",
+								"{@spell poison spray}",
+								"{@spell thorn whip}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell animal friendship}",
+								"{@spell charm person}",
+								"{@spell cure wounds}",
+								"{@spell entangle}",
+								"{@spell healing word}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell barkskin}",
+								"{@spell hold person}",
+								"{@spell spider climb}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell call lightning}",
+								"{@spell dispel magic}",
+								"{@spell feign death}",
+								"{@spell plant growth}",
+								"{@spell wind walk} (3th level spell)"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell confusion}",
+								"{@spell divination}",
+								"{@spell freedom of movement}",
+								"{@spell grasping vine}",
+								"{@spell stoneskin}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell commune with nature}",
+								"{@spell insect plague}",
+								"{@spell mass cure wounds}",
+								"{@spell tree stride}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CD"
+			],
+			"skill": {
+				"medicine": "+6",
+				"nature": "+6",
+				"perception": "+6"
+			},
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"immune": [
+				"poison",
+				{
+					"special": "disease"
+				}
+			],
+			"action": [
+				{
+					"name": "Quarterstaff",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 80/320 ft., one target. {@h}5 ({@damage 1d6 + 2}) bludgeoning damage, or 6 ({@damage 1d8 + 2}) bludgeoning damage if used with both hands."
+					]
+				}
+			],
+			"miscTags": [
+				"RW"
 			]
 		}
 
