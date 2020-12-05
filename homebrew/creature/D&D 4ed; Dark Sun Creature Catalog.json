@@ -14321,6 +14321,652 @@
 				}
 			],
 			"isNpc": true
+		},
+		{
+			"name": "DARKSUNCREATURE - Ghost and Raaig Tomb Spirit",
+			"size": "M",
+			"type": "undead",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				{
+					"alignment": [
+						"L",
+						"G"
+					]
+				},
+				{
+					"alignment": [
+						"N"
+					]
+				},
+				{
+					"alignment": [
+						"E"
+					]
+				}
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "10d8",
+				"average": 50
+			},
+			"speed": {
+				"walk": 0,
+				"fly": 40,
+				"canHover": false
+			},
+			"str": 10,
+			"dex": 15,
+			"con": 10,
+			"int": 10,
+			"wis": 12,
+			"cha": 17,
+			"passive": 11,
+			"cr": "2",
+			"fluff": {
+				"entries": [
+					"In an environment where violent death",
+					"is so common, ghosts frequently haunt sites of great significance or terrible slaughter. Among them are an array of spirits bound to the service of long-forgotten gods. Called raaigs, these ghosts defend ancient shrines, temples, relics, and secrets.",
+					"Lore",
+					"In life, raaigs were devout priests or holy warriors charged with protecting sacred sites or relics. In death they still keep watch, though their charges have crumbled into ruin or vanished. They have been twisted by their ancient oaths into merciless, hateful apparitions that swiftly slay any living intruder. Unlike ghosts or specters, raaigs briefly take solid form to attack, then fade into insubstantiality before foes can retaliate.",
+					"Raaigs haunt old temples. They attack any who set foot in their shrines considering them unbelievers who defile the sacred precinct. Few people on Athas know the ancient names or prayers that can satisfy a raaig's challenge. A given raaig is bound to a limited area or purpose and cannot abandon it to chase intruders even a short distance. A few guardians were so favored by their gods in life that they were granted a tiny spark of divine essence. Called soulflames, these raaigs still embody their gods' will. When a soulflame is badly injured, though, that divine spark escapes, leaving behind a spectral vessel empty of all but despair.",
+					"Encounters",
+					"Intelligent and strong-willed, raaigs assume command over other undead such as mummies, ghosts, or skeletons. Those defending evil temples might ally with demons or devils that once served them. Soulflames are occasionally accompanied by angels that survived the disappearance of Athas's gods by drawing upon the spark of divinity within these blessed spirits."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/A9bTvMQ.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/GVetmyj.png",
+			"environment": [
+				"underdark",
+				"urban"
+			],
+			"shortName": "Tomb Spirit",
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Dust swirls around the broken altar, obscuring the peculiar symbol carved on it. As the cloud surges forward, it takes the form of a human clad in ancient armor. It strikes, and its ghostly weapon slices cleanly through flesh. The tomb spirit chooses one enemy and uses raaia's challenge to force it into single combat, its dread aura keeping the target close. Its weapon temporarily solidifies as it strikes, cutting with a supernatural chill."
+					]
+				},
+				{
+					"name": "Ethereal Sight",
+					"entries": [
+						"The ghost can see 60ft into the Ethereal Plane when it is on the Material Plane, and vice versa."
+					]
+				},
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"The ghost can move through other creatures and objects as if they were difficult terrain. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
+					]
+				}
+			],
+			"languages": [
+				"any languages it knew in life"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"resist": [
+				{
+					"resist": [
+						"acid",
+						"fire",
+						"lightning",
+						"thunder"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons that aren’t silvered"
+				}
+			],
+			"immune": [
+				"cold",
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"traitTags": [
+				"Incorporeal Movement"
+			],
+			"damageTags": [
+				"S",
+				"C",
+				"Y",
+				"O"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The ghost makes two melee attacks."
+					]
+				},
+				{
+					"name": "Chilling Greatblade",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d8}) slashing damage, plus 6 ({@damage 2d6}) cold damage."
+					]
+				},
+				{
+					"name": "Etherealness",
+					"entries": [
+						"The ghost enters the Ethereal Plane from the Material Plane, or vice versa. It is visible on the Material Plane while it is in the Border Ethereal, and vice versa, yet it can't affect or be affected by anything on the other plane."
+					]
+				},
+				{
+					"name": "Raaig’s Challenge",
+					"entries": [
+						"The raaig attempt to compel a creature that he can see and within 30ft into a duel. The creature must make a {@dc 13} Wisdom saving throw. On a failed save, the creature is drawn to the raaig, compelled by a divine spark of power. For one minute, the creature has disadvantage on attack rolls against creatures other than the raaig, and must make the Wisdom saving throw each time it attempts to move to a space that is more than 30 feet away from the raaig; if it succeeds on this saving throw, this spell doesn’t restrict the creature’s movement for that turn. If the creatures fails the saving throw, it takes 3 ({@damage 1d6}) psychic damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"isNpc": true
+		},
+		{
+			"name": "DARKSUNCREATURE - Ghost and Raaig Crypt Lord",
+			"size": "M",
+			"type": "undead",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				{
+					"alignment": [
+						"L",
+						"G"
+					]
+				},
+				{
+					"alignment": [
+						"N"
+					]
+				},
+				{
+					"alignment": [
+						"E"
+					]
+				}
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"Spectral Plate"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d8 + 30",
+				"average": 98
+			},
+			"speed": {
+				"walk": 0,
+				"fly": 40,
+				"canHover": false
+			},
+			"str": 17,
+			"dex": 15,
+			"con": 14,
+			"int": 12,
+			"wis": 18,
+			"cha": 17,
+			"passive": 14,
+			"cr": "7",
+			"fluff": {
+				"entries": [
+					"In an environment where violent death",
+					"is so common, ghosts frequently haunt sites of great significance or terrible slaughter. Among them are an array of spirits bound to the service of long-forgotten gods. Called raaigs, these ghosts defend ancient shrines, temples, relics, and secrets.",
+					"Lore",
+					"In life, raaigs were devout priests or holy warriors charged with protecting sacred sites or relics. In death they still keep watch, though their charges have crumbled into ruin or vanished. They have been twisted by their ancient oaths into merciless, hateful apparitions that swiftly slay any living intruder. Unlike ghosts or specters, raaigs briefly take solid form to attack, then fade into insubstantiality before foes can retaliate.",
+					"Raaigs haunt old temples. They attack any who set foot in their shrines considering them unbelievers who defile the sacred precinct. Few people on Athas know the ancient names or prayers that can satisfy a raaig's challenge. A given raaig is bound to a limited area or purpose and cannot abandon it to chase intruders even a short distance. A few guardians were so favored by their gods in life that they were granted a tiny spark of divine essence. Called soulflames, these raaigs still embody their gods' will. When a soulflame is badly injured, though, that divine spark escapes, leaving behind a spectral vessel empty of all but despair.",
+					"Encounters",
+					"Intelligent and strong-willed, raaigs assume command over other undead such as mummies, ghosts, or skeletons. Those defending evil temples might ally with demons or devils that once served them. Soulflames are occasionally accompanied by angels that survived the disappearance of Athas's gods by drawing upon the spark of divinity within these blessed spirits."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/9E1hCkw.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/CIc6ByJ.png",
+			"environment": [
+				"underdark",
+				"urban"
+			],
+			"shortName": "Crypt Lord",
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Beyond the ranks of undead guardians stands a phantasmal figure clad in heavy armor and a rich mantle. Medallions of office mark it as the spirit of a high priest or a temple champion. A crypt lord fights alongside other raaigs, directing the battle. It moves allies into advantageous positions with ghostly command and support them with his divine powers."
+					]
+				},
+				{
+					"name": "Ethereal Sight",
+					"entries": [
+						"The ghost can see 60ft into the Ethereal Plane when it is on the Material Plane, and vice versa."
+					]
+				},
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"The ghost can move through other creatures and objects as if they were difficult terrain. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
+					]
+				}
+			],
+			"languages": [
+				"any languages it knew in life"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"resist": [
+				{
+					"resist": [
+						"acid",
+						"fire",
+						"lightning",
+						"thunder"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons that aren’t silvered"
+				}
+			],
+			"immune": [
+				"cold",
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"traitTags": [
+				"Incorporeal Movement"
+			],
+			"damageTags": [
+				"S",
+				"C",
+				"O"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The ghost makes two melee attacks."
+					]
+				},
+				{
+					"name": "Chilling Greatblade",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 3}) slashing damage, plus 15 ({@damage 5d6}) cold damage."
+					]
+				},
+				{
+					"name": "Etherealness",
+					"entries": [
+						"The ghost enters the Ethereal Plane from the Material Plane, or vice versa. It is visible on the Material Plane while it is in the Border Ethereal, and vice versa, yet it can't affect or be affected by anything on the other plane."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"isNpc": true,
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The raaig lord is a 10th level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 14}, +7 to hit with spell attacks). The raaig lord has the following cleric spells prepared.",
+						"Spellcasting Ability=WIS",
+						"Global Magic Attack Modifier=7",
+						"Magic Caster Level=10",
+						"Spell Save DC Mod=14"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell sacred flame}",
+								"{@spell thaumaturgy}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell guiding bolt}",
+								"{@spell inflict wounds}",
+								"{@spell shield of faith}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell blindness/deafness}",
+								"{@spell hold person}",
+								"{@spell silence}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell animate dead}",
+								"{@spell dispel magic}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell divination}",
+								"{@spell guardian of faith}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell flame strike}",
+								"{@spell geas}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell blade barrier}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"reaction": [
+				{
+					"name": "Ghostly Command - Commander’s Strike",
+					"entries": [
+						"the ghost direct one of its allies to strike. When it does so it chooses a friendly creature who can see or hear it. That creature can immediately use its reaction to make one weapon attack."
+					]
+				},
+				{
+					"name": "Ghostly Command - Maneuvering Attack",
+					"entries": [
+						"The ghost command one of its allies to move into a more advantageous position. When it does so it chooses a friendly creature who can see or hear it. That creature can use its reaction to move up to half its speed. This move is provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Ghostly Command - Rally",
+					"entries": [
+						"The ghost bolsters the resolve of one of its allies. When it does so it chooses a friendly creature who can see or hear it. That creature gains 10 temporary hit points."
+					]
+				}
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Ghost and Raaig Soulflame",
+			"size": "M",
+			"type": "undead",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				{
+					"alignment": [
+						"L",
+						"G"
+					]
+				},
+				{
+					"alignment": [
+						"N"
+					]
+				},
+				{
+					"alignment": [
+						"E"
+					]
+				}
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"Spectral Plate"
+					]
+				}
+			],
+			"hp": {
+				"formula": "21d8 + 63",
+				"average": 207
+			},
+			"speed": {
+				"walk": 0,
+				"fly": 40,
+				"canHover": false
+			},
+			"str": 21,
+			"dex": 15,
+			"con": 17,
+			"int": 10,
+			"wis": 12,
+			"cha": 17,
+			"passive": 11,
+			"cr": "15",
+			"fluff": {
+				"entries": [
+					"In an environment where violent death",
+					"is so common, ghosts frequently haunt sites of great significance or terrible slaughter. Among them are an array of spirits bound to the service of long-forgotten gods. Called raaigs, these ghosts defend ancient shrines, temples, relics, and secrets.",
+					"Lore",
+					"In life, raaigs were devout priests or holy warriors charged with protecting sacred sites or relics. In death they still keep watch, though their charges have crumbled into ruin or vanished. They have been twisted by their ancient oaths into merciless, hateful apparitions that swiftly slay any living intruder. Unlike ghosts or specters, raaigs briefly take solid form to attack, then fade into insubstantiality before foes can retaliate.",
+					"Raaigs haunt old temples. They attack any who set foot in their shrines considering them unbelievers who defile the sacred precinct. Few people on Athas know the ancient names or prayers that can satisfy a raaig's challenge. A given raaig is bound to a limited area or purpose and cannot abandon it to chase intruders even a short distance. A few guardians were so favored by their gods in life that they were granted a tiny spark of divine essence. Called soulflames, these raaigs still embody their gods' will. When a soulflame is badly injured, though, that divine spark escapes, leaving behind a spectral vessel empty of all but despair.",
+					"Encounters",
+					"Intelligent and strong-willed, raaigs assume command over other undead such as mummies, ghosts, or skeletons. Those defending evil temples might ally with demons or devils that once served them. Soulflames are occasionally accompanied by angels that survived the disappearance of Athas's gods by drawing upon the spark of divinity within these blessed spirits."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/RnPXrxF.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/HmkTJAb.png",
+			"environment": [
+				"underdark",
+				"urban"
+			],
+			"shortName": "Soulflame",
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"A blinding light flares from the foreign symbols on the altar. Within that radiance a humanoid phantom coalesces. Although it looks little different from the other ghosts, vast power emanates from it. Soulflames teleport throughout the enemies' ranks, rarely staying in the same spot. They focus attacks on enemies that pose a greater threat. Once wounded, a soulflame becomes a being of murderous rage. It focuses its attacks on the enemy who wounded it, even if others are dealing more damage."
+					]
+				},
+				{
+					"name": "Ethereal Sight",
+					"entries": [
+						"The ghost can see 60ft into the Ethereal Plane when it is on the Material Plane, and vice versa."
+					]
+				},
+				{
+					"name": "Blazing Soul",
+					"entries": [
+						"The soulflame’s body is wrapped into ghostly cold flames that sears the flesh of its opponents. The flames are shedding bright light in a 10-foot radius and dim light for an additional 10 feet. Whenever a creature within 5 feet of the ghost hits it with a melee attack, it takes 8 ({@damage 2d8}) cold damage."
+					]
+				},
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"The ghost can move through other creatures and objects as if they were difficult terrain. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The raaig’s weapon attacks are magical."
+					]
+				}
+			],
+			"languages": [
+				"any languages it knew in life"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"resist": [
+				{
+					"resist": [
+						"acid",
+						"fire",
+						"lightning",
+						"thunder"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons that aren’t silvered"
+				}
+			],
+			"immune": [
+				"cold",
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"damageTags": [
+				"S",
+				"R",
+				"N",
+				"C",
+				"O"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The ghost makes four melee attacks, two with its divine blade and two with its deathly blade."
+					]
+				},
+				{
+					"name": "Divine Blade",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 5}) slashing damage, plus 15 ({@damage 5d6}) radiant damage."
+					]
+				},
+				{
+					"name": "Deathly Blade",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 5}) slashing damage, plus 15 ({@damage 5d6}) necrotic damage, until the end of the soulflame’s next turn the target regains only half the normal amount of hit points when it receives healing."
+					]
+				},
+				{
+					"name": "Etherealness",
+					"entries": [
+						"The ghost enters the Ethereal Plane from the Material Plane, or vice versa. It is visible on the Material Plane while it is in the Border Ethereal, and vice versa, yet it can't affect or be affected by anything on the other plane."
+					]
+				},
+				{
+					"name": "Fiery Teleport {@recharge 5}",
+					"entries": [
+						"The ghost magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see. His arrival is accompanied with a blast of ghostly cold flames, every creature in a 20ft area surrounding the ghost must make a {@dc 17} Dexterity saving throw, taking 24 ({@damage 8d6}) cold damage on a failed one, or half as much damage with a successful one."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"isNpc": true,
+			"traitTags": [
+				"Incorporeal Movement",
+				"Magic Weapons"
+			]
 		}
 
 
