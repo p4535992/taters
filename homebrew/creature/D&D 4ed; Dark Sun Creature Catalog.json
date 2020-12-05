@@ -19638,6 +19638,222 @@
 				"str": "+6",
 				"con": "+6"
 			}
+		},
+		{
+			"name": "DARKSUNCREATURE - Jhakar",
+			"size": "S",
+			"type": {
+				"type": "beast",
+				"tags": [
+					"reptile"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d6 + 8",
+				"average": 21
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 13,
+			"dex": 12,
+			"con": 15,
+			"int": 2,
+			"wis": 12,
+			"cha": 6,
+			"passive": 15,
+			"cr": "1/2",
+			"fluff": {
+				"entries": [
+					"Small, squat, and pugnacious",
+					"a jhakar has keen senses and a vicious streak. These traits make jhakars exceptional guards and hunting beasts, though no training can ever make them safe to handle. They respect strength and pain, but also nurse grudges. If a master ever lets down his or her guard, a jhakar is quick to strike.",
+					"Lore",
+					"Jhakar loyalty lasts only as long as a master or pack leader can enforce it. Jhakars turn against their leader at any sign of weakness. They sometimes withdraw from pursuing or finishing prey to fight among themselves, vying for dominance.",
+					"Encounters",
+					"Wild jhakars are social creatures that gather into small packs around a dominant pack leader. \"Tamed\" jhakars can be found serving arena masters, templars, and soldiers, leading the charge into battle. Owning and controlling a jhakar is considered a sign of strength."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/u4TfVnj.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/DglCWNY.png",
+			"environment": [
+				"desert",
+				"underdark"
+			],
+			"isNpc": true,
+			"shortName": "Jhakar",
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Jhakars bound across the battlefield, eager to sink their prodigious teeth into hot flesh. They dart in and deliver a nasty bite before dancing away. Jhakar packs, whether wild or domesticated, work together, with one beast drawing the prey's attention long enough for the rest to leap in and make the kill."
+					]
+				},
+				{
+					"name": "Uncanny Senses",
+					"entries": [
+						"The jhakar sharp senses grant him advantage on Wisdom (Perception) and Wisdom (Survival) checks."
+					]
+				},
+				{
+					"name": "Trapping Jaw",
+					"entries": [
+						"If the jhakar moves at least 20 feet straight toward a target and then hits it with a bite attack on the same turn, the target takes an extra 3 ({@damage 1d6}) piercing damage. If the target is a creature, it must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone} and being {@condition grappled} (escape {@dc 13}). The target cannot stand up until the grapple ends."
+					]
+				}
+			],
+			"skill": {
+				"perception": "+5",
+				"survival": "+5"
+			},
+			"conditionInflict": [
+				"prone"
+			],
+			"damageTags": [
+				"P"
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d6 + 1}) piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"reaction": [
+				{
+					"name": "Bonce away",
+					"entries": [
+						"The jhakar can use its reaction to make a Disengage or Dash action."
+					]
+				}
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Jhakar (version 2)",
+			"size": "S",
+			"type": {
+				"type": "beast",
+				"tags": [
+					"reptile"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d6 + 2",
+				"average": 9
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 14,
+			"con": 12,
+			"int": 1,
+			"wis": 12,
+			"cha": 8,
+			"passive": 11,
+			"cr": "1/4",
+			"fluff": {
+				"entries": [
+					"The jhakar is a powerful reptilian predator that resembles a bulldog in both appearance and manner. Its fierce nature makes it a bane to humanoids and animals alike.",
+					"The wild jhakar hunts in packs. Rarely discriminatory about prey, a jhakar hunts man, elf or halfling as readily as it hunts wild animals. Once it has caught scent of their quarry, its pursuit is relentless. It attacks in one bounding rush, emitting a hiss, similar to a steam kettle, when its prey is in sight."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/lfGdVPv.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/IxW0pzL.png",
+			"environment": [
+				"desert",
+				"underdark"
+			],
+			"isNpc": true,
+			"shortName": "Jhakar (version 2)",
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Jhakars bound across the battlefield, eager to sink their prodigious teeth into hot flesh. They dart in and deliver a nasty bite before dancing away. Jhakar packs, whether wild or domesticated, work together, with one beast drawing the prey's attention long enough for the rest to leap in and make the kill."
+					]
+				},
+				{
+					"name": "Uncanny Senses",
+					"entries": [
+						"The jhakar sharp senses grant him advantage on Wisdom (Perception) and Wisdom (Survival) checks."
+					]
+				},
+				{
+					"name": "Trapping Jaw",
+					"entries": [
+						"If the jhakar moves at least 20 feet straight toward a target and then hits it with a bite attack on the same turn, the target takes an extra 3 ({@damage 1d6}) piercing damage. If the target is a creature, it must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone} and being {@condition grappled} (escape {@dc 13}). The target cannot stand up until the grapple ends."
+					]
+				}
+			],
+			"skill": {
+				"survival": "+5",
+				"athletics": "+6"
+			},
+			"conditionInflict": [
+				"prone"
+			],
+			"damageTags": [
+				"P"
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"save": {
+				"str": "+4",
+				"cha": "+1"
+			}
 		}
 
 
