@@ -19172,7 +19172,7 @@
 				{
 					"name": "Manifest Fear {@recharge 4}",
 					"entries": [
-						"The id fiend gaze at a creature of its choice within 60ft that he can see, wracking it with terrible pain and psionic terror. The target must make a {@dc 16} Wisdom saving throw. On a failed save, it takes {@damage 3d6} psychic damage and is {@condition frightened}, using immediately its reaction, if available, to move as far as its speed allows away from the id fiend. The creature doesn’t move into obviously dangerous ground, such as a fire or a pit. On a successful save, the target takes half as much damage and doesn’t have to move away."
+						"The id fiend gaze at a creature of its choice within 60ft that he can see, wracking it with terrible pain and psionic terror. The target must make a {@dc 16} Wisdom saving throw. On a failed save, it takes {@damage 3d6} psychic damage and is {@condition frightened}, using immediately its reaction, if available, to move as far as its speed allows away from the id fiend. The creature doesn't move into obviously dangerous ground, such as a fire or a pit. On a successful save, the target takes half as much damage and doesn't have to move away."
 					]
 				}
 			],
@@ -19202,6 +19202,441 @@
 						}
 					}
 				]
+			}
+		},
+		{
+			"name": "DARKSUNCREATURE - Id Fiend (version 2)",
+			"size": "L",
+			"type": "beast",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d10 + 20",
+				"average": 75
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 12,
+			"con": 14,
+			"int": 14,
+			"wis": 16,
+			"cha": 11,
+			"passive": 15,
+			"cr": "5",
+			"shortName": "Id Fiend (version 2)",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"save": {
+				"str": "+4",
+				"wis": "+6",
+				"int": "+5"
+			},
+			"skill": {
+				"perception": "+5",
+				"stealth": "+6",
+				"intimidation": "+5"
+			},
+			"resist": [],
+			"conditionImmune": [],
+			"damageTags": [
+				"S",
+				"P",
+				"Y"
+			],
+			"isNpc": true,
+			"environment": [
+				"desert",
+				"forest",
+				"swamp"
+			],
+			"tokenUrl": "https://i.imgur.com/y6Ep6TL.png",
+			"fluff": {
+				"entries": [
+					"The id fiend is a psionic predator whose greatest weapon is its ability to draw images of its victims' fears from their minds.",
+					"The id fiend is very much like a gila monster or large lizard in appearance. It has a large, thick, stocky body supported by four muscular legs. All of the id fiends' legs end in four clawed digits, three pointing forward and one backward. The torso of the id fiend usually ranges from 3 to 4 feet in length, ending in a long, tapering tail which is often up to four feet long. The head and neck of the id fiend measure two feet long, with its jaws making up about one foot of that length. The id fiends' skin has a tough leather-like texture, varying in color from light brown and tan, found on specimens encountered in the desert, to a dark olive green, found on specimens encountered in the forests and jungles."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/9jGCPLp.png"
+						}
+					}
+				]
+			},
+			"immune": [
+				"psychic"
+			],
+			"trait": [
+				{
+					"name": "Unsettling Aura",
+					"entries": [
+						"Id Fiend is cloaked in unsettling psychic energy. Any enemy within 60 feet of it that can see it must spend 1 extra foot of movement for every foot it moves toward it. A creature ignores this effect if immune to being {@condition frightened}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Id Fiend makes 3 attacks: two with claw and one attack with bite or one attack with tail and one with bite."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d10 + 2}) slashing damage."
+					]
+				},
+				{
+					"name": "Ego Whip",
+					"entries": [
+						"Id Fiend chooses one creature it can see within 60 feet of it. The target must make an {@dc 14} Intelligence saving throw. On a failed save, the creature takes 18 ({@damage 3d8}) psychic damage, and it is filled with self-doubt, leaving it able to use its action on its next turn only to take the Dodge, Disengage, or Hide action. On a successful saving throw, it takes half as much damage."
+					]
+				},
+				{
+					"name": "Incite Panic {@recharge 5}",
+					"entries": [
+						"Id Fiend chooses up to eight creatures you it see within 90 feet of it that can see it. Targets must make a {@dc 14} Wisdom saving throw. On a failed save, the target is {@condition frightened} for 1 minute. The target can repeat the saving throw at the end of each of its turns. Id beast rolls a die. If it rolls an odd number, the {@condition frightened} target moves half its speed in a random direction and takes no action on that turn, other than to scream in terror. If you roll an even number, the {@condition frightened} target makes one melee attack against a random target within its reach. If there is no such target, it moves half its speed in a random direction and takes no action on that turn."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Inix Juvenile",
+			"size": "M",
+			"type": {
+				"type": "beast",
+				"tags": [
+					"reptile"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d10 + 12",
+				"average": 34
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 16,
+			"dex": 13,
+			"con": 17,
+			"int": 2,
+			"wis": 10,
+			"cha": 6,
+			"passive": 12,
+			"cr": "1",
+			"fluff": {
+				"entries": [
+					"Broad and low to the ground",
+					"an inix is a reptilian behemoth. Used widely as a beast of burden, the inix is capable of incredible feats of strength. lt is tough, plodding, and slow to anger, but once roused, it is nearly unstoppable.",
+					"Lore",
+					"Inixes eat plant matter, carrion, and tiny animals. They prefer to use their claws to dig up food rather than to attack. Inixes are strong and tough but relatively docile. They become hard to handle only if hungry or thirsty.",
+					"Female inixes lay eggs once per year, and they can produce viable eggs without a male. As a result, wild inixes have spread to remote locations and remain plentiful as livestock.",
+					"Encounters",
+					"Inixes travel in small, homogenous clutches of a few adults and juveniles. Domestication of the inix is widespread. Adult inixes make capable draft animals, and juveniles make good pets. Although cantankerous if hungry, an inix attacks only if provoked. It uses its tail to knock a foe down and then darts forward to bite. If it can fight without harassment from other attackers, an adult inix is content to use its powerful jaws to grab a creature."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/jtyQ4o0.png"
+						}
+					}
+				]
+			},
+			"shortName": "Inix Juvenile",
+			"skill": {
+				"perception": "+2"
+			},
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The inix makes two melee attacks, one with its bite, and one with its tail."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d4 + 3}) piercing damage and the target must succeed on a {@dc 12} Constitution saving throw or suffer 9 ({@damage 3d6}) poison damage and being {@condition poisoned} for one minute. Succeeding on the saving throw reduces the damage by half and prevent to become {@condition poisoned}."
+					]
+				},
+				{
+					"name": "Tale",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) bludgeoning damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"I",
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"isNpc": true,
+			"environment": [
+				"desert",
+				"forest",
+				"swamp"
+			],
+			"tokenUrl": "https://i.imgur.com/4oWqKMa.png"
+		},
+		{
+			"name": "DARKSUNCREATURE - Inix Adult",
+			"size": "L",
+			"type": {
+				"type": "beast",
+				"tags": [
+					"reptile"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d10 + 40",
+				"average": 93
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 20,
+			"dex": 13,
+			"con": 20,
+			"int": 2,
+			"wis": 12,
+			"cha": 6,
+			"passive": 13,
+			"cr": "4",
+			"fluff": {
+				"entries": [
+					"Broad and low to the ground",
+					"an inix is a reptilian behemoth. Used widely as a beast of burden, the inix is capable of incredible feats of strength. lt is tough, plodding, and slow to anger, but once roused, it is nearly unstoppable.",
+					"Lore",
+					"Inixes eat plant matter, carrion, and tiny animals. They prefer to use their claws to dig up food rather than to attack. Inixes are strong and tough but relatively docile. They become hard to handle only if hungry or thirsty.",
+					"Female inixes lay eggs once per year, and they can produce viable eggs without a male. As a result, wild inixes have spread to remote locations and remain plentiful as livestock.",
+					"Encounters",
+					"Inixes travel in small, homogenous clutches of a few adults and juveniles. Domestication of the inix is widespread. Adult inixes make capable draft animals, and juveniles make good pets. Although cantankerous if hungry, an inix attacks only if provoked. It uses its tail to knock a foe down and then darts forward to bite. If it can fight without harassment from other attackers, an adult inix is content to use its powerful jaws to grab a creature."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/WhVrx3F.png"
+						}
+					}
+				]
+			},
+			"shortName": "Inix Adult",
+			"skill": {
+				"perception": "+3"
+			},
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The inix makes two melee attacks, one with its bite, and one with its tail."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d8 + 5}) piercing damage and the target must succeed on a {@dc 12} Constitution saving throw or suffer 9 ({@damage 3d6}) poison damage and being {@condition poisoned} for one minute. Succeeding on the saving throw reduces the damage by half and prevent to become {@condition poisoned}."
+					]
+				},
+				{
+					"name": "Tale",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d12 + 5}) bludgeoning damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"I",
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"isNpc": true,
+			"environment": [
+				"desert",
+				"forest",
+				"swamp"
+			],
+			"tokenUrl": "https://i.imgur.com/uXh0jxS.png",
+			"trait": [
+				{
+					"name": "Beast of burden",
+					"entries": [
+						"The inix count has a huge creature when it comes to determine the weight it can carry, push or drag."
+					]
+				}
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Inix",
+			"size": "H",
+			"type": {
+				"type": "beast",
+				"tags": [
+					"reptile"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d12 + 48",
+				"average": 126
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 18,
+			"int": 1,
+			"wis": 10,
+			"cha": 4,
+			"passive": 10,
+			"cr": "4",
+			"fluff": {
+				"entries": [
+					"An inix is a large lizard that falls between kanks and mekillots for sheer size. It weighs about two tons and grows to lengths of 16 feet. The inix's back is protected by a thick shell, while flexible scales cover its underside."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/yVZ1uHn.png"
+						}
+					}
+				]
+			},
+			"shortName": "Inix",
+			"skill": {
+				"athletics": "+9"
+			},
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Tale",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d10 + 4}) slashing damage."
+					]
+				}
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"isNpc": true,
+			"environment": [
+				"desert",
+				"forest",
+				"swamp"
+			],
+			"tokenUrl": "https://i.imgur.com/5hon2QZ.png",
+			"save": {
+				"str": "+6",
+				"con": "+6"
 			}
 		}
 
