@@ -14967,6 +14967,331 @@
 				"Incorporeal Movement",
 				"Magic Weapons"
 			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Giant Beast",
+			"size": "H",
+			"type": "giant",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d12 + 90",
+				"average": 191
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 25,
+			"dex": 10,
+			"con": 22,
+			"int": 10,
+			"wis": 16,
+			"cha": 17,
+			"passive": 17,
+			"cr": "9",
+			"fluff": {
+				"entries": [
+					"Athasian giants dwell in small tribes",
+					"on islands throughout the Sea of Silt, which they guard fiercely. They are capable of traversing the sea's shallower areas, wading through chest-deep terrain to reach their homes.",
+					"Lore",
+					"Many giants on Athas live on islands in the shallower areas of the Sea of Silt. Sometimes they can be bribed into carrying smaller beings as passengers to their islands or to other locations in the sea. Giants are fickle, though, so travelers must take care not to offend them.",
+					"Powerful masters of the Way created the first beast giants long ago, and the race has persisted, though it is mutable in form. These giants supplement their ferocity with an inborn psychic power that lets them read the mind of an enemy, allowing them to copy a foe's powerful attack.",
+					"Shadow giants are remnants of giants killed by the sorcerer-kings in ancient wars. Their hate-filled spirits have found a home in the deathly substance of the Gray.",
+					"Encounters",
+					"Beast giants associate with others of their kind as well as with hill giants, firbolgs, brohgs, and other giant kin. Shadow giants are loners, feared by other giants, though on occasion a brohg renegade seeks one out to learn secrets of arcane magic. Shadow giants might ally with their elementally infused cousins, especially the powerful fire and stone giants in the Sea of Silt."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/NBFFL9c.png"
+						}
+					}
+				]
+			},
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Each of these hulking humanoids has the head of a beast, though everyone has slightly different features. The beasts represented are found throughout Athas and include those both living and long extinct. When faced with a threat, a beast giant reacts with savage ferocity. It uses its bite to start a fight and reacts to a serious injury with psionic retention, turning that attack against a foe on its next turn."
+					]
+				},
+				{
+					"name": "Psionic Retention",
+					"entries": [
+						"The giant can store an attack that he was wounded or afflicted by. The attack is retained until the end of the giant's next turn. A retained attack duplicates the initial attack's damage and any harmful effects as though originating from the initial enemy (DC, spell level…), but not its range or targets. The giant can inflict the same damage and effects of the retained attack on an enemy it hits with its bite."
+					]
+				}
+			],
+			"environment": [
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"mountain",
+				"underdark",
+				"urban"
+			],
+			"isNpc": true,
+			"tokenUrl": "https://i.imgur.com/VnXty06.png",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Giant"
+			],
+			"languageTags": [
+				"C",
+				"GI"
+			],
+			"skill": {
+				"insight": "+7",
+				"perception": "+7"
+			},
+			"save": {
+				"con": "+10",
+				"wis": "+7",
+				"cha": "+7"
+			},
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The giant makes two melee attacks with its bite."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}19 ({@damage 3d8 + 7}) piercing damage and the giant can release the effect stored with psionic retention."
+					]
+				},
+				{
+					"name": "Rock",
+					"entries": [
+						"{@atk rw} {@hit 11} to hit, range 60/240 ft., one target. {@h}29 ({@damage 4d10 + 7}) bludgeoning damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"shortName": "Giant Beast"
+		},
+		{
+			"name": "DARKSUNCREATURE - Giant Shadow",
+			"size": "H",
+			"type": {
+				"type": "undead",
+				"tags": [
+					"giant"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d12 + 90",
+				"average": 220
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 22,
+			"dex": 13,
+			"con": 20,
+			"int": 10,
+			"wis": 9,
+			"cha": 17,
+			"passive": 17,
+			"cr": "13",
+			"fluff": {
+				"entries": [
+					"Athasian giants dwell in small tribes",
+					"on islands throughout the Sea of Silt, which they guard fiercely. They are capable of traversing the sea's shallower areas, wading through chest-deep terrain to reach their homes.",
+					"Lore",
+					"Many giants on Athas live on islands in the shallower areas of the Sea of Silt. Sometimes they can be bribed into carrying smaller beings as passengers to their islands or to other locations in the sea. Giants are fickle, though, so travelers must take care not to offend them.",
+					"Powerful masters of the Way created the first beast giants long ago, and the race has persisted, though it is mutable in form. These giants supplement their ferocity with an inborn psychic power that lets them read the mind of an enemy, allowing them to copy a foe's powerful attack.",
+					"Shadow giants are remnants of giants killed by the sorcerer-kings in ancient wars. Their hate-filled spirits have found a home in the deathly substance of the Gray.",
+					"Encounters",
+					"Beast giants associate with others of their kind as well as with hill giants, firbolgs, brohgs, and other giant kin. Shadow giants are loners, feared by other giants, though on occasion a brohg renegade seeks one out to learn secrets of arcane magic. Shadow giants might ally with their elementally infused cousins, especially the powerful fire and stone giants in the Sea of Silt."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/JUDHrQi.png"
+						}
+					}
+				]
+			},
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"A vengeful spirit that seeks retribution for an ancient slaughter, this undead giant resembles a tall, thin shadow cast against a wall. A shadow giant attack in priority the foe that has hurt it the most. It tries to keep the target within reach so it can strand that foe in the Gray with cast into shadow."
+					]
+				},
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"The giant can move through other creatures and objects as if they were difficult terrain. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
+					]
+				},
+				{
+					"name": "Light Sensitivity",
+					"entries": [
+						"While in bright light, the giant has disadvantage on attack roll s, as well as on Wisdom (Perception) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Shadow Stealth",
+					"entries": [
+						"While in dim light or darkness, the giant can take the Hide action as a bonus action."
+					]
+				}
+			],
+			"environment": [
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"mountain",
+				"underdark",
+				"urban"
+			],
+			"isNpc": true,
+			"tokenUrl": "https://i.imgur.com/cWXGt3H.png",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Giant"
+			],
+			"languageTags": [
+				"C",
+				"GI"
+			],
+			"save": {
+				"con": "+9",
+				"cha": "+7",
+				"str": "+10"
+			},
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The giant makes two melee attacks with its necrotic touch."
+					]
+				},
+				{
+					"name": "Necrotic Touch",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}21 ({@damage 4d8 + 6}) necrotic damage and the target must succeed on a {@dc 17} Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+					]
+				},
+				{
+					"name": "Cast Into Shadow {@recharge 5}",
+					"entries": [
+						"The shadow giant use this capacity to banish an unwilling creature to the Grey. The giant chooses a creature within its reach and make a melee spell attack against it (+7 spell attack). On a hit, the creature must make a {@dc 17} Charisma saving throw. If the creature fails this save, it is transported to a random location on the plane of the Grey. A creature so transported must find its own way back to your current plane of existence."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"N",
+				"O"
+			],
+			"shortName": "Giant Shadow",
+			"skill": {
+				"perception": "+7",
+				"stealth": "+9"
+			},
+			"vulnerable": [
+				"radiant"
+			],
+			"resist": [
+				{
+					"resist": [
+						"acid",
+						"fire",
+						"lightning",
+						"thunder"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons that aren’t silvered"
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"traitTags": [
+				"Incorporeal Movement",
+				"Light Sensitivity"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			]
 		}
 
 
