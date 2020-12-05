@@ -19059,6 +19059,150 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Id Fiend",
+			"size": "L",
+			"type": "aberration",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d10 + 100",
+				"average": 242
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 19,
+			"dex": 10,
+			"con": 18,
+			"int": 13,
+			"wis": 16,
+			"cha": 10,
+			"passive": 17,
+			"cr": "11",
+			"shortName": "Id Fiend",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"save": {
+				"str": "+8",
+				"con": "+8",
+				"wis": "+7"
+			},
+			"skill": {
+				"perception": "+7",
+				"stealth": "+8"
+			},
+			"resist": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"frightened"
+			],
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Terrors come to life when an id fiend is near. Shadows darken and writhe, the ground crawls with vermin, and strange sounds echo all around. Against reason, a creature's deepest fears skulk nearby, lurking behind rocks or whispering from shadows. The id fiend magnifies the sensations until its prey can bear these fears no longer. Once gripped with terror, the id fiend's target comes to accept its doom."
+					]
+				},
+				{
+					"name": "Dread Aura",
+					"entries": [
+						"The Id Fiend presence stirs a primal fear inside any creature within 60ft of it. Every creature inside the area has disadvantage on attack rolls, Wisdom, Intelligence and Charisma checks and saving throws. Creatures that are immune to being {@condition frightened} are immune to this effect."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The id fiend makes four melee attacks, one with its bite, two with its claws and one with its spiked tail."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d8 + 4}) piercing damage and the target must succeed on a {@dc 16} Constitution saving throw or be {@condition poisoned} for 1 minute. Until this poison ends, the target is {@condition paralyzed}. The target can repeat the saving throw at the end of each of its turns, ending the poison on itself on a success."
+					]
+				},
+				{
+					"name": "Spiked Tale",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d10 + 4}) piercing damage and target must succeed on a {@dc 16} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"paralyzed",
+				"poisoned",
+				"prone"
+			],
+			"reaction": [
+				{
+					"name": "Manifest Fear {@recharge 4}",
+					"entries": [
+						"The id fiend gaze at a creature of its choice within 60ft that he can see, wracking it with terrible pain and psionic terror. The target must make a {@dc 16} Wisdom saving throw. On a failed save, it takes {@damage 3d6} psychic damage and is {@condition frightened}, using immediately its reaction, if available, to move as far as its speed allows away from the id fiend. The creature doesn’t move into obviously dangerous ground, such as a fire or a pit. On a successful save, the target takes half as much damage and doesn’t have to move away."
+					]
+				}
+			],
+			"isNpc": true,
+			"environment": [
+				"desert",
+				"forest",
+				"swamp"
+			],
+			"tokenUrl": "https://i.imgur.com/JtIb6r7.png",
+			"fluff": {
+				"entries": [
+					"Fear on Athas",
+					"is embodied in many tangible forms. Just as debilitating are the fears the mind conjures the anticipation, the dread, and the worry. Unknown, perhaps unknowable, dangers lie in wait on all sides: Boulders conceal vicious predators, a gloomy cave harbors cruel slave hunters, and forest canopies shadow far more than shrubs. The id fiend revels in these doubts, using them against its prey, magnifying anxieties until the line between fantasy and reality is shattered.",
+					"Lore",
+					"Instructors at the House of the Mind in Draj pay top coin for living id fiend specimens. They use a number of the fiend's organs and fluids in concoctions that awaken latent talent in their students. Most mixtures distilled by these seers and alchemists are of dubious purpose. Still, the id fiend's cranial fluid is a key component of terror ichor.",
+					"Encounters",
+					"Despite its monstrous appearance, an id fiend is intelligent and not above associating with other creatures. Still, such alliances (if they truly are alliances) are short-lived. A fiend's mere presence is often enough to set the dimmest creature's nerves on edge.",
+					"When an id fiend is encountered with other creatures, they might be unwitting servants, seeing their fears manifested in the adventurers. If the party destroys the id fiend first, the other opponents might stand down, flee, or even befriend the heroes for a time."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/0BUrsNG.png"
+						}
+					}
+				]
+			}
 		}
 
 
