@@ -18374,7 +18374,7 @@
 				{
 					"ac": 14,
 					"from": [
-						"hide armor"
+						"{@item hide armor|phb}"
 					]
 				}
 			],
@@ -21190,6 +21190,415 @@
 				"MW",
 				"RCH",
 				"RW"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Mul Chainfighter",
+			"size": "M",
+			"type": "humanoid",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d8 + 40",
+				"average": 72
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 18,
+			"int": 10,
+			"wis": 11,
+			"cha": 10,
+			"passive": 10,
+			"cr": "3",
+			"fluff": {
+				"entries": [
+					"Bred by sorcerer-kings",
+					"muls combine what many consider the best traits of dwarves and humans. They are hardy, strong, resourceful, and quick to anger. With extensive and rigorous training, they make ideal soldiers.",
+					"Lore",
+					"A mul's performance in combat is never in question. But even the best gladiators and slaves are intractable and difficult to control. Many kill or maim their handlers. Nobles tolerate obstinate mul slaves because they make excellent warriors and draw crowds to the arenas. A powerful mul often takes command among slave gangs, substituting strength and ferocity for more traditional leadership skills. Many muls, unwilling to remain beneath the heel of another race, flee the cities to form savage desert tribes or stand as figureheads in resistances against the rule of the sorcerer-kings.",
+					"Muls mingle with other races, though humans and dwarves have little love for the creatures. Free muls become raiders, gang enforcers, or mercenaries, lending their superior strength and stamina to whatever force they join."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/NwHSEqf.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/MFXwuVp.png",
+			"shortName": "Mul Chainfighter",
+			"languages": [
+				"Common",
+				"Dwarvish"
+			],
+			"languageTags": [
+				"C",
+				"D"
+			],
+			"save": {
+				"str": "+5",
+				"con": "+6"
+			},
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"The slight is not egregious-a sharp word uttered carelessly, perhaps. Even so, the mul furrows its bald brow in anger and then looses its cahulaks. Cahulaks are favored by mul mercenaries, enforcers, and bodyguards. Muls use these weapons to bring foes close before savagely constricting them."
+					]
+				},
+				{
+					"name": "Incredible Toughness",
+					"entries": [
+						"The mul maximum hit point increase by 1 per level. The mul has advantage on saving throws against poison, as well as to resist being {@condition charmed} or {@condition paralyzed}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The mul makes two melee attacks with its chain."
+					]
+				},
+				{
+					"name": "Chain",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage and the target must make a {@dc 14} Constitution saving throw, or be knocked {@condition prone}."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"isNpc": true,
+			"environment": [
+				"desert",
+				"forest",
+				"hill",
+				"mountain",
+				"urban"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Mul Savage",
+			"size": "M",
+			"type": "humanoid",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item hide armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d8 + 60",
+				"average": 104
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 18,
+			"int": 10,
+			"wis": 11,
+			"cha": 10,
+			"passive": 10,
+			"cr": "6",
+			"fluff": {
+				"entries": [
+					"Bred by sorcerer-kings",
+					"muls combine what many consider the best traits of dwarves and humans. They are hardy, strong, resourceful, and quick to anger. With extensive and rigorous training, they make ideal soldiers.",
+					"Lore",
+					"A mul's performance in combat is never in question. But even the best gladiators and slaves are intractable and difficult to control. Many kill or maim their handlers. Nobles tolerate obstinate mul slaves because they make excellent warriors and draw crowds to the arenas. A powerful mul often takes command among slave gangs, substituting strength and ferocity for more traditional leadership skills. Many muls, unwilling to remain beneath the heel of another race, flee the cities to form savage desert tribes or stand as figureheads in resistances against the rule of the sorcerer-kings.",
+					"Muls mingle with other races, though humans and dwarves have little love for the creatures. Free muls become raiders, gang enforcers, or mercenaries, lending their superior strength and stamina to whatever force they join."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/tD8wLDU.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/w7B8enx.png",
+			"shortName": "Mul Savage",
+			"languages": [
+				"Common",
+				"Dwarvish"
+			],
+			"languageTags": [
+				"C",
+				"D"
+			],
+			"save": {
+				"str": "+7",
+				"con": "+7"
+			},
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Scars mar the mul's sun-blasted flesh like cracks in the rock. The warrior seems a part ofthe desert-and just as unyielding. Mul savages are among the most brutal members of a race known for violence. They batter foes with their clubs, dealing fearsome damage."
+					]
+				},
+				{
+					"name": "Incredible Toughness",
+					"entries": [
+						"The mul maximum hit point increase by 1 per level. The mul has advantage on saving throws against poison, as well as to resist being {@condition charmed} or {@condition paralyzed}."
+					]
+				},
+				{
+					"name": "Reckless",
+					"entries": [
+						"At the start of its turn, the mul can gain advantage on melee weapon attack rolls during that turn, but attack rolls against it have advantage until the start of its next turn."
+					]
+				},
+				{
+					"name": "Relentless Rage",
+					"entries": [
+						"The battle rage of the mul can keep it fighting despite grievous wounds. If it drops to 0 hit points and don’t die outright, it can make a {@dc 10} Constitution saving throw. If it succeeds, it drops to 1 hit point instead. Each time it uses this feature after the first, the DC increases by 5."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The mul makes three melee attacks with its greataxe."
+					]
+				},
+				{
+					"name": "Greataxe",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d12 + 4}) slashing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"isNpc": true,
+			"environment": [
+				"desert",
+				"forest",
+				"hill",
+				"mountain",
+				"urban"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"traitTags": [
+				"Reckless"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Mul Champion",
+			"size": "M",
+			"type": "humanoid",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"chitin half-plate"
+					]
+				}
+			],
+			"hp": {
+				"formula": "17d8 + 75",
+				"average": 148
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 20,
+			"dex": 12,
+			"con": 18,
+			"int": 13,
+			"wis": 11,
+			"cha": 10,
+			"passive": 14,
+			"cr": "10",
+			"fluff": {
+				"entries": [
+					"Bred by sorcerer-kings",
+					"muls combine what many consider the best traits of dwarves and humans. They are hardy, strong, resourceful, and quick to anger. With extensive and rigorous training, they make ideal soldiers.",
+					"Lore",
+					"A mul's performance in combat is never in question. But even the best gladiators and slaves are intractable and difficult to control. Many kill or maim their handlers. Nobles tolerate obstinate mul slaves because they make excellent warriors and draw crowds to the arenas. A powerful mul often takes command among slave gangs, substituting strength and ferocity for more traditional leadership skills. Many muls, unwilling to remain beneath the heel of another race, flee the cities to form savage desert tribes or stand as figureheads in resistances against the rule of the sorcerer-kings.",
+					"Muls mingle with other races, though humans and dwarves have little love for the creatures. Free muls become raiders, gang enforcers, or mercenaries, lending their superior strength and stamina to whatever force they join."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/aW3WcQe.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/ytEa7X8.png",
+			"shortName": "Mul Champion",
+			"languages": [
+				"Common",
+				"Dwarvish"
+			],
+			"languageTags": [
+				"C",
+				"D"
+			],
+			"save": {
+				"str": "+8",
+				"con": "+8",
+				"dex": "+5"
+			},
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"The champion holds its head high and points its chin forward. The warrior's oiled muscles and polished armor gleam beneath the sun. This mul is a symbol of hope to the oppressed and a beacon of defiance against the corrupt elite. Mul champions hurl themselves into melee, inspiring others to take up arms against oppressors and enemies. These muls prefer to set themselves against other martial types, though they hold a particular hatred for spellcasters."
+					]
+				},
+				{
+					"name": "Incredible Toughness",
+					"entries": [
+						"The mul maximum hit point increase by 1 per level. The mul has advantage on saving throws against poison, as well as to resist being {@condition charmed} or {@condition paralyzed}."
+					]
+				},
+				{
+					"name": "Brute",
+					"entries": [
+						"A melee weapon deals one extra die of its damage when the mul hits with it (included in the attack)."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The mul makes four melee attacks with its greatsword or four ranged attacks with its handaxes."
+					]
+				},
+				{
+					"name": "Steel Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}17 ({@damage 4d6 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Handaxe",
+					"entries": [
+						"{@atk mw,rw} {@hit 9} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}8 ({@damage 1d6 + 5}) slashing damage in melee, or 8 ({@damage 1d6 + 5}) slashing damage at range."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S"
+			],
+			"isNpc": true,
+			"environment": [
+				"desert",
+				"forest",
+				"hill",
+				"mountain",
+				"urban"
+			],
+			"skill": {
+				"athletics": "+9",
+				"intimidation": "+4",
+				"insight": "+4",
+				"perception": "+4"
+			},
+			"traitTags": [
+				"Brute"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"reaction": [
+				{
+					"name": "Combat Superiority - Disarming Attack",
+					"entries": [
+						"When the mul hits a creature with a weapon attack, he can attempt to disarm the target, forcing it to drop one item of the mul’schoice that it’s holding. The mul add {@dice 1d10} to the attack’s damage roll, and the target must make a Strength saving throw. On a failed save, it drops the object you choose. The object lands at its feet. The saving throw against the attack is 17 on Constitution."
+					]
+				},
+				{
+					"name": "Combat Superiority - Evasive Footwork",
+					"entries": [
+						"When the mul move, it rolls {@dice 1d10} and add the number rolled to its AC until it stops moving. The saving throw against the attack is 17 on Constitution."
+					]
+				},
+				{
+					"name": "Combat Superiority - Riposte",
+					"entries": [
+						"When a creature misses the mul with a melee attack, it can use its reaction to make a melee weapon attack against the creature. If it hits, it adds {@dice 1d10} to the attack's damage roll. The saving throw against the attack is 17 on Constitution."
+					]
+				},
+				{
+					"name": "Combat Superiority - Trip Attack",
+					"entries": [
+						"When it hits a creature with a weapon attack, the mul can attempt to knock the target down. It adds {@dice 1d10} to the attack’s damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, the target is knocked {@condition prone}. The saving throw against the attack is 17 on Constitution."
+					]
+				}
+			],
+			"conditionInflict": [
+				"prone"
 			]
 		}
 
