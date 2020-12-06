@@ -269,6 +269,33 @@
 				},
 				"If the drake dies, these effects fade over the course of {@dice 1d10} days."
 			]
+		},
+		{
+			"name": "LairActionsMegapede",
+			"source": "DarkSunCreatureCatalog",
+			"lairActions": [
+				"On initiative count 20 (losing initiative ties), the megapede takes a lair action to cause one of the following effects; the megapede can't use the same effect two rounds in a row:",
+				{
+					"type": "list",
+					"items": [
+						"Large web spreads from megapede. Each creature within 60 feet of the megapede must succeed on a DC 15 Dexterity saving throw or be restrained by webbing. As an action, the restrained target can make a DC 15 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 20; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).",
+						"A cloud of swarming insects fills a 20-foot-radius sphere centered on a point the megapede chooses within 120 feet of it. The cloud spreads around corners and remains until the megapede dismisses it as an action, uses this lair action again, or dies. The cloud is lightly obscured. Any creature in the cloud when it appears must make on a DC 15 Constitution saving throw, taking 10 (3d6) piercing damage on a failed save, or half as much damage on a successful one. A creature that ends its turn in the cloud takes 10 (3d6) piercing damage.",
+						"The megapede chooses a 10-foot-square area on the ground that it can see within 120 feet of it. The ground in that area turns into 3-foot-deep quicksand. Each creature on the ground in that area when the quicksand appears must succeed on a DC 15 Dexterity saving throw or sink into the quicksand and become restrained. A creature can take an action to attempt a DC 15 Strength check, freeing itself or another creature within its reach and ending the restrained condition on a success. Moving 1 foot in the quicksand costs 2 feet of movement. On initiative count 20 on the next round, the quicksand hardens, and the Strength DC to work free increases to 20."
+
+					]
+				}
+			],
+			"regionalEffects": [
+				"The region containing a megapede's lair is constantly shaken by megapede underground activity, which creates one or more of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"Earth is much softer within 6 miles of the megapede's lair.",
+						"Small earthquakes are common within 1 miles of the megapede's lair."
+					]
+				},
+				"If the megapede dies, earthquakes fade over the course of {@dice 1d10} days."
+			]
 		}
 	],
 	"monster": [
@@ -20348,6 +20375,600 @@
 			"isNpc": true,
 			"miscTags": [
 				"MW"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Kirre",
+			"size": "L",
+			"type": "beast",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d10 + 28",
+				"average": 71
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 18,
+			"dex": 19,
+			"con": 19,
+			"int": 6,
+			"wis": 15,
+			"cha": 10,
+			"passive": 16,
+			"cr": "3",
+			"fluff": {
+				"entries": [
+					"Pawing silently through emerald shadows",
+					"the leonine kirre stalks its prey. Muscles ripple beneath striped fur as eight legs tread closer to an unsuspecting victim. The forest quiets, and the air grows still-waiting for the mighty predator to claim its meal.",
+					"A kirre is one of many breeds (others include the tigone and the reptilian lirr) believed to have evolved from antiquity's great cats. Kirres infest Athas's rare forests and jungles. Prides can be found in small numbers throughout the Crescent Forest or in the Forest Ridge, where they trouble halflings.",
+					"Lore",
+					"Kirres are no ordinary dumb beasts. They have a strange, feral cunning and patience, when not overly hungry. They are able to assess their opponents, identifying weapons, gear, and health. They adjust their tactics depending on the creature they hunt. They might make noises to unnerve their enemies and drive them into foolish actions. They could also be silent, keeping to the shadows until it is time to strike. They watch and wait or hit and run as circumstances allow, delaying their final assault until the heat and sun have taken their toll.",
+					"Encounters",
+					"Kirres hunt in packs, stalking creatures for several hours, learning their prey's capacities, and wearing them down. They refuse to hunt with less intelligent allies, treating them as prey instead. The beasts sometimes accept humanoids as pack mates. They are found in the company of halflings most often, but wilderness goliath and gith tribes also regularly hunt with kirres."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/hd6X4dY.png"
+						}
+					}
+				]
+			},
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"A kirre is a cautious hunter, watching and tracking its prey for miles before engaging. During the hunt, the kirre stays back, growling and chirping to rattle the quarry. As the kirre grows hungry and its prey grows fatigued, the beast draws closer. The kirre attacks only when the quarry is weakened or distracted, or when it appears the prey might escape. The kirre leaps at its prey, raking with its claws before springing away. When it closes for good, the beast viciously rips its victim apart."
+					]
+				},
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"The kirre has advantage on Wisdom (Perception) checks that rely on smell."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The kirre has advantage on an attack roll against a creature if at least one of the kirre’s allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Pounce",
+					"entries": [
+						"If the lion moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a {@dc 15} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the kirre can make one bite attack against it as a bonus action."
+					]
+				},
+				{
+					"name": "Running Leap",
+					"entries": [
+						"With a 10-foot running start, the lion can long jump up to 25 feet."
+					]
+				}
+			],
+			"shortName": "Kirre",
+			"isNpc": true,
+			"environment": [
+				"desert",
+				"forest",
+				"hill"
+			],
+			"languages": [
+				"understands Common but can’t speak"
+			],
+			"languageTags": [
+				"C"
+			],
+			"tokenUrl": "https://i.imgur.com/X2ccWW5.png",
+			"save": {
+				"str": "+6",
+				"dex": "+6",
+				"con": "+6"
+			},
+			"skill": {
+				"perception": "+6",
+				"stealth": "+8"
+			},
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics",
+				"Pounce"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The kirre makes three melee attacks, one with its bite, one with its claws and one with barbed tail."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Barbed Tail",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Forceful Roar {@recharge 5}",
+					"entries": [
+						"The kirre roar a cone of 15ft, every creatures in the area must make a {@dc 15} Dexterity saving throw, taking 15 ({@damage 5d6}) force damage on a failed one, and half damage on a successful one."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"S",
+				"O"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Kirre (version 2)",
+			"size": "M",
+			"type": "beast",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d8 + 16",
+				"average": 52
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 18,
+			"con": 14,
+			"int": 6,
+			"wis": 14,
+			"cha": 12,
+			"passive": 12,
+			"cr": "3",
+			"fluff": {
+				"entries": [
+					"The kirre is one of the more vicious animals of the forests and jungles of Athas. Resembling a tiger in many ways, the kirre is a beast not to be trifled with.",
+					"At first glance, the kirre looks like a great cat, but upon closer examination, the differences quickly become clear. The kirre is eight feet in length and has eight legs, each ending in paws that sport very sharp claws. The kirre also has large horns on either sides of its head and a sharp barbed tail spike often used as a weapon. The mouth of the kirre is large and has sharp, canine teeth, which are used mostly for tearing food that has been killed. The kirre is a fur-covered animal with coloration similar to a tiger (both are striped). However, where a tiger are is striped in black and orange, the kirre is striped in brown and grey. This coloration is consistent all over the kirre’s body, with the exception of its face, which is all grey.",
+					"Kirres are normally solitary creatures, until the approach of their mating season, at which time a male and female will join and produce offspring. Kirre litters number from three to five young. Kirres are mammals, and females produce milk for their young. Young kirres survive on milk for the first five months, at which point they begin to eat solid food such as small forest animals and other mammals.",
+					"Kirre are a favorite game of many hunting tribes of races who live in the forests of Athas. The meat from kirres is some of the finest on all of Athas, and many seek after it. Aside from a source of food, the kirre also has other uses when killed. The creature’s horns can be cut off and used as spearheads; in some cases, they can be carved into ornate daggers. In addition, the tail of a kirre has a sharp, bone spike at its end that can be fashioned into either an arrowhead or a dart."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/yTefUhm.png"
+						}
+					}
+				]
+			},
+			"shortName": "Kirre (version 2)",
+			"isNpc": true,
+			"environment": [
+				"desert",
+				"forest",
+				"hill"
+			],
+			"tokenUrl": "https://i.imgur.com/cpLQRrN.png",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The kirre makes three melee attacks, one with its bite, one with its claws and one with tail."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d8 + 1})  piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"save": {
+				"dex": "+7",
+				"cha": "+4"
+			},
+			"resist": [
+				"psychic"
+			],
+			"trait": [
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"The kank crawler has advantage on Wisdom (Perception) checks that rely on smell."
+					]
+				},
+				{
+					"name": "Psychic Redoubt",
+					"entries": [
+						"Kirre creates a field of protective psychic energy. It has resistance to psychic damage and advantage on Intelligence, Wisdom, and Charisma saving throws."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"reaction": [
+				{
+					"name": "Psychic Backlash",
+					"entries": [
+						"Kirre can impose disadvantage on an attack roll against it if it can see the attacker. If the attack still hits it, the attacker takes 1410 psychic damage."
+					]
+				}
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Megapede",
+			"size": "G",
+			"type": "monstrosity",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d20 + 108",
+				"average": 322
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 20,
+				"climb": 30
+			},
+			"str": 25,
+			"dex": 10,
+			"con": 22,
+			"int": 4,
+			"wis": 10,
+			"cha": 5,
+			"passive": 16,
+			"cr": "16",
+			"shortName": "Megapede",
+			"tokenUrl": "https://i.imgur.com/Wp2n8zX.png",
+			"fluff": {
+				"entries": [
+					"Large, predatory creatures",
+					"that have hundreds of legs, tough shells, and intrinsic psionic attributes roam the wastes of Athas. Called megapedes, these insect like monsters live beneath the sands, burrowing swiftly and silently. They appear without warning to attack herd animals and other prey.",
+					"Lore",
+					"Most megapedes lair below the sands of Athas, where they lay eggs in cavernous nests. Some of these mammoth creatures occupy natural caves or tunnels. Many desert wanderers seeking shelter have inadvertently stumbled across megapede lairs; few live long enough to regret the mistake.",
+					"Encounters",
+					"Megapedes are related to cilopses and occasionally share lairs with them. Because both creatures are highly aggressive, mega pedes tolerate the presence of only one or two cilopses in a lair.",
+					"Info",
+					"A savage fighter, the megapede snaps with its clawed legs and poisonous mandibles. The beast activates its inherent psionic powers, catching foes off guard. A megapede is especially dangerous when its egg clutch is endangered."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/1IyP4yn.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"coastal",
+				"desert",
+				"underdark"
+			],
+			"isNpc": true,
+			"senses": [
+				"blindsight 60 ft.",
+				"tremorsense 60 ft."
+			],
+			"senseTags": [
+				"B",
+				"T"
+			],
+			"skill": {
+				"perception": "+6"
+			},
+			"save": {
+				"con": "+10",
+				"wis": "+4"
+			},
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The megapede makes three melee attacks, one with its mandible and two with its pincers."
+					]
+				},
+				{
+					"name": "Mandible",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}24 ({@damage 4d8 + 7}) piercing damage and the target must make a {@dc 18} Constitution saving throw, taking 30 ({@damage 10d6}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Pincers",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d8 + 7}) piercing damage if the target is Medium or smaller, it is {@condition grappled} (escape {@dc 18}). Until this grapple ends, the target is {@condition restrained}."
+					]
+				},
+				{
+					"name": "Psionic Detonation {@recharge 5}",
+					"entries": [
+						"A wave of armful psychic energy emanate from the megapede. Each creature in a 60ft radius from the monster must make a {@dc 18} Wisdom saving throws, taking 50 ({@damage 10d10}) psychic damage on a failure or half as much on a successful one. Additionally a creature failing the saving throw is {@condition stunned} until the end of the megapede’s next turn."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"I",
+				"Y"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"restrained",
+				"grappled",
+				"stunned"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Megapede (version 2)",
+			"size": "G",
+			"type": "beast",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d20 + 96",
+				"average": 222
+			},
+			"speed": {
+				"walk": 40,
+				"burrow": 30,
+				"climb": 40
+			},
+			"str": 25,
+			"dex": 11,
+			"con": 26,
+			"int": 1,
+			"wis": 14,
+			"cha": 6,
+			"passive": 12,
+			"cr": "18",
+			"shortName": "Megapede (version 2)",
+			"tokenUrl": "https://i.imgur.com/cmDaH9U.png",
+			"fluff": {
+				"entries": [
+					"Megapedes are colossal centipedes that roam the sandy deserts of Athas. Megapedes are very similar to normal centipedes in all ways except in size. They have a very long (100 to 150 feet), segmented body which sports a pair of legs nearly every two feet. These legs are five feet in length and have flexible claws at their ends. The body of a megapede is covered with a fur-covered, bulbous skin that serves as a pseudo-exoskeleton.",
+					"The megapedes of Athas are, with the exceptions of the Dragon and Nightmare Beasts, the most dangerous feature of travelling across the deserts of this harsh world.",
+					"Because of their sheer size, megapedes cannot normally hide their presence. Most, however, live beneath the sands of the desert, only surfacing to feed on unfortunate passers-by. Herds of erdlus and even kanks are among the favorite foods of megapedes, though they often survive on vegetation alone for weeks on end.",
+					"A Megapede's Lair",
+					"When a megapede is ready to lay eggs, it will find an isolated area, if possible in the rocky barrens of the Tablelands, and begin to make a cocoon in which to place its eggs. Up to three eggs can be placed within one cocoon, which often reaches near 60 feet in length. A cocoon will remain for four to five weeks before bearing young megapedes. At birth, a megapede is 20 to 30 feet long, growing to its full size within three months after birth. While not especially protective of its cocoon, a megapede, which has laid eggs, will fight off any creature that threatens them, mostly out of instinct."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/EWWdK7G.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"coastal",
+				"desert",
+				"underdark"
+			],
+			"isNpc": true,
+			"senses": [
+				"blindsight 120 ft.",
+				"tremorsense 120 ft."
+			],
+			"senseTags": [
+				"B",
+				"T"
+			],
+			"skill": {
+				"athletics": "+19",
+				"survival": "+14"
+			},
+			"save": {
+				"con": "+14",
+				"wis": "+9",
+				"str": "+13",
+				"int": "+4"
+			},
+			"damageTags": [
+				"P",
+				"I",
+				"B",
+				"Y"
+			],
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"psychic",
+						"slashing"
+					],
+					"note": "from non magical weapons."
+				}
+			],
+			"conditionImmune": [
+				"frightened",
+				"paralyzed"
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the megapede fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Freedom Of Movement",
+					"entries": [
+						"The megapede ignores difficult terrain, and magical effects can’t reduce its speed or cause it to be {@condition restrained}. It can spend 5 feet of movement to escape from nonmagical restraints or being {@condition grappled}."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Megapede makes 4 attacks: three with legs and one with bite."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}18 ({@damage 2d10 + 7}) piercing damage. Target must make a {@dc 18} Constitution saving throw, taking 30 ({@damage 10d6}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Leg",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d8 + 7}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Psychic Blast {@recharge 5}",
+					"entries": [
+						"Megapede unleashed devastating psychic energy in a 60-foot cone. Each creature in that area must make an {@dc 20} Intelligence saving throw, taking 66 ({@damage 10d12}) psychic damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"reaction": [
+				{
+					"name": "Acid Spray",
+					"entries": [
+						"When megapede takes piercing or slashing damage, it causes acid to spray from it wound; each creature within 5 feet of it takes {@damage 2d6} acid damage."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "LairActionsMegapede",
+				"source": "DarkSunCreatureCatalog"
+			},
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"The megapede can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The megapede regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"Megapede moves half of its speed."
+					]
+				},
+				{
+					"name": "Psionic Blast",
+					"entries": [
+						"Megapede chooses one creature it can see within 60 feet of it. The target takes {@damage 1d8} psychic damage."
+					]
+				},
+				{
+					"name": "Ego Whip (Costs 2 Actions)",
+					"entries": [
+						"Megapede chooses one creature it can see within 60 feet of it. The target must make an {@dc 18} Intelligence saving throw. On a failed save, the creature takes {@damage 3d8} psychic damage, and it is filled with self-doubt, leaving it able to use its action on its next turn only to take the Dodge, Disengage, or Hide action. On a successful saving throw, it takes half as much damage."
+					]
+				}
 			]
 		}
 
