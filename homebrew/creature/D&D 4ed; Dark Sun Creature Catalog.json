@@ -22214,6 +22214,198 @@
 			"actionTags": [
 				"Multiattack"
 			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Nightmare Beast (version 2)",
+			"size": "H",
+			"type": "monstrosity",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d12 + 140",
+				"average": 270
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 24,
+			"dex": 13,
+			"con": 25,
+			"int": 10,
+			"wis": 14,
+			"cha": 10,
+			"passive": 12,
+			"cr": "19",
+			"shortName": "Nightmare Beast (version 2)",
+			"environment": [
+				"desert",
+				"mountain",
+				"underdark",
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"Of all the creatures that roam the planet Athas, none except the Dragon is as feared, or as dangerous, as the nightmare beast.",
+					"Nightmare beasts can be encountered in virtually any terrain on Athas. Fortunately, there are very few of these creatures. Some historians think that once there were as many as a hundred of these beasts roaming the world. Now there are believed to be only half a dozen remaining.",
+					"Nightmare beasts only rest in their lairs for short periods, usually no more than 6 hours at a time. The rest of their time is spent roaming the area near their lairs and feeding. These beasts will normally rotate between resting and roaming in 6-hour time periods. This activity cycle is maintained for days and sometimes weeks at a time."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/fI4mpAA.png"
+						}
+					}
+				]
+			},
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the nightmare beast fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"The nightmare beast deals double damage to objects and structures."
+					]
+				}
+			],
+			"isNpc": true,
+			"tokenUrl": "https://i.imgur.com/LlOT3ck.png",
+			"languages": [
+				"Abyssal"
+			],
+			"languageTags": [
+				"AB"
+			],
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"damageTags": [
+				"S",
+				"P"
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Siege Monster"
+			],
+			"save": {
+				"str": "+14",
+				"dex": "+8",
+				"con": "+14",
+				"wis": "+14",
+				"cha": "+10"
+			},
+			"skill": {
+				"athletics": "+19"
+			},
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons"
+				}
+			],
+			"resist": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"paralyzed"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Nightmare Beast makes 4 attacks: two with claws, one with horns and one with bite,"
+					]
+				},
+				{
+					"name": "Horns",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 5 ft., one target. {@h}18 ({@damage 2d10 + 7}) slashing damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d8 + 7}) slashing damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 5 ft., one target. {@h}29 ({@damage 4d10 + 7}) piercing damage."
+					]
+				},
+				{
+					"name": "Agonizing Raze {@recharge 5}",
+					"entries": [
+						"Each creature within 30 feet of nightmare beast must make a {@dc 21} Constitution saving throw. On fail target takes {@damage 10d6} necrotic damage or half as much on success. Nightmare Beast regains a number of hit points equal to the necrotic damage dealt."
+					]
+				},
+				{
+					"name": "World Of Horror {@recharge 5}",
+					"entries": [
+						"Nightmare Beast chooses up to six creatures within 60 feet of it. Each target must make a {@dc 19} Charisma saving throw. On a failed save, a target takes {@damage 10d6} psychic damage, and it is {@condition frightened} for 1 minute. On a successful save, a target takes half as much damage. While {@condition frightened} by this effect, a target's speed is reduced to 0, and the target can use its action, and any bonus action it might have, only to make melee attacks. The {@condition frightened} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"The nightmare beast can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature’s turn. The nightmare beast regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Eye Of Horror",
+					"entries": [
+						"Nightmare Beast chooses one creature it can see within 60 feet of it. The target must make a {@dc 19} Charisma saving throw. On a failed save, it takes {@damage 3d6} psychic damage and can't move closer to nightmare beast until the end of its next turn. On a successful save, it takes half as much damage."
+					]
+				},
+				{
+					"name": "Mind Thrust",
+					"entries": [
+						"Nightmare Beast targets one creature it can see within 120 feet of it. The target must succeed on a {@dc 19} Intelligence saving throw or take {@damage 3d10} psychic damage."
+					]
+				},
+				{
+					"name": "Rush",
+					"entries": [
+						"Nightmare Beast can move up to 20 feet and makes attack with horns."
+					]
+				}
+			]
 		}
 
 
