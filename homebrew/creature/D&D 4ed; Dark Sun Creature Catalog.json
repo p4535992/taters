@@ -6,13 +6,15 @@
 				"abbreviation": "DarkSunCreatureCatalog",
 				"full": "Dark Sun Creature Catalog (converted for 5e)",
 				"authors": [
-					"Dungeons & Dragons 4rd edition Wizard of the Coast (https://www.drivethrurpg.com/product/133464/Dark-Sun-Creature-Catalog-4e)",
-					"Reddit - Monster Manual - Dark Sun 5th Edition by Stanislav Zabielin (@auquid) (https://www.reddit.com/r/DarkSun/comments/7ws6kq/monster_manual_dark_sun_5th_edition_by_auquid/ and https://drive.google.com/file/d/1R4dJNW7Gx19N809bB7HAJMMlE72fPsPH/view)",
-					"Athas Arena Forum by Nathan Hasle (http://arena.athas.org/t/monster-manual-v5-for-dark-sun/229 and https://www.dropbox.com/s/0mu0yblgq8x53l6/5th%20Edition%20Dark%20Sun%20Creatures.pdf?dl=0)",
-					"A 5th Edition Monster Manual for Athas by MCP - Dark Sun Terrors of Athas 5th Edition (https://www.gmbinder.com/share/-LX_TP1YO2DwlNvLa8XT)",
-					"Reddit - The dread lord dregoth and dray dark sun by u/scarlettspider (https://www.reddit.com/r/UnearthedArcana/comments/9vzwgr/the_dread_lord_dregoth_and_dray_dark_sun/ and https://darksun.fandom.com/wiki/Dregoth)",
-					"DMDave (https://dmdave.com/dark-sun-bestiary-part-1-domestic-beasts-new-monsters-for-fifth-edition/ and https://dmdave.com/dark-sun-bestiary-part-2/)",
-					"Darksun 5e monstre (https://sites.google.com/site/darksun5emonstre/)"
+					"[DONE] Dungeons & Dragons 4rd edition Wizard of the Coast (https://www.drivethrurpg.com/product/133464/Dark-Sun-Creature-Catalog-4e)",
+					"[DONE] Reddit - Monster Manual - Dark Sun 5th Edition by Stanislav Zabielin (@auquid) (https://www.reddit.com/r/DarkSun/comments/7ws6kq/monster_manual_dark_sun_5th_edition_by_auquid/ and https://drive.google.com/file/d/1R4dJNW7Gx19N809bB7HAJMMlE72fPsPH/view)",
+					"[DONE] Athas Arena Forum by Nathan Hasle (http://arena.athas.org/t/monster-manual-v5-for-dark-sun/229 and https://www.dropbox.com/s/0mu0yblgq8x53l6/5th%20Edition%20Dark%20Sun%20Creatures.pdf?dl=0)",
+					"[DONE] A 5th Edition Monster Manual for Athas by MCP - Dark Sun Terrors of Athas 5th Edition (https://www.gmbinder.com/share/-LX_TP1YO2DwlNvLa8XT)",
+					"[DONE] Reddit - The dread lord dregoth and dray dark sun by u/scarlettspider (https://www.reddit.com/r/UnearthedArcana/comments/9vzwgr/the_dread_lord_dregoth_and_dray_dark_sun/ and https://darksun.fandom.com/wiki/Dregoth)",
+					"[IGNORED] DMDave (https://dmdave.com/dark-sun-bestiary-part-1-domestic-beasts-new-monsters-for-fifth-edition/ and https://dmdave.com/dark-sun-bestiary-part-2/)",
+					"[TODO] DMDave (https://dmdave.com/sorcerer-kings-queens-dark-sun/ )",
+					"[IGNORED] Darksun 5e monstre (https://sites.google.com/site/darksun5emonstre/)",
+					"[TODO BUT LINK IS INVALID] Reddit - Abalach-Re, Sorcerer-Queen of Raam ( https://www.reddit.com/r/UnearthedArcana/comments/7dj6f7/abalachre_sorcererqueen_of_raam_highlevel_enemy/ )"
 				],
 				"convertedBy": [
 					"p4535992"
@@ -295,6 +297,22 @@
 					]
 				},
 				"If the megapede dies, earthquakes fade over the course of {@dice 1d10} days."
+			]
+		},
+		{
+			"name": "LairActionsNightmareBeast",
+			"source": "DarkSunCreatureCatalog",
+			"regionalEffects": [
+				"The region containing a Nightmare Beast is warped by the creature's nefarious presence, which creates one or more of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"The area within 1 mile of the creature's lair is being slowly defiled. After or month or so all the plants have withered and died and the soil becomes incapable to sustain life. Water sources turn poisonous and the weather becomes capricious, with storms raging regularly in the area.",
+						"Creatures with a strong connection to the Grey, such as shadows, shadow giants or wraith, become more frequent in a 10 miles area around the creature's lair.",
+						"Horrific visions and illusions haunt the desert sands within 1 mile of the creature's lair. These illusions move and appear real, although they can do no harm. A creature that examines an image from a distance can tell it's an illusion with a successful DC 20 Intelligence (Investigation) check. Any physical interaction with an image reveals it to be an illusion, because objects pass through it."
+					]
+				},
+				"If the creatures dies, these effects fade over the course of {@dice 1d10} days but the nefarious effect of defiling are lingering as usual."
 			]
 		}
 	],
@@ -20131,12 +20149,12 @@
 				{
 					"name": "Pack Tactics",
 					"entries": [
-						"The kestrekel has advantage on an attack roll against a creature if at least one of the kestrekel’s allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+						"The kestrekel has advantage on an attack roll against a creature if at least one of the kestrekel's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
 					]
 				}
 			],
 			"languages": [
-				"understands Common but can’t speak"
+				"understands Common but can't speak"
 			],
 			"languageTags": [
 				"C"
@@ -20235,12 +20253,12 @@
 				{
 					"name": "Pack Tactics",
 					"entries": [
-						"The kestrekel has advantage on an attack roll against a creature if at least one of the kestrekel’s allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+						"The kestrekel has advantage on an attack roll against a creature if at least one of the kestrekel's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
 					]
 				}
 			],
 			"languages": [
-				"understands Common but can’t speak"
+				"understands Common but can't speak"
 			],
 			"languageTags": [
 				"C"
@@ -20347,12 +20365,12 @@
 				{
 					"name": "Pack Tactics",
 					"entries": [
-						"The kestrekel has advantage on an attack roll against a creature if at least one of the kestrekel’s allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+						"The kestrekel has advantage on an attack roll against a creature if at least one of the kestrekel's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
 					]
 				}
 			],
 			"languages": [
-				"understands Common but can’t speak"
+				"understands Common but can't speak"
 			],
 			"languageTags": [
 				"C"
@@ -20444,7 +20462,7 @@
 				{
 					"name": "Pack Tactics",
 					"entries": [
-						"The kirre has advantage on an attack roll against a creature if at least one of the kirre’s allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+						"The kirre has advantage on an attack roll against a creature if at least one of the kirre's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
 					]
 				},
 				{
@@ -20468,7 +20486,7 @@
 				"hill"
 			],
 			"languages": [
-				"understands Common but can’t speak"
+				"understands Common but can't speak"
 			],
 			"languageTags": [
 				"C"
@@ -20569,9 +20587,9 @@
 			"fluff": {
 				"entries": [
 					"The kirre is one of the more vicious animals of the forests and jungles of Athas. Resembling a tiger in many ways, the kirre is a beast not to be trifled with.",
-					"At first glance, the kirre looks like a great cat, but upon closer examination, the differences quickly become clear. The kirre is eight feet in length and has eight legs, each ending in paws that sport very sharp claws. The kirre also has large horns on either sides of its head and a sharp barbed tail spike often used as a weapon. The mouth of the kirre is large and has sharp, canine teeth, which are used mostly for tearing food that has been killed. The kirre is a fur-covered animal with coloration similar to a tiger (both are striped). However, where a tiger are is striped in black and orange, the kirre is striped in brown and grey. This coloration is consistent all over the kirre’s body, with the exception of its face, which is all grey.",
+					"At first glance, the kirre looks like a great cat, but upon closer examination, the differences quickly become clear. The kirre is eight feet in length and has eight legs, each ending in paws that sport very sharp claws. The kirre also has large horns on either sides of its head and a sharp barbed tail spike often used as a weapon. The mouth of the kirre is large and has sharp, canine teeth, which are used mostly for tearing food that has been killed. The kirre is a fur-covered animal with coloration similar to a tiger (both are striped). However, where a tiger are is striped in black and orange, the kirre is striped in brown and grey. This coloration is consistent all over the kirre's body, with the exception of its face, which is all grey.",
 					"Kirres are normally solitary creatures, until the approach of their mating season, at which time a male and female will join and produce offspring. Kirre litters number from three to five young. Kirres are mammals, and females produce milk for their young. Young kirres survive on milk for the first five months, at which point they begin to eat solid food such as small forest animals and other mammals.",
-					"Kirre are a favorite game of many hunting tribes of races who live in the forests of Athas. The meat from kirres is some of the finest on all of Athas, and many seek after it. Aside from a source of food, the kirre also has other uses when killed. The creature’s horns can be cut off and used as spearheads; in some cases, they can be carved into ornate daggers. In addition, the tail of a kirre has a sharp, bone spike at its end that can be fashioned into either an arrowhead or a dart."
+					"Kirre are a favorite game of many hunting tribes of races who live in the forests of Athas. The meat from kirres is some of the finest on all of Athas, and many seek after it. Aside from a source of food, the kirre also has other uses when killed. The creature's horns can be cut off and used as spearheads; in some cases, they can be carved into ornate daggers. In addition, the tail of a kirre has a sharp, bone spike at its end that can be fashioned into either an arrowhead or a dart."
 				],
 				"images": [
 					{
@@ -20764,7 +20782,7 @@
 				{
 					"name": "Psionic Detonation {@recharge 5}",
 					"entries": [
-						"A wave of armful psychic energy emanate from the megapede. Each creature in a 60ft radius from the monster must make a {@dc 18} Wisdom saving throws, taking 50 ({@damage 10d10}) psychic damage on a failure or half as much on a successful one. Additionally a creature failing the saving throw is {@condition stunned} until the end of the megapede’s next turn."
+						"A wave of armful psychic energy emanate from the megapede. Each creature in a 60ft radius from the monster must make a {@dc 18} Wisdom saving throws, taking 50 ({@damage 10d10}) psychic damage on a failure or half as much on a successful one. Additionally a creature failing the saving throw is {@condition stunned} until the end of the megapede's next turn."
 					]
 				}
 			],
@@ -20894,7 +20912,7 @@
 				{
 					"name": "Freedom Of Movement",
 					"entries": [
-						"The megapede ignores difficult terrain, and magical effects can’t reduce its speed or cause it to be {@condition restrained}. It can spend 5 feet of movement to escape from nonmagical restraints or being {@condition grappled}."
+						"The megapede ignores difficult terrain, and magical effects can't reduce its speed or cause it to be {@condition restrained}. It can spend 5 feet of movement to escape from nonmagical restraints or being {@condition grappled}."
 					]
 				}
 			],
@@ -21141,7 +21159,7 @@
 				{
 					"name": "Info",
 					"entries": [
-						"This colossal mekillot are used for war, acting as troupe carrier or platform for siege engine. Dirk mekillot are never found in nature, they are bread for the purpose of war by the sorcerer-king’s defilers. Few things can stop this monstrosity in battle, sheltered in their armor and often protected by extra layers of protection. Only the most talented psychic can control this mekillot."
+						"This colossal mekillot are used for war, acting as troupe carrier or platform for siege engine. Dirk mekillot are never found in nature, they are bread for the purpose of war by the sorcerer-king's defilers. Few things can stop this monstrosity in battle, sheltered in their armor and often protected by extra layers of protection. Only the most talented psychic can control this mekillot."
 					]
 				},
 				{
@@ -21390,7 +21408,7 @@
 				{
 					"name": "Relentless Rage",
 					"entries": [
-						"The battle rage of the mul can keep it fighting despite grievous wounds. If it drops to 0 hit points and don’t die outright, it can make a {@dc 10} Constitution saving throw. If it succeeds, it drops to 1 hit point instead. Each time it uses this feature after the first, the DC increases by 5."
+						"The battle rage of the mul can keep it fighting despite grievous wounds. If it drops to 0 hit points and don't die outright, it can make a {@dc 10} Constitution saving throw. If it succeeds, it drops to 1 hit point instead. Each time it uses this feature after the first, the DC increases by 5."
 					]
 				}
 			],
@@ -21575,7 +21593,7 @@
 				{
 					"name": "Combat Superiority - Disarming Attack",
 					"entries": [
-						"When the mul hits a creature with a weapon attack, he can attempt to disarm the target, forcing it to drop one item of the mul’schoice that it’s holding. The mul add {@dice 1d10} to the attack’s damage roll, and the target must make a Strength saving throw. On a failed save, it drops the object you choose. The object lands at its feet. The saving throw against the attack is 17 on Constitution."
+						"When the mul hits a creature with a weapon attack, he can attempt to disarm the target, forcing it to drop one item of the mul'schoice that it's holding. The mul add {@dice 1d10} to the attack's damage roll, and the target must make a Strength saving throw. On a failed save, it drops the object you choose. The object lands at its feet. The saving throw against the attack is 17 on Constitution."
 					]
 				},
 				{
@@ -21593,12 +21611,608 @@
 				{
 					"name": "Combat Superiority - Trip Attack",
 					"entries": [
-						"When it hits a creature with a weapon attack, the mul can attempt to knock the target down. It adds {@dice 1d10} to the attack’s damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, the target is knocked {@condition prone}. The saving throw against the attack is 17 on Constitution."
+						"When it hits a creature with a weapon attack, the mul can attempt to knock the target down. It adds {@dice 1d10} to the attack's damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, the target is knocked {@condition prone}. The saving throw against the attack is 17 on Constitution."
 					]
 				}
 			],
 			"conditionInflict": [
 				"prone"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Night Twist",
+			"size": "H",
+			"type": "plant",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d12 + 120",
+				"average": 218
+			},
+			"speed": {
+				"walk": 10
+			},
+			"str": 30,
+			"dex": 6,
+			"con": 26,
+			"int": 12,
+			"wis": 14,
+			"cha": 17,
+			"passive": 12,
+			"cr": "13",
+			"isNpc": true,
+			"environment": [
+				"coastal",
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"mountain"
+			],
+			"fluff": {
+				"entries": [
+					"Lore",
+					"Long before luckless travelers in more remote and foreboding marshes see the harrowing sight of a lone night twist, they hear its haunting and melancholy song. The ghostly moaning sounds of its song seem slightly different to every traveler. For some, the song of the night twist sounds like a women weeping. To others, it is more akin to a wind blowing over a desolate graveyard. Most likely, the despair song of a night twist is the most sorrowful sound each traveler can conjurer within his or her own mind. Night twists subsist in the most inhospitable marshes, mudflats and ruins feeding on the rotting carcasses of creatures and travelers attracted by its despair song.",
+					"Night Twist grow on cursed ground, defiled lands and battlefield, feeding of the lasting negative energies running throught the land. They feed on necrotic energies, and as such are often mistaken for Trees of Death. This mistake is often the last one made.",
+					"Encounter",
+					"Rangers of the tablelands have heard and felt the despair song of night twists coming from the Black Sands region. These night twists watch over the unplundered tombs, buried deep in the land in ancient times. Much older night twists can be found throughout the Dry Marsh and the Crescent Forest, taking root in and around the cyclopean ruins of fallen giant cities, their songs of despair luring explorers to a swift doom.",
+					"A night twist, when actively seeking victims, sends out its despair song in order to bring prey to it. When those lured by the song are within range, a night twist uses its phantasmal killer spell-like ability. A night twist employs its powerful slam attack only if opponents first survive the illusion. The creature uses its entangle and darkness spell-like abilities to keep opponents from escaping. When a night twist feels threatened, it uses its wind attack and fear spelllike ability."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/MByqyra.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/QCfS8z8.png",
+			"shortName": "Night Twist",
+			"senses": [
+				"blindsight 60 ft. (blind beyond that radius)"
+			],
+			"senseTags": [
+				"B"
+			],
+			"languages": [
+				"telepathy 120ft."
+			],
+			"languageTags": [
+				"TP"
+			],
+			"conditionImmune": [
+				"blinded",
+				"deafened",
+				"exhaustion"
+			],
+			"immune": [
+				"lightning",
+				"necrotic"
+			],
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"cold",
+						"piercing",
+						"psychic",
+						"slashing"
+					],
+					"note": "from non magical weapons"
+				}
+			],
+			"trait": [
+				{
+					"name": "Death Curse",
+					"entries": [
+						"Killing a night twist invites a curse similar to that bestowed by the dream spell. The creature dealing the death blow must make a {@dc 17} Wisdom saving throw to avoid being cursed with hideous and unsettling nightmares that prevents the creature from gaining any benefit from a short or long rest and deal 10 ({@damage 3d6}) psychic damage. The nightmares and resulting damage affect the subject every night until the curse is removed or the victim dies. If the curse is removed, the victim remains fatigued for 24 hours thereafter. A heal spell or more powerful magic cast while the subject is in the throes of a nightmare is the only way to remove a night twist's death curse. If the victim of a night twist victim dies and is interred, a new night twist springs from where the corpse was laid one month later. While the creature is developing, a night twist “sapling” appears at the gravesite; the creature seems to be a normal (nonintelligent) plant until it reaches maturity."
+					]
+				},
+				{
+					"name": "Despair Song",
+					"entries": [
+						"Every evening, a night twist emits a sorrowful sound that inspires melancholy and despair in all creatures with an Intelligence score of 6 or higher within a radius of 10 kilometers. Those who fail a {@dc 17} Wisdom saving throw are affected and must seek out the source of their sorrow (the night twist) to the neglect of all other tasks or needs, including eating or sleeping. If physically {@condition restrained} and not allowed to seek out the night twist, a victim of this despair song takes 10 ({@damage 3d6}) psychic damage every evening until it dies or the enchantment is removed. Relocating a victim outside the area affected by the night twist's song does not end the enchantment. The despair song ceases to affect a subject in the round after the night twist makes a slam attack against it. To remove the effects of the night twist's despair song before it attacks, a heal spell or more powerful magic must be employed. Dispel magic or dispel evil spells cannot remove the enchantment. The death of the night twist always ends the enchantment."
+					]
+				},
+				{
+					"name": "Necrotic Absorption",
+					"entries": [
+						"Whenever the night twist is subjected to necrotic damage, it takes no damage and regains a number of hit points equal to the necrotic damage dealt."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"Y"
+			],
+			"traitTags": [
+				"Damage Absorption"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The night twist's innate spellcasting ability is charisma (spell save {@dc 15}). The night twist can innately cast the following spells, requiring no material components.",
+						"Spellcasting Ability=CHA",
+						"Global Magic Attack Modifier=7",
+						"Magic Caster Level=9",
+						"Spell Save DC Mod=15"
+					],
+					"will": [
+						"{@spell gust of wind}"
+					],
+					"daily": {
+						"2e": [
+							"{@spell blight}",
+							"{@spell darkness}",
+							"{@spell entangle}",
+							"{@spell fear}",
+							"{@spell phantasmal killer}"
+						],
+						"1e": [
+							"{@spell weird}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The night twist makes three slam attacks."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 10 ft., one target. {@h}20 ({@damage 2d10 + 10}) bludgeoning damage, if the target is Medium or smaller, it is {@condition grappled} (escape {@dc 17}). Until this grapple ends, the target is {@condition restrained}."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"restrained",
+				"grappled"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Nightmare Beast",
+			"size": "H",
+			"type": "monstrosity",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d12 + 120",
+				"average": 240
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 24,
+			"dex": 11,
+			"con": 22,
+			"int": 8,
+			"wis": 13,
+			"cha": 11,
+			"passive": 16,
+			"cr": "16",
+			"shortName": "Nightmare Beast",
+			"environment": [
+				"desert",
+				"mountain",
+				"underdark",
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"Some sages say nightmare beasts",
+					"are vestiges of an age when war consumed the world and blood flowed in rivers. Other scholars speculate that the responsibility for these terrors rests at the feet of the sorcerer-kings. Whatever their true origins, no creature on Athas, other than the sorcerer-kings and the Dragon, elicits more fear than a nightmare beast.",
+					"Lore",
+					"Sages believe the nightmare beasts were called from the Gray and bound to Athas through powerful defiling magic. These horrors are a cancer on the world, their noxious presence poisoning land and contaminating water. Creatures indigenous to the haunts of a nightmare beast sicken and die, if they aren't devoured first. Killing one of these monsters does little to remove its stain. The hulking corpse rapidly rots into bubbling bile that renders the area uninhabitable.",
+					"With a disposition as bad as its reputation, it's no wonder that a nightmare beast spreads terror wherever it goes. This monster has no interest in treasure, nor does it often bring any prey back to its lair, unless the kill is so large that it cannot be consumed all at once. A nightmare beast often inadvertently eats treasures along with their owners, so occasionally items of value turn up in the creature's lair at a later time. Nightmare beasts speak Abyssal.",
+					"Although little is known of the nightmare beast's life cycle, it is assumed that spawn are adolescent forms. How the beasts put aside their innate hatred long enough to mate is an open and disturbing question.",
+					"Encounters",
+					"A nightmare beast does little to conceal its cavernous lair, for its mere presence is enough to cow the land and its inhabitants. Just as a defiler robs the soil of its nourishing properties, so does a nightmare beast despoil its habitat. A nightmare beast's lair lies at the center of a wasted real m, twisted by dark magic and poisoned by its malevolent presence. No other creature is willing or able to cooperate for any period of time with a fully manifested nightmare beast.",
+					"Nightmare beast spawn often hunt in packs. On occasion, a spawn joins a pack of whatever sort of predator it used to be. The spawn's former link to those creatures keeps its innate hatred in check, at least for a time.",
+					"Secrets of the nightmare beast",
+					"Few if any people currently living on Athas know the truth about nightmare beasts. The commonly held theories of the beasts, their origins, and their life cycle are wrong. Each nightmare beast was once another, more mundane predator of the wastelands. In rare instances, as an animal consumes prey within areas connected to the Gray or imbued with substantial defiling magic, the creature slowly begins to change. Energy courses through it, causing it to grow and to develop a limitless hatred for all living things. Once the tainted creature begins to seek and consume sentient beings, it mutates into a nightmare beast.",
+					"Nightmare beast spawn aren't progeny - they are a stage of mutation that some creatures reach before full metamorphosis is achieved.",
+					"This, of course, leads to other questions: Why do these creatures all mutate into the same form? Do other, related mutations haunt the farthest reaches of the wastes?"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/b219Eqe.png"
+						}
+					}
+				]
+			},
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"A maw of gladius-sized teeth splits a hulking form covered in armored scales. Tusks as sharp and numerous as the spears of a phalanx sprout from this opening. A nightmare beast stands at least 20 feet tall on its four legs. Each of its digits is tipped with a 3-foot-long claw. Its jaws are filled with 1-foot-long teeth and flanked by curved tusks the size of cavalry lances. A nightmare beast's thick, tough hide is typically dark gray with dark blue, purple, or brown splotches in between patches of bony material. Its red eyes, each the size of a man's head, glow in the dark. The nightmare beast prefers to lair in a remote cave. It spends most of its time in search of food, and it tends to hunt in one area until the food supply is exhausted. At that point, it usually hibernates for up to one year, then awakens again in a ravenous state. Surely nothing so nightmarish could be a living being-and yet it is. The nightmare beast is always ravenous, a mobile source of carnage. The more the beast's hunger is frustrated, the greater the frenzy of its attacks.",
+						"Hatred consumes a nightmare beast - only through supreme willpower does it resist its brutish impulses. When possessed of its full faculties, the beast torments its enemies, sending them into nightmare-filled slumber. While its victim thrashes, the beast appears at its side where it can sample the horror firsthand. If a nightmare beast becomes injured, all thought of toying with its enemies vanishes. Its barely contained monstrous nature surges to the fore. Roaring with rage, it rises up on its hind legs, savagely slashing, impaling, and destroying its enemies. The putrid essence of a nightmare beast taints everything around it when the beast dies. At the Dungeon Master's option, the area within 30ft of a slain nightmare beast becomes defiled terrain."
+					]
+				},
+				{
+					"name": "Horrid Visions",
+					"entries": [
+						"Each creature within 60 feet of the nightmare beast that can see it must succeed on a {@dc 18} Charisma saving throw, suffering from a Short-Term madness (p.259 of the Dungeon Master Manual) on a failed save. If the save fails by 5 or more, the target also suffers from a Long-Term Madness. If a target's saving throw is successful or the effect ends for it, the target is immune to this nightmare beast's Horrid Vision for the next 24 hours. The short-term and long-term madness can be ended with the {@spell greater restoration}, {@spell remove curse} and {@spell dispel evil and good} spells."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The nightmare beast has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Nightmares",
+					"entries": [
+						"Perhaps the nightmare beast's most powerful weapon is the one from which its name is derived. Every intelligent creature that falls asleep within 10 miles of a nightmare beast must succeed at a Wisdom saving throw ({@dc 18}) or suffer from horrid, vivid nightmares of being stalked and killed by monsters, demons, cruel enemies, or whatever else it fears. The effect is otherwise the same as that of a {@spell Dream} spell. A remove curse or a successful dispel magic negates the effect. Once a creature has either been affected by this ability or made a successful save, it cannot be affected by that nightmare beast's nightmare power again for 24 hours."
+					]
+				}
+			],
+			"isNpc": true,
+			"tokenUrl": "https://i.imgur.com/uRKxv04.png",
+			"languages": [
+				"Abyssal"
+			],
+			"languageTags": [
+				"AB"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"save": {
+				"str": "+12",
+				"con": "+11",
+				"wis": "+6"
+			},
+			"skill": {
+				"athletics": "+12",
+				"perception": "+6"
+			},
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapon"
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The nightmare beast's innate spellcasting ability is Constitution (spell save {@dc 19}). The nightmare beast can innately cast the following spells, requiring no material components.",
+						"Spellcasting Ability=CON",
+						"Global Magic Attack Modifier=11,",
+						"Magic Caster Level=13,",
+						"Spell Save DC Mod=19"
+					],
+					"daily": {
+						"1e": [
+							"{@spell Abi-Dalzim's horrid wilting|XGE}",
+							"{@spell chain lightning}",
+							"{@spell circle of death}",
+							"{@spell cloudkill}",
+							"{@spell dimension door}"
+						]
+					},
+					"ability": "con",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The nightmare beast makes four melee attacks, one with its bite, two with its claws and one with its tusks."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}17 ({@damage 4d6 + 7}) piercing damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}11 ({@damage 2d4 + 7}) slashing damage."
+					]
+				},
+				{
+					"name": "Tusks",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}23 ({@damage 4d8 + 7}) slashing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"S",
+				"B",
+				"L",
+				"N"
+			],
+			"legendaryGroup": {
+				"name": "LairActionsNightmareBeast",
+				"source": "DarkSunCreatureCatalog"
+			},
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"The nightmare beast can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The beast regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Detect",
+					"entries": [
+						"The nightmare beast makes a Wisdom (Perception) check."
+					]
+				},
+				{
+					"name": "Trample",
+					"entries": [
+						"The nightmare beast tramples the ground and affect any creatures in a 10ft radius surrounding it. Each of those creatures must succeed on a {@dc 18} Strength or Dexterity saving throw (target' s choice) or be knocked {@condition prone} and take 16 ({@damage 3d6 + 7}) bludgeoning damage plus 16 ({@damage 3d6 + 7}) slashing damage. On a successful save, the creature takes only half the damage, isn't knocked {@condition prone}, and is pushed 5feet out of the beast's space into an unoccupied space of the creature's choice. If no unoccupied space is within range, the creature instead falls {@condition prone} in the beast's space."
+					]
+				},
+				{
+					"name": "Black Lightning",
+					"entries": [
+						"A stroke of black lightning forming a line 100 feet long and 5 feet wide blasts out from the nightmare's beat in a direction of its choosing. Each creature in the line must make a {@dc 18} Dexterity saving throw. A creature takes 25 ({@damage 5d10}) lightning damage and 25 ({@damage 5d10}) necrotic damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Nightmare Beast Spawn",
+			"size": "L",
+			"type": "monstrosity",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d10 + 36",
+				"average": 85
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 10,
+				"climb": 10
+			},
+			"str": 20,
+			"dex": 16,
+			"con": 18,
+			"int": 6,
+			"wis": 13,
+			"cha": 11,
+			"passive": 16,
+			"cr": "8",
+			"shortName": "Nightmare Beast Spawn",
+			"environment": [
+				"desert",
+				"mountain",
+				"underdark",
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"Some sages say nightmare beasts",
+					"are vestiges of an age when war consumed the world and blood flowed in rivers. Other scholars speculate that the responsibility for these terrors rests at the feet of the sorcerer-kings. Whatever their true origins, no creature on Athas, other than the sorcerer-kings and the Dragon, elicits more fear than a nightmare beast.",
+					"Lore",
+					"Sages believe the nightmare beasts were called from the Gray and bound to Athas through powerful defiling magic. These horrors are a cancer on the world, their noxious presence poisoning land and contaminating water. Creatures indigenous to the haunts of a nightmare beast sicken and die, if they aren't devoured first. Killing one of these monsters does little to remove its stain. The hulking corpse rapidly rots into bubbling bile that renders the area uninhabitable.",
+					"With a disposition as bad as its reputation, it’s no wonder that a nightmare beast spreads terror wherever it goes. This monster has no interest in treasure, nor does it often bring any prey back to its lair, unless the kill is so large that it cannot be consumed all at once. A nightmare beast often inadvertently eats treasures along with their owners, so occasionally items of value turn up in the creature’s lair at a later time. Nightmare beasts speak Abyssal.",
+					"Although little is known of the nightmare beast's life cycle, it is assumed that spawn are adolescent forms. How the beasts put aside their innate hatred long enough to mate is an open and disturbing question.",
+					"Encounters",
+					"A nightmare beast does little to conceal its cavernous lair, for its mere presence is enough to cow the land and its inhabitants. Just as a defiler robs the soil of its nourishing properties, so does a nightmare beast despoil its habitat. A nightmare beast's lair lies at the center of a wasted real m, twisted by dark magic and poisoned by its malevolent presence. No other creature is willing or able to cooperate for any period of time with a fully manifested nightmare beast.",
+					"Nightmare beast spawn often hunt in packs. On occasion, a spawn joins a pack of whatever sort of predator it used to be. The spawn's former link to those creatures keeps its innate hatred in check, at least for a time.",
+					"Secrets of the nightmare beast",
+					"Few if any people currently living on Athas know the truth about nightmare beasts. The commonly held theories of the beasts, their origins, and their life cycle are wrong. Each nightmare beast was once another, more mundane predator of the wastelands. In rare instances, as an animal consumes prey within areas connected to the Gray or imbued with substantial defiling magic, the creature slowly begins to change. Energy courses through it, causing it to grow and to develop a limitless hatred for all living things. Once the tainted creature begins to seek and consume sentient beings, it mutates into a nightmare beast.",
+					"Nightmare beast spawn aren't progeny - they are a stage of mutation that some creatures reach before full metamorphosis is achieved.",
+					"This, of course, leads to other questions: Why do these creatures all mutate into the same form? Do other, related mutations haunt the farthest reaches of the wastes?"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/llcr9NR.png"
+						}
+					}
+				]
+			},
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"A foulness with a tusk-filled maw burrows through the sandy wastes. Its serpentine body is covered with thick scales and sprouts tiny nubs of vestigial limbs. Although smaller and less deadly than the adult version, a nightmare beast spawn is a fearsome foe. Unlike their \"elders,\" spawn have neither the ability nor the inclination to control their destructive urges.",
+						"They attack immediately, hoping to feast on both flesh and fear. They prefer to remain at a distance, but can be vicious melee combatants. Like the grown beast, nightmare beast spawn taint the land when they die, rendering everything within 5 squares of a corpse defiled terrain."
+					]
+				},
+				{
+					"name": "Horrid Visions",
+					"entries": [
+						"Each creature within 60 feet of the nightmare beast that can see it must succeed on a {@dc 16} Charisma saving throw, suffering from a Short-Term madness (p.259 of the Dungeon Master Manual) on a failed save. If the save fails by 5 or more, the target also suffers from a Long-Term Madness. If a target's saving throw is successful or the effect ends for it, the target is immune to this nightmare beast's Horrid Vision for the next 24 hours. The short-term and long-term madness can be ended with the {@spell greater restoration}, {@spell remove curse} and {@spell dispel evil and good} spells."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The nightmare beast has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Nightmares",
+					"entries": [
+						"Perhaps the nightmare beast’s most powerful weapon is the one from which its name is derived. Every intelligent creature that falls asleep within 3 miles of a nightmare beast must succeed at a Wisdom saving throw ({@dc 16}) or suffer from horrid, vivid nightmares of being stalked and killed by monsters, demons, cruel enemies, or whatever else it fears. The effect is otherwise the same as that of a {@spell Dream} spell. A remove curse or a successful dispel magic negates the effect. Once a creature has either been affected by this ability or made a successful save, it cannot be affected by that nightmare beast’s nightmare power again for 24 hours."
+					]
+				}
+			],
+			"isNpc": true,
+			"tokenUrl": "https://i.imgur.com/4xSNBX2.png",
+			"languages": [
+				"Abyssal"
+			],
+			"languageTags": [
+				"AB"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapon"
+				}
+			],
+			"damageTags": [
+				"P",
+				"S",
+				"L",
+				"N"
+			],
+			"skill": {
+				"perception": "+6",
+				"athletics": "+6"
+			},
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The nightmare beast's innate spellcasting ability is Constitution (spell save {@dc 15}). The nightmare beast can innately cast the following spells, requiring no material components.",
+						"Spellcasting Ability=CON",
+						"Global Magic Attack Modifier=7",
+						"Magic Caster Level=9",
+						"Spell Save DC Mod=15"
+					],
+					"daily": {
+						"1e": [
+							"{@spell chain lightning}",
+							"{@spell cloudkill}",
+							"{@spell dimension door}"
+						]
+					},
+					"ability": "con",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The nightmare beast makes two melee attacks, one with its bite, one with its tusks."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Tusks",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Black Lightning",
+					"entries": [
+						"A stroke of black lightning forming a line 100 feet long and 5 feet wide blasts out from the nightmare’s beat in a direction of its choosing. Each creature in the line must make a {@dc 15} Dexterity saving throw. A creature takes 15 ({@damage 3d10}) lightning damage and 15 ({@damage 3d10}) necrotic damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
 			]
 		}
 
