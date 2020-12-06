@@ -314,6 +314,32 @@
 				},
 				"If the creatures dies, these effects fade over the course of {@dice 1d10} days but the nefarious effect of defiling are lingering as usual."
 			]
+		},
+		{
+			"name": "LairActionsNightmareBeastV2",
+			"source": "DarkSunCreatureCatalog",
+			"lairActions": [
+				"On initiative count 20 (losing initiative ties), the nightmare beast takes a lair action to cause one of the following effects; the nightmare beast can't use the same effect two rounds in a row:",
+				{
+					"type": "list",
+					"items": [
+						"Magical darkness spreads from a point the nightmare beast chooses within 60 feet of it, filling a 15-foot-radius sphere until the dragon dismisses it as an action, uses this lair action again, or dies. The darkness spreads around corners. A creature with darkvision can't see through this darkness, and nonmagical light can't illuminate it. If any of the effect's area overlaps with an area of light created by a spell of 2nd level or lower, the spell that created the light is dispelled.",
+						"Nightmares start filling lair. Each creature within 60 feet of the nightmare beast must succeed on a DC 15 Wisdom saving throw or be frighten until initiative count 20 on the next round. A frighten target cannot use reactions and can use its action, and any bonus action it might have, only to make melee attacks.",
+						"Horrors haunt one creature that the nightmare beast can see within 120 feet of it. The creature must succeed on a DC 15 Intelligence saving throw or take 10 (3d6) psychic damage and stunned until initiative count 20 on the next round."
+					]
+				}
+			],
+			"regionalEffects": [
+				"The region containing a nightmare beast's lair is warped by the nightmare beast's magic, which creates one or more of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"Darkness lightly obscures the land within 6 miles of the lair.",
+						"Each creature who is sleeping within 1 mile of the lair is having vivid nightmares."
+					]
+				},
+				"If the nightmare beast dies, these effects fade over the course of {@dice 1d10} days."
+			]
 		}
 	],
 	"monster": [
@@ -22258,7 +22284,9 @@
 				"entries": [
 					"Of all the creatures that roam the planet Athas, none except the Dragon is as feared, or as dangerous, as the nightmare beast.",
 					"Nightmare beasts can be encountered in virtually any terrain on Athas. Fortunately, there are very few of these creatures. Some historians think that once there were as many as a hundred of these beasts roaming the world. Now there are believed to be only half a dozen remaining.",
-					"Nightmare beasts only rest in their lairs for short periods, usually no more than 6 hours at a time. The rest of their time is spent roaming the area near their lairs and feeding. These beasts will normally rotate between resting and roaming in 6-hour time periods. This activity cycle is maintained for days and sometimes weeks at a time."
+					"Nightmare beasts only rest in their lairs for short periods, usually no more than 6 hours at a time. The rest of their time is spent roaming the area near their lairs and feeding. These beasts will normally rotate between resting and roaming in 6-hour time periods. This activity cycle is maintained for days and sometimes weeks at a time.",
+					"A Nightmare's beast Lair",
+					"Nightmare beasts live in their lairs for long periods of time (up to one year). After that time, they will roam the desert until they find a suitable area in which to make their new lair. When a nightmare beast settles into a new lair, it will most often settle near ancient ruins of the former civilization that once inhabited Athas. No matter where they make their lairs, nightmare beasts do so in a consistent manner. All beast lairs are very defensible and well protected. The nightmare beast will always choose a lair that is difficult to attack from both land and air."
 				],
 				"images": [
 					{
@@ -22382,6 +22410,10 @@
 			"conditionInflict": [
 				"frightened"
 			],
+			"legendaryGroup": {
+				"name": "LairActionsNightmareBeastV2",
+				"source": "DarkSunCreatureCatalog"
+			},
 			"legendaryActions": 3,
 			"legendaryHeader": [
 				"The nightmare beast can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature’s turn. The nightmare beast regains spent legendary actions at the start of its turn."
@@ -22405,6 +22437,216 @@
 						"Nightmare Beast can move up to 20 feet and makes attack with horns."
 					]
 				}
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Pterrax",
+			"size": "L",
+			"type": "beast",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d10 + 7",
+				"average": 45
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 30,
+				"canHover": false
+			},
+			"str": 14,
+			"dex": 11,
+			"con": 13,
+			"int": 1,
+			"wis": 12,
+			"cha": 5,
+			"passive": 11,
+			"cr": "2",
+			"shortName": "Pterrax",
+			"fluff": {
+				"entries": [
+					"Pterrax are large pteradon-like creatures which are capable of flight. They occupy the plains and rocky barrens of Athas. Pterrax are sometimes encountered near the edges of the Forest Ridge near the Ringing Mountains, where they are commonly used by pterrans as flying mounts."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/49ZSdYM.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/sofr2tU.png",
+			"environment": [
+				"hill",
+				"mountain"
+			],
+			"resist": [
+				"psychic"
+			],
+			"trait": [
+				{
+					"name": "Keen Sight",
+					"entries": [
+						"The creature has advantage on Wisdom (Perception) checks that rely on sight."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Pterrax makes two attacks: one with claws one with bite."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d8 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) slashing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"reaction": [
+				{
+					"name": "Psychic Parry",
+					"entries": [
+						"When pterrax makes an Intelligence, a Wisdom, or a Charisma saving throw, it as reaction can gain a +1 bonus to that saving throw. It can use this ability after rolling the die but before suffering the results."
+					]
+				}
+			],
+			"isNpc": true
+		},
+		{
+			"name": "DARKSUNCREATURE - Razorwing",
+			"size": "M",
+			"type": "beast",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d8 + 5",
+				"average": 27
+			},
+			"speed": {
+				"walk": 10,
+				"fly": 60,
+				"canHover": false
+			},
+			"str": 14,
+			"dex": 12,
+			"con": 11,
+			"int": 3,
+			"wis": 13,
+			"cha": 6,
+			"passive": 11,
+			"cr": "1",
+			"shortName": "Razorwing",
+			"fluff": {
+				"entries": [
+					"The razorwing hides under the silt and bursts out of the sand to slash at creatures flying above it. It is a vicious carnivore, and packs of razorwings have brought down creatures much larger than themselves.",
+					"A razorwing is able to communicate with others of its kind. It does not have a language, but uses its power of controlled sound to communicate when prey is nearby."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/mBbKdK7.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/KBgC4xR.png",
+			"environment": [
+				"hill",
+				"mountain"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"isNpc": true,
+			"trait": [
+				{
+					"name": "Keen Sight",
+					"entries": [
+						"The creature has advantage on Wisdom (Perception) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Detect Life",
+					"entries": [
+						"The razorwing can sense the presence of living creatures up to 300 feet away. It knows the general direction they're in but not their exact locations."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The razorwing makes two attacks: one with razor edge one with bite."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Razor Edge",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d10 + 2}) slashing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
 			]
 		}
 
