@@ -20970,6 +20970,227 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Mekillot",
+			"size": "H",
+			"type": {
+				"type": "beast",
+				"tags": [
+					"reptile"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d12 + 30",
+				"average": 95
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 22,
+			"dex": 9,
+			"con": 17,
+			"int": 2,
+			"wis": 11,
+			"cha": 5,
+			"passive": 10,
+			"cr": "5",
+			"shortName": "Mekillot",
+			"fluff": {
+				"entries": [
+					"With their armored backs",
+					"these enormous, temperamental drakes make valuable mounts and formidable enemies. Any mekillot rider knows that the line between mount and foe is a thin one. Only careful handling or psionic control keeps an angry or a hungry mekillot from turning on its trainer.",
+					"Lore",
+					"Wild mekillots roam the wastes in small herds, eating plants and animals and laying eggs near oases. The animals are tough, aggressive, and headstrong, but they can be domesticated if raised from birth. The demand for these beasts has resulted in humanoid collectors killing numerous feral mekillot adults and stealing their eggs. Defilers who serve sorcerer-kings perform intricate rituals on the eggs to create dreadful beasts of war.",
+					"Encounters",
+					"Humanoids use mekillots as draft animals and war beasts. The largest mekillots carry numerous warriors or battle structures in times of war."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/yocSCC4.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"coastal",
+				"desert",
+				"urban"
+			],
+			"isNpc": true,
+			"tokenUrl": "https://i.imgur.com/GdcI2Zk.png",
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"A mekillot charges into combat, slamming into or running over its enemies. It rarely gives up once it joins a battle. The mekillot's bloodlust even leads it to charge after fleeing enemies."
+					]
+				},
+				{
+					"name": "Trampling Charge",
+					"entries": [
+						"If the mekillot moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the mekillot can make one stomp attack against it as a bonus action."
+					]
+				}
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"action": [
+				{
+					"name": "Gore",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}24 ({@damage 4d8 + 6}) piercing damage."
+					]
+				},
+				{
+					"name": "Stomp",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one prone creature. {@h}22 ({@damage 3d10 + 6}) bludgeoning damage."
+					]
+				}
+			],
+			"damageTags": [
+				"P",
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Mekillot Dirk",
+			"size": "G",
+			"type": {
+				"type": "beast",
+				"tags": [
+					"reptile"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d20 + 126",
+				"average": 271
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 26,
+			"dex": 5,
+			"con": 28,
+			"int": 2,
+			"wis": 11,
+			"cha": 5,
+			"passive": 10,
+			"cr": "12",
+			"shortName": "Mekillot Dirk",
+			"fluff": {
+				"entries": [
+					"With their armored backs",
+					"these enormous, temperamental drakes make valuable mounts and formidable enemies. Any mekillot rider knows that the line between mount and foe is a thin one. Only careful handling or psionic control keeps an angry or a hungry mekillot from turning on its trainer.",
+					"Lore",
+					"Wild mekillots roam the wastes in small herds, eating plants and animals and laying eggs near oases. The animals are tough, aggressive, and headstrong, but they can be domesticated if raised from birth. The demand for these beasts has resulted in humanoid collectors killing numerous feral mekillot adults and stealing their eggs. Defilers who serve sorcerer-kings perform intricate rituals on the eggs to create dreadful beasts of war.",
+					"Encounters",
+					"Humanoids use mekillots as draft animals and war beasts. The largest mekillots carry numerous warriors or battle structures in times of war."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/8lco4Gf.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"coastal",
+				"desert",
+				"urban"
+			],
+			"isNpc": true,
+			"tokenUrl": "https://i.imgur.com/tb8HzKm.png",
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"This colossal mekillot are used for war, acting as troupe carrier or platform for siege engine. Dirk mekillot are never found in nature, they are bread for the purpose of war by the sorcerer-king’s defilers. Few things can stop this monstrosity in battle, sheltered in their armor and often protected by extra layers of protection. Only the most talented psychic can control this mekillot."
+					]
+				},
+				{
+					"name": "Trampling Charge",
+					"entries": [
+						"If the mekillot moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a {@dc 18} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the mekillot can make one stomp attack against it as a bonus action."
+					]
+				}
+			],
+			"conditionInflict": [
+				"restrained",
+				"grappled",
+				"prone"
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}28 ({@damage 4d10 + 8}) piercing damage."
+					]
+				},
+				{
+					"name": "Gore",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}26 ({@damage 4d8 + 8}) piercing damage."
+					]
+				},
+				{
+					"name": "Stomp",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 5 ft., one {@condition prone} creature. {@h}22 ({@damage 3d10 + 8}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Tongue",
+					"entries": [
+						"{@atk rw} {@hit 12} to hit, range 10/30 ft., one target. {@h}20 ({@damage 4d6 + 8}) bludgeoning damage. If the target is Medium or smaller, it is {@condition grappled} (escape {@dc 18}) and the mekillot pulls the target to its space. Until this grapple ends, the target is {@condition restrained}. The mekillot can only have one creature grabbed at a time."
+					]
+				}
+			],
+			"damageTags": [
+				"P",
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			]
 		}
 
 
