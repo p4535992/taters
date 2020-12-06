@@ -20032,6 +20032,323 @@
 				"paralyzed",
 				"poisoned"
 			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Kestrekel Carrion Eater",
+			"size": "M",
+			"type": "beast",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "1d8",
+				"average": 5
+			},
+			"speed": {
+				"walk": 10,
+				"fly": 60,
+				"canHover": false
+			},
+			"str": 6,
+			"dex": 14,
+			"con": 10,
+			"int": 6,
+			"wis": 14,
+			"cha": 5,
+			"passive": 14,
+			"cr": "1/8",
+			"shortName": "Kestrekel Carrion Eater",
+			"fluff": {
+				"entries": [
+					"The horrid croak of akestrekel",
+					"is considered a harbinger of death, because these predators gather when a creature is about to die. Individually, a kestreke is a nuisance. A flock of these birds can be an immediate and dire threat, though. The larger ones are cruel creatures that enjoy the suffering of.",
+					"Lore",
+					"Kestrekels seek out the sick and injured, their dark eyes watching for any sign of weakness. As the prey is sapped, the beasts probe their coming meal by darting closer for quick bites. Travelers dogged by these carrion birds can lure them close by feigning injuries, but this trick rarely works on any but the most eager beasts.",
+					"Encounters",
+					"Death lures kestrekels, but they are patient and always watchful. Kestrekels seldom attack healthy creatures, but might follow them, especially into areas where the land and climate are hard or where other predators or dangers might be present. As a traveler moves deeper into these territories, other kestrekels join the first few, until a dozen or more have gathered. Together, they emit their grating calls, waiting until their meal can no longer fend off attack."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/rydtbAj.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"desert",
+				"hill",
+				"mountain"
+			],
+			"tokenUrl": "https://i.imgur.com/DGPc3xa.png",
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"A carrion eater is a grim, unwelcome companion for desert travelers. Attracted by movement, this beast gazes at wanderers with glassy black eyes that glitter in the hot sun. A patient watcher, this scavenger follows its victim overhead or alights some distance away. Cowardly by nature, kestrekels don't become aggressive until they sense their prey is injured, sick, dehydrated, or dying. Any carnage drives the birds wild with hunger."
+					]
+				},
+				{
+					"name": "Keen Sight and Smell",
+					"entries": [
+						"The kestrekel has advantage on Wisdom (Perception) checks that rely on sigh and smell"
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The kestrekel has advantage on an attack roll against a creature if at least one of the kestrekel’s allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				}
+			],
+			"languages": [
+				"understands Common but can’t speak"
+			],
+			"languageTags": [
+				"C"
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics"
+			],
+			"action": [
+				{
+					"name": "Talons",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) slashing damage."
+					]
+				}
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"isNpc": true,
+			"skill": {
+				"perception": "+4"
+			}
+		},
+		{
+			"name": "DARKSUNCREATURE - Kestrekel Giant",
+			"size": "L",
+			"type": "beast",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"formula": "4d10 + 8",
+				"average": 27
+			},
+			"speed": {
+				"walk": 10,
+				"fly": 60,
+				"canHover": false
+			},
+			"str": 15,
+			"dex": 10,
+			"con": 15,
+			"int": 6,
+			"wis": 14,
+			"cha": 7,
+			"passive": 14,
+			"cr": "1",
+			"shortName": "Kestrekel Giant",
+			"fluff": {
+				"entries": [
+					"The horrid croak of akestrekel",
+					"is considered a harbinger of death, because these predators gather when a creature is about to die. Individually, a kestreke is a nuisance. A flock of these birds can be an immediate and dire threat, though. The larger ones are cruel creatures that enjoy the suffering of.",
+					"Lore",
+					"Kestrekels seek out the sick and injured, their dark eyes watching for any sign of weakness. As the prey is sapped, the beasts probe their coming meal by darting closer for quick bites. Travelers dogged by these carrion birds can lure them close by feigning injuries, but this trick rarely works on any but the most eager beasts.",
+					"Encounters",
+					"Death lures kestrekels, but they are patient and always watchful. Kestrekels seldom attack healthy creatures, but might follow them, especially into areas where the land and climate are hard or where other predators or dangers might be present. As a traveler moves deeper into these territories, other kestrekels join the first few, until a dozen or more have gathered. Together, they emit their grating calls, waiting until their meal can no longer fend off attack."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/g7hXUFZ.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"desert",
+				"hill",
+				"mountain"
+			],
+			"tokenUrl": "https://i.imgur.com/61mdfjH.png",
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"A giant kestrekel has advanced intelligence and a malevolent bent. Unlike its smaller kin, it will attack a wounded creature to hasten its end. Giant kestrekel have been known to haunt a thirsty, starving creature for days to enjoy its suffering."
+					]
+				},
+				{
+					"name": "Keen Sight and Smell",
+					"entries": [
+						"The kestrekel has advantage on Wisdom (Perception) checks that rely on sigh and smell"
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The kestrekel has advantage on an attack roll against a creature if at least one of the kestrekel’s allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				}
+			],
+			"languages": [
+				"understands Common but can’t speak"
+			],
+			"languageTags": [
+				"C"
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The kestrekel makes two melee attacks, one with its talons, and one with its beak."
+					]
+				},
+				{
+					"name": "Beak",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d4 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Talons",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) slashing damage."
+					]
+				}
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"isNpc": true,
+			"skill": {
+				"perception": "+4"
+			},
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Kestrekel",
+			"size": "S",
+			"type": "beast",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "2d6",
+				"average": 7
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 50,
+				"canHover": false
+			},
+			"str": 11,
+			"dex": 14,
+			"con": 11,
+			"int": 1,
+			"wis": 12,
+			"cha": 6,
+			"passive": 11,
+			"cr": "1/4",
+			"shortName": "Kestrekel",
+			"fluff": {
+				"entries": [
+					"The scourge of the Tablelands, kes'trekel are vile avian creatures that feast upon desert carrion. Although they are weak and cowardly in small groups, kes'trekel can become a devastating force in larger numbers.",
+					"Kes'trekel are scrawny in appearance, with black plumage graying from the constant exposure. The only spot of appreciable color is found on the head, where the vivid crimson stands out like the blood it resembles. Standing barely a foot tall on short, taloned feet, kes'trekel are extremely vulnerable on the ground. In the air however, their 3-foot wingspan is more than enough to carry it aloft.",
+					"Kes'trekel communicate among themselves through calls and guttural squawks. They do not attempt to learn other languages.",
+					"Kes'trekel flocks are not migratory, preferring to inhabit their particular region for centuries if the elements allow. The nests they build in the available crags and trees are temporary, used but once per set of offspring.",
+					"When defending their home regions, kes'trekel cooperate as a flock, raining a veritable torrent of pecks and scratches upon any who dare invade."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/QONE9CS.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"desert",
+				"hill",
+				"mountain"
+			],
+			"tokenUrl": "https://i.imgur.com/VjOJByI.png",
+			"trait": [
+				{
+					"name": "Keen Sight and Smell",
+					"entries": [
+						"The kestrekel has advantage on Wisdom (Perception) checks that rely on sigh and smell"
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The kestrekel has advantage on an attack roll against a creature if at least one of the kestrekel’s allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				}
+			],
+			"languages": [
+				"understands Common but can’t speak"
+			],
+			"languageTags": [
+				"C"
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics"
+			],
+			"action": [
+				{
+					"name": "Talons",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) slashing damage."
+					]
+				}
+			],
+			"damageTags": [
+				"S"
+			],
+			"isNpc": true,
+			"miscTags": [
+				"MW"
+			]
 		}
 
 
