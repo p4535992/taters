@@ -21797,14 +21797,14 @@
 						"{@spell gust of wind}"
 					],
 					"daily": {
-						"2e": [
+						"2": [
 							"{@spell blight}",
 							"{@spell darkness}",
 							"{@spell entangle}",
 							"{@spell fear}",
 							"{@spell phantasmal killer}"
 						],
-						"1e": [
+						"1": [
 							"{@spell weird}"
 						]
 					},
@@ -22909,6 +22909,511 @@
 						"The sphinx casts a spell from its list of prepared spells, using a spell slot as normal."
 					]
 				}
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Psurlon Dustworm",
+			"size": "M",
+			"type": {
+				"type": "aberration",
+				"tags": [
+					"shapechanger"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d8 + 14",
+				"average": 45
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 30
+			},
+			"str": 13,
+			"dex": 14,
+			"con": 14,
+			"int": 18,
+			"wis": 11,
+			"cha": 17,
+			"passive": 10,
+			"cr": "5",
+			"fluff": {
+				"entries": [
+					"Aberrations of the deep desert",
+					"psurlons are an unholy mix of extreme intelligence and a hideous, vaguely wormlike form. Powerful both in body and mind, psurlons sometimes take humanoid form to spy on nearby tribes and cities. Why psurlons gather such knowledge is unknown, though some scholars assert they intend to claim a dominion of their own one day.",
+					"Lore",
+					"Psurlons are an old race possessing deep lore. They are sometimes sought by masters of the Way, spellcasters, or historians to shed new light on old questions. Getting answers from a psurlon is fraught with danger, though-the exchange can end with the questioner's death if great care is not taken. Psurlons are not native to Athas. They found their way through the Gray; some might still reside in the blasted graveyard of dead gods. They were drawn to Athas like moths to a flame, attracted by the high degree of psionic power regularly wielded by life forms on the planet. Centuries ago, the psurlons had a world all their own. In an act of hubris, they attempted to unite the minds of their race into a single godmind. Disaster struck, and the resulting psychic backlash destroyed the psurlon home world. Only their minds survived, and they managed that only by taking shelter in the Astral Sea and by anchoring themselves in the bodies of mindless slugs. Over thousands of worm generations, the psurIons modified their host forms until they reached their present aberrant embodiments. Although they might once have had forms similar to the humanoids of Athas, they have come to prefer their wormlike host forms.",
+					"Encounters",
+					"In their lairs, psurlons keep a variety of indoctrinated or enslaved allies, including human defilers and beast giants. In an urban environment, they might be encountered as lone agents hiding in humanoid crowds or as influential power brokers deeply embedded in the local society.",
+					"Depending on its current goal or mission, a psurlon might retain its changed form and avoid battle. If combat is imminent, a psurlon burrows into the most advantageous position, using close or melee attacks to position foes or inhibit their movement. A psurlon might gather humanoid minions under its influence to do its fighting. Warded by these cat's-paws, it dominates weak-willed opponents or focuses its damage on the least armored enemies."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/UElBnFI.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"desert",
+				"underdark",
+				"urban"
+			],
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Form-shifting psurlon dustworms infiltrate walled city-states. They observe and record a great deal of activity, but are particularly interested in the comings and goings of sorcerer-kings."
+					]
+				},
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"The psurlon can use its action to polymorph into a Small or Medium humanoid it has seen, or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+					]
+				}
+			],
+			"isNpc": true,
+			"tokenUrl": "https://i.imgur.com/fwWmgyR.png",
+			"shortName": "Psurlon Dustworm",
+			"languages": [
+				"Common",
+				"Deep Speech",
+				"telepathy 120ft."
+			],
+			"languageTags": [
+				"C",
+				"DS",
+				"TP"
+			],
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"skill": {
+				"arcana": "+10",
+				"deception": "+9",
+				"history": "+10"
+			},
+			"conditionImmune": [
+				"charmed"
+			],
+			"traitTags": [
+				"Shapechanger"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Psionics)",
+					"headerEntries": [
+						"The psurlon's innate spellcasting ability is Intelligence (spell save {@dc 15}). The psurlon can innately cast the following spells, requiring no material components.",
+						"Spellcasting Ability=INT",
+						"Global Magic Attack Modifier=7",
+						"Magic Caster Level=9",
+						"Spell Save DC Mod=15"
+					],
+					"will": [
+						"{@spell detect thoughts}",
+						"{@spell dominate person}",
+						"{@spell hold monster}"
+					],
+					"daily": {
+						"1": [
+							"{@spell stoneskin}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"P",
+				"I"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The psurlon makes two melee attacks, one with its claws and one with its bite."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 2}) piercing damage, plus 6 ({@damage 2d6}) psychic damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage, plus 6 ({@damage 2d6}) psychic damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"Y"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"resist": [
+				"psychic"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Psurlon Warworm",
+			"size": "L",
+			"type": "aberration",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d10 + 36",
+				"average": 113
+			},
+			"speed": {
+				"walk": 20,
+				"burrow": 20
+			},
+			"str": 19,
+			"dex": 12,
+			"con": 16,
+			"int": 11,
+			"wis": 11,
+			"cha": 13,
+			"passive": 16,
+			"cr": "9",
+			"fluff": {
+				"entries": [
+					"Aberrations of the deep desert",
+					"psurlons are an unholy mix of extreme intelligence and a hideous, vaguely wormlike form. Powerful both in body and mind, psurlons sometimes take humanoid form to spy on nearby tribes and cities. Why psurlons gather such knowledge is unknown, though some scholars assert they intend to claim a dominion of their own one day.",
+					"Lore",
+					"Psurlons are an old race possessing deep lore. They are sometimes sought by masters of the Way, spellcasters, or historians to shed new light on old questions. Getting answers from a psurlon is fraught with danger, though-the exchange can end with the questioner's death if great care is not taken. Psurlons are not native to Athas. They found their way through the Gray; some might still reside in the blasted graveyard of dead gods. They were drawn to Athas like moths to a flame, attracted by the high degree of psionic power regularly wielded by life forms on the planet. Centuries ago, the psurlons had a world all their own. In an act of hubris, they attempted to unite the minds of their race into a single godmind. Disaster struck, and the resulting psychic backlash destroyed the psurlon home world. Only their minds survived, and they managed that only by taking shelter in the Astral Sea and by anchoring themselves in the bodies of mindless slugs. Over thousands of worm generations, the psurIons modified their host forms until they reached their present aberrant embodiments. Although they might once have had forms similar to the humanoids of Athas, they have come to prefer their wormlike host forms.",
+					"Encounters",
+					"In their lairs, psurlons keep a variety of indoctrinated or enslaved allies, including human defilers and beast giants. In an urban environment, they might be encountered as lone agents hiding in humanoid crowds or as influential power brokers deeply embedded in the local society.",
+					"Depending on its current goal or mission, a psurlon might retain its changed form and avoid battle. If combat is imminent, a psurlon burrows into the most advantageous position, using close or melee attacks to position foes or inhibit their movement. A psurlon might gather humanoid minions under its influence to do its fighting. Warded by these cat's-paws, it dominates weak-willed opponents or focuses its damage on the least armored enemies."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/yr1EYtK.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"desert",
+				"underdark",
+				"urban"
+			],
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Warworms do not share the insidious malleability of their ilk. Unable to take humanoid form, they lie in wait beneath the earth, ready to answer a summons by any dustworm or mindworm whose disguise has been compromised."
+					]
+				}
+			],
+			"isNpc": true,
+			"tokenUrl": "https://i.imgur.com/OkSlNgu.png",
+			"shortName": "Psurlon Warworm",
+			"languages": [
+				"Deep Speech",
+				"telepathy 120ft."
+			],
+			"languageTags": [
+				"DS",
+				"TP"
+			],
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"conditionImmune": [
+				"charmed"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The psurlon makes three melee attacks, two with its claws and one with its bite."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d10 + 4}) piercing damage, plus 6 ({@damage 2d6}) psychic damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d8 + 4}) piercing damage, plus 6 ({@damage 2d6}) psychic damage."
+					]
+				},
+				{
+					"name": "Mind Scream {@recharge 5}",
+					"entries": [
+						"The warworm screams and the psychic echo rip the mind of every creatures in a 30ft radius around it, forcing them to make a DC16 Wisdom saving throw, taking 25 ({@damage 5d10}) psychic damage and being {@condition stunned} until the end of the warworm next turn on a failed save. Succeeding on the saving throw reduce the damage taken by half and cancel the stunning effect."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"Y"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"skill": {
+				"perception": "+6"
+			},
+			"resist": [
+				"psychic"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Psionics)",
+					"headerEntries": [
+						"The psurlon's innate spellcasting ability is Intelligence (spell save {@dc 12}). The psurlon can innately cast the following spells, requiring no material components.",
+						"Spellcasting Ability=INT",
+						"Global Magic Attack Modifier=4",
+						"Magic Caster Level=6",
+						"Spell Save DC Mod=12"
+					],
+					"daily": {
+						"1": [
+							"{@spell stoneskin}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"P",
+				"I"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Psurlon Mindworm",
+			"size": "M",
+			"type": {
+				"type": "aberration",
+				"tags": [
+					"shapechanger"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d8 + 45",
+				"average": 110
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 30
+			},
+			"str": 13,
+			"dex": 14,
+			"con": 16,
+			"int": 22,
+			"wis": 11,
+			"cha": 19,
+			"passive": 10,
+			"cr": "12",
+			"fluff": {
+				"entries": [
+					"Aberrations of the deep desert",
+					"psurlons are an unholy mix of extreme intelligence and a hideous, vaguely wormlike form. Powerful both in body and mind, psurlons sometimes take humanoid form to spy on nearby tribes and cities. Why psurlons gather such knowledge is unknown, though some scholars assert they intend to claim a dominion of their own one day.",
+					"Lore",
+					"Psurlons are an old race possessing deep lore. They are sometimes sought by masters of the Way, spellcasters, or historians to shed new light on old questions. Getting answers from a psurlon is fraught with danger, though-the exchange can end with the questioner's death if great care is not taken. Psurlons are not native to Athas. They found their way through the Gray; some might still reside in the blasted graveyard of dead gods. They were drawn to Athas like moths to a flame, attracted by the high degree of psionic power regularly wielded by life forms on the planet. Centuries ago, the psurlons had a world all their own. In an act of hubris, they attempted to unite the minds of their race into a single godmind. Disaster struck, and the resulting psychic backlash destroyed the psurlon home world. Only their minds survived, and they managed that only by taking shelter in the Astral Sea and by anchoring themselves in the bodies of mindless slugs. Over thousands of worm generations, the psurIons modified their host forms until they reached their present aberrant embodiments. Although they might once have had forms similar to the humanoids of Athas, they have come to prefer their wormlike host forms.",
+					"Encounters",
+					"In their lairs, psurlons keep a variety of indoctrinated or enslaved allies, including human defilers and beast giants. In an urban environment, they might be encountered as lone agents hiding in humanoid crowds or as influential power brokers deeply embedded in the local society.",
+					"Depending on its current goal or mission, a psurlon might retain its changed form and avoid battle. If combat is imminent, a psurlon burrows into the most advantageous position, using close or melee attacks to position foes or inhibit their movement. A psurlon might gather humanoid minions under its influence to do its fighting. Warded by these cat's-paws, it dominates weak-willed opponents or focuses its damage on the least armored enemies."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/ndvEeoN.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"desert",
+				"underdark",
+				"urban"
+			],
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Masters of psyche and fate, mindworms see multiple futures at once. In its most limited use, this vision allows the psurlons to lower the defenses and cause more damage to enemies from whom it draws blood. The broader application of this capacity is more insidious. Mindworms sift among potential futures, determining when circumstances are right for the psurlons to advance another step toward their secret objective."
+					]
+				},
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"The psurlon can use its action to polymorph into a Small or Medium humanoid it has seen, or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+					]
+				}
+			],
+			"isNpc": true,
+			"tokenUrl": "https://i.imgur.com/EydLQpV.png",
+			"shortName": "Psurlon Mindworm",
+			"languages": [
+				"Common",
+				"Deep Speech",
+				"telepathy 120ft."
+			],
+			"languageTags": [
+				"C",
+				"DS",
+				"TP"
+			],
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"conditionImmune": [
+				"charmed"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The psurlon makes three melee attacks, two with its claws and one with its bite."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d10 + 2}) piercing damage, plus 8 ({@damage 2d8}) psychic damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage, plus 8 ({@damage 2d8}) psychic damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"Y"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"resist": [
+				"psychic"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Psionics)",
+					"headerEntries": [
+						"The psurlon's innate spellcasting ability is Intelligence (spell save {@dc 20}). The psurlon can innately cast the following spells, requiring no material components.",
+						"Spellcasting Ability=INT",
+						"Global Magic Attack Modifier=12",
+						"Magic Caster Level=14",
+						"Spell Save DC Mod=20"
+					],
+					"will": [
+						"{@spell detect thoughts}",
+						"{@spell dominate person}",
+						"{@spell hold person}",
+						"{@spell mass suggestion}"
+					],
+					"daily": {
+						"1": [
+							"{@spell disintegrate}",
+							"{@spell feeblemind}",
+							"{@spell reverse gravity}",
+							"{@spell stoneskin}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"P",
+				"I"
+			],
+			"save": {
+				"int": "+10",
+				"wis": "+4",
+				"cha": "+8"
+			},
+			"skill": {
+				"arcana": "+14",
+				"deception": "+12",
+				"history": "+14"
+			},
+			"traitTags": [
+				"Shapechanger"
 			]
 		}
 
