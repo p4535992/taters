@@ -28115,6 +28115,1278 @@
 			"miscTags": [
 				"MW"
 			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Spider Crystal",
+			"size": "L",
+			"type": {
+				"type": "elemental",
+				"tags": [
+					"earth",
+					"psionic"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d10 + 24",
+				"average": 78
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 20,
+			"dex": 11,
+			"con": 16,
+			"int": 3,
+			"wis": 13,
+			"cha": 8,
+			"passive": 11,
+			"cr": "8",
+			"shortName": "Spider Crystal",
+			"fluff": {
+				"entries": [
+					"The spiders of athas have evolved",
+					"as the verdant world turned slowly to sand. They have grown to monstrous proportions and have learned to make the terrain an ally in their hunts.",
+					"Lore",
+					"Natural loners, the spiders of the Tablelands haunt shallow caves, deep valleys, and similar locations that offer cramped confines and twisting passages. The spiders weave webs across these passages. In some instances, they spin their webs over great pits or across chasms.",
+					"Encounters",
+					"Athas's spiders regard other creatures as food, and they establish lairs in territory through which easy prey passes. They prefer areas that see regular travel, steering clear of high-traffic routes to avoid unwanted attention. A spider's lair usually contains three to five webs stretched across its major passages."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/8lO1dGa.png"
+						}
+					}
+				]
+			},
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Light gleams from its crystalline carapace, casting a riot of colors across a cliff face. The crystal spider is one of the Tablelands' most alluring and menacing arachnids. Its spare frame and delicate movements are gracious and attractive, while its crimson eyes and slender, venomous fangs radiate danger.",
+						"Resembling giant wolf spiders, crystal spiders have bodies composed of multifaceted crystal that creates dazzling patterns of refracted light. They spin glass webs that are very sharp and can focus a damaging beam of light at a potential victim. The crystal spider is a beautiful creature. During the day the sunlight refracts through it, reflecting a myriad of colors which change as it moves. At night it reflects any ambient light, retaining its colors but not as radiant as during the day. When the spider has fed, it takes on a reddish tinge but this fades over a few days. A crystal spider is incapable of making sounds, but can communicate with others of its kind by means of controlled light. Crystal spiders get most of their nutrients from sunlight but do require liquids to survive, preferring human blood. They are hunted for their webs, which make excellent weapons, and for the gems which they instinctively weave into these webs (although the spiders are themselves unaware of their value).",
+						"A typical crystal spider is eight feet long and can live up to 150 years. Before death, a crystal spider will lay a single huge cluster of eggs (as many as 200) in a specially crafted web.",
+						"A crystal spider is patient and agile. Its glass webs can slice through bone, and the spider spins them in dim light along the travel route through its lair. The arachnid creeps behind prey, attacking with teeth and razor-sharp legs the moment a creature stumbles into a web. A crystal spider quickly withdraws, only to appear elsewhere in a blinding blaze of light."
+					]
+				},
+				{
+					"name": "Prismatic Reflection",
+					"entries": [
+						"In areas of bright light (such as sunlight or the radius of a daylight spell), a crystal spider radiate of a blinding light. All creature within 30ft of the spider who look directly at her must make a {@dc 16} Dexterity saving throw or be {@condition blinded} until the end of the creature’s next turn."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Web Sense",
+					"entries": [
+						"While in contact with a web, the spider knows the exact location of any other creature in contact with the same web."
+					]
+				},
+				{
+					"name": "Web Walker",
+					"entries": [
+						"The spider ignores movement restrictions caused by webbing."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/2xCCn4t.png",
+			"environment": [
+				"desert",
+				"mountain",
+				"underdark"
+			],
+			"senses": [
+				"blindsight 30 ft.",
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"skill": {
+				"stealth": "+6"
+			},
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons that aren’t metal."
+				}
+			],
+			"vulnerable": [
+				"thunder"
+			],
+			"conditionInflict": [
+				"restrained",
+				"blinded"
+			],
+			"traitTags": [
+				"Spider Climb",
+				"Web Sense",
+				"Web Walker"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The crystal spider makes three attacks, two with its claw and one mandible attack."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Mandible",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}17 ({@damage 3d8 + 5}) piercing damage and the target must succeed on a {@dc 16} Constitution saving throw against being magically turned to crystal. On a failed save, the creature begins to turn to crystal and is {@condition restrained}. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is turned into a statue of crystal, {@condition petrified}, for 24 hours."
+					]
+				},
+				{
+					"name": "Crystal Web {@recharge 5}",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 30/60 ft., one target. {@h}20 ({@damage 4d10}) slashing damage and the target is {@condition restrained} by crystal webbing. As an action, the {@condition restrained} target can make a {@dc 16} Strength check, bursting the webbing on a success. Each failed attempt inflict 10 ({@damage 2d10}) slashing damage on the creature as she arms herself on the sharp web. The webbing can also be attacked and destroyed (AC 10; hp 35; resistance to bludgeoning, piercing and slashing damage from nonmagical weapons that aren’t metal; Immunity to poison, and psychic damage)."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"isNpc": true
+		},
+		{
+			"name": "DARKSUNCREATURE - Spider Crystal White Widow",
+			"size": "H",
+			"type": {
+				"type": "elemental",
+				"tags": [
+					"earth",
+					"psionic"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d12 + 70",
+				"average": 161
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40
+			},
+			"str": 22,
+			"dex": 19,
+			"con": 20,
+			"int": 5,
+			"wis": 13,
+			"cha": 8,
+			"passive": 11,
+			"cr": "13",
+			"shortName": "Spider Crystal White Widow",
+			"fluff": {
+				"entries": [
+					"The spiders of athas have evolved",
+					"as the verdant world turned slowly to sand. They have grown to monstrous proportions and have learned to make the terrain an ally in their hunts.",
+					"Lore",
+					"Natural loners, the spiders of the Tablelands haunt shallow caves, deep valleys, and similar locations that offer cramped confines and twisting passages. The spiders weave webs across these passages. In some instances, they spin their webs over great pits or across chasms.",
+					"Encounters",
+					"Athas's spiders regard other creatures as food, and they establish lairs in territory through which easy prey passes. They prefer areas that see regular travel, steering clear of high-traffic routes to avoid unwanted attention. A spider's lair usually contains three to five webs stretched across its major passages."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/ge2sfsJ.png"
+						}
+					}
+				]
+			},
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"The white widow is a relative of the crystal spider. 'While it lacks its cousin's radiant abilities, the widow is far larger, stronger, more venomous, and stealthier, despite its great size. The widow spins thick, loose, sticky webs.",
+						"A white widow chokes long tunnels or chambers with its clingy webs, looking to ensnare multiple morsels simultaneously. Like its cousin, a widow remains hidden until a prime moment to dash out, attack, and retreat back into shadows. It is a crafty fighter and knows every nook of its lair. A widow rarely attacks from the same spot twice."
+					]
+				},
+				{
+					"name": "Etheral Jaunt",
+					"entries": [
+						"As a bonus action, the spider can magically shift from the Material Plane to the Ethereal Plane, or vice versa."
+					]
+				},
+				{
+					"name": "Reflective Defense",
+					"entries": [
+						"When the white widow is hit by an attack inflicting acid, fire, lightning or radiant damage she radiates in a burst of energy. All creature within 30ft of the spider must succeed on a {@dc 17} Dexterity saving throw, taking 24 ({@damage 6d8}) radiant damage on a failed save and half as much on a successful one. Additionally creatures who look directly at her and failing the saving throw are be {@condition blinded} for one minute."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Web Sense",
+					"entries": [
+						"While in contact with a web, the spider knows the exact location of any other creature in contact with the same web."
+					]
+				},
+				{
+					"name": "Web Walker",
+					"entries": [
+						"The spider ignores movement restrictions caused by webbing."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/jqp39Ut.png",
+			"environment": [
+				"desert",
+				"mountain",
+				"underdark"
+			],
+			"senses": [
+				"blindsight 30 ft.",
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"skill": {
+				"stealth": "+6"
+			},
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons that aren’t metal."
+				}
+			],
+			"vulnerable": [
+				"thunder"
+			],
+			"damageTags": [
+				"P",
+				"R"
+			],
+			"isNpc": true,
+			"save": {
+				"str": "+13",
+				"dex": "+9",
+				"con": "+10",
+				"wis": "+6"
+			},
+			"immune": [
+				"acid",
+				"fire",
+				"lightning",
+				"radiant"
+			],
+			"traitTags": [
+				"Spider Climb",
+				"Web Sense",
+				"Web Walker"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The spider makes three attacks, two with its claw and one mandible attack."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 10 ft., one target. {@h}16 ({@damage 3d6 + 7}) piercing damage."
+					]
+				},
+				{
+					"name": "Mandible",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 10 ft., one target. {@h}25 ({@damage 4d8 + 7}) piercing damage and the target must succeed on a {@dc 17} Constitution saving throw against being magically turned to crystal. On a failed save, the creature begins to turn to crystal and is {@condition restrained}. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is turned into a statue of crystal, {@condition petrified}, for 24 hours."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"restrained"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Spider Dark Warrior",
+			"size": "M",
+			"type": {
+				"type": "aberration",
+				"tags": [
+					"spider"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 12",
+				"average": 39
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 20
+			},
+			"str": 14,
+			"dex": 16,
+			"con": 14,
+			"int": 13,
+			"wis": 10,
+			"cha": 8,
+			"passive": 12,
+			"cr": "2",
+			"shortName": "Spider Dark Warrior",
+			"fluff": {
+				"entries": [
+					"The spiders of athas have evolved",
+					"as the verdant world turned slowly to sand. They have grown to monstrous proportions and have learned to make the terrain an ally in their hunts.",
+					"Lore",
+					"Natural loners, the spiders of the Tablelands haunt shallow caves, deep valleys, and similar locations that offer cramped confines and twisting passages. The spiders weave webs across these passages. In some instances, they spin their webs over great pits or across chasms.",
+					"Encounters",
+					"Athas's spiders regard other creatures as food, and they establish lairs in territory through which easy prey passes. They prefer areas that see regular travel, steering clear of high-traffic routes to avoid unwanted attention. A spider's lair usually contains three to five webs stretched across its major passages.",
+					"Black Spiders",
+					"Rearing itself up before you is an enormous spider the size of a man with disgusting, oily black skin, mottled with lurid red and purple streaks. Its features are almost humanoid and it regards you with a menacing leer.",
+					"Dark spiders are an intelligent species of subterranean arachnid that lives in highly organized tribal units. Divided among warriors, defilers and queens, they have no natural enemies but often create enemies through their predatory behavior when nesting young. Dark spiders stand six feet in height and weigh 120 pounds, although their queens reach twice that size when mature. The more intelligent among them are able to master humanoid tongues, and some have been known to trade silk to merchant houses in return for warm-blooded slaves.",
+					"Dark spiders prefer to either strike from ambush, using their webbing, or attack with greater numbers and overwhelm their foes. Warbands of warrior spiders are often led by individual defilers or psions, who use their powers to bolster the melee attacks of the warriors. In melee, dark spiders strike with two claws and a poisonous bite. The venom of the queen is particularly potent and is easily capable of killing an adult human. The poison of the other dark spiders is still dangerous but less routinely fatal than that of the queens."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/6Q3vaiN.png"
+						}
+					}
+				]
+			},
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Beneath the tyrannical rule of its queens, dark spider society is divided into three tiers, with the warriors being the lowest and most common form of the species."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Web Sense",
+					"entries": [
+						"While in contact with a web, the spider knows the exact location of any other creature in contact with the same web."
+					]
+				},
+				{
+					"name": "Web Walker",
+					"entries": [
+						"The spider ignores movement restrictions caused by webbing."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/B4vt1my.png",
+			"environment": [
+				"desert",
+				"mountain",
+				"underdark"
+			],
+			"skill": {
+				"stealth": "+5",
+				"perception": "+2",
+				"survival": "+2"
+			},
+			"damageTags": [
+				"P",
+				"I"
+			],
+			"isNpc": true,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"traitTags": [
+				"Spider Climb",
+				"Web Sense",
+				"Web Walker"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dark spider makes three attacks, two with its claw and one mandible attack."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Mandible",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage and the target must make a {@dc 12} Constitution saving throw, taking 12 ({@damage 3d8}) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but {@condition poisoned} for 1 hour, even after regaining hit points, and is {@condition paralyzed} while {@condition poisoned} in this way."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"poisoned",
+				"paralyzed"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Spider Dark Psion",
+			"size": "M",
+			"type": {
+				"type": "aberration",
+				"tags": [
+					"spider"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d8 + 9",
+				"average": 50
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 20
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 12,
+			"int": 14,
+			"wis": 14,
+			"cha": 11,
+			"passive": 14,
+			"cr": "4",
+			"shortName": "Spider Dark Psion",
+			"fluff": {
+				"entries": [
+					"The spiders of athas have evolved",
+					"as the verdant world turned slowly to sand. They have grown to monstrous proportions and have learned to make the terrain an ally in their hunts.",
+					"Lore",
+					"Natural loners, the spiders of the Tablelands haunt shallow caves, deep valleys, and similar locations that offer cramped confines and twisting passages. The spiders weave webs across these passages. In some instances, they spin their webs over great pits or across chasms.",
+					"Encounters",
+					"Athas's spiders regard other creatures as food, and they establish lairs in territory through which easy prey passes. They prefer areas that see regular travel, steering clear of high-traffic routes to avoid unwanted attention. A spider's lair usually contains three to five webs stretched across its major passages.",
+					"Black Spiders",
+					"Rearing itself up before you is an enormous spider the size of a man with disgusting, oily black skin, mottled with lurid red and purple streaks. Its features are almost humanoid and it regards you with a menacing leer.",
+					"Dark spiders are an intelligent species of subterranean arachnid that lives in highly organized tribal units. Divided among warriors, defilers and queens, they have no natural enemies but often create enemies through their predatory behavior when nesting young. Dark spiders stand six feet in height and weigh 120 pounds, although their queens reach twice that size when mature. The more intelligent among them are able to master humanoid tongues, and some have been known to trade silk to merchant houses in return for warm-blooded slaves.",
+					"Dark spiders prefer to either strike from ambush, using their webbing, or attack with greater numbers and overwhelm their foes. Warbands of warrior spiders are often led by individual defilers or psions, who use their powers to bolster the melee attacks of the warriors. In melee, dark spiders strike with two claws and a poisonous bite. The venom of the queen is particularly potent and is easily capable of killing an adult human. The poison of the other dark spiders is still dangerous but less routinely fatal than that of the queens."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/wDfcA7k.png"
+						}
+					}
+				]
+			},
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"One in five warriors is born with a mutation that slightly hampers the creature‘s physical development, but gives rise to a smattering of psionic abilities as a consequence. These psionic dark spiders are viewed with curiosity and some respect by their fellows, but are still not afforded the same status as are the defilers."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Web Sense",
+					"entries": [
+						"While in contact with a web, the spider knows the exact location of any other creature in contact with the same web."
+					]
+				},
+				{
+					"name": "Web Walker",
+					"entries": [
+						"The spider ignores movement restrictions caused by webbing."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/QjxRML7.png",
+			"environment": [
+				"desert",
+				"mountain",
+				"underdark"
+			],
+			"skill": {
+				"stealth": "+5",
+				"perception": "+4",
+				"survival": "+4"
+			},
+			"damageTags": [
+				"P",
+				"I"
+			],
+			"isNpc": true,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"traitTags": [
+				"Spider Climb",
+				"Web Sense",
+				"Web Walker"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Psionics)",
+					"headerEntries": [
+						"The spider's innate spellcasting ability is Intelligence (spell save {@dc 12}). The spider can innately cast the following spells, requiring no material components.",
+						"Spellcasting Ability=INT",
+						"Global Magic Attack Modifier=0",
+						"Magic Caster Level=0",
+						"Spell Save DC Mod=12"
+					],
+					"will": [
+						"{@spell heroism}",
+						"{@spell shatter}"
+					],
+					"daily": {
+						"2e": [
+							"{@spell fear}",
+							"{@spell hold person}",
+							"{@spell suggestion}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"P",
+				"I"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dark spider makes three attacks, two with its claw and one mandible attack."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Mandible",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage and the target must make a {@dc 12} Constitution saving throw, taking 12 ({@damage 3d8}) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but {@condition poisoned} for 1 hour, even after regaining hit points, and is {@condition paralyzed} while {@condition poisoned} in this way."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"poisoned",
+				"paralyzed"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Spider Dark Defiler",
+			"size": "M",
+			"type": {
+				"type": "aberration",
+				"tags": [
+					"spider"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "11d8 + 22",
+				"average": 72
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 20
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 14,
+			"int": 16,
+			"wis": 16,
+			"cha": 12,
+			"passive": 16,
+			"cr": "6",
+			"shortName": "Spider Dark Defiler",
+			"fluff": {
+				"entries": [
+					"The spiders of athas have evolved",
+					"as the verdant world turned slowly to sand. They have grown to monstrous proportions and have learned to make the terrain an ally in their hunts.",
+					"Lore",
+					"Natural loners, the spiders of the Tablelands haunt shallow caves, deep valleys, and similar locations that offer cramped confines and twisting passages. The spiders weave webs across these passages. In some instances, they spin their webs over great pits or across chasms.",
+					"Encounters",
+					"Athas's spiders regard other creatures as food, and they establish lairs in territory through which easy prey passes. They prefer areas that see regular travel, steering clear of high-traffic routes to avoid unwanted attention. A spider's lair usually contains three to five webs stretched across its major passages.",
+					"Black Spiders",
+					"Rearing itself up before you is an enormous spider the size of a man with disgusting, oily black skin, mottled with lurid red and purple streaks. Its features are almost humanoid and it regards you with a menacing leer.",
+					"Dark spiders are an intelligent species of subterranean arachnid that lives in highly organized tribal units. Divided among warriors, defilers and queens, they have no natural enemies but often create enemies through their predatory behavior when nesting young. Dark spiders stand six feet in height and weigh 120 pounds, although their queens reach twice that size when mature. The more intelligent among them are able to master humanoid tongues, and some have been known to trade silk to merchant houses in return for warm-blooded slaves.",
+					"Dark spiders prefer to either strike from ambush, using their webbing, or attack with greater numbers and overwhelm their foes. Warbands of warrior spiders are often led by individual defilers or psions, who use their powers to bolster the melee attacks of the warriors. In melee, dark spiders strike with two claws and a poisonous bite. The venom of the queen is particularly potent and is easily capable of killing an adult human. The poison of the other dark spiders is still dangerous but less routinely fatal than that of the queens."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/BYbbeOP.png"
+						}
+					}
+				]
+			},
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"The defiler caste of dark spider possesses formidable casting abilities and occupies an elite position in dark spider society. Furthermore, one in five defiler spiders also possesses psionic powers. They have access to the same powers listed above for psion spiders, but are CR 8 as a result. Spider Defiler are not using spellbook but weave intricate and complex web where they inscribe occult symbols. The caves where they live are carved with spells and radiate of mystic power. Darks spider defiler are always interested in learning new magical secret and are open to negotiate or trade with creature’s that show sign of arcane knowledge."
+					]
+				},
+				{
+					"name": "Defiling",
+					"entries": [
+						"When the spider stands in an area with living plants, he can drain their energy to power his spells, treating them as if cast with a spell slot one level higher than he actually spends. The spider can also cause each creature within 5ft of to make a Constitution saving throw {@dc 15} or take {@damage 1d6} necrotic damage. If he does do, and at least one creature is damaged by this feature, he has advantage on the attack roll of the spell, if it requires one, or else targets of the spell he is casting have disadvantage on their saving throw. When he uses this feature, all plant life within 5ft of him turns black and withers, he cannot use this feature in an area that has been defiled already."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Web Sense",
+					"entries": [
+						"While in contact with a web, the spider knows the exact location of any other creature in contact with the same web."
+					]
+				},
+				{
+					"name": "Web Walker",
+					"entries": [
+						"The spider ignores movement restrictions caused by webbing."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/g1GQRms.png",
+			"environment": [
+				"desert",
+				"mountain",
+				"underdark"
+			],
+			"skill": {
+				"stealth": "+6",
+				"perception": "+6",
+				"survival": "+6",
+				"arcana": "+6"
+			},
+			"damageTags": [
+				"P",
+				"I"
+			],
+			"isNpc": true,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"traitTags": [
+				"Spider Climb",
+				"Web Sense",
+				"Web Walker"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The spider is a 10th-level spellcaster. Her spellcasting ability is Intelligence (spell save {@dc 14}, +6 to hit with spell attacks). It has the following wizard spells prepared.",
+						"Spellcasting Ability=INT",
+						"Global Magic Attack Modifier=6",
+						"Magic Caster Level=10",
+						"Spell Save DC Mod=14"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell light}",
+								"{@spell ray of frost}",
+								"{@spell shocking grasp}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell alarm}",
+								"{@spell grease}",
+								"{@spell magic missile}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell enlarge/reduce}",
+								"{@spell Melf's acid arrow}",
+								"{@spell web}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell dispel magic}",
+								"{@spell stinking cloud}",
+								"{@spell vampiric touch}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell Evard's black tentacles}",
+								"{@spell Otiluke's resilient sphere}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell Bigby's hand}",
+								"{@spell cloudkill}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dark spider makes three attacks, two with its claw and one mandible attack."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Mandible",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage and the target must make a {@dc 12} Constitution saving throw, taking 12 ({@damage 3d8}) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but {@condition poisoned} for 1 hour, even after regaining hit points, and is {@condition paralyzed} while {@condition poisoned} in this way."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"poisoned",
+				"paralyzed"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Spider Dark Queen",
+			"size": "L",
+			"type": {
+				"type": "aberration",
+				"tags": [
+					"spider"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d10 + 45",
+				"average": 128
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 30
+			},
+			"str": 16,
+			"dex": 16,
+			"con": 17,
+			"int": 16,
+			"wis": 16,
+			"cha": 16,
+			"passive": 16,
+			"cr": "10",
+			"shortName": "Spider Dark Queen",
+			"fluff": {
+				"entries": [
+					"The spiders of athas have evolved",
+					"as the verdant world turned slowly to sand. They have grown to monstrous proportions and have learned to make the terrain an ally in their hunts.",
+					"Lore",
+					"Natural loners, the spiders of the Tablelands haunt shallow caves, deep valleys, and similar locations that offer cramped confines and twisting passages. The spiders weave webs across these passages. In some instances, they spin their webs over great pits or across chasms.",
+					"Encounters",
+					"Athas's spiders regard other creatures as food, and they establish lairs in territory through which easy prey passes. They prefer areas that see regular travel, steering clear of high-traffic routes to avoid unwanted attention. A spider's lair usually contains three to five webs stretched across its major passages.",
+					"Black Spiders",
+					"Rearing itself up before you is an enormous spider the size of a man with disgusting, oily black skin, mottled with lurid red and purple streaks. Its features are almost humanoid and it regards you with a menacing leer.",
+					"Dark spiders are an intelligent species of subterranean arachnid that lives in highly organized tribal units. Divided among warriors, defilers and queens, they have no natural enemies but often create enemies through their predatory behavior when nesting young. Dark spiders stand six feet in height and weigh 120 pounds, although their queens reach twice that size when mature. The more intelligent among them are able to master humanoid tongues, and some have been known to trade silk to merchant houses in return for warm-blooded slaves.",
+					"Dark spiders prefer to either strike from ambush, using their webbing, or attack with greater numbers and overwhelm their foes. Warbands of warrior spiders are often led by individual defilers or psions, who use their powers to bolster the melee attacks of the warriors. In melee, dark spiders strike with two claws and a poisonous bite. The venom of the queen is particularly potent and is easily capable of killing an adult human. The poison of the other dark spiders is still dangerous but less routinely fatal than that of the queens."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/eTSpHqb.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/PEXudjP.png",
+			"environment": [
+				"desert",
+				"mountain",
+				"underdark"
+			],
+			"skill": {
+				"stealth": "+6",
+				"perception": "+6",
+				"survival": "+6",
+				"arcana": "+6"
+			},
+			"damageTags": [
+				"P",
+				"I"
+			],
+			"isNpc": true,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The spider is a 14th-level spellcaster. Her spellcasting ability is Intelligence (spell save {@dc 15}, +7 to hit with spell attacks). It has the following wizard spells prepared.",
+						"Spellcasting Ability=INT",
+						"Global Magic Attack Modifier=7",
+						"Magic Caster Level=14",
+						"Spell Save DC Mod=15"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell light}",
+								"{@spell ray of frost}",
+								"{@spell shocking grasp}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell chromatic orb}",
+								"{@spell detect magic}",
+								"{@spell witch bolt}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell invisibility}",
+								"{@spell phantasmal force}",
+								"{@spell web}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell bestow curse}",
+								"{@spell counterspell}",
+								"{@spell haste}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell blight}",
+								"{@spell stone shape}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cone of cold}",
+								"{@spell passwall}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell flesh to stone}",
+								"{@spell globe of invulnerability}"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"{@spell symbol}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"A top dark spider society sit the queens. Each tribe has its own queen, and each queen boasts the powers of a full defiler as well as strength in excess of that of the mightiest warriors. The queens lay their young in web sacs at the heart of their nests, where they are defended by elite bands of warriors and defiler/psions. Dark spider poison is greatly prized by assassins, and the wily creatures are not above trading their venom for warm meat for their young."
+					]
+				},
+				{
+					"name": "Defiling",
+					"entries": [
+						"When the spider stands in an area with living plants, he can drain their energy to power his spells, treating them as if cast with a spell slot one level higher than he actually spends. The spider can also cause each creature within 5ft of to make a Constitution saving throw {@dc 15} or take {@damage 1d6} necrotic damage. If he does do, and at least one creature is damaged by this feature, he has advantage on the attack roll of the spell, if it requires one, or else targets of the spell he is casting have disadvantage on their saving throw. When he uses this feature, all plant life within 5ft of him turns black and withers, he cannot use this feature in an area that has been defiled already."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Web Sense",
+					"entries": [
+						"While in contact with a web, the spider knows the exact location of any other creature in contact with the same web."
+					]
+				},
+				{
+					"name": "Web Walker",
+					"entries": [
+						"The spider ignores movement restrictions caused by webbing."
+					]
+				}
+			],
+			"traitTags": [
+				"Spider Climb",
+				"Web Sense",
+				"Web Walker"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dark spider makes three attacks, two with its claw and one mandible attack."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Mandible",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 2d4 + 3}) piercing damage and the target must make a {@dc 16} Constitution saving throw, taking 25 ({@damage 5d10}) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but {@condition poisoned} for 1 hour, even after regaining hit points, and is {@condition paralyzed} while {@condition poisoned} in this way."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"poisoned",
+				"paralyzed"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Spider Salt Swarm of Silt Spider",
+			"size": "M",
+			"type": {
+				"type": "beast",
+				"swarmSize": "T"
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8",
+				"average": 27
+			},
+			"speed": {
+				"walk": 20,
+				"climb": 20
+			},
+			"str": 3,
+			"dex": 13,
+			"con": 10,
+			"int": 1,
+			"wis": 7,
+			"cha": 1,
+			"passive": 8,
+			"cr": "2",
+			"shortName": "Spider Salt Swarm of Silt Spider",
+			"fluff": {
+				"entries": [
+					"The spiders of athas have evolved",
+					"as the verdant world turned slowly to sand. They have grown to monstrous proportions and have learned to make the terrain an ally in their hunts.",
+					"Lore",
+					"Natural loners, the spiders of the Tablelands haunt shallow caves, deep valleys, and similar locations that offer cramped confines and twisting passages. The spiders weave webs across these passages. In some instances, they spin their webs over great pits or across chasms.",
+					"Encounters",
+					"Athas's spiders regard other creatures as food, and they establish lairs in territory through which easy prey passes. They prefer areas that see regular travel, steering clear of high-traffic routes to avoid unwanted attention. A spider's lair usually contains three to five webs stretched across its major passages.",
+					"Silt Spider",
+					"A swarming nest of tiny pale spiders barely distinguishable from the shifting silt that is their home, these creatures rush towards you in a single heaving mass.",
+					"Silt spiders are tiny creatures that dwell in Athas‘ silt seas and basins. Easily able to camouflage themselves within and swim though the silt, they are a hazard wherever they are encountered. Although their bite and accompanying poison is not overly dangerous, their sheer numbers often mean that a target will be devoured by the swarm before he has a chance to regain consciousness. Individual silt spiders rarely reach six inches in size but can swarm in scores or hundreds."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/rToYDXO.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/JBjeb0a.png",
+			"environment": [
+				"desert",
+				"mountain",
+				"underdark"
+			],
+			"damageTags": [
+				"P",
+				"I"
+			],
+			"isNpc": true,
+			"senses": [
+				"tremorsense 30 ft."
+			],
+			"senseTags": [
+				"T"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"prone",
+				"restrained",
+				"stunned"
+			],
+			"trait": [
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Swarm",
+					"entries": [
+						"The swarm can occupy another creature’s space and vice versa, and the swarm can move through any opening large enough for a Tiny creature. The swarm can’t regain hit points or gain temporary hit points."
+					]
+				},
+				{
+					"name": "Web Sense",
+					"entries": [
+						"While in contact with a web, the spider knows the exact location of any other creature in contact with the same web."
+					]
+				},
+				{
+					"name": "Web Walker",
+					"entries": [
+						"The spider ignores movement restrictions caused by webbing."
+					]
+				}
+			],
+			"traitTags": [
+				"Spider Climb",
+				"Web Sense",
+				"Web Walker"
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}8 ({@damage 4d4}) piercing damage, or 5 ({@damage 2d4}) piercing damage if the swarm has half of its hit points or fewer and the target must make a {@dc 10} Constitution saving throw, taking 14 ({@damage 4d6}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Bite (Half of the swarm or less)",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 2d4}) piercing damage and the target must make a {@dc 10} Constitution saving throw, taking 14 ({@damage 4d6}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			]
 		}
 
 
