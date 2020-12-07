@@ -27244,6 +27244,647 @@
 				"paralyzed",
 				"poisoned"
 			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Silt Runner",
+			"size": "S",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"silt runner"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d6",
+				"average": 10
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 11,
+			"int": 6,
+			"wis": 11,
+			"cha": 7,
+			"passive": 10,
+			"cr": "1/4",
+			"shortName": "Silt Runner",
+			"environment": [
+				"coastal",
+				"desert",
+				"urban"
+			],
+			"isNpc": true,
+			"tokenUrl": "https://i.imgur.com/9f3Ya5f.png",
+			"fluff": {
+				"entries": [
+					"These small lizard-like men are common on Athas. They usually live the life of raiders, although occasionally a lair will be found. Silt runners move very quickly and have broad, flat feet. They can even run across silt for short stretches. They hate elves with a passion; an entire raiding party of silt runners may turn aside from a caravan to attack a lone elf.",
+					"Silt runners are tribal in nature, living in lairs of up to 200 individuals. These tribes are usually based on islands near the shores of the Sea of Silt or in a remote desert oasis. Silt runners consider elf a delicacy, and in melee they alwaysattack any elves present first. Their natural speed usually makes this easy."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/KS2L82i.png"
+						}
+					}
+				]
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Draconic"
+			],
+			"languageTags": [
+				"DR"
+			],
+			"save": {
+				"dex": "+5",
+				"wis": "+2"
+			},
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The silt runner has advantage on an attack roll against a creature if at least one of the silt runner's allies is within 5 feet ofthe creature and the ally isn't {@condition incapacitated}."
+					]
+				}
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"action": [
+				{
+					"name": "Sling",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}5 ({@damage 1d4 + 3}) bludgeoning damage in melee, or 5 ({@damage 1d4 + 3}) bludgeoning damage at range."
+					]
+				},
+				{
+					"name": "Wooden Club",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) bludgeoning damage."
+					]
+				}
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"RNG"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Silt Runner Leader",
+			"size": "S",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"silt runner"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d6 + 6",
+				"average": 27
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 12,
+			"int": 6,
+			"wis": 11,
+			"cha": 7,
+			"passive": 10,
+			"cr": "1",
+			"shortName": "Silt Runner Leader",
+			"environment": [
+				"coastal",
+				"desert",
+				"urban"
+			],
+			"isNpc": true,
+			"tokenUrl": "https://i.imgur.com/bwXRciW.png",
+			"fluff": {
+				"entries": [
+					"These small lizard-like men are common on Athas. They usually live the life of raiders, although occasionally a lair will be found. Silt runners move very quickly and have broad, flat feet. They can even run across silt for short stretches. They hate elves with a passion; an entire raiding party of silt runners may turn aside from a caravan to attack a lone elf.",
+					"Silt runners are tribal in nature, living in lairs of up to 200 individuals. These tribes are usually based on islands near the shores of the Sea of Silt or in a remote desert oasis. Silt runners consider elf a delicacy, and in melee they alwaysattack any elves present first. Their natural speed usually makes this easy."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/bKGOpIn.png"
+						}
+					}
+				]
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Draconic",
+				"Common"
+			],
+			"languageTags": [
+				"DR",
+				"C"
+			],
+			"save": {
+				"dex": "+5",
+				"wis": "+2"
+			},
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The silt runner has advantage on an attack roll against a creature if at least one of the silt runner's allies is within 5 feet ofthe creature and the ally isn't {@condition incapacitated}."
+					]
+				}
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Silt Runner Leader makes 2 attacks with longsword. "
+					]
+				},
+				{
+					"name": "Wooden Longsword",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Shortbow",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 80/120 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage in melee, or 6 ({@damage 1d6 + 3}) piercing damage at range."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Silt Runner Darter",
+			"size": "S",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"silt runner"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d6",
+				"average": 5
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 7,
+			"dex": 15,
+			"con": 9,
+			"int": 8,
+			"wis": 7,
+			"cha": 8,
+			"passive": 8,
+			"cr": "1/8",
+			"shortName": "Silt Runner Darter",
+			"environment": [
+				"coastal",
+				"desert",
+				"urban"
+			],
+			"isNpc": true,
+			"tokenUrl": "https://i.imgur.com/hULKHpF.png",
+			"fluff": {
+				"entries": [
+					"The diminutive silt runner",
+					"proves that even the smallest of Athas's creatures are disproportionately deadly. Distantly related to ssurrans (Athas's lizardfolk), silt runners combine greed with cold-blooded ruthlessness. Their xenophobic hatred of other races is renowned. Survivors of attacks by silt runners describe how their companions were swarmed over and gradually lacerated to death by numerous tiny, razor-edged blades - a particularly unpleasant way to perish.",
+					"Lore",
+					"Silt runners live in tribal warrens, temporary camps spread between dunes and connected by tunnels. They use these bases as staging areas for raiding small communities or slow-moving caravans. As their name implies, silt runners move easily across loose sand and silt, preferring to hunt where the terrain works to their advantage. Silt runners wear the clothes, treasures, and body parts of their victims as trophies. The rest of their prey is consumed. For reasons lost to history - perhaps nothing more than a quirk of biology - these humanoids harbor a particular hatred for fey. They have been known to break off attacks against far more numerous or vulnerable foes to attack a lone elf or eladrin.",
+					"Encounters",
+					"Battles with silt runners occur in the open desert or within communities on the edges of the wastes. Unless an attacking force is small, silt runners quickly abandon their transitory warrens rather than defend them. The silt runners prefer to retaliate later with a surprise attack. Silt runners prefer the company of their own kind. On occasion, a tribe cooperates with reptilian creatures such as ssurrans or dray. Some tribes tame lizards as beasts of war."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/uIzgnUL.png"
+						}
+					}
+				]
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Draconic"
+			],
+			"languageTags": [
+				"DR"
+			],
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Scurrying about the periphery of a battle or lurking behind rolling dunes, darters skim across the sand on broad, webbed feet. They keep careful watch for the right moment to launch their stinging projectiles into an enemy's exposed flesh. Darters remain at long range, using blowgun. A darter tips its darts with a fast-acting, immobilizing poison, which it produces from glands in its mouth. By using their darts to immobilize enemies, darters give their melee-oriented cohorts more time to cause damage."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The silt runner has advantage on an attack roll against a creature if at least one of the silt runner's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Silt Walker",
+					"entries": [
+						"The silt runner feet are wide and connected with a thin layer of skin, allowing them to walk on silt without sinking."
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"action": [
+				{
+					"name": "Bone Dagger",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Blowgun",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 25/100 ft., one target. {@h}4 ({@damage 1}) piercing damage and the target must succeed on a {@dc 10} Constitution saving throw or be {@condition poisoned} for 1 minute. Until this poison ends, the target is {@condition paralyzed}. The target can repeat the saving throw at the end of each of its turns, ending the poison on itself on a success."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			],
+			"conditionInflict": [
+				"paralyzed",
+				"poisoned"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Silt Runner Rager",
+			"size": "S",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"silt runner"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d6",
+				"average": 10
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 7,
+			"dex": 16,
+			"con": 9,
+			"int": 8,
+			"wis": 7,
+			"cha": 8,
+			"passive": 8,
+			"cr": "1/4",
+			"shortName": "Silt Runner Rager",
+			"environment": [
+				"coastal",
+				"desert",
+				"urban"
+			],
+			"isNpc": true,
+			"tokenUrl": "https://i.imgur.com/DJFFecD.png",
+			"fluff": {
+				"entries": [
+					"The diminutive silt runner",
+					"proves that even the smallest of Athas's creatures are disproportionately deadly. Distantly related to ssurrans (Athas's lizardfolk), silt runners combine greed with cold-blooded ruthlessness. Their xenophobic hatred of other races is renowned. Survivors of attacks by silt runners describe how their companions were swarmed over and gradually lacerated to death by numerous tiny, razor-edged blades - a particularly unpleasant way to perish.",
+					"Lore",
+					"Silt runners live in tribal warrens, temporary camps spread between dunes and connected by tunnels. They use these bases as staging areas for raiding small communities or slow-moving caravans. As their name implies, silt runners move easily across loose sand and silt, preferring to hunt where the terrain works to their advantage. Silt runners wear the clothes, treasures, and body parts of their victims as trophies. The rest of their prey is consumed. For reasons lost to history - perhaps nothing more than a quirk of biology - these humanoids harbor a particular hatred for fey. They have been known to break off attacks against far more numerous or vulnerable foes to attack a lone elf or eladrin.",
+					"Encounters",
+					"Battles with silt runners occur in the open desert or within communities on the edges of the wastes. Unless an attacking force is small, silt runners quickly abandon their transitory warrens rather than defend them. The silt runners prefer to retaliate later with a surprise attack. Silt runners prefer the company of their own kind. On occasion, a tribe cooperates with reptilian creatures such as ssurrans or dray. Some tribes tame lizards as beasts of war."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/JPWJD0R.png"
+						}
+					}
+				]
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Draconic"
+			],
+			"languageTags": [
+				"DR"
+			],
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Clutching slender spears twice their height, silt runner ragers are comical sights. Once those spears have drawn substantial quantities of blood from a prodigious distance, humor is transformed to alarm. Although they are called \"ragers\" because their fighting style appears wild and roughshod, these reptilian humanoids are no more undisciplined than others of their race. Taking advantage of their superior reach and speed, ragers thrust and stab, concentrating on one foe to drop it swiftly."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The silt runner has advantage on an attack roll against a creature if at least one of the silt runner's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Silt Walker",
+					"entries": [
+						"The silt runner feet are wide and connected with a thin layer of skin, allowing them to walk on silt without sinking."
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"action": [
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d6 + 3}) piercing damage in melee, or 5 ({@damage 1d6 + 3}) piercing damage at range, or 7 ({@damage 1d8 + 3}) piercing damage if used with both hands."
+					]
+				}
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"THW"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Silt Runner Inciter",
+			"size": "S",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"silt runner"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"dragon scales"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d6",
+				"average": 18
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 7,
+			"dex": 15,
+			"con": 9,
+			"int": 8,
+			"wis": 7,
+			"cha": 14,
+			"passive": 8,
+			"cr": "1",
+			"shortName": "Silt Runner Inciter",
+			"environment": [
+				"coastal",
+				"desert",
+				"urban"
+			],
+			"isNpc": true,
+			"tokenUrl": "https://i.imgur.com/w2gQZh8.png",
+			"fluff": {
+				"entries": [
+					"The diminutive silt runner",
+					"proves that even the smallest of Athas's creatures are disproportionately deadly. Distantly related to ssurrans (Athas's lizardfolk), silt runners combine greed with cold-blooded ruthlessness. Their xenophobic hatred of other races is renowned. Survivors of attacks by silt runners describe how their companions were swarmed over and gradually lacerated to death by numerous tiny, razor-edged blades - a particularly unpleasant way to perish.",
+					"Lore",
+					"Silt runners live in tribal warrens, temporary camps spread between dunes and connected by tunnels. They use these bases as staging areas for raiding small communities or slow-moving caravans. As their name implies, silt runners move easily across loose sand and silt, preferring to hunt where the terrain works to their advantage. Silt runners wear the clothes, treasures, and body parts of their victims as trophies. The rest of their prey is consumed. For reasons lost to history - perhaps nothing more than a quirk of biology - these humanoids harbor a particular hatred for fey. They have been known to break off attacks against far more numerous or vulnerable foes to attack a lone elf or eladrin.",
+					"Encounters",
+					"Battles with silt runners occur in the open desert or within communities on the edges of the wastes. Unless an attacking force is small, silt runners quickly abandon their transitory warrens rather than defend them. The silt runners prefer to retaliate later with a surprise attack. Silt runners prefer the company of their own kind. On occasion, a tribe cooperates with reptilian creatures such as ssurrans or dray. Some tribes tame lizards as beasts of war."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/mLY7B8g.png"
+						}
+					}
+				]
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Draconic"
+			],
+			"languageTags": [
+				"DR"
+			],
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Although inciters are similar to the other child-sized silt runners around them, something about them draws the eye - or perhaps the mind. These reptilian warlords direct their allies in battle, channeling raw magical powers that blasts foes or drives other silt runners to extraordinary feats. Inciters open combat with a fireball to impede their foes and cause damage. They lead from the front, standing with ragers and others, stirring them to greater efforts. As long as an inciter lives, no silt runners flee, even from a losing battle."
+					]
+				},
+				{
+					"name": "Draconic Resilience",
+					"entries": [
+						"The silt runner gains 1 extra hit point per level and gains a 13 + Dex modifier natural armor."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The silt runner has advantage on an attack roll against a creature if at least one of the silt runner's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Silt Walker",
+					"entries": [
+						"The silt runner feet are wide and connected with a thin layer of skin, allowing them to walk on silt without sinking."
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The silt runner is a 5th-level spellcaster. Its spellcasting ability is Charisma (spell {@dc 12}, +4 to hit with spell attacks). The silt runner has the following sorcerer spells prepared.",
+						"Spellcasting Ability=CHA",
+						"Global Magic Attack Modifier=4",
+						"Magic Caster Level=5",
+						"Spell Save DC Mod=12"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell acid splash}",
+								"{@spell fire bolt}",
+								"{@spell mending}",
+								"{@spell minor illusion}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell expeditious retreat}",
+								"{@spell fog cloud}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell mirror image}",
+								"{@spell scorching ray}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell fireball}",
+								"{@spell slow}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CS"
+			],
+			"action": [
+				{
+					"name": "Bone Dagger",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			]
 		}
 
 
