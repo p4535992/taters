@@ -24258,6 +24258,159 @@
 			"conditionInflict": [
 				"poisoned"
 			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Rampager",
+			"size": "L",
+			"type": {
+				"type": "beast",
+				"tags": [
+					"elemental"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d10 + 140",
+				"average": 247
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 26,
+			"dex": 14,
+			"con": 24,
+			"int": 2,
+			"wis": 11,
+			"cha": 6,
+			"passive": 10,
+			"cr": "14",
+			"shortName": "Rampager",
+			"fluff": {
+				"entries": [
+					"The night explodes with violence",
+					"Buildings erupt, showering the area with rubble before dissolving into a stinking paste. A roar overwhelms the myriad screams off right, and a lumbering monstrosity smashes through the ruins. Its nostrils flare, its black eyes roll, and its savagery is evident from the still twitching limbs spilling from its jaws. The rampager is destruction incarnate.",
+					"Lore",
+					"Structures in various states of ruin litter the wastelands, leftovers of war, natural disaster, or neglect. Where the destruction is absolute, where only foundations remain, those ruins mark the path of a rampager.",
+					"This beast was called “so-ut” in ages past, but that obscure name does little to explain the creature's destructive nature. It spares no living thing that gets in its way, but such killing does not sate its wrath. A rampager is committed to demolishing any and every artifice it encounters. The beast has a particular hatred for metal objects. Any humanoids wielding such treasures grab the monster's attention first.",
+					"Encounters",
+					"The rampager is a tormented creature. It is driven to terrible violence by vengeful primal spirits twisted to madness during Athas's ruination. Creature’s unfortunate enough to encounter a rampager might spot flitting spirits of fire, sand, stone, or wind assailing the beast, filling it with uncontrollable rage. The spirits cannot be attacked during the encounter, but further chaos might be averted if a way can be found to placate them through offerings or restitution."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/Do2BOOF.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/nMBFeuE.png",
+			"isNpc": true,
+			"environment": [
+				"desert",
+				"swamp",
+				"underdark"
+			],
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"The rampager's only motivation is to reduce big things into their smallest components. Hatred for civilization drives it from the wilderness to destroy everything in its path. It cannot abide metal's stench and focuses its attacks on enemies wielding metal weapons or wearing metal armor. Once it dispatches these foes, it turns back to structures and rips through walls and buildings until nothing remains. It stops only when it is dead or no artificial object remains intact."
+					]
+				},
+				{
+					"name": "Acid",
+					"entries": [
+						"The acid that coats a rampager’s claws not only deals extra damage on successful attacks, it also dissolves an opponent’s armor and clothing. If the object isn't being worn or carried, the touch destroys a 1-foot cube of it. If the object is being worn or carried by a creature, the creature can make a {@dc 18} Dexterity saving throw to avoid the ravager's touch on its equipment (this does not cancel the damage taken). If the object touched is either metal armor or a metal shield being worn or carried, its takes a permanent and cumulative -1 penalty to the AC it offers. Armor reduced to an AC of 10 or a shield that drops to a +0 bonus is destroyed. If the object touched is a held weapon, the weapon takes a permanent and cumulative -1 penalty to damage rolls. If its penalty drops to -5, the weapon is destroyed."
+					]
+				},
+				{
+					"name": "Destructive Strom",
+					"entries": [
+						"While it has 120 hit points or lower, the rampager becomes enraged and has advantage on attack rolls. In addition I deals and extra 12 ({@damage 4d6}) damage to any target it hits with a melee attack."
+					]
+				},
+				{
+					"name": "Entropic Presence",
+					"entries": [
+						"An aura of entropic energies surrounds the rampager, creatures and objects in a 30ft radius around him lose all Immunities and Resistance."
+					]
+				}
+			],
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"save": {
+				"str": "+13",
+				"dex": "+7",
+				"con": "+12"
+			},
+			"conditionImmune": [
+				"frightened"
+			],
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons."
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The rampager makes three melee attacks, two with its claws and one with its bite."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 10 ft., one target. {@h}23 ({@damage 4d8 + 7}) piercing damage. The target must make a {@dc 18} Constitution saving throw, or become {@condition poisoned} for one minute on a failed save. While {@condition poisoned} a creature take 12 ({@damage 4d6}) poison damage at the beginning of its turn. The target can repeat the saving throw at the end of each of its turns, ending the poison on itself on a success."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 10 ft., one target. {@h}19 ({@damage 2d12 + 7}) slashing damage, plus 9 ({@damage 3d6}) acid damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"I",
+				"S",
+				"A"
+			],
+			"conditionInflict": [
+				"poisoned"
+			]
 		}
 
 
