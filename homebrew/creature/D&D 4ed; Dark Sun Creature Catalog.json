@@ -25553,6 +25553,290 @@
 			"miscTags": [
 				"MW"
 			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Scrab",
+			"size": "S",
+			"type": "monstrosity",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d6",
+				"average": 21
+			},
+			"speed": {
+				"walk": 35,
+				"burrow": 20
+			},
+			"str": 12,
+			"dex": 8,
+			"con": 10,
+			"int": 13,
+			"wis": 12,
+			"cha": 12,
+			"passive": 11,
+			"cr": "1",
+			"fluff": {
+				"entries": [
+					"Scrabs are small, three-sectioned, insect-like men who live in nests in the desert. They are highly intelligent, and some of them are even able to cast spells. No small group of travellers is safe in the vicinity of a scrab nest.",
+					"Scrabs live in the sandy wastes, or in the sandy areas of the rocky barrens. They need little water, perhaps 1/20th of what a human needs. Scrabs also seem to get all of the liquid they need from the blood of their victims. A scrab’s niche in the environment is strictly that of a predator, although scrabs are also preyed upon by the larger creatures that inhabit the wastes.",
+					"Scrabs live in large nests tunnelled under the sand. They produce a spittle that solidifies the sand. Because of the ever-present sandstorms, the scrab nest is usually located 15 feet under the surface. If available, a rocky outcropping is used to hide and protect the entrance. Scrabs are excellent tunnellers, and if the nest collapses on them they just dig it out again. A scrab can hold its breath for up to an hour under sand and even gets a bit of air from the surrounding sand. This is due to the long gills through which scrabs breath. These gills are located all along the grooves in their shells."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/tWaAHE6.png"
+						}
+					}
+				]
+			},
+			"isNpc": true,
+			"tokenUrl": "https://i.imgur.com/IcTz9Wf.png",
+			"shortName": "Scrab",
+			"languages": [
+				"Scrab"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"save": {
+				"wis": "+3",
+				"cha": "+3"
+			},
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Scrab makes two attacks with pincer."
+					]
+				},
+				{
+					"name": "Pincer",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) slashing damage."
+					]
+				},
+				{
+					"name": "Distracting Haze",
+					"entries": [
+						"Scrab chooses one creature it can see within 60 feet of it. That creature must make an {@dc 11} Intelligence saving throw. On a failed save, it takes {@damage 1d10} psychic damage and can't see anything more than 10 feet from it until scrab's next end of turn. On a successful save, it takes half as much damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"reaction": [
+				{
+					"name": "Iron Hide",
+					"entries": [
+						"As a reaction when scarab are hit by an attack, it gain a +1 bonus to AC. The bonus lasts until the end of its next turn. This bonus applies against the triggering attack."
+					]
+				},
+				{
+					"name": "Knock Back",
+					"entries": [
+						"When scrab hit a target with a melee attack, it can activate this ability as a reaction. The target must succeed on a {@dc 11} Strength saving throw or be knocked 10 feet away from scrab. The target moves in a straight line. If it hits an object, this movement immediately ends and the target takes {@damage 1d6} bludgeoning damage."
+					]
+				}
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Scrab Nest Mother",
+			"size": "L",
+			"type": "monstrosity",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d10 + 15",
+				"average": 97
+			},
+			"speed": {
+				"walk": 10,
+				"burrow": 10
+			},
+			"str": 13,
+			"dex": 7,
+			"con": 13,
+			"int": 15,
+			"wis": 16,
+			"cha": 13,
+			"passive": 13,
+			"cr": "7",
+			"fluff": {
+				"entries": [
+					"Nest mothers are the rulers of the nest. A nest mother is a large version of a normal scrab. Nest mother may live for as much as 40-50 years. A clutch of eggs is laid every two years. The eldest male present is allowed to mate with the nest mother. Only one in a hundred of the females is able to develop spellcasting abilities and become a nest mother. This means that an average nest mother produces a potential rival every eight to sixteen years."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/a1DmamI.png"
+						}
+					}
+				]
+			},
+			"isNpc": true,
+			"tokenUrl": "https://i.imgur.com/MsLVlpW.png",
+			"shortName": "Scrab Nest Mother",
+			"languages": [
+				"Scrab",
+				"Elvish"
+			],
+			"senses": [
+				"darkvision 60 ft.",
+				"tremorsense 30 ft."
+			],
+			"senseTags": [
+				"D",
+				"T"
+			],
+			"save": {
+				"wis": "+6",
+				"cha": "+4"
+			},
+			"damageTags": [
+				"S"
+			],
+			"languageTags": [
+				"E"
+			],
+			"trait": [
+				{
+					"name": "Unwavering Eye",
+					"entries": [
+						"Nest Mother has advantage on Wisdom checks. "
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The nest mother is a 9th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 14}, +6 to hit with spell attacks). The nest mother has the following cleric spells prepared.",
+						"Spellcasting Ability=WIS",
+						"Global Magic Attack Modifier=6",
+						"Magic Caster Level=9",
+						"Spell Save DC Mod=14"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell command}",
+								"{@spell detect magic}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell hold person}",
+								"{@spell locate object}",
+								"{@spell silence}",
+								"{@spell zone of truth}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell dispel magic}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell banishment}",
+								"{@spell locate creature}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell insect plague}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Scrab makes two attacks with pincer."
+					]
+				},
+				{
+					"name": "Pincer",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 2d4 + 1}) slashing damage."
+					]
+				},
+				{
+					"name": "Distracting Haze",
+					"entries": [
+						"Scrab chooses one creature it can see within 60 feet of it. That creature must make an {@dc 14} Intelligence saving throw. On a failed save, it takes {@damage 2d10} psychic damage and can't see anything more than 10 feet from it until scrab's next end of turn. On a successful save, it takes half as much damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"reaction": [
+				{
+					"name": "Iron Hide",
+					"entries": [
+						"As a reaction when scarab are hit by an attack, it gain a +2 bonus to AC. The bonus lasts until the end of its next turn. This bonus applies against the triggering attack."
+					]
+				},
+				{
+					"name": "Knock Back",
+					"entries": [
+						"When scrab hit a target with a melee attack, it can activate this ability as a reaction. The target must succeed on a {@dc 14} Strength saving throw or be knocked 20 feet away from scrab. The target moves in a straight line. If it hits an object, this movement immediately ends and the target takes {@damage 2d6} bludgeoning damage."
+					]
+				}
+			]
 		}
 
 
