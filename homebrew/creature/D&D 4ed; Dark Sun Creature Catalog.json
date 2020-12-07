@@ -26152,6 +26152,1098 @@
 				"incapacitated",
 				"charmed"
 			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Silt Horror White (version 2)",
+			"size": "G",
+			"type": "aberration",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d20 + 98",
+				"average": 245
+			},
+			"speed": {
+				"walk": 10,
+				"burrow": 10
+			},
+			"str": 24,
+			"dex": 8,
+			"con": 24,
+			"int": 1,
+			"wis": 14,
+			"cha": 10,
+			"passive": 12,
+			"cr": "16",
+			"fluff": {
+				"entries": [
+					"Lore",
+					"Silt Horror is the name given a group of predators that dwell in the sea of sand. While they vary in size and color, all of them are characterized by a large number of tentacles, and an unending hunger. Few are the creatures that escape once a silt horror has its tentacles around them."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/CuD5r4I.png"
+						}
+					}
+				]
+			},
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"The white horror is the most common, and usually the largest, of the silt horrors. Its tentacles can grow up to 50 feet long, and it uses them to drag prey below the silt.",
+						"The white horror is found anywhere in silt basins and the Sea of Silt. They move very slowly, and usually don’t make the effort. They can sense vibrations in the silt up to 3 miles away, and gradually move towards any regular wading path that is used. The white horror does not like the sun, and if it must move out of the silt (to crawl over a sunken wall, for instance) it prefers to wait for dark.",
+						"The white horror eats anything except other horrors. It is always hungry, and usually attacks anything that comes in range. It can exist for years on one meal, lying dormant underneath the silt. It lives about 40 years, usually mating only once in its life.",
+						"If a horror has tentacles severed, it can replace them at the rate of one per month."
+					]
+				}
+			],
+			"shortName": "Silt Horror White (version 2)",
+			"isNpc": true,
+			"environment": [
+				"desert",
+				"swamp",
+				"underdark"
+			],
+			"tokenUrl": "https://i.imgur.com/zJORXCj.png",
+			"senses": [
+				"tremorsense 600 ft."
+			],
+			"senseTags": [
+				"T"
+			],
+			"save": {
+				"str": "+12",
+				"con": "+12"
+			},
+			"skill": {
+				"stealth": "+11"
+			},
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Horror makes three tentacle attacks"
+					]
+				},
+				{
+					"name": "Tentacle",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 30 ft., one target. {@h}17 ({@damage 3d6 + 7}) bludgeoning damage. Target is {@condition grappled} and pulled 10 feet underground (escape {@dc 18}). Until this grapple ends, the target is {@condition restrained}. The horror has ten tentacles, each of which can grapple one target."
+					]
+				},
+				{
+					"name": "Maw",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 10 ft., one target. {@h}34 ({@damage 4d12 + 10}) piercing damage. If the target is a Large or smaller creature, it must succeed on a {@dc 19} Dexterity saving throw or be swallowed by the silk horror. A swallowed creature is {@condition blinded} and {@condition restrained}, it has total cover against attacks and other effects outside the horror, and it takes 21 ({@damage 6d6}) acid damage at the start of each of the horror’s turns. If the silt horror takes 30 damage or more ona single turn from a creature inside it, the silt horror must succeed on a {@dc 21} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall {@condition prone} in a space within 10 feet of the horror. If the horror dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse by using 20 feet of movement, exiting {@condition prone}."
+					]
+				},
+				{
+					"name": "Air Jet",
+					"entries": [
+						"A silt horror can jet backward at a speed of 160 feet. It must move in a straight line but does not provoke attacks of opportunity while jetting. A jetting silt horror raises a 20-foot radius, 20-foot high cloud of dust or steam that provides total concealment as it escapes."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Swallow",
+				"Tentacles"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"A"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained",
+				"blinded"
+			],
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"The white horror can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature’s turn. The white horror regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Tentacle Attack",
+					"entries": [
+						"The horror makes one tentacle attack."
+					]
+				},
+				{
+					"name": "Pull",
+					"entries": [
+						"The horror pulls up to two targets {@condition grappled} by its tentacles up to10 feet underground."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"The horror moves up to 10 feet."
+					]
+				}
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Silt Horror Gray (version 2)",
+			"size": "H",
+			"type": "aberration",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d12 + 120",
+				"average": 250
+			},
+			"speed": {
+				"walk": 20,
+				"burrow": 20
+			},
+			"str": 22,
+			"dex": 10,
+			"con": 22,
+			"int": 3,
+			"wis": 14,
+			"cha": 12,
+			"passive": 12,
+			"cr": "17",
+			"fluff": {
+				"entries": [
+					"Lore",
+					"Silt Horror is the name given a group of predators that dwell in the sea of sand. While they vary in size and color, all of them are characterized by a large number of tentacles, and an unending hunger. Few are the creatures that escape once a silt horror has its tentacles around them."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/rrlBEEZ.png"
+						}
+					}
+				]
+			},
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"The gray horror is perhaps the worst of the silt horrors. It is a sickly gray in color, and has a multitude of sharp-edged tentacles. It is the most intelligent of the horrors, and fears nothing that moves.",
+						"Gray horrors are solitary, hungry, aggressive creatures. They only use their air sacs for emergencies, preferring to swim through the silt. They range far through the silt in search of prey."
+					]
+				},
+				{
+					"name": "Unwavering Eye",
+					"entries": [
+						"Horror has advantage on Wisdom checks."
+					]
+				}
+			],
+			"shortName": "Silt Horror Gray (version 2)",
+			"isNpc": true,
+			"environment": [
+				"desert",
+				"swamp",
+				"underdark"
+			],
+			"tokenUrl": "https://i.imgur.com/IqUKNUW.png",
+			"save": {
+				"str": "+13",
+				"con": "+12",
+				"wis": "+8"
+			},
+			"skill": {
+				"stealth": "+11"
+			},
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"senses": [
+				"blindsight 120 ft.",
+				"tremorsense 50 ft."
+			],
+			"senseTags": [
+				"B",
+				"T"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Horror makes three tentacle attacks."
+					]
+				},
+				{
+					"name": "Sharp-edged Tentacle",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 30 ft., one target. {@h}22 ({@damage 3d10 + 6}) bludgeoning damage. Target is {@condition grappled} and pulled 10 feet underground (escape {@dc 16}). Until this grapple ends, the target is {@condition restrained}. The horror has ten tentacles, each of which can grapple one target."
+					]
+				},
+				{
+					"name": "Maw",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 10 ft., one target. {@h}32 ({@damage 4d12 + 8}) piercing damage. If the target is a Large or smaller creature, it must succeed on a {@dc 19} Dexterity saving throw or be swallowed by the silk horror. A swallowed creature is {@condition blinded} and {@condition restrained}, it has total cover against attacks and other effects outside the horror, and it takes 18 (S{@dice d6}) acid damage at the start of each of the horror’s turns. If the silt horror takes 30 damage or more ona single turn from a creature inside it, the silt horror must succeed on a {@dc 21} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall {@condition prone} in a space within 10 feet of the horror. If the horror dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse by using 20 feet of movement, exiting {@condition prone}."
+					]
+				},
+				{
+					"name": "Air Jet",
+					"entries": [
+						"A silt horror can jet backward at a speed of 160 feet. It must move in a straight line but does not provoke attacks of opportunity while jetting. A jetting silt horror raises a 20-foot radius, 20-foot high cloud of dust or steam that provides total concealment as it escapes. "
+					]
+				},
+				{
+					"name": "Phantom Foe",
+					"entries": [
+						"Horror chooses one creature it can see within 60 feet of it. The target must make an {@dc 20} Intelligence saving throw. On a failed save, it perceives a horrid creature adjacent to it for 1 minute. During this time, the target can't take reactions, and it takes {@damage 4d8} psychic damage at the start of each of its turns. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Delusion",
+					"entries": [
+						"As an action, horror plants a false belief in the mind of one creature that it can see within 180 feet of it. It can create a sound or an image. Only the target of this talent perceives the sound or image horror creates. Illusion lasts for 1 minute."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Swallow"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained",
+				"blinded"
+			],
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"The gray horror can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature’s turn. The gray horror regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Tentacle Attack",
+					"entries": [
+						"The horror makes one tentacle attack."
+					]
+				},
+				{
+					"name": "Pull",
+					"entries": [
+						"The horror pulls up to two targets {@condition grappled} by its tentacles up to10 feet underground."
+					]
+				},
+				{
+					"name": "Delusion",
+					"entries": [
+						"Horror uses delusion ability."
+					]
+				}
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Silt Horror Black (version 2)",
+			"size": "M",
+			"type": "aberration",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 12",
+				"average": 39
+			},
+			"speed": {
+				"walk": 10,
+				"burrow": 30
+			},
+			"str": 14,
+			"dex": 12,
+			"con": 14,
+			"int": 3,
+			"wis": 12,
+			"cha": 6,
+			"passive": 11,
+			"cr": "2",
+			"fluff": {
+				"entries": [
+					"Lore",
+					"Silt Horror is the name given a group of predators that dwell in the sea of sand. While they vary in size and color, all of them are characterized by a large number of tentacles, and an unending hunger. Few are the creatures that escape once a silt horror has its tentacles around them."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/qnmTpk6.png"
+						}
+					}
+				]
+			},
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"The black silt horror is the smallest and most common of the silt horrors. Resembling a black, dusty octopus or squid with a writhing mass of eight barbed tentacles, the black horror is obviously related to the other horrors. It is much smaller than other silt horrors and roams in groups called clutches. The black silt horror aggressively hunts anything it can catch. Large clutches have attacked white horrors and wading giants.",
+						"Black silt horrors are a matriarchal society. The larges; female, the clutch leader, develops rudimentary psionic abilities that aid in capturing prey. Black silt horrors are found in the Sea of Silt and many smaller silt basins.",
+						"Once a year the black silt horrors of the Sea of Silt migrate to the same spot they were born. Here, a mating ritual lasting two weeks takes place. When the mating season is over, the horrors separate into their clutches and return to their home areas."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The horror has advantage on an attack roll against a creature if at least one of the horror’s allies is within 5 feet of the creature and the ally isn’t {@condition incapacitated}."
+					]
+				}
+			],
+			"shortName": "Silt Horror Black (version 2)",
+			"isNpc": true,
+			"environment": [
+				"desert",
+				"swamp",
+				"underdark"
+			],
+			"tokenUrl": "https://i.imgur.com/qElveh8.png",
+			"save": {
+				"str": "+4",
+				"con": "+4",
+				"wis": "+3"
+			},
+			"skill": {
+				"stealth": "+5"
+			},
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"senses": [
+				"tremorsense 60 ft."
+			],
+			"senseTags": [
+				"T"
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Horror makes two attacks: one with tentacle and one bite."
+					]
+				},
+				{
+					"name": "Tentacle",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d8 + 6}) bludgeoning damage. If the target is Medium or smaller, it is {@condition grappled} (escape {@dc 13})."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage. Target must succeed on a {@dc 13} Constitution saving throw or be {@condition poisoned} for 1 minute. Until this poison ends, the ta rget is {@condition paralyzed}. The target can repeat the saving throw at the end of each of its tu rns, ending the poison on itself on a success."
+					]
+				},
+				{
+					"name": "Air Jet",
+					"entries": [
+						"A silt horror can jet backward at a speed of 60 feet. It must move in a straight line but does not provoke attacks of opportunity while jetting. A jetting silt horror raises a 10-foot radius, 10-foot high cloud of dust or steam that provides total concealment as it escapes."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Tentacles"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"conditionInflict": [
+				"grappled",
+				"poisoned"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Silt Horror White",
+			"size": "G",
+			"type": "aberration",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d20 + 126",
+				"average": 366
+			},
+			"speed": {
+				"walk": 10,
+				"burrow": 30
+			},
+			"str": 30,
+			"dex": 11,
+			"con": 25,
+			"int": 2,
+			"wis": 14,
+			"cha": 7,
+			"passive": 18,
+			"cr": "19",
+			"fluff": {
+				"entries": [
+					"Beneath the churning dust",
+					"of the Sea of Silt lurk the ruins of lost civilizations and the relics of distant ages. The creatures that dwelled in these forgotten cities are gone, their bones now dust and ash. Yet these ruins are not as empty as many would believe. Strange creatures swim in the sea's depths, tentacled horrors whose appetites for flesh are matched only by their enormous, grotesque forms.",
+					"Lore",
+					"The most common silt horrors are the ones lurking closest to shore; these are characterized by their pale white tentacles. Explorers who venture out into the Sea of Silt sometimes bring reports of larger, more dangerous breeds. Such stories include forests of brown or gray tentacles, horrors so large they dwarf the city-states, and other tales where the winds and silt turned against the traveler, closing off retreat and funneling victims back into the tentacles' reach.",
+					"Encounters",
+					"Anyone who braves the Sea of Silt risks an encounter with these creatures. Silt horrors react to disturbances in the dust and creep along under the sand, undetected until they can strike. Giants often fall prey to silt horrors, as do passing ships and other vessels. While a flying creature can usually pass overhead without attracting a silt horror, any creatures that fly too close to the dust might invite an attack."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/X5k4bFa.png"
+						}
+					}
+				]
+			},
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"The white horror is the most common and usually the largest of the silt horrors. Its tentacles can grow up to 50 feet long. Its mouth is located near the air sac used to propel it and is not used in combat, because it waits until its food has suffocated before it begins to feed. The white horror eats anything except other horrors. It can subsist for years on one meal, lying dormant underneath the silt. Its life expectancy is about 40 years, usually mating only once in its lifetime."
+					]
+				},
+				{
+					"name": "Regenerating Tentacles",
+					"entries": [
+						"The silt horror has ten tentacles. Whenever the silt horror takes 25 or more damage in a single turn, one of its tentacles dies. At the end of its turn, it grows two tentacles for each of its tentacles that died since its last turn, unless it has taken fire damage since its last turn. The silt horror regains 10 hit points for each tentacle regrown in this way."
+					]
+				},
+				{
+					"name": "Reactive Tentacles",
+					"entries": [
+						"For each tentacles the silt horror has beyond one, it gets an extra reaction that can be used only for opportunity attacks."
+					]
+				}
+			],
+			"shortName": "Silt Horror White",
+			"isNpc": true,
+			"environment": [
+				"desert",
+				"swamp",
+				"underdark"
+			],
+			"tokenUrl": "https://i.imgur.com/xAzhbLi.png",
+			"save": {
+				"str": "+16",
+				"con": "+13"
+			},
+			"skill": {
+				"stealth": "+12",
+				"perception": "+8"
+			},
+			"damageTags": [
+				"B",
+				"P",
+				"A"
+			],
+			"senses": [
+				"tremorsense 60 ft.",
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"T",
+				"D"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"prone",
+				"stunned"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The silt horror makes as many attacks as it has tentacles and one maw attack."
+					]
+				},
+				{
+					"name": "Tentacle",
+					"entries": [
+						"{@atk mw} {@hit 16} to hit, reach 30 ft., one target. {@h}18 ({@damage 2d8 + 10}) bludgeoning damage. If the target is Large or smaller, it is {@condition grappled} (escape {@dc 19}) and pulled 20 feet toward the silt horror. Until this grapple ends, the target is {@condition restrained}."
+					]
+				},
+				{
+					"name": "Air Jet",
+					"entries": [
+						"A white silt horror can jet backward at a speed of 160 feet. It must move in a straight line but does not provoke attacks of opportunity while jetting. A jetting silt horror raises a 20-foot radius, 20-foot high cloud of dust or steam that provides total concealment as it escapes."
+					]
+				},
+				{
+					"name": "Maw",
+					"entries": [
+						"{@atk mw} {@hit 16} to hit, reach 10 ft., one target. {@h}34 ({@damage 4d12 + 10}) piercing damage. If the target is a Large or smaller creature, it must succeed on a {@dc 19} Dexterity saving throw or be swallowed by the silk wyrm. A swallowed creature is {@condition blinded} and {@condition restrained}, it has total cover against attacks and other effects outside the worm, and it takes 21 ({@damage 6d6}) acid damage at the start of each of the horror's turns. If the silt horror takes 30 damage or more on a single turn from a creature inside it, the silt horror must succeed on a {@dc 21} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall {@condition prone} in a space within 10 feet of the horror. If the horror dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse by using 20 feet of movement, exiting {@condition prone}."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Swallow",
+				"Tentacles"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"conditionInflict": [
+				"restrained",
+				"grappled",
+				"blinded"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Silt Horror Gray",
+			"size": "G",
+			"type": "aberration",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d20 + 70",
+				"average": 257
+			},
+			"speed": {
+				"walk": 50,
+				"burrow": 30
+			},
+			"str": 24,
+			"dex": 12,
+			"con": 21,
+			"int": 5,
+			"wis": 15,
+			"cha": 11,
+			"passive": 17,
+			"cr": "16",
+			"fluff": {
+				"entries": [
+					"Beneath the churning dust",
+					"of the Sea of Silt lurk the ruins of lost civilizations and the relics of distant ages. The creatures that dwelled in these forgotten cities are gone, their bones now dust and ash. Yet these ruins are not as empty as many would believe. Strange creatures swim in the sea's depths, tentacled horrors whose appetites for flesh are matched only by their enormous, grotesque forms.",
+					"Lore",
+					"The most common silt horrors are the ones lurking closest to shore; these are characterized by their pale white tentacles. Explorers who venture out into the Sea of Silt sometimes bring reports of larger, more dangerous breeds. Such stories include forests of brown or gray tentacles, horrors so large they dwarf the city-states, and other tales where the winds and silt turned against the traveler, closing off retreat and funneling victims back into the tentacles' reach.",
+					"Encounters",
+					"Anyone who braves the Sea of Silt risks an encounter with these creatures. Silt horrors react to disturbances in the dust and creep along under the sand, undetected until they can strike. Giants often fall prey to silt horrors, as do passing ships and other vessels. While a flying creature can usually pass overhead without attracting a silt horror, any creatures that fly too close to the dust might invite an attack."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/s425x2T.png"
+						}
+					}
+				]
+			},
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"The gray horror is a sickly gray in color, and has six sharp-edged tentacles. Gray horrors consider anything that they can sense as prey. Of all the silt horror they are the craftiest, using their natural psionic ability to hunt. The gray horror attempts to lure its victim to it, changing winds to direct a prey in the direction of its choosing and creating sounds that are similar to whimpering sounds and the sounds of water."
+					]
+				},
+				{
+					"name": "Mimicry",
+					"entries": [
+						"The silt horror can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful {@dc 18} Wisdom (Insight) check."
+					]
+				},
+				{
+					"name": "Regenerating Tentacles",
+					"entries": [
+						"The silt horror has six tentacles. Whenever the silt horror takes 25 or more damage in a single turn, one of its tentacles dies. At the end of its turn, it grows one tentacles for each of its tentacles that died since its last turn, unless it has taken fire damage since its last turn. The silt horror regains 10 hit points for each tentacle regrown in this way."
+					]
+				}
+			],
+			"shortName": "Silt Horror Gray",
+			"isNpc": true,
+			"environment": [
+				"desert",
+				"swamp",
+				"underdark"
+			],
+			"tokenUrl": "https://i.imgur.com/VuP8NT8.png",
+			"save": {
+				"str": "+12",
+				"con": "+10"
+			},
+			"skill": {
+				"stealth": "+11",
+				"perception": "+7"
+			},
+			"damageTags": [
+				"S",
+				"P",
+				"A"
+			],
+			"senses": [
+				"tremorsense 60 ft.",
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"T",
+				"D"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"prone",
+				"stunned"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Psionics)",
+					"headerEntries": [
+						"The horror's innate spellcasting ability is Constitution (spell save {@dc 18}). The silt horror can innately cast the following spells, requiring no material components.",
+						"Spellcasting Ability=CON",
+						"Global Magic Attack Modifier=0",
+						"Magic Caster Level=0",
+						"Spell Save DC Mod=18"
+					],
+					"daily": {
+						"2e": [
+							"{@spell control winds|XGE}"
+						],
+						"1e": [
+							"{@spell whirlwind|XGE}"
+						]
+					},
+					"ability": "con",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"P",
+				"I"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The silt horror makes as many attacks as it has tentacles and one maw attack."
+					]
+				},
+				{
+					"name": "Sharp-edged Tentacle",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}22 ({@damage 3d10 + 7}) slashing damage."
+					]
+				},
+				{
+					"name": "Air Jet",
+					"entries": [
+						"A grey silt horror can jet backward at a speed of 240 feet. It must move in a straight line but does not provoke attacks of opportunity while jetting. A jetting silt horror raises a 20-foot radius, 20-foot high cloud of dust or steam that provides total concealment as it escapes."
+					]
+				},
+				{
+					"name": "Maw",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}23 ({@damage 4d8 + 7}) piercing damage. If the target is a Large or smaller creature, it must succeed on a {@dc 18} Dexterity saving throw or be swallowed by the silk wyrm. A swallowed creature is {@condition blinded} and {@condition restrained}, it has total cover against attacks and other effects outside the worm, and it takes 21 ({@damage 6d6}) acid damage at the start of each of the horror's turns. If the silt horror takes 30 damage or more on a single turn from a creature inside it, the silt horror must succeed on a {@dc 21} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall {@condition prone} in a space within 10 feet of the horror. If the horror dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse by using 20 feet of movement, exiting {@condition prone}."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Swallow"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"conditionInflict": [
+				"blinded",
+				"restrained"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Silt Horror Red",
+			"size": "H",
+			"type": "aberration",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d12 + 30",
+				"average": 110
+			},
+			"speed": {
+				"walk": 20,
+				"burrow": 30
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 16,
+			"int": 5,
+			"wis": 14,
+			"cha": 13,
+			"passive": 16,
+			"cr": "8",
+			"fluff": {
+				"entries": [
+					"Beneath the churning dust",
+					"of the Sea of Silt lurk the ruins of lost civilizations and the relics of distant ages. The creatures that dwelled in these forgotten cities are gone, their bones now dust and ash. Yet these ruins are not as empty as many would believe. Strange creatures swim in the sea's depths, tentacled horrors whose appetites for flesh are matched only by their enormous, grotesque forms.",
+					"Lore",
+					"The most common silt horrors are the ones lurking closest to shore; these are characterized by their pale white tentacles. Explorers who venture out into the Sea of Silt sometimes bring reports of larger, more dangerous breeds. Such stories include forests of brown or gray tentacles, horrors so large they dwarf the city-states, and other tales where the winds and silt turned against the traveler, closing off retreat and funneling victims back into the tentacles' reach.",
+					"Encounters",
+					"Anyone who braves the Sea of Silt risks an encounter with these creatures. Silt horrors react to disturbances in the dust and creep along under the sand, undetected until they can strike. Giants often fall prey to silt horrors, as do passing ships and other vessels. While a flying creature can usually pass overhead without attracting a silt horror, any creatures that fly too close to the dust might invite an attack."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/w0Sfoy8.png"
+						}
+					}
+				]
+			},
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"The red silt horror is the most mobile of the horrors, able to propel itself across the surface of Athas using four tentacles as functional ― legs. Red silt horrors prefer to live in the Sea of Silt. However, if food becomes scarce, they will move to another silt basin, a mudflat, or even the desert, traveling at night to limit the chances that they are seen and attacked. Once a suitable lair is found, the red silt horror uses its air jet to dig into the ground where it awaits its next victim."
+					]
+				},
+				{
+					"name": "Regenerating Tentacles",
+					"entries": [
+						"The silt horror has four tentacles. Whenever the silt horror takes 25 or more damage in a single turn, one of its tentacles dies. At the end of its turn, it grows two tentacles for each of its tentacles that died since its last turn, unless it has taken fire damage since its last turn. The silt horror regains 10 hit points for each tentacle regrown in this way."
+					]
+				}
+			],
+			"shortName": "Silt Horror Red",
+			"isNpc": true,
+			"environment": [
+				"desert",
+				"swamp",
+				"underdark"
+			],
+			"tokenUrl": "https://i.imgur.com/HgZCN9h.png",
+			"save": {
+				"str": "+8",
+				"con": "+7",
+				"wis": "+6"
+			},
+			"skill": {
+				"stealth": "+10",
+				"perception": "+6"
+			},
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"senses": [
+				"tremorsense 60 ft.",
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"T",
+				"D"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"prone",
+				"stunned"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Psionics)",
+					"headerEntries": [
+						"The horror's innate spellcasting ability is Constitution (spell save {@dc 15}). The silt horror can innately cast the following spells, requiring no material components.",
+						"Spellcasting Ability=CON",
+						"Global Magic Attack Modifier=0",
+						"Magic Caster Level=0",
+						"Spell Save DC Mod=15"
+					],
+					"daily": {
+						"2e": [
+							"{@spell compulsion}",
+							"{@spell detect thoughts}",
+							"{@spell hold monster} (7th level spell)"
+						],
+						"1e": [
+							"{@spell dominate monster}"
+						]
+					},
+					"ability": "con",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"P",
+				"I"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The silt horror makes as many attacks as it has tentacles and one beak attack."
+					]
+				},
+				{
+					"name": "Tentacle",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 20 ft., one target. {@h}8 ({@damage 1d8 + 4}) bludgeoning damage. If the target is Medium or smaller, it is {@condition grappled} (escape {@dc 16}) and pulled 10 feet toward the silt horror. Until this grapple ends, the target is {@condition restrained}."
+					]
+				},
+				{
+					"name": "Air Jet",
+					"entries": [
+						"A red silt horror can jet backward at a speed of 240 feet. It must move in a straight line but does not provoke attacks of opportunity while jetting. A jetting silt horror raises a 20-foot radius, 20-foot high cloud of dust or steam that provides total concealment as it escapes."
+					]
+				},
+				{
+					"name": "Beak",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}16 ({@damage 4d6 + 4}) piercing damage and the target must succeed on a {@dc 16} Constitution saving throw or be {@condition poisoned} for 1 minute. Until this poison ends, the target is {@condition paralyzed}. The target can repeat the saving throw at the end of each of its turns, ending the poison on itself on a success."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Tentacles"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"conditionInflict": [
+				"restrained",
+				"grappled",
+				"paralyzed",
+				"poisoned"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Silt Horror Black",
+			"size": "L",
+			"type": "aberration",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d10 + 14",
+				"average": 61
+			},
+			"speed": {
+				"walk": 10,
+				"burrow": 30
+			},
+			"str": 14,
+			"dex": 14,
+			"con": 14,
+			"int": 3,
+			"wis": 13,
+			"cha": 16,
+			"passive": 14,
+			"cr": "5",
+			"fluff": {
+				"entries": [
+					"Beneath the churning dust",
+					"of the Sea of Silt lurk the ruins of lost civilizations and the relics of distant ages. The creatures that dwelled in these forgotten cities are gone, their bones now dust and ash. Yet these ruins are not as empty as many would believe. Strange creatures swim in the sea's depths, tentacled horrors whose appetites for flesh are matched only by their enormous, grotesque forms.",
+					"Lore",
+					"The most common silt horrors are the ones lurking closest to shore; these are characterized by their pale white tentacles. Explorers who venture out into the Sea of Silt sometimes bring reports of larger, more dangerous breeds. Such stories include forests of brown or gray tentacles, horrors so large they dwarf the city-states, and other tales where the winds and silt turned against the traveler, closing off retreat and funneling victims back into the tentacles' reach.",
+					"Encounters",
+					"Anyone who braves the Sea of Silt risks an encounter with these creatures. Silt horrors react to disturbances in the dust and creep along under the sand, undetected until they can strike. Giants often fall prey to silt horrors, as do passing ships and other vessels. While a flying creature can usually pass overhead without attracting a silt horror, any creatures that fly too close to the dust might invite an attack."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/HwEbVny.png"
+						}
+					}
+				]
+			},
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"The black silt horror is the smallest of the silt horrors. It resembles a black, dusty squid with a writhing mass of eight barbed tentacles. It is much smaller than other silt horrors and roams in groups called clutches, and attacks its prey by using pack tactics. Black silt horrors have a matriarchal society, where the larger females develop rudimentary psionic abilities that aid in capturing prey. They‘re found in the Sea of Silt and many smaller silt basins."
+					]
+				},
+				{
+					"name": "Pack Tactic",
+					"entries": [
+						"The black silt horror have advantage on attack rolls against a creature if at least one of the creature's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Psionic Camouflage",
+					"entries": [
+						"The silt horror emits a constant psionic signal, forcing creatures to overlook it. It has advantage on Dexterity (Stealth) check against creatures that are not immune against being {@condition charmed}."
+					]
+				},
+				{
+					"name": "Regenerating Tentacles",
+					"entries": [
+						"The silt horror has height tentacles. Whenever the silt horror takes 10 or more damage in a single turn, one of its tentacles dies. At the end of its turn, it grows one tentacles for each of its tentacles that died since its last turn, unless it has taken fire damage since its last turn. The silt horror regains 5 hit points for each tentacle regrown in this way."
+					]
+				}
+			],
+			"shortName": "Silt Horror Black",
+			"isNpc": true,
+			"environment": [
+				"desert",
+				"swamp",
+				"underdark"
+			],
+			"tokenUrl": "https://i.imgur.com/4f0pJ6R.png",
+			"skill": {
+				"stealth": "+8",
+				"perception": "+4"
+			},
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"senses": [
+				"tremorsense 60 ft.",
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"T",
+				"D"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"prone",
+				"stunned"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The silt horror makes as many attacks as it has tentacles and one maw attack."
+					]
+				},
+				{
+					"name": "Tentacle",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Air Jet",
+					"entries": [
+						"A black silt horror can jet backward at a speed of 80 feet. It must move in a straight line but does not provoke attacks of opportunity while jetting. A jetting silt horror raises a 20-foot radius, 20-foot high cloud of dust or steam that provides total concealment as it escapes."
+					]
+				},
+				{
+					"name": "Maw",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d8 + 2}) piercing damage and the target must succeed on a {@dc 15} Constitution saving throw or be {@condition poisoned} for 1 minute. Until this poison ends, the target is {@condition paralyzed}. The target can repeat the saving throw at the end of each of its turns, ending the poison on itself on a success."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Tentacles"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"conditionInflict": [
+				"paralyzed",
+				"poisoned"
+			]
 		}
 
 
