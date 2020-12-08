@@ -30814,6 +30814,427 @@
 				"MW",
 				"RCH"
 			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Tarek",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"tarek"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d8 + 9",
+				"average": 22
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 16,
+			"int": 14,
+			"wis": 12,
+			"cha": 8,
+			"passive": 11,
+			"cr": "1",
+			"fluff": {
+				"entries": [
+					"Tareks are big, musclebound, and hairless bipeds that inhabit the hilly and mountainous areas of Athas. They have square, big-boned heads with sloping foreheads and massive brow ridges. Their flat noses have flared nostrils, and their domed muzzles are full of sharp teeth. Their powerful arms are so long that their knuckles drag along the ground. Tareks have a distinct musky odor that can be detected from as far away as 15 feet.",
+					"Tareks gather in tribes, building small communities in the hills and mountains of the Tyr region. These communities often sustain themselves by raiding, and visitors are not welcome. Unless a group of visitors include an obvious elemental cleric, tarek warriors rush out to kill or drive the intruders away In rare instances, members of a community will be sent out to trade with merchant caravans, but few traders will blindly conduct business with these representatives. More often than not, such representatives are decoys for an unseen raiding party. More than one caravan has been taken by surprise while negotiating a deal with tarek traders."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/ol4wDjV.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/7uEfEB6.png",
+			"environment": [
+				"coastal",
+				"desert",
+				"hill"
+			],
+			"isNpc": true,
+			"shortName": "Tarek",
+			"languages": [
+				"Giant",
+				"Tarek"
+			],
+			"languageTags": [
+				"GI"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"save": {
+				"str": "+5",
+				"con": "+5"
+			},
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The Tarek has advantage on an attack roll against a creature if at least on eof the Tarek’s allies is within 5 feet of the creature and the ally isn’t {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Ferocity",
+					"entries": [
+						"If damage reduces the tarek to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is from a critical hit. On a success, the tarek drops to 1 hit point instead."
+					]
+				}
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Tarek makes 2 attacks."
+					]
+				},
+				{
+					"name": "Handfork",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Heartpick",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Tarek Raider",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"tarek"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d8 + 8",
+				"average": 26
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 12,
+			"con": 15,
+			"int": 7,
+			"wis": 6,
+			"cha": 6,
+			"passive": 10,
+			"cr": "1",
+			"fluff": {
+				"entries": [
+					"Aggressive savages",
+					"of Athas's hilly and mountainous regions, tareks are the bane of borderland communities. Xenophobic, hateful and hostile, tareks frequently find themselves in conflict with the other races of the Tablelands. A tarek is so fierce in its love of life that it can continue to fight when lesser races would have succumbed to their wounds.",
+					"Lore",
+					"According to legend, an entity of mad destruction created the tareks. These fierce warriors served as its instruments of murder and destruction. The earth shamans eventually led the tareks in revolt against their maker.",
+					"Tareks are muscle-bound brutes that are known for their great constitution and will to live. They look dull-witted, with their squared heads with sloping foreheads, and are about as smart as the average half giant. Their features lend them a fearsome presence that has earned them a well-deserved reputation as dangerous foes. Tareks have a distinct musky odor that can be detected from as far away as 30 ft.",
+					"Tareks are children of the earth and have been known to wage great wars against the gith, with whom they compete for territory and whom they see as defiling the earth by their very presence. They also hate elves because of their association with magic and its effect upon the earth they hold so sacred. Tareks place great value in honor and physical prowess. For a tarek, Strength is a fundamental issue. The raw, competitive nature of their lives means that a tarek must be aware of his position in the tribe at any given time – and this position is determined through physical contest. When joining a group, it is quite normal to expect the uneducated tarek to use physical force to determine his place in things. The more cosmopolitan among the species have learned that other races sometimes take offence at this behavior.",
+					"The tarek language is much like that of the dwarves – harsh and guttural, and very fearsome in tone. Non-tarek speakers have been known to suffer from throat pains after half an hour of speaking the tongue. Tareks are fiercely protective of their language and proud of the strength needed to speak it. Tareks will teach their language to other races, but the pupil normally has to undergo the regular tarek method of assessment first in order to determine his worth (i.e.: a beating).",
+					"Encounters",
+					"Tarek communities often support themselves by raiding, and visitors are not welcome. Unless a group of visitors includes an obvious elemental earth cleric, the tareks will attempt to drive them away. In rare instances, members of a community will be sent out to trade with a merchant caravan, but few traders will blindly conduct business with these representatives. More often than not, such representatives are a decoy for an unseen raiding party."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/AGTwecn.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/JlEbbvh.png",
+			"environment": [
+				"coastal",
+				"desert",
+				"hill"
+			],
+			"isNpc": true,
+			"shortName": "Tarek Raider",
+			"languages": [
+				"Giant",
+				"Tarek"
+			],
+			"languageTags": [
+				"GI"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Tareks move with jerky, awkward strides, except when engaged in combat. Then they exhibit a style and grace usually uncommon in creatures of their size and build. To watch them engage in combat is to watch fluid motions that are as artistic as dance – unless the viewer happens to be on the receiving end of the deadly spectacle. While tareks will use weapons, they shun armor of any sort, instead relying on their tough hides and natural combat agility to protect them."
+					]
+				},
+				{
+					"name": "Ferocity",
+					"entries": [
+						"If damage reduces the tarek to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is from a critical hit. On a success, the tarek drops to 1 hit point instead."
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"skill": {
+				"athletics": "+5",
+				"intimidation": "+2",
+				"perception": "+0"
+			},
+			"action": [
+				{
+					"name": "Bone War Pick",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Tarek Earth Priest/Shaman",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"tarek"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 6",
+				"average": 37
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 12,
+			"con": 15,
+			"int": 9,
+			"wis": 14,
+			"cha": 6,
+			"passive": 10,
+			"cr": "3",
+			"fluff": {
+				"entries": [
+					"Aggressive savages",
+					"of Athas's hilly and mountainous regions, tareks are the bane of borderland communities. Xenophobic, hateful and hostile, tareks frequently find themselves in conflict with the other races of the Tablelands. A tarek is so fierce in its love of life that it can continue to fight when lesser races would have succumbed to their wounds.",
+					"Lore",
+					"According to legend, an entity of mad destruction created the tareks. These fierce warriors served as its instruments of murder and destruction. The earth shamans eventually led the tareks in revolt against their maker.",
+					"Tareks are muscle-bound brutes that are known for their great constitution and will to live. They look dull-witted, with their squared heads with sloping foreheads, and are about as smart as the average half giant. Their features lend them a fearsome presence that has earned them a well-deserved reputation as dangerous foes. Tareks have a distinct musky odor that can be detected from as far away as 30 ft.",
+					"Tareks are children of the earth and have been known to wage great wars against the gith, with whom they compete for territory and whom they see as defiling the earth by their very presence. They also hate elves because of their association with magic and its effect upon the earth they hold so sacred. Tareks place great value in honor and physical prowess. For a tarek, Strength is a fundamental issue. The raw, competitive nature of their lives means that a tarek must be aware of his position in the tribe at any given time – and this position is determined through physical contest. When joining a group, it is quite normal to expect the uneducated tarek to use physical force to determine his place in things. The more cosmopolitan among the species have learned that other races sometimes take offence at this behavior.",
+					"The tarek language is much like that of the dwarves – harsh and guttural, and very fearsome in tone. Non-tarek speakers have been known to suffer from throat pains after half an hour of speaking the tongue. Tareks are fiercely protective of their language and proud of the strength needed to speak it. Tareks will teach their language to other races, but the pupil normally has to undergo the regular tarek method of assessment first in order to determine his worth (i.e.: a beating).",
+					"Encounters",
+					"Tarek communities often support themselves by raiding, and visitors are not welcome. Unless a group of visitors includes an obvious elemental earth cleric, the tareks will attempt to drive them away. In rare instances, members of a community will be sent out to trade with a merchant caravan, but few traders will blindly conduct business with these representatives. More often than not, such representatives are a decoy for an unseen raiding party."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/usc5dNf.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/cjAxKQh.png",
+			"environment": [
+				"coastal",
+				"desert",
+				"hill"
+			],
+			"isNpc": true,
+			"shortName": "Tarek Earth Priest/Shaman",
+			"languages": [
+				"Giant",
+				"Tarek"
+			],
+			"languageTags": [
+				"GI"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Tareks revere earth shamans for being both sages and warriors. Earth shamans sometimes give an enchanted weapon to the most virile of the tribe's leaders, signaling a new chief among the people."
+					]
+				},
+				{
+					"name": "Ferocity",
+					"entries": [
+						"If damage reduces the tarek to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is from a critical hit. On a success, the tarek drops to 1 hit point instead."
+					]
+				}
+			],
+			"damageTags": [
+				"B"
+			],
+			"skill": {
+				"athletics": "+5",
+				"intimidation": "+2",
+				"perception": "+0"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Tarek is a 6th level spellcaster. Its spellcasting ability is Wisdom (spell {@dc 12}, +4 to hit with spell attacks). The tarek has the following cleric spells prepared.",
+						"Spellcasting Ability=WIS",
+						"Global Magic Attack Modifier=4",
+						"Magic Caster Level=6",
+						"Spell Save DC Mod=12"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell guidance}",
+								"{@spell mold earth|XGE}",
+								"{@spell thaumaturgy}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell bane}",
+								"{@spell earth tremor|XGE}",
+								"{@spell protection from evil and good}",
+								"{@spell shield of faith}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell aid}",
+								"{@spell animate dead} (2th level spell)",
+								"{@spell earthbind|XGE}",
+								"{@spell Maximilian's earthen grasp|XGE}",
+								"{@spell prayer of healing}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell bestow curse}",
+								"{@spell erupting earth|XGE}",
+								"{@spell meld into stone}",
+								"{@spell remove curse}",
+								"{@spell spirit guardians}"
+							],
+							"slots": 3
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"action": [
+				{
+					"name": "Stone Mace",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Conjure Elemental (1/Day)",
+					"entries": [
+						"The Tarek summons a gargoyle. The summoned gargoyle appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can’t summon other elementals. It remains for 10 minutes, until it or its summoner dies, or until its summoner dismisses it as an action."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"reaction": [
+				{
+					"name": "Epidermal Iron (2/Day)",
+					"entries": [
+						"When the tarek is hit by an attack of a creature that it can see, it can use his reaction to gain resistance to bludgeoning, piercing and slashing damages against that attack."
+					]
+				}
+			]
 		}
 
 
