@@ -33675,6 +33675,1621 @@
 				"MW",
 				"RW"
 			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Templar Draj’s Slaver",
+			"size": "M",
+			"type": "humanoid",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"hide armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d8 + 12",
+				"average": 30
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 14,
+			"con": 16,
+			"int": 10,
+			"wis": 12,
+			"cha": 10,
+			"passive": 10,
+			"cr": "1",
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"Templars",
+					"Templars are the most feared people in the city states. Their power to accuse and imprison nearly anyone for any reason keeps the city dwellers in terror. Not surprisingly, templars tend to abuse the powers they have for their own personal gain which, so long as the city is administered and kept in order, does not bother the sorcerer-king. Templars perform three vital functions within a given city state. Primarily, they comprise the city guards and officers of the sorcerer-king's armies. Secondly, they see to it that the city is administered, its businesses kept running, and its slaves fed. Finally, the templars are responsible for maintaining the illusion that the sorcerer-king is a god—they have absolute power to enforce worship and homage to the sorcerer-kings. Every templar NPC will be actively pursuing one of these functions. One final, unwritten function of the templars is to advance through their ranks as rapidly as possible. The means by which a templar might gain power and position are wide open, including bribery, theft, and even assassination of others within their ranks. Every templar NPC can be counted on to accept underhanded schemes that will help him rise to power among his fellows.",
+					"In the administration of the city states, templar NPCs occupy all positions from waste removal to the mayorship. Lower-Ranked templars (levels 1-4) are given the dirtier jobs tkat require hands-on work, having a few guards at their disposal and fewer slave laborers than tkey need to perform their tasks effectively. Ranked templars (levels 5-8) gain greater responsibilities and may have several lower- ranked templars beneath them. High- Ranked templars (levels 9 and higher) move into management of the city state— such templars are difficult to unseat, since they can blame nearly any shortcomings on their underlings.",
+					"These are only a sampling of the many levels of templar bureaucracy. Advancement through the ranks has little to do with ability or experience. Technically, the sorcerer-king is a god within his own city and the templars assure him of worship and obedience. In actuality, a sorcerer-king is not a god or a demigod, though he is generally an extremely powerful wizard and psionicist. However, the templars erect temples and subjugate the populations to worship him. There isn't a noble, merchant, or peasant in a city state who doesn't at least pay lip service to the sorcerer-king or the templars who enforce his will.",
+					"The DM must keep two things in mind when dealing with any particular templar NPC. First, how will the templar attempt to use the player characters to gain advantage? He could accuse or imprison them, which always looks good in the eyes of a superior, or he could buy their services to perform a task suck as assassination or simply making a superior look bad. Second, the DM must consider how the player characters might appeal to the templar's wicked ways and greed. In their quest for power, they are sometimes easily manipulated. Beware, though—higher-ranked templars have played these games of treachery before and, by their very existence, they've proven pretty good at them.",
+					"Duties and Auhtority",
+					"Templar soldiers are the enforcement arm of their service to the sorcerer-king. Low-Ranked templars (levels 1-4) are common soldiers, guards within the cities around the slave areas practiced and drilled in formations around the city walls. Ranked templars (levels 5-8) are officers in charge of small (10-100 man) units of guards, slave soldiers, or undead soldiers (in times of war). High-Ranked templars (levels 9 +) are usually generals or administrators, keeping the army equipped and fed.",
+					"Draj’s",
+					"Draj is a backwater city-state held firmly in the grasp of a mad sorcerer-king. Draj has never known peace, for warfare and conflict are among its highest ideals. Warriors hold power, and their vaunted status is something all aspire to attain. When not waging war against Raam or defending their home from reprisals or conquest, Draji raiders prowl the surrounding wastes, plundering villages for fresh slaves to replace those expended in labor or sacrifice."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/Nj2gUYI.png"
+						}
+					}
+				]
+			},
+			"shortName": "Templar Draj’s Slaver",
+			"tokenUrl": "https://i.imgur.com/Eaa9GYk.png",
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"immune": [
+				{
+					"special": "disease"
+				}
+			],
+			"damageTags": [
+				"S",
+				"P"
+			],
+			"isNpc": true,
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Draj is almost constantly at war, sending its armies far and wide in search of captives. The warriors, which you will encounter nearly anywhere, are armed with obsidian-edged macuahuitl and short barbed spears attached to long ropes. They are trained to throw their harpoons into a target's thigh or seat and then drag him back to where they are standing."
+					]
+				},
+				{
+					"name": "Dark Devotion",
+					"entries": [
+						"The templar has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+					]
+				}
+			],
+			"save": {
+				"str": "+4",
+				"con": "+5"
+			},
+			"skill": {
+				"athletics": "+4",
+				"intimidation": "+2"
+			},
+			"action": [
+				{
+					"name": "Obsidian Macuahuitl",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d10 + 2}) slashing damage and the target suffers {@dice 1d6} extra slashing damage at the beginning of each of its turn from blood loss. Undead, elementals, plants and constructs are not suffering from the extra damage. The bleeding can be stopped if a character takes an action and make a successful Wisdom (Medicine) check {@dc 10}. A spell giving hit points back to the bleeding target also stops the bleeding."
+					]
+				},
+				{
+					"name": "Barded Spear",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 30/80 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage. If the target is Medium or smaller, it is {@condition grappled} (escape {@dc 12}) and pulled 10 feet toward the templar. If this bring the {@condition grappled} creature is within 5ft of the Templar, the Templar can use his reaction to make a melee weapon attack against it."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"conditionInflict": [
+				"grappled"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Templar Draj’s Moon Priest",
+			"size": "M",
+			"type": "humanoid",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"moon’s blessing",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d8 + 27",
+				"average": 67
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 16,
+			"int": 10,
+			"wis": 10,
+			"cha": 16,
+			"passive": 10,
+			"cr": "5",
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"Templars",
+					"Templars are the most feared people in the city states. Their power to accuse and imprison nearly anyone for any reason keeps the city dwellers in terror. Not surprisingly, templars tend to abuse the powers they have for their own personal gain which, so long as the city is administered and kept in order, does not bother the sorcerer-king. Templars perform three vital functions within a given city state. Primarily, they comprise the city guards and officers of the sorcerer-king's armies. Secondly, they see to it that the city is administered, its businesses kept running, and its slaves fed. Finally, the templars are responsible for maintaining the illusion that the sorcerer-king is a god—they have absolute power to enforce worship and homage to the sorcerer-kings. Every templar NPC will be actively pursuing one of these functions. One final, unwritten function of the templars is to advance through their ranks as rapidly as possible. The means by which a templar might gain power and position are wide open, including bribery, theft, and even assassination of others within their ranks. Every templar NPC can be counted on to accept underhanded schemes that will help him rise to power among his fellows.",
+					"In the administration of the city states, templar NPCs occupy all positions from waste removal to the mayorship. Lower-Ranked templars (levels 1-4) are given the dirtier jobs tkat require hands-on work, having a few guards at their disposal and fewer slave laborers than tkey need to perform their tasks effectively. Ranked templars (levels 5-8) gain greater responsibilities and may have several lower- ranked templars beneath them. High- Ranked templars (levels 9 and higher) move into management of the city state— such templars are difficult to unseat, since they can blame nearly any shortcomings on their underlings.",
+					"These are only a sampling of the many levels of templar bureaucracy. Advancement through the ranks has little to do with ability or experience. Technically, the sorcerer-king is a god within his own city and the templars assure him of worship and obedience. In actuality, a sorcerer-king is not a god or a demigod, though he is generally an extremely powerful wizard and psionicist. However, the templars erect temples and subjugate the populations to worship him. There isn't a noble, merchant, or peasant in a city state who doesn't at least pay lip service to the sorcerer-king or the templars who enforce his will.",
+					"The DM must keep two things in mind when dealing with any particular templar NPC. First, how will the templar attempt to use the player characters to gain advantage? He could accuse or imprison them, which always looks good in the eyes of a superior, or he could buy their services to perform a task suck as assassination or simply making a superior look bad. Second, the DM must consider how the player characters might appeal to the templar's wicked ways and greed. In their quest for power, they are sometimes easily manipulated. Beware, though—higher-ranked templars have played these games of treachery before and, by their very existence, they've proven pretty good at them.",
+					"Duties and Auhtority",
+					"Templar soldiers are the enforcement arm of their service to the sorcerer-king. Low-Ranked templars (levels 1-4) are common soldiers, guards within the cities around the slave areas practiced and drilled in formations around the city walls. Ranked templars (levels 5-8) are officers in charge of small (10-100 man) units of guards, slave soldiers, or undead soldiers (in times of war). High-Ranked templars (levels 9 +) are usually generals or administrators, keeping the army equipped and fed.",
+					"Draj’s",
+					"Draj is a backwater city-state held firmly in the grasp of a mad sorcerer-king. Draj has never known peace, for warfare and conflict are among its highest ideals. Warriors hold power, and their vaunted status is something all aspire to attain. When not waging war against Raam or defending their home from reprisals or conquest, Draji raiders prowl the surrounding wastes, plundering villages for fresh slaves to replace those expended in labor or sacrifice."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/RyTypPW.png"
+						}
+					}
+				]
+			},
+			"shortName": "Templar Draj’s Moon Priest",
+			"tokenUrl": "https://i.imgur.com/p3awoSd.png",
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"immune": [
+				{
+					"special": "disease"
+				}
+			],
+			"damageTags": [
+				"S"
+			],
+			"isNpc": true,
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Draj’s templars are known as moon priests. Part bureaucrats, part warriors, and part religious police, they use fear and propaganda to ensure Tectuktitlay’s continued reign. Their primary purpose is to control the population and observe a bewildering variety of rites and celebrations throughout the year. The moon priests teach the Draji that bountiful harvests will continue only as long as Tectuktitlay and the moons Ral and Guthay are pleased with sacrifices."
+					]
+				},
+				{
+					"name": "Dark Devotion",
+					"entries": [
+						"The templar has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+					]
+				},
+				{
+					"name": "Moon’s Blessing",
+					"entries": [
+						"The moon priest can add his Charisma modifier to his AC and his saving throws. However such a blessing comes at a price, when the moon priest rolls a “1” on an ability check, attack roll or saving throw he is under the effect of the confusion spell until the end of his next turn."
+					]
+				},
+				{
+					"name": "Blood Sacrifice",
+					"entries": [
+						"When the moon priest reduces another creature to 0 hit points with a melee attack or attacks and {@condition incapacitated} creature, it can make an extra attack against the target as a bonus action. The attack automatically hits and is a critical hit. If the target is killed by the attack the moon priest is healed by a number of {@dice d8} equal to the lower between the creature’s level and the creature’s challenge rating. If this would bring the Moon Priest above his maximal hit points the extra is gained as temporary hit points."
+					]
+				},
+				{
+					"name": "Savage Attacks",
+					"entries": [
+						"The moon priest can decide to take a -5 penalty on an attack roll, if the attack hits he adds +10 to the attack’s damage."
+					]
+				}
+			],
+			"save": {
+				"str": "+8",
+				"cha": "+9"
+			},
+			"skill": {
+				"athletics": "+6",
+				"intimidation": "+6",
+				"religion": "+3"
+			},
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The templar makes two attacks with its Macuahuitl."
+					]
+				},
+				{
+					"name": "Obsidian Macuahuitl",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d10 + 3}) slashing damage and the target suffers {@dice 1d6} extra slashing damage at the beginning of each of its turn from blood loss. Undead, elementals, plants and constructs are not suffering from the extra damage. The bleeding can be stopped if a character takes an action and make a successful Wisdom (Medicine) check {@dc 10}. A spell giving hit points back to the bleeding target also stops the bleeding."
+					]
+				},
+				{
+					"name": "Twin’s Moon Curse {@recharge 5}",
+					"entries": [
+						"The moon priest gaze at a humanoid in a 60ft range with an insane look in his eyes. The target must succeed on a {@dc 14} Wisdom saving throw or be under a confusion spell for one minute. At the end of each of its turn a creature can reattempt the saving throw, ending the effect on a success."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Templar Draj’s Jasuan Temple Guard",
+			"size": "M",
+			"type": "humanoid",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"drake’s splint armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d8 + 60",
+				"average": 150
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 14,
+			"con": 16,
+			"int": 10,
+			"wis": 12,
+			"cha": 16,
+			"passive": 11,
+			"cr": "13",
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"Templars",
+					"Templars are the most feared people in the city states. Their power to accuse and imprison nearly anyone for any reason keeps the city dwellers in terror. Not surprisingly, templars tend to abuse the powers they have for their own personal gain which, so long as the city is administered and kept in order, does not bother the sorcerer-king. Templars perform three vital functions within a given city state. Primarily, they comprise the city guards and officers of the sorcerer-king's armies. Secondly, they see to it that the city is administered, its businesses kept running, and its slaves fed. Finally, the templars are responsible for maintaining the illusion that the sorcerer-king is a god—they have absolute power to enforce worship and homage to the sorcerer-kings. Every templar NPC will be actively pursuing one of these functions. One final, unwritten function of the templars is to advance through their ranks as rapidly as possible. The means by which a templar might gain power and position are wide open, including bribery, theft, and even assassination of others within their ranks. Every templar NPC can be counted on to accept underhanded schemes that will help him rise to power among his fellows.",
+					"In the administration of the city states, templar NPCs occupy all positions from waste removal to the mayorship. Lower-Ranked templars (levels 1-4) are given the dirtier jobs tkat require hands-on work, having a few guards at their disposal and fewer slave laborers than tkey need to perform their tasks effectively. Ranked templars (levels 5-8) gain greater responsibilities and may have several lower- ranked templars beneath them. High- Ranked templars (levels 9 and higher) move into management of the city state— such templars are difficult to unseat, since they can blame nearly any shortcomings on their underlings.",
+					"These are only a sampling of the many levels of templar bureaucracy. Advancement through the ranks has little to do with ability or experience. Technically, the sorcerer-king is a god within his own city and the templars assure him of worship and obedience. In actuality, a sorcerer-king is not a god or a demigod, though he is generally an extremely powerful wizard and psionicist. However, the templars erect temples and subjugate the populations to worship him. There isn't a noble, merchant, or peasant in a city state who doesn't at least pay lip service to the sorcerer-king or the templars who enforce his will.",
+					"The DM must keep two things in mind when dealing with any particular templar NPC. First, how will the templar attempt to use the player characters to gain advantage? He could accuse or imprison them, which always looks good in the eyes of a superior, or he could buy their services to perform a task suck as assassination or simply making a superior look bad. Second, the DM must consider how the player characters might appeal to the templar's wicked ways and greed. In their quest for power, they are sometimes easily manipulated. Beware, though—higher-ranked templars have played these games of treachery before and, by their very existence, they've proven pretty good at them.",
+					"Duties and Auhtority",
+					"Templar soldiers are the enforcement arm of their service to the sorcerer-king. Low-Ranked templars (levels 1-4) are common soldiers, guards within the cities around the slave areas practiced and drilled in formations around the city walls. Ranked templars (levels 5-8) are officers in charge of small (10-100 man) units of guards, slave soldiers, or undead soldiers (in times of war). High-Ranked templars (levels 9 +) are usually generals or administrators, keeping the army equipped and fed.",
+					"Draj’s",
+					"Draj is a backwater city-state held firmly in the grasp of a mad sorcerer-king. Draj has never known peace, for warfare and conflict are among its highest ideals. Warriors hold power, and their vaunted status is something all aspire to attain. When not waging war against Raam or defending their home from reprisals or conquest, Draji raiders prowl the surrounding wastes, plundering villages for fresh slaves to replace those expended in labor or sacrifice."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/t3iBdjf.png"
+						}
+					}
+				]
+			},
+			"shortName": "Templar Draj’s Jasuan Temple Guard",
+			"tokenUrl": "https://i.imgur.com/NFBaXzF.png",
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"immune": [
+				{
+					"special": "disease"
+				}
+			],
+			"damageTags": [
+				"S",
+				"N",
+				"P"
+			],
+			"isNpc": true,
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"These soldiers protect the Father and Master Temple, the immense pyramid from which the sorcerer-king runs the city-state. Draji respect strength and ruthlessness, qualities personified by their warriors. The jasuan knights, named for Tectuktitlay’s beloved pet drakes, embody these principles. Jasuan knights are warriors born into one of the city’s heroic clans, the descendants of great Draji heroes of long ago. Unlike the nobles of other city-states, Draji nobles aren’t necessarily wealthy landowners. Their riches lie in their membership in the city’s foremost clans, and their trade is war. Each noble clan claims the allegiance of certain artisan or merchant clans. Warriors of these lower clans are bound to “their” jasuans and fight under their command."
+					]
+				},
+				{
+					"name": "Dreadful Aspect (1/Rest)",
+					"entries": [
+						"The templar channels the darkest emotions and focuses them into a burst of magical menace. Each creature of the templar's choice within 30 feet of it must make a {@dc 16} Wisdom saving throw if it can see the templar. On a failed save, the target is {@condition frightened} of the templar for 1 minute. If a creature {@condition frightened} by this effect ends its turn more than 30 feet away from the templar, it can attempt another Wisdom saving throw to end the effect on it."
+					]
+				},
+				{
+					"name": "Aura of Hate",
+					"entries": [
+						"The templar, as well any fiends and undead within 30 feet of the templar, gains a +3 bonus to melee weapon damage rolls. A creature can benefit from this feature from only one paladin at a time."
+					]
+				},
+				{
+					"name": "Savage Attacks",
+					"entries": [
+						"The Templar can decide to take a -5 penalty on an attack roll, if the attack hits he adds +10 to the attack’s damage."
+					]
+				}
+			],
+			"save": {
+				"cha": "+8",
+				"wis": "+6"
+			},
+			"skill": {
+				"athletics": "+10",
+				"intimidation": "+8",
+				"religion": "+5"
+			},
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons"
+				}
+			],
+			"conditionImmune": [
+				"frightened"
+			],
+			"conditionInflict": [
+				"grappled",
+				"frightened"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The templar is a 20th level spellcaster. Its spellcasting ability is Intelligence (spell {@dc 16}, +8 to hit with spell attacks). The templar has the following paladin spells prepared.",
+						"Spellcasting Ability=INT",
+						"Global Magic Attack Modifier=8",
+						"Magic Caster Level=20",
+						"Spell Save DC Mod=16"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell hellish rebuke}",
+								"{@spell inflict wounds}",
+								"{@spell shield of faith}",
+								"{@spell wrathful smite}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell crown of madness}",
+								"{@spell darkness}",
+								"{@spell magic weapon}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell animate dead}",
+								"{@spell bestow curse}",
+								"{@spell dispel magic}",
+								"{@spell elemental weapon}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell blight}",
+								"{@spell confusion}",
+								"{@spell death ward}",
+								"{@spell staggering smite}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell banishing smite}",
+								"{@spell contagion}",
+								"{@spell dominate person}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CP"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The templar makes two attacks with its Macuahuitl."
+					]
+				},
+				{
+					"name": "Prismatic Macuahuitl",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}15 ({@damage 1d10 + 10}) slashing damage, plus 10 ({@damage 2d8}) necrotic damage. The target suffers {@dice 1d6} extra slashing damage at the beginning of each of its turn from blood loss. Undead, elementals, plants and constructs are not suffering from the extra damage. The bleeding can be stopped if a character takes an action and make a successful Wisdom (Medicine) check {@dc 15}. A spell giving hit points back to the bleeding target also stops the bleeding."
+					]
+				},
+				{
+					"name": "Barded Spear",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 30/80 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage. If the target is Medium or smaller, it is {@condition grappled} (escape {@dc 18}) and pulled 10 feet toward the templar. If this bring the {@condition grappled} creature is within 5ft of the Templar, the Templar can use his reaction to make a melee weapon attack against it."
+					]
+				},
+				{
+					"name": "Dread Lord (1/Day)",
+					"entries": [
+						"The templar surround himself with an aura of gloom that lasts for 1 minute. The aura reduces any bright light in a 30-foot radius around the paladin to dim light. Whenever an enemy that is {@condition frightened} by the paladin starts its turn in the aura, it takes {@damage 4d10} psychic damage. Additionally, the templar and creatures it chooses in the aura are draped in deeper shadow. Creatures that rely on sight have disadvantage on attack rolls against creatures draped in this shadow. While the aura lasts, the paladin can use a bonus action on his or her turn to cause the shadows in the aura to attack one creature. The paladin makes a melee spell attack against the target. If the attack hits, the target takes necrotic damage equal to {@dice 3d10 + 3}."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW",
+				"AOE"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Templar Gulg Red Mane",
+			"size": "M",
+			"type": "humanoid",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d8 + 14",
+				"average": 46
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 16,
+			"con": 15,
+			"int": 10,
+			"wis": 10,
+			"cha": 15,
+			"passive": 10,
+			"cr": "2",
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"Templars",
+					"Templars are the most feared people in the city states. Their power to accuse and imprison nearly anyone for any reason keeps the city dwellers in terror. Not surprisingly, templars tend to abuse the powers they have for their own personal gain which, so long as the city is administered and kept in order, does not bother the sorcerer-king. Templars perform three vital functions within a given city state. Primarily, they comprise the city guards and officers of the sorcerer-king's armies. Secondly, they see to it that the city is administered, its businesses kept running, and its slaves fed. Finally, the templars are responsible for maintaining the illusion that the sorcerer-king is a god—they have absolute power to enforce worship and homage to the sorcerer-kings. Every templar NPC will be actively pursuing one of these functions. One final, unwritten function of the templars is to advance through their ranks as rapidly as possible. The means by which a templar might gain power and position are wide open, including bribery, theft, and even assassination of others within their ranks. Every templar NPC can be counted on to accept underhanded schemes that will help him rise to power among his fellows.",
+					"In the administration of the city states, templar NPCs occupy all positions from waste removal to the mayorship. Lower-Ranked templars (levels 1-4) are given the dirtier jobs tkat require hands-on work, having a few guards at their disposal and fewer slave laborers than tkey need to perform their tasks effectively. Ranked templars (levels 5-8) gain greater responsibilities and may have several lower- ranked templars beneath them. High- Ranked templars (levels 9 and higher) move into management of the city state— such templars are difficult to unseat, since they can blame nearly any shortcomings on their underlings.",
+					"These are only a sampling of the many levels of templar bureaucracy. Advancement through the ranks has little to do with ability or experience. Technically, the sorcerer-king is a god within his own city and the templars assure him of worship and obedience. In actuality, a sorcerer-king is not a god or a demigod, though he is generally an extremely powerful wizard and psionicist. However, the templars erect temples and subjugate the populations to worship him. There isn't a noble, merchant, or peasant in a city state who doesn't at least pay lip service to the sorcerer-king or the templars who enforce his will.",
+					"The DM must keep two things in mind when dealing with any particular templar NPC. First, how will the templar attempt to use the player characters to gain advantage? He could accuse or imprison them, which always looks good in the eyes of a superior, or he could buy their services to perform a task suck as assassination or simply making a superior look bad. Second, the DM must consider how the player characters might appeal to the templar's wicked ways and greed. In their quest for power, they are sometimes easily manipulated. Beware, though—higher-ranked templars have played these games of treachery before and, by their very existence, they've proven pretty good at them.",
+					"Duties and Auhtority",
+					"Templar soldiers are the enforcement arm of their service to the sorcerer-king. Low-Ranked templars (levels 1-4) are common soldiers, guards within the cities around the slave areas practiced and drilled in formations around the city walls. Ranked templars (levels 5-8) are officers in charge of small (10-100 man) units of guards, slave soldiers, or undead soldiers (in times of war). High-Ranked templars (levels 9 +) are usually generals or administrators, keeping the army equipped and fed.",
+					"Gulg",
+					"Gulg’s templars, who oversee the military, economic, and agricultural matters of the city, live in wellappointed huts in the lower limbs of the tree. Although the particular level of a templar's hut bears no direct relationskip to his status, one can tell a templar's approximate rank by counting the number of necklaces ke wears. Lalali-Puy's most trusted advisor, and second in command, wears ten necklaces. The lowliest templars wear only one."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/WlbNlas.png"
+						}
+					}
+				]
+			},
+			"shortName": "Templar Gulg Red Mane",
+			"tokenUrl": "https://i.imgur.com/tdJ30EB.png",
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"immune": [
+				{
+					"special": "disease"
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"isNpc": true,
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"The red mane Templars are well known around Athas, these warriors are easily distinguishable with their colourful dressing code, wrapped in bright red toga and dying their hair with dark red pigments. They wander around Athas, praising the holiness of their living goddess, the Oba Lalali-Puy. At the difference of the feared nganga the red mane Templars do not abandon social status in Gulg society.",
+						"They oversee religious ceremonies, chant the prowess of great judaga and instigate the sacred dances. They are also in charge for all to know in the will of the bringer of rain, playing the role of herald. In combat the red mane are fierce warrior, lunging into the melee and using their magic to bolster their allies."
+					]
+				},
+				{
+					"name": "Inspiration (2/Rest)",
+					"entries": [
+						"With a bonus action the red mane can inspire with a praise an ally within 60ft who can hear him. The ally gains a {@dice d8} that he can roll within the next 10 minutes to add the result to an ability check, saving throw, attack roll, or damage roll. The ally can also use his reaction to add the result to his AC against an attack. A creature can only have one inspiration at a time."
+					]
+				}
+			],
+			"save": {
+				"cha": "+4",
+				"dex": "+5"
+			},
+			"skill": {
+				"nature": "+2",
+				"performance": "+6",
+				"stealth": "+7"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The templar is a 7th level spellcaster. Its spellcasting ability is Charisma (spell {@dc 12}, +4 to hit with spell attacks). The templar has the following bard spells prepared.",
+						"Spellcasting Ability=CHA",
+						"Global Magic Attack Modifier=4",
+						"Magic Caster Level=7",
+						"Spell Save DC Mod=12"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell blade ward}",
+								"{@spell dancing lights}",
+								"{@spell true strike}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell animal friendship}",
+								"{@spell healing word}",
+								"{@spell heroism}",
+								"{@spell longstrider}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell animal messenger}",
+								"{@spell invisibility}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell dispel magic}",
+								"{@spell fear}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell compulsion}",
+								"{@spell hallucinatory terrain}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CB"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The templar makes two attacks with its spear or two attacks with its bow."
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage in melee, or 5 ({@damage 1d6 + 2}) piercing damage at range, or 7 ({@damage 1d8 + 2}) piercing damage if used with both hands."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 150/600 ft., one target. {@h}8 ({@damage 1d8 + 3}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"THW",
+				"RNG"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Templar Gulg Nganga",
+			"size": "M",
+			"type": "humanoid",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				16,
+				{
+					"ac": 18,
+					"condition": "with {@spell mage armor)",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "14d8 + 42",
+				"average": 105
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 17,
+			"int": 14,
+			"wis": 13,
+			"cha": 18,
+			"passive": 11,
+			"cr": "12",
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"Templars",
+					"Templars are the most feared people in the city states. Their power to accuse and imprison nearly anyone for any reason keeps the city dwellers in terror. Not surprisingly, templars tend to abuse the powers they have for their own personal gain which, so long as the city is administered and kept in order, does not bother the sorcerer-king. Templars perform three vital functions within a given city state. Primarily, they comprise the city guards and officers of the sorcerer-king's armies. Secondly, they see to it that the city is administered, its businesses kept running, and its slaves fed. Finally, the templars are responsible for maintaining the illusion that the sorcerer-king is a god—they have absolute power to enforce worship and homage to the sorcerer-kings. Every templar NPC will be actively pursuing one of these functions. One final, unwritten function of the templars is to advance through their ranks as rapidly as possible. The means by which a templar might gain power and position are wide open, including bribery, theft, and even assassination of others within their ranks. Every templar NPC can be counted on to accept underhanded schemes that will help him rise to power among his fellows.",
+					"In the administration of the city states, templar NPCs occupy all positions from waste removal to the mayorship. Lower-Ranked templars (levels 1-4) are given the dirtier jobs tkat require hands-on work, having a few guards at their disposal and fewer slave laborers than tkey need to perform their tasks effectively. Ranked templars (levels 5-8) gain greater responsibilities and may have several lower- ranked templars beneath them. High- Ranked templars (levels 9 and higher) move into management of the city state— such templars are difficult to unseat, since they can blame nearly any shortcomings on their underlings.",
+					"These are only a sampling of the many levels of templar bureaucracy. Advancement through the ranks has little to do with ability or experience. Technically, the sorcerer-king is a god within his own city and the templars assure him of worship and obedience. In actuality, a sorcerer-king is not a god or a demigod, though he is generally an extremely powerful wizard and psionicist. However, the templars erect temples and subjugate the populations to worship him. There isn't a noble, merchant, or peasant in a city state who doesn't at least pay lip service to the sorcerer-king or the templars who enforce his will.",
+					"The DM must keep two things in mind when dealing with any particular templar NPC. First, how will the templar attempt to use the player characters to gain advantage? He could accuse or imprison them, which always looks good in the eyes of a superior, or he could buy their services to perform a task suck as assassination or simply making a superior look bad. Second, the DM must consider how the player characters might appeal to the templar's wicked ways and greed. In their quest for power, they are sometimes easily manipulated. Beware, though—higher-ranked templars have played these games of treachery before and, by their very existence, they've proven pretty good at them.",
+					"Duties and Auhtority",
+					"Templar soldiers are the enforcement arm of their service to the sorcerer-king. Low-Ranked templars (levels 1-4) are common soldiers, guards within the cities around the slave areas practiced and drilled in formations around the city walls. Ranked templars (levels 5-8) are officers in charge of small (10-100 man) units of guards, slave soldiers, or undead soldiers (in times of war). High-Ranked templars (levels 9 +) are usually generals or administrators, keeping the army equipped and fed.",
+					"Gulg",
+					"Gulg’s templars, who oversee the military, economic, and agricultural matters of the city, live in wellappointed huts in the lower limbs of the tree. Although the particular level of a templar's hut bears no direct relationskip to his status, one can tell a templar's approximate rank by counting the number of necklaces ke wears. Lalali-Puy's most trusted advisor, and second in command, wears ten necklaces. The lowliest templars wear only one."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/y3QlkSA.png"
+						}
+					}
+				]
+			},
+			"shortName": "Templar Gulg Nganga",
+			"tokenUrl": "https://i.imgur.com/76dhFD2.png",
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"immune": [
+				{
+					"special": "disease"
+				}
+			],
+			"damageTags": [
+				"B",
+				"N"
+			],
+			"isNpc": true,
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Gulg’s templars — the dreaded nganga—remain apart from the citizenry, vigilantly guarding Gulg from threats both internal and external. Gulg’s templars are unlike those of the other city-states. They do not serve as judges, priests, or members of the city watch. Instead, they are secretive witch doctors known as nganga, mystics who lurk at the edges of society and protect Gulg from magical, spiritual, and moral threats. Lalali-Puy’s grim templars are seldom seen walking the streets. Rather, they leave indications of their presence only in the aftermath: A dissenter’s family might vanish in the night, the only evidence being odd footprints and a trail of blood leading into the forest. Upon becoming a nganga, a Gulgan is no longer a member of his or her People or dagada—in fact, a dagada holds a funeral for a newly chosen nganga, acting as though the recruit has died. Thereafter, the nganga never ventures into public without covering his or her face, either with a fearsome wooden mask or with paint suggestive of a skull, a cilops, or some other terrifying monster."
+					]
+				},
+				{
+					"name": "Devil Mask",
+					"entries": [
+						"Each creature of the nganga's choice that is within 60 feet of the templar and aware of it must succeed on a {@dc 16} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the nganga's Devil Mask for the next 24 hours."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The nganga has advantage on saving throws agaist spells and other magic effects."
+					]
+				}
+			],
+			"save": {
+				"cha": "+8",
+				"wis": "+5"
+			},
+			"skill": {
+				"arcana": "+5",
+				"nature": "+5",
+				"religion": "+5"
+			},
+			"resist": [
+				{
+					"special": "damage from spells"
+				}
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The templar is a 14th level spellcaster. Its spellcasting ability is Charisma (spell {@dc 16}, +8 to hit with spell attacks). The templar has the following spells prepared.",
+						"Spellcasting Ability=CHA",
+						"Global Magic Attack Modifier=8",
+						"Magic Caster Level=14",
+						"Spell Save DC Mod=16"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell chill touch}",
+								"{@spell druidcraft}",
+								"{@spell poison spray}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell mage armor}",
+								"{@spell witch bolt}",
+								"{@spell wrathful smite}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell animal messenger}",
+								"{@spell blur}",
+								"{@spell pass without trace}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell blink}",
+								"{@spell fear}",
+								"{@spell spirit guardians}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell guardian of faith}",
+								"{@spell phantasmal killer}",
+								"{@spell wall of fire}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cloudkill}",
+								"{@spell conjure elemental}",
+								"{@spell reincarnate}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell conjure fey}",
+								"{@spell disintegrate}"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"{@spell etherealness}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The templar makes two attacks with its staff."
+					]
+				},
+				{
+					"name": "Cursed Skull Staff",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) bludgeoning damage, plus 10 ({@damage 3d6}) necrotic damage. If the target is a creature it must succeed on a {@dc 16} Wisdom saving throw or become cursed, similarly to the bestow curse spell. The target is cursed for 24 hours or until dispelled."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Templar Gulg Judaga",
+			"size": "M",
+			"type": "humanoid",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"leopard hide"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d8 + 54",
+				"average": 135
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 20,
+			"dex": 19,
+			"con": 17,
+			"int": 11,
+			"wis": 15,
+			"cha": 10,
+			"passive": 17,
+			"cr": "12",
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"Templars",
+					"Templars are the most feared people in the city states. Their power to accuse and imprison nearly anyone for any reason keeps the city dwellers in terror. Not surprisingly, templars tend to abuse the powers they have for their own personal gain which, so long as the city is administered and kept in order, does not bother the sorcerer-king. Templars perform three vital functions within a given city state. Primarily, they comprise the city guards and officers of the sorcerer-king's armies. Secondly, they see to it that the city is administered, its businesses kept running, and its slaves fed. Finally, the templars are responsible for maintaining the illusion that the sorcerer-king is a god—they have absolute power to enforce worship and homage to the sorcerer-kings. Every templar NPC will be actively pursuing one of these functions. One final, unwritten function of the templars is to advance through their ranks as rapidly as possible. The means by which a templar might gain power and position are wide open, including bribery, theft, and even assassination of others within their ranks. Every templar NPC can be counted on to accept underhanded schemes that will help him rise to power among his fellows.",
+					"In the administration of the city states, templar NPCs occupy all positions from waste removal to the mayorship. Lower-Ranked templars (levels 1-4) are given the dirtier jobs tkat require hands-on work, having a few guards at their disposal and fewer slave laborers than tkey need to perform their tasks effectively. Ranked templars (levels 5-8) gain greater responsibilities and may have several lower- ranked templars beneath them. High- Ranked templars (levels 9 and higher) move into management of the city state— such templars are difficult to unseat, since they can blame nearly any shortcomings on their underlings.",
+					"These are only a sampling of the many levels of templar bureaucracy. Advancement through the ranks has little to do with ability or experience. Technically, the sorcerer-king is a god within his own city and the templars assure him of worship and obedience. In actuality, a sorcerer-king is not a god or a demigod, though he is generally an extremely powerful wizard and psionicist. However, the templars erect temples and subjugate the populations to worship him. There isn't a noble, merchant, or peasant in a city state who doesn't at least pay lip service to the sorcerer-king or the templars who enforce his will.",
+					"The DM must keep two things in mind when dealing with any particular templar NPC. First, how will the templar attempt to use the player characters to gain advantage? He could accuse or imprison them, which always looks good in the eyes of a superior, or he could buy their services to perform a task suck as assassination or simply making a superior look bad. Second, the DM must consider how the player characters might appeal to the templar's wicked ways and greed. In their quest for power, they are sometimes easily manipulated. Beware, though—higher-ranked templars have played these games of treachery before and, by their very existence, they've proven pretty good at them.",
+					"Duties and Auhtority",
+					"Templar soldiers are the enforcement arm of their service to the sorcerer-king. Low-Ranked templars (levels 1-4) are common soldiers, guards within the cities around the slave areas practiced and drilled in formations around the city walls. Ranked templars (levels 5-8) are officers in charge of small (10-100 man) units of guards, slave soldiers, or undead soldiers (in times of war). High-Ranked templars (levels 9 +) are usually generals or administrators, keeping the army equipped and fed.",
+					"Gulg",
+					"Gulg’s templars, who oversee the military, economic, and agricultural matters of the city, live in wellappointed huts in the lower limbs of the tree. Although the particular level of a templar's hut bears no direct relationskip to his status, one can tell a templar's approximate rank by counting the number of necklaces ke wears. Lalali-Puy's most trusted advisor, and second in command, wears ten necklaces. The lowliest templars wear only one."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/1JL57Lb.png"
+						}
+					}
+				]
+			},
+			"shortName": "Templar Gulg Judaga",
+			"tokenUrl": "https://i.imgur.com/THgmV5v.png",
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"immune": [
+				{
+					"special": "disease"
+				}
+			],
+			"damageTags": [
+				"P",
+				"S",
+				"I"
+			],
+			"isNpc": true,
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"The elite warriors of Gulg are known as judaga. They are half-hunter and half-fighter, depending upon stealth to ambush their enemies and bows and arrows or {@condition poisoned} darts to slay them. Gulg does not have a landed nobility in the same manner as other city-states; agriculture is not prevalent, so owning property is not a sign of wealth. Instead, the noble class of Gulg is a meritocracy of hunters. The judagas warriors also serve as the heart of the army, although Gulg rarely goes to war openly. The term “judaga” means “headhunter” and refers to the hunters’ practice of taking the heads of their enemies as trophies. They know a ritual that can trap the soul of a deceased warrior in its own skull, and the dagadas of the greatest hunters are adorned with such undead guardians. Judagas have no land or titles to pass on to their descendants, but they compete fiercely for trophies and rich spoils to buy wives, slaves, livestock, and houses full of luxuries that their families can enjoy for generations. A prominent judaga’s family remains wealthy and influential long after the individual’s death, and young hunters descended from renowned judagas are likely to become judagas themselves."
+					]
+				},
+				{
+					"name": "Change Shape",
+					"entries": [
+						"With a bonus action the judaga magically polymorphs into a saber-toothed tiger, remaining in that form for up to 18 hours. It can revert to its true form as a bonus action. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+					]
+				},
+				{
+					"name": "Feral Senses",
+					"entries": [
+						"The senses of the Judaga are extremely sharp, he does not suffer any penalty when attacking an {@condition invisible} creature, and he can also pinpoint his location if he is within 30ft of it, provided he isn’t {@condition blinded} or {@condition deafened}. Additionnaly the Judaga has avantage on Wisdom (Perception) and Wisdom (Survival) check."
+					]
+				},
+				{
+					"name": "Pounce (Tiger Shape)",
+					"entries": [
+						"If the tiger moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a {@dc 18} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the tiger can make one bite attack against it as a bonus action."
+					]
+				},
+				{
+					"name": "Savage Attacks",
+					"entries": [
+						"The Templar can decide to take a -5 penalty on an attack roll, if the attack hits he adds +10 to the attack’s damage."
+					]
+				}
+			],
+			"save": {
+				"str": "+10",
+				"dex": "+9"
+			},
+			"skill": {
+				"athletics": "+10",
+				"perception": "+7",
+				"stealth": "+9",
+				"survival": "+7"
+			},
+			"conditionInflict": [
+				"prone"
+			],
+			"traitTags": [
+				"Pounce"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The templar makes two claws attack and one bite attack (tiger shape only) or two scimitar attacks (human shape only) or two longbow attack (human shape only)"
+					]
+				},
+				{
+					"name": "Bite (Tiger Shape)",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d10 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Claw (Tiger Shape)",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Scimitar",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 9} to hit, range 150/600 ft., one target. {@h}9 ({@damage 1d8 + 4}) piercing damage and the target must make a {@dc 15} Constitution saving throw, taking 24 ({@damage 7d6}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			],
+			"reaction": [
+				{
+					"name": "Uncanny Dodge",
+					"entries": [
+						"When an attacker hits the Templar with an attack he can use his reaction to half the damage, provided he isn’t {@condition blinded} and {@condition deafened}."
+					]
+				}
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Templar Nibenay Shadow Bride",
+			"size": "M",
+			"type": "humanoid",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "11d8 + 33",
+				"average": 83
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 10,
+			"dex": 18,
+			"con": 17,
+			"int": 11,
+			"wis": 16,
+			"cha": 12,
+			"passive": 13,
+			"cr": "7",
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"Templars",
+					"Templars are the most feared people in the city states. Their power to accuse and imprison nearly anyone for any reason keeps the city dwellers in terror. Not surprisingly, templars tend to abuse the powers they have for their own personal gain which, so long as the city is administered and kept in order, does not bother the sorcerer-king. Templars perform three vital functions within a given city state. Primarily, they comprise the city guards and officers of the sorcerer-king's armies. Secondly, they see to it that the city is administered, its businesses kept running, and its slaves fed. Finally, the templars are responsible for maintaining the illusion that the sorcerer-king is a god—they have absolute power to enforce worship and homage to the sorcerer-kings. Every templar NPC will be actively pursuing one of these functions. One final, unwritten function of the templars is to advance through their ranks as rapidly as possible. The means by which a templar might gain power and position are wide open, including bribery, theft, and even assassination of others within their ranks. Every templar NPC can be counted on to accept underhanded schemes that will help him rise to power among his fellows.",
+					"In the administration of the city states, templar NPCs occupy all positions from waste removal to the mayorship. Lower-Ranked templars (levels 1-4) are given the dirtier jobs tkat require hands-on work, having a few guards at their disposal and fewer slave laborers than tkey need to perform their tasks effectively. Ranked templars (levels 5-8) gain greater responsibilities and may have several lower- ranked templars beneath them. High- Ranked templars (levels 9 and higher) move into management of the city state— such templars are difficult to unseat, since they can blame nearly any shortcomings on their underlings.",
+					"These are only a sampling of the many levels of templar bureaucracy. Advancement through the ranks has little to do with ability or experience. Technically, the sorcerer-king is a god within his own city and the templars assure him of worship and obedience. In actuality, a sorcerer-king is not a god or a demigod, though he is generally an extremely powerful wizard and psionicist. However, the templars erect temples and subjugate the populations to worship him. There isn't a noble, merchant, or peasant in a city state who doesn't at least pay lip service to the sorcerer-king or the templars who enforce his will.",
+					"The DM must keep two things in mind when dealing with any particular templar NPC. First, how will the templar attempt to use the player characters to gain advantage? He could accuse or imprison them, which always looks good in the eyes of a superior, or he could buy their services to perform a task suck as assassination or simply making a superior look bad. Second, the DM must consider how the player characters might appeal to the templar's wicked ways and greed. In their quest for power, they are sometimes easily manipulated. Beware, though—higher-ranked templars have played these games of treachery before and, by their very existence, they've proven pretty good at them.",
+					"Duties and Auhtority",
+					"Templar soldiers are the enforcement arm of their service to the sorcerer-king. Low-Ranked templars (levels 1-4) are common soldiers, guards within the cities around the slave areas practiced and drilled in formations around the city walls. Ranked templars (levels 5-8) are officers in charge of small (10-100 man) units of guards, slave soldiers, or undead soldiers (in times of war). High-Ranked templars (levels 9 +) are usually generals or administrators, keeping the army equipped and fed.",
+					"Nibenay",
+					"All of Nibenay’s templars are female. Nibenese tradition dictates that every templar is a wife of the Shadow King, although the marriage is purely ceremonial for all but a handful of favored or highranking templars. At any given time, Nibenay’s wives number several hundred; almost all are humans or half-elves. They form the middle and upper layers of an immense bureaucracy that runs the city’s affairs. This bureaucracy is divided into five temples, each overseeing one aspect of governance. A high consort who reports directly to the Shadow King oversees each temple. Only the templars are permitted to enter and leave the sub-city in which his palace is located. Otherwise, the rest of the city is composed entirely of slaves dedicated to making the lives of Nibenay and his templars comfortable and secure."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/vgRmzBv.png"
+						}
+					}
+				]
+			},
+			"shortName": "Templar Nibenay Shadow Bride",
+			"tokenUrl": "https://i.imgur.com/sFa3ALe.png",
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"immune": [
+				{
+					"special": "disease"
+				}
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"isNpc": true,
+			"save": {
+				"str": "+3",
+				"dex": "+7"
+			},
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Nobles and powerful templars snub Nibenay's lowestranking templar-wives, calling them \"shadow brides\" and mocking their barren beds and trivial stations in the kingdom's governance. Shadow brides frequently become pawns in the city-state's vast and intricate political dance. Newly initiated brides can be susceptible to bribery, and the craftier templar-wives work multiple sides of a connict to scheme their way into the city-state's higher echelons."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"If a shadow bride makes a successful Dexterity saving throw against an attack that normally deals half damage on a successful save, she instead takes no damage, and only half damage if she fails."
+					]
+				},
+				{
+					"name": "Shadow Step",
+					"entries": [
+						"When in an area of dim light or darkness, the shadow bride can use a bonus action to teleport up to 60ft on an unoccupied space that is also in dim light or darkness. She has advantage on the first melee attack it makes before the end of the turn."
+					]
+				},
+				{
+					"name": "Unarmed Defense",
+					"entries": [
+						"The shadow bride adds her Wisdom modifier to her AC"
+					]
+				},
+				{
+					"name": "Stunning Strike",
+					"entries": [
+						"Once per turn, the bride can make a stunning strike. A creature hit by a melee weapon attack of the bride must succeed on a {@dc 14} Constitution saving throw or be {@condition stunned} until the end of the bride’s next turn."
+					]
+				}
+			],
+			"skill": {
+				"acrobatics": "+7",
+				"deception": "+4",
+				"stealth": "+7"
+			},
+			"conditionImmune": [
+				"poisoned",
+				{
+					"special": "disease"
+				}
+			],
+			"resist": [
+				"poison",
+				{
+					"special": "disease"
+				}
+			],
+			"conditionInflict": [
+				"blinded",
+				"poisoned",
+				"stunned"
+			],
+			"spellcasting": [
+				{
+					"name": "Shadow Art",
+					"headerEntries": [
+						"The shadow bride can cast the following spells, without providing the material components."
+					],
+					"daily": {
+						"1e": [
+							"{@spell darkness}",
+							"{@spell darkvision}",
+							"{@spell pass without trace}",
+							"{@spell silence}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The templar makes three unarmed attacks or two dart attacks."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 4}) bludgeoning damage. The attack counts as magical."
+					]
+				},
+				{
+					"name": "Dart",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 20/60 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage and the target must succeed on a {@dc 15} Constitution saving throw or become {@condition poisoned} for one hour. The {@condition poisoned} creature is {@condition blinded}."
+					]
+				},
+				{
+					"name": "Cloak of Shadows",
+					"entries": [
+						"When the shadow bride is in an area of dim light or darkness she can become {@condition invisible}. She remains {@condition invisible} until she makes an attack, cast a spell or is in an area of bright light."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"reaction": [
+				{
+					"name": "Deflect Missiles",
+					"entries": [
+						"When the templar is hit by a ranged weapon attack it can use its reaction to reduce the damage by {@dice 1d10 + 15}."
+					]
+				}
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Templar Nibenay Kensai",
+			"size": "M",
+			"type": "humanoid",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item scale mail|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d8 + 60",
+				"average": 128
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 18,
+			"int": 13,
+			"wis": 14,
+			"cha": 10,
+			"passive": 13,
+			"cr": "10",
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"Templars",
+					"Templars are the most feared people in the city states. Their power to accuse and imprison nearly anyone for any reason keeps the city dwellers in terror. Not surprisingly, templars tend to abuse the powers they have for their own personal gain which, so long as the city is administered and kept in order, does not bother the sorcerer-king. Templars perform three vital functions within a given city state. Primarily, they comprise the city guards and officers of the sorcerer-king's armies. Secondly, they see to it that the city is administered, its businesses kept running, and its slaves fed. Finally, the templars are responsible for maintaining the illusion that the sorcerer-king is a god—they have absolute power to enforce worship and homage to the sorcerer-kings. Every templar NPC will be actively pursuing one of these functions. One final, unwritten function of the templars is to advance through their ranks as rapidly as possible. The means by which a templar might gain power and position are wide open, including bribery, theft, and even assassination of others within their ranks. Every templar NPC can be counted on to accept underhanded schemes that will help him rise to power among his fellows.",
+					"In the administration of the city states, templar NPCs occupy all positions from waste removal to the mayorship. Lower-Ranked templars (levels 1-4) are given the dirtier jobs tkat require hands-on work, having a few guards at their disposal and fewer slave laborers than tkey need to perform their tasks effectively. Ranked templars (levels 5-8) gain greater responsibilities and may have several lower- ranked templars beneath them. High- Ranked templars (levels 9 and higher) move into management of the city state— such templars are difficult to unseat, since they can blame nearly any shortcomings on their underlings.",
+					"These are only a sampling of the many levels of templar bureaucracy. Advancement through the ranks has little to do with ability or experience. Technically, the sorcerer-king is a god within his own city and the templars assure him of worship and obedience. In actuality, a sorcerer-king is not a god or a demigod, though he is generally an extremely powerful wizard and psionicist. However, the templars erect temples and subjugate the populations to worship him. There isn't a noble, merchant, or peasant in a city state who doesn't at least pay lip service to the sorcerer-king or the templars who enforce his will.",
+					"The DM must keep two things in mind when dealing with any particular templar NPC. First, how will the templar attempt to use the player characters to gain advantage? He could accuse or imprison them, which always looks good in the eyes of a superior, or he could buy their services to perform a task suck as assassination or simply making a superior look bad. Second, the DM must consider how the player characters might appeal to the templar's wicked ways and greed. In their quest for power, they are sometimes easily manipulated. Beware, though—higher-ranked templars have played these games of treachery before and, by their very existence, they've proven pretty good at them.",
+					"Duties and Auhtority",
+					"Templar soldiers are the enforcement arm of their service to the sorcerer-king. Low-Ranked templars (levels 1-4) are common soldiers, guards within the cities around the slave areas practiced and drilled in formations around the city walls. Ranked templars (levels 5-8) are officers in charge of small (10-100 man) units of guards, slave soldiers, or undead soldiers (in times of war). High-Ranked templars (levels 9 +) are usually generals or administrators, keeping the army equipped and fed.",
+					"Nibenay",
+					"All of Nibenay’s templars are female. Nibenese tradition dictates that every templar is a wife of the Shadow King, although the marriage is purely ceremonial for all but a handful of favored or highranking templars. At any given time, Nibenay’s wives number several hundred; almost all are humans or half-elves. They form the middle and upper layers of an immense bureaucracy that runs the city’s affairs. This bureaucracy is divided into five temples, each overseeing one aspect of governance. A high consort who reports directly to the Shadow King oversees each temple. Only the templars are permitted to enter and leave the sub-city in which his palace is located. Otherwise, the rest of the city is composed entirely of slaves dedicated to making the lives of Nibenay and his templars comfortable and secure."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/AQ9QIo5.png"
+						}
+					}
+				]
+			},
+			"shortName": "Templar Nibenay Kensai",
+			"tokenUrl": "https://i.imgur.com/FyIUtf3.png",
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"immune": [
+				{
+					"special": "disease"
+				}
+			],
+			"damageTags": [
+				"S",
+				"P"
+			],
+			"isNpc": true,
+			"save": {
+				"str": "+8",
+				"con": "+8"
+			},
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Commanding Nibenay’s half-giant forces, the kensai are the deadliest warriors of Nibenay. These women train constantly to perfect their swordplay and martial skills. In Nibenay’s society they are viewed as the equivalent of a knight and always come from nobility. When a Templar is chosen to become a kensai warrior her face is carved into a dedicated wall inside the naggaramakam, an honor that many would kill for. The kensai sword’s, called katana, is a unique weapon crafted specifically for her."
+					]
+				},
+				{
+					"name": "Action Surge (1/Rest)",
+					"entries": [
+						"On her turn the kensai can take one additional action on top of her regular action and a possible bonus action."
+					]
+				},
+				{
+					"name": "Martial Advantage",
+					"entries": [
+						"Once per turn, the kensai can deal an extra 14 ({@damage 4d6}) damage to a creature she hits with a melee weapon attack."
+					]
+				},
+				{
+					"name": "Superior Critical",
+					"entries": [
+						"The kensai weapon attacks score a critical hit on a roll of 18-20."
+					]
+				}
+			],
+			"skill": {
+				"acrobatics": "+7",
+				"deception": "+4",
+				"stealth": "+7",
+				"perception": "+3"
+			},
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The templar makes three katana attacks or three short bow attacks."
+					]
+				},
+				{
+					"name": "Katana",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d10 + 6}) slashing damage. The attack counts as magical."
+					]
+				},
+				{
+					"name": "Short Bow",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 80/320 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"The kensai adds 5 to its AC against one melee attack that would hit her. To do so, she must see the attacker and be wielding a melee weapon. If the attack hits regardless the damage are reduced by {@dice 1d10 + 17}."
+					]
+				}
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Templar Nibenay High Consort",
+			"size": "M",
+			"type": "humanoid",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				15,
+				{
+					"ac": 17,
+					"condition": "with {@spell mage armor)",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "18d8 + 18",
+				"average": 100
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 12,
+			"int": 20,
+			"wis": 15,
+			"cha": 16,
+			"passive": 13,
+			"cr": "14",
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"Templars",
+					"Templars are the most feared people in the city states. Their power to accuse and imprison nearly anyone for any reason keeps the city dwellers in terror. Not surprisingly, templars tend to abuse the powers they have for their own personal gain which, so long as the city is administered and kept in order, does not bother the sorcerer-king. Templars perform three vital functions within a given city state. Primarily, they comprise the city guards and officers of the sorcerer-king's armies. Secondly, they see to it that the city is administered, its businesses kept running, and its slaves fed. Finally, the templars are responsible for maintaining the illusion that the sorcerer-king is a god—they have absolute power to enforce worship and homage to the sorcerer-kings. Every templar NPC will be actively pursuing one of these functions. One final, unwritten function of the templars is to advance through their ranks as rapidly as possible. The means by which a templar might gain power and position are wide open, including bribery, theft, and even assassination of others within their ranks. Every templar NPC can be counted on to accept underhanded schemes that will help him rise to power among his fellows.",
+					"In the administration of the city states, templar NPCs occupy all positions from waste removal to the mayorship. Lower-Ranked templars (levels 1-4) are given the dirtier jobs tkat require hands-on work, having a few guards at their disposal and fewer slave laborers than tkey need to perform their tasks effectively. Ranked templars (levels 5-8) gain greater responsibilities and may have several lower- ranked templars beneath them. High- Ranked templars (levels 9 and higher) move into management of the city state— such templars are difficult to unseat, since they can blame nearly any shortcomings on their underlings.",
+					"These are only a sampling of the many levels of templar bureaucracy. Advancement through the ranks has little to do with ability or experience. Technically, the sorcerer-king is a god within his own city and the templars assure him of worship and obedience. In actuality, a sorcerer-king is not a god or a demigod, though he is generally an extremely powerful wizard and psionicist. However, the templars erect temples and subjugate the populations to worship him. There isn't a noble, merchant, or peasant in a city state who doesn't at least pay lip service to the sorcerer-king or the templars who enforce his will.",
+					"The DM must keep two things in mind when dealing with any particular templar NPC. First, how will the templar attempt to use the player characters to gain advantage? He could accuse or imprison them, which always looks good in the eyes of a superior, or he could buy their services to perform a task suck as assassination or simply making a superior look bad. Second, the DM must consider how the player characters might appeal to the templar's wicked ways and greed. In their quest for power, they are sometimes easily manipulated. Beware, though—higher-ranked templars have played these games of treachery before and, by their very existence, they've proven pretty good at them.",
+					"Duties and Auhtority",
+					"Templar soldiers are the enforcement arm of their service to the sorcerer-king. Low-Ranked templars (levels 1-4) are common soldiers, guards within the cities around the slave areas practiced and drilled in formations around the city walls. Ranked templars (levels 5-8) are officers in charge of small (10-100 man) units of guards, slave soldiers, or undead soldiers (in times of war). High-Ranked templars (levels 9 +) are usually generals or administrators, keeping the army equipped and fed.",
+					"Nibenay",
+					"All of Nibenay’s templars are female. Nibenese tradition dictates that every templar is a wife of the Shadow King, although the marriage is purely ceremonial for all but a handful of favored or highranking templars. At any given time, Nibenay’s wives number several hundred; almost all are humans or half-elves. They form the middle and upper layers of an immense bureaucracy that runs the city’s affairs. This bureaucracy is divided into five temples, each overseeing one aspect of governance. A high consort who reports directly to the Shadow King oversees each temple. Only the templars are permitted to enter and leave the sub-city in which his palace is located. Otherwise, the rest of the city is composed entirely of slaves dedicated to making the lives of Nibenay and his templars comfortable and secure."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/TaDkVG6.png"
+						}
+					}
+				]
+			},
+			"shortName": "Templar Nibenay High Consort",
+			"tokenUrl": "https://i.imgur.com/L7bXp0O.png",
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"immune": [
+				{
+					"special": "disease"
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"isNpc": true,
+			"save": {
+				"wis": "+8",
+				"int": "+8"
+			},
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"High consorts are the highest-ranking members of Nibenay's templars. Each rules one of the five temples. Together, the temples control every aspect of the city-state's management. Like Nibenay's noble houses, the consorts jockey for position. Nibenay doesn't interfere in their feuds, which frequently lead to backstabbing, temporary alliances, assassinations, and small wars of intrigue."
+					]
+				},
+				{
+					"name": "Defiling",
+					"entries": [
+						"When the high consort stands in an area with living plants, she can drain their energy to power his spells, treating them as if cast with a spell slot one level higher than he actually spends. The consort can also cause each creature within 5ft of to make a Constitution saving throw {@dc 17} or take {@damage 1d6} necrotic damage. If she does do, and at least one creature is damaged by this feature, she has advantage on the attack roll of the spell, if it requires one, or else targets of the spell she is casting have disadvantage on their saving throw. When she uses this feature, all plant life within 5ft of him turns black and withers, she cannot use this feature in an area that has been defiled already."
+					]
+				}
+			],
+			"skill": {
+				"acrobatics": "+7",
+				"deception": "+4",
+				"stealth": "+7",
+				"perception": "+3"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The high consort is an 18th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 17}, +9 to hit with spell attacks). The high consort has the following wizard spells prepared.",
+						"Spellcasting Ability=WIS",
+						"Global Magic Attack Modifier=9",
+						"Magic Caster Level=18",
+						"Spell Save DC Mod=17"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell chill touch}",
+								"{@spell fire bolt}",
+								"{@spell mage hand}",
+								"{@spell minor illusion}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell mage armor}",
+								"{@spell magic missile}",
+								"{@spell thunderwave}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell phantasmal force}",
+								"{@spell see invisibility}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell slow}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell Evard's black tentacles}",
+								"{@spell stoneskin}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell Bigby's hand}",
+								"{@spell wall of force}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell flesh to stone}",
+								"{@spell globe of invulnerability}"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"{@spell Mordenkainen's sword}",
+								"{@spell symbol}"
+							],
+							"slots": 1
+						},
+						"8": {
+							"spells": [
+								"{@spell Abi-Dalzim's horrid wilting|XGE}",
+								"{@spell mind blank}"
+							],
+							"slots": 1
+						},
+						"9": {
+							"spells": [
+								"{@spell power word kill}",
+								"{@spell weird}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"action": [
+				{
+					"name": "Obsidian Dagger",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Nibenay’s Gift {@recharge 5}",
+					"entries": [
+						"The high consort is protected by a magic ward that drains the life of those arming her for an hour. The ward has 45 hit points, whenever the consort takes damage, the ward takes the damage instead. If the ward is reduced to 0 hit points the consort takes any remaining damage. If a creature hits the high consort with a melee attack while the ward is active it takes 15 cold damage."
+					]
+				},
+				{
+					"name": "Teleport",
+					"entries": [
+						"The high consort magically teleports, along with any equipment she is wearing or carrying, up to 120 feet to an unoccupied space she can see."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"actionTags": [
+				"Teleport"
+			]
 		}
 
 
