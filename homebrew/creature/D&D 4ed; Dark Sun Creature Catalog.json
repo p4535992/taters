@@ -35998,7 +35998,8 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The templar is a 15th level spellcaster. Its spellcasting ability is Intelligence (spell {@dc 15}, +7 to hit with spell attacks). The templar has the Spellcasting Ability=INT",
+						"The templar is a 15th level spellcaster. Its spellcasting ability is Intelligence (spell {@dc 15}, +7 to hit with spell attacks). The templar has the following paladin spells prepared:",
+						"Spellcasting Ability=INT",
 						"Global Magic Attack Modifier=7",
 						"Magic Caster Level=15",
 						"Spell Save DC Mod=15"
@@ -36723,7 +36724,11 @@
 				{
 					"name": "Power of the Mind",
 					"headerEntries": [
-						"The cenobite can cast the following spells, without providing the material components (spell {@dc 15})."
+						"The cenobite can cast the following spells, without providing the material components (spell {@dc 15}).",
+						"Spellcasting Ability=WIS",
+						"Global Magic Attack Modifier=0",
+						"Magic Caster Level=0",
+						"Spell Save DC Mod=15"
 					],
 					"will": [
 						"{@spell detect thoughts}"
@@ -36780,6 +36785,896 @@
 						"When the cenobite is hit by a ranged weapon attack it can use its reaction to reduce the damage by {@dice 1d10 + 22}."
 					]
 				}
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Thri-Kreen",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"thri-kreen"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 6",
+				"average": 33
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 14,
+			"dex": 15,
+			"con": 13,
+			"int": 8,
+			"wis": 12,
+			"cha": 7,
+			"passive": 13,
+			"cr": "1",
+			"environment": [
+				"desert",
+				"forest",
+				"hill"
+			],
+			"fluff": {
+				"entries": [
+					"The itinerant thri-kheen are fierce warriors",
+					"and pragmatic hunters. They form deep bonds to their birth clutch and caregivers. Each thri-kreen accepts its place among its clutch mates and the greater pack. The primal instinct runs deep, linking the race to its ancestral history and the spirit world.",
+					"Lore",
+					"The thri-kreen wander the deserts and savannas of the Athas, avoiding all other races. Thri-kreen employ a language without words. To show emotion and reaction, a thri-kreen clacks its mandibles and waves its antennae, giving other thri-kreen a sense of what it is thinking and feeling. Other creatures find this manner of communication difficult to interpret and impossible to duplicate. When forced to interact with creatures of other intelligent species, thri-kreen employ alternative methods of communication, such as drawing pictures in sand or making pictures out of twigs or blades of grass.",
+					"Thri-kreen experience the full range of emotions but aren't as prone to emotional outbursts as humans. Thri-kreen with psionic ability often demonstrate a wider range of emotions, particularly if they live near or interact with humans or other highly emotional creatures.",
+					"Thri-kreen consider all other living creatures as potential nourishment, and they love the taste of elf flesh in particular. If a creature might be useful for something other than food, the thrikreen aren't likely to attack it on sight. Thri-kreen kill to survive, never for sport.",
+					"Thri-kreen don't require sleep and can rest while remaining alert and performing light tasks. Their inability to sleep is thought to be the reason why thrikreen have such short lifespans, the average thri-kreen life expectancy being only thirty years.",
+					"Thri-kreen bond with their clutch mates and greater pack. This cohesion amplifies their hunting and fighting prowess. Thri-kreen prefer to hunt nonsentient creatures, but they make exceptions in desperate times. They do not fight for vengeance; rather, they safeguard their freedom and attack only when threatened. Thri-kreen who stray from this norm are often under the influence of malevolent creatures or spirits.",
+					"Shamanistic desert talkers lead the thri-kreen in rituals to connect with ancestral spirits. Each thri-kreen taps into the race's memory. Some ancient memories reveal that the thri-kreen once held a powerful empire of their own.",
+					"Encounters",
+					"Thri-kreen packs roam the wilds. For centuries, slavers have trailed thri-kreen and stolen eggs. Newborn thri-kreen fetch a high price because they'll bond with their primary caregiver and clutch mates, regardless of race. Generations of thri-kreen have been integrated into city-states in this way."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/rGdM87l.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/kck7xFo.png",
+			"languages": [
+				"Thri-kreen"
+			],
+			"languageTags": [
+				"OTH"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"skill": {
+				"perception": "+3",
+				"stealth": "+4",
+				"survival": "+3"
+			},
+			"trait": [
+				{
+					"name": "Chameleon Carapace",
+					"entries": [
+						"The thri-kreen can change the color of its carapace to match the color and texture of its surroundings. As a result, it has advantage on Dexterity (Stealth) checks made to hide."
+					]
+				},
+				{
+					"name": "Standing Leap",
+					"entries": [
+						"The thri-kreen's long jump is up to 30 feet and its high jump is up to 15 feet, with or without a running start."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The thri-kreen makes two gythka attacks or two chatkcha attacks."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage, and the target must succeed on a {@dc 11} Constitution saving throw or be {@condition poisoned} for 1 minute. If the saving throw fails by 5 or more, the target is also {@condition paralyzed} while {@condition poisoned} in this way. The {@condition poisoned} target can repeat the saving throw on each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Gythka",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 2d4 + 2}) slashing damage."
+					]
+				},
+				{
+					"name": "Chatkcha",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 30/120 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"paralyzed",
+				"poisoned"
+			],
+			"shortName": "Thri-Kreen",
+			"isNpc": true
+		},
+		{
+			"name": "DARKSUNCREATURE - Thri-Kreen Psychic Whirlwind",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"thri-kreen"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d8 + 18",
+				"average": 62
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 16,
+			"dex": 17,
+			"con": 14,
+			"int": 8,
+			"wis": 14,
+			"cha": 7,
+			"passive": 13,
+			"cr": "3",
+			"environment": [
+				"desert",
+				"forest",
+				"hill"
+			],
+			"fluff": {
+				"entries": [
+					"The itinerant thri-kheen are fierce warriors",
+					"and pragmatic hunters. They form deep bonds to their birth clutch and caregivers. Each thri-kreen accepts its place among its clutch mates and the greater pack. The primal instinct runs deep, linking the race to its ancestral history and the spirit world.",
+					"Lore",
+					"The thri-kreen wander the deserts and savannas of the Athas, avoiding all other races. Thri-kreen employ a language without words. To show emotion and reaction, a thri-kreen clacks its mandibles and waves its antennae, giving other thri-kreen a sense of what it is thinking and feeling. Other creatures find this manner of communication difficult to interpret and impossible to duplicate. When forced to interact with creatures of other intelligent species, thri-kreen employ alternative methods of communication, such as drawing pictures in sand or making pictures out of twigs or blades of grass.",
+					"Thri-kreen experience the full range of emotions but aren't as prone to emotional outbursts as humans. Thri-kreen with psionic ability often demonstrate a wider range of emotions, particularly if they live near or interact with humans or other highly emotional creatures.",
+					"Thri-kreen consider all other living creatures as potential nourishment, and they love the taste of elf flesh in particular. If a creature might be useful for something other than food, the thrikreen aren't likely to attack it on sight. Thri-kreen kill to survive, never for sport.",
+					"Thri-kreen don't require sleep and can rest while remaining alert and performing light tasks. Their inability to sleep is thought to be the reason why thrikreen have such short lifespans, the average thri-kreen life expectancy being only thirty years.",
+					"Thri-kreen bond with their clutch mates and greater pack. This cohesion amplifies their hunting and fighting prowess. Thri-kreen prefer to hunt nonsentient creatures, but they make exceptions in desperate times. They do not fight for vengeance; rather, they safeguard their freedom and attack only when threatened. Thri-kreen who stray from this norm are often under the influence of malevolent creatures or spirits.",
+					"Shamanistic desert talkers lead the thri-kreen in rituals to connect with ancestral spirits. Each thri-kreen taps into the race's memory. Some ancient memories reveal that the thri-kreen once held a powerful empire of their own.",
+					"Encounters",
+					"Thri-kreen packs roam the wilds. For centuries, slavers have trailed thri-kreen and stolen eggs. Newborn thri-kreen fetch a high price because they'll bond with their primary caregiver and clutch mates, regardless of race. Generations of thri-kreen have been integrated into city-states in this way."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/2wHwVz3.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/Zl3Tbr4.png",
+			"languages": [
+				"Thri-kreen",
+				"telepathy 60 ft."
+			],
+			"languageTags": [
+				"OTH",
+				"TP"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"skill": {
+				"perception": "+3",
+				"stealth": "+4",
+				"survival": "+3"
+			},
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"shortName": "Thri-Kreen Psychic Whirlwind",
+			"isNpc": true,
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Mantis warriors are hunt leaders. Quick and ferocious, they are widely feared in battle. They are notorious for simultaneously delivering psychic and physical attacks."
+					]
+				},
+				{
+					"name": "Chameleon Carapace",
+					"entries": [
+						"The thri-kreen can change the color of its carapace to match the color and texture of its surroundings. As a result, it has advantage on Dexterity (Stealth) checks made to hide."
+					]
+				},
+				{
+					"name": "Standing Leap",
+					"entries": [
+						"The thri-kreen's long jump is up to 30 feet and its high jump is up to 15 feet, with or without a running start."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Psionics)",
+					"headerEntries": [
+						"The tembo's innate spellcasting ability is Wisdom (spell save {@dc 12}). The tembo can innately cast the following spells, requiring no material components.",
+						"Spellcasting Ability=WIS",
+						"Global Magic Attack Modifier=0",
+						"Magic Caster Level=0",
+						"Spell Save DC Mod=12"
+					],
+					"will": [
+						"{@spell mage hand} (the hand is invisible)"
+					],
+					"daily": {
+						"2e": [
+							"{@spell blur}",
+							"{@spell magic weapon}"
+						],
+						"1e": [
+							"{@spell invisibility} (self only)",
+							"{@spell lightning arrow}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"P",
+				"I"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The thri-kreen makes two gythka attacks or two long bow attacks."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage, and the target must succeed on a {@dc 13} Constitution saving throw or be {@condition poisoned} for 1 minute. If the saving throw fails by 5 or more, the target is also {@condition paralyzed} while {@condition poisoned} in this way. The {@condition poisoned} target can repeat the saving throw on each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Gythka",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d4 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 150/600 ft., one target. {@h}8 ({@damage 1d8 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Whirlwind Attack",
+					"entries": [
+						"The thri-kreen can make a gythka attack against any number of creatures within 5 feet of it, with a separate attack roll for each target."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			],
+			"conditionInflict": [
+				"paralyzed",
+				"poisoned"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Thri-Kreen Spiritual Guide",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"thri-kreen"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d8 + 28",
+				"average": 91
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 12,
+			"dex": 15,
+			"con": 14,
+			"int": 10,
+			"wis": 18,
+			"cha": 7,
+			"passive": 18,
+			"cr": "10",
+			"environment": [
+				"desert",
+				"forest",
+				"hill"
+			],
+			"fluff": {
+				"entries": [
+					"The itinerant thri-kheen are fierce warriors",
+					"and pragmatic hunters. They form deep bonds to their birth clutch and caregivers. Each thri-kreen accepts its place among its clutch mates and the greater pack. The primal instinct runs deep, linking the race to its ancestral history and the spirit world.",
+					"Lore",
+					"The thri-kreen wander the deserts and savannas of the Athas, avoiding all other races. Thri-kreen employ a language without words. To show emotion and reaction, a thri-kreen clacks its mandibles and waves its antennae, giving other thri-kreen a sense of what it is thinking and feeling. Other creatures find this manner of communication difficult to interpret and impossible to duplicate. When forced to interact with creatures of other intelligent species, thri-kreen employ alternative methods of communication, such as drawing pictures in sand or making pictures out of twigs or blades of grass.",
+					"Thri-kreen experience the full range of emotions but aren't as prone to emotional outbursts as humans. Thri-kreen with psionic ability often demonstrate a wider range of emotions, particularly if they live near or interact with humans or other highly emotional creatures.",
+					"Thri-kreen consider all other living creatures as potential nourishment, and they love the taste of elf flesh in particular. If a creature might be useful for something other than food, the thrikreen aren't likely to attack it on sight. Thri-kreen kill to survive, never for sport.",
+					"Thri-kreen don't require sleep and can rest while remaining alert and performing light tasks. Their inability to sleep is thought to be the reason why thrikreen have such short lifespans, the average thri-kreen life expectancy being only thirty years.",
+					"Thri-kreen bond with their clutch mates and greater pack. This cohesion amplifies their hunting and fighting prowess. Thri-kreen prefer to hunt nonsentient creatures, but they make exceptions in desperate times. They do not fight for vengeance; rather, they safeguard their freedom and attack only when threatened. Thri-kreen who stray from this norm are often under the influence of malevolent creatures or spirits.",
+					"Shamanistic desert talkers lead the thri-kreen in rituals to connect with ancestral spirits. Each thri-kreen taps into the race's memory. Some ancient memories reveal that the thri-kreen once held a powerful empire of their own.",
+					"Encounters",
+					"Thri-kreen packs roam the wilds. For centuries, slavers have trailed thri-kreen and stolen eggs. Newborn thri-kreen fetch a high price because they'll bond with their primary caregiver and clutch mates, regardless of race. Generations of thri-kreen have been integrated into city-states in this way."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/XDu6SAe.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/qPCynTc.png",
+			"languages": [
+				"Thri-kreen",
+				"Druidic"
+			],
+			"languageTags": [
+				"OTH",
+				"DU"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"skill": {
+				"perception": "+8",
+				"stealth": "+6",
+				"survival": "+8"
+			},
+			"damageTags": [
+				"P"
+			],
+			"shortName": "Thri-Kreen Spiritual Guide",
+			"isNpc": true,
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"The thri-kreen religious life is centered on the harmony of the clutch with its environment. As such they respect life and never hunt or sport or considerer a life worthless. Spirit Guide will often lead a tribe of thri-kreen or become the keeper of places they consider sacred, such as oasis, mudflat or a portion of the desert. As most druid they will send warning sign of their presence to those crossing their territory, informing them that this land is under their protection and that every abuse will be severely punished. When facing danger the spirit guide will use his animal allies to protect his brethren and buff himself before changing into the most appropriate elemental form."
+					]
+				},
+				{
+					"name": "Chameleon Carapace",
+					"entries": [
+						"The thri-kreen can change the color of its carapace to match the color and texture of its surroundings. As a result, it has advantage on Dexterity (Stealth) checks made to hide."
+					]
+				},
+				{
+					"name": "Elemental Shape (2/Day, Recharges after a Short or Long Rest)",
+					"entries": [
+						"The thri-kreen magically polymorphs into an air, earth, fire or water elemental of its choice as a bonus action, remaining in that form for up to 7 hours. It can revert to its true form as a bonus action. While transformed the attacks of his shape count as magical to bypass damage resistances and immunities. The druid can expend a spell slot as a bonus action to heal {@dice 1d8} hit point per spell slot level. The druid cannot cast spell in this shape but can maintain his concentration on already active ones. Any equipment it is wearing or carrying meld in its shape. It reverts to its true form if it dies."
+					]
+				},
+				{
+					"name": "Standing Leap",
+					"entries": [
+						"The thri-kreen's long jump is up to 30 feet and its high jump is up to 15 feet, with or without a running start."
+					]
+				}
+			],
+			"conditionImmune": [
+				"poisoned",
+				{
+					"special": "disease"
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The thri-kreen is a 14th level spellcaster. Its spellcasting ability is Wisdom (spell {@dc 12}, +4 to hit with spell attacks). The thri-kreen has the following druid spells prepared.",
+						"Spellcasting Ability=WIS",
+						"Global Magic Attack Modifier=4",
+						"Magic Caster Level=14",
+						"Spell Save DC Mod=12"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell druidcraft}",
+								"{@spell guidance}",
+								"{@spell poison spray}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell charm person}",
+								"{@spell cure wounds}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell beast sense}",
+								"{@spell hold person}",
+								"{@spell pass without trace}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell call lightning}",
+								"{@spell conjure animals}",
+								"{@spell dispel magic}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell grasping vine}",
+								"{@spell hallucinatory terrain}",
+								"{@spell polymorph}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell antilife shell}",
+								"{@spell commune with nature}",
+								"{@spell conjure elemental}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell heal}",
+								"{@spell wall of thorns}"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"{@spell mirage arcane}",
+								"{@spell regenerate}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CD"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The thri-kreen makes two gythka attacks or two long bow attacks."
+					]
+				},
+				{
+					"name": "Bite (thri-kreen shape)",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage, and the target must succeed on a {@dc 13} Constitution saving throw or be {@condition poisoned} for 1 minute. If the saving throw fails by 5 or more, the target is also {@condition paralyzed} while {@condition poisoned} in this way. The {@condition poisoned} target can repeat the saving throw on each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Gythka",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d4 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 150/600 ft., one target. {@h}8 ({@damage 1d8 + 3}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"paralyzed",
+				"poisoned"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Werehyena",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human",
+					"shapechanger"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"condition": "in human form"
+				},
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					],
+					"condition": "in hyena or hybrid form"
+				}
+			],
+			"hp": {
+				"formula": "9d8 + 18",
+				"average": 58
+			},
+			"speed": {
+				"walk": {
+					"number": 30,
+					"condition": "(40ft. in hyena form)"
+				}
+			},
+			"str": 15,
+			"dex": 14,
+			"con": 14,
+			"int": 10,
+			"wis": 11,
+			"cha": 14,
+			"passive": 12,
+			"cr": "3",
+			"shortName": "Werehyena",
+			"fluff": {
+				"entries": [
+					"Lore",
+					"Werehyenas are humanoids, often male humans, who can transform themselves into hyena-like forms. Their packs roam the plains and deserts of Athas looking for prey. The humanoid form tends to be tall and sinewy, with long, shaggy hair usually tied back over their neck. In their human forms, werehyenas tend to be gregarious and charismatic, many possessing a loud, resounding laugh.",
+					"The canine form appears to be a large hyena, over 6 foot long from snout to tail, with golden fur on its back and black fur on its belly and feet. It is not uncommon for a pack of these creatures to be followed by 2-12 normal hyenas. The normal hyenas are attracted to the lycanthropes, although not under their direct control.",
+					"Gnoll’s of the Dragon Horns have a fragile alliance’s with the local packs of werehyenas and the two species are often known to collaborate against common enemies. Werehyenas consider themselves superior to gnolls, treating them as the beta of the pack until dominance is asserted by the gnoll. While they do not necessarily respect the gnoll on their own, werehyena thread lightly when it comes to their demonic lord, Yeenoghu.",
+					"Encounters",
+					"Werehyenas travel in close-knit packs of up to a dozen creatures, most of whom are males. The pack is run by a dominant male, who makes all important decisions, reinforcing them with an occasional, savage bite. Newly infected lycanthropes are welcomed into a pack only if the newcomer agrees to accept the pack leader’s orders to the death. If not, a fight for dominance usually ensues, with the victor becoming the new pack leader. Among themselves, they can be playful and capable of lasting intimacy. They mate for life, but only with other members of the pack. From one to four cubs are born with each litter; 75% of them are male.",
+					"Werehyena packs scour the desert and plains in human form, seeking human settlements to infiltrate. A favorite ploy is for a single lycanthrope to enter a town or village and use its charm ability to win its way into the hearts of the people. Some are even known to shower gifts on a long-forgotten sister or relative. The gifts are typically small gems which it gathers for this purpose. The lycanthrope then lures the victim out of town to a trap, where the rest of the pack lies in wait."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/ow29TDD.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"forest",
+				"grassland",
+				"urban"
+			],
+			"tokenUrl": "https://i.imgur.com/gJRJYa9.png",
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Werehyenas are covert hunters, preying on gullible humans whenever possible. However, like their normal cousins, they are excellent scavengers, capable of eating just about anything in order to survive. Although their numbers are great, they are too widely scattered to have any profound effect upon the ecology of Athas."
+					]
+				},
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"The hyena can use its action to polymorph into a hyena-humanoid hybrid or into a hyena, or back into its true form, which is humanoid. Its statistics, other than its AC, are the same in each form. Any equipment it, is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+					]
+				},
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The werehyena has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+					]
+				}
+			],
+			"isNpc": true,
+			"languages": [
+				"Common (can’t speak in hyena form)"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"deception": "+4",
+				"persuasion": "+4",
+				"perception": "+2",
+				"stealth": "+4"
+			},
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons that aren’t silvered"
+				}
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Shapechanger"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The werehyena makes two attacks, one with its bite and one with its claws or scimitar."
+					]
+				},
+				{
+					"name": "Bite (Hyena or Hybrid Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage. If the target is a humanoid, it must succeed on a {@dc 12} Constitution saving throw or be cursed with werehyena lycanthropy."
+					]
+				},
+				{
+					"name": "Claws (Hybrid Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d4 + 2}) slashing damage."
+					]
+				},
+				{
+					"name": "Scimitar (Humanoid Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Werehyena Alpha",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human",
+					"shapechanger"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"condition": "in human form"
+				},
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					],
+					"condition": "in hyena or hybrid form"
+				}
+			],
+			"hp": {
+				"formula": "17d8 + 51",
+				"average": 128
+			},
+			"speed": {
+				"walk": {
+					"number": 30,
+					"condition": "(40ft. in hyena form)"
+				}
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 16,
+			"int": 13,
+			"wis": 11,
+			"cha": 16,
+			"passive": 13,
+			"cr": "6",
+			"shortName": "Werehyena Alpha",
+			"fluff": {
+				"entries": [
+					"Lore",
+					"Werehyenas are humanoids, often male humans, who can transform themselves into hyena-like forms. Their packs roam the plains and deserts of Athas looking for prey. The humanoid form tends to be tall and sinewy, with long, shaggy hair usually tied back over their neck. In their human forms, werehyenas tend to be gregarious and charismatic, many possessing a loud, resounding laugh.",
+					"The canine form appears to be a large hyena, over 6 foot long from snout to tail, with golden fur on its back and black fur on its belly and feet. It is not uncommon for a pack of these creatures to be followed by 2-12 normal hyenas. The normal hyenas are attracted to the lycanthropes, although not under their direct control.",
+					"Gnoll’s of the Dragon Horns have a fragile alliance’s with the local packs of werehyenas and the two species are often known to collaborate against common enemies. Werehyenas consider themselves superior to gnolls, treating them as the beta of the pack until dominance is asserted by the gnoll. While they do not necessarily respect the gnoll on their own, werehyena thread lightly when it comes to their demonic lord, Yeenoghu.",
+					"Encounters",
+					"Werehyenas travel in close-knit packs of up to a dozen creatures, most of whom are males. The pack is run by a dominant male, who makes all important decisions, reinforcing them with an occasional, savage bite. Newly infected lycanthropes are welcomed into a pack only if the newcomer agrees to accept the pack leader’s orders to the death. If not, a fight for dominance usually ensues, with the victor becoming the new pack leader. Among themselves, they can be playful and capable of lasting intimacy. They mate for life, but only with other members of the pack. From one to four cubs are born with each litter; 75% of them are male.",
+					"Werehyena packs scour the desert and plains in human form, seeking human settlements to infiltrate. A favorite ploy is for a single lycanthrope to enter a town or village and use its charm ability to win its way into the hearts of the people. Some are even known to shower gifts on a long-forgotten sister or relative. The gifts are typically small gems which it gathers for this purpose. The lycanthrope then lures the victim out of town to a trap, where the rest of the pack lies in wait."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/Axssi4O.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"forest",
+				"grassland",
+				"urban"
+			],
+			"tokenUrl": "https://i.imgur.com/dzNkrJP.png",
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"The leader of a werehyena stays in charge until it’s too weak to lead and is killed by a younger, stronger pack member. The alpha is a cunning and cruel killer, ruling his pack with an iron fist. In combat the alpha is the first to leap in the melee and always the last to stand. Despite his predilection for violence the alpha prefer to attack when his pack has a strategic advantage and will make good use of cover, high ground and other possible edge. At the end of the hunt the alpha is always the first to choose his share of the kill."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The werehyena regains 10 hit points at the start of its turn if it has at least 1 hit point."
+					]
+				},
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"The hyena can use its action to polymorph into a hyena-humanoid hybrid or into a hyena, or back into its true form, which is humanoid. Its statistics, other than its AC, are the same in each form. Any equipment it, is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+					]
+				},
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The werehyena has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+					]
+				}
+			],
+			"isNpc": true,
+			"languages": [
+				"Common (can’t speak in hyena form)"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"deception": "+6",
+				"persuasion": "+6",
+				"perception": "+3",
+				"stealth": "+5"
+			},
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons that aren’t silvered"
+				}
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Regeneration",
+				"Shapechanger"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The werehyena makes three attacks, one with its bite and two with its claws or scimitar."
+					]
+				},
+				{
+					"name": "Bite (Hyena or Hybrid Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 4}) piercing damage. If the target is a humanoid, it must succeed on a {@dc 14} Constitution saving throw or be cursed with werehyena lycanthropy."
+					]
+				},
+				{
+					"name": "Claws (Hybrid Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d4 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Scimitar (Humanoid Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 4}) slashing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
 			]
 		}
 
