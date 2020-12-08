@@ -33689,7 +33689,7 @@
 				{
 					"ac": 14,
 					"from": [
-						"hide armor"
+						"{@item hide armor|phb}"
 					]
 				}
 			],
@@ -35736,6 +35736,541 @@
 					"name": "Uncanny Dodge",
 					"entries": [
 						"When an attacker hits the Templar with an attack he can use his reaction to half the damage, provided he isn’t {@condition blinded} and {@condition deafened}."
+					]
+				}
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Templar Tyr Jy’Ahlkar",
+			"size": "M",
+			"type": "humanoid",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item hide armor|phb}",
+						"tower {@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d8 + 10",
+				"average": 33
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 14,
+			"dex": 15,
+			"con": 15,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"cr": "2",
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"Templars",
+					"Templars are the most feared people in the city states. Their power to accuse and imprison nearly anyone for any reason keeps the city dwellers in terror. Not surprisingly, templars tend to abuse the powers they have for their own personal gain which, so long as the city is administered and kept in order, does not bother the sorcerer-king. Templars perform three vital functions within a given city state. Primarily, they comprise the city guards and officers of the sorcerer-king's armies. Secondly, they see to it that the city is administered, its businesses kept running, and its slaves fed. Finally, the templars are responsible for maintaining the illusion that the sorcerer-king is a god—they have absolute power to enforce worship and homage to the sorcerer-kings. Every templar NPC will be actively pursuing one of these functions. One final, unwritten function of the templars is to advance through their ranks as rapidly as possible. The means by which a templar might gain power and position are wide open, including bribery, theft, and even assassination of others within their ranks. Every templar NPC can be counted on to accept underhanded schemes that will help him rise to power among his fellows.",
+					"In the administration of the city states, templar NPCs occupy all positions from waste removal to the mayorship. Lower-Ranked templars (levels 1-4) are given the dirtier jobs tkat require hands-on work, having a few guards at their disposal and fewer slave laborers than tkey need to perform their tasks effectively. Ranked templars (levels 5-8) gain greater responsibilities and may have several lower- ranked templars beneath them. High- Ranked templars (levels 9 and higher) move into management of the city state— such templars are difficult to unseat, since they can blame nearly any shortcomings on their underlings.",
+					"These are only a sampling of the many levels of templar bureaucracy. Advancement through the ranks has little to do with ability or experience. Technically, the sorcerer-king is a god within his own city and the templars assure him of worship and obedience. In actuality, a sorcerer-king is not a god or a demigod, though he is generally an extremely powerful wizard and psionicist. However, the templars erect temples and subjugate the populations to worship him. There isn't a noble, merchant, or peasant in a city state who doesn't at least pay lip service to the sorcerer-king or the templars who enforce his will.",
+					"The DM must keep two things in mind when dealing with any particular templar NPC. First, how will the templar attempt to use the player characters to gain advantage? He could accuse or imprison them, which always looks good in the eyes of a superior, or he could buy their services to perform a task suck as assassination or simply making a superior look bad. Second, the DM must consider how the player characters might appeal to the templar's wicked ways and greed. In their quest for power, they are sometimes easily manipulated. Beware, though—higher-ranked templars have played these games of treachery before and, by their very existence, they've proven pretty good at them.",
+					"Duties and Auhtority",
+					"Templar soldiers are the enforcement arm of their service to the sorcerer-king. Low-Ranked templars (levels 1-4) are common soldiers, guards within the cities around the slave areas practiced and drilled in formations around the city walls. Ranked templars (levels 5-8) are officers in charge of small (10-100 man) units of guards, slave soldiers, or undead soldiers (in times of war). High-Ranked templars (levels 9 +) are usually generals or administrators, keeping the army equipped and fed.",
+					"Tyr",
+					"The Royal Guard consists of two thousand mercenaries led by five hundred half-giants and Kalak's loyal templars. In fact, the latter are all armed with steel swords. Tyr military strength is renowned, if not as impressive as her rival of Urik, for the city can muster impressive armies in case of open conflict. The city walls are defended by the Jy’Ahlkar, lightly armored mercenaries using fast shooting crossbows and wood tower shield to fight in packed units. The finest of Tyr are the Iron Guard, an elite corp claded in iron armors, commanded by the most trusted advisors of King Kalak’s himself. Tyr’s Templars rule the city with an iron fist, crushing any sign of rebellion in blood and sending the survivors to the slave pits where they are worked to death in quarries, completing the last pieces of the stone work for Kalak’s ziggourat. Kalak also rely on a network of spies and assassasins known to use alchemical bombs and poisons to eliminate the enemies of the state, this feared killers are known as the Alkatesh."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/V0qOgOo.png"
+						}
+					}
+				]
+			},
+			"shortName": "Templar Tyr Jy’Ahlkar",
+			"tokenUrl": "https://i.imgur.com/HFxxXsT.png",
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"immune": [
+				{
+					"special": "disease"
+				}
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"isNpc": true,
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"The Jy’Ahlkar is a large company of mercenaries at the service of Tyr’s Templars and nobles. They are famous for wielding a large tower shield and a fast-shooting crossbow, allowing them to fire several shots before reloading. The tower shield include an arrow slit and a firing support for the crossbow, making it possible to wield the shield and fire simultaneously. Jy’Ahlkar can be encountered in any part of the city-state but are not fully trusted with sensitive duties, none is admitted in the Royal Guard. The control of the mercenaries is a sensitive matter in Tyr’s politic, for their allegiance is crucial to whom wants to control the city-state. Templars keep a keen eye on their leaders and punish severely any sign of disloyalty to the king. The current commander of the Jy'Ahlkar is Naha-al-Mee, a woman born in Tyr lower class that rose to power thanks to her quick thinking and even quicker drawing skills."
+					]
+				}
+			],
+			"skill": {
+				"athletics": "+3",
+				"intimidation": "+2"
+			},
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Jy’Ahlkar makes two crossbow attacks or two club attacks."
+					]
+				},
+				{
+					"name": "Club",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Rapid Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 80/320 ft., one target. {@h}7 ({@damage 1d8 + 2}) piercing damage. A rapid crossbow can fire 5 shots before needing to be reloaded."
+					]
+				},
+				{
+					"name": "Volley",
+					"entries": [
+						"The Jy’Ahlkar can make a ranged attack against any number of creatures within 10 feet of a point he can see within his crossbow’s range. He must have ammunition for each target, as normal, and must make a separate attack roll for each target."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"reaction": [
+				{
+					"name": "Wall of Shields",
+					"entries": [
+						"When a Jy’Ahlkar is within 5ft of another Jy’Ahlkar, they can use their reaction to make a wall of shields. The involved Jy’Ahlkars gain a half cover (p.196 of Player’s Handbook). A Jy’Ahlkar must be wearing a tower shield to use this maneuvers."
+					]
+				}
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Templar Tyr Tyrian Iron Guard",
+			"size": "M",
+			"type": "humanoid",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"iron {@item half plate armor|phb}",
+						"{@item shield|phb}"
+					]
+				},
+				{
+					"ac": 16,
+					"from": [
+						"{@item studded leather armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d8 + 45",
+				"average": 113
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 16,
+			"int": 10,
+			"wis": 12,
+			"cha": 16,
+			"passive": 11,
+			"cr": "10",
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"Templars",
+					"Templars are the most feared people in the city states. Their power to accuse and imprison nearly anyone for any reason keeps the city dwellers in terror. Not surprisingly, templars tend to abuse the powers they have for their own personal gain which, so long as the city is administered and kept in order, does not bother the sorcerer-king. Templars perform three vital functions within a given city state. Primarily, they comprise the city guards and officers of the sorcerer-king's armies. Secondly, they see to it that the city is administered, its businesses kept running, and its slaves fed. Finally, the templars are responsible for maintaining the illusion that the sorcerer-king is a god—they have absolute power to enforce worship and homage to the sorcerer-kings. Every templar NPC will be actively pursuing one of these functions. One final, unwritten function of the templars is to advance through their ranks as rapidly as possible. The means by which a templar might gain power and position are wide open, including bribery, theft, and even assassination of others within their ranks. Every templar NPC can be counted on to accept underhanded schemes that will help him rise to power among his fellows.",
+					"In the administration of the city states, templar NPCs occupy all positions from waste removal to the mayorship. Lower-Ranked templars (levels 1-4) are given the dirtier jobs tkat require hands-on work, having a few guards at their disposal and fewer slave laborers than tkey need to perform their tasks effectively. Ranked templars (levels 5-8) gain greater responsibilities and may have several lower- ranked templars beneath them. High- Ranked templars (levels 9 and higher) move into management of the city state— such templars are difficult to unseat, since they can blame nearly any shortcomings on their underlings.",
+					"These are only a sampling of the many levels of templar bureaucracy. Advancement through the ranks has little to do with ability or experience. Technically, the sorcerer-king is a god within his own city and the templars assure him of worship and obedience. In actuality, a sorcerer-king is not a god or a demigod, though he is generally an extremely powerful wizard and psionicist. However, the templars erect temples and subjugate the populations to worship him. There isn't a noble, merchant, or peasant in a city state who doesn't at least pay lip service to the sorcerer-king or the templars who enforce his will.",
+					"The DM must keep two things in mind when dealing with any particular templar NPC. First, how will the templar attempt to use the player characters to gain advantage? He could accuse or imprison them, which always looks good in the eyes of a superior, or he could buy their services to perform a task suck as assassination or simply making a superior look bad. Second, the DM must consider how the player characters might appeal to the templar's wicked ways and greed. In their quest for power, they are sometimes easily manipulated. Beware, though—higher-ranked templars have played these games of treachery before and, by their very existence, they've proven pretty good at them.",
+					"Duties and Auhtority",
+					"Templar soldiers are the enforcement arm of their service to the sorcerer-king. Low-Ranked templars (levels 1-4) are common soldiers, guards within the cities around the slave areas practiced and drilled in formations around the city walls. Ranked templars (levels 5-8) are officers in charge of small (10-100 man) units of guards, slave soldiers, or undead soldiers (in times of war). High-Ranked templars (levels 9 +) are usually generals or administrators, keeping the army equipped and fed.",
+					"Tyr",
+					"The Royal Guard consists of two thousand mercenaries led by five hundred half-giants and Kalak's loyal templars. In fact, the latter are all armed with steel swords. Tyr military strength is renowned, if not as impressive as her rival of Urik, for the city can muster impressive armies in case of open conflict. The city walls are defended by the Jy’Ahlkar, lightly armored mercenaries using fast shooting crossbows and wood tower shield to fight in packed units. The finest of Tyr are the Iron Guard, an elite corp claded in iron armors, commanded by the most trusted advisors of King Kalak’s himself. Tyr’s Templars rule the city with an iron fist, crushing any sign of rebellion in blood and sending the survivors to the slave pits where they are worked to death in quarries, completing the last pieces of the stone work for Kalak’s ziggourat. Kalak also rely on a network of spies and assassasins known to use alchemical bombs and poisons to eliminate the enemies of the state, this feared killers are known as the Alkatesh."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/foVQjdI.png"
+						}
+					}
+				]
+			},
+			"shortName": "Templar Tyr Tyrian Iron Guard",
+			"tokenUrl": "https://i.imgur.com/9YjDupC.png",
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"immune": [
+				{
+					"special": "disease"
+				}
+			],
+			"damageTags": [
+				"S",
+				"B"
+			],
+			"isNpc": true,
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"The iron guards are the chosen templar’s of Kalak, the symbol of Tyr military might. They are equipped with the best iron weapons and armors that the city can provide, and officers often wield rare magic weapons coming from Kalak’s vault. In Tyr, they represent the highest form of authority and are the trusted servants of the sorcerer-king. Due to the impracticality of metal armors under the searing sun of Athas, members of the iron guard seldom wear their iron armors during peaceful time, usually switching it for studded leather. Kalak gifted his Templars with powerful magic to complete their martial skills, few can stand their ground against a single iron guard but only an army can expect to overcome a unit of this fighters, boosting each other with their magic and empowering their strikes with deadly effects."
+					]
+				},
+				{
+					"name": "Aura of Hate",
+					"entries": [
+						"The templar, as well any fiends and undead within 30 feet of the templar, gains a +3 bonus to melee weapon damage rolls. A creature can benefit from this feature from only one templar at a time."
+					]
+				},
+				{
+					"name": "Improved Critical",
+					"entries": [
+						"The Templar weapon attacks score a critical hit on a roll of 19 or 20."
+					]
+				}
+			],
+			"save": {
+				"con": "+7",
+				"cha": "+7"
+			},
+			"skill": {
+				"athletics": "+8",
+				"intimidation": "+7"
+			},
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons"
+				}
+			],
+			"conditionImmune": [
+				"frightened"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The templar is a 15th level spellcaster. Its spellcasting ability is Intelligence (spell {@dc 15}, +7 to hit with spell attacks). The templar has the Spellcasting Ability=INT",
+						"Global Magic Attack Modifier=7",
+						"Magic Caster Level=15",
+						"Spell Save DC Mod=15"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell command}",
+								"{@spell compelled duel}",
+								"{@spell thunderous smite}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell aid}",
+								"{@spell branding smite}",
+								"{@spell crown of madness}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell aura of vitality}",
+								"{@spell elemental weapon}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell aura of purity}",
+								"{@spell staggering smite}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The templar makes two attacks with its battleaxe; or two attacks with his berdiche; or two handaxe throw."
+					]
+				},
+				{
+					"name": "Steel Berdiche",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d6 + 7}) slashing damage."
+					]
+				},
+				{
+					"name": "Steel Battleaxe",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}12 ({@damage 1d8 + 7}) slashing damage."
+					]
+				},
+				{
+					"name": "Steel Handaxe",
+					"entries": [
+						"{@atk mw,rw} {@hit 8} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}10 ({@damage 1d6 + 7}) slashing damage in melee, or 10 ({@damage 1d6 + 7}) slashing damage at range."
+					]
+				},
+				{
+					"name": "Shield Bash",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d4 + 7}) bludgeoning damage. If the target is a Medium or smaller creature, it must succeed on a {@dc 16} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"The Templar adds 3 to its AC against one melee attack that would hit it. To do so the iron guard must see the attacker and be wielding a melee weapon."
+					]
+				}
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Templar Tyr Alkatesh",
+			"size": "M",
+			"type": {
+				"type": "aberration",
+				"tags": [
+					"human"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d8 + 36",
+				"average": 90
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 14,
+			"dex": 20,
+			"con": 16,
+			"int": 16,
+			"wis": 12,
+			"cha": 8,
+			"passive": 14,
+			"cr": "8",
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"Templars",
+					"Templars are the most feared people in the city states. Their power to accuse and imprison nearly anyone for any reason keeps the city dwellers in terror. Not surprisingly, templars tend to abuse the powers they have for their own personal gain which, so long as the city is administered and kept in order, does not bother the sorcerer-king. Templars perform three vital functions within a given city state. Primarily, they comprise the city guards and officers of the sorcerer-king's armies. Secondly, they see to it that the city is administered, its businesses kept running, and its slaves fed. Finally, the templars are responsible for maintaining the illusion that the sorcerer-king is a god—they have absolute power to enforce worship and homage to the sorcerer-kings. Every templar NPC will be actively pursuing one of these functions. One final, unwritten function of the templars is to advance through their ranks as rapidly as possible. The means by which a templar might gain power and position are wide open, including bribery, theft, and even assassination of others within their ranks. Every templar NPC can be counted on to accept underhanded schemes that will help him rise to power among his fellows.",
+					"In the administration of the city states, templar NPCs occupy all positions from waste removal to the mayorship. Lower-Ranked templars (levels 1-4) are given the dirtier jobs tkat require hands-on work, having a few guards at their disposal and fewer slave laborers than tkey need to perform their tasks effectively. Ranked templars (levels 5-8) gain greater responsibilities and may have several lower- ranked templars beneath them. High- Ranked templars (levels 9 and higher) move into management of the city state— such templars are difficult to unseat, since they can blame nearly any shortcomings on their underlings.",
+					"These are only a sampling of the many levels of templar bureaucracy. Advancement through the ranks has little to do with ability or experience. Technically, the sorcerer-king is a god within his own city and the templars assure him of worship and obedience. In actuality, a sorcerer-king is not a god or a demigod, though he is generally an extremely powerful wizard and psionicist. However, the templars erect temples and subjugate the populations to worship him. There isn't a noble, merchant, or peasant in a city state who doesn't at least pay lip service to the sorcerer-king or the templars who enforce his will.",
+					"The DM must keep two things in mind when dealing with any particular templar NPC. First, how will the templar attempt to use the player characters to gain advantage? He could accuse or imprison them, which always looks good in the eyes of a superior, or he could buy their services to perform a task suck as assassination or simply making a superior look bad. Second, the DM must consider how the player characters might appeal to the templar's wicked ways and greed. In their quest for power, they are sometimes easily manipulated. Beware, though—higher-ranked templars have played these games of treachery before and, by their very existence, they've proven pretty good at them.",
+					"Duties and Auhtority",
+					"Templar soldiers are the enforcement arm of their service to the sorcerer-king. Low-Ranked templars (levels 1-4) are common soldiers, guards within the cities around the slave areas practiced and drilled in formations around the city walls. Ranked templars (levels 5-8) are officers in charge of small (10-100 man) units of guards, slave soldiers, or undead soldiers (in times of war). High-Ranked templars (levels 9 +) are usually generals or administrators, keeping the army equipped and fed.",
+					"Tyr",
+					"The Royal Guard consists of two thousand mercenaries led by five hundred half-giants and Kalak's loyal templars. In fact, the latter are all armed with steel swords. Tyr military strength is renowned, if not as impressive as her rival of Urik, for the city can muster impressive armies in case of open conflict. The city walls are defended by the Jy’Ahlkar, lightly armored mercenaries using fast shooting crossbows and wood tower shield to fight in packed units. The finest of Tyr are the Iron Guard, an elite corp claded in iron armors, commanded by the most trusted advisors of King Kalak’s himself. Tyr’s Templars rule the city with an iron fist, crushing any sign of rebellion in blood and sending the survivors to the slave pits where they are worked to death in quarries, completing the last pieces of the stone work for Kalak’s ziggourat. Kalak also rely on a network of spies and assassasins known to use alchemical bombs and poisons to eliminate the enemies of the state, this feared killers are known as the Alkatesh."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/XtytaMg.png"
+						}
+					}
+				]
+			},
+			"shortName": "Templar Tyr Alkatesh",
+			"tokenUrl": "https://i.imgur.com/dp7CL6m.png",
+			"languages": [
+				"Common",
+				"Deep Speech"
+			],
+			"languageTags": [
+				"C",
+				"DS"
+			],
+			"immune": [
+				"poison",
+				{
+					"special": "disease"
+				}
+			],
+			"damageTags": [
+				"S",
+				"P",
+				"I",
+				"F"
+			],
+			"isNpc": true,
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Assassins, alchemist, spies, there are many labels that can be put on the feared akatesh but only one thing that really matters to Tyr’s denizen : once you see once, death follow soon after. When an influencial noble displeases King Kalak, when a powerful Templar fall out of the king’s grace, the sorcerer-king send one or several alkatesh to take care of the problem. The rumor is that the alkatesh pale complexion come from the fact that they spend most of their time in the Under-Tyr or even lower in the belly of the earth. They are able to see without light and their eyes are colorless and veiled. They live their lives in toxic caves, forgotten temples or endless underground maze, walking them silently until they hear the summoning of the king. Few know how Kalak’s gained the loyalty of this corrupted beings, but many connect their first appearance with the beginning of the construction of Kalak’s Ziggurat. Alkatesh live out of the templar’s structure, they do not hold real political power in Tyr and are unfit to take any official position."
+					]
+				},
+				{
+					"name": "Cunning Action",
+					"entries": [
+						"On each of its turns, the alkatesh can use a bonus action to take the Dash, Disengage, or Hide action."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"If an alkatesh makes a successful Dexterity saving throw against an attack that normally deals half damage on a successful save, he instead takes no damage, and only half damage if he fails."
+					]
+				},
+				{
+					"name": "Sneak Attack (1/Turn)",
+					"entries": [
+						"The alkatesh deals an extra 20 ({@damage 6d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the alkatesh that isn't incapacitated and the alkatesh doesn't have disadvantage on the attack roll."
+					]
+				}
+			],
+			"save": {
+				"dex": "+7",
+				"int": "+7"
+			},
+			"conditionImmune": [
+				"blinded",
+				"poisoned"
+			],
+			"senses": [
+				"blindsight 30 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"skill": {
+				"acrobatics": "+11",
+				"athletics": "+5",
+				"stealth": "+11",
+				"perception": "+4"
+			},
+			"traitTags": [
+				"Sneak Attack"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The alkatesh makes two attacks with its claw; or two attacks with its darts."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Dart",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 20/60 ft., one target. {@h}7 ({@damage 1d4 + 5}) piercing damage and the target must succeed on a {@dc 15} Constitution saving throw or become {@condition poisoned} for one minute. The {@condition poisoned} creature takes 7 ({@damage 2d6}) poison damage at the beginning of its turn. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Alchemical Bomb {@recharge 5}",
+					"entries": [
+						"The alkatesh can throw a bomb within 20ft, making a ranged attack ({@hit 8} to hit) weapon against a creature or an area. On a hit the effect is centered on the landing creature or area, the alkatesh can choose one of the following effect: ",
+						"Incendiary Bomb. The fiery explosing inflict 20 ({@damage 6d6}) fire damage in a 15ft radius, a succeeded {@dc 15} Dexterity check reduces damage by half. Creatures starting their turn in the area or entering the area suffer {@damage 2d6} fire damage. The area burn for one minute and will set on fire flammable materials nearby. ",
+						"Poison Bomb. A 20 foot radius area fills with poisonous gas for one minute. Each creature starting its turn in the area or entering it must make a {@dc 15} Constitution saving throw, taking 17 ({@damage 5d6}) poison damage on a failed one, or half as much damage on a successful one. A moderate wind (at least 10 miles per hour) disperses the poison gas in 4 rounds; a strong wind (20 or more miles per hour) disperse it in 1 round. ",
+						"Smoke Bomb. The bomb emits a cloud of smoke that creates a heavily obscured area in a 20ft radius. A moderate wind (at least 10 miles per hour) disperses the poison gas in 4 rounds; a strong wind (20 or more miles per hour) disperse it in 1 round."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"reaction": [
+				{
+					"name": "Uncanny Dodge",
+					"entries": [
+						"When an attacker hits the alkatesh with an attack he can use his reaction to half the damage, provided he isn’t {@condition blinded} and {@condition deafened}."
 					]
 				}
 			]
