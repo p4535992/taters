@@ -32272,6 +32272,278 @@
 			"miscTags": [
 				"MW"
 			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Thrax (versions 2)",
+			"size": "M",
+			"type": "undead",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 20",
+				"average": 65
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 16,
+			"con": 14,
+			"int": 12,
+			"wis": 12,
+			"cha": 8,
+			"passive": 11,
+			"cr": "4",
+			"shortName": "Thrax (versions 2)",
+			"environment": [
+				"mountain",
+				"underdark",
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"A Thrax is a dreadful creature that exists by draining the water from its victims. The thrax is very intelligent and is an implacable foe.",
+					"The thrax is humanoid in appearance with a ruddy tinge to its skin. It has dark hair and pointed ears, but it will never be mistaken for an elf. Its features are gaunt and angular, and the eyes of a thrax are a deep blue, like a pool of water. The thrax is a muscular creature; it has long thin arms and fingers that end in small suckers.",
+					"The thrax is an unfortunate creature that can be found anywhere. Since the corpse of a thrax victim is unmistakable, thrax are not common in cities or villages, at least not for long. They usually leave as soon as they discover their curse, or else they are hunted down and wiped out. Outside the villages, they lead solitary anguished lives. The thrax remembers what he was like before the change, but he cannot help himself. He is driven to try to survive. At first, the new thrax may even retain his original alignment, perhaps resolving to feed on animals instead of intelligent beings. However, the curse continues to work, and after a few months, feeding is the only thing that matters. He also begins to hate those who have not suffered his curse, especially humans and demi-humans."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/JCvox7t.png"
+						}
+					}
+				]
+			},
+			"languages": [
+				"any languages it knew it in life"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"save": {
+				"dex": "+5",
+				"wis": "+3"
+			},
+			"skill": {
+				"stealth": "+6"
+			},
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons"
+				},
+				{
+					"resist": [
+						"necrotic"
+					]
+				}
+			],
+			"vulnerable": [
+				"radiant"
+			],
+			"tokenUrl": "https://i.imgur.com/zQMoitH.png",
+			"trait": [
+				{
+					"name": "Create Thrax",
+					"entries": [
+						"A humanoid that takes damage from a thrax’s water drain ability must make a {@dc 14} Constitution saving throw or slowly become a thrax. The creature suffers intense thirst and requires double its normal water intake, becoming a thrax after {@dice 1d4} weeks. A remove curse spell prevents transformation if cast before the end of this time."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The thrax regains 10 hit points at the start of its turn if it has at least 1 hit point and isn’t in sunlight. If the thrax takes radiant damage or damage from holy water, this trait doesn't function at the start of the thrax’s next turn."
+					]
+				}
+			],
+			"traitTags": [
+				"Regeneration"
+			],
+			"action": [
+				{
+					"name": "Water Drain",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) necrotic damage. The target must succeed on a {@dc 14} Constitution saving throw or its hit point maximum is reduced by an amount equal to the necrotic damage taken. This reduction lasts until the target finishes drinks at least a full day worth of water and take a long rest. The target dies if this effect reduces its hit point maximum to 0."
+					]
+				}
+			],
+			"damageTags": [
+				"N"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Thrax",
+			"size": "M",
+			"type": "undead",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 30",
+				"average": 75
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 20,
+			"con": 16,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 13,
+			"cr": "5",
+			"shortName": "Thrax",
+			"environment": [
+				"mountain",
+				"underdark",
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"Potable water is a valuable commodity",
+					"on Athas. Only the sorcerer-kings' favored nobles govern outlying sources of fresh water, and they employ military forces to keep interlopers at bay. New recruits in these patrols laugh behind the backs of grizzled veterans who whisper of thraxes-water vampires. The recruits mock the old soldiers for bringing plump hogs on lead ropes with them as they make their late night rounds. It is only a matter of time, though, before the young upstarts awaken one dawn to find a friend's mummified corpse curled up outside.",
+					"Lore",
+					"Ruins litter the Tyr Region, each speaking to a society lost to calamity, war, or plague. The town of Gerot, nestled beneath a mountain range northeast of Raam, met with a particularly unpalatable end. According to legend, Gerot's people were great warriors, haughty and proud. They impressed Grand Vizier Abalach-Re, who offered the mountain community an alliance if its fighters would join Raam's legions. In their arrogance, the Gerotians declined, and they killed Abalach-Re's envoys. Enraged, the sorcerer-queen unleashed a vicious curse against Gerot's populace. The townsfolk were struck with an unquenchable thirst. The twisted brilliance behind her curse was that life-sustaining, pure water would bring death to any Gerotian. Within days, the entire town had died. What Abalach-Re hadn't expected was that every cursed Gerotian would rise in undeath, becoming the first thraxes.",
+					"Encounters",
+					"Insatiable thirst drives a thrax to hunt the living. The water vampire extracts fluids from the flesh of its victims. It's said to be an agonizing death. The distinctive cadavers are clearly the work of a thrax. Fearing retribution, the undead predator flees. A thrax wanders alone in parched misery. It loathes the monster it has become, but it cannot stop; its thirst is unbearable. Some thraxes seek revenge on Abalach-Re, and they haunt Raam and drink the sorcerer-queen's supporters dry. Because the corpse of a thrax victim is so easily recognized, few thrax live in cities or villages. Instead, they haunt the wastelands, oasis, and trade routes.",
+					"Info",
+					"Victims of an ancient curse, thrax are wretched creatures that can only survive by draining water from the bodies of others, leaving them desiccated corpses. A thrax's appearance is very different than what it was before \"the change.\" Its hair darkens and its skin takes on a ruddy tinge. Its facial features develop a gaunt, angular cast and its eyes become a deep blue. The most striking change is in its hands. Each of the thrax's fingers grows a circular \"sucker\" through which it drains water from its victims."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/IC311RD.png"
+						}
+					}
+				]
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"skill": {
+				"stealth": "+11",
+				"perception": "+3"
+			},
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons"
+				},
+				{
+					"resist": [
+						"necrotic"
+					]
+				}
+			],
+			"vulnerable": [
+				"radiant"
+			],
+			"tokenUrl": "https://i.imgur.com/f6PUcbq.png",
+			"damageTags": [
+				"N"
+			],
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"trait": [
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The thrax regains 10 hit points at the start of its turn if it has at least 1 hit point and isn't in sunlight. If the thrax takes radiant damage or damage from holy water, this trait doesn't function at the start of the thrax's next turn."
+					]
+				},
+				{
+					"name": "Create Thrax",
+					"entries": [
+						"A humanoid that takes damage from a thrax‘s water drain ability must make a {@dc 14} Constitution saving throw or slowly become a thrax. The creature suffers intense thirst and requires double its normal water intake, becoming a thrax after {@dice 1d4} weeks. A remove curse spell prevents transformation if cast before the end of this time."
+					]
+				}
+			],
+			"traitTags": [
+				"Regeneration"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Psionics)",
+					"headerEntries": [
+						"The trhax's innate spellcasting ability is Constitution (spell save {@dc 14}). The thrax can innately cast the following spells, requiring no material components.",
+						"Spellcasting Ability=CON",
+						"Global Magic Attack Modifier=0",
+						"Magic Caster Level=0",
+						"Spell Save DC Mod=14"
+					],
+					"daily": {
+						"2e": [
+							"{@spell dissonant whispers}",
+							"{@spell pass without trace}",
+							"{@spell protection from energy}"
+						]
+					},
+					"ability": "con",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"P",
+				"I"
+			],
+			"action": [
+				{
+					"name": "Water Drain",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}23 ({@damage 4d8 + 5}) necrotic damage. The target must succeed on a {@dc 14} Constitution saving throw or its hit point maximum is reduced by an amount equal to the necrotic damage taken. This reduction lasts until the target finishes drinks at least a full day worth of water and take a long rest. The target dies if this effect reduces its hit point maximum to 0."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			]
 		}
 
 
