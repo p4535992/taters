@@ -31235,6 +31235,1043 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Tari",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"tari"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d8 - 4",
+				"average": 14
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 9,
+			"int": 9,
+			"wis": 14,
+			"cha": 6,
+			"passive": 12,
+			"cr": "1/4",
+			"shortName": "Tari",
+			"isNpc": true,
+			"fluff": {
+				"entries": [
+					"Lore",
+					"The other denizens of the Tyr region commonly refer to the tari as ratmen. They are small, furry humanoid scavengers, capable of thriving on food and water too polluted for humans to ingest. Bunted freely as pests, the tari are the barbaric descendants of a once thriving culture who inhabited lands to the south of the Tyr region.",
+					"The lives of the urban and wilderness tari are quite different, though their tactics for the kill are universal. Both travel in packs, but their approaches to survival are quite different.",
+					"The urban tari are denizens of the sewers and garbage heaps. The small, furry thieves scour the buildings, scurrying up walls and through windows, stealing everything they can. They are not particularly good thieves, making a lot of noise, upsetting tables and toppling chairs in their clumsy approach. However, not work for children, a warrior can earn a good living hunting tari, earning about eight ceramic pieces a head.",
+					"The wilderness, however, is not so kind. Wasteland tari are nomadic scavengers, scouting miles in all directions to find the richest grounds, contending with the desert’s other creatures for the little food to be had.",
+					"Wilderness tari move their few belongings and families in triangular frames of leather and wooden poles. These frames are piled with belongings and dragged along the ground.",
+					"The tari race once boasted a thriving culture far to the south of the Tyr region. Ythri, the legendary capital city, is now a ruin lost among the crags. Their education and knowledge was much greater than today and their technology allowed them to build stone and concrete structures. What happened to their civilization is a mystery. The tari of the Tyr region have no written history. What remains is a collection of exaggerated myths and legends describing wondrous works.",
+					"Two glands set deep in the jaw produce their disease-causing venom. Each bite produces a flow of venom that sprays from two openings to either side of the main canines. Retrieving the glands from fallen tari is a difficult and dangerous task, but the deadly properties of their contents makes them valuable to the alchemists and bards of the cities. A pair of tari disease glands can bring as much as 12 ceramic bits in the larger cities.",
+					"Tari Animal Handler",
+					"Occasionally, tari use pack animals, such as inix or crodlu. Corralling such a beast can take an entire pack and cost many tari lives. Tari animal handlers are very rare, but can become very important to the wilderness packs."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/kA63V3B.png"
+						}
+					}
+				]
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Tari"
+			],
+			"save": {
+				"dex": "+4",
+				"wis": "+4"
+			},
+			"skill": {
+				"stealth": "+6"
+			},
+			"resist": [
+				"poison"
+			],
+			"environment": [
+				"coastal",
+				"desert",
+				"urban"
+			],
+			"tokenUrl": "https://i.imgur.com/3pLRhHq.png",
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The Tari has advantage on an attack roll against a creature if at least on eof the Tari’s allies is within S feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				}
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"action": [
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage, or 6 ({@damage 1d8 + 2}) piercing damage if used with both hands."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage. If the target is a creature, it must succeed on a {@dc 12} Constitution saving throw against disease or become {@condition poisoned} until the disease is cured. Every 24 hours that elapse, the target must repeat the saving throw, reducing its hit point maximum by 3 ({@dice 1d6}) on a failure. The disease is cured on a success. The target dies if the disease reduces its hit point maximum to 0. This reduction to the target's hit point maximum lasts until the disease is cured."
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"poisoned"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Tari Chieftan",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"tari"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d8",
+				"average": 22
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 10,
+			"int": 9,
+			"wis": 15,
+			"cha": 8,
+			"passive": 12,
+			"cr": "1",
+			"shortName": "Tari Chieftan",
+			"isNpc": true,
+			"fluff": {
+				"entries": [
+					"Lore",
+					"The other denizens of the Tyr region commonly refer to the tari as ratmen. They are small, furry humanoid scavengers, capable of thriving on food and water too polluted for humans to ingest. Bunted freely as pests, the tari are the barbaric descendants of a once thriving culture who inhabited lands to the south of the Tyr region.",
+					"The lives of the urban and wilderness tari are quite different, though their tactics for the kill are universal. Both travel in packs, but their approaches to survival are quite different.",
+					"The urban tari are denizens of the sewers and garbage heaps. The small, furry thieves scour the buildings, scurrying up walls and through windows, stealing everything they can. They are not particularly good thieves, making a lot of noise, upsetting tables and toppling chairs in their clumsy approach. However, not work for children, a warrior can earn a good living hunting tari, earning about eight ceramic pieces a head.",
+					"The wilderness, however, is not so kind. Wasteland tari are nomadic scavengers, scouting miles in all directions to find the richest grounds, contending with the desert’s other creatures for the little food to be had.",
+					"Wilderness tari move their few belongings and families in triangular frames of leather and wooden poles. These frames are piled with belongings and dragged along the ground.",
+					"The tari race once boasted a thriving culture far to the south of the Tyr region. Ythri, the legendary capital city, is now a ruin lost among the crags. Their education and knowledge was much greater than today and their technology allowed them to build stone and concrete structures. What happened to their civilization is a mystery. The tari of the Tyr region have no written history. What remains is a collection of exaggerated myths and legends describing wondrous works.",
+					"Two glands set deep in the jaw produce their disease-causing venom. Each bite produces a flow of venom that sprays from two openings to either side of the main canines. Retrieving the glands from fallen tari is a difficult and dangerous task, but the deadly properties of their contents makes them valuable to the alchemists and bards of the cities. A pair of tari disease glands can bring as much as 12 ceramic bits in the larger cities.",
+					"Tari Animal Handler",
+					"Occasionally, tari use pack animals, such as inix or crodlu. Corralling such a beast can take an entire pack and cost many tari lives. Tari animal handlers are very rare, but can become very important to the wilderness packs."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/wxWpTyr.png"
+						}
+					}
+				]
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Tari",
+				"Common",
+				"telepathy 120 ft."
+			],
+			"save": {
+				"dex": "+4",
+				"wis": "+4"
+			},
+			"skill": {
+				"stealth": "+6"
+			},
+			"resist": [
+				"poison"
+			],
+			"environment": [
+				"coastal",
+				"desert",
+				"urban"
+			],
+			"tokenUrl": "https://i.imgur.com/TKS7Gy1.png",
+			"damageTags": [
+				"P"
+			],
+			"languageTags": [
+				"C",
+				"TP"
+			],
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The Tari has advantage on an attack roll against a creature if at least on eof the Tari’s allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				}
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Tari Chieftain makes two attacks, but only one can be bite."
+					]
+				},
+				{
+					"name": "Bone Sword",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage. If the target is a creature, it must succeed on a {@dc 12} Constitution saving throw against disease or become {@condition poisoned} until the disease is cured. Every 24 hours that elapse, the target must repeat the saving throw, reducing its hit point maximum by 3 ({@dice 1d6}) on a failure. The disease is cured on a success. The target dies if the disease reduces its hit point maximum to 0. This reduction to the target's hit point maximum lasts until the disease is cured."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"poisoned"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Tari Animal Handler",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"tari"
+				]
+			},
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d8",
+				"average": 18
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 14,
+			"con": 10,
+			"int": 9,
+			"wis": 14,
+			"cha": 8,
+			"passive": 12,
+			"cr": "1/2",
+			"shortName": "Tari Animal Handler",
+			"isNpc": true,
+			"fluff": {
+				"entries": [
+					"Lore",
+					"The other denizens of the Tyr region commonly refer to the tari as ratmen. They are small, furry humanoid scavengers, capable of thriving on food and water too polluted for humans to ingest. Bunted freely as pests, the tari are the barbaric descendants of a once thriving culture who inhabited lands to the south of the Tyr region.",
+					"The lives of the urban and wilderness tari are quite different, though their tactics for the kill are universal. Both travel in packs, but their approaches to survival are quite different.",
+					"The urban tari are denizens of the sewers and garbage heaps. The small, furry thieves scour the buildings, scurrying up walls and through windows, stealing everything they can. They are not particularly good thieves, making a lot of noise, upsetting tables and toppling chairs in their clumsy approach. However, not work for children, a warrior can earn a good living hunting tari, earning about eight ceramic pieces a head.",
+					"The wilderness, however, is not so kind. Wasteland tari are nomadic scavengers, scouting miles in all directions to find the richest grounds, contending with the desert’s other creatures for the little food to be had.",
+					"Wilderness tari move their few belongings and families in triangular frames of leather and wooden poles. These frames are piled with belongings and dragged along the ground.",
+					"The tari race once boasted a thriving culture far to the south of the Tyr region. Ythri, the legendary capital city, is now a ruin lost among the crags. Their education and knowledge was much greater than today and their technology allowed them to build stone and concrete structures. What happened to their civilization is a mystery. The tari of the Tyr region have no written history. What remains is a collection of exaggerated myths and legends describing wondrous works.",
+					"Two glands set deep in the jaw produce their disease-causing venom. Each bite produces a flow of venom that sprays from two openings to either side of the main canines. Retrieving the glands from fallen tari is a difficult and dangerous task, but the deadly properties of their contents makes them valuable to the alchemists and bards of the cities. A pair of tari disease glands can bring as much as 12 ceramic bits in the larger cities.",
+					"Tari Animal Handler",
+					"Occasionally, tari use pack animals, such as inix or crodlu. Corralling such a beast can take an entire pack and cost many tari lives. Tari animal handlers are very rare, but can become very important to the wilderness packs."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/l2hq8Zv.png"
+						}
+					}
+				]
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Tari"
+			],
+			"save": {
+				"dex": "+4",
+				"wis": "+4"
+			},
+			"skill": {
+				"stealth": "+6",
+				"animal handling": "+6"
+			},
+			"resist": [
+				"poison"
+			],
+			"environment": [
+				"coastal",
+				"desert",
+				"urban"
+			],
+			"tokenUrl": "https://i.imgur.com/wzIOEb4.png",
+			"damageTags": [
+				"S",
+				"P"
+			],
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The Tari has advantage on an attack roll against a creature if at least on eof the Tari’s allies is within 5 feet of the creature and the ally isn’t {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Beast Training",
+					"entries": [
+						"The tari animal handler can have a bond with one or more beasts from the Monster Manual (usually inix or crodlu), as determined by the DM. The beast obeys the handler’s commands as best as it can, and takes its turn on the handler’s initiative order.",
+						"One it's turn, the handler can verbally command the beast where to move (with no action required on the master’s part). In place of one of its weapon attacks, the handler can command the beast to take the Attack action.",
+						"As a bonus action, the handler can command the beast to take the Dash, Disengage, Dodge, or Help action. It takes attacks of opportunity and other reactions without needing the handler’s command."
+					]
+				}
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"action": [
+				{
+					"name": "Whip",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) slashing damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage. If the target is a creature, it must succeed on a {@dc 12} Constitution saving throw against disease or become {@condition poisoned} until the disease is cured. Every 24 hours that elapse, the target must repeat the saving throw, reducing its hit point maximum by 3 ({@dice 1d6}) on a failure. The disease is cured on a success. The target dies if the disease reduces its hit point maximum to 0. This reduction to the target's hit point maximum lasts until the disease is cured."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"poisoned"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Tembo (versions 2)",
+			"size": "M",
+			"type": "beast",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 18",
+				"average": 45
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 16,
+			"dex": 18,
+			"con": 16,
+			"int": 13,
+			"wis": 14,
+			"cha": 12,
+			"passive": 16,
+			"cr": "3",
+			"shortName": "Tembo (versions 2)",
+			"isNpc": true,
+			"tokenUrl": "https://i.imgur.com/0hcrgxY.png",
+			"environment": [
+				"forest",
+				"hill",
+				"mountain"
+			],
+			"fluff": {
+				"entries": [
+					"The tembo is a savage predator that will eat anything, but it prefers the children of sentient races. Tembo base themselves in a lair or den and hunt in packs throughout the surrounding wilderness. They have also been known to inhabit the ruins that lie beneath many of the large cities of the Tablelands.",
+					"In addition to their physical speed and strength, tembo also boast psionic powers and the ability to drain the life energy of their victims. Few are those souls that can brave and endure a den of Tembo.",
+					"Tembo are universally hated and despised because of their preference for young humanoids. Tembo are famous for sneaking into nomadic camps to drag off Elven children, for skulking about Dwarven villages prowling for untended toddlers, even for sneaking into populated cities to snatch noble babes from their cradles."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/aY2rPRl.png"
+						}
+					}
+				]
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"save": {
+				"dex": "+6",
+				"int": "+3"
+			},
+			"skill": {
+				"stealth": "+8",
+				"perception": "+6"
+			},
+			"resist": [
+				"psychic"
+			],
+			"trait": [
+				{
+					"name": "Pounce",
+					"entries": [
+						"If the tembo moves at least 20 feet straight toward a creature and then hits it with two claw attacks on the same turn, that target must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the lion can make one bite attack against it as a bonus action."
+					]
+				}
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"traitTags": [
+				"Pounce"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Tembo makes one bite attack or one claw attack."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Chameleon",
+					"entries": [
+						"Tembo can attempt to hide even if it fail to meet the requirements needed to do so. At the end of the current turn, tembo remain hidden only if it then meet the normal requirements for hiding. "
+					]
+				},
+				{
+					"name": "Psychic Blast {@recharge 5}",
+					"entries": [
+						"Tembo unleashed devastating psychic energy in a 60-foot cone. Each creature in that area must make an {@dc 13} Intelligence saving throw, taking 26 ({@damage 6d8}) psychic damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S",
+				"P",
+				"Y"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Tembo",
+			"size": "L",
+			"type": "monstrosity",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d10 + 30",
+				"average": 85
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 20,
+			"dex": 16,
+			"con": 16,
+			"int": 13,
+			"wis": 12,
+			"cha": 15,
+			"passive": 13,
+			"cr": "6",
+			"shortName": "Tembo",
+			"isNpc": true,
+			"tokenUrl": "https://i.imgur.com/RUvN946.png",
+			"environment": [
+				"forest",
+				"hill",
+				"mountain"
+			],
+			"fluff": {
+				"entries": [
+					"Tembos are vestiges from the cleansing wars",
+					"The Champions created these merciless predators to aid in their genocidal struggle. Tembos were designed to sniffout and snatch those most loved by their masters' opponents. Tembos survived even after war or old age claimed their creators, and they are universally hated across the Tyr Region.",
+					"Lore",
+					"Nothing ends a disagreement in a Tyrian settlement as quickly as the rumor of a tembo approaching. Everyone, regardless of race, culture, or prejudices, despises tembos. A real-life bogeyman, the tembo creeps under the blanket of night to steal away the beloved-brides and beaus, mothers and brothers. Even animal companions have been taken. A tembo kills for food and pleasure. Though intelligent and capable of speech, it shows no remorse, and its chilling laughter echoes through the soul.",
+					"The tembo is a savage predator that will eat anything, but it prefers the children of sentient races. Tembos base themselves in a lair or den and hunt in packs throughout the surrounding wilderness. They have also been known to inhabit the ruins that lie beneath many of the large cities of the Tablelands. In addition to their physical speed and Strength, tembos also boast psionic powers and the ability to drain the life energy of their victims. Few are those souls that can brave and endure a den of tembos.",
+					"Encounters",
+					"Many tembos roam the western wastelands, but a few have been sighted as far away as Draj and Balic. Sometimes, tembos gather in small packs for days at a time. Lacking cohesion and a pecking order, the packs dissolve quickly. A tembo prefers to be alone. Only Athas's most vile souls seem able to stomach using tembos as servants."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/W7nCa7T.png"
+						}
+					}
+				]
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"save": {
+				"dex": "+6",
+				"wis": "+4"
+			},
+			"skill": {
+				"stealth": "+9",
+				"perception": "+3"
+			},
+			"resist": [
+				"necrotic"
+			],
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Caprice rules a tembo. In one village, the dark beast might infiltrate a settlement, letting its deadly aura thin the population as it blends into the shadows. In another, the same tembo might spring at a passerby in a flurry of claws and fangs. It is fierce and quick and nearly impossible to catch. Townsfolk swear the creature fades away as soon as fighters attack."
+					]
+				},
+				{
+					"name": "Avoidance",
+					"entries": [
+						"If a tembo makes a successful Dexterity saving throw against an attack that normally deals half damage on a successful save, he instead takes no damage, and only half damage if he fails."
+					]
+				},
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"The tembo has advantage on Wisdom (Perception) checks that rely on smell."
+					]
+				},
+				{
+					"name": "Pounce",
+					"entries": [
+						"If the tembo moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the tembo can make one bite attack against it as a bonus action."
+					]
+				}
+			],
+			"damageTags": [
+				"P",
+				"N"
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Pounce"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Psionics)",
+					"headerEntries": [
+						"The tembo's innate spellcasting ability is Charisma (spell save {@dc 13}). The tembo can innately cast the following spells, requiring no material components.",
+						"Spellcasting Ability=CHA",
+						"Global Magic Attack Modifier=0",
+						"Magic Caster Level=0",
+						"Spell Save DC Mod=13"
+					],
+					"daily": {
+						"3e": [
+							"{@spell expeditious retreat}",
+							"{@spell invisibility}",
+							"{@spell pass without trace}"
+						],
+						"1e": [
+							"{@spell gaseous form}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"P",
+				"I"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The tembo makes three attacks, two with its claws and one with its bite."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d10 + 5}) piercing damage, plus 12 ({@damage 4d6}) necrotic damage. The target must succeed on a {@dc 14} Constitution saving throw or its hit point maximum is reduced by an amount equal to the necrotic damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Tembo Nightstalker",
+			"size": "M",
+			"type": "monstrosity",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 30",
+				"average": 75
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 16,
+			"dex": 20,
+			"con": 16,
+			"int": 14,
+			"wis": 12,
+			"cha": 15,
+			"passive": 14,
+			"cr": "5",
+			"shortName": "Tembo Nightstalker",
+			"isNpc": true,
+			"tokenUrl": "https://i.imgur.com/N42F9Nd.png",
+			"environment": [
+				"forest",
+				"hill",
+				"mountain"
+			],
+			"fluff": {
+				"entries": [
+					"Tembos are vestiges from the cleansing wars",
+					"The Champions created these merciless predators to aid in their genocidal struggle. Tembos were designed to sniffout and snatch those most loved by their masters' opponents. Tembos survived even after war or old age claimed their creators, and they are universally hated across the Tyr Region.",
+					"Lore",
+					"Nothing ends a disagreement in a Tyrian settlement as quickly as the rumor of a tembo approaching. Everyone, regardless of race, culture, or prejudices, despises tembos. A real-life bogeyman, the tembo creeps under the blanket of night to steal away the beloved-brides and beaus, mothers and brothers. Even animal companions have been taken. A tembo kills for food and pleasure. Though intelligent and capable of speech, it shows no remorse, and its chilling laughter echoes through the soul.",
+					"The tembo is a savage predator that will eat anything, but it prefers the children of sentient races. Tembos base themselves in a lair or den and hunt in packs throughout the surrounding wilderness. They have also been known to inhabit the ruins that lie beneath many of the large cities of the Tablelands. In addition to their physical speed and Strength, tembos also boast psionic powers and the ability to drain the life energy of their victims. Few are those souls that can brave and endure a den of tembos.",
+					"Encounters",
+					"Many tembos roam the western wastelands, but a few have been sighted as far away as Draj and Balic. Sometimes, tembos gather in small packs for days at a time. Lacking cohesion and a pecking order, the packs dissolve quickly. A tembo prefers to be alone. Only Athas's most vile souls seem able to stomach using tembos as servants."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/V5wubNG.png"
+						}
+					}
+				]
+			},
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"save": {
+				"dex": "+8",
+				"wis": "+4"
+			},
+			"skill": {
+				"stealth": "+11",
+				"perception": "+4"
+			},
+			"resist": [
+				"necrotic"
+			],
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"A subspecies of tembo, the nightstalker has nothing to envy his cousin when it comes to sadism and deception. This nocturnal breed of tembo is smaller than their cousins, resembling a black panther with oversized fangs and a scaly hide on its back. They are sometimes mistaken from a distance for a displacer beast but lack their tentacles. Despite this difference the two species are sometimes know to cooperate, banding in small nomad pack. Apart from this rare alliances the nightstalker is a solitary creature who only seeks his kin to mate."
+					]
+				},
+				{
+					"name": "Avoidance",
+					"entries": [
+						"If a tembo makes a successful Dexterity saving throw against an attack that normally deals half damage on a successful save, he instead takes no damage, and only half damage if he fails."
+					]
+				},
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"The tembo has advantage on Wisdom (Perception) checks that rely on smell."
+					]
+				},
+				{
+					"name": "Shadow Form",
+					"entries": [
+						"The tembo enters the Ethereal Plane from the Material Plane, or vice versa with a bonus action. It is visible on the Material Plane while it is in the Border Ethereal, and vice versa, yet it can't affect or be affected by anything on the other plane."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the tembo has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Surprise Attack",
+					"entries": [
+						"If the tembo surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 13 ({@damage 4d6}) damage from the attack."
+					]
+				}
+			],
+			"damageTags": [
+				"P",
+				"N"
+			],
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Sunlight Sensitivity"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The tembo makes three attacks, two with its claws and one with its bite."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage, plus 12 ({@damage 4d6}) necrotic damage. The target must succeed on a {@dc 14} Constitution saving throw or its hit point maximum is reduced by an amount equal to the necrotic damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d4 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "One with Shadows",
+					"entries": [
+						"When the tembo is in an area of dim light or darkness, it can use its action to become {@condition invisible} until he takes an action or a reaction. To maintain the invisibility the tembo has to stay in a dim light or darkness area."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Tembo Alpha",
+			"size": "L",
+			"type": "monstrosity",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d10 + 64",
+				"average": 152
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 20,
+			"dex": 18,
+			"con": 18,
+			"int": 15,
+			"wis": 12,
+			"cha": 17,
+			"passive": 14,
+			"cr": "9",
+			"shortName": "Tembo Alpha",
+			"isNpc": true,
+			"tokenUrl": "https://i.imgur.com/7zTCTdu.png",
+			"environment": [
+				"forest",
+				"hill",
+				"mountain"
+			],
+			"fluff": {
+				"entries": [
+					"Tembos are vestiges from the cleansing wars",
+					"The Champions created these merciless predators to aid in their genocidal struggle. Tembos were designed to sniffout and snatch those most loved by their masters' opponents. Tembos survived even after war or old age claimed their creators, and they are universally hated across the Tyr Region.",
+					"Lore",
+					"Nothing ends a disagreement in a Tyrian settlement as quickly as the rumor of a tembo approaching. Everyone, regardless of race, culture, or prejudices, despises tembos. A real-life bogeyman, the tembo creeps under the blanket of night to steal away the beloved-brides and beaus, mothers and brothers. Even animal companions have been taken. A tembo kills for food and pleasure. Though intelligent and capable of speech, it shows no remorse, and its chilling laughter echoes through the soul.",
+					"The tembo is a savage predator that will eat anything, but it prefers the children of sentient races. Tembos base themselves in a lair or den and hunt in packs throughout the surrounding wilderness. They have also been known to inhabit the ruins that lie beneath many of the large cities of the Tablelands. In addition to their physical speed and Strength, tembos also boast psionic powers and the ability to drain the life energy of their victims. Few are those souls that can brave and endure a den of tembos.",
+					"Encounters",
+					"Many tembos roam the western wastelands, but a few have been sighted as far away as Draj and Balic. Sometimes, tembos gather in small packs for days at a time. Lacking cohesion and a pecking order, the packs dissolve quickly. A tembo prefers to be alone. Only Athas's most vile souls seem able to stomach using tembos as servants."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/GENxAaF.png"
+						}
+					}
+				]
+			},
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"save": {
+				"dex": "+8",
+				"wis": "+5",
+				"con": "+8"
+			},
+			"skill": {
+				"stealth": "+12",
+				"perception": "+4"
+			},
+			"resist": [
+				"necrotic"
+			],
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Bigger, meaner and with a powerful psionic arsenal, the tembo alpha is a challenge for any adventurer. This twisted predators leads their kin, acting as pack leader and scourging civilized land. The tembo alpha is dangerous enough as it’s, but mostly his cunning and cruelty are his best weapons. The tembo will go after loved ones, friends and contact to discourage a relentless hunter or even sometimes forcing inhabitants to give up their young ones to the pack."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"If a tembo makes a successful Dexterity saving throw against an attack that normally deals half damage on a successful save, he instead takes no damage, and only half damage if he fails."
+					]
+				},
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"The tembo has advantage on Wisdom (Perception) checks that rely on smell."
+					]
+				},
+				{
+					"name": "Pounce",
+					"entries": [
+						"If the tembo moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a {@dc 16} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the tembo can make one bite attack against it as a bonus action."
+					]
+				}
+			],
+			"damageTags": [
+				"P",
+				"N"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Pounce"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Psionics)",
+					"headerEntries": [
+						"The tembo's innate spellcasting ability is Charisma (spell save {@dc 15}). The tembo can innately cast the following spells, requiring no material components.",
+						"Spellcasting Ability=CHA",
+						"Global Magic Attack Modifier=0",
+						"Magic Caster Level=0",
+						"Spell Save DC Mod=15"
+					],
+					"daily": {
+						"3e": [
+							"{@spell expeditious retreat}",
+							"{@spell invisibility}",
+							"{@spell pass without trace}"
+						],
+						"2e": [
+							"{@spell gaseous form}",
+							"{@spell phantasmal killer}"
+						],
+						"1e": [
+							"{@spell eyebite}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"P",
+				"I"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The tembo makes three attacks, two with its claws and one with its bite."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d10 + 5}) piercing damage, plus 18 ({@damage 6d6}) necrotic damage. The target must succeed on a {@dc 16} Constitution saving throw or its hit point maximum is reduced by an amount equal to the necrotic damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0. Claws. Melee Weapons Attack: {@hit 8} to hit, reach 5ft, one target. {@h}12 ({@damage 2d6 + 5}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			]
 		}
 
 
