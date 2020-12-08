@@ -35290,6 +35290,455 @@
 			"actionTags": [
 				"Teleport"
 			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Templar Raam Mansabdar",
+			"size": "M",
+			"type": "humanoid",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 12",
+				"average": 39
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 13,
+			"con": 15,
+			"int": 10,
+			"wis": 9,
+			"cha": 12,
+			"passive": 9,
+			"cr": "1",
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"Templars",
+					"Templars are the most feared people in the city states. Their power to accuse and imprison nearly anyone for any reason keeps the city dwellers in terror. Not surprisingly, templars tend to abuse the powers they have for their own personal gain which, so long as the city is administered and kept in order, does not bother the sorcerer-king. Templars perform three vital functions within a given city state. Primarily, they comprise the city guards and officers of the sorcerer-king's armies. Secondly, they see to it that the city is administered, its businesses kept running, and its slaves fed. Finally, the templars are responsible for maintaining the illusion that the sorcerer-king is a god—they have absolute power to enforce worship and homage to the sorcerer-kings. Every templar NPC will be actively pursuing one of these functions. One final, unwritten function of the templars is to advance through their ranks as rapidly as possible. The means by which a templar might gain power and position are wide open, including bribery, theft, and even assassination of others within their ranks. Every templar NPC can be counted on to accept underhanded schemes that will help him rise to power among his fellows.",
+					"In the administration of the city states, templar NPCs occupy all positions from waste removal to the mayorship. Lower-Ranked templars (levels 1-4) are given the dirtier jobs tkat require hands-on work, having a few guards at their disposal and fewer slave laborers than tkey need to perform their tasks effectively. Ranked templars (levels 5-8) gain greater responsibilities and may have several lower- ranked templars beneath them. High- Ranked templars (levels 9 and higher) move into management of the city state— such templars are difficult to unseat, since they can blame nearly any shortcomings on their underlings.",
+					"These are only a sampling of the many levels of templar bureaucracy. Advancement through the ranks has little to do with ability or experience. Technically, the sorcerer-king is a god within his own city and the templars assure him of worship and obedience. In actuality, a sorcerer-king is not a god or a demigod, though he is generally an extremely powerful wizard and psionicist. However, the templars erect temples and subjugate the populations to worship him. There isn't a noble, merchant, or peasant in a city state who doesn't at least pay lip service to the sorcerer-king or the templars who enforce his will.",
+					"The DM must keep two things in mind when dealing with any particular templar NPC. First, how will the templar attempt to use the player characters to gain advantage? He could accuse or imprison them, which always looks good in the eyes of a superior, or he could buy their services to perform a task suck as assassination or simply making a superior look bad. Second, the DM must consider how the player characters might appeal to the templar's wicked ways and greed. In their quest for power, they are sometimes easily manipulated. Beware, though—higher-ranked templars have played these games of treachery before and, by their very existence, they've proven pretty good at them.",
+					"Duties and Auhtority",
+					"Templar soldiers are the enforcement arm of their service to the sorcerer-king. Low-Ranked templars (levels 1-4) are common soldiers, guards within the cities around the slave areas practiced and drilled in formations around the city walls. Ranked templars (levels 5-8) are officers in charge of small (10-100 man) units of guards, slave soldiers, or undead soldiers (in times of war). High-Ranked templars (levels 9 +) are usually generals or administrators, keeping the army equipped and fed.",
+					"Raam",
+					"Abalach-Re, the Sorceress-Queen of Raam, has comparatively few templars. When she has need of new ones, she performs divinations to discover young citizens who might be suited for wielding magic. Then she removes the candidates from their families, regardless of caste, and trains them to serve her. The templars take new names and exist outside the caste system, like their mistress. Raam’s templars are not bureaucrats; the city-state has many ranks of officials that oversee civil administration. Instead, the templars serve as the eyes and ears of Abalach-Re, representing the Grand Vizier’s interests and instructing officials and functionaries in her will. The current disorder and strife in Raam has made it dangerous for templars to walk the streets without armed escorts. Many barricade themselves in their estates, ignoring their duties to their queen."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/3mzmtkH.png"
+						}
+					}
+				]
+			},
+			"shortName": "Templar Raam Mansabdar",
+			"tokenUrl": "https://i.imgur.com/RsZ4ti7.png",
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"immune": [
+				{
+					"special": "disease"
+				}
+			],
+			"damageTags": [
+				"B"
+			],
+			"isNpc": true,
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Street mansabdars police the city-state to enforce the Grand Vizier's laws; at least, that's what they're supposed to do. Most mansabdars, however, are in the pocket of a nawab or a warlord. The great houses control sections of Raam through propaganda, assassination, and thuggery. A mansabdar is a well-muscled thug that prefers face to face combat. This enforcer calls out an opponent and focuses on beating the tar out of it. Once an enemy falls {@condition prone}, a mansabdar clubs it with a mace, delighting in the blood coloring the street."
+					]
+				}
+			],
+			"skill": {
+				"athletics": "+5",
+				"intimidation": "+2"
+			},
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The mansabdar makes two greatclub attacks."
+					]
+				},
+				{
+					"name": "Greatclub",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 3}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Crushing Blow {@recharge 5}",
+					"entries": [
+						"The mansabdar makes a melee attack, if the attack hits it inflicts an extra {@damage 1d8} damage and the target must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Templar Raam Amenakst",
+			"size": "M",
+			"type": "humanoid",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"bronze chain shirt"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d8 + 39",
+				"average": 98
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 18,
+			"con": 16,
+			"int": 15,
+			"wis": 12,
+			"cha": 10,
+			"passive": 14,
+			"cr": "7",
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"Templars",
+					"Templars are the most feared people in the city states. Their power to accuse and imprison nearly anyone for any reason keeps the city dwellers in terror. Not surprisingly, templars tend to abuse the powers they have for their own personal gain which, so long as the city is administered and kept in order, does not bother the sorcerer-king. Templars perform three vital functions within a given city state. Primarily, they comprise the city guards and officers of the sorcerer-king's armies. Secondly, they see to it that the city is administered, its businesses kept running, and its slaves fed. Finally, the templars are responsible for maintaining the illusion that the sorcerer-king is a god—they have absolute power to enforce worship and homage to the sorcerer-kings. Every templar NPC will be actively pursuing one of these functions. One final, unwritten function of the templars is to advance through their ranks as rapidly as possible. The means by which a templar might gain power and position are wide open, including bribery, theft, and even assassination of others within their ranks. Every templar NPC can be counted on to accept underhanded schemes that will help him rise to power among his fellows.",
+					"In the administration of the city states, templar NPCs occupy all positions from waste removal to the mayorship. Lower-Ranked templars (levels 1-4) are given the dirtier jobs tkat require hands-on work, having a few guards at their disposal and fewer slave laborers than tkey need to perform their tasks effectively. Ranked templars (levels 5-8) gain greater responsibilities and may have several lower- ranked templars beneath them. High- Ranked templars (levels 9 and higher) move into management of the city state— such templars are difficult to unseat, since they can blame nearly any shortcomings on their underlings.",
+					"These are only a sampling of the many levels of templar bureaucracy. Advancement through the ranks has little to do with ability or experience. Technically, the sorcerer-king is a god within his own city and the templars assure him of worship and obedience. In actuality, a sorcerer-king is not a god or a demigod, though he is generally an extremely powerful wizard and psionicist. However, the templars erect temples and subjugate the populations to worship him. There isn't a noble, merchant, or peasant in a city state who doesn't at least pay lip service to the sorcerer-king or the templars who enforce his will.",
+					"The DM must keep two things in mind when dealing with any particular templar NPC. First, how will the templar attempt to use the player characters to gain advantage? He could accuse or imprison them, which always looks good in the eyes of a superior, or he could buy their services to perform a task suck as assassination or simply making a superior look bad. Second, the DM must consider how the player characters might appeal to the templar's wicked ways and greed. In their quest for power, they are sometimes easily manipulated. Beware, though—higher-ranked templars have played these games of treachery before and, by their very existence, they've proven pretty good at them.",
+					"Duties and Auhtority",
+					"Templar soldiers are the enforcement arm of their service to the sorcerer-king. Low-Ranked templars (levels 1-4) are common soldiers, guards within the cities around the slave areas practiced and drilled in formations around the city walls. Ranked templars (levels 5-8) are officers in charge of small (10-100 man) units of guards, slave soldiers, or undead soldiers (in times of war). High-Ranked templars (levels 9 +) are usually generals or administrators, keeping the army equipped and fed.",
+					"Raam",
+					"Abalach-Re, the Sorceress-Queen of Raam, has comparatively few templars. When she has need of new ones, she performs divinations to discover young citizens who might be suited for wielding magic. Then she removes the candidates from their families, regardless of caste, and trains them to serve her. The templars take new names and exist outside the caste system, like their mistress. Raam’s templars are not bureaucrats; the city-state has many ranks of officials that oversee civil administration. Instead, the templars serve as the eyes and ears of Abalach-Re, representing the Grand Vizier’s interests and instructing officials and functionaries in her will. The current disorder and strife in Raam has made it dangerous for templars to walk the streets without armed escorts. Many barricade themselves in their estates, ignoring their duties to their queen."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/7RUx0Q0.png"
+						}
+					}
+				]
+			},
+			"shortName": "Templar Raam Amenakst",
+			"tokenUrl": "https://i.imgur.com/0tZtjm6.png",
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"immune": [
+				{
+					"special": "disease"
+				}
+			],
+			"damageTags": [
+				"S",
+				"P",
+				"O"
+			],
+			"isNpc": true,
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Amenakst are Raam’s Templars, the voice of Abalach-Re and the instrument of her will. The amenakst are warriors, priest and generals of the queen’s forces. In theory they command to the mansabdar, but the civil unrest in Raam makes it clear that power escaped them. Amenakst are proficient in the art of war and magic, wielding spells and bronze weapons against the enemies of Raam and waging war against the looting parties of Draj and war-band of Urich. They are renowned for the deadly arcane bows they fire while mounted on crodlu’s back and their terrifying helmet mimicking the head of a cobra, hyena, vulture, or other dangerous desert creatures."
+					]
+				}
+			],
+			"skill": {
+				"athletics": "+5",
+				"intimidation": "+3",
+				"perception": "+4"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The templar is a 13th level spellcaster. Its spellcasting ability is Intelligence (spell {@dc 13}, +5 to hit with spell attacks). The templar has the following wizard spells prepared.",
+						"Spellcasting Ability=INT",
+						"Global Magic Attack Modifier=5",
+						"Magic Caster Level=13",
+						"Spell Save DC Mod=13"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell blade ward}",
+								"{@spell fire bolt}",
+								"{@spell true strike}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell burning hands}",
+								"{@spell earth tremor|XGE}",
+								"{@spell shield}",
+								"{@spell thunderwave}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell blur}",
+								"{@spell darkness}",
+								"{@spell gust of wind}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell fireball}",
+								"{@spell protection from energy}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The mansabdar makes three longbow attacks or three scimitar attack, one of the bow attacks can be replaced by an arcane shot."
+					]
+				},
+				{
+					"name": "Bronze Scimitar",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Arcane Longbow",
+					"entries": [
+						"{@atk rw} {@hit 9} to hit, range 150/600 ft., one target. {@h}9 ({@damage 1d8 + 4}) piercing damage, plus 7 ({@damage 2d6}) force damage. The attack counts as magical."
+					]
+				},
+				{
+					"name": "Arcane Shot",
+					"entries": [
+						"The amenakst makes a bow attack, if it hits he can take a bonus action to cast an area spells upon the arrow. When the arrow is fired, the spell’s area is centered on where the arrow lands, even if the spell could normally be centered only on the caster. This ability allows the Templar to use the bow’s range rather than the spell’s range. Following prepared spells can apply: {@spell burning hands}, {@spell darkness}, {@spell earth tremor|xge}, {@spell fireball}, {@spell thunderwave}."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Templar Raam High Kuotagha",
+			"size": "M",
+			"type": "humanoid",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d8 + 72",
+				"average": 153
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 30
+			},
+			"str": 14,
+			"dex": 20,
+			"con": 18,
+			"int": 13,
+			"wis": 10,
+			"cha": 16,
+			"passive": 10,
+			"cr": "12",
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"Templars",
+					"Templars are the most feared people in the city states. Their power to accuse and imprison nearly anyone for any reason keeps the city dwellers in terror. Not surprisingly, templars tend to abuse the powers they have for their own personal gain which, so long as the city is administered and kept in order, does not bother the sorcerer-king. Templars perform three vital functions within a given city state. Primarily, they comprise the city guards and officers of the sorcerer-king's armies. Secondly, they see to it that the city is administered, its businesses kept running, and its slaves fed. Finally, the templars are responsible for maintaining the illusion that the sorcerer-king is a god—they have absolute power to enforce worship and homage to the sorcerer-kings. Every templar NPC will be actively pursuing one of these functions. One final, unwritten function of the templars is to advance through their ranks as rapidly as possible. The means by which a templar might gain power and position are wide open, including bribery, theft, and even assassination of others within their ranks. Every templar NPC can be counted on to accept underhanded schemes that will help him rise to power among his fellows.",
+					"In the administration of the city states, templar NPCs occupy all positions from waste removal to the mayorship. Lower-Ranked templars (levels 1-4) are given the dirtier jobs tkat require hands-on work, having a few guards at their disposal and fewer slave laborers than tkey need to perform their tasks effectively. Ranked templars (levels 5-8) gain greater responsibilities and may have several lower- ranked templars beneath them. High- Ranked templars (levels 9 and higher) move into management of the city state— such templars are difficult to unseat, since they can blame nearly any shortcomings on their underlings.",
+					"These are only a sampling of the many levels of templar bureaucracy. Advancement through the ranks has little to do with ability or experience. Technically, the sorcerer-king is a god within his own city and the templars assure him of worship and obedience. In actuality, a sorcerer-king is not a god or a demigod, though he is generally an extremely powerful wizard and psionicist. However, the templars erect temples and subjugate the populations to worship him. There isn't a noble, merchant, or peasant in a city state who doesn't at least pay lip service to the sorcerer-king or the templars who enforce his will.",
+					"The DM must keep two things in mind when dealing with any particular templar NPC. First, how will the templar attempt to use the player characters to gain advantage? He could accuse or imprison them, which always looks good in the eyes of a superior, or he could buy their services to perform a task suck as assassination or simply making a superior look bad. Second, the DM must consider how the player characters might appeal to the templar's wicked ways and greed. In their quest for power, they are sometimes easily manipulated. Beware, though—higher-ranked templars have played these games of treachery before and, by their very existence, they've proven pretty good at them.",
+					"Duties and Auhtority",
+					"Templar soldiers are the enforcement arm of their service to the sorcerer-king. Low-Ranked templars (levels 1-4) are common soldiers, guards within the cities around the slave areas practiced and drilled in formations around the city walls. Ranked templars (levels 5-8) are officers in charge of small (10-100 man) units of guards, slave soldiers, or undead soldiers (in times of war). High-Ranked templars (levels 9 +) are usually generals or administrators, keeping the army equipped and fed.",
+					"Raam",
+					"Abalach-Re, the Sorceress-Queen of Raam, has comparatively few templars. When she has need of new ones, she performs divinations to discover young citizens who might be suited for wielding magic. Then she removes the candidates from their families, regardless of caste, and trains them to serve her. The templars take new names and exist outside the caste system, like their mistress. Raam’s templars are not bureaucrats; the city-state has many ranks of officials that oversee civil administration. Instead, the templars serve as the eyes and ears of Abalach-Re, representing the Grand Vizier’s interests and instructing officials and functionaries in her will. The current disorder and strife in Raam has made it dangerous for templars to walk the streets without armed escorts. Many barricade themselves in their estates, ignoring their duties to their queen."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/gB5l6Ic.png"
+						}
+					}
+				]
+			},
+			"shortName": "Templar Raam High Kuotagha",
+			"tokenUrl": "https://i.imgur.com/VsdjVmM.png",
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"immune": [
+				{
+					"special": "disease"
+				}
+			],
+			"damageTags": [
+				"S"
+			],
+			"isNpc": true,
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Rather than quelling the mansabdars' duplicity, Abalach·Re formed the force of high kuotaghas, her secret police. Like the mansabdars, they are an arm of the civic government, loosely overseen by the templars. Little better than assassins, the kuotagha hide among the populace, striking without warning to eliminate undesirables. The high kuotaghas are the sorcerer-queen's most trusted and deadly servants. Like Abalach·Re, a high kuotagha looks weak, decadent, and unarmed. Once an enemy draws near, the assassin's body hardens, its claws extend, and its arm tendons detach from its biceps to form flexible bands. Given the malfeasance of the mansabdars and the breakdown of templar authority, Abalach-Re relies more and more on the kuotagh to enforce her will."
+					]
+				},
+				{
+					"name": "A Thousand Faces",
+					"entries": [
+						"With a bonus action the kuotagha is able to shape his body at will. This effect function exactly as the Alter Self spell, but each changement is permanent, requires no concentration and cannot be dispelled."
+					]
+				},
+				{
+					"name": "Deadly Grip",
+					"entries": [
+						"When a creature starts its turn {@condition restrained} by the Kuotagha it automatically take the sneak attack damage ({@dice 9d6}) from the templar."
+					]
+				},
+				{
+					"name": "Elusive",
+					"entries": [
+						"The Kuotaghas are so evasive that no attack roll has advantage against them while they aren’t {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Sneak Attack (1/Turn)",
+					"entries": [
+						"The templar deals an extra 32 ({@damage 9d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the templar that isn't incapacitated and the templar doesn't have disadvantage on the attack roll."
+					]
+				}
+			],
+			"save": {
+				"dex": "+9",
+				"wis": "+5"
+			},
+			"skill": {
+				"acrobatics": "+9",
+				"deception": "+7",
+				"intimidation": "+7",
+				"stealth": "+9"
+			},
+			"conditionImmune": [
+				"grappled",
+				"prone",
+				"restrained"
+			],
+			"traitTags": [
+				"Sneak Attack"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The templar makes two claw attacks."
+					]
+				},
+				{
+					"name": "Extensive Claw",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}13 ({@damage 2d6 + 6}) slashing damage. If the target is Medium or smaller, it is {@condition grappled} (escape {@dc 17}). Until this grapple ends, the target is {@condition restrained}. The Templar can only {@condition grappled} one creature at a time."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"restrained",
+				"grappled"
+			],
+			"reaction": [
+				{
+					"name": "Uncanny Dodge",
+					"entries": [
+						"When an attacker hits the Templar with an attack he can use his reaction to half the damage, provided he isn’t {@condition blinded} and {@condition deafened}."
+					]
+				}
+			]
 		}
 
 
