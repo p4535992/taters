@@ -37508,6 +37508,477 @@
 			"miscTags": [
 				"MW"
 			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Wight",
+			"size": "M",
+			"type": "undead",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 18",
+				"average": 45
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 14,
+			"con": 16,
+			"int": 10,
+			"wis": 13,
+			"cha": 15,
+			"passive": 13,
+			"cr": "3",
+			"fluff": {
+				"entries": [
+					"Soldier slaughter an elf tribe",
+					"after a messenger fails to bring warning. A poisoned blade cuts down a dwarf before he achieves his life's goal. Both die, but their intense yearnings resurrect soulless bodies, driving the corpses to endlessly pursue what likely can never be accomplished.",
+					"Lore",
+					"As a soul passes into the Gray, its deepest unmet desire can splinter off to animate the physical form that its soul abandoned. The splinter accesses the memories, needs, and desires of the body's former occupant. Those passions are married to an overwhelming hunger for life force, and a wight is born. A wight's competing pursuits leave it incapable of satisfying any craving. The word \\\"wight\\\" meant \\\"person\\\" in days of yore, but the name now refers to evil undead who were once mortals driven by dark desire and great vanity.",
+					"Wights bleed frustration, anger, grief, and hate. Their emotions creep into nearby consciousness’s, and quick witted creatures might realize a wight is nearby. Those hunting a particular Wight can use knowledge of its former life as an emotional weapon to gain an upper hand over the creature. Experienced hunters also know that killing a Wight requires its body's destruction. Dismemberment followed by fire is the surest way to accomplish that. According to legend, an occasional earnest soul completes the task that awakened a wight, freeing the miserable creature. For most wights, however, the components required to complete a task are lost in the ashes of time.",
+					"Wights possess the memories and drives of their formerly living selves. They will heed the call of whatever dark entity transformed them into undead, swearing oaths to appease their new lord while retaining their autonomy. Never tiring, a wight can pursue its goals relentlessly and without distraction. Neither dead nor alive, a wight exists in a transitional state between one world and the next. The bright spark it possessed in life is gone, and in its place is a yearning to consume that spark in all living things. When a wight attacks, this life essence glows like whitehot embers to its dark eyes, and the wight's cold touch can drain the spark through flesh, clothing, and armor.",
+					"Undead Nature",
+					"A wight doesn't require air, food, drink, or sleep."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/r12huV8.png"
+						}
+					}
+				]
+			},
+			"shortName": "Wight",
+			"tokenUrl": "https://i.imgur.com/bcZGuWW.png",
+			"environment": [
+				"forest",
+				"underdark",
+				"urban"
+			],
+			"isNpc": true,
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Wights flee from the world by day, away from the light of the sun, which they hate. They retreat to barrow mounds, crypts, and tombs where they dwell. Their lairs are silent, desolate places, surrounded by dead plants, noticeably blackened, and avoided by bird and beast. Humanoids slain by a wight can rise as zombies under its control. Motivated by hunger for living souls and driven by the same desire for power that awakened them in undeath, some wights serve as shock troops for evil leaders, including wraiths. As soldiers, they are able to plan but seldom do so, relying on their hunger for destruction to overwhelm any creature that stands before them. Wights are unscrupulous about allies, although a habit of the creature's living existence might influence its associations. Some wights work with living allies whose pursuits parallel a wight’s dark appetites. More commonly, wights abide the presence of predatory breasts, which don’t see the undead creatures as food."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the wight has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+					]
+				}
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"the languages it knew in life"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"skill": {
+				"perception": "+3",
+				"stealth": "+4"
+			},
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"necrotic",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons that aren’t silvered"
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"traitTags": [
+				"Sunlight Sensitivity"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The wight makes two longsword attacks or two longbow attacks. It can use its Life Drain in place of one longsword attack."
+					]
+				},
+				{
+					"name": "Life Drain",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) necrotic damage. The target must succeed on a {@dc 13} Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0. A humanoid slain by this attack rises 24 hours later as a zombie under the wight's control, unless the humanoid is restored to life or its body is destroyed. The wight can have no more than twelve zombies under its control at one time."
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) slashing damage, or 7 ({@damage 1d10 + 2}) slashing damage if used with both hands."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 150/600 ft., one target. {@h}7 ({@damage 1d8 + 2}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"N",
+				"S",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Wight Dust",
+			"size": "M",
+			"type": "undead",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 11,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d8 + 48",
+				"average": 120
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 20,
+			"dex": 8,
+			"con": 16,
+			"int": 10,
+			"wis": 13,
+			"cha": 15,
+			"passive": 14,
+			"cr": "7",
+			"fluff": {
+				"entries": [
+					"Soldier slaughter an elf tribe",
+					"after a messenger fails to bring warning. A poisoned blade cuts down a dwarf before he achieves his life's goal. Both die, but their intense yearnings resurrect soulless bodies, driving the corpses to endlessly pursue what likely can never be accomplished.",
+					"Lore",
+					"As a soul passes into the Gray, its deepest unmet desire can splinter off to animate the physical form that its soul abandoned. The splinter accesses the memories, needs, and desires of the body's former occupant. Those passions are married to an overwhelming hunger for life force, and a wight is born. A wight's competing pursuits leave it incapable of satisfying any craving. The word \\\"wight\\\" meant \\\"person\\\" in days of yore, but the name now refers to evil undead who were once mortals driven by dark desire and great vanity.",
+					"Wights bleed frustration, anger, grief, and hate. Their emotions creep into nearby consciousness’s, and quick witted creatures might realize a wight is nearby. Those hunting a particular Wight can use knowledge of its former life as an emotional weapon to gain an upper hand over the creature. Experienced hunters also know that killing a Wight requires its body's destruction. Dismemberment followed by fire is the surest way to accomplish that. According to legend, an occasional earnest soul completes the task that awakened a wight, freeing the miserable creature. For most wights, however, the components required to complete a task are lost in the ashes of time.",
+					"Wights possess the memories and drives of their formerly living selves. They will heed the call of whatever dark entity transformed them into undead, swearing oaths to appease their new lord while retaining their autonomy. Never tiring, a wight can pursue its goals relentlessly and without distraction. Neither dead nor alive, a wight exists in a transitional state between one world and the next. The bright spark it possessed in life is gone, and in its place is a yearning to consume that spark in all living things. When a wight attacks, this life essence glows like whitehot embers to its dark eyes, and the wight's cold touch can drain the spark through flesh, clothing, and armor.",
+					"Undead Nature",
+					"A wight doesn't require air, food, drink, or sleep."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/AS6yeph.png"
+						}
+					}
+				]
+			},
+			"shortName": "Wight Dust",
+			"tokenUrl": "https://i.imgur.com/xiqzbbe.png",
+			"environment": [
+				"forest",
+				"underdark",
+				"urban"
+			],
+			"isNpc": true,
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Dust wights are hateful creatures formed by a conjunction of elemental earth and negative energy. They seek to tear down and destroy all creations of stone and metal, and if they have to kill living creatures to do that, so much the better. A dust wight enters combat with its stonelike fists flying, seeking to affect as many foes as possible with its petrifying cloud. If it petrifies a foe, it turns its attacks on that target, battering the stony victim into rubble."
+					]
+				},
+				{
+					"name": "Crumbling Touch",
+					"entries": [
+						"A dust wight’s slam attack, in addition to dealing damage, weakens objects crafted of metal or stone. Each time a creature is struck by a slam attack from a dust wight, any metal or stone armor worn by the target is damaged. The wearer of the armor can make a {@dc 13} Dexterity saving throw to prevent the effect. If the object touched is either metal armor or a metal shield being worn or carried, its takes a permanent and cumulative -1 penalty to the AC it offers. Armor reduced to an AC of 10 or a shield that drops to a +0 bonus is destroyed."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the wight has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Petrifying Cloud",
+					"entries": [
+						"A dust wight is surrounded by a cloud of dusty particles. Any living creature that comes within 5 feet of a dust wight must succeed on a {@dc 15} Constitution saving throw. On a failed save, the creature begins to turn to stone and is {@condition restrained}. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is {@condition petrified}. The creature is {@condition petrified} until it’s freed by the greater restauration spell or a similarly powerful magic. A creature who saves successfully against the petrifying cloud can’t be affected again by that dust wight’s petrifying cloud for 24 hours."
+					]
+				}
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"skill": {
+				"perception": "+4",
+				"stealth": "+2"
+			},
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"necrotic",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons that aren’t silvered"
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"petrified",
+				"poisoned"
+			],
+			"damageTags": [
+				"B"
+			],
+			"languages": [
+				"Terran"
+			],
+			"languageTags": [
+				"T"
+			],
+			"traitTags": [
+				"Sunlight Sensitivity"
+			],
+			"conditionInflict": [
+				"petrified",
+				"restrained"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The wight makes three slam attacks."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) bludgeoning damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Wight Restless",
+			"size": "M",
+			"type": "undead",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"obsidian {@item plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d8 + 48",
+				"average": 102
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 18,
+			"int": 10,
+			"wis": 13,
+			"cha": 15,
+			"passive": 14,
+			"cr": "10",
+			"fluff": {
+				"entries": [
+					"Soldier slaughter an elf tribe",
+					"after a messenger fails to bring warning. A poisoned blade cuts down a dwarf before he achieves his life's goal. Both die, but their intense yearnings resurrect soulless bodies, driving the corpses to endlessly pursue what likely can never be accomplished.",
+					"Lore",
+					"As a soul passes into the Gray, its deepest unmet desire can splinter off to animate the physical form that its soul abandoned. The splinter accesses the memories, needs, and desires of the body's former occupant. Those passions are married to an overwhelming hunger for life force, and a wight is born. A wight's competing pursuits leave it incapable of satisfying any craving. The word \\\"wight\\\" meant \\\"person\\\" in days of yore, but the name now refers to evil undead who were once mortals driven by dark desire and great vanity.",
+					"Wights bleed frustration, anger, grief, and hate. Their emotions creep into nearby consciousness’s, and quick witted creatures might realize a wight is nearby. Those hunting a particular Wight can use knowledge of its former life as an emotional weapon to gain an upper hand over the creature. Experienced hunters also know that killing a Wight requires its body's destruction. Dismemberment followed by fire is the surest way to accomplish that. According to legend, an occasional earnest soul completes the task that awakened a wight, freeing the miserable creature. For most wights, however, the components required to complete a task are lost in the ashes of time.",
+					"Wights possess the memories and drives of their formerly living selves. They will heed the call of whatever dark entity transformed them into undead, swearing oaths to appease their new lord while retaining their autonomy. Never tiring, a wight can pursue its goals relentlessly and without distraction. Neither dead nor alive, a wight exists in a transitional state between one world and the next. The bright spark it possessed in life is gone, and in its place is a yearning to consume that spark in all living things. When a wight attacks, this life essence glows like whitehot embers to its dark eyes, and the wight's cold touch can drain the spark through flesh, clothing, and armor.",
+					"Undead Nature",
+					"A wight doesn't require air, food, drink, or sleep."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/fDb4WYO.png"
+						}
+					}
+				]
+			},
+			"shortName": "Wight Restless",
+			"tokenUrl": "https://i.imgur.com/FiywoUn.png",
+			"environment": [
+				"forest",
+				"underdark",
+				"urban"
+			],
+			"isNpc": true,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"skill": {
+				"perception": "+3",
+				"stealth": "+4"
+			},
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"necrotic",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons that aren’t silvered"
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"damageTags": [
+				"N",
+				"S",
+				"P"
+			],
+			"languages": [
+				"the languages it knew in life"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Servants of the undead lords of the obsidian citadel in the Dead Land, the restless wights are among the most feared creatures of Athas. Roaming the Dead Land after night fall, they slaughter any living creature they encounter. Clad in obsidian armors and wearing sharp-edged obsidian weapons, the restless wight are often lead by a death knight."
+					]
+				},
+				{
+					"name": "Dread Aura",
+					"entries": [
+						"The presence of a restless wight is inspiring a bottomless despair to any living creature in a 15ft radius around the wight. Living creatures in this area have disadvantage on ability check, attack rolls and saving throws. Creatures that cannot be {@condition frightened} are immune to this effect."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the wight has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+					]
+				}
+			],
+			"traitTags": [
+				"Sunlight Sensitivity"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The wight makes three attacks with its glaive attacks or its longbow. It can use its Life Drain in place of one glaive attack."
+					]
+				},
+				{
+					"name": "Life Drain",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}14 ({@damage 3d6 + 4}) necrotic damage.",
+						"The target must succeed on a {@dc 14} Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0. A humanoid slain by this attack rises 24 hours later as a zombie under the wight's control, unless the humanoid is restored to life or its body is destroyed. The wight can have no more than twelve zombies under its control at one time."
+					]
+				},
+				{
+					"name": "Obsidian Glaive",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}10 ({@damage 1d10 + 4}) slashing damage, plus 10 ({@damage 3d6}) necrotic damage."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 150/600 ft., one target. {@h}7 ({@damage 1d8 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Promised Return {@recharge}",
+					"entries": [
+						"The wight vanishes until the start of its next turn, and return to an unoccupied space of its choice within 30 feet of the space it vanished from. When he reappears the wight deals 16 ({@damage 4d8}) necrotic damage to any creature in a 10ft radius and is healed from the same amount of damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW",
+				"RNG"
+			]
 		}
 
 
