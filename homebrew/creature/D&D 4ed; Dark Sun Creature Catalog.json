@@ -37979,6 +37979,388 @@
 				"RW",
 				"RNG"
 			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Zezir Red",
+			"size": "M",
+			"type": "monstrosity",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d8 + 32",
+				"average": 68
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 18,
+			"dex": 16,
+			"con": 18,
+			"int": 5,
+			"wis": 12,
+			"cha": 13,
+			"passive": 14,
+			"cr": "3",
+			"shortName": "Zezir Red",
+			"fluff": {
+				"entries": [
+					"Lore",
+					"The red zezir is a ruthless desert predator that loves the sight of an open, uncontrolled flame. Red zezirs live to start and spread fires, reveling in the crackle and play of something, anything, as it burns. Red zezir packs have been known to attack merchant caravans and set them alight, retreating beyond the range of retaliation to cavort in joy as the entire caravan goes up in smoke. The creatures feed on ash, and their seeming infatuation with fi re provides them with sustenance. However, their love of fire also stems from their chaotic nature and an innate love of destruction.",
+					"Male and female zezirs participate in hunts equally, and packs share the responsibility of raising the young. Red zezirs can communicate by means of a sequence of yips, growls, and whines. Zezirs are not reptilian, although they have some reptilian traits. They are more closely related to avians. A typical zezir stands between 5 and 5-1/2 feet tall and weighs around 150 pounds.",
+					"Encounters",
+					"Zezirs are fast and agile, but not particularly stealthy. A pack typically posts a lookout near the site of a possible ambush, while the rest of the creatures lie in wait several hundred feet away. Once possible prey is spotted, the zezir scout returns to report the size and direction of the target. The pack then heads off at a run to intercept. Once they reach their objective, the zezirs run through and by their targets. The first zezirs of the pack spray their opponents with their sticky flammable spray, and the following zezirs use their spark stream attack to set the very air on fire. The zezirs often retreat to a safe distance to watch the burning, repeating the tactics if necessary."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/MjvfpUn.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/bZTMfkw.png",
+			"environment": [
+				"coastal",
+				"desert",
+				"grassland"
+			],
+			"isNpc": true,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"skill": {
+				"perception": "+4"
+			},
+			"vulnerable": [
+				"cold"
+			],
+			"immune": [
+				"fire"
+			],
+			"trait": [
+				{
+					"name": "Pounce",
+					"entries": [
+						"If the zezir moves at least 30 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the zezir can make one bite attack against it as a bonus action."
+					]
+				},
+				{
+					"name": "Pack Hunter",
+					"entries": [
+						"A zezir has advantage on attack rolls against a creature if at least one of the zezir's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				}
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"traitTags": [
+				"Pounce"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The zezir makes three attacks, one with its bite and two with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d10 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 2d4 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Flammable Spray {@recharge 5}",
+					"entries": [
+						"A zezir can expel a sticky, superheated, highly flammable goo from glands in its neck. The goo fills a 30-foot cone and deals 6 ({@dice 2d6}) points of fire damage. If any open fire (such as a torch or a flaming sword) is present within this area or enters the area in the following round, the entire area bursts into flame for one minute. This effect deals 4 ({@damage 1d8}) fire damage to all creatures and objects within the area."
+					]
+				},
+				{
+					"name": "Spark Stream",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 30/60 ft., one target. {@h}12 ({@damage 3d8}) fire damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"S",
+				"F"
+			],
+			"miscTags": [
+				"MW",
+				"AOE",
+				"RW"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Zezir Blue",
+			"size": "L",
+			"type": "monstrosity",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d10 + 50",
+				"average": 105
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 22,
+			"dex": 12,
+			"con": 20,
+			"int": 5,
+			"wis": 12,
+			"cha": 13,
+			"passive": 14,
+			"cr": "5",
+			"shortName": "Zezir Blue",
+			"fluff": {
+				"entries": [
+					"Lore",
+					"The red zezir is a ruthless desert predator that loves the sight of an open, uncontrolled flame. Red zezirs live to start and spread fires, reveling in the crackle and play of something, anything, as it burns. Red zezir packs have been known to attack merchant caravans and set them alight, retreating beyond the range of retaliation to cavort in joy as the entire caravan goes up in smoke. The creatures feed on ash, and their seeming infatuation with fi re provides them with sustenance. However, their love of fire also stems from their chaotic nature and an innate love of destruction.",
+					"Male and female zezirs participate in hunts equally, and packs share the responsibility of raising the young. Red zezirs can communicate by means of a sequence of yips, growls, and whines. Zezirs are not reptilian, although they have some reptilian traits. They are more closely related to avians. A typical zezir stands between 5 and 5-1/2 feet tall and weighs around 150 pounds.",
+					"Encounters",
+					"Zezirs are fast and agile, but not particularly stealthy. A pack typically posts a lookout near the site of a possible ambush, while the rest of the creatures lie in wait several hundred feet away. Once possible prey is spotted, the zezir scout returns to report the size and direction of the target. The pack then heads off at a run to intercept. Once they reach their objective, the zezirs run through and by their targets. The first zezirs of the pack spray their opponents with their sticky flammable spray, and the following zezirs use their spark stream attack to set the very air on fire. The zezirs often retreat to a safe distance to watch the burning, repeating the tactics if necessary."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/ZcumsIJ.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/GPL90GC.png",
+			"environment": [
+				"coastal",
+				"desert",
+				"grassland"
+			],
+			"isNpc": true,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"skill": {
+				"perception": "+4",
+				"stealth": "+7"
+			},
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Blue zezir are larger cousins of the red zezir. They live mostly in mountainous areas where they hunt smaller preys and compete for food with wyverns. Their favorite meal include tarek, aarakocra or baazrag. Blue zezir usually hunt in duo, choosing a mate for life. Every few month the couple of zezir is migrating to new hunting ground when food is getting scare. They are direct hunter once the hunt is on, but make clever use of their natural hunting abilities. They wait in ambush, adopting the tone of the general surrounding to hide their presence and use their capacity to imitate sounds to lure preys. Once they have designated a target, they stick to it, ganging up on it and ignoring other distractions."
+					]
+				},
+				{
+					"name": "Chameleon Carapace",
+					"entries": [
+						"The blue zezir can change the color of its carapace to match the color and texture of its surroundings. As a result, it has advantage on Dexterity (Stealth) checks made to hide."
+					]
+				},
+				{
+					"name": "Mimicry",
+					"entries": [
+						"The blue zezir can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful {@dc 16} Wisdom (Insight) check."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The zezir makes three attacks, one with its bite and two with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d10 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 5}) slashing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			]
+		},
+		{
+			"name": "DARKSUNCREATURE - Zezir Green",
+			"size": "S",
+			"type": "monstrosity",
+			"source": "DarkSunCreatureCatalog",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d6 + 4",
+				"average": 11
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 12,
+			"dex": 18,
+			"con": 14,
+			"int": 5,
+			"wis": 12,
+			"cha": 13,
+			"passive": 13,
+			"cr": "1/2",
+			"shortName": "Zezir Green",
+			"fluff": {
+				"entries": [
+					"Lore",
+					"The red zezir is a ruthless desert predator that loves the sight of an open, uncontrolled flame. Red zezirs live to start and spread fires, reveling in the crackle and play of something, anything, as it burns. Red zezir packs have been known to attack merchant caravans and set them alight, retreating beyond the range of retaliation to cavort in joy as the entire caravan goes up in smoke. The creatures feed on ash, and their seeming infatuation with fi re provides them with sustenance. However, their love of fire also stems from their chaotic nature and an innate love of destruction.",
+					"Male and female zezirs participate in hunts equally, and packs share the responsibility of raising the young. Red zezirs can communicate by means of a sequence of yips, growls, and whines. Zezirs are not reptilian, although they have some reptilian traits. They are more closely related to avians. A typical zezir stands between 5 and 5-1/2 feet tall and weighs around 150 pounds.",
+					"Encounters",
+					"Zezirs are fast and agile, but not particularly stealthy. A pack typically posts a lookout near the site of a possible ambush, while the rest of the creatures lie in wait several hundred feet away. Once possible prey is spotted, the zezir scout returns to report the size and direction of the target. The pack then heads off at a run to intercept. Once they reach their objective, the zezirs run through and by their targets. The first zezirs of the pack spray their opponents with their sticky flammable spray, and the following zezirs use their spark stream attack to set the very air on fire. The zezirs often retreat to a safe distance to watch the burning, repeating the tactics if necessary."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/sOez2zP.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/NwSYKXe.png",
+			"environment": [
+				"coastal",
+				"desert",
+				"grassland"
+			],
+			"isNpc": true,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"skill": {
+				"perception": "+3",
+				"stealth": "+8"
+			},
+			"damageTags": [
+				"P",
+				"S",
+				"I"
+			],
+			"trait": [
+				{
+					"name": "Info",
+					"entries": [
+						"Green zezir are small, poisonous, predators living in the few jungles and forest of Athas. The green zezir can be easily be found in the Forest Ridge and the Crescent Forest. Other specimens have been spotted all around Athas, mostly near lush mudflat or oasis. The green zezir is a cowardly predator, swarming bigger creature but retreating at the first sign of real danger. Still, they can be quite patient and wait in high grass where they can easily hide with their chameleon carapace. They try to blind they prey first and keep spitting their poison from a safe distance until their prey collapse. That’s the moment the rest of the pack is waiting to swarm the quarry, making short work of it with numerous bites. A pack of green zezir range usually between 6 to 12 individuals, but bigger packs have been reported, reaching up to 24 creatures."
+					]
+				},
+				{
+					"name": "Chameleon Carapace",
+					"entries": [
+						"The green zezir can change the color of its carapace to match the color and texture of its surroundings. As a result, it has advantage on Dexterity (Stealth) checks made to hide."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The zezir makes two attacks, one with its bite and one with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) slashing damage."
+					]
+				},
+				{
+					"name": "Toxic Spit {@recharge 4}",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 30/60 ft., one target. {@h}10 ({@damage 2d6 + 4}) poison damage and the target must succeed on a {@dc 12} Constitution saving throw or be {@condition poisoned} for 1 minute. Until this poison ends, the target is {@condition blinded}. The target can repeat the saving throw at the end of each of its turns, ending the poison on itself on a success."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"blinded",
+				"poisoned"
+			]
 		}
 
 
