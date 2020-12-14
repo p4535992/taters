@@ -21,7 +21,7 @@
 	},
 	"monster": [
 		{
-			"name": "GUARD - Guard (Simple)[GUARD01_Guard]",
+			"name": "Guard Simple",
 			"size": "M",
 			"type": {
 				"type": "humanoid",
@@ -57,7 +57,7 @@
 			"cha": 10,
 			"passive": 12,
 			"cr": "1/8",
-			"shortName": "Guard (Simple)",
+			"shortName": "Guard Simple",
 			"languages": [
 				"Any One Language (Usually Common)"
 			],
@@ -105,7 +105,7 @@
 			]
 		},
 		{
-			"name": "GUARD - Guard Captain (dandwiki)[GUARD02_Guard_Captain]",
+			"name": "Guard Captain (dandwiki)",
 			"size": "M",
 			"type": {
 				"type": "humanoid",
@@ -217,7 +217,7 @@
 			}
 		},
 		{
-			"name": "GUARD - Guard with Bow (Simple) [GUARD03_Guard_Bow]",
+			"name": "Guard with Bow Simple",
 			"size": "M",
 			"type": {
 				"type": "humanoid",
@@ -253,7 +253,7 @@
 			"cha": 10,
 			"passive": 12,
 			"cr": "1/8",
-			"shortName": "Guard with Bow (Simple)",
+			"shortName": "Guard with Bow Simple",
 			"languages": [
 				"Any One Language (Usually Common)"
 			],
@@ -305,7 +305,7 @@
 			]
 		},
 		{
-			"name": "GUARD - Simple Guard Elite [GUARD04_Guard_Modified_Elite]",
+			"name": "Guard Elite Simple",
 			"size": "M",
 			"type": {
 				"type": "humanoid",
@@ -341,7 +341,7 @@
 			"cha": 10,
 			"passive": 14,
 			"cr": "1/8",
-			"shortName": "Simple Guard Elite",
+			"shortName": "Guard Elite Simple",
 			"languages": [
 				"Any One Language (Usually Common)"
 			],
@@ -399,7 +399,7 @@
 			]
 		},
 		{
-			"name": "GUARD - City Guard Commander [GUARD05_City_Guard_Commander]",
+			"name": "City Guard Commander",
 			"size": "M",
 			"type": {
 				"type": "humanoid",
@@ -535,7 +535,7 @@
 			]
 		},
 		{
-			"name": "GUARD - City Guard Watch Captain [GUARD05_City_Guard_Watch_Captain]",
+			"name": "City Guard Watch Captain",
 			"size": "M",
 			"type": {
 				"type": "humanoid",
@@ -664,7 +664,7 @@
 			]
 		},
 		{
-			"name": "GUARD - City Guard [GUARD05_City_Guard]",
+			"name": "City Guard",
 			"size": "M",
 			"type": {
 				"type": "humanoid",
@@ -759,7 +759,7 @@
 			]
 		},
 		{
-			"name": "THIEF - Thief (dandwiki)",
+			"name": "Thief (dandwiki)",
 			"size": "M",
 			"type": {
 				"type": "humanoid",
@@ -869,7 +869,7 @@
 			]
 		},
 		{
-			"name": "BARBARIAN - Barbarian (dandwiki)",
+			"name": "Barbarian (dandwiki)",
 			"size": "M",
 			"type": {
 				"type": "humanoid",
@@ -957,7 +957,7 @@
 			]
 		},
 		{
-			"name": "BRAWLER - Tavern Brawler (Dwarf)",
+			"name": "Brawler of Tavern (Dwarf)",
 			"size": "M",
 			"type": {
 				"type": "humanoid",
@@ -1062,7 +1062,7 @@
 			]
 		},
 		{
-			"name": "BRAWLER - Tavern Brawler",
+			"name": "Brawler of Tavern (Human)",
 			"size": "M",
 			"type": {
 				"type": "humanoid",
@@ -1402,7 +1402,7 @@
 			"name": "Ninja",
 			"size": "M",
 			"type": "humanoid",
-			"source": "ssss",
+			"source": "p4535992Humanoid",
 			"alignment": [
 				"A"
 			],
@@ -1530,6 +1530,111 @@
 						"In response to being hit by a ranged weapon, the ninja deflects the missile. The damage it takes from the attack is reduced by {@dice 1d10 + 4}. If the damage is reduced to 0, the ninja catenes the missile if it is small enough to hold in one hand end the ninja has a free hand."
 					]
 				}
+			]
+		},
+		{
+			"name": "Witch Human",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"source": "p4535992Humanoid",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d8 + 4",
+				"average": 22
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 12,
+			"con": 12,
+			"int": 11,
+			"wis": 12,
+			"cha": 14,
+			"passive": 11,
+			"cr": "3",
+			"environment": [
+				"coastal",
+				"forest",
+				"swamp"
+			],
+			"isNpc": true,
+			"tokenUrl": "https://i.imgur.com/bM0dJ5D.png",
+			"fluff": {
+				"entries": [
+					"{@link Human Witch|https://www.deviantart.com/dizman/art/DnD-Next-Monster-Cards-Human-Witch-404860763}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/HDcVyL8.png"
+						}
+					}
+				]
+			},
+			"shortName": "Witch Human",
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"action": [
+				{
+					"name": "Quarterstaff",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6 + 1}) bludgeoning damage, or 5 ({@damage 1d8 + 1}) bludgeoning damage if used with both hands."
+					]
+				},
+				{
+					"name": "Shocking Grasp",
+					"entries": [
+						"The witch doctor chooses one creature in its reach.The target must succeed on a {@dc 14} Dexterity saving throw. Otherwise, the target takes 4 ({@damage 1d8}) lightning damage, and it cannot take reactions until its next tum. ee i, A"
+					]
+				},
+				{
+					"name": "Ray of Enfeeblement (2/day)",
+					"entries": [
+						"The witch doctor chooses a creature . 5 within 50 feet. The target must make a {@dc 14} Dexterity save. On a failed save the taregt take 14 ({@damage 4d6}) necrotic damage, and, if the target’s hit point maximum is 25 or less, the target’s melee attacks deal only half damage, and the target has disadvantage on Strength and Dexterity checks and saving throws. This effect lasts for 1 minute. "
+					]
+				},
+				{
+					"name": "Light",
+					"entries": [
+						"The witch doctor touches an object, causing it to shed bright light in a 20 ft. radius sphere and dim light within 40 ft. of the sphere. The light lasts for 1 hour or until the witch doctor uses this action again."
+					]
+				},
+				{
+					"name": "Damage Resistance (1/day)",
+					"entries": [
+						"The witch doctor touches a willing creature other than itself and chooses a damage type: acid, bludgeoning, cold, fire, lightning, piercing, necrotic, slashing, or thunder. The touched creature gains resistance against that damage type for 1 hour."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"L",
+				"N"
+			],
+			"miscTags": [
+				"MW"
 			]
 		}
 	]
