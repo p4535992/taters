@@ -1255,7 +1255,8 @@
 				"RW",
 				"MW",
 				"THW"
-			]
+			],
+			"isNpc": true
 		},
 		{
 			"name": "Pirate Captain",
@@ -1394,6 +1395,141 @@
 			"miscTags": [
 				"MW",
 				"RCH"
+			],
+			"isNpc": true
+		},
+		{
+			"name": "Ninja",
+			"size": "M",
+			"type": "humanoid",
+			"source": "ssss",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 20",
+				"average": 65
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 12,
+			"dex": 18,
+			"con": 14,
+			"int": 12,
+			"wis": 16,
+			"cha": 10,
+			"passive": 13,
+			"cr": "6",
+			"fluff": {
+				"entries": [
+					"{@link Ninja|https://www.pinterest.se/pin/232920611966519039/}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/s4880uv.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/sYctZGY.png",
+			"environment": [
+				"urban"
+			],
+			"isNpc": true,
+			"shortName": "Ninja",
+			"languages": [
+				"Any one language (usually Common)"
+			],
+			"languageTags": [
+				"C"
+			],
+			"save": {
+				"dex": "+10",
+				"wis": "+6"
+			},
+			"skill": {
+				"acrobatics": "+7",
+				"deception": "+3",
+				"sleight of hand": "+7",
+				"stealth": "+7"
+			},
+			"trait": [
+				{
+					"name": "Evasion",
+					"entries": [
+						"If the ninja is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the ninja instead takes no damage if it succeds on the saving throw, and only half damage if it fail."
+					]
+				},
+				{
+					"name": "Shadow Stealth",
+					"entries": [
+						"While in dim light or carkness, the ninja can take the Hide action as a bonus accion."
+					]
+				},
+				{
+					"name": "Unarmored defense",
+					"entries": [
+						"While the ninja is wearing no armor and wielding no shield, its AC includes its wisdom modifier."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The ninja makes two weapon attacks. "
+					]
+				},
+				{
+					"name": "Shortswords",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage, plus 7 ({@damage 2d6}) poison damage."
+					]
+				},
+				{
+					"name": "Dart",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 20/60 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage, plus 7 ({@damage 2d6}) poison damage."
+					]
+				},
+				{
+					"name": "Smoke Bomb (1/Day)",
+					"entries": [
+						"The ninja throws a smoke bomb at a point up 60 ft.. The area within a 5 ft. radius of the impact immediately becomes heavily obscured. A moderate wind (at least 10 miles per hour) disperses the smoke in 4 rounds; a strong wind (20 or more miles per hour) disperses it in one round. Otherwise, that smoke dissipates after 1 minute."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"reaction": [
+				{
+					"name": "Deflect Missile",
+					"entries": [
+						"In response to being hit by a ranged weapon, the ninja deflects the missile. The damage it takes from the attack is reduced by {@dice 1d10 + 4}. If the damage is reduced to 0, the ninja catenes the missile if it is small enough to hold in one hand end the ninja has a free hand."
+					]
+				}
 			]
 		}
 	]
