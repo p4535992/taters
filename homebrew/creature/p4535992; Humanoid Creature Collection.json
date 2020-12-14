@@ -1150,6 +1150,251 @@
 			"conditionInflict": [
 				"grappled"
 			]
+		},
+		{
+			"name": "Darkblade Agent",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"source": "p4535992Humanoid",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d8 + 16",
+				"average": 89
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 11,
+			"int": 10,
+			"wis": 15,
+			"cha": 14,
+			"passive": 14,
+			"cr": "3",
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"{@link Darkblade Agents|https://www.reddit.com/r/Pauper/comments/9fixlr/grn_darkblade_agent/} are the most common type of Fieldagents of the Dimir. While they can kill it is not their primary objective. They do recon and basic spywork. So if they are not identified they will mostlikely flee the scene instead of starting an open fight."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/MyzhXcr.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/VgBuPd7.png",
+			"shortName": "Darkblade Agent",
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"stealth": "+8",
+				"perception": "+4"
+			},
+			"trait": [
+				{
+					"name": "Surveil 2th Level",
+					"entries": [
+						"Once per day the Darkblade Agent is able to activate Surveil. By doing so it can see any living organism in a 20ft. radius. if it focuses on a creature it can see or succeeds a {@dc 15} wisdom check to focus on a creature it knows. It is able to see any physical and magical tails it has left behind, such as footsteps or energy left by cast spells. This lasts for 2 minutes. When questioned, this creature will tatk back instead of answering."
+					]
+				},
+				{
+					"name": "Servelled skill",
+					"entries": [
+						"While the Darkblade agent is using its Surveil ability the darkblade agent deals an extra {@damage 1d8} necrotic damage, this damage lowers the maximum hit points of the creature hit. Additionally whenever the darkblade agent successfully hits a creature it regains one round of surveil."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The darkblade agent makes two attacks with its daggers or two with its throwing daggers"
+					]
+				},
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 30/60 ft., one target. {@h}5 ({@damage 1d4}) piercing damage in melee, or 5 ({@damage 1d4}) piercing damage at range."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"THW"
+			]
+		},
+		{
+			"name": "Pirate Captain",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"source": "p4535992Humanoid",
+			"alignment": [
+				"C",
+				"G",
+				"NY",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d8 + 18",
+				"average": 99
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 20,
+				"swim": {
+					"number": 20,
+					"condition": "when Vehicles (water) + 10 ft."
+				}
+			},
+			"str": 10,
+			"dex": 18,
+			"con": 13,
+			"int": 15,
+			"wis": 9,
+			"cha": 17,
+			"passive": 9,
+			"cr": "7",
+			"tokenUrl": "https://i.imgur.com/FbkKBel.png",
+			"fluff": {
+				"entries": [
+					"{@link Pirate Captain - 5e monster (CR7ish..)|https://www.reddit.com/r/UnearthedArcana/comments/8bd71d/pirate_captain_5e_monster_cr7ish/}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/Qk1sugy.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"coastal"
+			],
+			"shortName": "Pirate Captain",
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"acrobatics": "+7",
+				"athletics": "+3",
+				"deception": "+6"
+			},
+			"trait": [
+				{
+					"name": "Lightfooted",
+					"entries": [
+						"The captain can take the Dash or Disengage action as a bonus action on each of its turns."
+					]
+				},
+				{
+					"name": "Sea Legs",
+					"entries": [
+						"The captain has advantage on Strength and Dexterity checks made while standing on a waterborne vehicle (as described on page 157 of the Players Handbook)."
+					]
+				},
+				{
+					"name": "Sneak Attack (1/Tum)",
+					"entries": [
+						"The captain deals an extra 14 ({@damage 6d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the captain that isn't {@condition incapacitated} and the captain doesn't have disadvantage on the attack roll."
+					]
+				},
+				{
+					"name": "Suave Defense",
+					"entries": [
+						"The captain deals an extra 14 ({@damage 6d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the captain that isn't {@condition incapacitated} and the captain doesn't have disadvantage on the attack roll."
+					]
+				}
+			],
+			"conditionInflict": [
+				"prone",
+				"incapacitated"
+			],
+			"traitTags": [
+				"Sneak Attack"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The captain makes three attacks: one with its whip and two with its rapier."
+					]
+				},
+				{
+					"name": "Rapier",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Whip",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}6 ({@damage 1d4 + 4}) slashing damage. If the target a Medium or smaller creature, it must make a {@dc 15} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			]
 		}
 	]
 }
