@@ -1,0 +1,210 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "p4535992HumanoidSpecial",
+				"abbreviation": "Humanoid Special Collection (version 1.0)",
+				"full": "Humanoid Special Collection (version 1.0)",
+				"authors": [
+					"The community (Roll20,Reddit,Pinterest,ecc.) if with link put in the description of monster"
+				],
+				"convertedBy": [
+					"p4535992"
+				],
+				"version": "2020.12.15",
+				"url": "",
+				"targetSchema": "1.6.3"
+			}
+		],
+		"dateAdded": 1608058117,
+		"dateLastModified": 1608058117
+	},
+	"monster": [
+		{
+			"name": "Mareena Feywinter Teacher of History",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"high elf",
+					"wizard"
+				]
+			},
+			"source": "p4535992HumanoidSpecial",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@spell mage armor}",
+						"{@item ring of protection}",
+						"{@item robe of protection}",
+						"defender {@item staff|phb} +1"
+					]
+				}
+			],
+			"hp": {
+				"formula": "11d6",
+				"average": 55
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 17,
+			"con": 11,
+			"int": 20,
+			"wis": 16,
+			"cha": 16,
+			"passive": 17,
+			"cr": "4",
+			"isNpc": true,
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"{@link Mareena Feywinter Teacher of History|https://www.pinterest.se/pin/747316131909356899/}",
+					"Interaction(Acolite of Mika):",
+					"Personality: I idolize a particular hero of my faith, and constantly refer to that person's deeds and example(Zeeke).",
+					"Ideal: Faith. I trust that my deity will guide my actions, I have faith that if I work hard, things will go well. (Lawful)",
+					"Bond: I owe my life to the priest who took me in when my parents died.",
+					"Flaw: I judge others harshly, and myself even more severely."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/xf9qXTY.png"
+						}
+					}
+				]
+			},
+			"shortName": "Mareena Feywinter Teacher of History",
+			"languages": [
+				"Common",
+				"Primordial",
+				"Draconic"
+			],
+			"languageTags": [
+				"C",
+				"P",
+				"DR"
+			],
+			"save": {
+				"wis": "+7",
+				"int": "+9"
+			},
+			"skill": {
+				"arcana": "+8",
+				"history": "+8",
+				"religion": "+9",
+				"perception": "+7",
+				"insight": "+7"
+			},
+			"trait": [
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"The mareena feywinter teacher of history has advantage on saving throws against being {@condition charmed}, and magic can't put the mareena feywinter teacher of history to sleep."
+					]
+				},
+				{
+					"name": "Arcane Recovery",
+					"entries": [
+						"Once per long rest, during short rest restore up to 6 spell levels in slots."
+					]
+				},
+				{
+					"name": "Expert divination The third eye",
+					"entries": [
+						"See {@condition invisible}, see etheral plane, darkvision, read any language as an action, once per long rest."
+					]
+				},
+				{
+					"name": "Portent",
+					"entries": [
+						"can substitute any one roll for a 3 and a 18"
+					]
+				}
+			],
+			"traitTags": [
+				"Fey Ancestry"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Wizard is an level 11 spellcaster. His spellcasting ability is Intelligence (spell save DC:18, +10 with spell attacks):"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell light}",
+								"{@spell message}",
+								"{@spell minor illusion}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell comprehend languages}",
+								"{@spell mage armor}",
+								"{@spell magic missile}",
+								"{@spell protection from evil and good}",
+								"{@spell sleep}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell hold person}",
+								"{@spell locate object}",
+								"{@spell misty step}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell dispel magic}",
+								"{@spell glyph of warding}",
+								"{@spell sending}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell arcane eye}",
+								"{@spell dimension door}",
+								"{@spell locate creature}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell animate objects}",
+								"{@spell scrying}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell true seeing}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"tokenUrl": "https://i.imgur.com/49KmebE.png"
+		}
+	]
+}
