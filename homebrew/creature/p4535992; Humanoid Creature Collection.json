@@ -6,7 +6,7 @@
 				"abbreviation": "Humanoid Collection (version 1.0)",
 				"full": "Humanoid Collection (version 1.0)",
 				"authors": [
-					"The community (Roll20,Reddit,Pinterest,ecc.) if with link put in the description of monster"
+					"The community (Roll20,Reddit,Pinterest,ecc.) if with a link i put in the description of monster"
 				],
 				"convertedBy": [
 					"p4535992"
@@ -1632,6 +1632,237 @@
 				"B",
 				"L",
 				"N"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "The Bastion",
+			"size": "M",
+			"type": "humanoid",
+			"source": "p4535992Humanoid",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item plate armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d8 + 52",
+				"average": 110
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 11,
+			"con": 18,
+			"int": 12,
+			"wis": 14,
+			"cha": 10,
+			"passive": 12,
+			"cr": "7",
+			"fluff": {
+				"entries": [
+					"{@link The Bastion|https://deadmanstales.wordpress.com/2018/02/18/the-bastion/}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/FTMa0FR.png"
+						}
+					}
+				]
+			},
+			"isNpc": true,
+			"environment": [
+				"urban"
+			],
+			"tokenUrl": "https://i.imgur.com/H5EFY84.png",
+			"shortName": "The Bastion",
+			"languages": [
+				"Any one language (usually common)"
+			],
+			"save": {
+				"str": "+7",
+				"con": "+7"
+			},
+			"skill": {
+				"athletics": "+7",
+				"intimidation": "+3"
+			},
+			"trait": [
+				{
+					"name": "Brute",
+					"entries": [
+						"A melee weapon deals one extra die of its damage when the the bastion hits with it."
+					]
+				},
+				{
+					"name": "Shelter",
+					"entries": [
+						"Alties within 5 feet of the bastion gain a +2 bonus to their AC, if the Bastion is not {@condition prone} or {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Shield Charge",
+					"entries": [
+						"If the bastion moves at least 10 feet straight toward a target and then hits it with its flail on the same tum, the target takes an extra 13 {{@dice 3d8}) bludgeoning damage. if the target is a Creature, it must succeed on a {@dc 15} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"traitTags": [
+				"Brute"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The bastion makes two weapon attacks."
+					]
+				},
+				{
+					"name": "Flail",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Javelin",
+					"entries": [
+						"{@atk mw,rw} {@hit 7} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage in melee, or 11 ({@damage 2d6 + 4}) piercing damage at range."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"reaction": [
+				{
+					"name": "Block",
+					"entries": [
+						"The bastion adds +3 AC against an attack that would normally hit it. To do so, the bastion must see the attacker and be wielding a shield."
+					]
+				}
+			]
+		},
+		{
+			"name": "Elite Arrester",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any"
+				]
+			},
+			"source": "ssss",
+			"alignment": [
+				"NX",
+				"NY",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d8 + 39",
+				"average": 97
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 17,
+			"int": 12,
+			"wis": 14,
+			"cha": 14,
+			"passive": 12,
+			"cr": "3",
+			"fluff": {
+				"entries": [
+					"{@link Elite Arrester|https://ravnicacardsconverted.tumblr.com/post/620214122202660864/join-the-ravnica-cards-converted-discord-and-come}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/dl03zFo.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"urban"
+			],
+			"isNpc": true,
+			"tokenUrl": "https://i.imgur.com/jtUIEh0.png",
+			"shortName": "Elite Arrester",
+			"languages": [
+				"Common",
+				"And any other two language"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"athletics": "+6",
+				"intimidation": "+4"
+			},
+			"trait": [
+				{
+					"name": "Nonleathal Fighter",
+					"entries": [
+						"When the Elite Arrester is attacking nonleathally the attack deals an extra die of damage. "
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Elite Arrester attacks twice with its warhammer."
+					]
+				},
+				{
+					"name": "Warhammer",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d12 + 4}) bludgeoning damage, or 10 ({@damage 1d12 + 4}) bludgeoning damage if used with both hands."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B"
 			],
 			"miscTags": [
 				"MW"
