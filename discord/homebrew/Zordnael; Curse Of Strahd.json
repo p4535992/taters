@@ -1,0 +1,75 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Zordnael",
+				"abbreviation": "Zord",
+				"full": "Zordnael",
+				"authors": [
+					"Zordnael"
+				],
+				"convertedBy": [
+					"Zordnael"
+				],
+				"version": "1.0.0",
+				"targetSchema": "1.3.3",
+				"url": "https://github.com/Zordnael/Zordnael-Homebrew"
+			}
+		],
+		"dateAdded": 1608406489,
+		"dateLastModified": 1608406489
+	},
+	"optionalfeature": [
+		{
+			"name": "Diamond Dust",
+			"source": "Zordnael",
+			"featureType": "MV",
+			"prerequisite": [
+				{
+					"feature": [
+						"Silver Soul"
+					]
+				}
+			],
+			"entries": [
+				"When you take the Dragonborn Breath Weapon action, you can expend one superioty die to increse its range and damage. The range of the Breath Weapon is doubled and every damage dice turns into the superioty die used. Example: if your Breath Weapon normally deals {@dice 4d6} damage, has 15 ft. cone range and the expended superiority die is a d10, when you use this maneuver, the Breath Weapon would instead deal {@dice 4d10} damage and have 30 ft. cone range."
+			]
+		},
+		{
+			"name": "Spectral Wings",
+			"source": "Zordnael",
+			"featureType": "MV",
+			"prerequisite": [
+				{
+					"feature": [
+						"Silver Soul"
+					]
+				}
+			],
+			"entries": [
+				"When you fall from any height, you can expend your superiority die and use your reaction to protect yourself from any fall damage. When you do so, your falling rate becomes 60 ft per round until you land. The first time you hit a creature with an attack before landing, you can add your superiority die to the damage."
+			]
+		}
+	],
+	"feat": [
+		{
+			"name": "Silver Soul",
+			"source": "Zordnael",
+			"prerequisite": [
+				{
+					"other": "Requires the blessing of Argynvost, a Breath Weapon and a superiority die"
+				}
+			],
+			"entries": [
+				"Part of Argynvost's spirit now resides within you, making it possible to for you to use an extent of his power for a short period of time. You learn the following Battlemaster maneuvers:",
+				{
+					"type": "list",
+					"items": [
+						"{@optfeature Diamond Dust|Zordnael|Diamond Dust}. When you take the Dragonborn Breath Weapon action, you can expend one superioty die to increse its range and damage. The range of the Breath Weapon is doubled and every damage dice turns into the superioty die used. Example: if your Breath Weapon normally deals {@dice 4d6} damage, has 15 ft. cone range and the expended superiority die is a d10, when you use this maneuver, the Breath Weapon would instead deal {@dice 4d10} damage and have 30 ft. cone range.",
+						"{@optfeature Spectral Wings|Zordnael|Spectral Wings}. When you fall from any height, you can expend your superiority die and use your reaction to protect yourself from any fall damage. When you do so, your falling rate becomes 60 ft per round until you land. The first time you hit a creature with an attack before landing, you can add your superiority die to the damage."
+					]
+				}
+			]
+		}
+	]
+}
