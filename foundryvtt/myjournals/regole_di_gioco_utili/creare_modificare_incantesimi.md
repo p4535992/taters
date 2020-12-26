@@ -67,7 +67,7 @@ You can use different damage dice than the ones in the table, provided that the 
 ### Tabella per danni magici di incantesimi con TS Positivo
 
 | Spell Level | One Target | Multiple Targets |
-|-------------|:----------:|:----------------:|
+|:-----------:|:----------:|:----------------:|
 | Cantrip | 1d10 | 1d6 | 
 | 1st | 2d10 | 2d6 |
 | 2nd | 3d10 | 4d6 |
@@ -82,7 +82,7 @@ You can use different damage dice than the ones in the table, provided that the 
 ### Tabella per danni magici di incantesimi con TS Negativo
 
 | Spell Level | One Target | Multiple Targets |
-|-------------|:----------:|:----------------:|
+|:-----------:|:----------:|:----------------:|
 | 1st | 3d8 | 2d8 |
 | 2nd | 6d6 | 6d6 |
 | 3rd | 6d10 | 4d12 |

@@ -17,7 +17,7 @@ Use the Magic Item Power by Rarity table as a guide to help you determine how po
 Macic Item Power by Rarity 
 
 | Rarity | Max Spell Level | Max Bonus |
-|--------|:---------------:|:---------:|
+|:------:|:---------------:|:---------:|
 | Common | 1st | - |
 | Uncommon | 3th | +1 |
 | Rare | 6th | +2 |

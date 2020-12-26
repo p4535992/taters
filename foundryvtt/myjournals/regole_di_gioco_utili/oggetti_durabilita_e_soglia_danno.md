@@ -9,7 +9,7 @@ Quando il tempo è un fattore determinante, puoi assegnare una Classe Armatura e
 Classe armatura. La Classe Armatura di un oggetto misura quanto sia difficile infliggere danni all'oggetto quando lo colpisce (perché l'oggetto non ha possibilità di schivare). La tabella Classe armatura oggetto fornisce valori AC suggeriti per varie sostanze.
 
 | Substance              | AC |
-|------------------------|:--:|
+|:----------------------:|:--:|
 | Cloth, paper, rope     | 11 |
 | Crystal, glass, ice    | 13 |
 | Wood, bone             | 15 |
@@ -23,7 +23,7 @@ Classe armatura. La Classe Armatura di un oggetto misura quanto sia difficile in
 I punti ferita di un oggetto misurano quanto danno può subire prima di perdere la sua integrità strutturale. Gli oggetti resilienti hanno più punti ferita di quelli fragili. Gli oggetti grandi tendono anche ad avere più punti ferita di quelli piccoli, a meno che rompere una piccola parte dell'oggetto non sia efficace quanto rompere l'intero oggetto. La tabella Punti ferita oggetto fornisce punti ferita suggeriti per oggetti fragili e resistenti che sono grandi o più piccoli.
 
 | Size                                  | Fragile  | Resilient |
-|---------------------------------------|:--------:|:---------:|
+|:-------------------------------------:|:--------:|:---------:|
 | Tiny (bottle, lock)                   | 2 (1d4)  | 5 (2d4)   |
 | Small (chest, lute)                   | 3 (1d6)  | 10 (3d6)  |
 | Medium (barrel, chandelier)           | 4 (1d8)  | 18 (4d8)  |
@@ -42,7 +42,7 @@ Gli oggetti sono immuni al veleno e ai danni psichici. Potresti decidere che alc
 Oggetti grandi come le mura del castello spesso hanno una resilienza extra rappresentata da una soglia di danno. Un oggetto con una soglia di danno ha immunità a tutti i danni a meno che non subisca una quantità di danni da un singolo attacco o effetto uguale o superiore alla sua soglia di danno, nel qual caso subisce danni normalmente. Qualsiasi danno che non raggiunge o supera la soglia di danno dell'oggetto è considerato superficiale e non riduce i punti ferita dell'oggetto.
 
 | Material   | Damage |
-|------------|:------:|
+|:----------:|:------:|
 | Wood       | 10     |
 | Stone      | 20     |
 | Metal      | 25     |
