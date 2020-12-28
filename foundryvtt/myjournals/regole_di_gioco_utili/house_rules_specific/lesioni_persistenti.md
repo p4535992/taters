@@ -10,7 +10,7 @@ Il combattimento è qualcosa di brutale, e coloro che si scontrano non sono pupa
 
 subirà una lesione persistente. La ferita viene determinata casualmente tirando un dado nella tabella sottostante.
 
-| Roll D20 | Lesione Persistente | Descrizione |
+| Roll D20 &nbsp; | Lesione Persistente | Descrizione |
 |:--------:|:-------------------:|:-----------:|
 | 1	       | Perdita di un occhio. | Hai svantaggio sulle prove di Saggezza (Percezione) relative alla vista e sui tiri per colpire con armi a distanza. Magie come rigenerazione possono ripristinare l’occhio perso. Se non hai più occhi rimasti dopo che subisci questa ferita, sei accecato. |
 | 2	       | Perdita di un braccio o una mano. | Non puoi più portare nulla con due mani, e puoi tenere un singolo oggetto per volta. Magie come rigenerazione possono ripristinare l’appendice mancante.
@@ -38,7 +38,7 @@ The damages types are:
 
 #### Acid
 
-|d20|Lingering Injury|
+|       d20       | Lingering Injury |
 |:----:|:--------------:|
 |1|Blindness. Your eyes are destroyed; you gain the blinded condition. Magic such as the regenerate spell can restore your sight.|
 |2|Partial Blindness. Your eyes are damaged; you have disadvantage on Wisdom (Perception) checks that rely on sight and on ranged attack rolls. Magic such as the regenerate spell can heal the damage to your eyes. If you have already suffered partial blindness, you're blinded.|
@@ -52,7 +52,7 @@ The damages types are:
 
 #### Bludgeoning
 
-|d20|Lingering Injury|
+|       d20       | Lingering Injury |
 |:----:|:--------------:|
 |1|Brain Injury. You have suffered a brain injury. You have disadvantage on Intelligence, Wisdom, and Charisma checks, as well as Intelligence, Wisdom, and Charisma saving throws. If you fail a saving throw against bludgeoning damage, force damage, or psychic damage, you are also stunned until the end of your next turn. Magic such as the regenerate spell can restore your full brain function.|
 |2|Broken leg. Your speed on foot is halved, and you must use a cane or crutch to move. You fall prone after using the Dash action. You have disadvantage on Dexterity checks made to balance. If your leg is splinted with a successful DC 15 Wisdom (Medicine) check, then magical healing of 6th level or higher, such as heal and regenerate, mends the broken leg , or it will heal naturally in 8 weeks. If it is not splinted before it's healed or allowed to heal, the effects remain until it is rebroken and splinted.|
@@ -66,7 +66,7 @@ The damages types are:
 
 #### Cold
 
-|d20|Lingering Injury|
+|       d20       | Lingering Injury |
 |:----:|:--------------:|
 |1|Ocular Damage. One of your corneas is damaged from frostbite. You have disadvantage on Wisdom (Perception) checks that rely on sight and on ranged attack rolls. Magic such as the regenerate spell can restore the damaged cornea. If you have no corneas that remain undamaged after sustaining this injury, you're blinded.|
 |2|Systemic Damage from Frostbite. You have disadvantage on Strength, Dexterity, and Constitution ability checks and Strength, Dexterity, and Constitution saving throws. Magic such as the regenerate spell cures this damage.|
@@ -80,7 +80,7 @@ The damages types are:
 
 #### Fire
 
-|d20|Lingering Injury|
+|       d20       | Lingering Injury |
 |:----:|:--------------:|
 |1|Lose an Eye. You have disadvantage on Wisdom (Perception) checks that rely on sight and on ranged attack rolls. Magic such as the regenerate spell can restore the lost eye. If you have no eyes left after sustaining this injury, you're blinded.|
 |2|Fourth Degree Burns. You have disadvantage on ability checks and Strength, Dexterity, and Constitution saving throws. If you fail a saving throw against an effect that causes fire damage, you also gain the stunned condition until the end of your next turn. Magic such as the regenerate spell cures this damage. If you already have fourth degree burns, you must succeed at a DC 15 Constitution saving throw or die.|
@@ -95,7 +95,7 @@ The damages types are:
 
 #### Force
 
-|d20|Lingering Injury|
+|       d20       | Lingering Injury |
 |:----:|:--------------:|
 |1|Brain Injury. You have suffered a brain injury. You have disadvantage on Intelligence, Wisdom, and Charisma checks, as well as Intelligence, Wisdom, and Charisma saving throws. If you fail a saving throw against bludgeoning damage, force damage, or psychic damage, you are also stunned until the end of your next turn. Magic such as the regenerate spell can restore your full brain function.|
 |2|Broken leg. Your speed on foot is halved, and you must use a cane or crutch to move. You fall prone after using the Dash action. You have disadvantage on Dexterity checks made to balance. If your leg is splinted with a successful DC 15 Wisdom (Medicine) check, then magical healing of 6th level or higher, such as heal and regenerate, mends the broken leg , or it will heal naturally in 8 weeks. If it is not splinted before it's healed or allowed to heal, the effects remain until it is rebroken and splinted.|
@@ -109,7 +109,7 @@ The damages types are:
 
 #### Lightning
 
-|d20|Lingering Injury|
+|       d20       | Lingering Injury |
 |:----:|:--------------:|
 |1|Brain Injury. You have suffered a brain injury. You have disadvantage on Intelligence, Wisdom, and Charisma checks, as well as Intelligence, Wisdom, and Charisma saving throws. If you fail a saving throw against bludgeoning damage, force damage, or psychic damage, you are also stunned until the end of your next turn. Magic such as the regenerate spell can restore your full brain function.|
 |2|Explosive Grounding of the Hand. You lose a hand. You can no longer hold anything with two hands, and you can hold only a single object at a time. Magic such as the regenerate spell can restore the lost appendage.|
@@ -123,7 +123,7 @@ The damages types are:
 
 #### Necrotic
 
-|d20|Lingering Injury|
+|       d20       | Lingering Injury |
 |:----:|:--------------:|
 |1|Spiritual Injury. You are afflicted with intense apathy and depression. You have disadvantage on Intelligence, Wisdom, and Charisma ability checks and Intelligence, Wisdom, and Charisma saving throws. Magic such as the heal or regenerate spell can resolve your spiritual injury, but such spells must be cast by a cleric, druid, or other class that uses divine magic.|
 |2|Withered Hand. You lose a hand. You can no longer hold anything with two hands, and you can hold only a single object at a time. Magic such as the regenerate spell can restore the lost appendage.|
@@ -137,7 +137,7 @@ The damages types are:
 
 #### Piercing
 
-|d20|Lingering Injury|
+|       d20       | Lingering Injury |
 |:----:|:--------------:|
 |1|Lose an Eye. You have disadvantage on Wisdom (Perception) checks that rely on sight and on ranged attack rolls. Magic such as the regenerate spell can restore the lost eye. If you have no eyes left after sustaining this injury, you're blinded.|
 |2|Throat Injury. You gain a level of exhaustion which cannot be removed by normal means. You also have disadvantage on constitution checks. Magic such as the regenerate spell can heal your throat injury.|
@@ -151,7 +151,7 @@ The damages types are:
 
 #### Poison
 
-|d20|Lingering Injury|
+|       d20       | Lingering Injury |
 |:----:|:--------------:|
 |1|Systemic Damage. You have disadvantage on Strength, Dexterity, and Constitution ability checks and Strength, Dexterity, and Constitution saving throws. Magic such as the regenerate spell cures this damage.|
 |2|Major Liver Damage. When you complete a long rest, you must succeed at a Constitution saving throw DC 15 or gain the poisoned condition until you complete a long rest. Additionally, whenever you take poison damage, you take an additional 3 (1d6) poison damage. Anytime you drink alcohol or take another drug, you take 3 (1d6) poison damage. Magic such as the regenerate spell can cure your liver failure.|
@@ -165,7 +165,7 @@ The damages types are:
 
 #### Psychic
 
-|d20|Lingering Injury|
+|       d20       | Lingering Injury |
 |:----:|:--------------:|
 |1|Brain Injury. You have suffered a brain injury. You have disadvantage on Intelligence, Wisdom, and Charisma checks, as well as Intelligence, Wisdom, and Charisma saving throws. If you fail a saving throw against bludgeoning damage, force damage, or psychic damage, you are also stunned until the end of your next turn. Magic such as the regenerate spell can restore your full brain function.|
 |2|Indefinite Madness. Roll on the Indefinite Madness table in the Dungeon Masters Guide.|
@@ -179,7 +179,7 @@ The damages types are:
 
 #### Radiant
 
-|d20|Lingering Injury|
+|       d20       | Lingering Injury |
 |:----:|:--------------:|
 |1|Blindness. Your eyes are destroyed; you gain the blinded condition. Magic such as the regenerate spell can restore your sight.|
 |2|Partial Blindness. Your retinas are damaged; you have disadvantage on Wisdom (Perception) checks that rely on sight and on ranged attack rolls. Magic such as the regenerate spell can restore the lost eye. If you have already suffered partial blindness, you're blinded.|
@@ -193,7 +193,7 @@ The damages types are:
 
 #### Slashing
 
-|d20|Lingering Injury|
+|       d20       | Lingering Injury |
 |:----:|:--------------:|
 |1|Lose an Eye. You have disadvantage on Wisdom (Perception) checks that rely on sight and on ranged attack rolls. Magic such as the regenerate spell can restore the lost eye. If you have no eyes left after sustaining this injury, you're blinded.|
 |2|Lose an Arm or a Hand. You can no longer hold anything with two hands, and you can hold only a single object at a time. Magic such as the regenerate spell can restore the lost appendage.|
@@ -207,7 +207,7 @@ The damages types are:
 
 #### Thunder
 
-|d20|Lingering Injury|
+|       d20       | Lingering Injury |
 |:----:|:--------------:|
 |1|Brain Injury. You have suffered a brain injury. You have disadvantage on Intelligence, Wisdom, and Charisma checks, as well as Intelligence, Wisdom, and Charisma saving throws. If you fail a saving throw against bludgeoning damage, force damage, or psychic damage, you are also stunned until the end of your next turn. Magic such as the regenerate spell can restore your full brain function.|
 |2|Deafness. Your eardrums have been destroyed; you gain the deafened condition. Magic such as the regenerate spell can restore your hearing.|
@@ -223,8 +223,9 @@ The damages types are:
 
 ## <b> Credits </b>
 
-Il credito per queste informazioni va a [Legend of Avalon](https://legendofavalon.forumfree.it/?t=77893898)
+Il credito per queste informazioni va a:
 
-A compendium for use the Lingering Injuries by Damage Type, based on the article (http://farlandworld.com/injuries.html)
+- [Legend of Avalon](https://legendofavalon.forumfree.it/?t=77893898)
+- A compendium for use the Lingering Injuries by Damage Type, based on the article (http://farlandworld.com/injuries.html)
 
  

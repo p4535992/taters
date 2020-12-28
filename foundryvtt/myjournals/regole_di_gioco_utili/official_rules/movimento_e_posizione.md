@@ -51,4 +51,5 @@ Una creatura può stringersi in uno spazio grosso a sufficienza perché vi entri
 
 ## <b> Credits </b>
 
-Il credito per queste informazioni va a [Legend of Avalon](https://legendofavalon.forumfree.it/?t=77886408)
+Il credito per queste informazioni va a:
+- [Legend of Avalon](https://legendofavalon.forumfree.it/?t=77886408)

@@ -31,6 +31,63 @@ Le azioni più comuni che puoi effettuare sono descritte più avanti in questo c
 Più avanti in questo capitolo, la sezione “Movimento e Posizione” ti fornisce regole per il movimento.
 Durante il tuo turno puoi anche non muoverti, non effettuare azioni, o non fare proprio nulla. Se durante il tuo turno non riesci a decidere cosa fare, pensa a effettuare l’azione Schivare o Preparare, come descritto in “Azioni in Combattimento”.
 
+## Azioni di combattimento
+
+### Attack (Action)
+
+Make one melee or ranged attack with a weapon, or multiple attacks with the ‘Extra Attack’ class ability (see ‘Attack Actions’ below.)
+
+### Dash (Action)
+
+Gain your speed as extra movement for this turn.
+
+### Disengage (Action)
+
+Your movement doesn’t provoke opportunity attacks for this turn.
+
+### Dodge (Action)
+
+Attack rolls from attackers that you can see have disadvantage and you have advantage on Dexterity saving throws until the start of your next turn, until you become incapacitated, or your speed drops to 0.
+
+### Escape (Action)
+
+Escape a grapple by winning an Athletics or Acrobatics check against the grappler’s Athletics check.
+
+### Help (Action)
+
+Give an ally advantage on their next ability check or attack roll against an opponent within 5ft of you, if done before the start of your next turn.
+
+### Hide (Action)
+
+Hide from those that can’t perceive you. Your Stealth check is the DC for anybody’s Perception check to discover you.
+
+### Overrun (Action or Bonus Action)
+
+Move through hostile’s space once by winning an opposing Athletics check. Advantage if you are larger or disadvantage if you are smaller.
+
+### Ready (Action)
+
+Choose an Action that you will take in response to a set trigger. Taking the Action uses your Reaction. Readying a spell requires concentration.
+
+### Search (Action)
+
+Search or something, possibly with a Perception or Investigation check.
+
+### Tumble (Action or Bonus Action)
+
+Move through hostile’s space by wining an opposing Acrobatics check.
+
+### Use Object (Action)
+
+You can interact with an object once per turn for free. A second interaction and special cases take an Action to complete (drawing a second weapon, drinking a potion, equipping a shield, etc)
+
+### Cover
+
+- Half: +2 to AC and Dexterity saving throws
+- 3/4 : +5 to AC and Dexterity saving throws
+- Total: Can’t be targeted directly by an attack or spell
+
+
 ## Azioni Bonus
 
 Diversi privilegi di classe, incantesimi e capacità speciali ti permettono di effettuare un’azione aggiuntiva durante il tuo turno, detta azione bonus. Il privilegio Azione Astuta, per esempio, permette al ladro di effettuare un’azione bonus. Puoi effettuare un’azione bonus solo quando una capacità speciale, incantesimo o altro elemento del gioco indica che puoi fare qualcosa come azione bonus. Altrimenti non puoi effettuare alcuna azione bonus.
@@ -77,4 +134,6 @@ Quando effettui una reazione, non ne puoi effettuare un’altra fino all’inizi
 
 ## <b> Credits </b>
 
-Il credito per queste informazioni va a [Legend of Avalon](https://legendofavalon.forumfree.it/?t=77886408)
+Il credito per queste informazioni va a:
+
+- [Legend of Avalon](https://legendofavalon.forumfree.it/?t=77886408)

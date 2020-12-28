@@ -1,0 +1,72 @@
+{
+	"$schema": "../schema.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "p4535992Spells",
+				"abbreviation": "p4535992Spells",
+				"full": "Spells Collection (version 1.0)",
+				"authors": [
+					"The community (Roll20,Reddit,Pinterest,ecc.) if with a link i put in the description of monster"
+				],
+				"convertedBy": [
+					"p4535992"
+				],
+				"url": "",
+				"version": "1.0.0",
+				"color": "8A2BE2"
+			}
+		],
+		"dateAdded": 1594364848,
+		"dateLastModified": 1594364846
+    },
+	"spell": [
+		{
+            "name": "Being of Shadow",
+            "source": "HFDRWizardSchoolofNethermancy",
+			"level": 5,
+			"school": "Evocation",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You gain 10 temporary hit points. Until the end of your next turn, you gain a flying speed equal to twice your speed, you are insubstantial and phasing, and creatures take a -2 penalty to attack rolls while within five feet of you."
+			],
+			"components": {
+				"s": true,
+				"v": true
+			},
+			"areaTags": [
+				"ST",
+				"S"
+			],
+			"entriesHigherLevel": []
+        }
+	]
+}
