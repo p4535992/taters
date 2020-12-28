@@ -7,7 +7,7 @@
 				"abbreviation": "p4535992Spells",
 				"full": "Spells Collection (version 1.0)",
 				"authors": [
-					"The community (Roll20,Reddit,Pinterest,ecc.) if with a link i put in the description of monster"
+					"The community (Roll20,Reddit,Pinterest,ecc.) if with a link i put in the description of spell"
 				],
 				"convertedBy": [
 					"p4535992"
@@ -22,10 +22,10 @@
     },
 	"spell": [
 		{
-            "name": "Being of Shadow",
-            "source": "HFDRWizardSchoolofNethermancy",
+			"name": "Ivaldi",
+			"source": "p4535992Spells",
 			"level": 5,
-			"school": "Evocation",
+			"school": "V",
 			"time": [
 				{
 					"number": 1,
@@ -35,38 +35,77 @@
 			"range": {
 				"type": "point",
 				"distance": {
-					"type": "self"
+					"type": "feet",
+					"amount": 100
 				}
+			},
+			"components": {
+                "s": true
 			},
 			"duration": [
 				{
-					"type": "timed",
-					"duration": {
-						"type": "round",
-						"amount": 1
-					}
+					"type": "instant"
 				}
+			],
+			"entries": [
+				"You create a 20-foot-radius sphere of fire centered on a point within range. All enemies in an area you designate must make a Dexterity saving throw, being {@condition blinded} and taking {@dice 10d6} radiant damage on a failure, or half with no blind on a success."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@scaledamage 10d6|5-9|1d6}  radiant, for each slot level above 5th."
+					]
+				}
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"S"
 			],
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Wizard",
+						"name": "Cleric",
 						"source": "PHB"
 					}
 				]
 			},
-			"entries": [
-				"You gain 10 temporary hit points. Until the end of your next turn, you gain a flying speed equal to twice your speed, you are insubstantial and phasing, and creatures take a -2 penalty to attack rolls while within five feet of you."
-			],
-			"components": {
-				"s": true,
-				"v": true
+			"fluff": {
+				"entries": [
+					"The credits go to {@link Solar Domain|https://blackbandos-homebrew.fandom.com/wiki/Solar_Domain_(5e_Cleric_Archetype)}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/CiMGnFz.png"
+						}
+					}
+				]
 			},
-			"areaTags": [
-				"ST",
-				"S"
-			],
-			"entriesHigherLevel": []
-        }
+			"tokenUrl": "https://i.imgur.com/CiMGnFz.png",
+			"foundryData": {
+				"target.value": 20,
+				"target.units": "ft",
+				"target.type": "sphere",
+				"damage.parts.0.0": "10d6",
+				"damage.parts.0.1": "radiant"
+			}
+		}
 	]
 }
