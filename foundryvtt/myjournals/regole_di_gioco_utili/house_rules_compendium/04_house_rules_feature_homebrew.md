@@ -4,7 +4,7 @@
 
 ## Bonus Action
 
-### [Shield Wall](https://www.dandwiki.com/wiki/Shield_Wall_(5e_Feat)#:~:text=You%20can%20use%20your%20shield,gain%20a%20%2B1%20to%20AC.)
+### [Shield Wall](https://www.dandwiki.com/wiki/Shield_Wall_(5e_Feat))
 
 <b>Prerequisites:</b> Proficiency with Shields
 

@@ -18,6 +18,9 @@ As a reaction, whenever you take damage from a melee weapon attack or a weapon-l
 ## [Lucky](https://www.youtube.com/watch?v=nDfiw1SyQMk&feature=youtu.be)
 
 if you use the reaction "Lucky", on the attack you substract the  proficiency, but on the damage you add the double of your profiniency 
+
+<b>Esempio: </b>
+
 <i>
-e.g. if you have a dexterity proficiency by 3 and your weapon has “1d6” , you  attack with “1d6 – 3”, and if you succeded you make a “1d6+(2x3)” damage.
+if you have a dexterity proficiency by 3 and your weapon has “1d6” , you  attack with “1d6 – 3”, and if you succeded you make a “1d6+(2x3)” damage.
 </i>

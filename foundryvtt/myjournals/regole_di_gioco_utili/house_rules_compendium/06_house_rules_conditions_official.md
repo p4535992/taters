@@ -58,7 +58,9 @@ When your chosen foe is already grappling, you can use a melee attack to grab hi
 
 #### <b> If multiple opponents are involved in the grapple</b>
 
-If multiple opponents are involved in the grapple, you pick one to make the opposed grapple check against. In this case, you don't have to randomly determine which foe your grab attack strikes (see Part One). If that seems overly generous to you, you can require a full-round action to choose your target. As part of that action, you make the grab and the ensuing opposed grapple check to try and establish a hold.
+If multiple opponents are involved in the grapple, you pick one to make the opposed grapple check against. In this case, you don't have to randomly determine which foe your grab attack strikes (see Part One).
+ 
+If that seems overly generous to you, you can require a full-round action to choose your target. As part of that action, you make the grab and the ensuing opposed grapple check to try and establish a hold.
 
 
 #### <b>Ganging Up in a Grapple</b>
@@ -67,7 +69,13 @@ Up to four combatants can grapple a single opponent in a given round. Creatures 
 
 #### <b>When Your Foes Gang Up on You (wizard of the coast)</b>
 
-When you are grappling with multiple opponents, you usually choose one opponent and make an opposed check against that opponent. If you attempt to escape from the grapple, however, you must make grapple check against every foe that has hold of you. You make one check and compare it to your foes' check results. If you win all the opposed checks, you escape from all your foes. The rules don't say so, but it's reasonable to assume that if you don't win all the opposed checks, you don't escape from any of them (the holds you don't break keep you in place). According to the rules, escaping from multiple grapplers is the only time you have to beat all your foes' opposed rolls. Common sense suggests that moving multiple grapplers (see Part Two) also requires you to beat all their opposed grapple checks.
+When you are grappling with multiple opponents, you usually choose one opponent and make an opposed check against that opponent. 
+
+If you attempt to escape from the grapple, however, you must make grapple check against every foe that has hold of you. You make one check and compare it to your foes' check results. 
+
+If you win all the opposed checks, you escape from all your foes. The rules don't say so, but it's reasonable to assume that if you don't win all the opposed checks, you don't escape from any of them (the holds you don't break keep you in place). 
+
+According to the rules, escaping from multiple grapplers is the only time you have to beat all your foes' opposed rolls. Common sense suggests that moving multiple grapplers (see Part Two) also requires you to beat all their opposed grapple checks.
 
 #### <b>Throw a grappled target</b>
 

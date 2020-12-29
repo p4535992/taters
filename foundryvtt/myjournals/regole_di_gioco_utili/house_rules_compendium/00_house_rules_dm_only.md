@@ -159,9 +159,18 @@ You can follow the rules as above, but halve all of the results.
 
 If two creatures are both throwing a single creature, they both need to be grappling that creature. Both throwers make athletics checks and the results are added together to determine how far it can be thrown. If the creature being thrown is friendly, it can also make an acrobatics check (as per the rule above).
 
-### Glancing Blows
+## Glancing Blows
 
 <b>When an attack roll exactly hits the target’s AC, it is called a glancing blow. A glancing blow deals half damage to the target.</b>
 
 I like this rule because it gives another type of combat moment to describe at the table. Additionally, you could homebrew a monster and tweak this mechanic so that an entire range of its AC is a glancing blow. This would symbolize its armored hide or maybe the an extremely quick reaction speed. A large scaled creature might not be too difficult to hit so give it an AC of 15, but between 15 and 19 you would land a glancing blow for half damage. It would take a 20 or above to deal FULL damage. This is a great solution because it really sucks when players fight something with high AC and miss all the time, this lets em still feel like they are hacking this monster down.
 
+## Learn new Feature and Skills (Variant DMG p.231)
+
+A character who agrees to training as a reward must spend downtime with the trainer. In exchange, the character is guaranteed to receive a special benefit. Possible training benefits include the following:
+
+- The character gains inspiration daily at dawn for 1d4 + 6 days.
+- The character gains proficiency in a skill.
+- The character gains a feat.
+
+This is the official rule, BUT for obtain this you can have a max of 2 feat or skill learn on this way, if you want to learn a new one you must forgot one you already knew. And you must spend a bunch of days and gold with the master.

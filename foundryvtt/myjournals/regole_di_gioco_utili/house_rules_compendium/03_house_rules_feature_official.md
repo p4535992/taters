@@ -1,6 +1,6 @@
 # 03 -House Rules - Feature Official
 
-## War Caster clarifiation
+## War Caster clarification
 
 So, the entry in the PHB for Verbal (V) Components reads:
 
@@ -18,18 +18,24 @@ Spellcasting gestures might include a forceful gesticulation or an intricate set
 <b>Material (M)</b>
 
 Casting some spells requires particular objects, specified in parentheses in the component entry. A character can use a component pouch or a spellcasting focus (found in chapter 5, “Equipment”) in place of the components specified for a spell. But if a cost is indicated for a component, a character must have that specific component before he or she can cast the spell.
+
 If a spell states that a material component is consumed by the spell, the caster must provide this component for each casting of the spell.
 A spellcaster must have a hand free to access a spell's material components — or to hold a spellcasting focus — but it can be the same hand that he or she uses to perform somatic components.
 
 Ignoring Verbal Components because they do not factor in - Somatic and Material components work as follows:
-WITHOUT the War Caster feat. If the spell ONLY has Somatic , and no Material, Components:
+
+### <b>WITHOUT the War Caster feat. If the spell ONLY has Somatic , and no Material, Components:</b>
 
 - You need a completely empty hand to perform the Somatic Components of the spell.
-WITHOUT the War Caster feat. If the spell ONLY has Material , and no Somatic, Components:
+
+### <b>WITHOUT the War Caster feat. If the spell ONLY has Material , and no Somatic, Components:</b>
+
 - You either need an empty hand and a component pouch, or you need to be holding a spellcasting focus, to cast the spell.
 - If the Material Components have a cost, you need to be holding those specific materials to cast the spell.
 - If you use a Holy Symbol as a spellcasting focus, you can emblazon it onto a shield, and holding the shield itself would qualify as a Material Component.
-WITHOUT the War Caster feat. If the spell has BOTH Somatic AND Material Components:
+
+### <b>WITHOUT the War Caster feat. If the spell has BOTH Somatic AND Material Components:</b>
+
 - You can perform the Somatic Components with the same hand that is holding the Material Components, no matter which type of Material Components you are using.
 
 The relevant bullet point for the War Caster feat in the PHB reads:
@@ -37,15 +43,15 @@ The relevant bullet point for the War Caster feat in the PHB reads:
 You can perform the somatic components of spells even when you have weapons or a shield in one or both hands.
 </i>
 
-<b>With the War Caster feat, if the spell ONLY has Somatic, and no Material, Components:</b>
+### <b>With the War Caster feat, if the spell ONLY has Somatic, and no Material, Components:</b>
 
 - You are able to cast the spell with no issues.
   
-<b>With the War Caster feat, if the spell ONLY has Material, and no Somatic, Components:</b>
+### <b>With the War Caster feat, if the spell ONLY has Material, and no Somatic, Components:</b>
 
 - Nothing changes. See above.
 
-<b>With the War Caster feat, if the spell has BOTH Somatic AND Material Components:</b>
+### <b>With the War Caster feat, if the spell has BOTH Somatic AND Material Components:</b>
 
 - You either need an empty hand and a component pouch, or you need to be holding a spellcasting focus, to cast the spell, because the War Caster feat does not have any effect on Material Components.
 - If the spell requires Material Components with a cost, you need a free hand to hold those components in to cast the spell.
