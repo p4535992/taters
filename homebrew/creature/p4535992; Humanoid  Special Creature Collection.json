@@ -1377,6 +1377,146 @@
 				"R",
 				"P"
 			]
+		},
+		{
+			"name": "Ivan the Terrible",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"source": "p4535992HumanoidSpecial",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"special {@item plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d10 + 32",
+				"average": 127
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 9,
+			"con": 15,
+			"int": 14,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"cr": "4",
+			"fluff": {
+				"entries": [
+					"{@link Ivan the Terrible|https://valldoesdnd.tumblr.com/}",
+					"A man swom to evil after his beloved scomed him and left with another man, Ivan is well known as a plun- derer, mercenery for hire and pirate. Happy to work for gold, Ivan has no concern for the lives of those he hurts - viewing it only as his justice on a world that took everything from him.",
+					"He is often armed with crazed contraptions of his own creation, and has been known to supply other, more dangerous foes than himself with lange volumes of ex- perimental weaponry in exchange for plunder of his own. Adventurers should take care when facing him, for it is rare that he is found alone."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/0vMzSqL.png"
+						}
+					}
+				]
+			},
+			"shortName": "Ivan the Terrible",
+			"tokenUrl": "https://i.imgur.com/njX6gh3.png",
+			"isNpc": true,
+			"languages": [
+				"Common",
+				"Dwarvish"
+			],
+			"languageTags": [
+				"C",
+				"D"
+			],
+			"save": {
+				"con": "+4",
+				"int": "+4"
+			},
+			"skill": {
+				"athletics": "+7"
+			},
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons"
+				},
+				{
+					"resist": [
+						"thunder"
+					]
+				}
+			],
+			"trait": [
+				{
+					"name": "Ivan's Toybox",
+					"entries": [
+						"As a bonus action, lvan can choose to activate the Toybox, his homemade weapon system, Roll a {@dice 1d4}, Ivan’s attack action corresponds to that number until this ability is used again,"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Iavn the Terrible makes 1 attack from those listed below. He",
+						"always begins the fight with no.1 equipped until he uses his Toybox."
+					]
+				},
+				{
+					"name": "No.1 (Handgun)",
+					"entries": [
+						"{@atk rw} {@hit 1} to hit, range 5/10 ft., one target. {@h}6 ({@damage 1d10 + 1}) piercing damage."
+					]
+				},
+				{
+					"name": "No.2 (Chainsaw)",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}13 ({@damage 3d6 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "No.3 (Machinegun)",
+					"entries": [
+						"{@atk rw} {@hit 1} to hit, range 5/10 ft., one target. {@h}5 ({@damage 1d8 + 1}) piercing damage. The Machine fires 3 times. Roll seperately for each shot."
+					]
+				},
+				{
+					"name": "No.4 (Rocket Launcher)",
+					"entries": [
+						"{@atk rw} {@hit 1} to hit, range 25/50 ft., one target. {@h}10 ({@damage 3d6}) fire damage. Hit or miss, the rocket detonates after firing, dealing an additional (11) {@damage 2d10} fire damage to every creature within 5 ft. of the initial target. A successful Dexterity save (DC14} will half the damage,"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"S",
+				"F"
+			],
+			"miscTags": [
+				"RW",
+				"MW"
+			]
 		}
 	]
 }
