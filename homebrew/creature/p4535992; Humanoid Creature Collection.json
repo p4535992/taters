@@ -2274,7 +2274,7 @@
 					"human"
 				]
 			},
-			"source": "p4535992HumanoidSpecial",
+			"source": "p4535992Humanoid",
 			"alignment": [
 				"L",
 				"E"
@@ -2354,6 +2354,416 @@
 			],
 			"miscTags": [
 				"MW"
+			]
+		},
+		{
+			"name": "Sun Knight",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"source": "p4535992Humanoid",
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item breastplate|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "33d8 + 66",
+				"average": 214
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 14,
+			"int": 12,
+			"wis": 18,
+			"cha": 12,
+			"passive": 18,
+			"cr": "10",
+			"shortName": "Sun Knight",
+			"fluff": {
+				"entries": [
+					"{@link Sun Knight|https://www.pinterest.it/pin/747316131913640012/}",
+					"Touched with a divine grace by their deity, sun knights are pillars that the righteas dean upon to cosnbat the veil, They are bound by duty to end the existence of evil and carnipt creatures that turk in the shadows,",
+					"Beacon of Hope. Sun knights are able to channel the brightness of the sun itself through their holy symbols, iNuminating the darkest corners of the wortd so they can purge the wicked from the realm. This searing light burns away the impurities that hide in the darkness, bringing the warmth of the sun's glow to the creatures that shy away from its brilliance. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/Kv9hRqb.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/gFBZnlG.png",
+			"isNpc": true,
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"save": {
+				"con": "+6",
+				"wis": "+8"
+			},
+			"skill": {
+				"insight": "+8",
+				"perception": "+8",
+				"religion": "+7"
+			},
+			"immune": [
+				"radiant"
+			],
+			"trait": [
+				{
+					"name": "Illumination (1/Day)",
+					"entries": [
+						"The sun knight can use a bonus action to shed bright light in a 30 ft. radius and dim light for an additional 30 ft. .This light lasts for 1 minute and is sunlight."
+					]
+				}
+			],
+			"traitTags": [
+				"Illumination"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The sun knight sa 9th-level spellcaster. Its spellcasting ability 's Wisdom (spell save {@dc 16}, +8 to hit with spell attacks}. The sun knight has the following spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell light}",
+								"{@spell resistance}",
+								"{@spell sacred flame}",
+								"{@spell spare the dying}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell bless}",
+								"{@spell cure wounds}",
+								"{@spell sanctuary}",
+								"{@spell shield of faith}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell aid}",
+								"{@spell calm emotions}",
+								"{@spell prayer of healing}",
+								"{@spell zone of truth}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell aura of vitality}",
+								"{@spell crusader's mantle}",
+								"{@spell remove curse}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell aura of life}",
+								"{@spell death ward}",
+								"{@spell guardian of faith}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell circle of power}",
+								"{@spell raise dead}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The sun knight makes three attacks with its radiant longsword."
+					]
+				},
+				{
+					"name": "Radiant Longsword",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage, plus 13 ({@damage 3d8}) radiant damage."
+					]
+				},
+				{
+					"name": "Turn Unholy",
+					"entries": [
+						"Each fiend or undead that can see or hear the sun knight within 30 feet of t must make a {@dc 16} Wisdom savirg throw or become {@condition frightened} for 1 minute. A creature can repeat the svi ng throw at the end of each of its tums, encing the effect on itself on a success. If a creature's saving throw is successful or the effect cnds for it the creature is immune to the knight's Turn Unholy for the next 24 hours. The knight can use this action once per short rest."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S",
+				"R"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Blade Juggler",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any"
+				]
+			},
+			"source": "p4535992Humanoid",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item common clothes|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d8",
+				"average": 81
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 18,
+			"con": 11,
+			"int": 11,
+			"wis": 12,
+			"cha": 14,
+			"passive": 11,
+			"cr": "3",
+			"isNpc": true,
+			"fluff": {
+				"entries": [
+					"{@link Blade Juggler|https://ravnicacardsconverted.tumblr.com/post/612221643017830400/join-the-ravnica-cards-converted-discord-and-come}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/XYRC47m.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/LYrMweC.png",
+			"shortName": "Blade Juggler",
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"sleight of hand": "+6"
+			},
+			"trait": [
+				{
+					"name": "Blur of Blades",
+					"entries": [
+						"Until the blade juggler is hit or attacks, any incoming attack has disadvantage. the blade juggler may use an action to gain the benefit once more."
+					]
+				},
+				{
+					"name": "Spectacle: Retrieve blades",
+					"entries": [
+						"If the blade juggler has dealt damage to a creature this turn they may use this as a bonus action. The blade juggler may move up to 10 ft. and retrieve any number of daggers that are no longer within their possession."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Blade Juggler attacks once for each Dagger in their possession"
+					]
+				},
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or range 15/30 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage in melee, or 6 ({@damage 1d4 + 4}) piercing damage at range."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"THW"
+			]
+		},
+		{
+			"name": "Janissary",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"source": "p4535992Humanoid",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item leather armor|phb}",
+						"{@item scimitar|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 20",
+				"average": 65
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 18,
+			"con": 14,
+			"int": 12,
+			"wis": 15,
+			"cha": 12,
+			"passive": 12,
+			"cr": "3",
+			"shortName": "Janissary",
+			"fluff": {
+				"entries": [
+					"{@link Janissary|https://www.reddit.com/r/monsteraday/comments/ab1er1/janissary/?utm_medium=android_app&utm_source=share}",
+					"\"Come dancing with the devil? Best be leading it.\" . ",
+					"- Janissary Ekrem",
+					"Janissaries are of the utmost elite soldiers. To them, their blades are an extension of their body, whirling them effortlessly, redirecting attacks that would normally hit them onto others. The saying “a great defense is a good offense” applies to all warriors, but for a Janissary, this means nothing to them, as their blades act as shields effortlessly deflecting attacks. They utilize their clawed gauntlets to fester deep wounds in opponents, causing opponents to either focus on the wounds to which they succumb to or the battle against whirling devil they fight. This combination of enthusiasm and skill has led many to be slain by their dancing blades"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/Py0VWh3.png"
+						}
+					}
+				]
+			},
+			"isNpc": true,
+			"tokenUrl": "https://i.imgur.com/la8jvBh.png",
+			"languages": [
+				"any three languages"
+			],
+			"languageTags": [
+				"X"
+			],
+			"skill": {
+				"acrobatics": "+8",
+				"athletics": "+4",
+				"intimidation": "+3"
+			},
+			"trait": [
+				{
+					"name": "Blade Mastery",
+					"entries": [
+						"When janissary hits with its scimitar, it rolls one additional damage die and adds it to the damage of the attack (included in the attack)"
+					]
+				},
+				{
+					"name": "Blade Ward",
+					"entries": [
+						"The janissary gains the same benefits from its scimitar as it would from a shield"
+					]
+				},
+				{
+					"name": "Dervish",
+					"entries": [
+						"During the janissary's turn, if it makes a melee attack against a creature, that creature cannot make opportunity attacks against it until the end of the janissary's turn."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The janissary makes three attacks, one with its clawed gauntlet and two with its scimitar."
+					]
+				},
+				{
+					"name": "Scimitar",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Clawed Gauntlet",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage. If the target is a creature other than an undead or a construct, it must succeed ona {@dc 15} Constitution saving throw or lose 2 ({@dice 1d4}) hit points at the end of each of its turns until it or a creature within 5 feet of it uses its action to staunch the wound. The wound also closes if the target receives magical healing. Each time the janissary hits the wounded target with a weapon attack, the damage dealt by the wound increases by 2 ({@dice 1d4})."
+					]
+				}
+			],
+			"damageTags": [
+				"S",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"reaction": [
+				{
+					"name": "Deflection Attack",
+					"entries": [
+						"When a hostile creature misses the janissary with a melee weapon attack, the janissary can cause that attack to hit one creature of its choice, other than the attacker, that it can see within 5 feet of it."
+					]
+				}
 			]
 		}
 	]
