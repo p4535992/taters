@@ -823,6 +823,124 @@
 				"petrified",
 				"restrained"
 			]
+		},
+		{
+			"name": "Grave Knight",
+			"size": "L",
+			"type": "undead",
+			"source": "p4535992Undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d10 + 48",
+				"average": 136
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 16,
+			"int": 10,
+			"wis": 13,
+			"cha": 15,
+			"passive": 14,
+			"cr": "8",
+			"shortName": "Grave Knight",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"the languages it knew in life"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"save": {
+				"str": "+7",
+				"con": "+6"
+			},
+			"skill": {
+				"perception": "+4",
+				"stealth": "+5"
+			},
+			"conditionImmune": [
+				"poisoned"
+			],
+			"immune": [
+				{
+					"immune": [
+						"necrotic"
+					]
+				},
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons that aren't silvered"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The grave knight makes two greatsword attacks. It can use its Life Drain in place of one greatsword attack."
+					]
+				},
+				{
+					"name": "Life Drain",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) necrotic damage. The target must succeed on a {@dc 13} Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+					]
+				},
+				{
+					"name": "Greatsword +2",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 6}) slashing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"N",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"entries": [
+					"{@link Tomb of the Grave Knight|https://www.reddit.com/r/DnDHomebrew/comments/jghgfi/free_mini_adventure_tomb_of_the_grave_knight/}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/8ZfAB7m.png"
+						}
+					}
+				]
+			},
+			"isNpc": true,
+			"tokenUrl": "https://i.imgur.com/TnVZDDS.png"
 		}
 	]
 }
