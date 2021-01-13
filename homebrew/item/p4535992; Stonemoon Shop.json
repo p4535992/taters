@@ -1542,6 +1542,107 @@
 			"dagger": true,
 			"weapon": true,
 			"entries": [
+				"A fine weapon made for Assassins to execute their operations of exclusion, this weapon is attached to the arm of the person which keeps it hidden from plain sight. This allows the weapon's user to have an advantage on any roll to keep it hidden. If you attack with this weapon while it is hidden you get an advantage on the attack roll. Once the weapon is revealed and enemies are aware of it, attempting to hide the weapon becomes difficult. If you attempt to hide the weapon after it's been revealed, the DC will be raised (or lowered) according. It requires an action to equip or remove. Among the things you can do with the help of a tinkerer is adding improvements and modifications to the weapon. However, some attachments require specific proficiencies to add onto the weapon, and some attachments will get in the way of others which prevents adding all of the attachments to one blade.",
+				{
+					"name": "Hidden Property",
+					"entries": [
+						"A weapon with the hidden property is designed to be easily concealed by the holder. If you have proficiency with a hidden weapon you also gain advantage on checks with Dexterity (Sleight of Hand) to hide the weapon."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/PzUFrw5.png"
+						}
+					}
+				],
+				"entries": [
+					"Art and item designed by {@link Hidden Blade|https://www.dandwiki.com/wiki/Hidden_Blade_(5e_Equipment)}. Please credit if you repost elsewhere."
+				]
+			}
+		},
+		{
+			"name": "Hidden-Blade Arm Guard",
+			"source": "StonemoonShop",
+			"baseItem": "Hidden Blade|StonemoonShop",
+			"page": 0,
+			"srd": false,
+			"type": "M",
+			"rarity": "uncommon",
+			"weight": 1,
+			"value": 10000,
+			"weaponCategory": "simple",
+			"property": [
+				"F",
+				"L",
+				"S"
+			],
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"dagger": true,
+			"weapon": true,
+			"ac" : 1,
+			"entries": [
+				"The Hidden Blade will have an Arm Guard attached to the top part of your arm, allowing the character to block and deflect attacks easier using the Arm Guard. It gives you +1 AC to the character armor, placing a sturdy but still lightweight armor over the weapon. As it goes over the arm, it makes no interactions with the blade mechanism on the bottom of the arm and requires a bonus action to Don/Doff along with the hidden blade. However, with the Arm Guard attached, the weapon is subjected to the Partial Armor rule. It costs 100 gp to attach your weapon with this upgrade.",
+				"Arm Guard Abilitie:s +1 AC (Subject to Partial Armor Rule), Removes Tinker Tool need for Don/Doff.",
+				{
+					"name": "Hidden Property",
+					"entries": [
+						"A weapon with the hidden property is designed to be easily concealed by the holder. If you have proficiency with a hidden weapon you also gain advantage on checks with Dexterity (Sleight of Hand) to hide the weapon."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/PzUFrw5.png"
+						}
+					}
+				],
+				"entries": [
+					"Art and item designed by {@link Hidden Blade|https://www.dandwiki.com/wiki/Hidden_Blade_(5e_Equipment)}. Please credit if you repost elsewhere."
+				]
+			}
+		}
+	],
+	"variant": [
+		{
+			"name": "Hidden Blade Variant",
+			"type": "GV",
+			"requires": [
+				{
+					"weapon": true,
+					"weaponCategory": "Simple",
+					"dmgType": "S"
+				},
+				{
+					"weapon": true,
+					"weaponCategory": "Simple",
+					"dmgType": "P"
+				}
+			],
+			"inherits": {
+				"namePrefix": "Hidden-Blade ",
+				"source": "StonemoonShop",
+				"page": 0,
+				"tier": "minor",
+				"rarity": "varies",
+				"entries": [
+					
+				]
+			},
+			"source": "StonemoonShop",
+			"page": 0,
+			"tier": "minor",
+			"rarity": "varies",
+			"entries": [
 				"A fine weapon made for Assassins to execute their operations of exclusion, this weapon is attached to the arm of the person which keeps it hidden from plain sight. This allows the weapon's user to have an advantage on any roll to keep it hidden. If you attack with this weapon while it is hidden you get an advantage on the attack roll. Once the weapon is revealed and enemies are aware of it, attempting to hide the weapon becomes difficult. If you attempt to hide the weapon after it's been revealed, the DC will be raised (or lowered) according. It requires an action to equip or remove. Among the things you can do with the help of a tinkerer is adding improvements and modifications to the weapon. However, some attachments require specific proficiencies to add onto the weapon, and some attachments will get in the way of others which prevents adding all of the attachments to one blade. Attachments that can be added to the Hidden Blade are as follows:",
 				{	
 					"type": "list",
@@ -1608,32 +1709,59 @@
 					}
 				],
 				"entries": [
-					"{@link Hidden Blade|https://www.dandwiki.com/wiki/Hidden_Blade_(5e_Equipment)}"
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link Hidden Blade|https://www.dandwiki.com/wiki/Hidden_Blade_(5e_Equipment)}. Please credit if you repost elsewhere."
+						]
+					}
 				]
-			}
-		}
-	],
-	"variant": [
-		{
-			"name": "Bow of Power",
-			"weight": 3,
-			"wondrous": true,
-			"requires": [
+			},
+			"variants": [
 				{
-					"name": "Shortbow"
-				},
-				{
-					"name": "Longbow"
+					"base": {
+						"name": "Hidden Blade",
+						"source": "StonemoonShop",
+						"page": 0,
+						"srd": false,
+						"type": "M",
+						"rarity": "none",
+						"weight": 1,
+						"value": 10000,
+						"weaponCategory": "simple",
+						"property": [
+							"F",
+							"L",
+							"T"
+						],
+						"range": "20/60",
+						"dmg1": "1d4",
+						"dmgType": "P",
+						"dagger": true,
+						"weapon": true,
+						"entries": []
+					},
+					"specificVariant": {
+						"name": "Hidden-Blade Arm Guard",
+						"source": "StonemoonShop",
+						"page": 0,
+						"type": "M",
+						"rarity": "common",
+						"weight": 1,
+						"value": 10000,
+						"weaponCategory": "simple",
+						"dmg1": "1d4",
+						"dmgType": "P",
+						"dagger": true,
+						"weapon": true,
+						"tier": "minor",
+						"entries": [
+							"The Hidden Blade will have an Arm Guard attached to the top part of your arm, allowing the character to block and deflect attacks easier using the Arm Guard. It gives you +1 AC to the character armor, placing a sturdy but still lightweight armor over the weapon. As it goes over the arm, it makes no interactions with the blade mechanism on the bottom of the arm and requires a bonus action to Don/Doff along with the hidden blade. However, with the Arm Guard attached, the weapon is subjected to the Partial Armor rule. It costs 100 gp to attach your weapon with this upgrade."
+						],
+						"ac": "1"
+					}
 				}
-			],
-			"inherits": {
-				"namePrefix": "Powerful ",
-				"source": "StonemoonShop",
-				"rarity": "very rare",
-				"entries": [
-					"An extremely powerful bow."
-				]
-			}
+			]
 		}
 	],
 	"variantrule": [
