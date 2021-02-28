@@ -34,15 +34,12 @@
 			"rarity": "rare",
 			"wondrous": true,
 			"reqAttune": true,
-			"value": 5000,
+			"value": 50000,
 			"weapon": false,
 			"source": "shopsOfBarovia",
 			"entries": [
 				"This armor is a black suit of +1 splint mail, latticed with intricate etchings that roughly follow the lines of the major blood vessels on the body of a potential wearer.",
 				"As a bonus action, the user may ‘feed’ the armor blood from their veins. If they do so, the next time they take the attack action, they may roll their Hit Die (HD) and add that value to both the hit and damage of the attack. Then the value must also be subtracted from their own hitpoints."
-			],
-			"attachedSpells": [
-				"curse"
 			],
 			"lootTables": [
 				"Shops of Barovia - Dragomir's Curio & Relic Emporium Name"
@@ -93,15 +90,12 @@
 			"rarity": "rare",
 			"wondrous": true,
 			"reqAttune": true,
-			"value": 1000,
+			"value": 10000,
 			"weapon": false,
 			"source": "shopsOfBarovia",
 			"entries": [
 				"This ancient helm grants the user incredible knowledge from an otherworldly being. While wearing the helm the user hears faint unintelligible whispers. If the user chooses to focus on the whispers they'll receive one secret or piece of advice from the DM to help them in their current quest."
 				
-			],
-			"attachedSpells": [
-				"curse"
 			],
 			"lootTables": [
 				"Shops of Barovia - Dragomir's Curio & Relic Emporium Name"
@@ -144,23 +138,28 @@
 		},
 		{
 			"name": "Sword of Light & Shadow",
-			"baseItem": "Splint Armor|PHB",
-			"weight":1,
-			"armor": true,
-			"ac": 0,
+			"baseItem": "+1 Longsword|DMG",
+			"type": "M",
+			"weaponCategory": "martial",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"sword": true,
+			"weapon": true,
+			"bonusWeapon": "+1",
+			"weight":5,
 			"tier": "major",
 			"rarity": "rare",
 			"wondrous": true,
 			"reqAttune": true,
-			"value": 1000,
-			"weapon": false,
+			"value": 20000,
 			"source": "shopsOfBarovia",
 			"entries": [
-				"This ancient helm grants the user incredible knowledge from an otherworldly being. While wearing the helm the user hears faint unintelligible whispers. If the user chooses to focus on the whispers they'll receive one secret or piece of advice from the DM to help them in their current quest."
+				"This paradoxical weapon contains both divine and necrotic energies. On a critical hit it does an additional {@dice 2d8} necrotic damage to its target. It acts as a +1 magic longsword otherwise."
 				
-			],
-			"attachedSpells": [
-				"curse"
 			],
 			"lootTables": [
 				"Shops of Barovia - Dragomir's Curio & Relic Emporium Name"
@@ -180,13 +179,13 @@
 					{
 						"name": "Curse",
 						"entries": [
-
+							"On a critical miss, the sword heals it's intended target by {@dice 2d8}."
 						]
 					},
 					{
 						"name": "History",
 						"entries": [
-
+							"When a sword of darkness and a sword of light were both melted down and forged into one blade, a guild of ancient dwarves hoped they were creating a weapon that could oppose both fiends and celestials alike. To their surprise, rather than emitting radiant energy, the sword emitted healing energy instead. Despite their best efforts to suppress this flaw, it still comes out from time to time."
 						]
 					},				
 					{
