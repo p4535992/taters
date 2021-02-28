@@ -416,6 +416,691 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Necklace of Tongues",
+			"weight":1,
+			"tier": "major",
+			"rarity": "rare",
+			"wondrous": true,
+			"reqAttune": true,
+			"value": 10000,
+			"source": "shopsOfBarovia",
+			"entries": [
+				"This necklace is made of a thin leather cord adorned a variety of embalmed tongues. The wearer of this necklace can speak any language of intelligent creatures"
+			],			
+			"lootTables": [
+				"Shops of Barovia - Dragomir's Curio & Relic Emporium Name"
+			],
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": ""
+						}
+					}
+				],
+				"entries": [
+					{
+						"name": "Curse",
+						"entries": [
+							"Roll {@dice 1d6} whenever this is attempted. On a 1-2, the user wildly misunderstands what is being said or their responses are exceptionally offensive."
+						]
+					},
+					{
+						"name": "History",
+						"entries": [
+							"The many tongues from this necklace come from each creature whose language it's wearer can now speak."
+						]
+					},				
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"Art and item designed by {@link Shops of Barovia|https://www.gmbinder.com/share/-LTK3X6AKprD0KM1RLYC}. Please credit if you repost elsewhere."
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Ring of Borrowed Time",
+			"weight":1.5,
+			"tier": "major",
+			"rarity": "rare",
+			"wondrous": true,
+			"reqAttune": true,
+			"value": 10000,
+			"source": "shopsOfBarovia",
+			"entries": [
+				"This ring allows the users to go briefly back in time and correct past mistakes. Once per day, whenever you make an attack roll, an ability check, or a saving throw, you can use the ring to re-roll the dice even after the result has been determined."
+			],			
+			"lootTables": [
+				"Shops of Barovia - Dragomir's Curio & Relic Emporium Name"
+			],
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": ""
+						}
+					}
+				],
+				"entries": [
+					{
+						"name": "Curse",
+						"entries": [
+							"The time this ring grants the user must eventually be paid back a million fold. Every time it's used, the user ages years depending on their race in the table below:",
+							{
+								"type": "table",
+								"colLabels": [
+									"Race",
+									"Years"
+								],
+								"colStyles": [
+									"col-1 text-center",
+									"col-11"
+								],
+								"rows": [
+									[
+										"Human, Dragonborn, Half-orc",
+										"{@dice 1d4} years"
+									],
+									[
+										"Half-elf, Halfling",
+										"{@dice 2d4} years"
+									],
+									[
+										"Dwarf, Gnome",
+										"{@dice 2d6} years"
+									],
+									[
+										"Elf",
+										"{@dice 2d10} years"
+									]
+								]
+							}
+						]
+					},
+					{
+						"name": "History",
+						"entries": [
+							"A dying wizard created this ring in order to extend her life before succumbing to a rapidly growing illness. In the end she only managed to save seconds of her life rather than the years she hoped for."
+						]
+					},				
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"Art and item designed by {@link Shops of Barovia|https://www.gmbinder.com/share/-LTK3X6AKprD0KM1RLYC}. Please credit if you repost elsewhere."
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Unbind Curse Scroll",
+			"baseItem": "scroll|PHB",
+			"weaponCategory": "varies",
+			"weight": 0.1,
+			"armor": false,
+			"tier": "major",
+			"rarity": "rare",
+			"wondrous": true,
+			"reqAttune": true,
+			"value": 50000,
+			"weapon": false,
+			"source": "shopsOfBarovia",
+			"entries": [
+				"A overlypriced scroll of Unbind Curse for remove curse if anyone is cursed by one of Shop barovian items."
+			],
+			"lootTables": [
+				"Shops of Barovia - Dragomir's Curio & Relic Emporium Name"
+			],
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": ""
+						}
+					}
+				],
+				"entries": [			
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"Art and item designed by {@link Shops of Barovia|https://www.gmbinder.com/share/-LTK3X6AKprD0KM1RLYC}. Please credit if you repost elsewhere."
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Dragomir's Grab Bag",
+			"tier": "major",
+			"rarity": "rare",
+			"wondrous": true,
+			"weight": 0.5,
+			"source": "shopsOfBarovia",
+			"entries": [
+				"Dragomir has a huge assortment of cursed items and relics. Most of them, however, are fairly mundane and would not do be a great boon or bane to the player. He has been unable to sell these trinkets so tries to get rid of them for a paltry fee. When picking an item out of the bag, the buyer must take the first item they touch.", 
+				"To see what item the player receives, have both the DM and the player roll a d20. If the DM rolls 1-10, give the player a cursed item matching his roll. If the DM rolls 11-20, give the player a curio matching his roll.",
+				"They should not know which type of item they received. Any equipped trinkets cannot be removed.",
+				"Cursed",
+				{
+					"type": "table",
+					"colLabels": [
+						"{@dice d20}",
+						"Item",
+						"Description"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-3",
+						"col-11"
+					],
+					"rows": [
+						[
+							"01",
+							"Pearl Ring",
+							"The user skin becomes a porcelain white."
+						],
+						[
+							"02",
+							"Red marble",
+							"Your heart beat is no longer detectable, for all you know it has stopped beating."
+						],
+						[
+							"03",
+							"Onyx Ring",
+							"The flesh around the ring dies, but remains functional. This effect spreads very slowly."
+						],
+						[
+							"04",
+							"Silver Comb",
+							"Your hair turns a silvery white when combed."
+						],
+						[
+							"05",
+							"Spoon",
+							"After touching the spoon, all food now tastes like hot borscht."
+						],
+						[
+							"06",
+							"Empty Hour Glass",
+							"You can now see dark spirits hovering over people who are about to die from age and illness."
+						],
+						[
+							"07",
+							"Humming crystal",
+							"Ghosts are now attracted towards your presence when nearby"
+						],
+						[
+							"08",
+							"Dog's Tail",
+							"Beasts no longer trust you."
+						],
+						[
+							"09",
+							"Black cloth",
+							"Your shadow now takes a life of it's own when no-one else is looking."
+						],						
+						[
+							"10",
+							"Women's Finger",
+							"Womens and girls no longer trust you."
+						],
+						[
+							"11",
+							"Worn collar",
+							"A small shadowfell creature only you can see follows you around."
+						],
+						[
+							"12",
+							"Polished Ring",
+							"You can escape into mirrors, but your reflection there will try to kill you."							
+						],
+						[
+							"13",
+							"Ram's horn",
+							"The more cruel deeds you commit the more your appearance becomes devil like"							
+						],
+						[
+							"14",
+							"Clouded crystal ball",
+							"You gain terrible visions of the future, but unknown to you, they're always wrong."							
+						],
+						[
+							"15",
+							"Sheep's Hoof",
+							"You start sleep walking, doing bizarre things in the night"
+						],
+						[
+							"16",
+							"Embalmed Apple",
+							"You no longer need to eat. If you try to, you immediately vomit."
+						],
+						[
+							"17",
+							"Hot/Cold Talisman",
+							"You gain resistance from cold but vulnerability to fire."
+						],
+						[
+							"18",
+							"Ebony Pin",
+							"If pinned on one's clothing, it turns their whole outfit monochromatic."
+						],
+						[
+							"19",
+							"Shifting Sand Ring",
+							"Your character will occasionally be shifted into the distant past or far future for several seconds."
+						],
+						[
+							"20",
+							"Creepy Doll",
+							"A creepy doll whose eyes follow you. If thrown away it shows up again the next day."
+						]
+					]
+				},
+				"Curios",
+				{
+					"type": "table",
+					"colLabels": [
+						"{@dice d20}",
+						"Item",
+						"Description"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-3",
+						"col-11"
+					],
+					"rows": [
+						[
+							"01",
+							"Collar",
+							"Your eyes turn to cats eyes. You gain darkvision."
+						],
+						[
+							"02",
+							"Blood stained necklace",
+							"You can sense heartbeats within 30ft, but not their direction."
+						],
+						[
+							"03",
+							"Needle",
+							"You can use this needle to stitch on a dead limb to replace one of your own, giving it life."
+						],
+						[
+							"04",
+							"Charred Ring",
+							"When angry, your eyes turn blood red, giving +1 to intimidation."
+						],
+						[
+							"05",
+							"Bloodstone Ring",
+							"Each round in combat you steal 1 life from any ally or creature within 5ft"
+						],
+						[
+							"06",
+							"Fulgin Slippers",
+							"You gain 10ft of extra movement in darkness"
+						],
+						[
+							"07",
+							"Nercomancer's Journal",
+							"You have advantage when making arcana checks about necromancy"
+						],
+						[
+							"08",
+							"Black marble",
+							"You can make shadow puppets that come alive, but are always just shadows."
+						],
+						[
+							"09",
+							"Wolf's Claw",
+							"You do double damage to werewolves but they also do double to you."
+						],						
+						[
+							"10",
+							"Gnawed Bone",
+							"You can now eat rotten meat and not get sick."
+						],
+						[
+							"11",
+							"Toe bone",
+							"You can sense when undead are beneath your feat."
+						],
+						[
+							"12",
+							"Bronze Mirror",
+							"You can see invisible creatures, but only behind you in the mirror."
+						],
+						[
+							"13",
+							"Dead Rose",
+							"Your blood is now poison, if a creature bites you, do 1d4 damage."
+						],
+						[
+							"14",
+							"Ghostly Ring",
+							"Once per day you can become ethereal for 6 seconds."
+						],
+						[
+							"15",
+							"Bone carved dice",
+							"You critically hit on 19-20. But something extra awful happens on critical miss"
+						],
+						[
+							"16",
+							"Musk spray",
+							"Gives you +2 persuasion against women but also attracts wolves."
+						],
+						[
+							"17",
+							"Chalice",
+							"50% chance of doubling or nullifying any drinks potency."
+						],
+						[
+							"18",
+							"Dead Oak Wand",
+							"Bewitches an inanimate object 3 times for day, but they don't obey commands"
+						],
+						[
+							"19",
+							"Cat skull",
+							"Summons a skeleton cat familiar. If the cat is destroyed so is the skull."
+						],
+						[
+							"20",
+							"Bone flute",
+							"Summons a swarm of rats (3 charges). 25% chance they turn on their attacker"
+						]
+					]
+				}
+			],
+			"lootTables": [
+				"Shops of Barovia - Dragomir's Curio & Relic Emporium Name"
+			],
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": ""
+						}
+					}
+				],
+				"entries": [			
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"Art and item designed by {@link Shops of Barovia|https://www.gmbinder.com/share/-LTK3X6AKprD0KM1RLYC}. Please credit if you repost elsewhere."
+						]
+					}
+				]
+			}
+		}
+	],
+	"table":[
+		{
+			"name": "Dragomir's Grab Bag; Cursed",
+			"source": "shopsOfBarovia",
+			"intro": [
+				"Dragomir has a huge assortment of cursed items and relics. Most of them, however, are fairly mundane and would not do be a great boon or bane to the player. He has been unable to sell these trinkets so tries to get rid of them for a paltry fee. When picking an item out of the bag, the buyer must take the first item they touch.", 
+				"To see what item the player receives, have both the DM and the player roll a d20. If the DM rolls 1-10, give the player a cursed item matching his roll. If the DM rolls 11-20, give the player a curio matching his roll.",
+				"They should not know which type of item they received. Any equipped trinkets cannot be removed."				
+			],
+			"outro": [],
+			"caption": "Cursed",
+			"colLabels": [
+				"{@dice 1d20}",
+				"Item",
+				"Description"
+			],
+			"colStyles": [
+				"col-1 text-center",
+				"col-3",
+				"col-11"
+			],
+			"rows": [
+				[
+					"01",
+					"Pearl Ring",
+					"The user skin becomes a porcelain white."
+				],
+				[
+					"02",
+					"Red marble",
+					"Your heart beat is no longer detectable, for all you know it has stopped beating."
+				],
+				[
+					"03",
+					"Onyx Ring",
+					"The flesh around the ring dies, but remains functional. This effect spreads very slowly."
+				],
+				[
+					"04",
+					"Silver Comb",
+					"Your hair turns a silvery white when combed."
+				],
+				[
+					"05",
+					"Spoon",
+					"After touching the spoon, all food now tastes like hot borscht."
+				],
+				[
+					"06",
+					"Empty Hour Glass",
+					"You can now see dark spirits hovering over people who are about to die from age and illness."
+				],
+				[
+					"07",
+					"Humming crystal",
+					"Ghosts are now attracted towards your presence when nearby"
+				],
+				[
+					"08",
+					"Dog's Tail",
+					"Beasts no longer trust you."
+				],
+				[
+					"09",
+					"Black cloth",
+					"Your shadow now takes a life of it's own when no-one else is looking."
+				],						
+				[
+					"10",
+					"Women's Finger",
+					"Womens and girls no longer trust you."
+				],
+				[
+					"11",
+					"Worn collar",
+					"A small shadowfell creature only you can see follows you around."
+				],
+				[
+					"12",
+					"Polished Ring",
+					"You can escape into mirrors, but your reflection there will try to kill you."							
+				],
+				[
+					"13",
+					"Ram's horn",
+					"The more cruel deeds you commit the more your appearance becomes devil like"							
+				],
+				[
+					"14",
+					"Clouded crystal ball",
+					"You gain terrible visions of the future, but unknown to you, they're always wrong."							
+				],
+				[
+					"15",
+					"Sheep's Hoof",
+					"You start sleep walking, doing bizarre things in the night"
+				],
+				[
+					"16",
+					"Embalmed Apple",
+					"You no longer need to eat. If you try to, you immediately vomit."
+				],
+				[
+					"17",
+					"Hot/Cold Talisman",
+					"You gain resistance from cold but vulnerability to fire."
+				],
+				[
+					"18",
+					"Ebony Pin",
+					"If pinned on one's clothing, it turns their whole outfit monochromatic."
+				],
+				[
+					"19",
+					"Shifting Sand Ring",
+					"Your character will occasionally be shifted into the distant past or far future for several seconds."
+				],
+				[
+					"20",
+					"Creepy Doll",
+					"A creepy doll whose eyes follow you. If thrown away it shows up again the next day."
+				]
+			]
+		},
+		{
+			"name": "Dragomir's Grab Bag; Curios",
+			"source": "shopsOfBarovia",
+			"intro": [
+				"Dragomir has a huge assortment of cursed items and relics. Most of them, however, are fairly mundane and would not do be a great boon or bane to the player. He has been unable to sell these trinkets so tries to get rid of them for a paltry fee. When picking an item out of the bag, the buyer must take the first item they touch.", 
+				"To see what item the player receives, have both the DM and the player roll a d20. If the DM rolls 1-10, give the player a cursed item matching his roll. If the DM rolls 11-20, give the player a curio matching his roll.",
+				"They should not know which type of item they received. Any equipped trinkets cannot be removed."			
+			],
+			"outro": [],
+			"caption": "Curios",
+			"colLabels": [
+				"{@dice 1d20}",
+				"Item",
+				"Description"
+			],
+			"colStyles": [
+				"col-1 text-center",
+				"col-3",
+				"col-11"
+			],
+			"rows": [
+				[
+					"01",
+					"Collar",
+					"Your eyes turn to cats eyes. You gain darkvision."
+				],
+				[
+					"02",
+					"Blood stained necklace",
+					"You can sense heartbeats within 30ft, but not their direction."
+				],
+				[
+					"03",
+					"Needle",
+					"You can use this needle to stitch on a dead limb to replace one of your own, giving it life."
+				],
+				[
+					"04",
+					"Charred Ring",
+					"When angry, your eyes turn blood red, giving +1 to intimidation."
+				],
+				[
+					"05",
+					"Bloodstone Ring",
+					"Each round in combat you steal 1 life from any ally or creature within 5ft"
+				],
+				[
+					"06",
+					"Fulgin Slippers",
+					"You gain 10ft of extra movement in darkness"
+				],
+				[
+					"07",
+					"Nercomancer's Journal",
+					"You have advantage when making arcana checks about necromancy"
+				],
+				[
+					"08",
+					"Black marble",
+					"You can make shadow puppets that come alive, but are always just shadows."
+				],
+				[
+					"09",
+					"Wolf's Claw",
+					"You do double damage to werewolves but they also do double to you."
+				],						
+				[
+					"10",
+					"Gnawed Bone",
+					"You can now eat rotten meat and not get sick."
+				],
+				[
+					"11",
+					"Toe bone",
+					"You can sense when undead are beneath your feat."
+				],
+				[
+					"12",
+					"Bronze Mirror",
+					"You can see invisible creatures, but only behind you in the mirror."
+				],
+				[
+					"13",
+					"Dead Rose",
+					"Your blood is now poison, if a creature bites you, do 1d4 damage."
+				],
+				[
+					"14",
+					"Ghostly Ring",
+					"Once per day you can become ethereal for 6 seconds."
+				],
+				[
+					"15",
+					"Bone carved dice",
+					"You critically hit on 19-20. But something extra awful happens on critical miss"
+				],
+				[
+					"16",
+					"Musk spray",
+					"Gives you +2 persuasion against women but also attracts wolves."
+				],
+				[
+					"17",
+					"Chalice",
+					"50% chance of doubling or nullifying any drinks potency."
+				],
+				[
+					"18",
+					"Dead Oak Wand",
+					"Bewitches an inanimate object 3 times for day, but they don't obey commands"
+				],
+				[
+					"19",
+					"Cat skull",
+					"Summons a skeleton cat familiar. If the cat is destroyed so is the skull."
+				],
+				[
+					"20",
+					"Bone flute",
+					"Summons a swarm of rats (3 charges). 25% chance they turn on their attacker"
+				]
+			]
 		}
 	]
 	
