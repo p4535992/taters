@@ -21,10 +21,13 @@
 - [TABLE][Community Tables](https://github.com/foundry-vtt-community/tables ) - https://raw.githubusercontent.com/foundry-vtt-community/tables/master/module.json
 - [EXTERNAL][Theatre](https://github.com/League-of-Foundry-Developers/fvtt-module-theatre )
 - [EXTERNAL][Forien Quest Log by LoFD](https://github.com/League-of-Foundry-Developers/foundryvtt-forien-quest-log)
+
 - [WALL][Merge Wall](https://gitlab.com/tposney/mergewalls ) - https://gitlab.com/tposney/mergewalls/raw/master/module.json
 - [WALL][Wall Height](https://github.com/schultzcole/FVTT-Wall-Height ) - https://raw.githubusercontent.com/schultzcole/FVTT-Wall-Height/master/module.json
 - [WALL][Wall Cutter](https://github.com/HadaIonut/WallCutter ) - https://raw.githubusercontent.com/HadaIonut/WallCutter/master/src/module.json
 - [WALL][Smart Door](https://github.com/manuelVo/foundryvtt-smart-doors ) - https://raw.githubusercontent.com/manuelVo/foundryvtt-smart-doors/develop/module.json
+- [WALL][Multiple Wall Points Mover](https://github.com/Reaver01/mwpm ) - https://raw.githubusercontent.com/Reaver01/mwpm/master/module.json
+
 - [LIGHT][Community Lighting for FVTT](https://github.com/BlitzKraig/fvtt-CommunityLighting ) - https://raw.githubusercontent.com/BlitzKraig/fvtt-CommunityLighting/master/module.json
 
 ## [MUST HAVE] MODULES PART 3
@@ -35,7 +38,7 @@
 - [MAP/FOG][Reset Doors and Fog](https://github.com/wsaunders1014/resetdoorsandfog ) - https://raw.githubusercontent.com/wsaunders1014/resetdoorsandfog/master/module.json 
 - [MAP][Show Door Icons](https://github.com/wsaunders1014/ShowDoorIcons/ ) - https://raw.githubusercontent.com/wsaunders1014/ShowDoorIcons/master/module.json
 
-- [MAP][Armreach](https://github.com/psyny/FoundryVTT/tree/master/ArmsReach ) - https://raw.githubusercontent.com/psyny/FoundryVTT/master/ArmsReach/arms-reach/module.json
+- [MAP][Armreach](https://github.com/p4535992/foundryvtt-arms-reach ) - 
 - [LIGHT][Dynamic Illumination](https://github.com/delVhariant/illumination/ ) - https://raw.githubusercontent.com/delVhariant/illumination/master/module.json
 - [JOURNAL][Library PDFoundry](https://github.com/Djphoenix719/PDFoundry ) - https://raw.githubusercontent.com/Djphoenix719/PDFoundry/master/module.json
 - [AUDIO][Background Volume](https://github.com/mtvjr/background-volume ) - https://raw.githubusercontent.com/mtvjr/background-volume/master/module.json
@@ -63,7 +66,6 @@
 
 - [CHAT][Chat Images](https://github.com/bmarian/chat-images ) - https://raw.githubusercontent.com/bmarian/chat-images/master/src/module.json
 - [TOKEN][Health Estimate](https://gitlab.com/tsuki.no.mai/healthestimate/ ) - https://gitlab.com/tsuki.no.mai/healthestimate/-/raw/master/src/module.json
-- [ENTITY][Search Anywhere](https://gitlab.com/riccisi/foundryvtt-search-anywhere ) - https://gitlab.com/riccisi/foundryvtt-search-anywhere/raw/master/module/module.json
 
 - [JOURNAL][Journal Sync](https://github.com/sytone/foundry-vtt-journal-sync ) - https://raw.githubusercontent.com/sytone/foundry-vtt-journal-sync/master/module.json
 - [ENTITY][Compendiumn Browse](https://github.com/syl3r86/compendium-browser ) - https://raw.githubusercontent.com/syl3r86/compendium-browser/master/module.json
@@ -150,6 +152,11 @@
 - [CHARACTER SHEET][Merchant Sheet NPC](https://github.com/whelan/fvtt-merchant-sheet-npc )
 - [MODULE/UTILITY][Deprecated Modules](https://github.com/League-of-Foundry-Developers/FoundryVTT-Deprecated-Modules )
 - [JOURNAL][Journal Scaler](https://github.com/jegasus/journal-scaler )
+- [TOKEN/UTILITY](https://github.com/Eriku33/Foundry-VTT-Image-Hover )
+- [TOKEN/UTILITY](https://github.com/Aedif/TokenVariants )
+- [TILE/JOURNAL](https://gitlab.com/mesfoliesludiques/foundryvtt-image-drop )
+- [CHARACTER SHEET/UTILITY][FoundryVTT-GiveItem](https://github.com/Sepichat/FoundryVTT-GiveItem )
+- [UTILITY][Quick Insert](https://gitlab.com/fvtt-modules-lab/quick-insert ) - https://gitlab.com/fvtt-modules-lab/quick-insert/-/jobs/artifacts/master/raw/module.json?job=build-module
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
@@ -185,6 +192,7 @@
 - [COMBAT][Faction Tokens](https://github.com/Voldemalort/token-factions )
 - [COMBAT][Multiple Attack](https://github.com/jessev14/Multiattack-5e )
 - [COMBAT][Mob Attack Tool](https://github.com/Stendarpaval/mob-attack-tool )
+- [COMBAT][Next-Up](https://github.com/kandashi/Next-Up )
 
 ## [MUST HAVE] MODULES COMPENDIUM
 
@@ -359,6 +367,8 @@
 - [NOT ESSENTIAL][UTILITY][Foundry PLANT (PLAyer Needs Tracker)](https://github.com/GameMaker/FoundryPLANT )
 - [DEPRECATED USE https://github.com/kckaiwei/TurnMarker-alt][COMBAT][Turn Maker](https://github.com/Brunhine/TurnMarker ) - 
 - [DEPRECATED][EXTERNAL][FoundryVTT - Workshop's Party Unit Frames](https://github.com/p4535992/party-unit-frames )
+- [USE INSTEAD Quick Insert][ENTITY][Search Anywhere](https://gitlab.com/riccisi/foundryvtt-search-anywhere ) - https://gitlab.com/riccisi/foundryvtt-search-anywhere/raw/master/module/module.json
+- [USE INSTEAD FoundryVTT-GiveItem][CHARACTER SHEET][Lets Trade 5e](https://github.com/KageJittai/lets-trade-5e)
 
 ##  2021-01-29
 
@@ -464,7 +474,6 @@
 
 - [ICON/MARKER][NOT ESSENTIAL][Lancer Condition Icons](https://github.com/Eranziel/lancer-conditions ) - https://raw.githubusercontent.com/Eranziel/lancer-conditions/master/module.json
 - [CHAT][ON DEVELOPING][Monologue](https://github.com/delVhariant/monologue )
-- [ENTITY][NEED UPDATE BUG WITH CUB][Quick Insert](https://gitlab.com/fvtt-modules-lab/quick-insert ) - https://gitlab.com/fvtt-modules-lab/quick-insert/-/jobs/artifacts/master/raw/module.json?job=build-module
 - [MAP][GOOD BUT NOT ESSENSIAL][Control concealer](https://github.com/KayelGee/control-concealer ) - https://raw.githubusercontent.com/KayelGee/control-concealer/master/module.json
 - [JOURNAL][GOOD BUT NOT ESSENSIAL][pdftofoundry](https://gitlab.com/fryguy1013/pdftofoundry ) - https://gitlab.com/fryguy1013/pdftofoundry/-/jobs/artifacts/master/raw/static_module/module.json?job=build
 - [MAP][GOOD BUT NOT ESSENSIAL][Token HUD Wildcard for Foundry VTT](https://github.com/javieros105/FVTT-TokenHUDWildcard ) - https://raw.githubusercontent.com/javieros105/FVTT-TokenHUDWildcard/master/token-hud-wildcard/module.json
@@ -488,7 +497,6 @@
 - [NOT ESSENTIAL][TOKEN][Token Audio](https://github.com/JacobMcAuley/token-audio ) - https://raw.githubusercontent.com/JacobMcAuley/token-audio/master/module.json
 
 - [NOT ESSENTIAL][WALL][Wallter](https://github.com/mtvjr/wallter ) - https://raw.githubusercontent.com/mtvjr/wallter/master/module.json
-- [NOT ESSENTIAL][WALL][Multiple Wall Points Mover](https://github.com/Reaver01/mwpm ) - https://raw.githubusercontent.com/Reaver01/mwpm/master/module.json
 - [NOT ESSENTIAL][TOKEN][Tiny Tokens](https://github.com/BlitzKraig/fvtt-TinyTokens ) - https://github.com/BlitzKraig/fvtt-TinyTokens/blob/master/module.json
 - [NOT ESSENTIAL][COMPENDIUM][redscompendia5e](https://github.com/RedReign/redscompendia5e ) - https://raw.githubusercontent.com/RedReign/redscompendia5e/master/redscompendia5e/module.json
 - [NOT ESSENTIAL][Utility][Actor Sheet Macro](https://bitbucket.org/Fyorl/sheet-macro/src/master/ )
