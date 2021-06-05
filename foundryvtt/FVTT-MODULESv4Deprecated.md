@@ -2,6 +2,28 @@
 # NOT ESSENTIAL 
 # ======================================================================
 
+## 2021-06-02 FoundryVTT 0.8.6
+
+- [NOT ESSENTIAL][TOKEN/MACRO][Token Hotbar](https://github.com/janssen-io/foundry-token-hotbar ) - https://raw.githubusercontent.com/janssen-io/foundry-token-hotbar/master/module.json
+- [NOT ESSENTIAL][TOKEN/MACRO][Custom Hotbar](https://github.com/Norc/foundry-custom-hotbar ) - https://raw.githubusercontent.com/Norc/foundry-custom-hotbar/master/module.json
+- [NOT ESSENTIAL][CHAT][Autocomplete Whisper](https://github.com/orcnog/autocomplete-whisper )
+- [USE Smalltime instead][LIGHT][Dynamic Illumination](https://github.com/delVhariant/illumination/ ) - https://raw.githubusercontent.com/delVhariant/illumination/master/module.json
+- [NOT ESSENTIAL][TOKEN/UTILITY][Fast Flip](https://github.com/Mr-Byte/fast-flip )
+- [Abbandoned][ENTITY][FoundryVTT - Forien's Unidentified Items](https://github.com/League-of-Foundry-Developers/foundryvtt-forien-unidentified-items ) - https://raw.githubusercontent.com/League-of-Foundry-Developers/foundryvtt-forien-unidentified-items/master/module.json
+- [Abbandoned][TOKEN][Conditional Visibility](https://github.com/gludington/conditional-visibility/) - https://raw.githubusercontent.com/kandashi/condition-automation/master/module.json
+- [Abbandoned][JOURNAL][Custom Journal](https://github.com/Sanyella/FVTT-Custom-Journal-Theming ) - https://raw.githubusercontent.com/Sanyella/FVTT-Custom-Journal-Theming/master/module.json
+- [Abbandoned][MAP/FOG][Reset Doors and Fog](https://github.com/wsaunders1014/resetdoorsandfog ) - https://raw.githubusercontent.com/wsaunders1014/resetdoorsandfog/master/module.json 
+- [Abbandoned][TOKEN][Vehicles and Mechanisms](https://github.com/grandseiken/foundryvtt-vehicles-and-mechanisms ) -
+- [Abbandoned][COMBAT][Health Monitor](https://github.com/p4535992/health-monitor ) - https://raw.githubusercontent.com/p4535992/health-monitor/master/module.json
+- [USE Smart-Target instead][COMBAT][Easy Target](https://bitbucket.org/Fyorl/easy-target/src/master/ ) - https://bitbucket.org/Fyorl/easy-target/raw/master/module.json
+- [NOT ESSENTIAL][COMBAT][BETA][Dungeon Moon Encounter Builder](https://github.com/cswendrowski/FoundryVTT-Encounter-Builder/ )
+- [NOT ESSENTIAL][CHAT][Token Chat Link](https://github.com/espositos/fvtt-tokenchatlink ) - https://raw.githubusercontent.com/espositos/fvtt-tokenchatlink/master/module.json
+- [Abbandoned][CHARACTHER SHEET/UTILITY][Ethck's Downtime Tracking](https://github.com/Ethck/Ethck-s-Downtime-Tracking ) - https://raw.githubusercontent.com/Ethck/Ethck-s-Downtime-Tracking/master/module.json
+- [NOT ESSENTIAL][UTILITY][Autocomplete Inline Properties](https://github.com/schultzcole/FVTT-Autocomplete-Inline-Properties )
+- [Deprecated][UTILITY][Item Delete Check](https://gitlab.com/tposney/item-delete-check/tree/master )
+- [NOT ESSENTIAL][JOURNAL][Journal Scaler](https://github.com/jegasus/journal-scaler )
+- [Abbandoned][TOKEN/ENTITY/CHARACTER SHEET][Pick-Up-Stix](https://github.com/kamcknig/pick-up-stix ) - https://raw.githubusercontent.com/kamcknig/pick-up-stix/develop/src/module.json
+
 ## 2021-04-04
 
 - [USE pull-players-to-scene INSTEAD][TOKEN/SCENES][Everybody Look](https://github.com/winks-vtt/everybody-look ) - https://raw.githubusercontent.com/winks-vtt/everybody-look/master/module.json
