@@ -74,9 +74,6 @@
 - [JOURNAL][Manny-Language](https://github.com/MannyKSoSo/Manny-Language ) - https://raw.githubusercontent.com/MannyKSoSo/Manny-Language/main/module.json
 - [JOURNAL][Journal to Canvas Slideshow](https://github.com/EvanesceExotica/Journal-To-Canvas-Slideshow )
 
-
-
-
 - [TOKEN][Drag Ruler](https://github.com/manuelVo/foundryvtt-drag-ruler )
 
 - [UTILITY][Simple Calendar](https://github.com/vigoren/foundryvtt-simple-calendar )
@@ -84,7 +81,6 @@
 
 - [SCENE][foundryvtt stairways](https://gitlab.com/SWW13/foundryvtt-stairways)
 - [UTILITY][Lockview](https://github.com/CDeenen/LockView )
-- [CHAT][Chat Merge](https://github.com/FoundryModule/Modules/tree/master/ChatMerge ) - https://raw.githubusercontent.com/FoundryModule/Modules/master/ChatMerge/module.json
 
 - [TOKEN][Your Tokens Visible](https://github.com/David-Zvekic/TokensVisible )
 - [TOKEN][Shared Vision](https://github.com/CDeenen/SharedVision )
@@ -193,18 +189,17 @@
 
 ## [MUST HAVE] MODULES COMPENDIUM
 
-- 
-- [COMPENDIUM][um5-ultramodern-ogl](https://github.com/MrBrentRogers/UM5-Ultramodern5-OGL ) - https://raw.githubusercontent.com/MrBrentRogers/UM5-Ultramodern5-OGL/master/module.json
 - [COMPENDIUM][Super Homebrew Pack](https://github.com/SuperNar3k/foundry ) - https://raw.githubusercontent.com/SuperNar3k/foundry/master/SupersHomebrewPack/module.json 
 - [COMPENDIUM][Dynamic-Effects-SRD](https://github.com/kandashi/Dynamic-Effects-SRD ) - https://raw.githubusercontent.com/kandashi/Dynamic-Effects-SRD/master/module.json
 - [COMPENDIUM][SRD heros et dragons](https://gitlab.com/lemaire.erw/srd-heros-et-dragons ) - https://gitlab.com/lemaire.erw/srd-heros-et-dragons/raw/master/module.json
 - [COMPENDIUM][Beginner Baubles](https://foundryvtt.com/packages/ddd-beginner-baubles/ )
 - [COMPENDIUM][Data Toolbox - Let's Contribute](https://github.com/SvenWerlen/fvtt-data-toolbox/tree/master/ )
-- [COMPENDIUM][fvtt-me5e](https://github.com/sparkcity/fvtt-me5e )
 - [COMPENDIUM][Weather Effects 5e](https://github.com/orangetruth/weather-effects-5e )
 - [COMPENDIUM][FoundryVTT-FantasyPlants](https://github.com/KyleBishop/FoundryVTT-FantasyPlants )
 - [COMPENDIUM][Take on Magic Items (unofficial)](https://github.com/brunocalado/takeonmagicitems )
 
+- [DEPRECATED USE INSTEAD https://github.com/p4535992/fvtt-compendiums-mix-dnd5e][COMPENDIUM][um5-ultramodern-ogl](https://github.com/MrBrentRogers/UM5-Ultramodern5-OGL ) - https://raw.githubusercontent.com/MrBrentRogers/UM5-Ultramodern5-OGL/master/module.json
+- [DEPRECATED USE INSTEAD https://github.com/p4535992/fvtt-compendiums-mix-dnd5e][COMPENDIUM][fvtt-me5e](https://github.com/sparkcity/fvtt-me5e )
 - [DEPRECATED USE INSTEAD https://github.com/p4535992/fvtt-compendiums-mix-dnd5e][COMPENDIUM][foundryvtt-lingering-injuries](https://gitlab.com/p4535992/foundryvtt-lingering-injuries/-/raw/master/module.json )
 - [DEPRECATED USE INSTEAD https://github.com/p4535992/fvtt-compendiums-mix-dnd5e][COMPENDIUM][Kobold Press OGL](http://kpogl.wdfiles.com/local--files/home:home/module.json)
 
