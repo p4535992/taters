@@ -23,6 +23,19 @@
 - [Deprecated][UTILITY][Item Delete Check](https://gitlab.com/tposney/item-delete-check/tree/master )
 - [NOT ESSENTIAL][JOURNAL][Journal Scaler](https://github.com/jegasus/journal-scaler )
 - [Abbandoned][TOKEN/ENTITY/CHARACTER SHEET][Pick-Up-Stix](https://github.com/kamcknig/pick-up-stix ) - https://raw.githubusercontent.com/kamcknig/pick-up-stix/develop/src/module.json
+- [Abbandoned][CHAT][Chat Merge](https://github.com/FoundryModule/Modules/tree/master/ChatMerge ) - https://raw.githubusercontent.com/FoundryModule/Modules/master/ChatMerge/module.json
+- [NOT ESSENTIAL][AUDIO][Music d20 Sampler](https://foundryvtt.com/packages/music-d20-sampler/ )
+- [NOT ESSENTIAL][AUDIO][Foundry VTT - Game Audio Bundle 1 of 4](https://github.com/datdamnzotz/FoundryVTT-Game-Audio-Bundle-1 ) - https://raw.githubusercontent.com/datdamnzotz/FoundryVTT-Game-Audio-Bundle-1/master/module.json
+- [NOT ESSENTIAL][AUDIO][Foundry VTT - Game Audio Bundle 2 of 4](https://github.com/datdamnzotz/FoundryVTT-Game-Audio-Bundle-2 ) - https://raw.githubusercontent.com/datdamnzotz/FoundryVTT-Game-Audio-Bundle-2/master/module.json
+- [NOT ESSENTIAL][AUDIO][Foundry VTT - Game Audio Bundle 3 of 4](https://github.com/datdamnzotz/FoundryVTT-Game-Audio-Bundle-3 ) - https://raw.githubusercontent.com/datdamnzotz/FoundryVTT-Game-Audio-Bundle-3/master/module.json
+- [NOT ESSENTIAL][AUDIO][Foundry VTT - Game Audio Bundle 4 of 4](https://github.com/datdamnzotz/FoundryVTT-Game-Audio-Bundle-4 ) - https://raw.githubusercontent.com/datdamnzotz/FoundryVTT-Game-Audio-Bundle-4/master/module.json
+- [NOT ESSENTIAL][AUDIO][Adventure Music](https://foundryvtt.com/packages/adventuremusic/ )
+- [NOT ESSENTIAL][AUDIO][Tabletop RPG Music](https://foundryvtt.com/packages/tabletop-rpg-music/ )
+- [NOT ESSENTIAL][JOURNAL/TOKEN][Automatic journal Icon Numbers](https://gitlab.com/tiwato/journal_icon_numbers ) - https://gitlab.com/tiwato/journal_icon_numbers/raw/master/module.json
+- [Abbandoned][JOURNAL/ACTOR][SideBar Aesthetics](https://gitlab.com/Furyspark/foundryvtt-sidebar-aesthetics/-/tree/master ) - https://gitlab.com/Furyspark/foundryvtt-sidebar-aesthetics/raw/master/module.json
+- [Abbandoned][JOURNAL][Manny-Language](https://github.com/MannyKSoSo/Manny-Language ) - https://raw.githubusercontent.com/MannyKSoSo/Manny-Language/main/module.json
+- [NOT ESSENTIAL][CHARACTER SHEET/UTILITY][FVTT-Skill-Customization-5e](https://github.com/schultzcole/FVTT-Skill-Customization-5e ) - https://raw.githubusercontent.com/schultzcole/FVTT-Skill-Customization-5e/master/module.json
+
 
 ## 2021-04-04
 
