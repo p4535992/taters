@@ -36,7 +36,9 @@
 - [NOT ESSENTIAL][CHARACTER SHEET/UTILITY][FVTT-Skill-Customization-5e](https://github.com/schultzcole/FVTT-Skill-Customization-5e ) - https://raw.githubusercontent.com/schultzcole/FVTT-Skill-Customization-5e/master/module.json
 - [NO ESSENTIAL][smol-foundry](https://github.com/kandashi/smol-foundry) -
 - [DEPRECATED][MACRO/COMBAT][The Furnace](https://github.com/kakaroto/fvtt-module-furnace ) - https://raw.githubusercontent.com/kakaroto/fvtt-module-furnace/master/module.json
-- [NOT ESSENTIAL][CHAT][IS BETTER MINOR QUOL][Chat Portrait](https://github.com/ShoyuVanilla/FoundryVTT-Chat-Portrait/ ) - https://raw.githubusercontent.com/ShoyuVanilla/FoundryVTT-Chat-Portrait/master/module.json
+- [DEPRECATED][COMBAT][conditional visibility](https://github.com/gludington/conditional-visibility ) - https://raw.githubusercontent.com/gludington/conditional-visibility/master/src/module.json
+- [NO ESSENTIAL][TILE/JOURNAL](https://gitlab.com/mesfoliesludiques/foundryvtt-image-drop )
+- [NOT ESSENTIAL][whisper-dialog](https://github.com/Kekilla0/whisper-dialog) - https://raw.githubusercontent.com/Kekilla0/whisper-dialog/master/module.json
 
 ## 2021-04-04
 
@@ -238,7 +240,6 @@
 - [MAP/ROLL][NOT ESSENTIAL][Dice So Nice](https://gitlab.com/riccisi/foundryvtt-dice-so-nice ) - https://gitlab.com/riccisi/foundryvtt-dice-so-nice/raw/master/module/module.json 
 - [ROLL/CHAT][NOT ESSENTIAL][Chat Alias](https://github.com/nwen-dicekittens/Chat-Alias )
 - [COMPENDIUM][NOT ESSENTIAL][IS BETTER PLUTONIUM][5eFeats] - https://github.com/jinkergm/5eFeats - https://raw.githubusercontent.com/jinkergm/5eFeats/master/module.json
-- [NOT ESSNTIAL][whisper-dialog](https://github.com/Kekilla0/whisper-dialog) - https://raw.githubusercontent.com/Kekilla0/whisper-dialog/master/module.json
 - [EXTERNAL] vtta-didyouknow - 
 - [INTEGRATED IN CORE][Darker Vision for 5e](https://github.com/Voldemalort/darker-vision-for-5e ) - https://raw.githubusercontent.com/Voldemalort/darker-vision-for-5e/master/module.json
 - [COMBAT][NOT ESSENTIAL][Bullseye](https://gitlab.com/Ionshard/foundry-vtt-bullseye ) - https://gitlab.com/Ionshard/foundry-vtt-bullseye/raw/master/module.json
