@@ -20,7 +20,6 @@
 - [NOT ESSENTIAL][CHAT][Token Chat Link](https://github.com/espositos/fvtt-tokenchatlink ) - https://raw.githubusercontent.com/espositos/fvtt-tokenchatlink/master/module.json
 - [Abbandoned][CHARACTHER SHEET/UTILITY][Ethck's Downtime Tracking](https://github.com/Ethck/Ethck-s-Downtime-Tracking ) - https://raw.githubusercontent.com/Ethck/Ethck-s-Downtime-Tracking/master/module.json
 - [NOT ESSENTIAL][UTILITY][Autocomplete Inline Properties](https://github.com/schultzcole/FVTT-Autocomplete-Inline-Properties )
-- [Deprecated][UTILITY][Item Delete Check](https://gitlab.com/tposney/item-delete-check/tree/master )
 - [NOT ESSENTIAL][JOURNAL][Journal Scaler](https://github.com/jegasus/journal-scaler )
 - [Abbandoned][TOKEN/ENTITY/CHARACTER SHEET][Pick-Up-Stix](https://github.com/kamcknig/pick-up-stix ) - https://raw.githubusercontent.com/kamcknig/pick-up-stix/develop/src/module.json
 - [Abbandoned][CHAT][Chat Merge](https://github.com/FoundryModule/Modules/tree/master/ChatMerge ) - https://raw.githubusercontent.com/FoundryModule/Modules/master/ChatMerge/module.json
@@ -35,18 +34,19 @@
 - [Abbandoned][JOURNAL/ACTOR][SideBar Aesthetics](https://gitlab.com/Furyspark/foundryvtt-sidebar-aesthetics/-/tree/master ) - https://gitlab.com/Furyspark/foundryvtt-sidebar-aesthetics/raw/master/module.json
 - [Abbandoned][JOURNAL][Manny-Language](https://github.com/MannyKSoSo/Manny-Language ) - https://raw.githubusercontent.com/MannyKSoSo/Manny-Language/main/module.json
 - [NOT ESSENTIAL][CHARACTER SHEET/UTILITY][FVTT-Skill-Customization-5e](https://github.com/schultzcole/FVTT-Skill-Customization-5e ) - https://raw.githubusercontent.com/schultzcole/FVTT-Skill-Customization-5e/master/module.json
-
+- [NO ESSENTIAL][smol-foundry](https://github.com/kandashi/smol-foundry) -
+- [DEPRECATED][MACRO/COMBAT][The Furnace](https://github.com/kakaroto/fvtt-module-furnace ) - https://raw.githubusercontent.com/kakaroto/fvtt-module-furnace/master/module.json
+- [NOT ESSENTIAL][CHAT][IS BETTER MINOR QUOL][Chat Portrait](https://github.com/ShoyuVanilla/FoundryVTT-Chat-Portrait/ ) - https://raw.githubusercontent.com/ShoyuVanilla/FoundryVTT-Chat-Portrait/master/module.json
 
 ## 2021-04-04
 
 - [USE pull-players-to-scene INSTEAD][TOKEN/SCENES][Everybody Look](https://github.com/winks-vtt/everybody-look ) - https://raw.githubusercontent.com/winks-vtt/everybody-look/master/module.json
-- [USE SIMPLE CALENDAR][EXTERNAL][Calendar/Weather](https://github.com/DasSauerkraut/calendar-weather ) - https://raw.githubusercontent.com/DasSauerkraut/calendar-weather/master/package/module.json
+- [USE https://gitlab.com/jstebenne/foundryvtt-calendar-weather][EXTERNAL][Calendar/Weather](https://github.com/DasSauerkraut/calendar-weather ) - https://raw.githubusercontent.com/DasSauerkraut/calendar-weather/master/package/module.json
 - [CHARACTER SHEET][D&D 5e OGL Character Sheet](https://github.com/ElfFriend-DnD/foundryvtt-5eOGLCharacterSheet ) - https://raw.githubusercontent.com/ElfFriend-DnD/foundryvtt-5eOGLCharacterSheet/master/src/module.json
 - [NOT ESSENTIAL][COMBAT][Terrain Layer](https://github.com/wsaunders1014/TerrainLayer )
 - [NOT ESSENTIAL][COMBAT][Difficult Terrain](https://github.com/Nordiii/difficultterrain ) - 
 - [NOT ESSENTIAL][DICE][dukes-dice-roller](https://github.com/dukemadcat/dukes-dice-roller/ )
 - [NOT ESSENTIAL][Innocenti OpenLock](https://github.com/rinnocenti/innocenti-openlock )
-- [NOT ESSENTIAL][UTILITY][GM Notes](https://github.com/syl3r86/gm-notes )
 - [NOT ESSENTIAL][UTILITY][GM Secret Block](https://github.com/schultzcole/FVTT-GM-Secret-Block )
 - [NOT ESSENTIAL][UTILITY][Foundry PLANT (PLAyer Needs Tracker)](https://github.com/GameMaker/FoundryPLANT )
 - [DEPRECATED USE https://github.com/kckaiwei/TurnMarker-alt][COMBAT][Turn Maker](https://github.com/Brunhine/TurnMarker ) - 
@@ -59,6 +59,7 @@
 - [USE INSTEAD https://github.com/HadaIonut/Foundry-Show-Art][CHARACTER SHEET/UTILITY][Show Artwork](https://github.com/wsaunders1014/ShowArtwork/ ) - https://raw.githubusercontent.com/wsaunders1014/ShowArtwork/master/module.json
 - [DEPRECATED][JOURNAL][Journal Sync](https://github.com/sytone/foundry-vtt-journal-sync ) - https://raw.githubusercontent.com/sytone/foundry-vtt-journal-sync/master/module.json
 - [NOT ESSENTIAL][COMBAT][UTILITY][Quick Encounters](https://github.com/opus1217/quick-encounters ) - https://raw.githubusercontent.com/opus1217/quick-encounters/master/module.json
+- [US INSTEAD MOBILE IMPORVEMENTS][STYLE][Simple Mobile](https://github.com/Handyfon/simplemobile ) - https://raw.githubusercontent.com/Handyfon/simplemobile/master/module.json
 
 ##  2021-01-29
 
@@ -248,7 +249,6 @@
 - [MAP][GOOD BUT NOT ESSENSIAL][Minimap](https://gitlab.com/jesusafier/minimap ) - https://gitlab.com/jesusafier/minimap/-/jobs/artifacts/master/raw/module.json?job=build-module 
 - [STYLE][TO MANY BUGS][Luminous](https://github.com/Sky-Captain-13/foundry/tree/master/luminous ) - https://raw.githubusercontent.com/Sky-Captain-13/foundry/master/luminous/luminous/module.json
 - [TOKEN/ROLL][IS BETTER LMRTFY][Group Roll](https://github.com/trdischat/grouproll ) - https://raw.githubusercontent.com/trdischat/grouproll/master/module.json
-- [CHAT][IS BETTER MINOR QUOL][Chat Portrait](https://github.com/ShoyuVanilla/FoundryVTT-Chat-Portrait/ ) - https://raw.githubusercontent.com/ShoyuVanilla/FoundryVTT-Chat-Portrait/master/module.json
 - [TOKEN/COMPENDIUM][IS BETTER CUB][Conditions 5e](https://github.com/trdischat/conditions5e ) - https://raw.githubusercontent.com/trdischat/conditions5e/master/module.json
 - [TOKEN][NEED UPDATE][Forien's Token Rotation](https://github.com/Forien/foundryvtt-forien-token-rotation ) - https://raw.githubusercontent.com/Forien/foundryvtt-forien-token-rotation/master/module.json
 - [JOURNAL][NEED UPDATE][Show Notes](https://github.com/shawndibble/foundryvtt-show-notes )
@@ -287,7 +287,6 @@
 - [COMPENDIUM][NOT ESSENTIAL][SRD Rules WIP](https://gitlab.com/fohswe/srd-rules-wip ) - https://gitlab.com/p4535992/srd-rules-wipsidebar/raw/master/module/raw/master/module.json
 - [MAP][NEED UPDATE][Hex assists](https://github.com/Reaver01/Hex-Assist )
 - ~[IS BETTER USE COZY PLAYER][Token Info Icons](https://github.com/jopeek/fvtt-token-info-icons )~
-- [NEED UPDATE][Item Delete Check](https://gitlab.com/tposney/item-delete-check )
 - [DEPRECATED] https://github.com/spacemandev-git/fvtt-cardimporter )
 - [NOT ESSENTIAL] https://gitlab.com/tenuki.igo/foundryvtt-ping-times )
 - [NOT ESSENTIAL] https://github.com/sean8223/coloredeffects )
