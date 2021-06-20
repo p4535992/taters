@@ -4,6 +4,7 @@
 
 ## 2021-06-02 FoundryVTT 0.8.6
 
+- [Deprecated embeddded on Foundry Core][JOURNAL/UTILITY][TinyMCE Foundry File Picker](https://github.com/cswendrowski/FoundryVTT-TinyMCE-CustomFilePicker )
 - [NOT ESSENTIAL][TOKEN/MACRO][Token Hotbar](https://github.com/janssen-io/foundry-token-hotbar ) - https://raw.githubusercontent.com/janssen-io/foundry-token-hotbar/master/module.json
 - [NOT ESSENTIAL][TOKEN/MACRO][Custom Hotbar](https://github.com/Norc/foundry-custom-hotbar ) - https://raw.githubusercontent.com/Norc/foundry-custom-hotbar/master/module.json
 - [NOT ESSENTIAL][CHAT][Autocomplete Whisper](https://github.com/orcnog/autocomplete-whisper )
@@ -39,6 +40,9 @@
 - [DEPRECATED][COMBAT][conditional visibility](https://github.com/gludington/conditional-visibility ) - https://raw.githubusercontent.com/gludington/conditional-visibility/master/src/module.json
 - [NO ESSENTIAL][TILE/JOURNAL](https://gitlab.com/mesfoliesludiques/foundryvtt-image-drop )
 - [NOT ESSENTIAL][whisper-dialog](https://github.com/Kekilla0/whisper-dialog) - https://raw.githubusercontent.com/Kekilla0/whisper-dialog/master/module.json
+- [NOT ESSENTIAL][INVENTORY][Illandril's Inventory Sorter (5e)](https://github.com/illandril/FoundryVTT-inventory-sorter ) - https://raw.githubusercontent.com/illandril/FoundryVTT-inventory-sorter/master/module.json 
+- [NOT ESSENTIAL][TOKEN][VTTA - Tokenizer by MrPrimate](https://github.com/MrPrimate/vtta-tokenizer ) - https://raw.githubusercontent.com/MrPrimate/vtta-tokenizer/master/module.json
+- [NOT ESSENTIAL][TOKEN][VTTA - Iconizer by MrPrimate](https://github.com/MrPrimate/vtta-iconizer ) - https://raw.githubusercontent.com/MrPrimate/vtta-iconizer/master/module.json
 
 ## 2021-04-04
 
@@ -54,7 +58,7 @@
 - [DEPRECATED USE https://github.com/kckaiwei/TurnMarker-alt][COMBAT][Turn Maker](https://github.com/Brunhine/TurnMarker ) - 
 - [DEPRECATED][EXTERNAL][FoundryVTT - Workshop's Party Unit Frames](https://github.com/p4535992/party-unit-frames )
 - [USE INSTEAD Quick Insert][ENTITY][Search Anywhere](https://gitlab.com/riccisi/foundryvtt-search-anywhere ) - https://gitlab.com/riccisi/foundryvtt-search-anywhere/raw/master/module/module.json
-- [USE INSTEAD FoundryVTT-GiveItem][CHARACTER SHEET][Lets Trade 5e](https://github.com/KageJittai/lets-trade-5e)
+- [NOT UPDATED][CHARACTER SHEET/UTILITY][FoundryVTT-GiveItem](https://github.com/Sepichat/FoundryVTT-GiveItem )
 - [USE INSTEAD LMRTFY][CHARACTHER SHEET/UTILITY][NAP TIME](https://github.com/BadIdeasBureau/nap-time)
 - [DEPRECATED][MAP][Show Door Icons](https://github.com/wsaunders1014/ShowDoorIcons/ ) - https://raw.githubusercontent.com/wsaunders1014/ShowDoorIcons/master/module.json
 - [DEPRECATED][Mindmap\Graphs](https://gitlab.com/moerills-fvtt-modules/graphs ) - https://gitlab.com/moerills-fvtt-modules/graphs/raw/master/src/module.json
@@ -106,7 +110,6 @@
 - [NOT ESSENTIAL][COMPENDIUM/IMPORT][Critter DB Import](https://github.com/jwinget/fvtt-module-critterdb-import/ ) - https://raw.githubusercontent.com/jwinget/fvtt-module-critterdb-import/master/module.json
 - [DEPRECATED][COMBAT][Target Enhancements](https://github.com/eadorin/target-enhancements ) - https://raw.githubusercontent.com/eadorin/target-enhancements/master/module.json
 - [NOT ESSENTIAL][UTILITY][Progress Clocks](https://github.com/troygoode/fvtt-clocks ) - https://raw.githubusercontent.com/troygoode/fvtt-clocks/main/module.json
-- [NOT ESSENTIAL][COMBAT][FVTT-Combat-Tracker-Effects-Tooltips](https://github.com/schultzcole/FVTT-Combat-Tracker-Effects-Tooltips ) - https://raw.githubusercontent.com/schultzcole/FVTT-Combat-Tracker-Effects-Tooltips/master/module.json
 - [NOT ESSENTIAL][JOURNAL/COMPENDIUM][Forgotten Adventures DM Screen](https://gitlab.com/fohswe/fa-dm-screen ) - https://gitlab.com/fohswe/fa-dm-screen/raw/master/module.json
 - [NOT ESSENTIAL][COMBAT/TOKEN][Custom Nameplates](https://github.com/earlSt1/vtt-custom-nameplates ) - https://raw.githubusercontent.com/earlSt1/vtt-custom-nameplates/master/module.json
 - [NOT USED](https://github.com/wsaunders1014/EnhancedMovement)
@@ -159,7 +162,6 @@
 - [TOKEN] - [Player Token Permissions Extended](https://github.com/VanceCole/player-token-permissions )
 - [CHARACTR SHEET][NOT ESSENTIAL][(5e) Different Prepared and Equipped Colors](https://github.com/sparkcity/foundryvtt/tree/master/5edifferentpreparedandequippedcolors ) - https://raw.githubusercontent.com/sparkcity/foundryvtt/master/5edifferentpreparedandequippedcolors/module.json 
 - [CHAT][Tabbed Chatlog][NOT ESSENTIAL](https://github.com/cswendrowski/FoundryVTT-Tabbed-Chatlog ) - https://raw.githubusercontent.com/cswendrowski/FoundryVTT-Tabbed-Chatlog/master/module.json
-- [MAP][Less Fog][NOT ESSENTIAL][(https://github.com/trdischat/lessfog ) - https://raw.githubusercontent.com/trdischat/lessfog/master/module.json
 - [TOKEN/LIGHT][NOT ESSENTIAL][Point of Vision](https://github.com/eadorin/point-of-vision ) - https://raw.githubusercontent.com/eadorin/point-of-vision/master/module.json
 - [EXTERNAL][NOT ESSENTIAL][Popout](https://github.com/kakaroto/fvtt-module-popout ) - https://raw.githubusercontent.com/kakaroto/fvtt-module-popout/master/module.json
 - [EXTERNAL][NOT ESSENTIAL][Popout Resizer](https://gitlab.com/cardagon/popout-resizer/ ) - https://gitlab.com/cardagon/popout-resizer/raw/master/module.json
