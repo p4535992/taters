@@ -2,6 +2,35 @@
 # NOT ESSENTIAL 
 # ======================================================================
 
+## 2021-06-23 FoundryVTT 0.8.7
+
+- [NOT ESSENTIAL][TOKEN][About Face](https://github.com/League-of-Foundry-Developers/about-face ) - https://raw.githubusercontent.com/League-of-Foundry-Developers/about-face/master/module.json
+- [NOT ESSENTIAL][CHARACTER SHEET/UTILITY][5e-Sheet Resources Plus](https://github.com/ardittristan/5eSheet-resourcesPlus ) - https://raw.githubusercontent.com/ardittristan/5eSheet-resourcesPlus/master/module.json
+- [NOT ESSENTIAL][COMBAT][Combat Carousel](https://github.com/death-save/combat-carousel-public ) - https://raw.githubusercontent.com/death-save/combat-carousel-public/main/module.json
+- [NOT ESSENTIAL][COMBAT][Combat Numbers](https://github.com/1000nettles/combat-numbers ) - https://raw.githubusercontent.com/1000nettles/combat-numbers/main/module.json
+- [NOT ESSENTIAL][COMBAT/ROLL][Crash's Hide Skill Rolls](https://github.com/crash1115/blind-roll-skills ) - https://raw.githubusercontent.com/crash1115/blind-roll-skills/master/module.json
+- [DEPRECATED][MACRO][DnD5e-WildShape](https://github.com/MisterHims/DnD5e-WildShape ) - https://raw.githubusercontent.com/MisterHims/DnD5e-WildShape/master/module.json
+- [NOT ESSENTIAL][JOURNAL][DnD5 Cheatsheet](https://github.com/pchouzenoux/foundryvtt-dnd5-cheatsheet) - https://raw.githubusercontent.com/pchouzenoux/foundryvtt-dnd5-cheatsheet/main/src/module.json
+- [NOT ESSENTIAL]https://gitlab.com/jesusafier/grape_juice-isometrics/
+- [NOT ESSENTIAL][ROLLTABLE][Hidden Tables](https://github.com/kandashi/hidden-tables) - https://raw.githubusercontent.com/kandashi/hidden-tables/master/module.json
+- [NOT ESSENTIAL]https://github.com/illandril/FoundryVTT-token-hud-scale
+- [NOT ESSENTIAL][UTILITY][Lockview](https://github.com/CDeenen/LockView )
+- [IS BETTER IRONMONK TOKENBAR][UTILITY][Party Overview by LoFD](https://github.com/League-of-Foundry-Developers/party-overview ) - https://raw.githubusercontent.com/League-of-Foundry-Developers/party-overview/master/module.json
+- [NEED UPDATE][COMBAT][Ready Set Go!](https://github.com/crash1115/ready-check) - https://raw.githubusercontent.com/crash1115/ready-check/main/module.json
+- [NEED UPDATE][COMBAT][Blood and guts](https://github.com/edzillion/blood-n-guts )
+- [NEED UPDATE][CHARACTER/SHEET][tool-proficiencies-5e](https://github.com/adriangaro/tool-proficiencies-5e )
+- [NEED UPDATE][Summoner](https://github.com/periodic/foundryvtt-summoner)
+- [NOT ESSENTIAL][UI][Window Controls for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-window-controls) - https://raw.githubusercontent.com/saif-ellafi/foundryvtt-window-controls/master/module.json
+- [NEED UPDATE][CHARACTER SHEET/UTILITY][FoundryVTT-GiveItem](https://github.com/Sepichat/FoundryVTT-GiveItem )
+- [NOT ESSENTIAL AND YOU CAN STILL USE IRONMONK TOKENBAR][whisper-dialog](https://github.com/Kekilla0/whisper-dialog) - https://raw.githubusercontent.com/Kekilla0/whisper-dialog/master/module.json
+- [NOT ESSENTIAL YOU CAN STILL USE ACTIONHUD][[TOKEN][Illandril's Token Tooltips (5e)](https://github.com/illandril/FoundryVTT-token-tooltips ) - https://raw.githubusercontent.com/illandril/FoundryVTT-token-tooltips/master/module.json
+- [NEED UPDATED][COMBAT][Faction Tokens](https://github.com/Voldemalort/token-factions )
+- [NOT ESSENTIAL][TOKEN][Token Action HUD Artwork](https://github.com/zeel01/TokenHUDArtButton ) - https://raw.githubusercontent.com/zeel01/TokenHUDArtButton/master/module.json
+- [NOT ESSENTIAL][MAP/IMPORT][EEEG-Importer](https://github.com/HadaIonut/EEEG-importer ) - 
+- [NOT ESSENTIAL][MAP/TOKEN/CONDITION][Illandril's Token Hud Scale](https://foundryvtt.com/packages/illandril-token-hud-scale/ ) - 
+- [NOT ESSENTIAL][INVENTORY][Illandril's Inventory Sorter (5e)](https://github.com/illandril/FoundryVTT-inventory-sorter ) - https://raw.githubusercontent.com/illandril/FoundryVTT-inventory-sorter/master/module.json 
+
+
 ## 2021-06-02 FoundryVTT 0.8.6
 
 - [Deprecated embeddded on Foundry Core][JOURNAL/UTILITY][TinyMCE Foundry File Picker](https://github.com/cswendrowski/FoundryVTT-TinyMCE-CustomFilePicker )
@@ -39,10 +68,14 @@
 - [DEPRECATED][MACRO/COMBAT][The Furnace](https://github.com/kakaroto/fvtt-module-furnace ) - https://raw.githubusercontent.com/kakaroto/fvtt-module-furnace/master/module.json
 - [DEPRECATED][COMBAT][conditional visibility](https://github.com/gludington/conditional-visibility ) - https://raw.githubusercontent.com/gludington/conditional-visibility/master/src/module.json
 - [NO ESSENTIAL][TILE/JOURNAL](https://gitlab.com/mesfoliesludiques/foundryvtt-image-drop )
-- [NOT ESSENTIAL][whisper-dialog](https://github.com/Kekilla0/whisper-dialog) - https://raw.githubusercontent.com/Kekilla0/whisper-dialog/master/module.json
 - [NOT ESSENTIAL][INVENTORY][Illandril's Inventory Sorter (5e)](https://github.com/illandril/FoundryVTT-inventory-sorter ) - https://raw.githubusercontent.com/illandril/FoundryVTT-inventory-sorter/master/module.json 
 - [NOT ESSENTIAL][TOKEN][VTTA - Tokenizer by MrPrimate](https://github.com/MrPrimate/vtta-tokenizer ) - https://raw.githubusercontent.com/MrPrimate/vtta-tokenizer/master/module.json
 - [NOT ESSENTIAL][TOKEN][VTTA - Iconizer by MrPrimate](https://github.com/MrPrimate/vtta-iconizer ) - https://raw.githubusercontent.com/MrPrimate/vtta-iconizer/master/module.json
+- [NOT ESSENTIAL][CHARACTER SHEET/UTILITY][Equipment Paper Doll](https://github.com/HadaIonut/Equipement-Paper-Doll )
+- [DEPRECATED][COMBAT][ThandulsTogglableBuffsAndEffects](https://github.com/krysztalzg/ThandulsTogglableBuffsAndEffects )
+- [NOT ESSENTIAL][UTILITY][DragonFlagon Quality of Life](https://github.com/flamewave000/dragonflagon-fvtt/tree/master/df-qol)
+- [NOT ESSENTIAL][MODULE/UTILITY][Deprecated Modules](https://github.com/League-of-Foundry-Developers/FoundryVTT-Deprecated-Modules )
+- [NOT ESSENTIAL][COMBAT][ITEM][Better Curses](https://github.com/Wigsinator/betterCurses ) - 
 
 ## 2021-04-04
 
