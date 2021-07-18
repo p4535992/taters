@@ -2,10 +2,24 @@
 # NOT ESSENTIAL 
 # ======================================================================
 
+## 2021-07-03 FoundryVTT 0.8.9
+
+- [NOT ESSENTIAL][COMBAT][FVTT-Combat-Tracker-Effects-Tooltips](https://github.com/schultzcole/FVTT-Combat-Tracker-Effects-Tooltips ) - https://raw.githubusercontent.com/schultzcole/FVTT-Combat-Tracker-Effects-Tooltips/master/module.json
+- [NOT ESSENTIAL][TOKEN/UTILITY](https://github.com/Eriku33/Foundry-VTT-Image-Hover )
+- [NOT ESSENTIAL][TOKEN/UTILITY](https://github.com/Aedif/TokenVariants )
+- [NOT ESSENTIAL][COMBAT][Character Actions 5e](https://github.com/ElfFriend-DnD/foundryvtt-dnd5eCharacterActions) - https://raw.githubusercontent.com/ElfFriend-DnD/foundryvtt-dnd5eCharacterActions/main/src/module.json
+- [NOT ESSENTIAL][Live Animate](https://github.com/YourFavouriteOreo/VTT-Live-Animate) - https://raw.githubusercontent.com/YourFavouriteOreo/VTT-Live-Animate/master/dist/module.json
+- [NOT ESSENTIAL][UTILITY][Monks Little Details](https://github.com/ironmonk88/monks-little-details )
+- [NOT ESSENTIAL][CHARACTER SHEET/UTILITY][Inventory Plus](https://github.com/syl3r86/inventory-plus ) - https://raw.githubusercontent.com/syl3r86/inventory-plus/master/module.json
+- [NOT ESSENTIAL][CHARACTER SHEET/UTILITY][5e-Sheet Resources Plus](https://github.com/ardittristan/5eSheet-resourcesPlus ) - https://raw.githubusercontent.com/ardittristan/5eSheet-resourcesPlus/master/module.json
+- [NOT ESSENTIAL][UI][BVTT Button Overflow](https://github.com/ardittristan/VTTButtonOverflow) - https://raw.githubusercontent.com/ardittristan/VTTButtonOverflow/master/module.json
+- [NOT ESSENTIAL][CHARACTER SHEET][Merchant Sheet NPC](https://github.com/whelan/fvtt-merchant-sheet-npc )
+- [NOT ESSENTIAL][COMBAT][Multiple Attack](https://github.com/jessev14/Multiattack-5e )
+- [NOT ESSENTIAL][COMBAT][Mob Attack Tool](https://github.com/Stendarpaval/mob-attack-tool )
+
 ## 2021-06-23 FoundryVTT 0.8.7
 
 - [NOT ESSENTIAL][TOKEN][About Face](https://github.com/League-of-Foundry-Developers/about-face ) - https://raw.githubusercontent.com/League-of-Foundry-Developers/about-face/master/module.json
-- [NOT ESSENTIAL][CHARACTER SHEET/UTILITY][5e-Sheet Resources Plus](https://github.com/ardittristan/5eSheet-resourcesPlus ) - https://raw.githubusercontent.com/ardittristan/5eSheet-resourcesPlus/master/module.json
 - [NOT ESSENTIAL][COMBAT][Combat Carousel](https://github.com/death-save/combat-carousel-public ) - https://raw.githubusercontent.com/death-save/combat-carousel-public/main/module.json
 - [NOT ESSENTIAL][COMBAT][Combat Numbers](https://github.com/1000nettles/combat-numbers ) - https://raw.githubusercontent.com/1000nettles/combat-numbers/main/module.json
 - [NOT ESSENTIAL][COMBAT/ROLL][Crash's Hide Skill Rolls](https://github.com/crash1115/blind-roll-skills ) - https://raw.githubusercontent.com/crash1115/blind-roll-skills/master/module.json
@@ -29,6 +43,7 @@
 - [NOT ESSENTIAL][MAP/IMPORT][EEEG-Importer](https://github.com/HadaIonut/EEEG-importer ) - 
 - [NOT ESSENTIAL][MAP/TOKEN/CONDITION][Illandril's Token Hud Scale](https://foundryvtt.com/packages/illandril-token-hud-scale/ ) - 
 - [NOT ESSENTIAL][INVENTORY][Illandril's Inventory Sorter (5e)](https://github.com/illandril/FoundryVTT-inventory-sorter ) - https://raw.githubusercontent.com/illandril/FoundryVTT-inventory-sorter/master/module.json 
+- [NOT ESSENTIAL][UTILITY][GM Notes](https://github.com/syl3r86/gm-notes ) - 
 
 
 ## 2021-06-02 FoundryVTT 0.8.6
