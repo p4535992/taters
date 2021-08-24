@@ -2,6 +2,23 @@
 # NOT ESSENTIAL 
 # ======================================================================
 
+## 2021-08-11
+
+- [NOT ESSENTIAL][JOURNAL][Selective Show](https://github.com/moo-man/FVTT-SelectiveShow ) - https://raw.githubusercontent.com/moo-man/FVTT-SelectiveShow/master/module.json
+- [NOT ESSENTIAL][SCENE][Fog Manager](https://gitlab.com/tiwato/fogmanager) - https://gitlab.com/tiwato/fogmanager/-/raw/master/module.json
+- [NOT ESSENTIAL][Vino]
+- [NOT ESSENTIAL][Show Art With Credits](https://github.com/HadaIonut/Foundry-Show-Art)
+- [NOT ESSENTIAL IS BETTER NEXT UP][Turn marker Alt](https://github.com/kckaiwei/TurnMarker-alt)
+- [NOT ESSENTIAL IS BETTER DF Convenient Effects or Macro][TorchLight](https://github.com/PhilippeKr/TorchLight)
+- [NOT ESENTIAL COMBAT][Not your turn](https://github.com/CDeenen/NotYourTurn ) - https://raw.githubusercontent.com/CDeenen/NotYourTurn/master/module.json
+- [NOT ESSENTIAL][ImageDrop](https://gitlab.com/mesfoliesludiques/foundryvtt-image-drop)
+- [NOT EESENTIAL BUT VERY GOOD][JOURNAL][NOte Macro](https://github.com/Kekilla0/Note-Macro)
+- [NOT ESSENTIAL][SCENE][Compendium Scene Viewer](https://github.com/BadIdeasBureau/scene-viewer )
+- [NOT ESSENTIAL MIDI ALREADY DO SOMETHING][COMBAT][Damage Log](https://github.com/cs96and/FoundryVTT-damage-log)
+- [NOT ESSENTIAL][TOKEN][Loot Populater NPC 5E](https://github.com/DanielBoettner/fvtt-loot-populator-npc-5e)
+- [NOT ESSENTIAL][UTILITY][Rollable Tokens](https://github.com/zeel01/roll-tokens)
+- [NOT ESSENTIAL][COMBAT][AMMO TRACKER FVTT](https://github.com/NekroDarkmoon/ammo-tracker-fvtt)
+
 ## 2021-07-03 FoundryVTT 0.8.9
 
 - [NOT ESSENTIAL][COMBAT][FVTT-Combat-Tracker-Effects-Tooltips](https://github.com/schultzcole/FVTT-Combat-Tracker-Effects-Tooltips ) - https://raw.githubusercontent.com/schultzcole/FVTT-Combat-Tracker-Effects-Tooltips/master/module.json
@@ -16,6 +33,10 @@
 - [NOT ESSENTIAL][CHARACTER SHEET][Merchant Sheet NPC](https://github.com/whelan/fvtt-merchant-sheet-npc )
 - [NOT ESSENTIAL][COMBAT][Multiple Attack](https://github.com/jessev14/Multiattack-5e )
 - [NOT ESSENTIAL][COMBAT][Mob Attack Tool](https://github.com/Stendarpaval/mob-attack-tool )
+- [BETTER COMBAT BOOSTER https://github.com/theripper93/Combat-Booster][COMBAT][Turn Maker](https://github.com/kckaiwei/TurnMarker-alt ) -
+- [BETTER SMALL TIME][EXTERNAL][Calendar/Weather](https://gitlab.com/jstebenne/foundryvtt-calendar-weather ) - https://gitlab.com/jstebenne/foundryvtt-calendar-weather/-/raw/master/module.json
+- [USE INSTEAD SIFToolkit https://github.com/bitkiller0/SIFToolkit][COMBAT][spellTemplateManager](https://github.com/bitkiller0/spellTemplateManager ) - https://raw.githubusercontent.com/bitkiller0/spellTemplateManager/master/module.json
+- [NOT ESSENTIAL][Journal to Canvas Slideshow](https://github.com/EvanesceExotica/Journal-To-Canvas-Slideshow)
 
 ## 2021-06-23 FoundryVTT 0.8.7
 
@@ -131,7 +152,6 @@
 - [NOT ESSENTIAL]https://github.com/ironmonk88/monks-tokenbar
 - [DEPRECATED][TOKEN][Mount Up](https://github.com/Brunhine/MountUp ) - https://gitlab.com/brunhine/foundry-mountup/raw/master/mountup/module.json
 - [DEPRECATED][TOKEN][Follow me](https://github.com/Brunhine/FollowMe ) - https://gitlab.com/brunhine/foundry-followme/raw/master/followme/module.json
-- [NOT ESSENTIAL][EXTERNAL][Adventure Import Export](https://github.com/cstadther/adventure-import-export ) - https://raw.githubusercontent.com/cstadther/adventure-import-export/master/module.json
 - [DEPRECATED IN FAVOR OF POLIGLOTA][JOURNAL/CHAT][Polyglot](https://github.com/kakaroto/fvtt-module-polyglot ) - https://raw.githubusercontent.com/kakaroto/fvtt-module-polyglot/master/module.json
 - [NOT ESSENTIAL][CHARACTER SHEET/UTILITY][Show Art Button](https://github.com/zeel01/TokenHUDArtButton)
 - [NOT ESSENTIAL][CHAT][Deepflame's Chat Cards](https://gitlab.com/TimToxopeus/df-chat-cards ) - 
