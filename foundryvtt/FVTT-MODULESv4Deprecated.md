@@ -2,6 +2,23 @@
 # NOT ESSENTIAL 
 # ======================================================================
 
+## 2021-09-04
+
+- [NOT ESSENTIAL][CHARACTER SHEET/UTILITY][Short Rest Recovery](https://github.com/Haxxer/FoundryVTT-ShortRestRecovery ) - https://raw.githubusercontent.com/Haxxer/FoundryVTT-ShortRestRecovery/main/short-rest-recovery/module.json
+- [NOT ESSENTIAL][CHARACTER SHEET/UTILITY][FVTT Long Rest HD Healing 5e](https://github.com/schultzcole/FVTT-Long-Rest-HD-Healing-5e/ ) - https://raw.githubusercontent.com/schultzcole/FVTT-Long-Rest-HD-Healing-5e/master/module.json
+- [NOT ESSENTIAL][TOKEN][Border Control](https://github.com/kandashi/Border-Control )
+- [NOT ESSENTIAL][COMBAT][Less Fog](https://github.com/trdischat/lessfog ) - https://raw.githubusercontent.com/trdischat/lessfog/master/module.json
+- [NOT ESSENTIAL][Let's trade]()
+- [NOT ESSENTIAL][CHAT][FoundryVTT NPC Chatter](https://github.com/cswendrowski/FoundryVtt-Npc-Chatter ) - https://raw.githubusercontent.com/cswendrowski/FoundryVtt-Npc-Chatter/master/module.json
+- [NOT ESSENTIAL][TOKEN][Shared Vision](https://github.com/CDeenen/SharedVision )
+- [NOT ESSENTIAL][COMBAT][Toggle Combat Warning](https://github.com/bekriebel/fvtt-module-toggle-combat-warning) - https://raw.githubusercontent.com/bekriebel/fvtt-module-toggle-combat-warning/main/module.json
+- [BETTER TOKEN-Z][TOKEN][Your Tokens Visible](https://github.com/David-Zvekic/TokensVisible )
+- [INTEGRATED IN PIN CUSHION][JOURNAL][Thumbnails for Journal Entries](https://github.com/J-Guenther/foundryvtt-journal-thumbnail ) - https://raw.githubusercontent.com/J-Guenther/foundryvtt-journal-thumbnail/main/module.json
+- [NOT ESSENTIAL][Token Vision Animation: World Scope](https://gitlab.com/DmitryRomanenko/token-vision-animation-world)
+- [NOT ESSENTIAL][UTILITY][Hey Wait](https://github.com/1000nettles/hey-wait )
+- [NOT ESSENTIAL] Inline Webpreviewer
+- [NOT ESSENTIAL] Roll from compendium
+
 ## 2021-08-11
 
 - [NOT ESSENTIAL][JOURNAL][Selective Show](https://github.com/moo-man/FVTT-SelectiveShow ) - https://raw.githubusercontent.com/moo-man/FVTT-SelectiveShow/master/module.json
