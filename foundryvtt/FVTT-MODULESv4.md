@@ -19,7 +19,6 @@
 - [ENTITY][Compendiumn Browse](https://github.com/syl3r86/compendium-browser ) - https://raw.githubusercontent.com/syl3r86/compendium-browser/master/module.json
 - [TEMPLATE][Token Magic FX](https://github.com/Feu-Secret/Tokenmagic/ ) - https://raw.githubusercontent.com/Feu-Secret/Tokenmagic/master/tokenmagic/module.json
 - [ENTITY][Item Collection ](https://gitlab.com/tposney/itemcollection ) - https://gitlab.com/tposney/itemcollection/raw/master/module.json
-- [EXTERNAL][Travel Pace](https://github.com/rinnocenti/travel-pace ) - https://raw.githubusercontent.com/rinnocenti/travel-pace/master/module.json
 - [ENTITY][Item Macro](https://github.com/Kekilla0/Item-Macro ) - https://raw.githubusercontent.com/Kekilla0/Item-Macro/master/module.json
 - [CHAT][Foundry VTT - Narrator Tools](https://github.com/elizeuangelo/fvtt-module-narrator-tools ) - https://raw.githubusercontent.com/elizeuangelo/fvtt-module-narrator-tools/master/module.json
 - [ROLL][Dice Calculator/Dice Tray](https://gitlab.com/asacolips-projects/foundry-mods/foundry-vtt-dice-calculator/ ) - https://gitlab.com/asacolips-projects/foundry-mods/foundry-vtt-dice-calculator/raw/master/module.json
@@ -57,7 +56,6 @@
 - [COMBAT/ROLL][Let me roll that for you](https://github.com/League-of-Foundry-Developers/fvtt-module-lmrtfy )
 - [COMBAT][Combat Booster](https://github.com/theripper93/Combat-Booster)
 - [COMBAT][SIFToolkit](https://github.com/bitkiller0/SIFToolkit)
-- [COMBAT][Turn Announcer](https://gitlab.com/koboldworks/agnostic/turn-announcer)
 
 ## [SUGGESTION] 0.8.6
 
@@ -76,12 +74,9 @@
 - [UTILITY][Dragon Flagon Architect](https://github.com/flamewave000/dragonflagon-arch)
 - [EXTERNAL][Adventure Import Export](https://github.com/cstadther/adventure-import-export ) - https://raw.githubusercontent.com/cstadther/adventure-import-export/master/module.json
 - [UTILITY][Go to Player](https://github.com/theripper93/go-to-player)
-- [JOURNLA/UTILITY][Share Media](https://github.com/DarKDinDoN/share-media)
-- [TOKEN][TOKEN Z](https://github.com/theripper93/token-z)
-- [UTILITY][Sidebar Macro](https://github.com/arcanistzed/sidebar-macros)
 - [UTILITY][Automated Evocations](https://github.com/theripper93/automated-evocations)
-- [UTILITY][Dig Down](https://github.com/theripper93/fuzzy-foundry)
 - [UTILITY][Boss Bar](https://github.com/theripper93/Boss-Bar) 
+- [UTILITY][Sidebar Macro](https://github.com/arcanistzed/sidebar-macros)
 
 ## [NOT ESSENTIAL BUT VERY GOOD] 0.8.6
 
@@ -91,20 +86,13 @@
 - [MAP][Multilevel Tokens module for Foundry VTT](https://github.com/grandseiken/foundryvtt-multilevel-tokens ) - https://raw.githubusercontent.com/grandseiken/foundryvtt-multilevel-tokens/master/module.json
 - [MAP][Parallaxia](https://gitlab.com/reichler/parallaxia ) - https://gitlab.com/reichler/parallaxia/raw/master/parallaxia/module.json
 - [TOKEN][Token Attacher](https://github.com/KayelGee/token-attacher ) - https://raw.githubusercontent.com/KayelGee/token-attacher/master/module.json
-- [UTILITY][Hey Wait](https://github.com/1000nettles/hey-wait )
-
-
-- [MAP/IMPORTER][FVTT DD Import](https://github.com/moo-man/FVTT-DD-Import )
 - [UTILITY/MODULES][DF Settings Clarity](https://github.com/flamewave000/dragonflagon-fvtt/tree/master/df-settings-clarity ) - https://raw.githubusercontent.com/flamewave000/dragonflagon-fvtt/master/df-settings-clarity/module.json
 - [CHAT][DragonFlagon Chat Enhancements](https://github.com/flamewave000/dragonflagon-fvtt/tree/master/df-chat-enhance )
-
-
 - [TABLE][Better Rolltables](https://github.com/ultrakorne/better-rolltables ) - https://raw.githubusercontent.com/ultrakorne/better-rolltables/master/module.json
 - [UTILITY][Item Delete Check](https://gitlab.com/tposney/item-delete-check/tree/master )
-
-- [COMBAT][Condition Automation/Conditions](https://github.com/kandashi/condition-automation ) - https://raw.githubusercontent.com/kandashi/condition-automation/master/module.json
 - [COMBAT][Active Auras](https://github.com/kandashi/Active-Auras ) - https://raw.githubusercontent.com/kandashi/Active-Auras/main/module.json
 - [COMBAT][Next-Up](https://github.com/kandashi/Next-Up )
+- [TOKEN][TOKEN Z](https://github.com/theripper93/token-z)
 
 ## [MUST HAVE] [WALL] 0.8.6
 

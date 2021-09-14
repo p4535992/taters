@@ -18,6 +18,15 @@
 - [NOT ESSENTIAL][UTILITY][Hey Wait](https://github.com/1000nettles/hey-wait )
 - [NOT ESSENTIAL] Inline Webpreviewer
 - [NOT ESSENTIAL] Roll from compendium
+- [NOT ESSENTIAL][TOKEN/CHAT][Group Rolls for D&D 5e](https://github.com/trdischat/grouproll)
+- [NOT ESSENTIAL][COMBAT][Condition Automation/Conditions](https://github.com/kandashi/condition-automation ) - https://raw.githubusercontent.com/kandashi/condition-automation/master/module.json
+- [NOT ESSENTIAL]https://github.com/MAClavell/gm-token-drag-visibility-v2
+- [NOT ESSENTIAL]https://gitlab.com/DmitryRomanenko/token-vision-animation-world
+- [NOT ESSENTIAL BUT VERY GOOD][EXTERNAL][Travel Pace](https://github.com/rinnocenti/travel-pace ) - https://raw.githubusercontent.com/rinnocenti/travel-pace/master/module.json
+- [NOT ESSENTIAL BUT VERY GOOD][COMBAT][Turn Announcer](https://gitlab.com/koboldworks/agnostic/turn-announcer)
+- [NOT ESSENTIAL][JOURNLA/UTILITY][Share Media](https://github.com/DarKDinDoN/share-media)
+- [NOT ESSENTIAL][UTILITY][Dig Down](https://github.com/theripper93/fuzzy-foundry)
+- [NOT ESSENTIAL][MAP/IMPORTER][FVTT DD Import](https://github.com/moo-man/FVTT-DD-Import )
 
 ## 2021-08-11
 
