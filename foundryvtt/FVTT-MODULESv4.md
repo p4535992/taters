@@ -54,16 +54,16 @@
 - [COMBAT][Active Effects to Chat](https://github.com/BadIdeasBureau/ae-to-chat )
 - [COMBAT][Wild Magic Surge 5e](https://github.com/johnnolan/wild-magic-surge-5e) - https://raw.githubusercontent.com/johnnolan/wild-magic-surge-5e/main/scripts/module.js
 - [COMBAT/ROLL][Let me roll that for you](https://github.com/League-of-Foundry-Developers/fvtt-module-lmrtfy )
-- [COMBAT][Combat Booster](https://github.com/theripper93/Combat-Booster)
 - [COMBAT][SIFToolkit](https://github.com/bitkiller0/SIFToolkit)
+- [COMBAT][Turn Announcer](https://gitlab.com/koboldworks/agnostic/turn-announcer)
+- [COMBAT][Active Auras](https://github.com/kandashi/Active-Auras ) - https://raw.githubusercontent.com/kandashi/Active-Auras/main/module.json
+- [COMBAT][Combat Booster](https://github.com/theripper93/Combat-Booster)
 
 ## [SUGGESTION] 0.8.6
 
 - [AUDIO][Playlist Import](https://github.com/JacobMcAuley/playlist_import ) - https://raw.githubusercontent.com/JacobMcAuley/playlist_import/master/module.json
-- [AUDIO][Background Volume](https://github.com/mtvjr/background-volume ) - https://raw.githubusercontent.com/mtvjr/background-volume/master/module.json
 - [JOURNAL][Library PDFoundry](https://github.com/Djphoenix719/PDFoundry ) - https://raw.githubusercontent.com/Djphoenix719/PDFoundry/master/module.json
 - [ENTITY][Magic Items](https://gitlab.com/riccisi/foundryvtt-magic-items ) - https://gitlab.com/riccisi/foundryvtt-magic-items/raw/master/module/module.json
-- [JOURNAL][sound-link](https://github.com/superseva/sound-link ) - https://raw.githubusercontent.com/superseva/sound-link/master/module.json
 - [SCENE][foundryvtt stairways](https://gitlab.com/SWW13/foundryvtt-stairways)
 - [CHARACTER SHEET/UTILITY][Variant Encumbrance 5e](https://github.com/VanirDev/VariantEncumbrance )- https://raw.githubusercontent.com/VanirDev/VariantEncumbrance/master/dist/module.json
 - [UTILITY LOOT][DFreds Pocket Change](https://github.com/DFreds/dfreds-pocket-change ) - https://raw.githubusercontent.com/dfreds/dfreds-pocket-change/main/module.json
@@ -73,10 +73,8 @@
 - [UTILITY][Autocomplete Inline Properties](https://github.com/ghost-fvtt/FVTT-Autocomplete-Inline-Properties)
 - [UTILITY][Dragon Flagon Architect](https://github.com/flamewave000/dragonflagon-arch)
 - [EXTERNAL][Adventure Import Export](https://github.com/cstadther/adventure-import-export ) - https://raw.githubusercontent.com/cstadther/adventure-import-export/master/module.json
-- [UTILITY][Go to Player](https://github.com/theripper93/go-to-player)
 - [UTILITY][Automated Evocations](https://github.com/theripper93/automated-evocations)
 - [UTILITY][Boss Bar](https://github.com/theripper93/Boss-Bar) 
-- [UTILITY][Sidebar Macro](https://github.com/arcanistzed/sidebar-macros)
 
 ## [NOT ESSENTIAL BUT VERY GOOD] 0.8.6
 
@@ -90,9 +88,7 @@
 - [CHAT][DragonFlagon Chat Enhancements](https://github.com/flamewave000/dragonflagon-fvtt/tree/master/df-chat-enhance )
 - [TABLE][Better Rolltables](https://github.com/ultrakorne/better-rolltables ) - https://raw.githubusercontent.com/ultrakorne/better-rolltables/master/module.json
 - [UTILITY][Item Delete Check](https://gitlab.com/tposney/item-delete-check/tree/master )
-- [COMBAT][Active Auras](https://github.com/kandashi/Active-Auras ) - https://raw.githubusercontent.com/kandashi/Active-Auras/main/module.json
-- [COMBAT][Next-Up](https://github.com/kandashi/Next-Up )
-- [TOKEN][TOKEN Z](https://github.com/theripper93/token-z)
+- [UTILITY][Roger's Additional Metric Ruler Labels](https://github.com/Roger92/metric-ruler-labels)
 
 ## [MUST HAVE] [WALL] 0.8.6
 

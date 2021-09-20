@@ -23,11 +23,9 @@
 - [NOT ESSENTIAL]https://github.com/MAClavell/gm-token-drag-visibility-v2
 - [NOT ESSENTIAL]https://gitlab.com/DmitryRomanenko/token-vision-animation-world
 - [NOT ESSENTIAL BUT VERY GOOD][EXTERNAL][Travel Pace](https://github.com/rinnocenti/travel-pace ) - https://raw.githubusercontent.com/rinnocenti/travel-pace/master/module.json
-- [NOT ESSENTIAL BUT VERY GOOD][COMBAT][Turn Announcer](https://gitlab.com/koboldworks/agnostic/turn-announcer)
 - [NOT ESSENTIAL][JOURNLA/UTILITY][Share Media](https://github.com/DarKDinDoN/share-media)
 - [NOT ESSENTIAL][UTILITY][Dig Down](https://github.com/theripper93/fuzzy-foundry)
 - [NOT ESSENTIAL][MAP/IMPORTER][FVTT DD Import](https://github.com/moo-man/FVTT-DD-Import )
-- [NOT ESSENTIAL][COMBAT][Combat Booster](https://github.com/theripper93/Combat-Booster)
 - [NOT ESSENTIAL][TOKEN][TOKEN Z](https://github.com/theripper93/token-z)
 - [NOT ESSENTIAL][UTILITY][Sidebar Macro](https://github.com/arcanistzed/sidebar-macros)
 - [NOT ESSENTIAL][UTILITY][Go to Player](https://github.com/theripper93/go-to-player)
@@ -35,6 +33,8 @@
 - [NOT ESSENTIAL][JOURNAL][sound-link](https://github.com/superseva/sound-link ) - https://raw.githubusercontent.com/superseva/sound-link/master/module.json
 - [NOT ESSENTIAL][AUDIO][Background Volume](https://github.com/mtvjr/background-volume ) - https://raw.githubusercontent.com/mtvjr/background-volume/master/module.json
 - [NOT ESSENTIAL]Babele
+- [NOT ESSENTIAL IS BETTER COMBAT BOOSTER][COMBAT][Next-Up](https://github.com/kandashi/Next-Up )
+
 
 ## 2021-08-11
 
@@ -52,6 +52,7 @@
 - [NOT ESSENTIAL][TOKEN][Loot Populater NPC 5E](https://github.com/DanielBoettner/fvtt-loot-populator-npc-5e)
 - [NOT ESSENTIAL][UTILITY][Rollable Tokens](https://github.com/zeel01/roll-tokens)
 - [NOT ESSENTIAL][COMBAT][AMMO TRACKER FVTT](https://github.com/NekroDarkmoon/ammo-tracker-fvtt)
+
 
 ## 2021-07-03 FoundryVTT 0.8.9
 
