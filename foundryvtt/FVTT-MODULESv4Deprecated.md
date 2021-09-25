@@ -34,7 +34,7 @@
 - [NOT ESSENTIAL][AUDIO][Background Volume](https://github.com/mtvjr/background-volume ) - https://raw.githubusercontent.com/mtvjr/background-volume/master/module.json
 - [NOT ESSENTIAL]Babele
 - [NOT ESSENTIAL IS BETTER COMBAT BOOSTER][COMBAT][Next-Up](https://github.com/kandashi/Next-Up )
-
+- [NOT ESSENTIAL][Show Wall Everywhere]
 
 ## 2021-08-11
 

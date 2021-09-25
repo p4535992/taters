@@ -16,7 +16,7 @@
 
 - [TOKEN/MAP][Drag Upload](https://github.com/cswendrowski/FoundryVTT-Drag-Upload ) - https://raw.githubusercontent.com/cswendrowski/FoundryVTT-Drag-Upload/master/module.json
 - [TOKEN][Health Estimate](https://gitlab.com/tsuki.no.mai/healthestimate/ ) - https://gitlab.com/tsuki.no.mai/healthestimate/-/raw/master/src/module.json
-- [ENTITY][Compendiumn Browse](https://github.com/syl3r86/compendium-browser ) - https://raw.githubusercontent.com/syl3r86/compendium-browser/master/module.json
+- [ENTITY][Compendiumn Browser](https://github.com/syl3r86/compendium-browser ) - https://raw.githubusercontent.com/syl3r86/compendium-browser/master/module.json
 - [TEMPLATE][Token Magic FX](https://github.com/Feu-Secret/Tokenmagic/ ) - https://raw.githubusercontent.com/Feu-Secret/Tokenmagic/master/tokenmagic/module.json
 - [ENTITY][Item Collection ](https://gitlab.com/tposney/itemcollection ) - https://gitlab.com/tposney/itemcollection/raw/master/module.json
 - [ENTITY][Item Macro](https://github.com/Kekilla0/Item-Macro ) - https://raw.githubusercontent.com/Kekilla0/Item-Macro/master/module.json
@@ -41,6 +41,7 @@
 - [TOKEN/UTILITY][Custom-Token-Animations](https://github.com/kandashi/Custom-Token-Animations )
 - [TOKEN/SCENES][pull-players-to-scene](https://github.com/Mr-Byte/pull-players-to-scene )
 - [COMBAT][CHAT][Chat Portrait](https://github.com/ShoyuVanilla/FoundryVTT-Chat-Portrait/ ) - https://raw.githubusercontent.com/ShoyuVanilla/FoundryVTT-Chat-Portrait/master/module.json
+- [TOKEN][Quick Scale](https://github.com/unsoluble/quickscale) -
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
@@ -50,7 +51,6 @@
 - [COMBAT][DnD5e Helpers](https://github.com/trioderegion/dnd5e-helpers )
 - [COMBAT/ACTIVE EFFECTS][Time Up](https://gitlab.com/tposney/times-up ) - 
 - [COMBAT][Better Rolls for 5e](https://github.com/RedReign/FoundryVTT-BetterRolls5e ) - https://raw.githubusercontent.com/RedReign/FoundryVTT-BetterRolls5e/master/betterrolls5e/module.json 
-- [COMBAT][Perfect Vision](https://github.com/dev7355608/perfect-vision ) -  https://raw.githubusercontent.com/dev7355608/perfect-vision/main/module.json
 - [COMBAT][Active Effects to Chat](https://github.com/BadIdeasBureau/ae-to-chat )
 - [COMBAT][Wild Magic Surge 5e](https://github.com/johnnolan/wild-magic-surge-5e) - https://raw.githubusercontent.com/johnnolan/wild-magic-surge-5e/main/scripts/module.js
 - [COMBAT/ROLL][Let me roll that for you](https://github.com/League-of-Foundry-Developers/fvtt-module-lmrtfy )
@@ -58,6 +58,8 @@
 - [COMBAT][Turn Announcer](https://gitlab.com/koboldworks/agnostic/turn-announcer)
 - [COMBAT][Active Auras](https://github.com/kandashi/Active-Auras ) - https://raw.githubusercontent.com/kandashi/Active-Auras/main/module.json
 - [COMBAT][Combat Booster](https://github.com/theripper93/Combat-Booster)
+- [COMBAT][Arbron's Improved HP Bar](https://github.com/arbron/fvtt-hp-bar)
+- [COMBAT][Combat Utility Belt](https://github.com/death-save/combat-utility-belt ) - https://raw.githubusercontent.com/death-save/combat-utility-belt/master/module.json
 
 ## [SUGGESTION] 0.8.6
 
@@ -69,15 +71,15 @@
 - [UTILITY LOOT][DFreds Pocket Change](https://github.com/DFreds/dfreds-pocket-change ) - https://raw.githubusercontent.com/dfreds/dfreds-pocket-change/main/module.json
 - [TOKEN][Active-Token-Lighting](https://github.com/kandashi/Active-Token-Lighting )
 - [SCENES][Monks Scene Navigation](https://github.com/ironmonk88/monks-scene-navigation )
-- [COMBAT][Combat Utility Belt](https://github.com/death-save/combat-utility-belt ) - https://raw.githubusercontent.com/death-save/combat-utility-belt/master/module.json
 - [UTILITY][Autocomplete Inline Properties](https://github.com/ghost-fvtt/FVTT-Autocomplete-Inline-Properties)
 - [UTILITY][Dragon Flagon Architect](https://github.com/flamewave000/dragonflagon-arch)
-- [EXTERNAL][Adventure Import Export](https://github.com/cstadther/adventure-import-export ) - https://raw.githubusercontent.com/cstadther/adventure-import-export/master/module.json
 - [UTILITY][Automated Evocations](https://github.com/theripper93/automated-evocations)
 - [UTILITY][Boss Bar](https://github.com/theripper93/Boss-Bar) 
+- [EXTERNAL][Calendar/Weather](https://gitlab.com/jstebenne/foundryvtt-calendar-weather ) - https://gitlab.com/jstebenne/foundryvtt-calendar-weather/-/raw/master/module.json
 
 ## [NOT ESSENTIAL BUT VERY GOOD] 0.8.6
 
+- [EXTERNAL][Adventure Import Export](https://github.com/cstadther/adventure-import-export ) - https://raw.githubusercontent.com/cstadther/adventure-import-export/master/module.json
 - [MAP][Armreach](https://github.com/p4535992/foundryvtt-arms-reach ) - 
 - [CHARACTHER SHEET/UTILITY][Downtime Tracking 5e Training](https://github.com/crash1115/5e-training ) - https://raw.githubusercontent.com/crash1115/5e-training/master/module.json
 - [MACRO/COMBAT][Trigger Happy](https://github.com/kakaroto/fvtt-module-trigger-happy/ ) - https://raw.githubusercontent.com/kakaroto/fvtt-module-trigger-happy/master/module.json
@@ -89,6 +91,7 @@
 - [TABLE][Better Rolltables](https://github.com/ultrakorne/better-rolltables ) - https://raw.githubusercontent.com/ultrakorne/better-rolltables/master/module.json
 - [UTILITY][Item Delete Check](https://gitlab.com/tposney/item-delete-check/tree/master )
 - [UTILITY][Roger's Additional Metric Ruler Labels](https://github.com/Roger92/metric-ruler-labels)
+- [COMBAT][Perfect Vision](https://github.com/dev7355608/perfect-vision ) -  https://raw.githubusercontent.com/dev7355608/perfect-vision/main/module.json
 
 ## [MUST HAVE] [WALL] 0.8.6
 
@@ -104,11 +107,12 @@
 
 - [COMPENDIUM][Super Homebrew Pack](https://github.com/SuperNar3k/foundry ) - https://raw.githubusercontent.com/SuperNar3k/foundry/master/SupersHomebrewPack/module.json 
 - [COMPENDIUM][Beginner Baubles](https://foundryvtt.com/packages/ddd-beginner-baubles/ )
+
 - [COMPENDIUM][Data Toolbox - Let's Contribute](https://github.com/SvenWerlen/fvtt-data-toolbox/tree/master/ )
 - [COMPENDIUM][Take on Magic Items (unofficial)](https://github.com/brunocalado/takeonmagicitems )
 - [COMPENDIUM][Loot Tavern magic Item](https://www.patreon.com/LootTavern )
-- [COMPENDIUM][Copper Dragon's Hoard](https://github.com/copperdragongames/copperdragonhoard)
 
+- [DEPRECATED USE INSTEAD https://github.com/p4535992/fvtt-compendiums-mix-dnd5e][COMPENDIUM][Copper Dragon's Hoard](https://github.com/copperdragongames/copperdragonhoard)
 - [DEPRECATED USE INSTEAD https://github.com/p4535992/fvtt-compendiums-mix-dnd5e][COMPENDIUM][FoundryVTT-FantasyPlants](https://github.com/KyleBishop/FoundryVTT-FantasyPlants )
 - [DEPRECATED USE INSTEAD https://github.com/p4535992/fvtt-compendiums-mix-dnd5e][COMPENDIUM][Weather Effects 5e](https://github.com/orangetruth/weather-effects-5e )
 - [DEPRECATED USE INSTEAD https://github.com/p4535992/fvtt-compendiums-mix-dnd5e][COMPENDIUM][SRD heros et dragons](https://gitlab.com/lemaire.erw/srd-heros-et-dragons ) - https://gitlab.com/lemaire.erw/srd-heros-et-dragons/raw/master/module.json
