@@ -34,7 +34,7 @@
 - [NOT ESSENTIAL][AUDIO][Background Volume](https://github.com/mtvjr/background-volume ) - https://raw.githubusercontent.com/mtvjr/background-volume/master/module.json
 - [NOT ESSENTIAL]Babele
 - [NOT ESSENTIAL IS BETTER COMBAT BOOSTER][COMBAT][Next-Up](https://github.com/kandashi/Next-Up )
-- [NOT ESSENTIAL][Show Wall Everywhere]
+- [NOT ESSENTIAL][Show Wall Everywhere](https://github.com/theripper93/Show-Walls-Everywhere)
 
 ## 2021-08-11
 
@@ -69,7 +69,6 @@
 - [NOT ESSENTIAL][COMBAT][Multiple Attack](https://github.com/jessev14/Multiattack-5e )
 - [NOT ESSENTIAL][COMBAT][Mob Attack Tool](https://github.com/Stendarpaval/mob-attack-tool )
 - [BETTER COMBAT BOOSTER https://github.com/theripper93/Combat-Booster][COMBAT][Turn Maker](https://github.com/kckaiwei/TurnMarker-alt ) -
-- [BETTER SMALL TIME][EXTERNAL][Calendar/Weather](https://gitlab.com/jstebenne/foundryvtt-calendar-weather ) - https://gitlab.com/jstebenne/foundryvtt-calendar-weather/-/raw/master/module.json
 - [USE INSTEAD SIFToolkit https://github.com/bitkiller0/SIFToolkit][COMBAT][spellTemplateManager](https://github.com/bitkiller0/spellTemplateManager ) - https://raw.githubusercontent.com/bitkiller0/spellTemplateManager/master/module.json
 - [NOT ESSENTIAL][Journal to Canvas Slideshow](https://github.com/EvanesceExotica/Journal-To-Canvas-Slideshow)
 
