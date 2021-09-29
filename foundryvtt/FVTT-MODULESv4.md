@@ -93,6 +93,11 @@
 - [UTILITY][Roger's Additional Metric Ruler Labels](https://github.com/Roger92/metric-ruler-labels)
 - [COMBAT][Perfect Vision](https://github.com/dev7355608/perfect-vision ) -  https://raw.githubusercontent.com/dev7355608/perfect-vision/main/module.json
 
+## TO Check
+
+- [UTILITY][Environment Interaction](https://github.com/jessev14/environment-interaction)
+
+
 ## [MUST HAVE] [WALL] 0.8.6
 
 - [WALL/COMBAT][Template Wall Collision](https://github.com/EndlesNights/template-wall-collision) - https://raw.githubusercontent.com/EndlesNights/template-wall-collision/master/module.json

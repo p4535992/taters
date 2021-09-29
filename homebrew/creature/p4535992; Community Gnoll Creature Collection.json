@@ -20,6 +20,265 @@
 		"dateLastModified": 1555319662
 	},
 	"monster": [
-		
+		{
+			"name": "Marir Goreclash",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"gnoll"
+				]
+			},
+			"source": "p4535992Gnoll",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item hide armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d8 + 10",
+				"average": 37
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 14,
+			"int": 7,
+			"wis": 12,
+			"cha": 11,
+			"passive": 14,
+			"cr": "2",
+			"shortName": "Marir Goreclash",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Gnoll",
+				"Orc",
+				"Sylvan",
+				"Primordial"
+			],
+			"languageTags": [
+				"OTH",
+				"O",
+				"S",
+				"P"
+			],
+			"save": {
+				"con": "+5",
+				"str": "+6"
+			},
+			"skill": {
+				"athletics": "+7",
+				"perception": "+4",
+				"stealth": "+5",
+				"survival": "+4"
+			},
+			"trait": [
+				{
+					"name": "Rampage",
+					"entries": [
+						"When the gnoll reduces a creature to 0 hit points with a melee attack on its turn, the gnoll can take a bonus action to move up to half its speed and make a bite attack."
+					]
+				}
+			],
+			"traitTags": [
+				"Rampage"
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Battleaxe",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 150/600 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+					]
+				}
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			],
+			"tokenUrl": "https://i.imgur.com/55VtRCt.png",
+			"fluff": {
+				"entries": [
+					"{@link Marir Goreclash|https://www.pinterest.it/pin/747316131913510079/}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/f2KuxSQ.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Flind",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"gnoll"
+				]
+			},
+			"source": "p4535992Gnoll",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item chain mail|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d8 + 60",
+				"average": 127
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 10,
+			"con": 19,
+			"int": 11,
+			"wis": 13,
+			"cha": 12,
+			"passive": 15,
+			"cr": "9",
+			"shortName": "Flind",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Gnoll",
+				"Abyssal"
+			],
+			"languageTags": [
+				"OTH",
+				"AB"
+			],
+			"save": {
+				"wis": "+5",
+				"con": "+8"
+			},
+			"skill": {
+				"intimidation": "+5",
+				"perception": "+5"
+			},
+			"trait": [
+				{
+					"name": "Aura of Blood Thirst",
+					"entries": [
+						"If the flind isn't {@condition incapacitated}, any creature with the Rampage trait can mabe a bute attack as a bonus action while within 10 feet of the find."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The flind makes three atracks: one with each of its different flail attacks or three with its longbow."
+					]
+				},
+				{
+					"name": "Flail of Madness",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d10 + 5}) bludgeoning damage, and the target must make a {@dc 16} Wisdom saving throw. On a failed save,",
+						"the creature must make a melee attack against a random target within its reach on its next turn. If has no targets within is reach even after moving, it loses its action on that turn."
+					]
+				},
+				{
+					"name": "Flail of Pain",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d10 + 5}) bludgeoning damage, plus 22 ({@damage 4d10}) psychic damage."
+					]
+				},
+				{
+					"name": "Flail of Paralysis",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d10 + 5}) bludgeoning damage, and the target must succeed on a {@dc 16} Constitution saving throw or be {@condition paralyzed} until the end of its next turn,"
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 150/600 ft., one target. {@h}4 ({@damage 1d8}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"Y",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			],
+			"conditionInflict": [
+				"paralyzed"
+			],
+			"tokenUrl": "https://i.imgur.com/RUkbri5.png",
+			"fluff": {
+				"entries": [
+					"{@link Flind|https://kotaku.com/an-early-look-at-d-d-s-newest-monster-bible-1788410991?utm_campaign=Socialflow_Kotaku_Twitter&utm_source=Kotaku_Twitter&utm_medium=Socialflow}",
+					"A gnoll war band might include one or more of the special kinds of gnolls described in this section.",
+					"A flind is an exceptionally strong and vicious gnoll that commands and directs the war band it is a part of it wields is a flail imbued with powerful magic by Yeenoghu himself.",
+					"A war band can have only one flind, and that creature sets a war band’s path Because of its special connection to Yeenoghu, a flind uses god-given omens and demonic insight to guide the gnoils toward weak prey ripe for slaughter.",
+					"Unlike other humanoid leaders that migh: sine behind their minions, a find teads the charge in battle. rein those struck by it."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/9b9srkw.jpg"
+						}
+					}
+				]
+			}
+		}	
 	]
 }
