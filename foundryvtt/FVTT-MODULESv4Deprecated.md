@@ -2,7 +2,13 @@
 # NOT ESSENTIAL 
 # ======================================================================
 
-## 2021-09-04
+## 2021-10
+
+- [NOT ESSENTIAL][UTILITY][Roger's Additional Metric Ruler Labels](https://github.com/Roger92/metric-ruler-labels)
+- [NOT ESSENTIAL][UTILITY][Burger Time](https://github.com/scottburton11/burger-time)
+- [NOT ESSENTIAL][TOKEN][Quick Scale](https://github.com/unsoluble/quickscale) -
+
+## 2021-09
 
 - [NOT ESSENTIAL][CHARACTER SHEET/UTILITY][Short Rest Recovery](https://github.com/Haxxer/FoundryVTT-ShortRestRecovery ) - https://raw.githubusercontent.com/Haxxer/FoundryVTT-ShortRestRecovery/main/short-rest-recovery/module.json
 - [NOT ESSENTIAL][CHARACTER SHEET/UTILITY][FVTT Long Rest HD Healing 5e](https://github.com/schultzcole/FVTT-Long-Rest-HD-Healing-5e/ ) - https://raw.githubusercontent.com/schultzcole/FVTT-Long-Rest-HD-Healing-5e/master/module.json
@@ -36,7 +42,7 @@
 - [NOT ESSENTIAL IS BETTER COMBAT BOOSTER][COMBAT][Next-Up](https://github.com/kandashi/Next-Up )
 - [NOT ESSENTIAL][Show Wall Everywhere](https://github.com/theripper93/Show-Walls-Everywhere)
 
-## 2021-08-11
+## 2021-08
 
 - [NOT ESSENTIAL][JOURNAL][Selective Show](https://github.com/moo-man/FVTT-SelectiveShow ) - https://raw.githubusercontent.com/moo-man/FVTT-SelectiveShow/master/module.json
 - [NOT ESSENTIAL][SCENE][Fog Manager](https://gitlab.com/tiwato/fogmanager) - https://gitlab.com/tiwato/fogmanager/-/raw/master/module.json
@@ -53,8 +59,7 @@
 - [NOT ESSENTIAL][UTILITY][Rollable Tokens](https://github.com/zeel01/roll-tokens)
 - [NOT ESSENTIAL][COMBAT][AMMO TRACKER FVTT](https://github.com/NekroDarkmoon/ammo-tracker-fvtt)
 
-
-## 2021-07-03 FoundryVTT 0.8.9
+## 2021-07
 
 - [NOT ESSENTIAL][COMBAT][FVTT-Combat-Tracker-Effects-Tooltips](https://github.com/schultzcole/FVTT-Combat-Tracker-Effects-Tooltips ) - https://raw.githubusercontent.com/schultzcole/FVTT-Combat-Tracker-Effects-Tooltips/master/module.json
 - [NOT ESSENTIAL][TOKEN/UTILITY](https://github.com/Eriku33/Foundry-VTT-Image-Hover )
@@ -72,7 +77,7 @@
 - [USE INSTEAD SIFToolkit https://github.com/bitkiller0/SIFToolkit][COMBAT][spellTemplateManager](https://github.com/bitkiller0/spellTemplateManager ) - https://raw.githubusercontent.com/bitkiller0/spellTemplateManager/master/module.json
 - [NOT ESSENTIAL][Journal to Canvas Slideshow](https://github.com/EvanesceExotica/Journal-To-Canvas-Slideshow)
 
-## 2021-06-23 FoundryVTT 0.8.7
+## 2021-06
 
 - [NOT ESSENTIAL][TOKEN][About Face](https://github.com/League-of-Foundry-Developers/about-face ) - https://raw.githubusercontent.com/League-of-Foundry-Developers/about-face/master/module.json
 - [NOT ESSENTIAL][COMBAT][Combat Carousel](https://github.com/death-save/combat-carousel-public ) - https://raw.githubusercontent.com/death-save/combat-carousel-public/main/module.json
