@@ -20,6 +20,699 @@
 		"dateLastModified": 1633111364
 	},
 	"monster": [
-		
+		{
+			"name": "Aarakocra",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"aarakocra"
+				]
+			},
+			"source": "AngryGolemGamesMonsterManual",
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "3d8",
+				"average": 13
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 50,
+				"canHover": false
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 10,
+			"int": 10,
+			"wis": 12,
+			"cha": 11,
+			"passive": 15,
+			"cr": "1/4",
+			"shortName": "Aarakocra",
+			"languages": [
+				"Auran",
+				"Aarakocra"
+			],
+			"languageTags": [
+				"AU",
+				"OTH"
+			],
+			"skill": {
+				"perception": "+5"
+			},
+			"trait": [
+				{
+					"name": "Dive Attack",
+					"entries": [
+						"If the aarakocra is flying and dives at least 30 feet straight toward a target and then hits it with a melee weapon attack, the attack deals an extra 3 ({@damage 1d6}) damage to the target."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Talon",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) slashing damage."
+					]
+				},
+				{
+					"name": "Javelin",
+					"entries": [
+						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage in melee, or 5 ({@damage 1d6 + 2}) damage at range."
+					]
+				}
+			],
+			"damageTags": [
+				"S",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"tokenUrl": "sss",
+			"fluff": {
+				"entries": [
+          "{@link Aarakocra|https://angrygolem-games.com/monster-manual/letter-a/aarakocra-5e-stats/}",
+					"{@link AARAKOCRA’s TACTICS (read the article)|https://angrygolem-games.com/monster-tactics-fight-like-an-aaracokra/}",
+					"DESCRIPTION",
+					"The aarakocra are a race of intelligent bird-men that live on the peaks of the highest mountains, spending their days soaring on the thermal winds in peace and solitude. Aarakocra are about 5 feet tall and have a wing span of 20 feet.",
+					"About halfway along the edge of each wing is a hand with three human-sized fingers and an opposable thumb. An elongated fourth finger extends the length of the wing and locks in place for flying.",
+					"Though the wing-hands cannot grasp during flight, they are nearly as useful as human hands when an aarakocra is on the ground and its wings are folded back. The wing muscles anchor in a bony chest plate that provides the aarakocra with extra protection.",
+					"The powerful legs end in four sharp talons that can unlock and fold back to reveal another pair of functional hands, also with three human-sized fingers and an opposable thumb. The hand bones, like the rest of an aarakocra’s skeleton, are hollow and fragile.",
+					"Aarakocra faces resemble crosses between parrots and eagles. They have gray-black beaks, and black eyes set frontally in their heads that provide keen binocular vision. Plumage color varies from tribe to tribe, but generally males are red, orange, and yellow while females are brown and gray.",
+					"Aarakocra speak their own language, the language of giant eagles, and, on occasion, the common tongue (10% chance).",
+					"HABITAT / SOCIETY",
+					"Aarakocra live in small tribes of about 1d20+10 members. Each tribe has a hunting territory of about 10,000 square miles with colorful banners and pennants marking the boundaries.",
+					"Each tribe lives in a communal nest made of woven vines with a soft lining of dried grass. The eldest male serves as the tribe’s leader. In tribes of more than 20 members, the second oldest male serves as the shaman, leading simple religious ceremonies involving the whistling of melodic hymns at sunset on the first day of a new month.",
+					"Males spend most of their waking hours hunting for food and occasionally for treasure, such as gems and other shiny objects. Females spend eight months of the year incubating their eggs, passing the time by fabricating javelins and other tools from wood and stone.",
+					"While resting on their backs, aarakocra females can use all four hands at the same time to weave boundary pennants, javelins sheaths, and other useful objects from vines and feathers.",
+					"Five aarakocra, including a shaman, can summon an air elemental by chanting and performing an intricate aerial dance for three melee rounds. The summoned air elemental will comply with the aarakocras’ request for a favor, though it will not endanger its life on their behalf.",
+					"Aarakocra are extremely claustrophobic and will not willingly enter a cave, building, or other enclosed area.",
+					"ECOLOGY",
+					"Aarakocra have little to do with other species, including neighboring aarakocra tribes, and leave their home territory only in extreme circumstances. They rarely encounter humans except for an occasional foray into a rural community to snatch a stray farm animal; this is not an intentionally malicious act, as aarakocra are unable to distinguish between domestic and wild animals.",
+					"A human venturing into aarakocra territory may be able to convince one to serve as a guide or a scout in exchange for a shiny jewel or coin."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "sss"
+						}
+					}
+				]
+			}
+		},
+    {
+      "name": "Aboleth",
+      "size": "L",
+      "type": "aberration",
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 17,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "18d10 + 36",
+        "average": 135
+      },
+      "speed": {
+        "walk": 10,
+        "swim": 40
+      },
+      "str": 21,
+      "dex": 9,
+      "con": 15,
+      "int": 18,
+      "wis": 15,
+      "cha": 18,
+      "passive": 20,
+      "cr": "10",
+      "shortName": "Aboleth",
+      "languages": [
+        "Deep Speech",
+        "telepathy 120 Ft."
+      ],
+      "languageTags": [
+        "DS",
+        "TP"
+      ],
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "senseTags": [
+        "SD"
+      ],
+      "save": {
+        "con": "+6",
+        "wis": "+6",
+        "int": "+8"
+      },
+      "skill": {
+        "history": "+12",
+        "perception": "+10"
+      },
+      "trait": [
+        {
+          "name": "Amphibious",
+          "entries": [
+            "The aboleth can breathe air and water."
+          ]
+        },
+        {
+          "name": "Mucous Cloud",
+          "entries": [
+            "While underwater, the aboleth is surrounded by transformative mucus. A creature that touches the aboleth or that hits it with a melee attack while within 5 ft. of it must make a {@dc 14} Constitution saving throw. On a failure, the creature is diseased for {@dice 1d4} hours. The diseased creature can breathe only underwater."
+          ]
+        },
+        {
+          "name": "Probing Telepathy",
+          "entries": [
+            "If a creature communicates telepathically with the aboleth, the aboleth learns the creature’s greatest desires if the aboleth can see the creature."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Amphibious"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The aboleth makes three tentacle attacks."
+          ]
+        },
+        {
+          "name": "Tentacle",
+          "entries": [
+            "{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}12 ({@damage 2d6 + 5}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 14} Constitution saving throw or become diseased. The disease has no effect for 1 minute and can be removed by any magic that cures disease. After 1 minute, the diseased creature’s skin becomes translucent and slimy, the creature can’t regain hit points unless it is underwater, and the disease can be removed only by heal or another disease-curing spell of 6th level or higher. When the creature is outside a body of water, it takes 6 ({@damage 1d12}) acid damage every 10 minutes unless moisture is applied to the skin before 10 minutes have passed"
+          ]
+        },
+        {
+          "name": "Tail",
+          "entries": [
+            "{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}15 ({@damage 3d6 + 5}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Enslave (3/day)",
+          "entries": [
+            "The aboleth targets one creature it can see within 30 ft. of it. The target must succeed on a {@dc 14} Wisdom saving throw or be magically {@condition charmed} by the aboleth until the aboleth dies or until it is on a different plane of existence from the target. The {@condition charmed} target is under the aboleth’s control and can’t take reactions, and the aboleth and the target can communicate telepathically with each other over any distance.",
+            "Whenever the {@condition charmed} target takes damage, the target can repeat the saving throw. On a success, the effect ends. No more than once every 24 hours, the target can also repeat the saving throw when it is at least 1 mile away from the aboleth."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack",
+        "Tentacles"
+      ],
+      "damageTags": [
+        "B",
+        "A",
+        "Y"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH"
+      ],
+      "conditionInflict": [
+        "charmed"
+      ],
+      "legendaryActions": 3,
+      "legendaryHeader": [
+        "Aboleth can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. Aboleth regains spent legendary actions at the start of their turn."
+      ],
+      "legendary": [
+        {
+          "name": "Detect",
+          "entries": [
+            "The aboleth makes a Wisdom (Perception) check."
+          ]
+        },
+        {
+          "name": "Tail Swipe",
+          "entries": [
+            "The aboleth makes one tail attack."
+          ]
+        },
+        {
+          "name": "Psychic Drain (Costs 2 Actions)",
+          "entries": [
+            "One creature {@condition charmed} by the aboleth takes 10 ({@damage 3d6}) psychic damage, and the aboleth regains hit points equal to the damage the creature takes."
+          ]
+        }
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Aboleth|https://angrygolem-games.com/monster-manual/letter-a/aboleth-5e-stats/}",
+          "{@link ABOLETH’s TACTICS (read the article)|}",
+          "DESCRIPTION",
+          "The aboleth is a loathsome amphibious creature that lives in subterranean caves and lakes. It despises most land-dwelling creatures and seeks to enslave intelligent surface beings. It is as cruel as it is intelligent.",
+          "An aboleth resembles a plump fish, 20 feet in length from its bulbous head to its fluke-like tail. Its body is blue-green with gray splotches, and its pink-tan underbelly conceals a toothless, rubbery mouth. Three slit-like eyes, purple-red in color and protected by bony ridges, are set one atop the other in the front of its head. Four pulsating blue-black orifices line the bottom of its body and secrete gray slime that smells like rancid grease. Four leathery tentacles, each 10 feet in length, grow from its head. An aboleth uses its tail to propel itself through the water and its tentacles to drag itself along dry land.",
+          "HABITAT / SOCIETY",
+          "An aboleth brood consists of a parent and one to three offspring. Though the offspring are as large and as strong as the parent, they defer to the parent in all matters and obey it implicitly. Aboleth have both male and female sexual organs. A mature aboleth reproduces once every five years by concealing itself in a cavern or other remote area, then laying a single egg and covering it in slime. The parent aboleth guards the egg while the embryo grows and develops, a process that takes about five years. A newborn aboleth takes about 10 years to mature.",
+          "The aboleth spends most of its time searching for slaves, preferably human ones. It is rumored that the aboleth use their slaves to construct huge underwater cities, though none have ever been found. The aboleth are rumored to know ancient, horrible secrets that predate the existence of man, but these rumors are also unsubstantiated. There is no doubt that aboleth retain a staggering amount of knowledge. An offspring acquires all of its parent’s knowledge at birth, and a mature aboleth acquires the knowledge of any intelligent being it consumes.",
+          "An aboleth’s treasure consists of items taken from its slaves. The items are buried in caverns under a layer of slime resembling gray mud, recognizable by the distinctive rancid grease odor.",
+          "ECOLOGY",
+          "The omnivorous aboleth will eat any organic matter, usually algae and micro-organism, but they are also fond of intelligent prey so they can absorb nutrients and information at the same time. Aboleth have no natural enemies, as even the mightiest marine creatures give them a wide berth. Aboleth slime is sometime used as a component for potions of water breathing."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Abominable Yeti",
+      "size": "H",
+      "type": "monstrosity",
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 15,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "11d12 + 66",
+        "average": 137
+      },
+      "speed": {
+        "walk": 40,
+        "climb": 40
+      },
+      "str": 24,
+      "dex": 10,
+      "con": 22,
+      "int": 9,
+      "wis": 13,
+      "cha": 9,
+      "passive": 15,
+      "cr": "9",
+      "shortName": "Abominable Yeti",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "Yeti"
+      ],
+      "languageTags": [
+        "OTH"
+      ],
+      "skill": {
+        "perception": "+5",
+        "stealth": "+4"
+      },
+      "immune": [
+        "cold"
+      ],
+      "trait": [
+        {
+          "name": "Fear of Fire",
+          "entries": [
+            "If the yeti takes fire damage, it has disadvantage on attack rolls and ability checks until the end of its next turn."
+          ]
+        },
+        {
+          "name": "Keen Smell",
+          "entries": [
+            "The yeti has advantage on Wisdom (Perception) checks that rely on smell."
+          ]
+        },
+        {
+          "name": "Snow Camouflage",
+          "entries": [
+            "The yeti has advantage on Dexterity (Stealth) checks made to hide in snowy terrain."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Keen Senses"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The yeti can use its Chilling Gaze and makes two claw attacks."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d6 + 7}) slashing damage, plus 7 ({@damage 2d6}) cold damage."
+          ]
+        },
+        {
+          "name": "Chilling Gaze",
+          "entries": [
+            "The yeti targets one creature it can see within 30 feet of it. If the target can see the yeti, the target must succeed on a {@dc 18} Constitution saving throw against this magic or take 21 ({@damage 6d6}) cold damage and then be {@condition paralyzed} for 1 minute, unless it is immune to co ld damage. The target can repeat the saving throw at the end of each of its turns, end ing the effect on itself on a success. If the target’s saving throw is successful, or if the effect ends on it, the target is immune to this yeti’s gaze for 1 hour."
+          ]
+        },
+        {
+          "name": "Cold Breath {@recharge}",
+          "entries": [
+            "The yeti exhales a 30-foot cone of frigid air. Each creature in that area must make a {@dc 18} Constitution saving throw, taking 45 ({@damage 10d8}) cold damage on a failed save, or half as much damage on a successful one."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "S",
+        "C"
+      ],
+      "miscTags": [
+        "MW",
+        "AOE"
+      ],
+      "conditionInflict": [
+        "paralyzed"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Abominable Yeti|https://angrygolem-games.com/monster-manual/letter-a/abominable-yeti-5e-stats/}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Abomination Yuan-Ti",
+      "size": "L",
+      "type": {
+        "type": "monstrosity",
+        "tags": [
+          "shapechanger",
+          "yuan-ti"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "N",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 15,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "15d10 + 45",
+        "average": 127
+      },
+      "speed": {
+        "walk": 40
+      },
+      "str": 19,
+      "dex": 16,
+      "con": 17,
+      "int": 17,
+      "wis": 15,
+      "cha": 18,
+      "passive": 15,
+      "cr": "7",
+      "shortName": "Abomination Yuan-Ti",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "Abyssal",
+        "Common",
+        "Draconic"
+      ],
+      "languageTags": [
+        "AB",
+        "C",
+        "DR"
+      ],
+      "skill": {
+        "perception": "+5",
+        "stealth": "+6"
+      },
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "poisoned"
+      ],
+      "trait": [
+        {
+          "name": "Shapechanger (Yuan-ti)",
+          "entries": [
+            "The yuan-ti can use its action to polymorph into a Large snake, or back into its true form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn’t transformed. It doesn’t change form if it dies."
+          ]
+        },
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The yuan-ti has advantage on saving throws against spells and other magical effects."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Magic Resistance",
+        "Shapechanger"
+      ],
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasting",
+          "headerEntries": [
+            "The yuan-ti’s innate spellcasting ability is Charisma (spell save {@dc 15}). The yuan-ti can innately cast the following spells, requiring no material components:"
+          ],
+          "will": [
+            "{@spell animal friendship} (snakes only)"
+          ],
+          "daily": {
+            "1": [
+              "{@spell fear}"
+            ],
+            "3": [
+              "{@spell suggestion}"
+            ]
+          },
+          "ability": "cha",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "I"
+      ],
+      "action": [
+        {
+          "name": "Multiattack (Abomination Form Only)",
+          "entries": [
+            "The yuan-ti makes two ranged attacks or three melee attacks, but can use its bite and constrict attacks only once each."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage, plus 10 ({@damage 3d6}) poison damage."
+          ]
+        },
+        {
+          "name": "Constrict",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 14}). Until this grapple ends, the target is {@condition restrained}, and the yuan-ti can’t constrict another target."
+          ]
+        },
+        {
+          "name": "Scimitar (Abomination Form Only)",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+          ]
+        },
+        {
+          "name": "Longbow (Abomination Form Only)",
+          "entries": [
+            "{@atk rw} {@hit 6} to hit, range 150/600 ft., one target. {@h}12 ({@damage 2d8 + 3}) piercing damage, plus 10 ({@damage 3d6}) poison damage."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P",
+        "I",
+        "B",
+        "S"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH",
+        "RW",
+        "RNG"
+      ],
+      "conditionInflict": [
+        "grappled",
+        "restrained"
+      ],
+      "fluff": {
+        "entries": [
+          "{@link Abomination Yuan-Ti|https://angrygolem-games.com/monster-manual/letter-a/abomination-yuan-ti-5e-stats/}",
+          "{@link YUAN-TI’s TACTICS (read the article)|https://angrygolem-games.com/dnd-5e-yuan-ti-tactics-build-challenging-encounters-against-a-yuan-ti/}",
+          "Abomination is employed as material component to empower the following spells: {@spell Poison Spray}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      },
+      "tokenUrl": "sss"
+    },
+    {
+      "name": "Abyssal Wretch",
+      "size": "M",
+      "type": {
+        "type": "fiend",
+        "tags": [
+          "demon"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 11,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "4d8",
+        "average": 18
+      },
+      "speed": {
+        "walk": 20
+      },
+      "str": 9,
+      "dex": 12,
+      "con": 11,
+      "int": 5,
+      "wis": 8,
+      "cha": 5,
+      "passive": 9,
+      "cr": "1/4",
+      "shortName": "Abyssal Wretch",
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "senseTags": [
+        "SD"
+      ],
+      "languages": [
+        "Abyssal but can’t speak"
+      ],
+      "languageTags": [
+        "AB"
+      ],
+      "resist": [
+        "cold",
+        "fire",
+        "lightning"
+      ],
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "charmed",
+        "frightened",
+        "poisoned"
+      ],
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d8 + 1}) slashing damage."
+          ]
+        }
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "damageTags": [
+        "S"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Abyssal Wretch|https://angrygolem-games.com/monster-manual/letter-a/abyssal-wretch-5e-stats/}",
+          "DESCRIPTION",
+          "Petty and wicked, dretches are the most common tanar’ri, found in massive hordes everywhere in the Abyss. Along with the manes, the dretches are the rank-and-file of the Blood War.",
+          "Dretches are gaunt, squat humanoids with rubbery, almost hairless bodies. Their skin is pale white to beige, giving way to sickly blue in some areas, stretched over pulsing varicose veins. Dretches’ mouths are slack and slobbery with many small fangs. Their hair is sparse and bristly, exposing pointed ears that hang limply from either side of the head. A dretch’s eyes slant downward and the nose appears squashed.",
+          "HABITAT / SOCIETY",
+          "Dretcbes are the lowest form of actual tanar’ri; their inferiors, the manes, are merely dead spirits from the Prime Material Plane. Dretches mill around and torment the manes to avoid considering their own lowly position.",
+          "Some dretches try to be extremely useful, hoping for promotion. Others consider themselves so lowly that they have nothing to lose, and they rebel. By virtue of their numbers, they feel they can go their own way and ignore the more powerful tanar’ri. This leads to a huge slaughter of the rebellious dretches by more powerful tanar’ri. These civil outbreaks temporarily divert the tanar’ri from the Blood War, sometimes with disastrous results.",
+          "ECOLOGY",
+          "Dretches are important to the Blood War. The primary strength of the tanar’ri is their sheer numbers, and those numbers consist largely of dretches. Unlike the hordlings, they are actual tanar’ri and have concern for their position. This makes them more reliable than hordlings, if the term applies to any creature in the Abyss.",
+          "The dretches’ weakness makes them a perfect choice for food in an environment where food is scarce. Greater fiends eat them in great quantities."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    }
 	]
 }
