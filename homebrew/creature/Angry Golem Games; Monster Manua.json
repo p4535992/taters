@@ -717,7 +717,12 @@
     {
       "name": "Aegir, Norse Avatar",
       "size": "M",
-      "type": "humanoid",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "avatar"
+        ]
+      },
       "source": "AngryGolemGamesMonsterManual",
       "alignment": [
         "C",
@@ -792,7 +797,7 @@
         {
           "name": "Club +4",
           "entries": [
-            "{@atk mw} {@hit 21} to hit, reach 5 ft., one target. {@h}15 ({@damage 1d8 + 11}) bludgeoning damage. Anyone hit by the club must roll a {@dc 25} constitution saving throw of fall {@condition unconscious}."
+            "{@atk ms} {@hit 21} to hit, reach 5 ft., one target. {@h}15 ({@damage 1d8 + 11}) bludgeoning damage. Anyone hit by the club must roll a {@dc 25} constitution saving throw of fall {@condition unconscious}."
           ]
         }
       ],
@@ -828,7 +833,12 @@
     {
       "name": "Agni, Indian Avatar",
       "size": "M",
-      "type": "humanoid",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "avatar"
+        ]
+      },
       "source": "AngryGolemGamesMonsterManual",
       "alignment": [
         "C",
@@ -877,7 +887,7 @@
         {
           "name": "Spellcasting",
           "headerEntries": [
-            "Agni, Indian Avatar ability is Charisma (spell save {@dc 15}). The Aegir, Norse Avatar can innately cast the following spells, requiring no material components:"
+            "Agni, Indian Avatar ability is Charisma (spell save {@dc 15}). The Agni, Indian Avatar can innately cast the following spells, requiring no material components:"
           ],
           "will": [
             "{@spell fireball}"
@@ -896,7 +906,7 @@
         {
           "name": "Red Axe",
           "entries": [
-            "{@atk mw} {@hit 16} to hit, reach 5 ft., one target. {@h}13 ({@damage 1d12 + 7}) slashing damage. Anyone hit by Agni's glowing, red axe must roll a {@dc 21} dexterity saving throw or burst into flames. Those failing their save suffer an additional {@dice 1d10} points of damage each round and cannot cast spells, fight, or do anything but roll on the ground until the flames are put out. The flames can only be quenched through magical means; ordinary (or holy) water has no effect on them ."
+            "{@atk ms} {@hit 16} to hit, reach 5 ft., one target. {@h}13 ({@damage 1d12 + 7}) slashing damage. Anyone hit by Agni's glowing, red axe must roll a {@dc 21} dexterity saving throw or burst into flames. Those failing their save suffer an additional {@dice 1d10} points of damage each round and cannot cast spells, fight, or do anything but roll on the ground until the flames are put out. The flames can only be quenched through magical means; ordinary (or holy) water has no effect on them ."
           ]
         }
       ],
@@ -1747,6 +1757,1079 @@
           "Alhoon have no need for sustenance, but their bodies adapt only imperfectly to lich state; many magical steps of most lichdom processes used by others fail on a strongly-magic resistant mind flayer body. Alhoon are plagued by ongoing skin wrinkling and tissue desiccation, which they counteract by bathing, or by drinking water, soup, alcohol, and other liquids. Nutrients need not be ingested, and poisons absorbed in this way will harm an alhoon (lowering its hit points no further than a minimum of 6 hp and not \"killing\" it). The illithilich state neutralizes most poisons (restoring all damage done by them) in 2d4 turns.",
           "Illithiliches enjoy devouring brains just as they did in life, but do not need to do so. Sometimes devouring a brain gives an alhoon mental \"glimpses\" of thoughts that the brain held, either at random, or (if the alhoon concentrates on a topic, such as magical items, written spells, or treasure locations), thoughts most closely related to a chosen topic.",
           "Essence of alhoon brain is a general ingredient in spell-writing inks, and can be employed with great advantage in the crafting of any magical item concerned with effects of the minds of creatures."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Allosaurus",
+      "size": "L",
+      "type": {
+        "type": "beast",
+        "tags": [
+          "dinosaur"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        {
+          "ac": 13,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "6d10 + 18",
+        "average": 51
+      },
+      "speed": {
+        "walk": 60
+      },
+      "str": 19,
+      "dex": 13,
+      "con": 17,
+      "int": 2,
+      "wis": 12,
+      "cha": 5,
+      "passive": 15,
+      "cr": "2",
+      "shortName": "Allosaurus",
+      "skill": {
+        "perception": "+5"
+      },
+      "trait": [
+        {
+          "name": "Pounce",
+          "entries": [
+            "If the allosaurus moves at least 30 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the allosaurus can make one bite attack against it as a bonus action."
+          ]
+        }
+      ],
+      "conditionInflict": [
+        "prone"
+      ],
+      "traitTags": [
+        "Pounce"
+      ],
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d10 + 4}) piercing damage."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage."
+          ]
+        }
+      ],
+      "damageTags": [
+        "P",
+        "S"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Allosaurus|https://angrygolem-games.com/monster-manual/letter-a/allosaurus-5e-stats/}",
+          "DESCRIPTION",
+          "One of the most vicious of predators, this monster can run across hard ground at great speed. In size, the allosaurus is between its two relatives, the smaller megalosaurus and the larger tyrannosaurus rex. It weighs about 1½ tons.",
+          "The allosaurus has a massive skull, formed of bony plates that give it strength. The design of these plates is such that the head is still light enough to snap quickly at its prey. Besides feeding on the occasional brontosaurus and diplodocus, this “flesh lizard” is known to eat carrion. Few other creatures are foolish enough to fight the allosaurus for a share of its meal."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Amaterasu, Japanese Avatar",
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "avatar"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "L",
+        "G"
+      ],
+      "ac": [
+        22
+      ],
+      "hp": {
+        "formula": "16d20 + 64",
+        "average": 232
+      },
+      "speed": {
+        "walk": 90
+      },
+      "str": 20,
+      "dex": 18,
+      "con": 18,
+      "int": 18,
+      "wis": 18,
+      "cha": 18,
+      "passive": 14,
+      "cr": "3",
+      "shortName": "Amaterasu, Japanese Avatar",
+      "languages": [
+        "Common"
+      ],
+      "languageTags": [
+        "C"
+      ],
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "trait": [
+        {
+          "name": "Blinding Gaze",
+          "entries": [
+            "From her eyes, Amaterasu's avatar can fire blinding heat rays doing {@dice 10d10} points of damage up to a distance of 1,000 yards."
+          ]
+        },
+        {
+          "name": "Immunity",
+          "entries": [
+            "She is immune to any heat, cold, or fire-based attacks, as she is to any light or darkness spell."
+          ]
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "The Amaterasu, Japanese Avatar ability is Charisma (spell save {@dc 15}). The Amaterasu, Japanese Avatar can innately cast the following spells, requiring no material components:"
+          ],
+          "will": [
+            "{@spell charm monster|XGE}",
+            "{@spell charm person}",
+            "{@spell creation}",
+            "{@spell summon elemental|TCE}",
+            "{@spell sunbeam}",
+            "{@spell sunburst}"
+          ],
+          "ability": "cha",
+          "type": "spellcasting"
+        }
+      ],
+      "action": [
+        {
+          "name": "Hand",
+          "entries": [
+            "{@atk ms} {@hit 14} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d6 + 8}) fire damage."
+          ]
+        }
+      ],
+      "damageTags": [
+        "F"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Amaterasu, Japanese Avatar|https://angrygolem-games.com/monster-manual/letter-a/amaterasu-japanese-avatar/}",
+          "DESCRIPTION",
+          "Amaterasu's avatar is a beautiful woman with a radiant smile.",
+          "Amaterasu, also known as Amaterasu-Ōmikami among other names, is the goddess of the sun in Japanese mythology.",
+          "One of the major deities (kami) of Shinto, and the mythical ancestress of the Japanese imperial house via her grandson Ninigi.",
+          "Along with her siblings, the moon deity Tsukuyomi and the impetuous storm god Susanoo, she is considered to be one of the “Three Precious Children”, the three most important offspring of the creator god Izanagi.",
+          "Amaterasu's chief place of worship, the Grand Shrine of Ise, is one of Shinto's holiest sites and a major pilgrimage center and tourist spot.",
+          "As with other Shinto kami, she is also enshrined in a number of Shinto shrines throughout Japan.",
+          "AMATERASU & THE CAVE",
+          "Perhaps the most celebrated myth concerning Amaterasu is when she blocked herself in a cave following an argument with Susanoo when he surprised the goddess with a monstrous flayed horse when she was quietly weaving in her palace with her younger sister Waka-hiru-me. As a consequence of Amaterasu's disappearance, the world was cast in total darkness and evil spirits ran riot over the earth. Read more…",
+          "{@link God & Clergy (go to page)|https://angrygolem-games.com/amaterasu-god-and-clerics-for-dd-5e/}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Amatsu Mikaboshi, Japanese Avatar",
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "avatar"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        20
+      ],
+      "hp": {
+        "formula": "16d20 + 64",
+        "average": 232
+      },
+      "speed": {
+        "walk": 75
+      },
+      "str": 20,
+      "dex": 20,
+      "con": 18,
+      "int": 18,
+      "wis": 18,
+      "cha": 18,
+      "passive": 14,
+      "cr": "3",
+      "shortName": "Amatsu Mikaboshi, Japanese Avatar",
+      "languages": [
+        "Common"
+      ],
+      "languageTags": [
+        "C"
+      ],
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "The Amatsu Mikaboshi, Japanese Avatar ability is Charisma (spell save {@dc 15}). The Amatsu Mikaboshi, Japanese Avatar can innately cast the following spells, requiring no material components:"
+          ],
+          "will": [
+            "any bard spell"
+          ],
+          "ability": "cha",
+          "type": "spellcasting"
+        }
+      ],
+      "action": [
+        {
+          "name": "Long Sword",
+          "entries": [
+            "{@atk ms} {@hit 19} to hit, reach 5 ft., one target. {@h}12 ({@damage 1d8 + 8}) slashing damage. Anybody hit by the avatar's sword blade suffers an additional {@dice 1d10} points of poison damage each round until the poison is neutralized."
+          ]
+        }
+      ],
+      "damageTags": [
+        "S"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Amatsu Mikaboshi, Japanese Avatar|https://angrygolem-games.com/monster-manual/letter-a/amatsu-mikaboshi-japanese-avatar/ }",
+          "DESCRIPTION",
+          "Amatsu-Mikaboshi's avatar most often appears has a small , charming man with a bald head and a hooked nose, but the god of evil has also been known to shape his avatar in the form of an alluring woman.",
+          "Amatsu-Mikaboshi is a nebulous presence, and attempts to explain who or what he is are no less nebulous. At some point, he may have been the only force in the world: Amatsu-Mikaboshi may be the primordial great void. He ruled the universe, if only because nothing else existed.",
+          "Somehow during creation of the modern universe, his power was broken but never completely disappeared. Instead, his aura or residue remains. Read more…",
+          "{@link God & Clergy (go to page)|https://angrygolem-games.com/amatsu-mikaboshi-god-and-clerics-for-dd-5e/}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ama Tsu Mara, Japanese Avatar",
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "avatar"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        20
+      ],
+      "hp": {
+        "formula": "16d20 + 64",
+        "average": 232
+      },
+      "speed": {
+        "walk": 75
+      },
+      "str": 21,
+      "dex": 16,
+      "con": 18,
+      "int": 18,
+      "wis": 18,
+      "cha": 10,
+      "passive": 14,
+      "cr": "3",
+      "shortName": "Ama Tsu Mara, Japanese Avatar",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "Common"
+      ],
+      "languageTags": [
+        "C"
+      ],
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "The Ama Tsu Mara, Japanese Avatar ability is Charisma (spell save {@dc 15}). The Ama Tsu Mara, Japanese Avatar can innately cast the following spells, requiring no material components:"
+          ],
+          "will": [
+            "{@spell creation}",
+            "{@spell summon elemental|TCE}",
+            "{@spell summon elemental spirit|UA2020SpellsAndMagicTattoos}",
+            "{@spell sunbeam}",
+            "{@spell sunburst}"
+          ],
+          "ability": "cha",
+          "type": "spellcasting"
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "Ama-Tsu-Mara's avatar makes two attacks with his vorpal axe +5."
+          ]
+        },
+        {
+          "name": "Vorpal Axe +5",
+          "entries": [
+            "{@atk ms} {@hit 23} to hit, reach 5 ft., one target. {@h}20 ({@damage 1d12 + 14}) fire damage. The Avatar carries a huge vorpal axe +5 that functions like a {@item Vorpal Sword|DMG}. Any time an unsuccessful attack is made on Ama-Tsu-Mara's avatar, there is a 25% (15% for magic weapons) chance that his opponent's weapon breaks as the avatar blocks his blow."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "F"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Ama Tsu Mara, Japanese Avatar|https://angrygolem-games.com/monster-manual/letter-a/ama-tsu-mara-japanese-avatar/}",
+          "DESCRIPTION",
+          "Ama-Tsu-Mara's avatar is a huge, hairy man who purposely appears rather dull-willed. He always has a patch over his left eye, and any being lifting the patch discovers that there is no eye socket there-only a continuation of his cheekbone.",
+          "{@link God & Clergy (go to page)|https://angrygolem-games.com/ama-tsu-mara-god-and-clerics-for-dd-5e/}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Amnizu",
+      "size": "M",
+      "type": {
+        "type": "fiend",
+        "tags": [
+          "demon"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 21,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "27d8 + 81",
+        "average": 202
+      },
+      "speed": {
+        "walk": 30,
+        "fly": 40,
+        "canHover": false
+      },
+      "str": 23,
+      "dex": 16,
+      "con": 19,
+      "int": 14,
+      "wis": 15,
+      "cha": 19,
+      "passive": 17,
+      "cr": "18",
+      "shortName": "Amnizu",
+      "languages": [
+        "Common",
+        "Infernal",
+        "telepathy 1000 ft."
+      ],
+      "languageTags": [
+        "C",
+        "I",
+        "TP"
+      ],
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "senseTags": [
+        "SD"
+      ],
+      "save": {
+        "dex": "+7",
+        "con": "+9",
+        "wis": "+7",
+        "cha": "+10"
+      },
+      "skill": {
+        "perception": "+7"
+      },
+      "resist": [
+        {
+          "resist": [
+            "cold"
+          ]
+        },
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks that aren't silvered"
+        }
+      ],
+      "immune": [
+        "fire",
+        "poison"
+      ],
+      "conditionImmune": [
+        "charmed",
+        "poisoned"
+      ],
+      "trait": [
+        {
+          "name": "Devil's Sight",
+          "entries": [
+            "Magical darkness doesn't impede the amnizu's darkvision."
+          ]
+        },
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The amnizu has advantage on saving throws against spells and other magical effects."
+          ]
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasting",
+          "headerEntries": [
+            "The amnizu's innate spellcasting ability is Intelligence (spell save 19, + 11 to hit with spell attacks). The amnizu can innately cast the following spells, requiring no material components:"
+          ],
+          "will": [
+            "{@spell charm person}",
+            "{@spell command}"
+          ],
+          "daily": {
+            "3e": [
+              "{@spell dominate person}",
+              "{@spell fireball}"
+            ],
+            "1e": [
+              "{@spell dominate monster}",
+              "{@spell feeblemind}"
+            ]
+          },
+          "ability": "int",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "I"
+      ],
+      "traitTags": [
+        "Magic Resistance"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The amnizu uses Poison Mind. It also makes two attacks: one with its whip and one with its Disruptive Touch."
+          ]
+        },
+        {
+          "name": "Taskmaster Whip",
+          "entries": [
+            "{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}10 ({@damage 2d4 + 5}) slashing damage, plus 33 ({@damage 6d10}) force damage."
+          ]
+        },
+        {
+          "name": "Disruptive Touch",
+          "entries": [
+            "{@atk ms} {@hit 12} to hit, reach 5 ft., one target. {@h}44 ({@damage 8d10}) necrotic damage."
+          ]
+        },
+        {
+          "name": "Poison Mind",
+          "entries": [
+            "The amnizu targets one or two creatures that it can see within 60 feet of it. Each target must succeed on a {@dc 19} Wisdom saving throw or take 26 ({@damage 4d12}) necrotic damage and be {@condition blinded} until the start of the amnizu's next turn ."
+          ]
+        },
+        {
+          "name": "Forgetfulness {@recharge}",
+          "entries": [
+            "The amnizu targets one creature it can see within 60 feet of it. That creature must succeed on a {@dc 18} Intelligence saving throw or become {@condition stunned} for 1 minute. A {@condition stunned} creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success. If the target is {@condition stunned} for the full minute, it forgets everything it sensed, experienced, and learned during the last 5 hours."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "S",
+        "O",
+        "N"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Amnizu|https://angrygolem-games.com/monster-manual/letter-a/amnizu-5e-stats/}",
+          "DESCRIPTION",
+          "The amnizu dwell primarily on Stygia, the fifth plane of Baator. They often enter the upper layers of Baator on missions.",
+          "The amnizu are gruesome and unseemly: 6 feet tall with elongated, bald heads, stubby legs and arms, and large, leathery wings. Amnizu have pug noses, large eyes, and snarling mouths tilled with jagged, razor-sharp teeth.",
+          "HABITAT / SOCIETY",
+          "The amnizu, as greater baatezu, enjoy a nobility of sorts. They follow orders only because of their desire to advance and their fear of the pit fiends. The higher a fiend advances in Baator, the more closely the Dark Eight watch it. Given the opportunity, however, amnizu order their minions to attack anything under the control of the Dark Eight. Possibly an amnizu would even attack a pit fiend given sufficient reason, if it thought it could evade suspicion.",
+          "The amnizu guard the river Styx, which enters Baator through Stygia as well as Avernus — a weak point in Baator's defenses. For their own perverse ends as well as the protection of Stygia, amnizu individually command an army of thousands of abishai and erinyes.",
+          "ECOLOGY",
+          "The amnizu protect Baator from invaders, and thus they are given their power of imprisonment. Mortals who travel here to combat evil generally become fodder for the amnizu."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      },
+      "conditionInflict": [
+        "blinded",
+        "stunned"
+      ],
+      "reaction": [
+        {
+          "name": "Instinctive Charm",
+          "entries": [
+            "When a creature within 60 feet of the amnizu makes an attack roll against it, and another creature is within the attack's range, the attacker must make a {@dc 19} Wisdom saving throw. On a failed save, the attacker must target the creature that is closest to it, not including the amnizu or itself. If multiple creatures are closest, the attacker chooses which one to target. If the saving throw is successful, the attacker is immune to the amnizu's Instinctive Charm for 24 hours."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Androsphinx",
+      "size": "L",
+      "type": {
+        "type": "monstrosity",
+        "tags": [
+          "sphinx"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "L",
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 17,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "19d10 + 95",
+        "average": 199
+      },
+      "speed": {
+        "walk": 40,
+        "fly": 60,
+        "canHover": false
+      },
+      "str": 22,
+      "dex": 10,
+      "con": 20,
+      "int": 16,
+      "wis": 18,
+      "cha": 23,
+      "passive": 20,
+      "cr": "17",
+      "shortName": "Androsphinx",
+      "senses": [
+        "truesight 120 ft."
+      ],
+      "senseTags": [
+        "U"
+      ],
+      "languages": [
+        "Common",
+        "Sphinx"
+      ],
+      "languageTags": [
+        "C",
+        "OTH"
+      ],
+      "save": {
+        "dex": "+6",
+        "con": "+11",
+        "int": "+9",
+        "wis": "+10"
+      },
+      "skill": {
+        "arcana": "+9",
+        "perception": "+10",
+        "religion": "+15"
+      },
+      "immune": [
+        {
+          "immune": [
+            "psychic"
+          ]
+        },
+        {
+          "immune": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks"
+        }
+      ],
+      "conditionImmune": [
+        "charmed",
+        "frightened"
+      ],
+      "trait": [
+        {
+          "name": "Inscrutable",
+          "entries": [
+            "The sphinx is immune to any effect that would sense its emotions or read its thoughts, as well as any divination spell that it refuses. Wisdom (Insight) checks made to ascertain the sphinx's intentions or sincerity have disadvantage."
+          ]
+        },
+        {
+          "name": "Magic Weapons",
+          "entries": [
+            "The sphinx's weapon attacks are magical."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Magic Weapons"
+      ],
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "The sphinx is a 12th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 18}, +10 to hit with spell attacks). It requires no material components to cast its spells. The sphinx has the following cleric spells prepared:"
+          ],
+          "spells": {
+            "0": {
+              "spells": [
+                "{@spell sacred flame}",
+                "{@spell spare the dying}",
+                "{@spell thaumaturgy}"
+              ]
+            },
+            "1": {
+              "spells": [
+                "{@spell command}",
+                "{@spell detect evil and good}",
+                "{@spell detect magic}"
+              ],
+              "slots": 4
+            },
+            "2": {
+              "spells": [
+                "{@spell lesser restoration}",
+                "{@spell zone of truth}"
+              ],
+              "slots": 3
+            },
+            "3": {
+              "spells": [
+                "{@spell dispel magic}",
+                "{@spell tongues}"
+              ],
+              "slots": 3
+            },
+            "4": {
+              "spells": [
+                "{@spell banishment}",
+                "{@spell freedom of movement}"
+              ],
+              "slots": 3
+            },
+            "5": {
+              "spells": [
+                "{@spell flame strike}",
+                "{@spell greater restoration}"
+              ],
+              "slots": 2
+            },
+            "6": {
+              "spells": [
+                "{@spell heroes' feast}"
+              ],
+              "slots": 1
+            }
+          },
+          "ability": "wis",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "CC"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The sphinx makes two claw attacks."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}17 ({@damage 2d10 + 6}) slashing damage."
+          ]
+        },
+        {
+          "name": "Roar (3/Day)",
+          "entries": [
+            "The sphinx emits a magical roar. Each time it roars before finishing a long rest, the roar is louder and the effect is different, as detailed below. Each creature within 500 feet of the sphinx and able to hear the roar must make a saving throw.",
+            "First Roar: Each creature that fails a {@dc 18} Wisdom saving throw is {@condition frightened} for 1 minute. A {@condition frightened} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+            "Second Roar: Each creature that fails a {@dc 18} Wisdom saving throw is {@condition deafened} and {@condition frightened} for 1 minute. A {@condition frightened} creature is {@condition paralyzed} and can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+            "Third Roar: Each creature makes a {@dc 18} Constitution saving throw. On a failed save, a creature takes 44 ({@damage 8d10}) thunder damage and is knocked {@condition prone}. On a successful save, the creature takes half as much damage and isn't knocked {@condition prone}."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "S",
+        "T"
+      ],
+      "miscTags": [
+        "MW",
+        "AOE"
+      ],
+      "conditionInflict": [
+        "frightened",
+        "paralyzed",
+        "deafened",
+        "prone"
+      ],
+      "legendaryActions": 3,
+      "legendaryHeader": [
+        "The sphinx can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The sphinx regains spent legendary actions at the start of its turn."
+      ],
+      "legendary": [
+        {
+          "name": "Claw Attack",
+          "entries": [
+            "The sphinx makes one claw attack."
+          ]
+        },
+        {
+          "name": "Teleport (Costs 2 Actions)",
+          "entries": [
+            "The sphinx magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see."
+          ]
+        },
+        {
+          "name": "Cast a Spell (Costs 3 Actions)",
+          "entries": [
+            "The sphinx casts a spell from its list of prepared spells, using a spell slot as normal."
+          ]
+        }
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Androsphinx|https://angrygolem-games.com/monster-manual/letter-a/androsphinx-5e-stats/}",
+          "DESCRIPTION",
+          "Androsphinxes are huge, winged mythological creatures with the bodies of male lions and man-like facial features. They can speak the languages of common and all sphinxes.",
+          "HABITAT / SOCIETY",
+          "Androsphinxes are the most solitary of the sphinxes. They shun gynosphinxes because they are jealous of the higher intelligence of their female counterparts, and find their neutral disposition a bit hard to deal with. However, most androsphinxes eventually succumb to the advances of a gynosphinx at least once in their lives.",
+          "ECOLOGY",
+          "What is strangest about androsphinxes is not their combination lion/human appearance (as there are many such cross-mutations found in the world), but their apparent lack of purpose. They are by far the strongest of the sphinxes, but unlike their counterparts, have no true pattern of behavior universal to all androsphinxes. They despise communicating with humans and hate riddles (mostly because gynosphinxes love them so much). It is therefore suggested by those knowledgeable in mythological beasts and desert lore that androsphinxes are the guardians of the sphinxes, evil (hieraco-), neutral (gyno- and crio-), and good (andro-).",
+          "Certainly, androsphinxes are the lifelong adversaries of the hieracosphinxes, but they almost always let the defeated enemy go free instead of finishing the kill (often with a roar or two at the fleeing sphinxes' behinds).",
+          "In short, androsphinxes are free-roaming sphinxes sworn to defend other sphinxes against other races, namely men and their ilk. They have been known to bargain with men on occasion, but are the least greedy of the sphinxes, and are the only sphinxes likely to take offense at such offerings if made by characters with low Charismas or evil alignments."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Anhur, Egyptian Avatar",
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "avatar"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "C",
+        "G"
+      ],
+      "ac": [
+        23
+      ],
+      "hp": {
+        "formula": "16d20 + 172",
+        "average": 340
+      },
+      "speed": {
+        "walk": 75
+      },
+      "str": 25,
+      "dex": 25,
+      "con": 25,
+      "int": 15,
+      "wis": 20,
+      "cha": 15,
+      "passive": 15,
+      "cr": "3",
+      "shortName": "Anhur, Egyptian Avatar",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "Common"
+      ],
+      "languageTags": [
+        "C"
+      ],
+      "trait": [
+        {
+          "name": "Regeneration",
+          "entries": [
+            "Anhur's avatar regenerates 10 hit points per round."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Regeneration"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "Anhur's avatar makes three attacks with his Lance +5."
+          ]
+        },
+        {
+          "name": "Lance +5",
+          "entries": [
+            "{@atk ms} {@hit 25} to hit, reach 5 ft., one target. {@h}30 ({@damage 2d10 + 19}) piercing damage, or 30 ({@damage 2d10 + 19}) piercing damage if used with both hands. The lance that Anhur's avatar employs in combat is a powerful weapon. In addition to being a lance +5, it has the abilities of a {@item ring of fire resistance}, {@item ring of protection}, {@item amulet of the planes}, and a {@item talisman of pure good}."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Anhur, Egyptian Avatar|https://angrygolem-games.com/monster-manual/letter-a/anhur-egyptians-avatar/}",
+          "DESCRIPTION",
+          "Anhur's avatar always appears as a four-armed warrior with a mighty lance held in his right arms. He will initiate combat only against those of evil alignment, but will answer any attack upon himself or his followers with great rage.",
+          "In early Egyptian mythology, Anhur was a god of war who was worshipped in the Egyptian area of Abydos, and particularly in Thinis. Myths told that he had brought his wife, Mehit, who was his female counterpart, from Nubia, and his name reflects this — it means (one who) leads back the distant one.",
+          "One of his titles was Slayer of Enemies. Anhur was depicted as a bearded man wearing a robe and a headdress with four feathers, holding a spear or lance, or occasionally as a lion-headed god (representing strength and power). In some depictions, the robe was more similar to a kilt.",
+          "{@link God & Clergy (go to page)|https://angrygolem-games.com/monster-manual/letter-a/anhur-god-and-clerics-for-dd-5e/}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Animated Armor",
+      "size": "M",
+      "type": "construct",
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 18,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "6d8 + 6",
+        "average": 33
+      },
+      "speed": {
+        "walk": 25
+      },
+      "str": 14,
+      "dex": 11,
+      "con": 13,
+      "int": 1,
+      "wis": 3,
+      "cha": 1,
+      "passive": 6,
+      "cr": "1",
+      "shortName": "Animated Armor",
+      "senses": [
+        "blindsight 60 ft. (blind beyond this radius)"
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "immune": [
+        "poison",
+        "psychic"
+      ],
+      "conditionImmune": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "paralyzed",
+        "petrified",
+        "poisoned"
+      ],
+      "trait": [
+        {
+          "name": "Antimagic Susceptibility",
+          "entries": [
+            "The armor is incapacitated while in the area of an {@spell antimagic field}. If targeted by {@spell dispel magic}, the armor must succeed on a Constitution saving throw against the caster’s spell save DC or fall unconscious for 1 minute."
+          ]
+        },
+        {
+          "name": "False",
+          "entries": [
+            "Appearance. While the armor remains motionless, it is indistinguishable from a normal suit of armor."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Antimagic Susceptibility"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The armor makes two melee attacks."
+          ]
+        },
+        {
+          "name": "Slam",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) bludgeoning damage."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Animated Armor|https://angrygolem-games.com/monster-manual/letter-a/animated-armor-5e-stats/}",
+          "DESCRIPTION",
+          "This suit of magically animated plate armor clamors as it moves, banging and grinding like the vengeful spirit of a fallen knight."
         ],
         "images": [
           {
