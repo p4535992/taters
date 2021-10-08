@@ -4000,6 +4000,1103 @@
           }
         ]
       }
+    },
+    {
+      "name": "Armanite",
+      "size": "L",
+      "type": {
+        "type": "fiend",
+        "tags": [
+          "demon"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 16,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "8d10 + 40",
+        "average": 84
+      },
+      "speed": {
+        "walk": 60
+      },
+      "str": 21,
+      "dex": 18,
+      "con": 21,
+      "int": 8,
+      "wis": 12,
+      "cha": 13,
+      "passive": 11,
+      "cr": "7",
+      "shortName": "Armanite",
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "senseTags": [
+        "SD"
+      ],
+      "languages": [
+        "Abyssal",
+        "telepathy 120 ft."
+      ],
+      "languageTags": [
+        "AB",
+        "TP"
+      ],
+      "resist": [
+        "cold",
+        "fire",
+        "lightning"
+      ],
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "poisoned"
+      ],
+      "trait": [
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The armanite has advantage on saving throws against spells and other magical effects."
+          ]
+        },
+        {
+          "name": "Magic Weapons",
+          "entries": [
+            "The armanite's weapon attacks are magical."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Magic Resistance",
+        "Magic Weapons"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The armanite makes three attacks: one with its hooves, one with its claws, and one with its serrated tail."
+          ]
+        },
+        {
+          "name": "Hooves",
+          "entries": [
+            "{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Claws",
+          "entries": [
+            "{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d4 + 5}) slashing damage."
+          ]
+        },
+        {
+          "name": "Serrated Tail",
+          "entries": [
+            "{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}16 ({@damage 2d10 + 5}) slashing damage."
+          ]
+        },
+        {
+          "name": "Lightning Lance {@recharge 5}",
+          "entries": [
+            "The armanite looses a bolt of lightning in a line 60 feet long and 10 feet wide. Each creature in the line must make a {@dc 15} Dexterity saving throw, taking 27 ({@damage 6d8}) lightning damage on a failed save, or half as much damage on a successful one."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "B",
+        "S",
+        "L"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Armanite|https://angrygolem-games.com/monster-manual/letter-a/armanite-5e-stats/}",
+          "DESCRIPTION",
+          "Armanites resemble pale, undead centaurs with the horns of rams or bulls. They wear the full armor of knights. Their tails and the manes down their spines are stiff bristels, and the flesh on their bellies sags so much that older armanites sometimes look like gutted half-horses, dragging their entrails beneath them.",
+          "Some breeds of armanite are more kangaroolike in their nonhuman half. Their front limbs are hands, capable of manipulating weapons and small items.",
+          "All armanites wear black, fluted armor that seems more ornamental than functional. Because of their great strength, the armor is much heavier than ordinary armor and more effective than it might appear. Armanites are never without their weapons: flanged maces, wavy flamberge swords, and heavy crossbows or composite bows.",
+          "HABITAT / SOCIETY",
+          "Armanites are the mercenaries and scavengers of the Blood War, living by devouring the flesh and spirits of the fallen. They serve their masters well but expect plunder in return; failure to provide it results in desertion or rebellion, even on the eve of battle. Most herds of armanites specialize in a particular battlefield duty, such as scouting, foraging for quartermasters, skirmishing, archery, or the like. They never take part in sieges. Their reputation for fickleness is well earned; if they receive orders they don't like, they simply leave.",
+          "Female armanites number only half that of their male counterparts. The sexes are strictly segregated for most of their lives, for they inevitably fight among themselves if allowed to mix. Males and female herds only mingle during mating, which occurs after a successful battle against the baatezu. Young are herded along with the servants and camp followers until the seize weapons of their own from a fallen member of the troupe and slay an enemy, at which point they join the adults.",
+          "Each armanite troupe carries an individual troupe banner and the banner of their current master or mistress, such as Graz'zt's diagonal black-and-white slash or Pazrael's golden talon on dark red. If the banner is lost in battle, the troupe disband to take up service in the household of one of the lords of the Plain of Infinite Portals or to attempt to join annother troupe. The banner is the symbol and unifying principle of each warband; without it, the armanites feud among themselves and soon their group falls apart.",
+          "Because they operate well as independent groups, armenites are often selected to undertake special missions for the Abyssal lords. They are called the Dark Horsemen or the Dark Riders in the Upper Planes and are feared there. They are a common sight in Sigil as well, where they sometimes serve as bloodthirsty bodyguards.",
+          "ECOLOGY",
+          "Armanites devour the blood and spirits of their fallen foes, rendering them unresurrectable, and some stories say that they prefer this sustenance to any other. Their favorite prey are varrangoin, baatezu, and yugoloths, in that order. Some armanites take on rutterkin as grooms, smiths, riding auxiliaries, and servants, though this is rare. They despise all forms of least tanar'ri and abuse them mercilessly.",
+          "Armanites prefer raucous, chaotic group combat to formal duels or feats of arms. They often brawl like warhounds in the halls and citadels of the tanar'ri, and provoking a fight with one armanite means a grudge match with the entire troupe. Armanites despise the bariaur and attack them on sight."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Artemis, Greek Avatar",
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "avatar"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "N",
+        "G"
+      ],
+      "ac": [
+        20
+      ],
+      "hp": {
+        "special": "416 (16d8 + 64, 16d10 + 64)"
+      },
+      "speed": {
+        "walk": 90
+      },
+      "str": 17,
+      "dex": 18,
+      "con": 18,
+      "int": 18,
+      "wis": 18,
+      "cha": 18,
+      "passive": 14,
+      "cr": "15",
+      "shortName": "Artemis, Greek Avatar",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "All"
+      ],
+      "save": {
+        "str": "+13",
+        "dex": "+14",
+        "int": "+14",
+        "wis": "+14"
+      },
+      "skill": {
+        "acrobatics": "+4",
+        "arcana": "+4",
+        "animal handling": "+4",
+        "athletics": "+4",
+        "deception": "+4",
+        "history": "+4",
+        "insight": "+4",
+        "intimidation": "+4",
+        "investigation": "+4",
+        "medicine": "+4",
+        "nature": "+4",
+        "perception": "+4",
+        "performance": "+4",
+        "persuasion": "+4",
+        "religion": "+4",
+        "sleight of hand": "+4",
+        "stealth": "+4",
+        "survival": "+4"
+      },
+      "trait": [
+        {
+          "name": "Arcane Immunity",
+          "entries": [
+            "No spell affects Artemis' avatar, and any attack rebounds against the caster."
+          ]
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "Artemis's avatar is a 16th-level druid and a 16th level ranger. Its spellcasting ability as a druid is Wisdom (spell save {@dc 17}, +10 to hit with spell attacks). Its spellcasting ability as a ranger is Wisdom (spell save {@dc 17}, +9 to hit with spell attacks). Artemis's avatar has access to all spells from the druid and ranger list."
+          ],
+          "ability": "wis",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "CD",
+        "CR"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "Artemis's avatar makes two attacks with her great bow or two attacks with her dagger."
+          ]
+        },
+        {
+          "name": "Great Bow",
+          "entries": [
+            "{@atk rs} {@hit 14} to hit, range 30/1000 ft., one target. {@h}9 ({@damage 1d10 + 4}) piercing damage. Artemis's avatar can shoot her arrows up to a distance of 1,000 yards/feets, range does not affect the attack roll."
+          ]
+        },
+        {
+          "name": "Dagger",
+          "entries": [
+            "{@atk ms} {@hit 13} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) slashing damage. In melee combat, she uses a common dagger that has been {@condition poisoned}. Anyone hit by this weapon must roll a {@dc 20} constitution saving throw or suffer an extra {@dice 1d10} points of damage per round until a neutralize poison can be cast upon them."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P",
+        "S"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Artemis, Greek Avatar|https://angrygolem-games.com/monster-manual/letter-a/artemis-greek-avatar/}",
+          "DESCRIPTION",
+          "Artemis' avatar appears to be a slim young girl resembling Artemis herself.",
+          "Artemis is the daughter of Zeus and Leto, and the twin sister of Apollo. She was the patron and protector of young girls, and was believed to bring disease upon women and relieve them of it.",
+          "Artemis was worshipped as one of the primary goddesses of childbirth and midwifery. Much like Athena and Hestia, Artemis preferred to remain a maiden and is sworn never to marry.",
+          "{@link God & Clergy (go to page)|https://angrygolem-games.com/monster-manual/letter-a/artemis-god-and-clerics-for-dd-5e/}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ash Mephit",
+      "size": "M",
+      "type": {
+        "type": "elemental",
+        "tags": [
+          "mephit"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        12
+      ],
+      "hp": {
+        "formula": "5d6 + 5",
+        "average": 22
+      },
+      "speed": {
+        "walk": 30,
+        "fly": 40,
+        "canHover": false
+      },
+      "str": 8,
+      "dex": 14,
+      "con": 12,
+      "int": 10,
+      "wis": 10,
+      "cha": 8,
+      "passive": 10,
+      "cr": "1/2",
+      "shortName": "Ash Mephit",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "Ignan",
+        "Terran"
+      ],
+      "languageTags": [
+        "IG",
+        "T"
+      ],
+      "skill": {
+        "stealth": "+5"
+      },
+      "vulnerable": [
+        "cold"
+      ],
+      "immune": [
+        "fire",
+        "poison"
+      ],
+      "conditionImmune": [
+        "poisoned"
+      ],
+      "trait": [
+        {
+          "name": "Death Burst",
+          "entries": [
+            "When the mephit dies, it explodes in a burst of fiery ash. Each creature within 5 feet of it must make a {@dc 11} Dexterity saving throw, taking 3 ({@damage 1d6}) slashing damage on a failed save, or half as much damage on a successful one. In addition, the target suffers the {@condition blinded} condition for {@dice 1d4} rounds."
+          ]
+        },
+        {
+          "name": "False Appearance",
+          "entries": [
+            "While the mephit remains motionless, it is indistinguishable from an ordinary pile of ash. "
+          ]
+        },
+        {
+          "name": "Regeneration",
+          "entries": [
+            "The ash mephit regains 1 hit point at the start of its turn."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Death Burst",
+        "False Appearance",
+        "Regeneration"
+      ],
+      "damageTags": [
+        "S",
+        "F"
+      ],
+      "miscTags": [
+        "MW",
+        "AOE"
+      ],
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasting",
+          "headerEntries": [
+            "The Ash Mephit is a 1th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 9}, +1 to hit with spell attacks). The Ash Mephit has the following wizard spells prepared:"
+          ],
+          "daily": {
+            "1": [
+              "{@spell Lamentable Belaborment|p4535992Spells}"
+            ]
+          },
+          "ability": "cha",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "I",
+        "CW"
+      ],
+      "action": [
+        {
+          "name": "Claws",
+          "entries": [
+            "{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) slashing damage, plus 2 ({@damage 1d4}) fire damage."
+          ]
+        },
+        {
+          "name": "Ash Breath {@recharge}",
+          "entries": [
+            "The mephit exhales a 15-foot cone of fiery ash. Each creature in that area must make a {@dc 11} Dexterity saving throw, taking 7 ({@damage 2d6}) fire damage on a failed save, or half as much damage on a successful one."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Breath Weapon"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Ash Mephit|https://angrygolem-games.com/monster-manual/letter-a/ash-mephit-5e-stats/}",
+          "DESCRIPTION",
+          "Profoundly depressed and lugubrious, ash mephits make adequate sentries and messengers, but they impose upon passersby with endless tales of their sorrows, boredom, and frustrations.",
+          "Ash mephits have powdery gray skin and wings (“You're so lucky not to have wings, they get fouled in everything and it's not like I ever asked to fly”), no external ears (“And even so I hear this persistent ringing, a ringing, you know, it just never stops”), and a nasal whining voice (“Am 1 boring you? I'd haaate to think I was boring you”). Scholars suppose that lower-planar beings can create ash mephits more easily than those of other types: why else would anyone create one?"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Astral Dreadnought",
+      "size": "G",
+      "type": {
+        "type": "monstrosity",
+        "tags": [
+          "titan"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        {
+          "ac": 20,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "17d20 + 119",
+        "average": 297
+      },
+      "speed": {
+        "walk": 15,
+        "fly": {
+          "number": 80,
+          "condition": "(hover)"
+        },
+        "canHover": true
+      },
+      "str": 28,
+      "dex": 7,
+      "con": 25,
+      "int": 5,
+      "wis": 14,
+      "cha": 18,
+      "passive": 19,
+      "cr": "21",
+      "shortName": "Astral Dreadnought",
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "senseTags": [
+        "SD"
+      ],
+      "save": {
+        "dex": "+5",
+        "wis": "+9"
+      },
+      "skill": {
+        "perception": "+9"
+      },
+      "resist": [
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks"
+        }
+      ],
+      "conditionImmune": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "prone",
+        "stunned"
+      ],
+      "trait": [
+        {
+          "name": "Antimagic Cone",
+          "entries": [
+            "The astral dreadnought's opened eye creates an area of antimagic, as in the {@spell antimagic field} spell, in a 150-foot cone. At the start of each of its turns, the dreadnought decides which way the cone faces. The cone doesn't function while the dreadnought's eye is closed or while the dreadnought is {@condition blinded}."
+          ]
+        },
+        {
+          "name": "Astral Entity",
+          "entries": [
+            "The astral dreadnought can't leave the Astral Plane, nor can it be banished or otherwise transported out of the Astral Plane."
+          ]
+        },
+        {
+          "name": "Demiplanar Donjon",
+          "entries": [
+            "Any creature or object that the astral dreadnought swallows is transported to a demiplane that can be entered by no other means except a {@spell wish} spell or this creature's Donjon Visit ability. A creature can leave the demiplane only by using magic that enables planar travel, such as the {@spell plane shift} spell. The demiplane resembles a stone cave roughly 1,000 feet in diameter with a ceiling 100 feet high. Like a stomach, it contains the remains of the dreadnought's past meals. The dreadnought can't be harmed from within the demiplane. If the dreadnought dies, the demiplane disappears, and everything inside it appears around the corpse. The demiplane is otherwise indestructible."
+          ]
+        },
+        {
+          "name": "Legendary Resistance (3/Day)",
+          "entries": [
+            "If the astral dreadnought fails a saving throw, it can choose to succeed instead."
+          ]
+        },
+        {
+          "name": "Magic Weapons",
+          "entries": [
+            "An astral dreadnought's weapon attacks are magical."
+          ]
+        },
+        {
+          "name": "Sever Silver Cord",
+          "entries": [
+            "If the astral dreadnought scores a critical hit against a creature traveling through the Astral Plane by means of the {@spell Astral projection} spell, the dreadnought can cut the target's silver cord instead of dealing damage."
+          ]
+        }
+      ],
+      "miscTags": [
+        "MW",
+        "RCH",
+        "AOE"
+      ],
+      "traitTags": [
+        "Legendary Resistances",
+        "Magic Weapons"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The astral dreadnought makes three attacks: one with its bite and two with its claws."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 16} to hit, reach 20 ft., one target. {@h}19 ({@damage 3d6 + 9}) slashing damage."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "S",
+        "Y"
+      ],
+      "legendaryActions": 3,
+      "legendaryHeader": [
+        "The astral dreadnought can take 3 legendary actions, choosing from the options below. Only one legendary option can be used at a time and only at the end of another creature's turn. The dreadnought regains spent legendary actions at the start of its turn."
+      ],
+      "legendary": [
+        {
+          "name": "Claw",
+          "entries": [
+            "The astral dreadnought makes one claw attack."
+          ]
+        },
+        {
+          "name": "Donjon Visit (Costs 2 Actions)",
+          "entries": [
+            "One creature that is Huge or smaller that the astral dreadnought can see within 60 feet of it must succeed on a {@dc 19} Charisma saving throw or be magically teleported to an unoccupied space on the ﬂoor of the astral dreadnought's Demiplanar Donjon. At the end of the target's next turn, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied."
+          ]
+        },
+        {
+          "name": "Psychic Projection (Costs 3 Actions)",
+          "entries": [
+            "Each creature within 60 feet of the astral dreadnought must make a {@dc 19} Wisdom saving throw, taking 15 ({@damage 2d10 + 4}) psychic damage on a failed save, or half as much damage on a successful one."
+          ]
+        }
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Astral Dreadnought|https://angrygolem-games.com/monster-manual/letter-a/astral-dreadnought-5e-stats/}",
+          "DESCRIPTION",
+          "The gods alone know what these things are or where they come from, bot one thing is certain: Where the astral dreadnought goes, even the most powerful fiends know fear. The astral dreadnought's a gigantic creature the size of a storm giant, with gaping jaws; huge, pincerlike claws; a reddish, armored carapace; and a single, black, malevolent eye. The dreadnought's lower quarters are serpentine or wormlike, but some cutters who've seen one claim that its \"tail\" has no end, stretching off into an infinitely long silver cord as thick as a stout barrel. If this is true, it'd imply that the astral dreadnought is not a native of this plane and is projecting its spirit into the Silver void from some prime-material world.",
+          "The dreadnought's sole interest appears to be feeding on any astral traveler unlucky enough to cross its path. No one has managed to communicate with the dreadnought and lived to tell the tale.",
+          "HABITAT / SOCIETY",
+          "Fortunately, astral dreadnoughts're exceedingly rare. In fact, some sages argue that only one of the creatures can exist at any given time. The dreadnought roams the Astral Plane without cease, searching for prey. The creature appears to be joined with the plane on a level not fully understood by other beings: sages have theorized that the dreadnought is of the Astral, not on it. This property allows it to avoid or ignore phenomena such as shifting conduits, ether cyclones, and similar hazards.",
+          "ECOLOGY",
+          "The dreadnought has a very unusual and specific diet: It devours astral bodies. The monster is uninterested in creatures who are physically present in the Silver Void, so characters who are plane shifted, probability travelling, or present in the Astral by means of a magical device are beneath the notice of the dreadnought. On the other hand, characters who are astrally projecting form the basis of the monster's diet. The astral dreadnought usually destroys and then devours the astral body, but doesn't strike at the silver cord except as it may be incidental to the process of devouring the astral character.",
+          "The dreadnought's encountered only when an astral body is nearby. It doesn't bother physical travelers unless they happen to get between it and its prey."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Athena, Greek Avatar",
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "avatar"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "L",
+        "G"
+      ],
+      "ac": [
+        22
+      ],
+      "hp": {
+        "special": "384 (16d10 + 48, 16d8 +48)"
+      },
+      "speed": {
+        "walk": 75
+      },
+      "str": 20,
+      "dex": 18,
+      "con": 17,
+      "int": 19,
+      "wis": 21,
+      "cha": 18,
+      "passive": 15,
+      "cr": "15",
+      "shortName": "Athena, Greek Avatar",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "All"
+      ],
+      "save": {
+        "str": "+15",
+        "con": "+13",
+        "wis": "+15",
+        "cha": "+14"
+      },
+      "skill": {
+        "acrobatics": "+4",
+        "animal handling": "+4",
+        "arcana": "+4",
+        "athletics": "+4",
+        "deception": "+4",
+        "history": "+4",
+        "insight": "+4",
+        "intimidation": "+4",
+        "investigation": "+4",
+        "medicine": "+4",
+        "nature": "+4",
+        "perception": "+4",
+        "performance": "+4",
+        "persuasion": "+4",
+        "religion": "+4",
+        "sleight of hand": "+4",
+        "stealth": "+4",
+        "survival": "+4"
+      },
+      "trait": [
+        {
+          "name": "Helm of Justice",
+          "entries": [
+            "The helm creates an anti-magic shell within 10′ of her."
+          ]
+        },
+        {
+          "name": "Shield of the Gorgon",
+          "entries": [
+            "The shield bears a medusa's head that force anyone looking at it to roll a {@dc 20} constitution saving throw or be turned to stone."
+          ]
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "Athena's avatar is a 16th-level cleric. Its spellcasting ability is Wisdom (spell save {@dc 18}, +10 to hit with spell attacks). Athena's avatar has access to all spells from the cleric and wizard list."
+          ],
+          "ability": "wis",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "CC",
+        "CW"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "Athena's avatar makes two attacks with her spear."
+          ]
+        },
+        {
+          "name": "Spear +5",
+          "entries": [
+            "{@atk ms} {@hit 20} to hit, reach 5 ft., one target. {@h}13 ({@damage 1d6 + 10}) piercing damage, or 13 ({@damage 1d6 + 10}) piercing damage if used with both hands. When attacking with her spear she always has advantage on the attack rolls. "
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "fluff": {
+        "entries": [
+          "{@link Athena, Greek Avatar|https://angrygolem-games.com/monster-manual/letter-a/athena-greek-avatar/}",
+          "Athena's avatar is a helmeted, statuesque woman of extreme grace and beauty.",
+          "Athena, often given the epithet Pallas, is an ancient Greek goddess associated with wisdom, handicraft, and warfare who was later syncretized with the Roman goddess Minerva. Athena was regarded as the patron and protectress of various cities across Greece, particularly the city of Athens, from which she most likely received her name. She's usually shown in art wearing a helmet and holding a spear. Her major symbols include owls, olive trees, snakes, and the Gorgoneion.",
+          "{@link God & Clergy (go to page)|https://angrygolem-games.com/athena-god-and-clerics-for-dd-5e/}"
+        ]
+      }
+    },
+    {
+      "name": "Axe Beak",
+      "size": "L",
+      "type": {
+        "type": "beast",
+        "tags": [
+          "animal"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        11
+      ],
+      "hp": {
+        "formula": "3d10 + 3",
+        "average": 19
+      },
+      "speed": {
+        "walk": 50
+      },
+      "str": 14,
+      "dex": 12,
+      "con": 12,
+      "int": 2,
+      "wis": 10,
+      "cha": 5,
+      "passive": 10,
+      "cr": "1/4",
+      "shortName": "Axe Beak",
+      "action": [
+        {
+          "name": "Beak",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) slashing damage."
+          ]
+        }
+      ],
+      "damageTags": [
+        "S"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Axe Beak|https://angrygolem-games.com/monster-manual/letter-a/axe-beak-5e-stats/}",
+          "DESCRIPTION",
+          "Keen-witted and powerful avian predators, axe beaks compete with wolves and hunting cats for prey upon vast, open steppes and prairies. Although feared for their boldness and territorial natures, these giant birds prove eminently tamable, making useful guardians, hunters, and even steeds when kept well fed"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Awakened Shrub",
+      "size": "S",
+      "type": "plant",
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        9
+      ],
+      "hp": {
+        "formula": "3d6",
+        "average": 10
+      },
+      "speed": {
+        "walk": 20
+      },
+      "str": 3,
+      "dex": 8,
+      "con": 11,
+      "int": 10,
+      "wis": 10,
+      "cha": 6,
+      "passive": 10,
+      "cr": "0",
+      "shortName": "Awakened Shrub",
+      "languages": [
+        "one language known by its creator"
+      ],
+      "vulnerable": [
+        "fire"
+      ],
+      "resist": [
+        "piercing"
+      ],
+      "trait": [
+        {
+          "name": "False Appearance",
+          "entries": [
+            "While the shrub remains motionless, it is indistinguishable from a normal shrub."
+          ]
+        }
+      ],
+      "traitTags": [
+        "False Appearance"
+      ],
+      "action": [
+        {
+          "name": "Rake",
+          "entries": [
+            "{@atk mw} {@hit 1} to hit, reach 5 ft., one target. {@h}1 ({@damage 1d4 ‒1}) slashing damage."
+          ]
+        }
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Awakened Shrub|https://angrygolem-games.com/monster-manual/letter-a/awakened-shrub-5e-stats/}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Awakened Tree",
+      "size": "H",
+      "type": "plant",
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        {
+          "ac": 13,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "7d12 + 14",
+        "average": 59
+      },
+      "speed": {
+        "walk": 20
+      },
+      "str": 19,
+      "dex": 6,
+      "con": 15,
+      "int": 10,
+      "wis": 10,
+      "cha": 7,
+      "passive": 10,
+      "cr": "2",
+      "shortName": "Awakened Tree",
+      "languages": [
+        "one language known by its creator"
+      ],
+      "vulnerable": [
+        "fire"
+      ],
+      "resist": [
+        "bludgeoning",
+        "piercing"
+      ],
+      "trait": [
+        {
+          "name": "False Appearance",
+          "entries": [
+            "While the tree remains motionless, it is indistinguishable from a normal tree."
+          ]
+        }
+      ],
+      "traitTags": [
+        "False Appearance"
+      ],
+      "action": [
+        {
+          "name": "Slam",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}14 ({@damage 3d6 + 4}) bludgeoning damage."
+          ]
+        }
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Awakened Tree|https://angrygolem-games.com/monster-manual/letter-a/awakened-tree-5e-stats/}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Azer",
+      "size": "M",
+      "type": "elemental",
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "L",
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 17,
+          "from": [
+            "natural armor",
+            "{@item shield|phb}"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "6d8 + 12",
+        "average": 39
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 17,
+      "dex": 12,
+      "con": 15,
+      "int": 12,
+      "wis": 13,
+      "cha": 10,
+      "passive": 11,
+      "cr": "2",
+      "shortName": "Azer",
+      "languages": [
+        "Ignan"
+      ],
+      "languageTags": [
+        "IG"
+      ],
+      "save": {
+        "con": "+4"
+      },
+      "immune": [
+        "fire",
+        "poison"
+      ],
+      "conditionImmune": [
+        "poisoned"
+      ],
+      "trait": [
+        {
+          "name": "Heated Body",
+          "entries": [
+            "A creature that touches the azer or hits it with a melee attack while within 5 ft. of it takes 5 ({@damage 1d10}) fire damage."
+          ]
+        },
+        {
+          "name": "Heated Weapons",
+          "entries": [
+            "When the azer hits with a metal melee weapon, it deals an extra 3 ({@damage 1d6}) fire damage (included in the attack)."
+          ]
+        },
+        {
+          "name": "Illumination",
+          "entries": [
+            "The azer sheds bright light in a 10-foot radius and dim light for an additional 10 ft."
+          ]
+        }
+      ],
+      "damageTags": [
+        "B",
+        "F"
+      ],
+      "traitTags": [
+        "Illumination"
+      ],
+      "miscTags": [
+        "MW",
+        "AOE"
+      ],
+      "action": [
+        {
+          "name": "Warhammer",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) bludgeoning damage, or 8 ({@damage 1d10 + 3}) bludgeoning damage if used with both hands, plus 3 ({@damage 1d6}) fire damage."
+          ]
+        }
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Azer|https://angrygolem-games.com/monster-manual/letter-a/azer-5e-stats/}",
+          "AZER's TACTICS (read the article)",
+          "DESCRIPTION",
+          "The azer are a race of humanoid creatures that normally inhabit the Elemental Plane of Fire. Except under special circumstances, they are very rarely found on the Prime Material Plane.",
+          "In appearance they are much like dwarves, except that they have metallic, brass-colored skin and flames for hair. They wear only kilts or apronlike garments of beaten brass, copper, or bronze.",
+          "HABITAT / SOCIETY",
+          "Azer on their home plane are part of an extremely regimented society where every individual has his or her place. The azer civilization in general is heavily stratified, with law taking precedence over individual freedoms and even an individual's life.",
+          "Azer construct their outposts and cities as towers built from basalt, granite, or metal. There they dwell in small groups, using their plentiful complexes of flames to shape the stone.",
+          "They grow strange trees with metallic outer skins or barks, and the leaves of these trees are actually made entirely of metal — in some cases, precious metals.",
+          "Azer are unfriendly and taciturn, and they lack compassion. They capture and interrogate intruders; particularly dangerous or violent prisoners are slain. They are greedy, particularly for gems that are a clear purple or red (rubies, amethysts, garnets, etc.). Once given, the word of an azer is a solid bond.",
+          "ECOLOGY",
+          "It is not known just what if anything azer eat. On their home plane, their only enemies are other intelligent fire dwelling creatures, and even then this enmity is not related to relative position on the food chain. The greatest of their enemies are the efreet, who sometimes fight wars of conquest against the azer, taking their territories and making slaves of them. The azer defend themselves and their towers with powerful, bellows-like air projectors and special containers used to pour elemental water on attackers.",
+          "Azer is employed as component to empower the following spells: {@spell Find Familiar}",
+          "AMAIMON",
+          "Amaimon is the legendary king of the ager. He is the largest, strongest , and most intelligent of all azer. His powers are unknown.",
+          "NOBLES",
+          "Amaimon's nobles number from 8d4 and are only slightly weaker than their king. The noble azers' full powers are also unknown."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
     }
 	]
 }
