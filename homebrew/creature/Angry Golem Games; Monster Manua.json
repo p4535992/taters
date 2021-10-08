@@ -5097,6 +5097,316 @@
           }
         ]
       }
+    },
+    {
+      "name": "Babau",
+      "size": "M",
+      "type": {
+        "type": "fiend",
+        "tags": [
+          "demon"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 16,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "11d8 + 33",
+        "average": 82
+      },
+      "speed": {
+        "walk": 40
+      },
+      "str": 19,
+      "dex": 16,
+      "con": 16,
+      "int": 11,
+      "wis": 12,
+      "cha": 13,
+      "passive": 15,
+      "cr": "4",
+      "shortName": "Babau",
+      "languages": [
+        "Abyssal"
+      ],
+      "languageTags": [
+        "AB"
+      ],
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "senseTags": [
+        "SD"
+      ],
+      "skill": {
+        "perception": "+5",
+        "stealth": "+5"
+      },
+      "resist": [
+        {
+          "resist": [
+            "cold",
+            "fire",
+            "lightning"
+          ]
+        },
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks"
+        }
+      ],
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "poisoned"
+      ],
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasting",
+          "headerEntries": [
+            "The babau's innate spellcasting ability is Wisdom (spell save {@dc 11}). The babau can innately cast the following",
+            "spells, requiring no material components:"
+          ],
+          "will": [
+            "{@spell darkness}",
+            "{@spell dispel magic}",
+            "{@spell fear}",
+            "{@spell heat metal}",
+            "{@spell levitate}"
+          ],
+          "ability": "wis",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "I"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The babau makes two melee attacks. It can also use Weakening Gaze before or after making these attacks."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage."
+          ]
+        },
+        {
+          "name": "Spear",
+          "entries": [
+            "{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage in melee, or 7 ({@damage 1d6 + 4}) piercing damage at range, or 8 ({@damage 1d8 + 4}) piercing damage if used with both hands."
+          ]
+        },
+        {
+          "name": "Weakening Gaze",
+          "entries": [
+            "The babau targets one creature that it can see within 20 feet of it. The target must make a {@dc 13} Constitution saving throw. On a failed save, the target deals only half damage with weapon attacks that use Strength for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "S",
+        "P"
+      ],
+      "miscTags": [
+        "MW",
+        "RW",
+        "THW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Babau|https://angrygolem-games.com/monster-manual/letter-b/babau-5e-stats/}",
+          "DESCRIPTION",
+          "Babaus are greater tanar'ri that roam the layers of the Abyss recruiting lesser and least tanar'ri for the vast armies of the Blood War. They look like tall skeletons covered with dark, form-fitting leather. A great horn protrudes from the back of their skulls. Babaus have long, wicked claws covered with dirt, blood, and decaying flesh. Their movements are very quick, sharp, and mechanical, emphasizing their alien nature.",
+          "HABITAT / SOCIETY",
+          "Other tanar'ri hate babaus because they roam around recruiting for the vast Abyss armies. To escape service, numbers of lesser tanar‘ri sometimes gang up on a pursuing babau and try to kill it. However, the babau defend themselves well.",
+          "True tanar'ri have close ties with babaus. If a babau is attacked, a true tanar'ri (randomly determined) is 20% likely to notice and come to its aid — not through any sense of loyalty, but rather to further the Blood War. This causes the lesser tanar'ri to fear babaus even more.",
+          "ECOLOGY",
+          "According to the true tanar'ri (presumably among the greatest powers of the Abyss), the only purpose of the lesser and least tanar'ri is to fight in the Blood War. Because the babaus are the grim recruiters of those armies, they are integral to the Abyss and important in the Blood War."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Baboon",
+      "size": "S",
+      "type": {
+        "type": "beast",
+        "tags": [
+          "animal"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        12
+      ],
+      "hp": {
+        "formula": "1d6",
+        "average": 3
+      },
+      "speed": {
+        "walk": 30,
+        "climb": 30
+      },
+      "str": 8,
+      "dex": 14,
+      "con": 11,
+      "int": 4,
+      "wis": 12,
+      "cha": 6,
+      "passive": 11,
+      "cr": "0",
+      "shortName": "Baboon",
+      "trait": [
+        {
+          "name": "Pack Tactics",
+          "entries": [
+            "The baboon has advantage on an attack roll against a creature if at least one of the baboon’s allies is within 5 ft. of the creature and the ally isn’t {@condition incapacitated}."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Pack Tactics"
+      ],
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 1} to hit, reach 5 ft., one target. {@h}1 ({@damage 1d4 ‒1}) piercing damage."
+          ]
+        }
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Baboon|https://angrygolem-games.com/monster-manual/letter-b/baboon-5e-stats/}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Badger",
+      "size": "T",
+      "type": {
+        "type": "beast",
+        "tags": [
+          "animal"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        10
+      ],
+      "hp": {
+        "formula": "1d4 + 1",
+        "average": 3
+      },
+      "speed": {
+        "walk": 20,
+        "burrow": 5
+      },
+      "str": 4,
+      "dex": 11,
+      "con": 12,
+      "int": 2,
+      "wis": 12,
+      "cha": 5,
+      "passive": 11,
+      "cr": "0",
+      "shortName": "Badger",
+      "senses": [
+        "darkvision 30 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "trait": [
+        {
+          "name": "Keen Smell",
+          "entries": [
+            "The badger has advantage on Wisdom (Perception) checks that rely on smell."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Keen Senses"
+      ],
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}1 ({@damage 1d1}) piercing damage."
+          ]
+        }
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Badger|https://angrygolem-games.com/monster-manual/letter-b/badger-5e-stats/}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
     }
 	]
 }
