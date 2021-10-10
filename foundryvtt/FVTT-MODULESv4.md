@@ -71,7 +71,7 @@
 - [LIGHT][Community Lighting for FVTT](https://github.com/BlitzKraig/fvtt-CommunityLighting ) - https://raw.githubusercontent.com/BlitzKraig/fvtt-CommunityLighting/master/module.json
 - [EXTERNAL][Adventure Import Export](https://github.com/cstadther/adventure-import-export ) - https://raw.githubusercontent.com/cstadther/adventure-import-export/master/module.json
 - [CHARACTHER SHEET/UTILITY][Downtime Tracking 5e Training](https://github.com/crash1115/5e-training ) - https://raw.githubusercontent.com/crash1115/5e-training/master/module.json
-- [MACRO/COMBAT][Trigger Happy](https://github.com/kakaroto/fvtt-module-trigger-happy/ ) - https://raw.githubusercontent.com/kakaroto/fvtt-module-trigger-happy/master/module.json
+- [MACRO/COMBAT][Trigger Happy](https://github.com/League-of-Foundry-Developers/fvtt-module-trigger-happy ) - https://raw.githubusercontent.com/kakaroto/fvtt-module-trigger-happy/master/module.json
 - [MAP][Multilevel Tokens module for Foundry VTT](https://github.com/grandseiken/foundryvtt-multilevel-tokens ) - https://raw.githubusercontent.com/grandseiken/foundryvtt-multilevel-tokens/master/module.json
 - [MAP][Parallaxia](https://gitlab.com/reichler/parallaxia ) - https://gitlab.com/reichler/parallaxia/raw/master/parallaxia/module.json
 - [TOKEN][Token Attacher](https://github.com/KayelGee/token-attacher ) - https://raw.githubusercontent.com/KayelGee/token-attacher/master/module.json
