@@ -4,9 +4,11 @@
 
 ## 2021-10
 
+- [BETTER SOUNDBOARD][AUDIO][Playlist Import](https://github.com/JacobMcAuley/playlist_import ) - https://raw.githubusercontent.com/JacobMcAuley/playlist_import/master/module.json
 - [NOT ESSENTIAL][UTILITY][Roger's Additional Metric Ruler Labels](https://github.com/Roger92/metric-ruler-labels)
 - [NOT ESSENTIAL][UTILITY][Burger Time](https://github.com/scottburton11/burger-time)
 - [NOT ESSENTIAL][TOKEN][Quick Scale](https://github.com/unsoluble/quickscale) -
+- [BETTER PLUTONIUM][ENTITY][Compendiumn Browser](https://github.com/syl3r86/compendium-browser ) - https://raw.githubusercontent.com/syl3r86/compendium-browser/master/module.json
 
 ## 2021-09
 
