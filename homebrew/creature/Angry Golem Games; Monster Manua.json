@@ -5878,8 +5878,8 @@
         }
       ],
       "hp": {
-        "formula": "1d8 + 5",
-        "average": 9
+        "formula": "8d10 + 40",
+        "average": 84
       },
       "speed": {
         "walk": 30
@@ -6927,6 +6927,1662 @@
       "fluff": {
         "entries": [
           "{@link Bat|https://angrygolem-games.com/monster-manual/letter-b/bat-5e-stats/}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bearded Devil (Barbazu)",
+      "size": "M",
+      "type": {
+        "type": "fiend",
+        "tags": [
+          "devil"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 13,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "8d8 + 16",
+        "average": 52
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 16,
+      "dex": 15,
+      "con": 15,
+      "int": 9,
+      "wis": 11,
+      "cha": 11,
+      "passive": 10,
+      "cr": "3",
+      "shortName": "Bearded Devil (Barbazu)",
+      "languages": [
+        "Infernal",
+        "telepathy 120 ft."
+      ],
+      "languageTags": [
+        "I",
+        "TP"
+      ],
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "senseTags": [
+        "SD"
+      ],
+      "save": {
+        "str": "+5",
+        "con": "+4",
+        "wis": "+2"
+      },
+      "resist": [
+        {
+          "resist": [
+            "cold"
+          ]
+        },
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks that aren't silvered"
+        }
+      ],
+      "trait": [
+        {
+          "name": "Devil's Sight",
+          "entries": [
+            "Magical darkness doesn't impede the devil's darkvision."
+          ]
+        },
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The devil has advantage on saving throws against spells and other magical effects."
+          ]
+        },
+        {
+          "name": "Steadfast",
+          "entries": [
+            "The devil can't be {@condition frightened} while it can see an allied creature within 30 feet of it."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Magic Resistance"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The devil makes two attacks: one with its beard and one with its glaive."
+          ]
+        },
+        {
+          "name": "Beard",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage, and the target must succeed on a {@dc 12} Constitution saving throw or be {@condition poisoned} for 1 minute. While {@condition poisoned} in this way, the target can't regain hit points. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+          ]
+        },
+        {
+          "name": "Glaive",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage. If the target is a creature other than an undead or a construct, it must succeed on a {@dc 12} Constitution saving throw or lose 5 ({@dice 1d10}) hit points at the start of each of its turns due to an infernal wound. Each time the devil hits the wounded target with this attack, the damage dealt by the wound increases by 5 ({@dice 1d10}). Any creature can take an action to stanch the wound with a successful {@dc 12} Wisdom (Medicine) check. The wound also closes if the target receives magical healing."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P",
+        "S"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH"
+      ],
+      "conditionInflict": [
+        "poisoned"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Bearded Devil (Barbazu)|https://angrygolem-games.com/monster-manual/letter-b/bearded-devil-or-barbazu-5e-stats/}",
+          "DESCRIPTION",
+          "The barbazu are the vilest soldiers in Baator, employed in large numbers as elite shock troops. A barbazu is a foul, humanoid creature with a long tail, clawed hands and feet, pointed ears, and a snaky, disgusting beard. Its skin is moist, though scaly like a reptile. It carries a cruel, saw-toothed glaive capable of heavy damage.",
+          "HABITAT / SOCIETY",
+          "The barbazu are bred for battle. All other denizens of Baator recognize their exceeding cruelty and extreme value in combat. Barbazu rush into combat and often do not stop until either they or their opponent is dead. Perhaps the most impetuous and chaotic of the baatezu, they have gained a bad reputation among outsiders.",
+          "Although barbazu are lesser baatezu, they never command armies. They are simply too chaotic to lead. Sometimes an exceptional barbazu is promoted to osyluth, but most never survive to see promotion.",
+          "ECOLOGY",
+          "The barbazu fill the armies of Baator's middle layers and commonly guard greater baatezu. They do not fight out of loyalty or comraderie, but rather out of their violent need to hurt and kill."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Behir",
+      "size": "H",
+      "type": "monstrosity",
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "N",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 17,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "16d12 + 64",
+        "average": 168
+      },
+      "speed": {
+        "walk": 50,
+        "climb": 40
+      },
+      "str": 23,
+      "dex": 16,
+      "con": 18,
+      "int": 7,
+      "wis": 14,
+      "cha": 12,
+      "passive": 16,
+      "cr": "11",
+      "shortName": "Behir",
+      "languages": [
+        "Draconic"
+      ],
+      "languageTags": [
+        "DR"
+      ],
+      "senses": [
+        "darkvision 90 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "skill": {
+        "perception": "+6",
+        "stealth": "+7"
+      },
+      "immune": [
+        "lightning"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The behir makes two attacks: one with its bite and one to constrict."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}22 ({@damage 3d10 + 6}) piercing damage."
+          ]
+        },
+        {
+          "name": "Constrict",
+          "entries": [
+            "{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}17 ({@damage 2d10 + 6}) bludgeoning damage, plus 11 ({@damage 2d10}) slashing damage. The target is {@condition grappled} (escape {@dc 16}) if the behir isn't already constricting a creature, and the target is {@condition restrained} until this grapple ends"
+          ]
+        },
+        {
+          "name": "Lightning Breath {@recharge 5}",
+          "entries": [
+            "The behir exhales a line of lightning that is 20 ft. long and 5 ft. wide. Each creature in that line must make a {@dc 16} Dexterity saving throw, taking 66 ({@damage 12d10}) lightning damage on a failed save, or half as much damage on a successful one."
+          ]
+        },
+        {
+          "name": "Swallow",
+          "entries": [
+            "The behir makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is also swallowed, and the grapple ends. While swallowed, the target is {@condition blinded} and {@condition restrained}, it has total cover against attacks and other effects outside the behir, and it takes 21 ({@damage 6d6}) acid damage at the start of each of the behir's turns. A behir can have only one creature swallowed at a time.",
+            "If the behir takes 30 damage or more on a single turn from the swallowed creature, the behir must succeed on a {@dc 14} Constitution saving throw at the end of that turn or regurgitate the creature, which falls {@condition prone} in a space within 10 ft. of the behir. If the behir dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse by using 15 ft. of movement, exiting {@condition prone}."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Breath Weapon",
+        "Multiattack",
+        "Swallow"
+      ],
+      "damageTags": [
+        "P",
+        "B",
+        "S",
+        "L",
+        "A"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH"
+      ],
+      "conditionInflict": [
+        "grappled",
+        "restrained",
+        "blinded"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Behir|https://angrygolem-games.com/monster-manual/letter-b/behir-5e-stats/}",
+          "{@link BEHIR's TACTICS (read the article)|}",
+          "DESCRIPTION",
+          "The behir is a snake-like reptilian monster whose dozen legs allow it to move with considerable speed and climb at fully half its normal movement rate. It can fold its limbs close to its long, narrow body and slither in snake-fashion if it desires. The head looks more crocodilian than snake-like, but has no difficulty in opening its mouth wide enough to swallow prey whole, the way a snake does.",
+          "Behir have band-like scales of great hardness. Their color ranges from ultramarine to deep blue with bands of gray-brown. The belly is pale blue. The two large horns curving back over the head look dangerous enough but are actually used for preening the creature's scales and not for fighting.",
+          "HABITAT / SOCIETY",
+          "Behir are solitary creatures, meeting others of their kind only to mate and hatch a clutch of 1d4 eggs. The female guards these eggs for eight months while the male hunts for the pair. When the young hatch, they are immediately turned out of the nest to fend for themselves, and the adults separate.",
+          "Newly hatched behir are about 2 feet long. Behir grow at a rate of 8 feet per year until fully mature. Interestingly enough, newly hatched behir do not have all of their legs, having instead only six or eight. Additional pairs of legs grow slowly over time until the creature has its full complement when it reaches adulthood.",
+          "Behir range over a territory of about 400 square miles, often living high up a cliff face in a cave.",
+          "Behir are never friendly with dragonkind, and will never be found coexisting in the same geographical area with any type of dragon. If a dragon should enter a behir's territory, the behir will do everything it can to drive the dragon out. If the behir fails in this task, it will move off to find a new home. A behir will never knowingly enter the territory of a dragon.",
+          "ECOLOGY",
+          "Behir are useful to mages, priests, and alchemists for a number of concoctions. The horns of a behir can be used to brew the ink necessary to inscribe a lightning bolt scroll, and the sharp talons can likewise be used by a cleric to make the ink for a neutralize poison scroll. The heart of the behir is one of the more common ingredients for ink for a protection from poison scroll.",
+          "As behir sometimes swallow prey whole, there is a 10% chance that there will be some small items of value inside the monster. More often than not (60%) these will be gems. Otherwise, there is a 30% chance that there will be from 1d8 pieces of jewelry and a 10% chance that a single small magical object of an indegistible nature may be found. Such objects are never found in a behir's lair, because the creature expels this waste and buries it elsewhere.",
+          "The scales are valued for their hardness and color, and are worth up to 500 gp to an armorer who can use them to fashion a highly ornate set of scale mail armor."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Beholder",
+      "size": "L",
+      "type": {
+        "type": "aberration",
+        "tags": [
+          "beholder"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 18,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "19d10 + 76",
+        "average": 180
+      },
+      "speed": {
+        "walk": 0,
+        "fly": {
+          "number": 20,
+          "condition": "(hover)"
+        },
+        "canHover": true
+      },
+      "str": 10,
+      "dex": 14,
+      "con": 18,
+      "int": 17,
+      "wis": 15,
+      "cha": 17,
+      "passive": 22,
+      "cr": "13",
+      "shortName": "Beholder",
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "senseTags": [
+        "SD"
+      ],
+      "languages": [
+        "Deep Speech",
+        "Undercommon"
+      ],
+      "languageTags": [
+        "DS",
+        "U"
+      ],
+      "save": {
+        "int": "+8",
+        "wis": "+7",
+        "cha": "+8"
+      },
+      "skill": {
+        "perception": "+12"
+      },
+      "conditionImmune": [
+        "prone"
+      ],
+      "trait": [
+        {
+          "name": "Antimagic Cone",
+          "entries": [
+            "The beholder's central eye creates an area of antimagic, as in the {@spell antimagic field} spell, in a 150-foot cone. At the start of each of its turns , the beholder decides which way the cone faces and whether the cone is active. The area works against the beholder's own eye rays."
+          ]
+        }
+      ],
+      "miscTags": [
+        "MW",
+        "AOE"
+      ],
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}14 ({@damage 4d6}) piercing damage."
+          ]
+        },
+        {
+          "name": "Eye Rays",
+          "entries": [
+            "The beholder shoots three of the following magical eye rays at random (reroll duplicates), choosing one to three targets it can see within 120 feet of it:",
+            "1. Charm Ray. The targeted creature must succeed on a {@dc 16} Wisdom saving throw or be {@condition charmed} by the beholder for 1 hour, or until the beholder harms the creature.",
+            "2. Paralyzing Ray. The targeted creature must succeed on a {@dc 16} Constitution saving throw or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns , ending the effect on itself on a success.",
+            "3. Fear Ray. The targeted creature must succeed on a {@dc 16} Wisdom saving throw or be {@condition frightened} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+            "4. Slowing Ray. The targeted creature must succeed on a {@dc 16} Dexterity saving throw. On a failed save, the target's speed is halved for 1 minute. In addition, the creature can't take reactions, and it can take either an action or a bonus action on its turn, not both. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+            "5. Enervation Ray. The targeted creature must make a {@dc 16} Constitution saving throw, taking 36 ({@damage 8d8}) necrotic damage on a failed save, or half as much damage on a successful one.",
+            "6. Telekinetic Ray. If the target is a creature, it must succeed on a {@dc 16} Strength saving throw or the beholder moves it up to 30 feet in any direction. It is {@condition restrained} by the ray's telekinetic grip until the start of the beholder's next turn or until the beholder is {@condition incapacitated} If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 feet in any direction. The beholder can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container.",
+            "7. Sleep Ray. The targeted creature must succeed on a {@dc 16} Wisdom saving throw or fall asleep and remain {@condition unconscious} for 1 minute. The target awakens if it takes damage or another creature takes an action to wake it. This ray has no effect on constructs and undead.",
+            "8. Petrification Ray. The targeted creature must make a {@dc 16} Dexterity saving throw. On a failed save, the creature begins to turn to stone and is {@condition restrained}. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is {@condition petrified} until freed by the {@spell greater restoration} spell or other magic.",
+            "9. Disintegration Ray. If the target is a creature, it must succeed on a {@dc 16} Dexterity saving throw or take 45 ({@damage 10d8}) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust. If the target is a Large or smaller non magical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger object or creation of magical force, this ray disintegrates a 10-foot cube of it.",
+            "10. Death Ray. The targeted creature must succeed on a {@dc 16} Dexterity saving throw or take 55 ({@damage 10d10}) necrotic damage. The target dies if the ray reduces it to 0 hit points."
+          ]
+        }
+      ],
+      "damageTags": [
+        "P",
+        "N",
+        "O"
+      ],
+      "conditionInflict": [
+        "charmed",
+        "paralyzed",
+        "frightened",
+        "unconscious",
+        "petrified",
+        "restrained"
+      ],
+      "legendaryActions": 3,
+      "legendaryHeader": [
+        "The beholder can take 3 legendary actions, using the Eye Ray option below. It can take only one legendary action at a time and only at the end of another creature's turn. The beholder regains spent legendary actions at the start of its turn."
+      ],
+      "legendary": [
+        {
+          "name": "Eye Ray",
+          "entries": [
+            "The beholder uses one random eye ray."
+          ]
+        }
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Beholder|https://angrygolem-games.com/monster-manual/letter-b/beholder/}",
+          "{@link BEHOLDER's TACTICS (read the article)|https://angrygolem-games.com/fight-like-a-beholder/}",
+          "DESCRIPTION",
+          "The beholder is the stuff of nightmare. This creature, also called the sphere of many eyes or the eye tyrant, appears as a large orb dominated by a central eye and a large toothy maw, has 10 smaller eyes on stalks sprouting from the top of the orb. Among adventurers, beholders are known as deadly adversaries.",
+          "The globular body of the beholder and its kin is supported by levitation, allowing it to float slowly about as it wills.",
+          "HABITAT / SOCIETY",
+          "The beholders are a hateful, aggressive and avaricious race, attacking or dominating other races, including other beholders and many of the beholder-kin. This is because of a xenophobic intolerance among beholders that taught them to hate all creatures not like themselves.",
+          "The basic, beholder body-type (a sphere with a mouth and a central eye, eye-tipped tentacles) allows for a great variety of beholder subspecies.",
+          "Some have obvious differences, there are those covered with overlapping chitin plates, and those with smooth hides, or snakelike eye tentacles, and some with crustacean-like joints.",
+          "But something as small as a change in hide color or size of the central eye can make two groups of beholders sworn enemies.",
+          "Every beholder declares its own unique body form to be the “true ideal” of beholderhood, the others being nothing but ugly copies, fit only to be eliminated. Beholders will normally attack immediately.",
+          "If confronted with a paticular party there is a 50% chance they will listen to negotiations (bribery) before raining death upon their foes.",
+          "ECOLOGY",
+          "The exact reproductive process of the beholder is unknown. The core racial hatred of the beholders may derive from the nature of their reproduction, which seems to produce identical (or nearly so) individuals with only slit margin for variation.",
+          "Beholder may use parthenogenic reproduction to duplicate themselves, and give birth live (no beholder eggs have been found).",
+          "The smaller eyes of the beholder may be used to produce a potion of levitation.",
+          "Beholder is employed as material component to empower the following spells: {@spell Sanctuary}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Beholder Zombie",
+      "size": "L",
+      "type": {
+        "type": "undead",
+        "tags": [
+          "zombie"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "N",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 15,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "11d10 + 33",
+        "average": 93
+      },
+      "speed": {
+        "walk": 0,
+        "fly": {
+          "number": 20,
+          "condition": "(hover)"
+        },
+        "canHover": true
+      },
+      "str": 10,
+      "dex": 8,
+      "con": 16,
+      "int": 3,
+      "wis": 8,
+      "cha": 5,
+      "passive": 9,
+      "cr": "5",
+      "shortName": "Beholder Zombie",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "understands Deep Speech and Undercommon but can't speak"
+      ],
+      "languageTags": [
+        "U",
+        "DS"
+      ],
+      "save": {
+        "wis": "+2"
+      },
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "poisoned",
+        "prone"
+      ],
+      "trait": [
+        {
+          "name": "Undead Fortitude",
+          "entries": [
+            "If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5+the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead. "
+          ]
+        }
+      ],
+      "traitTags": [
+        "Undead Fortitude"
+      ],
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}14 ({@damage 4d6}) piercing damage."
+          ]
+        },
+        {
+          "name": "Eye Ray",
+          "entries": [
+            "The zombie uses a random magical eye ray, choosing",
+            "a target that it can see withi n 60 feet of it.",
+            "    1.Paralyzing Ray. The targeted creature must succeed on a",
+            "    {@dc 14} Constitution saving throw or be {@condition paralyzed} for 1 minute.",
+            "    The target can repeat the saving throw at the end of each of its",
+            "    turns, ending the effect on itself on a success.",
+            "    2.Fear Ray. The targeted creature must succeed on a {@dc 14} Wisdom saving throw or be {@condition frightened} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+            "    3.Enervation Ray. The targeted creature must make a {@dc 14} Constitution saving throw, taking 36 ({@damage 8d8}) necrotic damage on",
+            "    a failed save, or half as much damage on a successful one.",
+            "    4.Disintegration Ray. If the target is a creature, it must succeed on a {@dc 14} Dexterity saving throw or take 45 ({@damage 10d8}) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust. If the target is a Large or smaller non magical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger nonmagical object or creation of magical force, this ray disintegrates a 10-foot cube of it."
+          ]
+        }
+      ],
+      "damageTags": [
+        "P",
+        "N",
+        "O"
+      ],
+      "miscTags": [
+        "MW",
+        "AOE"
+      ],
+      "conditionInflict": [
+        "frightened"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Beholder Zombie|https://angrygolem-games.com/monster-manual/letter-b/beholder-zombie-5e-stats/}",
+          "{@link ZOMBIE's TACTICS (read the article)|https://angrygolem-games.com/dnd-5e-zombie-tactics-build-challenging-encounters-against-a-zombie/}",
+          "DESCRIPTION",
+          "Zombies are mindless, animated corpses controlled by their creators, usually evil wizards or priests.",
+          "The condition of the corpse is not changed by the animating spell. If the body was missing a limb, the zombie created from it would be missing the same limb. Since it is difficult to get fresh bodies, most zombies are in sorry shape, usually missing hair and flesh, and sometimes even bones. This affects their movement, making it jerky and uneven. Usually zombies wear the clothing they died (or were buried) in. The rotting stench from a zombie might be noticeable up to 100 feet away, depending upon the condition of the body. Zombies cannot talk, being mindless, but have been known to utter a low moan when unable to complete an assigned task.",
+          "HABITAT / SOCIETY",
+          "Zombies are typically found near graveyards, dungeons, and similar charnel places. They follow the spoken commands of their creator, as given on the spot or previously, of limited length and uncomplicated meaning (a dozen simple words or so). The dead body of any humanoid creature can be made into a zombie.",
+          "ECOLOGY",
+          "Zombies are not natural creations and have no role in ecology or nature."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Belenus, Celtic Avatar",
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "avatar"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "N",
+        "G"
+      ],
+      "ac": [
+        20
+      ],
+      "hp": {
+        "formula": "22d12 + 44",
+        "average": 187
+      },
+      "speed": {
+        "walk": 75
+      },
+      "str": 18,
+      "dex": 17,
+      "con": 15,
+      "int": 15,
+      "wis": 15,
+      "cha": 18,
+      "passive": 14,
+      "cr": "15",
+      "shortName": "Belenus, Celtic Avatar",
+      "languages": [
+        "All"
+      ],
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "skill": {
+        "acrobatics": "+4",
+        "animal handling": "+4",
+        "arcana": "+4",
+        "athletics": "+4",
+        "deception": "+4",
+        "history": "+4",
+        "insight": "+4",
+        "intimidation": "+4",
+        "investigation": "+4",
+        "medicine": "+4",
+        "nature": "+4",
+        "perception": "+4",
+        "performance": "+4",
+        "persuasion": "+4",
+        "sleight of hand": "+4",
+        "religion": "+4",
+        "stealth": "+4"
+      },
+      "trait": [
+        {
+          "name": "Blinding Sun",
+          "entries": [
+            "Belenus' avatar can blind any living creature within sight by making his magical torc shine with the brightness of the sun; no saving throw allowed."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "Belenus' avatar makes 3 attacks with his long sword."
+          ]
+        },
+        {
+          "name": "Long Sword.",
+          "entries": [
+            "{@atk ms} {@hit 9} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage, or 9 ({@damage 1d10 + 4}) slashing damage if used with both hands."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "S"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Belenus, Celtic Avatar|https://angrygolem-games.com/monster-manual/letter-b/belenus-celtics-avatar/}",
+          "DESCRIPTION",
+          "Belenus' avatar appears as a strong young many with curled black hair and a terrific shining torc around his neck.",
+          "Belenus, one of the most ancient and most widely worshipped of the pagan Celtic deities; he was associated with pastoralism. A great fire festival, called Beltane (or Beltine), was held on May 1 and was probably originally connected with his cult. On that day the cattle were purified and protected by fire before being put out to the open pastures for the summer. ",
+          "{@link God & Clergy (go to page)|https://angrygolem-games.com/monster-manual/letter-b/belenus-god-and-clerics-for-dd-5e/}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Berbalang",
+      "size": "M",
+      "type": "aberration",
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "N",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 14,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "11d8 ‒ 11",
+        "average": 4
+      },
+      "speed": {
+        "walk": 30,
+        "fly": 40,
+        "canHover": false
+      },
+      "str": 9,
+      "dex": 16,
+      "con": 9,
+      "int": 17,
+      "wis": 11,
+      "cha": 10,
+      "passive": 12,
+      "cr": "2",
+      "shortName": "Berbalang",
+      "languages": [
+        "All",
+        "but rarely speaks"
+      ],
+      "senses": [
+        "truesight 120 ft."
+      ],
+      "senseTags": [
+        "U"
+      ],
+      "save": {
+        "dex": "+5",
+        "int": "+5"
+      },
+      "skill": {
+        "arcana": "+5",
+        "history": "+5",
+        "insight": "+5",
+        "perception": "+2",
+        "religion": "+5"
+      },
+      "trait": [
+        {
+          "name": "Spectral Duplicate (Recharges after a Short or Long Rest)",
+          "entries": [
+            "As a bonus action, the berbalang creates one spectral duplicate of itself in an unoccupied space it can see within 60 feet of it. While the duplicate exists, the berbalang is {@condition unconscious}. A berbalang can have only one duplicate at a time. The duplicate disappears when it or the berbalang drops to 0 hit points or when the berbalang dismisses it (no action required). The duplicate has the same statistics and knowledge as the berbalang, and everything experienced by the duplicate is known by the berbalang. All damage dealt by the duplicate's attacks is psychic damage."
+          ]
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasting",
+          "headerEntries": [
+            "The berbalang's innate spellcasting ability is Intelligence (spell save {@dc 13}). The berbalang can innately cast the following spells, requiring no material components:"
+          ],
+          "will": [
+            "{@spell speak with dead}"
+          ],
+          "daily": {
+            "1": [
+              "{@spell plane shift} (self only)"
+            ]
+          },
+          "ability": "int",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "I"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The berbalang makes two attacks: one with its bite and one with its claws."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8({@damage 1d10 + 3}) piercing damage."
+          ]
+        },
+        {
+          "name": "Claws",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 2d4 + 3}) slashing damage."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "damageTags": [
+        "S"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Berbalang|https://angrygolem-games.com/monster-manual/letter-b/berbalang-5e-stats/}",
+          "DESCRIPTION",
+          "The berbalang is a dark and evil creature that spends most of its life in a comatose state while its spirit wanders the Astral plane. When it does return to our world, it does so only to feed on the flesh of humans who dwell near its hiding place.",
+          "A typical berbalang is a gaunt biped with black, leathery skin. Its wide, glowing eyes, which provide the berbalang with truesight out to 120 feet, are watery and white in color. Two broad, bat-like wings sprout from the creature's back and enable it to fly with great speed and agility.",
+          "HABITAT / SOCIETY",
+          "The berbalang is a most unusual creature. The vast majority of its life is spent in a death-like trance that permits the monster's spirit to wander at will throughout the Astral plane. Here the berbalang stalks those creatures that are weaker than itself and engages in its complex courtship and mating rituals.",
+          "If the body is discovered or disturbed in any way, the berbalang is aware of this and returns to defend itself. Because of the great distance which the berbalang's spirit may have to cross to reach its material form, however, this can take quite a long time (1d100 rounds). If the body is destroyed before the berbalang can defend itself, the astral spirit is also slain. For this reason, the berbalang does its best to seclude and protect the resting place of its physical form.",
+          "Once per month, on the three days of the full moon, the berbalang returns to the Prime Material plane to feed. At this time, the creature alters its trance slightly and manifests an exact duplicate of itself, known as a projection. Once the projection is formed, it is sent forth in search of the berbalang's only food — a freshly slain human being.",
+          "The projection, which is controlled directly by the berbalang, can travel up to three miles from its body. If the projection must fight, it does so just as the berbalang itself would (see above).",
+          "If the projection is hit or suffers any injury during its quest for food, it takes flight at once and flees. As quickly as possible, the berbalang guides its projection back to its resting place. If the projection is destroyed, there is a 75% chance that the shock to the berbalang's system will prove to be fatal for it as well. If the projection is only injured, but not slain, the berbalang cannot manifest another for a number of days equal to the number of hit points it lost.",
+          "When the projection returns to its master, it is dissipated. Adventurers who have followed the projection to finish it off may well be shocked to find themselves confronted by a healthy berbalang.",
+          "If the berbalang is not discovered and destroyed, it will eventually seek to avenge itself upon those who interfered with its feeding. Although there may be a lull while the body of the berbalang recovers from the shock of the attack on its projection and is able to send forth another, retribution is a certainty.",
+          "If the projection was forced back to the body or destroyed before it could find prey to feed upon, the berbalang will send forth another, as soon as it is able, to satisfy its hunger (regardless of the phase of the moon) before seeking its revenge.",
+          "ECOLOGY",
+          "When the projection kills a human, it picks up the corpse and begins to return with it to its lair. As it does so, the berbalang itself awakens from its trance and the projection begins to feed on the body. By the time the projection has reached the berbalang's hiding place, the body has been all but stripped of flesh and the berbalang's hunger has been satisfied.",
+          "In order to avoid drawing attention to itself, the berbalang usually moves its lair every three or four months. At this time, it moves only during the night and avoids any confrontation if it can. Thus actual contact with the berbalang itself, as opposed to its projection, is minimal.",
+          "There is no record of anyone discovering how the berbalang is able to derive sustenance when only its projection feeds on the slain humans it hunts. Likewise, the exact process by which the berbalang is able to mate and reproduce when its only contact with others of its species takes place in a spiritual form on the Astral plane remains a mystery."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bheur Hag",
+      "size": "M",
+      "type": {
+        "type": "fey",
+        "tags": [
+          "hag"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 17,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "14d8 + 28",
+        "average": 91
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 13,
+      "dex": 16,
+      "con": 14,
+      "int": 12,
+      "wis": 13,
+      "cha": 16,
+      "passive": 14,
+      "cr": "7",
+      "shortName": "Bheur Hag",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "Auran",
+        "Common",
+        "Giant"
+      ],
+      "languageTags": [
+        "AU",
+        "C",
+        "GI"
+      ],
+      "save": {
+        "wis": "+4"
+      },
+      "skill": {
+        "nature": "+4",
+        "perception": "+4",
+        "stealth": "+6",
+        "survival": "+4"
+      },
+      "immune": [
+        "cold"
+      ],
+      "trait": [
+        {
+          "name": "Graystaff Magic",
+          "entries": [
+            "The hag carries a {@item wooden staff|PHB|graystaff}, a length of gray wood that is a focus for her inner power. She can ride the staff as if it were a {@item broom of flying}. While holding the staff, she can cast additional spells with her Innate Spellcasting trait (these spells are marked with an asterisk). If the staff is lost or destroyed, the hag must craft another, which takes a year and a day. Only a bheur hag can use a {@item wooden staff|PHB|graystaff}."
+          ]
+        },
+        {
+          "name": "Ice Walk",
+          "entries": [
+            "The hag can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost her extra moment."
+          ]
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasting",
+          "headerEntries": [
+            "The hag's innate spellcasting ability is Charisma (spell save {@dc 14}, +6 to hit with spell attacks). She can innately cast the following spells, requiring no material components:"
+          ],
+          "will": [
+            "{@spell hold person}*",
+            "{@spell ray of frost}"
+          ],
+          "daily": {
+            "3e": [
+              "{@spell cone of cold}*",
+              "{@spell ice storm}*",
+              "{@spell wall of ice}*"
+            ],
+            "1e": [
+              "{@spell control weather}"
+            ]
+          },
+          "ability": "cha",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "I"
+      ],
+      "action": [
+        {
+          "name": "Slam",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d8 + 1}) bludgeoning damage, plus 3 ({@damage 1d6}) cold damage."
+          ]
+        },
+        {
+          "name": "Maddening Feast",
+          "entries": [
+            "The hag feasts on the corpse of one enemy within 5 feet of her that died within the past minute. Each creature of the hag's choice that is within 60 feet of her and able to see her must succeed on a {@dc 15} Wisdom saving throw or be {@condition frightened} of her for 1 minute. While {@condition frightened} in this way, a creature is {@condition incapacitated}, can't understand what others say, can't read, and speaks only in gibberish; the DM controls the creature's movement, which is erratic. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the hag's Maddening Feast for the next 24 hours."
+          ]
+        }
+      ],
+      "damageTags": [
+        "B",
+        "C"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "conditionInflict": [
+        "incapacitated",
+        "frightened"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Bheur Hag|https://angrygolem-games.com/monster-manual/letter-b/bheur-hag-5e-stats/}",
+          "DESCRIPTION",
+          "The bheur, or blue hag, of Rashemaar legend is said to be the bringer of winter, capable of spreading deadly cold over a wide area. Rashemaar tales are uncertain whether there is only one bheur or many, but in all stories she is a powerful and malevolent creature who serves the useful purpose of helping to bring winter. She is invariably defeated add driven off each spring.",
+          "In most stories the bheur resembles a hidepus, wrinkled old crone with pale blue-white skin and snow-white hair, wrapped in a tattered gray-blue shawl. She carries a gnarled gray staff taller than she is, and her voice howls of icy winds.",
+          "Some stories tell of the bheur and orglash (ice spirits) working in concert to mislead, attack, and devour travelers. No one knows whether these tales of cooperation bepeen the blue hag and orglash are true; witnesses are unlikely to live to tell the tale.",
+          "Other legends speak of epic battles betweqn high-ranking wychlaran (the Witches of Rashemen) and thy bheur, and of the early onset of spring as a result of victory by the Witches. The Witches themselves believe that the bheur is a natural part of the land and serves a useful purpose, but they will fight the blue hag if she begins to act arbitrarily or cruelly. As the Witches say, winter is the best part of the year, but even winter pales in the month of Hammer.",
+          "HABITAT / SOCIETY",
+          "Some claim that the bheur themselves bring the cold, others that the cold draws the bheur.",
+          "As the skies turn slate-gray and snow swirls down from the sky, driven on howling winds, the Rashemaar shut their doors tightly, make certain that they have laid in enough wood and food for the winter, and cower in the terrible weather. During this time the bheur is abroad, and most Rashemaar fear her greatly. Like the dreaded uthraki shapechanging spirits, hheur prefer to prey upon lone travelers, freezing them and devouring their frozen bodies. The bheur is also said to sneak into people's homes if the doors and windows are not proper sealed, where they snatch away young children or unsuspecting residents. Such stories are probably cautionary tales against leaving windows and doors open, but they usually do the job keeping young Rashemaar in line for fear of the blue hag.",
+          "ECOLOGY",
+          "No one has ever seen two blue hags together, leading to a widespread belief that there is only one bheur in all of Rashemen. After freezing victims, the bheur dines on the icy corpses, and it is said that anyone who sees a bheur devour its victim may be struck blind or driven mad. Characters who witness such an act must successfully save vs. death magic or be blinded (75%) or driven insane (25%). Insane characters flee (50%), attack anyone nearby, friend or foe (30%), or collapse in a catatonic heap, incapable of speech or movement (20%). The madness lasts 2d6 days unless the victim receives a {@spell cure disease} or {@spell remove curse} spell."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Black Abishai",
+      "size": "M",
+      "type": {
+        "type": "fiend",
+        "tags": [
+          "devil"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 15,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "9d8 + 18",
+        "average": 58
+      },
+      "speed": {
+        "walk": 30,
+        "fly": 40,
+        "canHover": false
+      },
+      "str": 14,
+      "dex": 17,
+      "con": 14,
+      "int": 13,
+      "wis": 16,
+      "cha": 11,
+      "passive": 16,
+      "cr": "7",
+      "shortName": "Black Abishai",
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "senseTags": [
+        "SD"
+      ],
+      "languages": [
+        "Draconic",
+        "Infernal",
+        "telepathy 120 ft."
+      ],
+      "languageTags": [
+        "DR",
+        "I",
+        "TP"
+      ],
+      "save": {
+        "dex": "+6",
+        "wis": "+6"
+      },
+      "skill": {
+        "perception": "+6",
+        "stealth": "+6"
+      },
+      "resist": [
+        {
+          "resist": [
+            "cold"
+          ]
+        },
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks that aren't silvered"
+        }
+      ],
+      "immune": [
+        "acid",
+        "fire",
+        "poison"
+      ],
+      "conditionImmune": [
+        "poisoned"
+      ],
+      "trait": [
+        {
+          "name": "Devil's Sight",
+          "entries": [
+            "Magical darkness doesn't impede the abishai's darkvision."
+          ]
+        },
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The abishai has advantage on saving throws against spells and other magical effects."
+          ]
+        },
+        {
+          "name": "Magic Weapons",
+          "entries": [
+            "The abishai's weapon attacks are magical."
+          ]
+        },
+        {
+          "name": "Shadow Stealth",
+          "entries": [
+            "While in dim light or darkness, the abishai can take the Hide action as a bonus action."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Magic Resistance",
+        "Magic Weapons"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The abishai makes three attacks: two with its scimitar and one with it s bite."
+          ]
+        },
+        {
+          "name": "Scimitar",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d10 + 3}) piercing damage, plus 9 ({@damage 2d8}) acid damage."
+          ]
+        },
+        {
+          "name": "Creeping Darkness {@recharge}",
+          "entries": [
+            "The abishai casts darkness at a point within 120 feet of it, requiring no components. Wisdom is its spellcasting ability for this spell. While the spell persists, the abishai can move the area of darkness up to 60 feet as a bonus action."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "S",
+        "P",
+        "A"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Black Abishai|https://angrygolem-games.com/monster-manual/letter-b/black-abishai-5e-stats/}",
+          "DESCRIPTION",
+          "Abishai are common to the first and second layers of Baator. They look like gothic gargoyles, thin and reptilian, with long, prehensile tails and large wings. The three varieties of abishai have different skin colors — in ascending order of station, black, green, and red. All have a vinegary smell and rasping voices. The air seems to warm perceptibly in their presence.",
+          "HABITAT / SOCIETY",
+          "Abishai are voracious and evil. They delight in tormenting those few baatezu lower in station than themselves. Abishai tempt mortals bold enough to travel to Baator by using their Alter Self and Charm Person abilities to impersonate more powerful baatezu.",
+          "ECOLOGY",
+          "The abishai make up large, evil armies that fight the tanar'ri and intruders into Baator. In some cases, a red abishai may prove worthy enough to command a force of lemures. If successful, the red abishai may be promoted to a higher form of baatezu.",
+          "As part of their efforts to corrupt mortals, abishai like to bestow powerful magic on inexperienced wizards. Usually the low-level spellcaster cannot control these enormous energies, and chaos and destruction result."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Black Bear",
+      "size": "M",
+      "type": {
+        "type": "beast",
+        "tags": [
+          "animal"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        {
+          "ac": 11,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "3d8 + 6",
+        "average": 19
+      },
+      "speed": {
+        "walk": 40,
+        "climb": 30
+      },
+      "str": 15,
+      "dex": 10,
+      "con": 14,
+      "int": 2,
+      "wis": 12,
+      "cha": 7,
+      "passive": 13,
+      "cr": "1/2",
+      "shortName": "Black Bear",
+      "skill": {
+        "perception": "+3"
+      },
+      "trait": [
+        {
+          "name": "Keen Smell",
+          "entries": [
+            "The bear has advantage on Wisdom (Perception) checks that rely on smell."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Keen Senses"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The bear makes two attacks: one with its bite and one with its claws."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+          ]
+        },
+        {
+          "name": "Claws",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d4 + 2}) slashing damage."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P",
+        "S"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Black Bear|https://angrygolem-games.com/monster-manual/letter-b/black-bear-5e-stats/}",
+          "DESCRIPTION",
+          "A rather common omnivorous mammal, bears tend to avoid humans unless provoked. Exceptions to this rule can be a most unfortunate occurrence.",
+          "Bears are, in general, large and powerful animals which are found throughout the world's temperate and cooler climates. With dense fur protecting them from the elements and powerful claws protecting them from other animals, bears are the true rulers of the animal kingdom in the areas where they live.",
+          "COMBAT",
+          "Although black bears are usually not aggressive, they are able fighters when pressed. If a black bear scores a claw hit with an 18 or better it also hugs for 2d4 +2 damage."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Black Dragon, Adult",
+      "size": "H",
+      "type": "dragon",
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 19,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "17d12 + 85",
+        "average": 195
+      },
+      "speed": {
+        "walk": 40,
+        "fly": 80,
+        "canHover": false,
+        "swim": 40
+      },
+      "str": 23,
+      "dex": 14,
+      "con": 21,
+      "int": 14,
+      "wis": 13,
+      "cha": 17,
+      "passive": 21,
+      "cr": "14",
+      "shortName": "Black Dragon, Adult",
+      "languages": [
+        "Common",
+        "Draconic"
+      ],
+      "languageTags": [
+        "C",
+        "DR"
+      ],
+      "senses": [
+        "blindsight 60 ft.",
+        "darkvision 120 ft."
+      ],
+      "senseTags": [
+        "B",
+        "SD"
+      ],
+      "save": {
+        "dex": "+7",
+        "con": "+10",
+        "wis": "+6",
+        "cha": "+8"
+      },
+      "skill": {
+        "perception": "+11",
+        "stealth": "+7"
+      },
+      "immune": [
+        "acid"
+      ],
+      "trait": [
+        {
+          "name": "Amphibious",
+          "entries": [
+            "The dragon can breathe air and water."
+          ]
+        },
+        {
+          "name": "Legendary Resistance (3/Day)",
+          "entries": [
+            "If the dragon fails a saving throw, it can choose to succeed instead."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Amphibious",
+        "Legendary Resistances"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}17 ({@damage 2d10 + 6}) piercing damage, plus 4 ({@damage 1d8}) acid damage."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d6 + 6}) slashing damage."
+          ]
+        },
+        {
+          "name": "Tail",
+          "entries": [
+            "{@atk mw} {@hit 11} to hit, reach 15 ft., one target. {@h}15 ({@damage 2d8 + 6}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Frightful Presence",
+          "entries": [
+            "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a {@dc 16} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours."
+          ]
+        },
+        {
+          "name": "Acid Breath {@recharge 5}",
+          "entries": [
+            "The dragon exhales acid in a 60-foot line that is 5 feet wide. Each creature in that line must make a {@dc 18} Dexterity saving throw, taking 54 ({@damage 12d8}) acid damage on a failed save, or half as much damage on a successful one."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Breath Weapon",
+        "Frightful Presence",
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P",
+        "A",
+        "S",
+        "B"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH",
+        "AOE"
+      ],
+      "conditionInflict": [
+        "frightened",
+        "prone"
+      ],
+      "legendaryActions": 3,
+      "legendaryHeader": [
+        "Adult Black Dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Adult Black Dragon regains spent legendary actions at the start of their turn."
+      ],
+      "legendary": [
+        {
+          "name": "Detect",
+          "entries": [
+            "The dragon makes a Wisdom (Perception) check."
+          ]
+        },
+        {
+          "name": "Tail Attack",
+          "entries": [
+            "The dragon makes a tail attack."
+          ]
+        },
+        {
+          "name": "Wing Attack (Costs 2 Actions)",
+          "entries": [
+            "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a {@dc 19} Dexterity saving throw or take 13 ({@damage 2d6 + 6}) bludgeoning damage and be knocked {@condition prone}. The dragon can then fly up to half its flying speed."
+          ]
+        }
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Black Dragon, Adult|https://angrygolem-games.com/monster-manual/letter-b/black-dragon-adult-5e-stats/}",
+          "DESCRIPTION",
+          "Black dragons are abusive, quick to anger, and resent intrusions of any kind. They like dismal surroundings, heavy vegetation, and prefer darkness to daylight. Although not as intelligent as other dragons, black dragons are instinctively cunning and malevolent.",
+          "At birth, a black dragon's scales are thin, small, and glossy. But as the dragon ages, its scales become larger, thicker, and duller, which helps it camouflage itself in swamps and marshes.",
+          "HABITAT / SOCIETY",
+          "Black dragons are found in swamps, marshes, rain forests, and jungles. They revel in a steamy environment where canopies of trees filter out most of the sunlight, swarms of insects fill the air, and stagnant moss-covered ponds lie in abundance. Black dragons are excellent swimmers and enjoy lurking in the gloomy depths of swamps and bogs. They also are graceful in flight; however, they prefer to fly at night when their great forms are hidden by the darkness of the sky. Black dragons are extremely selfish, and the majority of those encountered will be alone. When a family of black dragons is encountered, the adults will protect their young. However, if it appears the adults' lives are in jeopardy they will abandon their young to save themselves.",
+          "They lair in large, damp caves and multi-chambered subterranean caverns. Older dragons are able to hide the entrance to their lairs with their plant growth ability. Black dragons are especially fond of coins. Older black dragons sometimes capture and question humans, before killing them, to find out where stockpiles of gold, silver, and platinum coins are kept.",
+          "ECOLOGY",
+          "Black dragons can eat almost anything, although they prefer to dine primarily on fish, mollusks, and other aquatic creatures. They are fond of eels, especially the giant varieties. They also hunt for red meat, but they like to “pickle” it by letting it lie in ponds within their lair for days before eating it."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Black Dragon, Ancient",
+      "size": "G",
+      "type": "dragon",
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 22,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "21d20 + 147",
+        "average": 367
+      },
+      "speed": {
+        "walk": 40,
+        "fly": 80,
+        "canHover": false,
+        "swim": 40
+      },
+      "str": 27,
+      "dex": 14,
+      "con": 25,
+      "int": 16,
+      "wis": 15,
+      "cha": 19,
+      "passive": 26,
+      "cr": "21",
+      "shortName": "Black Dragon, Ancient",
+      "languages": [
+        "Common",
+        "Draconic"
+      ],
+      "languageTags": [
+        "C",
+        "DR"
+      ],
+      "senses": [
+        "blindsight 60 ft.",
+        "darkvision 120 ft."
+      ],
+      "senseTags": [
+        "B",
+        "SD"
+      ],
+      "save": {
+        "dex": "+9",
+        "con": "+14",
+        "wis": "+9",
+        "cha": "+11"
+      },
+      "skill": {
+        "stealth": "+9",
+        "perception": "+16"
+      },
+      "immune": [
+        "acid"
+      ],
+      "trait": [
+        {
+          "name": "Amphibious",
+          "entries": [
+            "The dragon can breathe air and water."
+          ]
+        },
+        {
+          "name": "Legendary Resistance (3/Day)",
+          "entries": [
+            "If the dragon fails a saving throw, it can choose to succeed instead."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Amphibious",
+        "Legendary Resistances"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 15} to hit, reach 15 ft., one target. {@h}19 ({@damage 2d10 + 8}) piercing damage, plus 9 ({@damage 2d8}) acid damage."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 15} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d6 + 8}) slashing damage."
+          ]
+        },
+        {
+          "name": "Tail",
+          "entries": [
+            "{@atk mw} {@hit 15} to hit, reach 20 ft., one target. {@h}17 ({@damage 2d8 + 8}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Frightful Presence",
+          "entries": [
+            "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a {@dc 19} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours."
+          ]
+        },
+        {
+          "name": "Acid Breath {@recharge 5}",
+          "entries": [
+            "The dragon exhales acid in a 90-foot line that is 10 feet wide. Each creature in that line must make a {@dc 22} Dexterity saving throw, taking 67 ({@damage 15d8}) acid damage on a failed save, or half as much damage on a successful one."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Breath Weapon",
+        "Frightful Presence",
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P",
+        "A",
+        "S",
+        "B"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH",
+        "AOE"
+      ],
+      "conditionInflict": [
+        "frightened",
+        "prone"
+      ],
+      "legendaryActions": 3,
+      "legendaryHeader": [
+        "The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn."
+      ],
+      "legendary": [
+        {
+          "name": "Detect",
+          "entries": [
+            "The dragon makes a Wisdom (Perception) check."
+          ]
+        },
+        {
+          "name": "Tail Attack",
+          "entries": [
+            "The dragon makes a tail attack."
+          ]
+        },
+        {
+          "name": "Wing Attack (Costs 2 Actions)",
+          "entries": [
+            "The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a {@dc 23} Dexterity saving throw or take 15 ({@damage 2d6 + 8}) bludgeoning damage and be knocked {@condition prone}. The dragon can then fly up to half its flying Speed."
+          ]
+        }
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Black Dragon, Ancient|https://angrygolem-games.com/monster-manual/letter-b/black-dragon-ancient-5e-stats/}",
+          "DESCRIPTION",
+          "Black dragons are abusive, quick to anger, and resent intrusions of any kind. They like dismal surroundings, heavy vegetation, and prefer darkness to daylight. Although not as intelligent as other dragons, black dragons are instinctively cunning and malevolent.",
+          "At birth, a black dragon's scales are thin, small, and glossy. But as the dragon ages, its scales become larger, thicker, and duller, which helps it camouflage itself in swamps and marshes.",
+          "HABITAT / SOCIETY",
+          "Black dragons are found in swamps, marshes, rain forests, and jungles. They revel in a steamy environment where canopies of trees filter out most of the sunlight, swarms of insects fill the air, and stagnant moss-covered ponds lie in abundance. Black dragons are excellent swimmers and enjoy lurking in the gloomy depths of swamps and bogs. They also are graceful in flight; however, they prefer to fly at night when their great forms are hidden by the darkness of the sky. Black dragons are extremely selfish, and the majority of those encountered will be alone. When a family of black dragons is encountered, the adults will protect their young. However, if it appears the adults' lives are in jeopardy they will abandon their young to save themselves.",
+          "They lair in large, damp caves and multi-chambered subterranean caverns. Older dragons are able to hide the entrance to their lairs with their plant growth ability. Black dragons are especially fond of coins. Older black dragons sometimes capture and question humans, before killing them, to find out where stockpiles of gold, silver, and platinum coins are kept.",
+          "ECOLOGY",
+          "Black dragons can eat almost anything, although they prefer to dine primarily on fish, mollusks, and other aquatic creatures. They are fond of eels, especially the giant varieties. They also hunt for red meat, but they like to “pickle” it by letting it lie in ponds within their lair for days before eating it."
         ],
         "images": [
           {
