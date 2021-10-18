@@ -83,6 +83,9 @@
 - [TOKEN][About Face](https://github.com/mclemente/about-face)
 - [ENTITY][Not Enough NPCs: A 5e NPC Generator](https://github.com/ardittristan/VTTNPCGen ) - https://raw.githubusercontent.com/ardittristan/VTTNPCGen/master/module.json
 - [JOURNAL/CHAT][Polyglot](https://github.com/League-of-Foundry-Developers/fvtt-module-polyglot ) - https://raw.githubusercontent.com/League-of-Foundry-Developers/fvtt-module-polyglot/master/module.json
+- [TOKEN][TOKEN Z](https://github.com/theripper93/token-z)
+- [UTILITY][Sidebar Macro](https://github.com/arcanistzed/sidebar-macros)
+- [JOURNAL/UTILITY][Share Media](https://github.com/DarKDinDoN/share-media)
 
 ## MODULES LANGUAGE ITA
 
