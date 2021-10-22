@@ -16918,7 +16918,1024 @@
           }
         ]
       }
+    },
+    {
+      "name": "Corpse Flower",
+      "size": "L",
+      "type": "plant",
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        12
+      ],
+      "hp": {
+        "formula": "15d10 + 45",
+        "average": 127
+      },
+      "speed": {
+        "walk": 20,
+        "climb": 20
+      },
+      "str": 14,
+      "dex": 14,
+      "con": 16,
+      "int": 7,
+      "wis": 15,
+      "cha": 3,
+      "passive": 12,
+      "cr": "8",
+      "shortName": "Corpse Flower",
+      "conditionImmune": [
+        "blinded",
+        "deafened"
+      ],
+      "senses": [
+        "blindsight 120 ft. (blind beyond this radius)"
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "trait": [
+        {
+          "name": "Corpses",
+          "entries": [
+            "When first encountered, a corpse flower contains the corpses of {@dice 1d6 + 3} humanoids. A corpse flower can hold the remains of up to nine dead humanoids. These remains have total cover against attacks and other effects outside the corpse flower. If the corpse flower dies, the corpses within it can be pulled free. While it has at least one humanoid corpse in its body, the corpse flower can use a bonus action to do one of the following:",
+            "The corpse flower digests one humanoid corpse in its body and instantly regains 11 (2dl0) hit points. Nothing of the digested body remains. Any equipment on the corpse is expelled from the corpse flower in its space.",
+            "The corpse flower animates one dead humanoid in its body, turning it into a zombie. The zombie appears in an unoccupied space within 5 feet of the corpse flower and acts immediately after it in the initiative order. The zombie acts as an ally of the corpse flower but isn’t under its control, and the flower’s stench clings to it (see the Stench of Death trait)."
+          ]
+        },
+        {
+          "name": "Spider Climb",
+          "entries": [
+            "The corpse flower can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+          ]
+        },
+        {
+          "name": "Stench of Death",
+          "entries": [
+            "Each creature that starts its turn within 10 feet of the corpse flower or one of its zombies must make a {@dc 14} Constitution saving throw, unless the creature is a construct or undead. On a failed save, the creature is {@condition incapacitated} until the end of the turn. Creatures that are immune to poison damage or the {@condition poisoned} condition automatically succeed on this saving throw. On a successful save, the creature is immune to the stench of all corpse flowers for 24 hours."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Spider Climb"
+      ],
+      "conditionInflict": [
+        "incapacitated"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The corpse flower makes three tentacle attacks."
+          ]
+        },
+        {
+          "name": "Tentacle",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}9 ({@damage 2d6 + 2}) bludgeoning damage, and the target must succeed on a {@dc 14} Constitution saving throw or take 14 ({@damage 4d6}) poison damage ."
+          ]
+        },
+        {
+          "name": "Harvest the Dead",
+          "entries": [
+            "The corpse flower grabs one unsecured dead humanoid within 10 feet of it and stuffs the corpse into itself, along with any equipment the corpse is wearing or carrying. The remains can be used with the Corpses trait."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack",
+        "Tentacles"
+      ],
+      "damageTags": [
+        "B",
+        "I"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Corpse Flower|https://angrygolem-games.com/monster-manual/letter-c/corpse-flower/}",
+          "{@link CORPSE FLOWER’s TACTICS (read the article)|https://angrygolem-games.com/fight-like-a-corpse-flower/}",
+          "DESCRIPTION",
+          "A corpse flower can sprout atop the grave of an evil necromancer or the remains of powerful undead."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Couatl",
+      "size": "M",
+      "type": "celestial",
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "L",
+        "G"
+      ],
+      "ac": [
+        {
+          "ac": 19,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "13d8 + 39",
+        "average": 97
+      },
+      "speed": {
+        "walk": 30,
+        "fly": 90,
+        "canHover": false
+      },
+      "str": 16,
+      "dex": 20,
+      "con": 17,
+      "int": 18,
+      "wis": 20,
+      "cha": 18,
+      "passive": 15,
+      "cr": "4",
+      "shortName": "Couatl",
+      "languages": [
+        "All",
+        "telepathy 120 Ft."
+      ],
+      "languageTags": [
+        "TP"
+      ],
+      "senses": [
+        "truesight 120 ft."
+      ],
+      "senseTags": [
+        "U"
+      ],
+      "save": {
+        "con": "+5",
+        "wis": "+7",
+        "cha": "+6"
+      },
+      "resist": [
+        "radiant"
+      ],
+      "immune": [
+        {
+          "immune": [
+            "psychic"
+          ]
+        },
+        {
+          "immune": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasting",
+          "headerEntries": [
+            "The couatl’s spellcasting ability is Charisma (spell save {@dc 14}). It can innately cast the following spells, requiring only verbal components:"
+          ],
+          "will": [
+            "{@spell detect evil and good}",
+            "{@spell detect magic}",
+            "{@spell detect thoughts}"
+          ],
+          "daily": {
+            "3": [
+              "{@spell bless}",
+              "{@spell create food and water}",
+              "{@spell cure wounds}",
+              "{@spell lesser restoration}",
+              "{@spell protection from poison}",
+              "{@spell sanctuary}",
+              "{@spell shield}"
+            ],
+            "1e": [
+              "{@spell dream}",
+              "{@spell greater restoration}",
+              "{@spell scrying}"
+            ]
+          },
+          "ability": "cha",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "I"
+      ],
+      "trait": [
+        {
+          "name": "Magic Weapons",
+          "entries": [
+            "The couatl’s weapon attacks are magical."
+          ]
+        },
+        {
+          "name": "Shielded Mind",
+          "entries": [
+            "The couatl is immune to scrying and to any effect that would sense its emotions, read its thoughts, or detect its location."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Magic Weapons"
+      ],
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 5}) piercing damage. The target must succeed on a dc 13 constitution saving throw or be {@condition poisoned} for 24 hours Until this poison ends, the target is {@condition unconscious}. Another creature can use an action to shake the target awake"
+          ]
+        },
+        {
+          "name": "Constrict",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}10 ({@damage 2d6 + 3}) bludgeoning damage. The target is {@condition grappled} (escape dc 15) Until this grapple ends, the target is {@condition restrained}, and the couatl can’t constrict another target"
+          ]
+        },
+        {
+          "name": "Change Shape",
+          "entries": [
+            "The couatl magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the couatl’s choice). In a new form, the couatl retains its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and other actions are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks. If the new form has a bite attack, the couatl can use its bite in that form."
+          ]
+        }
+      ],
+      "damageTags": [
+        "P",
+        "B"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH"
+      ],
+      "conditionInflict": [
+        "grappled",
+        "poisoned",
+        "restrained",
+        "unconscious"
+      ],
+      "actionTags": [
+        "Shapechanger"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Couatl|https://angrygolem-games.com/monster-manual/letter-c/couatl-5e-stats/}",
+          "DESCRIPTION",
+          "The couatl are feathered serpents of myth and lore. It is believed that they are distant relatives of dragons, although this remains unproven.",
+          "So rare as to be considered almost legendary, the couatl is one of the most beautiful creatures in existence. It has the body of a long serpent and feathered wings the color of the rainbow. Since it has the ability to change shape, the couatl will sometimes appear in the form of other creatures (always of good alignment).",
+          "Couatl are able to communicate via telepathy with almost any intelligent creature which they encounter. In addition, they can speak common and most serpent and avian languages.",
+          "HABITAT / SOCIETY",
+          "This winged serpent is native to warm, jungle-like regions but can also be found flying through the ether. Their intelligence and goodness have made them objects of reverence by the natives of the regions which they inhabit. Considered to be divine, there are many legends in which the couatl is the benefactor of mankind and the bestower of such precious gifts as agriculture and medicine. There are even shrines in certain areas dedicated to the couatl, and any who attack or harm a couatl are automatically viewed as the blackest of villains.",
+          "Although solitary in nature, couatl think of themselves as a single, extended clan. This clan is led by the oldest and wisest of their numbers but assembles only in dire emergencies.",
+          "Most couatl dwell alone, making their lairs in caves and abandoned buildings in remote, uninhabited regions. They hunt jungle animals for food once every fortnight or so. Many enjoy traveling, often undertaking long journeys of exploration.",
+          "On rare occasions, a pair will mate for life and establish a joint lair. Unlike many other reptiles, the couatl bear live young. Births are rare, averaging only one per couple each century. Both parents participate in the rearing and education of the single offspring, and will fight to the death if their child is threatened. Young couatl reach maturity in thirty or forty years and, though some will elect to remain with their parents for as long as a century, will eventually set off in search of the couatl’s never-ending quest for wisdom.",
+          "Intellectually curious, all couatl have vast stores of information and enjoy learning more. When one of them learns some new and fascinating fact he will inevitably set out in search of his brethren to share and discuss it.",
+          "Couatl can sometimes be persuaded to help good adventurers or give sound council. If they feel that they are being sought for frivolous reasons, they will simply fly away. They are not greedy and do not seek treasure for its own sake. Aid from a couatl may well take the form of a magical item from its hoard.",
+          "ECOLOGY",
+          "The couatl usually reigns supreme in its jungle, having little to fear from most other monsters.",
+          "Couatl is employed as material component to empower the following spells: {@spell Bless}, {@spell Guiding Bolt}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Coyote Spirit, American Indian Avatar",
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "avatar"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "C",
+        "N"
+      ],
+      "ac": [
+        18
+      ],
+      "hp": {
+        "formula": "20d8 + 80",
+        "average": 170
+      },
+      "speed": {
+        "walk": 75
+      },
+      "str": 19,
+      "dex": 20,
+      "con": 18,
+      "int": 15,
+      "wis": 18,
+      "cha": 7,
+      "passive": 14,
+      "cr": "15",
+      "shortName": "Coyote Spirit, American Indian Avatar",
+      "languages": [
+        "All"
+      ],
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "skill": {
+        "acrobatics": "+4",
+        "animal handling": "+4",
+        "arcana": "+4",
+        "athletics": "+4",
+        "deception": "+4",
+        "history": "+4",
+        "insight": "+4",
+        "intimidation": "+4",
+        "investigation": "+4",
+        "medicine": "+4",
+        "nature": "+4",
+        "perception": "+4",
+        "performance": "+4",
+        "persuasion": "+4",
+        "religion": "+4",
+        "sleight of hand": "+4",
+        "stealth": "+4",
+        "survival": "+4"
+      },
+      "trait": [
+        {
+          "name": "Deadly Bite",
+          "entries": [
+            "On any natural attack roll of 20, the avatar’s victim must roll a {@dc 22} strenght saving throw or have his neck snapped by the creature’s powerful jaws."
+          ]
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "He can cast spells as a 6th level illusionist, and can call upon any spell under the 3rd level in the illusion school."
+          ],
+          "type": "spellcasting"
+        }
+      ],
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 16} to hit, reach 10 ft., one target. {@h}18 ({@damage 2d10 + 7}) piercing damage."
+          ]
+        }
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Coyote Spirit, American Indian Avatar|https://angrygolem-games.com/monster-manual/letter-c/coyote-spirit-american-indians-avatar/}",
+          "DESCRIPTION",
+          "Coyote’s avatar takes the form of a large coyote. Despite his lack of hands, Coyote’s incredible dexterity allows him to utilize all of the thiefly abilities appropriate to his level.",
+          "{@link God & Clergy (go to page)|https://angrygolem-games.com/monster-manual/letter-c/coyote-spirit-god-and-clergy-for-dd-5e/}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Crab",
+      "size": "T",
+      "type": {
+        "type": "beast",
+        "tags": [
+          "animal"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        {
+          "ac": 11,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "1d4",
+        "average": 2
+      },
+      "speed": {
+        "walk": 20,
+        "swim": 20
+      },
+      "str": 2,
+      "dex": 11,
+      "con": 10,
+      "int": 1,
+      "wis": 8,
+      "cha": 2,
+      "passive": 9,
+      "cr": "0",
+      "shortName": "Crab",
+      "senses": [
+        "blindsight 30 ft."
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "skill": {
+        "stealth": "+2"
+      },
+      "trait": [
+        {
+          "name": "Amphibious",
+          "entries": [
+            "The crab can breathe air and water."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Amphibious"
+      ],
+      "action": [
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 1} to hit, reach 10 ft., one target. {@h}1 ({@damage 1d1}) bludgeoning damage."
+          ]
+        }
+      ],
+      "miscTags": [
+        "MW",
+        "RCH"
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Crab|https://angrygolem-games.com/monster-manual/letter-c/crab-5e-stats/}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Crawling Claw",
+      "size": "T",
+      "type": "undead",
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "N",
+        "E"
+      ],
+      "ac": [
+        12
+      ],
+      "hp": {
+        "formula": "1d4",
+        "average": 2
+      },
+      "speed": {
+        "walk": 20,
+        "climb": 20
+      },
+      "str": 13,
+      "dex": 14,
+      "con": 11,
+      "int": 5,
+      "wis": 10,
+      "cha": 4,
+      "passive": 10,
+      "cr": "0",
+      "shortName": "Crawling Claw",
+      "senses": [
+        "blindsight 30 ft. (blind beyond this radius)"
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "languages": [
+        "understands Common but can’t speak"
+      ],
+      "languageTags": [
+        "C"
+      ],
+      "trait": [
+        {
+          "name": "Turn Immunity",
+          "entries": [
+            "The claw is immune to effects that turn undead."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Turn Immunity"
+      ],
+      "action": [
+        {
+          "name": "Claw (slashing)",
+          "entries": [
+            "{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) slashing damage."
+          ]
+        },
+        {
+          "name": "Claw (bludgeoning)",
+          "entries": [
+            "{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) bludgeoning damage."
+          ]
+        }
+      ],
+      "damageTags": [
+        "S",
+        "B"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Crawling Claw|https://angrygolem-games.com/monster-manual/letter-c/crawling-claw-5e-stats/}",
+          "CRAWLING’s CLAW (reade the article)",
+          "DESCRIPTION",
+          "The much feared crawling claw is frequently employed as a guardian by those mages and priests who have learned the secret of its creation.",
+          "No single description of a crawling claw is possible as they are not uniform in appearance. Since claws are the animated remains of hands or paws of living creatures, they are apt to be found in a wide variety of shapes and sizes.",
+          "HABITAT / SOCIETY",
+          "Crawling claws are nothing more than the animated hands and paws of once-living creatures. As such, they have no culture or society to speak of. Despite this, crawling claws do have a limited ability to communicate with each other. This takes the form of a basic telepathic link between all the claws of a single “batch”. Whenever one claw finds a victim, all of the others in the area who were made at the same time move in to help it.",
+          "In addition, claws that have been instructed to do so can act in concert with each other to move large objects. The DM should use five pounds per claw as a reasonable limit to the weight that can be moved.",
+          "ECOLOGY",
+          "Crawling claws can be created by any mage or priest who has knowledge of the techniques required to do so. To begin with, the creator must assemble the severed limbs that are to animated. The maximum number of claws that can be created at any one time is equal to the level of the person enchanting them. The hands (or paws) can be either fresh, skeletal, or at any stage of decomposition in between.",
+          "Claws can be controlled in one of two ways: directly or via programming. The manner of a claw’s control must be specified when it is created and cannot be changed thereafter. All of the claws in a particular batch must be controlled in the same manner.",
+          "Programmed claws are given a single, brief instruction that they attempt to carry out to the best of their ability. The maximum length of the programming, in words, is 15 plus the level of the creator. This programming sets the conditions under which the claw attack. A sample command might be: Kill anyone except me who opens this chest.",
+          "Directly controlled claws are manipulated by the thoughts of their creator. The mental effort of controlling claws is quite tiring and cannot be maintained for more than three consecutive rounds without a one-round rest. Further, the range of such control is limited to 10 feet plus 5 feet per level of the creator. A person controlling claws cannot undertake spellcasting or any other activity. Injury to a controller does not break his control unless unconsciousness results. If direct control is broken for some reason, the claws continue to follow the last orders they were given."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Crocodile",
+      "size": "L",
+      "type": {
+        "type": "beast",
+        "tags": [
+          "animal"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        {
+          "ac": 12,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "3d10 + 3",
+        "average": 19
+      },
+      "speed": {
+        "walk": 20,
+        "swim": 30
+      },
+      "str": 15,
+      "dex": 10,
+      "con": 13,
+      "int": 2,
+      "wis": 10,
+      "cha": 5,
+      "passive": 10,
+      "cr": "1/2",
+      "shortName": "Crocodile",
+      "skill": {
+        "stealth": "+2"
+      },
+      "trait": [
+        {
+          "name": "Hold Breath",
+          "entries": [
+            "The crocodile can hold its breath for 15 minutes."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Hold Breath"
+      ],
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d10 + 2}) piercing damage. The target is {@condition grappled} (escape dc 12) Until this grapple ends, the target is {@condition restrained}, and the crocodile can’t bite another target"
+          ]
+        }
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "conditionInflict": [
+        "grappled",
+        "restrained"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Crocodile|https://angrygolem-games.com/monster-manual/letter-c/crocodile-5e-stats/}",
+          "DESCRIPTION",
+          "The crocodile is a large, dangerous predatory reptile native to tropical and subtropical climes. It spends most of its time submerged in swamps, rivers, or other large bodies of water.",
+          "The crocodile is one of the most feared and ugliest predators of the tropics. It has a long, squat body, ranging in size from a scant foot to well over ten feet long. Most mature specimens range from eight to 15 feet long, and some even larger. Many sages argue that crocodiles never stop growing. The crocodile has a long jaw filled with sharp, conical teeth. The powerful maw is superbly adapted for dragging prey beneath the water and dismembering it. Its four short legs are very powerful, and can propel the crocodile rapidly through the water and over the land. Its long tail is also very strong and is sometimes used on land to unbalance its foes.",
+          "The crocodile is covered with a tough horny hide, which blends in very well with the surrounding water. Its eyes and nose are placed so that when the crocodile floats, only they remain above water, enabling the beast to spot and ambush prey. The crocodile is adept at floating through the water and remaining quite still, presenting the illusion that it is nothing more than a floating log.",
+          "HABITAT / SOCIETY",
+          "Crocodiles sometimes congregate in large numbers, but they are not by nature sociable, nor do they cooperate in hunting. They have well-concealed lairs and will often drag their prey to their lairs before eating it. When a tasty morsel comes its way, a group of crocodiles will go into a feeding frenzy, each attempting to get a part of the feast. They hunt almost daily, primarily in the water, rarely on land. Their tastes are broad: fish, men, small mammals, aquatic birds, and even a careless lion has occasionally been known to fall into their grasp. Hungry crocodiles will sometimes upend boats to see what falls out.",
+          "Crocodiles mate once a year, and the female lays a clutch of about 60 eggs, carefully burying them in the sand. Unlike many other reptiles, the female carefully guards her eggs, protecting them from other predators. When the time comes for the eggs to hatch, the mother assists by digging the eggs out of the sand. The newly hatched young are thrown entirely on their own resources to survive. Very few of the young survive to maturity.",
+          "Swamps and rivers are not the only abode of the crocodile. In recent years there have been dreadful rumors that some of these reptiles have made their homes in the sewers of cities in tropical regions, living on waste and carrion.",
+          "ECOLOGY",
+          "The crocodile is a formidable predator and has little competition for food from other water creatures. One of the few monsters that can compete with it is the {@creature dragon turtle|AGGMM}. Even on the riverbanks it has little to fear from rival predators; most would prefer not to tangle with a crocodile. The only predator that the crocodile need fear is man, who hunts it for its tough hide, which can be transformed into a beautiful, gleaming leather. Crocodiles are also hunted to eliminate the danger that they represent to riverside communities."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cronus, Greek Avatar",
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "avatar"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        23
+      ],
+      "hp": {
+        "formula": "20d10 + 80",
+        "average": 190
+      },
+      "speed": {
+        "walk": 100
+      },
+      "str": 21,
+      "dex": 18,
+      "con": 18,
+      "int": 18,
+      "wis": 15,
+      "cha": 14,
+      "passive": 14,
+      "cr": "15",
+      "shortName": "Cronus, Greek Avatar",
+      "languages": [
+        "All"
+      ],
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "save": {
+        "str": "+13",
+        "con": "+10"
+      },
+      "skill": {
+        "acrobatics": "+4",
+        "animal handling": "+4",
+        "arcana": "+4",
+        "athletics": "+4",
+        "deception": "+4",
+        "history": "+4",
+        "insight": "+4",
+        "intimidation": "+4",
+        "investigation": "+4",
+        "medicine": "+4",
+        "nature": "+4",
+        "perception": "+4",
+        "performance": "+4",
+        "persuasion": "+4",
+        "sleight of hand": "+4",
+        "religion": "+4",
+        "stealth": "+4",
+        "survival": "+4"
+      },
+      "trait": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "Cronus makes three attacks with his sickle +1."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Sickle +1",
+          "entries": [
+            "{@atk ms} {@hit 13} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d4 + 8}) slashing damage. Although it is not magic, Cronus’ adamant sickle cuts through any material it touches, effectively lowering his opponents’ AC to a maximum of 15 (unless due strictly to Dexterity). Beings hit by the sickle must roll a {@dc 23} dexterity saving throw or lose whatever appendage it hits (DMs should determine this randomly or by decree based on the situation)."
+          ]
+        }
+      ],
+      "damageTags": [
+        "S"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Cronus, Greek Avatar|https://angrygolem-games.com/monster-manual/letter-c/cronus-greek-avatar/}",
+          "DESCRIPTION",
+          "Cronus’ avatar is an evil looking fighter with a gleam in his otherwise dark eyes. He often passes himself off as a human warrior with no claim to his divine status.",
+          "{@link God & Clergy (go to page)|https://angrygolem-games.com/cronus-god-and-clerics-for-dd-5e/}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cyclops",
+      "size": "H",
+      "type": "giant",
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "C",
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 14,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "12d12 + 60",
+        "average": 138
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 22,
+      "dex": 11,
+      "con": 20,
+      "int": 8,
+      "wis": 6,
+      "cha": 10,
+      "passive": 8,
+      "cr": "6",
+      "shortName": "Cyclops",
+      "languages": [
+        "Giant"
+      ],
+      "languageTags": [
+        "GI"
+      ],
+      "trait": [
+        {
+          "name": "Poor Depth Perception",
+          "entries": [
+            "The cyclops has disadvantage on any attack roll against a target more than 30 feet away."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The cyclops makes two greatclub attacks."
+          ]
+        },
+        {
+          "name": "Greatclub",
+          "entries": [
+            "{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}19 ({@damage 3d8 + 6}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Rock",
+          "entries": [
+            "{@atk rw} {@hit 9} to hit, range 30/120 ft., one target. {@h}19 ({@damage 4d10 + 6}) bludgeoning damage."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH",
+        "RW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Cyclops|https://angrygolem-games.com/monster-manual/letter-c/cyclops/}",
+          "{@link CYCLOPS’ TACTICS (read the article)|https://angrygolem-games.com/dnd-5e-cyclops-tactics-build-challenging-encounters-against-a-cyclops/}",
+          "DESCRIPTION",
+          "The Cyclops were giant; one-eyed monsters; a wild race of lawless creatures who possess neither social manners nor fear of the Gods. Cyclopes means ‘round eye.’ Considered the sons of {@link Uranus|https://angrygolem-games.com/monster-manual/letter-u/uranus-greek-avatar/} and {@link Gaea|https://angrygolem-games.com/monster-manual/letter-g/gaea-greek-avatar/} they were the workmen of the God {@link Hephaestus|https://angrygolem-games.com/monster-manual/letter-h/haephestus-greek-avatar/} whose workshop was in the heart of the volcanic mountain Etna. According to Homer’s Odysseus where he introduced likely the most famous Cyclops, Polyphemus, Cyclopes were the sons of {@link Poseidon|https://angrygolem-games.com/monster-manual/letter-p/poseidon-greek-avatar/}, not Gaea. Homer described the Cyclopes as wild savages, who abstained from agriculture and laws other than every man for himself. They were shepherds who lived in the southwestern part of Sicily, actively ate human beings and lived with their wives and children in caves ruling over them with arbitrary power. The Homeric Cyclopes were not servants of ",
+          "{@link Zeus|https://angrygolem-games.com/monster-manual/letter-z/zeus-greek-avatar/}, and in fact, they mostly disregarded him.",
+          "Polyphemus was a man-eating monster with a bloody and barbaric story. He fell in love with a beautiful nymph called Galatea who rejected him in favour for a man named Acis. Polyphemus enraged by the rejection, threw Acis and killed him on a massive rock. The blood of Acis formed a stream, which still bears his name today. The Cyclops encounters Odysseus in Homer’s tale where he is outwitted and blinded by the hero and turns the wrath of his father, Poseidon on Odysseus. Odysseus arrived on the island of the Cyclops on his way home to Ithica and led his men into a cave full of food unknowing of who the owner was. Polyphemus sealed the cave and the crew within it, eating a few of them. Odysseus managed to trick the Cyclops into getting drunk off of strong wine and told the monster his name was ‘No One.’ Polyphemus fell asleep, and the hero blinded him with a wooden stake, when the other giants came to help, Polyphemus told him ‘No One’ had attacked him, and so they left him. Odysseus and his men bound themselves to the bellies of Polyphemus’s sheep and escaped when the giant let them out to graze. Odysseus could not help but boast about his victory over his defeated adversary and told Polyphemus his name which in turn led to Poseidon punishing him and causing him to deviate from his route home even more.",
+          "{@link from Greek Gods and Goddesses|https://greekgodsandgoddesses.net/myths/cyclopes/}",
+          "Cyclops is employed as material component to empower the following spells:  {@spell Guidance}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cyclopskin",
+      "size": "L",
+      "type": "giant",
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 13,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "6d10 + 24",
+        "average": 57
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 19,
+      "dex": 11,
+      "con": 18,
+      "int": 10,
+      "wis": 8,
+      "cha": 10,
+      "passive": 9,
+      "cr": "3",
+      "shortName": "Cyclopskin",
+      "languages": [
+        "Giant"
+      ],
+      "languageTags": [
+        "GI"
+      ],
+      "trait": [
+        {
+          "name": "Poor Depth Perception",
+          "entries": [
+            "The cyclopskin has disadvantage on any attack roll against a target more than 30 feet away."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The cyclopskin makes two greatclub attacks."
+          ]
+        },
+        {
+          "name": "Greatclub",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Great Javelin",
+          "entries": [
+            "{@atk rw} {@hit 6} to hit, range 30/120 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "miscTags": [
+        "MW",
+        "RW",
+        "THW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Cyclopskin|https://angrygolem-games.com/monster-manual/letter-c/cyclopskin/}",
+          "DESCRIPTION",
+          "A diminutive relative of true giants, cyclopskin are single-eyed giants that live alone or in small bands. The typical cyclopskin weighs around 350 pounds, and stands 7 feet tall. A single large, red eye dominates the center of its forehead.",
+          "Shaggy black or dull, deep blue hair falls in a tangled mass about its head and shoulders, its skin tone varies from ruddy brown to muddy yellow, and its voice is rough and sharp. Cyclopskin commonly dress in ragged animal hides and sandals. They smell of equal parts dirt and dung.",
+          "HABITAT / SOCIETY",
+          "The single-eyed humanoids shy away from organized settlements. If left alone, they tend to leave armed groups alone, though they are not above attacking a much weaker force if they stumble across one. Cyclopskin have no regard for any form of life other than themselves. Captives are either enslaved or eaten. This doesn’t happen very often, since the cyclopskin tend to live in remote rocky places.",
+          "They rarely wander more than 10 miles from their caves. Being poor hunters, most cyclopskin clans keep small herds of goats or sheep. Some clans are nomadic, while others stay put in their caves. Each spring, regional clans meet to exchange goods and slaves and to select mates. On rare occasions a charismatic cyclopskin will arise and bring together several clans to form a wandering tribe.",
+          "The largest known tribe numbered around 80 fighting cyclopskin. Such a band will aggressively raid outlying areas with a boldness uncommon in a single clan. All group decisions are made by the strongest and toughest cyclopskin in the group, usually through intimidation. This in turn leads to brawls and fist fights. There are no rules in such fights, and they can lead to permanent injury or death for the loser.",
+          "A cyclopskin cave is sealed with boulders and there is but one entrance. Inside, if size permits, there will be wooden pens to house both animals and slaves. The pens always have roofs of either wooden bars or the natural cave ceiling. At night, a large boulder or stout wooden gate is placed at the entrance of the cave to protect the cyclopskin from predators.",
+          "There are no interior fire pits, since cyclopskin use fire infrequently, and then only outside their lairs. Any cyclopskin treasure will be kept in a sack in the cave.",
+          "ECOLOGY",
+          "Cyclopskin can survive on almost any animal or plant diet. They enjoy meat of all sorts and prize it above vegetable foods. While they live off the land, they do not live with it. They have absolutely no sanitary practices, and rarely even cook their meals. They take no care to preserve their environment while hunting, and are considered to be one of the easiest creatures of their size to track.",
+          "The life of a cyclopskin is hazardous, and hence they have a short life expectancy. Besides human adventurers, there are many predators, such as tigers, giants, wyverns, and trolls, that are not above attacking a small group of these giants.",
+          "Cyclopskin is employed as material component to empower the following spells: {@spell True Strike}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
     }
-
 	]
 }
