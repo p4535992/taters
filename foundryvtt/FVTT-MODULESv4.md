@@ -1,44 +1,49 @@
 ## [MUST HAVE] MODULES (THE FOLLOWING MODULES ARE USED INA D&D5e System)
 
 - [EXTERNAL][Plutonium (5etools)](https://get.5e.tools/plutonium/module.json)
-- [EXTERNAL][About Time](https://gitlab.com/tposney/about-time ) - https://gitlab.com/tposney/about-time/raw/master/src/module.json
-- [EXTERNAL][FxMaster](https://gitlab.com/mesfoliesludiques/foundryvtt-fxmaster )- https://gitlab.com/mesfoliesludiques/foundryvtt-fxmaster/-/raw/master/module.json
-- [EXTERNAL][TidyUI](https://github.com/sdenec/tidy-ui_game-settings ) - https://raw.githubusercontent.com/sdenec/tidy-ui_game-settings/master/module.json
-- [ENTITY][Compendium Folders](https://github.com/earlSt1/vtt-compendium-folders ) - https://raw.githubusercontent.com/earlSt1/vtt-compendium-folders/master/module.json
-- [ENTITY][Permission Viewer](https://github.com/kakaroto/fvtt-module-permission-viewer ) - https://raw.githubusercontent.com/kakaroto/fvtt-module-permission-viewer/master/module.json
-- [TOKEN][Token Action HUD](https://github.com/espositos/fvtt-tokenactionhud ) - https://raw.githubusercontent.com/espositos/fvtt-tokenactionhud/master/module.json
-- [TABLE][Community Tables](https://github.com/foundry-vtt-community/tables ) - https://raw.githubusercontent.com/foundry-vtt-community/tables/master/module.json
+- [EXTERNAL][About Time](https://gitlab.com/tposney/about-time )
+- [EXTERNAL][FxMaster](https://gitlab.com/mesfoliesludiques/foundryvtt-fxmaster )
+- [EXTERNAL][TidyUI](https://github.com/sdenec/tidy-ui_game-settings )
+- [ENTITY][Compendium Folders](https://github.com/earlSt1/vtt-compendium-folders )
+- [ENTITY][Permission Viewer](https://github.com/kakaroto/fvtt-module-permission-viewer )
+- [TOKEN][Token Action HUD](https://github.com/espositos/fvtt-tokenactionhud )
+- [TABLE][Community Tables](https://github.com/foundry-vtt-community/tables )
 - [EXTERNAL][Theatre](https://github.com/League-of-Foundry-Developers/fvtt-module-theatre )
 - [EXTERNAL][Forien Quest Log by LoFD](https://github.com/League-of-Foundry-Developers/foundryvtt-forien-quest-log)
-- [TOKEN/MAP][Drag Upload](https://github.com/cswendrowski/FoundryVTT-Drag-Upload ) - https://raw.githubusercontent.com/cswendrowski/FoundryVTT-Drag-Upload/master/module.json
-- [TOKEN][Health Estimate](https://gitlab.com/tsuki.no.mai/healthestimate/ ) - https://gitlab.com/tsuki.no.mai/healthestimate/-/raw/master/src/module.json
-- [TEMPLATE][Token Magic FX](https://github.com/Feu-Secret/Tokenmagic/ ) - https://raw.githubusercontent.com/Feu-Secret/Tokenmagic/master/tokenmagic/module.json
-- [ENTITY][Item Collection ](https://gitlab.com/tposney/itemcollection ) - https://gitlab.com/tposney/itemcollection/raw/master/module.json
-- [ENTITY][Item Macro](https://github.com/Kekilla0/Item-Macro ) - https://raw.githubusercontent.com/Kekilla0/Item-Macro/master/module.json
-- [CHAT][Foundry VTT - Narrator Tools](https://github.com/elizeuangelo/fvtt-module-narrator-tools ) - https://raw.githubusercontent.com/elizeuangelo/fvtt-module-narrator-tools/master/module.json
-- [ROLL][Dice Calculator/Dice Tray](https://gitlab.com/asacolips-projects/foundry-mods/foundry-vtt-dice-calculator/ ) - https://gitlab.com/asacolips-projects/foundry-mods/foundry-vtt-dice-calculator/raw/master/module.json
+- [TOKEN/MAP][Drag Upload](https://github.com/cswendrowski/FoundryVTT-Drag-Upload )
+- [TOKEN][Health Estimate](https://gitlab.com/tsuki.no.mai/healthestimate/ )
+- [TEMPLATE][Token Magic FX](https://github.com/Feu-Secret/Tokenmagic/ )
+- [ENTITY][Item Collection ](https://gitlab.com/tposney/itemcollection )
+- [ENTITY][Item Macro](https://github.com/Kekilla0/Item-Macro )
+- [CHAT][Foundry VTT - Narrator Tools](https://github.com/elizeuangelo/fvtt-module-narrator-tools )
+- [ROLL][Dice Calculator/Dice Tray](https://gitlab.com/asacolips-projects/foundry-mods/foundry-vtt-dice-calculator/ )
 - [TOKEN][Drag Ruler](https://github.com/manuelVo/foundryvtt-drag-ruler )
 - [UTILITY][Simple Calendar](https://github.com/vigoren/foundryvtt-simple-calendar )
-- [MAP][Armreach](https://github.com/p4535992/foundryvtt-arms-reach ) - 
-- [WALL][Smart Door](https://github.com/manuelVo/foundryvtt-smart-doors ) - https://raw.githubusercontent.com/manuelVo/foundryvtt-smart-doors/develop/module.json
-- [ENTITY][Magic Items](https://gitlab.com/riccisi/foundryvtt-magic-items ) - https://gitlab.com/riccisi/foundryvtt-magic-items/raw/master/module/module.json
+- [MAP][Armreach](https://github.com/p4535992/foundryvtt-arms-reach ) 
+- [WALL][Smart Door](https://github.com/manuelVo/foundryvtt-smart-doors )
+- [ENTITY][Magic Items](https://gitlab.com/riccisi/foundryvtt-magic-items )
 - [SCENE][foundryvtt stairways](https://gitlab.com/SWW13/foundryvtt-stairways)
-- [CHARACTER SHEET/UTILITY][Variant Encumbrance 5e](https://github.com/VanirDev/VariantEncumbrance )- https://raw.githubusercontent.com/VanirDev/VariantEncumbrance/master/dist/module.json
-- [UTILITY LOOT][DFreds Pocket Change](https://github.com/DFreds/dfreds-pocket-change ) - https://raw.githubusercontent.com/dfreds/dfreds-pocket-change/main/module.json
+- [CHARACTER SHEET/UTILITY][Variant Encumbrance 5e](https://github.com/VanirDev/VariantEncumbrance )
+- [UTILITY LOOT][DFreds Pocket Change](https://github.com/DFreds/dfreds-pocket-change )
 - [TOKEN][Active-Token-Lighting](https://github.com/kandashi/Active-Token-Lighting )
 - [SCENES][Monks Scene Navigation](https://github.com/ironmonk88/monks-scene-navigation )
 - [UTILITY][Autocomplete Inline Properties](https://github.com/ghost-fvtt/FVTT-Autocomplete-Inline-Properties)
-- [UTILITY][Automated Evocations](https://github.com/theripper93/automated-evocations)
-- [EXTERNAL][Calendar/Weather](https://gitlab.com/jstebenne/foundryvtt-calendar-weather ) - https://gitlab.com/jstebenne/foundryvtt-calendar-weather/-/raw/master/module.json
-- [UTILITY][FVVT POINTER](https://github.com/Moerill/fvtt-pointer ) - https://raw.githubusercontent.com/Moerill/fvtt-pointer/master/module.json
+- [UTILITY][Automated Evocations Variant](https://github.com/p4535992/automated-evocations)
+- [EXTERNAL][Calendar/Weather](https://gitlab.com/jstebenne/foundryvtt-calendar-weather )
+- [UTILITY][FVVT POINTER](https://github.com/Moerill/fvtt-pointer )
 - [UTILITY][Monks TokenBar](https://github.com/ironmonk88/monks-tokenbar)
 - [UTILITY][Automated Animations DnD5e](https://github.com/otigon/automated-jb2a-animations )
-- [CHAT][Chat Images](https://github.com/bmarian/chat-images ) - https://raw.githubusercontent.com/bmarian/chat-images/master/src/module.json
-- [UTILITY][Quick Insert](https://gitlab.com/fvtt-modules-lab/quick-insert ) - https://gitlab.com/fvtt-modules-lab/quick-insert/-/jobs/artifacts/master/raw/module.json?job=build-module
+- [CHAT][Chat Images](https://github.com/bmarian/chat-images )
+- [UTILITY][Quick Insert](https://gitlab.com/fvtt-modules-lab/quick-insert )
 - [TOKEN/SCENES][pull-players-to-scene](https://github.com/Mr-Byte/pull-players-to-scene )
-- [CHAT][Chat Portrait](https://github.com/ShoyuVanilla/FoundryVTT-Chat-Portrait/ ) - https://raw.githubusercontent.com/ShoyuVanilla/FoundryVTT-Chat-Portrait/master/module.json
+- [CHAT][Chat Portrait](https://github.com/ShoyuVanilla/FoundryVTT-Chat-Portrait/ )
 
-## [MUST HAVE] CHAARCTER SHEET
+- [TOKEN][TOKEN Z](https://github.com/theripper93/token-z)
+- [UTILITY][Sidebar Macro](https://github.com/arcanistzed/sidebar-macros)
+- [JOURNAL/UTILITY][Share Media](https://github.com/DarKDinDoN/share-media)
+- [MACRO/COMBAT][Trigger Happy](https://github.com/League-of-Foundry-Developers/fvtt-module-trigger-happy )
+
+## [MUST HAVE] CHARACTER SHEET
 
 - [CHARACTER SHEET][Tidy Sheet 5e](https://github.com/sdenec/tidy5e-sheet ) - https://raw.githubusercontent.com/sdenec/tidy5e-sheet/master/module.json
 - [CHARACTER SHEET][Loot Sheet NPC 5e](https://github.com/jopeek/fvtt-loot-sheet-npc-5e ) - https://raw.githubusercontent.com/jopeek/fvtt-loot-sheet-npc-5e/master/module.json
@@ -46,46 +51,39 @@
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
-- [COMBAT][Midi Qol](https://gitlab.com/tposney/midi-qol ) - https://gitlab.com/tposney/midi-qol/raw/master/src/module.json
-- [COMBAT][Combat Enhancements](https://gitlab.com/asacolips-projects/foundry-mods/combat-enhancements/ ) - https://gitlab.com/asacolips-projects/foundry-mods/combat-enhancements/raw/master/module.json
+- [COMBAT][Midi Qol](https://gitlab.com/tposney/midi-qol )
 - [COMBAT][DnD5e Helpers](https://github.com/trioderegion/dnd5e-helpers )
-- [COMBAT/ACTIVE EFFECTS][Time Up](https://gitlab.com/tposney/times-up ) - 
-- [COMBAT][Better Rolls for 5e](https://github.com/RedReign/FoundryVTT-BetterRolls5e ) - https://raw.githubusercontent.com/RedReign/FoundryVTT-BetterRolls5e/master/betterrolls5e/module.json 
-- [COMBAT][Active Effects to Chat](https://github.com/BadIdeasBureau/ae-to-chat )
-- [COMBAT][Wild Magic Surge 5e](https://github.com/johnnolan/wild-magic-surge-5e) - https://raw.githubusercontent.com/johnnolan/wild-magic-surge-5e/main/scripts/module.js
+- [COMBAT/ACTIVE EFFECTS][Time Up](https://gitlab.com/tposney/times-up )
+- [COMBAT][Better Rolls for 5e](https://github.com/RedReign/FoundryVTT-BetterRolls5e )
+- [COMBAT][Wild Magic Surge 5e](https://github.com/johnnolan/wild-magic-surge-5e)
 - [COMBAT/ROLL][Let me roll that for you](https://github.com/League-of-Foundry-Developers/fvtt-module-lmrtfy )
-- [COMBAT][Active Auras](https://github.com/kandashi/Active-Auras ) - https://raw.githubusercontent.com/kandashi/Active-Auras/main/module.json
+- [COMBAT][Active Auras](https://github.com/kandashi/Active-Auras )
 - [COMBAT][Combat Booster](https://github.com/theripper93/Combat-Booster)
 - [COMBAT][Arbron's Improved HP Bar](https://github.com/arbron/fvtt-hp-bar)
-- [COMBAT][Combat Utility Belt](https://github.com/death-save/combat-utility-belt ) - https://raw.githubusercontent.com/death-save/combat-utility-belt/master/module.json
+- [COMBAT][Combat Utility Belt](https://github.com/death-save/combat-utility-belt )
 
 ## [NOT ESSENTIAL BUT VERY GOOD] 0.8.6
 
 - [TOKEN/UTILITY][Custom-Token-Animations](https://github.com/kandashi/Custom-Token-Animations )
-- [UTILITY][Dragon Flagon Architect](https://github.com/flamewave000/dragonflagon-arch)
-- [COMBAT][Turn Announcer](https://gitlab.com/koboldworks/agnostic/turn-announcer)
-- [JOURNAL][Library PDFoundry](https://github.com/Djphoenix719/PDFoundry ) - https://raw.githubusercontent.com/Djphoenix719/PDFoundry/master/module.json
+- [JOURNAL][Library PDFoundry](https://github.com/Djphoenix719/PDFoundry )
 - [UTILITY][Boss Bar](https://github.com/theripper93/Boss-Bar)
 - [UTILITY][Forien Copy](https://github.com/League-of-Foundry-Developers/foundryvtt-forien-copy-environment )
-- [UTILITY][Smalltime](https://github.com/unsoluble/smalltime) - https://raw.githubusercontent.com/unsoluble/smalltime/main/module.json
-- [LIGHT][Community Lighting for FVTT](https://github.com/BlitzKraig/fvtt-CommunityLighting ) - https://raw.githubusercontent.com/BlitzKraig/fvtt-CommunityLighting/master/module.json
-- [EXTERNAL][Adventure Import Export](https://github.com/cstadther/adventure-import-export ) - https://raw.githubusercontent.com/cstadther/adventure-import-export/master/module.json
-- [CHARACTHER SHEET/UTILITY][Downtime Tracking 5e Training](https://github.com/crash1115/5e-training ) - https://raw.githubusercontent.com/crash1115/5e-training/master/module.json
-- [MACRO/COMBAT][Trigger Happy](https://github.com/League-of-Foundry-Developers/fvtt-module-trigger-happy ) - https://raw.githubusercontent.com/kakaroto/fvtt-module-trigger-happy/master/module.json
-- [MAP][Multilevel Tokens module for Foundry VTT](https://github.com/grandseiken/foundryvtt-multilevel-tokens ) - https://raw.githubusercontent.com/grandseiken/foundryvtt-multilevel-tokens/master/module.json
-- [MAP][Parallaxia](https://gitlab.com/reichler/parallaxia ) - https://gitlab.com/reichler/parallaxia/raw/master/parallaxia/module.json
-- [TOKEN][Token Attacher](https://github.com/KayelGee/token-attacher ) - https://raw.githubusercontent.com/KayelGee/token-attacher/master/module.json
-- [UTILITY/MODULES][DF Settings Clarity](https://github.com/flamewave000/dragonflagon-fvtt/tree/master/df-settings-clarity ) - https://raw.githubusercontent.com/flamewave000/dragonflagon-fvtt/master/df-settings-clarity/module.json
+- [UTILITY][Smalltime](https://github.com/unsoluble/smalltime)
+- [LIGHT][Community Lighting for FVTT](https://github.com/BlitzKraig/fvtt-CommunityLighting )
+- [EXTERNAL][Adventure Import Export](https://github.com/cstadther/adventure-import-export )
+- [CHARACTHER SHEET/UTILITY][Downtime Tracking 5e Training](https://github.com/crash1115/5e-training )
+- [MAP][Multilevel Tokens module for Foundry VTT](https://github.com/grandseiken/foundryvtt-multilevel-tokens )
+- [MAP][Parallaxia](https://gitlab.com/reichler/parallaxia )
+- [TOKEN][Token Attacher](https://github.com/KayelGee/token-attacher )
+- [UTILITY/MODULES][DF Settings Clarity](https://github.com/flamewave000/dragonflagon-fvtt/tree/master/df-settings-clarity )
 - [CHAT][DragonFlagon Chat Enhancements](https://github.com/flamewave000/dragonflagon-fvtt/tree/master/df-chat-enhance )
-- [TABLE][Better Rolltables](https://github.com/ultrakorne/better-rolltables ) - https://raw.githubusercontent.com/ultrakorne/better-rolltables/master/module.json
+- [TABLE][Better Rolltables](https://github.com/ultrakorne/better-rolltables )
 - [UTILITY][Item Delete Check](https://gitlab.com/tposney/item-delete-check/tree/master )
-- [COMBAT][Perfect Vision](https://github.com/dev7355608/perfect-vision ) -  https://raw.githubusercontent.com/dev7355608/perfect-vision/main/module.json
+- [COMBAT][Perfect Vision](https://github.com/dev7355608/perfect-vision )
 - [TOKEN][About Face](https://github.com/mclemente/about-face)
-- [ENTITY][Not Enough NPCs: A 5e NPC Generator](https://github.com/ardittristan/VTTNPCGen ) - https://raw.githubusercontent.com/ardittristan/VTTNPCGen/master/module.json
-- [JOURNAL/CHAT][Polyglot](https://github.com/League-of-Foundry-Developers/fvtt-module-polyglot ) - https://raw.githubusercontent.com/League-of-Foundry-Developers/fvtt-module-polyglot/master/module.json
-- [TOKEN][TOKEN Z](https://github.com/theripper93/token-z)
-- [UTILITY][Sidebar Macro](https://github.com/arcanistzed/sidebar-macros)
-- [JOURNAL/UTILITY][Share Media](https://github.com/DarKDinDoN/share-media)
+- [ENTITY][Not Enough NPCs: A 5e NPC Generator](https://github.com/ardittristan/VTTNPCGen )
+- [JOURNAL/CHAT][Polyglot](https://github.com/League-of-Foundry-Developers/fvtt-module-polyglot )
+
 
 ## MODULES LANGUAGE ITA
 
@@ -99,22 +97,11 @@ NOMI ECC. E SONO CAUSA DI STUPIDI PROBLEMI NON RISOLVIBILI
 
 # DA QUI IN POI SONO TUTTE COSE AGGIUNTIVE
 
-## TO Check
-
-
 - [UTILITY][Environment Interaction](https://github.com/jessev14/environment-interaction)
 - [COMBAT][SIFToolkit](https://github.com/bitkiller0/SIFToolkit)
-
-
-## [MUST HAVE] [WALL] 0.8.6
-
-- [WALL/COMBAT][Template Wall Collision](https://github.com/EndlesNights/template-wall-collision) - https://raw.githubusercontent.com/EndlesNights/template-wall-collision/master/module.json
-- [WALL][Merge Wall](https://gitlab.com/tposney/mergewalls ) - https://gitlab.com/tposney/mergewalls/raw/master/module080.json
+- [UTILITY][Dragon Flagon Architect](https://github.com/flamewave000/dragonflagon-arch)
 - [WALL][Wall Height](https://github.com/schultzcole/FVTT-Wall-Height ) - https://raw.githubusercontent.com/schultzcole/FVTT-Wall-Height/master/module.json
-- [WALL][Wall Cutter](https://github.com/HadaIonut/WallCutter ) - https://raw.githubusercontent.com/HadaIonut/WallCutter/master/src/module.json
-- [WALL][Multiple Wall Points Mover](https://github.com/Reaver01/mwpm ) - https://raw.githubusercontent.com/Reaver01/mwpm/master/module.json
-- [WALL][Show-Walls-Everywhere](https://github.com/theripper93/Show-Walls-Everywhere) - https://raw.githubusercontent.com/theripper93/Show-Walls-Everywhere/main/module.json
-
+- [WALL][Monks Wall Enchancement](https://github.com/ironmonk88/monks-wall-enhancement)
 ## [MUST HAVE] MODULES COMPENDIUM
 
 - [COMPENDIUM][Super Homebrew Pack](https://github.com/SuperNar3k/foundry ) - https://raw.githubusercontent.com/SuperNar3k/foundry/master/SupersHomebrewPack/module.json 
@@ -127,18 +114,18 @@ NOMI ECC. E SONO CAUSA DI STUPIDI PROBLEMI NON RISOLVIBILI
 - [DEPRECATED USE INSTEAD https://github.com/p4535992/fvtt-compendiums-mix-dnd5e][COMPENDIUM][Copper Dragon's Hoard](https://github.com/copperdragongames/copperdragonhoard)
 - [DEPRECATED USE INSTEAD https://github.com/p4535992/fvtt-compendiums-mix-dnd5e][COMPENDIUM][FoundryVTT-FantasyPlants](https://github.com/KyleBishop/FoundryVTT-FantasyPlants )
 - [DEPRECATED USE INSTEAD https://github.com/p4535992/fvtt-compendiums-mix-dnd5e][COMPENDIUM][Weather Effects 5e](https://github.com/orangetruth/weather-effects-5e )
-- [DEPRECATED USE INSTEAD https://github.com/p4535992/fvtt-compendiums-mix-dnd5e][COMPENDIUM][SRD heros et dragons](https://gitlab.com/lemaire.erw/srd-heros-et-dragons ) - https://gitlab.com/lemaire.erw/srd-heros-et-dragons/raw/master/module.json
-- [DEPRECATED USE INSTEAD https://github.com/p4535992/fvtt-compendiums-mix-dnd5e][COMPENDIUM][um5-ultramodern-ogl](https://github.com/MrBrentRogers/UM5-Ultramodern5-OGL ) - https://raw.githubusercontent.com/MrBrentRogers/UM5-Ultramodern5-OGL/master/module.json
+- [DEPRECATED USE INSTEAD https://github.com/p4535992/fvtt-compendiums-mix-dnd5e][COMPENDIUM][SRD heros et dragons](https://gitlab.com/lemaire.erw/srd-heros-et-dragons )
+- [DEPRECATED USE INSTEAD https://github.com/p4535992/fvtt-compendiums-mix-dnd5e][COMPENDIUM][um5-ultramodern-ogl](https://github.com/MrBrentRogers/UM5-Ultramodern5-OGL )
 - [DEPRECATED USE INSTEAD https://github.com/p4535992/fvtt-compendiums-mix-dnd5e][COMPENDIUM][fvtt-me5e](https://github.com/sparkcity/fvtt-me5e )
 - [DEPRECATED USE INSTEAD https://github.com/p4535992/fvtt-compendiums-mix-dnd5e][COMPENDIUM][foundryvtt-lingering-injuries](https://gitlab.com/p4535992/foundryvtt-lingering-injuries/-/raw/master/module.json )
 - [DEPRECATED USE INSTEAD https://github.com/p4535992/fvtt-compendiums-mix-dnd5e][COMPENDIUM][Kobold Press OGL](http://kpogl.wdfiles.com/local--files/home:home/module.json)
-- [DEPRECATED USE INSTEAD MIDI SRD][COMPENDIUM][Dynamic-Effects-SRD](https://github.com/kandashi/Dynamic-Effects-SRD ) - https://raw.githubusercontent.com/kandashi/Dynamic-Effects-SRD/master/module.json
+- [DEPRECATED USE INSTEAD MIDI SRD][COMPENDIUM][Dynamic-Effects-SRD](https://github.com/kandashi/Dynamic-Effects-SRD )
 
-- [ANIMATED TEMPLATE][Animated Spells](https://github.com/jackkerouac/animated-spell-effects ) - https://raw.githubusercontent.com/jackkerouac/animated-spell-effects/master/module.json
-- [ANIMATED TEMPLATE][Animated Spell Effects: Cartoon](https://github.com/jackkerouac/animated-spell-effects-cartoon ) - 
+- [ANIMATED TEMPLATE][Animated Spells](https://github.com/jackkerouac/animated-spell-effects )
+- [ANIMATED TEMPLATE][Animated Spell Effects: Cartoon](https://github.com/jackkerouac/animated-spell-effects-cartoon )
 - [ANIMATED TEMPLATE][Jinker](https://www.patreon.com/jinker )
 - [ANIMATED TEMPLATE][Jaaamod]https://foundryvtt.com/packages/jaamod/
-- [ANIMATED TEMPLATE][JB2A - Jules&Ben's Animated Assets](https://github.com/Jules-Bens-Aa/JB2A_DnD5e ) - https://raw.githubusercontent.com/Jules-Bens-Aa/JB2A_DnD5e/main/module.json
+- [ANIMATED TEMPLATE][JB2A - Jules&Ben's Animated Assets](https://github.com/Jules-Bens-Aa/JB2A_DnD5e )
 
 ## [MUST HAVE] MODULES MAPS
 

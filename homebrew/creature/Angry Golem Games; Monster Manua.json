@@ -15551,6 +15551,1374 @@
           }
         ]
       }
+    },
+    {
+      "name": "Clay Golem",
+      "size": "L",
+      "type": "construct",
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        {
+          "ac": 14,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "14d10 + 56",
+        "average": 133
+      },
+      "speed": {
+        "walk": 20
+      },
+      "str": 20,
+      "dex": 9,
+      "con": 18,
+      "int": 3,
+      "wis": 8,
+      "cha": 1,
+      "passive": 9,
+      "cr": "9",
+      "shortName": "Clay Golem",
+      "languages": [
+        "Understands The Languages of its Creator But Can't Speak"
+      ],
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "immune": [
+        {
+          "immune": [
+            "acid",
+            "poison",
+            "psychic"
+          ]
+        },
+        {
+          "immune": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks that aren't adamantine"
+        }
+      ],
+      "conditionImmune": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "paralyzed",
+        "petrified",
+        "poisoned"
+      ],
+      "trait": [
+        {
+          "name": "Acid Absorption",
+          "entries": [
+            "Whenever the golem is subjected to acid damage, it takes no damage and instead regains a number of hit points equal to the acid damage dealt."
+          ]
+        },
+        {
+          "name": "Berserk",
+          "entries": [
+            "Whenever the golem starts its turn with 60 hit points or fewer, roll a {@dice d6}. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object, with preference for an object smaller than itself. Once the golem goes berserk, it continues to do so until it is destroyed or regains all its hit points."
+          ]
+        },
+        {
+          "name": "Immutable Form",
+          "entries": [
+            "The golem is immune to any spell or effect that would alter its form."
+          ]
+        },
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The golem has advantage on saving throws against spells and other magical effects."
+          ]
+        },
+        {
+          "name": "Magic Weapons",
+          "entries": [
+            "The golem's weapon attacks are magical."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Damage Absorption",
+        "Immutable Form",
+        "Magic Resistance",
+        "Magic Weapons"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The golem makes two slam attacks."
+          ]
+        },
+        {
+          "name": "Slam",
+          "entries": [
+            "{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d10 + 5}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 15} Constitution saving throw or have its hit point maximum reduced by an amount equal to the damage taken. The target dies if this attack reduces its hit point maximum to 0. The reduction lasts until removed by the greater restoration spell or other magic"
+          ]
+        },
+        {
+          "name": "Haste {@recharge 5}",
+          "entries": [
+            "Until the end of its next turn, the golem magically gains a +2 bonus to its AC, has advantage on Dexterity saving throws, and can use its slam attack as a bonus action."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Clay Golem|https://angrygolem-games.com/monster-manual/letter-c/clay-golem-5e-stats/}",
+          "DESCRIPTION",
+          "The clay golem is a humanoid body made from clay, and stands about 8 feet tall. It weighs around 600 pounds. The features are grossly distorted from the human norm. The chest is overly large, with arms attached by thick knots of muscle at the shoulder. Its arms hang down to its knees, and end in short stubby fingers. It has no neck, and a large head with broad flat features. Its legs are short and bowed, with wide flat feet. A clay golem wears no clothing except for a metal or stiff leather garment around its hips. It smells faintly of clay. The golem can not speak, or make any noise. It walks and moves with a slow and clumsy gait, almost as if it were not in control over its actions.",
+          "COMBAT",
+          "Clay golems conform to the strategies listed above for the flesh golem except as noted here. A clay golem has a strength of 20 for the purposes of lifting, throwing or smashing objects.",
+          "1) A move earth spell will drive the golem back 120 feet and inflict 3d12 points of damage upon it.",
+          "2) A disintegrate spell merely slows the golem for 1d6 rounds and causes 1d12 points of damage.",
+          "3) An earthquake spell cast directly at a clay golem will stop it from moving that turn and inflict 5d10 points of damage. ",
+          "Damage done by the golem can only be cured by a heal spell from a cleric of 17th level or greater.",
+          "The elemental spirit in a lesser golem is not bound strongly, resulting in a 1% cumulative chance per round of combat, calculated independently for each fight, that it will break free of its master. If a clay golem does manage to break control, it becomes a berserker, attacking everything in sight until it is destroyed. Its first action is to haste itself, if it can. Unlike the flesh golem, there is no chance to regain control of a rampaging clay golem."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cloaker",
+      "size": "L",
+      "type": "aberration",
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "C",
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 14,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "12d10 + 12",
+        "average": 78
+      },
+      "speed": {
+        "walk": 10,
+        "fly": 40,
+        "canHover": false
+      },
+      "str": 17,
+      "dex": 15,
+      "con": 12,
+      "int": 13,
+      "wis": 12,
+      "cha": 14,
+      "passive": 11,
+      "cr": "8",
+      "shortName": "Cloaker",
+      "languages": [
+        "Deep Speech",
+        "Undercommon"
+      ],
+      "languageTags": [
+        "DS",
+        "U"
+      ],
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "skill": {
+        "stealth": "+5"
+      },
+      "trait": [
+        {
+          "name": "Damage Transfer",
+          "entries": [
+            "While attached to a creature, the cloaker takes only half the damage dealt to it (rounded down). and that creature takes the other half."
+          ]
+        },
+        {
+          "name": "False Appearance",
+          "entries": [
+            "While the cloaker remains motionless without its underside exposed, it is indistinguishable from a dark leather cloak."
+          ]
+        },
+        {
+          "name": "Light Sensitivity",
+          "entries": [
+            "While in bright light, the cloaker has disadvantage on attack rolls and Wisdom (Perception) checks that rely on sight."
+          ]
+        }
+      ],
+      "traitTags": [
+        "False Appearance",
+        "Light Sensitivity"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The cloaker makes two attacks: one with its bite and one with its tail."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) piercing damage. If the target is large or smaller, the cloaker attaches to it. If the cloaker has advantage against the target, the cloaker attaches to the target's head, and the target is {@condition blinded} and unable to breathe while the cloaker is attached. While attached, the cloaker can make this attack only against the target and has advantage on the attack roll. The cloaker can detach itself by spending 5 feet of its movement. A creature, including the target, can take its action to detach the cloaker by succeeding on a {@dc 16} Strength check."
+          ]
+        },
+        {
+          "name": "Tail",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage."
+          ]
+        },
+        {
+          "name": "Moan",
+          "entries": [
+            "Each creature within 60 feet of the cloaker that can hear its moan and that isn't an aberration must succeed on a {@dc 13} Wisdom saving throw or become {@condition frightened} until the end of the cloaker's next turn. If a creature's saving throw is successful, the creature is immune to the cloaker's moan for the next 24 hours."
+          ]
+        },
+        {
+          "name": "Phantasms (Recharges after a Short or Long Rest)",
+          "entries": [
+            "The cloaker magically creates three illusory duplicates of itself if it isn't in bright light. The duplicates move with it and mimic its actions, shifting position so as to make it impossible to track which cloaker is the real one. If the cloaker is ever in an area of bright light, the duplicates disappear. Whenever any creature targets the cloaker with an attack or a harmful spell while a duplicate remains, that creature rolls randomly to determine whether it targets the cloaker or one of the duplicates. A creature is unaffected by this magical effect if it can't see or if it relies on senses other than sight. A duplicate has the cloaker's AC and uses its saving throws. If an attack hits a duplicate, or if a duplicate fails a saving throw against an effect that deals damage, the duplicate disappears."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P",
+        "S"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH",
+        "AOE"
+      ],
+      "conditionInflict": [
+        "blinded",
+        "frightened"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Cloaker|https://angrygolem-games.com/monster-manual/letter-c/cloaker-5e-stats/}",
+          "CLOAKER's TACTICS (read the article)",
+          "DESCRIPTION",
+          "Cloakers are fiendish horrors, related to trappers, that dwell in dark places far beneath the surface of the earth. They generally seek to kill those who enter their lairs, unless they can think up some other, more amusing way to punish interlopers.",
+          "When a cloaker is first seen, it is almost impossible to distinguish this monster from a common black cloak. The monster's back has two rows of black eye spots running down it that look much like buttons, and the two ivory-colored claws on its upper edge can easily be mistaken for bone clasps.",
+          "When it unfurls itself and moves to attack, however, its true nature becomes all too obvious. At this point, its white underside is clear and the monster's face is fully visible. This face, with the glow of its two piercing, red eyes and the needle-like fangs that line its mouth, is a truly horrible sight. At this point, the monster also uncurls the whip-like tail at its trailing edge and begins to swish it back and forth in anticipation.",
+          "HABITAT / SOCIETY",
+          "The thought processes of cloakers are utterly alien to most other life forms. As such, they can only be communicated with by mages who have devoted long hours to training their minds in the arcane discipline necessary to understand these creatures.",
+          "ECOLOGY",
+          "It is believed that cloakers are asexual, although no definitive proof of this has ever been found."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cloud Giant",
+      "size": "H",
+      "type": "giant",
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "NX",
+        "NY",
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 14,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "16d12 + 96",
+        "average": 200
+      },
+      "speed": {
+        "walk": 40
+      },
+      "str": 27,
+      "dex": 10,
+      "con": 22,
+      "int": 12,
+      "wis": 16,
+      "cha": 16,
+      "passive": 17,
+      "cr": "9",
+      "shortName": "Cloud Giant",
+      "languages": [
+        "Common",
+        "Giant"
+      ],
+      "languageTags": [
+        "C",
+        "GI"
+      ],
+      "save": {
+        "con": "+10",
+        "wis": "+7",
+        "cha": "+7"
+      },
+      "skill": {
+        "insight": "+7",
+        "perception": "+7"
+      },
+      "trait": [
+        {
+          "name": "Keen Smell",
+          "entries": [
+            "The giant has advantage on Wisdom (Perception) checks that rely on smell."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Keen Senses"
+      ],
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasting",
+          "headerEntries": [
+            "The giant's innate spellcasting ability is Charisma. It can innately cast the following spells, requiring no material components:"
+          ],
+          "will": [
+            "{@spell detect magic}",
+            "{@spell fog cloud}",
+            "{@spell light}"
+          ],
+          "daily": {
+            "3e": [
+              "{@spell feather fall}",
+              "{@spell fly}",
+              "{@spell misty step}",
+              "{@spell telekinesis}"
+            ],
+            "1e": [
+              "{@spell control weather}",
+              "{@spell gaseous form}"
+            ]
+          },
+          "ability": "cha",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "I"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The giant makes two morningstar attacks."
+          ]
+        },
+        {
+          "name": "Morningstar",
+          "entries": [
+            "{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}21 ({@damage 3d8 + 8}) piercing damage."
+          ]
+        },
+        {
+          "name": "Rock",
+          "entries": [
+            "{@atk rw} {@hit 12} to hit, range 60/240 ft., one target. {@h}30 ({@damage 4d10 + 8 }) bludgeoning damage."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P",
+        "B"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH",
+        "RW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Cloud Giant|https://angrygolem-games.com/monster-manual/letter-c/cloud-giant-5e-stats/}",
+          "{@link CLOUD GIANT's TACTICS (read the article)|https://angrygolem-games.com/dnd-5e-cloud-giant-tactics-build-challenging-encounters-against-a-cloud-giant/}",
+          "DESCRIPTION",
+          "Cloud giants consider themselves above all other giants, save storm giants, whom they consider equals. They are creative, appreciate fine things, and are master strategists in battle.",
+          "Cloud giants have muscular human builds and handsome, well-defined features. The typical cloud giant is 24 feet tall and weighs 11,500 pounds. Female cloud giants can be 1 to 2 feet shorter and 1,000 to 2,000 pounds lighter. Cloud giants' skin ranges in color from a milky-white tinged with blue to a light sky blue. Their hair is silvery white or brass and their eyes are an iridescent blue.",
+          "Cloud giants can live to be 400 years old.",
+          "A cloud giant's natural Armor Class is 14. Although they will wear no armor, these giants prize magical protection devices, and one in 20 will have such a device. Cloud giants dress in clothing made of the finest materials available and wear jewelry. Many of the giants consider their appearance an indication of their station; the more jewelry and the better the clothes, the more important the giant. Cloud giants also appreciate music, and the majority of giants are able to play one or more instruments (their favorite is the harp). Unlike most other giant races, cloud giants leave their treasure in their lairs, carrying with them only food, throwing rocks, 10-100 (10d10) coins, and a musical instrument.",
+          "Cloud giants speak their own tongue and the language of all other giants. In addition, 60% of all cloud giants speak common.",
+          "HABITAT / SOCIETY",
+          "Cloud giants live in small clans of no more than six giants. However, these clans know the location of 1d8 other clans and will band together with some of these clans for celebrations, battles, or to trade. These joined clans will recognize one among them to be their leader — this is usually an older cloud giant who has magical abilities. One in 10 cloud giants will have spells equivalent to a 4th level wizard, and one in 20 cloud giants will be the equivalent of a 4th level cleric.",
+          "If encountered in a lair, half will be immature giants. To determine a giant's maturity, roll 1d4. A roll of 4 indicates an infant with no combat ability and hit points of ogre. Rolls of 1-3 indicate older progeny with hit dice, damage, and “to hit” rolls equal to that of a fire giant.",
+          "The majority of cloud giants live on cloud-covered mountain peaks in temperate and sub-tropical areas. These giants make their lairs in crude castles. Only 10% of good cloud giants live in castles on enchanted clouds. All giants dwelling there are able to levitate their own weight plus 2,000 pounds three times a day, create a fog cloud three times a day, and create a wall of fog once a day. These abilities are performed as a 6th level wizard.",
+          "There is a 60% chance a cloud giant mountain lair will be guarded by:",
+          "{@dice 1d4} {@creature mountain lion|AGGMM}s",
+          "{@dice 1d4+1} {@creature owlbear|AGGMM}s",
+          "{@dice 1d4+1} {@creature griffon|AGGMM}s ({@dice 1d2}  {@creature wyvern|AGGMM}s for evil cloud giants). ",
+          "In addition, there is a 50% chance the lairs of evil cloud giants will contain 1d20 human and demi-human slaves.",
+          "There is an 80% chance that a cloud island lair will be guarded by:",
+          "{@dice 1d4+1} {@creature griffon|AGGMM}s",
+          "{@dice 2d4} {@creature hippogriff|AGGMM}s",
+          "{@dice 1d4+1} {@creature giant eagle|AGGMM}s.",
+          "Cloud lairs are fantastic places with giant-sized gardens of fruit trees. According to legend, some giants mine their cloud islands for small chunks of the purest silver.",
+          "ECOLOGY",
+          "Cloud giants prefer food that is carefully prepared with spices and sauces, and they relish fine, aged wines.",
+          "Good cloud giants trade with human and demi-human communities for food, wine, jewelry, and cloth. Some cloud giant clans will establish good relations with such communities, and will come to the communities' aid if they are endangered. Evil cloud giants raid human and demi-human communities to get what they want."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cockatrice",
+      "size": "S",
+      "type": "monstrosity",
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        11
+      ],
+      "hp": {
+        "formula": "6d6 + 6",
+        "average": 27
+      },
+      "speed": {
+        "walk": 20,
+        "fly": 40,
+        "canHover": false
+      },
+      "str": 6,
+      "dex": 12,
+      "con": 12,
+      "int": 2,
+      "wis": 13,
+      "cha": 5,
+      "passive": 11,
+      "cr": "1",
+      "shortName": "Cockatrice",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage, and the target must succeed on a {@dc 11} Constitution saving throw against being magically {@condition petrified}. On a failed save, the creature begins to turn to stone and is {@condition restrained}. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is {@condition petrified} for 24 hours."
+          ]
+        }
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "conditionInflict": [
+        "petrified",
+        "restrained"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Cockatrice|https://angrygolem-games.com/monster-manual/letter-c/cockatrice/}",
+          "{@link COCKATRICE's TACTICS (read the article)|https://angrygolem-games.com/monster-manual/letter-c/cockatrice/}",
+          "DESCRIPTION",
+          "The cockatrice is an eerie, repulsive hybrid of lizard, cock, and bat, It is infamous for its ability to turn flesh to stone. The cockatrice is about the size of a large goose or turkey, and has the head and body of a cock, with two bat-like wings and the long tail of a lizard tipped with a few feathers.",
+          "Its feathers are golden brown, its beak yellow, its tail green, and its wings gray. The cockatrice's wattles, comb, and eyes are bright red. Females, which are much rarer than males, differ only in that they have no wattles or comb.",
+          "HABITAT / SOCIETY",
+          "The cockatrice is immune to the petrification powers of others of its kind.",
+          "The diet of the cockatrice consists of insects, small lizards and the like. When it hunts these animals, the creature does not employ its power to petrify living things. It is distinguished from other avians by its unusual habits and nasty temperament.",
+          "Since females are rare, they an the dominant sex. and will often have more than one mate. In fact, males will often fight or strut for the privilege of joining a female's harem. These mated groups usually build their nests in caves. Nest sites are permanent, and the cockahice constantly seeks to decorate its nesting site by lining it with shining objects like coins and gems.",
+          "Females lay 1 or 2 brownish red, rust speckled eggs per month. There is only a 25% chance that any given egg will hatch. Those that are fertile will hatch in 11-19 days. The young reach maturity and full power within 6 months, Once they achieve adulthood, the hatchlings are driven away from the nesting site by their parents. Larger groups of cockatrices encountered will frequently be young driven from the nest who have temporarily united for survival.",
+          "PYROLISK",
+          "Frequently mistaken for its less malignant relative, the pyrolisk is virtually identical to the cockatrice except for the single red feather in its tail and the reddish cast of its wings. Whereas the cockatrice is motivated by instinct alone, the pyrolisk revels in",
+          "spreading mayhem. Any victims who fail a DC 11 Dexterity saving throw when meeting its gaze will instantly burst into flames, dying in agony, taking 6d12 fire damage.",
+          "If the save is made, they are still burnt for 3d12 points of fire damage. Any creature innately or magically immune to fire will not be affected by its gaze, and anyone who makes their saving throw is thereafter immune to the gaze of that particular pyrolisk. The creature can cause any fire source within 30 yards to explode in fireworks once per round.",
+          "The pyrolisk is itself immune to all fire-based spells and attacks. The pyrolisk‘s mortal enemy is the phoenix, although any creature which the monster encounters is likely to be attacked."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cockatrice (Pyrolisk)",
+      "size": "S",
+      "type": "monstrosity",
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        11
+      ],
+      "hp": {
+        "formula": "6d6 + 6",
+        "average": 27
+      },
+      "speed": {
+        "walk": 20,
+        "fly": 40,
+        "canHover": false
+      },
+      "str": 6,
+      "dex": 12,
+      "con": 12,
+      "int": 2,
+      "wis": 13,
+      "cha": 5,
+      "passive": 11,
+      "cr": "1/2",
+      "shortName": "Cockatrice (Pyrolisk)",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage, and the target must succeed on a {@dc 11} Constitution saving throw against being magically {@condition petrified}. On a failed save, the creature begins to turn to stone and is {@condition restrained}. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is {@condition petrified} for 24 hours."
+          ]
+        }
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "conditionInflict": [
+        "petrified",
+        "restrained"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Cockatrice|https://angrygolem-games.com/monster-manual/letter-c/cockatrice/}",
+          "{@link COCKATRICE's TACTICS (read the article)|https://angrygolem-games.com/monster-manual/letter-c/cockatrice/}",
+          "DESCRIPTION",
+          "The cockatrice is an eerie, repulsive hybrid of lizard, cock, and bat, It is infamous for its ability to turn flesh to stone. The cockatrice is about the size of a large goose or turkey, and has the head and body of a cock, with two bat-like wings and the long tail of a lizard tipped with a few feathers.",
+          "Its feathers are golden brown, its beak yellow, its tail green, and its wings gray. The cockatrice's wattles, comb, and eyes are bright red. Females, which are much rarer than males, differ only in that they have no wattles or comb.",
+          "HABITAT / SOCIETY",
+          "The cockatrice is immune to the petrification powers of others of its kind.",
+          "The diet of the cockatrice consists of insects, small lizards and the like. When it hunts these animals, the creature does not employ its power to petrify living things. It is distinguished from other avians by its unusual habits and nasty temperament.",
+          "Since females are rare, they an the dominant sex. and will often have more than one mate. In fact, males will often fight or strut for the privilege of joining a female's harem. These mated groups usually build their nests in caves. Nest sites are permanent, and the cockahice constantly seeks to decorate its nesting site by lining it with shining objects like coins and gems.",
+          "Females lay 1 or 2 brownish red, rust speckled eggs per month. There is only a 25% chance that any given egg will hatch. Those that are fertile will hatch in 11-19 days. The young reach maturity and full power within 6 months, Once they achieve adulthood, the hatchlings are driven away from the nesting site by their parents. Larger groups of cockatrices encountered will frequently be young driven from the nest who have temporarily united for survival.",
+          "PYROLISK",
+          "Frequently mistaken for its less malignant relative, the pyrolisk is virtually identical to the cockatrice except for the single red feather in its tail and the reddish cast of its wings. Whereas the cockatrice is motivated by instinct alone, the pyrolisk revels in",
+          "spreading mayhem. Any victims who fail a DC 11 Dexterity saving throw when meeting its gaze will instantly burst into flames, dying in agony, taking 6d12 fire damage.",
+          "If the save is made, they are still burnt for 3d12 points of fire damage. Any creature innately or magically immune to fire will not be affected by its gaze, and anyone who makes their saving throw is thereafter immune to the gaze of that particular pyrolisk. The creature can cause any fire source within 30 yards to explode in fireworks once per round.",
+          "The pyrolisk is itself immune to all fire-based spells and attacks. The pyrolisk‘s mortal enemy is the phoenix, although any creature which the monster encounters is likely to be attacked."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      },
+      "trait": [
+        {
+          "name": "Spreading Mayhem",
+          "entries": [
+            "Any victims who fail a {@dc 11} Dexterity saving throw when meeting its gaze will instantly burst into flames, dying in agony, taking {@damage 6d12} fire damage.",
+            "If the save is made, they are still burnt for {@dice 3d12} points of fire damage. Any creature innately or magically immune to fire will not be affected by its gaze, and anyone who makes their saving throw is thereafter immune to the gaze of that particular pyrolisk. The creature can cause any fire source within 30 yards to explode in fireworks once per round. "
+          ]
+        },
+        {
+          "name": "Fire Immunity",
+          "entries": [
+            "The pyrolisk is itself immune to all fire-based spells and attacks. The pyrolisk‘s mortal enemy is the phoenix, although any creature which the monster encounters is likely to be attacked."
+          ]
+        }
+      ],
+      "immune": [
+        "fire"
+      ]
+    },
+    {
+      "name": "Constrictor Snake",
+      "size": "L",
+      "type": {
+        "type": "beast",
+        "tags": [
+          "animal"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        12
+      ],
+      "hp": {
+        "formula": "2d10 + 2",
+        "average": 13
+      },
+      "speed": {
+        "walk": 30,
+        "swim": 30
+      },
+      "str": 15,
+      "dex": 14,
+      "con": 12,
+      "int": 1,
+      "wis": 10,
+      "cha": 3,
+      "passive": 10,
+      "cr": "1/4",
+      "shortName": "Constrictor Snake",
+      "senses": [
+        "blindsight 10 ft."
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+          ]
+        },
+        {
+          "name": "Constrict",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) bludgeoning damage. The target is {@condition grappled} (escape dc 14) Until this grapple ends, the creature is {@condition restrained}, and the snake can't constrict another target"
+          ]
+        }
+      ],
+      "damageTags": [
+        "P",
+        "B"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "conditionInflict": [
+        "grappled",
+        "restrained"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Constrictor Snake|https://angrygolem-games.com/monster-manual/letter-c/constrictor-snake-5e-stats/}",
+          "DESCRIPTION",
+          "Constrictors of all sizes hide in the branches of trees, waiting patiently until they can slowly lower themselves or suddenly drop onto their unsuspecting victims. Once they strike, the victim is constricted automatically, suffering damage every round. Anyone who attempts to free a captive by hacking at the constrictor has a 20% chance of striking the victim instead (roll normal damage and apply it to the victim).",
+          "Common constrictor species include anacondas, boas, and reticulate pythons, all of which can reach lengths of 30 feet. Their skin is valuable, with an unblemished skin selling for as much as 100 gp.",
+          "Some constrictor snakes are known as birdcharmers; these innately magical snakes can mesmerize their prey by swaying slowly and steadily while staring down their victims. Creatures of animal intelligence or less must make a DC 12 wisdom saving throw or be effectively paralyzed for as long as the snake continues to sway, and for 2d6 rounds thereafter."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Copper Dragon, Adult",
+      "size": "H",
+      "type": "dragon",
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "C",
+        "G"
+      ],
+      "ac": [
+        {
+          "ac": 18,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "16d12 + 80",
+        "average": 184
+      },
+      "speed": {
+        "walk": 40,
+        "climb": 40,
+        "fly": 80,
+        "canHover": false
+      },
+      "str": 23,
+      "dex": 12,
+      "con": 21,
+      "int": 18,
+      "wis": 15,
+      "cha": 17,
+      "passive": 22,
+      "cr": "14",
+      "shortName": "Copper Dragon, Adult",
+      "senses": [
+        "blindsight 60 ft.",
+        "darkvision 120 ft."
+      ],
+      "senseTags": [
+        "B",
+        "SD"
+      ],
+      "languages": [
+        "Common",
+        "Draconic"
+      ],
+      "languageTags": [
+        "C",
+        "DR"
+      ],
+      "save": {
+        "dex": "+6",
+        "con": "+10",
+        "wis": "+7",
+        "cha": "+8"
+      },
+      "skill": {
+        "deception": "+8",
+        "perception": "+12",
+        "stealth": "+6"
+      },
+      "immune": [
+        "acid"
+      ],
+      "trait": [
+        {
+          "name": "Legendary Resistance (3/Day)",
+          "entries": [
+            "If the dragon fails a saving throw, it can choose to succeed instead."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Legendary Resistances"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}17 ({@damage 2d10 + 6}) piercing damage."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d6 + 6}) slashing damage."
+          ]
+        },
+        {
+          "name": "Tail",
+          "entries": [
+            "{@atk mw} {@hit 11} to hit, reach 15 ft., one target. {@h}15 ({@damage 2d8 + 6}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Frightful Presence",
+          "entries": [
+            "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a {@dc 16} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours."
+          ]
+        },
+        {
+          "name": "Breath Weapons {@recharge 5}",
+          "entries": [
+            "The dragon uses one of the following breath weapons.",
+            "Acid Breath. The dragon exhales acid in an 60-foot line that is 5 feet wide. Each creature in that line must make a {@dc 18} Dexterity saving throw, taking 54 ({@damage 12d8}) acid damage on a failed save, or half as much damage on a successful one.",
+            "Slowing Breath. The dragon exhales gas in a 60-foot cone. Each creature in that area must succeed on a {@dc 18} Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, but not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Breath Weapon",
+        "Frightful Presence",
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P",
+        "S",
+        "B",
+        "A"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH",
+        "AOE"
+      ],
+      "conditionInflict": [
+        "frightened",
+        "prone"
+      ],
+      "legendaryActions": 3,
+      "legendaryHeader": [
+        "Adult Copper Dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Adult Copper Dragon regains spent legendary actions at the start of their turn."
+      ],
+      "legendary": [
+        {
+          "name": "Detect",
+          "entries": [
+            "The dragon makes a Wisdom (Perception) check."
+          ]
+        },
+        {
+          "name": "Tail Attack",
+          "entries": [
+            "The dragon makes a tail attack."
+          ]
+        },
+        {
+          "name": "Wing Attack (Costs 2 Actions)",
+          "entries": [
+            "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a {@dc 19} Dexterity saving throw or take 13 ({@damage 2d6 + 6}) bludgeoning damage and be knocked {@condition prone}. The dragon can then fly up to half its flying speed."
+          ]
+        }
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Copper Dragon, Adult|https://angrygolem-games.com/monster-manual/letter-c/copper-dragon-adult-5e-stats/}",
+          "DESCRIPTION",
+          "Copper dragons are incorrigible pranksters, joke tellers, and riddlers. They are prideful and are not good losers, although they are reasonable good winner. They are particularly selfish, and greedy for their alignment, and have an almost neutral outlook where wealth is concerned.",
+          "At birth, a copper dragon's scales have a ruddy brown color with a copper tint. As the dragon gets older, the scales become finer and more coppery, assuming a soft, warm gloss by the time the dragon becomes a young adult. Beginning at the venerable stage, the dragons' scales pick up a green tint.",
+          "HABITAT / SOCIETY",
+          "Copper dragons like dry, rocky uplands and mountains. They lair in narrow caves and often conceal the entrances using move earth and stone shape. Within the lair, they construct twisting mazes with open tops. These allow the dragon to fly or jump over intruders struggling through the maze.",
+          "Copper dragons appreciate wit, and will usually leave good or neutral creatures alone if they can relate a joke, humorous story, or riddle the dragon has not heard before. They quickly get annoyed with creatures who don't laugh at their jokes or do not accept the dragon's tricks and antics with good humor.",
+          "Because they often inhabit hills in sight of red dragons' lairs conflicts between the two subspecies often occur. Copper dragons usually run for cover until they can equal the odds.",
+          "ECOLOGY",
+          "Copper dragons are determined hunters, the good sport a hunt provides is at least as important as the food they get. They are known to eat almost anything, including metal ores. However, they prize {@creature giant scorpion|AGGMM}s and other large poisonous creatures (they say the venom sharpens their wit). The dragon's digestive system can handle the venom safely, although injected venoms affect them normally."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Copper Dragon, Ancient",
+      "size": "G",
+      "type": "dragon",
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "C",
+        "G"
+      ],
+      "ac": [
+        {
+          "ac": 21,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "20d20 + 140",
+        "average": 350
+      },
+      "speed": {
+        "walk": 40,
+        "climb": 40,
+        "fly": 80,
+        "canHover": false
+      },
+      "str": 27,
+      "dex": 12,
+      "con": 25,
+      "int": 20,
+      "wis": 17,
+      "cha": 19,
+      "passive": 27,
+      "cr": "21",
+      "shortName": "Copper Dragon, Ancient",
+      "senses": [
+        "blindsight 60 ft.",
+        "darkvision 120 ft."
+      ],
+      "senseTags": [
+        "B",
+        "SD"
+      ],
+      "languages": [
+        "Common",
+        "Draconic"
+      ],
+      "languageTags": [
+        "C",
+        "DR"
+      ],
+      "save": {
+        "dex": "+8",
+        "con": "+14",
+        "wis": "+10",
+        "cha": "+11"
+      },
+      "skill": {
+        "deception": "+11",
+        "perception": "+17",
+        "stealth": "+8"
+      },
+      "immune": [
+        "acid"
+      ],
+      "trait": [
+        {
+          "name": "Legendary Resistance (3/Day)",
+          "entries": [
+            "If the dragon fails a saving throw, it can choose to succeed instead."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Legendary Resistances"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 15} to hit, reach 15 ft., one target. {@h}19 ({@damage 2d10 + 8}) piercing damage."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 15} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d6 + 8}) slashing damage."
+          ]
+        },
+        {
+          "name": "Tail",
+          "entries": [
+            "{@atk mw} {@hit 15} to hit, reach 20 ft., one target. {@h}17 ({@damage 2d8 + 8}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Frightful Presence",
+          "entries": [
+            "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a {@dc 19} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours."
+          ]
+        },
+        {
+          "name": "Breath Weapons {@recharge 5}",
+          "entries": [
+            "The dragon uses one of the following breath weapons.",
+            "Acid Breath. The dragon exhales acid in an 90-foot line that is 10 feet wide. Each creature in that line must make a {@dc 22} Dexterity saving throw, taking 63 ({@damage 14d8}) acid damage on a failed save, or half as much damage on a successful one.",
+            "Slowing Breath. The dragon exhales gas in a 90-foot cone. Each creature in that area must succeed on a {@dc 22} Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, but not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save."
+          ]
+        },
+        {
+          "name": "Change Shape",
+          "entries": [
+            "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).",
+            "In a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Breath Weapon",
+        "Frightful Presence",
+        "Multiattack",
+        "Shapechanger"
+      ],
+      "damageTags": [
+        "P",
+        "S",
+        "B",
+        "A"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH",
+        "AOE"
+      ],
+      "conditionInflict": [
+        "frightened",
+        "prone"
+      ],
+      "legendaryActions": 3,
+      "legendaryHeader": [
+        "Ancient Copper Dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Ancient Copper Dragon regains spent legendary actions at the start of their turn."
+      ],
+      "legendary": [
+        {
+          "name": "Detect",
+          "entries": [
+            "The dragon makes a Wisdom (Perception) check."
+          ]
+        },
+        {
+          "name": "Tail Attack",
+          "entries": [
+            "The dragon makes a tail attack."
+          ]
+        },
+        {
+          "name": "Wing Attack (Costs 2 Actions)",
+          "entries": [
+            "The dragon beats its wings. Each creature within 15 ft. of the dragon must succeed on a {@dc 23} Dexterity saving throw or take 15 ({@damage 2d6 + 8}) bludgeoning damage and be knocked {@condition prone}. The dragon can then fly up to half its flying speed."
+          ]
+        }
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Copper Dragon, Ancient|https://angrygolem-games.com/monster-manual/letter-c/copper-dragon-ancient-5e-stats/}",
+          "DESCRIPTION",
+          "Copper dragons are incorrigible pranksters, joke tellers, and riddlers. They are prideful and are not good losers, although they are reasonable good winner. They are particularly selfish, and greedy for their alignment, and have an almost neutral outlook where wealth is concerned.",
+          "At birth, a copper dragon's scales have a ruddy brown color with a copper tint. As the dragon gets older, the scales become finer and more coppery, assuming a soft, warm gloss by the time the dragon becomes a young adult. Beginning at the venerable stage, the dragons' scales pick up a green tint.",
+          "HABITAT / SOCIETY",
+          "Copper dragons like dry, rocky uplands and mountains. They lair in narrow caves and often conceal the entrances using move earth and stone shape. Within the lair, they construct twisting mazes with open tops. These allow the dragon to fly or jump over intruders struggling through the maze.",
+          "Copper dragons appreciate wit, and will usually leave good or neutral creatures alone if they can relate a joke, humorous story, or riddle the dragon has not heard before. They quickly get annoyed with creatures who don't laugh at their jokes or do not accept the dragon's tricks and antics with good humor.",
+          "Because they often inhabit hills in sight of red dragons' lairs conflicts between the two subspecies often occur. Copper dragons usually run for cover until they can equal the odds.",
+          "ECOLOGY",
+          "Copper dragons are determined hunters, the good sport a hunt provides is at least as important as the food they get. They are known to eat almost anything, including metal ores. However, they prize {@creature giant scorpion|AGGMM}s and other large poisonous creatures (they say the venom sharpens their wit). The dragon's digestive system can handle the venom safely, although injected venoms affect them normally."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Copper Dragon, Wyrmling",
+      "size": "M",
+      "type": "dragon",
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "C",
+        "G"
+      ],
+      "ac": [
+        {
+          "ac": 16,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "4d8 + 4",
+        "average": 22
+      },
+      "speed": {
+        "walk": 30,
+        "climb": 30,
+        "fly": 60,
+        "canHover": false
+      },
+      "str": 15,
+      "dex": 12,
+      "con": 13,
+      "int": 14,
+      "wis": 11,
+      "cha": 13,
+      "passive": 14,
+      "cr": "1",
+      "shortName": "Copper Dragon, Wyrmling",
+      "senses": [
+        "blindsight 10 ft.",
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "B",
+        "D"
+      ],
+      "languages": [
+        "Draconic"
+      ],
+      "languageTags": [
+        "DR"
+      ],
+      "save": {
+        "dex": "+3",
+        "con": "+3",
+        "wis": "+2",
+        "cha": "+3"
+      },
+      "skill": {
+        "perception": "+4",
+        "stealth": "+3"
+      },
+      "immune": [
+        "acid"
+      ],
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d10 + 2}) piercing damage."
+          ]
+        },
+        {
+          "name": "Breath Weapons {@recharge 5}",
+          "entries": [
+            " The dragon uses one of the following breath weapons.",
+            "Acid Breath. The dragon exhales acid in an 20-foot line that is 5 feet wide. Each creature in that line must make a {@dc 11} Dexterity saving throw, taking 18 ({@damage 4d8}) acid damage on a failed save, or half as much damage on a successful one.",
+            "Slowing Breath. The dragon exhales gas in a 15-foot cone. Each creature in that area must succeed on a {@dc 11} Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, but not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save."
+          ]
+        }
+      ],
+      "damageTags": [
+        "P",
+        "A"
+      ],
+      "miscTags": [
+        "MW",
+        "AOE"
+      ],
+      "actionTags": [
+        "Breath Weapon"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Copper Dragon, Wyrmling|https://angrygolem-games.com/monster-manual/letter-c/copper-dragon-wyrmling-5e-stats/}",
+          "DESCRIPTION",
+          "Copper dragons are incorrigible pranksters, joke tellers, and riddlers. They are prideful and are not good losers, although they are reasonable good winner. They are particularly selfish, and greedy for their alignment, and have an almost neutral outlook where wealth is concerned.",
+          "At birth, a copper dragon's scales have a ruddy brown color with a copper tint. As the dragon gets older, the scales become finer and more coppery, assuming a soft, warm gloss by the time the dragon becomes a young adult. Beginning at the venerable stage, the dragons' scales pick up a green tint.",
+          "HABITAT / SOCIETY",
+          "Copper dragons like dry, rocky uplands and mountains. They lair in narrow caves and often conceal the entrances using move earth and stone shape. Within the lair, they construct twisting mazes with open tops. These allow the dragon to fly or jump over intruders struggling through the maze.",
+          "Copper dragons appreciate wit, and will usually leave good or neutral creatures alone if they can relate a joke, humorous story, or riddle the dragon has not heard before. They quickly get annoyed with creatures who don't laugh at their jokes or do not accept the dragon's tricks and antics with good humor.",
+          "Because they often inhabit hills in sight of red dragons' lairs conflicts between the two subspecies often occur. Copper dragons usually run for cover until they can equal the odds.",
+          "ECOLOGY",
+          "Copper dragons are determined hunters, the good sport a hunt provides is at least as important as the food they get. They are known to eat almost anything, including metal ores. However, they prize {@creature giant scorpion|AGGMM}s and other large poisonous creatures (they say the venom sharpens their wit). The dragon's digestive system can handle the venom safely, although injected venoms affect them normally."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Copper Dragon, Young",
+      "size": "L",
+      "type": "dragon",
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "C",
+        "G"
+      ],
+      "ac": [
+        {
+          "ac": 17,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "14d10 + 42",
+        "average": 119
+      },
+      "speed": {
+        "walk": 40,
+        "fly": 80,
+        "canHover": false,
+        "climb": 40
+      },
+      "str": 19,
+      "dex": 12,
+      "con": 17,
+      "int": 16,
+      "wis": 13,
+      "cha": 15,
+      "passive": 17,
+      "cr": "7",
+      "shortName": "Copper Dragon, Young",
+      "senses": [
+        "blindsight 30 ft.",
+        "darkvision 120 ft."
+      ],
+      "senseTags": [
+        "B",
+        "SD"
+      ],
+      "languages": [
+        "Common",
+        "Draconic"
+      ],
+      "languageTags": [
+        "C",
+        "DR"
+      ],
+      "save": {
+        "dex": "+4",
+        "con": "+6",
+        "wis": "+4",
+        "cha": "+5"
+      },
+      "skill": {
+        "deception": "+5",
+        "perception": "+7",
+        "stealth": "+4"
+      },
+      "immune": [
+        "acid"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The dragon makes three attacks: one with its bite and two with its claws."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d10 + 4}) piercing damage."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+          ]
+        },
+        {
+          "name": "Breath Weapons {@recharge 5}",
+          "entries": [
+            "The dragon uses one of the following breath weapons.",
+            "Acid Breath. The dragon exhales acid in an 40-foot line that is 5 feet wide. Each creature in that line must make a {@dc 14} Dexterity saving throw, taking 40 ({@damage 9d8}) acid damage on a failed save, or half as much damage on a successful one.",
+            "Slowing Breath. The dragon exhales gas in a 30-foot cone. Each creature in that area must succeed on a {@dc 14} Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, but not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Breath Weapon",
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P",
+        "S",
+        "A"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH",
+        "AOE"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Copper Dragon, Young|https://angrygolem-games.com/monster-manual/letter-c/copper-dragon-young-5e-stats/}",
+          "DESCRIPTION",
+          "Copper dragons are incorrigible pranksters, joke tellers, and riddlers. They are prideful and are not good losers, although they are reasonable good winner. They are particularly selfish, and greedy for their alignment, and have an almost neutral outlook where wealth is concerned.",
+          "At birth, a copper dragon's scales have a ruddy brown color with a copper tint. As the dragon gets older, the scales become finer and more coppery, assuming a soft, warm gloss by the time the dragon becomes a young adult. Beginning at the venerable stage, the dragons' scales pick up a green tint.",
+          "HABITAT / SOCIETY",
+          "Copper dragons like dry, rocky uplands and mountains. They lair in narrow caves and often conceal the entrances using move earth and stone shape. Within the lair, they construct twisting mazes with open tops. These allow the dragon to fly or jump over intruders struggling through the maze.",
+          "Copper dragons appreciate wit, and will usually leave good or neutral creatures alone if they can relate a joke, humorous story, or riddle the dragon has not heard before. They quickly get annoyed with creatures who don't laugh at their jokes or do not accept the dragon's tricks and antics with good humor.",
+          "Because they often inhabit hills in sight of red dragons' lairs conflicts between the two subspecies often occur. Copper dragons usually run for cover until they can equal the odds.",
+          "ECOLOGY",
+          "Copper dragons are determined hunters, the good sport a hunt provides is at least as important as the food they get. They are known to eat almost anything, including metal ores. However, they prize {@creature giant scorpion|AGGMM}s and other large poisonous creatures (they say the venom sharpens their wit). The dragon's digestive system can handle the venom safely, although injected venoms affect them normally."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
     }
+
 	]
 }

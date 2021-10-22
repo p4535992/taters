@@ -9,6 +9,14 @@
 - [NOT ESSENTIAL][UTILITY][Burger Time](https://github.com/scottburton11/burger-time)
 - [NOT ESSENTIAL][TOKEN][Quick Scale](https://github.com/unsoluble/quickscale) -
 - [BETTER PLUTONIUM][ENTITY][Compendiumn Browser](https://github.com/syl3r86/compendium-browser ) - https://raw.githubusercontent.com/syl3r86/compendium-browser/master/module.json
+- [NOT ESSENTIAL][COMBAT][Combat Enhancements](https://gitlab.com/asacolips-projects/foundry-mods/combat-enhancements/ )
+- [BETTER DFRED CONVENIENT EFFECTS][COMBAT][Active Effects to Chat](https://github.com/BadIdeasBureau/ae-to-chat )
+- [NOT ESSENTIAL][WALL/COMBAT][Template Wall Collision](https://github.com/EndlesNights/template-wall-collision) - https://raw.githubusercontent.com/EndlesNights/template-wall-collision/master/module.json
+- [BETTER https://github.com/ironmonk88/monks-wall-enhancement][WALL][Merge Wall](https://gitlab.com/tposney/mergewalls ) - https://gitlab.com/tposney/mergewalls/raw/master/module080.json
+- [BETTER https://github.com/ironmonk88/monks-wall-enhancement][WALL][Wall Cutter](https://github.com/HadaIonut/WallCutter ) - https://raw.githubusercontent.com/HadaIonut/WallCutter/master/src/module.json
+- [BETTER https://github.com/ironmonk88/monks-wall-enhancement][WALL][Multiple Wall Points Mover](https://github.com/Reaver01/mwpm ) - https://raw.githubusercontent.com/Reaver01/mwpm/master/module.json
+- [NOT ESSENTIAL][WALL][Show-Walls-Everywhere](https://github.com/theripper93/Show-Walls-Everywhere) - https://raw.githubusercontent.com/theripper93/Show-Walls-Everywhere/main/module.json
+- [NOT ESSENTIAL][COMBAT][Turn Announcer](https://gitlab.com/koboldworks/agnostic/turn-announcer)
 
 ## 2021-09
 
