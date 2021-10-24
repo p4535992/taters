@@ -102,11 +102,12 @@ NOMI ECC. E SONO CAUSA DI STUPIDI PROBLEMI NON RISOLVIBILI
 - [UTILITY][Dragon Flagon Architect](https://github.com/flamewave000/dragonflagon-arch)
 - [WALL][Wall Height](https://github.com/schultzcole/FVTT-Wall-Height ) - https://raw.githubusercontent.com/schultzcole/FVTT-Wall-Height/master/module.json
 - [WALL][Monks Wall Enchancement](https://github.com/ironmonk88/monks-wall-enhancement)
-## [MUST HAVE] MODULES COMPENDIUM
+- [World Explorer](https://github.com/CarlosFdez/world-explorer)
+
+## MODULES COMPENDIUM
 
 - [COMPENDIUM][Super Homebrew Pack](https://github.com/SuperNar3k/foundry ) - https://raw.githubusercontent.com/SuperNar3k/foundry/master/SupersHomebrewPack/module.json 
 - [COMPENDIUM][Beginner Baubles](https://foundryvtt.com/packages/ddd-beginner-baubles/ )
-
 - [COMPENDIUM][Data Toolbox - Let's Contribute](https://github.com/SvenWerlen/fvtt-data-toolbox/tree/master/ )
 - [COMPENDIUM][Take on Magic Items (unofficial)](https://github.com/brunocalado/takeonmagicitems )
 - [COMPENDIUM][Loot Tavern magic Item](https://www.patreon.com/LootTavern )
@@ -127,7 +128,7 @@ NOMI ECC. E SONO CAUSA DI STUPIDI PROBLEMI NON RISOLVIBILI
 - [ANIMATED TEMPLATE][Jaaamod]https://foundryvtt.com/packages/jaamod/
 - [ANIMATED TEMPLATE][JB2A - Jules&Ben's Animated Assets](https://github.com/Jules-Bens-Aa/JB2A_DnD5e )
 
-## [MUST HAVE] MODULES MAPS
+## MODULES MAPS
 
 - [MAP/UTILITY][FoundryVTT-Modules-Radugen](https://github.com/EwoudLindemans/FoundryVTT-Modules-Radugen )
 
