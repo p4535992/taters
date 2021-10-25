@@ -22525,6 +22525,281 @@
 					}
 				]
 			}
-		}
+		},
+    {
+      "name": "Duodrone",
+      "size": "M",
+      "type": {
+        "type": "construct",
+        "tags": [
+          "modron"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "L",
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 15,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "2d8 + 2",
+        "average": 11
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 11,
+      "dex": 13,
+      "con": 12,
+      "int": 6,
+      "wis": 10,
+      "cha": 7,
+      "passive": 10,
+      "cr": "1/4",
+      "shortName": "Duodrone",
+      "senses": [
+        "truesight 120 ft."
+      ],
+      "senseTags": [
+        "U"
+      ],
+      "languages": [
+        "Modron"
+      ],
+      "languageTags": [
+        "OTH"
+      ],
+      "trait": [
+        {
+          "name": "Axiomatic Mind",
+          "entries": [
+            "The duodrone can’t be compelled to act in a manner contrary to its nature or its instructions."
+          ]
+        },
+        {
+          "name": "Disintegration",
+          "entries": [
+            "If the duodrone dies, its body disintegrates into dust, leaving behind its weapons and anything else it was carrying."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The duodrone makes two fist attacks or two javelin attacks."
+          ]
+        },
+        {
+          "name": "Fist",
+          "entries": [
+            "{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Javelin",
+          "entries": [
+            "{@atk mw,rw} {@hit 3} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage in melee, or 4 ({@damage 1d6 + 1}) piercing damage at range."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "B",
+        "P"
+      ],
+      "miscTags": [
+        "MW",
+        "RW",
+        "THW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Duodrone|https://angrygolem-games.com/monster-manual/letter-d/duodrone-5e-stats/}",
+          "DESCRIPTION",
+          "Duodrones are bifunctional modrons that supervise 12 units of monodrones or perform complex tasks beyond the abilities of the monodrones. They are blocky, rectangular creatures of great strength. Like all modrons, they are absolutely loyal to the commands of their immediate superiors.",
+          "Capable of interpreting two commands at once, duodrones serve in the forces of the modron army as corporals and sergeants, or as special shock troops armed with thrusting and crushing weapons. Typically, they are given only a single command at a time, allowing them the limited ability to react. If ordered to attack, for example, they will do so until the enemy is slain and then seek out a new enemy, rather than attacking each other. Duodrones have limited conversational ability, but they can report their operations and observations clearly and completely.",
+          "Duedrone is employed as material component to empower the following spells: {@spell Cure Wounds}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Dryad",
+      "size": "M",
+      "type": "fey",
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        11,
+        {
+          "ac": 16,
+          "condition": "with {@spell Barkskin}",
+          "braces": true
+        }
+      ],
+      "hp": {
+        "formula": "5d8",
+        "average": 22
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 10,
+      "dex": 12,
+      "con": 11,
+      "int": 14,
+      "wis": 15,
+      "cha": 18,
+      "passive": 14,
+      "cr": "1",
+      "shortName": "Dryad",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "Elvish",
+        "Sylvan"
+      ],
+      "languageTags": [
+        "E",
+        "S"
+      ],
+      "skill": {
+        "perception": "+4",
+        "stealth": "+5"
+      },
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasting",
+          "headerEntries": [
+            "The dryad’s innate spellcasting ability is Charisma (spell save {@dc 14}). The dryad can innately cast the following spells, requiring no material components:"
+          ],
+          "will": [
+            "{@spell druidcraft}"
+          ],
+          "daily": {
+            "3e": [
+              "{@spell entangle}",
+              "{@spell goodberry}"
+            ],
+            "1e": [
+              "{@spell barkskin}",
+              "{@spell pass without trace}",
+              "{@spell shillelagh}"
+            ]
+          },
+          "ability": "cha",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "I"
+      ],
+      "trait": [
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The dryad has advantage on saving throws against spells and other magical effects."
+          ]
+        },
+        {
+          "name": "Speak with Beasts and Plants",
+          "entries": [
+            "The dryad can communicate with beasts and plants as if they shared a language."
+          ]
+        },
+        {
+          "name": "Tree Stride",
+          "entries": [
+            "Once on her turn, the dryad can use 10 ft. of her movement to step magically into one living tree within her reach and emerge from a second living tree within 60 ft. of the first tree, appearing in an unoccupied space within 5 ft. of the second tree. Both trees must be large or bigger."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Magic Resistance"
+      ],
+      "action": [
+        {
+          "name": "Club",
+          "entries": [
+            "{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Club (with shillelagh)",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Fey Charm",
+          "entries": [
+            "The dryad targets one humanoid or beast that she can see within 30 feet of her. If the target can see the dryad, it must succeed on a {@dc 14} Wisdom saving throw or be magically {@condition charmed}. The {@condition charmed} creature regards the dryad as a trusted friend to be heeded and protected. Although the target isn’t under the dryad’s control, it takes the dryad’s requests or actions in the most favorable way it can.",
+            "Each time the dryad or its allies do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the dryad dies, is on a different plane of existence from the target, or ends the effect as a bonus action. If a target’s saving throw is successful, the target is immune to the dryad’s Fey Charm for the next 24 hours.",
+            "The dryad can have no more than one humanoid and up to three beasts {@condition charmed} at a time."
+          ]
+        }
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "conditionInflict": [
+        "charmed"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Dryad|https://angrygolem-games.com/monster-manual/letter-d/dryad-5e-stats/}",
+          "DESCRIPTION",
+          "Dryads are beautiful, intelligent tree sprites. They are as elusive as they are alluring, and dryads are rarely seen unless taken by surprise — or they wish to be spotted.",
+          "The dryad’s exquisite features, delicate and finely chiseled, are much like an elf maiden’s. Dryads have high cheek bones and amber, violet, or dark green eyes. A dryad’s complexion and hair color changes with the seasons, presenting the sprite with natural camouflage. During the fall, a dryad’s hair turns golden or red, and her skin subtly darkens from its usual light tan to more closely match her hair color. This enables her to blend with the falling leaves of autumn. In winter, both the dryad’s hair and skin are white, like the snows that cover the oak groves.",
+          "When encountered in a forest during fall or winter, a dryad is often mistaken for an attractive maid, probably of elvish descent. No one would mistake a dryad for an elf maid during the spring and summer, however. At these times of year, a dryad’s skin is lightly tanned and her hair is green like the oak leaves around her.",
+          "Dryads often appear clothed in a loose, simple garment. The clothing they wear is the color of the oak grove in the season they appear. They speak their own tongue, as well as the languages of elves, pixies, and sprites. Dryads can also speak with plants.",
+          "HABITAT / SOCIETY",
+          "Some legends claim that dryads are the animated souls of very old oak trees. Whether this is really the case, it is true that dryads are attached to a single, very large oak tree in their lifetimes and cannot, for any reason, go more than 360 yards from that tree. If a dryad does wander farther away, she becomes weak and dies within 6d6 hours unless returned to her home. The oak trees of dryads do not radiate magic, but someone finding a dryad’s home has great power over her. A dryad suffers damage for any damage inflicted upon her home tree. Any attack on a dryad’s tree will, of course, bring on a frenzied defense by the dryad.",
+          "Although dryads are generally very solitary, up to six have been encountered in one place. This is rare, however. All this really means is that a number of dryad oaks are within 100 yards of one another and the dryads’ paths cross. These dryads may come to each other’s aid, but never really gather socially. Any treasure owned by a tree sprite is hidden close to her home tree. The gold and gems that make up a dryad’s treasure are almost always the gifts of charmed adventurers.",
+          "These tree sprites realize that most humans and demihumans fear them for their ability to charm, so dryads only deal with strangers on rare occasions. When approached carefully, however, dryads have been known to aid adventurers. They are a useful source of information, too, as they know a great deal about the area in which they live.",
+          "ECOLOGY",
+          "Dryads are staunch protectors of the forest and groves in which they reside. Any actions that harm the area, and especially its plant life, are met with little tolerance.",
+          "Dryad is employed as material component to empower the following spells: {@spell Charm Person}, {@spell Goodberry}, {@spell Minor Illusion}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    }
 	]
 }
