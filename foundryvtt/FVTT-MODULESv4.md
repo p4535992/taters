@@ -42,12 +42,15 @@
 - [UTILITY][Sidebar Macro](https://github.com/arcanistzed/sidebar-macros)
 - [JOURNAL/UTILITY][Share Media](https://github.com/DarKDinDoN/share-media)
 - [MACRO/COMBAT][Trigger Happy](https://github.com/League-of-Foundry-Developers/fvtt-module-trigger-happy )
+- [CHARACTER SHEET](https://github.com/ElfFriend-DnD/foundryvtt-link-item-resource-5e)
+- [Scene][Monk's Active Tile Triggers](https://github.com/ironmonk88/monks-active-tiles/)
 
 ## [MUST HAVE] CHARACTER SHEET
 
 - [CHARACTER SHEET][Tidy Sheet 5e](https://github.com/sdenec/tidy5e-sheet ) - https://raw.githubusercontent.com/sdenec/tidy5e-sheet/master/module.json
 - [CHARACTER SHEET][Loot Sheet NPC 5e](https://github.com/jopeek/fvtt-loot-sheet-npc-5e ) - https://raw.githubusercontent.com/jopeek/fvtt-loot-sheet-npc-5e/master/module.json
 - [CHARACTER SHEET][Merchant Sheet NPC](https://github.com/whelan/fvtt-merchant-sheet-npc)
+
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
@@ -61,6 +64,7 @@
 - [COMBAT][Combat Booster](https://github.com/theripper93/Combat-Booster)
 - [COMBAT][Arbron's Improved HP Bar](https://github.com/arbron/fvtt-hp-bar)
 - [COMBAT][Combat Utility Belt](https://github.com/death-save/combat-utility-belt )
+- [COMBAT][Resource Icons](https://github.com/jessev14/resource-icons)
 
 ## [NOT ESSENTIAL BUT VERY GOOD] 0.8.6
 
@@ -68,7 +72,6 @@
 - [JOURNAL][Library PDFoundry](https://github.com/Djphoenix719/PDFoundry )
 - [UTILITY][Boss Bar](https://github.com/theripper93/Boss-Bar)
 - [UTILITY][Forien Copy](https://github.com/League-of-Foundry-Developers/foundryvtt-forien-copy-environment )
-- [UTILITY][Smalltime](https://github.com/unsoluble/smalltime)
 - [LIGHT][Community Lighting for FVTT](https://github.com/BlitzKraig/fvtt-CommunityLighting )
 - [EXTERNAL][Adventure Import Export](https://github.com/cstadther/adventure-import-export )
 - [CHARACTHER SHEET/UTILITY][Downtime Tracking 5e Training](https://github.com/crash1115/5e-training )

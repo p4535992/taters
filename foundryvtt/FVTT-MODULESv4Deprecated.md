@@ -17,6 +17,7 @@
 - [BETTER https://github.com/ironmonk88/monks-wall-enhancement][WALL][Multiple Wall Points Mover](https://github.com/Reaver01/mwpm ) - https://raw.githubusercontent.com/Reaver01/mwpm/master/module.json
 - [NOT ESSENTIAL][WALL][Show-Walls-Everywhere](https://github.com/theripper93/Show-Walls-Everywhere) - https://raw.githubusercontent.com/theripper93/Show-Walls-Everywhere/main/module.json
 - [NOT ESSENTIAL][COMBAT][Turn Announcer](https://gitlab.com/koboldworks/agnostic/turn-announcer)
+- [BETTER https://gitlab.com/jstebenne/foundryvtt-calendar-weather][UTILITY][Smalltime](https://github.com/unsoluble/smalltime)
 
 ## 2021-09
 
