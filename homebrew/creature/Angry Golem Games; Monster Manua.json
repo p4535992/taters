@@ -22800,6 +22800,1244 @@
           }
         ]
       }
+    },
+    {
+      "name": "Duergar",
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "dwarf"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 16,
+          "from": [
+            "{@item scale mail|phb}",
+            "{@item shield|phb}"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "4d8 + 8",
+        "average": 26
+      },
+      "speed": {
+        "walk": 25
+      },
+      "str": 14,
+      "dex": 11,
+      "con": 14,
+      "int": 11,
+      "wis": 10,
+      "cha": 9,
+      "passive": 10,
+      "cr": "1",
+      "shortName": "Duergar",
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "senseTags": [
+        "SD"
+      ],
+      "languages": [
+        "Dwarvish",
+        "Undercommon"
+      ],
+      "languageTags": [
+        "D",
+        "U"
+      ],
+      "resist": [
+        "poison"
+      ],
+      "trait": [
+        {
+          "name": "Duergar Resilience",
+          "entries": [
+            "The duergar has advantage on saving throws against poison, spells, and illusions, as well as to resist being {@condition charmed} or {@condition paralyzed}."
+          ]
+        },
+        {
+          "name": "Sunlight Sensitivity",
+          "entries": [
+            "While in sunlight, the duergar has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Sunlight Sensitivity"
+      ],
+      "action": [
+        {
+          "name": "Enlarge (Recharges after a Short or Long Rest)",
+          "entries": [
+            "For 1 minute, the duergar magically increases in size, along with anything it is wearing or carrying. While enlarged, the duergar is Large, doubles its damage dice on Strength-based weapon attacks (included in the attacks), and makes Strength checks and Strength saving throws with advantage. If the duergar lacks the room to become Large, it attains the maximum size possible in the space available."
+          ]
+        },
+        {
+          "name": "War Pick",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+          ]
+        },
+        {
+          "name": "War Pick (while Enlarged)",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d8 + 2}) piercing damage."
+          ]
+        },
+        {
+          "name": "Javelin",
+          "entries": [
+            "{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage in melee, or 5 ({@damage 1d6 + 2}) piercing damage at range."
+          ]
+        },
+        {
+          "name": "Javelin (while enlarged)",
+          "entries": [
+            "{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}9 ({@damage 2d6 + 2}) piercing damage in melee, or 9 ({@damage 2d6 + 2}) piercing damage at range."
+          ]
+        },
+        {
+          "name": "Invisibility (Recharges after a Short or Long Rest)",
+          "entries": [
+            "The duergar magically turns {@condition invisible} until it attacks, casts a spell, or uses its Enlarge, or until its concentration is broken, up to 1 hour (as if concentrating on a spell). Any equipment the duergar wears or carries is {@condition invisible} with it."
+          ]
+        }
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MW",
+        "RW",
+        "THW"
+      ],
+      "conditionInflict": [
+        "invisible"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Duergar (or gray dwarf)|https://angrygolem-games.com/monster-manual/letter-d/duergar-or-gray-dwarf-5e-stats/}",
+          "DESCRIPTION",
+          "The duergar, or gray dwarves, are a malevolent breed that dwells in the extreme depths of the ground. Thief duergar are proficient in the use of poison.",
+          "Duergar appear to be emaciated, nasty-looking dwarves. Their complexion and hair range from medium to dark gray. They prefer drab clothing designed to blend into their environment. In their lair, they may wear jewelry, although such pieces are kept dull.",
+          "HABITAT / SOCIETY",
+          "The duergar are similar to other dwarves cultures, although the life is much harsher due to their hostile environment deep under the ground. They do not venture into the surface except at night or on the gloomiest days. Duergar live longer than their surface-dwelling kin. Life spans can reach 400 years or more.",
+          "Duergar lairs are always deep underground. These are elaborate collection of chambers, passages, rooms, and secret areas. There is a chance a monster is kept as a guardian for the lair complex. Such a creature is probably kept at an entrance to the duergar complex or kept within the treasure cave.",
+          "Duergar raise giant spiders called steeders for mounts. A large chamber serves as “corral” for the herd of 20d10 steeders of various sizes.",
+          "The duergar are not as affluent as other dwarven races. Individuals may have a few gold or platinum coins stashed away. Normal, usable items like weapons or armor are immediately distributed. Magical items and the bulk of the acquired treasure is stored in a well-protected chamber deep in the duergar complex.",
+          "The duergar diet is an omnivorous mix of fungi, insects, and subterranean animals. Duergar complexes include caverns used as fungus farms that are filled with giant, edible mushrooms. They brew a potent ale from such mushrooms.",
+          "ECOLOGY",
+          "Duergar detest the other dwarves races, whom they consider pampered. weak, and self-indulgent. They may ally and even share living space with evil dwarves, but the duergar’s hostile nature snakes such alliances extremely rare.",
+          "Duergar tend to see intruders as invaders. Even if trespassers can convince the duergar of their peaceful intentions, the duergar may demand a stiff toll to permit safe passage. Even then, duergar may discreetly follow the travelers to see what they are up to and, if treasure is involved, to steal such riches for themselves.",
+          "Duergar rarely bother surface-dwellers due to their disadvantages on the surface. When encountered on the surface, such dwarves are usually on a mission or part of a raiding party."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Duergar Despot",
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "dwarf"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 21,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "14d8 + 56",
+        "average": 119
+      },
+      "speed": {
+        "walk": 25
+      },
+      "str": 20,
+      "dex": 5,
+      "con": 19,
+      "int": 15,
+      "wis": 14,
+      "cha": 13,
+      "passive": 12,
+      "cr": "12",
+      "shortName": "Duergar Despot",
+      "languages": [
+        "Dwarvish",
+        "Undercommon"
+      ],
+      "languageTags": [
+        "D",
+        "U"
+      ],
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "senseTags": [
+        "SD"
+      ],
+      "save": {
+        "con": "+8",
+        "wis": "+6"
+      },
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "paralyzed",
+        "poisoned"
+      ],
+      "trait": [
+        {
+          "name": "Duergar Resilience",
+          "entries": [
+            "The duergar has advantage on saving throws against poison, spells, and illusions, as well as to resist being {@condition charmed} or {@condition paralyzed}."
+          ]
+        },
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The duergar has advantage on saving throws against spells and other magical effects."
+          ]
+        },
+        {
+          "name": "Psychic Engine",
+          "entries": [
+            "When the duergar despot suffers a critical hit or is reduced to 0 hit points, psychic energy erupts from its frame to deal 14 ({@damage 4d6}) psychic damage to each creature within 5 feet of it."
+          ]
+        },
+        {
+          "name": "Sunlight Sensitivity",
+          "entries": [
+            "While in sunlight, the duergar despot has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+          ]
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasting (Psionics)",
+          "headerEntries": [
+            "The duergar despot’s innate spellcasting ability is Intelligence (spell save {@dc 12}). It can cast the following spells, requiring no components:"
+          ],
+          "will": [
+            "{@spell mage hand}",
+            "{@spell minor illusion}"
+          ],
+          "daily": {
+            "1e": [
+              "{@spell counterspell}",
+              "{@spell misty step}",
+              "{@spell stinking cloud}"
+            ]
+          },
+          "ability": "int",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "P",
+        "I"
+      ],
+      "traitTags": [
+        "Magic Resistance",
+        "Sunlight Sensitivity"
+      ],
+      "damageTags": [
+        "B",
+        "F",
+        "Y"
+      ],
+      "miscTags": [
+        "MW",
+        "AOE"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The despot makes two iron fist attacks and two stomping foot attacks. It can replace up to four of these attacks with uses of its Flame Jet."
+          ]
+        },
+        {
+          "name": "Iron Fist",
+          "entries": [
+            "{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) bludgeoning damage. If the target is a Large or smaller creature, it must make a successful {@dc 17} Strength saving throw or be thrown up to 30 feet away in a straight line. The target lands {@condition prone} and then takes 10 ({@damage 3d6}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Stomping Foot",
+          "entries": [
+            "{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 5}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Stomping Foot (on prone target)",
+          "entries": [
+            "{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}18 ({@damage 3d8 + 5}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Flame jet",
+          "entries": [
+            "The duergar spews flames in a line 100 feet long and 5 feet wide. Each creature in the line must make a {@dc 16} Dexterity saving throw, taking 18 ({@damage 4d8}) fire damage on a failed save, or half as much damage on a successful one."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Duergar Despot|https://angrygolem-games.com/monster-manual/letter-d/duergar-despot-5e-stats/}",
+          "DESCRIPTION",
+          "Duergar despots replace parts of their bodies with mechanical devices that they control through their psionic abilities."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Dust Mephit",
+      "size": "S",
+      "type": {
+        "type": "elemental",
+        "tags": [
+          "mephit"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "N",
+        "E"
+      ],
+      "ac": [
+        12
+      ],
+      "hp": {
+        "formula": "5d6",
+        "average": 17
+      },
+      "speed": {
+        "walk": 30,
+        "fly": 30,
+        "canHover": false
+      },
+      "str": 5,
+      "dex": 14,
+      "con": 10,
+      "int": 9,
+      "wis": 11,
+      "cha": 10,
+      "passive": 12,
+      "cr": "1/2",
+      "shortName": "Dust Mephit",
+      "languages": [
+        "Auran",
+        "Terran"
+      ],
+      "languageTags": [
+        "AU",
+        "T"
+      ],
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "skill": {
+        "perception": "+2",
+        "stealth": "+4"
+      },
+      "vulnerable": [
+        "fire"
+      ],
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "poisoned"
+      ],
+      "trait": [
+        {
+          "name": "Death Burst",
+          "entries": [
+            "When the mephit dies, it explodes in a burst of dust. Each creature within 5 feet of it must then succeed on a {@dc 10} Constitution saving throw or be {@condition blinded} for 1 minute. A {@condition blinded} creature can repeat the saving throw on each of its turns, ending the effect on itself on a success."
+          ]
+        },
+        {
+          "name": "Regeneration",
+          "entries": [
+            "The dust mephit regains 1 hit point at the start of its turn."
+          ]
+        }
+      ],
+      "conditionInflict": [
+        "blinded"
+      ],
+      "traitTags": [
+        "Death Burst",
+        "Regeneration"
+      ],
+      "miscTags": [
+        "MW",
+        "AOE"
+      ],
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasting",
+          "headerEntries": [
+            "The mephit innate spellcasting ability is Charisma (spell save {@dc 1}). It can cast the following spells, requiring no components:"
+          ],
+          "will": [
+            "{@spell sleep}"
+          ],
+          "ability": "cha",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "I"
+      ],
+      "action": [
+        {
+          "name": "Claws",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) slashing damage."
+          ]
+        },
+        {
+          "name": "Blinding Breath {@recharge}",
+          "entries": [
+            "The mephit exhales a 15-foot cone of blinding dust. Each creature in that area must succeed on a {@dc 10} Dexterity saving throw or be {@condition blinded} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+          ]
+        }
+      ],
+      "damageTags": [
+        "S"
+      ],
+      "actionTags": [
+        "Breath Weapon"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Dust Mephit|https://angrygolem-games.com/monster-manual/letter-d/dust-mephit-5e-stats/}",
+          "DESCRIPTION",
+          "These ghoulish things find death morbidly fascinating. They pose as tragic yet fashionable victims of a gloomy fate, heroically holding out against utter insanity. They favor lines like “A dust mephit I am, lest dust I become!”",
+          "Gaunt even by mephit standards, dust mephits have dusky brown skin, eyes, and wings. Unlike other mephits, they prefer to wear clothing (always black), altered so as not interfere with flight.",
+          "Dust Mephit is employed as component to empower the following spells: {@spell Find Familiar}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Eagle",
+      "size": "S",
+      "type": {
+        "type": "beast",
+        "tags": [
+          "animal"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        12
+      ],
+      "hp": {
+        "formula": "1d6",
+        "average": 3
+      },
+      "speed": {
+        "walk": 10,
+        "fly": 60,
+        "canHover": false
+      },
+      "str": 6,
+      "dex": 15,
+      "con": 10,
+      "int": 2,
+      "wis": 14,
+      "cha": 7,
+      "passive": 14,
+      "cr": "0",
+      "shortName": "Eagle",
+      "skill": {
+        "perception": "+4"
+      },
+      "trait": [
+        {
+          "name": "Keen Sight",
+          "entries": [
+            "The eagle has advantage on Wisdom (Perception) checks that rely on sight."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Keen Senses"
+      ],
+      "action": [
+        {
+          "name": "Talons",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4 + 2}) slashing damage."
+          ]
+        }
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "damageTags": [
+        "S"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Eagle|https://angrygolem-games.com/monster-manual/letter-e/eagle-5e-stats/}",
+          "DESCRIPTION",
+          "Eagles are majestic birds of prey, rarely used for hunting, but often sought after for their beauty and legendary courage.",
+          "Eagles are large birds, usually standing around three feet tall. with distinctive feathering on their legs. Their wing span is an impressive six to seven feet. Eagles are usually brown in color, ranging from the blackish brown of the golden eagle to the dark brown of the bald eagle. They always sport a set of razor-sharp talons and a beak, equally as sharp and turned down abruptly at its point. The eagle’s cry is high and shrill.",
+          "COMBAT",
+          "An eagle typically attacks from great heights, folding back its wings and letting gravity hurtle it toward its prey. If an eagle dives for more than 100 feet, its diving speed is double its normal flying speed and the eagle is restricted to attacking with only its two sets of claws. However, these high-speed attacks gain advantage on hit rolls and score double damage.",
+          "HABITAT / SOCIETY",
+          "High rocky cliffs and tall, broad trees are the favorite nesting spots for eagles. Once an eagle builds a nest, it will keep that home, adding it with each passing season, until the nest is destroyed or the eagle dies. There is always a 50% chance that 1d4 eggs are present in a nest. If eggs are not present, there is a 20% chance that 1d4 young eagles are present instead. There is always a 10% chance that the eagle is storing some small, shiny objects in the nest (like gold coins or gems).",
+          "Eagles are usually encountered alone or in pairs. Eagles mate for life and, since they nest in one spot each year, it is easy to identify places where eagles are normally present. On occasion, in an area of especially rich feeding, 1d8+4 eagles are encountered instead of the normal individual or pair. This fertile area can support more than one nest, so more eagles move into the area.",
+          "ECOLOGY",
+          "Eagles are carnivores and generally hunt rodents, fish, and other small animals. Eagles have also been known to feed on the carrion of recently killed creatures, as well. Unless exceptionally hungry, an eagle will never attack a humanoid, though small creatures like tiny and small fey have to be wary of a hunting eagle mistaking them for rabbits.",
+          "Eagles are not easy to train for hunting purposes. Nevertheless, a thriving market for eaglets and eagle eggs means that each one captured brings a price of 60 to 100 gold. Eagle feathers and other eagle tokens are also valued highly by many adventurers, as they wrongly believe the eagle’s courage to be transferred to them by possession of such items."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Earth Elemental",
+      "size": "L",
+      "type": "elemental",
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 17,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "12d10 + 60",
+        "average": 126
+      },
+      "speed": {
+        "walk": 30,
+        "burrow": 30
+      },
+      "str": 20,
+      "dex": 8,
+      "con": 20,
+      "int": 5,
+      "wis": 10,
+      "cha": 5,
+      "passive": 10,
+      "cr": "5",
+      "shortName": "Earth Elemental",
+      "senses": [
+        "darkvision 60 ft.",
+        "tremorsense 60 ft."
+      ],
+      "senseTags": [
+        "D",
+        "T"
+      ],
+      "languages": [
+        "Terran"
+      ],
+      "languageTags": [
+        "T"
+      ],
+      "vulnerable": [
+        "thunder"
+      ],
+      "resist": [
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks"
+        }
+      ],
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "exhaustion",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "unconscious"
+      ],
+      "trait": [
+        {
+          "name": "Earth Glide",
+          "entries": [
+            "The elemental can burrow through nonmagical, unworked earth and stone. While doing so, the elemental doesn’t disturb the material it moves through."
+          ]
+        },
+        {
+          "name": "Siege Monster",
+          "entries": [
+            "The elemental deals double damage to objects and structures."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Siege Monster"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The elemental makes two slam attacks."
+          ]
+        },
+        {
+          "name": "Slam",
+          "entries": [
+            "{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}14 ({@damage 2d8 + 5}) bludgeoning damage."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Earth Elemental|https://angrygolem-games.com/monster-manual/letter-e/earth-elemental/}",
+          "{@link EARTH ELEMENTAL’s TACTICS (read the article)|https://angrygolem-games.com/monster-manual/letter-e/earth-elemental/}",
+          "DESCRIPTION",
+          "Earth elementals can be conjured in any area of earth or stone. This type of common elemental appears on the Prime Material plane as a very large humanoid made of whatever types of dirt, stones, precious metals, and gems it was conjured from.",
+          "It has a cold, expressionless face, and its two eyes sparkle like brilliant, multifaceted gems. Though it has a mouth-like opening in its face, an earth elemental will rarely speak.",
+          "Their voices can be heard in the silence of deep tunnels, the rumblings of earth- quakes, and the grinding of stone on stone.",
+          "Though earth elementals travel very slowly, they are relentless in the fulfillment of their appointed tasks. An earth elemental can travel through solid ground or stone with no penalty to movement or dexterity.",
+          "However, these elementals cannot travel through water: they must either go around the body of water in their path or go under it, traveling in the ground.",
+          "Earth elementals prefer the latter as it keeps them moving, more or less, in a straight line toward their goal.",
+          "Earth Elemental is employed as component to empower the following spells:{@spell Find Familiar}, {@spell Hail of Thorns}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Earth Elemental Myrmidon",
+      "size": "M",
+      "type": "elemental",
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 18,
+          "from": [
+            "{@item plate armor|phb}"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "17d8 + 51",
+        "average": 127
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 18,
+      "dex": 10,
+      "con": 17,
+      "int": 8,
+      "wis": 10,
+      "cha": 10,
+      "passive": 10,
+      "cr": "7",
+      "shortName": "Earth Elemental Myrmidon",
+      "languages": [
+        "Terran",
+        "one language of its creator’s choice"
+      ],
+      "languageTags": [
+        "T"
+      ],
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "resist": [
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks"
+        }
+      ],
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "prone"
+      ],
+      "trait": [
+        {
+          "name": "Magic Weapons",
+          "entries": [
+            "The myrmidon’s weapon attacks are magical."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Magic Weapons"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The myrmidon makes two maul attacks."
+          ]
+        },
+        {
+          "name": "Maul",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Thunderous Strike {@recharge}",
+          "entries": [
+            "The myrmidon makes one maul attack. On a hit, the target takes an extra 16 ({@damage 3d10}) thunder damage, and the target must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "B",
+        "T"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "conditionInflict": [
+        "prone"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Earth Elemental Myrmidon|https://angrygolem-games.com/monster-manual/letter-e/earth-elemental-myrmidon/}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Earth Mephit",
+      "size": "S",
+      "type": {
+        "type": "elemental",
+        "tags": [
+          "mephit"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        11
+      ],
+      "hp": {
+        "formula": "5d6 + 10",
+        "average": 27
+      },
+      "speed": {
+        "walk": 30,
+        "fly": 10,
+        "canHover": false
+      },
+      "str": 10,
+      "dex": 13,
+      "con": 14,
+      "int": 8,
+      "wis": 12,
+      "cha": 8,
+      "passive": 13,
+      "cr": "1/4",
+      "shortName": "Earth Mephit",
+      "languages": [
+        "Terran"
+      ],
+      "languageTags": [
+        "T"
+      ],
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "skill": {
+        "perception": "+3",
+        "stealth": "+3"
+      },
+      "immune": [
+        "fire",
+        "poison"
+      ],
+      "conditionImmune": [
+        "poisoned"
+      ],
+      "trait": [
+        {
+          "name": "Change Size",
+          "entries": [
+            "Once per day, they can grow to a height of 10’ for one turn. Strength raises to 19 (+4), hit roll +8, fist damage {@damage 2d6 + 4} bludgeoning damage each."
+          ]
+        },
+        {
+          "name": "Spit Rock",
+          "entries": [
+            "The earth mephit can spit a rock at one target within 15’ hitting automatically ({@damage 2d6} damage). The use of this attack costs the mephit 2 hp a piece from its current total."
+          ]
+        },
+        {
+          "name": "Regeneration",
+          "entries": [
+            "The earth mephit regains 1 hit point at the start of its turn if they stand on ground for thre whole round."
+          ]
+        },
+        {
+          "name": "Vulnerability",
+          "entries": [
+            "{@spell Passwall} and {@spell Transmute Rock} spells destroy them instantly."
+          ]
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasting",
+          "headerEntries": [
+            "Once per hour an earth mephit can attempt to gate in 1-2 other mephits, either earth or magma. If two arrive, they are the same type."
+          ],
+          "daily": {
+            "9": [
+              "{@spell gate} ({@dice 1d2} {@creature earth mephit|AGGMM} or {@dice 1d2} {@creature magma mephit)|AGGMM}"
+            ]
+          },
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "I"
+      ],
+      "traitTags": [
+        "Regeneration"
+      ],
+      "action": [
+        {
+          "name": "Claws",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 4}) bludgeoning damage."
+          ]
+        }
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Earth Mephit|https://angrygolem-games.com/monster-manual/letter-e/earth-mephit-5e-stats/}",
+          "DESCRIPTION",
+          "These heavy, rocky mephits have stolid, humorless personalities. Stubborn and immune to insult, they look like small, thin {@creature earth elemental|AGGMM}s, with stony skin, glittering eyes, and rigid wings of dull metal. Their wings, which never flap, seem to play no role in the mephit’s magical flight. Earth mephits fly clumsily and smell like dirt.",
+          "ECOLOGY",
+          "Earth mephits need no food or drink to survive, but they enjoy the taste of gems and jewelry. To gain these they pursue money-making schemes, always with single-mindedness but also singular ineptitude."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Earth Spirit, American Indian’s Avatar",
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "avatar"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "N",
+        "G"
+      ],
+      "ac": [
+        20
+      ],
+      "hp": {
+        "formula": "23d10 + 92",
+        "average": 218
+      },
+      "speed": {
+        "walk": {
+          "number": 75,
+          "condition": "(burrowing)"
+        }
+      },
+      "str": 18,
+      "dex": 16,
+      "con": 18,
+      "int": 18,
+      "wis": 19,
+      "cha": 14,
+      "passive": 14,
+      "cr": "15",
+      "shortName": "Earth Spirit, American Indian’s Avatar",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "All"
+      ],
+      "skill": {
+        "acrobatics": "+4",
+        "animal handling": "+4",
+        "arcana": "+4",
+        "athletics": "+4",
+        "deception": "+4",
+        "history": "+4",
+        "insight": "+4",
+        "intimidation": "+4",
+        "investigation": "+4",
+        "medicine": "+4",
+        "nature": "+4",
+        "perception": "+4",
+        "performance": "+4",
+        "persuasion": "+4",
+        "religion": "+4",
+        "sleight of hand": "+4",
+        "stealth": "+4",
+        "survival": "+4"
+      },
+      "trait": [
+        {
+          "name": "Immunity",
+          "entries": [
+            "Earth’s avatar cannot be injured by weapons made of unworked natural materials."
+          ]
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "She casts spells as an 18th level Druid, save that she can call upon any clerical spell in the plant or animal spheres."
+          ],
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "CD"
+      ],
+      "action": [
+        {
+          "name": "Dagger",
+          "entries": [
+            "{@atk ms} {@hit 12} to hit, reach 5 ft., one target. {@h}12 ({@damage 1d6 + 6}) piercing damage."
+          ]
+        }
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Earth Spirit|https://angrygolem-games.com/monster-manual/letter-e/earth-spirit-american-indians-avatar/}",
+          "DESCRIPTION",
+          "Earth’s avatar always takes the form of an old woman.",
+          "{@link God & Clergy (go to page)|https://angrygolem-games.com/monster-manual/letter-e/earth-spirit-god-and-clerics-for-dd-5e/}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Efreeti (Fire Genie)",
+      "size": "L",
+      "type": {
+        "type": "elemental",
+        "tags": [
+          "genie"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 17,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "16d10 + 112",
+        "average": 200
+      },
+      "speed": {
+        "walk": 40,
+        "fly": 60,
+        "canHover": false
+      },
+      "str": 22,
+      "dex": 12,
+      "con": 24,
+      "int": 16,
+      "wis": 15,
+      "cha": 16,
+      "passive": 12,
+      "cr": "11",
+      "shortName": "Efreeti (Fire Genie)",
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "senseTags": [
+        "SD"
+      ],
+      "languages": [
+        "Ignan"
+      ],
+      "languageTags": [
+        "IG"
+      ],
+      "save": {
+        "int": "+7",
+        "wis": "+6",
+        "cha": "+7"
+      },
+      "immune": [
+        "fire"
+      ],
+      "trait": [
+        {
+          "name": "Elemental Demise",
+          "entries": [
+            "If the efreeti dies, its body disintegrates in a flash of fire and puff of smoke, leaving behind only equipment the efreeti was wearing or carrying."
+          ]
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasting",
+          "headerEntries": [
+            "The efreeti’s innate spell casting ability is Charisma (spell save {@dc 15}, +7 to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
+          ],
+          "will": [
+            "{@spell detect magic}"
+          ],
+          "daily": {
+            "3": [
+              "{@spell enlarge/reduce}",
+              "{@spell tongues}"
+            ],
+            "1e": [
+              "{@spell conjure elemental} ({@creature fire elemental|AGGMM} only)",
+              "{@spell gaseous form}",
+              "{@spell invisibility}",
+              "{@spell major image}",
+              "{@spell plane shift}",
+              "{@spell wall of fire}"
+            ]
+          },
+          "ability": "cha",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "I"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The efreeti makes two scimitar attacks or uses its Hurl Flame twice."
+          ]
+        },
+        {
+          "name": "Scimitar",
+          "entries": [
+            "{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d6 + 6}) slashing damage, plus 7 ({@damage 2d6}) fire damage."
+          ]
+        },
+        {
+          "name": "Hurl Flame",
+          "entries": [
+            "{@atk rs} {@hit 7} to hit, range 120 ft., one target. {@h}17 ({@damage 5d6}) fire damage."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "S",
+        "F"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Efreeti (Fire Genie)|https://angrygolem-games.com/monster-manual/letter-e/efreeti/}",
+          "{@link EFREETI’s TACTICS (read the article)|https://angrygolem-games.com/monster-tactics-fight-like-a-efreeti-fire-genie/}",
+          "DESCRIPTION",
+          "The efreet (singular: efreeti) are genies from the elemental plane of Fire. They are enemies of the djinn and attack them whenever they are encountered. A properly summoned or captured efreeti can be forced to serve for a maximum of 1,001 days, or it can be made to fulfill three wishes.",
+          "Efreet are not willing servants and seek to pervert the intent of their masters by adhering to the letter of their commands.",
+          "The efreet are said to be made of basalt, bronze, and solid flames. They are massive, solid creatures.",
+          "HABITAT / SOCIETY",
+          "Efreet are infamous for their hatred of servitude, desire for revenge, cruel nature, and ability to beguile and mislead. The efreet’s primary home is their Great Citadel, the fabled City of Brass, but there are many other efreet outposts throughout the plane of Fire.",
+          "An efreet outpost is a haven for 4d10 efreet and is run as a military station to watch or harass others in the plane. These outposts are run by a malik or vali of maximum normal hit points. There is a 10% chance that the outpost is also providing a temporary home for {@dice1d4} {@creature janni|AGGMM} or {@dice 1d4} {@creature dao|AGGMM} (the only other genies efreet tolerate).",
+          "Outpost forces are usually directed against incursions from the Elemental plane of Air, but they can be directed against any travelers deemed suitable for threats, robbery, and abuse. Efreet are lawful, but tend toward organized evil, They are ruled by a grand sultan who makes his home in the City of Brass.",
+          "He is advised by a variety of beys, amirs, and maliks concerning actions within the plane, and by six great pashas who deal with efreet business on the Prime Material plane.",
+          "The City of Brass is a huge citadel that is home to the majority of efreet. It hovers in the hot regions of the plane and is often bordered by seas of magma and lakes of glowing lava.",
+          "The city sits upon a hemisphere of golden, glowing brass some 40 miles across. From the upper towers rise the minarets of the great bastion of the Sultan’s Palace. Vast riches are said to be in the palace of the sultan. The city has an efreet population that far outnumbers the great cities of the Prime Material plane.",
+          "The sultan wields the might of a Greater Power, while many of his advisors are akin to Lesser Powers and Demi Powers.",
+          "ECOLOGY",
+          "Fire elementals tend to avoid the efreet, whom they feel are oppressive and opportunistic. Djinn hate them, and there have been numerous direct clashes.",
+          "Efreet view most other creatures either as enemies or servants, a view that does not endear them to other genies."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
     }
 	]
 }
