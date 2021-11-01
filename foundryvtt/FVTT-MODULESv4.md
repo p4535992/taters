@@ -34,7 +34,6 @@
 - [UTILITY][Monks TokenBar](https://github.com/ironmonk88/monks-tokenbar)
 - [UTILITY][Automated Animations DnD5e](https://github.com/otigon/automated-jb2a-animations )
 - [CHAT][Chat Images](https://github.com/bmarian/chat-images )
-- [UTILITY][Quick Insert](https://gitlab.com/fvtt-modules-lab/quick-insert )
 - [TOKEN/SCENES][pull-players-to-scene](https://github.com/Mr-Byte/pull-players-to-scene )
 - [CHAT][Chat Portrait](https://github.com/ShoyuVanilla/FoundryVTT-Chat-Portrait/ )
 
@@ -44,6 +43,7 @@
 - [MACRO/COMBAT][Trigger Happy](https://github.com/League-of-Foundry-Developers/fvtt-module-trigger-happy )
 - [CHARACTER SHEET](https://github.com/ElfFriend-DnD/foundryvtt-link-item-resource-5e)
 - [Scene][Monk's Active Tile Triggers](https://github.com/ironmonk88/monks-active-tiles/)
+- [ENTITY][Search Anywhere](https://gitlab.com/riccisi/foundryvtt-search-anywhere ) - https://gitlab.com/riccisi/foundryvtt-search-anywhere/raw/master/module/module.json
 
 ## [MUST HAVE] CHARACTER SHEET
 

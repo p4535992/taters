@@ -18,6 +18,7 @@
 - [NOT ESSENTIAL][WALL][Show-Walls-Everywhere](https://github.com/theripper93/Show-Walls-Everywhere) - https://raw.githubusercontent.com/theripper93/Show-Walls-Everywhere/main/module.json
 - [NOT ESSENTIAL][COMBAT][Turn Announcer](https://gitlab.com/koboldworks/agnostic/turn-announcer)
 - [BETTER https://gitlab.com/jstebenne/foundryvtt-calendar-weather][UTILITY][Smalltime](https://github.com/unsoluble/smalltime)
+- [BETTER Search Anywhere][UTILITY][Quick Insert](https://gitlab.com/fvtt-modules-lab/quick-insert )
 
 ## 2021-09
 
@@ -173,7 +174,6 @@
 - [NOT ESSENTIAL][UTILITY][Foundry PLANT (PLAyer Needs Tracker)](https://github.com/GameMaker/FoundryPLANT )
 - [DEPRECATED USE https://github.com/kckaiwei/TurnMarker-alt][COMBAT][Turn Maker](https://github.com/Brunhine/TurnMarker ) - 
 - [DEPRECATED][EXTERNAL][FoundryVTT - Workshop's Party Unit Frames](https://github.com/p4535992/party-unit-frames )
-- [USE INSTEAD Quick Insert][ENTITY][Search Anywhere](https://gitlab.com/riccisi/foundryvtt-search-anywhere ) - https://gitlab.com/riccisi/foundryvtt-search-anywhere/raw/master/module/module.json
 - [NOT UPDATED][CHARACTER SHEET/UTILITY][FoundryVTT-GiveItem](https://github.com/Sepichat/FoundryVTT-GiveItem )
 - [USE INSTEAD LMRTFY][CHARACTHER SHEET/UTILITY][NAP TIME](https://github.com/BadIdeasBureau/nap-time)
 - [DEPRECATED][MAP][Show Door Icons](https://github.com/wsaunders1014/ShowDoorIcons/ ) - https://raw.githubusercontent.com/wsaunders1014/ShowDoorIcons/master/module.json
