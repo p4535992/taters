@@ -1,6 +1,4 @@
-# foundryvtt-tdb-backupfull
-
-Full backup di tutti gli assets della Taverna del Beerholder
+# Linee guida per una gestione furba degli assets su FoundryVTT
 
 # Documenti e risorse utili per iniziare (ancora in scrittura, i documenti potrebbero variare)
 
