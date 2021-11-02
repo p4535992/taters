@@ -65,6 +65,7 @@
 - [COMBAT][Arbron's Improved HP Bar](https://github.com/arbron/fvtt-hp-bar)
 - [COMBAT][Combat Utility Belt](https://github.com/death-save/combat-utility-belt )
 - [COMBAT][Resource Icons](https://github.com/jessev14/resource-icons)
+- [COMBAT][Advanced Spell Effects](https://github.com/Vauryx/AdvancedSpellEffects)
 
 ## [NOT ESSENTIAL BUT VERY GOOD] 0.8.6
 
