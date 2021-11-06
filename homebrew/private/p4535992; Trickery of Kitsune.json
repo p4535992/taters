@@ -520,14 +520,13 @@
 			"name": "Geisha's War Fan",
 			"type": "M",
 			"weapon": true,
-			"weaponCategory": "exotic",
+			"weaponCategory": "martial",
 			"rarity": "uncommon",
 			"value": 3000,
 			"weight": 3,
 			"dmg1": "1d6",
 			"dmgType": "S",
 			"property": [
-				"EX",
 				"L",
 				"F",
 				"S",
@@ -544,6 +543,15 @@
 				}
 			],
 			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "modules/trickery-of-kitsune-packer/assets/items/Concubine_Swarfan_Frontnobg/concubine_swarfan_frontnobg.png"
+						}
+					}
+				],
 				"entries": [
 					"Some assassins rely on stealth. Others, like some Geishas, prefer to hide in plain sight, beguiling their quarry into a stupor before finishing them off with a quick slash.",
 					"Weapon. This magic fan can be used as a martial melee weapon. It has the finesse, light, and thrown (20/60 ft.) properties and deals  [[/r 1d6]] slashing damage on a hit. Ranged weapon attacks made with this fan ignore half cover.",
@@ -611,7 +619,44 @@
 						"As an action you can point at a corpse and expend 1 charge. A tail shoots towards the body, forming a ghostly re-enactment of the ten seconds before the corpse's death. "
 					]
 				}
-			]
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "modules/trickery-of-kitsune-packer/assets/items/Mask_of_the_Kitsune_Frontnobg/Maskofthekitsune_frontnobg.png"
+						}
+					}
+				],
+				"entries": [
+					"A beautiful ceramic Kitsune mask.",
+					"This mask has 6 charges, which manifest as six, incorporeal, fox-like tails. While wearing this mask you can use the Soul Spin, Spirit Ray, and Spirit Trance properties.",
+					{
+						"type": "entries",
+						"name": "Soul Spin",
+						"entries": [
+							"As an action you can spend 3 charges, conjuring a fierce vortex of ethereal fire, in a 10-foot-wide, 40-foot-high cylinder on a point within 120 feet for up to 1 minute, as if concentrating on a spell. Until the effect ends, dim light fills the cylinder and is shed for 10 feet. When a creature enters the spell's area for the first time on a turn or starts its turn there, it is engulfed in raging purple flames and must make a DC 15 Intelligence saving throw. It takes [[/r 3d6]] psychic damage on a failed save, or half as much damage on a successful one.",
+							"On each of your turns after you cast this spell, you can use an action to move the vortex up to 60 feet in any direction."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Spirit Ray",
+						"entries": [
+							"As an action you can spend any number of charges to cause the same number of tails to whip into ghostly rays which you hurl at targets within 120 feet. Make a ranged spell attack (+7 to hit) for each ray, dealing [[/r 2d6]] psychic damage on a hit."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Spirit Trance",
+						"entries": [
+							"As an action you can point at a corpse and expend 1 charge. A tail shoots towards the body, forming a ghostly re-enactment of the ten seconds before the corpse's death. "
+						]
+					}
+				]
+			}
 		}
 	],
 	"spell": [
@@ -620,6 +665,7 @@
 			"name": "Beguiling Dance",
 			"level": 6,
 			"school": "E",
+			"page": 0,
 			"time": [
 				{
 					"number": 1,
@@ -666,6 +712,7 @@
 			"name": "Soul Spin",
 			"level": 8,
 			"school": "V",
+			"page": 0,
 			"time": [
 				{
 					"number": 1,
@@ -709,6 +756,7 @@
 			"name": "Spirit Ray",
 			"level": 2,
 			"school": "V",
+			"page": 0,
 			"time": [
 				{
 					"number": 1,
@@ -744,6 +792,7 @@
 			"name": "Spirit Trance",
 			"level": 0,
 			"school": "D",
+			"page": 0,
 			"time": [
 				{
 					"number": 1,
