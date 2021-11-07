@@ -44,13 +44,13 @@
 - [CHARACTER SHEET](https://github.com/ElfFriend-DnD/foundryvtt-link-item-resource-5e)
 - [Scene][Monk's Active Tile Triggers](https://github.com/ironmonk88/monks-active-tiles/)
 - [ENTITY][Search Anywhere](https://gitlab.com/riccisi/foundryvtt-search-anywhere ) - https://gitlab.com/riccisi/foundryvtt-search-anywhere/raw/master/module/module.json
+- [CHARACTER SHEET][Items with Rollable Tables DnD5e](https://github.com/ElfFriend-DnD/foundryvtt-items-with-rolltables-5e)
 
 ## [MUST HAVE] CHARACTER SHEET
 
 - [CHARACTER SHEET][Tidy Sheet 5e](https://github.com/sdenec/tidy5e-sheet ) - https://raw.githubusercontent.com/sdenec/tidy5e-sheet/master/module.json
 - [CHARACTER SHEET][Loot Sheet NPC 5e](https://github.com/jopeek/fvtt-loot-sheet-npc-5e ) - https://raw.githubusercontent.com/jopeek/fvtt-loot-sheet-npc-5e/master/module.json
 - [CHARACTER SHEET][Merchant Sheet NPC](https://github.com/whelan/fvtt-merchant-sheet-npc)
-
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
@@ -87,7 +87,7 @@
 - [TOKEN][About Face](https://github.com/mclemente/about-face)
 - [ENTITY][Not Enough NPCs: A 5e NPC Generator](https://github.com/ardittristan/VTTNPCGen )
 - [JOURNAL/CHAT][Polyglot](https://github.com/League-of-Foundry-Developers/fvtt-module-polyglot )
-
+- [JOURNAL][Storyteller for Foundry VTT](https://github.com/Xbozon/storyteller)
 
 ## MODULES LANGUAGE ITA
 
