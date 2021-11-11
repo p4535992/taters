@@ -2,6 +2,11 @@
 # NOT ESSENTIAL 
 # ======================================================================
 
+## 2021-11
+
+- [VERY GOOD BUT NO ESSENTIAL][COMBAT][Active Auras](https://github.com/kandashi/Active-Auras )
+- [IS BETTER SCENE PACKER][EXTERNAL][Adventure Import Export](https://github.com/cstadther/adventure-import-export )
+
 ## 2021-10
 
 - [BETTER SOUNDBOARD][AUDIO][Playlist Import](https://github.com/JacobMcAuley/playlist_import ) - https://raw.githubusercontent.com/JacobMcAuley/playlist_import/master/module.json
