@@ -116,7 +116,7 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 - [ENTITY][Not Enough NPCs: A 5e NPC Generator](https://github.com/ardittristan/VTTNPCGen )
 - [CHARACTHER SHEET/UTILITY][Downtime Tracking 5e Training](https://github.com/crash1115/5e-training )
 - [ITEM][Items with Rollable Tables DnD5e](https://github.com/ElfFriend-DnD/foundryvtt-items-with-rolltables-5e)
-- [CHARACTER SHEET](https://github.com/ElfFriend-DnD/foundryvtt-link-item-resource-5e)
+- [CHARACTER SHEET][Link Item and Resource DnD5e](https://github.com/ElfFriend-DnD/foundryvtt-link-item-resource-5e)
 - [CHARACTER SHEET/UTILITY][Variant Encumbrance 5e](https://github.com/VanirDev/VariantEncumbrance )
 - [TOKEN][Innocenti's Lootv](https://github.com/rinnocenti/innocenti-loot)
 
