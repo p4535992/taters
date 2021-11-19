@@ -88,6 +88,8 @@
 - [UTILITY][Environment Interaction](https://github.com/jessev14/environment-interaction)
 - [World Explorer](https://github.com/CarlosFdez/world-explorer)
 - [Compendium Importer for Foundry VTT](https://gitlab.com/mkahvi/fvtt-compendium-importer)
+- [TOKEN][Target Reacts](https://github.com/Vauryx/TargetReacts)
+
 ## MODULES LANGUAGE ITA
 
 SCONSIGLIO VIVAMENTE DI USARE QUESTI MODULI NON PERCHE' NON FUNZIONANO MA
@@ -118,11 +120,13 @@ NOMI ECC. E SONO CAUSA DI STUPIDI PROBLEMI NON RISOLVIBILI
 - [ITEM][Items with Rollable Tables DnD5e](https://github.com/ElfFriend-DnD/foundryvtt-items-with-rolltables-5e)
 - [CHARACTER SHEET](https://github.com/ElfFriend-DnD/foundryvtt-link-item-resource-5e)
 - [CHARACTER SHEET/UTILITY][Variant Encumbrance 5e](https://github.com/VanirDev/VariantEncumbrance )
+- [TOKEN][Innocenti's Lootv](https://github.com/rinnocenti/innocenti-loot)
 
 ## [SYSTEM] PATHFINDER 1 MODULES
 
 - https://github.com/Lo-create/foundry-pf1-content
 - [CHARACTER SHEET][Loot Sheet NPC Pathfinder1](https://github.com/SvenWerlen/fvtt-loot-sheet-npc-pf1 )
+
 ## [SYSTEM] PATHFINDER 2 MODULES
 
 - [COMBAT][SIFToolkit](https://github.com/bitkiller0/SIFToolkit)
@@ -148,6 +152,9 @@ NOMI ECC. E SONO CAUSA DI STUPIDI PROBLEMI NON RISOLVIBILI
 - [SYSTEM] [Ratas en las paredes](https://foundryvtt.com/packages/ratasenlasparedes/ )
 - [SYSTEM] [kamigakarija](https://github.com/BrotherSharper/kamigakarija )
 - [SYSTEM] [13th Age MODULES](https://gitlab.com/asacolips-projects/foundry-mods/archmage )
+
+# ======================================================================
+# ======================================================================
 
 ## MODULES COMPENDIUM
 
@@ -198,14 +205,12 @@ NOMI ECC. E SONO CAUSA DI STUPIDI PROBLEMI NON RISOLVIBILI
 # ======================================================================
 # ======================================================================
 # ======================================================================
-# ======================================================================
-# ======================================================================
 
 ## UI Projects
 
 - [UI][Ernie's Modern UI](https://github.com/ernieayala/ernies-modern-layout )
 
-## MACROS Projects
+## OLD MACROS Projects
 
 - [OLD][MACRO][Commnunity Macros](https://github.com/foundry-vtt-community/macros )
 - [OLD][MACRO][Personal Macro by kekilla](https://github.com/Kekilla0/Personal-Macros )
