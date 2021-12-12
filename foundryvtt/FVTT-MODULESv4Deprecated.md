@@ -6,6 +6,7 @@
 
 - [VERY GOOD BUT NO ESSENTIAL][COMBAT][Active Auras](https://github.com/kandashi/Active-Auras )
 - [IS BETTER SCENE PACKER][EXTERNAL][Adventure Import Export](https://github.com/cstadther/adventure-import-export )
+- [Compendium Importer for Foundry VTT](https://gitlab.com/mkahvi/fvtt-compendium-importer)
 
 ## 2021-10
 

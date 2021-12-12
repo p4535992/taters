@@ -87,8 +87,10 @@
 
 - [UTILITY][Environment Interaction](https://github.com/jessev14/environment-interaction)
 - [World Explorer](https://github.com/CarlosFdez/world-explorer)
-- [Compendium Importer for Foundry VTT](https://gitlab.com/mkahvi/fvtt-compendium-importer)
 - [TOKEN][Target Reacts](https://github.com/Vauryx/TargetReacts)
+- [TOKEN][Inactive Tokens](https://github.com/jagoe/fvtt-module-inactive-tokens)
+- [UTILITY][Drag Anything To Hotbar for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-drag-all-to-hotbar)
+- [LIGHT/SOUND][Light/Sound Mask](https://github.com/caewok/fvtt-light-mask)
 
 ## MODULES LANGUAGE ITA
 
@@ -118,7 +120,7 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 - [ITEM][Items with Rollable Tables DnD5e](https://github.com/ElfFriend-DnD/foundryvtt-items-with-rolltables-5e)
 - [CHARACTER SHEET][Link Item and Resource DnD5e](https://github.com/ElfFriend-DnD/foundryvtt-link-item-resource-5e)
 - [CHARACTER SHEET/UTILITY][Variant Encumbrance 5e](https://github.com/VanirDev/VariantEncumbrance )
-- [TOKEN][Innocenti's Lootv](https://github.com/rinnocenti/innocenti-loot)
+- [TOKEN][Innocenti's Loot](https://github.com/rinnocenti/innocenti-loot)
 
 ## [SYSTEM] PATHFINDER 1 MODULES
 
