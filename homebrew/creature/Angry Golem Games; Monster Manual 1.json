@@ -34686,6 +34686,1831 @@
           }
         ]
       }
+    },
+    {
+      "name": "Gnoll Flesh Gnawer",
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "gnoll"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 14,
+          "from": [
+            "{@item studded leather armor|phb}"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "4d8 + 4",
+        "average": 22
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 12,
+      "dex": 14,
+      "con": 12,
+      "int": 8,
+      "wis": 10,
+      "cha": 8,
+      "passive": 10,
+      "cr": "1",
+      "shortName": "Gnoll Flesh Gnawer",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "Gnoll"
+      ],
+      "languageTags": [
+        "OTH"
+      ],
+      "save": {
+        "dex": "+4"
+      },
+      "trait": [
+        {
+          "name": "Rampage",
+          "entries": [
+            "When the gnoll reduces a creature to 0 hit points with a melee attack on its turn, the gnoll can take a bonus action to move up to half its speed and make a bite attack."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Rampage"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The gnoll makes three attacks: one with its bite and two with its shortsword."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+          ]
+        },
+        {
+          "name": "Shortsword",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+          ]
+        },
+        {
+          "name": "Sudden Rush",
+          "entries": [
+            "Until the end of the turn, the gnoll’s speed increases by 60 feet and it doesn’t provoke opportunity attacks."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Gnoll Flesh Gnawer|https://angrygolem-games.com/monster-manual/letter-g/gnoll-flesh-gnawler-5e-stats/}",
+          "DESCRIPTION",
+          "If any group of gnolls could be said to be more feral than the others, that distinction would go to the flesh gnawers. These gnolls eschew the use of ranged weapons in favor of short blades that they wield with speed and efficiency. In the thick of a fight, they are capable of dashing across the field, slashing and snarling as they run down stragglers and finish off wounded foes."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Gnoll Hunter",
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "gnoll"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 13,
+          "from": [
+            "{@item leather armor|phb}"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "4d8 + 4",
+        "average": 22
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 14,
+      "dex": 14,
+      "con": 12,
+      "int": 8,
+      "wis": 12,
+      "cha": 8,
+      "passive": 13,
+      "cr": "1/2",
+      "shortName": "Gnoll Hunter",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "Gnoll"
+      ],
+      "languageTags": [
+        "OTH"
+      ],
+      "skill": {
+        "perception": "+3",
+        "stealth": "+4"
+      },
+      "trait": [
+        {
+          "name": "Rampage",
+          "entries": [
+            "When the gnoll reduces a creature to 0 hit points with a melee attack on its turn, the gnoll can take a bonus action to move up to half its speed and make a bite attack."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Rampage"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The gnoll makes two melee attacks with its spear or two ranged attacks with its longbow."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+          ]
+        },
+        {
+          "name": "Spear",
+          "entries": [
+            "{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage in melee, or 5 ({@damage 1d6 + 2}) piercing damage at range, or 6 ({@damage 1d8 + 2}) piercing damage if used with both hands."
+          ]
+        },
+        {
+          "name": "Longbow",
+          "entries": [
+            "{@atk rw} {@hit 4} to hit, range 150/600 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage, and the target’s speed is reduced by 10 feet until the end of its next turn."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MW",
+        "RW",
+        "THW",
+        "RNG"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Gnoll Hunter|https://angrygolem-games.com/monster-manual/letter-g/gnoll-hunter-5e-stats/}",
+          "DESCRIPTION",
+          "Hunters are the stealthiest gnolls in a war band, and they put their talents to use on the battlefield in a number of ways. In the vanguard of a war band, hunters creep around, picking off isolated opposition while clearing the way for the rest of the force to run roughshod over the enemy’s territory. Hunters are particularly skilled with the longbow,",
+          "and they fire arrows with viciously barbed heads. Even when a hunter doesn’t kill its target with its first shot, the arrow strike brings so much pain that the victim is hobbled in its attempt to run away. When a hunter on the prowl finds prey and isn’t concerned about remaining stealthy, it sounds a horn crafted from bone that produces a keening wail similar to a banshee’s yell."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Gnoll Pack Lord",
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "gnoll"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 15,
+          "from": [
+            "{@item chain shirt|phb}"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "9d8 + 9",
+        "average": 49
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 16,
+      "dex": 14,
+      "con": 13,
+      "int": 8,
+      "wis": 11,
+      "cha": 9,
+      "passive": 10,
+      "cr": "2",
+      "shortName": "Gnoll Pack Lord",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "Gnoll"
+      ],
+      "languageTags": [
+        "OTH"
+      ],
+      "trait": [
+        {
+          "name": "Rampage",
+          "entries": [
+            "When the gnoll reduces a creature to 0 hit points with a melee attack on its turn, the gnoll can take a bonus action to move up to half its speed and make a bite attack."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Rampage"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The gnoll makes two attacks, either with its glaive or its longbow, and uses its Incite Rampage if it can."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage."
+          ]
+        },
+        {
+          "name": "Glaive",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}8 ({@damage 1d10 + 3}) slashing damage."
+          ]
+        },
+        {
+          "name": "Longbow",
+          "entries": [
+            "{@atk rw} {@hit 4} to hit, range 150/600 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+          ]
+        },
+        {
+          "name": "Incite Rampage {@recharge 5}",
+          "entries": [
+            "One creature the gnoll can see within 30 feet of it can use its reaction to make a melee attack if it can hear the gnoll and has the Rampage trait."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P",
+        "S"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH",
+        "RW",
+        "RNG"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Gnoll Pack Lord|https://angrygolem-games.com/monster-manual/letter-g/gnoll-pack-lord-5e-stats/}",
+          "{@link GNOLL’s TACTICS (read the article)|https://angrygolem-games.com/monster-tactics-fight-like-a-gnoll/}",
+          "DESCRIPTION",
+          "Gnolls are large, evil, hyena-like humanoids that roam about in loosely organized bands. While the body of a gnoll is shaped like that of a large human, the details are those of a hyena. They stand erect on two legs and have hands that can manipulate as well as those of any human.",
+          "They have greenish gray skin, darker near the muzzle, with a short reddish gray to dull yellow mane. Gnolls have their own language and many also speak the tongues of flinds, trolls, orcs, or hobgoblins.",
+          "HABITAT / SOCIETY",
+          "Gnolls are most often encountered underground or inside abandoned ruins. When above ground they operate primarily at night. Gnoll society is ruled by the strongest, using fear and intimidation. When found underground, they will have (30% chance) 1d3 trolls as guards and servants.",
+          "Above ground they keep pets (65% of the time) such as 4d4 hyenas (80%) or 2d6 hyaenodons (20%) which can act as guards. A gnoll lair will contain between 20d10 adult males. For every 20 gnoll, there will be a 7 Hit Die leader. If 100 or more are encountered there will also be a chieftain who has 10 Hit Dice, an Armor Class of 17, and who receives a +5 to hit and +3 on damage rolls due to his great strength. Further, each chieftain will be protected by 2d6 elite warrior guards of 7 Hit Dice (AC 16).",
+          "In a lair, there will be females equal to half the number of males. Females are equal to males in combat, though not usually as well armed or armored. There will also be twice as many young as there are adults in the lair, but they do not fight. Gnolls always have at least 1 slave for every 10 adults in the lair, and may have many more.",
+          "Gnolls will work together with orcs, hobgoblins, bugbears, ogres, and trolls. If encountered as a group, there must be a relative equality of strength. Otherwise the polls will kill and eat their partners (hunger comes before friendship or fear) or be killed and eaten by them. They dislike goblins, kobolds, giants, humans, demi-humans and any type of manual labor.",
+          "ECOLOGY",
+          "Gnolls eat anything warm blooded, favoring intelligent creatures over animals because they scream better. They will completely hunt out an area before moving on. It may take several years for the game to return. When allowed to die of old age,",
+          "the typical gnoll lives to be about 35 years old."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Gnoll Witherling",
+      "size": "M",
+      "type": {
+        "type": "fiend",
+        "tags": [
+          "gnoll"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 12,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "2d8 + 2",
+        "average": 11
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 14,
+      "dex": 8,
+      "con": 12,
+      "int": 5,
+      "wis": 5,
+      "cha": 5,
+      "passive": 7,
+      "cr": "1/4",
+      "shortName": "Gnoll Witherling",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "understands Gnoll but can’t speak"
+      ],
+      "languageTags": [
+        "OTH"
+      ],
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "exhaustion",
+        "poisoned"
+      ],
+      "trait": [
+        {
+          "name": "Rampage",
+          "entries": [
+            "When the witherling reduces a creature to 0 hit points with a melee attack on its turn, it can take a bonus action to move up to half its speed and make a bite attack."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Rampage"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The witherling makes two attacks: one with its bite and one with its club, or two with its club."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+          ]
+        },
+        {
+          "name": "Club",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) bludgeoning damage."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P",
+        "B"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "reaction": [
+        {
+          "name": "Vengeful Strike",
+          "entries": [
+            "In response to a gnoll being reduced to 0 hit points within 30 feet of the witherling, the witherling makes a melee attack."
+          ]
+        }
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Gnoll Witherling|https://angrygolem-games.com/monster-manual/letter-g/gnoll-witherling-5e-stats/}",
+          "DESCRIPTION",
+          "Sometimes gnolls turn against each other, perhaps to determine who rules a war band or because of extreme starvation. Even under ordinary circumstances, gnolls that are deprived of victims for too long can’t control their hunger and violent urges. Eventually, they fight among themselves.",
+          "The survivors devour the flesh of their slain comrades but preserve the bones. Then, by invoking rituals to Yeenoghu, they bring the remains back to a semblance of life in the form of a gnoll witherling.",
+          "Witherlings act much as gnolls do in life, traveling with their comrades and trying to kill anything in their path. They don’t eat and aren’t motivated by hunger, leaving more flesh for the rest of the war band. Gnoll witherlings are incapable of wielding any weapon more",
+          "sophisticated than a simple club."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Goat",
+      "size": "M",
+      "type": {
+        "type": "beast",
+        "tags": [
+          "animal"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        10
+      ],
+      "hp": {
+        "formula": "1d8",
+        "average": 4
+      },
+      "speed": {
+        "walk": 40
+      },
+      "str": 12,
+      "dex": 10,
+      "con": 11,
+      "int": 2,
+      "wis": 10,
+      "cha": 5,
+      "passive": 10,
+      "cr": "0",
+      "shortName": "Goat",
+      "trait": [
+        {
+          "name": "Charge",
+          "entries": [
+            "If the goat moves at least 20 ft. straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 2 ({@damage 1d4}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 10} Strength saving throw or be knocked {@condition prone}."
+          ]
+        },
+        {
+          "name": "Sure-Footed",
+          "entries": [
+            "The goat has advantage on Strength and Dexterity saving throws made against effects that would knock it {@condition prone}."
+          ]
+        }
+      ],
+      "conditionInflict": [
+        "prone"
+      ],
+      "traitTags": [
+        "Charge"
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "action": [
+        {
+          "name": "Ram",
+          "entries": [
+            "{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) bludgeoning damage."
+          ]
+        }
+      ],
+      "miscTags": [
+        "MW"
+      ]
+    },
+    {
+      "name": "Goblin",
+      "size": "S",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "goblinoid"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "N",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 15,
+          "from": [
+            "{@item leather armor|phb}",
+            "{@item shield|phb}"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "2d6",
+        "average": 7
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 8,
+      "dex": 14,
+      "con": 10,
+      "int": 10,
+      "wis": 8,
+      "cha": 8,
+      "passive": 9,
+      "cr": "1/4",
+      "shortName": "Goblin",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "Common",
+        "Goblin"
+      ],
+      "languageTags": [
+        "C",
+        "GO"
+      ],
+      "skill": {
+        "stealth": "+6"
+      },
+      "trait": [
+        {
+          "name": "Nimble Escape",
+          "entries": [
+            "The goblin can take the Disengage or Hide action as a bonus action on each of its turns."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Scimitar",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage."
+          ]
+        },
+        {
+          "name": "Shortbow",
+          "entries": [
+            "{@atk rw} {@hit 4} to hit, range 80/320 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+          ]
+        }
+      ],
+      "miscTags": [
+        "MW",
+        "RW",
+        "RNG"
+      ],
+      "damageTags": [
+        "S",
+        "P"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Goblin|https://angrygolem-games.com/monster-manual/letter-g/goblin/}",
+          "{@link GOBLIN’s TACTICS (read the article)|https://angrygolem-games.com/monster-tactics-fight-like-a-goblin/}",
+          "DESCRIPTION",
+          "These small, evil humanoids would be merely pests, if not for their great numbers. Goblins have flat faces, broad noses, pointed ears, wide mouths and small, sharp fangs. Their foreheads slope back, and their eyes are usually dull and glazed.",
+          "They always walk upright, but their arms hang down almost to their knees. Their skin colors range from yellow through any shade of orange to a deep red. Usually a single tribe has members all of about the same color skin.",
+          "Their eyes vary from bright red to a gleaming lemon yellow. They wear clothing of dark leather, tending toward dull soiled-looking colors. Goblin speech is harsh, and pitched higher than that of humans.",
+          "In addition to their own language, some goblins can speak in the kobold, orc, and hobgoblin tongues.",
+          "HABITAT / SOCIETY",
+          "Humans would consider the caves and underground dwellings of goblins to be dank and dismal. Those few tribes that live above ground are found in ruins, and are only",
+          "active at night or on very dark, cloudy days. They use no form of sanitation, and their lairs have a foul stench. Goblins seem to be somewhat resistant to the diseases that breed in such filth.",
+          "They live a communal life, sharing large common areas for eating and sleeping. Only leaders have separate living spaces. All their possessions are carried with them. Property of the tribe is kept with the chief and sub-chiefs. Most of their goods are stolen, although they do manufacture their own garments and leather goods.",
+          "The concept of privacy is largely foreign to goblins. A typical goblin tribe has 4d10 x 10 adult male warriors. For every 40 goblins there will be a leader and his 4 assistants, each having 3 Hit Die.",
+          "For every 200 goblins there will be a sub-chief and 2d4 bodyguards, each of which has 4 Hit Dice, is Armor Class 16, and armed with a battle axe. The tribe has a single goblin chief and 2d4 bodyguards each of 5 Hit Dice, Armor Class 17, and armed with two weapons.",
+          "There is a 25% chance that 10% of their force will be mounted upon huge worgs, and have another 1d4x10 unmounted worgs with them. There is a 60% chance that the lair is guarded by 5d6 such wolves, and a 20% chance of 2d6 bugbears. Goblin shamans (clerics) are rare, but have been known to reach 7th level.",
+          "In addition to the males, there will be adult females equal to 60% of their number and children equal to the total number of adults in the lair. Neither will fight in battles.",
+          "A goblin tribe has an exact pecking order; each member knows who is above him and who is below him. They fight amongst themselves constantly to move up this social ladder.",
+          "They often take slaves for both food and labor. The tribe will have slaves of several races numbering 10-40% of the size of the tribe. Slaves are always kept shackled, and are staked to a common chain when sleeping.",
+          "Goblins hate most other humanoids, gnomes and dwarves in particular, and work to exterminate them whenever possible.",
+          "ECOLOGY",
+          "Goblins live only 50 years or so. They do not need to eat much, but will kill just for the pleasure of it. They eat any creature from rats and snakes to humans. In lean times they will eat carrion.",
+          "Goblins usually spoil their habitat, driving game from it and depleting the area of all resources. They are decent miners, able to note new or unusual construction in an underground area, and any habitat will soon be expanded by a maze-like network of tunnels."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Goblin Boss",
+      "size": "S",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "goblinoid"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "N",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 17,
+          "from": [
+            "{@item chain shirt|phb}",
+            "{@item shield|phb}"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "6d6",
+        "average": 21
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 10,
+      "dex": 14,
+      "con": 10,
+      "int": 10,
+      "wis": 8,
+      "cha": 10,
+      "passive": 9,
+      "cr": "1",
+      "shortName": "Goblin Boss",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "Common",
+        "Goblin"
+      ],
+      "languageTags": [
+        "C",
+        "GO"
+      ],
+      "skill": {
+        "stealth": "+6"
+      },
+      "trait": [
+        {
+          "name": "Nimble Escape",
+          "entries": [
+            "The goblin can take the Disengage or Hide action as a bonus action on each of its turns."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The goblin makes two attacks with its scimitar. The second attack has disadvantage."
+          ]
+        },
+        {
+          "name": "Scimitar",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage."
+          ]
+        },
+        {
+          "name": "Javelin",
+          "entries": [
+            "{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage in melee, or 5 ({@damage 1d6 + 2}) piercing damage at range."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "S",
+        "P"
+      ],
+      "miscTags": [
+        "MW",
+        "RW",
+        "THW"
+      ],
+      "reaction": [
+        {
+          "name": "Redirect Attack",
+          "entries": [
+            "When a creature the goblin can see targets it with an attack, the goblin chooses another goblin within 5 feet of it. The two goblins swap places, and the chosen goblin becomes the target instead."
+          ]
+        }
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Goblin Boss|https://angrygolem-games.com/monster-manual/letter-g/goblin-boss-5e-stats/}",
+          "{@link GOBLIN’s TACTICS (read the article)|https://angrygolem-games.com/monster-tactics-fight-like-a-goblin/}",
+          "DESCRIPTION",
+          "These small, evil humanoids would be merely pests, if not for their great numbers.",
+          "Goblins have flat faces, broad noses, pointed ears, wide mouths and small, sharp fangs. Their foreheads slope back, and their eyes are usually dull and glazed.",
+          "They always walk upright, but their arms hang down almost to their knees. Their skin colors range from yellow through any shade of orange to a deep red. Usually a single tribe has members all of about the same color skin.",
+          "Their eyes vary from bright red to a gleaming lemon yellow. They wear clothing of dark leather, tending toward dull soiled-looking colors. Goblin speech is harsh, and pitched higher than that of humans.",
+          "In addition to their own language, some goblins can speak in the kobold, orc, and hobgoblin tongues.",
+          "HABITAT / SOCIETY",
+          "Humans would consider the caves and underground dwellings of goblins to be dank and dismal. Those few tribes that live above ground are found in ruins, and are only",
+          "active at night or on very dark, cloudy days. They use no form of sanitation, and their lairs have a foul stench. Goblins seem to be somewhat resistant to the diseases that breed in such filth.",
+          "They live a communal life, sharing large common areas for eating and sleeping. Only leaders have separate living spaces. All their possessions are carried with them. Property of the tribe is kept with the chief and sub-chiefs. Most of their goods are stolen, although they do manufacture their own garments and leather goods.",
+          "The concept of privacy is largely foreign to goblins. A typical goblin tribe has 4d10 x 10 adult male warriors. For every 40 goblins there will be a leader and his 4 assistants, each having 3 Hit Die.",
+          "For every 200 goblins there will be a sub-chief and 2d4 bodyguards, each of which has 4 Hit Dice, is Armor Class 16, and armed with a battle axe. The tribe has a single goblin chief and 2d4 bodyguards each of 5 Hit Dice, Armor Class 17, and armed with two weapons.",
+          "There is a 25% chance that 10% of their force will be mounted upon huge worgs, and have another 1d4x10 unmounted worgs with them. There is a 60% chance that the lair is guarded by 5d6 such wolves, and a 20% chance of 2d6 bugbears. Goblin shamans (clerics) are rare, but have been known to reach 7th level.",
+          "In addition to the males, there will be adult females equal to 60% of their number and children equal to the total number of adults in the lair. Neither will fight in battles.",
+          "A goblin tribe has an exact pecking order; each member knows who is above him and who is below him. They fight amongst themselves constantly to move up this social ladder.",
+          "They often take slaves for both food and labor. The tribe will have slaves of several races numbering 10-40% of the size of the tribe. Slaves are always kept shackled, and are staked to a common chain when sleeping.",
+          "Goblins hate most other humanoids, gnomes and dwarves in particular, and work to exterminate them whenever possible.",
+          "ECOLOGY",
+          "Goblins live only 50 years or so. They do not need to eat much, but will kill just for the pleasure of it. They eat any creature from rats and snakes to humans. In lean times they will eat carrion.",
+          "Goblins usually spoil their habitat, driving game from it and depleting the area of all resources. They are decent miners, able to note new or unusual construction in an underground area, and any habitat will soon be expanded by a maze-like network of tunnels."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Goibhniu, Celtic Avatar",
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "avatar"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "N",
+        "G"
+      ],
+      "ac": [
+        20
+      ],
+      "hp": {
+        "formula": "24d12 + 96",
+        "average": 252
+      },
+      "speed": {
+        "walk": 60
+      },
+      "str": 19,
+      "dex": 15,
+      "con": 18,
+      "int": 15,
+      "wis": 15,
+      "cha": 10,
+      "passive": 14,
+      "cr": "15",
+      "shortName": "Goibhniu, Celtic Avatar",
+      "languages": [
+        "All"
+      ],
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "skill": {
+        "acrobatics": "+4",
+        "animal handling": "+4",
+        "arcana": "+4",
+        "athletics": "+4",
+        "deception": "+4",
+        "history": "+4",
+        "insight": "+4",
+        "intimidation": "+4",
+        "investigation": "+4",
+        "medicine": "+4",
+        "nature": "+4",
+        "perception": "+4",
+        "performance": "+4",
+        "persuasion": "+4",
+        "religion": "+4",
+        "sleight of hand": "+4",
+        "stealth": "+4",
+        "survival": "+4"
+      },
+      "trait": [
+        {
+          "name": "Never Miss",
+          "entries": [
+            "Goibhniu’s avatar never misses his targets when attacking in melee. He uses either his Warhammer +5 or his spear +5, depending on the situation."
+          ]
+        },
+        {
+          "name": "Deadly Blow",
+          "entries": [
+            "Once per turn, he may automatically slay any living creature that he hits with the Warhammer or the spear, no saving throw allowed."
+          ]
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "Goibhniu’s avatar can cast spells from any sphere."
+          ],
+          "type": "spellcasting"
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "Goibhniu’s avatar makes three attacks with his warhammer +5 or with his spear +5."
+          ]
+        },
+        {
+          "name": "Warhammer +5",
+          "entries": [
+            "{@atk ms} {@hit 22} to hit, reach 5 ft., one target. {@h}15 ({@damage 1d8 + 11}) bludgeoning damage, or 15 ({@damage 1d10 + 11}) bludgeoning damage if used with both hands."
+          ]
+        },
+        {
+          "name": "Spear +5",
+          "entries": [
+            "{@atk ms} {@hit 22} to hit, reach 5 ft., one target. {@h}14 ({@damage 1d6 + 11}) piercing damage, or 14 ({@damage 1d8 + 11}) piercing damage if used with both hands."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "B",
+        "P"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Goibhniu, Celtic Avatar|https://angrygolem-games.com/monster-manual/letter-g/goibhniu-celtics-avatar/}",
+          "DESCRIPTION",
+          "Goibhniu’s avatar is a brawny smith, muscled and blackened by hard work at the forge.",
+          "{@link God & Clergy (go to page)|https://angrygolem-games.com/monster-manual/letter-b/goibhniu-god-and-clerics-for-dd-5e/}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Goblin Dog",
+      "size": "M",
+      "type": "beast",
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        13
+      ],
+      "hp": {
+        "formula": "1d8 + 2",
+        "average": 6
+      },
+      "speed": {
+        "walk": 50
+      },
+      "str": 15,
+      "dex": 14,
+      "con": 15,
+      "int": 2,
+      "wis": 12,
+      "cha": 8,
+      "passive": 15,
+      "cr": "1/4",
+      "shortName": "Goblin Dog",
+      "skill": {
+        "perception": "+5"
+      },
+      "trait": [
+        {
+          "name": "Keen smell",
+          "entries": [
+            "The goblin dog has advantage on Wisdom (Perception) checks that rely on smell."
+          ]
+        },
+        {
+          "name": "Allergic Reaction",
+          "entries": [
+            "A goblin dog’s dander is highly irritating to all creatures but the goblins. A non-goblin creature damaged by a goblin dog’s bite, who deals damage to a goblin dog with a natural weapon or unarmed attack, or who otherwise comes into contact",
+            "with a goblin dog must make a {@dc 12} Constitution saving throw or break out in an itching rash. A creature affected by this rash takes a –2 penalty to Dexterity and Charisma for 1 day. Remove disease or any magical healing removes the rash instantly."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Keen Senses"
+      ],
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+          ]
+        }
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Goblin Dog|https://angrygolem-games.com/monster-manual/letter-g/goblin-dog/}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Gold Dragon, Adult",
+      "size": "H",
+      "type": "dragon",
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "L",
+        "G"
+      ],
+      "ac": [
+        {
+          "ac": 19,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "19d12 + 133",
+        "average": 256
+      },
+      "speed": {
+        "walk": 40,
+        "fly": 80,
+        "canHover": false,
+        "swim": 40
+      },
+      "str": 27,
+      "dex": 14,
+      "con": 25,
+      "int": 16,
+      "wis": 15,
+      "cha": 24,
+      "passive": 24,
+      "cr": "17",
+      "shortName": "Gold Dragon, Adult",
+      "senses": [
+        "blindsight 60 ft.",
+        "darkvision 120 ft."
+      ],
+      "senseTags": [
+        "B",
+        "SD"
+      ],
+      "languages": [
+        "Common",
+        "Draconic"
+      ],
+      "languageTags": [
+        "C",
+        "DR"
+      ],
+      "save": {
+        "dex": "+8",
+        "con": "+13",
+        "wis": "+8",
+        "cha": "+13"
+      },
+      "skill": {
+        "insight": "+8",
+        "perception": "+14",
+        "persuasion": "+13",
+        "stealth": "+8"
+      },
+      "immune": [
+        "fire"
+      ],
+      "trait": [
+        {
+          "name": "Amphibious",
+          "entries": [
+            "The dragon can breathe air and water."
+          ]
+        },
+        {
+          "name": "Legendary Resistance (3/Day)",
+          "entries": [
+            "If the dragon fails a saving throw, it can choose to succeed instead."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Amphibious",
+        "Legendary Resistances"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 14} to hit, reach 10 ft., one target. {@h}19 ({@damage 2d10 + 8}) piercing damage."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 14} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d6 + 8}) slashing damage."
+          ]
+        },
+        {
+          "name": "Tail",
+          "entries": [
+            "{@atk mw} {@hit 14} to hit, reach 15 ft., one target. {@h}17 ({@damage 2d8 + 8}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Frightful Presence",
+          "entries": [
+            "Each creature of the dragon’s choice that is within 120 feet of the dragon and aware of it must succeed on a {@dc 21} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the dragon’s Frightful Presence for the next 24 hours."
+          ]
+        },
+        {
+          "name": "Breath Weapons {@recharge 5}",
+          "entries": [
+            "The dragon uses one of the following breath weapons.",
+            "Fire Breath. The dragon exhales fire in a 60-foot cone. Each creature in that area must make a {@dc 21} Dexterity saving throw, taking 66 ({@damage 12d10}) fire damage on a failed save, or half as much damage on a successful one.",
+            "Weakening Breath. The dragon exhales gas in a 60-foot cone. Each creature in that area must succeed on a {@dc 21} Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+          ]
+        },
+        {
+          "name": "Change Shape",
+          "entries": [
+            "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon’s choice). In a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Breath Weapon",
+        "Frightful Presence",
+        "Multiattack",
+        "Shapechanger"
+      ],
+      "damageTags": [
+        "P",
+        "S",
+        "B",
+        "F"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH",
+        "AOE"
+      ],
+      "conditionInflict": [
+        "frightened",
+        "prone"
+      ],
+      "legendaryActions": 3,
+      "legendaryHeader": [
+        "Adult Gold Dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. Adult Gold Dragon regains spent legendary actions at the start of their turn."
+      ],
+      "legendary": [
+        {
+          "name": "Detect",
+          "entries": [
+            "The dragon makes a Wisdom (Perception) check."
+          ]
+        },
+        {
+          "name": "Tail Attack",
+          "entries": [
+            "The dragon makes a tail attack."
+          ]
+        },
+        {
+          "name": "Wing Attack (Costs 2 Actions)",
+          "entries": [
+            "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a {@dc 22} Dexterity saving throw or take 15 ({@damage 2d6 + 8}) bludgeoning damage and be knocked {@condition prone}. The dragon can then fly up to half its flying speed."
+          ]
+        }
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Gold Dragon, Adult|https://angrygolem-games.com/monster-manual/letter-g/gold-dragon-adult-5e-stats/}",
+          "DESCRIPTION",
+          "Gold dragons are wise, judicious, and benevolent. They often embark on self-appointed quests to promote goodness, and are not easily distracted from them. They hate injustice and foul play. A gold dragon frequently assumes human or animal guise and usually will be encountered disguised.",
+          "At birth, a gold dragon’s scales are dark yellow with golden metallic flecks. The flecks get larger as the dragon matures until, at the adult stage, the scales grow completely golden.",
+          "HABITAT / SOCIETY",
+          "Gold dragons can live anywhere. Their lairs are secluded and always made of solid stone, either caves or castles. These usually have loyal guards: either animals appropriate to the terrain, or storm or good cloud giants. The giants usually serve as guards through a mutual defensive agreement.",
+          "ECOLOGY",
+          "Gold dragons can eat almost anything, however, they usually sustain themselves on pearls or small gems. Gold dragons who receive pearls and gems from good or neutral creatures will usually be favorably inclined toward the gift bringers, as long as the gift is not presented as a crass bribe. In the latter case, the dragon will accept the gift, but react cynically to any requests the giver makes."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Gold Dragon, Ancient",
+      "size": "G",
+      "type": "dragon",
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "L",
+        "G"
+      ],
+      "ac": [
+        {
+          "ac": 22,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "28d20 + 252",
+        "average": 546
+      },
+      "speed": {
+        "walk": 40,
+        "fly": 80,
+        "canHover": false,
+        "swim": 40
+      },
+      "str": 30,
+      "dex": 14,
+      "con": 29,
+      "int": 18,
+      "wis": 17,
+      "cha": 28,
+      "passive": 27,
+      "cr": "24",
+      "shortName": "Gold Dragon, Ancient",
+      "languages": [
+        "Common",
+        "Draconic"
+      ],
+      "languageTags": [
+        "C",
+        "DR"
+      ],
+      "senses": [
+        "blindsight 60 ft.",
+        "darkvision 120 ft."
+      ],
+      "senseTags": [
+        "B",
+        "SD"
+      ],
+      "save": {
+        "dex": "+9",
+        "con": "+16",
+        "wis": "+10",
+        "cha": "+16"
+      },
+      "skill": {
+        "insight": "+10",
+        "perception": "+17",
+        "persuasion": "+16",
+        "stealth": "+9"
+      },
+      "immune": [
+        "fire"
+      ],
+      "trait": [
+        {
+          "name": "Amphibious",
+          "entries": [
+            "The dragon can breathe air and water."
+          ]
+        },
+        {
+          "name": "Legendary Resistance (3/Day)",
+          "entries": [
+            "If the dragon fails a saving throw, it can choose to succeed instead."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Amphibious",
+        "Legendary Resistances"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 17} to hit, reach 15 ft., one target. {@h}21 ({@damage 2d10 + 10}) piercing damage."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 17} to hit, reach 10 ft., one target. {@h}17 ({@damage 2d6 + 10}) slashing damage."
+          ]
+        },
+        {
+          "name": "Tail",
+          "entries": [
+            "{@atk mw} {@hit 17} to hit, reach 20 ft., one target. {@h}19 ({@damage 2d8 + 10}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Frightful Presence",
+          "entries": [
+            "Each creature of the dragon’s choice that is within 120 feet of the dragon and aware of it must succeed on a {@dc 24} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the dragon’s Frightful Presence for the next 24 hours."
+          ]
+        },
+        {
+          "name": "Breath Weapons {@recharge 5}",
+          "entries": [
+            "The dragon uses one of the following breath weapons.",
+            "Fire Breath. The dragon exhales fire in a 90-foot cone. Each creature in that area must make a {@dc 24} Dexterity saving throw, taking 71 ({@damage 13d10}) fire damage on a failed save, or half as much damage on a successful one.",
+            "Weakening Breath. The dragon exhales gas in a 90-foot cone. Each creature in that area must succeed on a {@dc 24} Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+          ]
+        },
+        {
+          "name": "Change Shape",
+          "entries": [
+            "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon’s choice).",
+            "In a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Breath Weapon",
+        "Frightful Presence",
+        "Multiattack",
+        "Shapechanger"
+      ],
+      "damageTags": [
+        "P",
+        "S",
+        "B",
+        "F"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH",
+        "AOE"
+      ],
+      "conditionInflict": [
+        "frightened",
+        "prone"
+      ],
+      "legendaryActions": 3,
+      "legendaryHeader": [
+        "Ancient Gold Dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. Ancient Gold Dragon regains spent legendary actions at the start of their turn."
+      ],
+      "legendary": [
+        {
+          "name": "Detect",
+          "entries": [
+            "The dragon makes a Wisdom (Perception) check."
+          ]
+        },
+        {
+          "name": "Tail Attack",
+          "entries": [
+            "The dragon makes a tail attack."
+          ]
+        },
+        {
+          "name": "Wing Attack (Costs 2 Actions)",
+          "entries": [
+            "The dragon beats its wings. Each creature within 15 ft. of the dragon must succeed on a {@dc 25} Dexterity saving throw or take 17 ({@damage 2d6 + 10}) bludgeoning damage and be knocked {@condition prone}. The dragon can then fly up to half its flying speed."
+          ]
+        }
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Gold Dragon, Ancient|https://angrygolem-games.com/monster-manual/letter-g/gold-dragon-ancient-5e-stats/}",
+          "DESCRIPTION",
+          "Gold dragons are wise, judicious, and benevolent. They often embark on self-appointed quests to promote goodness, and are not easily distracted from them. They hate injustice and foul play. A gold dragon frequently assumes human or animal guise and usually will be encountered disguised.",
+          "At birth, a gold dragon’s scales are dark yellow with golden metallic flecks. The flecks get larger as the dragon matures until, at the adult stage, the scales grow completely golden.",
+          "HABITAT / SOCIETY",
+          "Gold dragons can live anywhere. Their lairs are secluded and always made of solid stone, either caves or castles. These usually have loyal guards: either animals appropriate to the terrain, or storm or good {@creature cloud giant|AGGMM}s. The giants usually serve as guards through a mutual defensive agreement.",
+          "ECOLOGY",
+          "Gold dragons can eat almost anything, however, they usually sustain themselves on pearls or small gems. Gold dragons who receive pearls and gems from good or neutral creatures will usually be favorably inclined toward the gift bringers, as long as the gift is not presented as a crass bribe. In the latter case, the dragon will accept the gift, but react cynically to any requests the giver makes."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Gold Dragon, Wyrmling",
+      "size": "M",
+      "type": "dragon",
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "L",
+        "G"
+      ],
+      "ac": [
+        {
+          "ac": 17,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "8d8 + 24",
+        "average": 60
+      },
+      "speed": {
+        "walk": 30,
+        "fly": 60,
+        "canHover": false,
+        "swim": 30
+      },
+      "str": 19,
+      "dex": 14,
+      "con": 17,
+      "int": 14,
+      "wis": 11,
+      "cha": 16,
+      "passive": 14,
+      "cr": "3",
+      "shortName": "Gold Dragon, Wyrmling",
+      "languages": [
+        "Draconic"
+      ],
+      "languageTags": [
+        "DR"
+      ],
+      "senses": [
+        "blindsight 10 ft.",
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "B",
+        "D"
+      ],
+      "save": {
+        "dex": "+4",
+        "con": "+5",
+        "wis": "+2",
+        "cha": "+5"
+      },
+      "skill": {
+        "perception": "+4",
+        "stealth": "+4"
+      },
+      "immune": [
+        "fire"
+      ],
+      "trait": [
+        {
+          "name": "Amphibious",
+          "entries": [
+            "The dragon can breathe air and water."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Amphibious"
+      ],
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d10 + 4}) piercing damage."
+          ]
+        },
+        {
+          "name": "Breath Weapons {@recharge 5}",
+          "entries": [
+            "The dragon uses one of the following breath weapons.",
+            "Fire Breath. The dragon exhales fire in a 15-foot cone. Each creature in that area must make a {@dc 13} Dexterity saving throw, taking 22 ({@damage 4d10}) fire damage on a failed save, or half as much damage on a successful one.",
+            "Weakening Breath. The dragon exhales gas in a 15-foot cone. Each creature in that area must succeed on a {@dc 13} Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+          ]
+        }
+      ],
+      "damageTags": [
+        "P",
+        "F"
+      ],
+      "miscTags": [
+        "MW",
+        "AOE"
+      ],
+      "actionTags": [
+        "Breath Weapon"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Gold Dragon, Wyrmling|https://angrygolem-games.com/monster-manual/letter-g/gold-dragon-wyrmling-5e-stats/}",
+          "DESCRIPTION",
+          "Gold dragons are wise, judicious, and benevolent. They often embark on self-appointed quests to promote goodness, and are not easily distracted from them. They hate injustice and foul play. A gold dragon frequently assumes human or animal guise and usually will be encountered disguised.",
+          "At birth, a gold dragon’s scales are dark yellow with golden metallic flecks. The flecks get larger as the dragon matures until, at the adult stage, the scales grow completely golden.",
+          "HABITAT / SOCIETY",
+          "Gold dragons can live anywhere. Their lairs are secluded and always made of solid stone, either caves or castles. These usually have loyal guards: either animals appropriate to the terrain, or storm or good cloud giants. The giants usually serve as guards through a mutual defensive agreement.",
+          "ECOLOGY",
+          "Gold dragons can eat almost anything, however, they usually sustain themselves on pearls or small gems. Gold dragons who receive pearls and gems from good or neutral creatures will usually be favorably inclined toward the gift bringers, as long as the gift is not presented as a crass bribe. In the latter case, the dragon will accept the gift, but react cynically to any requests the giver makes."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Gold Dragon, Young",
+      "size": "L",
+      "type": "dragon",
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "L",
+        "G"
+      ],
+      "ac": [
+        {
+          "ac": 18,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "17d10 + 85",
+        "average": 178
+      },
+      "speed": {
+        "walk": 40,
+        "fly": 80,
+        "canHover": false,
+        "swim": 40
+      },
+      "str": 23,
+      "dex": 14,
+      "con": 21,
+      "int": 16,
+      "wis": 13,
+      "cha": 20,
+      "passive": 19,
+      "cr": "10",
+      "shortName": "Gold Dragon, Young",
+      "languages": [
+        "Common",
+        "Draconic"
+      ],
+      "languageTags": [
+        "C",
+        "DR"
+      ],
+      "senses": [
+        "blindsight 30 ft.",
+        "darkvision 120 ft."
+      ],
+      "senseTags": [
+        "B",
+        "SD"
+      ],
+      "save": {
+        "dex": "+6",
+        "con": "+9",
+        "wis": "+5",
+        "cha": "+9"
+      },
+      "skill": {
+        "insight": "+5",
+        "perception": "+9",
+        "persuasion": "+9",
+        "stealth": "+6"
+      },
+      "immune": [
+        "fire"
+      ],
+      "trait": [
+        {
+          "name": "Amphibious",
+          "entries": [
+            "The dragon can breathe air and water."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Amphibious"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The dragon makes three attacks: one with its bite and two with its claws."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}17 ({@damage 2d10 + 6}) piercing damage."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d6 + 6}) slashing damage."
+          ]
+        },
+        {
+          "name": "Breath Weapons {@recharge 5}",
+          "entries": [
+            "The dragon uses one of the following breath weapons.",
+            "Fire Breath. The dragon exhales fire in a 30-foot cone. Each creature in that area must make a {@dc 17} Dexterity saving throw, taking 55 ({@damage 10d10}) fire damage on a failed save, or half as much damage on a successful one.",
+            "Weakening Breath. The dragon exhales gas in a 30-foot cone. Each creature in that area must succeed on a {@dc 17} Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Breath Weapon",
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P",
+        "S",
+        "F"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH",
+        "AOE"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Gold Dragon, Young|https://angrygolem-games.com/monster-manual/letter-g/gold-dragon-young-5e-stats/}",
+          "DESCRIPTION",
+          "Gold dragons are wise, judicious, and benevolent. They often embark on self-appointed quests to promote goodness, and are not easily distracted from them. They hate injustice and foul play. A gold dragon frequently assumes human or animal guise and usually will be encountered disguised.",
+          "At birth, a gold dragon’s scales are dark yellow with golden metallic flecks. The flecks get larger as the dragon matures until, at the adult stage, the scales grow completely golden.",
+          "HABITAT / SOCIETY",
+          "Gold dragons can live anywhere. Their lairs are secluded and always made of solid stone, either caves or castles. These usually have loyal guards: either animals appropriate to the terrain, or storm or good cloud giants. The giants usually serve as guards through a mutual defensive agreement.",
+          "ECOLOGY",
+          "Gold dragons can eat almost anything, however, they usually sustain themselves on pearls or small gems. Gold dragons who receive pearls and gems from good or neutral creatures will usually be favorably inclined toward the gift bringers, as long as the gift is not presented as a crass bribe. In the latter case, the dragon will accept the gift, but react cynically to any requests the giver makes."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Gorgon",
+      "size": "L",
+      "type": "monstrosity",
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        {
+          "ac": 19,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "12d10 + 48",
+        "average": 114
+      },
+      "speed": {
+        "walk": 40
+      },
+      "str": 20,
+      "dex": 11,
+      "con": 18,
+      "int": 2,
+      "wis": 12,
+      "cha": 7,
+      "passive": 14,
+      "cr": "5",
+      "shortName": "Gorgon",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "skill": {
+        "perception": "+4"
+      },
+      "conditionImmune": [
+        "petrified"
+      ],
+      "trait": [
+        {
+          "name": "Trampling Charge",
+          "entries": [
+            "If the gorgon moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a {@dc 16} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the gorgon can make one attack with its hooves against it as a bonus action."
+          ]
+        }
+      ],
+      "conditionInflict": [
+        "petrified",
+        "prone",
+        "restrained"
+      ],
+      "action": [
+        {
+          "name": "Gore",
+          "entries": [
+            "{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}18 ({@damage 2d12 + 5}) piercing damage."
+          ]
+        },
+        {
+          "name": "Hooves",
+          "entries": [
+            "{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d10 + 5}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Petrifying Breath {@recharge 5}",
+          "entries": [
+            "The gorgon exhales petrifying gas in a 30-foot cone. Each creature in that area must succeed on a {@dc 13} Constitution saving throw. On a failed save, a target begins to turn to stone and is {@condition restrained}. The {@condition restrained} target must repeat the saving throw at the end of its next turn. On a success, the effect ends on the target. On a failure, the target is {@condition petrified} until freed by the {@spell greater restoration} spell or other magic."
+          ]
+        }
+      ],
+      "damageTags": [
+        "P",
+        "B"
+      ],
+      "miscTags": [
+        "MW",
+        "AOE"
+      ],
+      "actionTags": [
+        "Breath Weapon"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Gorgon|https://angrygolem-games.com/monster-manual/letter-g/gorgon-5e-stats/}",
+          "{@link GORGON’s TACTICS (read the article)|https://angrygolem-games.com/dnd-5e-gorgon-tactics-build-challenging-encounters-against-a-gorgon/}",
+          "DESCRIPTION",
+          "Gorgons are fierce, bull-like beasts who make their lairs in dreary caverns or the fastness of a wilderness. They are aggressive by nature and usually attack any creature or person they encounter.",
+          "Monstrous black bulls, gorgons have hides of thick metal scales. Their breath is a noxious vapor that billows forth in great puffs from their wide, bull nostrils. Gorgons walk on two hooves, when necessary, but usually assume a four-hoofed stance. Despite their great size, they can move through even heavy forests with incredible speed, for they simply trample bushes and splinter smaller trees. Gorgons speak no languages but let out a roar of anger whenever they encounter other beings.",
+          "HABITAT / SOCIETY",
+          "It is believed that gorgons can actually devour the living statues they create with their breath weapon. Whether their flat iron teeth break up and pulverize the stone or their saliva returns the victim to flesh while they eat is a matter for conjecture.",
+          "Their primary prey are deer and elk, but gorgons won’t hesitate to add other meats to their diet when hungry. Their sense of smell is acute and once they get on the trail gorgons are 75% likely to track their victim successfully. Once their victim is in sight, gorgons let out a scream of rage and then charge. Unless somehow evaded, a gorgon will pursue tirelessly, for days if necessary, until the prey either drops from exhaustion or is caught in the gorgon’s deadly breath.",
+          "Gorgons have no use for treasure, hence gold and gems are often left petrified on the statue of the being that once wore them. Occasionally a gorgon in his haste will devour something of value; the items will later be left in the gorgon’s droppings, somewhere near the entrance to its lair.",
+          "Gorgons are usually encountered in groups of three or four — one male bull with two or three females. Gorgon calves are raised by the females to the age of two, then the young bulls are turned out to make their own way. Females remain with the dominant bull.",
+          "About 25% of the time only a single gorgon is encountered. Lone gorgons are always rogue males in search of females.",
+          "The forest around a gorgon lair is usually a crisscrossing network of trails and paths they’ve made. Occasionally there are clearings where the grasses were trampled down in a battle and perhaps the shattered remains of a statue can be found.",
+          "ECOLOGY",
+          "Gorgons have no natural enemies other than themselves. Bull gorgons are often called upon to defend their positions against rogue gorgons. These battles are not usually fatal, but even a gorgon can be felled by a well-aimed horn gore. The only other creature known to hunt these fierce predators is man.",
+          "Gorgon blood, properly prepared, can seal an area against ethereal or astral intrusion; their powdered scales are an ingredient in the ink used to create a {@spell Protection from Poison|PHB|protection from petrification} scroll.",
+          "In addition, the hide of a gorgon can be fashioned, with considerable work and some magical enhancement, into a fine set of scale mail. This armor will provide the wearer with a +2 bonus to all saving throws vs. petrification or flesh-to-stone spells."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
     }
 	]
 }
