@@ -91,6 +91,7 @@
 - [TOKEN][Inactive Tokens](https://github.com/jagoe/fvtt-module-inactive-tokens)
 - [UTILITY][Drag Anything To Hotbar for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-drag-all-to-hotbar)
 - [LIGHT/SOUND][Light/Sound Mask](https://github.com/caewok/fvtt-light-mask)
+- [COMPENDIUM](https://github.com/adougherty/random-everything-generator)
 
 ## MODULES LANGUAGE ITA
 
@@ -131,6 +132,7 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 
 - [COMBAT][SIFToolkit](https://github.com/bitkiller0/SIFToolkit)
 - https://gitlab.com/unindel/foundry-vtt-pf2e-monster-import-ui/-/raw/master/module.json
+- https://github.com/yoshisman8/Vyk-Homebrew
 
 ## [SYSTEM] MODULES SHADOW RUN 
 
