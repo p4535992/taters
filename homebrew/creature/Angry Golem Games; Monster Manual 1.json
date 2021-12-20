@@ -36511,6 +36511,1242 @@
           }
         ]
       }
+    },
+    {
+      "name": "Goristro",
+      "size": "H",
+      "type": {
+        "type": "fiend",
+        "tags": [
+          "demon"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 19,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "23d12 + 161",
+        "average": 310
+      },
+      "speed": {
+        "walk": 40
+      },
+      "str": 25,
+      "dex": 11,
+      "con": 25,
+      "int": 6,
+      "wis": 13,
+      "cha": 14,
+      "passive": 17,
+      "cr": "17",
+      "shortName": "Goristro",
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "senseTags": [
+        "SD"
+      ],
+      "languages": [
+        "Abyssal"
+      ],
+      "languageTags": [
+        "AB"
+      ],
+      "save": {
+        "str": "+13",
+        "dex": "+6",
+        "con": "+13",
+        "wis": "+7"
+      },
+      "skill": {
+        "athletics": "+14",
+        "perception": "+7"
+      },
+      "resist": [
+        {
+          "resist": [
+            "cold",
+            "fire",
+            "lightning"
+          ]
+        },
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks"
+        }
+      ],
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "poisoned"
+      ],
+      "trait": [
+        {
+          "name": "Charge",
+          "entries": [
+            "If the goristro moves at least 15 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 38 ({@damage 7d10}) piercing damage. If the target is a creature, it must succeed on a {@dc 21} Strength saving throw or be pushed up to 20 feet away and knocked {@condition prone}."
+          ]
+        },
+        {
+          "name": "Crushing Blow",
+          "entries": [
+            "Goristro’s fist attacks have a chance to shatter objects carried by the target. Anytime the goristro successfully hit with its fist attack, the target must make a {@dc 22} dexterity saving throw. If the saving throw fails, then one piece of equipment is shattered by the blow. Weapons are destroyed first, then armors or shields, and at last items carried inside the backpack. Soft materials are immune to the crushing blow."
+          ]
+        },
+        {
+          "name": "Deadly Blows",
+          "entries": [
+            "If the goristro successfully hits with both fists the same target in the same round, then the target must make a successful {@dc 22} constitution saving throw. If the saving throw fails, then add one level of failure to the character’s death saves."
+          ]
+        },
+        {
+          "name": "Labyrinthine Recall",
+          "entries": [
+            "The goristro can perfectly recall any path it has traveled."
+          ]
+        },
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The goristro has advantage on saving throws against spells and other magical effects."
+          ]
+        },
+        {
+          "name": "Regeneration",
+          "entries": [
+            "The goritro regains 10 hit points at the start of its turn. The goristro dies only if it starts its turn with -25 hit points."
+          ]
+        },
+        {
+          "name": "Siege Monster",
+          "entries": [
+            "The goristro deals double damage to objects and structures."
+          ]
+        },
+        {
+          "name": "Trample",
+          "entries": [
+            "The goristro can trample any medium or smaller creature that come across its path as part of its movement, this ability counts as a frree action. No attack roll is required. The trample inflicts {@damage 5d8 + 7} bludgeoning damage. The target may avoid the trampling as a reaction by making a successful {@dc 17} dexterity saving throw. This ability triggers attacks of opportunity."
+          ]
+        }
+      ],
+      "conditionInflict": [
+        "prone"
+      ],
+      "traitTags": [
+        "Charge",
+        "Magic Resistance",
+        "Regeneration",
+        "Siege Monster"
+      ],
+      "damageTags": [
+        "B",
+        "P"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The goristro makes three attacks: two with its fists and one with its hoof or (suggested) makes three three hurl boulders attacks."
+          ]
+        },
+        {
+          "name": "Fist",
+          "entries": [
+            "{@atk mw} {@hit 13} to hit, reach 10 ft., one target. {@h}20 ({@damage 3d8 + 7}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Hoof",
+          "entries": [
+            "{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}23 ({@damage 3d10 + 7}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 21} Strength saving throw or be knocked {@condition prone}."
+          ]
+        },
+        {
+          "name": "Gore",
+          "entries": [
+            "{@atk mw} {@hit 13} to hit, reach 10 ft., one target. {@h}45 ({@damage 7d10 + 7}) piercing damage."
+          ]
+        },
+        {
+          "name": "Hurl Boulders",
+          "entries": [
+            "{@atk rw} {@hit 6} to hit, range 60/240 ft., one target. {@h}29 ({@damage 4d10 + 7}) bludgeoning damage."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH",
+        "RW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Goristro|https://angrygolem-games.com/monster-manual/letter-g/goristro-5e-stats/}",
+          "DESCRIPTION",
+          "Collectively known as goristroi, these huge tanar’ri can be found on nearly any plane of the Abyss, for they are adaptable and much desired by the rulers of the place to serve as engines of destruction.",
+          "Abyssal lords and powers are able to command the goristroi and keep them serving as guardians, enforcers, siege engines, and so on. The hulking goristroi are too stupid and bestial to do more than carry out their orders, and thus their status never reaches that or the true tanar’ri.",
+          "Gorislroi are vaguely reminiscent of giant bears, although their shoulder are broader, their visages a nightmarish cross between bison and human, and their hands and feet disproportionately large, splayed, and humanlike.",
+          "Their arms are extremely long, like an ape’s. Individual colors vary from dark brown through sickly greenish yellow to a peculiar purplish gray.",
+          "From the third volume of “Deception And Strategems”, by the pit fiend Mellagorus:",
+          "Though the lumbering goristroi are excellent at climbing sheer stone faces and though these assaults can break our fortications, such strategies also present us with an opportunity to destroy the beasts.",
+          "Their powerful clawed fingers can make handholds in sheer stone, but their enormous size makes them vulnerable to falls, and they suffer twice the damage a smaller creature might from a fall.",
+          "The goristroi are especially afraid of Bigby’s forceful hand, dig, fly, levitation, and other spells that can push them off the heights to be broken on the rocks below or, even more amusingly, onto the weapons of their fellow tanar’ri.",
+          "Weak-minded goristroi are also vulnerable to spells such as cause fear, fear, symbol of fear, and repulsion, which drive them off walls.",
+          "For all these reasons, arcanaloth are the best countermeasures to employ against goristroi assaults on an entrenched position on the height.",
+          "Fools though they are, tanar’ri commanders rarely order a goristro over the walls unless the situation is desperate or a diversionary attack has drawn off most of the defenders.",
+          "Take this as a sign of weakness and counterattack.",
+          "Usually solitary, goristroi are only important among their kin because of their ability to absorb damage and to mete it out.",
+          "They are stupid and otherwise limited in power, unable even to gate in other tanar’ri. The vast majority of goristroi encountered are in the service of some Abyssal ruler, blindly carrying out the duties assigned to them with complete fanaticism.",
+          "There is never a question of retreat or morale when dealing with these brutes, though the threat of long falls can induce paralysis on the field of action. In all other respects, they always continue to follow their given commands until completion or death occurs.",
+          "In the Blood War the goristroi serve as siege engines and rallying points for lesser tanar’ri, much as elephants do among some prime-material worlds.",
+          "A goristroi citadel is a platform strapped to the creature’s head and shoulders like a helmet. The tanar’ri carries this citadel as a lesser creature might carry a knapsack; it hardly seems aware of it.",
+          "Again from Mellagorus’ “Deception And Strategems“",
+          "Goristroi citadels are dangerous and best kept busy with cannon fodder and inferior troops, but if they can be broken the lesser troops surrounding them are usually routed. The best way to accomplish this is to harry a goristro from two directions.",
+          "The retarded behemoth will turn from one attack to the other, unconscious of the fact that its rapid movements are shaking and battering the creatures within the citadel to death. At this point flying troops such as abishai can take the citadel and slay the goristro by a surgical strike to the neck with axes, polearms, and cleavers.",
+          "Goristroi ruled by an Abyssal lord or power always wear some symbol of servitude, such as a collar, an arm or wrist band, or an implanted symbol. Such devices zypically have the power to conves telepathic commands to the wearer as well as serve as tracking devices should the masters wish to know the whereabouts of their servants.",
+          "Without direct command or supervision, goristroi tend to wander off on destructive rampages of their own direction and desire.",
+          "Goristroi do not breed naturally. They are carefully mated by their owners after extensive negotiations, eventually resulting in a single young. The goristroi are carefully watched throughout the entire process, for fear of foul play by the other side, such as an attempt to slay these valuable beasts.",
+          "Generally, the terms are that the owner of the male goristroi gains the female young, and the owner of the mother is entitled to the male young produced. The young grow to maturity within five voracious, screaming years.",
+          "This allows the lucky owner to breed further young on his own, albeit inbred ones. However, abductions, infanticide (if the young is the wrong gender), and even outright purchases of the live young are fairy common. Under no circumstances are the parents allowed to have any influence on the young goristro.",
+          "ECOLOGY",
+          "Goristroi are predators that make no distinction between various types of prey. They eat anything that moves, even among their own kind, devouring lesser tanar’ri when their dim minds believe no one is watching.",
+          "They are exclusively carnivorous, unable to eat vegetable matter even if no other food is available. If forced to go without living or recently slain meat, goristroi wither and die within two weeks, so tanar’ri commanders usually sacrifice lesser troops for the sake of keeping their citadels going.",
+          "Goristroi flesh is itself poisonous if ingested, so not even powerful planar creatures or pack hunters like trolls and armanites attack them."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Gray Render",
+      "size": "L",
+      "type": "monstrosity",
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "C",
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 19,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "18d10 + 90",
+        "average": 189
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 19,
+      "dex": 13,
+      "con": 20,
+      "int": 3,
+      "wis": 6,
+      "cha": 8,
+      "passive": 12,
+      "cr": "12",
+      "shortName": "Gray Render",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "save": {
+        "str": "+8",
+        "con": "+9"
+      },
+      "skill": {
+        "perception": "+2"
+      },
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The gray render makes three attacks: one with its bite and two with its claws."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}17 ({@damage 2d12 + 4}) piercing damage. If the target is Medium or smaller, the target must succeed on a {@dc 16} Strength saving throw or be knocked {@condition prone}."
+          ]
+        },
+        {
+          "name": "Claws",
+          "entries": [
+            "{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}13 ({@damage 2d8 + 4}) slashing damage, plus 7 ({@damage 2d6}) bludgeoning damage if the target is {@condition prone}."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P",
+        "S",
+        "B"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH"
+      ],
+      "conditionInflict": [
+        "prone"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Gray Render|https://angrygolem-games.com/monster-manual/letter-g/gray-render-5e-stats/}",
+          "DESCRIPTION",
+          "A curious impulse drives the gray render. Despite its hulking form and terrible appetite, it wants most of all to bond with an intelligent creature and, once bonded, give its life to protect that creature. Great strength and a savage nature enable gray renders to be fierce guardians, but they lack even a shred of cunning."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Gray Slaad",
+      "size": "M",
+      "type": {
+        "type": "aberration",
+        "tags": [
+          "slaad",
+          "shapechanger"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "C",
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 18,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "1d8 + 3",
+        "average": 7
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 17,
+      "dex": 17,
+      "con": 16,
+      "int": 13,
+      "wis": 8,
+      "cha": 14,
+      "passive": 16,
+      "cr": "9",
+      "shortName": "Gray Slaad",
+      "senses": [
+        "blindsight 60 ft.",
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "B",
+        "D"
+      ],
+      "languages": [
+        "Slaad",
+        "telepathy 60 ft."
+      ],
+      "languageTags": [
+        "OTH",
+        "TP"
+      ],
+      "skill": {
+        "arcana": "+5",
+        "perception": "+6"
+      },
+      "resist": [
+        "acid",
+        "cold",
+        "fire",
+        "lightning",
+        "thunder"
+      ],
+      "trait": [
+        {
+          "name": "Shapechanger",
+          "entries": [
+            "The slaad can use its action to polymorph into a Small or Medium humanoid, or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn ‘t transformed. It reverts to its true form if it dies."
+          ]
+        },
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The slaad has advantage on saving throws against spells and other magical effects."
+          ]
+        },
+        {
+          "name": "Magic Weapons",
+          "entries": [
+            "The slaad’s weapon attacks are magical."
+          ]
+        },
+        {
+          "name": "Regeneration",
+          "entries": [
+            "The slaad regains 10 hit points at the start of its turn if it has at least 1 hit point."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Magic Resistance",
+        "Magic Weapons",
+        "Regeneration",
+        "Shapechanger"
+      ],
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasting",
+          "headerEntries": [
+            "The slaad’s innate spellcasting ability is Charisma (spell save {@dc 14}). The slaad can innately cast the following spells, requiring no material components:"
+          ],
+          "will": [
+            "{@spell detect magic}",
+            "{@spell detect thoughts}",
+            "{@spell invisibility} (self only)",
+            "{@spell mage hand}",
+            "{@spell major image}"
+          ],
+          "daily": {
+            "2e": [
+              "{@spell fear}",
+              "{@spell fireball}",
+              "{@spell fly}",
+              "{@spell tongues}"
+            ],
+            "1e": [
+              "{@spell plane shift} (self only)"
+            ]
+          },
+          "ability": "cha",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "I"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The slaad makes three attacks: one with its bite and two with its claws or greatsword."
+          ]
+        },
+        {
+          "name": "Bite (Slaad Form Only)",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+          ]
+        },
+        {
+          "name": "Claws (Slaad Form Only)",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d10 + 3}) slashing damage."
+          ]
+        },
+        {
+          "name": "Greatsword",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) slashing damage."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P",
+        "S"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Gray Slaad|https://angrygolem-games.com/monster-manual/letter-g/gray-slaad-5e-stats/}",
+          "DESCRIPTION",
+          "A {@creature green slaad|AGGMM} that lives to advanced age (a century or so) sometimes withdraws into wilderness isolation. Most are never seen again, but after a year or more some slaadi return to their fellows as gray slaadi. Uninterested in lesser slaadi, grays become fascinated by power and magic, apparently seeking the near-immortality of the most powerful slaadi, the {@creature death slaadi|AGGMM}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Great Spirit, American Indian Avatar",
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "avatar"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "L",
+        "G"
+      ],
+      "ac": [
+        22
+      ],
+      "hp": {
+        "formula": "21d12 + 80",
+        "average": 216
+      },
+      "speed": {
+        "fly": 100,
+        "canHover": false,
+        "swim": 100,
+        "walk": 100
+      },
+      "str": 19,
+      "dex": 18,
+      "con": 18,
+      "int": 15,
+      "wis": 18,
+      "cha": 16,
+      "passive": 14,
+      "cr": "15",
+      "shortName": "Great Spirit, American Indian Avatar",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "All"
+      ],
+      "skill": {
+        "acrobatics": "+4",
+        "animal handling": "+4",
+        "arcana": "+4",
+        "athletics": "+4",
+        "deception": "+4",
+        "history": "+4",
+        "insight": "+4",
+        "intimidation": "+4",
+        "investigation": "+4",
+        "medicine": "+4",
+        "nature": "+4",
+        "perception": "+4",
+        "performance": "+4",
+        "persuasion": "+4",
+        "religion": "+4",
+        "sleight of hand": "+4",
+        "stealth": "+4",
+        "survival": "+4"
+      },
+      "trait": [
+        {
+          "name": "Bear Hug",
+          "entries": [
+            "The avatar retains the bear’s ability to hug its victims for {@damage 2d4 + 7} additional damage on a to hit roll of 18 or better with its claws."
+          ]
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "Even though the avatar has the form of a bear, it can cast spells as an 18th level Druid and all spells in the All, Animal, Elemental, Plant, and Weather spheres are available to it."
+          ],
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "CD"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The Great Spirit makes three attacks; two claws attacks and one bite."
+          ]
+        },
+        {
+          "name": "Claws",
+          "entries": [
+            "{@atk ms} {@hit 18} to hit, reach 10 ft., one target. {@h}12 ({@damage 1d8 + 8}) slashing damage."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk ms} {@hit 18} to hit, reach 10 ft., one target. {@h}13 ({@damage 1d12 + 7}) piercing damage."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "S",
+        "P"
+      ],
+      "miscTags": [
+        "RCH"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Great Spirit, American Indian Avatar|https://angrygolem-games.com/monster-manual/letter-g/greater-spirit-american-indians-avatar/}",
+          "DESCRIPTION",
+          "Most often, the Great Spirit’s avatar appears in the form of a white luminous bear, although it can assume the shape of any animal in nature. The avatar always receives the benefit of any special abilities of the animal whose shape it assumes.",
+          "{@link God & Clergy (go to page)|https://angrygolem-games.com/monster-manual/letter-g/great-spirit-god-and-clerics-for-dd-5e/}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Green Abishai",
+      "size": "M",
+      "type": {
+        "type": "fiend",
+        "tags": [
+          "devil"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 18,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "25d8 + 75",
+        "average": 187
+      },
+      "speed": {
+        "walk": 30,
+        "fly": 40,
+        "canHover": false
+      },
+      "str": 12,
+      "dex": 17,
+      "con": 16,
+      "int": 17,
+      "wis": 12,
+      "cha": 19,
+      "passive": 16,
+      "cr": "15",
+      "shortName": "Green Abishai",
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "senseTags": [
+        "SD"
+      ],
+      "languages": [
+        "Draconic",
+        "Infernal",
+        "telepathy 120 ft."
+      ],
+      "languageTags": [
+        "DR",
+        "I",
+        "TP"
+      ],
+      "save": {
+        "int": "+8",
+        "cha": "+9"
+      },
+      "skill": {
+        "deception": "+9",
+        "insight": "+6",
+        "perception": "+6",
+        "persuasion": "+9"
+      },
+      "resist": [
+        {
+          "resist": [
+            "cold"
+          ]
+        },
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks that aren’t silvered"
+        }
+      ],
+      "immune": [
+        "fire",
+        "poison"
+      ],
+      "conditionImmune": [
+        "poisoned"
+      ],
+      "trait": [
+        {
+          "name": "Devil’s Sight",
+          "entries": [
+            "Magical darkness doesn’t impede the abishai’s darkvision."
+          ]
+        },
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The abishai has advantage on saving throws against spells and other magical effects."
+          ]
+        },
+        {
+          "name": "Magic Weapons",
+          "entries": [
+            "The abishai’s weapon attacks are magical."
+          ]
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasting",
+          "headerEntries": [
+            "The abishai’s innate spellcasting ability is Charisma (spell save {@dc 17}). It can innately cast the following spells, requiring no material components:"
+          ],
+          "will": [
+            "{@spell alter self}",
+            "{@spell major image}"
+          ],
+          "daily": {
+            "3e": [
+              "{@spell charm person}",
+              "{@spell detect thoughts}",
+              "{@spell fear}"
+            ],
+            "1e": [
+              "{@spell confusion}",
+              "{@spell dominate person}",
+              "{@spell mass suggestion}"
+            ]
+          },
+          "ability": "cha",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "I"
+      ],
+      "traitTags": [
+        "Magic Resistance",
+        "Magic Weapons"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The abishai makes two attacks, one with its claws and one with its longsword, or it casts one spell from its Innate Spellcasting trait and makes one claw attack."
+          ]
+        },
+        {
+          "name": "Longsword",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d8 + 1}) slashing damage, or 6 ({@damage 1d10 + 1}) slashing damage if used with both hands."
+          ]
+        },
+        {
+          "name": "Claws",
+          "entries": [
+            "{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d8 + 3}) piercing damage. If the target is a creature, it must succeed on a {@dc 16} Constitution saving throw or take 11 ({@damage 2d10}) poison damage and become {@condition poisoned} for 1 minute. The {@condition poisoned} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "S",
+        "P",
+        "I"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "conditionInflict": [
+        "poisoned"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Green Abishai|https://angrygolem-games.com/monster-manual/letter-g/green-abishai-5e-stats/}",
+          "DESCRIPTION",
+          "Abishai are common to the first and second layers of Baator. They look like gothic gargoyles, thin and reptilian, with long, prehensile tails and large wings. The three varieties of abishai have different skin colors in ascending order of station, black, green, and red. All have a vinegary smell and rasping voices. The air seems to warm perceptibly in their presence.",
+          "HABITAT / SOCIETY",
+          "Abishai are voracious and evil. They delight in tormenting those few baatezu lower in station than themselves. Abishai tempt mortals bold enough to travel to Baator by using their {@spell Alter Self} and {@spell Charm Person} abilities to impersonate more powerful baatezu.",
+          "ECOLOGY",
+          "The abishai make up large, evil armies that fight the {@creature tanar'ri|AGGMM} and intruders into Baator. In some cases, a red abishai may prove worthy enough to command a force of lemures. If successful, the red abishai may be promoted to a higher form of {@creature baatezu|AGGMM}.",
+          "As part of their efforts to corrupt mortals, abishai like to bestow powerful magic on inexperienced wizards. Usually the low-level spellcaster cannot control these enormous energies, and chaos and destruction result."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Green Dragon, Adult",
+      "size": "H",
+      "type": "dragon",
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 19,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "18d12 + 90",
+        "average": 207
+      },
+      "speed": {
+        "walk": 40,
+        "fly": 80,
+        "canHover": false,
+        "swim": 40
+      },
+      "str": 23,
+      "dex": 12,
+      "con": 21,
+      "int": 18,
+      "wis": 15,
+      "cha": 17,
+      "passive": 22,
+      "cr": "15",
+      "shortName": "Green Dragon, Adult",
+      "senses": [
+        "blindsight 60 ft.",
+        "darkvision 120 ft."
+      ],
+      "senseTags": [
+        "B",
+        "SD"
+      ],
+      "languages": [
+        "Common",
+        "Draconic"
+      ],
+      "languageTags": [
+        "C",
+        "DR"
+      ],
+      "save": {
+        "dex": "+6",
+        "con": "+10",
+        "wis": "+7",
+        "cha": "+8"
+      },
+      "skill": {
+        "deception": "+8",
+        "insight": "+7",
+        "perception": "+12",
+        "persuasion": "+8",
+        "stealth": "+6"
+      },
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "poisoned"
+      ],
+      "trait": [
+        {
+          "name": "Amphibious",
+          "entries": [
+            "The dragon can breathe air and water."
+          ]
+        },
+        {
+          "name": "Legendary Resistance (3/Day)",
+          "entries": [
+            "If the dragon fails a saving throw, it can choose to succeed instead."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Amphibious",
+        "Legendary Resistances"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}17 ({@damage 2d10 + 6}) piercing damage, plus 7 ({@damage 2d6}) poison damage."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d6 + 6}) slashing damage."
+          ]
+        },
+        {
+          "name": "Tail",
+          "entries": [
+            "{@atk mw} {@hit 11} to hit, reach 15 ft., one target. {@h}15 ({@damage 2d8 + 6}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Frightful Presence",
+          "entries": [
+            "Each creature of the dragon’s choice that is within 120 feet of the dragon and aware of it must succeed on a {@dc 16} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the dragon’s Frightful Presence for the next 24 hours."
+          ]
+        },
+        {
+          "name": "Poison Breath {@recharge 5}",
+          "entries": [
+            "The dragon exhales poisonous gas in a 60-foot cone. Each creature in that area must make a {@dc 18} Constitution saving throw, taking 56 ({@damage 16d6}) poison damage on a failed save, or half as much damage on a successful one."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Breath Weapon",
+        "Frightful Presence",
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P",
+        "I",
+        "S",
+        "B"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH",
+        "AOE"
+      ],
+      "conditionInflict": [
+        "frightened",
+        "prone"
+      ],
+      "legendaryHeader": [
+        "Adult Green Dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. Adult Green Dragon regains spent legendary actions at the start of their turn."
+      ],
+      "legendaryActions": 3,
+      "legendary": [
+        {
+          "name": "Detect",
+          "entries": [
+            "The dragon makes a Wisdom (Perception) check."
+          ]
+        },
+        {
+          "name": "Tail Attack",
+          "entries": [
+            "The dragon makes a tail attack."
+          ]
+        },
+        {
+          "name": "Wing Attack (Costs 2 Actions)",
+          "entries": [
+            "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a {@dc 19} Dexterity saving throw or take 13 ({@damage 2d6 + 6}) bludgeoning damage and be knocked {@condition prone}. The dragon can then fly up to half its flying speed."
+          ]
+        }
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Green Dragon, Adult|https://angrygolem-games.com/monster-manual/letter-g/green-dragon-adult-5e-stats/}",
+          "DESCRIPTION",
+          "Green dragons are bad tempered, mean, cruel, and rude. They hate goodness and good-aligned creatures. They love intrigue and seek to enslave other woodland creatures, killing those who cannot be controlled or intimidated.",
+          "A hatchling green dragon’s scales are thin, very small, and a deep shade of green that appears nearly black. As the dragon ages, the scales grow larger and become lighter, turning shades of forest, emerald, and olive green, which helps it blend in with its wooded surroundings. A green dragon’s scales never become as thick as other dragons’, remaining smooth and flexible.",
+          "HABITAT / SOCIETY",
+          "Green dragons are found in sub-tropical and temperate forests, the older the forest and bigger the trees, the better. The sights and smells of the woods are pleasing to the dragon, and it considers the entire forest or woods its territory. Sometimes the dragon will enter into a relationship with other evil forest-dwelling creatures, which keep the dragon informed about what is going on in the forest and surrounding area in exchange for their lives. If a green dragon lives in a forest on a hillside, it will seek to enslave hill giants, which the dragon considers its greatest enemy. A green dragon makes its lair in underground chambers far beneath its forest.",
+          "The majority of green dragons encountered will be alone. However, when a mated pair of dragons and their young are encountered, the female will leap to the attack. The male will take the young to a place of safety before joining the fight. The parents are extremely protective of their young, despite their evil nature, and will sacrifice their own lives to save their offspring.",
+          "ECOLOGY",
+          "Although green dragons have been known to eat practically anything, including shrubs and small trees when they are hungry enough, they especially prize elves. If the forest is on a hillside, hill giants will hunt the younger dragons, which they consider a delicacy."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Green Dragon, Ancient",
+      "size": "G",
+      "type": "dragon",
+      "source": "AngryGolemGamesMonsterManual",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 21,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "22d20 + 154",
+        "average": 385
+      },
+      "speed": {
+        "walk": 40,
+        "fly": 80,
+        "canHover": false,
+        "swim": 40
+      },
+      "str": 27,
+      "dex": 12,
+      "con": 25,
+      "int": 20,
+      "wis": 17,
+      "cha": 19,
+      "passive": 27,
+      "cr": "22",
+      "shortName": "Green Dragon, Ancient",
+      "senses": [
+        "blindsight 60 ft.",
+        "darkvision 120 ft."
+      ],
+      "senseTags": [
+        "B",
+        "SD"
+      ],
+      "languages": [
+        "Common",
+        "Draconic"
+      ],
+      "languageTags": [
+        "C",
+        "DR"
+      ],
+      "save": {
+        "dex": "+8",
+        "con": "+14",
+        "wis": "+10",
+        "cha": "+11"
+      },
+      "skill": {
+        "deception": "+11",
+        "insight": "+10",
+        "perception": "+17",
+        "persuasion": "+11",
+        "stealth": "+8"
+      },
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "poisoned"
+      ],
+      "trait": [
+        {
+          "name": "Amphibious",
+          "entries": [
+            "The dragon can breathe air and water."
+          ]
+        },
+        {
+          "name": "Legendary Resistance (3/Day)",
+          "entries": [
+            "If the dragon fails a saving throw, it can choose to succeed instead."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Amphibious",
+        "Legendary Resistances"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 15} to hit, reach 15 ft., one target. {@h}19 ({@damage 2d10 + 8}) piercing damage, plus 10 ({@damage 3d6}) poison damage."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 15} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d6 + 8}) slashing damage."
+          ]
+        },
+        {
+          "name": "Tail",
+          "entries": [
+            "{@atk mw} {@hit 15} to hit, reach 20 ft., one target. {@h}17 ({@damage 2d8 + 8}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Frightful Presence",
+          "entries": [
+            "Each creature of the dragon’s choice that is within 120 feet of the dragon and aware of it must succeed on a {@dc 19} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the dragon’s Frightful Presence for the next 24 hours."
+          ]
+        },
+        {
+          "name": "Poison Breath {@recharge 5}",
+          "entries": [
+            "The dragon exhales poisonous gas in a 90-foot cone. Each creature in that area must make a {@dc 22} Constitution saving throw, taking 77 ({@damage 22d6}) poison damage on a failed save, or half as much damage on a successful one."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Breath Weapon",
+        "Frightful Presence",
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P",
+        "I",
+        "S",
+        "B"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH",
+        "AOE"
+      ],
+      "conditionInflict": [
+        "frightened",
+        "prone"
+      ],
+      "legendaryActions": 3,
+      "legendaryHeader": [
+        "Ancient Green Dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. Ancient Green Dragon regains spent legendary actions at the start of their turn."
+      ],
+      "legendary": [
+        {
+          "name": "Detect",
+          "entries": [
+            "The dragon makes a Wisdom (Perception) check."
+          ]
+        },
+        {
+          "name": "Tail Attack",
+          "entries": [
+            "The dragon makes a tail attack."
+          ]
+        },
+        {
+          "name": "Wing Attack (Costs 2 Actions)",
+          "entries": [
+            "The dragon beats its wings. Each creature within 15 ft. of the dragon must succeed on a {@dc 23} Dexterity saving throw or take 15 ({@damage 2d6 + 8}) bludgeoning damage and be knocked {@condition prone}. The dragon can then fly up to half its flying speed."
+          ]
+        }
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Green Dragon, Ancient|https://angrygolem-games.com/monster-manual/letter-g/green-dragon-ancient-5e-stats/}",
+          "DESCRIPTION",
+          "Green dragons are bad tempered, mean, cruel, and rude. They hate goodness and good-aligned creatures. They love intrigue and seek to enslave other woodland creatures, killing those who cannot be controlled or intimidated.",
+          "A hatchling green dragon’s scales are thin, very small, and a deep shade of green that appears nearly black. As the dragon ages, the scales grow larger and become lighter, turning shades of forest, emerald, and olive green, which helps it blend in with its wooded surroundings. A green dragon’s scales never become as thick as other dragons’, remaining smooth and flexible.",
+          "HABITAT / SOCIETY",
+          "Green dragons are found in sub-tropical and temperate forests, the older the forest and bigger the trees, the better. The sights and smells of the woods are pleasing to the dragon, and it considers the entire forest or woods its territory. Sometimes the dragon will enter into a relationship with other evil forest-dwelling creatures, which keep the dragon informed about what is going on in the forest and surrounding area in exchange for their lives. If a green dragon lives in a forest on a hillside, it will seek to enslave hill giants, which the dragon considers its greatest enemy. A green dragon makes its lair in underground chambers far beneath its forest.",
+          "The majority of green dragons encountered will be alone. However, when a mated pair of dragons and their young are encountered, the female will leap to the attack. The male will take the young to a place of safety before joining the fight. The parents are extremely protective of their young, despite their evil nature, and will sacrifice their own lives to save their offspring.",
+          "ECOLOGY",
+          "Although green dragons have been known to eat practically anything, including shrubs and small trees when they are hungry enough, they especially prize elves. If the forest is on a hillside, hill giants will hunt the younger dragons, which they consider a delicacy."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
     }
 	]
 }
