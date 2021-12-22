@@ -138,7 +138,6 @@
 - [USE Smart-Target instead][COMBAT][Easy Target](https://bitbucket.org/Fyorl/easy-target/src/master/ ) - https://bitbucket.org/Fyorl/easy-target/raw/master/module.json
 - [NOT ESSENTIAL][COMBAT][BETA][Dungeon Moon Encounter Builder](https://github.com/cswendrowski/FoundryVTT-Encounter-Builder/ )
 - [NOT ESSENTIAL][CHAT][Token Chat Link](https://github.com/espositos/fvtt-tokenchatlink ) - https://raw.githubusercontent.com/espositos/fvtt-tokenchatlink/master/module.json
-- [Abbandoned][CHARACTHER SHEET/UTILITY][Ethck's Downtime Tracking](https://github.com/Ethck/Ethck-s-Downtime-Tracking ) - https://raw.githubusercontent.com/Ethck/Ethck-s-Downtime-Tracking/master/module.json
 - [NOT ESSENTIAL][UTILITY][Autocomplete Inline Properties](https://github.com/schultzcole/FVTT-Autocomplete-Inline-Properties )
 - [NOT ESSENTIAL][JOURNAL][Journal Scaler](https://github.com/jegasus/journal-scaler )
 - [Abbandoned][TOKEN/ENTITY/CHARACTER SHEET][Pick-Up-Stix](https://github.com/kamcknig/pick-up-stix ) - https://raw.githubusercontent.com/kamcknig/pick-up-stix/develop/src/module.json

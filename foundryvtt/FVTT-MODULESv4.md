@@ -85,13 +85,16 @@
 
 # MODULES DA VERIFICARE
 
-- [UTILITY][Environment Interaction](https://github.com/jessev14/environment-interaction)
 - [World Explorer](https://github.com/CarlosFdez/world-explorer)
 - [TOKEN][Target Reacts](https://github.com/Vauryx/TargetReacts)
 - [TOKEN][Inactive Tokens](https://github.com/jagoe/fvtt-module-inactive-tokens)
 - [UTILITY][Drag Anything To Hotbar for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-drag-all-to-hotbar)
 - [LIGHT/SOUND][Light/Sound Mask](https://github.com/caewok/fvtt-light-mask)
 - [COMPENDIUM](https://github.com/adougherty/random-everything-generator)
+- [EFFECT][Token Magic FX](https://github.com/Feu-Secret/Tokenmagic)
+- [COMBAT][Bulk Tasks](https://github.com/NekroDarkmoon/bulk-tasks)
+- [EFFECT][Hey, Wait!](https://github.com/1000nettles/hey-wait)
+- [SCENE][Unofficial Azgaar's Fantasy Map Generator Import](https://github.com/Ethck/azgaar-foundry)
 
 ## MODULES LANGUAGE ITA
 
@@ -122,6 +125,7 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 - [CHARACTER SHEET][Link Item and Resource DnD5e](https://github.com/ElfFriend-DnD/foundryvtt-link-item-resource-5e)
 - [CHARACTER SHEET/UTILITY][Variant Encumbrance 5e](https://github.com/VanirDev/VariantEncumbrance )
 - [TOKEN][Innocenti's Loot](https://github.com/rinnocenti/innocenti-loot)
+- [CHARACTHER SHEET/UTILITY][Ethck's Downtime Tracking](https://github.com/Ethck/Ethck-s-Downtime-Tracking )
 
 ## [SYSTEM] PATHFINDER 1 MODULES
 
@@ -211,6 +215,7 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 ## UI Projects
 
 - [UI][Ernie's Modern UI](https://github.com/ernieayala/ernies-modern-layout )
+- [UI][Dracula Foundry](https://github.com/CasanovaSekova/dracula-foundry )
 
 ## OLD MACROS Projects
 
@@ -247,6 +252,7 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 - [SYSTEM][Discord](https://github.com/caoranach/DiscordConnect )
 - [SYSTEM][DEPRECATED][Discord Bridge](https://github.com/nearlyNonexistent/foundry-discordbridge ) - https://raw.githubusercontent.com/nearlyNonexistent/foundry-discordbridge/master/module.json
 - [SYSTEM][Discord Rich Presence](https://github.com/cswendrowski/FoundryVTT-Discord-Rich-Presence ) - https://raw.githubusercontent.com/cswendrowski/FoundryVTT-Discord-Rich-Presence/master/module.json
+
 ## DEVELOPING
 
 - [DEV][FoundryGet](https://github.com/cswendrowski/foundryget ) - https://raw.githubusercontent.com/cswendrowski/foundryget/master/module.json
