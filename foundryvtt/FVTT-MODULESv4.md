@@ -32,7 +32,6 @@
 - [UTILITY][Monks TokenBar](https://github.com/ironmonk88/monks-tokenbar)
 - [UTILITY][Automated Animations](https://github.com/otigon/automated-jb2a-animations )
 - [CHAT][Chat Images](https://github.com/bmarian/chat-images )
-- [TOKEN/SCENES][pull-players-to-scene](https://github.com/Mr-Byte/pull-players-to-scene )
 - [CHAT][Chat Portrait](https://github.com/ShoyuVanilla/FoundryVTT-Chat-Portrait/ )
 
 - [TOKEN][TOKEN Z](https://github.com/theripper93/token-z)
@@ -76,6 +75,7 @@
 - [JOURNAL][Storyteller for Foundry VTT](https://github.com/Xbozon/storyteller)
 - [IMAGES][Clipboard Image for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-clipboard-image)
 - [UTILITY][Pause Control](https://gitlab.com/koboldworks/agnostic/pause-control)
+- [SHEET][JV's Actor Link Indicator for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-actor-link-indicator)
 
 ## MODULES NECESSARI SOLO IN FASE DI COSTRUZIONE E NON DI SESSIONE
 
@@ -159,6 +159,31 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 - [SYSTEM] [kamigakarija](https://github.com/BrotherSharper/kamigakarija )
 - [SYSTEM] [13th Age MODULES](https://gitlab.com/asacolips-projects/foundry-mods/archmage )
 
+## UI Projects
+
+- [UI][Ernie's Modern UI](https://github.com/ernieayala/ernies-modern-layout )
+- [UI][Dracula Foundry](https://github.com/CasanovaSekova/dracula-foundry )
+- [UI][JV's Minimal UI for FoundryVTT](https://github.com/saif-ellafi/foundryvtt-minimal-ui)
+- [UI][JV's Window Controls for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-window-controls)
+
+## MODULES FOR MANAGE AUDIO
+
+- [AUDIO][Sound Board by Blitz](https://github.com/BlitzKraig/fvtt-SoundBoard )
+- [AUDIO][SoundBoard Pack - Blitz Free Pack](https://github.com/BlitzKraig/fvtt-SoundBoard-BlitzFreePack )
+- [AUDIO][SoundBoard Pack - Blitz Community Pack](https://github.com/BlitzKraig/fvtt-SoundBoard-BlitzCommunityPack )
+- [AUDIO][Bellows](https://github.com/casualchameleon/Bellows )
+- [AUDIO][Background Volume](https://github.com/mtvjr/background-volume)
+- 
+- [BETTER SOUNDBOARD][AUDIO][Playlist Import](https://github.com/JacobMcAuley/playlist_import )
+- [NOT ESSENTIAL][AUDIO][SoundFx Library](https://github.com/CDeenen/SoundFxLibrary)
+
+## MODULES MOBILE SUPPORT
+
+- [DEPRECATED][STYLE][Screenscene](https://github.com/AJAnderson/screenscene )
+- [STYLE][Mobile Improvements](https://gitlab.com/fvtt-modules-lab/mobile-improvements)
+- [UTILITY][TouchVTT](https://github.com/Oromis/touch-vtt)
+- [Utility][Zoom/Pan Options](https://github.com/itamarcu/ZoomPanOptions)
+
 # ======================================================================
 # ======================================================================
 
@@ -212,11 +237,6 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 # ======================================================================
 # ======================================================================
 
-## UI Projects
-
-- [UI][Ernie's Modern UI](https://github.com/ernieayala/ernies-modern-layout )
-- [UI][Dracula Foundry](https://github.com/CasanovaSekova/dracula-foundry )
-
 ## OLD MACROS Projects
 
 - [OLD][MACRO][Commnunity Macros](https://github.com/foundry-vtt-community/macros )
@@ -228,23 +248,6 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 - [OLD][MACRO][Trigger Happy Teleportation](https://forums.forge-vtt.com/t/trigger-happy-teleportation-tutorial/2117 )
 - [OLD][MACRO][Trigger Happy Traps](https://forums.forge-vtt.com/t/trigger-happy-traps/3448 )
 - [OLD][MACRO][Trigger Happy (The Basics)](https://youtu.be/okTWYO4oEMA )
-
-## MODULES FOR MANAGE AUDIO
-
-- [AUDIO][Sound Board by Blitz](https://github.com/BlitzKraig/fvtt-SoundBoard )
-- [AUDIO][SoundBoard Pack - Blitz Free Pack](https://github.com/BlitzKraig/fvtt-SoundBoard-BlitzFreePack )
-- [AUDIO][SoundBoard Pack - Blitz Community Pack](https://github.com/BlitzKraig/fvtt-SoundBoard-BlitzCommunityPack )
-- [AUDIO][Bellows](https://github.com/casualchameleon/Bellows )
-- [AUDIO][Playlist Import](https://github.com/JacobMcAuley/playlist_import )
-- [NOT ESSENTIAL][AUDIO][SoundFx Library](https://github.com/CDeenen/SoundFxLibrary)
-- [AUDIO][Backgorund Volume](https://github.com/mtvjr/background-volume)
-
-## MODULES MOBILE SUPPORT
-
-- [DEPRECATED][STYLE][Screenscene](https://github.com/AJAnderson/screenscene )
-- [STYLE][Mobile Improvements](https://gitlab.com/fvtt-modules-lab/mobile-improvements)
-- [UTILITY][TouchVTT](https://github.com/Oromis/touch-vtt)
-- [Utility][Zoom/Pan Options](https://github.com/itamarcu/ZoomPanOptions)
 
 ## MODULES WebRTC/Discord
 

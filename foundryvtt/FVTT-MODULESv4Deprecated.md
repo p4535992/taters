@@ -2,15 +2,18 @@
 # NOT ESSENTIAL 
 # ======================================================================
 
+## 2021-12
+
+- [TOKEN/SCENES][pull-players-to-scene](https://github.com/Mr-Byte/pull-players-to-scene )
+
 ## 2021-11
 
 - [VERY GOOD BUT NO ESSENTIAL][COMBAT][Active Auras](https://github.com/kandashi/Active-Auras )
 - [IS BETTER SCENE PACKER][EXTERNAL][Adventure Import Export](https://github.com/cstadther/adventure-import-export )
-- [Compendium Importer for Foundry VTT](https://gitlab.com/mkahvi/fvtt-compendium-importer)
+- [NOT ESSENTIAL][Compendium Importer for Foundry VTT](https://gitlab.com/mkahvi/fvtt-compendium-importer)
 
 ## 2021-10
 
-- [BETTER SOUNDBOARD][AUDIO][Playlist Import](https://github.com/JacobMcAuley/playlist_import ) - https://raw.githubusercontent.com/JacobMcAuley/playlist_import/master/module.json
 - [NOT ESSENTIAL][UTILITY][Roger's Additional Metric Ruler Labels](https://github.com/Roger92/metric-ruler-labels)
 - [NOT ESSENTIAL][UTILITY][Burger Time](https://github.com/scottburton11/burger-time)
 - [NOT ESSENTIAL][TOKEN][Quick Scale](https://github.com/unsoluble/quickscale) -
@@ -65,7 +68,7 @@
 - [NOT ESSENTIAL][Show Art With Credits](https://github.com/HadaIonut/Foundry-Show-Art)
 - [NOT ESSENTIAL IS BETTER NEXT UP][Turn marker Alt](https://github.com/kckaiwei/TurnMarker-alt)
 - [NOT ESSENTIAL IS BETTER DF Convenient Effects or Macro][TorchLight](https://github.com/PhilippeKr/TorchLight)
-- [NOT ESENTIAL COMBAT][Not your turn](https://github.com/CDeenen/NotYourTurn ) - https://raw.githubusercontent.com/CDeenen/NotYourTurn/master/module.json
+- [NOT ESENTIAL BETTER TOKENBAR][COMBAT][Not your turn](https://github.com/CDeenen/NotYourTurn ) - https://raw.githubusercontent.com/CDeenen/NotYourTurn/master/module.json
 - [NOT ESSENTIAL][ImageDrop](https://gitlab.com/mesfoliesludiques/foundryvtt-image-drop)
 - [NOT EESENTIAL BUT VERY GOOD][JOURNAL][NOte Macro](https://github.com/Kekilla0/Note-Macro)
 - [NOT ESSENTIAL][SCENE][Compendium Scene Viewer](https://github.com/BadIdeasBureau/scene-viewer )

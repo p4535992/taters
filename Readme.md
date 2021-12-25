@@ -15,6 +15,9 @@
 - [Published Site](http://gc3.github.io/taters/)
 - [How to Add an Article](http://gc3.github.io/taters/article.html)
 
+Blank token image:
+
+https://5etools-mirror-1.github.io/img/blank.png
 
 ## Darksun link
 
