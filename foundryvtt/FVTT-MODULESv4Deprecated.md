@@ -4,7 +4,10 @@
 
 ## 2021-12
 
-- [TOKEN/SCENES][pull-players-to-scene](https://github.com/Mr-Byte/pull-players-to-scene )
+- [NOT ESSENTIAL][JOURNAL][NOT ESSENTIAL] https://github.com/moo-man/FVTT-SelectiveShow
+- [NOT ESSENTIAL][TOKEN][Token Action HUD Artwork](https://github.com/zeel01/TokenHUDArtButton )
+- [NOT ESSENTIAL][TOKEN/SCENES][pull-players-to-scene](https://github.com/Mr-Byte/pull-players-to-scene )
+- [NOT ESSENTIAL][Roll from compendium](https://github.com/itamarcu/roll-from-compendium)
 
 ## 2021-11
 
@@ -44,7 +47,6 @@
 - [NOT ESSENTIAL][Token Vision Animation: World Scope](https://gitlab.com/DmitryRomanenko/token-vision-animation-world)
 - [NOT ESSENTIAL][UTILITY][Hey Wait](https://github.com/1000nettles/hey-wait )
 - [NOT ESSENTIAL] Inline Webpreviewer
-- [NOT ESSENTIAL] Roll from compendium
 - [NOT ESSENTIAL][TOKEN/CHAT][Group Rolls for D&D 5e](https://github.com/trdischat/grouproll)
 - [NOT ESSENTIAL][COMBAT][Condition Automation/Conditions](https://github.com/kandashi/condition-automation ) - https://raw.githubusercontent.com/kandashi/condition-automation/master/module.json
 - [NOT ESSENTIAL]https://github.com/MAClavell/gm-token-drag-visibility-v2
@@ -117,7 +119,6 @@
 - [NOT ESSENTIAL AND YOU CAN STILL USE IRONMONK TOKENBAR][whisper-dialog](https://github.com/Kekilla0/whisper-dialog) - https://raw.githubusercontent.com/Kekilla0/whisper-dialog/master/module.json
 - [NOT ESSENTIAL YOU CAN STILL USE ACTIONHUD][[TOKEN][Illandril's Token Tooltips (5e)](https://github.com/illandril/FoundryVTT-token-tooltips ) - https://raw.githubusercontent.com/illandril/FoundryVTT-token-tooltips/master/module.json
 - [NEED UPDATED][COMBAT][Faction Tokens](https://github.com/Voldemalort/token-factions )
-- [NOT ESSENTIAL][TOKEN][Token Action HUD Artwork](https://github.com/zeel01/TokenHUDArtButton ) - https://raw.githubusercontent.com/zeel01/TokenHUDArtButton/master/module.json
 - [NOT ESSENTIAL][MAP/IMPORT][EEEG-Importer](https://github.com/HadaIonut/EEEG-importer ) - 
 - [NOT ESSENTIAL][MAP/TOKEN/CONDITION][Illandril's Token Hud Scale](https://foundryvtt.com/packages/illandril-token-hud-scale/ ) - 
 - [NOT ESSENTIAL][INVENTORY][Illandril's Inventory Sorter (5e)](https://github.com/illandril/FoundryVTT-inventory-sorter ) - https://raw.githubusercontent.com/illandril/FoundryVTT-inventory-sorter/master/module.json 
@@ -208,7 +209,6 @@
 - [DEPRECATED][TOKEN][Mount Up](https://github.com/Brunhine/MountUp ) - https://gitlab.com/brunhine/foundry-mountup/raw/master/mountup/module.json
 - [DEPRECATED][TOKEN][Follow me](https://github.com/Brunhine/FollowMe ) - https://gitlab.com/brunhine/foundry-followme/raw/master/followme/module.json
 - [DEPRECATED IN FAVOR OF POLIGLOTA][JOURNAL/CHAT][Polyglot](https://github.com/kakaroto/fvtt-module-polyglot ) - https://raw.githubusercontent.com/kakaroto/fvtt-module-polyglot/master/module.json
-- [NOT ESSENTIAL][CHARACTER SHEET/UTILITY][Show Art Button](https://github.com/zeel01/TokenHUDArtButton)
 - [NOT ESSENTIAL][CHAT][Deepflame's Chat Cards](https://gitlab.com/TimToxopeus/df-chat-cards ) - 
 - [NOT ESSENTIAL][TOKEN][Illandril's NPC Quick Actions (5e)](https://github.com/illandril/FoundryVTT-npc-quick-actions ) - https://raw.githubusercontent.com/illandril/FoundryVTT-npc-quick-actions/master/module.json 
 - [NOT ESSENTIAL][JOURNAL][Markdown Editor](https://github.com/Moerill/fvtt-markdown-editor) - https://raw.githubusercontent.com/Moerill/fvtt-markdown-editor/master/src/module.json
@@ -345,7 +345,6 @@
 
 ## [MINOR MODULES OLD] NOT ESSENTIAL 1
 
-- [JOURNAL][NOT ESSENTIAL] https://github.com/moo-man/FVTT-SelectiveShow
 - [TOKEN][NOT ESSENTIAL][ConditionIconHoverZoom](https://github.com/Sparkasaurusmex/ConditionIconHoverZoom ) - https://raw.githubusercontent.com/Sparkasaurusmex/ConditionIconHoverZoom/master/module.json 
 - [DEV][NOT ESSENTIAL][libwrapper](https://github.com/ruipin/fvtt-lib-wrapper ) - https://raw.githubusercontent.com/ruipin/fvtt-lib-wrapper/master/module.json
 - [TOKEN][NOT ESSENTIAL][Token Animation Tools](https://github.com/ruipin/fvtt-token-animation-tools ) - https://raw.githubusercontent.com/ruipin/fvtt-token-animation-tools/master/module.json
