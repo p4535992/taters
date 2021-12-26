@@ -44,6 +44,8 @@
 - [CHARACTER SHEET][Merchant Sheet NPC](https://github.com/whelan/fvtt-merchant-sheet-npc)
 - [UTILITY][Monk's Little Details](https://github.com/ironmonk88/monks-little-details)
 - [UTILITY][Rarity Colors](https://github.com/kandashi/rarity-colors)
+- [UTILITY][JV's Drag Anything To Hotbar for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-drag-all-to-hotbar)
+- [UTILITY/ROLLTABLE][Hidden Tables](https://github.com/kandashi/hidden-tables)
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
@@ -54,6 +56,8 @@
 - [COMBAT][Combat Utility Belt](https://github.com/death-save/combat-utility-belt )
 - [COMBAT][Resource Icons](https://github.com/jessev14/resource-icons)
 - [COMBAT][Advanced Spell Effects](https://github.com/Vauryx/AdvancedSpellEffects)
+- [COMBAT][Less Fog](https://github.com/trdischat/lessfog )
+- [COMBAT][Hurry Up! Combat Timer](https://github.com/theripper93/hurry-up)
 
 ## [NOT ESSENTIAL BUT VERY GOOD] 0.8.9
 
@@ -76,6 +80,8 @@
 - [IMAGES][Clipboard Image for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-clipboard-image)
 - [UTILITY][Pause Control](https://gitlab.com/koboldworks/agnostic/pause-control)
 - [SHEET][JV's Actor Link Indicator for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-actor-link-indicator)
+- [TOKEN][Illandril's Token HUD Scaler](https://github.com/illandril/FoundryVTT-token-hud-scale)
+- [SCENE][Scene Transitions](https://github.com/DM-miX/scene-transitions)
 
 ## MODULES NECESSARI SOLO IN FASE DI COSTRUZIONE E NON DI SESSIONE
 

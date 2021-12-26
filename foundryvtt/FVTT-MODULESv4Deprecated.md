@@ -8,6 +8,8 @@
 - [NOT ESSENTIAL][TOKEN][Token Action HUD Artwork](https://github.com/zeel01/TokenHUDArtButton )
 - [NOT ESSENTIAL][TOKEN/SCENES][pull-players-to-scene](https://github.com/Mr-Byte/pull-players-to-scene )
 - [NOT ESSENTIAL][Roll from compendium](https://github.com/itamarcu/roll-from-compendium)
+- [NOT ESSENTIAL][Enhanced Active Effects](https://github.com/patrickporto/fvtt-enhanced-active-effects)
+- [NOT ESSENTIAL YOU CAN STILL USE ACTIONHUD][[TOKEN][Illandril's Token Tooltips (5e)](https://github.com/illandril/FoundryVTT-token-tooltips )
 
 ## 2021-11
 
@@ -37,7 +39,6 @@
 - [NOT ESSENTIAL][CHARACTER SHEET/UTILITY][Short Rest Recovery](https://github.com/Haxxer/FoundryVTT-ShortRestRecovery ) - https://raw.githubusercontent.com/Haxxer/FoundryVTT-ShortRestRecovery/main/short-rest-recovery/module.json
 - [NOT ESSENTIAL][CHARACTER SHEET/UTILITY][FVTT Long Rest HD Healing 5e](https://github.com/schultzcole/FVTT-Long-Rest-HD-Healing-5e/ ) - https://raw.githubusercontent.com/schultzcole/FVTT-Long-Rest-HD-Healing-5e/master/module.json
 - [NOT ESSENTIAL][TOKEN][Border Control](https://github.com/kandashi/Border-Control )
-- [NOT ESSENTIAL][COMBAT][Less Fog](https://github.com/trdischat/lessfog ) - https://raw.githubusercontent.com/trdischat/lessfog/master/module.json
 - [NOT ESSENTIAL][Let's trade]()
 - [NOT ESSENTIAL][CHAT][FoundryVTT NPC Chatter](https://github.com/cswendrowski/FoundryVtt-Npc-Chatter ) - https://raw.githubusercontent.com/cswendrowski/FoundryVtt-Npc-Chatter/master/module.json
 - [NOT ESSENTIAL][TOKEN][Shared Vision](https://github.com/CDeenen/SharedVision )
@@ -106,8 +107,6 @@
 - [DEPRECATED][MACRO][DnD5e-WildShape](https://github.com/MisterHims/DnD5e-WildShape ) - https://raw.githubusercontent.com/MisterHims/DnD5e-WildShape/master/module.json
 - [NOT ESSENTIAL][JOURNAL][DnD5 Cheatsheet](https://github.com/pchouzenoux/foundryvtt-dnd5-cheatsheet) - https://raw.githubusercontent.com/pchouzenoux/foundryvtt-dnd5-cheatsheet/main/src/module.json
 - [NOT ESSENTIAL]https://gitlab.com/jesusafier/grape_juice-isometrics/
-- [NOT ESSENTIAL][ROLLTABLE][Hidden Tables](https://github.com/kandashi/hidden-tables) - https://raw.githubusercontent.com/kandashi/hidden-tables/master/module.json
-- [NOT ESSENTIAL]https://github.com/illandril/FoundryVTT-token-hud-scale
 - [NOT ESSENTIAL][UTILITY][Lockview](https://github.com/CDeenen/LockView )
 - [IS BETTER IRONMONK TOKENBAR][UTILITY][Party Overview by LoFD](https://github.com/League-of-Foundry-Developers/party-overview ) - https://raw.githubusercontent.com/League-of-Foundry-Developers/party-overview/master/module.json
 - [NEED UPDATE][COMBAT][Ready Set Go!](https://github.com/crash1115/ready-check) - https://raw.githubusercontent.com/crash1115/ready-check/main/module.json
@@ -117,7 +116,6 @@
 - [NOT ESSENTIAL][UI][Window Controls for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-window-controls) - https://raw.githubusercontent.com/saif-ellafi/foundryvtt-window-controls/master/module.json
 - [NEED UPDATE][CHARACTER SHEET/UTILITY][FoundryVTT-GiveItem](https://github.com/Sepichat/FoundryVTT-GiveItem )
 - [NOT ESSENTIAL AND YOU CAN STILL USE IRONMONK TOKENBAR][whisper-dialog](https://github.com/Kekilla0/whisper-dialog) - https://raw.githubusercontent.com/Kekilla0/whisper-dialog/master/module.json
-- [NOT ESSENTIAL YOU CAN STILL USE ACTIONHUD][[TOKEN][Illandril's Token Tooltips (5e)](https://github.com/illandril/FoundryVTT-token-tooltips ) - https://raw.githubusercontent.com/illandril/FoundryVTT-token-tooltips/master/module.json
 - [NEED UPDATED][COMBAT][Faction Tokens](https://github.com/Voldemalort/token-factions )
 - [NOT ESSENTIAL][MAP/IMPORT][EEEG-Importer](https://github.com/HadaIonut/EEEG-importer ) - 
 - [NOT ESSENTIAL][MAP/TOKEN/CONDITION][Illandril's Token Hud Scale](https://foundryvtt.com/packages/illandril-token-hud-scale/ ) - 
@@ -359,7 +357,7 @@
 
 ## [MINOR MODULES OLD] NOT ESSENTIAL 2
 
-- [ENTITY][NOT ESSENTIAL][Macro Folders](https://github.com/earlSt1/vtt-macro-folders ) - https://raw.githubusercontent.com/earlSt1/vtt-macro-folders/master/module.json
+- [ENTITY][INTEGRATED ON CORE][Macro Folders](https://github.com/earlSt1/vtt-macro-folders ) - https://raw.githubusercontent.com/earlSt1/vtt-macro-folders/master/module.json
 - [EXTERNAL][SUPPORT FOR CALENDAR][Dodecaluna ]() - https://raw.githubusercontent.com/Sparkasaurusmex/dodecaluna/master/module.json
 - [MAP/ROLL][NOT ESSENTIAL][Dice So Nice](https://gitlab.com/riccisi/foundryvtt-dice-so-nice ) - https://gitlab.com/riccisi/foundryvtt-dice-so-nice/raw/master/module/module.json 
 - [ROLL/CHAT][NOT ESSENTIAL][Chat Alias](https://github.com/nwen-dicekittens/Chat-Alias )
