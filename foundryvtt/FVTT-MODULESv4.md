@@ -58,6 +58,7 @@
 - [COMBAT][Advanced Spell Effects](https://github.com/Vauryx/AdvancedSpellEffects)
 - [COMBAT][Less Fog](https://github.com/trdischat/lessfog )
 - [COMBAT][Hurry Up! Combat Timer](https://github.com/theripper93/hurry-up)
+- [COMBAT][Status Icon Tweaks](https://github.com/jessev14/status-icon-tweaks)
 
 ## [NOT ESSENTIAL BUT VERY GOOD] 0.8.9
 
