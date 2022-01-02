@@ -81,7 +81,6 @@
 - [IMAGES][Clipboard Image for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-clipboard-image)
 - [UTILITY][Pause Control](https://gitlab.com/koboldworks/agnostic/pause-control)
 - [SHEET][JV's Actor Link Indicator for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-actor-link-indicator)
-- [TOKEN][Illandril's Token HUD Scaler](https://github.com/illandril/FoundryVTT-token-hud-scale)
 - [SCENE][Scene Transitions](https://github.com/DM-miX/scene-transitions)
 
 ## MODULES NECESSARI SOLO IN FASE DI COSTRUZIONE E NON DI SESSIONE
@@ -90,18 +89,20 @@
 - [WALL][Wall Height](https://github.com/schultzcole/FVTT-Wall-Height )
 - [WALL][Monks Wall Enchancement](https://github.com/ironmonk88/monks-wall-enhancement)
 
-# MODULES DA VERIFICARE
+# MODULES DA VERIFICARE SE NECESSARI
 
-- [World Explorer](https://github.com/CarlosFdez/world-explorer)
+- [SCRIPT][Macro-Helper](https://github.com/Kekilla0/Macro-Helper)
+- [SCRIPT][World-Scripter](https://github.com/Kekilla0/World-Scripter)
+- [SCENE][World Explorer](https://github.com/CarlosFdez/world-explorer)
 - [TOKEN][Target Reacts](https://github.com/Vauryx/TargetReacts)
 - [TOKEN][Inactive Tokens](https://github.com/jagoe/fvtt-module-inactive-tokens)
 - [UTILITY][Drag Anything To Hotbar for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-drag-all-to-hotbar)
 - [LIGHT/SOUND][Light/Sound Mask](https://github.com/caewok/fvtt-light-mask)
-- [COMPENDIUM](https://github.com/adougherty/random-everything-generator)
 - [EFFECT][Token Magic FX](https://github.com/Feu-Secret/Tokenmagic)
 - [COMBAT][Bulk Tasks](https://github.com/NekroDarkmoon/bulk-tasks)
 - [EFFECT][Hey, Wait!](https://github.com/1000nettles/hey-wait)
 - [SCENE][Unofficial Azgaar's Fantasy Map Generator Import](https://github.com/Ethck/azgaar-foundry)
+- [SCRIPT/AE][Enhanced Active Effects](https://github.com/patrickporto/fvtt-enhanced-active-effects)
 
 ## MODULES LANGUAGE ITA
 

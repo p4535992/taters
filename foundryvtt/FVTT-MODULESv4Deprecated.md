@@ -10,6 +10,8 @@
 - [NOT ESSENTIAL][Roll from compendium](https://github.com/itamarcu/roll-from-compendium)
 - [NOT ESSENTIAL][Enhanced Active Effects](https://github.com/patrickporto/fvtt-enhanced-active-effects)
 - [NOT ESSENTIAL YOU CAN STILL USE ACTIONHUD][[TOKEN][Illandril's Token Tooltips (5e)](https://github.com/illandril/FoundryVTT-token-tooltips )
+- [IS BETTER Status Icon Tweaks][TOKEN][Illandril's Token HUD Scaler](https://github.com/illandril/FoundryVTT-token-hud-scale)
+- [NOT ESSENTIAL][COMPENDIUM](https://github.com/adougherty/random-everything-generator)
 
 ## 2021-11
 
