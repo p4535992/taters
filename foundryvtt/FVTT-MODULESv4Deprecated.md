@@ -12,6 +12,9 @@
 - [NOT ESSENTIAL YOU CAN STILL USE ACTIONHUD][[TOKEN][Illandril's Token Tooltips (5e)](https://github.com/illandril/FoundryVTT-token-tooltips )
 - [IS BETTER Status Icon Tweaks][TOKEN][Illandril's Token HUD Scaler](https://github.com/illandril/FoundryVTT-token-hud-scale)
 - [NOT ESSENTIAL][COMPENDIUM](https://github.com/adougherty/random-everything-generator)
+- [NOT ESSENTIAL][UTILITY][Less Fog](https://github.com/trdischat/lessfog )
+- [NOT ESSENTIAL][UTILITY/ROLLTABLE][Hidden Tables](https://github.com/kandashi/hidden-tables)
+- [NOT ESSENTIAL][COMBAT][Resource Icons](https://github.com/jessev14/resource-icons)
 
 ## 2021-11
 

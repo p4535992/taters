@@ -45,7 +45,7 @@
 - [UTILITY][Monk's Little Details](https://github.com/ironmonk88/monks-little-details)
 - [UTILITY][Rarity Colors](https://github.com/kandashi/rarity-colors)
 - [UTILITY][JV's Drag Anything To Hotbar for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-drag-all-to-hotbar)
-- [UTILITY/ROLLTABLE][Hidden Tables](https://github.com/kandashi/hidden-tables)
+- [UTILITY][JB2A Sequencer Macro Library](https://github.com/IrateRedKite/jb2a-sequencer-spell-macros)
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
@@ -56,7 +56,6 @@
 - [COMBAT][Combat Utility Belt](https://github.com/death-save/combat-utility-belt )
 - [COMBAT][Resource Icons](https://github.com/jessev14/resource-icons)
 - [COMBAT][Advanced Spell Effects](https://github.com/Vauryx/AdvancedSpellEffects)
-- [COMBAT][Less Fog](https://github.com/trdischat/lessfog )
 - [COMBAT][Hurry Up! Combat Timer](https://github.com/theripper93/hurry-up)
 - [COMBAT][Status Icon Tweaks](https://github.com/jessev14/status-icon-tweaks)
 
