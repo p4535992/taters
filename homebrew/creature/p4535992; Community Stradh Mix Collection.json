@@ -2933,7 +2933,7 @@
 				{
 					"name": "Hag's bolt",
 					"entries": [
-						"{@atk rw} {@hit 16} to hit, range 240/240 ft., one target. {@h}23 ({@damage 3d10 + 7}) force damage."
+						"{@atk rw} {@hit 16} to hit, range 240 ft., one target. {@h}23 ({@damage 3d10 + 7}) force damage."
 					]
 				},
 				{
@@ -3053,7 +3053,7 @@
 					]
 				}
 			],
-			"tokenUrl": "sss",
+			"tokenUrl": "https://i.imgur.com/9xISocq.png",
 			"fluff": {
 				"entries": [
 					"{@link Baba Lysaga|https://www.dmsguild.com/product/245440/The-Devils-Mother-Baba-Lysaga-A-CR-25-Version}",
@@ -3137,7 +3137,237 @@
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "sss"
+							"url": "https://i.imgur.com/FJkN5mM.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Baba Lysaga's Creeping Hut",
+			"size": "G",
+			"type": "construct",
+			"source": "p4535992StradhMix",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "17d10 + 193",
+				"average": 286
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 26,
+			"dex": 7,
+			"con": 20,
+			"int": 1,
+			"wis": 3,
+			"cha": 3,
+			"passive": 6,
+			"cr": "14",
+			"shortName": "Baba Lysaga's Creeping Hut",
+			"senses": [
+				"blindsight 120 ft. (blind beyond this radius)"
+			],
+			"senseTags": [
+				"B"
+			],
+			"save": {
+				"con": "+9",
+				"wis": "+0",
+				"cha": "+0"
+			},
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons"
+				},
+				{
+					"resist": [
+						"cold",
+						"thunder"
+					]
+				}
+			],
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone"
+			],
+			"trait": [
+				{
+					"name": "Constructed Nature",
+					"entries": [
+						"An animated object doesn’t require air, food, drink, or sleep. Immortal Artifact. Upon dropping to 0 HP, the hut will fall over without looking too bad. The hut does not die, but stabilizes in an inert state. After 24 hours, the hut will return to 1/2 of its maximum hit points. Antimagic Susceptibility. The hut is {@condition incapacitated} while the magic gem that animates it is in the area of an antimagic field. If targeted by dispel magic, the hut must succeed on a Constitution saving throw against the caster’s spell save DC or fall {@condition unconscious} for 1 minute."
+					]
+				},
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"Siege Monster. The hut deals double damage to objects and structures."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The Hut has advantage on saving throws against magical effects and spells."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The Hut’s attacks count as magical in nature."
+					]
+				},
+				{
+					"name": "Non-Violent",
+					"entries": [
+						"The Hut will not attack unless Baba lysaga or the Hut itself is damaged. The Hut will not go out of its way to attack if its targets stop their current actions and flee unlesh it was ordered by baba lysaga."
+					]
+				},
+				{
+					"name": "Reconstructing regeneration",
+					"entries": [
+						"The Hut regains 10 hit points per round. This effect only works if it wasn't attacked the previous round."
+					]
+				},
+				{
+					"name": "Rebuke Outsider",
+					"entries": [
+						"The Hut may use its magical abilities to eject intruders from its interior. If the Hut is hostile towards a creature, it may force the target to make a Charisma saving ({@dc 17}) throw up to once per round. If the target fails, it is violently flung out of the hut’s main door towards the outside ground below. The target becomes immune to this effect for 12 hours if it succeeds 3 saving throws in a row."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance",
+				"Magic Weapons",
+				"Siege Monster"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spells",
+					"headerEntries": [
+						"The Hut can use some magical abilities innately."
+					],
+					"will": [
+						"{@spell dimension door}",
+						"{@spell feather fall}",
+						"{@spell invisibility} (self only)",
+						"{@spell misty step}",
+						"{@spell teleportation circle}"
+					],
+					"daily": {
+						"3": [
+							"{@spell teleport} (only if it was ordered by Baba Lysaga)"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The hut makes three root attacks. It can replace one of these attacks with a rock or stomp attack."
+					]
+				},
+				{
+					"name": "Root",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 60 ft., one target. {@h}30 ({@damage 4d10 + 8}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Rock",
+					"entries": [
+						"{@atk rw} {@hit 12} to hit, range 120 ft., one target. {@h}21 ({@damage 3d8 +8}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Stomp (bludgeoning)",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}39 ({@damage 6d10 + 6}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Stomp (piercing)",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}39 ({@damage 6d10 + 6}) piercing damage."
+					]
+				},
+				{
+					"name": "Ram {@recharge 5}",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 10 ft., targets within reach of impact of 20 ft.. {@h}25 ({@damage 3d12 + 6}) bludgeoning damage. Creatures hit by this attack must make a dexterity saving throw ({@dc 17}) or be knocked {@condition prone} and become {@condition stunned} for 1 round."
+					]
+				},
+				{
+					"name": "Horrid Death Screech (Once per day, when it reaches 0 hp)",
+					"entries": [
+						"{@atk rs} {@hit 12} to hit, range 60 ft., one target. {@dc 17} Constitution Saving Throw, up to 60 ft. from the Hut, all targets within range. On a success, the target takes {@damage 2d10} psychic damage and {@damage 2d10} necrotic damage. On a failure, the target drops to 0 hit points. Baba Lysaga and her allies are immune to this effect."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"Y"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"tokenUrl": "https://i.imgur.com/eE8Dd5R.png",
+			"fluff": {
+				"entries": [
+					"{@link Baba Lysaga's Creeping Hut|https://www.dmsguild.com/product/245440/The-Devils-Mother-Baba-Lysaga-A-CR-25-Version}",
+					{
+						"name": "Giant Skull",
+						"type": "entries",
+						"entries": [
+							"The upside-down skull that floats next to the hut is a hill giant's skull that Baba Lysaga has hollowed out and transformed into a vehicle. It hovers in place until Baba Lysaga commands it to fly, which she can do only while inside it. It has a flying speed of 50 feet. No one else can control the skull. A creature inside the skull has three-quarters cover against attacks made from outside the skull. The skull is big enough to hold one Medium creature. It has AC 15, 100 hit points, immunity to poison and psychic damage and the Flyby trait. When the skull is destroyed Baba Lysaga loses the Skull Bash and Secret’s of the Animated skull actions."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/5gp5DVJ.jpg"
 						}
 					}
 				]
