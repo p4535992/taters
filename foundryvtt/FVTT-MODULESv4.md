@@ -54,7 +54,6 @@
 - [COMBAT][Combat Booster](https://github.com/theripper93/Combat-Booster)
 - [COMBAT][Arbron's Improved HP Bar](https://github.com/arbron/fvtt-hp-bar)
 - [COMBAT][Combat Utility Belt](https://github.com/death-save/combat-utility-belt )
-- [COMBAT][Resource Icons](https://github.com/jessev14/resource-icons)
 - [COMBAT][Advanced Spell Effects](https://github.com/Vauryx/AdvancedSpellEffects)
 - [COMBAT][Hurry Up! Combat Timer](https://github.com/theripper93/hurry-up)
 - [COMBAT][Status Icon Tweaks](https://github.com/jessev14/status-icon-tweaks)
