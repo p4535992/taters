@@ -736,7 +736,7 @@
 				"Any ranged spell that deals damage and targets a specific creature (such as disintegrate, magic missile, or scorching ray) within 15 feet is diverted to strike the target of this spell instead .",
 				"The diverted spell strikes the creature affected by Strand' s baneful attractor , even if this would cause it to exceed its normal range. The aura of this spell does not pass through barriers that would impede line of effect.",
 				"Ranged beneficial spells with a specific target, or area-effecting spells (like fireball , flame strike, or lighting bolt) are not affected by Strand' s baneful attractor .",
-				"Potentially harmful spells that don ‘t directly deal damage (like magic jar , silence, or many enchantment spells) are also not diverted by this spell ."
+				"Potentially harmful spells that don't directly deal damage (like magic jar , silence, or many enchantment spells) are also not diverted by this spell ."
 			],
 			"fluff": {
 				"images": [
@@ -758,7 +758,7 @@
 							"Any ranged spell that deals damage and targets a specific creature (such as disintegrate, magic missile, or scorching ray) within 15 feet is diverted to strike the target of this spell instead .",
 							"The diverted spell strikes the creature affected by Strand' s baneful attractor , even if this would cause it to exceed its normal range. The aura of this spell does not pass through barriers that would impede line of effect.",
 							"Ranged beneficial spells with a specific target, or area-effecting spells (like fireball , flame strike, or lighting bolt) are not affected by Strand' s baneful attractor .",
-							"Potentially harmful spells that don ‘t directly deal damage (like magic jar , silence, or many enchantment spells) are also not diverted by this spell ."
+							"Potentially harmful spells that don't directly deal damage (like magic jar , silence, or many enchantment spells) are also not diverted by this spell ."
 						]
 					},
 					{
@@ -772,6 +772,88 @@
 						"type": "inset",
 						"entries": [
 							"Art and item designed by {@link Mistfactor Press, Libedrator Earl, George Komis on The-Real-Devil-Strahd--A-CR27-Version-of-the-Devil book|https://www.dmsguild.com/product/226077/The-Real-Devil-Strahd--A-CR27-Version-of-the-Devil}. Please credit if you repost elsewhere."
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Dark Missile",
+			"source": "p4535992Spells",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You create one dark dart of magical force. The dart hits a creature of your choice that you can see within range and deals {@damage 1d6 + 1} necrotic damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the spell increase the damage dice by one for each slot level above 1st."
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"ST",
+				"MT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/LcfVMln.jpg"
+						}
+					}
+				],
+				"entries": [
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"Art and item designed by {@link Dark Missile|https://www.dmsguild.com/product/304482/Wachter-Cult-and-Leo-Dilisnya-Curse-of-Strahd-Expansion}. Please credit if you repost elsewhere."
 						]
 					}
 				]
