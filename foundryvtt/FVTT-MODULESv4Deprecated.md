@@ -15,6 +15,7 @@
 - [NOT ESSENTIAL][UTILITY][Less Fog](https://github.com/trdischat/lessfog )
 - [NOT ESSENTIAL][UTILITY/ROLLTABLE][Hidden Tables](https://github.com/kandashi/hidden-tables)
 - [NOT ESSENTIAL][COMBAT][Resource Icons](https://github.com/jessev14/resource-icons)
+- [NOT ESSENTIAL][Temporary Effects as Token Statuses](https://github.com/ElfFriend-DnD/foundryvtt-temp-effects-as-statuses)
 
 ## 2021-11
 
