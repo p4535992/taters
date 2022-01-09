@@ -46,6 +46,8 @@
 - [UTILITY][Rarity Colors](https://github.com/kandashi/rarity-colors)
 - [UTILITY][JV's Drag Anything To Hotbar for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-drag-all-to-hotbar)
 - [UTILITY][JB2A Sequencer Macro Library](https://github.com/IrateRedKite/jb2a-sequencer-spell-macros)
+- [COMPENDIUM][Compendium Importer for Foundry VTT](https://gitlab.com/mkahvi/fvtt-compendium-importer)
+- [ITEM][Drop Effects on Items](https://github.com/ElfFriend-DnD/foundryvtt-drop-effects-on-items)
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
@@ -171,6 +173,7 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 - [UI][Dracula Foundry](https://github.com/CasanovaSekova/dracula-foundry )
 - [UI][JV's Minimal UI for FoundryVTT](https://github.com/saif-ellafi/foundryvtt-minimal-ui)
 - [UI][JV's Window Controls for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-window-controls)
+- [UI][Twilight UI](https://github.com/Rayuaz/twilight-ui)
 
 ## MODULES FOR MANAGE AUDIO
 

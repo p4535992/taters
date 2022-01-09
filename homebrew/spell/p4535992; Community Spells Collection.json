@@ -1,4 +1,5 @@
 {
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_schema-fast/homebrew.json",
 	"_meta": {
 		"sources": [
 			{
@@ -47,7 +48,7 @@
 				}
 			],
 			"entries": [
-				"You create a 20-foot-radius sphere of fire centered on a point within range. All enemies in an area you designate must make a Dexterity saving throw, being {@condition blinded} and taking {@dice 10d6} radiant damage on a failure, or half as much damage with no blind on a success."
+				"You create a 20-foot-radius sphere of fire centered on a point within range. All enemies in an area you designate must make a Dexterity saving throw, being {@condition blinded} and taking {@damage 10d6} radiant damage on a failure, or half as much damage with no blind on a success."
 			],
 			"entriesHigherLevel": [
 				{
@@ -858,6 +859,390 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Hives",
+			"source": "p4535992Spells",
+			"level": 1,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "poison ivy leaves"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Choose a creature you can see within range. The creature makes a Constitution saving throw. On a failed save, it breaks into an itchy rash that gives it a -2 penalty to AC and attack rolls for the duration of the spell. At the end of each of its turns, the creature can make another Constitution saving throw; a successful save ends the spell."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
+					]
+				}
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"affectsCreatureType": [
+				"aberration",
+				"beast",
+				"celestial",
+				"dragon",
+				"elemental",
+				"fey",
+				"fiend",
+				"giant",
+				"humanoid",
+				"monstrosity",
+				"ooze",
+				"plant"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Blood Bath",
+			"source": "p4535992Spells",
+			"level": 2,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a drop of blood"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"One creature that you can see must make a Constitution saving throw. If the saving throw fails, the creature suffers {@damage 3d8} necrotic damage and is {@condition blinded} for 1 round as blood spurts from its eyes, ears, mouth, and nose. If the saving throw succeeds, it takes half damage and is not blinded."
+			],
+			"damageInflict": [
+				"poison"
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"affectsCreatureType": [
+				"aberration",
+				"beast",
+				"celestial",
+				"dragon",
+				"elemental",
+				"fey",
+				"fiend",
+				"giant",
+				"humanoid",
+				"monstrosity",
+				"ooze",
+				"plant"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Blood Geyser",
+			"source": "p4535992Spells",
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You select a point on the ground that you can see. A geyser of blood flled with the caustic anger of the defeated erupts from that point and rains down in a 20-foot high, 10-foot radius cylinder. Each creature in the area takes {@damage 4d6} acid damage, or half damage with a successful Dexterity saving throw."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@scaledamage 4d6|3-9|1d6} for each slot level above 3rd."
+					]
+				}
+			],
+			"damageInflict": [
+				"acid"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"C"
+			]
+		},
+		{
+			"name": "Poisonous Smog",
+			"source": "p4535992Spells",
+			"level": 6,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a pinch of powdered green crystal or glass"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You create a cloud of poisonous fog in a 20-foot-radius sphere centered on a point you can see. The sphere extends around corners, and its area is heavily obscured. The fog is semi-solid, and its area is considered diffcult terrain. Each creature that starts its turn in the fog, or enters it, takes 4d6 poison damage and its speed is reduced by 10 feet until the end of its turn. The fog lasts for the duration of the spell or until it’s dispersed by a wind of moderate or greater speed (at least 10 miles per hour)."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the radius of the cloud increases by 20 feet for each slot level above 1st."
+					]
+				}
+			],
+			"areaTags": [
+				"S"
+			]
+		},
+		{
+			"name": "Smothering Cloud",
+			"source": "p4535992Spells",
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 50
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a small piece of worn cloth"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You create a thick, roiling mass of gray clouds in a 10-foot-radius sphere around a point you can see. Creatures inside the cloud can’t breathe, and fres inside the cloud are extinguished. The cloud also prevents other airbased phenomena, such as {@spell stinking cloud} spells or a troglodyte's stench, from affecting those inside it. You can choose to anchor this spell on a creature when you cast it. The creature must make a Constitution saving throw. If it fails, the cloud moves with it. If it succeeds, the spell is centered on a spot just behind the target. The cloud’s area is heavily obscured. It lasts for the duration of the spell or until a wind of moderate or greater force disperses it.",
+				"A moderate wind (at least 10 miles per hour) disperses the cloud after 4 rounds. A strong wind (at least 20 miles per hour) disperses it after 1 round."
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"S"
+			]
+		},
+		{
+			"name": "Twig Torture",
+			"source": "p4535992Spells",
+			"level": 4,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "miles",
+					"amount": 1
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a personal object belonging to the caster, twine left outside during a full moon"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You form a crude representation of a humanoid creature from dead twigs. Something belonging to the target must be incorporated into the twig doll. The creature must make a Wisdom saving throw. If the saving throw fails, the twig doll is mystically linked to the targeted creature. As an action, you can break or burn parts of the twig doll to injure the linked creature. A maximum of {@damage 10d6} force or fre damage can be inflicted on the linked creature. The damage can be done all at once, or in smaller amounts at a time.",
+				"For example, you could spend an action to inflict {@damage 1d6} force or fre damage on your turn. On your next turn, you could do {@damage 5d6} force damage. This leaves {@damage 4d6} damage that could be inflicted at a later time. The doll is destroyed and the spell ends when {@damage 10d6} damage has been done."
+			],
+			"damageInflict": [
+				"force"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"abilityCheck": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"S"
+			]
+		},
+		{
+			"name": "Vermin Swarm",
+			"source": "p4535992Spells",
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You summon one or more swarms of creatures that appear at the points you select within range. They can appear in spaces occupied by other creatures, but those creatures can make Dexterity saving throws; on a successful save, they jump to the nearest safe square. Choose one of the following options when you cast the spell.",
+				"• One swarm of CR 2 or lower.",
+				"• Two swarms of CR 1 or lower.",
+				"• Four swarms of CR 1/2 or lower",
+				"• Eight swarms of CR 1/4 or lower Only swarms categorized as beasts can be summoned.",
+				"A swarm vanishes when its hit points drop to 0 or when the spell ends. Swarms obey your mental commands and move on their own turns; roll initiative for them when you cast the spell. If you don’t issue any orders to a swarm, it stays where it is but attacks creatures in its space."
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"S"
+			]
 		}
 	]
 }

@@ -20,7 +20,6 @@
 
 - [VERY GOOD BUT NO ESSENTIAL][COMBAT][Active Auras](https://github.com/kandashi/Active-Auras )
 - [IS BETTER SCENE PACKER][EXTERNAL][Adventure Import Export](https://github.com/cstadther/adventure-import-export )
-- [NOT ESSENTIAL][Compendium Importer for Foundry VTT](https://gitlab.com/mkahvi/fvtt-compendium-importer)
 
 ## 2021-10
 
@@ -41,8 +40,8 @@
 
 ## 2021-09
 
-- [NOT ESSENTIAL][CHARACTER SHEET/UTILITY][Short Rest Recovery](https://github.com/Haxxer/FoundryVTT-ShortRestRecovery ) - https://raw.githubusercontent.com/Haxxer/FoundryVTT-ShortRestRecovery/main/short-rest-recovery/module.json
-- [NOT ESSENTIAL][CHARACTER SHEET/UTILITY][FVTT Long Rest HD Healing 5e](https://github.com/schultzcole/FVTT-Long-Rest-HD-Healing-5e/ ) - https://raw.githubusercontent.com/schultzcole/FVTT-Long-Rest-HD-Healing-5e/master/module.json
+- [NOT ESSENTIAL][CHARACTER SHEET/UTILITY][Short Rest Recovery](https://github.com/Haxxer/FoundryVTT-ShortRestRecovery )
+- [NOT ESSENTIAL][CHARACTER SHEET/UTILITY][FVTT Long Rest HD Healing 5e](https://github.com/a-ws-m/FVTT-Long-Rest-HD-Healing-5e)
 - [NOT ESSENTIAL][TOKEN][Border Control](https://github.com/kandashi/Border-Control )
 - [NOT ESSENTIAL][Let's trade]()
 - [NOT ESSENTIAL][CHAT][FoundryVTT NPC Chatter](https://github.com/cswendrowski/FoundryVtt-Npc-Chatter ) - https://raw.githubusercontent.com/cswendrowski/FoundryVtt-Npc-Chatter/master/module.json
