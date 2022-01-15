@@ -48,6 +48,9 @@
 - [UTILITY][JB2A Sequencer Macro Library](https://github.com/IrateRedKite/jb2a-sequencer-spell-macros)
 - [COMPENDIUM][Compendium Importer for Foundry VTT](https://gitlab.com/mkahvi/fvtt-compendium-importer)
 - [ITEM][Drop Effects on Items](https://github.com/ElfFriend-DnD/foundryvtt-drop-effects-on-items)
+- [UTILITY][Ignore Vision](https://github.com/manuelVo/foundryvtt-ignore-vision/tree/master)
+- [UTILITY][VINO - Visual Interactive Novel Overlay](https://github.com/cswendrowski/FoundryVTT-ViNo)
+- [UTILITY][Roger's Additional Metric Ruler Labels](https://github.com/Roger92/metric-ruler-labels)
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
@@ -78,7 +81,6 @@
 - [TOKEN][About Face](https://github.com/mclemente/about-face)
 - [JOURNAL/CHAT][Polyglot](https://github.com/League-of-Foundry-Developers/fvtt-module-polyglot )
 - [JOURNAL][Storyteller for Foundry VTT](https://github.com/Xbozon/storyteller)
-- [IMAGES][Clipboard Image for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-clipboard-image)
 - [UTILITY][Pause Control](https://gitlab.com/koboldworks/agnostic/pause-control)
 - [SHEET][JV's Actor Link Indicator for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-actor-link-indicator)
 - [SCENE][Scene Transitions](https://github.com/DM-miX/scene-transitions)
@@ -88,6 +90,7 @@
 - [UTILITY][Dragon Flagon Architect](https://github.com/flamewave000/dragonflagon-arch)
 - [WALL][Wall Height](https://github.com/schultzcole/FVTT-Wall-Height )
 - [WALL][Monks Wall Enchancement](https://github.com/ironmonk88/monks-wall-enhancement)
+- [LANDING PAGE][Avernus Landing Page - by dransky](https://foundryvtt.com/packages/dransky-dia-landing-page)
 
 # MODULES DA VERIFICARE SE NECESSARI
 
@@ -145,6 +148,7 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 - [COMBAT][SIFToolkit](https://github.com/bitkiller0/SIFToolkit)
 - https://gitlab.com/unindel/foundry-vtt-pf2e-monster-import-ui/-/raw/master/module.json
 - https://github.com/yoshisman8/Vyk-Homebrew
+- https://github.com/JDCalvert/FVTT-Sense-Walls
 
 ## [SYSTEM] MODULES SHADOW RUN 
 

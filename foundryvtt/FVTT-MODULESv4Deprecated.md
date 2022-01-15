@@ -2,6 +2,14 @@
 # NOT ESSENTIAL 
 # ======================================================================
 
+## 2022-01-15
+
+- [IS BETTER MIDIQOL][Advantage Reminder for dnd5e](https://github.com/kaelad02/adv-reminder)
+- [NOT ESSENTIAL][Terrain Ruler](https://github.com/manuelVo/foundryvtt-terrain-ruler/tree/master)
+- [NOT ESSENTIAL][Enhanced Terrain Layer](https://github.com/ironmonk88/enhanced-terrain-layer)
+- [NOT ESSENTIAL][Token Elevator](https://gitlab.com/Weissrolf/token-elevator)
+- [NOT ESSENTIAL][IMAGES][Clipboard Image for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-clipboard-image)
+
 ## 2021-12
 
 - [NOT ESSENTIAL][JOURNAL][NOT ESSENTIAL] https://github.com/moo-man/FVTT-SelectiveShow
@@ -24,7 +32,6 @@
 
 ## 2021-10
 
-- [NOT ESSENTIAL][UTILITY][Roger's Additional Metric Ruler Labels](https://github.com/Roger92/metric-ruler-labels)
 - [NOT ESSENTIAL][UTILITY][Burger Time](https://github.com/scottburton11/burger-time)
 - [NOT ESSENTIAL][TOKEN][Quick Scale](https://github.com/unsoluble/quickscale) -
 - [BETTER PLUTONIUM][ENTITY][Compendiumn Browser](https://github.com/syl3r86/compendium-browser ) - https://raw.githubusercontent.com/syl3r86/compendium-browser/master/module.json
