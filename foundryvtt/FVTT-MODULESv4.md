@@ -46,7 +46,6 @@
 - [UTILITY][Rarity Colors](https://github.com/kandashi/rarity-colors)
 - [UTILITY][JV's Drag Anything To Hotbar for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-drag-all-to-hotbar)
 - [UTILITY][JB2A Sequencer Macro Library](https://github.com/IrateRedKite/jb2a-sequencer-spell-macros)
-- [COMPENDIUM][Compendium Importer for Foundry VTT](https://gitlab.com/mkahvi/fvtt-compendium-importer)
 - [ITEM][Drop Effects on Items](https://github.com/ElfFriend-DnD/foundryvtt-drop-effects-on-items)
 - [UTILITY][Ignore Vision](https://github.com/manuelVo/foundryvtt-ignore-vision/tree/master)
 - [UTILITY][VINO - Visual Interactive Novel Overlay](https://github.com/cswendrowski/FoundryVTT-ViNo)
@@ -62,6 +61,7 @@
 - [COMBAT][Advanced Spell Effects](https://github.com/Vauryx/AdvancedSpellEffects)
 - [COMBAT][Hurry Up! Combat Timer](https://github.com/theripper93/hurry-up)
 - [COMBAT][Status Icon Tweaks](https://github.com/jessev14/status-icon-tweaks)
+- [COMBAT][Temporary Effects as Token Statuses](https://github.com/ElfFriend-DnD/foundryvtt-temp-effects-as-statuses)
 
 ## [NOT ESSENTIAL BUT VERY GOOD] 0.8.9
 
