@@ -1,7 +1,7 @@
 ## [MUST HAVE] MODULES 
 
 - [EXTERNAL][About Time](https://gitlab.com/tposney/about-time )
-- [EXTERNAL][FxMaster](https://gitlab.com/mesfoliesludiques/foundryvtt-fxmaster )
+- [EXTERNAL][FxMaster](https://github.com/ghost-fvtt/fxmaster)
 - [EXTERNAL][TidyUI](https://github.com/sdenec/tidy-ui_game-settings )
 - [ENTITY][Compendium Folders](https://github.com/earlSt1/vtt-compendium-folders )
 - [ENTITY][Permission Viewer](https://github.com/kakaroto/fvtt-module-permission-viewer )
