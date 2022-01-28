@@ -52,6 +52,7 @@
 - [UTILITY][LightsHUD](https://github.com/Malekal4699/LightsHUD/)
 - [UTILITY][Quick Insert](https://gitlab.com/fvtt-modules-lab/quick-insert )
 - [UTILITY][Item Piles](https://github.com/fantasycalendar/FoundryVTT-ItemPiles)
+- [UTILITY][Icon Picker](https://github.com/teroparvinen/foundry-icon-picker)
 
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
