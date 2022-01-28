@@ -10,6 +10,22 @@
 - [NOT ESSENTIAL][Token Elevator](https://gitlab.com/Weissrolf/token-elevator)
 - [NOT ESSENTIAL][IMAGES][Clipboard Image for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-clipboard-image)
 - [NOT ESSENTIAL][COMPENDIUM][Compendium Importer for Foundry VTT](https://gitlab.com/mkahvi/fvtt-compendium-importer)
+- [NOT ESSENTIAL][CHARACTHER SHEET/UTILITY][Ethck's Downtime Tracking](https://github.com/Ethck/Ethck-s-Downtime-Tracking )
+- [NOT ESSENTIAL][TOKEN][Target Reacts](https://github.com/Vauryx/TargetReacts)
+- [NOT ESSENTIAL][SCRIPT/AE][Enhanced Active Effects](https://github.com/patrickporto/fvtt-enhanced-active-effects)
+- [NOT ESSENTIAL][TOKEN][About Face](https://github.com/mclemente/about-face)
+- [NOT ESSENTIAL][LIGHT][Community Lighting for FVTT](https://github.com/BlitzKraig/fvtt-CommunityLighting )
+- [ABBANDONED][TOKEN/UTILITY][Custom-Token-Animations](https://github.com/kandashi/Custom-Token-Animations )
+- [IS BETTER Effective Transferral][COMBAT][Temporary Effects as Token Statuses](https://github.com/ElfFriend-DnD/foundryvtt-temp-effects-as-statuses)
+- [NOT ESSENTIAL][UTILITY][Rangefinder](https://github.com/manuelVo/foundryvtt-rangefinder)
+- [NOT ESSENTIAL][UTILITY][JV's Drag Anything To Hotbar for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-drag-all-to-hotbar)
+- [IS BETTER QUICK INSERT][ENTITY][Search Anywhere](https://gitlab.com/riccisi/foundryvtt-search-anywhere )
+- [NOT ESSENTIAL][UTILITY][FVVT POINTER](https://github.com/Moerill/fvtt-pointer )
+- [NOT ESSENTIAL][JOURNAL][Library PDFoundry](https://github.com/Djphoenix719/PDFoundry )
+- [NOT ESSENTIAL][COMBAT][Bulk Tasks](https://github.com/NekroDarkmoon/bulk-tasks)
+- [NOT ESSENTIAL IS BETTER MID QOL][COMBAT][Better Rolls for 5e](https://github.com/RedReign/FoundryVTT-BetterRolls5e )
+- [ABBANDONED][COMBAT][SIFToolkit](https://github.com/bitkiller0/SIFToolkit)
+- [IS BETTER ITEM PILES][TOKEN][Innocenti's Loot](https://github.com/rinnocenti/innocenti-loot)
 
 ## 2021-12
 
@@ -44,7 +60,6 @@
 - [NOT ESSENTIAL][WALL][Show-Walls-Everywhere](https://github.com/theripper93/Show-Walls-Everywhere) - https://raw.githubusercontent.com/theripper93/Show-Walls-Everywhere/main/module.json
 - [NOT ESSENTIAL][COMBAT][Turn Announcer](https://gitlab.com/koboldworks/agnostic/turn-announcer)
 - [BETTER https://gitlab.com/jstebenne/foundryvtt-calendar-weather][UTILITY][Smalltime](https://github.com/unsoluble/smalltime)
-- [BETTER Search Anywhere][UTILITY][Quick Insert](https://gitlab.com/fvtt-modules-lab/quick-insert )
 
 ## 2021-09
 
@@ -62,7 +77,6 @@
 - [NOT ESSENTIAL] Inline Webpreviewer
 - [NOT ESSENTIAL][TOKEN/CHAT][Group Rolls for D&D 5e](https://github.com/trdischat/grouproll)
 - [NOT ESSENTIAL][COMBAT][Condition Automation/Conditions](https://github.com/kandashi/condition-automation ) - https://raw.githubusercontent.com/kandashi/condition-automation/master/module.json
-- [NOT ESSENTIAL]https://github.com/MAClavell/gm-token-drag-visibility-v2
 - [NOT ESSENTIAL]https://gitlab.com/DmitryRomanenko/token-vision-animation-world
 - [NOT ESSENTIAL BUT VERY GOOD][EXTERNAL][Travel Pace](https://github.com/rinnocenti/travel-pace ) - https://raw.githubusercontent.com/rinnocenti/travel-pace/master/module.json
 - [NOT ESSENTIAL][UTILITY][Dig Down](https://github.com/theripper93/fuzzy-foundry)
