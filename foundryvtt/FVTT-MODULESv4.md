@@ -48,11 +48,14 @@
 - [UTILITY][VINO - Visual Interactive Novel Overlay](https://github.com/cswendrowski/FoundryVTT-ViNo)
 - [UTILITY][Roger's Additional Metric Ruler Labels](https://github.com/Roger92/metric-ruler-labels)
 - [UTILITY][GM Token Drag Visibility v2](https://github.com/MAClavell/gm-token-drag-visibility-v2)
-- [UTILITY][Drag'n'Transfer](https://github.com/David-Zvekic/DragTransfer)
 - [UTILITY][LightsHUD](https://github.com/Malekal4699/LightsHUD/)
 - [UTILITY][Quick Insert](https://gitlab.com/fvtt-modules-lab/quick-insert )
 - [UTILITY][Item Piles](https://github.com/fantasycalendar/FoundryVTT-ItemPiles)
 - [UTILITY][Icon Picker](https://github.com/teroparvinen/foundry-icon-picker)
+- [UTILITY][TransferStuff](https://github.com/playest/TransferStuff)
+- [UTILITY][Drag Anything To Hotbar for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-drag-all-to-hotbar)
+- [EFFECT][Token Magic FX](https://github.com/Feu-Secret/Tokenmagic)
+- [TOKEN][Inactive Tokens](https://github.com/jagoe/fvtt-module-inactive-tokens)
 
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
@@ -99,9 +102,6 @@
 - [SCRIPT][Macro-Helper](https://github.com/Kekilla0/Macro-Helper)
 - [SCRIPT][World-Scripter](https://github.com/Kekilla0/World-Scripter)
 - [SCENE][World Explorer](https://github.com/CarlosFdez/world-explorer)
-- [TOKEN][Inactive Tokens](https://github.com/jagoe/fvtt-module-inactive-tokens)
-- [UTILITY][Drag Anything To Hotbar for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-drag-all-to-hotbar)
-- [EFFECT][Token Magic FX](https://github.com/Feu-Secret/Tokenmagic)
 - [EFFECT][Hey, Wait!](https://github.com/1000nettles/hey-wait)
 - [SCENE][Unofficial Azgaar's Fantasy Map Generator Import](https://github.com/Ethck/azgaar-foundry)
 
@@ -261,10 +261,11 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 
 ## MODULES WebRTC/Discord
 
-- [WebRTC Tweaks](https://github.com/bekriebel/fvtt-module-webrtc_tweaks ) - https://raw.githubusercontent.com/bekriebel/fvtt-module-webrtc_tweaks/master/module.json
-- [SYSTEM][Discord](https://github.com/caoranach/DiscordConnect )
-- [SYSTEM][DEPRECATED][Discord Bridge](https://github.com/nearlyNonexistent/foundry-discordbridge ) - https://raw.githubusercontent.com/nearlyNonexistent/foundry-discordbridge/master/module.json
-- [SYSTEM][Discord Rich Presence](https://github.com/cswendrowski/FoundryVTT-Discord-Rich-Presence ) - https://raw.githubusercontent.com/cswendrowski/FoundryVTT-Discord-Rich-Presence/master/module.json
+- [DEPRECATED][WebRTC Tweaks](https://github.com/bekriebel/fvtt-module-webrtc_tweaks ) - https://raw.githubusercontent.com/bekriebel/fvtt-module-webrtc_tweaks/master/module.json
+- [DEPRECATED][SYSTEM][Discord](https://github.com/caoranach/DiscordConnect )
+- [DEPRECATED][SYSTEM][DEPRECATED][Discord Bridge](https://github.com/nearlyNonexistent/foundry-discordbridge ) - https://raw.githubusercontent.com/nearlyNonexistent/foundry-discordbridge/master/module.json
+- [DEPRECATED][SYSTEM][Discord Rich Presence](https://github.com/cswendrowski/FoundryVTT-Discord-Rich-Presence ) - https://raw.githubusercontent.com/cswendrowski/FoundryVTT-Discord-Rich-Presence/master/module.json
+- [Discord Overlay](https://github.com/flamewave000/discord-overlay)
 
 ## DEVELOPING
 

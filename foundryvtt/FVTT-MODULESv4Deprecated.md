@@ -26,6 +26,7 @@
 - [NOT ESSENTIAL IS BETTER MID QOL][COMBAT][Better Rolls for 5e](https://github.com/RedReign/FoundryVTT-BetterRolls5e )
 - [ABBANDONED][COMBAT][SIFToolkit](https://github.com/bitkiller0/SIFToolkit)
 - [IS BETTER ITEM PILES][TOKEN][Innocenti's Loot](https://github.com/rinnocenti/innocenti-loot)
+- [IS BETTER TransferStuff][UTILITY][Drag'n'Transfer](https://github.com/David-Zvekic/DragTransfer)
 
 ## 2021-12
 
