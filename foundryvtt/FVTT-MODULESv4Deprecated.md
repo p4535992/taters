@@ -10,7 +10,7 @@
 - [NOT ESSENTIAL][Token Elevator](https://gitlab.com/Weissrolf/token-elevator)
 - [NOT ESSENTIAL][IMAGES][Clipboard Image for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-clipboard-image)
 - [NOT ESSENTIAL][COMPENDIUM][Compendium Importer for Foundry VTT](https://gitlab.com/mkahvi/fvtt-compendium-importer)
-- [NOT ESSENTIAL][CHARACTHER SHEET/UTILITY][Ethck's Downtime Tracking](https://github.com/Ethck/Ethck-s-Downtime-Tracking )
+- [NOT ESSENTIAL IS BETTER Downtime Tracking 5e Training][CHARACTHER SHEET/UTILITY][Ethck's Downtime Tracking](https://github.com/Ethck/Ethck-s-Downtime-Tracking )
 - [NOT ESSENTIAL][TOKEN][Target Reacts](https://github.com/Vauryx/TargetReacts)
 - [NOT ESSENTIAL][SCRIPT/AE][Enhanced Active Effects](https://github.com/patrickporto/fvtt-enhanced-active-effects)
 - [NOT ESSENTIAL][TOKEN][About Face](https://github.com/mclemente/about-face)
@@ -27,6 +27,7 @@
 - [ABBANDONED][COMBAT][SIFToolkit](https://github.com/bitkiller0/SIFToolkit)
 - [IS BETTER ITEM PILES][TOKEN][Innocenti's Loot](https://github.com/rinnocenti/innocenti-loot)
 - [IS BETTER TransferStuff][UTILITY][Drag'n'Transfer](https://github.com/David-Zvekic/DragTransfer)
+- [NOT ESSENTIAL][SHEET][JV's Actor Link Indicator for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-actor-link-indicator)
 
 ## 2021-12
 
@@ -267,7 +268,6 @@
 - [NOT ESSENTIAL][MAP/SCENE][Import DungeonDraft](https://github.com/moo-man/FVTT-DD-Import ) - https://raw.githubusercontent.com/moo-man/FVTT-DD-Import/master/module.json
 - [NOT ESSENTIAL][COMBAT][ENTITY](https://github.com/Foundry-Workshop/ammo-swapper ) - https://raw.githubusercontent.com/Foundry-Workshop/ammo-swapper/master/src/module.json
 - [NOT ESSENTIAL][COMBAT][ENTITY][Ammo Swapper by Cyr](https://github.com/Cyr-/ammo-swapper ) - https://raw.githubusercontent.com/Cyr-/ammo-swapper/master/src/module.json
-- [NOT ESSENTIAL USE MIDI QOL][CHAT][Hide GM Rolls](https://github.com/sPOiDar/fvtt-module-hide-gm-rolls ) - https://raw.githubusercontent.com/sPOiDar/fvtt-module-hide-gm-rolls/master/module.json
 - [DEPRECATED USE INSTEAD Bellows][AUDIO][Music Assist](https://github.com/temportalflux/MusicAssist )
 - [NOT ESSENTIAL][AUDIO][DnDj](https://github.com/horville-hootenkline/DnDj )
 

@@ -56,7 +56,9 @@
 - [UTILITY][Drag Anything To Hotbar for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-drag-all-to-hotbar)
 - [EFFECT][Token Magic FX](https://github.com/Feu-Secret/Tokenmagic)
 - [TOKEN][Inactive Tokens](https://github.com/jagoe/fvtt-module-inactive-tokens)
-
+- [TOKEN][Your Tokens Visible](https://github.com/David-Zvekic/TokensVisible)
+- [TOKEN][Token Says](https://github.com/napolitanod/Token-Says)
+- [UTILITY][Token Variant Art](https://github.com/Aedif/TokenVariants)
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
@@ -69,6 +71,8 @@
 - [COMBAT][Hurry Up! Combat Timer](https://github.com/theripper93/hurry-up)
 - [COMBAT][Status Icon Tweaks](https://github.com/jessev14/status-icon-tweaks)
 - [COMBAT][Effective Transferral](https://github.com/GamerFlix/effective-transferral)
+- [COMBAT][Danger-Zone](https://github.com/napolitanod/Danger-Zone)
+- [COMBAT/CHAT][Hide GM Rolls](https://github.com/sPOiDar/fvtt-module-hide-gm-rolls)
 
 ## [NOT ESSENTIAL BUT VERY GOOD] 0.8.9
 
@@ -86,7 +90,6 @@
 - [JOURNAL/CHAT][Polyglot](https://github.com/League-of-Foundry-Developers/fvtt-module-polyglot )
 - [JOURNAL][Storyteller for Foundry VTT](https://github.com/Xbozon/storyteller)
 - [UTILITY][Pause Control](https://gitlab.com/koboldworks/agnostic/pause-control)
-- [SHEET][JV's Actor Link Indicator for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-actor-link-indicator)
 - [SCENE][Scene Transitions](https://github.com/DM-miX/scene-transitions)
 
 ## MODULES NECESSARI SOLO IN FASE DI COSTRUZIONE E NON DI SESSIONE
@@ -132,6 +135,8 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 - [CHARACTER SHEET/UTILITY][Variant Encumbrance 5e](https://github.com/VanirDev/VariantEncumbrance )
 - [CHARACTHER SHEET/UTILITY][Party Inventory](https://github.com/teroparvinen/foundry-party-inventory)
 - [SCENE][Elevation Drag Ruler](https://github.com/PepijnMC/ElevationDragRuler)
+- [UTILITY][DnD5e Drag Ruler Integration](https://github.com/PepijnMC/ElevationDragRuler)
+- [UTILITY][Lets Trade 5e](https://github.com/KageJittai/lets-trade-5e)
 
 ## [SYSTEM] PATHFINDER 1 MODULES
 
