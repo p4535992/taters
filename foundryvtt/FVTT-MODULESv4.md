@@ -125,6 +125,7 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 - [CHARACTER SHEET][Loot Sheet NPC 5e](https://github.com/jopeek/fvtt-loot-sheet-npc-5e )
 
 - [COMBAT][Midi Qol](https://gitlab.com/tposney/midi-qol )
+- [COMBAT][Midi QOL - Challenge Mode Armor Display](https://github.com/mouse0270/midi-challenge-mode-armor)
 - [COMBAT][DnD5e Helpers](https://github.com/trioderegion/dnd5e-helpers )
 - [COMBAT][Wild Magic Surge 5e](https://github.com/johnnolan/wild-magic-surge-5e)
 
