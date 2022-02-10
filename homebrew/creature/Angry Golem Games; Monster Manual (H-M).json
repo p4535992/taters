@@ -1191,7 +1191,7 @@
         {
           "name": "Long Sword +4",
           "entries": [
-            "{@atk mw} {@hit 17} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d8 + 7}) slashing damage, or 12 ({@damage 1d10 + 7}) slashing damage if used with both hands. Any being hit by the avatar's sword must roll a {@dc 21} constitution saving throw or contract a disease that causes {@dice 2d10} points of damage each round until cured with a cure disease spell."
+            "{@atk ms} {@hit 17} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d8 + 7}) slashing damage, or 12 ({@damage 1d10 + 7}) slashing damage if used with both hands. Any being hit by the avatar's sword must roll a {@dc 21} constitution saving throw or contract a disease that causes {@dice 2d10} points of damage each round until cured with a cure disease spell."
           ]
         }
       ],
@@ -1222,6 +1222,1782 @@
           }
         ]
       }
+    },
+    {
+      "name": "Hell Hound",
+      "size": "M",
+      "type": "fiend",
+      "source": "AngryGolemGamesMonsterManual2",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 15,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "7d8 + 14",
+        "average": 45
+      },
+      "speed": {
+        "walk": 50
+      },
+      "str": 17,
+      "dex": 12,
+      "con": 14,
+      "int": 6,
+      "wis": 13,
+      "cha": 6,
+      "passive": 15,
+      "cr": "3",
+      "shortName": "Hell Hound",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "Understands Infernal But Can't Speak It"
+      ],
+      "languageTags": [
+        "I"
+      ],
+      "skill": {
+        "perception": "+5"
+      },
+      "trait": [
+        {
+          "name": "Keen Hearing and Smell",
+          "entries": [
+            "The hound has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+          ]
+        },
+        {
+          "name": "Pack Tactics",
+          "entries": [
+            "The hound has advantage on an attack roll against a creature if at least one of the hound's allies is within 5 ft. of the creature and the ally isn't {@condition incapacitated}."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Keen Senses",
+        "Pack Tactics"
+      ],
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage, plus 7 ({@damage 2d6}) fire damage."
+          ]
+        },
+        {
+          "name": "Fire Breath {@recharge 5}",
+          "entries": [
+            "The hound exhales fire in a 15-foot cone. Each creature in that area must make a {@dc 12} Dexterity saving throw, taking 21 ({@damage 6d6}) fire damage on a failed save, or half as much damage on a successful one."
+          ]
+        }
+      ],
+      "damageTags": [
+        "P",
+        "F"
+      ],
+      "miscTags": [
+        "MW",
+        "AOE"
+      ],
+      "actionTags": [
+        "Breath Weapon"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Hell Hound|https://angrygolem-games.com/monster-manual/letter-h/hell-hound/}",
+          "{@link HELL HOUND's TACTICS (read the article)|https://angrygolem-games.com/monster-tactics-fight-like-a-hell-hound/}",
+          "DESCRIPTION",
+          "Hell hounds are fire-breathing canines from another plane of existence brought here in the service of evil beings.",
+          "A hell hound resembles a large hound with rust-red or red-brown fur and red, glowing eyes. The markings, teeth, and tongue are soot black. It stands two to three feet high at the shoulder, and has a distinct odor of smoke and sulfur.",
+          "The baying sounds it makes have an eerie, hollow tone that send a shiver through any who hear them.",
+          "HABITAT / SOCIETY",
+          "Hell hounds are native to those extradimensional planes notable for their hot, fiery landscapes. There they roam in packs of 2d20 beasts. The hell hounds on the Prime Material plane are summoned there to serve the needs of evil creatures. Most of them later escape to the wild.",
+          "Each pack is led by a 10-Hit Die hell hound. The leader drives off other 10 HD rivals, who form their own packs.",
+          "The diet of hell hounds is similar to that of normal canines. They roam a wide area of 1d10+4 square miles centered on their den. Pack territories may overlap.",
+          "They do not easily reproduce on the Prime Material plane. Only 5% of encounters include puppies. Such puppies are born in litters of 2d4. They burp flame uncontrollably at least once a day.",
+          "The flames are harmless aside from the tendency to set fire to anything flammable in the area. Newborn puppies are at 10% of the adult growth; they quickly grow an additional 5% each month and reach full adult growth (7 HD) in 1 years.",
+          "While growing they can attack with their incendiary bite. Hell hound puppies up to two months old inflict 1 point of damage. Older ones add an additional 1 point for each additional six months of growth.",
+          "Prey is usually eaten where it is slain, though hell hounds occasionally haul a carcass back to their den for later meals. Hell hounds are also similar to normal canines in that they may act as retrievers.",
+          "Some objects are specifically sought; this is especially the case in trained hell hounds. Other hell hounds are simply playful and use the retrieved items as toys. They especially like noisy bags and pouches filled with their late victims' treasures. Flammable containers eventually burn and spill their contents in or around the den. Parchments are rarely found here unless protected by nonflammable containers.",
+          "ECOLOGY",
+          "Hell hounds have little place in the ecology of the normal world. They are dangerous annoyances prone to cause fires wherever they hunt. Hell hounds cause more forest fires than any other creature except for humanoids. Hell hounds have their uses, though.",
+          "Because of their ability to easily detect hidden or invisible creatures, hell hounds make excellent watch dogs, especially for intelligent monsters such as fire giants.",
+          "Hell hounds can be domesticated if raised from puppies, but there is a 10% chance each year that domesticated hell hounds go wild."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hellfire Engine",
+      "size": "H",
+      "type": "construct",
+      "source": "AngryGolemGamesMonsterManual2",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 18,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "16d12 + 112",
+        "average": 216
+      },
+      "speed": {
+        "walk": 40
+      },
+      "str": 20,
+      "dex": 16,
+      "con": 24,
+      "int": 2,
+      "wis": 10,
+      "cha": 1,
+      "passive": 10,
+      "cr": "16",
+      "shortName": "Hellfire Engine",
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "senseTags": [
+        "SD"
+      ],
+      "languages": [
+        "understands Infernal but can't speak"
+      ],
+      "languageTags": [
+        "I"
+      ],
+      "save": {
+        "dex": "+8",
+        "wis": "+5",
+        "cha": "+0"
+      },
+      "resist": [
+        {
+          "resist": [
+            "cold",
+            "psychic"
+          ]
+        },
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks that aren't silvered"
+        }
+      ],
+      "immune": [
+        "fire",
+        "poison"
+      ],
+      "conditionImmune": [
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "paralyzed",
+        "poisoned",
+        "unconscious"
+      ],
+      "trait": [
+        {
+          "name": "Immutable Form",
+          "entries": [
+            "The hellfire engine is immune to any spell or effect that would alter its form."
+          ]
+        },
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The hellfire engine has advantage on saving throws against spells and other magical effects."
+          ]
+        },
+        {
+          "name": "Hellfire Weapons",
+          "entries": [
+            "The hellfire engine uses one of the following options:",
+            "- Bonemelt Sprayer",
+            "- Lightning Flail",
+            "- Thunder Cannon",
+            "If the chosen option kills a creature, the creature's soul rises from the River Styx as a lemure in Avernus in {@dice 1d4} hours. If the creature isn't revived before then, only a wish spell or killing the lemure and casting true resurrection on the creature's original body can restore it to life. Constructs and devils are immune to this effect."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Immutable Form",
+        "Magic Resistance"
+      ],
+      "action": [
+        {
+          "name": "Flesh-Crushing Stride",
+          "entries": [
+            "The hellfire engine moves up to its speed in a straight line. During this move, it can enter Large or smaller creatures' spaces. A creature whose space the hellfire engine enters must make a {@dc 18} Dexterity saving throw. On a successful save, the creature is pushed 5 feet to the nearest space out of the hellfire engine's path. On a failed save, the creature falls {@condition prone} and takes 28 ({@damage 8d6}) bludgeoning damage. If the hellfire engine remains in the {@condition prone} creature's space, the creature is also {@condition restrained} until it's no longer in the same space as the hellfire engine. While {@condition restrained} in this way, the creature, or another creature within 5 feet of it, can make a {@dc 18} Strength check. On a success, the creature is shunted to an unoccupied space of its choice within 5 feet of the hellfire engine and is no longer {@condition restrained}."
+          ]
+        },
+        {
+          "name": "Hellfire Weapons - Bonemelt Sprayer",
+          "entries": [
+            "The hellfire engine spews acidic flame in a 60-foot cone. Each creature in the cone must make a {@dc 20} Dexterity saving throw, taking 11 ({@damage 2d10}) fire damage plus 18 ({@damage 4d8}) acid damage on a failed save, or half as much damage on a successful one. Creatures that fail the saving throw are drenched in burning acid and take 5 ({@damage 1d10}) fire damage plus 9 ({@damage 2d8}) acid damage at the end of their turns. An affected creature or another creature within 5 feet of it can take an action to scrape off the burning fuel."
+          ]
+        },
+        {
+          "name": "Hellfire Weapons - Lightning Flail",
+          "entries": [
+            "{@atk mw} {@hit 10} to hit, reach 15 ft., one target. {@h}18 ({@damage 3d8 + 5}) bludgeoning damage, plus 22 ({@damage 5d8}) lightning damage. Up to three other creatures of the hell fire engine's choice that it can see within 30 feet of the target must each make a {@dc 20} Dexterity saving throw, taking 22 ({@damage 5d8}) lightning damage on a failed save, or half as much damage on a successful one."
+          ]
+        },
+        {
+          "name": "Hellfire Weapons -  Thunder Cannon",
+          "entries": [
+            "The hellfire engine targets a point within 120 feet of it that it can see. Each creature within 30 feet of that point must make a {@dc 20} Dexterity saving throw, taking 27 ({@damage 5d10}) bludgeoning damage plus 13 ({@damage 2d12}) thunder damage on a failed save, or half as much damage on a successful one."
+          ]
+        }
+      ],
+      "conditionInflict": [
+        "prone",
+        "restrained"
+      ],
+      "damageTags": [
+        "B",
+        "F",
+        "A",
+        "L",
+        "T"
+      ],
+      "miscTags": [
+        "AOE",
+        "MW",
+        "RCH"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Hellfire Engine|https://angrygolem-games.com/monster-manual/letter-h/hellfire-engine-5e-stats/}",
+          "DESCRIPTION",
+          "Hellfire engines are semiautonomous bringers of destruction. Amnizus and other devilish generals hold them in reserve until they are needed to repel an incursion by demons or crusading mortals, but occasionally one of these mechanical and magical hybrids gets loose, driven berserk by its need to destroy."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Helmed Horror",
+      "size": "M",
+      "type": "construct",
+      "source": "AngryGolemGamesMonsterManual2",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 20,
+          "from": [
+            "{@item plate armor|phb}",
+            "{@item shield|phb}"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "8d8 + 24",
+        "average": 60
+      },
+      "speed": {
+        "walk": 30,
+        "fly": 30,
+        "canHover": false
+      },
+      "str": 18,
+      "dex": 13,
+      "con": 16,
+      "int": 10,
+      "wis": 10,
+      "cha": 10,
+      "passive": 14,
+      "cr": "4",
+      "shortName": "Helmed Horror",
+      "senses": [
+        "blindsight 60 ft. (blind beyond this radius)"
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "languages": [
+        "understands the languages of its creator but can't speak"
+      ],
+      "skill": {
+        "perception": "+4"
+      },
+      "resist": [
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks that aren't adamantine"
+        }
+      ],
+      "immune": [
+        "force",
+        "necrotic",
+        "poison"
+      ],
+      "conditionImmune": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "frightened",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "stunned"
+      ],
+      "trait": [
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The helmed horror has advantage on saving throws against spells and other magical effects."
+          ]
+        },
+        {
+          "name": "Spell Immunity",
+          "entries": [
+            "The helmed horror is immune to three spells chosen by its creator. Typical immunities include {@spell fireball}, {@spell heat metal}, and {@spell lightning bolt}."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Magic Resistance",
+        "Spell Immunity"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The helmed horror makes two longsword attacks."
+          ]
+        },
+        {
+          "name": "Longsword",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage, or 9 ({@damage 1d10 + 4}) slashing damage if used with both hands."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "S"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Helmed Horror|https://angrygolem-games.com/monster-manual/letter-h/helmed-horror-5e-stats/}",
+          "{@link HELMED HORROR's TACTICS (read the article)|https://angrygolem-games.com/monster-tactics-fight-like-a-helmed-horror/}",
+          "DESCRIPTION",
+          "A helmed horror is empty, animated armor, capable of independent reasoning. It is neither undead nor a summoned creature. Often found as a guardian, this automaton appears to be a warrior completely clad in plate mail.",
+          "HABITAT / SOCIETY",
+          "Horrors are seldom self-willed wanderers, but they continue to serve as guardians even after the deaths of their masters, operating continuously until destroyed.",
+          "Some have been known to avenge a slain creator, following orders instilled in them. In some cases the horror's orders even allow it autonomy in the absence of commands.",
+          "ECOLOGY",
+          "The process of creating helmed horrors remains secret, but it is known to require a priest of at least 7th level, some assistance from a wizard, and any nonmagical armor.",
+          "The creator inputs a set of commands that govern its freedom, behavior, and limitations.",
+          "The orders cannot be changed once given, and loopholes may put its loyalty in jeopardy; instilling orders in a horror is as delicate as wording a wish spell.",
+          "A horror can be made immune to the effects of three specific spells when created (typically fireball, heat metal, and lightning bolts).",
+          "These spells must be named by the creator (who need not be able to cast them or have access to them) and cannot be changed thereafter. A horror's orders can never increase its spell immunity beyond three specific magics.",
+          "Horrors don't sleep, eat, or speak, and they cannot feel pain. They are ideal guardians, for their loyalty is total and devoid of ambition or emotion.",
+          "If commanded by a telepathic being they can communicate, and a garrison of horrors can be coordinated into a well-organized fighting band."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hephaestus, Greek Avatar",
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "avatar"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual2",
+      "alignment": [
+        "N",
+        "G"
+      ],
+      "ac": [
+        20
+      ],
+      "hp": {
+        "formula": "20d12 + 80",
+        "average": 210
+      },
+      "speed": {
+        "walk": 60
+      },
+      "str": 22,
+      "dex": 14,
+      "con": 19,
+      "int": 18,
+      "wis": 16,
+      "cha": 10,
+      "passive": 14,
+      "cr": "15",
+      "shortName": "Hephaestus, Greek Avatar",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "All"
+      ],
+      "skill": {
+        "acrobatics": "+4",
+        "arcana": "+4",
+        "animal handling": "+4",
+        "athletics": "+4",
+        "deception": "+4",
+        "history": "+4",
+        "insight": "+4",
+        "intimidation": "+4",
+        "investigation": "+4",
+        "medicine": "+4",
+        "nature": "+4",
+        "perception": "+4",
+        "performance": "+4",
+        "persuasion": "+4",
+        "religion": "+4",
+        "sleight of hand": "+4",
+        "stealth": "+4",
+        "survival": "+4"
+      },
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "He can call upon the alteration school of magic for his spells."
+          ],
+          "type": "spellcasting"
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "Hephaestus' avatar makes two attacks with his hammer."
+          ]
+        },
+        {
+          "name": "Hammer",
+          "entries": [
+            "{@atk ms} {@hit 19} to hit, reach 5 ft., one target. {@h}13 ({@damage 1d6 + 10}) bludgeoning damage, or 14 ({@damage 1d8 + 10}) bludgeoning damage if used with both hands. Any being struck by the avatar's hammer must roll a {@dc 25} constitution saving throw or be knocked {@condition unconscious} for {@dice 1d10} minutes."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "conditionInflict": [
+        "unconscious"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Hephaestus, Greek Avatar|https://angrygolem-games.com/monster-manual/letter-h/hephaestus-greek-avatar/}",
+          "DESCRIPTION",
+          "Hephaestus' avatar usually takes the form of a dark- haired man with some sort of deformity.",
+          "{@link God & Clergy (go to page)|https://angrygolem-games.com/monster-manual/letter-h/hephaestus-god-and-clerics-for-dd-5e/}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hera, Greek Avatar",
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "avatar"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual2",
+      "alignment": [
+        "C",
+        "N"
+      ],
+      "ac": [
+        20
+      ],
+      "hp": {
+        "formula": "16d12 + 64",
+        "average": 168
+      },
+      "speed": {
+        "walk": 80
+      },
+      "str": 17,
+      "dex": 18,
+      "con": 18,
+      "int": 19,
+      "wis": 18,
+      "cha": 19,
+      "passive": 14,
+      "cr": "15",
+      "shortName": "Hera, Greek Avatar",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "All"
+      ],
+      "skill": {
+        "acrobatics": "+4",
+        "animal handling": "+4",
+        "arcana": "+4",
+        "athletics": "+4",
+        "deception": "+4",
+        "history": "+4",
+        "insight": "+4",
+        "intimidation": "+4",
+        "investigation": "+4",
+        "medicine": "+4",
+        "nature": "+4",
+        "perception": "+4",
+        "performance": "+4",
+        "persuasion": "+4",
+        "religion": "+4",
+        "sleight of hand": "+4",
+        "stealth": "+4",
+        "survival": "+4"
+      },
+      "trait": [
+        {
+          "name": "Voice of Anger",
+          "entries": [
+            "era's avatar can speak in an angry voice, causing {@dice 2d8} points of damage to all within 50 yards. Victims of this voice attack must also roll a {@dc 19} charisma saving throw or flee in terror (as the fear spell)."
+          ]
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "She can call upon the alteration and enchantment schools of magic for her spells."
+          ],
+          "type": "spellcasting"
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "Hera's avatar makes two attacks with her rod."
+          ]
+        },
+        {
+          "name": "Rod",
+          "entries": [
+            "{@atk ms} {@hit 10} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d10 + 3}) bludgeoning damage, or 9 ({@damage 1d12 + 3}) bludgeoning damage if used with both hands."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Hera, Greek Avatar|https://angrygolem-games.com/monster-manual/letter-h/hera-greek-avatar/}",
+          "DESCRIPTION",
+          "Hera's avatar appears as a tall woman of stunning beauty.",
+          "{@link God & Clergy (go to page)|https://angrygolem-games.com/monster-manual/letter-h/hera-god-and-clerics-for-dd-5e/}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hermes, Greek Avatar",
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "avatar"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual2",
+      "alignment": [
+        "C",
+        "G"
+      ],
+      "ac": [
+        25
+      ],
+      "hp": {
+        "formula": "18d12 + 72",
+        "average": 189
+      },
+      "speed": {
+        "fly": {
+          "number": 180,
+          "condition": "(flying)"
+        },
+        "canHover": false,
+        "walk": 30
+      },
+      "str": 18,
+      "dex": 20,
+      "con": 18,
+      "int": 18,
+      "wis": 18,
+      "cha": 18,
+      "passive": 14,
+      "cr": "15",
+      "shortName": "Hermes, Greek Avatar",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "All"
+      ],
+      "skill": {
+        "acrobatics": "+4",
+        "animal handling": "+4",
+        "arcana": "+4",
+        "athletics": "+4",
+        "deception": "+4",
+        "history": "+4",
+        "insight": "+4",
+        "intimidation": "+4",
+        "investigation": "+4",
+        "medicine": "+4",
+        "nature": "+4",
+        "perception": "+4",
+        "performance": "+4",
+        "persuasion": "+4",
+        "religion": "+4",
+        "sleight of hand": "+4",
+        "stealth": "+4",
+        "survival": "+4"
+      },
+      "trait": [
+        {
+          "name": "Seducing Voice",
+          "entries": [
+            "If Hermes' avatar has a chance to speak before a combat, anyone wishing to attack him must roll a {@dc 19} wisdom saving throw. Failure indicates the fast-talking avatar has talked them out of attacking him (treat this as a {@spell Charm Person} spell)."
+          ]
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "He can call upon any school of magic for his spells."
+          ],
+          "type": "spellcasting"
+        }
+      ],
+      "action": [
+        {
+          "name": "Rod",
+          "entries": [
+            "{@atk ms} {@hit 13} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d10 + 4}) bludgeoning damage, or 10 ({@damage 1d12 + 4}) bludgeoning damage if used with both hands."
+          ]
+        }
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Hermes, Greek Avatar|https://angrygolem-games.com/monster-manual/letter-h/hermes-greek-avatar/",
+          "DESCRIPTION",
+          "Hermes' avatar appears as a handsome youth carrying a white rod that he uses as a weapon.",
+          "{@link God & Clergy (go to page)|https://angrygolem-games.com/monster-manual/letter-h/hermes-god-and-clerics-for-dd-5e/}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hezrou",
+      "size": "L",
+      "type": {
+        "type": "fiend",
+        "tags": [
+          "demon"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual2",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 16,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "13d10 + 65",
+        "average": 136
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 19,
+      "dex": 17,
+      "con": 20,
+      "int": 5,
+      "wis": 12,
+      "cha": 13,
+      "passive": 11,
+      "cr": "8",
+      "shortName": "Hezrou",
+      "languages": [
+        "Abyssal",
+        "telepathy 120 ft."
+      ],
+      "languageTags": [
+        "AB",
+        "TP"
+      ],
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "senseTags": [
+        "SD"
+      ],
+      "save": {
+        "str": "+7",
+        "con": "+8",
+        "wis": "+4"
+      },
+      "resist": [
+        {
+          "resist": [
+            "cold",
+            "fire",
+            "lightning"
+          ]
+        },
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks"
+        }
+      ],
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "poisoned"
+      ],
+      "trait": [
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The hezrou has advantage on saving throws against spells and other magical effects."
+          ]
+        },
+        {
+          "name": "Stench",
+          "entries": [
+            "Any creature that starts its turn within 10 feet of the hezrou must succeed on a {@dc 14} Constitution saving throw or be {@condition poisoned} until the start of its next turn. On a successful saving throw, the creature is immune to the hezrou's stench for 24 hours."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Magic Resistance"
+      ],
+      "conditionInflict": [
+        "poisoned"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The hezrou makes three attacks: one with its bite and two with its claws."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d10 + 4}) piercing damage."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P",
+        "S"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Hezrou|https://angrygolem-games.com/monster-manual/letter-h/hezrou-5e-stats/}",
+          "DESCRIPTION",
+          "The hezrou, among the least powerful of the true tanar'ri, are still creatures of formidable power. They perform the will of the nalfeshnee by wandering the Abyss and overseeing the formation of armies.",
+          "Hezrou look like large, roughly humanoid toads with arms in place of forelegs. They stand upright or on all four limbs by turns. They have rows of blunt, powerful teeth; spines run the length of their back.",
+          "HABITAT / SOCIETY",
+          "Hezrou are the long arm of the imperious nalfeshnee. They walk among the layers of the Abyss enforcing directions of the higher true tanar'ri. Due to the chaotic nature of the Abyss, the hezrou's services are vital.",
+          "At certain times in a century, the hezrou can {@spell plane shift} at will. During these Dark Walks, as they are known, the hezrou go forth and make pacts with mortals. They willingly enter into service to a mortal, typically one in dire need, but exact a heavy toll. In exchange for a major service, such as destroying an enemy's castle or retrieving a lost artifact, the hezrou secure eternal subservience by the mortal, a family member, friend, or lover. The victims come to the Abyss and serve as manes.",
+          "ECOLOGY",
+          "As true tanar'ri, the hezrou are integral to the Blood War. They enforce the will of true tanar'ri, so they are spared certain death in frontline duty.",
+          "Hezrou are not as intelligent or intuitive as the other true tanar'ri. This is ideal for their duties, however, for theirs is to obey and enforce."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hill Giant",
+      "size": "H",
+      "type": "giant",
+      "source": "AngryGolemGamesMonsterManual2",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 13,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "10d12 + 40",
+        "average": 105
+      },
+      "speed": {
+        "walk": 40
+      },
+      "str": 21,
+      "dex": 8,
+      "con": 19,
+      "int": 5,
+      "wis": 9,
+      "cha": 6,
+      "passive": 12,
+      "cr": "5",
+      "shortName": "Hill Giant",
+      "languages": [
+        "Giant"
+      ],
+      "languageTags": [
+        "GI"
+      ],
+      "skill": {
+        "perception": "+2"
+      },
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The giant makes two greatclub attacks."
+          ]
+        },
+        {
+          "name": "Greatclub",
+          "entries": [
+            "{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}18 ({@damage 3d8 + 5}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Rock",
+          "entries": [
+            "{@atk rw} {@hit 8} to hit, range 60/240 ft., one target. {@h}21 ({@damage 3d10 + 5}) bludgeoning damage."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH",
+        "RW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Hill Giant|https://angrygolem-games.com/monster-manual/letter-h/hill-giant-5e-stats/}",
+          "DESCRIPTION",
+          "Hill giants are selfish, cunning brutes who survive through hunting and by terrorizing and raiding nearby communities. Despite their low intelligence, they are capable fighters.",
+          "Hill giants are oddly simian and barbaric in appearance, with overly long arms, stooped shoulders, and low foreheads. Even though they are the smallest of the giants, their limbs are more muscular and massive than those of the other giant races. The average hill giant is 16 feet tall and weighs about 4,500 pounds. Females have the same builds as males. Their skin color ranges from a light tan to a deep ruddy brown. Their hair is brown or black, and their eyes are black. Hill giants can live to be 200 years old.",
+          "Nearly all hill giants wear hides, which are a symbol of esteem in some hill giant communities the more hides a giant has, the more large kills to his credit. Only a few of the giants fashion metal armor from the armor of men they have defeated. Like other races of giants, hill giants carry their belongings with them in huge hide sacks. A typical hill giant's bag will contain {@dice 2d4} throwing rocks, the giant's wealth, and {@dice 1d8} additional common items.",
+          "HABITAT / SOCIETY",
+          "A hill giant lair will have {@dice 1d8+8} giants; usually an extended family. Sometimes these families will accept lone hill giants into their folds. If six or more giants are encountered in a lair, half of them will be male, one quarter will be female, and the remainder will be immature giants.",
+          "Occasionally a hill giant with an average intelligence can be found. Such a giant is capable of rallying bands of his peers so 2, 3, or 4 times the number of giants usually appearing can be encountered. These “giant kings”, as they call themselves, stage raids on human towns or against other races of giants.",
+          "Although hill giants prefer temperate areas, they can be found in practically any climate where there is an abundance of hills and mountains. They lair in caves, excavated dens, or crude huts. Those who live in colder climates have developed more skills with preparing and using skins to keep themselves warm and to keep the harsh winds out of their lairs.",
+          "There is a 50% chance a band of hill giants will have guards in their lairs, and the guarding creatures will be {@dice 2d4} {@creature dire wolve|AGGMM}s (50%), {@dice 1d3} {@creature giant lizard|AGGMM}s (30%), or a group of {@dice 2d4} {@creature ogre|AGGMM}s (20%).",
+          "The majority of hill giants are suspicious of magic and will seek to destroy magic items they acquire as treasure. They ceremonially kill mages.",
+          "ECOLOGY",
+          "Hill giants' main diet consists of meat, which they obtain by hunting. The flesh of young green dragons is considered a delicacy, and frequently giants who live on hills and mountains covered with forests will organize hunting parties in search of green dragon lairs. In turn, green dragons have been known to hunt hill giants.",
+          "Sometimes bands of hill giants will trade with each other or with bands of ogres to get foodstuffs and trinkets."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hill Giant Mouth of Grolantor",
+      "size": "H",
+      "type": "giant",
+      "source": "AngryGolemGamesMonsterManual2",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 14,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "10d12 + 40",
+        "average": 105
+      },
+      "speed": {
+        "walk": 50
+      },
+      "str": 21,
+      "dex": 10,
+      "con": 18,
+      "int": 5,
+      "wis": 7,
+      "cha": 5,
+      "passive": 11,
+      "cr": "6",
+      "shortName": "Hill Giant Mouth of Grolantor",
+      "languages": [
+        "Giant"
+      ],
+      "languageTags": [
+        "GI"
+      ],
+      "skill": {
+        "perception": "+1"
+      },
+      "conditionImmune": [
+        "frightened"
+      ],
+      "trait": [
+        {
+          "name": "Mouth of Madness",
+          "entries": [
+            "The giant is immune to confusion spells and similar magic.",
+            "On each of its turns, the giant uses all its movement to move toward the nearest creature or whatever else it might perceive as food . Roll a {@dice d10} at the start of each of the giant's turns to determine its action for that turn:",
+            "- {@b 1-3.} The giant makes three attacks with its fists against one random target within its reach. If no other creatures are within its reach, the giant flies into a rage and gains advantage on all attack rolls until the end of its next turn.",
+            "- {@b 4-5.} The giant makes one attack with its fist against every creature within its reach. If no other creatures are within its reach, the giant makes one fist attack against itself.",
+            "-  {@b 6-7.} The giant makes one attack with its bite against one random target within its reach. If no other creatures are within its reach, its eyes glaze over and it becomes {@condition stunned} until the start of its next turn.",
+            "- {@b 8-10.} The giant makes three attacks against one random target within its reach: one attack with its bite and two with its fists. If no other creatures are within its reach, the giant flies into a rage and gains advantage on all attack rolls until the end of its next turn."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}15 ({@damage 3d6 + 5}) piercing damage, and the giant magically regains hit points equal to the damage dealt."
+          ]
+        },
+        {
+          "name": "Fist",
+          "entries": [
+            "{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}18 ({@damage 3d8 + 5}) bludgeoning damage."
+          ]
+        }
+      ],
+      "damageTags": [
+        "P",
+        "B"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Hill Giant Mouth of Grolantor|https://angrygolem-games.com/monster-manual/letter-g/hill-giant-mouth-of-grolantor-5e-stats/}",
+          "DESCRIPTION",
+          "Hill giants know the kinds of foods that make them fatter, and they understand that exerting themselves too much tends to make them thinner. What the lazy brutes don't comprehend are the things that make them sick. They consume spoiled food and diseased carcasses with as much enthusiasm as childreri. eating dessert. Fortunately for hill giants, they have a vulture's constitution and rarely suffer for such eating habits. This makes",
+          "it all the more mysterious to them when one of their kind becomes ill and incapable of keeping down food. Vomiting hill giants are seen as vessels of a message from Grolantor."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hippogriff",
+      "size": "L",
+      "type": "monstrosity",
+      "source": "AngryGolemGamesMonsterManual2",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        11
+      ],
+      "hp": {
+        "formula": "3d10 + 3",
+        "average": 19
+      },
+      "speed": {
+        "walk": 40,
+        "fly": 60,
+        "canHover": false
+      },
+      "str": 17,
+      "dex": 13,
+      "con": 13,
+      "int": 2,
+      "wis": 12,
+      "cha": 8,
+      "passive": 15,
+      "cr": "1",
+      "shortName": "Hippogriff",
+      "skill": {
+        "perception": "+5"
+      },
+      "trait": [
+        {
+          "name": "Keen Sight",
+          "entries": [
+            "The hippogriff has advantage on Wisdom (Perception) checks that rely on sight."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Keen Senses"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The hippogriff makes two attacks: one with its beak and one with its claws."
+          ]
+        },
+        {
+          "name": "Beak",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d10 + 3}) piercing damage."
+          ]
+        },
+        {
+          "name": "Claws",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) slashing damage."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P",
+        "S"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Hippogriff|https://angrygolem-games.com/monster-manual/letter-h/hippogriff-5e-stats/}",
+          "DESCRIPTION",
+          "Hippogriffs are flying monsters that have an equal likelihood to be predator, prey, or steed.",
+          "The hippogriff is a monstrous hybrid of eagle and equine features. It has the ears, neck, mane, torso, and hind legs of a horse. The wings, forelegs, and face are those of an eagle. It is about the size of a light riding horse. A hippogriff may be colored russet, golden tan, or a variety of browns. The feathers are usually a different shade than the hide. The beak is ivory or golden yellow.",
+          "HABITAT / SOCIETY",
+          "Hippogriffs prefer the desolate sections of the temperate and tropic regions, especially rolling hills that enable them to get quickly airborne.",
+          "Hippogriffs are territorial. They have a preferred grazing and hunting area that covers 1d4x10 square miles. Somewhere in this territory is a naturally protected site that serves as the hippogriff nest. Here is where the young hippogriffs stay. The nest is always guarded.",
+          "The typical hippogriff herd includes 1d3 adult males, an equal number of mares, and the rest are immature young. There is a 25% chance that one or more of the mares is pregnant. Gestation takes 10 months. During the first five months, this occurs within the mare. Then she lays an egg that hatches in another five months. Twin births are rare (1% chance).",
+          "The foal is able to walk upon hatching. Its beak remains soft for the first two weeks; this enables the foal to nurse. Then its beak hardens and the hippogriff switches to regurgitated food from its mother. The colts learn to eat solid meat at four months, although they are clumsy killers (-4 penalty to attack rolls and damage). At six months they can fly 30 ft., and fight with a -2 penalty to attack rolls and damage. Yearlings are identical to adults, although they are unable to breed until they are three years old.",
+          "Wild hippogriffs are omnivorous. They feed on whatever is available, whether greenery, fruits, or wildlife. Hippogriffs are able to attack fairly large prey, such as bison, but they do not prey on carnivores. The exception is humanoids. Hippogriffs may, in the absence of other meat, attack small groups of people. Bodies are then carried back to the nest to feed the others; this is where the victim's possessions usually spill out. Hippogriffs are clean monsters; they dispose of carcasses and other debris by carrying them downhill. They like clear, sparkly things like glass, crystals, and precious gems. Males may amass a small trove kept covered by brush. As a mating ritual, he arranges these in a display to entice mares.",
+          "ECOLOGY",
+          "Hippogriffs are closely related to {@creature griffon|AGGMM}s. Just as griffons are the result of crossing an eagle with a lion, hippogriffs resulted from the crossing of an eagle with a horse. Hippogriffs may have been created as a natural prey for the griffons. Fortunately for the hippogriff, its own formidable weapons give it a fighting chance. To make up for the griffon's superiority, hippogriffs gather in larger groups.",
+          "Hippogriffs are also related to pegasi. Because the hippogriffs eat meat, pegasi avoid their company.",
+          "Hippogriffs make excellent flying mounts, becaue they are less likely to eat the rider than a griffon is.",
+          "If a hippogriff is captured while still very young (under four months), it can be domesticated and trained to serve as a steed. Hippogriff eggs sell for 1,000 gp, young hippogriffs for 2,000-3,000 gp. It will probably have to be taught to fly. Domestic hippogriffs are also taught to recognize a limited number of species as food; humanoids of course are not on that list. Hippogriffs have difficulty breeding in captivity. Like flying, the wild hippogriff has to be captured before such skills are learned. Mature hippogriffs may be persuaded to voluntarily assist riders who can provide them with ample food or protection."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Histachii, Yuan-Ti",
+      "size": "M",
+      "type": {
+        "type": "monstrosity",
+        "tags": [
+          "shapechanger",
+          "yuan-ti"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual2",
+      "alignment": [
+        "N",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 14,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "4d8 + 8",
+        "average": 26
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 12,
+      "dex": 14,
+      "con": 14,
+      "int": 6,
+      "wis": 8,
+      "cha": 6,
+      "passive": 11,
+      "cr": "1/2",
+      "shortName": "Histachii, Yuan-Ti",
+      "languages": [
+        "Common",
+        "Draconic"
+      ],
+      "languageTags": [
+        "C",
+        "DR"
+      ],
+      "skill": {
+        "stealth": "+4",
+        "perception": "+1"
+      },
+      "trait": [
+        {
+          "name": "Rage",
+          "entries": [
+            "The histachii gains advantage on all attack rolls, but attack rolls against it have advantage until the rage is active."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The histachii makes three melee attacks, one with its teeth and two with its claws."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage."
+          ]
+        },
+        {
+          "name": "Claws",
+          "entries": [
+            "{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) slashing damage."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P",
+        "S"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Histachii, Yuan-Ti|https://angrygolem-games.com/monster-manual/letter-h/histachii-yuan-ti-5e-stats/}",
+          "DESCRIPTION",
+          "Once human, yuan-ti histachii are near-mindless abominations who have been transformed into reptilian humanoids to serve their yuan-ti masters. Most often, they are found guarding yuan-ti brood chambers.",
+          "Histachii are hairless creatures. Their clothing, little more than filthy rags, hangs limply over their emaciated bodies. Their gray or yellow-green skin is tough and scaly, and smells faintly of rotting meat. They have beady, bloodshot eyes, and their forked tongues continually dart in and out of their mouths. Their dull yellow teeth are like tiny hooks, razor-sharp. Their fingernails are black and twisted, resembling the claws of a lizard.",
+          "Histachii speak in short, hissing phrases. They know the languages of yuan-ti and all snakes and snakelike creatures, as well as the languages they spoke in their original human lives.",
+          "HABITAT / SOCIETY",
+          "Yuan-ti create most histachii servitors from human prisoners. They also may transform human worshippers who voluntarily agree to become histachii. Humans become histachii by drinking a distillation of yuan-ti venom mixed with certain herbs and roots. If a human is unwilling to drink, the yuan-ti pin their captive to the ground and pour the mixture down his throat.",
+          "Any human who drinks this mixture, whether by choice or by force, must make a DC 16 constitution saving throw. If the saving throw fails, the victim becomes a histachii in 1d6+6 days. If the save is successful, the victim immediately lapses into a coma; death will follow in one hour.",
+          "A comatose victim can be revived with a delay poison or neutralize poison spell, presuming the spell is cast within 1 hour after the mixture has been swallowed. Human-headed yuan-ti have the ability to neutralize poison, and they may save a comatose victim themselves. It is not for the victim's benefit. A human who fails his save after drinking the mixture may suddenly find himself alive again, only to face another flask of the mixture when the yuan-ti attempt another transformation.",
+          "Only humans can become histachii. Non-humans who drink the yuan-ti mixture must also make a DC 16 constitution saving throw, however. If the save is successful, the nonhuman will be violently ill, unable to take any action for 1d4 hours. If the save throw fails, the non-human becomes comatose and dies in 2d4 rounds.",
+          "If a human fails his saving throw after consuming the mixture, a few desperate measures may prevent his transformation into a histachii. If {@spell Protection from Poison}, {@spell dispel magic}, {@spell remove curse}, and {@spell heal} are cast on the victim, in precisely this order, the transformation process will be reversed. However, the victim will permanently lose 1 point of Intelligence.",
+          "A wish or a limited wish will reverse the transformation with no loss of Intelligence. Once the transformation is complete, only a wish can restore the victim to his former self. Histachii live 2d8×10 years after their creation. They cannot breed; histachii only can be created from human beings.",
+          "Histachii are completely submissive to their yuan-ti masters, carrying out their every order without hesitation. The servants share the lairs of their yuan-ti masters. Usually, these lairs are in ancient ruins deep in tropical jungles, but sometimes yuan-ti dwell in subterranean caverns beneath human cities. A histachii's duties include hunting, caring for the yuan-ti's reptile menageries, guarding prisoners, and various custodial chores. In rare moments of leisure, the servants enjoy soaking in pools of cool water.",
+          "ECOLOGY",
+          "Like yuan-ti, histachii are strictly carnivorous, feasting on rats, worms, and other vermin. They also eat yuan-ti leftovers."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hobgoblin",
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "goblinoid"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual2",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 18,
+          "from": [
+            "{@item chain mail|phb}",
+            "{@item shield|phb}"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "2d8 + 2",
+        "average": 11
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 13,
+      "dex": 12,
+      "con": 12,
+      "int": 10,
+      "wis": 10,
+      "cha": 9,
+      "passive": 10,
+      "cr": "1/2",
+      "shortName": "Hobgoblin",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "Common",
+        "Goblin"
+      ],
+      "languageTags": [
+        "C",
+        "GO"
+      ],
+      "trait": [
+        {
+          "name": "Martial Advantage",
+          "entries": [
+            "Once per turn, the hobgoblin can deal an extra 7 ({@damage 2d6}) damage to a creature it hits with a weapon attack if that creature is within 5 ft. of an ally of the hobgoblin that isn't {@condition incapacitated}."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Longsword",
+          "entries": [
+            "{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d8 + 1}) slashing damage, or 6 ({@damage 1d10 + 1}) slashing damage if used with both hands."
+          ]
+        },
+        {
+          "name": "Longbow",
+          "entries": [
+            "{@atk rw} {@hit 3} to hit, range 150/600 ft., one target. {@h}5 ({@damage 1d8 + 1}) piercing damage."
+          ]
+        }
+      ],
+      "damageTags": [
+        "S",
+        "P"
+      ],
+      "miscTags": [
+        "MW",
+        "RW",
+        "RNG"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Hobgoblin|https://angrygolem-games.com/monster-manual/letter-h/hobgoblin/}",
+          "{@link HOBGOBLIN's TACTICS (read the article)|https://angrygolem-games.com/monster-tactics-fight-like-a-hobgoblin/}",
+          "DESCRIPTION",
+          "Hobgoblins are a fierce humanoid race that wage a perpetual war with the other humanoid races. They are intelligent, organized, and aggressive. The typical hobgoblin is a burly humanoid standing 6 feet tall.",
+          "Their hairy hides range from dark reddish-brown to dark gray. Their faces show dark red or red-orange skin. Large males have blue or red noses. Hobgoblin eyes are either yellowish or dark brown while their teeth are yellow. Their garments tend to be brightly colored, often bold, blood red.",
+          "Any leather is always tinted black. Hobgoblin weaponry is kept polished and repaired. Hobgoblins have their own language and often speak with orcs, goblins, and carnivorous apes. Roughly 20% of them can speak the common tongue of man.",
+          "HABITAT / SOCIETY",
+          "Hobgoblins are nightmarish mockeries of the humanoid races who have a military society organized in tribal bands. Each tribe is intensely jealous of its status. Chance meetings with other tribes will result in verbal abuse or open fighting. Hobgoblin tribes are found in almost any climate or subterranean realm.",
+          "Hobgoblins usually organize in tribes. However, during wartime or important military campaigns, the tribes unite to form a legion.",
+          "A typical tribe of hobgoblins will have {@dice 2d100} adult male warriors.",
+          "- For every 20 male hobgoblins there will be 1 hobgoblin sergeant + 2 hobgoblin assistants with 20 hit points each.",
+          "- Groups numbering over 100 are led by a {@creature hobgoblin sub-chief|AGGMM}. ",
+          "- If the hobgoblins are encountered in their lair, they will be led by a {@creature hobgoblin chief|AGGMM}. The chief has {@dice 5d4} hobgoblin sub-chiefs acting as bodyguards.",
+          "If the hobgoblins are encountered in a legion, there will be {@dice 10d100} of them, led by a {@creature hobgoblin captain|AGGMM} or a {@creature hobgoblin warlord|AGGMM} if the legion numbers more than 5,000 soldiers.",
+          "Each tribe has a distinctive battle standard which is carried into combat to inspire the troops. If the tribal chief is leading the battle, he will carry the standard with him, otherwise it will be held by one of his sub-chiefs.",
+          "In addition to the warriors present in a hobgoblin tribe, there will be half again that many females and three times as many children as adult males.",
+          "Fully 80% of all known hobgoblin lairs are subterranean complexes. The remaining 20% are surface villages which are fortified with a ditch, fence, at least two gates, and {@dice 1d4+2} guard towers. Villages are often built upon ruined humanoid settlements and may incorporate defensive features already present in the ruins.",
+          "Hobgoblin villages possess artillery in the form of 2 heavy catapults, 2 light catapults, and 1 ballista for each 50 warriors.",
+          "ECOLOGY",
+          "Hobgoblins feel superior to goblins or orcs and may act as leaders for them. In such cases, the “lesser races” are used as battle fodder. Hobgoblin mercenaries may work for powerful or rich evil humanoids."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hobgoblin Captain",
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "goblinoid"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual2",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 18,
+          "from": [
+            "{@item chain mail|phb}",
+            "{@item shield|phb}"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "2d8 + 4",
+        "average": 13
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 15,
+      "dex": 14,
+      "con": 14,
+      "int": 12,
+      "wis": 10,
+      "cha": 13,
+      "passive": 10,
+      "cr": "3",
+      "shortName": "Hobgoblin Captain",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "Common",
+        "Goblin"
+      ],
+      "languageTags": [
+        "C",
+        "GO"
+      ],
+      "trait": [
+        {
+          "name": "Martial Advantage",
+          "entries": [
+            "Once per turn, the hobgoblin can deal an extra 10 ({@damage 3d6}) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the hobgoblin that isn't {@condition incapacitated}."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The hobgoblin makes two greatsword attacks."
+          ]
+        },
+        {
+          "name": "Greatsword",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) piercing damage."
+          ]
+        },
+        {
+          "name": "Javelin",
+          "entries": [
+            "{@atk rw} {@hit 4} to hit, range 30/120 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+          ]
+        },
+        {
+          "name": "Leadership (Recharges after a Short or Long Rest)",
+          "entries": [
+            "For 1 minute, the hobgoblin can utter a special command or warning whenever a nonhostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a {@dice d4} to its roll provided it can hear and understand the hobgoblin. A creature can benefit from only one Leadership die at a time. This effect ends if the hobgoblin is {@condition incapacitated}."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MW",
+        "RW",
+        "THW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Hobgoblin Captain|https://angrygolem-games.com/monster-manual/letter-h/hobgoblin-captain-5e-stats/}",
+          "{@link HOBGOBLIN's TACTICS (read the article)|https://angrygolem-games.com/monster-tactics-fight-like-a-hobgoblin/}",
+          "DESCRIPTION",
+          "Hobgoblins are a fierce humanoid race that wage a perpetual war with the other humanoid races. They are intelligent, organized, and aggressive. The typical hobgoblin is a burly humanoid standing 6 feet tall.",
+          "Their hairy hides range from dark reddish-brown to dark gray. Their faces show dark red or red-orange skin. Large males have blue or red noses. Hobgoblin eyes are either yellowish or dark brown while their teeth are yellow. Their garments tend to be brightly colored, often bold, blood red.",
+          "Any leather is always tinted black. Hobgoblin weaponry is kept polished and repaired. Hobgoblins have their own language and often speak with orcs, goblins, and carnivorous apes. Roughly 20% of them can speak the common tongue of man.",
+          "HABITAT / SOCIETY",
+          "Hobgoblins are nightmarish mockeries of the humanoid races who have a military society organized in tribal bands. Each tribe is intensely jealous of its status. Chance meetings with other tribes will result in verbal abuse or open fighting. Hobgoblin tribes are found in almost any climate or subterranean realm.",
+          "Hobgoblins usually organize in tribes. However, during wartime or important military campaigns, the tribes unite to form a legion.",
+          "A typical tribe of hobgoblins will have {@dice 2d100} adult male warriors.",
+          "- For every 20 male hobgoblins there will be 1 hobgoblin sergeant + 2 hobgoblin assistants with 20 hit points each.",
+          "- Groups numbering over 100 are led by a {@creature hobgoblin sub-chief|AGGMM}. ",
+          "- If the hobgoblins are encountered in their lair, they will be led by a {@creature hobgoblin chief|AGGMM}. The chief has {@dice 5d4} hobgoblin sub-chiefs acting as bodyguards.",
+          "If the hobgoblins are encountered in a legion, there will be {@dice 10d100} of them, led by a {@creature hobgoblin captain|AGGMM} or a {@creature hobgoblin warlord|AGGMM} if the legion numbers more than 5,000 soldiers.",
+          "Each tribe has a distinctive battle standard which is carried into combat to inspire the troops. If the tribal chief is leading the battle, he will carry the standard with him, otherwise it will be held by one of his sub-chiefs.",
+          "In addition to the warriors present in a hobgoblin tribe, there will be half again that many females and three times as many children as adult males.",
+          "Fully 80% of all known hobgoblin lairs are subterranean complexes. The remaining 20% are surface villages which are fortified with a ditch, fence, at least two gates, and {@dice 1d4+2} guard towers. Villages are often built upon ruined humanoid settlements and may incorporate defensive features already present in the ruins.",
+          "Hobgoblin villages possess artillery in the form of 2 heavy catapults, 2 light catapults, and 1 ballista for each 50 warriors.",
+          "ECOLOGY",
+          "Hobgoblins feel superior to goblins or orcs and may act as leaders for them. In such cases, the “lesser races” are used as battle fodder. Hobgoblin mercenaries may work for powerful or rich evil humanoids."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hobgoblin Devastator",
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "goblinoid"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual2",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 13,
+          "from": [
+            "{@item studded leather armor|phb}"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "7d8 + 14",
+        "average": 45
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 13,
+      "dex": 12,
+      "con": 14,
+      "int": 16,
+      "wis": 13,
+      "cha": 11,
+      "passive": 11,
+      "cr": "4",
+      "shortName": "Hobgoblin Devastator",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "Common",
+        "Goblin"
+      ],
+      "languageTags": [
+        "C",
+        "GO"
+      ],
+      "skill": {
+        "arcana": "+5"
+      },
+      "trait": [
+        {
+          "name": "Arcane Advantage",
+          "entries": [
+            "Once per turn, the hobgoblin can deal an extra 7 ({@damage 2d6}) damage to a creature it hits with a damaging spell attack if that target is within 5 feet of an ally of the hobgoblin and that ally isn't {@condition incapacitated}."
+          ]
+        },
+        {
+          "name": "Army Arcana",
+          "entries": [
+            "When the hobgoblin casts a spell that causes damage or that forces other creatures to make a saving throw, it can choose itself and any number of allies to be immune to the damage caused by the spell and to succeed on the required saving throw."
+          ]
+        }
+      ],
+      "conditionInflict": [
+        "incapacitated"
+      ],
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "The hobgoblin devastator is a 7th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 13}, +5 to hit with spell attacks). It has the following wizard spells prepared:"
+          ],
+          "spells": {
+            "0": {
+              "spells": [
+                "{@spell acid splash}",
+                "{@spell fire bolt}",
+                "{@spell ray of frost}",
+                "{@spell shocking grasp}"
+              ]
+            },
+            "1": {
+              "spells": [
+                "{@spell fog cloud}",
+                "{@spell magic missile}",
+                "{@spell thunderwave}"
+              ],
+              "slots": 4
+            },
+            "2": {
+              "spells": [
+                "{@spell gust of wind}",
+                "{@spell Melf's acid arrow}",
+                "{@spell scorching ray}"
+              ],
+              "slots": 3
+            },
+            "3": {
+              "spells": [
+                "{@spell fireball}",
+                "{@spell fly}",
+                "{@spell lightning bolt}"
+              ],
+              "slots": 3
+            },
+            "4": {
+              "spells": [
+                "{@spell ice storm}"
+              ],
+              "slots": 1
+            }
+          },
+          "ability": "int",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "CW"
+      ],
+      "action": [
+        {
+          "name": "Quarterstaff",
+          "entries": [
+            "{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) bludgeoning damage, or 5 ({@damage 1d8 + 1}) bludgeoning damage if used with both hands."
+          ]
+        }
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "fluff": {
+        "entries": [
+          "{@link Hobgoblin Devastator|https://angrygolem-games.com/monster-manual/letter-h/hobgoblin-devastator-5e-stats/}",
+          "DESCRIPTION",
+          "In hobgoblin society, the Academy of Devastation identifies hobgoblins with a talent for magic and puts them through a grueling training regimen that endows them with the ability to call down fireballs and other destructive magic on the host's behalf. A hobgoblin devastator on the battlefield is simultaneously a boon to all its allies and a threat to every foe around it."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      },
+      "tokenUrl": "sss"
     }
   ]
 }
