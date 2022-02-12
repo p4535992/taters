@@ -16,7 +16,6 @@
 - [NOT ESSENTIAL][TOKEN][About Face](https://github.com/mclemente/about-face)
 - [NOT ESSENTIAL][LIGHT][Community Lighting for FVTT](https://github.com/BlitzKraig/fvtt-CommunityLighting )
 - [ABBANDONED][TOKEN/UTILITY][Custom-Token-Animations](https://github.com/kandashi/Custom-Token-Animations )
-- [IS BETTER Effective Transferral][COMBAT][Temporary Effects as Token Statuses](https://github.com/ElfFriend-DnD/foundryvtt-temp-effects-as-statuses)
 - [NOT ESSENTIAL][UTILITY][Rangefinder](https://github.com/manuelVo/foundryvtt-rangefinder)
 - [NOT ESSENTIAL][UTILITY][JV's Drag Anything To Hotbar for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-drag-all-to-hotbar)
 - [IS BETTER QUICK INSERT][ENTITY][Search Anywhere](https://gitlab.com/riccisi/foundryvtt-search-anywhere )
@@ -28,6 +27,11 @@
 - [IS BETTER ITEM PILES][TOKEN][Innocenti's Loot](https://github.com/rinnocenti/innocenti-loot)
 - [IS BETTER TransferStuff][UTILITY][Drag'n'Transfer](https://github.com/David-Zvekic/DragTransfer)
 - [NOT ESSENTIAL][SHEET][JV's Actor Link Indicator for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-actor-link-indicator)
+- [NOT ESSENTIAL][COMBAT][Apply Self Effects D&D5e](https://github.com/ElfFriend-DnD/foundryvtt-apply-self-effects-5e)
+- [NOT ESSENTIAL][UTILITY][Rarity Colors](https://github.com/kandashi/rarity-colors)
+- [NOT ESSENTIAL IS BETTER ][COMBAT][Combat Booster](https://github.com/theripper93/Combat-Booster)
+- [NOT ESSENTIAL][UTILITY][LightsHUD](https://github.com/Malekal4699/LightsHUD/)
+- [NOT ESSENTIAL][CHARACTER SHEET][Link Item and Resource DnD5e](https://github.com/ElfFriend-DnD/foundryvtt-link-item-resource-5e)
 
 ## 2021-12
 
@@ -278,7 +282,6 @@
 - [GOOD JUST A LESS MODULE][COMPENDIUM][Summoner](https://github.com/Jonwh25/summoner ) - https://raw.githubusercontent.com/Jonwh25/summoner/master/module.json 
 - [GOOD JUST A LESS MODULE][COMPENDIUM][Supplemental Bestiary Pack](https://github.com/sparkcity/fvtt-supplementalbestiary ) - https://raw.githubusercontent.com/sparkcity/fvtt-supplementalbestiary/master/module.json
 - [NOT ESSENTIAL][MAP][Inline Webviewer](https://github.com/ardittristan/VTTInlineWebviewer )
-- [NOT ESSENTIAL][UTILITY/MAP/TOKEN][Point of Interest Character Sheet](https://github.com/Sky-Captain-13/foundry/tree/master/poi-sheet ) - https://raw.githubusercontent.com/Sky-Captain-13/foundry/master/poi-sheet/poi-sheet/module.json
 - [NOT ESSENTIAL USE COMBAT UTILITY BELT INSTEAD][TOKEN/ENTITY][Token Mold](https://github.com/Moerill/token-mold#token-mold ) - https://raw.githubusercontent.com/Moerill/token-mold/master/src/module.json
 - [NEED UPDATE][COMBAT][Turn Alert](https://github.com/schultzcole/FVTT-Turn-Alert/ ) - https://raw.githubusercontent.com/schultzcole/FVTT-Turn-Alert/master/module.json
 - [CAN BE AVOID][ANIMATE TEMPLATE][Jack Kerouac's Animated Tokens](https://github.com/jackkerouac/animated-tokens )

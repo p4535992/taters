@@ -41,14 +41,12 @@
 - [Scene][Monk's Active Tile Triggers](https://github.com/ironmonk88/monks-active-tiles/)
 - [CHARACTER SHEET][Merchant Sheet NPC](https://github.com/whelan/fvtt-merchant-sheet-npc)
 - [UTILITY][Monk's Little Details](https://github.com/ironmonk88/monks-little-details)
-- [UTILITY][Rarity Colors](https://github.com/kandashi/rarity-colors)
 - [UTILITY][JB2A Sequencer Macro Library](https://github.com/IrateRedKite/jb2a-sequencer-spell-macros)
 - [ITEM][Drop Effects on Items](https://github.com/ElfFriend-DnD/foundryvtt-drop-effects-on-items)
 - [UTILITY][Ignore Vision](https://github.com/manuelVo/foundryvtt-ignore-vision/tree/master)
 - [UTILITY][VINO - Visual Interactive Novel Overlay](https://github.com/cswendrowski/FoundryVTT-ViNo)
+
 - [UTILITY][Roger's Additional Metric Ruler Labels](https://github.com/Roger92/metric-ruler-labels)
-- [UTILITY][GM Token Drag Visibility v2](https://github.com/MAClavell/gm-token-drag-visibility-v2)
-- [UTILITY][LightsHUD](https://github.com/Malekal4699/LightsHUD/)
 - [UTILITY][Quick Insert](https://gitlab.com/fvtt-modules-lab/quick-insert )
 - [UTILITY][Item Piles](https://github.com/fantasycalendar/FoundryVTT-ItemPiles)
 - [UTILITY][Icon Picker](https://github.com/teroparvinen/foundry-icon-picker)
@@ -59,12 +57,28 @@
 - [TOKEN][Your Tokens Visible](https://github.com/David-Zvekic/TokensVisible)
 - [TOKEN][Token Says](https://github.com/napolitanod/Token-Says)
 - [UTILITY][Token Variant Art](https://github.com/Aedif/TokenVariants)
+- [UTILITY][DFreds Effects Panel](https://github.com/DFreds/dfreds-effects-panel)
+
+- [UTILITY\TOKEN][Token Attacher](https://github.com/KayelGee/token-attacher )
+- [UTILITY][Item Delete Check](https://gitlab.com/tposney/item-delete-check/tree/master )
+- [SCENE][Scene Transitions](https://github.com/DM-miX/scene-transitions)
+- [COMBAT][Perfect Vision](https://github.com/dev7355608/perfect-vision )
+- [CHAT][DragonFlagon Chat Enhancements](https://github.com/flamewave000/dragonflagon-fvtt/tree/master/df-chat-enhance )
+- [TABLE][Better Rolltables](https://github.com/ultrakorne/better-rolltables )
+- [MAP][Multilevel Tokens module for Foundry VTT](https://github.com/grandseiken/foundryvtt-multilevel-tokens )
+- [UTILITY][Forien Copy](https://github.com/League-of-Foundry-Developers/foundryvtt-forien-copy-environment )
+- [MAP][Parallaxia](https://gitlab.com/reichler/parallaxia )
+- [UTILITY/MODULES][DF Settings Clarity](https://github.com/flamewave000/dragonflagon-fvtt/tree/master/df-settings-clarity )
+- [JOURNAL/CHAT][Polyglot](https://github.com/League-of-Foundry-Developers/fvtt-module-polyglot )
+- [JOURNAL][Storyteller for Foundry VTT](https://github.com/Xbozon/storyteller)
+- [UTILITY][Pause Control](https://gitlab.com/koboldworks/agnostic/pause-control)
+- [CHARACTER SHEET][Point of Interest Character Sheet](https://github.com/Sky-Captain-13/foundry/tree/master/poi-sheet )
+
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
 - [COMBAT/ACTIVE EFFECTS][Time Up](https://gitlab.com/tposney/times-up )
 - [COMBAT/ROLL][Let me roll that for you](https://github.com/League-of-Foundry-Developers/fvtt-module-lmrtfy )
-- [COMBAT][Combat Booster](https://github.com/theripper93/Combat-Booster)
 - [COMBAT][Arbron's Improved HP Bar](https://github.com/arbron/fvtt-hp-bar)
 - [COMBAT][Combat Utility Belt](https://github.com/death-save/combat-utility-belt )
 - [COMBAT][Advanced Spell Effects](https://github.com/Vauryx/AdvancedSpellEffects)
@@ -73,24 +87,9 @@
 - [COMBAT][Effective Transferral](https://github.com/GamerFlix/effective-transferral)
 - [COMBAT][Danger-Zone](https://github.com/napolitanod/Danger-Zone)
 - [COMBAT/CHAT][Hide GM Rolls](https://github.com/sPOiDar/fvtt-module-hide-gm-rolls)
-
-## [NOT ESSENTIAL BUT VERY GOOD] 0.8.9
-
-
-- [UTILITY][Boss Bar](https://github.com/theripper93/Boss-Bar)
-- [UTILITY][Forien Copy](https://github.com/League-of-Foundry-Developers/foundryvtt-forien-copy-environment )
-- [MAP][Multilevel Tokens module for Foundry VTT](https://github.com/grandseiken/foundryvtt-multilevel-tokens )
-- [MAP][Parallaxia](https://gitlab.com/reichler/parallaxia )
-- [TOKEN][Token Attacher](https://github.com/KayelGee/token-attacher )
-- [UTILITY/MODULES][DF Settings Clarity](https://github.com/flamewave000/dragonflagon-fvtt/tree/master/df-settings-clarity )
-- [CHAT][DragonFlagon Chat Enhancements](https://github.com/flamewave000/dragonflagon-fvtt/tree/master/df-chat-enhance )
-- [TABLE][Better Rolltables](https://github.com/ultrakorne/better-rolltables )
-- [UTILITY][Item Delete Check](https://gitlab.com/tposney/item-delete-check/tree/master )
-- [COMBAT][Perfect Vision](https://github.com/dev7355608/perfect-vision )
-- [JOURNAL/CHAT][Polyglot](https://github.com/League-of-Foundry-Developers/fvtt-module-polyglot )
-- [JOURNAL][Storyteller for Foundry VTT](https://github.com/Xbozon/storyteller)
-- [UTILITY][Pause Control](https://gitlab.com/koboldworks/agnostic/pause-control)
-- [SCENE][Scene Transitions](https://github.com/DM-miX/scene-transitions)
+- [COMBAT][Temporary Effects as Token Statuses](https://github.com/ElfFriend-DnD/foundryvtt-temp-effects-as-statuses)
+- [COMBAT][GM Token Drag Visibility v2](https://github.com/MAClavell/gm-token-drag-visibility-v2)
+- [COMBAT][Boss Bar](https://github.com/theripper93/Boss-Bar)
 
 ## MODULES NECESSARI SOLO IN FASE DI COSTRUZIONE E NON DI SESSIONE
 
@@ -132,7 +131,6 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 - [ENTITY][Not Enough NPCs: A 5e NPC Generator](https://github.com/ardittristan/VTTNPCGen )
 - [CHARACTHER SHEET/UTILITY][Downtime Tracking 5e Training](https://github.com/crash1115/5e-training )
 - [ITEM][Items with Rollable Tables DnD5e](https://github.com/ElfFriend-DnD/foundryvtt-items-with-rolltables-5e)
-- [CHARACTER SHEET][Link Item and Resource DnD5e](https://github.com/ElfFriend-DnD/foundryvtt-link-item-resource-5e)
 - [CHARACTER SHEET/UTILITY][Variant Encumbrance 5e](https://github.com/VanirDev/VariantEncumbrance )
 - [CHARACTHER SHEET/UTILITY][Party Inventory](https://github.com/teroparvinen/foundry-party-inventory)
 - [SCENE][Elevation Drag Ruler](https://github.com/PepijnMC/ElevationDragRuler)
