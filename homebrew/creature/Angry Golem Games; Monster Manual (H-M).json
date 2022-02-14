@@ -141,7 +141,7 @@
     },
     {
       "name": "Hades, Greek Avatar",
-      "size": "M",
+      "size": "L",
       "type": {
         "type": "humanoid",
         "tags": [
@@ -2998,6 +2998,1517 @@
         ]
       },
       "tokenUrl": "sss"
+    },
+    {
+      "name": "Hobgoblin Iron Shadow",
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "goblinoid"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual2",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        15
+      ],
+      "hp": {
+        "formula": "5d8 + 10",
+        "average": 32
+      },
+      "speed": {
+        "walk": 40
+      },
+      "str": 14,
+      "dex": 16,
+      "con": 15,
+      "int": 14,
+      "wis": 15,
+      "cha": 11,
+      "passive": 12,
+      "cr": "2",
+      "shortName": "Hobgoblin Iron Shadow",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "Common",
+        "Goblin"
+      ],
+      "languageTags": [
+        "C",
+        "GO"
+      ],
+      "skill": {
+        "acrobatics": "+5",
+        "athletics": "+4",
+        "stealth": "+5"
+      },
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "The hobgoblin is a 2nd-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 12}, +4 to hit with spell attacks). It has the following wizard spells prepared:"
+          ],
+          "spells": {
+            "0": {
+              "spells": [
+                "{@spell minor illusion}",
+                "{@spell prestidigitation}",
+                "{@spell true strike}"
+              ]
+            },
+            "1": {
+              "spells": [
+                "{@spell charm person}",
+                "{@spell disguise self}",
+                "{@spell expeditious retreat}",
+                "{@spell silent image}"
+              ],
+              "slots": 3
+            }
+          },
+          "ability": "int",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "CW"
+      ],
+      "trait": [
+        {
+          "name": "Unarmored Defense",
+          "entries": [
+            "While the hobgoblin is wearing no armor and wielding no shield, its AC includes its Wisdom modifier."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The hobgoblin makes four attacks, each of which can be an unarmed strike or a dart attack. It can also use Shadow Jaunt once, either before or after one of the attacks."
+          ]
+        },
+        {
+          "name": "Unarmed Strike",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Dart",
+          "entries": [
+            "{@atk rw} {@hit 5} to hit, range 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage."
+          ]
+        },
+        {
+          "name": "ShadowJaunt",
+          "entries": [
+            "The hobgoblin magically teleports, along with any equipment it is wearing or carrying, up to 30 feet to an unoccupied space it can see. Both the space it is leaving and its destination must be in dim light or darkness."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "B",
+        "P"
+      ],
+      "miscTags": [
+        "MW",
+        "RW",
+        "THW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Hobgoblin Iron Shadow|https://angrygolem-games.com/monster-manual/letter-h/hobgoblin-iron-shadow-5e-stats/}",
+          "DESCRIPTION",
+          "The Iron Shadows are hobgoblin monks that serve as secret police, scouts, and assassins. Among other hobgoblins, they spy to ferret out treachery, rebellion, and betrayal."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hobgoblin Warlord",
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "goblinoid"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual2",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 20,
+          "from": [
+            "{@item shield|phb}"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "13d8 + 39",
+        "average": 97
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 16,
+      "dex": 14,
+      "con": 16,
+      "int": 14,
+      "wis": 11,
+      "cha": 15,
+      "passive": 10,
+      "cr": "6",
+      "shortName": "Hobgoblin Warlord",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "Common",
+        "Goblin"
+      ],
+      "languageTags": [
+        "C",
+        "GO"
+      ],
+      "save": {
+        "int": "+5",
+        "cha": "+5",
+        "wis": "+3"
+      },
+      "trait": [
+        {
+          "name": "Martial Advantage",
+          "entries": [
+            "Once per turn, the hobgoblin can deal an extra 14 ({@damage 4d6}) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the hobgoblin that isn't {@condition incapacitated}."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The hobgoblin makes three melee attacks. Alternatively, it can make two ranged attacks with its javelins."
+          ]
+        },
+        {
+          "name": "Longsword",
+          "entries": [
+            "{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage, or 8 ({@damage 1d10 + 3}) slashing damage if used with both hands."
+          ]
+        },
+        {
+          "name": "Shield Bash",
+          "entries": [
+            "{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) bludgeoning damage. If the target is Large or smaller, it must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}."
+          ]
+        },
+        {
+          "name": "Javelin",
+          "entries": [
+            "{@atk mw,rw} {@hit 9} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage in melee, or 6 ({@damage 1d6 + 3}) piercing damage at range."
+          ]
+        },
+        {
+          "name": "Leadership (Recharges after a Short or Long Rest)",
+          "entries": [
+            "For 1 minute, the hobgoblin can utter a special command or warning whenever a non hostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add {@dice 1d4} to its roll provided it can hear and understand the hobgoblin. A creature can benefit from only one Leadership die at a time. This effect ends if the hobgoblin is {@condition incapacitated}."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack",
+        "Parry"
+      ],
+      "damageTags": [
+        "S",
+        "B",
+        "P"
+      ],
+      "miscTags": [
+        "MW",
+        "RW",
+        "THW"
+      ],
+      "conditionInflict": [
+        "prone"
+      ],
+      "reaction": [
+        {
+          "name": "Parry",
+          "entries": [
+            "The hobgoblin adds 3 to its AC against one melee attack that would hit it. To do so, the hobgoblin must see the attacker and be wielding a melee weapon."
+          ]
+        }
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Hobgoblin Warlord|https://angrygolem-games.com/monster-manual/letter-h/hobgoblin-warlord-5e-stats/}",
+          "{@link HOBGOBLIN's TACTICS (read the article)|https://angrygolem-games.com/monster-tactics-fight-like-a-hobgoblin/}",
+          "{@link 5th Edition Advanced Mode|https://www.drivethrurpg.com/product/382784/5th-ADVANCED-MODE?affiliate_id=1465812&src=HobgoblinWarlord}",
+          "Limiting the power of a character and making the overall difficulty of the game harder, does not reduce the creativity, indeed it does quite the opposite.",
+          "The Game Master has the option to use any and all of the instances proposed in this guide, or just some of them according to their preference.",
+          "{@i It is the lack of something that move and motivate characters, not the abundance of it}",
+          "DESCRIPTION",
+          "Hobgoblins are a fierce humanoid race that wage a perpetual war with the other humanoid races. They are intelligent, organized, and aggressive. The typical hobgoblin is a burly humanoid standing 6 feet tall.",
+          "Their hairy hides range from dark reddish-brown to dark gray. Their faces show dark red or red-orange skin. Large males have blue or red noses. Hobgoblin eyes are either yellowish or dark brown while their teeth are yellow. Their garments tend to be brightly colored, often bold, blood red.",
+          "Any leather is always tinted black. Hobgoblin weaponry is kept polished and repaired. Hobgoblins have their own language and often speak with orcs, goblins, and carnivorous apes. Roughly 20% of them can speak the common tongue of man.",
+          "HABITAT / SOCIETY",
+          "Hobgoblins are nightmarish mockeries of the humanoid races who have a military society organized in tribal bands. Each tribe is intensely jealous of its status. Chance meetings with other tribes will result in verbal abuse or open fighting. Hobgoblin tribes are found in almost any climate or subterranean realm.",
+          "Hobgoblins usually organize in tribes. However, during wartime or important military campaigns, the tribes unite to form a legion.",
+          "A typical tribe of hobgoblins will have {@dice 2d100} adult male warriors.",
+          "- For every 20 male hobgoblins there will be 1 hobgoblin sergeant + 2 hobgoblin assistants with 20 hit points each.",
+          "- Groups numbering over 100 are led by a {@creature hobgoblin sub-chief|AGGMM}. ",
+          "- If the hobgoblins are encountered in their lair, they will be led by a {@creature hobgoblin chief|AGGMM}. The chief has {@dice 5d4} hobgoblin sub-chiefs acting as bodyguards.",
+          "If the hobgoblins are encountered in a legion, there will be {@dice 10d100} of them, led by a {@creature hobgoblin captain|AGGMM} or a {@creature hobgoblin warlord|AGGMM} if the legion numbers more than 5,000 soldiers.",
+          "Each tribe has a distinctive battle standard which is carried into combat to inspire the troops. If the tribal chief is leading the battle, he will carry the standard with him, otherwise it will be held by one of his sub-chiefs.",
+          "In addition to the warriors present in a hobgoblin tribe, there will be half again that many females and three times as many children as adult males.",
+          "Fully 80% of all known hobgoblin lairs are subterranean complexes. The remaining 20% are surface villages which are fortified with a ditch, fence, at least two gates, and {@dice 1d4+2} guard towers. Villages are often built upon ruined humanoid settlements and may incorporate defensive features already present in the ruins.",
+          "Hobgoblin villages possess artillery in the form of 2 heavy catapults, 2 light catapults, and 1 ballista for each 50 warriors.",
+          "ECOLOGY",
+          "Hobgoblins feel superior to goblins or orcs and may act as leaders for them. In such cases, the “lesser races” are used as battle fodder. Hobgoblin mercenaries may work for powerful or rich evil humanoids."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ho Masubi, Japanese Avatar",
+      "size": "L",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "avatar"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual2",
+      "alignment": [
+        "C",
+        "N"
+      ],
+      "ac": [
+        22
+      ],
+      "hp": {
+        "formula": "24d10 + 96",
+        "average": 228
+      },
+      "speed": {
+        "walk": 90
+      },
+      "str": 19,
+      "dex": 18,
+      "con": 18,
+      "int": 18,
+      "wis": 19,
+      "cha": 18,
+      "passive": 14,
+      "cr": "15",
+      "shortName": "Ho Masubi, Japanese Avatar",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "All"
+      ],
+      "skill": {
+        "acrobatics": "+4",
+        "animal handling": "+4",
+        "arcana": "+4",
+        "athletics": "+4",
+        "deception": "+4",
+        "history": "+4",
+        "insight": "+4",
+        "intimidation": "+4",
+        "investigation": "+4",
+        "medicine": "+4",
+        "nature": "+4",
+        "perception": "+4",
+        "performance": "+4",
+        "persuasion": "+4",
+        "religion": "+4",
+        "sleight of hand": "+4",
+        "stealth": "+4",
+        "survival": "+4"
+      },
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "Inari'savatar makes three attacks with his Sword of Fire +3."
+          ]
+        },
+        {
+          "name": "Sword of Fire +3",
+          "entries": [
+            "{@atk ms} {@hit 15} to hit, reach 5 ft., one target. {@h}15 ({@damage 1d10 + 10}) slashing damage, plus 11 ({@damage 2d10}) fire damage. When someone is hit, their armor must roll a {@dc 20} against magical fire or be destroyed. Any being touching the avatar with bare hands suffers {@damage 2d10} fire damage."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "S",
+        "F"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Ho Masubi, Japanese Avatar|https://angrygolem-games.com/monster-manual/letter-h/ho-masubi-japanese-avatar/}",
+          "DESCRIPTION",
+          "Ho Masubi's avatar is a large man with red hair and yellow and orange skin. He is often found riding a huge boar.",
+          "{@link God & Clergy (go to page)|https://angrygolem-games.com/monster-manual/letter-h/ho-masubi-japanese-avatar/}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Homunculus",
+      "size": "T",
+      "type": "construct",
+      "source": "AngryGolemGamesMonsterManual2",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 13,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "2d4",
+        "average": 5
+      },
+      "speed": {
+        "walk": 20,
+        "fly": 40,
+        "canHover": false
+      },
+      "str": 4,
+      "dex": 15,
+      "con": 11,
+      "int": 10,
+      "wis": 10,
+      "cha": 7,
+      "passive": 10,
+      "cr": "0",
+      "shortName": "Homunculus",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "Understands the languages of its creator but can't speak"
+      ],
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "charmed",
+        "poisoned"
+      ],
+      "trait": [
+        {
+          "name": "Telepathic Bond",
+          "entries": [
+            "While the homunculus is on the same plane of existence as its master, it can magically convey what it senses to its master, and the two can communicate telepathically."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}1 ({@damage 1d1}) piercing damage. The target must succeed on a dc 10 constitution saving throw or be {@condition poisoned} for 1 minute. If the saving throw fails by 5 or more, the target is instead {@condition poisoned} for 5 ({@dice 1d10}) minutes and {@condition unconscious} while {@condition poisoned} in this way"
+          ]
+        }
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "conditionInflict": [
+        "poisoned",
+        "unconscious"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Homunculus|https://angrygolem-games.com/monster-manual/letter-h/homunculus-5e-stats/}",
+          "DESCRIPTION",
+          "Homunculi are small mystical beings created by magicians for spying and other special tasks.",
+          "The average homunculus is vaguely humanoid in form. It is 18 inches tall and its greenish, reptilian skin may have spots or warts. They have leathery, bat-like wings with a span of 24 inches and a mouth filled with long, pointed teeth that can inject a potent sleeping venom.",
+          "HABITAT / SOCIETY",
+          "Homonculi are artificial creatures created by wizards as living tools. The process by which one is created is long, complicated, and expensive. Any wizard who desires a homunculus servant must first locate and hire an alchemist. The wizard must provide one pint of his own blood and 1d4×500 gold pieces. The blood becomes the basis for the creature's body while the money pays for a variety of other supplies and the alchemist's time.",
+          "The alchemist requires 1d4 weeks to transform the blood into the necessary magical base. The wizard is then sent for and required to cast mending, mirror image, and arcane eye spells upon the fluids. As the last of these spells is worked, the fluids spontaneously coagulate and form the body of the homonculous.",
+          "The homunculus is telepathically linked to its creator. It knows everything that its master knows and transmits everything it sees and hears to him. The homonculous will never willingly travel beyond the limits of contact with its master, though it can be removed from that region by force. As soon as it loses contact with its master, the creature panics and will do anything to regain contact. Contact between the two cannot be maintained across planar or dimensional barriers. If either the creator or homunculus is on another plane, the homunculus will remain near the point where it was last in contact with its master.",
+          "Homunculi are a reflection of their creator. They have the creator's alignment, basic intelligence, and even physical mannerisms. They are mute but can write if the creator is literate. They may assist their creator in a variety of tasks including magical endeavors, although they cannot themselves cast spells.",
+          "Homunculi lairs are in the homes of their creators. Indulgent wizards may provide a specially built bed, nest, or living chamber. Otherwise, the homonculous simply perches wherever it can.",
+          "ECOLOGY",
+          "Homunculi are nothing more than tools. They have no place in the natural world and are not part of any ecological system. They provide the wizard who created them with a variety of useful services.",
+          "Commonly, a homunculus is called upon to act as a spy, scout, messenger, or emissary. Because of the potential harm which the death of a homonculous inflicts on its master, they are seldom employed as body guards or living weapons.",
+          "Although they are magical creations, homunculi possess the same biological functions as non-magical creatures. They must rest and require food and drink in order to survive. When eating, they share the tastes of their masters and generally consume about as much as a typical cat.",
+          "There are rumors of magical means by which non-wizards can acquire their own form of homunculus. Although these are not widely believed to be valid, there are those who report having seen the process or its results first hand. If such a procedure exists, it would be quite valuable to its discoverer."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hook Horror",
+      "size": "L",
+      "type": "monstrosity",
+      "source": "AngryGolemGamesMonsterManual2",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 15,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "10d10 + 20",
+        "average": 75
+      },
+      "speed": {
+        "walk": 30,
+        "climb": 30
+      },
+      "str": 18,
+      "dex": 10,
+      "con": 15,
+      "int": 6,
+      "wis": 12,
+      "cha": 7,
+      "passive": 13,
+      "cr": "3",
+      "shortName": "Hook Horror",
+      "senses": [
+        "blindsight 60 ft.",
+        "darkvision 120 ft."
+      ],
+      "senseTags": [
+        "B",
+        "SD"
+      ],
+      "languages": [
+        "Hook Horror"
+      ],
+      "languageTags": [
+        "OTH"
+      ],
+      "skill": {
+        "perception": "+3"
+      },
+      "trait": [
+        {
+          "name": "Echolocation",
+          "entries": [
+            "The hook horror can't use its blindsight while {@condition deafened}."
+          ]
+        },
+        {
+          "name": "Keen Hearing",
+          "entries": [
+            "The hook horror has advantage on Wisdom (Perception) checks that rely on hearing."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Keen Senses"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The hook horror makes two hook attacks."
+          ]
+        },
+        {
+          "name": "Hook",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Hook Horror|https://angrygolem-games.com/monster-manual/letter-h/hook-horror-5e-stats/}",
+          "DESCRIPTION",
+          "The hook horror is a bipedal, underground-dwelling monster that looks like a cross between a vulture and a man with hooks instead of hands.",
+          "The hook horror stands about nine feet tall and weighs almost 350 pounds. It has a tough, mottled grey exoskeleton, like that of an insect. Its front limbs end in 12-inch-long hooks. Its legs end in feet that have three small hooks, like long, sharp toes. Its head is shaped like that of a vulture, including the hooked beak. Its eyes are multifaceted. It is thought that the hook horror is distantly related to the cockroach or cave cricket.",
+          "Hook horrors do not have a smell to humans and demihumans, but an animal would detect a dry musty odor. They communicate in a series of clicks and clacks made by the exoskeleton at their throats. In a cave, this eerie sound can echo a long way. They can use this to estimate cavern sizes and distances, much like the sonic radar of a bat.",
+          "HABITAT / SOCIETY",
+          "The obvious penalty for having hooks instead of hands is that hook horrors cannot use weapons or tools. They can only pick up items in their beaks. This severely restricts their ability to amass large treasures.",
+          "A clan of hook horrors most often lives in caves and underground warrens. The entrance is usually up a vertical or steeply sloped rock wall. Each family unit in the clan has its own small cavern off a central cave area. The clan's eggs are kept in the safest, most defensible place. The clan is ruled by the eldest female, who never participates in combat. The eldest male, frequently the mate of the clan ruler, takes charge of all hunting or other combat situations and is considered the war chieftain.",
+          "Members of a clan rarely fight each other. They may quarrel or not cooperate, but they rarely come to blows. Clans sometimes fight each other, but only when there is a bone of contention, such as territorial disputes. It is rare for a clan of hook horrors to want to rule large areas or to conquer other clans.",
+          "Hook horrors have poor relationships with other races. Although they do not foolishly attack strong parties, generally other creatures are considered to be meat. They retreat when faced with a stronger group. Hook horrors do not recognize indebtedness or gratitude. Their simple language does not even have a term for these concepts. Just because a player character saves the life of a hook horror does not mean that it will feel grateful and return the favor.",
+          "ECOLOGY",
+          "Although hook horrors are basically omnivores, they prefer meat. They can eat just about any cave-dwelling fungus, plants, lichens, or animals. Hook horrors are well acclimated to cave life. They have few natural predators, although anything that managed to catch one would try to eat it. The hook horror's exoskeleton dries and becomes too brittle for use after a month or so."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Horned Devil (Malebranche)",
+      "size": "L",
+      "type": {
+        "type": "fiend",
+        "tags": [
+          "devil"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual2",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 18,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "17d10 + 85",
+        "average": 178
+      },
+      "speed": {
+        "walk": 20,
+        "fly": 60,
+        "canHover": false
+      },
+      "str": 22,
+      "dex": 17,
+      "con": 21,
+      "int": 12,
+      "wis": 16,
+      "cha": 17,
+      "passive": 13,
+      "cr": "11",
+      "shortName": "Horned Devil (Malebranche)",
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "senseTags": [
+        "SD"
+      ],
+      "languages": [
+        "Infernal",
+        "telepathy 120 ft."
+      ],
+      "languageTags": [
+        "I",
+        "TP"
+      ],
+      "save": {
+        "str": "+10",
+        "dex": "+7",
+        "wis": "+7",
+        "cha": "+7"
+      },
+      "resist": [
+        {
+          "resist": [
+            "cold"
+          ]
+        },
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks not made with silvered weapons"
+        }
+      ],
+      "immune": [
+        "fire",
+        "poison"
+      ],
+      "conditionImmune": [
+        "poisoned"
+      ],
+      "trait": [
+        {
+          "name": "Devil's Sight",
+          "entries": [
+            "Magical darkness doesn't impede the devil's darkvision."
+          ]
+        },
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The devil has advantage on saving throws against spells and other magical effects."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Magic Resistance"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The devil makes three melee attacks: two with its fork and one with its tail. It can use Hurl Flame in place of any melee attack."
+          ]
+        },
+        {
+          "name": "Fork",
+          "entries": [
+            "{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d8 + 6}) piercing damage."
+          ]
+        },
+        {
+          "name": "Tail",
+          "entries": [
+            "{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}10 ({@damage 1d8 + 6}) piercing damage. If the target is a creature other than an undead or a construct, it must succeed on a {@dc 17} Constitution saving throw or lose 10 ({@dice 3d6}) hit points at the start of each of its turns due to an infernal wound. Each time the devil hits the wounded target with this attack, the damage dealt by the wound increases by 10 ({@dice 3d6}). Any creature can take an action to stanch the wound with a successful {@dc 12} Wisdom (Medicine) check. The wound also closes if the target receives magical healing."
+          ]
+        },
+        {
+          "name": "Hurl Flame",
+          "entries": [
+            "{@atk rs} {@hit 7} to hit, range 150 ft., one target. {@h}14 ({@damage 4d6}) fire damage. If the target is a flammable object that isn't being worn or carried, it also catches fire."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P",
+        "F"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Horned Devil (Malebranche)|https://angrygolem-games.com/monster-manual/letter-h/horned-devil-or-malebranche-5e-stats/}",
+          "DESCRIPTION",
+          "Malebranche are elite defense forces. They look frightening: 9 feet tall, only vaguely humanoid, and covered with grotesque scales. Their huge wings and snaking, prehensile tail add to their intimidating demeanor. In combat they favor a fork or a long barbed whip.",
+          "HABITAT / SOCIETY",
+          "Malebranche, the elite fighting force in Baator, form terrifying armies up to 2,000 strong. Only pit fiends may lead these hideous fighting forces into battle. Pit fiends and gelugons prize malebranche as personal guardians and try to obtain them as personal retainers. The Dark Eight have 106 malebranche in their retinue.",
+          "Malebranche armies usually form only in the lowest layers of Baator. In the upper layers, individual malebranche serve as generals to vast armies of lesser baatezu. This duty is desirable for its rapid advancement, second only to guardian duty among the Dark Eight.",
+          "ECOLOGY",
+          "The malebranche are greater baatezu, and as such enjoy a certain prestige. Of all the baatezu, the cornugons and {@creature hamatula|AGGMM} advance most rapidly.",
+          "With several successful campaigns to their credit, heroic malebranche receive promotions to the upper layer of Baator, where they command vast, gruesome legions of baatezu. From there, distinguished action leads to promotion to gelugons, the ruthless inhabitants of the frigid layer of Cania.",
+          "Although powerful and cunning, the malebranche display treachery in their ranks least often of all baatezu, due to their militaristic nature. Their loyalty makes them an unusual asset. It is said that the 106 malebranche that guard the Dark Eight are completely loyal and would give their lives in defense of the council, behavior nearly unheard of in Baator. Whether this is due to genuine loyalty or fear of the pit fiends is unknown, but seldom in the history of the Dark Eight has a malebranche guardian displayed traitorous behavior."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Horus, Egyptian Avatar",
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "avatar"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual2",
+      "alignment": [
+        "C",
+        "G"
+      ],
+      "ac": [
+        23
+      ],
+      "hp": {
+        "formula": "28d10 + 196",
+        "average": 350
+      },
+      "speed": {
+        "walk": 15
+      },
+      "str": 25,
+      "dex": 25,
+      "con": 25,
+      "int": 20,
+      "wis": 20,
+      "cha": 18,
+      "passive": 14,
+      "cr": "15",
+      "shortName": "Horus, Egyptian Avatar",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "All"
+      ],
+      "skill": {
+        "acrobatics": "+4",
+        "animal handling": "+4",
+        "arcana": "+4",
+        "athletics": "+4",
+        "deception": "+4",
+        "history": "+4",
+        "insight": "+4",
+        "intimidation": "+4",
+        "investigation": "+4",
+        "medicine": "+4",
+        "nature": "+4",
+        "perception": "+4",
+        "performance": "+4",
+        "persuasion": "+4",
+        "religion": "+4",
+        "sleight of hand": "+4",
+        "stealth": "+4",
+        "survival": "+4"
+      },
+      "trait": [
+        {
+          "name": "Son of the Sun",
+          "entries": [
+            "Horus can employ a {@spell sunbeam|PHB|sunray} or {@spell fire storm} spell at will (once per round)."
+          ]
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "He can call upon any sphere for his spells."
+          ],
+          "type": "spellcasting"
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "Horus's avatar makes three attacks with his Long Sword of Horus +5."
+          ]
+        },
+        {
+          "name": "Long Sword +5",
+          "entries": [
+            "{@atk ms} {@hit 25} to hit, reach 5 ft., one target. {@h}30 ({@damage 2d10 + 19}) slashing damage, or 32 ({@damage 2d12 + 19}) slashing damage if used with both hands. This magical weapon acts as a sword +5, {@item holy avenger}, but also has the special abilities of a  {@item luck blade},  {@item defender}, and  {@item vorpal sword}."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "S"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Horus, Egyptian Avatar|https://angrygolem-games.com/monster-manual/letter-h/horus-egyptians-avata}",
+          "DESCRIPTION",
+          "The avatar of Horus is a dedicated foe of evil. He is merciless and relentless in his war against the forces of Set. He abhors all forms of deceit and treachery, and nothing will stand in his way when he is attempting to right a wrong or slay a traitor.",
+          "{@link God & Clergy (go to page)|https://angrygolem-games.com/monster-manual/letter-h/horus-god-and-clerics-for-dd-5e/}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Howler",
+      "size": "L",
+      "type": "fiend",
+      "source": "AngryGolemGamesMonsterManual2",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 16,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "12d10 + 24",
+        "average": 90
+      },
+      "speed": {
+        "walk": 40
+      },
+      "str": 17,
+      "dex": 16,
+      "con": 15,
+      "int": 5,
+      "wis": 20,
+      "cha": 6,
+      "passive": 18,
+      "cr": "8",
+      "shortName": "Howler",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "Understands Abyssal but can't speak"
+      ],
+      "languageTags": [
+        "AB"
+      ],
+      "skill": {
+        "perception": "+8"
+      },
+      "resist": [
+        {
+          "resist": [
+            "cold",
+            "fire",
+            "lightning"
+          ]
+        },
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks"
+        }
+      ],
+      "conditionImmune": [
+        "frightened"
+      ],
+      "trait": [
+        {
+          "name": "Pack Tactics",
+          "entries": [
+            "A howler has advantage on attack rolls against a creature if at least one of the howler's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Pack Tactics"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The howler makes two bite attacks."
+          ]
+        },
+        {
+          "name": "Rending Bite",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) piercing damage, plus 22 ({@damage 4d10}) psychic damage. If the target is {@condition frightened}. This attack ignores damage resistance."
+          ]
+        },
+        {
+          "name": "Mind-Breaking Howl {@recharge}",
+          "entries": [
+            "The howler emits a keening howl in a 60-foot cone. Each creature in that area that isn't {@condition deafened} must succeed on a {@dc 16} Wisdom saving throw or be {@condition frightened} until the end of the howler's next turn. While a creature is {@condition frightened} in this way, its speed is halved, and it is in capacitated. A target that successfully saves is immune to the Mind-Breaking Howl of all howlers for the next 24 hours."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P",
+        "Y"
+      ],
+      "miscTags": [
+        "MW",
+        "AOE"
+      ],
+      "conditionInflict": [
+        "frightened"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Howler|https://angrygolem-games.com/monster-manual/letter-h/howler-5e-stats/}",
+          "DESCRIPTION",
+          "Howlers are the keening brood-hounds or Pandemonium, the singers of dementia who cluster around the great rocky spires in those plunging caves. In that eternally night-lit plane the howlers are drawn to shriek their madness to the moonless heavens",
+          "The howlers are gigantic beasts, four-legged, with the burly backs of oxen and scales glinting through their matted red fur. This fur spreads into a thick ruff of trembling quills that frame their simian faces. Their front claws are the clotted knots of coarse fingers too long crnshed under the beastly weight, their back feet are hooved. When they cry, they rock back until they almost stand and throw their muzzled faces toward the missing sky. Lips pursed into a perfect O, they howl the voices of madness.",
+          "HABITAT / SOCIETY",
+          "Howlers are beasts native to the tunnels of Pandemonium and are not naturally found on any other plane. Even within Pandemonium they aren't found everywhere. They stay far from the settled regions and the small tunnels, preferring the larger curved passages that pass for plains and grassland. On these plains they hunt in packs; for they are carnivorous scavengers.",
+          "There is no hard and fast size for a howler pack, as is the way of the animal kingdom. Packs range from 2 to as many as 20 members. This number includes bulls, females, and kits. (Of a pack, it is the bulls who defend the others, hence the small number met in a normal encounter) The packs scour the land. searching for anything edible. As news of their migrations travels through the tunnels, other dwellers in Pandemonium brace themselves for the agony that is sure to come.",
+          "Howlers are aptly named, for their howls cut through the whistling wind with the pitch of madness. Their cries have the same effects as the winds of Pandemonium, gradually driving those who hear them to insanity. Whenever a howler lets loose its cry, all within hearing distance, whether indoor or out, must make a check as if they were exposed to Pandemonium's winds. A howler's cry lacks the full strength of the winds their keening pitch can never push a chancier beyond Stage 3 (Hysteria). Characters who have already reached Resignation exhibit all their tics and twitches when the howlers sing. Even on other planes, a howler's effect travels with it.",
+          "It is fortunate that howlers don't bay all the time. In that regard they are more like common dogs. They howl and keen occasionally, when the circumstances are right. As pack animals, they howl when they are lonely kept in the stable apart from their masters, for example. They howl during the rutting season and when their territory is challenged. They howl when cornered. The DM has final say over when the beasts bay to the blackness.",
+          "ECOLOGY",
+          "Howlers would be just another bane of Pandemonium were it not for those in the tunnels who can capture and tame the beasts to be good riding and pack mounts. A howler has the carrying capacity of a draft horse, and is far better adapted to traveling the twisted tunnels than a simple horse.",
+          "Some wizards claim the howlers sing secrets of the planes, a code concealed in their pitch and their keening. Others think the wizards have been howled mad by their studies."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hunter Shark",
+      "size": "L",
+      "type": {
+        "type": "beast",
+        "tags": [
+          "animal"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual2",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        {
+          "ac": 12,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "6d10 + 12",
+        "average": 45
+      },
+      "speed": {
+        "walk": 0,
+        "swim": {
+          "number": 40,
+          "condition": "(suggested swim 80 ft.)"
+        }
+      },
+      "str": 18,
+      "dex": 13,
+      "con": 15,
+      "int": 1,
+      "wis": 10,
+      "cha": 4,
+      "passive": 12,
+      "cr": "2",
+      "shortName": "Hunter Shark",
+      "senses": [
+        "blindsight 30 ft."
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "skill": {
+        "perception": "+2"
+      },
+      "trait": [
+        {
+          "name": "Blood Frenzy",
+          "entries": [
+            "The shark has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+          ]
+        },
+        {
+          "name": "Water Breathing",
+          "entries": [
+            "The shark can breathe only underwater."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Water Breathing"
+      ],
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) piercing damage."
+          ]
+        },
+        {
+          "name": "Bite (suggested)",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 3d4 + 4}) piercing damage."
+          ]
+        }
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Hunter Shark|https://angrygolem-games.com/monster-manual/letter-h/hunter-shark-5e-stats/}",
+          "{@link 5th Edition Advanced Mode|https://www.drivethrurpg.com/product/382784/5th-ADVANCED-MODE?affiliate_id=1465812&src=HunterShark}",
+          "Limiting the power of a character and making the overall difficulty of the game harder, does not reduce the creativity, indeed it does quite the opposite.",
+          "The Game Master has the option to use any and all of the instances proposed in this guide, or just some of them according to their preference.",
+          "It is the lack of something that move and motivate characters, not the abundance of it",
+          "DESCRIPTION",
+          "Sharks are large, finned, voracious carnivores that inhabit all known oceans and seas. They are perhaps the most aggressive eating machines found in the murky deeps.",
+          "COMBAT",
+          "Sharks sense pressure changes underwater, most often caused by noises from other creatures. Thrashing about in the water always attracts sharks, since usually only wounded fish behave like that. Sharks can sense these motions from up to a mile away and once one shark discovers prey, more are soon to follow. Sharks also attack mercilessly at the scent of blood, which they can likewise detect at distances of a mile or more.",
+          "When a number of sharks gather around a bleeding victim, the scent of the blood and the thrill of the kill send all sharks into a feeding frenzy. Nothing escapes from such an attack, not even some sharks. Sharks eat anything living, even each other, during a feeding frenzy. Since sharks move up, take a bite of flesh, and retreat very quickly, up to four large-sized sharks can attack a man-sized opponent in the water every round.",
+          "HABITAT / SOCIETY",
+          "Sharks are pure eating and killing machines, evolving quite naturally into superior predators, and then remaining unchanged for millions of years. They are primarily scavengers, preying on the sick and wounded, but attack fresh meat if tempted to do so. They are very territorial and solitary.",
+          "The only friends the sharks have are the {@creature sahuagin|AGGMM}, who appreciate the predators for their bloody, ruthless, and efficient natures. They often use sharks as guardians, mounts, sacrifices, and personal pets. The king of all sahuagin is rumored to possess a megalodon shark of largest size, which he apparently feeds quite often. Sahuagin priestesses offer all of their sacrifices to pure white great white sharks of largest size, that are often decorated in collars of gold and silver.",
+          "Sahuagin are the only known race to have successfully trained sharks as mounts and the process is secret. What is known is that a shark and its rider can both attack the same enemy with startling agility, making the combination one of the most fearsome in the deeps. The harness used to mount a sahuagin warrior on the back of a shark is apparently made of a special kind of seaweed, unknown to those of the surface world.",
+          "ECOLOGY",
+          "Sharks have only two natural weaknesses. The first one is that their internal organs are only poorly protected by a thick, flexible layer of gristle instead of a hard skeleton. Some creatures, such as dolphins, take advantage of this by ramming sharks from the side. Because of their highly intelligent nature, dolphins are the only true enemies of sharks. They are the only known species that actively hunts down and kills these otherwise greatly feared and respected monsters.",
+          "Sharks are also forced to continuously move through the water in order to force sufficient volumes of oxygen-rich water past their primitive gills. Therefore, a shark that is held immobile for {@dice 1d4+1} hours will die of suffocation."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hydra",
+      "size": "H",
+      "type": "monstrosity",
+      "source": "AngryGolemGamesMonsterManual2",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        {
+          "ac": 15,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "15d12 + 75",
+        "average": 172
+      },
+      "speed": {
+        "walk": 30,
+        "swim": 30
+      },
+      "str": 20,
+      "dex": 12,
+      "con": 20,
+      "int": 2,
+      "wis": 10,
+      "cha": 7,
+      "passive": 16,
+      "cr": "8",
+      "shortName": "Hydra",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "skill": {
+        "perception": "+6"
+      },
+      "trait": [
+        {
+          "name": "Hold Breath",
+          "entries": [
+            "The hydra can hold its breath for 1 hour."
+          ]
+        },
+        {
+          "name": "Multiple Heads",
+          "entries": [
+            "The hydra has five heads. While it has more than one head, the hydra has advantage on saving throws against being {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned}, and knocked {@condition unconscious}.",
+            "Whenever the hydra takes 25 or more damage in a single turn, one of its heads dies. If all its heads die, the hydra dies.",
+            "At the end of its turn, it grows two heads for each of its heads that died since its last turn, unless it has taken fire damage since its last turn. The hydra regains 10 hit points for each head regrown in this way."
+          ]
+        },
+        {
+          "name": "Reactive Heads",
+          "entries": [
+            "For each head the hydra has beyond one, it gets an extra reaction that can be used only for opportunity attacks."
+          ]
+        },
+        {
+          "name": "Wakeful",
+          "entries": [
+            "While the hydra sleeps, at least one of its heads is awake."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Hold Breath"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The hydra makes as many bite attacks as it has heads."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}10 ({@damage 1d10 + 5}) piercing damage."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Hydra|https://angrygolem-games.com/monster-manual/letter-h/hydra/}",
+          "{@link HYDRA's TACTICS (read the article)|https://angrygolem-games.com/monster-tactics-fight-like-a-hydra/}",
+          "DESCRIPTION",
+          "Hydrae are immense reptilian monsters with multiple heads. For each Hit Die the hydra has, it will have one head. The chart above lists the THAC0 value for hydrae, the number of heads and the damage that they inflict each time they bite.",
+          "Hydrae are gray-brown to dark brown, with light yellow or tan underbellies. Their eyes are amber and their teeth are yellow-white.",
+          "HABITAT / SOCIETY",
+          "Hydrae are solitary creatures who prefer dismal surroundings. They gather only to mate.",
+          "ECOLOGY",
+          "Despite the hydra's size and multiple attacks, they are often preyed upon by dragons. They are impossible to train."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hydroloth",
+      "size": "M",
+      "type": {
+        "type": "fiend",
+        "tags": [
+          "yugoloth"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual2",
+      "alignment": [
+        "N",
+        "E"
+      ],
+      "ac": [
+        15
+      ],
+      "hp": {
+        "formula": "18d8 + 54",
+        "average": 135
+      },
+      "speed": {
+        "walk": 20,
+        "swim": 40
+      },
+      "str": 12,
+      "dex": 21,
+      "con": 16,
+      "int": 19,
+      "wis": 10,
+      "cha": 14,
+      "passive": 14,
+      "cr": "9",
+      "shortName": "Hydroloth",
+      "senses": [
+        "blindsight 60 ft.",
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "B",
+        "D"
+      ],
+      "languages": [
+        "Abyssal",
+        "Infernal",
+        "telepathy 60 ft."
+      ],
+      "languageTags": [
+        "AB",
+        "I",
+        "TP"
+      ],
+      "skill": {
+        "insight": "+4",
+        "perception": "+4"
+      },
+      "vulnerable": [
+        "fire"
+      ],
+      "resist": [
+        {
+          "resist": [
+            "cold",
+            "lightning"
+          ]
+        },
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks"
+        }
+      ],
+      "immune": [
+        "acid",
+        "poison"
+      ],
+      "conditionImmune": [
+        "poisoned"
+      ],
+      "trait": [
+        {
+          "name": "Amphibious",
+          "entries": [
+            "The hydroloth can breathe air and water."
+          ]
+        },
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The hydroloth has advantage on saving throws against spells and other magical effects."
+          ]
+        },
+        {
+          "name": "Magic Weapons",
+          "entries": [
+            "The hydroloth's weapon attacks are magical."
+          ]
+        },
+        {
+          "name": "Secure Memory",
+          "entries": [
+            "The ydrolothis immune to the water of the River Styx as well as any effect that would steal or modify its memories or detect or read its thoughts."
+          ]
+        },
+        {
+          "name": "Watery Advantage",
+          "entries": [
+            "While submerged in liquid, the hydroloth has advantage on attack rolls."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Amphibious",
+        "Magic Resistance",
+        "Magic Weapons"
+      ],
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasting",
+          "headerEntries": [
+            "The hydroloth's innate spellcasting ability is Intelligence (spell save {@dc 16}). It can innately cast the following spells, requiring no material components:"
+          ],
+          "will": [
+            "{@spell darkness}",
+            "{@spell detect magic}",
+            "{@spell dispel magic}",
+            "{@spell invisibility} (self only)",
+            "{@spell water walk}"
+          ],
+          "daily": {
+            "3e": [
+              "{@spell control water}",
+              "{@spell crown of madness}",
+              "{@spell fear}",
+              "{@spell phantasmal killer}",
+              "{@spell suggestion}"
+            ]
+          },
+          "ability": "int",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "I"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The hydroloth makes two melee attacks. In place of one of these attacks, it can cast one spell that takes 1 action to cast."
+          ]
+        },
+        {
+          "name": "Claws",
+          "entries": [
+            "{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) slashing damage."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d10 + 5}) piercing damage."
+          ]
+        },
+        {
+          "name": "Steal Memory (1/Day)",
+          "entries": [
+            "The hydroloth targets one creature it can see within 60 feet of it. The target takes {@damage 4d6} psychic damage, and it must make a {@dc 16} Intelligence saving throw. On a successful save, the target becomes immune to this hydroloth's Steal Memory for 24 hours. On a failed save, the target loses all proficiencies, it can't cast spells, it can't understand language, and if its Intelligence and Charisma scores are higher than 5, they drop to 5. Each time the target finishes a long rest, it can repeat the saving throw, ending the effect on itself on a success. A {@spell greater restoration} or {@spell remove curse} spell cast on the target ends this effect early."
+          ]
+        },
+        {
+          "name": "Teleport",
+          "entries": [
+            "The hydroloth magically teleports, a long with any equipment it is wea ring or carrying, up to 60 feet to an unoccupied space it can see."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack",
+        "Teleport"
+      ],
+      "damageTags": [
+        "S",
+        "P",
+        "Y"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Hydroloth|https://angrygolem-games.com/monster-manual/letter-h/hydroloth-5e-stats/}",
+          "DESCRIPTION",
+          "Hydroloths are elite fighting forces commonly used in yugoloth ambushes or amphibian attacks. They are squat humanoids with underarm gliding flaps, frog-like faces, and warty yellow skin.",
+          "These grotesque amphibians can swim the river Styx without losing their memories. They travel in groups of 10 or more wherever Styx enters the Lower Planes.",
+          "Hydroloths communicate using telepathy.",
+          "HABITAT / SOCIETY",
+          "Hydroloths prefer to dwell in water, fire, or lava but can be found anywhere. The yugoloth community respects them for their role in amphibious and underwater warfare especially in covert and guerrilla attacks.",
+          "Hydroloths use their prestige among their betters to gain power and influence: extra wealth, or a share of the mortal life forces paid for the job they do. Greater yugoloths have the strength to force the hydroloths' obedience, but they wisely appease these creatures' demands.",
+          "ECOLOGY",
+          "Few yugoloths are motivated like the hydroloths. These monsters delight in fighting the Blood War and draw strength from the terror they inflict on mortals.",
+          "Several internal organs of hydroloths make excellent spell components and alchemical mixtures for potions. A live hydroloth, though extremely difficult to capture, might bring 2,500 gp on some parts of the Prime Material Plane or even (perhaps) in Sigil. A dead one, though not as valuable, still fetches upwards of 1,000 gp."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
     }
   ]
 }
