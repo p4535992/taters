@@ -16625,6 +16625,988 @@
           }
         ]
       }
+    },
+    {
+      "name": "Mictlantecuhtli, Aztec Avatar",
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "avatar"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual2",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        22
+      ],
+      "hp": {
+        "formula": "20d10 + 100",
+        "average": 210
+      },
+      "speed": {
+        "walk": 90
+      },
+      "str": 18,
+      "dex": 18,
+      "con": 20,
+      "int": 18,
+      "wis": 18,
+      "cha": 20,
+      "passive": 14,
+      "cr": "15",
+      "shortName": "Mictlantecuhtli, Aztec Avatar",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "All"
+      ],
+      "skill": {
+        "acrobatics": "+4",
+        "animal handling": "+4",
+        "arcana": "+4",
+        "athletics": "+4",
+        "deception": "+4",
+        "history": "+4",
+        "insight": "+4",
+        "intimidation": "+4",
+        "investigation": "+4",
+        "medicine": "+4",
+        "nature": "+4",
+        "perception": "+4",
+        "performance": "+4",
+        "persuasion": "+4",
+        "religion": "+4",
+        "sleight of hand": "+4",
+        "stealth": "+4",
+        "survival": "+4"
+      },
+      "trait": [
+        {
+          "name": "Gaze",
+          "entries": [
+            "Anyone looking upon the avatar’s face for the first time must roll a {@dc 20} wisdom saving throw or remain motionless for 1d1O rounds."
+          ]
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "He has access to the combat, divination, elemental. or necromantic spheres."
+          ],
+          "type": "spellcasting"
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "Mictlantecuhtli’s avatar makes two attack with his claws."
+          ]
+        },
+        {
+          "name": "Claws",
+          "entries": [
+            "{@atk ms} {@hit 15} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 5}) slashing damage."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "S"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Mictlantecuhtli, Aztec Avatar|https://angrygolem-games.com/monster-manual/letter-m/mictlantecuhtli-aztecs-avatar/}",
+          "DESCRIPTION",
+          "Mictlantecuhtli’s avatar resembles an emaciated human being with a skull-like head and bulging eyes.",
+          "{@link God & Clergy (go to page)|https://angrygolem-games.com/monster-manual/letter-m/mictlantecuhtli-god-and-clerics-for-dd-5e/}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Mindwitness",
+      "size": "L",
+      "type": "aberration",
+      "source": "AngryGolemGamesMonsterManual2",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 15,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "10d10 + 20",
+        "average": 75
+      },
+      "speed": {
+        "walk": 0,
+        "fly": {
+          "number": 20,
+          "condition": "(hover)"
+        },
+        "canHover": true
+      },
+      "str": 10,
+      "dex": 14,
+      "con": 14,
+      "int": 15,
+      "wis": 15,
+      "cha": 10,
+      "passive": 18,
+      "cr": "5",
+      "shortName": "Mindwitness",
+      "languages": [
+        "Deep Speech",
+        "Undercommon",
+        "telepathy 600 ft."
+      ],
+      "languageTags": [
+        "DS",
+        "U",
+        "TP"
+      ],
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "senseTags": [
+        "SD"
+      ],
+      "save": {
+        "int": "+5",
+        "wis": "+5"
+      },
+      "skill": {
+        "perception": "+8"
+      },
+      "trait": [
+        {
+          "name": "Telepathic Hub",
+          "entries": [
+            "When the mindwitness receives a telepathic message, it can telepathically share that message with up to seven other creatures within 600 feet of it that it can see."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The mindwitness makes two attacks: one with its tentacles and one with its bite."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}16 ({@damage 4d6 +2}) piercing damage."
+          ]
+        },
+        {
+          "name": "Tentacles",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}20 ({@damage 4d8 +2}) psychic damage. If the target is Large or smaller, it is {@condition grappled} (escape {@dc 13}) and must succeed on a {@dc 13} Intelligence saving throw or be {@condition stunned} until this grapple ends."
+          ]
+        },
+        {
+          "name": "Eye Rays",
+          "entries": [
+            "The mindwitness shoots three of the following magiccal eye rays at random (reroll duplicates), choosing one to three targets it can see within 120 feet of it:",
+            "{@b 1. Aversion Ray.} The targeted creature must make a {@dc 13} Charisma saving throw. On a failed save, the target has disadvantage on attack rolls for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+            "{@b 2. Fear Ray.} The targeted creature must succeed on a {@dc 13} Wisdom saving throw or be {@condition frightened} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+            "{@b 3. Psychic Ray.} The target must succeed on a {@dc 13} Intelligence saving throw or take 27 ({@damage 6d8}) psychic damage.",
+            "{@b 4. Slowing Ray.} The targeted creature must make a {@dc 13} Dexterity saving throw. On a failed save, the target’s speed is halved for 1 minute. In addition, the creature can’t take reactions, and it can take either an action or a bonus action on its turn but not both. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+            "{@b 5. Stunning Roy.} The targeted creature must succeed on a {@dc 13} Constitution saving throw or be {@condition stunned} for 1 minute. The target can repeat the saving throw at the start of each of its turns, ending the effect on itself on a success.",
+            "{@b 6. Telekinetic Ray.} If the target is a creature, it must make a {@dc 13} Strength saving throw. On a failed save, the mindwitness moves it up to 30 feet in any direction, and it is {@condition restrained} by the rays telekinetic grip until the start of the mindwitness’s next turn or until the mindwitness is {@condition incapacitated}. If the target is an object weighing 300 pounds or less that isn’t being worn or carried, it is telekinetically moved up to 30 feet in any direction. The mindwitness can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack",
+        "Tentacles"
+      ],
+      "damageTags": [
+        "P",
+        "Y"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "conditionInflict": [
+        "frightened",
+        "grappled",
+        "restrained",
+        "stunned"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Mindwitness|https://angrygolem-games.com/monster-manual/letter-m/mindwitness-5e-stats/}",
+          "DESCRIPTION",
+          "Meenlocks are deformed fey that invoke terror and seek to destroy all that is good, innocent, and beautiful. They primarily live in forests, although they adapt well to urban",
+          "and subterranean settings."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Mimic",
+      "size": "M",
+      "type": {
+        "type": "monstrosity",
+        "tags": [
+          "shapechanger"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual2",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 12,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "9d8 + 18",
+        "average": 58
+      },
+      "speed": {
+        "walk": 15
+      },
+      "str": 17,
+      "dex": 12,
+      "con": 15,
+      "int": 5,
+      "wis": 13,
+      "cha": 8,
+      "passive": 11,
+      "cr": "2",
+      "shortName": "Mimic",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "skill": {
+        "stealth": "+5"
+      },
+      "immune": [
+        "acid"
+      ],
+      "conditionImmune": [
+        "prone"
+      ],
+      "trait": [
+        {
+          "name": "Shapechanger",
+          "entries": [
+            "The mimic can use its action to polymorph into an object or back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn’t transformed. It reverts to its true form if it dies."
+          ]
+        },
+        {
+          "name": "Adhesive (Object Form Only)",
+          "entries": [
+            "The mimic adheres to anything that touches it. A Huge or smaller creature adhered to the mimic is also {@condition grappled} by it (escape {@dc 13}). Ability checks made to escape this grapple have disadvantage."
+          ]
+        },
+        {
+          "name": "False Appearance (Object Form Only)",
+          "entries": [
+            "While the mimic remains motionless, it is indistinguishable from an ordinary object."
+          ]
+        },
+        {
+          "name": "Grappler",
+          "entries": [
+            "The mimic has advantage on attack rolls against any creature {@condition grappled} by it."
+          ]
+        }
+      ],
+      "traitTags": [
+        "False Appearance",
+        "Shapechanger"
+      ],
+      "conditionInflict": [
+        "grappled"
+      ],
+      "action": [
+        {
+          "name": "Pseudopod",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) bludgeoning damage. If the mimic is in object form, the target is subjected to its Adhesive trait."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage, plus 4 ({@damage 1d8}) acid damage."
+          ]
+        }
+      ],
+      "damageTags": [
+        "B",
+        "P",
+        "A"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Mimic|https://angrygolem-games.com/monster-manual/letter-m/mimic-5e-stats/}",
+          "DESCRIPTION",
+          "Mimics are magically-created creatures with a hard rock-like outer shell that protects their soft inner organs. Mimics can alter their form and their pigmentation; they use this talent to lure victims into close range, where they attempt to feed on them. They usually appear in the form of treasure chests. There are two varieties, the smaller, more intelligent common mimic, and the larger, less intelligent killer mimic.",
+          "Mimics are large. Common mimics occupy about 150 cubic feet (a chest, or a large door frame). Killer mimics occupy about 200 cubic feet. Mimics’ natural color is a speckled grey that resembles granite. Mimics can alter their pigmentation to resemble varieties of stone (such as marble), wood grain, and various metals (gold, silver, copper); it takes one round to make the desired alteration. They cannot lose mass in this transformation (they must remain the same size, though they may radically alter their dimensions).",
+          "Common mimics have their own tongue (corruptions of the original language spoken by their wizard creators) and can also be taught to speak in common and other languages. Killer mimics are incapable of speech.",
+          "HABITAT / SOCIETY",
+          "Mimics live underground, where they can avoid sunlight. They are solitary creatures; this is to ensure that each mimic has a large grazing area. They have no culture; their primary concerns are survival and food. Common mimics are quite intelligent and will gladly offer information in exchange for food. Killer mimics attack regardless of attempts at communication. Mimics have no moral code and no interest in culture or religion. Wizards who use them as guardians have sometimes found them to be less than enthusiastic about obeying their commands.",
+          "ECOLOGY",
+          "Mimics were originally created by wizards to protect themselves from treasure hunters. A good meal (one or two humans) can sustain them for weeks. They reproduce by fission and grow to full size in several years. Mimics pose as stonework, doors, statues, stairs, chests, or other common items made from stone, wood, and metal. Their skin is covered with optical sensors that are sensitive to heat and light in a 90-foot radius, even in pitch darkness. Any powerful light source can easily blind them, including direct sunlight. Along with glue, they can excrete a liquid that smells like rotting meat; this attracts smaller, more common prey (usually rats). Mimic ichor is useful in the creation of polymorph self potions, and their glue and solvent sacs can be sold to alchemists. Other internal organs are useful in the manufacture of perfumes. The mimic’s internal organs are considered tasty delicacies in some cultures."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Mind Flayer",
+      "size": "M",
+      "type": {
+        "type": "aberration",
+        "tags": [
+          "mindflayer"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual2",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 15,
+          "from": [
+            "{@item breastplate|phb}"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "13d8 + 13",
+        "average": 71
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 11,
+      "dex": 12,
+      "con": 12,
+      "int": 19,
+      "wis": 17,
+      "cha": 17,
+      "passive": 16,
+      "cr": "7",
+      "shortName": "Mind Flayer",
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "senseTags": [
+        "SD"
+      ],
+      "languages": [
+        "Deep Speech",
+        "Undercommon",
+        "telepathy 120 ft."
+      ],
+      "languageTags": [
+        "DS",
+        "U",
+        "TP"
+      ],
+      "save": {
+        "int": "+7",
+        "wis": "+6",
+        "cha": "+6"
+      },
+      "skill": {
+        "arcana": "+7",
+        "deception": "+6",
+        "insight": "+6",
+        "perception": "+6",
+        "persuasion": "+6",
+        "stealth": "+4"
+      },
+      "trait": [
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The mind flayer has advantage on saving throws against spells and other magical effects."
+          ]
+        },
+        {
+          "name": "Psionic Powers",
+          "entries": [
+            "The Mind Flayer has 266 ({@dice 13d12 + 182}) PSPs and can use the following psionic powers, mental attacks and mental defenses:",
+            "{@b 1. Mental Attacks:} {@spell Ego Whip|UAFighterRogueWizard}, {@spell Id Insinuation|UAFighterRogueWizard}.",
+            "{@b 2. Mental Defenses:} {@spell Intellect Fortress|UAFighterRogueWizard}, {@spell Mental Barrier|UAFighterRogueWizard}, {@spell Mind Blank}, {@spell Thought Shield|UAFighterRogueWizard}, {@spell Tower of Iron Will|p4535992Spells}.",
+            "{@b 3. Psychokinesis} – {@b Sciences:} {@spell telekinesis}; {@b Devotions:} {@spell control body|p4535992Spells}, {@spell levitate}.",
+            "{@b 4. Psychometabolism} – {@b Science:} {@spell body equilibrium|p4535992Spells}; {@b Devotions:} {@spell nil|p4535992Spells}.",
+            "{@b 5. Psychoportation} – {@b Sciences:} {@spell probability travel|p4535992Spells}, {@spell teleport}; {@b Devotions:} {@spell astral projection}.",
+            "{@b 6. Telepathy} – {@b Sciences:} {@spell domination|p4535992Spells}, {@spell mind link|p4535992Spells};  {@b Devotions:} {@spell awe|p4535992Spells}, {@spell contact|p4535992Spells}, {@spell ESP|p4535992Spells}, {@spell Ego Whip|UAFighterRogueWizard}, {@spell Id Insinuation|UAFighterRogueWizard}, {@spell post-hypnotic suggestion|p4535992Spells}."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Magic Resistance"
+      ],
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasting (Psionics)",
+          "headerEntries": [
+            "The mind flayer’s innate spellcasting ability is Intelligence (spell save {@dc 15}). It can innately cast the following spells, requiring no components:"
+          ],
+          "will": [
+            "{@spell detect thoughts}",
+            "{@spell levitate}"
+          ],
+          "daily": {
+            "1": [
+              "{@spell dominate monster}",
+              "{@spell plane shift} (self only)"
+            ]
+          },
+          "ability": "int",
+          "type": "spellcasting"
+        },
+        {
+          "name": "Innate Spellcasting (Psionics Superior)",
+          "headerEntries": [
+            "The mind flayer’s innate spellcasting ability is Intelligence (spell save {@dc 19}, added 4 to the DC due to the Mind Flayer’s mental prowess). It can innately cast the following spells, requiring no components:"
+          ],
+          "will": [
+            "{@spell astral projection}",
+            "{@spell detect thoughts}",
+            "{@spell dominate monster}",
+            "{@spell levitate}",
+            "{@spell plane shift} (self only)",
+            "{@spell suggestion}"
+          ],
+          "ability": "int",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "P",
+        "I"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The mind flayer can make four attacks with its tentacles or one attack with its extract brain ability if conditions are met."
+          ]
+        },
+        {
+          "name": "Tentacles",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) psychic damage. If the target is Large or smaller, it is {@condition grappled} (escape {@dc 15}) and must succeed on a {@dc 15} Strength saving throw or suffer automatic damage in the next round. Add +2 to the escape DC for each tentacle grappling the target. If at any moment the target is {@condition grappled} by four tentacles, then the mind flayer can activate the extract brain ability as a swift action."
+          ]
+        },
+        {
+          "name": "Extract Brain",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one {@condition incapacitated} humanoid {@condition grappled} by the mind flayer. {@h}55 ({@damage 10d10}) piercing damage. If this damage reduces the target to 0 hit points, the mind flayer kills the target by extracting and devouring its brain."
+          ]
+        },
+        {
+          "name": "Mind Blast {@recharge 5}",
+          "entries": [
+            "The mind flayer magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a {@dc 19} Intelligence saving throw or take 22 ({@damage 4d8 + 4}) psychic damage and be {@condition stunned} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack",
+        "Tentacles"
+      ],
+      "damageTags": [
+        "Y",
+        "P"
+      ],
+      "miscTags": [
+        "MW",
+        "AOE"
+      ],
+      "conditionInflict": [
+        "grappled",
+        "stunned"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Mind Flayer|https://angrygolem-games.com/monster-manual/letter-m/mind-flayer-5e-stats/}",
+          "{@link MIND FLAYER’s TACTICS (read the article)|https://angrygolem-games.com/monster-tactics-fight-like-a-mind-flayer/}",
+          "5th Edition Advanced Mode",
+          "Limiting the power of a character and making the overall difficulty of the game harder, does not reduce the creativity, indeed it does quite the opposite.",
+          "The Game Master has the option to use any and all of the instances proposed in this guide, or just some of them according to their preference.",
+          "It is the lack of something that move and motivate characters, not the abundance of it",
+          "DESCRIPTION",
+          "The illithid, or mind flayer, is an evil and feared creature of the Underdark; its powers are formidable and it feeds on the brains of any creature it encounters.",
+          "Using arcane powers, it enslaves or destroys its foes, which include such powerful creatures as {@creature drow|AGGMM} and {@creature kuo-toa|AGGMM}.",
+          "Mind Flayers stand about 6 feet tall and have hideous mauve skin that glistens with slime.",
+          "The head resembles an octopus, with white eyes (no pupils are evident) and four tentacles around its mouth, a round, many-toothed orifice like that of a lamprey.",
+          "The creature has three reddish fingers and a thumb on each hand.",
+          "Illithids have infravision. They can communicate with any creatures via innate telepathy; they have no spoken language, although they often accompany their thoughts with hissing, and the eager lashing of their tentacles.",
+          "Mind flayers dress in flowing robes, often with high, stiff collars, adorned with symbols of death and despair.",
+          "HABITAT / SOCIETY",
+          "Mind flayers hate sunlight and avoid it when possible. They live in underground cities of 2d10 x 100 illithids, plus at least two slaves per illithid.",
+          "All the slaves are under the effects of a {@spell dominate monster}, and obey their illithid masters without question.",
+          "The center of a community is its elder brain, a pool of briny fluid that contains the brains of the city’s dead mind flayers. Due to the mental powers of illithids, the elder brain is still sentient, and the telepathic union of its brains rules the community.",
+          "The elder brain has a telepathic range of 2 to 5 miles, depending on its age and size. It does not attack, but telepathically warns the mind flayers of the presence of thinking creatures, so a mind flayer within its telepathic radius can be surprised only by non-intelligent creatures.",
+          "The range of the elder brain determines the territory claimed and defended by the community, though raiding parties are sent far beyond this limit.",
+          "Mind flayers have no family structure. Their social activities include eating, communicating with the elder brain, and debating on the best tactics to conquer the Underdark.",
+          "For amusement, they inflict pain on their captives and force slaves to fight in gladiatorial games.",
+          "Mind flayers are arrogant, viewing all other species only as cattle to be fed upon. They prefer to eat the brains of thinking creatures.",
+          "ECOLOGY",
+          "Mind flayers live between 120 and 200 years. They are warm-blooded amphibians, and spend the first 10 years of life as tadpoles, swimming in the elder-brain pool until they either die (which most do) or grow into adult illithids.",
+          "On an irregular basis, adult illithids feed brains to the tadpoles, which do not molest the elder brain. Illithids are hermaphroditic; each can produce one tadpole twice in its life.",
+          "Mind flayer ichor is an effective ingredient in a {@i potion of ESP}."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Mind Whisperer, Yuan-Ti",
+      "size": "M",
+      "type": {
+        "type": "monstrosity",
+        "tags": [
+          "shapechanger",
+          "yuan-ti"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual2",
+      "alignment": [
+        "N",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 14,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "13d8 + 13",
+        "average": 71
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 16,
+      "dex": 14,
+      "con": 13,
+      "int": 14,
+      "wis": 14,
+      "cha": 16,
+      "passive": 12,
+      "cr": "4",
+      "shortName": "Mind Whisperer, Yuan-Ti",
+      "senses": [
+        "darkvision 120 ft. (penetrates magical darkness)"
+      ],
+      "senseTags": [
+        "SD"
+      ],
+      "languages": [
+        "Abyssal",
+        "Common",
+        "Draconic"
+      ],
+      "languageTags": [
+        "AB",
+        "C",
+        "DR"
+      ],
+      "save": {
+        "wis": "+4",
+        "cha": "+5"
+      },
+      "skill": {
+        "deception": "+5",
+        "stealth": "+4"
+      },
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "poisoned"
+      ],
+      "trait": [
+        {
+          "name": "Shapechanger",
+          "entries": [
+            "The yuan-ti can use its action to polymorph into a Medium snake or back into its true form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn’t transformed. If it dies, it stays in its current form."
+          ]
+        },
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The yuan-ti has advantage on saving throws against spells and other magical effects."
+          ]
+        },
+        {
+          "name": "Mind Fangs (2/Day)",
+          "entries": [
+            "The first time the yuan-ti hits with a melee attack on its turn, it can deal an extra 16 ({@damage 3d10}) psychic damage to the target."
+          ]
+        },
+        {
+          "name": "Sseth’s Blessing",
+          "entries": [
+            "When the yuan-ti reduces an enemy to 0 hit points, the yuan-ti gains 9 temporary hit points."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Magic Resistance",
+        "Shapechanger"
+      ],
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasting (Yuan-ti Form Only)",
+          "headerEntries": [
+            "The yuan-ti’s innate spellcasting ability is Charisma (spell save {@dc 13}, +5 to hit with spell attacks). The yuan-ti can innately cast the following spells, requiring no material components:"
+          ],
+          "will": [
+            "{@spell animal friendship} (snakes only)"
+          ],
+          "daily": {
+            "3": [
+              "{@spell suggestion}"
+            ]
+          },
+          "ability": "cha",
+          "type": "spellcasting"
+        },
+        {
+          "name": "Spellcasting (Yuan-ti Form Only)",
+          "headerEntries": [
+            "The yuan-ti is a 6th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 13}, +5 to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells:"
+          ],
+          "spells": {
+            "0": {
+              "spells": [
+                "{@spell eldritch blast} (range 300 ft., +3 bonus to each damage roll)",
+                "{@spell friends}",
+                "{@spell message}",
+                "{@spell minor illusion}",
+                "{@spell poison spray}",
+                "{@spell prestidigitation}"
+              ]
+            },
+            "1": {
+              "spells": [
+                "{@spell charm person}",
+                "{@spell expeditious retreat}",
+                "{@spell illusory script}"
+              ],
+              "slots": 0
+            },
+            "2": {
+              "spells": [
+                "{@spell crown of madness}",
+                "{@spell detect thoughts}"
+              ],
+              "slots": 0
+            },
+            "3": {
+              "spells": [
+                "{@spell fly}",
+                "{@spell hypnotic pattern}"
+              ],
+              "slots": 2
+            }
+          },
+          "ability": "cha",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "I",
+        "F",
+        "CL"
+      ],
+      "damageTags": [
+        "P",
+        "I",
+        "S",
+        "Y"
+      ],
+      "action": [
+        {
+          "name": "Multiattack (Yuan-ti Form Only)",
+          "entries": [
+            "The yuan-ti makes one bite attack and one scimitar attack."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage, plus 7 ({@damage 2d6}) poison damage."
+          ]
+        },
+        {
+          "name": "Scimitar (Yuan-ti Form Only)",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Mind Whisperer, Yuan-Ti|https://angrygolem-games.com/monster-manual/letter-m/mind-whisperer-yuan-ti-5e-stats/}",
+          "DESCRIPTION",
+          "Mind whisperers are malison spellcasters that enter into a pact with the serpent god Sseth, the Sibilant Death. They use their abilities to convert others to their faith, increase their personal power, and befuddle the minds of their enemies. A mind whisperer is elusive, manipulative, unpredictable, and willing to cheat or kill comrades and rivals alike if doing so benefits it. The worshipers of Sseth have their hands in many schemes, often plying the middle ground between two factions, and thus spend a lot of energy making sure neither of their allies learn of their conflicting connections. Even among yuan-ti, mind whisperers are known for being self-important, sneaky, and prone to flee at the first sign of trouble.",
+          "This malison is the type that has a human body and a snake head."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Minotaur",
+      "size": "L",
+      "type": "monstrosity",
+      "source": "AngryGolemGamesMonsterManual2",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 14,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "9d10 + 27",
+        "average": 76
+      },
+      "speed": {
+        "walk": 40
+      },
+      "str": 18,
+      "dex": 11,
+      "con": 16,
+      "int": 6,
+      "wis": 16,
+      "cha": 9,
+      "passive": 17,
+      "cr": "3",
+      "shortName": "Minotaur",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "Abyssal"
+      ],
+      "languageTags": [
+        "AB"
+      ],
+      "skill": {
+        "perception": "+7"
+      },
+      "trait": [
+        {
+          "name": "Charge",
+          "entries": [
+            "If the minotaur moves at least 10 ft. straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 ({@damage 2d8}) piercing damage. If the target is a creature, it must succeed on a {@dc 14} Strength saving throw or be pushed up to 10 ft. away and knocked {@condition prone}."
+          ]
+        },
+        {
+          "name": "Fearless",
+          "entries": [
+            "The minotaur has advantage on saving throws from effects that may impose the frigthened condition."
+          ]
+        },
+        {
+          "name": "Keen Senses",
+          "entries": [
+            "The minotaur has advantage on alla perception checks that rely on scent."
+          ]
+        },
+        {
+          "name": "Labyrinthine Recall",
+          "entries": [
+            "The minotaur can perfectly recall any path it has traveled."
+          ]
+        },
+        {
+          "name": "Reckless",
+          "entries": [
+            "At the start of its turn, the minotaur can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Charge",
+        "Keen Senses",
+        "Reckless"
+      ],
+      "damageTags": [
+        "P",
+        "S"
+      ],
+      "conditionImmune": [
+        "frightened"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The minotaur makes two attacks with its gore or one attack with its weapon and one with its bite or two attacks with its weapon."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage. Only against Small sized or larger creatures."
+          ]
+        },
+        {
+          "name": "Greataxe (Short Reach)",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}17 ({@damage 2d12 + 4}) slashing damage."
+          ]
+        },
+        {
+          "name": "Greataxe (Long Reach)",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}10 ({@damage 1d12 + 4}) slashing damage."
+          ]
+        },
+        {
+          "name": "Gore",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d4 + 4}) piercing damage. Only against Medium sized or larger creatures."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Minotaur|https://angrygolem-games.com/monster-manual/letter-m/minotaur/}",
+          "{@link MINOTAUR’s TACTICS (read the article)|https://angrygolem-games.com/monster-tactics-fight-like-a-minotaur/}",
+          "DESCRIPTION",
+          "Minotaurs are either cursed humans or the offspring of minotaurs and humans. They usually dwell in underground labyrinths, for they are not confused in these places, which gives them an advantage over their prey.",
+          "Minotaurs are huge, well over 7 feet tall, and quite broad and muscular. They have the head of a bull but the body of a human male. Their fur is brown to black while their body coloring varies as would a normal human’s. Clothing is minimal, usually a loin cloth or skirt.",
+          "COMBAT",
+          "Minotaurs are very strong. Against medium sized opponents they may attack with their gores. Against smaller opponents, they have to bite.",
+          "Minotaurs are not particularly intelligent, but are extremely cunning and have excellent senses. They have infravision, and can track prey by scent with great accuracy. They always pursue an unfamiliar scent. Minotaurs are immune to maze spells. They attack any intruder without fear, and will retreat only if the creature is obviously beyond their ability to defeat.",
+          "HABITAT / SOCIETY",
+          "Minotaurs live in communities of up to eight members. If the community contains more than six minotaurs, one will be an elder minotaur.",
+          "The minotaur elder is the clan leader; he remains in the center of the labyrinth and raises young minotaurs while others hunt. He is always encountered in the center of a labyrinth.",
+          "A minotaur’s labyrinth is rarely natural. Often an evil wizard or a tyrant will construct a labyrinth and place the minotaur family there, feeding it prisoners and slaves on a regular basis.",
+          "Occasionally this tyrant will be killed and the minotaurs forced to fend for themselves; since creatures rarely enter a labyrinth on their own accord, these minotaurs will usually be ravenously hungry.",
+          "Minotaurs speak their own primitive language and are 25% likely to speak a halting form of common. They have little culture; their lives resemble animals more than humans.",
+          "Their culture venerates physical strength above all else and particularly strong human fighters have been known to earn their respect. They worship crude gods and have weak clerics.",
+          "Rumors persist of more intelligent minotaurs with developed societies.",
+          "ECOLOGY",
+          "The curse which creates minotaurs is unknown, but sages suspect it involves “crimes against the natural order.” Minotaurs are always male.",
+          "It is also said that the first minotaur was originally a great and ill-tempered human fighter; he wanted to be as strong as a bull and his wish was granted in the most hideous manner possible.",
+          "Minotaurs breed with human females to produce offspring, which are male minotaurs. Minotaurs have a lifespan of 200 years. They can live without food for years at a time, but are always hungry unless they are fed regularly. They are meat-eaters, but their curse causes them to prefer a diet of human flesh.",
+          "Those transformed into minotaurs by curses may be restored to human form by a wish, but those who were born as minotaurs cannot be made human. Gnolls are their natural enemies; they will kill each other on sight.",
+          "Minotaur components are sometimes used in spells and potions, and might be used in magical items involving strength, location, and misdirection."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
     }
   ]
 }
