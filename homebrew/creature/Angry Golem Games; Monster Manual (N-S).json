@@ -20,5 +20,179 @@
 		"dateLastModified": 1633111364
 	},
 	"monster": [
+    {
+      "name": "Nabassu",
+      "size": "M",
+      "type": {
+        "type": "fiend",
+        "tags": [
+          "demon"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 18,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "20d8 + 100",
+        "average": 190
+      },
+      "speed": {
+        "walk": 40,
+        "fly": 60,
+        "canHover": false
+      },
+      "str": 22,
+      "dex": 14,
+      "con": 21,
+      "int": 14,
+      "wis": 15,
+      "cha": 17,
+      "passive": 17,
+      "cr": "15",
+      "shortName": "Nabassu",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "Abyssal",
+        "telepathy 120 ft."
+      ],
+      "languageTags": [
+        "AB",
+        "TP"
+      ],
+      "save": {
+        "str": "+11",
+        "dex": "+7"
+      },
+      "skill": {
+        "perception": "+7"
+      },
+      "resist": [
+        {
+          "resist": [
+            "cold",
+            "fire",
+            "lightning"
+          ]
+        },
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks"
+        }
+      ],
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "poisoned"
+      ],
+      "trait": [
+        {
+          "name": "Demonic Shadows",
+          "entries": [
+            "The nabassu darkens the area around its body in a 10-foot radius. Nonmagical light can’t illuminate this area of dim light."
+          ]
+        },
+        {
+          "name": "Devour Soul",
+          "entries": [
+            "A nabassu can eat the soul of a creature it has killed within the last hour, provided that creature is neither a construct nor an undead. The devouring requires the nabassu to be within 5 feet of the corpse for at least 10 minutes, after which it gains a number of Hit Dice (d8s) equal to half the creature’s number of Hit Dice. Roll those dice, and increase the nabassu’s hit points by the numbers rolled. For every 4 Hit Dice the nabassu gains in this way, its attacks deal an extra 3 ({@damage 1d6}) damage on a hit. The nabassu retains these benefits for 6 days. A creature devoured by a nabassu can be restored to life only by a {@spell wish} spell."
+          ]
+        },
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The nabassu has advantage on saving throws against spells and other magical effects."
+          ]
+        },
+        {
+          "name": "Magic Weapons",
+          "entries": [
+            "The nabassu’s weapon attacks are magical."
+          ]
+        }
+      ],
+      "miscTags": [
+        "MW",
+        "AOE"
+      ],
+      "traitTags": [
+        "Magic Resistance",
+        "Magic Weapons"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The nabassu uses its Soul-Stealing Gaze and makes two attacks: one with its claws and one with its bite."
+          ]
+        },
+        {
+          "name": "Claws",
+          "entries": [
+            "{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}17 ({@damage 2d10 + 6}) slashing damage."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}32 ({@damage 4d12 + 6}) piercing damage."
+          ]
+        },
+        {
+          "name": "Soul-Stealing Gaze",
+          "entries": [
+            "The nabassu targets one creature it can see within 30 feet of it. If the target can see the nabassu and isn’t a construct or an undead, it must succeed on a {@dc 16} Charisma saving throw or reduce its hit point maximum by 13 ({@dice 2d12}) and give the nabassu an equal number of temporary hit points. This reduction lasts until the target finishes a short or long rest. The target dies if its hit point maximum is reduced to 0, and if the target is a humanoid, it immediately rises as a ghoul under the nabassu’s control."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "S",
+        "P"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Nabassu|https://angrygolem-games.com/monster-manual/letter-n/nabassu-5e-stats/}",
+          "DESCRIPTION",
+          "Nabassu are creatures spawned in the Abyss but nurtured on other planes, where they grow and gain power by slaying and devouring humans. They communicate using telepathy.",
+          "Nabassu, unmistakably fiends, are gargoylish in appearance, standing 7 feet tall. They are gaunt with leathery wings, tightly corded muscles, long claws on hands and feet, steely gray eyes, and a wide mouth lined with sharp fangs.",
+          "HABITAT / SOCIETY",
+          "Nabassu are a scourge of humanity. They are the only fiends that live a part of their lives on a foreign plane. Unlike other tanar’ri, nabassu seem to have no place in the Blood War. Once they return to the Abyss from their tour of carnage on the Prime Material, they will reside in one of the fortress of the Abyss for the rest of their immortal existence.",
+          "ECOLOGY",
+          "What role these monsters play is unknown. Perhaps the slaying of humans and spilling of innocent blood somehow bring the tanar’ri power."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    }
   ]
 }
