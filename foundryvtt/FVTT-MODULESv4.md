@@ -14,7 +14,6 @@
 - [TEMPLATE][Token Magic FX](https://github.com/Feu-Secret/Tokenmagic/ )
 
 - [ENTITY][Item Macro](https://github.com/Kekilla0/Item-Macro )
-- [CHAT][Foundry VTT - Narrator Tools](https://github.com/elizeuangelo/fvtt-module-narrator-tools )
 - [ROLL][Dice Calculator/Dice Tray](https://gitlab.com/asacolips-projects/foundry-mods/foundry-vtt-dice-calculator/ )
 - [TOKEN][Drag Ruler](https://github.com/manuelVo/foundryvtt-drag-ruler )
 - [UTILITY][Simple Calendar](https://github.com/vigoren/foundryvtt-simple-calendar )
@@ -26,7 +25,8 @@
 - [TOKEN][Active Token Effect](https://github.com/kandashi/Active-Token-Lighting )
 - [SCENES][Monks Scene Navigation](https://github.com/ironmonk88/monks-scene-navigation )
 - [UTILITY][Autocomplete Inline Properties](https://github.com/ghost-fvtt/FVTT-Autocomplete-Inline-Properties)
-- [UTILITY][Automated Evocations Variant](https://github.com/p4535992/automated-evocations)
+- [UTILITY][Automated Evocations Variant](https://github.com/p4535992/automated-evocations-variant)
+- [UTILITY][Automated Polymorpher](https://github.com/p4535992/foundryvtt-automated-polymorpher)
 - [EXTERNAL][Calendar/Weather](https://gitlab.com/jstebenne/foundryvtt-calendar-weather )
 - [UTILITY][Monks TokenBar](https://github.com/ironmonk88/monks-tokenbar)
 - [UTILITY][Automated Animations](https://github.com/otigon/automated-jb2a-animations )
@@ -36,7 +36,6 @@
 - [TOKEN][TOKEN Z](https://github.com/theripper93/token-z)
 - [UTILITY][Sidebar Macro](https://github.com/arcanistzed/sidebar-macros)
 - [JOURNAL/UTILITY][Share Media](https://github.com/DarKDinDoN/share-media)
-- [MACRO/COMBAT][Trigger Happy](https://github.com/League-of-Foundry-Developers/fvtt-module-trigger-happy )
 
 - [Scene][Monk's Active Tile Triggers](https://github.com/ironmonk88/monks-active-tiles/)
 - [CHARACTER SHEET][Merchant Sheet NPC](https://github.com/whelan/fvtt-merchant-sheet-npc)
@@ -51,9 +50,7 @@
 - [UTILITY][Item Piles](https://github.com/fantasycalendar/FoundryVTT-ItemPiles)
 - [UTILITY][Icon Picker](https://github.com/teroparvinen/foundry-icon-picker)
 - [UTILITY][TransferStuff](https://github.com/playest/TransferStuff)
-- [UTILITY][Drag Anything To Hotbar for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-drag-all-to-hotbar)
 - [EFFECT][Token Magic FX](https://github.com/Feu-Secret/Tokenmagic)
-- [TOKEN][Inactive Tokens](https://github.com/jagoe/fvtt-module-inactive-tokens)
 - [TOKEN][Your Tokens Visible](https://github.com/David-Zvekic/TokensVisible)
 - [TOKEN][Token Says](https://github.com/napolitanod/Token-Says)
 - [UTILITY][Token Variant Art](https://github.com/Aedif/TokenVariants)
@@ -61,7 +58,6 @@
 
 - [UTILITY\TOKEN][Token Attacher](https://github.com/KayelGee/token-attacher )
 - [UTILITY][Item Delete Check](https://gitlab.com/tposney/item-delete-check/tree/master )
-- [SCENE][Scene Transitions](https://github.com/DM-miX/scene-transitions)
 - [COMBAT][Perfect Vision](https://github.com/dev7355608/perfect-vision )
 - [CHAT][DragonFlagon Chat Enhancements](https://github.com/flamewave000/dragonflagon-fvtt/tree/master/df-chat-enhance )
 - [TABLE][Better Rolltables](https://github.com/ultrakorne/better-rolltables )
@@ -72,8 +68,17 @@
 - [JOURNAL/CHAT][Polyglot](https://github.com/League-of-Foundry-Developers/fvtt-module-polyglot )
 - [JOURNAL][Storyteller for Foundry VTT](https://github.com/Xbozon/storyteller)
 - [UTILITY][Pause Control](https://gitlab.com/koboldworks/agnostic/pause-control)
-- [CHARACTER SHEET][Point of Interest Character Sheet](https://github.com/Sky-Captain-13/foundry/tree/master/poi-sheet )
+- [WALL][Wall Height](https://github.com/schultzcole/FVTT-Wall-Height )
 
+- [TOKEN/SCENES][Go to Player](https://github.com/theripper93/go-to-player)
+- [TOKEN/SCENES][pull-players-to-scene](https://github.com/Mr-Byte/pull-players-to-scene )
+- [SIDEBAR][Hidden Entity Links](https://github.com/p4535992/vtt-hidden-entity-links)
+- [NOTE][Pin Cushion](https://github.com/death-save/pin-cushion )
+- [NOTE][Pin Fixer](https://foundryvtt.com/packages/pin-fixer)
+- [JOURNAL/CHAT][Polyglot](https://github.com/League-of-Foundry-Developers/fvtt-module-polyglot )
+- [EXTERNAL][Popout](https://github.com/kakaroto/fvtt-module-popout)
+- [UTILITY][Rangefinder](https://github.com/manuelVo/foundryvtt-rangefinder)
+- [UTILITY\AUDIO][Ensemble - drag and drop your sound files](https://github.com/janckoch/Ensemble)
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
@@ -82,21 +87,20 @@
 - [COMBAT][Arbron's Improved HP Bar](https://github.com/arbron/fvtt-hp-bar)
 - [COMBAT][Combat Utility Belt](https://github.com/death-save/combat-utility-belt )
 - [COMBAT][Advanced Spell Effects](https://github.com/Vauryx/AdvancedSpellEffects)
-- [COMBAT][Hurry Up! Combat Timer](https://github.com/theripper93/hurry-up)
-- [COMBAT][Status Icon Tweaks](https://github.com/jessev14/status-icon-tweaks)
+- [COMBAT][Illandril's Token HUD Scaler](https://github.com/illandril/FoundryVTT-token-hud-scale)
 - [COMBAT][Effective Transferral](https://github.com/GamerFlix/effective-transferral)
 - [COMBAT][Danger-Zone](https://github.com/napolitanod/Danger-Zone)
-- [COMBAT/CHAT][Hide GM Rolls](https://github.com/sPOiDar/fvtt-module-hide-gm-rolls)
 - [COMBAT][Temporary Effects as Token Statuses](https://github.com/ElfFriend-DnD/foundryvtt-temp-effects-as-statuses)
 - [COMBAT][GM Token Drag Visibility v2](https://github.com/MAClavell/gm-token-drag-visibility-v2)
 - [COMBAT][Boss Bar](https://github.com/theripper93/Boss-Bar)
+- [COMBAT][Smart Target](https://github.com/theripper93/Smart-Target)
+- [COMBAT][Tagger](https://github.com/fantasycalendar/FoundryVTT-Tagger)
+- [COMBAT][TOKEN][Token Auras](https://bitbucket.org/Fyorl/token-auras )
 
 ## MODULES NECESSARI SOLO IN FASE DI COSTRUZIONE E NON DI SESSIONE
 
 - [UTILITY][Dragon Flagon Architect](https://github.com/flamewave000/dragonflagon-arch)
-- [WALL][Wall Height](https://github.com/schultzcole/FVTT-Wall-Height )
 - [WALL][Monks Wall Enchancement](https://github.com/ironmonk88/monks-wall-enhancement)
-- [LANDING PAGE][Avernus Landing Page - by dransky](https://foundryvtt.com/packages/dransky-dia-landing-page)
 - [LIGHT/SOUND][Light/Sound Mask](https://github.com/caewok/fvtt-light-mask)
 
 # MODULES DA VERIFICARE SE NECESSARI
@@ -118,7 +122,7 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 ## [SYSTEM] MODULES  D&D5e
 
 - [EXTERNAL][Plutonium (5etools)](https://get.5e.tools/plutonium/module.json)
-- [ENTITY][Item Collection ](https://gitlab.com/tposney/itemcollection )
+- [ENTITY][Item Collection](https://gitlab.com/tposney/itemcollection )
 - [ENTITY][Magic Items](https://gitlab.com/riccisi/foundryvtt-magic-items )
 - [CHARACTER SHEET][Tidy Sheet 5e](https://github.com/sdenec/tidy5e-sheet )
 - [CHARACTER SHEET][Loot Sheet NPC 5e](https://github.com/jopeek/fvtt-loot-sheet-npc-5e )
@@ -129,13 +133,9 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 - [COMBAT][Wild Magic Surge 5e](https://github.com/johnnolan/wild-magic-surge-5e)
 
 - [ENTITY][Not Enough NPCs: A 5e NPC Generator](https://github.com/ardittristan/VTTNPCGen )
-- [CHARACTHER SHEET/UTILITY][Downtime Tracking 5e Training](https://github.com/crash1115/5e-training )
 - [ITEM][Items with Rollable Tables DnD5e](https://github.com/ElfFriend-DnD/foundryvtt-items-with-rolltables-5e)
 - [CHARACTER SHEET/UTILITY][Variant Encumbrance 5e](https://github.com/VanirDev/VariantEncumbrance )
 - [CHARACTHER SHEET/UTILITY][Party Inventory](https://github.com/teroparvinen/foundry-party-inventory)
-- [SCENE][Elevation Drag Ruler](https://github.com/PepijnMC/ElevationDragRuler)
-- [UTILITY][DnD5e Drag Ruler Integration](https://github.com/PepijnMC/ElevationDragRuler)
-- [UTILITY][Lets Trade 5e](https://github.com/KageJittai/lets-trade-5e)
 
 ## [SYSTEM] PATHFINDER 1 MODULES
 
@@ -185,10 +185,12 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 - [AUDIO][Sound Board by Blitz](https://github.com/BlitzKraig/fvtt-SoundBoard )
 - [AUDIO][SoundBoard Pack - Blitz Free Pack](https://github.com/BlitzKraig/fvtt-SoundBoard-BlitzFreePack )
 - [AUDIO][SoundBoard Pack - Blitz Community Pack](https://github.com/BlitzKraig/fvtt-SoundBoard-BlitzCommunityPack )
+
 - [AUDIO][Bellows](https://github.com/casualchameleon/Bellows )
 - [AUDIO][Background Volume](https://github.com/mtvjr/background-volume)
+- [AUDIO][Playlist Import](https://github.com/JacobMcAuley/playlist_import )
 - 
-- [BETTER SOUNDBOARD][AUDIO][Playlist Import](https://github.com/JacobMcAuley/playlist_import )
+
 - [NOT ESSENTIAL][AUDIO][SoundFx Library](https://github.com/CDeenen/SoundFxLibrary)
 
 ## MODULES MOBILE SUPPORT

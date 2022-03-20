@@ -2,6 +2,22 @@
 # NOT ESSENTIAL 
 # ======================================================================
 
+## 2022-03-01
+
+- [NOT ESSENTIAL][UTILITY][DnD5e Drag Ruler Integration (ex Elevation Drag Ruler)](https://github.com/PepijnMC/ElevationDragRuler)
+- [NOT ESSENTIAL][LANDING PAGE][Avernus Landing Page - by dransky](https://foundryvtt.com/packages/dransky-dia-landing-page)
+- [NOT ESSENTIAL][CHARACTER SHEET][Point of Interest Character Sheet](https://github.com/Sky-Captain-13/foundry/tree/master/poi-sheet )
+- [NOT ESSENTIAL][UTILITY][Drag Anything To Hotbar for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-drag-all-to-hotbar)
+- [IS BETTER DragonFlagon Quality of Life]
+- [NOT ESSENTIAL][CHAT][Foundry VTT - Narrator Tools](https://github.com/elizeuangelo/fvtt-module-narrator-tools )
+- [IS BETTER MATT][MACRO/COMBAT][Trigger Happy](https://github.com/League-of-Foundry-Developers/fvtt-module-trigger-happy )
+- [IS BETTER TRANSFER STUFF][UTILITY][Lets Trade 5e](https://github.com/KageJittai/lets-trade-5e)
+- [IS BETTER DF Quality of Life][TOKEN][Inactive Tokens](https://github.com/jagoe/fvtt-module-inactive-tokens)
+- [NOT UPDATE][SCENE][Scene Transitions](https://github.com/DM-miX/scene-transitions)
+- [NOT ESSENTIAL][CHARACTHER SHEET/UTILITY][Downtime Tracking 5e Training](https://github.com/crash1115/5e-training )
+- [NOT ESSENTIAL][UTILITY][Splatter](https://github.com/theripper93/Splatter)
+- [NOT ESSENTIAL][Spellbook Master](https://github.com/p4535992/spellbook-master)
+
 ## 2022-01-15
 
 - [IS BETTER MIDIQOL][Advantage Reminder for dnd5e](https://github.com/kaelad02/adv-reminder)
@@ -16,7 +32,6 @@
 - [NOT ESSENTIAL][TOKEN][About Face](https://github.com/mclemente/about-face)
 - [NOT ESSENTIAL][LIGHT][Community Lighting for FVTT](https://github.com/BlitzKraig/fvtt-CommunityLighting )
 - [ABBANDONED][TOKEN/UTILITY][Custom-Token-Animations](https://github.com/kandashi/Custom-Token-Animations )
-- [NOT ESSENTIAL][UTILITY][Rangefinder](https://github.com/manuelVo/foundryvtt-rangefinder)
 - [NOT ESSENTIAL][UTILITY][JV's Drag Anything To Hotbar for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-drag-all-to-hotbar)
 - [IS BETTER QUICK INSERT][ENTITY][Search Anywhere](https://gitlab.com/riccisi/foundryvtt-search-anywhere )
 - [NOT ESSENTIAL][UTILITY][FVVT POINTER](https://github.com/Moerill/fvtt-pointer )
@@ -37,15 +52,16 @@
 
 - [NOT ESSENTIAL][JOURNAL][NOT ESSENTIAL] https://github.com/moo-man/FVTT-SelectiveShow
 - [NOT ESSENTIAL][TOKEN][Token Action HUD Artwork](https://github.com/zeel01/TokenHUDArtButton )
-- [NOT ESSENTIAL][TOKEN/SCENES][pull-players-to-scene](https://github.com/Mr-Byte/pull-players-to-scene )
 - [NOT ESSENTIAL][Roll from compendium](https://github.com/itamarcu/roll-from-compendium)
 - [NOT ESSENTIAL][Enhanced Active Effects](https://github.com/patrickporto/fvtt-enhanced-active-effects)
 - [NOT ESSENTIAL YOU CAN STILL USE ACTIONHUD][[TOKEN][Illandril's Token Tooltips (5e)](https://github.com/illandril/FoundryVTT-token-tooltips )
-- [IS BETTER Status Icon Tweaks][TOKEN][Illandril's Token HUD Scaler](https://github.com/illandril/FoundryVTT-token-hud-scale)
+- [IS BETTER Illandril's Token HUD Scaler][COMBAT][Status Icon Tweaks](https://github.com/jessev14/status-icon-tweaks)
 - [NOT ESSENTIAL][COMPENDIUM](https://github.com/adougherty/random-everything-generator)
 - [NOT ESSENTIAL][UTILITY][Less Fog](https://github.com/trdischat/lessfog )
 - [NOT ESSENTIAL][UTILITY/ROLLTABLE][Hidden Tables](https://github.com/kandashi/hidden-tables)
 - [NOT ESSENTIAL][COMBAT][Resource Icons](https://github.com/jessev14/resource-icons)
+- [NOT ESSENTIAL][COMBAT/CHAT][Hide GM Rolls](https://github.com/sPOiDar/fvtt-module-hide-gm-rolls)
+- [NOT ESSENTIAL][COMBAT][Hurry Up! Combat Timer](https://github.com/theripper93/hurry-up)
 
 ## 2021-11
 
@@ -87,10 +103,8 @@
 - [NOT ESSENTIAL BUT VERY GOOD][EXTERNAL][Travel Pace](https://github.com/rinnocenti/travel-pace ) - https://raw.githubusercontent.com/rinnocenti/travel-pace/master/module.json
 - [NOT ESSENTIAL][UTILITY][Dig Down](https://github.com/theripper93/fuzzy-foundry)
 - [NOT ESSENTIAL][MAP/IMPORTER][FVTT DD Import](https://github.com/moo-man/FVTT-DD-Import )
-- [NOT ESSENTIAL][UTILITY][Go to Player](https://github.com/theripper93/go-to-player)
 - [NOT ESSENTIAL] PLaylist drag and drop
 - [NOT ESSENTIAL][JOURNAL][sound-link](https://github.com/superseva/sound-link ) - https://raw.githubusercontent.com/superseva/sound-link/master/module.json
-- [NOT ESSENTIAL][AUDIO][Background Volume](https://github.com/mtvjr/background-volume ) - https://raw.githubusercontent.com/mtvjr/background-volume/master/module.json
 - [NOT ESSENTIAL]Babele
 - [NOT ESSENTIAL IS BETTER COMBAT BOOSTER][COMBAT][Next-Up](https://github.com/kandashi/Next-Up )
 - [NOT ESSENTIAL][Show Wall Everywhere](https://github.com/theripper93/Show-Walls-Everywhere)
@@ -145,7 +159,6 @@
 - [NEED UPDATE][COMBAT][Blood and guts](https://github.com/edzillion/blood-n-guts )
 - [NEED UPDATE][CHARACTER/SHEET][tool-proficiencies-5e](https://github.com/adriangaro/tool-proficiencies-5e )
 - [NEED UPDATE][Summoner](https://github.com/periodic/foundryvtt-summoner)
-- [NOT ESSENTIAL][UI][Window Controls for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-window-controls) - https://raw.githubusercontent.com/saif-ellafi/foundryvtt-window-controls/master/module.json
 - [NEED UPDATE][CHARACTER SHEET/UTILITY][FoundryVTT-GiveItem](https://github.com/Sepichat/FoundryVTT-GiveItem )
 - [NOT ESSENTIAL AND YOU CAN STILL USE IRONMONK TOKENBAR][whisper-dialog](https://github.com/Kekilla0/whisper-dialog) - https://raw.githubusercontent.com/Kekilla0/whisper-dialog/master/module.json
 - [NEED UPDATED][COMBAT][Faction Tokens](https://github.com/Voldemalort/token-factions )
@@ -251,7 +264,6 @@
 - [IS BETTER NOT YOUR TURN][TOKEN][Adjusted Movement](https://github.com/eadorin/adjusted-movement ) - https://raw.githubusercontent.com/eadorin/adjusted-movement/master/module.json
 - [NOT ESSENTIAL][UTILITY][Raise my hand](https://github.com/cswendrowski/FoundryVTT-Raise-My-Hand )
 - [DEPRECATED USE TokensVisible][Token][pushTokenBack](https://github.com/David-Zvekic/pushTokenBack)
-- [DEPRECTAED][TOKEN][Token Auras](https://bitbucket.org/Fyorl/token-auras ) - https://bitbucket.org/Fyorl/token-auras/raw/master/module.json
 - [DEPRECATED][MACRO/MAP][Teleport](https://github.com/knassher/FVTT-Teleport ) - https://raw.githubusercontent.com/knassher/FVTT-Teleport/master/module.json
 - [MAP][IS BETTER MIDI QOL][M.E.S.S. (Moerill’s Enhancing Super Suite)](https://github.com/Moerill/mess ) - https://raw.githubusercontent.com/Moerill/Mess/master/src/module.json
 - [NOT ESSENTIAL][UTILITY][Token Vision Animation: World Scope](https://gitlab.com/DmitryRomanenko/token-vision-animation-world )
@@ -314,7 +326,6 @@
 - [CHARACTR SHEET][NOT ESSENTIAL][(5e) Different Prepared and Equipped Colors](https://github.com/sparkcity/foundryvtt/tree/master/5edifferentpreparedandequippedcolors ) - https://raw.githubusercontent.com/sparkcity/foundryvtt/master/5edifferentpreparedandequippedcolors/module.json 
 - [CHAT][Tabbed Chatlog][NOT ESSENTIAL](https://github.com/cswendrowski/FoundryVTT-Tabbed-Chatlog ) - https://raw.githubusercontent.com/cswendrowski/FoundryVTT-Tabbed-Chatlog/master/module.json
 - [TOKEN/LIGHT][NOT ESSENTIAL][Point of Vision](https://github.com/eadorin/point-of-vision ) - https://raw.githubusercontent.com/eadorin/point-of-vision/master/module.json
-- [EXTERNAL][NOT ESSENTIAL][Popout](https://github.com/kakaroto/fvtt-module-popout ) - https://raw.githubusercontent.com/kakaroto/fvtt-module-popout/master/module.json
 - [EXTERNAL][NOT ESSENTIAL][Popout Resizer](https://gitlab.com/cardagon/popout-resizer/ ) - https://gitlab.com/cardagon/popout-resizer/raw/master/module.json
 
 - [ICON/MARKER][NOT ESSENTIAL][Lancer Condition Icons](https://github.com/Eranziel/lancer-conditions ) - https://raw.githubusercontent.com/Eranziel/lancer-conditions/master/module.json
@@ -328,7 +339,6 @@
 - [MAP][GOOD BUT NOT ESSENSIAL][EC MAp Remake](https://gitlab.com/Ustin/ec-maps-remake ) - https://gitlab.com/Ustin/ec-maps-remake/raw/master/module.json
 
 - [TOKEN/COMBAT][GOOD BUT IS BETTER THE SCRIPT FROM MACRO COMMUNITY][Torch](https://github.com/RealDeuce/torch/ ) -  https://raw.githubusercontent.com/RealDeuce/torch/master/module.json
-- [JOURNAL][GOOD BUT NOT ESSENSIAL][Pin Cushion](https://github.com/death-save/pin-cushion ) - https://raw.githubusercontent.com/death-save/pin-cushion/master/module.json
 - [AUDIO][IS BETTER Playlist Import][Audio FOlder](https://github.com/megastruktur/foundryvtt-audio-folder ) - https://raw.githubusercontent.com/megastruktur/foundryvtt-audio-folder/master/module.json
 - [SCENE][GOOD BUT NOT ESSENSIAL][scene-transitions](https://github.com/wsaunders1014/scene-transitions ) - https://raw.githubusercontent.com/wsaunders1014/scene-transitions/master/module.json
 - [MAP/GRID][GOOD BUT NOT ESSENSIAL][Scale grid](https://github.com/UberV/scaleGrid ) - https://raw.githubusercontent.com/UberV/scaleGrid/master/module.json
