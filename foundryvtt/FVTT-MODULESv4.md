@@ -90,7 +90,6 @@
 - [COMBAT][Illandril's Token HUD Scaler](https://github.com/illandril/FoundryVTT-token-hud-scale)
 - [COMBAT][Effective Transferral](https://github.com/GamerFlix/effective-transferral)
 - [COMBAT][Danger-Zone](https://github.com/napolitanod/Danger-Zone)
-- [COMBAT][Temporary Effects as Token Statuses](https://github.com/ElfFriend-DnD/foundryvtt-temp-effects-as-statuses)
 - [COMBAT][GM Token Drag Visibility v2](https://github.com/MAClavell/gm-token-drag-visibility-v2)
 - [COMBAT][Boss Bar](https://github.com/theripper93/Boss-Bar)
 - [COMBAT][Smart Target](https://github.com/theripper93/Smart-Target)

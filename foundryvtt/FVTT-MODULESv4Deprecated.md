@@ -4,6 +4,7 @@
 
 ## 2022-03-01
 
+- [IS BETTER Dfred Panel Effect][COMBAT][Temporary Effects as Token Statuses](https://github.com/ElfFriend-DnD/foundryvtt-temp-effects-as-statuses)
 - [NOT ESSENTIAL][UTILITY][DnD5e Drag Ruler Integration (ex Elevation Drag Ruler)](https://github.com/PepijnMC/ElevationDragRuler)
 - [NOT ESSENTIAL][LANDING PAGE][Avernus Landing Page - by dransky](https://foundryvtt.com/packages/dransky-dia-landing-page)
 - [NOT ESSENTIAL][CHARACTER SHEET][Point of Interest Character Sheet](https://github.com/Sky-Captain-13/foundry/tree/master/poi-sheet )
