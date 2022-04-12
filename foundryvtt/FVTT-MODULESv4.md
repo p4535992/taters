@@ -185,16 +185,12 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 - [AUDIO][SoundBoard Pack - Blitz Free Pack](https://github.com/BlitzKraig/fvtt-SoundBoard-BlitzFreePack )
 - [AUDIO][SoundBoard Pack - Blitz Community Pack](https://github.com/BlitzKraig/fvtt-SoundBoard-BlitzCommunityPack )
 
-- [AUDIO][Bellows](https://github.com/casualchameleon/Bellows )
+- [AUDIO][Bellows](https://github.com/zstix/Bellows)
 - [AUDIO][Background Volume](https://github.com/mtvjr/background-volume)
 - [AUDIO][Playlist Import](https://github.com/JacobMcAuley/playlist_import )
-- 
-
-- [NOT ESSENTIAL][AUDIO][SoundFx Library](https://github.com/CDeenen/SoundFxLibrary)
 
 ## MODULES MOBILE SUPPORT
 
-- [DEPRECATED][STYLE][Screenscene](https://github.com/AJAnderson/screenscene )
 - [STYLE][Mobile Improvements](https://gitlab.com/fvtt-modules-lab/mobile-improvements)
 - [UTILITY][TouchVTT](https://github.com/Oromis/touch-vtt)
 - [Utility][Zoom/Pan Options](https://github.com/itamarcu/ZoomPanOptions)
@@ -205,10 +201,12 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 ## MODULES COMPENDIUM
 
 - [COMPENDIUM][Super Homebrew Pack](https://github.com/SuperNar3k/foundry )
-- [COMPENDIUM][Beginner Baubles](https://foundryvtt.com/packages/ddd-beginner-baubles/ )
 - [COMPENDIUM][Data Toolbox - Let's Contribute](https://github.com/SvenWerlen/fvtt-data-toolbox/tree/master/ )
 - [COMPENDIUM][Take on Magic Items (unofficial)](https://github.com/brunocalado/takeonmagicitems )
-- [COMPENDIUM][Loot Tavern magic Item](https://www.patreon.com/LootTavern )
+- [COMPENDIUM][More Automated Spells Items and Feats](https://github.com/jbowensii/More-Automated-Spells-Items-and-Feats)
+
+- [DEPRECATED NOT FREE][COMPENDIUM][Loot Tavern magic Item](https://www.patreon.com/LootTavern )
+- [DEPRECATED NOT FREE][COMPENDIUM][Beginner Baubles](https://foundryvtt.com/packages/ddd-beginner-baubles/ )
 
 - [DEPRECATED USE INSTEAD https://github.com/p4535992/fvtt-compendiums-mix-dnd5e][COMPENDIUM][Copper Dragon's Hoard](https://github.com/copperdragongames/copperdragonhoard)
 - [DEPRECATED USE INSTEAD https://github.com/p4535992/fvtt-compendiums-mix-dnd5e][COMPENDIUM][FoundryVTT-FantasyPlants](https://github.com/KyleBishop/FoundryVTT-FantasyPlants )
