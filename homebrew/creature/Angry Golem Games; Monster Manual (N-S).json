@@ -8331,6 +8331,1456 @@
           }
         ]
       }
+    },
+    {
+      "name": "Peryton",
+      "size": [
+        "M"
+      ],
+      "type": "aberration",
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 14,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "6d8 + 6",
+        "average": 33
+      },
+      "speed": {
+        "walk": 40,
+        "fly": 80,
+        "canHover": false
+      },
+      "str": 16,
+      "dex": 14,
+      "con": 13,
+      "int": 9,
+      "wis": 12,
+      "cha": 10,
+      "passive": 15,
+      "cr": "2",
+      "shortName": "Peryton",
+      "skill": {
+        "perception": "+5"
+      },
+      "resist": [
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks"
+        }
+      ],
+      "languages": [
+        "understands Common and Elvish but can't speak"
+      ],
+      "languageTags": [
+        "C",
+        "E"
+      ],
+      "trait": [
+        {
+          "name": "Combat Accuracy",
+          "entries": [
+            "The peryton adds its dexterity modifier to all its hit rolls and damage rolls."
+          ]
+        },
+        {
+          "name": "Dive Attack",
+          "entries": [
+            "If the peryton is flying and dives at least 30 feet straight toward a target and then hits it with a melee weapon attack, the attack deals an extra 9 ({@damage 2d8}) damage to the target."
+          ]
+        },
+        {
+          "name": "Flyby",
+          "entries": [
+            "The peryton doesn't provoke an opportunity attack when it flies out of an enemy's reach."
+          ]
+        },
+        {
+          "name": "Grab on the Fly",
+          "entries": [
+            "If the peryton succeesfully hits with both talons attack while performing the Dive Attack, then a target of Small or smaller size is automatically {@condition grappled}. The next round, the target may attempt to escape the grapple (escape {@dc 13}) or can attack the peryton with disadvantage. The peryton can release the grapple at any moment and have the target suffers appropriate fall damage."
+          ]
+        },
+        {
+          "name": "Hunter's Mark",
+          "entries": [
+            "The peryton designates a chosen target and gains advantage on all hit rolls against that target."
+          ]
+        },
+        {
+          "name": "Keen Sight and Smell",
+          "entries": [
+            "The peryton has advantage on Wisdom (Perception) checks that rely on sight or smell."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Flyby",
+        "Keen Senses"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The peryton makes three attacks, one with its gore and two with its talons."
+          ]
+        },
+        {
+          "name": "Gore",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+          ]
+        },
+        {
+          "name": "Gore (Strong)",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}15 ({@damage 4d4 + 5}) piercing damage."
+          ]
+        },
+        {
+          "name": "Talons",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d4 + 5}) piercing damage."
+          ]
+        },
+        {
+          "name": "Talons (Strong)",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 2d4 + 3}) piercing damage."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Peryton|https://angrygolem-games.com/monster-manual/letter-p/peryton-5e-stats/}",
+          "{@link 5th Edition Advanced Mode|https://www.drivethrurpg.com/product/382784/5th-ADVANCED-MODE?affiliate_id=1465812&src=Peryton}",
+          "Limiting the power of a character and making the overall difficulty of the game harder, does not reduce the creativity, indeed it does quite the opposite.",
+          "The Game Master has the option to use any and all of the instances proposed in this guide, or just some of them according to their preference.",
+          "It is the lack of something that move and motivate characters, not the abundance of it",
+          "DESCRIPTION",
+          "High above the mountains and rocky hills of most lands flies a sharp-eyed monster known as the peryton. Intelligent, patient, and malevolent, it watches and waits for prey — to pluck their hearts out.",
+          "The peryton resembles a giant, dark green eagle, except that its head is that of a blue-black stag, its horns glitter as ebon as obsidian, its eyes glow a dull red-orange. The chest feathers of a male peryton are light blue; those of the female are drab brown. Perytons normally cast the shadow of an adult human being, rather than those of their own form.",
+          "Perytons do not adorn themselves with trinkets, nor arm themselves with weapons. Their language is a collection of roars and screeches, and often sounds as if a peryton were either injured or enraged. Some creatures, with a keen sense of smell, claim that a peryton smells like a human, while others are filled with an irrational fear upon catching first scent.",
+          "COMBAT",
+          "A peryton has only a secondary interest in prey as food. Its main interest in humanoids creatures is the heart of its prey.",
+          "It attacks with its sharp horns, since its claws are too weak to use in melee. When a peryton chooses a target for combat, it locks itself into a duel that nearly always ends in either the peryton's death or that of its target. A peryton will never switch targets during combat, no matter the tactical situation. On rare occasions, the creature can be driven off, but it will continue to stalk its prey, and return at a later time.",
+          "Some perytons choose to swoop at a target. In this form of attack, the peryton climbs several hundred feet in the air and then plunges at the target, dropping with awesome speed. This is an extreme maneuver that the peryton will only attempt if combat is going poorly, or if it believes it has a chance to achieve total surprise.",
+          "Another common tactic is for the peryton to seize a Medium target and then lift off with the prey in its talons. The peryton climbs so rapidly that most targets do not react until they are at least 100 feet in the air and facing a plummet if they manage to escape the peryton's grasp.",
+          "HABITAT / SOCIETY",
+          "Perytons roost in caves high atop cliffs or on mountain peaks. They settle in nests of 2d4 creatures, each nest independent of any other, and no two nests being within several miles of one another, except for unusual circumstances — like a dwarven community in the mountains providing them with plentiful prey.",
+          "Perytons sometimes take humans and humanoid creatures alive and hold them captive in their nests until they are needed as food (90% likely for nonhumans, 25% the case for humans) or for reproduction. Because of this, the peryton nests may have treasure scattered about, as well as 1d4 unhatched eggs.",
+          "ECOLOGY",
+          "The peryton is a predator, with no natural enemies (few could pierce its magically resistant skin). Humanoids, and especially humans, are its selected prey. A female peryton requires a fresh, beating heart to reproduce, and human hearts are the preferred variety. Once a peryton has eaten a heart, its shadow changes into that of its normal form and the creature becomes fertile for 3d6 hours. Unhatched peryton eggs can be sold for 10d12 gp apiece."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Phase Spider",
+      "size": [
+        "L"
+      ],
+      "type": "monstrosity",
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        {
+          "ac": 13,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "5d10 + 5",
+        "average": 32
+      },
+      "speed": {
+        "walk": 30,
+        "climb": 30
+      },
+      "str": 15,
+      "dex": 15,
+      "con": 12,
+      "int": 6,
+      "wis": 10,
+      "cha": 6,
+      "passive": 10,
+      "cr": "3",
+      "shortName": "Phase Spider",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "skill": {
+        "stealth": "+6"
+      },
+      "trait": [
+        {
+          "name": "Ethereal Jaunt",
+          "entries": [
+            "As a bonus action, the spider can magically shift from the Material Plane to the Ethereal Plane, or vice versa."
+          ]
+        },
+        {
+          "name": "Spider Climb",
+          "entries": [
+            "The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+          ]
+        },
+        {
+          "name": "Web Walker",
+          "entries": [
+            "The spider ignores movement restrictions caused by webbing."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Spider Climb",
+        "Web Walker"
+      ],
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d10 + 2}) piercing damage, and the target must make a {@dc 11} Constitution saving throw, taking 18 ({@damage 4d8}) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but {@condition poisoned} for 1 hour, even after regaining hit points, and is {@condition paralyzed} while {@condition poisoned} in this way."
+          ]
+        }
+      ],
+      "damageTags": [
+        "I",
+        "P"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "conditionInflict": [
+        "paralyzed",
+        "poisoned"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Phase Spider|https://angrygolem-games.com/monster-manual/letter-p/phase-spider-5e-stats/}",
+          "DESCRIPTION",
+          "Phase spiders have a unique ability to phase in and out of the Prime material plane. They phase in, attack, and phase out, all in a single round. This gives them advantage on initiative rolls; if a phase spider wins initiative by more than 5, it attacks and phases out before its opponent has a chance to strike back. Then too, a phase spider usually phases into existence behind its chosen victim, so they get advantage for attacking from behind.",
+          "Abomination is employed as material component to empower the following spells: {@spell Poison Spray}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Phoenix",
+      "size": [
+        "G"
+      ],
+      "type": {
+        "type": "elemental",
+        "tags": [
+          "elder elemental"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        18
+      ],
+      "hp": {
+        "formula": "10d20 + 70",
+        "average": 175
+      },
+      "speed": {
+        "walk": 20,
+        "fly": 120,
+        "canHover": false
+      },
+      "str": 19,
+      "dex": 26,
+      "con": 25,
+      "int": 2,
+      "wis": 21,
+      "cha": 18,
+      "passive": 15,
+      "cr": "16",
+      "shortName": "Phoenix",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "save": {
+        "wis": "+10",
+        "cha": "+9"
+      },
+      "resist": [
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks"
+        }
+      ],
+      "immune": [
+        "fire",
+        "poison"
+      ],
+      "conditionImmune": [
+        "exhaustion",
+        "grappled",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "prone",
+        "restrained",
+        "stunned"
+      ],
+      "trait": [
+        {
+          "name": "Fiery Death and Rebirth",
+          "entries": [
+            "When the phoenix dies, it explodes. Each creature within 60-feet of it must make a {@dc 20} Dexterity saving throw, taking 22 ({@damage 4d10}) fire damage on a failed save, or half as much damage on a successful one. The fire ignites flammable objects in the area that aren' t worn or carried. The explosion destroys the phoenix's body and leaves behind an egg-shaped cinder that weighs 5 pounds. The cinder is blazing hot, dealing 21 ({@damage 6d6}) fire damage to any creature that touches it, though no more than once per round. The cinder is immune to all damage, and after {@dice 1d6} days , it hatches a new phoenix."
+          ]
+        },
+        {
+          "name": "Fire Form",
+          "entries": [
+            "The phoenix can move through a space as narrow as 1 inch wide without squeezing. Any creature that touches the phoenix or hits it with a melee attack while within 5 feet of it takes 5 ({@damage 1d10}) fire damage. In addition, the phoenix can enter a hostile creature's space and stop there. The first time it enters a creature's space on a turn, that creature takes 5 ({@damage 1d10}) fire damage. With a touch, the phoenix can also ignite flammable objects that aren' t worn or carried (no action required)."
+          ]
+        },
+        {
+          "name": "Flyby",
+          "entries": [
+            "The phoenix doesn't provoke opportunity attacks when it flies out of an enemy's reach."
+          ]
+        },
+        {
+          "name": "Illumination",
+          "entries": [
+            "The phoenix sheds bright light in a 60-foot radius and dim light for an additional 30 feet."
+          ]
+        },
+        {
+          "name": "Legendary Resistance (3/Day)",
+          "entries": [
+            "If the phoenix fails a saving throw, it can choose to succeed instead."
+          ]
+        },
+        {
+          "name": "Siege Monster",
+          "entries": [
+            "The phoenix deals double damage to objects and structures."
+          ]
+        }
+      ],
+      "damageTags": [
+        "F"
+      ],
+      "traitTags": [
+        "Flyby",
+        "Illumination",
+        "Legendary Resistances",
+        "Siege Monster"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH",
+        "AOE"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The phoenix makes two attacks: one with its beak and one with it s fiery talons."
+          ]
+        },
+        {
+          "name": "Beak",
+          "entries": [
+            "{@atk mw} {@hit 13} to hit, reach 15 ft., one target. {@h}15 ({@damage 2d6 + 8}) fire damage. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 5 ({@damage 1d10}) fire damage at the start of each of its turns."
+          ]
+        },
+        {
+          "name": "Fiery Talons",
+          "entries": [
+            "{@atk mw} {@hit 13} to hit, reach 15 ft., one target. {@h}17 ({@damage 2d8 + 8}) fire damage."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "legendaryActions": 3,
+      "legendaryHeader": [
+        "The phoenix can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The phoenix regains spent legendary actions at the start of its turn."
+      ],
+      "legendary": [
+        {
+          "name": "Peck",
+          "entries": [
+            "The phoenix makes one beak attack."
+          ]
+        },
+        {
+          "name": "Move",
+          "entries": [
+            "The phoenix moves up to its speed."
+          ]
+        },
+        {
+          "name": "Swoop (Costs 2 Actions)",
+          "entries": [
+            "The phoenix moves up to its speed and attacks with its fiery talons."
+          ]
+        }
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Phoenix|https://angrygolem-games.com/monster-manual/letter-p/phoenix-5e-stats/}",
+          "DESCRIPTION",
+          "Releasing a phoenix from the Inner Planes creates an explosion of fire that spreads across the sky. An enormous fiery bird forms in the center of the flames and smoke – an elder elemental possessed by a need to burn everything to ash. The phoenix rarely stays in one",
+          "place for long as it strives to transform the world into an inferno."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pit Fiend",
+      "size": [
+        "L"
+      ],
+      "type": {
+        "type": "fiend",
+        "tags": [
+          "devil"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 19,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "24d10 + 168",
+        "average": 300
+      },
+      "speed": {
+        "walk": 30,
+        "fly": 60,
+        "canHover": false
+      },
+      "str": 26,
+      "dex": 14,
+      "con": 24,
+      "int": 22,
+      "wis": 18,
+      "cha": 24,
+      "passive": 14,
+      "cr": "20",
+      "shortName": "Pit Fiend",
+      "senses": [
+        "truesight 120 ft."
+      ],
+      "senseTags": [
+        "U"
+      ],
+      "languages": [
+        "Infernal",
+        "telepathy 120 ft."
+      ],
+      "languageTags": [
+        "I",
+        "TP"
+      ],
+      "save": {
+        "dex": "+8",
+        "con": "+13",
+        "wis": "+10"
+      },
+      "resist": [
+        {
+          "resist": [
+            "cold"
+          ]
+        },
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks that aren't silvered"
+        }
+      ],
+      "immune": [
+        "fire",
+        "poison"
+      ],
+      "conditionImmune": [
+        "poisoned"
+      ],
+      "trait": [
+        {
+          "name": "Fear Aura",
+          "entries": [
+            "Any creature hostile to the pit fiend that starts its turn within 20 feet of the pit fiend must make a {@dc 21} Wisdom saving throw, unless the pit fiend is {@condition incapacitated}. On a failed save, the creature is {@condition frightened} until the start of its next turn. If a creature's saving throw is successful, the creature is immune to the pit fiend's Fear Aura for the next 24 hours."
+          ]
+        },
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The pit fiend has advantage on saving throws against spells and other magical effects."
+          ]
+        },
+        {
+          "name": "Magic Weapons",
+          "entries": [
+            "The pit fiend's weapon attacks are magical."
+          ]
+        }
+      ],
+      "conditionInflict": [
+        "frightened",
+        "incapacitated",
+        "poisoned"
+      ],
+      "traitTags": [
+        "Magic Resistance",
+        "Magic Weapons"
+      ],
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasting",
+          "headerEntries": [
+            "The pit fiend's spellcasting ability is Charisma (spell save {@dc 21}). The pit fiend can innately cast the following spells, requiring no material components:"
+          ],
+          "will": [
+            "{@spell detect magic}",
+            "{@spell fireball}"
+          ],
+          "daily": {
+            "3e": [
+              "{@spell hold monster}",
+              "{@spell wall of fire}"
+            ]
+          },
+          "ability": "cha",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "I"
+      ],
+      "damageTagsSpell": [
+        "F"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The pit fiend makes four attacks: one with its bite, one with its claw, one with its mace, and one with its tail."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 14} to hit, reach 5 ft., one target. {@h}22 ({@damage 4d6 + 8}) piercing damage. The target must succeed on a {@dc 21} Constitution saving throw or become {@condition poisoned}. While {@condition poisoned} in this way, the target can't regain hit points, and it takes 21 ({@damage 6d6}) poison damage at the start of each of its turns. The {@condition poisoned} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 14} to hit, reach 10 ft., one target. {@h}17 ({@damage 2d8 + 8}) slashing damage."
+          ]
+        },
+        {
+          "name": "Mace",
+          "entries": [
+            "{@atk mw} {@hit 14} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d6 + 8}) bludgeoning damage, plus 21 ({@damage 6d6}) fire damage."
+          ]
+        },
+        {
+          "name": "Tail",
+          "entries": [
+            "{@atk mw} {@hit 14} to hit, reach 10 ft., one target. {@h}24 ({@damage 3d10 + 8}) bludgeoning damage."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "B",
+        "F",
+        "I",
+        "P",
+        "S"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Pit Fiend|https://angrygolem-games.com/monster-manual/letter-p/pit-fiend-5e-stats/}",
+          "DESCRIPTION",
+          "The most terrible baatezu, pit fiends are giant winged humanoids, gargoylish in appearance, with huge bat-wings that can wrap around their body in defense, large fangs that drip with vile, green liquid, and hulking red, scaly bodies that burst into flame when thev are angered or excited.",
+          "HABITAT / SOCIETY",
+          "Pit fiends are the lords of Baator, the baatezu with the greatest power and station. Pit fiends are found throughout Baator, but are very rare on the upper layers and in the frigid cold of Cania, the eighth layer. Pit fiends are very rare on Avernus, Dis, and Minauros. They are rare on phlegethos, Stygia, Malbolge, and Maladomini. In the fearful realm of Nessus, the pit fiends are common.",
+          "Wherever they are, pit fiends wield enormous power. They lead legions of dozens of complete armies into battle against the tanar'ri. These huge forces are terrifying to behold, and any non-native of the Lower Planes who sees them flees in panic.",
+          "It is rumored that pit fiends are not the most powerful beings in Baator, but themselves servants of some greater power. If there are greater beings in Baator, certainly they are powerful enough to hide their presence from mere mortal sages.",
+          "ECOLOGY",
+          "Pit fiends are spawned from the powerful gelugons of Baator's eighth layer. When gelugons are found worthy, they are cast into the Pit of Flame for 1,001 days. They emerge as pit fiends."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pit Master, Yuan-Ti",
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "monstrosity",
+        "tags": [
+          "shapechanger",
+          "yuan-ti"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "N",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 14,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "16d8 + 16",
+        "average": 88
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 16,
+      "dex": 14,
+      "con": 13,
+      "int": 14,
+      "wis": 12,
+      "cha": 16,
+      "passive": 11,
+      "cr": "5",
+      "shortName": "Pit Master, Yuan-Ti",
+      "senses": [
+        "darkvision 120 ft. (penetrates magical darkness)"
+      ],
+      "senseTags": [
+        "SD"
+      ],
+      "languages": [
+        "Abyssal",
+        "Common",
+        "Draconic"
+      ],
+      "languageTags": [
+        "AB",
+        "C",
+        "DR"
+      ],
+      "save": {
+        "wis": "+3",
+        "cha": "+5"
+      },
+      "skill": {
+        "deception": "+5",
+        "stealth": "+4"
+      },
+      "trait": [
+        {
+          "name": "Shapechanger",
+          "entries": [
+            "The yuan-ti can use its action to polymorph into a Medium snake or back into its true form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It doesn't change form if it dies."
+          ]
+        },
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The yuan-ti has advantage on saving throws against spells and other magical effects."
+          ]
+        },
+        {
+          "name": "Poison's Disciple (2/Day)",
+          "entries": [
+            "The first time the yuan-ti hits with a melee attack on its turn, it can deal an extra 16 ({@damage 3d10}) poison damage to the target."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Magic Resistance",
+        "Shapechanger"
+      ],
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasting (Yuan-ti Form Only)",
+          "headerEntries": [
+            "The yuan-ti's innate spellcasting ability is Charisma (spell save {@dc 13}). The yuan-ti can innately cast the following spells, requiring no material components:"
+          ],
+          "will": [
+            "{@spell animal friendship} (snakes only)"
+          ],
+          "daily": {
+            "3": [
+              "{@spell suggestion}"
+            ]
+          },
+          "ability": "cha",
+          "type": "spellcasting"
+        },
+        {
+          "name": "Spellcasting (Yuan-ti Form Only)",
+          "headerEntries": [
+            "The yuan-ti is a 6th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 13}, +5 to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells:"
+          ],
+          "spells": {
+            "0": {
+              "spells": [
+                "{@spell eldritch blast} (range 300 ft., +3 bonus to each damage roll)",
+                "{@spell friends}",
+                "{@spell guidance}",
+                "{@spell mage hand}",
+                "{@spell message}",
+                "{@spell poison spray}"
+              ]
+            },
+            "1": {
+              "spells": [
+                "{@spell command}",
+                "{@spell hellish rebuke}",
+                "{@spell unseen servant}"
+              ],
+              "slots": 0
+            },
+            "2": {
+              "spells": [
+                "{@spell invisibility}",
+                "{@spell misty step}"
+              ],
+              "slots": 0
+            },
+            "3": {
+              "spells": [
+                "{@spell counterspell}",
+                "{@spell vampiric touch}"
+              ],
+              "slots": 2
+            }
+          },
+          "ability": "cha",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "I",
+        "F",
+        "CL"
+      ],
+      "damageTags": [
+        "I",
+        "P"
+      ],
+      "damageTagsSpell": [
+        "F",
+        "I",
+        "N",
+        "O"
+      ],
+      "action": [
+        {
+          "name": "Multiattack (Yuan-ti Form Only)",
+          "entries": [
+            "The yuan-ti makes two bite attacks using its snake arms."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage, plus 7 ({@damage 2d6}) poison damage."
+          ]
+        },
+        {
+          "name": "Merrshaulk's Slumber (1/Day)",
+          "entries": [
+            "The yuan-ti targets up to five creatures that it can see within 60 feet of it. Each target must succeed on a {@dc 13} Constitution saving throw or fall into a magical sleep and be {@condition unconscious} for 10 minutes. A sleeping target awakens if it takes damage or if someone uses an action to shake or slap tt awake. This magical sleep has no effect on a creature immune to being {@condition charmed}."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "conditionInflict": [
+        "unconscious"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Pit Master, Yuan-Ti|https://angrygolem-games.com/monster-manual/letter-p/pit-master-yuan-ti-5e-stats/}",
+          "DESCRIPTION",
+          "Pit masters are yuan-ti {@creature Malison, Yuan-Ti (type 1)|AGGMM|malison} priests that have made a pact with the god Merrshaulk and seek to rouse him from his slumber by sacrificing humanoids to him. They are the most traditionalist in attitude among yuan-ti and believe that they are best equipped to achieve the goals of their people. Pit masters are deeply involved in the race's long-term plan to take over humanoid governments, as well as in the ongoing effort to protect their cities from discovery or attacks by hostiles. They oppose reckless behavior and argue for a slow, cautious approach in all matters. This malison is the type that has a human head and",
+          "body and snakes for arms."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pixie",
+      "size": [
+        "T"
+      ],
+      "type": "fey",
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "N",
+        "G"
+      ],
+      "ac": [
+        15
+      ],
+      "hp": {
+        "formula": "1d4 ‒ 1",
+        "average": 1
+      },
+      "speed": {
+        "walk": 10,
+        "fly": 30,
+        "canHover": false
+      },
+      "str": 2,
+      "dex": 20,
+      "con": 8,
+      "int": 10,
+      "wis": 14,
+      "cha": 15,
+      "passive": 14,
+      "cr": "1/4",
+      "shortName": "Pixie",
+      "languages": [
+        "Sylvan"
+      ],
+      "languageTags": [
+        "S"
+      ],
+      "skill": {
+        "perception": "+4",
+        "stealth": "+7"
+      },
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasting.",
+          "headerEntries": [
+            "The pixie's innate spellcasting ability is Charisma (spell save {@dc 12}). It can innately cast the following spells, requiring only its pixie dust as a component:"
+          ],
+          "will": [
+            "{@spell druidcraft}"
+          ],
+          "daily": {
+            "1e": [
+              "{@spell confusion}",
+              "{@spell dancing lights}",
+              "{@spell detect evil and good}",
+              "{@spell detect thoughts}",
+              "{@spell dispel magic}",
+              "{@spell entangle}",
+              "{@spell fly}",
+              "{@spell phantasmal force} (this spell requires no concentration and lasts ten times longer.)",
+              "{@spell polymorph}",
+              "{@spell sleep}"
+            ]
+          },
+          "ability": "cha",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "I"
+      ],
+      "damageTagsSpell": [
+        "Y"
+      ],
+      "trait": [
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The pixie has advantage on saving throws against spells and other magical effects."
+          ]
+        },
+        {
+          "name": "Master Archer",
+          "entries": [
+            "The pixie has advantage on attacks made with its shortbow."
+          ]
+        },
+        {
+          "name": "Weapon Finesse",
+          "entries": [
+            "When making an Attack with a melee weapon, the pixie use its Dexterity modifier for the Attack"
+          ]
+        }
+      ],
+      "traitTags": [
+        "Magic Resistance"
+      ],
+      "action": [
+        {
+          "name": "Shortsword",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}1 ({@damage 1d1}) piercing damage."
+          ]
+        },
+        {
+          "name": "Shortbow (Standard Arrow)",
+          "entries": [
+            "{@atk rw} {@hit 7} to hit, range 20/80 ft., one target. {@h}7 ({@damage 1d2}) piercing damage."
+          ]
+        },
+        {
+          "name": "Shortbow (Sleep Arrow)",
+          "entries": [
+            "{@atk rw} {@hit 7} to hit, range 20/80 ft., one target. {@h}7 ({@damage 1d2}) piercing damage. The target must make a {@dc 10} Constitution saving throw of suffer the effect of a {@spell sleep} spell."
+          ]
+        },
+        {
+          "name": "Shortbow (War Arrow)",
+          "entries": [
+            "{@atk rw} {@hit 7} to hit, range 30/120 ft., one target. {@h}7 ({@damage 1d2}) piercing damage."
+          ]
+        },
+        {
+          "name": "Shortbow (Forget Arrow)",
+          "entries": [
+            "{@atk rw} {@hit 7} to hit, range 20/80 ft., one target. {@h}7 ({@damage 1d0}) piercing damage. The target must make a {@dc 10} Wisdom saving throw of suffer the effect of a {@spell modify memory} spell. The effect of the spell can be dispelled by a {@spell greater restoration} or more powerful spell."
+          ]
+        },
+        {
+          "name": "Superior Invisibility",
+          "entries": [
+            "The pixie magically turns {@condition invisible} until its concentration ends (as if concentrating on a spell). Any equipment the pixie wears or carries is {@condition invisible} with it."
+          ]
+        },
+        {
+          "name": "Touch of Confusion",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d0}) bludgeoning damage. The target must make a {@dc 10} Wisdom saving throw of suffer the effect of a {@spell confusion} spell. The effect of the spell can be dispelled by a {@spell remove curse} or more powerful spell."
+          ]
+        }
+      ],
+      "miscTags": [
+        "MW",
+        "RW",
+        "RNG"
+      ],
+      "damageTags": [
+        "B",
+        "P"
+      ],
+      "conditionInflict": [
+        "invisible"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Pixie|https://angrygolem-games.com/monster-manual/letter-p/pixie-5e-stats/}",
+          "{@link 5th Edition Advanced Mode|https://www.drivethrurpg.com/product/382784/5th-ADVANCED-MODE?affiliate_id=1465812&src=Pixie}",
+          "Limiting the power of a character and making the overall difficulty of the game harder, does not reduce the creativity, indeed it does quite the opposite.",
+          "The Game Master has the option to use any and all of the instances proposed in this guide, or just some of them according to their preference.",
+          "It is the lack of something that move and motivate characters, not the abundance of it",
+          "DESCRIPTION",
+          "Pixies stand about 2 ½ feet tall. When visible, they resemble small elves, but with longer ears. Pixies have two silver wings, like those of moths. They wear bright clothing, often with a cap and a pair of shoes with curled and pointed toes.",
+          "COMBAT",
+          "Pixies carry sprite-sized swords and bows. They use three types of arrows, and shoot them with advantage to the attack roll. Besides standard, pixies use sleep-arrows, war arrows, and an arrow which does no physical harm to the target, but those hit by this arrow must make a successful saving throw or suffer complete loss of memory.",
+          "HABITAT / SOCIETY",
+          "Pixies live in deep forest caves, dancing in moonlit glades to the music of crickets and frogs. They are pranksters and they love to lead travelers astray. They use their illusion powers to accomplish this, hence the expression “pixie-led” for one who has lost his way. They like to frighten maidens, rap on walls, blow out candles, and play in water.",
+          "Pixies love to trick misers into giving away their treasure, especially by convincing them that something horrible will happen to them if they do not. Pixies carry no treasure, but sometimes have a hoard in their lair to impress visitors. Pixies use treasure to taunt greedy people, and then play merciless pranks on them until they abandon their search for the pixies' fortune. If the victim shows no greed and exhibits a good sense of humor about their pranks, the pixies may allow that individual to choose one item from their hoard.",
+          "Pixies dwell together in a community of clans or families that seem to mimic human customs. Each family has a last name, and family and community loyalty is very important to pixies.",
+          "ECOLOGY",
+          "Pixies eat fruits and nectar. The most famous by-product of pixies is pixie dust, also known as dust of disappearance. Crushing 50 pixie wings into a fine powder creates one dose of dust of disappearance. Naturally, pixies frown on this use of their wings.",
+          "Pixie is employed as material component to empower the following spells:{@spell Minor Illusion}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pixie Sergent",
+      "size": [
+        "T"
+      ],
+      "type": "fey",
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "N",
+        "G"
+      ],
+      "ac": [
+        15
+      ],
+      "hp": {
+        "formula": "1d4 ‒ 1",
+        "average": 1
+      },
+      "speed": {
+        "walk": 10,
+        "fly": 30,
+        "canHover": false
+      },
+      "str": 3,
+      "dex": 21,
+      "con": 9,
+      "int": 11,
+      "wis": 15,
+      "cha": 16,
+      "passive": 14,
+      "cr": "1/2",
+      "shortName": "Pixie Sergent",
+      "languages": [
+        "Sylvan"
+      ],
+      "languageTags": [
+        "S"
+      ],
+      "save": {
+        "cha": "+5"
+      },
+      "skill": {
+        "perception": "+4",
+        "stealth": "+7"
+      },
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasting",
+          "headerEntries": [
+            "The pixie's innate spellcasting ability is Charisma (spell save {@dc 12}). It can innately cast the following spells, requiring only its pixie dust as a component:"
+          ],
+          "will": [
+            "{@spell druidcraft}"
+          ],
+          "daily": {
+            "1e": [
+              "{@spell confusion}",
+              "{@spell dancing lights}",
+              "{@spell detect evil and good}",
+              "{@spell detect thoughts}",
+              "{@spell dispel magic}",
+              "{@spell entangle}",
+              "{@spell fly}",
+              "{@spell Otto's irresistible dance}",
+              "{@spell phantasmal force} (this spell requires no concentration and lasts ten times longer)",
+              "{@spell polymorph}",
+              "{@spell sleep}"
+            ]
+          },
+          "ability": "cha",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "I"
+      ],
+      "damageTagsSpell": [
+        "Y"
+      ],
+      "trait": [
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The pixie has advantage on saving throws against spells and other magical effects."
+          ]
+        },
+        {
+          "name": "Master Archer",
+          "entries": [
+            "The pixie has advantage on attacks made with its shortbow."
+          ]
+        },
+        {
+          "name": "Weapon Finesse",
+          "entries": [
+            "When making an Attack with a melee weapon, the pixie use its Dexterity modifier for the Attack"
+          ]
+        }
+      ],
+      "traitTags": [
+        "Magic Resistance"
+      ],
+      "action": [
+        {
+          "name": "Shortsword",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d1}) piercing damage."
+          ]
+        },
+        {
+          "name": "Shortbow (Standard Arrow)",
+          "entries": [
+            "{@atk rw} {@hit 7} to hit, range 20/80 ft., one target. {@h}7 ({@damage 1d2}) piercing damage."
+          ]
+        },
+        {
+          "name": "Shortbow (Sleep Arrow)",
+          "entries": [
+            "{@atk rw} {@hit 7} to hit, range 20/80 ft., one target. {@h}7 ({@damage 1d2}) piercing damage. The target must make a {@dc 10} Constitution saving throw of suffer the effect of a {@spell sleep} spell."
+          ]
+        },
+        {
+          "name": "Shortbow (War Arrow)",
+          "entries": [
+            "{@atk rw} {@hit 7} to hit, range 30/120 ft., one target. {@h}7 ({@damage 1d2}) piercing damage."
+          ]
+        },
+        {
+          "name": "Shortbow (Forget Arrow)",
+          "entries": [
+            "{@atk rw} {@hit 7} to hit, range 20/80 ft., one target. {@h}7 ({@damage 1d0}) piercing damage. The target must make a {@dc 10} Wisdom saving throw of suffer the effect of a {@spell modify memory} spell. The effect of the spell can be dispelled by a {@spell greater restoration} or more powerful spell."
+          ]
+        },
+        {
+          "name": "Superior Invisibility",
+          "entries": [
+            "The pixie magically turns {@condition invisible} until its concentration ends (as if concentrating on a spell). Any equipment the pixie wears or carries is {@condition invisible} with it."
+          ]
+        },
+        {
+          "name": "Touch of Confusion",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d0}) bludgeoning damage. The target must make a {@dc 10} Wisdom saving throw of suffer the effect of a {@spell confusion} spell. The effect of the spell can be dispelled by a {@spell remove curse} or more powerful spell."
+          ]
+        }
+      ],
+      "miscTags": [
+        "MW",
+        "RW",
+        "RNG"
+      ],
+      "damageTags": [
+        "B",
+        "P"
+      ],
+      "conditionInflict": [
+        "invisible"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Pixie Sergent|https://angrygolem-games.com/monster-manual/letter-p/pixie-sergent-5e-stats/}",
+          "DESCRIPTION",
+          "Pixies stand about 2.5 feet tall. When visible, they resemble small elves, but with longer ears. Pixies have two silver wings, like those of moths. They wear bright clothing, often with a cap and a pair of shoes with curled and pointed toes.",
+          "COMBAT",
+          "Pixies carry sprite-sized swords and bows. They use three types of arrows, and shoot them with advantage to the attack roll. Besides standard, pixies use sleep-arrows, war arrows, and an arrow which does no physical harm to the target, but those hit by this arrow must make a successful saving throw or suffer complete loss of memory.",
+          "HABITAT / SOCIETY",
+          "Pixies live in deep forest caves, dancing in moonlit glades to the music of crickets and frogs. They are pranksters and they love to lead travelers astray. They use their illusion powers to accomplish this, hence the expression “pixie-led” for one who has lost his way. They like to frighten maidens, rap on walls, blow out candles, and play in water.",
+          "Pixies love to trick misers into giving away their treasure, especially by convincing them that something horrible will happen to them if they do not. Pixies carry no treasure, but sometimes have a hoard in their lair to impress visitors. Pixies use treasure to taunt greedy people, and then play merciless pranks on them until they abandon their search for the pixies' fortune. If the victim shows no greed and exhibits a good sense of humor about their pranks, the pixies may allow that individual to choose one item from their hoard.",
+          "Pixies dwell together in a community of clans or families that seem to mimic human customs. Each family has a last name, and family and community loyalty is very important to pixies.",
+          "ECOLOGY",
+          "Pixies eat fruits and nectar. The most famous by-product of pixies is pixie dust, also known as dust of disappearance. Crushing 50 pixie wings into a fine powder creates one dose of dust of disappearance. Naturally, pixies frown on this use of their wings.",
+          "Pixie is employed as material component to empower the following spells: {@spell Minor Illusion}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Planetar",
+      "size": [
+        "L"
+      ],
+      "type": "celestial",
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "L",
+        "G"
+      ],
+      "ac": [
+        {
+          "ac": 19,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "16d10 + 112",
+        "average": 200
+      },
+      "speed": {
+        "walk": 40,
+        "fly": 120,
+        "canHover": false
+      },
+      "str": 24,
+      "dex": 20,
+      "con": 24,
+      "int": 19,
+      "wis": 22,
+      "cha": 25,
+      "passive": 21,
+      "cr": "16",
+      "shortName": "Planetar",
+      "senses": [
+        "truesight 120 ft."
+      ],
+      "senseTags": [
+        "U"
+      ],
+      "languages": [
+        "All",
+        "telepathy 120 ft."
+      ],
+      "languageTags": [
+        "TP"
+      ],
+      "save": {
+        "con": "+12",
+        "wis": "+11",
+        "cha": "+12"
+      },
+      "skill": {
+        "perception": "+11"
+      },
+      "resist": [
+        {
+          "resist": [
+            "radiant"
+          ]
+        },
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks"
+        }
+      ],
+      "conditionImmune": [
+        "charmed",
+        "exhaustion",
+        "frightened"
+      ],
+      "trait": [
+        {
+          "name": "Angelic Weapons",
+          "entries": [
+            "The planetar's weapon attacks are magical. When the planetar hits with any weapon, the weapon deals an extra {@damage 5d8} radiant damage (included in the attack)."
+          ]
+        },
+        {
+          "name": "Divine Awareness",
+          "entries": [
+            "The planetar knows if it hears a lie."
+          ]
+        },
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The planetar has advantage on saving throws against spells and other magical effects."
+          ]
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasting",
+          "headerEntries": [
+            "The planetar's spellcasting ability is Charisma (spell save {@dc 20}). The planetar can innately cast the following spells, requiring no material components:"
+          ],
+          "will": [
+            "{@spell detect evil and good}",
+            "{@spell invisibility} (self only)"
+          ],
+          "daily": {
+            "3e": [
+              "{@spell blade barrier}",
+              "{@spell dispel evil and good}",
+              "{@spell flame strike}",
+              "{@spell raise dead}"
+            ],
+            "1e": [
+              "{@spell commune}",
+              "{@spell control weather}",
+              "{@spell insect plague}"
+            ]
+          },
+          "ability": "cha",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "I"
+      ],
+      "damageTagsSpell": [
+        "F",
+        "P",
+        "R",
+        "S"
+      ],
+      "traitTags": [
+        "Magic Resistance"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The planetar makes two melee attacks."
+          ]
+        },
+        {
+          "name": "Greatsword",
+          "entries": [
+            "{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}21 ({@damage 4d6 + 7}) slashing damage, plus 22 ({@damage 5d8}) radiant damage."
+          ]
+        },
+        {
+          "name": "Healing Touch (4/Day)",
+          "entries": [
+            "The planetar touches another creature. The target magically regains 30 ({@dice 6d8 + 3}) hit points and is freed from any curse, disease, poison, blindness, or deafness."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "R",
+        "S"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Planetar|https://angrygolem-games.com/monster-manual/letter-p/planetar-5e-stats/}",
+          "{@link PLANETAR's TACTICS (read the article)|https://angrygolem-games.com/dnd-5e-planetar-tactics-build-challenging-encounters-against-a-planetar/}",
+          "DESCRIPTION",
+          "Planetars are powerful spirits that directly serve the powers of the Upper Planes. They are tall, commanding humanoids who have smooth emerald skin, white feathered wings, hairless heads, and eyes of a penetrating blue. Their overall manner projects strength and confidence.",
+          "They can communicate telepathically with any creature within a 120-foot range.",
+          "HABITAT / SOCIETY",
+          "Planetars aid only the most powerful mortal servants of good. As a rule, characters of at least 12th level on a mission directly related to a good power have a base 5% chance to gain the attention of a planetar, plus 1% per level above 12th. Modify this chance according to circumstances.",
+          "ECOLOGY",
+          "Like all angels, planetars are corporeal good entities that exist outside any ecosystem.",
+          "Planetar is employed as material component to empower the following spells: {@spell Bless}, {@spell Guiding Bolt}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
     }
   ]
 }
