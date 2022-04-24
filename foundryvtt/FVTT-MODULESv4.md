@@ -49,7 +49,6 @@
 - [UTILITY][Quick Insert](https://gitlab.com/fvtt-modules-lab/quick-insert )
 - [UTILITY][Item Piles](https://github.com/fantasycalendar/FoundryVTT-ItemPiles)
 - [UTILITY][Icon Picker](https://github.com/teroparvinen/foundry-icon-picker)
-- [UTILITY][TransferStuff](https://github.com/playest/TransferStuff)
 - [EFFECT][Token Magic FX](https://github.com/Feu-Secret/Tokenmagic)
 - [TOKEN][Your Tokens Visible](https://github.com/David-Zvekic/TokensVisible)
 - [TOKEN][Token Says](https://github.com/napolitanod/Token-Says)
@@ -66,7 +65,6 @@
 - [MAP][Parallaxia](https://gitlab.com/reichler/parallaxia )
 - [UTILITY/MODULES][DF Settings Clarity](https://github.com/flamewave000/dragonflagon-fvtt/tree/master/df-settings-clarity )
 - [JOURNAL/CHAT][Polyglot](https://github.com/League-of-Foundry-Developers/fvtt-module-polyglot )
-- [JOURNAL][Storyteller for Foundry VTT](https://github.com/Xbozon/storyteller)
 - [UTILITY][Pause Control](https://gitlab.com/koboldworks/agnostic/pause-control)
 - [WALL][Wall Height](https://github.com/schultzcole/FVTT-Wall-Height )
 
@@ -79,6 +77,9 @@
 - [EXTERNAL][Popout](https://github.com/kakaroto/fvtt-module-popout)
 - [UTILITY][Rangefinder](https://github.com/manuelVo/foundryvtt-rangefinder)
 - [UTILITY\AUDIO][Ensemble - drag and drop your sound files](https://github.com/janckoch/Ensemble)
+- [MACRO/UTILITY][Snugug's Little Helpers](https://github.com/Snugug/foundry-helpers)
+- [UTILITY][Token frames]([token_frames](https://github.com/jcolson/token_frames)
+- [UTILITY][Tile Sort](https://github.com/theripper93/tile-sort)
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
@@ -94,7 +95,8 @@
 - [COMBAT][Boss Bar](https://github.com/theripper93/Boss-Bar)
 - [COMBAT][Smart Target](https://github.com/theripper93/Smart-Target)
 - [COMBAT][Tagger](https://github.com/fantasycalendar/FoundryVTT-Tagger)
-- [COMBAT][TOKEN][Token Auras](https://bitbucket.org/Fyorl/token-auras )
+- [COMBAT][Token Auras](https://bitbucket.org/Fyorl/token-auras )
+- [COMBAT][Shy Effects](https://github.com/kandashi/shy-effect-icons)
 
 ## MODULES NECESSARI SOLO IN FASE DI COSTRUZIONE E NON DI SESSIONE
 
@@ -131,7 +133,7 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 - [COMBAT][DnD5e Helpers](https://github.com/trioderegion/dnd5e-helpers )
 - [COMBAT][Wild Magic Surge 5e](https://github.com/johnnolan/wild-magic-surge-5e)
 
-- [ENTITY][Not Enough NPCs: A 5e NPC Generator](https://github.com/ardittristan/VTTNPCGen )
+
 - [ITEM][Items with Rollable Tables DnD5e](https://github.com/ElfFriend-DnD/foundryvtt-items-with-rolltables-5e)
 - [CHARACTER SHEET/UTILITY][Variant Encumbrance 5e](https://github.com/VanirDev/VariantEncumbrance )
 - [CHARACTHER SHEET/UTILITY][Party Inventory](https://github.com/teroparvinen/foundry-party-inventory)
