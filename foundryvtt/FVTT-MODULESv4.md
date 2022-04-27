@@ -17,7 +17,7 @@
 - [ROLL][Dice Calculator/Dice Tray](https://gitlab.com/asacolips-projects/foundry-mods/foundry-vtt-dice-calculator/ )
 - [TOKEN][Drag Ruler](https://github.com/manuelVo/foundryvtt-drag-ruler )
 - [UTILITY][Simple Calendar](https://github.com/vigoren/foundryvtt-simple-calendar )
-- [MAP][Armreach](https://github.com/p4535992/foundryvtt-arms-reach ) 
+- [MAP][Armreach](https://github.com/p4535992/foundryvtt-arms-reach )
 - [WALL][Smart Door](https://github.com/manuelVo/foundryvtt-smart-doors )
 - [SCENE][foundryvtt stairways](https://gitlab.com/SWW13/foundryvtt-stairways)
 
@@ -71,7 +71,7 @@
 - [TOKEN/SCENES][Go to Player](https://github.com/theripper93/go-to-player)
 - [TOKEN/SCENES][pull-players-to-scene](https://github.com/Mr-Byte/pull-players-to-scene )
 - [SIDEBAR][Hidden Entity Links](https://github.com/p4535992/vtt-hidden-entity-links)
-- [NOTE][Pin Cushion](https://github.com/death-save/pin-cushion )
+- [NOTE][Pin Cushion](https://github.com/p4535992/pin-cushion)
 - [NOTE][Pin Fixer](https://foundryvtt.com/packages/pin-fixer)
 - [JOURNAL/CHAT][Polyglot](https://github.com/League-of-Foundry-Developers/fvtt-module-polyglot )
 - [EXTERNAL][Popout](https://github.com/kakaroto/fvtt-module-popout)
