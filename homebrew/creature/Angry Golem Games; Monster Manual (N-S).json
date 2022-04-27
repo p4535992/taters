@@ -2092,7 +2092,7 @@
       "int": 25,
       "wis": 25,
       "cha": 25,
-      "passive": 14,
+      "passive": 17,
       "cr": "15",
       "shortName": "Nephthys, Egyptian Avatar",
       "senses": [
@@ -3499,7 +3499,7 @@
       "int": 25,
       "wis": 25,
       "cha": 25,
-      "passive": 14,
+      "passive": 17,
       "cr": "15",
       "shortName": "Nuth, Egyptian Avatar",
       "senses": [
@@ -5358,7 +5358,7 @@
       "int": 20,
       "wis": 20,
       "cha": 10,
-      "passive": 14,
+      "passive": 15,
       "cr": "15",
       "shortName": "Ometeotl, Aztec Avatar",
       "senses": [
@@ -7201,7 +7201,7 @@
       "int": 25,
       "wis": 25,
       "cha": 24,
-      "passive": 14,
+      "passive": 17,
       "cr": "15",
       "shortName": "Osiris, Egyptian Avatar",
       "senses": [
@@ -10650,7 +10650,7 @@
       "int": 25,
       "wis": 25,
       "cha": 18,
-      "passive": 14,
+      "passive": 17,
       "cr": "15",
       "shortName": "Ptah, Egyptian Avatar",
       "senses": [
@@ -11319,6 +11319,806 @@
           "The cubic quadrones comprise the upper level of worker modrons. They serve as field officers, and each battalion has a special \"dozen-unit\", containing nothing but quadrone warriors. With their four arms, they are capable of wielding two bows at the same time. Some quadrones are winged (the wings replace one set of arms and negate the use of one bow) which are used for special missions or for aerial combat. As four-function creatures, quadrones can report actions and observations, make plans, react to unexpected occurrences, and act to remedy them.",
           "All quadrones have senses equal to 150% of normal human standards. They enjoy 180-foot-range infravision. Equipped with sensory organs on all six sides of their cubic bodies, quadrones are never surprised under normal circumstances.",
           "Quadrone is employed as material component to empower the following spells: {@spell Cure Wounds}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Quasit",
+      "size": [
+        "T"
+      ],
+      "type": {
+        "type": "fiend",
+        "tags": [
+          "demon",
+          "shapechanger"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        13
+      ],
+      "hp": {
+        "formula": "3d4",
+        "average": 7
+      },
+      "speed": {
+        "walk": 40
+      },
+      "str": 5,
+      "dex": 17,
+      "con": 10,
+      "int": 7,
+      "wis": 10,
+      "cha": 10,
+      "passive": 10,
+      "cr": "1",
+      "shortName": "Quasit",
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "senseTags": [
+        "SD"
+      ],
+      "languages": [
+        "Abyssal",
+        "Common"
+      ],
+      "languageTags": [
+        "AB",
+        "C"
+      ],
+      "skill": {
+        "stealth": "+5"
+      },
+      "resist": [
+        {
+          "resist": [
+            "cold",
+            "fire",
+            "lightning"
+          ]
+        },
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks"
+        }
+      ],
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "poisoned"
+      ],
+      "trait": [
+        {
+          "name": "Shapechanger",
+          "entries": [
+            "The quasit can use its action to polymorph into a beast form that resembles a bat (speed 10 ft. fly 40 ft.), a centipede (40 ft., climb 40 ft.), or a toad (40 ft., swim 40 ft.), or back into its true form. Its statistics are the same in each form, except for the speed changes noted. Any equipment it is wearing or carrying isn’t transformed. It reverts to its true form if it dies."
+          ]
+        },
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The quasit has advantage on saving throws against spells and other magical effects."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Magic Resistance",
+        "Shapechanger"
+      ],
+      "action": [
+        {
+          "name": "Claws (Bite in Beast Form)",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 +3}) piercing damage, and the target must succeed on a {@dc 10} Constitution saving throw or take 5 ({@damage 2d4}) poison damage and become {@condition poisoned} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+          ]
+        },
+        {
+          "name": "Scare (1/Day)",
+          "entries": [
+            "One creature of the quasit’s choice within 20 feet of it must succeed on a {@dc 10} Wisdom saving throw or be {@condition frightened} for 1 minute. The target can repeat the saving throw at the end of each of its turns, with disadvantage if the quasit is within line of sight, ending the effect on itself on a success."
+          ]
+        },
+        {
+          "name": "Invisibility",
+          "entries": [
+            "The quasit magically turns {@condition invisible} until it attacks or uses Scare, or until its concentration ends (as if concentrating on a spell). Any equipment the quasit wears or carries is {@condition invisible} with it."
+          ]
+        }
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "damageTags": [
+        "I",
+        "P"
+      ],
+      "conditionInflict": [
+        "frightened",
+        "invisible",
+        "poisoned"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Quasit|https://angrygolem-games.com/monster-manual/letter-q/quasit-5e-stats/}",
+          "DESCRIPTION",
+          "Quasits are chaotic evil counterparts to imps. The chaotic evil priests and wizards which quasits “serve” gain the same benefits and disadvantages that an imp’s master does. Like imps, each quasit can assume two other forms. Those most commonly chosen by quasits are {@creature bat|AGGMM}s, {@creature giant centipede|AGGMM}s, {@creature frog|AGGMM}s, or {@creature wolves|AGGMM4}. They can use their magic in any of their forms.",
+          "Quasits can turn {@spell Invisibility|PHB|invisible}, {@spell Detect Evil and Good|PHB|detect good}, or {@spell detect magic} at will. They regenerate 1 hit point per round and can unleash a blast of fear with a 30 foot range radius once per day. Once each week the quasit can commune with the lower planes (asking up to 6 questions)."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Quaggoth",
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "quaggoth"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "C",
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 13,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "6d8 + 18",
+        "average": 45
+      },
+      "speed": {
+        "walk": 30,
+        "climb": 30
+      },
+      "str": 17,
+      "dex": 12,
+      "con": 16,
+      "int": 6,
+      "wis": 12,
+      "cha": 7,
+      "passive": 11,
+      "cr": "2",
+      "shortName": "Quaggoth",
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "senseTags": [
+        "SD"
+      ],
+      "languages": [
+        "Undercommon"
+      ],
+      "languageTags": [
+        "U"
+      ],
+      "skill": {
+        "athletics": "+5"
+      },
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "poisoned"
+      ],
+      "trait": [
+        {
+          "name": "Wounded Fury",
+          "entries": [
+            "While it has 10 hit points or fewer, the quaggoth has advantage on attack rolls. In addition, it deals an extra 7 ({@damage 2d6}) damage to any target it hits with a melee attack."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The quaggoth makes two claw attacks."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "S"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Quaggoth|https://angrygolem-games.com/monster-manual/letter-q/quaggoth-5e-stats/}",
+          "DESCRIPTION",
+          "Quaggoths are humanoids with long, shaggy, white hair covering their entire bodies. They wear no clothing. Warlike and vicious, they roam the Underdark looking for prey. Drow sometimes enslave them as guards and spider handlers.",
+          "Quaggoths speak a halting form of Undercommon, and can grasp only simple concepts. More intelligent quaggoths may also speak a few words of Duergar, Drow, or Common.",
+          "HABITAT / SOCIETY",
+          "Quaggoths are nomadic hunters. They change territories periodically. In each new territory, they claim a central cave as a lair, leaving treasure with a few guards. The rest of the tribe hunts, returning periodically to rest and change guards.",
+          "Thonots control what passes for religious life among quaggoths. They oversee what few rituals there are; those rituals which are known include the daily preparation for hunting, coming of age, and death (a brief whistling to send the spirit away before the rest of the quaggoths eat the body).",
+          "Quaggoths can mate at any time of the year. They are not known to have any courtship or mating rituals. Young are born about 10 months after mating. Births are usually singular, but twins are not uncommon.",
+          "The origin of quaggoths is unknown. Some sages claim that they were once a semi-civilized race which dominated much of the Underdark through conquest and ritual sacrifice, until the drow, duergar, and other races broke their power. Others speculate they had some sort of civilization on the surface and were driven underground; this theory is supported by the quaggoths’ hatred for surface-dwelling dwarves and elves.",
+          "ECOLOGY",
+          "Quaggoths produce a few artifacts, mostly crudely carved stone items. A few seem to be talented at making necklaces with wooden, bone, or stone beads.",
+          "Quaggoths fear no creature. Though they are dangerous hunters, they are just as often prey for other predators of the Underdark. Quaggoths can be trained as servants and guards if captured early."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Quetzalcoatl, Aztec’s Avatar",
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "avatar"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "C",
+        "G"
+      ],
+      "ac": [
+        22
+      ],
+      "hp": {
+        "formula": "22d10 + 110",
+        "average": 231
+      },
+      "speed": {
+        "walk": 75,
+        "fly": 100,
+        "canHover": false
+      },
+      "str": 19,
+      "dex": 18,
+      "con": 20,
+      "int": 18,
+      "wis": 18,
+      "cha": 6,
+      "passive": 14,
+      "cr": "15",
+      "shortName": "Quetzalcoatl, Aztec’s Avatar",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "All"
+      ],
+      "skill": {
+        "acrobatics": "+4",
+        "animal handling": "+4",
+        "arcana": "+4",
+        "athletics": "+4",
+        "deception": "+4",
+        "history": "+4",
+        "insight": "+4",
+        "intimidation": "+4",
+        "investigation": "+4",
+        "medicine": "+4",
+        "nature": "+4",
+        "perception": "+4",
+        "performance": "+4",
+        "persuasion": "+4",
+        "religion": "+4",
+        "sleight of hand": "+4",
+        "stealth": "+4",
+        "survival": "+4"
+      },
+      "trait": [
+        {
+          "name": "Constriction",
+          "entries": [
+            "Anyone hit by the avatar must make a {@dc 23} strenght saving throw or be entwined by the avatar’s body. They will suffer {@dice 1d10} points of crushing damage per round until the hold is broken. The avatar may entwine more than one target at a time and continue its normal attacks while the targets are entwined."
+          ]
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "The avatar has access to priest spells in any sphere."
+          ],
+          "type": "spellcasting"
+        }
+      ],
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk ms} {@hit 12} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d10 + 6}) piercing damage."
+          ]
+        }
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Quetzalcoatl, Aztec’s Avatar|https://angrygolem-games.com/monster-manual/letter-q/quetzalcoatl-aztecs-avatar/}",
+          "DESCRIPTION",
+          "In avatar form, Quetzalcoatl usually appears as a talking, feathered snake.",
+          "{@link God & Clergy (go to page)|https://angrygolem-games.com/monster-manual/letter-q/quelzacoatl-god-and-clerics-for-dd-5e/}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Quetzalcoatlus",
+      "size": [
+        "H"
+      ],
+      "type": {
+        "type": "beast",
+        "tags": [
+          "dinosaur"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        {
+          "ac": 13,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "4d12 + 4",
+        "average": 30
+      },
+      "speed": {
+        "walk": 10,
+        "fly": 80,
+        "canHover": false
+      },
+      "str": 15,
+      "dex": 13,
+      "con": 13,
+      "int": 2,
+      "wis": 10,
+      "cha": 5,
+      "passive": 12,
+      "cr": "2",
+      "shortName": "Quetzalcoatlus",
+      "skill": {
+        "perception": "+2"
+      },
+      "trait": [
+        {
+          "name": "Dive Attack",
+          "entries": [
+            "If the quetzalcoatlus is flying and dives at least 30 feet toward a target and then hits "
+          ]
+        },
+        {
+          "name": "Flyby",
+          "entries": [
+            "The quetzalcoatlus doesn’t provoke an opportunity attack when it flies out of an enemy’s reach."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Flyby"
+      ],
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 10 ft., one target. {@h}12 ({@damage 3d6 + 2}) piercing damage."
+          ]
+        }
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Quetzalcoatlus|https://angrygolem-games.com/monster-manual/letter-q/quetzalcoatlus-5e-stats/}",
+          "{@link 5th Edition Advanced Mode|https://www.drivethrurpg.com/product/382784/5th-ADVANCED-MODE?affiliate_id=1465812&src=Ankylosaurus}",
+          "Limiting the power of a character and making the overall difficulty of the game harder, does not reduce the creativity, indeed it does quite the opposite.",
+          "The Game Master has the option to use any and all of the instances proposed in this guide, or just some of them according to their preference.",
+          "It is the lack of something that move and motivate characters, not the abundance of it",
+          "DESCRIPTION",
+          "This giant relative of the pteranodon has a wingspan exceeding 30 feet. Although it can move on the ground like a quadruped, it is more comfortable in the air."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Quickling",
+      "size": [
+        "T"
+      ],
+      "type": "fey",
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        16
+      ],
+      "hp": {
+        "formula": "3d4 + 3",
+        "average": 10
+      },
+      "speed": {
+        "walk": 120
+      },
+      "str": 4,
+      "dex": 23,
+      "con": 13,
+      "int": 10,
+      "wis": 12,
+      "cha": 7,
+      "passive": 15,
+      "cr": "1",
+      "shortName": "Quickling",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "Common",
+        "Sylvan"
+      ],
+      "languageTags": [
+        "C",
+        "S"
+      ],
+      "skill": {
+        "acrobatics": "+8",
+        "sleight of hand": "+8",
+        "stealth": "+8",
+        "perception": "+5"
+      },
+      "trait": [
+        {
+          "name": "Blurred Movement",
+          "entries": [
+            "Attack rolls against the quickling have disadvantage unless the quickling is {@condition incapacitated} or {@condition restrained}."
+          ]
+        },
+        {
+          "name": "Evasion",
+          "entries": [
+            "If the quickling is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The quickling makes three dagger attacks."
+          ]
+        },
+        {
+          "name": "Dagger",
+          "entries": [
+            "{@atk mw,rw} {@hit 8} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}8 ({@damage 1d4 +6}) piercing damage in melee, or 8 ({@damage 1d4 +6}) piercing damage at range."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "miscTags": [
+        "RW",
+        "MW",
+        "THW"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Quickling|https://angrygolem-games.com/monster-manual/letter-q/quickling-5e-stats/}",
+          "DESCRIPTION",
+          "Quicklings rocket through haunting, twisted forests where the unseelie fey hold sway, both in the Feywild and in the world. Racing faster than the eye can track, each appears as little more than a blurry wavering in the air. A quickling is a small, slender fey, similar to a miniature elf with sharp, feral features. Its cold, cruel eyes gleam like jewels."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Quipper",
+      "size": [
+        "T"
+      ],
+      "type": {
+        "type": "beast",
+        "tags": [
+          "animal"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        13
+      ],
+      "hp": {
+        "formula": "1d4 ‒ 1",
+        "average": 1
+      },
+      "speed": {
+        "swim": 40
+      },
+      "str": 2,
+      "dex": 16,
+      "con": 9,
+      "int": 1,
+      "wis": 7,
+      "cha": 2,
+      "passive": 8,
+      "cr": "0",
+      "shortName": "Quipper",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "trait": [
+        {
+          "name": "Blood Frenzy",
+          "entries": [
+            "The quipper has advantage on melee attack rolls against any creature that doesn’t have all its hit points."
+          ]
+        },
+        {
+          "name": "Water Breathing",
+          "entries": [
+            "The quipper can breathe only underwater."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Water Breathing"
+      ],
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d1}) piercing damage."
+          ]
+        }
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Quipper|https://angrygolem-games.com/monster-manual/letter-p/quipper-5e-stats/}",
+          "DESCRIPTION",
+          "Quippers are freshwater piranhas that live in colder waters.",
+          "Quipper travel in schools of 5d10. There is a 75% chance that at least one will attack any creature that swims or wades near the school. If they attack and blood is drawn, the entire school goes berserk and each quipper attacks twice per melee round. Up to {@dice 5d6} quippers will attack a single, man-sized humanoid simultaneously."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ra, Egyptian Avatar",
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "avatar"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "L",
+        "N"
+      ],
+      "ac": [
+        23
+      ],
+      "hp": {
+        "formula": "24d10 + 168",
+        "average": 300
+      },
+      "speed": {
+        "walk": 30,
+        "fly": 120,
+        "canHover": false
+      },
+      "str": 20,
+      "dex": 20,
+      "con": 25,
+      "int": 25,
+      "wis": 25,
+      "cha": 25,
+      "passive": 17,
+      "cr": "15",
+      "shortName": "Ra, Egyptian Avatar",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "All"
+      ],
+      "skill": {
+        "acrobatics": "+4",
+        "animal handling": "+4",
+        "arcana": "+4",
+        "athletics": "+4",
+        "deception": "+4",
+        "history": "+4",
+        "insight": "+4",
+        "intimidation": "+4",
+        "investigation": "+4",
+        "medicine": "+4",
+        "nature": "+4",
+        "performance": "+4",
+        "persuasion": "+4",
+        "religion": "+4",
+        "sleight of hand": "+4",
+        "stealth": "+4",
+        "survival": "+4"
+      },
+      "trait": [
+        {
+          "name": "Eye of the Sun",
+          "entries": [
+            "Each round, he may unleash from his eye a stream of solar flame that has a range of 400 feet and inflicts {@dice 4d20} points of damage to anyone it touches. Victims are entitled to roll a {@dc 30} dexterity saving throw to take only half damage."
+          ]
+        },
+        {
+          "name": "Banisher",
+          "entries": [
+            "In addition, he can use his ankh to instantly destroy any form of undead creature or any being that is not on its home plane."
+          ]
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "He has access to any sphere or school of magic for his spells. but favors those spells that employ fire, heat, or bright light."
+          ],
+          "type": "spellcasting"
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "Ra’s avatar makes two attacks with his fists."
+          ]
+        },
+        {
+          "name": "Fist",
+          "entries": [
+            "{@atk ms} {@hit 24} to hit, reach 5 ft., one target. {@h}19 ({@damage 2d10 + 8}) bludgeoning damage."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Ra, Egyptian Avatar|https://angrygolem-games.com/monster-manual/letter-r/ra-egyptians-avatar/}",
+          "DESCRIPTION",
+          "Ra’s avatar takes the form of a large and powerful warrior with a hawk’s head. His left eye glows brightly, for it is a piece of the sun. Ra’s avatar often carries a glowing ankh as a symbol of his great power and is often found riding Manjet or Mesektet. Although the avatar will fight if pressed, he prefers to negotiate solutions to problems.",
+          "{@link God & Clergy (go to page)|https://angrygolem-games.com/ra-god-and-clerics-for-dd-5e/}"
         ],
         "images": [
           {
