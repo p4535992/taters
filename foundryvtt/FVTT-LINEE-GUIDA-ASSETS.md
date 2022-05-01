@@ -146,6 +146,8 @@ Sono quelli consigliati e testati per i vari scopi.
     - Conesso direttamente a discord
     - Permette di cambiare la propria voce durante le sessioni
 
+- [Juke Host](https://jukehost.co.uk/)
+
 ### Gestione degli video
 
 - [Handbrake](https://handbrake.fr/) (Consigliato)
@@ -194,7 +196,7 @@ Sono quelli consigliati e testati per i vari scopi.
     - Online
     - Il browser più performante testato con foundryvtt e mobile utile per chi ha pc o telefoni un pò datati riduce di molto la banda utilizzata dai browser classici
 	
-- [Plutonium](https://5e.tools/plutonium.html) (Consigliato)
+- [Plutonium (Rivet Function)](https://5e.tools/plutonium.html) (Consigliato)
     - Gratuito
     - Online
     - Esiste il modulo di collegamento su FoundryVTT incredibilmente ben fatto, permette di importare e reicercare qualunque cosa del sito 5etools, il successore de facto di better20 for roll 20
@@ -219,5 +221,9 @@ Sono quelli consigliati e testati per i vari scopi.
 - [SinusBot](https://www.sinusbot.com/)
   - Gratuito
   - Permette di gestire grosse collezioni di audio su discord, riducendo la banda utilizzata su FoundryVTT
+
+- [discord-audio-pipe](https://github.com/QiCuiHub/discord-audio-pipe)
+  - Gratuito
+  - Simple program to send stereo audio (microphone, stereo mix, virtual audio cable, etc) into a discord bot.
 
 
