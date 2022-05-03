@@ -80,6 +80,7 @@
 - [MACRO/UTILITY][Snugug's Little Helpers](https://github.com/Snugug/foundry-helpers)
 - [UTILITY][Token frames]([token_frames](https://github.com/jcolson/token_frames)
 - [UTILITY][Tile Sort](https://github.com/theripper93/tile-sort)
+- [UTILITY][Multiface tile](https://gitlab.com/Freeze020/multiface-tiles/)
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
