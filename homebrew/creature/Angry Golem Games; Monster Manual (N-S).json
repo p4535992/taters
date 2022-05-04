@@ -13932,6 +13932,155 @@
           }
         ]
       }
+    },
+    {
+      "name": "Red Slaad",
+      "size": [
+        "L"
+      ],
+      "type": {
+        "type": "aberration",
+        "tags": [
+          "slaad"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "C",
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 14,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "11d10 + 33",
+        "average": 93
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 16,
+      "dex": 12,
+      "con": 16,
+      "int": 6,
+      "wis": 6,
+      "cha": 7,
+      "passive": 11,
+      "cr": "5",
+      "shortName": "Red Slaad",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "Slaad",
+        "telepathy 60 ft."
+      ],
+      "languageTags": [
+        "OTH",
+        "TP"
+      ],
+      "skill": {
+        "perception": "+1"
+      },
+      "resist": [
+        "acid",
+        "cold",
+        "fire",
+        "lightning",
+        "thunder"
+      ],
+      "trait": [
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The red slaad has advantage on saving throws against spells and other magical effects."
+          ]
+        },
+        {
+          "name": "Regeneration",
+          "entries": [
+            "The red slaad regains 10 hit points at the start of its turn if it has at least 1 hit point."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Magic Resistance",
+        "Regeneration"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The red slaad makes three attacks: one with its bite and two with its claws."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 2d4 + 3}) piercing damage."
+          ]
+        },
+        {
+          "name": "Bite (Strong)",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d8 + 3}) piercing damage."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage. If the target is a humanoid, it must succeed on a {@dc 14} Constitution saving throw or be infected with a disease- a minuscule slaad egg. A humanoid host can carry only one slaad egg to term at a time. Over three months, the egg moves to the chest cavity, gestates, and forms a slaad tadpole. In the 24-hour period before giving birth, the host starts to feel unwell, its speed is halved, and it has disadvantage on attack rolls, ability checks, and saving throws. At birth, the tadpole chews its way through vital organs and out of the host’s chest in 1 round, killing the host in the process. If the disease is cured before the tadpole’s emergence, the unborn slaad is disintegrated."
+          ]
+        },
+        {
+          "name": "Stunning Croak (suggested, long rest)",
+          "entries": [
+            "The red slaadi emits a loud croak. All targets within 20 feet must succeed a {@dc 14} Constitution saving throw or suffer the {@condition stunned} condition for {@dice 1d3} rounds."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link 5th Edition Advanced Mode|https://www.drivethrurpg.com/product/382784/5th-ADVANCED-MODE?affiliate_id=1465812&src=RedSlaad}",
+          "Limiting the power of a character and making the overall difficulty of the game harder, does not reduce the creativity, indeed it does quite the opposite.",
+          "The Game Master has the option to use any and all of the instances proposed in this guide, or just some of them according to their preference.",
+          "It is the lack of something that move and motivate characters, not the abundance of it",
+          "DESCRIPTION",
+          "Red slaadi are vicious combatants that quickly attack other creatures. Ruthless in numbers, they surround, torment, and slaughter smaller groups. Red slaadi have few forehead tattoos, denoting low status.",
+          "Both red and {@creature blue slaad|AGGMM}i are surly brutes that despise one another, yet their complex reproductive cycle intertwines them as mutual progenitors.",
+          "ECOLOGY",
+          "Red slaadi have a gland under each claw that, when it hits an opponent, may imperceptibly inject an egg-pellet into the opponent’s body. The slaad can also inject the pellet at will into an unconscious opponent. The egg-pellet slowly moves through the unwitting victim’s body until it reaches the chest cavity.",
+          "The blue slaad, feeding on carrion, grows to self-sufficiency in a few years.",
+          "An egg-pellet can be detected by detect evil. Egg or baby slaad can be destroyed by remove curse or similar magic. To prevent this, the slaadi confine victims in temporary prison camps erected near the battlefield."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
     }
   ]
 }
