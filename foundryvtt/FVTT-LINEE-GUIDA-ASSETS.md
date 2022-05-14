@@ -128,6 +128,8 @@ Sono quelli consigliati e testati per i vari scopi.
     - Online
     - Servizio Web di storage delle immagni, l'UNICO senza il fastidioso CORS (Cross origin Site), le immagini sono visualizzabili in quauqnue contesto anche su server conc certificato non valido
 
+- [Adapter](https://macroplant.com/adapter)
+
 ### Gestione degli audio
 
 - [QWinFF](https://qwinff.github.io/) (Consigliato)
@@ -225,5 +227,6 @@ Sono quelli consigliati e testati per i vari scopi.
 - [discord-audio-pipe](https://github.com/QiCuiHub/discord-audio-pipe)
   - Gratuito
   - Simple program to send stereo audio (microphone, stereo mix, virtual audio cable, etc) into a discord bot.
+  - I use [Discord audio pipe](https://github.com/QiCuiHub/discord-audio-pipe/) coupled with a [virtual audio cable](https://vb-audio.com/Cable/index.htm), the combination of which allows you to connect a bot to Discord from your local computer and stream media to your voice channel. This has the added benefit of keeping the music stream as a separate client so other people can manage the volume as they like. With this setup, you can't stream directly from YT/Spotify/etc but there are other tools you can use to download those media files should you so choose.
 
 
