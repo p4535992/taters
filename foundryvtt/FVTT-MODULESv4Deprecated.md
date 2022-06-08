@@ -2,9 +2,15 @@
 # NOT ESSENTIAL 
 # ======================================================================
 
+## 2022-05-01
+
+- [IS BETTER ITEM PILES][CHARACTHER SHEET/UTILITY][Party Inventory](https://github.com/teroparvinen/foundry-party-inventory)
+- [NOT ESSENTIAL][ITEM][Items with Rollable Tables DnD5e](https://github.com/ElfFriend-DnD/foundryvtt-items-with-rolltables-5e)
+- [NOT ESSENTIAL][MACRO/UTILITY][Snugug's Little Helpers](https://github.com/Snugug/foundry-helpers)
+  
 ## 2022-04-01
 
-- [UTILITY][TransferStuff](https://github.com/playest/TransferStuff)
+- [IS BETTER ITEM PILES][UTILITY][TransferStuff](https://github.com/playest/TransferStuff)
 - [JOURNAL][Storyteller for Foundry VTT](https://github.com/Xbozon/storyteller)
 - [COMBAT](TokenMagic Automatic Wounds](https://github.com/itamarcu/tokenmagic-automatic-wounds)
 - [NEED TO BE UPDATED][ENTITY][Not Enough NPCs: A 5e NPC Generator](https://github.com/ardittristan/VTTNPCGen )
@@ -395,7 +401,7 @@
 - [TOKEN][NOT ESSENTIAL][ConditionIconHoverZoom](https://github.com/Sparkasaurusmex/ConditionIconHoverZoom ) - https://raw.githubusercontent.com/Sparkasaurusmex/ConditionIconHoverZoom/master/module.json 
 - [DEV][NOT ESSENTIAL][libwrapper](https://github.com/ruipin/fvtt-lib-wrapper ) - https://raw.githubusercontent.com/ruipin/fvtt-lib-wrapper/master/module.json
 - [TOKEN][NOT ESSENTIAL][Token Animation Tools](https://github.com/ruipin/fvtt-token-animation-tools ) - https://raw.githubusercontent.com/ruipin/fvtt-token-animation-tools/master/module.json
-- [TOKEN/NAVBAR][NOT ESSENTIAL][FVTT Navbar Tweaks](https://github.com/ruipin/fvtt-navbar-tweaks ) - https://raw.githubusercontent.com/ruipin/fvtt-navbar-tweaks/master/module.json
+- [TOKEN/NAVBAR IS BETTER HIDDENT ENTITY LINK][NOT ESSENTIAL][FVTT Navbar Tweaks](https://github.com/ruipin/fvtt-navbar-tweaks ) - https://raw.githubusercontent.com/ruipin/fvtt-navbar-tweaks/master/module.json
 - [LIGHT][NOT ESSENTIAL][FVTT Token Vision Tweaks](https://github.com/ruipin/fvtt-token-vision-tweaks ) - https://raw.githubusercontent.com/ruipin/fvtt-token-vision-tweaks/master/module.json
 
 - [ICONS/MARKERS][NOT ESSENTIAL][Game Icons](https://github.com/datdamnzotz/icons ) - https://raw.githubusercontent.com/datdamnzotz/icons/master/module.json

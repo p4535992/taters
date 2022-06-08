@@ -76,11 +76,11 @@
 - [JOURNAL/CHAT][Polyglot](https://github.com/League-of-Foundry-Developers/fvtt-module-polyglot )
 - [EXTERNAL][Popout](https://github.com/kakaroto/fvtt-module-popout)
 - [UTILITY][Rangefinder](https://github.com/manuelVo/foundryvtt-rangefinder)
-- [UTILITY\AUDIO][Ensemble - drag and drop your sound files](https://github.com/janckoch/Ensemble)
-- [MACRO/UTILITY][Snugug's Little Helpers](https://github.com/Snugug/foundry-helpers)
+
 - [UTILITY][Token frames]([token_frames](https://github.com/jcolson/token_frames)
 - [UTILITY][Tile Sort](https://github.com/theripper93/tile-sort)
 - [UTILITY][Multiface tile](https://gitlab.com/Freeze020/multiface-tiles/)
+
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
@@ -98,6 +98,7 @@
 - [COMBAT][Tagger](https://github.com/fantasycalendar/FoundryVTT-Tagger)
 - [COMBAT][Token Auras](https://bitbucket.org/Fyorl/token-auras )
 - [COMBAT][Shy Effects](https://github.com/kandashi/shy-effect-icons)
+- [COMBAT][Combat Hp Display](https://github.com/WBHarry/combat-hp-display)
 
 ## MODULES NECESSARI SOLO IN FASE DI COSTRUZIONE E NON DI SESSIONE
 
@@ -134,10 +135,8 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 - [COMBAT][DnD5e Helpers](https://github.com/trioderegion/dnd5e-helpers )
 - [COMBAT][Wild Magic Surge 5e](https://github.com/johnnolan/wild-magic-surge-5e)
 
-
-- [ITEM][Items with Rollable Tables DnD5e](https://github.com/ElfFriend-DnD/foundryvtt-items-with-rolltables-5e)
 - [CHARACTER SHEET/UTILITY][Variant Encumbrance 5e](https://github.com/VanirDev/VariantEncumbrance )
-- [CHARACTHER SHEET/UTILITY][Party Inventory](https://github.com/teroparvinen/foundry-party-inventory)
+- [UTILITY][Automated Objects, Interactions and Effects](https://github.com/ZotyDev/objects-interactions-fx)
 
 ## [SYSTEM] PATHFINDER 1 MODULES
 
@@ -191,12 +190,19 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 - [AUDIO][Bellows](https://github.com/zstix/Bellows)
 - [AUDIO][Background Volume](https://github.com/mtvjr/background-volume)
 - [AUDIO][Playlist Import](https://github.com/JacobMcAuley/playlist_import )
+- [UTILITY\AUDIO][Ensemble - drag and drop your sound files](https://github.com/janckoch/Ensemble)
 
 ## MODULES MOBILE SUPPORT
 
 - [STYLE][Mobile Improvements](https://gitlab.com/fvtt-modules-lab/mobile-improvements)
 - [UTILITY][TouchVTT](https://github.com/Oromis/touch-vtt)
 - [Utility][Zoom/Pan Options](https://github.com/itamarcu/ZoomPanOptions)
+
+## MODULES ADVENTURES
+
+- [A Haggard Dream](https://github.com/grimmash/a-haggard-dream)
+- [Tor's Cellar of Death](https://github.com/grimmash/tors_cellar_of_death)
+- [AM 1886 Imperial Hotel Freebie](https://www.patreon.com/antipodeanmoon)
 
 # ======================================================================
 # ======================================================================
