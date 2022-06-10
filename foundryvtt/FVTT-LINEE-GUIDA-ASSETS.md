@@ -1,3 +1,6 @@
+# [Lista dei moduli sempre aggiornati](https://github.com/p4535992/taters/blob/master/foundryvtt/FVTT-MODULESv4.md)
+
+
 # Linee guida per una gestione furba degli assets su FoundryVTT
 
 # Documenti e risorse utili per iniziare (ancora in scrittura, i documenti potrebbero variare)
