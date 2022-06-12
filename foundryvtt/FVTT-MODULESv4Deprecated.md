@@ -2,6 +2,15 @@
 # NOT ESSENTIAL 
 # ======================================================================
 
+## 2022-06-12
+
+- [IT WILL BE SOON INTEGRATE WITH PIN CUSHION][NOTE][Pin Fixer](https://foundryvtt.com/packages/pin-fixer)
+- [VERY GOOD BUT NOT ESSENTIAL][COMBAT][Midi QOL - Challenge Mode Armor Display](https://github.com/mouse0270/midi-challenge-mode-armor)
+- [NOT ESSENTIAL][SCRIPT][Macro-Helper](https://github.com/Kekilla0/Macro-Helper)
+- [MACRO VERY GOOD BUT NOT ESSENTIAL][UTILITY][Automated Objects, Interactions and Effects](https://github.com/ZotyDev/objects-interactions-fx)
+- [IS BETTER MERCHANT SHEET][CHARACTER SHEET][Loot Sheet NPC 5e](https://github.com/jopeek/fvtt-loot-sheet-npc-5e )
+
+
 ## 2022-05-01
 
 - [IS BETTER ITEM PILES][CHARACTHER SHEET/UTILITY][Party Inventory](https://github.com/teroparvinen/foundry-party-inventory)
@@ -149,7 +158,6 @@
 - [NOT ESSENTIAL][COMBAT][Character Actions 5e](https://github.com/ElfFriend-DnD/foundryvtt-dnd5eCharacterActions) - https://raw.githubusercontent.com/ElfFriend-DnD/foundryvtt-dnd5eCharacterActions/main/src/module.json
 - [NOT ESSENTIAL][Live Animate](https://github.com/YourFavouriteOreo/VTT-Live-Animate) - https://raw.githubusercontent.com/YourFavouriteOreo/VTT-Live-Animate/master/dist/module.json
 - [NOT ESSENTIAL][UTILITY][Monks Little Details](https://github.com/ironmonk88/monks-little-details )
-- [NOT ESSENTIAL][CHARACTER SHEET/UTILITY][Inventory Plus](https://github.com/syl3r86/inventory-plus ) - https://raw.githubusercontent.com/syl3r86/inventory-plus/master/module.json
 - [NOT ESSENTIAL][CHARACTER SHEET/UTILITY][5e-Sheet Resources Plus](https://github.com/ardittristan/5eSheet-resourcesPlus ) - https://raw.githubusercontent.com/ardittristan/5eSheet-resourcesPlus/master/module.json
 - [NOT ESSENTIAL][UI][BVTT Button Overflow](https://github.com/ardittristan/VTTButtonOverflow) - https://raw.githubusercontent.com/ardittristan/VTTButtonOverflow/master/module.json
 - [NOT ESSENTIAL][CHARACTER SHEET][Merchant Sheet NPC](https://github.com/whelan/fvtt-merchant-sheet-npc )

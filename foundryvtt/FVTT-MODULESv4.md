@@ -71,8 +71,7 @@
 - [TOKEN/SCENES][Go to Player](https://github.com/theripper93/go-to-player)
 - [TOKEN/SCENES][pull-players-to-scene](https://github.com/Mr-Byte/pull-players-to-scene )
 - [SIDEBAR][Hidden Entity Links](https://github.com/p4535992/vtt-hidden-entity-links)
-- [NOTE][Pin Cushion](https://github.com/p4535992/pin-cushion)
-- [NOTE][Pin Fixer](https://foundryvtt.com/packages/pin-fixer)
+- [NOTE][Pin Cushion (fork by p4535992)](https://github.com/p4535992/pin-cushion)
 - [JOURNAL/CHAT][Polyglot](https://github.com/League-of-Foundry-Developers/fvtt-module-polyglot )
 - [EXTERNAL][Popout](https://github.com/kakaroto/fvtt-module-popout)
 - [UTILITY][Rangefinder](https://github.com/manuelVo/foundryvtt-rangefinder)
@@ -80,7 +79,8 @@
 - [UTILITY][Token frames]([token_frames](https://github.com/jcolson/token_frames)
 - [UTILITY][Tile Sort](https://github.com/theripper93/tile-sort)
 - [UTILITY][Multiface tile](https://gitlab.com/Freeze020/multiface-tiles/)
-
+- [UTILITY][Introduce Me](https://github.com/WBHarry/introduce-me)
+- [JOURNAL][Arius Planeswalker's Stylish Journal for Monk's Enhanced Journal](https://github.com/AmazingVanish/apsj4mej)
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
@@ -108,7 +108,7 @@
 
 # MODULES DA VERIFICARE SE NECESSARI
 
-- [SCRIPT][Macro-Helper](https://github.com/Kekilla0/Macro-Helper)
+
 - [SCRIPT][World-Scripter](https://github.com/Kekilla0/World-Scripter)
 - [SCENE][World Explorer](https://github.com/CarlosFdez/world-explorer)
 - [EFFECT][Hey, Wait!](https://github.com/1000nettles/hey-wait)
@@ -128,15 +128,15 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 - [ENTITY][Item Collection](https://gitlab.com/tposney/itemcollection )
 - [ENTITY][Magic Items](https://gitlab.com/riccisi/foundryvtt-magic-items )
 - [CHARACTER SHEET][Tidy Sheet 5e](https://github.com/sdenec/tidy5e-sheet )
-- [CHARACTER SHEET][Loot Sheet NPC 5e](https://github.com/jopeek/fvtt-loot-sheet-npc-5e )
 
 - [COMBAT][Midi Qol](https://gitlab.com/tposney/midi-qol )
-- [COMBAT][Midi QOL - Challenge Mode Armor Display](https://github.com/mouse0270/midi-challenge-mode-armor)
 - [COMBAT][DnD5e Helpers](https://github.com/trioderegion/dnd5e-helpers )
 - [COMBAT][Wild Magic Surge 5e](https://github.com/johnnolan/wild-magic-surge-5e)
 
 - [CHARACTER SHEET/UTILITY][Variant Encumbrance 5e](https://github.com/VanirDev/VariantEncumbrance )
-- [UTILITY][Automated Objects, Interactions and Effects](https://github.com/ZotyDev/objects-interactions-fx)
+- [Argon - Combat HUD](https://github.com/theripper93/enhancedcombathud)
+- [Custom Abilities & Skills](https://github.com/misthero/dnd5e-custom-skills)
+- [CHARACTER SHEET/UTILITY][Inventory Plus](https://github.com/p4535992/inventory-plus )
 
 ## [SYSTEM] PATHFINDER 1 MODULES
 
