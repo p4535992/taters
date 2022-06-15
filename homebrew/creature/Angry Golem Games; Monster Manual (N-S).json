@@ -14194,6 +14194,375 @@
           }
         ]
       }
+    },
+    {
+      "name": "Retriever",
+      "size": [
+        "L"
+      ],
+      "type": "construct",
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 19,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "20d10 + 100",
+        "average": 210
+      },
+      "speed": {
+        "walk": 40,
+        "climb": 40
+      },
+      "str": 22,
+      "dex": 16,
+      "con": 20,
+      "int": 3,
+      "wis": 11,
+      "cha": 4,
+      "passive": 15,
+      "cr": "14",
+      "shortName": "Retriever",
+      "senses": [
+        "blindsight 30 ft.",
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "B",
+        "D"
+      ],
+      "languages": [
+        "understands Abyssal",
+        "Elvish",
+        "and Undercommon but can’t speak"
+      ],
+      "languageTags": [
+        "AB",
+        "E",
+        "U"
+      ],
+      "save": {
+        "dex": "+8",
+        "con": "+10",
+        "wis": "+5"
+      },
+      "skill": {
+        "perception": "+5",
+        "stealth": "+8"
+      },
+      "trait": [
+        {
+          "name": "Faultless Tracker",
+          "entries": [
+            "The retriever is given a quarry by its master. The quarry can be a specific creature or object the master is personally acquainted with, or it can be a general type of creature or object the master has seen before. The retriever knows the direction and distance to its quarry as long as the two of them are on the same plane of existence. The retriever can have only one such quarry at a time. The retriever also always knows the location of its master."
+          ]
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasting",
+          "headerEntries": [
+            "The retriever’s innate spellcasting ability is Wisdom (spell save {@dc 13}). The retriever can innately cast the following spells, requiring no material components:"
+          ],
+          "daily": {
+            "3e": [
+              "{@spell plane shift} (only self and up to one incapacitated creature, which is considered willing for the spell)",
+              "{@spell web}"
+            ]
+          },
+          "ability": "wis",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "I"
+      ],
+      "damageTagsSpell": [
+        "F"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The retriever makes two foreleg attacks and uses its force or paralyzing beam once, if available."
+          ]
+        },
+        {
+          "name": "Foreleg",
+          "entries": [
+            "{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d8 + 6}) slashing damage."
+          ]
+        },
+        {
+          "name": "Force Beam",
+          "entries": [
+            "{@atk rw} {@hit 11} to hit, range 60 ft., one target. {@h}27 ({@damage 5d10}) force damage. The target must make a {@dc 16} Dexterity saving throw, taking 27 ({@damage 5d10}) force damage on a failed save, or half as much damage on a successful one."
+          ]
+        },
+        {
+          "name": "Paralyzing Beam {@recharge 5}",
+          "entries": [
+            "The retriever targets one creature it can see within 60 feet of it . The target must succeed on a {@dc 18} Constitution saving throw or be {@condition paralyzed} for 1 minute. The {@condition paralyzed} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+            "If the {@condition paralyzed} creature is Medium or smaller, the retriever can pick it up as part of the retriever’s move and walk or climb with it at full speed."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "O",
+        "S"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH",
+        "RW"
+      ],
+      "conditionInflict": [
+        "paralyzed"
+      ],
+      "fluff": {
+        "entries": [
+          "{@link Retriever|https://angrygolem-games.com/monster-manual/letter-r/retriever-5e-stats/}",
+          "DESCRIPTION",
+          "Retrievers are living constructs, creatures of nightmare manufactured by the tanar’ri lords to act as their emissaries and enforcers. They are bound to obey their tanar’ri masters and relentlessly pursue their diabolical objectives until they’ve accomplished their master’s commands or died in the attempt. This streak of loyalty and determination makes retrievers especially valuable to the Abyssal Lords. Retrievers are known by that name because they’re commonly ordered to find enemies or misguided subordinates of the Abyssal Lord and bring them back to face the music.",
+          "A retriever resembles a huge spider the size of an elephant, with a black, chitinous exoskeleton and six insectile eyes. The creature’s four rearmost limbs actually carry most of its weight; its front four limbs end in cleaverlike blades that aren’t used for walking.",
+          "Despite the monster’s bloated appearance and hideous bulk, it’s frighteningly fast and nimble. The retriever can’t speak, but it sometimes gives voice to insidious whisperings and clickings that can’t quite be understood.",
+          "HABITAT / SOCIETY",
+          "Retrievers don’t have an existence independent of their abyssal masters. It’s extremely unusual to encounter one that isn’t following some set of orders. When a retriever doesn’t have orders to follow, it’s probably waiting near the palace or fortress of its creator for a new set of instructions. Given the chance, a retriever’ll look for ways to introduce acts of petty malice or cruelty into the execution of its instructions, but above all it exists to do what it’s told.",
+          "Since retrievers are the living extensions of the will of the Abyssal Lords, they can enter any other plane at will, and have free travel throughout the Abyss. Only the most powerful and daring tanar’ri interfere with a retriever that’s engaged in the pursuit of its duty.",
+          "ECOLOGY",
+          "Retrievers are somewhat similar to {@creature golem|AGGMM2}s. Their bodies are shaped from the stuff of the Abyss by a powerful tanar’ri lord and imbued with a spirit of evil to animate them. Therefore, retrievers exist outside of nature and neither eat, sleep, nor reproduce. However, spells that affect living creatures (such as charm, sleep, or enfeeblement) affect a retriever normally.",
+          "Not every Abyssal Lord has mastered the making of retrievers. It’s thought that Demogorgon was the first tanar’ri to do so, modeling the retriever’s design on the form of the bebilith, or “creeper of the Abyss”. Graz’zt and Pazrael are known to have retrievers in their service too, but it’s impossible to say if they made the creatures themselves or were given retrievers by Demogorgon in exchange for some service or bargain."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      },
+      "tokenUrl": "sss"
+    },
+    {
+      "name": "Rhea, Greek Avatar",
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "avatar"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "N",
+        "G"
+      ],
+      "ac": [
+        20
+      ],
+      "hp": {
+        "formula": "31d8 + 124",
+        "average": 263
+      },
+      "speed": {
+        "walk": 90
+      },
+      "str": 19,
+      "dex": 18,
+      "con": 18,
+      "int": 19,
+      "wis": 18,
+      "cha": 18,
+      "passive": 14,
+      "cr": "15",
+      "shortName": "Rhea, Greek Avatar",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "All"
+      ],
+      "trait": [
+        {
+          "name": "Patrons of Wilderness",
+          "entries": [
+            "No non intelligent creature will attack Rhea’s avatar under any circumstances."
+          ]
+        },
+        {
+          "name": "Patrons of Nature",
+          "entries": [
+            "She cannot be harmed by effects made of unforged natural materials such as stone or wood."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Club",
+          "entries": [
+            "{@atk mw} {@hit 14} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d6 + 7}) bludgeoning damage."
+          ]
+        }
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Rhea, Greek Avatar|https://angrygolem-games.com/monster-manual/letter-r/rhea-greek-avatar/}",
+          "DESCRIPTION",
+          "Rhea’s avatar appears as an immodestly dressed young woman of great beauty with a voluptuous figure.",
+          "{@link God & Clergy (go to page)|https://angrygolem-games.com/monster-manual/letter-r/rhea-god-and-clerics-for-dd-5e/}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Remorhaz",
+      "size": [
+        "H"
+      ],
+      "type": "monstrosity",
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        {
+          "ac": 17,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "17d12 + 85",
+        "average": 195
+      },
+      "speed": {
+        "walk": 30,
+        "burrow": 20
+      },
+      "str": 24,
+      "dex": 13,
+      "con": 21,
+      "int": 4,
+      "wis": 10,
+      "cha": 5,
+      "passive": 10,
+      "cr": "11",
+      "shortName": "Remorhaz",
+      "senses": [
+        "darkvision 60 ft.",
+        "tremorsense 60 ft."
+      ],
+      "senseTags": [
+        "D",
+        "T"
+      ],
+      "immune": [
+        "cold",
+        "fire"
+      ],
+      "trait": [
+        {
+          "name": "Heated Body",
+          "entries": [
+            "A creature that touches the remorhaz or hits it with a melee attack while within 5 feet of it takes 10 ({@damage 3d6}) fire damage."
+          ]
+        }
+      ],
+      "damageTags": [
+        "A",
+        "F",
+        "P"
+      ],
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}40 ({@damage 6d10 + 7}) piercing damage, plus 10 ({@damage 3d6}) fire damage. If the target is a creature, it is {@condition grappled} (escape {@dc 17}). Until this grapple ends, the target is {@condition restrained}, and the remorhaz can’t bite another target."
+          ]
+        },
+        {
+          "name": "Swallow",
+          "entries": [
+            "The remorhaz makes one bite attack against a Medium or smaller creature it is grappling. If the attack hits, that creature takes the bite’s damage and is swallowed, and the grapple ends. While swallowed, the creature is {@condition blinded} and {@condition restrained}, it has total cover against attacks and other effects outside the remorhaz, and it takes 21 ({@damage 6d6}) acid damage at the start of each of the remorhaz’s turns. If the remorhaz takes 30 damage or more on a single turn from a creature inside it, the remorhaz must succeed on a {@dc 15} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall {@condition prone} in a space within 10 feet of the remorhaz. If the remorhaz dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse using 15 feet of movement, exiting {@condition prone}."
+          ]
+        }
+      ],
+      "miscTags": [
+        "MW",
+        "RCH"
+      ],
+      "conditionInflict": [
+        "blinded",
+        "grappled",
+        "restrained"
+      ],
+      "actionTags": [
+        "Swallow"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Remorhaz|https://angrygolem-games.com/monster-manual/letter-r/remorhaz-5e-stats/}",
+          "{@link 5th Edition Advanced Mode|https://www.drivethrurpg.com/product/382784/5th-ADVANCED-MODE?affiliate_id=1465812&src=Remorhaz}",
+          "Limiting the power of a character and making the overall difficulty of the game harder, does not reduce the creativity, indeed it does quite the opposite.",
+          "The Game Master has the option to use any and all of the instances proposed in this guide, or just some of them according to their preference.",
+          "{@i It is the lack of something that move and motivate characters, not the abundance of it}",
+          "DESCRIPTION",
+          "Remorhaz, sometimes known as polar worms, inhabit only chill arctic wastes. They are very aggressive predators that devour any animal matter, including humanoids; they have even been known to attack {@creature frost giant|AGGMM}s.",
+          "A remorhaz has a segmented body with a winged head and neck, standing on dozens of chitinous legs. Remorhaz have an ice blue color everywhere except on their backs, where a streak of white sets off the many protrusions located there.",
+          "HABITAT / SOCIETY",
+          "A remorhaz lair usually consists of a number of large, smoothly rounded tunnels in ice and snow or rock, gradually descending to a large central chamber. Tunnels in ice and snow will be very slippery, as the remorhaz’s hot back repeatedly melts the snow, leaving it to refreeze. The central chamber is only about twice the size of a remorhaz, while the central chamber of a nesting pair is about four times their size and may contain icy stalactites.",
+          "Remorhaz have a hunting range of 60 miles. Except where the game has been hunted to extinction, these creatures tolerate the presence of other remorhaz in their hunting grounds.",
+          "ECOLOGY",
+          "Remorhaz are carnivores, sustaining themselves with a diet of deer, elk, and even polar bears. They mate in late summer and stay together for two months before departing to live solitary existences. Remorhaz mate every year but can produce offspring only three or four times in a lifetime; the female lays a clutch of one or two grey-blue eggs, remaining with the eggs at all times, coiling around them to keep them warm; if the eggs are left in the freezing cold for only one minute, they will never hatch. Young remorhaz have 1 Hit Die at birth and grow to 17 Hit Dice after four months, when they leave the nest.",
+          "Remorhaz have lifespans of 30 years. Their eggs are valued at 500 gold pieces and are eagerly sought because these creatures can be trained to be excellent guards. However, a remorhaz can be trained to obey only one or two masters, and will attack its master if hungry enough. The heat secretion of a rhemorhaz, thrym, is valuable as a component for heat-related magical items and can be sold to alchemists for 5-10 gold pieces per flask. The remorhaz will contain 10 flasks worth of thrym per Hit Die.",
+          "Remorhaz is employed as material component to empower the following spells: {@spell Chromatic Orb}, {@spell Searing Smite}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
     }
+
   ]
 }
