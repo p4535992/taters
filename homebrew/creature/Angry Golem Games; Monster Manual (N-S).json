@@ -20749,6 +20749,207 @@
           }
         ]
       }
+    },
+    {
+      "name": "Silver Dragon, Ancient",
+      "size": [
+        "G"
+      ],
+      "type": "dragon",
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "L",
+        "G"
+      ],
+      "ac": [
+        {
+          "ac": 22,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "25d20 + 225",
+        "average": 487
+      },
+      "speed": {
+        "walk": 40,
+        "fly": 80,
+        "canHover": false
+      },
+      "str": 30,
+      "dex": 10,
+      "con": 29,
+      "int": 18,
+      "wis": 15,
+      "cha": 23,
+      "passive": 26,
+      "cr": "23",
+      "shortName": "Silver Dragon, Ancient",
+      "senses": [
+        "blindsight 60 ft.",
+        "darkvision 120 ft."
+      ],
+      "senseTags": [
+        "B",
+        "SD"
+      ],
+      "languages": [
+        "Common",
+        "Draconic"
+      ],
+      "languageTags": [
+        "C",
+        "DR"
+      ],
+      "save": {
+        "dex": "+7",
+        "con": "+16",
+        "wis": "+9",
+        "cha": "+13"
+      },
+      "skill": {
+        "arcana": "+11",
+        "history": "+11",
+        "perception": "+16",
+        "stealth": "+7"
+      },
+      "immune": [
+        "cold"
+      ],
+      "trait": [
+        {
+          "name": "Legendary Resistance (3/Day)",
+          "entries": [
+            "If the dragon fails a saving throw, it can choose to succeed instead."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Legendary Resistances"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 17} to hit, reach 15 ft., one target. {@h}21 ({@damage 2d10 + 10}) piercing damage."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 17} to hit, reach 10 ft., one target. {@h}17 ({@damage 2d6 + 10}) slashing damage."
+          ]
+        },
+        {
+          "name": "Tail",
+          "entries": [
+            "{@atk mw} {@hit 17} to hit, reach 5 ft., one target. {@h}19 ({@damage 2d8 + 10}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Frightful Presence",
+          "entries": [
+            "Each creature of the dragon’s choice that is within 120 feet of the dragon and aware of it must succeed on a {@dc 21} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the dragon’s Frightful Presence for the next 24 hours."
+          ]
+        },
+        {
+          "name": "Breath Weapons {@recharge 5}",
+          "entries": [
+            "The dragon uses one of the following breath weapons.",
+            "Cold Breath. The dragon exhales an icy blast in a 90-foot cone. Each creature in that area must make a {@dc 24} Constitution saving throw, taking 67 ({@damage 15d8}) cold damage on a failed save, or half as much damage on a successful one.",
+            "Paralyzing Breath. The dragon exhales paralyzing gas in a 90- foot cone. Each creature in that area must succeed on a {@dc 24} Constitution saving throw or be {@condition paralyzed} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+          ]
+        },
+        {
+          "name": "Change Shape",
+          "entries": [
+            "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon’s choice).",
+            "In a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Breath Weapon",
+        "Frightful Presence",
+        "Multiattack",
+        "Shapechanger"
+      ],
+      "damageTags": [
+        "B",
+        "C",
+        "P",
+        "S"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH",
+        "AOE"
+      ],
+      "conditionInflict": [
+        "frightened",
+        "paralyzed",
+        "prone"
+      ],
+      "legendaryActions": 3,
+      "legendaryHeader": [
+        "Ancient Silver Dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. Ancient Silver Dragon regains spent legendary actions at the start of their turn."
+      ],
+      "legendary": [
+        {
+          "name": "Detect",
+          "entries": [
+            "The dragon makes a Wisdom (Perception) check."
+          ]
+        },
+        {
+          "name": "Tail Attack",
+          "entries": [
+            "The dragon makes a tail attack."
+          ]
+        },
+        {
+          "name": "Wing Attack (Costs 2 Actions)",
+          "entries": [
+            "The dragon beats its wings. Each creature within 15 ft. of the dragon must succeed on a {@dc 25} Dexterity saving throw or take 17 ({@damage 2d6 + 10}) bludgeoning damage and be knocked {@condition prone}. The dragon can then fly up to half its flying speed."
+          ]
+        }
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Silver Dragon, Ancient|https://angrygolem-games.com/monster-manual/letter-s/silver-dragon-ancient-5e-stats/}",
+          "{@link 5th Edition Advanced Mode|https://www.drivethrurpg.com/product/382784/5th-ADVANCED-MODE?affiliate_id=1465812&src=SilverDragonAncient}",
+          "Limiting the power of a character and making the overall difficulty of the game harder, does not reduce the creativity, indeed it does quite the opposite.",
+          "The Game Master has the option to use any and all of the instances proposed in this guide, or just some of them according to their preference.",
+          "{@i It is the lack of something that move and motivate characters, not the abundance of it}",
+          "DESCRIPTION",
+          "Silver dragons are kind and helpful. They will cheerfully assist good creatures if their need is genuine. They often take the forms of kindly old men or fair damsels when associating with people.",
+          "At birth, a silver dragon’s scales are blue-gray with silver highlights. As the dragon approaches adulthood, its color slowly lightens to brightly gleaming silver. An adult or older silver dragon has scales so fine that the individual scales are scarcely visible. From a distance, these dragons look as if they have been sculpted from pure metal.",
+          "HABITAT / SOCIETY",
+          "Silver dragons prefer aerial lairs on secluded mountain peaks, or amid the clouds themselves. When they lair in clouds there always will be an enchanted area with a sold floor for laying eggs and storing treasure.",
+          "Silver dragons seem to prefer human form to their own, and often have mortal companions. Frequently they share deep friendships with mortals. Inevitably, however, the dragon reveals its true form and takes its leave to live a dragon’s life for a time.",
+          "ECOLOGY",
+          "Silver dragons prefer human food, and can live on such fare indefinitely.",
+          "Because they lair in similar territories, silver dragons come into conflict with {@creature red dragon|AGGMM2}s. Duels between the two species are furious and deadly, but silver dragons generally get the upper hand since they are more capable of working together against their foes and often have human allies."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
     }
   ]
 }
