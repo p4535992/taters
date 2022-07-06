@@ -20857,7 +20857,7 @@
         {
           "name": "Frightful Presence",
           "entries": [
-            "Each creature of the dragon’s choice that is within 120 feet of the dragon and aware of it must succeed on a {@dc 21} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the dragon’s Frightful Presence for the next 24 hours."
+            "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a {@dc 21} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours."
           ]
         },
         {
@@ -20871,7 +20871,7 @@
         {
           "name": "Change Shape",
           "entries": [
-            "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon’s choice).",
+            "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).",
             "In a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form."
           ]
         }
@@ -20900,7 +20900,7 @@
       ],
       "legendaryActions": 3,
       "legendaryHeader": [
-        "Ancient Silver Dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. Ancient Silver Dragon regains spent legendary actions at the start of their turn."
+        "Ancient Silver Dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Ancient Silver Dragon regains spent legendary actions at the start of their turn."
       ],
       "legendary": [
         {
@@ -20932,13 +20932,1893 @@
           "{@i It is the lack of something that move and motivate characters, not the abundance of it}",
           "DESCRIPTION",
           "Silver dragons are kind and helpful. They will cheerfully assist good creatures if their need is genuine. They often take the forms of kindly old men or fair damsels when associating with people.",
-          "At birth, a silver dragon’s scales are blue-gray with silver highlights. As the dragon approaches adulthood, its color slowly lightens to brightly gleaming silver. An adult or older silver dragon has scales so fine that the individual scales are scarcely visible. From a distance, these dragons look as if they have been sculpted from pure metal.",
+          "At birth, a silver dragon's scales are blue-gray with silver highlights. As the dragon approaches adulthood, its color slowly lightens to brightly gleaming silver. An adult or older silver dragon has scales so fine that the individual scales are scarcely visible. From a distance, these dragons look as if they have been sculpted from pure metal.",
           "HABITAT / SOCIETY",
           "Silver dragons prefer aerial lairs on secluded mountain peaks, or amid the clouds themselves. When they lair in clouds there always will be an enchanted area with a sold floor for laying eggs and storing treasure.",
-          "Silver dragons seem to prefer human form to their own, and often have mortal companions. Frequently they share deep friendships with mortals. Inevitably, however, the dragon reveals its true form and takes its leave to live a dragon’s life for a time.",
+          "Silver dragons seem to prefer human form to their own, and often have mortal companions. Frequently they share deep friendships with mortals. Inevitably, however, the dragon reveals its true form and takes its leave to live a dragon's life for a time.",
           "ECOLOGY",
           "Silver dragons prefer human food, and can live on such fare indefinitely.",
           "Because they lair in similar territories, silver dragons come into conflict with {@creature red dragon|AGGMM2}s. Duels between the two species are furious and deadly, but silver dragons generally get the upper hand since they are more capable of working together against their foes and often have human allies."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Silver Dragon, Wyrmling",
+      "size": [
+        "M"
+      ],
+      "type": "dragon",
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "L",
+        "G"
+      ],
+      "ac": [
+        {
+          "ac": 17,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "6d8 + 18",
+        "average": 45
+      },
+      "speed": {
+        "walk": 30,
+        "fly": 60,
+        "canHover": false
+      },
+      "str": 19,
+      "dex": 10,
+      "con": 17,
+      "int": 12,
+      "wis": 11,
+      "cha": 15,
+      "passive": 14,
+      "cr": "2",
+      "shortName": "Silver Dragon, Wyrmling",
+      "senses": [
+        "blindsight 10 ft.",
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "B",
+        "D"
+      ],
+      "languages": [
+        "Draconic"
+      ],
+      "languageTags": [
+        "DR"
+      ],
+      "save": {
+        "dex": "+2",
+        "con": "+5",
+        "wis": "+2",
+        "cha": "+4"
+      },
+      "skill": {
+        "perception": "+4",
+        "stealth": "+2"
+      },
+      "immune": [
+        "cold"
+      ],
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d10 + 4}) piercing damage."
+          ]
+        },
+        {
+          "name": "Breath Weapons {@recharge 5}",
+          "entries": [
+            "The dragon uses one of the following breath weapons.",
+            "{@i Cold Breath.} The dragon exhales an icy blast in a 15-foot cone. Each creature in that area must make a {@dc 13} Constitution saving throw, taking 18 ({@damage 4d8}) cold damage on a failed save, or half as much damage on a successful one.",
+            "{@i Paralyzing Breath.} The dragon exhales paralyzing gas in a 15-foot cone. Each creature in that area must succeed on a {@dc 13} Constitution saving throw or be {@condition paralyzed} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+          ]
+        }
+      ],
+      "damageTags": [
+        "C",
+        "P"
+      ],
+      "miscTags": [
+        "MW",
+        "AOE"
+      ],
+      "conditionInflict": [
+        "paralyzed"
+      ],
+      "actionTags": [
+        "Breath Weapon"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Silver Dragon, Wyrmling|https://angrygolem-games.com/monster-manual/letter-s/silver-dragon-wyrmling-5e-stats/}",
+          "{@link 5th Edition Advanced Mode|https://www.drivethrurpg.com/product/382784/5th-ADVANCED-MODE?affiliate_id=1465812&src=SilverDragonWyrmling}",
+          "Limiting the power of a character and making the overall difficulty of the game harder, does not reduce the creativity, indeed it does quite the opposite.",
+          "The Game Master has the option to use any and all of the instances proposed in this guide, or just some of them according to their preference.",
+          "{@i It is the lack of something that move and motivate characters, not the abundance of it}",
+          "DESCRIPTION",
+          "Silver dragons are kind and helpful. They will cheerfully assist good creatures if their need is genuine. They often take the forms of kindly old men or fair damsels when associating with people.",
+          "At birth, a silver dragon's scales are blue-gray with silver highlights. As the dragon approaches adulthood, its color slowly lightens to brightly gleaming silver. An adult or older silver dragon has scales so fine that the individual scales are scarcely visible. From a distance, these dragons look as if they have been sculpted from pure metal.",
+          "HABITAT / SOCIETY",
+          "Silver dragons prefer aerial lairs on secluded mountain peaks, or amid the clouds themselves. When they lair in clouds there always will be an enchanted area with a sold floor for laying eggs and storing treasure.",
+          "Silver dragons seem to prefer human form to their own, and often have mortal companions. Frequently they share deep friendships with mortals. Inevitably, however, the dragon reveals its true form and takes its leave to live a dragon's life for a time.",
+          "ECOLOGY",
+          "Silver dragons prefer human food, and can live on such fare indefinitely.",
+          "Because they lair in similar territories, silver dragons come into conflict with {@creature red dragon|AGGMM2}s. Duels between the two species are furious and deadly, but silver dragons generally get the upper hand since they are more capable of working together against their foes and often have human allies."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Silver Dragon, Young",
+      "size": [
+        "L"
+      ],
+      "type": "dragon",
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "L",
+        "G"
+      ],
+      "ac": [
+        {
+          "ac": 18,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "16d10 + 80",
+        "average": 168
+      },
+      "speed": {
+        "walk": 40,
+        "fly": 80,
+        "canHover": false
+      },
+      "str": 23,
+      "dex": 10,
+      "con": 21,
+      "int": 14,
+      "wis": 11,
+      "cha": 19,
+      "passive": 18,
+      "cr": "9",
+      "shortName": "Silver Dragon, Young",
+      "senses": [
+        "blindsight 30 ft.",
+        "darkvision 120 ft."
+      ],
+      "senseTags": [
+        "B",
+        "SD"
+      ],
+      "languages": [
+        "Common",
+        "Draconic"
+      ],
+      "languageTags": [
+        "C",
+        "DR"
+      ],
+      "save": {
+        "dex": "+4",
+        "con": "+9",
+        "wis": "+4",
+        "cha": "+8"
+      },
+      "skill": {
+        "arcana": "+6",
+        "history": "+6",
+        "perception": "+8",
+        "stealth": "+4"
+      },
+      "immune": [
+        "cold"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The dragon makes three attacks: one with its bite and two with its claws."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}17 ({@damage 2d10 + 6}) piercing damage."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d6 + 6}) slashing damage."
+          ]
+        },
+        {
+          "name": "Breath Weapons {@recharge 5}",
+          "entries": [
+            "The dragon uses one of the following breath weapons.",
+            "{@i Cold Breath.} The dragon exhales an icy blast in a 30-foot cone. Each creature in that area must make a {@dc 17} Constitution saving throw, taking 54 ({@damage 12d8}) cold damage on a failed save, or half as much damage on a successful one.",
+            "{@i Paralyzing Breath.} The dragon exhales paralyzing gas in a 30-foot cone. Each creature in that area must succeed on a {@dc 17} Constitution saving throw or be {@condition paralyzed} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Breath Weapon",
+        "Multiattack"
+      ],
+      "damageTags": [
+        "C",
+        "P",
+        "S"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH",
+        "AOE"
+      ],
+      "conditionInflict": [
+        "paralyzed"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Silver Dragon, Young|https://angrygolem-games.com/monster-manual/letter-s/silver-dragon-young-5e-stats/}",
+          "{@link 5th Edition Advanced Mode|https://www.drivethrurpg.com/product/382784/5th-ADVANCED-MODE?affiliate_id=1465812&src=SilverDragonYoung}",
+          "Limiting the power of a character and making the overall difficulty of the game harder, does not reduce the creativity, indeed it does quite the opposite.",
+          "The Game Master has the option to use any and all of the instances proposed in this guide, or just some of them according to their preference.",
+          "{@i It is the lack of something that move and motivate characters, not the abundance of it}",
+          "DESCRIPTION",
+          "Silver dragons are kind and helpful. They will cheerfully assist good creatures if their need is genuine. They often take the forms of kindly old men or fair damsels when associating with people.",
+          "At birth, a silver dragon's scales are blue-gray with silver highlights. As the dragon approaches adulthood, its color slowly lightens to brightly gleaming silver. An adult or older silver dragon has scales so fine that the individual scales are scarcely visible. From a distance, these dragons look as if they have been sculpted from pure metal.",
+          "HABITAT / SOCIETY",
+          "Silver dragons prefer aerial lairs on secluded mountain peaks, or amid the clouds themselves. When they lair in clouds there always will be an enchanted area with a sold floor for laying eggs and storing treasure.",
+          "Silver dragons seem to prefer human form to their own, and often have mortal companions. Frequently they share deep friendships with mortals. Inevitably, however, the dragon reveals its true form and takes its leave to live a dragon's life for a time.",
+          "ECOLOGY",
+          "Silver dragons prefer human food, and can live on such fare indefinitely.",
+          "Because they lair in similar territories, silver dragons come into conflict with {@creature red dragon|AGGMM2}s. Duels between the two species are furious and deadly, but silver dragons generally get the upper hand since they are more capable of working together against their foes and often have human allies."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Slaad Tapdole",
+      "size": [
+        "T"
+      ],
+      "type": {
+        "type": "aberration",
+        "tags": [
+          "slaad"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "C",
+        "N"
+      ],
+      "ac": [
+        12
+      ],
+      "hp": {
+        "formula": "4d4",
+        "average": 10
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 7,
+      "dex": 15,
+      "con": 10,
+      "int": 3,
+      "wis": 5,
+      "cha": 3,
+      "passive": 7,
+      "cr": "1/8",
+      "shortName": "Slaad Tapdole",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "understands Slaad but can't speak"
+      ],
+      "languageTags": [
+        "OTH"
+      ],
+      "skill": {
+        "stealth": "+4"
+      },
+      "resist": [
+        "acid",
+        "cold",
+        "fire",
+        "lightning",
+        "thunder"
+      ],
+      "trait": [
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The slaad has advantage on saving throws against spells and other magical effects."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Magic Resistance"
+      ],
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+          ]
+        }
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Slaad Tapdole|https://angrygolem-games.com/monster-manual/letter-s/slaad-tapdole-5e-stats/}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Smoke Mephit",
+      "size": [
+        "S"
+      ],
+      "type": {
+        "type": "elemental",
+        "tags": [
+          "mephit"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "N",
+        "E"
+      ],
+      "ac": [
+        12
+      ],
+      "hp": {
+        "formula": "5d6 + 5",
+        "average": 22
+      },
+      "speed": {
+        "walk": 30,
+        "fly": 30,
+        "canHover": false
+      },
+      "str": 6,
+      "dex": 14,
+      "con": 12,
+      "int": 10,
+      "wis": 10,
+      "cha": 11,
+      "passive": 12,
+      "cr": "1/4",
+      "shortName": "Smoke Mephit",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "Auran",
+        "Ignan"
+      ],
+      "languageTags": [
+        "AU",
+        "IG"
+      ],
+      "skill": {
+        "perception": "+2",
+        "stealth": "+4"
+      },
+      "immune": [
+        "fire",
+        "poison"
+      ],
+      "conditionImmune": [
+        "poisoned"
+      ],
+      "trait": [
+        {
+          "name": "Death Burst",
+          "entries": [
+            "When the mephit dies, it leaves behind a cloud of smoke that fills a 5-foot-radius sphere centered on its space. The sphere is heavily obscured. Wind disperses the cloud, which otherwise lasts for 1 minute."
+          ]
+        },
+        {
+          "name": "Regeneration",
+          "entries": [
+            "The smoke mephit regains 1 hit point at the start of its turn."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Death Burst",
+        "Regeneration"
+      ],
+      "miscTags": [
+        "MW",
+        "AOE"
+      ],
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasting",
+          "headerEntries": [
+            "Its innate spellcasting ability is Charisma (spell save {@dc 12}). The mephit can innately cast the following spells, requiring no material components:"
+          ],
+          "daily": {
+            "1": [
+              "{@spell dancing lights}"
+            ]
+          },
+          "ability": "cha",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "I"
+      ],
+      "action": [
+        {
+          "name": "Claws",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) slashing damage."
+          ]
+        },
+        {
+          "name": "Cinder Breath {@recharge}",
+          "entries": [
+            "The mephit exhales a 15-foot cone of smoldering ash. Each creature in that area must succeed on a {@dc 10} Dexterity saving throw or be {@condition blinded} until the end of the mephit's next turn."
+          ]
+        }
+      ],
+      "damageTags": [
+        "S"
+      ],
+      "conditionInflict": [
+        "blinded"
+      ],
+      "actionTags": [
+        "Breath Weapon"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Smoke Mephit|https://angrygolem-games.com/monster-manual/letter-s/smoke-mephit-5e-stats/}",
+          "{@link 5th Edition Advanced Mode|https://www.drivethrurpg.com/product/382784/5th-ADVANCED-MODE?affiliate_id=1465812&src=SmokeMephit}",
+          "Limiting the power of a character and making the overall difficulty of the game harder, does not reduce the creativity, indeed it does quite the opposite.",
+          "The Game Master has the option to use any and all of the instances proposed in this guide, or just some of them according to their preference.",
+          "{@i It is the lack of something that move and motivate characters, not the abundance of it}",
+          "DESCRIPTION",
+          "Smoke mephits are crude and lazy. They spend most of their time sitting around invisible, smoking pipeweed, telling bad jokes about their creators, and generally shirking their responsibilities.",
+          "ECOLOGY",
+          "Lower-planar beings traditionally dispatch a smoke mephit as a gift to enemies, a gesture of insolence and contempt that amounts to a declaration of vendetta.",
+          "Smoke Mephit is employed as component to empower the following spells:{@spell Find Familiar}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Snake Spirit, American Indian Avatar",
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "avatar"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "N",
+        "G"
+      ],
+      "ac": [
+        19
+      ],
+      "hp": {
+        "formula": "20d6 + 80",
+        "average": 150
+      },
+      "speed": {
+        "walk": 75
+      },
+      "str": 14,
+      "dex": 18,
+      "con": 18,
+      "int": 19,
+      "wis": 18,
+      "cha": 18,
+      "passive": 14,
+      "cr": "15",
+      "shortName": "Snake Spirit, American Indian Avatar",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "All"
+      ],
+      "skill": {
+        "acrobatics": "+4",
+        "animal handling": "+4",
+        "arcana": "+4",
+        "athletics": "+4",
+        "deception": "+4",
+        "history": "+4",
+        "insight": "+4",
+        "intimidation": "+4",
+        "investigation": "+4",
+        "medicine": "+4",
+        "nature": "+4",
+        "perception": "+4",
+        "performance": "+4",
+        "persuasion": "+4",
+        "religion": "+4",
+        "sleight of hand": "+4",
+        "stealth": "+4",
+        "survival": "+4"
+      },
+      "trait": [
+        {
+          "name": "Reptile Affinity",
+          "entries": [
+            "No reptile (including dragons) will attack him under any circumstances. In addition, he can summon at will and command {@dice 5d100} snakes of any kind."
+          ]
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "He casts spells as a 15th level wizard and an 8th level priest, save that he has access to any wizard spell of 7th level or under, and any priest spell of 4th level or less in theall, animal, charm, or necromantic spheres."
+          ],
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "CW"
+      ],
+      "action": [
+        {
+          "name": "Bit",
+          "entries": [
+            "{@atk ms} {@hit 10} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
+          ]
+        }
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Snake Spirit, American Indian Avatar|https://angrygolem-games.com/monster-manual/letter-s/snake-spirit-american-indians-avatar/}",
+          "DESCRIPTION",
+          "Snake's avatar is usually a man with rainbow-hued skin, though he can also take the form of a giant snake.",
+          "{@link God & Clergy (go to page)|https://angrygolem-games.com/monster-manual/letter-s/snake-spirit-god-and-clerics-for-dd-5e/}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Solar",
+      "size": [
+        "L"
+      ],
+      "type": {
+        "type": "celestial",
+        "tags": [
+          "angels",
+          "angel"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "L",
+        "G"
+      ],
+      "ac": [
+        {
+          "ac": 21,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "18d10 + 144",
+        "average": 243
+      },
+      "speed": {
+        "walk": 50,
+        "fly": 150,
+        "canHover": false
+      },
+      "str": 26,
+      "dex": 22,
+      "con": 26,
+      "int": 25,
+      "wis": 25,
+      "cha": 30,
+      "passive": 24,
+      "cr": "21",
+      "shortName": "Solar",
+      "senses": [
+        "truesight 120 ft."
+      ],
+      "senseTags": [
+        "U"
+      ],
+      "languages": [
+        "All",
+        "telepathy 120 ft."
+      ],
+      "languageTags": [
+        "TP"
+      ],
+      "save": {
+        "int": "+14",
+        "wis": "+14",
+        "cha": "+17"
+      },
+      "skill": {
+        "perception": "+14"
+      },
+      "resist": [
+        {
+          "resist": [
+            "radiant"
+          ]
+        },
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks"
+        }
+      ],
+      "immune": [
+        "necrotic",
+        "poison"
+      ],
+      "conditionImmune": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "poisoned"
+      ],
+      "trait": [
+        {
+          "name": "Angelic Weapons",
+          "entries": [
+            "The solar's weapon attacks are magical. When the solar hits with any weapon, the weapon deals an extra {@damage 6d8} radiant damage (included in the attack)."
+          ]
+        },
+        {
+          "name": "Divine Awareness",
+          "entries": [
+            "The solar knows if it hears a lie."
+          ]
+        },
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The solar has advantage on saving throws against spells and other magical effects."
+          ]
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasting",
+          "headerEntries": [
+            "The solar's spell casting ability is Charisma (spell save {@dc 25}). It can innately cast the following spells, requiring no material components:"
+          ],
+          "will": [
+            "{@spell detect evil and good}",
+            "{@spell invisibility}  (self only)"
+          ],
+          "daily": {
+            "3e": [
+              "{@spell blade barrier}",
+              "{@spell dispel evil and good}",
+              "{@spell resurrection}"
+            ],
+            "1e": [
+              "{@spell commune}",
+              "{@spell control weather}"
+            ]
+          },
+          "ability": "cha",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "I"
+      ],
+      "damageTagsSpell": [
+        "S"
+      ],
+      "traitTags": [
+        "Magic Resistance"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The solar makes two greatsword attacks."
+          ]
+        },
+        {
+          "name": "Greatsword",
+          "entries": [
+            "{@atk mw} {@hit 15} to hit, reach 5 ft., one target. {@h}22 ({@damage 4d6 + 8}) slashing damage, plus 27 ({@damage 6d8}) radiant damage."
+          ]
+        },
+        {
+          "name": "Slaying Longbow",
+          "entries": [
+            "{@atk rw} {@hit 13} to hit, range 150/600 ft., one target. {@h}15 ({@damage 2d8 + 6}) piercing damage, plus 27 ({@damage 6d8}) radiant damage. If the target is a creature that has 100 hit points or fewer, it must succeed on a {@dc 15} Constitution saving throw or die"
+          ]
+        },
+        {
+          "name": "Flying Sword",
+          "entries": [
+            "The solar releases its greatsword to hover magically in an unoccupied space within 5 ft. of it. If the solar can see the sword, the solar can mentally command it as a bonus action to fly up to 50 ft. and either make one attack against a target or return to the solar's hands. If the hovering sword is targeted by any effect, the solar is considered to be holding it. The hovering sword falls if the solar dies."
+          ]
+        },
+        {
+          "name": "Healing Touch (4/Day)",
+          "entries": [
+            "The solar touches another creature. The target magically regains 40 ({@dice 8d8 + 4}) hit points and is freed from any curse, disease, poison, blindness, or deafness."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "F",
+        "P",
+        "R",
+        "S"
+      ],
+      "miscTags": [
+        "MW",
+        "RW",
+        "RNG"
+      ],
+      "legendaryActions": 3,
+      "legendaryHeader": [
+        "Solar can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Solar regains spent legendary actions at the start of their turn."
+      ],
+      "legendary": [
+        {
+          "name": "Teleport",
+          "entries": [
+            "The solar magically teleports, along with any equipment it is wearing or carrying, up to 120 ft. to an unoccupied space it can see."
+          ]
+        },
+        {
+          "name": "Searing Burst (Costs 2 Actions)",
+          "entries": [
+            "The solar emits magical, divine energy. Each creature of its choice in a 10 -foot radius must make a {@dc 23} Dexterity saving throw, taking 14 ({@damage 4d6}) fire damage plus 14 ({@damage 4d6}) radiant damage on a failed save, or half as much damage on a successful one."
+          ]
+        },
+        {
+          "name": "Blinding Gaze (Costs 3 Actions)",
+          "entries": [
+            "The solar targets one creature it can see within 30 ft. of it. If the target can see it, the target must succeed on a {@dc 15} Constitution saving throw or be {@condition blinded} until magic such as the lesser restoration spell removes the blindness."
+          ]
+        }
+      ],
+      "conditionInflict": [
+        "blinded"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Solar|https://angrygolem-games.com/monster-manual/letter-s/solar-5e-stats/}",
+          "{@link 5th Edition Advanced Mode|https://www.drivethrurpg.com/product/382784/5th-ADVANCED-MODE?affiliate_id=1465812&src=Solar}",
+          "Limiting the power of a character and making the overall difficulty of the game harder, does not reduce the creativity, indeed it does quite the opposite.",
+          "The Game Master has the option to use any and all of the instances proposed in this guide, or just some of them according to their preference.",
+          "{@i It is the lack of something that move and motivate characters, not the abundance of it}",
+          "DESCRIPTION",
+          "Solars are the most powerful {@link aasimon|https://angrygolem-games.com/monster-manual/letter-a/dd-angels-or-aasimon/} and the greatest celestial stewards. They appear as large humans who have beautiful muscular bodies, white wings, and brilliant topaz eyes. Their skin and hair take on metallic coloration. A solar's voice is deep and commanding, impossible to ignore, and their Charisma is 24.",
+          "HABITAT / SOCIETY",
+          "Solars are absolutely the most powerful servants of the good deities of the Upper Planes.",
+          "ECOLOGY",
+          "Solars are mighty enough to be deities themselves, but they choose to serve rather than have worshipers.",
+          "Solar is employed as material component to empower the following spells:{@spell Bless}, {@spell Guiding Bolt}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Soma, Indian Avatar",
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "avatar"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "C",
+        "G"
+      ],
+      "ac": [
+        20
+      ],
+      "hp": {
+        "formula": "24d6 + 96",
+        "average": 180
+      },
+      "speed": {
+        "walk": 75
+      },
+      "str": 18,
+      "dex": 19,
+      "con": 19,
+      "int": 19,
+      "wis": 18,
+      "cha": 18,
+      "passive": 14,
+      "cr": "15",
+      "shortName": "Soma, Indian Avatar",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "All"
+      ],
+      "skill": {
+        "acrobatics": "+4",
+        "arcana": "+4",
+        "animal handling": "+4",
+        "athletics": "+4",
+        "deception": "+4",
+        "history": "+4",
+        "insight": "+4",
+        "intimidation": "+4",
+        "investigation": "+4",
+        "medicine": "+4",
+        "nature": "+4",
+        "perception": "+4",
+        "persuasion": "+4",
+        "performance": "+4",
+        "religion": "+4",
+        "sleight of hand": "+4",
+        "stealth": "+4",
+        "survival": "+4"
+      },
+      "trait": [
+        {
+          "name": "Master of Illusion",
+          "entries": [
+            "Every time an attacker strikes Soma's avatar, he must roll a {@dc 18} wisdom saving throw or believe his attack failed to inflict any damage."
+          ]
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "He can draw upon the iIlusion school of magic for his spells."
+          ],
+          "type": "spellcasting"
+        }
+      ],
+      "action": [
+        {
+          "name": "Dagger",
+          "entries": [
+            "{@atk ms} {@hit 10} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage. Anyone struck by the avatar's dagger must roll a {@dc 18} wisdom saving throw or believe that they have died. This misconception lasts {@dice 1d10} turns, during which the character is effectively out of the game."
+          ]
+        }
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Soma, Indian Avatar|https://angrygolem-games.com/monster-manual/letter-s/soma-indian-avatar/}",
+          "DESCRIPTION",
+          "Soma's avatar usually appears in the form of a large, silver-skinned giant.",
+          "{@link God & Clergy (go to page)|https://angrygolem-games.com/soma-god-and-clerics-for-dd-5e/}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Soul Monger",
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "elf",
+          "shadar-kai"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 15,
+          "from": [
+            "{@item studded leather armor|phb}"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "19d8 + 38",
+        "average": 123
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 8,
+      "dex": 17,
+      "con": 14,
+      "int": 19,
+      "wis": 15,
+      "cha": 13,
+      "passive": 17,
+      "cr": "11",
+      "shortName": "Soul Monger",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "Common",
+        "Elvish"
+      ],
+      "languageTags": [
+        "C",
+        "E"
+      ],
+      "save": {
+        "dex": "+7",
+        "wis": "+7",
+        "cha": "+5"
+      },
+      "skill": {
+        "perception": "+7"
+      },
+      "immune": [
+        "necrotic",
+        "psychic"
+      ],
+      "conditionImmune": [
+        "charmed",
+        "exhaustion",
+        "frightened"
+      ],
+      "trait": [
+        {
+          "name": "Fey Ancestry",
+          "entries": [
+            "The soul monger has advantage on saving throws against being {@condition charmed}, and magic can't put it to sleep."
+          ]
+        },
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The soul monger has advantage on saving throws against spells and other magical effects."
+          ]
+        },
+        {
+          "name": "Soul Thirst",
+          "entries": [
+            "When the soul monger reduces a creature to 0 hit points, the soul monger can gain temporary hit points equal to half the creature's hit point maximum. While the soul monger has temporary hit points from this ability, it has advantage on attack rolls."
+          ]
+        },
+        {
+          "name": "Weight of Ages",
+          "entries": [
+            "Any beast or humanoid, other than a shadar-kai, that starts its turn within 5 feet of the soul monger has its speed reduced by 20 feet until the start of that creature's next turn."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Fey Ancestry",
+        "Magic Resistance"
+      ],
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasting",
+          "headerEntries": [
+            "The soul monger's innate spellcasting ability is Intelligence (spell save {@dc 16}, +8 to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
+          ],
+          "will": [
+            "{@spell chill touch} ({@dice 3d8} damage)",
+            "{@spell poison spray} ({@dice 3d12} damage)"
+          ],
+          "daily": {
+            "1e": [
+              "{@spell bestow curse}",
+              "{@spell chain lightning}",
+              "{@spell finger of death}",
+              "{@spell gaseous form}",
+              "{@spell phantasmal killer}",
+              "{@spell seeming}"
+            ]
+          },
+          "ability": "int",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "I"
+      ],
+      "damageTagsSpell": [
+        "I",
+        "L",
+        "N",
+        "Y"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The soul monger makes two phantasmal dagger attacks."
+          ]
+        },
+        {
+          "name": "Phantasmal Dagger",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 4d4 + 3}) piercing damage, plus 19 ({@damage 3d12}) necrotic damage."
+          ]
+        },
+        {
+          "name": "Wave of Weariness {@recharge 4}",
+          "entries": [
+            "The soul monger emits weariness in a 60-foot cube. Each creature in that area must make a {@dc 16} Constitution saving throw. On a fa iled save, a creature takes 45 ({@damage 10d8}) psychic damage and suffers 1 level of {@condition exhaustion}. On a successful save, it takes 22 ({@damage 5d8}) psychic damage."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "N",
+        "P",
+        "Y"
+      ],
+      "miscTags": [
+        "MW",
+        "AOE"
+      ],
+      "conditionInflict": [
+        "exhaustion"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Soul Monger|https://angrygolem-games.com/monster-manual/letter-s/soul-monger-5e-stats/}",
+          "{@link 5th Edition Advanced Mode|https://www.drivethrurpg.com/product/382784/5th-ADVANCED-MODE?affiliate_id=1465812&src=SoulMonger}",
+          "Limiting the power of a character and making the overall difficulty of the game harder, does not reduce the creativity, indeed it does quite the opposite.",
+          "The Game Master has the option to use any and all of the instances proposed in this guide, or just some of them according to their preference.",
+          "{@i It is the lack of something that move and motivate characters, not the abundance of it}",
+          "DESCRIPTION",
+          "Wracked with despair over the loss of mem ories of a brighter time, soul monger s now crave the vitality of others. The aching void within a soul monger radiates outward, manifesting as an unbearable weight that drains the vigor of anyone unfortunate enough to be in its presence. Those who have escaped the onslaught of a soul monger can hardly shake the memory of the sound it makes-the moan of a tortured soul, lost in a bottomless",
+          "well of tragedy."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Sea Spawn",
+      "size": [
+        "M"
+      ],
+      "type": "humanoid",
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "N",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 11,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "5d8 + 10",
+        "average": 32
+      },
+      "speed": {
+        "walk": 20,
+        "swim": 30
+      },
+      "str": 15,
+      "dex": 8,
+      "con": 15,
+      "int": 6,
+      "wis": 10,
+      "cha": 8,
+      "passive": 10,
+      "cr": "1",
+      "shortName": "Sea Spawn",
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "senseTags": [
+        "SD"
+      ],
+      "languages": [
+        "understands Aquan and Common but can't speak"
+      ],
+      "languageTags": [
+        "AQ",
+        "C"
+      ],
+      "trait": [
+        {
+          "name": "Limited Amphibiousness",
+          "entries": [
+            "The sea spawn can breathe air and water, but needs to be submerged in the sea at least once a day for 1 minute to avoid suffocating."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The sea spawn makes three attacks: two unarmed strikes and one with its Piscine Anatomy."
+          ]
+        },
+        {
+          "name": "Unarmed Strike",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Piscine Anatomy - Bite",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+          ]
+        },
+        {
+          "name": "Piscine Anatomy - Poison Quills",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) poison damage, and the target must succeed on a {@dc 12} Constitution saving throw or be {@condition poisoned} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+          ]
+        },
+        {
+          "name": "Piscine Anatomy - Tentacle",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}5 ({@damage 1d6 + 2}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 12}) if it is a Medium or smaller creature. Until this grapple ends, the sea spawn can't use this tentacle on another target."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "B",
+        "I",
+        "P"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH"
+      ],
+      "conditionInflict": [
+        "grappled",
+        "poisoned"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Sea Spawn|https://angrygolem-games.com/monster-manual/letter-s/sea-spawn-5e-stats/}",
+          "{@link 5th Edition Advanced Mode|https://www.drivethrurpg.com/product/382784/5th-ADVANCED-MODE?affiliate_id=1465812&src=SeaSpawn}",
+          "Limiting the power of a character and making the overall difficulty of the game harder, does not reduce the creativity, indeed it does quite the opposite.",
+          "The Game Master has the option to use any and all of the instances proposed in this guide, or just some of them according to their preference.",
+          "{@i It is the lack of something that move and motivate characters, not the abundance of it}",
+          "DESCRIPTION",
+          "Many of the stories sung as sea shanties and passed on as tales in dockside taverns tell of people lost to the sea-but not merely drowned and gone. These unfortunates are taken by the ocean and live on as sea spawn, haunting the waves like tortured reflections of their",
+          "former selves. Coral encrusts them. Barnacles cling to their cold skin. Lungs that once filled with air can now breathe in water as well.",
+          "Tales provide myriad reasons for these strange transformations.",
+          "\"Be wary of falling in love with a sea elf or a merfolk,\" some say. \"Return to port before a storm, no matter how tempting the catch.\" \"Honor the sea gods as they demand, but never promise them your heart.\" Such cautionary tales disguise the deeper truth: things lurk beneath the waves that strive to claim the hearts and minds of land dwellers."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Slithering Tracker",
+      "size": [
+        "M"
+      ],
+      "type": "ooze",
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        14
+      ],
+      "hp": {
+        "formula": "5d8 + 10",
+        "average": 32
+      },
+      "speed": {
+        "walk": 30,
+        "climb": 30,
+        "swim": 30
+      },
+      "str": 16,
+      "dex": 19,
+      "con": 15,
+      "int": 10,
+      "wis": 14,
+      "cha": 11,
+      "passive": 12,
+      "cr": "3",
+      "shortName": "Slithering Tracker",
+      "senses": [
+        "blindsight 120 ft."
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "languages": [
+        "understands languages it knew in its previous form but can't speak"
+      ],
+      "skill": {
+        "stealth": "+8"
+      },
+      "vulnerable": [
+        "cold",
+        "fire"
+      ],
+      "resist": [
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks"
+        }
+      ],
+      "conditionImmune": [
+        "blinded",
+        "deafened",
+        "exhaustion",
+        "grappled",
+        "paralyzed",
+        "petrified",
+        "prone",
+        "restrained",
+        "unconscious"
+      ],
+      "trait": [
+        {
+          "name": "Ambush",
+          "entries": [
+            "In the first round of a combat, the slithering tracker has advantage on attack rolls against any creature it surprised."
+          ]
+        },
+        {
+          "name": "Damage Transfer",
+          "entries": [
+            "While grappling a creature, the slithering traker takes only half the damage dealt to it, and the creature it is grappling takes the other half."
+          ]
+        },
+        {
+          "name": "False Apparance",
+          "entries": [
+            "While the slithering tracker remains motionless, it is indistinguishable from a puddle, unless an observer succeeds on a {@dc 18} Intelligence (Investigation) check."
+          ]
+        },
+        {
+          "name": "Keen Tracker",
+          "entries": [
+            "The slithering tracker has advantage on Wisdom checks to track prey."
+          ]
+        },
+        {
+          "name": "Liquid Form",
+          "entries": [
+            "The slithering tracker can enter an enemy's space and stop there. It can also move through a space as narrow as 1 inch wide without squeezing."
+          ]
+        },
+        {
+          "name": "Spider Climb",
+          "entries": [
+            "The slithering tracker can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+          ]
+        },
+        {
+          "name": "Watery Stealth",
+          "entries": [
+            "While underwater, the slithering tracker has advantage on Dexterity (Stealth) checks made to hide, and it can take the Hide action as a bonus action."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Ambusher",
+        "Keen Senses",
+        "Spider Climb"
+      ],
+      "action": [
+        {
+          "name": "Slamee",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d10 + 3}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Life Leech",
+          "entries": [
+            "One Large or smaller creature that the slithering tracker can see within 5 feet of it must succeed on a {@dc 13} Dexterity saving throw or be {@condition grappled} (escape {@dc 13}). Until this grapple ends, the target is {@condition restrained} and unable to breathe unless it can breathe water. In addition, the {@condition grappled} target takes 16 ({@damage 3d10}) necrotic damage at the start of each of its turns. The slithering tracker can grapple only one target at a time."
+          ]
+        }
+      ],
+      "damageTags": [
+        "B",
+        "N"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "conditionInflict": [
+        "grappled",
+        "restrained"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Slithering Tracker|https://angrygolem-games.com/monster-manual/letter-s/slithering-tracker-5e-stats/}",
+          "{@link 5th Edition Advanced Mode|https://www.drivethrurpg.com/product/382784/5th-ADVANCED-MODE?affiliate_id=1465812&src=SlitheringTracker}",
+          "Limiting the power of a character and making the overall difficulty of the game harder, does not reduce the creativity, indeed it does quite the opposite.",
+          "The Game Master has the option to use any and all of the instances proposed in this guide, or just some of them according to their preference.",
+          "{@i It is the lack of something that move and motivate characters, not the abundance of it}",
+          "DESCRIPTION",
+          "Slithering trackers are transparent, plasma-draining jellies found in many dungeons and other dark places.",
+          "They are not invisible per se, but are instead made of a transparent jelly-like material. Thus they are almost impossible to detect normally (only a 5% chance of happening to notice one).",
+          "HABITAT / SOCIETY",
+          "Slithering trackers are solitary beasts. Since they possess no attack form capable of harming other trackers, territoriality is a question of first-come, first-serve. Being the most intelligent of all slimes and jellies, it would seem natural that slithering trackers would establish themselves as the leaders of the rest. But jellies and slimes lack both the means of communication and the intelligence to band together. They remain on the lower end of the monster food chain, serving as scavengers that kill the weak and stupid, leaving the larger creatures for major predators in the dungeons they inhabit.",
+          "In fact, slithering trackers often hide themselves in the lairs of large monsters, which are known to kill far more than they can eat at a sitting. The tracker waits until the beast goes to sleep or departs and then it sucks dry the morsels left over. Many times the victims are merely unconscious instead of dead — at least until the tracker gets to them. And on more than one occasion, monster-slaying players have left a hoard guarded by a comrade, while they go for help, only to return to find their friend mysteriously dehydrated, with all of the treasure still in the lair.",
+          "ECOLOGY",
+          "There are two theories regarding the origin of slithering trackers. The first and most likely one is that slithering trackers are just advanced forms of the other jellies, fortunate enough to have developed a transparent plasma body and a modicum of intelligence. Like most jellies, they reproduce asexually when the time and quantity of food allow for it.",
+          "The second, more dubious theory, is that slithering trackers were created, not born. Their high intelligence seems to lead many knowledgeable sages to believe that the creation of a slithering tracker is a hideous process, involving the transformation of a living human being. Certain legends seem to support this assertion, as there are many accounts of dark wizards removing the bones of their enemies, turning them into hulking masses of jelly-like flesh. While it is certain that no respectable wizard (good or neutrally aligned) would resort to creating such horrors, it is just as certain that there are many practitioners of the darker arts who have performed much worse experiments.",
+          "It is possible that somewhere deep in the bowels of some long-deserted wizard's dungeon, there lies an ancient diary, with a detailed account of the terrifying curse of the tracker.",
+          "There are tales of abnormally large slithering trackers that live in the deep recesses of the Underdark. Such monsters are often said to lurk around the edges of great underground civilizations, growing to vast size on the abundance of prey."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Spawn of Kyuss",
+      "size": [
+        "M"
+      ],
+      "type": "undead",
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        10
+      ],
+      "hp": {
+        "formula": "9d8 + 36",
+        "average": 76
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 16,
+      "dex": 11,
+      "con": 18,
+      "int": 5,
+      "wis": 7,
+      "cha": 3,
+      "passive": 8,
+      "cr": "5",
+      "shortName": "Spawn of Kyuss",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "understands the languages it knew in life but can't speak"
+      ],
+      "languageTags": [
+        "LF"
+      ],
+      "trait": [
+        {
+          "name": "Regeneration",
+          "entries": [
+            "The spawn of Kyuss regains 10 hit points at the start of its turn if it has at least 1 hit point and isn't in sunlight or a body of running water. If the spawn takes acid, fire, or radiant damage, this trait doesn't function at the start of the spawn's next turn. The spawn is destroyed only if it starts its turn with 0 hit points and doesn't regenerate."
+          ]
+        },
+        {
+          "name": "Worms",
+          "entries": [
+            "If the spawn of Kyuss is targeted by an effect that cures disease or removes a curse, all the worms infesting it wither away, and it loses its Burrowing Worm action."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Regeneration"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The spawn of Kyuss makes two attacks with its claws and uses Burrowing Worm."
+          ]
+        },
+        {
+          "name": "Burrowing Worm",
+          "entries": [
+            "A worm launches from the spawn of Kyuss at one humanoid that the spawn can see within 10 feet of it. The worm latches onto the target's skin unless the target succeeds on a {@dc 11} Dexterity saving throw. The worm is a Tiny undead with AC 6, 1 hit point, a 2 (-4) in every ability score, and a speed of 1 foot. While on the target's skin, the worm can be killed by normal means or scraped off using an action (the spawn can use this action to launch a scraped-off worm at a humanoid it can see within 10 feet of the worm). Otherwise, the worm burrows under the target's skin at the end of the target's next turn, dealing 1 piercing damage to it. At the end of each of its turns thereafter, the target takes 7 ({@damage 2d6}) necrotic damage per worm infesting it (maximum of {@dice 10d6}). A worm-infested target dies if it drops to 0 hit points, then rises 10 minutes later as a spawn of Kyuss. If a worm-infested creature is targeted by an effect that cures disease or removes a curse, all the worms infesting it wither away."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage, plus 7 ({@damage 2d6}) necrotic damage."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "N",
+        "P",
+        "S"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Spawn of Kyuss|https://angrygolem-games.com/monster-manual/letter-s/spawn-of-kyuss-5e-stats/}",
+          "{@link 5th Edition Advanced Mode|https://www.drivethrurpg.com/product/382784/5th-ADVANCED-MODE?affiliate_id=1465812&src=SpawnofKyuss}",
+          "Limiting the power of a character and making the overall difficulty of the game harder, does not reduce the creativity, indeed it does quite the opposite.",
+          "The Game Master has the option to use any and all of the instances proposed in this guide, or just some of them according to their preference.",
+          "{@i It is the lack of something that move and motivate characters, not the abundance of it}",
+          "DESCRIPTION",
+          "Kyuss was a high priest of Orcus who plundered corpses from necropolises to create the first spawn of Kyuss. Even centuries after Kyuss's death, his mad disciples continue performing the horrific rites he perfected."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Spectator",
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "aberration",
+        "tags": [
+          "beholder"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "L",
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 14,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "6d8 + 12",
+        "average": 39
+      },
+      "speed": {
+        "fly": {
+          "number": 30,
+          "condition": "(hover)"
+        },
+        "canHover": true
+      },
+      "str": 8,
+      "dex": 14,
+      "con": 14,
+      "int": 13,
+      "wis": 14,
+      "cha": 11,
+      "passive": 14,
+      "cr": "3",
+      "shortName": "Spectator",
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "senseTags": [
+        "SD"
+      ],
+      "languages": [
+        "Deep Speech",
+        "Undercommon",
+        "telepathy 120 ft."
+      ],
+      "languageTags": [
+        "DS",
+        "U",
+        "TP"
+      ],
+      "skill": {
+        "perception": "+4",
+        "stealth": "+4"
+      },
+      "conditionImmune": [
+        "prone"
+      ],
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 1} to hit, reach 5 ft., one target. {@h}1 ({@damage 1d4 - 1}) piercing damage."
+          ]
+        },
+        {
+          "name": "Eye Rays",
+          "entries": [
+            "The spectator shoots up to two of the following magical eye rays at one or two creatures it can see within 90 feet of it. It can use each ray only once on a turn.",
+            "{@b 1. Confusion Ray.} The target must succeed on a {@dc 13} Wisdom saving throw, or it can't take reactions until the end of its next turn. On its turn, the target can't move, and it uses its action to make a melee or ranged attack against a randomly determined creature within range. If the target can't attack, it does nothing on its turn.",
+            "{@b 2. Paralyzing Ray.} The target must succeed on a {@dc 13} Constitution saving throw or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+            "{@b 3. Fear Ray.} The target must succeed on a {@dc 13} Wisdom saving throw or be {@condition frightened} for 1 minute. The target can repeat the saving throw at the end of each of its turns, with disadvantage if the spectator is visible to the target, ending the effect on itself on a success.",
+            "{@b 4. Wounding Ray.} The target must make a {@dc 13} Constitution saving throw, taking 16 ({@damage 3d10}) necrotic damage on a failed save, or half as much damage on a successful one."
+          ]
+        },
+        {
+          "name": "Create Food and Water",
+          "entries": [
+            "The spectator magically creates enough food and water to sustain itself for 24 hours."
+          ]
+        }
+      ],
+      "damageTags": [
+        "N",
+        "P"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "conditionInflict": [
+        "frightened",
+        "paralyzed"
+      ],
+      "reaction": [
+        {
+          "name": "Spell Reflection",
+          "entries": [
+            "If the spectator makes a successful saving throw against a spell, or a spell attack misses it, the spectator can choose another creature (including the spellcaster) it can see within 30 feet of it. The spell targets the chosen creature instead of the spectator.",
+            "If the spell forced a saving throw, the chosen creature makes its own save. If the spell was an attack, the attack roll is rerolled against the chosen creature."
+          ]
+        }
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Spectator|https://angrygolem-games.com/monster-manual/letter-s/spectator-5e-stats/}",
+          "{@link 5th Edition Advanced Mode|https://www.drivethrurpg.com/product/382784/5th-ADVANCED-MODE?affiliate_id=1465812&src=Allosaurus}",
+          "Limiting the power of a character and making the overall difficulty of the game harder, does not reduce the creativity, indeed it does quite the opposite.",
+          "The Game Master has the option to use any and all of the instances proposed in this guide, or just some of them according to their preference.",
+          "{@i It is the lack of something that move and motivate characters, not the abundance of it}",
+          "DESCRIPTION",
+          "Another relative of the beholder, the spectator is a guardian of places and treasures, and capable of limited planar travel. Once it is given a task, the spectator will watch for up to 101 years. It will allow no one to use, borrow, or examine an item or treasure, except the one who gave it its orders. The spectator has a large central eye and four smaller eye stalks protruding from the top of its hovering, spherical body.",
+          "It is basically a passive creature, and will attempt to communicate and implant suggestion as its first act, unless it is immediately attacked.",
+          "A spectator, if blinded in all of its eyes, cannot defend its treasure and will teleport to the outer plane of Nirvana. This is the only condition under which it will leave its post. Its eyes regenerate in one day and then it returns. If the treasure is gone, the creature again leaves for Nirvana, never to return.",
+          "If properly met, the spectator can be quite friendly. It will tell a party exactly what it is guarding early in any conversation. If its charge is not threatened, it can be very amiable and talkative, using its telepathy.",
+          "The treasure being guarded is 90% likely to be a magical item. If the spectator gains incidental treasure while performing its duty, this is not part of its charge and it will freely allow it to be taken.",
+          "Incidental treasure can be generated as follows:",
+          "- 40% for 3d100 coins of mixed types",
+          "- 30% for 1d6 gems of 50 gp base value",
+          "- 20% for 1d4 potions",
+          "- 15% for an armor +1",
+          "- 15% for a weapon +1",
+          "- 5% for a random magical item",
+          "Spectators are summoned from Nirvana by casting {@spell Summon Monster|COMSpells} V with material components of three or more small eyes from a beholder. (The chance of success is 10% per eye.) The spectator can be commanded only to guard some treasure. It performs no other duty, and if commanded to undertake some other task, it returns to Nirvana immediately. If its guarded treasure is ever destroyed or stolen, the spectator is released from service and returns to Nirvana. The summoner may take the item with no interference from the spectator, but this releases the creature."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Spectre (or Specter)",
+      "size": [
+        "M"
+      ],
+      "type": "undead",
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        12
+      ],
+      "hp": {
+        "formula": "5d8",
+        "average": 22
+      },
+      "speed": {
+        "fly": {
+          "number": 50,
+          "condition": "(hover)"
+        },
+        "canHover": true
+      },
+      "str": 1,
+      "dex": 14,
+      "con": 11,
+      "int": 10,
+      "wis": 10,
+      "cha": 11,
+      "passive": 10,
+      "cr": "1",
+      "shortName": "Specter",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "Understands all languages it knew in life but can't speak"
+      ],
+      "languageTags": [
+        "LF"
+      ],
+      "resist": [
+        {
+          "resist": [
+            "acid",
+            "cold",
+            "fire",
+            "lightning",
+            "thunder"
+          ]
+        },
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks"
+        }
+      ],
+      "immune": [
+        "necrotic",
+        "poison"
+      ],
+      "conditionImmune": [
+        "charmed",
+        "exhaustion",
+        "grappled",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "prone",
+        "restrained",
+        "unconscious"
+      ],
+      "trait": [
+        {
+          "name": "Incorporeal Movement",
+          "entries": [
+            "The specter can move through other creatures and objects as if they were difficult terrain. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
+          ]
+        },
+        {
+          "name": "Sunlight Sensitivity",
+          "entries": [
+            "While in sunlight, the specter has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Incorporeal Movement",
+        "Sunlight Sensitivity"
+      ],
+      "damageTags": [
+        "N",
+        "O"
+      ],
+      "action": [
+        {
+          "name": "Life Drain",
+          "entries": [
+            "{@atk ms} {@hit 4} to hit, reach 5 ft., one target. {@h}10 ({@damage 3d6}) necrotic damage. The target must succeed on a {@dc 10} Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+          ]
+        }
+      ],
+      "miscTags": [
+        "HPR"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Spectre (or Specter)|https://angrygolem-games.com/monster-manual/letter-s/specter/}",
+          "{@link SPECTER's TACTICS (read the article)|https://angrygolem-games.com/monster-tactics-fight-like-a-specter/}",
+          "{@link 5th Edition Advanced Mode|https://www.drivethrurpg.com/product/382784/5th-ADVANCED-MODE?affiliate_id=1465812&src=Specter}",
+          "Limiting the power of a character and making the overall difficulty of the game harder, does not reduce the creativity, indeed it does quite the opposite.",
+          "The Game Master has the option to use any and all of the instances proposed in this guide, or just some of them according to their preference.",
+          "It is the lack of something that move and motivate characters, not the abundance of it",
+          "DESCRIPTION",
+          "Spectres are powerful undead that haunt the most desolate and deserted of places. They hate all life and light. Spectres appear as semitransparent beings and are often mistaken for haunts or ghosts.",
+          "Unlike most undead, spectres retain the semblance and manner of dress of their former life and can be recognized by old friends or through paintings of the persons they used to be.",
+          "HABITAT / SOCIETY",
+          "Most spectres are solitary, but some enclaves exist where a particularly powerful or lucky spectre has managed to drain mortals of life. This lead spectre is known as the master spectre (always with maximum hit points per die), while the others are known collectively as the followers.",
+          "In this arrangement, the master spectre almost never engages enemies personally, but instead sends his minions in for the kill. Mortals drained of life by follower spectres are subservient to the master spectre, not the followers.",
+          "Note that if the master spectre is slain, all followers become independent and can travel anywhere they wish in hopes of becoming master spectres themselves. Once a character becomes a spectre, recovery is nearly impossible, requiring a special quest.",
+          "Spectres hate light and all life, as both remind them of their undead existence. They are therefore encountered only in places of extreme darkness and desolation, like long-abandoned ruins, dungeons, and subterranean sewers.",
+          "Contrary to popular mythology, spectres remain highly intelligent and generally rational after the transformation to undeath. Life makes them lament their unlife, and they bear a strong hatred for all those lucky enough to live and truly die.",
+          "Spectres have enough cunning to plan their attacks, and rival vampires in their skill at remaining hidden from the general populace.",
+          "ECOLOGY",
+          "No one knows who the first spectre was or how it came to be; the few facts detailed above are all that is known with any degree of cert"
         ],
         "images": [
           {
