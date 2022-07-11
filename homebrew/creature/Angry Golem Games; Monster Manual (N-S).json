@@ -22830,6 +22830,1793 @@
           }
         ]
       }
+    },
+    {
+      "name": "Spider",
+      "size": [
+        "T"
+      ],
+      "type": {
+        "type": "beast",
+        "tags": [
+          "animal"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        12
+      ],
+      "hp": {
+        "formula": "1d4 - 1",
+        "average": 1
+      },
+      "speed": {
+        "walk": 20,
+        "climb": 20
+      },
+      "str": 2,
+      "dex": 14,
+      "con": 8,
+      "int": 1,
+      "wis": 10,
+      "cha": 2,
+      "passive": 10,
+      "cr": "0",
+      "shortName": "Spider",
+      "senses": [
+        "darkvision 30 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "skill": {
+        "stealth": "+4"
+      },
+      "trait": [
+        {
+          "name": "Spider Climb",
+          "entries": [
+            "The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+          ]
+        },
+        {
+          "name": "Web Sense",
+          "entries": [
+            "While in contact with a web, the spider knows the exact location of any other creature in contact with the same web."
+          ]
+        },
+        {
+          "name": "Web Walker",
+          "entries": [
+            "The spider ignores movement restrictions caused by webbing."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Spider Climb",
+        "Web Sense",
+        "Web Walker"
+      ],
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}1 ({@damage 1d1}) piercing damage, plus 2 ({@damage 1d4}) poison damage. The target must succeed on a {@dc 9} Constitution saving throw or take the poison damage."
+          ]
+        }
+      ],
+      "damageTags": [
+        "I",
+        "P"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Spider|https://angrygolem-games.com/monster-manual/letter-s/spider-5e-stats/}",
+          "DESCRIPTION",
+          "Spiders are aggressive predators, dwelling both above and below ground. They are poisonous and bite prey first, because unconscious victims are easier to carry to a lair.",
+          "Spiders have eight legs and eight eyes. They usually fit into two categories: web-spinners, which have bulbous abdomens and thin, sleek legs; and hunting spiders, which have smaller bodies, larger heads and fangs, and hairy bodies and legs."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Spined Devil (Spinagon)",
+      "size": [
+        "S"
+      ],
+      "type": {
+        "type": "fiend",
+        "tags": [
+          "devil"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 13,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "5d6 + 5",
+        "average": 22
+      },
+      "speed": {
+        "walk": 20,
+        "fly": 40,
+        "canHover": false
+      },
+      "str": 10,
+      "dex": 15,
+      "con": 12,
+      "int": 11,
+      "wis": 14,
+      "cha": 8,
+      "passive": 12,
+      "cr": "2",
+      "shortName": "Spined Devil (Spinagon)",
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "senseTags": [
+        "SD"
+      ],
+      "languages": [
+        "Infernal",
+        "telepathy 120 ft."
+      ],
+      "languageTags": [
+        "I",
+        "TP"
+      ],
+      "resist": [
+        {
+          "resist": [
+            "cold"
+          ]
+        },
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks that aren’t silvered"
+        }
+      ],
+      "immune": [
+        "fire",
+        "poison"
+      ],
+      "conditionImmune": [
+        "poisoned"
+      ],
+      "trait": [
+        {
+          "name": "Devil’s Sight",
+          "entries": [
+            "Magical darkness doesn’t impede the devil’s darkvision."
+          ]
+        },
+        {
+          "name": "Flyby",
+          "entries": [
+            "The devil doesn’t provoke an opportunity attack when it flies out of an enemy’s reach."
+          ]
+        },
+        {
+          "name": "Limited Spines",
+          "entries": [
+            "The devil has twelve tail spines. Used spines regrow by the time the devil finishes a long rest."
+          ]
+        },
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The devil has advantage on saving throws against spells and other magical effects."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Flyby",
+        "Magic Resistance"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The devil makes two attacks: one with its bite and one with its fork or two with its tail spines."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}5 ({@damage 2d4}) slashing damage."
+          ]
+        },
+        {
+          "name": "Fork",
+          "entries": [
+            "{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) piercing damage."
+          ]
+        },
+        {
+          "name": "Tail Spine",
+          "entries": [
+            "{@atk rw} {@hit 4} to hit, range 20/80 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage, plus 3 ({@damage 1d6}) fire damage."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "F",
+        "P",
+        "S"
+      ],
+      "miscTags": [
+        "MW",
+        "RW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Spined Devil (Spinagon)|https://angrygolem-games.com/monster-manual/letter-s/spined-devil-or-spinagon-5e-stats/}",
+          "{@link 5th Edition Advanced Mode|https://www.drivethrurpg.com/product/382784/5th-ADVANCED-MODE?affiliate_id=1465812&src=SpinedDevil}",
+          "Limiting the power of a character and making the overall difficulty of the game harder, does not reduce the creativity, indeed it does quite the opposite.",
+          "The Game Master has the option to use any and all of the instances proposed in this guide, or just some of them according to their preference.",
+          "{@i It is the lack of something that move and motivate characters, not the abundance of it}",
+          "DESCRIPTION",
+          "Spinagons, the smallest baatezu, look like {@creature gargoyle|AGGMM}s — small humanoids with wings and a spiked tail. They carry small military forks or other nasty weapons. Spinagons have long, razor-sharp talons on their feet.",
+          "HABITAT / SOCIETY",
+          "Spinagons are common throughout the layers of Baator and plentiful in layers three through seven. They serve as messengers and lackeys for more powerful baatezu, which includes just about all of them. Spinagons are loyal messengers, seldom failing to properly deliver a letter or memorized missive. However, many baatezu scorn them as weak and ill-equipped for combat.",
+          "Indirectly, the spinagons act as scouts for Baator. Because spinagons have a vast number of messages to deliver and errands to run, they travel everywhere in the plane. If these wretched, cowardly creatures discover intruders, they fly off to call a more powerful baatezu. They do not attack or fight unless cornered and unable to barter their way out. A spinagon might even compromise its message to avoid combat.",
+          "Spinagons herd {@creature lemure|AGGMM}s and nupperibos and marshall them into large armies for more powerful baatezu. A greater baatezu that wants to form its army quickly for an upcoming battle treats the spinagons with respect.",
+          "ECOLOGY",
+          "Spinagons, though lowly, gain status quickly by gathering armies for greater baatezu. Often less influential baatezu get their armies last, whereas the more important baatezu get theirs immediately. Because of this, spinagons are subject to abuse and threats by middle-level baatezu disappointed with their performance.",
+          "Baator is a strange place, ruled by a perverse discipline that simultaneously encourages both structured behavior and treachery. But stranger still is the advancement process of the spinagon. When a spinagon advances, those it has served decide how much advancement the spinagon receives. Therefore, if a spinagon serves a {@creature gelugon|AGGMM} well, it may be promoted as high as amnizu. Stories tell of the {@creature pit fiend|AGGMM3} Greth advancing a spinagon to a {@creature hamatula|AGGMM2}."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Spirit Troll",
+      "size": [
+        "L"
+      ],
+      "type": "giant",
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        10
+      ],
+      "hp": {
+        "formula": "1d8 + 1",
+        "average": 5
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 1,
+      "dex": 17,
+      "con": 13,
+      "int": 8,
+      "wis": 9,
+      "cha": 16,
+      "passive": 13,
+      "cr": "11",
+      "shortName": "Spirit Troll",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "Giant"
+      ],
+      "languageTags": [
+        "GI"
+      ],
+      "skill": {
+        "perception": "+3"
+      },
+      "resist": [
+        "acid",
+        "cold",
+        "fire",
+        "lightning",
+        "thunder"
+      ],
+      "immune": [
+        {
+          "immune": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks"
+        }
+      ],
+      "conditionImmune": [
+        "exhaustion",
+        "grappled",
+        "paralyzed",
+        "petrified",
+        "prone",
+        "restrained",
+        "unconscious"
+      ],
+      "trait": [
+        {
+          "name": "Incorporeal Movement",
+          "entries": [
+            "The troll can move through other creatures and objects as if they were difficult terrain. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
+          ]
+        },
+        {
+          "name": "Regeneration",
+          "entries": [
+            "The troll regains 10 hit points at the start of each of its turns. If the troll takes psychic or force damage, this trait doesn’t function at the start of the troll’s next turn. The troll dies only if it starts its turn with 0 hit points and doesn’t regenerate."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Incorporeal Movement",
+        "Regeneration"
+      ],
+      "damageTags": [
+        "O",
+        "Y"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The troll makes three attacks: one with its bite and two with its claws."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}19 ({@damage 3d10 +3}) psychic damage, and the target must succeed on a {@dc 15} Wisdom saving throw or be {@condition stunned} for 1 minute. The {@condition stunned} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+          ]
+        },
+        {
+          "name": "Claws",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d10 +3}) psychic damage."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "conditionInflict": [
+        "stunned"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Spirit Troll|https://angrygolem-games.com/monster-manual/letter-s/spirit-troll-5e-stats/}",
+          "{@link 5th Edition Advanced Mode|https://www.drivethrurpg.com/product/382784/5th-ADVANCED-MODE?affiliate_id=1465812&src=SpiritTroll}",
+          "Limiting the power of a character and making the overall difficulty of the game harder, does not reduce the creativity, indeed it does quite the opposite.",
+          "The Game Master has the option to use any and all of the instances proposed in this guide, or just some of them according to their preference.",
+          "{@i It is the lack of something that move and motivate characters, not the abundance of it}",
+          "DESCRIPTION",
+          "A troll blasted with psychic energy can take a nonphysical form when it regenerates. Its psyche survives, but the body of a spirit troll is as insubstantial as shadow. The troll might be unaware of the transition, it still moves and attacks with teeth and claws as it always did, but now it strikes at its victim’s mind."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Spring Eladrin",
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "fey",
+        "tags": [
+          "elf"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "C",
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 19,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "17d8 + 51",
+        "average": 127
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 14,
+      "dex": 16,
+      "con": 16,
+      "int": 18,
+      "wis": 11,
+      "cha": 18,
+      "passive": 10,
+      "cr": "10",
+      "shortName": "Spring Eladrin",
+      "languages": [
+        "Common",
+        "Elvish",
+        "Sylvan"
+      ],
+      "languageTags": [
+        "C",
+        "E",
+        "S"
+      ],
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "skill": {
+        "deception": "+8",
+        "persuasion": "+8"
+      },
+      "resist": [
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks"
+        }
+      ],
+      "trait": [
+        {
+          "name": "Fey Step {@recharge 4}",
+          "entries": [
+            "As a bonus action, the eladrin can teleport up to 30 feet to an unoccupied space it can see."
+          ]
+        },
+        {
+          "name": "Joyful Presence",
+          "entries": [
+            "Any non-eladrin creature that starts its turn within 60 feet of the e ladrin must make a {@dc 16} Wisdom saving throw. On a failed save, the creature becomes {@condition charmed} by the eladrin for 1 minute. On a successful save, the creature becomes immune to any eladrin’s Joyful Presence for 24 hours. Whenever the eladrin deals damage to the {@condition charmed} creature, it can repeat the saving throw, ending the effect on itself on a success."
+          ]
+        },
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The eladrin has advantage on saving throws against spells and other magical effects."
+          ]
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Innate Spellcastin",
+          "headerEntries": [
+            "The eladrin’s innate spellcasting ability is Charisma (spell save {@dc 16}) . It can innately cast the following spells, requiring no material components:"
+          ],
+          "will": [
+            "{@spell charm person}",
+            "{@spell Tasha's hideous laughter}"
+          ],
+          "daily": {
+            "3e": [
+              "{@spell confusion}",
+              "{@spell enthrall}",
+              "{@spell suggestion}"
+            ],
+            "1e": [
+              "{@spell hallucinatory terrain}",
+              "{@spell Otto's irresistible dance}"
+            ]
+          },
+          "ability": "cha",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "I"
+      ],
+      "conditionInflict": [
+        "charmed"
+      ],
+      "traitTags": [
+        "Magic Resistance"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The eladrin makes two weapon attacks. The eladrin can cast one spell in place of one of these attacks."
+          ]
+        },
+        {
+          "name": "Longsword",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) slashing damage, or 7 ({@damage 1d10 + 2}) slashing damage if used with both hands, plus 4 ({@damage 1d8}) psychic damage."
+          ]
+        },
+        {
+          "name": "Longbow",
+          "entries": [
+            "{@atk rw} {@hit 7} to hit, range 150/600 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage, plus 4 ({@damage 1d8}) psychic damage."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P",
+        "S",
+        "Y"
+      ],
+      "miscTags": [
+        "MW",
+        "RW",
+        "RNG"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Spring Eladrin|https://angrygolem-games.com/monster-manual/letter-s/spring-eladrin-5e-stats/}",
+          "{@link 5th Edition Advanced Mode|https://www.drivethrurpg.com/product/382784/5th-ADVANCED-MODE?affiliate_id=1465812&src=SpringEladrin}",
+          "Limiting the power of a character and making the overall difficulty of the game harder, does not reduce the creativity, indeed it does quite the opposite.",
+          "The Game Master has the option to use any and all of the instances proposed in this guide, or just some of them according to their preference.",
+          "{@i It is the lack of something that move and motivate characters, not the abundance of it}",
+          "DESCRIPTION",
+          "Their hearts filled with joy, spring eladrin cavort through their sylvan realms, their songs and laughter filling the air. These playful eladrin beguile other creatures to fill them with the joy of spring. Their antics can lead other creatures into danger and make mischief",
+          "for them."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Sprite",
+      "size": [
+        "T"
+      ],
+      "type": "fey",
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "N",
+        "G"
+      ],
+      "ac": [
+        {
+          "ac": 15,
+          "from": [
+            "{@item leather armor|phb}"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "1d4",
+        "average": 2
+      },
+      "speed": {
+        "walk": 10,
+        "fly": 40,
+        "canHover": false
+      },
+      "str": 3,
+      "dex": 18,
+      "con": 10,
+      "int": 14,
+      "wis": 13,
+      "cha": 11,
+      "passive": 13,
+      "cr": "1/4",
+      "shortName": "Sprite",
+      "languages": [
+        "Common",
+        "Elvish",
+        "Sylvan"
+      ],
+      "languageTags": [
+        "C",
+        "E",
+        "S"
+      ],
+      "skill": {
+        "perception": "+3",
+        "stealth": "+8"
+      },
+      "action": [
+        {
+          "name": "Longsword",
+          "entries": [
+            "{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}1 ({@damage 1d1}) slashing damage."
+          ]
+        },
+        {
+          "name": "Shortbow",
+          "entries": [
+            "{@atk rw} {@hit 6} to hit, range 40/160 ft., one target. {@h}5 ({@damage 1d1 + 4}) piercing damage, and the target must succeed on a {@dc 10} Constitution saving throw or become {@condition poisoned} for 1 minute. If its saving throw result is 5 or lower, the {@condition poisoned} target falls {@condition unconscious} for the same duration, or until it takes damage or another creature takes an action to shake it awake."
+          ]
+        },
+        {
+          "name": "Heart Sight",
+          "entries": [
+            "The sprite touches a creature and magically knows the creature’s current emotional state. If the target fails a {@dc 10} Charisma saving throw, the sprite also knows the creature’s alignment. Celestials, fiends, and undead automatically fail the saving throw."
+          ]
+        },
+        {
+          "name": "Invisibility",
+          "entries": [
+            "The sprite magically turns {@condition invisible} until it attacks or casts a spell, or until its concentration ends (as if concentrating on a spell). Any equipment the sprite wears or carries is {@condition invisible} with it."
+          ]
+        }
+      ],
+      "damageTags": [
+        "P",
+        "S"
+      ],
+      "miscTags": [
+        "MW",
+        "RW",
+        "RNG"
+      ],
+      "conditionInflict": [
+        "invisible",
+        "poisoned"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Sprite|https://angrygolem-games.com/monster-manual/letter-s/sprite-5e-stats/}",
+          "{@link SPRITE’s TACTICS (read the article)|https://angrygolem-games.com/dnd-5e-sprite-tactics-build-challenging-encounters-against-a-sprite/}",
+          "{@link 5th Edition Advanced Mode|https://www.drivethrurpg.com/product/382784/5th-ADVANCED-MODE?affiliate_id=1465812&src=Sprite}",
+          "Limiting the power of a character and making the overall difficulty of the game harder, does not reduce the creativity, indeed it does quite the opposite.",
+          "The Game Master has the option to use any and all of the instances proposed in this guide, or just some of them according to their preference.",
+          "{@i It is the lack of something that move and motivate characters, not the abundance of it}",
+          "DESCRIPTION",
+          "Sprites usually speak only their own language, common, and elven, but seem to get along with woodland mammals and other creatures anyway. Humans often mistake sprites for butterflies at a distance, and it is guessed that the majority of forest creatures also think of the fair sprites in this way.",
+          "HABITAT / SOCIETY",
+          "Sprites are very flighty, and find even elves much too serious about most woodland affairs. Only druids deal with sprites regularly. Some druids even receive a little of their training in the company of a few sprites. Most sprites love druids, for their neutral alignment and love for nature make them see the forest in much the same way. On rare occasions, sprites associate with rangers as well.",
+          "Sprites are loosely tribal, electing the best warrior among the group (male or female) as the group spokesperson. This leader is recognized as the one who makes major decisions and bargains with druids and elves. Sprites rarely wait for their leader’s decision, often attacking an evil creature before the leader can issue any command.",
+          "ECOLOGY",
+          "Sprite sleep ointment is concocted from forest mushrooms. The ointment must be left to cure in the sun for seven days. Sprites hollow out tree stumps to serve as containers for this rare substance.",
+          "Sprites keep watch on their fellow sprites, so they know who to invite to their frequent gatherings. A deserted meadow or glen is never empty for more than a decade before a new clan of sprites moves in.",
+          "Sprite is employed as material component to empower the following spells:{@spell Minor Illusion}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Star Spawn Grue",
+      "size": [
+        "S"
+      ],
+      "type": {
+        "type": "aberration",
+        "tags": [
+          "star spawn"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "N",
+        "E"
+      ],
+      "ac": [
+        11
+      ],
+      "hp": {
+        "formula": "5d6",
+        "average": 17
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 6,
+      "dex": 13,
+      "con": 10,
+      "int": 9,
+      "wis": 11,
+      "cha": 6,
+      "passive": 10,
+      "cr": "1/4",
+      "shortName": "Star Spawn Grue",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "Deep Speech"
+      ],
+      "languageTags": [
+        "DS"
+      ],
+      "immune": [
+        "psychic"
+      ],
+      "trait": [
+        {
+          "name": "Aura of Madness",
+          "entries": [
+            "Creatures within 20 feet of the grue that aren’t aberrations have disadvantage on saving throws, as well as on attack rolls against creatures other than a star spawn grue."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Confounding Bite",
+          "entries": [
+            "{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}6 ({@damage 2d4 +1}) piercing damage, and the target must succeed on a {@dc 10} Wisdom saving throw or attack rolls against it have advantage until the start of the grue’s next turn."
+          ]
+        }
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Star Spawn Grue|https://angrygolem-games.com/monster-manual/letter-s/star-spawn-grue-5e-stats/}",
+          "{@link 5th Edition Advanced Mode|https://www.drivethrurpg.com/product/382784/5th-ADVANCED-MODE?affiliate_id=1465812&src=StarSpawnGrue}",
+          "Limiting the power of a character and making the overall difficulty of the game harder, does not reduce the creativity, indeed it does quite the opposite.",
+          "The Game Master has the option to use any and all of the instances proposed in this guide, or just some of them according to their preference.",
+          "{@i It is the lack of something that move and motivate characters, not the abundance of it}",
+          "DESCRIPTION",
+          "Fanged and lipless, the ever-grinning, madly staring grue lopes about on spindly legs and long arms. Bristles and spines project from odd patches of its pallid skin, and it’s long fingers end in broken and dirty nails. Grues are the weakest of the stars pawn. A host of writhing, scrambling grues typically accompanies more powerful star spawn. Their constant chittering and shrieking produces discordant psychic energy that disrupts thought patterns in other creatures. Intelligent creatures experience flashing colors, hallucinations, disorientation, and waves of hopelessness when they find themselves near a group of star spawn grues."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Star Spawn Hulk",
+      "size": [
+        "L"
+      ],
+      "type": {
+        "type": "aberration",
+        "tags": [
+          "star spawn"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 16,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "13d10 + 65",
+        "average": 136
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 20,
+      "dex": 8,
+      "con": 21,
+      "int": 7,
+      "wis": 12,
+      "cha": 9,
+      "passive": 15,
+      "cr": "10",
+      "shortName": "Star Spawn Hulk",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "Deep Speech"
+      ],
+      "languageTags": [
+        "DS"
+      ],
+      "skill": {
+        "perception": "+5"
+      },
+      "resist": [
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks"
+        }
+      ],
+      "conditionImmune": [
+        "charmed",
+        "frightened"
+      ],
+      "trait": [
+        {
+          "name": "Psychic Mirror",
+          "entries": [
+            "If the hulk takes psychic damage, each creature within 10 feet of the hulk takes that damage instead; the hulk takes none of the damage. In addition, the hulk’s thoughts and location can’t be discerned by magic."
+          ]
+        }
+      ],
+      "miscTags": [
+        "MW",
+        "RCH",
+        "AOE"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The hulk makes two s lam attacks. If both attacks hit the same target, the target also takes 9 ({@damage 2d8}) psychic damage and must succeed on a {@dc 17} Constitution saving throw or be {@condition stunned} until the end of the target’s next turn."
+          ]
+        },
+        {
+          "name": "Slam",
+          "entries": [
+            "{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}14 ({@damage 2d8 + 5}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Reaping Arms {@recharge 5}",
+          "entries": [
+            "The hulk makes a separate slam attack against each creature within 10 feet of it. Each creature that is hit must also succeed on a {@dc 17} Dexterity saving throw or be knocked {@condition prone}."
+          ]
+        }
+      ],
+      "conditionInflict": [
+        "prone",
+        "stunned"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "B",
+        "Y"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Star Spawn Hulk|https://angrygolem-games.com/monster-manual/letter-s/star-spawn-hulk-5e-stats/}",
+          "{@link 5th Edition Advanced Mode|https://www.drivethrurpg.com/product/382784/5th-ADVANCED-MODE?affiliate_id=1465812&src=StarSpawnHulk}",
+          "Limiting the power of a character and making the overall difficulty of the game harder, does not reduce the creativity, indeed it does quite the opposite.",
+          "The Game Master has the option to use any and all of the instances proposed in this guide, or just some of them according to their preference.",
+          "{@i It is the lack of something that move and motivate characters, not the abundance of it}",
+          "DESCRIPTION",
+          "The hulk is the largest of the known star spawn. Though ogre-like in stature, the hulk’s glistening translucent skin reveals a muscled form devoid of an ogre’s fat. Pale and seemingly lidless eyes glare balefully from a face distorted by too many teeth and too little nose. Hulks are seldom encountered without a commanding seer nearby. A hulk appears to have little will of its own, other than to protect its master."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Star Spawn Larva Mage",
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "aberration",
+        "tags": [
+          "star spawn"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 16,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "16d8 + 96",
+        "average": 168
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 17,
+      "dex": 12,
+      "con": 23,
+      "int": 18,
+      "wis": 12,
+      "cha": 16,
+      "passive": 16,
+      "cr": "16",
+      "shortName": "Star Spawn Larva Mage",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "Deep Speech"
+      ],
+      "languageTags": [
+        "DS"
+      ],
+      "save": {
+        "dex": "+6",
+        "wis": "+6",
+        "cha": "+8"
+      },
+      "skill": {
+        "perception": "+6"
+      },
+      "resist": [
+        {
+          "resist": [
+            "cold"
+          ]
+        },
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "rom nonmagical attacks"
+        }
+      ],
+      "immune": [
+        "psychic"
+      ],
+      "conditionImmune": [
+        "charmed",
+        "frightened",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "restrained"
+      ],
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasting",
+          "headerEntries": [
+            "The larva mage’s innate spellcasting ability is Charisma (spell save {@dc 161} +8 to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
+          ],
+          "will": [
+            "{@spell eldritch blast} (3 beams, +3 bonus to each damage roll)",
+            "{@spell minor illusion}"
+          ],
+          "daily": {
+            "1": [
+              "{@spell circle of death}"
+            ],
+            "3": [
+              "{@spell dominate monster}"
+            ]
+          },
+          "ability": "cha",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "I"
+      ],
+      "damageTagsSpell": [
+        "N",
+        "O"
+      ],
+      "trait": [
+        {
+          "name": "Return to Worms",
+          "entries": [
+            "When the larva mage is reduced to 0 hit points, it breaks apart into a swarm ofinsects in the same space. Unless the swarm is destroyed, the larva mage reforms",
+            "from it 24 hours later."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Slam",
+          "entries": [
+            "{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}7 ({@damage 1d8 + 3}) bludgeoning damage, and the target must succeed on a {@dc 19} Constitution saving throw or be {@condition poisoned} until the end of its next turn."
+          ]
+        },
+        {
+          "name": "Plague of Worms {@recharge}",
+          "entries": [
+            "Each creature other than a star spawn within 10 feet of the larva mage must succeed on a {@dc 19} Dexterity saving throw or take 22 (Sd8) necrotic damage and be {@condition blinded} and {@condition restrained} by masses of swarming worms. The affected creature takes 22 (Sd8) necrotic damage at the start of each of the larva mage’s turns. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+          ]
+        }
+      ],
+      "damageTags": [
+        "B",
+        "N"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH"
+      ],
+      "conditionInflict": [
+        "blinded",
+        "poisoned",
+        "restrained"
+      ],
+      "reaction": [
+        {
+          "name": "Feed on Weakness",
+          "entries": [
+            "When a creature within 20 feet of the larva mage fails a saving throw, the larva mage gains 10 temporary hit points."
+          ]
+        }
+      ],
+      "legendaryActions": 3,
+      "legendaryHeader": [
+        "The larva mage can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. The larva mage regains spent legendary actions at the start of its turn."
+      ],
+      "legendary": [
+        {
+          "name": "Cantrip (Costs 2 Actions)",
+          "entries": [
+            "The larva mage casts one cantrip."
+          ]
+        },
+        {
+          "name": "Slam (Costs 2 Actions)",
+          "entries": [
+            "The larva mage makes one slam attack."
+          ]
+        },
+        {
+          "name": "Feed (Costs 3 Actions)",
+          "entries": [
+            "Each creature {@condition restrained} by the larva mage’s Plague of Worms takes 13 ({@damage 3d8}) necrotic damage, and the larva mage gains 6 temporary hit points."
+          ]
+        }
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Star Spawn Larva Mage|https://angrygolem-games.com/monster-manual/letter-s/star-spawn-larva-mage-5e-stats/}",
+          "{@link 5th Edition Advanced Mode|https://www.drivethrurpg.com/product/382784/5th-ADVANCED-MODE?affiliate_id=1465812&src=StarSpawnLarvaMage}",
+          "Limiting the power of a character and making the overall difficulty of the game harder, does not reduce the creativity, indeed it does quite the opposite.",
+          "The Game Master has the option to use any and all of the instances proposed in this guide, or just some of them according to their preference.",
+          "{@i It is the lack of something that move and motivate characters, not the abundance of it}",
+          "DESCRIPTION",
+          "A larva mage is a nightmarish combination of a mortal body and otherworldly s ubstance. When a powerful cultist of a wormlike entity such as Kyuss or Kezefusually a warlock or other spellcaster, contacts the comet-borne emissary of an Elder Evil, the emissary can merge with a mortal consciousness to create a larva mage. None of the original cultist’s personality survives the transformation, so what emerges is wholly alien."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Star Spawn Mangler",
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "aberration",
+        "tags": [
+          "star spawn"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        14
+      ],
+      "hp": {
+        "formula": "13d8 + 13",
+        "average": 71
+      },
+      "speed": {
+        "walk": 40,
+        "climb": 40
+      },
+      "str": 8,
+      "dex": 18,
+      "con": 12,
+      "int": 11,
+      "wis": 12,
+      "cha": 7,
+      "passive": 11,
+      "cr": "5",
+      "shortName": "Star Spawn Mangler",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "Deep Speech"
+      ],
+      "languageTags": [
+        "DS"
+      ],
+      "save": {
+        "dex": "+7",
+        "con": "+4"
+      },
+      "skill": {
+        "stealth": "+7"
+      },
+      "resist": [
+        "cold"
+      ],
+      "immune": [
+        "psychic"
+      ],
+      "conditionImmune": [
+        "charmed",
+        "frightened",
+        "prone"
+      ],
+      "trait": [
+        {
+          "name": "Ambush",
+          "entries": [
+            "On the first round of each combat, the mangler has advantage on attack rolls against a creature that hasn’t taken a turn yet."
+          ]
+        },
+        {
+          "name": "Shadow Stealth",
+          "entries": [
+            "While in dim light or darkness, the mangler can take the Hide action as a bonus action."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Ambusher"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The mangler makes two claw attacks."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 +4}) slashing damage. If the attack roll has advantage, the target also takes 7 ({@damage 2d6}) psychic damage."
+          ]
+        },
+        {
+          "name": "Flurry of Claws {@recharge 4}",
+          "entries": [
+            "The mangler makes six claw attacks against one target. Either before or after these attacks, it can move up to its speed as a bonus action without provoking opportunity attacks."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "S",
+        "Y"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Star Spawn Mangler|https://angrygolem-games.com/monster-manual/letter-s/star-spawn-mangler-5e-stats/}",
+          "{@link 5th Edition Advanced Mode|https://www.drivethrurpg.com/product/382784/5th-ADVANCED-MODE?affiliate_id=1465812&src=StarSpawnMangler}",
+          "Limiting the power of a character and making the overall difficulty of the game harder, does not reduce the creativity, indeed it does quite the opposite.",
+          "The Game Master has the option to use any and all of the instances proposed in this guide, or just some of them according to their preference.",
+          "{@i It is the lack of something that move and motivate characters, not the abundance of it}",
+          "DESCRIPTION",
+          "A mangler is a low-slung, creeping horror with multiple gangly arms. A mangler most often has six arms, but one can have any number from four to eight. Manglers creep along the ground or the walls, sticking to shadows, hiding in spots that seem too shallow or well-lit to conceal anything. They appear smaller than their true size, thanks to their hunched posture and emaciated frame. Cultistss ummon these creatures to serve as guards and assassins, two roles at which they excel."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Star Spawn Seer",
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "aberration",
+        "tags": [
+          "star spawn"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "N",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 17,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "18d8 + 72",
+        "average": 153
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 14,
+      "dex": 12,
+      "con": 18,
+      "int": 22,
+      "wis": 19,
+      "cha": 16,
+      "passive": 19,
+      "cr": "13",
+      "shortName": "Star Spawn Seer",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "Common",
+        "Deep Speech",
+        "Undercommon"
+      ],
+      "languageTags": [
+        "C",
+        "DS",
+        "U"
+      ],
+      "save": {
+        "dex": "+6",
+        "int": "+11",
+        "wis": "+9",
+        "cha": "+8"
+      },
+      "skill": {
+        "perception": "+9"
+      },
+      "resist": [
+        {
+          "resist": [
+            "cold"
+          ]
+        },
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks"
+        }
+      ],
+      "immune": [
+        "psychic"
+      ],
+      "conditionImmune": [
+        "charmed",
+        "frightened"
+      ],
+      "trait": [
+        {
+          "name": "Out-of-Phase Movement",
+          "entries": [
+            "The seer can move through other creatures and objects as if they were difficult terrain. Each creature it moves through takes 5 ({@damage 1d10}) psychic damage; no creature can take this damage more than once per turn. The seer takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
+          ]
+        }
+      ],
+      "damageTags": [
+        "B",
+        "O",
+        "Y"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The seer makes two comet staff attacks or uses Psychic Orb twice."
+          ]
+        },
+        {
+          "name": "Comet Staff",
+          "entries": [
+            "{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d6 + 6}) bludgeoning damage, or 10 ({@damage 1d8 + 6}) bludgeoning damage if used with both hands, plus 18 ({@damage 4d8}) psychic damage, and the target must succeed on a {@dc 19} Constitution saving throw or be {@condition incapacitated} until the end of its next turn."
+          ]
+        },
+        {
+          "name": "Psychic Orb",
+          "entries": [
+            "{@atk rw} {@hit 11} to hit, range 120 ft., one target. {@h}27 ({@damage 5d10}) psychic damage."
+          ]
+        },
+        {
+          "name": "Collapse Distance {@recharge}",
+          "entries": [
+            "The seer warps space around a creature it can see within 30 feet of it. That creature must make a {@dc 19} Wisdom saving throw. On a failed save, the target, along with any equipment it is wearing or carrying, is magically teleported up to 60 feet to an unoccupied space the seer can see, and all other creatures within 10 feet of the target’s original space each takes 39 ({@damage 6d12}) psychic damage. On a successful save, the target takes 19 ({@damage 3d12}) psychic damage."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "miscTags": [
+        "MW",
+        "RW"
+      ],
+      "conditionInflict": [
+        "incapacitated"
+      ],
+      "reaction": [
+        {
+          "name": "Bend Space",
+          "entries": [
+            "When the seer would be hit by an attack, it teleports, exchanging positions with another star spawn it can see within 60 feet ofit. The other star spawn is hit by the attack instead."
+          ]
+        }
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Star Spawn Seer|https://angrygolem-games.com/monster-manual/letter-s/star-spawn-seer-5e-stats/}",
+          "{@link 5th Edition Advanced Mode|https://www.drivethrurpg.com/product/382784/5th-ADVANCED-MODE?affiliate_id=1465812&src=StarSpawnSeer}",
+          "Limiting the power of a character and making the overall difficulty of the game harder, does not reduce the creativity, indeed it does quite the opposite.",
+          "The Game Master has the option to use any and all of the instances proposed in this guide, or just some of them according to their preference.",
+          "{@i It is the lack of something that move and motivate characters, not the abundance of it}",
+          "DESCRIPTION",
+          "A star spawn seer is most often encountered as the leader of a cult that worships one or more of the Elder Evils. Usually, the seer is the only cult member that grasps the full extent of the horror the cult is venerating. An entity that appears as a star spawn seer in the",
+          "Material Plane usually arrives as something different – something disembodied. When a warlock or other spellcaster establishes communication with it, the seer-entity takes control of the mortal’s form and spirit, transforming it into a star spawn seer. Whoever the seer once was largely vanishes beneath the corpulent bulk of tumorous skin than builds up in strange whorls all over the seer’s body. Hands become bulky, flipper-like appendages capable of grasping their strange staffs-formed of some blend of flesh, bone, and star stuff- but clumsy and painful when used to manipulate other things. A star spawn seer is almost always accompanied by one or more star spawn hulks. Although the hulk is a worthy combatant in its own right, it’s also a vital part of a tactic often used by seers. When a seer deals psychic damage to a hulk, the hulk isn’t hurt, while the effect ricochets off the hulk and expands to assault other creatures. The seer’s goal is to tap the energy sources and master the rites that will enable it to extend a bridge between the vulnerable sanity of the Material Plane and the squirming madness of an Elder Evil’s prison."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Steam Mephit",
+      "size": [
+        "S"
+      ],
+      "type": {
+        "type": "elemental",
+        "tags": [
+          "mephit"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "N",
+        "E"
+      ],
+      "ac": [
+        10
+      ],
+      "hp": {
+        "formula": "6d6",
+        "average": 21
+      },
+      "speed": {
+        "walk": 30,
+        "fly": 30,
+        "canHover": false
+      },
+      "str": 5,
+      "dex": 11,
+      "con": 10,
+      "int": 11,
+      "wis": 10,
+      "cha": 12,
+      "passive": 10,
+      "cr": "1/4",
+      "shortName": "Steam Mephit",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "Aquan",
+        "Ignan"
+      ],
+      "languageTags": [
+        "AQ",
+        "IG"
+      ],
+      "immune": [
+        "fire",
+        "poison"
+      ],
+      "conditionImmune": [
+        "poisoned"
+      ],
+      "trait": [
+        {
+          "name": "Death Burst",
+          "entries": [
+            "When the mephit dies, it explodes in a cloud of steam. Each creature within 5 feet of the mephit must succeed on a {@dc 10} Dexterity saving throw or take 4 ({@damage 1d8}) fire damage."
+          ]
+        },
+        {
+          "name": "Regeneration",
+          "entries": [
+            "The steam mephit regains 1 hit point at the start of its turn."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Death Burst",
+        "Regeneration"
+      ],
+      "damageTags": [
+        "F",
+        "S"
+      ],
+      "miscTags": [
+        "MW",
+        "AOE"
+      ],
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasting",
+          "headerEntries": [
+            "The mephit can innately cast blur, requiring no material components. Its innate spellcasting ability is Charisma:"
+          ],
+          "daily": {
+            "1": [
+              "{@spell blur}"
+            ]
+          },
+          "ability": "cha",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "I"
+      ],
+      "action": [
+        {
+          "name": "Claws",
+          "entries": [
+            "{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) slashing damage, plus 2 ({@damage 1d4}) fire damage."
+          ]
+        },
+        {
+          "name": "Steam Breath {@recharge}",
+          "entries": [
+            "The mephit exhales a 15-foot cone of scalding steam. Each creature in that area must succeed on a {@dc 10} Dexterity saving throw, taking 4 ({@damage 1d8}) heat damage on a failed save, or half as much damage on a successful one."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Breath Weapon"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Steam Mephit|https://angrygolem-games.com/monster-manual/letter-s/steam-mephit-5e-stats/}",
+          "{@link 5th Edition Advanced Mode|https://www.drivethrurpg.com/product/382784/5th-ADVANCED-MODE?affiliate_id=1465812&src=SteamMephit}",
+          "Limiting the power of a character and making the overall difficulty of the game harder, does not reduce the creativity, indeed it does quite the opposite.",
+          "The Game Master has the option to use any and all of the instances proposed in this guide, or just some of them according to their preference.",
+          "{@i It is the lack of something that move and motivate characters, not the abundance of it}",
+          "DESCRIPTION",
+          "Bossy and hypersensitive, steam mephits are the self-appointed overlords of all mephits and, in their own minds, lords of the quasiplane of Steam. Mist mephits refuse to obey them, and this disobedience has led to a millennia-long rivalry between the types.",
+          "In addition to the hissing steam that escapes from their pores, steam mephits leave a trail of near-boiling water where they walk.",
+          "ECOLOGY",
+          "Steam mephits heat confined areas or power small engines.",
+          "Steam Mephit is employed as component to empower the following spells:{@spell Find Familiar}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Steel Predator",
+      "size": [
+        "M"
+      ],
+      "type": "construct",
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 20,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "18d10 + 108",
+        "average": 207
+      },
+      "speed": {
+        "walk": 40
+      },
+      "str": 24,
+      "dex": 17,
+      "con": 22,
+      "int": 4,
+      "wis": 14,
+      "cha": 6,
+      "passive": 17,
+      "cr": "16",
+      "shortName": "Steel Predator",
+      "languages": [
+        "understands Modron and the language of its owner but can’t speak"
+      ],
+      "languageTags": [
+        "OTH"
+      ],
+      "senses": [
+        "blindsight 30 ft.",
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "B",
+        "D"
+      ],
+      "skill": {
+        "perception": "+7",
+        "stealth": "+8",
+        "survival": "+7"
+      },
+      "resist": [
+        "cold",
+        "lightning",
+        "necrotic",
+        "thunder"
+      ],
+      "immune": [
+        {
+          "immune": [
+            "poison",
+            "psychic"
+          ]
+        },
+        {
+          "immune": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks"
+        }
+      ],
+      "conditionImmune": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "stunned"
+      ],
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasting",
+          "headerEntries": [
+            "The steel predator’s innate spellcasting ability is Wisdom. The steel predator can innately cast the following spells, requiring no components:"
+          ],
+          "daily": {
+            "3e": [
+              "{@spell dimension door} (self only)",
+              "{@spell plane shift} (self only)"
+            ]
+          },
+          "ability": "wis",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": [
+        "I"
+      ],
+      "damageTagsSpell": [
+        "O"
+      ],
+      "trait": [
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The steel predator has advantage on saving throws against spells and other magical effects."
+          ]
+        },
+        {
+          "name": "Magic Weapons",
+          "entries": [
+            "The steel predator’s weapon attacks are magical."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Magic Resistance",
+        "Magic Weapons"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The steel predator makes three attacks: one with its bite and two with its claw."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d6 + 7}) piercing damage."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d8 + 7}) slashing damage."
+          ]
+        },
+        {
+          "name": "Stunning Roar {@recharge 5}",
+          "entries": [
+            "The steel predator emits a roar in a 60-foot cone. Each creature in that area must make a {@dc 19} Constitution saving throw. On a failed save, a creature takes 27 ({@damage 5d10}) thunder damage, drops everything it’s holding, and is {@condition stunned} for 1 minute. On a successful save, a creature takes half as much damage. The {@condition stunned} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P",
+        "S",
+        "T"
+      ],
+      "miscTags": [
+        "MW",
+        "AOE"
+      ],
+      "conditionInflict": [
+        "stunned"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Steel Predator|https://angrygolem-games.com/monster-manual/letter-s/steel-predator-5e-stats/}",
+          "DESCRIPTION",
+          "A steel predator is a merciless machine with one purpose: to locate and kill its target regardless of distance and obstacles."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
     }
   ]
 }
