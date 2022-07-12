@@ -26077,6 +26077,114 @@
           }
         ]
       }
+    },
+    {
+      "name": "Subterranean Lizard",
+      "size": [
+        "H"
+      ],
+      "type": {
+        "type": "beast",
+        "tags": [
+          "giant animal"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        {
+          "ac": 13,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "6d12 + 12",
+        "average": 51
+      },
+      "speed": {
+        "walk": 60,
+        "climb": 40
+      },
+      "str": 20,
+      "dex": 14,
+      "con": 14,
+      "int": 2,
+      "wis": 12,
+      "cha": 5,
+      "passive": 13,
+      "cr": "1",
+      "shortName": "Subterranean Lizard",
+      "senses": [
+        "darkvision 180 ft."
+      ],
+      "senseTags": [
+        "SD"
+      ],
+      "skill": {
+        "perception": "+3"
+      },
+      "trait": [
+        {
+          "name": "Spider Climb",
+          "entries": [
+            "The riding lizard can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Spider Climb"
+      ],
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}12 ({@damage 2d6 + 5}) piercing damage."
+          ]
+        },
+        {
+          "name": "Tongues",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 20 ft., one target. {@h}7 ({@damage 1d4 + 5}) bludgeoning damage. The target is {@condition grappled} (escape {@dc 15}) and is pulled into the lizard’s mouth. The lizard can bite with advantage and inflicts 19 ({@damage 4d6 + 5}) piercing damage."
+          ]
+        }
+      ],
+      "damageTags": [
+        "B",
+        "P"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH"
+      ],
+      "conditionInflict": [
+        "grappled"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Subterranean Lizard|https://angrygolem-games.com/monster-manual/letter-s/subterranean-lizard-5e-stats/}",
+          "DESCRIPTION",
+          "The subterranean lizard is able to run across walls or ceilings with the help of its suction cup-tipped feet.",
+          "The subterranean lizard has clamped its jaws on its target and squeezes it with its powerful jaws.",
+          "Subterranean lizards have tongues up to 20 feet long. A prey seized by the tongue will be drawn into the mouth and bitten.",
+          "Subterranean lizards can be used as mounts or pulling animals for vehicles.",
+          "The statistics are detailed in the {@link D&D 5e Animals & Vehicles reference guide|https://www.drivethrurpg.com/product/332491/DD-5ed-ANIMALS--VEHICLES?affiliate_id=1465812&src=SubterraneanLizard}.",
+          "Just have a look at the preview on DrivethruRpg."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
     }
   ]
 }
