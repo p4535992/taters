@@ -114,7 +114,6 @@
 - [NOT ESSENTIAL][TOKEN][Border Control](https://github.com/kandashi/Border-Control )
 - [NOT ESSENTIAL][Let's trade]()
 - [NOT ESSENTIAL][CHAT][FoundryVTT NPC Chatter](https://github.com/cswendrowski/FoundryVtt-Npc-Chatter ) - https://raw.githubusercontent.com/cswendrowski/FoundryVtt-Npc-Chatter/master/module.json
-- [NOT ESSENTIAL][TOKEN][Shared Vision](https://github.com/CDeenen/SharedVision )
 - [NOT ESSENTIAL][COMBAT][Toggle Combat Warning](https://github.com/bekriebel/fvtt-module-toggle-combat-warning) - https://raw.githubusercontent.com/bekriebel/fvtt-module-toggle-combat-warning/main/module.json
 - [BETTER TOKEN-Z][TOKEN][Your Tokens Visible](https://github.com/David-Zvekic/TokensVisible )
 - [INTEGRATED IN PIN CUSHION][JOURNAL][Thumbnails for Journal Entries](https://github.com/J-Guenther/foundryvtt-journal-thumbnail ) - https://raw.githubusercontent.com/J-Guenther/foundryvtt-journal-thumbnail/main/module.json

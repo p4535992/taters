@@ -81,6 +81,8 @@
 - [UTILITY][Multiface tile](https://gitlab.com/Freeze020/multiface-tiles/)
 - [UTILITY][Introduce Me](https://github.com/WBHarry/introduce-me)
 - [JOURNAL][Arius Planeswalker's Stylish Journal for Monk's Enhanced Journal](https://github.com/AmazingVanish/apsj4mej)
+- [TOKEN][Shared Vision](https://github.com/CDeenen/SharedVision )
+- [UTILITY][Hide-Sidebars](https://github.com/NutritiousCookie/Hide-Sidebars)
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
@@ -137,6 +139,8 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 - [Argon - Combat HUD](https://github.com/theripper93/enhancedcombathud)
 - [Custom Abilities & Skills](https://github.com/misthero/dnd5e-custom-skills)
 - [CHARACTER SHEET/UTILITY][Inventory Plus](https://github.com/p4535992/inventory-plus )
+
+- [UTILITY][Monk's Shops](https://github.com/ironmonk88/monks-shops)
 
 ## [SYSTEM] PATHFINDER 1 MODULES
 
@@ -210,6 +214,8 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 ## MODULES COMPENDIUM
 
 - [COMPENDIUM][Super Homebrew Pack](https://github.com/SuperNar3k/foundry )
+- [COMPENDIUM][Kris's Compendium of Trade Goods](https://github.com/kristkos/kctg-common)
+- [COMPENDIUM][Revised Weapons & Equipment for 5e](https://github.com/M0nk3yy/RWE)
 - [COMPENDIUM][Data Toolbox - Let's Contribute](https://github.com/SvenWerlen/fvtt-data-toolbox/tree/master/ )
 - [COMPENDIUM][Take on Magic Items (unofficial)](https://github.com/brunocalado/takeonmagicitems )
 - [COMPENDIUM][More Automated Spells Items and Feats](https://github.com/jbowensii/More-Automated-Spells-Items-and-Feats)
