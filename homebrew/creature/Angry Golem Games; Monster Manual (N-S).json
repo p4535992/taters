@@ -26242,6 +26242,510 @@
           }
         ]
       }
+    },
+    {
+      "name": "Succubus",
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "fiend",
+        "tags": [
+          "demon",
+          "shapechanger"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "N",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 15,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "12d8 + 12",
+        "average": 66
+      },
+      "speed": {
+        "walk": 30,
+        "fly": 60,
+        "canHover": false
+      },
+      "str": 8,
+      "dex": 17,
+      "con": 13,
+      "int": 15,
+      "wis": 12,
+      "cha": 20,
+      "passive": 15,
+      "cr": "4",
+      "shortName": "Succubus",
+      "languages": [
+        "Abyssal",
+        "Common",
+        "Infernal",
+        "telepathy 60 Ft."
+      ],
+      "languageTags": [
+        "AB",
+        "C",
+        "I",
+        "TP"
+      ],
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "skill": {
+        "deception": "+9",
+        "insight": "+5",
+        "perception": "+5",
+        "persuasion": "+9",
+        "stealth": "+7"
+      },
+      "resist": [
+        {
+          "resist": [
+            "cold",
+            "fire"
+          ]
+        },
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical weapons"
+        }
+      ],
+      "trait": [
+        {
+          "name": "Telepathic Bond",
+          "entries": [
+            "The fiend ignores the range restriction on its telepathy when communicating with a creature it has {@condition charmed}. The two don’t even need to be on the same plane of existence."
+          ]
+        },
+        {
+          "name": "Shapechanger",
+          "entries": [
+            "The fiend can use its action to polymorph into a Small or Medium humanoid, or back into its true form. Without wings, the fiend loses its flying speed. Other than its size and speed, its statistics are the same in each form. Any equipment it is wearing or carrying isn’t transformed. It reverts to its true form if it dies."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Shapechanger"
+      ],
+      "action": [
+        {
+          "name": "Claw (Fiend Form Only)",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 +3}) slashing damage."
+          ]
+        },
+        {
+          "name": "Charm",
+          "entries": [
+            "One humanoid the fiend can see within 30 feet of it must succeed on a {@dc 15} Wisdom saving throw or be magically {@condition charmed} for 1 day. The {@condition charmed} target obeys the fiend’s verbal or telepathic commands. If the target suffers any harm or receives a suicidal command, it can repeat the saving throw, ending the effect on a success. If the target successfully saves against the effect, or if the effect on it ends, the target is immune to this fiend’s Charm for the next 24 hours.",
+            "The fiend can have only one target {@condition charmed} at a time. If it charms another, the effect on the previous target ends."
+          ]
+        },
+        {
+          "name": "Draining Kiss",
+          "entries": [
+            "The fiend kisses a creature {@condition charmed} by it or a willing creature. The target must make a {@dc 15} Constitution saving throw against this magic, taking 32 ({@damage 5d10 + 5}) psychic damage on a failed save, or half as much damage on a successful one. The target’s hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+          ]
+        },
+        {
+          "name": "Etherealness",
+          "entries": [
+            "The fiend magically enters the Ethereal Plane from the Material Plane, or vice versa."
+          ]
+        }
+      ],
+      "damageTags": [
+        "S",
+        "Y"
+      ],
+      "miscTags": [
+        "MW",
+        "HPR"
+      ],
+      "conditionInflict": [
+        "charmed"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Succubus|https://angrygolem-games.com/monster-manual/letter-s/succubus-5e-stats/}",
+          "{@link SUCCUBUS’ TACTICS (read the article)|https://angrygolem-games.com/dnd-5e-succubus-and-incubus-tactics-build-challenging-encounters-against-succubus-and-incubus/}",
+          "{@link 5th Edition Advanced Mode|https://www.drivethrurpg.com/product/382784/5th-ADVANCED-MODE?affiliate_id=1465812&src=Succubus}",
+          "Limiting the power of a character and making the overall difficulty of the game harder, does not reduce the creativity, indeed it does quite the opposite.",
+          "The Game Master has the option to use any and all of the instances proposed in this guide, or just some of them according to their preference.",
+          "{@i It is the lack of something that move and motivate characters, not the abundance of it}",
+          "DESCRIPTION",
+          "Beautiful and seductive, the succubi are the temptresses of mortals. Whereas the {@creature glabrezu|AGMM} tempt men of power, the succubi choose men of passion and energy. Succubi appear most often polymorphed into stunningly beautiful women with perfect figures and smooth, milky skin. They may also appear as any demihuman race. However, they do not often deal with demihumans, because humans’ fiery nature makes them easier prey.",
+          "Succubi look more {@creature tanar’ric|AGGMM4} in their true form: that of a beautiful woman with large wings and sinister, glowing eyes.",
+          "Succubi can speak the language of their victims. They also communicate using telepathy.",
+          "HABITAT / SOCIETY",
+          "The temptresses of the Lower Planes are subtle and slow. They seduce mortals with their charms, ultimately killing them and taking their life forces to the Abyss.",
+          "Succubi act independently of tanar’ri society. They work of their own volition and ultimately answer to no one. The greater and true tanar’ri seem content with this situation.",
+          "ECOLOGY",
+          "The destruction of mortals increases the power of the Abyss. With this power the succubi aid the eternal war effort of the tanar’ri, who therefore tolerate them."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Sun Spirit, American Indian Avatar",
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "avatar"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "C",
+        "N"
+      ],
+      "ac": [
+        20
+      ],
+      "hp": {
+        "formula": "23d8 + 92",
+        "average": 195
+      },
+      "speed": {
+        "fly": 75,
+        "canHover": false
+      },
+      "str": 20,
+      "dex": 20,
+      "con": 18,
+      "int": 18,
+      "wis": 16,
+      "cha": 18,
+      "passive": 14,
+      "cr": "15",
+      "shortName": "Sun Spirit, American Indian Avatar",
+      "languages": [
+        "All"
+      ],
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "skill": {
+        "acrobatics": "+4",
+        "animal handling": "+4",
+        "arcana": "+4",
+        "athletics": "+4",
+        "deception": "+4",
+        "history": "+4",
+        "insight": "+4",
+        "intimidation": "+4",
+        "investigation": "+4",
+        "medicine": "+4",
+        "nature": "+4",
+        "perception": "+4",
+        "performance": "+4",
+        "persuasion": "+4",
+        "religion": "+4",
+        "sleight of hand": "+4",
+        "stealth": "+4",
+        "survival": "+4"
+      },
+      "trait": [
+        {
+          "name": "Gaze",
+          "entries": [
+            "When someone looks at Sun’s avatar with harmful intent, the attacker must roll a {@dc 19} charisma saving throw or be permanently {@condition blinded}."
+          ]
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "He can call upon the Illusion/Enchantment school of magic for his spells"
+          ],
+          "type": "spellcasting"
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The Sun Spirit makes two attack with its composite long bow."
+          ]
+        },
+        {
+          "name": "Bow",
+          "entries": [
+            "{@atk rs} {@hit 15} to hit, range 150/600 ft., one target. {@h}12 ({@damage 1d8 + 8}) piercing damage."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Sun Spirit, American Indian Avatar|https://angrygolem-games.com/monster-manual/letter-s/sun-spirit-american-indians-avatar/}",
+          "DESCRIPTION",
+          "Sun’s avatar takes the form of a yellow-skinned, yellow haired warrior of great physical strength and attractiveness.",
+          "{@link God & Clergy (go to page)|https://angrygolem-games.com/monster-manual/letter-s/sun-spirit-god-and-clerics-for-dd-5e/}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Sung Chiang, Chinese Avatar",
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "avatar"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "N",
+        "E"
+      ],
+      "ac": [
+        22
+      ],
+      "hp": {
+        "formula": "24d6 + 96",
+        "average": 180
+      },
+      "speed": {
+        "walk": 90
+      },
+      "str": 18,
+      "dex": 20,
+      "con": 18,
+      "int": 18,
+      "wis": 14,
+      "cha": 18,
+      "passive": 14,
+      "cr": "15",
+      "shortName": "Sung Chiang, Chinese Avatar",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "All"
+      ],
+      "skill": {
+        "acrobatics": "+4",
+        "animal handling": "+4",
+        "arcana": "+4",
+        "athletics": "+4",
+        "deception": "+4",
+        "history": "+4",
+        "insight": "+4",
+        "intimidation": "+4",
+        "investigation": "+4",
+        "medicine": "+4",
+        "nature": "+4",
+        "perception": "+4",
+        "performance": "+4",
+        "persuasion": "+4",
+        "religion": "+4",
+        "sleight of hand": "+4",
+        "stealth": "+4",
+        "survival": "+4"
+      },
+      "action": [
+        {
+          "name": "Dagger",
+          "entries": [
+            "{@atk ms,rs} {@hit 12} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}8 ({@damage 1d4 + 6}) piercing damage in melee, or 8 ({@damage 1d4 + 6}) piercing damage at range. Sung Chiang’s avatar can use his dagger as either a melee or missile weapon. When his dagger is thrown, another appears in his hand and the first disappears after it has inflicted its damage. Anyone hit by his dagger must roll a {@dc 23} constitution saving throw or suffer a loss of {@dice 3d6} points of Constitution. If this reduces their Constitution to 0 or less, they are stain. If not, the lost points will return over the course of the next {@dice 1d6} days."
+          ]
+        }
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "RW",
+        "MW",
+        "THW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Sung Chiang, Chinese Avatar|https://angrygolem-games.com/monster-manual/letter-s/sung-chiang-chineses-avatar/}",
+          "DESCRIPTION",
+          "Sung Chiang’s avatar appears in so many forms that it is impossible to describe them all. Most, however, are at least vaguely human.",
+          "{@link God & Clergy (go to page)|https://angrygolem-games.com/monster-manual/letter-s/sung-chiang-god-and-clerics-for-dd-5e/}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Surya, Indian Avatar",
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "avatar"
+        ]
+      },
+      "source": "AngryGolemGamesMonsterManual3",
+      "alignment": [
+        "L",
+        "G"
+      ],
+      "ac": [
+        20
+      ],
+      "hp": {
+        "formula": "26d6 + 104",
+        "average": 195
+      },
+      "speed": {
+        "walk": 80
+      },
+      "str": 19,
+      "dex": 18,
+      "con": 18,
+      "int": 18,
+      "wis": 18,
+      "cha": 18,
+      "passive": 14,
+      "cr": "15",
+      "shortName": "Surya, Indian Avatar",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languages": [
+        "All"
+      ],
+      "skill": {
+        "acrobatics": "+4",
+        "animal handling": "+4",
+        "arcana": "+4",
+        "athletics": "+4",
+        "deception": "+4",
+        "history": "+4",
+        "insight": "+4",
+        "intimidation": "+4",
+        "investigation": "+4",
+        "medicine": "+4",
+        "nature": "+4",
+        "perception": "+4",
+        "performance": "+4",
+        "persuasion": "+4",
+        "religion": "+4",
+        "sleight of hand": "+4",
+        "stealth": "+4",
+        "survival": "+4"
+      },
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "He can call upon the illusion and alteration schools of magic for his spells."
+          ],
+          "type": "spellcasting"
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "Agni’s avatar makes two attacks with his Sword of Light."
+          ]
+        },
+        {
+          "name": "Sword of Light",
+          "entries": [
+            "{@atk ms} {@hit 17} to hit, reach 5 ft., one target. {@h}20 ({@damage 3d8 + 7}) radiant damage. Any being within 10′ of the avatar’s unsheathed Sword of Light must save versus petrification or be {@condition blinded} for 1d1O turns. The sword automatically dispels all illusion and darkness spells within 20′."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "R"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "tokenUrl": "sss",
+      "fluff": {
+        "entries": [
+          "{@link Surya, Indian Avatar|https://angrygolem-games.com/monster-manual/letter-s/surya-indian-avatar/}",
+          "DESCRIPTION",
+          "Surya’s avatar is a golden-haired youth with a third eye in the middle of his forehead. He often keeps his extra arms hidden beneath his robes.",
+          "{@link God & Clergy (go to page)|https://angrygolem-games.com/surya-god-and-clerics-for-dd-5e/}"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      }
     }
   ]
 }
