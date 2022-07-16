@@ -1,0 +1,234 @@
+{
+    "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_schema-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "LOD_5HLV",
+				"abbreviation": "LOD_5HLV",
+				"full": "5 High Level Villains",
+				"authors": [
+					"Lair of Dragons"
+				],
+				"convertedBy": [
+					"p4535992"
+				],
+				"version": "2022.07.16",
+				"url": "https://www.dmsguild.com/product/325943/5-High-Level-Villains?affiliate_id=18983",
+				"targetSchema": "1.7.0"
+			}
+		],
+		"dateAdded": 1657961727,
+		"dateLastModified": 1657961727
+	},
+	"monster": [
+		{
+			"name": "Sajarin Khan",
+			"size": [
+				"M"
+			],
+			"type": "fiend",
+			"source": "LOD_5HLV",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d8 + 52",
+				"average": 110
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 14,
+			"dex": 17,
+			"con": 18,
+			"int": 13,
+			"wis": 16,
+			"cha": 20,
+			"passive": 13,
+			"cr": "13",
+			"shortName": "Sajarin Khan",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Infernal"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"I"
+			],
+			"skill": {
+				"deception": "+10",
+				"insight": "+8"
+			},
+			"vulnerable": [
+				{
+					"vulnerable": [
+						"piercing"
+					],
+					"note": "from magic weapons wielded from good creatures"
+				}
+			],
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons"
+				}
+			],
+			"trait": [
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"Sajarin Khan wears Sajarin's Khan's Crown."
+					]
+				},
+				{
+					"name": "Limited Magic Immunity",
+					"entries": [
+						"Sajarin Khan can't be affected or detected by spells of 6th level or lower unless it wishes to be. It has advantage on saving throws against all other spells and magical effects."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Sajarin Khan's innate spellcasting ability is Charisma (spell save {@dc 18}, +10 to hit with spell attacks). Sajarin Khan can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell detect thoughts}",
+						"{@spell disguise self}",
+						"{@spell mage hand}",
+						"{@spell minor illusion}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell charm person}",
+							"{@spell detect magic}",
+							"{@spell invisibility}",
+							"{@spell major image}",
+							"{@spell suggestion}"
+						],
+						"1e": [
+							"{@spell dominate person}",
+							"{@spell fly}",
+							"{@spell plane shift}",
+							"{@spell true seeing}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Sajarin Khan makes two claw attacks."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) slashing damage. The target is cursed if it is a creature The magical curse takes effect whenever the target takes a short or long rest, filling the target's thoughts with horrible images and dreams. The cursed target gains no benefit from finishing a short or long rest. The curse lasts until it is lifted by a remove curse spell or similar magic."
+					]
+				},
+				{
+					"name": "Psychic Crown (1/Day)",
+					"entries": [
+						"Sajarin Khan uses his crown to cast hallucinatory terrain."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://i.imgur.com/EyvMKZn.png",
+			"fluff": {
+				"entries": [
+					"Sajarin Khan is a devious and wealthy rakshasa, a tiger-like fiend. He lords over an oasis in a desert region within your campaign setting. He lives in a palace, surrounded by massive, slave-tended fields and defended by a host of yugoloth mercenaries.",
+					"{@b Backstory} ",
+					"Sajarin Khan hails from a small family clan within a swamp region in your campaign setting. His family held many slaves and a good deal of power within this swamp, but Sajarin's aspirations were greater. He moved about the realm, to towns and cities, manipulating humanoids for coin and stealing wherever he could. He accrued a massive sum of wealth, enough to hire yugoloth mercenaries from fiendish planes.",
+					"These yugoloths assisted Sajarin Khan in kidnapping and buying slaves to build his desert palace and his massive fruit cactus fields.",
+					"{@b Goals}",
+					"Sajarin Khan, like all rakshasas, is a hedonistic and cruel being. His vast collection of valuable art from across the land is a sight to behold, but it was all gained by sale of cactus fruits and the trade of slaves. He wishes to indulge in the pleasures of life, while also doing evil. Death and torture elates Sajarin, as does expanding the land under his clawed fist. ",
+					"Sajarin also finds it entertaining to summon heroes from across the realm to challenge and attempt to kill him, simply so he can be kept on his toes.",
+					"{@b Resources} ",
+					"Sajarin owns 75 {@creature commoner} slaves who harvest cactus fruit from his vast oasis. They will not attack the party unless ordered to, and their allegiances can be changed very quickly as the tides of a battle turn towards the party. He has also hired a host of {@creature Yagnoloth|MPMM|Yagnoloth/Yugoloth}s containing 10 {@creature mezzoloth}s, 5 {@creature canoloth|MPMM}s, 2 {@creature nycaloth}s, and 1 {@creature arcanaloth} named Krello who acts as the leader of the host as well as Sajarin Khan's chief slaver. ",
+					"He also owns a collection of statues, paintings, gems and carvings that amounts to 1200 gp.",
+					"{@b Adventure Hooks} ",
+					{
+						"type": "list",
+						"items": [
+							"Sajarin Khan invites the party to dinner. ",
+							"An important NPC is kidnapped and put into slavery. ",
+							"The party is kidnapped and put into slavery. ",
+							"The party is hired to investigate the slave trade. ",
+							"The party is hired to take out Sajarin Khan."
+						]
+					},
+					"{@b Sajarin Khan's Crown} ",
+					"{@i Wondrous item, very rare} ",
+					"This helm has three charges. while wearing it, you can use an action to expend 3 charges to cast the hallucinatory terrain spell. You can also use an action to expend 1 charge to cast the major image spell at 3rd level. The crown regains 1d3 charges at dawn.",
+					"Here the item link {@item Sajarin Khan's Crown|LOD_5HLV}."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/w8zulvV.jpg"
+						}
+					}
+				]
+			}
+		}
+	],
+	"item":[
+		{
+			"name": "Sajarin Khan's Crown",
+			"source": "LOD_5HLV",
+			"page": 0,
+			"rarity": "very rare",
+			"reqAttune": false,
+			"wondrous": true,
+			"recharge": "dawn",
+			"charges": 3,
+			"entries": [
+				"This helm has three charges. while wearing it, you can use an action to expend 3 charges to cast the hallucinatory terrain spell. You can also use an action to expend 1 charge to cast the major image spell at 3rd level. The crown regains 1d3 charges at dawn."
+			],
+			"attachedSpells": [
+				"major image",
+				"hallucinatory terrain"
+			]
+		}
+	]
+}
