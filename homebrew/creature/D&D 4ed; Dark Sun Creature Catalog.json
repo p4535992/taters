@@ -7699,8 +7699,13 @@
 					"name": "Breath of Elemental Earth {@recharge 5}",
 					"entries": [
 						"The drake uses one of the following breath weapons. ",
-						"Acid Breath. The dragon exhales acid in a 120-foot line that is 10 feet wide. Each creature in that line must make a {@dc 24} Dexterity saving throw, taking 91 ({@damage 26d6}) acid damage on a failed save, or half as much damage on a successful one.",
-						" Poison Breath. The dragon exhales poisonous gas in a 90-foot cone. Each creature in that area must make a {@dc 24} Constitution saving throw, taking 91 ({@damage 26d6}) poison damage on a failed save, or half as much damage on a successful one."
+						{
+							"type": "list",
+							"items": [
+								"{@i Acid Breath.} The dragon exhales acid in a 120-foot line that is 10 feet wide. Each creature in that line must make a {@dc 24} Dexterity saving throw, taking 91 ({@damage 26d6}) acid damage on a failed save, or half as much damage on a successful one.",
+								"{@i Poison Breath.} The dragon exhales poisonous gas in a 90-foot cone. Each creature in that area must make a {@dc 24} Constitution saving throw, taking 91 ({@damage 26d6}) poison damage on a failed save, or half as much damage on a successful one."
+							]
+						}
 					]
 				}
 			],
