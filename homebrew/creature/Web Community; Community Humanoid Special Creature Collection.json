@@ -1568,6 +1568,215 @@
 				"RW",
 				"MW"
 			]
+		},
+		{
+			"name": "Rolfin the Dragon Priest",
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"goblinoid"
+				]
+			},
+			"source": "COMHumanoidSpecial",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d6 + 9",
+				"average": 40
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 12,
+			"int": 11,
+			"wis": 14,
+			"cha": 16,
+			"passive": 12,
+			"cr": "6",
+			"shortName": "Rolfin the Dragon Priest",
+			"senses": [
+				"blindsight 10 ft.",
+				"darkvision 30 ft."
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Draconic",
+				"Goblin"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"GO"
+			],
+			"save": {
+				"wis": "+5",
+				"cha": "+6"
+			},
+			"skill": {
+				"religion": "+3",
+				"stealth": "+9"
+			},
+			"resist": [
+				"fire"
+			],
+			"trait": [
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"Rolfin wields {@i dragon’s tooth} which acts as a {@item +1 dagger} that deals an extra 3 ({@damage 1d6}) fire damage on a successful hit (included in the attack)."
+					]
+				},
+				{
+					"name": "Nimble Escape",
+					"entries": [
+						"Rolfin can take the Disengage or Hide action as a bonus action on each of his turns."
+					]
+				}
+			],
+			"damageTags": [
+				"F",
+				"P"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Rolfin is a 7th-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 13}, +5 to hit with spell attacks). Rolfin has the following cleric spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell light}",
+								"{@spell mending}",
+								"{@spell sacred flame}",
+								"{@spell thaumaturgy}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell burning hands}",
+								"{@spell cure wounds}",
+								"{@spell faerie fire}",
+								"{@spell sanctuary}",
+								"{@spell shield of faith}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell continual flame}",
+								"{@spell flaming sphere}",
+								"{@spell hold person}",
+								"{@spell scorching ray}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell animate dead}",
+								"{@spell daylight}",
+								"{@spell dispel magic}",
+								"{@spell fireball}",
+								"{@spell spirit guardians}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell banishment}",
+								"{@spell guardian of faith}",
+								"{@spell wall of fire}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"damageTagsSpell": [
+				"F",
+				"N",
+				"R"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Rolfin makes two attacks with {@i dragon’s tooth}."
+					]
+				},
+				{
+					"name": "Dragon’s Tooth",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage, plus 3 ({@damage 1d6}) fire damage."
+					]
+				},
+				{
+					"name": "Fire Breath {@recharge 5}",
+					"entries": [
+						"Rolfin exhales fire in a 15-foot cone. Each creature in that area must make a {@dc 12} Constitution saving throw, taking 24 ({@damage 7d6}) fire damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Warding Flare (2/day)",
+					"entries": [
+						"When Rolfin is attacked by a creature within 30 feet of him that he can see, he can use his reaction to impose disadvantage on the attack roll, causing light to flare before the attacker before it hits or misses. An attacker that can’t be {@condition blinded} is immune to this trait."
+					]
+				}
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"tokenUrl": "https://i.imgur.com/agHcXLD.png",
+			"fluff": {
+				"entries": [
+					"{@link Rolfin the Dragon Priest|https://dmdave.com/rolfin-the-dragon-priest/}",
+					"The goblin mine is managed by a dragon priest named Rolfin who is a half-red dragon goblin.",
+					"Rolfin is somewhat insane and feared by all in the mine, including the azer smith, Roez, and Lamarr the Necromancer. While Gurd and the other goblins try to keep him safe–after all, the goblins believe that Rolfin is the only thing keeping Orithranx from eating them all–Rolfin’s megalomania often puts him on the front lines, even when he shouldn’t be.",
+					"Rolfin is the big-bad-evil-guy in the first chunk of The Secret of Forsaken Peak mega-dungeon. Feel free to use him in your own personal campaigns.",
+					"See you soon.",
+					"Art by Wizards of the Coast."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/90F1tqp.jpg"
+						}
+					}
+				]
+			}
 		}
 	]
 }
