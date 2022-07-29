@@ -1,0 +1,224 @@
+{
+    "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_schema-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "U_AOW",
+				"abbreviation": "U_AOW",
+				"full": "Armies of War",
+				"authors": [
+					"u/filmatra"
+				],
+				"convertedBy": [
+					"p4535992"
+				],
+				"version": "3.1.1",
+				"url": "https://homebrewery.naturalcrit.com/share/o4qRnnxr0a2G",
+				"targetSchema": "1.7.0"
+			}
+		],
+		"dateAdded": 1657961727,
+		"dateLastModified": 1657961727
+	},
+  "legendaryGroup": [
+		{
+			"name": "ArmiesOfWarLairActionsCommanderOfWar",
+			"source": "U_AOW",
+			"lairActions": [
+				"On initiative count 20 (losing initiative ties), the keep's commander takes a lair action to cause one of the following effects; the commander can’t use the same effect two rounds in a row:",
+				{
+					"type": "list",
+					"items": [
+						"Rocks are thrown to a 15 ft. radius point within 30 ft. of the keep's walls. Each creature in the area must make a DC {@dc 15} Dexterity saving throw, taking 7 ({@damage 2d6}) bludgeoning damage on a failed save, or half as much damage on a successful one.",
+						"Boiling oil pours from the keep onto all creatures within a10 ft. radius point along the keep's walls. Each creature in the area must make a DC 15 Dexterity saving throw. On a failed save, a creature takes 10 ({@damage 4d4}) fire damage and 5({@damage 2d4}) additional fire damage at the beginning of each of its turns until it uses its action to clean itself of oil. On a successful save, a creature takes no damage.",
+						"The keep's defenders use its passageways, architecture,and simple machinery to their advantage. Until the end of the round, melee attacks against creatures of the commander's choice are made with disadvantage.",
+            "A {@spell glyph of warding}, cast at the 3rd level, appears at an unoccupied location of the commander's choice somewhere within the keep. One of the commander'sallies may expend a spell slot to store a spell they have prepared within the spell glyph. Otherwise, the glyph is an explosive rune."
+					]
+				}
+			],
+			"regionalEffects": [
+				"The region containing the keep may be altered by the keep's presence, which creates one or more of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"Moats, trenches, and chevaux de frise mar the landscape, making travel exhausting. The area within 1 mile of the keep is difficult terrain",
+            "The keep's guards have illuminated the lands with blazing ires, and thoroughly patrol the lands at all hours.Dexterity (Stealth) checks made within 1 mile of the keep are made with disadvantage.",
+            "The commander's subordinates have been convinced to greatly respect or fear their leader. Charisma (Deception,Intimidation, and Persuasion) checks against the people of the keep are made with disadvantage.",
+            "The lordship burned its lands as it recalled its population into the keep's walls. No rations may be foraged or hunted within one day's travel of the keep."
+					]
+				},
+				"If the keep is taken, these effects fade over the course of {@dice 1d10} days."
+			]
+		}
+  ],
+	"monster": [
+    {
+      "name": "Commanders of War",
+      "source": "U_AOW",
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "humanoid"
+      },
+      "alignment": [
+        "A"
+      ],
+      "ac": [
+        {
+          "ac": 18,
+          "from": [
+            "{@item plate armor|phb|plate}"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 229,
+        "formula": "27d8 + 108"
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 20,
+      "dex": 16,
+      "con": 18,
+      "int": 12,
+      "wis": 12,
+      "cha": 18,
+      "save": {
+        "str": "+9",
+        "dex": "+7",
+        "con": "+8"
+      },
+      "skill": {
+        "athletics": "+9",
+        "intimidation": "+8",
+        "perception": "+5",
+        "persuasion": "+8"
+      },
+      "passive": 15,
+      "languages": [
+        "any two languages"
+      ],
+      "cr": "12",
+      "trait": [
+        {
+          "name": "Indomitable (3/Day)",
+          "entries": [
+            "The commanders of war can reroll a saving throw it fails. It must use the new roll."
+          ]
+        },
+        {
+          "name": "Survivor",
+          "entries": [
+            "The commanders of war regains 10 hit points at the start of its turn if it has fewer than half its hit points but at least 1 hit point."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The commanders of war makes two Greatsword or Short bow attacks."
+          ]
+        },
+        {
+          "name": "Greatsword",
+          "entries": [
+            "{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage."
+          ]
+        },
+        {
+          "name": "Shortbow",
+          "entries": [
+            "{@atk rw} {@hit 7} to hit, range 80/320 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+          ]
+        }
+      ],
+      "legendary": [
+        {
+          "name": "Command Ally",
+          "entries": [
+            "The commanders of war targets one ally it can see within 30 feet of it. if the target can see and hear the commanders of war, the target can make one weapon attack as a reaction and gains advantage on the attack roll."
+          ]
+        },
+        {
+          "name": "Weapon Attack",
+          "entries": [
+            "The commanders of war makes one Greatsword or Shortbow attack."
+          ]
+        },
+        {
+          "name": "Frighten Foe (Costs 2 Actions)",
+          "entries": [
+            "The commanders of war targets one creature it can see within 30 feet of it. If the target can see and hear it, the target must succeed on a {@dc 16} Wisdom saving throw or be {@condition frightened} until the end of commanders of war's next turn."
+          ]
+        }
+      ],
+      "environment": [
+        "urban"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "languageTags": [
+        "X"
+      ],
+      "damageTags": [
+        "P",
+        "S"
+      ],
+      "miscTags": [
+        "MW",
+        "RNG",
+        "RW"
+      ],
+      "conditionInflict": [
+        "frightened"
+      ],
+      "legendaryGroup": {
+				"name": "ArmiesOfWarLairActionsCommanderOfWar",
+				"source": "U_AOW"
+			},
+      "tokenUrl": "sss",
+			"fluff": {
+				"entries": [
+					"{@link Commander of War|https://homebrewery.naturalcrit.com/share/o4qRnnxr0a2G} based on the post from {@link u/filmatra|https://www.reddit.com/r/UnearthedArcana/comments/pnewbv/comment/hcopcks/}",
+          {
+						"name": "Armies of War",
+						"entries": [
+              "Chaos divides the central kingdom. Children are born into the war, live until they are of age, and die in the war. Warring factions sac prosperous cities, laying siege to their castles for months at atime. Massive battalions meet each other in the country side, sewing the fields with more bodies than seeds. The arcane colleges have turned their research to the killing arts. Even the hymnals of the holy royal chorus have warped into elegies.",
+              "In this time of war, the lords of the land rely on armies and mighty commanders to represent their interests on the battlefield.",
+              "Within this supplement are all of the simple but powerful rules you will need to command your own sprawling armies,defend keeps from invasion or reduce them to ruin, and to decide the fate of the central kingdom."
+						]
+					},
+          {
+						"name": "Commanders of War",
+						"entries": [
+              "Every army functions best with a commander, an experienced individual capable of leading them to glory.",
+              "Typically, an army swears fealty to a commander who pays for their service, serves their lord, or has otherwise earned their respect through the completion of some other task. An army may only have one commander at a time, but may change from one commander to another over the course of a short or long rest.",
+              "To gain the benefits of being a commander, a commander'sCharisma score must be higher than the total ChallengeRating of all armies he or she commands."
+						]
+					},
+          {
+						"name": "Siege Defense",
+						"entries": [
+              "Sturdy stone keeps, from looming toll bridge towers to glorious castles in the hearts of thriving cities, are icons of security in an insecure age.",
+              "When a keep is be sieged, its defenders have access to a variety of protective tools.",
+              "Keeps vary drastically in size and location, but all serve the same purpose—to rebuke invaders and protect their in habitants from harm."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "sss"
+						}
+					}
+				]
+			}
+    }
+	]
+}
