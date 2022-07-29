@@ -25,7 +25,7 @@
 			"name": "ArmiesOfWarLairActionsCommanderOfWar",
 			"source": "U_AOW",
 			"lairActions": [
-				"On initiative count 20 (losing initiative ties), the keep's commander takes a lair action to cause one of the following effects; the commander can’t use the same effect two rounds in a row:",
+				"On initiative count 20 (losing initiative ties), the keep's commander takes a lair action to cause one of the following effects; the commander can't use the same effect two rounds in a row:",
 				{
 					"type": "list",
 					"items": [
@@ -135,26 +135,10 @@
           ]
         }
       ],
-      "legendary": [
-        {
-          "name": "Command Ally",
-          "entries": [
-            "The commanders of war targets one ally it can see within 30 feet of it. if the target can see and hear the commanders of war, the target can make one weapon attack as a reaction and gains advantage on the attack roll."
-          ]
-        },
-        {
-          "name": "Weapon Attack",
-          "entries": [
-            "The commanders of war makes one Greatsword or Shortbow attack."
-          ]
-        },
-        {
-          "name": "Frighten Foe (Costs 2 Actions)",
-          "entries": [
-            "The commanders of war targets one creature it can see within 30 feet of it. If the target can see and hear it, the target must succeed on a {@dc 16} Wisdom saving throw or be {@condition frightened} until the end of commanders of war's next turn."
-          ]
-        }
-      ],
+      "legendaryGroup": {
+				"name": "ArmiesOfWarLairActionsCommanderOfWar",
+				"source": "U_AOW"
+			},
       "environment": [
         "urban"
       ],
@@ -176,14 +160,11 @@
       "conditionInflict": [
         "frightened"
       ],
-      "legendaryGroup": {
-				"name": "ArmiesOfWarLairActionsCommanderOfWar",
-				"source": "U_AOW"
-			},
       "tokenUrl": "sss",
 			"fluff": {
 				"entries": [
 					"{@link Commander of War|https://homebrewery.naturalcrit.com/share/o4qRnnxr0a2G} based on the post from {@link u/filmatra|https://www.reddit.com/r/UnearthedArcana/comments/pnewbv/comment/hcopcks/}",
+          "The stats block of this npc are based on the {@creature Warlord|MPMM} an customized for this homebrew",
           {
 						"name": "Armies of War",
 						"entries": [
