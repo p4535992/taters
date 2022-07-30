@@ -136,9 +136,9 @@
         }
       ],
       "legendaryGroup": {
-				"name": "ArmiesOfWarLairActionsCommanderOfWar",
-				"source": "U_AOW"
-			},
+        "name": "ArmiesOfWarLairActionsCommanderOfWar",
+        "source": "U_AOW"
+      },
       "environment": [
         "urban"
       ],
@@ -154,52 +154,100 @@
       ],
       "miscTags": [
         "MW",
-        "RNG",
-        "RW"
+        "RW",
+        "RNG"
       ],
-      "conditionInflict": [
-        "frightened"
-      ],
-      "tokenUrl": "sss",
-			"fluff": {
-				"entries": [
-					"{@link Commander of War|https://homebrewery.naturalcrit.com/share/o4qRnnxr0a2G} based on the post from {@link u/filmatra|https://www.reddit.com/r/UnearthedArcana/comments/pnewbv/comment/hcopcks/}",
+      "tokenUrl": "https://5e.tools/sss",
+      "fluff": {
+        "entries": [
+          "{@link Commander of War|https://homebrewery.naturalcrit.com/share/o4qRnnxr0a2G} based on the post from {@link u/filmatra|https://www.reddit.com/r/UnearthedArcana/comments/pnewbv/comment/hcopcks/}",
           "The stats block of this npc are based on the {@creature Warlord|MPMM} an customized for this homebrew",
           {
-						"name": "Armies of War",
-						"entries": [
+            "name": "Armies of War",
+            "entries": [
               "Chaos divides the central kingdom. Children are born into the war, live until they are of age, and die in the war. Warring factions sac prosperous cities, laying siege to their castles for months at atime. Massive battalions meet each other in the country side, sewing the fields with more bodies than seeds. The arcane colleges have turned their research to the killing arts. Even the hymnals of the holy royal chorus have warped into elegies.",
               "In this time of war, the lords of the land rely on armies and mighty commanders to represent their interests on the battlefield.",
               "Within this supplement are all of the simple but powerful rules you will need to command your own sprawling armies,defend keeps from invasion or reduce them to ruin, and to decide the fate of the central kingdom."
-						]
-					},
+            ]
+          },
           {
-						"name": "Commanders of War",
-						"entries": [
+            "name": "Commanders of War",
+            "entries": [
               "Every army functions best with a commander, an experienced individual capable of leading them to glory.",
               "Typically, an army swears fealty to a commander who pays for their service, serves their lord, or has otherwise earned their respect through the completion of some other task. An army may only have one commander at a time, but may change from one commander to another over the course of a short or long rest.",
               "To gain the benefits of being a commander, a commander'sCharisma score must be higher than the total ChallengeRating of all armies he or she commands."
-						]
-					},
+            ]
+          },
           {
-						"name": "Siege Defense",
-						"entries": [
+            "name": "Siege Defense",
+            "entries": [
               "Sturdy stone keeps, from looming toll bridge towers to glorious castles in the hearts of thriving cities, are icons of security in an insecure age.",
               "When a keep is be sieged, its defenders have access to a variety of protective tools.",
               "Keeps vary drastically in size and location, but all serve the same purpose—to rebuke invaders and protect their in habitants from harm."
-						]
-					}
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "sss"
-						}
-					}
-				]
-			}
+            ]
+          },
+          {
+            "name": "Gaining Commander Actions",
+            "entries": [
+              "Some powerful commanders can take more than 1 legendary action  each round. As a general rule, a non-player commander can take 1legendary action for every 5 levels of its Challenge Rating. Forexample, a Warlord (CR 12) may take 2 legendary actions eachround.",
+              "\"If you are using the optional rules for Feats (PHB pg 165), aplayer may gain 1 legendary action instead of taking a feat whenthey gain a level.\""
+            ]
+          }
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "sss"
+            }
+          }
+        ]
+      },
+      "legendaryHeader": [
+        "The commander can take 1 legendary action, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The commander regains spent legendary actions at the start of its turn."
+      ],
+      "damageTagsLegendary": [
+        "A",
+        "B",
+        "C",
+        "F",
+        "L",
+        "T"
+      ],
+      "legendaryActions": 1,
+      "legendary": [
+        {
+          "name": "Advance/Retreat",
+          "entries": [
+            "Each army of your choice moves up to half of its speed."
+          ]
+        },
+        {
+          "name": "Commanded Strike (Costs 2 Actions)",
+          "entries": [
+            "One army of yourchoice makes a single attack targeting another creature of yourchoice that you can see."
+          ]
+        },
+        {
+          "name": "Defensive Command (Costs 2 Actions)",
+          "entries": [
+            "One army of yourchoice gains the benefits of the Dodge action until the end of itsnext turn."
+          ]
+        },
+        {
+          "name": "Detect",
+          "entries": [
+            "You make a Wisdom (Perception) check."
+          ]
+        },
+        {
+          "name": "Inspiring Command",
+          "entries": [
+            "One army of your choice that you control may add a {@dice d10} to its next attack roll, skill check, or saving throw."
+          ]
+        }
+      ]
     }
 	]
 }
