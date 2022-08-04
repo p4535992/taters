@@ -1,0 +1,223 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_schema-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "COMRavenloft",
+				"abbreviation": "COMRavenloft",
+				"full": "Community Stradh Mix Collection",
+				"authors": [
+					"A collection derived from the web community (Reddit,Pinterest,DmsGuild,ecc.). For credits, authors are provided with a web link in the entity description"
+				],
+				"convertedBy": [
+					"p4535992"
+				],
+				"version": "2022.01.07",
+				"url": "",
+				"targetSchema": "1.7.0"
+			}
+		],
+		"dateAdded": 1641557769,
+		"dateLastModified": 1657966660,
+		"_dateLastModifiedHash": "747920566f"
+	},
+	"monster": [
+		{
+			"name": "Ekaterina Dilisnya",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"elf",
+					"shapechanger"
+				]
+			},
+			"source": "COMRavenloft",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item chain shirt|phb}"
+					]
+				},
+				{
+					"ac": 17,
+					"condition": "(arachne form)"
+				}
+			],
+			"hp": {
+				"formula": "11d8 + 22",
+				"average": 71
+			},
+			"speed": {
+				"walk": 30,
+				"climb": {
+					"number": 30,
+					"condition": "(arachne form)"
+				}
+			},
+			"str": 13,
+			"dex": 14,
+			"con": 14,
+			"int": 11,
+			"wis": 13,
+			"cha": 16,
+			"passive": 13,
+			"cr": "4",
+			"shortName": "Ekaterina Dilisnya",
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languages": [
+				"Common",
+				"Deep Speech"
+			],
+			"languageTags": [
+				"C",
+				"DS"
+			],
+			"save": {
+				"dex": "+4",
+				"con": "+4",
+				"wis": "+3"
+			},
+			"skill": {
+				"perception": "+3",
+				"stealth": "+6"
+			},
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Ekaterina's innate spellcasting ability is Charisma (spell save {@dc 13}, +5 to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell poison spray}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell mirror image}",
+							"{@spell web}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"damageTagsSpell": [
+				"F",
+				"I"
+			],
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"Ekaterina can use her action to polymorph into her arachne form, or back into her humanoid form. Her statistics, other than her size, are the same in each form. Any equipment she is wearing or carrying isn't transformed. She reverts to her humanoid form if she dies."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"In her arachne form, Ekaterina can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Web Walker",
+					"entries": [
+						"In her arachne form, Ekaterina ignores movement restrictions caused by webbing."
+					]
+				}
+			],
+			"traitTags": [
+				"Shapechanger",
+				"Spider Climb",
+				"Web Walker"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"In her humanoid form, Ekaterina can make two rapier attacks. In her arachne form, she makes three attacks, either with her rapier or her claws. She can replace any one of these with a sting attack."
+					]
+				},
+				{
+					"name": "Rapier",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Claw (Arachne Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 10 ft., one target. {@h}5 ({@damage 1d8 + 1}) piercing damage, plus 2 ({@damage 2d1}) bludgeoning damage. At the start of each of a wounded character's turn, they take 2 damage. Any supernatural healing, like cure wounds or regeneration, or a {@dc 15} Intelligence (Medicine) ability check will remove this."
+					]
+				},
+				{
+					"name": "Sting (Arachne Form Only, Recharge 5-6)",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 10 ft., one target. {@h}7 ({@damage 1d10 + 2}) piercing damage, and the target must make a {@dc 12} Constitution saving throw, taking 22 ({@damage 4d10}) poison damage on a failed save, or half as much on a successful save. Furthermore, any creature struck with Ekaterina's stinger must pass a {@dc 15} Constitution saving throw after combat, or contract a disease — an arachne egg. See The Cult Is Appeased for more."
+					]
+				},
+				{
+					"name": "Web (Arachne Form Only, Recharge 5-6)",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 30/60 ft., one target. {@h}3 ({@damage 1d1 + 2}) bludgeoning damage. On hit the target is {@condition restrained} by webbing. As an action, the {@condition restrained} target can make a {@dc 12} Strength check, escaping the webbing on a success. The effect ends if the webbing is destroyed. The webbing has AC 10, 5 hit points, vulnerability to fire damage, and immunity to bludgeoning, poison, and psychic damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"damageTags": [
+				"B",
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"Ekaterina adds 3 to her AC against one melee attack that would hit her in humanoid form. In her arachne form, she adds 5 to her AC. To do so, she must see the attacker and be either wielding a weapon or have one or more of her arachne claws free. If she is {@condition grappled} or {@condition restrained}, she cannot perform this reaction."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/8eO47jh.png",
+			"fluff": {
+				"entries": [
+					"{@link Ekaterina Dilisnya|https://losvaquerospress.files.wordpress.com/2020/08/ekaterina-dilisnya-v4.pdf} based on the {@link post|https://discord.com/channels/425043850084483082/425043850705502220/844450018995470386}",
+					"In her humanoid form, she resembles a fetching dusk elf maiden, with rich cocoa skin and russet red hair. She favors a slightly more risqué cut of the traditional villager garb, showing a little more skin than other women in the Village of Barovia. It is this form that those souless infected by her dreams return to night after night, until they succumb to her pleas and enter Death House. In her arachne form, her humanoid form's torso sits astride the spindly limbs of a massive black widow spider, complete with a luminescent crimson hourglass."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/RfZ1OcV.jpg"
+						}
+					}
+				]
+			}
+		}
+	]
+}
