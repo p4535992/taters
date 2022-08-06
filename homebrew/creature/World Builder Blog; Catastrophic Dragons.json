@@ -3440,6 +3440,811 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Ancient Volcanic Dragon",
+			"size": [
+				"G"
+			],
+			"type": "dragon",
+			"source": "WBBCD",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 22,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "28d20 + 252",
+				"average": 546
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40,
+				"fly": 80,
+				"canHover": false
+			},
+			"str": 30,
+			"dex": 10,
+			"con": 29,
+			"int": 23,
+			"wis": 15,
+			"cha": 18,
+			"passive": 19,
+			"cr": "24",
+			"shortName": "Ancient Volcanic Dragon",
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"languages": [
+				"Common",
+				"Draconic",
+				"Ignan"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"IG"
+			],
+			"save": {
+				"dex": "+7",
+				"con": "+16",
+				"wis": "+9",
+				"cha": "+11"
+			},
+			"skill": {
+				"athletics": "+17",
+				"perception": "+9"
+			},
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Catastrophic Aura",
+					"entries": [
+						"A 5 ft. aura of noxious fumes wafts around the dragon. Any creature which ends its turn within the aura must make a {@dc 24} Constitution saving throw or take 28 ({@damage 8d6}) poison damage."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the dragon fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"damageTags": [
+				"F",
+				"I",
+				"P",
+				"S"
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dragon can use Growing Aura and then make three attacks: one with its bite and two with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 17} to hit, reach 15 ft., one target. {@h}21 ({@damage 2d10 + 10}) piercing damage, plus 14 ({@damage 4d6}) fire damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 17} to hit, reach 10 ft., one target. {@h}17 ({@damage 2d6 + 10}) slashing damage, plus 7 ({@damage 2d6}) fire damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 17} to hit, reach 20 ft., one target. {@h}19 ({@damage 2d8 + 10}) slashing damage, plus 7 ({@damage 2d6}) fire damage."
+					]
+				},
+				{
+					"name": "Fiery Fissure",
+					"entries": [
+						"The dragon opens a 30-foot continuous lava-filled fissure anywhere in the ground within 60 feet of it. An enemy that enters or starts its turn in the fissure takes 36 ({@damage 8d8}) fire damage. The fissure is difficult terrain. This fissure lasts for one minute or until the dragon uses this power to create a new fissure."
+					]
+				},
+				{
+					"name": "Growing Aura",
+					"entries": [
+						"The dragon's Catastrophic Aura expands its radius 10 feet. If the dragon uses this ability when its Catastrophic Aura is 25 feet, the dragon's aura explodes with energy and all creatures within 90 feet of the dragon must make a {@dc 24} Dexterity saving throw. Creatures who fail take 77 ({@damage 22d6}) fire damage and are on fire, taking 6 ({@damage 1d12}) fire damage at the start of their turns, creatures who succeed take half damage and are not on fire. A creature who failed the save and is on fire can extinguish the fire by using their action to make a successful {@dc 15} Dexterity saving throw on its turn. Once the dragon's aura explodes with energy it resets to 5 feet."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"The dragon can take three legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The volcanic dragon regains all spent legendary actions at the start of its turn. "
+			],
+			"legendary": [
+				{
+					"name": "Tail Attack",
+					"entries": [
+						"The dragon makes a tail attack."
+					]
+				},
+				{
+					"name": "Sudden Flare",
+					"entries": [
+						"Each creature in the dragon's Catastrophic Aura must succeed on a {@dc 24} Reflex saving throw. Creatures who fail take 21 ({@damage 6d6}) fire damage, creatures who succeed take half damage."
+					]
+				},
+				{
+					"name": "Fiery Fissure (Costs 2 Actions)",
+					"entries": [
+						"The dragon uses Fiery Fissure."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "CatastrophicDragonsLairActionsVolcanicDragon",
+				"source": "WBBCD"
+			},
+			"tokenUrl": "sss",
+			"fluff": {
+				"entries": [
+					"{@link Ancient Volcanic Dragon|https://www.dmsguild.com/product/171480/Catastrophic-Dragons--World-Builder-Blog-Presents}",
+					{
+						"type": "quote",
+						"entries": [
+							"\"Blow, winds, and crack your cheeks! rage! blow! You cataracts and hurricanoes, spout Till you have drench'd our steeples, drown'd the cocks! You sulphurous and thought-executing fires, Vaunt-couriers to oak-cleaving thunderbolts, Singe my white head! And thou, all-shaking thunder, Smite flat the thick rotundity o' the world! Crack nature's moulds, an germens spill at once, That make ingrateful man!\""
+						],
+						"by": "William Shakespeare, \"King Lear\""
+					},
+					{
+						"type": "section",
+						"name": "History of Catastrophic Dragons",
+						"entries": [
+							"Catastrophic dragons were once chromatic dragons who desired more than a hoard and a lair. For while others stole and hid from the humanoids over whom they claimed superiority, these dragons knew that all other life in the multiverse should be bowing to their will. Power is a far greater reward than any material possession and as the smartest and strongest in the land, dragons deserved to be in charge. Any thought other than this was impractical and stupid to those chromatics.",
+							"These dragons tried to convince their brethren to leave their caves and make the humanoids submit to their will. The other chromatic dragons did not like this sudden interest in the affairs of lesser beings and so with greater numbers they did come together. They banished their radical kin to the elemental planes. For hundreds of years these rebellious chromatic dragons were locked in seas of fire, ice, wind, and stone. Those who did not die were shaped by elemental forces and remade into catastrophic dragons.",
+							"Each trapped catastrophic dragon has its imprisonment tied to the soul of a chromatic dragon on the material plane. If one of these gatekeeper chromatic dragon should die before it can pass the responsibility onto another, the catastrophic dragon can leave the plane of its imprisonment and wreak havoc on the world."
+						]
+					},
+					{
+						"type": "section",
+						"name": "Behavior of Catastrophic Dragons",
+						"entries": [
+							"Catastrophic dragons once wanted to dominate all life in the multiverse. After years of suffering the harsh terrain of the elemental planes, their minds are warped and they desire only to kill all those inferior to them, especially chromatic dragons whom they hate above all others. Their memories are long and catastrophic dragons do not forget their betrayal at the hands of their kin. If they escape their bonds, they may keep a hoard, but usually only for the purpose of attracting other dragons and killing them."
+						]
+					},
+					{
+						"name": "Variant: Catastrophic Dragons as Spellcasters",
+						"type": "inset",
+						"entries": [
+							"Some catastrophic dragons keep spellbooks, just like wizards. A young or older catastrophic dragon can cast and prepare a number of spells per day from its spellbook equal to its Intelligence modifier, requiring material components as usual. The spell's level can be no higher than one-third the dragon's challenge rating (rounded down). The dragon's bonus to hit with spell attacks is equal to its proficiency bonus + its Intelligence bonus. The dragon's spell save DC equals 8 + its proficiency bonus + its Intelligence modifier."
+						]
+					},
+					{
+						"type": "section",
+						"name": "Volcanic Dragons",
+						"entries": [
+							"Volcanic dragons have skin made of barely cooled molten rock. Cracks in their scales large and small show off the dragon’s glowing lava insides, which grow brighter as the dragon becomes more agitated. Heat and embers radiate from the dragon’s form and getting too close can result in a toxic death before the dragon ever lays claws onto a victim. A dry heat wave heralds the volcanic dragon’s approach.",
+							"{@b Righteous Rage.} Like all catastrophic dragons, rage constantly simmers in the heart of the volcanic dragon. The rage of the volcanic is one of a wronged creature out for justice. These dragons see the destruction of life as their righteous mission. As the multiverse’s superior beings they must destroy any non-elemental they come across as just punishment for their imprisonment. Most carry this twisted belief in their heart until the end of their days.",
+							"{@b Chromatic Hunters.} With a warped idea of justice in their minds, volcanic dragons are most likely to hunt and kill any and all chromatic dragons. Since they share a love of volcano lairs, volcanic dragons will often challenge an established red dragon and try to take its home. These battles are brutal, as both creatures are unaffected by fire and must use claws and jaws to battle."
+						]
+					},
+					{
+						"type": "section",
+						"name": "A Volcanic Dragon's Lair",
+						"entries": [
+							"Volcanic dragons tend to create lairs in their namesake. Since many volcano lairs are occupied by red dragons, volcanic dragons do not build their own, but rather siege the lair of a red dragon, kill the host, and claim the new home.",
+							"Volcanic dragons do make modifications to their stolen homes. They open cracks in the walls of the tunnels, allowing even more lava and noxious fumes inside to make the place habitable only by creatures who fear neither fire nor poison. Pieces of the defeated red dragon's corpse are mounted here and there as a show of the volcanic dragon's dominance.",
+							"The cunning volcanic dragons rig their lairs with all manner of unexpected traps as well. Knowing their opponents may have prepared with spells and items to help them resist flames, volcanic dragons arm magic traps which deal acid, cold, and lightning, to show any who might think themselves clever that they cannot hope to outsmart a cunning master in its home."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "sss"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Adult Volcanic Dragon",
+			"size": [
+				"H"
+			],
+			"type": "dragon",
+			"source": "WBBCD",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "19d12 + 133",
+				"average": 256
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40,
+				"fly": 80,
+				"canHover": false
+			},
+			"str": 27,
+			"dex": 10,
+			"con": 25,
+			"int": 21,
+			"wis": 13,
+			"cha": 16,
+			"passive": 17,
+			"cr": "17",
+			"shortName": "Adult Volcanic Dragon",
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"languages": [
+				"Common",
+				"Draconic",
+				"Ignan"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"IG"
+			],
+			"save": {
+				"dex": "+6",
+				"con": "+13",
+				"wis": "+7",
+				"cha": "+9"
+			},
+			"skill": {
+				"athletics": "+14",
+				"perception": "+7"
+			},
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Catastrophic Aura",
+					"entries": [
+						"A 5 ft. aura of noxious fumes wafts around the dragon. Any creature which ends its turn within the aura must make a {@dc 21} Constitution saving throw or take 21 ({@damage 6d6}) poison damage."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the dragon fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"I",
+				"P",
+				"S"
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dragon can use Growing Aura and then make three attacks: one with its bite and two with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 10 ft., one target. {@h}19 ({@damage 2d10 + 8}) piercing damage, plus 7 ({@damage 2d6}) fire damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d6 + 8}) slashing damage, plus 3 ({@damage 1d6}) fire damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 5 ft., one target. {@h}17 ({@damage 2d8 + 8}) bludgeoning damage, plus 3 ({@damage 1d6}) fire damage."
+					]
+				},
+				{
+					"name": "Fiery Fissure",
+					"entries": [
+						"The dragon opens a 30-foot continuous lava- filled fissure anywhere in the ground within 60 feet of it. An enemy that enters or starts its turn in the fissure takes 22 ({@damage 5d8}) fire damage. The fissure is difficult terrain. This fissure lasts for one minute or until the dragon uses this power to create a new fissure."
+					]
+				},
+				{
+					"name": "Growing Aura",
+					"entries": [
+						"The dragon's Catastrophic Aura expands its radius 10 feet. If the dragon uses this ability when its Catastrophic Aura is 25 feet, the dragon's aura explodes with energy and all creatures within 60 feet of the dragon must make a {@dc 21} Dexterity saving throw. Creatures who fail take 56 ({@damage 16d6}) fire damage and are on fire, taking 4 ({@damage 1d8}) fire damage at the start of their turns, creatures who succeed take half damage and are not on fire. A creature who failed the save and is on fire can extinguish the fire by using their action to make a successful {@dc 15} Dexterity saving throw on its turn. Once the dragon's aura explodes with energy it resets to 5 feet."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"The dragon can take three legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The volcanic dragon regains all spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Tail Attack",
+					"entries": [
+						"The dragon makes a tail attack."
+					]
+				},
+				{
+					"name": "Sudden Flare",
+					"entries": [
+						"Each creature in the dragon's Catastrophic Aura must succeed on a {@dc 21} Reflex saving throw. Creatures who fail take 14 ({@damage 4d6}) fire damage, creatures who succeed take half damage."
+					]
+				},
+				{
+					"name": "Fiery Fissure (Costs 2 Actions)",
+					"entries": [
+						"The dragon uses Fiery Fissure."
+					]
+				}
+			],
+			"tokenUrl": "sss",
+			"fluff": {
+				"entries": [
+					"{@link Adult Volcanic Dragon|https://www.dmsguild.com/product/171480/Catastrophic-Dragons--World-Builder-Blog-Presents}",
+					{
+						"type": "quote",
+						"entries": [
+							"\"Blow, winds, and crack your cheeks! rage! blow! You cataracts and hurricanoes, spout Till you have drench'd our steeples, drown'd the cocks! You sulphurous and thought-executing fires, Vaunt-couriers to oak-cleaving thunderbolts, Singe my white head! And thou, all-shaking thunder, Smite flat the thick rotundity o' the world! Crack nature's moulds, an germens spill at once, That make ingrateful man!\""
+						],
+						"by": "William Shakespeare, \"King Lear\""
+					},
+					{
+						"type": "section",
+						"name": "History of Catastrophic Dragons",
+						"entries": [
+							"Catastrophic dragons were once chromatic dragons who desired more than a hoard and a lair. For while others stole and hid from the humanoids over whom they claimed superiority, these dragons knew that all other life in the multiverse should be bowing to their will. Power is a far greater reward than any material possession and as the smartest and strongest in the land, dragons deserved to be in charge. Any thought other than this was impractical and stupid to those chromatics.",
+							"These dragons tried to convince their brethren to leave their caves and make the humanoids submit to their will. The other chromatic dragons did not like this sudden interest in the affairs of lesser beings and so with greater numbers they did come together. They banished their radical kin to the elemental planes. For hundreds of years these rebellious chromatic dragons were locked in seas of fire, ice, wind, and stone. Those who did not die were shaped by elemental forces and remade into catastrophic dragons.",
+							"Each trapped catastrophic dragon has its imprisonment tied to the soul of a chromatic dragon on the material plane. If one of these gatekeeper chromatic dragon should die before it can pass the responsibility onto another, the catastrophic dragon can leave the plane of its imprisonment and wreak havoc on the world."
+						]
+					},
+					{
+						"type": "section",
+						"name": "Behavior of Catastrophic Dragons",
+						"entries": [
+							"Catastrophic dragons once wanted to dominate all life in the multiverse. After years of suffering the harsh terrain of the elemental planes, their minds are warped and they desire only to kill all those inferior to them, especially chromatic dragons whom they hate above all others. Their memories are long and catastrophic dragons do not forget their betrayal at the hands of their kin. If they escape their bonds, they may keep a hoard, but usually only for the purpose of attracting other dragons and killing them."
+						]
+					},
+					{
+						"name": "Variant: Catastrophic Dragons as Spellcasters",
+						"type": "inset",
+						"entries": [
+							"Some catastrophic dragons keep spellbooks, just like wizards. A young or older catastrophic dragon can cast and prepare a number of spells per day from its spellbook equal to its Intelligence modifier, requiring material components as usual. The spell's level can be no higher than one-third the dragon's challenge rating (rounded down). The dragon's bonus to hit with spell attacks is equal to its proficiency bonus + its Intelligence bonus. The dragon's spell save DC equals 8 + its proficiency bonus + its Intelligence modifier."
+						]
+					},
+					{
+						"type": "section",
+						"name": "Volcanic Dragons",
+						"entries": [
+							"Volcanic dragons have skin made of barely cooled molten rock. Cracks in their scales large and small show off the dragon’s glowing lava insides, which grow brighter as the dragon becomes more agitated. Heat and embers radiate from the dragon’s form and getting too close can result in a toxic death before the dragon ever lays claws onto a victim. A dry heat wave heralds the volcanic dragon’s approach.",
+							"{@b Righteous Rage.} Like all catastrophic dragons, rage constantly simmers in the heart of the volcanic dragon. The rage of the volcanic is one of a wronged creature out for justice. These dragons see the destruction of life as their righteous mission. As the multiverse’s superior beings they must destroy any non-elemental they come across as just punishment for their imprisonment. Most carry this twisted belief in their heart until the end of their days.",
+							"{@b Chromatic Hunters.} With a warped idea of justice in their minds, volcanic dragons are most likely to hunt and kill any and all chromatic dragons. Since they share a love of volcano lairs, volcanic dragons will often challenge an established red dragon and try to take its home. These battles are brutal, as both creatures are unaffected by fire and must use claws and jaws to battle."
+						]
+					},
+					{
+						"type": "section",
+						"name": "A Volcanic Dragon's Lair",
+						"entries": [
+							"Volcanic dragons tend to create lairs in their namesake. Since many volcano lairs are occupied by red dragons, volcanic dragons do not build their own, but rather siege the lair of a red dragon, kill the host, and claim the new home.",
+							"Volcanic dragons do make modifications to their stolen homes. They open cracks in the walls of the tunnels, allowing even more lava and noxious fumes inside to make the place habitable only by creatures who fear neither fire nor poison. Pieces of the defeated red dragon's corpse are mounted here and there as a show of the volcanic dragon's dominance.",
+							"The cunning volcanic dragons rig their lairs with all manner of unexpected traps as well. Knowing their opponents may have prepared with spells and items to help them resist flames, volcanic dragons arm magic traps which deal acid, cold, and lightning, to show any who might think themselves clever that they cannot hope to outsmart a cunning master in its home."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "sss"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Young Volcanic Dragon",
+			"size": [
+				"L"
+			],
+			"type": "dragon",
+			"source": "WBBCD",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "17d10 + 85",
+				"average": 178
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40,
+				"fly": 80,
+				"canHover": false
+			},
+			"str": 23,
+			"dex": 10,
+			"con": 21,
+			"int": 19,
+			"wis": 11,
+			"cha": 14,
+			"passive": 14,
+			"cr": "10",
+			"shortName": "Young Volcanic Dragon",
+			"senses": [
+				"blindsight 30 ft.",
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"languages": [
+				"Common",
+				"Draconic",
+				"Ignan"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"IG"
+			],
+			"save": {
+				"dex": "+4",
+				"con": "+9",
+				"wis": "+4",
+				"cha": "+6"
+			},
+			"skill": {
+				"athletics": "+10",
+				"perception": "+4"
+			},
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Catastrophic Aura",
+					"entries": [
+						"A 5 ft. aura of noxious fumes wafts around the dragon. Any creature which ends its turn within the aura must make a {@dc 17} Constitution saving throw or take 14 ({@damage 4d6}) poison damage. "
+					]
+				}
+			],
+			"damageTags": [
+				"F",
+				"I",
+				"P",
+				"S"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dragon can use Growing Aura and then make three attacks: one with its bite and two with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}17 ({@damage 2d10 + 6}) piercing damage, plus 7 ({@damage 2d6}) fire damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d6 + 6}) slashing damage, plus 3 ({@damage 1d6}) fire damage."
+					]
+				},
+				{
+					"name": "Growing Aura",
+					"entries": [
+						"The dragon's Catastrophic Aura expands its radius 10 feet. If the dragon uses this ability when its Catastrophic Aura is 25 feet, the dragon's aura explodes with energy and all creatures within 30 feet of the dragon must make a {@dc 17} Dexterity saving throw. Creatures who fail take 42 ({@damage 12d6}) fire damage and are on fire, taking 2 ({@damage 1d4}) fire damage at the start of their turns, creatures who succeed take half damage and are not on fire. A creature who failed the save and is on fire can extinguish the fire by using their action to make a successful {@dc 10} Dexterity saving throw on its turn. Once the dragon's aura explodes with energy it resets to 5 feet."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "sss",
+			"fluff": {
+				"entries": [
+					"{@link Young Volcanic Dragon|https://www.dmsguild.com/product/171480/Catastrophic-Dragons--World-Builder-Blog-Presents}",
+					{
+						"type": "quote",
+						"entries": [
+							"\"Blow, winds, and crack your cheeks! rage! blow! You cataracts and hurricanoes, spout Till you have drench'd our steeples, drown'd the cocks! You sulphurous and thought-executing fires, Vaunt-couriers to oak-cleaving thunderbolts, Singe my white head! And thou, all-shaking thunder, Smite flat the thick rotundity o' the world! Crack nature's moulds, an germens spill at once, That make ingrateful man!\""
+						],
+						"by": "William Shakespeare, \"King Lear\""
+					},
+					{
+						"type": "section",
+						"name": "History of Catastrophic Dragons",
+						"entries": [
+							"Catastrophic dragons were once chromatic dragons who desired more than a hoard and a lair. For while others stole and hid from the humanoids over whom they claimed superiority, these dragons knew that all other life in the multiverse should be bowing to their will. Power is a far greater reward than any material possession and as the smartest and strongest in the land, dragons deserved to be in charge. Any thought other than this was impractical and stupid to those chromatics.",
+							"These dragons tried to convince their brethren to leave their caves and make the humanoids submit to their will. The other chromatic dragons did not like this sudden interest in the affairs of lesser beings and so with greater numbers they did come together. They banished their radical kin to the elemental planes. For hundreds of years these rebellious chromatic dragons were locked in seas of fire, ice, wind, and stone. Those who did not die were shaped by elemental forces and remade into catastrophic dragons.",
+							"Each trapped catastrophic dragon has its imprisonment tied to the soul of a chromatic dragon on the material plane. If one of these gatekeeper chromatic dragon should die before it can pass the responsibility onto another, the catastrophic dragon can leave the plane of its imprisonment and wreak havoc on the world."
+						]
+					},
+					{
+						"type": "section",
+						"name": "Behavior of Catastrophic Dragons",
+						"entries": [
+							"Catastrophic dragons once wanted to dominate all life in the multiverse. After years of suffering the harsh terrain of the elemental planes, their minds are warped and they desire only to kill all those inferior to them, especially chromatic dragons whom they hate above all others. Their memories are long and catastrophic dragons do not forget their betrayal at the hands of their kin. If they escape their bonds, they may keep a hoard, but usually only for the purpose of attracting other dragons and killing them."
+						]
+					},
+					{
+						"name": "Variant: Catastrophic Dragons as Spellcasters",
+						"type": "inset",
+						"entries": [
+							"Some catastrophic dragons keep spellbooks, just like wizards. A young or older catastrophic dragon can cast and prepare a number of spells per day from its spellbook equal to its Intelligence modifier, requiring material components as usual. The spell's level can be no higher than one-third the dragon's challenge rating (rounded down). The dragon's bonus to hit with spell attacks is equal to its proficiency bonus + its Intelligence bonus. The dragon's spell save DC equals 8 + its proficiency bonus + its Intelligence modifier."
+						]
+					},
+					{
+						"type": "section",
+						"name": "Volcanic Dragons",
+						"entries": [
+							"Volcanic dragons have skin made of barely cooled molten rock. Cracks in their scales large and small show off the dragon’s glowing lava insides, which grow brighter as the dragon becomes more agitated. Heat and embers radiate from the dragon’s form and getting too close can result in a toxic death before the dragon ever lays claws onto a victim. A dry heat wave heralds the volcanic dragon’s approach.",
+							"{@b Righteous Rage.} Like all catastrophic dragons, rage constantly simmers in the heart of the volcanic dragon. The rage of the volcanic is one of a wronged creature out for justice. These dragons see the destruction of life as their righteous mission. As the multiverse’s superior beings they must destroy any non-elemental they come across as just punishment for their imprisonment. Most carry this twisted belief in their heart until the end of their days.",
+							"{@b Chromatic Hunters.} With a warped idea of justice in their minds, volcanic dragons are most likely to hunt and kill any and all chromatic dragons. Since they share a love of volcano lairs, volcanic dragons will often challenge an established red dragon and try to take its home. These battles are brutal, as both creatures are unaffected by fire and must use claws and jaws to battle."
+						]
+					},
+					{
+						"type": "section",
+						"name": "A Volcanic Dragon's Lair",
+						"entries": [
+							"Volcanic dragons tend to create lairs in their namesake. Since many volcano lairs are occupied by red dragons, volcanic dragons do not build their own, but rather siege the lair of a red dragon, kill the host, and claim the new home.",
+							"Volcanic dragons do make modifications to their stolen homes. They open cracks in the walls of the tunnels, allowing even more lava and noxious fumes inside to make the place habitable only by creatures who fear neither fire nor poison. Pieces of the defeated red dragon's corpse are mounted here and there as a show of the volcanic dragon's dominance.",
+							"The cunning volcanic dragons rig their lairs with all manner of unexpected traps as well. Knowing their opponents may have prepared with spells and items to help them resist flames, volcanic dragons arm magic traps which deal acid, cold, and lightning, to show any who might think themselves clever that they cannot hope to outsmart a cunning master in its home."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "sss"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Volcanic Dragon Wyrmling",
+			"size": [
+				"M"
+			],
+			"type": "dragon",
+			"source": "WBBCD",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 30",
+				"average": 75
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30,
+				"fly": 60,
+				"canHover": false
+			},
+			"str": 19,
+			"dex": 10,
+			"con": 17,
+			"int": 15,
+			"wis": 11,
+			"cha": 12,
+			"passive": 12,
+			"cr": "4",
+			"shortName": "Volcanic Dragon Wyrmling",
+			"senses": [
+				"blindsight 10 ft.",
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"languages": [
+				"Draconic",
+				"Ignan"
+			],
+			"languageTags": [
+				"DR",
+				"IG"
+			],
+			"save": {
+				"dex": "+2",
+				"con": "+5",
+				"wis": "+2",
+				"cha": "+3"
+			},
+			"skill": {
+				"athletics": "+6",
+				"perception": "+2"
+			},
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Catastrophic Aura",
+					"entries": [
+						"A 5 ft. aura of noxious fumes wafts around the dragon. Any creature which ends its turn within the aura must make a {@dc 13} Constitution saving throw or take 7 ({@damage 2d6}) poison damage."
+					]
+				}
+			],
+			"damageTags": [
+				"F",
+				"I",
+				"P"
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d10 + 4}) piercing damage, plus 7 ({@damage 2d6}) fire damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "sss",
+			"fluff": {
+				"entries": [
+					"{@link Volcanic Dragon Wyrmling|https://www.dmsguild.com/product/171480/Catastrophic-Dragons--World-Builder-Blog-Presents}",
+					{
+						"type": "quote",
+						"entries": [
+							"\"Blow, winds, and crack your cheeks! rage! blow! You cataracts and hurricanoes, spout Till you have drench'd our steeples, drown'd the cocks! You sulphurous and thought-executing fires, Vaunt-couriers to oak-cleaving thunderbolts, Singe my white head! And thou, all-shaking thunder, Smite flat the thick rotundity o' the world! Crack nature's moulds, an germens spill at once, That make ingrateful man!\""
+						],
+						"by": "William Shakespeare, \"King Lear\""
+					},
+					{
+						"type": "section",
+						"name": "History of Catastrophic Dragons",
+						"entries": [
+							"Catastrophic dragons were once chromatic dragons who desired more than a hoard and a lair. For while others stole and hid from the humanoids over whom they claimed superiority, these dragons knew that all other life in the multiverse should be bowing to their will. Power is a far greater reward than any material possession and as the smartest and strongest in the land, dragons deserved to be in charge. Any thought other than this was impractical and stupid to those chromatics.",
+							"These dragons tried to convince their brethren to leave their caves and make the humanoids submit to their will. The other chromatic dragons did not like this sudden interest in the affairs of lesser beings and so with greater numbers they did come together. They banished their radical kin to the elemental planes. For hundreds of years these rebellious chromatic dragons were locked in seas of fire, ice, wind, and stone. Those who did not die were shaped by elemental forces and remade into catastrophic dragons.",
+							"Each trapped catastrophic dragon has its imprisonment tied to the soul of a chromatic dragon on the material plane. If one of these gatekeeper chromatic dragon should die before it can pass the responsibility onto another, the catastrophic dragon can leave the plane of its imprisonment and wreak havoc on the world."
+						]
+					},
+					{
+						"type": "section",
+						"name": "Behavior of Catastrophic Dragons",
+						"entries": [
+							"Catastrophic dragons once wanted to dominate all life in the multiverse. After years of suffering the harsh terrain of the elemental planes, their minds are warped and they desire only to kill all those inferior to them, especially chromatic dragons whom they hate above all others. Their memories are long and catastrophic dragons do not forget their betrayal at the hands of their kin. If they escape their bonds, they may keep a hoard, but usually only for the purpose of attracting other dragons and killing them."
+						]
+					},
+					{
+						"name": "Variant: Catastrophic Dragons as Spellcasters",
+						"type": "inset",
+						"entries": [
+							"Some catastrophic dragons keep spellbooks, just like wizards. A young or older catastrophic dragon can cast and prepare a number of spells per day from its spellbook equal to its Intelligence modifier, requiring material components as usual. The spell's level can be no higher than one-third the dragon's challenge rating (rounded down). The dragon's bonus to hit with spell attacks is equal to its proficiency bonus + its Intelligence bonus. The dragon's spell save DC equals 8 + its proficiency bonus + its Intelligence modifier."
+						]
+					},
+					{
+						"type": "section",
+						"name": "Volcanic Dragons",
+						"entries": [
+							"Volcanic dragons have skin made of barely cooled molten rock. Cracks in their scales large and small show off the dragon’s glowing lava insides, which grow brighter as the dragon becomes more agitated. Heat and embers radiate from the dragon’s form and getting too close can result in a toxic death before the dragon ever lays claws onto a victim. A dry heat wave heralds the volcanic dragon’s approach.",
+							"{@b Righteous Rage.} Like all catastrophic dragons, rage constantly simmers in the heart of the volcanic dragon. The rage of the volcanic is one of a wronged creature out for justice. These dragons see the destruction of life as their righteous mission. As the multiverse’s superior beings they must destroy any non-elemental they come across as just punishment for their imprisonment. Most carry this twisted belief in their heart until the end of their days.",
+							"{@b Chromatic Hunters.} With a warped idea of justice in their minds, volcanic dragons are most likely to hunt and kill any and all chromatic dragons. Since they share a love of volcano lairs, volcanic dragons will often challenge an established red dragon and try to take its home. These battles are brutal, as both creatures are unaffected by fire and must use claws and jaws to battle."
+						]
+					},
+					{
+						"type": "section",
+						"name": "A Volcanic Dragon's Lair",
+						"entries": [
+							"Volcanic dragons tend to create lairs in their namesake. Since many volcano lairs are occupied by red dragons, volcanic dragons do not build their own, but rather siege the lair of a red dragon, kill the host, and claim the new home.",
+							"Volcanic dragons do make modifications to their stolen homes. They open cracks in the walls of the tunnels, allowing even more lava and noxious fumes inside to make the place habitable only by creatures who fear neither fire nor poison. Pieces of the defeated red dragon's corpse are mounted here and there as a show of the volcanic dragon's dominance.",
+							"The cunning volcanic dragons rig their lairs with all manner of unexpected traps as well. Knowing their opponents may have prepared with spells and items to help them resist flames, volcanic dragons arm magic traps which deal acid, cold, and lightning, to show any who might think themselves clever that they cannot hope to outsmart a cunning master in its home."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "sss"
+						}
+					}
+				]
+			}
 		}
 	]
 }
