@@ -1,0 +1,165 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_schema-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "LNMCD",
+				"abbreviation": "LNMCD",
+				"full": "Catastrophic Dragons (Lenmos)",
+				"authors": [
+					"Lenmos"
+				],
+				"convertedBy": [
+					"p4535992"
+				],
+				"version": "1.0.0",
+				"color": "16fdd2",
+				"url": "https://www.dmsguild.com/product/363864/Catastrophic-Dragons",
+				"targetSchema": "1.7.0"
+			}
+		],
+		"dateAdded": 1641557769,
+		"dateLastModified": 1641557769,
+		"_dateLastModifiedHash": "01a9beb6f0"
+	},
+	"legendaryGroup": [
+		{
+			"name": "CatastrophicDragonsLairActionsBlizzardDragon",
+			"source": "LNMCD",
+			"lairActions": [
+				"On initiative count 20 (losing initiative ties), the blizzard dragon takes a lair action to cause one of the following effects; the dragon can't use the same effect two rounds in a row:",
+				{
+					"type": "list",
+					"items": [
+						"The walls of the lair become coated in ice spikes. Creatures who start their turns or move adjacent to the wall take 7 ({@damage 2d6}) piercing damage and 4 ({@damage 1d8}) cold damage. The spikes last until the beginning of the dragon's next lair action.",
+						"Wild wind whips through the lair and all creatures within 90 feet of the dragon must make a DC 10 Strength saving throw or be thrown 30 feet into the air and then fall back to the ground taking 10 ({@damage 3d6}) bludgeoning damage and landing prone. Creatures with a fly speed have advantage on this saving throw.",
+						"Heavy snow falls within a 60 ft. radius centered on the dragon. This area is difficult terrain and is lightly obscured for any creature except the dragon and its allies."
+					]
+				}
+			],
+			"regionalEffects": [
+				"The region containing a legendary blizzard dragon's lair is warped by the dragon's elemental magic, which creates one or more of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"Blizzards constantly rage within 6 miles of the dragon's lair.",
+						"Ice elementals scour the land within 6 miles of the lair. An ice elemental has the same statistics as an earth elemental, but it is immune to cold damage, has the dragon's Ice Walk ability instead of Earth Glide, and has an Intelligence and Charisma score of 1 (-5).",
+						"All bodies of water within 1 mile of the lair is frozen completely solid down to the last drop."
+					]
+				},
+				"The blizzards end immediately when the dragon dies. The ice elementals and frozen bodies of water melt {@dice 1d10} days after the death of the dragon."
+			]
+		},
+		{
+			"name": "CatastrophicDragonsLairActionsEarthquakeDragon",
+			"source": "LNMCD",
+			"lairActions": [
+				"On initiative count 20 (losing initiative ties), the earthquake dragon takes a lair action to cause one of the following effects; the dragon can't use the same effect two rounds in a row:",
+				{
+					"type": "list",
+					"items": [
+						"Pieces of the lair's ceiling fall to the ground, covering a 25 ft. square area within 120 feet of the dragon. Creatures in the area must make a DC 15 Dexterity saving throw. Creatures who fail take 21 ({@damage 6d6}) bludgeoning damage, creatures who succeed take half damage.",
+						"A 5 ft. square, 30 ft. deep pit opens beneath one creature the dragon can see. This creature must make a DC 15 Dexterity saving throw. If the creature fails it takes 21 ({@damage 6d6}) bludgeoning damage and lands prone at the bottom of the pit. A creature who succeeds moves to an unoccupied space of their choice adjacent to the pit. Climbing the walls of the pit requires a DC 15 Strength (Athletics) check. The pit seals over and pushes up any creatures within when the dragon uses this lair action again.",
+						"The ground shakes violently within the chamber and all ground within 90 feet of the dragon is difficult terrain until the dragon uses another lair action."
+					]
+				}
+			],
+			"regionalEffects": [
+				"The region containing a legendary earthquake dragon's lair is warped by the dragon's elemental magic, which creates one or more of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"Small earthquakes and ground tremors occur within 6 miles of the dragon's lair.",
+						"Creatures who fly within 1 mile of the lair find that gravity pulls them toward the ground. No creature other than the dragon can fly higher than 30 feet.",
+						"Large fissures appear at random around the dragon's lair. Creatures standing on ground which becomes a fissure must make a DC 15 Dexterity saving throw or fall 1d4 x 10 feet into the fissure."
+					]
+				},
+				"All of these regional effects end immediately after the earthquake dragon dies."
+			]
+		},
+		{
+			"name": "CatastrophicDragonsLairActionsTornadoDragon",
+			"source": "LNMCD",
+			"lairActions": [
+				"On initiative count 20 (losing initiative ties), the tornado dragon takes a lair action to cause one of the following effects; the dragon can't use the same effect two rounds in a row:",
+				{
+					"type": "list",
+					"items": [
+						"Debris flies through the air and all creatures within 60 feet of the tornado dragon must succeed on a DC 15 Dexterity saving throw. Creatures who fail take 10 ({@damage 3d6}) piercing damage, creatures who succeed take half.",
+						"Three 5 ft. cubes of ceiling collapse in areas determine by the dragon. Three creatures of the dragon's choice within 90 feet must succeed on a DC 15 Dexterity saving throw. Creatures who fail take 10 ({@damage 3d6}) piercing damage and are knocked prone, creatures who succeed take half and are not knocked prone.",
+						"The dragon can create a {@spell wind wall|PHB} per spell, but its duration is only 1 round and the DC for the Strength saving throw is 15."
+					]
+				}
+			],
+			"regionalEffects": [
+				"The region containing a legendary tornado dragon's lair is warped by the dragon's magic, which creates one or more of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"Strong wind is constant within 6 miles of the lair. No pop up structure, such as a wood shack or tent can stay standing in the wind.",
+						"Random lightning strikes occur within 6 miles of the lair. These lightning bolts strike a random non-elemental living creature every {@dice 1d4} hours. A creature who is struck must make a DC 15 Dexterity saving throw or take 17 ({@damage 5d6}) lightning damage.",
+						"Air elementals coalesce within 1 mile of the lair. If the dragon dies, the effects end immediately."
+					]
+				},
+				"All of these regional effects end immediately after the tornado dragon dies."
+			]
+		},
+		{
+			"name": "CatastrophicDragonsLairActionsTyphoonDragon",
+			"source": "LNMCD",
+			"lairActions": [
+				"On initiative count 20 (losing initiative ties), the typhoon dragon takes a lair action to cause one of the following effects; the dragon can't use the same effect two rounds in a row:",
+				{
+					"type": "list",
+					"items": [
+						"Rain falls within a 120 ft. radius of the dragon. Creatures in the area the dragon chooses must make a DC 15 Wisdom saving throw, or have disadvantage on all attacks while within the rain, which lasts until the start of the next lair action.",
+						"Mud bubbles and swirls up from the ocean floor, heavily obscuring anything within the water. This mud storm lasts until the start of the next lair action.",
+						"A strong gust of wind pushes through the chamber. All creatures the dragon chooses must make a DC 15 Strength saving throw. Those who fail are pushed 50 feet in a direction the dragon chooses. If the creature hits a wall, this movement ends and it takes 3 ({@damage 1d6}) damage for every 10 feet of movement it had left (rounded down)."
+					]
+				}
+			],
+			"regionalEffects": [
+				"The region containing a legendary typhoon dragon's lair is warped by the dragon's magic, which creates one or more of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"Waves and swells are larger within 6 miles of the dragon's lair.",
+						"Whirlpools appear randomly within 1 mile of the lair. Creatures caught in such a whirlpool must make a DC 15 Strength (Athletics) check, or be pulled beneath the roaring wave and risk drowning.",
+						"Undead sea creatures and drowned land-dwellers protect the ocean floor within 1 mile of the dragon's lair."
+					]
+				},
+				"All of these regional effects end immediately after the typhoon dragon dies."
+			]
+		},
+		{
+			"name": "CatastrophicDragonsLairActionsVolcanicDragon",
+			"source": "LNMCD",
+			"lairActions": [
+				"On initiative count 20 (losing initiative ties), the volcanic dragon takes a lair action to cause one of the following effects; the dragon can't use the same effect two rounds in a row:",
+				{
+					"type": "list",
+					"items": [
+						"A noxious gas cloud gathers in a 20 ft. radius cloud centered on an area the dragon can see within 120 feet of it. Creatures who start their turn in or enter the cloud must succeed on a DC 15 Constitution saving throw. Those who fail take 14 (4d6) poison damage and are poisoned for 1 minute, those who succeed take half damage and are not poisoned. A creature who fails this saving throw and is poisoned can repeat the saving throw of the end of its turn, ending the poisoned effect on a success.",
+						"The floor turns to soft, semi-molten rock in a 20 ft. radius are centered on an area the dragon can see within 120 feet of it. Creatures who start their turn in or enter the area must make a DC 15 Strength saving throw, or become restrained as the floor grips them. They are restrained until the dragon uses another lair action.",
+						"A sudden puff of sulfur shoots up from the ground and at the face of any creature the dragon can see within 120 feet. That creature must make a DC 15 Constitution saving throw or be blinded for 1 minute. A creature who fails this saving throw and is blinded can repeat the saving throw of the end of its turn, ending the blinded effect on a success."
+					]
+				}
+			],
+			"regionalEffects": [
+				"The region containing a legendary volcanic dragon's lair is warped by the dragon's magic, which creates one or more of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"Lava suddenly bubbles up from the ground in random places at random times within 6 miles of the volcanic dragon's lair.",
+						"Heavy ash clouds blot out the sun within 1 mile of the lair.",
+						"Fire elementals ravage the land within 1 mile of the lair."
+					]
+				},
+				"All of these regional effects end immediately after the volcanic dragon dies."
+			]
+		}
+    ],
+	"monster": [
+		
+	]
+}
