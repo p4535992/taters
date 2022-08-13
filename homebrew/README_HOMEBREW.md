@@ -14,7 +14,6 @@ TODO
 
 ===============================================================================================
 
-
 - BREW-355 The Mad Scientist Artificer by u/CamunonZ (https://homebrewery.naturalcrit.com/share/C5VzEemUV7b_)
 
 - BREW-345 Cowboy_Tiefling - Blue Mage Sorcerous Origin (https://www.dndbeyond.com/subclasses/9262-blue-mage)
@@ -27,9 +26,9 @@ TODO
 
 - BREW-318 Kibbles' Expanded Summoning Spells (https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO)
 
-=============================================================================================
-
 - BREW-314 Arcane Marksman - CaelReader (https://drive.google.com/file/d/0B5ttoyMfsaC7YTZtMHlFbDl0OHM/view)
+
+=============================================================================================
 
 - BREW-288 Psion V1.5 Update by KibblesTasty (https://old.reddit.com/r/UnearthedArcana/comments/oa4w8q/kibbles_psion_v15_read_minds_and_break_them/)
 
