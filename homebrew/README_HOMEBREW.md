@@ -19,14 +19,15 @@ TODO
 
 - BREW-345 Cowboy_Tiefling - Blue Mage Sorcerous Origin (https://www.dndbeyond.com/subclasses/9262-blue-mage)
 
-
 - BREW-339 Fang Dragons - KajaGrae (https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV)
 
 =============================================================================================
 
-- BREW-323 Expanded Sentient Plants by SonixverseLabs (https://reddit.com/r/UnearthedArcana/comments/qq82cr/expanded_sentient_plants_by_sonixverselabs/)
+- BREW-323 Expanded Sentient Plants by SonixverseLabs (https://reddit.com/r/UnearthedArcana/comments/qq82cr/expanded_sentient_plants_by_sonixverselabs/) https://drive.google.com/drive/folders/1WYyA_tq2-L4P7g4ipM7uM2MZDgptNCo_ https://www.gmbinder.com/share/-Mn0qCLWumFLaPWdZBvk
 
 - BREW-318 Kibbles' Expanded Summoning Spells (https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO)
+
+=============================================================================================
 
 - BREW-314 Arcane Marksman - CaelReader (https://drive.google.com/file/d/0B5ttoyMfsaC7YTZtMHlFbDl0OHM/view)
 
