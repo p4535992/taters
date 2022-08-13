@@ -19,9 +19,10 @@ TODO
 
 - BREW-345 Cowboy_Tiefling - Blue Mage Sorcerous Origin (https://www.dndbeyond.com/subclasses/9262-blue-mage)
 
-- BREW-299 Jarlaxle's Bag of Everything (https://www.dmsguild.com/product/368188/Jarlaxles-Bag-of-Everything?src=hottest_in_dmg&filters=45469)
 
--BREW-339 Fang Dragons - KajaGrae (https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV)
+- BREW-339 Fang Dragons - KajaGrae (https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV)
+
+=============================================================================================
 
 - BREW-323 Expanded Sentient Plants by SonixverseLabs (https://reddit.com/r/UnearthedArcana/comments/qq82cr/expanded_sentient_plants_by_sonixverselabs/)
 
