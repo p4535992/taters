@@ -31,10 +31,36 @@
 			"shortName": "The Mad Scientist",
 			"page": 1,
 			"subclassFeatures": [
-				"The Mad Scientist|Artificer||The Mad Scientist|TMSA|3",
-				"Omnifabrication|Artificer||The Mad Scientist|TMSA|5",
-				"Hardened By Experimentation|Artificer||The Mad Scientist|TMSA|9",
-				"Doomsday Device|Artificer||The Mad Scientist|TMSA|15"
+				"The Mad Scientist|Artificer|TCE|The Mad Scientist|TMSA|3",
+				"Omnifabrication|Artificer|TCE|The Mad Scientist|TMSA|5",
+				"Hardened By Experimentation|Artificer|TCE|The Mad Scientist|TMSA|9",
+				"Doomsday Device|Artificer|TCE|The Mad Scientist|TMSA|15"
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"identify",
+							"chaos bolt"
+						],
+						"5": [
+							"enthrall",
+							"enlarge/reduce"
+						],
+						"9": [
+							"lightning bolt",
+							"thunder step"
+						],
+						"13": [
+							"summon construct|TCE",
+							"vitriolic sphere"
+						],
+						"17": [
+							"raise dead",
+							"cloudkill"
+						]
+					}
+				}
 			],
 			"subclassSpells": [
 				"identify",
@@ -43,7 +69,7 @@
 				"enlarge/reduce",
 				"lightning bolt",
 				"thunder step",
-				"smmon construct",
+				"summon construct|TCE",
 				"vitriolic sphere",
 				"raise dead",
 				"cloudkill"
@@ -74,19 +100,19 @@
 				"It is not unheard of, however, for a few of those scientists to willingly go out into the world; after all, adventuring and exploration go hand in hand for providing stimulating new insights into a wide variety of fields.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Pseudoscience Manipulation|Artificer||The Mad Scientist|TMSA|3|TMSA"
+					"subclassFeature": "Pseudoscience Manipulation|Artificer|TCE|The Mad Scientist|TMSA|3|TMSA"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Mad Scientist Spells|Artificer||The Mad Scientist|TMSA|3|TMSA"
+					"subclassFeature": "Mad Scientist Spells|Artificer|TCE|The Mad Scientist|TMSA|3|TMSA"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Quantitative Aptitudinal|Artificer||The Mad Scientist|TMSA|3|TMSA"
+					"subclassFeature": "Quantitative Aptitudinal|Artificer|TCE|The Mad Scientist|TMSA|3|TMSA"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Crazy Contraption|Artificer||The Mad Scientist|TMSA|3|TMSA"
+					"subclassFeature": "Crazy Contraption|Artificer|TCE|The Mad Scientist|TMSA|3|TMSA"
 				}
 			]
 		},
@@ -283,7 +309,7 @@
 							"name": "Killer Robot",
 							"entries": [
 								"You can spend 1 minute building the robot in an unoccupied space within 5 feet of you. You can also choose to spend 1 hour on it instead, making it last for longer. Once created, the Killer Robot lasts for 1 hour if you spent 1 minute on it, or 8 hours if you spent 1 hour on it.",
-								"The robot can take the form of any Large or smaller construct with a CR equal to or lower than 6. It has immunity to psychic and necrotic damage, in addition to the features given by its chosen form. It is friendly to you and your companions, and obeys your commands. During combat, it rolls its own initiative and acts on its own turn. If the Mending spell is cast on it, it regains {@dice 2d8} hit points.",
+								"The robot can take the form of any Large or smaller construct with a CR equal to or lower than 6. It has immunity to psychic and necrotic damage, in addition to the features given by its chosen form. It is friendly to you and your companions, and obeys your commands. During combat, it rolls its own initiative and acts on its own turn. If the {@spell Mending} spell is cast on it, it regains {@dice 2d8} hit points.",
 								"The robot breaks down and becomes unusable if reduced to 0 hit points, unable to be healed or revived afterwards."
 							]
 						},
@@ -291,7 +317,7 @@
 							"type": "inset",
 							"name": "Death Ray",
 							"entries": [
-								"You can spend 1 minute building a high- performance laser turret in an unoccupied space within 5 feet of you, which lasts for up to 1 hour. The turret is a Medium-sized cannon, with an AC of 20 and a number of hit points equal to five times your artificer level. It is immune to poison and psychic damage. If it is forced to make an ability check or a saving throw, treat all its ability scores as 14 (+2). If the mending spell is cast on it, it regains {@dice 2d4} hit points.",
+								"You can spend 1 minute building a high- performance laser turret in an unoccupied space within 5 feet of you, which lasts for up to 1 hour. The turret is a Medium-sized cannon, with an AC of 20 and a number of hit points equal to five times your artificer level. It is immune to poison and psychic damage. If it is forced to make an ability check or a saving throw, treat all its ability scores as 14 (+2). If the {@spell mending} spell is cast on it, it regains {@dice 2d4} hit points.",
 								"You can activate the turret as an action on your turn, as long as you are within 5 feet of it. Once activated, it fires off a beam of searing light against a target within 60 feet of it. Make a ranged spell attack. On a hit, if the target has 80 hit points or fewer, it dies. Otherwise, it takes {@damage 5d6} radiant damage and {@damage 5d6} fire damage. The Death Ray ignores the damage threshold of objects and structures, always dealing maximum damage to them.",
 								"You can fire off the ray a number of times equal to half your Intelligence modifier (rounded up). Once the number of shots is expended, the ray hits a living creature, or the turret is reduced to 0 hit points, the turret then completely breaks down and becomes unusable."
 							]
