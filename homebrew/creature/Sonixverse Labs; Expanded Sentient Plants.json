@@ -298,6 +298,151 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Vegepygmy Chieftain",
+			"size": [
+				"S"
+			],
+			"type": "plant",
+			"source": "SLESP",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d6 + 24",
+				"average": 45
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 18,
+			"int": 16,
+			"wis": 11,
+			"cha": 17,
+			"passive": 12,
+			"cr": "3",
+			"shortName": "Vegepygmy Chieftain",
+			"senses": [
+				"tremorsense 30 ft.",
+				"blindsight 60 ft."
+			],
+			"senseTags": [
+				"T",
+				"B"
+			],
+			"languages": [
+				"Vegepygmy",
+				"Sylvan"
+			],
+			"languageTags": [
+				"OTH",
+				"S"
+			],
+			"skill": {
+				"perception": "+2",
+				"stealth": "+6"
+			},
+			"conditionImmune": [
+				"blinded",
+				"deafened"
+			],
+			"trait": [
+				{
+					"name": "Plant Stride",
+					"entries": [
+						"As a bonus action, the vegepygmy can enter a Medium or larger plant and emerge 5ft. from another Medium or larger plant within 60ft. of its original location."
+					]
+				},
+				{
+					"name": "Flammable",
+					"entries": [
+						"Whenever the vegepygmy takes fire damage,it catches aflame. While aflame, it takes 5 ({@dice 1d8}) firedamage at the start of each of its turns for one minute. Itcan use its action to put out the flames. However, whilein this state, its attacks deal an additional 5 ({@dice 1d8}) firedamage for the duration."
+					]
+				},
+				{
+					"name": "Plant Camouflage",
+					"entries": [
+						"Whenever the vegepygmy takes firedamage, it catches aflame. While aflame, it takes 5 ({@dice 1d8})fire damage at the start of each of its turns for oneminute. It must use its action to put out the flames.However, while in this state, its attacks deal an additional5 ({@damage 1d8}) fire damage for the duration."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The vegepygmy regains 10 hitpoints at thestart of its turn. If it takes fire or necrotic damage, thistrait doesn't function at the start of the vegepygmy's nextturn. The vegepygmy starts its turn with 0 hitpoints itdoesn't benefit from regeneration. If it starts its turn insunlight, it regains 20 hitpoints at the start of each of itsturns."
+					]
+				}
+			],
+			"damageTags": [
+				"F",
+				"P"
+			],
+			"traitTags": [
+				"Regeneration"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The vegepygmy makes two vine spearattacks."
+					]
+				},
+				{
+					"name": "Vine Spear",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Dart",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 30/120 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage. On a failed saving throw, it takes 14 ({@dice 4d6}) poison and becomes {@condition poisoned} until the end of its next turn. On a successful saving throw, it takes half damage and is not {@condition poisoned}."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW",
+				"THW"
+			],
+			"bonus": [
+				{
+					"name": "Plant Stride",
+					"entries": [
+						"As a bonus action, the vegepygmy can enter a Medium or larger plant and emerge 5ft. from another Medium or larger plant within 60ft. of its original location."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/l2orDqD.png",
+			"fluff": {
+				"entries": [
+					"{@link Vegepygmy Chieftain|https://www.gmbinder.com/share/-Mn0qCLWumFLaPWdZBvk} from {@link post|https://reddit.com/r/UnearthedArcana/comments/qq82cr/expanded_sentient_plants_by_sonixverselabs/} and this {@link archive| https://drive.google.com/drive/folders/1WYyA_tq2-L4P7g4ipM7uM2MZDgptNCo_}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/2NDgI6c.jpg"
+						}
+					}
+				]
+			}
 		}
 	]
 }
