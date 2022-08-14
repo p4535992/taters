@@ -3134,6 +3134,839 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Vegepygmy Warrior (Lotus)",
+			"size": [
+				"S"
+			],
+			"type": "plant",
+			"source": "SLESP",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d6 + 2",
+				"average": 9
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 7,
+			"dex": 14,
+			"con": 13,
+			"int": 11,
+			"wis": 11,
+			"cha": 12,
+			"passive": 12,
+			"cr": "1/4",
+			"shortName": "Vegepygmy Warrior (Lotus)",
+			"page": 7,
+			"senses": [
+				"tremorsense 30 ft.",
+				"blindsight 60 ft."
+			],
+			"senseTags": [
+				"T",
+				"B"
+			],
+			"languages": [
+				"Druidic",
+				"Vegepygmy"
+			],
+			"languageTags": [
+				"DU",
+				"OTH"
+			],
+			"skill": {
+				"perception": "+2",
+				"stealth": "+6"
+			},
+			"conditionImmune": [
+				"blinded",
+				"deafened"
+			],
+			"resist": [
+				"psychic"
+			],
+			"trait": [
+				{
+					"name": "Flammable",
+					"entries": [
+						"Whenever the vegepyg my takes fire damage, it catches aflame. While aflame, it takes 5({@dice 1d8}) fire damage at the start of each of its turns for one minute. It can use its action to put out the flames. However, while in this state, its attacks deal an additional 5 ({@damage 1d8}) fire damage for the duration."
+					]
+				},
+				{
+					"name": "Plant Camouflage",
+					"entries": [
+						"The vegepygmy has advantage onDexterity (Stealth) checks it makes in any terrain with ample obscuring plant life. It can use its bonus action to Hide while these conditions are met."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The vegepygmy regains 5 hit points at the start of its turn as long as has 1 hit point and it has not taken fire or necrotic damage on its previous turn. If it starts its turn in sunlight, it regains 10 hit points."
+					]
+				},
+				{
+					"name": "Aromatic Spores",
+					"entries": [
+						"Creatures that are not plants that first enter or starts its turn within 10ft. of the vegepygmy must succeed a {@dc 12} Constitution saving throw or become {@condition poisoned} until the end of its next turn."
+					]
+				},
+				{
+					"name": "Aromatic Spores - Pleasant Aroma",
+					"entries": [
+						"Creatures {@condition poisoned} by the vegepygmy are considered {@condition charmed} it"
+					]
+				},
+				{
+					"name": "Aromatic Spores - Narcotic Poison",
+					"entries": [
+						"Creatures {@condition poisoned} by the vegepygmy cannot repeat its saving throw as a result of taking damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Regeneration"
+			],
+			"action": [
+				{
+					"name": "Vine Spear",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 10 ft., one target. {@h}6 ({@damage 1d6 + 2}) piercing damage. If the target is a creature, it must succeed a {@dc 11}Constitution saving throw or become {@condition poisoned} until the end of its next turn."
+					]
+				},
+				{
+					"name": "Dart",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 30/120 ft., one target. {@h}5 ({@damage 1d4 + 2}) piercing damage. If the target is a creature, it must succeed a {@dc 11}Constitution saving throw. On a failed saving throw,it takes 7 ({@dice 2d6}) poison and becomes {@condition poisoned} until the end of its next turn. On a successful saving throw, it takes half damage and is not {@condition poisoned}."
+					]
+				}
+			],
+			"damageTags": [
+				"F",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW",
+				"THW"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"bonus": [
+				{
+					"name": "Plant Stride",
+					"entries": [
+						"As a bonus action, the vegepygmy can enter a Medium or larger plant and emerge 5ft. from another Medium or larger plant within 60ft. of its original location"
+					]
+				}
+			],
+			"tokenUrl": "sss",
+			"fluff": {
+				"entries": [
+					"{@link Vegepygmy Warrior (Lotus)|https://www.gmbinder.com/share/-Mn0qCLWumFLaPWdZBvk} from {@link post|https://reddit.com/r/UnearthedArcana/comments/qq82cr/expanded_sentient_plants_by_sonixverselabs/} and this {@link archive| https://drive.google.com/drive/folders/1WYyA_tq2-L4P7g4ipM7uM2MZDgptNCo_}",
+					"{@b NOTE:} the document reflects the latest changes made to the document {@link Expanded Floral Compendium|https: //drive.google.com/file/d/1pf3VkLCE8JFtvPyRx2SvTujSsR3QSvpW/view?usp=sharing} always by {@i Sonixverse Labs}",
+					"Of all sapient forms of plant life, the vegepygmy is the smallest and most numerous. As with most species of plants,vegepygmies come in numerous varieties and temperaments.However, their intelligence is not to be underestimated as they more than make up for their diminutive stature by making use of their superior regeneration capable of fully healing them from the brink of death, their expert knowledge of the forest as well as their superior numbers.",
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Clever Hunters",
+								"entries": [
+									"Regardless of their temperament, vegepygmies make full use of their small size. Despite their diminutive stature, they are able to cover a lot of ground thanks to their ability to merge and reappear into nearby foliage. This allows them to be the perfect ambush hunters as they can continually harry their foes using grass-like darts to launch at their foes before fleeing deeper into the undergrowth. Thanks to their heightened regeneration, they can prove to be problematic to kill, as they can fully heal from all but the deadliest of wounds in a matter of seconds."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Fungal Hatred",
+								"entries": [
+									"Although vegepygmies have varying degrees of relations with one another, they all do share a common hatred for sentient fungi that seeming has existed for all of recorded history. Vegepygmies, as well as most other forms of sapient plants,thrive on the expansion of the forest and floral assimilation.However, my conids and other fungi are also driven by a similar motive, which often places them at odds with one another. Under most circumstances, this conflict serves as a check and balance to keep each force in check; however, it is often the responsibility of many druidic tribes to ensure this balance is not swayed lest one force gets out of control."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Blighted (Generic)",
+								"entries": [
+									"An unfortunate side effect of this conflict is the emergence of the blighted. The blighted can be best as a mutation that affects many sentient plants as a resistance against parasitic fungal swarms. Although the host managed to resist its effects, it warps the body and mind of the individual. As a resulted, the blighted are driven by a desire to consume both plant and fungal life."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Lotus",
+								"entries": [
+									"Lotus vegepymies are the most beautiful of all their relatives.Their flower-like appearance is quite interesting as each individual seems to have its own unique design with varying number, shapes, and colors of their pebbles. They are often accompanied by an entourage of other vegepygmies who seem to revere them as some sort of royalty.",
+									"When threatened, they prefer not to fight themselves,instead they command their allies to fight in their stand. But if pressured enough, they will use their hypnotic pollen to incapacitate their enemy long enough for help to arrive or for them to make an escape."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "sss"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Vegepygmy Chieftain (Lotus)",
+			"size": [
+				"S"
+			],
+			"type": "plant",
+			"source": "SLESP",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d6 + 24",
+				"average": 45
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 18,
+			"int": 16,
+			"wis": 11,
+			"cha": 17,
+			"passive": 12,
+			"cr": "3",
+			"shortName": "Vegepygmy Chieftain (Lotus)",
+			"page": 7,
+			"senses": [
+				"tremorsense 30 ft.",
+				"blindsight 60 ft."
+			],
+			"senseTags": [
+				"T",
+				"B"
+			],
+			"languages": [
+				"Druidic",
+				"Vegepygmy"
+			],
+			"languageTags": [
+				"DU",
+				"OTH"
+			],
+			"skill": {
+				"perception": "+2",
+				"stealth": "+6"
+			},
+			"conditionImmune": [
+				"blinded",
+				"deafened"
+			],
+			"resist": [
+				"psychic"
+			],
+			"trait": [
+				{
+					"name": "Flammable",
+					"entries": [
+						"Whenever the vegepygmy takes fire damage, it catches aflame. While a flame, it takes 5({@dice 1d8}) fire damage at the start of each of its turns for one minute. It can use its action to put out the flames. However, while in this state, its attacks deal an additional 5 ({@damage 1d8}) fire damage for the duration."
+					]
+				},
+				{
+					"name": "Plant Camouflage",
+					"entries": [
+						"The vegepygmy has advantage on Dexterity (Stealth) checks it makes in any terrain with ample obscuring plant life. It can use its bonus action to Hide while these conditions are met."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The vegepygmy regains 10 hit points at the start of its turn as long as has 1 hit point and it has not taken fire or necrotic damage on its previous turn. If it starts its turn in sunlight, it regains 20 hit points."
+					]
+				},
+				{
+					"name": "Aromatic Spores",
+					"entries": [
+						"Creatures that are not plants that first enter or starts its turn within 10ft. of the vegepygmy must succeed a {@dc 12} Constitution saving throw or become {@condition poisoned} until the end of its next turn."
+					]
+				},
+				{
+					"name": "Aromatic Spores - Pleasant Aroma",
+					"entries": [
+						"Creatures {@condition poisoned} by the vegepygmy are considered {@condition charmed} it"
+					]
+				},
+				{
+					"name": "Aromatic Spores - Narcotic Poison",
+					"entries": [
+						"Creatures {@condition poisoned} by the vegepygmy cannot repeat its saving throw as a result of taking damage."
+					]
+				}
+			],
+			"damageTags": [
+				"F",
+				"I",
+				"P"
+			],
+			"traitTags": [
+				"Regeneration"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The vegepygmy makes two vine spear attacks."
+					]
+				},
+				{
+					"name": "Vine Spear",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}7 ({@damage 1d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Dart",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 30/120 ft., one target. {@h}5 ({@damage 1d4 + 2}) piercing damage, plus 3 ({@damage 1d6}) poison damage. If the target is a creature, it must succeed a {@dc 14} Constitution saving throw.On a failed saving throw, it takes becomes {@condition poisoned} until the end of its next turn."
+					]
+				},
+				{
+					"name": "Pollen Cloud {@recharge 5}",
+					"entries": [
+						"Creatures that are not plants in a 10ft. radius of the vegepygmy must succeed a {@dc 14} Constitution saving throw. On a failed saving throw, creatures take 14({@dice 4d6}) poison damage and are {@condition poisoned} until the end of its next turn. On a successful saving throw, creatures take half damage and are not {@condition poisoned}."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW",
+				"THW"
+			],
+			"bonus": [
+				{
+					"name": "Plant Stride",
+					"entries": [
+						"As a bonus action, the vegepygmy can enter a Medium or larger plant and emerge 5ft. from another Medium or larger plant within 60ft. of its original location"
+					]
+				}
+			],
+			"tokenUrl": "sss",
+			"fluff": {
+				"entries": [
+					"{@link Vegepygmy Chieftain (Lotus)|https://www.gmbinder.com/share/-Mn0qCLWumFLaPWdZBvk} from {@link post|https://reddit.com/r/UnearthedArcana/comments/qq82cr/expanded_sentient_plants_by_sonixverselabs/} and this {@link archive| https://drive.google.com/drive/folders/1WYyA_tq2-L4P7g4ipM7uM2MZDgptNCo_}",
+					"{@b NOTE:} the document reflects the latest changes made to the document {@link Expanded Floral Compendium|https: //drive.google.com/file/d/1pf3VkLCE8JFtvPyRx2SvTujSsR3QSvpW/view?usp=sharing} always by {@i Sonixverse Labs}",
+					"Of all sapient forms of plant life, the vegepygmy is the smallest and most numerous. As with most species of plants,vegepygmies come in numerous varieties and temperaments.However, their intelligence is not to be underestimated as they more than make up for their diminutive stature by making use of their superior regeneration capable of fully healing them from the brink of death, their expert knowledge of the forest as well as their superior numbers.",
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Clever Hunters",
+								"entries": [
+									"Regardless of their temperament, vegepygmies make full use of their small size. Despite their diminutive stature, they are able to cover a lot of ground thanks to their ability to merge and reappear into nearby foliage. This allows them to be the perfect ambush hunters as they can continually harry their foes using grass-like darts to launch at their foes before fleeing deeper into the undergrowth. Thanks to their heightened regeneration, they can prove to be problematic to kill, as they can fully heal from all but the deadliest of wounds in a matter of seconds."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Fungal Hatred",
+								"entries": [
+									"Although vegepygmies have varying degrees of relations with one another, they all do share a common hatred for sentient fungi that seeming has existed for all of recorded history. Vegepygmies, as well as most other forms of sapient plants,thrive on the expansion of the forest and floral assimilation.However, my conids and other fungi are also driven by a similar motive, which often places them at odds with one another. Under most circumstances, this conflict serves as a check and balance to keep each force in check; however, it is often the responsibility of many druidic tribes to ensure this balance is not swayed lest one force gets out of control."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Blighted (Generic)",
+								"entries": [
+									"An unfortunate side effect of this conflict is the emergence of the blighted. The blighted can be best as a mutation that affects many sentient plants as a resistance against parasitic fungal swarms. Although the host managed to resist its effects, it warps the body and mind of the individual. As a resulted, the blighted are driven by a desire to consume both plant and fungal life."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Lotus",
+								"entries": [
+									"Lotus vegepymies are the most beautiful of all their relatives.Their flower-like appearance is quite interesting as each individual seems to have its own unique design with varying number, shapes, and colors of their pebbles. They are often accompanied by an entourage of other vegepygmies who seem to revere them as some sort of royalty.",
+									"When threatened, they prefer not to fight themselves,instead they command their allies to fight in their stand. But if pressured enough, they will use their hypnotic pollen to incapacitate their enemy long enough for help to arrive or for them to make an escape."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "sss"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Vegepygmy Warrior (Blighted)",
+			"size": [
+				"S"
+			],
+			"type": "plant",
+			"source": "SLESP",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d6 + 2",
+				"average": 9
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 7,
+			"dex": 14,
+			"con": 13,
+			"int": 11,
+			"wis": 11,
+			"cha": 12,
+			"passive": 12,
+			"cr": "1/4",
+			"shortName": "Vegepygmy Warrior (Blighted)",
+			"page": 7,
+			"senses": [
+				"tremorsense 30 ft.",
+				"blindsight 60 ft."
+			],
+			"senseTags": [
+				"T",
+				"B"
+			],
+			"languages": [
+				"Druidic",
+				"Vegepygmy"
+			],
+			"languageTags": [
+				"DU",
+				"OTH"
+			],
+			"skill": {
+				"perception": "+2",
+				"stealth": "+6"
+			},
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"deafened",
+				"poisoned"
+			],
+			"resist": [
+				"psychic"
+			],
+			"trait": [
+				{
+					"name": "Flammable",
+					"entries": [
+						"Whenever the vegepyg my takes fire damage, it catches aflame. While aflame, it takes 5({@dice 1d8}) fire damage at the start of each of its turns for one minute. It can use its action to put out the flames. However, while in this state, its attacks deal an additional 5 ({@damage 1d8}) fire damage for the duration."
+					]
+				},
+				{
+					"name": "Plant Camouflage",
+					"entries": [
+						"The vegepygmy has advantage onDexterity (Stealth) checks it makes in any terrain with ample obscuring plant life. It can use its bonus action to Hide while these conditions are met."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The vegepygmy regains 5 hit points at the start of its turn as long as has 1 hit point and it has not taken fire or necrotic damage on its previous turn. If it starts its turn in sunlight, it regains 10 hit points."
+					]
+				},
+				{
+					"name": "Floral Bane",
+					"entries": [
+						"Whenever the vegepygmy takes the attack action against a creature plant, it can make an additional tendril attack."
+					]
+				},
+				{
+					"name": "Witherblight",
+					"entries": [
+						"Creatures {@condition poisoned} by the vegepygmy takes 5 ({@damage 1d8}) necrotic damage at the start of each of its turns and cannot regain any hit points."
+					]
+				}
+			],
+			"traitTags": [
+				"Regeneration"
+			],
+			"action": [
+				{
+					"name": "Vine Spear",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 10 ft., one target. {@h}6 ({@damage 1d6 + 2}) piercing damage. If the target is a creature, it must succeed a {@dc 11}Constitution saving throw or become {@condition poisoned} until the end of its next turn."
+					]
+				},
+				{
+					"name": "Dart",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 30/120 ft., one target. {@h}5 ({@damage 1d4 + 2}) piercing damage. If the target is a creature, it must succeed a {@dc 11}Constitution saving throw. On a failed saving throw,it takes 7 ({@dice 2d6}) poison and becomes {@condition poisoned} until the end of its next turn. On a successful saving throw, it takes half damage and is not {@condition poisoned}."
+					]
+				}
+			],
+			"damageTags": [
+				"F",
+				"N",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW",
+				"THW"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"bonus": [
+				{
+					"name": "Plant Stride",
+					"entries": [
+						"As a bonus action, the vegepygmy can enter a Medium or larger plant and emerge 5ft. from another Medium or larger plant within 60ft. of its original location"
+					]
+				}
+			],
+			"tokenUrl": "sss",
+			"fluff": {
+				"entries": [
+					"{@link Vegepygmy Warrior (Blighted)|https://www.gmbinder.com/share/-Mn0qCLWumFLaPWdZBvk} from {@link post|https://reddit.com/r/UnearthedArcana/comments/qq82cr/expanded_sentient_plants_by_sonixverselabs/} and this {@link archive| https://drive.google.com/drive/folders/1WYyA_tq2-L4P7g4ipM7uM2MZDgptNCo_}",
+					"{@b NOTE:} the document reflects the latest changes made to the document {@link Expanded Floral Compendium|https: //drive.google.com/file/d/1pf3VkLCE8JFtvPyRx2SvTujSsR3QSvpW/view?usp=sharing} always by {@i Sonixverse Labs}",
+					"Of all sapient forms of plant life, the vegepygmy is the smallest and most numerous. As with most species of plants,vegepygmies come in numerous varieties and temperaments.However, their intelligence is not to be underestimated as they more than make up for their diminutive stature by making use of their superior regeneration capable of fully healing them from the brink of death, their expert knowledge of the forest as well as their superior numbers.",
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Clever Hunters",
+								"entries": [
+									"Regardless of their temperament, vegepygmies make full use of their small size. Despite their diminutive stature, they are able to cover a lot of ground thanks to their ability to merge and reappear into nearby foliage. This allows them to be the perfect ambush hunters as they can continually harry their foes using grass-like darts to launch at their foes before fleeing deeper into the undergrowth. Thanks to their heightened regeneration, they can prove to be problematic to kill, as they can fully heal from all but the deadliest of wounds in a matter of seconds."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Fungal Hatred",
+								"entries": [
+									"Although vegepygmies have varying degrees of relations with one another, they all do share a common hatred for sentient fungi that seeming has existed for all of recorded history. Vegepygmies, as well as most other forms of sapient plants,thrive on the expansion of the forest and floral assimilation.However, my conids and other fungi are also driven by a similar motive, which often places them at odds with one another. Under most circumstances, this conflict serves as a check and balance to keep each force in check; however, it is often the responsibility of many druidic tribes to ensure this balance is not swayed lest one force gets out of control."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Blighted (Generic)",
+								"entries": [
+									"An unfortunate side effect of this conflict is the emergence of the blighted. The blighted can be best as a mutation that affects many sentient plants as a resistance against parasitic fungal swarms. Although the host managed to resist its effects, it warps the body and mind of the individual. As a resulted, the blighted are driven by a desire to consume both plant and fungal life."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Blighted",
+								"entries": [
+									"Blighted vegepygmies are despised by all of their kin. It is believed that blighted vegepygmies are the result of deviant mutations from those infected by blights and other fungal creatures. However, these mutations seemed to warp the mind of these creatures as well as their bodies, resulting in an insatiable hunger for plants and fungi alike.",
+									"However, this ravenous hunger did not warp their intelligence, as they are still just a cunning as their other kin.Under most circumstances, blighted vegepygmies will not attack humanoids unless threatened or if their territory is encroached. In fact, blighted vegepygmies tend to be more prone to work with humanoids, since often times they share a common enemy. Such deals usually enables the humanoids to deal with any problems associated with sentient plants,while the blighted can satisfy their ravenous hunger for sentient plants."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "sss"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Vegepygmy Chieftain (Blighted)",
+			"size": [
+				"S"
+			],
+			"type": "plant",
+			"source": "SLESP",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d6 + 24",
+				"average": 45
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 18,
+			"int": 16,
+			"wis": 11,
+			"cha": 17,
+			"passive": 12,
+			"cr": "3",
+			"shortName": "Vegepygmy Chieftain (Blighted)",
+			"page": 7,
+			"senses": [
+				"tremorsense 30 ft.",
+				"blindsight 60 ft."
+			],
+			"senseTags": [
+				"T",
+				"B"
+			],
+			"languages": [
+				"Druidic",
+				"Vegepygmy"
+			],
+			"languageTags": [
+				"DU",
+				"OTH"
+			],
+			"skill": {
+				"perception": "+2",
+				"stealth": "+6"
+			},
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"deafened",
+				"poisoned"
+			],
+			"resist": [
+				"psychic"
+			],
+			"trait": [
+				{
+					"name": "Flammable",
+					"entries": [
+						"Whenever the vegepygmy takes fire damage, it catches aflame. While a flame, it takes 5({@dice 1d8}) fire damage at the start of each of its turns for one minute. It can use its action to put out the flames. However, while in this state, its attacks deal an additional 5 ({@damage 1d8}) fire damage for the duration."
+					]
+				},
+				{
+					"name": "Plant Camouflage",
+					"entries": [
+						"The vegepygmy has advantage on Dexterity (Stealth) checks it makes in any terrain with ample obscuring plant life. It can use its bonus action to Hide while these conditions are met."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The vegepygmy regains 10 hit points at the start of its turn as long as has 1 hit point and it has not taken fire or necrotic damage on its previous turn. If it starts its turn in sunlight, it regains 20 hit points."
+					]
+				},
+				{
+					"name": "Floral Bane",
+					"entries": [
+						"Whenever the vegepygmy takes the attack action against a creature plant, it can make an additional tendril attack."
+					]
+				},
+				{
+					"name": "Witherblight",
+					"entries": [
+						"Creatures {@condition poisoned} by the vegepygmy takes 5({@dice 1d8}) necrotic damage at the start of each ofits turns and cannot regain any hit points."
+					]
+				}
+			],
+			"damageTags": [
+				"F",
+				"I",
+				"P"
+			],
+			"traitTags": [
+				"Regeneration"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The vegepygmy makes two vine spear attacks."
+					]
+				},
+				{
+					"name": "Vine Spear",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}7 ({@damage 1d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Dart",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 30/120 ft., one target. {@h}5 ({@damage 1d4 + 2}) piercing damage, plus 3 ({@damage 1d6}) poison damage. If the target is a creature, it must succeed a {@dc 14} Constitution saving throw.On a failed saving throw, it takes becomes {@condition poisoned} until the end of its next turn."
+					]
+				},
+				{
+					"name": "Pollen Cloud {@recharge 5}",
+					"entries": [
+						"Creatures that are not plants in a 10ft. radius of the vegepygmy must succeed a {@dc 14} Constitution saving throw. On a failed saving throw, creatures take 14({@dice 4d6}) poison damage and are {@condition poisoned} until the end of its next turn. On a successful saving throw, creatures take half damage and are not {@condition poisoned}."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW",
+				"THW"
+			],
+			"bonus": [
+				{
+					"name": "Plant Stride",
+					"entries": [
+						"As a bonus action, the vegepygmy can enter a Medium or larger plant and emerge 5ft. from another Medium or larger plant within 60ft. of its original location"
+					]
+				}
+			],
+			"tokenUrl": "sss",
+			"fluff": {
+				"entries": [
+					"{@link Vegepygmy Chieftain (Blighted)|https://www.gmbinder.com/share/-Mn0qCLWumFLaPWdZBvk} from {@link post|https://reddit.com/r/UnearthedArcana/comments/qq82cr/expanded_sentient_plants_by_sonixverselabs/} and this {@link archive| https://drive.google.com/drive/folders/1WYyA_tq2-L4P7g4ipM7uM2MZDgptNCo_}",
+					"{@b NOTE:} the document reflects the latest changes made to the document {@link Expanded Floral Compendium|https: //drive.google.com/file/d/1pf3VkLCE8JFtvPyRx2SvTujSsR3QSvpW/view?usp=sharing} always by {@i Sonixverse Labs}",
+					"Of all sapient forms of plant life, the vegepygmy is the smallest and most numerous. As with most species of plants,vegepygmies come in numerous varieties and temperaments.However, their intelligence is not to be underestimated as they more than make up for their diminutive stature by making use of their superior regeneration capable of fully healing them from the brink of death, their expert knowledge of the forest as well as their superior numbers.",
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Clever Hunters",
+								"entries": [
+									"Regardless of their temperament, vegepygmies make full use of their small size. Despite their diminutive stature, they are able to cover a lot of ground thanks to their ability to merge and reappear into nearby foliage. This allows them to be the perfect ambush hunters as they can continually harry their foes using grass-like darts to launch at their foes before fleeing deeper into the undergrowth. Thanks to their heightened regeneration, they can prove to be problematic to kill, as they can fully heal from all but the deadliest of wounds in a matter of seconds."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Fungal Hatred",
+								"entries": [
+									"Although vegepygmies have varying degrees of relations with one another, they all do share a common hatred for sentient fungi that seeming has existed for all of recorded history. Vegepygmies, as well as most other forms of sapient plants,thrive on the expansion of the forest and floral assimilation.However, my conids and other fungi are also driven by a similar motive, which often places them at odds with one another. Under most circumstances, this conflict serves as a check and balance to keep each force in check; however, it is often the responsibility of many druidic tribes to ensure this balance is not swayed lest one force gets out of control."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Blighted (Generic)",
+								"entries": [
+									"An unfortunate side effect of this conflict is the emergence of the blighted. The blighted can be best as a mutation that affects many sentient plants as a resistance against parasitic fungal swarms. Although the host managed to resist its effects, it warps the body and mind of the individual. As a resulted, the blighted are driven by a desire to consume both plant and fungal life."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Blighted",
+								"entries": [
+									"Blighted vegepygmies are despised by all of their kin. It is believed that blighted vegepygmies are the result of deviant mutations from those infected by blights and other fungal creatures. However, these mutations seemed to warp the mind of these creatures as well as their bodies, resulting in an insatiable hunger for plants and fungi alike.",
+									"However, this ravenous hunger did not warp their intelligence, as they are still just a cunning as their other kin.Under most circumstances, blighted vegepygmies will not attack humanoids unless threatened or if their territory is encroached. In fact, blighted vegepygmies tend to be more prone to work with humanoids, since often times they share a common enemy. Such deals usually enables the humanoids to deal with any problems associated with sentient plants,while the blighted can satisfy their ravenous hunger for sentient plants."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "sss"
+						}
+					}
+				]
+			}
 		}
 	]
 }
