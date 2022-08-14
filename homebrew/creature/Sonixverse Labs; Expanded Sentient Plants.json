@@ -6531,6 +6531,7 @@
 			"passive": 13,
 			"cr": "4",
 			"shortName": "Woad Template (Cinderbloom)",
+			"page": 13,
 			"senses": [
 				"tremorsense 30 ft.",
 				"blindsight 60 ft."
@@ -6758,6 +6759,7 @@
 			"passive": 14,
 			"cr": "9",
 			"shortName": "Woad titan template (Cinderbloom)",
+			"page": 13,
 			"senses": [
 				"tremorsense 30 ft.",
 				"blindsight 60 ft."
@@ -6996,6 +6998,7 @@
 			"passive": 13,
 			"cr": "4",
 			"shortName": "Woad Template (Winterbloom)",
+			"page": 13,
 			"senses": [
 				"tremorsense 30 ft.",
 				"blindsight 60 ft."
@@ -7229,6 +7232,7 @@
 			"passive": 14,
 			"cr": "9",
 			"shortName": "Woad titan template (Winterbloom)",
+			"page": 13,
 			"senses": [
 				"tremorsense 30 ft.",
 				"blindsight 60 ft."
@@ -7473,6 +7477,7 @@
 			"passive": 13,
 			"cr": "4",
 			"shortName": "Woad Template (Skulltrap)",
+			"page": 13,
 			"senses": [
 				"tremorsense 30 ft.",
 				"blindsight 60 ft."
@@ -7704,6 +7709,7 @@
 			"passive": 14,
 			"cr": "9",
 			"shortName": "Woad titan template (Skulltrap)",
+			"page": 13,
 			"senses": [
 				"tremorsense 30 ft.",
 				"blindsight 60 ft."
@@ -7946,6 +7952,7 @@
 			"passive": 13,
 			"cr": "3",
 			"shortName": "Woad Template (Blighted)",
+			"page": 13,
 			"senses": [
 				"tremorsense 30 ft.",
 				"blindsight 60 ft."
@@ -8170,6 +8177,7 @@
 			"passive": 14,
 			"cr": "8",
 			"shortName": "Woad titan template (Blighted)",
+			"page": 13,
 			"senses": [
 				"tremorsense 30 ft.",
 				"blindsight 60 ft."
@@ -8370,6 +8378,238 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Spriggan Template",
+			"size": [
+				"M"
+			],
+			"type": "plant",
+			"source": "SLESP",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d10 + 30",
+				"average": 85
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 18,
+			"dex": 17,
+			"con": 16,
+			"int": 15,
+			"wis": 18,
+			"cha": 18,
+			"passive": 17,
+			"cr": "8",
+			"shortName": "Spriggan Template",
+			"senses": [
+				"tremorsense 30 ft.",
+				"blindsight 60 ft."
+			],
+			"senseTags": [
+				"T",
+				"B"
+			],
+			"languages": [
+				"can understand Common but can't speak it",
+				"Druidic"
+			],
+			"languageTags": [
+				"C",
+				"CS",
+				"DU"
+			],
+			"skill": {
+				"stealth": "+9",
+				"nature": "+8",
+				"perception": "+7",
+				"survival": "+10"
+			},
+			"resist": [
+				"bludgeoning",
+				"piercing"
+			],
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"deafened",
+				"paralyzed"
+			],
+			"trait": [
+				{
+					"name": "Flammable",
+					"entries": [
+						"Whenever the spriggan takes fire damage, it catches a flame. While a flame, it takes 5 ({@damage 1d8}) fire damage at the start of each of its turns for one minute.It can use its action to put out the flames. However, while in this state, its attacks deal an additional 5 ({@damage 1d8}) fire damage for the duration."
+					]
+				},
+				{
+					"name": "Plant Camouflage",
+					"entries": [
+						"The spriggan has advantage onDexterity (Stealth) checks it makes in any terrain with ample obscuring plant life. It can use its bonus action to Hide while these conditions are met."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The spriggan regains 10 hit points at the start of its turn as long as has 1 hit point and it has not taken fire or necrotic damage on its previous turn. If it starts its turn in sunlight, it regains 20 hit points."
+					]
+				},
+				{
+					"name": "Forest Guardian",
+					"entries": [
+						"The spriggan has advantage on initiative checks while in forest terrain. While in the forest, it can ake ranged attacks or cast a spell while hidden without revealing its location."
+					]
+				},
+				{
+					"name": "Magical Attacks",
+					"entries": [
+						"The spriggan's attacks count as magical for the purpose of overcoming resistances and immunities."
+					]
+				},
+				{
+					"name": "False Appearance",
+					"entries": [
+						"While motionless, the spriggan is indistinguishable from as small tree"
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"N",
+				"P"
+			],
+			"traitTags": [
+				"False Appearance",
+				"Regeneration"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The spriggan is a 10th level spellcaster. its spellcasting ability is Wisdom (spell save {@dc 15}, +7 to hit with spell attacks). The spriggan has the following spells prepared."
+					],
+					"will": [
+						"{@spell commune with nature}",
+						"{@spell druidcraft}",
+						"{@spell mold earth|XGE}",
+						"{@spell speak with plants}"
+					],
+					"rest": {
+						"2": [
+							"{@spell awaken}",
+							"{@spell grasping vine}",
+							"{@spell greater restoration}",
+							"{@spell guardian of nature|XGE}",
+							"{@spell hallucinatory terrain}",
+							"{@spell wrath of nature|XGE}"
+						],
+						"3": [
+							"{@spell lesser restoration}",
+							"{@spell locate animals or plants}",
+							"{@spell plant growth}",
+							"{@spell spike growth}",
+							"{@spell web}"
+						],
+						"4": [
+							"{@spell cure wounds}",
+							"{@spell entangle}",
+							"{@spell hail of thorns}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"damageTagsSpell": [
+				"B",
+				"F",
+				"O",
+				"P",
+				"S"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The spriggan can make one spell attack andone splinterstaff attacks. It can a splinterstaff attack fora tetherbow."
+					]
+				},
+				{
+					"name": "Splinterstaff",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage, plus 5 ({@damage 2d4}) piercing damage. Creatures other than the spriggan within 5ft. of the target takes 5({@dice 2d4}) piercing damage."
+					]
+				},
+				{
+					"name": "Tetherbow",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 150/600 ft., one target. {@h}13 ({@damage 2d8 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Life Drain {@recharge 5}",
+					"entries": [
+						"One creature within 60ft. oft he spriggan must succeed a {@dc 15} Constitution saving throw. On a failed saving throw, creatures take 54 ({@damage 12d8}) necrotic damage and the spriggan can recover a number of hit points equal to half the damage dealt.",
+						"Upon a successful saving throw, creatures take half damage and are the spriggan does not regain any hit points."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"bonus": [
+				{
+					"name": "Plant Stride",
+					"entries": [
+						"As a bonus action, the spriggan can enter a large or larger plant and emerge 5ft. from another Large or larger plant within 60ft. of its original location."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Tree Merge",
+					"entries": [
+						"If the spriggan is within 5ft. of a Large orsmaller plant, it can use its reaction to merge into that plant whenever it is targeted with an attack or saving throw. This reaction occurs before the triggering effect and grants the spriggan total cover as it takes no damage. This effect only applies to the trigger attack or effect."
+					]
+				}
+			],
+			"tokenUrl": "sss",
+			"fluff": {
+				"entries": [
+					"{@link Spriggan Template|https://www.gmbinder.com/share/-Mn0qCLWumFLaPWdZBvk} from {@link post|https://reddit.com/r/UnearthedArcana/comments/qq82cr/expanded_sentient_plants_by_sonixverselabs/} and this {@link archive| https://drive.google.com/drive/folders/1WYyA_tq2-L4P7g4ipM7uM2MZDgptNCo_}",
+					"{@b NOTE:} the document reflects the latest changes made to the document {@link Expanded Floral Compendium|https: //drive.google.com/file/d/1pf3VkLCE8JFtvPyRx2SvTujSsR3QSvpW/view?usp=sharing} always by {@i Sonixverse Labs}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "sss"
+						}
+					}
+				]
+			},
+			"page": 16
 		}
 	]
 }
