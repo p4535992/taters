@@ -201,7 +201,7 @@
 						"type": "section",
 						"entries": [
 							{
-								"name": "Flytrap",
+								"name": "Flytrap/Mantrap",
 								"entries": [
 									"The flytrap vegepgymy is notorious for its oversized maw and equally oversized appetites. These little monsters rampage through the forest in small mobs of about 10(4d4)individuals their prey. Such mobs are often led by a single chieftain which drives them into a feeding frenzy.",
 									"Thankfully the vegepygmies never appear in groups any larger than these since they tend to be quite territorials towards other vegepymgies and often enter turf wars with their own kind and other breeds of vegepygmies."
@@ -486,7 +486,7 @@
 						"type": "section",
 						"entries": [
 							{
-								"name": "Flytrap",
+								"name": "Flytrap/Mantrap",
 								"entries": [
 									"The flytrap vegepgymy is notorious for its oversized maw and equally oversized appetites. These little monsters rampage through the forest in small mobs of about 10(4d4)individuals their prey. Such mobs are often led by a single chieftain which drives them into a feeding frenzy.",
 									"Thankfully the vegepygmies never appear in groups any larger than these since they tend to be quite territorials towards other vegepymgies and often enter turf wars with their own kind and other breeds of vegepygmies."
@@ -1007,6 +1007,341 @@
 								"entries": [
 									"Kelp vegepygmy's are one of the more dangerous breeds of vegepygmy. Unlike their other kin, they tend to reside primarily in the water, only staging terrestrial expeditions if food is scarce. They primarily reside in the tangled underwater forests of kelp using these colossal plants as a means of camouflage and entangling their prey.",
 									"Their favored tactic is form groups of 10 (4d4) to engage their enemy from a far flinging grass-like darts laced with a suffocating poison before merging into the kelp to reappear at another location."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "sss"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Vegepygmy Warrior (Flytrap/Mantrap)",
+			"size": [
+				"S"
+			],
+			"type": "plant",
+			"source": "SLESP",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d6 + 2",
+				"average": 9
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 7,
+			"dex": 14,
+			"con": 13,
+			"int": 11,
+			"wis": 11,
+			"cha": 12,
+			"passive": 12,
+			"cr": "1/4",
+			"shortName": "Vegepygmy Warrior (Flytrap/Mantrap)",
+			"page": 4,
+			"senses": [
+				"tremorsense 30 ft.",
+				"blindsight 60 ft."
+			],
+			"senseTags": [
+				"T",
+				"B"
+			],
+			"languages": [
+				"Vegepygmy",
+				"Sylvan"
+			],
+			"languageTags": [
+				"OTH",
+				"S"
+			],
+			"skill": {
+				"perception": "+2",
+				"stealth": "+6"
+			},
+			"conditionImmune": [
+				"blinded",
+				"deafened"
+			],
+			"resist": [
+				"psychic"
+			],
+			"trait": [
+				{
+					"name": "Plant Stride",
+					"entries": [
+						"As a bonus action, the vegepygmy can enter a Medium or larger plant and emerge 5ft. from anotherMedium or larger plant within 60ft. of its original location."
+					]
+				},
+				{
+					"name": "Flammable",
+					"entries": [
+						"Whenever the vegepygmy takes fire damage,it catches aflame. While aflame, it takes 5 ({@dice 1d8}) fire damage at the start of each of its turns for one minute. It can use its action to put out the flames. However, while in this state, its attacks deal an additional 5 ({@dice 1d8}) fire damage for the duration."
+					]
+				},
+				{
+					"name": "Plant Camouflage",
+					"entries": [
+						"The vegepygmy has advantage onDexterity (Stealth) checks it makes in any terrain with ample obscuring plant life. It can use its bonus action toHide while these conditions are met."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The vegepygmy regains 5 hit points at the start of its turn. If it takes fire or necrotic damage, this trait doesn't function at the start of the vegepygmy's next urn. The vegepyg my starts its turn with 0 hit points it doesn't benefit from regeneration. If it starts its turn in sunlight, it regains 10 hit points at the start of each of its turns."
+					]
+				},
+				{
+					"name": "Devourer",
+					"entries": [
+						"When the vegepygmy makes an attack against a beast or humanoid, it can make one additional bite attack"
+					]
+				}
+			],
+			"traitTags": [
+				"Regeneration"
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Dart",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 30/120 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage. If the target is a creature, it must succeed a {@dc 11} Constitution saving throw. On a failed saving throw, it takes 7 ({@dice 2d6}) poison and becomes {@condition poisoned} until the end of its next turn. Ona successful saving throw, it takes half damage and is not {@condition poisoned}."
+					]
+				},
+				{
+					"name": "Frenzy Spore{@recharge 5}",
+					"entries": [
+						"Plants within a 10ft. radius of the vegepygmy have advantage on attack rolls until the end of its next turn. When it takes the attack action, it can make an additional bite attack asa bonus action."
+					]
+				}
+			],
+			"damageTags": [
+				"F",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"bonus": [
+				{
+					"name": "Plant Stride",
+					"entries": [
+						"As a bonus action, the vegepygmy can enter a Medium or larger plant and emerge 5ft. from anotherMedium or larger plant within 60ft. of its original location."
+					]
+				}
+			],
+			"tokenUrl": "sss",
+			"fluff": {
+				"entries": [
+					"{@link Vegepygmy Warrior (Flytrap/Mantrap)|https://www.gmbinder.com/share/-Mn0qCLWumFLaPWdZBvk} from {@link post|https://reddit.com/r/UnearthedArcana/comments/qq82cr/expanded_sentient_plants_by_sonixverselabs/} and this {@link archive| https://drive.google.com/drive/folders/1WYyA_tq2-L4P7g4ipM7uM2MZDgptNCo_}",
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Flytrap/Mantrap",
+								"entries": [
+									"The flytrap vegepgymy is notorious for its oversized maw and equally oversized appetites. These little monsters rampage through the forest in small mobs of about 10(4d4)individuals their prey. Such mobs are often led by a single chieftain which drives them into a feeding frenzy.",
+									"Thankfully the vegepygmies never appear in groups any larger than these since they tend to be quite territorials towards other vegepymgies and often enter turf wars with their own kind and other breeds of vegepygmies."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "sss"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Vegepygmy Chieftain (Flytrap/Mantrap)",
+			"size": [
+				"S"
+			],
+			"type": "plant",
+			"source": "SLESP",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d6 + 24",
+				"average": 45
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 18,
+			"int": 16,
+			"wis": 11,
+			"cha": 17,
+			"passive": 12,
+			"cr": "3",
+			"shortName": "Vegepygmy Chieftain (Flytrap/Mantrap)",
+			"page": 5,
+			"senses": [
+				"tremorsense 30 ft.",
+				"blindsight 60 ft."
+			],
+			"senseTags": [
+				"T",
+				"B"
+			],
+			"languages": [
+				"Vegepygmy",
+				"Sylvan"
+			],
+			"languageTags": [
+				"OTH",
+				"S"
+			],
+			"skill": {
+				"perception": "+2",
+				"stealth": "+6"
+			},
+			"conditionImmune": [
+				"blinded",
+				"deafened"
+			],
+			"resist": [
+				"psychic"
+			],
+			"trait": [
+				{
+					"name": "Plant Stride",
+					"entries": [
+						"As a bonus action, the vegepygmy can enter a Medium or larger plant and emerge 5ft. from another Medium or larger plant within 60ft. of its original location."
+					]
+				},
+				{
+					"name": "Flammable",
+					"entries": [
+						"Whenever the vegepygmy takes fire damage,it catches aflame. While aflame, it takes 5 ({@dice 1d8}) fire damage at the start of each of its turns for one minute. It can use its action to put out the flames. However, while in this state, its attacks deal an additional 5 ({@dice 1d8}) fire damage for the duration."
+					]
+				},
+				{
+					"name": "Plant Camouflage",
+					"entries": [
+						"Whenever the vegepygmy takes fire damage, it catches aflame. While aflame, it takes 5 ({@dice 1d8})fire damage at the start of each of its turns for one minute. It must use its action to put out the flames.However, while in this state, its attacks deal an additional5 ({@damage 1d8}) fire damage for the duration."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The vegepygmy regains 10 hit points at the start of its turn. If it takes fire or necrotic damage, this trait doesn't function at the start of the vegepygmy's next turn. The vegepygmy starts its turn with 0 hit points it doesn't benefit from regeneration. If it starts its turn in sunlight, it regains 20 hit points at the start of each of its turns."
+					]
+				},
+				{
+					"name": "Devourer",
+					"entries": [
+						"When the vegepygmy makes an attack against a beast or humanoid, it can make one additional bite attack"
+					]
+				}
+			],
+			"damageTags": [
+				"F",
+				"P"
+			],
+			"traitTags": [
+				"Regeneration"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The vegepygmy makes two vine spear attacks."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d10 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Dart",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 30/120 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage. On a failed saving throw, it takes 14 ({@dice 4d6}) poison and becomes {@condition poisoned} until the end of its next turn. On a successful saving throw, it takes half damage and is not {@condition poisoned}."
+					]
+				},
+				{
+					"name": "Frenzy Spore {@recharge 5}",
+					"entries": [
+						"Plants within a 10ft. radius of the vegepygmy have advantage on attack rolls until the end of its next turn. When it takes the attack action, it can make an additional bite attack asa bonus action."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"bonus": [
+				{
+					"name": "Plant Stride",
+					"entries": [
+						"As a bonus action, the vegepygmy can enter a Medium or larger plant and emerge 5ft. from another Medium or larger plant within 60ft. of its original location."
+					]
+				}
+			],
+			"tokenUrl": "sss",
+			"fluff": {
+				"entries": [
+					"{@link Vegepygmy Chieftain (Flytrap/Mantrap)|https://www.gmbinder.com/share/-Mn0qCLWumFLaPWdZBvk} from {@link post|https://reddit.com/r/UnearthedArcana/comments/qq82cr/expanded_sentient_plants_by_sonixverselabs/} and this {@link archive| https://drive.google.com/drive/folders/1WYyA_tq2-L4P7g4ipM7uM2MZDgptNCo_}",
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Flytrap/Mantrap",
+								"entries": [
+									"The flytrap vegepgymy is notorious for its oversized maw and equally oversized appetites. These little monsters rampage through the forest in small mobs of about 10(4d4)individuals their prey. Such mobs are often led by a single chieftain which drives them into a feeding frenzy.",
+									"Thankfully the vegepygmies never appear in groups any larger than these since they tend to be quite territorials towards other vegepymgies and often enter turf wars with their own kind and other breeds of vegepygmies."
 								]
 							}
 						]
