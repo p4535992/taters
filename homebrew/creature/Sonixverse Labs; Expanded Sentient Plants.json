@@ -4561,6 +4561,1451 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Woad Template (Needle)",
+			"size": [
+				"M"
+			],
+			"type": "plant",
+			"source": "SLESP",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 12",
+				"average": 39
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 14,
+			"con": 15,
+			"int": 9,
+			"wis": 13,
+			"cha": 13,
+			"passive": 13,
+			"cr": "4",
+			"shortName": "Woad Template (Needle)",
+			"senses": [
+				"tremorsense 30 ft.",
+				"blindsight 60 ft."
+			],
+			"senseTags": [
+				"T",
+				"B"
+			],
+			"languages": [
+				"can understand Common but can't speak it",
+				"Druidic"
+			],
+			"languageTags": [
+				"C",
+				"CS",
+				"DU"
+			],
+			"skill": {
+				"perception": "+3",
+				"stealth": "+6"
+			},
+			"conditionImmune": [
+				"blinded",
+				"deafened"
+			],
+			"trait": [
+				{
+					"name": "Flammable",
+					"entries": [
+						"Whenever the woad takes fire damage, it catches a flame. While a flame, it takes 5 ({@damage 1d8}) fire damage at the start of each of its turns for one minute. It can use its action to put out the flames. However while in this state, its attacks deal an additional 5 ({@damage 1d8}) fire damage for the duration."
+					]
+				},
+				{
+					"name": "Plant Camouflage",
+					"entries": [
+						"The woad has advantage on Dexterity (Stealth) checks it makes in any terrain with ample obscuring plant life. It can use its bonus action to Hide while these conditions are met."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The woad regains 5 hit points at the start of its turn as long as has 1 hit point and it has not taken fire or necrotic damage on its previous turn. If it starts its turn in sunlight, it regains 10 hit points."
+					]
+				},
+				{
+					"name": "Special Effects",
+					"entries": [
+						"Some woad variants that rely on a saving throw for itsPrimary DC or Melee DC:",
+						"{@b Primary DC:} The Primary DC for a woad is 12",
+						"{@b Melee DC:} The Melee DC for a woad is 13"
+					]
+				},
+				{
+					"name": "Sharpshooter",
+					"entries": [
+						"The woads ranged weapon attacks ignore range penalties and the benefit of half or three-fourth's cover."
+					]
+				},
+				{
+					"name": "Spiked Body",
+					"entries": [
+						"If a creature grapples or hits the woad with a melee attack while within 5ft. of it takes4({@dice 1d6}) piercing damage."
+					]
+				}
+			],
+			"damageTags": [
+				"F",
+				"P"
+			],
+			"traitTags": [
+				"Regeneration"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The woad can make two claw attacks"
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Needle Spike",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 120 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"bonus": [
+				{
+					"name": "Plant Stride",
+					"entries": [
+						"As a bonus action, the woad can enter a large or larger plant and emerge 5ft. from another large or larger plant within 60ft. of its original location,"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Tree Merge",
+					"entries": [
+						"If the woad is within 5ft. of a Large or smaller plant, it can use its reaction to merge into that plant whenever it is targeted with an attack or saving throw. This reaction occurs before the triggering effect and grants the woad total cover as it takes no damage.This effect only applies to the trigger attack or effect."
+					]
+				}
+			],
+			"tokenUrl": "sss",
+			"fluff": {
+				"entries": [
+					"{@link Woad Template (Needle)|https://www.gmbinder.com/share/-Mn0qCLWumFLaPWdZBvk} from {@link post|https://reddit.com/r/UnearthedArcana/comments/qq82cr/expanded_sentient_plants_by_sonixverselabs/} and this {@link archive| https://drive.google.com/drive/folders/1WYyA_tq2-L4P7g4ipM7uM2MZDgptNCo_}",
+					"{@b NOTE:} the document reflects the latest changes made to the document {@link Expanded Floral Compendium|https: //drive.google.com/file/d/1pf3VkLCE8JFtvPyRx2SvTujSsR3QSvpW/view?usp=sharing} always by {@i Sonixverse Labs}",
+					"Woads are the much larger and more dangerous relatives of the vegepygmy. Woads as a whole tend to be fiercely protective of their Woodland homes, which often places the mat odds with many humanoid civilizations, where in interactions between both species are wary at best.",
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Woad Society",
+								"entries": [
+									"Woad civilizations are just as diverse as that of humanoids, with a wide array of rather unique customs and agendas. In general, they tend to be rather untrustworthy of humanoids but have been known to forge alliances with local druidic communities, working together to protect their home."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Woad Tactics",
+								"entries": [
+									"Just like their smaller relatives, woads have the unique ability to merge and reappear in nearby plant life. This makes them extremely hard to fight or track, as they will prefer to slowly wear down their opponent using a series of ambush tactics."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Ancient Rivalry",
+								"entries": [
+									"Regardless of their location, woads share a disdain for sentient fungi such as myconids and blights, resulting in numerous conflicts. To fully understand this ancient rivalry, it is best not to view it as a centuries long conflict. Instead, it is more appropriate to view both sides as opposing forces of nature. At their very core, both woads and blights seek to spread their form of life, whether it be through vibrant forests or spore filled fields of fungi. Whenever these two front collide encroach the domain it results in a powerful conflict capable of warping entire ecosystems."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Woad Titan",
+								"entries": [
+									"The most ancient of all woads can transform into a woad titan. Because of their somewhat similar size and appearance, they are confused to be treants. However, the primary thing that sets woad titans apart is their inability to assume the appearance of a normal tree.",
+									"These colossal entities are the largest and most powerful of their kin. However, their colossal size and strength is not their only advantage. Due to the intertwined life force of most plants, a single woad titan is capable of transporting legions of vegepymies and woads to their aid thanks to their plant stride ability."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Needle Woads",
+								"entries": [
+									"Needle woads are one of the more common of all of their kin.They are easily recognizable thanks to their bark-like skin covered with an array of thorny vines.",
+									"Much like twig vegepygmy, needle woads are capable of creating feats of engineering creating massive wooden fortresses. They are created elaborate wooden contraptions to defend their homes and to entrap intruders."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "sss"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Woad titan template (Needle)",
+			"size": [
+				"H"
+			],
+			"type": "plant",
+			"source": "SLESP",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d12 + 54",
+				"average": 112
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 22,
+			"dex": 9,
+			"con": 22,
+			"int": 9,
+			"wis": 13,
+			"cha": 13,
+			"passive": 14,
+			"cr": "9",
+			"shortName": "Woad titan template (Needle)",
+			"senses": [
+				"tremorsense 30 ft.",
+				"blindsight 60 ft."
+			],
+			"senseTags": [
+				"T",
+				"B"
+			],
+			"languages": [
+				"can understand Common but can't speak it",
+				"Druidic"
+			],
+			"languageTags": [
+				"C",
+				"CS",
+				"DU"
+			],
+			"skill": {
+				"perception": "+4",
+				"stealth": "+8"
+			},
+			"conditionImmune": [
+				"blinded",
+				"deafened"
+			],
+			"trait": [
+				{
+					"name": "Flammable",
+					"entries": [
+						"Whenever the woad titan takes fire damage,it catches aflame. While aflame, it takes 5 ({@dice 1d8}) fire damage at the start of each of its turns for one minute.It can use its action to put out the flames. However,while in this state, its attacks deal an additional 5 ({@dice 1d8})fire damage for the duration."
+					]
+				},
+				{
+					"name": "Plant Camouflage",
+					"entries": [
+						"The woad titan has advantage onDexterity (Stealth) checks it makes in any terrain with ample obscuring plant life. It can use its bonus action to Hide while these conditions are met."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The woad titan regains 10 hit points at the start of its turn as long as has 1 hit point and it has not taken fire or necrotic damage on its previous turn. If its tarts its turn in sunlight, it regains 20 hit points."
+					]
+				},
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"The woad titan deals double damage to buildings and objects"
+					]
+				},
+				{
+					"name": "Special Effects",
+					"entries": [
+						"Some woad titan variants that rely on a saving throw for its Primary DC or Melee DC:",
+						"{@b Primary DC:} The Primary DC for a woad titan is 17",
+						"{@b Melee DC:} The Melee DC for a woad titan is 17"
+					]
+				},
+				{
+					"name": "Sharpshooter",
+					"entries": [
+						"The woads ranged weapon attacks ignore range penalties and the benefit of half or three-fourth's cover."
+					]
+				},
+				{
+					"name": "Spiked Body",
+					"entries": [
+						"If a creature grapples or hits the woad with a melee attack while within 5ft. of it takes4({@dice 1d6}) piercing damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Regeneration",
+				"Siege Monster"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The woad titan can make two spiked slam attacks"
+					]
+				},
+				{
+					"name": "Spiked Slam",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}13 ({@damage 2d6 + 6}) bludgeoning damage, plus 7 ({@damage 2d6}) piercing damage."
+					]
+				},
+				{
+					"name": "Brambled Boulder",
+					"entries": [
+						"{@atk rw} {@hit 9} to hit, range 60/240 ft., one target. {@h}20 ({@damage 4d6 + 6}) bludgeoning damage, plus 14 ({@damage 4d6}) piercing damage. Creatures must succeed a {@dc 17} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Needle Spike",
+					"entries": [
+						"{@atk rw} {@hit 9} to hit, range 120 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Impaling Spike",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 480 ft., one target. {@h}34 ({@damage 8d6 + 6}) piercing damage, plus 14 ({@damage 4d6}) piercing damage. Creatures must succeed a {@dc 17} Strength saving throw or be knocked {@condition prone} and {@condition restrained}. While restained inthis manner, the creature must use its action to succeed a {@dc 17} Strength saving throw to try itself from the gigantic spike."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"prone",
+				"restrained"
+			],
+			"reaction": [
+				{
+					"name": "Tree Merge",
+					"entries": [
+						"If the woad is within 5ft. of a Gargantuan or smaller plant, it can use its reaction to merge into that plant whenever it is targeted with an attack or saving throw. This reaction occurs before the triggering effect and grants the woad total cover as it takes no damage.This effect only applies to the trigger attack or effect."
+					]
+				}
+			],
+			"tokenUrl": "sss",
+			"fluff": {
+				"entries": [
+					"{@link Woad titan template (Needle)|https://www.gmbinder.com/share/-Mn0qCLWumFLaPWdZBvk} from {@link post|https://reddit.com/r/UnearthedArcana/comments/qq82cr/expanded_sentient_plants_by_sonixverselabs/} and this {@link archive| https://drive.google.com/drive/folders/1WYyA_tq2-L4P7g4ipM7uM2MZDgptNCo_}",
+					"{@b NOTE:} the document reflects the latest changes made to the document {@link Expanded Floral Compendium|https: //drive.google.com/file/d/1pf3VkLCE8JFtvPyRx2SvTujSsR3QSvpW/view?usp=sharing} always by {@i Sonixverse Labs}",
+					"Woads are the much larger and more dangerous relatives of the vegepygmy. Woads as a whole tend to be fiercely protective of their Woodland homes, which often places the mat odds with many humanoid civilizations, where in interactions between both species are wary at best.",
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Woad Society",
+								"entries": [
+									"Woad civilizations are just as diverse as that of humanoids, with a wide array of rather unique customs and agendas. In general, they tend to be rather untrustworthy of humanoids but have been known to forge alliances with local druidic communities, working together to protect their home."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Woad Tactics",
+								"entries": [
+									"Just like their smaller relatives, woads have the unique ability to merge and reappear in nearby plant life. This makes them extremely hard to fight or track, as they will prefer to slowly wear down their opponent using a series of ambush tactics."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Ancient Rivalry",
+								"entries": [
+									"Regardless of their location, woads share a disdain for sentient fungi such as myconids and blights, resulting in numerous conflicts. To fully understand this ancient rivalry, it is best not to view it as a centuries long conflict. Instead, it is more appropriate to view both sides as opposing forces of nature. At their very core, both woads and blights seek to spread their form of life, whether it be through vibrant forests or spore filled fields of fungi. Whenever these two front collide encroach the domain it results in a powerful conflict capable of warping entire ecosystems."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Woad Titan",
+								"entries": [
+									"The most ancient of all woads can transform into a woad titan. Because of their somewhat similar size and appearance, they are confused to be treants. However, the primary thing that sets woad titans apart is their inability to assume the appearance of a normal tree.",
+									"These colossal entities are the largest and most powerful of their kin. However, their colossal size and strength is not their only advantage. Due to the intertwined life force of most plants, a single woad titan is capable of transporting legions of vegepymies and woads to their aid thanks to their plant stride ability."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Needle Woads",
+								"entries": [
+									"Needle woads are one of the more common of all of their kin.They are easily recognizable thanks to their bark-like skin covered with an array of thorny vines.",
+									"Much like twig vegepygmy, needle woads are capable of creating feats of engineering creating massive wooden fortresses. They are created elaborate wooden contraptions to defend their homes and to entrap intruders."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "sss"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Woad Template (Wicker)",
+			"size": [
+				"M"
+			],
+			"type": "plant",
+			"source": "SLESP",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 12",
+				"average": 39
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 14,
+			"con": 15,
+			"int": 9,
+			"wis": 13,
+			"cha": 13,
+			"passive": 13,
+			"cr": "4",
+			"shortName": "Woad Template (Wicker)",
+			"senses": [
+				"tremorsense 30 ft.",
+				"blindsight 60 ft."
+			],
+			"senseTags": [
+				"T",
+				"B"
+			],
+			"languages": [
+				"can understand Common but can't speak it",
+				"Druidic"
+			],
+			"languageTags": [
+				"C",
+				"CS",
+				"DU"
+			],
+			"skill": {
+				"perception": "+3",
+				"stealth": "+4"
+			},
+			"resist": [
+				"bludgeoning",
+				"piercing"
+			],
+			"conditionImmune": [
+				"blinded",
+				"deafened"
+			],
+			"trait": [
+				{
+					"name": "Flammable",
+					"entries": [
+						"Whenever the woad takes fire damage, it catches a flame. While a flame, it takes 5 ({@damage 1d8}) fire damage at the start of each of its turns for one minute. It can use its action to put out the flames. However while in this state, its attacks deal an additional 5 ({@damage 1d8}) fire damage for the duration."
+					]
+				},
+				{
+					"name": "Plant Camouflage",
+					"entries": [
+						"The woad has advantage on Dexterity (Stealth) checks it makes in any terrain with ample obscuring plant life. It can use its bonus action to Hide while these conditions are met."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The woad regains 5 hit points at the start of its turn as long as has 1 hit point and it has not taken fire or necrotic damage on its previous turn. If it starts its turn in sunlight, it regains 10 hit points."
+					]
+				},
+				{
+					"name": "Special Effects",
+					"entries": [
+						"Some woad variants that rely on a saving throw for itsPrimary DC or Melee DC:",
+						"{@b Primary DC:} The Primary DC for a woad is 12",
+						"{@b Melee DC:} The Melee DC for a woad is 13"
+					]
+				},
+				{
+					"name": "Blazing Fury",
+					"entries": [
+						"When the woad takes fire damage, it has advantage on attack rolls and can make an additional claw attack when it takes the attack until the end of its next turn."
+					]
+				},
+				{
+					"name": "Smoking Chaff",
+					"entries": [
+						"While the woad is ablaze, it emits a cloud of smoke in a 10ft. radius around it obscuring the sight of creatures within 10ft. of it.",
+						"Creatures that first enter or start within range of this cloud must succeed a Constitution saving throw equal to the Woad's Primary DC until the end of its next turn."
+					]
+				},
+				{
+					"name": "Black Smoke",
+					"entries": [
+						"Creatures {@condition poisoned} by the woad are considered {@condition incapacitated} and cannot speak, breathe,and is considered to be suffocating."
+					]
+				},
+				{
+					"name": "Floral Merge",
+					"entries": [
+						"While obscured in ample plant camouflage, the woad counts as {@condition invisible} to creature that rely on vision to perceive it."
+					]
+				}
+			],
+			"damageTags": [
+				"F",
+				"P"
+			],
+			"traitTags": [
+				"Regeneration"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The woad can make two claw attacks"
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 3}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"bonus": [
+				{
+					"name": "Plant Stride",
+					"entries": [
+						"As a bonus action, the woad can enter a large or larger plant and emerge 5ft. from another large or larger plant within 60ft. of its original location,"
+					]
+				},
+				{
+					"name": "Grass Glide",
+					"entries": [
+						"As a bonus action, the woad can teleport to another spot it can see within 60ft. Its final destination must be covered in ample plant life."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Tree Merge",
+					"entries": [
+						"If the woad is within 5ft. of a Large or smaller plant, it can use its reaction to merge into that plant whenever it is targeted with an attack or saving throw. This reaction occurs before the triggering effect and grants the woad total cover as it takes no damage.This effect only applies to the trigger attack or effect."
+					]
+				}
+			],
+			"tokenUrl": "sss",
+			"fluff": {
+				"entries": [
+					"{@link Woad Template (Wicker)|https://www.gmbinder.com/share/-Mn0qCLWumFLaPWdZBvk} from {@link post|https://reddit.com/r/UnearthedArcana/comments/qq82cr/expanded_sentient_plants_by_sonixverselabs/} and this {@link archive| https://drive.google.com/drive/folders/1WYyA_tq2-L4P7g4ipM7uM2MZDgptNCo_}",
+					"{@b NOTE:} the document reflects the latest changes made to the document {@link Expanded Floral Compendium|https: //drive.google.com/file/d/1pf3VkLCE8JFtvPyRx2SvTujSsR3QSvpW/view?usp=sharing} always by {@i Sonixverse Labs}",
+					"Woads are the much larger and more dangerous relatives of the vegepygmy. Woads as a whole tend to be fiercely protective of their Woodland homes, which often places the mat odds with many humanoid civilizations, where in interactions between both species are wary at best.",
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Woad Society",
+								"entries": [
+									"Woad civilizations are just as diverse as that of humanoids, with a wide array of rather unique customs and agendas. In general, they tend to be rather untrustworthy of humanoids but have been known to forge alliances with local druidic communities, working together to protect their home."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Woad Tactics",
+								"entries": [
+									"Just like their smaller relatives, woads have the unique ability to merge and reappear in nearby plant life. This makes them extremely hard to fight or track, as they will prefer to slowly wear down their opponent using a series of ambush tactics."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Ancient Rivalry",
+								"entries": [
+									"Regardless of their location, woads share a disdain for sentient fungi such as myconids and blights, resulting in numerous conflicts. To fully understand this ancient rivalry, it is best not to view it as a centuries long conflict. Instead, it is more appropriate to view both sides as opposing forces of nature. At their very core, both woads and blights seek to spread their form of life, whether it be through vibrant forests or spore filled fields of fungi. Whenever these two front collide encroach the domain it results in a powerful conflict capable of warping entire ecosystems."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Woad Titan",
+								"entries": [
+									"The most ancient of all woads can transform into a woad titan. Because of their somewhat similar size and appearance, they are confused to be treants. However, the primary thing that sets woad titans apart is their inability to assume the appearance of a normal tree.",
+									"These colossal entities are the largest and most powerful of their kin. However, their colossal size and strength is not their only advantage. Due to the intertwined life force of most plants, a single woad titan is capable of transporting legions of vegepymies and woads to their aid thanks to their plant stride ability."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Wicker Woads",
+								"entries": [
+									"Whereas many woads make their homes in dense forests,wicker woads find themselves at home in open plains of tall grasses. Their appearance resembles a slightly humanoid form composed of writhing masses of grass. In fact, their appearance is often confused with that of an animated scarecrow.",
+									"In general, wicker woads tend to be much more nomadic than their other kin. Because of this, wicker woads rarely have much interaction with humanoids. However, they can prove to be quite a threat to those living on the frontier, as wicker woads have been known to come together to attack farmers or settlements that seem to expanding into the open plains where they live.",
+									"Since they are especially adapted to vanishing into the tall grass, the first resort to combat these creatures is to use fire to force them out of hiding. However, fire sends them into a berserk fury as they immediately seek to destroy the source of the flame."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "sss"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Woad titan template (Wicker)",
+			"size": [
+				"H"
+			],
+			"type": "plant",
+			"source": "SLESP",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d12 + 54",
+				"average": 112
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 22,
+			"dex": 9,
+			"con": 22,
+			"int": 9,
+			"wis": 13,
+			"cha": 13,
+			"passive": 14,
+			"cr": "9",
+			"shortName": "Woad titan template (Wicker)",
+			"senses": [
+				"tremorsense 30 ft.",
+				"blindsight 60 ft."
+			],
+			"senseTags": [
+				"T",
+				"B"
+			],
+			"languages": [
+				"can understand Common but can't speak it",
+				"Druidic"
+			],
+			"languageTags": [
+				"C",
+				"CS",
+				"DU"
+			],
+			"skill": {
+				"perception": "+4",
+				"stealth": "+8"
+			},
+			"resist": [
+				"bludgeoning",
+				"piercing"
+			],
+			"conditionImmune": [
+				"blinded",
+				"deafened"
+			],
+			"trait": [
+				{
+					"name": "Flammable",
+					"entries": [
+						"Whenever the woad titan takes fire damage,it catches aflame. While aflame, it takes 5 ({@dice 1d8}) fire damage at the start of each of its turns for one minute.It can use its action to put out the flames. However,while in this state, its attacks deal an additional 5 ({@dice 1d8})fire damage for the duration."
+					]
+				},
+				{
+					"name": "Plant Camouflage",
+					"entries": [
+						"The woad titan has advantage onDexterity (Stealth) checks it makes in any terrain with ample obscuring plant life. It can use its bonus action to Hide while these conditions are met."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The woad titan regains 10 hit points at the start of its turn as long as has 1 hit point and it has not taken fire or necrotic damage on its previous turn. If its tarts its turn in sunlight, it regains 20 hit points."
+					]
+				},
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"The woad titan deals double damage to buildings and objects"
+					]
+				},
+				{
+					"name": "Special Effects",
+					"entries": [
+						"Some woad titan variants that rely on a saving throw for its Primary DC or Melee DC:",
+						"{@b Primary DC:} The Primary DC for a woad titan is 17",
+						"{@b Melee DC:} The Melee DC for a woad titan is 17"
+					]
+				},
+				{
+					"name": "Blazing Fury",
+					"entries": [
+						"When the woad takes fire damage, it has advantage on attack rolls and can make an additional claw attack when it takes the attack until the end of its next turn."
+					]
+				},
+				{
+					"name": "Smoking Chaff",
+					"entries": [
+						"While the woad is ablaze, it emits a cloud of smoke in a 10ft. radius around it obscuring the sight of creatures within 10ft. of it.",
+						"Creatures that first enter or start within range of this cloud must succeed a Constitution saving throw equal to the Woad's Primary DC until the end of its next turn."
+					]
+				},
+				{
+					"name": "Black Smoke",
+					"entries": [
+						"Creatures {@condition poisoned} by the woad are considered {@condition incapacitated} and cannot speak, breathe,and is considered to be suffocating."
+					]
+				},
+				{
+					"name": "Floral Merge",
+					"entries": [
+						"While obscured in ample plant camouflage, the woad counts as {@condition invisible} to creature that rely on vision to perceive it."
+					]
+				}
+			],
+			"traitTags": [
+				"Regeneration",
+				"Siege Monster"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The woad titan can make two spiked slam attacks"
+					]
+				},
+				{
+					"name": "Spiked Slam",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}13 ({@damage 2d6 + 6}) bludgeoning damage, plus 7 ({@damage 2d6}) piercing damage."
+					]
+				},
+				{
+					"name": "Brambled Boulder",
+					"entries": [
+						"{@atk rw} {@hit 9} to hit, range 60/240 ft., one target. {@h}20 ({@damage 4d6 + 6}) bludgeoning damage, plus 14 ({@damage 4d6}) piercing damage. Creatures must succeed a {@dc 17} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Grass Glide",
+					"entries": [
+						"As a bonus action, the woad can teleport to another spot it can see within 60ft. Its final destination must be covered in ample plant life."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"reaction": [
+				{
+					"name": "Tree Merge",
+					"entries": [
+						"If the woad is within 5ft. of a Gargantuan or smaller plant, it can use its reaction to merge into that plant whenever it is targeted with an attack or saving throw. This reaction occurs before the triggering effect and grants the woad total cover as it takes no damage.This effect only applies to the trigger attack or effect."
+					]
+				}
+			],
+			"tokenUrl": "sss",
+			"fluff": {
+				"entries": [
+					"{@link Woad titan template (Wicker)|https://www.gmbinder.com/share/-Mn0qCLWumFLaPWdZBvk} from {@link post|https://reddit.com/r/UnearthedArcana/comments/qq82cr/expanded_sentient_plants_by_sonixverselabs/} and this {@link archive| https://drive.google.com/drive/folders/1WYyA_tq2-L4P7g4ipM7uM2MZDgptNCo_}",
+					"{@b NOTE:} the document reflects the latest changes made to the document {@link Expanded Floral Compendium|https: //drive.google.com/file/d/1pf3VkLCE8JFtvPyRx2SvTujSsR3QSvpW/view?usp=sharing} always by {@i Sonixverse Labs}",
+					"Woads are the much larger and more dangerous relatives of the vegepygmy. Woads as a whole tend to be fiercely protective of their Woodland homes, which often places the mat odds with many humanoid civilizations, where in interactions between both species are wary at best.",
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Woad Society",
+								"entries": [
+									"Woad civilizations are just as diverse as that of humanoids, with a wide array of rather unique customs and agendas. In general, they tend to be rather untrustworthy of humanoids but have been known to forge alliances with local druidic communities, working together to protect their home."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Woad Tactics",
+								"entries": [
+									"Just like their smaller relatives, woads have the unique ability to merge and reappear in nearby plant life. This makes them extremely hard to fight or track, as they will prefer to slowly wear down their opponent using a series of ambush tactics."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Ancient Rivalry",
+								"entries": [
+									"Regardless of their location, woads share a disdain for sentient fungi such as myconids and blights, resulting in numerous conflicts. To fully understand this ancient rivalry, it is best not to view it as a centuries long conflict. Instead, it is more appropriate to view both sides as opposing forces of nature. At their very core, both woads and blights seek to spread their form of life, whether it be through vibrant forests or spore filled fields of fungi. Whenever these two front collide encroach the domain it results in a powerful conflict capable of warping entire ecosystems."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Woad Titan",
+								"entries": [
+									"The most ancient of all woads can transform into a woad titan. Because of their somewhat similar size and appearance, they are confused to be treants. However, the primary thing that sets woad titans apart is their inability to assume the appearance of a normal tree.",
+									"These colossal entities are the largest and most powerful of their kin. However, their colossal size and strength is not their only advantage. Due to the intertwined life force of most plants, a single woad titan is capable of transporting legions of vegepymies and woads to their aid thanks to their plant stride ability."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Wicker Woads",
+								"entries": [
+									"Whereas many woads make their homes in dense forests,wicker woads find themselves at home in open plains of tall grasses. Their appearance resembles a slightly humanoid form composed of writhing masses of grass. In fact, their appearance is often confused with that of an animated scarecrow.",
+									"In general, wicker woads tend to be much more nomadic than their other kin. Because of this, wicker woads rarely have much interaction with humanoids. However, they can prove to be quite a threat to those living on the frontier, as wicker woads have been known to come together to attack farmers or settlements that seem to expanding into the open plains where they live.",
+									"Since they are especially adapted to vanishing into the tall grass, the first resort to combat these creatures is to use fire to force them out of hiding. However, fire sends them into a berserk fury as they immediately seek to destroy the source of the flame."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "sss"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Woad Template (Vine)",
+			"size": [
+				"M"
+			],
+			"type": "plant",
+			"source": "SLESP",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 12",
+				"average": 39
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 17,
+			"dex": 14,
+			"con": 15,
+			"int": 9,
+			"wis": 13,
+			"cha": 13,
+			"passive": 13,
+			"cr": "3",
+			"shortName": "Woad Template (Vine)",
+			"senses": [
+				"tremorsense 30 ft.",
+				"blindsight 60 ft."
+			],
+			"senseTags": [
+				"T",
+				"B"
+			],
+			"languages": [
+				"can understand Common but can't speak it",
+				"Druidic"
+			],
+			"languageTags": [
+				"C",
+				"CS",
+				"DU"
+			],
+			"skill": {
+				"perception": "+3",
+				"stealth": "+6"
+			},
+			"conditionImmune": [
+				"blinded",
+				"deafened"
+			],
+			"trait": [
+				{
+					"name": "Flammable",
+					"entries": [
+						"Whenever the woad takes fire damage, it catches a flame. While a flame, it takes 5 ({@damage 1d8}) fire damage at the start of each of its turns for one minute. It can use its action to put out the flames. However while in this state, its attacks deal an additional 5 ({@damage 1d8}) fire damage for the duration."
+					]
+				},
+				{
+					"name": "Plant Camouflage",
+					"entries": [
+						"The woad has advantage on Dexterity (Stealth) checks it makes in any terrain with ample obscuring plant life. It can use its bonus action to Hide while these conditions are met."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The woad regains 5 hit points at the start of its turn as long as has 1 hit point and it has not taken fire or necrotic damage on its previous turn. If it starts its turn in sunlight, it regains 10 hit points."
+					]
+				},
+				{
+					"name": "Special Effects",
+					"entries": [
+						"Some woad variants that rely on a saving throw for itsPrimary DC or Melee DC:",
+						"{@b Primary DC:} The Primary DC for a woad is 12",
+						"{@b Melee DC:} The Melee DC for a woad is 13"
+					]
+				},
+				{
+					"name": "Elongated Limbs",
+					"entries": [
+						"The woad's melee weapon attack have an increased reach of 5ft."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The woad can climb difficult surfaces without needing to make an ability check"
+					]
+				},
+				{
+					"name": "Constriction",
+					"entries": [
+						"Creatures {@condition grappled} by the woad takes 9 ({@damage 2d8}) bludgeoning damage at the start of each of its turns, cannot speak, breathe, and is considered to be suffocated."
+					]
+				},
+				{
+					"name": "Vine Body",
+					"entries": [
+						"The woad can move through a space of at least 1 inch without squeezing."
+					]
+				},
+				{
+					"name": "Vine Grasp",
+					"entries": [
+						"When the woad hits a creature with a melee weapon attack, it is considered {@condition grappled} and {@condition restrained}. The escape DC is equal to the Woad's melee DC."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"P"
+			],
+			"traitTags": [
+				"Regeneration",
+				"Spider Climb"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The woad can make two claw attacks"
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 3}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"bonus": [
+				{
+					"name": "Plant Stride",
+					"entries": [
+						"As a bonus action, the woad can enter a large or larger plant and emerge 5ft. from another large or larger plant within 60ft. of its original location,"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Tree Merge",
+					"entries": [
+						"If the woad is within 5ft. of a Large or smaller plant, it can use its reaction to merge into that plant whenever it is targeted with an attack or saving throw. This reaction occurs before the triggering effect and grants the woad total cover as it takes no damage.This effect only applies to the trigger attack or effect."
+					]
+				}
+			],
+			"tokenUrl": "sss",
+			"fluff": {
+				"entries": [
+					"{@link Woad Template (Vine)|https://www.gmbinder.com/share/-Mn0qCLWumFLaPWdZBvk} from {@link post|https://reddit.com/r/UnearthedArcana/comments/qq82cr/expanded_sentient_plants_by_sonixverselabs/} and this {@link archive| https://drive.google.com/drive/folders/1WYyA_tq2-L4P7g4ipM7uM2MZDgptNCo_}",
+					"{@b NOTE:} the document reflects the latest changes made to the document {@link Expanded Floral Compendium|https: //drive.google.com/file/d/1pf3VkLCE8JFtvPyRx2SvTujSsR3QSvpW/view?usp=sharing} always by {@i Sonixverse Labs}",
+					"Woads are the much larger and more dangerous relatives of the vegepygmy. Woads as a whole tend to be fiercely protective of their Woodland homes, which often places the mat odds with many humanoid civilizations, where in interactions between both species are wary at best.",
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Woad Society",
+								"entries": [
+									"Woad civilizations are just as diverse as that of humanoids, with a wide array of rather unique customs and agendas. In general, they tend to be rather untrustworthy of humanoids but have been known to forge alliances with local druidic communities, working together to protect their home."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Woad Tactics",
+								"entries": [
+									"Just like their smaller relatives, woads have the unique ability to merge and reappear in nearby plant life. This makes them extremely hard to fight or track, as they will prefer to slowly wear down their opponent using a series of ambush tactics."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Ancient Rivalry",
+								"entries": [
+									"Regardless of their location, woads share a disdain for sentient fungi such as myconids and blights, resulting in numerous conflicts. To fully understand this ancient rivalry, it is best not to view it as a centuries long conflict. Instead, it is more appropriate to view both sides as opposing forces of nature. At their very core, both woads and blights seek to spread their form of life, whether it be through vibrant forests or spore filled fields of fungi. Whenever these two front collide encroach the domain it results in a powerful conflict capable of warping entire ecosystems."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Woad Titan",
+								"entries": [
+									"The most ancient of all woads can transform into a woad titan. Because of their somewhat similar size and appearance, they are confused to be treants. However, the primary thing that sets woad titans apart is their inability to assume the appearance of a normal tree.",
+									"These colossal entities are the largest and most powerful of their kin. However, their colossal size and strength is not their only advantage. Due to the intertwined life force of most plants, a single woad titan is capable of transporting legions of vegepymies and woads to their aid thanks to their plant stride ability."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Vine Woads",
+								"entries": [
+									"Vine woads are probably the second most common of all woads and are found primarily in very tropical environments.Vine woads are avid gardeners, even more than their other kin, growing extensive gardens of sentient carnivorous plants to decorate and guard their grottoes. To feed their pets, vine woads often travel in small hunting parties of 7 (2d6) members, searching for suitable prey.",
+									"Vine woads are typically quite amicable towards other sentient plants, often coming to their aid when they are threatened. They show a special affinity for vegepygmies,almost looking after them as if they were children."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "sss"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Woad titan template (Vine)",
+			"size": [
+				"H"
+			],
+			"type": "plant",
+			"source": "SLESP",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d12 + 54",
+				"average": 112
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 22,
+			"dex": 9,
+			"con": 22,
+			"int": 9,
+			"wis": 13,
+			"cha": 13,
+			"passive": 14,
+			"cr": "8",
+			"shortName": "Woad titan template (Vine)",
+			"senses": [
+				"tremorsense 30 ft.",
+				"blindsight 60 ft."
+			],
+			"senseTags": [
+				"T",
+				"B"
+			],
+			"languages": [
+				"can understand Common but can't speak it",
+				"Druidic"
+			],
+			"languageTags": [
+				"C",
+				"CS",
+				"DU"
+			],
+			"skill": {
+				"perception": "+4",
+				"stealth": "+8"
+			},
+			"conditionImmune": [
+				"blinded",
+				"deafened"
+			],
+			"trait": [
+				{
+					"name": "Flammable",
+					"entries": [
+						"Whenever the woad titan takes fire damage,it catches aflame. While aflame, it takes 5 ({@dice 1d8}) fire damage at the start of each of its turns for one minute.It can use its action to put out the flames. However,while in this state, its attacks deal an additional 5 ({@dice 1d8})fire damage for the duration."
+					]
+				},
+				{
+					"name": "Plant Camouflage",
+					"entries": [
+						"The woad titan has advantage onDexterity (Stealth) checks it makes in any terrain with ample obscuring plant life. It can use its bonus action to Hide while these conditions are met."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The woad titan regains 10 hit points at the start of its turn as long as has 1 hit point and it has not taken fire or necrotic damage on its previous turn. If its tarts its turn in sunlight, it regains 20 hit points."
+					]
+				},
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"The woad titan deals double damage to buildings and objects"
+					]
+				},
+				{
+					"name": "Special Effects",
+					"entries": [
+						"Some woad titan variants that rely on a saving throw for its Primary DC or Melee DC:",
+						"{@b Primary DC:} The Primary DC for a woad titan is 17",
+						"{@b Melee DC:} The Melee DC for a woad titan is 17"
+					]
+				},
+				{
+					"name": "Elongated Limbs",
+					"entries": [
+						"The woad's melee weapon attack have an increased reach of 5ft."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The woad can climb difficult surfaces without needing to make an ability check"
+					]
+				},
+				{
+					"name": "Constriction",
+					"entries": [
+						"Creatures {@condition grappled} by the woad takes 9 ({@damage 2d8}) bludgeoning damage at the start of each of its turns, cannot speak, breathe, and is considered to be suffocated."
+					]
+				},
+				{
+					"name": "Vine Body",
+					"entries": [
+						"The woad can move through a space of at least 1 inch without squeezing."
+					]
+				},
+				{
+					"name": "Vine Grasp",
+					"entries": [
+						"When the woad hits a creature with a melee weapon attack, it is considered {@condition grappled} and {@condition restrained}. The escape DC is equal to the Woad's melee DC."
+					]
+				}
+			],
+			"traitTags": [
+				"Regeneration",
+				"Siege Monster"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The woad titan can make two spiked slam attacks"
+					]
+				},
+				{
+					"name": "Spiked Slam",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}13 ({@damage 2d6 + 6}) bludgeoning damage, plus 7 ({@damage 2d6}) piercing damage."
+					]
+				},
+				{
+					"name": "Brambled Boulder",
+					"entries": [
+						"{@atk rw} {@hit 9} to hit, range 60/240 ft., one target. {@h}20 ({@damage 4d6 + 6}) bludgeoning damage, plus 14 ({@damage 4d6}) piercing damage. Creatures must succeed a {@dc 17} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"reaction": [
+				{
+					"name": "Tree Merge",
+					"entries": [
+						"If the woad is within 5ft. of a Gargantuan or smaller plant, it can use its reaction to merge into that plant whenever it is targeted with an attack or saving throw. This reaction occurs before the triggering effect and grants the woad total cover as it takes no damage.This effect only applies to the trigger attack or effect."
+					]
+				}
+			],
+			"tokenUrl": "sss",
+			"fluff": {
+				"entries": [
+					"{@link Woad titan template (Vine)|https://www.gmbinder.com/share/-Mn0qCLWumFLaPWdZBvk} from {@link post|https://reddit.com/r/UnearthedArcana/comments/qq82cr/expanded_sentient_plants_by_sonixverselabs/} and this {@link archive| https://drive.google.com/drive/folders/1WYyA_tq2-L4P7g4ipM7uM2MZDgptNCo_}",
+					"{@b NOTE:} the document reflects the latest changes made to the document {@link Expanded Floral Compendium|https: //drive.google.com/file/d/1pf3VkLCE8JFtvPyRx2SvTujSsR3QSvpW/view?usp=sharing} always by {@i Sonixverse Labs}",
+					"Woads are the much larger and more dangerous relatives of the vegepygmy. Woads as a whole tend to be fiercely protective of their Woodland homes, which often places the mat odds with many humanoid civilizations, where in interactions between both species are wary at best.",
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Woad Society",
+								"entries": [
+									"Woad civilizations are just as diverse as that of humanoids, with a wide array of rather unique customs and agendas. In general, they tend to be rather untrustworthy of humanoids but have been known to forge alliances with local druidic communities, working together to protect their home."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Woad Tactics",
+								"entries": [
+									"Just like their smaller relatives, woads have the unique ability to merge and reappear in nearby plant life. This makes them extremely hard to fight or track, as they will prefer to slowly wear down their opponent using a series of ambush tactics."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Ancient Rivalry",
+								"entries": [
+									"Regardless of their location, woads share a disdain for sentient fungi such as myconids and blights, resulting in numerous conflicts. To fully understand this ancient rivalry, it is best not to view it as a centuries long conflict. Instead, it is more appropriate to view both sides as opposing forces of nature. At their very core, both woads and blights seek to spread their form of life, whether it be through vibrant forests or spore filled fields of fungi. Whenever these two front collide encroach the domain it results in a powerful conflict capable of warping entire ecosystems."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Woad Titan",
+								"entries": [
+									"The most ancient of all woads can transform into a woad titan. Because of their somewhat similar size and appearance, they are confused to be treants. However, the primary thing that sets woad titans apart is their inability to assume the appearance of a normal tree.",
+									"These colossal entities are the largest and most powerful of their kin. However, their colossal size and strength is not their only advantage. Due to the intertwined life force of most plants, a single woad titan is capable of transporting legions of vegepymies and woads to their aid thanks to their plant stride ability."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Vine Woads",
+								"entries": [
+									"Vine woads are probably the second most common of all woads and are found primarily in very tropical environments.Vine woads are avid gardeners, even more than their other kin, growing extensive gardens of sentient carnivorous plants to decorate and guard their grottoes. To feed their pets, vine woads often travel in small hunting parties of 7 (2d6) members, searching for suitable prey.",
+									"Vine woads are typically quite amicable towards other sentient plants, often coming to their aid when they are threatened. They show a special affinity for vegepygmies,almost looking after them as if they were children."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "sss"
+						}
+					}
+				]
+			}
 		}
 	]
 }
