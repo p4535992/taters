@@ -128,6 +128,167 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Summon Dragon",
+			"level": 5,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You call forth a magical dragon spirit. It manifests in an occupied space that you can see within range. It takes the form of the dragon spirit stat block.",
+				{
+					"type": "table",
+					"caption": "Dragon spirit Stat Block",
+					"colLabels": [
+						"Spell Level",
+						"Creature"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"5th",
+							"{@creature dragon spirit (5th level)|KTSS}"
+						],
+						[
+							"6th",
+							"{@creature dragon spirit (6th level)|KTSS}"
+						],
+						[
+							"7th",
+							"{@creature dragon spirit (7th level)|KTSS}"
+						],
+						[
+							"8th",
+							"{@creature dragon spirit (8th level)|KTSS}"
+						],
+						[
+							"9th",
+							"{@creature dragon spirit (9th level)|KTSS}"
+						]
+					]
+				},
+				"When you cast the spell choose a color from the table below. The creature resembles a dragon of that color, which determines certain traits in its stat block based on its color as per the Dragon Table below where listed in traits in its stat block. The creature disappears when it drops to 0 hit points or when the spell ends.",
+				"The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. If obeys your verbal commands (no action required by you). If you don't issue any,it takes the Dodge action and uses its move to avoid danger.",
+				{
+					"type": "table",
+					"caption": "Dragon Table",
+					"colLabels": [
+						"Dragon",
+						"Elemental Damage",
+						"Breath Weapon Area"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-3 text-center",
+						"col-6 text-center"
+					],
+					"rows": [
+						[
+							"Black",
+							"Acid",
+							"5 by 60 ft. line (Dex. save)"
+						],
+						[
+							"Blue",
+							"Lightning",
+							"5 by 60 ft. line (Dex. save)"
+						],
+						[
+							"Brass",
+							"Fire",
+							"5 by 60 ft. line (Dex. save)"
+						],
+						[
+							"Bronze",
+							"Lightning",
+							"5 by 60 ft. line (Dex. save)"
+						],
+						[
+							"Copper",
+							"Acid",
+							"5 by 60 ft. line (Dex. save)"
+						],
+						[
+							"Gold",
+							"Fire",
+							"30 ft. cone (Dex. save)"
+						],
+						[
+							"Green",
+							"Poison",
+							"30 ft. cone (Con. save)"
+						],
+						[
+							"Red",
+							"Fire",
+							"30 ft. cone (Dex. save)"
+						],
+						[
+							"Silver",
+							"Cold",
+							"30 ft. cone (Con. save)"
+						],
+						[
+							"White",
+							"Cold",
+							"30 ft. cone (Con. save)"
+						]
+					]
+				}
+			],
+			"source": "KTSS",
+			"page": 2,
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a dragon statuette worth at least 500gp"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spellslot of 6th level or higher, use the higher level whenever the spell’s level appears in the stat block."
+					]
+				}
+			]
 		}
 	],
 	"monster": [
@@ -1734,6 +1895,7 @@
 			"passive": 11,
 			"cr": "0",
 			"shortName": "Archon Spirit Trumpet (2nd level)",
+			"page": 1,
 			"senses": [
 				"darkvision 60 ft."
 			],
@@ -1832,6 +1994,7 @@
 			"passive": 11,
 			"cr": "0",
 			"shortName": "Archon Spirit Trumpet (3rd level)",
+			"page": 1,
 			"senses": [
 				"darkvision 60 ft."
 			],
@@ -1930,6 +2093,7 @@
 			"passive": 11,
 			"cr": "0",
 			"shortName": "Archon Spirit Trumpet (4th level)",
+			"page": 1,
 			"senses": [
 				"darkvision 60 ft."
 			],
@@ -2028,6 +2192,7 @@
 			"passive": 11,
 			"cr": "0",
 			"shortName": "Archon Spirit Trumpet (5th level)",
+			"page": 1,
 			"senses": [
 				"darkvision 60 ft."
 			],
@@ -2126,6 +2291,7 @@
 			"passive": 11,
 			"cr": "0",
 			"shortName": "Archon Spirit Trumpet (6th level)",
+			"page": 1,
 			"senses": [
 				"darkvision 60 ft."
 			],
@@ -2224,6 +2390,7 @@
 			"passive": 11,
 			"cr": "0",
 			"shortName": "Archon Spirit Trumpet (7th level)",
+			"page": 1,
 			"senses": [
 				"darkvision 60 ft."
 			],
@@ -2322,6 +2489,7 @@
 			"passive": 11,
 			"cr": "0",
 			"shortName": "Archon Spirit Trumpet (8th level)",
+			"page": 1,
 			"senses": [
 				"darkvision 60 ft."
 			],
@@ -2420,6 +2588,7 @@
 			"passive": 11,
 			"cr": "0",
 			"shortName": "Archon Spirit Trumpet (9th level)",
+			"page": 1,
 			"senses": [
 				"darkvision 60 ft."
 			],
@@ -2471,6 +2640,586 @@
 			"fluff": {
 				"entries": [
 					"{@link Archon Spirit Trumpet (9th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Dragon Spirit Black (5th level)",
+			"size": [
+				"L"
+			],
+			"type": "dragon",
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "50"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 40,
+				"canHover": false
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 18,
+			"int": 14,
+			"wis": 16,
+			"cha": 18,
+			"passive": 13,
+			"cr": "0",
+			"shortName": "Dragon Spirit Black (5th level)",
+			"page": 2,
+			"senses": [
+				"blindsight 30 ft.",
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"languages": [
+				"Draconic",
+				"understands the languages you speak"
+			],
+			"languageTags": [
+				"DR"
+			],
+			"immune": [
+				"acid"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dragon makes a number of attacks equal to 2 (half this spell's level (rounded down)). It can only attack with its bite or tail once per turn."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) slashing damage, plus 5 ({@damage 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 15 ft., one target. {@h}7 ({@damage 1d8 + 3}) bludgeoning damage, plus 5 ({@damage 5}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}11 ({@damage 1d6 + 8}) piercing damage, plus 3 ({@damage 1d6}) acid damage."
+					]
+				},
+				{
+					"name": "Breath Weapon (1/Day)",
+					"entries": [
+						"The dragon exhales elemental power in its breath weapon area from the dragon table. Each creature in that area must make a Dexterity saving throw with a DC equal to your spellsave DC, taking {@damage 8d6} + the spell's level elemental damage on a failed save, or half as much damage ona successful one."
+					]
+				}
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Dragon Spirit Black (5th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Dragon Spirit Black (6th level)",
+			"size": [
+				"L"
+			],
+			"type": "dragon",
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "60"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 40,
+				"canHover": false
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 18,
+			"int": 14,
+			"wis": 16,
+			"cha": 18,
+			"passive": 13,
+			"cr": "0",
+			"shortName": "Dragon Spirit Black (6th level)",
+			"page": 2,
+			"senses": [
+				"blindsight 30 ft.",
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"languages": [
+				"Draconic",
+				"understands the languages you speak"
+			],
+			"languageTags": [
+				"DR"
+			],
+			"immune": [
+				"acid"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dragon makes a number of attacks equal to 3 (half this spell's level (rounded down)). It can only attack with its bite or tail once per turn."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) slashing damage, plus 6 ({@damage 6}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 15 ft., one target. {@h}7 ({@damage 1d8 + 3}) bludgeoning damage, plus 6 ({@damage 6}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}12 ({@damage 1d6 + 9}) piercing damage, plus 3 ({@damage 1d6}) acid damage."
+					]
+				},
+				{
+					"name": "Breath Weapon (1/Day)",
+					"entries": [
+						"The dragon exhales elemental power in its breath weapon area from the dragon table. Each creature in that area must make a Dexterity saving throw with a DC equal to your spellsave DC, taking {@damage 8d6} + the spell's level elemental damage on a failed save, or half as much damage ona successful one."
+					]
+				}
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Dragon Spirit Black (6th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Dragon Spirit Black (7th level)",
+			"size": [
+				"L"
+			],
+			"type": "dragon",
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "70"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 40,
+				"canHover": false
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 18,
+			"int": 14,
+			"wis": 16,
+			"cha": 18,
+			"passive": 13,
+			"cr": "0",
+			"shortName": "Dragon Spirit Black (7th level)",
+			"page": 2,
+			"senses": [
+				"blindsight 30 ft.",
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"languages": [
+				"Draconic",
+				"understands the languages you speak"
+			],
+			"languageTags": [
+				"DR"
+			],
+			"immune": [
+				"acid"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dragon makes a number of attacks equal to 3 (half this spell's level (rounded down)). It can only attack with its bite or tail once per turn."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) slashing damage, plus 7 ({@damage 7}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 15 ft., one target. {@h}7 ({@damage 1d8 + 3}) bludgeoning damage, plus 7 ({@damage 7}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}13 ({@damage 1d6 + 10}) piercing damage, plus 3 ({@damage 1d6}) acid damage."
+					]
+				},
+				{
+					"name": "Breath Weapon (1/Day)",
+					"entries": [
+						"The dragon exhales elemental power in its breath weapon area from the dragon table. Each creature in that area must make a Dexterity saving throw with a DC equal to your spellsave DC, taking {@damage 8d6} + the spell's level elemental damage on a failed save, or half as much damage ona successful one."
+					]
+				}
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Dragon Spirit Black (7th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Dragon Spirit Black (8th level)",
+			"size": [
+				"L"
+			],
+			"type": "dragon",
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "80"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 40,
+				"canHover": false
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 18,
+			"int": 14,
+			"wis": 16,
+			"cha": 18,
+			"passive": 13,
+			"cr": "0",
+			"shortName": "Dragon Spirit Black (8th level)",
+			"page": 2,
+			"senses": [
+				"blindsight 30 ft.",
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"languages": [
+				"Draconic",
+				"understands the languages you speak"
+			],
+			"languageTags": [
+				"DR"
+			],
+			"immune": [
+				"acid"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dragon makes a number of attacks equal to 3 (half this spell's level (rounded down)). It can only attack with its bite or tail once per turn."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) slashing damage, plus 8 ({@damage 8}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 15 ft., one target. {@h}7 ({@damage 1d8 + 3}) bludgeoning damage, plus 8 ({@damage 8}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}14 ({@damage 1d6 + 11}) piercing damage, plus 3 ({@damage 1d6}) acid damage."
+					]
+				},
+				{
+					"name": "Breath Weapon (1/Day)",
+					"entries": [
+						"The dragon exhales elemental power in its breath weapon area from the dragon table. Each creature in that area must make a Dexterity saving throw with a DC equal to your spellsave DC, taking {@damage 8d6} + the spell's level elemental damage on a failed save, or half as much damage ona successful one."
+					]
+				}
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Dragon Spirit Black (8th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Dragon Spirit Black (9th level)",
+			"size": [
+				"L"
+			],
+			"type": "dragon",
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "90"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 40,
+				"canHover": false
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 18,
+			"int": 14,
+			"wis": 16,
+			"cha": 18,
+			"passive": 13,
+			"cr": "0",
+			"shortName": "Dragon Spirit Black (9th level)",
+			"page": 2,
+			"senses": [
+				"blindsight 30 ft.",
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"languages": [
+				"Draconic",
+				"understands the languages you speak"
+			],
+			"languageTags": [
+				"DR"
+			],
+			"immune": [
+				"acid"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dragon makes a number of attacks equal to 3 (half this spell's level (rounded down)). It can only attack with its bite or tail once per turn."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) slashing damage, plus 9 ({@damage 9}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 15 ft., one target. {@h}7 ({@damage 1d8 + 3}) bludgeoning damage, plus 9 ({@damage 9}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}14 ({@damage 1d6 + 12}) piercing damage, plus 3 ({@damage 1d6}) acid damage."
+					]
+				},
+				{
+					"name": "Breath Weapon (1/Day)",
+					"entries": [
+						"The dragon exhales elemental power in its breath weapon area from the dragon table. Each creature in that area must make a Dexterity saving throw with a DC equal to your spellsave DC, taking {@damage 8d6} + the spell's level elemental damage on a failed save, or half as much damage ona successful one."
+					]
+				}
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Dragon Spirit Black (9th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
 				],
 				"images": [
 					{
