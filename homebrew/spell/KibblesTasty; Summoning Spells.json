@@ -1,0 +1,2487 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_schema-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "KTSS",
+				"abbreviation": "KTSS",
+				"full": "Summoning Spells (by KibblesTasty)",
+				"authors": [
+					"KibblesTasty"
+				],
+				"convertedBy": [
+					"p4535992"
+				],
+				"url": "https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO",
+				"version": "2022.08.15",
+				"color": "f13f5c"
+			}
+		],
+		"dateAdded": 1594364848,
+		"dateLastModified": 1638816223,
+		"_dateLastModifiedHash": "867a474772"
+	},
+	"spell": [
+		{
+			"name": "Summon Archon",
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You call forth a minor celestial archon. It manifests in an unoccupied space that you can see within range. It takes the form of the archon spirit stat block. When you cast the spell, choose one of:",
+				{
+					"type": "table",
+					"caption": "Archon spirit Stat Block",
+					"colLabels": [
+						"Spell Level",
+						"Creature"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"2nd",
+							"{@creature archon spirit lantern (2nd level)|KTSS|Lantern}, {@creature archon spirit hound (2nd level)|KTSS|Hound}, or {@creature archon spirit trumpet (2nd level)|KTSS|Trumpet}"
+						],
+						[
+							"3rd",
+							"{@creature archon spirit lantern (3rd level)|KTSS|Lantern}, {@creature archon spirit hound (3rd level)|KTSS|Hound}, or {@creature archon spirit trumpet (3rd level)|KTSS|Trumpet}"
+						],
+						[
+							"4th",
+							"{@creature archon spirit lantern (4th level)|KTSS|Lantern}, {@creature archon spirit hound (4th level)|KTSS|Hound}, or {@creature archon spirit trumpet (4th level)|KTSS|Trumpet}"
+						],
+						[
+							"5th",
+							"{@creature archon spirit lantern (5th level)|KTSS|Lantern}, {@creature archon spirit hound (5th level)|KTSS|Hound}, or {@creature archon spirit trumpet (5th level)|KTSS|Trumpet}"
+						],
+						[
+							"6th",
+							"{@creature archon spirit lantern (6th level)|KTSS|Lantern}, {@creature archon spirit hound (6th level)|KTSS|Hound}, or {@creature archon spirit trumpet (6th level)|KTSS|Trumpet}"
+						],
+						[
+							"7th",
+							"{@creature archon spirit lantern (7th level)|KTSS|Lantern}, {@creature archon spirit hound (7th level)|KTSS|Hound}, or {@creature archon spirit trumpet (7th level)|KTSS|Trumpet}"
+						],
+						[
+							"8th",
+							"{@creature archon spirit lantern (8th level)|KTSS|Lantern}, {@creature archon spirit hound (8th level)|KTSS|Hound}, or {@creature archon spirit trumpet (8th level)|KTSS|Trumpet}"
+						],
+						[
+							"9th",
+							"{@creature archon spirit lantern (9th level)|KTSS|Lantern}, {@creature archon spirit hound (9th level)|KTSS|Hound}, or {@creature archon spirit trumpet (9th level)|KTSS|Trumpet}"
+						]
+					]
+				},
+				"The creature resembles the creature of your choice, which determines certain traits in its stat block. The creature disappears when it drops to 0 hit points or when the spell ends.",
+				"The creature is allied to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). if you don't issue any,it takes the Dodge action and uses its move to avoid danger."
+			],
+			"source": "KTSS",
+			"page": 1,
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an ornate relic worth at least 200 gp"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, use the higher level whenever the spell's level appears in the stat block."
+					]
+				}
+			]
+		}
+	],
+	"monster": [
+		{
+			"name": "Archon Spirit Lantern (2nd level)",
+			"size": [
+				"S"
+			],
+			"type": "celestial",
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "20"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30,
+				"canHover": false
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 14,
+			"int": 10,
+			"wis": 13,
+			"cha": 14,
+			"passive": 11,
+			"cr": "0",
+			"shortName": "Archon Spirit Lantern (2nd level)",
+			"page": 1,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Celestial",
+				"understands the languages you speak"
+			],
+			"languageTags": [
+				"CE"
+			],
+			"resist": [
+				"radiant"
+			],
+			"trait": [
+				{
+					"name": "Lantern's Light",
+					"entries": [
+						"The archon sheds bright light in a 30 ft. radius and dim light for an additional 30 ft.."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The celestial makes a number of attacks (or Trumpet uses) equal to 1 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Radiant Bolt",
+					"entries": [
+						"{@atk rs} {@hit 0} + your spell attack modifier to hit, range 60 ft., one target. {@h}6 ({@damage 1d8 + 2}), plus 2 ({@damage 2}) radiant damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"R"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Archon Spirit Lantern (2nd level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Archon Spirit Lantern (3rd level)",
+			"size": [
+				"S"
+			],
+			"type": "celestial",
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "25"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30,
+				"canHover": false
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 14,
+			"int": 10,
+			"wis": 13,
+			"cha": 14,
+			"passive": 11,
+			"cr": "0",
+			"shortName": "Archon Spirit Lantern (3rd level)",
+			"page": 1,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Celestial",
+				"understands the languages you speak"
+			],
+			"languageTags": [
+				"CE"
+			],
+			"resist": [
+				"radiant"
+			],
+			"trait": [
+				{
+					"name": "Lantern's Light",
+					"entries": [
+						"The archon sheds bright light in a 30 ft. radius and dim light for an additional 30 ft.."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The celestial makes a number of attacks (or Trumpet uses) equal to 1 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Radiant Bolt",
+					"entries": [
+						"{@atk rs} {@hit 0} + your spell attack modifier to hit, range 60 ft., one target. {@h}6 ({@damage 1d8 + 2}), plus 3 ({@damage 3}) radiant damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"R"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Archon Spirit Lantern (3rd level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Archon Spirit Lantern (4th level)",
+			"size": [
+				"S"
+			],
+			"type": "celestial",
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "30"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30,
+				"canHover": false
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 14,
+			"int": 10,
+			"wis": 13,
+			"cha": 14,
+			"passive": 11,
+			"cr": "0",
+			"shortName": "Archon Spirit Lantern (4th level)",
+			"page": 1,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Celestial",
+				"understands the languages you speak"
+			],
+			"languageTags": [
+				"CE"
+			],
+			"resist": [
+				"radiant"
+			],
+			"trait": [
+				{
+					"name": "Lantern's Light",
+					"entries": [
+						"The archon sheds bright light in a 30 ft. radius and dim light for an additional 30 ft.."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The celestial makes a number of attacks (or Trumpet uses) equal to 2 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Radiant Bolt",
+					"entries": [
+						"{@atk rs} {@hit 0} + your spell attack modifier to hit, range 60 ft., one target. {@h}6 ({@damage 1d8 + 2}), plus 4 ({@damage 4}) radiant damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"R"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Archon Spirit Lantern (4th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Archon Spirit Lantern (5th level)",
+			"size": [
+				"S"
+			],
+			"type": "celestial",
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "35"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30,
+				"canHover": false
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 14,
+			"int": 10,
+			"wis": 13,
+			"cha": 14,
+			"passive": 11,
+			"cr": "0",
+			"shortName": "Archon Spirit Lantern (5th level)",
+			"page": 1,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Celestial",
+				"understands the languages you speak"
+			],
+			"languageTags": [
+				"CE"
+			],
+			"resist": [
+				"radiant"
+			],
+			"trait": [
+				{
+					"name": "Lantern's Light",
+					"entries": [
+						"The archon sheds bright light in a 30 ft. radius and dim light for an additional 30 ft.."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The celestial makes a number of attacks (or Trumpet uses) equal to 2 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Radiant Bolt",
+					"entries": [
+						"{@atk rs} {@hit 0} + your spell attack modifier to hit, range 60 ft., one target. {@h}6 ({@damage 1d8 + 2}), plus 5 ({@damage 5}) radiant damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"R"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Archon Spirit Lantern (5th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Archon Spirit Lantern (6th level)",
+			"size": [
+				"S"
+			],
+			"type": "celestial",
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "40"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30,
+				"canHover": false
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 14,
+			"int": 10,
+			"wis": 13,
+			"cha": 14,
+			"passive": 11,
+			"cr": "0",
+			"shortName": "Archon Spirit Lantern (6th level)",
+			"page": 1,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Celestial",
+				"understands the languages you speak"
+			],
+			"languageTags": [
+				"CE"
+			],
+			"resist": [
+				"radiant"
+			],
+			"trait": [
+				{
+					"name": "Lantern's Light",
+					"entries": [
+						"The archon sheds bright light in a 30 ft. radius and dim light for an additional 30 ft.."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The celestial makes a number of attacks (or Trumpet uses) equal to 3 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Radiant Bolt",
+					"entries": [
+						"{@atk rs} {@hit 0} + your spell attack modifier to hit, range 60 ft., one target. {@h}6 ({@damage 1d8 + 2}), plus 6 ({@damage 6}) radiant damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"R"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Archon Spirit Lantern (6th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Archon Spirit Lantern (7th level)",
+			"size": [
+				"S"
+			],
+			"type": "celestial",
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "45"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30,
+				"canHover": false
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 14,
+			"int": 10,
+			"wis": 13,
+			"cha": 14,
+			"passive": 11,
+			"cr": "0",
+			"shortName": "Archon Spirit Lantern (7th level)",
+			"page": 1,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Celestial",
+				"understands the languages you speak"
+			],
+			"languageTags": [
+				"CE"
+			],
+			"resist": [
+				"radiant"
+			],
+			"trait": [
+				{
+					"name": "Lantern's Light",
+					"entries": [
+						"The archon sheds bright light in a 30 ft. radius and dim light for an additional 30 ft.."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The celestial makes a number of attacks (or Trumpet uses) equal to 3 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Radiant Bolt",
+					"entries": [
+						"{@atk rs} {@hit 0} + your spell attack modifier to hit, range 60 ft., one target. {@h}6 ({@damage 1d8 + 2}), plus 7 ({@damage 7}) radiant damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"R"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Archon Spirit Lantern (7th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Archon Spirit Lantern (8th level)",
+			"size": [
+				"S"
+			],
+			"type": "celestial",
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "50"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30,
+				"canHover": false
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 14,
+			"int": 10,
+			"wis": 13,
+			"cha": 14,
+			"passive": 11,
+			"cr": "0",
+			"shortName": "Archon Spirit Lantern (8th level)",
+			"page": 1,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Celestial",
+				"understands the languages you speak"
+			],
+			"languageTags": [
+				"CE"
+			],
+			"resist": [
+				"radiant"
+			],
+			"trait": [
+				{
+					"name": "Lantern's Light",
+					"entries": [
+						"The archon sheds bright light in a 30 ft. radius and dim light for an additional 30 ft.."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The celestial makes a number of attacks (or Trumpet uses) equal to 4 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Radiant Bolt",
+					"entries": [
+						"{@atk rs} {@hit 0} + your spell attack modifier to hit, range 60 ft., one target. {@h}6 ({@damage 1d8 + 2}), plus 8 ({@damage 8}) radiant damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"R"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Archon Spirit Lantern (8th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Archon Spirit Lantern (9th level)",
+			"size": [
+				"S"
+			],
+			"type": "celestial",
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "55"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30,
+				"canHover": false
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 14,
+			"int": 10,
+			"wis": 13,
+			"cha": 14,
+			"passive": 11,
+			"cr": "0",
+			"shortName": "Archon Spirit Lantern (9th level)",
+			"page": 1,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Celestial",
+				"understands the languages you speak"
+			],
+			"languageTags": [
+				"CE"
+			],
+			"resist": [
+				"radiant"
+			],
+			"trait": [
+				{
+					"name": "Lantern's Light",
+					"entries": [
+						"The archon sheds bright light in a 30 ft. radius and dim light for an additional 30 ft.."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The celestial makes a number of attacks (or Trumpet uses) equal to 4 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Radiant Bolt",
+					"entries": [
+						"{@atk rs} {@hit 0} + your spell attack modifier to hit, range 60 ft., one target. {@h}6 ({@damage 1d8 + 2}), plus 9 ({@damage 9}) radiant damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"R"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Archon Spirit Lantern (9th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Archon Spirit Hound (2nd level)",
+			"size": [
+				"M"
+			],
+			"type": "celestial",
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "30"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 14,
+			"int": 10,
+			"wis": 13,
+			"cha": 14,
+			"passive": 11,
+			"cr": "0",
+			"shortName": "Archon Spirit Hound (2nd level)",
+			"page": 1,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Celestial",
+				"understands the languages you speak"
+			],
+			"languageTags": [
+				"CE"
+			],
+			"resist": [
+				"radiant"
+			],
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The archon hasadvantage on Wisdom (Perception) checks that rely on hearing or smell."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The celestial makes a number of attacks (or Trumpet uses) equal to 1 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) slashing damage, plus 2 ({@damage 2}) slashing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Archon Spirit Hound (2nd level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Archon Spirit Hound (3rd level)",
+			"size": [
+				"M"
+			],
+			"type": "celestial",
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "35"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 14,
+			"int": 10,
+			"wis": 13,
+			"cha": 14,
+			"passive": 11,
+			"cr": "0",
+			"shortName": "Archon Spirit Hound (3rd level)",
+			"page": 1,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Celestial",
+				"understands the languages you speak"
+			],
+			"languageTags": [
+				"CE"
+			],
+			"resist": [
+				"radiant"
+			],
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The archon hasadvantage on Wisdom (Perception) checks that rely on hearing or smell."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The celestial makes a number of attacks (or Trumpet uses) equal to 1 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) slashing damage, plus 3 ({@damage 3}) slashing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Archon Spirit Hound (3rd level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Archon Spirit Hound (4th level)",
+			"size": [
+				"M"
+			],
+			"type": "celestial",
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "40"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 14,
+			"int": 10,
+			"wis": 13,
+			"cha": 14,
+			"passive": 11,
+			"cr": "0",
+			"shortName": "Archon Spirit Hound (4th level)",
+			"page": 1,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Celestial",
+				"understands the languages you speak"
+			],
+			"languageTags": [
+				"CE"
+			],
+			"resist": [
+				"radiant"
+			],
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The archon hasadvantage on Wisdom (Perception) checks that rely on hearing or smell."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The celestial makes a number of attacks (or Trumpet uses) equal to 2 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) slashing damage, plus 4 ({@damage 4}) slashing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Archon Spirit Hound (4th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Archon Spirit Hound (5th level)",
+			"size": [
+				"M"
+			],
+			"type": "celestial",
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "45"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 14,
+			"int": 10,
+			"wis": 13,
+			"cha": 14,
+			"passive": 11,
+			"cr": "0",
+			"shortName": "Archon Spirit Hound (5th level)",
+			"page": 1,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Celestial",
+				"understands the languages you speak"
+			],
+			"languageTags": [
+				"CE"
+			],
+			"resist": [
+				"radiant"
+			],
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The archon hasadvantage on Wisdom (Perception) checks that rely on hearing or smell."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The celestial makes a number of attacks (or Trumpet uses) equal to 2 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) slashing damage, plus 5 ({@damage 5}) slashing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Archon Spirit Hound (5th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Archon Spirit Hound (6th level)",
+			"size": [
+				"M"
+			],
+			"type": "celestial",
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "50"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 14,
+			"int": 10,
+			"wis": 13,
+			"cha": 14,
+			"passive": 11,
+			"cr": "0",
+			"shortName": "Archon Spirit Hound (6th level)",
+			"page": 1,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Celestial",
+				"understands the languages you speak"
+			],
+			"languageTags": [
+				"CE"
+			],
+			"resist": [
+				"radiant"
+			],
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The archon hasadvantage on Wisdom (Perception) checks that rely on hearing or smell."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The celestial makes a number of attacks (or Trumpet uses) equal to 3 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) slashing damage, plus 6 ({@damage 6}) slashing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Archon Spirit Hound (6th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Archon Spirit Hound (7th level)",
+			"size": [
+				"M"
+			],
+			"type": "celestial",
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "55"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 14,
+			"int": 10,
+			"wis": 13,
+			"cha": 14,
+			"passive": 11,
+			"cr": "0",
+			"shortName": "Archon Spirit Hound (7th level)",
+			"page": 1,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Celestial",
+				"understands the languages you speak"
+			],
+			"languageTags": [
+				"CE"
+			],
+			"resist": [
+				"radiant"
+			],
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The archon hasadvantage on Wisdom (Perception) checks that rely on hearing or smell."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The celestial makes a number of attacks (or Trumpet uses) equal to 3 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) slashing damage, plus 7 ({@damage 7}) slashing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Archon Spirit Hound (7th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Archon Spirit Hound (8th level)",
+			"size": [
+				"M"
+			],
+			"type": "celestial",
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "60"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 14,
+			"int": 10,
+			"wis": 13,
+			"cha": 14,
+			"passive": 11,
+			"cr": "0",
+			"shortName": "Archon Spirit Hound (8th level)",
+			"page": 1,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Celestial",
+				"understands the languages you speak"
+			],
+			"languageTags": [
+				"CE"
+			],
+			"resist": [
+				"radiant"
+			],
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The archon hasadvantage on Wisdom (Perception) checks that rely on hearing or smell."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The celestial makes a number of attacks (or Trumpet uses) equal to 4 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) slashing damage, plus 8 ({@damage 8}) slashing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Archon Spirit Hound (8th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Archon Spirit Hound (9th level)",
+			"size": [
+				"M"
+			],
+			"type": "celestial",
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "65"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 14,
+			"int": 10,
+			"wis": 13,
+			"cha": 14,
+			"passive": 11,
+			"cr": "0",
+			"shortName": "Archon Spirit Hound (9th level)",
+			"page": 1,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Celestial",
+				"understands the languages you speak"
+			],
+			"languageTags": [
+				"CE"
+			],
+			"resist": [
+				"radiant"
+			],
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The archon hasadvantage on Wisdom (Perception) checks that rely on hearing or smell."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The celestial makes a number of attacks (or Trumpet uses) equal to 4 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) slashing damage, plus 9 ({@damage 9}) slashing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Archon Spirit Hound (9th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Archon Spirit Trumpet (2nd level)",
+			"size": [
+				"M"
+			],
+			"type": "celestial",
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "20"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30,
+				"canHover": false
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 14,
+			"int": 10,
+			"wis": 13,
+			"cha": 14,
+			"passive": 11,
+			"cr": "0",
+			"shortName": "Archon Spirit Trumpet (2nd level)",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Celestial",
+				"understands the languages you speak"
+			],
+			"languageTags": [
+				"CE"
+			],
+			"resist": [
+				"radiant"
+			],
+			"trait": [
+				{
+					"name": "Rallying Call",
+					"entries": [
+						"Once per turn when the archon deals damage, it grants one creature of its choice within 60 feet temporary hit points equal to half the damage dealt."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The celestial makes a number of attacks (or Trumpet uses) equal to 1 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Trumpet",
+					"entries": [
+						"{@atk rw} {@hit 0} + your spell attack modifier to hit, range 60 ft., one target. {@h}5 ({@damage 1d6 + 2}) thunder damage, plus 2 ({@damage 2}) thunder damage. The damage is applied only if the target was hit and fail a Constitution saving throw (DC equal to your spell save)."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"T"
+			],
+			"miscTags": [
+				"RW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Archon Spirit Trumpet (2nd level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Archon Spirit Trumpet (3rd level)",
+			"size": [
+				"M"
+			],
+			"type": "celestial",
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "25"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30,
+				"canHover": false
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 14,
+			"int": 10,
+			"wis": 13,
+			"cha": 14,
+			"passive": 11,
+			"cr": "0",
+			"shortName": "Archon Spirit Trumpet (3rd level)",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Celestial",
+				"understands the languages you speak"
+			],
+			"languageTags": [
+				"CE"
+			],
+			"resist": [
+				"radiant"
+			],
+			"trait": [
+				{
+					"name": "Rallying Call",
+					"entries": [
+						"Once per turn when the archon deals damage, it grants one creature of its choice within 60 feet temporary hit points equal to half the damage dealt."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The celestial makes a number of attacks (or Trumpet uses) equal to 1 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Trumpet",
+					"entries": [
+						"{@atk rw} {@hit 0} + your spell attack modifier to hit, range 60 ft., one target. {@h}5 ({@damage 1d6 + 2}) thunder damage, plus 3 ({@damage 3}) thunder damage. The damage is applied only if the target was hit and fail a Constitution saving throw (DC equal to your spell save)."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"T"
+			],
+			"miscTags": [
+				"RW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Archon Spirit Trumpet (3rd level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Archon Spirit Trumpet (4th level)",
+			"size": [
+				"M"
+			],
+			"type": "celestial",
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "30"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30,
+				"canHover": false
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 14,
+			"int": 10,
+			"wis": 13,
+			"cha": 14,
+			"passive": 11,
+			"cr": "0",
+			"shortName": "Archon Spirit Trumpet (4th level)",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Celestial",
+				"understands the languages you speak"
+			],
+			"languageTags": [
+				"CE"
+			],
+			"resist": [
+				"radiant"
+			],
+			"trait": [
+				{
+					"name": "Rallying Call",
+					"entries": [
+						"Once per turn when the archon deals damage, it grants one creature of its choice within 60 feet temporary hit points equal to half the damage dealt."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The celestial makes a number of attacks (or Trumpet uses) equal to 2 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Trumpet",
+					"entries": [
+						"{@atk rw} {@hit 0} + your spell attack modifier to hit, range 60 ft., one target. {@h}5 ({@damage 1d6 + 2}) thunder damage, plus 4 ({@damage 4}) thunder damage. The damage is applied only if the target was hit and fail a Constitution saving throw (DC equal to your spell save)."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"T"
+			],
+			"miscTags": [
+				"RW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Archon Spirit Trumpet (4th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Archon Spirit Trumpet (5th level)",
+			"size": [
+				"M"
+			],
+			"type": "celestial",
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "35"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30,
+				"canHover": false
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 14,
+			"int": 10,
+			"wis": 13,
+			"cha": 14,
+			"passive": 11,
+			"cr": "0",
+			"shortName": "Archon Spirit Trumpet (5th level)",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Celestial",
+				"understands the languages you speak"
+			],
+			"languageTags": [
+				"CE"
+			],
+			"resist": [
+				"radiant"
+			],
+			"trait": [
+				{
+					"name": "Rallying Call",
+					"entries": [
+						"Once per turn when the archon deals damage, it grants one creature of its choice within 60 feet temporary hit points equal to half the damage dealt."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The celestial makes a number of attacks (or Trumpet uses) equal to 2 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Trumpet",
+					"entries": [
+						"{@atk rw} {@hit 0} + your spell attack modifier to hit, range 60 ft., one target. {@h}5 ({@damage 1d6 + 2}) thunder damage, plus 5 ({@damage 5}) thunder damage. The damage is applied only if the target was hit and fail a Constitution saving throw (DC equal to your spell save)."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"T"
+			],
+			"miscTags": [
+				"RW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Archon Spirit Trumpet (5th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Archon Spirit Trumpet (6th level)",
+			"size": [
+				"M"
+			],
+			"type": "celestial",
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "40"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30,
+				"canHover": false
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 14,
+			"int": 10,
+			"wis": 13,
+			"cha": 14,
+			"passive": 11,
+			"cr": "0",
+			"shortName": "Archon Spirit Trumpet (6th level)",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Celestial",
+				"understands the languages you speak"
+			],
+			"languageTags": [
+				"CE"
+			],
+			"resist": [
+				"radiant"
+			],
+			"trait": [
+				{
+					"name": "Rallying Call",
+					"entries": [
+						"Once per turn when the archon deals damage, it grants one creature of its choice within 60 feet temporary hit points equal to half the damage dealt."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The celestial makes a number of attacks (or Trumpet uses) equal to 3 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Trumpet",
+					"entries": [
+						"{@atk rw} {@hit 0} + your spell attack modifier to hit, range 60 ft., one target. {@h}5 ({@damage 1d6 + 2}) thunder damage, plus 6 ({@damage 6}) thunder damage. The damage is applied only if the target was hit and fail a Constitution saving throw (DC equal to your spell save)."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"T"
+			],
+			"miscTags": [
+				"RW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Archon Spirit Trumpet (6th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Archon Spirit Trumpet (7th level)",
+			"size": [
+				"M"
+			],
+			"type": "celestial",
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "45"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30,
+				"canHover": false
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 14,
+			"int": 10,
+			"wis": 13,
+			"cha": 14,
+			"passive": 11,
+			"cr": "0",
+			"shortName": "Archon Spirit Trumpet (7th level)",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Celestial",
+				"understands the languages you speak"
+			],
+			"languageTags": [
+				"CE"
+			],
+			"resist": [
+				"radiant"
+			],
+			"trait": [
+				{
+					"name": "Rallying Call",
+					"entries": [
+						"Once per turn when the archon deals damage, it grants one creature of its choice within 60 feet temporary hit points equal to half the damage dealt."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The celestial makes a number of attacks (or Trumpet uses) equal to 3 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Trumpet",
+					"entries": [
+						"{@atk rw} {@hit 0} + your spell attack modifier to hit, range 60 ft., one target. {@h}5 ({@damage 1d6 + 2}) thunder damage, plus 7 ({@damage 7}) thunder damage. The damage is applied only if the target was hit and fail a Constitution saving throw (DC equal to your spell save)."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"T"
+			],
+			"miscTags": [
+				"RW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Archon Spirit Trumpet (7th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Archon Spirit Trumpet (8th level)",
+			"size": [
+				"M"
+			],
+			"type": "celestial",
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "50"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30,
+				"canHover": false
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 14,
+			"int": 10,
+			"wis": 13,
+			"cha": 14,
+			"passive": 11,
+			"cr": "0",
+			"shortName": "Archon Spirit Trumpet (8th level)",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Celestial",
+				"understands the languages you speak"
+			],
+			"languageTags": [
+				"CE"
+			],
+			"resist": [
+				"radiant"
+			],
+			"trait": [
+				{
+					"name": "Rallying Call",
+					"entries": [
+						"Once per turn when the archon deals damage, it grants one creature of its choice within 60 feet temporary hit points equal to half the damage dealt."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The celestial makes a number of attacks (or Trumpet uses) equal to 4 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Trumpet",
+					"entries": [
+						"{@atk rw} {@hit 0} + your spell attack modifier to hit, range 60 ft., one target. {@h}5 ({@damage 1d6 + 2}) thunder damage, plus 8 ({@damage 8}) thunder damage. The damage is applied only if the target was hit and fail a Constitution saving throw (DC equal to your spell save)."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"T"
+			],
+			"miscTags": [
+				"RW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Archon Spirit Trumpet (8th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Archon Spirit Trumpet (9th level)",
+			"size": [
+				"M"
+			],
+			"type": "celestial",
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "55"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30,
+				"canHover": false
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 14,
+			"int": 10,
+			"wis": 13,
+			"cha": 14,
+			"passive": 11,
+			"cr": "0",
+			"shortName": "Archon Spirit Trumpet (9th level)",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Celestial",
+				"understands the languages you speak"
+			],
+			"languageTags": [
+				"CE"
+			],
+			"resist": [
+				"radiant"
+			],
+			"trait": [
+				{
+					"name": "Rallying Call",
+					"entries": [
+						"Once per turn when the archon deals damage, it grants one creature of its choice within 60 feet temporary hit points equal to half the damage dealt."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The celestial makes a number of attacks (or Trumpet uses) equal to 4 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Trumpet",
+					"entries": [
+						"{@atk rw} {@hit 0} + your spell attack modifier to hit, range 60 ft., one target. {@h}5 ({@damage 1d6 + 2}) thunder damage, plus 9 ({@damage 9}) thunder damage. The damage is applied only if the target was hit and fail a Constitution saving throw (DC equal to your spell save)."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"T"
+			],
+			"miscTags": [
+				"RW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Archon Spirit Trumpet (9th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		}
+	]
+}
