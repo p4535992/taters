@@ -747,6 +747,131 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Summon Swarm",
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Occultist",
+						"source": "KT:O"
+					}
+				]
+			},
+			"source": "KTSS",
+			"page": 6,
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a golden insect worth at least 200 gp"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spellslot of 3rd level or higher, use the higher level whenever the spell's level appears in the stat block."
+					]
+				}
+			],
+			"entries": [
+				"You call forth a magical swarm. It manifests in an unoccupied space that you can see within range. This corporeal form uses the Swarm Spirit stat block. When you cast the spell,choose from:",
+				{
+					"type": "table",
+					"caption": "Swarm spirit Stat Block",
+					"colLabels": [
+						"Spell Level",
+						"Creature"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"2nd",
+							"{@creature swarm spirit spiders (2nd level)|KTSS|Spiders}, {@creature swarm spirit wasps (2nd level)|KTSS|Wasps}, or {@creature swarm spirit quippers (2nd level)|KTSS|Quippers}"
+						],
+						[
+							"3rd",
+							"{@creature swarm spirit spiders (3rd level)|KTSS|Spiders}, {@creature swarm spirit wasps (3rd level)|KTSS|Wasps}, or {@creature swarm spirit quippers (3rd level)|KTSS|Quippers}"
+						],
+						[
+							"4th",
+							"{@creature swarm spirit spiders (4th level)|KTSS|Spiders}, {@creature swarm spirit wasps (4th level)|KTSS|Wasps}, or {@creature swarm spirit quippers (4th level)|KTSS|Quippers}"
+						],
+						[
+							"5th",
+							"{@creature swarm spirit spiders (5th level)|KTSS|Spiders}, {@creature swarm spirit wasps (5th level)|KTSS|Wasps}, or {@creature swarm spirit quippers (5th level)|KTSS|Quippers}"
+						],
+						[
+							"6th",
+							"{@creature swarm spirit spiders (6th level)|KTSS|Spiders}, {@creature swarm spirit wasps (6th level)|KTSS|Wasps}, or {@creature swarm spirit quippers (6th level)|KTSS|Quippers}"
+						],
+						[
+							"7th",
+							"{@creature swarm spirit spiders (7th level)|KTSS|Spiders}, {@creature swarm spirit wasps (7th level)|KTSS|Wasps}, or {@creature swarm spirit quippers (7th level)|KTSS|Quippers}"
+						],
+						[
+							"8th",
+							"{@creature swarm spirit spiders (8th level)|KTSS|Spiders}, {@creature swarm spirit wasps (8th level)|KTSS|Wasps}, or {@creature swarm spirit quippers (8th level)|KTSS|Quippers}"
+						],
+						[
+							"9th",
+							"{@creature swarm spirit spiders (9th level)|KTSS|Spiders}, {@creature swarm spirit wasps (9th level)|KTSS|Wasps}, or {@creature swarm spirit quippers (9th level)|KTSS|Quippers}"
+						]
+					]
+				},
+				"The swarm resembles the creatures of your choice, which determines certain traits in its stat block. The creature disappears when it drops to 0 hit points or when the spell ends.",
+				"The creature is an ally to you and your companions. In  combat, the creature shares your initiative count, but takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any,it takes the Dodge action and uses its move to avoid damage."
+			],
+			"fluff": {
+				"entries": [
+					"{@link Summon Swarm|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
 		}
 	],
 	"monster": [
@@ -10955,7 +11080,7 @@
 				{
 					"name": "Tree Stride",
 					"entries": [
-						"Once on its turn, the plantcan use 10 feet of its movement to step magically into one living tree within its reach and emerge from a second living tree within 60 feet of the first tree, appearing in an unoccupied space within 5 feet of the second tree. Both trees must be large or bigger."
+						"Once on its turn, the plant can use 10 feet of its movement to step magically into one living tree within its reach and emerge from a second living tree within 60 feet of the first tree, appearing in an unoccupied space within 5 feet of the second tree. Both trees must be large or bigger."
 					]
 				}
 			],
@@ -11062,7 +11187,7 @@
 				{
 					"name": "Tree Stride",
 					"entries": [
-						"Once on its turn, the plantcan use 10 feet of its movement to step magically into one living tree within its reach and emerge from a second living tree within 60 feet of the first tree, appearing in an unoccupied space within 5 feet of the second tree. Both trees must be large or bigger."
+						"Once on its turn, the plant can use 10 feet of its movement to step magically into one living tree within its reach and emerge from a second living tree within 60 feet of the first tree, appearing in an unoccupied space within 5 feet of the second tree. Both trees must be large or bigger."
 					]
 				}
 			],
@@ -11169,7 +11294,7 @@
 				{
 					"name": "Tree Stride",
 					"entries": [
-						"Once on its turn, the plantcan use 10 feet of its movement to step magically into one living tree within its reach and emerge from a second living tree within 60 feet of the first tree, appearing in an unoccupied space within 5 feet of the second tree. Both trees must be large or bigger."
+						"Once on its turn, the plant can use 10 feet of its movement to step magically into one living tree within its reach and emerge from a second living tree within 60 feet of the first tree, appearing in an unoccupied space within 5 feet of the second tree. Both trees must be large or bigger."
 					]
 				}
 			],
@@ -11276,7 +11401,7 @@
 				{
 					"name": "Tree Stride",
 					"entries": [
-						"Once on its turn, the plantcan use 10 feet of its movement to step magically into one living tree within its reach and emerge from a second living tree within 60 feet of the first tree, appearing in an unoccupied space within 5 feet of the second tree. Both trees must be large or bigger."
+						"Once on its turn, the plant can use 10 feet of its movement to step magically into one living tree within its reach and emerge from a second living tree within 60 feet of the first tree, appearing in an unoccupied space within 5 feet of the second tree. Both trees must be large or bigger."
 					]
 				}
 			],
@@ -11383,7 +11508,7 @@
 				{
 					"name": "Tree Stride",
 					"entries": [
-						"Once on its turn, the plantcan use 10 feet of its movement to step magically into one living tree within its reach and emerge from a second living tree within 60 feet of the first tree, appearing in an unoccupied space within 5 feet of the second tree. Both trees must be large or bigger."
+						"Once on its turn, the plant can use 10 feet of its movement to step magically into one living tree within its reach and emerge from a second living tree within 60 feet of the first tree, appearing in an unoccupied space within 5 feet of the second tree. Both trees must be large or bigger."
 					]
 				}
 			],
@@ -11490,7 +11615,7 @@
 				{
 					"name": "Tree Stride",
 					"entries": [
-						"Once on its turn, the plantcan use 10 feet of its movement to step magically into one living tree within its reach and emerge from a second living tree within 60 feet of the first tree, appearing in an unoccupied space within 5 feet of the second tree. Both trees must be large or bigger."
+						"Once on its turn, the plant can use 10 feet of its movement to step magically into one living tree within its reach and emerge from a second living tree within 60 feet of the first tree, appearing in an unoccupied space within 5 feet of the second tree. Both trees must be large or bigger."
 					]
 				}
 			],
@@ -11597,7 +11722,7 @@
 				{
 					"name": "Tree Stride",
 					"entries": [
-						"Once on its turn, the plantcan use 10 feet of its movement to step magically into one living tree within its reach and emerge from a second living tree within 60 feet of the first tree, appearing in an unoccupied space within 5 feet of the second tree. Both trees must be large or bigger."
+						"Once on its turn, the plant can use 10 feet of its movement to step magically into one living tree within its reach and emerge from a second living tree within 60 feet of the first tree, appearing in an unoccupied space within 5 feet of the second tree. Both trees must be large or bigger."
 					]
 				}
 			],
@@ -11713,7 +11838,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The plant makes a number of attacksequal to 1 (half this spell's level (rounded down))."
+						"The plant makes a number of attacks equal to 1 (half this spell's level (rounded down))."
 					]
 				},
 				{
@@ -11814,7 +11939,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The plant makes a number of attacksequal to 2 (half this spell's level (rounded down))."
+						"The plant makes a number of attacks equal to 2 (half this spell's level (rounded down))."
 					]
 				},
 				{
@@ -11915,7 +12040,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The plant makes a number of attacksequal to 2 (half this spell's level (rounded down))."
+						"The plant makes a number of attacks equal to 2 (half this spell's level (rounded down))."
 					]
 				},
 				{
@@ -12016,7 +12141,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The plant makes a number of attacksequal to 3 (half this spell's level (rounded down))."
+						"The plant makes a number of attacks equal to 3 (half this spell's level (rounded down))."
 					]
 				},
 				{
@@ -12117,7 +12242,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The plant makes a number of attacksequal to 3 (half this spell's level (rounded down))."
+						"The plant makes a number of attacks equal to 3 (half this spell's level (rounded down))."
 					]
 				},
 				{
@@ -12218,7 +12343,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The plant makes a number of attacksequal to 4 (half this spell's level (rounded down))."
+						"The plant makes a number of attacks equal to 4 (half this spell's level (rounded down))."
 					]
 				},
 				{
@@ -12319,7 +12444,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The plant makes a number of attacksequal to 4 (half this spell's level (rounded down))."
+						"The plant makes a number of attacks equal to 4 (half this spell's level (rounded down))."
 					]
 				},
 				{
@@ -13116,7 +13241,7 @@
 				"B"
 			],
 			"languages": [
-				"understands the languages you speak it"
+				"understands the languages you speak"
 			],
 			"immune": [
 				"poison"
@@ -13135,13 +13260,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The ooze makes a number of attacksequal to 1 (half this spell's level (rounded down))."
+						"The ooze makes a number of attacks equal to 1 (half this spell's level (rounded down))."
 					]
 				},
 				{
 					"name": "Pseudopod",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 1 ({@damage 1}) acid damage."
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 1 ({@damage 1}) acid damage."
 					]
 				}
 			],
@@ -13211,7 +13336,7 @@
 				"B"
 			],
 			"languages": [
-				"understands the languages you speak it"
+				"understands the languages you speak"
 			],
 			"immune": [
 				"poison"
@@ -13230,13 +13355,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The ooze makes a number of attacksequal to 1 (half this spell's level (rounded down))."
+						"The ooze makes a number of attacks equal to 1 (half this spell's level (rounded down))."
 					]
 				},
 				{
 					"name": "Pseudopod",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 2 ({@damage 2}) acid damage."
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 2 ({@damage 2}) acid damage."
 					]
 				}
 			],
@@ -13306,7 +13431,7 @@
 				"B"
 			],
 			"languages": [
-				"understands the languages you speak it"
+				"understands the languages you speak"
 			],
 			"immune": [
 				"poison"
@@ -13325,13 +13450,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The ooze makes a number of attacksequal to 1 (half this spell's level (rounded down))."
+						"The ooze makes a number of attacks equal to 1 (half this spell's level (rounded down))."
 					]
 				},
 				{
 					"name": "Pseudopod",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 3 ({@damage 3}) acid damage."
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 3 ({@damage 3}) acid damage."
 					]
 				}
 			],
@@ -13401,7 +13526,7 @@
 				"B"
 			],
 			"languages": [
-				"understands the languages you speak it"
+				"understands the languages you speak"
 			],
 			"immune": [
 				"poison"
@@ -13420,13 +13545,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The ooze makes a number of attacksequal to 2 (half this spell's level (rounded down))."
+						"The ooze makes a number of attacks equal to 2 (half this spell's level (rounded down))."
 					]
 				},
 				{
 					"name": "Pseudopod",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 4 ({@damage 4}) acid damage."
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 4 ({@damage 4}) acid damage."
 					]
 				}
 			],
@@ -13496,7 +13621,7 @@
 				"B"
 			],
 			"languages": [
-				"understands the languages you speak it"
+				"understands the languages you speak"
 			],
 			"immune": [
 				"poison"
@@ -13515,13 +13640,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The ooze makes a number of attacksequal to 2 (half this spell's level (rounded down))."
+						"The ooze makes a number of attacks equal to 2 (half this spell's level (rounded down))."
 					]
 				},
 				{
 					"name": "Pseudopod",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 5 ({@damage 5}) acid damage."
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 5 ({@damage 5}) acid damage."
 					]
 				}
 			],
@@ -13591,7 +13716,7 @@
 				"B"
 			],
 			"languages": [
-				"understands the languages you speak it"
+				"understands the languages you speak"
 			],
 			"immune": [
 				"poison"
@@ -13610,13 +13735,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The ooze makes a number of attacksequal to 3 (half this spell's level (rounded down))."
+						"The ooze makes a number of attacks equal to 3 (half this spell's level (rounded down))."
 					]
 				},
 				{
 					"name": "Pseudopod",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 6 ({@damage 6}) acid damage."
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 6 ({@damage 6}) acid damage."
 					]
 				}
 			],
@@ -13686,7 +13811,7 @@
 				"B"
 			],
 			"languages": [
-				"understands the languages you speak it"
+				"understands the languages you speak"
 			],
 			"immune": [
 				"poison"
@@ -13705,13 +13830,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The ooze makes a number of attacksequal to 3 (half this spell's level (rounded down))."
+						"The ooze makes a number of attacks equal to 3 (half this spell's level (rounded down))."
 					]
 				},
 				{
 					"name": "Pseudopod",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 7 ({@damage 7}) acid damage."
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 7 ({@damage 7}) acid damage."
 					]
 				}
 			],
@@ -13781,7 +13906,7 @@
 				"B"
 			],
 			"languages": [
-				"understands the languages you speak it"
+				"understands the languages you speak"
 			],
 			"immune": [
 				"poison"
@@ -13800,13 +13925,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The ooze makes a number of attacksequal to 4 (half this spell's level (rounded down))."
+						"The ooze makes a number of attacks equal to 4 (half this spell's level (rounded down))."
 					]
 				},
 				{
 					"name": "Pseudopod",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 8 ({@damage 8}) acid damage."
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 8 ({@damage 8}) acid damage."
 					]
 				}
 			],
@@ -13876,7 +14001,7 @@
 				"B"
 			],
 			"languages": [
-				"understands the languages you speak it"
+				"understands the languages you speak"
 			],
 			"immune": [
 				"poison"
@@ -13895,13 +14020,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The ooze makes a number of attacksequal to 4 (half this spell's level (rounded down))."
+						"The ooze makes a number of attacks equal to 4 (half this spell's level (rounded down))."
 					]
 				},
 				{
 					"name": "Pseudopod",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 9 ({@damage 9}) acid damage."
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 9 ({@damage 9}) acid damage."
 					]
 				}
 			],
@@ -13971,7 +14096,7 @@
 				"B"
 			],
 			"languages": [
-				"understands the languages you speak it"
+				"understands the languages you speak"
 			],
 			"immune": [
 				"acid", "fire"
@@ -13990,13 +14115,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The ooze makes a number of attacksequal to 1 (half this spell's level (rounded down))."
+						"The ooze makes a number of attacks equal to 1 (half this spell's level (rounded down))."
 					]
 				},
 				{
 					"name": "Pseudopod",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 1 ({@damage 1}) acid damage."
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 1 ({@damage 1}) acid damage."
 					]
 				}
 			],
@@ -14066,7 +14191,7 @@
 				"B"
 			],
 			"languages": [
-				"understands the languages you speak it"
+				"understands the languages you speak"
 			],
 			"immune": [
 				"acid", "fire"
@@ -14085,13 +14210,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The ooze makes a number of attacksequal to 1 (half this spell's level (rounded down))."
+						"The ooze makes a number of attacks equal to 1 (half this spell's level (rounded down))."
 					]
 				},
 				{
 					"name": "Pseudopod",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 2 ({@damage 2}) acid damage."
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 2 ({@damage 2}) acid damage."
 					]
 				}
 			],
@@ -14161,7 +14286,7 @@
 				"B"
 			],
 			"languages": [
-				"understands the languages you speak it"
+				"understands the languages you speak"
 			],
 			"immune": [
 				"acid", "fire"
@@ -14180,13 +14305,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The ooze makes a number of attacksequal to 1 (half this spell's level (rounded down))."
+						"The ooze makes a number of attacks equal to 1 (half this spell's level (rounded down))."
 					]
 				},
 				{
 					"name": "Pseudopod",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 3 ({@damage 3}) acid damage."
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 3 ({@damage 3}) acid damage."
 					]
 				}
 			],
@@ -14256,7 +14381,7 @@
 				"B"
 			],
 			"languages": [
-				"understands the languages you speak it"
+				"understands the languages you speak"
 			],
 			"immune": [
 				"acid", "fire"
@@ -14275,13 +14400,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The ooze makes a number of attacksequal to 2 (half this spell's level (rounded down))."
+						"The ooze makes a number of attacks equal to 2 (half this spell's level (rounded down))."
 					]
 				},
 				{
 					"name": "Pseudopod",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 4 ({@damage 4}) acid damage."
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 4 ({@damage 4}) acid damage."
 					]
 				}
 			],
@@ -14351,7 +14476,7 @@
 				"B"
 			],
 			"languages": [
-				"understands the languages you speak it"
+				"understands the languages you speak"
 			],
 			"immune": [
 				"acid", "fire"
@@ -14370,13 +14495,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The ooze makes a number of attacksequal to 2 (half this spell's level (rounded down))."
+						"The ooze makes a number of attacks equal to 2 (half this spell's level (rounded down))."
 					]
 				},
 				{
 					"name": "Pseudopod",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 5 ({@damage 5}) acid damage."
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 5 ({@damage 5}) acid damage."
 					]
 				}
 			],
@@ -14446,7 +14571,7 @@
 				"B"
 			],
 			"languages": [
-				"understands the languages you speak it"
+				"understands the languages you speak"
 			],
 			"immune": [
 				"acid", "fire"
@@ -14465,13 +14590,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The ooze makes a number of attacksequal to 3 (half this spell's level (rounded down))."
+						"The ooze makes a number of attacks equal to 3 (half this spell's level (rounded down))."
 					]
 				},
 				{
 					"name": "Pseudopod",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 6 ({@damage 6}) acid damage."
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 6 ({@damage 6}) acid damage."
 					]
 				}
 			],
@@ -14541,7 +14666,7 @@
 				"B"
 			],
 			"languages": [
-				"understands the languages you speak it"
+				"understands the languages you speak"
 			],
 			"immune": [
 				"acid", "fire"
@@ -14560,13 +14685,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The ooze makes a number of attacksequal to 3 (half this spell's level (rounded down))."
+						"The ooze makes a number of attacks equal to 3 (half this spell's level (rounded down))."
 					]
 				},
 				{
 					"name": "Pseudopod",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 7 ({@damage 7}) acid damage."
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 7 ({@damage 7}) acid damage."
 					]
 				}
 			],
@@ -14636,7 +14761,7 @@
 				"B"
 			],
 			"languages": [
-				"understands the languages you speak it"
+				"understands the languages you speak"
 			],
 			"immune": [
 				"acid", "fire"
@@ -14655,13 +14780,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The ooze makes a number of attacksequal to 4 (half this spell's level (rounded down))."
+						"The ooze makes a number of attacks equal to 4 (half this spell's level (rounded down))."
 					]
 				},
 				{
 					"name": "Pseudopod",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 8 ({@damage 8}) acid damage."
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 8 ({@damage 8}) acid damage."
 					]
 				}
 			],
@@ -14731,7 +14856,7 @@
 				"B"
 			],
 			"languages": [
-				"understands the languages you speak it"
+				"understands the languages you speak"
 			],
 			"immune": [
 				"acid", "fire"
@@ -14750,13 +14875,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The ooze makes a number of attacksequal to 4 (half this spell's level (rounded down))."
+						"The ooze makes a number of attacks equal to 4 (half this spell's level (rounded down))."
 					]
 				},
 				{
 					"name": "Pseudopod",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 9 ({@damage 9}) acid damage."
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 9 ({@damage 9}) acid damage."
 					]
 				}
 			],
@@ -14826,7 +14951,7 @@
 				"B"
 			],
 			"languages": [
-				"understands the languages you speak it"
+				"understands the languages you speak"
 			],
 			"immune": [
 				"lightning"
@@ -14845,13 +14970,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The ooze makes a number of attacksequal to 1 (half this spell's level (rounded down))."
+						"The ooze makes a number of attacks equal to 1 (half this spell's level (rounded down))."
 					]
 				},
 				{
 					"name": "Pseudopod",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 1 ({@damage 1}) acid damage."
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 1 ({@damage 1}) acid damage."
 					]
 				}
 			],
@@ -14921,7 +15046,7 @@
 				"B"
 			],
 			"languages": [
-				"understands the languages you speak it"
+				"understands the languages you speak"
 			],
 			"immune": [
 				"lightning"
@@ -14940,13 +15065,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The ooze makes a number of attacksequal to 1 (half this spell's level (rounded down))."
+						"The ooze makes a number of attacks equal to 1 (half this spell's level (rounded down))."
 					]
 				},
 				{
 					"name": "Pseudopod",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 2 ({@damage 2}) acid damage."
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 2 ({@damage 2}) acid damage."
 					]
 				}
 			],
@@ -15016,7 +15141,7 @@
 				"B"
 			],
 			"languages": [
-				"understands the languages you speak it"
+				"understands the languages you speak"
 			],
 			"immune": [
 				"lightning"
@@ -15035,13 +15160,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The ooze makes a number of attacksequal to 1 (half this spell's level (rounded down))."
+						"The ooze makes a number of attacks equal to 1 (half this spell's level (rounded down))."
 					]
 				},
 				{
 					"name": "Pseudopod",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 3 ({@damage 3}) acid damage."
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 3 ({@damage 3}) acid damage."
 					]
 				}
 			],
@@ -15111,7 +15236,7 @@
 				"B"
 			],
 			"languages": [
-				"understands the languages you speak it"
+				"understands the languages you speak"
 			],
 			"immune": [
 				"lightning"
@@ -15130,13 +15255,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The ooze makes a number of attacksequal to 2 (half this spell's level (rounded down))."
+						"The ooze makes a number of attacks equal to 2 (half this spell's level (rounded down))."
 					]
 				},
 				{
 					"name": "Pseudopod",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 4 ({@damage 4}) acid damage."
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 4 ({@damage 4}) acid damage."
 					]
 				}
 			],
@@ -15206,7 +15331,7 @@
 				"B"
 			],
 			"languages": [
-				"understands the languages you speak it"
+				"understands the languages you speak"
 			],
 			"immune": [
 				"lightning"
@@ -15225,13 +15350,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The ooze makes a number of attacksequal to 2 (half this spell's level (rounded down))."
+						"The ooze makes a number of attacks equal to 2 (half this spell's level (rounded down))."
 					]
 				},
 				{
 					"name": "Pseudopod",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 5 ({@damage 5}) acid damage."
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 5 ({@damage 5}) acid damage."
 					]
 				}
 			],
@@ -15301,7 +15426,7 @@
 				"B"
 			],
 			"languages": [
-				"understands the languages you speak it"
+				"understands the languages you speak"
 			],
 			"immune": [
 				"lightning"
@@ -15320,13 +15445,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The ooze makes a number of attacksequal to 3 (half this spell's level (rounded down))."
+						"The ooze makes a number of attacks equal to 3 (half this spell's level (rounded down))."
 					]
 				},
 				{
 					"name": "Pseudopod",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 6 ({@damage 6}) acid damage."
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 6 ({@damage 6}) acid damage."
 					]
 				}
 			],
@@ -15396,7 +15521,7 @@
 				"B"
 			],
 			"languages": [
-				"understands the languages you speak it"
+				"understands the languages you speak"
 			],
 			"immune": [
 				"lightning"
@@ -15415,13 +15540,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The ooze makes a number of attacksequal to 3 (half this spell's level (rounded down))."
+						"The ooze makes a number of attacks equal to 3 (half this spell's level (rounded down))."
 					]
 				},
 				{
 					"name": "Pseudopod",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 7 ({@damage 7}) acid damage."
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 7 ({@damage 7}) acid damage."
 					]
 				}
 			],
@@ -15491,7 +15616,7 @@
 				"B"
 			],
 			"languages": [
-				"understands the languages you speak it"
+				"understands the languages you speak"
 			],
 			"immune": [
 				"lightning"
@@ -15510,13 +15635,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The ooze makes a number of attacksequal to 4 (half this spell's level (rounded down))."
+						"The ooze makes a number of attacks equal to 4 (half this spell's level (rounded down))."
 					]
 				},
 				{
 					"name": "Pseudopod",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 8 ({@damage 8}) acid damage."
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 8 ({@damage 8}) acid damage."
 					]
 				}
 			],
@@ -15586,7 +15711,7 @@
 				"B"
 			],
 			"languages": [
-				"understands the languages you speak it"
+				"understands the languages you speak"
 			],
 			"immune": [
 				"lightning"
@@ -15605,13 +15730,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The ooze makes a number of attacksequal to 4 (half this spell's level (rounded down))."
+						"The ooze makes a number of attacks equal to 4 (half this spell's level (rounded down))."
 					]
 				},
 				{
 					"name": "Pseudopod",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 9 ({@damage 9}) acid damage."
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) acid damage, plus 9 ({@damage 9}) acid damage."
 					]
 				}
 			],
@@ -15628,6 +15753,2486 @@
 			"fluff": {
 				"entries": [
 					"{@link Ooze Spirit Yellow (9th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Swarm Spirit Spiders (2nd level)",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "beast",
+				"swarmSize": "T"
+			},
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "10"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 3,
+			"dex": 13,
+			"con": 10,
+			"int": 1,
+			"wis": 7,
+			"cha": 1,
+			"passive": 8,
+			"cr": "0",
+			"shortName": "Swarm Spirit Spiders (2nd level)",
+			"languages": [
+				"understands the languages you speak"
+			],
+			"senses": [
+				"blindsight 10 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"trait": [
+				{
+					"name": "Swarm",
+					"entries": [
+						"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny creature.The swarm can't regain hit points or gain temporaryhit points."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The swarm can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Web Walker",
+					"entries": [
+						"The swarm ignores movement restrictions caused by webbing."
+					]
+				}
+			],
+			"traitTags": [
+				"Spider Climb",
+				"Web Walker"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The swarm makes a number of attacks equal to 1 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}7 ({@damage 2d4 + 2}) piercing damage, plus 2 ({@damage 1d4}) poison damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Swarm Spirit Spiders (2nd level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Swarm Spirit Spiders (3rd level)",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "beast",
+				"swarmSize": "T"
+			},
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "15"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 3,
+			"dex": 13,
+			"con": 10,
+			"int": 1,
+			"wis": 7,
+			"cha": 1,
+			"passive": 8,
+			"cr": "0",
+			"shortName": "Swarm Spirit Spiders (3rd level)",
+			"languages": [
+				"understands the languages you speak"
+			],
+			"senses": [
+				"blindsight 10 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"trait": [
+				{
+					"name": "Swarm",
+					"entries": [
+						"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny creature.The swarm can't regain hit points or gain temporaryhit points."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The swarm can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Web Walker",
+					"entries": [
+						"The swarm ignores movement restrictions caused by webbing."
+					]
+				}
+			],
+			"traitTags": [
+				"Spider Climb",
+				"Web Walker"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The swarm makes a number of attacks equal to 1 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}8 ({@damage 2d4 + 3}) piercing damage, plus 2 ({@damage 1d4}) poison damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Swarm Spirit Spiders (3rd level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Swarm Spirit Spiders (4th level)",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "beast",
+				"swarmSize": "T"
+			},
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "20"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 3,
+			"dex": 13,
+			"con": 10,
+			"int": 1,
+			"wis": 7,
+			"cha": 1,
+			"passive": 8,
+			"cr": "0",
+			"shortName": "Swarm Spirit Spiders (4th level)",
+			"languages": [
+				"understands the languages you speak"
+			],
+			"senses": [
+				"blindsight 10 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"trait": [
+				{
+					"name": "Swarm",
+					"entries": [
+						"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny creature.The swarm can't regain hit points or gain temporaryhit points."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The swarm can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Web Walker",
+					"entries": [
+						"The swarm ignores movement restrictions caused by webbing."
+					]
+				}
+			],
+			"traitTags": [
+				"Spider Climb",
+				"Web Walker"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The swarm makes a number of attacks equal to 2 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}9 ({@damage 2d4 + 4}) piercing damage, plus 2 ({@damage 1d4}) poison damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Swarm Spirit Spiders (4th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Swarm Spirit Spiders (5th level)",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "beast",
+				"swarmSize": "T"
+			},
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "25"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 3,
+			"dex": 13,
+			"con": 10,
+			"int": 1,
+			"wis": 7,
+			"cha": 1,
+			"passive": 8,
+			"cr": "0",
+			"shortName": "Swarm Spirit Spiders (5th level)",
+			"languages": [
+				"understands the languages you speak"
+			],
+			"senses": [
+				"blindsight 10 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"trait": [
+				{
+					"name": "Swarm",
+					"entries": [
+						"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny creature.The swarm can't regain hit points or gain temporaryhit points."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The swarm can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Web Walker",
+					"entries": [
+						"The swarm ignores movement restrictions caused by webbing."
+					]
+				}
+			],
+			"traitTags": [
+				"Spider Climb",
+				"Web Walker"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The swarm makes a number of attacks equal to 2 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}10 ({@damage 2d4 + 5}) piercing damage, plus 2 ({@damage 1d4}) poison damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Swarm Spirit Spiders (5th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Swarm Spirit Spiders (6th level)",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "beast",
+				"swarmSize": "T"
+			},
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "30"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 3,
+			"dex": 13,
+			"con": 10,
+			"int": 1,
+			"wis": 7,
+			"cha": 1,
+			"passive": 8,
+			"cr": "0",
+			"shortName": "Swarm Spirit Spiders (6th level)",
+			"languages": [
+				"understands the languages you speak"
+			],
+			"senses": [
+				"blindsight 10 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"trait": [
+				{
+					"name": "Swarm",
+					"entries": [
+						"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny creature.The swarm can't regain hit points or gain temporaryhit points."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The swarm can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Web Walker",
+					"entries": [
+						"The swarm ignores movement restrictions caused by webbing."
+					]
+				}
+			],
+			"traitTags": [
+				"Spider Climb",
+				"Web Walker"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The swarm makes a number of attacks equal to 3 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}11 ({@damage 2d4 + 6}) piercing damage, plus 2 ({@damage 1d4}) poison damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Swarm Spirit Spiders (6th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Swarm Spirit Spiders (7th level)",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "beast",
+				"swarmSize": "T"
+			},
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "35"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 3,
+			"dex": 13,
+			"con": 10,
+			"int": 1,
+			"wis": 7,
+			"cha": 1,
+			"passive": 8,
+			"cr": "0",
+			"shortName": "Swarm Spirit Spiders (7th level)",
+			"languages": [
+				"understands the languages you speak"
+			],
+			"senses": [
+				"blindsight 10 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"trait": [
+				{
+					"name": "Swarm",
+					"entries": [
+						"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny creature.The swarm can't regain hit points or gain temporaryhit points."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The swarm can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Web Walker",
+					"entries": [
+						"The swarm ignores movement restrictions caused by webbing."
+					]
+				}
+			],
+			"traitTags": [
+				"Spider Climb",
+				"Web Walker"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The swarm makes a number of attacks equal to 3 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}12 ({@damage 2d4 + 7}) piercing damage, plus 2 ({@damage 1d4}) poison damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Swarm Spirit Spiders (7th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Swarm Spirit Spiders (8th level)",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "beast",
+				"swarmSize": "T"
+			},
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "40"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 3,
+			"dex": 13,
+			"con": 10,
+			"int": 1,
+			"wis": 7,
+			"cha": 1,
+			"passive": 8,
+			"cr": "0",
+			"shortName": "Swarm Spirit Spiders (8th level)",
+			"languages": [
+				"understands the languages you speak"
+			],
+			"senses": [
+				"blindsight 10 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"trait": [
+				{
+					"name": "Swarm",
+					"entries": [
+						"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny creature.The swarm can't regain hit points or gain temporaryhit points."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The swarm can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Web Walker",
+					"entries": [
+						"The swarm ignores movement restrictions caused by webbing."
+					]
+				}
+			],
+			"traitTags": [
+				"Spider Climb",
+				"Web Walker"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The swarm makes a number of attacks equal to 4 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}13 ({@damage 2d4 + 8}) piercing damage, plus 2 ({@damage 1d4}) poison damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Swarm Spirit Spiders (8th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Swarm Spirit Spiders (9th level)",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "beast",
+				"swarmSize": "T"
+			},
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "45"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 3,
+			"dex": 13,
+			"con": 10,
+			"int": 1,
+			"wis": 7,
+			"cha": 1,
+			"passive": 8,
+			"cr": "0",
+			"shortName": "Swarm Spirit Spiders (9th level)",
+			"languages": [
+				"understands the languages you speak"
+			],
+			"senses": [
+				"blindsight 10 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"trait": [
+				{
+					"name": "Swarm",
+					"entries": [
+						"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny creature.The swarm can't regain hit points or gain temporaryhit points."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The swarm can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Web Walker",
+					"entries": [
+						"The swarm ignores movement restrictions caused by webbing."
+					]
+				}
+			],
+			"traitTags": [
+				"Spider Climb",
+				"Web Walker"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The swarm makes a number of attacks equal to 4 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}14 ({@damage 2d4 + 9}) piercing damage, plus 2 ({@damage 1d4}) poison damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Swarm Spirit Spiders (9th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Swarm Spirit Wasps (2nd level)",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "beast",
+				"swarmSize": "T"
+			},
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "10"
+			},
+			"speed": {
+				"fly": 30
+			},
+			"str": 3,
+			"dex": 13,
+			"con": 10,
+			"int": 1,
+			"wis": 7,
+			"cha": 1,
+			"passive": 8,
+			"cr": "0",
+			"shortName": "Swarm Spirit Wasps (2nd level)",
+			"languages": [
+				"understands the languages you speak"
+			],
+			"senses": [
+				"blindsight 10 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"trait": [
+				{
+					"name": "Swarm",
+					"entries": [
+						"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny creature.The swarm can't regain hit points or gain temporaryhit points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The swarm makes a number of attacks equal to 1 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}7 ({@damage 2d4 + 2}) piercing damage, plus 2 ({@damage 1d4}) poison damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Swarm Spirit Wasps (2nd level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Swarm Spirit Wasps (3rd level)",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "beast",
+				"swarmSize": "T"
+			},
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "15"
+			},
+			"speed": {
+				"fly": 30
+			},
+			"str": 3,
+			"dex": 13,
+			"con": 10,
+			"int": 1,
+			"wis": 7,
+			"cha": 1,
+			"passive": 8,
+			"cr": "0",
+			"shortName": "Swarm Spirit Wasps (3rd level)",
+			"languages": [
+				"understands the languages you speak"
+			],
+			"senses": [
+				"blindsight 10 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"trait": [
+				{
+					"name": "Swarm",
+					"entries": [
+						"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny creature.The swarm can't regain hit points or gain temporaryhit points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The swarm makes a number of attacks equal to 1 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}8 ({@damage 2d4 + 3}) piercing damage, plus 2 ({@damage 1d4}) poison damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Swarm Spirit Wasps (3rd level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Swarm Spirit Wasps (4th level)",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "beast",
+				"swarmSize": "T"
+			},
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "20"
+			},
+			"speed": {
+				"fly": 30
+			},
+			"str": 3,
+			"dex": 13,
+			"con": 10,
+			"int": 1,
+			"wis": 7,
+			"cha": 1,
+			"passive": 8,
+			"cr": "0",
+			"shortName": "Swarm Spirit Wasps (4th level)",
+			"languages": [
+				"understands the languages you speak"
+			],
+			"senses": [
+				"blindsight 10 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"trait": [
+				{
+					"name": "Swarm",
+					"entries": [
+						"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny creature.The swarm can't regain hit points or gain temporaryhit points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The swarm makes a number of attacks equal to 2 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}9 ({@damage 2d4 + 4}) piercing damage, plus 2 ({@damage 1d4}) poison damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Swarm Spirit Wasps (4th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Swarm Spirit Wasps (5th level)",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "beast",
+				"swarmSize": "T"
+			},
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "25"
+			},
+			"speed": {
+				"fly": 30
+			},
+			"str": 3,
+			"dex": 13,
+			"con": 10,
+			"int": 1,
+			"wis": 7,
+			"cha": 1,
+			"passive": 8,
+			"cr": "0",
+			"shortName": "Swarm Spirit Wasps (5th level)",
+			"languages": [
+				"understands the languages you speak"
+			],
+			"senses": [
+				"blindsight 10 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"trait": [
+				{
+					"name": "Swarm",
+					"entries": [
+						"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny creature.The swarm can't regain hit points or gain temporaryhit points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The swarm makes a number of attacks equal to 2 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}10 ({@damage 2d4 + 5}) piercing damage, plus 2 ({@damage 1d4}) poison damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Swarm Spirit Wasps (5th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Swarm Spirit Wasps (6th level)",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "beast",
+				"swarmSize": "T"
+			},
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "30"
+			},
+			"speed": {
+				"fly": 30
+			},
+			"str": 3,
+			"dex": 13,
+			"con": 10,
+			"int": 1,
+			"wis": 7,
+			"cha": 1,
+			"passive": 8,
+			"cr": "0",
+			"shortName": "Swarm Spirit Wasps (6th level)",
+			"languages": [
+				"understands the languages you speak"
+			],
+			"senses": [
+				"blindsight 10 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"trait": [
+				{
+					"name": "Swarm",
+					"entries": [
+						"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny creature.The swarm can't regain hit points or gain temporaryhit points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The swarm makes a number of attacks equal to 3 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}11 ({@damage 2d4 + 6}) piercing damage, plus 2 ({@damage 1d4}) poison damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Swarm Spirit Wasps (6th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Swarm Spirit Wasps (7th level)",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "beast",
+				"swarmSize": "T"
+			},
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "35"
+			},
+			"speed": {
+				"fly": 30
+			},
+			"str": 3,
+			"dex": 13,
+			"con": 10,
+			"int": 1,
+			"wis": 7,
+			"cha": 1,
+			"passive": 8,
+			"cr": "0",
+			"shortName": "Swarm Spirit Wasps (7th level)",
+			"languages": [
+				"understands the languages you speak"
+			],
+			"senses": [
+				"blindsight 10 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"trait": [
+				{
+					"name": "Swarm",
+					"entries": [
+						"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny creature.The swarm can't regain hit points or gain temporaryhit points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The swarm makes a number of attacks equal to 3 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}12 ({@damage 2d4 + 7}) piercing damage, plus 2 ({@damage 1d4}) poison damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Swarm Spirit Wasps (7th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Swarm Spirit Wasps (8th level)",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "beast",
+				"swarmSize": "T"
+			},
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "40"
+			},
+			"speed": {
+				"fly": 30
+			},
+			"str": 3,
+			"dex": 13,
+			"con": 10,
+			"int": 1,
+			"wis": 7,
+			"cha": 1,
+			"passive": 8,
+			"cr": "0",
+			"shortName": "Swarm Spirit Wasps (8th level)",
+			"languages": [
+				"understands the languages you speak"
+			],
+			"senses": [
+				"blindsight 10 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"trait": [
+				{
+					"name": "Swarm",
+					"entries": [
+						"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny creature.The swarm can't regain hit points or gain temporaryhit points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The swarm makes a number of attacks equal to 4 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}13 ({@damage 2d4 + 8}) piercing damage, plus 2 ({@damage 1d4}) poison damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Swarm Spirit Wasps (8th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Swarm Spirit Wasps (9th level)",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "beast",
+				"swarmSize": "T"
+			},
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "45"
+			},
+			"speed": {
+				"fly": 30
+			},
+			"str": 3,
+			"dex": 13,
+			"con": 10,
+			"int": 1,
+			"wis": 7,
+			"cha": 1,
+			"passive": 8,
+			"cr": "0",
+			"shortName": "Swarm Spirit Wasps (9th level)",
+			"languages": [
+				"understands the languages you speak"
+			],
+			"senses": [
+				"blindsight 10 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"trait": [
+				{
+					"name": "Swarm",
+					"entries": [
+						"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny creature.The swarm can't regain hit points or gain temporaryhit points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The swarm makes a number of attacks equal to 4 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}14 ({@damage 2d4 + 9}) piercing damage, plus 2 ({@damage 1d4}) poison damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Swarm Spirit Wasps (9th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Swarm Spirit Quippers (2nd level)",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "beast",
+				"swarmSize": "T"
+			},
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "10"
+			},
+			"speed": {
+				"fly": 30
+			},
+			"str": 3,
+			"dex": 13,
+			"con": 10,
+			"int": 1,
+			"wis": 7,
+			"cha": 1,
+			"passive": 8,
+			"cr": "0",
+			"shortName": "Swarm Spirit Quippers (2nd level)",
+			"languages": [
+				"understands the languages you speak"
+			],
+			"senses": [
+				"blindsight 10 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"trait": [
+				{
+					"name": "Swarm",
+					"entries": [
+						"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny creature.The swarm can't regain hit points or gain temporaryhit points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The swarm makes a number of attacks equal to 1 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}7 ({@damage 2d4 + 2}) piercing damage, plus 2 ({@damage 1d4}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Swarm Spirit Quippers (2nd level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Swarm Spirit Quippers (3rd level)",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "beast",
+				"swarmSize": "T"
+			},
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "15"
+			},
+			"speed": {
+				"fly": 30
+			},
+			"str": 3,
+			"dex": 13,
+			"con": 10,
+			"int": 1,
+			"wis": 7,
+			"cha": 1,
+			"passive": 8,
+			"cr": "0",
+			"shortName": "Swarm Spirit Quippers (3rd level)",
+			"languages": [
+				"understands the languages you speak"
+			],
+			"senses": [
+				"blindsight 10 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"trait": [
+				{
+					"name": "Swarm",
+					"entries": [
+						"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny creature.The swarm can't regain hit points or gain temporaryhit points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The swarm makes a number of attacks equal to 1 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}8 ({@damage 2d4 + 3}) piercing damage, plus 2 ({@damage 1d4}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Swarm Spirit Quippers (3rd level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Swarm Spirit Quippers (4th level)",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "beast",
+				"swarmSize": "T"
+			},
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "20"
+			},
+			"speed": {
+				"fly": 30
+			},
+			"str": 3,
+			"dex": 13,
+			"con": 10,
+			"int": 1,
+			"wis": 7,
+			"cha": 1,
+			"passive": 8,
+			"cr": "0",
+			"shortName": "Swarm Spirit Quippers (4th level)",
+			"languages": [
+				"understands the languages you speak"
+			],
+			"senses": [
+				"blindsight 10 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"trait": [
+				{
+					"name": "Swarm",
+					"entries": [
+						"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny creature.The swarm can't regain hit points or gain temporaryhit points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The swarm makes a number of attacks equal to 2 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}9 ({@damage 2d4 + 4}) piercing damage, plus 2 ({@damage 1d4}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Swarm Spirit Quippers (4th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Swarm Spirit Quippers (5th level)",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "beast",
+				"swarmSize": "T"
+			},
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "25"
+			},
+			"speed": {
+				"fly": 30
+			},
+			"str": 3,
+			"dex": 13,
+			"con": 10,
+			"int": 1,
+			"wis": 7,
+			"cha": 1,
+			"passive": 8,
+			"cr": "0",
+			"shortName": "Swarm Spirit Quippers (5th level)",
+			"languages": [
+				"understands the languages you speak"
+			],
+			"senses": [
+				"blindsight 10 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"trait": [
+				{
+					"name": "Swarm",
+					"entries": [
+						"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny creature.The swarm can't regain hit points or gain temporaryhit points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The swarm makes a number of attacks equal to 2 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}10 ({@damage 2d4 + 5}) piercing damage, plus 2 ({@damage 1d4}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Swarm Spirit Quippers (5th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Swarm Spirit Quippers (6th level)",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "beast",
+				"swarmSize": "T"
+			},
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "30"
+			},
+			"speed": {
+				"fly": 30
+			},
+			"str": 3,
+			"dex": 13,
+			"con": 10,
+			"int": 1,
+			"wis": 7,
+			"cha": 1,
+			"passive": 8,
+			"cr": "0",
+			"shortName": "Swarm Spirit Quippers (6th level)",
+			"languages": [
+				"understands the languages you speak"
+			],
+			"senses": [
+				"blindsight 10 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"trait": [
+				{
+					"name": "Swarm",
+					"entries": [
+						"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny creature.The swarm can't regain hit points or gain temporaryhit points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The swarm makes a number of attacks equal to 3 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}11 ({@damage 2d4 + 6}) piercing damage, plus 2 ({@damage 1d4}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Swarm Spirit Quippers (6th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Swarm Spirit Quippers (7th level)",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "beast",
+				"swarmSize": "T"
+			},
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "35"
+			},
+			"speed": {
+				"fly": 30
+			},
+			"str": 3,
+			"dex": 13,
+			"con": 10,
+			"int": 1,
+			"wis": 7,
+			"cha": 1,
+			"passive": 8,
+			"cr": "0",
+			"shortName": "Swarm Spirit Quippers (7th level)",
+			"languages": [
+				"understands the languages you speak"
+			],
+			"senses": [
+				"blindsight 10 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"trait": [
+				{
+					"name": "Swarm",
+					"entries": [
+						"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny creature.The swarm can't regain hit points or gain temporaryhit points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The swarm makes a number of attacks equal to 3 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}12 ({@damage 2d4 + 7}) piercing damage, plus 2 ({@damage 1d4}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Swarm Spirit Quippers (7th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Swarm Spirit Quippers (8th level)",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "beast",
+				"swarmSize": "T"
+			},
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "40"
+			},
+			"speed": {
+				"fly": 30
+			},
+			"str": 3,
+			"dex": 13,
+			"con": 10,
+			"int": 1,
+			"wis": 7,
+			"cha": 1,
+			"passive": 8,
+			"cr": "0",
+			"shortName": "Swarm Spirit Quippers (8th level)",
+			"languages": [
+				"understands the languages you speak"
+			],
+			"senses": [
+				"blindsight 10 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"trait": [
+				{
+					"name": "Swarm",
+					"entries": [
+						"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny creature.The swarm can't regain hit points or gain temporaryhit points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The swarm makes a number of attacks equal to 4 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}13 ({@damage 2d4 + 8}) piercing damage, plus 2 ({@damage 1d4}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Swarm Spirit Quippers (8th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Swarm Spirit Quippers (9th level)",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "beast",
+				"swarmSize": "T"
+			},
+			"source": "KTSS",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "45"
+			},
+			"speed": {
+				"fly": 30
+			},
+			"str": 3,
+			"dex": 13,
+			"con": 10,
+			"int": 1,
+			"wis": 7,
+			"cha": 1,
+			"passive": 8,
+			"cr": "0",
+			"shortName": "Swarm Spirit Quippers (9th level)",
+			"languages": [
+				"understands the languages you speak"
+			],
+			"senses": [
+				"blindsight 10 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"trait": [
+				{
+					"name": "Swarm",
+					"entries": [
+						"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny creature.The swarm can't regain hit points or gain temporaryhit points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The swarm makes a number of attacks equal to 4 (half this spell's level (rounded down))."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 0} + your spell attack modifier to hit, reach 5 ft., one target. {@h}14 ({@damage 2d4 + 9}) piercing damage, plus 2 ({@damage 1d4}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@link Swarm Spirit Quippers (9th level)|https://www.gmbinder.com/share/-Mg9CDdOF59xQOCp2sOO}"
 				],
 				"images": [
 					{
