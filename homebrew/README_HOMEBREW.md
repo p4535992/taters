@@ -29,10 +29,18 @@ TODO
 - BREW-314 Arcane Marksman - CaelReader (https://drive.google.com/file/d/0B5ttoyMfsaC7YTZtMHlFbDl0OHM/view)
 
 =============================================================================================
+- BREW 335 The magus (https://www.dmsguild.com/product/200237/the-Magus-Class)
+
+- BREW-129 Vorpal Dice Press - Variant Fighter (https://www.gmbinder.com/share/-MMLTlJXwhLTVxLybioH)
+- BREW-128 Sorcerous Origin Spell Variants (https://old.reddit.com/r/UnearthedArcana/comments/bdode0/variant_fighter_reupload_vdp_version/)
+
+
 
 - BREW-288 Psion V1.5 Update by KibblesTasty (https://old.reddit.com/r/UnearthedArcana/comments/oa4w8q/kibbles_psion_v15_read_minds_and_break_them/)
 
-- BREW-278 Grim Press - Adaptable NPCs I & II (https://www.dmsguild.com/product/262588/Adaptable-NPCs)
+- BREW-121 Stuart Broz - NPCs of Eberron: The Dragonmarked (https://www.dmsguild.com/product/298418/NPCs-of-Eberron-The-Dragonmarked) costa
+- BREW-278 Grim Press - Adaptable NPCs I & II (https://www.dmsguild.com/product/262588/Adaptable-NPCs) costa
+
 
 - BREW-243 Darklords of Ravenloft (https://www.dmsguild.com/product/360044/Darklords-of-Ravenloft)
 
