@@ -29,10 +29,21 @@ TODO
 - BREW-314 Arcane Marksman - CaelReader (https://drive.google.com/file/d/0B5ttoyMfsaC7YTZtMHlFbDl0OHM/view)
 
 =============================================================================================
+
+- BREW-324 Ritual Grafting, D Lawson (https://www.dmsguild.com/product/263060/Ritual-Grafting)
+- BREW-309 Raiders of the Serpent Sea: Player's Guide - FREE https://www.drivethrurpg.com/product/373264/Raiders-of-the-Serpent-Sea-Players-Guide--FREE
+- BREW-129 Vorpal Dice Press - Variant Fighter (https://old.reddit.com/r/UnearthedArcana/comments/bdode0/variant_fighter_reupload_vdp_version/)
+- BREW-128 Sorcerous Origin Spell Variants (https://www.gmbinder.com/share/-MMLTlJXwhLTVxLybioH)
+
+=============================================================================================
+
+
+- BREW-320 Mythic Eberron https://www.dmsguild.com/product/329253/Mythic-Eberron
+- BREW-322 QL Games - The Draconomicon - https://www.dmsguild.com/product/367945/The-Draconomicon
+
 - BREW 335 The magus (https://www.dmsguild.com/product/200237/the-Magus-Class)
 
-- BREW-129 Vorpal Dice Press - Variant Fighter (https://www.gmbinder.com/share/-MMLTlJXwhLTVxLybioH)
-- BREW-128 Sorcerous Origin Spell Variants (https://old.reddit.com/r/UnearthedArcana/comments/bdode0/variant_fighter_reupload_vdp_version/)
+- BREW-527 KibblesTasty/Adventurer/kthomebrew.com https://www.gmbinder.com/share/-MsNRg8I_MBhYtXuVYvL
 
 
 
