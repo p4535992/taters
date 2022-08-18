@@ -113,7 +113,7 @@
 				}
 			],
 			"subclassFeatures": [
-				"Variant Magic|Sorcerer|PHB|Divine Soul (Variant Magic)|GSOSV|1",
+				"Variant Divine Magic|Sorcerer|PHB|Divine Soul (Variant Magic)|GSOSV|1",
 				"Divine Soul|Sorcerer|PHB|Divine Soul|XGE|1",
 				"Empowered Healing|Sorcerer|PHB|Divine Soul|XGE|6",
 				"Otherworldly Wings|Sorcerer|PHB|Divine Soul|XGE|14",
@@ -220,11 +220,170 @@
 				"Dragon Wings|Sorcerer|PHB|Draconic|PHB|14",
 				"Draconic Presence|Sorcerer|PHB|Draconic|PHB|18"
 			]
+		},
+		{
+			"name": "Shadow Magic (Variant Magic)",
+			"shortName": "Shadow (Variant Magic)",
+			"source": "GSOSV",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"page": 50,
+			"subclassSpells": [
+				"inflict wounds|phb",
+				"false life|phb",
+				"pass without trace|phb",
+				"shadow blade|xge",
+				"nondetection|phb",
+				"summon shadowspawn|tce",
+				"blight|phb",
+				"shadow of moil|xge",
+				"antilife shell|phb",
+				"creation|phb"
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"chill touch#c",
+							"false life"
+						],
+						"3": [
+							"shadow blade|xge"
+						],
+						"5": [
+							"summon shadowspawn|tce"
+						],
+						"7": [
+							"shadow of moil|xge"
+						],
+						"9": [
+							"mislead"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Shadowfell Magic|Sorcerer|PHB|Shadow (Variant Magic)|GSOSV|1",
+				"Shadow Magic|Sorcerer|PHB|Shadow|XGE|1",
+				"Hound of Ill Omen|Sorcerer|PHB|Shadow|XGE|6",
+				"Shadow Walk|Sorcerer|PHB|Shadow|XGE|14",
+				"Umbral Form|Sorcerer|PHB|Shadow|XGE|18"
+			]
+		},
+		{
+			"name": "Storm Sorcery (Variant Magic)",
+			"shortName": "Storm (Variant Magic)",
+			"source": "GSOSV",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"page": 14,
+			"otherSources": [
+				{
+					"source": "XGE",
+					"page": 51
+				},
+				{
+					"source": "SCAG",
+					"page": 137
+				}
+			],
+			"subclassSpells": [
+				"thunderclap|xge",
+				"thunderwave",
+				"levitate",
+				"call lightning",
+				"conjure minor elementals",
+				"conjure elemental",
+				"fog cloud|phb",
+				"thunderwave|phb}",
+				"shatter|phb",
+				"skywrite|xge}",
+				"call lightning|phb",
+				"fly|phb}",
+				"ice storm|phb",
+				"storm sphere|xge}",
+				"control winds|xge",
+				"destructive wave|phb}"
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"thunderclap|xge#c",
+							"thunderwave"
+						],
+						"3": [
+							"levitate"
+						],
+						"5": [
+							"call lightning"
+						],
+						"7": [
+							"conjure minor elementals"
+						],
+						"9": [
+							"conjure elemental"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Storm Magic|Sorcerer|PHB|Storm (Variant Magic)|GSOSV|1",
+				"Storm Sorcery|Sorcerer|PHB|Storm|XGE|1",
+				"Heart of the Storm|Sorcerer|PHB|Storm|XGE|6",
+				"Storm's Fury|Sorcerer|PHB|Storm|XGE|14",
+				"Wind Soul|Sorcerer|PHB|Storm|XGE|18"
+			]
+		},
+		{
+			"name": "Wild Magic (Variant Magic)",
+			"shortName": "Wild (Variant Magic)",
+			"source": "GSOSV",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"page": 103,
+			"subclassSpells": [
+				"dancing lights",
+				"chaos bolt",
+				"crown of madness",
+				"plant growth",
+				"conjure woodland beings",
+				"insect plague"
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"dancing lights#c",
+							"chaos bolt"
+						],
+						"3": [
+							"crown of madness"
+						],
+						"5": [
+							"plant growth"
+						],
+						"7": [
+							"conjure woodland beings"
+						],
+						"9": [
+							"insect plague"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Wilder Magic|Sorcerer|PHB|Wild (Variant Magic)|GSOSV|1",
+				"Wild Magic|Sorcerer|PHB|Wild|PHB|1",
+				"Bend Luck|Sorcerer|PHB|Wild|PHB|6",
+				"Controlled Chaos|Sorcerer|PHB|Wild|PHB|14",
+				"Spell Bombardment|Sorcerer|PHB|Wild|PHB|18"
+			]
 		}
 	],
 	"subclassFeature": [
 		{
-			"name": "Variant Magic",
+			"name": "Variant Divine Magic",
 			"source": "GSOSV",
 			"className": "Sorcerer",
 			"classSource": "PHB",
@@ -795,6 +954,298 @@
 					]
 				},
 				"{@i Note: spells for each dragon color were curated in part from the innate spellcasting variant feature of some dragons.}"
+			]
+		},
+		{
+			"name": "Shadowfell Magic",
+			"source": "GSOSV",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Shadow (Variant Magic)",
+			"subclassSource": "GSOSV",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"You learn additional spells when you reach certain levels in this class, as shown on the Shadowfell Spells table. Each spell counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.",
+				"Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be an illusion or necromancy spell from the sorcerer, warlock, or wizard spell list.",
+				{
+					"type": "table",
+					"caption": "Shadowfell Spells",
+					"colLabels": [
+						"Sorcerer Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell inflict wounds|phb}, {@spell false life|phb}"
+						],
+						[
+							"3rd",
+							"{@spell pass without trace|phb}, {@spell shadow blade|xge}"
+						],
+						[
+							"5th",
+							"{@spell nondetection|phb}, {@spell summon shadowspawn|tce}"
+						],
+						[
+							"7th",
+							"{@spell blight|phb}, {@spell shadow of moil|xge}"
+						],
+						[
+							"9th",
+							"{@spell antilife shell|phb}, {@spell creation|phb}"
+						]
+					]
+				},
+				"{@i Note: Summon Shadowspawn is a new spell available in Tasha's Cauldron of Everything. Replace this spell with raise dead if you do not have access to that spell.}",
+				"{@i The Eyes of the Dark feature includes learning the spell darkness. If you feel three 2nd-level spells is too much for your game, remove one of the 2nd-level spells made available on this list.}"
+			]
+		},
+		{
+			"name": "Storm Magic",
+			"source": "GSOSV",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Storm (Variant Magic)",
+			"subclassSource": "GSOSV",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"You learn additional spells when you reach certain levels in this class, as shown on the Storm Spells table. Each spell counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.",
+				"Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be a conjuration or evocation spell from the sorcerer or wizard spell list.",
+				{
+					"type": "table",
+					"caption": "Storm Spells",
+					"colLabels": [
+						"Sorcerer Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell fog cloud|phb}, {@spell thunderwave|phb}"
+						],
+						[
+							"3rd",
+							"{@spell shatter|phb}, {@spell skywrite|xge}"
+						],
+						[
+							"5th",
+							"{@spell call lightning|phb}, {@spell fly|phb}"
+						],
+						[
+							"7th",
+							"{@spell ice storm|phb}, {@spell storm sphere|xge}"
+						],
+						[
+							"9th",
+							"{@spell control winds|xge}, {@spell destructive wave|phb}"
+						]
+					]
+				},
+				"{@i Note: the spell change upon level up could also include weather-based spells from the druid spell list, but as written in the above feature, this would allow for too many off-flavor spells. Talk to your GM to see if other weather-based spell are right for you. This could also include the selection of higher level spells, such as tsunami, control weather, and storm of vengeance which would normally not be available to a Storm Sorcerer.}"
+			]
+		},
+		{
+			"name": "Wilder Magic",
+			"source": "GSOSV",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Wild (Variant Magic)",
+			"subclassSource": "GSOSV",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"As an action, you can expend a spell slot of 5th level or lower to attempt to cast a Sorcerer spell you do not know of equal to or lower level than the spell slot you expended. Before you resolve the spell, you must make a Charisma saving throw. The DC is 10 + twice the level of the spell slot you expended.",
+				"On a successful save, you cast the spell as normal. On a failed save, you cast a different spell, randomly determined on the tables below. In addition, you trigger a Wild Magic Surge.",
+				"Starting at 14th level, any time you roll on the tables below you can roll twice and use either number.",
+				{
+					"type": "table",
+					"caption": "Wild Spells 1st-Level Spells",
+					"colLabels": [
+						"d6",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1",
+							"{@spell burning hands|phb}"
+						],
+						[
+							"2",
+							"{@spell chaos bolt|xge}"
+						],
+						[
+							"3",
+							"{@spell color spray|phb}"
+						],
+						[
+							"4",
+							"{@spell faerie fire|phb}"
+						],
+						[
+							"5",
+							"{@spell fog cloud|phb}"
+						],
+						[
+							"6",
+							"{@spell thunderwave|phb}"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Wild Spells 2nd-Level Spells",
+					"colLabels": [
+						"d6",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1",
+							"{@spell blur|phb}"
+						],
+						[
+							"2",
+							"{@spell gust of wind|phb}"
+						],
+						[
+							"3",
+							"{@spell heat metal|phb}"
+						],
+						[
+							"4",
+							"{@spell melf's acid arrow|phb}"
+						],
+						[
+							"5",
+							"{@spell scorching ray|phb}"
+						],
+						[
+							"6",
+							"{@spell shatter|phb}"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Wild Spells 3rd-Level Spells",
+					"colLabels": [
+						"d6",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1",
+							"{@spell fear|phb}"
+						],
+						[
+							"2",
+							"{@spell feign death|phb}"
+						],
+						[
+							"3",
+							"{@spell fireball|phb}"
+						],
+						[
+							"4",
+							"{@spell gaseous form|phb}"
+						],
+						[
+							"5",
+							"{@spell sleet storm|phb}"
+						],
+						[
+							"6",
+							"{@spell stinking cloud|phb}"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Wild Spells 4th-Level Spells",
+					"colLabels": [
+						"d4",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1",
+							"{@spell confusion|phb}"
+						],
+						[
+							"2",
+							"{@spell conjure minor elementals|phb}"
+						],
+						[
+							"3",
+							"{@spell evard's black tentacles|phb}"
+						],
+						[
+							"4",
+							"{@spell ice storm|phb}"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Wild Spells 5th-Level Spells",
+					"colLabels": [
+						"d4",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1",
+							"{@spell animate objects|phb}"
+						],
+						[
+							"2",
+							"{@spell cloudkill|phb}"
+						],
+						[
+							"3",
+							"{@spell cone of cold|phb}"
+						],
+						[
+							"4",
+							"{@spell flame strike|phb}"
+						]
+					]
+				},
+				"Note: this class feature is almost exactly the same as the Mizzium Apparatus from GGR p179. This felt much more thematic than certain set spells and is much less clunky than randomly determining subclass spells every day, which was the original feature. Some might assume this is too strong, but it is only the equivalent of an uncommon magic item.",
+				"Another potential issue is that a sufficiently high level wild magic sorcerer might get to the point of effectively knowing every 1st and 2nd level spell. This is not until very high levels, so should not be an issue.",
+				"The guaranteed Wild Magic Surge was added to combat the issue that surging relies entirely on the DM.",
+				"If the ability to choose is deemed too powerful, the entire feature can be replaced with the ability to roll on the table when the sorcerer chooses to do so. This triggers a Wild Magic Surge as normal. Alternatively, the DC for the save can be increased to 13 + twice spell level to make the casting of any spell a bit trickier."
 			]
 		}
 	]
