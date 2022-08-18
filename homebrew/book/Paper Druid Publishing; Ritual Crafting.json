@@ -46,7 +46,7 @@
                     "level": {
                         "level": 5
                     },
-                    "other": "proficiency in Religion"
+                    "other": "Proficiency in Religion"
 				}
 			],
 			"entries": [
@@ -62,8 +62,88 @@
 					"name": "Benefit",
 					"type": "entries",
 					"entries": [
-						"A character with at least two deathless grafts gains advantage on saves against poison or disease. A character with three grafts gains resistance against poison and disease damage. Once the character receives their fourth graft, they become immune to poisons and diseases altogether, and there are no further bonuses for the fifth graft aside from what abilities the fifth graft gives on its own."
+						"You can create and attach any deathless graft whose prerequisites you meet (see the individual graft for the specific requirements).",
+                        "A character with at least two deathless grafts gains advantage on saves against poison or disease. A character with three grafts gains resistance against poison and disease damage. Once the character receives their fourth graft, they become immune to poisons and diseases altogether, and there are no further bonuses for the fifth graft aside from what abilities the fifth graft gives on its own."
 					]
+				}
+            ]
+		},
+        {
+			"name": "Elemental Grafter",
+			"source": "PDPRC",
+			"page": 5,
+			"featureType": [
+				"OF:PDPRC"
+			],
+            "prerequisite": [
+				{
+                    "level": {
+                        "level": 5
+                    },
+                    "other": "Proficiency in Arcana,"
+				}
+			],
+			"entries": [
+				"You can create and attach any elemental graft whose prerequisites you meet.",
+                "A character with at least two elemental grafts of the same variety (air, earth, water, or fire) gains a particular benefit, but only as long as they don't have a graft of the opposing element.",
+                {
+					"name": "Prerequisites",
+					"type": "entries",
+					"entries": [
+						"Proficiency in Arcana, caster level 5."
+					]
+				},
+                {
+					"name": "Benefit",
+					"type": "entries",
+					"entries": [
+						"You can create and attach any elemental graft whose prerequisites you meet.",
+                        "A character with at least two elemental grafts of the same variety (air, earth, water, or fire) gains a particular benefit, but only as long as they don't have a graft of the opposing element.",
+                        {
+							"type": "list",
+							"items": [
+                                "A character with at least two air grafts (and no earth grafts) gains an extra 5 feet of movement per graft as long as they aren't wearing heavy armor or encumbered.",
+                                "A character with at least two earth grafts (and no water grafts) gains +1 AC per graft.",
+                                "A character with at least two fire grafts (and no water grafts) gains advantage on Dexterity saves and Initiative.",
+                                "A character with at least two water grafts (and no fire grafts) gains a swim speed of 30 feet- if the character already possesses a swim speed, he instead adds 5 feet of swim speed per water graft."
+							]
+						},
+                        "A character may possess grafts of varying types, such as one of fire and one of water, and gain their individual effects, they will merely miss out on the bonus benefits listed above."
+                    ]
+				}
+            ]
+		},
+        {
+			"name": "Eldeen Plantgrafter",
+			"source": "PDPRC",
+			"page": 8,
+			"featureType": [
+				"OF:PDPRC"
+			],
+            "prerequisite": [
+				{
+                    "level": {
+                        "level": 5
+                    },
+                    "other": "Proficiency in Nature"
+				}
+			],
+			"entries": [
+				"You can create and apply plant grafts onto others, granting the recipients of your grafts new, potent abilities.",
+                {
+					"name": "Prerequisites",
+					"type": "entries",
+					"entries": [
+						"Proficiency in Nature, caster level 5."
+					]
+				},
+                {
+					"name": "Benefit",
+					"type": "entries",
+					"entries": [
+                        "You can create and attach any plant graft whose prerequisites you meet.",
+                        "A character with at least two plant grafts has advantage on Wisdom saving throws against mind-altering effects."
+                    ]
 				}
             ]
 		}
@@ -336,9 +416,106 @@
                             "name": "Arms of the Ancestor",
                             "page": 3,
                             "entries": [
-                                ""
+                                "The flesh from the arm of an undying ancestor has been grafted over your own arm. You gain the benefit of its great strength, as well as the ability to to channel positive energy to either beneficial or harmful ends.",
+                                "{@b Graft Location.} Arms.",
+                                "{@b Description.} One of your arms is incongruous with the rest of your appearance, sheathed in the deathless flesh of and undying ancestor. Now taut and corpse-white in color, the flesh of the arm of the ancestor is withered and dry to the touch, but this appearance conceals great strength. Your fingers are long and nearly skeletal, and the arm smells of a dry and dusty tomb.",
+                                "{@b Activation.} The arm can channel positive energy as a standard action that can either heal the living or harm the undead. Both require a melee touch.",
+                                "{@b Effect.} The arm of the ancestor grants you advantage on Climb and Swim checks, advantage when grappling, and any weapon wielded by this arm gets a +1 to its damage rolls.",
+                                "In addition to this, you can touch a creature to bestow a beneficial or harmful effect. Living creatures you touch gain 3 (1d6) temporary hit points, and undead creatures take 3 (1d6) radiant damage. This effect recharges after a short rest.",
+                                "{@b Sacrifice.} Adding this graft takes a physical toll, numbing your sense of touch and making the new arm less nimble than you're used to. As a result, you take a -1 to your Dexterity score.",
+                                "{@b Construction.} Requires {@i {@optfeature Deathless Fleshgrafter|PDPRC}}, {@spell Enhance Ability|PHB} spell (to give the graft the Bull's Strength ability during creation), 3,250 gp, and 9 days.",
+                                "{@b Graft Donor.} Flesh from the arm of a deathless creature.",
+                                "{@b Graft Sacrifice.} -4 hp, -1 Dexterity.",
+                                "{@b Price.} 6,500 gp."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Bone Plating",
+                            "page": 3,
+                            "entries": [
+                                "Your skin is hardened with pieces of bone grown from samples taken from one of the honored deathless. As a result, your vulnerable are now covered with a protective bony layer.",
+                                "{@b Graft Location.} Skin.",
+                                "{@b Description.} Thin, strong layers of bone cover your skin. The bone is pale white, stretching over every vulnerable area from your collarbone to your ankles. The bone plating is smooth to the touch, and it moves as you do, not hindering your movements in the least. The plating and your skin are one featureless surface; no one can tell where one ends and the other begins.",
+                                "{@b Activation.} Bone plating is always active once the graft is installed. Using it requires no action on your part.",
+                                "{@b Effect.} Your armor naturally improves by 1. Because the graft improves your natural armor, it stacks fully with spells (such as the {@spell Barkskin} spell).",
+                                "Bone plating also provides a resistance to cold damage, regardless of its origin.",
+                                "{@b Construction.} Requires {@i {@optfeature Deathless Fleshgrafter|PDPRC}}, 3,700 gp, and 9 days.",
+                                "{@b Graft Donor.} A piece of bone from a deathless creature.",
+                                "{@b Graft Sacrifice.} -4 hp.",
+                                "{@b Price.} 8,000 gp."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Deathless Flesh",
+                            "page": 3,
+                            "entries": [
+                                "This graft fuses to the muscles and subdermal tissues of your entire body, giving your flesh the resilience of the deathless. You become more resistant to damage, and you can shrug off blows that would normally drop a creature of your size.",
+                                "{@b Graft Location.} Flesh.",
+                                "{@b Description.} Deathless flesh makes your body look slighter, even frail. Your muscles appear almost shrunken beneath your skin, which takes on a deathly pallor.",
+                                "{@b Activation.} Deathless flesh is always active once the graft is installed. Using it requires no action on your part.",
+                                "{@b Effect.} You gain a benefit that grants you the fortitude to resist most critical attacks against you. Every time you are critically hit, you have a 50% chance to ignore the extra damage. In addition, once per long rest, you have advantage on your first death saving throw if you are dropped to 0 hp. Unfortunately, this graft takes a heavy toll on your health, and you take a permanent -1 to your Constitution score.",
+                                "{@b Construction.} Requires {@i {@optfeature Deathless Fleshgrafter|PDPRC}}, the {@spell Wish|PHB} spell, 16,500 gp, and 33 days.",
+                                "{@b Graft Donor.} A piece of muscle cut from a deathless creature.",
+                                "{@b Graft Sacrifice.} -1 Consitution.",
+                                "{@b Price.} 30,000 gp."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Deathless Visage",
+                            "page": 4,
+                            "entries": [
+                                "This graft provides a bit of insight into the long-term mindset and wisdom of the undying councilors of Aerenal. The foresight and patience of immortals is terrifying to any mortal creature, and this item can invoke that terror with but a glance. You can also call upon the knowledge of the ancient elves for aid when necessary, but you also feel the weight of the elven nation resting in your shoulders, sometimes interfering with your social interactions.",
+                                "{@b Graft Location.} Head.",
+                                "{@b Description.} This graft is grown over the upper portion of your face. While it does not affect your appearance much, your features tighten slightly, giving your face a gaunter, skulllike visage. Your brow seems weighed down with great concerns.",
+                                "The graft doesn't just cover your face, however, but fuses with the flesh on your head, extending through your skull and into portions of your brain. There, it allows you access to the ancestral memory of the Aereni.",
+                                "When you activate your terrifying glare, your eyes flash black with eternal darkness, and those whom you gaze upon are terrified at the immortality you seem to represent. Prerequisite. This graft can only be given to a creature whose maximum lifespan is at least two hundred years. Activation. Activating the glare attack of this graft is a standard action. The advantage bonus granted to History, Religion, and Nature checks regarding the past can be used as a free action.",
+                                "{@b Effect.} When the deathless visage graft is activated, you can fix your glare upon a single creature within 30 feet that can see you (and be seen by you). This effect is similar to a gaze attack used actively, but it does not affect creatures on their turns as a gaze attack can.",
+                                "The creature you target becomes frightened unless they succeed on a Wisdom saving throw (DC 8 + Proficiency + Cha modifier). Even if they succeed on the saving throw, they are still affected- this is a mind-affecting ability. For one round, the creature has disadvantage on all attack rolls, ability checks, saving throws, and skill checks.",
+                                "The secondary power of the graft allows you to tap into the long memory of the elves. You gain advantage on all History, Religion, and Nature checks that relate to something in the past. The drawback to this graft is the heavy psychological burden it places upon your mind and soul, making you somewhat less socially capabale. You have disadvantage on all Bluff, Diplomacy, Insight, and Intimidate checks made against any other creature other than another Aereni elf or a deathless creature.",
+                                "{@b Construction.} Requires {@i {@optfeature Deathless Fleshgrafter|PDPRC}}, the {@spell Cause Fear|XGE} spell, 16,000 gp, and 32 days.",
+                                "{@b Graft Donor.} Flesh from the scalp of a deathless creature.",
+                                "{@b Graft Sacrifice.} -6 hp.",
+                                "{@b Price.} 31,000 gp."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Legs of the Undying Marcher",
+                            "page": 4,
+                            "entries": [
+                                "Flesh from the legs of an undying donor has been fused to your own legs. You now have the endurance of the deathless, and a memory of past conflicts that grants you better stability and reflexes in battle.",
+                                "{@b Graft Location.} Legs.",
+                                "{@b Description.} Flesh from the legs of one of the undying has been fused to your own legs, completely replacing the natural flesh.",
+                                "Your new limbs are gaunt and seemingly devoid of muscle. Their skin is white as a corpse, and shriveled like that of the undying, but despite their appearance, they are stronger and sturdier than ever. At times, you sometimes even feel your movements guided by your deathless donor.",
+                                "{@b Activation.} The legs are always active once installed.",
+                                "{@b Effect.} Your legs never tire while walking, and so you never need to make Constitution checks to avoid Exhaustion while moving at a forced march. Your legs also hold the accumulated experiences of their deathless donor, resulting in some feelings of premonition that grant you advantage on Dexterity saving throws.",
+                                "Finally, the durability of the legs gives you increased stability, resulting in advantage against being knocked prone or being shoved.",
+                                "{@b Construction.} Requires {@i {@optfeature Deathless Fleshgrafter|PDPRC}}, {@spell Greater Restoration|PHB} spell, 3,000 gp, and 6 days.",
+                                "{@b Graft Donor.} Flesh from the legs of a deathless creature.",
+                                "{@b Graft Sacrifice.} -2 hp.",
+                                "{@b Price.} 6,000 gp."
                             ]
                         }
+                    ]
+				},
+                {
+					"type": "section",
+					"name": "Elemental Grafts",
+					"page": 4,
+					"entries": [
+                        ""
+                    ]
+				}
+                
+                {
+					"type": "section",
+					"name": "",
+					"page": 3,
+					"entries": [
+                        ""
                     ]
 				}
 			]
