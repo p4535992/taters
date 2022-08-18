@@ -23,12 +23,39 @@
 	},
 	"subclass": [
 		{
-			"name": "Divine Soul (Variant Divine Magic)",
-			"shortName": "Divine Soul (Variant Divine Magic)",
+			"name": "Divine Soul (Variant Magic)",
+			"shortName": "Divine Soul (Variant Magic)",
 			"source": "GSOSV",
 			"className": "Sorcerer",
 			"classSource": "PHB",
 			"page": 50,
+			"subclassSpells": [
+				"cure wounds",
+				"prayer of healing",
+				"revivify",
+				"death ward",
+				"greater restoration",
+				"inflict wounds",
+				"ray of enfeeblement",
+				"animate dead",
+				"blight",
+				"danse macabre|xge",
+				"bless",
+				"calm emotions",
+				"remove curse",
+				"banishment",
+				"planar binding",
+				"bane",
+				"crown of madness",
+				"curse",
+				"freedom of movement",
+				"destructive wave",
+				"protection from evil and good",
+				"zone of truth",
+				"spirit guardians",
+				"divination",
+				"dispel evil and good"
+			],
 			"additionalSpells": [
 				{
 					"prepared": {
@@ -85,49 +112,123 @@
 					}
 				}
 			],
-			"subclassSpells": [
-				"cure wounds",
-				"prayer of healing",
-				"revivify",
-				"death ward",
-				"greater restoration",
-				"inflict wounds",
-				"ray of enfeeblement",
-				"animate dead",
-				"blight",
-				"danse macabre|xge",
-				"bless",
-				"calm emotions",
-				"remove curse",
-				"banishment",
-				"planar binding",
-				"bane",
-				"crown of madness",
-				"curse",
-				"freedom of movement",
-				"destructive wave",
-				"protection from evil and good",
-				"zone of truth",
-				"spirit guardians",
-				"divination",
-				"dispel evil and good"
-			],
 			"subclassFeatures": [
-				"Variant Divine Magic|Sorcerer|PHB|Divine Soul (Variant Divine Magic)|GSOSV|1",
+				"Variant Magic|Sorcerer|PHB|Divine Soul (Variant Magic)|GSOSV|1",
 				"Divine Soul|Sorcerer|PHB|Divine Soul|XGE|1",
 				"Empowered Healing|Sorcerer|PHB|Divine Soul|XGE|6",
 				"Otherworldly Wings|Sorcerer|PHB|Divine Soul|XGE|14",
 				"Unearthly Recovery|Sorcerer|PHB|Divine Soul|XGE|18"
 			]
+		},
+		{
+			"name": "Draconic Bloodline (Variant Magic)",
+			"shortName": "Draconic (Variant Magic)",
+			"source": "GSOSV",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"page": 102,
+			"srd": true,
+			"subclassSpells": [
+				"thaumaturgy",
+				"cause fear",
+				"dragon's breath",
+				"fly",
+				"polymorph",
+				"legend lore",
+				"command|phb",
+				"dragon's breath|xge",
+				"fear|phb",
+				"elemental bane|xge",
+				"dominate person|phb",
+				"cause fear|xge",
+				"melf's acid arrow|phb",
+				"water breathing|phb",
+				"vitriolic sphere|xge",
+				"insect plague|phb",
+				"witch bolt|phb",
+				"dust devil|xge",
+				"lightning bolt|phb",
+				"storm sphere|xge",
+				"wall of stone|phb",
+				"sleep|phb",
+				"suggestion|phb",
+				"wind wall|phb",
+				"charm monster|xge",
+				"rary's telepathic bond|phb",
+				"thunderwave|phb",
+				"gust of wind|phb",
+				"tidal wave|xge",
+				"watery sphere|xge",
+				"control winds|xge",
+				"tasha's hideous laughter|phb",
+				"spike growth|phb",
+				"slow|phb",
+				"confusion|phb",
+				"geas|phb",
+				"shield|phb",
+				"scorching ray|phb",
+				"counterspell|phb",
+				"polymorph|phb",
+				"dream|phb",
+				"ray of sickness|phb",
+				"invisibility|phb",
+				"stinking cloud|phb",
+				"hallucinatory terrain|phb",
+				"cloudkill|phb",
+				"burning hands|phb",
+				"aganazzar's scorcher|xge",
+				"fireball|phb",
+				"wall of fire|phb",
+				"immolation|xge",
+				"identify|phb",
+				"hold person|phb",
+				"leomund's tiny hut|phb",
+				"ice storm|phb",
+				"legend lore|phb",
+				"ice knife|xge",
+				"snilloc's snowball swarm|xge",
+				"sleet storm|phb",
+				"fire shield|phb",
+				"cone of cold|phb"
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"thaumaturgy#c",
+							"cause fear"
+						],
+						"3": [
+							"dragon's breath"
+						],
+						"5": [
+							"fly"
+						],
+						"7": [
+							"polymorph"
+						],
+						"9": [
+							"legend lore"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Draconic Magic|Sorcerer|PHB|Draconic (Variant Magic)|GSOSV|1",
+				"Draconic Bloodline|Sorcerer|PHB|Draconic|PHB|1",
+				"Elemental Affinity|Sorcerer|PHB|Draconic|PHB|6",
+				"Dragon Wings|Sorcerer|PHB|Draconic|PHB|14",
+				"Draconic Presence|Sorcerer|PHB|Draconic|PHB|18"
+			]
 		}
 	],
 	"subclassFeature": [
 		{
-			"name": "Variant Divine Magic",
+			"name": "Variant Magic",
 			"source": "GSOSV",
 			"className": "Sorcerer",
 			"classSource": "PHB",
-			"subclassShortName": "Divine Soul (Variant Divine Magic)",
+			"subclassShortName": "Divine Soul (Variant Magic)",
 			"subclassSource": "GSOSV",
 			"level": 1,
 			"header": 1,
@@ -305,6 +406,395 @@
 					]
 				},
 				"{@i Note: some may feel two spells per level is too much for a sorcerer that gets to choose spells from another spell list. In that case, only select one affinity.}"
+			]
+		},
+		{
+			"name": "Draconic Magic",
+			"source": "GSOSV",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Draconic (Variant Magic)",
+			"subclassSource": "GSOSV",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"You learn additional spells when you reach certain levels in this class. Each spell counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know. You learn the spells from the Draconic Spells table below, as well as those on the table of your draconic ancestry.",
+				"Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be an evocation or transmutation spell from the sorcerer or wizard spell list.",
+				{
+					"type": "table",
+					"caption": "Draconic Spells",
+					"colLabels": [
+						"Sorcerer Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell command|phb}"
+						],
+						[
+							"3rd",
+							"{@spell dragon's breath|xge}"
+						],
+						[
+							"5th",
+							"{@spell fear|phb}"
+						],
+						[
+							"7th",
+							"{@spell elemental bane|xge}"
+						],
+						[
+							"9th",
+							"{@spell dominate person|phb}"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Black Dragon Spells",
+					"colLabels": [
+						"Sorcerer Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell cause fear|xge}"
+						],
+						[
+							"3rd",
+							"{@spell melf's acid arrow|phb}"
+						],
+						[
+							"5th",
+							"{@spell water breathing|phb}"
+						],
+						[
+							"7th",
+							"{@spell vitriolic sphere|xge}"
+						],
+						[
+							"9th",
+							"{@spell insect plague|phb}"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Blue Dragon Spells",
+					"colLabels": [
+						"Sorcerer Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell witch bolt|phb}"
+						],
+						[
+							"3rd",
+							"{@spell dust devil|xge}"
+						],
+						[
+							"5th",
+							"{@spell lightning bolt|phb}"
+						],
+						[
+							"7th",
+							"{@spell storm sphere|xge}"
+						],
+						[
+							"9th",
+							"{@spell wall of stone|phb}"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Brass Dragon Spells",
+					"colLabels": [
+						"Sorcerer Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell sleep|phb}"
+						],
+						[
+							"3rd",
+							"{@spell suggestion|phb}"
+						],
+						[
+							"5th",
+							"{@spell wind wall|phb}"
+						],
+						[
+							"7th",
+							"{@spell charm monster|xge}"
+						],
+						[
+							"9th",
+							"{@spell rary's telepathic bond|phb}"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Bronze Dragon Spells",
+					"colLabels": [
+						"Sorcerer Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell thunderwave|phb}"
+						],
+						[
+							"3rd",
+							"{@spell gust of wind|phb}"
+						],
+						[
+							"5th",
+							"{@spell tidal wave|xge}"
+						],
+						[
+							"7th",
+							"{@spell watery sphere|xge}"
+						],
+						[
+							"9th",
+							"{@spell control winds|xge}"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Copper Dragon Spells",
+					"colLabels": [
+						"Sorcerer Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell tasha's hideous laughter|phb}"
+						],
+						[
+							"3rd",
+							"{@spell spike growth|phb}"
+						],
+						[
+							"5th",
+							"{@spell slow|phb}"
+						],
+						[
+							"7th",
+							"{@spell confusion|phb}"
+						],
+						[
+							"9th",
+							"{@spell geas|phb}"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Gold Dragon Spells",
+					"colLabels": [
+						"Sorcerer Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell shield|phb}"
+						],
+						[
+							"3rd",
+							"{@spell scorching ray|phb}"
+						],
+						[
+							"5th",
+							"{@spell counterspell|phb}"
+						],
+						[
+							"7th",
+							"{@spell polymorph|phb}"
+						],
+						[
+							"9th",
+							"{@spell dream|phb}"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Green Dragon Spells",
+					"colLabels": [
+						"Sorcerer Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell ray of sickness|phb}"
+						],
+						[
+							"3rd",
+							"{@spell invisibility|phb}"
+						],
+						[
+							"5th",
+							"{@spell stinking cloud|phb}"
+						],
+						[
+							"7th",
+							"{@spell hallucinatory terrain|phb}"
+						],
+						[
+							"9th",
+							"{@spell cloudkill|phb}"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Red Dragon Spells",
+					"colLabels": [
+						"Sorcerer Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell burning hands|phb}"
+						],
+						[
+							"3rd",
+							"{@spell aganazzar's scorcher|xge}"
+						],
+						[
+							"5th",
+							"{@spell fireball|phb}"
+						],
+						[
+							"7th",
+							"{@spell wall of fire|phb}"
+						],
+						[
+							"9th",
+							"{@spell immolation|xge}"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Silver Dragon Spells",
+					"colLabels": [
+						"Sorcerer Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell identify|phb}"
+						],
+						[
+							"3rd",
+							"{@spell hold person|phb}"
+						],
+						[
+							"5th",
+							"{@spell leomund's tiny hut|phb}"
+						],
+						[
+							"7th",
+							"{@spell ice storm|phb}"
+						],
+						[
+							"9th",
+							"{@spell legend lore|phb}"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "White Dragon Spells",
+					"colLabels": [
+						"Sorcerer Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell ice knife|xge}"
+						],
+						[
+							"3rd",
+							"{@spell snilloc's snowball swarm|xge}"
+						],
+						[
+							"5th",
+							"{@spell sleet storm|phb}"
+						],
+						[
+							"7th",
+							"{@spell fire shield|phb} (chill shield only)"
+						],
+						[
+							"9th",
+							"{@spell cone of cold|phb}"
+						]
+					]
+				},
+				"{@i Note: spells for each dragon color were curated in part from the innate spellcasting variant feature of some dragons.}"
 			]
 		}
 	]
