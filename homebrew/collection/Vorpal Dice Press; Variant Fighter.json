@@ -19,7 +19,7 @@
 			}
 		],
 		"optionalFeatureTypes": {
-			"OF:VDPVF": "Maneuvers variant"
+			"OF:VDPVF": "Variant Fighter"
 		},
 		"dateAdded": 1594364848,
 		"dateLastModified": 1638816223,
@@ -38,6 +38,486 @@
 		}
 	],
 	"optionalfeature": [
+		{
+			"name": "Ascension Shot",
+			"source": "VDPVF",
+			"page": 9,
+			"featureType": [
+				"OF:VDPVF"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Arcane Marksman (Variant Fighter)",
+							"source": "VDPVF",
+							"visible": true
+						}
+					}
+				},
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Arcane Archer",
+							"source": "XGE",
+							"visible": true
+						}
+					}
+				},
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Arcane Marksman (Variant Fighter)",
+							"source": "VDPVF",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"When this shot impacts, it sprouts sinewy tendrils that grip the surface and reinforce the projectile. Once embedded, it can support a weight of up to 300 pounds for a duration of 1 hour, after which the magic fades and it falls to the ground."
+			]
+		},
+		{
+			"name": "Silent Shot",
+			"source": "VDPVF",
+			"page": 9,
+			"featureType": [
+				"OF:VDPVF"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Arcane Marksman (Variant Fighter)",
+							"source": "VDPVF",
+							"visible": true
+						}
+					}
+				},
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Arcane Archer",
+							"source": "XGE",
+							"visible": true
+						}
+					}
+				},
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Arcane Marksman (Variant Fighter)",
+							"source": "VDPVF",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"When this shot impacts, it creates the effect of the minor illusion spell where it impacts. This lasts 1 minute, and uses your maneuver save DC."
+			]
+		},
+		{
+			"name": "Blackout Shot",
+			"source": "VDPVF",
+			"page": 10,
+			"featureType": [
+				"OF:VDPVF"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Arcane Marksman (Variant Fighter)",
+							"source": "VDPVF",
+							"visible": true
+						}
+					}
+				},
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Arcane Archer",
+							"source": "XGE",
+							"visible": true
+						}
+					}
+				},
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Arcane Marksman (Variant Fighter)",
+							"source": "VDPVF",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"When this shot bursts, it creates a harmless globe of inky black magic filling a 30-foot-radius sphere with magical {@spell darkness} that lasts 1 minute."
+			]
+		},
+		{
+			"name": "Flare Shot",
+			"source": "VDPVF",
+			"page": 10,
+			"featureType": [
+				"OF:VDPVF"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Arcane Marksman (Variant Fighter)",
+							"source": "VDPVF",
+							"visible": true
+						}
+					}
+				},
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Arcane Archer",
+							"source": "XGE",
+							"visible": true
+						}
+					}
+				},
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Arcane Marksman (Variant Fighter)",
+							"source": "VDPVF",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"When this shot bursts, it creates a harmless globe of sun light which illuminates a 30-foot-radius sphere with bright light and sheds dim light for an additional 30 feet. The globe slowly descends towards the ground at a rate of 10 feet per round, and lasts only 1 minute."
+			]
+		},
+		{
+			"name": "Spell Shot: Banish",
+			"source": "VDPVF",
+			"page": 10,
+			"featureType": [
+				"OF:VDPVF"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Arcane Marksman (Variant Fighter)",
+							"source": "VDPVF",
+							"visible": true
+						}
+					}
+				},
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Arcane Archer",
+							"source": "XGE",
+							"visible": true
+						}
+					}
+				},
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Arcane Marksman (Variant Fighter)",
+							"source": "VDPVF",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"This shot becomes imbued with abjuration magic. On a hit, you create a ward that hinders the target’s attacks. Until the end of its next turn, any nonmagical weapon attacks made by the target don’t add its Strength or Dexterity modifier to damage dealt.",
+				"{@b Superiority.} The target must succeed on a Charisma saving throw or be banished to a demiplane. While banished this way, its speed is 0 and it is incapacitated. At the end of its next turn, the target reappears in the space it vacated or in the nearest unoccupied space."
+			]
+		},
+		{
+			"name": "Spell Shot: Brute Bane",
+			"source": "VDPVF",
+			"page": 10,
+			"featureType": [
+				"OF:VDPVF"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Arcane Marksman (Variant Fighter)",
+							"source": "VDPVF",
+							"visible": true
+						}
+					}
+				},
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Arcane Archer",
+							"source": "XGE",
+							"visible": true
+						}
+					}
+				},
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Arcane Marksman (Variant Fighter)",
+							"source": "VDPVF",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"This shot becomes imbued with necromantic magic. On a hit, an ethereal veil surrounds the target, preventing it from regaining hit points until the start of its next turn.",
+				"{@b Superiority.} The target takes an additional {@damage 1d8} necrotic damage. In addition, it must succeed on a Constitution saving throw. On a failed save, the target deals half as much damage with its weapon attacks until the start of your next turn."
+			]
+		},
+		{
+			"name": "Spell Shot: Bursting",
+			"source": "VDPVF",
+			"page": 11,
+			"featureType": [
+				"OF:VDPVF"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Arcane Marksman (Variant Fighter)",
+							"source": "VDPVF",
+							"visible": true
+						}
+					}
+				},
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Arcane Archer",
+							"source": "XGE",
+							"visible": true
+						}
+					}
+				},
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Arcane Marksman (Variant Fighter)",
+							"source": "VDPVF",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"This shot becomes imbued with evocation magic. On a hit, the projectile splinters and deals {@damage 1d4} force damage to another creature of your choice within 5 feet of the target.",
+				"{@b Superiority.} Instead of splintering, the projectile bursts. Each creature within 10 feet of the target takes {@damage 1d8} force damage."
+			]
+		},
+		{
+			"name": "Spell Shot: Charming",
+			"source": "VDPVF",
+			"page": 11,
+			"featureType": [
+				"OF:VDPVF"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Arcane Marksman (Variant Fighter)",
+							"source": "VDPVF",
+							"visible": true
+						}
+					}
+				},
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Arcane Archer",
+							"source": "XGE",
+							"visible": true
+						}
+					}
+				},
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Arcane Marksman (Variant Fighter)",
+							"source": "VDPVF",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"This shot becomes imbued with enchantment magic. On a hit, choose an ally you can see within 30 feet of the target. The affected creature has disadvantage on attack rolls against that ally until the end of its next turn.",
+				"{@b Superiority.} The target takes an additional {@damage 1d8} psychic damage. It must then succeed on a Wisdom saving throw or become charmed by the chosen ally."
+			]
+		},
+		{
+			"name": "Spell Shot: Grasping",
+			"source": "VDPVF",
+			"page": 11,
+			"featureType": [
+				"OF:VDPVF"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Arcane Marksman (Variant Fighter)",
+							"source": "VDPVF",
+							"visible": true
+						}
+					}
+				},
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Arcane Archer",
+							"source": "XGE",
+							"visible": true
+						}
+					}
+				},
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Arcane Marksman (Variant Fighter)",
+							"source": "VDPVF",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"This shot becomes imbued with conjuration magic. On a hit, the target must make a Strength saving throw. On a failed save, its movement speed is reduced by half until the end of its next turn.",
+				"{@b Superiority.} This shot deals an additional {@damage 1d8} slashing damage as brambles form around the target, which last for 1 minute. The target takes {@damage 1d8} slashing damage the first time it moves 1 foot each turn. The target or any creature that can reach it can use its action to remove the brambles early with a successful Strength (Athletics) check against your maneuver save DC."
+			]
+		},
+		{
+			"name": "Spell Shot: Ethereal",
+			"source": "VDPVF",
+			"page": 11,
+			"featureType": [
+				"OF:VDPVF"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Arcane Marksman (Variant Fighter)",
+							"source": "VDPVF",
+							"visible": true
+						}
+					}
+				},
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Arcane Archer",
+							"source": "XGE",
+							"visible": true
+						}
+					}
+				},
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Arcane Marksman (Variant Fighter)",
+							"source": "VDPVF",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"This shot becomes imbued with transmutation magic. The attack ignores all but full cover.",
+				"{@b Superiority.} Instead of choosing a target for this attack, this shot fires in a line that is 1-foot-wide and 30-feet-long. The shot passes harmlessly through objects and ignores cover. Make a single attack roll, and compare it to the AC of each creature in the area, to determine which creatures are hit by the attack. Each creature in the area, hit or miss, takes {@damage 1d8} force damage as well."
+			]
+		},
+		{
+			"name": "Spell Shot: Shadow",
+			"source": "VDPVF",
+			"page": 11,
+			"featureType": [
+				"OF:VDPVF"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Arcane Marksman (Variant Fighter)",
+							"source": "VDPVF",
+							"visible": true
+						}
+					}
+				},
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Arcane Archer",
+							"source": "XGE",
+							"visible": true
+						}
+					}
+				},
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Arcane Marksman (Variant Fighter)",
+							"source": "VDPVF",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"This show becomes imbued with illusion magic. On a hit, the creature suffers from disadvantage on ability checks that rely on sight until the start of its next turn.",
+				"{@b Superiority.} Each creature within 10 feet of the target must make a Wisdom saving throw. On a failed save, affected creatures take 1d8 psychic damage and are unable to see anything more than 5 feet away until the start of your next turn."
+			]
+		},
 		{
 			"name": "Anti-Magic Aura",
 			"source": "VDPVF",
@@ -170,8 +650,8 @@
 					"level": {
 						"level": 1,
 						"class": {
-							"name": "Arcane Marksman",
-							"source": "ArcMar",
+							"name": "Arcane Marksman (Variant Fighter)",
+							"source": "VDPVF",
 							"visible": true
 						}
 					}
@@ -496,8 +976,8 @@
 					"level": {
 						"level": 1,
 						"class": {
-							"name": "Arcane Marksman",
-							"source": "ArcMar",
+							"name": "Arcane Marksman (Variant Fighter)",
+							"source": "VDPVF",
 							"visible": true
 						}
 					}
@@ -540,8 +1020,8 @@
 					"level": {
 						"level": 1,
 						"class": {
-							"name": "Arcane Marksman",
-							"source": "ArcMar",
+							"name": "Arcane Marksman (Variant Fighter)",
+							"source": "VDPVF",
 							"visible": true
 						}
 					}
@@ -1048,6 +1528,253 @@
 			"entries": [
 				"You can use your action to make a special whirlwind attack. Make a melee weapon attack against each creatures of your choice within reach of the weapon. Each creature hit takes damage equal to your attack modifier.",
 				"{@b Superiority.} You deal your normal weapon damage to each creature hit by this whirlwind attack."
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Arcane Marksman (Variant Fighter)",
+			"source": "VDPVF",
+			"page": 9,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"shortName": "Arcane Marksman (Variant Fighter)",
+			"subclassFeatures": [
+				"Arcane Marksman (Variant Fighter)|Fighter|PHB|Arcane Marksman (Variant Fighter)|VDPVF|3",
+				"Utility Projectile|Fighter|PHB|Arcane Marksman (Variant Fighter)|VDPVF|7",
+				"Additional Spell Shot|Fighter|PHB|Arcane Marksman (Variant Fighter)|VDPVF|7",
+				"Curving Shot|Fighter|PHB|Arcane Marksman (Variant Fighter)|VDPVF|10",
+				"Additional Spell Shot|Fighter|PHB|Arcane Marksman (Variant Fighter)|VDPVF|10",
+				"Celestial Shot|Fighter|PHB|Arcane Marksman (Variant Fighter)|VDPVF|15",
+				"Additional Spell Shot|Fighter|PHB|Arcane Marksman (Variant Fighter)|VDPVF|15",
+				"Ever-Forceful Shot|Fighter|PHB|Arcane Marksman (Variant Fighter)|VDPVF|18",
+				"Additional Spell Shot|Fighter|PHB|Arcane Marksman (Variant Fighter)|VDPVF|18"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Arcane Marksman (Variant Fighter)",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Arcane Marksman (Variant Fighter)",
+			"page": 9,
+			"level": 3,
+			"entries": [
+				"The archetypal arcane marksman has spent significant time off the battlefield, in rigorous study of eldritch texts and spellcasting manuals. They have no eschewed their martial talents entirely, instead choosing to augment that talent with magical power delivered at a distance.",
+				
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Spell Shots|Fighter|PHB|Arcane Marksman (Variant Fighter)|VDPVF|3|VDPVF"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Archer Lore|Fighter|PHB|Arcane Marksman (Variant Fighter)|VDPVF|3|VDPVF"
+				}
+			]
+		},
+		{
+			"name": "Spell Shots",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Arcane Marksman (Variant Fighter)",
+			"page": 9,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You've learned a unique set of arcane maneuvers. You have access to all the Spell Shots listed below, but must spend time to prepare them. Spell Shot maneuvers that are prepared can be used in the same way as any other maneuver. Each of these maneuvers enhances a ranged attack you make as part of the Attack action.",
+				{
+					"type": "inset",
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Spell shot: Banish|VDPVF"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Spell shot: Brute Bane|VDPVF"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Spell shot: Bursting|VDPVF"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Spell shot: Charming|VDPVF"
+						},						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Spell shot: Grasping|VDPVF"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Spell shot: Ethereal|VDPVF"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Spell shot: Shadow|VDPVF"
+						}
+					]
+				},
+				"During a short or long rest, you can prepare up to two Spell Shot maneuvers. You can prepare an additional Spell Shot maneuver at 7th, 10th, 15th, and 18th level.",
+				"The saving throw for these maneuvers is calculated as follows: {@b Maneuver save DC = 8 + your proficiency bonus + your Intelligence modifier}"
+			]
+		},
+		{
+			"name": "Archer Lore",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Arcane Marksman (Variant Fighter)",
+			"page": 9,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You gain proficiency in one of the following skills of your choice: Arcana, Nature, or Perception."
+			]
+		},
+		{
+			"name": "Utility Projectile",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Arcane Marksman (Variant Fighter)",
+			"page": 9,
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"You can create useful, non-offensive effects by imbuing your shots with magic. You can use your action to imbue a thrown weapon or piece of ammunition and launch it at a point you can see within range of that weapon, creating one of the following effects of your choice:",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Ascension Shot|VDPVF"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Silent Shot|VDPVF"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Additional Spell Shot",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Arcane Marksman (Variant Fighter)",
+			"page": 9,
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"At 7th level, you learn another Spell Shot option of your choice."
+			]
+		},
+		{
+			"name": "Additional Spell Shot",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Arcane Marksman (Variant Fighter)",
+			"page": 9,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"At 10th level, you learn another Spell Shot option of your choice."
+			]
+		},
+		{
+			"name": "Additional Spell Shot",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Arcane Marksman (Variant Fighter)",
+			"page": 9,
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"At 15th level, you learn another Spell Shot option of your choice."
+			]
+		},
+		{
+			"name": "Additional Spell Shot",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Arcane Marksman (Variant Fighter)",
+			"page": 9,
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"At 18th level, you learn another Spell Shot option of your choice."
+			]
+		},
+		{
+			"name": "Curving Shot",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Arcane Marksman (Variant Fighter)",
+			"page": 10,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"When you make an attack roll with a Spell Shot maneuver and miss, you can use a bonus action to reroll the attack roll against a different target you can see within 30 feet of the original target."
+			]
+		},
+		{
+			"name": "Celestial Shot",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Arcane Marksman (Variant Fighter)",
+			"page": 10,
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"You can channel the divine magic of the sky into your shots. You can use your action to imbue a thrown weapon or piece of ammunition and launch it into the air, creating one of the following effects of your choice where the shot impacts, or after it has traveled 60 feet:",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Blackout Shot|VDPVF"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Flare Shot|VDPVF"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Ever-Forceful Shot",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Arcane Marksman (Variant Fighter)",
+			"page": 10,
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"When you roll initiative, you regain one use of superiority. Your Spell Shot maneuvers deliver a more impactful blow. Creatures hit by the attack made as part of the maneuver take an additional {@damage 1d8} damage."
 			]
 		}
 	]
