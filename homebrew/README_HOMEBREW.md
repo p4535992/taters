@@ -1,3 +1,9 @@
+https://wiki.tercept.net/en/Homebrew/TableOfReference/OptionalFeature#optional-feature-types
+
+https://github.com/TheGiddyLimit/homebrew/blob/afc31bb9ea9a46124d6d58f55fb5cc1e246d68cf/_schema/util.json#L1640
+
+==================
+
 
 - BREW-511 DandWiki, Fey'ri (5e Race), added on file "Web Commmunity; Community Homebrew Races.json"
 - BREW-440 u/filmatra - Armies of War, created file 
