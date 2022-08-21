@@ -19,7 +19,8 @@
 			}
 		],
 		"optionalFeatureTypes": {
-			"OF:VDPVF": "Variant Fighter"
+			"OF:VDPVF": "Variant Fighter",
+			"OFSS:VDPVF": "Spell Shot Variant Fighter"
 		},
 		"dateAdded": 1594364848,
 		"dateLastModified": 1638816223,
@@ -31,7 +32,7 @@
 			"source": "VDPVF",
 			"page": 1,
 			"entries": [
-				"You've learned several martial maneuvers. You learn two maneuvers of your choice. Your maneuver options are detailed at the end of the class description. Many maneuvers enhance an attack in some way. You can use only one maneuver per attack. You learn one additional maneuver of your choice at 3rd, 7th, 10th, 15th, and 18th level. Each time you learn new maneuvers, you can also replace one maneuver you know with a different one. Some of your maneuvers require your target to make a saving throw to resist the maneuver's effects. The saving throw DC is calculated as follows:",
+				"You've learned several martial {@filter maneuvers|optionalfeatures|feature type=mv}. You learn two maneuvers of your choice. Your maneuver options are detailed at the end of the class description. Many maneuvers enhance an attack in some way. You can use only one maneuver per attack. You learn one additional maneuver of your choice at 3rd, 7th, 10th, 15th, and 18th level. Each time you learn new maneuvers, you can also replace one maneuver you know with a different one. Some of your maneuvers require your target to make a saving throw to resist the maneuver's effects. The saving throw DC is calculated as follows:",
 				"{@b Maneuver save DC = 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice)}",
 				"Whenever you use a maneuver, you can trigger its superiority option which is described in the maneuver. You can do this a number of times equal to your proficiency bonus. You regain all expended uses after a long rest."
 			]
@@ -215,7 +216,8 @@
 			"source": "VDPVF",
 			"page": 10,
 			"featureType": [
-				"OF:VDPVF"
+				"OF:VDPVF",
+				"OFSS:VDPVF"
 			],
 			"prerequisite": [
 				{
@@ -250,7 +252,7 @@
 				}
 			],
 			"entries": [
-				"This shot becomes imbued with abjuration magic. On a hit, you create a ward that hinders the target’s attacks. Until the end of its next turn, any nonmagical weapon attacks made by the target don’t add its Strength or Dexterity modifier to damage dealt.",
+				"This shot becomes imbued with abjuration magic. On a hit, you create a ward that hinders the target's attacks. Until the end of its next turn, any nonmagical weapon attacks made by the target don't add its Strength or Dexterity modifier to damage dealt.",
 				"{@b Superiority.} The target must succeed on a Charisma saving throw or be banished to a demiplane. While banished this way, its speed is 0 and it is incapacitated. At the end of its next turn, the target reappears in the space it vacated or in the nearest unoccupied space."
 			]
 		},
@@ -259,7 +261,8 @@
 			"source": "VDPVF",
 			"page": 10,
 			"featureType": [
-				"OF:VDPVF"
+				"OF:VDPVF",
+				"OFSS:VDPVF"
 			],
 			"prerequisite": [
 				{
@@ -303,7 +306,8 @@
 			"source": "VDPVF",
 			"page": 11,
 			"featureType": [
-				"OF:VDPVF"
+				"OF:VDPVF",
+				"OFSS:VDPVF"
 			],
 			"prerequisite": [
 				{
@@ -347,7 +351,8 @@
 			"source": "VDPVF",
 			"page": 11,
 			"featureType": [
-				"OF:VDPVF"
+				"OF:VDPVF",
+				"OFSS:VDPVF"
 			],
 			"prerequisite": [
 				{
@@ -391,7 +396,8 @@
 			"source": "VDPVF",
 			"page": 11,
 			"featureType": [
-				"OF:VDPVF"
+				"OF:VDPVF",
+				"OFSS:VDPVF"
 			],
 			"prerequisite": [
 				{
@@ -435,7 +441,8 @@
 			"source": "VDPVF",
 			"page": 11,
 			"featureType": [
-				"OF:VDPVF"
+				"OF:VDPVF",
+				"OFSS:VDPVF"
 			],
 			"prerequisite": [
 				{
@@ -479,7 +486,8 @@
 			"source": "VDPVF",
 			"page": 11,
 			"featureType": [
-				"OF:VDPVF"
+				"OF:VDPVF",
+				"OFSS:VDPVF"
 			],
 			"prerequisite": [
 				{
@@ -1540,7 +1548,7 @@
 			"classSource": "PHB",
 			"shortName": "Arcane Marksman (Variant Fighter)",
 			"subclassFeatures": [
-				"Arcane Marksman (Variant Fighter)|Fighter|PHB|Arcane Marksman (Variant Fighter)|VDPVF|3",
+				"Arcane Marksman|Fighter|PHB|Arcane Marksman (Variant Fighter)|VDPVF|3",
 				"Utility Projectile|Fighter|PHB|Arcane Marksman (Variant Fighter)|VDPVF|7",
 				"Additional Spell Shot|Fighter|PHB|Arcane Marksman (Variant Fighter)|VDPVF|7",
 				"Curving Shot|Fighter|PHB|Arcane Marksman (Variant Fighter)|VDPVF|10",
@@ -1550,11 +1558,26 @@
 				"Ever-Forceful Shot|Fighter|PHB|Arcane Marksman (Variant Fighter)|VDPVF|18",
 				"Additional Spell Shot|Fighter|PHB|Arcane Marksman (Variant Fighter)|VDPVF|18"
 			]
+		},
+		{
+			"name": "Bounty Hunter (Variant Fighter)",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"shortName": "Bounty Hunter (Variant Fighter)",
+			"page": 12,
+			"subclassFeatures": [
+				"Bounty Hunter|Fighter|PHB|Bounty Hunter (Variant Fighter)|VDPVF|3",
+				"Prepared|Fighter|PHB|Bounty Hunter (Variant Fighter)|VDPVF|7",
+				"Allied Tactics|Fighter|PHB|Bounty Hunter (Variant Fighter)|VDPVF|10",
+				"Fortitude|Fighter|PHB|Bounty Hunter (Variant Fighter)|VDPVF|15",
+				"Foe Slayer|Fighter|PHB|Bounty Hunter (Variant Fighter)|VDPVF|18"
+			]
 		}
 	],
 	"subclassFeature": [
 		{
-			"name": "Arcane Marksman (Variant Fighter)",
+			"name": "Arcane Marksman",
 			"source": "VDPVF",
 			"className": "Fighter",
 			"classSource": "PHB",
@@ -1586,7 +1609,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"You've learned a unique set of arcane maneuvers. You have access to all the Spell Shots listed below, but must spend time to prepare them. Spell Shot maneuvers that are prepared can be used in the same way as any other maneuver. Each of these maneuvers enhances a ranged attack you make as part of the Attack action.",
+				"You've learned a unique set of arcane {@filter maneuvers|optionalfeatures|feature type=OFSS:VDPVF}. You have access to all the Spell Shots listed below, but must spend time to prepare them. Spell Shot {@filter maneuvers|optionalfeatures|feature type=OFSS:VDPVF} that are prepared can be used in the same way as any other maneuver. Each of these maneuvers enhances a ranged attack you make as part of the Attack action.",
 				{
 					"type": "inset",
 					"entries": [
@@ -1619,8 +1642,8 @@
 						}
 					]
 				},
-				"During a short or long rest, you can prepare up to two Spell Shot maneuvers. You can prepare an additional Spell Shot maneuver at 7th, 10th, 15th, and 18th level.",
-				"The saving throw for these maneuvers is calculated as follows: {@b Maneuver save DC = 8 + your proficiency bonus + your Intelligence modifier}"
+				"During a short or long rest, you can prepare up to two Spell Shot {@filter maneuvers|optionalfeatures|feature type=OFSS:VDPVF}. You can prepare an additional Spell Shot maneuver at 7th, 10th, 15th, and 18th level.",
+				"The saving throw for these {@filter maneuvers|optionalfeatures|feature type=OFSS:VDPVF} is calculated as follows: {@b Maneuver save DC = 8 + your proficiency bonus + your Intelligence modifier}"
 			]
 		},
 		{
@@ -1676,7 +1699,7 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"At 7th level, you learn another Spell Shot option of your choice."
+				"At 7th level, you learn another Spell Shot {@filter maneuvers|optionalfeatures|feature type=OFSS:VDPVF} option of your choice."
 			]
 		},
 		{
@@ -1690,7 +1713,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"At 10th level, you learn another Spell Shot option of your choice."
+				"At 10th level, you learn another Spell Shot {@filter maneuvers|optionalfeatures|feature type=OFSS:VDPVF} option of your choice."
 			]
 		},
 		{
@@ -1704,7 +1727,7 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"At 15th level, you learn another Spell Shot option of your choice."
+				"At 15th level, you learn another Spell Shot {@filter maneuvers|optionalfeatures|feature type=OFSS:VDPVF} option of your choice."
 			]
 		},
 		{
@@ -1718,7 +1741,7 @@
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"At 18th level, you learn another Spell Shot option of your choice."
+				"At 18th level, you learn another Spell Shot {@filter maneuvers|optionalfeatures|feature type=OFSS:VDPVF} option of your choice."
 			]
 		},
 		{
@@ -1774,7 +1797,116 @@
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"When you roll initiative, you regain one use of superiority. Your Spell Shot maneuvers deliver a more impactful blow. Creatures hit by the attack made as part of the maneuver take an additional {@damage 1d8} damage."
+				"When you roll initiative, you regain one use of superiority. Your Spell Shot {@filter arcane maneuvers|optionalfeatures|feature type=OFSS:VDPVF} deliver a more impactful blow. Creatures hit by the attack made as part of the maneuver take an additional {@damage 1d8} damage."
+			]
+		},
+		{
+			"name": "Bounty Hunter",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Bounty Hunter (Variant Fighter)",
+			"page": 12,
+			"level": 3,
+			"entries": [
+				"Those who model themselves after the bounty hunter are those who feel as though their skill is worth its weight in gold. They are often contract mercenaries, or hold a strong grudge against those who sleight them. Either way, they excel at both tracking and hunting groups of creatures and those they study, doing so with great efficiency.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Favored Enemy|Fighter|PHB|Bounty Hunter (Variant Fighter)|VDPVF|3|VDPVF"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hunter's Prey|Fighter|PHB|Bounty Hunter (Variant Fighter)|VDPVF|3|VDPVF"
+				}
+			]
+		},
+		{
+			"name": "Favored Enemy",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Bounty Hunter (Variant Fighter)",
+			"page": 12,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Choose either two types of favored enemy from the following list, or one type from the list and two races of humanoid (such as gnolls and orcs): abberations, beasts, celestials, constructs, dragons, elementals, fey, fiends, giants, monstrosities, oozes, plants, or undead. You have advantage on all Wisdom or Intelligence checks related to your favored enemies, including but not limited to: tracking them, detecting them, intuiting or recalling information about them, and discerning their motives or intentions."
+			]
+		},
+		{
+			"name": "Hunter's Prey",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Bounty Hunter (Variant Fighter)",
+			"page": 13,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Over the duration of a short rest, you can focus intently on a creature you've met and interacted with, or have significant enough information about to understand. This creature becomes a favored enemy for you until you know its been killed or you choose another prey.",
+				"In addition, any maneuver you use that affects a favored enemy that deals damage or includes an attack roll deals an extra {@damage 1d6} damage."
+			]
+		},
+		{
+			"name": "Prepared",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Bounty Hunter (Variant Fighter)",
+			"page": 13,
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"When determining if creatures are surprised, you can't be surprised if at least one favored enemy is within 60 feet of you.",
+				"You have advantage on ability checks made to notice and avoid traps set by a favored enemy."
+			]
+		},
+		{
+			"name": "Allied Tactics",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Bounty Hunter (Variant Fighter)",
+			"page": 13,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"As a reaction, which you take when an ally you can see within 30 feet of you makes an attack roll against a favored enemy, you can give that ally advantage on their attack roll.",
+				"You can use this feature a number of times equal to your proficiency bonus, regaining all expended uses after completing a short or long rest."
+			]
+		},
+		{
+			"name": "Fortitude",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Bounty Hunter (Variant Fighter)",
+			"page": 13,
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"You have advantage on saving throws and contested ability checks you make against nonmagical effects created by favored enemies. Additionally, you can't be {@condition charmed}, {@condition frightened}, or {@condition possessed} by your favored enemies and have advantage on death saving throws you make while within 60 feet of a favored enemy that is hostile to you.",
+				"If damage from a favored enemy would reduce you to 0 hit points without killing you outright, it reduces you to 1 hit point instead. Once you benefit from this feature, you can't benefit from it again until you complete a long rest."
+			]
+		},
+		{
+			"name": "Foe Slayer",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Bounty Hunter (Variant Fighter)",
+			"page": 13,
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"Once per turn, you can deal an additional {@damage 3d8} damage to a favored enemy with a weapon attack. If the target has 30 or less hit points after the damage is dealt, it immediately dies."
 			]
 		}
 	]
