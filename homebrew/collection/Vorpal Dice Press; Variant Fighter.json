@@ -20,7 +20,8 @@
 		],
 		"optionalFeatureTypes": {
 			"OF:VDPVF": "Variant Fighter",
-			"OFSS:VDPVF": "Spell Shot Variant Fighter"
+			"OFSS:VDPVF": "Spell Shot Variant Fighter",
+			"OFS:VDPVF": "Survivalist Variant Fighter"
 		},
 		"dateAdded": 1594364848,
 		"dateLastModified": 1638816223,
@@ -39,6 +40,144 @@
 		}
 	],
 	"optionalfeature": [
+		{
+			"name": "Forager",
+			"source": "VDPVF",
+			"page": 18,
+			"featureType": [
+				"OFS:VDPVF"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Survivalist (Variant Fighter)",
+							"source": "VDPVF",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"When you forage, you find twice as much food as you normally would."
+			]
+		},
+		{
+			"name": "Strider",
+			"source": "VDPVF",
+			"page": 18,
+			"featureType": [
+				"OFS:VDPVF"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Survivalist (Variant Fighter)",
+							"source": "VDPVF",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"Moving through nonmagical difficult terrain costs you no extra movement."
+			]
+		},
+		{
+			"name": "Tracker",
+			"source": "VDPVF",
+			"page": 18,
+			"featureType": [
+				"OFS:VDPVF"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Survivalist (Variant Fighter)",
+							"source": "VDPVF",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area."
+			]
+		},
+		{
+			"name": "Trapper",
+			"source": "VDPVF",
+			"page": 18,
+			"featureType": [
+				"OFS:VDPVF"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Survivalist (Variant Fighter)",
+							"source": "VDPVF",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"You add your proficiency bonus to the DC for detecting and avoiding the hunting traps you place."
+			]
+		},
+		{
+			"name": "Trainer",
+			"source": "VDPVF",
+			"page": 18,
+			"featureType": [
+				"OFS:VDPVF"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Survivalist (Variant Fighter)",
+							"source": "VDPVF",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"You have advantage on Wisdom (Animal Handling) checks."
+			]
+		},
+		{
+			"name": "Traveler",
+			"source": "VDPVF",
+			"page": 18,
+			"featureType": [
+				"OFS:VDPVF"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Survivalist (Variant Fighter)",
+							"source": "VDPVF",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"You learn one language of your choice."
+			]
+		},
 		{
 			"name": "Ascension Shot",
 			"source": "VDPVF",
@@ -691,7 +830,7 @@
 			],
 			"entries": [
 				"When you take the Attack action, you can forgo one of your attacks to create an opening against a creature within range of a weapon you're wielding. You flourish, distract the target, or in some other way team up to make your ally's next attack more lethal. The next attack made against the target by an ally before the start of your next turn scores a critical hit on a roll of 19 or 20.",
-				"Superiority. Your ally's attack now scores a critical hit on a roll of 18–20."
+				"Superiority. Your ally's attack now scores a critical hit on a roll of 18-20."
 			]
 		},
 		{
@@ -1218,7 +1357,7 @@
 				}
 			],
 			"entries": [
-				"When you hit a creature with a weapon attack, you can choose to forgo the damage dealt to attempt to frighten the target. The target must make a Wisdom saving throw. On a failed save, it is frightened of you until the end of your next turn.",
+				"When you hit a creature with a weapon attack, you can choose to forgo the damage dealt to attempt to frighten the target. The target must make a Wisdom saving throw. On a failed save, it is {@condition frightened} of you until the end of your next turn.",
 				"{@b Superiority.} All hostile creatures within 15 feet that can see or hear you must also make this saving throw."
 			]
 		},
@@ -1573,6 +1712,66 @@
 				"Fortitude|Fighter|PHB|Bounty Hunter (Variant Fighter)|VDPVF|15",
 				"Foe Slayer|Fighter|PHB|Bounty Hunter (Variant Fighter)|VDPVF|18"
 			]
+		},
+		{
+			"name": "Champion (Variant Fighter)",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"shortName": "Champion (Variant Fighter)",
+			"page": 14,
+			"subclassFeatures": [
+				"Champion|Fighter|PHB|Champion (Variant Fighter)|VDPVF|3",
+				"Remarkable Athlete|Fighter|PHB|Champion (Variant Fighter)|VDPVF|7",
+				"Additional Fighting Style|Fighter|PHB|Champion (Variant Fighter)|VDPVF|10",
+				"Superior Critical|Fighter|PHB|Champion (Variant Fighter)|VDPVF|15",
+				"Survivor|Fighter|PHB|Champion (Variant Fighter)|VDPVF|18"
+			]
+		},
+		{
+			"name": "Colossal Bully (Variant Fighter)",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"shortName": "Colossal Bully (Variant Fighter)",
+			"page": 15,
+			"subclassFeatures": [
+				"Colossal Bully|Fighter|PHB|Colossal Bully (Variant Fighter)|VDPVF|3",
+				"Swing Hard|Fighter|PHB|Colossal Bully (Variant Fighter)|VDPVF|7",
+				"Punitive Damages|Fighter|PHB|Colossal Bully (Variant Fighter)|VDPVF|10",
+				"Overwhelm|Fighter|PHB|Colossal Bully (Variant Fighter)|VDPVF|15",
+				"Forceful Leap|Fighter|PHB|Colossal Bully (Variant Fighter)|VDPVF|18"
+			]
+		},
+		{
+			"name": "Duelist (Variant Fighter)",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"shortName": "Duelist (Variant Fighter)",
+			"page": 17,
+			"subclassFeatures": [
+				"Duelist|Fighter|PHB|Duelist (Variant Fighter)|VDPVF|3",
+				"Quick Retort|Fighter|PHB|Duelist (Variant Fighter)|VDPVF|7",
+				"Improved Duelist|Fighter|PHB|Duelist (Variant Fighter)|VDPVF|10",
+				"Insolent Cur|Fighter|PHB|Duelist (Variant Fighter)|VDPVF|15",
+				"Punishing Flourish|Fighter|PHB|Duelist (Variant Fighter)|VDPVF|18"
+			]
+		},
+		{
+			"name": "Survivalist (Variant Fighter)",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"shortName": "Survivalist (Variant Fighter)",
+			"page": 18,
+			"subclassFeatures": [
+				"Survivalist|Fighter|PHB|Survivalist (Variant Fighter)|VDPVF|3",
+				"Wilderness Guide|Fighter|PHB|Survivalist (Variant Fighter)|VDPVF|7",
+				"Hide in Plain Sight|Fighter|PHB|Survivalist (Variant Fighter)|VDPVF|10",
+				"Stand Against the Tide|Fighter|PHB|Survivalist (Variant Fighter)|VDPVF|15",
+				"Sixth Sense|Fighter|PHB|Survivalist (Variant Fighter)|VDPVF|18"
+			]
 		}
 	],
 	"subclassFeature": [
@@ -1609,7 +1808,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"You've learned a unique set of arcane {@filter maneuvers|optionalfeatures|feature type=OFSS:VDPVF}. You have access to all the Spell Shots listed below, but must spend time to prepare them. Spell Shot {@filter maneuvers|optionalfeatures|feature type=OFSS:VDPVF} that are prepared can be used in the same way as any other maneuver. Each of these maneuvers enhances a ranged attack you make as part of the Attack action.",
+				"You've learned a unique set of arcane {@filter maneuvers|optionalfeatures|feature type=OFSS:VDPVF}. You have access to all the Spell Shots listed below, but must spend time to prepare them. {@filter Spell Shot|optionalfeatures|feature type=OFSS:VDPVF} that are prepared can be used in the same way as any other maneuver. Each of these maneuvers enhances a ranged attack you make as part of the Attack action.",
 				{
 					"type": "inset",
 					"entries": [
@@ -1642,7 +1841,7 @@
 						}
 					]
 				},
-				"During a short or long rest, you can prepare up to two Spell Shot {@filter maneuvers|optionalfeatures|feature type=OFSS:VDPVF}. You can prepare an additional Spell Shot maneuver at 7th, 10th, 15th, and 18th level.",
+				"During a short or long rest, you can prepare up to two {@filter Spell Shot|optionalfeatures|feature type=OFSS:VDPVF}. You can prepare an additional Spell Shot maneuver at 7th, 10th, 15th, and 18th level.",
 				"The saving throw for these {@filter maneuvers|optionalfeatures|feature type=OFSS:VDPVF} is calculated as follows: {@b Maneuver save DC = 8 + your proficiency bonus + your Intelligence modifier}"
 			]
 		},
@@ -1699,7 +1898,7 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"At 7th level, you learn another Spell Shot {@filter maneuvers|optionalfeatures|feature type=OFSS:VDPVF} option of your choice."
+				"At 7th level, you learn another {@filter Spell Shot|optionalfeatures|feature type=OFSS:VDPVF} option of your choice."
 			]
 		},
 		{
@@ -1713,7 +1912,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"At 10th level, you learn another Spell Shot {@filter maneuvers|optionalfeatures|feature type=OFSS:VDPVF} option of your choice."
+				"At 10th level, you learn another {@filter Spell Shot|optionalfeatures|feature type=OFSS:VDPVF} option of your choice."
 			]
 		},
 		{
@@ -1727,7 +1926,7 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"At 15th level, you learn another Spell Shot {@filter maneuvers|optionalfeatures|feature type=OFSS:VDPVF} option of your choice."
+				"At 15th level, you learn another {@filter Spell Shot|optionalfeatures|feature type=OFSS:VDPVF} option of your choice."
 			]
 		},
 		{
@@ -1741,7 +1940,7 @@
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"At 18th level, you learn another Spell Shot {@filter maneuvers|optionalfeatures|feature type=OFSS:VDPVF} option of your choice."
+				"At 18th level, you learn another {@filter Spell Shot|optionalfeatures|feature type=OFSS:VDPVF} option of your choice."
 			]
 		},
 		{
@@ -1907,6 +2106,480 @@
 			"header": 2,
 			"entries": [
 				"Once per turn, you can deal an additional {@damage 3d8} damage to a favored enemy with a weapon attack. If the target has 30 or less hit points after the damage is dealt, it immediately dies."
+			]
+		},
+		{
+			"name": "Champion",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Champion (Variant Fighter)",
+			"page": 14,
+			"level": 3,
+			"entries": [
+				"The archetypal champion focuses on the development of raw physical prowess honed to deadly perfection. Those who model themselves on this archetype combine rigorous training with physical excellence to deal devastating blows and overwhelm their foes.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Improved Critical|Fighter|PHB|Champion (Variant Fighter)|VDPVF|3|VDPVF"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Brute Advantage|Fighter|PHB|Champion (Variant Fighter)|VDPVF|3|VDPVF"
+				}
+			]
+		},
+		{
+			"name": "Improved Critical",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Champion (Variant Fighter)",
+			"page": 14,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Your weapon attacks score a critical hit on a roll of 19 or 20."
+			]
+		},
+		{
+			"name": "Brute Advantage",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Champion (Variant Fighter)",
+			"page": 14,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You can have any maneuver you use that deals damage or includes an attack roll deal extra damage to one target equal to your Strength or Dexterity modifier (your choice), in addition to the maneuver's other effects.",
+				"Each creature can only be affected by this feature once each turn."
+			]
+		},
+		{
+			"name": "Remarkable Athlete",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Champion (Variant Fighter)",
+			"page": 14,
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"You can add half your proficiency bonus (round up) to any Strength, Dexterity, or Constitution check you make.",
+				"In addition, when you make a running long jump, the distance you can cover increases by a number of feet equal to your Strength modifier."
+			]
+		},
+		{
+			"name": "Additional Fighting Style",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Champion (Variant Fighter)",
+			"page": 14,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"You can choose a second option from the {@filter Fighting Style|optionalfeatures|feature type=FS:F} class feature."
+			]
+		},
+		{
+			"name": "Superior Critical",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Champion (Variant Fighter)",
+			"page": 14,
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"Your weapon attacks score a critical hit on a roll of 18-20."
+			]
+		},
+		{
+			"name": "Survivor",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Champion (Variant Fighter)",
+			"page": 14,
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"At the start of each of your turns, you regain hit points equal to 5 + your Constitution modifier if you have no more than half your hit points left. Art Credit: You don't gain this benefit if you have 0 hit points."
+			]
+		},
+		{
+			"name": "Colossal Bully",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Colossal Bully (Variant Fighter)",
+			"page": 15,
+			"level": 3,
+			"entries": [
+				"Those who model themselves after the archetypal bully like to throw their size—real or perceived—around, so to speak. They have a long history of picking on those smaller than them and have learned to exploit their difference in size.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Larger than Life|Fighter|PHB|Colossal Bully (Variant Fighter)|VDPVF|3|VDPVF"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Physique|Fighter|PHB|Colossal Bully (Variant Fighter)|VDPVF|3|VDPVF"
+				}
+			]
+		},
+		{
+			"name": "Larger than Life",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Colossal Bully (Variant Fighter)",
+			"page": 15,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You can use your bonus action to manipulate your stature to become effectively larger than your usual size. While enlarged in this way, you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You count as one size larger, but your physical dimensions remain the same. Starting at 15th level, you count as two sizes larger.",
+						"You have advantage on Charisma (Intimidation) checks.",
+						"You can have maneuvers you use that affect creatures smaller than you deal {@damage 1d4} bludgeoning damage for each size category the target is smaller than you."
+					]
+				},
+				"You must concentrate on this feature as though you were concentrating on a spell. This lasts 1 minute. It ends early if you are knocked unconscious, or if you lose concentration. You can also choose to end this feature on your turn, no action required.",
+				"You can use this feature a number of times equal to your proficiency bonus. You regain expended uses after completing a long rest."
+			]
+		},
+		{
+			"name": "Physique",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Colossal Bully (Variant Fighter)",
+			"page": 16,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You gain proficiency in Athletics. You can add double your proficiency bonus to Athletics checks you make when grappling, shoving, or tossing a creature.",
+				"Additionally, you can use your Strength modifier in place of your Charisma modifier for Intimidation checks."
+			]
+		},
+		{
+			"name": "Swing Hard",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Colossal Bully (Variant Fighter)",
+			"page": 16,
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"You are proficient with improvised weapons, which deal at least {@b {@damage 1d6} + Strength modifier} damage for you.",
+				"When you force a creature to move by shoving or tossing them, they take {@b {@damage 1d8} + your Strength modifier} bludgeoning damage if they collide with a surface or other creature before completing that movement."
+			]
+		},
+		{
+			"name": "Punitive Damages",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Colossal Bully (Variant Fighter)",
+			"page": 16,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"As a reaction, which you take when a creature smaller than you deals damage to you, you can reduce the damage dealt by {@damage 1d4} for each size category they are smaller than you."
+			]
+		},
+		{
+			"name": "Overwhelm",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Colossal Bully (Variant Fighter)",
+			"page": 16,
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"Whenever you score a critical hit against or reduce a creature smaller than you to 0 hit points, you regain a use of your Larger than Life feature."
+			]
+		},
+		{
+			"name": "Forceful Leap",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Colossal Bully (Variant Fighter)",
+			"page": 16,
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"As an action on your turn, you can leap into a space within 20 feet that is either unoccupied or occupied by a creature smaller than you. Each creature within 15 feet of where you land must make a Strength saving throw against your maneuver save DC. They take {@damage 1d12} bludgeoning damage and are knocked prone on a failed saving throw, or half as much damage and no further effects on a successful one.",
+				"Creatures smaller than you within 5 feet of where you land have disadvantage on this saving throw, and any creature that is occupying the space where you land automatically fails."
+			]
+		},
+		{
+			"name": "Duelist",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Duelist (Variant Fighter)",
+			"page": 17,
+			"level": 3,
+			"entries": [
+				"The archetypal duelist has gained their skill in combat through their noble upbringing, taking the form of civilized one-on-one combat or a combination of crass overtures and flourish. Those who model themselves after this archetype combine fencing and bravado to entangle and distract foes, utilizing a final strike to put an end to cowards or punctuate whatever point they were making.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Signature Maneuver|Fighter|PHB|Duelist (Variant Fighter)|VDPVF|3|VDPVF"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Taunt|Fighter|PHB|Duelist (Variant Fighter)|VDPVF|3|VDPVF"
+				}
+			]
+		},
+		{
+			"name": "Signature Maneuver",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Duelist (Variant Fighter)",
+			"page": 17,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You know the {@i {@optfeature finisher|VDPVF}} maneuver, in addition to other {@filter maneuvers|optionalfeatures|feature type=mv} you know."
+			]
+		},
+		{
+			"name": "Taunt",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Duelist (Variant Fighter)",
+			"page": 17,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Once per round after making a weapon attack against a creature, you can issue a taunt to them which lasts until the end of your next turn. When a taunted creature makes an attack or casts a spell that doesn't include you as a target, you can use your reaction to have them make a Wisdom saving throw against your maneuver save DC. On a failed save, the target takes {@damage 1d4} psychic damage and has disadvantage on the next attack roll it makes before the end of its turn."
+			]
+		},
+		{
+			"name": "Quick Retort",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Duelist (Variant Fighter)",
+			"page": 17,
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"When making a Charisma (Intimidation) or Charisma (Persuasion) check, you add double your proficiency bonus if you are insulting or threatening that creature, or if that creature is taunted by you."
+			]
+		},
+		{
+			"name": "Improved Duelist",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Duelist (Variant Fighter)",
+			"page": 17,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"If you have successfully hit a creature with a weapon attack this round, that creature has disadvantage on any saving throw from the next maneuver you use against it before the start of its next turn."
+			]
+		},
+		{
+			"name": "Insolent Cur",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Duelist (Variant Fighter)",
+			"page": 17,
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"When you use your Action Surge feature, you can spout a threat to any number of creatures within 20 feet that can see and hear you. Each creature affected must make a Wisdom saving throw against your maneuver save DC. Any creatures that fail this saving throw drop whatever they are holding and become {@condition frightened} of you for 1 minute. A taunted creature makes this saving throw with disadvantage.",
+				"A creature can repeat this saving throw at the end of each of its turns, ending the {@condition frightened} effect on a successful save."
+			]
+		},
+		{
+			"name": "Punishing Flourish",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Duelist (Variant Fighter)",
+			"page": 17,
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"The next attack you make against a creature after you have successfully affected it with a maneuver deals an extra {@b {@damage 2d8} + Charisma modifier damage}."
+			]
+		},
+		{
+			"name": "Survivalist",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Survivalist (Variant Fighter)",
+			"page": 18,
+			"level": 3,
+			"entries": [
+				"Those who model themselves after this archetype have developed the skills to persist and thrive in any environment. They have an innate ability to blend in and use their knowledge of the terrain and its denizens to take every advantage and succeed the day.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Ranger of the Wild|Fighter|PHB|Survivalist (Variant Fighter)|VDPVF|3|VDPVF"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hunter's Quarry|Fighter|PHB|Survivalist (Variant Fighter)|VDPVF|3|VDPVF"
+				}
+			]
+		},
+		{
+			"name": "Ranger of the Wild",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Survivalist (Variant Fighter)",
+			"page": 18,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Your time spent in the wilderness has honed your survival skills. You gain your choice of three of the following features:",
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Forager|VDPVF"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Strider|VDPVF"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Tracker|VDPVF"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Trapper|VDPVF"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Trainer|VDPVF"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Traveler|VDPVF"
+				}
+			]
+		},
+		{
+			"name": "Hunter's Quarry",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Survivalist (Variant Fighter)",
+			"page": 18,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"As a bonus action, you can mark a creature you can see within 100 feet as your quarry. You must concentrate on this mark as if you were concentrating on a spell, and it lasts up to 1 hour.",
+				"Until the mark ends, any maneuver you use that deals damage or includes an attack against this creature deals extra damage equal to {@b {@damage 1d4} + your Wisdom modifier} to your quarry. In addition, you have advantage on any Wisdom (Perception) or Wisdom (Survival) check you make to find your quarry. If the target drops to 0 hit points before this mark ends, you can use a bonus action on a subsequent turn of yours to mark a new creature.",
+				"You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you complete a long rest."
+			]
+		},
+		{
+			"name": "Wilderness Guide",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Survivalist (Variant Fighter)",
+			"page": 19,
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"While traveling an hour or more in the wilderness, you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Difficult terrain doesn't slow your group's travel.",
+						"Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking) you remain alert to danger.",
+						"You do not suffer the penalty to passive Wisdom (Perception) checks imposed by moving at a fast pace.",
+						"Your group can move stealthily at a normal pace."
+					]
+				}
+			]
+		},
+		{
+			"name": "Hide in Plain Sight",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Survivalist (Variant Fighter)",
+			"page": 19,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"You can spend 1 minute creating natural camouflage for yourself. You must have access to fresh mud, dirt, plants, soot, and other naturally occurring materials with which to create your camouflage.",
+				"Once you are camouflaged this way, you gain a +10 bonus to Dexterity (Stealth) checks while you remain in terrain similar to your natural disguise. Once you move or make an attack, this effect is suppressed until the start of your next turn.",
+				"Your camouflage lasts 1 hour or until physical conditions otherwise ruin it (such as swimming or heavy rain)."
+			]
+		},
+		{
+			"name": "Stand Against the Tide",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Survivalist (Variant Fighter)",
+			"page": 19,
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"Whenever a creature attacks you and does not have advantage, you can use your reaction to impose disadvantage on the creature's attack roll against you."
+			]
+		},
+		{
+			"name": "Sixth Sense",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Survivalist (Variant Fighter)",
+			"page": 19,
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"When you attack a creature you can't see, your inability to see it doesn't impose disadvantage on your attack roll against it.",
+				"You are also aware of the location of any invisible creature within 30 feet of you, provided that the creature isn't hidden from you and you aren't blinded or deafened."
 			]
 		}
 	]
