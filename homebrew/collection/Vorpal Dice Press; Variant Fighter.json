@@ -1772,6 +1772,41 @@
 				"Stand Against the Tide|Fighter|PHB|Survivalist (Variant Fighter)|VDPVF|15",
 				"Sixth Sense|Fighter|PHB|Survivalist (Variant Fighter)|VDPVF|18"
 			]
+		},
+		{
+			"name": "Tactician (Variant Fighter)",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"shortName": "Tactician (Variant Fighter)",
+			"page": 20,
+			"subclassFeatures": [
+				"Tactician|Fighter|PHB|Tactician (Variant Fighter)|VDPVF|3",
+				"Know Your Enemy|Fighter|PHB|Tactician (Variant Fighter)|VDPVF|7",
+				"Additional Maneuver|Fighter|PHB|Tactician (Variant Fighter)|VDPVF|7",
+				"Harden Resolve|Fighter|PHB|Tactician (Variant Fighter)|VDPVF|10",
+				"Additional Maneuver|Fighter|PHB|Tactician (Variant Fighter)|VDPVF|10",
+				"Improved Superiority|Fighter|PHB|Tactician (Variant Fighter)|VDPVF|15",
+				"Additional Maneuver|Fighter|PHB|Tactician (Variant Fighter)|VDPVF|15",
+				"Display of Tactics|Fighter|PHB|Tactician (Variant Fighter)|VDPVF|18",
+				"Additional Maneuver|Fighter|PHB|Tactician (Variant Fighter)|VDPVF|18"
+			]
+		},
+		{
+			"name": "Templar (Variant Fighter)",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"shortName": "Templar (Variant Fighter)",
+			"page": 22,
+			"subclassFeatures": [
+				"Templar|Fighter|PHB|Templar (Variant Fighter)|VDPVF|3",
+				"Channel Divinity: Gift (2/rest)|Fighter|PHB|Templar (Variant Fighter)|VDPVF|6",
+				"Countermagic|Fighter|PHB|Templar (Variant Fighter)|VDPVF|7",
+				"Residual Defense|Fighter|PHB|Templar (Variant Fighter)|VDPVF|10",
+				"Boon of Fervor|Fighter|PHB|Templar (Variant Fighter)|VDPVF|15",
+				"Disruption|Fighter|PHB|Templar (Variant Fighter)|VDPVF|18"
+			]
 		}
 	],
 	"subclassFeature": [
@@ -1785,8 +1820,7 @@
 			"page": 9,
 			"level": 3,
 			"entries": [
-				"The archetypal arcane marksman has spent significant time off the battlefield, in rigorous study of eldritch texts and spellcasting manuals. They have no eschewed their martial talents entirely, instead choosing to augment that talent with magical power delivered at a distance.",
-				
+				"The archetypal arcane marksman has spent significant time off the battlefield, in rigorous study of eldritch texts and spellcasting manuals. They have no eschewed their martial talents entirely, instead choosing to augment that talent with magical power delivered at a distance.",			
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Spell Shots|Fighter|PHB|Arcane Marksman (Variant Fighter)|VDPVF|3|VDPVF"
@@ -1846,48 +1880,6 @@
 			]
 		},
 		{
-			"name": "Archer Lore",
-			"source": "VDPVF",
-			"className": "Fighter",
-			"classSource": "PHB",
-			"subclassSource": "VDPVF",
-			"subclassShortName": "Arcane Marksman (Variant Fighter)",
-			"page": 9,
-			"level": 3,
-			"header": 1,
-			"entries": [
-				"You gain proficiency in one of the following skills of your choice: Arcana, Nature, or Perception."
-			]
-		},
-		{
-			"name": "Utility Projectile",
-			"source": "VDPVF",
-			"className": "Fighter",
-			"classSource": "PHB",
-			"subclassSource": "VDPVF",
-			"subclassShortName": "Arcane Marksman (Variant Fighter)",
-			"page": 9,
-			"level": 7,
-			"header": 2,
-			"entries": [
-				"You can create useful, non-offensive effects by imbuing your shots with magic. You can use your action to imbue a thrown weapon or piece of ammunition and launch it at a point you can see within range of that weapon, creating one of the following effects of your choice:",
-				{
-					"type": "options",
-					"count": 1,
-					"entries": [
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Ascension Shot|VDPVF"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Silent Shot|VDPVF"
-						}
-					]
-				}
-			]
-		},
-		{
 			"name": "Additional Spell Shot",
 			"source": "VDPVF",
 			"className": "Fighter",
@@ -1941,6 +1933,48 @@
 			"header": 2,
 			"entries": [
 				"At 18th level, you learn another {@filter Spell Shot|optionalfeatures|feature type=OFSS:VDPVF} option of your choice."
+			]
+		},
+		{
+			"name": "Archer Lore",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Arcane Marksman (Variant Fighter)",
+			"page": 9,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You gain proficiency in one of the following skills of your choice: Arcana, Nature, or Perception."
+			]
+		},
+		{
+			"name": "Utility Projectile",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Arcane Marksman (Variant Fighter)",
+			"page": 9,
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"You can create useful, non-offensive effects by imbuing your shots with magic. You can use your action to imbue a thrown weapon or piece of ammunition and launch it at a point you can see within range of that weapon, creating one of the following effects of your choice:",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Ascension Shot|VDPVF"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Silent Shot|VDPVF"
+						}
+					]
+				}
 			]
 		},
 		{
@@ -2580,6 +2614,305 @@
 			"entries": [
 				"When you attack a creature you can't see, your inability to see it doesn't impose disadvantage on your attack roll against it.",
 				"You are also aware of the location of any invisible creature within 30 feet of you, provided that the creature isn't hidden from you and you aren't blinded or deafened."
+			]
+		},
+		{
+			"name": "Tactician",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Tactician (Variant Fighter)",
+			"page": 20,
+			"level": 3,
+			"entries": [
+				"Those who emulate the archetypal tactician employ a studied knowledge of combat and battlefield leadership. To a tactician, combat is an academic field, sometimes including subjects beyond battle such as weapon smithing and calligraphy. Not every fighter absorbs the lessons of history, theory, and artistry in a way that can be directly applied to battle like the tactician can.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Battlefield Superiority|Fighter|PHB|Tactician (Variant Fighter)|VDPVF|3|VDPVF"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Student of War|Fighter|PHB|Tactician (Variant Fighter)|VDPVF|3|VDPVF"
+				}
+			]
+		},
+		{
+			"name": "Battlefield Superiority",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Tactician (Variant Fighter)",
+			"page": 20,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You learn one additional {@filter maneuver|optionalfeatures|feature type=mv} of your choice. You learn one additional maneuver at 7th, 10th, 15th, and 18th level.",
+				"When using the superiority option of a maneuver, you can instruct an ally to take an action as well. Choose one friendly creature that can see or hear you. That creature can use its reaction to make one weapon attack, or move up to half their movement."
+			]
+		},
+		{
+			"name": "Additional Maneuver",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Tactician (Variant Fighter)",
+			"page": 20,
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"At 7th level, you learn another {@filter maneuver|optionalfeatures|feature type=mv} option of your choice."
+			]
+		},
+		{
+			"name": "Additional Maneuver",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Tactician (Variant Fighter)",
+			"page": 20,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"At 10th level, you learn another {@filter maneuver|optionalfeatures|feature type=mv} option of your choice."
+			]
+		},
+		{
+			"name": "Additional Maneuver",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Tactician (Variant Fighter)",
+			"page": 20,
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"At 15th level, you learn another {@filter maneuver|optionalfeatures|feature type=mv} option of your choice."
+			]
+		},
+		{
+			"name": "Additional Maneuver",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Tactician (Variant Fighter)",
+			"page": 20,
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"At 18th level, you learn another {@filter maneuver|optionalfeatures|feature type=mv} option of your choice."
+			]
+		},
+		{
+			"name": "Student of War",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Tactician (Variant Fighter)",
+			"page": 20,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You gain proficiency in one type of artisan's tools of your choice."
+			]
+		},
+		{
+			"name": "Know Your Enemy",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Tactician (Variant Fighter)",
+			"page": 20,
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"If you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The DM tells you if the creature is your equal, superior, or inferior in regard to two of the following characteristics of your choice:",
+				{
+					"type": "list",
+					"items": [
+						"Strength score",
+						"Dexterity score",
+						"Constitution score",
+						"Armor Class",
+						"Current hit points",
+						"Total class levels (if any)",
+						"Fighter class levels (if any)"
+					]
+				} 
+			]
+		},
+		{
+			"name": "Harden Resolve",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Tactician (Variant Fighter)",
+			"page": 20,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"When you use the superiority option of a maneuver, you can choose one friendly creature that can see or hear you. That creature immediately ends one condition affecting it."
+			]
+		},
+		{
+			"name": "Improved Superiority",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Tactician (Variant Fighter)",
+			"page": 21,
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"The first time you use the superiority option of a maneuver after rolling initiative, you can do so without expending a use."
+			]
+		},
+		{
+			"name": "Display of Tactics",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Tactician (Variant Fighter)",
+			"page": 21,
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"When you use the superiority option of a maneuver, you can choose one friendly creature that can see or hear you. That creature can use its reaction to use the same maneuver you used, even if that creature can't normally use maneuvers. Your maneuver save DC is used for any saving throws required."
+			]
+		},
+		{
+			"name": "Templar",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Templar (Variant Fighter)",
+			"page": 22,
+			"level": 3,
+			"entries": [
+				"Those who model themselves after the archetypal templar have dedicated themselves to a singular divine directive. To root out profane magic and uphold the virtues of their deity or oath. Templars receive the divine accent of their power from their devotion to a particular deity or cause in direct opposition of arcane magic.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Channel Divinity: Gift (1/rest)|Fighter|PHB|Templar (Variant Fighter)|VDPVF|3|VDPVF"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Blessed Directive|Fighter|PHB|Templar (Variant Fighter)|VDPVF|3|VDPVF"
+				}
+			]
+		},
+		{
+			"name": "Blessed Directive",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Templar (Variant Fighter)",
+			"page": 22,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You learn the {@spell guidance|PHB} cantrip and gain proficiency in either Religion or History (your choice). You also gain the ability to use a holy symbol as a spellcasting focus for spells you cast granted by your Channel Divinity."
+			]
+		},
+		{
+			"name": "Channel Divinity: Gift (1/rest)",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Templar (Variant Fighter)",
+			"page": 22,
+			"level": 3,
+			"entries": [
+				"You have the ability to channel divine energy and produce a magical effect. You start with one such effect: Gift. When you use your Channel Divinity, you choose which effect to create. You must then finish a short or long rest to use your Channel Divinity again. Some Channel Divinity effects require saving throws. The DC for these effects is {@b 8 + your proficiency bonus + your Charisma modifier}.",
+				"At 6th level, you can use your Channel Divinity twice between rests.",
+				"As an action, you present a symbol of your faith and speak a prayer calling for assistance from your charge. When you use this feature, you can cast a single divination or enchantment spell from the cleric spell list of 1st-level or lower. Charisma is your spellcasting modifier for this spell.",
+				"The highest level spell you can cast with this feature increases to 2nd-level when you reach 7th level, and again to 3rd-level at 13th, and 4th-level at 19th."
+			]
+		},
+		{
+			"name": "Channel Divinity: Gift (2/rest)",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Templar (Variant Fighter)",
+			"page": 22,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"You have the ability to channel divine energy and produce a magical effect. You start with one such effect: Gift. When you use your Channel Divinity, you choose which effect to create. You must then finish a short or long rest to use your Channel Divinity again. Some Channel Divinity effects require saving throws. The DC for these effects is {@b 8 + your proficiency bonus + your Charisma modifier}.",
+				"At 6th level, you can use your Channel Divinity twice between rests.",
+				"As an action, you present a symbol of your faith and speak a prayer calling for assistance from your charge. When you use this feature, you can cast a single divination or enchantment spell from the cleric spell list of 1st-level or lower. Charisma is your spellcasting modifier for this spell.",
+				"The highest level spell you can cast with this feature increases to 2nd-level when you reach 7th level, and again to 3rd-level at 13th, and 4th-level at 19th."
+			]
+		},
+		{
+			"name": "Countermagic",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Templar (Variant Fighter)",
+			"page": 23,
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"If a creature you can see or hear within 60 feet casts a spell, you can use your reaction to attempt to stall its effect and potentially end it. If that spell is 3rd level or lower and has a casting time of 1 action or less, that creature must make a contested Charisma check to resist your delaying effect. If you succeed, the creature is forced to concentrate on the spell until it’s next turn, and the creature must cast the spell immediately at the start of it’s next turn (no action required). If the target can’t concentrate on this spell, or can’t cast it at the start of its next turn, the spell is wasted.",
+				"You can use this feature a number of times equal to half your proficiency bonus (rounded up). You regain all expended uses after completing a long rest."
+			]
+		},
+		{
+			"name": "Residual Defense",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Templar (Variant Fighter)",
+			"page": 23,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"After taking damage from a spell or other magical effect, you gain resistance to that damage type until the end of your next turn. If multiple damage types affect you, you gain resistance to all types dealt."
+			]
+		},
+		{
+			"name": "Boon of Fervor",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Templar (Variant Fighter)",
+			"page": 23,
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"You and any number of creatures within 30 feet that can see or hear you gain temporary hit points equal to your fighter level when you use Action Surge."
+			]
+		},
+		{
+			"name": "Disruption",
+			"source": "VDPVF",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassSource": "VDPVF",
+			"subclassShortName": "Templar (Variant Fighter)",
+			"page": 23,
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"Any maneuver you use that affects a hostile creature forces it to make a Constitution saving throw to maintain their concentration. The DC for this is equal to your maneuver save DC. If the maneuver also deals damage to the creature, it must make a separate concentration check for the damage as normal."
 			]
 		}
 	]
