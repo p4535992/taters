@@ -34,10 +34,60 @@
 			]
 		}
 	],
-	"item": [
+	"item":[
+		{
+			"name": "Honey-Water Mead, Horn",
+			"source": "ROTSSPGF",
+			"page": 23,
+			"type": "FD",
+			"rarity": "none",
+			"weight": 0.5,
+			"value": 50,
+			"entries": [
+				"After the raw, more potent honey has been removed from a hive, the rest is diluted with water and this is used to brew the primary mead that most raiders can afford to drink. All clans have their own variation of honey-water, using the flavors preferred by the clan."
+			]
+		},
+		{
+			"name": "Whalemead, Horn",
+			"source": "ROTSSPGF",
+			"page": 23,
+			"type": "FD",
+			"rarity": "none",
+			"weight": 0.5,
+			"value": 300,
+			"entries": [
+				"Despite its name there's no trace of whale in the mead the Knattle brew. This mead has a distinctive flavor because the hardy northern bee honey that is used is more bitter than sweet."
+			]
+		},
+		{
+			"name": "Mother's Brew, Horn",
+			"source": "ROTSSPGF",
+			"page": 23,
+			"type": "FD",
+			"rarity": "none",
+			"weight": 0.5,
+			"value": 600,
+			"entries": [
+				"The Hallharn brew this mead with fine honey and the sweet fruits that grow almost exclusively in their lands. If truth be told this mead is closer to a wine than the other meads, but the Hallharn would slay anyone foolish enough to utter such blasphemy."
+			]
+		},
+		{
+			"name": "Mead of the Twins, Horn",
+			"source": "ROTSSPGF",
+			"page": 23,
+			"type": "FD",
+			"rarity": "none",
+			"weight": 0.5,
+			"value": 1200,
+			"entries": [
+				"Brewed by the Tvar, from the finest honey, this mead is flavorful and stronger in potency than lesser meads."
+			]
+		}
+	],
+	"baseitem": [
 		{
 			"name": "Sax",
-			"baseItem": "Shortsword|PHB",
+			"baseItem": "shortsword|phb",
 			"source": "ROTSSPGF",
 			"page": 23,
 			"type": "M",
@@ -56,7 +106,129 @@
 			"sword": true,
 			"weapon": true,
 			"entries": [
-				"This short sword has a slashing edge and though these weapons are simply constructed, they are versatile and used by many raiders as their secondary weapon."
+				"This short sword has a slashing edge and though these weapons are simply constructed, they are versatile and used by many raiders as their secondary weapon.",
+				"{@b Special.} unless magical, considered an {@i {@variantrule inferior|ROTSSPGF}} weapon"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ROTSSPGF/item/Sax.webp"
+						}
+					}
+				],
+				"entries": [
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Skeggøx (slashing)",
+			"baseItem": "handaxe|phb",
+			"source": "ROTSSPGF",
+			"page": 23,
+			"type": "M",
+			"rarity": "none",
+			"weight": 3,
+			"value": 600,
+			"weaponCategory": "simple",
+			"property": [
+				"L",
+				"T"
+			],
+			"range": "20/50",
+			"dmg1": "1d6",
+			"dmgType": "S",
+			"axe": true,
+			"weapon": true,
+			"entries": [
+				"This versatile handaxe has a wide cutting surface suitable for use in battle but the haft can be gripped directly behind the head to work with wood. Additionally, the weapon can be turned over to strike enemies with the hammer end.",
+				"{@b Special.} grants advantage when using woodworking or carpentry tools"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ROTSSPGF/item/Skeggox.webp"
+						}
+					}
+				],
+				"entries": [
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Skeggøx (bludgeoning)",
+			"baseItem": "handaxe|phb",
+			"source": "ROTSSPGF",
+			"page": 23,
+			"type": "M",
+			"rarity": "none",
+			"weight": 3,
+			"value": 600,
+			"weaponCategory": "simple",
+			"property": [
+				"L",
+				"T"
+			],
+			"range": "20/50",
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"axe": true,
+			"weapon": true,
+			"entries": [
+				"This versatile handaxe has a wide cutting surface suitable for use in battle but the haft can be gripped directly behind the head to work with wood. Additionally, the weapon can be turned over to strike enemies with the hammer end.",
+				"{@b Special.} grants advantage when using woodworking or carpentry tools"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ROTSSPGF/item/Skeggox.webp"
+						}
+					}
+				],
+				"entries": [
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Gambeson Armor",
+			"baseItem": "leather Armor|phb",
+			"source": "ROTSSPGF",
+			"page": 23,
+			"type": "LA",
+			"rarity": "none",
+			"weight": 3,
+			"value": 400,
+			"ac": 12,
+			"armor": true,
+			"entries": [
+				"This armor can be created when needed. Assuming you are in a settlement with access to leather, cloth, and rope, any raider can construct one suit of gambeson during a long rest.",
+				"{@b Special.} Finally, gambeson can be worn under any other armor, granting a +1 bonus in addition to the armor's other bonuses (but with the additional weight and stealth disadvantage)."
 			]
 		}
 	],
@@ -67,6 +239,10 @@
 			"requires": [
 				{
 					"sword": true,
+					"type": "M"
+				},
+				{
+					"axe": true,
 					"type": "M"
 				}
 			],
@@ -650,50 +826,44 @@
 									"entries": [
 										"Several beings are tied directly to Grimnir's creation and its early development. They are not gods but are important, nonetheless.",
 										{
-											"type": "entries",
-											"name": "Grimnir Deities - The Primal Powers",
-											"page": 10,
-											"entries": [
-												{
-													"type": "table",
-													"colLabels": [
-														"Deity",
-														"Alignment",
-														"Suggested Domains",
-														"Symbol",
-														"Clan"
-													],
-													"colStyles": [
-														"col-3",
-														"col-1 text-center",
-														"col-3",
-														"col-3",
-														"col-2"
-													],
-													"rows": [
-														[
-															"Hel, Lady of the Dead",
-															"TN",
-															"Death",
-															"A wolf, with fangs bared",
-															"Whar"
-														],
-														[
-															"Thonir",
-															"NG",
-															"Tempest",
-															"A scythe against a green field",
-															"None"
-														],
-														[
-															"Mirgal",
-															"CN",
-															"Trickery",
-															"The rainbow spear",
-															"None"
-														]
-													]
-												}
+											"caption": "Grimnir Deities - The Primal Powers",
+											"type": "table",
+											"colLabels": [
+												"Deity",
+												"Alignment",
+												"Suggested Domains",
+												"Symbol",
+												"Clan"
+											],
+											"colStyles": [
+												"col-3",
+												"col-1 text-center",
+												"col-3",
+												"col-3",
+												"col-2"
+											],
+											"rows": [
+												[
+													"Hel, Lady of the Dead",
+													"TN",
+													"Death",
+													"A wolf, with fangs bared",
+													"Whar"
+												],
+												[
+													"Thonir",
+													"NG",
+													"Tempest",
+													"A scythe against a green field",
+													"None"
+												],
+												[
+													"Mirgal",
+													"CN",
+													"Trickery",
+													"The rainbow spear",
+													"None"
+												]
 											]
 										}
 									]
@@ -758,78 +928,72 @@
 								"The people of Grimnir worship the Vanir and their offspring, as gods. Though divine, they are currently trapped as living statues and unable to directly interfere with the world; they may only influence it. Most raiders have an effigy of at least one of these Stone Court gods, woven from cloth or wool, that sits near their hearth. When traveling, the family take the effigy with them, believing it allows their favored god to intervene on their behalf when needed.",
 								"The Stone Court itself sits on top of Turnjfall. The area consists of a massive lake that, since the gods' misfortune, has become rumored as a home for numerous monsters, discouraging exploration. Only a few raider expeditions have been sent to find it in the past few generations. None have returned.",
 								{
-									"type": "entries",
-									"name": "Grimnir Deities - The Stone Court",
-									"page": 10,
-									"entries": [
-										{
-											"type": "table",
-											"colLabels": [
-												"Deity",
-												"Alignment",
-												"Suggested Domains",
-												"Symbol",
-												"Clan"
-											],
-											"colStyles": [
-												"col-3",
-												"col-1 text-center",
-												"col-3",
-												"col-3",
-												"col-2"
-											],
-											"rows": [
-												[
-													"Aldyhn, The Goddess of Wisdom",
-													"NG",
-													"Knowledge, Discovery",
-													"A purple owl in flight",
-													"Hallharn"
-												],
-												[
-													"Gnark, The God of the Fields",
-													"LG",
-													"Life",
-													"A sheep against a yellow field",
-													"Tvar"
-												],
-												[
-													"Idin, The Goddess of Forges",
-													"LG",
-													"Tempest",
-													"A sheep against a yellow field",
-													"Tvar"
-												],
-												[
-													"Knat, The Goddess of Contests",
-													"TN",
-													"Nature",
-													"A riverwhale rising from the sea",
-													"Knattle"
-												],
-												[
-													"Luta, The Goddess of Will",
-													"LN",
-													"War",
-													"A blue wolverine against a black background",
-													"Lutans"
-												],
-												[
-													"Palter, The God of Hope",
-													"LG",
-													"Light",
-													"A red bird of prey in flight",
-													"Örn"
-												],
-												[
-													"Vani, The God of Battle",
-													"CG",
-													"Nature, War",
-													"A cave bear",
-													"Risa"
-												]
-											]
-										}
+									"caption": "Grimnir Deities - The Stone Court",
+									"type": "table",
+									"colLabels": [
+										"Deity",
+										"Alignment",
+										"Suggested Domains",
+										"Symbol",
+										"Clan"
+									],
+									"colStyles": [
+										"col-3",
+										"col-1 text-center",
+										"col-3",
+										"col-3",
+										"col-2"
+									],
+									"rows": [
+										[
+											"Aldyhn, The Goddess of Wisdom",
+											"NG",
+											"Knowledge, Discovery",
+											"A purple owl in flight",
+											"Hallharn"
+										],
+										[
+											"Gnark, The God of the Fields",
+											"LG",
+											"Life",
+											"A sheep against a yellow field",
+											"Tvar"
+										],
+										[
+											"Idin, The Goddess of Forges",
+											"LG",
+											"Tempest",
+											"A sheep against a yellow field",
+											"Tvar"
+										],
+										[
+											"Knat, The Goddess of Contests",
+											"TN",
+											"Nature",
+											"A riverwhale rising from the sea",
+											"Knattle"
+										],
+										[
+											"Luta, The Goddess of Will",
+											"LN",
+											"War",
+											"A blue wolverine against a black background",
+											"Lutans"
+										],
+										[
+											"Palter, The God of Hope",
+											"LG",
+											"Light",
+											"A red bird of prey in flight",
+											"Örn"
+										],
+										[
+											"Vani, The God of Battle",
+											"CG",
+											"Nature, War",
+											"A cave bear",
+											"Risa"
+										]
 									]
 								},
 								{
@@ -1285,7 +1449,7 @@
 							"page": 19,
 							"entries": [
 								"There are fewer laws in the world of Grimnir than in many other adventure settings. In general, might makes right. Still, some boundaries have been established. All out bloodshed between clans is minimized, both by the völv and by the jarls, especially in these troubling times.",
-								"In general, a killing, outside of warfare, for no valid reason, can be tried by the jarl of either the victim or the aggressor. Often the killer is forced to pay coin or land to the victim’s family. When disagreement or conflict occurs between jarls, the völv step in to prevent a war. These interventions often wait until the Gathering, but jarls have been known to sail with their clans to the Well of Wisdom so that judgment might be pronounced more swiftly.",
+								"In general, a killing, outside of warfare, for no valid reason, can be tried by the jarl of either the victim or the aggressor. Often the killer is forced to pay coin or land to the victim's family. When disagreement or conflict occurs between jarls, the völv step in to prevent a war. These interventions often wait until the Gathering, but jarls have been known to sail with their clans to the Well of Wisdom so that judgment might be pronounced more swiftly.",
 								"For less urgent issues, the clans keep an accounting of transgressions that they then tally during the Gathering at Drifthall, in long meetings with the other jarls, all adjudicated by the völv.",
 								{
 									"type": "entries",
@@ -1300,7 +1464,7 @@
 									"name": "Oath of Duty",
 									"page": 19,
 									"entries": [
-										"In cases of severe judgment, a raider might be forced to agree to an oath of duty to their victim, or the victim’s family. Such an oath might also be taken voluntarily, either to repay a debt or to express appreciation. At the naming of the oath, both parties agree to the length of time for which the oath holds.",
+										"In cases of severe judgment, a raider might be forced to agree to an oath of duty to their victim, or the victim's family. Such an oath might also be taken voluntarily, either to repay a debt or to express appreciation. At the naming of the oath, both parties agree to the length of time for which the oath holds.",
 										"Failure to take or honor the oath results in the transgressor suffering the curse of the exile."
 									]
 								},
@@ -1318,7 +1482,7 @@
 									"name": "Oath of Retribution",
 									"page": 19,
 									"entries": [
-										"When wronged, a raider’s wrath knows no limits. A raider may declare a {@i bloodvow} against an enemy that has insulted or injured them. This is a ritual, but one undertaken by the wronged raider, alone. Often the ritual involves a long rest in the deep woods and an offering of their blood or flesh to Grimnir. The GM will decide the actual benefits and drawbacks of this oath, but the following provides examples:",
+										"When wronged, a raider's wrath knows no limits. A raider may declare a {@i bloodvow} against an enemy that has insulted or injured them. This is a ritual, but one undertaken by the wronged raider, alone. Often the ritual involves a long rest in the deep woods and an offering of their blood or flesh to Grimnir. The GM will decide the actual benefits and drawbacks of this oath, but the following provides examples:",
 										{
 											"type": "list",
 											"items": [
@@ -1377,13 +1541,13 @@
 									"name": "Aldyhn, First of The Völv",
 									"page": 20,
 									"entries": [
-										"Though she had technically created the world, Aldyhn found it a strange place. The air she inhaled tasted of her uncle’s breath and the touching of a tree or stone reminded her of when Mirgal used to rest his hand on her shoulder, offering comfort to a niece he once loved. Mirgal seemed a part of this new world and, at night, she suffered, plagued by dreams, by torments.",
-										"After the early colonies were established, Aldyhn took her son Thonir, still not quite a man himself, and the two boarded a small boat called a faering. Her intention was to map some part of the world to better understand it. Maybe even to convince herself that it was not more than just her uncle’s body living on after his death.",
+										"Though she had technically created the world, Aldyhn found it a strange place. The air she inhaled tasted of her uncle's breath and the touching of a tree or stone reminded her of when Mirgal used to rest his hand on her shoulder, offering comfort to a niece he once loved. Mirgal seemed a part of this new world and, at night, she suffered, plagued by dreams, by torments.",
+										"After the early colonies were established, Aldyhn took her son Thonir, still not quite a man himself, and the two boarded a small boat called a faering. Her intention was to map some part of the world to better understand it. Maybe even to convince herself that it was not more than just her uncle's body living on after his death.",
 										"Regardless, she and Thonir had several adventures as they sailed and rowed their way across the Serpent Sea and up many of the rivers feeding into it or siphoning from it. One such was when they discovered a passage into the mountains of Turnjfall and founded the Stone Court. But that is not this story.",
 										"Instead, on a cloudy day they headed east, but kept the coasts of the many scattered northern islands always in view. An island, no more remarkable than any other, nonetheless caught her attention and she drifted nearer it, ultimately landing to make camp for the night. Though spring was several weeks underway there was still snow covering the ground. Her campfire made short work of it (and the chill air) and underneath their sleeping furs, inside their hide tent, they slept.",
 										"Yet Aldyhn woke to a moonless night sky, the stars crisp and twinkling above her.",
-										"\"Aldyhn,\" her uncle’s whisper traveled across the wind, startling her. His voice seemed to come from the north and she chased after it. She was after all Aldyhn of the Vanir; what else would such as she do in such a situation?",
-										"She found a trail into the hills and, at its end, a grove and a pool of water that was warm to her touch. Steam rose from it, forming land clouds that made it hard to see, made it hard for the outer world to intrude on the inner. She sat near the pool and her uncle’s whispers drifted away. She stared into the waters.",
+										"\"Aldyhn,\" her uncle's whisper traveled across the wind, startling her. His voice seemed to come from the north and she chased after it. She was after all Aldyhn of the Vanir; what else would such as she do in such a situation?",
+										"She found a trail into the hills and, at its end, a grove and a pool of water that was warm to her touch. Steam rose from it, forming land clouds that made it hard to see, made it hard for the outer world to intrude on the inner. She sat near the pool and her uncle's whispers drifted away. She stared into the waters.",
 										"But she did not understand. She did not see. Hours passed and she never even worried about Thonir, her son asleep and alone in the wild. She did not think of the Lost Lands, not of her dead husband, or the many friends she had lost. She thought of nothing other than that she knew she was not really {@i seeing}.",
 										"The blindness frustrated her such that she drove her dagger into her own face and carved out her left eye. She gave it as an offering to the old gods that the Vanir were already beginning to forget. And when she did, she finally saw. Later, she would talk of it often, never the details, but the change. Losing her eye gave her a view of the past, the present, and the future.",
 										"Aldyhn would revisit the island regularly over the years and eventually built a temple there. A temple that to this day is still inhabited by the völv, the order of seers of which Aldyhn was the first."
@@ -1442,7 +1606,7 @@
 									"name": "Family Naming",
 									"page": 22,
 									"entries": [
-										"Family lineage within the raider clans is important. The raiders commonly provide given names to their children and the family name consists of the mother or father’s name (whomever has the greater {@i glory} when the child is born). To this name the suffix {@i loke} is added until the child is of age to identify as male ({@i askr}) or female ({@i emb}). Many chose to retain {@i loke}. A raider might then be known as Aron Thussaskr (son of Thuss) or Aron Thussemb (daughter of Thuss) or Aron Thussloke (child of Thuss).",
+										"Family lineage within the raider clans is important. The raiders commonly provide given names to their children and the family name consists of the mother or father's name (whomever has the greater {@i glory} when the child is born). To this name the suffix {@i loke} is added until the child is of age to identify as male ({@i askr}) or female ({@i emb}). Many chose to retain {@i loke}. A raider might then be known as Aron Thussaskr (son of Thuss) or Aron Thussemb (daughter of Thuss) or Aron Thussloke (child of Thuss).",
 										"Thralls keep their old names but with a surname indicating where they were captured from with the suffix {@i frek} (i.e., Othar Fragidfrek … Othar from Fragid). Those that are actually {@i adopted} into a family, take on the standard naming pattern, as described above."
 									]
 								}
@@ -1463,14 +1627,14 @@
 							"name": "Tools of The Raiders",
 							"page": 22,
 							"entries": [
-								"In general, the world of Grimnir has many of the items one would expect to see in any other fantasy setting. However, the unique circumstances of the world’s creation and the power dynamic between the raiders and the Baendur has resulted in a few differences.",
+								"In general, the world of Grimnir has many of the items one would expect to see in any other fantasy setting. However, the unique circumstances of the world's creation and the power dynamic between the raiders and the Baendur has resulted in a few differences.",
 								{
 									"type": "entries",
 									"name": "Raider Weapons",
 									"page": 22,
 									"entries": [
 										"The world of Grimnir is rich in many metals but the raiders lost much of their mining and smithing knowledge during the Exodus. Deposits of higher quality iron also tend to be found primarily in past Baendur territory (which has been depleted) or in lands currently occupied by the kingdoms. Consequently, many raider weapons are made of metal that is {@i inferior} to the steel-edged weapons of the Baendur (or newcomers to the world).",
-										"That said, most jarls and their seconds have obtained higher quality weapons through raids and, at the game master’s discretion, these weapons can be purchased in stores at an increased cost. (There are many reasons why the raiders pillage Baendur settlements, but access to their metals and weapons is high on the list.)",
+										"That said, most jarls and their seconds have obtained higher quality weapons through raids and, at the game master's discretion, these weapons can be purchased in stores at an increased cost. (There are many reasons why the raiders pillage Baendur settlements, but access to their metals and weapons is high on the list.)",
 										{
 											"type": "inset",
 											"name": "Inferior (Optional Rule)",
@@ -1479,9 +1643,109 @@
 											]
 										},
 										"{@b {@item Sax|ROTSSPGF}}: This short sword has a slashing edge and though these weapons are simply constructed, they are versatile and used by many raiders as their secondary weapon.",
-										"{@b {@item Skeggøx|ROTSSPGF}}: This versatile handaxe has a wide cutting surface suitable for use in battle but the haft can be gripped directly behind the head to work with wood. Additionally, the weapon can be turned over to strike enemies with the hammer end."
+										"{@b {@item Skeggøx (slashing)|ROTSSPGF}}: This versatile handaxe has a wide cutting surface suitable for use in battle but the haft can be gripped directly behind the head to work with wood. Additionally, the weapon can be turned over to strike enemies with the hammer end.",
+										"{@b {@item Skeggøx (bludgeoning)|ROTSSPGF}}: This versatile handaxe has a wide cutting surface suitable for use in battle but the haft can be gripped directly behind the head to work with wood. Additionally, the weapon can be turned over to strike enemies with the hammer end."
 									]
-								}
+								},
+								{
+									"type": "entries",
+									"name": "Raider Armor",
+									"page": 23,
+									"entries": [
+										"It is uncommon for raiders to have heavy armor unless they have taken it from a Baendur raid. Generally, raiders wear light (leather, studded leather) or medium armor (chain shirt, breastplate, half plate). The raiders may also wear a variant form of light armor called gambeson.",
+										"{@b Gambeson.} This armor can be created when needed. Assuming you are in a settlement with access to leather, cloth, and rope, any raider can construct one suit of gambeson during a long rest. {@i Finally, gambeson can be worn under any other armor, granting a +1 bonus in addition to the armor's other bonuses (but with the additional weight and stealth disadvantage)}.",
+										"{@b Shields.} Raiders use round shields painted with their clan symbology and all raider longships have slots along the rowing deck to set the shields to protect a crew at sea from enemy arrows and bolts. Baendur shields are generally kite shaped.",
+										"{@b Helmets.} There is great variety in the helmets that raiders wear. Many will attach trophies taken from those they defeat and hang them from their helmets. These trophies might include bones, braids, fur, or antlers."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Ironwood",
+									"page": 23,
+									"entries": [
+										"Among the most prized weapons and armor are those crafted from a lightweight but unnaturally strong material known as ironwood. The name is a misnomer for ironwood is harvested from the leaves of the mysterious ironheart trees that grow in the deep woods of the inner continent (but have been increasingly found far from their normal habitat). The leaves are worked much like iron and most weapons and armor have an ironwood variant.",
+										"Though prized for their durability, some raiders avoid the use of these items, fearing that they are corrupted because the ironheart trees are associated with the dread Witchking and his ironwood witches. Ironwood weapons are generally not able to be purchased; they must be found or made."
+									]
+								},
+								{
+									"caption": "Raider Melee Martial Weapons",
+									"type": "table",
+									"colLabels": [
+										"Name",
+										"Cost",
+										"Damage",
+										"Weight",
+										"Properties"
+									],
+									"colStyles": [
+										"col-3",
+										"col-1 text-center",
+										"col-3",
+										"col-1 text-center",
+										"col-4"
+									],
+									"rows": [
+										[
+											"{@item Sax|ROTSSPGF}",
+											"3 gp",
+											"1d6 slashing",
+											"2 lb.",
+											"Finesse, light, special: unless magical, considered an inferior weapon"
+										],
+										[
+											"{@item Skeggøx (slashing)|ROTSSPGF} or {@item Skeggøx (bludgeoning)|ROTSSPGF}",
+											"6 gp",
+											"1d6 slashing or bludgeoning",
+											"3 lb.",
+											"Thrown (range 20/50), light, special: grants advantage when using woodworking or carpentry tools"
+										]
+									]
+								},
+								{
+									"caption": "Raider Armor",
+									"type": "table",
+									"colLabels": [
+										"Name",
+										"Cost",
+										"Armor Class (AC)",
+										"Weight",
+										"Properties"
+									],
+									"colStyles": [
+										"col-3",
+										"col-1 text-center",
+										"col-3",
+										"col-1 text-center",
+										"col-4"
+									],
+									"rows": [
+										[
+											"{@item Gambeson Armor|ROTSSPGF}",
+											"4 gp",
+											"12 + Dex Modifier",
+											"3 lb.",
+											"special: can be worn under any other armor, granting a +1 bonus in addition to the armor's other bonuses (but with the additional weight and stealth disadvantage)."
+										]
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Mead",
+									"page": 24,
+									"entries": [
+										"Among the most prized weapons and armor are those crafted from a lightweight but unnaturally strong material known as ironwood. The name is a misnomer for ironwood is harvested from the leaves of the mysterious ironheart trees that grow in the deep woods of the inner continent (but have been increasingly found far from their normal habitat). The leaves are worked much like iron and most weapons and armor have an ironwood variant.",
+										"Though prized for their durability, some raiders avoid the use of these items, fearing that they are corrupted because the ironheart trees are associated with the dread Witchking and his ironwood witches. Ironwood weapons are generally not able to be purchased; they must be found or made.",
+										{
+											"type": "list",
+											"items": [
+												"{@item Honey-Water Mead, Horn|ROTSSPGF|Honey-Water Mead, Horn (5 sp)}",
+												"{@item Whalemead, Horn|ROTSSPGF|Whalemead, Horn (3 gp)}",
+												"{@item Mother's Brew, Horn|ROTSSPGF|Mother's Brew, Horn (6 gp)}",
+												"{@item Mead of the Twins, Horn|ROTSSPGF|Mead of the Twins, Horn (12 gp)}"
+											]
+										}
+									]
+								}				
 							]
 						}
 					]
