@@ -56,7 +56,7 @@
 							"quantity": 1
 						},
 						{
-							"special": "a boar's bone,",
+							"special": "a boar's bone",
 							"quantity": 1
 						},
 						"navigator's Tools|phb",
@@ -68,6 +68,15 @@
 				}
 			],
 			"entries": [
+				"Once you were an accomplished raider with a promising future, but you had also become arrogant and overly proud. You thought of yourself as a walking legend and your place in the Halls of Slain was surely guaranteed! Then you made the unfortunate mistake of allowing a rival clan's foul-tongued skald to survive after a raiding victory. That skald cursed you upon that battlefield:",
+				{
+					"type": "quote",
+					"entries": [
+						"No death shall find you, As you walk all paths, across all lands, Beyond and below, all living things, Till the wolf rises at the forever sunset."
+					]
+				},		
+				"You laughed off the curse but that evening you choked on the bones of a boar while celebrating your victory and died an inglorious death. Your clan left you on that beach in the middle of nowhere, to be claimed by Hel and brought to her Underworld. They mourned for you, knowing that your death was unworthy, and you would never enter the Halls of the Slain.",
+				"Yet you returned to life the very next day. Since then you have died several more times, but you always rise again, the following morning. Now you seek a way to end the curse so that you might die as a raider should and earn your place in the Halls of the Slain.",
 				{
 					"type": "list",
 					"style": "list-hang-notitle",
@@ -289,15 +298,15 @@
 							"type": "list",
 							"items": [
 								"{@b Find the Skald.} You must locate the skald that cursed you and decipher how to break free from the curse to end your relentless life.",
-								"{@b Seek the Components.} You must seek out any materials or knowledge you need to prepare yourself for ending the curse. Doing so will provide you with a magical item that will help you end your curse. Reward. You find a powerful item. Choose one of the following:",
+								"{@b Seek the Components.} You must seek out any materials or knowledge you need to prepare yourself for ending the curse. Doing so will provide you with a magical item that will help you end your curse. {@b Reward.} You find a powerful item. Choose one of the following:",
 								{
 									"type": "list",
 									"items": [
-										"A Deathbringer weapon of your choice.",
-										"A bronze horn of Valhalla (usable only by you and without needing to meet the requirement for the item)"
+										"{@b A Deathbringer} weapon of your choice.",
+										"{@b A bronze horn of Valhalla} (usable only by you and without needing to meet the requirement for the item)"
 									]
 								},
-								"{@b End the Curse.} With the knowledge received from the skald, you must do whatever it takes to sever the curse's grip on your soul. Reward. You can now die as any other mortal might and when you do, you know you will enter the Halls of the Slain."
+								"{@b End the Curse.} With the knowledge received from the skald, you must do whatever it takes to sever the curse's grip on your soul. {@b Reward.} You can now die as any other mortal might and when you do, you know you will enter the Halls of the Slain."
 							]
 						}
 					]
@@ -308,6 +317,629 @@
 					"entries": [
 						"You have lived many lives and long for your place beside the great hearth fires of the Halls of the Slain. You must die honorably in an epic battle that atones for both your prior arrogance as well as the numerous minor deaths you have incurred during your eternal life.",
 						"{@b {@i {@optfeature Gift of Perseverance|ROTSSPGF}}} You have advantage on all saving throws."
+					]
+				}
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "The Fallen",
+			"source": "ROTSSPGF",
+			"page": 28,
+			"skillProficiencies": [
+				{
+					"insight": true,
+					"medicine": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"any": 1
+				}
+			],
+			"toolProficiencies": [
+				{
+					"anyArtisansTool": true
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"equipmentType": "toolArtisan"
+						},
+						{
+							"item": "staff|phb",
+							"displayName": "A staff",
+							"quantity": 1
+						},
+						{
+							"item": "common clothes|phb",
+							"displayName": "A set of common clothes",
+							"quantity": 1
+						},
+						{
+							"special": "heavy fisher's wool sweater",
+							"quantity": 1
+						},
+						{
+							"item": "pouch|phb",
+							"containsValue": 1000
+						}
+					]
+				}
+			],
+			"entries": [
+				"You are a wanderer of the world yet have no clear idea why this is so. Beyond the last few years, you have no firm memory of a past life or who (or what) you once were. You awoke in a sea damp cave along the coastline of the towering inner mountains. The cave was situated several hundred feet above the Serpent Sea, and you spent hours climbing down. Eventually you found your way to a small fishing village and found a place there. You have, over time, adjusted to life in Grimnir.",
+				"But who are you… where did you come from? Do you have a family? Why did you lose your memories? These questions plague you more in recent weeks as strange dreams have surfaced… dreams of another realm. Another you.",
+				"You sense that you must serve a great purpose and you yearn to discover what this must be.",
+				{
+					"type": "quote",
+					"entries": [
+						"Yay, the not belonging, its like skinning your hands on a rough rock you be movin'. Just keep pushing. You either widen that gap and walk on through... or push hard enough and the bastard rolls down a hill and crushes something."
+					],
+					"by": "Hroarr Longspear, Jarl of the Knattle"
+				},
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Player Interest:",
+							"entry": "Loki, Angel, The Nameless One"
+						},
+						{
+							"type": "item",
+							"name": "Restrictions:",
+							"entry": "Most options will work but the game master has the final decision and should be consulted when selecting this option"
+						},
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Insight}, {@skill Medicine}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "One type of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools} of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "One of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "a {@item staff|phb}, a set of {@item common clothes|phb} and a heavy fisher's wool sweater, a {@item pouch|phb} containing 10 gp"
+						}
+					]
+				},
+				{
+					"name": "Feature: Fate's Bite",
+					"type": "entries",
+					"entries": [
+						"You have a scar on your hand that resembles the rune ᛈ. To the raider people this rune can represent chance or mystery. At certain moments in the story additional runes will be drawn, adding to your story, your abilities, and your penultimate reason for existing."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"name": "Feature: The Maker",
+					"type": "entries",
+					"entries": [
+						"You are connected to the world in ways that you do not understand. At times Grimnir itself guides your hand when you work with the artisan tools you have chosen. You always have advantage when using that tool. Additionally, once per long rest, if you fail a tool's check, you may choose to succeed."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"name": "Suggested Characteristics",
+					"type": "entries",
+					"entries": [
+						"The Fallen is a blank slate and can fill many roles in the community they find themselves in. Though lacking in knowledge, they are quick learners and are uncannily wise to the world around them, intuiting the correct way to act, even in unfamiliar situations. Some portion of the life they lived remains with them. Though possibly aloof, they tend to be liked, even respected, by their adopted communities.",
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I adore the world I live in, and I want to add beautiful things to it."
+								],
+								[
+									"2",
+									"I love a well-crafted insult, including those directed towards myself."
+								],
+								[
+									"3",
+									"Despite all I know, I speak little and let others make decisions."
+								],
+								[
+									"4",
+									"I dislike those that are unwilling to put in a hard day's work and am willing to call them out on it."
+								],
+								[
+									"5",
+									"I am more comfortable in the deep woods, than I am around people."
+								],
+								[
+									"6",
+									"I am always polite, even to my enemies."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"Respect. I believe all living things are worthy of being treated well. (Good)"
+								],
+								[
+									"2",
+									"Logic. I measure everything in life the way I measure the materials of my trade… emotion is not important. (Lawful)"
+								],
+								[
+									"3",
+									"People. I am committed to those I travel with, not to any specific ideals. (Neutral)"
+								],
+								[
+									"4",
+									"Might. My swift anger is reason enough to put others in their place. (Evil)"
+								],
+								[
+									"5",
+									"Self-Improvement. I want to master the tools of my trade. (Any)"
+								],
+								[
+									"6",
+									"Truth. Discovering the truth of who I am is important and all I do must lead me to that truth. (Neutral)"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Bond"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I am fond of the village (and clan) where I have lived since coming down from the mountain."
+								],
+								[
+									"2",
+									"I have a mentor who helped me a great deal; I would do anything for them."
+								],
+								[
+									"3",
+									"I lost my temper and damaged a relationship that I seek to mend."
+								],
+								[
+									"4",
+									"I adore the tools of my trade and treat them as well as I would treat a person."
+								],
+								[
+									"5",
+									"I believe my honor and my glory are paramount."
+								],
+								[
+									"6",
+									"I will suffer so that others will not."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"Dreams (or nightmares) plague my sleep and I often have a cruel headache, making me bitter and irritable."
+								],
+								[
+									"2",
+									"I work myself too hard to avoid thinking about what I might have been in the past."
+								],
+								[
+									"3",
+									"II feel I must serve a greater purpose and if I need to, I will flee from battle to save myself until I know what that purpose is."
+								],
+								[
+									"4",
+									"I hide this belief, but I do feel that others are beneath me. I am special, they are not."
+								],
+								[
+									"5",
+									"Sometimes when I am standing at a high location, I feel the urge to jump."
+								],
+								[
+									"6",
+									"Hating my own lost past, I refuse to keep secrets for others."
+								]
+							]
+						}
+					]
+				},
+				{
+					"name": "Starting Story Connection",
+					"type": "entries",
+					"entries": [
+						"When you heard about the völv’s desire to explore the tower at Kekkell you were intrigued, for your most recent dreams have been showing you a strange ruin, to the south. You have seen yourself walking the halls of an ancient building and you believe you may find a trace of your past at Kekkell. You signed on to become a member of Hrolf’s expedition."
+					]
+				},
+				{
+					"name": "Heroic Tasks",
+					"type": "entries",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"{@b Your Truth.} You must learn what you actually are and where you are from. {@b Reward.} Choose any valid feat from the player’s handbook as if you had reached the appropriate level to gain it (all other prerequisites must still be met). This represents remembering a small portion of the person you once were.",							
+								"{@b Why are You Here?} You learn why you are in the world of Grimnir and a hint of how to restore your true self.",
+								"{@b Reclaim Your Past.} You must discover a way to return to your homeland and to restore as much of yourself as is possible. {@b Reward.} You find an item connected to your mysterious past. Pick one of the following:",
+								{
+									"type": "list",
+									"items": [
+										"{@b The Falcon Coat} allows you to fly and move between different locations across the world—and possibly between other lands.",
+										"{@b Dragon Scale Mail} (your choice of scales), gifted to you far in the past."
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Epic Goal: Redeem the past",
+					"type": "entries",
+					"entries": [
+						"Once you discover your past, an ancient threat is revealed that you must vanquish. But it will involve a costly sacrifice and your decision may determine the fate of Grimnir.",
+						"{@b {@i {@optfeature Gift of the Slain|ROTSSPGF}}} Once per long rest you can teleport yourself between Grimnir and the {@i Halls of the Slain}, allowing you to walk the mortal lands and offer assistance as needed. You may elect instead to teleport a willing (and worthy) incapacitated raider from Grimnir to the {@i Halls of the Slain} (but not in the reverse direction)."
+					]
+				}
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "The Royal Heir",
+			"source": "ROTSSPGF",
+			"page": 29,
+			"skillProficiencies": [
+				{
+					"athletics": true,
+					"history": true
+				}
+			],
+			"skillToolLanguageProficiencies": [
+				{
+					"choose": [
+						{
+							"from": [
+								"anyLanguage",
+								"vehicles (water)"
+							],
+							"count": 1
+						}
+					]
+				}
+			],
+			"languageProficiencies": [
+				{
+					"any": 1
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"equipmentType": "toolArtisan"
+						},
+						{
+							"item": "staff|phb",
+							"displayName": "A staff",
+							"quantity": 1
+						},
+						{
+							"item": "common clothes|phb",
+							"displayName": "A set of common clothes",
+							"quantity": 1
+						},
+						{
+							"special": "heavy fisher's wool sweater",
+							"quantity": 1
+						},
+						{
+							"item": "pouch|phb",
+							"containsValue": 1000
+						}
+					]
+				}
+			],
+			"entries": [
+				"Your family once ruled a wealthy Baendur kingdom and your mother was a respected and remarkable queen. One winter’s day, raiders invaded your lands. When your parents rode out to oust them from your lands, your family was defeated. You, the youngest of all your siblings, was taken prisoner and forced to watch your brothers and sisters slaughtered.",
+				"Since then you have lived with the raiders and have come to accept them as your own people. They eventually adopted you and you are no longer a thrall. Yet you have never forgotten your family or the lands that by birth are yours to inherit. Recently your adopted family died during a raid between rival clans. You survived but the location of your homeland was lost with the deaths of your raider family.",
+				{
+					"type": "quote",
+					"entries": [
+						"We bide. The savage raiders plunder, slaughter and capture us. But we bide, we do. Our time shall yet come."
+					],
+					"by": "King Cenric Edgare of the Baendur"
+				},
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Player Interest:",
+							"entry": "Uhtred, Conan the Barbarian"
+						},
+						{
+							"type": "item",
+							"name": "Restrictions:",
+							"entry": "Must be born in Grimnir"
+						},
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Athletics}, {@skill History}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "{@filter vehicles (water)|items|source=phb;dmg|miscellaneous=mundane|type=vehicle (water)} or an additional language"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "One of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "a {@item staff|phb}, a set of {@item common clothes|phb} and a heavy fisher's wool sweater, a {@item pouch|phb} containing 10 gp"
+						}
+					]
+				},
+				{
+					"name": "Feature: Fate's Bite",
+					"type": "entries",
+					"entries": [
+						"You have a scar on your hand that resembles the rune ᛈ. To the raider people this rune can represent chance or mystery. At certain moments in the story additional runes will be drawn, adding to your story, your abilities, and your penultimate reason for existing."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"name": "Feature: The Maker",
+					"type": "entries",
+					"entries": [
+						"You are connected to the world in ways that you do not understand. At times Grimnir itself guides your hand when you work with the artisan tools you have chosen. You always have advantage when using that tool. Additionally, once per long rest, if you fail a tool's check, you may choose to succeed."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"name": "Suggested Characteristics",
+					"type": "entries",
+					"entries": [
+						"The Fallen is a blank slate and can fill many roles in the community they find themselves in. Though lacking in knowledge, they are quick learners and are uncannily wise to the world around them, intuiting the correct way to act, even in unfamiliar situations. Some portion of the life they lived remains with them. Though possibly aloof, they tend to be liked, even respected, by their adopted communities.",
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I adore the world I live in, and I want to add beautiful things to it."
+								],
+								[
+									"2",
+									"I love a well-crafted insult, including those directed towards myself."
+								],
+								[
+									"3",
+									"Despite all I know, I speak little and let others make decisions."
+								],
+								[
+									"4",
+									"I dislike those that are unwilling to put in a hard day's work and am willing to call them out on it."
+								],
+								[
+									"5",
+									"I am more comfortable in the deep woods, than I am around people."
+								],
+								[
+									"6",
+									"I am always polite, even to my enemies."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"Respect. I believe all living things are worthy of being treated well. (Good)"
+								],
+								[
+									"2",
+									"Logic. I measure everything in life the way I measure the materials of my trade… emotion is not important. (Lawful)"
+								],
+								[
+									"3",
+									"People. I am committed to those I travel with, not to any specific ideals. (Neutral)"
+								],
+								[
+									"4",
+									"Might. My swift anger is reason enough to put others in their place. (Evil)"
+								],
+								[
+									"5",
+									"Self-Improvement. I want to master the tools of my trade. (Any)"
+								],
+								[
+									"6",
+									"Truth. Discovering the truth of who I am is important and all I do must lead me to that truth. (Neutral)"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Bond"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I am fond of the village (and clan) where I have lived since coming down from the mountain."
+								],
+								[
+									"2",
+									"I have a mentor who helped me a great deal; I would do anything for them."
+								],
+								[
+									"3",
+									"I lost my temper and damaged a relationship that I seek to mend."
+								],
+								[
+									"4",
+									"I adore the tools of my trade and treat them as well as I would treat a person."
+								],
+								[
+									"5",
+									"I believe my honor and my glory are paramount."
+								],
+								[
+									"6",
+									"I will suffer so that others will not."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"Dreams (or nightmares) plague my sleep and I often have a cruel headache, making me bitter and irritable."
+								],
+								[
+									"2",
+									"I work myself too hard to avoid thinking about what I might have been in the past."
+								],
+								[
+									"3",
+									"II feel I must serve a greater purpose and if I need to, I will flee from battle to save myself until I know what that purpose is."
+								],
+								[
+									"4",
+									"I hide this belief, but I do feel that others are beneath me. I am special, they are not."
+								],
+								[
+									"5",
+									"Sometimes when I am standing at a high location, I feel the urge to jump."
+								],
+								[
+									"6",
+									"Hating my own lost past, I refuse to keep secrets for others."
+								]
+							]
+						}
+					]
+				},
+				{
+					"name": "Starting Story Connection",
+					"type": "entries",
+					"entries": [
+						"When you heard about the völv’s desire to explore the tower at Kekkell you were intrigued, for your most recent dreams have been showing you a strange ruin, to the south. You have seen yourself walking the halls of an ancient building and you believe you may find a trace of your past at Kekkell. You signed on to become a member of Hrolf’s expedition."
+					]
+				},
+				{
+					"name": "Heroic Tasks",
+					"type": "entries",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"{@b Your Truth.} You must learn what you actually are and where you are from. {@b Reward.} Choose any valid feat from the player’s handbook as if you had reached the appropriate level to gain it (all other prerequisites must still be met). This represents remembering a small portion of the person you once were.",							
+								"{@b Why are You Here?} You learn why you are in the world of Grimnir and a hint of how to restore your true self.",
+								"{@b Reclaim Your Past.} You must discover a way to return to your homeland and to restore as much of yourself as is possible. {@b Reward.} You find an item connected to your mysterious past. Pick one of the following:",
+								{
+									"type": "list",
+									"items": [
+										"{@b The Falcon Coat} allows you to fly and move between different locations across the world—and possibly between other lands.",
+										"{@b Dragon Scale Mail} (your choice of scales), gifted to you far in the past."
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Epic Goal: Redeem the past",
+					"type": "entries",
+					"entries": [
+						"Once you discover your past, an ancient threat is revealed that you must vanquish. But it will involve a costly sacrifice and your decision may determine the fate of Grimnir.",
+						"{@b {@i {@optfeature Gift of the Slain|ROTSSPGF}}} Once per long rest you can teleport yourself between Grimnir and the {@i Halls of the Slain}, allowing you to walk the mortal lands and offer assistance as needed. You may elect instead to teleport a willing (and worthy) incapacitated raider from Grimnir to the {@i Halls of the Slain} (but not in the reverse direction)."
 					]
 				}
 			],
@@ -566,6 +1198,16 @@
 			],
 			"entries": [
 				"You have advantage on all saving throws."
+			]
+		},
+		{
+			"name": "Gift of the Slain",
+			"source": "ROTSSPGF",
+			"featureType": [
+				"OF:ROTSSPGF"
+			],
+			"entries": [
+				"Once per long rest you can teleport yourself between Grimnir and the {@i Halls of the Slain}, allowing you to walk the mortal lands and offer assistance as needed. You may elect instead to teleport a willing (and worthy) incapacitated raider from Grimnir to the {@i Halls of the Slain} (but not in the reverse direction)."
 			]
 		}
 	],
@@ -2215,6 +2857,14 @@
 								{
 									"type": "entries",
 									"name": "{@background The Cursed Raider|ROTSSPGF}",
+									"page": 26,
+									"entries": [
+										""
+									]
+								},
+								{
+									"type": "entries",
+									"name": "{@background The Fallen|ROTSSPGF}",
 									"page": 26,
 									"entries": [
 										""
