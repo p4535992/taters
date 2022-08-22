@@ -25,8 +25,61 @@
 		"dateLastModified": 1638816223,
 		"_dateLastModifiedHash": "867a474772"
 	},
-	"spell": [
-		
+	"variantrule": [
+		{
+			"name": "Inferior",
+			"source": "ROTSSPGF",
+			"entries": [
+				"An attack roll of a 1 in battle against an opponent using a higher quality weapon means your non-magical inferior weapon breaks."
+			]
+		}
+	],
+	"item": [
+		{
+			"name": "Sax",
+			"baseItem": "Shortsword|PHB",
+			"source": "ROTSSPGF",
+			"page": 23,
+			"type": "M",
+			"rarity": "none",
+			"weight": 2,
+			"value": 300,
+			"weaponCategory": "martial",
+			"property": [
+				"F",
+				"L",
+				"S",
+				"V"
+			],
+			"dmg1": "1d6",
+			"dmgType": "S",
+			"sword": true,
+			"weapon": true,
+			"entries": [
+				"This short sword has a slashing edge and though these weapons are simply constructed, they are versatile and used by many raiders as their secondary weapon."
+			]
+		}
+	],
+	"magicvariant": [
+		{
+			"name": "Inferior",
+			"type": "GV",
+			"requires": [
+				{
+					"sword": true,
+					"type": "M"
+				}
+			],
+			"inherits": {
+				"nameSuffix": " Inferior",
+				"source": "ROTSSPGF",
+				"page": 23,
+				"rarity": "uncommon",
+				"entries": [
+					"An attack roll of a 1 in battle against an opponent using a higher quality weapon means your non-magical inferior weapon breaks."
+				]
+			}
+		}
 	],
 	"optionalfeature": [
 
@@ -274,8 +327,32 @@
 					"name": "Chapter 2: Creating Heroes",
                     "headers": [
                         "Grimnir Settlers",
+						{
+							"depth": 1,
+							"header": "Grimnir Names"
+						},
+						{
+							"depth": 1,
+							"header": "Family Naming"
+						},						
 						"Grimnir Newcomers",
 						"Tools of The Raiders",
+						{
+							"depth": 1,
+							"header": "Raider Weapons"
+						},
+						{
+							"depth": 1,
+							"header": "Raider Armor"
+						},
+						{
+							"depth": 1,
+							"header": "Ironwood"
+						},
+						{
+							"depth": 1,
+							"header": "Mead"
+						},
 						"Glory",
 						"Epic Backgrounds"
                     ],
@@ -1318,6 +1395,92 @@
 										"I woke in the midst of night to see a one-eyed stranger standing over me. Colored lightning flashed in the sky and she seemed of another world. And yet. She was my mother, Aldyhn. But not quite. Not quite ever the same. I vowed never to return to that island, never to visit that cursed Well of Wisdom."
 									],
 									"by": "Thonir the Almost-God"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Chapter 2: Creating Heroes",
+					"page": 22,
+					"entries": [
+						"This section describes how to build heroes for {@i Raiders of the Serpent Sea}. First decide where your hero is from. You have a couple choices. Heroes from other worlds have been brought to Grimnir many times over the centuries, but after a generation or two they tend to assimilate into the various cultures. A truly new arrival is rare, but still possible. However, a hero from among the raiders has a stronger reason to save the world and may be more rewarding to play.",
+						{
+							"type": "inset",
+							"name": "Under Development",
+							"entries": [
+								"All rules and statistics presented in this preview document are being playtested and are subject to change during development."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Grimnir Settlers",
+							"page": 22,
+							"entries": [
+								"Humans, elves, gnomes, halflings, half-orcs, dragonborn, and tieflings were all among the original settlers to Grimnir from the Lost Lands. Over the generations others of those races have also found their way to Grimnir and have joined the existing societies. Though clans tend to predominate toward one race over another, they are open to most. What one does is more important than what one is. Usually.",
+								{
+									"type": "inset",
+									"name": "Out of the Woods",
+									"entries": [
+										"The wicker began to integrate themselves into raider society a few generations after the Exodus. The tallfolk emerged a hundred years later."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Grimnir Names",
+									"page": 22,
+									"entries": [
+										"Any name that players want to use is acceptable given the possibility of new arrivals to the world. However, raiders tend to favor Norse flavored naming whereas the Baendur name their children similarly to earlier English cultures.",
+										"{@b Raider Names, Male:} Aron, Birn, Dagfin, Egom, Eind, Fordind, Gunne, Holger, Ingalf, Jorn, Jorund, Karn, Leik, Mjall, Ove, Runar, Snorrin, Skopi, Thuss, Torgeir, Unn, Vragi",
+										"{@b Raider Names, Female:} Aldyhn, Asny, Bera, Embla, Fjorgyn, Gyda, Herdis, Inga, Karra, Magda, Ormhild, Luta, Runa, Sigrun, Skur, Syhja, Tola, Xisa",
+										"{@b Baendur Names, Male:} Aston, Authun, Brandyn, Camdyn, Ceolmund, Dunstan, Edric, Esmond, Greysen, Landan, Kendrick, Moldaf, Osgar, Thar, Ulf, Upton, Wystan Baendur Names, Female: Afton, Athela, Brynlee, Chancey, Edola, Ela, Kelcie, Lena, Mildred, Nelda, Piper, Tinble, Rylee"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Family Naming",
+									"page": 22,
+									"entries": [
+										"Family lineage within the raider clans is important. The raiders commonly provide given names to their children and the family name consists of the mother or father’s name (whomever has the greater {@i glory} when the child is born). To this name the suffix {@i loke} is added until the child is of age to identify as male ({@i askr}) or female ({@i emb}). Many chose to retain {@i loke}. A raider might then be known as Aron Thussaskr (son of Thuss) or Aron Thussemb (daughter of Thuss) or Aron Thussloke (child of Thuss).",
+										"Thralls keep their old names but with a surname indicating where they were captured from with the suffix {@i frek} (i.e., Othar Fragidfrek … Othar from Fragid). Those that are actually {@i adopted} into a family, take on the standard naming pattern, as described above."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Grimnir Newcomers",
+							"page": 22,
+							"entries": [
+								"The life of a newcomer to Grimnir is often unpleasant. After they survive the inhospitable terrain and weather they may be taken as thralls by raiders unless they are able to prove their mettle in battle. Usually only after living among the raiding clans a generation or two will their offspring have the option of bettering themselves and becoming full members of the clan.",
+								"Among the Baendur, life is potentially worse, for thralls seldom rise beyond their station. There are servants among the powerful noble families that have served in that role for numerous generations.",
+								"Regardless, newcomers also must become familiar with the customs and oaths of their new lands. The raiders understand their world and do not often think to explain it to others, which can create problems. A newcomer may, for example, swear an {@i Oath of Duty} without really understanding what it means."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Tools of The Raiders",
+							"page": 22,
+							"entries": [
+								"In general, the world of Grimnir has many of the items one would expect to see in any other fantasy setting. However, the unique circumstances of the world’s creation and the power dynamic between the raiders and the Baendur has resulted in a few differences.",
+								{
+									"type": "entries",
+									"name": "Raider Weapons",
+									"page": 22,
+									"entries": [
+										"The world of Grimnir is rich in many metals but the raiders lost much of their mining and smithing knowledge during the Exodus. Deposits of higher quality iron also tend to be found primarily in past Baendur territory (which has been depleted) or in lands currently occupied by the kingdoms. Consequently, many raider weapons are made of metal that is {@i inferior} to the steel-edged weapons of the Baendur (or newcomers to the world).",
+										"That said, most jarls and their seconds have obtained higher quality weapons through raids and, at the game master’s discretion, these weapons can be purchased in stores at an increased cost. (There are many reasons why the raiders pillage Baendur settlements, but access to their metals and weapons is high on the list.)",
+										{
+											"type": "inset",
+											"name": "Inferior (Optional Rule)",
+											"entries": [
+												"An attack roll of a 1 in battle against an opponent using a higher quality weapon means your non-magical {@variantrule inferior|ROTSSPGF} weapon breaks."
+											]
+										},
+										"{@b {@item Sax|ROTSSPGF}}: This short sword has a slashing edge and though these weapons are simply constructed, they are versatile and used by many raiders as their secondary weapon.",
+										"{@b {@item Skeggøx|ROTSSPGF}}: This versatile handaxe has a wide cutting surface suitable for use in battle but the haft can be gripped directly behind the head to work with wood. Additionally, the weapon can be turned over to strike enemies with the hammer end."
+									]
 								}
 							]
 						}
