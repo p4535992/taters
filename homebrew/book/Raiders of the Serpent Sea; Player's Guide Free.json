@@ -19,20 +19,303 @@
 			}
 		],
 		"optionalFeatureTypes": {
-			"OF:ROTSSPGF": "ZZZZ"
+			"OF:ROTSSPGF": "Raiders of the serpent sea"
 		},
 		"dateAdded": 1594364848,
 		"dateLastModified": 1638816223,
 		"_dateLastModifiedHash": "867a474772"
 	},
-	"variantrule": [
+	"background": [
 		{
-			"name": "Inferior",
+			"name": "The Cursed Raider",
 			"source": "ROTSSPGF",
+			"page": 26,
+			"skillProficiencies": [
+				{
+					"arcana": true,
+					"religion": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"navigator's tools": true,
+					"vehicles (water)": true
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"item": "traveler's Clothes|phb",
+							"displayName": "A set of traveler's clothes",
+							"quantity": 1
+						},
+						{
+							"item": "blanket|phb",
+							"displayName": "A winter blanket",
+							"quantity": 1
+						},
+						{
+							"special": "a boar's bone,",
+							"quantity": 1
+						},
+						"navigator's Tools|phb",
+						{
+							"item": "pouch|phb",
+							"containsValue": 500
+						}
+					]
+				}
+			],
 			"entries": [
-				"An attack roll of a 1 in battle against an opponent using a higher quality weapon means your non-magical inferior weapon breaks."
-			]
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Player Interest:",
+							"entry": "Elric of Melniboné, Captain Navarre"
+						},
+						{
+							"type": "item",
+							"name": "Restrictions:",
+							"entry": "Must be born in Grimnir"
+						},
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Arcana}, {@skill Religion}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "{@item Navigator's tools|phb}, {@filter vehicles (water)|items|source=phb;dmg|miscellaneous=mundane|type=vehicle (water)}"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "set of {@item traveler's clothes|phb}, a {@item blanket|phb|winter blanket}, a boar's bone, {@item navigator's tools|phb}, a {@item pouch|phb} containing 5 gp"
+						}
+					]
+				},
+				{
+					"name": "Feature: A Raider's Rune",
+					"type": "entries",
+					"entries": [
+						"You received a rune tattoo upon reaching adulthood in your clan but upon your first death, it changed. That tattoo now resembles the rune {@i |} and indicates the frozen north, the unchanging lands, and you have long seen it as a sign that you must introduce change into your life. At certain moments in the story additional runes will be drawn, adding to your story, your abilities, and your penultimate reason for existing."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"name": "Feature: Curse of Undying",
+					"type": "entries",
+					"entries": [
+						"No matter how much damage is delivered you are never killed outright. Additionally, if you fail three death saving throws, you do not die. Instead you appear dead, but at sunrise of the following day you are restored to 1 Hit Point, as if you had stabilized."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"name": "Suggested Characteristics",
+					"type": "entries",
+					"entries": [
+						"You have lived many lifetimes, a wanderer among all the raiding clans and you may have even spent time with the Baendur. You have been many different people, but some core characteristics have remained with you, throughout.",
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"Nobody believes me when I tell them about my past, so I hide it."
+								],
+								[
+									"2",
+									"I speak in {@i kenning} using compound words such as ankle biter (young child) or battle-sweat (blood) or whale-road (the sea)."
+								],
+								[
+									"3",
+									"I cannot keep my mouth shut when I see others make mistakes. There is a right way to do things and it is my duty to tell others."
+								],
+								[
+									"4",
+									"Sometimes I think I am living in the Halls of the Slain already and so are all those around me. Maybe nobody really dies? Maybe reality is not what it seems?"
+								],
+								[
+									"5",
+									"I hate singing of any kind and will go out of my way to avoid hearing it."
+								],
+								[
+									"6",
+									"I think with each death I lose a bit of myself—memories or abilities or humanity. I am terrified of dying now."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"Charity. It is my duty to help protect and provide for others. (Good)"
+								],
+								[
+									"2",
+									"Freedom. There is no point in any connections to others, for they will all wither and die. I go where I shall. (Chaotic)"
+								],
+								[
+									"3",
+									"Might. I have lived so long in order to hone my battle skills and I now take what I want from weaker folk. (Evil)"
+								],
+								[
+									"4",
+									"Live and Let Live. I am much like the wild forests, themselves. We live as we must. (Neutral)"
+								],
+								[
+									"5",
+									"Knowledge. One blessing of this long life is that I have time to learn many wondrous things. (Neutral)"
+								],
+								[
+									"6",
+									"Aspiration. I will free myself from this never-ending life. (Any)"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Bond"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I have given up on the Stone Court and worship Mirgal as the one true god of Grimnir."
+								],
+								[
+									"2",
+									"I have had many children over the years and do my best to watch over them. I sometimes even travel with them, in disguise, to better protect them."
+								],
+								[
+									"3",
+									"I am fond of a particular valley, forest, or mountain. Only the natural world remains for me to care about."
+								],
+								[
+									"4",
+									"I believe the only future for Grimnir is to make real the prophecies of the völv and defeat our adversaries at Ragnarök."
+								],
+								[
+									"5",
+									"I long for the life I lost and often return to my original homestead."
+								],
+								[
+									"6",
+									"I hear voices from the darkened woods and am drawn to understand them better."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I fear I shall never enter the Halls, and so I act recklessly to prove myself."
+								],
+								[
+									"2",
+									"Finding new experiences becomes harder and harder over the centuries and I will leap at the chance to do something different."
+								],
+								[
+									"3",
+									"I am immensely jealous when I see another warrior act valorously, for I fear they will take my rightful spot in the Halls of the Slain."
+								],
+								[
+									"4",
+									"I am terrified of being imprisoned, forced to live a life, or many lives, in restraints."
+								],
+								[
+									"5",
+									"I would feel shame if others knew my secret."
+								],
+								[
+									"6",
+									"I mock those that eat meat, since I've avoided it ever since choking to death."
+								]
+							]
+						}
+					]
+				},
+				{
+					"name": "Starting Story Connection",
+					"type": "entries",
+					"entries": [
+						"After your expedition to Kekkell with Hrolf you intend to part ways and find a mysterious seer that is rumored to live in the town of {@i Nowhere}. You start with knowledge of the rough location of that town on your world map."
+					]
+				},
+				{
+					"name": "Heroic Tasks",
+					"type": "entries",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"{@b Find the Skald.} You must locate the skald that cursed you and decipher how to break free from the curse to end your relentless life.",
+								"{@b Seek the Components.} You must seek out any materials or knowledge you need to prepare yourself for ending the curse. Doing so will provide you with a magical item that will help you end your curse. Reward. You find a powerful item. Choose one of the following:",
+								{
+									"type": "list",
+									"items": [
+										"A Deathbringer weapon of your choice.",
+										"A bronze horn of Valhalla (usable only by you and without needing to meet the requirement for the item)"
+									]
+								},
+								"{@b End the Curse.} With the knowledge received from the skald, you must do whatever it takes to sever the curse's grip on your soul. Reward. You can now die as any other mortal might and when you do, you know you will enter the Halls of the Slain."
+							]
+						}
+					]
+				},
+				{
+					"name": "Epic Goal: Enter the Halls of the Slain",
+					"type": "entries",
+					"entries": [
+						"You have lived many lives and long for your place beside the great hearth fires of the Halls of the Slain. You must die honorably in an epic battle that atones for both your prior arrogance as well as the numerous minor deaths you have incurred during your eternal life.",
+						"{@b {@i {@optfeature Gift of Perseverance|ROTSSPGF}}} You have advantage on all saving throws."
+					]
+				}
+			],
+			"hasFluff": true
 		}
+	],
+	"variantrule": [
+
 	],
 	"item":[
 		{
@@ -107,7 +390,7 @@
 			"weapon": true,
 			"entries": [
 				"This short sword has a slashing edge and though these weapons are simply constructed, they are versatile and used by many raiders as their secondary weapon.",
-				"{@b Special.} unless magical, considered an {@i {@variantrule inferior|ROTSSPGF}} weapon"
+				"{@b Special.} unless magical, considered an {@i {@item inferior|ROTSSPGF}} weapon"
 			],
 			"fluff": {
 				"images": [
@@ -258,7 +541,33 @@
 		}
 	],
 	"optionalfeature": [
-
+		{
+			"name": "Boasting",
+			"source": "ROTSSPGF",
+			"featureType": [
+				"OF:ROTSSPGF"
+			],
+			"entries": [
+				"As an action you may wager your glory points to undertake a boast. Boasting is a Persuasion or Intimidation check, fueled by your popularity and the respect others give you. Select the number of glory points you wish to wager, and these will be applied as a bonus to the Persuasion or Intimidation. However...",
+				{
+					"type": "list",
+					"items": [
+						"If you fail the check, you lose 1 glory point",
+						"If you roll a natural 1, you lose all the glory points you wagered."
+					]
+				}
+			]
+		},
+		{
+			"name": "Gift of Perseverance",
+			"source": "ROTSSPGF",
+			"featureType": [
+				"OF:ROTSSPGF"
+			],
+			"entries": [
+				"You have advantage on all saving throws."
+			]
+		}
 	],
 	"table": [
 
@@ -1486,7 +1795,7 @@
 										{
 											"type": "list",
 											"items": [
-												"{@b Words Have Power.} The more specific a vow, the more power it holds. Declaring, “I shall slay every raider of the Tvar Clan”, might merit a +1 to all attack rolls against Tvar clansfolk. Uttering instead, “I shall kill Gunthur of the Tvar” might merit a +3 to all attack rolls against Gunthur. “I shall kill Gunthur of the Tvar by the next full moon” could merit +3 to attack rolls and +3 to damage against Gunthur himself.",
+												"{@b Words Have Power.} The more specific a vow, the more power it holds. Declaring, \"I shall slay every raider of the Tvar Clan\", might merit a +1 to all attack rolls against Tvar clansfolk. Uttering instead, \"I shall kill Gunthur of the Tvar\" might merit a +3 to all attack rolls against Gunthur. \"I shall kill Gunthur of the Tvar by the next full moon\" could merit +3 to attack rolls and +3 to damage against Gunthur himself.",
 												"{@b Flesh Has Power.} The benefit of the oath can be increased with a sacrifice of flesh. A finger or toe might grant advantage against the first attack against the targeted foe(s). A hand or eye might grant disadvantage to all attacks from the named enemy.",
 												"{@b Retribution Knows No Rest.} Any exhaustion (no matter the source) during the fulfillment of the oath is ignored with a successful DC 12 Constitution saving throw.",
 												"{@b Time Has Limits.} There must be a time limit (no more than a year) and if that limit expires and vengeance has not been obtained, the raider suffers the curse of failed promises."
@@ -1633,13 +1942,13 @@
 									"name": "Raider Weapons",
 									"page": 22,
 									"entries": [
-										"The world of Grimnir is rich in many metals but the raiders lost much of their mining and smithing knowledge during the Exodus. Deposits of higher quality iron also tend to be found primarily in past Baendur territory (which has been depleted) or in lands currently occupied by the kingdoms. Consequently, many raider weapons are made of metal that is {@i inferior} to the steel-edged weapons of the Baendur (or newcomers to the world).",
+										"The world of Grimnir is rich in many metals but the raiders lost much of their mining and smithing knowledge during the Exodus. Deposits of higher quality iron also tend to be found primarily in past Baendur territory (which has been depleted) or in lands currently occupied by the kingdoms. Consequently, many raider weapons are made of metal that is {@i {@item inferior|ROTSSPGF}} to the steel-edged weapons of the Baendur (or newcomers to the world).",
 										"That said, most jarls and their seconds have obtained higher quality weapons through raids and, at the game master's discretion, these weapons can be purchased in stores at an increased cost. (There are many reasons why the raiders pillage Baendur settlements, but access to their metals and weapons is high on the list.)",
 										{
 											"type": "inset",
 											"name": "Inferior (Optional Rule)",
 											"entries": [
-												"An attack roll of a 1 in battle against an opponent using a higher quality weapon means your non-magical {@variantrule inferior|ROTSSPGF} weapon breaks."
+												"An attack roll of a 1 in battle against an opponent using a higher quality weapon means your non-magical {@i {@item inferior|ROTSSPGF}} weapon breaks."
 											]
 										},
 										"{@b {@item Sax|ROTSSPGF}}: This short sword has a slashing edge and though these weapons are simply constructed, they are versatile and used by many raiders as their secondary weapon.",
@@ -1746,6 +2055,171 @@
 										}
 									]
 								}				
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Glory",
+							"page": 24,
+							"entries": [
+								"Glory is gathered by defeating powerful foes and taking plunder. The greater your glory, the more respect others, even your enemies, show you.",
+								"Most individuals within raider society strive towards individual glory gaining the respect, admiration, and, at times, the fear of others. They focus primarily on their individual accomplishments, even when it comes at a cost to their own companions. However, there is an ideal among the raiders, an example set during the Exodus at the world birthing. The Vanir. Those legendary heroes were bound together by oaths, deeds, and friendship. {@i They shared their glory}. If such a group of heroes ever rose again and fought the valiant fight, theirs might become a power that the world has not known for centuries.",
+								"The perks (and drawbacks) of great glory are summarized on the following table.",
+								{
+									"type": "entries",
+									"name": "Epithets",
+									"page": 24,
+									"entries": [
+										"At a glory level of 4 or higher, epithets referring to the party as a group begin to be used by the people of the world. An example might be, \"Heroes of the Long Winter\" or \"Heroes of the Fanged Sands.\" The party can work together to pick a suitable epithet, or the game master may decide upon one. Be wary—making a major mistake may unduly influence the epithet the world remembers you for."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "{@optfeature Boasting|ROTSSPGF}",
+									"page": 24,
+									"entries": [
+										"As an action you may wager your glory points to undertake a boast. Boasting is a Persuasion or Intimidation check, fueled by your popularity and the respect others give you. Select the number of glory points you wish to wager, and these will be applied as a bonus to the Persuasion or Intimidation. However...",
+										{
+											"type": "list",
+											"items": [
+												"If you fail the check, you lose 1 glory point",
+												"If you roll a natural 1, you lose all the glory points you wagered."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Fellowship",
+									"page": 24,
+									"entries": [
+										"Glory is held by the individual and should be tracked by each player and the game master. However, if the {@i {@link Oath of Fellowship|https://5e.tools/book.html#rotsspgf,2,oath%20of%20fellowship} has been sworn, it reduces how low a heroes' glory can fall. When losing glory points, the hero cannot fall below the lowest glory level of the other party members. This makes wagering glory during a boast less risky. However... any time {@i any} party member loses any glory, all other party members lose one glory."
+									]
+								},
+								{
+									"caption": "Table of Raider Glory",
+									"type": "table",
+									"colLabels": [
+										"Glory",
+										"Points Perks and Drawbacks"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											"1",
+											"You are known by name at feasting halls near your first remarkable achievements."
+										],
+										[
+											"2",
+											"As long as you tell a story, any feasting hall associated with your clan will provide drink and food for free. However, your deeds annoy nonraiders and you have disadvantage on Intimidation or Persuasion attempts against the Baendur."
+										],
+										[
+											"3",
+											"You are challenged to a drinking contest at the next feasting hall you visit. Refusing (or losing) costs 1 glory point. The challenge may be issued by other raiders—even your own crew!"
+										],
+										[
+											"4",
+											"Your crew has composed a variety of poetic songs about your exploits. When performed in front of you, they are always uplifting… those they sing behind your back tend to favor your missteps. Regardless, you are beginning to become known as the \"Heroes of…\" (See Epithets, below)"
+										],
+										[
+											"5",
+											"You have become a local legend within the clan you are most often associated with. You have advantage on Persuasion checks against members of your clan."
+										],
+										[
+											"6",
+											"Your exploits are making you famous. For the price of a story, you have free food and drink in any raider feasting hall. You no longer have disadvantage on Intimidation and Persuasion against the Baendur."
+										],
+										[
+											"7",
+											"Your glory builds such that others seek you out to help them solve their own problems. You will receive a Mysterious Favor encounter."
+										],
+										[
+											"8",
+											"You receive gifts when visiting any settlement friendly to you. At such times you receive 2d20 silver pieces and a random item from the trinkets table."
+										],
+										[
+											"9","Shipbuilders compete to design fearsome figureheads to adorn your longships. You are now able to purchase the rarest of these."
+										],
+										[
+											"10",
+											"Non raiders fear you. You now have advantage on Intimidation checks against the Baendur or other outsiders."
+										],
+										[
+											"11",
+											"The gods of the Stone Court have noticed you. A Divine Event occurs. And if you die you will be claimed by the valkry."
+										],
+										[
+											"12",
+											"Your acclaim has spread to all raiding communities and though your rivals are jealous, they still recognize your deeds. You have advantage on any Persuasion or Intimidation check against other raiders."
+										],
+										[
+											"13",
+											"You have grown so popular that if you ever back down from a request for aid or a challenge by any friendly raider you immediately lose 3 points of glory."
+										],
+										[
+											"14",
+											"Once per week, when you make an appearance in a raider village or enclave, roll once on the lesser magic item table (potions, spell scrolls, etc.) to determine the gift the party receives."
+										],
+										[
+											"15",
+											"Young adults of your clan decide to use your given name as their family name—claiming you as their parent, at least in spirit."
+										],
+										[
+											"16",
+											"The famous historian, Otis, seeks you out, to create portraits of the party. Once this is accomplished you are forever known as the \"Legends of…\""
+										],
+										[
+											"17",
+											"A shrine has been constructed for you in a settlement of your choice (that you have previously visited). Each shrine is tended by a priest and visited often by skalds eager to learn your tale."
+										],
+										[
+											"18",
+											"With your expanding glory, so grows the raiders that idolize you. Two more shrines appear, in locations of your choice. Once a week, when you visit any shrine, you receive a charm of your choice."
+										],
+										[
+											"19",
+											"To the victors go the spoils and those that are victorious rewrite history. You may select one deed in the past and have history remember its outcome differently than what occurred. To accomplish this, you must wager 10 glory points and succeed in a DC 20 boast."
+										],
+										[
+											"20",
+											"Your glory is such that you are as venerated as any of the Vanir ever were. With the proper rituals, you might even ascend to godhood, as they did."
+										]
+									]
+								},
+								{
+									"type": "quote",
+									"entries": [
+										"Glory we seek, isn't it so? We raiders, we take to the sea, we take our axe, our sword, in hand. We call it many things. But it is just the one thing, it is. It is so that \"they\" see us. They see what bravery we do in their name so that they know, when the world ends, that we are good enough to stand beside them. We do this for the Stone Court."
+									],
+									"by": "Hrolf, Hero of a Hundred Raids"
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Epic Backgrounds",
+							"page": 26,
+							"entries": [
+								"During character creation, players may select one of the epic backgrounds for this campaign, instead of the standard backgrounds in the player's guide. These enhanced backgrounds connect to the main storyline and provide additional subplots for the heroes to explore. It is recommended that they are used instead of the standard backgrounds. Each player should choose one of the backgrounds described in this section. This influences the hero's mythic connection to Grimnir through the use of fate runes new runes (and powers) may be revealed at particular moments as the hero resolves the conflict underlying their background.",
+								{
+									"type": "entries",
+									"name": "Epic Tasks & Goals",
+									"page": 26,
+									"entries": [
+										"Each background has specific endeavors for the hero to complete. Heroic tasks will be completed by the end of the {@b Raiders of the Serpent Sea} campaign. Epic goals are longer term and may not be achieved within the campaign."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "{@background The Cursed Raider|ROTSSPGF}",
+									"page": 26,
+									"entries": [
+										""
+									]
+								}
 							]
 						}
 					]
