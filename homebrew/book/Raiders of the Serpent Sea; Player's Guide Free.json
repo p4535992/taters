@@ -47,12 +47,12 @@
 					"_": [
 						{
 							"item": "traveler's Clothes|phb",
-							"displayName": "A set of traveler's clothes",
+							"displayName": "Traveler's clothes",
 							"quantity": 1
 						},
 						{
 							"item": "blanket|phb",
-							"displayName": "A winter blanket",
+							"displayName": "Winter blanket",
 							"quantity": 1
 						},
 						{
@@ -350,12 +350,12 @@
 						},
 						{
 							"item": "staff|phb",
-							"displayName": "A staff",
+							"displayName": "staff",
 							"quantity": 1
 						},
 						{
 							"item": "common clothes|phb",
-							"displayName": "A set of common clothes",
+							"displayName": "Common clothes",
 							"quantity": 1
 						},
 						{
@@ -595,7 +595,7 @@
 					"name": "Starting Story Connection",
 					"type": "entries",
 					"entries": [
-						"When you heard about the völv’s desire to explore the tower at Kekkell you were intrigued, for your most recent dreams have been showing you a strange ruin, to the south. You have seen yourself walking the halls of an ancient building and you believe you may find a trace of your past at Kekkell. You signed on to become a member of Hrolf’s expedition."
+						"When you heard about the völv's desire to explore the tower at Kekkell you were intrigued, for your most recent dreams have been showing you a strange ruin, to the south. You have seen yourself walking the halls of an ancient building and you believe you may find a trace of your past at Kekkell. You signed on to become a member of Hrolf's expedition."
 					]
 				},
 				{
@@ -605,7 +605,7 @@
 						{
 							"type": "list",
 							"items": [
-								"{@b Your Truth.} You must learn what you actually are and where you are from. {@b Reward.} Choose any valid feat from the player’s handbook as if you had reached the appropriate level to gain it (all other prerequisites must still be met). This represents remembering a small portion of the person you once were.",							
+								"{@b Your Truth.} You must learn what you actually are and where you are from. {@b Reward.} Choose any valid feat from the player's handbook as if you had reached the appropriate level to gain it (all other prerequisites must still be met). This represents remembering a small portion of the person you once were.",							
 								"{@b Why are You Here?} You learn why you are in the world of Grimnir and a hint of how to restore your true self.",
 								"{@b Reclaim Your Past.} You must discover a way to return to your homeland and to restore as much of yourself as is possible. {@b Reward.} You find an item connected to your mysterious past. Pick one of the following:",
 								{
@@ -640,17 +640,9 @@
 					"history": true
 				}
 			],
-			"skillToolLanguageProficiencies": [
+			"toolProficiencies": [
 				{
-					"choose": [
-						{
-							"from": [
-								"anyLanguage",
-								"vehicles (water)"
-							],
-							"count": 1
-						}
-					]
+					"vehicles (water)": true
 				}
 			],
 			"languageProficiencies": [
@@ -662,20 +654,17 @@
 				{
 					"_": [
 						{
-							"equipmentType": "toolArtisan"
-						},
-						{
-							"item": "staff|phb",
-							"displayName": "A staff",
+							"item": "dagger|phb",
+							"displayName": "Knife with your family's insignia on the pommel",
 							"quantity": 1
 						},
 						{
-							"item": "common clothes|phb",
-							"displayName": "A set of common clothes",
+							"item": "traveler's clothes|phb",
+							"displayName": "Traveler's clothes",
 							"quantity": 1
 						},
 						{
-							"special": "heavy fisher's wool sweater",
+							"special": "hunting trap",
 							"quantity": 1
 						},
 						{
@@ -686,7 +675,7 @@
 				}
 			],
 			"entries": [
-				"Your family once ruled a wealthy Baendur kingdom and your mother was a respected and remarkable queen. One winter’s day, raiders invaded your lands. When your parents rode out to oust them from your lands, your family was defeated. You, the youngest of all your siblings, was taken prisoner and forced to watch your brothers and sisters slaughtered.",
+				"Your family once ruled a wealthy Baendur kingdom and your mother was a respected and remarkable queen. One winter's day, raiders invaded your lands. When your parents rode out to oust them from your lands, your family was defeated. You, the youngest of all your siblings, was taken prisoner and forced to watch your brothers and sisters slaughtered.",
 				"Since then you have lived with the raiders and have come to accept them as your own people. They eventually adopted you and you are no longer a thrall. Yet you have never forgotten your family or the lands that by birth are yours to inherit. Recently your adopted family died during a raid between rival clans. You survived but the location of your homeland was lost with the deaths of your raider family.",
 				{
 					"type": "quote",
@@ -732,20 +721,20 @@
 					]
 				},
 				{
-					"name": "Feature: Fate's Bite",
+					"name": "Feature: Fate’s Orphan",
 					"type": "entries",
 					"entries": [
-						"You have a scar on your hand that resembles the rune ᛈ. To the raider people this rune can represent chance or mystery. At certain moments in the story additional runes will be drawn, adding to your story, your abilities, and your penultimate reason for existing."
+						"You received a fate tattoo ({@i ᛊ}) upon becoming adopted into a raiding clan. This rune symbolizes the sun and the growth it brings the world, as well as indicating certain success for the rune wearer’s ambitions. Later in the story other runes will be drawn, adding to your story and your abilities."
 					],
 					"data": {
 						"isFeature": true
 					}
 				},
 				{
-					"name": "Feature: The Maker",
+					"name": "Feature: True Survivor",
 					"type": "entries",
 					"entries": [
-						"You are connected to the world in ways that you do not understand. At times Grimnir itself guides your hand when you work with the artisan tools you have chosen. You always have advantage when using that tool. Additionally, once per long rest, if you fail a tool's check, you may choose to succeed."
+						"You thrive under adversity. Whenever an ally reaches 0 Hit Points (whether they die or recover), give yourself inspiration. Unlike other characters you may accumulate more than one inspiration."
 					],
 					"data": {
 						"isFeature": true
@@ -755,7 +744,7 @@
 					"name": "Suggested Characteristics",
 					"type": "entries",
 					"entries": [
-						"The Fallen is a blank slate and can fill many roles in the community they find themselves in. Though lacking in knowledge, they are quick learners and are uncannily wise to the world around them, intuiting the correct way to act, even in unfamiliar situations. Some portion of the life they lived remains with them. Though possibly aloof, they tend to be liked, even respected, by their adopted communities.",
+						"The royal heir has always lived in two worlds the dead family they feel loyalty and kinship with, as well as the raider family that raised them. They also feel guilty because they care for their adopted family and this may come across to others as aloofness or surliness. Others are often drawn to the heir, despite this.",
 						{
 							"type": "table",
 							"colLabels": [
@@ -769,27 +758,27 @@
 							"rows": [
 								[
 									"1",
-									"I adore the world I live in, and I want to add beautiful things to it."
+									"Everything is always taken from me so why care for anything? I live life on my terms."
 								],
 								[
 									"2",
-									"I love a well-crafted insult, including those directed towards myself."
+									"I suffer nightmares over the massacre of my birth family and their deaths trouble my waking hours."
 								],
 								[
 									"3",
-									"Despite all I know, I speak little and let others make decisions."
+									"As a child of two worlds, I see multiple perspectives, especially in an argument. I can often help others avoid conflict."
 								],
 								[
 									"4",
-									"I dislike those that are unwilling to put in a hard day's work and am willing to call them out on it."
+									"Death is inevitable and if it is my fate to die this day, so be it."
 								],
 								[
 									"5",
-									"I am more comfortable in the deep woods, than I am around people."
+									"I am unshakeable in my belief that I am owed more from this world and nothing will deter me from accomplishing my objectives."
 								],
 								[
 									"6",
-									"I am always polite, even to my enemies."
+									"Having known much death, I live large and am eager to celebrate accomplishments and victories (whether they are mine or others)."
 								]
 							]
 						},
@@ -806,27 +795,27 @@
 							"rows": [
 								[
 									"1",
-									"Respect. I believe all living things are worthy of being treated well. (Good)"
+									"Sincerity. I am what I am. (Neutral)"
 								],
 								[
 									"2",
-									"Logic. I measure everything in life the way I measure the materials of my trade… emotion is not important. (Lawful)"
+									"Freedom. I will never live in chains again, nor should any other. (Chaotic)"
 								],
 								[
 									"3",
-									"People. I am committed to those I travel with, not to any specific ideals. (Neutral)"
+									"Responsibility. I must respect those above me, as those below me must respect me. (Lawful)"
 								],
 								[
 									"4",
-									"Might. My swift anger is reason enough to put others in their place. (Evil)"
+									"Retribution. I shall spill the blood of all those that wronged me. (Evil)"
 								],
 								[
 									"5",
-									"Self-Improvement. I want to master the tools of my trade. (Any)"
+									"Compassion. Having been weak once myself, I seek to protect those that need it. (Good)"
 								],
 								[
 									"6",
-									"Truth. Discovering the truth of who I am is important and all I do must lead me to that truth. (Neutral)"
+									"Aspiration. I must honor the legacies of both my birth and my adopted peoples. (Any)"
 								]
 							]
 						},
@@ -843,27 +832,27 @@
 							"rows": [
 								[
 									"1",
-									"I am fond of the village (and clan) where I have lived since coming down from the mountain."
+									"I think of my birth family daily and will honor their memory one day by reclaiming my homeland."
 								],
 								[
 									"2",
-									"I have a mentor who helped me a great deal; I would do anything for them."
+									"My adopted family made me who I am today. I will retake my homeland in their name."
 								],
 								[
 									"3",
-									"I lost my temper and damaged a relationship that I seek to mend."
+									"I am my own person. I will take what I want and rule as I desire."
 								],
 								[
 									"4",
-									"I adore the tools of my trade and treat them as well as I would treat a person."
+									"I am connected to the land itself and owe no loyalty to either clan or kingdom."
 								],
 								[
 									"5",
-									"I believe my honor and my glory are paramount."
+									"I must produce an heir so that my lineage does not end."
 								],
 								[
 									"6",
-									"I will suffer so that others will not."
+									"I am still seeking a home, a place where I belong."
 								]
 							]
 						},
@@ -880,27 +869,27 @@
 							"rows": [
 								[
 									"1",
-									"Dreams (or nightmares) plague my sleep and I often have a cruel headache, making me bitter and irritable."
+									"I seek the oblivion of sweet mead to forget my troubled past."
 								],
 								[
 									"2",
-									"I work myself too hard to avoid thinking about what I might have been in the past."
+									"I believe I am protected by a higher power and will be unduly reckless."
 								],
 								[
 									"3",
-									"II feel I must serve a greater purpose and if I need to, I will flee from battle to save myself until I know what that purpose is."
+									"Friendship and family are pointless if all others in my life are destined to die. Better to be on my own and rely only on myself."
 								],
 								[
 									"4",
-									"I hide this belief, but I do feel that others are beneath me. I am special, they are not."
+									"I believe something I did led to the death of my parents and I hide this shameful secret."
 								],
 								[
 									"5",
-									"Sometimes when I am standing at a high location, I feel the urge to jump."
+									"If I see someone treated unfairly, I react without thinking through the consequences."
 								],
 								[
 									"6",
-									"Hating my own lost past, I refuse to keep secrets for others."
+									"I am terrified of water and never learned to swim."
 								]
 							]
 						}
@@ -910,7 +899,7 @@
 					"name": "Starting Story Connection",
 					"type": "entries",
 					"entries": [
-						"When you heard about the völv’s desire to explore the tower at Kekkell you were intrigued, for your most recent dreams have been showing you a strange ruin, to the south. You have seen yourself walking the halls of an ancient building and you believe you may find a trace of your past at Kekkell. You signed on to become a member of Hrolf’s expedition."
+						"After your raider family perished, you served as a guard for the völv and have recently joined Hrolf’s expedition to Kekkell to earn glory and respect. You think with the plunder to be found in the south that you may soon own your own longship."
 					]
 				},
 				{
@@ -918,18 +907,25 @@
 					"type": "entries",
 					"entries": [
 						{
+							"type": "quote",
+							"entries": [
+								"Such difficult lives that we live. Though unfit to become a seer, I have served many years, protecting these servants of fate. I found my purpose. I pray nightly to the Stone Court that all such others find theirs"
+							],
+							"by": "Fyrkat, Seerguard"
+						},
+						{
 							"type": "list",
 							"items": [
-								"{@b Your Truth.} You must learn what you actually are and where you are from. {@b Reward.} Choose any valid feat from the player’s handbook as if you had reached the appropriate level to gain it (all other prerequisites must still be met). This represents remembering a small portion of the person you once were.",							
-								"{@b Why are You Here?} You learn why you are in the world of Grimnir and a hint of how to restore your true self.",
-								"{@b Reclaim Your Past.} You must discover a way to return to your homeland and to restore as much of yourself as is possible. {@b Reward.} You find an item connected to your mysterious past. Pick one of the following:",
+								"{@b A Raider’s Revenge.} The murder of your adoptive family cannot be left unatoned for. You must seek out and slay the raiders responsible for their deaths. {@b Reward.} You gain 1 bonus glory point.",							
+								"{@b Find Homeland.} You only have a dim memory of the location of your kingdom it is in the west. Beyond that you are not sure, though you remember vineyards and gentle mountains and a more temperate climate than what you have experienced since then. {@b Reward.} Reaching the kingdom’s location will put you in touch with former allies of your family, which will unlock new connections. You may also be able to recover a lost family heirloom. Choose one of:",
 								{
 									"type": "list",
 									"items": [
-										"{@b The Falcon Coat} allows you to fly and move between different locations across the world—and possibly between other lands.",
-										"{@b Dragon Scale Mail} (your choice of scales), gifted to you far in the past."
+										"{@b Helm of Awe} This is a powerful item once worn by your mother. It increases both a commander’s prowess as well as their soldiers’ ability to overtake the enemy on the field of battle.",
+										"{@b A very rare Ioun Stone} of your choice, a treasure of much value to your lineage and passed dutifully down through the generations."
 									]
-								}
+								},
+								"{@b Return to Glory.} Once you have recovered the location of your homeland, it is your duty to return there and reestablish rulership, in the name of your mother and father. {@b Reward.} You gain 1 glory point."
 							]
 						}
 					]
@@ -938,8 +934,8 @@
 					"name": "Epic Goal: Redeem the past",
 					"type": "entries",
 					"entries": [
-						"Once you discover your past, an ancient threat is revealed that you must vanquish. But it will involve a costly sacrifice and your decision may determine the fate of Grimnir.",
-						"{@b {@i {@optfeature Gift of the Slain|ROTSSPGF}}} Once per long rest you can teleport yourself between Grimnir and the {@i Halls of the Slain}, allowing you to walk the mortal lands and offer assistance as needed. You may elect instead to teleport a willing (and worthy) incapacitated raider from Grimnir to the {@i Halls of the Slain} (but not in the reverse direction)."
+						"Long have the Baendur been disjointed. Take control of all the scattered kingdoms and unite them into a single empire.",
+						"{@b {@i {@optfeature Gift of Glory|ROTSSPGF}}} You gain 3 glory points. As long as your glory is 15 or higher, you automatically succeed in any Persuasion or Intimidation check with the Baendur and have advantage on such checks with all others."
 					]
 				}
 			],
@@ -1208,6 +1204,16 @@
 			],
 			"entries": [
 				"Once per long rest you can teleport yourself between Grimnir and the {@i Halls of the Slain}, allowing you to walk the mortal lands and offer assistance as needed. You may elect instead to teleport a willing (and worthy) incapacitated raider from Grimnir to the {@i Halls of the Slain} (but not in the reverse direction)."
+			]
+		},
+		{
+			"name": "Gift of Glory",
+			"source": "ROTSSPGF",
+			"featureType": [
+				"OF:ROTSSPGF"
+			],
+			"entries": [
+				"You gain 3 glory points. As long as your glory is 15 or higher, you automatically succeed in any Persuasion or Intimidation check with the Baendur and have advantage on such checks with all others."
 			]
 		}
 	],
@@ -2680,6 +2686,15 @@
 									]
 								},
 								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ROTSSPGF/book/Chapter2-RaiderTools.webp"
+									},
+									"title": "Raider Tools <br>Art Credit: {@link Unknown|}",
+									"altText": "Raider Tools"
+								},
+								{
 									"type": "entries",
 									"name": "Mead",
 									"page": 24,
@@ -2696,7 +2711,7 @@
 											]
 										}
 									]
-								}				
+								}			
 							]
 						},
 						{
@@ -2859,15 +2874,43 @@
 									"name": "{@background The Cursed Raider|ROTSSPGF}",
 									"page": 26,
 									"entries": [
-										""
+										{
+											"type": "refOptionalfeature",
+											"optionalfeature": "The Cursed Raider|ROTSSPGF"
+										}
 									]
 								},
 								{
 									"type": "entries",
 									"name": "{@background The Fallen|ROTSSPGF}",
-									"page": 26,
+									"page": 28,
 									"entries": [
-										""
+										{
+											"type": "refOptionalfeature",
+											"optionalfeature": "The Fallen|ROTSSPGF"
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "{@background The Royal Heir|ROTSSPGF}",
+									"page": 29,
+									"entries": [
+										{
+											"type": "refOptionalfeature",
+											"optionalfeature": "The Royal Heir|ROTSSPGF"
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "{@background The Stranger|ROTSSPGF}",
+									"page": 31,
+									"entries": [
+										{
+											"type": "refOptionalfeature",
+											"optionalfeature": "The Stranger|ROTSSPGF"
+										}
 									]
 								}
 							]
