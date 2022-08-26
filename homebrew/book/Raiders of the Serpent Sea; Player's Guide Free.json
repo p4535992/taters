@@ -420,7 +420,7 @@
 					"name": "Feature: Fate's Bite",
 					"type": "entries",
 					"entries": [
-						"You have a scar on your hand that resembles the rune ᛈ. To the raider people this rune can represent chance or mystery. At certain moments in the story additional runes will be drawn, adding to your story, your abilities, and your penultimate reason for existing."
+						"You have a scar on your hand that resembles the rune {@i ᛈ}. To the raider people this rune can represent chance or mystery. At certain moments in the story additional runes will be drawn, adding to your story, your abilities, and your penultimate reason for existing."
 					],
 					"data": {
 						"isFeature": true
@@ -716,15 +716,15 @@
 						{
 							"type": "item",
 							"name": "Equipment:",
-							"entry": "a {@item staff|phb}, a set of {@item common clothes|phb} and a heavy fisher's wool sweater, a {@item pouch|phb} containing 10 gp"
+							"entry": "a {@item staff|phb}, a set of {@item traveler's clothes|phb} and a heavy fisher's wool sweater, a {@item pouch|phb} containing 10 gp"
 						}
 					]
 				},
 				{
-					"name": "Feature: Fate’s Orphan",
+					"name": "Feature: Fate's Orphan",
 					"type": "entries",
 					"entries": [
-						"You received a fate tattoo ({@i ᛊ}) upon becoming adopted into a raiding clan. This rune symbolizes the sun and the growth it brings the world, as well as indicating certain success for the rune wearer’s ambitions. Later in the story other runes will be drawn, adding to your story and your abilities."
+						"You received a fate tattoo ({@i ᛊ}) upon becoming adopted into a raiding clan. This rune symbolizes the sun and the growth it brings the world, as well as indicating certain success for the rune wearer's ambitions. Later in the story other runes will be drawn, adding to your story and your abilities."
 					],
 					"data": {
 						"isFeature": true
@@ -899,7 +899,7 @@
 					"name": "Starting Story Connection",
 					"type": "entries",
 					"entries": [
-						"After your raider family perished, you served as a guard for the völv and have recently joined Hrolf’s expedition to Kekkell to earn glory and respect. You think with the plunder to be found in the south that you may soon own your own longship."
+						"After your raider family perished, you served as a guard for the völv and have recently joined Hrolf's expedition to Kekkell to earn glory and respect. You think with the plunder to be found in the south that you may soon own your own longship."
 					]
 				},
 				{
@@ -916,12 +916,12 @@
 						{
 							"type": "list",
 							"items": [
-								"{@b A Raider’s Revenge.} The murder of your adoptive family cannot be left unatoned for. You must seek out and slay the raiders responsible for their deaths. {@b Reward.} You gain 1 bonus glory point.",							
-								"{@b Find Homeland.} You only have a dim memory of the location of your kingdom it is in the west. Beyond that you are not sure, though you remember vineyards and gentle mountains and a more temperate climate than what you have experienced since then. {@b Reward.} Reaching the kingdom’s location will put you in touch with former allies of your family, which will unlock new connections. You may also be able to recover a lost family heirloom. Choose one of:",
+								"{@b A Raider's Revenge.} The murder of your adoptive family cannot be left unatoned for. You must seek out and slay the raiders responsible for their deaths. {@b Reward.} You gain 1 bonus glory point.",							
+								"{@b Find Homeland.} You only have a dim memory of the location of your kingdom it is in the west. Beyond that you are not sure, though you remember vineyards and gentle mountains and a more temperate climate than what you have experienced since then. {@b Reward.} Reaching the kingdom's location will put you in touch with former allies of your family, which will unlock new connections. You may also be able to recover a lost family heirloom. Choose one of:",
 								{
 									"type": "list",
 									"items": [
-										"{@b Helm of Awe} This is a powerful item once worn by your mother. It increases both a commander’s prowess as well as their soldiers’ ability to overtake the enemy on the field of battle.",
+										"{@b Helm of Awe} This is a powerful item once worn by your mother. It increases both a commander's prowess as well as their soldiers' ability to overtake the enemy on the field of battle.",
 										"{@b A very rare Ioun Stone} of your choice, a treasure of much value to your lineage and passed dutifully down through the generations."
 									]
 								},
@@ -931,11 +931,327 @@
 					]
 				},
 				{
-					"name": "Epic Goal: Redeem the past",
+					"name": "Epic Goal: Unify the Kingdoms",
 					"type": "entries",
 					"entries": [
 						"Long have the Baendur been disjointed. Take control of all the scattered kingdoms and unite them into a single empire.",
 						"{@b {@i {@optfeature Gift of Glory|ROTSSPGF}}} You gain 3 glory points. As long as your glory is 15 or higher, you automatically succeed in any Persuasion or Intimidation check with the Baendur and have advantage on such checks with all others."
+					]
+				}
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "The Stranger",
+			"source": "ROTSSPGF",
+			"page": 31,
+			"skillProficiencies": [
+				{
+					"insight": true,
+					"persuasion": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"gaming set": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"any": 1
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"equipmentType": "setGaming"
+						},
+						{
+							"item": "dagger|phb",
+							"displayName": "a borrowed mead horn",
+							"quantity": 1
+						},
+						{
+							"item": "traveler's clothes|phb",
+							"displayName": "Traveler's clothes",
+							"quantity": 1
+						},
+						{
+							"special": "a borrowed mead horn",
+							"quantity": 1
+						},
+						{
+							"item": "pouch|phb",
+							"containsValue": 2000
+						}
+					]
+				}
+			],
+			"entries": [
+				"You were part of a merchant's caravan making its way to a bustling port in your homeland, when a multicolored portal appeared, swallowing you and the rest of your caravan. You emerged on a barren coast, a tumultuous sea to your north. Many of the caravan wagons were damaged, or lost, entirely, having appeared in the hostile waters. You, and the other survivors, made your way along the coastal desert but all manner of unusual creatures assailed you. Many of your companions died and only a few of you found your way to Nowhere.",
+				"You joined this community of outcasts and are now a varang a clan less raider. Guided by the town's seer, you have made a journey west, to the Tower of Kekkell, with the hope that the secrets in the ancient building might help you understand how to return home.",
+				{
+					"type": "quote",
+					"entries": [
+						"Stories, I collect, I do. A truth, the raiders avoid, is that much is owed to newcomers. New stories, new ways. These stranded visitors, however they have arrived, improve us, they do. And eager, am I, to meet them all."
+					],
+					"by": "Otis the Historian"
+				},
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Player Interest:",
+							"entry": "Wizard of Oz, The Fionavar Tapestry"
+						},
+						{
+							"type": "item",
+							"name": "Restrictions:",
+							"entry": "Must be an explorer from another land (unlike other backgrounds, multiple characters may have this option)"
+						},
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Insight}, {@skill Persuasion}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "One {@filter gaming set|items|source=phb|miscellaneous=mundane|type=gaming set}"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "One of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "One {@filter gaming set|items|source=phb|miscellaneous=mundane|type=gaming set} (missing an important piece), a borrowed mead horn, a set of {@item traveler's clothes|phb}, a well-made {@item pouch|phb} containing 20 gp"
+						}
+					]
+				},
+				{
+					"name": "Feature: A Newcomer's Rune",
+					"type": "entries",
+					"entries": [
+						"You have been tattooed with a traveler's rune ({@i ᚱ}), given to you by the rune master of the varang in Nowhere. At certain moments in the story additional runes will be drawn, adding to your story, your abilities, and helping you understand how you might return home."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"name": "Feature: Resourceful",
+					"type": "entries",
+					"entries": [
+						"When visiting an unfamiliar populated area, you can decide to socialize with the locals. If you make a successful DC 15 Wisdom (Insight) check at the end of six hours you can then live a modest lifestyle in that community for only 1 silver piece a day. This location becomes favorable to you as well and any Persuasion, Deception, or Insight checks are made with advantage in this community."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"name": "Suggested Characteristics",
+					"type": "entries",
+					"entries": [
+						"You have a deep longing for your homeland, having either family or friends there that you miss deeply. You would do anything to return home, but you are also aware that doing so requires you to accumulate glory and wealth, so you have the means to find a way. You have also begun to make connections and attachments, likely causing a division in your loyalties.",
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I have learned to cook many different types of food since arriving here, and I am constantly on the hunt for more."
+								],
+								[
+									"2",
+									"I often daydream of returning home, so much so that I do not always pay attention to what is going on around me."
+								],
+								[
+									"3",
+									"I am enamored of this strange and wonderful place and often take notes of what's different about this world."
+								],
+								[
+									"4",
+									"These raiders are just like any other—they want things and they can buy things. I will find a way to survive in this unusual world—and profit!"
+								],
+								[
+									"5",
+									"So many of my friends have died since arriving here but I have survived by keeping my head down and avoiding undue attention."
+								],
+								[
+									"6",
+									"I am intimidated by the raiders, their physical prowess, and their risk-taking confidence, so I feel I must also prove my value."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"Change. Expect the unexpected… I am capable of handling any situation thrown my way. (Chaotic)"
+								],
+								[
+									"2",
+									"Charity. I know that no venture succeeds without the help of allies; I ensure that I always give back to the community. (Good)"
+								],
+								[
+									"3",
+									"Fairness. I do not cheat or lie in my dealings; I will succeed because of my abilities. (Lawful)"
+								],
+								[
+									"4",
+									"Knowledge. I'll figure out a way to create trade routes between this world and mine; each has so much to offer the other. (Neutral)"
+								],
+								[
+									"5",
+									"Greed. These raiders are simple people, I'll learn a way to exploit them. (Evil)"
+								],
+								[
+									"6",
+									"Aspiration. I must find a way home. (Any)"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Bond"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"A few of the townsfolk have gone above and beyond to ake care of me since arriving and I would do anything for them."
+								],
+								[
+									"2",
+									"I am spreading word of my faith, to keep that connection to my old world alive."
+								],
+								[
+									"3",
+									"I made the mistake of cheating at a game against a raiding captain a few weeks ago; I've been avoiding them ever since."
+								],
+								[
+									"4",
+									"Many adventurers have been part of my caravans and I have always idealized them—if I were ever part of such a group, I would do my best by them."
+								],
+								[
+									"5",
+									"I borrowed something from someone who has vanished, and I feel obligated to find them and return it."
+								],
+								[
+									"6",
+									"I live for the game… if I see the right sign in the roll of the dice, I will change all my plans."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I am too optimistic regarding new information… I will follow even the vaguest of leads."
+								],
+								[
+									"2",
+									"I worry that a portal may appear at any moment to take me to another world. I tend to carry everything important with me whenever I go anywhere."
+								],
+								[
+									"3",
+									"I borrow money to partly pay off debts to others, so I have a complicated web of financial obligations."
+								],
+								[
+									"4",
+									"I dislike getting my hands dirty and will compulsively wash dirt or blood from me."
+								],
+								[
+									"5",
+									"Profit is always important; I always need to come out better in a deal."
+								],
+								[
+									"6",
+									"I don't trust magic or those who use it."
+								]
+							]
+						}
+					]
+				},
+				{
+					"name": "Starting Story Connection",
+					"type": "entries",
+					"entries": [
+						"You have lived as well as you can in the town of Nowhere, since finding refuge there after being brought to Grimnir. You work odd jobs or help a more prosperous merchant manage their affairs. You have visited the rune master at least once and his rune casting is guiding you towards the Tower of Kekkell."
+					]
+				},
+				{
+					"name": "Heroic Tasks",
+					"type": "entries",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"{@b The Nature of Portals.} Explore the Tower of Kekkell for a clue as to what might have transported you to Grimnir.",
+								"{@b Find Your Old Caravan.} Several important treasures went missing when you arrived in Grimnir. You must find them. {@b Reward.} A gem worth 2500 gp, 500 pp, and three uncommon or common potions of your choice and one rare potion of your choice.",
+								"{@b Recover a Powerful Item.} Your earlier clues will lead you to realize an ancient item must be restored before you may return home. You will recover a piece of the item. {@b Reward.} From the same secret treasure that you find the magical item you will also recover any one of the following:",
+								{
+									"type": "list",
+									"items": [
+										"{@b A frost brand} weapon of your choice.",
+										"{@b A ring of regeneration.}",
+										"{@b A crystal ball of scrying} (very rare)."
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Epic Goal: Open a Portal Home",
+					"type": "entries",
+					"entries": [
+						"You must fulfill your dream to open a portal home, either to return there, or to create a bridge between both your worlds.",
+						"{@b {@i {@optfeature Gift of the Traveler|ROTSSPGF}}}. In any urban location you can live a wealthy lifestyle for a mere silver piece a day. Additionally, while within 1 mile of any sort of portal (whether created by a gate spell or manifested by a magical item) you can do any of the following:",
+						{
+							"type": "list",
+							"items": [
+								"Automatically determine the exact location of the portal once within 1 mile of it.",
+								"Use an action to teleport to the portal (once per day).",
+								"Use an action to close the portal (once per day)."
+							]
+						}
 					]
 				}
 			],
@@ -1215,6 +1531,24 @@
 			"entries": [
 				"You gain 3 glory points. As long as your glory is 15 or higher, you automatically succeed in any Persuasion or Intimidation check with the Baendur and have advantage on such checks with all others."
 			]
+		},
+		{
+			"name": "Gift of the Traveler",
+			"source": "ROTSSPGF",
+			"featureType": [
+				"OF:ROTSSPGF"
+			],
+			"entries": [
+				"In any urban location you can live a wealthy lifestyle for a mere silver piece a day. Additionally, while within 1 mile of any sort of portal (whether created by a gate spell or manifested by a magical item) you can do any of the following:",
+				{
+					"type": "list",
+					"items": [
+						"Automatically determine the exact location of the portal once within 1 mile of it.",
+						"Use an action to teleport to the portal (once per day).",
+						"Use an action to close the portal (once per day)."
+					]
+				}
+			]
 		}
 	],
 	"table": [
@@ -1487,7 +1821,35 @@
 							"header": "Mead"
 						},
 						"Glory",
-						"Epic Backgrounds"
+						{
+							"depth": 1,
+							"header": "Epithets"
+						},
+						{
+							"depth": 1,
+							"header": "Boasting"
+						},
+						{
+							"depth": 1,
+							"header": "Fellowship"
+						},
+						"Epic Backgrounds",
+						{
+							"depth": 1,
+							"header": "The Cursed Raider"
+						},
+						{
+							"depth": 1,
+							"header": "The Fallen"
+						},
+						{
+							"depth": 1,
+							"header": "The Royal Heir"
+						},
+						{
+							"depth": 1,
+							"header": "The Stranger"
+						}
                     ],
 					"ordinal": {
 						"type": "chapter",
@@ -2912,6 +3274,60 @@
 											"optionalfeature": "The Stranger|ROTSSPGF"
 										}
 									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Chapter 3: Playable Races",
+					"page": 33,
+					"entries": [
+						"Several races exist only in Grimnir. Regardless of how they came to be, each has a unique role in both the world, and the events to come.",
+						{
+							"type": "entries",
+							"name": "{@race Wicker|ROTSSPGF}",
+							"page": 33,
+							"entries": [
+								{
+									"type": "quote",
+									"entries": [
+										"The wicker? If their sword swing is true and their shield never falters, then they are all right by me."
+									],
+									"by": "Hrolf, Hero of a Hundred Raids"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ROTSSPGF/races/Wicker.webp"
+									},
+									"title": "Race Wicker <br>Art Credit: {@link Unknown|}",
+									"altText": "Race Wicker"
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "{@race Tallfolk|ROTSSPGF}",
+							"page": 34,
+							"entries": [
+								{
+									"type": "quote",
+									"entries": [
+										"I've stood against many raiders, I've even slain a jarl. But those giant kin of theirs, carry swords as big as trees. No servant of the kingdom can stand alone against such monsters as those."
+									],
+									"by": "King Cenric Edgare of the Baendur"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ROTSSPGF/races/Tallfolk.webp"
+									},
+									"title": "Race Tallfolk <br>Art Credit: {@link Unknown|}",
+									"altText": "Race Tallfolk"
 								}
 							]
 						}
