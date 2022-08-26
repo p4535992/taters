@@ -105,26 +105,7 @@
 						"You have proficiency in Stealth."
 					],
 					"type": "entries"
-				},
-				{
-					"name": "Rules for Tiny Characters",
-					"entries": [
-						"Races as presented in the Player's Handbook and similar sources have been sized Medium or Small.",
-						"Characters of Tiny size have additional rules, which are presented here:",
-						{
-							"type": "list",
-							"items": [
-								"{@b Armor.} Tiny characters cannot use heavy armor.",
-								"{@b Weapons.} Certain weapon properties mean different things for a tiny character, as detailed below:",
-								"{@b Heavy.} Tiny characters cannot use weapons with this property.",
-								"{@b Light.} A tiny character must hold any melee weapon lacking this property in two hands.",
-								"{@b Two-Handed.} A tiny character has disadvantage on attacks made with melee weapons that have this property.",
-								"{@b Versatile.} Tiny characters cannot use this property."
-							]
-						}
-					],
-					"type": "entries"
-				},
+				},			
 				{
 					"name": "Languages",
 					"entries": [
@@ -213,6 +194,7 @@
 						]
 					},
 					{
+						"type": "inset",
 						"name": "Faeries in Ravnica",
 						"entries": [
 							"Faeries as presented here are accurate to most settings. In Ravnica, however, faeries are somewhat different.",
@@ -251,6 +233,34 @@
 								]
 							}
 						]
+					},
+					{
+						"type": "inset",
+						"name": "Rules for Tiny Characters",
+						"entries": [
+							"Races as presented in the Player's Handbook and similar sources have been sized Medium or Small.",
+							"Characters of Tiny size have additional rules, which are presented here:",
+							{
+								"type": "list",
+								"items": [
+									"{@b Armor.} Tiny characters cannot use heavy armor.",
+									"{@b Weapons.} Certain weapon properties mean different things for a tiny character, as detailed below:",
+									"{@b Heavy.} Tiny characters cannot use weapons with this property.",
+									"{@b Light.} A tiny character must hold any melee weapon lacking this property in two hands.",
+									"{@b Two-Handed.} A tiny character has disadvantage on attacks made with melee weapons that have this property.",
+									"{@b Versatile.} Tiny characters cannot use this property."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/VD2mzEs.jpg"
+						}
 					}
 				]
 			}
@@ -288,7 +298,7 @@
 				{
 					"race": [
 						{
-							"name": "Faerie (sylph)"
+							"name": "Sylph"
 						}
 					]
 				}
@@ -314,7 +324,7 @@
 				{
 					"race": [
 						{
-							"name": "Faerie (pixie)"
+							"name": "Pixie"
 						}
 					]
 				}
@@ -341,7 +351,7 @@
 				{
 					"race": [
 						{
-							"name": "Faerie (sprite)"
+							"name": "Sprite"
 						}
 					]
 				}
@@ -368,7 +378,7 @@
 				{
 					"race": [
 						{
-							"name": "Faerie (sylph)"
+							"name": "Sylph"
 						}
 					]
 				}
@@ -379,10 +389,10 @@
 					"type": "list",
 					"items": [
 						"Your travels riding the wind have given you an instinctive control over it.",
-						"You can cast each of the following spells once with this ability: dust devil (XGtE page 154, EEPC page 17), fog cloud, and warding wind (XGtE page 170, EEPC page 23).",
+						"You can cast each of the following spells once with this ability: {@spell dust devil|XGE} (XGtE page 154, EEPC page 17), fog cloud, and warding wind (XGtE page 170, EEPC page 23).",
 						"Intelligence is your spellcasting ability for these spells, and they are each cast at their lowest possible spell levels.",
 						"You regain the ability to cast any spells provided by this feat when you finish a long rest.",
-						"At 8th level, dust devil is cast as a 3rd level spell, becoming cast as a 4th level spell at 12th level, a 5th level spell at 16th level, and a 6th level spell at 20th level"
+						"At 8th level, {@spell dust devil|XGE} is cast as a 3rd level spell, becoming cast as a 4th level spell at 12th level, a 5th level spell at 16th level, and a 6th level spell at 20th level"
 					]
 				}
 			]
@@ -390,7 +400,7 @@
 	],
 	"subrace": [
 		{
-			"name": "Faeries (Pixie)",
+			"name": "Pixie",
 			"source": "WHFAR",
 			"raceName": "Faerie",
 			"raceSource": "WHFAR",
@@ -404,7 +414,7 @@
 					"type": "section",
 					"entries": [
 						{
-							"name": "Faeries (Pixie)",
+							"name": "Pixie",
 							"entries": [
 								"Curious, magical, and carefree, pixies are always cheerful and friendly, if somewhat shy to outsiders. Dressed in fine regalia crafted from forest materials, pixies are fey nobles in miniature, as magical and enchanting as any high elf or eladrin. Pixies have gossamer butterfly wings, and delight when others admire their beauty."
 							]
@@ -441,10 +451,29 @@
 				{
 					"persuasion": true
 				}
-			]
+			],
+			"fluff": {
+				"entries": [
+					{
+						"name": "Pixie",
+						"entries": [
+							"Curious, magical, and carefree, pixies are always cheerful and friendly, if somewhat shy to outsiders. Dressed in fine regalia crafted from forest materials, pixies are fey nobles in miniature, as magical and enchanting as any high elf or eladrin. Pixies have gossamer butterfly wings, and delight when others admire their beauty."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/M7ouFhN.jpg"
+						}
+					}
+				]
+			}
 		},
 		{
-			"name": "Faeries (Sprite)",
+			"name": "Sprite",
 			"source": "WHFAR",
 			"raceName": "Faerie",
 			"raceSource": "WHFAR",
@@ -458,7 +487,7 @@
 					"type": "section",
 					"entries": [
 						{
-							"name": "Faeries (Sprite)",
+							"name": "Sprite",
 							"entries": [
 								"Building cities in the boughs of ancient trees or treants, sprites are sworn to defend the forest lands.",
 								"Despite their stature, they are fierce warriors, well-trained and versed in battle tactics that can thwart creatures many times their size.",
@@ -507,10 +536,32 @@
 				{
 					"elvish": true
 				}
-			]
+			],
+			"fluff": {
+				"entries": [
+					{
+						"name": "Sprite",
+						"entries": [
+							"Building cities in the boughs of ancient trees or treants, sprites are sworn to defend the forest lands.",
+							"Despite their stature, they are fierce warriors, well-trained and versed in battle tactics that can thwart creatures many times their size.",
+							"Sprites tend to be surprisingly stern and serious, keeping the forest safe with a grim determination that other fey often make light of.",
+							"Nevertheless, when a problem does arise, a contingent of battle-ready sprites are just as valued as elven soldiers, and exactly as deadly."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/ZQEJsM6.jpg"
+						}
+					}
+				]
+			}
 		},
 		{
-			"name": "Faeries (Sylph)",
+			"name": "Sylph",
 			"source": "WHFAR",
 			"raceName": "Faerie",
 			"raceSource": "WHFAR",
@@ -524,7 +575,7 @@
 					"type": "section",
 					"entries": [
 						{
-							"name": "Faeries (Sylph)",
+							"name": "Sylph",
 							"entries": [
 								"Native to the Elemental Plane of Air, sylphs nevertheless make their way into the Prime Material, inhabiting airy mountaintops and cliffs, dancing amidst the high winds.",
 								"Natural adventurers, sylphs go where the winds take them, delighting in the journey, the chance to meet new individuals and to see new lands.",
@@ -559,7 +610,29 @@
 						"You know the gust cantrip (XGtE page 157, EEPC page 19). At 3rd level, you learn the spell gust of wind​, and can cast it without expending a spell slot. Once you cast it in this way, you must finish a short or long rest before you can do so again. Intelligence is your spellcasting ability for both of these spells."
 					]
 				}
-			]
+			],
+			"fluff": {
+				"entries": [
+					{
+						"name": "Sylph",
+						"entries": [
+							"Native to the Elemental Plane of Air, sylphs nevertheless make their way into the Prime Material, inhabiting airy mountaintops and cliffs, dancing amidst the high winds.",
+							"Natural adventurers, sylphs go where the winds take them, delighting in the journey, the chance to meet new individuals and to see new lands.",
+							"Being as far-traveled as they are, sylphs are the most common type of faerie to encounter.",
+							"They are still quite rare, however, and very good at remaining hidden when they do not want to be found."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/yLkqSwl.jpg"
+						}
+					}
+				]
+			}
 		}
 	]
 }
