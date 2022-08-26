@@ -25,6 +25,382 @@
 		"dateLastModified": 1638816223,
 		"_dateLastModifiedHash": "867a474772"
 	},
+	"monster":[
+		{
+			"name": "Young Grimnir Wolf",
+			"size": [
+				"S"
+			],
+			"type": "beast",
+			"source": "ROTSSPGF",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d6 + 3",
+				"average": 13
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 13,
+			"dex": 14,
+			"con": 12,
+			"int": 6,
+			"wis": 13,
+			"cha": 8,
+			"passive": 13,
+			"cr": "1/2",
+			"shortName": "Young Grimnir Wolf",
+			"page": 40,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+4"
+			},
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The wolf has advantage on an attack roll against a creature if at least one of the wolf’s allies is within 5 ft. of the creature and the ally isn’t {@condition incapacitated}."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics"
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage."
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ROTSSPGF/creature/token/Young_Grimnir_Wolf.webp",
+			"fluff": {
+				"entries": [
+					"{@link Young Grimnir Wolf|https://www.dmsguild.com/product/373264/Raiders-of-the-Serpent-Sea-Players-Guide--FREE}",
+					"Art by {@link Forgotten Realms Wiki|https://forgottenrealms.fandom.com/wiki/Winter_wolf}. Please credit if you repost elsewhere."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ROTSSPGF/creature/Young_Grimnir_Wolf.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Adult Grimnir Wolf",
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"source": "ROTSSPGF",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d10 + 6",
+				"average": 39
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 14,
+			"dex": 16,
+			"con": 13,
+			"int": 8,
+			"wis": 14,
+			"cha": 9,
+			"passive": 14,
+			"cr": "1",
+			"shortName": "Adult Grimnir Wolf",
+			"page": 40,
+			"skill": {
+				"perception": "+4",
+				"stealth": "+5"
+			},
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The wolf has advantage on an attack roll against a creature if at least one of the wolf’s allies is within 5 ft. of the creature and the ally isn’t {@condition incapacitated}."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics"
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) piercing damage. If the target is a creature, it must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ROTSSPGF/creature/token/Adult_Grimnir_Wolf.webp",
+			"fluff": {
+				"entries": [
+					"{@link Adult Grimnir Wolf|https://www.dmsguild.com/product/373264/Raiders-of-the-Serpent-Sea-Players-Guide--FREE}",
+					"Art by {@link Unknown|}. Please credit if you repost elsewhere."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ROTSSPGF/creature/Adult_Grimnir_Wolf.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Grimnir Forest Wolf",
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"source": "ROTSSPGF",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d10 + 20",
+				"average": 75
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 16,
+			"dex": 16,
+			"con": 14,
+			"int": 10,
+			"wis": 14,
+			"cha": 10,
+			"passive": 16,
+			"cr": "3",
+			"shortName": "Grimnir Forest Wolf",
+			"skill": {
+				"perception": "+6",
+				"stealth": "+7"
+			},
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The wolf has advantage on an attack roll against a creature if at least one of the wolf’s allies is within 5 ft. of the creature and the ally isn’t {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Wary",
+					"entries": [
+						"The wolf’s pack rolls initiative with advantage and cannot be surprised, if conscious. A creature you cannot see does not have advantage on attacks rolls against you."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics"
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d8 + 3}) piercing damage. damage. If the target is a creature, it must succeed on a {@dc 15} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ROTSSPGF/creature/token/Grimnir_Forest_Wolf.webp",
+			"fluff": {
+				"entries": [
+					"{@link Grimnir Forest Wolf|https://www.dmsguild.com/product/373264/Raiders-of-the-Serpent-Sea-Players-Guide--FREE}",
+					"Art by {@link SaeedRamez|https://www.deviantart.com/saeedramez/art/Wolf-329345994}. Please credit if you repost elsewhere."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ROTSSPGF/creature/Grimnir_Forest_Wolf.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Grimnir Frost Wolf",
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"source": "ROTSSPGF",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d10 + 30",
+				"average": 85
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 15,
+			"dex": 16,
+			"con": 16,
+			"int": 10,
+			"wis": 14,
+			"cha": 10,
+			"passive": 14,
+			"cr": "3",
+			"shortName": "Grimnir Frost Wolf",
+			"skill": {
+				"perception": "+4",
+				"stealth": "+5"
+			},
+			"immune": [
+				"cold"
+			],
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The wolf has advantage on an attack roll against a creature if at least one of the wolf’s allies is within 5 ft. of the creature and the ally isn’t {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Savage",
+					"entries": [
+						"The wolf can, once per turn, reroll their attack damage and take either result."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics"
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d8 + 2}) piercing damage. If the target is a creature, it must succeed on a {@dc 15} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ROTSSPGF/creature/token/Grimnir_Frost_Wolf.webp",
+			"fluff": {
+				"entries": [
+					"{@link Grimnir Frost Wolf|https://www.dmsguild.com/product/373264/Raiders-of-the-Serpent-Sea-Players-Guide--FREE}",
+					"Art by {@link Kind Png|https://www.kindpng.com/}. Please credit if you repost elsewhere."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ROTSSPGF/creature/Grimnir_Frost_Wolf.webp"
+						}
+					}
+				]
+			}
+		}
+	],
 	"subclass": [
 		{
 			"name": "College of the Seers",
@@ -2565,7 +2941,7 @@
 	],
 	"book": [
 		{
-			"name": "Raiders of the Serpent Sea",
+			"name": "Raiders of the Serpent Sea (Free Edition)",
 			"id": "ROTSSPGF",
 			"source": "ROTSSPGF",
 			"coverUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ROTSSPGF/cover.webp",
@@ -2890,6 +3266,33 @@
 				},
 				{
 					"name": "Chapter 5: Ships of The Sea",
+					"headers": [
+						"Ship Types",
+						{
+							"depth": 1,
+							"header": "Faering"
+						},
+						{
+							"depth": 1,
+							"header": "Longship: Explorer"
+						},
+						{
+							"depth": 1,
+							"header": "Longship: Charger"
+						},
+						{
+							"depth": 1,
+							"header": "Longship: Carver"
+						},
+						{
+							"depth": 1,
+							"header": "Mercanskip"
+						},
+						{
+							"depth": 1,
+							"header": "Hjemskip"
+						}
+					],
 					"ordinal": {
 						"type": "chapter",
 						"identifier": 7
@@ -2897,13 +3300,43 @@
 				},
 				{
 					"name": "Chapter 6: Grimnir World Primer",
+					"headers": [
+						{
+							"depth": 1,
+							"header": "The Stone Court"
+						},
+						{
+							"depth": 1,
+							"header": "The Witches of The Ironwood"
+						},
+						{
+							"depth": 1,
+							"header": "The Underworld"
+						},
+						{
+							"depth": 1,
+							"header": "The Halls of The Slain"
+						},
+						{
+							"depth": 1,
+							"header": "The Baendur"
+						},
+						{
+							"depth": 1,
+							"header": "The Raiders"
+						},
+						{
+							"depth": 1,
+							"header": "Who Am I?"
+						}
+					],
 					"ordinal": {
 						"type": "chapter",
 						"identifier": 7
 					}
 				},
 				{
-					"name": "Credits",
+					"name": "Credits and License",
 					"ordinal": {
 						"type": "chapter",
 						"identifier": 8
@@ -2925,7 +3358,7 @@
 						"Welcome to the {@i Player's Guide to Raiders of the Serpent Sea}. This guide will provide you with all the tools you need to run a campaign in the primal lands of Grimnir.",
 						"{@i Raiders of the Serpent Sea} is strongly influenced by Norse mythology and the histories of the Vikings. Many tales from ancient sources, as well as more recent depictions in popular media, have inspired this campaign. Yet, this world is not our world. Thor and Odin do not wander the lands, nor will your party sit at a feasting hall across from Ragnar Lodbrok, Erik the Red, or Cnut the Great.",
 						"This is a fantasy world where you will encounter peoples, creatures, and gods that will be familiar to those who admire Norse mythology. But this world is a blend of high fantasy and what we imagine a darker world of grim seafaring raiders might look like. It is a new world, birthed by the destruction of a much older civilization. Creatures from our prehistoric past the saber-toothed tiger, bears the size of longships, and vast herds of mammoth coexist with fantastic sea serpents, grim giants, illusive dragons, and the world devourers, the Yoten. The raiding peoples of Grimnir live amongst these creatures in the unstable, primal world they all inhabit. No stretch of land, of forest, of sea is entirely safe.",
-						"In your hands, your party will live the life of glory seeking Vikings. Their deeds may become the sagas of future generations, and if they live well and boldly (and survive) they may even become something akin to the gods and goddesses from those old stories and myths. Regardless, though their fate may seem determined, their actions and yours as gamemaster shall decide whether this world meets the fate of the one that came before it or if Grimnir finally breaks free from the eternal cycle we call Ragnarök."
+						"In your hands, your party will live the life of glory seeking Vikings. Their deeds may become the sagas of future generations, and if they live well and boldly (and survive) they may even become something akin to the gods and goddesses from those old stories and myths. Regardless, though their fate may seem determined, their actions and yours as gamemaster shall decide whether this world meets the fate of the one that came before it or if Grimnir finally breaks free from the eternal cycle we call Ragnarök."						
 					]
 				},
 				{
@@ -4350,9 +4783,16 @@
 						"Raiders of the Serpent Sea introduces several new class archetypes that suit the world of Grimnir. Some of the archetypes are associated with a specific raiding clan. Discuss with your GM if you would prefer to originate from a different clan in most cases this should be acceptable.",
 						{
 							"type": "entries",
-							"name": "{@subclass College of the Seers|ROTSSPGF}",
+							"name": "Bard - {@link College of the Seers|https://5e.tools/classes.html#bard_phb,state:sub-seers-rotsspgf=b1}",
 							"page": 36,
 							"entries": [
+								{
+									"type": "quote",
+									"entries": [
+										"Nothing is more inspiring than to stand upon a longship and hear our raider drums, our raider song-words raised to the skies. The music of battle powers the sword-arms and fighting hearts, of our raiders."
+									],
+									"by": "Fyrkat, Seerguard"
+								},
 								{
 									"type": "image",
 									"href": {
@@ -4366,7 +4806,7 @@
 						},
 						{
 							"type": "entries",
-							"name": "{@subclass Wolf Rider|ROTSSPGF}",
+							"name": "Ranger - {@link Wolf Rider|https://5e.tools/classes.html#ranger_phb,state:sub-wolf-rider-rotsspgf=b1}",
 							"page": 37,
 							"entries": [
 								{
@@ -4398,9 +4838,16 @@
 						},
 						{
 							"type": "entries",
-							"name": "{@subclass Cohesion of the Primal|ROTSSPGF}",
+							"name": "Wizard - {@link Cohesion of the Primal|https://5e.tools/classes.html#wizard_phb,state:sub-primal-rotsspgf=b1}",
 							"page": 37,
 							"entries": [
+								{
+									"type": "quote",
+									"entries": [
+										"Wizards! Have we not learned from Mirgal's treachery? We, the völv, must continue our work, build upon the labors of those who precede us. No matter the power to be gained from a clan harnessing arcane magics, we must ensure that no jarl is ever seduced by a wizard's promises again. They are too dangerous. If only we could drown them all, our lands might yet be saved. This is no world for wizards."
+									],
+									"by": "Yrsa, High Seer of the Völv"
+								},
 								{
 									"type": "image",
 									"href": {
@@ -4410,6 +4857,237 @@
 									"title": "Class Archetypes - Cohesion of the Primal<br>Art Credit: {@link Unknown|}",
 									"altText": "Class Archetypes - Cohesion of the Primal"
 								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Chapter 5: Ships of The Sea",
+					"page": 45,
+					"entries": [
+						"With the raiders spread across several small continents and numerous islands, the Serpent Sea is an essential lifeline: the waters provide food, trading opportunities, and the opportunity to capture enemy ships and treasure. The raiders take great pride in the longships they build to navigate those treacherous waters. Additionally and just as importantly longships can sail into the smaller rivers penetrating all the major land masses. This gives the raiders the ability to strike anywhere, even deep into enemy lands.",
+						{
+							"type": "inset",
+							"name": "Unfriendly Seas",
+							"entries": [
+								"Though the raiders are the most skilled sailors in this world, the Baendur also sail ships though usually no larger than explorer-class longships or bulky mercanskips. These are always at risk from the raiding clans."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Ship Types",
+							"page": 45,
+							"entries": [
+								"There are a handful of standard ship designs, but each vessel is unique these are merely guidelines. A few coastal villages offer ship construction and customization services, and these will be found throughout the campaign and are indicated in the game master’s rulebook.",
+								{
+									"type": "entries",
+									"name": "Faering",
+									"page": 45,
+									"entries": [
+										"This is a four-oar rowing ship with a small sail. Though much smaller than a longship it can move a small party down most rivers and along the Serpent Sea itself, if they keep the coastline visible."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Longship: Explorer",
+									"page": 45,
+									"entries": [
+										"This is the smallest of the longships (usually no more than 60’ long) and requires a crew of fourteen to row at full speed. Like all longships there is no lower deck or cabins so a crew must have the conviction (and patience) to sail long distances with one another on the open deck. It has oars for rowing as well as sails to increase speed when at sea. Given its lighter crew and faster speeds, it is often used as a scouting vessel."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Longship: Charger",
+									"page": 45,
+									"entries": [
+										"Chargers are larger than explorers, host a crew of around thirty, and boast additional cargo and passenger space. These are the standard longships used by established clans when raiding and they form the bulk of war fleets. Most young raiders grow up dreaming of owning such a vessel."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Longship: Carver",
+									"page": 45,
+									"entries": [
+										"This is the largest standard longship. Few carvers exist, given their expense to create and maintain, but those that do sail the Serpent Sea are fearsome, powerful vessels. Their length and width also accommodate the shipment of goods and the crew complement of sixty makes for a very well defended longship."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Mercanskip",
+									"page": 45,
+									"entries": [
+										"Mercanskip is the raider name for the plump merchant vessels that the Baendur use to trade between their disparate kingdoms. Slow moving but heavily armored they are usually accompanied by numerous longships for protection. A few clans have kept mercanskips that they have plundered, making the ship an uncommon but not impossible sight amongst a raiding fleet as well. This is the only ship large enough to transport horses comfortably in lower holds."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Hjemskip",
+									"page": 45,
+									"entries": [
+										"These large vessels are affectionately termed houseboats. Larger and spacious, they are also slow moving, and are never part of normal fleet operations. Most clans have one or two of these wooden vessels, usually docked at their primary village and set upon the Serpent Sea only to attend the Gathering at Drifthall every eight years."
+									]
+								}
+							]
+						},
+						{
+							"type": "inset",
+							"name": "The Call of the Sea",
+							"entries": [
+								"In the complete player’s book, additional sections will explain the basics of navigating the Serpent Sea, how to obtain and upgrade longships (and crew) as well as new naval rules and marine combat opportunities."
+							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ROTSSPGF/book/Chapter5-FeastHall1stFloor.webp"
+							},
+							"title": "Feast Hall 1st Floor <br>Art Credit: {@link Unknown|}",
+							"altText": "Feast Hall 1st Floor"
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ROTSSPGF/book/Chapter5-FeastHall2ndFloor.webp"
+							},
+							"title": "Feast Hall 2nd Floor <br>Art Credit: {@link Unknown|}",
+							"altText": "Feast Hall 2nd Floor"
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Chapter 6: Grimnir World Primer",
+					"page": 48,
+					"entries": [
+						"Grimnir is a primal world of islands spread across the winding Serpent Sea. The natives of Grimnir are the humans, elves, dwarves, and others that migrated here centuries again when their original world was destroyed by the {@i Yoten} a race of spell wielding giants. Over the years numerous creatures of other races have been brought to this world and many have joined clans and become Raiders of the Serpent Sea.",
+						{
+							"type": "list",
+							"items": [
+								"{@b Ever Growing Mountain.} The inner peak, Turnjfall, still grows. It dominates the skyline from every corner of the world and from atop its peak the sky flashes with all the colors of the rainbow.",
+								"{@b A Primeval World.} The Serpent Sea is ringed by lava and volcanoes and earthquakes are commonplace. Islands rise and sink often. Such extreme landscapes bring with them massive creatures including great bears, mammoths, and saber-toothed tigers. Even worse dwells in the forests of Turnjfall",
+								"{@b The Long Winter.} Winter has not fully withdrawn its cold grip the past two years and all raiders are apprehensive as spring approaches. Will winter finally relent? If not, many are going to die of starvation or in battle over scarce resources."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "",
+							"page": 48,
+							"entries": [
+								{
+									"type": "entries",
+									"name": "The Stone Court",
+									"page": 48,
+									"entries": [
+										"Heroes from the Lost Lands, known collectively as the Vanir, fought the Yoten but failed. They fled into Grimnir and eventually ruled all the lands settled by the raiders. But a Yoten, known as Boða, cursed them. The Vanir are now trapped as statues.",
+										{
+											"type": "list",
+											"items": [
+												"{@b Aldyhn.} Goddess of Wisdom; the Hallharn (leaders, clergy)",
+												"{@b Gnark.} God of the Field; the Tvar (farmers)",
+												"{@b Idin.} Goddess of the Forge; the Tvar (smiths)",
+												"{@b Knat.} Goddess of Sport; the Knattle (hunters)",
+												"{@b Luta.} Goddess of Perseverance; the Lutan (nomad warriors)",
+												"{@b Palter.} God of Hope; the Örn (crafters)",
+												"{@b Vani.} God of Battle; the Risa (tallfolk)"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "The Witches of The Ironwood",
+									"page": 48,
+									"entries": [
+										"Led by the armored warrior-witch known as the Witchking, the witches of the ironwood have long conspired against the raiders. They live in the haunted ironwood forests that primarily grow only in isolated areas."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "The Underworld",
+									"page": 48,
+									"entries": [
+										"The goddess of death, Hel, rules all those who die outside of battle. Her realm is said to be a dreary place of unrelenting torment though not all agree. Helmaws open on occasion around the world, allowing mortals to pass into her domain. A few do return."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "The Halls of The Slain",
+									"page": 48,
+									"entries": [
+										"Most raiders believe in living every day to its fullest. They eat, they drink, and they fight. Celebration whether it is a victory, a birth, or an alliance—is vital.",
+										"But above all, joining their ancestors in the {@i Halls of the Slain} is most important. The {@i almost-god}, Thonir, son of Aldyhn and Slayer of the Last Yoten, is believed to rule these halls and is busy preparing the brave dead to do battle at the end of the world."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "The Baendur",
+									"page": 48,
+									"entries": [
+										"Several dozen kingdoms are scattered across the world, especially in the High North and along the western edge of the world. Few kingdoms make serious attempts to expand, especially not into raider territory, but they require trade with one another and do risk the seas, providing ripe targets for raiders to plunder. The most powerful Baendur is King Cenric Edgare."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "The Raiders",
+									"page": 48,
+									"entries": [
+										"Raiders are pragmatic people that value strength and bravery. Though their martial traditions are important to them they also pride themselves on shipbuilding and their adherence to respecting their gods through divine traditions.",
+										"The raiders live in small and medium sized clans, primarily in wooden fortresses inhabiting the inner continents and surrounding islands. The clans are often in conflict, if not outright war with one another. Raiders relish gaining glory and spoils—their reward in the present life for their bravery in battle.",
+										{
+											"type": "list",
+											"items": [
+												"{@b The Alljarl.} Each clan has their own jarl but once every eight years they meet at a gathering on the floating town of Drifthall to vote for an Alljarl who loosely leads the united clans in times of conflict. The current Alljarl is Mother Guhnbarg of the Hallharn.",
+												"{@b The Völv.} Raider history is passed orally from generation to generation, which grants much respect to their elders who are stewards of knowledge. Most respected are the prophetic völv.",
+												"{@b Ragnarök.} The völv have seen that this world, like the Lost Lands, is destined to end in a cataclysmic battle. Each day of a raider’s life is lived preparing for this inevitability."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Who Am I?",
+									"page": 48,
+									"entries": [
+										"You are either a raider or a newcomer to the world and the völv have seen that you serve a necessary role leading to a victory at Ragnarök. If you survive then the world will be saved. Regardless, the legendary exploits you are about to undertake will be spoken of until the very last breath of the very last mortal is exhaled."
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Credits and License",
+					"entries": [
+						{
+							"name": "Credits",
+							"type": "entries",
+							"entries": [
+								"Created by Brent Knowles",
+								"Graphic Design and Layout: Michal E. Cross",
+								"Writing: Brent Knowles",
+								"Illustrations: Chris J. Anderson, Davis Clifford, Michal E. Cross, Wadim Kashin, Sebastian Kowoll, Lius Lasahido, Erikas Perl",
+								"Player’s Guide Cover Art: Lius Lasahido",
+								"Public Domain Paintings: Wikimedia Commons",
+								"World, City, and Dungeon Maps: John Stevenson",
+								"Proofreading: Carter Knowles, Linden Knowles",
+								"Playtesters: Atlantis Fraess, Chris Crowle, Lisa Crowle, Chicago Fraess, Carter Knowles, Linden Knowles, Michal Rinsma",
+								"Special Thanks: James Ohlen & Jesse Sky for their advice and support throughout the process of bringing this fantasy world to print.",
+								"Special Thanks: Chris Birch and the entire team at Modiphius Entertainment for their guidance and support throughout all facets of publishing these books!",
+								"Additional Special Thanks: Chicago Fraess, Emerald Fraess, Matt Yee"
+							]
+						},
+						{
+							"name": "License",
+							"type": "entries",
+							"entries": [
+								"Raiders of the Serpent Sea is published under the OGL rules for 5th Edition.",
+								"Special thanks to the many talented people who created our favorite edition of the world’s greatest roleplaying game.",
+								"Raiders of the Serpent Sea and all content herein © Brent Knowles, 2021",
+								"www.arcanumworlds.com"
 							]
 						}
 					]
