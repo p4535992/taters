@@ -43,7 +43,18 @@ TODO
 
 =============================================================================================
 
+I can do these BREW-531, BREW-532, BREW-521, BREW-508, BREW-548
 
+BREW-531 Mechaneer Artificer Specilization by u/SrVolk
+
+BREW-532 Artificer Specialist: The Grenadier by u/Zixtank
+
+BREW-521 The Book of Hordes - Rules for Mass Warfare (u/aeyana)
+
+BREW-508 MonkeyDM Pact of the Trigger
+BREW-548 u/That_Kael; Awakened Shrub 2.0
+
+=============================================================================================
 - BREW-320 Mythic Eberron https://www.dmsguild.com/product/329253/Mythic-Eberron
 - BREW-322 QL Games - The Draconomicon - https://www.dmsguild.com/product/367945/The-Draconomicon
 
