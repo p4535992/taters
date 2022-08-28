@@ -27,6 +27,1267 @@
 	},
 	"monster": [
 		{
+			"name": "Mob",
+			"size": [
+				"G"
+			],
+			"type": {
+				"type": "humanoid",
+				"swarmSize": "M"
+			},
+			"source": "ATBOH",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"formula": "5d20",
+				"average": 52
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 10,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"cr": "1",
+			"shortName": "Mob",
+			"page": 7,
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"trait": [
+				{
+					"name": "Horde",
+					"entries": [
+						"The horde can occupy another creature's space and vice versa, and the horde can move through any opening large enough for a Medium commoner.Additionally, the horde is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Reactive",
+					"entries": [
+						"The horde can take one reaction on every turn in combat."
+					]
+				},
+				{
+					"name": "Stampede",
+					"entries": [
+						"When the horde moves through the space ofa Large or smaller creature, the horde can force the creature to make a {@dc 13} Strength saving throw. On a failed save, the creature is knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Torches",
+					"entries": [
+						"The mob sheds bright light in a 20-foot radius and dim light for an additional 20 feet."
+					]
+				}
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"AOE"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The horde makes four attacks, or two attacksif the horde has half its hit points or fewer."
+					]
+				},
+				{
+					"name": "Pitchfork",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Torch",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) fire damage."
+					]
+				},
+				{
+					"name": "Rock",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) bludgeoning damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"P"
+			],
+			"tokenUrl": "https://i.imgur.com/TlQxRnf.png",
+			"fluff": {
+				"entries": [
+					"Mobs",
+					"When times get rough and tempers flare, the general citizenry may pick up their torches and pitchforks and setout on a good ol' riot. They are typically lead by a charlatan or folk hero."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/w6yh7uG.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Horde of Zombies",
+			"size": [
+				"G"
+			],
+			"type": {
+				"type": "undead",
+				"swarmSize": "M"
+			},
+			"source": "ATBOH",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				8
+			],
+			"hp": {
+				"formula": "20d20 + 60",
+				"average": 270
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 18,
+			"dex": 6,
+			"con": 16,
+			"int": 3,
+			"wis": 6,
+			"cha": 5,
+			"passive": 8,
+			"cr": "10",
+			"shortName": "Horde of Zombies",
+			"page": 8,
+			"languages": [
+				"Understands all languages it spoke in life but can't speak"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"save": {
+				"wis": "+2"
+			},
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"trait": [
+				{
+					"name": "Horde",
+					"entries": [
+						"The horde can occupy another creature's space and vice versa, and the horde can move through any opening large enough for a Medium zombie.Additionally, the horde is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Horde Turn Resistance",
+					"entries": [
+						"The horde has advantage on saving throws against any effect that turns undead.Additionally, the horde can be affected by the DestroyUndead feature regardless of CR limits, but has advantage on the saving throw against it and is not destroyed on a failed save. Instead, it takes radiant damage equal to 10 × the cleric's level on a failed save,or half as much damage on a success."
+					]
+				},
+				{
+					"name": "Reactive",
+					"entries": [
+						"The horde can take one reaction on every turn in combat."
+					]
+				},
+				{
+					"name": "Stampede",
+					"entries": [
+						"When the horde moves through the space ofa Large or smaller creature, the horde can force the creature to make a {@dc 14} Strength saving throw. On a failed save, the creature is knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Undead Fortitude",
+					"entries": [
+						"The horde has resistance to all damage that is not radiant or from a critical hit."
+					]
+				}
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"traitTags": [
+				"Undead Fortitude"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The horde makes four slam attacks, or two slam attacks if the horde has half its hit points or fewer."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) bludgeoning damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://i.imgur.com/IFhwaK6.png",
+			"fluff": {
+				"entries": [
+					"The Undead",
+					"Undead hordes are usually commanded by powerful undead,such as wights, or by the necromancer that created them.",
+					"Though usually not seen as a huge threat as individuals, a horde of undead can very quickly wreak havoc on settlements and unfortified towns, and are capable of extreme coordination under the lead of a commander."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/pzQ6mHm.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Horde of Skeletons",
+			"size": [
+				"G"
+			],
+			"type": {
+				"type": "undead",
+				"swarmSize": "M"
+			},
+			"source": "ATBOH",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"armor scraps"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d20 + 28",
+				"average": 175
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 15,
+			"int": 6,
+			"wis": 8,
+			"cha": 5,
+			"passive": 9,
+			"cr": "5",
+			"shortName": "Horde of Skeletons",
+			"page": 9,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Understands all languages it spoke in life but can't speak"
+			],
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"vulnerable": [
+				"bludgeoning"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"trait": [
+				{
+					"name": "Horde",
+					"entries": [
+						"The horde can occupy another creature's space and vice versa, and the horde can move through any opening large enough for a Medium skeleton.Additionally, the horde is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Horde Turn Resistance",
+					"entries": [
+						"The horde has advantage on saving throws against any effect that turns undead. Additionally, the horde can be affected by the Destroy Undead feature regardless of CR limits, but has advantage on the saving throw against it and is not destroyed on a failed save. Instead, it takes radiant damage equal to 10 × the cleric's level on a failed save,or half as much damage on a success."
+					]
+				},
+				{
+					"name": "Reactive",
+					"entries": [
+						"The horde can take one reaction on every turn in combat."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The horde makes four attacks, or two attacks if the horde has half its hit points or fewer."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Shortbow",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 80/320 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Volley",
+					"entries": [
+						"The horde launches a volley of arrows at a point within 120 feet of it. Each creature of the horde's choice in a 10-foot-radius sphere centered on that point must make a {@dc 13} Dexterity saving throw. On a failed save, a creature takes 28 ({@damage 8d6}) piercing damage, or 14 ({@dice 4d6})piercing damage if the horde has half its hit points or fewer. On a successful save, it takes half as much damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG",
+				"AOE"
+			],
+			"tokenUrl": "https://i.imgur.com/rLnJli4.png",
+			"fluff": {
+				"entries": [
+					"The UndeadThe Undead",
+					"Undead hordes are usually commanded by powerful undead,such as wights, or by the necromancer that created them.",
+					"Though usually not seen as a huge threat as individuals, a horde of undead can very quickly wreak havoc on settlements and unfortified towns, and are capable of extreme coordination under the lead of a commander."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/KcvpmX7.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Horde of Orcs",
+			"size": [
+				"G"
+			],
+			"type": {
+				"type": "humanoid",
+				"swarmSize": "M"
+			},
+			"source": "ATBOH",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item hide armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d20 + 42",
+				"average": 189
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 22,
+			"dex": 12,
+			"con": 16,
+			"int": 7,
+			"wis": 11,
+			"cha": 10,
+			"passive": 10,
+			"cr": "7",
+			"shortName": "Horde of Orcs",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Orc"
+			],
+			"languageTags": [
+				"C",
+				"O"
+			],
+			"skill": {
+				"intimidation": "+3"
+			},
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"trait": [
+				{
+					"name": "Aggressive",
+					"entries": [
+						"As a bonus action, the horde can move up toits speed toward a hostile creature that it can see."
+					]
+				},
+				{
+					"name": "Horde",
+					"entries": [
+						"The horde can occupy another creature's spaceand vice versa, and the horde can move through anyopening large enough for a Medium orc. Additionally,the horde is immune to any spell or effect that wouldalter its form."
+					]
+				},
+				{
+					"name": "Reactive",
+					"entries": [
+						"The horde can take one reaction on every turn incombat."
+					]
+				},
+				{
+					"name": "Stampede",
+					"entries": [
+						"When the horde moves through the space ofa Large or smaller creature, the horde can force thecreature to make a {@dc 17} Strength saving throw. On afailed save, the creature is knocked {@condition prone}."
+					]
+				}
+			],
+			"traitTags": [
+				"Aggressive"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The horde makes four greataxe attacks, or two greataxe attacks if the horde has half its hit points or fewer."
+					]
+				},
+				{
+					"name": "Greataxe",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}12 ({@damage 1d12 + 6}) slashing damage."
+					]
+				},
+				{
+					"name": "Bloodbath",
+					"entries": [
+						"Each creature of the horde's choice in the horde's space must make a {@dc 17} Dexterity saving throw. On a failed save, a creature takes 52 ({@dice 8d12})slashing damage, or 26 ({@damage 4d12}) slashing damage if the horde has half its hit points or fewer. On a successful save, it takes half as much damage."
+					]
+				},
+				{
+					"name": "Volley",
+					"entries": [
+						"The horde launches a volley of javelins at a point within 60 feet of it. Each creature of the horde's choice in a 10-foot-radius sphere centered on that point must make a {@dc 17} Dexterity saving throw. On a failed save, a creature takes 28 ({@damage 8d6}) piercing damage, or 14 ({@dice 4d6})piercing damage if the horde has half its hit points or fewer. On a successful save, it takes half as much damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"bonus": [
+				{
+					"name": "Aggressive",
+					"entries": [
+						"As a bonus action, the horde can move up to its speed toward a hostile creature that it can see."
+					]
+				}
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"tokenUrl": "https://i.imgur.com/iHCgi9U.png",
+			"fluff": {
+				"entries": [
+					"Orcs",
+					"Brutal and efficient, orcs often band",
+					"together under the command of an orc war chief or other orcs of religious importance, such as a Blade of Ilneval or Eye of Gruumsh. They work as a unit to raid and plunder"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/rxhvKOP.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Squad of Hobgoblins",
+			"size": [
+				"G"
+			],
+			"type": {
+				"type": "humanoid",
+				"swarmSize": "M"
+			},
+			"source": "ATBOH",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item chain mail|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d20 + 13",
+				"average": 149
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 12,
+			"int": 10,
+			"wis": 10,
+			"cha": 9,
+			"passive": 10,
+			"cr": "8",
+			"shortName": "Squad of Hobgoblins",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Goblin"
+			],
+			"languageTags": [
+				"C",
+				"GO"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"trait": [
+				{
+					"name": "Martial Advantage",
+					"entries": [
+						"A melee weapon deals one extra die of its damage when the horde attacks with it (included in the attack)."
+					]
+				},
+				{
+					"name": "Horde",
+					"entries": [
+						"The horde can occupy another creature's space and vice versa, and the horde can move through any opening large enough for a Medium hobgoblin.Additionally, the horde is immune to any spell",
+						"or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Reactive",
+					"entries": [
+						"The horde can take one reaction on every turn in combat."
+					]
+				},
+				{
+					"name": "Stampede",
+					"entries": [
+						"When the horde moves through the space ofa Large or smaller creature, the horde can force the creature to make a {@dc 15} Strength saving throw. On a failed save, the creature is knocked {@condition prone}."
+					]
+				}
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The horde makes four spear attacks, or two spear attacks if the horde has half its hit points or fewer."
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Coordinated Offensive",
+					"entries": [
+						"Each creature of the horde's choice in the horde's space must make a {@dc 15}Dexterity saving throw. On a failed save, a creature takes56 ({@damage 16d6}) piercing damage, or 28 ({@dice 8d6}) piercing damage if the horde has half its hit points or fewer. On a successful save, it takes half as much damage."
+					]
+				},
+				{
+					"name": "Volley",
+					"entries": [
+						"The horde launches a volley of arrows at a point within 150 feet of it. Each creature of the horde's choice in a 10-foot-radius sphere centered on that point must make a {@dc 15} Dexterity saving throw. On a failed save, a creature takes 36 ({@damage 8d8}) piercing damage, or 18 ({@dice 4d8})piercing damage if the horde has half its hit points or fewer. On a successful save, it takes half as much damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"tokenUrl": "https://i.imgur.com/JIPgPyn.png",
+			"fluff": {
+				"entries": [
+					"Hobgoblin",
+					"The armies of a hobgoblin warlord can be divided into squads to facilitate chain of command. Squads are typically lead by a hobgoblin captain, with the hobgoblin warlord often commanding multiple squads at once."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/ykxzUkB.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Pack of Gnolls",
+			"size": [
+				"G"
+			],
+			"type": {
+				"type": "humanoid",
+				"swarmSize": "M"
+			},
+			"source": "ATBOH",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item hide armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "25d20",
+				"average": 262
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 12,
+			"con": 11,
+			"int": 6,
+			"wis": 10,
+			"cha": 7,
+			"passive": 10,
+			"cr": "8",
+			"shortName": "Pack of Gnolls",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Gnoll"
+			],
+			"languageTags": [
+				"C",
+				"OTH"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"trait": [
+				{
+					"name": "Rampage",
+					"entries": [
+						"When the horde reduces a creature to 0 hit points with a melee attack on its turn, the horde can take a bonus action to move up to half its speed and use itsFrenzy."
+					]
+				},
+				{
+					"name": "Horde",
+					"entries": [
+						"The horde can occupy another creature's space and vice versa, and the horde can move through any opening large enough for a Medium gnoll. Additionally,the horde is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Reactive",
+					"entries": [
+						"The horde can take one reaction on every turn in combat."
+					]
+				},
+				{
+					"name": "Stampede",
+					"entries": [
+						"When the horde moves through the space ofa Large or smaller creature, the horde can force the creature to make a {@dc 16} Strength saving throw. On a failed save, the creature is knocked {@condition prone}."
+					]
+				}
+			],
+			"traitTags": [
+				"Rampage"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The horde makes four spear attacks, or two spear attacks if the horde has half its hit points or fewer."
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw,rw} {@hit 8} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}8 ({@damage 1d6 + 5}) piercing damage in melee, or 8 ({@damage 1d6 + 5}) piercing damage at range."
+					]
+				},
+				{
+					"name": "Frenzy",
+					"entries": [
+						"Each creature of the horde's choice in the horde's space must make a {@dc 16} Dexterity saving throw. On a failed save, a creature takes 28 ({@damage 8d6}) piercing damage,or 14 ({@damage 4d6}) piercing damage if the horde has half its hit points or fewer. On a successful save, it takes half as much damage."
+					]
+				},
+				{
+					"name": "Volley",
+					"entries": [
+						"The horde launches a volley of spears at a point within 60 feet of it. Each creature of the horde's choice in a 10-foot-radius sphere centered on that point must make a {@dc 16} Dexterity saving throw. On a failed save, a creature takes 28 ({@damage 8d6}) piercing damage, or 14 ({@dice 4d6})piercing damage if the horde has half its hit points or fewer. On a successful save, it takes half as much damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"THW",
+				"AOE"
+			],
+			"tokenUrl": "https://i.imgur.com/N0rW74w.png",
+			"fluff": {
+				"entries": [
+					"Gnolls",
+					"Bloodthirsty marauders, gnolls form packs in times of war or hunger, scouring the land for prey. These packs are often lead by gnoll pack lords, and are sometimes accompanied by the dreaded fangs of Yeenoghu."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/sLAilyp.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Squad of Infantrymen",
+			"size": [
+				"G"
+			],
+			"type": {
+				"type": "humanoid",
+				"swarmSize": "M"
+			},
+			"source": "ATBOH",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item chain shirt|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d20 + 12",
+				"average": 138
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 19,
+			"dex": 12,
+			"con": 12,
+			"int": 10,
+			"wis": 11,
+			"cha": 10,
+			"passive": 10,
+			"cr": "5",
+			"shortName": "Squad of Infantrymen",
+			"languages": [
+				"Any one language (usually common)"
+			],
+			"skill": {
+				"athletics": "+7"
+			},
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"trait": [
+				{
+					"name": "Horde",
+					"entries": [
+						"The horde can occupy another creature's space and vice versa, and the horde can move through any opening large enough for a Medium infantry man. Additionally, the horde is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Reactive",
+					"entries": [
+						"The horde can take one reaction on every turn in combat."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The horde makes four pike attacks, or two pike attacks if the horde has half its hit points or fewer."
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Spear Wall",
+					"entries": [
+						"Each creature of the horde's choice within 5feet of the horde must make a {@dc 15} Dexterity saving throw. On a failed save, a creature takes 28 ({@dice 8d6})piercing damage, or 14 ({@damage 4d6}) piercing damage if the horde has half its hit points or fewer. On a successful save, it takes half as much damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://i.imgur.com/CXyo2sk.png",
+			"fluff": {
+				"entries": [
+					"Armies",
+					"Some nations keep a standing army, while others scrounge together soldiers in times of war."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/PziVaGS.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Squad of Bowmen",
+			"size": [
+				"G"
+			],
+			"type": {
+				"type": "humanoid",
+				"swarmSize": "M"
+			},
+			"source": "ATBOH",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d20 + 10",
+				"average": 115
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 14,
+			"con": 12,
+			"int": 11,
+			"wis": 13,
+			"cha": 11,
+			"passive": 13,
+			"cr": "3",
+			"shortName": "Squad of Bowmen",
+			"languages": [
+				"Any one language (usually common)"
+			],
+			"skill": {
+				"perception": "+3"
+			},
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"trait": [
+				{
+					"name": "Horde",
+					"entries": [
+						"The horde can occupy another creature's space and vice versa, and the horde can move through any opening large enough for a Medium infantryman. Additionally, the horde is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Reactive",
+					"entries": [
+						"The horde can take one reaction on every turn in combat."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The horde makes four longbow attacks, or two longbow attacks if the horde has half its hit points or fewer."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 150/600 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Volley",
+					"entries": [
+						"The horde launches a volley of arrows at a point within 150 feet of it. Each creature of the horde's choice in a 10-foot-radius sphere centered on that point must make a {@dc 12} Dexterity saving throw. On a failed save, a creature takes 36 ({@damage 8d8}) piercing damage, or 18 ({@dice 4d8})piercing damage if the horde has half its hit points or fewer. On a successful save, it takes half as much damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"RW",
+				"RNG",
+				"AOE"
+			],
+			"tokenUrl": "https://i.imgur.com/4bFODdT.png",
+			"fluff": {
+				"entries": [
+					"Armies",
+					"Some nations keep a standing army, while others scrounge together soldiers in times of war."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/K2fQfMN.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Pack of Wolves",
+			"size": [
+				"G"
+			],
+			"type": {
+				"type": "beast",
+				"swarmSize": "M"
+			},
+			"source": "ATBOH",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d20 + 12",
+				"average": 138
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 12,
+			"int": 3,
+			"wis": 12,
+			"cha": 6,
+			"passive": 13,
+			"cr": "5",
+			"shortName": "Pack of Wolves",
+			"skill": {
+				"stealth": "+4",
+				"perception": "+3"
+			},
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"trait": [
+				{
+					"name": "Horde",
+					"entries": [
+						"The horde can occupy another creature's space and vice versa, and the horde can move through any opening large enough for a Medium wolf. Additionally,the horde is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The horde has advantage on attack rolls against creatures in its space."
+					]
+				},
+				{
+					"name": "Reactive",
+					"entries": [
+						"The horde can take one reaction on every turn in combat."
+					]
+				}
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The horde makes four bite attacks, or two bite attacks if the horde has half its hit points or fewer."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d4 + 4}) piercing damage. If the target is a creature, it must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"tokenUrl": "https://i.imgur.com/h3zyfvp.png",
+			"fluff": {
+				"entries": [
+					"BeastsBeasts",
+					"Social creatures, wolves rarely ever hunt alone. When calamity strikes, wolves will band together and fight as a pack. These packs are often lead by dire wolves.",
+					"Sometimes, a druid or wild warrior can strike a deal with a wolf pack, and lead it instead."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/Mkxtrst.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
 			"name": "War Banner",
 			"shortName": "War Banner",
 			"size": [
@@ -1824,7 +3085,7 @@
 									"type": "entries",
 									"name": "Stampede",
 									"entries":[
-										"When the horde moves through the space of aLarge or smaller creature, the horde can force the creature to make a Strength saving throw. On a failed save, the creature is knocked prone.",
+										"If the horde does not already have the stampede ability when the horde moves through the space of aLarge or smaller creature, the horde can force the creature to make a Strength saving throw. On a failed save, the creature is knocked prone.",
 										"The DC for this saving throw is equal to {@b 8 + the horde's proficiency bonus + the horde's Strength modifier}."
 									]
 								},
