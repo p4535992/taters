@@ -32,21 +32,27 @@
 			"group": "homebrew",
 			"contents": [
 				{
-					"name": "What This Document Is",
-					"ordinal": {
-						"type": "chapter",
-						"identifier": 1
-					}
-				},
-				{
-					"name": "Organizational Tables",
+					"name": "Overview",
 					"headers": [
-						"Adjusting Price by Location",
-						"Sorting & Abbreviations"
+						"What This Document Is",
+						"Random Discerning Merchants",
+						"Organizational Tables",
+						{
+							"depth": 1,
+							"header": "Pricing Exceptions"
+						},
+						{
+							"depth": 1,
+							"header": "Quick Price Adjustments by Location"
+						},
+						{
+							"depth": 1,
+							"header": "Sorting & Abbreviations"
+						}
 					],
 					"ordinal": {
 						"type": "chapter",
-						"identifier": 2
+						"identifier": 1
 					}
 				},
 				{
@@ -111,7 +117,7 @@
 					],
 					"ordinal": {
 						"type": "chapter",
-						"identifier": 3
+						"identifier": 2
 					}
 				}
 			]
@@ -124,176 +130,235 @@
 			"data": [
 				{
 					"type": "section",
-					"name": "What This Document Is",
+					"name": "Overview",
 					"entries": [
-						"The Discerning Merchant's Price Guide is a tool primarily for Dungeon Masters, although players may find it useful as well, particularly in magic-heavy campaigns. Simply put, the Discerning Merchant's Price Guide is an alternate organizational tool for magic items that already exist under the rules in the D&D Fifth Edition. It provides tables for magical items in many categories: all the weapons are together, all the staffs are together, and so on, similarly to how items were laid out in 3.5e. As a DM, if I need to quickly find a sword to award a player, I want to know exactly where to look and what my options are.",
-						"It additionally provides suggested costs, attunement requirements, and other relevant details. I've found it very useful in my own campaigns, and hopefully it proves helpful to you as well."
-					]
-				},
-				{
-					"type": "section",
-					"name": "Organizational Tables",
-					"entries": [
-						"The tables in the following pages are intended to assist in quickly finding an item of a particular type. If you're looking for a weapon, alphabetical order isn't real helpful, since they might have many different names. The actual descriptions of these items, however, are not included; those must be found in the appropriate book. Reference page numbers are provided, along with their rarity, attunement requirements, and suggested cost (rather than a simple range). Note that these prices are suggestions; feel free to adjust them as you see fit. These tables follow the rules as written; they contain no homebrew information or modifications, and almost all the suggested prices fall within the ranges suggested for items of their rarity.",
 						{
-							"type": "section",
-							"name": "Pricing Exceptions",
+							"type": "entries",
+							"name": "What This Document Is",
 							"entries": [
-								"There are a few notable exceptions to rules-as-written price ranges listed in the Dungeon Master's Guide (DMG). It's doubtful that any player would dish out 25,000.01 gp for a potion of storm giant strength, even though that's the minimum \"by the book\" price for a consumable legendary item. You will find that potion costs, particularly those of high rarities, have been modified. In this edition, the prices for winged boots and a broom of flying have been increased. Flying is a powerful ability, and it was absurd that these items were cheaper than a potion of flying. A potion is now the cheapest way to fly, although any character who wants to do so more than once will still find a broom, wings, or boots a more worthwhile investment. Several other items also fall outside standard price ranges, primarily because they are underpowered compared to other items of the same tier. Items with prices intentionally modified beyond the normal range for their rarity are marked with an asterisk (*)."
+								"The Discerning Merchant's Price Guide is a tool primarily for Dungeon Masters, although players may find it useful as well, particularly in magic-heavy campaigns. It is an organizational tool for magic items in D&D Fifth Edition (but does not include artifacts, sentient items, or items that only differ in flavor). It groups magic items together into tables: melee weapons, armor, staffs, rings, and so on, similarly to how items were laid out in 3.5e. This should help DMs know exactly where to look and what their options are for handing out a given item.",
+								"It additionally provides {@b suggested costs, attunement requirements, weighted die ranges for randomization}, and other relevant details. I hope it proves helpful to you."
 							]
 						},
 						{
-							"type": "section",
-							"name": "Adjusting Price by Location",
+							"type": "entries",
+							"name": "Random Discerning Merchants",
 							"entries": [
-								"Magic items are naturally going to be easier to find in urban centers, but even when available in smaller settlements, residents might be reluctant to part with such treasures. While some DMs may not wish to bother with this degree of granularity, those who prefer a formulaic approach can consult the following table for a rough guide to modifying prices based on settlement size (or use it as inspiration for your own table).",
+								"New to Version 5.0 is a section for DMs needing to quickly roll up their own discerning merchant. This includes random tables for (a) shop names and significant details; (b) the merchant themselves, with their current mood, basic personality, and quirk; and (c) the economy of the shop, from its gold-on-hand to items in stock, from price modifications to what sort of bartering works best against the merchant.",
+								"This section begins on page 23."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Organizational Tables",
+							"entries": [
+								"The tables in the following pages are intended to assist in quickly finding an item of a particular type. If you're looking for a weapon, alphabetical order isn't real helpful, since they might have many different names. The actual descriptions of these items, however, are not included; those must be found in the appropriate book. Reference page numbers are provided, along with their rarity, attunement requirements, and suggested cost (rather than a simple range). Note that these prices are {@i suggestions}; feel free to adjust them as you see fit.",
+								"These tables follow the rules as written; they contain no homebrew information or modifications, and almost all the suggested prices fall within the ranges suggested for items of their rarity.",
 								{
-									"type": "table",
-									"colLabels": [
-										"Settlement Size",
-										"Modifier",
-										"Example"
-									],
-									"colStyles": [
-										"col-4",
-										"col-4",
-										"col-4"
-									],
-									"rows": [
-										[
-											"Hamlet",
-											"100% surcharge",
-											"A group of farms"
-										],
-										[
-											"Village",
-											"50% surcharge",
-											"Phandalin"
-										],
-										[
-											"Town",
-											"20% surcharge",
-											"Greenest"
-										],
-										[
-											"City",
-											"\u2014",
-											"Berdusk"
-										],
-										[
-											"Metropolis",
-											"10% cheaper",
-											"Waterdeep"
-										],
-										[
-											"Megalopolis",
-											"20% cheaper",
-											"Ravnica, Sharn"
-										]
+									"type": "entries",
+									"name": "Pricing Exceptions",
+									"entries": [
+										"There are a few notable exceptions to rules-as-written price ranges listed in the Dungeon Master's Guide (DMG). It's doubtful that any player would dish out 25,000.01 gp for a {@item potion of storm giant strength|dmg}, even though that's the minimum “by the book” price for a consumable legendary item. You will find that potion costs, particularly those of high rarities or that provide flight, have been modified.",
+										"Several other items also fall outside standard price ranges, primarily because they are underpowered compared to other items of the same tier.",
+										"Items with prices intentionally modified beyond the normal range for their rarity are marked with an asterisk (*)."
 									]
-								}
-							]
-						},
-						{
-							"type": "section",
-							"name": "Sorting & Abbreviations",
-							"entries": [
-								"On all tables, items are sorted first by rarity, and second alphabetically. The reference column makes use of multiple abbreviations as shorthand for various D&D books. These are listed below",
+								},
 								{
-									"type": "table",
-									"colLabels": [
-										"Book",
-										"Abbreviation"
-									],
-									"colStyles": [
-										"col-4",
-										"col-4"
-									],
-									"rows": [
-										[
-											"Dungeon Master's Guide",
-											"DMG"
-										],
-										[
-											"Xanathar's Guide to Everything",
-											"XGE"
-										],
-										[
-											"Tasha's Cauldron of Everything",
-											"TCE"
-										],
-										[
-											"Lost Mine of Phandelver",
-											"LMP"
-										],
-										[
-											"Hoard of the Dragon Queen",
-											"HDQ"
-										],
-										[
-											"Out of the Abyss",
-											"OA"
-										],
-										[
-											"Princes of the Apocalypse",
-											"PA"
-										],
-										[
-											"The Rise of Tiamat",
-											"RT"
-										],
-										[
-											"Curst of Strahd",
-											"CS"
-										],
-										[
-											"Tales from the Yawning Portal",
-											"TYP"
-										],
-										[
-											"Storm King's Thunder",
-											"SKT"
-										],
-										[
-											"Tomb of Annihilation",
-											"TA"
-										],
-										[
-											"Waterdeep: Dragon Heist",
-											"WDH"
-										],
-										[
-											"Guildmaster's Guide to Ravnica",
-											"GGR"
-										],
-										[
-											"Ghosts of Saltmarsh",
-											"GS"
-										],
-										[
-											"Acquisitions Incorporated",
-											"AI"
-										],
-										[
-											"Baldur's Gate: Descent into Avernus",
-											"BGDA"
-										],
-										[
-											"Eberron: Rising From The Last War",
-											"ERLW"
-										],
-										[
-											"Explorer's Guide to Wildemount",
-											"EGW"
-										],
-										[
-											"Mythic Odysseys of Theros",
-											"MOT"
-										],
-										[
-											"Icewind Dale: Rime of the Frostmaiden",
-											"IDRF"
-										]
+									"type": "entries",
+									"name": "Quick Price Adjustments by Location",
+									"entries": [
+										"Magic items are naturally going to be easier to find in urban centers, but even when available in smaller settlements, residents might be reluctant to part with such treasures. While some DMs may not wish to bother with this degree of granularity, those who prefer a formulaic approach can consult the following table for a rough guide to modifying prices based on settlement size (or use it as inspiration for your own table). For even more detail, see the tables for rolling up a random discerning merchant (page 23).",
+										{
+											"type": "table",
+											"caption": "Quick Price Modifiers",
+											"colLabels": [
+												"Settlement Size",
+												"Modifier",
+												"Example"
+											],
+											"colStyles": [
+												"col-4",
+												"col-4",
+												"col-4"
+											],
+											"rows": [
+												[
+													"Hamlet",
+													"100% surcharge",
+													"A group of farms"
+												],
+												[
+													"Village",
+													"50% surcharge",
+													"Phandalin"
+												],
+												[
+													"Town",
+													"20% surcharge",
+													"Greenest"
+												],
+												[
+													"City",
+													"—",
+													"Berdusk"
+												],
+												[
+													"Metropolis",
+													"10% cheaper",
+													"Waterdeep"
+												],
+												[
+													"Megalopolis",
+													"20% cheaper",
+													"Ravnica, Sharn"
+												]
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Sorting & Abbreviations",
+									"entries": [
+										"On all tables, items are sorted first by rarity, and second alphabetically. The reference column makes use of abbreviations for various D&D source material. These are listed below.",
+										{
+											"type": "table",
+											"caption": "Reference Abbreviations",
+											"colLabels": [
+												"Book",
+												"Abbreviation"
+											],
+											"colStyles": [
+												"col-4",
+												"col-4"
+											],
+											"rows": [
+												[
+													"Acquisitions Incorporated",
+													"AI"
+												],
+												[
+													"Baldur's Gate: Descent into Avernus",
+													"BGDA"
+												],
+												[
+													"Candlekeep Mysteries",
+													"CM"
+												],
+												[
+													"Curse of Strahd",
+													"CS"
+												],
+												[
+													"Dungeon Master's Guide",
+													"DMG"
+												],
+												[
+													"Eberron: Rising From The Last War",
+													"ERLW"
+												],
+												[
+													"Explorer's Guide to Wildemount",
+													"EGW"
+												],
+												[
+													"Fizban's Treasury of Dragons",
+													"FTD"
+												],
+												[
+													"Ghosts of Saltmarsh",
+													"GS"
+												],
+												[
+													"Guildmaster's Guide to Ravnica",
+													"GGR"
+												],
+												[
+													"Hoard of the Dragon Queen",
+													"HDQ"
+												],
+												[
+													"Icewind Dale: Rime of the Frostmaiden",
+													"IDRF"
+												],
+												[
+													"Infernal Machine Rebuild",
+													"IMR"
+												],
+												[
+													"Lost Laboratory of Kwalish",
+													"LLK"
+												],
+												[
+													"Lost Mine of Phandelver",
+													"LMP"
+												],
+												[
+													"Mordenkainen's Tome of Foes",
+													"MTF"
+												],
+												[
+													"Mythic Odysseys of Theros",
+													"MOT"
+												],
+												[
+													"Out of the Abyss",
+													"OA"
+												],
+												[
+													"Princes of the Apocalypse",
+													"PotA"
+												],
+												[
+													"The Rise of Tiamat",
+													"RT"
+												],
+												[
+													"Storm King's Thunder",
+													"SKT"
+												],
+												[
+													"Strixhaven Curriculum of Chaos",
+													"SCC"
+												],
+												[
+													"Tales from the Yawning Portal",
+													"TftYP"
+												],
+												[
+													"Tasha's Cauldron of Everything",
+													"TCE"
+												],
+												[
+													"Tomb of Annihilation",
+													"TA"
+												],
+												[
+													"Waterdeep: Dragon Heist",
+													"WDH"
+												],
+												[
+													"Volo's Guide to Monsters",
+													"VGM"
+												],
+												[
+													"Waterdeep: Dragon Heist",
+													"WDH"
+												],
+												[
+													"Waterdeep: Dungeon of the Mad Mage",
+													"WDMM"
+												],
+												[
+													"The Wild Beyond the Witchlight",
+													"WBtW"
+												],
+												[
+													"Xanathar's Guide to Everything",
+													"XGE"
+												]
+											]
+										}
 									]
 								}
 							]
@@ -309,274 +374,80 @@
 							"name": "Potions & Oils",
 							"entries": [
 								{
+									"type": "inset",
+									"name": "Note from the converter",
+									"entries": [
+										"The {@item Potion of Maximum Power|EGW} and the {@item Potion of Possibility|EGW}, are removed from version 5.0 of this book, but i choose to add these anyway to the table below."
+									]
+								},
+								{
 									"type": "table",
 									"colLabels": [
+										"d100",
 										"POTION OR OIL",
 										"RARITY",
 										"SUGGESTED COST",
 										"REFERENCE"
 									],
 									"colStyles": [
+										"col-2 text-center",
 										"col-4",
-										"col-3",
-										"col-3",
+										"col-2",
+										"col-2",
 										"col-2"
 									],
 									"rows": [
-										[
-											"{@item Perfume of Bewitching|XGE}",
-											"Common",
-											"75 gp",
-											"XGE 138"
-										],
-										[
-											"{@item Potion of Climbing|DMG}",
-											"Common",
-											"30 gp",
-											"DMG 187"
-										],
-										[
-											"{@item Potion of Healing|DMG}",
-											"Common",
-											"50 gp",
-											"DMG 187-188"
-										],
-										[
-											"{@item Bottled Breath|POTATA}",
-											"Uncommon",
-											"350 gp",
-											"PA 222"
-										],
-										[
-											"{@item Oil of Slipperiness|DMG}",
-											"Uncommon",
-											"250 gp",
-											"DMG 184"
-										],
-										[
-											"{@item Philter of Love|DMG}",
-											"Uncommon",
-											"150 gp",
-											"DMG 184"
-										],
-										[
-											"{@item Potion of Animal Friendship|DMG}",
-											"Uncommon",
-											"200 gp",
-											"DMG 187"
-										],
-										[
-											"{@item Potion of Fire Breath|DMG}",
-											"Uncommon",
-											"350 gp",
-											"DMG 187"
-										],
-										[
-											"{@item Potion of Hill Giant Strength|DMG}",
-											"Uncommon",
-											"125 gp",
-											"DMG 187"
-										],
-										[
-											"{@item Potion of Growth|DMG}",
-											"Uncommon",
-											"300 gp",
-											"DMG 187"
-										],
-										[
-											"{@item Potion of Greater Healing|DMG}",
-											"Uncommon",
-											"300 gp",
-											"DMG 187-188"
-										],
-										[
-											"{@item Potion of Poison|DMG}",
-											"Uncommon",
-											"500 gp",
-											"DMG 188"
-										],
-										[
-											"{@item Potion of Resistance|DMG}",
-											"Uncommon",
-											"500 gp",
-											"DMG 188"
-										],
-										[
-											"{@item Potion of Waterbreathing|DMG}",
-											"Uncommon",
-											"400 gp",
-											"DMG 188"
-										],
-										[
-											"{@item Elixir of Health|DMG}",
-											"Rare",
-											"2,000 gp",
-											"DMG 168"
-										],
-										[
-											"{@item Oil of Etherealness|DMG}",
-											"Rare",
-											"2,000 gp",
-											"DMG 183"
-										],
-										[
-											"{@item Potion of Aqueous Form|MOT}",
-											"Rare",
-											"1,000 gp",
-											"MOT 197"
-										],
-										[
-											"{@item Potion of Clairvoyance|DMG}",
-											"Rare",
-											"900 gp",
-											"DMG 187"
-										],
-										[
-											"{@item Potion of Diminution|DMG}",
-											"Rare",
-											"500 gp",
-											"DMG 187"
-										],
-										[
-											"{@item Potion of Gaseous Form|DMG}",
-											"Rare",
-											"1,500 gp",
-											"DMG 187"
-										],
-										[
-											"{@item Potion of Frost Giant Strength|DMG}",
-											"Rare",
-											"650 gp",
-											"DMG 187"
-										],
-										[
-											"{@item Potion of Stone Giant Strength|DMG}",
-											"Rare",
-											"650 gp",
-											"DMG 187"
-										],
-										[
-											"{@item Potion of Fire Giant Strength|DMG}",
-											"Rare",
-											"1,200 gp",
-											"DMG 187"
-										],
-										[
-											"{@item Potion of Superior Healing|DMG}",
-											"Rare",
-											"750 gp",
-											"DMG 187-188"
-										],
-										[
-											"{@item Potion of Heroism|DMG}",
-											"Rare",
-											"800 gp",
-											"DMG 188"
-										],
-										[
-											"{@item Potion of Invulnerability|DMG}",
-											"Rare",
-											"1,500 gp",
-											"DMG 188"
-										],
-										[
-											"{@item Potion of Maximum Power|EGW}",
-											"Rare",
-											"2,000 gp",
-											"EGW 268"
-										],
-										[
-											"{@item Potion of Mind Control|TFTYP|Potion of Mind Control (beast)}",
-											"Rare",
-											"1,600 gp",
-											"TYP 229"
-										],
-										[
-											"{@item Potion of Mind Control|TFTYP|Potion of Mind Control (humanoid)}",
-											"Rare",
-											"2,500 gp",
-											"TYP 229"
-										],
-										[
-											"{@item Potion of Mind Reading|DMG}",
-											"Rare",
-											"1,100 gp",
-											"DMG 188"
-										],
-										[
-											"{@item Oil of Sharpness|DMG}",
-											"Very Rare",
-											"2,200 gp*",
-											"DMG 184"
-										],
-										[
-											"{@item Potion of Flying|DMG}",
-											"Very Rare",
-											"2,500 gp",
-											"DMG 187"
-										],
-										[
-											"{@item Potion of Cloud Giant Strength|DMG}",
-											"Very Rare",
-											"1,800 gp*",
-											"DMG 187"
-										],
-										[
-											"{@item Potion of Surpreme Healing|DMG}",
-											"Very Rare",
-											"1,500 gp*",
-											"DMG 187-188"
-										],
-										[
-											"{@item Potion of Invisibility|DMG}",
-											"Very Rare",
-											"2,000 gp*",
-											"DMG 188"
-										],
-										[
-											"{@item Potion of Longevity|DMG}",
-											"Very Rare",
-											"3,000 gp",
-											"DMG 188"
-										],
-										[
-											"{@item Potion of Mind Control|TFTYP|Potion of Mind Control (monster)}",
-											"Very Rare",
-											"6,000 gp",
-											"TYP 229"
-										],
-										[
-											"{@item Potion of Possibility|EGW}",
-											"Very Rare",
-											"1,900 gp*",
-											"EGW 268"
-										],
-										[
-											"{@item Potion of Speed|DMG}",
-											"Very Rare",
-											"2,000 gp*",
-											"DMG 188"
-										],
-										[
-											"{@item Potion of Vitality|DMG}",
-											"Very Rare",
-											"1,800 gp*",
-											"DMG 188"
-										],
-										[
-											"{@item Potion of Giant Size|SKT}",
-											"Legendary",
-											"11,000 gp*",
-											"SKT 236"
-										],
-										[
-											"{@item Potion of Storm Giant Strength|DMG}",
-											"Legendary",
-											"8,000 gp*",
-											"DMG 187"
-										]
+										[ "1-3","{@item Perfume of Bewitching|XGE}","Common","75 gp","XGE 138" ],
+										[ "4-6","{@item Potion of Climbing|DMG}","Common","30 gp","DMG 187" ],
+										[ "7-9","{@item Potion of Comprehension|WDMM}","Common","25 gp","WDMM 62" ],
+										[ "10-13","{@item Potion of Healing|DMG|Potion of Healing (Common) or Potion of Healing}","Common","50 gp","DMG 187-188" ],
+										[ "14-16","{@item Potion of Watchful Rest|WDMM}","Common","35 gp","WDMM 62" ], 
+										[ "17-19","{@item Blood of the Lycanthrope Antidote|IMR}","Uncommon","500 gp","IMR 94" ], 
+										[ "20-22","{@item Bottled Breath|PotA}","Uncommon","350 gp","PotA 222" ], 
+										[ "23-25","{@item Mummy Rot Antidote|IMR}","Uncommon","150 gp","IMR 94" ], 
+										[ "26-28","{@item Oil of Slipperiness|DMG}","Uncommon","250 gp","DMG 184" ], 
+										[ "29-31","{@item Philter of Love|DMG}","Uncommon","150 gp","DMG 184" ], 
+										[ "32-34","{@item Potion of Advantage|WBtW}","Uncommon","125 gp","WBtW 212" ], 
+										[ "35-37","{@item Potion of Animal Friendship|DMG}","Uncommon","200 gp","DMG 187" ], 
+										[ "38-40","{@item Potion of Fire Breath|DMG}", "Uncommon","350 gp","DMG 187" ], 
+										[ "41-43","{@item Potion of Hill Giant Strength|DMG|Potion of Giant Strength (Hill)}","Uncommon","125 gp","DMG 187" ], 
+										[ "44-46","{@item Potion of Growth|DMG}","Uncommon","300 gp","DMG 187" ], 
+										[ "47-49","{@item Potion of Greater Healing|DMG|Potion of Healing (Uncommon) or Potion of Greater Healing}","Uncommon","300 gp","DMG 187-188" ], 
+										[ "50-52","{@item Potion of Poison|DMG}","Uncommon","500 gp","DMG 188" ], 
+										[ "53-55","{@item Potion of Resistance|DMG}","Uncommon","500 gp", "DMG 188" ], 
+										[ "56-58","{@item Potion of Water Breathing|DMG}","Uncommon","400 gp","DMG 188" ], 
+										[ "59-60","{@item Thessaltoxin Antidote|IMR}","Uncommon","100 gp","IMR 95" ], 
+										[ "61-62","{@item Elixir of Health|DMG}","Rare","2,000 gp","DMG 168" ], 
+										[ "63-64","{@item Oil of Etherealness|DMG}","Rare","2,000 gp","DMG 183" ], 
+										[ "65-66","{@item Potion of Aqueous Form|MOT}","Rare","1,000 gp","MOT 197" ], 
+										[ "67-68","{@item Potion of Clairvoyance|DMG}","Rare","900 gp","DMG 187" ], 
+										[ "69-70","{@item Potion of Diminution|DMG}","Rare","500 gp", "DMG 187" ], 
+										[ "71-72","{@item Potion of Gaseous Form|DMG}","Rare","1,500 gp","DMG 187" ], 
+										[ "73","{@item Potion of Frost Giant Strength|DMG|Potion of Giant Strength (Frost)}","Rare","650 gp","DMG 187" ],
+										[ "74","{@item Potion of Stone Giant Strength|DMG|Potion of Giant Strength (Stone)}","Rare","650 gp","DMG 187" ],  
+										[ "75-76","{@item Potion of Fire Giant Strength|DMG|Potion of Giant Strength (Fire)}","Rare","1,200 gp", "DMG 187" ], 
+										[ "77-78","{@item Potion of Superior Healing|DMG|Potion of Healing (Rare) or Potion of Superior Healing}","Rare","750 gp","DMG 187-188" ], 
+										[ "79-80","{@item Potion of Heroism|DMG}","Rare","800 gp","DMG 188" ], 
+										[ "81-82","{@item Potion of Invulnerability|DMG}","Rare","1,500 gp","DMG 188" ], 
+										[ "83","{@item Potion of Maximum Power|EGW}", "Rare", "2,000 gp", "EGW 268"],
+										[ "84","{@item Potion of Mind Control (beast)|TftYP}","Rare","1,600 gp","TftYP 229" ], 
+										[ "85-86","{@item Potion of Mind Control (humanoid)|TftYP}","Rare","2,500 gp","TftYP 229" ], 
+										[ "87", "{@item Potion of Mind Reading|DMG}","Rare","1,100 gp","DMG 188" ], 
+										[ "88", "{@item Potion of Possibility|EGW}", "Very Rare", "1,900 gp*", "EGW 268"],
+										[ "89","{@item Oil of Sharpness|DMG}","Very Rare","2,200 gp*","DMG 184" ], 
+										[ "90","{@item Potion of Flying|DMG}","Very Rare","2,500 gp","DMG 187" ], 
+										[ "91","{@item Potion of Cloud Giant Strength|DMG|Potion of Giant Strength (Cloud)}","Very Rare ","1,800 gp*","DMG 187" ], 
+										[ "92","{@item Potion of Supreme Healing|DMG|Potion of Healing (Very Rare) or Potion of Supreme Healing}","Very Rare","1,500 gp*","DMG 187-188" ], 
+										[ "93","{@item Potion of Invisibility|DMG}","Very Rare","2,000 gp*","DMG 188" ], 
+										[ "94","{@item Potion of Longevity|DMG}","Very Rare","3,000 gp","DMG 188" ], 
+										[ "95","{@item Potion of Mind Control (monster)|TftYP}","Very Rare","6,000 gp","TftYP 229" ], 
+										[ "96","{@item Potion of Speed|DMG}","Very Rare","2,000 gp*","DMG 188" ], 
+										[ "97","{@item Potion of Vitality|DMG}","Very Rare","1,800 gp*","DMG 188" ], 
+										[ "98","{@item Potion of Dragon's Majesty|FTD}","Legendary","15,000 gp*","FTD 24" ], 
+										[ "99","{@item Potion of Giant Size|SKT}","Legendary","11,000 gp*","SKT 236" ], 
+										[ "100","{@item Potion of Storm Giant Strength|DMG|Potion of Giant Strength (Storm)}","Legendary","8,000 gp*","DMG 187" ]
 									]
-								}
+								}								
 							]
 						},
 						{
@@ -661,8 +532,8 @@
 										[
 											"{@item Scroll of Protection|DMG}",
 											"No",
-											"\u2014",
-											"\u2014",
+											"—",
+											"—",
 											"Rare",
 											"3,500 gp",
 											"DMG 199"
@@ -706,8 +577,8 @@
 										[
 											"{@item Scroll of Tarrasque Summoning|idrotf}",
 											"No",
-											"\u2014",
-											"\u2014",
+											"—",
+											"—",
 											"Legendary",
 											"150,000 gp",
 											"IDRF 315"
@@ -716,7 +587,7 @@
 											"{@item Scroll of the Comet|idrotf}",
 											"No",
 											"20",
-											"\u2014",
+											"—",
 											"Legendary",
 											"250,000 gp",
 											"IDRF 315-316"
@@ -933,14 +804,14 @@
 											"No",
 											"Uncommon",
 											"100 gp",
-											"PA 223"
+											"PotA 223"
 										],
 										[
 											"{@item Shatterspike |TFTYP}",
 											"Yes",
 											"Uncommon",
 											"550 gp",
-											"TYP 229"
+											"TftYP 229"
 										],
 										[
 											"{@item Skold Rune Weapon |SKT}",
@@ -954,7 +825,7 @@
 											"No",
 											"Uncommon",
 											"150 gp",
-											"PA 223"
+											"PotA 223"
 										],
 										[
 											"{@item Sword of Vengeance |DMG}",
@@ -1213,7 +1084,7 @@
 											"Yes",
 											"Very Rare",
 											"6,500 gp",
-											"TYP 229"
+											"TftYP 229"
 										],
 										[
 											"{@item Sword of the Paruns |GGR}",
@@ -1262,7 +1133,7 @@
 											"Yes",
 											"Legendary",
 											"66,000 gp",
-											"PA 224"
+											"PotA 224"
 										],
 										[
 											"{@item Fane-Eater|BGDIA}",
@@ -1304,7 +1175,7 @@
 											"Yes",
 											"Legendary",
 											"76,000 gp",
-											"PA 224-225"
+											"PotA 224-225"
 										],
 										[
 											"{@item Korolnor Scepter|SKT}",
@@ -1332,7 +1203,7 @@
 											"Yes (good dwarf/fighter/paladin)",
 											"Legendary",
 											"60,000 gp",
-											"PA 224"
+											"PotA 224"
 										],
 										[
 											"{@item Rakdos Riteknife |GGR}",
@@ -1360,7 +1231,7 @@
 											"Yes",
 											"Legendary",
 											"71,000 gp",
-											"PA 225"
+											"PotA 225"
 										],
 										[
 											"{@item Vorpal Sword |DMG}",
@@ -1374,14 +1245,14 @@
 											"Yes",
 											"Legendary",
 											"62,000 gp",
-											"TYP 229"
+											"TftYP 229"
 										],
 										[
 											"{@item Windvane |POTATA}",
 											"Yes",
 											"Legendary",
 											"68,000 gp",
-											"PA 225"
+											"PotA 225"
 										]
 									]
 								}
@@ -1980,7 +1851,7 @@
 											"Yes (spellcaster)",
 											"Uncommon",
 											"300 gp",
-											"TYP 229"
+											"TftYP 229"
 										],
 										[
 											"{@item Wand of Magic Detection|DMG}",
@@ -2766,7 +2637,7 @@
 													"Yes",
 													"Legendary",
 													"23,000 gp",
-													"PA 223-224"
+													"PotA 223-224"
 												]
 											]
 										}
@@ -2963,7 +2834,7 @@
 													"Yes",
 													"Rare",
 													"3,600 gp",
-													"TYP 228"
+													"TftYP 228"
 												],
 												[
 													"{@item +2 Amulet of the Devout|TCE}",
@@ -3135,7 +3006,7 @@
 													"Yes",
 													"Rare",
 													"1,700 gp",
-													"TYP 228"
+													"TftYP 228"
 												],
 												[
 													"{@item Ise Rune Cloak|SKT}",
@@ -3258,7 +3129,7 @@
 													"Yes",
 													"Very Rare",
 													"9,000 gp",
-													"TYP 228"
+													"TftYP 228"
 												],
 												[
 													"{@item Illusionist's Bracers|GGR}",
@@ -3339,7 +3210,7 @@
 													"Yes",
 													"Rare",
 													"4,300 gp",
-													"PA 222"
+													"PotA 222"
 												],
 												[
 													"{@item Gauntlets of Flaming Fury|BGDIA}",
@@ -3508,7 +3379,7 @@
 													"Yes",
 													"Uncommon",
 													"300 gp",
-													"PA 223"
+													"PotA 223"
 												],
 												[
 													"{@item Butcher's Bib|EGW}",
@@ -3536,7 +3407,7 @@
 													"Yes",
 													"Rare",
 													"2,900 gp",
-													"TYP 229"
+													"TftYP 229"
 												],
 												[
 													"{@item Robe of Scintillating Colors|DMG}",
@@ -3992,14 +3863,14 @@
 													"No",
 													"Uncommon",
 													"200 gp",
-													"TYP 228"
+													"TftYP 228"
 												],
 												[
 													"{@item Balloon Pack|POTA}",
 													"No",
 													"Uncommon",
 													"275 gp",
-													"PA 222"
+													"PotA 222"
 												],
 												[
 													"{@item +1 Bloodwell Vial|TCE}",
@@ -4188,7 +4059,7 @@
 													"No",
 													"Uncommon",
 													"350 gp",
-													"TYP 228"
+													"TftYP 228"
 												],
 												[
 													"{@item Paper Bird|WDH}",
@@ -4307,7 +4178,7 @@
 													"Yes",
 													"Uncommon",
 													"400 gp",
-													"TYP 229"
+													"TftYP 229"
 												],
 												[
 													"{@item Wheel of Wind and Water|ERLW}",
@@ -4510,7 +4381,7 @@
 													"No",
 													"Rare",
 													"600 gp",
-													"TYP 228"
+													"TftYP 228"
 												],
 												[
 													"{@item Elemental Essence Shard|TCE}",
@@ -4720,7 +4591,7 @@
 													"No",
 													"Rare",
 													"150 gp",
-													"TYP 228"
+													"TftYP 228"
 												],
 												[
 													"{@item Lyre of Building|TCE}",
@@ -4734,7 +4605,7 @@
 													"No",
 													"Rare",
 													"3,800 gp",
-													"TYP 228"
+													"TftYP 228"
 												],
 												[
 													"{@item Mizzium Mortar|GGR}",
@@ -4874,7 +4745,7 @@
 													"Yes",
 													"Rare",
 													"2,200 gp",
-													"PA 223"
+													"PotA 223"
 												],
 												[
 													"{@item Abracadadabrus|idrotf}",
@@ -4979,28 +4850,28 @@
 													"No",
 													"Very Rare",
 													"8,000 gp",
-													"PA 222"
+													"PotA 222"
 												],
 												[
 													"{@item Devastation Orb of Earth|POTA}",
 													"No",
 													"Very Rare",
 													"11,000 gp",
-													"PA 222"
+													"PotA 222"
 												],
 												[
 													"{@item Devastation Orb of Fire|POTA}",
 													"No",
 													"Very Rare",
 													"9,500 gp",
-													"PA 222"
+													"PotA 222"
 												],
 												[
 													"{@item Devastation Orb of Water|POTA}",
 													"No",
 													"Very Rare",
 													"9,500 gp",
-													"PA 223"
+													"PotA 223"
 												],
 												[
 													"{@item Dimensional Loop|AI}",
