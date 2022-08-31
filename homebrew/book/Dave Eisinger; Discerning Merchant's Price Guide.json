@@ -869,7 +869,7 @@
 										[ "15-21", "{@item Smoldering Armor|XGE|Smoldering Armor (light, medium, or heavy)}", "No", "Common", "+75 gp", "XGE 139"],
 										[ "22-26", "{@item Adamantine Armor|DMG|Adamantine Armor (medium or heavy, but not hide)}", "No", "Uncommon", "+500 gp", "DMG 150"],
 										[ "27-31", "{@item Mariner's Armor|DMG|Mariner's Armor (light, medium, or heavy)}", "No", "Uncommon", "+400 gp", "DMG 181"],
-										[ "32-36", "{@item Mind Carapace Armor|VGM|Mind Carapace Armor (any heavy armor)}", "Yes", "(special) Uncommon", "+500 gp", "VGM 81"],
+										[ "32-36", "{@item Mind Carapace Armor|VGM|Mind Carapace Armor (any heavy armor)}", "Yes (special)", "Uncommon", "+500 gp", "VGM 81"],
 										[ "37-41", "{@item Mithral Armor|DMG|Mithral Armor (medium or heavy, but not hide)}", "No", "Uncommon","+450 gp", "DMG 182"],
 										[ "42-46", "{@item Pennant of the Vind Rune|SKT|Vind Rune Armor (light, medium, or heavy)}", "Yes", "Uncommon", "+300 gp", "SKT 236"],
 										[ "47-51", "{@item +1 Armor|DMG|+1 Armor (light, medium, or heavy)}", "No", "Rare", "3,500 gp", "DMG 152"],
@@ -1010,7 +1010,7 @@
 										[ "19-24", "{@item Wand of Scowls|XGE}", "No", "Common", "60 gp", "XGE 140; WBW 214"],
 										[ "25-30", "{@item Wand of Smiles|XGE}", "No", "Common", "60 gp", "XGE 140; WBtW 214"],
 										[ "31-35", "{@item +1 Wand of the War Mage|DMG}", "Yes", "Uncommon", "400 gp", "DMG 212"],
-										[ "36-40", "{@item Wand of Entangle|TftYP}", "Yes", "(spellcaster) Uncommon", "300 gp", "TftYP 229"],
+										[ "36-40", "{@item Wand of Entangle|TftYP}", "Yes (spellcaster)", "Uncommon", "300 gp", "TftYP 229"],
 										[ "41-49", "{@item Wand of Magic Detection|DMG}", "No", "Uncommon", "150 gp", "DMG 211"],
 										[ "50-54", "{@item Wand of Magic Missiles|DMG}", "No", "Uncommon", "300 gp", "DMG 211"],
 										[ "55-59", "{@item Wand of Secrets|DMG}", "No", "Uncommon", "125 gp", "DMG 211"],
@@ -1215,6 +1215,7 @@
 										{
 											"type": "table",
 											"colLabels": [
+												"d100",
 												"ITEM",
 												"ATTUNE?",
 												"RARITY",
@@ -1222,14 +1223,22 @@
 												"REFERENCE"
 											],
 											"colStyles": [
-												"col-5",
+												"col-2 text-center",
+												"col-3",
 												"col-2",
 												"col-2",
 												"col-2",
 												"col-1"
 											],
 											"rows": [
-												
+												[ "1-19", "{@item Ersatz Eye|XGE}", "Yes", "Common", "75 gp", "XGE 137"],
+												[ "20-32", "{@item Eyes of Charming|DMG}", "Yes", "Uncommon", "300 gp", "DMG 168"],
+												[ "33-45", "{@item Eyes of Minute Seeing|DMG}", "No", "Uncommon", "150 gp", "DMG 168"],
+												[ "46-58", "{@item Eyes of the Eagle|DMG}", "Yes", "Uncommon", "400 gp", "DMG 168"],
+												[ "59-71", "{@item Finder's Goggles|ERLW}", "Yes (Mark of Finding)", "Uncommon", "500 gp", "ERLW 277"],
+												[ "72-84", "{@item Goggles of Night|DMG}", "No", "Uncommon", "300 gp", "DMG 172"],
+												[ "85-97", "{@item Mask of the Beast|ToA}", "No", "Uncommon", "200 gp", "ToA 207"],
+												[ "98-100", "{@item Black Dragon Mask|HotDQ}", "Yes", "Legendary", "95,000 gp", "HotDQ 94"]
 											]
 										}
 									]
@@ -1241,6 +1250,7 @@
 										{
 											"type": "table",
 											"colLabels": [
+												"d100",
 												"ITEM",
 												"ATTUNE?",
 												"RARITY",
@@ -1248,14 +1258,36 @@
 												"REFERENCE"
 											],
 											"colStyles": [
-												"col-5",
+												"col-2 text-center",
+												"col-3",
 												"col-2",
 												"col-2",
 												"col-2",
 												"col-1"
 											],
 											"rows": [
-												
+												[ "1-9", "{@item Clockwork Amulet|XGE}", "No", "Common", "100 gp", "XGE 137"],
+												[ "10-18", "{@item Dark Shard Amulet|XGE}", "Yes (warlock)", "Common", "75 gp", "XGE 137"],
+												[ "19-25", "{@item Amulet of Proof Against Detection and Location|DMG}", "Yes", "Uncommon", "400 gp", "DMG 150"],
+												[ "26-31", "{@item +1 Amulet of the Devout|TCE}", "Yes (cleric/paladin)", "Uncommon", "425 gp", "TCE 119"],
+												[ "32-37", "{@item Brooch of Shielding|DMG}", "Yes", "Uncommon", "375 gp", "DMG 156"],
+												[ "38-43", "{@item Medallion of Thoughts|DMG}", "Yes", "Uncommon", "300 gp", "DMG 181"],
+												[ "44-49", "{@item Necklace of Adaptation|DMG}", "Yes", "Uncommon", "450 gp", "DMG 182"],
+												[ "50-56", "{@item Periapt of Health|DMG}", "No", "Uncommon", "250 gp", "DMG 184"],
+												[ "57-63", "{@item Periapt of Wound Closure|DMG}", "Yes", "Uncommon", "375 gp", "DMG 184"],
+												[ "64-67", "{@item Amulet of Health|DMG}", "Yes", "Rare",  "4,000 gp", "DMG 150"],
+												[ "68-71", "{@item Amulet of Protection from Turning|TftYP}", "Yes", "Rare", "3,600 gp", "TftYP 228"],
+												[ "72-75", "{@item +2 Amulet of the Devout|TCE}", "Yes (cleric/paladin)", "Rare", "4,250 gp", "TCE 119"],
+												[ "76-79", "{@item Charm of Plant Command|GoS}", "Yes", "Rare", "1,500 gp", "GoS 229"],
+												[ "80-83", "{@item Necklace of Fireballs|DMG}", "No", "Rare", "4,350 gp", "DMG 182"],
+												[ "84-87", "{@item Necklace of Prayer Beads|DMG}", "Yes (cleric/druid/paladin)", "Rare", "5,000 gp", "DMG 182"],
+												[ "88-91", "{@item  Periapt of Proof Against Poison|DMG}", "No", "Rare", "4,700 gp", "DMG 184"],
+												[ "92-93", "{@item Amulet of the Black Skull|ToA}", "Yes", "Very Rare", "6,400 gp", "ToA 206"],
+												[ "94-95", "{@item +3 Amulet of the Devout|TCE}", "Yes (cleric/paladin)", "Very Rare", "14,500 gp", "TCE 119"],
+												[ "96-97", "{@item Amulet of the Planes|DMG}", "Yes", "Very Rare", "43,000 gp", "DMG 150"],
+												[ "98", "{@item Holy Symbol of Ravenkind|CoS}", "Yes (good cleric/paladin)", "Legendary", "51,000 gp", "CoS 222"],
+												[ "99", "{@item Platinum Scarf|FTD}", "Yes", "Legendary", "20,000 gp*", "FTD 24"],
+												[ "100", "{@item Scarab of Protection|DMG}", "Yes", "Legendary", "58,000 gp", "DMG 199"]
 											]
 										}
 									]
@@ -1267,6 +1299,7 @@
 										{
 											"type": "table",
 											"colLabels": [
+												"d100",
 												"ITEM",
 												"ATTUNE?",
 												"RARITY",
@@ -1274,14 +1307,32 @@
 												"REFERENCE"
 											],
 											"colStyles": [
-												"col-5",
+												"col-2 text-center",
+												"col-3",
 												"col-2",
 												"col-2",
 												"col-2",
 												"col-1"
 											],
 											"rows": [
-												
+												[ "1-10", "{@item Cloak of Billowing|XGE}", "No", "Common", "100 gp", "XGE 136"],
+												[ "11-20", "{@item Cloak of Many Fashions|XGE}", "No", "Common", "90 gp", "XGE 136; WBW 208"],
+												[ "21-28", "{@item Cloak of Elvenkind|DMG}", "Yes", "Uncommon", "250 gp", "DMG 158"],
+												[ "29-36", "{@item Cloak of Protection|DMG}", "Yes", "Uncommon", "400 gp", "DMG 159"],
+												[ "37-44", "{@item Cloak of the Manta Ray|DMG}", "No", "Uncommon", "350 gp", "DMG 159"],
+												[ "45-52", "{@item Nature's Mantle|TCE}", "Yes (druid/ranger)", "Uncommon", "325 gp", "TCE 133"],
+												[ "53-60", "{@item Piwafwi (Cloak of Elvenkind)|OotA}", "Yes", "Uncommon", "200 gp", "OotA 222"],
+												[ "61-64", "{@item Cape of the Mountebank|DMG}", "No", "Rare", "3,900 gp", "DMG 157"],
+												[ "65-68", "{@item Cloak of Displacement|DMG}", "Yes", "Rare", "3,600 gp", "DMG 158"],
+												[ "69-72", "{@item Cloak of the Bat|DMG}", "Yes", "Rare", "4,600 gp", "DMG 159"],
+												[ "73-76", "{@item Hell Hound Cloak|TftYP}", "Yes", "Rare", "1,700 gp", "TftYP 228"],
+												[ "77-80", "{@item Shard of the Ise Rune|SKT|Ise Rune Cloak}", "Yes", "Rare", "1,200 gp", "SKT 237"],
+												[ "81-84", "{@item Mantle of Spell Resistance|DMG}", "Yes", "Rare", "4,200 gp", "DMG 180"],
+												[ "85-88", "{@item Piwafwi of Fire Resistance|OotA}", "Yes", "Rare", "1,400 gp", "OotA 222"],
+												[ "89-92", "{@item Pennant of the Vind Rune|SKT|Vind Rune Cloak}", "Yes", "Rare", "650 gp", "SKT 236"],
+												[ "93-96", "{@item Wings of Flying|DMG}", "Yes", "Rare", "3,600 gp", "DMG 214"],
+												[ "97-99", "{@item Cloak of Arachnida|DMG}", "Yes", "Very Rare", "14,000 gp", "DMG 158"],
+												[ "100", "{@item Cloak of Invisibility|DMG}", "Yes", "Legendary", "54,000 gp", "DMG 158-159"]
 											]
 										}
 									]
@@ -1293,6 +1344,7 @@
 										{
 											"type": "table",
 											"colLabels": [
+												"d100",
 												"ITEM",
 												"ATTUNE?",
 												"RARITY",
@@ -1300,14 +1352,22 @@
 												"REFERENCE"
 											],
 											"colStyles": [
-												"col-5",
+												"col-2 text-center",
+												"col-3",
 												"col-2",
 												"col-2",
 												"col-2",
 												"col-1"
 											],
 											"rows": [
-												
+												[ "1-20", "{@item Prosthetic Limb|TCE}", "Yes", "Common", "100 gp", "ERLW 278; TCE 134"],
+												[ "21-40", "{@item Wand Sheath|ERLW}", "Yes (warforged)", "Common", "75 gp", "ERLW 279"],
+												[ "41-55", "{@item Bracers of Archery|DMG}", "Yes", "Uncommon", "350 gp", "DMG 156"],
+												[ "56-67", "{@item Bracer of Flying Daggers|WDH}", "Yes", "Rare", "1,000 gp", "WDH 190"],
+												[ "68-79", "{@item Bracers of Defense|DMG}", "Yes", "Rare", "4,000 gp", "DMG 156"],
+												[ "80-86", "{@item Arcane Propulsion Arm|ERLW}", "Yes", "Very Rare", "5,100 gp", "ERLW 276"],
+												[ "87-93", "{@item Bracelet of Rock Magic|TftYP}", "Yes", "Very Rare", "9,000 gp", "TftYP 228"],
+												[ "94-100", "{@item Illusionist's Bracers|GGR}", "Yes (spellcaster)", "Very Rare", "13,500 gp", "GGR 178"]
 											]
 										}
 									]
@@ -1319,6 +1379,7 @@
 										{
 											"type": "table",
 											"colLabels": [
+												"d100",
 												"ITEM",
 												"ATTUNE?",
 												"RARITY",
@@ -1326,14 +1387,23 @@
 												"REFERENCE"
 											],
 											"colStyles": [
-												"col-5",
+												"col-2 text-center",
+												"col-3",
 												"col-2",
 												"col-2",
 												"col-2",
 												"col-1"
 											],
 											"rows": [
-												
+												[ "1-16", "{@item Prosthetic Limb|TCE}", "Yes", "Common", "100 gp", "ERLW 278; TCE 134"],
+												[ "17-28", "{@item Gauntlets of Ogre Power|DMG}", "Yes", "Uncommon", "450 gp", "DMG 171"],
+												[ "29-40", "{@item Gloves of Missile Snaring|DMG}", "Yes", "Uncommon", "325 gp", "DMG 172"],
+												[ "41-52", "{@item Gloves of Swimming and Climbing|DMG}", "Yes", "Uncommon", "250 gp", "DMG 172"],
+												[ "53-64", "{@item Gloves of Thievery|DMG}", "No", "Uncommon", "300 gp", "DMG 172"],
+												[ "65-76", "{@item Living Gloves|ERLW}", "Yes", "Uncommon", "500 gp", "ERLW 278"],
+												[ "77-85", "{@item Claws of the Umber Hulk|PotA}", "Yes", "Rare", "4,300 gp", "PotA 222; IMR 94"],
+												[ "86-94", "{@item Gauntlets of Flaming Fury|BGDIA}", "Yes", "Rare", "2,000 gp", "BGDIA 223"],
+												[ "95-100", "{@item Arcane Propulsion Arm|ERLW}", "Yes", "Very Rare", "5,100 gp", "ERLW 276"]
 											]
 										}
 									]
@@ -1345,6 +1415,7 @@
 										{
 											"type": "table",
 											"colLabels": [
+												"d100",
 												"ITEM",
 												"ATTUNE?",
 												"RARITY",
@@ -1352,14 +1423,24 @@
 												"REFERENCE"
 											],
 											"colStyles": [
-												"col-5",
+												"col-2 text-center",
+												"col-3",
 												"col-2",
 												"col-2",
 												"col-2",
 												"col-1"
 											],
 											"rows": [
-												
+												[ "1-19", "{@item +1 Dragonhide Belt|FTD|Dragonhide Belt (Uncommon) or +1 Dragonhide Belt}", "Yes (monk)", "Uncommon", "400 gp", "FTD 23"],
+												[ "20-34", "{@item Belt of Dwarvenkind|DMG}", "Yes", "Rare", "5,000 gp", "DMG 155"],
+												[ "35-49", "{@item Belt of Hill Giant Strength|DMG|Belt of Giant Strength (Hill)}", "Yes", "Rare", "4,000 gp", "DMG 155"],
+												[ "50-64", "{@item +2 Dragonhide Belt|FTD|Dragonhide Belt (Rare) or +2 Dragonhide Belt}", "Yes (monk)", "Rare", "4,000 gp", "FTD 23"],
+												[ "65-69", "{@item Belt of Frost Giant Strength|DMG|Belt of Giant Strength (Frost)}", "Yes", "Very Rare", "12,000 gp", "DMG 155"],
+												[ "70-74", "{@item Belt of Stone Giant Strength|DMG|Belt of Giant Strength (Stone)}", "Yes", "Very Rare", "12,000 gp", "DMG 155"],
+												[ "75-84", "{@item Belt of Fire Giant Strength|DMG|Belt of Giant Strength (Fire)}", "Yes", "Very Rare", "36,000 gp", "DMG 155"],
+												[ "85-94", "{@item +3 Dragonhide Belt|FTD|Dragonhide Belt (Very Rare) or +3 Dragonhide Belt}", "Yes (monk)", "Very Rare", "14,000 gp", "FTD 23"],
+												[ "95-97", "{@item Belt of Cloud Giant Strength|DMG|Belt of Giant Strength (Cloud)}", "Yes", "Legendary", "66,000 gp", "DMG 155"],
+												[ "98-100", "{@item Belt of Storm Giant Strength|DMG|Belt of Giant Strength (Storm)}", "Yes", "Legendary", "100,000 gp", "DMG 155"]
 											]
 										}
 									]
@@ -1371,6 +1452,7 @@
 										{
 											"type": "table",
 											"colLabels": [
+												"d100",
 												"ITEM",
 												"ATTUNE?",
 												"RARITY",
@@ -1378,14 +1460,28 @@
 												"REFERENCE"
 											],
 											"colStyles": [
-												"col-5",
+												"col-2 text-center",
+												"col-3",
 												"col-2",
 												"col-2",
 												"col-2",
 												"col-1"
 											],
 											"rows": [
-												
+												[ "1-11", "{@item Clothes of Mending|XGE}", "No", "Common", "50 gp", "XGE 137"],
+												[ "12-22", "{@item Glamerweave|ERLW|Glamerweave (common)}", "No", "Common", "50 gp", "ERLW 277"],
+												[ "23-33", "{@item Shiftweave|ERLW}", "No", "Common", "100 gp", "ERLW 279"],
+												[ "34-41", "{@item Glamerweave|ERLW|Glamerweave (uncommon)}", "No", "Uncommon", "150 gp", "ERLW 277"],
+												[ "42-49", "{@item Mizzium Apparatus|GGR}", "Yes (special)", "Uncommon", "500 gp", "GGR 179"],
+												[ "50-57", "{@item Robe of Serpents|SKT}", "Yes", "Uncommon", "375 gp", "SKT 236"],
+												[ "58-65", "{@item Robe of Useful Items|DMG}", "No", "Uncommon", "400 gp", "DMG 195"],
+												[ "66-73", "{@item Wingwear|PotA}", "Yes", "Uncommon", "300 gp", "PotA 223"],
+												[ "74-79", "{@item Lord's Ensemble|WDH}", "Yes", "Rare", "5,000 gp", "WDH 191"],
+												[ "80-85", "{@item Robe of Eyes|DMG}", "Yes", "Rare", "5,000 gp", "DMG 193-194"],
+												[ "86-91", "{@item Robe of Summer|TftYP}", "Yes", "Rare", "2,900 gp", "TftYP 229"],
+												[ "92-95", "{@item Robe of Scintillating Colors|DMG}", "Yes", "Very Rare", "27,000 gp", "DMG 194"],
+												[ "96-99", "{@item Robe of Stars|DMG}", "Yes", "Very Rare", "45,000 gp", "DMG 194"],
+												[ "100", "{@item Robe of the Archmagi|DMG}", "Yes", "Legendary", "75,000 gp", "DMG 194"]
 											]
 										}
 									]
@@ -1397,6 +1493,7 @@
 										{
 											"type": "table",
 											"colLabels": [
+												"d100",
 												"ITEM",
 												"ATTUNE?",
 												"RARITY",
@@ -1404,14 +1501,66 @@
 												"REFERENCE"
 											],
 											"colStyles": [
-												"col-5",
+												"col-2 text-center",
+												"col-3",
 												"col-2",
 												"col-2",
 												"col-2",
 												"col-1"
 											],
 											"rows": [
-												
+												[ "1-14", "{@item Boots of False Tracks|XGE}", "No", "Common", "60 gp", "XGE 136"],
+												[ "15-28", "{@item Prosthetic Limb|TCE}", "Yes", "Common", "100 gp", "ERLW 278; TCE 134"],
+												[ "29-36", "{@item Boots of Elvenkind|DMG}", "No", "Uncommon", "400 gp", "DMG 155"],
+												[ "37-44", "{@item Boots of Striding and Springing|DMG}", "Yes", "Uncommon", "200 gp", "DMG 156"],
+												[ "45-52", "{@item Boots of the Winterlands|DMG}", "Yes", "Uncommon", "300 gp", "DMG 156"],
+												[ "53-60", "{@item Slippers of Spider Climbing|DMG}", "Yes", "Uncommon", "500 gp", "DMG 200"],
+												[ "61-68", "{@item Orb of the Stein Rune|SKT|Stein Rune Boots}", "Yes", "Uncommon", "350 gp", "SKT 235"],
+												[ "69-76", "{@item Winged Boots|DMG}", "Yes", "Uncommon", "5,000 gp*", "DMG 214"],
+												[ "77-82", "{@item Boots of Levitation|DMG}", "Yes", "Rare", "4,500 gp", "DMG 155"],
+												[ "83-88", "{@item Boots of Speed|DMG}", "Yes", "Rare", "3,000 gp", "DMG 155"],
+												[ "89-94", "{@item Shard of the Ise Rune|SKT|Ise Rune Boots}", "Yes", "Rare", "2,650 gp", "SKT 237"],
+												[ "95-100", "{@item Pennant of the Vind Rune|SKT|Vind Rune Boots}", "Yes", "Rare", "650 gp", "SKT 236"]
+											]
+										}
+									]
+								},
+								{
+									"type": "section",
+									"name": "Wondrous Items: Tattoos",
+									"entries": [
+										{
+											"type": "table",
+											"colLabels": [
+												"d100",
+												"ITEM",
+												"ATTUNE?",
+												"RARITY",
+												"SUGGESTED COST",
+												"REFERENCE"
+											],
+											"colStyles": [
+												"col-2 text-center",
+												"col-3",
+												"col-2",
+												"col-2",
+												"col-2",
+												"col-1"
+											],
+											"rows": [
+												[ "1-10", "{@item Illuminator's Tattoo|TCE}", "Yes", "Common", "65 gp", "TCE 129"],
+												[ "11-20", "{@item Masquerade Tattoo|TCE}", "Yes", "Common", "75 gp", "TCE 131"],
+												[ "21-30", "{@i {@link Spellwrought Tattoo See Spellwrought Tattoos (page 5)|https://5e.tools/book.html#dmpg,1,spellwrought%20tattoos}}", "—", "—", "—", "—"],
+												[ "31-41", "{@item Barrier Tattoo (Small)|TCE|Barrier Tattoo (Uncommon) or Barrier Tattoo (Small)}", "Yes", "Uncommon", "200 gp", "TCE 122"],
+												[ "42-52", "{@item Coiling Grasp Tattoo|TCE}", "Yes", "Uncommon", "500 gp", "TCE 123"],
+												[ "53-63", "{@item Eldritch Claw Tattoo|TCE}", "Yes", "Uncommon", "500 gp", "TCE 126-127"],
+												[ "64-71", "{@item Barrier Tattoo (Medium)|TCE|Barrier Tattoo (Rare) or Barrier Tattoo (Medium)}", "Yes", "Rare", "1,500 gp", "TCE 122"],
+												[ "72-79", "{@item Shadowfell Brand Tattoo|TCE}", "Yes", "Rare", "1,100 gp", "TCE 134-135"],
+												[ "80-84", "{@item Absorbing Tattoo|TCE}", "Yes", "Very Rare", "8,000 gp", "TCE 119"],
+												[ "85-89", "{@item Barrier Tattoo (Large)|TCE|Barrier Tattoo (Very Rare) or Barrier Tattoo (Large)}", "Yes", "Very Rare", "6,000 gp", "TCE 122"],
+												[ "90-94", "{@item Ghost Step Tattoo|TCE}", "Yes", "Very Rare", "9,000 gp", "TCE 128"],
+												[ "95-99", "{@item Lifewell Tattoo|TCE}", "Yes", "Very Rare", "5,100 gp", "TCE 129"],
+												[ "100", "{@item Blood Fury Tattoo|TCE}", "Yes", "Legendary", "32,000 gp*", "TCE 122"]
 											]
 										}
 									]
@@ -1441,33 +1590,8 @@
 											]
 										}
 									]
-								},
-								{
-									"type": "section",
-									"name": "Wondrous Items: Tattoos",
-									"entries": [
-										{
-											"type": "table",
-											"colLabels": [
-												"ITEM",
-												"ATTUNE?",
-												"RARITY",
-												"SUGGESTED COST",
-												"REFERENCE"
-											],
-											"colStyles": [
-												"col-5",
-												"col-2",
-												"col-2",
-												"col-2",
-												"col-1"
-											],
-											"rows": [
-												
-											]
-										}
-									]
 								}
+								
 							]
 						}
 					]
