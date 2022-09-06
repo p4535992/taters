@@ -55,6 +55,10 @@ BREW-508 MonkeyDM Pact of the Trigger
 BREW-548 u/That_Kael; Awakened Shrub 2.0
 
 =============================================================================================
+
+- BREW-288
+
+=============================================================================================
 - BREW-320 Mythic Eberron https://www.dmsguild.com/product/329253/Mythic-Eberron
 - BREW-322 QL Games - The Draconomicon - https://www.dmsguild.com/product/367945/The-Draconomicon
 
