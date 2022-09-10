@@ -658,7 +658,7 @@
 			"level": 3,
 			"entries": [
 				"Drawing on the forces that sustain you, you've learned to manifest abiding magical abilities, twisting your spirit body to suit your needs.",
-				"At 3rd level, you gain a manifestation of your choice. Your manifestation options are detailed at the end of the class description. When you gain certain ghost levels, you gain additional manifestations of your choice, as shown in the Manifestations Known column of the {@filter Ghost table|spells|class=Ghost}.",
+				"At 3rd level, you gain a manifestation of your choice. Your manifestation options are detailed at the end of the class description. When you gain certain ghost levels, you gain additional manifestations of your choice, as shown in the {@filter Manifestations|optionalfeatures|feature type=OF:JRRTG} Known column of the {@filter Ghost table|spells|class=Ghost}.",
 				"Whenever you complete a long rest, you can choose one of the manifestations you know and replace it with another manifestation for which you meet the prerequisites."
 			]
 		},
@@ -1424,32 +1424,510 @@
 	],
 	"optionalfeature": [
 		{
-			"name": "Aria Of Discordance",
+			"name": "Chill Of The Grave",
 			"source": "JRRTG",
+			"page": 9,
 			"featureType": [
 				"OF:JRRTG"
 			],
 			"prerequisite": [
 				{
 					"level": {
-						"level": 3,
+						"level": 11,
 						"class": {
-							"name": "Bard"
+							"name": "Ghost"
 						},
 						"subclass": {
-							"name": "Bae'Qeshel"
+							"name": "Malice Unsated"
 						}
 					},
 					"otherSummary": {
-						"entry": "{@subclassFeature Bae'Qeshel|Bard|PHB|Bae'Qeshel|JRRTG|3|} feature",
-						"entrySummary": "Bae'Qeshel"
+						"entry": "{@subclassFeature Malice Unsated|Ghost|JRRTG|Malice Unsated|JRRTG|1|} unfinished business",
+						"entrySummary": "Malice Unsated"
+					}
+				},
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"name": "Ghost"
+						},
+						"subclass": {
+							"name": "Mischief Not Managed"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Mischief Not Managed|Ghost|JRRTG|Mischief Not Managed|JRRTG|1|} unfinished business",
+						"entrySummary": "Mischief Not Managed"
 					}
 				}
 			],
-			"page": 4,
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"known": {
+						"_": [
+							"hold monster|phb"
+						]
+					}
+				}
+			],
 			"entries": [
-				"You can spend an inspiration die and use your Action to show your command over music to sing the Aria of The Bae'qeshel, creating a cone of sonic force. Each creature in a 30-foot cone originating from you must make a Constitution saving throw. On a failed save, a creature takes the result of your inspiration die in thunder damage and is pushed 5 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed. In addition, unsecured objects that are completely within the area of effect are automatically pushed 5 feet away from you by the spell's effect, and the spell emits a thunderous boom audible out to 150 feet.",
-				"{@b At Higher Levels.} Starting at 6th level, you may spend additional inspiration dice on this song. Each additional inspiration die grants thunder damage equal to the result of its roll and an additional 5 feet of push as part of the spell effect."
+				"While possessing a creature, you can cast {@spell hold monster|PHB}, targeting only your host. When cast in this way, the spell requires no components, and ends early if the possession ends.",
+				"Once you cast {@spell hold monster|PHB} in this way, you must finish a short or long rest before you can do so again."
+			]
+		},
+		{
+			"name": "Cloak Of Sorrows",
+			"source": "JRRTG",
+			"page": 9,
+			"featureType": [
+				"OF:JRRTG"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Ghost"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@classFeature Manifestations|Ghost|JRRTG|1|JRRTG} feature",
+						"entrySummary": "Manifestations"
+					}
+				}
+			],
+			"entries": [
+				"If a creature hits your host with a melee attack while your host has temporary hit points from your {@i Embolden} action, the creature takes a number of {@damage 1d6} psychic damage equal to your {@i Supernatural Powers} value, as shown in the Ghost table."
+			]
+		},
+		{
+			"name": "Ghostly Flicker",
+			"source": "JRRTG",
+			"page": 10,
+			"featureType": [
+				"OF:JRRTG"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Ghost"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@classFeature Manifestations|Ghost|JRRTG|1|JRRTG} feature",
+						"entrySummary": "Manifestations"
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"innate": {
+						"_": {
+							"will": [
+								"blade ward|phb"
+							]
+						}
+					}
+				}
+			],
+			"entries": [
+				"While possessing a host, you can cast {@spell blade ward|PHB} at will, requiring no components. When cast in this way, the spell affects your host, not you, and ends early if the possession ends."
+			]
+		},
+		{
+			"name": "Haunting Guise",
+			"source": "JRRTG",
+			"page": 10,
+			"featureType": [
+				"OF:JRRTG"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Ghost"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@classFeature Manifestations|Ghost|JRRTG|1|JRRTG} feature",
+						"entrySummary": "Manifestations"
+					}
+				}
+			],
+			"entries": [
+				"As an action, you can momentarily take on a horrifying appearance. Each non-undead creature within 30 feet of you that can see you or a creature you're possessing must succeed on a Wisdom saving throw or be {@condition frightened} of you for 1 minute. A {@condition frightened} target can repeat the saving throw at the end of each of its turns, with disadvantage if they are within 30 feet of you, ending the effect on itself on a success. Your host, if any, is immune to this effect, and affected creatures treat them as the source of their fear.",
+				"Once you use this feature, you must finish a short or long rest before you can use it again."
+			]
+		},
+		{
+			"name": "Keening Wail",
+			"source": "JRRTG",
+			"page": 10,
+			"featureType": [
+				"OF:JRRTG"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Ghost"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@classFeature Manifestations|Ghost|JRRTG|1|JRRTG} feature",
+						"entrySummary": "Manifestations"
+					}
+				}
+			],
+			"entries": [
+				"As an action, you can release a haunting moan. Creatures within 10 feet of you that can hear you must make a Constitution saving throw. A creature that fails takes {@damage 2d6} psychic damage and has disadvantage on saving throws until the end of your next turn. Your host, if any, is unaffected.",
+				"Once you use this feature, you can't use it again until you roll for initiative."
+			]
+		},
+		{
+			"name": "Knot In The Weave",
+			"source": "JRRTG",
+			"page": 10,
+			"featureType": [
+				"OF:JRRTG"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Ghost"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@classFeature Manifestations|Ghost|JRRTG|1|JRRTG} feature",
+						"entrySummary": "Manifestations"
+					}
+				}
+			],
+			"entries": [
+				"While possessing a spellcaster, you can use your action to replenish some of their spent spell slots. When you do, your host can choose spell slots to recover with a combined level equal to or less than half your ghost level (rounded up). None of the recovered slots can be 6th level or higher. Once you use this feature, you must finish a long rest before you can use it again.",
+				"For example, if you're a 4th level ghost, your host can recover up to two levels' worth of spell slots. They can recover either a 2nd-level spell slot or two 1st-level spell slots."
+			]
+		},
+		{
+			"name": "Knowledge From Beyond",
+			"source": "JRRTG",
+			"page": 10,
+			"featureType": [
+				"OF:JRRTG"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Ghost"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@classFeature Manifestations|Ghost|JRRTG|1|JRRTG} feature",
+						"entrySummary": "Manifestations"
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"known": {
+						"_": [
+							"divination|phb"
+						]
+					}
+				}
+			],
+			"entries": [
+				"You can cast {@spell divination|PHB}, requiring no components, gleaning answers from the spirits of the beyond. After casting the spell in this way, you can choose one skill, tool, or language. For the next 10 minutes, you and any creature you're possessing have proficiency with the chosen skill, tool, or language.",
+				"Once you cast divination in this way, you must finish a long rest before you can do so again."
+			]
+		},
+		{
+			"name": "Knowledge From Within",
+			"source": "JRRTG",
+			"page": 10,
+			"featureType": [
+				"OF:JRRTG"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Ghost"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@classFeature Manifestations|Ghost|JRRTG|1|JRRTG} feature",
+						"entrySummary": "Manifestations"
+					}
+				}
+			],
+			"entries": [
+				"One foot in the otherworld lets you draw on experience far beyond your years. You may add your {@i Charisma modifier to the result of any Arcana, Nature, History, or Religion} check you make."
+			]
+		},
+		{
+			"name": "One With The Mist",
+			"source": "JRRTG",
+			"page": 10,
+			"featureType": [
+				"OF:JRRTG"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Ghost"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@classFeature Manifestations|Ghost|JRRTG|1|JRRTG} feature",
+						"entrySummary": "Manifestations"
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"known": {
+						"_": [
+							"invisibility|phb",
+							"gaseous form|phb",
+							"misty step|phb"
+						]
+					}
+				}
+			],
+			"entries": [
+				"While possessing a creature, you can cast {@spell invisibility|PHB} or {@spell gaseous form|PHB} targeting only your host. These spells end early if the possession ends. Alternatively, while not possessing a creature, you can cast {@spell misty step|PHB}. When cast in this way, these spells require no components.",
+				"After using this manifestation once, you must finish a short or long rest before you can use it again."
+			]
+		},
+		{
+			"name": "Otherworldly Spark",
+			"source": "JRRTG",
+			"page": 10,
+			"featureType": [
+				"OF:JRRTG"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Ghost"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@classFeature Manifestations|Ghost|JRRTG|1|JRRTG} feature",
+						"entrySummary": "Manifestations"
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"known": {
+						"_": [
+							"elemental weapon|phb"
+						]
+					}
+				}
+			],
+			"entries": [
+				"While possessing a willing creature, your host's attacks with nonmagical weapons are considered magical.",
+				"Additionally, you can cast {@spell elemental weapon|PHB}, requiring no components, targeting one weapon worn or carried by your host. The spell ends early if the possession ends.",
+				"Once you cast {@spell elemental weapon|PHB} in this way, you must finish a long rest before you can do so again."
+			]
+		},
+		{
+			"name": "Phantasmal Strike",
+			"source": "JRRTG",
+			"page": 10,
+			"featureType": [
+				"OF:JRRTG"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Ghost"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@classFeature Manifestations|Ghost|JRRTG|1|JRRTG} feature",
+						"entrySummary": "Manifestations"
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"innate": {
+						"_": {
+							"will": [
+								"spiritual weapon|phb"
+							]
+						}
+					}
+				}
+			],
+			"entries": [
+				"Be it with spectral blades, grasping tendrils, or raking claws, you've mastered manifestations with which to assault your foes. You can cast {@spell spiritual weapon|PHB} at will, requiring no components, and can attack with it despite your Spirit Form."
+			]
+		},
+		{
+			"name": "Spectral Affinity",
+			"source": "JRRTG",
+			"page": 10,
+			"featureType": [
+				"OF:JRRTG"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Ghost"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@classFeature Manifestations|Ghost|JRRTG|1|JRRTG} feature",
+						"entrySummary": "Manifestations"
+					}
+				}
+			],
+			"entries": [
+				"You can spend 1 hour drawing a magic item within 5 feet of you into the Border Ethereal. The item then disappears or is subsumed into your spectral form.",
+				"Thereafter, you are considered to be wielding, wearing, or carrying the item as appropriate. If eligible, you can attune to the item while this process occurs. You can't affect an artifact or sentient item this way, and you can be bound to no more than 3 magic items at a time. The item appears at your feet if you die, or if you use an action to break your bond with it."
+			]
+		},
+		{
+			"name": "Spirit Sight",
+			"source": "JRRTG",
+			"page": 10,
+			"featureType": [
+				"OF:JRRTG"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Ghost"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@classFeature Manifestations|Ghost|JRRTG|1|JRRTG} feature",
+						"entrySummary": "Manifestations"
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"known": {
+						"_": [
+							"comprehend languages|phb",
+							"detect evil and good|phb",
+							"detect magic|phb",
+							"locate object|phb",
+							"see invisibility|phb"
+						]
+					}
+				}
+			],
+			"entries": [
+				"You can cast {@spell comprehend languages|PHB}, {@spell detect evil and good|PHB}, {@spell detect magic|PHB}, {@spell locate object|PHB}, and {@spell see invisibility|PHB}, requiring no components. You can do so a total number of times equal to your Charisma modifier (a minimum of once) and regain all expended uses when you finish a long rest.",
+				"While possessing a creature, you share the benefits granted by these spells with your host."
+			]
+		},
+		{
+			"name": "Tear In The Veil",
+			"source": "JRRTG",
+			"page": 10,
+			"featureType": [
+				"OF:JRRTG"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Ghost"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@classFeature Manifestations|Ghost|JRRTG|1|JRRTG} feature",
+						"entrySummary": "Manifestations"
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"known": {
+						"_": [
+							"etherealness|phb"
+						]
+					}
+				}
+			],
+			"entries": [
+				"You can cast {@spell etherealness|PHB}, requiring no components, targeting yourself, your host (if any), and up to three willing creatures within 10 feet of you.",
+				"Once you cast {@spell etherealness|PHB} in this way, you must finish a long rest before you can do so again."
+			]
+		},
+		{
+			"name": "Voice Of The Departed",
+			"source": "JRRTG",
+			"page": 10,
+			"featureType": [
+				"OF:JRRTG"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Ghost"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@classFeature Manifestations|Ghost|JRRTG|1|JRRTG} feature",
+						"entrySummary": "Manifestations"
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"innate": {
+						"_": {
+							"will": [
+								"speak with dead|phb"
+							]
+						}
+					}
+				}
+			],
+			"entries": [
+				"While not possessing a creature, you can cast {@spell speak with dead|PHB} at will. When cast in this way, the spell requires no material component, and has a range of touch.",
+				"Additionally, you automatically know when the corpse tells a lie (though you don't have the power to compel it to tell the truth)."
 			]
 		}
 	]
