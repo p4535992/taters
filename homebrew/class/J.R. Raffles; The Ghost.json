@@ -152,19 +152,31 @@
 			"classFeatures": [
 				"Spirit Form|Ghost|JRRTG|1",
 				"Possession|Ghost|JRRTG|1",
-				"Unfinished Business|Ghost|JRRTG|1",
+				{
+					"classFeature": "Unfinished Business|Ghost|JRRTG|1",
+					"gainSubclassFeature": true
+				},
 				"Otherworldly Insight|Ghost|JRRTG|2",
 				"Manifestations|Ghost|JRRTG|3",
 				"Ability Score Improvement|Ghost|JRRTG|4",
 				"Rejuvenation|Ghost|JRRTG|5",
-				"Unfinished Business|Ghost|JRRTG|6",
+				{
+					"classFeature": "Unfinished Business|Ghost|JRRTG|6",
+					"gainSubclassFeature": true
+				},
 				"Ability Score Improvement|Ghost|JRRTG|8",
 				"Medium|Ghost|JRRTG|10",
-				"Unfinished Business|Ghost|JRRTG|11",
+				{
+					"classFeature": "Unfinished Business|Ghost|JRRTG|11",
+					"gainSubclassFeature": true
+				},
 				"Ability Score Improvement|Ghost|JRRTG|12",
 				"Incorporeal Movement|Ghost|JRRTG|15",
 				"Ability Score Improvement|Ghost|JRRTG|16",
-				"Unfinished Business|Ghost|JRRTG|17",
+				{
+					"classFeature": "Unfinished Business|Ghost|JRRTG|17",
+					"gainSubclassFeature": true
+				},
 				"Ability Score Improvement|Ghost|JRRTG|19",
 				"Journey's End|Ghost|JRRTG|20"
 			],
@@ -490,14 +502,14 @@
 			"classSource": "JRRTG",
 			"level": 20,
 			"entries": [
-				"At 20th level, you must decide whether to pass on to the next world or persist in this one. You gain one feature of your choice from the two below: {@classFeature Embrace the End|JRRTG}, or  {@classFeature Deny Reality's Rule|JRRTG}.",
+				"At 20th level, you must decide whether to pass on to the next world or persist in this one. You gain one feature of your choice from the two below: {@classFeature Embrace the End|JRRTG}, or {@classFeature Deny Reality's Rule|JRRTG}.",
 				{
 					"type": "refClassFeature",
-					"classFeature": "Embrace the End|JRRTG"
+					"classFeature": "Embrace the End|Ghost|JRRTG|20"
 				},
 				{
 					"type": "refClassFeature",
-					"classFeature": "Deny Reality's Rule|JRRTG"
+					"classFeature": "Deny Reality's Rule|Ghost|JRRTG|20"
 				}
 			]
 		},
@@ -508,9 +520,10 @@
 			"className": "Ghost",
 			"classSource": "JRRTG",
 			"level": 20,
+			"isClassFeatureVariant": true,
 			"entries": [
 				"You are grateful for an afterlife well lived. Perhaps one last struggle stands between you and your final respite, or perhaps it’s time to discover what the next world has in store.",
-				"After choosing this option at 20th level, you can pass on to the afterlife as an action (the effects of which are determined by the DM). Until you do so, you can draw on your enlightenment as an action, gaining the benefits of an augury spell with no chance of a random reading."
+				"After choosing this option at 20th level, you can pass on to the afterlife as an action (the effects of which are determined by the DM). Until you do so, you can draw on your enlightenment as an action, gaining the benefits of an {@spell augury|PHB} spell with no chance of a random reading."
 			]
 		},
 		{
@@ -520,6 +533,7 @@
 			"className": "Ghost",
 			"classSource": "JRRTG",
 			"level": 20,
+			"isClassFeatureVariant": true,
 			"entries": [
 				"You reject the cruel hand dealt to you by fate, leaving your mortal origins and perhaps even your unfinished business far behind you.",
 				"After choosing this option at 20th level, you are no longer considered undead when determining which spells and abilities can target you. Thereafter, no magic, however powerful, can restore you to life. Additionally, you can cast {@spell wish|PHB} once, requiring no components, and regain the ability to do so after 7 days. Should you suffer stress while casting {@spell wish|PHB} this way, you may nonetheless wish again, but only to duplicate the effects of an 8th level or lower spell.",
@@ -527,7 +541,7 @@
 					"type": "inset",
 					"name": "Second Chance",
 					"entries": [
-						"A ghost character returned to life by magic such as true resurrection or wish immediately replaces their ghost class levels with levels in another class. Consider how the character’s ordeal might have changed them. Is their unfinished business still what drives them, or has a second chance at life reordered their priorities?"
+						"A ghost character returned to life by magic such as {@spell true resurrection|PHB} or {@spell wish|PHB} immediately replaces their ghost class levels with levels in another class. Consider how the character’s ordeal might have changed them. Is their unfinished business still what drives them, or has a second chance at life reordered their priorities?"
 					]
 				}
 			]
