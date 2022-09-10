@@ -812,24 +812,348 @@
 			"source": "JRRTG",
 			"className": "Ghost",
 			"classSource": "JRRTG",
-			"page": 54,
-			"srd": true,
+			"page": 7,
 			"additionalSpells": [
 				{
 					"name": "Augment",
 					"known": {
 						"1": [
 							{
-								"choose": "level=0;1;2;3"
+								"choose": "level=0;1;2;3;4;5|class=Ghost",
+								"count": 1
+							}
+						],
+						"2": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=Ghost",
+								"count": 1
+							}
+						],
+						"3": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=Ghost",
+								"count": 1
+							}
+						],
+						"4": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=Ghost",
+								"count": 1
+							}
+						],
+						"5": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=Ghost",
+								"count": 1
+							}
+						],
+						"6": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=Ghost",
+								"count": 1
+							}
+						],
+						"7": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=Ghost",
+								"count": 1
+							}
+						],
+						"8": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=Ghost",
+								"count": 1
+							}
+						],
+						"9": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=Ghost",
+								"count": 1
+							}
+						],
+						"10": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=Ghost",
+								"count": 1
+							}
+						],
+						"11": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=Ghost",
+								"count": 1
+							}
+						],
+						"12": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=Ghost",
+								"count": 1
+							}
+						],
+						"13": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=Ghost",
+								"count": 1
+							}
+						],
+						"14": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=Ghost",
+								"count": 1
+							}
+						],
+						"15": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=Ghost",
+								"count": 1
+							}
+						],
+						"16": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=Ghost",
+								"count": 1
+							}
+						],
+						"17": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=Ghost",
+								"count": 1
+							}
+						],
+						"18": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=Ghost",
+								"count": 1
+							}
+						],
+						"19": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=Ghost",
+								"count": 1
+							}
+						],
+						"20": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=Ghost",
+								"count": 1
 							}
 						]
 					}
 				}
 			],
 			"subclassFeatures": [
-				"Augment|Ghost|JRRTG|Duty not Done|JRRTG|1",
-				"Additional Magical Secrets|Ghost|JRRTG|Duty not Done|JRRTG|6",
-				"Peerless Skill|Ghost|JRRTG|Duty not Done|JRRTG|14"
+				"Duty not Done|Ghost|JRRTG|Duty not Done|JRRTG|1",
+				"Aegis|Ghost|JRRTG|Duty not Done|JRRTG|6",
+				"Otherworldly Guardian|Ghost|JRRTG|Duty not Done|JRRTG|11",
+				"Unyielding Protector|Ghost|JRRTG|Duty not Done|JRRTG|17"
+			]
+		},
+		{
+			"name": "Malice Unsated",
+			"shortName": "Malice Unsated",
+			"source": "JRRTG",
+			"className": "Ghost",
+			"classSource": "JRRTG",
+			"page": 54,
+			"srd": true,
+			"subclassFeatures": [
+				"Malice Unsated|Ghost|JRRTG|Malice Unsated|JRRTG|1",
+				"Grim Puppeteer|Ghost|JRRTG|Malice Unsated|JRRTG|6",
+				"Domineering Will|Ghost|JRRTG|Malice Unsated|JRRTG|11",
+				"Undying Hate|Ghost|JRRTG|Malice Unsated|JRRTG|17"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Duty not Done",
+			"source": "JRRTG",
+			"page": 7,
+			"className": "Ghost",
+			"classSource": "JRRTG",
+			"subclassShortName": "Duty not Done",
+			"subclassSource": "JRRTG",
+			"level": 1,
+			"entries": [
+				"You strive to further a cause, uphold a virtue, or defend a person or place of sacred significance. Your uncanny magic protects and empowers your allies, hoping to do together what you couldn't alone.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Augment|Ghost|JRRTG|Duty not Done|JRRTG|1"
+				}
+			]
+		},
+		{
+			"name": "Augment",
+			"source": "JRRTG",
+			"page": 7,
+			"className": "Ghost",
+			"classSource": "JRRTG",
+			"subclassShortName": "Duty not Done",
+			"subclassSource": "JRRTG",
+			"level": 1,
+			"entries": [
+				"When you choose this unfinished business at 1st level, and every time you gain a level in this class there after, you learn one spell of your choice from the {@filter Ghost spell list|spells|class=ghost} (printed at the end of the class description).",
+				{
+					"type": "list",
+					"items": [
+						"A spell you choose must be of a level no higher than what's shown in the Ghost table's {@i Supernatural Powers} column for your level.",
+						"You can only cast augment spells while possessing a host. ",
+						"Augment spells with a range of self affect your host, not you. Otherwise, such spells target only your host regardless of their normal range.",
+						"Augment spells require no components, and all such spells end immediately if the possession ends.",
+						"You can cast a number of augment spells equal to your proficiency bonus.", 
+						"You regain all expended uses when you finish a short or long rest."
+					]
+				},
+				"Additionally, when you gain a level in this class, you can choose one of the augment spells you know and replace it with another spell from the {@filter Ghost spell list|spells|class=ghost}, which must also be of a level no greater than your {@i Supernatural Powers} value."
+			]
+		},
+		{
+			"name": "Aegis",
+			"source": "JRRTG",
+			"page": 7,
+			"className": "Ghost",
+			"classSource": "JRRTG",
+			"subclassShortName": "Duty not Done",
+			"subclassSource": "JRRTG",
+			"level": 6,
+			"entries": [
+				"Starting at 6th level, whenever you take the Embolden action, you grant temporary hit points equal to your ghost level (instead of your Charisma modifier).",
+				"Additionally, if your host is reduced to 0 hit points but not killed outright, they immediately become stable. The possession then ends as normal."
+			]
+		},
+		{
+			"name": "Otherworldly Guardian",
+			"source": "JRRTG",
+			"page": 7,
+			"className": "Ghost",
+			"classSource": "JRRTG",
+			"subclassShortName": "Duty not Done",
+			"subclassSource": "JRRTG",
+			"level": 11,
+			"entries": [
+				"Starting at 11th level, a creature possessed by you is always under the effects of a {@spell protection from evil and good|PHB} spell."
+			]
+		},
+		{
+			"name": "Unyielding Protector",
+			"source": "JRRTG",
+			"page": 7,
+			"className": "Ghost",
+			"classSource": "JRRTG",
+			"subclassShortName": "Duty not Done",
+			"subclassSource": "JRRTG",
+			"level": 17,
+			"entries": [
+				"Starting at 17th level, your concentration on augment spells cannot be broken as a result of your host taking damage.",
+				"Additionally, whenever you roll for initiative, you regain one expended use of your Augment feature."
+			]
+		},
+		{
+			"name": "Malice Unsated",
+			"source": "JRRTG",
+			"page": 7,
+			"className": "Ghost",
+			"classSource": "JRRTG",
+			"subclassShortName": "Malice Unsated",
+			"subclassSource": "JRRTG",
+			"level": 1,
+			"entries": [
+				"Your appetite for vengeance has gone unsatisfied, and you strive to bring harm to a hated foe, wreak havoc on an organization that wronged you, or repay a transgression in kind. You use hosts like puppets to achieve your goals, unable to pursue your agenda without mortal aid. Your {@i supernatural powers} can turn foes against one another and reanimate the fallen as pawns in your loathsome game.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Malefic Possession|Ghost|JRRTG|Malice Unsated|JRRTG|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Life Drain|Ghost|JRRTG|Malice Unsated|JRRTG|1"
+				}
+			]
+		},
+		{
+			"name": "Malefic Possession",
+			"source": "JRRTG",
+			"page": 7,
+			"className": "Ghost",
+			"classSource": "JRRTG",
+			"subclassShortName": "Malice Unsated",
+			"subclassSource": "JRRTG",
+			"level": 1,
+			"entries": [
+				"Starting when you choose this unfinished business at 1st level, you can use your Possession ability on unwilling creatures. An unwilling target can be of any creature type except undead and may make a Charisma saving throw to resist the effect. If it passes, the possession fails, and you remain wherever you were before the attempt.",
+				"An unwilling host gains none of the benefits of your Possession ability. You gain the following action options while possessing an unwilling host:",
+				{
+					"type": "list",
+					"items": [
+						"{@i The Gibbering}: As an action, you force your host to make a Constitution saving throw. If they fail, they lose their concentration on spells, and can speak only in gibberish until the start of your next turn.",
+						"{@i Maddening Whispers}: As an action, you force your host to make a Wisdom saving throw. If they fail, they have disadvantage on attack rolls until the start of your next turn.",
+						"{@i Wrest Control}: As an action, you force your host to make a Charisma saving throw. If they fail, they behave as if affected by a confusion spell until the end of their next turn. You can't use Wrest Control again before the possession ends."
+					]
+				},
+				"An unwilling host can use its action to make a Charisma save. If it succeeds, the possession ends. The possession also ends if the host travels to a different plane of existence, leaving you behind. Once an unwilling possession ends, or after a target succeeds on the initial saving throw, you must finish a long rest before you can possess that creature again.",
+				"When an unwilling possession ends, you can use your reaction to possess a willing humanoid within 30 feet of you."
+			]
+		},
+		{
+			"name": "Life Drain",
+			"source": "JRRTG",
+			"page": 7,
+			"className": "Ghost",
+			"classSource": "JRRTG",
+			"subclassShortName": "Malice Unsated",
+			"subclassSource": "JRRTG",
+			"level": 1,
+			"entries": [
+				"Starting at 1st level, when a creature you're possessing hits with a melee attack, you can cause the attack to deal additional necrotic damage. The extra damage is a number of d8 equal to your {@i Supernatural Powers} value, as shown in the Ghost table. A creature dealt damage this way can't regain hit points until the end of its next turn.",
+				"You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain all expended uses when you finish a short or long rest."
+			]
+		},
+		{
+			"name": "Grim Puppeteer",
+			"source": "JRRTG",
+			"page": 7,
+			"className": "Ghost",
+			"classSource": "JRRTG",
+			"subclassShortName": "Malice Unsated",
+			"subclassSource": "JRRTG",
+			"level": 6,
+			"entries": [
+				"Beginning at 6th level, you can possess the corpses of the slain. While not possessing a host, you can use your action to disappear into an intact corpse you can see within 5 feet of you. The corpse must be Large or smaller and be that of a beast or a humanoid. You are now effectively the possessed creature, which gains none of the benefits of your Possession ability. Its type becomes undead, though it now looks alive, and it gains a number of temporary hit points equal to your hit point maximum.",
+				"While possessing a corpse, you maintain your alignment, Intelligence, Wisdom, Charisma, and immunity to poison. You otherwise use the possessed target’s game statistics, gaining access to its proficiencies, but not its class features, if any.",
+				"The possession lasts until the temporary hit points are lost (at which point the body becomes a corpse once more) or you end it as a bonus action. When the possession ends, you reappear in an unoccupied space within 5 feet of the corpse.",
+				"Once you use this feature, you must finish a long rest before you can use it again."
+			]
+		},
+		{
+			"name": "Domineering Will",
+			"source": "JRRTG",
+			"page": 8,
+			"className": "Ghost",
+			"classSource": "JRRTG",
+			"subclassShortName": "Malice Unsated",
+			"subclassSource": "JRRTG",
+			"level": 11,
+			"entries": [
+				"By 11th level, you’ve grown strong enough to seize full control of unwilling hosts. While possessing an unwilling beast or humanoid, you gain the following action option:",
+				{
+					"type": "list",
+					"items": [
+						"{@i Subjugate}: As an action, you force your host to make a Charisma saving throw. If they succeed, the possession ends. If they fail, they are incapacitated, and you assume complete control of their body until the possession ends. On your turn, you may forgo your own movement and actions to manipulate the host. When you do, you can immediately make it move and perform actions appropriate to its game statistics. You don’t gain access to the target’s knowledge, nor class features, if any."
+					]
+				},
+				"Once a creature fails its saving throw against this effect, you must finish a long rest before you can use {@i Subjugate} again."
+			]
+		},
+		{
+			"name": "Undying Hate",
+			"source": "JRRTG",
+			"page": 8,
+			"className": "Ghost",
+			"classSource": "JRRTG",
+			"subclassShortName": "Malice Unsated",
+			"subclassSource": "JRRTG",
+			"level": 17,
+			"entries": [
+				"Beginning at 17th level, whenever you roll for initiative, you regain all expended uses of your Life Drain feature.",
+				"Additionally, any creature dealt damage by your Life Drain has its hit point maximum reduced by the same amount. The reduction lasts until the creature finishes a long rest. The target dies if this reduces its hit point maximum to 0."
 			]
 		}
 	]
