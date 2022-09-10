@@ -658,7 +658,7 @@
 			"level": 3,
 			"entries": [
 				"Drawing on the forces that sustain you, you've learned to manifest abiding magical abilities, twisting your spirit body to suit your needs.",
-				"At 3rd level, you gain a manifestation of your choice. Your manifestation options are detailed at the end of the class description. When you gain certain ghost levels, you gain additional manifestations of your choice, as shown in the Manifestations Known column of the Ghost table.",
+				"At 3rd level, you gain a manifestation of your choice. Your manifestation options are detailed at the end of the class description. When you gain certain ghost levels, you gain additional manifestations of your choice, as shown in the Manifestations Known column of the {@filter Ghost table|spells|class=Ghost}.",
 				"Whenever you complete a long rest, you can choose one of the manifestations you know and replace it with another manifestation for which you meet the prerequisites."
 			]
 		},
@@ -725,7 +725,7 @@
 			"classSource": "JRRTG",
 			"level": 5,
 			"entries": [
-				"At 5th level, when you are reduced to 0 hit points but not killed outright, you can use your reaction to possess a willing humanoid within 30 feet of you. If you do, you become {@condition unconscious|PHB} but stable. Your host gains none of the usual benefits of your Possession ability, and you become unstable again if the possession ends. After occupying a host for 1 hour, you regain 1 hit point, become {@condition conscious|PHB}, and the possession ends."
+				"At 5th level, when you are reduced to 0 hit points but not killed outright, you can use your reaction to possess a willing humanoid within 30 feet of you. If you do, you become {@condition unconscious|PHB} but stable. Your host gains none of the usual benefits of your {@classFeature Possession|Ghost|JRRTG|1|JRRTG} ability, and you become unstable again if the possession ends. After occupying a host for 1 hour, you regain 1 hit point, become {@condition conscious|PHB}, and the possession ends."
 			]
 		},
 		{
@@ -749,7 +749,8 @@
 			"level": 15,
 			"entries": [
 				"By 15th level, you've learned not only to strengthen your grip on the Material Plane but also to weaken it, unshackling you from the harsh laws of reality.",
-				"You gain a flying speed of 40ft. Additionally, when moving, you can pass through other creatures and objects as if they were difficult terrain. If you end your turn inside an object, you take {@damage 1d10} force damage and appear in the nearest unoccupied space."
+				"You gain a flying speed of 40ft.",
+				"Additionally, when moving, you can pass through other creatures and objects as if they were difficult terrain. If you end your turn inside an object, you take {@damage 1d10} force damage and appear in the nearest unoccupied space."
 			]
 		},
 		{
@@ -794,7 +795,8 @@
 			"isClassFeatureVariant": true,
 			"entries": [
 				"You reject the cruel hand dealt to you by fate, leaving your mortal origins and perhaps even your unfinished business far behind you.",
-				"After choosing this option at 20th level, you are no longer considered undead when determining which spells and abilities can target you. Thereafter, no magic, however powerful, can restore you to life. Additionally, you can cast {@spell wish|PHB} once, requiring no components, and regain the ability to do so after 7 days. Should you suffer stress while casting {@spell wish|PHB} this way, you may nonetheless wish again, but only to duplicate the effects of an 8th level or lower spell.",
+				"After choosing this option at 20th level, you are no longer considered undead when determining which spells and abilities can target you. Thereafter, no magic, however powerful, can restore you to life.",
+				"Additionally, you can cast {@spell wish|PHB} once, requiring no components, and regain the ability to do so after 7 days. Should you suffer stress while casting {@spell wish|PHB} this way, you may nonetheless wish again, but only to duplicate the effects of an 8th level or lower spell.",
 				{
 					"type": "inset",
 					"name": "Second Chance",
@@ -807,8 +809,8 @@
 	],
 	"subclass": [
 		{
-			"name": "Duty not Done",
-			"shortName": "Duty not Done",
+			"name": "Duty Not Done",
+			"shortName": "Duty Not Done",
 			"source": "JRRTG",
 			"className": "Ghost",
 			"classSource": "JRRTG",
@@ -935,16 +937,17 @@
 							{
 								"choose": "level=0;1;2;3;4;5|class=Ghost",
 								"count": 1
+								
 							}
 						]
 					}
 				}
 			],
 			"subclassFeatures": [
-				"Duty not Done|Ghost|JRRTG|Duty not Done|JRRTG|1",
-				"Aegis|Ghost|JRRTG|Duty not Done|JRRTG|6",
-				"Otherworldly Guardian|Ghost|JRRTG|Duty not Done|JRRTG|11",
-				"Unyielding Protector|Ghost|JRRTG|Duty not Done|JRRTG|17"
+				"Duty Not Done|Ghost|JRRTG|Duty Not Done|JRRTG|1",
+				"Aegis|Ghost|JRRTG|Duty Not Done|JRRTG|6",
+				"Otherworldly Guardian|Ghost|JRRTG|Duty Not Done|JRRTG|11",
+				"Unyielding Protector|Ghost|JRRTG|Duty Not Done|JRRTG|17"
 			]
 		},
 		{
@@ -953,31 +956,67 @@
 			"source": "JRRTG",
 			"className": "Ghost",
 			"classSource": "JRRTG",
-			"page": 54,
-			"srd": true,
+			"page": 7,
 			"subclassFeatures": [
 				"Malice Unsated|Ghost|JRRTG|Malice Unsated|JRRTG|1",
 				"Grim Puppeteer|Ghost|JRRTG|Malice Unsated|JRRTG|6",
 				"Domineering Will|Ghost|JRRTG|Malice Unsated|JRRTG|11",
 				"Undying Hate|Ghost|JRRTG|Malice Unsated|JRRTG|17"
 			]
+		},
+		{
+			"name": "Mischief Not Managed",
+			"shortName": "Mischief Not Managed",
+			"source": "JRRTG",
+			"className": "Ghost",
+			"classSource": "JRRTG",
+			"page": 8,
+			"subclassSpells": [
+				"catapult|xge",
+				"mage hand|phb",
+				"animate objects|phb"
+			],
+			"subclassFeatures": [
+				"Mischief Not Managed|Ghost|JRRTG|Mischief Not Managed|JRRTG|1",
+				"Beck And Call|Ghost|JRRTG|Mischief Not Managed|JRRTG|6",
+				"Dance Of The Departed|Ghost|JRRTG|Mischief Not Managed|JRRTG|6",
+				"Subtle Possession|Ghost|JRRTG|Mischief Not Managed|JRRTG|11",
+				"The Show Goes On|Ghost|JRRTG|Mischief Not Managed|JRRTG|17"
+			]
+		},
+		{
+			"name": "Restless Blade",
+			"shortName": "Restless Blade",
+			"source": "JRRTG",
+			"className": "Ghost",
+			"classSource": "JRRTG",
+			"page": 9,
+			"subclassSpells": [
+				"tenser's transformation|xge"
+			],
+			"subclassFeatures": [
+				"Restless Blade|Ghost|JRRTG|Restless Blade|JRRTG|1",
+				"Phantasmal Warrior|Ghost|JRRTG|Restless Blade|JRRTG|6",
+				"Otherworldly Champion|Ghost|JRRTG|Restless Blade|JRRTG|11",
+				"Deathless Defiance|Ghost|JRRTG|Restless Blade|JRRTG|17"
+			]
 		}
 	],
 	"subclassFeature": [
 		{
-			"name": "Duty not Done",
+			"name": "Duty Not Done",
 			"source": "JRRTG",
 			"page": 7,
 			"className": "Ghost",
 			"classSource": "JRRTG",
-			"subclassShortName": "Duty not Done",
+			"subclassShortName": "Duty Not Done",
 			"subclassSource": "JRRTG",
 			"level": 1,
 			"entries": [
 				"You strive to further a cause, uphold a virtue, or defend a person or place of sacred significance. Your uncanny magic protects and empowers your allies, hoping to do together what you couldn't alone.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Augment|Ghost|JRRTG|Duty not Done|JRRTG|1"
+					"subclassFeature": "Augment|Ghost|JRRTG|Duty Not Done|JRRTG|1"
 				}
 			]
 		},
@@ -987,15 +1026,15 @@
 			"page": 7,
 			"className": "Ghost",
 			"classSource": "JRRTG",
-			"subclassShortName": "Duty not Done",
+			"subclassShortName": "Duty Not Done",
 			"subclassSource": "JRRTG",
 			"level": 1,
 			"entries": [
-				"When you choose this unfinished business at 1st level, and every time you gain a level in this class there after, you learn one spell of your choice from the {@filter Ghost spell list|spells|class=ghost} (printed at the end of the class description).",
+				"When you choose this unfinished business at 1st level, and every time you gain a level in this class there after, you learn one spell of your choice from the {@filter Ghost spell list|spells|class=Ghost} (printed at the end of the class description).",
 				{
 					"type": "list",
 					"items": [
-						"A spell you choose must be of a level no higher than what's shown in the Ghost table's {@i Supernatural Powers} column for your level.",
+						"A spell you choose must be of a level no higher than what's shown in the {@filter Ghost table's|spells|class=Ghost} {@i Supernatural Powers} column for your level.",
 						"You can only cast augment spells while possessing a host. ",
 						"Augment spells with a range of self affect your host, not you. Otherwise, such spells target only your host regardless of their normal range.",
 						"Augment spells require no components, and all such spells end immediately if the possession ends.",
@@ -1003,7 +1042,7 @@
 						"You regain all expended uses when you finish a short or long rest."
 					]
 				},
-				"Additionally, when you gain a level in this class, you can choose one of the augment spells you know and replace it with another spell from the {@filter Ghost spell list|spells|class=ghost}, which must also be of a level no greater than your {@i Supernatural Powers} value."
+				"Additionally, when you gain a level in this class, you can choose one of the augment spells you know and replace it with another spell from the {@filter Ghost spell list|spells|class=Ghost}, which must also be of a level no greater than your {@i Supernatural Powers} value."
 			]
 		},
 		{
@@ -1012,7 +1051,7 @@
 			"page": 7,
 			"className": "Ghost",
 			"classSource": "JRRTG",
-			"subclassShortName": "Duty not Done",
+			"subclassShortName": "Duty Not Done",
 			"subclassSource": "JRRTG",
 			"level": 6,
 			"entries": [
@@ -1026,7 +1065,7 @@
 			"page": 7,
 			"className": "Ghost",
 			"classSource": "JRRTG",
-			"subclassShortName": "Duty not Done",
+			"subclassShortName": "Duty Not Done",
 			"subclassSource": "JRRTG",
 			"level": 11,
 			"entries": [
@@ -1039,7 +1078,7 @@
 			"page": 7,
 			"className": "Ghost",
 			"classSource": "JRRTG",
-			"subclassShortName": "Duty not Done",
+			"subclassShortName": "Duty Not Done",
 			"subclassSource": "JRRTG",
 			"level": 17,
 			"entries": [
@@ -1078,8 +1117,8 @@
 			"subclassSource": "JRRTG",
 			"level": 1,
 			"entries": [
-				"Starting when you choose this unfinished business at 1st level, you can use your Possession ability on unwilling creatures. An unwilling target can be of any creature type except undead and may make a Charisma saving throw to resist the effect. If it passes, the possession fails, and you remain wherever you were before the attempt.",
-				"An unwilling host gains none of the benefits of your Possession ability. You gain the following action options while possessing an unwilling host:",
+				"Starting when you choose this unfinished business at 1st level, you can use your {@classFeature Possession|Ghost|JRRTG|1|JRRTG} ability on unwilling creatures. An unwilling target can be of any creature type except undead and may make a Charisma saving throw to resist the effect. If it passes, the possession fails, and you remain wherever you were before the attempt.",
+				"An unwilling host gains none of the benefits of your {@classFeature Possession|Ghost|JRRTG|1|JRRTG} ability. You gain the following action options while possessing an unwilling host:",
 				{
 					"type": "list",
 					"items": [
@@ -1102,7 +1141,7 @@
 			"subclassSource": "JRRTG",
 			"level": 1,
 			"entries": [
-				"Starting at 1st level, when a creature you're possessing hits with a melee attack, you can cause the attack to deal additional necrotic damage. The extra damage is a number of d8 equal to your {@i Supernatural Powers} value, as shown in the Ghost table. A creature dealt damage this way can't regain hit points until the end of its next turn.",
+				"Starting at 1st level, when a creature you're possessing hits with a melee attack, you can cause the attack to deal additional necrotic damage. The extra damage is a number of d8 equal to your {@i Supernatural Powers} value, as shown in the {@filter Ghost table|spells|class=Ghost}. A creature dealt damage this way can't regain hit points until the end of its next turn.",
 				"You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain all expended uses when you finish a short or long rest."
 			]
 		},
@@ -1116,8 +1155,8 @@
 			"subclassSource": "JRRTG",
 			"level": 6,
 			"entries": [
-				"Beginning at 6th level, you can possess the corpses of the slain. While not possessing a host, you can use your action to disappear into an intact corpse you can see within 5 feet of you. The corpse must be Large or smaller and be that of a beast or a humanoid. You are now effectively the possessed creature, which gains none of the benefits of your Possession ability. Its type becomes undead, though it now looks alive, and it gains a number of temporary hit points equal to your hit point maximum.",
-				"While possessing a corpse, you maintain your alignment, Intelligence, Wisdom, Charisma, and immunity to poison. You otherwise use the possessed target’s game statistics, gaining access to its proficiencies, but not its class features, if any.",
+				"Beginning at 6th level, you can possess the corpses of the slain. While not possessing a host, you can use your action to disappear into an intact corpse you can see within 5 feet of you. The corpse must be Large or smaller and be that of a beast or a humanoid. You are now effectively the possessed creature, which gains none of the benefits of your {@classFeature Possession|Ghost|JRRTG|1|JRRTG} ability. Its type becomes undead, though it now looks alive, and it gains a number of temporary hit points equal to your hit point maximum.",
+				"While possessing a corpse, you maintain your alignment, Intelligence, Wisdom, Charisma, and immunity to poison. You otherwise use the possessed target's game statistics, gaining access to its proficiencies, but not its class features, if any.",
 				"The possession lasts until the temporary hit points are lost (at which point the body becomes a corpse once more) or you end it as a bonus action. When the possession ends, you reappear in an unoccupied space within 5 feet of the corpse.",
 				"Once you use this feature, you must finish a long rest before you can use it again."
 			]
@@ -1132,11 +1171,11 @@
 			"subclassSource": "JRRTG",
 			"level": 11,
 			"entries": [
-				"By 11th level, you’ve grown strong enough to seize full control of unwilling hosts. While possessing an unwilling beast or humanoid, you gain the following action option:",
+				"By 11th level, you've grown strong enough to seize full control of unwilling hosts. While possessing an unwilling beast or humanoid, you gain the following action option:",
 				{
 					"type": "list",
 					"items": [
-						"{@i Subjugate}: As an action, you force your host to make a Charisma saving throw. If they succeed, the possession ends. If they fail, they are incapacitated, and you assume complete control of their body until the possession ends. On your turn, you may forgo your own movement and actions to manipulate the host. When you do, you can immediately make it move and perform actions appropriate to its game statistics. You don’t gain access to the target’s knowledge, nor class features, if any."
+						"{@i Subjugate}: As an action, you force your host to make a Charisma saving throw. If they succeed, the possession ends. If they fail, they are incapacitated, and you assume complete control of their body until the possession ends. On your turn, you may forgo your own movement and actions to manipulate the host. When you do, you can immediately make it move and perform actions appropriate to its game statistics. You don't gain access to the target's knowledge, nor class features, if any."
 					]
 				},
 				"Once a creature fails its saving throw against this effect, you must finish a long rest before you can use {@i Subjugate} again."
@@ -1154,6 +1193,263 @@
 			"entries": [
 				"Beginning at 17th level, whenever you roll for initiative, you regain all expended uses of your Life Drain feature.",
 				"Additionally, any creature dealt damage by your Life Drain has its hit point maximum reduced by the same amount. The reduction lasts until the creature finishes a long rest. The target dies if this reduces its hit point maximum to 0."
+			]
+		},
+		{
+			"name": "Mischief Not Managed",
+			"source": "JRRTG",
+			"page": 8,
+			"className": "Ghost",
+			"classSource": "JRRTG",
+			"subclassShortName": "Mischief Not Managed",
+			"subclassSource": "JRRTG",
+			"level": 1,
+			"entries": [
+				"Not all who wander between worlds are grim spectres and dour phantoms. You linger to experience a thrill, pull off a heist, or entertain a loved one you couldn't while you were alive. Armed with a sense of humour uncommon amongst the dead, you regard your allies and hosts as accomplices in your supernatural pranks.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Soul Of Discretion|Ghost|JRRTG|Mischief Not Managed|JRRTG|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Poltergeist|Ghost|JRRTG|Mischief Not Managed|JRRTG|1"
+				}
+			]
+		},
+		{
+			"name": "Soul Of Discretion",
+			"source": "JRRTG",
+			"page": 8,
+			"className": "Ghost",
+			"classSource": "JRRTG",
+			"subclassShortName": "Mischief Not Managed",
+			"subclassSource": "JRRTG",
+			"level": 1,
+			"entries": [
+				"When you choose this unfinished business at 1st level, you gain proficiency in the Stealth skill."
+			],
+			"skillProficiencies": [
+				{
+					"stealth": true
+				}
+			]
+		},
+		{
+			"name": "Poltergeist",
+			"source": "JRRTG",
+			"page": 8,
+			"className": "Ghost",
+			"classSource": "JRRTG",
+			"subclassShortName": "Mischief Not Managed",
+			"subclassSource": "JRRTG",
+			"level": 1,
+			"entries": [
+				"Starting at 1st level, you can cast {@spell catapult|XGE} and {@spell mage hand|PHB} at will, requiring no components. When cast in this way, the hand produced by {@i mage hand|PHB} is {@condition invisible}, and the damage dice of catapult are replaced with a number of {@dice 1d8} equal to your {@i Supernatural Powers} value, as shown in the {@filter Ghost table|spells|class=Ghost}."
+			]
+		},
+		{
+			"name": "Beck And Call",
+			"source": "JRRTG",
+			"page": 8,
+			"className": "Ghost",
+			"classSource": "JRRTG",
+			"subclassShortName": "Mischief Not Managed",
+			"subclassSource": "JRRTG",
+			"level": 6,
+			"entries": [
+				"At 6th level, you gain proficiency in the Sleight of Hand skill (see {@classFeature Possession|Ghost|JRRTG|1|JRRTG} for the benefits of proficiency).",
+				"Additionally, when you cast mage hand, you can perform the following additional tasks with it:",
+				{
+					"type": "list",
+					"items": [
+						"You can stow one object the hand is holding in a container worn or carried by another creature.",
+						"You can retrieve an object in a container worn or carried by another creature."
+					]
+				},
+				"You can perform one of these tasks without being noticed by a creature if you succeed on a Dexterity (Sleight of Hand) check contested by the creature's Wisdom (Perception) check."
+			]
+		},
+		{
+			"name": "Dance Of The Departed",
+			"source": "JRRTG",
+			"page": 8,
+			"className": "Ghost",
+			"classSource": "JRRTG",
+			"subclassShortName": "Mischief Not Managed",
+			"subclassSource": "JRRTG",
+			"level": 6,
+			"entries": [
+				"Beginning at 6th level, you can cast {@spell animate objects|PHB}, requiring no components. When cast in this way, you can animate a number of objects equal to your {@i Supernatural Powers} value (instead of ten), as shown in the Ghost table.",
+				"Once you cast {@spell animate objects|PHB} in this way, you must finish a short or long rest before you can do so again."
+			]
+		},
+		{
+			"name": "Subtle Possession",
+			"source": "JRRTG",
+			"page": 8,
+			"className": "Ghost",
+			"classSource": "JRRTG",
+			"subclassShortName": "Mischief Not Managed",
+			"subclassSource": "JRRTG",
+			"level": 11,
+			"entries": [
+				"Beginning at 11th level, you can use your {@classFeature Possession|Ghost|JRRTG|1|JRRTG} ability on unwilling creatures. An unwilling target can be of any creature type except undead and may make a Charisma saving throw to resist the effect. If it passes, the possession fails, and you remain wherever you were before the attempt. Pass or fail, the target must succeed at a Wisdom (Insight) check against your Ghost save DC to determine that anything is amiss.",
+				"An unwilling host gains none of the benefits of your {@classFeature Possession|Ghost|JRRTG|1|JRRTG} ability. You gain the following action options while possessing an unwilling host:",
+				{
+					"type": "list",
+					"items": [
+						"{@i Delude}: You can cast phantasmal force, requiring no components. When cast in this way, the spell targets only your host, and ends early if the possession ends. You can't use Delude again before the possession ends.",
+						"{@i The Gibbering}: As an action, you force your host to make a Constitution saving throw. If they fail, they lose their concentration on spells, and can speak only in gibberish until the start of your next turn.",
+						"{@i Steal Thoughts}: You can cast detect thoughts, requiring no components. When cast in this way, the spell detects only your host, and ends early if the possession ends."
+						
+					]
+				},
+				"An unsuspecting host can use its action to repeat the Insight check, deducing your presence on a success. The host becomes aware of you automatically if you force them to make a saving throw. An unwilling host that learns of your presence can use its action to make a Charisma save. If it succeeds, the possession ends. The possession also ends if the host travels to a different plane of existence, leaving you behind.",
+				"Once an unwilling possession ends, or after a target succeeds on the initial saving throw, you must finish a long rest before you can possess that creature again. When an unwilling possession ends, you can use your reaction to possess a willing humanoid within 30 feet of you."
+			]
+		},
+		{
+			"name": "The Show Goes On",
+			"source": "JRRTG",
+			"page": 8,
+			"className": "Ghost",
+			"classSource": "JRRTG",
+			"subclassShortName": "Mischief Not Managed",
+			"subclassSource": "JRRTG",
+			"level": 17,
+			"entries": [
+				"Starting at 17th level, whenever you roll for initiative, if your {@subclassFeature Dance Of The Departed|Ghost|JRRTG|Mischief Not Managed|JRRTG|6} feature has been expended, you immediately regain its use.",
+				"Additionally, you can cast telekinesis, requiring no components. Once you cast the spell in this way, you must finish a short or long rest before you can do so again."
+			]
+		},
+		{
+			"name": "Restless Blade",
+			"source": "JRRTG",
+			"page": 9,
+			"className": "Ghost",
+			"classSource": "JRRTG",
+			"subclassShortName": "Restless Blade",
+			"subclassSource": "JRRTG",
+			"level": 1,
+			"entries": [
+				"For some, death on the battlefield is the highest honor or final insult, for others, it is the first step on a path of endless conflict. You aim to train a successor, perfect a martial art, or overcome a monster that you couldn't in life, but your skills go to waste without hands that can wield a blade. You look to your allies and hosts to pursue your goals, sharing in their glory as you guide and protect them.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "One With Blade|Ghost|JRRTG|Restless Blade|JRRTG|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Ephemeral Shield|Ghost|JRRTG|Restless Blade|JRRTG|1"
+				}
+			]
+		},
+		{
+			"name": "One With Blade",
+			"source": "JRRTG",
+			"page": 9,
+			"className": "Ghost",
+			"classSource": "JRRTG",
+			"subclassShortName": "Restless Blade",
+			"subclassSource": "JRRTG",
+			"level": 1,
+			"entries": [
+				"When you choose this unfinished business at 1st level, you gain proficiency with simple and martial weapons (see {@classFeature Possession|Ghost|JRRTG|1|JRRTG} for the benefits of weapon proficiency).",
+				"Additionally, whenever you take the {@i Harmonize} action, the attack you grant advantage to deals additional damage. The extra damage is a number of {@dice 1d8} equal to your {@i Supernatural Powers} value, as shown in the Ghost table. The damage type is the same as the attack's."
+			],
+			"weaponProficiencies": [
+				{
+					"martial": true,
+					"simple": true
+				}
+			]
+		},
+		{
+			"name": "Ephemeral Shield",
+			"source": "JRRTG",
+			"page": 9,
+			"className": "Ghost",
+			"classSource": "JRRTG",
+			"subclassShortName": "Restless Blade",
+			"subclassSource": "JRRTG",
+			"level": 1,
+			"entries": [
+				"Starting at 1st level, when a creature you're possessing suffers damage that is less than your current hit points, you can take the damage instead by absorbing the blow into your spectral form. The host's resistances and immunities apply as usual, but the damage you take can't be reduced in any way. Other effects inflicted by the damage's source apply to your host as normal."
+			]
+		},
+		{
+			"name": "Phantasmal Warrior",
+			"source": "JRRTG",
+			"page": 9,
+			"className": "Ghost",
+			"classSource": "JRRTG",
+			"subclassShortName": "Restless Blade",
+			"subclassSource": "JRRTG",
+			"level": 6,
+			"entries": [
+				"Beginning at 6th level, you've learned to wreathe yourself in energy, allowing you to impact the world around you for a limited time. Doing so requires a bonus action, and immediately ends your possession if you're possessing a host.",
+				"For one minute, you gain temporary hit points equal to your hit point maximum. While you have these hit points, you can make attacks, and can attack twice, instead of once, whenever you take the Attack action on your turn. While any of these hit points remain, your AC can't be less than 16, and you can interact with objects and equipment normally.",
+				"Your unarmed strikes in this state deal force damage, representing phantasmal blades, swiping claws, or other elements of your spectral appearance. In place of the normal damage die of your unarmed strike, you can roll a number of d6 equal to your Supernatural Powers value, as shown in the Ghost table.",
+				"After one minute, or when the last of these temporary hit points are lost but you are still conscious, you can use your reaction to possess a willing humanoid within 30 feet of you.",
+				"Once you use this feature, you must finish a short or long rest before you can use it again."
+			]
+		},
+		{
+			"name": "Otherworldly Champion",
+			"source": "JRRTG",
+			"page": 9,
+			"className": "Ghost",
+			"classSource": "JRRTG",
+			"subclassShortName": "Restless Blade",
+			"subclassSource": "JRRTG",
+			"level": 11,
+			"entries": [
+				"Starting at 11th level, you can extend your phantasmal presence to surround your host, lending strength to their strikes and cladding them in your crackling aura like armor.",
+				"While possessing a creature, you can cast {@spell Tenser's transformation|XGE}, requiring no components. When cast in this way, the spell affects your host, not you, and ends early if the possession ends. Once you cast Tenser's transformation in this way, you must finish a long rest before you can do so again."
+			]
+		},
+		{
+			"name": "Deathless Defiance",
+			"source": "JRRTG",
+			"page": 9,
+			"className": "Ghost",
+			"classSource": "JRRTG",
+			"subclassShortName": "Restless Blade",
+			"subclassSource": "JRRTG",
+			"level": 17,
+			"entries": [
+				"By 17th level, nothing can be done to stay your immortal wrath. Whenever you roll for initiative, if your {@subclassFeature Phantasmal Warrior|Ghost|JRRTG|Restless Blade|JRRTG|6} feature has been expended, you immediately regain its use.",
+				"Additionally, while in your phantasmal state, you are immune to the {@condition charmed} and {@condition frightened} conditions."
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Aria Of Discordance",
+			"source": "JRRTG",
+			"featureType": [
+				"OF:JRRTG"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Bard"
+						},
+						"subclass": {
+							"name": "Bae'Qeshel"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Bae'Qeshel|Bard|PHB|Bae'Qeshel|JRRTG|3|} feature",
+						"entrySummary": "Bae'Qeshel"
+					}
+				}
+			],
+			"page": 4,
+			"entries": [
+				"You can spend an inspiration die and use your Action to show your command over music to sing the Aria of The Bae'qeshel, creating a cone of sonic force. Each creature in a 30-foot cone originating from you must make a Constitution saving throw. On a failed save, a creature takes the result of your inspiration die in thunder damage and is pushed 5 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed. In addition, unsecured objects that are completely within the area of effect are automatically pushed 5 feet away from you by the spell's effect, and the spell emits a thunderous boom audible out to 150 feet.",
+				"{@b At Higher Levels.} Starting at 6th level, you may spend additional inspiration dice on this song. Each additional inspiration die grants thunder damage equal to the result of its roll and an additional 5 feet of push as part of the spell effect."
 			]
 		}
 	]
