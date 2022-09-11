@@ -1,0 +1,738 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_schema-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "JRRTG",
+				"abbreviation": "JRRTG",
+				"full": "The Ghost",
+				"authors": [
+					"J.R. Raffles"
+				],
+				"convertedBy": [
+					"p4535992"
+				],
+				"version": "2022.05.30",
+				"url": "https://www.dmsguild.com/product/332415/The-Ghost-a-5e-Class",
+				"targetSchema": "1.9.2"
+			}
+		],
+		"optionalFeatureTypes": {
+			"OF:JRRTG": "Manifestations",
+			"OF:JRRTG2": "Locus Of The Lost"
+		},
+		"dateAdded": 1559943252,
+		"dateLastModified": 1661529817,
+		"_dateLastModifiedHash": "3ee5c319eb",
+		"dependencies": {
+			"subclass": [
+				"generic"
+			]
+		}
+	},
+	"class": [
+		{
+			"name": "Occultist (Ghost Variant)",
+			"source": "JRRTG",
+			"page": 3,
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"wis",
+				"cha"
+			],
+			"startingProficiencies": {
+				"weapons": [
+					"none"
+				],
+				"tools": [
+					"anyArtisansTool"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"arcana",
+								"insight",
+								"investigation",
+								"perception",
+								"religion"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) a {@item scholar's pack|phb}, (b) a {@item explorer's pack|phb}",
+					"(a) a {@item Playing Card Set|phb|deck of playing or divining cards} or (b) an {@filter musical instrument|items|miscellaneous=mundane|type=instrument} or (c) an one set of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools}"
+				],
+				"goldAlternative": "{@dice 3d4 × 10|3d4 × 10|Starting Gold}",
+				"defaultData": [
+					{
+						"a": [
+							"scholar's pack|phb"
+						],
+						"b": [
+							"explorer's pack|phb"
+						],
+						"c": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"a": [
+							"Playing Card Set|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "instrumentMusical"
+							}
+						],
+						"c": [
+							{
+								"equipmentType": "toolArtisan"
+							}
+						]
+					}
+				]	
+			},
+			"multiclassing": {
+				"requirements": {
+					"cha": 13
+				},
+				"entries": [
+					"If your group uses the optional rule on multiclassing in the Player's Handbook, here's what you need to know if you choose occultist as one of your classes."
+				],			
+				"proficienciesGained": {
+					"skills": [
+						{
+							"choose": {
+								"from": [
+									"arcana",
+									"history",
+									"insight",
+									"intimidation",
+									"nature",
+									"religion"
+								],
+								"count": 1
+							}
+						}
+					],
+					"tools": [
+						"any one type of {@item artisan's tools|PHB} of your choice"
+					]
+				}
+			},
+			"spellcastingAbility": "cha",
+			"casterProgression": "full",
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"{@filter Supernatural Powers|spells|class=Ghost}",
+						"{@filter Manifestations Known|optionalfeatures|feature type=OF:JRRTG}"
+					],
+					"rows": [
+						[
+							1,
+							0
+						],
+						[
+							1,
+							0
+						],
+						[
+							1,
+							1
+						],
+						[
+							1,
+							1
+						],
+						[
+							2,
+							2
+						],
+						[
+							2,
+							2
+						],
+						[
+							2,
+							3
+						],
+						[
+							2,
+							3
+						],
+						[
+							3,
+							3
+						],
+						[
+							3,
+							3
+						],
+						[
+							3,
+							3
+						],
+						[
+							3,
+							4
+						],
+						[
+							4,
+							4
+						],
+						[
+							4,
+							5
+						],
+						[
+							4,
+							5
+						],
+						[
+							4,
+							5
+						],
+						[
+							5,
+							5
+						],
+						[
+							5,
+							6
+						],
+						[
+							5,
+							6
+						],
+						[
+							5,
+							6
+						]
+					]
+				}
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "Manifestations",
+					"featureType": [
+						"OF:JRRTG"
+					],
+					"progression": [
+						0,
+						0,
+						1,
+						1,
+						2,
+						2,
+						3,
+						3,
+						3,
+						3,
+						3,
+						4,
+						4,
+						5,
+						5,
+						5,
+						5,
+						6,
+						6,
+						6
+					]
+				}
+			],
+			"classSpells": [
+				"thaumaturgy|phb",
+				"augury|phb",
+				"armor of Agathys|phb",
+				"arms of Hadar|phb",
+				"disguise self|phb",
+				"speak with animals|phb",
+				"detect evil and good|phb",
+				"heroism|phb",
+				"jump|phb",
+				"longstrider|phb",
+				"protection from evil and good|phb",
+				"sanctuary|phb",
+				"shield of faith|phb",
+				"wrathful smite|phb",
+				"alter self|phb",
+				"blur|phb",
+				"branding smite|phb",
+				"darkvision|phb",
+				"enhance ability|phb",
+				"lesser restoration|phb",
+				"levitate|phb",
+				"locate animals or plants|phb",
+				"locate object|phb",
+				"mirror image|phb",
+				"Nystul's magic aura|phb",
+				"pass without trace|phb",
+				"see invisibility|",
+				"spider climb|phb",
+				"blinding smite|phb",
+				"blink|phb",
+				"crusader's mantle|phb",
+				"feign death|phb",
+				"fly|phb",
+				"haste|phb",
+				"nondetection|phb",
+				"protection from energy|phb",
+				"speak with plants|phb",
+				"spirit guardians|phb",
+				"remove curse|phb",
+				"tongues|phb",
+				"aura of life|phb",
+				"aura of purity|phb",
+				"death ward|phb",
+				"fire shield|phb",
+				"freedom of movement|phb",
+				"greater invisibility|phb",
+				"locate creature|phb",
+				"Otiluke's resilient sphere|phb",
+				"staggering smite|phb",
+				"antilife shell|phb",
+				"banishing smite|phb",
+				"circle of power|phb",
+				"destructive wave|phb",
+				"greater restoration|phb"
+			],
+			"classFeatures": [
+				"Channeler|Occultist (Ghost Variant)|JRRTG|1",
+				{
+					"classFeature": "Locus Of The Lost|Occultist (Ghost Variant)|JRRTG|1",
+					"gainSubclassFeature": true
+				},
+				"Personal Ability Score Improvement|Occultist (Ghost Variant)|JRRTG|4",
+				{
+					"classFeature": "Locus Of The Lost|Occultist (Ghost Variant)|JRRTG|6",
+					"gainSubclassFeature": true
+				},
+				"Personal Ability Score Improvement|Occultist (Ghost Variant)|JRRTG|8",
+				"Superior Medium|Occultist (Ghost Variant)|JRRTG|10",
+				{
+					"classFeature": "Locus Of The Lost|Occultist (Ghost Variant)|JRRTG|11",
+					"gainSubclassFeature": true
+				},
+				"Personal Ability Score Improvement|Occultist (Ghost Variant)|JRRTG|12",
+				"Personal Ability Score Improvement|Occultist (Ghost Variant)|JRRTG|16",
+				{
+					"classFeature": "Locus Of The Lost|Occultist (Ghost Variant)|JRRTG|17",
+					"gainSubclassFeature": true
+				},
+				"Personal Ability Score Improvement|Occultist (Ghost Variant)|JRRTG|19",
+				"Shepherd Of The Lost Souls|Occultist (Ghost Variant)|JRRTG|20"
+			],
+			"subclassTitle": "Occultist (Ghost Variant)",
+			"fluff": [
+				{
+					"name": "Occultist (Ghost Variant)",
+					"type": "section",
+					"source": "JRRTG",
+					"page": 2,
+					"entries": [
+						{
+							"type": "inset",
+							"entries": [
+								"This variant represents a spiritualist, medium, or paranormal proxy. Occultists guide spirits but are themselves alive. The occultist can be played as a standalone class, or used in conjunction with the multiclassing rules in the Player's Handbook"
+							]
+						},
+						"Whether you're a commoner haunted by a loved one lost too soon, an adventurer beset by poltergeists, or a dedicated student of occult magic, you can call forth spirits from the Border Ethereal and commune with them.",
+						{
+							"type": "entries",
+							"name": "Speaker for Lost Soul",
+							"entries": [
+								"Some occultists are pragmatic in their study, conjuring spirits to draw on their expertise. Others are empathic, listening for guidance from spirits who share their plight. Some are shamanic, mentored by nature spirits, while others unwittingly channel the dead, believing themselves haunted, unaware of their gifts.",
+								"What's your relationship like with the spirits you channel? Do they enter your service of their own volition, or are they bound to you, hoping to misconstrue your orders and slip their bonds? Perhaps you've struck a bargain with one lost soul, pursuing their unfinished business in return for aid? Is a particular spirit your tutor, such as a fallen comrade or totem animal, or do you seek guidance from a different soul each day?",
+								{
+									"type": "table",
+									"colLabels": [
+										"d8",
+										"Bond"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											"1",
+											"I answered the call to adventure after a loved one's death. Now, their spirit accompanies me on my perilous journey."
+										],
+										[
+											"2",
+											"I channel the soul of an old enemy, suppressing their malice and guiding them toward redemption."
+										],
+										[
+											"3",
+											"I'm haunted by one or more spirits that never speak to me. Interpreting their cryptic omens is my full-time job, and I fear their displeasure should I misconstrue them."
+										],
+										[
+											"4",
+											"Every night, I'm contacted by a different spirit from the local area, hoping I'll channel them and revisit their old haunts."
+										],
+										[
+											"5",
+											"I'm completely unaware of the spirit that guards me, mistaking its intervention for strokes of luck, or believing I have my own magical powers."
+										],
+										[
+											"6",
+											"I spend hours meditating on the natural world, and animal spirits appear to me offering guidance."
+										],
+										[
+											"7",
+											"A brush with death left me stood with one foot in the grave. Suddenly able to see spirits, I use my newfound abilities to help lost souls with their unfinished business."
+										],
+										[
+											"8",
+											"A crime in my past drew the eye of a malicious spirit, which tempts me with power to continue its dark work."
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "One foot in the grave",
+							"entries": [
+								"Warriors dishonored on the battlefield; commoners killed in cold blood; mentors who outlived their students; thieves who died behind bars plotting one last heist. Unable to find rest, ghosts are lost souls tied to the Border Ethereal. Some appear as spectral adventurers, replete with the tools of their trade. Others present as animals, or in abstract forms representing their personalities.",
+								"Ghosts bring a little of the otherworld with them when they return to the Material Plane. In time, they learn to harness the forces that sustain them, finding new ways to bend reality and assail their foes.",
+								"Through possession, ghosts are able to merge with and manipulate mortals. Though some are malicious and domineering, most go in search of companions who will heed their counsel. If a ghost and their host work in harmony, they can overcome obstacles neither could surmount alone."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Undying Purpose",
+							"entries": [
+								"Ghosts linger to see their unfinished business done, and the way their powers manifest reflects this task. Most met with untimely deaths, their origins steeped in tragedy. Others had duties unattainable in a single lifetime, such as guarding a relic or defending a certain bloodline. Such a soul might forgo their rest until a worthy successor is found, or serve as guardian to several generations of descendants. The beneficiaries of such protection should count themselves lucky, for a ghost's insight alone can avert disaster.",
+								"Half-trapped outside reality, ghosts depend on their allies to pursue their goals. Trustworthy companions are hard to find and these bonds, once forged, can last lifetimes. Unconstrained by time, a ghost might spend decades mentoring such a charge. Others might hunt artifacts or study occult lore: anything to avoid repeating their mortal failures."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating a Ghost",
+							"entries": [
+								"Creating a ghost character demands a backstory dominated by an extraordinary event: your death. Perhaps your demise itself began your unfinished business and you've sworn revenge against the villain that laid you low. Perhaps your passing was simply an obstacle on the road to a wider goal: the mastery of magic; the perfection of a martial art; or the appointment of a worthy successor to an ancient task.",
+								"What's your relationship like with your adventuring companions? Did they stumble across the relic you guard and take it with them, or is a member of their company the beneficiary of an old accord? Perhaps you were one of their number to begin with, and you linger to finish the adventure that claimed your life? Is one party member in particular your chosen champion, or do you consider the entire group your flock?",
+								{
+									"type": "inset",
+									"name": "Ghostly Encore",
+									"entries": [
+										"When a player character dies with unfinished business, the DM may allow them to forgo their rest, replacing one or more of their class levels with levels in ghost. Consider letting a character with a low Charisma modifier substitute their Intelligence or Wisdom when using ghost class features."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Quick Build",
+									"entries": [
+										"You can make a ghost quickly by following these suggestions. First, Charisma should be your highest ability score, followed by Constitution. If you plan to select the {@i Mischief Not Managed} unfinished business, make Dexterity your second-best score instead. Next, choose the {@background Variant Noble (Knight)|PHB} or {@background Variant Noble (Retainers)|PHB}, and take the variant feature: Retainers."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Quirks and Foibles",
+							"entries": [
+								"Consider adding some flourishes to make your ghost character stand out. The section below contains a few ideas. You can roll dice to determine traits randomly, pick those you fancy, or use the suggestions as inspiration for your own designs.",
+								{
+									"type": "entries",
+									"name": "Signature Phenomenon",
+									"entries": [
+										"Every ghost has a tell-tale manifestation that they can't control: strange sounds, creeping chills, or sensations of profound loneliness or giddy excitement.",
+										{
+											"type": "table",
+											"colLabels": [
+												"d6",
+												"Signature Phenomenon"
+											],
+											"colStyles": [
+												"col-1 text-center",
+												"col-11"
+											],
+											"rows": [
+												[
+													"1",
+													"A distant melody, tuneful birdcall, or fragment of nursery rhyme is carried on the wind around me."
+												],
+												[
+													"2",
+													"Nearby pools and mirrors reflect older, more decrepit versions of those viewing them."
+												],
+												[
+													"3",
+													"Animals sense when I'm close: cats hiss, dogs bark, and insects swarm without provocation."
+												],
+												[
+													"4",
+													"I'm accompanied by gusts of chill wind or a warm summer breeze. Candles gutter and go out as I approach."
+												],
+												[
+													"5",
+													"Hoarfrost creeps over nearby objects when I stand still."
+												],
+												[
+													"6",
+													"Flowers blossom in my presence, but rapidly wither away when I move on."
+												]
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Untimely Demise",
+									"entries": [
+										"As often as not, ghosts' origins are steeped in tragedy. What was the cause of your untimely passing, and how does the way you died affect your demeanor?",
+										{
+											"type": "table",
+											"colLabels": [
+												"d6",
+												"Cause of Death"
+											],
+											"colStyles": [
+												"col-1 text-center",
+												"col-11"
+											],
+											"rows": [
+												[
+													"1",
+													"My body lies broken alongside countless others on a forgotten battlefield."
+												],
+												[
+													"2",
+													"I died in my sleep near the end of my natural lifespan, but until I appoint a successor I'll never rest."
+												],
+												[
+													"3",
+													"I can't even remember how I died, and I'm not entirely sure I want to know."
+												],
+												[
+													"4",
+													"Not even I survived the villain that slew my people, but that won't stop me from taking revenge."
+												],
+												[
+													"5",
+													"Dead? I'm not dead! How could we possibly be talking if I was dead?!"
+												],
+												[
+													"6",
+													"I died in an embarrassing mundane accident, so I make up a different story whenever I'm asked."
+												]
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Possession Quirk",
+									"entries": [
+										"Willing hosts help anchor ghosts to the mortal world, and ghosts repay this trust with counsel and protection. Though few would choose a battle of wills over earnest cooperation, most can't help but influence their hosts, allowing their personalities to overspill, or lacking complete control of their spirit bodies.",
+										"The following might apply to your hosts while you possess them. Make sure other players are comfortable using these traits: even if you possess them, it's their decision whether or not to play along.",
+										{
+											"type": "table",
+											"colLabels": [
+												"d6",
+												"Host's Quirk"
+											],
+											"colStyles": [
+												"col-1 text-center",
+												"col-11"
+											],
+											"rows": [
+												[
+													"1",
+													"hoard objects that the ghost possessing me desires, such as coins, dice, wands, or holy symbols."
+												],
+												[
+													"2",
+													"Even sat by a roaring campfire and dressed in the thickest coat, I never feel warm."
+												],
+												[
+													"3",
+													"I just can't help myself around good food: everything tastes like I've never tried it before!"
+												],
+												[
+													"4",
+													"I'm terrified of an implement that was involved in the death of the ghost possessing me."
+												],
+												[
+													"5",
+													"Whether doing something for the first time or the hundredth, I experience vivid flashes of déjà vu."
+												],
+												[
+													"6",
+													"I sometimes unwittingly speak in the language of the ghost possessing me, bewildering my fellow adventures."
+												]
+											]
+										}
+									]
+								}
+							]
+						},
+						"As an occultist, you gain the following class features."
+					]
+				}
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Channeler",
+			"source": "JRRTG",
+			"page": 14,
+			"className": "Occultist (Ghost Variant)",
+			"classSource": "JRRTG",
+			"level": 1,
+			"entries": [
+				"Starting at 1st level, you can call forth a lost soul from the Border Ethereal whenever you finish a long rest. This apparition uses your ability scores, has a base walking speed of 30 feet, and is proficient in your choice of any three skills, tools, or languages. It otherwise uses the statistics of a ghost character with no race or background, with as many levels in ghost as you have occultist.",
+				"You control the spirit, which takes its turn on your initiative. You choose how it behaves and moves, though it doesn't take actions unless you command it to. You can use your action to mentally command the spirit if it is within 120 feet of you. When you do, it can take actions appropriate to its game statistics until the start of your next turn. The spirit never requires your command to use its reaction. Until given its first command, the spirit you channel inhabits you using {@classFeature Possession|Ghost|JRRTG|1|JRRTG}.",
+				"If you die, the spirit vanishes. If you fall unconscious, the spirit is incapacitated until you regain consciousness. If the spirit dies, you must make a Charisma save against its Ghost save DC, suffering 3 levels of exhaustion if you fail, or 1 if you pass. Whenever you finish a long rest, you can channel a different spirit, dismissing any others. When you do, you can choose different skills, tools, or languages for its 3 proficiencies.",
+				"If an occultist class feature 'replaces' a feature of a different name, the spirits you summon with Channeler don't gain that feature. Beginning at 3rd level in this class, you can choose the ghost's Manifestations whenever you summon it."
+			]
+		},
+		{
+			"name": "Locus Of The Lost",
+			"source": "JRRTG",
+			"page": 14,
+			"className": "Occultist (Ghost Variant)",
+			"classSource": "JRRTG",
+			"level": 1,
+			"entries": [
+				"At 1st level, you choose the nature of the lost souls you channel and command.",
+				"Select an {@classFeature Unfinished Business|Occultist (Ghost Variant)|JRRTG|1|JRRTG} from the Ghost class feature of the same name: Duty Not Done, Malice Unsated, Mischief Not Managed, or Restless Blade.",
+				"The Unfinished Business you choose applies to every ghost summoned by your {@classFeature Channeler|Occultist (Ghost Variant)|JRRTG|1|JRRTG} feature. If your choice allows spirits to learn spells from the {@filter Ghost spell list|spells|class=Ghost}, choose them when you gain this feature and whenever you gain levels in this class. Every spirit you summon knows the same list of {@filter Ghost spells|spells|class=Ghost}."
+			]
+		},
+		{
+			"name": "Locus Of The Lost",
+			"source": "JRRTG",
+			"page": 14,
+			"className": "Occultist (Ghost Variant)",
+			"classSource": "JRRTG",
+			"level": 6,
+			"entries": [
+				"At 1st level, you choose the nature of the lost souls you channel and command.",
+				"Select an {@classFeature Unfinished Business|Occultist (Ghost Variant)|JRRTG|1|JRRTG} from the Ghost class feature of the same name: Duty Not Done, Malice Unsated, Mischief Not Managed, or Restless Blade.",
+				"The Unfinished Business you choose applies to every ghost summoned by your {@classFeature Channeler|Occultist (Ghost Variant)|JRRTG|1|JRRTG} feature. If your choice allows spirits to learn spells from the {@filter Ghost spell list|spells|class=Ghost}, choose them when you gain this feature and whenever you gain levels in this class. Every spirit you summon knows the same list of {@filter Ghost spells|spells|class=Ghost}."
+			]
+		},
+		{
+			"name": "Locus Of The Lost",
+			"source": "JRRTG",
+			"page": 14,
+			"className": "Occultist (Ghost Variant)",
+			"classSource": "JRRTG",
+			"level": 11,
+			"entries": [
+				"At 1st level, you choose the nature of the lost souls you channel and command.",
+				"Select an {@classFeature Unfinished Business|Occultist (Ghost Variant)|JRRTG|1|JRRTG} from the Ghost class feature of the same name: Duty Not Done, Malice Unsated, Mischief Not Managed, or Restless Blade.",
+				"The Unfinished Business you choose applies to every ghost summoned by your {@classFeature Channeler|Occultist (Ghost Variant)|JRRTG|1|JRRTG} feature. If your choice allows spirits to learn spells from the {@filter Ghost spell list|spells|class=Ghost}, choose them when you gain this feature and whenever you gain levels in this class. Every spirit you summon knows the same list of {@filter Ghost spells|spells|class=Ghost}."
+			]
+		},
+		{
+			"name": "Locus Of The Lost",
+			"source": "JRRTG",
+			"page": 14,
+			"className": "Occultist (Ghost Variant)",
+			"classSource": "JRRTG",
+			"level": 17,
+			"entries": [
+				"At 1st level, you choose the nature of the lost souls you channel and command.",
+				"Select an {@classFeature Unfinished Business|Occultist (Ghost Variant)|JRRTG|1|JRRTG} from the Ghost class feature of the same name: Duty Not Done, Malice Unsated, Mischief Not Managed, or Restless Blade.",
+				"The Unfinished Business you choose applies to every ghost summoned by your {@classFeature Channeler|Occultist (Ghost Variant)|JRRTG|1|JRRTG} feature. If your choice allows spirits to learn spells from the {@filter Ghost spell list|spells|class=Ghost}, choose them when you gain this feature and whenever you gain levels in this class. Every spirit you summon knows the same list of {@filter Ghost spells|spells|class=Ghost}."
+			]
+		},
+		{
+			"name": "Personal Ability Score Improvement",
+			"source": "JRRTG",
+			"page": 14,
+			"className": "Occultist (Ghost Variant)",
+			"classSource": "JRRTG",
+			"level": 4,
+			"entries": [
+				"When you reach 4th level, and again at 8th, 12th, 16th and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+			]
+		},
+		{
+			"name": "Personal Ability Score Improvement",
+			"source": "JRRTG",
+			"page": 14,
+			"className": "Occultist (Ghost Variant)",
+			"classSource": "JRRTG",
+			"level": 8,
+			"entries": [
+				"When you reach 4th level, and again at 8th, 12th, 16th and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+			]
+		},
+		{
+			"name": "Personal Ability Score Improvement",
+			"source": "JRRTG",
+			"page": 14,
+			"className": "Occultist (Ghost Variant)",
+			"classSource": "JRRTG",
+			"level": 12,
+			"entries": [
+				"When you reach 4th level, and again at 8th, 12th, 16th and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+			]
+		},
+		{
+			"name": "Personal Ability Score Improvement",
+			"source": "JRRTG",
+			"page": 14,
+			"className": "Occultist (Ghost Variant)",
+			"classSource": "JRRTG",
+			"level": 16,
+			"entries": [
+				"When you reach 4th level, and again at 8th, 12th, 16th and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+			]
+		},
+		{
+			"name": "Personal Ability Score Improvement",
+			"source": "JRRTG",
+			"page": 14,
+			"className": "Occultist (Ghost Variant)",
+			"classSource": "JRRTG",
+			"level": 19,
+			"entries": [
+				"When you reach 4th level, and again at 8th, 12th, 16th and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+			]
+		},
+		{
+			"name": "Superior Medium",
+			"source": "JRRTG",
+			"page": 14,
+			"className": "Occultist (Ghost Variant)",
+			"classSource": "JRRTG",
+			"level": 10,
+			"entries": [
+				"By 10th level, you've learned to channel not only the restless dead, but also the tumultuous thoughts of the living.",
+				"You can cast {@spell Rary's telepathic bond|PHB} at will, requiring no components. Creatures connected in this way have advantage on saving throws to resist being {@condition charmed} or {@condition frightened}. While connected by this bond, you can use your action to command a spirit regardless of the distance between you."
+			]
+		},
+		{
+			"name": "Shepherd Of The Lost Souls",
+			"source": "JRRTG",
+			"page": 14,
+			"className": "Occultist (Ghost Variant)",
+			"classSource": "JRRTG",
+			"level": 20,
+			"entries": [
+				"At 20th level, you are a shining beacon to wandering spirits, able to grant reprieve to the restless dead. Spirits summoned by your {@classFeature Channeler|Occultist (Ghost Variant)|JRRTG|1|JRRTG} feature can take actions without being commanded (you still decide which actions they take).",
+				"Additionally, you can attempt to put lingering spirits to rest. As an action, you can soothe an undead creature you can see within 5 feet of you, even if the creature is on the {@i Ethereal Plane}. A willing target is immediately destroyed, allowing its soul, if any, to move on to the afterlife. An unwilling target makes a Charisma saving throw with a DC equal to its own Charisma score, dropping to 0 hit points on a fail, or becoming immune to this feature for 24 hours on a success. Undead that cannot be turned succeed on their saving throw automatically."
+			]
+		}
+	]
+}
