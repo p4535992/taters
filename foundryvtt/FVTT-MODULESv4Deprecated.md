@@ -2,6 +2,21 @@
 # NOT ESSENTIAL 
 # ======================================================================
 
+## 2022-09-12
+
+- [MAP][BETTER STAIRWAYS AND LEVELS][Multilevel Tokens module for Foundry VTT](https://github.com/grandseiken/foundryvtt-multilevel-tokens )
+- [TABLE][NEED UPDATE][Better Rolltables](https://github.com/ultrakorne/better-rolltables )
+- [UTILITY][NOT ESSENTIAL][Icon Picker](https://github.com/teroparvinen/foundry-icon-picker)
+- [ITEM][Drop Effects on Items](https://github.com/ElfFriend-DnD/foundryvtt-drop-effects-on-items)
+- [CHARACTER SHEET][IS BETTER ITEM PILES][Merchant Sheet NPC](https://github.com/whelan/fvtt-merchant-sheet-npc)
+- [EXTERNAL][NOT ESSENTIAL WAIT FOR THE FVTT 10][Forien Quest Log by LoFD](https://github.com/League-of-Foundry-Developers/foundryvtt-forien-quest-log)
+- [UTILITY][NOT ESSENTIAL][Token frames](https://github.com/jcolson/token_frames)
+- [UTILITY][NOT ESSENTIAL][Introduce Me](https://github.com/WBHarry/introduce-me)
+- [JOURNAL][NOT ESSENTIAL][Arius Planeswalker's Stylish Journal for Monk's Enhanced Journal](https://github.com/AmazingVanish/apsj4mej)
+- [JOURNAL/CHAT][NOT ESSENTIAL][Polyglot](https://github.com/League-of-Foundry-Developers/fvtt-module-polyglot )
+- [JOURNAL/CHAT][NOT ESSENTIAL][Polyglot](https://github.com/League-of-Foundry-Developers/fvtt-module-polyglot )
+- [UTILITY][INTEGRATED ON HIDDEN LINK][Hide-Sidebars](https://github.com/NutritiousCookie/Hide-Sidebars)
+
 ## 2022-06-12
 
 - [IT WILL BE SOON INTEGRATE WITH PIN CUSHION][NOTE][Pin Fixer](https://foundryvtt.com/packages/pin-fixer)
@@ -218,7 +233,6 @@
 - [NOT ESSENTIAL][AUDIO][Foundry VTT - Game Audio Bundle 4 of 4](https://github.com/datdamnzotz/FoundryVTT-Game-Audio-Bundle-4 ) - https://raw.githubusercontent.com/datdamnzotz/FoundryVTT-Game-Audio-Bundle-4/master/module.json
 - [NOT ESSENTIAL][AUDIO][Adventure Music](https://foundryvtt.com/packages/adventuremusic/ )
 - [NOT ESSENTIAL][AUDIO][Tabletop RPG Music](https://foundryvtt.com/packages/tabletop-rpg-music/ )
-- [NOT ESSENTIAL][JOURNAL/TOKEN][Automatic journal Icon Numbers](https://gitlab.com/tiwato/journal_icon_numbers ) - https://gitlab.com/tiwato/journal_icon_numbers/raw/master/module.json
 - [Abbandoned][JOURNAL/ACTOR][SideBar Aesthetics](https://gitlab.com/Furyspark/foundryvtt-sidebar-aesthetics/-/tree/master ) - https://gitlab.com/Furyspark/foundryvtt-sidebar-aesthetics/raw/master/module.json
 - [Abbandoned][JOURNAL][Manny-Language](https://github.com/MannyKSoSo/Manny-Language ) - https://raw.githubusercontent.com/MannyKSoSo/Manny-Language/main/module.json
 - [NOT ESSENTIAL][CHARACTER SHEET/UTILITY][FVTT-Skill-Customization-5e](https://github.com/schultzcole/FVTT-Skill-Customization-5e ) - https://raw.githubusercontent.com/schultzcole/FVTT-Skill-Customization-5e/master/module.json

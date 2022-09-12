@@ -8,10 +8,8 @@
 - [TOKEN][Token Action HUD](https://github.com/espositos/fvtt-tokenactionhud )
 - [TABLE][Community Tables](https://github.com/foundry-vtt-community/tables )
 - [EXTERNAL][Theatre](https://github.com/League-of-Foundry-Developers/fvtt-module-theatre )
-- [EXTERNAL][Forien Quest Log by LoFD](https://github.com/League-of-Foundry-Developers/foundryvtt-forien-quest-log)
 - [TOKEN/MAP][Drag Upload](https://github.com/cswendrowski/FoundryVTT-Drag-Upload )
-- [TOKEN][Health Estimate](https://gitlab.com/tsuki.no.mai/healthestimate/ )
-- [TEMPLATE][Token Magic FX](https://github.com/Feu-Secret/Tokenmagic/ )
+- [TOKEN][Health Estimate](https://gitlab.com/tsuki.no.mai/healthestimate/)
 
 - [ENTITY][Item Macro](https://github.com/Kekilla0/Item-Macro )
 - [ROLL][Dice Calculator/Dice Tray](https://gitlab.com/asacolips-projects/foundry-mods/foundry-vtt-dice-calculator/ )
@@ -38,18 +36,15 @@
 - [JOURNAL/UTILITY][Share Media](https://github.com/DarKDinDoN/share-media)
 
 - [Scene][Monk's Active Tile Triggers](https://github.com/ironmonk88/monks-active-tiles/)
-- [CHARACTER SHEET][Merchant Sheet NPC](https://github.com/whelan/fvtt-merchant-sheet-npc)
 - [UTILITY][Monk's Little Details](https://github.com/ironmonk88/monks-little-details)
 - [UTILITY][JB2A Sequencer Macro Library](https://github.com/IrateRedKite/jb2a-sequencer-spell-macros)
-- [ITEM][Drop Effects on Items](https://github.com/ElfFriend-DnD/foundryvtt-drop-effects-on-items)
 - [UTILITY][Ignore Vision](https://github.com/manuelVo/foundryvtt-ignore-vision/tree/master)
 - [UTILITY][VINO - Visual Interactive Novel Overlay](https://github.com/cswendrowski/FoundryVTT-ViNo)
 
 - [UTILITY][Roger's Additional Metric Ruler Labels](https://github.com/Roger92/metric-ruler-labels)
 - [UTILITY][Quick Insert](https://gitlab.com/fvtt-modules-lab/quick-insert )
 - [UTILITY][Item Piles](https://github.com/fantasycalendar/FoundryVTT-ItemPiles)
-- [UTILITY][Icon Picker](https://github.com/teroparvinen/foundry-icon-picker)
-- [EFFECT][Token Magic FX](https://github.com/Feu-Secret/Tokenmagic)
+- [TOKEN/TEMPLATE/EFFECT][Token Magic FX](https://github.com/Feu-Secret/Tokenmagic)
 - [TOKEN][Your Tokens Visible](https://github.com/David-Zvekic/TokensVisible)
 - [TOKEN][Token Says](https://github.com/napolitanod/Token-Says)
 - [UTILITY][Token Variant Art](https://github.com/Aedif/TokenVariants)
@@ -59,30 +54,29 @@
 - [UTILITY][Item Delete Check](https://gitlab.com/tposney/item-delete-check/tree/master )
 - [COMBAT][Perfect Vision](https://github.com/dev7355608/perfect-vision )
 - [CHAT][DragonFlagon Chat Enhancements](https://github.com/flamewave000/dragonflagon-fvtt/tree/master/df-chat-enhance )
-- [TABLE][Better Rolltables](https://github.com/ultrakorne/better-rolltables )
-- [MAP][Multilevel Tokens module for Foundry VTT](https://github.com/grandseiken/foundryvtt-multilevel-tokens )
 - [UTILITY][Forien Copy](https://github.com/League-of-Foundry-Developers/foundryvtt-forien-copy-environment )
 - [MAP][Parallaxia](https://gitlab.com/reichler/parallaxia )
 - [UTILITY/MODULES][DF Settings Clarity](https://github.com/flamewave000/dragonflagon-fvtt/tree/master/df-settings-clarity )
-- [JOURNAL/CHAT][Polyglot](https://github.com/League-of-Foundry-Developers/fvtt-module-polyglot )
+
 - [UTILITY][Pause Control](https://gitlab.com/koboldworks/agnostic/pause-control)
 - [WALL][Wall Height](https://github.com/schultzcole/FVTT-Wall-Height )
 
 - [TOKEN/SCENES][Go to Player](https://github.com/theripper93/go-to-player)
 - [TOKEN/SCENES][pull-players-to-scene](https://github.com/Mr-Byte/pull-players-to-scene )
 - [SIDEBAR][Hidden Entity Links](https://github.com/p4535992/vtt-hidden-entity-links)
-- [NOTE][Pin Cushion (fork by p4535992)](https://github.com/p4535992/pin-cushion)
-- [JOURNAL/CHAT][Polyglot](https://github.com/League-of-Foundry-Developers/fvtt-module-polyglot )
+- [NOTE][Pin Cushion](https://github.com/p4535992/foundryvtt-pin-cushion)
+
 - [EXTERNAL][Popout](https://github.com/kakaroto/fvtt-module-popout)
 - [UTILITY][Rangefinder](https://github.com/manuelVo/foundryvtt-rangefinder)
-
-- [UTILITY][Token frames]([token_frames](https://github.com/jcolson/token_frames)
 - [UTILITY][Tile Sort](https://github.com/theripper93/tile-sort)
 - [UTILITY][Multiface tile](https://gitlab.com/Freeze020/multiface-tiles/)
-- [UTILITY][Introduce Me](https://github.com/WBHarry/introduce-me)
-- [JOURNAL][Arius Planeswalker's Stylish Journal for Monk's Enhanced Journal](https://github.com/AmazingVanish/apsj4mej)
 - [TOKEN][Shared Vision](https://github.com/CDeenen/SharedVision )
-- [UTILITY][Hide-Sidebars](https://github.com/NutritiousCookie/Hide-Sidebars)
+- [UTILITY][QoL - Maximize Reopened Sheets](https://github.com/shemetz/qol-maximize-reopened-sheets)
+- [JOURNAL/NOTE][Automatic journal Icon Numbers](https://gitlab.com/tiwato/journal_icon_numbers )
+- [UTILITY][Roll New Character Stats (RNCS)](https://github.com/MrXofar/roll-new-character-stats)
+- [UTILITY][Module Management+](https://github.com/mouse0270/module-credits)
+- [UTILITY][Jack Kerouac's Spell Effects Sequencer Plugin](https://github.com/MrVauxs/Sequencer-JKAE-Database)
+- [UTILITY][Remote Highlight UI](https://github.com/shemetz/remote-highlight-ui)
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
@@ -101,6 +95,7 @@
 - [COMBAT][Token Auras](https://bitbucket.org/Fyorl/token-auras )
 - [COMBAT][Shy Effects](https://github.com/kandashi/shy-effect-icons)
 - [COMBAT][Combat Hp Display](https://github.com/WBHarry/combat-hp-display)
+- [COMBAT][Random Target](https://github.com/mcavallo/foundry-vtt-random-target)
 
 ## MODULES NECESSARI SOLO IN FASE DI COSTRUZIONE E NON DI SESSIONE
 
