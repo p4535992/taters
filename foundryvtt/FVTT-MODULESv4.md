@@ -2,7 +2,6 @@
 
 - [EXTERNAL][About Time](https://gitlab.com/tposney/about-time )
 - [EXTERNAL][FxMaster](https://github.com/ghost-fvtt/fxmaster)
-- [EXTERNAL][TidyUI](https://github.com/sdenec/tidy-ui_game-settings )
 - [ENTITY][Compendium Folders](https://github.com/earlSt1/vtt-compendium-folders )
 - [ENTITY][Permission Viewer](https://github.com/kakaroto/fvtt-module-permission-viewer )
 - [TOKEN][Token Action HUD](https://github.com/espositos/fvtt-tokenactionhud )
@@ -77,10 +76,14 @@
 - [UTILITY][Module Management+](https://github.com/mouse0270/module-credits)
 - [UTILITY][Jack Kerouac's Spell Effects Sequencer Plugin](https://github.com/MrVauxs/Sequencer-JKAE-Database)
 - [UTILITY][Remote Highlight UI](https://github.com/shemetz/remote-highlight-ui)
+- [UTILITY][Introduce Me](https://github.com/WBHarry/introduce-me)
+- [UTILITY][Comprehend Languages](https://github.com/Meneltamar/fvtt-comprehend-languages)
+- [UTILITY][Weather FX](https://github.com/LeafWulf/weatherfx)
+- [UTILITY][Flying Tokens](https://github.com/LeafWulf/flying-tokens)
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
-- [COMBAT/ACTIVE EFFECTS][Time Up](https://gitlab.com/tposney/times-up )
+
 - [COMBAT/ROLL][Let me roll that for you](https://github.com/League-of-Foundry-Developers/fvtt-module-lmrtfy )
 - [COMBAT][Arbron's Improved HP Bar](https://github.com/arbron/fvtt-hp-bar)
 - [COMBAT][Combat Utility Belt](https://github.com/death-save/combat-utility-belt )
@@ -93,15 +96,15 @@
 - [COMBAT][Smart Target](https://github.com/theripper93/Smart-Target)
 - [COMBAT][Tagger](https://github.com/fantasycalendar/FoundryVTT-Tagger)
 - [COMBAT][Token Auras](https://bitbucket.org/Fyorl/token-auras )
-- [COMBAT][Shy Effects](https://github.com/kandashi/shy-effect-icons)
-- [COMBAT][Combat Hp Display](https://github.com/WBHarry/combat-hp-display)
 - [COMBAT][Random Target](https://github.com/mcavallo/foundry-vtt-random-target)
+- [COMBAT][Combat Hp Display](https://github.com/WBHarry/combat-hp-display)
 
 ## MODULES NECESSARI SOLO IN FASE DI COSTRUZIONE E NON DI SESSIONE
 
-- [UTILITY][Dragon Flagon Architect](https://github.com/flamewave000/dragonflagon-arch)
+
 - [WALL][Monks Wall Enchancement](https://github.com/ironmonk88/monks-wall-enhancement)
 - [LIGHT/SOUND][Light/Sound Mask](https://github.com/caewok/fvtt-light-mask)
+
 
 # MODULES DA VERIFICARE SE NECESSARI
 
@@ -131,11 +134,12 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 - [COMBAT][Wild Magic Surge 5e](https://github.com/johnnolan/wild-magic-surge-5e)
 
 - [CHARACTER SHEET/UTILITY][Variant Encumbrance 5e](https://github.com/VanirDev/VariantEncumbrance )
-- [Argon - Combat HUD](https://github.com/theripper93/enhancedcombathud)
-- [Custom Abilities & Skills](https://github.com/misthero/dnd5e-custom-skills)
+- [UI][Argon - Combat HUD](https://github.com/theripper93/enhancedcombathud)
+- [COMBAT][Arbron’s Summoning]()
+- [CHARACTER SHEET][Custom Abilities & Skills](https://github.com/misthero/dnd5e-custom-skills)
 - [CHARACTER SHEET/UTILITY][Inventory Plus](https://github.com/p4535992/inventory-plus )
 
-- [UTILITY][Monk's Shops](https://github.com/ironmonk88/monks-shops)
+- [JOURNALS][UTILITY][Monk's Shops](https://github.com/ironmonk88/monks-shops)
 
 ## [SYSTEM] PATHFINDER 1 MODULES
 

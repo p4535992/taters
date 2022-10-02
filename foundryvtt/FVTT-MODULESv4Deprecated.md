@@ -2,8 +2,16 @@
 # NOT ESSENTIAL 
 # ======================================================================
 
-## 2022-09-12
+## 2022-10-01
 
+- [COMBAT/ACTIVE EFFECTS][Time Up](https://gitlab.com/tposney/times-up )
+- [COMBAT][Shy Effects](https://github.com/kandashi/shy-effect-icons)
+- [UTILITY][Dragon Flagon Architect](https://github.com/flamewave000/dragonflagon-arch)
+- [Darkness Activated Tiles](https://github.com/caelwarner/DarknessActivatedTiles)
+
+## 2022-09-1
+
+- [EXTERNAL][TidyUI](https://github.com/sdenec/tidy-ui_game-settings )
 - [MAP][BETTER STAIRWAYS AND LEVELS][Multilevel Tokens module for Foundry VTT](https://github.com/grandseiken/foundryvtt-multilevel-tokens )
 - [TABLE][NEED UPDATE][Better Rolltables](https://github.com/ultrakorne/better-rolltables )
 - [UTILITY][NOT ESSENTIAL][Icon Picker](https://github.com/teroparvinen/foundry-icon-picker)
@@ -11,7 +19,7 @@
 - [CHARACTER SHEET][IS BETTER ITEM PILES][Merchant Sheet NPC](https://github.com/whelan/fvtt-merchant-sheet-npc)
 - [EXTERNAL][NOT ESSENTIAL WAIT FOR THE FVTT 10][Forien Quest Log by LoFD](https://github.com/League-of-Foundry-Developers/foundryvtt-forien-quest-log)
 - [UTILITY][NOT ESSENTIAL][Token frames](https://github.com/jcolson/token_frames)
-- [UTILITY][NOT ESSENTIAL][Introduce Me](https://github.com/WBHarry/introduce-me)
+
 - [JOURNAL][NOT ESSENTIAL][Arius Planeswalker's Stylish Journal for Monk's Enhanced Journal](https://github.com/AmazingVanish/apsj4mej)
 - [JOURNAL/CHAT][NOT ESSENTIAL][Polyglot](https://github.com/League-of-Foundry-Developers/fvtt-module-polyglot )
 - [JOURNAL/CHAT][NOT ESSENTIAL][Polyglot](https://github.com/League-of-Foundry-Developers/fvtt-module-polyglot )
