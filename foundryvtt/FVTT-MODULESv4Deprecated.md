@@ -2,8 +2,20 @@
 # NOT ESSENTIAL 
 # ======================================================================
 
+- [TOKEN/SCENES][Go to Player](https://github.com/theripper93/go-to-player)
+- [TOKEN/SCENES][pull-players-to-scene](https://github.com/Mr-Byte/pull-players-to-scene )
+
 ## 2022-10-01
 
+- [EXTERNAL][DEPRECATED USE WEATHER CONTROL][Calendar/Weather](https://gitlab.com/jstebenne/foundryvtt-calendar-weather )
+- [ENTITY][IS BETTER ITEM SPELLS][Magic Items](https://gitlab.com/riccisi/foundryvtt-magic-items )
+- [UTILITY][IS BETTER Visualize Active Effect][DFreds Effects Panel](https://github.com/DFreds/dfreds-effects-panel)
+- [MAP][IS BETTER TILE SCROLL][Parallaxia](https://gitlab.com/reichler/parallaxia )
+- [UTILITY/MODULES][CORE FVTT 10][DF Settings Clarity](https://github.com/flamewave000/dragonflagon-fvtt/tree/master/df-settings-clarity )
+- [TOKEN][IS BETTER TokenMagic Automatic Wounds][Health Estimate](https://gitlab.com/tsuki.no.mai/healthestimate/)
+- [MAP][BETTER STAIRWAYS AND LEVELS][Multilevel Tokens module for Foundry VTT](https://github.com/grandseiken/foundryvtt-multilevel-tokens )
+- [UTILITY][Rangefinder](https://github.com/manuelVo/foundryvtt-rangefinder)
+- [UTILITY][Remote Highlight UI](https://github.com/shemetz/remote-highlight-ui)
 - [COMBAT/ACTIVE EFFECTS][Time Up](https://gitlab.com/tposney/times-up )
 - [COMBAT][Shy Effects](https://github.com/kandashi/shy-effect-icons)
 - [UTILITY][Dragon Flagon Architect](https://github.com/flamewave000/dragonflagon-arch)
@@ -12,7 +24,7 @@
 ## 2022-09-1
 
 - [EXTERNAL][TidyUI](https://github.com/sdenec/tidy-ui_game-settings )
-- [MAP][BETTER STAIRWAYS AND LEVELS][Multilevel Tokens module for Foundry VTT](https://github.com/grandseiken/foundryvtt-multilevel-tokens )
+
 - [TABLE][NEED UPDATE][Better Rolltables](https://github.com/ultrakorne/better-rolltables )
 - [UTILITY][NOT ESSENTIAL][Icon Picker](https://github.com/teroparvinen/foundry-icon-picker)
 - [ITEM][Drop Effects on Items](https://github.com/ElfFriend-DnD/foundryvtt-drop-effects-on-items)

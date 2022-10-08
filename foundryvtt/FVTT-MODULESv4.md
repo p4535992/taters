@@ -8,7 +8,7 @@
 - [TABLE][Community Tables](https://github.com/foundry-vtt-community/tables )
 - [EXTERNAL][Theatre](https://github.com/League-of-Foundry-Developers/fvtt-module-theatre )
 - [TOKEN/MAP][Drag Upload](https://github.com/cswendrowski/FoundryVTT-Drag-Upload )
-- [TOKEN][Health Estimate](https://gitlab.com/tsuki.no.mai/healthestimate/)
+
 
 - [ENTITY][Item Macro](https://github.com/Kekilla0/Item-Macro )
 - [ROLL][Dice Calculator/Dice Tray](https://gitlab.com/asacolips-projects/foundry-mods/foundry-vtt-dice-calculator/ )
@@ -24,7 +24,7 @@
 - [UTILITY][Autocomplete Inline Properties](https://github.com/ghost-fvtt/FVTT-Autocomplete-Inline-Properties)
 - [UTILITY][Automated Evocations Variant](https://github.com/p4535992/automated-evocations-variant)
 - [UTILITY][Automated Polymorpher](https://github.com/p4535992/foundryvtt-automated-polymorpher)
-- [EXTERNAL][Calendar/Weather](https://gitlab.com/jstebenne/foundryvtt-calendar-weather )
+- [UTILITY][Weather Control](https://gitlab.com/jstebenne/foundryvtt-weather-control)
 - [UTILITY][Monks TokenBar](https://github.com/ironmonk88/monks-tokenbar)
 - [UTILITY][Automated Animations](https://github.com/otigon/automated-jb2a-animations )
 - [CHAT][Chat Images](https://github.com/bmarian/chat-images )
@@ -47,26 +47,23 @@
 - [TOKEN][Your Tokens Visible](https://github.com/David-Zvekic/TokensVisible)
 - [TOKEN][Token Says](https://github.com/napolitanod/Token-Says)
 - [UTILITY][Token Variant Art](https://github.com/Aedif/TokenVariants)
-- [UTILITY][DFreds Effects Panel](https://github.com/DFreds/dfreds-effects-panel)
+
 
 - [UTILITY\TOKEN][Token Attacher](https://github.com/KayelGee/token-attacher )
 - [UTILITY][Item Delete Check](https://gitlab.com/tposney/item-delete-check/tree/master )
 - [COMBAT][Perfect Vision](https://github.com/dev7355608/perfect-vision )
 - [CHAT][DragonFlagon Chat Enhancements](https://github.com/flamewave000/dragonflagon-fvtt/tree/master/df-chat-enhance )
 - [UTILITY][Forien Copy](https://github.com/League-of-Foundry-Developers/foundryvtt-forien-copy-environment )
-- [MAP][Parallaxia](https://gitlab.com/reichler/parallaxia )
-- [UTILITY/MODULES][DF Settings Clarity](https://github.com/flamewave000/dragonflagon-fvtt/tree/master/df-settings-clarity )
+- [UTILITY][Tile Scroll](https://github.com/theripper93/tile-scroll)
 
 - [UTILITY][Pause Control](https://gitlab.com/koboldworks/agnostic/pause-control)
 - [WALL][Wall Height](https://github.com/schultzcole/FVTT-Wall-Height )
 
-- [TOKEN/SCENES][Go to Player](https://github.com/theripper93/go-to-player)
-- [TOKEN/SCENES][pull-players-to-scene](https://github.com/Mr-Byte/pull-players-to-scene )
+
 - [SIDEBAR][Hidden Entity Links](https://github.com/p4535992/vtt-hidden-entity-links)
 - [NOTE][Pin Cushion](https://github.com/p4535992/foundryvtt-pin-cushion)
 
 - [EXTERNAL][Popout](https://github.com/kakaroto/fvtt-module-popout)
-- [UTILITY][Rangefinder](https://github.com/manuelVo/foundryvtt-rangefinder)
 - [UTILITY][Tile Sort](https://github.com/theripper93/tile-sort)
 - [UTILITY][Multiface tile](https://gitlab.com/Freeze020/multiface-tiles/)
 - [TOKEN][Shared Vision](https://github.com/CDeenen/SharedVision )
@@ -75,7 +72,7 @@
 - [UTILITY][Roll New Character Stats (RNCS)](https://github.com/MrXofar/roll-new-character-stats)
 - [UTILITY][Module Management+](https://github.com/mouse0270/module-credits)
 - [UTILITY][Jack Kerouac's Spell Effects Sequencer Plugin](https://github.com/MrVauxs/Sequencer-JKAE-Database)
-- [UTILITY][Remote Highlight UI](https://github.com/shemetz/remote-highlight-ui)
+
 - [UTILITY][Introduce Me](https://github.com/WBHarry/introduce-me)
 - [UTILITY][Comprehend Languages](https://github.com/Meneltamar/fvtt-comprehend-languages)
 - [UTILITY][Weather FX](https://github.com/LeafWulf/weatherfx)
@@ -83,7 +80,7 @@
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
-
+- [COMBAT][Visualize Active Effect](https://github.com/krbz999/visual-active-effects)
 - [COMBAT/ROLL][Let me roll that for you](https://github.com/League-of-Foundry-Developers/fvtt-module-lmrtfy )
 - [COMBAT][Arbron's Improved HP Bar](https://github.com/arbron/fvtt-hp-bar)
 - [COMBAT][Combat Utility Belt](https://github.com/death-save/combat-utility-belt )
@@ -98,6 +95,7 @@
 - [COMBAT][Token Auras](https://bitbucket.org/Fyorl/token-auras )
 - [COMBAT][Random Target](https://github.com/mcavallo/foundry-vtt-random-target)
 - [COMBAT][Combat Hp Display](https://github.com/WBHarry/combat-hp-display)
+- [COMBAT][TokenMagic Automatic Wounds](https://github.com/shemetz/tokenmagic-automatic-wounds)
 
 ## MODULES NECESSARI SOLO IN FASE DI COSTRUZIONE E NON DI SESSIONE
 
@@ -126,12 +124,13 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 
 - [EXTERNAL][Plutonium (5etools)](https://get.5e.tools/plutonium/module.json)
 - [ENTITY][Item Collection](https://gitlab.com/tposney/itemcollection )
-- [ENTITY][Magic Items](https://gitlab.com/riccisi/foundryvtt-magic-items )
+- [UTILITY][Items with Spells DnD5e](https://github.com/ElfFriend-DnD/foundryvtt-items-with-spells-5e)
 - [CHARACTER SHEET][Tidy Sheet 5e](https://github.com/sdenec/tidy5e-sheet )
 
 - [COMBAT][Midi Qol](https://gitlab.com/tposney/midi-qol )
 - [COMBAT][DnD5e Helpers](https://github.com/trioderegion/dnd5e-helpers )
 - [COMBAT][Wild Magic Surge 5e](https://github.com/johnnolan/wild-magic-surge-5e)
+- [UTILITY][Build-a-Bonus](https://github.com/krbz999/babonus)
 
 - [CHARACTER SHEET/UTILITY][Variant Encumbrance 5e](https://github.com/VanirDev/VariantEncumbrance )
 - [UI][Argon - Combat HUD](https://github.com/theripper93/enhancedcombathud)
