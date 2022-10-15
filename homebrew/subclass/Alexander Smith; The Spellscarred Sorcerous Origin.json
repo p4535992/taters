@@ -818,5 +818,376 @@
 				]
 			}
 		}
+	],
+	"monster": [
+		{
+			"name": "Spellscarred Hound",
+			"size": [
+				"M"
+			],
+			"type": "monstrosity",
+			"source": "TSSO",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 13,
+				"formula": "2d8 + 4"
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 13,
+			"dex": 15,
+			"con": 15,
+			"int": 5,
+			"wis": 13,
+			"cha": 10,
+			"passive": 14,
+			"cr": "1/2",
+			"shortName": "Spellscarred Hound",
+			"skill": {
+				"perception": "+4"
+			},
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The Spellscarred hound has advantage on Wisdom(Perception) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Magical Resistance",
+					"entries": [
+						"The Spellscarred Hound has advantage on saving throws against spells."
+					]
+				},
+				{
+					"name": "Headlamp",
+					"entries": [
+						"If not concealed, the spellscar emitts dim light out to a range of 5 ft."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The hound has advantage on attack rolls against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics"
+			],
+			"damageTags": [
+				"F",
+				"P"
+			],
+			"action": [
+				{
+					"name": "Burning Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage, plus 3 ({@damage 1d6}) fire damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@b Spellscarred NPCs}",
+					"The life of the Spellscarred can be difficult, and difficult lives can drive creatures to harsh deeds. Though there are exceptions, it is wise to keep your eye on wielders of the blue flames.",
+					"{@b Spellscarred Beasts}",
+					"Many beasts that roam the wilds can happen upon a location still infested with the spellplague, and they also can be cursed by the blue fire. Spellscarred beasts have been ostrasized by their groups, but have also taken dominance, the only difference being if the wielder of the Spellscar can bear the weight.",
+					{
+						"type": "inset",
+						"name": "Making Spellscarred Monsters",
+						"entries": [
+							"To change nonhumanoid monsters to give them a spellscar there are four steps, change the type to monstrosity, unless rangers are able to take Spellscarred beasts in your game. Give {@i Magical Resistance} to show their ability to negate spells, give them the {@i Headlamp} ability, and add fire damage to attacks to match the Monster Statistics by Challenge Rating Table in the {@i Dungeon Master's Guide}."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Spellscarred Drifter",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "TSSO",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"padded"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d10 + 6",
+				"average": 39
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 15,
+			"con": 12,
+			"int": 9,
+			"wis": 12,
+			"cha": 9,
+			"passive": 11,
+			"cr": "2",
+			"shortName": "Spellscarred Drifter",
+			"languages": [
+				"any one language"
+			],
+			"languageTags": [
+				"X"
+			],
+			"skill": {
+				"intimidation": "+1"
+			},
+			"trait": [
+				{
+					"name": "Magical Resistance",
+					"entries": [
+						"The Spellscarred Drifter has advantage on saving throws against spells."
+					]
+				},
+				{
+					"name": "Headlamp",
+					"entries": [
+						"If not concealed, the spellscar emitts dim light out to a range of 5 feet."
+					]
+				},
+				{
+					"name": "Cursed Form",
+					"entries": [
+						"Spells such as {@spell Hex|PHB} and {@spell Bestow Curse|PHb} fail to effect this creature."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Fire Fist",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) bludgeoning damage, plus 5 ({@damage 1d8}) fire damage."
+					]
+				},
+				{
+					"name": "Rage of Fire {@recharge 5}",
+					"entries": [
+						"The Spellscarred puts his hands together, thumbs connecting, and ejects blue flames from his finger tips and spellscar out in a 15-foot cone. Each creature in the space must make a Dexterity Saving Throw {@dc 13} or take 17 ({@damage 5d6}) fire damage."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"F"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@b Spellscarred Humanoids}",
+					"The most often creatures that are effected by the Spellplague, humanoids are the perfect conduit for the spreading of the Spellplague. Many with the blue flames are no longer with their original home, but cults that worship the Spellplague do exist, and take in those with the gift."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Herald of Blue Flame",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "TSSO",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@spell mage armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d6 + 36",
+				"average": 78
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 13,
+			"con": 16,
+			"int": 12,
+			"wis": 14,
+			"cha": 17,
+			"passive": 12,
+			"cr": "5",
+			"shortName": "Herald of Blue Flame",
+			"languages": [
+				"any two languages"
+			],
+			"languageTags": [
+				"X"
+			],
+			"skill": {
+				"arcana": "+6",
+				"intimidation": "+6"
+			},
+			"trait": [
+				{
+					"name": "Magical Resistance",
+					"entries": [
+						"The Herald of the Blue Flame Adept has advantage on saving throws against spells."
+					]
+				},
+				{
+					"name": "Headlamp",
+					"entries": [
+						"If not concealed, the spellscar emitts dim light out to a range of 5 feet."
+					]
+				},
+				{
+					"name": "Protector of Change",
+					"entries": [
+						"The Herald perminantly has the spell {@spell Mage Armor} cast on him at all times."
+					]
+				},
+				{
+					"name": "Quick Casting (Recharges after a Short or Long Rest)",
+					"entries": [
+						"As a bonus action The Herald can cast a spell that has a cost of 1 action. The spell cannot be higher than 1st-level."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Quick Casting (Recharges after a Short or Long Rest)",
+					"entries": [
+						"As a bonus action The Herald can cast a spell that has a cost of 1 action. The spell cannot be higher than 1st-level."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The herald is a 5th-level spellscaster. Its spellcasting ability is Charisma (Spell Save {@dc 14}, +6 to hit with spell attacks). The herald has the following sorcerer spells."
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell light}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}",
+								"{@spell true strike}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell burning hands}",
+								"{@spell magic missile}",
+								"{@spell shield}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell misty step}",
+								"{@spell scorching ray}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell fireball}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CS"
+			],
+			"damageTagsSpell": [
+				"F",
+				"O"
+			],
+			"action": [
+				{
+					"name": "Touch of Fire",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d6 + 6}) fire damage."
+					]
+				}
+			],
+			"damageTags": [
+				"F"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/blank.png",
+			"fluff": {
+				"entries": [
+					"{@b Spellscarred Humanoids}",
+					"The most often creatures that are effected by the Spellplague, humanoids are the perfect conduit for the spreading of the Spellplague. Many with the blue flames are no longer with their original home, but cults that worship the Spellplague do exist, and take in those with the gift."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5etools-mirror-1.github.io/img/blank.png"
+						}
+					}
+				]
+			}
+		}
 	]
 }
