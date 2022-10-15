@@ -59,6 +59,23 @@
 				"Adistant time ago, blue flame ravaged the lands as The Weave tore itself apart. Towering flames shaped and changed Faerun for better and for worst. Many users of magic perished, as their spells were like fuel to the fire that raged across the lands. Those that were engulfed in it, and called upon magic near it, paid a terrible price. It has been years since, but there are rumors that essences of the Spellplague remaining, tiny corners in the world that still host a flickering blue flame, any that go near them, or cast spells near them, runs the risk of becoming Spellscarred.",
 				"Spellscarred are seen similar to lepers, carrying an incredibly dangerous force that they can barely control. The life of a Spellscarred is lonely, as it is so rare to have this condition.",	
 				{
+					"type": "entries",
+					"name": "Features",
+					"entries": [
+						"A spellscar has different effects on its wielder based on how it was attained. Were you tossed into the flame, brought your hand just too close to it, or were you born within sight of it. Spellscars do not always grant the powers of a sorcerer, but may give small yet not worthy abilities.",
+						"You can apply these features to the sorcerer: {@i Reaching Embers},  {@i Bite of the Blue Burn},  {@i Eyes of Revealing Fire}"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Magic Items",
+					"entries": [
+						"Rarely, the Spellplague's flames have been wielded by artificers and wizards working to bend some of its power to their will. These items are of notably rarity, and their power is indeed great.",
+						"Here a some magic item : "
+
+					]
+				},	
+				{
 					"type": "inset",
 					"name": "Spellscarred in Other Settings",
 					"entries": [
@@ -614,6 +631,192 @@
 				"When you hit with a weapon attack, you temporarily give them a spellscar, whenever they take damage, an additional 1 fire damage is dealt. This lasts for 1 minute.",
 				"This spellscar counts as a curse, and can be removed with spells such as {@spell remove curse|PHB}. This lasts for one minute."
 			]
+		}
+	],
+	"feat": [
+		{
+			"name": "Reaching Embers",
+			"source": "TSSO",
+			"page": 2,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Sorcerer"
+						},
+						"subclass": {
+							"name": "The Spellscarred"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature The Spellscarred|Sorcerer|PHB|The Spellscarred|TSSO|1|} feature",
+						"entrySummary": "The Spellscarred"
+					}
+				}
+			],
+			"entries": [
+				"Your spellscarred arms can distend from their normal proportions, giving you an advantage in combat.",
+				{
+					"type": "list",
+					"items": [
+						"Once per round when you make a melee attack, you can attack 5 feet further than your normal distance.",
+						"You can also extend your arms much further, but much more sparingly. You can increase the range of a melee weapon attack to 30 feet, but only once per long rest."
+					]
+				}
+			]
+		},
+		{
+			"name": "Bite of the Blue Burn",
+			"source": "TSSO",
+			"page": 2,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Sorcerer"
+						},
+						"subclass": {
+							"name": "The Spellscarred"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature The Spellscarred|Sorcerer|PHB|The Spellscarred|TSSO|1|} feature",
+						"entrySummary": "The Spellscarred"
+					}
+				}
+			],
+			"entries": [
+				"Your spellscarred jaw can extend, giving you a terrible bite that curses the target.",
+				{
+					"type": "list",
+					"items": [
+						"You gain a special melee attack called {@b {@i Bite of the Blue Burn}}, it can be substituted for a normal weapon attack much like grappling or shoving.",
+						"When you make this attack, you use Strength and are considered proficient with this attack, the damage deals {@damage 1d4} plus Strength.",
+						"If you hit with this attack, the creature is grappled and the target loses resistance to one damage type of your choice. The grapple can end without action, and the curse ends immediately as the grapple does.",
+						"This effect counts as a curse against the target, and can be removed with spells such as {@spell Remove Curse|PHB}."
+					]
+				}
+			]
+		},
+		{
+			"name": "Eyes of Revealing Fire",
+			"source": "TSSO",
+			"page": 2,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Sorcerer"
+						},
+						"subclass": {
+							"name": "The Spellscarred"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature The Spellscarred|Sorcerer|PHB|The Spellscarred|TSSO|1|} feature",
+						"entrySummary": "The Spellscarred"
+					}
+				}
+			],
+			"entries": [
+				"Your spellscarred eyes can momentarily see through lies and deceit, both magical and social.",
+				{
+					"type": "list",
+					"items": [
+						"You have advanatage on Investigation (Intelligence) checks against telling if something is an illusion.",
+						"You can use a bonus action to flare your Spellscarred eyes. You see through illusions, and invisible creatures and objects are revealed to you. This lasts for 1 minute. You can use this feature once per short or long rest."
+					]
+				}
+			]
+		}
+	],
+	"item": [
+		{
+			"name": "Ring of Azure Flames",
+			"source": "TSSO",
+			"page": 4,
+			"rarity": "very rare",
+			"value": 100000,
+			"weapon": false,
+			"reqAttune": "by a spellcaster",
+			"recharge": "dawn",
+			"reqAttuneTags": [
+				{
+					"class": "sorcerer|phb"
+				}
+			],
+			"weight": 0.2,
+			"wondrous": true,
+			"attachedSpells": [
+				"resistance|PHB",
+				"counterspell|PHB",
+				"dispel magic|PHB"
+			],
+			"focus": [
+				"Sorcerer"
+			],
+			"entries": [
+				"This ring has a pale blue metal band, and adorning it is a small goblet holding a tiny flame of blue. The wielder can cast the {@spell Resistance|PHB} Cantrip, and can cast the spells {@spell Counterspell|PHB} or {@spell Dispel Magic|PHB} once per day. If the magic is successfully dispelled, then either of the spells can be cast once again.",
+				"If the dispel fails, the ring can work once again at dawn."
+			]
+		},
+		{
+			"name": "Robe of the Spellplague",
+			"source": "TSSO",
+			"page": 4,
+			"tier": "major",
+			"rarity": "legendary",
+			"value": 300000,
+			"reqAttune": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d4-1}",
+			"charges": 3,
+			"reqAttuneTags": [
+				{
+					"class": "sorcerer"
+				}
+			],
+			"weight": 2,
+			"wondrous": true,
+			"entries": [
+				"This cloak is lit aflame with blue fire, while wearing the cloak, unless concealed, you emit bright light in a 30 ft. radius, and dim light 30 ft. beyond that.",
+				"This item has three charges. When you are targeted by a spell or magical effect and are put to making a saving throw, you can use your reaction and a charge to automatically succeed on the saving throw. You can use this effect three times until the next dawn. At dawn the cloak regains {@dice 1d4-1} charges."
+			]
+		}
+	],
+	"magicvariant": [
+		{
+			"name": "Spellscarred",
+			"type": "GV",
+			"requires": [
+				{
+					"weapon": true,
+					"type": "M"
+				}
+			],
+			"inherits": {
+				"nameSuffix": " Spellscarred",
+				"source": "TSSO",
+				"page": 4,
+				"baseItem": "shortsword|phb",
+				"type": "M",
+				"rarity": "rare",
+				"value": 20000,
+				"reqAttune": true,
+				"property": [
+					"V"
+				],
+				"grantsProficiency": true,
+				"bonusWeapon": "+1",
+				"weapon": true,
+				"entries": [
+					"This weapon is adorned in blue flames softly lighting the area around it, and those hit by it are disrupted by its antimagic effects.",
+					"You gain a +1 bonus to attack and damage rolls made with this magic weapon. The weapon emits bright light In addition, when you hit an enemy with a weapon attack that is concentrating on a spell, the target has disadvantage on the following concentration check to keep spells from ending from the attack."
+				]
+			}
 		}
 	]
 }
