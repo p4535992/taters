@@ -1,0 +1,619 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_schema-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "TSSO",
+				"abbreviation": "TSSO",
+				"full": "The Spellscarred Sorcerous Origin",
+				"authors": [
+					"Alexander Smith"
+				],
+				"convertedBy": [
+					"p4535992"
+				],
+				"version": "2018.07.24",
+				"color": "2e01db",
+				"url": "https://www.dmsguild.com/product/248100/The-Spellscarred-5e",
+				"targetSchema": "1.7.0"
+			}
+		],
+		"optionalFeatureTypes": {
+			"OF:TSSOS": "The Spellscarred Scar",
+			"OF:TSSOP": "The Spellscarred Power"
+		},
+		"dateAdded": 1665862946,
+		"dateLastModified": 1665862946,
+		"_dateLastModifiedHash": "cc5d149831"
+	},
+	"subclass": [
+		{
+			"name": "The Spellscarred",
+			"source": "TSSO",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"shortName": "The Spellscarred",
+			"page": 1,
+			"subclassFeatures": [
+				"The Spellscarred|Sorcerer|PHB|The Spellscarred|TSSO|1",
+				"Spellscar Powers|Sorcerer|PHB|The Spellscarred|TSSO|6",
+				"A Flash of Anger|Sorcerer|PHB|The Spellscarred|TSSO|6",
+				"Aegis of the Spellplague|Sorcerer|PHB|The Spellscarred|TSSO|10",
+				"Spellscar Powers|Sorcerer|PHB|The Spellscarred|TSSO|14",
+				"Spellscar Powers|Sorcerer|PHB|The Spellscarred|TSSO|18",
+				"Harbinger of the Blue Breath of Change|Sorcerer|PHB|The Spellscarred|TSSO|18"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "The Spellscarred",
+			"source": "TSSO",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "TSSO",
+			"subclassShortName": "The Spellscarred",
+			"page": 1,
+			"level": 1,
+			"entries": [
+				"Adistant time ago, blue flame ravaged the lands as The Weave tore itself apart. Towering flames shaped and changed Faerun for better and for worst. Many users of magic perished, as their spells were like fuel to the fire that raged across the lands. Those that were engulfed in it, and called upon magic near it, paid a terrible price. It has been years since, but there are rumors that essences of the Spellplague remaining, tiny corners in the world that still host a flickering blue flame, any that go near them, or cast spells near them, runs the risk of becoming Spellscarred.",
+				"Spellscarred are seen similar to lepers, carrying an incredibly dangerous force that they can barely control. The life of a Spellscarred is lonely, as it is so rare to have this condition.",	
+				{
+					"type": "inset",
+					"name": "Spellscarred in Other Settings",
+					"entries": [
+						"The Spellplague is only mentioned in the Forgotten Realms setting, but a Spellscarred individual could have come from other means. A terrible accident in a magical laboratory, a gift from a less than loving patron, or simply waking up with one. The options are limitless."
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Heralds of the Blue Fire",
+					"entries": [
+						"This order was once a philanthropic group that tended to the victims of the Spellplague. They took in survivors and Spellscarred, and seeked the flames to better alert the world of their locations and terrible powers.",
+						"Whether it was their intention in the beginning, or became corrupted, the order was outed as a fanatical cult, taking in Spellscarred, and using them to spread the Spellplague further than it had reached.",
+						"Nowadays they are forgotten by the public, but work in secret to keep the remaining bastions of Spellplague alive in the world. Many Spellscarred join their ranks, but some do desert, realizing what they are doing could lead to disaster."
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Touch of the Flame|Sorcerer|PHB|The Spellscarred|TSSO|1|TSSO"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Spellscar Powers|Sorcerer|PHB|The Spellscarred|TSSO|1|TSSO"
+				}
+			]
+		},
+		{
+			"name": "Touch of the Flame",
+			"source": "TSSO",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "TSSO",
+			"subclassShortName": "The Spellscarred",
+			"page": 1,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"You have become spellscarred, somewhere on your body rests a brand, a blue flame that holds to your body or replaces part of your body. Whether it be on your forehead, your arm, your leg, and quite possibly your entire form, it will always mark you and follow you.",
+				"Those that know your mark may avoid you, or attempt to study you, as your kind is so rare. There are some that may worship you, aim to get closer to you, or very well kill you, knowing the power that rests in you is not only ancient, but powerful. The only definite in the future of a Spellscarred, is that there is no changing back.",
+				"The spellscar counts as a curse on a creature, but cannot be removed with spells such as {@spell remove curse|PHB}, even the {@spell wish|PHB} spell cannot save you from this, as the fire feeds off of magic itself and only will work against the magic that tries to fight it.",
+				"When detect magic is used in the area, your mark will flare as magical, counting as abjuration magic when inspected.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Fuel to the Fire|Sorcerer|PHB|The Spellscarred|TSSO|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Headlamp|Sorcerer|PHB|The Spellscarred|TSSO|1"
+				}
+			]
+		},
+		{
+			"name": "Fuel to the Fire",
+			"source": "TSSO",
+			"page": 1,
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "The Spellscarred",
+			"subclassSource": "TSSO",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"At 1st level, your spellscar keeps you resilient to magic, when you are affected by a spell of 1st level or higher, you can use your reaction to empower your spellscar and gain resistance to one type of the damage dealt if damage was done. When you use this, your spellscar flares, and you can use one of your Spellscarred Powers up until the end of your next turn."
+			]
+		},
+		{
+			"name": "Headlamp",
+			"source": "TSSO",
+			"page": 2,
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "The Spellscarred",
+			"subclassSource": "TSSO",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"At 1st level, your spellscar softly glows, casting dimlight from you in a 5 ft. radius. Without needing to use an action or bonus action you can turn this light to bright light out to a 5 foot radius with dim light another 5 feet beyond that. This light can never be put out, only concealed by clothing. The flames do not cause harm to creatures or objects, but an uncomfortable warmth can sometimes be felt by the wielder of the spellscar."
+			]
+		},
+		{
+			"name": "Spellscar Powers",
+			"source": "TSSO",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "TSSO",
+			"subclassShortName": "The Spellscarred",
+			"page": 1,
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"Your spellscar is able to grant you powers as magic is used against it and allow you to master its disruptive power. At 1st level you gain two of these abilities, and can choose an additional at 6th, 14th, and 18th level.",
+				"You can use only one spellscar power per turn, regardless of action or bonus action. When you have a Spellscar Power active, you cannot activate another unless you cancel the current power.",
+				"You can have 2 powers from the list:",
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Burning Resolve|TSSO"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Armor of Fire|TSSO"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Disruptive Burn|TSSO"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Cooperative Flame|TSSO"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Gift of Life|TSSO"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Gaze of the Plague|TSSO"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "A Burning Sensation|TSSO"
+				}
+			]
+		},
+		{
+			"name": "Spellscar Powers",
+			"source": "TSSO",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "TSSO",
+			"subclassShortName": "The Spellscarred",
+			"page": 1,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Your spellscar is able to grant you powers as magic is used against it and allow you to master its disruptive power. At 1st level you gain two of these abilities, and can choose an additional at 6th, 14th, and 18th level.",
+				"You can use only one spellscar power per turn, regardless of action or bonus action. When you have a Spellscar Power active, you cannot activate another unless you cancel the current power.",
+				"You can have 3 powers from the list:",
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Burning Resolve|TSSO"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Armor of Fire|TSSO"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Disruptive Burn|TSSO"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Cooperative Flame|TSSO"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Gift of Life|TSSO"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Gaze of the Plague|TSSO"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "A Burning Sensation|TSSO"
+				}
+			]
+		},
+		{
+			"name": "Spellscar Powers",
+			"source": "TSSO",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "TSSO",
+			"subclassShortName": "The Spellscarred",
+			"page": 1,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Your spellscar is able to grant you powers as magic is used against it and allow you to master its disruptive power. At 1st level you gain two of these abilities, and can choose an additional at 6th, 14th, and 18th level.",
+				"You can use only one spellscar power per turn, regardless of action or bonus action. When you have a Spellscar Power active, you cannot activate another unless you cancel the current power.",
+				"You can have 4 powers from the list:",
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Burning Resolve|TSSO"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Armor of Fire|TSSO"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Disruptive Burn|TSSO"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Cooperative Flame|TSSO"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Gift of Life|TSSO"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Gaze of the Plague|TSSO"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "A Burning Sensation|TSSO"
+				}
+			]
+		},
+		{
+			"name": "Spellscar Powers",
+			"source": "TSSO",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "TSSO",
+			"subclassShortName": "The Spellscarred",
+			"page": 1,
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"Your spellscar is able to grant you powers as magic is used against it and allow you to master its disruptive power. At 1st level you gain two of these abilities, and can choose an additional at 6th, 14th, and 18th level.",
+				"You can use only one spellscar power per turn, regardless of action or bonus action. When you have a Spellscar Power active, you cannot activate another unless you cancel the current power.",
+				"You can have 5 powers from the list:",
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Burning Resolve|TSSO"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Armor of Fire|TSSO"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Disruptive Burn|TSSO"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Cooperative Flame|TSSO"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Gift of Life|TSSO"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Gaze of the Plague|TSSO"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "A Burning Sensation|TSSO"
+				}
+			]
+		},
+		{
+			"name": "A Flash of Anger",
+			"source": "TSSO",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "TSSO",
+			"subclassShortName": "The Spellscarred",
+			"page": 2,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, you can use your bonus action and two sorcery points to have your Spellscar flare menacingly, you gain advantage on any Intimidation checks against creatures that can see you this turn."
+			]
+		},
+		{
+			"name": "Aegis of the Spellplague",
+			"source": "TSSO",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "TSSO",
+			"subclassShortName": "The Spellscarred",
+			"page": 2,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"At 10th level when your Fuel to the Fire activates, you can grant that same resistance to allies within 10 feet of you.",
+				"Your Headlamp feature also can now cast bright light in a 10 foot range, with dim light 10 feet beyond that."
+			]
+		},
+		{
+			"name": "Harbinger of the Blue Breath of Change",
+			"source": "TSSO",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "TSSO",
+			"subclassShortName": "The Spellscarred",
+			"page": 2,
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"At 18th level, your Spellscar can call upon a column of Spellplague on a location to bring long forgotten ruin. At a point you can see within 120 feet, a column of blue fire errupts from the ground, burning all in its space.",
+				"The cylinder has a radius of 20 feet, but has a height of 300 feet. If the flames hit a cieling they do not go further, but they do go around cover as long as there is a path. Each creature in the area must make a Dexterity Saving Throw against your Sorcerer Spell Save DC or take {@damage 12d6} Fire Damage, and suffer the following effect. You can only use this ability once, and regain use of it at the end of a long rest.",
+				"Targets cannot cast spells, cannot activate magic items, and lose concentration on any spells being concentrated on instantly. Any spells that are currently affecting the creature end as if a successful Dispel Magic was cast on them. These effects last until the end of your next turn."
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Fuel to the Fire",
+			"source": "TSSO",
+			"featureType": [
+				"OF:TSSOS"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Sorcerer"
+						},
+						"subclass": {
+							"name": "The Spellscarred"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature The Spellscarred|Sorcerer|PHB|The Spellscarred|TSSO|1|} feature",
+						"entrySummary": "The Spellscarred"
+					}
+				}
+			],
+			"page": 1,
+			"entries": [
+				"At 1st level, your spellscar keeps you resilient to magic, when you are affected by a spell of 1st level or higher, you can use your reaction to empower your spellscar and gain resistance to one type of the damage dealt if damage was done. When you use this, your spellscar flares, and you can use one of your {@i Spellscarred} Powers up until the end of your next turn."
+			]
+		},
+		{
+			"name": "Headlamp",
+			"source": "TSSO",
+			"featureType": [
+				"OF:TSSOS"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Sorcerer"
+						},
+						"subclass": {
+							"name": "The Spellscarred"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature The Spellscarred|Sorcerer|PHB|The Spellscarred|TSSO|1|} feature",
+						"entrySummary": "The Spellscarred"
+					}
+				}
+			],
+			"page": 1,
+			"entries": [
+				"At 1st level, your spellscar softly glows, casting dimlight from you in a 5 ft. radius. Without needing to use an action or bonus action you can turn this light to bright light out to a 5 foot radius with dim light another 5 feet beyond that. This light can never be put out, only concealed by clothing. The flames do not cause harm to creatures or objects, but an uncomfortable warmth can sometimes be felt by the wielder of the spellscar."
+			]
+		},
+		{
+			"name": "Burning Resolve",
+			"source": "TSSO",
+			"featureType": [
+				"OF:TSSOP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Sorcerer"
+						},
+						"subclass": {
+							"name": "The Spellscarred"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature The Spellscarred|Sorcerer|PHB|The Spellscarred|TSSO|1|} feature",
+						"entrySummary": "The Spellscarred"
+					}
+				}
+			],
+			"page": 1,
+			"entries": [
+				"You can use a bonus action to ready yourself for the next spell, choose a saving throw, when you are forced to resist a magical effect using that saving throw within the next minute, you can use your reaction to choose to automatically succeed. After using the effect the Power ends."
+			]
+		},
+		{
+			"name": "Armor of Fire",
+			"source": "TSSO",
+			"featureType": [
+				"OF:TSSOP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Sorcerer"
+						},
+						"subclass": {
+							"name": "The Spellscarred"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature The Spellscarred|Sorcerer|PHB|The Spellscarred|TSSO|1|} feature",
+						"entrySummary": "The Spellscarred"
+					}
+				}
+			],
+			"page": 1,
+			"entries": [
+				"Your spellscar hums, ready to protect you and it from attacks with disorientating flames, you can use a bonus action to gain a bonus to your AC equal to your proficiency bonus for the next minute. You can use your reaction to double this bonus for a single attack, but doing so ends the effect after the attack no matter the time remaining."
+			]
+		},
+		{
+			"name": "Disruptive Burn",
+			"source": "TSSO",
+			"featureType": [
+				"OF:TSSOP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Sorcerer"
+						},
+						"subclass": {
+							"name": "The Spellscarred"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature The Spellscarred|Sorcerer|PHB|The Spellscarred|TSSO|1|} feature",
+						"entrySummary": "The Spellscarred"
+					}
+				}
+			],
+			"page": 1,
+			"entries": [
+				"You can make a special attack as your spellscar's flames encoat your hand, teeth, horns, etc. You can use an action to make a melee spell attack, if you hit, you brand the individual with a temporary spellscar, they take fire damage equal to your Charisma modifier, and on concentration checks they must beat your Spell Save DC unless the concentration check calls for a higher roll. They must also make a spellcasting ability check against your Spell Save DC the first time they try to cast a spell of 1st level or higher.",
+				"This spellscar counts as a curse, and can be removed with spells such as remove curse. This lasts for one minute."
+			]
+		},
+		{
+			"name": "Cooperative Flame",
+			"source": "TSSO",
+			"featureType": [
+				"OF:TSSOP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Sorcerer"
+						},
+						"subclass": {
+							"name": "The Spellscarred"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature The Spellscarred|Sorcerer|PHB|The Spellscarred|TSSO|1|} feature",
+						"entrySummary": "The Spellscarred"
+					}
+				}
+			],
+			"page": 1,
+			"entries": [
+				"You can use an action to touch another creature and give them a temporary spellscar that grants a small benefit, this spellscar grants a bonus equal to half your proficiency bonus rounded down to saving throws for the next hour.",
+				"This spellscar counts as a curse, and can be removed with spells such as {@spell remove curse|PHB}. This lasts for one minute."
+			]
+		},
+		{
+			"name": "Gift of Life",
+			"source": "TSSO",
+			"featureType": [
+				"OF:TSSOP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Sorcerer"
+						},
+						"subclass": {
+							"name": "The Spellscarred"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature The Spellscarred|Sorcerer|PHB|The Spellscarred|TSSO|1|} feature",
+						"entrySummary": "The Spellscarred"
+					}
+				}
+			],
+			"page": 2,
+			"entries": [
+				"You can cast the {@spell Find Familiar|PHB} spell as an action instead of the normal casting time, creating a creature that exists by your flame. Whatever creature you create, it has the {@b {@i Headlamp feature}}. The spell lasts for eight hours, and counts as abjuration magic instead of conjuration."
+			]
+		},
+		{
+			"name": "Gaze of the Plague",
+			"source": "TSSO",
+			"featureType": [
+				"OF:TSSOP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Sorcerer"
+						},
+						"subclass": {
+							"name": "The Spellscarred"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature The Spellscarred|Sorcerer|PHB|The Spellscarred|TSSO|1|} feature",
+						"entrySummary": "The Spellscarred"
+					}
+				}
+			],
+			"page": 2,
+			"entries": [
+				"You can grant yourself darkvision as your eyes become backlit with flame. You gain darkvision out to a range of 60 feet, if you already have darkvision, the range doubles to a maximum of 120 feet. This lasts for one hour."
+			]
+		},
+		{
+			"name": "A Burning Sensation",
+			"source": "TSSO",
+			"featureType": [
+				"OF:TSSOP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Sorcerer"
+						},
+						"subclass": {
+							"name": "The Spellscarred"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature The Spellscarred|Sorcerer|PHB|The Spellscarred|TSSO|1|} feature",
+						"entrySummary": "The Spellscarred"
+					}
+				}
+			],
+			"page": 2,
+			"entries": [
+				"When you hit with a weapon attack, you temporarily give them a spellscar, whenever they take damage, an additional 1 fire damage is dealt. This lasts for 1 minute.",
+				"This spellscar counts as a curse, and can be removed with spells such as {@spell remove curse|PHB}. This lasts for one minute."
+			]
+		}
+	]
+}
