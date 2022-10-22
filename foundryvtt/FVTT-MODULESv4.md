@@ -72,7 +72,7 @@
 - [UTILITY][Roll New Character Stats (RNCS)](https://github.com/MrXofar/roll-new-character-stats)
 - [UTILITY][Module Management+](https://github.com/mouse0270/module-credits)
 - [UTILITY][Jack Kerouac's Spell Effects Sequencer Plugin](https://github.com/MrVauxs/Sequencer-JKAE-Database)
-
+- [UTILITY][Cautious Gamemaster's Pack](https://github.com/cs96and/FoundryVTT-CGMP)
 - [UTILITY][Introduce Me](https://github.com/WBHarry/introduce-me)
 - [UTILITY][Comprehend Languages](https://github.com/Meneltamar/fvtt-comprehend-languages)
 - [UTILITY][Weather FX](https://github.com/LeafWulf/weatherfx)
