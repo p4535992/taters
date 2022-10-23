@@ -76,7 +76,7 @@
 - [UTILITY][Introduce Me](https://github.com/WBHarry/introduce-me)
 - [UTILITY][Comprehend Languages](https://github.com/Meneltamar/fvtt-comprehend-languages)
 - [UTILITY][Weather FX](https://github.com/LeafWulf/weatherfx)
-- [UTILITY][Flying Tokens](https://github.com/LeafWulf/flying-tokens)
+- [UTILITY][User Latency](https://github.com/mawburn/foundry-user-latency)
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
@@ -96,6 +96,7 @@
 - [COMBAT][Random Target](https://github.com/mcavallo/foundry-vtt-random-target)
 - [COMBAT][Combat Hp Display](https://github.com/WBHarry/combat-hp-display)
 - [COMBAT][TokenMagic Automatic Wounds](https://github.com/shemetz/tokenmagic-automatic-wounds)
+- [COMBAT][Flying Tokens](https://github.com/LeafWulf/flying-tokens)
 
 ## MODULES NECESSARI SOLO IN FASE DI COSTRUZIONE E NON DI SESSIONE
 
@@ -107,6 +108,7 @@
 # MODULES DA VERIFICARE SE NECESSARI
 
 
+- [UTILITY][Beaver's Crafting System](https://github.com/AngryBeaver/beavers-crafting)
 - [SCRIPT][World-Scripter](https://github.com/Kekilla0/World-Scripter)
 - [SCENE][World Explorer](https://github.com/CarlosFdez/world-explorer)
 - [EFFECT][Hey, Wait!](https://github.com/1000nettles/hey-wait)
