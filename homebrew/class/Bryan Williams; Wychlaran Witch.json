@@ -28,34 +28,100 @@
 		{
 			"name": "Wychlaran Witch",
 			"source": "BWWW",
-			"page": 3,
+			"page": 1,
 			"hd": {
 				"number": 1,
-				"faces": 4
+				"faces": 6
 			},
 			"proficiency": [
-				"wis",
-				"cha"
+				"con",
+				"wis"
+			],
+			"spellcastingAbility": "wis",
+			"casterProgression": "full",
+			"cantripProgression": [
+				4,
+				4,
+				4,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				6,
+				6,
+				6,
+				6,
+				6,
+				6,
+				6,
+				6,
+				6,
+				6,
+				6
+			],
+			"spellsKnownProgression": [
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				12,
+				13,
+				13,
+				14,
+				14,
+				15,
+				15,
+				15,
+				15
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "Metamagic",
+					"featureType": [
+						"MM"
+					],
+					"progression": {
+						"3": 2,
+						"10": 3,
+						"17": 4
+					}
+				}
 			],
 			"startingProficiencies": {
 				"weapons": [
-					"none"
+					"{@item dagger|phb|daggers}",
+					"{@item dart|phb|darts}",
+					"{@item sling|phb|slings}",
+					"{@item quarterstaff|phb|quarterstaffs}",
+					"{@item light crossbow|phb|light crossbows}",
+					"{@item whip|phb|whips}"
 				],
 				"tools": [
-					"none"
+					"{@item herbalism kit|PHB}"
 				],
 				"skills": [
 					{
 						"choose": {
 							"from": [
-								"arcana",
-								"history",
-								"insight",
-								"intimidation",
-								"nature",
-								"religion"
+								"acrobatics", 
+								"history", 
+								"insight",  
+								"intimidation",  
+								"nature", 
+								"perception",  
+								"persuasion", 
+								"stealth"
 							],
-							"count": 1
+							"count": 4
 						}
 					}
 				]
@@ -63,10 +129,44 @@
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"default": [
-					"You start without any equipment. Any equipment granted by your background either exists in a place designated by the DM or is lost."
+					"(a) a {@item quarterstaff|phb} or (b) {@item whip|phb}",
+					"(a) a {@item component pouch|phb} or (b) an {@item arcane focus|phb}",
+					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}"
+				],
+				"goldAlternative": "{@dice 3d4 × 10|3d4 × 10|Starting Gold}",
+				"defaultData": [
+					{
+						"a": [
+							"quarterstaff|phb",
+							"crossbow bolts (20)|phb"
+						],
+						"b": [
+							"whip|phb",
+							"crossbow bolts (20)|phb"
+						]
+					},
+					{
+						"a": [
+							"component pouch|phb"
+						],
+						"b": [
+							"arcane focus|phb"
+						]
+					},
+					{
+						"a": [
+							"dungeoneer's pack|phb"
+						],
+						"b": [
+							"explorer's pack|phb"
+						]
+					}
 				]
 			},
 			"multiclassing": {
+				"requirements": {
+					"wis": 13
+				},
 				"entries": [
 					"When using the optional rule on multiclassing in the Player's Handbook (p. 163), the ghost class imposes no additional prerequisites and grants no proficiencies when taken after 1st level.",
 					"Lack of a body can make it difficult for a ghost to make use of other classes' features (see Spirit Form). To add a touch of the supernatural to your character while avoiding the obstacles posed by Spirit Form, consider using the Occultist Class Variant on page 12 of this document."
@@ -88,218 +188,430 @@
 						}
 					],
 					"tools": [
-						"none"
+						"{@item herbalism kit|PHB}"
 					]
 				}
 			},
-			"spellcastingAbility": "cha",
-			"casterProgression": "full",
 			"classTableGroups": [
 				{
 					"colLabels": [
-						"{@filter Supernatural Powers|spells|class=Wychlaran Witch}",
-						"{@filter Manifestations Known|optionalfeatures|feature type=OF:BWWW}"
+						"Sorcery Points"
 					],
 					"rows": [
 						[
+							0
+						],
+						[
+							2
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							5
+						],
+						[
+							6
+						],
+						[
+							7
+						],
+						[
+							8
+						],
+						[
+							9
+						],
+						[
+							10
+						],
+						[
+							11
+						],
+						[
+							12
+						],
+						[
+							13
+						],
+						[
+							14
+						],
+						[
+							15
+						],
+						[
+							16
+						],
+						[
+							17
+						],
+						[
+							18
+						],
+						[
+							19
+						],
+						[
+							20
+						]
+					]
+				},
+				{
+					"colLabels": [
+						"{@filter Cantrips Known|spells|level=0|class=Sorcerer}",
+						"{@filter Spells Known|spells|class=Sorcerer}"
+					],
+					"rows": [
+						[
+							4,
+							2
+						],
+						[
+							4,
+							3
+						],
+						[
+							4,
+							4
+						],
+						[
+							5,
+							5
+						],
+						[
+							5,
+							6
+						],
+						[
+							5,
+							7
+						],
+						[
+							5,
+							8
+						],
+						[
+							5,
+							9
+						],
+						[
+							5,
+							10
+						],
+						[
+							6,
+							11
+						],
+						[
+							6,
+							12
+						],
+						[
+							6,
+							12
+						],
+						[
+							6,
+							13
+						],
+						[
+							6,
+							13
+						],
+						[
+							6,
+							14
+						],
+						[
+							6,
+							14
+						],
+						[
+							6,
+							15
+						],
+						[
+							6,
+							15
+						],
+						[
+							6,
+							15
+						],
+						[
+							6,
+							15
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=Sorcerer}",
+						"{@filter 2nd|spells|level=2|class=Sorcerer}",
+						"{@filter 3rd|spells|level=3|class=Sorcerer}",
+						"{@filter 4th|spells|level=4|class=Sorcerer}",
+						"{@filter 5th|spells|level=5|class=Sorcerer}",
+						"{@filter 6th|spells|level=6|class=Sorcerer}",
+						"{@filter 7th|spells|level=7|class=Sorcerer}",
+						"{@filter 8th|spells|level=8|class=Sorcerer}",
+						"{@filter 9th|spells|level=9|class=Sorcerer}"
+					],
+					"rowsSpellProgression": [
+						[
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
 							1,
 							0
 						],
 						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
 							1,
 							0
 						],
 						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
 							1,
 							1
 						],
 						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							1,
+							1,
 							1,
 							1
 						],
 						[
-							2,
-							2
-						],
-						[
-							2,
-							2
-						],
-						[
-							2,
-							3
-						],
-						[
-							2,
-							3
-						],
-						[
+							4,
 							3,
-							3
-						],
-						[
 							3,
-							3
-						],
-						[
 							3,
-							3
-						],
-						[
 							3,
-							4
+							2,
+							1,
+							1,
+							1
 						],
 						[
 							4,
-							4
-						],
-						[
-							4,
-							5
-						],
-						[
-							4,
-							5
-						],
-						[
-							4,
-							5
-						],
-						[
-							5,
-							5
-						],
-						[
-							5,
-							6
-						],
-						[
-							5,
-							6
-						],
-						[
-							5,
-							6
+							3,
+							3,
+							3,
+							3,
+							2,
+							2,
+							1,
+							1
 						]
 					]
 				}
 			],
-			"optionalfeatureProgression": [
-				{
-					"name": "Manifestations",
-					"featureType": [
-						"OF:BWWW"
-					],
-					"progression": [
-						0,
-						0,
-						1,
-						1,
-						2,
-						2,
-						3,
-						3,
-						3,
-						3,
-						3,
-						4,
-						4,
-						5,
-						5,
-						5,
-						5,
-						6,
-						6,
-						6
-					]
-				}
-			],
 			"classSpells": [
-				"thaumaturgy|phb",
-				"augury|phb",
-				"armor of Agathys|phb",
-				"arms of Hadar|phb",
-				"disguise self|phb",
-				"speak with animals|phb",
-				"detect evil and good|phb",
-				"heroism|phb",
-				"jump|phb",
-				"longstrider|phb",
-				"protection from evil and good|phb",
-				"sanctuary|phb",
-				"shield of faith|phb",
-				"wrathful smite|phb",
-				"alter self|phb",
-				"blur|phb",
-				"branding smite|phb",
-				"darkvision|phb",
-				"enhance ability|phb",
-				"lesser restoration|phb",
-				"levitate|phb",
-				"locate animals or plants|phb",
-				"locate object|phb",
-				"mirror image|phb",
-				"Nystul's magic aura|phb",
-				"pass without trace|phb",
-				"see invisibility|",
-				"spider climb|phb",
-				"blinding smite|phb",
-				"blink|phb",
-				"crusader's mantle|phb",
-				"feign death|phb",
-				"fly|phb",
-				"haste|phb",
-				"nondetection|phb",
-				"protection from energy|phb",
-				"speak with plants|phb",
-				"spirit guardians|phb",
-				"remove curse|phb",
-				"tongues|phb",
-				"aura of life|phb",
-				"aura of purity|phb",
-				"death ward|phb",
-				"fire shield|phb",
-				"freedom of movement|phb",
-				"greater invisibility|phb",
-				"locate creature|phb",
-				"Otiluke's resilient sphere|phb",
-				"staggering smite|phb",
-				"antilife shell|phb",
-				"banishing smite|phb",
-				"circle of power|phb",
-				"destructive wave|phb",
-				"greater restoration|phb"
+				"speak with dead|phb",
+				"magic circle|phb",
+				"commune|phb",
+				"fear|phb"
 			],
 			"classFeatures": [
-				"Spirit Form|Wychlaran Witch|BWWW|1",
-				"Possession|Wychlaran Witch|BWWW|1",
-				{
-					"classFeature": "Unfinished Business|Wychlaran Witch|BWWW|1",
-					"gainSubclassFeature": true
-				},
-				"Otherworldly Insight|Wychlaran Witch|BWWW|2",
-				"Manifestations|Wychlaran Witch|BWWW|3",
+				"Ritual Caster|Wychlaran Witch|BWWW|1",
+				"Coven Casting|Wychlaran Witch|BWWW|1",
+				"Spirit Weaver|Wychlaran Witch|BWWW|1",
+				"Hathran Site|Wychlaran Witch|BWWW|1",
+				"Commune with the Land|Wychlaran Witch|BWWW|1",
+				"Wychlaran Domain Spells|Wychlaran Witch|BWWW|1",
+				"Fearsome|Wychlaran Witch|BWWW|3",
 				"Ability Score Improvement|Wychlaran Witch|BWWW|4",
-				"Rejuvenation|Wychlaran Witch|BWWW|5",
-				{
-					"classFeature": "Unfinished Business|Wychlaran Witch|BWWW|6",
-					"gainSubclassFeature": true
-				},
+				"Spiritual Alignment|Wychlaran Witch|BWWW|4",
+				"The Three Provides|Wychlaran Witch|BWWW|5",
+				"Telepathic Touch|Wychlaran Witch|BWWW|6",
 				"Ability Score Improvement|Wychlaran Witch|BWWW|8",
-				"Medium|Wychlaran Witch|BWWW|10",
-				{
-					"classFeature": "Unfinished Business|Wychlaran Witch|BWWW|11",
-					"gainSubclassFeature": true
-				},
+				"Spiritual Alignment|Wychlaran Witch|BWWW|8",
 				"Ability Score Improvement|Wychlaran Witch|BWWW|12",
-				"Incorporeal Movement|Wychlaran Witch|BWWW|15",
+				"Spiritual Alignment|Wychlaran Witch|BWWW|13",
+				"Spirit Sanctuary|Wychlaran Witch|BWWW|14",
 				"Ability Score Improvement|Wychlaran Witch|BWWW|16",
-				{
-					"classFeature": "Unfinished Business|Wychlaran Witch|BWWW|17",
-					"gainSubclassFeature": true
-				},
+				"Witches Flight|Wychlaran Witch|BWWW|18",
 				"Ability Score Improvement|Wychlaran Witch|BWWW|19",
-				"Journey's End|Wychlaran Witch|BWWW|20"
+				"Spiritual Alignment|Wychlaran Witch|BWWW|20"
 			],
 			"subclassTitle": "Wychlaran Witch",
 			"fluff": [
@@ -307,613 +619,14 @@
 					"name": "Wychlaran Witch",
 					"type": "section",
 					"source": "BWWW",
-					"page": 2,
+					"page": 1,
 					"entries": [
-						"Shrouded in silver mist, a halfling slips past the guards and glides into the catacombs beyond. A voice whispers in her ear, warning her of danger, while lights only she can see lead the way to a hidden sepulchre.",
-						"Eyes ablaze with soul-flame, a dark elf hurtles into the press of melee, their grasp drawing the life from all they touch. A voice whispers in their ear, spurring them on to ever greater violence, seeming to grow louder with every kill.",
-						"A human grips a shortsword with both hands, knuckles whitening as the enemy rush toward him. When all seems lost, a whisper in his ear imparts a lifetime of battle experience. Unseen hands reshape his posture, and he lunges to meet the foe with a master's poise.",
-						"The ghost isn't the halfling, the drow, or the human, but the whisper in their ears: the companion presence that empowers and shepherds them. Wychlaran Witchs are united as a class by their disembodied forms and defined by their unfinished business in the mortal world. Some are vengeful, seeking to satisfy a malice unquenched in a single lifetime. Others are benign, defending those who carry on their work. Though sometimes a hindrance, a ghost's weak tether to the mortal world grants them paranormal power and insight. Their abilities can wreathe allies in protective magic, possess or dominate their foes, or pass on skills they learned in former lifetimes.",
-						{
-							"type": "entries",
-							"name": "One foot in the grave",
-							"entries": [
-								"Warriors dishonored on the battlefield; commoners killed in cold blood; mentors who outlived their students; thieves who died behind bars plotting one last heist. Unable to find rest, ghosts are lost souls tied to the Border Ethereal. Some appear as spectral adventurers, replete with the tools of their trade. Others present as animals, or in abstract forms representing their personalities.",
-								"Wychlaran Witchs bring a little of the otherworld with them when they return to the Material Plane. In time, they learn to harness the forces that sustain them, finding new ways to bend reality and assail their foes.",
-								"Through possession, ghosts are able to merge with and manipulate mortals. Though some are malicious and domineering, most go in search of companions who will heed their counsel. If a ghost and their host work in harmony, they can overcome obstacles neither could surmount alone."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Undying Purpose",
-							"entries": [
-								"Wychlaran Witchs linger to see their unfinished business done, and the way their powers manifest reflects this task. Most met with untimely deaths, their origins steeped in tragedy. Others had duties unattainable in a single lifetime, such as guarding a relic or defending a certain bloodline. Such a soul might forgo their rest until a worthy successor is found, or serve as guardian to several generations of descendants. The beneficiaries of such protection should count themselves lucky, for a ghost's insight alone can avert disaster.",
-								"Half-trapped outside reality, ghosts depend on their allies to pursue their goals. Trustworthy companions are hard to find and these bonds, once forged, can last lifetimes. Unconstrained by time, a ghost might spend decades mentoring such a charge. Others might hunt artifacts or study occult lore: anything to avoid repeating their mortal failures."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Creating a Wychlaran Witch",
-							"entries": [
-								"Creating a ghost character demands a backstory dominated by an extraordinary event: your death. Perhaps your demise itself began your unfinished business and you've sworn revenge against the villain that laid you low. Perhaps your passing was simply an obstacle on the road to a wider goal: the mastery of magic; the perfection of a martial art; or the appointment of a worthy successor to an ancient task.",
-								"What's your relationship like with your adventuring companions? Did they stumble across the relic you guard and take it with them, or is a member of their company the beneficiary of an old accord? Perhaps you were one of their number to begin with, and you linger to finish the adventure that claimed your life? Is one party member in particular your chosen champion, or do you consider the entire group your flock?",
-								{
-									"type": "inset",
-									"name": "Wychlaran Witchly Encore",
-									"entries": [
-										"When a player character dies with unfinished business, the DM may allow them to forgo their rest, replacing one or more of their class levels with levels in ghost. Consider letting a character with a low Charisma modifier substitute their Intelligence or Wisdom when using ghost class features."
-									]
-								},
-								{
-									"type": "entries",
-									"name": "Quick Build",
-									"entries": [
-										"You can make a ghost quickly by following these suggestions. First, Charisma should be your highest ability score, followed by Constitution. If you plan to select the {@i Mischief Not Managed} unfinished business, make Dexterity your second-best score instead. Next, choose the {@background Variant Noble (Knight)|PHB} or {@background Variant Noble (Retainers)|PHB}, and take the variant feature: Retainers."
-									]
-								}
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Quirks and Foibles",
-							"entries": [
-								"Consider adding some flourishes to make your ghost character stand out. The section below contains a few ideas. You can roll dice to determine traits randomly, pick those you fancy, or use the suggestions as inspiration for your own designs.",
-								{
-									"type": "entries",
-									"name": "Signature Phenomenon",
-									"entries": [
-										"Every ghost has a tell-tale manifestation that they can't control: strange sounds, creeping chills, or sensations of profound loneliness or giddy excitement.",
-										{
-											"type": "table",
-											"colLabels": [
-												"d6",
-												"Signature Phenomenon"
-											],
-											"colStyles": [
-												"col-1 text-center",
-												"col-11"
-											],
-											"rows": [
-												[
-													"1",
-													"A distant melody, tuneful birdcall, or fragment of nursery rhyme is carried on the wind around me."
-												],
-												[
-													"2",
-													"Nearby pools and mirrors reflect older, more decrepit versions of those viewing them."
-												],
-												[
-													"3",
-													"Animals sense when I'm close: cats hiss, dogs bark, and insects swarm without provocation."
-												],
-												[
-													"4",
-													"I'm accompanied by gusts of chill wind or a warm summer breeze. Candles gutter and go out as I approach."
-												],
-												[
-													"5",
-													"Hoarfrost creeps over nearby objects when I stand still."
-												],
-												[
-													"6",
-													"Flowers blossom in my presence, but rapidly wither away when I move on."
-												]
-											]
-										}
-									]
-								},
-								{
-									"type": "entries",
-									"name": "Untimely Demise",
-									"entries": [
-										"As often as not, ghosts' origins are steeped in tragedy. What was the cause of your untimely passing, and how does the way you died affect your demeanor?",
-										{
-											"type": "table",
-											"colLabels": [
-												"d6",
-												"Cause of Death"
-											],
-											"colStyles": [
-												"col-1 text-center",
-												"col-11"
-											],
-											"rows": [
-												[
-													"1",
-													"My body lies broken alongside countless others on a forgotten battlefield."
-												],
-												[
-													"2",
-													"I died in my sleep near the end of my natural lifespan, but until I appoint a successor I'll never rest."
-												],
-												[
-													"3",
-													"I can't even remember how I died, and I'm not entirely sure I want to know."
-												],
-												[
-													"4",
-													"Not even I survived the villain that slew my people, but that won't stop me from taking revenge."
-												],
-												[
-													"5",
-													"Dead? I'm not dead! How could we possibly be talking if I was dead?!"
-												],
-												[
-													"6",
-													"I died in an embarrassing mundane accident, so I make up a different story whenever I'm asked."
-												]
-											]
-										}
-									]
-								},
-								{
-									"type": "entries",
-									"name": "Possession Quirk",
-									"entries": [
-										"Willing hosts help anchor ghosts to the mortal world, and ghosts repay this trust with counsel and protection. Though few would choose a battle of wills over earnest cooperation, most can't help but influence their hosts, allowing their personalities to overspill, or lacking complete control of their spirit bodies.",
-										"The following might apply to your hosts while you possess them. Make sure other players are comfortable using these traits: even if you possess them, it's their decision whether or not to play along.",
-										{
-											"type": "table",
-											"colLabels": [
-												"d6",
-												"Host's Quirk"
-											],
-											"colStyles": [
-												"col-1 text-center",
-												"col-11"
-											],
-											"rows": [
-												[
-													"1",
-													"hoard objects that the ghost possessing me desires, such as coins, dice, wands, or holy symbols."
-												],
-												[
-													"2",
-													"Even sat by a roaring campfire and dressed in the thickest coat, I never feel warm."
-												],
-												[
-													"3",
-													"I just can't help myself around good food: everything tastes like I've never tried it before!"
-												],
-												[
-													"4",
-													"I'm terrified of an implement that was involved in the death of the ghost possessing me."
-												],
-												[
-													"5",
-													"Whether doing something for the first time or the hundredth, I experience vivid flashes of déjà vu."
-												],
-												[
-													"6",
-													"I sometimes unwittingly speak in the language of the ghost possessing me, bewildering my fellow adventures."
-												]
-											]
-										}
-									]
-								}
-							]
-						},
-						"As a ghost, you gain the following class features."
-					]
-				}
-			]
-		},
-		{
-			"name": "Occultist (Wychlaran Witch Variant)",
-			"source": "BWWW",
-			"page": 3,
-			"hd": {
-				"number": 1,
-				"faces": 8
-			},
-			"proficiency": [
-				"wis",
-				"cha"
-			],
-			"startingProficiencies": {
-				"weapons": [
-					"none"
-				],
-				"tools": [
-					"anyArtisansTool"
-				],
-				"skills": [
-					{
-						"choose": {
-							"from": [
-								"arcana",
-								"insight",
-								"investigation",
-								"perception",
-								"religion"
-							],
-							"count": 2
-						}
-					}
-				]
-			},
-			"startingEquipment": {
-				"additionalFromBackground": true,
-				"default": [
-					"(a) a {@item scholar's pack|phb}, (b) a {@item explorer's pack|phb}",
-					"(a) a {@item Playing Card Set|phb|deck of playing or divining cards} or (b) an {@filter musical instrument|items|miscellaneous=mundane|type=instrument} or (c) an one set of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools}"
-				],
-				"goldAlternative": "{@dice 3d4 × 10|3d4 × 10|Starting Gold}",
-				"defaultData": [
-					{
-						"a": [
-							"scholar's pack|phb"
-						],
-						"b": [
-							"explorer's pack|phb"
-						],
-						"c": [
-							{
-								"equipmentType": "weaponSimple"
-							}
-						]
-					},
-					{
-						"a": [
-							"Playing Card Set|phb"
-						],
-						"b": [
-							{
-								"equipmentType": "instrumentMusical"
-							}
-						],
-						"c": [
-							{
-								"equipmentType": "toolArtisan"
-							}
-						]
-					}
-				]
-			},
-			"multiclassing": {
-				"requirements": {
-					"cha": 13
-				},
-				"entries": [
-					"If your group uses the optional rule on multiclassing in the Player's Handbook, here's what you need to know if you choose occultist as one of your classes."
-				],
-				"proficienciesGained": {
-					"skills": [
-						{
-							"choose": {
-								"from": [
-									"arcana",
-									"history",
-									"insight",
-									"intimidation",
-									"nature",
-									"religion"
-								],
-								"count": 1
-							}
-						}
-					],
-					"tools": [
-						"any one type of {@item artisan's tools|PHB} of your choice"
-					]
-				}
-			},
-			"spellcastingAbility": "cha",
-			"casterProgression": "full",
-			"classSpells": [
-				"thaumaturgy|phb",
-				"augury|phb",
-				"armor of Agathys|phb",
-				"arms of Hadar|phb",
-				"disguise self|phb",
-				"speak with animals|phb",
-				"detect evil and good|phb",
-				"heroism|phb",
-				"jump|phb",
-				"longstrider|phb",
-				"protection from evil and good|phb",
-				"sanctuary|phb",
-				"shield of faith|phb",
-				"wrathful smite|phb",
-				"alter self|phb",
-				"blur|phb",
-				"branding smite|phb",
-				"darkvision|phb",
-				"enhance ability|phb",
-				"lesser restoration|phb",
-				"levitate|phb",
-				"locate animals or plants|phb",
-				"locate object|phb",
-				"mirror image|phb",
-				"Nystul's magic aura|phb",
-				"pass without trace|phb",
-				"see invisibility|",
-				"spider climb|phb",
-				"blinding smite|phb",
-				"blink|phb",
-				"crusader's mantle|phb",
-				"feign death|phb",
-				"fly|phb",
-				"haste|phb",
-				"nondetection|phb",
-				"protection from energy|phb",
-				"speak with plants|phb",
-				"spirit guardians|phb",
-				"remove curse|phb",
-				"tongues|phb",
-				"aura of life|phb",
-				"aura of purity|phb",
-				"death ward|phb",
-				"fire shield|phb",
-				"freedom of movement|phb",
-				"greater invisibility|phb",
-				"locate creature|phb",
-				"Otiluke's resilient sphere|phb",
-				"staggering smite|phb",
-				"antilife shell|phb",
-				"banishing smite|phb",
-				"circle of power|phb",
-				"destructive wave|phb",
-				"greater restoration|phb"
-			],
-			"classFeatures": [
-				"Channeler|Occultist (Wychlaran Witch Variant)|BWWW|1",
-				"Locus Of The Lost|Occultist (Wychlaran Witch Variant)|BWWW|1",
-				"Personal Ability Score Improvement|Occultist (Wychlaran Witch Variant)|BWWW|4",
-				"Personal Ability Score Improvement|Occultist (Wychlaran Witch Variant)|BWWW|8",
-				"Superior Medium|Occultist (Wychlaran Witch Variant)|BWWW|10",
-				"Personal Ability Score Improvement|Occultist (Wychlaran Witch Variant)|BWWW|12",
-				"Personal Ability Score Improvement|Occultist (Wychlaran Witch Variant)|BWWW|16",
-				"Personal Ability Score Improvement|Occultist (Wychlaran Witch Variant)|BWWW|19",
-				"Shepherd Of The Lost Souls|Occultist (Wychlaran Witch Variant)|BWWW|20"
-			],
-			"subclassTitle": "Occultist (Wychlaran Witch Variant)",
-			"fluff": [
-				{
-					"name": "Occultist (Wychlaran Witch Variant)",
-					"type": "section",
-					"source": "BWWW",
-					"page": 2,
-					"entries": [
-						{
-							"type": "inset",
-							"entries": [
-								"This variant represents a spiritualist, medium, or paranormal proxy. Occultists guide spirits but are themselves alive. The occultist can be played as a standalone class, or used in conjunction with the multiclassing rules in the Player's Handbook"
-							]
-						},
-						"Whether you're a commoner haunted by a loved one lost too soon, an adventurer beset by poltergeists, or a dedicated student of occult magic, you can call forth spirits from the Border Ethereal and commune with them.",
-						{
-							"type": "entries",
-							"name": "Speaker for Lost Soul",
-							"entries": [
-								"Some occultists are pragmatic in their study, conjuring spirits to draw on their expertise. Others are empathic, listening for guidance from spirits who share their plight. Some are shamanic, mentored by nature spirits, while others unwittingly channel the dead, believing themselves haunted, unaware of their gifts.",
-								"What's your relationship like with the spirits you channel? Do they enter your service of their own volition, or are they bound to you, hoping to misconstrue your orders and slip their bonds? Perhaps you've struck a bargain with one lost soul, pursuing their unfinished business in return for aid? Is a particular spirit your tutor, such as a fallen comrade or totem animal, or do you seek guidance from a different soul each day?",
-								{
-									"type": "table",
-									"colLabels": [
-										"d8",
-										"Bond"
-									],
-									"colStyles": [
-										"col-1 text-center",
-										"col-11"
-									],
-									"rows": [
-										[
-											"1",
-											"I answered the call to adventure after a loved one's death. Now, their spirit accompanies me on my perilous journey."
-										],
-										[
-											"2",
-											"I channel the soul of an old enemy, suppressing their malice and guiding them toward redemption."
-										],
-										[
-											"3",
-											"I'm haunted by one or more spirits that never speak to me. Interpreting their cryptic omens is my full-time job, and I fear their displeasure should I misconstrue them."
-										],
-										[
-											"4",
-											"Every night, I'm contacted by a different spirit from the local area, hoping I'll channel them and revisit their old haunts."
-										],
-										[
-											"5",
-											"I'm completely unaware of the spirit that guards me, mistaking its intervention for strokes of luck, or believing I have my own magical powers."
-										],
-										[
-											"6",
-											"I spend hours meditating on the natural world, and animal spirits appear to me offering guidance."
-										],
-										[
-											"7",
-											"A brush with death left me stood with one foot in the grave. Suddenly able to see spirits, I use my newfound abilities to help lost souls with their unfinished business."
-										],
-										[
-											"8",
-											"A crime in my past drew the eye of a malicious spirit, which tempts me with power to continue its dark work."
-										]
-									]
-								}
-							]
-						},
-						{
-							"type": "entries",
-							"name": "One foot in the grave",
-							"entries": [
-								"Warriors dishonored on the battlefield; commoners killed in cold blood; mentors who outlived their students; thieves who died behind bars plotting one last heist. Unable to find rest, ghosts are lost souls tied to the Border Ethereal. Some appear as spectral adventurers, replete with the tools of their trade. Others present as animals, or in abstract forms representing their personalities.",
-								"Wychlaran Witchs bring a little of the otherworld with them when they return to the Material Plane. In time, they learn to harness the forces that sustain them, finding new ways to bend reality and assail their foes.",
-								"Through possession, ghosts are able to merge with and manipulate mortals. Though some are malicious and domineering, most go in search of companions who will heed their counsel. If a ghost and their host work in harmony, they can overcome obstacles neither could surmount alone."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Undying Purpose",
-							"entries": [
-								"Wychlaran Witchs linger to see their unfinished business done, and the way their powers manifest reflects this task. Most met with untimely deaths, their origins steeped in tragedy. Others had duties unattainable in a single lifetime, such as guarding a relic or defending a certain bloodline. Such a soul might forgo their rest until a worthy successor is found, or serve as guardian to several generations of descendants. The beneficiaries of such protection should count themselves lucky, for a ghost's insight alone can avert disaster.",
-								"Half-trapped outside reality, ghosts depend on their allies to pursue their goals. Trustworthy companions are hard to find and these bonds, once forged, can last lifetimes. Unconstrained by time, a ghost might spend decades mentoring such a charge. Others might hunt artifacts or study occult lore: anything to avoid repeating their mortal failures."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Creating a Wychlaran Witch",
-							"entries": [
-								"Creating a ghost character demands a backstory dominated by an extraordinary event: your death. Perhaps your demise itself began your unfinished business and you've sworn revenge against the villain that laid you low. Perhaps your passing was simply an obstacle on the road to a wider goal: the mastery of magic; the perfection of a martial art; or the appointment of a worthy successor to an ancient task.",
-								"What's your relationship like with your adventuring companions? Did they stumble across the relic you guard and take it with them, or is a member of their company the beneficiary of an old accord? Perhaps you were one of their number to begin with, and you linger to finish the adventure that claimed your life? Is one party member in particular your chosen champion, or do you consider the entire group your flock?",
-								{
-									"type": "inset",
-									"name": "Wychlaran Witchly Encore",
-									"entries": [
-										"When a player character dies with unfinished business, the DM may allow them to forgo their rest, replacing one or more of their class levels with levels in ghost. Consider letting a character with a low Charisma modifier substitute their Intelligence or Wisdom when using ghost class features."
-									]
-								},
-								{
-									"type": "entries",
-									"name": "Quick Build",
-									"entries": [
-										"You can make a ghost quickly by following these suggestions. First, Charisma should be your highest ability score, followed by Constitution. If you plan to select the {@i Mischief Not Managed} unfinished business, make Dexterity your second-best score instead. Next, choose the {@background Variant Noble (Knight)|PHB} or {@background Variant Noble (Retainers)|PHB}, and take the variant feature: Retainers."
-									]
-								}
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Quirks and Foibles",
-							"entries": [
-								"Consider adding some flourishes to make your ghost character stand out. The section below contains a few ideas. You can roll dice to determine traits randomly, pick those you fancy, or use the suggestions as inspiration for your own designs.",
-								{
-									"type": "entries",
-									"name": "Signature Phenomenon",
-									"entries": [
-										"Every ghost has a tell-tale manifestation that they can't control: strange sounds, creeping chills, or sensations of profound loneliness or giddy excitement.",
-										{
-											"type": "table",
-											"colLabels": [
-												"d6",
-												"Signature Phenomenon"
-											],
-											"colStyles": [
-												"col-1 text-center",
-												"col-11"
-											],
-											"rows": [
-												[
-													"1",
-													"A distant melody, tuneful birdcall, or fragment of nursery rhyme is carried on the wind around me."
-												],
-												[
-													"2",
-													"Nearby pools and mirrors reflect older, more decrepit versions of those viewing them."
-												],
-												[
-													"3",
-													"Animals sense when I'm close: cats hiss, dogs bark, and insects swarm without provocation."
-												],
-												[
-													"4",
-													"I'm accompanied by gusts of chill wind or a warm summer breeze. Candles gutter and go out as I approach."
-												],
-												[
-													"5",
-													"Hoarfrost creeps over nearby objects when I stand still."
-												],
-												[
-													"6",
-													"Flowers blossom in my presence, but rapidly wither away when I move on."
-												]
-											]
-										}
-									]
-								},
-								{
-									"type": "entries",
-									"name": "Untimely Demise",
-									"entries": [
-										"As often as not, ghosts' origins are steeped in tragedy. What was the cause of your untimely passing, and how does the way you died affect your demeanor?",
-										{
-											"type": "table",
-											"colLabels": [
-												"d6",
-												"Cause of Death"
-											],
-											"colStyles": [
-												"col-1 text-center",
-												"col-11"
-											],
-											"rows": [
-												[
-													"1",
-													"My body lies broken alongside countless others on a forgotten battlefield."
-												],
-												[
-													"2",
-													"I died in my sleep near the end of my natural lifespan, but until I appoint a successor I'll never rest."
-												],
-												[
-													"3",
-													"I can't even remember how I died, and I'm not entirely sure I want to know."
-												],
-												[
-													"4",
-													"Not even I survived the villain that slew my people, but that won't stop me from taking revenge."
-												],
-												[
-													"5",
-													"Dead? I'm not dead! How could we possibly be talking if I was dead?!"
-												],
-												[
-													"6",
-													"I died in an embarrassing mundane accident, so I make up a different story whenever I'm asked."
-												]
-											]
-										}
-									]
-								},
-								{
-									"type": "entries",
-									"name": "Possession Quirk",
-									"entries": [
-										"Willing hosts help anchor ghosts to the mortal world, and ghosts repay this trust with counsel and protection. Though few would choose a battle of wills over earnest cooperation, most can't help but influence their hosts, allowing their personalities to overspill, or lacking complete control of their spirit bodies.",
-										"The following might apply to your hosts while you possess them. Make sure other players are comfortable using these traits: even if you possess them, it's their decision whether or not to play along.",
-										{
-											"type": "table",
-											"colLabels": [
-												"d6",
-												"Host's Quirk"
-											],
-											"colStyles": [
-												"col-1 text-center",
-												"col-11"
-											],
-											"rows": [
-												[
-													"1",
-													"hoard objects that the ghost possessing me desires, such as coins, dice, wands, or holy symbols."
-												],
-												[
-													"2",
-													"Even sat by a roaring campfire and dressed in the thickest coat, I never feel warm."
-												],
-												[
-													"3",
-													"I just can't help myself around good food: everything tastes like I've never tried it before!"
-												],
-												[
-													"4",
-													"I'm terrified of an implement that was involved in the death of the ghost possessing me."
-												],
-												[
-													"5",
-													"Whether doing something for the first time or the hundredth, I experience vivid flashes of déjà vu."
-												],
-												[
-													"6",
-													"I sometimes unwittingly speak in the language of the ghost possessing me, bewildering my fellow adventures."
-												]
-											]
-										}
-									]
-								}
-							]
-						},
-						"As an occultist, you gain the following class features."
+						"The Witches of Rashemen, also known as Wychlaran, meaning \"wise old women\" in the ancient language of Halardrim, are the spiritual leaders of Rashemen, communing with the spirits and guiding the souls of the Rashemi people.",
+						"Wychlarans develop a bond with their land that gives them exceptional power. This power always stays with them, as long as they don’t leave their homeland.",
+						"The formal term for a member of this group Is \"hathran\" (\"learned sister\"), while the most powerful and respected were called \"othlor\" (\"true one\"). In Rashemen, a member of the Wychlaran could do no wrong. Her word was law and to disobey it was punishable by death.",
+						"The Witches of Rashemen are based in Urlingwood, an area forbidden to any non-Wychlaran. Any trespassers found in the wood were killed on sight. The witches meet here to brew jhuild, as well as to bind and control hostile spirits and spy on Thayan forces.",
+						"They all wear masks to conceal their faces when traveling outside of Rashemen.",
+						"As a Wychlaran, you gain the following class features."
 					]
 				}
 			]
@@ -921,482 +634,295 @@
 	],
 	"classFeature": [
 		{
-			"name": "Spirit Form",
+			"name": "Ritual Caster",
 			"source": "BWWW",
-			"page": 5,
+			"page": 2,
 			"className": "Wychlaran Witch",
 			"classSource": "BWWW",
 			"level": 1,
 			"entries": [
+				"At 1st level, the Wychlaran can cast spells as a ritual for those that have the 'ritual' tag and that they have prepared."
+			]
+		},
+		{
+			"name": "Coven Casting",
+			"source": "BWWW",
+			"page": 2,
+			"className": "Wychlaran Witch",
+			"classSource": "BWWW",
+			"level": 1,
+			"entries": [
+				"At 1st level, the Wychlaran add {@spell Magic Circle|PHB} to your list of available spells.",
+				"Three or more Wychlarans can work together to cast spells as a Coven. The Coven Casting version of a spell takes a minimum of 10 minutes -OR- the specified casting time multiplied by the number of Wychlaran in the Coven (whichever is greater). The required spell slots are split evenly amongst the Coven, which means that a Coven of 3 could split a 9th level spell into three 3rd level spell slots (of which they must have available). At least one of the Wychlaran must have the spell prepared and known. In cases where the required spell slot cannot be evenly split, the lead witch consumes a higher level slot before any other witch in the Coven (minimum of 1).",
+				"All Coven Casting spells require Concentration. If any witch within the Coven Casting loses their concentration, then the spell fails and/or must be restarted.",
+				"Coven spells can be cast at a higher level, but at least 1 witch must have that level of spell slot available.",
+				"Coven Casting allows for multiple castings of higher level spells as long as no witches within the coven expend a 6th level or higher spell slot.",
+				"Cantrips are not eligible for Coven Casting.",
+				"In special cases (per the DM's discretion), a spell could be cast higher than level 9."
+			]
+		},
+		{
+			"name": "Spirit Weaver",
+			"source": "BWWW",
+			"page": 2,
+			"className": "Wychlaran Witch",
+			"classSource": "BWWW",
+			"level": 1,
+			"entries": [
+				"At 1st level, You can cast {@spell Speak with Dead|PHB} as a Ritual. This spell does not count against your number of spells known."
+			]
+		},
+		{
+			"name": "Hathran Site",
+			"source": "BWWW",
+			"page": 2,
+			"className": "Wychlaran Witch",
+			"classSource": "BWWW",
+			"level": 1,
+			"entries": [
+				"At 1st level, You can see normally in Darkness, both magical and nonmagical, to a distance of 60 feet (You gain {@sense darkvision} with a range of 60 feet.)."
+			]
+		},
+		{
+			"name": "Commune with the Land",
+			"source": "BWWW",
+			"page": 2,
+			"className": "Wychlaran Witch",
+			"classSource": "BWWW",
+			"level": 1,
+			"entries": [
+				"At 1st level, You can cast {@spell Commune|PHB} without expending a spell slot (lvl 1-5: 1/day; lvl 6-8: 2/day; lvl 9+: 3/day)"
+			]
+		},
+		{
+			"name": "Wychlaran Domain Spells",
+			"source": "BWWW",
+			"page": 4,
+			"className": "Wychlaran Witch",
+			"classSource": "BWWW",
+			"level": 1,
+			"entries": [
+				"These spells are always prepared, but do not count towards your total number of prepared spells.",
 				{
-					"type": "inset",
-					"entries": [
-						"At 1st level, your mortal body has perished, but your spirit remains tethered to the Material Plane.",
-						"Your creature type is undead, you can't make attacks, and you can't cast spells using other classes' features. You can't interact with objects and equipment willingly, although creatures, traps, and other hazards can harm you normally. Your hit points can't be restored except by spending hit dice or completing a long rest, and you leave behind no body when you die."
-					]
-				},
-				"You must obey the laws of physics and are slowed by difficult terrain as normal. Although your faltering tether can be a hindrance, it provides the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"You have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks.",
-						"You have immunity to poison damage.",
-						"You are immune to the grappled, petrified, poisoned, prone, and restrained conditions.",
-						"You take no damage from falling."
-					]
-				},
-				"As a disembodied spirit, you no longer require air, food, drink, or sleep. You also gain abiding magical abilities:",
-				{
-					"type": "list",
-					"items": [
-						"{@i Ethereal Sight}: You can see into the {@i Ethereal Plane} within 30 feet of you.",
-						"You can cast {@spell thaumaturgy|PHB} at will, requiring no components."
-					]
-				},
-				"If a ghost class feature allows you to cast a spell, you do so at its lowest possible level. Your spellcasting ability is Charisma.",
-				"Some of your ghost class features require your target to make a saving throw to resist their effects. The saving throw DC is calculated as follows:",
-				{
-					"type": "abilityDc",
-					"name": "Wychlaran Witch",
-					"attributes": [
-						"cha"
+					"type": "table",
+					"caption": "Wychlaran Domain Spells",
+					"colLabels": [
+						"Wychlaran Witch Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"Cantrip",
+							"{@spell naturewatch|BWWW}"
+						],
+						[
+							"1st",
+							"{@spell witch bolt|PHB}, {@spell scatterspray|BWWW}"
+						],
+						[
+							"3rd",
+							"{@spell moonbeam}, {@spell see invisibility}"
+						],
+						[
+							"5th",
+							"{@spell aura of vitality}, {@spell Leomund's tiny hut}"
+						],
+						[
+							"7th",
+							"{@spell aura of life}, {@spell greater invisibility}"
+						],
+						[
+							"9th",
+							"{@spell circle of power}, {@spell mislead}"
+						]
 					]
 				}
 			]
 		},
 		{
-			"name": "Possession",
+			"name": "Fearsome",
 			"source": "BWWW",
-			"page": 5,
-			"className": "Wychlaran Witch",
-			"classSource": "BWWW",
-			"level": 1,
-			"entries": [
-				"As an action, you can possess one willing humanoid you can see within 5 feet of you. A possessed creature is called your host. You then disappear and can only perceive your surroundings through the host's senses.",
-				"While possessing a host, you can't be targeted by any attack, spell, or other effect, except ones that turn undead. You retain your alignment and game statistics, such as ability scores and class features, and maintain your position in initiative. The host can continue to act as normal, and you continue to take actions on your turn in combat.",
-				"Your host gains the following benefits while you possess them:",
-				{
-					"type": "list",
-					"items": [
-						"Your host benefits from your special senses, such as Ethereal Sight, and your language proficiencies, if any.",
-						"You can communicate with your host telepathically and vice versa.",
-						"Whenever your host makes an ability check with a skill or tool, an attack roll with a weapon, or a saving throw, you may roll a d4 and add the result to their roll's total if you have proficiency with that skill, tool, weapon, or saving throw."
-					]
-				},
-				"While possessing a host, you can only take actions granted by ghost class features. You also gain additional action options:",
-				{
-					"type": "list",
-					"items": [
-						"{@i Embolden}: As an action, you grant your host temporary hit points equal to your Charisma modifier (a minimum of 1). These hit points are lost when the possession ends.",
-						"{@i Harmonize}: As an action, you grant your host advantage on the next attack roll they make before the start of your next turn.",
-						"{@i Project}: As an action, you can use your Possession ability on a new target. When used in this way it has a range of 30 feet, and after changing hosts you can immediately take another action other than this one."
-					]
-				},
-				"If an effect requires you to target creatures or establish distances, do so as if you were in the host's space. If your host takes damage while you're concentrating on a spell, you must save to maintain concentration as if you'd taken the damage yourself.",
-				"The possession lasts until the host drops to 0 hit points, you possess a different creature, you end it as a bonus action, or you are turned or forced out by an effect like the dispel evil and good spell. Unless you're possessing a new host, you appear in an unoccupied space within 5 feet of the host you vacated.",
-				{
-					"type": "inset",
-					"name": "Variant: Animal Forms",
-					"entries": [
-						"Some ghosts appear in animal form, representing totem beasts or unusual familiars.",
-						"When you gain the Spirit Form ability at 1st level, you can designate one medium or smaller beast to represent you. You appear as the chosen creature, though you are spectral. Other than your size category, none of your game statistics change. Your creature type remains undead, and any capacity for flight is withheld until 15th level, when it is represented by Incorporeal Movement.",
-						"When using your abilities that possess a host, you may elect to remain visible: tucked in a pocket; circling overhead; wreathing them in an aura; or running alongside them. Regardless of your choice, the restrictions on the actions you can take and effects that can target you are the same."
-					]
-				}
-			]
-		},
-		{
-			"name": "Unfinished Business",
-			"source": "BWWW",
-			"page": 5,
-			"className": "Wychlaran Witch",
-			"classSource": "BWWW",
-			"level": 1,
-			"entries": [
-				"Different ghosts have different reasons to linger in the mortal world. The unfinished business you choose reflects this purpose and the ends to which you guide your allies and hosts.",
-				"At 1st level, you choose an unfinished business that describes your agenda in the mortal world: Duty Not Done, Malice Unsated, Mischief Not Managed, or Restless Blade. Each unfinished business is detailed at the end of the class description. Your choice grants you features when you choose it at 1st level, and additional benefits at 6th, 11th, and 17th level."
-			]
-		},
-		{
-			"name": "Unfinished Business",
-			"source": "BWWW",
-			"page": 5,
-			"className": "Wychlaran Witch",
-			"classSource": "BWWW",
-			"level": 6,
-			"entries": [
-				"Different ghosts have different reasons to linger in the mortal world. The unfinished business you choose reflects this purpose and the ends to which you guide your allies and hosts.",
-				"At 6th level, you choose an unfinished business that describes your agenda in the mortal world: Duty Not Done, Malice Unsated, Mischief Not Managed, or Restless Blade. Each unfinished business is detailed at the end of the class description. Your choice grants you features when you choose it at 1st level, and additional benefits at 6th, 11th, and 17th level."
-			]
-		},
-		{
-			"name": "Unfinished Business",
-			"source": "BWWW",
-			"page": 5,
-			"className": "Wychlaran Witch",
-			"classSource": "BWWW",
-			"level": 11,
-			"entries": [
-				"Different ghosts have different reasons to linger in the mortal world. The unfinished business you choose reflects this purpose and the ends to which you guide your allies and hosts.",
-				"At 11th level, you choose an unfinished business that describes your agenda in the mortal world: Duty Not Done, Malice Unsated, Mischief Not Managed, or Restless Blade. Each unfinished business is detailed at the end of the class description. Your choice grants you features when you choose it at 1st level, and additional benefits at 6th, 11th, and 17th level."
-			]
-		},
-		{
-			"name": "Unfinished Business",
-			"source": "BWWW",
-			"page": 5,
-			"className": "Wychlaran Witch",
-			"classSource": "BWWW",
-			"level": 17,
-			"entries": [
-				"Different ghosts have different reasons to linger in the mortal world. The unfinished business you choose reflects this purpose and the ends to which you guide your allies and hosts.",
-				"At 17th level, you choose an unfinished business that describes your agenda in the mortal world: Duty Not Done, Malice Unsated, Mischief Not Managed, or Restless Blade. Each unfinished business is detailed at the end of the class description. Your choice grants you features when you choose it at 1st level, and additional benefits at 6th, 11th, and 17th level."
-			]
-		},
-		{
-			"name": "Otherworldly Insight",
-			"source": "BWWW",
-			"page": 5,
-			"className": "Wychlaran Witch",
-			"classSource": "BWWW",
-			"level": 2,
-			"entries": [
-				"Starting at 2nd level, your mystical premonitions allow you to better guide your allies and thwart your foes. You can cast {@spell augury|PHB}, requiring no components. When cast in this way, the reading simply becomes known to you, marked by a gust of chill wind, a distant birdcall, or some other supernatural phenomenon.",
-				"Once you cast {@spell augury|PHB} in this way, you must finish a short or long rest before you can do so again."
-			]
-		},
-		{
-			"name": "Manifestations",
-			"source": "BWWW",
-			"page": 6,
+			"page": 3,
 			"className": "Wychlaran Witch",
 			"classSource": "BWWW",
 			"level": 3,
 			"entries": [
-				"Drawing on the forces that sustain you, you've learned to manifest abiding magical abilities, twisting your spirit body to suit your needs.",
-				"At 3rd level, you gain a manifestation of your choice. Your manifestation options are detailed at the end of the class description. When you gain certain ghost levels, you gain additional manifestations of your choice, as shown in the {@filter Manifestations|optionalfeatures|feature type=OF:BWWW} Known column of the {@filter Wychlaran Witch table|spells|class=Wychlaran Witch}.",
-				"Whenever you complete a long rest, you can choose one of the {@filter manifestations|optionalfeatures|feature type=OF:BWWW} you know and replace it with another manifestation for which you meet the prerequisites.",
+				"At 3rd level, you can cast {@spell Fear|PHB} a number of times = your Proficiency level without using a Spell Slot (mana).",
+				"You gain Proficiency with Intimidation or Persuasion. If you are already proficient in either, then gain Expertise in that skill instead."
+			],
+			"skillProficiencies": [
 				{
-					"type": "entries",
-					"entries": [
-						{
-							"type": "list",
-							"style": "list-no-bullets",
-							"items": [
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Chill Of The Grave|BWWW"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Cloak Of Sorrows|BWWW"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Wychlaran Witchly Flicker|BWWW"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Haunting Guise|BWWW"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Keening Wail|BWWW"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Knot In The Weave|BWWW"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Knowledge From Beyond|BWWW"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Knowledge From Within|BWWW"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "One With The Mist|BWWW"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Otherworldly Spark|BWWW"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Phantasmal Strike|BWWW"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Spectral Affinity|BWWW"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Spirit Sight|BWWW"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Tear In The Veil|BWWW"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Voice Of The Departed|BWWW"
-								}
-							]
-						}
-					]
+					"choose": {
+						"from": [
+							"intimidation",
+							"persuasion"
+						],
+						"count": 1
+					}
 				}
 			]
 		},
 		{
 			"name": "Ability Score Improvement",
 			"source": "BWWW",
-			"page": 6,
+			"page": 3,
 			"className": "Wychlaran Witch",
 			"classSource": "BWWW",
 			"level": 4,
 			"entries": [
-				"When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+				"When you reach 4th level, and again at 8th, 12th, 16th and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you cannot increase an ability score above 20 using this feature."
 			]
 		},
 		{
 			"name": "Ability Score Improvement",
 			"source": "BWWW",
-			"page": 6,
+			"page": 3,
 			"className": "Wychlaran Witch",
 			"classSource": "BWWW",
 			"level": 8,
 			"entries": [
-				"When you reach 8th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+				"When you reach 4th level, and again at 8th, 12th, 16th and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you cannot increase an ability score above 20 using this feature."
 			]
 		},
 		{
 			"name": "Ability Score Improvement",
 			"source": "BWWW",
-			"page": 6,
+			"page": 3,
 			"className": "Wychlaran Witch",
 			"classSource": "BWWW",
 			"level": 12,
 			"entries": [
-				"When you reach 12th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+				"When you reach 4th level, and again at 8th, 12th, 16th and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you cannot increase an ability score above 20 using this feature."
 			]
 		},
 		{
 			"name": "Ability Score Improvement",
 			"source": "BWWW",
-			"page": 6,
+			"page": 3,
 			"className": "Wychlaran Witch",
 			"classSource": "BWWW",
 			"level": 16,
 			"entries": [
-				"When you reach 16th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+				"When you reach 4th level, and again at 8th, 12th, 16th and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you cannot increase an ability score above 20 using this feature."
 			]
 		},
 		{
 			"name": "Ability Score Improvement",
 			"source": "BWWW",
-			"page": 6,
+			"page": 3,
 			"className": "Wychlaran Witch",
 			"classSource": "BWWW",
 			"level": 19,
 			"entries": [
-				"When you reach 19th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+				"When you reach 4th level, and again at 8th, 12th, 16th and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you cannot increase an ability score above 20 using this feature."
 			]
 		},
 		{
-			"name": "Rejuvenation",
+			"name": "Spiritual Alignment",
 			"source": "BWWW",
-			"page": 6,
+			"page": 3,
+			"className": "Wychlaran Witch",
+			"classSource": "BWWW",
+			"level": 4,
+			"entries": [
+				"At 4th level, you gain another Cantrip as a Domain Cantrip. The cantrip must be from the school of Necromancy or Abjuration.",
+				"At 8th level, you gain another 1st level Spell as a Domain Spell, The spell must be from the school of Necromancy or Abjuration.",
+				"At 13th level, you gain another 2nd level Spell as a Domain Spell. The spell must be from the school of Necromancy or Abjuration.",
+				"At 20th level, you gain another 3rd level Spell as a Domain Spell. The spell must be from the school of Necromancy or Abjuration.",
+				"Domain spells do not count towards your number spells prepared and you always have them prepared."
+			]
+		},
+		{
+			"name": "Spiritual Alignment",
+			"source": "BWWW",
+			"page": 3,
+			"className": "Wychlaran Witch",
+			"classSource": "BWWW",
+			"level": 8,
+			"entries": [
+				"At 4th level, you gain another Cantrip as a Domain Cantrip. The cantrip must be from the school of Necromancy or Abjuration.",
+				"At 8th level, you gain another 1st level Spell as a Domain Spell, The spell must be from the school of Necromancy or Abjuration.",
+				"At 13th level, you gain another 2nd level Spell as a Domain Spell. The spell must be from the school of Necromancy or Abjuration.",
+				"At 20th level, you gain another 3rd level Spell as a Domain Spell. The spell must be from the school of Necromancy or Abjuration.",
+				"Domain spells do not count towards your number spells prepared and you always have them prepared."
+			]
+		},
+		{
+			"name": "Spiritual Alignment",
+			"source": "BWWW",
+			"page": 3,
+			"className": "Wychlaran Witch",
+			"classSource": "BWWW",
+			"level": 13,
+			"entries": [
+				"At 4th level, you gain another Cantrip as a Domain Cantrip. The cantrip must be from the school of Necromancy or Abjuration.",
+				"At 8th level, you gain another 1st level Spell as a Domain Spell, The spell must be from the school of Necromancy or Abjuration.",
+				"At 13th level, you gain another 2nd level Spell as a Domain Spell. The spell must be from the school of Necromancy or Abjuration.",
+				"At 20th level, you gain another 3rd level Spell as a Domain Spell. The spell must be from the school of Necromancy or Abjuration.",
+				"Domain spells do not count towards your number spells prepared and you always have them prepared."
+			]
+		},
+		{
+			"name": "Spiritual Alignment",
+			"source": "BWWW",
+			"page": 3,
+			"className": "Wychlaran Witch",
+			"classSource": "BWWW",
+			"level": 20,
+			"entries": [
+				"At 4th level, you gain another Cantrip as a Domain Cantrip. The cantrip must be from the school of Necromancy or Abjuration.",
+				"At 8th level, you gain another 1st level Spell as a Domain Spell, The spell must be from the school of Necromancy or Abjuration.",
+				"At 13th level, you gain another 2nd level Spell as a Domain Spell. The spell must be from the school of Necromancy or Abjuration.",
+				"At 20th level, you gain another 3rd level Spell as a Domain Spell. The spell must be from the school of Necromancy or Abjuration.",
+				"Domain spells do not count towards your number spells prepared and you always have them prepared."
+			]
+		},
+		{
+			"name": "The Three Provides",
+			"source": "BWWW",
+			"page": 3,
 			"className": "Wychlaran Witch",
 			"classSource": "BWWW",
 			"level": 5,
 			"entries": [
-				"At 5th level, when you are reduced to 0 hit points but not killed outright, you can use your reaction to possess a willing humanoid within 30 feet of you. If you do, you become {@condition unconscious|PHB} but stable. Your host gains none of the usual benefits of your {@classFeature Possession|Wychlaran Witch|BWWW|1|BWWW} ability, and you become unstable again if the possession ends. After occupying a host for 1 hour, you regain 1 hit point, become {@condition conscious|PHB}, and the possession ends."
+				"At 5th lvl, a wychlaran no longer requires material components (except for spells that consume materials with a stated GP value; their required value is halved). The three gods are {@deity Chauntea}, {@deity Mielikki} and {@deity Mystra}."
 			]
 		},
 		{
-			"name": "Medium",
+			"name": "Telepathic Touch",
 			"source": "BWWW",
-			"page": 6,
+			"page": 3,
 			"className": "Wychlaran Witch",
 			"classSource": "BWWW",
-			"level": 10,
+			"level": 6,
 			"entries": [
-				"Just as you project your spirit body from host to host on the Material Plane, you've learned to cast a {@spell web|PHB} in the Border Ethereal, serving as a conduit between allies near and far.",
-				"As of 10th level you can cast {@spell Rary's telepathic bond|PHB} at will, requiring no components. Creatures connected in this way have advantage on saving throws to resist being {@condition charmed|PHB} or {@condition frightened|PHB}."
+				"At 6th level, a wychlaran can Concentrate on a single target within 30 feet and use a Bonus Action to send a telepathic Message of 25 words or less. The Target can reply as a Free Action to do so while your focus on it continues. As long as your concentration is not broken and the range is not exceeded, then the communication link remains and you can continue to communicate each round."
 			]
 		},
 		{
-			"name": "Incorporeal Movement",
+			"name": "Spirit Sanctuary",
 			"source": "BWWW",
-			"page": 6,
+			"page": 3,
 			"className": "Wychlaran Witch",
 			"classSource": "BWWW",
-			"level": 15,
+			"level": 14,
 			"entries": [
-				"By 15th level, you've learned not only to strengthen your grip on the Material Plane but also to weaken it, unshackling you from the harsh laws of reality.",
-				"You gain a flying speed of 40ft.",
-				"Additionally, when moving, you can pass through other creatures and objects as if they were difficult terrain. If you end your turn inside an object, you take {@damage 1d10} force damage and appear in the nearest unoccupied space."
+				"When you reach 14th level, creatures of the spiritual world sense your connection and become hesitant to attack you. When a celestial or undead creature attacks you, that creature must make a WIS save versus your spell save DC. On a failed save, the creature must choose a different target, or the attack automatically misses. On a successful save, the creature is immune to this effect for 24 hours. The creature is aware of this effect before it makes an attack against you. The Sanctuary is broken if you attack or harm the creature."
 			]
 		},
 		{
-			"name": "Journey's End",
+			"name": "Witches Flight",
 			"source": "BWWW",
-			"page": 6,
+			"page": 3,
 			"className": "Wychlaran Witch",
 			"classSource": "BWWW",
-			"level": 20,
+			"level": 18,
 			"entries": [
-				"At 20th level, you must decide whether to pass on to the next world or persist in this one. You gain one feature of your choice from the two below: {@classFeature Embrace the End|Wychlaran Witch|BWWW|20|BWWW}, or {@classFeature Deny Reality's Rule|Wychlaran Witch|BWWW|20|BWWW}.",
-				{
-					"type": "refClassFeature",
-					"classFeature": "Embrace the End|Wychlaran Witch|BWWW|20"
-				},
-				{
-					"type": "refClassFeature",
-					"classFeature": "Deny Reality's Rule|Wychlaran Witch|BWWW|20"
-				}
-			]
-		},
-		{
-			"name": "Embrace the End",
-			"source": "BWWW",
-			"page": 6,
-			"className": "Wychlaran Witch",
-			"classSource": "BWWW",
-			"level": 20,
-			"isClassFeatureVariant": true,
-			"entries": [
-				"You are grateful for an afterlife well lived. Perhaps one last struggle stands between you and your final respite, or perhaps it's time to discover what the next world has in store.",
-				"After choosing this option at 20th level, you can pass on to the afterlife as an action (the effects of which are determined by the DM). Until you do so, you can draw on your enlightenment as an action, gaining the benefits of an {@spell augury|PHB} spell with no chance of a random reading."
-			]
-		},
-		{
-			"name": "Deny Reality's Rule",
-			"source": "BWWW",
-			"page": 6,
-			"className": "Wychlaran Witch",
-			"classSource": "BWWW",
-			"level": 20,
-			"isClassFeatureVariant": true,
-			"entries": [
-				"You reject the cruel hand dealt to you by fate, leaving your mortal origins and perhaps even your unfinished business far behind you.",
-				"After choosing this option at 20th level, you are no longer considered undead when determining which spells and abilities can target you. Thereafter, no magic, however powerful, can restore you to life.",
-				"Additionally, you can cast {@spell wish|PHB} once, requiring no components, and regain the ability to do so after 7 days. Should you suffer stress while casting {@spell wish|PHB} this way, you may nonetheless wish again, but only to duplicate the effects of an 8th level or lower spell.",
-				{
-					"type": "inset",
-					"name": "Second Chance",
-					"entries": [
-						"A ghost character returned to life by magic such as {@spell true resurrection|PHB} or {@spell wish|PHB} immediately replaces their ghost class levels with levels in another class. Consider how the character's ordeal might have changed them. Is their unfinished business still what drives them, or has a second chance at life reordered their priorities?"
-					]
-				}
-			]
-		},
-		{
-			"name": "Channeler",
-			"source": "BWWW",
-			"page": 14,
-			"className": "Occultist (Wychlaran Witch Variant)",
-			"classSource": "BWWW",
-			"level": 1,
-			"entries": [
-				"Starting at 1st level, you can call forth a lost soul from the Border Ethereal whenever you finish a long rest. This apparition uses your ability scores, has a base walking speed of 30 feet, and is proficient in your choice of any three skills, tools, or languages. It otherwise uses the statistics of a ghost character with no race or background, with as many levels in ghost as you have occultist.",
-				"You control the spirit, which takes its turn on your initiative. You choose how it behaves and moves, though it doesn't take actions unless you command it to. You can use your action to mentally command the spirit if it is within 120 feet of you. When you do, it can take actions appropriate to its game statistics until the start of your next turn. The spirit never requires your command to use its reaction. Until given its first command, the spirit you channel inhabits you using {@classFeature Possession|Wychlaran Witch|BWWW|1|BWWW}.",
-				"If you die, the spirit vanishes. If you fall {@condition unconscious}, the spirit is incapacitated until you regain consciousness. If the spirit dies, you must make a Charisma save against its Wychlaran Witch save DC, suffering 3 levels of exhaustion if you fail, or 1 if you pass. Whenever you finish a long rest, you can channel a different spirit, dismissing any others. When you do, you can choose different skills, tools, or languages for its 3 proficiencies.",
-				"If an occultist class feature 'replaces' a feature of a different name, the spirits you summon with Channeler don't gain that feature. Beginning at 3rd level in this class, you can choose the ghost's Manifestations whenever you summon it."
-			]
-		},
-		{
-			"name": "Locus Of The Lost",
-			"source": "BWWW",
-			"page": 14,
-			"className": "Occultist (Wychlaran Witch Variant)",
-			"classSource": "BWWW",
-			"level": 1,
-			"entries": [
-				"At 1st level, you choose the nature of the lost souls you channel and command.",
-				"Select an {@classFeature Unfinished Business|Wychlaran Witch|BWWW|1|BWWW} from the Wychlaran Witch class feature of the same name: Duty Not Done, Malice Unsated, Mischief Not Managed, or Restless Blade.",
-				"The Unfinished Business you choose applies to every ghost summoned by your {@classFeature Channeler|Occultist (Wychlaran Witch Variant)|BWWW|1|BWWW} feature. If your choice allows spirits to learn spells from the {@filter Wychlaran Witch spell list|spells|class=Wychlaran Witch}, choose them when you gain this feature and whenever you gain levels in this class. Every spirit you summon knows the same list of {@filter Wychlaran Witch spells|spells|class=Wychlaran Witch}."
-			]
-		},
-		{
-			"name": "Personal Ability Score Improvement",
-			"source": "BWWW",
-			"page": 14,
-			"className": "Occultist (Wychlaran Witch Variant)",
-			"classSource": "BWWW",
-			"level": 4,
-			"entries": [
-				"When you reach 4th level, and again at 8th, 12th, 16th and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
-			]
-		},
-		{
-			"name": "Personal Ability Score Improvement",
-			"source": "BWWW",
-			"page": 14,
-			"className": "Occultist (Wychlaran Witch Variant)",
-			"classSource": "BWWW",
-			"level": 8,
-			"entries": [
-				"When you reach 4th level, and again at 8th, 12th, 16th and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
-			]
-		},
-		{
-			"name": "Personal Ability Score Improvement",
-			"source": "BWWW",
-			"page": 14,
-			"className": "Occultist (Wychlaran Witch Variant)",
-			"classSource": "BWWW",
-			"level": 12,
-			"entries": [
-				"When you reach 4th level, and again at 8th, 12th, 16th and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
-			]
-		},
-		{
-			"name": "Personal Ability Score Improvement",
-			"source": "BWWW",
-			"page": 14,
-			"className": "Occultist (Wychlaran Witch Variant)",
-			"classSource": "BWWW",
-			"level": 16,
-			"entries": [
-				"When you reach 4th level, and again at 8th, 12th, 16th and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
-			]
-		},
-		{
-			"name": "Personal Ability Score Improvement",
-			"source": "BWWW",
-			"page": 14,
-			"className": "Occultist (Wychlaran Witch Variant)",
-			"classSource": "BWWW",
-			"level": 19,
-			"entries": [
-				"When you reach 4th level, and again at 8th, 12th, 16th and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
-			]
-		},
-		{
-			"name": "Superior Medium",
-			"source": "BWWW",
-			"page": 14,
-			"className": "Occultist (Wychlaran Witch Variant)",
-			"classSource": "BWWW",
-			"level": 10,
-			"entries": [
-				"By 10th level, you've learned to channel not only the restless dead, but also the tumultuous thoughts of the living.",
-				"You can cast {@spell Rary's telepathic bond|PHB} at will, requiring no components. Creatures connected in this way have advantage on saving throws to resist being {@condition charmed} or {@condition frightened}. While connected by this bond, you can use your action to command a spirit regardless of the distance between you."
-			]
-		},
-		{
-			"name": "Shepherd Of The Lost Souls",
-			"source": "BWWW",
-			"page": 14,
-			"className": "Occultist (Wychlaran Witch Variant)",
-			"classSource": "BWWW",
-			"level": 20,
-			"entries": [
-				"At 20th level, you are a shining beacon to wandering spirits, able to grant reprieve to the restless dead. Spirits summoned by your {@classFeature Channeler|Occultist (Wychlaran Witch Variant)|BWWW|1|BWWW} feature can take actions without being commanded (you still decide which actions they take).",
-				"Additionally, you can attempt to put lingering spirits to rest. As an action, you can soothe an undead creature you can see within 5 feet of you, even if the creature is on the {@i Ethereal Plane}. A willing target is immediately destroyed, allowing its soul, if any, to move on to the afterlife. An unwilling target makes a Charisma saving throw with a DC equal to its own Charisma score, dropping to 0 hit points on a fail, or becoming immune to this feature for 24 hours on a success. Undead that cannot be turned succeed on their saving throw automatically."
+				"At 18th level, you gain a fly speed equal to your base speed. You also gain the ability to hover."
 			]
 		}
 	],
