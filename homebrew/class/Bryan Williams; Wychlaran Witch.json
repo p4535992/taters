@@ -167,10 +167,6 @@
 				"requirements": {
 					"wis": 13
 				},
-				"entries": [
-					"When using the optional rule on multiclassing in the Player's Handbook (p. 163), the ghost class imposes no additional prerequisites and grants no proficiencies when taken after 1st level.",
-					"Lack of a body can make it difficult for a ghost to make use of other classes' features (see Spirit Form). To add a touch of the supernatural to your character while avoiding the obstacles posed by Spirit Form, consider using the Occultist Class Variant on page 12 of this document."
-				],
 				"proficienciesGained": {
 					"skills": [
 						{
@@ -622,11 +618,12 @@
 					"page": 1,
 					"entries": [
 						"The Witches of Rashemen, also known as Wychlaran, meaning \"wise old women\" in the ancient language of Halardrim, are the spiritual leaders of Rashemen, communing with the spirits and guiding the souls of the Rashemi people.",
-						"Wychlarans develop a bond with their land that gives them exceptional power. This power always stays with them, as long as they don’t leave their homeland.",
+						"Wychlarans develop a bond with their land that gives them exceptional power. This power always stays with them, as long as they don't leave their homeland.",
 						"The formal term for a member of this group Is \"hathran\" (\"learned sister\"), while the most powerful and respected were called \"othlor\" (\"true one\"). In Rashemen, a member of the Wychlaran could do no wrong. Her word was law and to disobey it was punishable by death.",
 						"The Witches of Rashemen are based in Urlingwood, an area forbidden to any non-Wychlaran. Any trespassers found in the wood were killed on sight. The witches meet here to brew jhuild, as well as to bind and control hostile spirits and spy on Thayan forces.",
 						"They all wear masks to conceal their faces when traveling outside of Rashemen.",
-						"As a Wychlaran, you gain the following class features."
+						"As a Wychlaran, you gain the following class features.",
+						"Every Witches of Rashemen use a very special staff: {@item Wychlaran Specialty Weapon|BWWW}."
 					]
 				}
 			]
@@ -724,20 +721,28 @@
 							"{@spell witch bolt|PHB}, {@spell scatterspray|BWWW}"
 						],
 						[
+							"2nd",
+							"{@spell flame dagger|BWWW}, {@spell one with the land|BWWW}"
+						],
+						[
 							"3rd",
-							"{@spell moonbeam}, {@spell see invisibility}"
+							"{@spell flashburst|BWWW}, {@spell moon blade|BWWW}"
+						],
+						[
+							"4th",
+							"{@spell land womb|BWWW}, {@spell lesser planar ally|BWWW}"
 						],
 						[
 							"5th",
-							"{@spell aura of vitality}, {@spell Leomund's tiny hut}"
+							"{@spell lesser planar binding|BWWW}, {@spell moon path|BWWW}"
 						],
 						[
-							"7th",
-							"{@spell aura of life}, {@spell greater invisibility}"
+							"6th",
+							"{@spell planar ally|BWWW}, {@spell planar binding|BWWW}"
 						],
 						[
-							"9th",
-							"{@spell circle of power}, {@spell mislead}"
+							"8th",
+							"{@spell greater planar binding|BWWW}"
 						]
 					]
 				}
@@ -2045,6 +2050,861 @@
 			"entries": [
 				"While not possessing a creature, you can cast {@spell speak with dead|PHB} at will. When cast in this way, the spell requires no material component, and has a range of touch.",
 				"Additionally, you automatically know when the corpse tells a lie (though you don't have the power to compel it to tell the truth)."
+			]
+		}
+	],
+	"foundryClassFeature": [
+		{
+			"name": "Hathran Site",
+			"source": "BWWW",
+			"className": "Wychlaran Witch",
+			"classSource": "BWWW",
+			"level": 1,
+			"entryData": {
+				"senses": [
+					{
+						"darkvision": 60
+					}
+				]
+			}
+		}
+	],
+	"item": [
+		{
+			"name": "Wychlaran Specialty Weapon",
+			"source": "BWWW",
+			"page": 4,
+			"tier": "major",
+			"rarity": "uncommon",
+			"reqAttune": "by a sorcerer, warlock, wizard or Wychlaran Witch",
+			"reqAttuneTags": [
+				{
+					"class": "sorcerer"
+				},
+				{
+					"class": "warlock"
+				},
+				{
+					"class": "wizard"
+				},
+				{
+					"class": "Wychlaran Witch",
+					"source": "BWWW"
+				}
+			],
+			"weight": 4,
+			"weaponCategory": "simple",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
+			"staff": true,
+			"entries": [
+				"At 3rd level a Wychlaran constructs a staff made of wood harvested from the Urlingwood. The staff is then named by its owner (i.e. Urling Ice Staff, Urling Staff of Force, Radiant Urling Staff, Night-Tree Staff, etc)",
+				{
+					"name": "Staff Form",
+					"type": "entries",
+					"entries": [
+						"While in 'Staff' form, it acts as a 1-handed bludgeoning weapon for 1d6 + WIS mod damage OR as a 2-handed bludgeoning weapons for {@damage 1d8} + WIS mod damage. (see below for types, but each Wychlaran chooses one type)"
+					]
+				},
+				{
+					"name": "Spells",
+					"type": "entries",
+					"entries": [
+						"Also, the staff can store up to 5 charges (spell slots/mana). The Wychlaran can cast any number of spells into the staff that total up to 5 spell slots / mana (from herself or another spellcaster; similar to a Ring of Spell Storing). She can then expend a number of charges equal to the level of the spell to cast that spell as an Action."
+					]
+				},
+				{
+					"name": "Whip Form",
+					"type": "entries",
+					"entries": [
+						"As a bonus action, the wielder can change the form of the staff into a whip with a reach of 15 ft.",
+						{
+							"type": "list",
+							"items": [
+								"While in the 'whip' form, it crackles with elemental energy",
+								"On a hit, the whip does {@damage 1d4} slashing damage, plus {@damage 1d4} elemental (of Wychlaran's choice: Cold, Fire, Force, Lightning, Poison or Radiant).",
+								"The base damage increases to {@damage 1d6} at 6th level, {@damage 2d4} at 9th level, {@damage 1d10} at 12th level, {@damage 2d6} at 15th level and {@damage 2d8} at 18th level",
+								"Alternatively, in place of the extra elemental damage, the whip can latch onto a target that it hits and force it to become restrained (no save).",
+								"Alternatively, the Wychlaran can cast the '{@spell Rope Trick|PHB}' spell using the whip instead of a rope"
+							]
+						}
+					]
+				}
+				
+			],
+			"attachedSpells": [
+				"rope trick|phb"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/3sCZ9dm.jpg"
+						}
+					}
+				],
+				"entries": [
+					""
+				]
+			}
+		}
+	],
+	"spell": [
+		{
+			"name": "Nature Watch",
+			"source": "BWWW",
+			"page": 5,
+			"level": 0,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					}
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wychlaran Witch",
+						"source": "BWWW"
+					}
+				]
+			},
+			"entries": [
+				"Using the Hathran sight granted by the powers of The Three, you can determine the condition of creatures and plants near death within the spell's range. You instantly know whether each creature/plant within the area is dead, fragile (alive and wounded, or {@condition unconscious}), fighting off death (making death saves), undead, or neither alive nor dead (such as a construct). Naturewatch sees through any spell or ability that allows creatures to feign death."
+			]
+		},
+		{
+			"name": "Scatterspray",
+			"source": "BWWW",
+			"page": 5,
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"components": {
+				"s": true
+			},
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wychlaran Witch",
+						"source": "BWWW"
+					}
+				]
+			},
+			"entries": [
+				"Base on: {@spell Catapult|XGE}",
+				"You Choose any number of objects whose total weight is between 1 and 5 pounds within range that is not being worn or carried. The objects fly in a straight line up to 90 feet in a direction you choose before falling to the ground, stopping early if they impact against a solid surface. If the objects would strike a creature, that creature must make a DEX save vs {@damage 3d8} bludgeoning damage."
+			]
+		},
+		{
+			"name": "Flame Dagger",
+			"source": "BWWW",
+			"page": 5,
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a lit candle or a piece of flint"
+			},
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wychlaran Witch",
+						"source": "BWWW"
+					}
+				]
+			},
+			"entries": [
+				"{@b Duration:} 1 minute per Wychlaran level.",
+				"A 1-foot long blazing beam of red-hot flame springs forth from your hand. You wield this blade as if it was a dagger. Attacks with the blade deal Fire damage equal to {@dice 1d4} + Proficiency Bonus + Spell Casting Ability Modifier. The Flame Dagger can ignite combustible material that is not being worn or carried. Does NOT function under water."
+			]
+		},
+		{
+			"name": "One with the land",
+			"source": "BWWW",
+			"page": 5,
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wychlaran Witch",
+						"source": "BWWW"
+					}
+				]
+			},
+			"entries": [
+				"{@b Duration:} 1 hour per Wychlaran level.",
+				"You cast the spell and are bathed in a golden-green light from above. As it fades, you feel more in touch with your natural surroundings.",
+				"You forge a strong link with nature that gives you Advantage on Animal Handling, Stealth, Nature and Survival checks for the duration."
+			]
+		},
+		{
+			"name": "Flash Burst",
+			"source": "BWWW",
+			"page": 6,
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a pinch of Sulphur"
+			},
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wychlaran Witch",
+						"source": "BWWW"
+					}
+				]
+			},
+			"entries": [
+				"A blinding flash of light erupts from a target you choose. Creatures within a 20 foot radius area must make a CON save vs your spell save DC. On a fail, they become blind & {@condition stunned}. On a success, they have disadvantage on their first attack roll. A creature can reroll the save at the end of each of their turns. On a success, they are no longer blind or {@condition stunned}."
+			]
+		},
+		{
+			"name": "Moon Blade",
+			"source": "BWWW",
+			"page": 6,
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "moonstone"
+			},
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wychlaran Witch",
+						"source": "BWWW"
+					}
+				]
+			},
+			"entries": [
+				"{@b Duration:} 1 minute per Wychlaran level.",
+				"A 3-foot long blazing beam of moonlight springs forth from your hand. The sword deals {@dice 1d8} plus your spell casting modifier of Radiant Damage. Undead receive an additional {@dice 1d8} of radiant damage. In addition, any caster struck by the Moon Blade had disadvantage on its CON save to maintain concentration."
+			]
+		},
+		{
+			"name": "Land Womb",
+			"source": "BWWW",
+			"page": 6,
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wychlaran Witch",
+						"source": "BWWW"
+					}
+				]
+			},
+			"entries": [
+				"{@b Target:} You and one other creature.",
+				"You descend into a protective bubble within the earth below you. Spectators around you see the earth open up around you and swallow you as you descend into the earth. You cannot enter the Land Womb through stone or rock, only through tillable soil. The land womb holds you secure 10 feet below the surface. Anyone within the Land Womb cannot be perceived by divination magic of 4th level or lower. You may bring one additional medium creature that you are touching with you into the Land Womb. You can breathe and speak within the Land Womb, but you cannot hear or see anything on the surface without magical means. You can end the spell at-will, which returns all within the Land Womb to the surface from which it was originally cast."
+			]
+		},
+		{
+			"name": "Lesser Planar Ally",
+			"source": "BWWW",
+			"page": 6,
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 25
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wychlaran Witch",
+						"source": "BWWW"
+					}
+				]
+			},
+			"entries": [
+				"By casting this spell, you request The Three (Chauntea, Mielikki and Mystra) to send you an elemental or undead spirit (of 6 HD or less) of The Three's choice. If you know an individual creature's name, you may request that individual by speaking the name during the spell (though you might get a different creature anyway). You may ask the creature to perform one task in exchange for a payment from you. You must be able to communicate with the creature in order to bargain for its services. Payment must be agreed upon and made before the creature agrees to perform any services. At the end of the task (or when the agreed upon time frame expires), the creature returns to its home plane (after reporting to you, if appropriate and possible)."
+			]
+		},
+		{
+			"name": "Lesser Planar Binding",
+			"source": "BWWW",
+			"page": 6,
+			"level": 5,
+			"school": "C",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 25
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wychlaran Witch",
+						"source": "BWWW"
+					}
+				]
+			},
+			"entries": [
+				"Casting this spell attempts a dangerous act: to lure a creature from another plane to a specifically prepared trap, which must lie within the spell's range. The called creature is held in the trap until it agrees to perform one service in return for its freedom.",
+				"The 'Trap' must be a Magic Circle focused inward. The kind of creature must be known and stated. If you wish to call a specific individual, you must use that individual's proper name in casting the spell. The target creature is allowed a WIS save. If the save succeeds, the creature resists the spell. If the saving throw fails, the creature is immediately drawn to the trap (spell resistance does not keep it from being called).",
+				"The creature can escape the trap with successful WIS save, by dimensional travel, or with a successful CHA check versus your spellcasting save DC (each of these attempts are limited to 1/day). (HOMEBREW Note: Wychlaran's can ask for an undead spirit (of equal power). Rashemen's lore has more of an undead spirit flavor.)"
+			]
+		},
+		{
+			"name": "Moon Path",
+			"source": "BWWW",
+			"page": 7,
+			"level": 5,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 100
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "moonstone"
+			},
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wychlaran Witch",
+						"source": "BWWW"
+					}
+				]
+			},
+			"entries": [
+				"Moon Path allows you to make a stair or bridge from one spot to another. The effect is like a railless ribbon of glowing white, translucent force like a glass strip. The strip can be from 3 to 20 feet wide. You can designate a number of creatures equal to your Proficiency bonus that receive the Sanctuary spell as they cross the strip. A Moon Path must be straight, continuous and unbroken when formed. Certain spells/effects can destroy part of the path, but the path remains in place, even without supporting structures underneath."
+			]
+		},
+		{
+			"name": "Planar Ally (Wychlaran Witch)",
+			"source": "BWWW",
+			"page": 7,
+			"level": 6,
+			"school": "C",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"affectsCreatureType": [
+				"undead"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wychlaran Witch",
+						"source": "BWWW"
+					}
+				]
+			},
+			"entries": [
+				"You beseech an otherworldly entity for aid. The being must be known to you: a god, a primordial, a demon prince, or some other being of cosmic power. That entity sends a {@filter undead|bestiary|type=undead|miscellaneous=!swarm} loyal to it to aid you, making the creature appear in an unoccupied space within range. If you know a specific creature's name, you can speak that name when you cast this spell to request that creature, though you might get a different creature anyway (DM's choice).",
+				"When the creature appears, it is under no compulsion to behave in any particular way. You can ask the creature to perform a service in exchange for payment, but it isn't obliged to do so. The requested task could range from simple (fly us across the chasm, or help us fight a battle) to complex (spy on our enemies, or protect us during our foray into the dungeon). You must be able to communicate with the creature to bargain for its services.",
+				"Payment can take a variety of forms. A undead might require a sizable donation of gold or magic items to an allied temple, while a fiend might demand a living sacrifice or a gift of treasure. Some creatures might exchange their service for a quest undertaken by you.",
+				"As a rule of thumb, a task that can be measured in minutes requires a payment worth 100 gp per minute. A task measured in hours requires 1,000 gp per hour. And a task measured in days (up to 10 days) requires 10,000 gp per day. The DM can adjust these payments based on the circumstances under which you cast the spell. If the task is aligned with the creature's ethos, the payment might be halved or even waived. Nonhazardous tasks typically require only half the suggested payment, while especially dangerous tasks might require a greater gift. Creatures rarely accept tasks that seem suicidal.",
+				"After the creature completes the task, or when the agreed-upon duration of service expires, the creature returns to its home plane after reporting back to you, if appropriate to the task and if possible. If you are unable to agree on a price for the creature's service, the creature immediately returns to its home plane.",
+				"A creature enlisted to join your group counts as a member of it, receiving a full share of experience points awarded."
+			]
+		},
+		{
+			"name": "Planar Binding (Wychlaran Witch)",
+			"source": "BWWW",
+			"page": 7,
+			"level": 6,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "hour"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a jewel worth at least 1,000 gp, which the spell consumes",
+					"cost": 100000,
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 24
+					}
+				}
+			],
+			"entries": [
+				"With this spell, you attempt to bind a {@filter undead|bestiary|type=undead|miscellaneous=!swarm} to your service. The creature must be within range for the entire casting of the spell. (Typically, the creature is first summoned into the center of an inverted {@spell magic circle} in order to keep it trapped while this spell is cast.) At the completion of the casting, the target must make a Charisma saving throw. On a failed save, it is bound to serve you for the duration. If the creature was summoned or created by another spell, that spell's duration is extended to match the duration of this spell.",
+				"A bound creature must follow your instructions to the best of its ability. You might command the creature to accompany you on an adventure, to guard a location, or to deliver a message. The creature obeys the letter of your instructions, but if the creature is hostile to you, it strives to twist your words to achieve its own objectives. If the creature carries out your instructions completely before the spell ends, it travels to you to report this fact if you are on the same plane of existence. If you are on a different plane of existence, it returns to the place where you bound it and remains there until the spell ends."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of a higher level, the duration increases to 10 days with a 6th-level slot, to 30 days with a 7th-level slot, to 180 days with an 8th-level slot, and to a year and a day with a 9th-level spell slot."
+					]
+				}
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"affectsCreatureType": [
+				"undead"
+			],
+			"miscTags": [
+				"SMN"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wychlaran Witch",
+						"source": "BWWW"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcana",
+							"source": "SCAG"
+						}
+					},
+					{
+						"class": {
+							"name": "Ranger",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Monster Slayer (UA)",
+							"source": "UAATrioOfSubclasses"
+						}
+					},
+					{
+						"class": {
+							"name": "Ranger",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Monster Slayer",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Ranger (Revised)",
+							"source": "UATheRangerRevised"
+						},
+						"subclass": {
+							"name": "Monster Slayer (UA)",
+							"source": "UAATrioOfSubclasses"
+						}
+					},
+					{
+						"class": {
+							"name": "Ranger (Revised)",
+							"source": "UATheRangerRevised"
+						},
+						"subclass": {
+							"name": "Monster Slayer",
+							"source": "XGE"
+						}
+					}
+				],
+				"fromClassListVariant": [
+					{
+						"name": "Warlock",
+						"source": "PHB",
+						"definedInSource": "UAClassFeatureVariants"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB",
+						"definedInSource": "TCE"
+					}
+				]
+			}
+		},
+		{
+			"name": "Greater Planar Binding (Wychlaran Witch)",
+			"source": "BWWW",
+			"page": 7,
+			"level": 8,
+			"school": "C",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 25
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of a higher level, the duration increases to 10 days with a 6th-level slot, to 30 days with a 7th-level slot, to 180 days with an 8th-level slot, and to a year and a day with a 9th-level spell slot."
+					]
+				}
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"affectsCreatureType": [
+				"undead"
+			],
+			"miscTags": [
+				"SMN"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wychlaran Witch",
+						"source": "BWWW"
+					}
+				]
+			},
+			"entries": [
+				"{@b Targets:} Up to three elementals or outsiders, totaling no more than 18 HD, no two of which can be more than 30 ft. apart when they appear.",
+				"Casting this spell attempts a dangerous act: to lure a creature {@filter undead|bestiary|type=undead|miscellaneous=!swarm} from another plane to a specifically prepared trap, which must lie within the spell's range. The called creature is held in the trap until it agrees to perform one service in return for its freedom.",
+				"To create the trap, you must use a Magic Circle spell, focused inward. The kind of creature to be bound must be known and stated. If you wish to call a specific individual, you must use that individual's proper name in casting the spell.",
+				"The target creature is allowed a Will saving throw. If the saving throw succeeds, the creature resists the spell. If the saving throw fails, the creature is immediately drawn to the trap (spell resistance does not keep it from being called). The creature can escape from the trap with by successfully pitting its spell resistance against your caster level check, by dimensional travel, or with a successful Charisma check (DC 15 + 1/2 your caster level + your Cha modifier). It can try each method once per day. If it breaks loose, it can flee or attack you. A dimensional anchor cast on the creature prevents its escape via dimensional travel. You can also employ a calling diagram (see {@spell magic circle} against evil) to make the trap more secure.",
+				"If the creature does not break free of the trap, you can keep it bound for as long as you dare. You can attempt to compel the creature to perform a service by describing the service and perhaps offering some sort of reward. You make a Charisma check opposed by the creature's Charisma check. The check is assigned a bonus of +0 to +6 based on the nature of the service and the reward. If the creature wins the opposed check, it refuses service. New offers, bribes, and the like can be made or the old ones reoffered every 24 hours. This process can be repeated until the creature promises to serve, until it breaks free, or until you decide to get rid of it by means of some other spell. Impossible demands or unreasonable commands are never agreed to. If you roll a 1 on the Charisma check, the creature breaks free of the binding and can escape or attack you.",
+				"Each creature gets a saving throw, makes independent attempts to escape, and must be persuaded to aid you individually.",
+				"Once the requested service is completed, the creature need only so inform you to be instantly sent back whence it came. The creature might later seek revenge. If you assign some open-ended task that the creature cannot complete though its own actions the spell remains in effect for a maximum of one day per caster level, and the creature gains an immediate chance to break free. Note that a clever recipient can subvert some instructions.",
+				"Note: When you use a calling spell such as gate to call an air, chaotic, earth, evil, fire, good, lawful, or water creature, it is a spell of that type."
 			]
 		}
 	]
