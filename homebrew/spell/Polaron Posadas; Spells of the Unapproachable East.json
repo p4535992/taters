@@ -1524,9 +1524,10 @@
         }
       ],
       "range": {
-        "type": "point",
+        "type": "radius",
         "distance": {
-          "type": "self"
+          "type": "feet",
+          "amount": 30
         }
       },
       "duration": [
@@ -2007,6 +2008,359 @@
             "When you cast this spell using a slot of 9th level, you can create up to twenty skeletons with this spell, rather than fifteen."
           ]
         }
+      ]
+    },
+    {
+      "name": "Snilloc's Snowball",
+      "source": "PPSUE",
+      "page": 11,
+      "level": 1,
+      "school": "V",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 10,
+            "upTo": true
+          },
+          "concentration": true
+        }
+      ],
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a small bit of ivory"
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Ranger",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Wychlaran Witch",
+            "source": "BWWW"
+          }
+        ]
+      },
+      "entries": [
+        "You create three orbs of icy cold in your space. They float in the air and orbit you for the duration. When you cast the spell and as a bonus action on each of your turns thereafter you can throw one of the orbs, sending them streaking towards a target you choose within 120 feet of you. Make a ranged spell attack. On a hit, the target takes {@damage 2d6} cold damage."
+      ],
+      "entriesHigherLevel": [
+        {
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 3rd level or higher, you create one additional orb for every two slot levels above 1st."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Soul Scour",
+      "source": "PPSUE",
+      "page": 11,
+      "level": 5,
+      "school": "N",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "dust from the bones of a lich's body"
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Wychlaran Witch",
+            "source": "BWWW"
+          }
+        ]
+      },
+      "entries": [
+        "Your touch corrupts a creature's very soul and damages their mental characteristics. Make a melee spell attack. On a hit, you attempt to warp their mind and soul. At the beginning of the creature's next turn, the target must make a Wisdom saving throw and a Charisma saving throw. If it fails the Wisdom saving throw, its Wisdom score is reduced by {@dice 1d4 + 1}. If it fails the Charisma saving throw, its Charisma score is reduced by {@dice 2d4}. If either of these scores becomes 0, the creature dies.",
+        "These ability score reductions last for one hour, unless they are cured through {@spell lesser restoration|PHB} or similar magic."
+      ]
+    },
+    {
+      "name": "Sphere of Ultimate Destruction",
+      "source": "PPSUE",
+      "page": 11,
+      "level": 9,
+      "school": "C",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 120
+        }
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1,
+            "upTo": true
+          },
+          "concentration": true
+        }
+      ],
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a pinch of dust from a creature that has been disintegrated"
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Wychlaran Witch",
+            "source": "BWWW"
+          }
+        ]
+      },
+      "entries": [
+        "A 5-foot diameter sphere of pure void and annihilation appears in an unoccupied space of your choice within range and lasts for the duration. Any creature that ends its turn within 5 feet of the sphere must make a Dexterity saving throw. The creature takes {@damage 10d6 + 40} force damage on a failed save, or {@damage 5d6} force damage on a successful one.",
+        "As an action, you can move the sphere up to 60 feet. If you ram the sphere into a creature, that creature must make the saving throw against the sphere’s damage, and the sphere stops moving this turn.",
+        "When you move the sphere, you can direct it over barriers up to 5 feet tall and jump it across pits up to 10 feet wide. The sphere emits a gentle circulating breeze around it as surrounding air is sucked in.",
+        "Damage from this spell that reduces a creature to 0 hit points disintegrates that creature. A disintegrated creature and everything it is wearing and carrying, except magic items, are reduced to a pile of fine gray dust. The creature can be restored to life only by means of a true resurrection or a wish spell.",
+        "A Large or smaller nonmagical object or a creation of magical force that comes into contact with the sphere is disintegrated. If the sphere comes into contact with a Huge or larger object or creation of force, this spell disintegrates a 10-foot-cube portion of it. A magic item is unaffected by this spell."
+      ]
+    },
+    {
+      "name": "Superior Darkvision",
+      "source": "PPSUE",
+      "page": 11,
+      "level": 4,
+      "school": "T",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hour",
+            "amount": 8
+          }
+        }
+      ],
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "either a pinch of dried carrot or an agate"
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Ranger",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Wychlaran Witch",
+            "source": "BWWW"
+          }
+        ]
+      },
+      "entries": [
+        "You touch a willing creature to grant it the ability to see perfectly in darkness. For the duration, that creature has darkvision without any limit to its radius and can see in magical darkness created by a spell of 3rd level or lower."
+      ],
+      "entriesHigherLevel": [
+        {
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 5th level or higher, a creature under the effect of this spell can see through magical darkness created by a spell less than the spell slot you used."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Undead Lieutenant",
+      "source": "PPSUE",
+      "page": 11,
+      "level": 3,
+      "school": "N",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 10,
+            "upTo": true
+          },
+          "concentration": true
+        }
+      ],
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Wychlaran Witch",
+            "source": "BWWW"
+          }
+        ]
+      },
+      "entries": [
+        "You attempt to empower an intelligent undead (Intelligence 5 or greater) with the ability to command other undead in your control. The target must make a Wisdom saving throw if it is unwilling. On a failure, the spell takes effect.",
+        "Other undead under your control obey the subject intelligent undead as if it were you. You may still give orders to the undead normally, superseding the orders of the subject of the spell. Once the spell ends, the intelligent undead is aware that it has been used in this way."
+      ],
+      "entriesHigherLevel": [
+        {
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 4th level or higher, the maximum duration for this spell increases by 10 minutes for each slot level above 3rd."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Watchware",
+      "source": "PPSUE",
+      "page": 11,
+      "level": 5,
+      "school": "A",
+      "time": [
+        {
+          "number": 1,
+          "unit": "round"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "duration": [
+        {
+          "type": "permanent",
+          "ends": [
+            "dispel"
+          ]
+        }
+      ],
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a sprinkling of rare sands and powdered reagents worth at least 500 gp"
+      },
+      "meta": {
+        "ritual": true
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Wychlaran Witch",
+            "source": "BWWW"
+          }
+        ]
+      },
+      "entries": [
+        "You touch a single object and create a mystical connection with it. After you cast this spell, if the object is damaged, destroyed, moved, or touched at any later time, you instantly are aware of this fact. If another creature touches this object, you receive a mental image of the creature and the area within 60 feet of the object. This mental image sees through darkness, including magical darkness, and can see through illusions or other false effects. This image also counts as firsthand knowledge if you cast scrying on the creature that disturbed the object.",
+        "You receive the mental alert if the item is disturbed for any reason, including if it is handled or touched with a long metal pole, a cat walks on it, or an earthquake knocks it over. You can also designate a verbal password that allows a creature to handle the object without sounding the mental alert. After being activated, the spell immediately ends on the object. Because of its costly material components, many wizards and sorcerers use this spell to safeguard valuable, rare items.",
+        "A {@i watchware} spell counts as a magical trap for the purposes of spells, features, and effects."
       ]
     }
   ]
