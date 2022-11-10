@@ -171,6 +171,10 @@ Sono quelli consigliati e testati per i vari scopi.
     - Gratuito
     - Offline
     - Strumento utilissimo per realizzare video tutorial o da applicativi oda browser, registra in modo perfetto anche l'audio e i movimenti del mouse
+  
+- [Free Sounds](https://www.freesoundeffects.com/)
+
+- [soundbible](https://soundbible.com/1348-Large-Fireball.html)
 
 ### Gestione dei Token
 

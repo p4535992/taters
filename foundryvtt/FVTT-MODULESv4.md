@@ -97,6 +97,7 @@
 - [COMBAT][Combat Hp Display](https://github.com/WBHarry/combat-hp-display)
 - [COMBAT][TokenMagic Automatic Wounds](https://github.com/shemetz/tokenmagic-automatic-wounds)
 - [COMBAT][Flying Tokens](https://github.com/LeafWulf/flying-tokens)
+- [COMBAT][Focus Sheet](https://github.com/jagoe/fvtt-module-focus-sheet)
 
 ## MODULES NECESSARI SOLO IN FASE DI COSTRUZIONE E NON DI SESSIONE
 
