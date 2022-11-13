@@ -2,6 +2,16 @@
 # NOT ESSENTIAL 
 # ======================================================================
 
+## 2022-11-13
+
+- [TOKEN/MAP][Drag Upload](https://github.com/cswendrowski/FoundryVTT-Drag-Upload
+- [COMBAT][Combat Utility Belt](https://github.com/death-save/combat-utility-belt )
+- [UI][Argon - Combat HUD](https://github.com/theripper93/enhancedcombathud)
+- [EFFECT][Hey, Wait!](https://github.com/1000nettles/hey-wait)
+- [COMBAT][Random Target](https://github.com/mcavallo/foundry-vtt-random-target)
+- [TOKEN][Your Tokens Visible](https://github.com/David-Zvekic/TokensVisible)
+- [REPLACE WITH SIMBUL MODULES][COMBAT][DnD5e Helpers](https://github.com/trioderegion/dnd5e-helpers )
+
 ## 2022-11-01
 
 - [TOKEN/SCENES][Go to Player](https://github.com/theripper93/go-to-player)

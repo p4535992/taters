@@ -204,17 +204,11 @@ Sono quelli consigliati e testati per i vari scopi.
     - Gratuito
     - Online
     - Il browser più performante testato con foundryvtt e mobile utile per chi ha pc o telefoni un pò datati riduce di molto la banda utilizzata dai browser classici
-	
-- [Plutonium (Rivet Function)](https://5e.tools/plutonium.html) (Consigliato)
-    - Gratuito
-    - Online
-    - Esiste il modulo di collegamento su FoundryVTT incredibilmente ben fatto, permette di importare e reicercare qualunque cosa del sito 5etools, il successore de facto di better20 for roll 20
 
 - [5etools](https://5e.tools/) (Consigliato)
     - Gratuito
     - Online
     - L'archivio de facto della quinta edizione di D&D, comprensivo di tutte le risorse ufficiali e non.
-
 
 ### Gestione della campagna
 

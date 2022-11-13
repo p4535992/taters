@@ -7,8 +7,6 @@
 - [TOKEN][Token Action HUD](https://github.com/espositos/fvtt-tokenactionhud )
 - [TABLE][Community Tables](https://github.com/foundry-vtt-community/tables )
 - [EXTERNAL][Theatre](https://github.com/League-of-Foundry-Developers/fvtt-module-theatre )
-- [TOKEN/MAP][Drag Upload](https://github.com/cswendrowski/FoundryVTT-Drag-Upload )
-
 
 - [ENTITY][Item Macro](https://github.com/Kekilla0/Item-Macro )
 - [ROLL][Dice Calculator/Dice Tray](https://gitlab.com/asacolips-projects/foundry-mods/foundry-vtt-dice-calculator/ )
@@ -16,7 +14,7 @@
 - [UTILITY][Simple Calendar](https://github.com/vigoren/foundryvtt-simple-calendar )
 - [MAP][Armreach](https://github.com/p4535992/foundryvtt-arms-reach )
 - [WALL][Smart Door](https://github.com/manuelVo/foundryvtt-smart-doors )
-- [SCENE][foundryvtt stairways](https://gitlab.com/SWW13/foundryvtt-stairways)
+- [SCENE][Stairways](https://gitlab.com/SWW13/foundryvtt-stairways)
 
 - [UTILITY LOOT][DFreds Pocket Change](https://github.com/DFreds/dfreds-pocket-change )
 - [TOKEN][Active Token Effect](https://github.com/kandashi/Active-Token-Lighting )
@@ -44,7 +42,6 @@
 - [UTILITY][Quick Insert](https://gitlab.com/fvtt-modules-lab/quick-insert )
 - [UTILITY][Item Piles](https://github.com/fantasycalendar/FoundryVTT-ItemPiles)
 - [TOKEN/TEMPLATE/EFFECT][Token Magic FX](https://github.com/Feu-Secret/Tokenmagic)
-- [TOKEN][Your Tokens Visible](https://github.com/David-Zvekic/TokensVisible)
 - [TOKEN][Token Says](https://github.com/napolitanod/Token-Says)
 - [UTILITY][Token Variant Art](https://github.com/Aedif/TokenVariants)
 
@@ -54,18 +51,18 @@
 - [COMBAT][Perfect Vision](https://github.com/dev7355608/perfect-vision )
 - [CHAT][DragonFlagon Chat Enhancements](https://github.com/flamewave000/dragonflagon-fvtt/tree/master/df-chat-enhance )
 - [UTILITY][Forien Copy](https://github.com/League-of-Foundry-Developers/foundryvtt-forien-copy-environment )
-- [UTILITY][Tile Scroll](https://github.com/theripper93/tile-scroll)
 
 - [UTILITY][Pause Control](https://gitlab.com/koboldworks/agnostic/pause-control)
 - [WALL][Wall Height](https://github.com/schultzcole/FVTT-Wall-Height )
 
-
 - [SIDEBAR][Hidden Entity Links](https://github.com/p4535992/vtt-hidden-entity-links)
 - [NOTE][Pin Cushion](https://github.com/p4535992/foundryvtt-pin-cushion)
-
 - [EXTERNAL][Popout](https://github.com/kakaroto/fvtt-module-popout)
+
+- [UTILITY][Tile Scroll](https://github.com/theripper93/tile-scroll)
 - [UTILITY][Tile Sort](https://github.com/theripper93/tile-sort)
 - [UTILITY][Multiface tile](https://gitlab.com/Freeze020/multiface-tiles/)
+
 - [TOKEN][Shared Vision](https://github.com/CDeenen/SharedVision )
 - [UTILITY][QoL - Maximize Reopened Sheets](https://github.com/shemetz/qol-maximize-reopened-sheets)
 - [JOURNAL/NOTE][Automatic journal Icon Numbers](https://gitlab.com/tiwato/journal_icon_numbers )
@@ -78,12 +75,14 @@
 - [UTILITY][Weather FX](https://github.com/LeafWulf/weatherfx)
 - [UTILITY][User Latency](https://github.com/mawburn/foundry-user-latency)
 
+- [UI][JV's Minimal UI for FoundryVTT](https://github.com/saif-ellafi/foundryvtt-minimal-ui)
+- [UI][JV's Window Controls for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-window-controls)
+
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
 - [COMBAT][Visualize Active Effect](https://github.com/krbz999/visual-active-effects)
 - [COMBAT/ROLL][Let me roll that for you](https://github.com/League-of-Foundry-Developers/fvtt-module-lmrtfy )
 - [COMBAT][Arbron's Improved HP Bar](https://github.com/arbron/fvtt-hp-bar)
-- [COMBAT][Combat Utility Belt](https://github.com/death-save/combat-utility-belt )
 - [COMBAT][Advanced Spell Effects](https://github.com/Vauryx/AdvancedSpellEffects)
 - [COMBAT][Illandril's Token HUD Scaler](https://github.com/illandril/FoundryVTT-token-hud-scale)
 - [COMBAT][Effective Transferral](https://github.com/GamerFlix/effective-transferral)
@@ -93,7 +92,6 @@
 - [COMBAT][Smart Target](https://github.com/theripper93/Smart-Target)
 - [COMBAT][Tagger](https://github.com/fantasycalendar/FoundryVTT-Tagger)
 - [COMBAT][Token Auras](https://bitbucket.org/Fyorl/token-auras )
-- [COMBAT][Random Target](https://github.com/mcavallo/foundry-vtt-random-target)
 - [COMBAT][Combat Hp Display](https://github.com/WBHarry/combat-hp-display)
 - [COMBAT][TokenMagic Automatic Wounds](https://github.com/shemetz/tokenmagic-automatic-wounds)
 - [COMBAT][Flying Tokens](https://github.com/LeafWulf/flying-tokens)
@@ -112,7 +110,6 @@
 - [UTILITY][Beaver's Crafting System](https://github.com/AngryBeaver/beavers-crafting)
 - [SCRIPT][World-Scripter](https://github.com/Kekilla0/World-Scripter)
 - [SCENE][World Explorer](https://github.com/CarlosFdez/world-explorer)
-- [EFFECT][Hey, Wait!](https://github.com/1000nettles/hey-wait)
 - [SCENE][Unofficial Azgaar's Fantasy Map Generator Import](https://github.com/Ethck/azgaar-foundry)
 
 ## MODULES LANGUAGE ITA
@@ -125,22 +122,18 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 
 ## [SYSTEM] MODULES  D&D5e
 
-- [EXTERNAL][Plutonium (5etools)](https://get.5e.tools/plutonium/module.json)
 - [ENTITY][Item Collection](https://gitlab.com/tposney/itemcollection )
 - [UTILITY][Items with Spells DnD5e](https://github.com/ElfFriend-DnD/foundryvtt-items-with-spells-5e)
 - [CHARACTER SHEET][Tidy Sheet 5e](https://github.com/sdenec/tidy5e-sheet )
 
 - [COMBAT][Midi Qol](https://gitlab.com/tposney/midi-qol )
-- [COMBAT][DnD5e Helpers](https://github.com/trioderegion/dnd5e-helpers )
 - [COMBAT][Wild Magic Surge 5e](https://github.com/johnnolan/wild-magic-surge-5e)
 - [UTILITY][Build-a-Bonus](https://github.com/krbz999/babonus)
 
 - [CHARACTER SHEET/UTILITY][Variant Encumbrance 5e](https://github.com/VanirDev/VariantEncumbrance )
-- [UI][Argon - Combat HUD](https://github.com/theripper93/enhancedcombathud)
-- [COMBAT][Arbron’s Summoning]()
+- [COMBAT][Arbron’s Summoning](https://github.com/arbron/fvtt-summoner)
 - [CHARACTER SHEET][Custom Abilities & Skills](https://github.com/misthero/dnd5e-custom-skills)
 - [CHARACTER SHEET/UTILITY][Inventory Plus](https://github.com/p4535992/inventory-plus )
-
 - [JOURNALS][UTILITY][Monk's Shops](https://github.com/ironmonk88/monks-shops)
 
 ## [SYSTEM] PATHFINDER 1 MODULES
@@ -178,13 +171,10 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 
 ## UI Projects
 
-- [UI][Ernie's Modern UI](https://github.com/ernieayala/ernies-modern-layout )
-- [UI][Dracula Foundry](https://github.com/CasanovaSekova/dracula-foundry )
-- [UI][JV's Minimal UI for FoundryVTT](https://github.com/saif-ellafi/foundryvtt-minimal-ui)
-- [UI][JV's Window Controls for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-window-controls)
-- [UI][Twilight UI](https://github.com/Rayuaz/twilight-ui)
-
-- [UI][DnD5e ui](https://gitlab.com/sasmira/dnd-ui)
+- [DEPRECATED][UI][Ernie's Modern UI](https://github.com/ernieayala/ernies-modern-layout )
+- [DEPRECATED][UI][Dracula Foundry](https://github.com/CasanovaSekova/dracula-foundry )
+- [DEPRECATED][UI][Twilight UI](https://github.com/Rayuaz/twilight-ui)
+- [DEPRECATED][UI][DnD5e ui](https://gitlab.com/sasmira/dnd-ui)
 
 ## MODULES FOR MANAGE AUDIO
 
