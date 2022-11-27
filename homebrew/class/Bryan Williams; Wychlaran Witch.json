@@ -20,6 +20,11 @@
 		"optionalFeatureTypes": {
 			"OF:BWWW": "Wychlaran Witch Feature"
 		},
+		"dependencies": {
+			"subclass": [
+				"generic"
+			]
+		},
 		"dateAdded": 1559943252,
 		"dateLastModified": 1666989903,
 		"_dateLastModifiedHash": "76ef0b23a9"
@@ -131,18 +136,17 @@
 				"default": [
 					"(a) a {@item quarterstaff|phb} or (b) {@item whip|phb}",
 					"(a) a {@item component pouch|phb} or (b) an {@item arcane focus|phb}",
-					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}"
+					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}",
+					"a quiver of 20 {@item crossbow bolts|phb} and a {@item light crossbow|phb}"
 				],
 				"goldAlternative": "{@dice 3d4 × 10|3d4 × 10|Starting Gold}",
 				"defaultData": [
 					{
 						"a": [
-							"quarterstaff|phb",
-							"crossbow bolts (20)|phb"
+							"quarterstaff|phb"
 						],
 						"b": [
-							"whip|phb",
-							"crossbow bolts (20)|phb"
+							"whip|phb"
 						]
 					},
 					{
@@ -159,6 +163,18 @@
 						],
 						"b": [
 							"explorer's pack|phb"
+						]
+					},
+					{
+						"_": [
+							{
+								"item": "light crossbow|phb",
+								"quantity": 1
+							},
+							{
+								"item": "crossbow bolt|phb",
+								"quantity": 20
+							}
 						]
 					}
 				]
@@ -586,6 +602,16 @@
 				"magic circle|phb",
 				"commune|phb",
 				"fear|phb"
+			],
+			"additionalSpells": [
+				{
+					"name": "Fearsome",
+					"known": {
+						"3": [
+							"fear"
+						]
+					}
+				}
 			],
 			"classFeatures": [
 				"Ritual Caster|Wychlaran Witch|BWWW|1",
