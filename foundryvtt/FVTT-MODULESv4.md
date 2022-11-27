@@ -77,6 +77,8 @@
 
 - [UI][JV's Minimal UI for FoundryVTT](https://github.com/saif-ellafi/foundryvtt-minimal-ui)
 - [UI][JV's Window Controls for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-window-controls)
+- [CHAT][Speaking As](https://github.com/MrVauxs/speaking-as)
+
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
