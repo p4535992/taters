@@ -9,7 +9,7 @@
 - [UI][Argon - Combat HUD](https://github.com/theripper93/enhancedcombathud)
 - [EFFECT][Hey, Wait!](https://github.com/1000nettles/hey-wait)
 - [COMBAT][Random Target](https://github.com/mcavallo/foundry-vtt-random-target)
-- [TOKEN][Your Tokens Visible](https://github.com/David-Zvekic/TokensVisible)
+- [IS BETTER SHARED VISION][TOKEN][Your Tokens Visible](https://github.com/David-Zvekic/TokensVisible)
 - [REPLACE WITH SIMBUL MODULES][COMBAT][DnD5e Helpers](https://github.com/trioderegion/dnd5e-helpers )
 
 ## 2022-11-01
@@ -95,7 +95,7 @@
 - [IS BETTER MIDIQOL][Advantage Reminder for dnd5e](https://github.com/kaelad02/adv-reminder)
 - [NOT ESSENTIAL][Terrain Ruler](https://github.com/manuelVo/foundryvtt-terrain-ruler/tree/master)
 - [NOT ESSENTIAL][Enhanced Terrain Layer](https://github.com/ironmonk88/enhanced-terrain-layer)
-- [NOT ESSENTIAL][Token Elevator](https://gitlab.com/Weissrolf/token-elevator)
+- [IS BETTER Flying Tokens][NOT ESSENTIAL][Token Elevator](https://gitlab.com/Weissrolf/token-elevator)
 - [NOT ESSENTIAL][IMAGES][Clipboard Image for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-clipboard-image)
 - [NOT ESSENTIAL][COMPENDIUM][Compendium Importer for Foundry VTT](https://gitlab.com/mkahvi/fvtt-compendium-importer)
 - [NOT ESSENTIAL IS BETTER Downtime Tracking 5e Training][CHARACTHER SHEET/UTILITY][Ethck's Downtime Tracking](https://github.com/Ethck/Ethck-s-Downtime-Tracking )
