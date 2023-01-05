@@ -12,7 +12,7 @@
 - [ROLL][Dice Calculator/Dice Tray](https://gitlab.com/asacolips-projects/foundry-mods/foundry-vtt-dice-calculator/ )
 - [TOKEN][Drag Ruler](https://github.com/manuelVo/foundryvtt-drag-ruler )
 - [UTILITY][Simple Calendar](https://github.com/vigoren/foundryvtt-simple-calendar )
-- [MAP][Armreach](https://github.com/p4535992/foundryvtt-arms-reach )
+- [MAP][Armsreach](https://github.com/p4535992/foundryvtt-arms-reach )
 - [WALL][Smart Door](https://github.com/manuelVo/foundryvtt-smart-doors )
 - [SCENE][Stairways](https://gitlab.com/SWW13/foundryvtt-stairways)
 
@@ -36,7 +36,6 @@
 - [UTILITY][Monk's Little Details](https://github.com/ironmonk88/monks-little-details)
 - [UTILITY][JB2A Sequencer Macro Library](https://github.com/IrateRedKite/jb2a-sequencer-spell-macros)
 - [UTILITY][Ignore Vision](https://github.com/manuelVo/foundryvtt-ignore-vision/tree/master)
-- [UTILITY][VINO - Visual Interactive Novel Overlay](https://github.com/cswendrowski/FoundryVTT-ViNo)
 
 - [UTILITY][Roger's Additional Metric Ruler Labels](https://github.com/Roger92/metric-ruler-labels)
 - [UTILITY][Quick Insert](https://gitlab.com/fvtt-modules-lab/quick-insert )
@@ -73,11 +72,13 @@
 - [UTILITY][Introduce Me](https://github.com/WBHarry/introduce-me)
 - [UTILITY][Comprehend Languages](https://github.com/Meneltamar/fvtt-comprehend-languages)
 - [UTILITY][Weather FX](https://github.com/LeafWulf/weatherfx)
-- [UTILITY][User Latency](https://github.com/mawburn/foundry-user-latency)
+
 
 - [UI][JV's Minimal UI for FoundryVTT](https://github.com/saif-ellafi/foundryvtt-minimal-ui)
 - [UI][JV's Window Controls for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-window-controls)
 - [CHAT][Speaking As](https://github.com/MrVauxs/speaking-as)
+- [UTILITY][Stealthy](https://github.com/Eligarf/stealthy)
+- [UTILITY][Scenery - Background Image Variation Manager](https://github.com/marcstraube/foundryvtt-scenery)
 
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
