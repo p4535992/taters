@@ -1,5 +1,8 @@
 ## [MUST HAVE] MODULES 
 
+- [CHAT][Cautious Gamemaster's Pack](https://github.com/cs96and/FoundryVTT-CGMP)
+- [CHAT][Chat Portrait](https://github.com/p4535992/foundryvtt-chat-portrait)
+
 - [EXTERNAL][About Time](https://gitlab.com/tposney/about-time )
 - [EXTERNAL][FxMaster](https://github.com/ghost-fvtt/fxmaster)
 - [ENTITY][Compendium Folders](https://github.com/earlSt1/vtt-compendium-folders )
@@ -21,7 +24,6 @@
 - [SCENES][Monks Scene Navigation](https://github.com/ironmonk88/monks-scene-navigation )
 - [UTILITY][Autocomplete Inline Properties](https://github.com/ghost-fvtt/FVTT-Autocomplete-Inline-Properties)
 - [UTILITY][Automated Evocations Variant](https://github.com/p4535992/automated-evocations-variant)
-- [UTILITY][Automated Polymorpher](https://github.com/p4535992/foundryvtt-automated-polymorpher)
 - [UTILITY][Weather Control](https://gitlab.com/jstebenne/foundryvtt-weather-control)
 - [UTILITY][Monks TokenBar](https://github.com/ironmonk88/monks-tokenbar)
 - [UTILITY][Automated Animations](https://github.com/otigon/automated-jb2a-animations )
@@ -35,7 +37,7 @@
 - [Scene][Monk's Active Tile Triggers](https://github.com/ironmonk88/monks-active-tiles/)
 - [UTILITY][Monk's Little Details](https://github.com/ironmonk88/monks-little-details)
 - [UTILITY][JB2A Sequencer Macro Library](https://github.com/IrateRedKite/jb2a-sequencer-spell-macros)
-- [UTILITY][Ignore Vision](https://github.com/manuelVo/foundryvtt-ignore-vision/tree/master)
+- [UTILITY][Ignore Vision](https://github.com/p4535992/foundryvtt-ignore-vision)
 
 - [UTILITY][Roger's Additional Metric Ruler Labels](https://github.com/Roger92/metric-ruler-labels)
 - [UTILITY][Quick Insert](https://gitlab.com/fvtt-modules-lab/quick-insert )
@@ -44,11 +46,9 @@
 - [TOKEN][Token Says](https://github.com/napolitanod/Token-Says)
 - [UTILITY][Token Variant Art](https://github.com/Aedif/TokenVariants)
 
-
 - [UTILITY\TOKEN][Token Attacher](https://github.com/KayelGee/token-attacher )
 - [UTILITY][Item Delete Check](https://gitlab.com/tposney/item-delete-check/tree/master )
 - [COMBAT][Perfect Vision](https://github.com/dev7355608/perfect-vision )
-- [CHAT][DragonFlagon Chat Enhancements](https://github.com/flamewave000/dragonflagon-fvtt/tree/master/df-chat-enhance )
 - [UTILITY][Forien Copy](https://github.com/League-of-Foundry-Developers/foundryvtt-forien-copy-environment )
 
 - [UTILITY][Pause Control](https://gitlab.com/koboldworks/agnostic/pause-control)
@@ -65,10 +65,9 @@
 - [TOKEN][Shared Vision](https://github.com/CDeenen/SharedVision )
 - [UTILITY][QoL - Maximize Reopened Sheets](https://github.com/shemetz/qol-maximize-reopened-sheets)
 - [JOURNAL/NOTE][Automatic journal Icon Numbers](https://gitlab.com/tiwato/journal_icon_numbers )
-- [UTILITY][Roll New Character Stats (RNCS)](https://github.com/MrXofar/roll-new-character-stats)
 - [UTILITY][Module Management+](https://github.com/mouse0270/module-credits)
 - [UTILITY][Jack Kerouac's Spell Effects Sequencer Plugin](https://github.com/MrVauxs/Sequencer-JKAE-Database)
-- [UTILITY][Cautious Gamemaster's Pack](https://github.com/cs96and/FoundryVTT-CGMP)
+
 - [UTILITY][Introduce Me](https://github.com/WBHarry/introduce-me)
 - [UTILITY][Comprehend Languages](https://github.com/Meneltamar/fvtt-comprehend-languages)
 - [UTILITY][Weather FX](https://github.com/LeafWulf/weatherfx)
@@ -76,7 +75,6 @@
 
 - [UI][JV's Minimal UI for FoundryVTT](https://github.com/saif-ellafi/foundryvtt-minimal-ui)
 - [UI][JV's Window Controls for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-window-controls)
-- [CHAT][Speaking As](https://github.com/MrVauxs/speaking-as)
 - [UTILITY][Stealthy](https://github.com/Eligarf/stealthy)
 - [UTILITY][Scenery - Background Image Variation Manager](https://github.com/marcstraube/foundryvtt-scenery)
 
@@ -86,22 +84,16 @@
 - [COMBAT][Visualize Active Effect](https://github.com/krbz999/visual-active-effects)
 - [COMBAT/ROLL][Let me roll that for you](https://github.com/League-of-Foundry-Developers/fvtt-module-lmrtfy )
 - [COMBAT][Arbron's Improved HP Bar](https://github.com/arbron/fvtt-hp-bar)
-- [COMBAT][Advanced Spell Effects](https://github.com/Vauryx/AdvancedSpellEffects)
 - [COMBAT][Illandril's Token HUD Scaler](https://github.com/illandril/FoundryVTT-token-hud-scale)
-- [COMBAT][Effective Transferral](https://github.com/GamerFlix/effective-transferral)
-- [COMBAT][Danger-Zone](https://github.com/napolitanod/Danger-Zone)
-- [COMBAT][GM Token Drag Visibility v2](https://github.com/MAClavell/gm-token-drag-visibility-v2)
+- [COMBAT][Danger-Zone](https://github.com/napolitanod/Danger-Zone
 - [COMBAT][Boss Bar](https://github.com/theripper93/Boss-Bar)
 - [COMBAT][Smart Target](https://github.com/theripper93/Smart-Target)
 - [COMBAT][Tagger](https://github.com/fantasycalendar/FoundryVTT-Tagger)
 - [COMBAT][Token Auras](https://bitbucket.org/Fyorl/token-auras )
 - [COMBAT][Combat Hp Display](https://github.com/WBHarry/combat-hp-display)
-- [COMBAT][TokenMagic Automatic Wounds](https://github.com/shemetz/tokenmagic-automatic-wounds)
 - [COMBAT][Flying Tokens](https://github.com/LeafWulf/flying-tokens)
-- [COMBAT][Focus Sheet](https://github.com/jagoe/fvtt-module-focus-sheet)
 
 ## MODULES NECESSARI SOLO IN FASE DI COSTRUZIONE E NON DI SESSIONE
-
 
 - [WALL][Monks Wall Enchancement](https://github.com/ironmonk88/monks-wall-enhancement)
 - [LIGHT/SOUND][Light/Sound Mask](https://github.com/caewok/fvtt-light-mask)
@@ -109,11 +101,13 @@
 
 # MODULES DA VERIFICARE SE NECESSARI
 
-
 - [UTILITY][Beaver's Crafting System](https://github.com/AngryBeaver/beavers-crafting)
 - [SCRIPT][World-Scripter](https://github.com/Kekilla0/World-Scripter)
 - [SCENE][World Explorer](https://github.com/CarlosFdez/world-explorer)
 - [SCENE][Unofficial Azgaar's Fantasy Map Generator Import](https://github.com/Ethck/azgaar-foundry)
+- [Nickle's Shop Generator](https://github.com/NickClearyTech/FoundryShopGenerator)
+- [Gaming Table Player](https://github.com/skepickle/foundryvtt-gaming-table-player)
+- [Button Feel](https://github.com/LebombJames/button-feel)
 
 ## MODULES LANGUAGE ITA
 
@@ -136,20 +130,32 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 - [CHARACTER SHEET/UTILITY][Variant Encumbrance 5e](https://github.com/VanirDev/VariantEncumbrance )
 - [COMBAT][Arbron’s Summoning](https://github.com/arbron/fvtt-summoner)
 - [CHARACTER SHEET][Custom Abilities & Skills](https://github.com/misthero/dnd5e-custom-skills)
-- [CHARACTER SHEET/UTILITY][Inventory Plus](https://github.com/p4535992/inventory-plus )
+
 - [JOURNALS][UTILITY][Monk's Shops](https://github.com/ironmonk88/monks-shops)
+
+- [COMBAT][Effective Transferral](https://github.com/GamerFlix/effective-transferral)
+- [COMBAT][Automated Conditions 5e](https://github.com/thatlonelybugbear/automated-conditions-5e)
+
+## [SYSTEM] PATHFINDER 2 MODULES
+
+- [pf2e-magaambya](https://github.com/MrVauxs/pf2e-magaambya)
+- [PF2e Animations](https://github.com/MrVauxs/pf2e-jb2a-macros)
+- [PF2e Target Damage](https://github.com/MrVauxs/PF2e-Target-Damage)
+- [pF2E Keybind Menagerie](https://github.com/Drental/foundryvtt-pf2e-f-is-for-flatfooted)
+- [Pf2E Modifiers Matter](https://github.com/shemetz/pf2e-modifiers-matter)
+- [PF2e-Animal-Companions](https://github.com/TikaelSol/PF2e-Animal-Companions)
+- [FVTT PF2e Ranged Combat](https://github.com/JDCalvert/FVTT-PF2e-Ranged-Combat)
+- [xdy-pf2e-workbench](https://github.com/xdy/xdy-pf2e-workbench)
+
+  OPTIONAL 
+
+- [PF2e Dorako UI](https://github.com/Dorako/pf2e-Dorako-UI)
+- [pf2E Extempore Effects](https://github.com/shemetz/pf2e-extempore-effects)
 
 ## [SYSTEM] PATHFINDER 1 MODULES
 
 - https://github.com/Lo-create/foundry-pf1-content
 - [CHARACTER SHEET][Loot Sheet NPC Pathfinder1](https://github.com/SvenWerlen/fvtt-loot-sheet-npc-pf1 )
-
-## [SYSTEM] PATHFINDER 2 MODULES
-
-- [COMBAT][SIFToolkit](https://github.com/bitkiller0/SIFToolkit)
-- https://gitlab.com/unindel/foundry-vtt-pf2e-monster-import-ui/-/raw/master/module.json
-- https://github.com/yoshisman8/Vyk-Homebrew
-- https://github.com/JDCalvert/FVTT-Sense-Walls
 
 ## [SYSTEM] MODULES SHADOW RUN 
 
