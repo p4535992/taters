@@ -7,7 +7,7 @@
 - [EXTERNAL][FxMaster](https://github.com/ghost-fvtt/fxmaster)
 - [ENTITY][Compendium Folders](https://github.com/earlSt1/vtt-compendium-folders )
 - [ENTITY][Permission Viewer](https://github.com/kakaroto/fvtt-module-permission-viewer )
-- [TOKEN][Token Action HUD](https://github.com/espositos/fvtt-tokenactionhud )
+
 - [TABLE][Community Tables](https://github.com/foundry-vtt-community/tables )
 - [EXTERNAL][Theatre](https://github.com/League-of-Foundry-Developers/fvtt-module-theatre )
 
@@ -22,7 +22,6 @@
 - [UTILITY LOOT][DFreds Pocket Change](https://github.com/DFreds/dfreds-pocket-change )
 - [TOKEN][Active Token Effect](https://github.com/kandashi/Active-Token-Lighting )
 - [SCENES][Monks Scene Navigation](https://github.com/ironmonk88/monks-scene-navigation )
-- [UTILITY][Autocomplete Inline Properties](https://github.com/ghost-fvtt/FVTT-Autocomplete-Inline-Properties)
 - [UTILITY][Automated Evocations Variant](https://github.com/p4535992/automated-evocations-variant)
 - [UTILITY][Weather Control](https://gitlab.com/jstebenne/foundryvtt-weather-control)
 - [UTILITY][Monks TokenBar](https://github.com/ironmonk88/monks-tokenbar)
@@ -64,7 +63,6 @@
 
 - [TOKEN][Shared Vision](https://github.com/CDeenen/SharedVision )
 - [UTILITY][QoL - Maximize Reopened Sheets](https://github.com/shemetz/qol-maximize-reopened-sheets)
-- [JOURNAL/NOTE][Automatic journal Icon Numbers](https://gitlab.com/tiwato/journal_icon_numbers )
 - [UTILITY][Module Management+](https://github.com/mouse0270/module-credits)
 - [UTILITY][Jack Kerouac's Spell Effects Sequencer Plugin](https://github.com/MrVauxs/Sequencer-JKAE-Database)
 
@@ -97,7 +95,7 @@
 
 - [WALL][Monks Wall Enchancement](https://github.com/ironmonk88/monks-wall-enhancement)
 - [LIGHT/SOUND][Light/Sound Mask](https://github.com/caewok/fvtt-light-mask)
-
+- [JOURNAL/NOTE][Automatic journal Icon Numbers](https://gitlab.com/tiwato/journal_icon_numbers )
 
 # MODULES DA VERIFICARE SE NECESSARI
 
@@ -105,7 +103,7 @@
 - [SCRIPT][World-Scripter](https://github.com/Kekilla0/World-Scripter)
 - [SCENE][World Explorer](https://github.com/CarlosFdez/world-explorer)
 - [SCENE][Unofficial Azgaar's Fantasy Map Generator Import](https://github.com/Ethck/azgaar-foundry)
-- [Nickle's Shop Generator](https://github.com/NickClearyTech/FoundryShopGenerator)
+
 - [Gaming Table Player](https://github.com/skepickle/foundryvtt-gaming-table-player)
 - [Button Feel](https://github.com/LebombJames/button-feel)
 
@@ -119,6 +117,12 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 
 ## [SYSTEM] MODULES  D&D5e
 
+- [COMPENDIUM][Kris's Compendium of Trade Goods](https://github.com/kristkos/kctg-common)
+- [COMPENDIUM][Revised Weapons & Equipment for 5e](https://github.com/M0nk3yy/RWE)
+- [COMPENDIUM][Chris's Premades](https://github.com/chrisk123999/chris-premades)
+- [COMPENDIUM][More Automated Spells Items and Feats](https://github.com/jbowensii/More-Automated-Spells-Items-and-Feats)
+
+- [UTILITY][Custom Character Sheet Sections (CCSS)](https://github.com/jessev14/custom-character-sheet-sections)
 - [ENTITY][Item Collection](https://gitlab.com/tposney/itemcollection )
 - [UTILITY][Items with Spells DnD5e](https://github.com/ElfFriend-DnD/foundryvtt-items-with-spells-5e)
 - [CHARACTER SHEET][Tidy Sheet 5e](https://github.com/sdenec/tidy5e-sheet )
@@ -134,7 +138,8 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 - [JOURNALS][UTILITY][Monk's Shops](https://github.com/ironmonk88/monks-shops)
 
 - [COMBAT][Effective Transferral](https://github.com/GamerFlix/effective-transferral)
-- [COMBAT][Automated Conditions 5e](https://github.com/thatlonelybugbear/automated-conditions-5e)
+
+- [UTILITY][Nickle's Shop Generator](https://github.com/NickClearyTech/FoundryShopGenerator)
 
 ## [SYSTEM] PATHFINDER 2 MODULES
 
@@ -213,26 +218,6 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 
 ## MODULES COMPENDIUM
 
-- [COMPENDIUM][Super Homebrew Pack](https://github.com/SuperNar3k/foundry )
-- [COMPENDIUM][Kris's Compendium of Trade Goods](https://github.com/kristkos/kctg-common)
-- [COMPENDIUM][Revised Weapons & Equipment for 5e](https://github.com/M0nk3yy/RWE)
-- [COMPENDIUM][Data Toolbox - Let's Contribute](https://github.com/SvenWerlen/fvtt-data-toolbox/tree/master/ )
-- [COMPENDIUM][Take on Magic Items (unofficial)](https://github.com/brunocalado/takeonmagicitems )
-- [COMPENDIUM][More Automated Spells Items and Feats](https://github.com/jbowensii/More-Automated-Spells-Items-and-Feats)
-
-- [DEPRECATED NOT FREE][COMPENDIUM][Loot Tavern magic Item](https://www.patreon.com/LootTavern )
-- [DEPRECATED NOT FREE][COMPENDIUM][Beginner Baubles](https://foundryvtt.com/packages/ddd-beginner-baubles/ )
-
-- [DEPRECATED USE INSTEAD https://github.com/p4535992/fvtt-compendiums-mix-dnd5e][COMPENDIUM][Copper Dragon's Hoard](https://github.com/copperdragongames/copperdragonhoard)
-- [DEPRECATED USE INSTEAD https://github.com/p4535992/fvtt-compendiums-mix-dnd5e][COMPENDIUM][FoundryVTT-FantasyPlants](https://github.com/KyleBishop/FoundryVTT-FantasyPlants )
-- [DEPRECATED USE INSTEAD https://github.com/p4535992/fvtt-compendiums-mix-dnd5e][COMPENDIUM][Weather Effects 5e](https://github.com/orangetruth/weather-effects-5e )
-- [DEPRECATED USE INSTEAD https://github.com/p4535992/fvtt-compendiums-mix-dnd5e][COMPENDIUM][SRD heros et dragons](https://gitlab.com/lemaire.erw/srd-heros-et-dragons )
-- [DEPRECATED USE INSTEAD https://github.com/p4535992/fvtt-compendiums-mix-dnd5e][COMPENDIUM][um5-ultramodern-ogl](https://github.com/MrBrentRogers/UM5-Ultramodern5-OGL )
-- [DEPRECATED USE INSTEAD https://github.com/p4535992/fvtt-compendiums-mix-dnd5e][COMPENDIUM][fvtt-me5e](https://github.com/sparkcity/fvtt-me5e )
-- [DEPRECATED USE INSTEAD https://github.com/p4535992/fvtt-compendiums-mix-dnd5e][COMPENDIUM][foundryvtt-lingering-injuries](https://gitlab.com/p4535992/foundryvtt-lingering-injuries/-/raw/master/module.json )
-- [DEPRECATED USE INSTEAD https://github.com/p4535992/fvtt-compendiums-mix-dnd5e][COMPENDIUM][Kobold Press OGL](http://kpogl.wdfiles.com/local--files/home:home/module.json)
-- [DEPRECATED USE INSTEAD MIDI SRD][COMPENDIUM][Dynamic-Effects-SRD](https://github.com/kandashi/Dynamic-Effects-SRD )
-
 - [ANIMATED TEMPLATE][Animated Spells](https://github.com/jackkerouac/animated-spell-effects )
 - [ANIMATED TEMPLATE][Animated Spell Effects: Cartoon](https://github.com/jackkerouac/animated-spell-effects-cartoon )
 - [ANIMATED TEMPLATE][Jinker](https://www.patreon.com/jinker )
@@ -273,9 +258,6 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 - [OLD][MACRO][LootSwapping](https://github.com/unsoluble/fvtt-macros )
 - [OLD][MACRO][Foundry-Macros Otigon](https://github.com/otigon/Foundry-Macros )
 - [OLD][MACRO][DnD5e-WildShape-Macro](https://github.com/MisterHims/DnD5e-WildShape-Macro)
-- [OLD][MACRO][Trigger Happy Teleportation](https://forums.forge-vtt.com/t/trigger-happy-teleportation-tutorial/2117 )
-- [OLD][MACRO][Trigger Happy Traps](https://forums.forge-vtt.com/t/trigger-happy-traps/3448 )
-- [OLD][MACRO][Trigger Happy (The Basics)](https://youtu.be/okTWYO4oEMA )
 
 ## MODULES WebRTC/Discord
 
