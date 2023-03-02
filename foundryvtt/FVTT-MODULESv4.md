@@ -117,6 +117,8 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 
 ## [SYSTEM] MODULES  D&D5e
 
+- [UTILITY][Token Light Condition](https://github.com/Frstrm/TokenLightCondition)
+- [UTILITY][Stealthy](https://github.com/Eligarf/stealthy)
 - [COMPENDIUM][Kris's Compendium of Trade Goods](https://github.com/kristkos/kctg-common)
 - [COMPENDIUM][Revised Weapons & Equipment for 5e](https://github.com/M0nk3yy/RWE)
 - [COMPENDIUM][Chris's Premades](https://github.com/chrisk123999/chris-premades)
@@ -151,11 +153,18 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 - [PF2e-Animal-Companions](https://github.com/TikaelSol/PF2e-Animal-Companions)
 - [FVTT PF2e Ranged Combat](https://github.com/JDCalvert/FVTT-PF2e-Ranged-Combat)
 - [xdy-pf2e-workbench](https://github.com/xdy/xdy-pf2e-workbench)
-
+- [PF2e Dorako UI](https://github.com/Dorako/pf2e-Dorako-UI)
+- [FoundryVTT PF2e Dailies](https://github.com/reonZ/pf2e-dailies)
+- [pf2e-bardic-inspiration](https://github.com/excalibeur/pf2e-bardic-inspiration)
+- [PF2e Staves](https://github.com/jessev14/pf2e-staves)
+  
   OPTIONAL 
 
-- [PF2e Dorako UI](https://github.com/Dorako/pf2e-Dorako-UI)
-- [pf2E Extempore Effects](https://github.com/shemetz/pf2e-extempore-effects)
+  - [pf2E Extempore Effects](https://github.com/shemetz/pf2e-extempore-effects)
+  - [PF2E Color Effects](https://gitlab.com/InfamousSky/pf2e-color-effects)
+  - [PF2e Alignment Damage and Other Immunities](https://github.com/Fin-bar/PF2e-Alignment-Damage)
+  - [fvtt-pf2e-incapacitation-variants](https://github.com/tyrielv/fvtt-pf2e-incapacitation-variants)
+  - [PF2e - Darth & Drow's Brewery](https://github.com/yoshisman8/pf2e_darth_and_drow)
 
 ## [SYSTEM] PATHFINDER 1 MODULES
 
