@@ -3,7 +3,7 @@
 - [CHAT][Cautious Gamemaster's Pack](https://github.com/cs96and/FoundryVTT-CGMP)
 - [CHAT][Chat Portrait](https://github.com/p4535992/foundryvtt-chat-portrait)
 
-- [EXTERNAL][About Time](https://gitlab.com/tposney/about-time )
+
 - [EXTERNAL][FxMaster](https://github.com/ghost-fvtt/fxmaster)
 - [ENTITY][Compendium Folders](https://github.com/earlSt1/vtt-compendium-folders )
 - [ENTITY][Permission Viewer](https://github.com/kakaroto/fvtt-module-permission-viewer )
@@ -21,10 +21,10 @@
 
 - [UTILITY LOOT][DFreds Pocket Change](https://github.com/DFreds/dfreds-pocket-change )
 - [TOKEN][Active Token Effect](https://github.com/kandashi/Active-Token-Lighting )
-- [SCENES][Monks Scene Navigation](https://github.com/ironmonk88/monks-scene-navigation )
+
 - [UTILITY][Automated Evocations Variant](https://github.com/p4535992/automated-evocations-variant)
 - [UTILITY][Weather Control](https://gitlab.com/jstebenne/foundryvtt-weather-control)
-- [UTILITY][Monks TokenBar](https://github.com/ironmonk88/monks-tokenbar)
+
 - [UTILITY][Automated Animations](https://github.com/otigon/automated-jb2a-animations )
 - [CHAT][Chat Images](https://github.com/bmarian/chat-images )
 - [CHAT][Chat Portrait](https://github.com/ShoyuVanilla/FoundryVTT-Chat-Portrait/ )
@@ -33,8 +33,12 @@
 - [UTILITY][Sidebar Macro](https://github.com/arcanistzed/sidebar-macros)
 - [JOURNAL/UTILITY][Share Media](https://github.com/DarKDinDoN/share-media)
 
+- [SCENES][Monks Scene Navigation](https://github.com/ironmonk88/monks-scene-navigation )
 - [Scene][Monk's Active Tile Triggers](https://github.com/ironmonk88/monks-active-tiles/)
+- [UTILITY][Monks TokenBar](https://github.com/ironmonk88/monks-tokenbar)
+- [WALL][Monks Wall Enchancement](https://github.com/ironmonk88/monks-wall-enhancement)
 - [UTILITY][Monk's Little Details](https://github.com/ironmonk88/monks-little-details)
+
 - [UTILITY][JB2A Sequencer Macro Library](https://github.com/IrateRedKite/jb2a-sequencer-spell-macros)
 - [UTILITY][Ignore Vision](https://github.com/p4535992/foundryvtt-ignore-vision)
 
@@ -43,7 +47,10 @@
 - [UTILITY][Item Piles](https://github.com/fantasycalendar/FoundryVTT-ItemPiles)
 - [TOKEN/TEMPLATE/EFFECT][Token Magic FX](https://github.com/Feu-Secret/Tokenmagic)
 - [TOKEN][Token Says](https://github.com/napolitanod/Token-Says)
+
 - [UTILITY][Token Variant Art](https://github.com/Aedif/TokenVariants)
+- [UTILITY][Mass Edit](https://github.com/Aedif/multi-token-edit)
+- [UTILITY][Move That for you](https://github.com/Aedif/move-that-for-you)
 
 - [UTILITY\TOKEN][Token Attacher](https://github.com/KayelGee/token-attacher )
 - [UTILITY][Item Delete Check](https://gitlab.com/tposney/item-delete-check/tree/master )
@@ -70,7 +77,6 @@
 - [UTILITY][Comprehend Languages](https://github.com/Meneltamar/fvtt-comprehend-languages)
 - [UTILITY][Weather FX](https://github.com/LeafWulf/weatherfx)
 
-
 - [UI][JV's Minimal UI for FoundryVTT](https://github.com/saif-ellafi/foundryvtt-minimal-ui)
 - [UI][JV's Window Controls for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-window-controls)
 - [UTILITY][Stealthy](https://github.com/Eligarf/stealthy)
@@ -83,17 +89,24 @@
 - [COMBAT/ROLL][Let me roll that for you](https://github.com/League-of-Foundry-Developers/fvtt-module-lmrtfy )
 - [COMBAT][Arbron's Improved HP Bar](https://github.com/arbron/fvtt-hp-bar)
 - [COMBAT][Illandril's Token HUD Scaler](https://github.com/illandril/FoundryVTT-token-hud-scale)
-- [COMBAT][Danger-Zone](https://github.com/napolitanod/Danger-Zone
-- [COMBAT][Boss Bar](https://github.com/theripper93/Boss-Bar)
 - [COMBAT][Smart Target](https://github.com/theripper93/Smart-Target)
 - [COMBAT][Tagger](https://github.com/fantasycalendar/FoundryVTT-Tagger)
 - [COMBAT][Token Auras](https://bitbucket.org/Fyorl/token-auras )
 - [COMBAT][Combat Hp Display](https://github.com/WBHarry/combat-hp-display)
 - [COMBAT][Flying Tokens](https://github.com/LeafWulf/flying-tokens)
+- [COMBAT][Tactical Grid](https://github.com/Aedif/tactical-grid)
+- [COMBAT][Monk's Combat Details](https://github.com/ironmonk88/monks-combat-details)
+- [COMBAT][Monk's Combat Marker](https://github.com/ironmonk88/monks-combat-marker)
+
+  OPTIONAL
+
+- [COMBAT][Danger-Zone](https://github.com/napolitanod/Danger-Zone)
+- [COMBAT][Boss Bar](https://github.com/theripper93/Boss-Bar)
+- [COMBAT][Monk's Bloodsplats](https://github.com/ironmonk88/monks-bloodsplats)
 
 ## MODULES NECESSARI SOLO IN FASE DI COSTRUZIONE E NON DI SESSIONE
 
-- [WALL][Monks Wall Enchancement](https://github.com/ironmonk88/monks-wall-enhancement)
+
 - [LIGHT/SOUND][Light/Sound Mask](https://github.com/caewok/fvtt-light-mask)
 - [JOURNAL/NOTE][Automatic journal Icon Numbers](https://gitlab.com/tiwato/journal_icon_numbers )
 
@@ -107,13 +120,6 @@
 - [Gaming Table Player](https://github.com/skepickle/foundryvtt-gaming-table-player)
 - [Button Feel](https://github.com/LebombJames/button-feel)
 
-## MODULES LANGUAGE ITA
-
-ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E POTREBBERO ESSERE CAUSA DI STUPIDI PROBLEMI LEGATI ALLA TRADUZIONE DELLE ETICHETTE
-
-- [LANGUAGE][Italian Core](https://gitlab.com/riccisi/foundryvtt-lang-it-it ) 
-- [LANGUAGE][FoundryVTT DnD5e lang it-IT](https://gitlab.com/riccisi/foundryvtt-dnd5e-lang-it-it)
-- [LANGUAGE][Italian Modules Language Pack](https://gitlab.com/riccisi/italian-modules-language-pack)
 
 ## [SYSTEM] MODULES  D&D5e
 
@@ -142,6 +148,8 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 - [COMBAT][Effective Transferral](https://github.com/GamerFlix/effective-transferral)
 
 - [UTILITY][Nickle's Shop Generator](https://github.com/NickClearyTech/FoundryShopGenerator)
+
+- [ANIMATIONS][D&D5e Animations](https://github.com/MrVauxs/dnd5e-animations)
 
 ## [SYSTEM] PATHFINDER 2 MODULES
 
@@ -192,12 +200,14 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 - [SYSTEM] [kamigakarija](https://github.com/BrotherSharper/kamigakarija )
 - [SYSTEM] [13th Age MODULES](https://gitlab.com/asacolips-projects/foundry-mods/archmage )
 
-## UI Projects
 
-- [DEPRECATED][UI][Ernie's Modern UI](https://github.com/ernieayala/ernies-modern-layout )
-- [DEPRECATED][UI][Dracula Foundry](https://github.com/CasanovaSekova/dracula-foundry )
-- [DEPRECATED][UI][Twilight UI](https://github.com/Rayuaz/twilight-ui)
-- [DEPRECATED][UI][DnD5e ui](https://gitlab.com/sasmira/dnd-ui)
+## MODULES LANGUAGE ITA
+
+ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E POTREBBERO ESSERE CAUSA DI STUPIDI PROBLEMI LEGATI ALLA TRADUZIONE DELLE ETICHETTE
+
+- [LANGUAGE][Italian Core](https://gitlab.com/riccisi/foundryvtt-lang-it-it ) 
+- [LANGUAGE][FoundryVTT DnD5e lang it-IT](https://gitlab.com/riccisi/foundryvtt-dnd5e-lang-it-it)
+- [LANGUAGE][Italian Modules Language Pack](https://gitlab.com/riccisi/italian-modules-language-pack)
 
 ## MODULES FOR MANAGE AUDIO
 
