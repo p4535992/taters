@@ -56,8 +56,7 @@
 - [UTILITY][Item Delete Check](https://gitlab.com/tposney/item-delete-check/tree/master )
 - [COMBAT][Perfect Vision](https://github.com/dev7355608/perfect-vision )
 - [UTILITY][Forien Copy](https://github.com/League-of-Foundry-Developers/foundryvtt-forien-copy-environment )
-
-- [UTILITY][Pause Control](https://gitlab.com/koboldworks/agnostic/pause-control)
+- [UTILITY][Koboldworks – Pause Control](https://gitlab.com/koboldworks/agnostic/pause-control)
 - [WALL][Wall Height](https://github.com/schultzcole/FVTT-Wall-Height )
 
 - [SIDEBAR][Hidden Entity Links](https://github.com/p4535992/vtt-hidden-entity-links)
@@ -97,6 +96,8 @@
 - [COMBAT][Tactical Grid](https://github.com/Aedif/tactical-grid)
 - [COMBAT][Monk's Combat Details](https://github.com/ironmonk88/monks-combat-details)
 - [COMBAT][Monk's Combat Marker](https://github.com/ironmonk88/monks-combat-marker)
+- [COMBAT][Koboldworks – Ready Up!](https://gitlab.com/koboldworks/agnostic/ready-up)
+- [COMBAT][Koboldworks – Turn Announcer](https://gitlab.com/koboldworks/agnostic/turn-announcer)
 
   OPTIONAL
 
@@ -173,6 +174,8 @@
   - [PF2e Alignment Damage and Other Immunities](https://github.com/Fin-bar/PF2e-Alignment-Damage)
   - [fvtt-pf2e-incapacitation-variants](https://github.com/tyrielv/fvtt-pf2e-incapacitation-variants)
   - [PF2e - Darth & Drow's Brewery](https://github.com/yoshisman8/pf2e_darth_and_drow)
+  - [[PF2E] Heroic Crafting - Automation](https://github.com/Cerapter/pf2e-heroic-crafting-automation)
+  - [FoundryVTT PF2e Automatic Rune Progression](https://github.com/reonZ/pf2e-arp)
 
 ## [SYSTEM] PATHFINDER 1 MODULES
 
