@@ -80,7 +80,7 @@
 - [UI][JV's Window Controls for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-window-controls)
 - [UTILITY][Stealthy](https://github.com/Eligarf/stealthy)
 - [UTILITY][Scenery - Background Image Variation Manager](https://github.com/marcstraube/foundryvtt-scenery)
-
+- [UTILITY][Pf2E Modifiers Matter](https://gitlab.com/yendors-vtt/yendors-scene-actors/)
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
@@ -96,7 +96,6 @@
 - [COMBAT][Tactical Grid](https://github.com/Aedif/tactical-grid)
 - [COMBAT][Monk's Combat Details](https://github.com/ironmonk88/monks-combat-details)
 - [COMBAT][Monk's Combat Marker](https://github.com/ironmonk88/monks-combat-marker)
-- [COMBAT][Koboldworks – Ready Up!](https://gitlab.com/koboldworks/agnostic/ready-up)
 - [COMBAT][Koboldworks – Turn Announcer](https://gitlab.com/koboldworks/agnostic/turn-announcer)
 
   OPTIONAL
@@ -157,25 +156,28 @@
 - [pf2e-magaambya](https://github.com/MrVauxs/pf2e-magaambya)
 - [PF2e Animations](https://github.com/MrVauxs/pf2e-jb2a-macros)
 - [PF2e Target Damage](https://github.com/MrVauxs/PF2e-Target-Damage)
-- [pF2E Keybind Menagerie](https://github.com/Drental/foundryvtt-pf2e-f-is-for-flatfooted)
 - [Pf2E Modifiers Matter](https://github.com/shemetz/pf2e-modifiers-matter)
 - [PF2e-Animal-Companions](https://github.com/TikaelSol/PF2e-Animal-Companions)
-- [FVTT PF2e Ranged Combat](https://github.com/JDCalvert/FVTT-PF2e-Ranged-Combat)
 - [xdy-pf2e-workbench](https://github.com/xdy/xdy-pf2e-workbench)
 - [PF2e Dorako UI](https://github.com/Dorako/pf2e-Dorako-UI)
 - [FoundryVTT PF2e Dailies](https://github.com/reonZ/pf2e-dailies)
 - [pf2e-bardic-inspiration](https://github.com/excalibeur/pf2e-bardic-inspiration)
 - [PF2e Staves](https://github.com/jessev14/pf2e-staves)
-  
-  OPTIONAL 
+- [pf2edragruler](https://github.com/League-of-Foundry-Developers/pf2edragruler)
+- [PF2E Color Effects](https://gitlab.com/InfamousSky/pf2e-color-effects)
+- [pf2E Extempore Effects](https://github.com/shemetz/pf2e-extempore-effects)
+- [Kingmaker Tools (Unofficial)](https://github.com/BernhardPosselt/pf2e-kingmaker-tools)
 
-  - [pf2E Extempore Effects](https://github.com/shemetz/pf2e-extempore-effects)
-  - [PF2E Color Effects](https://gitlab.com/InfamousSky/pf2e-color-effects)
-  - [PF2e Alignment Damage and Other Immunities](https://github.com/Fin-bar/PF2e-Alignment-Damage)
-  - [fvtt-pf2e-incapacitation-variants](https://github.com/tyrielv/fvtt-pf2e-incapacitation-variants)
-  - [PF2e - Darth & Drow's Brewery](https://github.com/yoshisman8/pf2e_darth_and_drow)
-  - [[PF2E] Heroic Crafting - Automation](https://github.com/Cerapter/pf2e-heroic-crafting-automation)
-  - [FoundryVTT PF2e Automatic Rune Progression](https://github.com/reonZ/pf2e-arp)
+  NOT ESSENTIAL
+
+- [Kingmaker Map Remake (Unofficial)](https://github.com/BernhardPosselt/pf2e-kingmaker-map-remake)
+- [[PF2E] Heroic Crafting - Automation](https://github.com/Cerapter/pf2e-heroic-crafting-automation)
+- [PF2e Alignment Damage and Other Immunities](https://github.com/Fin-bar/PF2e-Alignment-Damage)
+- [FoundryVTT PF2e Automatic Rune Progression](https://github.com/reonZ/pf2e-arp)
+- [PF2e - Darth & Drow's Brewery](https://github.com/yoshisman8/pf2e_darth_and_drow)
+- [fvtt-pf2e-incapacitation-variants](https://github.com/tyrielv/fvtt-pf2e-incapacitation-variants)
+- [pF2e See Simple Scale Statistics](https://github.com/shemetz/pf2e-see-simple-scale-statistics)
+- [FVTT PF2e Ranged Combat](https://github.com/JDCalvert/FVTT-PF2e-Ranged-Combat)
 
 ## [SYSTEM] PATHFINDER 1 MODULES
 
