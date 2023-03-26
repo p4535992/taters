@@ -80,6 +80,7 @@
 - [covered-token-rescue-hud](https://github.com/xaukael/covered-token-rescue-hud)
 - [Z Scatter](https://github.com/elizeuangelo/fvtt-module-z-scatter/)
 - [Weather Reports](https://github.com/paulcheeba/weather-reports)
+- [UTILITY][GM Note](https://github.com/bithir/gm-notes)
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
@@ -155,10 +156,9 @@
 - [pf2e-magaambya](https://github.com/MrVauxs/pf2e-magaambya)
 - [PF2e Animations](https://github.com/MrVauxs/pf2e-jb2a-macros)
 - [PF2e Target Damage](https://github.com/MrVauxs/PF2e-Target-Damage)
-- [Pf2E Modifiers Matter](https://github.com/shemetz/pf2e-modifiers-matter)
 - [PF2e-Animal-Companions](https://github.com/TikaelSol/PF2e-Animal-Companions)
 - [xdy-pf2e-workbench](https://github.com/xdy/xdy-pf2e-workbench)
-- [PF2e Dorako UI](https://github.com/Dorako/pf2e-Dorako-UI)
+
 - [FoundryVTT PF2e Dailies](https://github.com/reonZ/pf2e-dailies)
 - [pf2e-bardic-inspiration](https://github.com/excalibeur/pf2e-bardic-inspiration)
 - [PF2e Staves](https://github.com/jessev14/pf2e-staves)
@@ -172,7 +172,7 @@
   NOT ESSENTIAL
 
 - [UTILITY][Pf2E Modifiers Matter](https://gitlab.com/yendors-vtt/yendors-scene-actors/)
-
+- [PF2e Dorako UI](https://github.com/Dorako/pf2e-Dorako-UI)
 - [[PF2E] Heroic Crafting - Automation](https://github.com/Cerapter/pf2e-heroic-crafting-automation)
 - [PF2e Alignment Damage and Other Immunities](https://github.com/Fin-bar/PF2e-Alignment-Damage)
 - [FoundryVTT PF2e Automatic Rune Progression](https://github.com/reonZ/pf2e-arp)
@@ -180,6 +180,7 @@
 - [fvtt-pf2e-incapacitation-variants](https://github.com/tyrielv/fvtt-pf2e-incapacitation-variants)
 - [pF2e See Simple Scale Statistics](https://github.com/shemetz/pf2e-see-simple-scale-statistics)
 - [FVTT PF2e Ranged Combat](https://github.com/JDCalvert/FVTT-PF2e-Ranged-Combat)
+- [Pf2E Modifiers Matter](https://foundryvtt.com/packages/pf2e-modifiers-matter)
 
 ## [SYSTEM] PATHFINDER 1 MODULES
 
