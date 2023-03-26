@@ -4,6 +4,9 @@
 
 # 2023-03-01
 
+- [UTILITY][Weather Control](https://gitlab.com/jstebenne/foundryvtt-weather-control)
+- [GOOD BUT NOT ESSENTIAL][TOKEN][Shared Vision](https://github.com/CDeenen/SharedVision )
+- [GOOD BUT NOT ESSENTIAL][UTILITY][Jack Kerouac's Spell Effects Sequencer Plugin](https://github.com/MrVauxs/Sequencer-JKAE-Database)
 - [NOT ESSENTIAL][COMBAT][Koboldworks – Ready Up!](https://gitlab.com/koboldworks/agnostic/ready-up)
 - [GOOD BUT NOT NECESSARY][Elevated Vision](https://github.com/caewok/fvtt-elevated-vision)
 - [DO NOT NEED ANYMORE][EXTERNAL][About Time](https://gitlab.com/tposney/about-time )

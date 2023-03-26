@@ -23,7 +23,6 @@
 - [TOKEN][Active Token Effect](https://github.com/kandashi/Active-Token-Lighting )
 
 - [UTILITY][Automated Evocations Variant](https://github.com/p4535992/automated-evocations-variant)
-- [UTILITY][Weather Control](https://gitlab.com/jstebenne/foundryvtt-weather-control)
 
 - [UTILITY][Automated Animations](https://github.com/otigon/automated-jb2a-animations )
 - [CHAT][Chat Images](https://github.com/bmarian/chat-images )
@@ -67,10 +66,8 @@
 - [UTILITY][Tile Sort](https://github.com/theripper93/tile-sort)
 - [UTILITY][Multiface tile](https://gitlab.com/Freeze020/multiface-tiles/)
 
-- [TOKEN][Shared Vision](https://github.com/CDeenen/SharedVision )
 - [UTILITY][QoL - Maximize Reopened Sheets](https://github.com/shemetz/qol-maximize-reopened-sheets)
 - [UTILITY][Module Management+](https://github.com/mouse0270/module-credits)
-- [UTILITY][Jack Kerouac's Spell Effects Sequencer Plugin](https://github.com/MrVauxs/Sequencer-JKAE-Database)
 
 - [UTILITY][Introduce Me](https://github.com/WBHarry/introduce-me)
 - [UTILITY][Comprehend Languages](https://github.com/Meneltamar/fvtt-comprehend-languages)
@@ -80,7 +77,9 @@
 - [UI][JV's Window Controls for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-window-controls)
 - [UTILITY][Stealthy](https://github.com/Eligarf/stealthy)
 - [UTILITY][Scenery - Background Image Variation Manager](https://github.com/marcstraube/foundryvtt-scenery)
-- [UTILITY][Pf2E Modifiers Matter](https://gitlab.com/yendors-vtt/yendors-scene-actors/)
+- [covered-token-rescue-hud](https://github.com/xaukael/covered-token-rescue-hud)
+- [Z Scatter](https://github.com/elizeuangelo/fvtt-module-z-scatter/)
+- [Weather Reports](https://github.com/paulcheeba/weather-reports)
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
@@ -166,11 +165,14 @@
 - [pf2edragruler](https://github.com/League-of-Foundry-Developers/pf2edragruler)
 - [PF2E Color Effects](https://gitlab.com/InfamousSky/pf2e-color-effects)
 - [pf2E Extempore Effects](https://github.com/shemetz/pf2e-extempore-effects)
+
 - [Kingmaker Tools (Unofficial)](https://github.com/BernhardPosselt/pf2e-kingmaker-tools)
+- [Kingmaker Map Remake (Unofficial)](https://github.com/BernhardPosselt/pf2e-kingmaker-map-remake)
 
   NOT ESSENTIAL
 
-- [Kingmaker Map Remake (Unofficial)](https://github.com/BernhardPosselt/pf2e-kingmaker-map-remake)
+- [UTILITY][Pf2E Modifiers Matter](https://gitlab.com/yendors-vtt/yendors-scene-actors/)
+
 - [[PF2E] Heroic Crafting - Automation](https://github.com/Cerapter/pf2e-heroic-crafting-automation)
 - [PF2e Alignment Damage and Other Immunities](https://github.com/Fin-bar/PF2e-Alignment-Damage)
 - [FoundryVTT PF2e Automatic Rune Progression](https://github.com/reonZ/pf2e-arp)

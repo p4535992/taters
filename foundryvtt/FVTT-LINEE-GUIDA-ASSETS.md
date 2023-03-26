@@ -230,4 +230,33 @@ Sono quelli consigliati e testati per i vari scopi.
   - Simple program to send stereo audio (microphone, stereo mix, virtual audio cable, etc) into a discord bot.
   - I use [Discord audio pipe](https://github.com/QiCuiHub/discord-audio-pipe/) coupled with a [virtual audio cable](https://vb-audio.com/Cable/index.htm), the combination of which allows you to connect a bot to Discord from your local computer and stream media to your voice channel. This has the added benefit of keeping the music stream as a separate client so other people can manage the volume as they like. With this setup, you can't stream directly from YT/Spotify/etc but there are other tools you can use to download those media files should you so choose.
 
+# mapping-icons
+Picking the perfect set of map icons for your web map can be hard, especially when you do not know where to find them. As a GIS web Developer, most of my projects –  if not all – involve showing some points of interest or other locational information with markers. The Internet is a massive resource, but where do you get them?
+
+Here I have compiled a list of sites where you can readily find awesome icons to use in your web-map for free.
+
+###[Map Icons](http://map-icons.com/)
+
+###[Maki](https://www.mapbox.com/maki/)
+
+###[Map Icons Collection](https://mapicons.mapsmarker.com/)
+
+###[Google Maps Markers (GitHub)](https://github.com/Concept211/Google-Maps-Markers)
+
+###[OSM icons](http://osm-icons.org/wiki/Icons)
+
+###[opensreetmap-carto](https://github.com/gravitystorm/openstreetmap-carto/tree/master/symbols)
+
+###[Weather Icons](https://github.com/erikflowers/weather-icons)
+
+###[Game Icons](https://game-icons.net/)
+
+
+
+
+
+
+
+
+
 

@@ -235,7 +235,6 @@
 - [NOT ESSENTIAL][MAP/IMPORT][EEEG-Importer](https://github.com/HadaIonut/EEEG-importer ) - 
 - [NOT ESSENTIAL][MAP/TOKEN/CONDITION][Illandril's Token Hud Scale](https://foundryvtt.com/packages/illandril-token-hud-scale/ ) - 
 - [NOT ESSENTIAL][INVENTORY][Illandril's Inventory Sorter (5e)](https://github.com/illandril/FoundryVTT-inventory-sorter ) - https://raw.githubusercontent.com/illandril/FoundryVTT-inventory-sorter/master/module.json 
-- [NOT ESSENTIAL][UTILITY][GM Notes](https://github.com/syl3r86/gm-notes ) - 
 
 
 ## 2021-06-02 FoundryVTT 0.8.6
