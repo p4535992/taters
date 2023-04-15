@@ -11,6 +11,7 @@
 					"Fey Rune Labs"
 				],
 				"convertedBy": [
+					"p4535992",
 					"fotoply"
 				],
 				"version": "5.0",
@@ -20,86 +21,50 @@
 		],
 		"dependencies": {
 			"item": [
-				"AI",
-				"BGDIA",
-				"CM",
-				"CoS",
 				"DMG",
 				"ERLW",
 				"EGW",
 				"FTD",			
 				"GS",
 				"GGR",
-				"HotDQ",
-				"IDRotF",
 				"IMR",
 				"LLK",
 				"LMoP",
-				"MTF",
-				"MOT",
 				"OotA",
 				"PotA",
-				"RoT",
-				"SKT",
 				"SCC",
 				"TftYP",
 				"TCE",
-				"ToA",
 				"VGM",
-				"WDH",
 				"WDMM",
 				"WBtW",
 				"XGE"
 			],
 			"itemGroup": [
-				"AI",
-				"BGDIA",
-				"CM",
-				"CoS",
 				"DMG",
 				"ERLW",
 				"EGW",
 				"FTD",
 				"GS",
 				"GGR",
-				"HotDQ",
-				"IDRotF",
 				"LLK",
-				"MTF",
-				"MOT",
 				"OotA",
 				"PotA",
-				"RoT",
-				"SKT",
 				"TftYP",
 				"TCE",
-				"ToA",
 				"VGM",
-				"WDH",
-				"WBtW",
-				"XGE"
+				"WBtW"
 			],
 			"itemFluff": [
-				"AI",
-				"BGDIA",
-				"CM",
-				"CoS",
 				"DMG",
 				"ERLW",
 				"EGW",
 				"GS",
 				"GGR",
-				"HotDQ",
-				"IDRotF",
 				"MTF",
-				"MOT",
 				"OotA",
 				"PotA",
-				"RoT",
-				"SKT",
 				"TCE",
-				"ToA",
-				"WDH",
 				"WBtW",
 				"XGE"
 			]
@@ -16512,1543 +16477,1352 @@
 				]
 			}
 		],
-		"item": 
+		"itemGroup": 
 		[
 			{
-				"name": "Perfume of Bewitching",
+				"name": "Absorbing Tattoo",
 				"source": "DMPG",
-				"rarity": "common",
-				"value": 7500,
-				"weight": 0.1,
+				"weight": 0,
+				"rarity": "very rare",
+				"value": 800000,
 				"_copy": {
+					"name": "Absorbing Tattoo",
+					"source": "TCE",
+					"_mod": {
+						"items": [
+							{
+								"mode": "replaceTxt",
+								"replace": "\\|TCE$",
+								"with": "|DMPG",
+								"flags": "i"
+							}
+						]
+					},
+					"_preserve": {
+						"page": true,
+						"tier": true,
+						"lootTables": true, "wondrous": true,
+						"wondrous": true
+					}
+				}
+			},
+			{
+				"name": "Armor of Resistance (light, medium, or heavy)",
+				"source": "DMPG",
+				"weight": 0,
+				"rarity": "rare",
+				"value": 300000,
+				"_copy": {
+					"name": "Armor of Resistance",
+					"source": "DMG",
+					"_mod": {
+						"items": [
+							{
+								"mode": "replaceTxt",
+								"replace": "$",
+								"with": "|DMPG",
+								"flags": "i"
+							}
+						]
+					},
+					"_preserve": {
+						"page": true,
+						"tier": true,
+						"lootTables": true, 
+						"wondrous": true
+					}
+				}
+			},
+			{
+				"name": "Carpet of Flying",
+				"source": "DMPG",
+				"weight": 10,
+				"rarity": "very rare",
+				"value": 4400000,
+				"_copy": {
+					"name": "Carpet of Flying",
+					"source": "DMG",
+					"_mod": {
+						"items": [
+							{
+								"mode": "replaceTxt",
+								"replace": "$",
+								"with": "|DMPG",
+								"flags": "i"
+							}
+						]
+					},
+					"_preserve": {
+						"page": true,
+						"tier": true,
+						"lootTables": true,
+						"wondrous": true
+					}
+				}
+			},
+			{
+				"name": "Dragon Scale Mail",
+				"source": "DMPG",
+				"weight": 50,
+				"rarity": "very rare",
+				"value": 1500000,
+				"_copy": {
+					"name": "Dragon Scale Mail",
+					"source": "DMG",
+					"_mod": {
+						"items": [
+							{
+								"mode": "replaceTxt",
+								"replace": "$",
+								"with": "|DMPG",
+								"flags": "i"
+							}
+						]
+					},
+					"_preserve": {
+						"page": true,
+						"tier": true,
+						"lootTables": true,
+						"wondrous": true
+					}
+				}
+			},
+			{
+				"name": "Elemental Gem",
+				"source": "DMPG",
+				"weight": 1,
+				"rarity": "uncommon",
+				"value": 25000,
+				"_copy": {
+					"name": "Elemental Gem",
+					"source": "DMG",
+					"_mod": {
+						"items": [
+							{
+								"mode": "replaceTxt",
+								"replace": "$",
+								"with": "|DMPG",
+								"flags": "i"
+							}
+						]
+					},
+					"_preserve": {
+						"page": true,
+						"tier": true,
+						"lootTables": true,
+						"wondrous": true
+					}
+				}
+			},
+			{
+				"name": "Guild Charms",
+				"source": "DMPG",
+				"weight": 1,
+				"rarity": "uncommon",
+				"value": 45000,
+				"_copy": {
+					"name": "Guild Signet",
+					"source": "GGR",
+					"_mod": {
+						"items": [
+							{
+								"mode": "replaceTxt",
+								"replace": "\\|GGR$",
+								"with": "|DMPG",
+								"flags": "i"
+							}
+						]
+					},
+					"_preserve": {
+						"page": true,
+						"tier": true,
+						"lootTables": true,
+						"wondrous": true
+					}
+				}
+			},
+			{
+				"name": "Guild Signet",
+				"source": "DMPG",
+				"weight": 1,
+				"rarity": "uncommon",
+				"value": 35000,
+				"_copy": {
+					"name": "Guild Signet",
+					"source": "GGR",
+					"_mod": {
+						"items": [
+							{
+								"mode": "replaceTxt",
+								"replace": "\\|GGR$",
+								"with": "|DMPG",
+								"flags": "i"
+							}
+						]
+					},
+					"_preserve": {
+						"page": true,
+						"tier": true,
+						"lootTables": true,
+						"wondrous": true
+					}
+				}
+			},
+			{
+				"name": "Potion of Resistance",
+				"source": "DMPG",
+				"weight": 0.1,
+				"rarity": "uncommon",
+				"value": 50000,
+				"_copy": {
+					"name": "Potion of Resistance",
+					"source": "DMG",
+					"_mod": {
+						"items": [
+							{
+								"mode": "replaceTxt",
+								"replace": "$",
+								"with": "|DMPG",
+								"flags": "i"
+							}
+						]
+					},
 					"_preserve": {
 						"page": true,
 						"type": true,
 						"tier": true,
-						"lootTables": true
+						"lootTables": true,
+						"wondrous": true
+					}
+				}
+			},
+			{
+				"name": "Ring of Resistance",
+				"source": "DMPG",
+				"weight": 1,
+				"rarity": "rare",
+				"value": 350000,
+				"_copy": {
+					"name": "Ring of Resistance",
+					"source": "DMG",
+					"_mod": {
+						"items": [
+							{
+								"mode": "replaceTxt",
+								"replace": "$",
+								"with": "|DMPG",
+								"flags": "i"
+							}
+						]
 					},
-					"name": "Perfume of Bewitching",
-					"source": "XGE"
+					"_preserve": {
+						"page": true,
+						"tier": true,
+						"lootTables": true,
+						"wondrous": true,
+						"hasFluffImages": true
+					}
 				}
 			},
 			{
-				"name": "Potion of Climbing",
+				"name": "Scroll of Protection",
 				"source": "DMPG",
 				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "common",
-				"value": 3000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Climbing",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Comprehension",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "common",
-				"value": 2500,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Comprehension",
-				"source": "WDMM"
-				}
-			},
-			{
-				"name": "Potion of Healing (Common)",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "common",
-				"value": 5000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Healing",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Healing",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "common",
-				"value": 5000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Healing",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Watchful Rest",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "common",
-				"value": 3500,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Watchful Rest",
-				"source": "WDMM"
-				}
-			},
-			{
-				"name": "Blood of the Lycanthrope Antidote",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "uncommon",
-				"value": 50000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Blood of the Lycanthrope Antidote",
-				"source": "IMR"
-				}
-			},
-			{
-				"name": "Bottled Breath",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "uncommon",
-				"value": 35000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Bottled Breath",
-				"source": "PotA"
-				}
-			},
-			{
-				"name": "Mummy Rot Antidote",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "uncommon",
-				"value": 15000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Mummy Rot Antidote",
-				"source": "IMR"
-				}
-			},
-			{
-				"name": "Oil of Slipperiness",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "uncommon",
-				"value": 25000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Oil of Slipperiness",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Philter of Love",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "uncommon",
-				"value": 15000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Philter of Love",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Advantage",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "uncommon",
-				"value": 12500,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Advantage",
-				"source": "WBtW"
-				}
-			},
-			{
-				"name": "Potion of Animal Friendship",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "uncommon",
-				"value": 20000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Animal Friendship",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Fire Breath",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "uncommon",
-				"value": 35000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Fire Breath",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Giant Strength (Hill)",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "uncommon",
-				"value": 12500,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Hill Giant Strength",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Hill Giant Strength",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "uncommon",
-				"value": 12500,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Hill Giant Strength",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Growth",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "uncommon",
-				"value": 30000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Growth",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Healing (Uncommon)",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "uncommon",
-				"value": 30000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Greater Healing",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Greater Healing",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "uncommon",
-				"value": 30000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Greater Healing",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Poison",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "uncommon",
-				"value": 50000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Poison",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Resistance",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "uncommon",
-				"value": 50000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Resistance",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Water Breathing",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "uncommon",
-				"value": 40000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Water Breathing",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Thessaltoxin Antidote",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "uncommon",
-				"value": 10000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Thessaltoxin Antidote",
-				"source": "IMR"
-				}
-			},
-			{
-				"name": "Elixir of Health",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
 				"rarity": "rare",
-				"value": 200000,
+				"value": 350000,
 				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Elixir of Health",
-				"source": "DMG"
+					"name": "Scroll of Protection",
+					"source": "DMG",
+					"_mod": {
+						"items": [
+							{
+								"mode": "replaceTxt",
+								"replace": "$",
+								"with": "|DMPG",
+								"flags": "i"
+							}
+						]
+					},
+					"_preserve": {
+						"page": true,
+						"tier": true,
+						"lootTables": true,
+						"wondrous": true
+					}
 				}
 			},
 			{
-				"name": "Oil of Etherealness",
+				"name": "Sword of Answering",
 				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "rare",
-				"value": 200000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Oil of Etherealness",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Aqueous Form",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "rare",
-				"value": 100000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Aqueous Form",
-				"source": "MOT"
-				}
-			},
-			{
-				"name": "Potion of Clairvoyance",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "rare",
-				"value": 90000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Clairvoyance",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Diminution",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "rare",
-				"value": 50000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Diminution",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Gaseous Form",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "rare",
-				"value": 150000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Gaseous Form",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Giant Strength (Frost)",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "rare",
-				"value": 65000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Frost Giant Strength",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Frost Giant Strength",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "rare",
-				"value": 65000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Frost Giant Strength",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Giant Strength (Stone)",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "rare",
-				"value": 65000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Stone Giant Strength",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Stone Giant Strength",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "rare",
-				"value": 65000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Stone Giant Strength",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Giant Strength (Fire)",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "rare",
-				"value": 120000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Fire Giant Strength",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Fire Giant Strength",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "rare",
-				"value": 120000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Fire Giant Strength",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Healing (Rare)",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "rare",
-				"value": 75000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Superior Healing",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Superior Healing",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "rare",
-				"value": 75000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Superior Healing",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Heroism",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "rare",
-				"value": 80000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Heroism",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Invulnerability",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "rare",
-				"value": 150000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Invulnerability",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Maximum Power",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "rare",
-				"value": 200000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Maximum Power",
-				"source": "EGW"
-				}
-			},
-			{
-				"name": "Potion of Mind Control (beast)",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "rare",
-				"value": 160000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Mind Control (beast)",
-				"source": "TftYP"
-				}
-			},
-			{
-				"name": "Potion of Mind Control (humanoid)",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "rare",
-				"value": 250000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Mind Control (humanoid)",
-				"source": "TftYP"
-				}
-			},
-			{
-				"name": "Potion of Mind Reading",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "rare",
-				"value": 110000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Mind Reading",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Possibility",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "very rare",
-				"value": 190000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Possibility",
-				"source": "EGW"
-				}
-			},
-			{
-				"name": "Oil of Sharpness",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "very rare",
-				"value": 220000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Oil of Sharpness",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Flying",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "very rare",
-				"value": 250000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Flying",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Giant Strength (Cloud)",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "very rare",
-				"value": 180000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Cloud Giant Strength",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Cloud Giant Strength",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "very rare",
-				"value": 180000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Cloud Giant Strength",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Healing (Very Rare)",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "very rare",
-				"value": 150000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Supreme Healing",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Supreme Healing",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "very rare",
-				"value": 150000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Supreme Healing",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Invisibility",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "very rare",
-				"value": 200000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Invisibility",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Longevity",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "very rare",
-				"value": 300000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Longevity",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Mind Control (monster)",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "very rare",
-				"value": 600000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Mind Control (monster)",
-				"source": "TftYP"
-				}
-			},
-			{
-				"name": "Potion of Speed",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "very rare",
-				"value": 200000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Speed",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Vitality",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "very rare",
-				"value": 180000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Vitality",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Dragon's Majesty",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
+				"weight": 3,
 				"rarity": "legendary",
-				"value": 1500000,
+				"value": 5100000,
 				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Dragon's Majesty",
-				"source": "FTD"
-				}
-			},
-			{
-				"name": "Potion of Giant Size",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "legendary",
-				"value": 1100000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Giant Size",
-				"source": "SKT"
-				}
-			},
-			{
-				"name": "Potion of Giant Strength (Storm)",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "legendary",
-				"value": 800000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Storm Giant Strength",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Storm Giant Strength",
-				"source": "DMPG",
-				"weight": 0.1,
-				"hasFluffImages": true,
-				"rarity": "legendary",
-				"value": 800000,
-				"_copy": {
-				"_preserve": {
-					"page": true,
-					"type": true,
-					"tier": true,
-					"lootTables": true
-				},
-				"name": "Potion of Storm Giant Strength",
-				"source": "DMG"
+					"name": "Sword of Answering",
+					"source": "DMG",
+					"_mod": {
+						"items": [
+							{
+								"mode": "replaceTxt",
+								"replace": "$",
+								"with": "|DMPG",
+								"flags": "i"
+							}
+						]
+					},
+					"_preserve": {
+						"page": true,
+						"tier": true,
+						"lootTables": true,
+						"wondrous": true
+					}
 				}
 			}
-			],
-			"itemFluff": [
-			{
-				"name": "Perfume of Bewitching",
-				"source": "DMPG",
-				"_copy": {
+	],
+	"item": 
+	[
+		{
+			"name": "Perfume of Bewitching",
+			"source": "DMPG",
+			"rarity": "common",
+			"value": 7500,
+			"weight": 0.1,
+			"_copy": {
+				"_preserve": {
+					"page": true,
+					"type": true,
+					"tier": true,
+					"lootTables": true, "wondrous": true
+				},
 				"name": "Perfume of Bewitching",
 				"source": "XGE"
-				}
-			},
-			{
-				"name": "Potion of Climbing",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Climbing",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Comprehension",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Comprehension",
-				"source": "WDMM"
-				}
-			},
-			{
-				"name": "Potion of Healing (Common)",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Healing",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Healing",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Healing",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Watchful Rest",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Watchful Rest",
-				"source": "WDMM"
-				}
-			},
-			{
-				"name": "Blood of the Lycanthrope Antidote",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Blood of the Lycanthrope Antidote",
-				"source": "IMR"
-				}
-			},
-			{
-				"name": "Bottled Breath",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Bottled Breath",
-				"source": "PotA"
-				}
-			},
-			{
-				"name": "Mummy Rot Antidote",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Mummy Rot Antidote",
-				"source": "IMR"
-				}
-			},
-			{
-				"name": "Oil of Slipperiness",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Oil of Slipperiness",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Philter of Love",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Philter of Love",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Advantage",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Advantage",
-				"source": "WBtW"
-				}
-			},
-			{
-				"name": "Potion of Animal Friendship",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Animal Friendship",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Fire Breath",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Fire Breath",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Giant Strength (Hill)",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Hill Giant Strength",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Hill Giant Strength",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Hill Giant Strength",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Growth",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Growth",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Healing (Uncommon)",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Greater Healing",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Greater Healing",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Greater Healing",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Poison",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Poison",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Resistance",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Resistance",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Water Breathing",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Water Breathing",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Thessaltoxin Antidote",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Thessaltoxin Antidote",
-				"source": "IMR"
-				}
-			},
-			{
-				"name": "Elixir of Health",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Elixir of Health",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Oil of Etherealness",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Oil of Etherealness",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Aqueous Form",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Aqueous Form",
-				"source": "MOT"
-				}
-			},
-			{
-				"name": "Potion of Clairvoyance",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Clairvoyance",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Diminution",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Diminution",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Gaseous Form",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Gaseous Form",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Giant Strength (Frost)",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Frost Giant Strength",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Frost Giant Strength",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Frost Giant Strength",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Giant Strength (Stone)",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Stone Giant Strength",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Stone Giant Strength",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Stone Giant Strength",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Giant Strength (Fire)",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Fire Giant Strength",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Fire Giant Strength",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Fire Giant Strength",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Healing (Rare)",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Superior Healing",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Superior Healing",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Superior Healing",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Heroism",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Heroism",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Invulnerability",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Invulnerability",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Maximum Power",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Maximum Power",
-				"source": "EGW"
-				}
-			},
-			{
-				"name": "Potion of Mind Control (beast)",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Mind Control (beast)",
-				"source": "TftYP"
-				}
-			},
-			{
-				"name": "Potion of Mind Control (humanoid)",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Mind Control (humanoid)",
-				"source": "TftYP"
-				}
-			},
-			{
-				"name": "Potion of Mind Reading",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Mind Reading",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Possibility",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Possibility",
-				"source": "EGW"
-				}
-			},
-			{
-				"name": "Oil of Sharpness",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Oil of Sharpness",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Flying",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Flying",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Giant Strength (Cloud)",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Cloud Giant Strength",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Cloud Giant Strength",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Cloud Giant Strength",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Healing (Very Rare)",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Supreme Healing",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Supreme Healing",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Supreme Healing",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Invisibility",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Invisibility",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Longevity",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Longevity",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Mind Control (monster)",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Mind Control (monster)",
-				"source": "TftYP"
-				}
-			},
-			{
-				"name": "Potion of Speed",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Speed",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Vitality",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Vitality",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Dragon's Majesty",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Dragon's Majesty",
-				"source": "FTD"
-				}
-			},
-			{
-				"name": "Potion of Giant Size",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Giant Size",
-				"source": "SKT"
-				}
-			},
-			{
-				"name": "Potion of Giant Strength (Storm)",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Storm Giant Strength",
-				"source": "DMG"
-				}
-			},
-			{
-				"name": "Potion of Storm Giant Strength",
-				"source": "DMPG",
-				"_copy": {
-				"name": "Potion of Storm Giant Strength",
-				"source": "DMG"
-				}
 			}
-		]
-		
+		},
+		{
+			"name": "Potion of Climbing",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "common",
+			"value": 3000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Climbing",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Comprehension",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "common",
+			"value": 2500,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Comprehension",
+			"source": "WDMM"
+			}
+		},
+		{
+			"name": "Potion of Healing (Common)",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "common",
+			"value": 5000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Healing",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Healing",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "common",
+			"value": 5000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Healing",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Watchful Rest",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "common",
+			"value": 3500,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Watchful Rest",
+			"source": "WDMM"
+			}
+		},
+		{
+			"name": "Blood of the Lycanthrope Antidote",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "uncommon",
+			"value": 50000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Blood of the Lycanthrope Antidote",
+			"source": "IMR"
+			}
+		},
+		{
+			"name": "Bottled Breath",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "uncommon",
+			"value": 35000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Bottled Breath",
+			"source": "PotA"
+			}
+		},
+		{
+			"name": "Mummy Rot Antidote",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "uncommon",
+			"value": 15000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Mummy Rot Antidote",
+			"source": "IMR"
+			}
+		},
+		{
+			"name": "Oil of Slipperiness",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "uncommon",
+			"value": 25000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Oil of Slipperiness",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Philter of Love",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "uncommon",
+			"value": 15000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Philter of Love",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Advantage",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "uncommon",
+			"value": 12500,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Advantage",
+			"source": "WBtW"
+			}
+		},
+		{
+			"name": "Potion of Animal Friendship",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "uncommon",
+			"value": 20000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Animal Friendship",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Fire Breath",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "uncommon",
+			"value": 35000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Fire Breath",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Giant Strength (Hill)",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "uncommon",
+			"value": 12500,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Hill Giant Strength",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Hill Giant Strength",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "uncommon",
+			"value": 12500,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Hill Giant Strength",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Growth",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "uncommon",
+			"value": 30000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Growth",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Healing (Uncommon)",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "uncommon",
+			"value": 30000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Greater Healing",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Greater Healing",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "uncommon",
+			"value": 30000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Greater Healing",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Poison",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "uncommon",
+			"value": 50000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Poison",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Water Breathing",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "uncommon",
+			"value": 40000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Water Breathing",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Thessaltoxin Antidote",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "uncommon",
+			"value": 10000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Thessaltoxin Antidote",
+			"source": "IMR"
+			}
+		},
+		{
+			"name": "Elixir of Health",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "rare",
+			"value": 200000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Elixir of Health",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Oil of Etherealness",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "rare",
+			"value": 200000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Oil of Etherealness",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Aqueous Form",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "rare",
+			"value": 100000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Aqueous Form",
+			"source": "MOT"
+			}
+		},
+		{
+			"name": "Potion of Clairvoyance",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "rare",
+			"value": 90000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Clairvoyance",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Diminution",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "rare",
+			"value": 50000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Diminution",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Gaseous Form",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "rare",
+			"value": 150000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Gaseous Form",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Giant Strength (Frost)",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "rare",
+			"value": 65000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Frost Giant Strength",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Frost Giant Strength",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "rare",
+			"value": 65000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Frost Giant Strength",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Giant Strength (Stone)",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "rare",
+			"value": 65000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Stone Giant Strength",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Stone Giant Strength",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "rare",
+			"value": 65000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Stone Giant Strength",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Giant Strength (Fire)",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "rare",
+			"value": 120000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Fire Giant Strength",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Fire Giant Strength",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "rare",
+			"value": 120000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Fire Giant Strength",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Healing (Rare)",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "rare",
+			"value": 75000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Superior Healing",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Superior Healing",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "rare",
+			"value": 75000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Superior Healing",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Heroism",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "rare",
+			"value": 80000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Heroism",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Invulnerability",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "rare",
+			"value": 150000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Invulnerability",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Maximum Power",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "rare",
+			"value": 200000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Maximum Power",
+			"source": "EGW"
+			}
+		},
+		{
+			"name": "Potion of Mind Control (beast)",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "rare",
+			"value": 160000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Mind Control (beast)",
+			"source": "TftYP"
+			}
+		},
+		{
+			"name": "Potion of Mind Control (humanoid)",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "rare",
+			"value": 250000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Mind Control (humanoid)",
+			"source": "TftYP"
+			}
+		},
+		{
+			"name": "Potion of Mind Reading",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "rare",
+			"value": 110000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Mind Reading",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Possibility",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "very rare",
+			"value": 190000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Possibility",
+			"source": "EGW"
+			}
+		},
+		{
+			"name": "Oil of Sharpness",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "very rare",
+			"value": 220000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Oil of Sharpness",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Flying",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "very rare",
+			"value": 250000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Flying",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Giant Strength (Cloud)",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "very rare",
+			"value": 180000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Cloud Giant Strength",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Cloud Giant Strength",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "very rare",
+			"value": 180000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Cloud Giant Strength",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Healing (Very Rare)",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "very rare",
+			"value": 150000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Supreme Healing",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Supreme Healing",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "very rare",
+			"value": 150000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Supreme Healing",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Invisibility",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "very rare",
+			"value": 200000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Invisibility",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Longevity",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "very rare",
+			"value": 300000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Longevity",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Mind Control (monster)",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "very rare",
+			"value": 600000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Mind Control (monster)",
+			"source": "TftYP"
+			}
+		},
+		{
+			"name": "Potion of Speed",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "very rare",
+			"value": 200000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Speed",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Vitality",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "very rare",
+			"value": 180000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Vitality",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Dragon's Majesty",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "legendary",
+			"value": 1500000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Dragon's Majesty",
+			"source": "FTD"
+			}
+		},
+		{
+			"name": "Potion of Giant Size",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "legendary",
+			"value": 1100000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Giant Size",
+			"source": "SKT"
+			}
+		},
+		{
+			"name": "Potion of Giant Strength (Storm)",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "legendary",
+			"value": 800000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Storm Giant Strength",
+			"source": "DMG"
+			}
+		},
+		{
+			"name": "Potion of Storm Giant Strength",
+			"source": "DMPG",
+			"weight": 0.1,
+			
+			"rarity": "legendary",
+			"value": 800000,
+			"_copy": {
+			"_preserve": {
+				"page": true,
+				"type": true,
+				"tier": true,
+				"lootTables": true, "wondrous": true
+			},
+			"name": "Potion of Storm Giant Strength",
+			"source": "DMG"
+			}
+		}
+	]
 }
