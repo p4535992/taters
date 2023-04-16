@@ -2,6 +2,16 @@
 # NOT ESSENTIAL 
 # ======================================================================
 
+# 2023-04-01
+
+- [NOT REALLY NECESSARY][CHAT][Chat Portrait](https://github.com/p4535992/foundryvtt-chat-portrait)
+- [Gaming Table Player](https://github.com/skepickle/foundryvtt-gaming-table-player)
+- [Button Feel](https://github.com/LebombJames/button-feel)
+- [NOT REALLY NEEDED][UTILITY][GM Note](https://github.com/bithir/gm-notes)
+- [UTILITY][QoL - Maximize Reopened Sheets](https://github.com/shemetz/qol-maximize-reopened-sheets)
+- [IS BETTER MATT][SCENE][Stairways](https://gitlab.com/SWW13/foundryvtt-stairways)
+- [IS BETTER TILE SORT][UTILITY][Multiface tile](https://gitlab.com/Freeze020/multiface-tiles/)
+
 # 2023-03-01
 
 - [UTILITY][Weather Control](https://gitlab.com/jstebenne/foundryvtt-weather-control)

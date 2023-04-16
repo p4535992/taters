@@ -1,8 +1,6 @@
 ## [MUST HAVE] MODULES 
 
 - [CHAT][Cautious Gamemaster's Pack](https://github.com/cs96and/FoundryVTT-CGMP)
-- [CHAT][Chat Portrait](https://github.com/p4535992/foundryvtt-chat-portrait)
-
 
 - [EXTERNAL][FxMaster](https://github.com/ghost-fvtt/fxmaster)
 - [ENTITY][Compendium Folders](https://github.com/earlSt1/vtt-compendium-folders )
@@ -16,8 +14,7 @@
 - [TOKEN][Drag Ruler](https://github.com/manuelVo/foundryvtt-drag-ruler )
 - [UTILITY][Simple Calendar](https://github.com/vigoren/foundryvtt-simple-calendar )
 - [MAP][Armsreach](https://github.com/p4535992/foundryvtt-arms-reach )
-- [WALL][Smart Door](https://github.com/manuelVo/foundryvtt-smart-doors )
-- [SCENE][Stairways](https://gitlab.com/SWW13/foundryvtt-stairways)
+
 
 - [UTILITY LOOT][DFreds Pocket Change](https://github.com/DFreds/dfreds-pocket-change )
 - [TOKEN][Active Token Effect](https://github.com/kandashi/Active-Token-Lighting )
@@ -64,9 +61,8 @@
 
 - [UTILITY][Tile Scroll](https://github.com/theripper93/tile-scroll)
 - [UTILITY][Tile Sort](https://github.com/theripper93/tile-sort)
-- [UTILITY][Multiface tile](https://gitlab.com/Freeze020/multiface-tiles/)
 
-- [UTILITY][QoL - Maximize Reopened Sheets](https://github.com/shemetz/qol-maximize-reopened-sheets)
+
 - [UTILITY][Module Management+](https://github.com/mouse0270/module-credits)
 
 - [UTILITY][Introduce Me](https://github.com/WBHarry/introduce-me)
@@ -79,8 +75,7 @@
 - [UTILITY][Scenery - Background Image Variation Manager](https://github.com/marcstraube/foundryvtt-scenery)
 - [covered-token-rescue-hud](https://github.com/xaukael/covered-token-rescue-hud)
 - [Z Scatter](https://github.com/elizeuangelo/fvtt-module-z-scatter/)
-- [Weather Reports](https://github.com/paulcheeba/weather-reports)
-- [UTILITY][GM Note](https://github.com/bithir/gm-notes)
+- [UTILITY][Beaver's Crafting System](https://github.com/AngryBeaver/beavers-crafting)
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
@@ -112,13 +107,11 @@
 
 # MODULES DA VERIFICARE SE NECESSARI
 
-- [UTILITY][Beaver's Crafting System](https://github.com/AngryBeaver/beavers-crafting)
+
 - [SCRIPT][World-Scripter](https://github.com/Kekilla0/World-Scripter)
 - [SCENE][World Explorer](https://github.com/CarlosFdez/world-explorer)
 - [SCENE][Unofficial Azgaar's Fantasy Map Generator Import](https://github.com/Ethck/azgaar-foundry)
-
-- [Gaming Table Player](https://github.com/skepickle/foundryvtt-gaming-table-player)
-- [Button Feel](https://github.com/LebombJames/button-feel)
+- [NEED UPDATE][WALL][Smart Door](https://github.com/manuelVo/foundryvtt-smart-doors )
 
 
 ## [SYSTEM] MODULES  D&D5e
@@ -151,6 +144,8 @@
 
 - [ANIMATIONS][D&D5e Animations](https://github.com/MrVauxs/dnd5e-animations)
 
+- [Weather Reports](https://github.com/paulcheeba/weather-reports)
+
 ## [SYSTEM] PATHFINDER 2 MODULES
 
 - [pf2e-magaambya](https://github.com/MrVauxs/pf2e-magaambya)
@@ -181,6 +176,8 @@
 - [pF2e See Simple Scale Statistics](https://github.com/shemetz/pf2e-see-simple-scale-statistics)
 - [FVTT PF2e Ranged Combat](https://github.com/JDCalvert/FVTT-PF2e-Ranged-Combat)
 - [Pf2E Modifiers Matter](https://foundryvtt.com/packages/pf2e-modifiers-matter)
+
+## [SYSTEM] MODULES Call of Cthulhu 7th edition (Unofficial)
 
 ## [SYSTEM] PATHFINDER 1 MODULES
 
