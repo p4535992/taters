@@ -76,6 +76,7 @@
 - [covered-token-rescue-hud](https://github.com/xaukael/covered-token-rescue-hud)
 - [Z Scatter](https://github.com/elizeuangelo/fvtt-module-z-scatter/)
 - [UTILITY][Beaver's Crafting System](https://github.com/AngryBeaver/beavers-crafting)
+- [SOUNDS][Monk's Sound Enhancements](https://github.com/ironmonk88/monks-sound-enhancements)
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
@@ -116,35 +117,29 @@
 
 ## [SYSTEM] MODULES  D&D5e
 
-- [UTILITY][Token Light Condition](https://github.com/Frstrm/TokenLightCondition)
-- [UTILITY][Stealthy](https://github.com/Eligarf/stealthy)
 - [COMPENDIUM][Kris's Compendium of Trade Goods](https://github.com/kristkos/kctg-common)
 - [COMPENDIUM][Revised Weapons & Equipment for 5e](https://github.com/M0nk3yy/RWE)
 - [COMPENDIUM][Chris's Premades](https://github.com/chrisk123999/chris-premades)
-- [COMPENDIUM][More Automated Spells Items and Feats](https://github.com/jbowensii/More-Automated-Spells-Items-and-Feats)
-
-- [UTILITY][Custom Character Sheet Sections (CCSS)](https://github.com/jessev14/custom-character-sheet-sections)
-- [ENTITY][Item Collection](https://gitlab.com/tposney/itemcollection )
-- [UTILITY][Items with Spells DnD5e](https://github.com/ElfFriend-DnD/foundryvtt-items-with-spells-5e)
-- [CHARACTER SHEET][Tidy Sheet 5e](https://github.com/sdenec/tidy5e-sheet )
+- [COMPENDIUM][Boss Loot Interactive Magic Items, Free Pack](https://github.com/boss-loot/Boss-Loot-Interactive-Magic-Items)
 
 - [COMBAT][Midi Qol](https://gitlab.com/tposney/midi-qol )
 - [COMBAT][Wild Magic Surge 5e](https://github.com/johnnolan/wild-magic-surge-5e)
-- [UTILITY][Build-a-Bonus](https://github.com/krbz999/babonus)
-
-- [CHARACTER SHEET/UTILITY][Variant Encumbrance 5e](https://github.com/VanirDev/VariantEncumbrance )
-- [COMBAT][Arbron’s Summoning](https://github.com/arbron/fvtt-summoner)
-- [CHARACTER SHEET][Custom Abilities & Skills](https://github.com/misthero/dnd5e-custom-skills)
-
-- [JOURNALS][UTILITY][Monk's Shops](https://github.com/ironmonk88/monks-shops)
-
 - [COMBAT][Effective Transferral](https://github.com/GamerFlix/effective-transferral)
 
-- [UTILITY][Nickle's Shop Generator](https://github.com/NickClearyTech/FoundryShopGenerator)
-
+- [ENTITY][Item Collection](https://gitlab.com/tposney/itemcollection )
+- [UTILITY][Items with Spells DnD5e](https://github.com/ElfFriend-DnD/foundryvtt-items-with-spells-5e)
+- [UTILITY][Token Light Condition](https://github.com/Frstrm/TokenLightCondition)
+- [UTILITY][Stealthy](https://github.com/Eligarf/stealthy)
+- [UTILITY][Build-a-Bonus](https://github.com/krbz999/babonus)
+- [CHARACTER SHEET/UTILITY][Variant Encumbrance 5e](https://github.com/VanirDev/VariantEncumbrance )
+- [UTILITY][Arbron’s Summoning](https://github.com/arbron/fvtt-summoner)
+- [JOURNALS/UTILITY][Monk's Shops](https://github.com/ironmonk88/monks-shops)
 - [ANIMATIONS][D&D5e Animations](https://github.com/MrVauxs/dnd5e-animations)
-
 - [Weather Reports](https://github.com/paulcheeba/weather-reports)
+- [UTILITY][Automated Objects, Interactions and Effects](https://github.com/ZotyDev/objects-interactions-fx)
+- [UTILITY][Simbul's Cover Calculator](https://github.com/vtt-lair/simbuls-cover-calculator)
+- [UTILITY][Simbul's Creature Aide](https://github.com/vtt-lair/simbuls-creature-aide)
+- [UTILITY][Simbul's Cover Calculator]()
 
 ## [SYSTEM] PATHFINDER 2 MODULES
 

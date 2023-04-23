@@ -4,6 +4,11 @@
 
 # 2023-04-01
 
+- [UTILITY][Nickle's Shop Generator](https://github.com/NickClearyTech/FoundryShopGenerator)
+- [CHARACTER SHEET][Custom Abilities & Skills](https://github.com/misthero/dnd5e-custom-skills)
+- [CHARACTER SHEET][Tidy Sheet 5e](https://github.com/sdenec/tidy5e-sheet )
+- [NOT REALLY NECESSARY][UTILITY][Custom Character Sheet Sections (CCSS)](https://github.com/jessev14/custom-character-sheet-sections)
+
 - [NOT REALLY NECESSARY][CHAT][Chat Portrait](https://github.com/p4535992/foundryvtt-chat-portrait)
 - [Gaming Table Player](https://github.com/skepickle/foundryvtt-gaming-table-player)
 - [Button Feel](https://github.com/LebombJames/button-feel)
