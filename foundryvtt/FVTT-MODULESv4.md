@@ -36,7 +36,7 @@
 - [UTILITY][Monk's Little Details](https://github.com/ironmonk88/monks-little-details)
 
 - [UTILITY][JB2A Sequencer Macro Library](https://github.com/IrateRedKite/jb2a-sequencer-spell-macros)
-- [UTILITY][Ignore Vision](https://github.com/p4535992/foundryvtt-ignore-vision)
+- [UTILITY][Ignore Vision Variant](https://github.com/p4535992/foundryvtt-ignore-vision-variant)
 
 - [UTILITY][Roger's Additional Metric Ruler Labels](https://github.com/Roger92/metric-ruler-labels)
 - [UTILITY][Quick Insert](https://gitlab.com/fvtt-modules-lab/quick-insert )
@@ -77,6 +77,10 @@
 - [Z Scatter](https://github.com/elizeuangelo/fvtt-module-z-scatter/)
 - [UTILITY][Beaver's Crafting System](https://github.com/AngryBeaver/beavers-crafting)
 - [SOUNDS][Monk's Sound Enhancements](https://github.com/ironmonk88/monks-sound-enhancements)
+
+- [UTILITY][Anonymous](https://github.com/reonZ/anonymous)
+- [UTILITY][Hide GM Rolls](https://github.com/sPOiDar/fvtt-module-hide-gm-rolls)
+- [UTILITY][Hey, Wait!](https://github.com/Couls/hey-wait)
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
@@ -139,7 +143,7 @@
 - [UTILITY][Automated Objects, Interactions and Effects](https://github.com/ZotyDev/objects-interactions-fx)
 - [UTILITY][Simbul's Cover Calculator](https://github.com/vtt-lair/simbuls-cover-calculator)
 - [UTILITY][Simbul's Creature Aide](https://github.com/vtt-lair/simbuls-creature-aide)
-- [UTILITY][Simbul's Cover Calculator]()
+- [UTILITY][Maxwell's Manual of Malicious Maladies](https://github.com/theripper93/Maxwell-s-Manual-of-Malicious-Maladies)
 
 ## [SYSTEM] PATHFINDER 2 MODULES
 
