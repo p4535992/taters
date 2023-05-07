@@ -2,6 +2,12 @@
 # NOT ESSENTIAL 
 # ======================================================================
 
+# 2023-05-01
+
+- [COMBAT][Combat Hp Display](https://github.com/WBHarry/combat-hp-display)
+- [IS BETTER MONK MODULE][COMBAT][Koboldworks – Turn Announcer](https://gitlab.com/koboldworks/agnostic/turn-announcer)
+- [UTILITY\AUDIO][Ensemble - drag and drop your sound files](https://github.com/janckoch/Ensemble)
+
 # 2023-04-01
 
 - [UTILITY][Nickle's Shop Generator](https://github.com/NickClearyTech/FoundryShopGenerator)

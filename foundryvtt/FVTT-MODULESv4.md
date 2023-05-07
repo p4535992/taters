@@ -81,6 +81,7 @@
 - [UTILITY][Anonymous](https://github.com/reonZ/anonymous)
 - [UTILITY][Hide GM Rolls](https://github.com/sPOiDar/fvtt-module-hide-gm-rolls)
 - [UTILITY][Hey, Wait!](https://github.com/Couls/hey-wait)
+- [UTILITY][Card Tiles](https://github.com/alessiocali/card-tiles)
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
@@ -91,12 +92,11 @@
 - [COMBAT][Smart Target](https://github.com/theripper93/Smart-Target)
 - [COMBAT][Tagger](https://github.com/fantasycalendar/FoundryVTT-Tagger)
 - [COMBAT][Token Auras](https://bitbucket.org/Fyorl/token-auras )
-- [COMBAT][Combat Hp Display](https://github.com/WBHarry/combat-hp-display)
 - [COMBAT][Flying Tokens](https://github.com/LeafWulf/flying-tokens)
+- [COMBAT][Token Elevator](https://gitlab.com/Weissrolf/token-elevator)
 - [COMBAT][Tactical Grid](https://github.com/Aedif/tactical-grid)
 - [COMBAT][Monk's Combat Details](https://github.com/ironmonk88/monks-combat-details)
 - [COMBAT][Monk's Combat Marker](https://github.com/ironmonk88/monks-combat-marker)
-- [COMBAT][Koboldworks – Turn Announcer](https://gitlab.com/koboldworks/agnostic/turn-announcer)
 
   OPTIONAL
 
@@ -162,10 +162,11 @@
 
 - [Kingmaker Tools (Unofficial)](https://github.com/BernhardPosselt/pf2e-kingmaker-tools)
 - [Kingmaker Map Remake (Unofficial)](https://github.com/BernhardPosselt/pf2e-kingmaker-map-remake)
+- [Pf2E Modifiers Matter](https://foundryvtt.com/packages/pf2e-modifiers-matter)
 
   NOT ESSENTIAL
 
-- [UTILITY][Pf2E Modifiers Matter](https://gitlab.com/yendors-vtt/yendors-scene-actors/)
+- [Yendors Scene Actors](https://gitlab.com/yendors-vtt/yendors-scene-actors/)
 - [PF2e Dorako UI](https://github.com/Dorako/pf2e-Dorako-UI)
 - [[PF2E] Heroic Crafting - Automation](https://github.com/Cerapter/pf2e-heroic-crafting-automation)
 - [PF2e Alignment Damage and Other Immunities](https://github.com/Fin-bar/PF2e-Alignment-Damage)
@@ -174,7 +175,6 @@
 - [fvtt-pf2e-incapacitation-variants](https://github.com/tyrielv/fvtt-pf2e-incapacitation-variants)
 - [pF2e See Simple Scale Statistics](https://github.com/shemetz/pf2e-see-simple-scale-statistics)
 - [FVTT PF2e Ranged Combat](https://github.com/JDCalvert/FVTT-PF2e-Ranged-Combat)
-- [Pf2E Modifiers Matter](https://foundryvtt.com/packages/pf2e-modifiers-matter)
 
 ## [SYSTEM] MODULES Call of Cthulhu 7th edition (Unofficial)
 
@@ -215,14 +215,9 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 
 ## MODULES FOR MANAGE AUDIO
 
-- [AUDIO][Sound Board by Blitz](https://github.com/BlitzKraig/fvtt-SoundBoard )
-- [AUDIO][SoundBoard Pack - Blitz Free Pack](https://github.com/BlitzKraig/fvtt-SoundBoard-BlitzFreePack )
-- [AUDIO][SoundBoard Pack - Blitz Community Pack](https://github.com/BlitzKraig/fvtt-SoundBoard-BlitzCommunityPack )
-
-- [AUDIO][Bellows](https://github.com/zstix/Bellows)
-- [AUDIO][Background Volume](https://github.com/mtvjr/background-volume)
+- [AUDIO][Bellows2](https://github.com/RHeynsZa/Bellows2)
 - [AUDIO][Playlist Import](https://github.com/JacobMcAuley/playlist_import )
-- [UTILITY\AUDIO][Ensemble - drag and drop your sound files](https://github.com/janckoch/Ensemble)
+
 
 ## MODULES MOBILE SUPPORT
 

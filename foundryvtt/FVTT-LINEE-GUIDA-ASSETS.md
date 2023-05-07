@@ -7,11 +7,11 @@
 
 ### Documento di preparazione a FoundryVTT per GM e Player
 
-[LINK PDF](./wiki/docs/Preparazione_a_foundryvtt.2021-09-11.pdf)
+[LINK PDF](https://github.com/p4535992/taters/blob/master/docs/FoundryVTTDoc/Preparazione_Campagna.2022-11-14.pdf)
 
 ### Documento per la gestione del background customizzato (di solito per giocatori esperti che vogliono arricchire il proprio personaggio)
 
-[LINK PDF](./wiki/docs/Backstory_e_dettagli_del_personaggio.2020-09-11.pdf)
+[LINK PDF](https://github.com/p4535992/taters/blob/master/docs/FoundryVTTDoc/Backstory_e_dettagli_del_personaggio.2022-10-27.docx)
 
 ### I moduli testati e consigliati per FoundryVTT (per adesso secondo 4535992 poi dovremo decidere insieme)
 
