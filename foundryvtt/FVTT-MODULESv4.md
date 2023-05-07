@@ -72,16 +72,16 @@
 - [UI][JV's Minimal UI for FoundryVTT](https://github.com/saif-ellafi/foundryvtt-minimal-ui)
 - [UI][JV's Window Controls for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-window-controls)
 - [UTILITY][Stealthy](https://github.com/Eligarf/stealthy)
-- [UTILITY][Scenery - Background Image Variation Manager](https://github.com/marcstraube/foundryvtt-scenery)
 - [covered-token-rescue-hud](https://github.com/xaukael/covered-token-rescue-hud)
 - [Z Scatter](https://github.com/elizeuangelo/fvtt-module-z-scatter/)
-- [UTILITY][Beaver's Crafting System](https://github.com/AngryBeaver/beavers-crafting)
 - [SOUNDS][Monk's Sound Enhancements](https://github.com/ironmonk88/monks-sound-enhancements)
 
 - [UTILITY][Anonymous](https://github.com/reonZ/anonymous)
 - [UTILITY][Hide GM Rolls](https://github.com/sPOiDar/fvtt-module-hide-gm-rolls)
 - [UTILITY][Hey, Wait!](https://github.com/Couls/hey-wait)
 - [UTILITY][Card Tiles](https://github.com/alessiocali/card-tiles)
+- [UTILITY][Alternative Token Visibility](https://github.com/caewok/fvtt-token-visibility)
+- [UTILITY][Chat Cleaner](https://github.com/elizeuangelo/fvtt-module-chat-cleaner)
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
@@ -97,6 +97,7 @@
 - [COMBAT][Tactical Grid](https://github.com/Aedif/tactical-grid)
 - [COMBAT][Monk's Combat Details](https://github.com/ironmonk88/monks-combat-details)
 - [COMBAT][Monk's Combat Marker](https://github.com/ironmonk88/monks-combat-marker)
+- [COMBAT][Manage Player Targets](https://github.com/dev7355608/manage-player-targets)
 
   OPTIONAL
 

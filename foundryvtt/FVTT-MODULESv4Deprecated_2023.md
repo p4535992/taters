@@ -4,6 +4,9 @@
 
 # 2023-05-01
 
+- [NEVER USED][UTILITY][Scenery - Background Image Variation Manager](https://github.com/marcstraube/foundryvtt-scenery)
+- [NEVER USED][UTILITY][Beaver's Crafting System](https://github.com/AngryBeaver/beavers-crafting)
+- [NOT ESSENTIAL][Better Entity Link](https://github.com/MiahNelah/better-entity-link)
 - [COMBAT][Combat Hp Display](https://github.com/WBHarry/combat-hp-display)
 - [IS BETTER MONK MODULE][COMBAT][Koboldworks – Turn Announcer](https://gitlab.com/koboldworks/agnostic/turn-announcer)
 - [UTILITY\AUDIO][Ensemble - drag and drop your sound files](https://github.com/janckoch/Ensemble)
