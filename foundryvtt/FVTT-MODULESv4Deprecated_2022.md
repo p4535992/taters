@@ -131,7 +131,6 @@
 - [NOT ESSENTIAL][UTILITY][Less Fog](https://github.com/trdischat/lessfog )
 - [NOT ESSENTIAL][UTILITY/ROLLTABLE][Hidden Tables](https://github.com/kandashi/hidden-tables)
 - [NOT ESSENTIAL][COMBAT][Resource Icons](https://github.com/jessev14/resource-icons)
-- [NOT ESSENTIAL][COMBAT/CHAT][Hide GM Rolls](https://github.com/sPOiDar/fvtt-module-hide-gm-rolls)
 - [NOT ESSENTIAL][COMBAT][Hurry Up! Combat Timer](https://github.com/theripper93/hurry-up)
 
 ## 2021-11
@@ -144,7 +143,6 @@
 - [NOT ESSENTIAL][UTILITY][Burger Time](https://github.com/scottburton11/burger-time)
 - [NOT ESSENTIAL][TOKEN][Quick Scale](https://github.com/unsoluble/quickscale) -
 - [BETTER PLUTONIUM][ENTITY][Compendiumn Browser](https://github.com/syl3r86/compendium-browser ) - https://raw.githubusercontent.com/syl3r86/compendium-browser/master/module.json
-- [NOT ESSENTIAL][COMBAT][Combat Enhancements](https://gitlab.com/asacolips-projects/foundry-mods/combat-enhancements/ )
 - [BETTER DFRED CONVENIENT EFFECTS][COMBAT][Active Effects to Chat](https://github.com/BadIdeasBureau/ae-to-chat )
 - [NOT ESSENTIAL][WALL/COMBAT][Template Wall Collision](https://github.com/EndlesNights/template-wall-collision) - https://raw.githubusercontent.com/EndlesNights/template-wall-collision/master/module.json
 - [BETTER https://github.com/ironmonk88/monks-wall-enhancement][WALL][Merge Wall](https://gitlab.com/tposney/mergewalls ) - https://gitlab.com/tposney/mergewalls/raw/master/module080.json

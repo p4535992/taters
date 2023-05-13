@@ -82,6 +82,7 @@
 - [UTILITY][Card Tiles](https://github.com/alessiocali/card-tiles)
 - [UTILITY][Alternative Token Visibility](https://github.com/caewok/fvtt-token-visibility)
 - [UTILITY][Chat Cleaner](https://github.com/elizeuangelo/fvtt-module-chat-cleaner)
+- [UTILITY][Inline Text from Linked Document](https://github.com/farling42/fvtt-inline-linktext)
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
@@ -98,6 +99,7 @@
 - [COMBAT][Monk's Combat Details](https://github.com/ironmonk88/monks-combat-details)
 - [COMBAT][Monk's Combat Marker](https://github.com/ironmonk88/monks-combat-marker)
 - [COMBAT][Manage Player Targets](https://github.com/dev7355608/manage-player-targets)
+- [COMBAT][Combat Enhancements](https://gitlab.com/asacolips-projects/foundry-mods/combat-enhancements/ )
 
   OPTIONAL
 
@@ -146,6 +148,11 @@
 - [UTILITY][Simbul's Creature Aide](https://github.com/vtt-lair/simbuls-creature-aide)
 - [UTILITY][Maxwell's Manual of Malicious Maladies](https://github.com/theripper93/Maxwell-s-Manual-of-Malicious-Maladies)
 
+  NOT ESSENTIAL
+
+- [Token Action HUD Core](https://github.com/Larkinabout/fvtt-token-action-hud-core)
+- [Token Action HUD D&D 5e](https://github.com/Larkinabout/fvtt-token-action-hud-dnd5e)
+
 ## [SYSTEM] PATHFINDER 2 MODULES
 
 - [pf2e-magaambya](https://github.com/MrVauxs/pf2e-magaambya)
@@ -164,6 +171,10 @@
 - [Kingmaker Tools (Unofficial)](https://github.com/BernhardPosselt/pf2e-kingmaker-tools)
 - [Kingmaker Map Remake (Unofficial)](https://github.com/BernhardPosselt/pf2e-kingmaker-map-remake)
 - [Pf2E Modifiers Matter](https://foundryvtt.com/packages/pf2e-modifiers-matter)
+- [FVTT PF2e Ranged Combat](https://github.com/JDCalvert/FVTT-PF2e-Ranged-Combat)
+
+- [Token Action HUD Core](https://github.com/Larkinabout/fvtt-token-action-hud-core)
+- [Token Action HUD Pathfinder 2](https://github.com/Larkinabout/fvtt-token-action-hud-pf2e/)
 
   NOT ESSENTIAL
 
@@ -175,7 +186,7 @@
 - [PF2e - Darth & Drow's Brewery](https://github.com/yoshisman8/pf2e_darth_and_drow)
 - [fvtt-pf2e-incapacitation-variants](https://github.com/tyrielv/fvtt-pf2e-incapacitation-variants)
 - [pF2e See Simple Scale Statistics](https://github.com/shemetz/pf2e-see-simple-scale-statistics)
-- [FVTT PF2e Ranged Combat](https://github.com/JDCalvert/FVTT-PF2e-Ranged-Combat)
+
 
 ## [SYSTEM] MODULES Call of Cthulhu 7th edition (Unofficial)
 
