@@ -22,7 +22,6 @@
 - [UTILITY][Automated Evocations Variant](https://github.com/p4535992/automated-evocations-variant)
 
 - [UTILITY][Automated Animations](https://github.com/otigon/automated-jb2a-animations )
-- [CHAT][Chat Images](https://github.com/bmarian/chat-images )
 - [CHAT][Chat Portrait](https://github.com/ShoyuVanilla/FoundryVTT-Chat-Portrait/ )
 
 - [TOKEN][TOKEN Z](https://github.com/theripper93/token-z)
@@ -62,27 +61,21 @@
 - [UTILITY][Tile Scroll](https://github.com/theripper93/tile-scroll)
 - [UTILITY][Tile Sort](https://github.com/theripper93/tile-sort)
 
-
 - [UTILITY][Module Management+](https://github.com/mouse0270/module-credits)
-
-- [UTILITY][Introduce Me](https://github.com/WBHarry/introduce-me)
 - [UTILITY][Comprehend Languages](https://github.com/Meneltamar/fvtt-comprehend-languages)
-- [UTILITY][Weather FX](https://github.com/LeafWulf/weatherfx)
 
 - [UI][JV's Minimal UI for FoundryVTT](https://github.com/saif-ellafi/foundryvtt-minimal-ui)
 - [UI][JV's Window Controls for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-window-controls)
 - [UTILITY][Stealthy](https://github.com/Eligarf/stealthy)
-- [covered-token-rescue-hud](https://github.com/xaukael/covered-token-rescue-hud)
-- [Z Scatter](https://github.com/elizeuangelo/fvtt-module-z-scatter/)
 - [SOUNDS][Monk's Sound Enhancements](https://github.com/ironmonk88/monks-sound-enhancements)
 
 - [UTILITY][Anonymous](https://github.com/reonZ/anonymous)
 - [UTILITY][Hide GM Rolls](https://github.com/sPOiDar/fvtt-module-hide-gm-rolls)
 - [UTILITY][Hey, Wait!](https://github.com/Couls/hey-wait)
 - [UTILITY][Card Tiles](https://github.com/alessiocali/card-tiles)
-- [UTILITY][Alternative Token Visibility](https://github.com/caewok/fvtt-token-visibility)
 - [UTILITY][Chat Cleaner](https://github.com/elizeuangelo/fvtt-module-chat-cleaner)
 - [UTILITY][Inline Text from Linked Document](https://github.com/farling42/fvtt-inline-linktext)
+- [TOKEN][Invisible tokens can see too](https://github.com/soemer/invisible-tokens-can-see-too)
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
@@ -93,13 +86,14 @@
 - [COMBAT][Smart Target](https://github.com/theripper93/Smart-Target)
 - [COMBAT][Tagger](https://github.com/fantasycalendar/FoundryVTT-Tagger)
 - [COMBAT][Token Auras](https://bitbucket.org/Fyorl/token-auras )
-- [COMBAT][Flying Tokens](https://github.com/LeafWulf/flying-tokens)
-- [COMBAT][Token Elevator](https://gitlab.com/Weissrolf/token-elevator)
+
 - [COMBAT][Tactical Grid](https://github.com/Aedif/tactical-grid)
 - [COMBAT][Monk's Combat Details](https://github.com/ironmonk88/monks-combat-details)
 - [COMBAT][Monk's Combat Marker](https://github.com/ironmonk88/monks-combat-marker)
 - [COMBAT][Manage Player Targets](https://github.com/dev7355608/manage-player-targets)
 - [COMBAT][Combat Enhancements](https://gitlab.com/asacolips-projects/foundry-mods/combat-enhancements/ )
+
+- [COMBAT][Carousel Combat Tracker](https://github.com/theripper93/combat-tracker-dock)
 
   OPTIONAL
 
@@ -131,12 +125,10 @@
 
 - [COMBAT][Midi Qol](https://gitlab.com/tposney/midi-qol )
 - [COMBAT][Wild Magic Surge 5e](https://github.com/johnnolan/wild-magic-surge-5e)
-- [COMBAT][Effective Transferral](https://github.com/GamerFlix/effective-transferral)
 
 - [ENTITY][Item Collection](https://gitlab.com/tposney/itemcollection )
 - [UTILITY][Items with Spells DnD5e](https://github.com/ElfFriend-DnD/foundryvtt-items-with-spells-5e)
 - [UTILITY][Token Light Condition](https://github.com/Frstrm/TokenLightCondition)
-- [UTILITY][Stealthy](https://github.com/Eligarf/stealthy)
 - [UTILITY][Build-a-Bonus](https://github.com/krbz999/babonus)
 - [CHARACTER SHEET/UTILITY][Variant Encumbrance 5e](https://github.com/VanirDev/VariantEncumbrance )
 - [UTILITY][Arbron’s Summoning](https://github.com/arbron/fvtt-summoner)
@@ -147,8 +139,6 @@
 - [UTILITY][Simbul's Cover Calculator](https://github.com/vtt-lair/simbuls-cover-calculator)
 - [UTILITY][Simbul's Creature Aide](https://github.com/vtt-lair/simbuls-creature-aide)
 - [UTILITY][Maxwell's Manual of Malicious Maladies](https://github.com/theripper93/Maxwell-s-Manual-of-Malicious-Maladies)
-
-  NOT ESSENTIAL
 
 - [Token Action HUD Core](https://github.com/Larkinabout/fvtt-token-action-hud-core)
 - [Token Action HUD D&D 5e](https://github.com/Larkinabout/fvtt-token-action-hud-dnd5e)
@@ -235,7 +225,7 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 
 - [STYLE][Mobile Improvements](https://gitlab.com/fvtt-modules-lab/mobile-improvements)
 - [UTILITY][TouchVTT](https://github.com/Oromis/touch-vtt)
-- [Utility][Zoom/Pan Options](https://github.com/itamarcu/ZoomPanOptions)
+- [Utility][Hot Pan & Zoom! for Foundry VTT](https://github.com/coffiarts/FoundryVTT-hot-pan)
 
 ## MODULES ADVENTURES
 

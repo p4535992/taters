@@ -2,6 +2,19 @@
 # NOT ESSENTIAL 
 # ======================================================================
 
+# 2023-06-01 
+
+- [UTILITY][Alternative Token Visibility](https://github.com/caewok/fvtt-token-visibility)
+- [COMBAT][Effective Transferral](https://github.com/GamerFlix/effective-transferral)
+- [COMBAT][Flying Tokens](https://github.com/LeafWulf/flying-tokens)
+- [COMBAT][Token Elevator](https://gitlab.com/Weissrolf/token-elevator)
+- [UTILITY][Introduce Me](https://github.com/WBHarry/introduce-me)
+- [UTILITY][Weather FX](https://github.com/LeafWulf/weatherfx)
+- [CHAT][Chat Images](https://github.com/bmarian/chat-images )
+- [covered-token-rescue-hud](https://github.com/xaukael/covered-token-rescue-hud)
+- [Z Scatter](https://github.com/elizeuangelo/fvtt-module-z-scatter/)
+- [REPLACE WITH https://github.com/coffiarts/FoundryVTT-hot-pan][Utility][Zoom/Pan Options](https://github.com/itamarcu/ZoomPanOptions)
+
 # 2023-05-01
 
 - [NEVER USED][UTILITY][Scenery - Background Image Variation Manager](https://github.com/marcstraube/foundryvtt-scenery)
