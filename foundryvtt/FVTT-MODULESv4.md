@@ -49,7 +49,7 @@
 
 - [UTILITY\TOKEN][Token Attacher](https://github.com/KayelGee/token-attacher )
 - [UTILITY][Item Delete Check](https://gitlab.com/tposney/item-delete-check/tree/master )
-- [COMBAT][Perfect Vision](https://github.com/dev7355608/perfect-vision )
+
 - [UTILITY][Forien Copy](https://github.com/League-of-Foundry-Developers/foundryvtt-forien-copy-environment )
 - [UTILITY][Koboldworks – Pause Control](https://gitlab.com/koboldworks/agnostic/pause-control)
 - [WALL][Wall Height](https://github.com/schultzcole/FVTT-Wall-Height )
@@ -76,12 +76,13 @@
 - [UTILITY][Chat Cleaner](https://github.com/elizeuangelo/fvtt-module-chat-cleaner)
 - [UTILITY][Inline Text from Linked Document](https://github.com/farling42/fvtt-inline-linktext)
 - [TOKEN][Invisible tokens can see too](https://github.com/soemer/invisible-tokens-can-see-too)
+- [UTILITY][Foundry Summons](https://github.com/MrVauxs/foundry-summons)
+- [UTILITY][Conversation HUD](https://github.com/CristianVasile23/conversation-hud)
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
 - [COMBAT][Visualize Active Effect](https://github.com/krbz999/visual-active-effects)
 - [COMBAT/ROLL][Let me roll that for you](https://github.com/League-of-Foundry-Developers/fvtt-module-lmrtfy )
-- [COMBAT][Arbron's Improved HP Bar](https://github.com/arbron/fvtt-hp-bar)
 - [COMBAT][Illandril's Token HUD Scaler](https://github.com/illandril/FoundryVTT-token-hud-scale)
 - [COMBAT][Smart Target](https://github.com/theripper93/Smart-Target)
 - [COMBAT][Tagger](https://github.com/fantasycalendar/FoundryVTT-Tagger)
@@ -94,7 +95,8 @@
 - [COMBAT][Combat Enhancements](https://gitlab.com/asacolips-projects/foundry-mods/combat-enhancements/ )
 
 - [COMBAT][Carousel Combat Tracker](https://github.com/theripper93/combat-tracker-dock)
-
+- [COMBAT][Condition Lab & Triggler](https://github.com/mclemente/fvtt-condition-lab-triggler)
+  
   OPTIONAL
 
 - [COMBAT][Danger-Zone](https://github.com/napolitanod/Danger-Zone)
@@ -139,6 +141,8 @@
 - [UTILITY][Simbul's Cover Calculator](https://github.com/vtt-lair/simbuls-cover-calculator)
 - [UTILITY][Simbul's Creature Aide](https://github.com/vtt-lair/simbuls-creature-aide)
 - [UTILITY][Maxwell's Manual of Malicious Maladies](https://github.com/theripper93/Maxwell-s-Manual-of-Malicious-Maladies)
+- [UTILITY][Vision/Detection Modes for D&D 5e](https://github.com/dev7355608/vision-5e)
+- [UTILITY][Advanced Magic - Spell Points System 5e](https://github.com/misthero/dnd5e-spellpoints)
 
 - [Token Action HUD Core](https://github.com/Larkinabout/fvtt-token-action-hud-core)
 - [Token Action HUD D&D 5e](https://github.com/Larkinabout/fvtt-token-action-hud-dnd5e)
@@ -286,30 +290,6 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 - [DEPRECATED][SYSTEM][DEPRECATED][Discord Bridge](https://github.com/nearlyNonexistent/foundry-discordbridge ) - https://raw.githubusercontent.com/nearlyNonexistent/foundry-discordbridge/master/module.json
 - [DEPRECATED][SYSTEM][Discord Rich Presence](https://github.com/cswendrowski/FoundryVTT-Discord-Rich-Presence ) - https://raw.githubusercontent.com/cswendrowski/FoundryVTT-Discord-Rich-Presence/master/module.json
 - [Discord Overlay](https://github.com/flamewave000/discord-overlay)
-
-## DEVELOPING
-
-- [DEV][FoundryGet](https://github.com/cswendrowski/foundryget ) - https://raw.githubusercontent.com/cswendrowski/foundryget/master/module.json
-- [DEV][lib-find-the-path](https://github.com/dwonderley/lib-find-the-path/ )
-- [DEV][Find the culprit](https://github.com/Moerill/fvtt-find-the-culprit ) - https://raw.githubusercontent.com/Moerill/fvtt-find-the-culprit/master/module.json
-- [DEV]Develop Module - https://gitlab.com/asacolips-projects/foundry-mods/foundryvtt-system-tutorial/-/tree/master
-- [DEV]Create Foundry Project -  https://gitlab.com/foundry-projects/foundry-pc/create-foundry-project
-- [DEV]Game Settings - https://github.com/sdenec/fvtt-uii_game-settings
-- [DEV]2d image  animated  - https://polycount.com/discussion/186360/animated-2d-portraits-gif-heavy
-- [DEV]Ping Times - https://gitlab.com/tenuki.igo/foundryvtt-ping-times
-- [DEV]Support library - https://gitlab.com/foundry-projects/foundry-pc/foundry-pc-types
-- [DEV]Developing a server - https://theelous3.net/how_to_set_up_foundryvtt_server 
-
-## DISCORD LINK TO EXTERNAL DOCUMENTATION
-
-- [DEV]https://discordapp.com/channels/170995199584108546/699750150674972743/713429213536976988
-- [DEV]https://www.reddit.com/r/FoundryVTT/comments/fvw3c7/how_to_create_a_tiny_module_for_shared_content/
-- [DEV]https://github.com/foundry-vtt-community/macros/blob/9ee96f173990ecd03cfd924f06d30d317ba78d47/token/token_vision_config.js
-- [DEV]https://gist.github.com/janssen-io/50c1990ce7cf31da90fae7e7fb45cf53
-- [DEV][Chartopia Extractor](https://github.com/foundry-vtt-community/tables/pull/5/files )
-- [DEV][Shared Data Module](https://www.reddit.com/r/FoundryVTT/comments/fvw3c7/how_to_create_a_tiny_module_for_shared_content/ )
-- [DEV][Paralixxia Modul](https://www.reddit.com/r/FoundryVTT/comments/hr0xaq/parallaxia_module_tutorial/fy3zhsv/ )
-- [DEV][Bryans-Preferred-Modules-for-FoundryVTT](https://github.com/bryancasler/Bryans-Preferred-Modules-for-FoundryVTT/edit/master/README.md )
 
 ## DEMO SERVER
 

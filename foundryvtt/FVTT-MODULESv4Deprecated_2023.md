@@ -4,6 +4,8 @@
 
 # 2023-06-01 
 
+- [COMBAT][Perfect Vision](https://github.com/dev7355608/perfect-vision )
+
 - [UTILITY][Alternative Token Visibility](https://github.com/caewok/fvtt-token-visibility)
 - [COMBAT][Effective Transferral](https://github.com/GamerFlix/effective-transferral)
 - [COMBAT][Flying Tokens](https://github.com/LeafWulf/flying-tokens)
@@ -14,6 +16,7 @@
 - [covered-token-rescue-hud](https://github.com/xaukael/covered-token-rescue-hud)
 - [Z Scatter](https://github.com/elizeuangelo/fvtt-module-z-scatter/)
 - [REPLACE WITH https://github.com/coffiarts/FoundryVTT-hot-pan][Utility][Zoom/Pan Options](https://github.com/itamarcu/ZoomPanOptions)
+- [NOT NECESSARY][COMBAT][Arbron's Improved HP Bar](https://github.com/arbron/fvtt-hp-bar)
 
 # 2023-05-01
 
