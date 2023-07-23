@@ -9,15 +9,15 @@
 - [TABLE][Community Tables](https://github.com/foundry-vtt-community/tables )
 - [EXTERNAL][Theatre](https://github.com/League-of-Foundry-Developers/fvtt-module-theatre )
 
+- [MACRO][Advanced Macros](https://github.com/mclemente/fvtt-advanced-macros)
 - [ENTITY][Item Macro](https://github.com/Kekilla0/Item-Macro )
 - [ROLL][Dice Calculator/Dice Tray](https://gitlab.com/asacolips-projects/foundry-mods/foundry-vtt-dice-calculator/ )
 - [TOKEN][Drag Ruler](https://github.com/manuelVo/foundryvtt-drag-ruler )
 - [UTILITY][Simple Calendar](https://github.com/vigoren/foundryvtt-simple-calendar )
 - [MAP][Armsreach](https://github.com/p4535992/foundryvtt-arms-reach )
 
-
-- [UTILITY LOOT][DFreds Pocket Change](https://github.com/DFreds/dfreds-pocket-change )
 - [TOKEN][Active Token Effect](https://github.com/kandashi/Active-Token-Lighting )
+- [DOOR][Lock & Key](https://github.com/Saibot393/LocknKey)
 
 - [UTILITY][Automated Evocations Variant](https://github.com/p4535992/automated-evocations-variant)
 
@@ -33,6 +33,7 @@
 - [UTILITY][Monks TokenBar](https://github.com/ironmonk88/monks-tokenbar)
 - [WALL][Monks Wall Enchancement](https://github.com/ironmonk88/monks-wall-enhancement)
 - [UTILITY][Monk's Little Details](https://github.com/ironmonk88/monks-little-details)
+- [SOUNDS][Monk's Sound Enhancements](https://github.com/ironmonk88/monks-sound-enhancements)
 
 - [UTILITY][JB2A Sequencer Macro Library](https://github.com/IrateRedKite/jb2a-sequencer-spell-macros)
 - [UTILITY][Ignore Vision Variant](https://github.com/p4535992/foundryvtt-ignore-vision-variant)
@@ -66,8 +67,10 @@
 
 - [UI][JV's Minimal UI for FoundryVTT](https://github.com/saif-ellafi/foundryvtt-minimal-ui)
 - [UI][JV's Window Controls for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-window-controls)
+- [UTILITY][Drag Anything To Hotbar for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-drag-all-to-hotbar)
+
 - [UTILITY][Stealthy](https://github.com/Eligarf/stealthy)
-- [SOUNDS][Monk's Sound Enhancements](https://github.com/ironmonk88/monks-sound-enhancements)
+- 
 
 - [UTILITY][Anonymous](https://github.com/reonZ/anonymous)
 - [UTILITY][Hide GM Rolls](https://github.com/sPOiDar/fvtt-module-hide-gm-rolls)
@@ -78,6 +81,7 @@
 - [TOKEN][Invisible tokens can see too](https://github.com/soemer/invisible-tokens-can-see-too)
 - [UTILITY][Foundry Summons](https://github.com/MrVauxs/foundry-summons)
 - [UTILITY][Conversation HUD](https://github.com/CristianVasile23/conversation-hud)
+- [UTILITY][Intelligent NPCs](https://github.com/cswendrowski/FoundryVTT-Intelligent-NPCs/releases/latest/download/module.json)
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
@@ -112,13 +116,14 @@
 # MODULES DA VERIFICARE SE NECESSARI
 
 
-- [SCRIPT][World-Scripter](https://github.com/Kekilla0/World-Scripter)
+
 - [SCENE][World Explorer](https://github.com/CarlosFdez/world-explorer)
 - [SCENE][Unofficial Azgaar's Fantasy Map Generator Import](https://github.com/Ethck/azgaar-foundry)
-- [NEED UPDATE][WALL][Smart Door](https://github.com/manuelVo/foundryvtt-smart-doors )
 
 
+## =======================
 ## [SYSTEM] MODULES  D&D5e
+## =======================
 
 - [COMPENDIUM][Kris's Compendium of Trade Goods](https://github.com/kristkos/kctg-common)
 - [COMPENDIUM][Revised Weapons & Equipment for 5e](https://github.com/M0nk3yy/RWE)
@@ -130,7 +135,7 @@
 
 - [ENTITY][Item Collection](https://gitlab.com/tposney/itemcollection )
 - [UTILITY][Items with Spells DnD5e](https://github.com/ElfFriend-DnD/foundryvtt-items-with-spells-5e)
-- [UTILITY][Token Light Condition](https://github.com/Frstrm/TokenLightCondition)
+- [TOKEN/CHAT][Group Rolls for D&D 5e](https://github.com/trdischat/grouproll)
 - [UTILITY][Build-a-Bonus](https://github.com/krbz999/babonus)
 - [CHARACTER SHEET/UTILITY][Variant Encumbrance 5e](https://github.com/VanirDev/VariantEncumbrance )
 - [UTILITY][Arbron’s Summoning](https://github.com/arbron/fvtt-summoner)
@@ -147,7 +152,11 @@
 - [Token Action HUD Core](https://github.com/Larkinabout/fvtt-token-action-hud-core)
 - [Token Action HUD D&D 5e](https://github.com/Larkinabout/fvtt-token-action-hud-dnd5e)
 
+- [JOURNAL/ITEM][Item-Linking](https://github.com/elizeuangelo/fvtt-module-item-linking)
+
+## =======================
 ## [SYSTEM] PATHFINDER 2 MODULES
+## =======================
 
 - [pf2e-magaambya](https://github.com/MrVauxs/pf2e-magaambya)
 - [PF2e Animations](https://github.com/MrVauxs/pf2e-jb2a-macros)
@@ -181,37 +190,49 @@
 - [fvtt-pf2e-incapacitation-variants](https://github.com/tyrielv/fvtt-pf2e-incapacitation-variants)
 - [pF2e See Simple Scale Statistics](https://github.com/shemetz/pf2e-see-simple-scale-statistics)
 
-
+## =======================
 ## [SYSTEM] MODULES Call of Cthulhu 7th edition (Unofficial)
+## =======================
 
+## =======================
 ## [SYSTEM] PATHFINDER 1 MODULES
+## =======================
 
 - https://github.com/Lo-create/foundry-pf1-content
 - [CHARACTER SHEET][Loot Sheet NPC Pathfinder1](https://github.com/SvenWerlen/fvtt-loot-sheet-npc-pf1 )
 
+## =======================
 ## [SYSTEM] MODULES SHADOW RUN 
+## =======================
 
 - [COMPENDIUM][Shadowrun 5e Compendiums](https://foundryvtt.com/packages/shadowrun5e/ )
 
+## =======================
 ## [SYSTEM] MODULES STAR WARS 
+## =======================
 
 - [SYSTEM][STAR WARS FFG](https://github.com/jaxxa/StarWarsFFG)
 - [UI][swffgUI-cc Module](https://github.com/prolice/swffgUI-cc )
 
+## =======================
 ## [SYSTEM] MODULES WARHAMMER
+## =======================
 
 - [COMPENDIUM][FoundryVTT - Forien's Armoury](https://github.com/Forien/foundryvtt-forien-armoury)
 - [MAP][WFRP4E - Fan-made Maps for Enemy in Shadows](https://gitlab.com/LeRatierBretonnien/wfrp4e-eis-maps)
 - [COMBAT][ENTITY](https://github.com/Foundry-Workshop/ammo-swapper )
 
+## =======================
 ## [SYSTEM] MODULES OTHER SYSTEMS
+## =======================
 
 - [SYSTEM] [Ratas en las paredes](https://foundryvtt.com/packages/ratasenlasparedes/ )
 - [SYSTEM] [kamigakarija](https://github.com/BrotherSharper/kamigakarija )
 - [SYSTEM] [13th Age MODULES](https://gitlab.com/asacolips-projects/foundry-mods/archmage )
 
-
+## =======================
 ## MODULES LANGUAGE ITA
+## =======================
 
 ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E POTREBBERO ESSERE CAUSA DI STUPIDI PROBLEMI LEGATI ALLA TRADUZIONE DELLE ETICHETTE
 
@@ -272,24 +293,6 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 
 # ======================================================================
 # ======================================================================
-# ======================================================================
-
-## OLD MACROS Projects
-
-- [OLD][MACRO][Commnunity Macros](https://github.com/foundry-vtt-community/macros )
-- [OLD][MACRO][Personal Macro by kekilla](https://github.com/Kekilla0/Personal-Macros )
-- [OLD][MACRO/COMBAT][VanceCole Macros](https://github.com/VanceCole/macros )
-- [OLD][MACRO][LootSwapping](https://github.com/unsoluble/fvtt-macros )
-- [OLD][MACRO][Foundry-Macros Otigon](https://github.com/otigon/Foundry-Macros )
-- [OLD][MACRO][DnD5e-WildShape-Macro](https://github.com/MisterHims/DnD5e-WildShape-Macro)
-
-## MODULES WebRTC/Discord
-
-- [DEPRECATED][WebRTC Tweaks](https://github.com/bekriebel/fvtt-module-webrtc_tweaks ) - https://raw.githubusercontent.com/bekriebel/fvtt-module-webrtc_tweaks/master/module.json
-- [DEPRECATED][SYSTEM][Discord](https://github.com/caoranach/DiscordConnect )
-- [DEPRECATED][SYSTEM][DEPRECATED][Discord Bridge](https://github.com/nearlyNonexistent/foundry-discordbridge ) - https://raw.githubusercontent.com/nearlyNonexistent/foundry-discordbridge/master/module.json
-- [DEPRECATED][SYSTEM][Discord Rich Presence](https://github.com/cswendrowski/FoundryVTT-Discord-Rich-Presence ) - https://raw.githubusercontent.com/cswendrowski/FoundryVTT-Discord-Rich-Presence/master/module.json
-- [Discord Overlay](https://github.com/flamewave000/discord-overlay)
 
 ## DEMO SERVER
 
