@@ -70,7 +70,7 @@
 - [UTILITY][Drag Anything To Hotbar for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-drag-all-to-hotbar)
 
 - [UTILITY][Stealthy](https://github.com/Eligarf/stealthy)
-- 
+- [MUSIC/UTILITY][Combat Music Master](https://github.com/elizeuangelo/fvtt-module-combat-music-master)
 
 - [UTILITY][Anonymous](https://github.com/reonZ/anonymous)
 - [UTILITY][Hide GM Rolls](https://github.com/sPOiDar/fvtt-module-hide-gm-rolls)
