@@ -82,6 +82,10 @@
 - [UTILITY][Foundry Summons](https://github.com/MrVauxs/foundry-summons)
 - [UTILITY][Conversation HUD](https://github.com/CristianVasile23/conversation-hud)
 - [UTILITY][Intelligent NPCs](https://github.com/cswendrowski/FoundryVTT-Intelligent-NPCs/releases/latest/download/module.json)
+- [MAP/UTILITY][Quick Grid Align](https://github.com/theripper93/quick-grid-align)
+
+- [Weather Reports](https://github.com/paulcheeba/weather-reports)
+- [Weather Color Settings](https://github.com/cirrahn/foundry-weather-color-settings)
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
@@ -107,19 +111,13 @@
 - [COMBAT][Boss Bar](https://github.com/theripper93/Boss-Bar)
 - [COMBAT][Monk's Bloodsplats](https://github.com/ironmonk88/monks-bloodsplats)
 
-## MODULES NECESSARI SOLO IN FASE DI COSTRUZIONE E NON DI SESSIONE
 
+### NOT ESSENTIAL
 
 - [LIGHT/SOUND][Light/Sound Mask](https://github.com/caewok/fvtt-light-mask)
 - [JOURNAL/NOTE][Automatic journal Icon Numbers](https://gitlab.com/tiwato/journal_icon_numbers )
-
-# MODULES DA VERIFICARE SE NECESSARI
-
-
-
 - [SCENE][World Explorer](https://github.com/CarlosFdez/world-explorer)
 - [SCENE][Unofficial Azgaar's Fantasy Map Generator Import](https://github.com/Ethck/azgaar-foundry)
-
 
 ## =======================
 ## [SYSTEM] MODULES  D&D5e
@@ -131,28 +129,31 @@
 - [COMPENDIUM][Boss Loot Interactive Magic Items, Free Pack](https://github.com/boss-loot/Boss-Loot-Interactive-Magic-Items)
 
 - [COMBAT][Midi Qol](https://gitlab.com/tposney/midi-qol )
+- [UTILITY][Dnd5e Scriptlet](https://github.com/tposney/dnd5e-scriptlets)
 - [COMBAT][Wild Magic Surge 5e](https://github.com/johnnolan/wild-magic-surge-5e)
 
 - [ENTITY][Item Collection](https://gitlab.com/tposney/itemcollection )
 - [UTILITY][Items with Spells DnD5e](https://github.com/ElfFriend-DnD/foundryvtt-items-with-spells-5e)
-- [TOKEN/CHAT][Group Rolls for D&D 5e](https://github.com/trdischat/grouproll)
 - [UTILITY][Build-a-Bonus](https://github.com/krbz999/babonus)
 - [CHARACTER SHEET/UTILITY][Variant Encumbrance 5e](https://github.com/VanirDev/VariantEncumbrance )
 - [UTILITY][Arbron’s Summoning](https://github.com/arbron/fvtt-summoner)
 - [JOURNALS/UTILITY][Monk's Shops](https://github.com/ironmonk88/monks-shops)
 - [ANIMATIONS][D&D5e Animations](https://github.com/MrVauxs/dnd5e-animations)
-- [Weather Reports](https://github.com/paulcheeba/weather-reports)
 - [UTILITY][Automated Objects, Interactions and Effects](https://github.com/ZotyDev/objects-interactions-fx)
 - [UTILITY][Simbul's Cover Calculator](https://github.com/vtt-lair/simbuls-cover-calculator)
 - [UTILITY][Simbul's Creature Aide](https://github.com/vtt-lair/simbuls-creature-aide)
 - [UTILITY][Maxwell's Manual of Malicious Maladies](https://github.com/theripper93/Maxwell-s-Manual-of-Malicious-Maladies)
 - [UTILITY][Vision/Detection Modes for D&D 5e](https://github.com/dev7355608/vision-5e)
-- [UTILITY][Advanced Magic - Spell Points System 5e](https://github.com/misthero/dnd5e-spellpoints)
+- [UTILITY][Walled Templates](https://github.com/caewok/fvtt-walled-templates)
+- [UTILITY][Limits](https://github.com/dev7355608/limits)
+- 
+- [JOURNAL/ITEM][Item-Linking](https://github.com/elizeuangelo/fvtt-module-item-linking)
+
+### NOT ESSENTIAL
 
 - [Token Action HUD Core](https://github.com/Larkinabout/fvtt-token-action-hud-core)
 - [Token Action HUD D&D 5e](https://github.com/Larkinabout/fvtt-token-action-hud-dnd5e)
 
-- [JOURNAL/ITEM][Item-Linking](https://github.com/elizeuangelo/fvtt-module-item-linking)
 
 ## =======================
 ## [SYSTEM] PATHFINDER 2 MODULES
@@ -179,7 +180,7 @@
 - [Token Action HUD Core](https://github.com/Larkinabout/fvtt-token-action-hud-core)
 - [Token Action HUD Pathfinder 2](https://github.com/Larkinabout/fvtt-token-action-hud-pf2e/)
 
-  NOT ESSENTIAL
+###  NOT ESSENTIAL
 
 - [Yendors Scene Actors](https://gitlab.com/yendors-vtt/yendors-scene-actors/)
 - [PF2e Dorako UI](https://github.com/Dorako/pf2e-Dorako-UI)

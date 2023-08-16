@@ -3,12 +3,15 @@
 # ======================================================================
 # 2023-07-23
 
+- [UTILITY][Advanced Magic - Spell Points System 5e](https://github.com/misthero/dnd5e-spellpoints)
+
 - [SCRIPT][World-Scripter](https://github.com/Kekilla0/World-Scripter)
 - [NEED UPDATE][WALL][Smart Door](https://github.com/manuelVo/foundryvtt-smart-doors )
 - [IS BETTER JUST USE ITEM PILES][UTILITY LOOT][DFreds Pocket Change](https://github.com/DFreds/dfreds-pocket-change )
 - [NOT ESSENTIAL][UTILITY][Token Light Condition](https://github.com/Frstrm/TokenLightCondition)
 - [ADVANCED MACRO DO THIS][SCRIPT][World-Scripter](https://github.com/Kekilla0/World-Scripter)
 - [NEED UPDATE][WALL][Smart Door](https://github.com/manuelVo/foundryvtt-smart-doors )
+- [TOKEN/CHAT][Group Rolls for D&D 5e](https://github.com/trdischat/grouproll)
 
 # 2023-06-01 
 
