@@ -125,7 +125,6 @@
 - [NOT ESSENTIAL][TOKEN][Token Action HUD Artwork](https://github.com/zeel01/TokenHUDArtButton )
 - [NOT ESSENTIAL][Roll from compendium](https://github.com/itamarcu/roll-from-compendium)
 - [NOT ESSENTIAL][Enhanced Active Effects](https://github.com/patrickporto/fvtt-enhanced-active-effects)
-- [NOT ESSENTIAL YOU CAN STILL USE ACTIONHUD][[TOKEN][Illandril's Token Tooltips (5e)](https://github.com/illandril/FoundryVTT-token-tooltips )
 - [IS BETTER Illandril's Token HUD Scaler][COMBAT][Status Icon Tweaks](https://github.com/jessev14/status-icon-tweaks)
 - [NOT ESSENTIAL][COMPENDIUM](https://github.com/adougherty/random-everything-generator)
 - [NOT ESSENTIAL][UTILITY][Less Fog](https://github.com/trdischat/lessfog )
@@ -141,7 +140,6 @@
 ## 2021-10
 
 - [NOT ESSENTIAL][UTILITY][Burger Time](https://github.com/scottburton11/burger-time)
-- [NOT ESSENTIAL][TOKEN][Quick Scale](https://github.com/unsoluble/quickscale) -
 - [BETTER PLUTONIUM][ENTITY][Compendiumn Browser](https://github.com/syl3r86/compendium-browser ) - https://raw.githubusercontent.com/syl3r86/compendium-browser/master/module.json
 - [BETTER DFRED CONVENIENT EFFECTS][COMBAT][Active Effects to Chat](https://github.com/BadIdeasBureau/ae-to-chat )
 - [NOT ESSENTIAL][WALL/COMBAT][Template Wall Collision](https://github.com/EndlesNights/template-wall-collision) - https://raw.githubusercontent.com/EndlesNights/template-wall-collision/master/module.json
@@ -346,7 +344,6 @@
 - [NOT ESSENTIAL][COMBAT][Foundry VTT Hidden Initiative](https://github.com/sfuqua/fvtt-hidden-initiative ) - https://raw.githubusercontent.com/sfuqua/fvtt-hidden-initiative/master/module.json
 - [NOT ESSENTIAL][EXTERNAL][Speech to Chat](https://github.com/Exote/foundry-vtt-speech-to-chat/ ) - https://raw.githubusercontent.com/Exote/foundry-vtt-speech-to-chat/master/module.json
 - [NOT ESSENTIAL][MAP/SCENE][Import DungeonDraft](https://github.com/moo-man/FVTT-DD-Import ) - https://raw.githubusercontent.com/moo-man/FVTT-DD-Import/master/module.json
-- [NOT ESSENTIAL][COMBAT][ENTITY](https://github.com/Foundry-Workshop/ammo-swapper ) - https://raw.githubusercontent.com/Foundry-Workshop/ammo-swapper/master/src/module.json
 - [NOT ESSENTIAL][COMBAT][ENTITY][Ammo Swapper by Cyr](https://github.com/Cyr-/ammo-swapper ) - https://raw.githubusercontent.com/Cyr-/ammo-swapper/master/src/module.json
 - [DEPRECATED USE INSTEAD Bellows][AUDIO][Music Assist](https://github.com/temportalflux/MusicAssist )
 - [NOT ESSENTIAL][AUDIO][DnDj](https://github.com/horville-hootenkline/DnDj )

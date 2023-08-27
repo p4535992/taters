@@ -1,6 +1,27 @@
 # ======================================================================
 # NOT ESSENTIAL 
-# ======================================================================
+# ====================================================================== 
+
+# 2023-08-26
+
+- [IS BETTER MAGIC ITEMS 2][UTILITY][Items with Spells DnD5e](https://github.com/ElfFriend-DnD/foundryvtt-items-with-spells-5e)
+- [NOT ESSENTIAL][COMBAT][Illandril's Token Tooltips (5e)](https://github.com/illandril/FoundryVTT-token-tooltips )
+- [NOT ESSENTIAL][TABLE][Community Tables](https://github.com/foundry-vtt-community/tables )
+- [NOT ESSENTIAL][Theatre](https://github.com/League-of-Foundry-Developers/fvtt-module-theatre )
+- [UTILITY][Monk's Little Details](https://github.com/ironmonk88/monks-little-details)
+- [NEED UPDATE][UTILITY][Move That for you](https://github.com/Aedif/move-that-for-you)
+- [NOT ESSENTIAL][TOKEN][Token Says](https://github.com/napolitanod/Token-Says)
+- [NOT ESSENTIAL][COMBAT][Danger-Zone](https://github.com/napolitanod/Danger-Zone)
+- [NOT ESSENTIAL][Weather Reports](https://github.com/paulcheeba/weather-reports)
+- [NOT ESSENTIAL][Weather Color Settings](https://github.com/cirrahn/foundry-weather-color-settings)
+- [INTELLIGENT NPC IS BETTER][UTILITY][Conversation HUD](https://github.com/CristianVasile23/conversation-hud)
+- [WINDOWS TAB AND MJE ARE BETTER][JV's Window Controls for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-window-controls)
+- [NOT NEDDED ANYMORE ON V11][UTILITY][Drag Anything To Hotbar for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-drag-all-to-hotbar)
+- [ANONYMUS IS BETTER][UTILITY][Hide GM Rolls](https://github.com/sPOiDar/fvtt-module-hide-gm-rolls)
+- [NEED UPDATE][UTILITY][Card Tiles](https://github.com/alessiocali/card-tiles)
+- [NEED UPDATE][Chat Cleaner](https://github.com/elizeuangelo/fvtt-module-chat-cleaner)
+- [IS GOOD BUT IS INTEGRATE IN IGNORE VISION VARIANT][TOKEN][Invisible tokens can see too](https://github.com/soemer/invisible-tokens-can-see-too)
+
 # 2023-07-23
 
 - [UTILITY][Advanced Magic - Spell Points System 5e](https://github.com/misthero/dnd5e-spellpoints)
