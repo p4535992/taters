@@ -3,12 +3,11 @@
 # ====================================================================== 
 
 # 2023-08-26
-
+- [IN CORE V11][ENTITY][Compendium Folders](https://github.com/earlSt1/vtt-compendium-folders )
 - [IS BETTER MAGIC ITEMS 2][UTILITY][Items with Spells DnD5e](https://github.com/ElfFriend-DnD/foundryvtt-items-with-spells-5e)
 - [NOT ESSENTIAL][COMBAT][Illandril's Token Tooltips (5e)](https://github.com/illandril/FoundryVTT-token-tooltips )
 - [NOT ESSENTIAL][TABLE][Community Tables](https://github.com/foundry-vtt-community/tables )
 - [NOT ESSENTIAL][Theatre](https://github.com/League-of-Foundry-Developers/fvtt-module-theatre )
-- [UTILITY][Monk's Little Details](https://github.com/ironmonk88/monks-little-details)
 - [NEED UPDATE][UTILITY][Move That for you](https://github.com/Aedif/move-that-for-you)
 - [NOT ESSENTIAL][TOKEN][Token Says](https://github.com/napolitanod/Token-Says)
 - [NOT ESSENTIAL][COMBAT][Danger-Zone](https://github.com/napolitanod/Danger-Zone)

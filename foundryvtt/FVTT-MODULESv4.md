@@ -3,7 +3,6 @@
 - [CHAT][Cautious Gamemaster's Pack](https://github.com/cs96and/FoundryVTT-CGMP)
 
 - [EXTERNAL][FxMaster](https://github.com/ghost-fvtt/fxmaster)
-- [ENTITY][Compendium Folders](https://github.com/earlSt1/vtt-compendium-folders )
 - [ENTITY][Permission Viewer](https://github.com/kakaroto/fvtt-module-permission-viewer )
 
 
@@ -18,6 +17,7 @@
 - [TOKEN][Active Token Effect](https://github.com/kandashi/Active-Token-Lighting )
 - [DOOR][Lock & Key](https://github.com/Saibot393/LocknKey)
 - [TOKEN][Rideable](https://github.com/Saibot393/Rideable)
+- [DOOR][Perceptive](https://github.com/Saibot393/perceptive)
 - [UTILITY][Automated Animations](https://github.com/otigon/automated-jb2a-animations )
 - [CHAT][Chat Portrait](https://github.com/ShoyuVanilla/FoundryVTT-Chat-Portrait/ )
 
@@ -30,7 +30,7 @@
 - [UTILITY][Monks TokenBar](https://github.com/ironmonk88/monks-tokenbar)
 - [WALL][Monks Wall Enchancement](https://github.com/ironmonk88/monks-wall-enhancement)
 - [SOUNDS][Monk's Sound Enhancements](https://github.com/ironmonk88/monks-sound-enhancements)
-
+- [UTILITY][Monk's Little Details](https://github.com/ironmonk88/monks-little-details)
 
 - [UTILITY][Ignore Vision Variant](https://github.com/p4535992/foundryvtt-ignore-vision-variant)
 - [TOKEN][Quick Scale](https://github.com/unsoluble/quickscale)
@@ -73,7 +73,8 @@
 - [UTILITY][Intelligent NPCs](https://github.com/cswendrowski/FoundryVTT-Intelligent-NPCs/releases/latest/download/module.json)
 - [MAP/UTILITY][Quick Grid Align](https://github.com/theripper93/quick-grid-align)
 - [NOTE/UTILITY][Note Licker](https://github.com/MrPrimate/NoteLicker)
-- [JOURNAL/ITEM][Item-Linking](https://github.com/elizeuangelo/fvtt-module-item-linking)
+- [JOURNAL/ITEM][Item Linking](https://github.com/elizeuangelo/fvtt-module-item-linking)
+- [CHAT][Foundry VTT - Narrator Tools](https://github.com/elizeuangelo/fvtt-module-narrator-tools )
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 

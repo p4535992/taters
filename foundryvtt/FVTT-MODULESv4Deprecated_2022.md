@@ -80,7 +80,6 @@
 - [NOT ESSENTIAL][CHARACTER SHEET][Point of Interest Character Sheet](https://github.com/Sky-Captain-13/foundry/tree/master/poi-sheet )
 - [NOT ESSENTIAL][UTILITY][Drag Anything To Hotbar for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-drag-all-to-hotbar)
 - [IS BETTER DragonFlagon Quality of Life]
-- [NOT ESSENTIAL][CHAT][Foundry VTT - Narrator Tools](https://github.com/elizeuangelo/fvtt-module-narrator-tools )
 - [IS BETTER MATT][MACRO/COMBAT][Trigger Happy](https://github.com/League-of-Foundry-Developers/fvtt-module-trigger-happy )
 - [IS BETTER TRANSFER STUFF][UTILITY][Lets Trade 5e](https://github.com/KageJittai/lets-trade-5e)
 - [IS BETTER DF Quality of Life][TOKEN][Inactive Tokens](https://github.com/jagoe/fvtt-module-inactive-tokens)
