@@ -95,7 +95,6 @@
 - [NOT ESSENTIAL][Terrain Ruler](https://github.com/manuelVo/foundryvtt-terrain-ruler/tree/master)
 - [NOT ESSENTIAL][Enhanced Terrain Layer](https://github.com/ironmonk88/enhanced-terrain-layer)
 - [NOT ESSENTIAL][IMAGES][Clipboard Image for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-clipboard-image)
-- [NOT ESSENTIAL][COMPENDIUM][Compendium Importer for Foundry VTT](https://gitlab.com/mkahvi/fvtt-compendium-importer)
 - [NOT ESSENTIAL IS BETTER Downtime Tracking 5e Training][CHARACTHER SHEET/UTILITY][Ethck's Downtime Tracking](https://github.com/Ethck/Ethck-s-Downtime-Tracking )
 - [NOT ESSENTIAL][TOKEN][Target Reacts](https://github.com/Vauryx/TargetReacts)
 - [NOT ESSENTIAL][SCRIPT/AE][Enhanced Active Effects](https://github.com/patrickporto/fvtt-enhanced-active-effects)
@@ -459,7 +458,6 @@
 
 - [ENTITY][INTEGRATED ON CORE][Macro Folders](https://github.com/earlSt1/vtt-macro-folders ) - https://raw.githubusercontent.com/earlSt1/vtt-macro-folders/master/module.json
 - [EXTERNAL][SUPPORT FOR CALENDAR][Dodecaluna ]() - https://raw.githubusercontent.com/Sparkasaurusmex/dodecaluna/master/module.json
-- [MAP/ROLL][NOT ESSENTIAL][Dice So Nice](https://gitlab.com/riccisi/foundryvtt-dice-so-nice ) - https://gitlab.com/riccisi/foundryvtt-dice-so-nice/raw/master/module/module.json 
 - [ROLL/CHAT][NOT ESSENTIAL][Chat Alias](https://github.com/nwen-dicekittens/Chat-Alias )
 - [COMPENDIUM][NOT ESSENTIAL][IS BETTER PLUTONIUM][5eFeats] - https://github.com/jinkergm/5eFeats - https://raw.githubusercontent.com/jinkergm/5eFeats/master/module.json
 - [EXTERNAL] vtta-didyouknow - 

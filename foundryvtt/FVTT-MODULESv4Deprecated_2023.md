@@ -39,7 +39,6 @@
 
 - [UTILITY][Alternative Token Visibility](https://github.com/caewok/fvtt-token-visibility)
 - [COMBAT][Effective Transferral](https://github.com/GamerFlix/effective-transferral)
-- [COMBAT][Flying Tokens](https://github.com/LeafWulf/flying-tokens)
 - [COMBAT][Token Elevator](https://gitlab.com/Weissrolf/token-elevator)
 - [UTILITY][Introduce Me](https://github.com/WBHarry/introduce-me)
 - [UTILITY][Weather FX](https://github.com/LeafWulf/weatherfx)

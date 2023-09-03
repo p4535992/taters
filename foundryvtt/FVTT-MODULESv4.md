@@ -61,7 +61,7 @@
 
 - [UI][JV's Minimal UI for FoundryVTT](https://github.com/saif-ellafi/foundryvtt-minimal-ui)
 - [UI][Window Tabs](https://github.com/mouse0270/window-tabs)
-
+- [MAP/ROLL][NOT ESSENTIAL][Dice So Nice](https://gitlab.com/riccisi/foundryvtt-dice-so-nice)
 
 - [UTILITY][Stealthy](https://github.com/Eligarf/stealthy)
 - [MUSIC/UTILITY][Combat Music Master](https://github.com/elizeuangelo/fvtt-module-combat-music-master)
@@ -75,6 +75,7 @@
 - [NOTE/UTILITY][Note Licker](https://github.com/MrPrimate/NoteLicker)
 - [JOURNAL/ITEM][Item Linking](https://github.com/elizeuangelo/fvtt-module-item-linking)
 - [CHAT][Foundry VTT - Narrator Tools](https://github.com/elizeuangelo/fvtt-module-narrator-tools )
+- [COMPENDIUM][Compendium Importer for Foundry VTT](https://gitlab.com/mkahvi/fvtt-compendium-importer)
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
@@ -99,6 +100,8 @@
 
 - [COMBAT][Boss Bar](https://github.com/theripper93/Boss-Bar)
 - [COMBAT][Ammo Swapper](https://github.com/Foundry-Workshop/ammo-swapper )
+- [COMBAT][Your Turn](https://github.com/Autmor/yourTurn)
+- [COMBAT][Flying Tokens](https://github.com/LeafWulf/flying-tokens)
 
 ### NOT ESSENTIAL
 
