@@ -97,7 +97,8 @@
 - [COMBAT][Condition Lab & Triggler](https://github.com/mclemente/fvtt-condition-lab-triggler)
   
   OPTIONAL
-
+  
+- [COMBAT][Random Target](https://github.com/mcavallo/foundry-vtt-random-target)
 - [COMBAT][Boss Bar](https://github.com/theripper93/Boss-Bar)
 - [COMBAT][Ammo Swapper](https://github.com/Foundry-Workshop/ammo-swapper )
 - [COMBAT][Your Turn](https://github.com/Autmor/yourTurn)
