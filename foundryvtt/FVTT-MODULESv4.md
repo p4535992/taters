@@ -46,6 +46,8 @@
 - [UTILITY][Item Delete Check](https://gitlab.com/tposney/item-delete-check/tree/master )
 
 - [UTILITY][Forien Copy](https://github.com/League-of-Foundry-Developers/foundryvtt-forien-copy-environment )
+- [UTILITY][Module Management+](https://github.com/mouse0270/module-credits)
+
 - [UTILITY][Koboldworks – Pause Control](https://gitlab.com/koboldworks/agnostic/pause-control)
 - [WALL][Wall Height](https://github.com/theripper93/wall-height )
 
@@ -56,7 +58,7 @@
 - [UTILITY][Tile Scroll](https://github.com/theripper93/tile-scroll)
 - [UTILITY][Tile Sort](https://github.com/theripper93/tile-sort)
 
-- [UTILITY][Module Management+](https://github.com/mouse0270/module-credits)
+
 - [UTILITY][Comprehend Languages](https://github.com/Meneltamar/fvtt-comprehend-languages)
 
 - [UI][JV's Minimal UI for FoundryVTT](https://github.com/saif-ellafi/foundryvtt-minimal-ui)
@@ -76,6 +78,7 @@
 - [JOURNAL/ITEM][Item Linking](https://github.com/elizeuangelo/fvtt-module-item-linking)
 - [CHAT][Foundry VTT - Narrator Tools](https://github.com/elizeuangelo/fvtt-module-narrator-tools )
 - [COMPENDIUM][Compendium Importer for Foundry VTT](https://gitlab.com/mkahvi/fvtt-compendium-importer)
+- [JOURNAL][Better Document Link](https://github.com/MiahNelah/better-entity-link)
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
