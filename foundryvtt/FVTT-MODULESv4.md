@@ -162,7 +162,7 @@
 - [FoundryVTT PF2e Interactive Token Tooltip](https://foundryvtt.com/packages/pf2e-token-hud)
 - [PF2E Token Markers](https://gitlab.com/InfamousSky/pf2e-color-effects)
 - [pf2e Utility Buttons](https://github.com/oWave/pf2e-flatcheck-helper)
-
+- [PF2e Hands Management (Reminder)](https://github.com/reyzor1991/foundry-vtt-pf2e-notification)
 - [pf2edragruler](https://github.com/reyzor1991/pf2edragruler)
 - [pf2e-magaambya](https://github.com/MrVauxs/pf2e-magaambya)
 - [PF2e Animations](https://github.com/MrVauxs/pf2e-jb2a-macros)
