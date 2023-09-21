@@ -27,7 +27,7 @@
 - [TOKEN][IS BETTER TokenMagic Automatic Wounds][Health Estimate](https://gitlab.com/tsuki.no.mai/healthestimate/)
 - [MAP][BETTER STAIRWAYS AND LEVELS][Multilevel Tokens module for Foundry VTT](https://github.com/grandseiken/foundryvtt-multilevel-tokens )
 - [UTILITY][Rangefinder](https://github.com/manuelVo/foundryvtt-rangefinder)
-- [UTILITY][Remote Highlight UI](https://github.com/shemetz/remote-highlight-ui)
+
 - [COMBAT/ACTIVE EFFECTS][Time Up](https://gitlab.com/tposney/times-up )
 - [COMBAT][Shy Effects](https://github.com/kandashi/shy-effect-icons)
 - [UTILITY][Dragon Flagon Architect](https://github.com/flamewave000/dragonflagon-arch)

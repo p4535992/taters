@@ -50,24 +50,23 @@
 
 - [UTILITY][Koboldworks – Pause Control](https://gitlab.com/koboldworks/agnostic/pause-control)
 - [WALL][Wall Height](https://github.com/theripper93/wall-height )
-
 - [SIDEBAR][Hidden Entity Links](https://github.com/p4535992/vtt-hidden-entity-links)
 - [NOTE][Pin Cushion](https://github.com/p4535992/foundryvtt-pin-cushion)
 - [EXTERNAL][Popout](https://github.com/kakaroto/fvtt-module-popout)
-
+- [CHAT][Chat Commander](https://gitlab.com/woodentavern/foundryvtt-chat-command-lib)
 - [UTILITY][Tile Scroll](https://github.com/theripper93/tile-scroll)
 - [UTILITY][Tile Sort](https://github.com/theripper93/tile-sort)
-
-
+- [TOKEN/UTILITY][Covered Token Rescue HUD](https://github.com/xaukael/covered-token-rescue-hud)
+- [UTILITY][Cursor Hider](https://gitlab.com/foundry-azzurite/cursor-hider/)
 - [UTILITY][Comprehend Languages](https://github.com/Meneltamar/fvtt-comprehend-languages)
-
+- [MACRO][Improved Macro Editor](https://github.com/teroparvinen/foundry-improved-macro-editor)
 - [UI][JV's Minimal UI for FoundryVTT](https://github.com/saif-ellafi/foundryvtt-minimal-ui)
 - [UI][Window Tabs](https://github.com/mouse0270/window-tabs)
-- [MAP/ROLL][NOT ESSENTIAL][Dice So Nice](https://gitlab.com/riccisi/foundryvtt-dice-so-nice)
-
+- [MAP/ROLL][Dice So Nice](https://gitlab.com/riccisi/foundryvtt-dice-so-nice)
+- [UTILITY][DFreds Droppables](https://github.com/DFreds/dfreds-droppables)
 - [UTILITY][Stealthy](https://github.com/Eligarf/stealthy)
 - [MUSIC/UTILITY][Combat Music Master](https://github.com/elizeuangelo/fvtt-module-combat-music-master)
-
+- [MAP/UTILITY][Dungeon Draw](https://github.com/mcglincy/dungeondraw-foundry-vtt)
 - [UTILITY][Anonymous](https://github.com/reonZ/anonymous)
 - [UTILITY][Hey, Wait!](https://github.com/Couls/hey-wait)
 - [UTILITY][Inline Text from Linked Document](https://github.com/farling42/fvtt-inline-linktext)
@@ -154,6 +153,15 @@
 ## =======================
 ## [SYSTEM] PATHFINDER 2 MODULES
 ## =======================
+
+- [PF2e Action Support](https://github.com/reyzor1991/foundry-vtt-pf2e-action-support)
+- [FoundryVTT PF2e Effect Description](https://github.com/reonZ/pf2e-effect-description)
+- [PF2e Exploration Activities](https://github.com/IcyLemonZ/pf2e-exploration-activities)
+- [PF2E Exploration Effects](https://github.com/silvative/pf2e-exploration-effects)
+- [FoundryVTT PF2e Giveth](https://github.com/reonZ/pf2e-giveth)
+- [FoundryVTT PF2e Interactive Token Tooltip](https://foundryvtt.com/packages/pf2e-token-hud)
+- [PF2E Token Markers](https://gitlab.com/InfamousSky/pf2e-color-effects)
+- [pf2e Utility Buttons](https://github.com/oWave/pf2e-flatcheck-helper)
 
 - [pf2edragruler](https://github.com/reyzor1991/pf2edragruler)
 - [pf2e-magaambya](https://github.com/MrVauxs/pf2e-magaambya)

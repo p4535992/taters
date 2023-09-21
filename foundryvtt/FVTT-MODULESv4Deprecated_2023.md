@@ -43,7 +43,6 @@
 - [UTILITY][Introduce Me](https://github.com/WBHarry/introduce-me)
 - [UTILITY][Weather FX](https://github.com/LeafWulf/weatherfx)
 - [CHAT][Chat Images](https://github.com/bmarian/chat-images )
-- [covered-token-rescue-hud](https://github.com/xaukael/covered-token-rescue-hud)
 - [Z Scatter](https://github.com/elizeuangelo/fvtt-module-z-scatter/)
 - [REPLACE WITH https://github.com/coffiarts/FoundryVTT-hot-pan][Utility][Zoom/Pan Options](https://github.com/itamarcu/ZoomPanOptions)
 - [NOT NECESSARY][COMBAT][Arbron's Improved HP Bar](https://github.com/arbron/fvtt-hp-bar)
