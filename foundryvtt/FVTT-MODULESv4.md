@@ -41,10 +41,10 @@
 
 - [UTILITY][Token Variant Art](https://github.com/Aedif/TokenVariants)
 - [UTILITY][Mass Edit](https://github.com/Aedif/multi-token-edit)
-
+- [UTILITY][Out of Combat Tracker](https://gitlab.com/mxzf/ooct)
 - [UTILITY\TOKEN][Token Attacher](https://github.com/KayelGee/token-attacher )
 - [UTILITY][Item Delete Check](https://gitlab.com/tposney/item-delete-check/tree/master )
-
+- [UTILITY/JOURNAL][One Journal Handouts](https://github.com/DarKDinDoN/one-journal-handouts)
 - [UTILITY][Forien Copy](https://github.com/League-of-Foundry-Developers/foundryvtt-forien-copy-environment )
 - [UTILITY][Module Management+](https://github.com/mouse0270/module-credits)
 
