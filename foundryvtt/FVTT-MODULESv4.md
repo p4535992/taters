@@ -5,7 +5,7 @@
 - [EXTERNAL][FxMaster](https://github.com/ghost-fvtt/fxmaster)
 - [ENTITY][Permission Viewer](https://github.com/kakaroto/fvtt-module-permission-viewer )
 
-
+- [ANIMATION][Universal Animations](https://github.com/Autumn225/universal-animations)
 
 - [MACRO][Advanced Macros](https://github.com/mclemente/fvtt-advanced-macros)
 - [ENTITY][Item Macro](https://github.com/Kekilla0/Item-Macro )
@@ -78,6 +78,13 @@
 - [CHAT][Foundry VTT - Narrator Tools](https://github.com/elizeuangelo/fvtt-module-narrator-tools )
 - [COMPENDIUM][Compendium Importer for Foundry VTT](https://gitlab.com/mkahvi/fvtt-compendium-importer)
 - [JOURNAL][Better Document Link](https://github.com/MiahNelah/better-entity-link)
+- [UTILITY][Zoom/Pan Options](https://github.com/shemetz/ZoomPanOptions)
+
+- [UTILITY][Walled Templates](https://github.com/caewok/fvtt-walled-templates)
+- [UTILITY][Limits](https://github.com/dev7355608/limits)
+
+- [UTILITY][Condition Lab & Triggler](https://github.com/mclemente/fvtt-condition-lab-triggler)
+- [UTILITY][Core Settings Expanded](https://gitlab.com/geekswordsman/core-settings-expanded)
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
@@ -96,7 +103,6 @@
 - [COMBAT][Combat Enhancements](https://gitlab.com/asacolips-projects/foundry-mods/combat-enhancements/ )
 
 - [COMBAT][Carousel Combat Tracker](https://github.com/theripper93/combat-tracker-dock)
-- [COMBAT][Condition Lab & Triggler](https://github.com/mclemente/fvtt-condition-lab-triggler)
   
   OPTIONAL
   
@@ -106,7 +112,7 @@
 - [COMBAT][Your Turn](https://github.com/Autmor/yourTurn)
 - [COMBAT][Flying Tokens](https://github.com/LeafWulf/flying-tokens)
 
-### NOT ESSENTIAL
+### NOT ESSENTIAL (BUT INTERESTING)
 
 - [LIGHT/SOUND][Light/Sound Mask](https://github.com/caewok/fvtt-light-mask)
 - [JOURNAL/NOTE][Automatic journal Icon Numbers](https://gitlab.com/tiwato/journal_icon_numbers )
@@ -114,16 +120,22 @@
 - [SCENE][Unofficial Azgaar's Fantasy Map Generator Import](https://github.com/Ethck/azgaar-foundry)
 
 - [UTILITY][Automated Evocations Variant](https://github.com/p4535992/automated-evocations-variant)
+- [SCREEN][Hearthquake](https://github.com/edgedoggo/fvtt-earthquake/)
+- [UTILITY][Koboldworks – Data Inspector](https://gitlab.com/koboldworks/agnostic/data-inspector)
 
 ## =======================
 ## [SYSTEM] MODULES  D&D5e
 ## =======================
 
 - [COMPENDIUM][Kris's Compendium of Trade Goods](https://github.com/kristkos/kctg-common)
-- [COMPENDIUM][Revised Weapons & Equipment for 5e](https://github.com/M0nk3yy/RWE)
 - [COMPENDIUM][Chris's Premades](https://github.com/chrisk123999/chris-premades)
 - [COMPENDIUM][Boss Loot Interactive Magic Items, Free Pack](https://github.com/boss-loot/Boss-Loot-Interactive-Magic-Items)
+- [COMPENDIUM][Spells That Don't Suck](https://github.com/somanyrobots/foundry-vtt-spells-that-dont-suck)
+- [COMPENDIUM][Midi Item Showcase - Community](https://github.com/txm3278/midi-item-showcase-community)
+- [COMPENDIUM][gambits-premades](https://github.com/gambit07/gambits-premades)
+- [COMPENDIUM][Material Components for D&D5e](https://github.com/M0nk3yy/MC5e)
 
+- [TOKEN][TooManyTokens - DnD](https://github.com/IsThisMyRealName/too-many-tokens-dnd)
 - [COMBAT][Midi Qol](https://gitlab.com/tposney/midi-qol )
 - [UTILITY][Dnd5e Scriptlet](https://github.com/tposney/dnd5e-scriptlets)
 - [COMBAT][Wild Magic Surge 5e](https://github.com/johnnolan/wild-magic-surge-5e)
@@ -139,20 +151,30 @@
 - [UTILITY][Simbul's Creature Aide](https://github.com/vtt-lair/simbuls-creature-aide)
 - [UTILITY][Maxwell's Manual of Malicious Maladies](https://github.com/theripper93/Maxwell-s-Manual-of-Malicious-Maladies)
 - [UTILITY][Vision/Detection Modes for D&D 5e](https://github.com/dev7355608/vision-5e)
-- [UTILITY][Walled Templates](https://github.com/caewok/fvtt-walled-templates)
-- [UTILITY][Limits](https://github.com/dev7355608/limits)
-- [DnD5e Drag Ruler Integration](https://github.com/PepijnMC/ElevationDragRuler)
 - [COMPENDIUM/UTILITY][Stochastic, Fantastic!](https://github.com/etriebe/dnd-randomizer)
 
-### NOT ESSENTIAL
+- [UTILITY][Concentration Notifier](https://github.com/krbz999/concentrationnotifier)
 
+- [UTILITY][](https://foundryvtt.com/packages/so-inspired)
+- [UTILITY][](https://foundryvtt.com/packages/stroud-dnd-helpers)
+
+- [ADVENTURE][Dungeons of Drakkenheim](https://foundryvtt.com/packages/drakkenheim-core)
+- [ADVENTURE][Heists and Havoc 5e and Pathfinder 2e](https://foundryvtt.com/packages/thedmlair-heists-and-havoc)
+- [ADVENTURE][Replacements in the Ice 5e and Pathfinder 2e](https://foundryvtt.com/packages/thedmlair-replacements-in-the-ice)
+
+### NOT ESSENTIAL (BUT KEEP IN TOUCH)
+
+- [COMPENDIUM][Revised Weapons & Equipment for 5e](https://github.com/M0nk3yy/RWE)
+- [DnD5e Drag Ruler Integration](https://github.com/PepijnMC/ElevationDragRuler)
 - [Token Action HUD Core](https://github.com/Larkinabout/fvtt-token-action-hud-core)
 - [Token Action HUD D&D 5e](https://github.com/Larkinabout/fvtt-token-action-hud-dnd5e)
-
+- [UTILITY][Custom dnd5e](https://github.com/Larkinabout/fvtt-custom-dnd5e/)
 
 ## =======================
 ## [SYSTEM] PATHFINDER 2 MODULES
 ## =======================
+
+- [COMPENDIUM][Kris's Compendium of Trade Goods](https://github.com/kristkos/kctg-common)
 
 - [PF2e Action Support](https://github.com/reyzor1991/foundry-vtt-pf2e-action-support)
 - [FoundryVTT PF2e Effect Description](https://github.com/reonZ/pf2e-effect-description)
@@ -205,8 +227,7 @@
 ## [SYSTEM] PATHFINDER 1 MODULES
 ## =======================
 
-- https://github.com/Lo-create/foundry-pf1-content
-- [CHARACTER SHEET][Loot Sheet NPC Pathfinder1](https://github.com/SvenWerlen/fvtt-loot-sheet-npc-pf1 )
+- [COMPENDIUM][Kris's Compendium of Trade Goods](https://github.com/kristkos/kctg-common)
 
 ## =======================
 ## [SYSTEM] MODULES SHADOW RUN 
