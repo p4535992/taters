@@ -164,6 +164,7 @@
 
 ### NOT ESSENTIAL (BUT KEEP IN TOUCH)
 
+- [Yendors Scene Actors](https://gitlab.com/yendors-vtt/yendors-scene-actors/)
 - [COMPENDIUM][Revised Weapons & Equipment for 5e](https://github.com/M0nk3yy/RWE)
 - [DnD5e Drag Ruler Integration](https://github.com/PepijnMC/ElevationDragRuler)
 - [Token Action HUD Core](https://github.com/Larkinabout/fvtt-token-action-hud-core)
@@ -207,6 +208,7 @@
 - [Token Action HUD Core](https://github.com/Larkinabout/fvtt-token-action-hud-core)
 - [Token Action HUD Pathfinder 2](https://github.com/Larkinabout/fvtt-token-action-hud-pf2e/)
 - [COMPENDIUM/UTILITY][Stochastic, Fantastic!](https://github.com/etriebe/dnd-randomizer)
+- [SCENE][Abomination Vaults Remade Maps](https://gitlab.com/narchy-maps/abomination-vaults-remade-maps)
 
 ###  NOT ESSENTIAL
 
