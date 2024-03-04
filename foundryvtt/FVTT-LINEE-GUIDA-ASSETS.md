@@ -84,6 +84,13 @@ Raccolta dei tool gratuiti e/o a pagamento che è possibile usare per gestire gl
 
 Sono quelli consigliati e testati per i vari scopi.
 
+### Gestione dei documenti
+
+- [UPDF](https://updf.com/)
+    - A pagamento (50 euro per una lcienza a vita)
+    - Il migliore  che abbia provato fa sia OCR che compressione
+    - Altamente consigliato
+
 ### Gestione delle immagini
 
 - [Paint.net](https://www.getpaint.net/) (Consigliato)
@@ -133,6 +140,10 @@ Sono quelli consigliati e testati per i vari scopi.
 
 - [Adapter](https://macroplant.com/adapter)
 
+- [Caesium Image Compressor](https://saerasoft.com/caesium)
+    - Gratuito
+    - Ottimo nella compressione di immagini
+
 ### Gestione degli audio
 
 - [QWinFF](https://qwinff.github.io/) (Consigliato)
@@ -153,7 +164,9 @@ Sono quelli consigliati e testati per i vari scopi.
 
 - [Juke Host](https://jukehost.co.uk/)
 
-### Gestione degli video
+- [Adapter](https://macroplant.com/adapter)
+
+### Gestione dei video
 
 - [Handbrake](https://handbrake.fr/) (Consigliato)
     - Gratuito
@@ -175,6 +188,8 @@ Sono quelli consigliati e testati per i vari scopi.
 - [Free Sounds](https://www.freesoundeffects.com/)
 
 - [soundbible](https://soundbible.com/1348-Large-Fireball.html)
+
+- [Adapter](https://macroplant.com/adapter)
 
 ### Gestione dei Token
 
