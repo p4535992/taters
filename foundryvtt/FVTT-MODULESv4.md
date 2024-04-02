@@ -10,7 +10,6 @@
 - [MACRO][Advanced Macros](https://github.com/mclemente/fvtt-advanced-macros)
 - [ENTITY][Item Macro](https://github.com/Kekilla0/Item-Macro )
 - [ROLL][Dice Calculator/Dice Tray](https://gitlab.com/asacolips-projects/foundry-mods/foundry-vtt-dice-calculator/ )
-- [TOKEN][Drag Ruler](https://github.com/manuelVo/foundryvtt-drag-ruler )
 - [UTILITY][Simple Calendar](https://github.com/vigoren/foundryvtt-simple-calendar )
 - [MAP][Armsreach](https://github.com/p4535992/foundryvtt-arms-reach )
 
@@ -37,7 +36,10 @@
 - [UTILITY][Roger's Additional Metric Ruler Labels](https://github.com/Roger92/metric-ruler-labels)
 - [UTILITY][Quick Insert](https://gitlab.com/fvtt-modules-lab/quick-insert )
 - [UTILITY][Item Piles](https://github.com/fantasycalendar/FoundryVTT-ItemPiles)
+- [UTILITY][Item Piles - Bankers](https://github.com/fantasycalendar/FoundryVTT-ItemPiles-Bankers)
+- [UTILITY][Item Piles - Auctioneer](https://github.com/fantasycalendar/FoundryVTT-ItemPiles-Auctioneer)
 - [TOKEN/TEMPLATE/EFFECT][Token Magic FX](https://github.com/Feu-Secret/Tokenmagic)
+- [UTILITY][Token Sounds](https://github.com/Aedif/token-sounds)
 
 - [UTILITY][Token Variant Art](https://github.com/Aedif/TokenVariants)
 - [UTILITY][Mass Edit](https://github.com/Aedif/multi-token-edit)
@@ -122,6 +124,9 @@
 - [UTILITY][Automated Evocations Variant](https://github.com/p4535992/automated-evocations-variant)
 - [SCREEN][Hearthquake](https://github.com/edgedoggo/fvtt-earthquake/)
 - [UTILITY][Koboldworks – Data Inspector](https://gitlab.com/koboldworks/agnostic/data-inspector)
+- [UTILITY][Lyynix' More Journal Enrichers](https://github.com/Lyynix/MoreJournalEnrichers)
+- [UTILITY][Hot Pan & Zoom! for Foundry VTT](https://github.com/coffiarts/FoundryVTT-hot-pan)
+- [DISCORD][Oronder](https://foundryvtt.com/packages/oronder)
 
 ## =======================
 ## [SYSTEM] MODULES  D&D5e
@@ -164,6 +169,7 @@
 
 ### NOT ESSENTIAL (BUT KEEP IN TOUCH)
 
+- [TOKEN][Drag Ruler](https://github.com/manuelVo/foundryvtt-drag-ruler )
 - [Yendors Scene Actors](https://gitlab.com/yendors-vtt/yendors-scene-actors/)
 - [COMPENDIUM][Revised Weapons & Equipment for 5e](https://github.com/M0nk3yy/RWE)
 - [DnD5e Drag Ruler Integration](https://github.com/PepijnMC/ElevationDragRuler)
@@ -285,7 +291,6 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 
 - [STYLE][Mobile Improvements](https://gitlab.com/fvtt-modules-lab/mobile-improvements)
 - [UTILITY][TouchVTT](https://github.com/Oromis/touch-vtt)
-- [Utility][Hot Pan & Zoom! for Foundry VTT](https://github.com/coffiarts/FoundryVTT-hot-pan)
 
 ### MODULES ADVENTURES
 
