@@ -207,7 +207,6 @@
 
 ## 2021-06
 
-- [NOT ESSENTIAL][TOKEN][About Face](https://github.com/League-of-Foundry-Developers/about-face ) - https://raw.githubusercontent.com/League-of-Foundry-Developers/about-face/master/module.json
 - [NOT ESSENTIAL][COMBAT][Combat Carousel](https://github.com/death-save/combat-carousel-public ) - https://raw.githubusercontent.com/death-save/combat-carousel-public/main/module.json
 - [NOT ESSENTIAL][COMBAT][Combat Numbers](https://github.com/1000nettles/combat-numbers ) - https://raw.githubusercontent.com/1000nettles/combat-numbers/main/module.json
 - [NOT ESSENTIAL][COMBAT/ROLL][Crash's Hide Skill Rolls](https://github.com/crash1115/blind-roll-skills ) - https://raw.githubusercontent.com/crash1115/blind-roll-skills/master/module.json

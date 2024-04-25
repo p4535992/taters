@@ -109,7 +109,6 @@
 - [COMPENDIUM][Spells That Don't Suck](https://github.com/somanyrobots/foundry-vtt-spells-that-dont-suck)
 - [COMPENDIUM][Midi Item Showcase - Community](https://github.com/txm3278/midi-item-showcase-community)
 - [COMPENDIUM][gambits-premades](https://github.com/gambit07/gambits-premades)
-- [COMPENDIUM][Material Components for D&D5e](https://github.com/M0nk3yy/MC5e)
 
 - [TOKEN][TooManyTokens - DnD](https://github.com/IsThisMyRealName/too-many-tokens-dnd)
 - [COMBAT][Midi Qol](https://gitlab.com/tposney/midi-qol )
@@ -131,6 +130,8 @@
 - [TOKEN][Drag Ruler](https://github.com/manuelVo/foundryvtt-drag-ruler )
 - [Yendors Scene Actors](https://gitlab.com/yendors-vtt/yendors-scene-actors/)
 - [COMPENDIUM][Revised Weapons & Equipment for 5e](https://github.com/M0nk3yy/RWE)
+- [COMPENDIUM][Material Components for D&D5e](https://github.com/M0nk3yy/MC5e)
+
 - [DnD5e Drag Ruler Integration](https://github.com/PepijnMC/ElevationDragRuler)
 - [Token Action HUD Core](https://github.com/Larkinabout/fvtt-token-action-hud-core)
 - [Token Action HUD D&D 5e](https://github.com/Larkinabout/fvtt-token-action-hud-dnd5e)
