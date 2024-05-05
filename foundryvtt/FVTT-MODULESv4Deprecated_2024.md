@@ -1,5 +1,5 @@
 ### 2024-04
-
+- [DEPRECATED IN FAVOR OF Token Aura Ring][COMBAT][Token Auras](https://bitbucket.org/Fyorl/token-auras )
 - [INTEGRATED IN THE SYSTEM][ENTITY][Item Collection](https://gitlab.com/tposney/itemcollection )
 - [UTILITY][Dnd5e Scriptlet](https://github.com/tposney/dnd5e-scriptlets)
 - [UTILITY][Custom dnd5e](https://github.com/Larkinabout/fvtt-custom-dnd5e/)

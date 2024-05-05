@@ -65,7 +65,7 @@
 - [UTILITY][Zoom/Pan Options](https://github.com/shemetz/ZoomPanOptions)
 - [UTILITY][Limits](https://github.com/dev7355608/limits)
 - [UTILITY][Condition Lab & Triggler](https://github.com/mclemente/fvtt-condition-lab-triggler)
-
+- 
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
@@ -74,7 +74,7 @@
 - [COMBAT][Illandril's Token HUD Scaler](https://github.com/illandril/FoundryVTT-token-hud-scale)
 - [COMBAT][Smart Target](https://github.com/theripper93/Smart-Target)
 - [COMBAT][Tagger](https://github.com/fantasycalendar/FoundryVTT-Tagger)
-- [COMBAT][Token Auras](https://bitbucket.org/Fyorl/token-auras )
+- [COMBAT][Token Auras Ring](https://github.com/AnthonyEdmonds/token-aura-ring/)
 
 - [COMBAT][Tactical Grid](https://github.com/Aedif/tactical-grid)
 - [COMBAT][Monk's Combat Details](https://github.com/ironmonk88/monks-combat-details)
@@ -124,6 +124,7 @@
 - [UTILITY][Maxwell's Manual of Malicious Maladies](https://github.com/theripper93/Maxwell-s-Manual-of-Malicious-Maladies)
 - [UTILITY][Vision/Detection Modes for D&D 5e](https://github.com/dev7355608/vision-5e)
 - [COMPENDIUM/UTILITY][Stochastic, Fantastic!](https://github.com/etriebe/dnd-randomizer)
+- [SHEET][Kingdoms and Warfare Actors](https://github.com/JPMeehan/knw-actors)
 
 ### NOT ESSENTIAL (BUT KEEP IN TOUCH)
 
