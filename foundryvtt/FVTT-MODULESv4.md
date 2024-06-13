@@ -7,7 +7,6 @@
 
 - [MACRO][Advanced Macros](https://github.com/mclemente/fvtt-advanced-macros)
 - [ENTITY][Item Macro](https://github.com/Kekilla0/Item-Macro )
-- [ROLL][Dice Calculator/Dice Tray](https://gitlab.com/asacolips-projects/foundry-mods/foundry-vtt-dice-calculator/ )
 - [UTILITY][Simple Calendar](https://github.com/vigoren/foundryvtt-simple-calendar )
 - [MAP][Armsreach](https://github.com/p4535992/foundryvtt-arms-reach )
 
@@ -29,7 +28,6 @@
 
 - [UTILITY][Ignore Vision Variant](https://github.com/p4535992/foundryvtt-ignore-vision-variant)
 
-- [UTILITY][Quick Insert](https://gitlab.com/fvtt-modules-lab/quick-insert )
 - [UTILITY][Item Piles](https://github.com/fantasycalendar/FoundryVTT-ItemPiles)
 - [UTILITY][Item Piles - Bankers](https://github.com/fantasycalendar/FoundryVTT-ItemPiles-Bankers)
 - [UTILITY][Item Piles - Auctioneer](https://github.com/fantasycalendar/FoundryVTT-ItemPiles-Auctioneer)
@@ -52,12 +50,9 @@
 - [UTILITY][Tile Sort](https://github.com/theripper93/tile-sort)
 
 - [UTILITY][Comprehend Languages](https://github.com/Meneltamar/fvtt-comprehend-languages)
-- [MACRO][Improved Macro Editor](https://github.com/teroparvinen/foundry-improved-macro-editor)
-- [UI][JV's Minimal UI for FoundryVTT](https://github.com/saif-ellafi/foundryvtt-minimal-ui)
 
 - [MAP/ROLL][Dice So Nice](https://gitlab.com/riccisi/foundryvtt-dice-so-nice)
 - [UTILITY][Anonymous](https://github.com/reonZ/anonymous)
-- [UTILITY][Foundry Summons](https://github.com/MrVauxs/foundry-summons)
 - [UTILITY][Intelligent NPCs](https://github.com/cswendrowski/FoundryVTT-Intelligent-NPCs/releases/latest/download/module.json)
 - [MAP/UTILITY][Quick Grid Align](https://github.com/theripper93/quick-grid-align)
 - [NOTE/UTILITY][Note Licker](https://github.com/MrPrimate/NoteLicker)
@@ -65,7 +60,6 @@
 - [UTILITY][Zoom/Pan Options](https://github.com/shemetz/ZoomPanOptions)
 - [UTILITY][Limits](https://github.com/dev7355608/limits)
 - [UTILITY][Condition Lab & Triggler](https://github.com/mclemente/fvtt-condition-lab-triggler)
-- 
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
@@ -86,7 +80,7 @@
 
 ### NOT ESSENTIAL (BUT INTERESTING)
 
-- [UTILITY][Sidebar Macro](https://github.com/arcanistzed/sidebar-macros)
+- [UTILITY][Sidebar Macro](https://github.com/Foundry-Workshop/sidebar-macros)
 - [CHAT][Chat Portrait](https://github.com/ShoyuVanilla/FoundryVTT-Chat-Portrait/ )
 - [LIGHT/SOUND][Light/Sound Mask](https://github.com/caewok/fvtt-light-mask)
 - [UTILITY][Walled Templates](https://github.com/caewok/fvtt-walled-templates)
@@ -94,7 +88,6 @@
 - [UTILITY][Automated Evocations Variant](https://github.com/p4535992/automated-evocations-variant)
 - [SCREEN][Hearthquake](https://github.com/edgedoggo/fvtt-earthquake/)
 - [UTILITY][Koboldworks – Data Inspector](https://gitlab.com/koboldworks/agnostic/data-inspector)
-- [UTILITY][Lyynix' More Journal Enrichers](https://github.com/Lyynix/MoreJournalEnrichers)
 - [UTILITY][Hot Pan & Zoom! for Foundry VTT](https://github.com/coffiarts/FoundryVTT-hot-pan)
 - [DISCORD][Oronder](https://foundryvtt.com/packages/oronder)
 - [UTILITY][Metron](https://github.com/Ethaks/FVTT-Metron)
@@ -103,10 +96,10 @@
 ## [SYSTEM] MODULES  D&D5e
 ## =======================
 
+- [UTILITY][Custom dnd5e](https://github.com/Larkinabout/fvtt-custom-dnd5e/)
+
 - [COMPENDIUM][Kris's Compendium of Trade Goods Dnd5e](https://github.com/kristkos/KCTG-5e)
 - [COMPENDIUM][Chris's Premades](https://github.com/chrisk123999/chris-premades)
-- [COMPENDIUM][Boss Loot Interactive Magic Items, Free Pack](https://github.com/boss-loot/Boss-Loot-Interactive-Magic-Items)
-- [COMPENDIUM][Spells That Don't Suck](https://github.com/somanyrobots/foundry-vtt-spells-that-dont-suck)
 - [COMPENDIUM][Midi Item Showcase - Community](https://github.com/txm3278/midi-item-showcase-community)
 - [COMPENDIUM][gambits-premades](https://github.com/gambit07/gambits-premades)
 
@@ -117,23 +110,15 @@
 - [UTILITY][Build-a-Bonus](https://github.com/krbz999/babonus)
 - [CHARACTER SHEET/UTILITY][Variant Encumbrance 5e](https://github.com/VanirDev/VariantEncumbrance )
 - [UTILITY][Arbron's Summoning](https://github.com/arbron/fvtt-summoner)
-- [JOURNALS/UTILITY][Monk's Shops](https://github.com/ironmonk88/monks-shops)
 - [ANIMATIONS][D&D5e Animations](https://github.com/MrVauxs/dnd5e-animations)
-- [UTILITY][Automated Objects, Interactions and Effects](https://github.com/ZotyDev/objects-interactions-fx)
 
 - [UTILITY][Maxwell's Manual of Malicious Maladies](https://github.com/theripper93/Maxwell-s-Manual-of-Malicious-Maladies)
 - [UTILITY][Vision/Detection Modes for D&D 5e](https://github.com/dev7355608/vision-5e)
-- [COMPENDIUM/UTILITY][Stochastic, Fantastic!](https://github.com/etriebe/dnd-randomizer)
 - [SHEET][Kingdoms and Warfare Actors](https://github.com/JPMeehan/knw-actors)
+- [UTILITY][Conversation HUD](https://github.com/CristianVasile23/conversation-hud)
 
 ### NOT ESSENTIAL (BUT KEEP IN TOUCH)
 
-- [TOKEN][Drag Ruler](https://github.com/manuelVo/foundryvtt-drag-ruler )
-- [Yendors Scene Actors](https://gitlab.com/yendors-vtt/yendors-scene-actors/)
-- [COMPENDIUM][Revised Weapons & Equipment for 5e](https://github.com/M0nk3yy/RWE)
-- [COMPENDIUM][Material Components for D&D5e](https://github.com/M0nk3yy/MC5e)
-
-- [DnD5e Drag Ruler Integration](https://github.com/PepijnMC/ElevationDragRuler)
 - [Token Action HUD Core](https://github.com/Larkinabout/fvtt-token-action-hud-core)
 - [Token Action HUD D&D 5e](https://github.com/Larkinabout/fvtt-token-action-hud-dnd5e)
 
@@ -243,10 +228,6 @@ ATTENZIONE: ALTRI MODULI SI BASANO SULLA LINGUA INGLESE PER LABEL NOMI ECC. E PO
 - [LANGUAGE][Italian Core](https://gitlab.com/riccisi/foundryvtt-lang-it-it ) 
 - [LANGUAGE][FoundryVTT DnD5e lang it-IT](https://gitlab.com/riccisi/foundryvtt-dnd5e-lang-it-it)
 - [LANGUAGE][Italian Modules Language Pack](https://gitlab.com/riccisi/italian-modules-language-pack)
-
-### MODULES FOR MACROS
-
-- [UTILITY][JB2A Sequencer Macro Library](https://github.com/IrateRedKite/jb2a-sequencer-spell-macros)
 
 ### MODULES FOR MANAGE AUDIO
 

@@ -1,8 +1,30 @@
 ### 2024-04
+- [UTILITY][JB2A Sequencer Macro Library](https://github.com/IrateRedKite/jb2a-sequencer-spell-macros)
+
+- [JOURNALS/UTILITY][Monk's Shops](https://github.com/ironmonk88/monks-shops)
+- [UTILITY][Automated Objects, Interactions and Effects](https://github.com/ZotyDev/objects-interactions-fx)
+- [UTILITY][Lyynix' More Journal Enrichers](https://github.com/Lyynix/MoreJournalEnrichers)
+
+- [UTILITY][Foundry Summons](https://github.com/MrVauxs/foundry-summons)
+
+- [IS BETTER OMNISEARCH FROM THERIPPER93][UTILITY][Quick Insert](https://gitlab.com/fvtt-modules-lab/quick-insert )
+- [ROLL][Dice Calculator/Dice Tray](https://gitlab.com/asacolips-projects/foundry-mods/foundry-vtt-dice-calculator/ )
+- [MACRO][Improved Macro Editor](https://github.com/teroparvinen/foundry-improved-macro-editor)
+- [UI][JV's Minimal UI for FoundryVTT](https://github.com/saif-ellafi/foundryvtt-minimal-ui)
+
+- [DnD5e Drag Ruler Integration](https://github.com/PepijnMC/ElevationDragRuler)
+- [TOKEN][Drag Ruler](https://github.com/manuelVo/foundryvtt-drag-ruler )
+- [COMPENDIUM][Revised Weapons & Equipment for 5e](https://github.com/M0nk3yy/RWE)
+- [COMPENDIUM][Material Components for D&D5e](https://github.com/M0nk3yy/MC5e)
+
+- [COMPENDIUM][Boss Loot Interactive Magic Items, Free Pack](https://github.com/boss-loot/Boss-Loot-Interactive-Magic-Items)
+- [COMPENDIUM][Spells That Don't Suck](https://github.com/somanyrobots/foundry-vtt-spells-that-dont-suck)
+- [COMPENDIUM/UTILITY][Stochastic, Fantastic!](https://github.com/etriebe/dnd-randomizer)
+- [Yendors Scene Actors](https://gitlab.com/yendors-vtt/yendors-scene-actors/)
+
 - [DEPRECATED IN FAVOR OF Token Aura Ring][COMBAT][Token Auras](https://bitbucket.org/Fyorl/token-auras )
 - [INTEGRATED IN THE SYSTEM][ENTITY][Item Collection](https://gitlab.com/tposney/itemcollection )
 - [UTILITY][Dnd5e Scriptlet](https://github.com/tposney/dnd5e-scriptlets)
-- [UTILITY][Custom dnd5e](https://github.com/Larkinabout/fvtt-custom-dnd5e/)
 - [UTILITY][](https://foundryvtt.com/packages/so-inspired)
 - [UTILITY][](https://foundryvtt.com/packages/stroud-dnd-helpers)
 - [UTILITY][Simbul's Cover Calculator](https://github.com/vtt-lair/simbuls-cover-calculator)

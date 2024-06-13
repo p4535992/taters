@@ -13,7 +13,6 @@
 - [NOT ESSENTIAL][COMBAT][Danger-Zone](https://github.com/napolitanod/Danger-Zone)
 - [NOT ESSENTIAL][Weather Reports](https://github.com/paulcheeba/weather-reports)
 - [NOT ESSENTIAL][Weather Color Settings](https://github.com/cirrahn/foundry-weather-color-settings)
-- [INTELLIGENT NPC IS BETTER][UTILITY][Conversation HUD](https://github.com/CristianVasile23/conversation-hud)
 - [WINDOWS TAB AND MJE ARE BETTER][JV's Window Controls for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-window-controls)
 - [NOT NEDDED ANYMORE ON V11][UTILITY][Drag Anything To Hotbar for Foundry VTT](https://github.com/saif-ellafi/foundryvtt-drag-all-to-hotbar)
 - [ANONYMUS IS BETTER][UTILITY][Hide GM Rolls](https://github.com/sPOiDar/fvtt-module-hide-gm-rolls)
