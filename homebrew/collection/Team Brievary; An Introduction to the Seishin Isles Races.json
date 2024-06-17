@@ -3,7 +3,7 @@
 	"_meta": {
 		"sources": [
 			{
-				"json": "SeishinIsles",
+				"json": "SEIISL",
 				"abbreviation": "SEIISL",
 				"full": "An Introduction to the Seishin Isles Races",
 				"authors": [
@@ -21,6 +21,96 @@
 		"dateLastModified": 1703373316,
 		"_dateLastModifiedHash": "ee61c78984"
 	},
+	"monster": [
+		{
+			"name": "Fox Kitsune Form",
+			"size": [
+				"S"
+			],
+			"type": "beast",
+			"source": "SEIISL",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "2d8",
+				"average": 9
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 9,
+			"dex": 15,
+			"con": 10,
+			"int": 3,
+			"wis": 12,
+			"cha": 6,
+			"passive": 13,
+			"cr": "1/8",
+			"shortName": "Fox Kitsune Form",
+			"page": 5,
+			"skill": {
+				"perception": "+3"
+			},
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell.",
+					"entries": [
+						"The fox has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Sly Get Away.",
+					"entries": [
+						"The fox can use its bonus action to perform the disengage action."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 1} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"bonus": [
+				{
+					"name": "Sly Get Away.",
+					"entries": [
+						"The fox can use its bonus action to perform the disengage action."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/USR9wFm.jpg"
+			},
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/USR9wFm.jpg"
+						}
+					}
+				]
+			},
+			"damageTags": [
+				"P"
+			]
+		}
+	],
 	"race": [
 		{
 			"name": "Spirit Folk",
@@ -460,7 +550,7 @@
 				{
 					"name": "Form of the Fox",
 					"entries": [
-						"Using an action, you can change your form into that of a three tailed fox. the transformation lasts for 1 hour, or until you are reduced to 0 hit point.",
+						"Using an action, you can change your form into that of a {@creature Fox Kitsune Form|SEIISL|one to three tailed fox}. the transformation lasts for 1 hour, or until you are reduced to 0 hit point.",
 						"{@i While in your fox form, you take the game statistics of a normal fox, retaining your Intelligence, Wisdom and Charisma stats. You are limited in the actions you can perform by the nature of your new form, and can't speak, cast spells, or take any other action that requires hands or speech. You are still capable of ending this ability early with an action. You must complete a long rest before using this feature again.}"
 					],
 					"type": "entries"
