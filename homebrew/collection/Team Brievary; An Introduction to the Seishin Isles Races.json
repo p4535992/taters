@@ -109,6 +109,94 @@
 			"damageTags": [
 				"P"
 			]
+		},
+		{
+			"name": "Cat Nekomata Form",
+			"size": [
+				"S"
+			],
+			"type": "beast",
+			"source": "SEIISL",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "2d8",
+				"average": 9
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 9,
+			"dex": 15,
+			"con": 10,
+			"int": 3,
+			"wis": 12,
+			"cha": 6,
+			"passive": 13,
+			"cr": "1/8",
+			"shortName": "Cat Nekomata Form",
+			"page": 5,
+			"skill": {
+				"perception": "+3"
+			},
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell.",
+					"entries": [
+						"The cat has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Sly Get Away.",
+					"entries": [
+						"The cat can use its bonus action to perform the disengage action."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 1} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"bonus": [
+				{
+					"name": "Sly Get Away.",
+					"entries": [
+						"The cat can use its bonus action to perform the disengage action."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/qsnu2A6.jpg"
+			},
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/qsnu2A6.jpg"
+						}
+					}
+				]
+			},
+			"damageTags": [
+				"P"
+			]
 		}
 	],
 	"race": [
@@ -659,6 +747,203 @@
 						"href": {
 							"type": "external",
 							"url": "https://i.imgur.com/uukU2dy.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Nekomata",
+			"source": "SEIISL",
+			"ability": [
+				{
+					"dex": 2,
+					"int": 1
+				}
+			],
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 30
+			},
+			"entries": [
+				"Your nekomata character has an assortment of inborn abilities, part and parcel of the nekomata nature.",
+				{
+					"name": "Ability Score Increase",
+					"type": "entries",
+					"entries": [
+						"Dexterity score increases by 2, and your Intelligence score increases by 1."
+					]
+				},
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Nekomata reach adulthood at age 50, but cease to physically age after the age of 20. They can live up to the age of 500 years."
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"Due to their nature of being a bit mischievous, nekomata tends to lean towards a more chaotic alignment. Nekomata are known to be both good and evil otherwise."
+					]
+				},
+				{
+					"name": "Size",
+					"type": "entries",
+					"entries": [
+						"Nekomata are generally on the smaller side of most humanoids ranging from 4'7\" to the tallest being just under 5'9\". Your size is Medium."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Speed",
+					"entries": [
+						"Your base walking speed is 30 feet."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Form of the Cat",
+					"entries": [
+						"Using an action, you can change your form into that of a {@creature Cat Nekomata Form|SEIISL|two tailed cat}. the transformation lasts for 1 hour, or until you are reduced to 0 hit point.",
+						"{@i While in your cat form, you take the game statistics of a normal cat, retaining your Intelligence, Wisdom and Charisma stats. You are limited in the actions you can perform by the nature of your new form, and can't speak, cast spells, or take any other action that requires hands or speech. You are still capable of ending this ability early with an action. You must complete a long rest before using this feature again.}"
+                    ],
+					"type": "entries"
+				},
+				{
+					"name": "Friend of the Beasts",
+					"entries": [
+						"You gain advantage on all Wisdom (animal handling) rolls."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Sylvan."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Nekomata Magic",
+					"entries": [
+						"You can cast {@spell false life|PHB} with this trait, using Wisdom as your spellcasting ability for them. Once you cast either spell, you can't cast it again with this trait until you finish a short or long rest. When you reach 5th level, you can also cast the {@spell raise dead|PHB} spell once per long rest. Intelligence as your spellcasting ability for these spells."
+					],
+					"type": "entries"
+				}
+			],
+			"darkvision": 60,
+			"additionalSpells": [
+				{
+					"innate": {
+						"1": {
+							"daily": {
+								"1": [
+									"false life"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"raise dead"
+								]
+							}
+						}
+					},
+					"ability": "int"
+				}
+			],
+			"traitTags": [
+				"Uncommon Race"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"sylvan": true
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"name": "Nekomata",
+						"entries": [
+							"Mysterious humanoids from the secluded mountains and deep forest of the Seishin isles, the nekomata are typical members of the Kemono Empire, oppressed due to their inborn control of the undead, and the fact that they are not kitsune. Preferring to avoid the watchful gaze of their empress, the naekomata live in small secluded communities and clans, leaving only to complete destined tasks or to recover supplies for their kin."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Progenitors of Death",
+						"entries": [
+							"Since ancient times when the different races of the Kemono Empire first set foot within he Seishin Isles, the nekomata has the ability to call upon the souls of the deceased With this innate connection to the afterlife, and ability to manipulate the deceased, the nekomata developed a unique cultural approach to death, seeing the passing of a life as but the next stage for them, and thinking of their bodies as vessels that were discarded when they returned to the upper realms, and could be left in the care of their descendants to aid them with their activities, primarily farming and construction. When the body finally broke down to the point of uselessness, it would be ground into powder and used as fertilizer within the fields of the nekomata tribes to help bolster plant growth, allowing the bodies to give life once more."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Secluded Communities",
+						"entries": [
+							"Nekomata are often found in small collectives & tribes, usually within hard to reach mountainous regions, where they grow up away from the prying eyes and overbearing authority of the upper ranks of the Kemono Empire. In rare cases, several groups of nekomata will group together to create proper towns, and may start to attempt to interact with the rest of the Kemonon society, though these towns and villages still tend to be located far away from others.",
+							"Due to these reasons, nekomata are a rare sight within the Seishin Isles, and are often found donning disguises when exploring, and leaving their homes, so as not to arouse suspicion, and avoid prejudice from the other races."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Nekomata Names",
+						"entries": [
+							"Nekomata use names from their local culture, sounding quite different to those who do not hail from Seishin.",
+							{
+								"entries": [
+									{
+										"name": "Male Names",
+										"entries": [
+											"Masuru, Toshi, Sachiko, Hoshiko, Note"
+										],
+										"type": "entries"
+									},
+									{
+										"name": "Female Names",
+										"entries": [
+											"Shika, Masa, Kohaku, Sachiko, Maeko"
+										],
+										"type": "entries"
+									}
+								],
+								"type": "entries"
+							}
+						],
+						"type": "entries"
+					},
+					{
+						"type": "quote",
+						"entries": [
+							"REVEALING THEMSELVES FROM BEHIND SHRUBS AND ROCKS THAT lined the valley path, it was noticeable that despite these skeletons looking very human in nature, they all had two ghostly tails, looking like blue fire sprawling from their backs. Then the perpetrater of this encirclement came forward Clad in dark robes and hiding his face, one wouldn't know their identity if not for the adjustments for her ears on the hood, and her twin tails swaying behind her.",
+							"Needless to say it appeared as if our presence within the valley was unwelcome."
+						],
+						"by": "Iorki Princeps, The Seishin Expedition"
+					},
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link MahiruNYA|https://www.deviantart.com/mahirunya/art/My-OC-Kurihara-Homura-897046352}. Please credit if you repost elsewhere."
+						],
+						"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/mq277c7.jpg"
 						}
 					}
 				]
