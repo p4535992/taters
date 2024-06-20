@@ -197,6 +197,94 @@
 			"damageTags": [
 				"P"
 			]
+		},
+		{
+			"name": "Raccoon Tanuki Form",
+			"size": [
+				"S"
+			],
+			"type": "beast",
+			"source": "SEIISL",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "2d8",
+				"average": 9
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 9,
+			"dex": 15,
+			"con": 10,
+			"int": 3,
+			"wis": 12,
+			"cha": 6,
+			"passive": 13,
+			"cr": "1/8",
+			"shortName": "Raccoon Tanuki Form",
+			"page": 5,
+			"skill": {
+				"perception": "+3"
+			},
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell.",
+					"entries": [
+						"The raccoon has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Sly Get Away.",
+					"entries": [
+						"The raccoon can use its bonus action to perform the disengage action."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 1} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"bonus": [
+				{
+					"name": "Sly Get Away.",
+					"entries": [
+						"The raccoon can use its bonus action to perform the disengage action."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "XXX"
+			},
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			},
+			"damageTags": [
+				"P"
+			]
 		}
 	],
 	"race": [
@@ -578,6 +666,396 @@
 			}
 		},
 		{
+			"name": "Kitsune Variant (Trickery)",
+			"source": "SEIISL",
+			"ability": [
+				{
+					"cha": 2,
+					"dex": 1
+				}
+			],
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 30
+			},
+			"entries": [
+				"Your kitsune character has an assortment of inborn abilities, part and parcel of the kitsune nature.",
+				{
+					"name": "Ability Score Increase",
+					"type": "entries",
+					"entries": [
+						"Your Charisma score increases by 2 and your Dexterity score by 1."
+					]
+				},
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Kitsune mature and reach adulthood at about the same rate as humans and can live up to 1,000 years even though their average lifespan is usually 850 years."
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"Kitsune tend to be more chaotic and are only very rarely evil."
+					]
+				},
+				{
+					"name": "Size",
+					"type": "entries",
+					"entries": [
+						"Kitsune are generally on the smaller side of most humanoids ranging from 4'7 to the tallest being just under 5'9. Your size is Medium."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Speed",
+					"entries": [
+						"Your base walking speed is 30 feet."
+					]
+				},
+				{
+					"name": "Masked form",
+					"entries": [
+						"As an action, you can take the form of a specific human being of the same sex. This form is the same each time the ability is used, and you cannot use any type of attack involving bites while using this ability. If someone wishes to see your true form, they must pass an Investigation or Perception test with CD 10 + your Deception modifier."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Fox Fire",
+					"entries": [
+						"Because of your connection to magic and your fairy heritage you are able to cast the {@spell dancing lights|PHB} trick. Your spellcasting skill for this spell is Charisma and the dancing lights will always appear as blue flames."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Kitsune tails",
+					"entries": [
+						"All kitsune have at least one tail. In addition they gain an additional tail at levels 3 5, 8 12 15 and 17. Each new tail adds 1 Charisma OR 1 Dexterity to your score, however the kitsune cannot gain Charisma and Dexterity through the characteristic increases given by level increases. There is still a great mystery surrounding the legends concerning the eighth and ninth tails."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Agile",
+					"entries": [
+						"Gain proficiency in the skill in Acrobatics."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Sylvan."
+					],
+					"type": "entries"
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"known": {
+						"1": [
+							"dancing lights#c"
+						]
+					}
+				}
+			],
+			"skillProficiencies": [
+				{
+					"acrobatics": true
+				}
+			],
+			"traitTags": [
+				"Uncommon Race"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"sylvan": true
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"name": "Kitsune Variant (Trickery)",
+						"entries": [
+							"Hailing from the lands of Seishin, East of the Continent of Occidentra, the Kitsune are an ancient race of illusionists, having developed a culture around their leaders' worship, and being recognized as one of the most powerful dynasties in the Seishin isles."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Fox-Like Cunning",
+						"entries": [
+							"The Kitsune are a smart race, placing significance on the belief that the strongest warriors can outsmart an opponent before they have to overpower one. Utilizing sly words, and enacting on apparent emotions, the Kitsune can beguile others around them with words alone, and magic to enhance it.",
+							"Through Clever manipulation, of other races and themselves, the Kitsune rose to power over centuries and millenia, forming a powerful empire upon the southern isle. While other races live among them, such as the Tanuki and Nekomata, the Kitsune have been able to maintain their rule, while keeping the other kingdoms from initiating wars against them by pitting their kingdoms attentions elsewhere."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Mask Warrior",
+						"entries": [
+							"An interesting aspect of their culture, and one that is repeatedly seen withing the Seishin isles, is their affinity for mask craft, and their use of masks in combats and uniform. Even the Empress carries a mask, though she only ever appears to wear it when outside her domain, or when in combat practice.",
+							"In truth, like all masks within the Seishin Isles, there is both a cultural and practical significance to it. The masks of the Kitsune, especially amidst the nobility and high-ranking military, can act as a spellcasting focus for the Kitsune, and some can even prevent divination magic from being casted upon the wearers. They also help to hide the Kitsunes emotions in combat as well as creep their enemies out."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Fae Descent",
+						"entries": [
+							"A most shocking revelation to most, the Kistsune can trace their origins back to the Mystramm, having traveled to the Seishin Iles sometime during the 2nd or 3rd Eras and claim to have direct blood relations to the ancient Archfey of the Wilderbeasts, Piztiak. It is from these blood ties that the Kitsune were able to develop vast control over magics of the illusionary domain."
+						],
+						"type": "inset"
+					},
+					{
+						"name": "Kitsune Names",
+						"entries": [
+							"Kitsune use names from their local culture, sounding quite different to those who do not hail from Seishin.",
+							{
+								"entries": [
+									{
+										"name": "Male Names",
+										"entries": [
+											"Akira, Kaien, Ren, Roku, Tsuki"
+										],
+										"type": "entries"
+									},
+									{
+										"name": "Female Names",
+										"entries": [
+											"Kauri, Kazane, Rumia, Shion, Yuna"
+										],
+										"type": "entries"
+									}
+								],
+								"type": "entries"
+							}
+						],
+						"type": "entries"
+					},
+					{
+						"type": "quote",
+						"entries": [
+							"THEY WERE QUITE EXQUISIE, THE KITSUNE. WEARING FINE GARBS, with their tails full out for display, we were amazed. Finally, we were brought to the waiting chamber of their leader. Standing up to greet us, her appearance was hypnotic. Her hair was as white as snow, and her 9 tails on full display for us to witness. She would have succeeded with her spell, had I not caught onto what she was doing."
+						],
+						"by": "Iorki Princeps, The Seishin Expedition"
+					},
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
+						],
+						"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Kitsune Variant (Feral)",
+			"source": "SEIISL",
+			"ability": [
+				{
+					"str": 2,
+					"dex": 1
+				}
+			],
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 30
+			},
+			"entries": [
+				"Your kitsune character has an assortment of inborn abilities, part and parcel of the kitsune nature.",
+				{
+					"name": "Ability Score Increase",
+					"type": "entries",
+					"entries": [
+						"Your Strength score increases by 2 and your Dexterity score by 1."
+					]
+				},
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Kitsune mature and reach adulthood at about the same rate as humans and can live up to 1,000 years even though their average lifespan is usually 850 years."
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"Kitsune tend to be more chaotic and are only very rarely evil."
+					]
+				},
+				{
+					"name": "Size",
+					"type": "entries",
+					"entries": [
+						"Kitsune are generally on the smaller side of most humanoids ranging from 4'7 to the tallest being just under 5'9. Your size is Medium."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Speed",
+					"entries": [
+						"Your base walking speed is 30 feet."
+					]
+				},
+				{
+					"name": "Masked form",
+					"entries": [
+						"As an action, you can take the form of a specific human being of the same sex. This form is the same each time the ability is used, and you cannot use any type of attack involving bites while using this ability. If someone wishes to see your true form, they must pass an Investigation or Perception test with CD 10 + your Deception modifier."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Fangs",
+					"entries": [
+						"In your kitsune form, you can make a bite attack that deals 1d4 piercing damage and can be used as a reaction."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Kitsune tails",
+					"entries": [
+						"All kitsune have at least one tail. In addition they gain an additional tail at levels 3 5, 8 12 15 and 17. Each new tail adds 1 Charisma OR 1 Dexterity to your score, however the kitsune cannot gain Charisma and Dexterity through the characteristic increases given by level increases. There is still a great mystery surrounding the legends concerning the eighth and ninth tails."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Athletic",
+					"entries": [
+						"Gain proficiency in the skill Athletic."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Sylvan."
+					],
+					"type": "entries"
+				}
+			],
+			"skillProficiencies": [
+				{
+					"athletic": true
+				}
+			],
+			"darkvision": 60,
+			"traitTags": [
+				"Uncommon Race"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"sylvan": true
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"name": "Kitsune Variant (Feral)",
+						"entries": [
+							"Hailing from the lands of Seishin, East of the Continent of Occidentra, the Kitsune are an ancient race of illusionists, having developed a culture around their leaders' worship, and being recognized as one of the most powerful dynasties in the Seishin isles."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Fox-Like Cunning",
+						"entries": [
+							"The Kitsune are a smart race, placing significance on the belief that the strongest warriors can outsmart an opponent before they have to overpower one. Utilizing sly words, and enacting on apparent emotions, the Kitsune can beguile others around them with words alone, and magic to enhance it.",
+							"Through Clever manipulation, of other races and themselves, the Kitsune rose to power over centuries and millenia, forming a powerful empire upon the southern isle. While other races live among them, such as the Tanuki and Nekomata, the Kitsune have been able to maintain their rule, while keeping the other kingdoms from initiating wars against them by pitting their kingdoms attentions elsewhere."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Mask Warrior",
+						"entries": [
+							"An interesting aspect of their culture, and one that is repeatedly seen withing the Seishin isles, is their affinity for mask craft, and their use of masks in combats and uniform. Even the Empress carries a mask, though she only ever appears to wear it when outside her domain, or when in combat practice.",
+							"In truth, like all masks within the Seishin Isles, there is both a cultural and practical significance to it. The masks of the Kitsune, especially amidst the nobility and high-ranking military, can act as a spellcasting focus for the Kitsune, and some can even prevent divination magic from being casted upon the wearers. They also help to hide the Kitsunes emotions in combat as well as creep their enemies out."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Fae Descent",
+						"entries": [
+							"A most shocking revelation to most, the Kistsune can trace their origins back to the Mystramm, having traveled to the Seishin Iles sometime during the 2nd or 3rd Eras and claim to have direct blood relations to the ancient Archfey of the Wilderbeasts, Piztiak. It is from these blood ties that the Kitsune were able to develop vast control over magics of the illusionary domain."
+						],
+						"type": "inset"
+					},
+					{
+						"name": "Kitsune Names",
+						"entries": [
+							"Kitsune use names from their local culture, sounding quite different to those who do not hail from Seishin.",
+							{
+								"entries": [
+									{
+										"name": "Male Names",
+										"entries": [
+											"Akira, Kaien, Ren, Roku, Tsuki"
+										],
+										"type": "entries"
+									},
+									{
+										"name": "Female Names",
+										"entries": [
+											"Kauri, Kazane, Rumia, Shion, Yuna"
+										],
+										"type": "entries"
+									}
+								],
+								"type": "entries"
+							}
+						],
+						"type": "entries"
+					},
+					{
+						"type": "quote",
+						"entries": [
+							"THEY WERE QUITE EXQUISIE, THE KITSUNE. WEARING FINE GARBS, with their tails full out for display, we were amazed. Finally, we were brought to the waiting chamber of their leader. Standing up to greet us, her appearance was hypnotic. Her hair was as white as snow, and her 9 tails on full display for us to witness. She would have succeeded with her spell, had I not caught onto what she was doing."
+						],
+						"by": "Iorki Princeps, The Seishin Expedition"
+					},
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
+						],
+						"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			}
+		},
+		{
 			"name": "Kitsune",
 			"source": "SEIISL",
 			"ability": [
@@ -639,7 +1117,8 @@
 					"name": "Form of the Fox",
 					"entries": [
 						"Using an action, you can change your form into that of a {@creature Fox Kitsune Form|SEIISL|one to three tailed fox}. the transformation lasts for 1 hour, or until you are reduced to 0 hit point.",
-						"{@i While in your fox form, you take the game statistics of a normal fox, retaining your Intelligence, Wisdom and Charisma stats. You are limited in the actions you can perform by the nature of your new form, and can't speak, cast spells, or take any other action that requires hands or speech. You are still capable of ending this ability early with an action. You must complete a long rest before using this feature again.}"
+						"While in your fox form, you take the game statistics of a normal fox, retaining your Intelligence, Wisdom and Charisma stats. You are limited in the actions you can perform by the nature of your new form, and can't speak, cast spells, or take any other action that requires hands or speech.", 
+						"You are still capable of ending this ability early with an action. You must complete a long rest before using this feature again."
 					],
 					"type": "entries"
 				},
@@ -815,7 +1294,8 @@
 					"name": "Form of the Cat",
 					"entries": [
 						"Using an action, you can change your form into that of a {@creature Cat Nekomata Form|SEIISL|two tailed cat}. the transformation lasts for 1 hour, or until you are reduced to 0 hit point.",
-						"{@i While in your cat form, you take the game statistics of a normal cat, retaining your Intelligence, Wisdom and Charisma stats. You are limited in the actions you can perform by the nature of your new form, and can't speak, cast spells, or take any other action that requires hands or speech. You are still capable of ending this ability early with an action. You must complete a long rest before using this feature again.}"
+						"While in your cat form, you take the game statistics of a normal cat, retaining your Intelligence, Wisdom and Charisma stats. You are limited in the actions you can perform by the nature of your new form, and can't speak, cast spells, or take any other action that requires hands or speech.", 
+						"You are still capable of ending this ability early with an action. You must complete a long rest before using this feature again."
                     ],
 					"type": "entries"
 				},
@@ -827,16 +1307,16 @@
 					"type": "entries"
 				},
 				{
-					"name": "Languages",
+					"name": "Nekomata Magic",
 					"entries": [
-						"You can speak, read, and write Common and Sylvan."
+						"You can cast {@spell false life|PHB} with this trait, using Wisdom as your spellcasting ability for them. Once you cast either spell, you can't cast it again with this trait until you finish a short or long rest. When you reach 5th level, you can also cast the {@spell raise dead|PHB} spell once per long rest. Intelligence as your spellcasting ability for these spells."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Nekomata Magic",
+					"name": "Languages",
 					"entries": [
-						"You can cast {@spell false life|PHB} with this trait, using Wisdom as your spellcasting ability for them. Once you cast either spell, you can't cast it again with this trait until you finish a short or long rest. When you reach 5th level, you can also cast the {@spell raise dead|PHB} spell once per long rest. Intelligence as your spellcasting ability for these spells."
+						"You can speak, read, and write Common and Sylvan."
 					],
 					"type": "entries"
 				}
@@ -944,6 +1424,202 @@
 						"href": {
 							"type": "external",
 							"url": "https://i.imgur.com/mq277c7.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Tanuki",
+			"source": "SEIISL",
+			"ability": [
+				{
+					"dex": 2,
+					"wis": 1
+				}
+			],
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 30
+			},
+			"entries": [
+				"Your tanuki character has an assortment of inborn abilities, part and parcel of the tanuki nature.",
+				{
+					"name": "Ability Score Increase",
+					"type": "entries",
+					"entries": [
+						"Dexterity score increases by 2, and your Wisdom score increases by 1."
+					]
+				},
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Tanuki reach adulthood at age 100, but cease to physically age after the age of 30. They can live up to the age of 500."
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"Due to their nature of being a bit mischievous, tanuki tends to lean towards a more chaotic alignment. Tanuki are known to be both good and evil otherwise."
+					]
+				},
+				{
+					"name": "Size",
+					"type": "entries",
+					"entries": [
+						"Tanuki are generally on the smaller side of most humanoids ranging from 4'7\" to the tallest being just under 5'9\". Your size is Medium."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Speed",
+					"entries": [
+						"Your base walking speed is 30 feet."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Form of the Raccoon",
+					"entries": [
+						"Using an action, you can change your form into that of a {@creature Raccoon Tanuki Form|SEIISL|raccoon}. the transformation lasts for 1 hour, or until you are reduced to 0 hit point.",
+						"While in your raccoon form, you take the game statistics of a normal raccoon, retaining your Intelligence, Wisdom and Charisma stats. You are limited in the actions you can perform by the nature of your new form, and can't speak, cast spells, or take any other action that requires hands or speech.",
+						"You are still capable of ending this ability early with an action. You must complete a long rest before using this feature again."
+                    ],
+					"type": "entries"
+				},
+				{
+					"name": "Friend of the Beasts",
+					"entries": [
+						"You gain advantage on all Wisdom (animal handling) rolls."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Tanuki Magic",
+					"entries": [
+						"You know the {@spell thaumaturgy|PHB} cantrip. When you reach 3rd level, you can cast the {@spell silent image|PHB} spell once per long rest, and when you reach 5th level, you can also cast the {@spell mirror image|PHB} spell once per long rest. Wisdom as your spellcasting ability for these spells."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Sylvan."
+					],
+					"type": "entries"
+				}
+			],
+			"darkvision": 60,
+			"additionalSpells": [
+				{
+					"innate": {
+						"3": {
+							"daily": {
+								"1": [
+									"silent image"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"mirror image"
+								]
+							}
+						}
+					},
+					"ability": "wis",
+					"known": {
+						"1": [
+							"thaumaturgy#c"
+						]
+					}
+				}
+			],
+			"traitTags": [
+				"Uncommon Race"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"sylvan": true
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"name": "Tanuki",
+						"entries": [
+							"Hailing from the lands of Seishin, the tanuki, also known as the raccoon spirits or raccoon dogs, are an ancient fay race that claim the souther islands of the Seishin archipelago as their home. Considered the equals of the kitsune, the tanuki are known for their powerful innate control and abilities related to the school of illusion magic, and are seen to be very comparable to the kitsune in all skills except for deceit."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Childish souls",
+						"entries": [
+							"The most distinct difference between the tanuki and the kitsune is their general personality/ disposition. The kitsune are sly and conniving, while the tanuki tend to have a brighter outlook on life, retaining a youthful personality and maintaining a naive thought process when interacting with others. This is most apparent with the tanukis general disposition towards pranks. Despite being powerful illusionists, tanuki have spent the betterpart of their entire history within the isles using their illusions to mess with and surprise the other races, enjoying the shock and annoyance that comes from their successful schemes, and playful ploys.",
+							"While this demeanor has left the tanuki as the victims of the kitsune’s political takeover of the Southern isles, it has also made them friends with the majority of the other races, even if only is sparing amounts, this is especially true of the vanara, who also have a youthful passion for adventure and love interacting with the other races of the world. This has lead to many friendships between the two races of opposite sides of the archipelago. It is said, that during the great journey of Qitian Dasheng, he met with four tanuki who joined him for a great portion of his exploration, helping to develop his playful nature, and even teaching him the art of illusion and transformation, leading to Dasheng’s unique ability to transform his body into that of any creature he can imagine."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Tanuki Names",
+						"entries": [
+							"Tanuki use names from their local culture, sounding quite different to those who do not hail from Seishin.",
+							{
+								"entries": [
+									{
+										"name": "Male Names",
+										"entries": [
+											"Akira, Kaien, Ren, Roku, Tsuki"
+										],
+										"type": "entries"
+									},
+									{
+										"name": "Female Names",
+										"entries": [
+											"Kauri, Kazane, Rumia, Shion, Yuna"
+										],
+										"type": "entries"
+									}
+								],
+								"type": "entries"
+							}
+						],
+						"type": "entries"
+					},
+					{
+						"type": "quote",
+						"entries": [
+							"THEY WERE A CURIOUS BUNCH. THEY APPEARED TO BE HUMAN, BUT they were taller than those I had seen through my travels, with a different skin complexion, amidst other differences, their leader even had mesmerizing orange hair, akin to those of my kins, very unusual for a human. They also has a dragon man with them, though his appearance was like no dragon Td ever witnessed.",
+							"They claimed to be from a land far across the sea, and were documenting their journey as they explored the isles. Seeing as they were new around here, and probably held no prejudice against my kin, I decided to offer my assistance, as I'm sure something interesting will happen if I stick around these people."
+						],
+						"by": "Ichika the Explorer, The Foreigners of the East"
+					},
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link NUKI-TheWildAdventurer by PerryHan Zhang|https://www.artstation.com/artwork/B1OGXr}. Please credit if you repost elsewhere."
+						],
+						"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/zDMAH5f.jpg"
 						}
 					}
 				]
@@ -1558,11 +2234,21 @@
 				{
 					"name": "Kitsune Trickery",
 					"entries": [
-						"You know the dancing lights cantrip, Charisma is your spellcasting ability."
+						"You know the {@spell dancing lights|PHB} cantrip, Charisma is your spellcasting ability."
 					],
 					"type": "entries"
 				}
 				
+			],
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"known": {
+						"1": [
+							"dancing lights#c"
+						]
+					}
+				}
 			],
 			"traitTags": [
 				"Uncommon Race"
@@ -1721,7 +2407,7 @@
 				{
 					"name": "Kitsune Magic",
 					"entries": [
-						"You know the {@spell produce flame} cantrip. When you reach 3rd level, you can cast the {@spell silent image|PHB} spell once per long rest, and when you reach 5th level, you can also cast the {@spell mirror image|PHB} spell once per long rest. Intelligence as your spellcasting ability for these spells."
+						"You know the {@spell produce flame|PHB} cantrip. When you reach 3rd level, you can cast the {@spell silent image|PHB} spell once per long rest, and when you reach 5th level, you can also cast the {@spell mirror image|PHB} spell once per long rest. Intelligence as your spellcasting ability for these spells."
 					],
 					"type": "entries"
 				},
