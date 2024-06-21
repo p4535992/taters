@@ -13,8 +13,7 @@
 					"p4535992"
 				],
 				"version": "2024.06.16",
-				"url": "https://www.reddit.com/r/DnDHomebrew/comments/ttwla9/an_introduction_to_the_seishin_isles_volume_3/",
-				"targetSchema": "1.7.0"
+				"url": "https://www.reddit.com/r/DnDHomebrew/comments/ttwla9/an_introduction_to_the_seishin_isles_volume_3/"
 			}
 		],
 		"dateAdded": 1604252046,
@@ -1633,7 +1632,7 @@
 						"name": "Childish souls",
 						"entries": [
 							"The most distinct difference between the tanuki and the kitsune is their general personality/ disposition. The kitsune are sly and conniving, while the tanuki tend to have a brighter outlook on life, retaining a youthful personality and maintaining a naive thought process when interacting with others. This is most apparent with the tanukis general disposition towards pranks. Despite being powerful illusionists, tanuki have spent the betterpart of their entire history within the isles using their illusions to mess with and surprise the other races, enjoying the shock and annoyance that comes from their successful schemes, and playful ploys.",
-							"While this demeanor has left the tanuki as the victims of the kitsune’s political takeover of the Southern isles, it has also made them friends with the majority of the other races, even if only is sparing amounts, this is especially true of the vanara, who also have a youthful passion for adventure and love interacting with the other races of the world. This has lead to many friendships between the two races of opposite sides of the archipelago. It is said, that during the great journey of Qitian Dasheng, he met with four tanuki who joined him for a great portion of his exploration, helping to develop his playful nature, and even teaching him the art of illusion and transformation, leading to Dasheng’s unique ability to transform his body into that of any creature he can imagine."
+							"While this demeanor has left the tanuki as the victims of the kitsune's political takeover of the Southern isles, it has also made them friends with the majority of the other races, even if only is sparing amounts, this is especially true of the vanara, who also have a youthful passion for adventure and love interacting with the other races of the world. This has lead to many friendships between the two races of opposite sides of the archipelago. It is said, that during the great journey of Qitian Dasheng, he met with four tanuki who joined him for a great portion of his exploration, helping to develop his playful nature, and even teaching him the art of illusion and transformation, leading to Dasheng’s unique ability to transform his body into that of any creature he can imagine."
 						],
 						"type": "entries"
 					},
@@ -2383,7 +2382,7 @@
 				{
 					"name": "Mountain Born",
 					"entries": [
-						"You're acclimated to high altitude, including elevations above 20,000 feet. You're also naturally adapted to cold climates, as described in chapter 5 of the Dungeon Master’s Guide."
+						"You're acclimated to high altitude, including elevations above 20,000 feet. You're also naturally adapted to cold climates, as described in chapter 5 of the Dungeon Master's Guide."
 					],
 					"type": "entries"
 				}
@@ -2737,9 +2736,45 @@
 				"College of Geishas|Bard|PHB|Geishas|SEIISL|3",
 				"Dance of the Moon|Bard|PHB|Geishas|SEIISL|3",
 				"Bonus Proficiencies|Bard|PHB|Geishas|SEIISL|3",
+				"Dance of the Moon Plus|Bard|PHB|Geishas|SEIISL|6",
 				"Extra Attacks|Bard|PHB|Geishas|SEIISL|6",
 				"Seductive Poisoner|Bard|PHB|Geishas|SEIISL|6",
 				"Dance of the Sun|Bard|PHB|Geishas|SEIISL|14"
+			]
+		},
+		{
+			"name": "Way of Wu Jen",
+			"source": "SEIISL",
+			"className": "Monk",
+			"classSource": "PHB",
+			"shortName": "Wu Jen",
+			"subclassFeatures": [
+				"Way of Wu Jen|Monk|PHB|Wu Jen|SEIISL|3",
+				"Hermit's Study|Monk|PHB|Wu Jen|SEIISL|3",
+				"Elemental Attunement|Monk|PHB|Wu Jen|SEIISL|3",
+				"Arcane Dabbler|Monk|PHB|Wu Jen|SEIISL|6",
+				"Chaos Ward|Monk|PHB|Wu Jen|SEIISL|11",
+				"Elemental Mastery|Monk|PHB|Wu Jen|SEIISL|17"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"frostbite|xge#c",
+							"lightning lure|tce#c",
+							"ray of frost|phb#c",
+							"fire bolt|phb#c"
+						]
+					}
+				}
+			],
+			"spellcastingAbility": "wis",
+			"casterProgression": "1/3",
+			"subclassSpells": [
+				{
+					"className": "Sorcerer",
+					"classSource": "PHB"
+				}
 			]
 		}
 	],
@@ -2784,13 +2819,40 @@
 			"header": 1,
 			"entries": [
 				"At 3rd level, your speed increases by 5 feet while you are not wearing armor or wielding a weapon with the heavy property.",
-				"This bonus increases when you reach certain bard levels, as shown in the Dance of the Moon table below."
+				"This bonus increases when you reach certain bard levels, as shown in the Dance of the Moon table below.",
+				{
+					"type": "table",
+					"caption": "Dance of the Moon",
+					"colLabels": [
+						"Level",
+						"Feet"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-3 text-center"
+					],
+					"rows": [
+						[
+							"3rd",
+							"5 ft."
+						],
+						[
+							"6th",
+							"10 ft."
+						],
+						[
+							"14th",
+							"15 ft."
+						]
+					]
+				},
+				"Additionally at 6th level, As a bonus action you can expend one use of your Bardic Inspiration to teleport up to your movement speed to an unoccupied space you can see. Once you use this feature, you can't do so again until you finish a long rest."
 			]
 		},
 		{
 			"name": "Bonus Proficiencies",
 			"source": "SEIISL",
-			"page": 4,
+			"page": 3,
 			"className": "Bard",
 			"classSource": "PHB",
 			"subclassShortName": "Geishas",
@@ -2800,12 +2862,59 @@
 			"entries": [
 				"When you join the College of Geishas at 3rd level, you gain proficiency with poisoner's kits.",
 				"If you're proficient with a simple weapon, you can use it as a spellcasting focus for your bard spells."
+			],
+			"toolProficiencies": [
+				{
+					"poisoner's kit": true
+				}
 			]
 		},
 		{
-			"name": "Siphon Of the Dark Whisper",
+			"name": "Dance of the Moon Plus",
 			"source": "SEIISL",
-			"page": 5,
+			"page": 3,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Geishas",
+			"subclassSource": "SEIISL",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, As a bonus action you can expend one use of your Bardic Inspiration to teleport up to your movement speed to an unoccupied space you can see. Once you use this feature, you can't do so again until you finish a long rest."
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "SEIISL",
+			"page": 3,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Geishas",
+			"subclassSource": "SEIISL",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Starting at 6th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
+			]
+		},
+		{
+			"name": "Seductive Poisoner",
+			"source": "SEIISL",
+			"page": 3,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Geishas",
+			"subclassSource": "SEIISL",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, you can use a bonus action to apply poison to one of your weapons. Additionally, all weapon attacks with poison damage deal an additional 1d6 + Charisma modifier poison damage."
+			]
+		},
+		{
+			"name": "Dance of the Sun",
+			"source": "SEIISL",
+			"page": 3,
 			"className": "Bard",
 			"classSource": "PHB",
 			"subclassShortName": "Geishas",
@@ -2813,7 +2922,309 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"At level 14, you are able to draw on music in your soul to fuel your Geishas magic at the expense of your vitality. When you have no more uses of your Bardic Inspiration ability, you may use an action to convert your hit dice into usage of you bardic inspiration ability subject to hit dice you have available. The maximum number of uses of bardic inspiration that you can regain this way is equal to your charisma modifier. You regain the use of this ability when you finish a long rest."
+				"Starting at 14th level, you can use soothing music to revitalize your wounded allies. During your turn, you can use your {@b {@classFeature Song of Rest (d6)|Bard||2||Song of Rest}} as a bonus action, allowing all allies that can hear you to roll a hit die, and healing for an additional 2d8 hit points. When you start a {@b {@classFeature Song of Rest (d6)|Bard||2||Song of Rest}} performance, if any creature that gains its benefit is currently paralyzed or poisoned, it can immediately make another saving throw against the effect that imposed the condition.",
+				"In addition, when a creature that gains the benefit of your {@b {@classFeature Song of Rest (d6)|Bard||2||Song of Rest}} performance makes an ability check or saving throw, it can add a 1d4 to the number rolled to the ability check or saving throw. Once it uses this 1d4 it can't do so again unless it gain the benefits of the dance of the again."
+			]
+		},
+		{
+			"name": "Way of Wu Jen",
+			"source": "SEIISL",
+			"page": 4,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Wu Jen",
+			"subclassSource": "SEIISL",
+			"header": 1,
+			"level": 3,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Monastic Tradition",
+					"entries": [
+						"Monks of the Way of the Wu Jen are those that seek to find the balance between the power of ki, and the abilities of those who dabble in the arcane. They learn techniques to create spell like effects through the use of their ki, and can recreate elemental effects as auras that swarm those nearby."
+					]
+				},
+				"Starting at 3rd level, a monk chooses their Monastic Tradition feature, shaping the way your wield your ki, and the skills available to you as you train. When selecting your Monastic Tradition, you can add the following origin to your list of options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hermit's Study|Bard|PHB|Wu Jen|SEIISL|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Elemental Attunement|Bard|PHB|Wu Jen|SEIISL|3"
+				}
+			]
+		},
+		{
+			"name": "Hermit's Study",
+			"source": "SEIISL",
+			"page": 4,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Wu Jen",
+			"subclassSource": "SEIISL",
+			"header": 1,
+			"level": 3,
+			"entries": [
+				"Starting when you choose this tradition at 3rd level, you learn to cast the cantrips {@spell frostbite|XGE}, {@spell fire bolt|PHB}, {@spell lightning lure|TCE}, and {@spell ray of frost|PHB}. Additionally, you gain proficiency with two of the following skills of your choice: {@skill Arcana}, {@skill History}, {@skill Insight}, {@skill Perception}, {@skill Religion}, or {@skill Survival}."
+			],
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"arcana", 
+							"history", 
+							"insight", 
+							"perception", 
+							"religion", 
+							"survival"
+						],
+						"count": 2
+					}
+				}
+			]
+		},
+		{
+			"name": "Elemental Attunement",
+			"source": "SEIISL",
+			"page": 4,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Wu Jen",
+			"subclassSource": "SEIISL",
+			"header": 1,
+			"level": 3,
+			"entries": [
+				"Starting at 3rd level, when a creature's resistance reduces the damage dealt by a cantrip or spell of yours, you can spend 1 ki point to ignore the creature's resistance."
+			]
+		},
+		{
+			"name": "Arcane Dabbler",
+			"source": "SEIISL",
+			"page": 4,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Wu Jen",
+			"subclassSource": "SEIISL",
+			"header": 2,
+			"level": 6,
+			"entries": [
+				"At 6th level, you augment your martial prowess with the ability to cast spells.",
+				{
+					"type": "entries",
+					"name": "Ki Costs",
+					"entries": [
+						"The Wu Jen Spellcasting table shows how many ki points you have to cast your sorcerer spells of 1st level and higher. To cast one of these spells, you must expend a ki point from the number of the table below."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spell Known of 1st Level and Higher",
+					"entries": [
+						"You know three 1st-level {@filter sorcerer spells|spells|class=sorcerer} of your choice, two of which you must choose from the conjuration and evocation spells on the sorcerer spell list."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"Wisdom is your spellcasting ability for your Wu Jen spells, since the power of your magic relies on your ability to project your will into the world. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Ki save DC for a sorcerer spell you cast and when making an attack roll with one.",
+						{
+							"type": "list",
+							"style": "list-no-bullets",
+							"items": [
+								"{@b Ki Save DC} = 8 + your proficiency bonus + your Wisdom modifier",
+								"{@b Ki attack modifier} = your proficiency bonus + your Wisdom modifier"
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Spell Advancement",
+							"colLabels": [
+								"Level", 
+								"Ki Cost", 
+								"Spells Known",
+								"Slot Level"
+							],
+							"colStyles": [
+								"col-3 text-center",
+								"col-2 text-center",
+								"col-2 text-center",
+								"col-3 text-center"
+							],
+							"rows": [
+								[
+									"6th", 
+									"2",
+									"3",
+									"1st"
+								],
+								[
+									"7th",
+									"3",
+									"4",
+									"2nd"
+								],
+								[
+									"8th",
+									"4",
+									"4",
+									"3rd"
+								],
+								[
+									"9th",
+									"5", 
+									"4",
+									"4th"
+								],
+								[
+									"10th",
+									"5",
+									"5",
+									"4th"
+								],
+								[
+									"11th",
+									"5", 
+									"6",
+									"4th"
+								],
+								[
+									"12th",
+									"5", 
+									"6",
+									"4th"
+								],
+								[
+									"13th",
+									"6",
+									"7",
+									"5th"		
+								],
+								[
+									"14th",
+									"6", 
+									"8",
+									"5th"
+								],
+								[
+									"15th",
+									"6",
+									"8",
+									"5th"
+								],
+								[
+									"16th",
+									"6",
+									"9",
+									"5th"
+								],
+								[
+									"17th",
+									"6",
+									"10",
+									"5th"
+								],
+								[
+									"18th",
+									"6",
+									"10",
+									"5th"
+								],
+								[
+									"19th",
+									"6",
+									"11",
+									"5th"
+								],
+								[
+									"20th",
+									"6",
+									"12",
+									"5th"
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"source": "Chaos Ward",
+			"source": "SEIISL",
+			"page": 4,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Wu Jen",
+			"subclassSource": "SEIISL",
+			"header": 2,
+			"level": 11,
+			"entries": [
+				"At 11th level, you call forth chaotic energies to harm the enemies around you. As an action, you can manifest an aura, forming a 15 ft. radius of chaotic energies for 1 minute. Roll a d8. The number rolled on that die determines the attacks damage type, as shown below.",
+				{
+					"type": "table",
+					"caption": "Chaos Ward Damage Type",
+					"colLabels": [
+						"d8",
+						"Damage Type"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-6"
+					],
+					"rows": [
+						[
+							"1",
+							"Acid"
+						],
+						[
+							"2",
+							"Cold"
+						],
+						[
+							"3",
+							"Fire"
+						],
+						[
+							"4",
+							"Force"
+						],
+						[
+							"5",
+							"Ligthing"
+						],
+						[
+							"6",
+							"Poison"
+						],
+						[
+							"7",
+							"Psychic"
+						],
+						[
+							"8",
+							"Thunder"
+						]
+					]
+				},
+				"When you activate this aura, you can designate any number of creatures you can see to be unaffected by it. When an affected creature enters the area for the first time or starts its turn there, it must make a Constitution saving  throw against your ki save DC. On a failed save, the creature takes {@dice 2d6} damage of the rolled type. On a successful save, the creature takes half as much damage.",
+				"Once you have used this feature, you must complete a short or long rest before it can be used again.",
+				"You can increase the aura's damage by spending ki points, up to a maximum of 3. Each ki point you spend increases the damage of your aura by {@dice 1d6}."
+			]
+		},
+		{
+			"source": "Elemental Mastery",
+			"source": "SEIISL",
+			"page": 5,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Wu Jen",
+			"subclassSource": "SEIISL",
+			"header": 2,
+			"level": 17,
+			"entries": [
+				"Starting at 17th level, if you have resistance to a type of damage, you can spend 4 ki points as a reaction to taking damage of your resistance type to gain immunity to that damage type until the end of your next turn. Additionally you can cast a cantrip without expending a ki point until your next turn.",
+				"Once you have used this feature, you must complete a short or long rest before it can be used again."
 			]
 		}
 	]
