@@ -20,6 +20,31 @@
 		"dateLastModified": 1703373316,
 		"_dateLastModifiedHash": "ee61c78984"
 	},
+	"item": [
+		{
+			"name": "Ofuda",
+			"source": "SEIISL",
+			"page": 1,
+			"basicRules": true,
+			"type": "R",
+			"rarity": "none",
+			"weight": 0.05,
+			"value": 6,
+			"weaponCategory": "simple",
+			"property": [
+				"F",
+				"T",
+				"L"
+			],
+			"range": "20/80",
+			"dmg1": "1d4-1",
+			"dmgType": "B",
+			"weapon": true,
+			"entries": [
+				"Ofuda is a piece of paper with mystical writings. You treat them as a simple ranged weapon, which has the the light, thrown(20/80), and finesse properties. They deal 1d4-1 bludgeoning damage on a hit, and whenever you would make an unarmed strike, you may replace any number of these attacks with an ofuda attack, and if you spent at least 1 ki point this turn they instead deal radiant damage. They cost 6 cp, and their weight is negligible."
+			]
+		}
+	],
 	"monster": [
 		{
 			"name": "Fox Kitsune Form",
@@ -1632,7 +1657,7 @@
 						"name": "Childish souls",
 						"entries": [
 							"The most distinct difference between the tanuki and the kitsune is their general personality/ disposition. The kitsune are sly and conniving, while the tanuki tend to have a brighter outlook on life, retaining a youthful personality and maintaining a naive thought process when interacting with others. This is most apparent with the tanukis general disposition towards pranks. Despite being powerful illusionists, tanuki have spent the betterpart of their entire history within the isles using their illusions to mess with and surprise the other races, enjoying the shock and annoyance that comes from their successful schemes, and playful ploys.",
-							"While this demeanor has left the tanuki as the victims of the kitsune's political takeover of the Southern isles, it has also made them friends with the majority of the other races, even if only is sparing amounts, this is especially true of the vanara, who also have a youthful passion for adventure and love interacting with the other races of the world. This has lead to many friendships between the two races of opposite sides of the archipelago. It is said, that during the great journey of Qitian Dasheng, he met with four tanuki who joined him for a great portion of his exploration, helping to develop his playful nature, and even teaching him the art of illusion and transformation, leading to Dasheng’s unique ability to transform his body into that of any creature he can imagine."
+							"While this demeanor has left the tanuki as the victims of the kitsune's political takeover of the Southern isles, it has also made them friends with the majority of the other races, even if only is sparing amounts, this is especially true of the vanara, who also have a youthful passion for adventure and love interacting with the other races of the world. This has lead to many friendships between the two races of opposite sides of the archipelago. It is said, that during the great journey of Qitian Dasheng, he met with four tanuki who joined him for a great portion of his exploration, helping to develop his playful nature, and even teaching him the art of illusion and transformation, leading to Dasheng's unique ability to transform his body into that of any creature he can imagine."
 						],
 						"type": "entries"
 					},
@@ -2765,7 +2790,8 @@
 							"ray of frost|phb#c",
 							"fire bolt|phb#c"
 						]
-					}
+					},
+					"ability": "wis"
 				}
 			],
 			"spellcastingAbility": "wis",
@@ -2776,6 +2802,69 @@
 					"classSource": "PHB"
 				}
 			]
+		},
+		{
+			"name": "Way of the Miko",
+			"source": "SEIISL",
+			"className": "Monk",
+			"classSource": "PHB",
+			"shortName": "Miko",
+			"subclassFeatures": [
+				"Way of the Miko|Monk|PHB|Miko|SEIISL|3",
+				"Novice of the Kami|Monk|PHB|Miko|SEIISL|6",
+				"Adept of the Kami|Monk|PHB|Miko|SEIISL|11",
+				"Spirit Mistress|Monk|PHB|Miko|SEIISL|17"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"6": {
+							"resource": {
+								"2": [
+									"protection from evil and good"
+								],
+								"3": [
+									"branding smite"
+								],
+								"4": [
+									"remove curse"
+								]
+							}
+						},
+						"11": {
+							"resource": {
+								"4": [							
+									"dispel magic",
+									"magic circle"
+								],
+								"5": [							
+									"banishment" 
+								]
+							}
+						},
+						"17": {
+							"resource": {
+								"4": [							
+									"spirit guardians"
+								],
+								"6": [							
+									"dispel evil and good", 
+									"greater restoration", 
+									"hallow"
+								]
+							}
+						}
+					},
+					"ability": "wis",
+					"known": {
+						"1": [
+							"thaumaturgy|phb#c"
+						]
+					}
+				}
+			],
+			"spellcastingAbility": "wis",
+			"casterProgression": "1/3"
 		}
 	],
 	"subclassFeature": [
@@ -3225,6 +3314,100 @@
 			"entries": [
 				"Starting at 17th level, if you have resistance to a type of damage, you can spend 4 ki points as a reaction to taking damage of your resistance type to gain immunity to that damage type until the end of your next turn. Additionally you can cast a cantrip without expending a ki point until your next turn.",
 				"Once you have used this feature, you must complete a short or long rest before it can be used again."
+			]
+		},
+		{
+			"name": "Way of the Miko",
+			"source": "SEIISL",
+			"page": 1,
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Miko",
+			"subclassSource": "SEIISL",
+			"header": 1,
+			"level": 3,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "A Brief History",
+					"entries": [
+						"Miko are also called Shrine Maidens, and often develop into priestesses of the Shinto religion. They are always female, though male priests exist as well. Miko take vows of purity and chastity for their time of service; priests and priestesses have been known to marry. Miko and the priests are responsible for Shinto shrines and running/assisting worship and rites. In Wuxia, they also fight and banish unearthly entities like ghosts and other undead, spirits, true fey, demons, devils, and other outsiders. They seemed to be a natural for a Monk Tradition with a divine theme."
+					]
+				},
+				"Starting at 3rd level, a monk of the Miko has the following features.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Initiate of the Kami|Monk|PHB|Miko|SEIISL|3"
+				}
+			]
+		},
+		{
+			"name": "Initiate of the Kami",
+			"source": "SEIISL",
+			"page": 1,
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Miko",
+			"subclassSource": "SEIISL",
+			"header": 1,
+			"level": 3,
+			"entries": [
+				"Upon entering service to a Shrine at 3rd level, the monk is initiated into Shinto. You gain proficiency in {@skill Religion}, and learn the {@spell thaumaturgy|PHB} cantrip, Wisdom being your casting modifier for this spell, as with other spells gained via this subclass.",
+				"Additionally, you become proficient in the use of {@item Ofuda|SEIISL}, a piece of paper with mystical writings. You treat them as a simple ranged weapon, which has the the light, thrown(20/80), and finesse properties. They deal 1d4-1 bludgeoning damage on a hit, and whenever you would make an unarmed strike, you may replace any number of these attacks with an {@item ofuda|SEIISL} attack, and if you spent at least 1 ki point this turn they instead deal radiant damage. They cost 6 cp, and their weight is negligible."
+			],
+			"weaponProficiencies": [
+				{
+					"ofuda|SEIISL": true
+				}
+			],
+			"skillProficiencies": [
+				{
+					"religion": true
+				}
+			]
+		},
+		{
+			"name": "Novice of the Kami",
+			"source": "SEIISL",
+			"page": 1,
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Miko",
+			"subclassSource": "SEIISL",
+			"header": 2,
+			"level": 6,
+			"entries": [
+				"At 6th level, the Miko begins to learn to use her Ki to connect to the spirit realm, and form spells. You can cast {@spell protection from evil and good|PHB}, {@spell branding smite|PHB}, and {@spell remove curse|PHB} spells for 2, 3 and 4 ki points respectively. When casting it in this way, branding smite can be used with {@item Ofuda|SEIISL}.",
+				"Additionally, when you cast a spell gained via this class, you can spend an extra 2 ki points, to cast it as if it were cast at a higher level. You can do this multiple times per casting."
+			]
+		},
+		{
+			"name": "Adept of the Kami",
+			"source": "SEIISL",
+			"page": 1,
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Miko",
+			"subclassSource": "SEIISL",
+			"header": 2,
+			"level": 11,
+			"entries": [
+				"At 11th level, the Miko gains spells to truly act in her role against spirits and other outsiders. You can now also cast {@spell dispel magic|PHB} and {@spell magic circle|PHB} for 4 ki points, and {@spell banishment|PHB} for 5."
+			]
+		},
+		{
+			"name": "Spirit Mistress",
+			"source": "SEIISL",
+			"page": 1,
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Miko",
+			"subclassSource": "SEIISL",
+			"header": 2,
+			"level": 17,
+			"entries": [
+				"At 17th level, a Miko has reached the pinnacle of her power. Not quite a priestess, but quite capable of defending herself, others, and her shrine against evil forces. You can now, again, also cast {@spell spirit guardians|PHB} for 4 ki points, and {@spell dispel evil and good|PHB}, {@spell greater restoration|PHB}, and hallow for 6 ki points.",
+				"Finally, any spell casted through this subclass has it's cost reduced by 1 ki point, and upcasting as per Novice of the Kami now costs 1 ki point per level upcast."
 			]
 		}
 	]
