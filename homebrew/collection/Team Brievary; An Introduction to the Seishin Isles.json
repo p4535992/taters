@@ -2362,6 +2362,12 @@
 				"Chaos Ward|Monk|PHB|Wu Jen|SEIISL|11",
 				"Elemental Mastery|Monk|PHB|Wu Jen|SEIISL|17"
 			],
+			"subclassSpells": [
+				"frostbite",
+				"lightning lure",
+				"ray of frost",
+				"fire bolt"
+			],
 			"additionalSpells": [
 				{
 					"innate": {
@@ -2382,6 +2388,57 @@
 					"className": "Sorcerer",
 					"classSource": "PHB"
 				}
+			]
+		},
+		{
+			"name": "Oath of Shugenja",
+			"source": "SEIISL",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"shortName": "Shugenja",
+			"subclassSpells": [
+				"burning hands",
+				"chromatic orb",
+				"shatter",
+				"rime's binding ice",
+				"lightning bolt",
+				"ashardalon's stride",
+				"fire shield",
+				"elemental bane",
+				"immolation",
+				"hallow"
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"burning hands",
+							"chromatic orb"
+						],
+						"5": [
+							"shatter",
+							"rime's binding ice"
+						],
+						"9": [
+							"lightning bolt",
+							"ashardalon's stride"
+						],
+						"13": [
+							"fire shield",
+							"elemental bane"
+						],
+						"17": [
+							"immolation",
+							"hallow"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Oath of the Shugenja|Paladin|PHB|Shugenja|SEIISL|3",
+				"Aura of Primordials|Paladin|PHB|Shugenja|SEIISL|7",
+				"Elemental Focus|Paladin|PHB|Shugenja|SEIISL|15",
+				"Ascendance|Paladin|PHB|Shugenja|SEIISL|20"
 			]
 		}
 	],
@@ -2832,6 +2889,261 @@
 			"entries": [
 				"Starting at 17th level, if you have resistance to a type of damage, you can spend 4 ki points as a reaction to taking damage of your resistance type to gain immunity to that damage type until the end of your next turn. Additionally you can cast a cantrip without expending a ki point until your next turn.",
 				"Once you have used this feature, you must complete a short or long rest before it can be used again."
+			]
+		},
+		{
+			"name": "Oath of the Shugenja",
+			"source": "SEIISL",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassSource": "SEIISL",
+			"subclassShortName": "Shugenja",
+			"level": 3,
+			"entries": [
+				"The Oath of the Shugenja ties a paladin to the mountains of their homelands and the creatures that are venerated upon them. Considered walking men of devotion, paladins who swear this oath cast their lot with the side of the planes, and act in the name of the deities who walk the earth and bask in the elements. They dawn sigils of yokai, and bear scriptures of the temples, all to uphold their faith and prove themselves worthy of the pens of history.",
+				"Starting at 3rd level, a paladin chooses their Sacred Oath feature, swearing an oath that binds you as a paladin forever. When selecting your Sacred Oath, you can add the following  origin to your list of options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tenets of the Shugenja|Paladin|PHB|Shugenja|SEIISL|3|SEIISL"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Oath Spells|Paladin|PHB|Shugenja|SEIISL|3|SEIISL"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Channel Divinity|Paladin|PHB|Shugenja|SEIISL|3|SEIISL"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Elemental Burst|Paladin|PHB|Shugenja|SEIISL|3|SEIISL"
+				}
+			]
+		},
+		{
+			"name": "Tenets of the Shugenja",
+			"source": "SEIISL",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassSource": "SEIISL",
+			"subclassShortName": "Shugenja",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A paladin who assumes the Oath of the Shugenja swears to mitigate the interactions of those from beyond, and those who are near, bending the elements to achieve their goals. A paladin of the Shugenja thus roughly upholds the following tenets:",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Bend the Elements",
+							"entries": [
+								"Through effort and tenacity, the fires of the sky and the waters of the river can achieve the goals of the immortals."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Foresight",
+							"entries": [
+								"One who watches, and prepares accordingly shall not fall, and shall remain eternal."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Loyalty and Devotion",
+							"entries": [
+								"Your word is is unbreakable, your will, unrestrained. Without devotion, ones decisions are hollow, without loyalty, ones vows are fatuous."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Oath Spells",
+			"source": "SEIISL",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassSource": "SEIISL",
+			"subclassShortName": "Shugenja",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Your Oath of Shugenja allows you to learn spells normally associated with the Sorcerer class. When your Spellcasting feature lets you learn a paladin spell of 1st level or higher, you can choose the new spell from the sorcerer spell list or the paladin spell list. Each of these spells must be an evocation or transmutation spell of your choice. You must otherwise obey all the restrictions for selecting the spell, and it becomes a paladin spell for you. Additionally, when you gain these spells, when you reach the level in the table below.",
+				{
+					"type": "table",
+					"caption": "Oath of the Shugenja Spells",
+					"colLabels": [
+						"Paladin Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell burning hands|PHB}, {@spell chromatic orb|PHB}"
+						],
+						[
+							"5th",
+							"{@spell shatter|PHB}, {@spell rime's binding ice|FTD}"
+						],
+						[
+							"9th",
+							"{@spell lightning bolt|PHB}, {@spell ashardalon's stride|FTD}"
+						],
+						[
+							"13th",
+							"{@spell fire shield|PHB}, {@spell elemental bane|XGE}"
+						],
+						[
+							"17th",
+							"{@spell immolation|XGE}, {@spell hallow|PHB}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Channel Divinity",
+			"source": "SEIISL",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassSource": "SEIISL",
+			"subclassShortName": "Shugenja",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Eternal Calm",
+							"entries": [
+								"You can use your Channel Divinity to repel the creatures of the elements. As an action, Each elemental that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is {@condition Frightened} for 1 minute or until it takes any damage. "
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Primordial Hand",
+							"entries": [
+								"You can use your Channel Divinity to send a burst of healing energy to one out of your reach. As a bonus action you can draw from your lay on hands pool to restore a number of Hit Points to a creature you can see within 30 ft., up to the maximum amount remaining in your pool."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Elemental Burst",
+			"source": "SEIISL",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassSource": "SEIISL",
+			"subclassShortName": "Shugenja",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"At 3rd level, when you hit a creature with a ranged spell attack of 1st level or higher, you can expend one use of your divine sense to deal additional damage to the target. Roll 2d8. depending on the numbers rolled, determines the attacks damage type based on one of the two rolls, as shown in the Elemental Damage table below below. The creature suffers additional damage equal to the rolled total and selected damage type.",
+				{
+					"type": "table",
+					"caption": "Elemental Damage",
+					"colLabels": [
+						"d8",
+						"Damage Type"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-3 text-cente"
+					],
+					"rows": [
+						[
+							"1",
+							"acid"
+						],
+						[
+							"2",
+							"cold"
+						],
+						[
+							"3",
+							"fire"
+						],
+						[
+							"4",
+							"force"
+						],
+						[
+							"5",
+							"lightning"
+						],
+						[
+							"6",
+							"poison"
+						],
+						[
+							"7",
+							"psychic"
+						],
+						[
+							"8",
+							"thunder"
+						]
+					]
+				},
+				"The extra damage increases by {@dice 1d8} for each spell level higher than 1st, to a maximum of {@dice 5d8}. Additionally, the damage increases by {@dice 1d8} if the target is an undead or a fiend, to a maximum of {@dice 6d8}."
+			]
+		},
+		{
+			"name": "Aura of Primordials",
+			"source": "SEIISL",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassSource": "SEIISL",
+			"subclassShortName": "Shugenja",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"Starting at 7th level, you and friendly creatures within 10 feet of you gain resistance to acid, cold, fire, lightning, or thunder damage which you choose at the end of a long rest.",
+				"Additionally at 9th level, you can redirect oncoming damage back at assailants. As a reaction upon taking damage of the same type as your {@b Aura of Primordial}, you send a part of the attack back at the creature who hit you. The target takes 1d6 damage of a type equal to your {@b Aura of Primordial}. You can use this feature a number of times equal to your charisma modifier, regain all expended uses after a long rest."
+			]
+		},
+		{
+			"name": "Elemental Focus",
+			"source": "SEIISL",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassSource": "SEIISL",
+			"subclassShortName": "Shugenja",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"At 15th level, when you cast a evocation and transmutation spell of 1st level or higher that targets only one creature, the spell can instead target two creatures within range and within 5 ft. of each other. If the spell consumes its material components, you must provide them for each target."
+			]
+		},
+		{
+			"name": "Ascendance",
+			"source": "SEIISL",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassSource": "SEIISL",
+			"subclassShortName": "Shugenja",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"At 20th level, as an action, you become the scales of the elements, bringing balance to the chaos. For 1 minute the elements will protect you, granting you the following benefits.",
+				{
+					"type": "list",
+					"items": [
+						"You have advantage on saving throws against spells and other magical effects.",
+						"Whenever a creature casts an evocation spell on you, and you suffer damage, the creature suffers half the amount of damage you took."
+					]
+				},
+				"Once you use this feature, you can't use it again until you finish a long rest."
 			]
 		}
 	]
