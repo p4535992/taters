@@ -2894,6 +2894,728 @@
 				"constitution",
 				"wisdom"
 			]
+		},
+		{
+			"name": "Uruha Rushia, the raging necromancer",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"source": "HOLOLIVE",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "9d8 + 9",
+				"average": 49
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 15,
+			"con": 12,
+			"int": 18,
+			"wis": 15,
+			"cha": 13,
+			"passive": 12,
+			"cr": "7",
+			"shortName": "Uruha Rushia",
+			"page": 17,
+			"languages": [
+				"Common",
+				"Celestial",
+				"Abyssal",
+				"Infernal",
+				"Deep Speech"
+			],
+			"languageTags": [
+				"C",
+				"CE",
+				"AB",
+				"I",
+				"DS"
+			],
+			"save": {
+				"int": "+6",
+				"wis": "+5"
+			},
+			"skill": {
+				"arcana": "+7",
+				"history": "+7"
+			},
+			"trait": [
+				{
+					"name": "Trainee Necromancer",
+					"entries": [
+						"Whenever Rushia deals necromantic damage from a spell, she gains hp equal to half the damage done."
+					]
+				},
+				{
+					"name": "Fandead",
+					"entries": [
+						"Whenever Rushia casts animate dead she may target an additional corpse or pile of bones, creating an additional zombie or skeleton as appropriate. Undead created by Rushia have an additional 9 hp and a +3 to damage rolls."
+					]
+				},
+				{
+					"name": "I'M BOING BOING",
+					"entries": [
+						"Once per day on her turn, if any reference is made to walls, cutting boards, or similarly flat objects, Rushia may enter a rage, giving an ear piercing shout of fury as she does so. Upon entering a rage, all creatures within 30ft of Rushia must make a DC17 Constitution saving throw, taking 28 ({@damage 8d6}) thunder damage on a failed save, or half as much damage on a succesful one. While raging, Rushia has advantage on all Strength and Constitution skill checks and saving throws. She also gains resistance to non-magical bludgeoning, slashing, and piercing damage, if she does not have it already. She cannot concentrate on any spells for the duration, but gains advantage on any actions or spells targeted at the creature which made the reference that trigggered the rage. At the end of each of her turns while she is raging, Rushia must make a DC25 Wisdom saving throw. On a success, the rage ends, and Rushia is no longer subject to any of these effects. On a failure, the rage continues."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Rushia is an 10th level spellcaster. Her spellcasting ability is Intelligence (spell save {@dc 15}, +7 to hit with spell attacks). Rushia has the following spells available:"
+					],
+					"will": [
+						"{@spell chill touch}",
+						"{@spell find familiar}",
+						"{@spell mage hand}",
+						"{@spell prestidigitation}",
+						"{@spell toll the dead|XGE}"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell false life}",
+								"{@spell mage armor}",
+								"{@spell ray of sickness}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell blindness/deafness}",
+								"{@spell ray of enfeeblement}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell animate dead}",
+								"{@spell dispel magic}",
+								"{@spell fear}",
+								"{@spell speak with dead}",
+								"{@spell summon undead|TCE}",
+								"{@spell vampiric touch}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell blight}",
+								"{@spell shadow of moil|XGE}",
+								"{@spell stoneskin}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell danse macabre|XGE}",
+								"{@spell enervation|XGE}",
+								"{@spell raise dead}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Dagger (Thrown)",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Smash (Only available during rage)",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d12 + 2}) bludgeoning damage. Deals double damage to objects."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW",
+				"THW"
+			],
+			"attachedItems": [
+				"dagger|phb"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/M3jrtQQ.png"
+			},
+			"fluff": {
+				"entries": [
+					{
+						"name": "Uruha Rushia, the raging necromancer",
+						"entries": [
+							{
+								"type": "quote",
+								"entries": [
+									"I'm boing-boing, nice girl, beautiful girl necromancer, Uruha Rushia!"							
+								],
+								"by": "Uruha Rushia"
+							}
+						],
+						"type": "inset"
+					},
+					{
+							"name": "Credits",
+							"entries": [
+								"Art and item designed by {@link 朱狗|https://www.pixiv.net/en/artworks/79911498}. Please credit if you repost elsewhere."
+							],
+							"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/ng0RsMF.jpg"
+						}
+					}
+				]
+			},
+			"damageTags": [
+				"B",
+				"P",
+				"T"
+			],
+			"damageTagsSpell": [
+				"I",
+				"N"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Usada Pekora, the Princess of Pekoland",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "HOLOLIVE",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"unarmored defense"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 20",
+				"average": 65
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 10,
+			"dex": 17,
+			"con": 12,
+			"int": 17,
+			"wis": 11,
+			"cha": 15,
+			"passive": 13,
+			"cr": "5",
+			"shortName": "Usada Pekora",
+			"page": 18,
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"deception": "+8",
+				"persuasion": "+7",
+				"perception": "+3"
+			},
+			"trait": [
+				{
+					"name": "Bunny Girl",
+					"entries": [
+						"Pekora may take the Dash or Disengage action as a bonus action."
+					]
+				},
+				{
+					"name": "Yabai, peko!",
+					"entries": [
+						"When Pekora goes below half her hit point total, her TNT cannon immediately recharges."
+					]
+				},
+				{
+					"name": "Pekomiko's Great War",
+					"entries": [
+						"Pekora may use Sakura Miko as a nousagi for purpose of Protect your CEO!. As a free action, Pekora may give Miko the {@b Pack Tactics} rule for 24 hours."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Netherite Sword",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 5}) slashing damage. The damage done with this sword is considered magical."
+					]
+				},
+				{
+					"name": "TNT Cannon {@recharge 5}",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 50/100 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage. All creatures within 10ft. of the target take 11 ({@damage 3d6}) fire damage."
+					]
+				},
+				{
+					"name": "Konpeko, Konpeko, Konpeko!",
+					"entries": [
+						"A nousagi appears in any available space within 20ft. of Pekora."
+					]
+				},
+				{
+					"name": "PEKO PEKO PEKO",
+					"entries": [
+						"All nousagi within 30ft. of Pekora may immediately move or take an action."
+					]
+				},
+				{
+					"name": "Usada Construction",
+					"entries": [
+						"Pekora may designate a rectangular area of ground 5ft by 10ft. This area now counts as either difficult terrain or three-quarters cover, Pekora's choice."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"bonus": [
+				{
+					"name": "Dash",
+					"entries": [
+						"Pekora may take the Dash or Disengage action as a bonus action."
+					]
+				},
+				{
+					"name": "Disengagage",
+					"entries": [
+						"Pekora may take the Dash or Disengage action as a bonus action."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Protect your CEO!",
+					"entries": [
+						"If a nousagi is within 10ft. of Pekora when she is targeted by a weapon attack or spell, she may make the nousagi the target instead of her."
+					]
+				}
+			],
+			"legendaryActions": 1,
+			"legendaryHeader": [
+				"Pekora can take 1 legendary action, choosing from the options below. Only one legendary action option can be used at a time, and only at the end of another creature's turn. She regains spent legendary actions at the start of her turn."
+			],
+			"legendary": [
+				{
+					"name": "Welcome to Pekoland!",
+					"entries": [
+						"A {@creature nousagi|HOLOLIVE} appears in any available space within 20ft. of Pekora."
+					]
+				},
+				{
+					"name": "Get 'em peko!",
+					"entries": [
+						"All {@creature nousagi|HOLOLIVE} that can see or hear Pekora immediately move up to their full speed."
+					]
+				},
+				{
+					"name": "AH↓HA↑HA↑.",
+					"entries": [
+						"All {@creature nousagi|HOLOLIVE} that can see or hear Pekora immediately make an attack."
+					]
+				},
+				{
+					"name": "Reload peko!",
+					"entries": [
+						"Pekora's TNT Cannon action recharges."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/K6iWGCM.png"
+			},
+			"fluff": {
+				"entries": [
+					{
+						"name": "Usada Pekora, the Princess of Pekoland",
+						"entries": [],
+						"type": "entries"
+					},
+					{
+							"name": "Credits",
+							"entries": [
+								"Art and item designed by {@link 猫屋|https://www.pixiv.net/en/artworks/87285173}. Please credit if you repost elsewhere."
+							],
+							"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/yYZHCWk.jpg"
+						}
+					}
+				]
+			},
+			"damageTags": [
+				"B",
+				"F",
+				"S"
+			]
+		},
+		{
+			"name": "Amelia Watson, the Private Inquisitive",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"source": "HOLOLIVE",
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d8 + 24",
+				"average": 78
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 14,
+			"int": 16,
+			"wis": 15,
+			"cha": 14,
+			"passive": 16,
+			"cr": "5",
+			"shortName": "Amelia Watson",
+			"page": 19,
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"perception": "+6",
+				"survival": "+6",
+				"investigation": "+8",
+				"insight": "+8",
+				"medicine": "+7",
+				"deception": "+5"
+			},
+			"trait": [
+				{
+					"name": "Investamigatorator",
+					"entries": [
+						"Amelia has advantage on any rolls to track a creature and all Investigation or Perception checks"
+					]
+				},
+				{
+					"name": "Time Traveller",
+					"entries": [
+						"When initiative is rolled, each creature must declare what movement and actions they intend to use on their turn. Amelia may then choose to go at any initiative step."
+					]
+				},
+				{
+					"name": "Watson Concoction (3/ day)",
+					"entries": [
+						"As a bonus action, Amelia (or any creature she can touch) may regain 6 ({@dice 1d4 + 4}) hit points, or remove one of the following conditions: Sleep, Blinded, Deafened, Paralyzed, Poisoned."
+					]
+				},
+				{
+					"name": "Childhood Stories",
+					"entries": [
+						"Amelia has advantage on all checks to resist poison or being {@condition stunned}."
+					]
+				},
+				{
+					"name": "Gunslinger",
+					"entries": [
+						"Amelia gains a {@hit 2} to hit against targets within 15 ft. and does not suffer any penalties for making a ranged attack against a creature within 5ft. Amelia scores a critical hit on a roll of 19-20."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Amelia makes two weapon attacks"
+					]
+				},
+				{
+					"name": "Pistol",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 30/90 ft., one target. {@h}8 ({@damage 1d10 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Pistol (within 15 ft.)",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 15 ft., one target. {@h}8 ({@damage 1d10 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Trick Shot {@recharge 5}",
+					"entries": [
+						"Amelia uses one of the following trick shot attacks."
+					]
+				},
+				{
+					"name": "Disarming Shot",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 120 ft., one target. {@h}5 ({@damage 1d10}) force damage. The target must succeed on a {@dc 15} Strength saving throw, or drop any one held object of Amelia's choice that they are carrying and have that object be pushed 10ft. away from her."
+					]
+				},
+				{
+					"name": "Disarming Shot (within 15 ft.)",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 15 ft., one target. {@h}5 ({@damage 1d10}) force damage. The target must succeed on a {@dc 15} Strength saving throw, or drop any one held object of Amelia's choice that they are carrying and have that object be pushed 10ft. away from her."
+					]
+				},
+				{
+					"name": "Winging Shot",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 120 ft., one target. {@h}5 ({@damage 1d10}) force damage. The target must succeed on a {@dc 15} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Winging Shot (within 15 ft.)",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 15 ft., one target. {@h}5 ({@damage 1d10}) force damage. The target must succeed on a {@dc 15} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Dazing Shot",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 120 ft., one target. {@h}5 ({@damage 1d10}) force damage. The target must succeed on a {@dc 15} Constitution save or suffer disadvantage on attack rolls until the end of their next turn."
+					]
+				},
+				{
+					"name": "Dazing Shot (within 15 ft.)",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 15 ft., one target. {@h}5 ({@damage 1d10}) force damage. The target must succeed on a {@dc 15} Constitution save or suffer disadvantage on attack rolls until the end of their next turn."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"bonus": [
+				{
+					"name": "Watson Concoction (3/ day)",
+					"entries": [
+						"As a bonus action, Amelia (or any creature she can touch) may regain 6 ({@dice 1d4 + 4}) hit points, or remove one of the following conditions: Sleep, Blinded, Deafened, Paralyzed, Poisoned."
+					]
+				}
+			],
+			"miscTags": [
+				"RW"
+			],
+			"attachedItems": [
+				"pistol|dmg"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/vOvxX7k.png"
+			},
+			"fluff": {
+				"entries": [
+					{
+						"name": "Amelia Watson, the Private Inquisitive",
+						"entries": [],
+						"type": "entries"
+					},
+					{
+						"name": "Hololive 5e and Black Powder",
+						"entries": [
+							"All Hololive 5e NPCs have been designed using the optional firearms rules in the Dungeon Master's Guide p. 268. If you do not wish to use gunpowder weapons in your campaign setting, consider reflavoring the profile for a hand crossbow or wandslinger."
+						],
+						"type": "inset"
+					},
+					{
+							"name": "Credits",
+							"entries": [
+								"Art and item designed by {@link @Weizen029|https://x.com/i/web/status/1358123923695542275}. Please credit if you repost elsewhere."
+							],
+							"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/1KzdiVl.jpg"
+						}
+					}
+				]
+			},
+			"damageTags": [
+				"O",
+				"P"
+			],
+			"savingThrowForced": [
+				"strength"
+			]
+		},
+		{
+			"name": "Nousagi",
+			"size": [
+				"S"
+			],
+			"type": "beast",
+			"source": "HOLOLIVE",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"special": "1"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 10,
+			"con": 10,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"cr": "0",
+			"shortName": "Nousagi",
+			"page": 18,
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The nousagi has advantage on an attack roll against a creature if at least one of its allies is within 5 ft. of it and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Minion",
+					"entries": [
+						"If the nousagi must make a saving throw that would result in it taking damage, then on a success, the nousagi takes no damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"action": [
+				{
+					"name": "Pound.",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) bludgeoning damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/mUbmIlp.png"
+			},
+			"fluff": {
+				"entries": [
+					{
+						"name": "Nousagi",
+						"entries": [],
+						"type": "entries"
+					},
+					{
+							"name": "Credits",
+							"entries": [
+								"Art and item designed by {@link 猫屋|https://www.pixiv.net/en/artworks/87285173}. Please credit if you repost elsewhere."
+							],
+							"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/IJKGlnX.jpg"
+						}
+					}
+				]
+			},
+			"damageTags": [
+				"B"
+			]
 		}
 	]
 }
