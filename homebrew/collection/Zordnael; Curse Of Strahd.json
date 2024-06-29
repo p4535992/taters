@@ -1,4 +1,5 @@
 {
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
 	"_meta": {
 		"sources": [
 			{
@@ -11,9 +12,7 @@
 				"convertedBy": [
 					"Zordnael"
 				],
-				"version": "1.0.0",
-				"targetSchema": "1.3.3",
-				"url": "https://github.com/Zordnael/Zordnael-Homebrew"
+				"version": "1.0.0"
 			}
 		],
 		"dateAdded": 1608406489,
@@ -65,8 +64,8 @@
 				{
 					"type": "list",
 					"items": [
-						"{@optfeature Diamond Dust|COMOptionalFeatures|Diamond Dust}. When you take the Dragonborn Breath Weapon action, you can expend one superioty die to increse its range and damage. The range of the Breath Weapon is doubled and every damage dice turns into the superioty die used. Example: if your Breath Weapon normally deals {@dice 4d6} damage, has 15 ft. cone range and the expended superiority die is a d10, when you use this maneuver, the Breath Weapon would instead deal {@dice 4d10} damage and have 30 ft. cone range.",
-						"{@optfeature Spectral Wings|COMOptionalFeatures|Spectral Wings}. When you fall from any height, you can expend your superiority die and use your reaction to protect yourself from any fall damage. When you do so, your falling rate becomes 60 ft per round until you land. The first time you hit a creature with an attack before landing, you can add your superiority die to the damage."
+						"{@optfeature Diamond Dust|Zordnael|Diamond Dust}. When you take the Dragonborn Breath Weapon action, you can expend one superioty die to increse its range and damage. The range of the Breath Weapon is doubled and every damage dice turns into the superioty die used. Example: if your Breath Weapon normally deals {@dice 4d6} damage, has 15 ft. cone range and the expended superiority die is a d10, when you use this maneuver, the Breath Weapon would instead deal {@dice 4d10} damage and have 30 ft. cone range.",
+						"{@optfeature Spectral Wings|Zordnael|Spectral Wings}. When you fall from any height, you can expend your superiority die and use your reaction to protect yourself from any fall damage. When you do so, your falling rate becomes 60 ft per round until you land. The first time you hit a creature with an attack before landing, you can add your superiority die to the damage."
 					]
 				}
 			]
@@ -139,18 +138,21 @@
 					"other": "Requires being a Vistana"
 				}
 			],
-			"additionalSpells": {
-				"ability": "cha",
-				"innate": {
-					"1": {
-						"daily": {
-							"1": [
-								"bestow curse"
-							]
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"innate": {
+						"1": {
+							"daily": {
+								"1": [
+									"bestow curse"
+								]
+							}
 						}
-					}
+					},
+					
 				}
-			},
+			],
 			"entries": [
 				"The blood of a Vistana is a powerful, and so are their words. When you gain this feat, you gain the following benefits:",
 				{
@@ -170,18 +172,20 @@
 					"other": "Requires being a Dusk Elf"
 				}
 			],
-			"additionalSpells": {
-				"ability": "wis",
-				"innate": {
-					"1": {
-						"daily": {
-							"1": [
-								"moonbeam"
-							]
+			"additionalSpells": [
+				{
+					"ability": "wis",
+					"innate": {
+						"1": {
+							"daily": {
+								"1": [
+									"moonbeam"
+								]
+							}
 						}
 					}
 				}
-			},
+			],
 			"entries": [
 				"The Dusk Elves lived in the lands of Barovia long before it was invaded by Strahd. The tribe has battled the Children of Mother Night for centuries. Those of the royal bloodline have developed a way to fight them, and their wisdom is passed down generations through memories reached by meditation. When you gain this feat, you gain the following benefits:",
 				{
@@ -552,10 +556,10 @@
 			"rarity": "uncommon",
 			"entries": [
 				"Kavan was a ruthless chieftain whose tribe lived in the Balinok Mountains centuries before the arrival of {@creature Strahd von Zarovich|CoS}. Although he was very much alive, Kavan had some traits in common with vampires: he slept during the day and hunted at night, he drank the blood of his prey, and he lived underground.",
-				"In battle, he wielded a spear stained with blood. His was the first blood spear, however, because of a ritual made to transform the spear into a range weapon, it has become a longbow. The longbow is a weapon that drains life from those it kills and is capable of shoot blood draining arrows.",
+				"In battle, he wielded a spear stained with blood. This bow was once his blood spear, however, because of a ritual made to bond the spear with Soren, the spear transformed into a longbow. The longbow is a weapon that drains life from those it kills and is capable of shooting blood draining arrows.",
 				"This magic longbow has 3 charges. When you hit with a ranged attack using this magic longbow and reduce the target to 0 hit points, this bow regains one charge. It also replenishes all of its charges in a long rest.",
-				"The creature attuned to this bow can use one of its charges as part of an attack to imbue the arrow with necrotic energy, turning it into a blood draining arrow. If the attack hits, the target creature takes an additional {@dice 2d8} necrotic damage.",
-				"If the creature attuned with this bow makes a ranged attack with it while it has 0 charges, it cannot choose to not to make a non-lethal attack, since the bow is too thirsty for holding itself back.",
+				"The creature attuned to this bow can use one of its charges as part of an attack to imbue the arrow with necrotic energy, turning it into a blood draining arrow. If the attack hits, the target creature takes an additional {@dice 1d8} necrotic damage.",
+				"If the creature attuned with this bow makes a ranged attack with it while it has less than 3 charges, it cannot choose to not to make a non-lethal attack, since the bow is too thirsty for holding itself back.",
 				"Any creature can wield the bow, but only the character {@adventure chosen by Kavan|CoS|14|Blood Spear of Kavan} and attuned to it gains a +2 bonus to attack and damage rolls made with this magic weapon."
 			],
 			"fluff": {
@@ -609,7 +613,8 @@
 				"enlarge/reduce",
 				"fly",
 				"invisibility",
-				"levitate"
+				"levitate",
+				"protection from evil and good"
 			],
 			"fluff": {
 				"images": [
