@@ -1,0 +1,649 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "LEGDRAG",
+				"abbreviation": "LEGDRAG",
+				"full": "Legacy of Dragons",
+				"authors": [
+					"Niels de Jong"
+				],
+				"convertedBy": [
+					"windrockstar"
+				],
+				"version": "2023.12.11",
+				"url": "https://drive.google.com/file/d/14ovXoKfx1IqvsfLj6kE-_KJC8SpOIcUd/view?pli=1",
+				"color": "ab0047"
+			}
+		],
+		"dateAdded": 1604252046,
+		"dateLastModified": 1703373316,
+		"_dateLastModifiedHash": "ee61c78984"
+	},
+	"race": [
+		{
+			"name": "Dragonborn Revised",
+			"source": "LEGDRAG",
+			"raceName": "Dragonborn",
+			"raceSource": "PHB",
+			"page": 5,
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"ability": [
+				{
+					"str": 2,
+					"choose": {
+						"from": [
+							"dex",
+							"str",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						],
+						"count": 1,
+						"amount": 1
+					}
+				}
+			],
+			"heightAndWeight": {
+				"baseHeight": 66,
+				"heightMod": "2d8",
+				"baseWeight": 175,
+				"weightMod": "2d6"
+			},
+			"age": {
+				"mature": 15,
+				"max": 80
+			},
+			"traitTags": [
+				"Uncommon Race"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"draconic": true
+				}
+			],
+			"resist": [
+				{
+					"choose": {
+						"from": [
+							"acid",
+							"cold",
+							"fire",
+							"lightning",
+							"poison"
+						]
+					}
+				}
+			],
+			"soundClip": {
+				"type": "internal",
+				"path": "races/dragonborn.mp3"
+			},
+			"entries": [
+				"Your draconic heritage manifests in a variety of traits you share with other dragonborn.",
+				{
+					"name": "Ability Score Increase",
+					"type": "entries",
+					"entries": [
+						"Your Strength score increases by 2. One ability score, based on your draconic ancestry, increases by 1 (see the Draconic Ancestry table on page 6)."
+					]
+				},
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Young dragonborn grow quickly. They walk hours after hatching, attain the size and development of a 10-year-old human child by the age of 3, and reach adulthood by 15. They live to be around 80."
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"Dragonborn tend to extremes, making a conscious choice for one side or the other in the cosmic war between good and evil (represented by Bahamut and Tiamat, respectively). Most dragonborn are good, but those who side with Tiamat can be terrible villains."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Dragonborn are taller and heavier than humans, standing well over 6 feet tall and averaging almost 250 pounds. Your size is Medium."
+					]
+				},
+				{
+					"name": "Draconic Ancestry",
+					"entries": [
+						"You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon (shape, range and damage type), damage resistance, and ability score increase are determined by the dragon type, as shown in the table.",
+						{
+							"type": "table",
+							"caption": "Draconic Ancestry",
+							"colLabels": [
+								"Dragon",
+								"Damage Type",
+								"Breath Weapon",
+								"Ability Score"
+							],
+							"colStyles": [
+								"col-3 text-center",
+								"col-3 text-center",
+								"col-4",
+								"col-2"
+							],
+							"rows": [
+								[
+									"Amethyst",
+									"Force",
+									"15 ft. cone (Str. save)",
+									"Wisdom"
+								],
+								[
+									"Black",
+									"Acid",
+									"5 by 30 ft. line (Dex. save)",
+									"Constitution"
+								],
+								[
+									"Blue",
+									"Lightning",
+									"5 by 30 ft. line (Dex. save)",
+									"Constitution"
+								],
+								[
+									"Brass",
+									"Fire",
+									"5 by 30 ft. line (Dex. save)",
+									"Charisma"
+								],
+								[
+									"Bronze",
+									"Lightning",
+									"5 by 30 ft. line (Dex. save)",
+									"Wisdom"
+								],
+								[
+									"Celestial",
+									"Radiant",
+									"15 ft. cone (Con. save)",
+									"Charisma"
+								],
+								[
+									"Copper",
+									"Acid",
+									"5 by 30 ft. line (Dex. save)",
+									"Charisma"
+								],
+								[
+									"Crystal",
+									"Radiant",
+									"15 ft. cone (Con. save)",
+									"Charisma"
+								],
+								[
+									"Deep",
+									"Psychic",
+									"15 ft. cone (Wis. save)",
+									"Intelligence"
+								],
+								[
+									"Emerald",
+									"Psychic",
+									"15 ft. cone (Int. save)",
+									"Intelligence"
+								],
+								[
+									"Fang/Gray",
+									"Acid",
+									"5 by 30 ft. line (Dex. save)",
+									"Constitution"
+								],
+								[
+									"Gold",
+									"Fire",
+									"15 ft. cone (Dex. save)",
+									"Wisdom"
+								],
+								[
+									"Green",
+									"Poison",
+									"15 ft. cone (Con. save)",
+									"Intelligence"
+								],
+								[
+									"Moonstone",
+									"Radiant",
+									"5 by 30 ft. line (Dex. save)",
+									"Wisdom"
+								],
+								[
+									"Red",
+									"Fire",
+									"15 ft. cone (Dex. save)",
+									"Constitution"
+								],
+								[
+									"Sapphire",
+									"Thunder",
+									"15 ft. cone (Con. save)",
+									"Intelligence"
+								],
+								[
+									"Silver",
+									"Cold",
+									"15 ft. cone (Con. save)",
+									"Intelligence"
+								],
+								[
+									"Song",
+									"Lighting",
+									"15 ft. cone (Con. save)",
+									"Charisma"
+								],
+								[
+									"Steel",
+									"Acid",
+									"5 by 30 ft. line (Dex. save)",
+									"Intelligence"
+								],
+								[
+									"Topaz",
+									"Necrotic",
+									"15 ft. cone (Con. save)",
+									"Charisma"
+								],
+								[
+									"White",
+									"Cold",
+									"15 ft. cone (Con. save)",
+									"Constitution"
+								]
+							]
+						}
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Breath Weapon",
+					"entries": [
+						"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Damage Resistance",
+					"entries": [
+						"You have resistance to the damage type associated with your draconic ancestry. If you are a green dragonborn, then you also have advantage on saving throws against being poisoned."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Natural Weapons",
+					"entries": [
+						"You grow retractable claws from the tips of your fingers. Extending or retracting the claws requires no action. The claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d6 + your Strength modifier, instead of the normal bludgeoning damage for an unarmed strike. You can also use your bite, which follows the same rules as your claws, but deals 1d6 + your Strength modifier piercing damage instead."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Draconic. Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Subraces",
+					"entries": [
+						"Choose one of the following subraces. Your choice will determine additional benefits."
+					],
+					"type": "entries"
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"The fighter boy was down, the monk girl was overwhelmed, the cleric girl had wet herself, and the wizard girl got stabbed. Fortunately for these beginners, most of the goblins were now in a narrow pathway, and he was a dragonborn. As he inhaled deeply, he wondered what roasted goblin would smell like."
+						],
+						"by": "Rhogar, dragonborn veteran and savior of \"newbies\""
+					},
+					{
+						"name": "Dragonborn Revised",
+						"entries": [
+							"Born of dragons, as their name proclaims, the dragonborn walk proudly through a world that greets them with fearful incomprehension. Shaped by draconic gods or the dragons themselves, dragonborn were created with the essence of true dragons as a unique race, combining the best attributes of dragons and humanoids. Some dragonborn (reluctantly) serve true dragons, others form the ranks of soldiers in great wars, and still others find themselves adrift, with no clear calling in life.",
+							"The blood of a particular type of dragon runs very strong through each dragonborn, granting it a color pattern that corresponds to that dragon type. A dragonborn’s color imparts many traits upon them, including varying types of breath weapon, as well as resistance to the elemental type associated with their dragon ancestor.",
+							"In addition, each dragonborn possesses a fragment of what makes up a true dragon. Those whose fragment grants them a tail are often shunned, due to it being considered a bad omen for a dragonborn to have a tail."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Dragonborn names",
+						"entries": [
+							"Dragonborn have personal names given at birth, but they put their clan names first as a mark of honor. Childhood names are often given by clutchmates as a descriptive term.",
+							{
+								"entries": [
+									{
+										"name": "Male Names",
+										"entries": [
+											"Arjhan, Balasar, Bharash, Donaar, Ghesh, Heskan, Kriv, Medrash, Mehen, Nadarr, Pandjed, Patrin, Rhogar, Shamash, Shedinn, Tarhun, Torinn"
+										],
+										"type": "entries"
+									},
+									{
+										"name": "Female Names",
+										"entries": [
+											"Akra, Biri, Daar, Farideh, Harann, Havilar, Jheri, Kava, Korinn, Mishann, Nala, Perra, Raiann, Sora, Surina, Thava, Uadjit"
+										],
+										"type": "entries"
+									},
+									{
+										"name": "Childhood Names",
+										"entries": [
+											"Climber, Earbender, Leaper, Pious, Shieldbiter, Zealous "
+										],
+										"type": "entries"
+									},
+									{
+										"name": "Clan Names",
+										"entries": [
+											" Clethtinthiallor, Daardendrian, Delmirev, Drachedandion, Fenkenkabradon, Kepeshkmolik, Kerrhylon, Kimbatuul, Linxakasendalor, Myastan, Nemmonis, Norixius, Ophinshtalajiir, Prexijandilin, Shestendeliath, Turnuroth, Verthisathurgiesh, Yarjerit"
+										],
+										"type": "entries"
+									}
+								],
+								"type": "entries"
+							}
+						],
+						"type": "entries"
+					}				
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			},
+			"_versions": [
+				{
+					"_abstract": {
+						"name": "Dragonborn Revised ({{color}})",
+						"source": "LEGDRAG",
+						"_mod": {
+							"entries": [
+								{
+									"mode": "removeArr",
+									"names": "Draconic Ancestry"
+								},
+								{
+									"mode": "replaceArr",
+									"replace": "Breath Weapon",
+									"items": {
+										"type": "entries",
+										"name": "Breath Weapon",
+										"entries": [
+											"You can use your action to exhale destructive energy in a {{area}}.",
+											"When you use your breath weapon, each creature in the area of the exhalation must make a {{savingThrow}} saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes {@damage 2d6} {{damageType}} damage on a failed save, and half as much damage on a successful one. The damage increases to {@damage 3d6} at 6th level, {@damage 4d6} at 11th level, and {@damage 5d6} at 16th level.",
+											"After you use your breath weapon, you can't use it again until you complete a short or long rest."
+										]
+									}
+								},
+								{
+									"mode": "replaceArr",
+									"replace": "Damage Resistance",
+									"items": {
+										"type": "entries",
+										"name": "Damage Resistance",
+										"entries": [
+											"You have resistance to {{damageType}} damage."
+										]
+									}
+								}
+							]
+						}
+					},
+					"_implementations": [
+						{
+							"_variables": {
+								"color": "Amethyst",
+								"damageType": "force",
+								"area": "15-foot cone",
+								"savingThrow": "Strength"
+							},
+							"resist": [
+								"force"
+							]
+						},
+						{
+							"_variables": {
+								"color": "Black",
+								"damageType": "acid",
+								"area": "5-foot-wide, 30-foot-long line",
+								"savingThrow": "Dexterity"
+							},
+							"resist": [
+								"acid"
+							]
+						},
+						{
+							"_variables": {
+								"color": "Blue",
+								"damageType": "lightning",
+								"area": "5-foot-wide, 30-foot-long line",
+								"savingThrow": "Dexterity"
+							},
+							"resist": [
+								"lightning"
+							]
+						},
+						{
+							"_variables": {
+								"color": "Brass",
+								"damageType": "fire",
+								"area": "5-foot-wide, 30-foot-long line",
+								"savingThrow": "Dexterity"
+							},
+							"resist": [
+								"fire"
+							]
+						},
+						{
+							"_variables": {
+								"color": "Bronze",
+								"damageType": "lightning",
+								"area": "5-foot-wide, 30-foot-long line",
+								"savingThrow": "Dexterity"
+							},
+							"resist": [
+								"lightning"
+							]
+						},
+						{
+							"_variables": {
+								"color": "Celestial",
+								"damageType": "radiant",
+								"area": "15-foot cone",
+								"savingThrow": "Constitution"
+							},
+							"resist": [
+								"radiant"
+							]
+						},
+						{
+							"_variables": {
+								"color": "Copper",
+								"damageType": "acid",
+								"area": "5-foot-wide, 30-foot-long line",
+								"savingThrow": "Dexterity"
+							},
+							"resist": [
+								"acid"
+							]
+						},
+						{
+							"_variables": {
+								"color": "Crystal",
+								"damageType": "radiant",
+								"area": "15-foot cone",
+								"savingThrow": "Constitution"
+							},
+							"resist": [
+								"radiant"
+							]
+						},
+						{
+							"_variables": {
+								"color": "Deep",
+								"damageType": "psychic",
+								"area": "15-foot cone",
+								"savingThrow": "Wisdom"
+							},
+							"resist": [
+								"psychic"
+							]
+						},
+						{
+							"_variables": {
+								"color": "Emerald",
+								"damageType": "psychic",
+								"area": "15-foot cone",
+								"savingThrow": "Intelligence"
+							},
+							"resist": [
+								"psychic"
+							]
+						},
+						{
+							"_variables": {
+								"color": "Fang/Gray",
+								"damageType": "acid",
+								"area": "5-foot-wide, 30-foot-long line",
+								"savingThrow": "Constitution"
+							},
+							"resist": [
+								"acid"
+							]
+						},
+						{
+							"_variables": {
+								"color": "Gold",
+								"damageType": "fire",
+								"area": "15-foot cone",
+								"savingThrow": "Dexterity"
+							},
+							"resist": [
+								"fire"
+							]
+						},
+						{
+							"_variables": {
+								"color": "Green",
+								"damageType": "poison",
+								"area": "15-foot cone",
+								"savingThrow": "Constitution"
+							},
+							"resist": [
+								"poison"
+							]
+						},
+						{
+							"_variables": {
+								"color": "Moonstone",
+								"damageType": "radiant",
+								"area": "5-foot-wide, 30-foot-long line",
+								"savingThrow": "Dexterity"
+							},
+							"resist": [
+								"radiant"
+							]
+						},
+						{
+							"_variables": {
+								"color": "Red",
+								"damageType": "fire",
+								"area": "15-foot cone",
+								"savingThrow": "Dexterity"
+							},
+							"resist": [
+								"fire"
+							]
+						},
+						{
+							"_variables": {
+								"color": "Sapphire",
+								"damageType": "thunder",
+								"area": "15-foot cone",
+								"savingThrow": "Constitution"
+							},
+							"resist": [
+								"thunder"
+							]
+						},
+						{
+							"_variables": {
+								"color": "Silver",
+								"damageType": "cold",
+								"area": "15-foot cone",
+								"savingThrow": "Constitution"
+							},
+							"resist": [
+								"cold"
+							]
+						},
+						{
+							"_variables": {
+								"color": "Song",
+								"damageType": "lighting",
+								"area": "15-foot cone",
+								"savingThrow": "Constitution"
+							},
+							"resist": [
+								"lighting"
+							]
+						},
+						{
+							"_variables": {
+								"color": "Steel",
+								"damageType": "acid",
+								"area": "5-foot-wide, 30-foot-long line",
+								"savingThrow": "Dexterity"
+							},
+							"resist": [
+								"acid"
+							]
+						},
+						{
+							"_variables": {
+								"color": "Topaz",
+								"damageType": "necrotic",
+								"area": "15-foot cone",
+								"savingThrow": "Constitution"
+							},
+							"resist": [
+								"necrotic"
+							]
+						},
+						{
+							"_variables": {
+								"color": "White",
+								"damageType": "cold",
+								"area": "15-foot cone",
+								"savingThrow": "Constitution"
+							},
+							"resist": [
+								"cold"
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
