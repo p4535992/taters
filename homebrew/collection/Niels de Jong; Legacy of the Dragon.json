@@ -17,10 +17,84 @@
 				"color": "ab0047"
 			}
 		],
+		"optionalFeatureTypes": {
+			"RACE:LEGDRAG": "Race Saurian"
+		},
 		"dateAdded": 1604252046,
 		"dateLastModified": 1703373316,
 		"_dateLastModifiedHash": "ee61c78984"
 	},
+	"optionalfeature": [
+		{
+			"name": "Draconic Heritage",
+			"source": "LEGDRAG",
+			"featureType": [
+				"RACE:LEGDRAG"
+			],
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "Dragonborn"
+						},
+						{
+							"name": "Dragonborn Revised"
+						}
+					]
+				}
+			],
+			"entries": [
+				"You are blessed by Bahamut, Tiamat, or another dragon god, granting you another fragment of what makes a true dragon.",
+				"You can take this feat up to three times.",
+				{
+					"type": "list",
+					"items": [
+						"Increase your Strength, Constitution, or Charisma score by 1, to a maximum of 20.",
+						"The damage of your Breath Weapon racial trait increases by 1d6.",
+						"When you take this feat you gain a trait of one of the other dragonborn subraces of your choice, but you must choose a dragonborn subrace whose trait you don’t have yet. You gain the following trait based on your choice:",
+						{
+							"type": "table",
+							"caption": "Kitsune Tails Chart",
+							"colLabels": [
+								"Subrace",
+								"Trait"
+							],
+							"colStyles": [
+								"col-3",
+								"col-6"
+							],
+							"rows": [
+								[
+									"Dreadcaller",
+									"You gain the Draconic Fear trait"
+								],
+								[
+									"Murkdweller",
+									"You gain the Tail Lash trait."
+								],
+								[
+									"Steelscale",
+									"You gain the Hardened Scales trait."
+								],
+								[
+									"Wayfarer",
+									"You gain the Wings trait."
+								]
+							]
+						}
+					]
+				},
+				{
+					"name": "Draconians",
+					"type": "inset",
+					"entries": [
+						"If your setting has draconians, and with your DM's permission, you can use the rules for dragonborn to play as a draconian, by selecting a dragonborn subrace and draconic ancestry that fits your chosen draconian subrace the most (Fizban's Treasury of Dragons page 177). You gain your chosen draconian's Death Throes trait, which uses your Breath Weapon's DC and doesn't affect allies, and afterwards it recharges when you finish a long rest. Instead of your Breath Weapon, you gain the benefit of one of the spellscale's Blood Quickening Meditations of your choice (page 31). You can discuss further trait optimization with your DM.",
+						"Similarly, you can use the traits of the tabaxi (Volo's Guide to Monsters page 113) for your race if you wish to play as a more human looking beast race, such as Ghislaine Dedoldia (as a kensei, page 65) and Setsuna of the Ice Wolf tribe (as a totem guardian, page 41)."
+					]
+				}
+			]
+		}
+	],
 	"race": [
 		{
 			"name": "Dragonborn Revised",
@@ -297,9 +371,16 @@
 				{
 					"name": "Subraces",
 					"entries": [
-						"Choose one of the following subraces. Your choice will determine additional benefits."
+						"In addition to being aligned to a particular type of dragon, dragonborn also possess fragments of what makes up a true dragon. These blessings cause them to be divided into four subraces, with Dreadcaller being the most common. Murkdwellers are the only ones with a tail, and are often shunned because of it. Even while half dragons, known for their long tails, are accepted within dragonborn society."
 					],
 					"type": "entries"
+				},
+				{
+					"name": "Variant ability score increase: ",
+					"entries": [
+						"As a variant rule, you can increase either your Strength score or the ability score determined by your draconic ancestry by 2. Whichever score you didn't increase instead increases by 1."
+					],
+					"type": "inset"
 				}
 			],
 			"fluff": {
@@ -315,7 +396,7 @@
 						"name": "Dragonborn Revised",
 						"entries": [
 							"Born of dragons, as their name proclaims, the dragonborn walk proudly through a world that greets them with fearful incomprehension. Shaped by draconic gods or the dragons themselves, dragonborn were created with the essence of true dragons as a unique race, combining the best attributes of dragons and humanoids. Some dragonborn (reluctantly) serve true dragons, others form the ranks of soldiers in great wars, and still others find themselves adrift, with no clear calling in life.",
-							"The blood of a particular type of dragon runs very strong through each dragonborn, granting it a color pattern that corresponds to that dragon type. A dragonborn’s color imparts many traits upon them, including varying types of breath weapon, as well as resistance to the elemental type associated with their dragon ancestor.",
+							"The blood of a particular type of dragon runs very strong through each dragonborn, granting it a color pattern that corresponds to that dragon type. A dragonborn's color imparts many traits upon them, including varying types of breath weapon, as well as resistance to the elemental type associated with their dragon ancestor.",
 							"In addition, each dragonborn possesses a fragment of what makes up a true dragon. Those whose fragment grants them a tail are often shunned, due to it being considered a bad omen for a dragonborn to have a tail."
 						],
 						"type": "entries"
@@ -359,7 +440,14 @@
 							}
 						],
 						"type": "entries"
-					}				
+					},
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
+						],
+						"type": "entries"
+					}			
 				],
 				"images": [
 					{
@@ -644,6 +732,471 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Genasi Revised",
+			"source": "LEGDRAG",
+			"page": 8,
+			"lineage": "VRGR",
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"age": {
+				"max": 120
+			},
+			"darkvision": 60,
+			"entries": [
+				{
+					"name": "Ability Score Increase",
+					"type": "entries",
+					"entries": [
+						"Two ability scores of your choice increase by 1. Alternatively; one ability score of your choice, other than the ability score that is increased by your genasi subrace, increases by 2."
+					]
+				},
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Genasi mature at about the same rate as their mortal parents, but live somewhat longer. Those born from humans tend to live up to 120 years."
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"Independent and self-reliant, genasi tend toward a neutral alignment."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Genasi are as varied as their mortal parents but are generally built like humans, standing anywhere from 5 feet to over 6 feet tall. Your size is Medium."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Speed",
+					"entries": [
+						"Your base walking speed is 30 feet."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Primordial. Primordial is a guttural language, filled with harsh syllables and hard consonants."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light but only in shades of gray (or red if you're a fire genasi). "
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Subraces",
+					"entries": [
+						"The most common genasi are air genasi, earth genasi, fire genasi, and water genasi."
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"primordial": true
+				}
+			]
+		}
+	],
+	"subrace": [
+		{
+			"name": "DreadCaller",
+			"source": "LEGDRAG",
+			"raceName": "Dragonborn Revised",
+			"raceSource": "LEGDRAG",		
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						{
+							"name": "DreadCaller",
+							"entries": [],
+							"type": "entries"
+						}
+					]
+				},
+				{
+					"name": "Draconic Fear",
+					"type": "entries",
+					"entries": [
+						"You can roar as an action, forcing each creature of your choice within 30 feet of you to make a Wisdom saving throw (DC 8 + your proficiency bonus + your Charisma modifier) if it can see and hear you. On a failed save, the target is frightened of you for 1 minute. The frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. You regain the use of this trait after finishing a long rest."
+					]
+				},
+				{
+					"name": "Powerful Build",
+					"entries": [
+						"You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+					],
+					"type": "entries"
+				}
+				
+			],
+			"traitTags": [
+				"Powerful Build"
+			],
+			"fluff": {
+				"entries": [
+					"",
+					{
+						"name": "Dragonborn Revised (DreadCaller)",
+						"entries": [],
+						"type": "entries"
+					},
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
+						],
+						"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Murkdweller",
+			"source": "LEGDRAG",
+			"raceName": "Dragonborn Revised",
+			"raceSource": "LEGDRAG",		
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						{
+							"name": "Murkdweller",
+							"entries": [],
+							"type": "entries"
+						}
+					]
+				},
+				{
+					"name": "Darkvision",
+					"type": "entries",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light but only in shades of gray."
+					]
+				},
+				{
+					"name": "Tail Lash",
+					"entries": [
+						"Your tail can be used to push or trip up opponents. You can use your bonus action to shove a creature within 5 feet of you. You can use this trait a number of times equal to your Strength modifier (minimum of 1). You regain all expended uses when you finish a long rest."
+					],
+					"type": "entries"
+				}
+				
+			],
+			"darkvision": 60,
+			"fluff": {
+				"entries": [
+					"",
+					{
+						"name": "Dragonborn Revised (Murkdweller)",
+						"entries": [],
+						"type": "entries"
+					},
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
+						],
+						"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "SteelScale",
+			"source": "LEGDRAG",
+			"raceName": "Dragonborn Revised",
+			"raceSource": "LEGDRAG",
+					
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						{
+							"name": "SteelScale",
+							"entries": [],
+							"type": "entries"
+						}
+					]
+				},
+				{
+					"name": "Hardened Scales",
+					"type": "entries",
+					"entries": [
+						"You gain a +1 bonus to your AC while not wearing heavy armor. Instead of this bonus, you can calculate your AC as 13 + your Dexterity modifier. A shield's benefits apply on top of either option."
+					]
+				},
+				{
+					"name": "Savage Jaws",
+					"entries": [
+						"When you use your breath weapon or make a melee attack on your turn, you can make one attack with your bite as a bonus action that turn. If the attack hits, it deals its normal damage, and you can't use this trait again until you finish a short rest, long rest, or you reduce a creature to 0 hit points. In addition, the damage die of your Natural Weapons trait increases from 1d6 to 1d8."
+					],
+					"type": "entries"
+				}
+			],
+			"fluff": {
+				"entries": [
+					"",
+					{
+						"name": "Dragonborn Revised (SteelScale)",
+						"entries": [],
+						"type": "entries"
+					},
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
+						],
+						"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Wayfarer",
+			"source": "LEGDRAG",
+			"raceName": "Dragonborn Revised",
+			"raceSource": "LEGDRAG",
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						{
+							"name": "Wayfarer",
+							"entries": [],
+							"type": "entries"
+						}
+					]
+				},
+				{
+					"name": "Wings",
+					"type": "entries",
+					"entries": [
+						"You have draconic wings sprouting from your shoulder blades. When falling you can use your reaction to slow your descent, as if under the effects of a feather fall spell. However you can move one foot horizontally for each foot that you fall. At 6th level you can grant yourself a flying speed of 30 feet as a bonus action for up to 10 minutes, all at once or in shorter flights, each one using a minimum of 1 minute from the duration. You regain the full duration after finishing a long rest. At 14th level you can instead fly indefinitely at a speed of 30 feet. If you also have a flying speed from another source, that flying speed will increase by 20 feet instead. Your clothes and armor have to be modified to accommodate your wings, and you can't use your wings while wearing heavy armor."
+					]
+				},
+				{
+					"name": "Hardened Resistance",
+					"entries": [
+						"You have an echo of the toughness of a true dragon. You can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can't use this trait again until you finish a long rest."
+					],
+					"type": "entries"
+				}
+			],
+			"fluff": {
+				"entries": [
+					"",
+					{
+						"name": "Dragonborn Revised (Wayfarer)",
+						"entries": [],
+						"type": "entries"
+					},
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
+						],
+						"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Air",
+			"source": "LEGDRAG",
+			"raceName": "Genasi Revised",
+			"raceSource": "LEGDRAG",
+			"ability": [
+				{
+					"dex": 1
+				}, 
+				{
+					"hidden": false
+				}
+			],
+			"speed": {
+				"walk": 35
+			},
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						{
+							"name": "Air",
+							"entries": [],
+							"type": "entries"
+						}
+					]
+				},
+				{
+					"name": "Ability Score Increase",
+					"type": "entries",
+					"entries": [
+						"Your Dexterity score increases by 1."
+					]
+				},
+				{
+					"name": "Step on Air",
+					"type": "entries",
+					"entries": [
+						"Your walking speed, long jump distance, and high jump distance increase by 5 feet. At 6th level, when you use the Dash action, you gain a flying speed equal to your walking speed until the end of the turn. If you also have a flying speed from another source during that time, then your flying speed will increase by 20 feet until the end of the turn. At the end of the turn, you fall if you are in the air and nothing is keeping you aloft."
+					]
+				},
+				{
+					"name": "Storm Affinity",
+					"entries": [
+						"You have resistance to lightning and thunder damage. If you also have resistance to lightning damage from another source, then all lightning damage you deal ignores lightning resistance. If you also have resistance to thunder damage from another source, then all thunder damage you deal ignores thunder resistance."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Unending Breath",
+					"entries": [
+						"You can hold your breath indefinitely."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Mingle with the Wind",
+					"entries": [
+						"You know the {@spell gust|XGE} or {@spell shocking grasp|PHB} cantrip (your choice). You can cast the {@spell feather fall|PHB} spell once with this trait, and at 3rd level you can cast the {@spell levitate|PHB} spell once with this trait. You regain the ability to cast these two spells this way when you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. Your spellcasting ability for these spells is Intelligence, Wisdom, or Charisma (your choice)."
+					],
+					"type": "entries"
+				}
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"_": [
+							"gust|xge",
+							"shocking grasp|phb"
+						]
+					},
+					"innate": {
+						"daily": {
+							"1": [
+								"feather fall|phb",
+								"levitate|phb"
+							]
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"fluff": {
+				"entries": [
+					"",
+					{
+						"name": "Genasi Revised (Air)",
+						"entries": [],
+						"type": "entries"
+					},
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
+						],
+						"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			}
 		}
 	]
 }
