@@ -3860,6 +3860,73 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Mind blast",
+			"source": "LEGDRAG",
+			"featureType": [
+				"OPTFEAT:LEGDRAG"
+			],
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "Dragonborn"
+						},
+						{
+							"name": "Dragonborn Revised"
+						}
+					]
+				}
+			],
+			"entries": [
+				"If you are a half gem dragon (sapphire or otherwise) with the Improved Breath Weapon feat, then you can spend 2 empower points to turn your breath weapon into a Mind Blast instead. Those affected must instead make an Intelligence saving throw, suffer psychic damage instead of the normal damage, and if they fail their saving throw they are also incapacitated until the end of their next turn. If you also have the Telepathic feat (Tasha's Cauldron of Everything page 81), then the cost is reduced to 1 empower point instead. You must have your DM's permission to use this option."
+			]
+		},
+		{
+			"name": "Divine Attack",
+			"source": "LEGDRAG",
+			"featureType": [
+				"OPTFEAT:LEGDRAG"
+			],
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "Dragonborn"
+						},
+						{
+							"name": "Dragonborn Revised"
+						}
+					]
+				}
+			],
+			"entries": [
+				"If you are a sorcerer with the Divine Soul sorcerous origin, and provided you have your DM's permission, then you can exchange your Empowered Healing feature with the Divine Attack feature.",
+				"When you use your action to cast one of your cantrips, you can make one weapon attack as a bonus action. You gain proficiency with one weapon of your choice."
+			]
+		},
+		{
+			"name": "Dragonsong",
+			"source": "LEGDRAG",
+			"featureType": [
+				"OPTFEAT:LEGDRAG"
+			],
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "Dragonborn"
+						},
+						{
+							"name": "Dragonborn Revised"
+						}
+					]
+				}
+			],
+			"entries": [
+				"Half silver dragons have developed their own variation of the Bladesinger tradition, called the Dragonsinger, which utilises the power of the Dragon Voice. Only those who speak Draconic can choose this arcane tradition. It is identical to the Bladesinger tradition, except that Bladesong is renamed to Dragonsong, you have advantage on Strength (Athletics) checks instead of Dexterity (Acrobatics) checks during your Dragonsong, you can choose a two-handed melee weapon for your weapon proficiency, and you can use two hands to make an attack with a melee weapon without ending the Dragonsong."
+			]
 		}
 	],
 	"race": [
@@ -5231,6 +5298,45 @@
 							}
 						],
 						"type": "entries"
+					},
+					{
+						"name":"Unusual Half-Dragon",
+						"type": "inset",
+						"entries": [
+							"The following are the more unusual half dragon subraces, which you can also choose with your DM's permission. Gray dragons are chromatic dragons, while fang dragons, moonstone dragons, and song dragons are their own subspecies of dragon.",
+							"For game purposes; gem dragons, moonstone dragons, and song dragons count as metallic dragons, while fang dragons count as chromatic dragons.",
+							{
+								"name": "Additional Half Gem Dragons",
+								"type": "entries",
+								"entries": [
+									"While half sappire dragons are the most common half gem dragons, players can also choose to play as a different kind of half gem dragon, seeing as there are also different types of gem dragon besides sapphire dragons. These gem dragon types are; the amethyst dragon, the crystal dragon, the emerald dragon and the topaz dragon.",
+									"If you wish to play as a different type of half gem dragon, then you can take the traits of the half sapphire dragon as your base, but then choose one of the other gem dragon types from the Gem Dragon Ancestor table. This changes the damage type of your Draconic Ancestry trait to the damage type associated with your gem dragon ancestor, as well as the shape and saving throw type of your breath weapon. In addition, all mentions of your character's Intelligence score in the Ability Score Increase and Psionic Dragon traits are replaced with the ability score associated with your Gem Dragon Ancestor (if it is different).",
+									"For example; if you are a half amethyst dragon, your Wisdom score increases by 2, your Strength score increases by 1, your Draconic Ancestry trait's damage type changes to force, and Wisdom is your spellcasting ability for your Psionic Dragon trait. You can use the Mind Blast option regardless of half gem dragon type, provided you have your DM's permission. These other types of half gem dragon are less common than half sapphire dragons, and usually don't form communities of their own. Because of this they are not an option for the half dragon brood background (page 92). Instead, they often join half sapphire dragon communities."
+								]
+							}
+						]
+					},
+					{
+						"name":"Mind Blast",
+						"type": "inset",
+						"entries": [
+							"If you are a half gem dragon (sapphire or otherwise) with the Improved Breath Weapon feat, then you can spend 2 empower points to turn your breath weapon into a Mind Blast instead. Those affected must instead make an Intelligence saving throw, suffer psychic damage instead of the normal damage, and if they fail their saving throw they are also incapacitated until the end of their next turn. If you also have the Telepathic feat (Tasha's Cauldron of Everything page 81), then the cost is reduced to 1 empower point instead. You must have your DM's permission to use this option."
+						]
+					},
+					{
+						"name":"Divine Attack",
+						"type": "inset",
+						"entries": [
+							"If you are a sorcerer with the Divine Soul sorcerous origin, and provided you have your DM's permission, then you can exchange your Empowered Healing feature with the Divine Attack feature.",
+							"When you use your action to cast one of your cantrips, you can make one weapon attack as a bonus action. You gain proficiency with one weapon of your choice."
+						]
+					},
+					{
+						"name":"Brown Dragon",
+						"type": "inset",
+						"entries": [
+							"If your world also includes the brown dragon, then you can use these rules for half brown dragons by using the half blue dragon as your base, but then replace the lightning damage type of your Draconic Ancestry trait with the acid damage type. Your other racial traits remain the same. If you wish to use the brown dragon for class features, for ascending to dragonhood, as a monster encounter, or for some other reason; you can use the game statistics for blue dragons (Monster Manual page 90) but replace its lightning damage type with the acid damage type. In addition, brown dragons do not have a flying speed, but instead their burrow speed is twice that of a blue dragon of the same age, and they have the Tunneler trait of a sapphire dragon (Fizban's Treasury of Dragons page 214) of the same age."
+						]
 					},
 					{
 						"name": "Credits",
@@ -6970,6 +7076,444 @@
 					}
 				]
 			}
-		}
+		},
+		{
+			"name": "Celestial",
+			"source": "LEGDRAG",
+			"raceName": "Half-Dragon",
+			"raceSource": "LEGDRAG",
+			"ability": [
+				{
+					"str": 1,
+					"wis": 1,
+					"cha":1
+				}
+			],
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						{
+							"name": "Celestial",
+							"entries": [],
+							"type": "entries"
+						}
+					]
+				},
+				{
+					"name": "Ability Score Increase",
+					"type": "entries",
+					"entries": [
+						"Your Strength, Wisdom, and Charisma scores each increase by 1."
+					]
+				},
+				{
+					"name": "Draconic Ancestry",
+					"type": "entries",
+					"entries": [
+						"Your breath weapon deals {@damage radiant} damage in a 15-foot cone. Your breath weapon imposes a Constitution saving throw. You have resistance to {@damage radiant} damage."
+					]
+				},
+				{
+					"name": "Radiant Dragon",
+					"entries": [
+						"You know the {@spell light|PHB} cantrip, and your spellcasting ability for this spell is Intelligence, Wisdom, or Charisma (your choice). Those that fail their saving throw against your breath weapon become {@condition blinded} until the end of their next turn, provided your breath weapon deals {@damage radiant} damage. Those that succeed on this saving throw cannot be {@condition blinded} this way for the next 24 hours."
+					],
+					"type": "entries"
+				}
+			],
+			"resist":[
+				"radiant"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"1": {
+							"daily": {
+								"1": [
+									"Breath Weapon Revised (Dragonborn Celestial)|LEGDRAG"
+								]
+							}
+						}
+					},
+					"ability": "cha"
+				}, 
+				{
+					"known": {
+						"_": [
+							"light#c"
+						]
+					},
+					"ability": "inherit"
+				}
+			],
+			"fluff": {
+				"entries": [
+					"",
+					{
+						"name": "Half-Dragon (Celestial)",
+						"entries": [
+							"Also known as lung dragons or T'ien Lung dragons, these dragons are revered in eastern cultures. They are feared for their heavenly wrath breath weapons, which burn and blind foes with radiant fire. They have a reputation for being fair but also very harsh. Half celestial dragons are often employed by celestials, and are renowned as wise monks. Celestial dragons are sometimes called lunar or solar dragons due to their radiant and celestial appearance. They are believed to be an offshoot of astral dragons who left the astral sea, as they too do not have wings, but can still fly."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
+						],
+						"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/TcHhZ6N.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Sapphire",
+			"source": "LEGDRAG",
+			"raceName": "Half-Dragon",
+			"raceSource": "LEGDRAG",
+			"ability": [
+				{
+					"str": 1,
+					"int": 2
+				}
+			],
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						{
+							"name": "Sapphire",
+							"entries": [],
+							"type": "entries"
+						}
+					]
+				},
+				{
+					"name": "Ability Score Increase",
+					"type": "entries",
+					"entries": [
+						"Your Intelligence score increases by 2, and your Strength score increases by 1. "
+					]
+				},
+				{
+					"name": "Draconic Ancestry",
+					"type": "entries",
+					"entries": [
+						"Your breath weapon deals {@damage thunder} damage in a 15-foot cone. Your breath weapon imposes a Constitution saving throw. You have resistance to {@damage thunder} damage."
+					]
+				},
+				{
+					"name": "Psionic Dragon",
+					"entries": [
+						"You know the {@spell mage hand|PHB} cantrip, and the hand is invisible when you cast the spell with this trait. At 3rd level you can cast the {@spell detect thoughts|PHB} spell once with this trait, and at 5th level you can cast the {@spell misty step|PHB} spell once with this trait, and you regain the ability to cast these spells this way when you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. Your spellcasting ability for these spells is Intelligence, Wisdom, or Charisma (your choice). You don't require components to cast these spells."
+					],
+					"type": "entries"
+				}
+			],
+			"resist":[
+				"thunder"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"1": {
+							"daily": {
+								"1": [
+									"Breath Weapon Revised (Dragonborn Sapphire)|LEGDRAG"
+								]
+							}
+						}
+					},
+					"ability": "int"
+				}, 
+				{
+					"innate": {
+						"3": {
+							"daily": {
+								"1": [
+									"detect thoughts|phb"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"misty step|phb"
+								]
+							}
+						}
+					},
+					"ability": "inherit",
+					"known": {
+						"1": [
+							"mage hand#c"
+						]
+					}
+				}
+			],
+			"fluff": {
+				"entries": [
+					"",
+					{
+						"name": "Half-Dragon (Sapphire)",
+						"entries": [
+							"Sapphire dragons are a type of gem dragon with crystalline blue scales, which are inherited by their half dragon offspring. Sapphire dragons are known for their psionics, and also for being capable tacticians. Half sapphire dragons are renowned as gifted psychics, and are known for being compassionate yet also pragmatic when the need arises. The horns and tip of the tail of half sapphire dragons are crystal-like, which become smoother and change as they grow older, until they look identical to those of sapphire dragons."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
+						],
+						"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/OS67jUw.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Steel",
+			"source": "LEGDRAG",
+			"raceName": "Half-Dragon",
+			"raceSource": "LEGDRAG",
+			"ability": [
+				{
+					"str": 1,
+					"int": 1,
+					"cha":1
+				}
+			],
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						{
+							"name": "Steel",
+							"entries": [],
+							"type": "entries"
+						}
+					]
+				},
+				{
+					"name": "Ability Score Increase",
+					"type": "entries",
+					"entries": [
+						"Your Strength, Intelligence, and Charisma scores each increase by 1."
+					]
+				},
+				{
+					"name": "Draconic Ancestry",
+					"type": "entries",
+					"entries": [
+						"Your breath weapon deals {@damage acid} damage in a line 30 feet long and 5 feet wide. Your breath weapon imposes a Dexterity saving throw. You have resistance to {@damage acid} damage."
+					]
+				},
+				{
+					"name": "Metal Affinity",
+					"entries": [
+						"You have proficiency with the {@item longsword|PHB}, {@item greatsword|PHB}, and {@item chain shirt|PHB}. You gain a +1 bonus to your AC while not wearing heavy armor. Instead of this bonus, {@b you can calculate your AC as 13 + your Dexterity modifier}. A shield's benefits apply on top of either option."
+					],
+					"type": "entries"
+				}
+			],
+			"weaponProficiencies": [
+				{
+					"longsword|phb": true,
+					"greatsword|phb": true
+				}
+			],
+			"armorProficiencies": [
+				{
+					"medium": true
+				}
+			],
+			"resist":[
+				"acid"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"1": {
+							"daily": {
+								"1": [
+									"Breath Weapon Revised (Dragonborn Steel)|LEGDRAG"
+								]
+							}
+						}
+					},
+					"ability": "int"
+				}
+			],
+			"fluff": {
+				"entries": [
+					"",
+					{
+						"name": "Half-Dragon (Steel)",
+						"entries": [
+							"Steel dragons are amiable, curious, and witty metallic dragons, that would rather spend their time among human cultures than in their own true forms. They prefer to invest in property and business unlike other dragons, who preferred to hoard monetary treasures. Steel dragons can cast divine magic as arcane spells, which is one of the blessings they have received from Io. They are gifted shapechangers, and retain many benefits of their draconic bodies even while in their disguises. Their guise will age at the normal rate of the race they changed into, which they call Time Touching. When their mortal life will have run its course, they will shed their memories in a process called \"Vaulting\", where they will store their previous memories. That way they can live their next life without any bias and prejudices from their previous one.",
+							"An exception is their soul mate and full dragon children, whose memories stay vivid, as the other memories around them feel  vague and distant. They will live multiple lives throughout their lifespan, called the \"chain of lives\". At the end of each life they will create a work of art that contains their collected wisdom; a teacher could create a book, and an adventurer could create a magical item. They will store these in a vault called \"the Composition\", which will be their legacy, to be shared at the true end of their life. They believe that Io created them for this purpose, to share the wisdom they have learned this way with others. Steel dragons spend most of their life in human form, except when they try to find a mate. After finding one they would start a \"semi-life\" where they live in a human form with their \"soul mate\", while taking care of their full-blooded dragon children in between, using their magic to disguise them. These children will then move to different cities once they are grown up, while the parents will create a new semi-life together, or go their own ways to meet up again later.",
+							{
+								"name": "Playing as a Half Steel Dragon",
+								"type": "entries",
+								"entries": [
+									"Half steel dragons that live among humans appear as a human or half human, depending on the mortal parent. Half steel dragons in human societies would often live much of their life unaware of their true nature, but they could find strange occurrences that would hint at their heritage; such as a surprisingly durable skin, and an affinity towards metal. They would be unable to use their breath weapon, unless they were made aware of it. Either by their family or by great stress. When used, it would temporarily reveal their true nature to those within 30 feet of them, and make the half steel dragon aware of its true lineage. This disguise can not be detected by magic, but other (half) steel dragons will see through this deception. However, half steel dragons that live among other half dragons for an extended period of time will appear as they truly are, half dragons with horns and a draconic lower body. Through a secretive ritual, half steel dragons can change into other forms like their full blooded steel dragon kin can. Half steel dragons, like their dragon ancestors, prefer to talk instead of entering conflict. When they do fight, they generally avoid melee and rely on their magical spells, even though they can hold their own quite well. Remarkably, they have many Divine Soul sorcerers, which most believe is a blessing from Io. Steel dragons would sometimes organize themselves, but the vaulting would erase the memories of their half dragon offspring.",
+									"As such, half steel dragons have created their own separate society called the Confluence, a loose and secretive association of half steel dragons. The Confluence originated with a pair of steel dragons, Auntyrlothtor and Quituryte. They fought against the malaugrym, evil shapeshifters, together with a group of noble women. In time, the two brothers produced half-breed offspring with these noble women, who were then raised in secret by the noble families of the original dames. These half-breed nobles proved vital in repelling the malaugrym when they subtly attacked again. In order to stop future resurgences, they founded the Confluence to control or eliminate any shapechangers who entered their cities."
+								]
+							}
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
+						],
+						"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/oVr0ILh.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Amethyst",
+			"source": "LEGDRAG",
+			"raceName": "Half-Dragon",
+			"raceSource": "LEGDRAG",
+			"ability": [
+				{
+					"str": 1,
+					"wis": 2
+				}
+			],
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						{
+							"name": "Amethyst",
+							"entries": [],
+							"type": "entries"
+						}
+					]
+				},
+				{
+					"name": "Ability Score Increase",
+					"type": "entries",
+					"entries": [
+						"Your Wisdom score increases by 2, and your Strength score increases by 1. "
+					]
+				},
+				{
+					"name": "Draconic Ancestry",
+					"type": "entries",
+					"entries": [
+						"Your breath weapon deals {@damage force} damage in a 15-foot cone. Your breath weapon imposes a Constitution saving throw. You have resistance to {@damage force} damage."
+					]
+				},
+				{
+					"name": "Psionic Dragon",
+					"entries": [
+						"You know the {@spell mage hand|PHB} cantrip, and the hand is invisible when you cast the spell with this trait. At 3rd level you can cast the {@spell detect thoughts|PHB} spell once with this trait, and at 5th level you can cast the {@spell misty step|PHB} spell once with this trait, and you regain the ability to cast these spells this way when you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. Your spellcasting ability for these spells is Intelligence, Wisdom, or Charisma (your choice). You don't require components to cast these spells."
+					],
+					"type": "entries"
+				}
+			],
+			"resist":[
+				"force"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"1": {
+							"daily": {
+								"1": [
+									"Breath Weapon Revised (Dragonborn Amethyst)|LEGDRAG"
+								]
+							}
+						}
+					},
+					"ability": "wis"
+				}, 
+				{
+					"innate": {
+						"3": {
+							"daily": {
+								"1": [
+									"detect thoughts|phb"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"misty step|phb"
+								]
+							}
+						}
+					},
+					"ability": "inherit",
+					"known": {
+						"1": [
+							"mage hand#c"
+						]
+					}
+				}
+			],
+			"fluff": {
+				"entries": [
+					"",
+					{
+						"name": "Half-Dragon (Amethyst)",
+						"entries": [
+							"Amethyst dragons are a type of gem dragon with crystalline blue scales, which are inherited by their half dragon offspring. Amethyst dragons are known for their psionics, and also for being capable tacticians. Half amethyst dragons are renowned as gifted psychics, and are known for being compassionate yet also pragmatic when the need arises. The horns and tip of the tail of half amethyst dragons are crystal-like, which become smoother and change as they grow older, until they look identical to those of amethyst dragons."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
+						],
+						"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/OS67jUw.png"
+						}
+					}
+				]
+			}
+		},
 	]
 }
