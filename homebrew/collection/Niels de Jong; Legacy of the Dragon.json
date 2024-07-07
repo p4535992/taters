@@ -5036,6 +5036,192 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "BrotHers of the Mine",
+			"source": "LEGDRAG",
+			"featureType": [
+				"OPTFEAT:LEGDRAG"
+			],
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "Dwarf"
+						},
+						{
+							"name": "Kobold Revised"
+						},
+						{
+							"name": "Kobold"
+						}
+					],
+					"other": "The Pick Mastery racial trait"
+				}
+			],
+			"entries": [
+				"Your time spent using pickaxes and war picks allows you to use them to aid your allies. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+					    "Increase your Strength, Dexterity, or Constitution score by 1, to a maximum of 20.",
+						"You gain proficiency with the cartographer's tools. The damage die of a war pick you wield is now 1d8 (1d12).",
+						"When you take the Attack action while using a pickaxe, a war pick, or a similar tool, you can forgo one of your attacks and instead pull a creature within 5 feet of you off balance; the next attack roll an ally makes against this target before the start of your next turn has advantage. If the target is wielding a shield, you temporarily pull it aside, granting all allies a +2 bonus to attack rolls against the target until the start of your next turn."
+					]
+				}
+			]
+		},
+		{
+			"name": "Find the Gap",
+			"source": "LEGDRAG",
+			"featureType": [
+				"OPTFEAT:LEGDRAG"
+			],
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "Kobold Revised"
+						},
+						{
+							"name": "Kobold"
+						}
+					],
+					"other": "The Fleeting Courage racial trait"
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"You can move through the space of any creature that is of a size larger than you.",
+						"After moving through the space of a creature that is at least two sizes larger than you on your turn, you can use your bonus action to gain advantage on your next attack roll against that creature before the end of your turn.",
+						"When an ally makes a melee attack against a creature within 5 feet of you, you can use your reaction to make one melee weapon attack against that same creature."
+					]
+				}
+			]
+		},
+		{
+			"name": "Kobold Breath",
+			"source": "LEGDRAG",
+			"featureType": [
+				"OPTFEAT:LEGDRAG"
+			],
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "Kobold Revised"
+						},
+						{
+							"name": "Kobold"
+						}
+					],
+					"other": "Dragonwrought Kobold variant"
+				}
+			],
+			"entries": [
+				"Dragonwrought kobolds have strong ties to their dragon ancestors, and some can even use a racial breath weapon.",
+				{
+					"type": "list",
+					"items": [
+						"You gain the Breath Weapon trait from the half dragon (page 10). Its damage type, save type, and shape are determined by your dragonwrought dragon ancestor.",
+						"You gain a number of empower points equal to your proficiency bonus. When you use your Breath Weapon trait you can expend an empower point and choose one of the following benefits: You can use your breath weapon as a bonus action, its damage is increased by 2d6 or its range is doubled (30-foot cone or 60-feet long line that is 10 feet wide). You can only gain each benefit once per use of your breath weapon, but you can expend more empower points to gain multiple different benefits at once."
+					]
+				},
+				"You regain one empower point after finishing a short rest, and all of them after finishing a long rest."
+			]
+		},
+		{
+			"name": "Kobold Inventor",
+			"source": "LEGDRAG",
+			"featureType": [
+				"OPTFEAT:LEGDRAG"
+			],
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "Kobold Revised"
+						},
+						{
+							"name": "Kobold"
+						}
+					],
+					"other": "The Skilled Trapper racial trait "
+				}
+			],
+			"entries": [
+				"You are resourceful and clever for a kobold, although quite eccentric as well. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"The damage of your created traps (Xanathar's Guide to Everything page 84) is doubled. As an action, you can also create a temporary makeshift trap outside a short rest, which follows the same rules as your normal traps but only lasts 1 hour, and afterwards you regain the ability to do so after finishing a short or long rest.",
+						"You carry six of your inventions with you, and you can use each of the options listed in the Kobold Invention table as an action once. Their DC is 8 + your proficiency bonus + your Intelligence modifier. All initial damage caused by your inventions increases by an additional 1d6 at 8th level, 12th level, 16th level and 20th level. You also add your proficiency bonus to the attack rolls of your insect swarms. You can choose to panic and use one of your inventions as a bonus action instead of an action, however you must then roll a d6 die to determine which invention you use. If you roll a used invention, then nothing happens. While using an invention this way, you can choose not to cause its effects. You can only (try to) use one invention each turn. After finishing a long rest, and spending 10 minutes to forage and prepare, you regain all expended uses of your inventions."
+					]
+				},
+				"These traps and inventions look like a mess of scrap, and others are unwilling to buy them and unable to use them.",
+				{
+					"type": "table",
+					"caption": "Kobold Inventions",
+					"colLabels": [
+						"d6",
+						"Kobold Invention"
+					],
+					"colStyles": [
+						"col-3",
+						"col-6"
+					],
+					"rows": [
+						[
+							"1",
+							"{@b Acid.} You hurl a flask of volatile acid to a location within 20 feet of you. Those within 10 feet of that location must make a Dexterity saving throw, taking 3d6 acid damage on a failed save, or half as much damage on a successful one."
+						],
+						[
+							"2",
+							"{@b Pocket Sand.} You throw sand at a creature within 5 feet of you. The target must succeed on a Dexterity saving throw or be blinded until the end of your next turn."
+						],
+						[
+							"3",
+							"{@b Scorpion on a Stick.} You attack a creature within 5 feet of you with a scorpion tied to the end of a 5-foot-long pole. The target automatically suffers 1 piercing damage and it must make a Constitution saving throw, taking 3d6 poison damage on a failed save, or half as much damage on a successful one. On a failed save the target is also poisoned for 1 minute. The affected target can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+						],
+						[
+							"4",
+							"{@b Skunk in a Cage.} You release a skunk into an unoccupied 5-foot-square space within 20 feet of you, which immediately sprays a random creature within 5 feet of it. The target must make a Constitution saving throw. On a failed save, the target retches and can't take actions for 1 minute. The target can repeat the saving throw at the end of each of its turns, and whenever it takes damage, ending the effect on a success."
+						],
+						[
+							"5",
+							"{@b Volatile Fire.} You hurl a flask of fire to a creature within 20 feet of you, who must make a Dexterity saving throw. On a failed save, the target suffers 2d6 initial fire damage, and 1d6 additional fire damage at the start of each of its turns. A creature can take an action to extinguish the flames."
+						],
+						[
+							"6",
+							"{@b Wasp Nest in a Bag.} You throw a basket into a 5-foot-square space within 20 feet of you. A swarm of insects (wasps) emerges from it, taking its turn after yours. On its turn, the swarm attacks the creature that was closest to (or inside) the space the basket landed in when you threw it, until that creature (or the swarm) is reduced to 0 hit points, after which the swarm disperses."
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Pack Tactics",
+			"source": "LEGDRAG",
+			"featureType": [
+				"OPTFEAT:LEGDRAG"
+			],
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "Kobold Revised"
+						},
+						{
+							"name": "Kobold"
+						}
+					]
+				}
+			],
+			"entries": [
+				"You have advantage on attack rolls against a creature if at least one of your allies is within 5 feet of the creature and the ally isn’t incapacitated."
+			]
 		}
 	],
 	"race": [
