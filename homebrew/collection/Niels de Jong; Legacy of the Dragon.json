@@ -18,7 +18,7 @@
 			}
 		],
 		"optionalFeatureTypes": {
-			"OPTFEAT:LEGDRAG": "Optional Feature: Legacy of Dragon"
+			"OPTFEAT:LEGDRAG": "Legacy of Dragons"
 		},
 		"dateAdded": 1604252046,
 		"dateLastModified": 1703373316,
@@ -3964,6 +3964,128 @@
 	],
 	"optionalfeature": [
 		{
+			"name": "Improved Breath Weapon",
+			"source": "LEGDRAG",
+			"featureType": [
+				"OPTFEAT:LEGDRAG"
+			],
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "Half Dragon",
+							"source": "LEGDRAG"
+						}
+					]
+				}
+			],
+			"entries": [
+				"Extensive training has granted you greater control over your racial breath weapon, allowing you to enhance its speed, power, and range.",
+				{
+					"type": "list",
+					"items": [
+						"When you roll to regain the use of your Breath Weapon trait, you regain it on a 5 or 6 on the d6 die roll.",
+						"You gain a number of empower points equal to your proficiency bonus. When you use your Breath Weapon trait you can expend an empower point and choose one of the following benefits:",
+						{
+							"type": "list",
+							"items": [
+								"You can use your breath weapon as a bonus action",
+								"Its damage is increased by 2d6 or its range is doubled (30-foot cone or 60-feet long line that is 10 feet wide while you are in your original form).",
+								"You can only gain each benefit once per use of your breath weapon, but you can expend more empower points to gain multiple different benefits at once."
+							]
+						}
+					]
+				},
+				"You regain one empower point after finishing a short rest, and all of them after finishing a long rest."
+			]
+		},
+		{
+			"name": "Dragon Form",
+			"source": "LEGDRAG",
+			"featureType": [
+				"OPTFEAT:LEGDRAG"
+			],
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "Half Dragon",
+							"source": "LEGDRAG"
+						}
+					],
+					"feature": [
+						"Improved Breath Weapon"
+					],
+					"level": {
+						"level": 12
+					}
+				}
+			],
+			"entries": [
+				"As you strive to ascend to dragonhood, you have gained a lesser dragon form of your Draconic Ancestry's dragon.",
+				"While all half dragons aspire to assume their rightful true dragon form, only those truly dedicated to this goal will be blessed with a lesser dragon form. This form varies in appearance, but it always looks similar to the half dragon's draconic ancestry. Sometimes it has wings like a wyvern, with four limbs instead of the true dragon's six, including wings. Other times, the dragon form looks like a smaller or more humanoid version of their dragon ancestor.",
+				"Regardless, the form drains those who use it, and as such, they are only able to stay in this form for a limited time. Afterwards, these half dragons require rest in order to regain access to this form. Despite its power and majesty, the dragon form pales in comparison to the ascension to dragonhood, and this gift only makes them strive harder to achieve their true and ultimate form.",
+				{
+					"type": "list",
+					"items": [
+						"You gain blindsight out to a range of 10 feet.",
+						"As a bonus action, you can change into a draconic form based on your ancestral dragon. You can stay transformed for up to 10 minutes, with each use reducing the duration by a minimum of 1 minute. You can transform back early as a bonus action. Each round spent transformed in combat reduces the duration by 1 minute. You can regain the full duration of this form after finishing a long rest. Your weapons merge with you, and the magical bonuses of your equipped melee weapons are transferred to your bite attack. If you are able to attack with your claws, wings, or tail then you can continue to do so. This form doesn't hinder class abilities or spellcasting, nor the use of spell components."
+					]
+				},
+				"{@b This transformation grants you the following benefits:}",
+				{
+					"type": "list",
+					"items": [
+						"You gain a flying speed of 30 feet",
+						"You gain a bite attack, which you can use to make unarmed strikes. If you hit with them, you deal piercing damage equal to 1d8 (2d6 if you were wielding a two-handed weapon) + your Strength or Dexterity modifier (your choice). Your bite counts as a finesse weapon. If you originally had a bite attack that uses higher damage dice, then you can use those damage dice instead.",
+						"You gain the effects of the Enlarge option from the {@spell enlarge/reduce|PHB} spell.",
+						"Your Breath Weapon trait immediately recharges after you change into your Dragon Form. When you use your breath weapon during your Dragon Form, you can empower it with one of the three empower options of the Improved Breath Weapon feat without expending an empower point. The rules of the feat remain the same.",
+						"Once per turn, you can deal bonus damage (of your chosen dragon's damage type) equal to your level to a single target you have damaged that turn. This only applies to those you've damaged with your bite attack, breath weapon, or spells.",
+						"You gain temporary hit points equal to twice your level. Your AC and other defensive boons remain the same (your scaled body parts can be used as your shield). However, your AC cannot be lower than 15 + your Dexterity modifier."
+					]
+				},
+				"If you ascend to dragonhood, then your True Dragon Form replaces this Dragon Form. In which case, you must immediately choose a new feat instead of this one."
+			]
+		},
+		{
+			"name": "True Dragon Form",
+			"source": "LEGDRAG",
+			"featureType": [
+				"OPTFEAT:LEGDRAG"
+			],
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "Half Dragon",
+							"source": "LEGDRAG"
+						}
+					],
+					"feature": [
+						"Dragon Form"
+					],
+					"level": {
+						"level": 20
+					}
+				}
+			],
+			"entries": [
+				"All half dragons seek to ascend to their dragonhood, gaining the form and power of a true dragon of their chosen Draconic Ancestry. The following boon is only granted with the permission of the DM, and as such, the following rules are directed at the DM.",
+				"If you (the DM) are using the Epic Boons optional rule from the Dungeon Master’s Guide (page 231), then once the half dragon player reaches 20th level, you can wish to allow them to begin research, training, or tribulations that, once completed, grant them the following epic boon.",
+				{
+					"name": "True Dragon Form",
+					"type": "entries",
+					"entries": [
+						"As an action, you can transform into your chosen dragon type as if you had cast the {@spell shapechange|PHB} spell. Unlike the normal {@spell shapechange|PHB} spell you can only use your action to assume your original form, or return to your True Dragon Form. Your True Dragon Form doesn't hinder your use of spell components, and is capable of all actions that require hands or speech.",
+						"This replaces your Dragon Form transformation, if you have taken the Dragon Form feat. Unlike the normal {@spell shapechange|PHB} spell, if you concentrate on this transformation for the full duration, the transformation becomes permanent (until this True Dragon Form loses all of its hit points) and you no longer need to maintain your concentration to remain in your True Dragon Form. After losing this form, you regain the ability to transform in this way when you finish a long rest. Unlike the normal {@spell shapechange|PHB} spell, you can use your legendary actions and lair actions while in your True Dragon Form.",
+						"While you are in your True Dragon Form, your True Dragon Form's breath weapon replaces your original form's breath weapon, but it can also benefit from your Improved Breath Weapon feat. If you are a half sapphire dragon (page 16), or a different type of half gem dragon (page 18), with the improved breath weapon feat; you can also turn your breath weapon into a Mind Blast while you are in your True Dragon Form.",
+						"If you are a half celestial dragon (page 16), then those that succeed on their saving throws against your True Dragon Form's breath weapon can still be blinded by your breath weapon afterwards, ignoring the rules of your Radiant Dragon trait.",
+						"You also permanently gain the blindsight and darkvision senses from your True Dragon Form. This transformation does not count as a spell, and as such it cannot be affected by the dispel magic spell or a similar effect. You can find the statistics of your chosen dragon type within the Monster Manual (MM), within Fizban's Treasury of Dragons (FToD) or under the dragon types listed in this work on page 124."
+					]
+				}
+			]
+		},
+		{
 			"name": "Draconic Heritage",
 			"source": "LEGDRAG",
 			"featureType": [
@@ -3976,7 +4098,8 @@
 							"name": "Dragonborn"
 						},
 						{
-							"name": "Dragonborn Revised"
+							"name": "Dragonborn Revised",
+							"source": "LEGDRAG"
 						}
 					]
 				}
@@ -3989,37 +4112,38 @@
 					"items": [
 						"Increase your Strength, Constitution, or Charisma score by 1, to a maximum of 20.",
 						"The damage of your Breath Weapon racial trait increases by 1d6.",
-						"When you take this feat you gain a trait of one of the other dragonborn subraces of your choice, but you must choose a dragonborn subrace whose trait you don't have yet. You gain the following trait based on your choice:",
-						{
-							"type": "table",
-							"caption": "Draconic Heritage Traits",
-							"colLabels": [
-								"Subrace",
-								"Trait"
-							],
-							"colStyles": [
-								"col-3",
-								"col-6"
-							],
-							"rows": [
-								[
-									"Dreadcaller",
-									"You gain the Draconic Fear trait"
-								],
-								[
-									"Murkdweller",
-									"You gain the Tail Lash trait."
-								],
-								[
-									"Steelscale",
-									"You gain the Hardened Scales trait."
-								],
-								[
-									"Wayfarer",
-									"You gain the Wings trait."
-								]
-							]
-						}
+						"When you take this feat you gain a trait of one of the other dragonborn subraces of your choice, but you must choose a dragonborn subrace whose trait you don't have yet."
+					]
+				},
+				"You gain the following trait based on your choice:",
+				{
+					"type": "table",
+					"caption": "Draconic Heritage Traits",
+					"colLabels": [
+						"Subrace",
+						"Trait"
+					],
+					"colStyles": [
+						"col-3",
+						"col-6"
+					],
+					"rows": [
+						[
+							"Dreadcaller",
+							"You gain the Draconic Fear trait"
+						],
+						[
+							"Murkdweller",
+							"You gain the Tail Lash trait."
+						],
+						[
+							"Steelscale",
+							"You gain the Hardened Scales trait."
+						],
+						[
+							"Wayfarer",
+							"You gain the Wings trait."
+						]
 					]
 				}
 			]
@@ -4034,10 +4158,8 @@
 				{
 					"race": [
 						{
-							"name": "Dragonborn"
-						},
-						{
-							"name": "Dragonborn Revised"
+							"name": "Half Dragon",
+							"source": "LEGDRAG"
 						}
 					]
 				}
@@ -4059,7 +4181,12 @@
 							"name": "Dragonborn"
 						},
 						{
-							"name": "Dragonborn Revised"
+							"name": "Dragonborn Revised",
+							"source": "LEGDRAG"
+						},
+						{
+							"name": "Half Dragon",
+							"source": "LEGDRAG"
 						}
 					]
 				}
@@ -4079,16 +4206,54 @@
 				{
 					"race": [
 						{
-							"name": "Dragonborn"
-						},
-						{
-							"name": "Dragonborn Revised"
+							"name": "Half Dragon",
+							"subrace": "Silver",
+							"source": "LEGDRAG"
 						}
 					]
 				}
 			],
 			"entries": [
 				"Half silver dragons have developed their own variation of the Bladesinger tradition, called the Dragonsinger, which utilises the power of the Dragon Voice. Only those who speak Draconic can choose this arcane tradition. It is identical to the Bladesinger tradition, except that Bladesong is renamed to Dragonsong, you have advantage on Strength (Athletics) checks instead of Dexterity (Acrobatics) checks during your Dragonsong, you can choose a two-handed melee weapon for your weapon proficiency, and you can use two hands to make an attack with a melee weapon without ending the Dragonsong."
+			]
+		},
+		{
+			"name": "Monstrous Might",
+			"source": "LEGDRAG",
+			"featureType": [
+				"OPTFEAT:LEGDRAG"
+			],
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "Centaur"
+						},
+						{
+							"name": "Half Dragon",
+							"subrace": "Dracotaur"
+						},
+						{
+							"name": "Leonin"
+						},
+						{
+							"name": "Minotaur"
+						},
+						{
+							"name": "Tabaxi"
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"Increase your Strength, Dexterity, or Constitution score by 1, to a maximum of 20.",
+						"You count as being permanently affected by the magic fang cantrip (page 144).",
+						"Once per turn, if you move at least 20 feet straight toward a target and then hit it with a melee weapon attack on the same turn, you can force the creature to make a Strength saving throw (DC 8 + your Strength modifier + your proficiency bonus) or be knocked prone."
+					]
+				}
 			]
 		}
 	],
@@ -5133,7 +5298,7 @@
 			}
 		},
 		{
-			"name": "Half-Dragon",
+			"name": "Half Dragon",
 			"source": "LEGDRAG",
 			"page": 9,
 			"size": [
@@ -5435,7 +5600,7 @@
 						"by": "Thorzag, green-dyed beardless dwarf"
 					},
 					{
-						"name": "Half-Dragon",
+						"name": "Half Dragon",
 						"entries": [
 							"Many dragons are not only fearsome beasts but renowned masters of magic as well. As such, it is not uncommon for one to change shape and walk among the masses, or even take a mortal lover. The children of such unions are known as half dragons. Not quite as monstrous-looking as the dragonborn, but still very much recognizable due to their draconic traits.",
 							"The difference between both races is that the dragonborn were artificially created, whereas the half dragons are born from a union between a dragon and a mortal, or are descendants from such unions. Regardless of their origin, both races are generally on good terms. Half dragons' color patterns are similar to their draconic parent, and in the case of two half dragons having children, the child is often born in the color scheme of either parent, though occasionally they instead look like one of the other draconic ancestors of the parents, as half dragons are strongly drawn to one another and are known to quickly make families and form communities. They have a reputation for being prideful and reckless, as they rarely shy away from a challenge, and for being loyal companions."
@@ -5505,7 +5670,7 @@
 						"type": "entries"
 					},
 					{
-						"name":"Unusual Half-Dragon",
+						"name":"Unusual Half Dragon",
 						"type": "inset",
 						"entries": [
 							"The following are the more unusual half dragon subraces, which you can also choose with your DM's permission. Gray dragons are chromatic dragons, while fang dragons, moonstone dragons, and song dragons are their own subspecies of dragon.",
@@ -6612,7 +6777,7 @@
 		{
 			"name": "Black",
 			"source": "LEGDRAG",
-			"raceName": "Half-Dragon",
+			"raceName": "Half Dragon",
 			"raceSource": "LEGDRAG",
 			"page": 11,
 			"ability": [
@@ -6693,7 +6858,7 @@
 						"by": "Thorzag, green-dyed beardless dwarf"
 					},
 					{
-						"name": "Half-Dragon",
+						"name": "Half Dragon",
 						"entries": [
 							"Many dragons are not only fearsome beasts but renowned masters of magic as well. As such, it is not uncommon for one to change shape and walk among the masses, or even take a mortal lover. The children of such unions are known as half dragons. Not quite as monstrous-looking as the dragonborn, but still very much recognizable due to their draconic traits.",
 							"The difference between both races is that the dragonborn were artificially created, whereas the half dragons are born from a union between a dragon and a mortal, or are descendants from such unions. Regardless of their origin, both races are generally on good terms. Half dragons' color patterns are similar to their draconic parent, and in the case of two half dragons having children, the child is often born in the color scheme of either parent, though occasionally they instead look like one of the other draconic ancestors of the parents, as half dragons are strongly drawn to one another and are known to quickly make families and form communities. They have a reputation for being prideful and reckless, as they rarely shy away from a challenge, and for being loyal companions."
@@ -6763,7 +6928,7 @@
 						"type": "entries"
 					},
 					{
-						"name":"Unusual Half-Dragon",
+						"name":"Unusual Half Dragon",
 						"type": "inset",
 						"entries": [
 							"The following are the more unusual half dragon subraces, which you can also choose with your DM's permission. Gray dragons are chromatic dragons, while fang dragons, moonstone dragons, and song dragons are their own subspecies of dragon.",
@@ -6802,7 +6967,7 @@
 						]
 					},
 					{
-						"name": "Half-Dragon (Black)",
+						"name": "Half Dragon (Black)",
 						"entries": [],
 						"type": "entries"
 					},
@@ -6828,7 +6993,7 @@
 		{
 			"name": "Blue",
 			"source": "LEGDRAG",
-			"raceName": "Half-Dragon",
+			"raceName": "Half Dragon",
 			"raceSource": "LEGDRAG",
 			"page": 11,
 			"ability": [
@@ -6904,7 +7069,7 @@
 						"by": "Thorzag, green-dyed beardless dwarf"
 					},
 					{
-						"name": "Half-Dragon",
+						"name": "Half Dragon",
 						"entries": [
 							"Many dragons are not only fearsome beasts but renowned masters of magic as well. As such, it is not uncommon for one to change shape and walk among the masses, or even take a mortal lover. The children of such unions are known as half dragons. Not quite as monstrous-looking as the dragonborn, but still very much recognizable due to their draconic traits.",
 							"The difference between both races is that the dragonborn were artificially created, whereas the half dragons are born from a union between a dragon and a mortal, or are descendants from such unions. Regardless of their origin, both races are generally on good terms. Half dragons' color patterns are similar to their draconic parent, and in the case of two half dragons having children, the child is often born in the color scheme of either parent, though occasionally they instead look like one of the other draconic ancestors of the parents, as half dragons are strongly drawn to one another and are known to quickly make families and form communities. They have a reputation for being prideful and reckless, as they rarely shy away from a challenge, and for being loyal companions."
@@ -6974,7 +7139,7 @@
 						"type": "entries"
 					},
 					{
-						"name":"Unusual Half-Dragon",
+						"name":"Unusual Half Dragon",
 						"type": "inset",
 						"entries": [
 							"The following are the more unusual half dragon subraces, which you can also choose with your DM's permission. Gray dragons are chromatic dragons, while fang dragons, moonstone dragons, and song dragons are their own subspecies of dragon.",
@@ -7013,7 +7178,7 @@
 						]
 					},
 					{
-						"name": "Half-Dragon (Blue)",
+						"name": "Half Dragon (Blue)",
 						"entries": [],
 						"type": "entries"
 					},
@@ -7039,7 +7204,7 @@
 		{
 			"name": "Brass",
 			"source": "LEGDRAG",
-			"raceName": "Half-Dragon",
+			"raceName": "Half Dragon",
 			"raceSource": "LEGDRAG",
 			"page": 11,
 			"ability": [
@@ -7132,7 +7297,7 @@
 						"by": "Thorzag, green-dyed beardless dwarf"
 					},
 					{
-						"name": "Half-Dragon",
+						"name": "Half Dragon",
 						"entries": [
 							"Many dragons are not only fearsome beasts but renowned masters of magic as well. As such, it is not uncommon for one to change shape and walk among the masses, or even take a mortal lover. The children of such unions are known as half dragons. Not quite as monstrous-looking as the dragonborn, but still very much recognizable due to their draconic traits.",
 							"The difference between both races is that the dragonborn were artificially created, whereas the half dragons are born from a union between a dragon and a mortal, or are descendants from such unions. Regardless of their origin, both races are generally on good terms. Half dragons' color patterns are similar to their draconic parent, and in the case of two half dragons having children, the child is often born in the color scheme of either parent, though occasionally they instead look like one of the other draconic ancestors of the parents, as half dragons are strongly drawn to one another and are known to quickly make families and form communities. They have a reputation for being prideful and reckless, as they rarely shy away from a challenge, and for being loyal companions."
@@ -7202,7 +7367,7 @@
 						"type": "entries"
 					},
 					{
-						"name":"Unusual Half-Dragon",
+						"name":"Unusual Half Dragon",
 						"type": "inset",
 						"entries": [
 							"The following are the more unusual half dragon subraces, which you can also choose with your DM's permission. Gray dragons are chromatic dragons, while fang dragons, moonstone dragons, and song dragons are their own subspecies of dragon.",
@@ -7241,7 +7406,7 @@
 						]
 					},
 					{
-						"name": "Half-Dragon (Brass)",
+						"name": "Half Dragon (Brass)",
 						"entries": [],
 						"type": "entries"
 					},
@@ -7267,7 +7432,7 @@
 		{
 			"name": "Bronze",
 			"source": "LEGDRAG",
-			"raceName": "Half-Dragon",
+			"raceName": "Half Dragon",
 			"raceSource": "LEGDRAG",
 			"page": 11,
 			"ability": [
@@ -7341,7 +7506,7 @@
 						"by": "Thorzag, green-dyed beardless dwarf"
 					},
 					{
-						"name": "Half-Dragon",
+						"name": "Half Dragon",
 						"entries": [
 							"Many dragons are not only fearsome beasts but renowned masters of magic as well. As such, it is not uncommon for one to change shape and walk among the masses, or even take a mortal lover. The children of such unions are known as half dragons. Not quite as monstrous-looking as the dragonborn, but still very much recognizable due to their draconic traits.",
 							"The difference between both races is that the dragonborn were artificially created, whereas the half dragons are born from a union between a dragon and a mortal, or are descendants from such unions. Regardless of their origin, both races are generally on good terms. Half dragons' color patterns are similar to their draconic parent, and in the case of two half dragons having children, the child is often born in the color scheme of either parent, though occasionally they instead look like one of the other draconic ancestors of the parents, as half dragons are strongly drawn to one another and are known to quickly make families and form communities. They have a reputation for being prideful and reckless, as they rarely shy away from a challenge, and for being loyal companions."
@@ -7411,7 +7576,7 @@
 						"type": "entries"
 					},
 					{
-						"name":"Unusual Half-Dragon",
+						"name":"Unusual Half Dragon",
 						"type": "inset",
 						"entries": [
 							"The following are the more unusual half dragon subraces, which you can also choose with your DM's permission. Gray dragons are chromatic dragons, while fang dragons, moonstone dragons, and song dragons are their own subspecies of dragon.",
@@ -7450,7 +7615,7 @@
 						]
 					},
 					{
-						"name": "Half-Dragon (Bronze)",
+						"name": "Half Dragon (Bronze)",
 						"entries": [],
 						"type": "entries"
 					},
@@ -7476,7 +7641,7 @@
 		{
 			"name": "Brown",
 			"source": "LEGDRAG",
-			"raceName": "Half-Dragon",
+			"raceName": "Half Dragon",
 			"raceSource": "LEGDRAG",
 			"page": 11,
 			"speed": {
@@ -7551,7 +7716,7 @@
 						"by": "Thorzag, green-dyed beardless dwarf"
 					},
 					{
-						"name": "Half-Dragon",
+						"name": "Half Dragon",
 						"entries": [
 							"Many dragons are not only fearsome beasts but renowned masters of magic as well. As such, it is not uncommon for one to change shape and walk among the masses, or even take a mortal lover. The children of such unions are known as half dragons. Not quite as monstrous-looking as the dragonborn, but still very much recognizable due to their draconic traits.",
 							"The difference between both races is that the dragonborn were artificially created, whereas the half dragons are born from a union between a dragon and a mortal, or are descendants from such unions. Regardless of their origin, both races are generally on good terms. Half dragons' color patterns are similar to their draconic parent, and in the case of two half dragons having children, the child is often born in the color scheme of either parent, though occasionally they instead look like one of the other draconic ancestors of the parents, as half dragons are strongly drawn to one another and are known to quickly make families and form communities. They have a reputation for being prideful and reckless, as they rarely shy away from a challenge, and for being loyal companions."
@@ -7621,7 +7786,7 @@
 						"type": "entries"
 					},
 					{
-						"name":"Unusual Half-Dragon",
+						"name":"Unusual Half Dragon",
 						"type": "inset",
 						"entries": [
 							"The following are the more unusual half dragon subraces, which you can also choose with your DM's permission. Gray dragons are chromatic dragons, while fang dragons, moonstone dragons, and song dragons are their own subspecies of dragon.",
@@ -7660,7 +7825,7 @@
 						]
 					},
 					{
-						"name": "Half-Dragon (Brown)",
+						"name": "Half Dragon (Brown)",
 						"entries": [],
 						"type": "entries"
 					},
@@ -7686,7 +7851,7 @@
 		{
 			"name": "Copper",
 			"source": "LEGDRAG",
-			"raceName": "Half-Dragon",
+			"raceName": "Half Dragon",
 			"raceSource": "LEGDRAG",
 			"page": 11,
 			"ability": [
@@ -7768,7 +7933,7 @@
 						"by": "Thorzag, green-dyed beardless dwarf"
 					},
 					{
-						"name": "Half-Dragon",
+						"name": "Half Dragon",
 						"entries": [
 							"Many dragons are not only fearsome beasts but renowned masters of magic as well. As such, it is not uncommon for one to change shape and walk among the masses, or even take a mortal lover. The children of such unions are known as half dragons. Not quite as monstrous-looking as the dragonborn, but still very much recognizable due to their draconic traits.",
 							"The difference between both races is that the dragonborn were artificially created, whereas the half dragons are born from a union between a dragon and a mortal, or are descendants from such unions. Regardless of their origin, both races are generally on good terms. Half dragons' color patterns are similar to their draconic parent, and in the case of two half dragons having children, the child is often born in the color scheme of either parent, though occasionally they instead look like one of the other draconic ancestors of the parents, as half dragons are strongly drawn to one another and are known to quickly make families and form communities. They have a reputation for being prideful and reckless, as they rarely shy away from a challenge, and for being loyal companions."
@@ -7838,7 +8003,7 @@
 						"type": "entries"
 					},
 					{
-						"name":"Unusual Half-Dragon",
+						"name":"Unusual Half Dragon",
 						"type": "inset",
 						"entries": [
 							"The following are the more unusual half dragon subraces, which you can also choose with your DM's permission. Gray dragons are chromatic dragons, while fang dragons, moonstone dragons, and song dragons are their own subspecies of dragon.",
@@ -7877,7 +8042,7 @@
 						]
 					},
 					{
-						"name": "Half-Dragon (Copper)",
+						"name": "Half Dragon (Copper)",
 						"entries": [],
 						"type": "entries"
 					},
@@ -7903,7 +8068,7 @@
 		{
 			"name": "Gold",
 			"source": "LEGDRAG",
-			"raceName": "Half-Dragon",
+			"raceName": "Half Dragon",
 			"raceSource": "LEGDRAG",
 			"page": 11,
 			"ability": [
@@ -7985,7 +8150,7 @@
 						"by": "Thorzag, green-dyed beardless dwarf"
 					},
 					{
-						"name": "Half-Dragon",
+						"name": "Half Dragon",
 						"entries": [
 							"Many dragons are not only fearsome beasts but renowned masters of magic as well. As such, it is not uncommon for one to change shape and walk among the masses, or even take a mortal lover. The children of such unions are known as half dragons. Not quite as monstrous-looking as the dragonborn, but still very much recognizable due to their draconic traits.",
 							"The difference between both races is that the dragonborn were artificially created, whereas the half dragons are born from a union between a dragon and a mortal, or are descendants from such unions. Regardless of their origin, both races are generally on good terms. Half dragons' color patterns are similar to their draconic parent, and in the case of two half dragons having children, the child is often born in the color scheme of either parent, though occasionally they instead look like one of the other draconic ancestors of the parents, as half dragons are strongly drawn to one another and are known to quickly make families and form communities. They have a reputation for being prideful and reckless, as they rarely shy away from a challenge, and for being loyal companions."
@@ -8055,7 +8220,7 @@
 						"type": "entries"
 					},
 					{
-						"name":"Unusual Half-Dragon",
+						"name":"Unusual Half Dragon",
 						"type": "inset",
 						"entries": [
 							"The following are the more unusual half dragon subraces, which you can also choose with your DM's permission. Gray dragons are chromatic dragons, while fang dragons, moonstone dragons, and song dragons are their own subspecies of dragon.",
@@ -8094,7 +8259,7 @@
 						]
 					},
 					{
-						"name": "Half-Dragon (Gold)",
+						"name": "Half Dragon (Gold)",
 						"entries": [],
 						"type": "entries"
 					},
@@ -8120,7 +8285,7 @@
 		{
 			"name": "Green",
 			"source": "LEGDRAG",
-			"raceName": "Half-Dragon",
+			"raceName": "Half Dragon",
 			"raceSource": "LEGDRAG",
 			"page": 12,
 			"ability": [
@@ -8207,7 +8372,7 @@
 						"by": "Thorzag, green-dyed beardless dwarf"
 					},
 					{
-						"name": "Half-Dragon",
+						"name": "Half Dragon",
 						"entries": [
 							"Many dragons are not only fearsome beasts but renowned masters of magic as well. As such, it is not uncommon for one to change shape and walk among the masses, or even take a mortal lover. The children of such unions are known as half dragons. Not quite as monstrous-looking as the dragonborn, but still very much recognizable due to their draconic traits.",
 							"The difference between both races is that the dragonborn were artificially created, whereas the half dragons are born from a union between a dragon and a mortal, or are descendants from such unions. Regardless of their origin, both races are generally on good terms. Half dragons' color patterns are similar to their draconic parent, and in the case of two half dragons having children, the child is often born in the color scheme of either parent, though occasionally they instead look like one of the other draconic ancestors of the parents, as half dragons are strongly drawn to one another and are known to quickly make families and form communities. They have a reputation for being prideful and reckless, as they rarely shy away from a challenge, and for being loyal companions."
@@ -8277,7 +8442,7 @@
 						"type": "entries"
 					},
 					{
-						"name":"Unusual Half-Dragon",
+						"name":"Unusual Half Dragon",
 						"type": "inset",
 						"entries": [
 							"The following are the more unusual half dragon subraces, which you can also choose with your DM's permission. Gray dragons are chromatic dragons, while fang dragons, moonstone dragons, and song dragons are their own subspecies of dragon.",
@@ -8316,7 +8481,7 @@
 						]
 					},
 					{
-						"name": "Half-Dragon (Green)",
+						"name": "Half Dragon (Green)",
 						"entries": [],
 						"type": "entries"
 					},
@@ -8342,7 +8507,7 @@
 		{
 			"name": "Red",
 			"source": "LEGDRAG",
-			"raceName": "Half-Dragon",
+			"raceName": "Half Dragon",
 			"raceSource": "LEGDRAG",
 			"page": 12,
 			"ability": [
@@ -8416,7 +8581,7 @@
 						"by": "Thorzag, green-dyed beardless dwarf"
 					},
 					{
-						"name": "Half-Dragon",
+						"name": "Half Dragon",
 						"entries": [
 							"Many dragons are not only fearsome beasts but renowned masters of magic as well. As such, it is not uncommon for one to change shape and walk among the masses, or even take a mortal lover. The children of such unions are known as half dragons. Not quite as monstrous-looking as the dragonborn, but still very much recognizable due to their draconic traits.",
 							"The difference between both races is that the dragonborn were artificially created, whereas the half dragons are born from a union between a dragon and a mortal, or are descendants from such unions. Regardless of their origin, both races are generally on good terms. Half dragons' color patterns are similar to their draconic parent, and in the case of two half dragons having children, the child is often born in the color scheme of either parent, though occasionally they instead look like one of the other draconic ancestors of the parents, as half dragons are strongly drawn to one another and are known to quickly make families and form communities. They have a reputation for being prideful and reckless, as they rarely shy away from a challenge, and for being loyal companions."
@@ -8486,7 +8651,7 @@
 						"type": "entries"
 					},
 					{
-						"name":"Unusual Half-Dragon",
+						"name":"Unusual Half Dragon",
 						"type": "inset",
 						"entries": [
 							"The following are the more unusual half dragon subraces, which you can also choose with your DM's permission. Gray dragons are chromatic dragons, while fang dragons, moonstone dragons, and song dragons are their own subspecies of dragon.",
@@ -8525,7 +8690,7 @@
 						]
 					},
 					{
-						"name": "Half-Dragon (Red)",
+						"name": "Half Dragon (Red)",
 						"entries": [],
 						"type": "entries"
 					},
@@ -8551,7 +8716,7 @@
 		{
 			"name": "Silver",
 			"source": "LEGDRAG",
-			"raceName": "Half-Dragon",
+			"raceName": "Half Dragon",
 			"raceSource": "LEGDRAG",
 			"page": 12,
 			"ability": [
@@ -8632,7 +8797,7 @@
 						"by": "Thorzag, green-dyed beardless dwarf"
 					},
 					{
-						"name": "Half-Dragon",
+						"name": "Half Dragon",
 						"entries": [
 							"Many dragons are not only fearsome beasts but renowned masters of magic as well. As such, it is not uncommon for one to change shape and walk among the masses, or even take a mortal lover. The children of such unions are known as half dragons. Not quite as monstrous-looking as the dragonborn, but still very much recognizable due to their draconic traits.",
 							"The difference between both races is that the dragonborn were artificially created, whereas the half dragons are born from a union between a dragon and a mortal, or are descendants from such unions. Regardless of their origin, both races are generally on good terms. Half dragons' color patterns are similar to their draconic parent, and in the case of two half dragons having children, the child is often born in the color scheme of either parent, though occasionally they instead look like one of the other draconic ancestors of the parents, as half dragons are strongly drawn to one another and are known to quickly make families and form communities. They have a reputation for being prideful and reckless, as they rarely shy away from a challenge, and for being loyal companions."
@@ -8702,7 +8867,7 @@
 						"type": "entries"
 					},
 					{
-						"name":"Unusual Half-Dragon",
+						"name":"Unusual Half Dragon",
 						"type": "inset",
 						"entries": [
 							"The following are the more unusual half dragon subraces, which you can also choose with your DM's permission. Gray dragons are chromatic dragons, while fang dragons, moonstone dragons, and song dragons are their own subspecies of dragon.",
@@ -8741,7 +8906,7 @@
 						]
 					},
 					{
-						"name": "Half-Dragon (Silver)",
+						"name": "Half Dragon (Silver)",
 						"entries": [],
 						"type": "entries"
 					},
@@ -8767,7 +8932,7 @@
 		{
 			"name": "White",
 			"source": "LEGDRAG",
-			"raceName": "Half-Dragon",
+			"raceName": "Half Dragon",
 			"raceSource": "LEGDRAG",
 			"page": 12,
 			"ability": [
@@ -8841,7 +9006,7 @@
 						"by": "Thorzag, green-dyed beardless dwarf"
 					},
 					{
-						"name": "Half-Dragon",
+						"name": "Half Dragon",
 						"entries": [
 							"Many dragons are not only fearsome beasts but renowned masters of magic as well. As such, it is not uncommon for one to change shape and walk among the masses, or even take a mortal lover. The children of such unions are known as half dragons. Not quite as monstrous-looking as the dragonborn, but still very much recognizable due to their draconic traits.",
 							"The difference between both races is that the dragonborn were artificially created, whereas the half dragons are born from a union between a dragon and a mortal, or are descendants from such unions. Regardless of their origin, both races are generally on good terms. Half dragons' color patterns are similar to their draconic parent, and in the case of two half dragons having children, the child is often born in the color scheme of either parent, though occasionally they instead look like one of the other draconic ancestors of the parents, as half dragons are strongly drawn to one another and are known to quickly make families and form communities. They have a reputation for being prideful and reckless, as they rarely shy away from a challenge, and for being loyal companions."
@@ -8911,7 +9076,7 @@
 						"type": "entries"
 					},
 					{
-						"name":"Unusual Half-Dragon",
+						"name":"Unusual Half Dragon",
 						"type": "inset",
 						"entries": [
 							"The following are the more unusual half dragon subraces, which you can also choose with your DM's permission. Gray dragons are chromatic dragons, while fang dragons, moonstone dragons, and song dragons are their own subspecies of dragon.",
@@ -8950,7 +9115,7 @@
 						]
 					},
 					{
-						"name": "Half-Dragon (White)",
+						"name": "Half Dragon (White)",
 						"entries": [],
 						"type": "entries"
 					},
@@ -8976,7 +9141,7 @@
 		{
 			"name": "Celestial",
 			"source": "LEGDRAG",
-			"raceName": "Half-Dragon",
+			"raceName": "Half Dragon",
 			"raceSource": "LEGDRAG",
 			"page": 16,
 			"ability": [
@@ -9054,7 +9219,7 @@
 						"by": "Thorzag, green-dyed beardless dwarf"
 					},
 					{
-						"name": "Half-Dragon",
+						"name": "Half Dragon",
 						"entries": [
 							"Many dragons are not only fearsome beasts but renowned masters of magic as well. As such, it is not uncommon for one to change shape and walk among the masses, or even take a mortal lover. The children of such unions are known as half dragons. Not quite as monstrous-looking as the dragonborn, but still very much recognizable due to their draconic traits.",
 							"The difference between both races is that the dragonborn were artificially created, whereas the half dragons are born from a union between a dragon and a mortal, or are descendants from such unions. Regardless of their origin, both races are generally on good terms. Half dragons' color patterns are similar to their draconic parent, and in the case of two half dragons having children, the child is often born in the color scheme of either parent, though occasionally they instead look like one of the other draconic ancestors of the parents, as half dragons are strongly drawn to one another and are known to quickly make families and form communities. They have a reputation for being prideful and reckless, as they rarely shy away from a challenge, and for being loyal companions."
@@ -9124,7 +9289,7 @@
 						"type": "entries"
 					},
 					{
-						"name":"Unusual Half-Dragon",
+						"name":"Unusual Half Dragon",
 						"type": "inset",
 						"entries": [
 							"The following are the more unusual half dragon subraces, which you can also choose with your DM's permission. Gray dragons are chromatic dragons, while fang dragons, moonstone dragons, and song dragons are their own subspecies of dragon.",
@@ -9163,7 +9328,7 @@
 						]
 					},
 					{
-						"name": "Half-Dragon (Celestial)",
+						"name": "Half Dragon (Celestial)",
 						"entries": [
 							"Also known as lung dragons or T'ien Lung dragons, these dragons are revered in eastern cultures. They are feared for their heavenly wrath breath weapons, which burn and blind foes with radiant fire. They have a reputation for being fair but also very harsh. Half celestial dragons are often employed by celestials, and are renowned as wise monks. Celestial dragons are sometimes called lunar or solar dragons due to their radiant and celestial appearance. They are believed to be an offshoot of astral dragons who left the astral sea, as they too do not have wings, but can still fly."
 						],
@@ -9191,7 +9356,7 @@
 		{
 			"name": "Sapphire",
 			"source": "LEGDRAG",
-			"raceName": "Half-Dragon",
+			"raceName": "Half Dragon",
 			"raceSource": "LEGDRAG",
 			"page": 16,
 			"ability": [
@@ -9284,7 +9449,7 @@
 						"by": "Thorzag, green-dyed beardless dwarf"
 					},
 					{
-						"name": "Half-Dragon",
+						"name": "Half Dragon",
 						"entries": [
 							"Many dragons are not only fearsome beasts but renowned masters of magic as well. As such, it is not uncommon for one to change shape and walk among the masses, or even take a mortal lover. The children of such unions are known as half dragons. Not quite as monstrous-looking as the dragonborn, but still very much recognizable due to their draconic traits.",
 							"The difference between both races is that the dragonborn were artificially created, whereas the half dragons are born from a union between a dragon and a mortal, or are descendants from such unions. Regardless of their origin, both races are generally on good terms. Half dragons' color patterns are similar to their draconic parent, and in the case of two half dragons having children, the child is often born in the color scheme of either parent, though occasionally they instead look like one of the other draconic ancestors of the parents, as half dragons are strongly drawn to one another and are known to quickly make families and form communities. They have a reputation for being prideful and reckless, as they rarely shy away from a challenge, and for being loyal companions."
@@ -9354,7 +9519,7 @@
 						"type": "entries"
 					},
 					{
-						"name":"Unusual Half-Dragon",
+						"name":"Unusual Half Dragon",
 						"type": "inset",
 						"entries": [
 							"The following are the more unusual half dragon subraces, which you can also choose with your DM's permission. Gray dragons are chromatic dragons, while fang dragons, moonstone dragons, and song dragons are their own subspecies of dragon.",
@@ -9393,7 +9558,7 @@
 						]
 					},
 					{
-						"name": "Half-Dragon (Sapphire)",
+						"name": "Half Dragon (Sapphire)",
 						"entries": [
 							"Sapphire dragons are a type of gem dragon with crystalline blue scales, which are inherited by their half dragon offspring. Sapphire dragons are known for their psionics, and also for being capable tacticians. Half sapphire dragons are renowned as gifted psychics, and are known for being compassionate yet also pragmatic when the need arises. The horns and tip of the tail of half sapphire dragons are crystal-like, which become smoother and change as they grow older, until they look identical to those of sapphire dragons."
 						],
@@ -9421,7 +9586,7 @@
 		{
 			"name": "Steel",
 			"source": "LEGDRAG",
-			"raceName": "Half-Dragon",
+			"raceName": "Half Dragon",
 			"raceSource": "LEGDRAG",
 			"page": 16,
 			"ability": [
@@ -9502,7 +9667,7 @@
 						"by": "Thorzag, green-dyed beardless dwarf"
 					},
 					{
-						"name": "Half-Dragon",
+						"name": "Half Dragon",
 						"entries": [
 							"Many dragons are not only fearsome beasts but renowned masters of magic as well. As such, it is not uncommon for one to change shape and walk among the masses, or even take a mortal lover. The children of such unions are known as half dragons. Not quite as monstrous-looking as the dragonborn, but still very much recognizable due to their draconic traits.",
 							"The difference between both races is that the dragonborn were artificially created, whereas the half dragons are born from a union between a dragon and a mortal, or are descendants from such unions. Regardless of their origin, both races are generally on good terms. Half dragons' color patterns are similar to their draconic parent, and in the case of two half dragons having children, the child is often born in the color scheme of either parent, though occasionally they instead look like one of the other draconic ancestors of the parents, as half dragons are strongly drawn to one another and are known to quickly make families and form communities. They have a reputation for being prideful and reckless, as they rarely shy away from a challenge, and for being loyal companions."
@@ -9572,7 +9737,7 @@
 						"type": "entries"
 					},
 					{
-						"name":"Unusual Half-Dragon",
+						"name":"Unusual Half Dragon",
 						"type": "inset",
 						"entries": [
 							"The following are the more unusual half dragon subraces, which you can also choose with your DM's permission. Gray dragons are chromatic dragons, while fang dragons, moonstone dragons, and song dragons are their own subspecies of dragon.",
@@ -9611,7 +9776,7 @@
 						]
 					},
 					{
-						"name": "Half-Dragon (Steel)",
+						"name": "Half Dragon (Steel)",
 						"entries": [
 							"Steel dragons are amiable, curious, and witty metallic dragons, that would rather spend their time among human cultures than in their own true forms. They prefer to invest in property and business unlike other dragons, who preferred to hoard monetary treasures. Steel dragons can cast divine magic as arcane spells, which is one of the blessings they have received from Io. They are gifted shapechangers, and retain many benefits of their draconic bodies even while in their disguises. Their guise will age at the normal rate of the race they changed into, which they call Time Touching. When their mortal life will have run its course, they will shed their memories in a process called \"Vaulting\", where they will store their previous memories. That way they can live their next life without any bias and prejudices from their previous one.",
 							"An exception is their soul mate and full dragon children, whose memories stay vivid, as the other memories around them feel  vague and distant. They will live multiple lives throughout their lifespan, called the \"chain of lives\". At the end of each life they will create a work of art that contains their collected wisdom; a teacher could create a book, and an adventurer could create a magical item. They will store these in a vault called \"the Composition\", which will be their legacy, to be shared at the true end of their life. They believe that Io created them for this purpose, to share the wisdom they have learned this way with others. Steel dragons spend most of their life in human form, except when they try to find a mate. After finding one they would start a \"semi-life\" where they live in a human form with their \"soul mate\", while taking care of their full-blooded dragon children in between, using their magic to disguise them. These children will then move to different cities once they are grown up, while the parents will create a new semi-life together, or go their own ways to meet up again later.",
@@ -9648,7 +9813,7 @@
 		{
 			"name": "Amethyst",
 			"source": "LEGDRAG",
-			"raceName": "Half-Dragon",
+			"raceName": "Half Dragon",
 			"raceSource": "LEGDRAG",
 			"page": 18,
 			"ability": [
@@ -9741,7 +9906,7 @@
 						"by": "Thorzag, green-dyed beardless dwarf"
 					},
 					{
-						"name": "Half-Dragon",
+						"name": "Half Dragon",
 						"entries": [
 							"Many dragons are not only fearsome beasts but renowned masters of magic as well. As such, it is not uncommon for one to change shape and walk among the masses, or even take a mortal lover. The children of such unions are known as half dragons. Not quite as monstrous-looking as the dragonborn, but still very much recognizable due to their draconic traits.",
 							"The difference between both races is that the dragonborn were artificially created, whereas the half dragons are born from a union between a dragon and a mortal, or are descendants from such unions. Regardless of their origin, both races are generally on good terms. Half dragons' color patterns are similar to their draconic parent, and in the case of two half dragons having children, the child is often born in the color scheme of either parent, though occasionally they instead look like one of the other draconic ancestors of the parents, as half dragons are strongly drawn to one another and are known to quickly make families and form communities. They have a reputation for being prideful and reckless, as they rarely shy away from a challenge, and for being loyal companions."
@@ -9811,7 +9976,7 @@
 						"type": "entries"
 					},
 					{
-						"name":"Unusual Half-Dragon",
+						"name":"Unusual Half Dragon",
 						"type": "inset",
 						"entries": [
 							"The following are the more unusual half dragon subraces, which you can also choose with your DM's permission. Gray dragons are chromatic dragons, while fang dragons, moonstone dragons, and song dragons are their own subspecies of dragon.",
@@ -9850,7 +10015,7 @@
 						]
 					},
 					{
-						"name": "Half-Dragon (Amethyst)",
+						"name": "Half Dragon (Amethyst)",
 						"entries": [
 							"Amethyst dragons are a type of gem dragon with crystalline blue scales, which are inherited by their half dragon offspring. Amethyst dragons are known for their psionics, and also for being capable tacticians. Half amethyst dragons are renowned as gifted psychics, and are known for being compassionate yet also pragmatic when the need arises. The horns and tip of the tail of half amethyst dragons are crystal-like, which become smoother and change as they grow older, until they look identical to those of amethyst dragons."
 						],
@@ -9878,7 +10043,7 @@
 		{
 			"name": "Crystal",
 			"source": "LEGDRAG",
-			"raceName": "Half-Dragon",
+			"raceName": "Half Dragon",
 			"raceSource": "LEGDRAG",
 			"page": 18,
 			"ability": [
@@ -9971,7 +10136,7 @@
 						"by": "Thorzag, green-dyed beardless dwarf"
 					},
 					{
-						"name": "Half-Dragon",
+						"name": "Half Dragon",
 						"entries": [
 							"Many dragons are not only fearsome beasts but renowned masters of magic as well. As such, it is not uncommon for one to change shape and walk among the masses, or even take a mortal lover. The children of such unions are known as half dragons. Not quite as monstrous-looking as the dragonborn, but still very much recognizable due to their draconic traits.",
 							"The difference between both races is that the dragonborn were artificially created, whereas the half dragons are born from a union between a dragon and a mortal, or are descendants from such unions. Regardless of their origin, both races are generally on good terms. Half dragons' color patterns are similar to their draconic parent, and in the case of two half dragons having children, the child is often born in the color scheme of either parent, though occasionally they instead look like one of the other draconic ancestors of the parents, as half dragons are strongly drawn to one another and are known to quickly make families and form communities. They have a reputation for being prideful and reckless, as they rarely shy away from a challenge, and for being loyal companions."
@@ -10041,7 +10206,7 @@
 						"type": "entries"
 					},
 					{
-						"name":"Unusual Half-Dragon",
+						"name":"Unusual Half Dragon",
 						"type": "inset",
 						"entries": [
 							"The following are the more unusual half dragon subraces, which you can also choose with your DM's permission. Gray dragons are chromatic dragons, while fang dragons, moonstone dragons, and song dragons are their own subspecies of dragon.",
@@ -10080,7 +10245,7 @@
 						]
 					},
 					{
-						"name": "Half-Dragon (Crystal)",
+						"name": "Half Dragon (Crystal)",
 						"entries": [
 							"Crystal dragons are a type of gem dragon with crystalline blue scales, which are inherited by their half dragon offspring. Crystal dragons are known for their psionics, and also for being capable tacticians. Half crystal dragons are renowned as gifted psychics, and are known for being compassionate yet also pragmatic when the need arises. The horns and tip of the tail of half crystal dragons are crystal-like, which become smoother and change as they grow older, until they look identical to those of crystal dragons."
 						],
@@ -10108,7 +10273,7 @@
 		{
 			"name": "Emerald",
 			"source": "LEGDRAG",
-			"raceName": "Half-Dragon",
+			"raceName": "Half Dragon",
 			"raceSource": "LEGDRAG",
 			"page": 18,
 			"ability": [
@@ -10201,7 +10366,7 @@
 						"by": "Thorzag, green-dyed beardless dwarf"
 					},
 					{
-						"name": "Half-Dragon",
+						"name": "Half Dragon",
 						"entries": [
 							"Many dragons are not only fearsome beasts but renowned masters of magic as well. As such, it is not uncommon for one to change shape and walk among the masses, or even take a mortal lover. The children of such unions are known as half dragons. Not quite as monstrous-looking as the dragonborn, but still very much recognizable due to their draconic traits.",
 							"The difference between both races is that the dragonborn were artificially created, whereas the half dragons are born from a union between a dragon and a mortal, or are descendants from such unions. Regardless of their origin, both races are generally on good terms. Half dragons' color patterns are similar to their draconic parent, and in the case of two half dragons having children, the child is often born in the color scheme of either parent, though occasionally they instead look like one of the other draconic ancestors of the parents, as half dragons are strongly drawn to one another and are known to quickly make families and form communities. They have a reputation for being prideful and reckless, as they rarely shy away from a challenge, and for being loyal companions."
@@ -10271,7 +10436,7 @@
 						"type": "entries"
 					},
 					{
-						"name":"Unusual Half-Dragon",
+						"name":"Unusual Half Dragon",
 						"type": "inset",
 						"entries": [
 							"The following are the more unusual half dragon subraces, which you can also choose with your DM's permission. Gray dragons are chromatic dragons, while fang dragons, moonstone dragons, and song dragons are their own subspecies of dragon.",
@@ -10310,7 +10475,7 @@
 						]
 					},
 					{
-						"name": "Half-Dragon (Emerald)",
+						"name": "Half Dragon (Emerald)",
 						"entries": [
 							"Emerald dragons are a type of gem dragon with crystalline blue scales, which are inherited by their half dragon offspring. Emerald dragons are known for their psionics, and also for being capable tacticians. Half emerald dragons are renowned as gifted psychics, and are known for being compassionate yet also pragmatic when the need arises. The horns and tip of the tail of half emerald dragons are crystal-like, which become smoother and change as they grow older, until they look identical to those of emerald dragons."
 						],
@@ -10338,7 +10503,7 @@
 		{
 			"name": "Topaz",
 			"source": "LEGDRAG",
-			"raceName": "Half-Dragon",
+			"raceName": "Half Dragon",
 			"raceSource": "LEGDRAG",
 			"page": 18,
 			"ability": [
@@ -10431,7 +10596,7 @@
 						"by": "Thorzag, green-dyed beardless dwarf"
 					},
 					{
-						"name": "Half-Dragon",
+						"name": "Half Dragon",
 						"entries": [
 							"Many dragons are not only fearsome beasts but renowned masters of magic as well. As such, it is not uncommon for one to change shape and walk among the masses, or even take a mortal lover. The children of such unions are known as half dragons. Not quite as monstrous-looking as the dragonborn, but still very much recognizable due to their draconic traits.",
 							"The difference between both races is that the dragonborn were artificially created, whereas the half dragons are born from a union between a dragon and a mortal, or are descendants from such unions. Regardless of their origin, both races are generally on good terms. Half dragons' color patterns are similar to their draconic parent, and in the case of two half dragons having children, the child is often born in the color scheme of either parent, though occasionally they instead look like one of the other draconic ancestors of the parents, as half dragons are strongly drawn to one another and are known to quickly make families and form communities. They have a reputation for being prideful and reckless, as they rarely shy away from a challenge, and for being loyal companions."
@@ -10501,7 +10666,7 @@
 						"type": "entries"
 					},
 					{
-						"name":"Unusual Half-Dragon",
+						"name":"Unusual Half Dragon",
 						"type": "inset",
 						"entries": [
 							"The following are the more unusual half dragon subraces, which you can also choose with your DM's permission. Gray dragons are chromatic dragons, while fang dragons, moonstone dragons, and song dragons are their own subspecies of dragon.",
@@ -10540,7 +10705,7 @@
 						]
 					},
 					{
-						"name": "Half-Dragon (Topaz)",
+						"name": "Half Dragon (Topaz)",
 						"entries": [
 							"Topaz dragons are a type of gem dragon with crystalline blue scales, which are inherited by their half dragon offspring. Topaz dragons are known for their psionics, and also for being capable tacticians. Half topaz dragons are renowned as gifted psychics, and are known for being compassionate yet also pragmatic when the need arises. The horns and tip of the tail of half topaz dragons are crystal-like, which become smoother and change as they grow older, until they look identical to those of topaz dragons."
 						],
@@ -10568,7 +10733,7 @@
 		{
 			"name": "Fang",
 			"source": "LEGDRAG",
-			"raceName": "Half-Dragon",
+			"raceName": "Half Dragon",
 			"raceSource": "LEGDRAG",
 			"page": 19,
 			"ability": [
@@ -10637,7 +10802,7 @@
 						"by": "Thorzag, green-dyed beardless dwarf"
 					},
 					{
-						"name": "Half-Dragon",
+						"name": "Half Dragon",
 						"entries": [
 							"Many dragons are not only fearsome beasts but renowned masters of magic as well. As such, it is not uncommon for one to change shape and walk among the masses, or even take a mortal lover. The children of such unions are known as half dragons. Not quite as monstrous-looking as the dragonborn, but still very much recognizable due to their draconic traits.",
 							"The difference between both races is that the dragonborn were artificially created, whereas the half dragons are born from a union between a dragon and a mortal, or are descendants from such unions. Regardless of their origin, both races are generally on good terms. Half dragons' color patterns are similar to their draconic parent, and in the case of two half dragons having children, the child is often born in the color scheme of either parent, though occasionally they instead look like one of the other draconic ancestors of the parents, as half dragons are strongly drawn to one another and are known to quickly make families and form communities. They have a reputation for being prideful and reckless, as they rarely shy away from a challenge, and for being loyal companions."
@@ -10707,7 +10872,7 @@
 						"type": "entries"
 					},
 					{
-						"name":"Unusual Half-Dragon",
+						"name":"Unusual Half Dragon",
 						"type": "inset",
 						"entries": [
 							"The following are the more unusual half dragon subraces, which you can also choose with your DM's permission. Gray dragons are chromatic dragons, while fang dragons, moonstone dragons, and song dragons are their own subspecies of dragon.",
@@ -10746,7 +10911,7 @@
 						]
 					},
 					{
-						"name": "Half-Dragon (Fang)",
+						"name": "Half Dragon (Fang)",
 						"entries": [
 							"Half fang and half gray dragons are the most vicious of all half dragons. Fang dragons don't have a breath weapon, but make for it with their ferocity. They have a bite that drains the life and even soul of their victims. Gray dragons were created by Tiamat from fang dragon eggs, and \"improved\" by giving them a breath weapon and turning them into chromatic dragons. However, half fang dragons (and dragonborn) also have a breath weapon, which they believe is a gift (or curse) from Tiamat. They have a life draining bite similar to their dragon ancestor, and often that dragon's temper as well. They do not form communities, and either live a life of solitude or join other half dragon communities. Those that ascend to dragonhood become gray dragons."
 						],
@@ -10774,7 +10939,7 @@
 		{
 			"name": "Gray",
 			"source": "LEGDRAG",
-			"raceName": "Half-Dragon",
+			"raceName": "Half Dragon",
 			"raceSource": "LEGDRAG",
 			"page": 19,
 			"ability": [
@@ -10843,7 +11008,7 @@
 						"by": "Thorzag, green-dyed beardless dwarf"
 					},
 					{
-						"name": "Half-Dragon",
+						"name": "Half Dragon",
 						"entries": [
 							"Many dragons are not only fearsome beasts but renowned masters of magic as well. As such, it is not uncommon for one to change shape and walk among the masses, or even take a mortal lover. The children of such unions are known as half dragons. Not quite as monstrous-looking as the dragonborn, but still very much recognizable due to their draconic traits.",
 							"The difference between both races is that the dragonborn were artificially created, whereas the half dragons are born from a union between a dragon and a mortal, or are descendants from such unions. Regardless of their origin, both races are generally on good terms. Half dragons' color patterns are similar to their draconic parent, and in the case of two half dragons having children, the child is often born in the color scheme of either parent, though occasionally they instead look like one of the other draconic ancestors of the parents, as half dragons are strongly drawn to one another and are known to quickly make families and form communities. They have a reputation for being prideful and reckless, as they rarely shy away from a challenge, and for being loyal companions."
@@ -10913,7 +11078,7 @@
 						"type": "entries"
 					},
 					{
-						"name":"Unusual Half-Dragon",
+						"name":"Unusual Half Dragon",
 						"type": "inset",
 						"entries": [
 							"The following are the more unusual half dragon subraces, which you can also choose with your DM's permission. Gray dragons are chromatic dragons, while fang dragons, moonstone dragons, and song dragons are their own subspecies of dragon.",
@@ -10952,7 +11117,7 @@
 						]
 					},
 					{
-						"name": "Half-Dragon (Gray)",
+						"name": "Half Dragon (Gray)",
 						"entries": [
 							"Half fang and half gray dragons are the most vicious of all half dragons. Fang dragons don't have a breath weapon, but make for it with their ferocity. They have a bite that drains the life and even soul of their victims. Gray dragons were created by Tiamat from fang dragon eggs, and \"improved\" by giving them a breath weapon and turning them into chromatic dragons. However, half fang dragons (and dragonborn) also have a breath weapon, which they believe is a gift (or curse) from Tiamat. They have a life draining bite similar to their dragon ancestor, and often that dragon's temper as well. They do not form communities, and either live a life of solitude or join other half dragon communities. Those that ascend to dragonhood become gray dragons."
 						],
@@ -10980,7 +11145,7 @@
 		{
 			"name": "Moonstone",
 			"source": "LEGDRAG",
-			"raceName": "Half-Dragon",
+			"raceName": "Half Dragon",
 			"raceSource": "LEGDRAG",
 			"page": 19,
 			"ability": [
@@ -11062,7 +11227,7 @@
 						"by": "Thorzag, green-dyed beardless dwarf"
 					},
 					{
-						"name": "Half-Dragon",
+						"name": "Half Dragon",
 						"entries": [
 							"Many dragons are not only fearsome beasts but renowned masters of magic as well. As such, it is not uncommon for one to change shape and walk among the masses, or even take a mortal lover. The children of such unions are known as half dragons. Not quite as monstrous-looking as the dragonborn, but still very much recognizable due to their draconic traits.",
 							"The difference between both races is that the dragonborn were artificially created, whereas the half dragons are born from a union between a dragon and a mortal, or are descendants from such unions. Regardless of their origin, both races are generally on good terms. Half dragons' color patterns are similar to their draconic parent, and in the case of two half dragons having children, the child is often born in the color scheme of either parent, though occasionally they instead look like one of the other draconic ancestors of the parents, as half dragons are strongly drawn to one another and are known to quickly make families and form communities. They have a reputation for being prideful and reckless, as they rarely shy away from a challenge, and for being loyal companions."
@@ -11132,7 +11297,7 @@
 						"type": "entries"
 					},
 					{
-						"name":"Unusual Half-Dragon",
+						"name":"Unusual Half Dragon",
 						"type": "inset",
 						"entries": [
 							"The following are the more unusual half dragon subraces, which you can also choose with your DM's permission. Gray dragons are chromatic dragons, while fang dragons, moonstone dragons, and song dragons are their own subspecies of dragon.",
@@ -11171,7 +11336,7 @@
 						]
 					},
 					{
-						"name": "Half-Dragon (Moonstone)",
+						"name": "Half Dragon (Moonstone)",
 						"entries": [
 							"Moonstone dragons are native to the feywild, but from time to time there are those that move to the prime world and even bond with mortal partners. Like their full blooded kin, half moonstone dragons tend to be peaceful and prefer to exchange stories or ideas. If pressed, they will use their magic to subdue their foes rather than kill them. They don't create settlements of their own, and prefer to dwell among elves or other half dragons."
 						],
@@ -11199,7 +11364,7 @@
 		{
 			"name": "Song",
 			"source": "LEGDRAG",
-			"raceName": "Half-Dragon",
+			"raceName": "Half Dragon",
 			"raceSource": "LEGDRAG",
 			"page": 19,
 			"ability": [
@@ -11285,7 +11450,7 @@
 						"by": "Thorzag, green-dyed beardless dwarf"
 					},
 					{
-						"name": "Half-Dragon",
+						"name": "Half Dragon",
 						"entries": [
 							"Many dragons are not only fearsome beasts but renowned masters of magic as well. As such, it is not uncommon for one to change shape and walk among the masses, or even take a mortal lover. The children of such unions are known as half dragons. Not quite as monstrous-looking as the dragonborn, but still very much recognizable due to their draconic traits.",
 							"The difference between both races is that the dragonborn were artificially created, whereas the half dragons are born from a union between a dragon and a mortal, or are descendants from such unions. Regardless of their origin, both races are generally on good terms. Half dragons' color patterns are similar to their draconic parent, and in the case of two half dragons having children, the child is often born in the color scheme of either parent, though occasionally they instead look like one of the other draconic ancestors of the parents, as half dragons are strongly drawn to one another and are known to quickly make families and form communities. They have a reputation for being prideful and reckless, as they rarely shy away from a challenge, and for being loyal companions."
@@ -11355,7 +11520,7 @@
 						"type": "entries"
 					},
 					{
-						"name":"Unusual Half-Dragon",
+						"name":"Unusual Half Dragon",
 						"type": "inset",
 						"entries": [
 							"The following are the more unusual half dragon subraces, which you can also choose with your DM's permission. Gray dragons are chromatic dragons, while fang dragons, moonstone dragons, and song dragons are their own subspecies of dragon.",
@@ -11394,7 +11559,7 @@
 						]
 					},
 					{
-						"name": "Half-Dragon (Song)",
+						"name": "Half Dragon (Song)",
 						"entries": [
 							"Song dragons often apear as comely female mortal women, and as such it is not uncommon for them to have mortal partners, and half dragon offspring. Like half steel dragons, these half dragons will appear as their mortal parent's race if they are raised among them; such as Narnra Shalace, daughter of Elminster, who believed she was a human for a part of her life. They don't have settlements of their own, and instead join the Confluence or organizations like the Sisterhood of Essembra. The rules under \"{@b Playing as a Half Steel Dragon}\" can be applied to half song dragons as well."
 						],
@@ -11422,7 +11587,7 @@
 		{
 			"name": "Dracotaur",
 			"source": "LEGDRAG",
-			"raceName": "Half-Dragon",
+			"raceName": "Half Dragon",
 			"raceSource": "LEGDRAG",
 			"page": 20,
 			"speed": 40,
@@ -11486,7 +11651,7 @@
 						"by": "Thorzag, green-dyed beardless dwarf"
 					},
 					{
-						"name": "Half-Dragon",
+						"name": "Half Dragon",
 						"entries": [
 							"Many dragons are not only fearsome beasts but renowned masters of magic as well. As such, it is not uncommon for one to change shape and walk among the masses, or even take a mortal lover. The children of such unions are known as half dragons. Not quite as monstrous-looking as the dragonborn, but still very much recognizable due to their draconic traits.",
 							"The difference between both races is that the dragonborn were artificially created, whereas the half dragons are born from a union between a dragon and a mortal, or are descendants from such unions. Regardless of their origin, both races are generally on good terms. Half dragons' color patterns are similar to their draconic parent, and in the case of two half dragons having children, the child is often born in the color scheme of either parent, though occasionally they instead look like one of the other draconic ancestors of the parents, as half dragons are strongly drawn to one another and are known to quickly make families and form communities. They have a reputation for being prideful and reckless, as they rarely shy away from a challenge, and for being loyal companions."
@@ -11556,7 +11721,7 @@
 						"type": "entries"
 					},
 					{
-						"name":"Unusual Half-Dragon",
+						"name":"Unusual Half Dragon",
 						"type": "inset",
 						"entries": [
 							"The following are the more unusual half dragon subraces, which you can also choose with your DM's permission. Gray dragons are chromatic dragons, while fang dragons, moonstone dragons, and song dragons are their own subspecies of dragon.",
@@ -11631,7 +11796,7 @@
 		{
 			"name": "Naga",
 			"source": "LEGDRAG",
-			"raceName": "Half-Dragon",
+			"raceName": "Half Dragon",
 			"raceSource": "LEGDRAG",
 			"page": 20,
 			"ability": [
@@ -11695,7 +11860,7 @@
 						"by": "Thorzag, green-dyed beardless dwarf"
 					},
 					{
-						"name": "Half-Dragon",
+						"name": "Half Dragon",
 						"entries": [
 							"Many dragons are not only fearsome beasts but renowned masters of magic as well. As such, it is not uncommon for one to change shape and walk among the masses, or even take a mortal lover. The children of such unions are known as half dragons. Not quite as monstrous-looking as the dragonborn, but still very much recognizable due to their draconic traits.",
 							"The difference between both races is that the dragonborn were artificially created, whereas the half dragons are born from a union between a dragon and a mortal, or are descendants from such unions. Regardless of their origin, both races are generally on good terms. Half dragons' color patterns are similar to their draconic parent, and in the case of two half dragons having children, the child is often born in the color scheme of either parent, though occasionally they instead look like one of the other draconic ancestors of the parents, as half dragons are strongly drawn to one another and are known to quickly make families and form communities. They have a reputation for being prideful and reckless, as they rarely shy away from a challenge, and for being loyal companions."
@@ -11765,7 +11930,7 @@
 						"type": "entries"
 					},
 					{
-						"name":"Unusual Half-Dragon",
+						"name":"Unusual Half Dragon",
 						"type": "inset",
 						"entries": [
 							"The following are the more unusual half dragon subraces, which you can also choose with your DM's permission. Gray dragons are chromatic dragons, while fang dragons, moonstone dragons, and song dragons are their own subspecies of dragon.",
