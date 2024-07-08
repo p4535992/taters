@@ -628,6 +628,9 @@
 				}
 			],
 			"fluff": {
+				"entries": [
+					"Only dragonborn, half dragons, dragons, and dragonwrought kobolds can benefit from these potions. You can drink a draught as an bonus action, which grants you the draught's benefit(s) for 1 minute. If your breath weapon has the recharge property, doing so will immediately recharge your racial breath weapon, and cause it to recharge on a 4-6 on the d6 die roll for the next minute. The draught has two variants: the type draught and metabreath draught. Rare draughts grant both benefits and increase your breath weapon's damage. Dragons of Large or larger size require a bigger dose, increasing the draught's rarity by one step."
+				],
 				"images": [
 					{
 						"type": "image",
@@ -636,9 +639,6 @@
 							"url": "https://i.imgur.com/sfMGYgG.png"
 						}
 					}
-				],
-				"entries": [
-					"Only dragonborn, half dragons, dragons, and dragonwrought kobolds can benefit from these potions. You can drink a draught as an bonus action, which grants you the draught's benefit(s) for 1 minute. If your breath weapon has the recharge property, doing so will immediately recharge your racial breath weapon, and cause it to recharge on a 4-6 on the d6 die roll for the next minute. The draught has two variants: the type draught and metabreath draught. Rare draughts grant both benefits and increase your breath weapon's damage. Dragons of Large or larger size require a bigger dose, increasing the draught's rarity by one step."
 				]
 			}
 		}
@@ -5032,7 +5032,7 @@
 					"type": "list",
 					"items": [
 						"Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.",
-						"You learn one 1st level and one 2nd level spell of your choice from the sorcerer spell list. You can cast each spell at their lowest level without expending a spell slot. Once you cast either of these spells in this way, you can’t cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells’ spellcasting ability is the ability increased by this feat."
+						"You learn one 1st level and one 2nd level spell of your choice from the sorcerer spell list. You can cast each spell at their lowest level without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat."
 					]
 				}
 			]
@@ -5220,7 +5220,67 @@
 				}
 			],
 			"entries": [
-				"You have advantage on attack rolls against a creature if at least one of your allies is within 5 feet of the creature and the ally isn’t incapacitated."
+				"You have advantage on attack rolls against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't incapacitated."
+			]
+		},
+		{
+			"name": "Serpentine Heritage",
+			"source": "LEGDRAG",
+			"featureType": [
+				"OPTFEAT:LEGDRAG"
+			],
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "Lamia"
+						}
+					]
+				}
+			],
+			"entries": [
+				"You further embrace your serpentine heritage. You can take this feat twice, and its benefits stack.",
+				{
+					"type": "list",
+					"items": [
+						"Increase your Dexterity, Constitution, or Intelligence score by 1, to a maximum of 20.",
+						"The damage dice of your constrict attack and Crushing Coils trait (if you have it) increase by one step (1d6 to 1d8 etc. to a maximum of 1d12). The DC of your Venom trait (if you have it) increases by 1. The range of your poison spray cantrip (if you know it) increases by 30 feet.",
+						"You gain Infravision (page 34) out to a range of 60 feet. If you already have Infravision, then its range is increased by 60 feet instead.",
+						"The first time you take this feat you become immune to the poisoned condition, and the second time you take this feat you become immune to poison damage."
+					]
+				},
+				"When you take this feat you gain a trait of one of the other lamia subraces of your choice, but you must choose a lamia subrace whose trait you don't have yet. You gain the following trait based on your choice:",
+				{
+					"type": "table",
+					"caption": "Lamia Subraces",
+					"colLabels": [
+						"Subrace",
+						"Trait"
+					],
+					"colStyles": [
+						"col-3",
+						"col-6"
+					],
+					"rows": [
+						[
+							"Constrict",
+							"You gain the Crushing Coils trait"
+						],
+						[
+							"Hooded",
+							"You gain the Innate Spellcasting trait."
+						],
+						[
+							"Viper",
+							"You gain the Venom trait."
+						],
+						[
+							"Viper with Rattler Tail",
+							"You gain the Venom trait."
+						]
+					]
+				}
+				
 			]
 		}
 	],
@@ -6853,6 +6913,13 @@
 					"type": "entries"
 				},
 				{
+					"name": "Playing as a kobold with Wings",
+					"type": "inset",
+					"entries": [
+						"You can choose to play as a winged kobold (urd), or a dragonwrought kobold with wings. To do so, you must forgot your Pick Mastery trait at character creation, but in exchange you gain the Wings trait of the dragonborn (page 7), allowing you to glide and later fly."
+					]
+				},
+				{
 					"name": "Diggy Diggy Hole",
 					"type": "inset",
 					"entries": [
@@ -6863,7 +6930,7 @@
 					"name": "Weasel Companions",
 					"type": "inset",
 					"entries": [
-						"Kobolds train and domesticate {@creature Giant Weasel Domesticated|LEGDRAG|giant weasels} and {@creature Dire Weasel Domesticated|LEGDRAG|dire weasels} as hunting companions, guard animals, and mounts. These domesticated weasels are stronger than their wild counterparts, and trained to work well in groups. A domesticated giant weasel has the statistics of a wolf (Monster Manual page 341), and a domesticated dire weasel has the statistics of a dire wolf (Monster Manual page 321), however both also possess Darkvision out to a range of 60 feet. At your DM's discretion, you can gain a domesticated weasel as your companion during your adventures. This weasel is friendly to you and your companions and obeys any simple verbal commands that you issue to it (no action required by you) such as attack or guard, but it will only allow kobolds to ride it as a mount. If you have proficiency in the Animal Handling skill, and you train with your weasel regularly (at your DM’s discretion), you can add your proficiency bonus to your weasel's damage rolls, and any ability check the weasel makes. This does not stack with similar effects, such as from the Beast Master's Ranger's Companion feature."
+						"Kobolds train and domesticate {@creature Giant Weasel Domesticated|LEGDRAG|giant weasels} and {@creature Dire Weasel Domesticated|LEGDRAG|dire weasels} as hunting companions, guard animals, and mounts. These domesticated weasels are stronger than their wild counterparts, and trained to work well in groups. A domesticated giant weasel has the statistics of a wolf (Monster Manual page 341), and a domesticated dire weasel has the statistics of a dire wolf (Monster Manual page 321), however both also possess Darkvision out to a range of 60 feet. At your DM's discretion, you can gain a domesticated weasel as your companion during your adventures. This weasel is friendly to you and your companions and obeys any simple verbal commands that you issue to it (no action required by you) such as attack or guard, but it will only allow kobolds to ride it as a mount. If you have proficiency in the Animal Handling skill, and you train with your weasel regularly (at your DM's discretion), you can add your proficiency bonus to your weasel's damage rolls, and any ability check the weasel makes. This does not stack with similar effects, such as from the Beast Master's Ranger's Companion feature."
 					]
 				},
 				{
@@ -6876,9 +6943,6 @@
 				}
 			],
 			"darkvision": 60,
-			"traitTags": [
-				"NPC Race"
-			],
 			"toolProficiencies": [
 				{
 					"thieves' tools": true
@@ -6973,9 +7037,229 @@
 			}
 		},
 		{
+			"name": "Kobold Revised (Urd)",
+			"source": "LEGDRAG",
+			"page": 22,
+			"size": [
+				"S"
+			],
+			"speed": 30,
+			"ability": [
+				{
+					"dex": 2,
+					"choose": {
+						"from": [
+							"int",
+							"cha"
+						],
+						"count": 1
+					}
+				}
+			],
+			"entries": [
+				"As a kobold, you gain the following traits.",
+				{
+					"name": "Ability Score Increase",
+					"type": "entries",
+					"entries": [
+						"Your Dexterity score increases by 2, and your Intelligence or Charisma score increases by 1 (your choice)."
+					]
+				},
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Kobolds reach adulthood at age 6 and can live up to 120 years, but rarely do so. Those that live within or near draconic communities tend to live longer."
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"Kobolds rely on the strength of their group, which makes them tend toward law. Kobolds living within or near draconic communities are often neutral."
+					]
+				},
+				{
+					"name": "Size",
+					"type": "entries",
+					"entries": [
+						"Kobold are between 2 and 3 feet tall and weigh between 25 and 35 pounds. Your size is Small."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Speed",
+					"entries": [
+						"Your base walking speed is 30 feet."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light but only in shades of gray."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Wings",
+					"type": "entries",
+					"entries": [
+						"You have draconic wings sprouting from your shoulder blades. When falling you can use your reaction to slow your descent, as if under the effects of a feather fall spell. However you can move one foot horizontally for each foot that you fall. At 6th level you can grant yourself a flying speed of 30 feet as a bonus action for up to 10 minutes, all at once or in shorter flights, each one using a minimum of 1 minute from the duration. You regain the full duration after finishing a long rest. At 14th level you can instead fly indefinitely at a speed of 30 feet. If you also have a flying speed from another source, that flying speed will increase by 20 feet instead. Your clothes and armor have to be modified to accommodate your wings, and you can't use your wings while wearing heavy armor."
+					]
+				},
+				{
+					"name": "Center of Attention",
+					"entries": [
+						"As a bonus action, you can distract creatures of your choice within 10 feet of you, if they can see or hear you. This can be done by cowering pathetically, shrieking furiously, boasting arrogantly, or through different means. Until the start of your next turn, you and your allies gain advantage on attack rolls against those creatures. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Skilled Trapper",
+					"entries": [
+						"You gain proficiency with the thieves' tools, and whenever you make an ability check to create traps (Xanathar's Guide to Everything page 84) your proficiency bonus is doubled."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Fleeting Courage",
+					"entries": [
+						"When a hostile creature that you can see is reduced to 0 hit points, your next attack roll or saving throw you make before the end of your next turn has advantage."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Draconic.",
+						"Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Playing as a kobold with Wings",
+					"type": "inset",
+					"entries": [
+						"You can choose to play as a winged kobold (urd), or a dragonwrought kobold with wings. To do so, you must forgot your Pick Mastery trait at character creation, but in exchange you gain the Wings trait of the dragonborn (page 7), allowing you to glide and later fly."
+					]
+				},
+				{
+					"name": "Diggy Diggy Hole",
+					"type": "inset",
+					"entries": [
+						"At their DM's discretion, dwarf players can gain the kobold's Pick Mastery trait as an additional racial trait, to allow them to wield pickaxes as thematic weapons."
+					]
+				},
+				{
+					"name": "Weasel Companions",
+					"type": "inset",
+					"entries": [
+						"Kobolds train and domesticate {@creature Giant Weasel Domesticated|LEGDRAG|giant weasels} and {@creature Dire Weasel Domesticated|LEGDRAG|dire weasels} as hunting companions, guard animals, and mounts. These domesticated weasels are stronger than their wild counterparts, and trained to work well in groups. A domesticated giant weasel has the statistics of a wolf (Monster Manual page 341), and a domesticated dire weasel has the statistics of a dire wolf (Monster Manual page 321), however both also possess Darkvision out to a range of 60 feet. At your DM's discretion, you can gain a domesticated weasel as your companion during your adventures. This weasel is friendly to you and your companions and obeys any simple verbal commands that you issue to it (no action required by you) such as attack or guard, but it will only allow kobolds to ride it as a mount. If you have proficiency in the Animal Handling skill, and you train with your weasel regularly (at your DM's discretion), you can add your proficiency bonus to your weasel's damage rolls, and any ability check the weasel makes. This does not stack with similar effects, such as from the Beast Master's Ranger's Companion feature."
+					]
+				},
+				{
+					"name": "Playing as a Dragonwrought Kobold",
+					"type": "inset",
+					"entries": [
+						"You can choose to play as a dragonwrought kobold, who are more in touch with their draconic heritage.",
+						"If so, you gain the benefits of the Dragonwrought Kobold variant (page 25), but in exchange you lose the Skilled Trapper and Fleeting Courage traits."
+					]
+				}
+			],
+			"darkvision": 60,
+			"toolProficiencies": [
+				{
+					"thieves' tools": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"draconic": true
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"Kobolds are a lot less cute when they learn how to cast fireballs."
+						],
+						"by": "Volothamp Geddarm"
+					},
+					{
+						"name": "Kobold Revised (Urd)",
+						"entries": [
+							"Kobolds are often dismissed as cowardly, foolish, and weak, but these little reptilian creatures are clever with their hands, and viciously work together in order to overcome their physical limitations. Kobolds are short in stature, despite the draconic blood running in their veins, with the tallest of them barely reaching 3 feet and weighing no more than 35 pounds. Because of their small size, kobolds often have to adopt unorthodox means of achieving victory. This usually leads to traps, which kobolds are well known for making, as well as using ambushes and distractions.",
+							"Unlike the true dragons they worship, most kobolds don't have set colors that reflect certain personality traits. Whole tribes usually are the same one or two colors, and the color of a kobold has no bearing on its abilities or skill set. Kobolds display many of the traits that true dragons display, and are often either proud, or vain (or both). While individual kobolds prefer to run away from a fight, they know that there is greatness within them, and they are proud that they are the blood-kin of dragons. Despite this, a typical kobold acknowledges its weakness in the face of a hostile world, as well as the superior might of true dragons. They find satisfaction in their work, the survival of their tribe, and the knowledge that they shares a heritage with mighty dragons.",
+							"While the individual kobold can be cowardly, this changes when they fight directly alongside their tribe. They believe that they will be rewarded in the afterlife if they die in the service of their tribe, and as such are far less fearful. Kobolds, aside from the occasional adventurer, are also quite content with their lives, provided they can mine and be with their families, and receive the occasional praise from dragons.",
+							"Kobolds are renowned for their worship of dragons, in which case they cast aside any pride they have and willingly and proudly serve such mighty creatures without a thought of treason. If the dragon expresses cruelty, they will tolerate it or simply go away instead of seeking revenge. They even display strong acts of courage while within their service.",
+							"Strangely, they have the same sentiment towards dragonborn and half dragons, whom they consider to be dragons. This often leads to the annoyance of dragonborn, many of whom hold resentment towards dragons for past slavery. However, their obsessive loyalty and devotion, and their skill at handling the sewage of draconic communities, causes the other draconic races to tolerate their presence. And those that are able to put their pride aside acknowledge that more than one draconic community has been saved by using the kobold overwhelming numbers and unorthodox way of fighting.",
+							"Kobolds are naturally skilled at tunneling. Similar to dwarves, they have a near-instinctive sense of what sections of stone or earth are strong or weak, are bearing a load or are safe to excavate, or are likely to contain minerals or offer access to water.",
+							"This ability enables them to fashion secure homes in places where other creatures wouldn't feel safe. Their favorite past time is bathing, and they are masters at finding natural springs and even hot springs.",
+							"The latter also being quite popular among half dragons, and kobolds generally have no problem sharing these finds with mighty \"dragons\".",
+							"Kobolds take advantage of their size by creating small-diameter tunnels that they can easily pass through, but that require larger creatures to hunch or even crawl to make progress. Due to their small size, many kobold often feel that there's safety in numbers. As such they rarely strike out on their own, unless it's a mission of great importance or they are serving or proving themselves to a dragon.",
+							"A kobold can be fooled with smooth words or a quick wit, but when the kobold figures out it has been tricked it will remember the affront, and when possible will retaliate against that person somehow, even if merely in a petty way. Though they are far less grudgeful against dragons, feeling that they act so because the kobold must prove its worth.",
+							"Urds, or winged kobolds, are kobolds who are born with wings. Some kobolds are more in touch with their draconic heritage and are known as dragonwrought kobolds, and are born among both regular kobolds and urds. However, most dragonwrought have wings, even if not all of them do. If you wish to play as a kobold with wings, you can choose this variant option (page 25) at character creation."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Kobold Revised (Urd) names",
+						"entries": [
+							"Kobold names are derived from the Draconic tongue and usually relate to a characteristic of the owner, such as scale color, distinctive body parts, or typical behavior. \"Red Foot\", \"White Claw\" and \"Scurry\" are Common translations of often-used names. A kobold might change its name when it becomes an adult, or add additional word-syllables after important events such as completing its first hunt, laying its first egg, or surviving its first battle. Because kobolds can change sex to suit a tribe's needs, they don't differentiate between male or female names.",
+							{
+								"entries": [
+									{
+										"name": "Kobold Names",
+										"entries": [
+											"Arix, Eks, Ett, Galax, Garu, Hagnar, Hox, Irtos, Kashak, Meepo, Molo, Ohsoss, Rotom, Sagin, Sik, Sniv, Taklak, Tes, Urak, Varn"
+										],
+										"type": "entries"
+									}
+								],
+								"type": "entries"
+							}
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
+						],
+						"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/JnnXxmT.jpg"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/TvVWugP.png"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/WKI88G2.png"
+						}
+					}
+				]
+			}
+		},
+		{
 			"name": "Kobold Dragonwrought",
 			"source": "LEGDRAG",
-			"page": 23,
+			"page": 25,
 			"size": [
 				"S"
 			],
@@ -7055,7 +7339,7 @@
 				{
 					"name": "Kobold Endurance",
 					"entries": [
-						"You have advantage on saving throws against being paralyzed, and magic can’t put you to sleep."
+						"You have advantage on saving throws against being paralyzed, and magic can't put you to sleep."
 					],
 					"type": "entries"
 				},
@@ -7083,139 +7367,139 @@
 									"Amethyst",
 									"Force",
 									"15 ft. cone (Str. save)",
-									"Persuasion"
+									"{@skill Persuasion}"
 								],
 								[
 									"Black",
 									"Acid",
 									"5 by 30 ft. line (Dex. save)",
-									"Stealth"
+									"{@skill Stealth}"
 								],
 								[
 									"Blue",
 									"Lightning",
 									"5 by 30 ft. line (Dex. save)",
-									"Stealth"
+									"{@skill Stealth}"
 								],
 								[
 									"Brass",
 									"Fire",
 									"5 by 30 ft. line (Dex. save)",
-									"Persuasion"
+									"{@skill Persuasion}"
 								],
 								[
 									"Bronze",
 									"Lightning",
 									"5 by 30 ft. line (Dex. save)",
-									"Wisdom"
+									"{@skill Survival}"
 								],
 								[
 									"Brown",
 									"Acid",
 									"5 by 30 ft. line (Dex. save)",
-									"Constitution"
+									"{@skill Stealth}"
 								],
 								[
 									"Celestial",
 									"Radiant",
 									"15 ft. cone (Con. save)",
-									"Charisma"
+									"{@skill Persuasion}"
 								],
 								[
 									"Copper",
 									"Acid",
 									"5 by 30 ft. line (Dex. save)",
-									"Charisma"
+									"{@skill Stealth}"
 								],
 								[
 									"Crystal",
 									"Radiant",
 									"15 ft. cone (Con. save)",
-									"Charisma"
+									"{@skill Persuasion}"
 								],
 								[
 									"Deep",
 									"Psychic",
 									"15 ft. cone (Wis. save)",
-									"Intelligence"
+									"{@skill Perception}"
 								],
 								[
 									"Emerald",
 									"Psychic",
 									"15 ft. cone (Int. save)",
-									"Intelligence"
+									"{@skill History}"
 								],
 								[
 									"Fang",
 									"Acid",
 									"5 by 30 ft. line (Dex. save)",
-									"Constitution"
+									"{@skill Athletics}"
 								],
 								[
 									"Gray",
 									"Acid",
 									"5 by 30 ft. line (Dex. save)",
-									"Constitution"
+									"{@skill Athletics}"
 								],
 								[
 									"Gold",
 									"Fire",
 									"15 ft. cone (Dex. save)",
-									"Wisdom"
+									"{@skill Insight}"
 								],
 								[
 									"Green",
 									"Poison",
 									"15 ft. cone (Con. save)",
-									"Intelligence"
+									"{@skill Stealth}"
 								],
 								[
 									"Moonstone",
 									"Radiant",
 									"5 by 30 ft. line (Dex. save)",
-									"Wisdom"
+									"{@skill Stealth}"
 								],
 								[
 									"Red",
 									"Fire",
 									"15 ft. cone (Dex. save)",
-									"Constitution"
+									"{@skill Insight}"
 								],
 								[
 									"Sapphire",
 									"Thunder",
 									"15 ft. cone (Con. save)",
-									"Intelligence"
+									"{@skill History}"
 								],
 								[
 									"Silver",
 									"Cold",
 									"15 ft. cone (Con. save)",
-									"Intelligence"
+									"{@skill Persuasion}"
 								],
 								[
 									"Song",
 									"Lighting",
 									"15 ft. cone (Con. save)",
-									"Charisma"
+									"{@skill Persuasion}"
 								],
 								[
 									"Steel",
 									"Acid",
 									"5 by 30 ft. line (Dex. save)",
-									"Intelligence"
+									"{@skill Deception}"
 								],
 								[
 									"Topaz",
 									"Necrotic",
 									"15 ft. cone (Con. save)",
-									"Charisma"
+									"{@skill Athletics}"
 								],
 								[
 									"White",
 									"Cold",
 									"15 ft. cone (Con. save)",
-									"Constitution"
+									"{@skill Stealth}"
 								]
 							]
 						}
@@ -7231,6 +7515,13 @@
 					"type": "entries"
 				},
 				{
+					"name": "Playing as a kobold with Wings",
+					"type": "inset",
+					"entries": [
+						"You can choose to play as a winged kobold (urd), or a dragonwrought kobold with wings. To do so, you must forgot your Pick Mastery trait at character creation, but in exchange you gain the Wings trait of the dragonborn (page 7), allowing you to glide and later fly."
+					]
+				},
+				{
 					"name": "Diggy Diggy Hole",
 					"type": "inset",
 					"entries": [
@@ -7241,7 +7532,7 @@
 					"name": "Weasel Companions",
 					"type": "inset",
 					"entries": [
-						"Kobolds train and domesticate {@creature Giant Weasel Domesticated|LEGDRAG|giant weasels} and {@creature Dire Weasel Domesticated|LEGDRAG|dire weasels} as hunting companions, guard animals, and mounts. These domesticated weasels are stronger than their wild counterparts, and trained to work well in groups. A domesticated giant weasel has the statistics of a wolf (Monster Manual page 341), and a domesticated dire weasel has the statistics of a dire wolf (Monster Manual page 321), however both also possess Darkvision out to a range of 60 feet. At your DM's discretion, you can gain a domesticated weasel as your companion during your adventures. This weasel is friendly to you and your companions and obeys any simple verbal commands that you issue to it (no action required by you) such as attack or guard, but it will only allow kobolds to ride it as a mount. If you have proficiency in the Animal Handling skill, and you train with your weasel regularly (at your DM’s discretion), you can add your proficiency bonus to your weasel's damage rolls, and any ability check the weasel makes. This does not stack with similar effects, such as from the Beast Master's Ranger's Companion feature."
+						"Kobolds train and domesticate {@creature Giant Weasel Domesticated|LEGDRAG|giant weasels} and {@creature Dire Weasel Domesticated|LEGDRAG|dire weasels} as hunting companions, guard animals, and mounts. These domesticated weasels are stronger than their wild counterparts, and trained to work well in groups. A domesticated giant weasel has the statistics of a wolf (Monster Manual page 341), and a domesticated dire weasel has the statistics of a dire wolf (Monster Manual page 321), however both also possess Darkvision out to a range of 60 feet. At your DM's discretion, you can gain a domesticated weasel as your companion during your adventures. This weasel is friendly to you and your companions and obeys any simple verbal commands that you issue to it (no action required by you) such as attack or guard, but it will only allow kobolds to ride it as a mount. If you have proficiency in the Animal Handling skill, and you train with your weasel regularly (at your DM's discretion), you can add your proficiency bonus to your weasel's damage rolls, and any ability check the weasel makes. This does not stack with similar effects, such as from the Beast Master's Ranger's Companion feature."
 					]
 				},
 				{
@@ -7254,9 +7545,6 @@
 				}
 			],
 			"darkvision": 60,
-			"traitTags": [
-				"NPC Race"
-			],
 			"languageProficiencies": [
 				{
 					"common": true,
@@ -7265,7 +7553,8 @@
 			],
 			"weaponProficiencies": [
 				{
-					"war pick|phb": true				}
+					"war pick|phb": true				
+				}
 			],
 			"fluff": {
 				"entries": [
@@ -7277,7 +7566,7 @@
 						"by": "Volothamp Geddarm"
 					},
 					{
-						"name": "Kobold Revised",
+						"name": "Kobold Dragonwrought",
 						"entries": [
 							"Kobolds are often dismissed as cowardly, foolish, and weak, but these little reptilian creatures are clever with their hands, and viciously work together in order to overcome their physical limitations. Kobolds are short in stature, despite the draconic blood running in their veins, with the tallest of them barely reaching 3 feet and weighing no more than 35 pounds. Because of their small size, kobolds often have to adopt unorthodox means of achieving victory. This usually leads to traps, which kobolds are well known for making, as well as using ambushes and distractions.",
 							"Unlike the true dragons they worship, most kobolds don't have set colors that reflect certain personality traits. Whole tribes usually are the same one or two colors, and the color of a kobold has no bearing on its abilities or skill set. Kobolds display many of the traits that true dragons display, and are often either proud, or vain (or both). While individual kobolds prefer to run away from a fight, they know that there is greatness within them, and they are proud that they are the blood-kin of dragons. Despite this, a typical kobold acknowledges its weakness in the face of a hostile world, as well as the superior might of true dragons. They find satisfaction in their work, the survival of their tribe, and the knowledge that they shares a heritage with mighty dragons.",
@@ -7294,7 +7583,7 @@
 						"type": "entries"
 					},
 					{
-						"name": "Kobold Revised names",
+						"name": "Kobold Dragonwrought names",
 						"entries": [
 							"Kobold names are derived from the Draconic tongue and usually relate to a characteristic of the owner, such as scale color, distinctive body parts, or typical behavior. \"Red Foot\", \"White Claw\" and \"Scurry\" are Common translations of often-used names. A kobold might change its name when it becomes an adult, or add additional word-syllables after important events such as completing its first hunt, laying its first egg, or surviving its first battle. Because kobolds can change sex to suit a tribe's needs, they don't differentiate between male or female names.",
 							{
@@ -7325,21 +7614,553 @@
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://i.imgur.com/JnnXxmT.jpg"
+							"url": "XXX"
 						}
 					},
 					{
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://i.imgur.com/TvVWugP.png"
+							"url": "XXX"
 						}
 					},
 					{
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://i.imgur.com/WKI88G2.png"
+							"url": "XXX"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Kobold Dragonwrought (Urd)",
+			"source": "LEGDRAG",
+			"page": 25,
+			"size": [
+				"S"
+			],
+			"ability": [
+				{
+					"dex": 2,
+					"choose": {
+						"from": [
+							"int",
+							"cha"
+						],
+						"count": 1
+					}
+				}
+			],
+			"entries": [
+				"As a kobold, you gain the following traits.",
+				{
+					"name": "Ability Score Increase",
+					"type": "entries",
+					"entries": [
+						"Your Dexterity score increases by 2, and your Intelligence or Charisma score increases by 1 (your choice)."
+					]
+				},
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Kobolds reach adulthood at age 6 and can live up to 120 years, but rarely do so. Those that live within or near draconic communities tend to live longer."
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"Kobolds rely on the strength of their group, which makes them tend toward law. Kobolds living within or near draconic communities are often neutral."
+					]
+				},
+				{
+					"name": "Size",
+					"type": "entries",
+					"entries": [
+						"Kobold are between 2 and 3 feet tall and weigh between 25 and 35 pounds. Your size is Small."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Speed",
+					"entries": [
+						"Your base walking speed is 30 feet."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light but only in shades of gray."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Wings",
+					"type": "entries",
+					"entries": [
+						"You have draconic wings sprouting from your shoulder blades. When falling you can use your reaction to slow your descent, as if under the effects of a feather fall spell. However you can move one foot horizontally for each foot that you fall. At 6th level you can grant yourself a flying speed of 30 feet as a bonus action for up to 10 minutes, all at once or in shorter flights, each one using a minimum of 1 minute from the duration. You regain the full duration after finishing a long rest. At 14th level you can instead fly indefinitely at a speed of 30 feet. If you also have a flying speed from another source, that flying speed will increase by 20 feet instead. Your clothes and armor have to be modified to accommodate your wings, and you can't use your wings while wearing heavy armor."
+					]
+				},
+				{
+					"name": "Center of Attention",
+					"entries": [
+						"As a bonus action, you can distract creatures of your choice within 10 feet of you, if they can see or hear you. This can be done by cowering pathetically, shrieking furiously, boasting arrogantly, or through different means. Until the start of your next turn, you and your allies gain advantage on attack rolls against those creatures. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Kobold Endurance",
+					"entries": [
+						"You have advantage on saving throws against being paralyzed, and magic can't put you to sleep."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Dragonwrought",
+					"entries": [
+						"Select a dragon from the Dragonwrought Dragon Ancestor table. You gain an additional skill proficiency and resistance to a damage type depending on your selected dragonwrought dragon ancestor.",
+						{
+							"type": "table",
+							"caption": "Dragonwrought Dragon Ancestor",
+							"colLabels": [
+								"Dragon",
+								"Damage Type",
+								"Breath Weapon",
+								"Skill proficiency"
+							],
+							"colStyles": [
+								"col-3 text-center",
+								"col-3 text-center",
+								"col-4",
+								"col-3"
+							],
+							"rows": [
+								[
+									"Amethyst",
+									"Force",
+									"15 ft. cone (Str. save)",
+									"{@skill Persuasion}"
+								],
+								[
+									"Black",
+									"Acid",
+									"5 by 30 ft. line (Dex. save)",
+									"{@skill Stealth}"
+								],
+								[
+									"Blue",
+									"Lightning",
+									"5 by 30 ft. line (Dex. save)",
+									"{@skill Stealth}"
+								],
+								[
+									"Brass",
+									"Fire",
+									"5 by 30 ft. line (Dex. save)",
+									"{@skill Persuasion}"
+								],
+								[
+									"Bronze",
+									"Lightning",
+									"5 by 30 ft. line (Dex. save)",
+									"{@skill Survival}"
+								],
+								[
+									"Brown",
+									"Acid",
+									"5 by 30 ft. line (Dex. save)",
+									"{@skill Stealth}"
+								],
+								[
+									"Celestial",
+									"Radiant",
+									"15 ft. cone (Con. save)",
+									"{@skill Persuasion}"
+								],
+								[
+									"Copper",
+									"Acid",
+									"5 by 30 ft. line (Dex. save)",
+									"{@skill Stealth}"
+								],
+								[
+									"Crystal",
+									"Radiant",
+									"15 ft. cone (Con. save)",
+									"{@skill Persuasion}"
+								],
+								[
+									"Deep",
+									"Psychic",
+									"15 ft. cone (Wis. save)",
+									"{@skill Perception}"
+								],
+								[
+									"Emerald",
+									"Psychic",
+									"15 ft. cone (Int. save)",
+									"{@skill History}"
+								],
+								[
+									"Fang",
+									"Acid",
+									"5 by 30 ft. line (Dex. save)",
+									"{@skill Athletics}"
+								],
+								[
+									"Gray",
+									"Acid",
+									"5 by 30 ft. line (Dex. save)",
+									"{@skill Athletics}"
+								],
+								[
+									"Gold",
+									"Fire",
+									"15 ft. cone (Dex. save)",
+									"{@skill Insight}"
+								],
+								[
+									"Green",
+									"Poison",
+									"15 ft. cone (Con. save)",
+									"{@skill Stealth}"
+								],
+								[
+									"Moonstone",
+									"Radiant",
+									"5 by 30 ft. line (Dex. save)",
+									"{@skill Stealth}"
+								],
+								[
+									"Red",
+									"Fire",
+									"15 ft. cone (Dex. save)",
+									"{@skill Insight}"
+								],
+								[
+									"Sapphire",
+									"Thunder",
+									"15 ft. cone (Con. save)",
+									"{@skill History}"
+								],
+								[
+									"Silver",
+									"Cold",
+									"15 ft. cone (Con. save)",
+									"{@skill Persuasion}"
+								],
+								[
+									"Song",
+									"Lighting",
+									"15 ft. cone (Con. save)",
+									"{@skill Persuasion}"
+								],
+								[
+									"Steel",
+									"Acid",
+									"5 by 30 ft. line (Dex. save)",
+									"{@skill Deception}"
+								],
+								[
+									"Topaz",
+									"Necrotic",
+									"15 ft. cone (Con. save)",
+									"{@skill Athletics}"
+								],
+								[
+									"White",
+									"Cold",
+									"15 ft. cone (Con. save)",
+									"{@skill Stealth}"
+								]
+							]
+						}
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Draconic.",
+						"Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Playing as a kobold with Wings",
+					"type": "inset",
+					"entries": [
+						"You can choose to play as a winged kobold (urd), or a dragonwrought kobold with wings. To do so, you must forgot your Pick Mastery trait at character creation, but in exchange you gain the Wings trait of the dragonborn (page 7), allowing you to glide and later fly."
+					]
+				},
+				{
+					"name": "Diggy Diggy Hole",
+					"type": "inset",
+					"entries": [
+						"At their DM's discretion, dwarf players can gain the kobold's Pick Mastery trait as an additional racial trait, to allow them to wield pickaxes as thematic weapons."
+					]
+				},
+				{
+					"name": "Weasel Companions",
+					"type": "inset",
+					"entries": [
+						"Kobolds train and domesticate {@creature Giant Weasel Domesticated|LEGDRAG|giant weasels} and {@creature Dire Weasel Domesticated|LEGDRAG|dire weasels} as hunting companions, guard animals, and mounts. These domesticated weasels are stronger than their wild counterparts, and trained to work well in groups. A domesticated giant weasel has the statistics of a wolf (Monster Manual page 341), and a domesticated dire weasel has the statistics of a dire wolf (Monster Manual page 321), however both also possess Darkvision out to a range of 60 feet. At your DM's discretion, you can gain a domesticated weasel as your companion during your adventures. This weasel is friendly to you and your companions and obeys any simple verbal commands that you issue to it (no action required by you) such as attack or guard, but it will only allow kobolds to ride it as a mount. If you have proficiency in the Animal Handling skill, and you train with your weasel regularly (at your DM's discretion), you can add your proficiency bonus to your weasel's damage rolls, and any ability check the weasel makes. This does not stack with similar effects, such as from the Beast Master's Ranger's Companion feature."
+					]
+				},
+				{
+					"name": "Playing as a Dragonwrought Kobold",
+					"type": "inset",
+					"entries": [
+						"You can choose to play as a dragonwrought kobold, who are more in touch with their draconic heritage.",
+						"If so, you gain the benefits of the Dragonwrought Kobold variant (page 25), but in exchange you lose the Skilled Trapper and Fleeting Courage traits."
+					]
+				}
+			],
+			"darkvision": 60,
+			"languageProficiencies": [
+				{
+					"common": true,
+					"draconic": true
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"Kobolds are a lot less cute when they learn how to cast fireballs."
+						],
+						"by": "Volothamp Geddarm"
+					},
+					{
+						"name": "Kobold Dragonwrought (Urd)",
+						"entries": [
+							"Kobolds are often dismissed as cowardly, foolish, and weak, but these little reptilian creatures are clever with their hands, and viciously work together in order to overcome their physical limitations. Kobolds are short in stature, despite the draconic blood running in their veins, with the tallest of them barely reaching 3 feet and weighing no more than 35 pounds. Because of their small size, kobolds often have to adopt unorthodox means of achieving victory. This usually leads to traps, which kobolds are well known for making, as well as using ambushes and distractions.",
+							"Unlike the true dragons they worship, most kobolds don't have set colors that reflect certain personality traits. Whole tribes usually are the same one or two colors, and the color of a kobold has no bearing on its abilities or skill set. Kobolds display many of the traits that true dragons display, and are often either proud, or vain (or both). While individual kobolds prefer to run away from a fight, they know that there is greatness within them, and they are proud that they are the blood-kin of dragons. Despite this, a typical kobold acknowledges its weakness in the face of a hostile world, as well as the superior might of true dragons. They find satisfaction in their work, the survival of their tribe, and the knowledge that they shares a heritage with mighty dragons.",
+							"While the individual kobold can be cowardly, this changes when they fight directly alongside their tribe. They believe that they will be rewarded in the afterlife if they die in the service of their tribe, and as such are far less fearful. Kobolds, aside from the occasional adventurer, are also quite content with their lives, provided they can mine and be with their families, and receive the occasional praise from dragons.",
+							"Kobolds are renowned for their worship of dragons, in which case they cast aside any pride they have and willingly and proudly serve such mighty creatures without a thought of treason. If the dragon expresses cruelty, they will tolerate it or simply go away instead of seeking revenge. They even display strong acts of courage while within their service.",
+							"Strangely, they have the same sentiment towards dragonborn and half dragons, whom they consider to be dragons. This often leads to the annoyance of dragonborn, many of whom hold resentment towards dragons for past slavery. However, their obsessive loyalty and devotion, and their skill at handling the sewage of draconic communities, causes the other draconic races to tolerate their presence. And those that are able to put their pride aside acknowledge that more than one draconic community has been saved by using the kobold overwhelming numbers and unorthodox way of fighting.",
+							"Kobolds are naturally skilled at tunneling. Similar to dwarves, they have a near-instinctive sense of what sections of stone or earth are strong or weak, are bearing a load or are safe to excavate, or are likely to contain minerals or offer access to water.",
+							"This ability enables them to fashion secure homes in places where other creatures wouldn't feel safe. Their favorite past time is bathing, and they are masters at finding natural springs and even hot springs.",
+							"The latter also being quite popular among half dragons, and kobolds generally have no problem sharing these finds with mighty \"dragons\".",
+							"Kobolds take advantage of their size by creating small-diameter tunnels that they can easily pass through, but that require larger creatures to hunch or even crawl to make progress. Due to their small size, many kobold often feel that there's safety in numbers. As such they rarely strike out on their own, unless it's a mission of great importance or they are serving or proving themselves to a dragon.",
+							"A kobold can be fooled with smooth words or a quick wit, but when the kobold figures out it has been tricked it will remember the affront, and when possible will retaliate against that person somehow, even if merely in a petty way. Though they are far less grudgeful against dragons, feeling that they act so because the kobold must prove its worth.",
+							"Urds, or winged kobolds, are kobolds who are born with wings. Some kobolds are more in touch with their draconic heritage and are known as dragonwrought kobolds, and are born among both regular kobolds and urds. However, most dragonwrought have wings, even if not all of them do. If you wish to play as a kobold with wings, you can choose this variant option (page 25) at character creation."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Kobold Dragonwrought (Urd) names",
+						"entries": [
+							"Kobold names are derived from the Draconic tongue and usually relate to a characteristic of the owner, such as scale color, distinctive body parts, or typical behavior. \"Red Foot\", \"White Claw\" and \"Scurry\" are Common translations of often-used names. A kobold might change its name when it becomes an adult, or add additional word-syllables after important events such as completing its first hunt, laying its first egg, or surviving its first battle. Because kobolds can change sex to suit a tribe's needs, they don't differentiate between male or female names.",
+							{
+								"entries": [
+									{
+										"name": "Kobold Names",
+										"entries": [
+											"Arix, Eks, Ett, Galax, Garu, Hagnar, Hox, Irtos, Kashak, Meepo, Molo, Ohsoss, Rotom, Sagin, Sik, Sniv, Taklak, Tes, Urak, Varn"
+										],
+										"type": "entries"
+									}
+								],
+								"type": "entries"
+							}
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
+						],
+						"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Lamia",
+			"source": "LEGDRAG",
+			"page": 26,
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"ability": [
+				{
+					"cha": 2
+				}
+			],
+			"entries": [
+				"You have a variety of traits you share with other lamia.",
+				{
+					"name": "Ability Score Increase",
+					"type": "entries",
+					"entries": [
+						"Your Charisma score increases by 2."
+					]
+				},
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Lamia mature at the same rate as humans and have lifespans similar in length to theirs."
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"Despite their yuan-ti heritage, lamia are compassionate and devoted, especially towards their partner. As such most lamia are good aligned instead of evil. "
+					]
+				},
+				{
+					"name": "Size",
+					"type": "entries",
+					"entries": [
+						"Lamia have humanoid torsos but can have long serpent bodies that vary in size, color, and muscle structure. Lamia match humans in average size, but their serpent tails can range from 12 to 24 feet. Your size is Medium."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Speed",
+					"entries": [
+						"Your base walking speed is 30 feet."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"Your bite is a natural weapon, which you can use to make unarmed strikes. If you hit with your bite, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike. If you wish to have snakes as hair, you can bite with them. See also the Medusa Heritage feat on page 112."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Constrict",
+					"type": "entries",
+					"entries": [
+						"Your long tail is strong and prehensile enough to grasp at targets, restraining them in place. Your constricting tail is a natural weapon, which you can use to make unarmed strikes. If you hit with your tail, you deal bludgeoning damage equal to 1d6 + your Strength modifier. If you hit a target with your tail, you can use your bonus action to make a grapple check against it. A target that is grappled by you this way is also restrained. You can only constrict one target at a time, and while constricting a target your speed is reduced to 0. This grapple ends if you are pushed away from the target you are grappling this way.",
+						"In addition, when you would deal damage to a target with your constrict (either with this attack or with your Crushing Coils trait if you have it), you can choose not to deal damage but instead gain advantage on Athletics skill checks made to grapple the target or maintain your grapple on the target until the start of your next turn."
+					]
+				},
+				{
+					"name": "Serpentine Body",
+					"entries": [
+						"You can use your tail to grab, hold, and lift items within 10 feet of you (your constrict attack still has a reach of 5 feet). You can use your Constitution modifier instead of your Strength modifier when determining the amount of weight it can bear. Your tail can't wield weapons or shields or do anything that requires manual precision, such as using tools or magic items or performing the somatic components of a spell. You gain an additional object interaction on your turn, provided it is done using your tail.",
+						"In addition, you have advantage on Athletics skill checks made to swim or to climb any surface your serpentine body could reasonably grip. You also count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift. However, you can still only grapple creatures up to one size larger than you (Large or smaller while your size is Medium)."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Draconic.",
+						"Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants. "
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Subraces",
+					"entries": [
+						"Choose one of the following subraces. Your choice will determine additional benefits.",
+						"Lamia are a varied race with many individual differences. However, they can be divided into three main groups; the constrictor lamia, the hooded lamia, and the viper lamia."
+					],
+					"type": "entries"
+				}
+			],
+			"traitTags": [
+				"Natural Weapon"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"draconic": true
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"Lamia? Yeah, they're a unique race alright. Think of them as mermaids but then with snakes. Despite their appearance they are often quite comely, but also a little bit clingy."
+						],
+						"by": "Alan Stuart, human fiancé of Mary Hunt the lamia"
+					},
+					{
+						"name": "Lamia",
+						"entries": [
+							"The lamia are a race of half serpent half human snake people, known for their kind personalities and loyalty. They are descendants of yuan-ti who intermingled with lamia nobles, yet strangely do not share the same tendency towards cruelty and control as their parent races do. Instead they form a symbiotic bond with humans (or other humanoids), whom they often assist and form relationships with. This has earned them the mocking name \"Softblood\" by the yuan-ti. They named themselves after their lamia noble ancestors, but aside from the name they wish to distance themselves from lamia nobles as much as they can, and the feeling is mutual.",
+							"They cannot disguise themselves like yuan-ti can, but their savory behavior and close bonds with human settlements often mean they don't have to. Despite their general warm demeanor, they can be fearsome foes, as their snake like body and sharp fangs can be used as deadly natural weapons. The majority of lamia are female, and because of that many form relationships with human males. The children of a union between a lamia and a human (or other humanoid) are usually born as full lamia, with an average chance of 25% for the child to be born as the race of the other parent.",
+							"They mate for life, and tend to cling to their partners, but are almost always pleasant and considerate, and form strong bonds quickly."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Lamia names",
+						"entries": [
+							"Lamia often adopt names used by the races with whom they interact, or use names popular among themselves.",
+							{
+								"entries": [
+									{
+										"name": "Male Names",
+										"entries": [
+											"Akris, Athanos, Cyrias, Daziss, Ischyros, Kress, Mariss, Oshphim, Salethar, Sarek, Selanu, Sellak, Seth, Shanastar, Shiraal, Silass, Thaxos, Tithian, Vaselous, Xamres, Xutan, Zihu, Zorai, Zureth"
+										],
+										"type": "entries"
+									},
+									{
+										"name": "Female Names",
+										"entries": [
+											" Ashissa, Bleu, Daïsha, Deryssa, Ena, Gina, Ibisis, Iormu, Ivaniss, Lalassu, Lucine, Media, Miia, Nassirah, Nessa, Nysia, Pyrrha, Saaveed, Sadai, Salah, Saphentite, Sapphee, Shallia, Shiana, Suehra, Thassia, Veeshis, Ydriss, Zivlil"
+										],
+										"type": "entries"
+									}
+								],
+								"type": "entries"
+							}
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
+						],
+						"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
 						}
 					}
 				]
@@ -13339,7 +14160,7 @@
 						"name": "Dracotaur (Variant half dragon)",
 						"entries": [
 							"Dracotaur are half dragons that have been born from a union between a dragon or half dragon and a different quadruped race, or are descendants from such unions.",
-							"To play a dracotaur, which is a variant half dragon, you must forgo the unique racial trait that is associated with your half dragon subrace. In exchange, your base walking speed is increased to 40 feet, and you gain the Quadruped Build and Stampede racial traits below. You count as a half dragon for all customization options, including variant options for your half dragon subrace.",
+							"To play a dracotaur, which is a variant half dragon, you must forgot the unique racial trait that is associated with your half dragon subrace. In exchange, your base walking speed is increased to 40 feet, and you gain the Quadruped Build and Stampede racial traits below. You count as a half dragon for all customization options, including variant options for your half dragon subrace.",
 							{
 								"name": "Variant Centaur",
 								"type": "inset",
@@ -13548,7 +14369,7 @@
 						"name": "Naga (Variant half dragon)",
 						"entries": [
 							"Naga are born from a union between a dragon and a lamia (or sometimes someone with lamia ancestry), or they are descendants from such unions. These naga are however not to be confused with the naga servitude race created by the sarrukh, which are an entirely different race. Naga are a variant of half dragons, and they have a serpentine tail like their lamia cousins have. However, they do not have the draconic resistance of other half dragons, due to their dominant lamia genes. Naga are visually distinct from lamia by their draconic traits, such as horns and coloration. If a naga has children with a partner of another race, most of their children will be born as full naga, similar to lamia.",
-							"To play a naga, which is a variant half dragon, you must forgo the damage resistance of the Draconic Ancestry racial trait that is associated with your half dragon subrace. In exchange, you gain the Constrict and Serpentine Body racial traits of the lamia (page 26). You count as a half dragon (and not a lamia) for all customization options, including variant options for your half dragon subrace."
+							"To play a naga, which is a variant half dragon, you must forgot the damage resistance of the Draconic Ancestry racial trait that is associated with your half dragon subrace. In exchange, you gain the Constrict and Serpentine Body racial traits of the lamia (page 26). You count as a half dragon (and not a lamia) for all customization options, including variant options for your half dragon subrace."
 						],
 						"type": "entries"
 					},
@@ -13566,6 +14387,527 @@
 						"href": {
 							"type": "external",
 							"url": "https://i.imgur.com/QORsyrr.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Constrictor",
+			"source": "LEGDRAG",
+			"raceName": "Lamia",
+			"raceSource": "LEGDRAG",
+			"page": 27,
+			"ability": [
+				{
+					"con": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						{
+							"name": "Constrictor",
+							"entries": [],
+							"type": "entries"
+						}
+					]
+				},
+				{
+					"name": "Ability Score Increase",
+					"type": "entries",
+					"entries": [
+						"Your Constitution score increases by 1."
+					]
+				},
+				{
+					"name": "Athletic",
+					"entries": [
+						"You gain proficiency in the Athletics skill."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Crushing Coils",
+					"entries": [
+						"When you make an Athletics skill check, or you make an attack or damage roll with your constrict attack, you can add your Constitution modifier instead of your Strength modifier to the roll. A creature grappled by your tail receives bludgeoning damage from your constrict at the start of their turn equal to 1d6 + your Strength or Constitution modifier (your choice)."
+					],
+					"type": "entries"
+				}
+			],
+			"traitTags": [
+				"Natural Weapon"
+			],
+			"skillProficiencies":[
+				{
+					"athletic": true
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"Lamia? Yeah, they're a unique race alright. Think of them as mermaids but then with snakes. Despite their appearance they are often quite comely, but also a little bit clingy."
+						],
+						"by": "Alan Stuart, human fiancé of Mary Hunt the lamia"
+					},
+					{
+						"name": "Lamia",
+						"entries": [
+							"The lamia are a race of half serpent half human snake people, known for their kind personalities and loyalty. They are descendants of yuan-ti who intermingled with lamia nobles, yet strangely do not share the same tendency towards cruelty and control as their parent races do. Instead they form a symbiotic bond with humans (or other humanoids), whom they often assist and form relationships with. This has earned them the mocking name \"Softblood\" by the yuan-ti. They named themselves after their lamia noble ancestors, but aside from the name they wish to distance themselves from lamia nobles as much as they can, and the feeling is mutual.",
+							"They cannot disguise themselves like yuan-ti can, but their savory behavior and close bonds with human settlements often mean they don't have to. Despite their general warm demeanor, they can be fearsome foes, as their snake like body and sharp fangs can be used as deadly natural weapons. The majority of lamia are female, and because of that many form relationships with human males. The children of a union between a lamia and a human (or other humanoid) are usually born as full lamia, with an average chance of 25% for the child to be born as the race of the other parent.",
+							"They mate for life, and tend to cling to their partners, but are almost always pleasant and considerate, and form strong bonds quickly."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Lamia (Constrictor)",
+						"entries": [
+							"The constrictor lamia are the most numerous of lamia, and are known for their powerful tails and strong constitution. They often prefer to subdue their foes without killing them, but should the need arise they can be deadly foes; crushing anyone foolish enough to anger them in their deadly grip."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Lamia names",
+						"entries": [
+							"Lamia often adopt names used by the races with whom they interact, or use names popular among themselves.",
+							{
+								"entries": [
+									{
+										"name": "Male Names",
+										"entries": [
+											"Akris, Athanos, Cyrias, Daziss, Ischyros, Kress, Mariss, Oshphim, Salethar, Sarek, Selanu, Sellak, Seth, Shanastar, Shiraal, Silass, Thaxos, Tithian, Vaselous, Xamres, Xutan, Zihu, Zorai, Zureth"
+										],
+										"type": "entries"
+									},
+									{
+										"name": "Female Names",
+										"entries": [
+											" Ashissa, Bleu, Daïsha, Deryssa, Ena, Gina, Ibisis, Iormu, Ivaniss, Lalassu, Lucine, Media, Miia, Nassirah, Nessa, Nysia, Pyrrha, Saaveed, Sadai, Salah, Saphentite, Sapphee, Shallia, Shiana, Suehra, Thassia, Veeshis, Ydriss, Zivlil"
+										],
+										"type": "entries"
+									}
+								],
+								"type": "entries"
+							}
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
+						],
+						"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Hooded",
+			"source": "LEGDRAG",
+			"raceName": "Lamia",
+			"raceSource": "LEGDRAG",
+			"page": 27,
+			"ability": [
+				{
+					"int": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						{
+							"name": "Hooded",
+							"entries": [],
+							"type": "entries"
+						}
+					]
+				},
+				{
+					"name": "Ability Score Increase",
+					"type": "entries",
+					"entries": [
+						"Your Intelligence score increases by 1. "
+					]
+				},
+				{
+					"name": "Intimidating",
+					"entries": [
+						"You gain proficiency in the Intimidation skill. "
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Innate Spellcasting",
+					"entries": [
+						"You know the {@spell poison spray|PHB} cantrip, and when you cast it its range is increased by 20 feet. All snakes see you as an ally and are friendly to you, unless you or your allies harm them. You can cast {@spell beast bond|XGE} at will with this trait, but you can target only snakes with it this way. At 3rd level you can cast the {@spell suggestion|PHB} spell once with this trait, and you regain the ability to do so when you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. You automatically hit and grapple a creature affected by your {@spell suggestion|PHB} spell when you attack it with your constrict attack, and damaging the affected creature with your constrict attack or Crushing Coils trait (if you have it) will not break the spell but instead the creature can make the saving throw again with disadvantage to end the spell. Your spellcasting ability for these spells is Intelligence, Wisdom, or Charisma (your choice). You don't require components to cast these spells, except for the verbal suggestion for the {@spell suggestion|PHB} spell."
+					],
+					"type": "entries"
+				}
+			],
+			"traitTags": [
+				"Natural Weapon"
+			],
+			"skillProficiencies":[
+				{
+					"intimidation": true
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"3": {
+							"daily": {
+								"1": [
+									"suggestion"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"darkness"
+								]
+							}
+						}
+					},
+					"will": {
+						"-":[
+							"beast bond|xge"
+						]
+					},
+					"known": {
+						"1": [
+							"poison spray|phb#c"
+						]
+					},
+					"ability": "inherit"
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"Lamia? Yeah, they're a unique race alright. Think of them as mermaids but then with snakes. Despite their appearance they are often quite comely, but also a little bit clingy."
+						],
+						"by": "Alan Stuart, human fiancé of Mary Hunt the lamia"
+					},
+					{
+						"name": "Lamia",
+						"entries": [
+							"The lamia are a race of half serpent half human snake people, known for their kind personalities and loyalty. They are descendants of yuan-ti who intermingled with lamia nobles, yet strangely do not share the same tendency towards cruelty and control as their parent races do. Instead they form a symbiotic bond with humans (or other humanoids), whom they often assist and form relationships with. This has earned them the mocking name \"Softblood\" by the yuan-ti. They named themselves after their lamia noble ancestors, but aside from the name they wish to distance themselves from lamia nobles as much as they can, and the feeling is mutual.",
+							"They cannot disguise themselves like yuan-ti can, but their savory behavior and close bonds with human settlements often mean they don't have to. Despite their general warm demeanor, they can be fearsome foes, as their snake like body and sharp fangs can be used as deadly natural weapons. The majority of lamia are female, and because of that many form relationships with human males. The children of a union between a lamia and a human (or other humanoid) are usually born as full lamia, with an average chance of 25% for the child to be born as the race of the other parent.",
+							"They mate for life, and tend to cling to their partners, but are almost always pleasant and considerate, and form strong bonds quickly."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Lamia (Hooded)",
+						"entries": [
+							"Hooded lamia are known for their hoods with distinct markings and patterns on it, which they can use for intimidation. They can charm others with hypnotic patterns from their eyes and crush them with their coils while convincing them that they are safe, and can also spit venom at their foes."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Lamia names",
+						"entries": [
+							"Lamia often adopt names used by the races with whom they interact, or use names popular among themselves.",
+							{
+								"entries": [
+									{
+										"name": "Male Names",
+										"entries": [
+											"Akris, Athanos, Cyrias, Daziss, Ischyros, Kress, Mariss, Oshphim, Salethar, Sarek, Selanu, Sellak, Seth, Shanastar, Shiraal, Silass, Thaxos, Tithian, Vaselous, Xamres, Xutan, Zihu, Zorai, Zureth"
+										],
+										"type": "entries"
+									},
+									{
+										"name": "Female Names",
+										"entries": [
+											" Ashissa, Bleu, Daïsha, Deryssa, Ena, Gina, Ibisis, Iormu, Ivaniss, Lalassu, Lucine, Media, Miia, Nassirah, Nessa, Nysia, Pyrrha, Saaveed, Sadai, Salah, Saphentite, Sapphee, Shallia, Shiana, Suehra, Thassia, Veeshis, Ydriss, Zivlil"
+										],
+										"type": "entries"
+									}
+								],
+								"type": "entries"
+							}
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
+						],
+						"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Viper",
+			"source": "LEGDRAG",
+			"raceName": "Lamia",
+			"raceSource": "LEGDRAG",
+			"page": 27,
+			"ability": [
+				{
+					"dex": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						{
+							"name": "Viper",
+							"entries": [],
+							"type": "entries"
+						}
+					]
+				},
+				{
+					"name": "Ability Score Increase",
+					"type": "entries",
+					"entries": [
+						"Your Dexterity score increases by 1."
+					]
+				},
+				{
+					"name": "Stealthy",
+					"entries": [
+						"You gain proficiency in the Stealth skill.",
+						"{@b Note:} If you are a viper lamia with a rattler at the end of your tail, you gain proficiency in the Intimidation skill instead."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Venom",
+					"entries": [
+						"You have venom glands in your mouth that inject poison during a bite attack. Once on each of your turns when you hit a creature with your bite attack, the target must make a Constitution Saving throw (DC 8 + your proficiency bonus + your Constitution modifier). On a failure, the target takes 1d6 {@damage poison} damage and is poisoned until the end of your next turn. This {@damage poison} damage increases to 1d8 at 5th level, 1d10 at 11th level, and 1d12 at 17th level. Your bite also counts as a finesse weapon."
+					],
+					"type": "entries"
+				}
+			],
+			"traitTags": [
+				"Natural Weapon"
+			],
+			"skillProficiencies":[
+				{
+					"stealth": true
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"Lamia? Yeah, they're a unique race alright. Think of them as mermaids but then with snakes. Despite their appearance they are often quite comely, but also a little bit clingy."
+						],
+						"by": "Alan Stuart, human fiancé of Mary Hunt the lamia"
+					},
+					{
+						"name": "Lamia",
+						"entries": [
+							"The lamia are a race of half serpent half human snake people, known for their kind personalities and loyalty. They are descendants of yuan-ti who intermingled with lamia nobles, yet strangely do not share the same tendency towards cruelty and control as their parent races do. Instead they form a symbiotic bond with humans (or other humanoids), whom they often assist and form relationships with. This has earned them the mocking name \"Softblood\" by the yuan-ti. They named themselves after their lamia noble ancestors, but aside from the name they wish to distance themselves from lamia nobles as much as they can, and the feeling is mutual.",
+							"They cannot disguise themselves like yuan-ti can, but their savory behavior and close bonds with human settlements often mean they don't have to. Despite their general warm demeanor, they can be fearsome foes, as their snake like body and sharp fangs can be used as deadly natural weapons. The majority of lamia are female, and because of that many form relationships with human males. The children of a union between a lamia and a human (or other humanoid) are usually born as full lamia, with an average chance of 25% for the child to be born as the race of the other parent.",
+							"They mate for life, and tend to cling to their partners, but are almost always pleasant and considerate, and form strong bonds quickly."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Lamia (Viper)",
+						"entries": [
+							"Viper lamia are feared for their deadly venom, and admired for their graceful movements. While all lamia have extendable fangs, viper lamia can use them to inject venom into their foes. Most viper lamia are subtle, but some have a rattler at the end of their long tail which they can use to intimidate their foes. Few are foolish enough to ignore their warnings, as most are kind but also deadly when pressed."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Lamia names",
+						"entries": [
+							"Lamia often adopt names used by the races with whom they interact, or use names popular among themselves.",
+							{
+								"entries": [
+									{
+										"name": "Male Names",
+										"entries": [
+											"Akris, Athanos, Cyrias, Daziss, Ischyros, Kress, Mariss, Oshphim, Salethar, Sarek, Selanu, Sellak, Seth, Shanastar, Shiraal, Silass, Thaxos, Tithian, Vaselous, Xamres, Xutan, Zihu, Zorai, Zureth"
+										],
+										"type": "entries"
+									},
+									{
+										"name": "Female Names",
+										"entries": [
+											" Ashissa, Bleu, Daïsha, Deryssa, Ena, Gina, Ibisis, Iormu, Ivaniss, Lalassu, Lucine, Media, Miia, Nassirah, Nessa, Nysia, Pyrrha, Saaveed, Sadai, Salah, Saphentite, Sapphee, Shallia, Shiana, Suehra, Thassia, Veeshis, Ydriss, Zivlil"
+										],
+										"type": "entries"
+									}
+								],
+								"type": "entries"
+							}
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
+						],
+						"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Viper with Rattler Tail",
+			"source": "LEGDRAG",
+			"raceName": "Lamia",
+			"raceSource": "LEGDRAG",
+			"page": 27,
+			"ability": [
+				{
+					"dex": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						{
+							"name": "Viper with Rattler Tail",
+							"entries": [],
+							"type": "entries"
+						}
+					]
+				},
+				{
+					"name": "Ability Score Increase",
+					"type": "entries",
+					"entries": [
+						"Your Dexterity score increases by 1."
+					]
+				},
+				{
+					"name": "Intimidating",
+					"entries": [
+						"You gain proficiency in the Intimidation skill.",
+						"{@b Note:} If you are a viper lamia with a rattler at the end of your tail, you gain proficiency in the Intimidation skill instead."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Venom",
+					"entries": [
+						"You have venom glands in your mouth that inject poison during a bite attack. Once on each of your turns when you hit a creature with your bite attack, the target must make a Constitution Saving throw (DC 8 + your proficiency bonus + your Constitution modifier). On a failure, the target takes 1d6 {@damage poison} damage and is poisoned until the end of your next turn. This {@damage poison} damage increases to 1d8 at 5th level, 1d10 at 11th level, and 1d12 at 17th level. Your bite also counts as a finesse weapon."
+					],
+					"type": "entries"
+				}
+			],
+			"traitTags": [
+				"Natural Weapon"
+			],
+			"skillProficiencies":[
+				{
+					"intimidation": true
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"Lamia? Yeah, they're a unique race alright. Think of them as mermaids but then with snakes. Despite their appearance they are often quite comely, but also a little bit clingy."
+						],
+						"by": "Alan Stuart, human fiancé of Mary Hunt the lamia"
+					},
+					{
+						"name": "Lamia",
+						"entries": [
+							"The lamia are a race of half serpent half human snake people, known for their kind personalities and loyalty. They are descendants of yuan-ti who intermingled with lamia nobles, yet strangely do not share the same tendency towards cruelty and control as their parent races do. Instead they form a symbiotic bond with humans (or other humanoids), whom they often assist and form relationships with. This has earned them the mocking name \"Softblood\" by the yuan-ti. They named themselves after their lamia noble ancestors, but aside from the name they wish to distance themselves from lamia nobles as much as they can, and the feeling is mutual.",
+							"They cannot disguise themselves like yuan-ti can, but their savory behavior and close bonds with human settlements often mean they don't have to. Despite their general warm demeanor, they can be fearsome foes, as their snake like body and sharp fangs can be used as deadly natural weapons. The majority of lamia are female, and because of that many form relationships with human males. The children of a union between a lamia and a human (or other humanoid) are usually born as full lamia, with an average chance of 25% for the child to be born as the race of the other parent.",
+							"They mate for life, and tend to cling to their partners, but are almost always pleasant and considerate, and form strong bonds quickly."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Lamia (Viper with Rattler Tail)",
+						"entries": [
+							"Viper lamia are feared for their deadly venom, and admired for their graceful movements. While all lamia have extendable fangs, viper lamia can use them to inject venom into their foes. Most viper lamia are subtle, but some have a rattler at the end of their long tail which they can use to intimidate their foes. Few are foolish enough to ignore their warnings, as most are kind but also deadly when pressed."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Lamia names",
+						"entries": [
+							"Lamia often adopt names used by the races with whom they interact, or use names popular among themselves.",
+							{
+								"entries": [
+									{
+										"name": "Male Names",
+										"entries": [
+											"Akris, Athanos, Cyrias, Daziss, Ischyros, Kress, Mariss, Oshphim, Salethar, Sarek, Selanu, Sellak, Seth, Shanastar, Shiraal, Silass, Thaxos, Tithian, Vaselous, Xamres, Xutan, Zihu, Zorai, Zureth"
+										],
+										"type": "entries"
+									},
+									{
+										"name": "Female Names",
+										"entries": [
+											" Ashissa, Bleu, Daïsha, Deryssa, Ena, Gina, Ibisis, Iormu, Ivaniss, Lalassu, Lucine, Media, Miia, Nassirah, Nessa, Nysia, Pyrrha, Saaveed, Sadai, Salah, Saphentite, Sapphee, Shallia, Shiana, Suehra, Thassia, Veeshis, Ydriss, Zivlil"
+										],
+										"type": "entries"
+									}
+								],
+								"type": "entries"
+							}
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
+						],
+						"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
 						}
 					}
 				]
