@@ -24,6 +24,30 @@
 		"dateLastModified": 1703373316,
 		"_dateLastModifiedHash": "ee61c78984"
 	},
+	"variantrule": [
+		{
+			"name": "VarianT Poison Harvesting",
+			"source": "LEGDRAG",
+			"page": 30,
+			"entries": [
+				"You can use the following variant rule for harvesting poison from dead poisonous creatures, instead of the one listed in the Dungeon Master's Guide (page 258):",
+				{
+					"type": "list",
+					"style": "list-no-bullets",
+					"items": [
+						"{@b Poison Extraction}: When poisonous creatures are killed, the player can attempt to harvest all their poison over the course of 10 minutes, followed by making an Intelligence (Nature) check using the poisoner's kit (proficiency with the poisoner’s kit applies to this check if the player doesn’t have proficiency in Nature) against the poison's save DC, for each type of creature. You automatically succeed if the poison doesn't have a DC. On a success, the player extracts 1d4 doses of poison from all the dead creatures combined for that type of creature. On a failure, all the poison is wasted, and those who are not proficient with the poisoner's kit suffer the effects of the poison. Players can use one dose of harvested Injury type poison to coat one slashing or piercing weapon or one piece of ammunition. Once applied, the poison retains potency for 1 minute or until you hit with the weapon or ammunition (this works different than basic poison which lasts the full 1 minute duration). Applying the poison takes an action."
+					]
+				},
+				{
+					"name": "Credits",
+					"entries": [
+						"Reference {@link Legacy of Dragon|https://www.kickstarter.com/projects/nielsdejong/legacy-of-the-dragon-a-dragon-themed-supplement-for-5e}. Please credit if you repost elsewhere."
+					],
+					"type": "entries"
+				}
+			]
+		}
+	],
 	"monster": [
 		{
 			"name": "Giant Weasel Domesticated",
@@ -5282,6 +5306,60 @@
 				}
 				
 			]
+		},
+		{
+			"name": "Reptilian Regeneration",
+			"source": "LEGDRAG",
+			"featureType": [
+				"OPTFEAT:LEGDRAG"
+			],
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "Lizardfolk Revised"
+						},
+						{
+							"name": "Lizardfolk"
+						}
+					]
+				}
+			],
+			"entries": [
+				"You live a dangerous livestyle, and your body had to adapt to survive, allowing you to heal grievous wounds.",
+				{
+					"type": "list",
+					"items": [
+						"Increase your Constitution score by 1, to a max. of 20.",
+						"On a short rest, if you choose to expend Hit Dice, you regain an additional amount of hit points equal to your proficiency bonus per Hit Die rolled. You regrow severed body parts (fingers, legs, tail, and so on) within 1d4 days.",
+						"You can release a surge of regeneration in your body as a bonus action. You regain a number of hit points equal to 2d6 + half your level (rounded down). You can't regain hit points this way again until you finish a short or long rest."				
+					]
+				}
+			]
+		},
+		{
+			"name": "Poisoner (Revised)",
+			"source": "LEGDRAG",
+			"featureType": [
+				"OPTFEAT:LEGDRAG"
+			],
+			"entries": [
+				"You can prepare and deliver deadly poisons.",
+				{
+					"type": "list",
+					"items": [
+						"You gain proficiency with the poisoner's kit. When you try to harvest a dose of poison from a poisonous creature, you have advantage on the required ability check.",
+						"When you make a damage roll, you ignore resistance to poison damage. In addition, when you create a poison, you can specify a creature type. That poison ignores the immunity to poison damage and the immunity to the poisoned condition (if any) of creatures of that type.",
+						"Once per turn you can apply poison to a weapon or piece of ammunition as part of an attack you make with that weapon or piece of ammunition, instead of an action.",
+						"As part of a long rest, or one workday, you can create a number of doses of potent poison equal to your proficiency bonus, or double if you spend 30 gp worth of extra materials. It takes an action to coat one slashing or piercing weapon, or one piece of ammunition, with a dose. Once applied, the poison retains potency for 1 minute or until you hit with the weapon or ammunition. Those hit must make a Constitution saving throw (DC 10 + your proficiency bonus) or take 2d8 poison damage and become poisoned until the end of your next turn."
+					]
+				}
+			],
+			"skillProficiencies": [
+				{
+					"poisoner's kit": true
+				}
+			]
 		}
 	],
 	"race": [
@@ -8137,7 +8215,210 @@
 									{
 										"name": "Female Names",
 										"entries": [
-											" Ashissa, Bleu, Daïsha, Deryssa, Ena, Gina, Ibisis, Iormu, Ivaniss, Lalassu, Lucine, Media, Miia, Nassirah, Nessa, Nysia, Pyrrha, Saaveed, Sadai, Salah, Saphentite, Sapphee, Shallia, Shiana, Suehra, Thassia, Veeshis, Ydriss, Zivlil"
+											"Ashissa, Bleu, Daïsha, Deryssa, Ena, Gina, Ibisis, Iormu, Ivaniss, Lalassu, Lucine, Media, Miia, Nassirah, Nessa, Nysia, Pyrrha, Saaveed, Sadai, Salah, Saphentite, Sapphee, Shallia, Shiana, Suehra, Thassia, Veeshis, Ydriss, Zivlil"
+										],
+										"type": "entries"
+									}
+								],
+								"type": "entries"
+							}
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
+						],
+						"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Lizardfolk Revised",
+			"source": "LEGDRAG",
+			"page": 28,
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"ability": [
+				{
+					"con": 2
+				}
+			],
+			"entries": [
+				"Lizardfolk have many innate abilities derived from centuries spent warring among each other and defending themselves from the threats present in the jungles and swamps where they make their home.",
+				{
+					"name": "Ability Score Increase",
+					"type": "entries",
+					"entries": [
+						"Your Constitution score increases by 2."
+					]
+				},
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Lizardfolk reach maturity around age 12 and rarely live longer than 60 years. However, some sharptooth tribes are known to live to be around 80."
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"Most lizardfolk are neutral. They see the world as a place of predators and prey, where life and death are natural processes. They wish only to survive, and prefer to leave other creatures to their own devices. The more civilized sharptooth lizardfolk follow a code of honor, and tend to be neutral good."
+					]
+				},
+				{
+					"name": "Size",
+					"type": "entries",
+					"entries": [
+						"Lizardfolk vary in size, with poison dusk standing between 4 and 5 feet tall on average, blackscale standing around 8 feet tall on average, and sharptooth standing between 6 and 7 feet tall on average. Your size is Medium."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Speed",
+					"entries": [
+						"Your base walking speed is 30 feet, and you have a swim speed of 30 feet. "
+					]
+				},
+				{
+					"name": "Natural Weapons",
+					"entries": [
+						"Your fanged maw is a natural weapon, which you can use to make unarmed strikes. If you hit with your bite, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike. You can also use your claws, which follow the same rules as your bite, but deal 1d6 + your Strength modifier slashing damage instead."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Natural Armor",
+					"type": "entries",
+					"entries": [
+						"You have tough, scaly skin. You can calculate your AC as 13 + your Dexterity modifier. A shield's benefits apply as normal while you use your natural armor."
+					]
+				},
+				{
+					"name": "Cunning Artisan",
+					"entries": [
+						"As part of a short rest, you can harvest bone and hide from a slain beast, construct, dragon, monstrosity, or plant creature of size Small or larger to create one of the following items: a shield, a club, a greatclub (if the creature is Large or larger), a javelin, or 1d4 pieces of ammunition. You have proficiency with simple weapons."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Hold Breath",
+					"entries": [
+						"You can hold your breath for up to 15 minutes at a time. "
+					],
+					"type": "entries"
+				},			
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Draconic.",
+						"Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants. "
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Subraces",
+					"entries": [
+						"Choose one of the subraces below. Your choice will determine additional benefits."
+					],
+					"type": "entries"
+				}
+			],
+			"traitTags": [
+				"Natural Weapon",
+				"Natural Armor"
+			],
+			"weaponProficiencies": [
+				{
+					"simple": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"draconic": true
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"If you're considering taking a scaled one along on an adventure, remember this important fact. The strange, inhuman glint in its eyes as it looks you over is the same look you might give a freshly grilled steak."
+						],
+						"by": "Tordek, dwarf fighter and adventurer"
+					},
+					{
+						"name": "Lizardfolk Revised",
+						"entries": [
+							"Despite not being a member of the draconic races, the lizardfolk echo many similarities, and some even worship and serve dragons for their shared reptilian attributes. Lizardfolk are covered from head to tail in thick scales of various shades of color, and their fanged maw and sharp claws make them dangerous foes, even when unarmed. They are hardy survivors, whose lack of technological advancement is compensated by their ferocity in battle and ingenuity.",
+							"Most lizardfolk are pragmatic, and can come across as cold. This is due to their alien minds, which are heavily focused on survival, and leave little room for emotions. Concepts such as honor are lost on most of them, as they strive to survive against all odds.",
+							"An exception to this is a variant of sharptooth lizardfolk, which scholars dub \"high lizardfolk\". The tribes of these more civilized lizardfolk are different in that they not only understand common emotions but also feel them, and they are known for their strong sense of honor. This concept is alien to most lizardfolk, but it also allows them to cooperate with other intelligent races far more easily."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "An adaptive race",
+						"entries": [
+							"Lizardfolk generally focus on survival above all, without any unnecessary sentiments. Their mindset might sometimes seem cruel, but it helps them survive in a hostile environment. The swamps and jungles they inhabit are filled with a staggering variety of threats.",
+							"{@b Blackscale lizardfolk} are extraordinarily aggressive. They are the only lizardfolk with the ability to see in the dark, which scholars have speculated is due to black dragon blood running in their veins. This theory is further supported by their natural resistance against acid, and dark-hued scales.",
+							"{@b Poison dusk lizardfolk} are the smallest of the lizardfolk, but are masters of camouflage and poison. Using them both to deadly effect. They know how to create an oily substance which reacts to the natural chemicals within their chameleon skin. When applied to their clothes or armor, it causes these to change color as well when they use their chameleon skin to camouflage. However, like most lizardfolk, they usually fight without such trappings because their own natural hides provide sufficient protection.",
+							"{@b Sharptooth lizardfolk} are the most numerous of the lizardfolk, and are usually the most ingenious and focused on survival. Some call them cowardly or opportunistic, but they simply assess situations based on what gives them the best chance to survive.",
+							"The more civilized sharptooth lizardfolk either live near bodies of water and swamps, or roam the plains, riding large prehistoric beasts, such as triceratops or styracosaurus, into battle.",
+							"These sharptooth lizardfolk usually don't keep livestock, as they prefer to hunt or fish. They usually wear headgear with feathers of birds, and they are a little more advanced as they live in tipi instead of homes made out of mud. They are also among the most successful of lizardfolk, as many of their tribes have formed strong alliances with the other races over the years. Unlike most lizardfolk, these sharptooth lizardfolk venerate their ancestors, and follow a code of honor. They refer to their ancestors as dragons, however they are not descendants of dragons, which is evident by the fact that kobolds don't worship them in any shape or form.",
+							"The word dragon is a misunderstanding, as in their language (which is a slightly different version of draconic) dragon refers to large and powerful reptilian creatures. What they are referring to are ancient and terrifying lizards commonly known as dinosaurs."							
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Relationship with other races",
+						"entries": [
+							"Most lizardfolk are pragmatic, and are seen as cold. There is a saying that when a lizardfolk looks at you funny, that he is likely sizing you up as a potential meal. And while most lizardfolk have a strong sense of cooperation, they will often not hesitate to prevent your body from going to waste should you die.",
+							"A lizardfolk who lives among other humanoids can, over time, learn to respect other creatures' emotions. The lizardfolk doesn't share those feelings, but instead assesses them in the same clinical manner. Yes, the fallen dwarf might be most useful as a meal, but hacking the body into steaks provokes aggression in the other humanoids and makes them less helpful in battle.",
+							"At their core, lizardfolk view other humanoids with an indifference verging on pity. Born into the world lacking stout scales and sharp teeth, it's a wonder they have managed to survive for so long. The typical human would barely make it through a day in the swamps.",
+							"Still, if other creatures prove themselves useful to the lizardfolk, those creatures can trigger a protective response made all the stronger by their apparent weakness. The lizardfolk assess such beings as hatchlings, young ones incapable of protecting themselves but who might prove useful in the future if they receive care.",
+							"The more civilized sharptooth lizardfolk are an exception to this rule, as they follow codes of honor and can genuinely understand and feel emotions. These are also the lizardfolk who are most likely to trade with the other races, and go on adventures."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Lizards and Dragons",
+						"entries": [
+							"Although the lizardfolk are not a draconic race, their fates are often intertwined with that of dragons. Black and green dragons often share the same habitats, and are known to employ lizardfolk as minions after sufficient intimidation.",
+							"On the other hand, lizardfolk face far less prejudice from the draconic races, such as dragonborn and half dragons. They respect dragonborn the most as they feel that their natural weapons make them the most self-sufficient, even though they find it odd that the scales of most dragonborn are soft. The Steelscale dragonborn are the exception, as their scales are equally hardened across their body, as opposed to the lizardfolk who have areas on their body that are thicker than others.",
+							"Because of this, Steelscale dragonborn may benefit from their scales as an extra layer of defense (unless their scales are completely supplanted by heavier armor), while the lizardfolk's hide is a mere substitute for real armor. However this is adequate for most lizardfolk, as they are able to do just fine by wearing little in very hostile environments.",
+							"Half dragons are greatly respected for their power and draconic lineage, while kobolds are seen as either an annoyance or a meal.",
+							"The more civilized lizardolk however will generally extend their respect to kobolds as well, provided they pose no threat to their tribe."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Lizardfolk Revised names",
+						"entries": [
+							"Lizardfolk take their names from the Draconic language. They use simple descriptive terms granted by the tribe based on an individual's notable deeds or actions. Lizardfolk make no distinction between male and female in their naming conventions. Each example name includes its translation in parenthesis.",
+							{
+								"entries": [
+									{
+										"name": "Lizardfolk Names",
+										"entries": [
+											"Achuak (green), Aryte (war), Baeshra (animal), Darastrix (dragon), Garurt (axe), Irhtos (secret), Jhank (hammer), Kepesk (storm), Kethend (gem), Korth (danger), Kosj (small), Kothar (demon), Litrix (armor), Mirik (song), Othokent (smart), Sauriv (eye), Throden (many), Thurkear (night), Usk (iron), Valignat (burn), Vargach (battle), Verthica (mountain), Vutha (black), Vyth (steel)"
 										],
 										"type": "entries"
 									}
@@ -14485,7 +14766,7 @@
 									{
 										"name": "Female Names",
 										"entries": [
-											" Ashissa, Bleu, Daïsha, Deryssa, Ena, Gina, Ibisis, Iormu, Ivaniss, Lalassu, Lucine, Media, Miia, Nassirah, Nessa, Nysia, Pyrrha, Saaveed, Sadai, Salah, Saphentite, Sapphee, Shallia, Shiana, Suehra, Thassia, Veeshis, Ydriss, Zivlil"
+											"Ashissa, Bleu, Daïsha, Deryssa, Ena, Gina, Ibisis, Iormu, Ivaniss, Lalassu, Lucine, Media, Miia, Nassirah, Nessa, Nysia, Pyrrha, Saaveed, Sadai, Salah, Saphentite, Sapphee, Shallia, Shiana, Suehra, Thassia, Veeshis, Ydriss, Zivlil"
 										],
 										"type": "entries"
 									}
@@ -14569,6 +14850,11 @@
 			"additionalSpells": [
 				{
 					"innate": {
+						"_": {
+							"will": [
+								"beast bond|xge"
+							]
+						},
 						"3": {
 							"daily": {
 								"1": [
@@ -14583,11 +14869,6 @@
 								]
 							}
 						}
-					},
-					"will": {
-						"-":[
-							"beast bond|xge"
-						]
 					},
 					"known": {
 						"1": [
@@ -14638,7 +14919,7 @@
 									{
 										"name": "Female Names",
 										"entries": [
-											" Ashissa, Bleu, Daïsha, Deryssa, Ena, Gina, Ibisis, Iormu, Ivaniss, Lalassu, Lucine, Media, Miia, Nassirah, Nessa, Nysia, Pyrrha, Saaveed, Sadai, Salah, Saphentite, Sapphee, Shallia, Shiana, Suehra, Thassia, Veeshis, Ydriss, Zivlil"
+											"Ashissa, Bleu, Daïsha, Deryssa, Ena, Gina, Ibisis, Iormu, Ivaniss, Lalassu, Lucine, Media, Miia, Nassirah, Nessa, Nysia, Pyrrha, Saaveed, Sadai, Salah, Saphentite, Sapphee, Shallia, Shiana, Suehra, Thassia, Veeshis, Ydriss, Zivlil"
 										],
 										"type": "entries"
 									}
@@ -14761,7 +15042,7 @@
 									{
 										"name": "Female Names",
 										"entries": [
-											" Ashissa, Bleu, Daïsha, Deryssa, Ena, Gina, Ibisis, Iormu, Ivaniss, Lalassu, Lucine, Media, Miia, Nassirah, Nessa, Nysia, Pyrrha, Saaveed, Sadai, Salah, Saphentite, Sapphee, Shallia, Shiana, Suehra, Thassia, Veeshis, Ydriss, Zivlil"
+											"Ashissa, Bleu, Daïsha, Deryssa, Ena, Gina, Ibisis, Iormu, Ivaniss, Lalassu, Lucine, Media, Miia, Nassirah, Nessa, Nysia, Pyrrha, Saaveed, Sadai, Salah, Saphentite, Sapphee, Shallia, Shiana, Suehra, Thassia, Veeshis, Ydriss, Zivlil"
 										],
 										"type": "entries"
 									}
@@ -14884,7 +15165,505 @@
 									{
 										"name": "Female Names",
 										"entries": [
-											" Ashissa, Bleu, Daïsha, Deryssa, Ena, Gina, Ibisis, Iormu, Ivaniss, Lalassu, Lucine, Media, Miia, Nassirah, Nessa, Nysia, Pyrrha, Saaveed, Sadai, Salah, Saphentite, Sapphee, Shallia, Shiana, Suehra, Thassia, Veeshis, Ydriss, Zivlil"
+											"Ashissa, Bleu, Daïsha, Deryssa, Ena, Gina, Ibisis, Iormu, Ivaniss, Lalassu, Lucine, Media, Miia, Nassirah, Nessa, Nysia, Pyrrha, Saaveed, Sadai, Salah, Saphentite, Sapphee, Shallia, Shiana, Suehra, Thassia, Veeshis, Ydriss, Zivlil"
+										],
+										"type": "entries"
+									}
+								],
+								"type": "entries"
+							}
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
+						],
+						"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Sharptooth",
+			"source": "LEGDRAG",
+			"raceName": "Lizardfolk Revised",
+			"raceSource": "LEGDRAG",
+			"page": 29,
+			"ability": [
+				{
+					"wis": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						{
+							"name": "Sharptooth",
+							"entries": [],
+							"type": "entries"
+						}
+					]
+				},
+				{
+					"name": "Ability Score Increase",
+					"type": "entries",
+					"entries": [
+						"Your Wisdom score increases by 1."
+					]
+				},
+				{
+					"name": "Hungry Jaws",
+					"entries": [
+						"In battle, you can throw yourself into a vicious feeding frenzy. As a bonus action, you can make a special attack with your bite. If the attack hits, it deals an additional amount of piercing damage equal to your Constitution modifier (minimum of 1), and you gain temporary hit points equal to your Constitution modifier (minimum of 1) + your level, and you can't make this special attack again until you finish a short or long rest.",
+						"In addition, while you have less than half your maximum hit points remaining, you have advantage on attack rolls you make with your bite."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Hunter's Lore",
+					"entries": [
+						"You gain proficiency with two of the following skills of your choice: Animal Handling, Nature, Perception, Stealth and Survival."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Robust Survivor",
+					"entries": [
+						"You have resistance to {@damage poison} damage, and advantage on saving throws against being poisoned."
+					],
+					"type": "entries"
+				}
+			],
+			"traitTags": [
+				"Natural Weapon",
+				"Natural Armor"
+			],
+			"resist":[
+				"poison"
+			],
+			"skillProficiencies":[
+				{
+					"choose": {
+						"from": [
+							"animal Handling",
+							"nature", 
+							"perception",
+							"stealth", 
+							"survival"
+						],
+						"count": 1
+					}
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"If you're considering taking a scaled one along on an adventure, remember this important fact. The strange, inhuman glint in its eyes as it looks you over is the same look you might give a freshly grilled steak."
+						],
+						"by": "Tordek, dwarf fighter and adventurer"
+					},
+					{
+						"name": "Lizardfolk Revised",
+						"entries": [
+							"Despite not being a member of the draconic races, the lizardfolk echo many similarities, and some even worship and serve dragons for their shared reptilian attributes. Lizardfolk are covered from head to tail in thick scales of various shades of color, and their fanged maw and sharp claws make them dangerous foes, even when unarmed. They are hardy survivors, whose lack of technological advancement is compensated by their ferocity in battle and ingenuity.",
+							"Most lizardfolk are pragmatic, and can come across as cold. This is due to their alien minds, which are heavily focused on survival, and leave little room for emotions. Concepts such as honor are lost on most of them, as they strive to survive against all odds.",
+							"An exception to this is a variant of sharptooth lizardfolk, which scholars dub \"high lizardfolk\". The tribes of these more civilized lizardfolk are different in that they not only understand common emotions but also feel them, and they are known for their strong sense of honor. This concept is alien to most lizardfolk, but it also allows them to cooperate with other intelligent races far more easily."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Sharptooth",
+						"entries": [
+							"The sharptooth are the most numerous of the lizardfolk, and usually live in and around bodies of water. They either actively hunt or float just below the water's surface, waiting for an unsuspecting animal to drink or swim by. Their bodies have adapted to survive in even the most fetid of swamps, which grants them a natural resistance to poison. The more civilized ones tend to roam more, forming tribes that hunt around bodies of water as well as on the plains."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "An adaptive race",
+						"entries": [
+							"Lizardfolk generally focus on survival above all, without any unnecessary sentiments. Their mindset might sometimes seem cruel, but it helps them survive in a hostile environment. The swamps and jungles they inhabit are filled with a staggering variety of threats.",
+							"{@b Blackscale lizardfolk} are extraordinarily aggressive. They are the only lizardfolk with the ability to see in the dark, which scholars have speculated is due to black dragon blood running in their veins. This theory is further supported by their natural resistance against acid, and dark-hued scales.",
+							"{@b Poison dusk lizardfolk} are the smallest of the lizardfolk, but are masters of camouflage and poison. Using them both to deadly effect. They know how to create an oily substance which reacts to the natural chemicals within their chameleon skin. When applied to their clothes or armor, it causes these to change color as well when they use their chameleon skin to camouflage. However, like most lizardfolk, they usually fight without such trappings because their own natural hides provide sufficient protection.",
+							"{@b Sharptooth lizardfolk} are the most numerous of the lizardfolk, and are usually the most ingenious and focused on survival. Some call them cowardly or opportunistic, but they simply assess situations based on what gives them the best chance to survive.",
+							"The more civilized sharptooth lizardfolk either live near bodies of water and swamps, or roam the plains, riding large prehistoric beasts, such as triceratops or styracosaurus, into battle.",
+							"These sharptooth lizardfolk usually don't keep livestock, as they prefer to hunt or fish. They usually wear headgear with feathers of birds, and they are a little more advanced as they live in tipi instead of homes made out of mud. They are also among the most successful of lizardfolk, as many of their tribes have formed strong alliances with the other races over the years. Unlike most lizardfolk, these sharptooth lizardfolk venerate their ancestors, and follow a code of honor. They refer to their ancestors as dragons, however they are not descendants of dragons, which is evident by the fact that kobolds don't worship them in any shape or form.",
+							"The word dragon is a misunderstanding, as in their language (which is a slightly different version of draconic) dragon refers to large and powerful reptilian creatures. What they are referring to are ancient and terrifying lizards commonly known as dinosaurs."							
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Relationship with other races",
+						"entries": [
+							"Most lizardfolk are pragmatic, and are seen as cold. There is a saying that when a lizardfolk looks at you funny, that he is likely sizing you up as a potential meal. And while most lizardfolk have a strong sense of cooperation, they will often not hesitate to prevent your body from going to waste should you die.",
+							"A lizardfolk who lives among other humanoids can, over time, learn to respect other creatures' emotions. The lizardfolk doesn't share those feelings, but instead assesses them in the same clinical manner. Yes, the fallen dwarf might be most useful as a meal, but hacking the body into steaks provokes aggression in the other humanoids and makes them less helpful in battle.",
+							"At their core, lizardfolk view other humanoids with an indifference verging on pity. Born into the world lacking stout scales and sharp teeth, it's a wonder they have managed to survive for so long. The typical human would barely make it through a day in the swamps.",
+							"Still, if other creatures prove themselves useful to the lizardfolk, those creatures can trigger a protective response made all the stronger by their apparent weakness. The lizardfolk assess such beings as hatchlings, young ones incapable of protecting themselves but who might prove useful in the future if they receive care.",
+							"The more civilized sharptooth lizardfolk are an exception to this rule, as they follow codes of honor and can genuinely understand and feel emotions. These are also the lizardfolk who are most likely to trade with the other races, and go on adventures."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Lizards and Dragons",
+						"entries": [
+							"Although the lizardfolk are not a draconic race, their fates are often intertwined with that of dragons. Black and green dragons often share the same habitats, and are known to employ lizardfolk as minions after sufficient intimidation.",
+							"On the other hand, lizardfolk face far less prejudice from the draconic races, such as dragonborn and half dragons. They respect dragonborn the most as they feel that their natural weapons make them the most self-sufficient, even though they find it odd that the scales of most dragonborn are soft. The Steelscale dragonborn are the exception, as their scales are equally hardened across their body, as opposed to the lizardfolk who have areas on their body that are thicker than others.",
+							"Because of this, Steelscale dragonborn may benefit from their scales as an extra layer of defense (unless their scales are completely supplanted by heavier armor), while the lizardfolk's hide is a mere substitute for real armor. However this is adequate for most lizardfolk, as they are able to do just fine by wearing little in very hostile environments.",
+							"Half dragons are greatly respected for their power and draconic lineage, while kobolds are seen as either an annoyance or a meal.",
+							"The more civilized lizardolk however will generally extend their respect to kobolds as well, provided they pose no threat to their tribe."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Lizardfolk Revised names",
+						"entries": [
+							"Lizardfolk take their names from the Draconic language. They use simple descriptive terms granted by the tribe based on an individual's notable deeds or actions. Lizardfolk make no distinction between male and female in their naming conventions. Each example name includes its translation in parenthesis.",
+							{
+								"entries": [
+									{
+										"name": "Lizardfolk Names",
+										"entries": [
+											" Achuak (green), Aryte (war), Baeshra (animal), Darastrix (dragon), Garurt (axe), Irhtos (secret), Jhank (hammer), Kepesk (storm), Kethend (gem), Korth (danger), Kosj (small), Kothar (demon), Litrix (armor), Mirik (song), Othokent (smart), Sauriv (eye), Throden (many), Thurkear (night), Usk (iron), Valignat (burn), Vargach (battle), Verthica (mountain), Vutha (black), Vyth (steel)"
+										],
+										"type": "entries"
+									}
+								],
+								"type": "entries"
+							}
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
+						],
+						"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Poison Dusk",
+			"source": "LEGDRAG",
+			"raceName": "Lizardfolk Revised",
+			"raceSource": "LEGDRAG",
+			"page": 29,
+			"ability": [
+				{
+					"dex": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						{
+							"name": "Poison Dusk",
+							"entries": [],
+							"type": "entries"
+						}
+					]
+				},
+				{
+					"name": "Ability Score Increase",
+					"type": "entries",
+					"entries": [
+						"Your Dexterity score increases by 1. "
+					]
+				},
+				{
+					"name": "Chameleon Skin",
+					"entries": [
+						"You can try to hide even when you are unobscured by pressing yourself up against a solid surface next to you, such as a tree or wall, that is at least as tall and wide as you are. You can also hide by pressing yourself against the ground, provided you are in the prone position. While hiding this way you have advantage on Dexterity (Stealth) checks, provided you are out of combat and you remain there without moving or taking actions."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Racial Poison",
+					"entries": [
+						"As a bonus action, you can activate your poisonous glands. These glands are inside your mouth, at the base of your claws, and outside on your skin, allowing you to apply this poison to your natural weapons and other weapons. For the next minute, you can apply this poison to any piercing or slashing weapon as part of an attack you make with that weapon. If the weapon is a ranged weapon, you can apply the poison to ammunition used by the weapon. You are immune to poison created from your own glands this way. A creature hit by the poisoned weapon or ammunition takes an additional 1d4 poison damage. This damage increases to 1d6 when you reach 11th level. You can activate your poisonous glands this way a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest. You can apply the poison to all your weapon attacks for the duration, but afterwards the poison loses its potency."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Predator",
+					"entries": [
+						"You gain proficiency in the Survival skill. In addition, you have advantage on Wisdom (Survival) checks to follow tracks and hunt wild game."
+					],
+					"type": "entries"
+				}
+			],
+			"traitTags": [
+				"Natural Weapon",
+				"Natural Armor"
+			],
+			"immune":[
+				"poison"
+			],
+			"skillProficiencies":[
+				{
+					"survival": true
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"If you're considering taking a scaled one along on an adventure, remember this important fact. The strange, inhuman glint in its eyes as it looks you over is the same look you might give a freshly grilled steak."
+						],
+						"by": "Tordek, dwarf fighter and adventurer"
+					},
+					{
+						"name": "Lizardfolk Revised",
+						"entries": [
+							"Despite not being a member of the draconic races, the lizardfolk echo many similarities, and some even worship and serve dragons for their shared reptilian attributes. Lizardfolk are covered from head to tail in thick scales of various shades of color, and their fanged maw and sharp claws make them dangerous foes, even when unarmed. They are hardy survivors, whose lack of technological advancement is compensated by their ferocity in battle and ingenuity.",
+							"Most lizardfolk are pragmatic, and can come across as cold. This is due to their alien minds, which are heavily focused on survival, and leave little room for emotions. Concepts such as honor are lost on most of them, as they strive to survive against all odds.",
+							"An exception to this is a variant of sharptooth lizardfolk, which scholars dub \"high lizardfolk\". The tribes of these more civilized lizardfolk are different in that they not only understand common emotions but also feel them, and they are known for their strong sense of honor. This concept is alien to most lizardfolk, but it also allows them to cooperate with other intelligent races far more easily."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Poison Dusk",
+						"entries": [
+							"The poison dusk are the smallest of the lizardfolk, and are renowned for their chameleon like skin and deadly poisons.",
+							"They have poisonous glands that make them less desirable to predators, from which they have learned to distill poison. They value stealth and quick strikes over open battle, and are experts at ambushing. They enjoy the thrill of pursuit, and hunt down their quarry relentlessly. Their determination never waivers, once they commit to something they will see it through. They live in secluded places and guard the secret location of their nests with their lives. They do not discriminate, all trespassers to their lands die the same."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "An adaptive race",
+						"entries": [
+							"Lizardfolk generally focus on survival above all, without any unnecessary sentiments. Their mindset might sometimes seem cruel, but it helps them survive in a hostile environment. The swamps and jungles they inhabit are filled with a staggering variety of threats.",
+							"{@b Blackscale lizardfolk} are extraordinarily aggressive. They are the only lizardfolk with the ability to see in the dark, which scholars have speculated is due to black dragon blood running in their veins. This theory is further supported by their natural resistance against acid, and dark-hued scales.",
+							"{@b Poison dusk lizardfolk} are the smallest of the lizardfolk, but are masters of camouflage and poison. Using them both to deadly effect. They know how to create an oily substance which reacts to the natural chemicals within their chameleon skin. When applied to their clothes or armor, it causes these to change color as well when they use their chameleon skin to camouflage. However, like most lizardfolk, they usually fight without such trappings because their own natural hides provide sufficient protection.",
+							"{@b Sharptooth lizardfolk} are the most numerous of the lizardfolk, and are usually the most ingenious and focused on survival. Some call them cowardly or opportunistic, but they simply assess situations based on what gives them the best chance to survive.",
+							"The more civilized sharptooth lizardfolk either live near bodies of water and swamps, or roam the plains, riding large prehistoric beasts, such as triceratops or styracosaurus, into battle.",
+							"These sharptooth lizardfolk usually don't keep livestock, as they prefer to hunt or fish. They usually wear headgear with feathers of birds, and they are a little more advanced as they live in tipi instead of homes made out of mud. They are also among the most successful of lizardfolk, as many of their tribes have formed strong alliances with the other races over the years. Unlike most lizardfolk, these sharptooth lizardfolk venerate their ancestors, and follow a code of honor. They refer to their ancestors as dragons, however they are not descendants of dragons, which is evident by the fact that kobolds don't worship them in any shape or form.",
+							"The word dragon is a misunderstanding, as in their language (which is a slightly different version of draconic) dragon refers to large and powerful reptilian creatures. What they are referring to are ancient and terrifying lizards commonly known as dinosaurs."							
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Relationship with other races",
+						"entries": [
+							"Most lizardfolk are pragmatic, and are seen as cold. There is a saying that when a lizardfolk looks at you funny, that he is likely sizing you up as a potential meal. And while most lizardfolk have a strong sense of cooperation, they will often not hesitate to prevent your body from going to waste should you die.",
+							"A lizardfolk who lives among other humanoids can, over time, learn to respect other creatures' emotions. The lizardfolk doesn't share those feelings, but instead assesses them in the same clinical manner. Yes, the fallen dwarf might be most useful as a meal, but hacking the body into steaks provokes aggression in the other humanoids and makes them less helpful in battle.",
+							"At their core, lizardfolk view other humanoids with an indifference verging on pity. Born into the world lacking stout scales and sharp teeth, it's a wonder they have managed to survive for so long. The typical human would barely make it through a day in the swamps.",
+							"Still, if other creatures prove themselves useful to the lizardfolk, those creatures can trigger a protective response made all the stronger by their apparent weakness. The lizardfolk assess such beings as hatchlings, young ones incapable of protecting themselves but who might prove useful in the future if they receive care.",
+							"The more civilized sharptooth lizardfolk are an exception to this rule, as they follow codes of honor and can genuinely understand and feel emotions. These are also the lizardfolk who are most likely to trade with the other races, and go on adventures."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Lizards and Dragons",
+						"entries": [
+							"Although the lizardfolk are not a draconic race, their fates are often intertwined with that of dragons. Black and green dragons often share the same habitats, and are known to employ lizardfolk as minions after sufficient intimidation.",
+							"On the other hand, lizardfolk face far less prejudice from the draconic races, such as dragonborn and half dragons. They respect dragonborn the most as they feel that their natural weapons make them the most self-sufficient, even though they find it odd that the scales of most dragonborn are soft. The Steelscale dragonborn are the exception, as their scales are equally hardened across their body, as opposed to the lizardfolk who have areas on their body that are thicker than others.",
+							"Because of this, Steelscale dragonborn may benefit from their scales as an extra layer of defense (unless their scales are completely supplanted by heavier armor), while the lizardfolk's hide is a mere substitute for real armor. However this is adequate for most lizardfolk, as they are able to do just fine by wearing little in very hostile environments.",
+							"Half dragons are greatly respected for their power and draconic lineage, while kobolds are seen as either an annoyance or a meal.",
+							"The more civilized lizardolk however will generally extend their respect to kobolds as well, provided they pose no threat to their tribe."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Lizardfolk Revised names",
+						"entries": [
+							"Lizardfolk take their names from the Draconic language. They use simple descriptive terms granted by the tribe based on an individual's notable deeds or actions. Lizardfolk make no distinction between male and female in their naming conventions. Each example name includes its translation in parenthesis.",
+							{
+								"entries": [
+									{
+										"name": "Lizardfolk Names",
+										"entries": [
+											" Achuak (green), Aryte (war), Baeshra (animal), Darastrix (dragon), Garurt (axe), Irhtos (secret), Jhank (hammer), Kepesk (storm), Kethend (gem), Korth (danger), Kosj (small), Kothar (demon), Litrix (armor), Mirik (song), Othokent (smart), Sauriv (eye), Throden (many), Thurkear (night), Usk (iron), Valignat (burn), Vargach (battle), Verthica (mountain), Vutha (black), Vyth (steel)"
+										],
+										"type": "entries"
+									}
+								],
+								"type": "entries"
+							}
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
+						],
+						"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Blackscale",
+			"source": "LEGDRAG",
+			"raceName": "Lizardfolk Revised",
+			"raceSource": "LEGDRAG",
+			"page": 29,
+			"ability": [
+				{
+					"str": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						{
+							"name": "Blackscale",
+							"entries": [],
+							"type": "entries"
+						}
+					]
+				},
+				{
+					"name": "Ability Score Increase",
+					"type": "entries",
+					"entries": [
+						"Your Strength score increases by 1. "
+					]
+				},
+				{
+					"name": "Acid Resistance",
+					"entries": [
+						"You have resistance to acid damage."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Aggressive",
+					"entries": [
+						"As a bonus action, you can move up to your speed toward an enemy of your choice that you can see or hear. You must end this move closer to the enemy than you started."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light but only in shades of gray."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Powerful Build",
+					"entries": [
+						"You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+					],
+					"type": "entries"
+				}
+			],
+			"traitTags": [
+				"Natural Weapon",
+				"Natural Armor",
+				"Powerful Build"
+			],
+			"darkvision": 60,
+			"resist":[
+				"acid"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"If you're considering taking a scaled one along on an adventure, remember this important fact. The strange, inhuman glint in its eyes as it looks you over is the same look you might give a freshly grilled steak."
+						],
+						"by": "Tordek, dwarf fighter and adventurer"
+					},
+					{
+						"name": "Lizardfolk Revised",
+						"entries": [
+							"Despite not being a member of the draconic races, the lizardfolk echo many similarities, and some even worship and serve dragons for their shared reptilian attributes. Lizardfolk are covered from head to tail in thick scales of various shades of color, and their fanged maw and sharp claws make them dangerous foes, even when unarmed. They are hardy survivors, whose lack of technological advancement is compensated by their ferocity in battle and ingenuity.",
+							"Most lizardfolk are pragmatic, and can come across as cold. This is due to their alien minds, which are heavily focused on survival, and leave little room for emotions. Concepts such as honor are lost on most of them, as they strive to survive against all odds.",
+							"An exception to this is a variant of sharptooth lizardfolk, which scholars dub \"high lizardfolk\". The tribes of these more civilized lizardfolk are different in that they not only understand common emotions but also feel them, and they are known for their strong sense of honor. This concept is alien to most lizardfolk, but it also allows them to cooperate with other intelligent races far more easily."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Blackscale",
+						"entries": [
+							"The blackscale are the largest and strongest of the lizardfolk, and are also the most aggressive. Their tribes often seek to expand the territory they hold, and kill any creature who gets in their way. They often prefer nightly raids, relying upon their innate darkvision. They are also known for their natural resistance against acid, which some scholars speculate is due to black dragon blood running in their veins. Blackscales have no patience for cunning ploys and setting traps, thinking that these are the tools of smaller, weaker lizardfolk. They prefer to just hit hard."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "An adaptive race",
+						"entries": [
+							"Lizardfolk generally focus on survival above all, without any unnecessary sentiments. Their mindset might sometimes seem cruel, but it helps them survive in a hostile environment. The swamps and jungles they inhabit are filled with a staggering variety of threats.",
+							"{@b Blackscale lizardfolk} are extraordinarily aggressive. They are the only lizardfolk with the ability to see in the dark, which scholars have speculated is due to black dragon blood running in their veins. This theory is further supported by their natural resistance against acid, and dark-hued scales.",
+							"{@b Poison dusk lizardfolk} are the smallest of the lizardfolk, but are masters of camouflage and poison. Using them both to deadly effect. They know how to create an oily substance which reacts to the natural chemicals within their chameleon skin. When applied to their clothes or armor, it causes these to change color as well when they use their chameleon skin to camouflage. However, like most lizardfolk, they usually fight without such trappings because their own natural hides provide sufficient protection.",
+							"{@b Sharptooth lizardfolk} are the most numerous of the lizardfolk, and are usually the most ingenious and focused on survival. Some call them cowardly or opportunistic, but they simply assess situations based on what gives them the best chance to survive.",
+							"The more civilized sharptooth lizardfolk either live near bodies of water and swamps, or roam the plains, riding large prehistoric beasts, such as triceratops or styracosaurus, into battle.",
+							"These sharptooth lizardfolk usually don't keep livestock, as they prefer to hunt or fish. They usually wear headgear with feathers of birds, and they are a little more advanced as they live in tipi instead of homes made out of mud. They are also among the most successful of lizardfolk, as many of their tribes have formed strong alliances with the other races over the years. Unlike most lizardfolk, these sharptooth lizardfolk venerate their ancestors, and follow a code of honor. They refer to their ancestors as dragons, however they are not descendants of dragons, which is evident by the fact that kobolds don't worship them in any shape or form.",
+							"The word dragon is a misunderstanding, as in their language (which is a slightly different version of draconic) dragon refers to large and powerful reptilian creatures. What they are referring to are ancient and terrifying lizards commonly known as dinosaurs."							
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Relationship with other races",
+						"entries": [
+							"Most lizardfolk are pragmatic, and are seen as cold. There is a saying that when a lizardfolk looks at you funny, that he is likely sizing you up as a potential meal. And while most lizardfolk have a strong sense of cooperation, they will often not hesitate to prevent your body from going to waste should you die.",
+							"A lizardfolk who lives among other humanoids can, over time, learn to respect other creatures' emotions. The lizardfolk doesn't share those feelings, but instead assesses them in the same clinical manner. Yes, the fallen dwarf might be most useful as a meal, but hacking the body into steaks provokes aggression in the other humanoids and makes them less helpful in battle.",
+							"At their core, lizardfolk view other humanoids with an indifference verging on pity. Born into the world lacking stout scales and sharp teeth, it's a wonder they have managed to survive for so long. The typical human would barely make it through a day in the swamps.",
+							"Still, if other creatures prove themselves useful to the lizardfolk, those creatures can trigger a protective response made all the stronger by their apparent weakness. The lizardfolk assess such beings as hatchlings, young ones incapable of protecting themselves but who might prove useful in the future if they receive care.",
+							"The more civilized sharptooth lizardfolk are an exception to this rule, as they follow codes of honor and can genuinely understand and feel emotions. These are also the lizardfolk who are most likely to trade with the other races, and go on adventures."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Lizards and Dragons",
+						"entries": [
+							"Although the lizardfolk are not a draconic race, their fates are often intertwined with that of dragons. Black and green dragons often share the same habitats, and are known to employ lizardfolk as minions after sufficient intimidation.",
+							"On the other hand, lizardfolk face far less prejudice from the draconic races, such as dragonborn and half dragons. They respect dragonborn the most as they feel that their natural weapons make them the most self-sufficient, even though they find it odd that the scales of most dragonborn are soft. The Steelscale dragonborn are the exception, as their scales are equally hardened across their body, as opposed to the lizardfolk who have areas on their body that are thicker than others.",
+							"Because of this, Steelscale dragonborn may benefit from their scales as an extra layer of defense (unless their scales are completely supplanted by heavier armor), while the lizardfolk's hide is a mere substitute for real armor. However this is adequate for most lizardfolk, as they are able to do just fine by wearing little in very hostile environments.",
+							"Half dragons are greatly respected for their power and draconic lineage, while kobolds are seen as either an annoyance or a meal.",
+							"The more civilized lizardolk however will generally extend their respect to kobolds as well, provided they pose no threat to their tribe."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Lizardfolk Revised names",
+						"entries": [
+							"Lizardfolk take their names from the Draconic language. They use simple descriptive terms granted by the tribe based on an individual's notable deeds or actions. Lizardfolk make no distinction between male and female in their naming conventions. Each example name includes its translation in parenthesis.",
+							{
+								"entries": [
+									{
+										"name": "Lizardfolk Names",
+										"entries": [
+											" Achuak (green), Aryte (war), Baeshra (animal), Darastrix (dragon), Garurt (axe), Irhtos (secret), Jhank (hammer), Kepesk (storm), Kethend (gem), Korth (danger), Kosj (small), Kothar (demon), Litrix (armor), Mirik (song), Othokent (smart), Sauriv (eye), Throden (many), Thurkear (night), Usk (iron), Valignat (burn), Vargach (battle), Verthica (mountain), Vutha (black), Vyth (steel)"
 										],
 										"type": "entries"
 									}
