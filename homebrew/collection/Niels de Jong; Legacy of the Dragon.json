@@ -8413,7 +8413,7 @@
 					"type": "entries",
 					"name": "Speed",
 					"entries": [
-						"Your base walking speed is 30 feet, and you have a swim speed of 30 feet. "
+						"Your base walking speed is 30 feet, and you have a swim speed of 30 feet."
 					]
 				},
 				{
@@ -8561,6 +8561,192 @@
 						"href": {
 							"type": "external",
 							"url": "https://i.imgur.com/oBKxp4D.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Spellscale",
+			"source": "LEGDRAG",
+			"page": 31,
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 30
+			},
+			"ability": [
+				{
+					"cha": 2,
+					"choose": {
+						"from": [
+							"int",
+							"dex",
+							"con",
+							"wis",
+							"str"
+						],
+						"count": 2,
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Your draconic heritage manifests in a variety of traits you share with other spellscales.",
+				{
+					"name": "Ability Score Increase",
+					"type": "entries",
+					"entries": [
+						"Your Charisma score increases by 2. Two other ability scores of your choice increase by 1."
+					]
+				},
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Spellscales mature quickly compared to other humanoids, and and reach adulthood by 12. They live to be around 150, and tend to start their adventuring lives early."
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"Spellscales are strong individualists, and consider right and wrong to be a personal matter. As such they tend towards chaos and are often neutral."
+					]
+				},
+				{
+					"name": "Size",
+					"type": "entries",
+					"entries": [
+						"Unlike in most other humanoid races, spellscale females tend to be larger than males. Spellscales stand about as tall as short humans. Your size is Medium."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Speed",
+					"entries": [
+						"Your base walking speed is 30 feet."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light but only in shades of gray."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Blood Quickening",
+					"type": "entries",
+					"entries": [
+						"As part of a long rest, you can meditate and choose one dragon god from the Blood Quickening Meditations on which you meditated. You don't have to worship or even agree with the dragons you meditate on, you just acknowledge their power and become inspired by them in some way, granting you the ability to call upon the latent powers within your draconic blood in a unique way. If you do, you gain the benefit listed in the Blood Quickening Meditations that is associated with that dragon god. If you choose a different dragon god than the one you meditated on previously, you will lose the benefit you gained from meditating on that other dragon god.",
+						{
+							"name": "Blood Quickening Meditations",
+							"entries": [
+								"Whenever you finish a long rest, you can choose a dragon god on which you meditated. You gain the benefit that is associated with that dragon god as listed below.",
+								{
+									"type": "list",
+									"style": "list-no-bullets",
+									"items": [
+										"{@b Asgorath:} Meditating on the Great Eternal Wheel will grant you greater insight into magic. You know one cantrip of your choice from the sorcerer spell list while this meditation is active. You can choose a different cantrip this way after finishing a long rest. The cantrip's spellcasting ability is Intelligence, Wisdom, or Charisma (your choice). You can use your bonus action to infuse yourself with arcane might for 1 minute. During this minute and once on each of your turns, you can deal extra damage to one target when you deal damage to it with a cantrip. The damage is the same type as the damage dealt by the cantrip, and equals your level. Once you use this trait to infuse yourself this way, you can't use it this way again until you finish a long rest.",
+										"{@b Bahamut:} Meditating upon the king of the good dragons grants you a merciful breath weapon. When you take the Attack action, you can replace one of your attacks with an exhalation of a magical gas (DC 8 + your Constitution modifier + your proficiency bonus). If you do, choose one:",
+										{
+											"type": "list",
+											"items": [
+												"Each creature of your choice in a 15-foot cone, which originates from you, must make a Strength saving throw or be pushed back 20 feet away from you and be knocked prone.",
+												"Each creature in a 15-foot cone, which originates from you, must make a Constitution saving throw or become incapacitated until the start of your next turn."
+											]
+										},
+										"Once you use this breath weapon, you can’t do so again until you finish a long rest.",
+										"{@b Faluzure:} Focusing upon the Night Dragon attunes you to the immensity and power of death. Your bite is a natural weapon, which counts as a simple melee weapon with which you are proficient. You can add your Constitution modifier, instead of your Strength modifier, to the attack rolls when you attack with your bite. It deals 1d6 + your Strength or Constitution modifier (your choice) piercing damage on a hit. While you have less than half your maximum hit points remaining, you have advantage on attack rolls you make with your bite. Starting at 3rd level, you count as being permanently affected by the magic fang cantrip (page 144). When you attack with your bite and hit a creature that isn't a construct or undead, you can drain their life and regain hit points equal to the piercing damage dealt by your bite. You can drain life this way with your bite a number of times equal to your proficiency bonus, and you regain all expended uses after finishing a long rest.",
+										"{@b Lendys:} Meditating upon the dragon god of justice grants you a judicious breath weapon. When you take the Attack action, you can replace one of your attacks with an exhalation of magical energy in a 15-foot cone. Each creature of your choice in the area must make a Dexterity saving throw (DC 8 + your Constitution modifier + your proficiency bonus), or take 2d6 damage of a type you choose from the Dragon Species and Damage Types table (page 117) on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level. Other creatures in this area, that you choose not to deal damage to with this breath weapon, will be unaffected. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses after finishing a long rest.",
+										"{@b Garyx:} Meditating on the power of the All-Destroyer grants you a fraction of its might. As a bonus action, you can touch a simple or martial weapon and infuse it with a damage type you choose from the Dragon Species and Damage Types table (page 117). For the next minute, the weapon deals an extra 1d4 damage of that type when it hits. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses after finishing a long rest.",
+										"{@b Sardior:} Meditating on the psionic might of The Ruby Dragon grants you supernatural mental powers. You can telepathically speak with any creature within 30 feet of you. You don’t need to share a language with the creature, but the creature must be able to understand at least one language. You and the creature can only communicate simple ideas this way. At 3rd level, you can use your bonus action to temporarily take flight for 1 minute by using your psionic powers, during which you gain a flying speed equal to your walking speed and you can hover. Afterwards you must finish a long rest before you can use this flight again.",
+										"{@b Tamara:} Meditating on Her Beneficence grants you the power to heal yourself and others. You know the cure wounds spell while this meditation is active. During this time you can cast this spell once without expending a spell slot. When you cast this spell this way at 3rd level, you cast it as a 2nd level spell. When you cast this spell this way at 5th level, you cast it as a 3rd level spell. Once you cast this spell this way, you can’t do so again until you finish a long rest. You can also cast this spell using spell slots you have of 1st level or higher. Your spellcasting ability for this spell is Intelligence, Wisdom, or Charisma (your choice).",
+										"{@b Tiamat:} Meditating upon the Dragon Queen grants you a merciless breath weapon. When you take the Attack action, you can replace one of your attacks with an exhalation of magical energy in a 15-foot cone. Choose acid, cold, fire, lightning, or poison. Each creature in the area must make a Dexterity saving throw (DC 8 + your Constitution or Charisma modifier (your choice) + your proficiency bonus), or take 2d8 damage of the chosen type on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d8 at 5th level, 8th level, 11th level, and 17th level. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses after finishing a long rest."
+									]
+								}
+							],
+							"type": "entries"
+						}
+					]
+				},		
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Draconic.",
+						"Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants. "
+					],
+					"type": "entries"
+				}
+			],
+			"darkvision": 60,
+			"languageProficiencies": [
+				{
+					"common": true,
+					"draconic": true
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"Sjach? Yeah, he visits the tavern from time to time. Nice enough fella, if you can get used to his extravagant outfits. Though many spellscales tend to be like that I guess."
+						],
+						"by": "Barnie, tavern keeper who has seen everything"
+					},
+					{
+						"name": "Spellscale",
+						"entries": [
+							"It has long been known that many sorcerers have dragon blood in their veins, which allows them to naturally cast their spells without any formal education. The spellscales are proof of this, as they are often born when two sorcerers or a single particularly powerful sorcerer produces a spellscale as their offspring. Spellscales are draconic humanoids with an artistic flair, great intelligence, a talent for sorcery, and a great hunger for new experiences. Spellscales are, however, a distinct race. They breed true among themselves, and if one parent is a spellscale, their offspring will always be born as full blooded spellscales, regardless of the race of the other parent.",
+							"Exceptions are tieflings, with whom the children are born as either parent, half dragons and dragons where they are born as half dragons (for the first seven generations), and lamia where their offspring are born as either spellscales or lamia. Spellscales embody the ego, individuality, and magic affinity of dragons, which is reflected by their flamboyant lifestyles.",
+							"Many half dragons feel pity for them, as they are unable to ascend to dragonhood as they can, while the less pleasant among them mockingly call them \"mutts\". Spellscales however, generally don't care about what their stronger draconic blooded cousins say, as they are quite happy with their flamboyant lifestyles. They are known for their ability to meditate upon the concept of one of multiple dragon gods, to gain a benefit based on their choice. While spellscales meditate and seeks inner truth, they view their interpretations as subjective. They live life without lingering regrets. After all, everything they have experienced or done has contributed to the individual they are today. Sensibility, not sense, rules spellscales in matters of affection. They feel love and other emotions with grand intensity, and a spellscale is usually happy with who they are.",
+							"Spellscales, their skin formed of lustrous smooth scales, come in a wide variety of hues including nearly every color of the rainbow. No spellscale is merely one color, but each displays a rich spectrum of variants on its main color. A spellscale who is primarily green might have patterns of a deeper, forest green over their body, fingernails and toenails of a slightly lighter green, and eye ridges and nostrils that are a deep greenish aquamarine. The coloration is complex, making a spellscale look much more elegant than other scaled humanoids such as kobolds or lizardfolk."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Spellscale names",
+						"entries": [
+							"Spellscales born to non-spellscale parents have names that are similar to those of their parent names. While spellscales born to spellscale parents are usually given elaborate names in Draconic. These names reflect their parents' philosophy and interests at the time of the child's birth. It's typical for these names to be idiosyncratic. As such, these names are often similar to those of dragonborn:",
+							{
+								"entries": [
+									{
+										"name": "Male Names",
+										"entries": [
+											"Arjhan, Balasar, Bharash, Donaar, Ghesh, Heskan, Kriv, Medrash, Mehen, Nadarr, Pandjed, Patrin, Rhogar, Shamash, Shedinn, Sjach, Tarhun, Torinn"
+										],
+										"type": "entries"
+									},
+									{
+										"name": "Female Names",
+										"entries": [
+											"Akra, Biri, Daar, Farideh, Harann, Havilar, Jheri, Kava, Korinn, Livinia, Mishann, Nala, Perra, Raiann, Sora, Surina, Thava, Uadjit"
+										],
+										"type": "entries"
+									}
+								],
+								"type": "entries"
+							}
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
+						],
+						"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/Af7O9M0.png"
 						}
 					}
 				]
@@ -15651,7 +15837,7 @@
 			"source": "LEGDRAG",
 			"raceName": "Lizardfolk Revised",
 			"raceSource": "LEGDRAG",
-			"page": 29,
+			"page": 30,
 			"ability": [
 				{
 					"str": 1
