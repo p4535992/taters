@@ -689,6 +689,249 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Dragonclaw War Pick",
+			"source": "LEGDRAG",
+			"page": 117,
+			"baseItem": "war pick|PHB",
+			"type": "M",
+			"rarity": "very rare",
+			"reqAttune": true,
+			"weight": 2,
+			"weaponCategory": "martial",
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"bonusWeapon": "+2",
+			"entries": [
+				"This war pick is made by affixing a gifted adult dragon's claw atop a mithral shaft. This weapon can be reversed, using the blunt head as a mace. However it is used, you gain a +2 bonus to attack and damage rolls you make with this weapon.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Wield as a Pickaxe",
+							"entries": [
+								"When you wield this weapon as a war pick, it has the finesse property and deals an additional 1d8 piercing damage. Using it in this way, it can also be used as a pickaxe."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Wield as a Mace",
+							"entries": [
+								"When you wield this weapon as a mace, you can use it to shove an enemy, adding 1d8 to your Strength (Athletics) check. If you successfully hit or shove a creature with this weapon, it takes an additional 1d8 bludgeoning damage."
+							]
+						}
+					]
+				},
+				"If the dragon that provided this claw dies, it becomes a magical war pick/mace that only retains its +2 bonus."
+			]
+		},
+		{
+			"name": "Dragonfang Dagger",
+			"source": "LEGDRAG",
+			"page": 117,
+			"baseItem": "dagger|phb",
+			"type": "M",
+			"rarity": "rare",
+			"reqAttune": true,
+			"weight": 1,
+			"weaponCategory": "simple",
+			"property": [
+				"F",
+				"L",
+				"T"
+			],
+			"range": "30/120",
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"bonusWeapon": "+1",
+			"entries": [
+				"A single tooth from such a full maw might seem a trifling gift, but such a fang plucked willingly from a young dragon's mouth contains within it a fragment of their essence. The hilt is wrapped in leather, carved to fit snugly in your hand.",
+				"When you attune to this weapon, a Draconic letter appears on your palm, the first letter of the name of the dragon who tore this tooth from their mouth. You gain a +1 bonus to attack and damage rolls you make with this weapon. On a hit with this weapon, the target takes an extra 1d6 damage (the damage type matches the dragon whose tooth this dagger was made from). Immediately after you make a ranged attack with this weapon, it teleports back to your dragon-branded hand. You can also use a bonus action to summon the dagger to that hand as long as it is on the same plane of existence. Additionally, this dagger has a thrown range of 30/120.",
+				"An adult or older dragon is even harder to convince to part with one of its fangs, as it is also a matter of pride. But those that are convinced will grant you a great gift. These fangs are often rewarded by blue dragons to their Stormscale servants.",
+				"This Dragonfang Dagger is a very rare magic item that grants its wielder all the above benefits, and your attacks with this weapon score a critical hit on a roll of 19 or 20.",
+				"If the dragon that provided this fang dies, it becomes a magical dagger that only retains its +1 bonus."
+			]
+		},
+		{
+			"name": "Dragonfriend's Armor",
+			"source": "LEGDRAG",
+			"page": 117,
+			"baseItem": "scale mail|PHB",
+			"type": "MA",
+			"tier": "major",
+			"rarity": "varies",
+			"reqAttune": true,
+			"weight": 45,
+			"ac": 14,
+			"bonusAc": "+0",
+			"stealth": false,
+			"languageProficiencies": [
+				{
+					"draconic": true
+				}
+			],
+			"entries": [
+				"Dragon scale mail made of freely gifted scales is especially supple and sturdy. As such it doesn't impose disadvantage on your Dexterity (Stealth) checks, and it has a base AC of 15 + Dex modifier (max 2).",
+				{
+					"type": "table",
+					"caption": "Draconic Heritage Traits",
+					"colLabels": [
+						"Age",
+						"Rarity",
+						"AC Bonus"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-3 text-center",
+						"col-3 text-center"
+					],
+					"rows": [
+						[
+							"Wyrmling",
+							"Uncommon",
+							"+0"
+						],
+						[
+							"Young",
+							"Rare",
+							"+1"
+						],
+						[
+							"Adult",
+							"Very Rare",
+							"+2"
+						],
+						[
+							"Ancient",
+							"Legendary",
+							"+3"
+						]
+					]
+				},
+				"While wearing this armor, you can speak {@language Draconic}",
+				"You gain a bonus to AC based on the age of the dragon",
+				"You have advantage on saving throws against the Frightful Presence and breath weapons of dragons",
+				"You have resistance to one damage type that is determined by the kind of dragon that provided the scales, as shown in the Dragon Species and Damage Types table (page 117).",
+				"You are immune to harmful regional effects and lair actions caused by the dragon that gifted you these scales. If you are subjected to that dragon's breath weapon, you automatically succeed on the saving throw and take no damage.",
+				"If the dragon that gifted these scales dies, this armor loses most of its magic, the supple scales harden, and it becomes magic scale mail that only retains its bonus to AC."
+			],
+			"items": [
+				"Wyrmling Dragonfriend's Armor|LEGDRAG",
+				"Young Dragonfriend's Armor|LEGDRAG",
+				"Adult Dragonfriend's Armor|LEGDRAG",
+				"Ancient Dragonfriend's Armor|LEGDRAG"
+			]
+		},
+		{
+			"name": "Wyrmling Dragonfriend's Armor",
+			"source": "LEGDRAG",
+			"page": 117,
+			"type": "MA",
+			"tier": "major",
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"weight": 45,
+			"ac": 14,
+			"bonusAc": "+0",
+			"stealth": false,
+			"languageProficiencies": [
+				{
+					"draconic": true
+				}
+			],
+			"entries": [
+				"Dragon scale mail made of freely gifted scales is especially supple and sturdy. As such it doesn't impose disadvantage on your Dexterity (Stealth) checks, and it has a base AC of 15 + Dex modifier (max 2).",
+				"While wearing this armor, you can speak {@language Draconic}",
+				"You gain a bonus to AC based on the age of the dragon",
+				"You have advantage on saving throws against the Frightful Presence and breath weapons of dragons",
+				"You have resistance to one damage type that is determined by the kind of dragon that provided the scales, as shown in the Dragon Species and Damage Types table (page 117).",
+				"You are immune to harmful regional effects and lair actions caused by the dragon that gifted you these scales. If you are subjected to that dragon's breath weapon, you automatically succeed on the saving throw and take no damage.",
+				"If the dragon that gifted these scales dies, this armor loses most of its magic, the supple scales harden, and it becomes magic scale mail that only retains its bonus to AC."
+			]
+		},
+		{
+			"name": "Young Dragonfriend's Armor",
+			"source": "LEGDRAG",
+			"page": 117,
+			"type": "MA",
+			"tier": "major",
+			"rarity": "rare",
+			"reqAttune": true,
+			"weight": 45,
+			"ac": 14,
+			"bonusAc": "+1",
+			"stealth": false,
+			"languageProficiencies": [
+				{
+					"draconic": true
+				}
+			],
+			"entries": [
+				"Dragon scale mail made of freely gifted scales is especially supple and sturdy. As such it doesn't impose disadvantage on your Dexterity (Stealth) checks, and it has a base AC of 15 + Dex modifier (max 2).",
+				"While wearing this armor, you can speak {@language Draconic}",
+				"You gain a bonus to AC based on the age of the dragon",
+				"You have advantage on saving throws against the Frightful Presence and breath weapons of dragons",
+				"You have resistance to one damage type that is determined by the kind of dragon that provided the scales, as shown in the Dragon Species and Damage Types table (page 117).",
+				"You are immune to harmful regional effects and lair actions caused by the dragon that gifted you these scales. If you are subjected to that dragon's breath weapon, you automatically succeed on the saving throw and take no damage.",
+				"If the dragon that gifted these scales dies, this armor loses most of its magic, the supple scales harden, and it becomes magic scale mail that only retains its bonus to AC."
+			]
+		},
+		{
+			"name": "Adult Dragonfriend's Armor",
+			"source": "LEGDRAG",
+			"page": 117,
+			"type": "MA",
+			"tier": "major",
+			"rarity": "very rare",
+			"reqAttune": true,
+			"weight": 45,
+			"ac": 14,
+			"bonusAc": "+2",
+			"stealth": false,
+			"languageProficiencies": [
+				{
+					"draconic": true
+				}
+			],
+			"entries": [
+				"Dragon scale mail made of freely gifted scales is especially supple and sturdy. As such it doesn't impose disadvantage on your Dexterity (Stealth) checks, and it has a base AC of 15 + Dex modifier (max 2).",
+				"While wearing this armor, you can speak {@language Draconic}",
+				"You gain a bonus to AC based on the age of the dragon",
+				"You have advantage on saving throws against the Frightful Presence and breath weapons of dragons",
+				"You have resistance to one damage type that is determined by the kind of dragon that provided the scales, as shown in the Dragon Species and Damage Types table (page 117).",
+				"You are immune to harmful regional effects and lair actions caused by the dragon that gifted you these scales. If you are subjected to that dragon's breath weapon, you automatically succeed on the saving throw and take no damage.",
+				"If the dragon that gifted these scales dies, this armor loses most of its magic, the supple scales harden, and it becomes magic scale mail that only retains its bonus to AC."
+			]
+		},
+		{
+			"name": "Ancient Dragonfriend's Armor",
+			"source": "LEGDRAG",
+			"page": 117,
+			"type": "MA",
+			"tier": "major",
+			"rarity": "legendary",
+			"reqAttune": true,
+			"weight": 45,
+			"ac": 14,
+			"bonusAc": "+3",
+			"stealth": false,
+			"languageProficiencies": [
+				{
+					"draconic": true
+				}
+			],
+			"entries": [
+				"Dragon scale mail made of freely gifted scales is especially supple and sturdy. As such it doesn't impose disadvantage on your Dexterity (Stealth) checks, and it has a base AC of 15 + Dex modifier (max 2).",
+				"While wearing this armor, you can speak {@language Draconic}",
+				"You gain a bonus to AC based on the age of the dragon",
+				"You have advantage on saving throws against the Frightful Presence and breath weapons of dragons",
+				"You have resistance to one damage type that is determined by the kind of dragon that provided the scales, as shown in the Dragon Species and Damage Types table (page 117).",
+				"You are immune to harmful regional effects and lair actions caused by the dragon that gifted you these scales. If you are subjected to that dragon's breath weapon, you automatically succeed on the saving throw and take no damage.",
+				"If the dragon that gifted these scales dies, this armor loses most of its magic, the supple scales harden, and it becomes magic scale mail that only retains its bonus to AC."
+			]
 		}
 	],
 	"spell": [
@@ -2693,9 +2936,93 @@
 				]
 			}
 		},
-
-
-
+		{
+			"name": "Breath Weapon (Dragonborn Warforged)",
+			"source": "LEGDRAG",
+			"page": 0,
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation.",
+				"When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes {@damage 2d6} damage on a failed save, and half as much damage on a successful one.",
+				"After you use your breath weapon, you can't use it again until you complete a short or long rest."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"The damage increases to {@dice 3d6} at 6th level, {@dice 4d6} at 11th level, and {@dice 5d6} at 16th level."
+					]
+				}
+			],
+			"races": [
+				{
+					"name": "Dragonborn",
+					"source": "PHB"
+				},
+				{
+					"name": "Dragonborn Revised",
+					"source": "LEGDRAG"
+				}
+			],
+			"optionalfeatures": [
+				{
+					"name": "Draconic Heritage",
+					"source": "LEGDRAG"
+				}
+			],
+			"damageInflict": [
+				"piercing"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"abilityCheck": [
+				"constitution"
+			],
+			"spellAttack": [
+				"M",
+				"R"
+			],
+			"areaTags": [
+				"N"
+			],
+			"fluff": {
+				"entries": [
+					"You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation.",
+					"When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level.",
+					"After you use your breath weapon, you can't use it again until you complete a short or long rest."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			}
+		},
 		{
 			"name": "Breath Weapon Revised (Dragonborn Amethyst)",
 			"source": "LEGDRAG",
@@ -2767,7 +3094,8 @@
 			],
 			"fluff": {
 				"entries": [
-					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level.",
+					"You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
 				],
 				"images": [
 					{
@@ -2851,7 +3179,8 @@
 			],
 			"fluff": {
 				"entries": [
-					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level.",
+					"You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
 				],
 				"images": [
 					{
@@ -2935,7 +3264,8 @@
 			],
 			"fluff": {
 				"entries": [
-					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level.",
+					"You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
 				],
 				"images": [
 					{
@@ -3019,7 +3349,8 @@
 			],
 			"fluff": {
 				"entries": [
-					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level.",
+					"You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
 				],
 				"images": [
 					{
@@ -3103,7 +3434,8 @@
 			],
 			"fluff": {
 				"entries": [
-					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level.",
+					"You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
 				],
 				"images": [
 					{
@@ -3187,7 +3519,8 @@
 			],
 			"fluff": {
 				"entries": [
-					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level.",
+					"You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
 				],
 				"images": [
 					{
@@ -3271,7 +3604,8 @@
 			],
 			"fluff": {
 				"entries": [
-					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level.",
+					"You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
 				],
 				"images": [
 					{
@@ -3355,7 +3689,8 @@
 			],
 			"fluff": {
 				"entries": [
-					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level.",
+					"You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
 				],
 				"images": [
 					{
@@ -3439,7 +3774,8 @@
 			],
 			"fluff": {
 				"entries": [
-					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level.",
+					"You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
 				],
 				"images": [
 					{
@@ -3523,7 +3859,8 @@
 			],
 			"fluff": {
 				"entries": [
-					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level.",
+					"You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
 				],
 				"images": [
 					{
@@ -3607,7 +3944,8 @@
 			],
 			"fluff": {
 				"entries": [
-					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level.",
+					"You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
 				],
 				"images": [
 					{
@@ -3691,7 +4029,8 @@
 			],
 			"fluff": {
 				"entries": [
-					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level.",
+					"You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
 				],
 				"images": [
 					{
@@ -3775,7 +4114,8 @@
 			],
 			"fluff": {
 				"entries": [
-					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level.",
+					"You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
 				],
 				"images": [
 					{
@@ -3859,7 +4199,8 @@
 			],
 			"fluff": {
 				"entries": [
-					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level.",
+					"You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
 				],
 				"images": [
 					{
@@ -3943,7 +4284,8 @@
 			],
 			"fluff": {
 				"entries": [
-					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level.",
+					"You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
 				],
 				"images": [
 					{
@@ -4027,7 +4369,8 @@
 			],
 			"fluff": {
 				"entries": [
-					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level.",
+					"You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
 				],
 				"images": [
 					{
@@ -4111,7 +4454,8 @@
 			],
 			"fluff": {
 				"entries": [
-					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level.",
+					"You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
 				],
 				"images": [
 					{
@@ -4195,7 +4539,8 @@
 			],
 			"fluff": {
 				"entries": [
-					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level.",
+					"You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
 				],
 				"images": [
 					{
@@ -4279,7 +4624,8 @@
 			],
 			"fluff": {
 				"entries": [
-					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level.",
+					"You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
 				],
 				"images": [
 					{
@@ -4363,7 +4709,8 @@
 			],
 			"fluff": {
 				"entries": [
-					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level.",
+					"You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
 				],
 				"images": [
 					{
@@ -4447,7 +4794,8 @@
 			],
 			"fluff": {
 				"entries": [
-					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level.",
+					"You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
 				],
 				"images": [
 					{
@@ -4531,7 +4879,8 @@
 			],
 			"fluff": {
 				"entries": [
-					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level.",
+					"You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
 				],
 				"images": [
 					{
@@ -4615,7 +4964,8 @@
 			],
 			"fluff": {
 				"entries": [
-					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level.",
+					"You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
 				],
 				"images": [
 					{
@@ -4623,6 +4973,91 @@
 						"href": {
 							"type": "external",
 							"url": "https://i.imgur.com/cQdFY0n.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Breath Weapon Revised (Dragonborn Amethyst)",
+			"source": "LEGDRAG",
+			"page": 0,
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes {@damage 2d6} + your proficiency bonus damage on a failed save, and half as much damage on a successful one. ",
+				"You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"The damage increases by an additional {@dice 1d6} at 5th level, 8th level, 11th level, and 17th level."
+					]
+				}
+			],
+			"races": [
+				{
+					"name": "Dragonborn",
+					"source": "PHB"
+				},
+				{
+					"name": "Dragonborn Revised",
+					"source": "LEGDRAG"
+				}
+			],
+			"optionalfeatures": [
+				{
+					"name": "Draconic Heritage",
+					"source": "LEGDRAG"
+				}
+			],
+			"damageInflict": [
+				"piercing"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"abilityCheck": [
+				"constitution"
+			],
+			"spellAttack": [
+				"M",
+				"R"
+			],
+			"areaTags": [
+				"N"
+			],
+			"fluff": {
+				"entries": [
+					"When you take the Attack action, you can replace one of your attacks with an exhalation of destructive energy. Your draconic ancestry determines the size, shape, saving throw type, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 + your proficiency bonus damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level.",
+					"You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
 						}
 					}
 				]
@@ -5452,6 +5887,28 @@
 				{
 					"poisoner's kit": true
 				}
+			]
+		},
+		{
+			"name": "Medusa Heritage",
+			"source": "LEGDRAG",
+			"page": 112,
+			"featureType": [
+				"OPTFEAT:LEGDRAG"
+			],
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "Lamia"
+						}
+					]
+				}
+			],
+			"entries": [
+				"Some lamia have medusa blood running in their veins, and can embrace the devastating abilities of this heritage. Many, though not all, have snakes as hair which they can use to bite with instead. You deal an extra 1d6 poison damage to a creature whenever you hit it with your bite attack.",
+				"You can use your action to force a creature within 30 feet that can see your eyes to make a DC 10 Constitution saving throw. On a failure, the creature is paralyzed until the end of its next turn. You can use your bonus action to force a creature that failed this saving throw within the past minute to repeat this saving throw with disadvantage. Each time it fails, it is paralyzed again until the end of its next turn. When a creature is paralyzed in this way for the third time in a span of 1 minute, it is instantly petrified. As an action, you can end the petrified condition on a creature that you can see and that you petrified yourself.",
+				"Starting at 10th level, the DC for this saving throw increases to 12. At 15th level, the DC increases to 14. At 20th level, the DC increases to 16."
 			]
 		}
 	],
@@ -6908,6 +7365,13 @@
 						]
 					},
 					{
+						"name":"Fang Dragon",
+						"type": "inset",
+						"entries": [
+							"The \"Legacy of Dragon\" document does not give a clear distion between \"Fang\" and \"Gray\" to enrich the distinction for Dragonborn and Half-Dragons with heritage \"Fang\" it will be used the source \"{@link Fang Dragons by KajaGrae|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}\" very good stuff."
+						]
+					},
+					{
 						"name": "Credits",
 						"entries": [
 							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
@@ -7897,6 +8361,9 @@
 			"size": [
 				"S"
 			],
+			"speed": {
+				"walk": 30
+			},
 			"ability": [
 				{
 					"dex": 2,
@@ -8845,9 +9312,454 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Silverbrow (human Variant)",
+			"source": "LEGDRAG",
+			"ability": [
+				{
+					"cha": 2,
+					"con": 1
+				}
+			],
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 30
+			},
+			"entries": [
+				"Your Silverbrow character has a number of traits borne into them by their ancestry.",
+				{
+					"name": "Ability Score Increase",
+					"type": "entries",
+					"entries": [
+						"Your Charisma Score increases by 2, and your Constitution score increases by 1."
+					]
+				},
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Silverbrow mature at the same rate as their human cousins, but live to be 500 years old."
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"Silverbrow descend from the silver dragon, and tend to lean towards the lawful good nature of their forefathers."
+					]
+				},
+				{
+					"name": "Size",
+					"type": "entries",
+					"entries": [
+						"You stand anywhere between 5 and 6. Your size is Medium."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Speed",
+					"entries": [
+						"Your base walking speed is 30 feet."
+					]
+				},
+				{
+					"name": "Draconic Resistance",
+					"entries": [
+						"You are resistant to {@damage cold} damage, and have advantage on saving throws made against magical effects."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Dragonblood",
+					"entries": [
+						"You are considered a dragonborn for the purposes of qualifying for feats. And are affected by enchantments specific to dragons as if you were a dragon."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Magical Inheritance",
+					"entries": [
+						"Creatures other than dragons have disadvantage on saving throws against illusion spells cast by you."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Graceful Levitation",
+					"entries": [
+						"You can cast the {@spell feather fall|PHB} spell on yourself once per day, however you cannot target additional creatures when using this feature."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Practiced Disguise",
+					"entries": [
+						"have advantage on deception checks made to hide your appearance or appear as an ordinary human, and you may add deception to your class skills."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write {@language Common|PHB} and {@language Draconic|PHB}."
+					],
+					"type": "entries"
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"draconic": true
+				}
+			],
+			"resist": [
+				"cold"
+			],
+			"skillProficiencies": [
+				{
+					"deception": true
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"1": {
+							"daily": {
+								"1": [
+									"feather fall|phb"
+								]
+							}
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"name": "Silverbrow",
+						"entries": [
+							"Silver Dragons are unique among their kind in that they so often relish the Human form that their shapeshifting powers allow them - a trait that is more often than not traced back to the ancient dragon Mest'revek, who first took human form to teach men the secrets of magic. This ancestral penchant for spending such time among humankind leaves it no surprise, then that Silver Dragons, more than any other species of dragon, have intermingled their magical bloodlines with those of men."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Arcane Ancestry",
+						"entries": [
+							"Where their dragonborn relatives more often inherit the power and strength of their respective kin, Silverbrow children instead inherit the magical prowess of their Draconic Lineage. Often demonstrating magical aptitude at a very young age, Silverbrow have an uncommon affinity for the magic of illusions, and harbour some of the natural magical resistance of their ancestors, but by far their most prevalent magical inheritance lies in the ability to float softly to the ground from any height."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Silvered Humans",
+						"entries": [
+							"Silverbrow bloodlines run much further back than those of their dragonborn relatives, and unlike their close relatives - the dragoborn, Sliverbrow do not exhibit the same bestial traits as their Draconic ancestors. Rather than scales and horns, Silverbrow traits are more subtle. Their builds are often relatively slender, but muscular, and their hair is tinged with streaks or point sof brilliant silver. Their most distinguishing feature, however, are their silver eyes, which shimmer like pools of liquid metal in the light of day. These traits do not develop until adolescence, and it is not uncommon for the bloodline to not produce a Silverbrow for many generations, meaning that many human parents are surprised when their children begin to show signs of draconic birth.",
+							"Some family accept these silvered Children eagerly, Excited for the gifts they have been blessed with.But in smaller communities such abnormalities can sometimes be mistaken for a curse or mutation.",
+							"While they mature at a similar rate to normal Humans, Silverbrow can often live to be as old as 500 years. This grants them plenty of time to consider their own place in the world."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Silverbrow Names",
+						"entries": [
+							"While it is not unheard of for a Silvered Child to take up some other moniker in adulthood, most Silverbrow are not recognized as such at the time of their birth, and so most often go by human names."
+						],
+						"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/sfNO0qo.png"
+						}
+					}
+				]
+			}
 		}
 	],
 	"subrace": [
+		{
+			"name": "Fang",
+			"source": "LEGDRAG",
+			"raceName": "Dragonborn Revised",
+			"raceSource": "LEGDRAG",
+			"page": 0,
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						{
+							"name": "Fang",
+							"entries": [],
+							"type": "entries"
+						}
+					]
+				},
+				"Your ancestor was a fang dragon, and this imparts specific traits to your kind.",
+				{
+					"name": "Bite",
+					"entries": [
+						"Your fanged maw is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to {@b 1d6 + your Strength modifier},instead of the bludgeoning damage normal for an unarmed strike."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Merciless Rive",
+					"entries": [
+						"Immediately after you reduce a creature to 0 hit points, or land a critical hit, as part of an attack action on your turn, you can lunge forward and use your bite to deliver a devastating attack. You move up to half of your movement speed, and make one bite attack. This attack is made with advantage, and if successful, deals and additional {@damage 1d6} piercing damage. The additional damage increases to {@damage 3d6} at 5th level, {@damage 5d6} at 11th level, and {@damage 7d6} at 17th level.",
+						"You can use your Merciless Rive a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Draconic Resistance",
+					"entries": [
+						"You share some of your ancestor's ability to shrug off magical attacks. You have advantage on all Strength, Dexterity, and Constitution saving throws against magic."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Thrill of the Hunt",
+					"entries": [
+						"You have proficiency in the survival skill"
+					],
+					"type": "entries"
+				}
+			],
+			"skillProficiencies": [
+				{
+					"survival": true
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"The fighter boy was down, the monk girl was overwhelmed, the cleric girl had wet herself, and the wizard girl got stabbed. Fortunately for these beginners, most of the goblins were now in a narrow pathway, and he was a dragonborn. As he inhaled deeply, he wondered what roasted goblin would smell like."
+						],
+						"by": "Rhogar, dragonborn veteran and savior of \"newbies\""
+					},
+					{
+						"name": "Dragonborn Revised",
+						"entries": [
+							"Born of dragons, as their name proclaims, the dragonborn walk proudly through a world that greets them with fearful incomprehension. Shaped by draconic gods or the dragons themselves, dragonborn were created with the essence of true dragons as a unique race, combining the best attributes of dragons and humanoids. Some dragonborn (reluctantly) serve true dragons, others form the ranks of soldiers in great wars, and still others find themselves adrift, with no clear calling in life.",
+							"The blood of a particular type of dragon runs very strong through each dragonborn, granting it a color pattern that corresponds to that dragon type. A dragonborn's color imparts many traits upon them, including varying types of breath weapon, as well as resistance to the elemental type associated with their dragon ancestor.",
+							"In addition, each dragonborn possesses a fragment of what makes up a true dragon. Those whose fragment grants them a tail are often shunned, due to it being considered a bad omen for a dragonborn to have a tail."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Dragonborn names",
+						"entries": [
+							"Dragonborn have personal names given at birth, but they put their clan names first as a mark of honor. Childhood names are often given by clutchmates as a descriptive term.",
+							{
+								"entries": [
+									{
+										"name": "Male Names",
+										"entries": [
+											"Arjhan, Balasar, Bharash, Donaar, Ghesh, Heskan, Kriv, Medrash, Mehen, Nadarr, Pandjed, Patrin, Rhogar, Shamash, Shedinn, Tarhun, Torinn"
+										],
+										"type": "entries"
+									},
+									{
+										"name": "Female Names",
+										"entries": [
+											"Akra, Biri, Daar, Farideh, Harann, Havilar, Jheri, Kava, Korinn, Mishann, Nala, Perra, Raiann, Sora, Surina, Thava, Uadjit"
+										],
+										"type": "entries"
+									},
+									{
+										"name": "Childhood Names",
+										"entries": [
+											"Climber, Earbender, Leaper, Pious, Shieldbiter, Zealous "
+										],
+										"type": "entries"
+									},
+									{
+										"name": "Clan Names",
+										"entries": [
+											" Clethtinthiallor, Daardendrian, Delmirev, Drachedandion, Fenkenkabradon, Kepeshkmolik, Kerrhylon, Kimbatuul, Linxakasendalor, Myastan, Nemmonis, Norixius, Ophinshtalajiir, Prexijandilin, Shestendeliath, Turnuroth, Verthisathurgiesh, Yarjerit"
+										],
+										"type": "entries"
+									}
+								],
+								"type": "entries"
+							}
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Dragonborn Revised (Fang)",
+						"entries": [
+							"Born of dragons, as their name proclaims, the dragonborn walk proudly through a world that greets them with fearful incomprehension. Shaped by draconic gods or the dragons themselves, dragonborn originally hatched from dragon eggs as a unique race, combining the best attributes of dragons and humanoids. Some dragonborn are faithful servants to true dragons, others form the ranks of soldiers in great wars,and still others find themselves adrift, with no clear calling in life."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
+						],
+						"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/EO3wlZY.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Dragonforged",
+			"source": "LEGDRAG",
+			"raceName": "Dragonborn Revised",
+			"raceSource": "LEGDRAG",
+			"page": 106,
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						{
+							"name": "Dragonforged",
+							"entries": [],
+							"type": "entries"
+						}
+					]
+				},
+				"When playing a warforged, you can choose to play the dragonforged variant, provided you have your DM's permission. If you do, then you lose your Specialized Design trait, and you must choose Draconic as your other language. In exchange you gain the following racial traits:",
+				{
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can only discern shades of gray in darkness."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Breath Weapon",
+					"entries": [
+						"When you take a long rest you go through a process in which you shed metal on the inside and collect it in your \"stomach\". You can use your bonus action to exhale these metal shards in a 15-foot cone. Each creature in the area of the exhalation must make a Dexterity saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 piercing damage on a failed save, and half as much damage on a successful one. The damage increases by an additional 1d6 at 5th level, 8th level, 11th level, and 17th level. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+						"{@b Note:} You can use the spell {@spell Breath Weapon (Dragonborn Warforged)|LEGDRAG} as a ready to use attack, in addition you add this features to the breath:",
+						{
+							"type":"list",
+							"items":[
+								"While wearing magical armor, these shards count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage, and you add double the armor's magic AC bonus (if any) as additional damage to this breath weapon."
+							]
+						}
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Flawed Restoration System",
+					"entries": [
+						"While you are in combat, any healing you receive from other creatures is halved.",
+						"If a spell, such as {@spell raise dead|PHB}, has the sole effect of restoring you to life (but not undeath), then the caster doesn't need material components to cast the spell on you. In addition, these spells can be used to resurrect you within 1 day if the original time limit was shorter (such as the {@spell revivify|PHB} spell).",
+						"Whenever you become stabilized you immediately regain 1 hit point."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Is Still a Dragonborn",
+					"entries": [
+						"You can attune to magic items that require attunement by a dragonborn."
+					],
+					"type": "entries"
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"The fighter boy was down, the monk girl was overwhelmed, the cleric girl had wet herself, and the wizard girl got stabbed. Fortunately for these beginners, most of the goblins were now in a narrow pathway, and he was a dragonborn. As he inhaled deeply, he wondered what roasted goblin would smell like."
+						],
+						"by": "Rhogar, dragonborn veteran and savior of \"newbies\""
+					},
+					{
+						"name": "Dragonborn Revised",
+						"entries": [
+							"Born of dragons, as their name proclaims, the dragonborn walk proudly through a world that greets them with fearful incomprehension. Shaped by draconic gods or the dragons themselves, dragonborn were created with the essence of true dragons as a unique race, combining the best attributes of dragons and humanoids. Some dragonborn (reluctantly) serve true dragons, others form the ranks of soldiers in great wars, and still others find themselves adrift, with no clear calling in life.",
+							"The blood of a particular type of dragon runs very strong through each dragonborn, granting it a color pattern that corresponds to that dragon type. A dragonborn's color imparts many traits upon them, including varying types of breath weapon, as well as resistance to the elemental type associated with their dragon ancestor.",
+							"In addition, each dragonborn possesses a fragment of what makes up a true dragon. Those whose fragment grants them a tail are often shunned, due to it being considered a bad omen for a dragonborn to have a tail."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Dragonborn names",
+						"entries": [
+							"Dragonborn have personal names given at birth, but they put their clan names first as a mark of honor. Childhood names are often given by clutchmates as a descriptive term.",
+							{
+								"entries": [
+									{
+										"name": "Male Names",
+										"entries": [
+											"Arjhan, Balasar, Bharash, Donaar, Ghesh, Heskan, Kriv, Medrash, Mehen, Nadarr, Pandjed, Patrin, Rhogar, Shamash, Shedinn, Tarhun, Torinn"
+										],
+										"type": "entries"
+									},
+									{
+										"name": "Female Names",
+										"entries": [
+											"Akra, Biri, Daar, Farideh, Harann, Havilar, Jheri, Kava, Korinn, Mishann, Nala, Perra, Raiann, Sora, Surina, Thava, Uadjit"
+										],
+										"type": "entries"
+									},
+									{
+										"name": "Childhood Names",
+										"entries": [
+											"Climber, Earbender, Leaper, Pious, Shieldbiter, Zealous "
+										],
+										"type": "entries"
+									},
+									{
+										"name": "Clan Names",
+										"entries": [
+											" Clethtinthiallor, Daardendrian, Delmirev, Drachedandion, Fenkenkabradon, Kepeshkmolik, Kerrhylon, Kimbatuul, Linxakasendalor, Myastan, Nemmonis, Norixius, Ophinshtalajiir, Prexijandilin, Shestendeliath, Turnuroth, Verthisathurgiesh, Yarjerit"
+										],
+										"type": "entries"
+									}
+								],
+								"type": "entries"
+							}
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Dragonborn Revised (Dragonforged)",
+						"entries": [
+							"Dragonforged are modified warforged, and considered the pinacle of dragonborn crafting. The creation of these dragonforged was commissioned by several legions, who sought to create loyal and stalwart sentries against enemies that relied heavily on ambush tactics and assassinations. These modifications include darkvision, a \"breath weapon\" which launches several metal shards, and a restoration system that allows them to be more easily revived after battle. However, this came at the cost of their specialized design, and their new restoration system had a significant flaw; it conflicted with their integrated protection, and limited restoration magic from sources other than itself, as the system saw those as an outside threat while the dragonforged was in combat. Nevertheless, this flaw was accepted as many saw it at as a way of self reliance, which is considered a great virtue among dragonborn. The legions considered the project a great success, as they became known as efficient sentries, guards, and vanguard.",
+							"Once they gained sentience, the dragonborn openly welcomed them into their societies, due to the merit they had shown in their shared battles. Now these dragonforged must find their own place in this world, or they can remain in the service of their creators, which many do."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
+						],
+						"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			}
+		},
 		{
 			"name": "DreadCaller",
 			"source": "LEGDRAG",
@@ -8939,13 +9851,6 @@
 								],
 								"type": "entries"
 							}
-						],
-						"type": "entries"
-					},
-					{
-						"name": "Credits",
-						"entries": [
-							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
 						],
 						"type": "entries"
 					},
@@ -9066,13 +9971,6 @@
 						"type": "entries"
 					},
 					{
-						"name": "Credits",
-						"entries": [
-							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
-						],
-						"type": "entries"
-					},
-					{
 						"name": "Dragonborn Revised (Murkdweller)",
 						"entries": [],
 						"type": "entries"
@@ -9187,13 +10085,6 @@
 						"type": "entries"
 					},
 					{
-						"name": "Credits",
-						"entries": [
-							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
-						],
-						"type": "entries"
-					},
-					{
 						"name": "Dragonborn Revised (SteelScale)",
 						"entries": [],
 						"type": "entries"
@@ -9304,13 +10195,6 @@
 								],
 								"type": "entries"
 							}
-						],
-						"type": "entries"
-					},
-					{
-						"name": "Credits",
-						"entries": [
-							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
 						],
 						"type": "entries"
 					},
@@ -10045,6 +10929,13 @@
 						]
 					},
 					{
+						"name":"Fang Dragon",
+						"type": "inset",
+						"entries": [
+							"The \"Legacy of Dragon\" document does not give a clear distion between \"Fang\" and \"Gray\" to enrich the distinction for Dragonborn and Half-Dragons with heritage \"Fang\" it will be used the source \"{@link Fang Dragons by KajaGrae|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}\" very good stuff."
+						]
+					},
+					{
 						"name": "Half Dragon (Black)",
 						"entries": [],
 						"type": "entries"
@@ -10254,6 +11145,13 @@
 						"entries": [
 							"If your world also includes the brown dragon, then you can use these rules for half brown dragons by using the half blue dragon as your base, but then replace the lightning damage type of your Draconic Ancestry trait with the acid damage type. Your other racial traits remain the same. If you wish to use the brown dragon for class features, for ascending to dragonhood, as a monster encounter, or for some other reason; you can use the game statistics for blue dragons ({@i Monster Manual} page 90) but replace its lightning damage type with the acid damage type.",
 							"In addition, brown dragons do not have a flying speed, but instead their burrow speed is twice that of a blue dragon of the same age, and they have the Tunneler trait of a sapphire dragon ({@i Fizban's Treasury of Dragons} page 214) of the same age."
+						]
+					},
+					{
+						"name":"Fang Dragon",
+						"type": "inset",
+						"entries": [
+							"The \"Legacy of Dragon\" document does not give a clear distion between \"Fang\" and \"Gray\" to enrich the distinction for Dragonborn and Half-Dragons with heritage \"Fang\" it will be used the source \"{@link Fang Dragons by KajaGrae|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}\" very good stuff."
 						]
 					},
 					{
@@ -10486,6 +11384,13 @@
 						]
 					},
 					{
+						"name":"Fang Dragon",
+						"type": "inset",
+						"entries": [
+							"The \"Legacy of Dragon\" document does not give a clear distion between \"Fang\" and \"Gray\" to enrich the distinction for Dragonborn and Half-Dragons with heritage \"Fang\" it will be used the source \"{@link Fang Dragons by KajaGrae|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}\" very good stuff."
+						]
+					},
+					{
 						"name": "Half Dragon (Brass)",
 						"entries": [],
 						"type": "entries"
@@ -10552,7 +11457,7 @@
 					]
 				},
 				{
-					"name": "Dragom of the Coast",
+					"name": "Dragon of the Coast",
 					"entries": [
 						"You have a swim speed of 30 feet, and you can breathe air and water. When using your breath weapon, you can instead choose to use repulsion gas with the same range and DC. This gas doesn't deal damage but instead imposes a Strength saving throw on those in the area. Those who fail it are pushed back 15 feet away from you, and are knocked prone if they fail it by 5 or more. This special DC increases by 1 for each additional 1d6 damage on your breath weapon."
 					],
@@ -10693,6 +11598,13 @@
 						"entries": [
 							"If your world also includes the brown dragon, then you can use these rules for half brown dragons by using the half blue dragon as your base, but then replace the lightning damage type of your Draconic Ancestry trait with the acid damage type. Your other racial traits remain the same. If you wish to use the brown dragon for class features, for ascending to dragonhood, as a monster encounter, or for some other reason; you can use the game statistics for blue dragons ({@i Monster Manual} page 90) but replace its lightning damage type with the acid damage type.",
 							"In addition, brown dragons do not have a flying speed, but instead their burrow speed is twice that of a blue dragon of the same age, and they have the Tunneler trait of a sapphire dragon ({@i Fizban's Treasury of Dragons} page 214) of the same age."
+						]
+					},
+					{
+						"name":"Fang Dragon",
+						"type": "inset",
+						"entries": [
+							"The \"Legacy of Dragon\" document does not give a clear distion between \"Fang\" and \"Gray\" to enrich the distinction for Dragonborn and Half-Dragons with heritage \"Fang\" it will be used the source \"{@link Fang Dragons by KajaGrae|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}\" very good stuff."
 						]
 					},
 					{
@@ -10904,6 +11816,13 @@
 						"entries": [
 							"If your world also includes the brown dragon, then you can use these rules for half brown dragons by using the half blue dragon as your base, but then replace the lightning damage type of your Draconic Ancestry trait with the acid damage type. Your other racial traits remain the same. If you wish to use the brown dragon for class features, for ascending to dragonhood, as a monster encounter, or for some other reason; you can use the game statistics for blue dragons ({@i Monster Manual} page 90) but replace its lightning damage type with the acid damage type.",
 							"In addition, brown dragons do not have a flying speed, but instead their burrow speed is twice that of a blue dragon of the same age, and they have the Tunneler trait of a sapphire dragon ({@i Fizban's Treasury of Dragons} page 214) of the same age."
+						]
+					},
+					{
+						"name":"Fang Dragon",
+						"type": "inset",
+						"entries": [
+							"The \"Legacy of Dragon\" document does not give a clear distion between \"Fang\" and \"Gray\" to enrich the distinction for Dragonborn and Half-Dragons with heritage \"Fang\" it will be used the source \"{@link Fang Dragons by KajaGrae|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}\" very good stuff."
 						]
 					},
 					{
@@ -11125,6 +12044,13 @@
 						]
 					},
 					{
+						"name":"Fang Dragon",
+						"type": "inset",
+						"entries": [
+							"The \"Legacy of Dragon\" document does not give a clear distion between \"Fang\" and \"Gray\" to enrich the distinction for Dragonborn and Half-Dragons with heritage \"Fang\" it will be used the source \"{@link Fang Dragons by KajaGrae|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}\" very good stuff."
+						]
+					},
+					{
 						"name": "Half Dragon (Copper)",
 						"entries": [],
 						"type": "entries"
@@ -11340,6 +12266,13 @@
 						"entries": [
 							"If your world also includes the brown dragon, then you can use these rules for half brown dragons by using the half blue dragon as your base, but then replace the lightning damage type of your Draconic Ancestry trait with the acid damage type. Your other racial traits remain the same. If you wish to use the brown dragon for class features, for ascending to dragonhood, as a monster encounter, or for some other reason; you can use the game statistics for blue dragons ({@i Monster Manual} page 90) but replace its lightning damage type with the acid damage type.",
 							"In addition, brown dragons do not have a flying speed, but instead their burrow speed is twice that of a blue dragon of the same age, and they have the Tunneler trait of a sapphire dragon ({@i Fizban's Treasury of Dragons} page 214) of the same age."
+						]
+					},
+					{
+						"name":"Fang Dragon",
+						"type": "inset",
+						"entries": [
+							"The \"Legacy of Dragon\" document does not give a clear distion between \"Fang\" and \"Gray\" to enrich the distinction for Dragonborn and Half-Dragons with heritage \"Fang\" it will be used the source \"{@link Fang Dragons by KajaGrae|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}\" very good stuff."
 						]
 					},
 					{
@@ -11566,6 +12499,13 @@
 						]
 					},
 					{
+						"name":"Fang Dragon",
+						"type": "inset",
+						"entries": [
+							"The \"Legacy of Dragon\" document does not give a clear distion between \"Fang\" and \"Gray\" to enrich the distinction for Dragonborn and Half-Dragons with heritage \"Fang\" it will be used the source \"{@link Fang Dragons by KajaGrae|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}\" very good stuff."
+						]
+					},
+					{
 						"name": "Half Dragon (Green)",
 						"entries": [],
 						"type": "entries"
@@ -11773,6 +12713,13 @@
 						"entries": [
 							"If your world also includes the brown dragon, then you can use these rules for half brown dragons by using the half blue dragon as your base, but then replace the lightning damage type of your Draconic Ancestry trait with the acid damage type. Your other racial traits remain the same. If you wish to use the brown dragon for class features, for ascending to dragonhood, as a monster encounter, or for some other reason; you can use the game statistics for blue dragons ({@i Monster Manual} page 90) but replace its lightning damage type with the acid damage type.",
 							"In addition, brown dragons do not have a flying speed, but instead their burrow speed is twice that of a blue dragon of the same age, and they have the Tunneler trait of a sapphire dragon ({@i Fizban's Treasury of Dragons} page 214) of the same age."
+						]
+					},
+					{
+						"name":"Fang Dragon",
+						"type": "inset",
+						"entries": [
+							"The \"Legacy of Dragon\" document does not give a clear distion between \"Fang\" and \"Gray\" to enrich the distinction for Dragonborn and Half-Dragons with heritage \"Fang\" it will be used the source \"{@link Fang Dragons by KajaGrae|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}\" very good stuff."
 						]
 					},
 					{
@@ -11993,6 +12940,13 @@
 						]
 					},
 					{
+						"name":"Fang Dragon",
+						"type": "inset",
+						"entries": [
+							"The \"Legacy of Dragon\" document does not give a clear distion between \"Fang\" and \"Gray\" to enrich the distinction for Dragonborn and Half-Dragons with heritage \"Fang\" it will be used the source \"{@link Fang Dragons by KajaGrae|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}\" very good stuff."
+						]
+					},
+					{
 						"name": "Half Dragon (Silver)",
 						"entries": [],
 						"type": "entries"
@@ -12200,6 +13154,13 @@
 						"entries": [
 							"If your world also includes the brown dragon, then you can use these rules for half brown dragons by using the half blue dragon as your base, but then replace the lightning damage type of your Draconic Ancestry trait with the acid damage type. Your other racial traits remain the same. If you wish to use the brown dragon for class features, for ascending to dragonhood, as a monster encounter, or for some other reason; you can use the game statistics for blue dragons ({@i Monster Manual} page 90) but replace its lightning damage type with the acid damage type.",
 							"In addition, brown dragons do not have a flying speed, but instead their burrow speed is twice that of a blue dragon of the same age, and they have the Tunneler trait of a sapphire dragon ({@i Fizban's Treasury of Dragons} page 214) of the same age."
+						]
+					},
+					{
+						"name":"Fang Dragon",
+						"type": "inset",
+						"entries": [
+							"The \"Legacy of Dragon\" document does not give a clear distion between \"Fang\" and \"Gray\" to enrich the distinction for Dragonborn and Half-Dragons with heritage \"Fang\" it will be used the source \"{@link Fang Dragons by KajaGrae|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}\" very good stuff."
 						]
 					},
 					{
@@ -12414,6 +13375,13 @@
 						"entries": [
 							"If your world also includes the brown dragon, then you can use these rules for half brown dragons by using the half blue dragon as your base, but then replace the lightning damage type of your Draconic Ancestry trait with the acid damage type. Your other racial traits remain the same. If you wish to use the brown dragon for class features, for ascending to dragonhood, as a monster encounter, or for some other reason; you can use the game statistics for blue dragons ({@i Monster Manual} page 90) but replace its lightning damage type with the acid damage type.",
 							"In addition, brown dragons do not have a flying speed, but instead their burrow speed is twice that of a blue dragon of the same age, and they have the Tunneler trait of a sapphire dragon ({@i Fizban's Treasury of Dragons} page 214) of the same age."
+						]
+					},
+					{
+						"name":"Fang Dragon",
+						"type": "inset",
+						"entries": [
+							"The \"Legacy of Dragon\" document does not give a clear distion between \"Fang\" and \"Gray\" to enrich the distinction for Dragonborn and Half-Dragons with heritage \"Fang\" it will be used the source \"{@link Fang Dragons by KajaGrae|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}\" very good stuff."
 						]
 					},
 					{
@@ -12648,6 +13616,13 @@
 						]
 					},
 					{
+						"name":"Fang Dragon",
+						"type": "inset",
+						"entries": [
+							"The \"Legacy of Dragon\" document does not give a clear distion between \"Fang\" and \"Gray\" to enrich the distinction for Dragonborn and Half-Dragons with heritage \"Fang\" it will be used the source \"{@link Fang Dragons by KajaGrae|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}\" very good stuff."
+						]
+					},
+					{
 						"name": "Half Dragon (Sapphire)",
 						"entries": [
 							"Sapphire dragons are a type of gem dragon with crystalline blue scales, which are inherited by their half dragon offspring. Sapphire dragons are known for their psionics, and also for being capable tacticians. Half sapphire dragons are renowned as gifted psychics, and are known for being compassionate yet also pragmatic when the need arises. The horns and tip of the tail of half sapphire dragons are crystal-like, which become smoother and change as they grow older, until they look identical to those of sapphire dragons."
@@ -12864,6 +13839,13 @@
 						"entries": [
 							"If your world also includes the brown dragon, then you can use these rules for half brown dragons by using the half blue dragon as your base, but then replace the lightning damage type of your Draconic Ancestry trait with the acid damage type. Your other racial traits remain the same. If you wish to use the brown dragon for class features, for ascending to dragonhood, as a monster encounter, or for some other reason; you can use the game statistics for blue dragons ({@i Monster Manual} page 90) but replace its lightning damage type with the acid damage type.",
 							"In addition, brown dragons do not have a flying speed, but instead their burrow speed is twice that of a blue dragon of the same age, and they have the Tunneler trait of a sapphire dragon ({@i Fizban's Treasury of Dragons} page 214) of the same age."
+						]
+					},
+					{
+						"name":"Fang Dragon",
+						"type": "inset",
+						"entries": [
+							"The \"Legacy of Dragon\" document does not give a clear distion between \"Fang\" and \"Gray\" to enrich the distinction for Dragonborn and Half-Dragons with heritage \"Fang\" it will be used the source \"{@link Fang Dragons by KajaGrae|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}\" very good stuff."
 						]
 					},
 					{
@@ -13107,6 +14089,13 @@
 						]
 					},
 					{
+						"name":"Fang Dragon",
+						"type": "inset",
+						"entries": [
+							"The \"Legacy of Dragon\" document does not give a clear distion between \"Fang\" and \"Gray\" to enrich the distinction for Dragonborn and Half-Dragons with heritage \"Fang\" it will be used the source \"{@link Fang Dragons by KajaGrae|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}\" very good stuff."
+						]
+					},
+					{
 						"name": "Half Dragon (Amethyst)",
 						"entries": [
 							"Amethyst dragons are a type of gem dragon with crystalline blue scales, which are inherited by their half dragon offspring. Amethyst dragons are known for their psionics, and also for being capable tacticians. Half amethyst dragons are renowned as gifted psychics, and are known for being compassionate yet also pragmatic when the need arises. The horns and tip of the tail of half amethyst dragons are crystal-like, which become smoother and change as they grow older, until they look identical to those of amethyst dragons."
@@ -13335,6 +14324,13 @@
 						"entries": [
 							"If your world also includes the brown dragon, then you can use these rules for half brown dragons by using the half blue dragon as your base, but then replace the lightning damage type of your Draconic Ancestry trait with the acid damage type. Your other racial traits remain the same. If you wish to use the brown dragon for class features, for ascending to dragonhood, as a monster encounter, or for some other reason; you can use the game statistics for blue dragons ({@i Monster Manual} page 90) but replace its lightning damage type with the acid damage type.",
 							"In addition, brown dragons do not have a flying speed, but instead their burrow speed is twice that of a blue dragon of the same age, and they have the Tunneler trait of a sapphire dragon ({@i Fizban's Treasury of Dragons} page 214) of the same age."
+						]
+					},
+					{
+						"name":"Fang Dragon",
+						"type": "inset",
+						"entries": [
+							"The \"Legacy of Dragon\" document does not give a clear distion between \"Fang\" and \"Gray\" to enrich the distinction for Dragonborn and Half-Dragons with heritage \"Fang\" it will be used the source \"{@link Fang Dragons by KajaGrae|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}\" very good stuff."
 						]
 					},
 					{
@@ -13569,6 +14565,13 @@
 						]
 					},
 					{
+						"name":"Fang Dragon",
+						"type": "inset",
+						"entries": [
+							"The \"Legacy of Dragon\" document does not give a clear distion between \"Fang\" and \"Gray\" to enrich the distinction for Dragonborn and Half-Dragons with heritage \"Fang\" it will be used the source \"{@link Fang Dragons by KajaGrae|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}\" very good stuff."
+						]
+					},
+					{
 						"name": "Half Dragon (Emerald)",
 						"entries": [
 							"Emerald dragons are a type of gem dragon with crystalline blue scales, which are inherited by their half dragon offspring. Emerald dragons are known for their psionics, and also for being capable tacticians. Half emerald dragons are renowned as gifted psychics, and are known for being compassionate yet also pragmatic when the need arises. The horns and tip of the tail of half emerald dragons are crystal-like, which become smoother and change as they grow older, until they look identical to those of emerald dragons."
@@ -13800,6 +14803,13 @@
 						]
 					},
 					{
+						"name":"Fang Dragon",
+						"type": "inset",
+						"entries": [
+							"The \"Legacy of Dragon\" document does not give a clear distion between \"Fang\" and \"Gray\" to enrich the distinction for Dragonborn and Half-Dragons with heritage \"Fang\" it will be used the source \"{@link Fang Dragons by KajaGrae|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}\" very good stuff."
+						]
+					},
+					{
 						"name": "Half Dragon (Topaz)",
 						"entries": [
 							"Topaz dragons are a type of gem dragon with crystalline blue scales, which are inherited by their half dragon offspring. Topaz dragons are known for their psionics, and also for being capable tacticians. Half topaz dragons are renowned as gifted psychics, and are known for being compassionate yet also pragmatic when the need arises. The horns and tip of the tail of half topaz dragons are crystal-like, which become smoother and change as they grow older, until they look identical to those of topaz dragons."
@@ -13848,6 +14858,7 @@
 						}
 					]
 				},
+				"When a fang dragon in polymorphed form mates with another creature, the union sometimes produces half-fang dragon offspring. A creature might also transform into a half-fang dragon as a result of a mad wizard's spell or a ritual bath in dragon's blood. In all these cases, the result is a creature that combines the essence of a dragon with the form of its original race. Regardless of their origins, all half-fang dragons have similar features and appearance, gaining special senses, a ferocious rage, and a deadly bite.",
 				{
 					"name": "Ability Score Increase",
 					"type": "entries",
@@ -13863,13 +14874,82 @@
 					]
 				},
 				{
-					"name": "Vicious",
+					"name": "Draconic Nature",
 					"entries": [
-						"You permanently gain the benefit associated with Faluzure in the Blood Quickening Meditations (page 32)."
+						"Half-fang dragons are incapable of having natural born offspring. Those that wish to propagate must find other ways to do so, almost always involving magic. Byway of compensation, half-fang dragons are blessed with long life. Barring unforeseen misfortune, a typical half-fang dragon's life expectancy is twice that of its non draconic line,so that a half-fang dragon human might live more than a century and a half. Half-fang dragons inherit personality traits common to their draconic heritage. These traits are tempered by a half-fang dragon's other lineage, but half-fang dragon's are quicker to anger, and more prone to acts of violence than a standard member of their non-draconic lineage.",
+						"A beast, humanoid, giant, or monstrosity can become a half-fang dragon. When a creature becomes a half-fang dragon, it retains all its statistics except as noted below."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Senses",
+					"entries": [
+						"The half-fang dragon gains blindsight with a radius of 10 feet and darkvision with a radius of 60 feet."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Rage (1/Day)",
+					"entries": [
+						"As a bonus action, the half-fang dragon can enter a rage. For one minute, it gains the following benefits:",
+						{
+							"type": "list",
+							"items": [
+								"The half-fang dragon has advantage on Strength checks and Strength saving throws.",
+								"When the half-fang dragon makes a melee weapon attack,it gains a +2 bonus to the damage roll.",
+								"The half-fang dragon has advantage on saving throws against spells and other magical effects."
+							]
+						}
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Ravenous Onslaught",
+					"entries": [
+						"When the half-fang dragon reduces a creature to 0 hit points or scores a critical hit with a melee attack on its turn, it can take a bonus action to move up to half its speed and make a bite attack."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"The half-fang dragon has the bite of its dragon half. The half-fang dragon's size determines how this action functions.",
+						{
+							"type": "table",
+							"caption": "Half fang dragon bite",
+							"colLabels": [
+								"Size",
+								"Bite"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Medium or smaller",
+									"As a wyrmling ({@damage 1d6 + 3} piercing damage)"
+								],
+								[
+									"Large",
+									"As a wyrmling ({@damage 1d12 + 3} piercing damage)"
+								],
+								[
+									"Huge",
+									"As a young dragon ({@damage 2d12 + 5} piercing damage)"
+								],
+								[
+									"Gargantuan",
+									"As an adult dragon ({@damage 2d12 + 7} piercing damage)"
+								]
+							]
+						}
 					],
 					"type": "entries"
 				}
 			],
+			"blindsight": 10,
+			"darkvision": 60,
 			"resist":[
 				"acid"
 			],
@@ -14004,6 +15084,13 @@
 						"entries": [
 							"If your world also includes the brown dragon, then you can use these rules for half brown dragons by using the half blue dragon as your base, but then replace the lightning damage type of your Draconic Ancestry trait with the acid damage type. Your other racial traits remain the same. If you wish to use the brown dragon for class features, for ascending to dragonhood, as a monster encounter, or for some other reason; you can use the game statistics for blue dragons ({@i Monster Manual} page 90) but replace its lightning damage type with the acid damage type.",
 							"In addition, brown dragons do not have a flying speed, but instead their burrow speed is twice that of a blue dragon of the same age, and they have the Tunneler trait of a sapphire dragon ({@i Fizban's Treasury of Dragons} page 214) of the same age."
+						]
+					},
+					{
+						"name":"Fang Dragon",
+						"type": "inset",
+						"entries": [
+							"The \"Legacy of Dragon\" document does not give a clear distion between \"Fang\" and \"Gray\" to enrich the distinction for Dragonborn and Half-Dragons with heritage \"Fang\" it will be used the source \"{@link Fang Dragons by KajaGrae|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}\" very good stuff."
 						]
 					},
 					{
@@ -14211,6 +15298,13 @@
 						"entries": [
 							"If your world also includes the brown dragon, then you can use these rules for half brown dragons by using the half blue dragon as your base, but then replace the lightning damage type of your Draconic Ancestry trait with the acid damage type. Your other racial traits remain the same. If you wish to use the brown dragon for class features, for ascending to dragonhood, as a monster encounter, or for some other reason; you can use the game statistics for blue dragons ({@i Monster Manual} page 90) but replace its lightning damage type with the acid damage type.",
 							"In addition, brown dragons do not have a flying speed, but instead their burrow speed is twice that of a blue dragon of the same age, and they have the Tunneler trait of a sapphire dragon ({@i Fizban's Treasury of Dragons} page 214) of the same age."
+						]
+					},
+					{
+						"name":"Fang Dragon",
+						"type": "inset",
+						"entries": [
+							"The \"Legacy of Dragon\" document does not give a clear distion between \"Fang\" and \"Gray\" to enrich the distinction for Dragonborn and Half-Dragons with heritage \"Fang\" it will be used the source \"{@link Fang Dragons by KajaGrae|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}\" very good stuff."
 						]
 					},
 					{
@@ -14431,6 +15525,13 @@
 						"entries": [
 							"If your world also includes the brown dragon, then you can use these rules for half brown dragons by using the half blue dragon as your base, but then replace the lightning damage type of your Draconic Ancestry trait with the acid damage type. Your other racial traits remain the same. If you wish to use the brown dragon for class features, for ascending to dragonhood, as a monster encounter, or for some other reason; you can use the game statistics for blue dragons ({@i Monster Manual} page 90) but replace its lightning damage type with the acid damage type.",
 							"In addition, brown dragons do not have a flying speed, but instead their burrow speed is twice that of a blue dragon of the same age, and they have the Tunneler trait of a sapphire dragon ({@i Fizban's Treasury of Dragons} page 214) of the same age."
+						]
+					},
+					{
+						"name":"Fang Dragon",
+						"type": "inset",
+						"entries": [
+							"The \"Legacy of Dragon\" document does not give a clear distion between \"Fang\" and \"Gray\" to enrich the distinction for Dragonborn and Half-Dragons with heritage \"Fang\" it will be used the source \"{@link Fang Dragons by KajaGrae|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}\" very good stuff."
 						]
 					},
 					{
@@ -14658,6 +15759,13 @@
 						]
 					},
 					{
+						"name":"Fang Dragon",
+						"type": "inset",
+						"entries": [
+							"The \"Legacy of Dragon\" document does not give a clear distion between \"Fang\" and \"Gray\" to enrich the distinction for Dragonborn and Half-Dragons with heritage \"Fang\" it will be used the source \"{@link Fang Dragons by KajaGrae|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}\" very good stuff."
+						]
+					},
+					{
 						"name": "Half Dragon (Song)",
 						"entries": [
 							"Song dragons often apear as comely female mortal women, and as such it is not uncommon for them to have mortal partners, and half dragon offspring. Like half steel dragons, these half dragons will appear as their mortal parent's race if they are raised among them; such as Narnra Shalace, daughter of Elminster, who believed she was a human for a part of her life. They don't have settlements of their own, and instead join the Confluence or organizations like the Sisterhood of Essembra. The rules under \"{@b Playing as a Half Steel Dragon}\" can be applied to half song dragons as well."
@@ -14857,6 +15965,13 @@
 						"entries": [
 							"If your world also includes the brown dragon, then you can use these rules for half brown dragons by using the half blue dragon as your base, but then replace the lightning damage type of your Draconic Ancestry trait with the acid damage type. Your other racial traits remain the same. If you wish to use the brown dragon for class features, for ascending to dragonhood, as a monster encounter, or for some other reason; you can use the game statistics for blue dragons ({@i Monster Manual} page 90) but replace its lightning damage type with the acid damage type.",
 							"In addition, brown dragons do not have a flying speed, but instead their burrow speed is twice that of a blue dragon of the same age, and they have the Tunneler trait of a sapphire dragon ({@i Fizban's Treasury of Dragons} page 214) of the same age."
+						]
+					},
+					{
+						"name":"Fang Dragon",
+						"type": "inset",
+						"entries": [
+							"The \"Legacy of Dragon\" document does not give a clear distion between \"Fang\" and \"Gray\" to enrich the distinction for Dragonborn and Half-Dragons with heritage \"Fang\" it will be used the source \"{@link Fang Dragons by KajaGrae|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}\" very good stuff."
 						]
 					},
 					{
@@ -15067,6 +16182,13 @@
 						"entries": [
 							"If your world also includes the brown dragon, then you can use these rules for half brown dragons by using the half blue dragon as your base, but then replace the lightning damage type of your Draconic Ancestry trait with the acid damage type. Your other racial traits remain the same. If you wish to use the brown dragon for class features, for ascending to dragonhood, as a monster encounter, or for some other reason; you can use the game statistics for blue dragons ({@i Monster Manual} page 90) but replace its lightning damage type with the acid damage type.",
 							"In addition, brown dragons do not have a flying speed, but instead their burrow speed is twice that of a blue dragon of the same age, and they have the Tunneler trait of a sapphire dragon ({@i Fizban's Treasury of Dragons} page 214) of the same age."
+						]
+					},
+					{
+						"name":"Fang Dragon",
+						"type": "inset",
+						"entries": [
+							"The \"Legacy of Dragon\" document does not give a clear distion between \"Fang\" and \"Gray\" to enrich the distinction for Dragonborn and Half-Dragons with heritage \"Fang\" it will be used the source \"{@link Fang Dragons by KajaGrae|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}\" very good stuff."
 						]
 					},
 					{
@@ -17135,7 +18257,8 @@
 						"name": "Drider",
 						"entries": [
 							"Driders are drow that have been transformed from the waist down so they have the body of a spider. The transformation is typical a punishment for failing a test of Lolth, and turns them into centaur-like creatures; appearing as drow from the waist up, and with their lower portions replaced by the abdomen and legs of immense spiders.",
-							"Driders are generally sexless, because Lolth did not want to have a race of enemies to the drow. Yet there are rumors from distant drow settlements, of how enemies of Lolth reversed this for a few, to try to create a race of drow-hating driders that can reproduce. The stories also tell of how the process failed, as the newly created driders were generally kind hearted, and Lolth let them live as a way to mock the failed attempt. Regardless of what their origins are, they are often viewed with contempt by drow society. Because of this many driders hold contempt for drow and Lolth, or they become zealots that try to redeem themselves before the spider queen, while yet others simply try to get by and use their ability to create spider silk to make beautiful silken clothes. Driders that have been directly created by Lolth's transformation tend to look more monstrous, while those from the rumors tend to look a little more comely yet still somewhat unpleasant due to their spider bodies. Those directly created by Lolth's transformation are often bloodthirsty, and many harbor a death wish that makes them want to die in battle, preferably against drow. While many others, like the more kind hearted driders from the rumors, become gifted weavers or even accomplished adventurers."
+							"Driders are generally sexless, because Lolth did not want to have a race of enemies to the drow. Yet there are rumors from distant drow settlements, of how enemies of Lolth reversed this for a few, to try to create a race of drow-hating driders that can reproduce. The stories also tell of how the process failed, as the newly created driders were generally kind hearted, and Lolth let them live as a way to mock the failed attempt. Regardless of what their origins are, they are often viewed with contempt by drow society. Because of this many driders hold contempt for drow and Lolth, or they become zealots that try to redeem themselves before the spider queen, while yet others simply try to get by and use their ability to create spider silk to make beautiful silken clothes.",
+							"Driders that have been directly created by Lolth's transformation tend to look more monstrous, while those from the rumors tend to look a little more comely yet still somewhat unpleasant due to their spider bodies. Those directly created by Lolth's transformation are often bloodthirsty, and many harbor a death wish that makes them want to die in battle, preferably against drow. While many others, like the more kind hearted driders from the rumors, become gifted weavers or even accomplished adventurers."
 						],
 						"type": "entries"
 					},

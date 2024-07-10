@@ -2291,7 +2291,7 @@
 				{
 					"name": "Draconic Resistance",
 					"entries": [
-						"You are resistant to cold damage, and have advantage on saving throws made against magical effects."
+						"You are resistant to {@damage cold} damage, and have advantage on saving throws made against magical effects."
 					],
 					"type": "entries"
 				},
@@ -2312,7 +2312,7 @@
 				{
 					"name": "Graceful Levitation",
 					"entries": [
-						"You can cast the feather fall spell on yourself once per day, however you cannot target additional creatures when using this feature."
+						"You can cast the {@spell feather fall|PHB} spell on yourself once per day, however you cannot target additional creatures when using this feature."
 					],
 					"type": "entries"
 				},
@@ -2343,6 +2343,20 @@
 			"skillProficiencies": [
 				{
 					"deception": true
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"1": {
+							"daily": {
+								"1": [
+									"feather fall|phb"
+								]
+							}
+						}
+					},
+					"ability": "cha"
 				}
 			],
 			"fluff": {
