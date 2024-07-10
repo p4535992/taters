@@ -26,7 +26,7 @@
 	},
 	"variantrule": [
 		{
-			"name": "VarianT Poison Harvesting",
+			"name": "Variant Poison Harvesting",
 			"source": "LEGDRAG",
 			"page": 30,
 			"entries": [
@@ -35,7 +35,31 @@
 					"type": "list",
 					"style": "list-no-bullets",
 					"items": [
-						"{@b Poison Extraction}: When poisonous creatures are killed, the player can attempt to harvest all their poison over the course of 10 minutes, followed by making an Intelligence (Nature) check using the poisoner's kit (proficiency with the poisoner's kit applies to this check if the player doesn't have proficiency in Nature) against the poison's save DC, for each type of creature. You automatically succeed if the poison doesn't have a DC. On a success, the player extracts 1d4 doses of poison from all the dead creatures combined for that type of creature. On a failure, all the poison is wasted, and those who are not proficient with the poisoner's kit suffer the effects of the poison. Players can use one dose of harvested Injury type poison to coat one slashing or piercing weapon or one piece of ammunition. Once applied, the poison retains potency for 1 minute or until you hit with the weapon or ammunition (this works different than basic poison which lasts the full 1 minute duration). Applying the poison takes an action."
+						"{@b Poison Extraction}: When poisonous creatures are killed, the player can attempt to harvest all their poison over the course of 10 minutes, followed by making an Intelligence (Nature) check using the {@item poisoner's kit|PHB} (proficiency with the {@item poisoner's kit|PHB} applies to this check if the player doesn't have proficiency in Nature) against the poison's save DC, for each type of creature. You automatically succeed if the poison doesn't have a DC. On a success, the player extracts 1d4 doses of poison from all the dead creatures combined for that type of creature. On a failure, all the poison is wasted, and those who are not proficient with the {@item poisoner's kit|PHB} suffer the effects of the poison. Players can use one dose of harvested Injury type poison to coat one slashing or piercing weapon or one piece of ammunition. Once applied, the poison retains potency for 1 minute or until you hit with the weapon or ammunition (this works different than basic poison which lasts the full 1 minute duration). Applying the poison takes an action."
+					]
+				},
+				{
+					"name": "Credits",
+					"entries": [
+						"Reference {@link Legacy of Dragon|https://www.kickstarter.com/projects/nielsdejong/legacy-of-the-dragon-a-dragon-themed-supplement-for-5e}. Please credit if you repost elsewhere."
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Variant Gnome and Lightfoot",
+			"source": "LEGDRAG",
+			"page": 36,
+			"entries": [
+				"At their DM's discretion, lightfoot halfling players gain proficiency in the Stealth skill, and deep gnome players also gain advantage on Dexterity (Stealth) checks while in dim light or darkness. Rock gnome players also gain proficiency in the History skill, and can also create a device with their Tinker racial trait that can create one set effect chosen from the druidcraft, prestidigitation, or thaumaturgy cantrips with the Use an Object action, or at their DM's discretion an effect similar in power.",
+				{
+					"type": "list",
+					"style": "list-no-bullets",
+					"items": [
+						"{@b Lightfoot Halfling}: gain proficiency in the Stealth skill",
+						"{@b Deep Gnome}: gain advantage on Dexterity (Stealth) checks while in dim light or darkness",
+						"{@b Rock Gnome}: gain proficiency in the History skill, and can also create a device with their Tinker racial trait that can create one set effect chosen from the druidcraft, prestidigitation, or thaumaturgy cantrips with the Use an Object action, or at their DM's discretion an effect similar in power"
 					]
 				},
 				{
@@ -5147,13 +5171,18 @@
 					"other": "The Pick Mastery racial trait"
 				}
 			],
+			"toolProficiencies": [
+				{
+					"cartographer's tools": true
+				}
+			],
 			"entries": [
 				"Your time spent using pickaxes and war picks allows you to use them to aid your allies. You gain the following benefits:",
 				{
 					"type": "list",
 					"items": [
 					    "Increase your Strength, Dexterity, or Constitution score by 1, to a maximum of 20.",
-						"You gain proficiency with the cartographer's tools. The damage die of a war pick you wield is now 1d8 (1d12).",
+						"You gain proficiency with the {@item cartographer's tools|PHB}. The damage die of a war pick you wield is now 1d8 (1d12).",
 						"When you take the Attack action while using a pickaxe, a war pick, or a similar tool, you can forgo one of your attacks and instead pull a creature within 5 feet of you off balance; the next attack roll an ally makes against this target before the start of your next turn has advantage. If the target is wielding a shield, you temporarily pull it aside, granting all allies a +2 bonus to attack rolls against the target until the start of your next turn."
 					]
 				}
@@ -5412,7 +5441,7 @@
 				{
 					"type": "list",
 					"items": [
-						"You gain proficiency with the poisoner's kit. When you try to harvest a dose of poison from a poisonous creature, you have advantage on the required ability check.",
+						"You gain proficiency with the {@item poisoner's kit|PHB}. When you try to harvest a dose of poison from a poisonous creature, you have advantage on the required ability check.",
 						"When you make a damage roll, you ignore resistance to poison damage. In addition, when you create a poison, you can specify a creature type. That poison ignores the immunity to poison damage and the immunity to the poisoned condition (if any) of creatures of that type.",
 						"Once per turn you can apply poison to a weapon or piece of ammunition as part of an attack you make with that weapon or piece of ammunition, instead of an action.",
 						"As part of a long rest, or one workday, you can create a number of doses of potent poison equal to your proficiency bonus, or double if you spend 30 gp worth of extra materials. It takes an action to coat one slashing or piercing weapon, or one piece of ammunition, with a dose. Once applied, the poison retains potency for 1 minute or until you hit with the weapon or ammunition. Those hit must make a Constitution saving throw (DC 10 + your proficiency bonus) or take 2d8 poison damage and become poisoned until the end of your next turn."
@@ -5917,7 +5946,7 @@
 				{
 					"name": "Languages",
 					"entries": [
-						"You can speak, read, and write Common and Draconic. Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants."
+						"You can speak, read, and write {@language Common|PHB} and {@language Draconic|PHB}. Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants."
 					],
 					"type": "entries"
 				},
@@ -6369,7 +6398,7 @@
 					"type": "entries",
 					"name": "Languages",
 					"entries": [
-						"You can speak, read, and write Common and Primordial. Primordial is a guttural language, filled with harsh syllables and hard consonants."
+						"You can speak, read, and write {@language Common|PHB} and {@language Primordial|PHB}. Primordial is a guttural language, filled with harsh syllables and hard consonants."
 					]
 				},
 				{
@@ -6737,7 +6766,7 @@
 				{
 					"name": "Languages",
 					"entries": [
-						"You can speak, read, and write Common and Draconic. Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants."
+						"You can speak, read, and write {@language Common|PHB} and {@language Draconic|PHB}. Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants."
 					],
 					"type": "entries"
 				},
@@ -7036,7 +7065,7 @@
 				{
 					"name": "Skilled Trapper",
 					"entries": [
-						"You gain proficiency with the thieves' tools, and whenever you make an ability check to create traps ({@i Xanathar's Guide to Everything} page 84) your proficiency bonus is doubled."
+						"You gain proficiency with the {@item thieves' tools|PHB}, and whenever you make an ability check to create traps ({@i Xanathar's Guide to Everything} page 84) your proficiency bonus is doubled."
 					],
 					"type": "entries"
 				},
@@ -7050,7 +7079,7 @@
 				{
 					"name": "Languages",
 					"entries": [
-						"You can speak, read, and write Common and Draconic.",
+						"You can speak, read, and write {@language Common|PHB} and {@language Draconic|PHB}.",
 						"Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants."
 					],
 					"type": "entries"
@@ -7288,7 +7317,7 @@
 				{
 					"name": "Skilled Trapper",
 					"entries": [
-						"You gain proficiency with the thieves' tools, and whenever you make an ability check to create traps ({@i Xanathar's Guide to Everything} page 84) your proficiency bonus is doubled."
+						"You gain proficiency with the {@item thieves' tools|PHB}, and whenever you make an ability check to create traps ({@i Xanathar's Guide to Everything} page 84) your proficiency bonus is doubled."
 					],
 					"type": "entries"
 				},
@@ -7302,7 +7331,7 @@
 				{
 					"name": "Languages",
 					"entries": [
-						"You can speak, read, and write Common and Draconic.",
+						"You can speak, read, and write {@language Common|PHB} and {@language Draconic|PHB}.",
 						"Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants."
 					],
 					"type": "entries"
@@ -7708,7 +7737,7 @@
 				{
 					"name": "Languages",
 					"entries": [
-						"You can speak, read, and write Common and Draconic.",
+						"You can speak, read, and write {@language Common|PHB} and {@language Draconic|PHB}.",
 						"Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants."
 					],
 					"type": "entries"
@@ -8111,7 +8140,7 @@
 				{
 					"name": "Languages",
 					"entries": [
-						"You can speak, read, and write Common and Draconic.",
+						"You can speak, read, and write {@language Common|PHB} and {@language Draconic|PHB}.",
 						"Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants."
 					],
 					"type": "entries"
@@ -8335,7 +8364,7 @@
 				{
 					"name": "Languages",
 					"entries": [
-						"You can speak, read, and write Common and Draconic.",
+						"You can speak, read, and write {@language Common|PHB} and {@language Draconic|PHB}.",
 						"Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants. "
 					],
 					"type": "entries"
@@ -8512,7 +8541,7 @@
 				{
 					"name": "Languages",
 					"entries": [
-						"You can speak, read, and write Common and Draconic.",
+						"You can speak, read, and write {@language Common|PHB} and {@language Draconic|PHB}.",
 						"Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants. "
 					],
 					"type": "entries"
@@ -8740,7 +8769,7 @@
 				{
 					"name": "Languages",
 					"entries": [
-						"You can speak, read, and write Common and Draconic.",
+						"You can speak, read, and write {@language Common|PHB} and {@language Draconic|PHB}.",
 						"Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants. "
 					],
 					"type": "entries"
@@ -16179,7 +16208,7 @@
 				{
 					"name": "Languages",
 					"entries": [
-						"You can speak, read, and write Common and Draconic.",
+						"You can speak, read, and write {@language Common|PHB} and {@language Draconic|PHB}.",
 						"Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants. "
 					],
 					"data": {
@@ -16372,7 +16401,7 @@
 				{
 					"name": "Languages",
 					"entries": [
-						"You can speak, read, and write Common and Draconic.",
+						"You can speak, read, and write {@language Common|PHB} and {@language Draconic|PHB}.",
 						"Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants. "
 					],
 					"data": {
@@ -16929,6 +16958,186 @@
 						"entries": [
 							"Wild elves have an appearance similar to that of wood elves, but are notably more feral and savage. Generations of living in the wilderness have refined them into a much hardier form, and they often find themselves more readily accepted by the beasts of the forests than other elves, even their wood elf cousins. The green elves of Faerun are wild elves, as are the grugach of Greyhawk."
 						]
+					},
+					{
+						"name": "Additional Half-Elf Traits",
+						"type": "inset",
+						"entries": [
+							"At your DM's discretion, you can create a half-elf character whose elven heritage stems from one of the elven subraces mentioned in this book. If so, you can exchange your Skill Versatility trait with another trait based on your elven heritage. Driders aren't included as they are either unable to reproduce or their young are always born as driders.",
+							{
+								"type": "list",
+								"items": [
+									"{@b Avariel.} You gain the Wings trait of the {@race Dragonborn Revised (Wayfarer)|LEGDRAG|Wayfarer dragonborn subrace} (page 7), but as feathered wings instead.",
+									"{@b Drow-Dragon (Half-Deep).} You gain the Infravision trait of the {@race Elf (Drow-Dragon)|LEGDRAG|drow-dragon (half-deep)}.",
+									"{@b Lythari.} You gain the Wolf Shape trait of the {@race Elf (Lythari)|LEGDRAG|lythari}.",
+									"{@b Wild Elf.} You gain the wild elf's Agent of the {@race Elf (Wild)|LEGDRAG|Wilds trait}.",
+									"{@b Zekyl.} You gain the Change Shape trait of the {@race Elf (Zekyl)|LEGDRAG|zekyl}."
+								]
+							}
+						]
+					},
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
+						],
+						"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Drider",
+			"source": "LEGDRAG",
+			"raceName": "Elf",
+			"raceSource": "PHB",
+			"page": 36,
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"ability": [
+				{
+					"cha": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						{
+							"name": "Drider",
+							"entries": [],
+							"type": "entries"
+						}
+					]
+				},
+				"{@b You have access to all items, feats and epic boons that drow have access to (see also page 101)}. Drow who undergo the transformation into a drider replace their drow racial traits with the drider racial traits described here.",
+				{
+					"name": "Ability Score Increase",
+					"type": "entries",
+					"entries": [
+						"Your Charisma score increases by 1."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Speed",
+					"entries": [
+						"Your base walking speed is 30 feet, and you have a climbing speed of 30 feet."
+					]
+				},
+				{
+					"name": "Drider Body",
+					"type": "entries",
+					"entries": [
+						"You have a climbing speed equal to your walking speed, you can climb on webbing, and you ignore movement restrictions and conditions caused by webbing.",
+						"You can climb while leaving your hands free. You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.",
+						"Your own body counts as a usable {@item weaver's tools|PHB} that you are proficient with and only you can use.",
+						"At 3rd level, you can move up, down, and across vertical surfaces and upside down along ceilings. Also at 3rd level, you can use your webbing as a resource to weave objects. Doing so you can create silken rope, which you can also use to anchor your web, as well as other objects at your DM's discretion. As part of a long rest, you can now either create 4 sq. yds. of silk, or a silken outfit that weights 4 lbs. It can be worn under robes, and wearers can calculate their AC as 11 + their Dexterity modifier."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Drider Magic",
+					"entries": [
+						"You know the {@spell poison spray|PHB} cantrip, and you can choose to cast it as a melee spell attack. When doing so, the spell requires no components, and when you hit the target it automatically fails the saving throw and takes an extra 1d4 piercing damage, as you deliver the spell through your fangs.",
+						"At 3rd level you can cast the {@spell web|PHB} spell once with this trait, and you regain the ability to do so when you finish a long rest.",
+						"When you cast the web spell, and you concentrate on it for 1 minute while it is anchored, it becomes permanent and you no longer need to concentrate on it. At 5th level, your webbing becomes harder to see, and creatures other than driders or spiders must make a Wisdom (Perception) check against your spell save DC in order to see your webbing.",
+						"You can also cast this spell using spell slots you have of 2nd level or higher. Your spellcasting ability for these spells is Intelligence, Wisdom, or Charisma (your choice)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Drow Spell Resistance (see also page 102)",
+					"entries": [
+						"You have advantage on Intelligence, Wisdom, and Charisma saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Superior Darkvision",
+					"entries": [
+						"Accustomed to the depths of the Underdark, you have superior vision in dark and dim conditions. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					],
+					"data": {
+						"overwrite": "Darkvision"
+					},
+					"type": "entries"
+				},
+				{
+					"type": "entries",
+					"name": "Sensitive Eyes",
+					"entries": [
+						"While in sunlight, you have disadvantage on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				}
+			],
+			"darkvision": 120,
+			"traitTags": [
+				"Improved Resting",
+				"Monstrous Race",
+				"Tool Proficiency"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"3": {
+							"daily": {
+								"1": [
+									"web"
+								]
+							}
+						}
+					},
+					"known": {
+						"1": [
+							"poison spray|phb#c"
+						]
+					},
+					"ability": "inherit"
+				}
+			],
+			"toolProficiencies": [
+				{
+					"weaver's tools": true
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"name": "Subraces, elven (Draconic)",
+						"type": "section",
+						"entries": [
+							"The Underdark is a dangerous place, as aside from monster threats there is also the influence of the faerzress. The faerzress is a magical radiation found only in the Underdark, and is a remnant of the forces that shaped the Underdark itself. This radiation has a profound effect on the drow, and causes the children of drow and dragons to be genetically more drow than dragon. The zekyl and drow-dragons (half-deep) are the most common of these \"half dragons\", and each are considered to be their own elven subrace.",
+							"At your DM's discretion, if you are playing an elf, you can choose one of the following options as your elven subrace."
+						]
+					},
+					{
+						"name": "Note",
+						"entries": [
+							"These subraces gain six traits while other elven subraces gain fewer traits, because Sensitive Eyes is a negative trait and Superior Darkvision compensates for it. See also page 102 for additional trait options for drow"
+						],
+						"type": "inset"
+					},
+					{
+						"name": "Drider",
+						"entries": [
+							"Driders are drow that have been transformed from the waist down so they have the body of a spider. The transformation is typical a punishment for failing a test of Lolth, and turns them into centaur-like creatures; appearing as drow from the waist up, and with their lower portions replaced by the abdomen and legs of immense spiders.",
+							"Driders are generally sexless, because Lolth did not want to have a race of enemies to the drow. Yet there are rumors from distant drow settlements, of how enemies of Lolth reversed this for a few, to try to create a race of drow-hating driders that can reproduce. The stories also tell of how the process failed, as the newly created driders were generally kind hearted, and Lolth let them live as a way to mock the failed attempt. Regardless of what their origins are, they are often viewed with contempt by drow society. Because of this many driders hold contempt for drow and Lolth, or they become zealots that try to redeem themselves before the spider queen, while yet others simply try to get by and use their ability to create spider silk to make beautiful silken clothes. Driders that have been directly created by Lolth's transformation tend to look more monstrous, while those from the rumors tend to look a little more comely yet still somewhat unpleasant due to their spider bodies. Those directly created by Lolth's transformation are often bloodthirsty, and many harbor a death wish that makes them want to die in battle, preferably against drow. While many others, like the more kind hearted driders from the rumors, become gifted weavers or even accomplished adventurers."
+						],
+						"type": "entries"
 					},
 					{
 						"name": "Additional Half-Elf Traits",
