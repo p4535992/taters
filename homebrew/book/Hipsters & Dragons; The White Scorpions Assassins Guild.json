@@ -42,6 +42,9 @@
 			"dmgType": "P",
 			"dagger": true,
 			"weapon": true,
+            "page": 9,
+			"tier": "major",
+			"bonusWeapon": "+1",
 			"entries": [
 				"If an acolyte survives the Tomb of Scorpions ceremony they are given a specially crafted dagger, referred to as their \"sting\". This dagger has a poison chamber in the hilt and a groove in the centre of the blade, which runs from the bottom of the hilt to the tip, where a fine web of incisions help distribute the poison once a hit a scored.",
 				"When a button on the inside of the hilt is pressed with the thumb it releases one dose of poison onto the blade (in game terms this is a free action as it requires a fraction of a second to perform). The blade is coated with venom for one minute, before drying, or until the wielder scores a successful attack. The chamber can hold five doses of poison at a time, and can be easily refilled.",
@@ -55,10 +58,6 @@
 					]
 				}
 			],
-			"page": 9,
-			"basicRules": true,
-			"tier": "major",
-			"bonusWeapon": "+1",
 			"fluff": {
 				"images": [
 					{
@@ -162,13 +161,19 @@
             "startingEquipment": [
                 {
                     "_": [
+                        "shortsword|phb",
                         {
-                            "special": "weapon black (enough for one shortsword, or two daggers)"
+                            "item": "dagger|phb",
+                            "quantity": 2
                         },
                         {
-                            "special": "face black (charcoal)"
+                            "special": "charcoal"
                         },
 						"grappling hook|phb",
+                        {
+                            "item": "pouch|phb",
+                            "containsValue": 1000
+                        },
 						"caltrops (bag of 20)|phb",
                         "common clothes|phb",
                         {
@@ -177,7 +182,7 @@
                         },
 						{
                             "item": "deathstalker scorpion venom (vial)|TWSAG",
-                            "count": 5
+                            "quantity": 5
                         },
 						"sting of Steel|TWSAG"
                     ]
