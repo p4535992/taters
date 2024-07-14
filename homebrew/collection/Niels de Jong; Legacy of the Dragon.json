@@ -6182,7 +6182,10 @@
 			"savingThrowForced": [
 				"strength"
 			],
-			"tokenUrl": "https://i.imgur.com/uFwnsaX.png",
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/uFwnsaX.png"
+			},
 			"fluff": {
 				"entries": [
 					"{@b Giant Weasel}",
@@ -6286,7 +6289,10 @@
 			"savingThrowForced": [
 				"strength"
 			],
-			"tokenUrl": "https://i.imgur.com/uFwnsaX.png",
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/uFwnsaX.png"
+			},
 			"fluff": {
 				"entries": [
 					"{@b Dire Weasel}",
@@ -6302,6 +6308,460 @@
 						"href": {
 							"type": "external",
 							"url": "https://i.imgur.com/GIjh77S.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Murgul",
+			"source": "LEGDRAG",
+			"shortName": "Murgul",
+			"page": 123,
+			"type": "humanoid",
+			"size": [
+				"S"
+			],
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d6 + 4",
+				"average": 18
+			},
+			"speed": {
+				"walk": 25,
+				"swim": 30
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 12,
+			"int": 12,
+			"wis": 12,
+			"cha": 8,
+			"passive": 15,
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Water Dependency",
+					"entries": [
+						"The murgul can breathe air and water, but it needs to be submerged at least once every 8 hours or suffer a level of {@condition exhaustion}."
+					]
+				},
+				{
+					"name": "Poisonous Skin",
+					"entries": [
+						" Any creature that comes into direct contact  with the murgul's skin must make a {@dc 11} Constitution saving throw or become {@condition poisoned} for 1 minute. A {@condition poisoned} creature no longer in direct contact with a murgul's skin can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+					]
+				},
+				{
+					"name": "Blood Frenzy",
+					"entries": [
+						"The murgul has advantage on attack rolls against any creature that doesn't have all its hit points."
+					]
+				}
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Draconic",
+				"Nerglish"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"skill": {
+				"perception": "+5",
+				"stealth": "+6"
+			},
+			"resist": [],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage, plus 5 ({@damage 2d4}) poison damage."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage, plus 5 ({@damage 2d4}) poison damage."
+					]
+				},
+				{
+					"name": "Javelin",
+					"entries": [
+						"{@atk mw,rw} {@hit 3} to hit, reach 5 ft. or range 20/120 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage in melee, or 4 ({@damage 1d6 + 1}) piercing damage at range, plus 5 ({@damage 2d4}) poison damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW",
+				"THW"
+			],
+			"attachedItems": [
+				"javelin|phb",
+				"shortsword|phb"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/FWahL6O.png"
+			},
+			"fluff": {
+				"entries": [
+					"The murgul are a race that resemble a mix between a fish and a frog. They are famous for the gurgling sounds they make when they talk, and infamous for attacking their foes in large numbers. They were artificially created by the bronze naga, and serve them as labor and soldiers, as they count as being permanently charmed by all bronze naga. An exception are the so called \"renegade\" murgul, who are not charmed this way, and who are always cast out by other murgul. These murgul often start a career as adventurers, or form isolated villages with other renegade murgul. However, the \"renegade\" condition is not hereditary, and these villages will often join bronze naga if they come into contact with them. Even without their naga masters, murgul will organize themselves into caste systems similar to grungs. That, and their poisonous skin, makes some scholars speculate that they are part grung.",
+					"Similar to their bronze naga masters, they have developed a taste for shark meat (and Sahuagin, as both taste very similar). They prefer to speak in Nerglish, as that is easy for them to talk in, and those who speak Draconic can understand this language."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/tOI5hRG.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Pseudodragon",
+			"size": [
+				"T"
+			],
+			"type": "dragon",
+			"source": "LEGDRAG",
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "9 + your level "
+			},
+			"speed": {
+				"walk": 15,
+				"fly": 60
+			},
+			"str": 6,
+			"dex": 18,
+			"con": 14,
+			"int": 10,
+			"wis": 12,
+			"cha": 14,
+			"passive": 13,
+			"shortName": "Pseudodragon",
+			"page": 80,
+			"senses": [
+				"blindsight 10 ft.",
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"save": {
+				"dex": "+6",
+				"con": "+4",
+				"wis": "+3"
+			},
+			"skill": {
+				"perception": "+3",
+				"stealth": "+6"
+			},
+			"trait": [
+				{
+					"name": "Keen Senses",
+					"entries": [
+						"The pseudodragon has advantage on Wisdom (Perception) checks that rely on sight, hearing, or smell."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The pseudodragon has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Limited Telephaty",
+					"entries": [
+						"The pseudodragon can communicate simple ideas, emotions, and images telepathically with any creature within 100 ft. of it that can understand a language."
+					]
+				},
+				{
+					"name": "Familiar",
+					"entries": [
+						"This pseudodragon has a magic, telepathic bond with you. You can sense what the pseudodragon senses as long as you are within 1 mile of each other. You share its Magic Resistance trait if it is within 10 feet of you. "
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Magic Resistance"
+			],
+			"action": [
+				{
+					"name": "Sting",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage. The target must succeed on a Constitution saving throw against your spell save DC -5, or fall {@condition unconscious} for 1 minute. It wakes if it takes damage or another creature uses an action to wake it."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"unconscious"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/kESjGCW.png"
+			},
+			"damageTags": [
+				"P"
+			],
+			"fluff": {
+				"entries": [
+					"Unlike wizards, sorcerers usually don't have familiars to act as their companions. A way around that is to gain the trust and friendship of a pseudodragon. This option is not a standard part of this revision and your DM must approve of it.",
+					"At your Dungeon Master's discretion you may be approached by a pseudodragon during your adventures. Due to its advantages, it is recommended that this happens around 5th level. After you have gained the pseudodragon's trust, usually gained over an extended period of time, you may bond with it. Your pseudodragon will gain the game statistics listed in this work instead of those in the Monster Manual, provided you are a sorcerer or wizard.",
+					"As an action, you can summon your Pseudodragon to appear within 5 feet of you, if it is willing. Should your pseudodragon die, then you can revive it with full health by expending a 1st level (or higher) spell slot. After you revive your pseudodragon, it will not approach you for (usually) 8 hours as it is upset that you allowed it to die. It will however not break the familiar bond it has with you, but be sure to pamper it afterwards, like you would a cat.",
+					"However, even though your pseudodragon loves being pampered, you must avoid calling it your \"pet\" at any cost, for there is a chance that it will leave you if you do. After all, your pseudodragon companion is your friend, not some kind of dog. Despite this, it loves being called cute names, and it adores being cuddled like a pet would.",
+					"Pseudodragons actually revel in the cuteness of their spoken name, and names like Snookie or Cuddles or Boo Boo are quite popular.",
+					"Pseudodragons are also famous for their venom, which is used as a magical ingredient, and fetches a high price on the market. Your pseudodragon will however not allow you to \"milk\" it, and if you slay it you can never bond with another pseudodragon again."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/FareX9M.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Pseudodragon - Faerie Dragon Variant",
+			"size": [
+				"T"
+			],
+			"type": "dragon",
+			"source": "LEGDRAG",
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "9 + your level "
+			},
+			"speed": {
+				"walk": 15,
+				"fly": 60
+			},
+			"str": 6,
+			"dex": 18,
+			"con": 14,
+			"int": 10,
+			"wis": 12,
+			"cha": 14,
+			"passive": 13,
+			"shortName": "Pseudodragon - Faerie Dragon Variant",
+			"page": 80,
+			"senses": [
+				"blindsight 10 ft.",
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"save": {
+				"dex": "+6",
+				"con": "+4",
+				"wis": "+3"
+			},
+			"skill": {
+				"perception": "+3",
+				"stealth": "+6"
+			},
+			"trait": [
+				{
+					"name": "Keen Senses",
+					"entries": [
+						"The pseudodragon has advantage on Wisdom (Perception) checks that rely on sight, hearing, or smell."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The pseudodragon has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Limited Telephaty",
+					"entries": [
+						"The pseudodragon can communicate simple ideas, emotions, and images telepathically with any creature within 100 ft. of it that can understand a language."
+					]
+				},
+				{
+					"name": "Familiar",
+					"entries": [
+						"This pseudodragon has a magic, telepathic bond with you. You can sense what the pseudodragon senses as long as you are within 1 mile of each other. You share its Magic Resistance trait if it is within 10 feet of you. "
+					]
+				},
+				{
+					"name": "Superior Invisibility",
+					"entries": [
+						"As a bonus action, the dragon can magically turn {@condition invisible} until its {@status concentration} ends (as if {@status concentration||concentrating} on a spell). Any equipment the dragon wears or carries is {@condition invisible} with it. "
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Magic Resistance"
+			],
+			"conditionInflict": [
+				"invisible"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The dragon's spell save DC is equal to your own. It can innately cast a number of spells, requiring no material components. As you gain levels the dragon ages and changes color, and gains additional spells as shown below.",
+						"{@b Level 3:} Red, {@spell dancing lights}, {@spell mage hand}, {@spell minor illusion}",
+						"{@b Level 4:} Orange, 1/day: {@spell color spray }",
+						"{@b Level 5:} Yellow, 1/day: {@spell mirror image}",
+						"{@b Level 6:} Green, 1/day: {@spell suggestion }",
+						"{@b Level 7:} Blue, 1/day: {@spell major image }",
+						"{@b Level 8:} Indigo, 1/day: {@spell hallucinatory terrain }",
+						"{@b Level 9:} Violet, 1/day: {@spell polymorph}"
+					],
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"damageTags": [
+				"P"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d1+ 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Euphoria Breath {@recharge 5}",
+					"entries": [
+						"The dragon exhales a puff of euphoria gas at one creature within 5 feet of it. The target must succeed on a Wisdom saving throw against your spell save DC -3, or for 1 minute, the target can't take reactions and must roll a {@dice d6} at the start of each of its turns to determine its behavior during the turn: ",
+						{
+							"type": "list",
+							"items": [
+								"{@b 1-4.} The target takes no action or bonus action and uses all of its movement to move in a random direction. ",
+								"{@b 5-6.} The target doesn't move, and the only thing it can do on its turn is make a Wisdom saving throw against your spell save DC -3, ending the effect on itself on a success."
+					
+							]
+						}
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/2GAO8ol.png"
+			},
+			"fluff": {
+				"entries": [
+					"Unlike wizards, sorcerers usually don't have familiars to act as their companions. A way around that is to gain the trust and friendship of a pseudodragon. This option is not a standard part of this revision and your DM must approve of it.",
+					"At your Dungeon Master's discretion you may be approached by a pseudodragon during your adventures. Due to its advantages, it is recommended that this happens around 5th level. After you have gained the pseudodragon's trust, usually gained over an extended period of time, you may bond with it. Your pseudodragon will gain the game statistics listed in this work instead of those in the Monster Manual, provided you are a sorcerer or wizard.",
+					"As an action, you can summon your Pseudodragon to appear within 5 feet of you, if it is willing. Should your pseudodragon die, then you can revive it with full health by expending a 1st level (or higher) spell slot. After you revive your pseudodragon, it will not approach you for (usually) 8 hours as it is upset that you allowed it to die. It will however not break the familiar bond it has with you, but be sure to pamper it afterwards, like you would a cat.",
+					"However, even though your pseudodragon loves being pampered, you must avoid calling it your \"pet\" at any cost, for there is a chance that it will leave you if you do. After all, your pseudodragon companion is your friend, not some kind of dog. Despite this, it loves being called cute names, and it adores being cuddled like a pet would.",
+					"Pseudodragons actually revel in the cuteness of their spoken name, and names like Snookie or Cuddles or Boo Boo are quite popular.",
+					"Pseudodragons are also famous for their venom, which is used as a magical ingredient, and fetches a high price on the market. Your pseudodragon will however not allow you to \"milk\" it, and if you slay it you can never bond with another pseudodragon again.",
+					"{@b Faerie Dragon Variant:} Optionally, a DM can allow sorcerer and wizard players to bond with a faerie dragon instead of a pseudodragon. The faerie dragon is a close relative of the pseudodragon, however they are especially mischievous, and often refered to as the pranksters of the wild. Like true dragons, faerie dragons grow stronger with age, but they mature much more quickly and live shorter lives. Because their predominant scale hue runs the colors of the rainbow over their lifetime, their color is a direct indicator of their age and power. However, faerie dragons who bond with wizards or sorcerers age more rapidly, while extending their overall lifespan. Your faerie dragon follows the same rules as a pseudodragon, and shares its stat block. However, it loses its Sting action and gains the following features."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/SYVQPao.png"
 						}
 					}
 				]
@@ -6394,19 +6854,19 @@
 			"value": 25000,
 			"entries": [
 				"A necklace, headband or other worn trinket that aids in the alignment of the mind, body and spirit. Some versions of this item are headbands that fully cover the wearer's eyes, yet do not hinder the wearer's vision at all. While wearing this item, your unarmed strikes and natural weapons count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage, and you gain a bonus to attack and damage rolls with unarmed strikes and natural weapons which is determined by the item's rarity. If you are a monk then you can also add this bonus to special attacks related to your monk features that don't involve a weapon, a spell, or an unarmed strike (such as the sun bolts of the Way of the Sun Soul or the bending strikes of the Way of the Four Elements). If these special attacks deal bludgeoning, piercing, or slashing damage, then they count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. If you already receive a bonus to attack and damage rolls with unarmed strikes, natural weapons, or these special attacks, then the bonuses don't stack and you use the highest bonus.",
-				"If you are a monk, you can use your action while wearing this item to regain ki points equal to one roll of your Martial Arts die. You can’t use this action again until the next dawn."
+				"If you are a monk, you can use your action while wearing this item to regain ki points equal to one roll of your Martial Arts die. You can't use this action again until the next dawn."
 			],
 			"fluff": {
 				"entries": [
 					"A necklace, headband or other worn trinket that aids in the alignment of the mind, body and spirit. Some versions of this item are headbands that fully cover the wearer's eyes, yet do not hinder the wearer's vision at all. While wearing this item, your unarmed strikes and natural weapons count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage, and you gain a bonus to attack and damage rolls with unarmed strikes and natural weapons which is determined by the item's rarity. If you are a monk then you can also add this bonus to special attacks related to your monk features that don't involve a weapon, a spell, or an unarmed strike (such as the sun bolts of the Way of the Sun Soul or the bending strikes of the Way of the Four Elements). If these special attacks deal bludgeoning, piercing, or slashing damage, then they count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. If you already receive a bonus to attack and damage rolls with unarmed strikes, natural weapons, or these special attacks, then the bonuses don't stack and you use the highest bonus.",
-					"If you are a monk, you can use your action while wearing this item to regain ki points equal to one roll of your Martial Arts die. You can’t use this action again until the next dawn."
+					"If you are a monk, you can use your action while wearing this item to regain ki points equal to one roll of your Martial Arts die. You can't use this action again until the next dawn."
 				],
 				"images": [
 					{
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "XXX"
+							"url": "https://i.imgur.com/GkWRtub.png"
 						}
 					}
 				]
@@ -6424,19 +6884,19 @@
 			"value": 75000,
 			"entries": [
 				"A necklace, headband or other worn trinket that aids in the alignment of the mind, body and spirit. Some versions of this item are headbands that fully cover the wearer's eyes, yet do not hinder the wearer's vision at all. While wearing this item, your unarmed strikes and natural weapons count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage, and you gain a bonus to attack and damage rolls with unarmed strikes and natural weapons which is determined by the item's rarity. If you are a monk then you can also add this bonus to special attacks related to your monk features that don't involve a weapon, a spell, or an unarmed strike (such as the sun bolts of the Way of the Sun Soul or the bending strikes of the Way of the Four Elements). If these special attacks deal bludgeoning, piercing, or slashing damage, then they count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. If you already receive a bonus to attack and damage rolls with unarmed strikes, natural weapons, or these special attacks, then the bonuses don't stack and you use the highest bonus.",
-				"If you are a monk, you can use your action while wearing this item to regain ki points equal to one roll of your Martial Arts die. You can’t use this action again until the next dawn."
+				"If you are a monk, you can use your action while wearing this item to regain ki points equal to one roll of your Martial Arts die. You can't use this action again until the next dawn."
 			],
 			"fluff": {
 				"entries": [
 					"A necklace, headband or other worn trinket that aids in the alignment of the mind, body and spirit. Some versions of this item are headbands that fully cover the wearer's eyes, yet do not hinder the wearer's vision at all. While wearing this item, your unarmed strikes and natural weapons count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage, and you gain a bonus to attack and damage rolls with unarmed strikes and natural weapons which is determined by the item's rarity. If you are a monk then you can also add this bonus to special attacks related to your monk features that don't involve a weapon, a spell, or an unarmed strike (such as the sun bolts of the Way of the Sun Soul or the bending strikes of the Way of the Four Elements). If these special attacks deal bludgeoning, piercing, or slashing damage, then they count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. If you already receive a bonus to attack and damage rolls with unarmed strikes, natural weapons, or these special attacks, then the bonuses don't stack and you use the highest bonus.",
-					"If you are a monk, you can use your action while wearing this item to regain ki points equal to one roll of your Martial Arts die. You can’t use this action again until the next dawn."
+					"If you are a monk, you can use your action while wearing this item to regain ki points equal to one roll of your Martial Arts die. You can't use this action again until the next dawn."
 				],
 				"images": [
 					{
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "XXX"
+							"url": "https://i.imgur.com/GkWRtub.png"
 						}
 					}
 				]
@@ -6454,19 +6914,19 @@
 			"value": 150000,
 			"entries": [
 				"A necklace, headband or other worn trinket that aids in the alignment of the mind, body and spirit. Some versions of this item are headbands that fully cover the wearer's eyes, yet do not hinder the wearer's vision at all. While wearing this item, your unarmed strikes and natural weapons count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage, and you gain a bonus to attack and damage rolls with unarmed strikes and natural weapons which is determined by the item's rarity. If you are a monk then you can also add this bonus to special attacks related to your monk features that don't involve a weapon, a spell, or an unarmed strike (such as the sun bolts of the Way of the Sun Soul or the bending strikes of the Way of the Four Elements). If these special attacks deal bludgeoning, piercing, or slashing damage, then they count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. If you already receive a bonus to attack and damage rolls with unarmed strikes, natural weapons, or these special attacks, then the bonuses don't stack and you use the highest bonus.",
-				"If you are a monk, you can use your action while wearing this item to regain ki points equal to one roll of your Martial Arts die. You can’t use this action again until the next dawn."
+				"If you are a monk, you can use your action while wearing this item to regain ki points equal to one roll of your Martial Arts die. You can't use this action again until the next dawn."
 			],
 			"fluff": {
 				"entries": [
 					"A necklace, headband or other worn trinket that aids in the alignment of the mind, body and spirit. Some versions of this item are headbands that fully cover the wearer's eyes, yet do not hinder the wearer's vision at all. While wearing this item, your unarmed strikes and natural weapons count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage, and you gain a bonus to attack and damage rolls with unarmed strikes and natural weapons which is determined by the item's rarity. If you are a monk then you can also add this bonus to special attacks related to your monk features that don't involve a weapon, a spell, or an unarmed strike (such as the sun bolts of the Way of the Sun Soul or the bending strikes of the Way of the Four Elements). If these special attacks deal bludgeoning, piercing, or slashing damage, then they count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. If you already receive a bonus to attack and damage rolls with unarmed strikes, natural weapons, or these special attacks, then the bonuses don't stack and you use the highest bonus.",
-					"If you are a monk, you can use your action while wearing this item to regain ki points equal to one roll of your Martial Arts die. You can’t use this action again until the next dawn."
+					"If you are a monk, you can use your action while wearing this item to regain ki points equal to one roll of your Martial Arts die. You can't use this action again until the next dawn."
 				],
 				"images": [
 					{
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "XXX"
+							"url": "https://i.imgur.com/GkWRtub.png"
 						}
 					}
 				]
@@ -6475,7 +6935,7 @@
 		{
 			"name": "Sorcerous Cleaver",
 			"source": "LEGDRAG",
-			"page": 120,
+			"page": 81,
 			"baseItem": "battleaxe|phb",
 			"type": "M",
 			"rarity": "rare",
@@ -6501,20 +6961,97 @@
 			"entries": [
 				"When making an attack roll with a spell, you can engulf the weapon with the spell's energy type and swing it into melee, or throw it towards your foes after which it instantly returns to your hand due to the spell's magic. You can also use a bonus action to summon it to your hand, if it is on the same plane of existence. You can use it as a spellcasting focus.",
 				"You gain a +1 bonus to attack and damage rolls made with this magic battleaxe. You are considered proficient with it even if you lack proficiency with battleaxes.",
-				"This battleaxe grants a +2 bonus to spell attack rolls. When you hit a creature with a spell that requires an attack roll, the target takes an extra 1d8 slashing damage."
+				"This battleaxe grants a +2 bonus to spell attack rolls. When you hit a creature with a spell that requires an attack roll, the target takes an extra 1d8 slashing damage.",
+				{
+					"name": "Note",
+					"type": "inset",
+					"entries": [
+						"Although it is thematic, dragonborn and half dragon Draconic Bloodline players do not have to pick the same Dragon Ancestor as their racial Draconic Ancestry. This revision adds an additional benefit for players that do go that route, as they already have the dragon's resistance. But it is perfectly reasonable for a half dragon or dragonborn sorcerer to draw their power from one of their other dragon ancestors, granting them a mix of draconic traits from both bloodlines. An example of this is the half black dragon sorceress below, whose magical might comes from her gold dragon ancestor, granting her a unique appearance."
+					]
+				}
 			],
 			"fluff": {
 				"entries": [
 					"When making an attack roll with a spell, you can engulf the weapon with the spell's energy type and swing it into melee, or throw it towards your foes after which it instantly returns to your hand due to the spell's magic. You can also use a bonus action to summon it to your hand, if it is on the same plane of existence. You can use it as a spellcasting focus.",
 					"You gain a +1 bonus to attack and damage rolls made with this magic battleaxe. You are considered proficient with it even if you lack proficiency with battleaxes.",
-					"This battleaxe grants a +2 bonus to spell attack rolls. When you hit a creature with a spell that requires an attack roll, the target takes an extra 1d8 slashing damage."
+					"This battleaxe grants a +2 bonus to spell attack rolls. When you hit a creature with a spell that requires an attack roll, the target takes an extra 1d8 slashing damage.",
+					{
+						"name": "Note",
+						"type": "inset",
+						"entries": [
+							"Although it is thematic, dragonborn and half dragon Draconic Bloodline players do not have to pick the same Dragon Ancestor as their racial Draconic Ancestry. This revision adds an additional benefit for players that do go that route, as they already have the dragon's resistance. But it is perfectly reasonable for a half dragon or dragonborn sorcerer to draw their power from one of their other dragon ancestors, granting them a mix of draconic traits from both bloodlines. An example of this is the half black dragon sorceress below, whose magical might comes from her gold dragon ancestor, granting her a unique appearance."
+						]
+					}
 				],
 				"images": [
 					{
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "XXX"
+							"url": "https://i.imgur.com/FTCH0uY.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Sorcerous Hammer",
+			"source": "LEGDRAG",
+			"page": 81,
+			"baseItem": "warhammer|phb",
+			"type": "M",
+			"rarity": "rare",
+			"reqAttune": "by a sorcerer",
+			"reqAttuneTags": [
+				{
+					"class": "Sorcerer"
+				}
+			],
+			"weight": 4,
+			"value": 150000,
+			"weaponCategory": "martial",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "B",
+			"dmg2": "1d10",
+			"axe": true,
+			"weapon": true,
+			"bonusWeapon": "+1",
+			"bonusSpell": "+2",
+			"entries": [
+				"{@b This weapon is a variant of the Sorcerous Cleaver, and a favorite of half red dragon Storm Sorcerers.}",
+				"When making an attack roll with a spell, you can engulf the weapon with the spell's energy type and swing it into melee, or throw it towards your foes after which it instantly returns to your hand due to the spell's magic. You can also use a bonus action to summon it to your hand, if it is on the same plane of existence. You can use it as a spellcasting focus.",
+				"You gain a +1 bonus to attack and damage rolls made with this magic warhammer. You are considered proficient with it even if you lack proficiency with warhammers.",
+				"This warhammer grants a +2 bonus to spell attack rolls. When you hit a creature with a spell that requires an attack roll, the target takes an extra 1d8 slashing damage.",
+				{
+					"name": "Note",
+					"type": "inset",
+					"entries": [
+						"Although it is thematic, dragonborn and half dragon Draconic Bloodline players do not have to pick the same Dragon Ancestor as their racial Draconic Ancestry. This revision adds an additional benefit for players that do go that route, as they already have the dragon's resistance. But it is perfectly reasonable for a half dragon or dragonborn sorcerer to draw their power from one of their other dragon ancestors, granting them a mix of draconic traits from both bloodlines. An example of this is the half black dragon sorceress below, whose magical might comes from her gold dragon ancestor, granting her a unique appearance."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"When making an attack roll with a spell, you can engulf the weapon with the spell's energy type and swing it into melee, or throw it towards your foes after which it instantly returns to your hand due to the spell's magic. You can also use a bonus action to summon it to your hand, if it is on the same plane of existence. You can use it as a spellcasting focus.",
+					"You gain a +1 bonus to attack and damage rolls made with this magic warhammer. You are considered proficient with it even if you lack proficiency with warhammers.",
+					"This warhammer grants a +2 bonus to spell attack rolls. When you hit a creature with a spell that requires an attack roll, the target takes an extra 1d8 slashing damage.",
+					{
+						"name": "Note",
+						"type": "inset",
+						"entries": [
+							"Although it is thematic, dragonborn and half dragon Draconic Bloodline players do not have to pick the same Dragon Ancestor as their racial Draconic Ancestry. This revision adds an additional benefit for players that do go that route, as they already have the dragon's resistance. But it is perfectly reasonable for a half dragon or dragonborn sorcerer to draw their power from one of their other dragon ancestors, granting them a mix of draconic traits from both bloodlines. An example of this is the half black dragon sorceress below, whose magical might comes from her gold dragon ancestor, granting her a unique appearance."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/uzLv05R.png"
 						}
 					}
 				]
@@ -6573,7 +7110,7 @@
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "XXX"
+							"url": "https://i.imgur.com/SIxz0Ax.png"
 						}
 					}
 				]
@@ -7053,7 +7590,7 @@
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "XXX"
+							"url": "https://i.imgur.com/mEyamh3.png"
 						}
 					}
 				]
@@ -13983,7 +14520,30 @@
 				"Some lamia have medusa blood running in their veins, and can embrace the devastating abilities of this heritage. Many, though not all, have snakes as hair which they can use to bite with instead. You deal an extra 1d6 poison damage to a creature whenever you hit it with your bite attack.",
 				"You can use your action to force a creature within 30 feet that can see your eyes to make a DC 10 Constitution saving throw. On a failure, the creature is paralyzed until the end of its next turn. You can use your bonus action to force a creature that failed this saving throw within the past minute to repeat this saving throw with disadvantage. Each time it fails, it is paralyzed again until the end of its next turn. When a creature is paralyzed in this way for the third time in a span of 1 minute, it is instantly petrified. As an action, you can end the petrified condition on a creature that you can see and that you petrified yourself.",
 				"Starting at 10th level, the DC for this saving throw increases to 12. At 15th level, the DC increases to 14. At 20th level, the DC increases to 16."
-			]
+			],
+			"fluff": {
+				"entries": [
+					"Some lamia have medusa blood running in their veins, and can embrace the devastating abilities of this heritage. Many, though not all, have snakes as hair which they can use to bite with instead. You deal an extra 1d6 poison damage to a creature whenever you hit it with your bite attack.",
+					"You can use your action to force a creature within 30 feet that can see your eyes to make a DC 10 Constitution saving throw. On a failure, the creature is paralyzed until the end of its next turn. You can use your bonus action to force a creature that failed this saving throw within the past minute to repeat this saving throw with disadvantage. Each time it fails, it is paralyzed again until the end of its next turn. When a creature is paralyzed in this way for the third time in a span of 1 minute, it is instantly petrified. As an action, you can end the petrified condition on a creature that you can see and that you petrified yourself.",
+					"Starting at 10th level, the DC for this saving throw increases to 12. At 15th level, the DC increases to 14. At 20th level, the DC increases to 16.",
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
+						],
+						"type": "entries"
+					}			
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/ONFa0SO.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Blessed by the Dragon Gods",
@@ -18104,6 +18664,13 @@
 						"You can speak, read, and write {@language Common}, {@language Draconic} and {@language Nerglish|COMLanguage}. Nerglish is the murgul's guttural language. Those who speak Draconic can understand it."
 					],
 					"type": "entries"
+				},
+				{
+					"name": "Variant Murgul",
+					"entries": [
+						"Some murgul are more adept to living in the dark depths of the sea, and gain Darkvision out to a range of 60 feet. In exchange however, they must submerge themselves in water once every 8 hours or suffer a level of exhaustion due to dehydration."
+					],
+					"type": "inset"
 				}
 			],
 			"fluff": {
@@ -18148,7 +18715,7 @@
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "XXX"
+							"url": "https://i.imgur.com/tOI5hRG.jpg"
 						}
 					}
 				]
