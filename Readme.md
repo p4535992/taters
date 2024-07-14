@@ -35,6 +35,8 @@ https://5etools-mirror-1.github.io/img/blank.png
 ],
 
 
+https://github.com/5etools-mirror-2/5etools-img/raw/main/blank.webp
+
 
 
 
