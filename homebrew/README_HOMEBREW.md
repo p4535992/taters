@@ -118,3 +118,35 @@ BREW-548 u/That_Kael; Awakened Shrub 2.0
 - BREW-298 Blazing Dawn Players Companion 
 
 - BREW-295 Caleb's assorted homebrew??? (collection of all the homebrew I support)
+
+
+
+You know the {@spell friends} cantrip. When you reach 3rd level, you can cast the {@spell charm person} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell suggestion} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+                    ],
+
+"additionalSpells": [
+    {
+        "innate": {
+            "3": {
+                "daily": {
+                    "1": [
+                        "charm person#2"
+                    ]
+                }
+            },
+            "5": {
+                "daily": {
+                    "1": [
+                        "suggestion"
+                    ]
+                }
+            }
+        },
+        "ability": "cha",
+        "known": {
+            "1": [
+                "friends#c"
+            ]
+        }
+    }
+],
