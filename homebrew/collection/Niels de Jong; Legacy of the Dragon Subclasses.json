@@ -24,6 +24,2202 @@
 		"dateLastModified": 1703373316,
 		"_dateLastModifiedHash": "ee61c78984"
 	},
+	"legendaryGroup": [
+		{
+			"name": "LegacyOfDragonsLairActionsFangDragon",
+			"source": "LEGDRAG",
+			"lairActions": [
+				"On initiative count 20 (losing initiative ties), the dragon takes a lair action to cause one of the following effects; the dragon can't use the same effect two rounds in a row:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Stone Spikes.} Razor sharp stone spikes burst forth from the ground in a 20 foot radius centered on a point the dragon can see within 120 feet of it. That area becomes difficult terrain, and each creature in the area must succeed on a DC {@dc 15} Dexterity saving throw or take 10 ({@damage 3d6}) piercing damage. When a creatures moves into or within the area, it takes {@damage 2d6} piercing damage for every 5 feet it travels. The spikes remain until the dragon uses this lair action again or the dragon dies.",
+						"{@b Fog Bank.} A dense fog forms in a 40 foot radius centered on a point the dragon can see within 120 feet of it. The fog spreads around corners, and its area is heavily obscured. A wind of at least 20 miles per hour disperses the fog. The fog otherwise lasts until the dragon uses this lair action again, or the dragon dies.",
+						"{@b Deadzone.} An invisible 20 foot radius of antimagic forms centered on a point the dragon can see within 120 feet of it. This zone has the same functional effect as if an antimagic field had been cast, except it is stationary, and remains until the dragon uses this lair action again or the dragon dies."
+					]
+				}
+			],
+			"regionalEffects": [
+				"The region containing a legendary fang dragon's lair is warped by the dragon's magic, which creates one or more of the following effects: Jagged Spires.",
+				{
+					"type": "list",
+					"items": [
+						"{@b Jagged Spires.} Within 6 miles of a fang dragon's lair, the terrain takes on sharper features. Jagged, rocky out croppings surface, plants grow thorns, and it becomes harder to move through the area. Overland movement takes twice as long in the area due to the hazardous conditions.",
+						"{@b Predator Avoidance.} Animals (other than insects) will not reside or willingly approach within 6 miles of a fang dragon's lair.",
+						"{@b Untraceable.} Within 6 miles of its lair, the dragon leaves no physical evidence of its passage unless it wishes to.Tracking it there is impossible except by magical means. In addition, it ignores movement impediments and damage from plant and rock formations in this area, including the stone spikes described above."
+					]
+				},
+				"If the dragon dies, animals will slowly return to the area, and other effects fade over {@dice ld10} days."
+			]
+		}
+	],
+	"monster": [
+		{
+			"name": "Dragon Fang Ancient",
+			"size": [
+				"G"
+			],
+			"type": "dragon",
+			"source": "LEGDRAG",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "21d20 + 168",
+				"average": 388
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40,
+				"fly": 60
+			},
+			"str": 28,
+			"dex": 10,
+			"con": 27,
+			"int": 16,
+			"wis": 17,
+			"cha": 19,
+			"passive": 27,
+			"cr": "24",
+			"shortName": "Dragon Fang Ancient",
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"save": {
+				"dex": "+7",
+				"con": "+15",
+				"wis": "+10",
+				"cha": "+11"
+			},
+			"skill": {
+				"perception": "+17",
+				"stealth": "+7",
+				"survival": "+10"
+			},
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the dragon fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Mimicry",
+					"entries": [
+						"The dragon can mimic any sounds it has heard,including voices. A creature that hears the sounds can tell they are imitations with a successful {@dc 19} Wisdom(Insight) check."
+					]
+				},
+				{
+					"name": "Rage (4/Day)",
+					"entries": [
+						"As a bonus action, the fang dragon can enter a rage for 1 minute. While raging, it gains the following benefits:",
+						{
+							"type": "list",
+							"items": [
+								"The dragon has advantage on Strength checks andStrength saving throws.",
+								"When the dragon makes a melee weapon attack, it gains a +4 bonus to the damage roll.",
+								"The dragon has advantage on saving throws against spells and other magical effects."
+							]
+						},
+						"Its rage lasts for 1 minute. It only ends early if the dragon is knocked {@condition unconscious} or if it chooses to end its rage on its turn as a bonus action."
+					]
+				},
+				{
+					"name": "Ravenous Onslaught",
+					"entries": [
+						"When the dragon reduces a creature to 0 hit points or scores a critical hit with a melee attack on its turn, it can take a bonus action to fly up to half its flying speed and make a bite attack (it must start and end this movement on the ground)."
+					]
+				},
+				{
+					"name": "Vicious Critical",
+					"entries": [
+						"The dragon's melee weapon attacks score a critical hit on a roll of a 19 or 20. In addition, it roll some additional weapon damage die when determining the extra damage for a critical hit with a melee weapon attack."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"conditionInflict": [
+				"prone",
+				"unconscious"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 16} to hit, reach 15 ft., one target. {@h}22 ({@damage 2d12 + 9}) piercing damage and the target must succeed on a {@dc 24} Constitution saving throw or its Constitution score is reduced by {@dice 1d4}. The target dies if this reduces its Constitution to 0. Otherwise, the reduction lasts until the target finishes a short or long rest."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 16} to hit, reach 10 ft., one target. {@h}18 ({@damage 2d8 + 9}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail (bludgeoning)",
+					"entries": [
+						"{@atk mw} {@hit 16} to hit, reach 20 ft., one target. {@h}20 ({@damage 2d10 + 9}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 24} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Tail (slashing)",
+					"entries": [
+						"{@atk mw} {@hit 16} to hit, reach 20 ft., one target. {@h}20 ({@damage 2d10 + 9}) slashing damage. If the target is a creature, it must succeed on a {@dc 24} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Tail (piercing)",
+					"entries": [
+						"{@atk mw} {@hit 16} to hit, reach 20 ft., one target. {@h}20 ({@damage 2d10 + 9}) piercing damage. If the target is a creature, it must succeed on a {@dc 24} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a {@dc 19} Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Rage (4/Day)",
+					"entries": [
+						"As a bonus action, the fang dragon can enter a rage for 1 minute. While raging, it gains the following benefits:",
+						{
+							"type": "list",
+							"items": [
+								"The dragon has advantage on Strength checks andStrength saving throws.",
+								"When the dragon makes a melee weapon attack, it gains a +4 bonus to the damage roll.",
+								"The dragon has advantage on saving throws against spells and other magical effects."
+							]
+						},
+						"Its rage lasts for 1 minute. It only ends early if the dragon is knocked {@condition unconscious} or if it chooses to end its rage on its turn as a bonus action."
+					]
+				}
+			],
+			"actionTags": [
+				"Frightful Presence",
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"legendaryGroup": {
+				"name": "LegacyOfDragonsLairActionsFangDragon",
+				"source": "LEGDRAG"
+			},
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Detect",
+					"entries": [
+						"The dragon makes a Wisdom (Perception) check."
+					]
+				},
+				{
+					"name": "Tail Attack",
+					"entries": [
+						"The dragon makes a tail attack."
+					]
+				},
+				{
+					"name": "Tail Sweep (Costs 2 Actions)",
+					"entries": [
+						"The dragon spins and thrashes out with its tail. Each creature within 20 feet of the dragon must succeed on a {@dc 24} Dexterity saving throw or take 20 ({@dice 2d10 + 9}) bludgeoning or slashing damage and be knocked {@condition prone}."
+					]
+				}
+			],
+			"dragonAge": "ancient",
+			"tokenUrl": "https://i.imgur.com/TNVlx8c.png",
+			"fluff": {
+				"entries": [
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Fang Dragons",
+								"entries": [
+									"Fang dragons are greedy, rapacious, and cunning creatures.They live for the hunt, and are exceptionally well adapted to it. Savage combatants, even by draconic standards, fang dragons relish the chance to consume the flesh of other creatures, and happily wade into the fray for the chance to enjoy their favorite meal.",
+									"The most physically terrifying of the dragons, fang dragons are armored with bony plates that rise into projecting spurs at limb joints and end in long, forked tails tipped with a pair of scythe-like bone blades. Their body plates are a mottled gray and brown, and a faint scent of blood surrounds the fang dragon. Their wings are small but muscled, and while they fly poorly, they can rise with a single clap of their wings to lunge forward. A fang dragon's head is adorned with many small horns or spikes, with their eyes tending to be glittering red or orange.",
+									"{@b Angry and Twisted.} Twisted by the magical energies that created them, fang dragons are prone to random violence and outbursts of rage. They revel in the violence, and when they feel they have the advantage, they wade into the fray with fervor. Over time, they learn to yoke the anger and use it to their advantage. Brutal and vicious, creatures seeking out fang dragons should do so with extreme caution, as they will not hesitate to wreak havoc on any creature that they deem weaker them themselves and are perceived as a threat or an annoyance.",
+									"{@b Consummate Hunters.} Fang dragons eat all manner of fresh meat, especially enjoying the flesh of intelligent creatures. They prefer to seek food far from their lairs, and will use their ability to mimic sounds they have heard to lure in prey. Fang dragons have a disturbing tendency to play with their food in an exceedingly cruel way. Fang dragons are masters of physical combat, and every part of their body is lethal. They do not have a breath weapon, but their bite is so devastating, that it can cause Constitution damage due to blood loss from the deep lacerations.",
+									"{@b Hunted and Dwindling.} Once Tiamat learned of the existence of these dragons outside of her control, she attempted to subjugate the species. Sending her followers out to find them, and \"improve\" the eggs of their hatchlings with a ritual that would turn them into what would become known as the gray dragons, those same gray dragons were charged with purifying the remaining fang dragons. Hunted,with their numbers dwindling, fang dragons detest Tiamat and all her followers, and will attack them on sight. Fang dragons speak snippets of many languages and will bargain to avoid difficult or deadly battles."
+								],
+								"type": "entries"
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "In The Realms",
+								"entries": [
+									"Fang dragons originally appeared in the Realms in the ruins of Myth Drannor, causing some sages to speculate that they are somehow connected to the demons that have infested the ancient elven city since its fall. They are commonly found in Starwoods regions of Cormanthor, and occasionally in theBorder Forest, the Spiderhaunt Woods, and other forests in the region of the Dalelands, Sembia, and the Moonsea."
+								],
+								"type": "entries"
+							}
+						]
+					},
+					{
+						"type": "inset",
+						"name": "A Fang Dragon's Hoard",
+						"entries": [
+							"The hoard of a fang dragon is similar to other dragon's hoards in that it will contain various riches, due to their inherently greedy nature. However, unlike other dragons, a fang dragon's hoard will also contain various trophies of its previous hunts. From the skulls of kills, to horns, teeth, bone, scales, skins, and other pieces it has magically preserved, it's hoard will be strewn with these trophies. Some of them may be very valuable to the right buyer..."
+						]
+					},
+					{
+						"type": "inset",
+						"name": "The Great Hunt",
+						"entries": [
+							"The strongest of the fang dragons, who have hunted and consumed many other legendary creatures, can undergo a transformation that will make them one of the mightiest hunters that has ever lived. The agents of Tiamat make the likelihood of a fang dragon achieving this level of power extremely rare, as any attempting the Great Hunt are given the full attention of Tiamat's most trusted lieutenants.",
+							"To achieve this, the dragon must learn of their echoes, and let the Great Hunt begin. To succeed in the Great Hunt, an Dragon Fang Ancient must hunt down and consume the flesh of its echoes. The dragon must do this alone, as their is no greater hunt than hunting one's self. Through cunning, and skill, the Great Hunt affords power and some of the greatest trophies a fang dragon will ever add to their hoard.",
+							"Fang greatwyrms are a true terror to behold. Enormous beings of raw strength, they bristle with razor edges, spikes they can hurl that regenerate almost instantly, and blades of bone that are as hard as steel. Once they have attained greatwyrm status, fang dragons will actively hunt down agents of Tiamat with fervor."
+						]
+					},
+					{
+						"type": "inset",
+						"name": "Variant: Fang Dragons as Innate Spellcasters",
+						"entries": [
+							"Fang dragons can also use the variant innate spellcaster rules for dragons presented in the Path of the Furious Maw Manual.",
+							"They have a tendency towards spells which will negate other magics or impede enemy casters.",
+							"Spells such as {@spell blindness/deafness}, {@spell counterspell}, {@spell dispel magic}, {@spell globe of invulnerability}, {@spell hold person}, {@spell protection from evil and good}, {@spell silence}, are more common; however have also been known to have spells to help them hunt more effectively, or, more rarely, wreak raw destruction."
+						]
+					},
+					{
+						"type": "inset",
+						"name": "Variant Rule: Half Dragon Fang",
+						"entries": [
+							"{@variantrule Half Dragon (Fang)|LEGDRAG} Rule"
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "A Fang Dragon's Lair",
+								"entries": [
+									"Fang dragons dwell in heavily forested and mountainous areas. A fang dragon's lair is a rough and tumble cave filled with jagged edged rocks and vegetation covered in thorns.Trophies from the dragon's hunts lie mixed in with its hoard.They will typically wall up their lairs with huge boulders or other materials to keep out intruders in their absence. Fang dragons tend to choose caves that have features it can hide behind, or get the drop on unsuspecting intruders from.",
+									"The challenge rating of a legendary fang dragon increases by 1 when it's encountered in its lair."
+								],
+								"type": "entries"
+							}
+						]
+					},
+					{
+						"name":"Fang Dragon",
+						"type": "inset",
+						"entries": [
+							"The \"Legacy of Dragon\" document does not give a clear distion between \"Fang\" and \"Gray\" to enrich the distinction for Dragonborn and Half-Dragons with heritage \"Fang\" it will be used the source \"{@link Fang Dragons by KajaGrae|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}\" very good stuff."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/2nQ2wv6.jpg"
+						}
+					}
+				]
+			},
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"strength",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Dragon Fang Ancient (Variant Caster)",
+			"size": [
+				"G"
+			],
+			"type": "dragon",
+			"source": "LEGDRAG",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "21d20 + 168",
+				"average": 388
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40,
+				"fly": 60
+			},
+			"str": 28,
+			"dex": 10,
+			"con": 27,
+			"int": 16,
+			"wis": 17,
+			"cha": 19,
+			"passive": 27,
+			"cr": "24",
+			"shortName": "Dragon Fang Ancient (Variant Caster)",
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"save": {
+				"dex": "+7",
+				"con": "+15",
+				"wis": "+10",
+				"cha": "+11"
+			},
+			"skill": {
+				"perception": "+17",
+				"stealth": "+7",
+				"survival": "+10"
+			},
+			"damageTagsLegendary": [
+				"P"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Fang dragons can also use the variant innate spellcaster rules for dragons presented in the Path of the Furious Maw Manual.",
+						"They have a tendency towards spells which will negate other magics or impede enemy casters."
+					],
+					"will": [
+						"{@spell blindness/deafness}",
+						"{@spell counterspell}",
+						"{@spell dispel magic}",
+						"{@spell globe of invulnerability}",
+						"{@spell hold person}",
+						"{@spell protection from evil and good}",
+						"{@spell silence}"
+					],
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the dragon fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Mimicry",
+					"entries": [
+						"The dragon can mimic any sounds it has heard,including voices. A creature that hears the sounds can tell they are imitations with a successful {@dc 19} Wisdom(Insight) check."
+					]
+				},
+				{
+					"name": "Rage (4/Day)",
+					"entries": [
+						"As a bonus action, the fang dragon can enter a rage for 1 minute. While raging, it gains the following benefits:",
+						{
+							"type": "list",
+							"items": [
+								"The dragon has advantage on Strength checks andStrength saving throws.",
+								"When the dragon makes a melee weapon attack, it gains a +4 bonus to the damage roll.",
+								"The dragon has advantage on saving throws against spells and other magical effects."
+							]
+						},
+						"Its rage lasts for 1 minute. It only ends early if the dragon is knocked {@condition unconscious} or if it chooses to end its rage on its turn as a bonus action."
+					]
+				},
+				{
+					"name": "Ravenous Onslaught",
+					"entries": [
+						"When the dragon reduces a creature to 0 hit points or scores a critical hit with a melee attack on its turn, it can take a bonus action to fly up to half its flying speed and make a bite attack (it must start and end this movement on the ground)."
+					]
+				},
+				{
+					"name": "Vicious Critical",
+					"entries": [
+						"The dragon's melee weapon attacks score a critical hit on a roll of a 19 or 20. In addition, it roll some additional weapon damage die when determining the extra damage for a critical hit with a melee weapon attack."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"conditionInflict": [
+				"frightened",
+				"prone",
+				"unconscious"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 16} to hit, reach 15 ft., one target. {@h}22 ({@damage 2d12 + 9}) piercing damage and the target must succeed on a {@dc 24} Constitution saving throw or its Constitution score is reduced by {@dice 1d4}. The target dies if this reduces its Constitution to 0. Otherwise, the reduction lasts until the target finishes a short or long rest."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 16} to hit, reach 10 ft., one target. {@h}18 ({@damage 2d8 + 9}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail (bludgeoning)",
+					"entries": [
+						"{@atk mw} {@hit 16} to hit, reach 20 ft., one target. {@h}20 ({@damage 2d10 + 9}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 24} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Tail (slashing)",
+					"entries": [
+						"{@atk mw} {@hit 16} to hit, reach 20 ft., one target. {@h}20 ({@damage 2d10 + 9}) slashing damage. If the target is a creature, it must succeed on a {@dc 24} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Tail (piercing)",
+					"entries": [
+						"{@atk mw} {@hit 16} to hit, reach 20 ft., one target. {@h}20 ({@damage 2d10 + 9}) piercing damage. If the target is a creature, it must succeed on a {@dc 24} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a {@dc 19} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Rage (4/Day)",
+					"entries": [
+						"As a bonus action, the fang dragon can enter a rage for 1 minute. While raging, it gains the following benefits:",
+						{
+							"type": "list",
+							"items": [
+								"The dragon has advantage on Strength checks andStrength saving throws.",
+								"When the dragon makes a melee weapon attack, it gains a +4 bonus to the damage roll.",
+								"The dragon has advantage on saving throws against spells and other magical effects."
+							]
+						},
+						"Its rage lasts for 1 minute. It only ends early if the dragon is knocked {@condition unconscious} or if it chooses to end its rage on its turn as a bonus action."
+					]
+				}
+			],
+			"actionTags": [
+				"Frightful Presence",
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"legendaryGroup": {
+				"name": "LegacyOfDragonsLairActionsFangDragon",
+				"source": "LEGDRAG"
+			},
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Detect",
+					"entries": [
+						"The dragon makes a Wisdom (Perception) check."
+					]
+				},
+				{
+					"name": "Tail Attack",
+					"entries": [
+						"The dragon makes a tail attack."
+					]
+				},
+				{
+					"name": "Tail Sweep (Costs 2 Actions)",
+					"entries": [
+						"The dragon spins and thrashes out with its tail. Each creature within 20 feet of the dragon must succeed on a {@dc 24} Dexterity saving throw or take 20 ({@dice 2d10 + 9}) bludgeoning or slashing damage and be knocked {@condition prone}."
+					]
+				}
+			],
+			"dragonAge": "ancient",
+			"tokenUrl": "https://i.imgur.com/sRNzRbd.png",
+			"fluff": {
+				"entries": [
+					"{@link Dragon Fang Ancient (Variant Caster)|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}",
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Fang Dragons",
+								"entries": [
+									"Fang dragons are greedy, rapacious, and cunning creatures.They live for the hunt, and are exceptionally well adapted to it. Savage combatants, even by draconic standards, fang dragons relish the chance to consume the flesh of other creatures, and happily wade into the fray for the chance to enjoy their favorite meal.",
+									"The most physically terrifying of the dragons, fang dragons are armored with bony plates that rise into projecting spurs at limb joints and end in long, forked tails tipped with a pair of scythe-like bone blades. Their body plates are a mottled gray and brown, and a faint scent of blood surrounds the fang dragon. Their wings are small but muscled, and while they fly poorly, they can rise with a single clap of their wings to lunge forward. A fang dragon's head is adorned with many small horns or spikes, with their eyes tending to be glittering red or orange.",
+									"{@b Angry and Twisted.} Twisted by the magical energies that created them, fang dragons are prone to random violence and outbursts of rage. They revel in the violence, and when they feel they have the advantage, they wade into the fray with fervor. Over time, they learn to yoke the anger and use it to their advantage. Brutal and vicious, creatures seeking out fang dragons should do so with extreme caution, as they will not hesitate to wreak havoc on any creature that they deem weaker them themselves and are perceived as a threat or an annoyance.",
+									"{@b Consummate Hunters.} Fang dragons eat all manner of fresh meat, especially enjoying the flesh of intelligent creatures. They prefer to seek food far from their lairs, and will use their ability to mimic sounds they have heard to lure in prey. Fang dragons have a disturbing tendency to play with their food in an exceedingly cruel way. Fang dragons are masters of physical combat, and every part of their body is lethal. They do not have a breath weapon, but their bite is so devastating, that it can cause Constitution damage due to blood loss from the deep lacerations.",
+									"{@b Hunted and Dwindling.} Once Tiamat learned of the existence of these dragons outside of her control, she attempted to subjugate the species. Sending her followers out to find them, and \"improve\" the eggs of their hatchlings with a ritual that would turn them into what would become known as the gray dragons, those same gray dragons were charged with purifying the remaining fang dragons. Hunted,with their numbers dwindling, fang dragons detest Tiamat and all her followers, and will attack them on sight. Fang dragons speak snippets of many languages and will bargain to avoid difficult or deadly battles."
+								],
+								"type": "entries"
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "In The Realms",
+								"entries": [
+									"Fang dragons originally appeared in the Realms in the ruins of Myth Drannor, causing some sages to speculate that they are somehow connected to the demons that have infested the ancient elven city since its fall. They are commonly found in Starwoods regions of Cormanthor, and occasionally in theBorder Forest, the Spiderhaunt Woods, and other forests in the region of the Dalelands, Sembia, and the Moonsea."
+								],
+								"type": "entries"
+							}
+						]
+					},
+					{
+						"type": "inset",
+						"name": "A Fang Dragon's Hoard",
+						"entries": [
+							"The hoard of a fang dragon is similar to other dragon's hoards in that it will contain various riches, due to their inherently greedy nature. However, unlike other dragons, a fang dragon's hoard will also contain various trophies of its previous hunts. From the skulls of kills, to horns, teeth, bone, scales, skins, and other pieces it has magically preserved, it's hoard will be strewn with these trophies. Some of them may be very valuable to the right buyer..."
+						]
+					},
+					{
+						"type": "inset",
+						"name": "The Great Hunt",
+						"entries": [
+							"The strongest of the fang dragons, who have hunted and consumed many other legendary creatures, can undergo a transformation that will make them one of the mightiest hunters that has ever lived. The agents of Tiamat make the likelihood of a fang dragon achieving this level of power extremely rare, as any attempting the Great Hunt are given the full attention of Tiamat's most trusted lieutenants.",
+							"To achieve this, the dragon must learn of their echoes, and let the Great Hunt begin. To succeed in the Great Hunt, an Dragon Fang Ancient must hunt down and consume the flesh of its echoes. The dragon must do this alone, as their is no greater hunt than hunting one's self. Through cunning, and skill, the Great Hunt affords power and some of the greatest trophies a fang dragon will ever add to their hoard.",
+							"Fang greatwyrms are a true terror to behold. Enormous beings of raw strength, they bristle with razor edges, spikes they can hurl that regenerate almost instantly, and blades of bone that are as hard as steel. Once they have attained greatwyrm status, fang dragons will actively hunt down agents of Tiamat with fervor."
+						]
+					},
+					{
+						"type": "inset",
+						"name": "Variant: Fang Dragons as Innate Spellcasters",
+						"entries": [
+							"Fang dragons can also use the variant innate spellcaster rules for dragons presented in the Path of the Furious Maw Manual.",
+							"They have a tendency towards spells which will negate other magics or impede enemy casters.",
+							"Spells such as {@spell blindness/deafness}, {@spell counterspell}, {@spell dispel magic}, {@spell globe of invulnerability}, {@spell hold person}, {@spell protection from evil and good}, {@spell silence}, are more common; however have also been known to have spells to help them hunt more effectively, or, more rarely, wreak raw destruction."
+						]
+					},
+					{
+						"type": "inset",
+						"name": "Variant Rule: Half Dragon Fang",
+						"entries": [
+							"{@variantrule Half Dragon (Fang)|LEGDRAG} Rule"
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "A Fang Dragon's Lair",
+								"entries": [
+									"Fang dragons dwell in heavily forested and mountainous areas. A fang dragon's lair is a rough and tumble cave filled with jagged edged rocks and vegetation covered in thorns.Trophies from the dragon's hunts lie mixed in with its hoard.They will typically wall up their lairs with huge boulders or other materials to keep out intruders in their absence. Fang dragons tend to choose caves that have features it can hide behind, or get the drop on unsuspecting intruders from.",
+									"The challenge rating of a legendary fang dragon increases by 1 when it's encountered in its lair."
+								],
+								"type": "entries"
+							}
+						]
+					},
+					{
+						"name":"Fang Dragon",
+						"type": "inset",
+						"entries": [
+							"The \"Legacy of Dragon\" document does not give a clear distion between \"Fang\" and \"Gray\" to enrich the distinction for Dragonborn and Half-Dragons with heritage \"Fang\" it will be used the source \"{@link Fang Dragons by KajaGrae|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}\" very good stuff."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/KendR57.jpg"
+						}
+					}
+				]
+			},
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"strength",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Dragon Fang Adult",
+			"size": [
+				"H"
+			],
+			"type": "dragon",
+			"source": "LEGDRAG",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d12 + 96",
+				"average": 200
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40,
+				"fly": 60
+			},
+			"str": 24,
+			"dex": 10,
+			"con": 23,
+			"int": 14,
+			"wis": 15,
+			"cha": 17,
+			"passive": 24,
+			"cr": "19",
+			"shortName": "Dragon Fang Adult",
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"skill": {
+				"perception": "+14",
+				"stealth": "+6",
+				"survival": "+8"
+			},
+			"save": {
+				"dex": "+6",
+				"con": "+12",
+				"wis": "+8",
+				"cha": "+9"
+			},
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the dragon fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Mimicry",
+					"entries": [
+						"The dragon can mimic any sounds it has heard,including voices. A creature that hears the sounds can tell they are imitations with a successful {@dc 17} Wisdom(Insight) check."
+					]
+				},
+				{
+					"name": "Rage (3/Day)",
+					"entries": [
+						"As a bonus action, the fang dragon can enter a rage for 1 minute. While raging, it gains the following benefits:",
+						{
+							"type": "list",
+							"items": [
+								"The dragon has advantage on Strength checks andStrength saving throws.",
+								"When the dragon makes a melee weapon attack, it gains a +3 bonus to the damage roll.",
+								"The dragon has advantage on saving throws against spells and other magical effects."
+							]
+						},
+						"Its rage lasts for 1 minute. It only ends early if the dragon is knocked {@condition unconscious} or if it chooses to end its rage on its turn as a bonus action."
+					]
+				},
+				{
+					"name": "Ravenous Onslaught",
+					"entries": [
+						"When the dragon reduces a creature to 0 hit points or scores a critical hit with a melee attack on its turn, it can take a bonus action to fly up to half its flying speed and make a bite attack (it must start and end this movement on the ground)."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"conditionInflict": [
+				"prone",
+				"unconscious"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 10 ft., one target. {@h}20 ({@damage 2d12 + 7}) piercing damage and the target must succeed on a {@dc 21} Constitution saving throw or its Constitution score is reduced by {@dice 1d3}. The target dies if this reduces its Constitution to 0. Otherwise, the reduction lasts until the target finishes a short or long rest."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d8 + 7}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail (bludgeoning)",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 15 ft., one target. {@h}18 ({@damage 2d10 + 7}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 21} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Tail (slashing)",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 15 ft., one target. {@h}18 ({@damage 2d10 + 7}) slashing damage. If the target is a creature, it must succeed on a {@dc 21} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Tail (piercing)",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 15 ft., one target. {@h}18 ({@damage 2d10 + 7}) piercing damage. If the target is a creature, it must succeed on a {@dc 21} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a {@dc 17} Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours."
+					]
+				}
+			],
+			"actionTags": [
+				"Frightful Presence",
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"bonus": [
+				{
+					"name": "Rage (3/Day)",
+					"entries": [
+						"As a bonus action, the fang dragon can enter a rage for 1 minute. While raging, it gains the following benefits:",
+						{
+							"type": "list",
+							"items": [
+								"The dragon has advantage on Strength checks andStrength saving throws.",
+								"When the dragon makes a melee weapon attack, it gains a +3 bonus to the damage roll.",
+								"The dragon has advantage on saving throws against spells and other magical effects."
+							]
+						},
+						"Its rage lasts for 1 minute. It only ends early if the dragon is knocked {@condition unconscious} or if it chooses to end its rage on its turn as a bonus action."
+					]
+				}
+			],
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Detect",
+					"entries": [
+						"The dragon makes a Wisdom (Perception) check."
+					]
+				},
+				{
+					"name": "Tail Attack",
+					"entries": [
+						"The dragon makes a tail attack."
+					]
+				},
+				{
+					"name": "Tail Sweep (Costs 2 Actions)",
+					"entries": [
+						"The dragon spins and thrashes out with its tail. Each creature within 15 feet of the dragon must succeed on a {@dc 21} Dexterity saving throw or take 18 ({@damage 2d10 + 7}) bludgeoning or slashing damage and be knocked {@condition prone}."
+					]
+				}
+			],
+			"dragonAge": "adult",
+			"tokenUrl": "https://i.imgur.com/scZ0qHF.png",
+			"fluff": {
+				"entries": [
+					"{@link Dragon Fang Adult|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}",
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Fang Dragons",
+								"entries": [
+									"Fang dragons are greedy, rapacious, and cunning creatures.They live for the hunt, and are exceptionally well adapted to it. Savage combatants, even by draconic standards, fang dragons relish the chance to consume the flesh of other creatures, and happily wade into the fray for the chance to enjoy their favorite meal.",
+									"The most physically terrifying of the dragons, fang dragons are armored with bony plates that rise into projecting spurs at limb joints and end in long, forked tails tipped with a pair of scythe-like bone blades. Their body plates are a mottled gray and brown, and a faint scent of blood surrounds the fang dragon. Their wings are small but muscled, and while they fly poorly, they can rise with a single clap of their wings to lunge forward. A fang dragon's head is adorned with many small horns or spikes, with their eyes tending to be glittering red or orange.",
+									"{@b Angry and Twisted.} Twisted by the magical energies that created them, fang dragons are prone to random violence and outbursts of rage. They revel in the violence, and when they feel they have the advantage, they wade into the fray with fervor. Over time, they learn to yoke the anger and use it to their advantage. Brutal and vicious, creatures seeking out fang dragons should do so with extreme caution, as they will not hesitate to wreak havoc on any creature that they deem weaker them themselves and are perceived as a threat or an annoyance.",
+									"{@b Consummate Hunters.} Fang dragons eat all manner of fresh meat, especially enjoying the flesh of intelligent creatures. They prefer to seek food far from their lairs, and will use their ability to mimic sounds they have heard to lure in prey. Fang dragons have a disturbing tendency to play with their food in an exceedingly cruel way. Fang dragons are masters of physical combat, and every part of their body is lethal. They do not have a breath weapon, but their bite is so devastating, that it can cause Constitution damage due to blood loss from the deep lacerations.",
+									"{@b Hunted and Dwindling.} Once Tiamat learned of the existence of these dragons outside of her control, she attempted to subjugate the species. Sending her followers out to find them, and \"improve\" the eggs of their hatchlings with a ritual that would turn them into what would become known as the gray dragons, those same gray dragons were charged with purifying the remaining fang dragons. Hunted,with their numbers dwindling, fang dragons detest Tiamat and all her followers, and will attack them on sight. Fang dragons speak snippets of many languages and will bargain to avoid difficult or deadly battles."
+								],
+								"type": "entries"
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "In The Realms",
+								"entries": [
+									"Fang dragons originally appeared in the Realms in the ruins of Myth Drannor, causing some sages to speculate that they are somehow connected to the demons that have infested the ancient elven city since its fall. They are commonly found in Starwoods regions of Cormanthor, and occasionally in theBorder Forest, the Spiderhaunt Woods, and other forests in the region of the Dalelands, Sembia, and the Moonsea."
+								],
+								"type": "entries"
+							}
+						]
+					},
+					{
+						"type": "inset",
+						"name": "A Fang Dragon's Hoard",
+						"entries": [
+							"The hoard of a fang dragon is similar to other dragon's hoards in that it will contain various riches, due to their inherently greedy nature. However, unlike other dragons, a fang dragon's hoard will also contain various trophies of its previous hunts. From the skulls of kills, to horns, teeth, bone, scales, skins, and other pieces it has magically preserved, it's hoard will be strewn with these trophies. Some of them may be very valuable to the right buyer..."
+						]
+					},
+					{
+						"type": "inset",
+						"name": "The Great Hunt",
+						"entries": [
+							"The strongest of the fang dragons, who have hunted and consumed many other legendary creatures, can undergo a transformation that will make them one of the mightiest hunters that has ever lived. The agents of Tiamat make the likelihood of a fang dragon achieving this level of power extremely rare, as any attempting the Great Hunt are given the full attention of Tiamat's most trusted lieutenants.",
+							"To achieve this, the dragon must learn of their echoes, and let the Great Hunt begin. To succeed in the Great Hunt, an Dragon Fang Ancient must hunt down and consume the flesh of its echoes. The dragon must do this alone, as their is no greater hunt than hunting one's self. Through cunning, and skill, the Great Hunt affords power and some of the greatest trophies a fang dragon will ever add to their hoard.",
+							"Fang greatwyrms are a true terror to behold. Enormous beings of raw strength, they bristle with razor edges, spikes they can hurl that regenerate almost instantly, and blades of bone that are as hard as steel. Once they have attained greatwyrm status, fang dragons will actively hunt down agents of Tiamat with fervor."
+						]
+					},
+					{
+						"type": "inset",
+						"name": "Variant: Fang Dragons as Innate Spellcasters",
+						"entries": [
+							"Fang dragons can also use the variant innate spellcaster rules for dragons presented in the Path of the Furious Maw Manual.",
+							"They have a tendency towards spells which will negate other magics or impede enemy casters.",
+							"Spells such as {@spell blindness/deafness}, {@spell counterspell}, {@spell dispel magic}, {@spell globe of invulnerability}, {@spell hold person}, {@spell protection from evil and good}, {@spell silence}, are more common; however have also been known to have spells to help them hunt more effectively, or, more rarely, wreak raw destruction."
+						]
+					},
+					{
+						"type": "inset",
+						"name": "Variant Rule: Half Dragon Fang",
+						"entries": [
+							"{@variantrule Half Dragon (Fang)|LEGDRAG} Rule"
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "A Fang Dragon's Lair",
+								"entries": [
+									"Fang dragons dwell in heavily forested and mountainous areas. A fang dragon's lair is a rough and tumble cave filled with jagged edged rocks and vegetation covered in thorns.Trophies from the dragon's hunts lie mixed in with its hoard.They will typically wall up their lairs with huge boulders or other materials to keep out intruders in their absence. Fang dragons tend to choose caves that have features it can hide behind, or get the drop on unsuspecting intruders from.",
+									"The challenge rating of a legendary fang dragon increases by 1 when it's encountered in its lair."
+								],
+								"type": "entries"
+							}
+						]
+					},
+					{
+						"name":"Fang Dragon",
+						"type": "inset",
+						"entries": [
+							"The \"Legacy of Dragon\" document does not give a clear distion between \"Fang\" and \"Gray\" to enrich the distinction for Dragonborn and Half-Dragons with heritage \"Fang\" it will be used the source \"{@link Fang Dragons by KajaGrae|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}\" very good stuff."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/tfxZZuV.jpg"
+						}
+					}
+				]
+			},
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"strength",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Dragon Fang Young",
+			"size": [
+				"L"
+			],
+			"type": "dragon",
+			"source": "LEGDRAG",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d10 + 56",
+				"average": 133
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40,
+				"fly": 60
+			},
+			"str": 20,
+			"dex": 10,
+			"con": 19,
+			"int": 12,
+			"wis": 13,
+			"cha": 15,
+			"passive": 17,
+			"cr": "8",
+			"shortName": "Dragon Fang Young",
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"save": {
+				"dex": "+3",
+				"con": "+7",
+				"wis": "+4",
+				"cha": "+5"
+			},
+			"skill": {
+				"perception": "+7",
+				"stealth": "+3",
+				"survival": "+4"
+			},
+			"trait": [
+				{
+					"name": "Mimicry",
+					"entries": [
+						"The dragon can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful {@dc 13} Wisdom (Insight) check."
+					]
+				},
+				{
+					"name": "Rage (2/Day)",
+					"entries": [
+						"As a bonus action, the fang dragon can enter a rage for 1 minute. While raging, it gains the following benefits:",
+						{
+							"type": "list",
+							"items": [
+								"The dragon has advantage on Strength checks andStrength saving throws.",
+								"When the dragon makes a melee weapon attack, it gains a +2 bonus to the damage roll.",
+								"The dragon has advantage on saving throws against spells and other magical effects."
+							]
+						},
+						"Its rage lasts for 1 minute. It ends early if the dragon is knocked {@condition unconscious} or if its turn ends and it hasn't attacked a hostile creature since its last turn or taken damage since then. It can also end its rage on its turn as a bonus action."
+					]
+				},
+				{
+					"name": "Ravenous Onslaught",
+					"entries": [
+						"When the dragon reduces a creature to 0 hit points or scores a critical hit with a melee attack on its turn, it can take a bonus action to fly up to half its flying speed and make a bite attack (it must start and end this movement on the ground)."
+					]
+				}
+			],
+			"conditionInflict": [
+				"unconscious"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dragon makes three attacks: one with its bite and two with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}18 ({@damage 2d12 + 5}) piercing damage and the must succeed on a {@dc 18} Constitution saving throw or the target's Constitution score is reduced by {@dice 1d2}.The target dies if this reduces its Constitution to 0. Otherwise, the reduction lasts until the target finishes a short or long rest."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) slashing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"bonus": [
+				{
+					"name": "Rage (2/Day)",
+					"entries": [
+						"As a bonus action, the fang dragon can enter a rage for 1 minute. While raging, it gains the following benefits:",
+						{
+							"type": "list",
+							"items": [
+								"The dragon has advantage on Strength checks andStrength saving throws.",
+								"When the dragon makes a melee weapon attack, it gains a +2 bonus to the damage roll.",
+								"The dragon has advantage on saving throws against spells and other magical effects."
+							]
+						},
+						"Its rage lasts for 1 minute. It ends early if the dragon is knocked {@condition unconscious} or if its turn ends and it hasn't attacked a hostile creature since its last turn or taken damage since then. It can also end its rage on its turn as a bonus action."
+					]
+				}
+			],
+			"dragonAge": "young",
+			"tokenUrl": "https://i.imgur.com/l7IgyLP.png",
+			"fluff": {
+				"entries": [
+					"{@link Dragon Fang Young|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}",
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Fang Dragons",
+								"entries": [
+									"Fang dragons are greedy, rapacious, and cunning creatures.They live for the hunt, and are exceptionally well adapted to it. Savage combatants, even by draconic standards, fang dragons relish the chance to consume the flesh of other creatures, and happily wade into the fray for the chance to enjoy their favorite meal.",
+									"The most physically terrifying of the dragons, fang dragons are armored with bony plates that rise into projecting spurs at limb joints and end in long, forked tails tipped with a pair of scythe-like bone blades. Their body plates are a mottled gray and brown, and a faint scent of blood surrounds the fang dragon. Their wings are small but muscled, and while they fly poorly, they can rise with a single clap of their wings to lunge forward. A fang dragon's head is adorned with many small horns or spikes, with their eyes tending to be glittering red or orange.",
+									"{@b Angry and Twisted.} Twisted by the magical energies that created them, fang dragons are prone to random violence and outbursts of rage. They revel in the violence, and when they feel they have the advantage, they wade into the fray with fervor. Over time, they learn to yoke the anger and use it to their advantage. Brutal and vicious, creatures seeking out fang dragons should do so with extreme caution, as they will not hesitate to wreak havoc on any creature that they deem weaker them themselves and are perceived as a threat or an annoyance.",
+									"{@b Consummate Hunters.} Fang dragons eat all manner of fresh meat, especially enjoying the flesh of intelligent creatures. They prefer to seek food far from their lairs, and will use their ability to mimic sounds they have heard to lure in prey. Fang dragons have a disturbing tendency to play with their food in an exceedingly cruel way. Fang dragons are masters of physical combat, and every part of their body is lethal. They do not have a breath weapon, but their bite is so devastating, that it can cause Constitution damage due to blood loss from the deep lacerations.",
+									"{@b Hunted and Dwindling.} Once Tiamat learned of the existence of these dragons outside of her control, she attempted to subjugate the species. Sending her followers out to find them, and \"improve\" the eggs of their hatchlings with a ritual that would turn them into what would become known as the gray dragons, those same gray dragons were charged with purifying the remaining fang dragons. Hunted,with their numbers dwindling, fang dragons detest Tiamat and all her followers, and will attack them on sight. Fang dragons speak snippets of many languages and will bargain to avoid difficult or deadly battles."
+								],
+								"type": "entries"
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "In The Realms",
+								"entries": [
+									"Fang dragons originally appeared in the Realms in the ruins of Myth Drannor, causing some sages to speculate that they are somehow connected to the demons that have infested the ancient elven city since its fall. They are commonly found in Starwoods regions of Cormanthor, and occasionally in theBorder Forest, the Spiderhaunt Woods, and other forests in the region of the Dalelands, Sembia, and the Moonsea."
+								],
+								"type": "entries"
+							}
+						]
+					},
+					{
+						"type": "inset",
+						"name": "A Fang Dragon's Hoard",
+						"entries": [
+							"The hoard of a fang dragon is similar to other dragon's hoards in that it will contain various riches, due to their inherently greedy nature. However, unlike other dragons, a fang dragon's hoard will also contain various trophies of its previous hunts. From the skulls of kills, to horns, teeth, bone, scales, skins, and other pieces it has magically preserved, it's hoard will be strewn with these trophies. Some of them may be very valuable to the right buyer..."
+						]
+					},
+					{
+						"type": "inset",
+						"name": "The Great Hunt",
+						"entries": [
+							"The strongest of the fang dragons, who have hunted and consumed many other legendary creatures, can undergo a transformation that will make them one of the mightiest hunters that has ever lived. The agents of Tiamat make the likelihood of a fang dragon achieving this level of power extremely rare, as any attempting the Great Hunt are given the full attention of Tiamat's most trusted lieutenants.",
+							"To achieve this, the dragon must learn of their echoes, and let the Great Hunt begin. To succeed in the Great Hunt, an Dragon Fang Ancient must hunt down and consume the flesh of its echoes. The dragon must do this alone, as their is no greater hunt than hunting one's self. Through cunning, and skill, the Great Hunt affords power and some of the greatest trophies a fang dragon will ever add to their hoard.",
+							"Fang greatwyrms are a true terror to behold. Enormous beings of raw strength, they bristle with razor edges, spikes they can hurl that regenerate almost instantly, and blades of bone that are as hard as steel. Once they have attained greatwyrm status, fang dragons will actively hunt down agents of Tiamat with fervor."
+						]
+					},
+					{
+						"type": "inset",
+						"name": "Variant: Fang Dragons as Innate Spellcasters",
+						"entries": [
+							"Fang dragons can also use the variant innate spellcaster rules for dragons presented in the Path of the Furious Maw Manual.",
+							"They have a tendency towards spells which will negate other magics or impede enemy casters.",
+							"Spells such as {@spell blindness/deafness}, {@spell counterspell}, {@spell dispel magic}, {@spell globe of invulnerability}, {@spell hold person}, {@spell protection from evil and good}, {@spell silence}, are more common; however have also been known to have spells to help them hunt more effectively, or, more rarely, wreak raw destruction."
+						]
+					},
+					{
+						"type": "inset",
+						"name": "Variant Rule: Half Dragon Fang",
+						"entries": [
+							"{@variantrule Half Dragon (Fang)|LEGDRAG} Rule"
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "A Fang Dragon's Lair",
+								"entries": [
+									"Fang dragons dwell in heavily forested and mountainous areas. A fang dragon's lair is a rough and tumble cave filled with jagged edged rocks and vegetation covered in thorns.Trophies from the dragon's hunts lie mixed in with its hoard.They will typically wall up their lairs with huge boulders or other materials to keep out intruders in their absence. Fang dragons tend to choose caves that have features it can hide behind, or get the drop on unsuspecting intruders from.",
+									"The challenge rating of a legendary fang dragon increases by 1 when it's encountered in its lair."
+								],
+								"type": "entries"
+							}
+						]
+					},
+					{
+						"name":"Fang Dragon",
+						"type": "inset",
+						"entries": [
+							"The \"Legacy of Dragon\" document does not give a clear distion between \"Fang\" and \"Gray\" to enrich the distinction for Dragonborn and Half-Dragons with heritage \"Fang\" it will be used the source \"{@link Fang Dragons by KajaGrae|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}\" very good stuff."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/gciGzdi.jpg"
+						}
+					}
+				]
+			},
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Dragon Fang Wyrmling",
+			"size": [
+				"M"
+			],
+			"type": "dragon",
+			"source": "LEGDRAG",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d8 + 10",
+				"average": 32
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30,
+				"fly": 40
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 15,
+			"int": 10,
+			"wis": 11,
+			"cha": 13,
+			"passive": 14,
+			"cr": "2",
+			"shortName": "Dragon Fang Wyrmling",
+			"senses": [
+				"blindsight 10 ft.",
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"save": {
+				"dex": "+2",
+				"con": "+4",
+				"wis": "+2",
+				"cha": "+3"
+			},
+			"skill": {
+				"perception": "+4",
+				"stealth": "+2",
+				"survival": "+2"
+			},
+			"trait": [
+				{
+					"name": "Mimicry",
+					"entries": [
+						"The dragon can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful{@dc 11} Wisdom (Insight) check."
+					]
+				},
+				{
+					"name": "Rage (1/Day)",
+					"entries": [
+						"As a bonus action, the fang dragon can enter a rage for 1 minute. While raging, it gains the following benefits:",
+						{
+							"type": "list",
+							"items": [
+								"The dragon has advantage on Strength checks andStrength saving throws.",
+								"When the dragon makes a melee weapon attack, it gains a +5 bonus to the damage roll.",
+								"The dragon has advantage on saving throws against spells and other magical effects."
+							]
+						},
+						"Its rage lasts for 1 minute. It only ends early if the dragon is knocked {@condition unconscious}, or it ends its rage on its turn as a bonus action."
+					]
+				},
+				{
+					"name": "Ravenous Onslaught",
+					"entries": [
+						"When the dragon reduces a creature to 0 hit points or scores a critical hit with a melee attack on its turn, it can take a bonus action to fly up to half its flying speed and make a bite attack (it must start and end this movement on the ground)."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d12 + 3}) piercing damage and the must succeed on a {@dc 13} Constitution saving throw or the target's Constitution score is reduced by 1. The target dies if this reduces its Constitution to 0. Otherwise, the reduction lasts until the target finishes a short or long rest."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Rage (1/Day)",
+					"entries": [
+						"As a bonus action, the fang dragon can enter a rage for 1 minute. While raging, it gains the following benefits:",
+						{
+							"type": "list",
+							"items": [
+								"The dragon has advantage on Strength checks andStrength saving throws.",
+								"When the dragon makes a melee weapon attack, it gains a +5 bonus to the damage roll.",
+								"The dragon has advantage on saving throws against spells and other magical effects."
+							]
+						},
+						"Its rage lasts for 1 minute. It only ends early if the dragon is knocked {@condition unconscious}, or it ends its rage on its turn as a bonus action."
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"dragonAge": "wyrmling",
+			"tokenUrl": "https://i.imgur.com/aAjrZ68.png",
+			"fluff": {
+				"entries": [
+					"{@link Dragon Fang Wyrmling|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}",
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Fang Dragons",
+								"entries": [
+									"Fang dragons are greedy, rapacious, and cunning creatures.They live for the hunt, and are exceptionally well adapted to it. Savage combatants, even by draconic standards, fang dragons relish the chance to consume the flesh of other creatures, and happily wade into the fray for the chance to enjoy their favorite meal.",
+									"The most physically terrifying of the dragons, fang dragons are armored with bony plates that rise into projecting spurs at limb joints and end in long, forked tails tipped with a pair of scythe-like bone blades. Their body plates are a mottled gray and brown, and a faint scent of blood surrounds the fang dragon. Their wings are small but muscled, and while they fly poorly, they can rise with a single clap of their wings to lunge forward. A fang dragon's head is adorned with many small horns or spikes, with their eyes tending to be glittering red or orange.",
+									"{@b Angry and Twisted.} Twisted by the magical energies that created them, fang dragons are prone to random violence and outbursts of rage. They revel in the violence, and when they feel they have the advantage, they wade into the fray with fervor. Over time, they learn to yoke the anger and use it to their advantage. Brutal and vicious, creatures seeking out fang dragons should do so with extreme caution, as they will not hesitate to wreak havoc on any creature that they deem weaker them themselves and are perceived as a threat or an annoyance.",
+									"{@b Consummate Hunters.} Fang dragons eat all manner of fresh meat, especially enjoying the flesh of intelligent creatures. They prefer to seek food far from their lairs, and will use their ability to mimic sounds they have heard to lure in prey. Fang dragons have a disturbing tendency to play with their food in an exceedingly cruel way. Fang dragons are masters of physical combat, and every part of their body is lethal. They do not have a breath weapon, but their bite is so devastating, that it can cause Constitution damage due to blood loss from the deep lacerations.",
+									"{@b Hunted and Dwindling.} Once Tiamat learned of the existence of these dragons outside of her control, she attempted to subjugate the species. Sending her followers out to find them, and \"improve\" the eggs of their hatchlings with a ritual that would turn them into what would become known as the gray dragons, those same gray dragons were charged with purifying the remaining fang dragons. Hunted,with their numbers dwindling, fang dragons detest Tiamat and all her followers, and will attack them on sight. Fang dragons speak snippets of many languages and will bargain to avoid difficult or deadly battles."
+								],
+								"type": "entries"
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "In The Realms",
+								"entries": [
+									"Fang dragons originally appeared in the Realms in the ruins of Myth Drannor, causing some sages to speculate that they are somehow connected to the demons that have infested the ancient elven city since its fall. They are commonly found in Starwoods regions of Cormanthor, and occasionally in theBorder Forest, the Spiderhaunt Woods, and other forests in the region of the Dalelands, Sembia, and the Moonsea."
+								],
+								"type": "entries"
+							}
+						]
+					},
+					{
+						"type": "inset",
+						"name": "A Fang Dragon's Hoard",
+						"entries": [
+							"The hoard of a fang dragon is similar to other dragon's hoards in that it will contain various riches, due to their inherently greedy nature. However, unlike other dragons, a fang dragon's hoard will also contain various trophies of its previous hunts. From the skulls of kills, to horns, teeth, bone, scales, skins, and other pieces it has magically preserved, it's hoard will be strewn with these trophies. Some of them may be very valuable to the right buyer..."
+						]
+					},
+					{
+						"type": "inset",
+						"name": "The Great Hunt",
+						"entries": [
+							"The strongest of the fang dragons, who have hunted and consumed many other legendary creatures, can undergo a transformation that will make them one of the mightiest hunters that has ever lived. The agents of Tiamat make the likelihood of a fang dragon achieving this level of power extremely rare, as any attempting the Great Hunt are given the full attention of Tiamat's most trusted lieutenants.",
+							"To achieve this, the dragon must learn of their echoes, and let the Great Hunt begin. To succeed in the Great Hunt, an Dragon Fang Ancient must hunt down and consume the flesh of its echoes. The dragon must do this alone, as their is no greater hunt than hunting one's self. Through cunning, and skill, the Great Hunt affords power and some of the greatest trophies a fang dragon will ever add to their hoard.",
+							"Fang greatwyrms are a true terror to behold. Enormous beings of raw strength, they bristle with razor edges, spikes they can hurl that regenerate almost instantly, and blades of bone that are as hard as steel. Once they have attained greatwyrm status, fang dragons will actively hunt down agents of Tiamat with fervor."
+						]
+					},
+					{
+						"type": "inset",
+						"name": "Variant: Fang Dragons as Innate Spellcasters",
+						"entries": [
+							"Fang dragons can also use the variant innate spellcaster rules for dragons presented in the Path of the Furious Maw Manual.",
+							"They have a tendency towards spells which will negate other magics or impede enemy casters.",
+							"Spells such as {@spell blindness/deafness}, {@spell counterspell}, {@spell dispel magic}, {@spell globe of invulnerability}, {@spell hold person}, {@spell protection from evil and good}, {@spell silence}, are more common; however have also been known to have spells to help them hunt more effectively, or, more rarely, wreak raw destruction."
+						]
+					},
+					{
+						"type": "inset",
+						"name": "Variant Rule: Half Dragon Fang",
+						"entries": [
+							"{@variantrule Half Dragon (Fang)|LEGDRAG} Rule"
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "A Fang Dragon's Lair",
+								"entries": [
+									"Fang dragons dwell in heavily forested and mountainous areas. A fang dragon's lair is a rough and tumble cave filled with jagged edged rocks and vegetation covered in thorns.Trophies from the dragon's hunts lie mixed in with its hoard.They will typically wall up their lairs with huge boulders or other materials to keep out intruders in their absence. Fang dragons tend to choose caves that have features it can hide behind, or get the drop on unsuspecting intruders from.",
+									"The challenge rating of a legendary fang dragon increases by 1 when it's encountered in its lair."
+								],
+								"type": "entries"
+							}
+						]
+					},
+					{
+						"name":"Fang Dragon",
+						"type": "inset",
+						"entries": [
+							"The \"Legacy of Dragon\" document does not give a clear distion between \"Fang\" and \"Gray\" to enrich the distinction for Dragonborn and Half-Dragons with heritage \"Fang\" it will be used the source \"{@link Fang Dragons by KajaGrae|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}\" very good stuff."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/JW62gx5.jpg"
+						}
+					}
+				]
+			},
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Dragon Fang Greatwyrm",
+			"size": [
+				"G"
+			],
+			"type": "dragon",
+			"source": "LEGDRAG",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 22,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "24d20 + 216",
+				"average": 468
+			},
+			"speed": {
+				"walk": 60,
+				"burrow": 60,
+				"climb": 60,
+				"fly": 80
+			},
+			"str": 30,
+			"dex": 14,
+			"con": 28,
+			"int": 19,
+			"wis": 24,
+			"cha": 22,
+			"passive": 35,
+			"cr": "28",
+			"shortName": "Dragon Fang Greatwyrm",
+			"senses": [
+				"truesight 120 ft."
+			],
+			"senseTags": [
+				"U"
+			],
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"save": {
+				"dex": "+10",
+				"con": "+18",
+				"wis": "+15",
+				"cha": "+14"
+			},
+			"skill": {
+				"perception": "+25",
+				"stealth": "+10",
+				"survival": "+16"
+			},
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"immune": [
+				"poison"
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (4/Day)",
+					"entries": [
+						"If the dragon fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Unyielding Rage (Recharges after a Short or Long Rest)",
+					"entries": [
+						"If the greatwyrm would be reduced to 0 hit points, its current hit point total instead resets to 375 hit points,and it regains any expended uses of LegendaryResistance. Additionally, the greatwyrm can now use the options in the \"Mythic Actions\" section for 1 hour.Award a party an additional 105,000 XP (210,000 XP total) for defeating the greatwyrm after its 'Unyeilding Rage' activates."
+					]
+				},
+				{
+					"name": "Mimicry",
+					"entries": [
+						"The dragon can mimic any sounds it has heard,including voices. A creature that hears the sounds can tell they are imitations with a successful {@dc 22} Wisdom(Insight) check."
+					]
+				},
+				{
+					"name": "Rage (Unlimited)",
+					"entries": [
+						"As a bonus action, the fang dragon can enter a rage for 1 minute. While raging, it gains the following benefits:",
+						{
+							"type": "list",
+							"items": [
+								"The dragon has advantage on Strength checks andStrength saving throws.",
+								"When the dragon makes a melee weapon attack, it gains a +5 bonus to the damage roll.",
+								"The dragon has advantage on saving throws against spells and other magical effects."
+							]
+						},
+						"Its rage lasts for 1 minute. It only ends early if the dragon is knocked {@condition unconscious}, or it ends its rage on its turn as a bonus action."
+					]
+				},
+				{
+					"name": "Ravenous Onslaught",
+					"entries": [
+						"When the dragon reduces a creature to 0 hit points or scores a critical hit with a melee attack on its turn, it can take a bonus action to fly up to half its flying speed and make a bite attack (it must start and end this movement on the ground)."
+					]
+				},
+				{
+					"name": "Vicious Critical",
+					"entries": [
+						"The dragon's melee weapon attacks score a critical hit on a roll of a 18, 19, or 20. In addition, it rolls one additional weapon damage die when determining the extra damage for a critical hit with a melee weapon attack."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"conditionInflict": [
+				"prone",
+				"unconscious"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 18} to hit, reach 15 ft., one target. {@h}23 ({@damage 2d12 + 10}) piercing damage and the target must succeed on a {@dc 26} Constitution saving throw or its Constitution score is reduced by {@dice 1d6}. The target dies if this reduces its Constitution to 0. Otherwise, the reduction lasts until the target finishes a short or long rest."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 18} to hit, reach 10 ft., one target. {@h}21 ({@damage 2d10 + 10}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail (bludgeoning)",
+					"entries": [
+						"{@atk mw} {@hit 18} to hit, reach 20 ft., one target. {@h}23 ({@damage 2d12 + 10}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 26} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Tail (piercing)",
+					"entries": [
+						"{@atk mw} {@hit 18} to hit, reach 20 ft., one target. {@h}23 ({@damage 2d12 + 10}) piercing damage. If the target is a creature, it must succeed on a {@dc 26} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Tail (slashing)",
+					"entries": [
+						"{@atk mw} {@hit 18} to hit, reach 20 ft., one target. {@h}23 ({@damage 2d12 + 10}) slashing damage. If the target is a creature, it must succeed on a {@dc 26} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a {@dc 22} Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours."
+					]
+				}
+			],
+			"actionTags": [
+				"Frightful Presence",
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE",
+				"RW"
+			],
+			"bonus": [
+				{
+					"name": "Rage (Unlimited)",
+					"entries": [
+						"As a bonus action, the fang dragon can enter a rage for 1 minute. While raging, it gains the following benefits:",
+						{
+							"type": "list",
+							"items": [
+								"The dragon has advantage on Strength checks andStrength saving throws.",
+								"When the dragon makes a melee weapon attack, it gains a +5 bonus to the damage roll.",
+								"The dragon has advantage on saving throws against spells and other magical effects."
+							]
+						},
+						"Its rage lasts for 1 minute. It only ends early if the dragon is knocked {@condition unconscious}, or it ends its rage on its turn as a bonus action."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "LegacyOfDragonsLairActionsFangDragon",
+				"source": "LEGDRAG"
+			},
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Tail Attack",
+					"entries": [
+						"The dragon makes one tail attack."
+					]
+				},
+				{
+					"name": "Tail Sweep (Costs 2 Actions)",
+					"entries": [
+						"The dragon spins and thrashes out with its tail. Each creature within 20 feet of the dragon must succeed on a {@dc 26} Dexterity saving throw or take 21 ({@dice 2d10 + 10}) bludgeoning or slashing damage and be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Hurl Spikes",
+					"entries": [
+						"{@atk rw} {@hit 18} to hit, range 200/400 ft., one target. {@h}16 ({@damage 1d12 + 10}) piercing damage. The greatwyrm launches 2 spikes at a target within range."
+					]
+				}
+			],
+			"mythicHeader": [
+				"If the greatwyrm's Unyielding Rage trait has activated in the last hour, it can use the options below as legendary actions."
+			],
+			"mythic": [
+				{
+					"name": "Bite",
+					"entries": [
+						"The greatwyrm makes one Bite attack."
+					]
+				},
+				{
+					"name": "Spike Storm. (Costs 2 Actions)",
+					"entries": [
+						"The greatwyrm bristles with spikes, and launches them in all directions. Each creature in a 60-foot-radius sphere centered on the greatwyrm must succeed on a {@dc 26} Dexterity saving throw taking 42 ({@damage 5d12 + 10}) piercing damage on failed save, and half as much on a successful one."
+					]
+				}
+			],
+			"dragonAge": "greatwyrm",
+			"tokenUrl": "https://i.imgur.com/2NoEwjM.png",
+			"fluff": {
+				"entries": [
+					"{@link Dragon Fang Greatwyrm|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}",
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Fang Dragons",
+								"entries": [
+									"Fang dragons are greedy, rapacious, and cunning creatures.They live for the hunt, and are exceptionally well adapted to it. Savage combatants, even by draconic standards, fang dragons relish the chance to consume the flesh of other creatures, and happily wade into the fray for the chance to enjoy their favorite meal.",
+									"The most physically terrifying of the dragons, fang dragons are armored with bony plates that rise into projecting spurs at limb joints and end in long, forked tails tipped with a pair of scythe-like bone blades. Their body plates are a mottled gray and brown, and a faint scent of blood surrounds the fang dragon. Their wings are small but muscled, and while they fly poorly, they can rise with a single clap of their wings to lunge forward. A fang dragon's head is adorned with many small horns or spikes, with their eyes tending to be glittering red or orange.",
+									"{@b Angry and Twisted.} Twisted by the magical energies that created them, fang dragons are prone to random violence and outbursts of rage. They revel in the violence, and when they feel they have the advantage, they wade into the fray with fervor. Over time, they learn to yoke the anger and use it to their advantage. Brutal and vicious, creatures seeking out fang dragons should do so with extreme caution, as they will not hesitate to wreak havoc on any creature that they deem weaker them themselves and are perceived as a threat or an annoyance.",
+									"{@b Consummate Hunters.} Fang dragons eat all manner of fresh meat, especially enjoying the flesh of intelligent creatures. They prefer to seek food far from their lairs, and will use their ability to mimic sounds they have heard to lure in prey. Fang dragons have a disturbing tendency to play with their food in an exceedingly cruel way. Fang dragons are masters of physical combat, and every part of their body is lethal. They do not have a breath weapon, but their bite is so devastating, that it can cause Constitution damage due to blood loss from the deep lacerations.",
+									"{@b Hunted and Dwindling.} Once Tiamat learned of the existence of these dragons outside of her control, she attempted to subjugate the species. Sending her followers out to find them, and \"improve\" the eggs of their hatchlings with a ritual that would turn them into what would become known as the gray dragons, those same gray dragons were charged with purifying the remaining fang dragons. Hunted,with their numbers dwindling, fang dragons detest Tiamat and all her followers, and will attack them on sight. Fang dragons speak snippets of many languages and will bargain to avoid difficult or deadly battles."
+								],
+								"type": "entries"
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "In The Realms",
+								"entries": [
+									"Fang dragons originally appeared in the Realms in the ruins of Myth Drannor, causing some sages to speculate that they are somehow connected to the demons that have infested the ancient elven city since its fall. They are commonly found in Starwoods regions of Cormanthor, and occasionally in theBorder Forest, the Spiderhaunt Woods, and other forests in the region of the Dalelands, Sembia, and the Moonsea."
+								],
+								"type": "entries"
+							}
+						]
+					},
+					{
+						"type": "inset",
+						"name": "A Fang Dragon's Hoard",
+						"entries": [
+							"The hoard of a fang dragon is similar to other dragon's hoards in that it will contain various riches, due to their inherently greedy nature. However, unlike other dragons, a fang dragon's hoard will also contain various trophies of its previous hunts. From the skulls of kills, to horns, teeth, bone, scales, skins, and other pieces it has magically preserved, it's hoard will be strewn with these trophies. Some of them may be very valuable to the right buyer..."
+						]
+					},
+					{
+						"type": "inset",
+						"name": "The Great Hunt",
+						"entries": [
+							"The strongest of the fang dragons, who have hunted and consumed many other legendary creatures, can undergo a transformation that will make them one of the mightiest hunters that has ever lived. The agents of Tiamat make the likelihood of a fang dragon achieving this level of power extremely rare, as any attempting the Great Hunt are given the full attention of Tiamat's most trusted lieutenants.",
+							"To achieve this, the dragon must learn of their echoes, and let the Great Hunt begin. To succeed in the Great Hunt, an Dragon Fang Ancient must hunt down and consume the flesh of its echoes. The dragon must do this alone, as their is no greater hunt than hunting one's self. Through cunning, and skill, the Great Hunt affords power and some of the greatest trophies a fang dragon will ever add to their hoard.",
+							"Fang greatwyrms are a true terror to behold. Enormous beings of raw strength, they bristle with razor edges, spikes they can hurl that regenerate almost instantly, and blades of bone that are as hard as steel. Once they have attained greatwyrm status, fang dragons will actively hunt down agents of Tiamat with fervor."
+						]
+					},
+					{
+						"type": "inset",
+						"name": "Variant: Fang Dragons as Innate Spellcasters",
+						"entries": [
+							"Fang dragons can also use the variant innate spellcaster rules for dragons presented in the Path of the Furious Maw Manual.",
+							"They have a tendency towards spells which will negate other magics or impede enemy casters.",
+							"Spells such as {@spell blindness/deafness}, {@spell counterspell}, {@spell dispel magic}, {@spell globe of invulnerability}, {@spell hold person}, {@spell protection from evil and good}, {@spell silence}, are more common; however have also been known to have spells to help them hunt more effectively, or, more rarely, wreak raw destruction."
+						]
+					},
+					{
+						"type": "inset",
+						"name": "Variant Rule: Half Dragon Fang",
+						"entries": [
+							"{@variantrule Half Dragon (Fang)|LEGDRAG} Rule"
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "A Fang Dragon's Lair",
+								"entries": [
+									"Fang dragons dwell in heavily forested and mountainous areas. A fang dragon's lair is a rough and tumble cave filled with jagged edged rocks and vegetation covered in thorns.Trophies from the dragon's hunts lie mixed in with its hoard.They will typically wall up their lairs with huge boulders or other materials to keep out intruders in their absence. Fang dragons tend to choose caves that have features it can hide behind, or get the drop on unsuspecting intruders from.",
+									"The challenge rating of a legendary fang dragon increases by 1 when it's encountered in its lair."
+								],
+								"type": "entries"
+							}
+						]
+					},
+					{
+						"name":"Fang Dragon",
+						"type": "inset",
+						"entries": [
+							"The \"Legacy of Dragon\" document does not give a clear distion between \"Fang\" and \"Gray\" to enrich the distinction for Dragonborn and Half-Dragons with heritage \"Fang\" it will be used the source \"{@link Fang Dragons by KajaGrae|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}\" very good stuff."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/IcVPE1D.jpg"
+						}
+					}
+				]
+			},
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"strength",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Dragon Fang Greatwyrm (Variant Caster)",
+			"size": [
+				"G"
+			],
+			"type": "dragon",
+			"source": "LEGDRAG",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 22,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "24d20 + 216",
+				"average": 468
+			},
+			"speed": {
+				"walk": 60,
+				"burrow": 60,
+				"climb": 60,
+				"fly": 80
+			},
+			"str": 30,
+			"dex": 14,
+			"con": 28,
+			"int": 19,
+			"wis": 24,
+			"cha": 22,
+			"passive": 35,
+			"cr": "28",
+			"shortName": "Dragon Fang Greatwyrm (Variant Caster)",
+			"senses": [
+				"truesight 120 ft."
+			],
+			"senseTags": [
+				"U"
+			],
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"save": {
+				"dex": "+10",
+				"con": "+18",
+				"wis": "+15",
+				"cha": "+14"
+			},
+			"skill": {
+				"perception": "+25",
+				"stealth": "+10",
+				"survival": "+16"
+			},
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"immune": [
+				"poison"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Fang dragons can also use the variant innate spellcaster rules for dragons presented in the Path of the Furious Maw Manual.",
+						"They have a tendency towards spells which will negate other magics or impede enemy casters."
+					],
+					"will": [
+						"{@spell blindness/deafness}",
+						"{@spell counterspell}",
+						"{@spell dispel magic}",
+						"{@spell globe of invulnerability}",
+						"{@spell hold person}",
+						"{@spell protection from evil and good}",
+						"{@spell silence}"
+					],
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (4/Day)",
+					"entries": [
+						"If the dragon fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Unyielding Rage (Recharges after a Short or Long Rest)",
+					"entries": [
+						"If the greatwyrm would be reduced to 0 hit points, its current hit point total instead resets to 375 hit points,and it regains any expended uses of LegendaryResistance. Additionally, the greatwyrm can now use the options in the \"Mythic Actions\" section for 1 hour.Award a party an additional 105,000 XP (210,000 XP total) for defeating the greatwyrm after its 'Unyeilding Rage' activates."
+					]
+				},
+				{
+					"name": "Mimicry",
+					"entries": [
+						"The dragon can mimic any sounds it has heard,including voices. A creature that hears the sounds can tell they are imitations with a successful {@dc 22} Wisdom(Insight) check."
+					]
+				},
+				{
+					"name": "Rage (Unlimited)",
+					"entries": [
+						"As a bonus action, the fang dragon can enter a rage for 1 minute. While raging, it gains the following benefits:",
+						{
+							"type": "list",
+							"items": [
+								"The dragon has advantage on Strength checks andStrength saving throws.",
+								"When the dragon makes a melee weapon attack, it gains a +5 bonus to the damage roll.",
+								"The dragon has advantage on saving throws against spells and other magical effects."
+							]
+						},
+						"Its rage lasts for 1 minute. It only ends early if the dragon is knocked {@condition unconscious}, or it ends its rage on its turn as a bonus action."
+					]
+				},
+				{
+					"name": "Ravenous Onslaught",
+					"entries": [
+						"When the dragon reduces a creature to 0 hit points or scores a critical hit with a melee attack on its turn, it can take a bonus action to fly up to half its flying speed and make a bite attack (it must start and end this movement on the ground)."
+					]
+				},
+				{
+					"name": "Vicious Critical",
+					"entries": [
+						"The dragon's melee weapon attacks score a critical hit on a roll of a 18, 19, or 20. In addition, it rolls one additional weapon damage die when determining the extra damage for a critical hit with a melee weapon attack."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"conditionInflict": [
+				"prone",
+				"unconscious"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 18} to hit, reach 15 ft., one target. {@h}23 ({@damage 2d12 + 10}) piercing damage and the target must succeed on a {@dc 26} Constitution saving throw or its Constitution score is reduced by {@dice 1d6}. The target dies if this reduces its Constitution to 0. Otherwise, the reduction lasts until the target finishes a short or long rest."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 18} to hit, reach 10 ft., one target. {@h}21 ({@damage 2d10 + 10}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail (bludgeoning)",
+					"entries": [
+						"{@atk mw} {@hit 18} to hit, reach 20 ft., one target. {@h}23 ({@damage 2d12 + 10}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 26} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Tail (piercing)",
+					"entries": [
+						"{@atk mw} {@hit 18} to hit, reach 20 ft., one target. {@h}23 ({@damage 2d12 + 10}) piercing damage. If the target is a creature, it must succeed on a {@dc 26} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Tail (slashing)",
+					"entries": [
+						"{@atk mw} {@hit 18} to hit, reach 20 ft., one target. {@h}23 ({@damage 2d12 + 10}) slashing damage. If the target is a creature, it must succeed on a {@dc 26} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a {@dc 22} Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours."
+					]
+				}
+			],
+			"actionTags": [
+				"Frightful Presence",
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE",
+				"RW"
+			],
+			"bonus": [
+				{
+					"name": "Rage (Unlimited)",
+					"entries": [
+						"As a bonus action, the fang dragon can enter a rage for 1 minute. While raging, it gains the following benefits:",
+						{
+							"type": "list",
+							"items": [
+								"The dragon has advantage on Strength checks andStrength saving throws.",
+								"When the dragon makes a melee weapon attack, it gains a +5 bonus to the damage roll.",
+								"The dragon has advantage on saving throws against spells and other magical effects."
+							]
+						},
+						"Its rage lasts for 1 minute. It only ends early if the dragon is knocked {@condition unconscious}, or it ends its rage on its turn as a bonus action."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "LegacyOfDragonsLairActionsFangDragon",
+				"source": "LEGDRAG"
+			},
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Tail Attack",
+					"entries": [
+						"The dragon makes one tail attack."
+					]
+				},
+				{
+					"name": "Tail Sweep (Costs 2 Actions)",
+					"entries": [
+						"The dragon spins and thrashes out with its tail. Each creature within 20 feet of the dragon must succeed on a {@dc 26} Dexterity saving throw or take 21 ({@dice 2d10 + 10}) bludgeoning or slashing damage and be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Hurl Spikes",
+					"entries": [
+						"{@atk rw} {@hit 18} to hit, range 200/400 ft., one target. {@h}16 ({@damage 1d12 + 10}) piercing damage. The greatwyrm launches 2 spikes at a target within range."
+					]
+				}
+			],
+			"mythicHeader": [
+				"If the greatwyrm's Unyielding Rage trait has activated in the last hour, it can use the options below as legendary actions."
+			],
+			"mythic": [
+				{
+					"name": "Bite",
+					"entries": [
+						"The greatwyrm makes one Bite attack."
+					]
+				},
+				{
+					"name": "Spike Storm. (Costs 2 Actions)",
+					"entries": [
+						"The greatwyrm bristles with spikes, and launches them in all directions. Each creature in a 60-foot-radius sphere centered on the greatwyrm must succeed on a {@dc 26} Dexterity saving throw taking 42 ({@damage 5d12 + 10}) piercing damage on failed save, and half as much on a successful one."
+					]
+				}
+			],
+			"dragonAge": "greatwyrm",
+			"tokenUrl": "https://i.imgur.com/kMbk4Iw.png",
+			"fluff": {
+				"entries": [
+					"{@link Dragon Fang Greatwyrm (Variant Caster)|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}",
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "Fang Dragons",
+								"entries": [
+									"Fang dragons are greedy, rapacious, and cunning creatures.They live for the hunt, and are exceptionally well adapted to it. Savage combatants, even by draconic standards, fang dragons relish the chance to consume the flesh of other creatures, and happily wade into the fray for the chance to enjoy their favorite meal.",
+									"The most physically terrifying of the dragons, fang dragons are armored with bony plates that rise into projecting spurs at limb joints and end in long, forked tails tipped with a pair of scythe-like bone blades. Their body plates are a mottled gray and brown, and a faint scent of blood surrounds the fang dragon. Their wings are small but muscled, and while they fly poorly, they can rise with a single clap of their wings to lunge forward. A fang dragon's head is adorned with many small horns or spikes, with their eyes tending to be glittering red or orange.",
+									"{@b Angry and Twisted.} Twisted by the magical energies that created them, fang dragons are prone to random violence and outbursts of rage. They revel in the violence, and when they feel they have the advantage, they wade into the fray with fervor. Over time, they learn to yoke the anger and use it to their advantage. Brutal and vicious, creatures seeking out fang dragons should do so with extreme caution, as they will not hesitate to wreak havoc on any creature that they deem weaker them themselves and are perceived as a threat or an annoyance.",
+									"{@b Consummate Hunters.} Fang dragons eat all manner of fresh meat, especially enjoying the flesh of intelligent creatures. They prefer to seek food far from their lairs, and will use their ability to mimic sounds they have heard to lure in prey. Fang dragons have a disturbing tendency to play with their food in an exceedingly cruel way. Fang dragons are masters of physical combat, and every part of their body is lethal. They do not have a breath weapon, but their bite is so devastating, that it can cause Constitution damage due to blood loss from the deep lacerations.",
+									"{@b Hunted and Dwindling.} Once Tiamat learned of the existence of these dragons outside of her control, she attempted to subjugate the species. Sending her followers out to find them, and \"improve\" the eggs of their hatchlings with a ritual that would turn them into what would become known as the gray dragons, those same gray dragons were charged with purifying the remaining fang dragons. Hunted,with their numbers dwindling, fang dragons detest Tiamat and all her followers, and will attack them on sight. Fang dragons speak snippets of many languages and will bargain to avoid difficult or deadly battles."
+								],
+								"type": "entries"
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "In The Realms",
+								"entries": [
+									"Fang dragons originally appeared in the Realms in the ruins of Myth Drannor, causing some sages to speculate that they are somehow connected to the demons that have infested the ancient elven city since its fall. They are commonly found in Starwoods regions of Cormanthor, and occasionally in theBorder Forest, the Spiderhaunt Woods, and other forests in the region of the Dalelands, Sembia, and the Moonsea."
+								],
+								"type": "entries"
+							}
+						]
+					},
+					{
+						"type": "inset",
+						"name": "A Fang Dragon's Hoard",
+						"entries": [
+							"The hoard of a fang dragon is similar to other dragon's hoards in that it will contain various riches, due to their inherently greedy nature. However, unlike other dragons, a fang dragon's hoard will also contain various trophies of its previous hunts. From the skulls of kills, to horns, teeth, bone, scales, skins, and other pieces it has magically preserved, it's hoard will be strewn with these trophies. Some of them may be very valuable to the right buyer..."
+						]
+					},
+					{
+						"type": "inset",
+						"name": "The Great Hunt",
+						"entries": [
+							"The strongest of the fang dragons, who have hunted and consumed many other legendary creatures, can undergo a transformation that will make them one of the mightiest hunters that has ever lived. The agents of Tiamat make the likelihood of a fang dragon achieving this level of power extremely rare, as any attempting the Great Hunt are given the full attention of Tiamat's most trusted lieutenants.",
+							"To achieve this, the dragon must learn of their echoes, and let the Great Hunt begin. To succeed in the Great Hunt, an Dragon Fang Ancient must hunt down and consume the flesh of its echoes. The dragon must do this alone, as their is no greater hunt than hunting one's self. Through cunning, and skill, the Great Hunt affords power and some of the greatest trophies a fang dragon will ever add to their hoard.",
+							"Fang greatwyrms are a true terror to behold. Enormous beings of raw strength, they bristle with razor edges, spikes they can hurl that regenerate almost instantly, and blades of bone that are as hard as steel. Once they have attained greatwyrm status, fang dragons will actively hunt down agents of Tiamat with fervor."
+						]
+					},
+					{
+						"type": "inset",
+						"name": "Variant: Fang Dragons as Innate Spellcasters",
+						"entries": [
+							"Fang dragons can also use the variant innate spellcaster rules for dragons presented in the Path of the Furious Maw Manual.",
+							"They have a tendency towards spells which will negate other magics or impede enemy casters.",
+							"Spells such as {@spell blindness/deafness}, {@spell counterspell}, {@spell dispel magic}, {@spell globe of invulnerability}, {@spell hold person}, {@spell protection from evil and good}, {@spell silence}, are more common; however have also been known to have spells to help them hunt more effectively, or, more rarely, wreak raw destruction."
+						]
+					},
+					{
+						"type": "inset",
+						"name": "Variant Rule: Half Dragon Fang",
+						"entries": [
+							"{@variantrule Half Dragon (Fang)|LEGDRAG} Rule"
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"name": "A Fang Dragon's Lair",
+								"entries": [
+									"Fang dragons dwell in heavily forested and mountainous areas. A fang dragon's lair is a rough and tumble cave filled with jagged edged rocks and vegetation covered in thorns.Trophies from the dragon's hunts lie mixed in with its hoard.They will typically wall up their lairs with huge boulders or other materials to keep out intruders in their absence. Fang dragons tend to choose caves that have features it can hide behind, or get the drop on unsuspecting intruders from.",
+									"The challenge rating of a legendary fang dragon increases by 1 when it's encountered in its lair."
+								],
+								"type": "entries"
+							}
+						]
+					},
+					{
+						"name":"Fang Dragon",
+						"type": "inset",
+						"entries": [
+							"The \"Legacy of Dragon\" document does not give a clear distion between \"Fang\" and \"Gray\" to enrich the distinction for Dragonborn and Half-Dragons with heritage \"Fang\" it will be used the source \"{@link Fang Dragons by KajaGrae|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}\" very good stuff."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/WhjJDXL.jpg"
+						}
+					}
+				]
+			},
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"strength",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"wisdom"
+			]
+		}
+	],
 	"subclass": [
 		
 	]
