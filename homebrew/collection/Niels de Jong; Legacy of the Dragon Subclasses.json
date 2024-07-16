@@ -29,7 +29,7 @@
 			"name": "LegacyOfDragonsLairActionsFangDragon",
 			"source": "LEGDRAG",
 			"lairActions": [
-				"On initiative count 20 (losing initiative ties), the dragon takes a lair action to cause one of the following effects; the dragon can't use the same effect two rounds in a row:",
+				"On initiative count 20 (losing initiative ties), the fang dragon takes a lair action to cause one of the following effects; the dragon can't use the same effect two rounds in a row:",
 				{
 					"type": "list",
 					"items": [
@@ -40,7 +40,7 @@
 				}
 			],
 			"regionalEffects": [
-				"The region containing a legendary fang dragon's lair is warped by the dragon's magic, which creates one or more of the following effects: Jagged Spires.",
+				"The region containing a legendary fang dragon's lair is warped by the dragon's magic, which creates one or more of the following effects:",
 				{
 					"type": "list",
 					"items": [
@@ -51,11 +51,117 @@
 				},
 				"If the dragon dies, animals will slowly return to the area, and other effects fade over {@dice ld10} days."
 			]
+		},
+		{
+			"name": "LegacyOfDragonsLairActionsPurpleDragon",
+			"source": "LEGDRAG",
+			"lairActions": [
+				"On initiative count 20 (losing initiative ties), the purple dragon takes a lair action to cause one of the following effects; the dragon can't use the same effect two rounds in a row:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Magical Fog.} Thick magical fog billows around the dragon in a 20-foot radius that spreads around corners. The area is heavily obscured and creatures within it are blind. A creature with darkvision can’t see through the darkness, and light (nonmagical or not) cannot illuminate it. After 1d4 rounds, the fog becomes slightly transparent and the area is lightly obscured. The next round, the fog vanishes.",
+						"{@b Illusory Imagery.} One creature of the dragon’s choice within 120 feet of the dragon is set upon by illusory imagery of attackers. That creature must succeed on a DC 15 Wisdom saving throw or be frightened of these imaginary creatures for 1 minute. While frightened, the creature attempts to fight these creatures off, which appear to approach it from any area in dim light or darkness. At the end of each of its turns, the affected creature can repeat its saving throw, ending the effect on a success. A creature can’t be affected by this lair action twice within 24 hours.",
+						"{@b Moving Shadow.} The dragon’s shadow appears to start moving on its own. Until the start of the dragon’s next turn, it gains a +3 bonus to AC, and attack rolls against it have disadvantage."
+					]
+				}
+			],
+			"regionalEffects": [
+				"The region containing a legendary purple dragon’s lair is warped by the dragon’s presence, which creates one or more of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Labyrinth.} Caves and narrow passages underground begin winding in a labyrinthine, nonsensical way. Corridors connect in non-Euclidian manners, dead ends appear where a connection to another space was expected, and previously crossed spaces suddenly seem to be cut off by steep rock walls or unexpected cave-ins that were unnoticed before.",
+						"{@b Off Light.} Nonmagical and magical illumination is immediately snuffed out within 1 mile of the lair, and can’t be lit again. Illuminations derived from objects in the natural world such as Moonstones give off light in a normal way.",
+						"{@b Hard Terrain.} Twisted crystalline constructions or dimly phosphorescent mushrooms grow in great numbers within 5 miles of the lair. Areas with large concentrations of crystals or mushrooms are considered difficult terrain. A mushroom that is disrupted (such as stepped upon or destroyed) releases a cloud of poisonous gas. A creature that inhales the gas must succeed on a DC 14 Constitution saving throw or take 3d6 poison damage and be poisoned for 1 hour."
+					]
+				},
+				"If the purple dragon dies, the mushrooms wither and die after {@dice 1d10} days, but the crystals remain indefinitely. Immediately after its death, routes within the caves no longer change randomly, and lanterns can be lit once again."
+			]
+		},
+		{
+			"name": "LegacyOfDragonsLairActionsMagentaDragon",
+			"source": "LEGDRAG",
+			"lairActions": [
+				"On initiative count 20 (losing initiative ties), the magenta dragon takes a lair action to cause one of the following effects; the dragon can't use the same effect two rounds in a row:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Prepared Home.} The dragon has memorised the placement of each crystal in their lair and can use that to its advantage. The dragon beats its wings and scratches the loose earth in the cavern. Each creature within 20 feet of the dragon must make a DC 15 Dexterity Saving Throw. On a failure, each creature is {@condition blinded} and cannot take reactions until the start of its next turn.",
+						"{@b Crystal Rain.} The dragon, despite its intense love of the crystals, will use them as a weapon if needed. The dragon chooses a 10 feet radius cylinder it can see within 120 feet of it. Crystal shards fall from the ceiling or jut from the ground in that area. All creatures in the cylinder must succeed a DC 15 Dexterity Saving throw or take 14 (4d6) piercing damage."
+					]
+				}
+			],
+			"regionalEffects": [
+				"The region containing a legendary magenta dragon’s lair is warped by the dragon’s presence, which creates one or more of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Dread Presence.} Creatures that are within 6 miles of the dragon's lair, and underground get the feeling of consistent dread when going towards the dragon's lair.",
+						"{@b Dry Terrain.} Sources of running within 1 mile of dragon's lair run still, and provide no refreshment to anyone who drinks from it.",
+						"{@b Crystal Nymphs.} Crystal nymphs patrol thinner caverns within 6 miles of the dragon's lair. Crystal nymphs have the statistics of {@creature ice mephit|MM|ice mephits}, but it has an Intelligence and Charisma of 1 (-5) and all instances of cold damage are replaced with psychic damage."
+					]
+				},
+				"If the magenta dragon dies, these effects fade over the course of {@dice ld10} days."
+			]
+		},
+		{
+			"name": "LegacyOfDragonsLairActionsCelestialDragon",
+			"source": "LEGDRAG",
+			"lairActions": [
+				"On initiative count 20 (losing initiative ties), the celestial dragon takes a lair action to cause one of the following effects; the dragon can't use the same effect two rounds in a row:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Intuition.} The dragon glimpses the future, so it has advantage on attack rolls, ability checks, and saving throws until initiative count 20 on the next round.",
+						"{@b Escape to Dreamplane.} One creature the dragon can see within 120 feet of it must succeed on a DC 15 Charisma saving throw or be banished to a dream plane, a different plane of existence the dragon has imagined into being. To escape, the creature must use its action to make a Charisma check contested by the dragon's. If the creature wins, it escapes the dream plane. Otherwise, the effect ends on initiative count 20 on the next round. When the effect ends, the creature reappears in the space it left or in the nearest unoccupied space if that one is occupied."
+					]
+				}
+			],
+			"regionalEffects": [
+				"The region surrounding a legendary celestial dragon's lair is warped by the dragon's magic, which creates one or more of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Calm Weather.} The weather is calm and pleasant within 10 miles of the dragon's lair. So calm in fact that the dragon can hear the chants of any potential nearby monasteries, whom the dragon loves to listen to.",
+						"{@b Telepathy Connection.} Whenever a creature that can understand a language sleeps or enters a state of trance or reverie within 6 miles of the dragon’s lair, the dragon can establish telepathic contact with that creature and converse with it in its dreams. The creature remembers its conversation with the dragon upon waking.",
+						"{@b Sparkling Gems.} Gems and pearls within 1 mile of the dragon’s lair sparkle and gleam, shedding dim light in a 5-foot radius."
+					]
+				},
+				"If the dragon dies, these effects fade over the course of {@dice ld10} days."
+			]
+		},
+		{
+			"name": "LegacyOfDragonsLairActionsGrayDragon",
+			"source": "LEGDRAG",
+			"lairActions": [
+				"On initiative count 20 (losing initiative ties), the gray dragon takes a lair action to cause one of the following effects; the dragon can't use the same effect two rounds in a row:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Dense Fog.} A dense fog forms in a 40 foot radius centered on a point the dragon can see within 120 feet of it. The fog spreads around corners, and its area is heavily obscured. A wind of at least 20 miles per hour disperses the fog. The fog otherwise lasts until the dragon uses this lair action again, or the dragon dies.",
+						"{@b Spikes Sprout.} The dragon chooses a point on the ground within 120 feet of it, and stone spikes sprout out from it. The effect is identical to the {@spell spike growth|PHB} spell and lasts until the dragon uses this lair action again or until it dies.",
+						"{@b Antimagic Forms.} A 10 foot radius of antimagic forms centered on a point the dragon can see within 120 feet of it. This zone has the same functional effect as if an antimagic field had been cast, except it is stationary, and remains until the dragon uses this lair action again or the dragon dies."
+					]
+				}
+			],
+			"regionalEffects": [
+				"The region surrounding a legendary gray dragon's lair is warped by the dragon's magic, which creates one or more of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Jagged Spires.} Within 6 miles of a gray dragon's lair, the terrain takes on sharper features. Jagged, rocky outcroppings surface, plants grow thorns, and it becomes harder to move through the area. Overland movement takes twice as long in the area due to the hazardous conditions.",
+						"{@b Telepathy Connection.} Whenever a creature that can understand a language sleeps or enters a state of trance or reverie within 6 miles of the dragon’s lair, the dragon can establish telepathic contact with that creature and converse with it in its dreams. The creature remembers its conversation with the dragon upon waking.",
+						"{@b Sparkling Gems.} Gems and pearls within 1 mile of the dragon’s lair sparkle and gleam, shedding dim light in a 5-foot radius."
+					]
+				},
+				"If the dragon dies, these effects fade over the course of {@dice ld10} days."
+			]
 		}
 	],
 	"monster": [
 		{
-			"name": "Dragon Fang Ancient",
+			"name": "Ancient Fang Dragon ",
 			"size": [
 				"G"
 			],
@@ -90,7 +196,7 @@
 			"cha": 19,
 			"passive": 27,
 			"cr": "24",
-			"shortName": "Dragon Fang Ancient",
+			"shortName": "Ancient Fang Dragon ",
 			"senses": [
 				"blindsight 60 ft.",
 				"darkvision 120 ft."
@@ -313,7 +419,7 @@
 						"name": "The Great Hunt",
 						"entries": [
 							"The strongest of the fang dragons, who have hunted and consumed many other legendary creatures, can undergo a transformation that will make them one of the mightiest hunters that has ever lived. The agents of Tiamat make the likelihood of a fang dragon achieving this level of power extremely rare, as any attempting the Great Hunt are given the full attention of Tiamat's most trusted lieutenants.",
-							"To achieve this, the dragon must learn of their echoes, and let the Great Hunt begin. To succeed in the Great Hunt, an Dragon Fang Ancient must hunt down and consume the flesh of its echoes. The dragon must do this alone, as their is no greater hunt than hunting one's self. Through cunning, and skill, the Great Hunt affords power and some of the greatest trophies a fang dragon will ever add to their hoard.",
+							"To achieve this, the dragon must learn of their echoes, and let the Great Hunt begin. To succeed in the Great Hunt, an Ancient Fang Dragon  must hunt down and consume the flesh of its echoes. The dragon must do this alone, as their is no greater hunt than hunting one's self. Through cunning, and skill, the Great Hunt affords power and some of the greatest trophies a fang dragon will ever add to their hoard.",
 							"Fang greatwyrms are a true terror to behold. Enormous beings of raw strength, they bristle with razor edges, spikes they can hurl that regenerate almost instantly, and blades of bone that are as hard as steel. Once they have attained greatwyrm status, fang dragons will actively hunt down agents of Tiamat with fervor."
 						]
 					},
@@ -372,7 +478,7 @@
 			]
 		},
 		{
-			"name": "Dragon Fang Ancient (Variant Caster)",
+			"name": "Ancient Fang Dragon  (Variant Caster)",
 			"size": [
 				"G"
 			],
@@ -407,7 +513,7 @@
 			"cha": 19,
 			"passive": 27,
 			"cr": "24",
-			"shortName": "Dragon Fang Ancient (Variant Caster)",
+			"shortName": "Ancient Fang Dragon  (Variant Caster)",
 			"senses": [
 				"blindsight 60 ft.",
 				"darkvision 120 ft."
@@ -616,7 +722,6 @@
 			"tokenUrl": "https://i.imgur.com/sRNzRbd.png",
 			"fluff": {
 				"entries": [
-					"{@link Dragon Fang Ancient (Variant Caster)|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}",
 					{
 						"type": "section",
 						"entries": [
@@ -657,7 +762,7 @@
 						"name": "The Great Hunt",
 						"entries": [
 							"The strongest of the fang dragons, who have hunted and consumed many other legendary creatures, can undergo a transformation that will make them one of the mightiest hunters that has ever lived. The agents of Tiamat make the likelihood of a fang dragon achieving this level of power extremely rare, as any attempting the Great Hunt are given the full attention of Tiamat's most trusted lieutenants.",
-							"To achieve this, the dragon must learn of their echoes, and let the Great Hunt begin. To succeed in the Great Hunt, an Dragon Fang Ancient must hunt down and consume the flesh of its echoes. The dragon must do this alone, as their is no greater hunt than hunting one's self. Through cunning, and skill, the Great Hunt affords power and some of the greatest trophies a fang dragon will ever add to their hoard.",
+							"To achieve this, the dragon must learn of their echoes, and let the Great Hunt begin. To succeed in the Great Hunt, an Ancient Fang Dragon  must hunt down and consume the flesh of its echoes. The dragon must do this alone, as their is no greater hunt than hunting one's self. Through cunning, and skill, the Great Hunt affords power and some of the greatest trophies a fang dragon will ever add to their hoard.",
 							"Fang greatwyrms are a true terror to behold. Enormous beings of raw strength, they bristle with razor edges, spikes they can hurl that regenerate almost instantly, and blades of bone that are as hard as steel. Once they have attained greatwyrm status, fang dragons will actively hunt down agents of Tiamat with fervor."
 						]
 					},
@@ -720,7 +825,7 @@
 			]
 		},
 		{
-			"name": "Dragon Fang Adult",
+			"name": "Adult Fang Dragon ",
 			"size": [
 				"H"
 			],
@@ -755,7 +860,7 @@
 			"cha": 17,
 			"passive": 24,
 			"cr": "19",
-			"shortName": "Dragon Fang Adult",
+			"shortName": "Adult Fang Dragon ",
 			"senses": [
 				"blindsight 60 ft.",
 				"darkvision 120 ft."
@@ -928,7 +1033,6 @@
 			"tokenUrl": "https://i.imgur.com/scZ0qHF.png",
 			"fluff": {
 				"entries": [
-					"{@link Dragon Fang Adult|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}",
 					{
 						"type": "section",
 						"entries": [
@@ -969,7 +1073,7 @@
 						"name": "The Great Hunt",
 						"entries": [
 							"The strongest of the fang dragons, who have hunted and consumed many other legendary creatures, can undergo a transformation that will make them one of the mightiest hunters that has ever lived. The agents of Tiamat make the likelihood of a fang dragon achieving this level of power extremely rare, as any attempting the Great Hunt are given the full attention of Tiamat's most trusted lieutenants.",
-							"To achieve this, the dragon must learn of their echoes, and let the Great Hunt begin. To succeed in the Great Hunt, an Dragon Fang Ancient must hunt down and consume the flesh of its echoes. The dragon must do this alone, as their is no greater hunt than hunting one's self. Through cunning, and skill, the Great Hunt affords power and some of the greatest trophies a fang dragon will ever add to their hoard.",
+							"To achieve this, the dragon must learn of their echoes, and let the Great Hunt begin. To succeed in the Great Hunt, an Ancient Fang Dragon  must hunt down and consume the flesh of its echoes. The dragon must do this alone, as their is no greater hunt than hunting one's self. Through cunning, and skill, the Great Hunt affords power and some of the greatest trophies a fang dragon will ever add to their hoard.",
 							"Fang greatwyrms are a true terror to behold. Enormous beings of raw strength, they bristle with razor edges, spikes they can hurl that regenerate almost instantly, and blades of bone that are as hard as steel. Once they have attained greatwyrm status, fang dragons will actively hunt down agents of Tiamat with fervor."
 						]
 					},
@@ -1028,7 +1132,7 @@
 			]
 		},
 		{
-			"name": "Dragon Fang Young",
+			"name": "Young Fang Dragon ",
 			"size": [
 				"L"
 			],
@@ -1063,7 +1167,7 @@
 			"cha": 15,
 			"passive": 17,
 			"cr": "8",
-			"shortName": "Dragon Fang Young",
+			"shortName": "Young Fang Dragon ",
 			"senses": [
 				"blindsight 60 ft.",
 				"darkvision 120 ft."
@@ -1175,7 +1279,6 @@
 			"tokenUrl": "https://i.imgur.com/l7IgyLP.png",
 			"fluff": {
 				"entries": [
-					"{@link Dragon Fang Young|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}",
 					{
 						"type": "section",
 						"entries": [
@@ -1216,7 +1319,7 @@
 						"name": "The Great Hunt",
 						"entries": [
 							"The strongest of the fang dragons, who have hunted and consumed many other legendary creatures, can undergo a transformation that will make them one of the mightiest hunters that has ever lived. The agents of Tiamat make the likelihood of a fang dragon achieving this level of power extremely rare, as any attempting the Great Hunt are given the full attention of Tiamat's most trusted lieutenants.",
-							"To achieve this, the dragon must learn of their echoes, and let the Great Hunt begin. To succeed in the Great Hunt, an Dragon Fang Ancient must hunt down and consume the flesh of its echoes. The dragon must do this alone, as their is no greater hunt than hunting one's self. Through cunning, and skill, the Great Hunt affords power and some of the greatest trophies a fang dragon will ever add to their hoard.",
+							"To achieve this, the dragon must learn of their echoes, and let the Great Hunt begin. To succeed in the Great Hunt, an Ancient Fang Dragon  must hunt down and consume the flesh of its echoes. The dragon must do this alone, as their is no greater hunt than hunting one's self. Through cunning, and skill, the Great Hunt affords power and some of the greatest trophies a fang dragon will ever add to their hoard.",
 							"Fang greatwyrms are a true terror to behold. Enormous beings of raw strength, they bristle with razor edges, spikes they can hurl that regenerate almost instantly, and blades of bone that are as hard as steel. Once they have attained greatwyrm status, fang dragons will actively hunt down agents of Tiamat with fervor."
 						]
 					},
@@ -1272,7 +1375,7 @@
 			]
 		},
 		{
-			"name": "Dragon Fang Wyrmling",
+			"name": "Fang Dragon Wyrmling",
 			"size": [
 				"M"
 			],
@@ -1307,7 +1410,7 @@
 			"cha": 13,
 			"passive": 14,
 			"cr": "2",
-			"shortName": "Dragon Fang Wyrmling",
+			"shortName": "Fang Dragon Wyrmling",
 			"senses": [
 				"blindsight 10 ft.",
 				"darkvision 60 ft."
@@ -1399,7 +1502,6 @@
 			"tokenUrl": "https://i.imgur.com/aAjrZ68.png",
 			"fluff": {
 				"entries": [
-					"{@link Dragon Fang Wyrmling|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}",
 					{
 						"type": "section",
 						"entries": [
@@ -1440,7 +1542,7 @@
 						"name": "The Great Hunt",
 						"entries": [
 							"The strongest of the fang dragons, who have hunted and consumed many other legendary creatures, can undergo a transformation that will make them one of the mightiest hunters that has ever lived. The agents of Tiamat make the likelihood of a fang dragon achieving this level of power extremely rare, as any attempting the Great Hunt are given the full attention of Tiamat's most trusted lieutenants.",
-							"To achieve this, the dragon must learn of their echoes, and let the Great Hunt begin. To succeed in the Great Hunt, an Dragon Fang Ancient must hunt down and consume the flesh of its echoes. The dragon must do this alone, as their is no greater hunt than hunting one's self. Through cunning, and skill, the Great Hunt affords power and some of the greatest trophies a fang dragon will ever add to their hoard.",
+							"To achieve this, the dragon must learn of their echoes, and let the Great Hunt begin. To succeed in the Great Hunt, an Ancient Fang Dragon  must hunt down and consume the flesh of its echoes. The dragon must do this alone, as their is no greater hunt than hunting one's self. Through cunning, and skill, the Great Hunt affords power and some of the greatest trophies a fang dragon will ever add to their hoard.",
 							"Fang greatwyrms are a true terror to behold. Enormous beings of raw strength, they bristle with razor edges, spikes they can hurl that regenerate almost instantly, and blades of bone that are as hard as steel. Once they have attained greatwyrm status, fang dragons will actively hunt down agents of Tiamat with fervor."
 						]
 					},
@@ -1496,7 +1598,7 @@
 			]
 		},
 		{
-			"name": "Dragon Fang Greatwyrm",
+			"name": "Greatwyrm Fang Dragon ",
 			"size": [
 				"G"
 			],
@@ -1532,7 +1634,7 @@
 			"cha": 22,
 			"passive": 35,
 			"cr": "28",
-			"shortName": "Dragon Fang Greatwyrm",
+			"shortName": "Greatwyrm Fang Dragon ",
 			"senses": [
 				"truesight 120 ft."
 			],
@@ -1745,7 +1847,6 @@
 			"tokenUrl": "https://i.imgur.com/2NoEwjM.png",
 			"fluff": {
 				"entries": [
-					"{@link Dragon Fang Greatwyrm|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}",
 					{
 						"type": "section",
 						"entries": [
@@ -1786,7 +1887,7 @@
 						"name": "The Great Hunt",
 						"entries": [
 							"The strongest of the fang dragons, who have hunted and consumed many other legendary creatures, can undergo a transformation that will make them one of the mightiest hunters that has ever lived. The agents of Tiamat make the likelihood of a fang dragon achieving this level of power extremely rare, as any attempting the Great Hunt are given the full attention of Tiamat's most trusted lieutenants.",
-							"To achieve this, the dragon must learn of their echoes, and let the Great Hunt begin. To succeed in the Great Hunt, an Dragon Fang Ancient must hunt down and consume the flesh of its echoes. The dragon must do this alone, as their is no greater hunt than hunting one's self. Through cunning, and skill, the Great Hunt affords power and some of the greatest trophies a fang dragon will ever add to their hoard.",
+							"To achieve this, the dragon must learn of their echoes, and let the Great Hunt begin. To succeed in the Great Hunt, an Ancient Fang Dragon  must hunt down and consume the flesh of its echoes. The dragon must do this alone, as their is no greater hunt than hunting one's self. Through cunning, and skill, the Great Hunt affords power and some of the greatest trophies a fang dragon will ever add to their hoard.",
 							"Fang greatwyrms are a true terror to behold. Enormous beings of raw strength, they bristle with razor edges, spikes they can hurl that regenerate almost instantly, and blades of bone that are as hard as steel. Once they have attained greatwyrm status, fang dragons will actively hunt down agents of Tiamat with fervor."
 						]
 					},
@@ -1845,7 +1946,7 @@
 			]
 		},
 		{
-			"name": "Dragon Fang Greatwyrm (Variant Caster)",
+			"name": "Greatwyrm Fang Dragon (Variant Caster)",
 			"size": [
 				"G"
 			],
@@ -1881,7 +1982,7 @@
 			"cha": 22,
 			"passive": 35,
 			"cr": "28",
-			"shortName": "Dragon Fang Greatwyrm (Variant Caster)",
+			"shortName": "Greatwyrm Fang Dragon (Variant Caster)",
 			"senses": [
 				"truesight 120 ft."
 			],
@@ -2116,7 +2217,6 @@
 			"tokenUrl": "https://i.imgur.com/kMbk4Iw.png",
 			"fluff": {
 				"entries": [
-					"{@link Dragon Fang Greatwyrm (Variant Caster)|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}",
 					{
 						"type": "section",
 						"entries": [
@@ -2157,7 +2257,7 @@
 						"name": "The Great Hunt",
 						"entries": [
 							"The strongest of the fang dragons, who have hunted and consumed many other legendary creatures, can undergo a transformation that will make them one of the mightiest hunters that has ever lived. The agents of Tiamat make the likelihood of a fang dragon achieving this level of power extremely rare, as any attempting the Great Hunt are given the full attention of Tiamat's most trusted lieutenants.",
-							"To achieve this, the dragon must learn of their echoes, and let the Great Hunt begin. To succeed in the Great Hunt, an Dragon Fang Ancient must hunt down and consume the flesh of its echoes. The dragon must do this alone, as their is no greater hunt than hunting one's self. Through cunning, and skill, the Great Hunt affords power and some of the greatest trophies a fang dragon will ever add to their hoard.",
+							"To achieve this, the dragon must learn of their echoes, and let the Great Hunt begin. To succeed in the Great Hunt, an Ancient Fang Dragon  must hunt down and consume the flesh of its echoes. The dragon must do this alone, as their is no greater hunt than hunting one's self. Through cunning, and skill, the Great Hunt affords power and some of the greatest trophies a fang dragon will ever add to their hoard.",
 							"Fang greatwyrms are a true terror to behold. Enormous beings of raw strength, they bristle with razor edges, spikes they can hurl that regenerate almost instantly, and blades of bone that are as hard as steel. Once they have attained greatwyrm status, fang dragons will actively hunt down agents of Tiamat with fervor."
 						]
 					},
@@ -2218,6 +2318,732 @@
 				"constitution",
 				"wisdom"
 			]
+		},
+		{
+			"name": "Purple Dragon Wyrmling",
+			"size": [
+				"M"
+			],
+			"type": "dragon",
+			"source": "LEGDRAG",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d8 + 32",
+				"average": 104
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 30,
+				"fly": 60
+			},
+			"str": 17,
+			"dex": 12,
+			"con": 15,
+			"int": 13,
+			"wis": 11,
+			"cha": 16,
+			"passive": 16,
+			"cr": "5",
+			"shortName": "Purple Dragon Wyrmling",
+			"page": 124,
+			"dragonAge": "wyrmling",
+			"senses": [
+				"blindsight 10 ft.",
+				"tremorsense 30 ft.",
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"B",
+				"T",
+				"D"
+			],
+			"languages": [
+				"Draconic",
+				"Undercommon"
+			],
+			"languageTags": [
+				"DR",
+				"U"
+			],
+			"save": {
+				"dex": "+6",
+				"con": "+5",
+				"wis": "+3",
+				"cha": "+6"
+			},
+			"skill": {
+				"perception": "+6",
+				"persuasion": "+6",
+				"stealth": "+4"
+			},
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed"
+			],
+			"trait": [
+				{
+					"name": "Mind Palace",
+					"entries": [
+						"The wyrmling has advantage on saving throws against being {@condition frightened}, and magic can't put itto sleep. "
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d10 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Psychic Breath {@recharge 5}",
+					"entries": [
+						"The dragon exhales a thick cloud of purple smoke in a 15-foot cone. Each creature in the area must succeed on a {@dc 12} Wisdom saving throw or take {@damage 5d8} psychic damage, or half as much damage on a successful save. "
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "XXX"
+			},
+			"fluff": {
+				"entries": [
+					"TEST"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Young Purple Dragon",
+			"size": [
+				"L"
+			],
+			"type": "dragon",
+			"source": "LEGDRAG",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "22d10 + 66",
+				"average": 187
+			},
+			"speed": {
+				"walk": 40,
+				"burrow": 40,
+				"fly": 80
+			},
+			"str": 19,
+			"dex": 14,
+			"con": 17,
+			"int": 15,
+			"wis": 11,
+			"cha": 18,
+			"passive": 18,
+			"cr": "9",
+			"shortName": "Young Purple Dragon",
+			"page": 124,
+			"dragonAge": "young",
+			"senses": [
+				"blindsight 30 ft.",
+				"tremorsense 30 ft.",
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"B",
+				"T",
+				"SD"
+			],
+			"languages": [
+				"Common",
+				"Draconic",
+				"Undercommon"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"U"
+			],
+			"save": {
+				"dex": "+6",
+				"con": "+7",
+				"wis": "+4",
+				"cha": "+8"
+			},
+			"skill": {
+				"deception": "+12",
+				"perception": "+8",
+				"persuasion": "+12",
+				"stealth": "+12"
+			},
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons",
+					"cond": true
+				}
+			],
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed"
+			],
+			"trait": [
+				{
+					"name": "Mind Palace",
+					"entries": [
+						"The purple dragon has advantage on saving throws against being {@condition frightened}, and magic can't put it to sleep. It can't be targeted by any spell that attempts to control its actions (including those that don't have a charm effect)."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dragon makes three attacks: one with its Bite and two with its Claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d10 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Psychic Breath {@recharge 5}",
+					"entries": [
+						"The dragon exhales a thick cloud of purple smoke in  a  15-foot cone. Each creature in the area must succeed ona {@dc 14} Wisdom saving throw or take {@damage 11d8} psychic damage, or half as much damage on a successful save. "
+					]
+				}
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "XXX"
+			},
+			"fluff": {
+				"entries": [
+					"TEST"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Adult Purple Dragon",
+			"size": [
+				"H"
+			],
+			"type": "dragon",
+			"source": "LEGDRAG",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "31d10 + 186",
+				"average": 356
+			},
+			"speed": {
+				"walk": 40,
+				"burrow": 40,
+				"fly": 80
+			},
+			"str": 25,
+			"dex": 14,
+			"con": 23,
+			"int": 16,
+			"wis": 15,
+			"cha": 18,
+			"passive": 22,
+			"cr": "16",
+			"shortName": "Adult Purple Dragon",
+			"page": 124,
+			"dragonAge": "adult",
+			"senses": [
+				"blindsight 30 ft.",
+				"tremorsense 30 ft.",
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"B",
+				"T",
+				"SD"
+			],
+			"languages": [
+				"Common",
+				"Draconic",
+				"Undercommon"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"U"
+			],
+			"save": {
+				"dex": "+7",
+				"con": "+11",
+				"wis": "+7",
+				"cha": "+9"
+			},
+			"skill": {
+				"deception": "+14",
+				"perception": "+12",
+				"persuasion": "+14",
+				"stealth": "+12"
+			},
+			"immune": [
+				{
+					"immune": [
+						"psychic"
+					]
+				},
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed"
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the dragon fails a saving throw, it can choose to succeed instead. "
+					]
+				},
+				{
+					"name": "Mind Palace",
+					"entries": [
+						"The purple dragon has advantage on saving throws against being {@condition frightened}, and magic can't put it to sleep. It can't be targeted by any spell that attempts to control its actions (including those that don't have a charm effect). "
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dragon can use its Frightful Presence. It then makes three attacks: one with its Bite and two with its Claws. "
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}23 ({@damage 3d10 + 7}) piercing damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}17 ({@damage 3d6 + 7}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 15 ft., one target. {@h}20 ({@damage 3d8 + 7}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it mustsucceed on a{@dc 17} Wisdom saving throw or become {@condition frightened} for T minute. A creature can repeat the saving throw at the end of each of its tumns, ending. the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours."
+					]
+				},
+				{
+					"name": "Psychic Breath {@recharge 5}",
+					"entries": [
+						"The dragon exhales a thick cloud of purple smoke in a 30-foot cone. Each creature in the area must succeed on a {@dc 19} Wisdom saving throw or take {@damage 15d8} psychic damage, or half as much on a successful save."
+					]
+				}
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Frightful Presence",
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"legendaryGroup": {
+				"name": "LegacyOfDragonsLairActionsPurpleDragon",
+				"source": "LEGDRAG"
+			},
+			"legendaryHeader": [
+				"The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action can be used ata time and only at the end of another creature's tumn. The dragon regains spent legendary actions at the start of its turn."
+			],
+			"legendaryActions": 3,
+			"legendary": [
+				{
+					"name": "Detect",
+					"entries": [
+						"The dragon makes a Wisdom (Perception) check. "
+					]
+				},
+				{
+					"name": "Tail Attack",
+					"entries": [
+						"The dragon makes a Tail attack. "
+					]
+				},
+				{
+					"name": "Psychic Fortitude (Costs 2 Actions)",
+					"entries": [
+						"The dragon ends one condition that is affecting it. "
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "XXX"
+			},
+			"fluff": {
+				"entries": [
+					"TEST"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Ancient Purple Dragon",
+			"size": [
+				"G"
+			],
+			"type": "dragon",
+			"source": "LEGDRAG",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 22,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "26d20 + 208",
+				"average": 481
+			},
+			"speed": {
+				"walk": 40,
+				"burrow": 40,
+				"fly": 80
+			},
+			"str": 29,
+			"dex": 14,
+			"con": 27,
+			"int": 18,
+			"wis": 17,
+			"cha": 21,
+			"passive": 27,
+			"cr": "23",
+			"shortName": "Ancient Purple Dragon",
+			"page": 194,
+			"dragonAge": "ancient",
+			"senses": [
+				"blindsight 30 ft.",
+				"tremorsense 30 ft.",
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"B",
+				"T",
+				"SD"
+			],
+			"languages": [
+				"Common",
+				"Draconic",
+				"Undercommon"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"U"
+			],
+			"save": {
+				"dex": "+9",
+				"con": "+15",
+				"wis": "+10",
+				"cha": "+12"
+			},
+			"skill": {
+				"deception": "+19",
+				"perception": "+17",
+				"persuasion": "+19",
+				"stealth": "+16"
+			},
+			"immune": [
+				{
+					"immune": [
+						"psychic"
+					]
+				},
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the dragon fails a saving throw, it can choose to succeed instead. "
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The dragon has advantage on saving. throws against spells and other magical effects. "
+					]
+				},
+				{
+					"name": "Mind Palace",
+					"entries": [
+						"Magic can't put the dragon to sleep, and it can't be targeted by any spell that attempts to control its actions (including those that don't have a charm effect). "
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dragon can use its Frightful Presence. It then makes three attacks: one with its Bite and two with its Claws. "
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 16} to hit, reach 15 ft., one target. {@h}25 ({@damage 3d10 + 9}) piercing damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 16} to hit, reach 10 ft., one target. {@h}19 ({@damage 3d6 + 9}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 16} to hit, reach 20 ft., one target. {@h}22 ({@damage 3d8 + 9}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it mustsucceed on a{@dc 21} Wisdom saving throw or become {@condition frightened} for T minute. A creature can repeat the saving throw at the end of each of its tumns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours."
+					]
+				},
+				{
+					"name": "Psychic Breath {@recharge 5}",
+					"entries": [
+						"The dragon exhales a thick cloud of purple smoke in a 60-foot cone. Each creature in the area must succeed on a {@dc 21} Wisdom saving throw or take {@damage 20d8} psychic damage, or half as much on a successful save."
+					]
+				}
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Frightful Presence",
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"legendaryGroup": {
+				"name": "LegacyOfDragonsLairActionsPurpleDragon",
+				"source": "LEGDRAG"
+			},
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action can be used ata time and only at the end of another creature's tumn. The dragon regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Detect",
+					"entries": [
+						"The dragon makes a Wisdom (Perception) check. "
+					]
+				},
+				{
+					"name": "Tail Attack",
+					"entries": [
+						"The dragon makes a Tail attack. "
+					]
+				},
+				{
+					"name": "Psychic Fortitude (Costs 2 Actions)",
+					"entries": [
+						"The dragon ends one condition that is affecting it. "
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "XXX"
+			},
+			"fluff": {
+				"entries": [
+					"TEST"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			}
 		}
 	],
 	"subclass": [

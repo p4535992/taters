@@ -150,3 +150,15 @@ You know the {@spell friends} cantrip. When you reach 3rd level, you can cast th
         }
     }
 ],
+
+    "group": [
+		"Gem Dragon"
+	],
+	
+	"group": [
+		"Metallic Dragon"
+	],
+	
+	"group": [
+		"Chromatic Dragon"
+	],
