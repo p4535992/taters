@@ -20,6 +20,61 @@
 		"dateLastModified": 1719177751,
 		"_dateLastModifiedHash": "cef0ca0d26"
 	},
+	"item": [
+		{
+			"name": "Brooch of The Harpy",
+			"source": "NDJRaces",
+			"tier": "major",
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"wondrous": true,
+			"reqAttune": "by a Harpy",
+			"reqAttuneTags": [
+				{
+					"race": "Harpy (Siren Blooded)"
+				}
+			],
+			"weight": 0.5,
+			"value": 35000,
+			"entries": [
+				"This magical brooch allows harpies to enhance the effects of their magical voice, as well as the combat prowess of their claws. While attuned to it, you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You have advantage on Persuasion checks made with your voice.",
+						"Targets who successfully save against the luring song trait are no longer immune for 24 hours against the effects caused by your luring song, but instead gain advantage on saving throws against your luring song for that duration. Targets that break free and are within range must make the saving throw again when you use your action to continue the song, or become affected by your luring song again.",
+						"Your claws count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.",
+						"Once per turn, when you hit a creature with your claws, it becomes wounded. Wounded creatures take 1d4 necrotic damage at the start of their turn for each time they have been wounded, and cannot regain hit points. A wounded creature can make a DC 15 Constitution saving throw at the end of its turns, ending the effect of all such wounds on itself on a success. A wounded creature, or a creature within 5 feet of it, can also end such wounds on it by making a successful DC 15 Wisdom (Medicine) check as an action."
+					]
+				}
+			]
+		},
+		{
+			"name": "Double Crossbow",
+			"source": "NDJRaces",
+			"type": "R",
+			"rarity": "none",
+			"weight": 18,
+			"value": 5000,
+			"weaponCategory": "martial",
+			"property": [
+				"A",
+				"H",
+				"LD",
+				"2H"
+			],
+			"range": "60/240",
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"crossbow": true,
+			"weapon": true,
+			"ammoType": "crossbow bolt|phb",
+			"entries": [
+				"A double crossbow can fire up to two bolts per shot, and counts as a heavy crossbow; except it deals 1d8 damage or 2d8 damage with both bolts loaded, has 60/240 Range, and those without the Crossbow Expert feat must spend a bonus action to load the second bolt.",
+				"If both bolts have a bonus or effect, then both stack on the attack."
+			]
+		}
+	],
 	"race": [
 		{
 			"name": "Kitsune",
@@ -189,7 +244,322 @@
 					{
 						"name": "Credits",
 						"entries": [
-							"Art and item designed by {@link Kitsune|}. Please credit if you repost elsewhere."
+							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
+						],
+						"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Minos",
+			"source": "NDJRaces",
+			"ability": [
+				{
+					"str": 2,
+					"choose": {
+						"from": [
+							"cha",
+							"dex",
+							"str",
+							"con",
+							"int",
+							"wis"
+						],
+						"count": 1
+					}
+				}
+			],
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 30
+			},
+			"entries": [
+				"All minos gain the following traits.",
+				{
+					"name": "Ability Score Increase",
+					"type": "entries",
+					"entries": [
+						"Your Strength score increases by 2, and one other ability score of your choice increases by 1."
+					]
+				},
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Minos have lifespans similar to humans, but often look young for their age, and remain fit until a very old age."
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"With community and unselfish cooperation at the center of their culture, as well as their overall gregarious nature, most minos tend toward good and lawful alignments."
+					]
+				},
+				{
+					"name": "Size",
+					"type": "entries",
+					"entries": [
+						"Minos are known for their great size, standing around 8 feet tall on average. Your size is Medium."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Speed",
+					"entries": [
+						"Your base walking speed is 30 feet."
+					]
+				},
+				{
+					"name": "Gregarious",
+					"entries": [
+						"You gain proficiency in the Animal Handling and Persuasion skills. "
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Horns",
+					"entries": [
+						"Your horns are natural melee weapons, which you can use to make unarmed strikes. If you hit with them, you deal 1d6 + your Strength modifier piercing damage, instead of the bludgeoning damage normal for an unarmed strike.",
+						"Provided you haven't moved during your current turn, you can make an attack with your horns as a bonus action, but afterwards your speed is 0 until the end of the current turn."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Powerful Build",
+					"entries": [
+						"You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Weapon Training",
+					"entries": [
+						"You gain proficiency with the {@item greataxe|PHB}, {@item maul|PHB}, and {@item double crossbow|NDJRaces}. A double crossbow can fire up to two bolts per shot, and counts as a heavy crossbow; except it deals 1d8 damage or 2d8 damage with both bolts loaded, has 60/240 Range, and those without the Crossbow Expert feat must spend a bonus action to load the second bolt. If both bolts have a bonus or effect, then both stack on the attack."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write {@language Common|PHB} and one other language of your choice."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Optional Rule: Bigger is Better",
+					"type": "inset",
+					"entries": [
+						"If you have the Powerful Build racial trait, you can wield weapons that are one size category larger than you and that you are proficient with, and attack with them without having disadvantage on your attack rolls due to the size difference, but if so you can't add your proficiency bonus on attack rolls with these weapons. At 5th level, provided you are proficient with them, you can add half your proficiency bonus on attack rolls with these weapons. Larger weapons multiply their damage dice by each size category they increase beyond Medium (a Large greataxe would deal 2d12 damage). You can only find or buy Large weapons at your DM's discretion."
+					]
+				}
+			],
+			"traitTags": [
+				"Uncommon Race",
+				"Powerful Build",
+				"Natural Weapon"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"other": true
+				}
+			],
+			"skillProficiencies":[
+				{
+					"animal handling": true,
+					"persuasion": true
+				}
+			],
+			"weaponProficiencies": [
+				{
+					"greataxe|phb": true,
+					"maul|phb": true,
+					"double crossbow|NDJRaces": true
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Minotaur blooded, or simply called minos, have both human and minotaur blood running through their veins, but are their own separate race. While they do have horns, their faces look human, their skin is hairless, and they are generally attractive. Despite their size, they are mostly peaceful, and prefer a life of farming in closely knit minos communities. Many minos are wary of strangers, as their gregarious nature has often been taken advantage of in the past, yet they usually give strangers the benefit of the doubt. Minos are known for their hospitality, strong sense of honor and dedication, and consider ungratefulness and deceitfulness to be great sins. Despite their hospitality, minos tend to keep their communities as homogeneous as possible, only fully accepting fellow minos or humans with whom they share ethnic characteristics, as well as those who proven themselves to be friends of the minos. They act so out of a pragmatic belief that diversity leads to adversity, and seek to prevent future conflicts this way. Regardless whether this is true or not, their communities are well known for their unity, stability, and productivity, even while those of other people around them rise and fall. Despite this pragmatic outlook, they are well known for their genuine kindness and charity, and they've been known to sell their food at lower prices to those in need. Minos do however mix with other races, usually with those adopted by minos parents, with their children being born as small build minos. It is also not uncommon for a minos husband to have multiple wives, as there are often more minos women than men. Those that decide to adventure, instead of living a life of farming, make use of their greater physical prowess in battle. While minos can be down-to-earth to a fault, they're well known for their genuine kindness and loyalty, and often help those who truly need it. Minos keep domesticated animals, and often ride larger beasts instead of horses; like bears, woolly Rhinoceros, or mammoths.",
+					"Minos are also well known for their size, granting them the nickname \"friendly horned giants\". However, should they be pressed, they can quickly prove themselves to be more than capable of defending themselves. They strongly believe in the right of self-defense, and often carry a double crossbow. While they tend towards lawful alignments, they are also highly suspicious of large governments, especially those of humans, and they often strive to decentralize power as much as possible. This is because they strongly believe that power corrupts, especially power granted to those who do not live among the common folk. If a threat does arrive, smaller minos communities often band together to form a united front, but only until the threat has been sufficient dealt with.",
+					"{@b Minos are not related to the medium sized minotaurs that can be found across the multiverse, but instead have the blood of the larger more monstrous minotaur running through their veins, granting them greater physique.}",
+					{
+						"name": "Minos Names",
+						"entries": [
+							"Minos names are similar to those of the local indigenous humans, which is likely due to their shared ancestry."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Note",
+						"entries": [
+							"This race is been printed from \"Niels de Jong\" on the book \"{@link Legacy of Dragons|https://www.kickstarter.com/projects/nielsdejong/legacy-of-the-dragon-a-dragon-themed-supplement-for-5e}\" "
+						],
+						"type": "inset"
+					},
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
+						],
+						"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Harpy (Siren Blooded)",
+			"source": "NDJRaces",
+			"ability": [
+				{
+					"dex": 2,
+					"cha": 1
+				}
+			],
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 25,
+				"fly": 40
+			},
+			"entries": [
+				"All harpies gain the following traits.",
+				{
+					"name": "Ability Score Increase",
+					"type": "entries",
+					"entries": [
+						"Your Dexterity score increases by 2, and your Charisma score increases by 1."
+					]
+				},
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Harpies have lifespans similar to humans, but often look young for their age, and remain fit until a very old age."
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"Due to their comely nature, harpies tend to be good aligned, though the \"wild\" ones tend to be more neutral."
+					]
+				},
+				{
+					"name": "Size",
+					"type": "entries",
+					"entries": [
+						"Harpies tend to be lightly build. Your size is Medium."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Speed",
+					"entries": [
+						"Your base walking speed is 25 feet."
+					]
+				},
+				{
+					"name": "Flight",
+					"entries": [
+						"You have a flying speed of 40 feet. {@b To use this speed, you can't be wearing medium or heavy armor.}"
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Enthralling Singer",
+					"entries": [
+						"You have advantage on Performance checks made with your voice. You also have advantage on melee attack rolls against creatures that are charmed by you."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Luring Song",
+					"entries": [
+						"You can use your action to start singing a luring song. You can stop singing at any time, but you must use your action at the start of each of your subsequent turns to continue singing or you will automatically stop singing. While singing this song, your movement speed becomes 0, and you are unable to cast spells with Verbal components. While you are singing this song, every non-harpy humanoid of your choice within range that can hear it must make a Wisdom saving throw (DC 8 + your proficiency bonus + your Charisma modifier) or be charmed by you until the song ends. This song can affect targets within 15 times your proficiency bonus in feet from you. A target charmed this way is incapacitated and ignores all other songs. If the target is more than 5 feet away from you, it must move on its turn towards you by the most direct route. It doesn't avoid opportunity attacks, but it will not move through dangerous terrain that it can see. The target can make the saving throw again at the end of its turns, and with advantage whenever it takes damage from you or your allies (but not from the wounded effect). On a success, the target is immune to being charmed this way for the next 24 hours."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write {@language Common|PHB}  and one other language of your choice."
+					],
+					"type": "entries"
+				}
+			],
+			"traitTags": [
+				"Uncommon Race",
+				"Natural Weapon"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"other": true
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Descendants from the monstrous harpies and unfortunate male thylean sirens (see {@i Odyssey of the Dragonlords Player's Guide} page 34), these self proclaimed harpies have carved a place in the world for themselves by allying themselves with humans as scouts and messengers, taking advantage of their flight to fill out niche professions that are harder for humans to perform. While there are male harpies, which is not the case with full blooded harpies, they are not as numerous as female harpies are. Therefor it is common for a male harpy to have multiple spouses, and not uncommon for female harpies to seek out partners among other races, often among humans. The children of a harpy and another race will always be born as harpies. There is a belief among harpies that children born between a harpy and another race will often become more \"domesticated\", while those who aren't are often more \"wild\", which causes some harpies to form closed communities. Like full blooded harpies, their songs can enthrall humanoids and cause them to move towards them, although they also become immobile and unable to take flight while singing. Many believe that this is due to their thylean siren blood, as thylean sirens lose their flight when they sing. Overall, this subspecies of harpies is known for its attractive features and comely nature. However, they are also known to be fierce when insulted or threatened, and their vicious claws make for deadly weapons.",
+					{
+						"name": "Harpy (Siren Blooded) Names",
+						"entries": [
+							"Harpy names are often similar to those of the local humans, though the names of their siren forebearers are also popular:",
+							{
+								"entries": [
+									{
+										"name": "Male Names",
+										"entries": [
+											"Alovar, Celeus, Everean, Gaiar, Helean, Inareus, Leiro, Meiar, Nerean, Oren, Reilan, Taeren"
+										],
+										"type": "entries"
+									},
+									{
+										"name": "Female Names",
+										"entries": [
+											"Alovarea, Celea, Everea, Gaia, Helena, Inarea, Leira, Meia, Nerea, Orena, Reilana, Taerena"
+										],
+										"type": "entries"
+									}
+								],
+								"type": "entries"
+							}
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Note",
+						"entries": [
+							"This race is been printed from \"Niels de Jong\" on the book \"{@link Legacy of Dragons|https://www.kickstarter.com/projects/nielsdejong/legacy-of-the-dragon-a-dragon-themed-supplement-for-5e}\" "
+						],
+						"type": "inset"
+					},
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
 						],
 						"type": "entries"
 					}
@@ -253,7 +623,8 @@
 				}
 			],
 			"traitTags": [
-				"Uncommon Race"
+				"Uncommon Race",
+				"Natural Weapon"
 			],
 			"skillProficiencies": [
 				{
