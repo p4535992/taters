@@ -3421,6 +3421,57 @@
 					}
 				}
 			]
+		},
+		{
+			"name": "Pyromancer (LEGDRAG)",
+			"source": "LEGDRAG",
+			"shortName": "Pyromancer (LEGDRAG)",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassFeatures": [
+				"Pyromancer|Sorcerer|PHB|Pyromancer (LEGDRAG)|LEGDRAG|1",
+				"Fire in the Veins|Sorcerer|PHB|Pyromancer (LEGDRAG)|LEGDRAG|6",
+				"Pyromancer's Fury|Sorcerer|PHB|Pyromancer (LEGDRAG)|LEGDRAG|14",
+				"Fiery Soul|Sorcerer|PHB|Pyromancer (LEGDRAG)|LEGDRAG|18"
+			],
+			"subclassSpells": [
+				"burning hands|phb",
+				"hellish Rebuke|phb",
+				"flaming sphere|phb",
+				"scorching ray|phb",
+				"fireball|phb",
+				"melf's minute meteors|xge",
+				"elemental bane|xge",
+				"fire shield|phb",
+				"flame strike|phb",
+				"immolation|xge"
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"burning hands|phb",
+							"hellish Rebuke|phb"
+						],
+						"5": [
+							"flaming sphere|phb",
+							"scorching ray|phb"
+						],
+						"9": [
+							"fireball|phb",
+							"melf's minute meteors|xge"
+						],
+						"13": [
+							"elemental bane|xge",
+							"fire shield|phb"
+						],
+						"17": [
+							"flame strike|phb",
+							"immolation|xge"
+						]
+					}
+				}
+			]
 		}
 	],
 	"subclassFeature": [
@@ -3680,6 +3731,126 @@
 						"If you have advantage on an attack roll, you gain a bonus to its damage roll equal to your paladin level. Once you use this feature, you can't use it again until you finish a long rest."
 					]
 				}
+			]
+		},
+		{
+			"name": "Pyromancer",
+			"source": "LEGDRAG",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Pyromancer (LEGDRAG)",
+			"subclassSource": "LEGDRAG",
+			"level": 1,
+			"entries": [
+				"Your innate magic manifests in fire. You are your fire, and your fire is you. You can also create sorcerers of other elements by replacing any mention of fire in this subclass with a different element. For example, you could make a cryomancer by replacing fire with cold.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Pyromancer|Sorcerer|PHB|Pyromancer (LEGDRAG)|LEGDRAG|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Heart of Fire|Sorcerer|PHB|Pyromancer (LEGDRAG)|LEGDRAG|1"
+				}
+			]
+		},
+		{
+			"name": "Pyromancer",
+			"source": "LEGDRAG",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Pyromancer (LEGDRAG)",
+			"subclassSource": "LEGDRAG",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"You learn additional spells when you reach certain levels in this class, as shown on the Pyromancer Spells table. Each of these spells counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.",
+				"Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be an {@filter evocation or a necromancy spell from the sorcerer, warlock, or wizard spell list|spells|class=sorcerer;warlock;wizard|school=V;N|level=1;2;3;4;5}.",
+				{
+					"type": "table",
+					"caption": "Pyromancer Spells",
+					"colLabels": [
+						"Sorcerer Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell burning hands|phb}, {@spell hellish Rebuke|phb}"
+						],
+						[
+							"3rd",
+							"{@spell flaming sphere|phb}, {@spell scorching ray|phb}"
+						],
+						[
+							"5th",
+							"{@spell fireball|phb}, {@spell melf's minute meteors|xge}"
+						],
+						[
+							"7th",
+							"{@spell elemental bane|xge}, {@spell fire shield|phb}"
+						],
+						[
+							"9th",
+							"{@spell flame strike|phb}, {@spell immolation|xge}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Heart of Fire",
+			"source": "LEGDRAG",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Pyromancer (LEGDRAG)",
+			"subclassSource": "LEGDRAG",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"At 1st level, when you cast a spell of 1st level or higher that deals fire damage, creatures of your choice within 10 feet of you take fire damage equal to 1d6 + half your sorcerer level. The range of this effect increases to 30 feet at 14th level. Any spell that deals fire damage counts as a sorcerer spell for you, and when you cast it you can exclude a number of creatures to be affected by the spell up to your proficiency bonus."
+			]
+		},
+		{
+			"name": "Fire in the Veins",
+			"source": "LEGDRAG",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Pyromancer (LEGDRAG)",
+			"subclassSource": "LEGDRAG",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, you gain resistance to fire damage, and all damage you deal ignores fire resistance. Whenever you deal fire damage that involves a damage roll, you can add your Charisma modifier to one of the damage rolls."
+			]
+		},
+		{
+			"name": "Pyromancer's Fury",
+			"source": "LEGDRAG",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Pyromancer (LEGDRAG)",
+			"subclassSource": "LEGDRAG",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"At 14th level, all damage you deal treats fire immunity as fire resistance instead (this fire resistance cannot be ignored), and you gain immunity to fire damage."
+			]
+		},
+		{
+			"name": "Fiery Soul",
+			"source": "LEGDRAG",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Pyromancer (LEGDRAG)",
+			"subclassSource": "LEGDRAG",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"At 18th level, you can cast a spell from your Origin Spells feature by spending a number of sorcery points equal to the spell’s level minus 1 (minimum of 0)."
 			]
 		}
 	]
