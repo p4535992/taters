@@ -26,7 +26,6 @@
 			"source": "NDJRaces",
 			"tier": "major",
 			"rarity": "uncommon",
-			"reqAttune": true,
 			"wondrous": true,
 			"reqAttune": "by a Harpy",
 			"reqAttuneTags": [
@@ -72,6 +71,44 @@
 			"entries": [
 				"A double crossbow can fire up to two bolts per shot, and counts as a heavy crossbow; except it deals 1d8 damage or 2d8 damage with both bolts loaded, has 60/240 Range, and those without the Crossbow Expert feat must spend a bonus action to load the second bolt.",
 				"If both bolts have a bonus or effect, then both stack on the attack."
+			]
+		},
+		{
+			"name": "Kanabo of the Oni-Blooded",
+			"source": "NDJRaces",
+			"baseItem": "greatclub|phb",
+			"type": "M",
+			"rarity": "rare",
+			"reqAttune": "by a Half-Oni",
+			"reqAttuneTags": [
+				{
+					"race": "Half-Oni"
+				}
+			],
+			"weight": 10,
+			"value": 5000,
+			"weaponCategory": "simple",
+			"property": [
+				"2H",
+				"R",
+				"L"
+			],
+			"dmg1": "1d8",
+			"dmgType": "B",
+			"club": true,
+			"weapon": true,
+			"entries": [
+				"This weapon allows half-oni to tap into their oni-heritage, and temporarily take on the form of a full blooded oni. This magic greatclub counts as a monk weapon. When you use your Regeneration racial trait, you can roll the hit dice without actually spending them, and you regain the ability to use this racial trait again after finishing a short or long rest.",
+				"{@b Oni Form.} While the kanabo is on your person, you can use your action to change into an oni-like form for 1 minute. Everything that you are wearing and carrying changes size with you. Any item that you drop returns to normal size at once. Once this transformation has been used, it cannot be used again until the next dawn. While transformed this way, you gain the following characteristics for the duration:",
+				{
+					"type": "list",
+					"items": [
+						"The kanabo is now a Large weapon that deals 4d6 bludgeoning damage, and also has the reach property.",
+						"Your height is now 10 feet and you weigh 700 pounds. Your size is Large and your creature type is Giant.",
+						"You gain temporary hit points equal to 1d8 + twice your level for the duration of this transformation.",
+						"Whenever you make a Strength check or saving throw, you can roll one d8 and add the number rolled to the Strength check or saving throw."
+					]
+				}
 			]
 		}
 	],
@@ -254,7 +291,7 @@
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "XXX"
+							"url": "https://i.imgur.com/t7WSbSq.jpg"
 						}
 					}
 				]
@@ -387,7 +424,7 @@
 				{
 					"greataxe|phb": true,
 					"maul|phb": true,
-					"double crossbow|NDJRaces": true
+					"crossbow|phb": true
 				}
 			],
 			"fluff": {
@@ -422,7 +459,7 @@
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "XXX"
+							"url": "https://i.imgur.com/Vh98JR5.jpg"
 						}
 					}
 				]
@@ -508,6 +545,13 @@
 						"You can speak, read, and write {@language Common|PHB}  and one other language of your choice."
 					],
 					"type": "entries"
+				},
+				{
+					"name": "Item: Brooch of the Harpy",
+					"type": "inset",
+					"entries": [
+						"A Harpy can wield the magical weapon {@item Brooch of the Harpy|NDJRaces} at your DM's discretion."
+					]
 				}
 			],
 			"traitTags": [
@@ -569,7 +613,382 @@
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "XXX"
+							"url": "https://i.imgur.com/SpKKTfU.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Half-Oni",
+			"source": "NDJRaces",
+			"ability": [
+				{
+					"str": 2,
+					"con": 1
+				}
+			],
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 30
+			},
+			"entries": [
+				"All half-oni gain the following traits.",
+				{
+					"name": "Ability Score Increase",
+					"type": "entries",
+					"entries": [
+						"Your Strength score increases by 2, and your Constitution score increases by 1."
+					]
+				},
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Half-oni have lifespans equivalent to humans."
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"Half-oni tend towards lawful, but they don't tend more towards either good or evil."
+					]
+				},
+				{
+					"name": "Size",
+					"type": "entries",
+					"entries": [
+						"Half-oni are between 5 and 7 feet tall. Your size is Medium."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Speed",
+					"entries": [
+						"Your base walking speed is 30 feet."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. In darkness, you can only discern shades of gray."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Brutal Attacks",
+					"entries": [
+						"When you roll a 1 on a damage die for an attack you make with a melee weapon, you can reroll the die. If you have Great Weapon Fighting as a Fighting Style (or a similar feature) you can always reroll a 1 or 2 on a damage die for an attack you make with a melee weapon."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"As a bonus action, you can spend a number of your hit dice equal to half your proficiency bonus (rounded up). Roll each hit die and add your Constitution modifier to each roll. You regain hit points equal to the total, and you regain the ability to do so after finishing a long rest."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Change Shape",
+					"entries": [
+						"As an action, you can switch between your true form and a different humanoid form which you gained at birth. This form is either human or another race your DM deems appropriate for your background or the setting.",
+						"You cannot change the appearance of this form.",
+						"You automatically change to your true form when you use your Brutal Attacks and Regeneration traits while in this form."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Weapon Training",
+					"entries": [
+						"You have proficiency with {@item glaive|PHB|glaives}, {@item greatclub|PHB|greatclubs} (which also go by the name {@item Kanabo of the Oni-Blooded|NDJRaces|kanabo} in the east and among (half-)oni), {@item greatsword|PHB|greatswords}, and {@item maul|PHB|mauls}. While wielding a greatclub, the weapon deals 2d6 damage for you."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write {@language Common|PHB} and {@language Giant|PHB}."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Oni Reference",
+					"entries": [
+						"Check out the {@race Oni|BBHR} by Blackbando's, is very well done"
+					],
+					"type": "inset"
+				}
+			],
+			"darkvision": 60,
+			"weaponProficiencies": [
+				{
+					"glaive|phb": true,
+					"greatclub|phb": true,
+					"greatsword|phb": true,
+					"maul|phb": true
+				}
+			],
+			"traitTags": [
+				"Uncommon Race"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"giant": true
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Half-oni are the offspring of an oni and another humanoid creature, and are often born as the result of an oni taking a human partner. Over time, half-oni have been drawn to each other and have created numerous villages filled with halfoni, as well as their full blooded kin. Half-oni can have a single or multiple horns, and most have either pink colored skin or red or blue skin, with green, black, yellow, and white oni being possible but not as common. Some even have a third eye on their forehead, though this only happens rarely. Half-oni are known for being a boisterous people, reveling in dancing, music, drink, and food.",
+					"They have massive appetites, and are also very fond of treasures. Despite being half-oni, they usually refer to themselves as oni or sometimes ogre, as they believe their oni blood is what defines them. Half-oni continuously seek out battle as a means to prove their strength and fighting prowess. Nevertheless, when it comes to a serious fight, half-oni would rather not run into a fight where the possibility of death is great, but only when success is absolute. Sometimes female half-oni go out of their way to fight with strong men, and if a man is able to defeat her she may offer herself as his bride.",
+					"Or if a defeated male has proven himself to be strong enough she may offer marriage in exchange for sparing his life. On the other hand, male half-oni will go out of their way to fight with strong opponents or go on adventures to amass wealth, as a way to attract a bride.",
+					"The children of a half-oni and another humanoid race are usually born as half-oni, and the children of a half-oni and a full blooded oni will always be born as oni. Half-oni are surprisingly comely and attractive, despite their oni heritage, and they have a reputation for being faithful and loving husbands and wives.",
+					{
+						"name": "Half-Oni Names",
+						"entries": [
+							"Half-oni names tend to be self created, or granted to them from their oni parents.",
+							{
+								"entries": [
+									{
+										"name": "Male Names",
+										"entries": [
+											"Kaneie, Kimi, Motoyuki, Soichiro, Taisuke"
+										],
+										"type": "entries"
+									},
+									{
+										"name": "Female Names",
+										"entries": [
+											"Anii, Koi, Minako, Namie, Sae"
+										],
+										"type": "entries"
+									},
+									{
+										"name": "Half-Oni First Names",
+										"entries": [
+											"Aoyama, Fujiwara, Iha, Mino, Tsuge"
+										],
+										"type": "entries"
+									}
+								],
+								"type": "entries"
+							}
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Note",
+						"entries": [
+							"This race is been printed from \"Niels de Jong\" on the book \"{@link Legacy of Dragons|https://www.kickstarter.com/projects/nielsdejong/legacy-of-the-dragon-a-dragon-themed-supplement-for-5e}\" "
+						],
+						"type": "inset"
+					},
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
+						],
+						"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/H44zGCn.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Catfolk",
+			"source": "NDJRaces",
+			"ability": [
+				{
+					"dex": 2,
+					"cha": 1
+				}
+			],
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 30
+			},
+			"entries": [
+				"All Catfolk gain the following traits. You can also use these traits when playing as a more human looking beast race, such as {@i Ghislaine Dedoldia} (as a kensei, page 65) and {@i Setsuna of the Ice Wolf tribe} (as a {@i totem guardian}, page 41), by simply replacing any mention of Feline with {@i Beastfolk}. ",
+				{
+					"name": "Ability Score Increase",
+					"type": "entries",
+					"entries": [
+						"Your Dexterity score increases by 2, and your Charisma score increases by 1."
+					]
+				},
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Catfolk have lifespans similar to humans, but often remain young-looking and fit until their last few years."
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"With community and unselfish cooperation at the center of their culture, as well as a good-natured curiosity and willingness to adapt to the customs of many other races, most catfolk tend toward good alignments. Catfolk also tend toward chaotic alignments, as they often let their curiosity get the best of them and act on impulse."
+					]
+				},
+				{
+					"name": "Size",
+					"type": "entries",
+					"entries": [
+						"Catfolk are roughly the same size as humans. Your size is Medium."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Speed",
+					"entries": [
+						"Your base walking speed is 30 feet."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Feline Agility",
+					"entries": [
+						"Your reflexes and agility allow you to move with a burst of speed. When you move on your turn in combat, you can double your speed until the end of the turn. Once you use this trait, you can't use it again until you move 0 feet on one of your turns."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Feline Quirks",
+					"entries": [
+						"Your quick thinking and dexterous movements allow you to avoid enemy attacks, land on your feet, and gracefully move out of harm's way. You can perform a number of feline quirks equal to your proficiency bonus, and you regain all expended uses after finishing a long rest. Each use causes one of the following effects of your choice:",
+						{
+							"type": "list",
+							"items": [
+								"You can take the Disengage action as a bonus action.",
+								"You can use your reaction when you fall to reduce falling damage you take by an amount equal to five times your level. You don't fall prone if the damage isn't reduced to 0.",
+								"When you fail a Dexterity saving throw, you can use your reaction to reroll that saving throw. If you reroll the saving throw this way, you must use the new roll.",
+								"You can use your bonus action to attempt to escape a grapple, and do so with advantage on the check."
+							]
+						}
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Feline's Talent",
+					"entries": [
+						"You have proficiency in the Perception and Stealth skills, and advantage on all checks that rely on smell."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Weapon Training",
+					"entries": [
+						"You have proficiency with {@item glaive|PHB|glaives}, {@item greatclub|PHB|greatclubs} (which also go by the name {@item Kanabo of the Oni-Blooded|NDJRaces|kanabo} in the east and among (half-)oni), {@item greatsword|PHB|greatswords}, and {@item maul|PHB|mauls}. While wielding a greatclub, the weapon deals 2d6 damage for you."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write {@language Common|PHB} and one other language of your choice."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Note: Inspiration from DnD 3.5",
+					"entries": [
+						"This is my interpretation of the catfolk, who first appeared in the {@i Races of the Wild official source book for 3.5} edition. Additional lore was later added to the 3.5 D&D Archives, including a more human looking variant which I've used here."
+					],
+					"type": "inset"
+				}
+			],
+			"skillProficiencies": [
+				{
+					"perception": true,
+					"stealth": true
+				}
+			],
+			"traitTags": [
+				"Uncommon Race"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"other": true
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Catfolk resemble a cross between a cat and a human, sporting sleekly muscled and smooth humanoid bodies with feline features. Adaptable and curious, catfolk get along with almost any race that extends reciprocal goodwill, and they acclimate easily to humans and elves. Catfolk have thicker nails than other humanoids, but not the powerful claws of tabaxi, and make unarmed attacks just like humans. Catfolk are renowned for their speed, remarkable agility, and ability to get out of sticky situations, the latter giving them the reputation of having nine lives. Catfolk are also known for their attractive features, and the children of a catfolk and a different humanoid will be born as the race of the mother. Many catfolk live among human settlements and are raised alongside humans. While others are nomads who roam the wilds, living in tribes segregated by their visual differences. While self expression is an important aspect of catfolk culture, it is mitigated by a strong sense of community and group effort.",
+					{
+						"name": "Catfolk Names",
+						"entries": [
+							"Catfolk who are raised among humans often adopt local names, while nomadic catfolk favor their own unique set of names. Nomadic catfolk also use clan names instead of last names, which translate into Common as a participle (a verb made into an adjective by adding \"-ing\") followed by a noun.",
+							{
+								"entries": [
+									{
+										"name": "Male Names",
+										"entries": [
+											"Carruth, Densharr, Drewan, Felix, Ferus, Gerran, Gorou, Gustav, Gyes, G'raha, Lion-O, Mersharr, Nermissar, Nyktan, Panthro, Rouqar, Therrass, Tygra"
+										],
+										"type": "entries"
+									},
+									{
+										"name": "Female Names",
+										"entries": [
+											"Alyara, Aranyani, Cheetara, Ghislaine, Jilyana, Linia, Mianissa, Milah, Miniri, Morasha, Nera, Pumyra, Pursena, Sheba, Thessana, Tiyeri, Y'shtola"
+										],
+										"type": "entries"
+									},
+									{
+										"name": "Clan Names",
+										"entries": [
+											"Crouching Lynx, Flying Eagle, Hunting Tiger, Roaring Lion, Running Brook, Screaming Arrow"
+										],
+										"type": "entries"
+									}
+								],
+								"type": "entries"
+							}
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Note",
+						"entries": [
+							"This race is been printed from \"Niels de Jong\" on the book \"{@link Legacy of Dragons|https://www.kickstarter.com/projects/nielsdejong/legacy-of-the-dragon-a-dragon-themed-supplement-for-5e}\" "
+						],
+						"type": "inset"
+					},
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
+						],
+						"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/EiPyCkc.jpg"
 						}
 					}
 				]
@@ -695,7 +1114,7 @@
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "XXX"
+							"url": "https://i.imgur.com/JVQ5KcC.jpg"
 						}
 					}
 				]
@@ -894,7 +1313,7 @@
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "XXX"
+							"url": "https://i.imgur.com/Dr7RehH.jpg"
 						}
 					}
 				]
