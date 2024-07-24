@@ -3994,6 +3994,17 @@
 			],
 			"conditionInflict": [
 				"prone"
+			],		
+			"damageTags": [
+				"B",
+				"P",
+				"S",
+				"Y"
+			],
+			"savingThrowForced": [
+				"intelligence",
+				"strength",
+				"wisdom"
 			],
 			"tokenHref": {
 				"type": "external",
@@ -4051,18 +4062,7 @@
 						}
 					}
 				]
-			},
-			"damageTags": [
-				"B",
-				"P",
-				"S",
-				"Y"
-			],
-			"savingThrowForced": [
-				"intelligence",
-				"strength",
-				"wisdom"
-			]
+			}
 		}
 	],
 	"subclass": [
@@ -4291,6 +4291,59 @@
 				"The voice of the People|Bard|PHB|Playful Mockery|LEGDRAG|6",
 				"Spitting Fire|Bard|PHB|Playful Mockery|LEGDRAG|14"
 			]
+		},
+		{
+			"name": "Dragon Domain",
+			"source": "LEGDRAG",
+			"page": 44,
+			"shortName": "Dragon",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassFeatures": [
+				"Dragon Domain|Cleric|PHB|Dragon|LEGDRAG|1",
+				"Channel Divinity: Dragon's Wrath|Cleric|PHB|Dragon|LEGDRAG|2",
+				"Legendary Protection|Cleric|PHB|Dragon|LEGDRAG|6",
+				"Divine Strike|Cleric|PHB|Dragon|LEGDRAG|8",
+				"Shock and Awe|Cleric|PHB|Dragon|LEGDRAG|17"
+			],
+			"subclassSpells": [
+				"absorb elements|xge",
+				"heroism|phb",
+				"dragon's breath|xge",
+				"see invisibility|phb",
+				"fireball|phb",
+				"fly|phb",
+				"elemental bane|xge",
+				"stoneskin|phb",
+				"cone of cold|phb",
+				"dominate person|phb"
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"absorb elements|xge",
+							"heroism|phb"
+						],
+						"3": [
+							"dragon's breath|xge",
+							"see invisibility|phb"
+						],
+						"5": [
+							"fireball|phb",
+							"fly|phb"
+						],
+						"7": [
+							"elemental bane|xge",
+							"stoneskin|phb"
+						],
+						"9": [
+							"cone of cold|phb",
+							"dominate person|phb"
+						]
+					}
+				}
+			]
 		}
 	],
 	"subclassFeature": [
@@ -4475,6 +4528,9 @@
 			"page": 148,
 			"level": 3,
 			"header": 1,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
 			"entries": [
 				"As an action, you create a visual illusion of yourself that lasts for 1 minute, or until you lose your concentration (as if you were concentrating on a spell). The illusion appears in an unoccupied space of your choice that you can see within 30 feet of you.",
 				"The illusion looks exactly like you; it is silent; it is your size, is insubstantial, and doesn't occupy its space; and it is unaffected by attacks and damage. As a bonus action on your turn, you can move the illusion up to 30 feet to a space you can see, but the illusion must remain within 120 feet of you. For the duration, you can cast spells as though you were in the illusion's space, but you must use your own senses.",
@@ -4491,6 +4547,9 @@
 			"page": 148,
 			"level": 3,
 			"header": 1,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
 			"entries": [
 				"You can use your Channel Divinity to make a weapon deadlier. As a bonus action, you touch one weapon or piece of ammunition and conjure a special poison on it. The poison lasts for 1 minute, or until it deals its damage. The next time you hit a target with an attack using that weapon or ammunition, the target takes poison damage immediately after the attack. The poison damage equals 2d10 + your paladin level, or 20 + your paladin level if you had advantage on the attack roll."
 			]
@@ -5593,6 +5652,355 @@
 						"You learn the {@spell message|PHB} cantrip if you don't already know it, you can cast it as a bonus action, and you only require verbal components to cast this spell."
 					]
 				}
+			]
+		},
+		{
+			"name": "Dragon Domain",
+			"source": "LEGDRAG",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Dragon",
+			"subclassSource": "LEGDRAG",
+			"page": 44,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Domain Spells|Cleric|PHB|Dragon|LEGDRAG|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Cleric|PHB|Dragon|LEGDRAG|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Draconic Blessing|Cleric|PHB|Dragon|LEGDRAG|1"
+				}
+			]
+		},
+		{
+			"name": "Domain Spells",
+			"source": "LEGDRAG",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Dragon",
+			"subclassSource": "LEGDRAG",
+			"page": 44,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"You gain domain spells at the cleric levels listed in the Dragon Domain Spells table. See the Divine Domain class feature for how domain spells work.",
+				{
+					"type": "table",
+					"caption": "Dragon Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell absorb elements|xge}, {@spell heroism|phb}"
+						],
+						[
+							"3rd",
+							"{@spell dragon's breath|xge}, {@spell see invisibility|phb}"
+						],
+						[
+							"5th",
+							"{@spell fireball|phb}, {@spell fly|phb}"
+						],
+						[
+							"7th",
+							"{@spell elemental bane|xge}, {@spell stoneskin|phb}"
+						],
+						[
+							"9th",
+							"{@spell cone of cold|phb}, {@spell dominate person|phb}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Bonus proficiencies",
+			"source": "LEGDRAG",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Dragon",
+			"subclassSource": "LEGDRAG",
+			"page": 44,
+			"level": 1,
+			"header": 1,
+			"weaponProficiencies": [
+				{
+					"martial": true
+				}
+			],
+			"armorProficiencies": [
+				{
+					"heavy": true
+				}
+			],
+			"entries": [
+				"At 1st level, you gain proficiency with martial weapons and heavy armor."
+			]
+		},
+		{
+			"name": "Draconic Blessing",
+			"source": "LEGDRAG",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Dragon",
+			"subclassSource": "LEGDRAG",
+			"page": 44,
+			"level": 1,
+			"header": 1,
+			"languageProficiencies": [
+				{
+					"draconic": true
+				}
+			],
+			"entries": [
+				"From 1st level, your god bestows you with the blessing of one of its draconic children. You must choose a dragon from the Draconic Blessing table. The damage type and breath weapon associated with each dragon is used by features you gain later. If you choose Bahamut as your deity, you must choose a metallic dragon (brass, bronze, copper, gold, silver, or steel) for your Draconic Blessing. If you choose Tiamat as your deity, you must choose a chromatic dragon (black, blue, deep, gray, green, red, or white) for your Draconic Blessing. If you choose Asgorath (or another dragon god) as your deity, you can choose any dragon for your Draconic Blessing. Amethyst, crystal, emerald, sapphire and topaz dragons are gem dragons; and celestial, fang, moonstone, and song dragons are their own subspecies of dragon. For game purposes; gem, moonstone, and song dragons count as metallic dragons; while celestial and fang dragons count as chromatic dragons.",
+				"When you deal damage of the type associated with your Draconic Blessing to other creatures you can see, you can choose a number of them equal to your proficiency bonus. The chosen creatures automatically succeed on their saving throws against it (if any) and take no damage from it.",
+				"Additionally, when you deal damage with a domain spell, you can change the damage type to the one associated with your chosen Draconic Blessing.",
+				"You can read, write, and speak {@language Draconic|PHB}. Whenever you make a Charisma check when interacting with dragons, your proficiency bonus is doubled if it applies to the check.",
+				{
+					"type": "table",
+					"caption": "Draconic Ancestry",
+					"colLabels": [
+						"Dragon",
+						"Damage Type",
+						"Breath Weapon",
+						"Ability Score"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-3 text-center",
+						"col-4",
+						"col-3"
+					],
+					"rows": [
+						[
+							"Amethyst",
+							"Force",
+							"30 ft. cone (Str. save)",
+							"Wisdom"
+						],
+						[
+							"Black",
+							"Acid",
+							"10 by 30 ft. line (Dex. save)",
+							"Constitution"
+						],
+						[
+							"Blue",
+							"Lightning",
+							"10 by 30 ft. line (Dex. save)",
+							"Constitution"
+						],
+						[
+							"Brass",
+							"Fire",
+							"10 by 30 ft. line (Dex. save)",
+							"Charisma"
+						],
+						[
+							"Bronze",
+							"Lightning",
+							"10 by 30 ft. line (Dex. save)",
+							"Wisdom"
+						],
+						[
+							"Brown",
+							"Acid",
+							"10 by 30 ft. line (Dex. save)",
+							"Constitution"
+						],
+						[
+							"Celestial",
+							"Radiant",
+							"30 ft. cone (Con. save)",
+							"Charisma"
+						],
+						[
+							"Copper",
+							"Acid",
+							"10 by 30 ft. line (Dex. save)",
+							"Charisma"
+						],
+						[
+							"Crystal",
+							"Radiant",
+							"30 ft. cone (Con. save)",
+							"Charisma"
+						],
+						[
+							"Deep",
+							"Psychic",
+							"30 ft. cone (Wis. save)",
+							"Intelligence"
+						],
+						[
+							"Emerald",
+							"Psychic",
+							"30 ft. cone (Int. save)",
+							"Intelligence"
+						],
+						[
+							"Fang ({@b Officially do not have a Breath Weapon})",
+							"Acid",
+							"10 by 30 ft. line (Dex. save)",
+							"Constitution"
+						],
+						[
+							"Gray",
+							"Acid",
+							"10 by 30 ft. line (Dex. save)",
+							"Constitution"
+						],
+						[
+							"Gold",
+							"Fire",
+							"30 ft. cone (Dex. save)",
+							"Wisdom"
+						],
+						[
+							"Green",
+							"Poison",
+							"30 ft. cone (Con. save)",
+							"Intelligence"
+						],
+						[
+							"Moonstone",
+							"Radiant",
+							"10 by 30 ft. line (Dex. save)",
+							"Wisdom"
+						],
+						[
+							"Red",
+							"Fire",
+							"30 ft. cone (Dex. save)",
+							"Constitution"
+						],
+						[
+							"Sapphire",
+							"Thunder",
+							"30 ft. cone (Con. save)",
+							"Intelligence"
+						],
+						[
+							"Silver",
+							"Cold",
+							"30 ft. cone (Con. save)",
+							"Intelligence"
+						],
+						[
+							"Song",
+							"Lighting",
+							"30 ft. cone (Con. save)",
+							"Charisma"
+						],
+						[
+							"Steel",
+							"Acid",
+							"10 by 30 ft. line (Dex. save)",
+							"Intelligence"
+						],
+						[
+							"Topaz",
+							"Necrotic",
+							"30 ft. cone (Con. save)",
+							"Charisma"
+						],
+						[
+							"White",
+							"Cold",
+							"30 ft. cone (Con. save)",
+							"Constitution"
+						]
+					]
+				},
+				{
+					"name": "NOTE",
+					"type": "inset",
+					"entries": [
+						"When playing as a half gold dragon, and your Reserved Companion trait causes fire damage you deal to become radiant damage against fiends and undead creatures instead, then this radiant damage retains all the benefits that would come with dealing fire damage."
+					]
+				}
+			]
+		},
+		{
+			"name": "Channel Divinity: Dragon's Wrath",
+			"source": "LEGDRAG",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Dragon",
+			"subclassSource": "LEGDRAG",
+			"page": 44,
+			"level": 2,
+			"header": 2,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
+			"entries": [
+				"Starting at 2nd level, as an action, you can use your Channel Divinity to unleash a devastating exhalation of energy; your breath weapon. Your Draconic Blessing determines the size, shape, and damage type of your breath weapon. When you use this breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your Draconic Blessing. A creature takes 3d8 + your cleric level damage on a failed save, and half as much damage on a successful one."
+			]
+		},
+		{
+			"name": "Legendary Protection",
+			"source": "LEGDRAG",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Dragon",
+			"subclassSource": "LEGDRAG",
+			"page": 44,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, your deity grants you the fabled defenses of dragon kind. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You gain resistance to the damage type associated with your Draconic Blessing. If you already have resistance to this damage type from another source, then you can choose to instead reduce damage of that type by an amount equal to your Wisdom modifier (minimum of 1) after halving the damage.",
+						"While wearing heavy armor, you gain a +1 bonus to your AC. You also gain this bonus while wearing scale mail made out of dragon scales."
+					]
+				}
+			]
+		},
+		{
+			"name": "Divine Strike",
+			"source": "LEGDRAG",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Dragon",
+			"subclassSource": "LEGDRAG",
+			"page": 44,
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the type associated with your Draconic Blessing to the target. When you reach 14th level, the extra damage increases to 2d8."
+			]
+		},
+		{
+			"name": "Shock and Awe",
+			"source": "LEGDRAG",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Dragon",
+			"subclassSource": "LEGDRAG",
+			"page": 44,
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"At 17th level, as an action, you can unleash a true dragon's roar that terrifies your enemies and inspires your allies. Choose any creatures that are within 30 feet of you. If the creature can see and hear you, it must succeed on a Wisdom saving throw against your spell save DC. On a failed save, the creature becomes frightened of you for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, then the creature becomes immune to your Shock and Awe for the next 24 hours. In addition, creatures of your choice within 30 feet of you gain advantage on the next attack roll they make within the next minute, provided they can hear you. When you use your Dragon's Wrath Channel Divinity feature, you can use your bonus action to exude a terrifying presence, which causes all the above effects. The difference is that foes and allies (only) need to see you."
 			]
 		}
 	]
