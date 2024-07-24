@@ -4277,6 +4277,20 @@
 				"Spirit Walker|Barbarian|PHB|Totem Warrior, Dragon Totem spirit|LEGDRAG|10",
 				"Totemic Attunement|Barbarian|PHB|Totem Warrior, Dragon Totem spirit|LEGDRAG|14"
 			]
+		},
+		{
+			"name": "College of the Playful Mockery",
+			"source": "LEGDRAG",
+			"page": 42,
+			"shortName": "Playful Mockery",
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassFeatures": [
+				"College of the Playful Mockery|Bard|PHB|Playful Mockery|LEGDRAG|3",
+				"SicK Burns|Bard|PHB|Playful Mockery|LEGDRAG|6",
+				"The voice of the People|Bard|PHB|Playful Mockery|LEGDRAG|6",
+				"Spitting Fire|Bard|PHB|Playful Mockery|LEGDRAG|14"
+			]
 		}
 	],
 	"subclassFeature": [
@@ -5450,6 +5464,133 @@
 					"type": "entries",
 					"entries": [
 						"While you're raging, when you hit a creature with a melee attack you can create a burst of intense energy in a 10-foot-radius sphere around that creature as a bonus action. Each creature other than you in that area takes 3d6 damage of the type associated with your totem dragon."
+					]
+				}
+			]
+		},
+		{
+			"name": "College of the Playful Mockery",
+			"source": "LEGDRAG",
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Playful Mockery",
+			"subclassSource": "LEGDRAG",
+			"page": 42,
+			"level": 3,
+			"entries": [
+				"Bards of the College of Playful Mockery are playful tricksters who prefer to taunt and mock their foes into submission rather then directly fight them. They are known for speaking uncomfortable truths, in a way that playfully mocks the target of their jokes. This way people can laugh about it and see the truth behind these taunts. They especially revel in targeting social stigmas set up by those that seek to control the way people speak, and through that the way people think. Their jokes cause people to laugh about these stigmas, which lessens their control over them. This ultimately results in a more open and free discussion on how to improve society.",
+				"The College of Playful Mockery was set up by an ancient copper dragon, who at first merely sought to teach others his skill at playing tricks on people. However, over time he began to understand the importance of unrestricted humor in mortal society, and how laughter can be used as a tool for the greater good. Even if their jokes walk the fine line between being mean and being playful, calling out the uncomfortable truths in the world has done far more good than harm. As such they will never allow their voice to be silenced or restricted, nor the voices of others.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Truth Saver|Bard|PHB|Playful Mockery|LEGDRAG|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Playful Mockery|Bard|PHB|Playful Mockery|LEGDRAG|3"
+				}
+			]
+		},
+		{
+			"name": "Truth Saver",
+			"source": "LEGDRAG",
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Playful Mockery",
+			"subclassSource": "LEGDRAG",
+			"page": 42,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"When you join the College of Playful Mockery at 3rd level, your gain proficiency in the Insight skill. If you already have proficiency in this skill, then you can choose a different skill.",
+				"All spells that deal psychic damage count as bard spells for you, regardless of class restrictions. If you reduce a creature to 0 hit points through psychic damage, then you can choose to spare and immediately stabilize that creature by complimenting its performance.",
+				"In addition, you learn the {@spell vicious mockery|PHB} cantrip. If you already know this cantrip, you can choose a different {@filter bard cantrip|spells|level=0|class=Bard} instead. The first time that those affected by this spell deal damage to other creatures, without involving an attack roll, they must roll a die equal to your inspiration die and subtract it from the damage dealt (targets that fail their saving throw against your vicious mockery cantrip count as being affected by this spell until the end of their next turn)."
+			]
+		},
+		{
+			"name": "Playful Mockery",
+			"source": "LEGDRAG",
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Playful Mockery",
+			"subclassSource": "LEGDRAG",
+			"page": 42,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Starting at 3rd level, when you land a line, you're on a roll; when you cast vicious mockery, and the target fails their saving throw, you can expend one use of your Bardic Inspiration to unleash your lyrical genius to...",
+				{
+					"name": "Aggrandize Yourself",
+					"type": "entries",
+					"entries": [
+						"Roll the inspiration die and gain temporary hit points equal to its result + the damage dealt by your vicious mockery cantrip."
+					]
+				},
+				{
+					"name": "Double Down",
+					"type": "entries",
+					"entries": [
+						"Roll the inspiration die and the target takes additional psychic damage equal to amount rolled, and also has disadvantage on its next saving throw against your vicious mockery cantrip within the next minute."
+					]
+				},
+				{
+					"name": "Make it Personal",
+					"type": "entries",
+					"entries": [
+						"Roll the inspiration die and subtract the amount rolled from the target's attack rolls whenever it attacks anyone other than you. This effect lasts until the start of your next turn."
+					]
+				},
+				"You must choose which one of these effects you cause as you expend a use of your Bardic Inspiration this way, but before you roll the inspiration die."
+			]
+		},
+		{
+			"name": "Sick Burns",
+			"source": "LEGDRAG",
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Playful Mockery",
+			"subclassSource": "LEGDRAG",
+			"page": 42,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, when you cast a spell that deals psychic damage, you add your Charisma modifier (minimum of 1) to one damage roll of that spell, and it ignores psychic resistance.",
+				"Additionally, whenever a creature misses an attack that suffered disadvantage caused by your {@spell vicious mockery|PHB} cantrip, you deal a verbally devastating follow up dealing psychic damage equal to your Charisma modifier (minimum of 1), provided it can hear you."
+			]
+		},
+		{
+			"name": "The Voice of the People",
+			"source": "LEGDRAG",
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Playful Mockery",
+			"subclassSource": "LEGDRAG",
+			"page": 42,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Also at 6th level, your ability to communicate transcends barriers of language. You can communicate basic concepts with creatures that don't share a language with you as long as that creature speaks at least one language through intonation, body language, gestures, attitude, and swaggering about.",
+				"Using this method you can get information such as how much something should cost, where notable locations are, who the toughest person or thing around is, and which paths or alleyways should be avoided, as well other things your DM might find appropriate for you to be able to learn from them."
+			]
+		},
+		{
+			"name": "Spitting Fire",
+			"source": "LEGDRAG",
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Playful Mockery",
+			"subclassSource": "LEGDRAG",
+			"page": 42,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Starting at 14th level, you can deliver verbal components to spells with blinding speed and precision, and your words get through to even the most thick-skinned of people.",
+				{
+					"type": "list",
+					"items": [
+						"You can expend a use of your Bardic Inspiration to cast a spell with the cast time of one action as a bonus action, provided the spell has only verbal components.",
+						"When you would deal psychic damage with a spell to creatures who are immune against this damage type, you deal force damage instead. The spell retains all the benefits that would come with dealing psychic damage.",
+						"When you cast a spell that deals psychic damage, you can increase the spell's damage dice by 1 step. For example, d4 to d6, d6 to d8 etc. (maximum of d12).",
+						"You learn the {@spell message|PHB} cantrip if you don't already know it, you can cast it as a bonus action, and you only require verbal components to cast this spell."
 					]
 				}
 			]
