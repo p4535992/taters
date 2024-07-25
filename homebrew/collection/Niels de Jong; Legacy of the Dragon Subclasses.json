@@ -4431,9 +4431,11 @@
 			"additionalSpells": [
 				{
 					"prepared": {
-						"1": [
+						"-": [
 							"frostbite|xge",
-							"shape water|xge",
+							"shape water|xge"
+						],
+						"1": [
 							"create or destroy water|phb",
 							"fog cloud|phb"
 						],
@@ -4455,6 +4457,21 @@
 						]
 					}
 				}
+			]
+		},
+		{
+			"name": "Circle of the Dragon",
+			"source": "LEGDRAG",
+			"page": 49,
+			"className": "Druid",
+			"classSource": "PHB",
+			"shortName": "Dragon",
+			"subclassFeatures": [
+				"Circle of the Dragon|Druid|PHB|Dragon|LEGDRAG|2",
+				"Circle Forms Superior|Druid|PHB|Dragon|LEGDRAG|6",
+				"Frightful Transformation|Druid|PHB|Dragon|LEGDRAG|6",
+				"Wild Draconic Form|Druid|PHB|Dragon|LEGDRAG|10",
+				"Druidic Dragon Wings|Druid|PHB|Dragon|LEGDRAG|14"
 			]
 		}
 	],
@@ -6355,7 +6372,7 @@
 					"name": "Variant Half Bronze Dragon",
 					"type": "inset",
 					"entries": [
-						"Some {@race Bronze Blessed by Sea|LEGDRAG|half bronze dragons are blessed by the seas}, and are born with innate wis-dom. These half bronze dragons can exchange their +1 Constitution and +1 Charisma ability score increases with a +2 Wisdom score increase instead. If they are a cleric, they can always choose the Water Domain, provided their god's portfolio doesn't conflict with it. Asgorath, god of creation, could have this domain."
+						"Some {@race Half Dragon (Bronze Blessed by Sea)|LEGDRAG|half bronze dragons are blessed by the seas}, and are born with innate wis-dom. These half bronze dragons can exchange their +1 Constitution and +1 Charisma ability score increases with a +2 Wisdom score increase instead. If they are a cleric, they can always choose the Water Domain, provided their god's portfolio doesn't conflict with it. Asgorath, god of creation, could have this domain."
 					]
 				},
 				{
@@ -6522,6 +6539,237 @@
 			"header": 2,
 			"entries": [
 				"At 17th level, your healing is imbued with the persistence of the waves. When you restore hit points to a creature, that creature gains advantage on the next attack roll, ability check, or saving throw it makes within the next minute."
+			]
+		},
+		{
+			"name": "Circle of the Dragon",
+			"source": "LEGDRAG",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Dragon",
+			"subclassSource": "LEGDRAG",
+			"page": 49,
+			"level": 2,
+			"entries": [
+				"Druids of the Circle of the Dragon devote themselves to the natural balance of all dragons, good and evil, as dragons are an integral part of the world. Some join this circle to obtain draconic power, while others worship dragon gods of balance like Asgorath and seek to gain a divine ascension. These druids carry with them a flaming passion, and are known for their extraordinary pride.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Emissary of the Dragons|Druid|PHB|Dragon|LEGDRAG|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Circle Forms|Druid|PHB|Dragon|LEGDRAG|2"
+				},
+				{
+					"name": "Variant Half Green Dragon",
+					"type": "inset",
+					"entries": [
+						"Some {@race Half Dragon (Green Blessed by Nature)|LEGDRAG|half green dragons} are more in touch with the natural world and can exchange their +1 Intelligence and +1 Charisma ability score increases with a +2 Wisdom score increase instead. These half green dragons tend towards druidism, as well as other paths that require patience and wisdom."
+					]
+				}
+			]
+		},
+		{
+			"name": "Emissary of the Dragons",
+			"source": "LEGDRAG",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Dragon",
+			"subclassSource": "LEGDRAG",
+			"page": 49,
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"At 2nd level you have formed a close bond with dragon kind, and you have learned to speak, read and write Draconic. Additionally, whenever you make a Charisma check when interacting with dragons, your proficiency bonus is doubled if it applies to the check. In addition, you have advantage on saving throws against being charmed or frightened."
+			]
+		},
+		{
+			"name": "Circle Forms",
+			"source": "LEGDRAG",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Dragon",
+			"subclassSource": "LEGDRAG",
+			"page": 49,
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"The rites of your circle grant you the ability to transform into the most feared creatures in all the realms.",
+				"Starting at 2nd level, you can use your {@i Wild Shape} to transform into a {@filter dragon|bestiary|type=dragon|miscellaneous=!swarm} with a challenge rating (CR) as high as 1, ignoring the max CR column of the Beast Shapes table.",
+				"This includes dragons you have not seen before. Additionally, you can transform into a dragon that has movement speeds from the Limitations column of the Beast Shapes table, but you cannot use those movement speeds until you’ve reached the appropriate druid levels shown on the table.",
+				{
+					"type": "table",
+					"caption": "Dragons by Challenge Rating",
+					"colLabels": [
+						"CR",
+						"Dragon"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11"
+					],
+					"rows": [
+						[
+							"1",
+							"Brass Dragon Wyrmling, Copper Dragon Wyrmling, Deep Dragon Wyrmling, Faerie Dragon (Younger), Steel Dragon Wyrmling"
+						],
+						[
+							"2",
+							"Black Dragon Wyrmling, Bronze Dragon Wyrmling, Black Guard Drake, Blue Guard Drake, Bronze Dragon Wyrmling, Crystal Dragon Wyrmling, Dragonnel, Emerald Dragon Wyrmling, Faerie Dragon (Older), Gray Dragon Wyrmling, Green Dragon Wyrmling, Green Guard Drake, Moonstone Dragon Wyrmling, Red Guard Drake, Topaz Dragon Wyrmling, White Dragon Wyrmling, White Guard Drake"
+						],
+						[
+							"3",
+							"Blue Dragon Wyrmling, Celestial Dragon Wyrmling, Gold Dragon Wyrmling, Sapphire Dragon Wyrmling, Silver Dragon Wyrmling (for game purposes it has a CR of 3 instead of 2), Song Dragon Wyrmling"
+						],
+						[
+							"4",
+							"Amethyst Dragon Wyrmling, Dragon Turtle Wyrmling, Red Dragon Wyrmling"
+						],
+						[
+							"5",
+							"Green Shadow Dragon Wyrmling (Monster Manual page 84 and 95), Young Crystal Dragon, Young Deep Dragon"
+						],
+						[
+							"6",
+							"Wyvern, Young Brass Dragon, Young Gray Dragon, Young Steel Dragon, Young White Dragon"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Circle Forms Superior",
+			"source": "LEGDRAG",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Dragon",
+			"subclassSource": "LEGDRAG",
+			"page": 49,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"The rites of your circle grant you the ability to transform into the most feared creatures in all the realms.",
+				"Starting at 6th level, you can use your {@i Wild Shape} to transform into a {@filter dragon|bestiary|type=dragon|miscellaneous=!swarm} with a challenge rating (CR) as high as your druid level divided by 3, rounded down, ignoring the max CR column of the Beast Shapes table. A silver dragon wyrmling has a challenge rating of 3 for this feature, and the Shadow Dragon template ({@i Monster Manual} page 84) increases a dragon's CR by 3).",
+				"This includes dragons you have not seen before. Additionally, you can transform into a dragon that has movement speeds from the Limitations column of the Beast Shapes table, but you cannot use those movement speeds until you’ve reached the appropriate druid levels shown on the table.",
+				{
+					"type": "table",
+					"caption": "Dragons by Challenge Rating",
+					"colLabels": [
+						"CR",
+						"Dragon"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11"
+					],
+					"rows": [
+						[
+							"1",
+							"Brass Dragon Wyrmling, Copper Dragon Wyrmling, Deep Dragon Wyrmling, Faerie Dragon (Younger), Steel Dragon Wyrmling"
+						],
+						[
+							"2",
+							"Black Dragon Wyrmling, Bronze Dragon Wyrmling, Black Guard Drake, Blue Guard Drake, Bronze Dragon Wyrmling, Crystal Dragon Wyrmling, Dragonnel, Emerald Dragon Wyrmling, Faerie Dragon (Older), Gray Dragon Wyrmling, Green Dragon Wyrmling, Green Guard Drake, Moonstone Dragon Wyrmling, Red Guard Drake, Topaz Dragon Wyrmling, White Dragon Wyrmling, White Guard Drake"
+						],
+						[
+							"3",
+							"Blue Dragon Wyrmling, Celestial Dragon Wyrmling, Gold Dragon Wyrmling, Sapphire Dragon Wyrmling, Silver Dragon Wyrmling (for game purposes it has a CR of 3 instead of 2), Song Dragon Wyrmling"
+						],
+						[
+							"4",
+							"Amethyst Dragon Wyrmling, Dragon Turtle Wyrmling, Red Dragon Wyrmling"
+						],
+						[
+							"5",
+							"Green Shadow Dragon Wyrmling (Monster Manual page 84 and 95), Young Crystal Dragon, Young Deep Dragon"
+						],
+						[
+							"6",
+							"Wyvern, Young Brass Dragon, Young Gray Dragon, Young Steel Dragon, Young White Dragon"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Frightful Transformation",
+			"source": "LEGDRAG",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Dragon",
+			"subclassSource": "LEGDRAG",
+			"page": 49,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Starting at 6th level, when you use your Wild Shape, each creature of your choice within 30 feet of you must make a Wisdom saving throw against your druid spell save DC or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, then it becomes immune to your Frightful Transformation for the next 24 hours.",
+				"In addition, while in your Wild Shape, you can replace the DC of your breath weapon with your druid spell save DC, provided the breath weapon only deals damage."
+			]
+		},
+		{
+			"name": "Wild Draconic Form",
+			"source": "LEGDRAG",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Dragon",
+			"subclassSource": "LEGDRAG",
+			"page": 49,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"At 10th level, you can expend two uses of Wild Shape at the same time to change into a {@creature druidic dragon|LEGDRAG|druidic dragon}. When you do so, choose a damage type from the Elemental Essence table.",
+				"While you remain motionless as a {@creature druidic dragon|LEGDRAG|druidic dragon}, you do not age, and any temporary effects on you (like your Wild Shape) do not further expire. While motionless, you must use this feature again after finishing a rest to remain in this form.",
+				"The damage of your {@creature druidic dragon|LEGDRAG|druidic dragon}'s breath weapon increases to 10d8 at 14th level, and 10d10 at 17th level.",
+				"In addition, your natural weapons count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.",
+				{
+					"type": "table",
+					"caption": "Elemental Essence",
+					"colLabels": [
+						"Damage Type",
+						"Breath Weapon"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"Acid",
+							"10 by 90 ft. line (Dex. Save)"
+						],
+						[
+							"Cold",
+							"60 ft. cone (Con. save)"
+						],
+						[
+							"Fire",
+							"60 ft. cone (Dex. save)"
+						],
+						[
+							"Lightning",
+							"10 by 90 ft. line (Dex. Save)"
+						],
+						[
+							"Poison",
+							"60 ft. cone (Con. save)"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Druidic Dragon Wings",
+			"source": "LEGDRAG",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Dragon",
+			"subclassSource": "LEGDRAG",
+			"page": 50,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"At 14th level, you gain the ability to sprout a pair of {@creature druidic dragon|LEGDRAG|druidic dragon} wings from your back, granting you a flying speed equal to your walking speed. You can create these wings as a bonus action on your turn. They last until you dismiss them as a bonus action on your turn. Your clothes and armor are magically changed to accommodate them.",
+				"In addition, those who fail their saving throws against your Frightful Transformation feature or your {@creature druidic dragon|LEGDRAG|druidic dragon}'s Frightful Reveal ability also become paralyzed until the end of your next turn, as they are gripped by fear."
 			]
 		}
 	]
