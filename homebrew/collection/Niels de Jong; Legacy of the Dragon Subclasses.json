@@ -4225,6 +4225,7 @@
 		{
 			"name": "Furious Maw",
 			"source": "LEGDRAG",
+			"page": 1,
 			"shortName": "Furious Maw",
 			"className": "Barbarian",
 			"classSource": "PHB",
@@ -4239,6 +4240,7 @@
 		{
 			"name": "Draconic Bloodline (Fang)",
 			"source": "LEGDRAG",
+			"page": 1,
 			"className": "Sorcerer",
 			"classSource": "PHB",
 			"shortName": "Draconic Bloodline (Fang)",
@@ -4340,6 +4342,59 @@
 						"9": [
 							"cone of cold|phb",
 							"dominate person|phb"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Scalykind Domain",
+			"source": "LEGDRAG",
+			"page": 46,
+			"shortName": "Scalykind",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassFeatures": [
+				"Scalykind Domain|Cleric|PHB|Scalykind|LEGDRAG|1",
+				"Channel Divinity: Dragontooth Warrior|Cleric|PHB|Scalykind|LEGDRAG|2",
+				"Dragon Tooth Mastery|Cleric|PHB|Scalykind|LEGDRAG|6",
+				"Divine Strike|Cleric|PHB|Scalykind|LEGDRAG|8",
+				"Lizard King|Cleric|PHB|Scalykind|LEGDRAG|17"
+			],
+			"subclassSpells": [
+				"cure wounds|phb",
+				"divine favor|phb",
+				"blur|phb",
+				"enlarge/reduce|phb",
+				"fear|phb",
+				"haste|phb",
+				"dominate beast|phb",
+				"freedom of movement|phb",
+				"commune with nature|phb",
+				"hold monster|phb"
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"cure wounds|phb",
+							"divine favor|phb"
+						],
+						"3": [
+							"blur|phb",
+							"enlarge/reduce|phb"
+						],
+						"5": [
+							"fear|phb",
+							"haste|phb"
+						],
+						"7": [
+							"dominate beast|phb",
+							"freedom of movement|phb"
+						],
+						"9": [
+							"commune with nature|phb",
+							"hold monster|phb"
 						]
 					}
 				}
@@ -6001,6 +6056,218 @@
 			"header": 2,
 			"entries": [
 				"At 17th level, as an action, you can unleash a true dragon's roar that terrifies your enemies and inspires your allies. Choose any creatures that are within 30 feet of you. If the creature can see and hear you, it must succeed on a Wisdom saving throw against your spell save DC. On a failed save, the creature becomes frightened of you for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, then the creature becomes immune to your Shock and Awe for the next 24 hours. In addition, creatures of your choice within 30 feet of you gain advantage on the next attack roll they make within the next minute, provided they can hear you. When you use your Dragon's Wrath Channel Divinity feature, you can use your bonus action to exude a terrifying presence, which causes all the above effects. The difference is that foes and allies (only) need to see you."
+			]
+		},
+		{
+			"name": "Scalykind Domain",
+			"source": "LEGDRAG",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Scalykind",
+			"subclassSource": "LEGDRAG",
+			"page": 46,
+			"level": 1,
+			"entries": [
+				"Commonly known as Lizard Priests, these clerics are exclusively lizardfolk, but unlike most lizardfolk venerate their ancestors and follow a code of honor. Lizardfolk are generally regarded as a pragmatic people, the exception to this however are the more civilized variants of the Sharptooth lizardfolk.",
+				"These Sharptooth lizardfolk adorn themselves with feathers as a sign of respect to their ancestors, whom they refer to as dragons. In some cases their ancestors answer back, and share their divine power with a select few of their descendants.",
+				"Lizard Priests do not worship a god in the traditional sense, like other clerics do, but instead worship the collective of all the ancestors who came before them. Some more primal and powerful than others. They answer their prayers, and function like any other god would. Granting them their strength, and sometimes even the form of one of their mighty \"dragon\" ancestors. Their holy symbol references their ancestors, and it's appearance is varied and depends on the lizardfolk's tribe. Their ancestors forbid them from summoning undead creatures, except when summoning one of their forebears.",
+				"They refer in their traditional tongue to their ancestors as dragons, but after adventuring they often find that the term ancestors is more appropriate, as the other races tend to make strong distinguishes between true dragons and what they call \"dinosaurs\".",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Restriction: Lizardfolk Only|Cleric|PHB|Scalykind|LEGDRAG|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Domain Spells|Cleric|PHB|Scalykind|LEGDRAG|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Swordclaw|Cleric|PHB|Scalykind|LEGDRAG|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Primeval Fury|Cleric|PHB|Scalykind|LEGDRAG|1"
+				}
+			]
+		},
+		{
+			"name": "Restriction: Lizardfolk Only",
+			"source": "LEGDRAG",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Scalykind",
+			"subclassSource": "LEGDRAG",
+			"page": 46,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Only lizardfolk can choose this divine domain, though your DM can lift this restriction to better suit the campaign."
+			]
+		},
+		{
+			"name": "Domain Spells",
+			"source": "LEGDRAG",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Scalykind",
+			"subclassSource": "LEGDRAG",
+			"page": 46,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"You gain domain spells at the cleric levels listed in the Scalykind Domain Spells table. See the Divine Domain class feature for how domain spells work.",
+				{
+					"type": "table",
+					"caption": "Scalykind Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell cure wounds|phb}, {@spell divine favor|phb}"
+						],
+						[
+							"3rd",
+							"{@spell blur|phb}, {@spell enlarge/reduce|phb}"
+						],
+						[
+							"5th",
+							"{@spell fear|phb}, {@spell haste|phb}"
+						],
+						[
+							"7th",
+							"{@spell dominate beast|phb}, {@spell freedom of movement|phb}"
+						],
+						[
+							"9th",
+							"{@spell commune with nature|phb}, {@spell hold monster|phb}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Swordclaw",
+			"source": "LEGDRAG",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Scalykind",
+			"subclassSource": "LEGDRAG",
+			"page": 46,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"At 1st level, you harvest the teeth of predatory beasts during your adventures, especially of your distant scaled kin, and you carry a number of such teeth for use in ritual magic.",
+				"As a bonus action, you can imbue one or two of these \"{@item dragon teeth|LEGDRAG}\" with your magic, and cause them to transform into razor-sharp swordclaw sickles. These sickles are magical weapons and deal 1d8 slashing damage instead of the standard damage for a sickle. After ten minutes, they turn back into dragon teeth. You can use this feature to transform a number of teeth equal to your Wisdom modifier, and you regain all expended uses when you finish a short or long rest.",
+				"Creatures that make an attack roll with this sickle can roll a d4 and add the number rolled to the attack roll.",
+				"Swordclaw sickles that you wield yourself gain the magical attributes of one magic melee weapon that you are attuned to. You decide which weapon after finishing a short or long rest. These sickles count as a spellcasting focus for you.",
+				"You can only have up to two swordclaw sickles created at the same time. When you create an additional one, you must choose which existing swordclaw sickle disappears."
+			]
+		},
+		{
+			"name": "Primeval Fury",
+			"source": "LEGDRAG",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Scalykind",
+			"subclassSource": "LEGDRAG",
+			"page": 46,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"At 1st level, you learn the {@spell magic fang|LEGDRAG} cantrip (page 144), and you count as being permanently affected by this cantrip. For you, this cantrip counts as a cleric cantrip.",
+				"When you engage in two-weapon fighting, you can treat your main and off-hand claws as light melee weapons you are holding. You can only use your claws to engage in two-weapon fighting this way while you are in your original form. These natural weapons deal 1d6 slashing damage.",
+				"Starting at 5th level, when you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack (if you do not already do so).",
+				"Starting at 11th level, when you engage in two-weapon fighting, you can make one additional attack."
+			]
+		},
+		{
+			"name": "Channel Divinity: Dragontooth Warrior",
+			"source": "LEGDRAG",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Scalykind",
+			"subclassSource": "LEGDRAG",
+			"page": 46,
+			"level": 2,
+			"header": 2,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
+			"entries": [
+				"Starting at 2nd level, as an action you can use your Channel Divinity to create a physical body for your forebears. Doing so allows you to summon a {@creature Dragontooth Warrior|LEGDRAG}, a sacred skeleton lizardfolk, into an unoccupied space within 30 feet of you. The {@creature Dragontooth Warrior|LEGDRAG} is friendly to you and your companions, understands you, and obeys your commands.",
+				"See its game statistics in the Dragontooth Warrior stat block, which uses your proficiency bonus (PB) in several places. In combat, the Dragontooth Warrior shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the Dragontooth Warrior can take any action of its choice, not just Dodge. The Dragontooth Warrior remains for 1 hour, until it is reduced to 0 hit points, or until you summon a new Dragontooth Warrior. If it is reduced to 0 hit points, you cannot summon a new Warrior until 1 minute has passed. You can equip your Warrior with a swordclaw sickle, but only one. You can imbue one of your dragon teeth when summoning your Warrior to immediately equip it with one. It can use it to defend you or your allies. You can equip your Warrior with a shield, and a shield's benefits apply on top of its natural armor."
+			]
+		},
+		{
+			"name": "Dragon Tooth Mastery",
+			"source": "LEGDRAG",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Scalykind",
+			"subclassSource": "LEGDRAG",
+			"page": 47,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, you have achieved mastery in creating dragon teeth as well as in communing with your ancestor spirits to grant them the vigor they had in life. When you create a Dragontooth Warrior, it gains the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"When you use your bonus action to make a melee weapon attack, you can command your Dragontooth Warrior to make a single attack with one of its weapons instead of taking the Dodge action.",
+						"While wielding a swordclaw sickle, your Dragontooth Warrior can use its reaction or yours to protect another creature with its Defender trait, provided your Dragontooth Warrior is within your line of sight."
+					]
+				},
+				"In addition, while wielding a swordclaw sickle in both your main and off-hand, attack rolls you make with your swordclaw sickles will score a critical hit on a roll of 19 or 20."
+			]
+		},
+		{
+			"name": "Divine Strike",
+			"source": "LEGDRAG",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Scalykind",
+			"subclassSource": "LEGDRAG",
+			"page": 47,
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to 2d8."
+			]
+		},
+		{
+			"name": "Lizard King",
+			"source": "LEGDRAG",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Scalykind",
+			"subclassSource": "LEGDRAG",
+			"page": 47,
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"Starting at 17th level, you finally achieve the long awaited transformation you were promised, taking the form of one of your mighty ancestors. The \"dragon\" form is a little different from what you imagined, but no less deadly.",
+				"As a bonus action, you can transform into a dinosaur with the statistics of a spinosaurus (page 52). Your game statistics, except your mental ability scores, are replaced by the statistics of the spinosaurus. You retain your alignment and personality.",
+				"You assume the hit points of your new form. You can revert to your normal form as a bonus action, and you automatically revert to your normal form if your hit points are reduced to 0. When you revert to your normal form, you return to the number of hit points you had before you transformed. If you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. You aren't knocked unconscious as long as the excess damage doesn't reduce your normal form to 0 hit points.",
+				"While in your dinosaur form:",
+				{
+					"type": "list",
+					"items": [
+						"You can't wield weapons, nor can you use your Channel Divinity feature, but you can issue commands.",
+						"You can't cast spells while in this form, but you can maintain concentration on existing spells.",
+						"This form grants you superior camouflage; while you are at least lightly obscured by natural phenomena (such as foliage or mist), you can take the Hide action as a bonus action, and you have advantage on Dexterity (Stealth) checks.",
+						"You have advantage on attack rolls against surprised creatures.",
+						"You can only speak Draconic while transformed, as this form's anatomy prevents you from speaking any other language."
+					]
+				},
+				"After losing this form, you can transform this way again after finishing a long rest.",
+				"Your primeval magic also causes you to age more slowly. For every 10 years that pass, your body ages only 1 year."
 			]
 		}
 	]
