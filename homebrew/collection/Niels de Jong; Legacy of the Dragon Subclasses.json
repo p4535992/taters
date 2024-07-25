@@ -4399,6 +4399,63 @@
 					}
 				}
 			]
+		},
+		{
+			"name": "Water Domain",
+			"source": "LEGDRAG",
+			"shortName": "Water",
+			"page": 48,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassFeatures": [
+				"Water Domain|Cleric|PHB|Water|LEGDRAG|1",
+				"Channel Divinity: Turning Tides|Cleric|PHB|Water|LEGDRAG|2",
+				"Strength of the Seas|Cleric|PHB|Water|LEGDRAG|6",
+				"Blessed Strike|Cleric|PHB|Water|LEGDRAG|8",
+				"Eternal Waves|Cleric|PHB|Water|LEGDRAG|17"
+			],
+			"subclassSpells": [
+				"frostbite|xge",
+				"shape water|xge",
+				"create or destroy water|phb",
+				"fog cloud|phb",
+				"lesser restoration|phb",
+				"rime's binding ice|ftd",
+				"tidal wave|xge",
+				"water breathing|phb",
+				"control water|phb",
+				"ice storm|phb",
+				"cone of cold|phb",
+				"maelstrom|xge"
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"frostbite|xge",
+							"shape water|xge",
+							"create or destroy water|phb",
+							"fog cloud|phb"
+						],
+						"3": [
+							"lesser restoration|phb",
+							"rime's binding ice|ftd"
+						],
+						"5": [
+							"tidal wave|xge",
+							"water breathing|phb"
+						],
+						"7": [
+							"control water|phb",
+							"ice storm|phb"
+						],
+						"9": [
+							"cone of cold|phb",
+							"maelstrom|xge"
+						]
+					}
+				}
+			]
 		}
 	],
 	"subclassFeature": [
@@ -6268,6 +6325,203 @@
 				},
 				"After losing this form, you can transform this way again after finishing a long rest.",
 				"Your primeval magic also causes you to age more slowly. For every 10 years that pass, your body ages only 1 year."
+			]
+		},
+		{
+			"name": "Water Domain",
+			"source": "LEGDRAG",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Water",
+			"subclassSource": "LEGDRAG",
+			"page": 48,
+			"level": 1,
+			"entries": [
+				"Water is essential to creation, but it is also an untamed, destructive force. Gods of nature, tempests, spirituality and healing include water in their portfolios, blessing their followers with the abilities to connect with this primal source of life. Clerics of the Water Domain seek to harmonize with their environments, sometimes far away from civilization, but most find a deep compassion in their souls, often taking care of the unfortunate and providing shelter and guidance. However, like the tides, these clerics can turn into  unforgiving figures, proving themselves to be both zealous champions as well as kind protectors of their cause.",
+				"This especially holds true for half bronze dragon clerics, among whom this domain is very popular. Like the tides, they can easily turn from compassionate defenders to unforgiving crusaders who relentlessly destroy evildoers.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Domain Spells|Cleric|PHB|Water|LEGDRAG|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Acolyte of Water|Cleric|PHB|Water|LEGDRAG|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Gift of the Seas|Cleric|PHB|Water|LEGDRAG|1"
+				},
+				{
+					"name": "Variant Half Bronze Dragon",
+					"type": "inset",
+					"entries": [
+						"Some {@race Bronze Blessed by Sea|LEGDRAG|half bronze dragons are blessed by the seas}, and are born with innate wis-dom. These half bronze dragons can exchange their +1 Constitution and +1 Charisma ability score increases with a +2 Wisdom score increase instead. If they are a cleric, they can always choose the Water Domain, provided their god's portfolio doesn't conflict with it. Asgorath, god of creation, could have this domain."
+					]
+				},
+				{
+					"name": "Variant Sea Elf",
+					"type": "inset",
+					"entries": [
+						"Some {@race Elf (Sea Blessed by Sea)|LEGDRAG|sea elves} are blessed with divine foresight}, and are known as Oracles. Sea elves that choose this variant can exchange their +2 Dexterity ability score increase with a +2 Wisdom score increase instead. If they do, they also exchange their {@i Friend of the Sea} trait with the {@i Oracle trait}:",
+						"{@b Oracle.} You know the {@spell guidance|PHB} cantrip. When you reach 3rd level, you can cast the {@spell augury|PHB} spell once with this trait, and you regain the ability to do so when you finish a long rest. At 7th level, you can cast the {@spell divination|PHB} spell once with this trait as a ritual, to ask a question to your deity or a different source, and you regain the ability to do so when you finish a long rest. Wisdom is your spellcasting ability for these spells."
+					]
+				}
+			]
+		},
+		{
+			"name": "Domain Spells",
+			"source": "LEGDRAG",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Water",
+			"subclassSource": "LEGDRAG",
+			"page": 48,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				{
+					"type": "table",
+					"caption": "Water Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell create or destroy water|phb}, {@spell fog cloud|phb}"
+						],
+						[
+							"3rd",
+							"{@spell lesser restoration|phb}, {@spell rime's binding ice|ftd}"
+						],
+						[
+							"5th",
+							"{@spell tidal wave|xge}, {@spell water breathing|phb}"
+						],
+						[
+							"7th",
+							"{@spell control water|phb}, {@spell ice storm|phb}"
+						],
+						[
+							"9th",
+							"{@spell cone of cold|phb}, {@spell maelstrom|xge}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Acolyte of Water",
+			"source": "LEGDRAG",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Water",
+			"subclassSource": "LEGDRAG",
+			"page": 48,
+			"level": 1,
+			"header": 1,
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"athletics",
+							"nature",
+							"survival"
+						],
+						"count": 1
+					}
+				}
+			],
+			"weaponProficiencies": [
+				{
+					"trident|phb": true
+				}
+			],
+			"entries": [
+				"Starting at 1st level, you learn the {@spell frostbite|xge} and {@spell shape water|xge} cantrips. For you, these cantrips count as cleric cantrips.",
+				"You also gain proficiency with the trident (see also the {@item Trident Reforged|LEGDRAG|revised trident} on page 102), and with one of the following skills of your choice: Athletics, Nature or Survival."
+			]
+		},
+		{
+			"name": "Gift of the Seas",
+			"source": "LEGDRAG",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Water",
+			"subclassSource": "LEGDRAG",
+			"page": 48,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"At 1st level, you gain a swim speed of 30 feet, and you can breathe air and water. If you also have a swim speed from another source, or the ability to breathe water from another source, then your swim speed is increased by 20 feet. As an action, you can grant up to 10 creatures of your choice within 30 feet of you these benefits for 1 hour. You can do so a number of times equal to your proficiency bonus, and you regain all expended uses after finishing a long rest."
+			]
+		},
+		{
+			"name": "Channel Divinity: Turning Tides",
+			"source": "LEGDRAG",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Water",
+			"subclassSource": "LEGDRAG",
+			"page": 48,
+			"level": 2,
+			"header": 2,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
+			"entries": [
+				"At 2nd level, you can use your Channel Divinity to manifest both the healing capabilities of water as well as its unyielding wrath, to aid your allies or smite your foes.",
+				"As an action, you conjure orbs of water that hover around you, not occupying any space. The number of orbs is equal to your Wisdom modifier (minimum of 1), and they disappear after 1 minute or immediately after they come into contact with a creature after you've directed them.",
+				"As a bonus action, you can direct one of these orbs to move up to 120 feet in any direction. If an orb encounters a hostile creature, that creature must succeed on a Dexterity saving throw or take cold damage equal to 1d6 + your cleric level and have its speed halved until the start of your next turn. If an orb encounters a friendly creature, that creature regains hit points equal to 1d6 + your cleric level. If the orb does not encounter a creature it will also disappear.",
+				"Once per turn, when you take damage and while you have at least one orb hovering around you, you lose one of your orbs and regain hit points equal to 1d6 + your cleric level. If the damage was dealt by a creature within 5 feet of you, that creature takes cold damage equal to the amount of hit points you regained this way."
+			]
+		},
+		{
+			"name": "Strength of the Seas",
+			"source": "LEGDRAG",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Water",
+			"subclassSource": "LEGDRAG",
+			"page": 48,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, you can channel the strength of the seas into yourself and others. When you or an ally that you can see within 60 feet of you fails a saving throw, you can use your reaction to let them reroll that saving throw. If they reroll the saving throw this way, they must use the new roll. If that creature succeeds on the saving throw, they also regain hit points equal to 1d6 + your cleric level. You decide if they regain these hit points before or after taking the damage of the effect that forced the saving throw (if any).",
+				"You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses after finishing a long rest."
+			]
+		},
+		{
+			"name": "Blessed Strike",
+			"source": "LEGDRAG",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Water",
+			"subclassSource": "LEGDRAG",
+			"page": 48,
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"At 8th level, when a creature takes damage from one of your cantrips or weapon attacks, you can also deal 1d8 cold damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn. At 14th level, provided the creature takes damage from one of your weapon attacks, this damage increases to 2d8."
+			]
+		},
+		{
+			"name": "Eternal Waves",
+			"source": "LEGDRAG",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Water",
+			"subclassSource": "LEGDRAG",
+			"page": 48,
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"At 17th level, your healing is imbued with the persistence of the waves. When you restore hit points to a creature, that creature gains advantage on the next attack roll, ability check, or saving throw it makes within the next minute."
 			]
 		}
 	]

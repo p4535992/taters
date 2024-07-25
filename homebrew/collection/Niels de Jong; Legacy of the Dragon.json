@@ -11868,6 +11868,7 @@
 			"dmg1": "1d8",
 			"dmgType": "P",
 			"dmg2": "1d10",
+			"trident": true,
 			"weapon": true,
 			"entries": [
 				"You gain a +1 bonus to attack rolls with this weapon against underwater targets. The three tips help you deal with the refraction of water."
@@ -26816,6 +26817,224 @@
 			}
 		},
 		{
+			"name": "Bronze Blessed by Sea",
+			"source": "LEGDRAG",
+			"raceName": "Half Dragon",
+			"raceSource": "LEGDRAG",
+			"page": 48,
+			"ability": [
+				{
+					"str": 1,
+					"wis": 2
+				}
+			],
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						{
+							"name": "Bronze Blessed By Sea",
+							"entries": [],
+							"type": "entries"
+						}
+					]
+				},
+				{
+					"name": "Ability Score Increase",
+					"type": "entries",
+					"entries": [
+						"Your Strength score increase by 1 and your Wisdom score increase by 2."
+					]
+				},
+				{
+					"name": "Draconic Ancestry",
+					"type": "entries",
+					"entries": [
+						"Your breath weapon deals {@damage lightning} damage in a line 30 feet long and 5 feet wide. Your breath weapon imposes a Dexterity saving throw. You have resistance to {@damage lightning} damage."
+					]
+				},
+				{
+					"name": "Dragon of the Coast",
+					"entries": [
+						"You have a swim speed of 30 feet, and you can breathe air and water. When using your breath weapon, you can instead choose to use repulsion gas with the same range and DC. This gas doesn't deal damage but instead imposes a Strength saving throw on those in the area. Those who fail it are pushed back 15 feet away from you, and are knocked prone if they fail it by 5 or more. This special DC increases by 1 for each additional 1d6 damage on your breath weapon."
+					],
+					"type": "entries"
+				}
+			],
+			"resist":[
+				"lightning"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"1": {
+							"daily": {
+								"1": [
+									"Breath Weapon Revised (Dragonborn Bronze)|LEGDRAG"
+								]
+							}
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"Half Dragons? Yeah, total freaks, those guys. Imagine dragonborn but then more human. I guess some people will sleep around with just about anyone these days, even dragons. Still, I had a few in my party, and I can't argue with their results. Once had a silver one freeze an orc solid before he could cleave my head. The look on his frozen face was hilarious!"
+						],
+						"by": "Thorzag, green-dyed beardless dwarf"
+					},
+					{
+						"name": "Half Dragon",
+						"entries": [
+							"Many dragons are not only fearsome beasts but renowned masters of magic as well. As such, it is not uncommon for one to change shape and walk among the masses, or even take a mortal lover. The children of such unions are known as half dragons. Not quite as monstrous-looking as the dragonborn, but still very much recognizable due to their draconic traits.",
+							"The difference between both races is that the dragonborn were artificially created, whereas the half dragons are born from a union between a dragon and a mortal, or are descendants from such unions. Regardless of their origin, both races are generally on good terms. Half dragons' color patterns are similar to their draconic parent, and in the case of two half dragons having children, the child is often born in the color scheme of either parent, though occasionally they instead look like one of the other draconic ancestors of the parents, as half dragons are strongly drawn to one another and are known to quickly make families and form communities. They have a reputation for being prideful and reckless, as they rarely shy away from a challenge, and for being loyal companions."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Proud Dragon Heritage",
+						"entries": [
+							"Half dragons look very similar to their mortal parent, except  for the horns and partial scales that cover their bodies, as well as their draconic legs and long tails. However, half dragons are more known for their dangerous elemental breaths, as well as the gift of transformation. While only a few half dragons eventually ascend to true dragonhood, some have been gifted with a \"lesser\" form that allows them a burst of power as well as the gift of flight for a short period of time. Half dragons are tall and strongly built, with males often standing close to six and a half feet tall and being taller and heavier than females. Most of their legs are covered in scales, which transition to skin at the lower side of their upper legs for females, and at the higher side of their upper legs for males, or for some males even at their lower torso. Their bodies below that line are more draconic than humanoid, as is their draconic tail and some other occasional parts of their upper body as well, with males having more scales and hair than females. Female half dragons on the other hand tend to have very little or no body hair, and while they are generally more fierce and assertive than other humanoid females, they also tend to be more feminine and submissive to their male partners. Scholars suspect this is due to their dragon heritage, where the roles of courtship are reversed. Similar to half dragons, there are more female dragons than male dragons, and females often compete or even fight for the right to court a male, to whom she must prove herself to be a desirable mate. However, half dragons are a race with strong individuals, so while most are naturally tended this way, not all are. Both sexes also gain an advantage based on which draconic heritage is more dominant for them."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Challenging Upbringing",
+						"entries": [
+							"Half dragons share much of their draconic parent's strength, but they are also vulnerable in the early stages of their long lives. The lucky ones are raised by two half dragon parents, who raise them in protected communities. Others are abandoned by the draconic parent or both parents and forced to survive alone or hope they get adopted by other half dragons or by dragonborn. Though those with a metallic dragon parent are, more often than not, properly raised and cared for. Half dragons who are adopted by dragonborn are brought in as part of the clan and are raised to be loyal to that clan. A continual drive for self-improvement reflects the self-sufficiency of the dragonborn race as a whole, which is then reflected upon the half dragon, who also value skill and excellence in all endeavors. They hate to fail, and they push themselves to extreme efforts before they give up on something.",
+							"These dragonborn-raised half dragons hold mastery of a particular skill as a lifetime goal, alongside the desire to ascend to dragonhood. Members of other races who share the same commitment find it easy to earn their respect. Eventually, all half dragons have a universal drive to become stronger. By gaining strength in a multitude of ways, they find that they become more in touch with their draconic heritage, which comes forward in the forms of mastering their elemental breath, or even transforming into a dragon outright. This form is often not as strong as that of true dragons, except for those who are truly devoted and powerful. Such half dragons have \"ascended to dragonhood\", and become true dragons with all their terrifying might. This true dragon form, however, is not easy to attain and requires great devotion and resolve. But those who succeed are held in very high regard by half dragon society."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "A growing people",
+						"entries": [
+							"In recent years, half dragons have been forming communities at an increasing rate. This has created many half dragon families, and in turn, many adventurers as well due to their drive to ascend to dragonhood. Usually, however, many half dragons start a family and have children, with the mother being encouraged to take care of the children while the father goes out and provides for his family. Should the mother choose to become an adventurer, then the grandparents or one of the extended family will often take care of the children. While they are relatively few in number, half dragons are rapidly increasing their numbers due to a high fertility rate and big families. Most members of each community often share a similar color, based on one of their dragon ancestors. As such, these communities tend to have characteristics related to that dragon ancestor. For example, many half gold dragons, like their full-blooded kin, actively hunt down evil creatures, and their breath weapon is quite effective against such foes. Half dragon communities are protected by their elders, some of whom have already ascended to dragonhood and make for formidable opponents."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Half Dragon names",
+						"entries": [
+							"Half dragon names are usually based on the language of its mortal parent, as Draconic names are often much harder to pronounce. Some half dragons who are adopted within dragonborn clans will instead be given a dragonborn name:",
+							{
+								"entries": [
+									{
+										"name": "Male Names",
+										"entries": [
+											"Arjhan, Balasar, Bharash, Donaar, Ghesh, Heskan, Kriv, Medrash, Mehen, Nadarr, Pandjed, Patrin, Rhogar, Shamash, Shedinn, Tarhun, Torinn"
+										],
+										"type": "entries"
+									},
+									{
+										"name": "Female Names",
+										"entries": [
+											"Akra, Biri, Daar, Farideh, Harann, Havilar, Jheri, Kava, Korinn, Mishann, Nala, Perra, Raiann, Sora, Surina, Thava, Uadjit"
+										],
+										"type": "entries"
+									},
+									{
+										"name": "Childhood Names",
+										"entries": [
+											"Climber, Earbender, Leaper, Pious, Shieldbiter, Zealous"
+										],
+										"type": "entries"
+									},
+									{
+										"name": "Clan Names",
+										"entries": [
+											"Clethtinthiallor, Daardendrian, Delmirev, Drachedandion, Fenkenkabradon, Kepeshkmolik, Kerrhylon, Kimbatuul, Linxakasendalor, Myastan, Nemmonis, Norixius, Ophinshtalajiir, Prexijandilin, Shestendeliath, Turnuroth, Verthisathurgiesh, Yarjerit"
+										],
+										"type": "entries"
+									}
+								],
+								"type": "entries"
+							}
+						],
+						"type": "entries"
+					},
+					{
+						"name":"Unusual Half Dragon",
+						"type": "inset",
+						"entries": [
+							"The following are the more unusual half dragon subraces, which you can also choose with your DM's permission. Gray dragons are chromatic dragons, while fang dragons, moonstone dragons, and song dragons are their own subspecies of dragon.",
+							"For game purposes; gem dragons, moonstone dragons, and song dragons count as metallic dragons, while fang dragons count as chromatic dragons.",
+							{
+								"name": "Additional Half Gem Dragons",
+								"type": "entries",
+								"entries": [
+									"While half sappire dragons are the most common half gem dragons, players can also choose to play as a different kind of half gem dragon, seeing as there are also different types of gem dragon besides sapphire dragons. These gem dragon types are; the amethyst dragon, the crystal dragon, the emerald dragon and the topaz dragon.",
+									"If you wish to play as a different type of half gem dragon, then you can take the traits of the half sapphire dragon as your base, but then choose one of the other gem dragon types from the Gem Dragon Ancestor table. This changes the damage type of your Draconic Ancestry trait to the damage type associated with your gem dragon ancestor, as well as the shape and saving throw type of your breath weapon. In addition, all mentions of your character's Intelligence score in the Ability Score Increase and Psionic Dragon traits are replaced with the ability score associated with your Gem Dragon Ancestor (if it is different).",
+									"For example; if you are a half amethyst dragon, your Wisdom score increases by 2, your Strength score increases by 1, your Draconic Ancestry trait's damage type changes to force, and Wisdom is your spellcasting ability for your Psionic Dragon trait. You can use the Mind Blast option regardless of half gem dragon type, provided you have your DM's permission. These other types of half gem dragon are less common than half sapphire dragons, and usually don't form communities of their own. Because of this they are not an option for the half dragon brood background (page 92). Instead, they often join half sapphire dragon communities."
+								]
+							}
+						]
+					},
+					{
+						"name":"Mind Blast",
+						"type": "inset",
+						"entries": [
+							"If you are a half gem dragon (sapphire or otherwise) with the {@feat Improved Breath Weapon|LEGDRAG} feat, then you can spend 2 empower points to turn your breath weapon into a Mind Blast instead. Those affected must instead make an Intelligence saving throw, suffer psychic damage instead of the normal damage, and if they fail their saving throw they are also incapacitated until the end of their next turn. If you also have the Telepathic feat ({@i Tasha's Cauldron of Everything} page 81), then the cost is reduced to 1 empower point instead. You must have your DM's permission to use this option."
+						]
+					},
+					{
+						"name":"Divine Attack",
+						"type": "inset",
+						"entries": [
+							"If you are a sorcerer with the Divine Soul sorcerous origin, and provided you have your DM's permission, then you can exchange your Empowered Healing feature with the Divine Attack feature.",
+							"When you use your action to cast one of your cantrips, you can make one weapon attack as a bonus action. You gain proficiency with one weapon of your choice."
+						]
+					},
+					{
+						"name":"Brown Dragon",
+						"type": "inset",
+						"entries": [
+							"If your world also includes the brown dragon, then you can use these rules for half brown dragons by using the half blue dragon as your base, but then replace the lightning damage type of your Draconic Ancestry trait with the acid damage type. Your other racial traits remain the same. If you wish to use the brown dragon for class features, for ascending to dragonhood, as a monster encounter, or for some other reason; you can use the game statistics for blue dragons ({@i Monster Manual} page 90) but replace its lightning damage type with the acid damage type.",
+							"In addition, brown dragons do not have a flying speed, but instead their burrow speed is twice that of a blue dragon of the same age, and they have the Tunneler trait of a sapphire dragon ({@i Fizban's Treasury of Dragons} page 214) of the same age."
+						]
+					},
+					{
+						"name":"Fang Dragon",
+						"type": "inset",
+						"entries": [
+							"The \"Legacy of Dragon\" document does not give a clear distinction between \"Fang\" and \"Gray\" to enrich the distinction for Dragonborn and Half-Dragons with heritage \"Fang\" it will be used the source \"{@link Fang Dragons by KajaGrae|https://www.gmbinder.com/share/-M-0Zv5sg7zp2gLntCYV}\" very good stuff."
+						]
+					},
+					{
+						"name": "Half Dragon (Bronze Blessed by Sea)",
+						"entries": [
+							"Some half bronze dragons are blessed by the seas, and are born with innate wis-dom. These half bronze dragons can exchange their +1 Constitution and +1 Charisma ability score increases with a +2 Wisdom score increase instead. If they are a cleric, they can always choose the Water Domain, provided their god's portfolio doesn't conflict with it. Asgorath, god of creation, could have this domain."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Credits",
+						"entries": [
+							"Art and item designed by {@link Unknown|}. Please credit if you repost elsewhere."
+						],
+						"type": "entries"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/QX8GqyI.png"
+						}
+					}
+				]
+			}
+		},
+		{
 			"name": "Brown",
 			"source": "LEGDRAG",
 			"raceName": "Half Dragon",
@@ -33558,6 +33777,198 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Sea Blessed by Sea",
+			"source": "LEGDRAG",
+			"raceName": "Elf",
+			"raceSource": "PHB",
+			"page": 48,
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"ability": [
+				{
+					"wis": 2,
+					"con": 1
+				}
+			],
+			"age": {
+				"mature": 100,
+				"max": 750
+			},
+			"darkvision": 60,
+			"traitTags": [
+				"Improved Resting",
+				"Amphibious"
+			],
+			"skillProficiencies": [
+				{
+					"perception": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"elvish": true,
+					"aquan": true
+				}
+			],
+			"soundClip": {
+				"type": "internal",
+				"path": "races/elf.mp3"
+			},
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						{
+							"name": "Sea Blessed by Sea",
+							"entries": [],
+							"type": "entries"
+						}
+					]
+				},
+				{
+					"name": "Ability Score Increase",
+					"type": "entries",
+					"entries": [
+						"Your Constitution score increase by 1 and your Wisdom score increase by 2."
+					]
+				},
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Although elves reach physical maturity at about the same age as humans, the elven understanding of adulthood goes beyond physical growth to encompass worldly experience. An elf typically claims adulthood and an adult name around the age of 100 and can live to be 750 years old."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Elves range from under 5 to over 6 feet tall and have slender builds. Your size is Medium."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Keen Senses",
+					"entries": [
+						"You have proficiency in the {@skill Perception} skill."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Trance",
+					"entries": [
+						"Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.",
+						"{@note If you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed.}"
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write {@language Common|PHB} and {@language Elvish|PHB}. Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Sea Elf Training",
+					"entries": [
+						"You have proficiency with the {@item spear|phb}, {@item trident|phb}, {@item light crossbow|phb}, and {@item net|phb}."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Child of the Sea",
+					"entries": [
+						"You have a swimming speed of 30 feet, and you can breathe air and water."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Oracle",
+					"entries": [
+						"You know the {@spell guidance|PHB} cantrip. When you reach 3rd level, you can cast the {@spell augury|PHB} spell once with this trait, and you regain the ability to do so when you finish a long rest. At 7th level, you can cast the {@spell divination|PHB} spell once with this trait as a ritual, to ask a question to your deity or a different source, and you regain the ability to do so when you finish a long rest. Wisdom is your spellcasting ability for these spells."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Extra Language",
+					"entries": [
+						"You can speak, read, and write {@language Primordial|PHB|Aquan}."
+					],
+					"type": "entries"
+				}
+			],
+			"otherSources": [
+				{
+					"source": "EGW",
+					"page": 163
+				}
+			],
+			"reprintedAs": [
+				"Sea Elf|MPMM"
+			],
+			"heightAndWeight": {
+				"baseHeight": 54,
+				"heightMod": "2d8",
+				"baseWeight": 90,
+				"weightMod": "1d4"
+			},
+			"weaponProficiencies": [
+				{
+					"spear|phb": true,
+					"trident|phb": true,
+					"light crossbow|phb": true,
+					"net|phb": true
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"3": {
+							"daily": {
+								"1": [
+									"augury|phb"
+								]
+							}
+						},
+						"3": {
+							"daily": {
+								"1": [
+									"divination|phb"
+								]
+							}
+						}
+					},
+					"ability": "wis",
+					"known": {
+						"1": [
+							"guidance|phb#c"
+						]
+					}
+				}
+			],
+			"hasFluff": true
 		}
 	]
 }
