@@ -4541,6 +4541,21 @@
 				"Dreadful Wild Shape|Druid|PHB|Savagery|LEGDRAG|10",
 				"Adaptation|Druid|PHB|Savagery|LEGDRAG|14"
 			]
+		},
+		{
+			"name": "Supply SpeCialist",
+			"source": "LEGDRAG",
+			"shortName": "Supply SpeCialist",
+			"page": 55,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassFeatures": [
+				"Supply SpeCialist|Fighter|PHB|Supply SpeCialist|LEGDRAG|3",
+				"Combat Assistant|Fighter|PHB|Supply SpeCialist|LEGDRAG|7",
+				"Improved Potions|Fighter|PHB|Supply SpeCialist|LEGDRAG|10",
+				"Resourceful|Fighter|PHB|Supply SpeCialist|LEGDRAG|15",
+				"Quartermaster|Fighter|PHB|Supply SpeCialist|LEGDRAG|18"
+			]
 		}
 	],
 	"subclassFeature": [
@@ -6665,7 +6680,7 @@
 			"entries": [
 				"The rites of your circle grant you the ability to transform into the most feared creatures in all the realms.",
 				"Starting at 2nd level, you can use your {@i Wild Shape} to transform into a {@filter dragon|bestiary|type=dragon|miscellaneous=!swarm} with a challenge rating (CR) as high as 1, ignoring the max CR column of the Beast Shapes table.",
-				"This includes dragons you have not seen before. Additionally, you can transform into a dragon that has movement speeds from the Limitations column of the Beast Shapes table, but you cannot use those movement speeds until you’ve reached the appropriate druid levels shown on the table.",
+				"This includes dragons you have not seen before. Additionally, you can transform into a dragon that has movement speeds from the Limitations column of the Beast Shapes table, but you cannot use those movement speeds until you've reached the appropriate druid levels shown on the table.",
 				{
 					"type": "table",
 					"caption": "Dragons by Challenge Rating",
@@ -6719,7 +6734,7 @@
 			"entries": [
 				"The rites of your circle grant you the ability to transform into the most feared creatures in all the realms.",
 				"Starting at 6th level, you can use your {@i Wild Shape} to transform into a {@filter dragon|bestiary|type=dragon|miscellaneous=!swarm} with a challenge rating (CR) as high as your druid level divided by 3, rounded down, ignoring the max CR column of the Beast Shapes table. A silver dragon wyrmling has a challenge rating of 3 for this feature, and the Shadow Dragon template ({@i Monster Manual} page 84) increases a dragon's CR by 3).",
-				"This includes dragons you have not seen before. Additionally, you can transform into a dragon that has movement speeds from the Limitations column of the Beast Shapes table, but you cannot use those movement speeds until you’ve reached the appropriate druid levels shown on the table.",
+				"This includes dragons you have not seen before. Additionally, you can transform into a dragon that has movement speeds from the Limitations column of the Beast Shapes table, but you cannot use those movement speeds until you've reached the appropriate druid levels shown on the table.",
 				{
 					"type": "table",
 					"caption": "Dragons by Challenge Rating",
@@ -7082,6 +7097,315 @@
 						"Your speed increases by an additional 10 feet."
 					]
 				}
+			]
+		},
+		{
+			"name": "Supply SpeCialist",
+			"source": "LEGDRAG",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Supply SpeCialist",
+			"subclassSource": "LEGDRAG",
+			"page": 55,
+			"level": 3,
+			"entries": [
+				"The Supply Specialist is a fighter who focuses less on their own martial prowess, and more on how they can enable the other members of their adventuring party to rise to their fullest potential. Through the use of potions and magical scrolls, they ensure that their allies are always prepared to face whatever challenge they come across. This subclass is popular among kobolds due to their affinity for teamwork, as well as their desire to aid their \"dragon\" allies.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Potion Master|Fighter|PHB|Supply SpeCialist|LEGDRAG|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Infuse Scrolls|Fighter|PHB|Supply SpeCialist|LEGDRAG|3"
+				}
+			]
+		},
+		{
+			"name": "Potion Master",
+			"source": "LEGDRAG",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Supply SpeCialist",
+			"subclassSource": "LEGDRAG",
+			"page": 55,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"When you select this martial archetype at 3rd level, you can create a number of lesser potions equal to your proficiency bonus at the end of every long rest. You can select any of the potions from the Lesser Potions list, as long as you meet the level prerequisite. Additional types of lesser potions become available at 7th, 10th, and 15th level. The lesser potions described in this subclass are temporary potions, and function differently from regular potions. If a creature consumes a lesser potion other than a lesser healing potion it immediately loses any current lesser potion effect that it gained from consuming a lesser potion (as such this does not include the lesser potion effect of the Quartermaster feature).",
+				"Lesser potions lose their potency after 24 hours.Lesser potions can be distributed to the party at any point during the adventuring day, and can be consumed as an action. You can use your action to drink a potion yourself, or administer it to a friendly creature within 5 feet of you. If the lesser potion has a choice of effects, then you must choose which effect upon creation. However, you can quickly change that choice as an object interaction on your turn by adding minor ingredients, before it is consumed.",
+				"You gain proficiency with the herbalism kit, which allows you to create potions of healing with the rules in {@i Xanathar's Guide to Everything} (page 130). You also count as one size category larger when determining your carrying capacity, due to your experience at carrying supplies around.",
+				{
+					"name": "Lesser Potions",
+					"type": "list",
+					"items": [
+						"{@optfeature Lesser Healing Potion|LEGDRAG}",
+						"{@optfeature Lesser Swiftness Potion|LEGDRAG}",
+						"{@optfeature Lesser Warding Potion|LEGDRAG}",
+						"{@optfeature Lesser Heightening Potion|LEGDRAG}",
+						"{@optfeature Lesser Tenacity Potion|LEGDRAG}",
+						"{@optfeature Lesser Adrenaline Potion|LEGDRAG}"
+					]
+				}
+			]
+		},
+		{
+			"name": "Infuse Scrolls",
+			"source": "LEGDRAG",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Supply SpeCialist",
+			"subclassSource": "LEGDRAG",
+			"page": 55,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You have rigorously studied the art of writing scrolls. At 3rd level you can create temporary scrolls to aid your allies.",
+				"Unlike most magic users you are not able to cast regular spells, but instead you can infuse your known spells into temporary scrolls, which can be used to cast the spells with. The scroll's spell level is determined by your Fighter level. At 3rd level you learn three 1st-level wizard spells of your choice, and as you gain levels in this subclass you learn additional wizard spells of your choice.",
+				"These spells must be of a spell level equal to or lower than the spell level of your scroll, as shown on the Supply Specialist Spell Scrolls table. Each time you level up you can exchange one known spell for a different one you could learn at that level.",
+				"You use your Intelligence whenever a spell on one of your scrolls refers to your spellcasting ability. You use your Intelligence modifier when setting the saving throw DC of your scrolls and when making a spell attack roll with one:",
+				"{@bold Spell Save DC} = 8 + your proficiency bonus + your Intelligence modifier.",
+				"{@bold Spell attack modifier} = your proficiency bonus + your Intelligence modifier.",
+				"Those who use your scrolls can use these values or their own spellcasting ability modifier and proficiency bonus. You gain scroll slots as you level up in this class, allowing you to create a temporary scroll for each slot. As part of a long rest, you can use parchment, quill, and ink to create temporary spell scrolls for all your available scroll slots, each containing one spell you have learned. If the spell has a lower spell level than the scroll, then it will be cast as a higher level spell. Additionally, if the scroll's spell has a material component cost, then you must use those materials when creating the scroll. Each temporary scroll only contains the spell until you start a long rest.",
+				{
+					"type": "table",
+					"caption": "Supply Specialist Spell Scrolls",
+					"colLabels": [
+						"Fighter Level",
+						"Spells Known",
+						"Scroll Slots",
+						"Spell Level"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-3",
+						"col-3",
+						"col-3"
+					],
+					"rows": [
+						[
+							"3rd",
+							"3",
+							"1",
+							"1st"
+						],
+						[
+							"4th",
+							"4",
+							"1",
+							"1st"
+						],
+						[
+							"5th",
+							"4",
+							"2",
+							"1st"
+						],
+						[
+							"7th",
+							"5",
+							"2",
+							"2nd"
+						],
+						[
+							"8th",
+							"6",
+							"2",
+							"2nd"
+						],
+						[
+							"10th",
+							"7",
+							"3",
+							"2nd"
+						],
+						[
+							"11th",
+							"8",
+							"3",
+							"2nd"
+						],
+						[
+							"13th",
+							"9",
+							"3",
+							"3rd"
+						],
+						[
+							"14th",
+							"10",
+							"3",
+							"3rd"
+						],
+						[
+							"15th",
+							"10",
+							"4",
+							"3rd"
+						],
+						[
+							"16th",
+							"11",
+							"4",
+							"3rd"
+						],
+						[
+							"19th",
+							"12",
+							"4",
+							"4th"
+						],
+						[
+							"20th",
+							"13",
+							"4",
+							"4th"
+						]
+					]
+				},
+				"You can give these scrolls to allies, who can use them like they would use normal scrolls, provided they can cast 1st level or higher spells or use spell scrolls in a different way. Remarkably, due to your innate talent at writing scrolls, the usage of these special spell scrolls is not restricted by class spell lists, nor available spell levels.",
+				"You can give a scroll to a friendly creature within 5 feet of you as an action.",
+				"You can also attempt to use these scrolls yourself, but when you do you must make an Intelligence check to determine whether you cast it successfully. The DC equals 10 + the spell's level. On a failed check, the spell disappears from the scroll with no other effect. If there is an ally within 10 feet of you who is able to cast spells (through features, racial traits, feats or otherwise), then it can choose to use its reaction to grant you advantage on this roll. If you can cast spells yourself, then you always have advantage on this roll.",
+				"You can also use normal scrolls, without being restricted by class spell lists or available spell levels. However, if you use a scroll this way instead of using the standard rules, then you must follow the same rules as if you were attempting to use one of your own temporary scrolls."
+			]
+		},
+		{
+			"name": "Combat Assistant",
+			"source": "LEGDRAG",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Supply SpeCialist",
+			"subclassSource": "LEGDRAG",
+			"page": 55,
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"Beginning at 7th level, you can use a bonus action on your turn to take one of the following special actions:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Aid.} You can administer a single potion to yourself or a willing or unconscious creature within 5 feet of you, granting you or the creature its effect.",
+						"{@b Arm and Restock.} You can give a friendly creature within 30 feet of you any amount of ammunition and a weapon you are carrying. They can immediately equip the weapon and stow or doff any weapons, shields or items they are carrying without spending any actions.",
+						"{@b Handyman.} You can use the Use an Object action.",
+						"{@b Here.} You can give an item, such as a potion or a scroll, to a friendly creature within 30 feet of you."
+					]
+				},
+				"Additionally, when creating potions of healing with the rules in {@i Xanathar's Guide to Everything} (page 130), you can reduce the time spend and gold required by one step. For example, you can create a potion of greater healing within 1 day at the cost of 25 gp. You can create potions while adventuring, provided you have the herbalism kit on hand. As part of a long rest, you can work on a single potion, which counts as if you had spend 1 day working on it.",
+				"Your skill at making potions also allows you to make their doses much smaller, without losing any of their potency. Potions you have made yourself (lesser and regular) can now be consumed as a bonus action instead of an action."
+			]
+		},
+		{
+			"name": "Improved Potions",
+			"source": "LEGDRAG",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Supply SpeCialist",
+			"subclassSource": "LEGDRAG",
+			"page": 56,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"At 10th level, you've improved the process of supplying your adventuring party. You now create the improved version of your lesser potions, as mentioned in their description.",
+				{
+					"name": "Lesser Potions",
+					"type": "list",
+					"items": [
+						"{@optfeature Improved Healing Potion|LEGDRAG}",
+						"{@optfeature Improved Swiftness Potion|LEGDRAG}",
+						"{@optfeature Improved Warding Potion|LEGDRAG}",
+						"{@optfeature Improved Heightening Potion|LEGDRAG}",
+						"{@optfeature Improved Tenacity Potion|LEGDRAG}",
+						"{@optfeature Improved Adrenaline Potion|LEGDRAG}"
+					]
+				}
+			]
+		},
+		{
+			"name": "Resourceful",
+			"source": "LEGDRAG",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Supply SpeCialist",
+			"subclassSource": "LEGDRAG",
+			"page": 56,
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"At 15th level, if you begin combat with no lesser potions prepared, you can scrounge around in your supplies, and prepare one lesser potion of your choice. Once per day after finishing a short rest, you can regain one spell scroll that you prepared at the end of your previous long rest."
+			]
+		},
+		{
+			"name": "Quartermaster",
+			"source": "LEGDRAG",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Supply SpeCialist",
+			"subclassSource": "LEGDRAG",
+			"page": 56,
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"At 18th level, your close work with your supplies has toughened your body and soul. Your Constitution score is increased by 2, and your maximum Constitution score is 22.",
+				"You are always under the effect of one lesser potion of your choice. The lesser potion must have a duration longer than instantaneous. If you choose the Adrenaline Potion, you cannot return to life that way, unless an Adrenaline Potion is administered to you. You can change this effect at the end of a short or long rest. If the effect has a choice of effects, you can also change this choice at the end of a rest."
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Lesser Healing Potion",
+			"source": "LEGDRAG",
+			"page": 56,
+			"featureType": [
+				"OPTFEAT:LEGDRAG"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Figther"
+						},
+						"subclass": {
+							"name": "Supply SpeCialist"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Potion Master|Fighter|PHB|Supply SpeCialist|LEGDRAG|3|} feature",
+						"entrySummary": "Supply SpeCialist"
+					}
+				}
+			],
+			"entries": [
+				"{@i (duration, instantaneous)}",
+				"When consumed, this potion soothes the weary adventurer. They regain hit points equal to 1d6 + your fighter level."
+			]
+		},
+		{
+			"name": "Improved Healing Potion",
+			"source": "LEGDRAG",
+			"page": 56,
+			"featureType": [
+				"OPTFEAT:LEGDRAG"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10,
+						"class": {
+							"name": "Figther"
+						},
+						"subclass": {
+							"name": "Supply SpeCialist"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Improved Potions|Fighter|PHB|Supply SpeCialist|LEGDRAG|10|} feature",
+						"entrySummary": "Supply SpeCialist"
+					}
+				}
+			],
+			"entries": [
+				"{@i (duration, instantaneous)}",
+				"When consumed, this potion soothes the weary adventurer. They regain hit points equal to 2d6 + your fighter level."
 			]
 		}
 	]

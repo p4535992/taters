@@ -162,3 +162,22 @@ You know the {@spell friends} cantrip. When you reach 3rd level, you can cast th
 	"group": [
 		"Chromatic Dragon"
 	],
+    
+
+    "additionalSpells": [
+				{
+					"known": {
+						"3": [
+							{
+								"choose": {
+									"from": [
+										"prestidigitation#c",
+										"druidcraft#c"
+									],
+									"count": 1
+								}
+							}
+						]
+					}
+				}
+			]
