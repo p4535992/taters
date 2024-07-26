@@ -6099,6 +6099,728 @@
 	],
 	"monster": [
 		{
+			"name": "Albertosaurus",
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "beast",
+				"tags": [
+					"dinosaur"
+				]
+			},
+			"source": "LEGDRAG",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d10 + 40",
+				"average": 95
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 21,
+			"dex": 10,
+			"con": 19,
+			"int": 2,
+			"wis": 12,
+			"cha": 7,
+			"passive": 15,
+			"cr": "7",
+			"shortName": "Albertosaurus",
+			"page": 52,
+			"skill": {
+				"perception": "+5"
+			},
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The albertosaurus makes two attacks: one with its bite and one with its tail. It can't make both attacks against the same target."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}27 ({@damage 4d10 + 5}) piercing damage, and if the target is a Medium or smaller creature, it is {@condition grappled} (escape {@dc 15}). Until this grapple ends, the target is {@condition restrained}, and the albertosaurus can't bite another target."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}15 ({@damage 3d6 + 5}) bludgeoning damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://github.com/5etools-mirror-2/5etools-img/raw/main/blank.webp"
+			},
+			"fluff": {
+				"entries": [
+					"These dinosaurs are in addition to the ones found on page 79 of the {@i Monster Manual} and on page 139 of {@i Volo's Guide to Monsters}, and on page 129 of {@i Bigby Presents: Glory of the Giants}, and most can also be chosen by Circle of Savagery druids, provided they have the required level."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/5etools-mirror-2/5etools-img/raw/main/blank.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Diplodocus",
+			"size": [
+				"G"
+			],
+			"type": {
+				"type": "beast",
+				"tags": [
+					"dinosaur"
+				]
+			},
+			"source": "LEGDRAG",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d20 + 36",
+				"average": 162
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 25,
+			"dex": 9,
+			"con": 17,
+			"int": 2,
+			"wis": 12,
+			"cha": 6,
+			"passive": 11,
+			"cr": "7",
+			"shortName": "Diplodocus",
+			"page": 52,
+			"action": [
+				{
+					"name": "Stomp",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 20 ft., one target. {@h}43 ({@damage 8d8 + 7}) bludgeoning damage. Target must make a {@dc 17} Strength save or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 20 ft., one target. {@h}52 ({@damage 10d8 + 7}) bludgeoning damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"damageTags": [
+				"B"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://github.com/5etools-mirror-2/5etools-img/raw/main/blank.webp"
+			},
+			"fluff": {
+				"entries": [
+					"These dinosaurs are in addition to the ones found on page 79 of the {@i Monster Manual} and on page 139 of {@i Volo's Guide to Monsters}, and on page 129 of {@i Bigby Presents: Glory of the Giants}, and most can also be chosen by Circle of Savagery druids, provided they have the required level."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/5etools-mirror-2/5etools-img/raw/main/blank.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Dilophosaurus",
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "beast",
+				"tags": [
+					"dinosaur"
+				]
+			},
+			"source": "LEGDRAG",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d8 + 6",
+				"average": 19
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 14,
+			"int": 4,
+			"wis": 12,
+			"cha": 6,
+			"passive": 13,
+			"cr": "1",
+			"shortName": "Dilophosaurus",
+			"page": 52,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+6"
+			},
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage, and the target must make a {@dc 12} Constitution saving throw, taking {@damage 3d6} poison damage on a failed save, and half as much on a successful one."
+					]
+				},
+				{
+					"name": "Poison Spray {@recharge}",
+					"entries": [
+						"The dilophosaurus spits poison in a 30 feet long line that is 5 feet wide. Each creature in that line must make a {@dc 12} Dexterity saving throw, taking {@damage 3d6} poison damage on a failed save, and half as much damage on a successful one. Those that fail this saving throw are also {@condition blinded} until the end of their next turn."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"damageTags": [
+				"P"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://github.com/5etools-mirror-2/5etools-img/raw/main/blank.webp"
+			},
+			"fluff": {
+				"entries": [
+					"These dinosaurs are in addition to the ones found on page 79 of the {@i Monster Manual} and on page 139 of {@i Volo's Guide to Monsters}, and on page 129 of {@i Bigby Presents: Glory of the Giants}, and most can also be chosen by Circle of Savagery druids, provided they have the required level."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/5etools-mirror-2/5etools-img/raw/main/blank.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Spinosaurus",
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "beast",
+				"tags": [
+					"dinosaur"
+				]
+			},
+			"source": "LEGDRAG",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d12 + 36",
+				"average": 114
+			},
+			"speed": {
+				"walk": 50,
+				"swim": 40
+			},
+			"str": 24,
+			"dex": 12,
+			"con": 17,
+			"int": 2,
+			"wis": 12,
+			"cha": 9,
+			"passive": 13,
+			"cr": "8",
+			"shortName": "Spinosaurus",
+			"page": 52,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+6"
+			},
+			"trait": [
+				{
+					"name": "Hold Breath",
+					"entries": [
+						"The spinosaurus can hold its breath for up to 1 hour."
+					]
+				}
+			],
+			"traitTags": [
+				"Hold Breath"
+			],
+			"action": [
+				{
+					"name": "Mutliattack",
+					"entries": [
+						"The spinosaurus makes two attacks with its claws. If both attacks hit the same target, the spinosaurus can make a bite attack against it."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}26 ({@damage 3d12 + 7}) piercing damage, and if the target is a Medium or smaller creature, it is {@condition grappled} (escape {@dc 17}). Until this grapple ends, the target is {@condition restrained}, and the spinosaurus can't bite another target."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}23 ({@damage 3d10 + 7}) slashing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://github.com/5etools-mirror-2/5etools-img/raw/main/blank.webp"
+			},
+			"fluff": {
+				"entries": [
+					"These dinosaurs are in addition to the ones found on page 79 of the {@i Monster Manual} and on page 139 of {@i Volo's Guide to Monsters}, and on page 129 of {@i Bigby Presents: Glory of the Giants}, and most can also be chosen by Circle of Savagery druids, provided they have the required level."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/5etools-mirror-2/5etools-img/raw/main/blank.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Styracosaurus",
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "beast",
+				"tags": [
+					"dinosaur"
+				]
+			},
+			"source": "LEGDRAG",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d10 + 40",
+				"average": 95
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 22,
+			"dex": 12,
+			"con": 18,
+			"int": 2,
+			"wis": 12,
+			"cha": 6,
+			"passive": 11,
+			"cr": "6",
+			"shortName": "Styracosaurus",
+			"page": 53,
+			"trait": [
+				{
+					"name": "Herd Tactics",
+					"entries": [
+						"The styracosaurus has advantage on an attack roll against a creature if at least one of its allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}. When it has advantage on an attack roll, it can forgo the advantage to make an additional attack with the same natural weapon."
+					]
+				},
+				{
+					"name": "Trampling Charge",
+					"entries": [
+						"If the styracosaurus moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the styracosaurus can make one stomp attack against it as a bonus action."
+					]
+				}
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"action": [
+				{
+					"name": "Gore",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}24 ({@damage 4d8 + 6}) piercing damage."
+					]
+				},
+				{
+					"name": "Stomp",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}22 ({@damage 3d10 + 6}) bludgeoning damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"savingThrowForced": [
+				"strength"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://github.com/5etools-mirror-2/5etools-img/raw/main/blank.webp"
+			},
+			"fluff": {
+				"entries": [
+					"These dinosaurs are in addition to the ones found on page 79 of the {@i Monster Manual} and on page 139 of {@i Volo's Guide to Monsters}, and on page 129 of {@i Bigby Presents: Glory of the Giants}, and most can also be chosen by Circle of Savagery druids, provided they have the required level."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/5etools-mirror-2/5etools-img/raw/main/blank.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Velociraptor, Dire",
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "beast",
+				"tags": [
+					"dinosaur"
+				]
+			},
+			"source": "LEGDRAG",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d6 + 4",
+				"average": 18
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 10,
+			"dex": 15,
+			"con": 12,
+			"int": 4,
+			"wis": 12,
+			"cha": 6,
+			"passive": 13,
+			"cr": "1/2",
+			"shortName": "Velociraptor, Dire",
+			"page": 53,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+5"
+			},
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The velociraptor has advantage on an attack roll against a creature if at least one of its allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Trampling Charge",
+					"entries": [
+						"If the styracosaurus moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the styracosaurus can make one stomp attack against it as a bonus action."
+					]
+				}
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The velociraptor makes two attacks: one with its bite and one with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 2}) slashing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"strength"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://github.com/5etools-mirror-2/5etools-img/raw/main/blank.webp"
+			},
+			"fluff": {
+				"entries": [
+					"These dinosaurs are in addition to the ones found on page 79 of the {@i Monster Manual} and on page 139 of {@i Volo's Guide to Monsters}, and on page 129 of {@i Bigby Presents: Glory of the Giants}, and most can also be chosen by Circle of Savagery druids, provided they have the required level."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/5etools-mirror-2/5etools-img/raw/main/blank.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Spinosaurus, Dire",
+			"size": [
+				"G"
+			],
+			"type": {
+				"type": "beast",
+				"tags": [
+					"dinosaur"
+				]
+			},
+			"source": "LEGDRAG",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d20 + 84",
+				"average": 231
+			},
+			"speed": {
+				"walk": 60,
+				"swim": 50
+			},
+			"str": 27,
+			"dex": 10,
+			"con": 22,
+			"int": 3,
+			"wis": 12,
+			"cha": 9,
+			"passive": 16,
+			"cr": "12",
+			"shortName": "Spinosaurus, Dire",
+			"page": 53,
+			"skill": {
+				"perception": "+6"
+			},
+			"trait": [
+				{
+					"name": "Hold Breath",
+					"entries": [
+						"The spinosaurus can hold its breath for up to 1 hour."
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Each creature of the spinosaurus’ choice that is within 120 feet of the spinosaurus and aware of it must succeed on a {@dc 18} Wisdom saving throw or become {@condition frightened} for 1 minute. A {@condition frightened} creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the spinosaurus’ Frightful Presence for the next 24 hours."
+					]
+				},
+				{
+					"name": "Siege Attacker",
+					"entries": [
+						"The spinosaurus deals double damage to objects and structures."
+					]
+				},
+				{
+					"name": "Tamed",
+					"entries": [
+						"The spinosaurus will never willingly attack any lizardfolk. If forced or magically compelled to do so, it has disadvantage on its attack rolls. Up to sixteen Medium or four Large creatures can ride the spinosaurus."
+					]
+				}
+			],
+			"traitTags": [
+				"Hold Breath"
+			],
+			"conditionInflict": [
+				"frightened",
+				"grappled",
+				"restrained"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The spinosaurus makes two attacks with its claws, and one with its bite. If both claws hit the same target, it can make an additional bite attack against it."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 20 ft., one target. {@h}34 ({@damage 4d12 + 8}) piercing damage, and if the target is a Huge or smaller creature, it is {@condition grappled} (escape {@dc 20}). Until this grapple ends, the target is {@condition restrained}, and the spinosaurus can't bite another target."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 20 ft., one target. {@h}30 ({@damage 4d10 + 8}) slashing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://github.com/5etools-mirror-2/5etools-img/raw/main/blank.webp"
+			},
+			"fluff": {
+				"entries": [
+					"These gargantuan beasts are bred by the more civilized lizardfolk tribes as beasts of war. These tribes will use triceratops as shock cavalry, but it's the dire spinosaurus who ultimately break their foes, and tear down their cities. These war beasts are sought after by other lizardfolk tribes, and reared ones are sold for a hefty price. An adult dire spinosaurus is 70 feet long and weighs 35,000 pounds or more. These land and riverine predators are capable of carrying a platoon of lizardfolk long distances on raids. Often called river king or river dragon, they are worshiped by bullywugs and other primitive humanoids. Riding a dire spinosaurus requires an exotic saddle, riding platform, or howdah. These must be specially modified for its spines. It usually walks on all fours, but can walk more upright to attack with its lethal claws. Their eggs are worth as much as 2,000 gp a piece; live young are worth twice that. Rearing one requires patience, and a skilled lizardfolk handler.",
+					"These dinosaurs are in addition to the ones found on page 79 of the {@i Monster Manual} and on page 139 of {@i Volo's Guide to Monsters}, and on page 129 of {@i Bigby Presents: Glory of the Giants}, and most can also be chosen by Circle of Savagery druids, provided they have the required level."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/5etools-mirror-2/5etools-img/raw/main/blank.webp"
+						}
+					}
+				]
+			}
+		},
+		{
 			"name": "Giant Weasel Domesticated",
 			"source": "LEGDRAG",
 			"page": 23,
@@ -7066,7 +7788,7 @@
 					]
 				},
 				{
-					"name": "Claw",
+					"name": "Claws",
 					"entries": [
 						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage."
 					]
@@ -7372,7 +8094,7 @@
 					]
 				},
 				{
-					"name": "Claw",
+					"name": "Claws",
 					"entries": [
 						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage."
 					]
@@ -7552,7 +8274,7 @@
 					]
 				},
 				{
-					"name": "Claw",
+					"name": "Claws",
 					"entries": [
 						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage."
 					]
