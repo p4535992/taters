@@ -4526,6 +4526,21 @@
 				"Wild Draconic Form|Druid|PHB|Dragon|LEGDRAG|10",
 				"Druidic Dragon Wings|Druid|PHB|Dragon|LEGDRAG|14"
 			]
+		},
+		{
+			"name": "Circle of the Savagery",
+			"source": "LEGDRAG",
+			"className": "Druid",
+			"page": 51,
+			"classSource": "PHB",
+			"shortName": "Savagery",
+			"subclassFeatures": [
+				"Circle of the Savagery|Druid|PHB|Savagery|LEGDRAG|2",
+				"Ancient Wild Forms Superior|Druid|PHB|Savagery|LEGDRAG|6",
+				"Primal Strikes|Druid|PHB|Savagery|LEGDRAG|6",
+				"Dreadful Wild Shape|Druid|PHB|Savagery|LEGDRAG|10",
+				"Adaptation|Druid|PHB|Savagery|LEGDRAG|14"
+			]
 		}
 	],
 	"subclassFeature": [
@@ -6227,6 +6242,7 @@
 			"page": 46,
 			"level": 1,
 			"header": 1,
+			"type": "inset",
 			"entries": [
 				"Only lizardfolk can choose this divine domain, though your DM can lift this restriction to better suit the campaign."
 			]
@@ -6823,6 +6839,249 @@
 			"entries": [
 				"At 14th level, you gain the ability to sprout a pair of {@creature druidic dragon|LEGDRAG|druidic dragon} wings from your back, granting you a flying speed equal to your walking speed. You can create these wings as a bonus action on your turn. They last until you dismiss them as a bonus action on your turn. Your clothes and armor are magically changed to accommodate them.",
 				"In addition, those who fail their saving throws against your Frightful Transformation feature or your {@creature druidic dragon|LEGDRAG|druidic dragon}'s Frightful Reveal ability also become paralyzed until the end of your next turn, as they are gripped by fear."
+			]
+		},
+		{
+			"name": "Circle of the Savagery",
+			"source": "LEGDRAG",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Savagery",
+			"subclassSource": "LEGDRAG",
+			"page": 51,
+			"level": 2,
+			"entries": [
+				"While the more civilized Sharptooth lizardfolk are famous for venerating their ancestors, most lizardfolk tribes are more pragmatic and don't see the practical advantage of such a tradition. However, these tribes do possess many powerful druidic spellcasters, many of whom are part of a secretive druidic circle; the Circle of Savagery. These lizardfolk druids carry within their blood, whether by heritage or ceremony, the memories of the ancient \"terrible lizards\", the dinosaurs. Through this they are able to summon the spirits of these terrifying creatures, or transform into one outright.",
+				"These summoned allies of nature look just like their ancient selves, and can also bleed and suffer pain. However, once it dies, or the druid loses its concentration, it vanishes.",
+				"Unlike the more civilized Sharptooth tribes, they don't gain their divine powers through the veneration of their \"dragon\" ancestors, nor are they able to take their form. Instead, they use their druidic powers to draw upon the memories of their ancestors to summon and transform into prehistoric beasts.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Restriction: Lizardfolk Only|Druid|PHB|Savagery|LEGDRAG|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Ancient Wild Forms|Druid|PHB|Savagery|LEGDRAG|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Summon Nature's Ally|Druid|PHB|Savagery|LEGDRAG|2"
+				}
+			]
+		},
+		{
+			"name": "Restriction: Lizardfolk Only",
+			"source": "LEGDRAG",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Savagery",
+			"subclassSource": "LEGDRAG",
+			"page": 51,
+			"level": 2,
+			"header": 1,
+			"type": "inset",
+			"entries": [
+				"Only lizardfolk can choose this druid circle, though your DM can lift this restriction to better suit the campaign. These pragmatic lizardfolk druids are able to summon and turn into the powerful beasts whom their ancestors lived among, and lizardfolk tribes guard the secrets of this art with their lives."
+			]
+		},
+		{
+			"name": "Ancient Wild Forms",
+			"source": "LEGDRAG",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Savagery",
+			"subclassSource": "LEGDRAG",
+			"page": 51,
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"At 2nd level, you can use your Wild Shape to take the form of any reptilian beast or dinosaur with a challenge rating (CR) as high as 1.",
+				"You ignore the max CR column of the Beast Shapes table, but must abide by all other limitations.",
+				"Dinosaur forms can be found on page 79 of the {@i Monster Manual} and on page 139 of {@i Volo's Guide to Monsters}, and on page 129 of {@i Bigby Presents: Glory of the Giants}. You do not need to have seen the dinosaurs before in order to Wild Shape into them, as their memory flows in your veins.",
+				"However, the ability to Wild Shape into these powerful forms is not without cost. Your ability to Wild Shape is now restricted to dinosaurs and their descendants; birds and reptiles. Examples of avian and reptilian beasts from the Monster Manual include crocodiles, snakes and vultures.",
+				{
+					"type": "table",
+					"caption": "Dragons by Challenge Rating",
+					"colLabels": [
+						"CR",
+						"Dinosaur"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11"
+					],
+					"rows": [
+						[
+							"1",
+							"{@creature Pteranodon|MM}, {@creature Dimetrodon|MPMM}, {@creature Dimetrodon|VGM}, {@creature Hadrosaurus|MPMM}, {@creature Hadrosaurus|VGM}, {@creature Velociraptor|MPMM}, {@creature Velociraptor|VGM}, {@creature Deinonychus|MPMM}, {@creature Deinonychus|VGM}, {@creature Velociraptor, Dire|LEGDRAG}, {@creature Dilophosaurus|LEGDRAG}"
+						],
+						[
+							"2",
+							"{@creature Allosaurus|MM}, {@creature Plesiosaurus|MM}, {@creature Quetzalcoatlus|MPMM}, {@creature Quetzalcoatlus|VGM}"
+						],
+						[
+							"3",
+							"{@creature Ankylosaurus|MM}"
+						],
+						[
+							"4",
+							"{@creature Stegosaurus|MPMM}, {@creature Stegosaurus|VGM}"
+						],
+						[
+							"5",
+							"{@creature Triceratops|MM}, {@creature Brontosaurus|MPMM}, {@creature Brontosaurus|VGM}"
+						],
+						[
+							"6",
+							"{@creature Styracosaurus|LEGDRAG}"
+						],
+						[
+							"7",
+							"{@creature Albertosaurus|LEGDRAG}, {@creature Diplodocus|LEGDRAG}"
+						],
+						[
+							"8",
+							"{@creature Tyrannosaurus Rex|MM}, {@creature Spinosaurus|LEGDRAG}"
+						],
+						[
+							"> 8",
+							"{@creature Ceratops|BGG}, {@creature Aerosaur|BGG}, {@creature Altisaur|BGG}, {@creature Regisaur|BGG}, {@creature Spinosaurus, Dire|LEGDRAG}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Ancient Wild Forms Superior",
+			"source": "LEGDRAG",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Savagery",
+			"subclassSource": "LEGDRAG",
+			"page": 51,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Starting at 6th level, you can use your Wild Shape to transform into a dinosaur with a challenge rating (CR) as high as your druid level divided by 3, rounded down.",
+				"You ignore the max CR column of the Beast Shapes table, but must abide by all other limitations.",
+				"Dinosaur forms can be found on page 79 of the {@i Monster Manual} and on page 139 of {@i Volo's Guide to Monsters}, and on page 129 of {@i Bigby Presents: Glory of the Giants}. You do not need to have seen the dinosaurs before in order to Wild Shape into them, as their memory flows in your veins.",
+				"However, the ability to Wild Shape into these powerful forms is not without cost. Your ability to Wild Shape is now restricted to dinosaurs and their descendants; birds and reptiles. Examples of avian and reptilian beasts from the Monster Manual include crocodiles, snakes and vultures.",
+				{
+					"type": "table",
+					"caption": "Dragons by Challenge Rating",
+					"colLabels": [
+						"CR",
+						"Dinosaur"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11"
+					],
+					"rows": [
+						[
+							"1",
+							"{@creature Pteranodon|MM}, {@creature Dimetrodon|MPMM}, {@creature Dimetrodon|VGM}, {@creature Hadrosaurus|MPMM}, {@creature Hadrosaurus|VGM}, {@creature Velociraptor|MPMM}, {@creature Velociraptor|VGM}, {@creature Deinonychus|MPMM}, {@creature Deinonychus|VGM}, {@creature Velociraptor, Dire|LEGDRAG}, {@creature Dilophosaurus|LEGDRAG}"
+						],
+						[
+							"2",
+							"{@creature Allosaurus|MM}, {@creature Plesiosaurus|MM}, {@creature Quetzalcoatlus|MPMM}, {@creature Quetzalcoatlus|VGM}"
+						],
+						[
+							"3",
+							"{@creature Ankylosaurus|MM}"
+						],
+						[
+							"4",
+							"{@creature Stegosaurus|MPMM}, {@creature Stegosaurus|VGM}"
+						],
+						[
+							"5",
+							"{@creature Triceratops|MM}, {@creature Brontosaurus|MPMM}, {@creature Brontosaurus|VGM}"
+						],
+						[
+							"6",
+							"{@creature Styracosaurus|LEGDRAG}"
+						],
+						[
+							"7",
+							"{@creature Albertosaurus|LEGDRAG}, {@creature Diplodocus|LEGDRAG}"
+						],
+						[
+							"8",
+							"{@creature Tyrannosaurus Rex|MM}, {@creature Spinosaurus|LEGDRAG}"
+						],
+						[
+							"> 8",
+							"{@creature Ceratops|BGG}, {@creature Aerosaur|BGG}, {@creature Altisaur|BGG}, {@creature Regisaur|BGG}, {@creature Spinosaurus, Dire|LEGDRAG}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Summon Nature's Ally",
+			"source": "LEGDRAG",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Savagery",
+			"subclassSource": "LEGDRAG",
+			"page": 51,
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"At 2nd level, as an action, you can use a spell slot to conjure a dinosaur with a CR equal to the level of the spell slot used minus 1 (minimum of 1/2) or lower. It appears in an unoccupied space within 60 feet of you. In combat, the dinosaur shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If one of its special traits would require a bonus action, it can use its own. You must maintain concentration on this, as if you were concentrating on a spell, or the creature disappears. However, you only need to make a Constitution saving throw to maintain your concentration on this when taking damage once per round. You can also use this feature while you are in your Wild Shape form. Your summoned Nature's Ally remains until you lose concentration, until its hit points are reduced to 0, or until you start a short or long rest. After you summon your Nature's Ally, you cannot summon a Nature's Ally again until you finish a short or long rest.",
+				"Your Nature's Ally is friendly to you and your companions, understands you, and obeys your commands."
+			]
+		},
+		{
+			"name": "Primal Strikes",
+			"source": "LEGDRAG",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Savagery",
+			"subclassSource": "LEGDRAG",
+			"page": 51,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, your natural weapons and those of your Nature's Ally count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
+			]
+		},
+		{
+			"name": "Dreadful Wild Shape",
+			"source": "LEGDRAG",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Savagery",
+			"subclassSource": "LEGDRAG",
+			"page": 51,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"Beginning at 10th level, you can expend two uses of your Wild Shape at once to transform into a dinosaur with a CR equal to your Druid level divided by 2, rounded down.",
+				"In addition, you have advantage on Constitution saving throws that you make to maintain your concentration on your Nature's Ally."
+			]
+		},
+		{
+			"name": "Adaptation",
+			"source": "LEGDRAG",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Savagery",
+			"subclassSource": "LEGDRAG",
+			"page": 51,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Starting at 14th level, your body is permanently enhanced by the ancient creatures whose power you draw upon. Both you and your Nature's Ally gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You gain Darkvision out to a range of 60 feet.",
+						"You gain a climbing and swimming speed equal to your walking speed, and you can hold your breath for 1 hour.",
+						"You gain advantage on Wisdom (Perception) checks that rely on smell.",
+						"Your speed increases by an additional 10 feet."
+					]
+				}
 			]
 		}
 	]
