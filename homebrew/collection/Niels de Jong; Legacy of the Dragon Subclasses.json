@@ -8254,6 +8254,94 @@
 				"Resourceful|Fighter|PHB|Supply SpeCialist|LEGDRAG|15",
 				"Quartermaster|Fighter|PHB|Supply SpeCialist|LEGDRAG|18"
 			]
+		},
+		{
+			"name": "Way of the Dragon Turtle",
+			"source": "LEGDRAG",
+			"className": "Monk",
+			"classSource": "PHB",
+			"page": 57,
+			"shortName": "Dragon Turtle",
+			"subclassFeatures": [
+				"Way of the Dragon Turtle|Monk|PHB|Dragon Turtle|LEGDRAG|3",
+				"Snap Dragon|Monk|PHB|Dragon Turtle|LEGDRAG|6",
+				"Ki of the Tidebringer|Monk|PHB|Dragon Turtle|LEGDRAG|11",
+				"Defiance of the Dragon Turtle|Monk|PHB|Dragon Turtle|LEGDRAG|17"
+			]
+		},
+		{
+			"name": "Way of Weave",
+			"source": "LEGDRAG",
+			"className": "Monk",
+			"classSource": "PHB",
+			"page": 67,
+			"shortName": "Weave",
+			"subclassFeatures": [
+				"Way of Weave|Monk|PHB|Weave|LEGDRAG|3",
+				"Advanced Weaver Training|Monk|PHB|Weave|LEGDRAG|6",
+				"Flow of the Weave|Monk|PHB|Weave|LEGDRAG|11",
+				"One With the Weave|Monk|PHB|Weave|LEGDRAG|17"
+			],
+			"subclassSpells": [
+				"mage hand",
+				"friends",
+				"bless", 
+				"command", 
+				"compelled duel", 
+				"gift of alacrity", 
+				"guiding bolt", 
+				"heroism", 
+				"pass without trace", 
+				"shield", 
+				"shield of faith", 
+				"witch bolt",
+				"immovable object", 
+				"zone of truth",
+				"beacon of hope", 
+				"counterspell", 
+				"dispel magic", 
+				"nondetection", 
+				"pulse wave", 
+				"sending", 
+				"gravity sinkhole",
+				"cure wounds",
+				"aura of vitality",
+				"revivify",
+				"animate objects", 
+				"hold monster", 
+				"steel wind strike",
+				"wall of force",
+				{
+					"className": "Wizard",
+					"classSource": "PHB"
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"mage hand|phb#c",
+							"friends|phb#c"
+						],
+						"11": [
+							"cure wounds"
+						],
+						"13": [
+							"aura of vitality",
+							"revivify"
+						],
+						"17": [
+							"animate objects", 
+							"hold monster",
+							"steel wind strike",
+							"wall of force"
+						]
+					},
+					"ability": "wis"
+				}
+			],
+			"spellcastingAbility": "wis",
+			"casterProgression": "1/3"
 		}
 	],
 	"subclassFeature": [
@@ -11043,6 +11131,434 @@
 			"entries": [
 				"At 18th level, your close work with your supplies has toughened your body and soul. Your Constitution score is increased by 2, and your maximum Constitution score is 22.",
 				"You are always under the effect of one lesser potion of your choice. The lesser potion must have a duration longer than instantaneous. If you choose the Adrenaline Potion, you cannot return to life that way, unless an Adrenaline Potion is administered to you. You can change this effect at the end of a short or long rest. If the effect has a choice of effects, you can also change this choice at the end of a rest."
+			]
+		},
+		{
+			"name": "Way of Dragon Turtle",
+			"source": "LEGDRAG",
+			"page": 57,
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Dragon Turtle",
+			"subclassSource": "LEGDRAG",
+			"header": 1,
+			"level": 3,
+			"entries": [
+				"Monks who favor tenacious stances and heavy strikes more than nimble evasion and rapid blows are often trained in the Way of the Dragon Turtle. Recognized for their impressive physiques and unmatched endurance; these martial artists are well known for being kind hearted and eager to help others. These monks believe that every jar of water delivered, and every tree trunk carried, is time spent training. Their fighting style involves keeping foes away from their allies, facing blows with steely resolve, and locking down their opponents with powerful grapples.",
+				"{@b Variant: Stability over Agility:} Some monks favor stability over agility. To reflect this, you can choose this variant when creating your character. When using this variant, all mentions of your character's Dexterity score or modifier in the Unarmored Defense and Deflect Missiles class features are replaced with Strength.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Turtle Stance|Monk|PHB|Dragon Turtle|LEGDRAG|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Totem of Dragon Strength|Monk|PHB|Dragon Turtle|LEGDRAG|3"
+				}
+			]
+		},
+		{
+			"name": "Turtle Stance",
+			"source": "LEGDRAG",
+			"page": 57,
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Dragon Turtle",
+			"subclassSource": "LEGDRAG",
+			"header": 1,
+			"level": 3,
+			"entries": [
+				"Beginning at 3rd level, you learn to defend yourself as a turtle would, facing blows directly with a hardened body of iron. When an attacker hits you with a melee weapon attack, you can use your reaction to reduce the damage of the attack by an amount equal to one roll of your Martial Arts die + your Strength modifier (minimum of 1).",
+				"When you make an {@i opportunity attack}, you can replace the {@i melee attack} with a {@i grapple check}.",
+				"Creatures other than you gain advantage on attack rolls against creatures you are grappling. If a creature you are grappling is restrained, it can only use its actions to escape."
+			]
+		},
+		{
+			"name": "Totem of Dragon Strength",
+			"source": "LEGDRAG",
+			"page": 57,
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Dragon Turtle",
+			"subclassSource": "LEGDRAG",
+			"header": 1,
+			"level": 3,
+			"entries": [
+				"At 3rd level you gain proficiency in the Athletics skill. If you have proficiency in this skill from another source, then your proficiency bonus is doubled for any ability check you make that uses Athletics.",
+				"As an action, you can touch any blunt object larger than 1 cubic foot and smaller than yourself and imbue it with your ki. After imbuing it so, the object acquires artistic marks showing prayers to the dragon turtle. It is now your Totem of Dragon Strength and counts as a monk weapon for you for which you have proficiency. Your totem gains the weapon traits from the Totem of Dragon Strength table. Attack and damage rolls using your totem must be done with your Strength Modifier. Your totem is weightless for you, and sticks to your hand if you want it to. Your totem gains the magical attributes of one magic melee monk weapon that you are attuned to, unless it already is a magical weapon. You decide which weapon after finishing a short or long rest. You can only have a single totem at a time, and ending the link with the object is instantaneous.",
+				"While holding your totem, you can't be disarmed of it, and you gain advantage on all saving throws instead of only Dexterity when you take the Dodge action.",
+				{
+					"type": "table",
+					"caption": "Totem of Dragon Strength",
+					"colLabels": [
+						"Level", 
+						"Damage", 
+						"Properties"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-5 text-center",
+						"col-5 text-center"
+					],
+					"rows": [
+						[
+							"3",
+							"1d6 bludgeoning",
+							"Versatile (1d8)"
+						],
+						[
+							"5",
+							"1d8 bludgeoning",
+							"Versatile (1d10)"
+						],
+						[
+							"11",
+							"1d10 bludgeoning",
+							"Versatile (1d12)"
+						],
+						[
+							"17",
+							"1d12 bludgeoning",
+							"Versatile (2d6)"
+						]
+					]
+				}
+			],
+			"skillProficiencies": [
+				{
+					"athletics": true
+				}
+			]
+		},
+		{
+			"name": "Snap Dragon",
+			"source": "LEGDRAG",
+			"page": 57,
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Dragon Turtle",
+			"subclassSource": "LEGDRAG",
+			"header": 2,
+			"level": 6,
+			"entries": [
+				"At 6th level, you can react with clasping strength on your foes. Once per round, when a creature misses you with a melee attack, you can make a grapple check against them.",
+				"In addition, immediately after you have successfully grappled a creature, or as a bonus action on your turn, you can throw a creature you are grappling. The target must make a Strength saving throw against your ki save DC. On a failure, you can throw the creature up to 15 feet in a direction of your choice after which it takes damage equal to one roll of your Martial Arts die, it has its speed reduced to 0 until the start of its next turn, and it is knocked prone. Any extra damage the creature takes from colliding with an environmental hazard (for example a pit, trap, or weapon's rack) is doubled. On a successful save, the creature resists your attempt but remains grappled by you. You can use this feature to (try to) throw a creature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest. While you have no uses available, you can spend 1 ki point to use this feature again."
+			]
+		},
+		{
+			"name": "Ki of tHe Tidebringer",
+			"source": 57,
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Dragon Turtle",
+			"subclassSource": "LEGDRAG",
+			"header": 2,
+			"level": 11,
+			"entries": [
+				"At 11th level, provided your totem is at least half your size or larger, you gain half cover while holding your Totem of Dragon Strength.",
+				"As a bonus action, you can spend 1 ki point and roll a Martial Arts die. You regain a number of hit points equal to the number rolled plus your proficiency bonus.",
+				"Whenever you spend any ki points, you build up energy in your body which you can unleash as a blast of steam. Until the end of your next turn, the first time you hit a creature with an unarmed strike you can choose to roll two Martial Arts dice and deal fire damage equal the amount rolled to each creature other than you within 10 feet of the target, blasting them all with boiling hot steam. You can only unleash steam this way once per round."
+			]
+		},
+		{
+			"name": "Defiance of the Dragon Turtle",
+			"source": "LEGDRAG",
+			"page": 57,
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Dragon Turtle",
+			"subclassSource": "LEGDRAG",
+			"header": 2,
+			"level": 17,
+			"entries": [
+				"At 17th level, you have perfected your connection with the essence of the dragon turtle, allowing its being to become truly one with yours in mind and body. As an action, you can spend 10 ki points to manifest the dragon turtle, creating a huge translucent form of a dragon turtle around you. If you do, then for 1 minute you gain the game statistics of the {@creature dragon turtle spirit|LEGDRAG} (see page 58).",
+				"Your game statistics aside from your mental ability scores are replaced by the statistics of the dragon turtle spirit, but you retain your alignment and personality. You assume the hit points of your new form. You can revert to your normal form at any point as a bonus action, and you automatically revert to your normal form if your hit points are reduced to 0. When you revert to your normal form, you return to the number of hit points you had before you transformed. If you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. As long as the excess damage doesn't reduce your normal form to 0 hit points, you aren't knocked unconscious. While in your dragon turtle form, you can't wield weapons, nor can you use your other class features. If you have spells, you can't cast them while in this form, but you can maintain concentration on existing spells. If there isn't enough room for this form in a space available, then this form instead attains the maximum possible size."
+			]
+		},
+		{
+			"name": "Way of Weave",
+			"source": "LEGDRAG",
+			"page": 67,
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Weave",
+			"subclassSource": "LEGDRAG",
+			"header": 1,
+			"level": 3,
+			"entries": [
+				{
+					"type": "quote",
+					"entries": [
+						"For over a thousand generations, the Silver Knights were the guardians of peace and justice in the realms. Before the dark times, before the rise of Tiamat.”"
+					],
+					"by": "Stella Dragonsong"
+				},
+				"Through countless hours of meditation, monks of the Way of the Weave are able to form a connection to the Weave, allowing them to cast arcane spells. These monks are known as Weavers, powerful practitioners of arcane magic who blend martial arts and spellcasting to devastating effect. The Weave is a way through which raw magic can be accessed, and used by casters of magic. It flows through the world, and touches all of existence. Weavers specialize in the schools of divination, enchantment, and transmutation magic. Using divination magic to peer into the expansive knowledge of the Weave, enchantment magic to manipulate the minds of the weak willed, and transmutation magic to alter their bodies and the world around them, they are prepared to meet any threat they may face. They are one with the Weave, and the Weave is with them.",
+				"This monastic tradition was founded by a group of half silver dragon Dragonsingers, wizards who use martial might in addition to their powerful magical abilities. This group sought to focus more on the body and the spiritual aspects of magic, and founded several monasteries where they could contemplate and meditate on using arcane magic without disruping the balance of all things. There have since been many branches, most still following the way of righteousness and justice, while others focus more on power and using it to further their own ends. Regardless, most monks of the Way of the Weave still hold strong connections with their Dragonsinger brethren, and often band together to achieve a common goal. These monks are also known as Silver Knights, to honor the half silver dragons that founded their order.",
+				"Most Silver Knights are famous for being defenders of truth and justice, but those that follow the path of evil are terrible villains. While the color of an arcane saber is different for each Weaver, their alignment often influences the color of the blade. Blue and green are often associated with good aligned Weavers, while red and purple are aligned with those following a darker or more pragmatic path. But sometimes the color is influenced by the type of enchantment on the shortsword or longsword that was transformed into an arcane saber.",
+				"{@b Variant: A Keen Mind:} Some Weavers focus more on using their keen intellect to understand the machinations of the Weave, as they seek to let their mind and body truly become one with it. To reflect this, you can choose this variant when creating your character. When using this variant, all mentions of your character's Wisdom score or modifier in the monk class and in this subclass are replaced with Intelligence.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Spellcasting|Monk|PHB|Weave|LEGDRAG|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Arcane Saber|Monk|PHB|Weave|LEGDRAG|3"
+				}
+			]
+		},
+		{
+			"name": "Spellcasting",
+			"source": "LEGDRAG",
+			"page": 67,
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Weave",
+			"subclassSource": "LEGDRAG",
+			"header": 1,
+			"level": 3,
+			"entries": [
+				"Starting at 3rd level you form a connection to the Weave, allowing you to shape it in order to cast spells.",
+				{
+					"name": "Cantrips",
+					"type": "entries",
+					"entries": [
+						"You learn the {@spell friends|PHB} and {@spell mage hand|PHB} cantrips. If you already know either cantrip from another source, you can choose a different {@filter wizard spell list cantrip|spells|level=0|class=Wizard} instead. You learn an extra wizard cantrip of your choice at 10th level."
+					]
+				},
+				{
+					"name": "Special",
+					"type": "entries",
+					"entries": [
+						"When you cast the {@spell mage hand|PHB} cantrip, it doesn't require verbal components, and the hand is invisible. When you cast the {@spell friends|PHB} cantrip, it doesn't require material components."
+					]
+				},
+				{
+					"name": "Spell Slots",
+					"type": "entries",
+					"entries": [
+						"The Way of the Weave Spellcasting table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+						"For example, if you know the 1st-level spell {@spell feather fall} and have a 1st-level and a 2nd-level spell slot available, you can cast {@spell feather fall} using either slot."
+					]
+				},
+				{
+					"name": "Spells Known of 1st-Level and Higher",
+					"type": "entries",
+					"entries": [
+						"You know three 1st-level {@filter wizard spells|spells|level=1|class=Wizard} of your choice; two of which you must choose from the divination, enchantment, and transmutation spells on the wizard spell list.",
+						"The Spells Known column of the Way of the Weave Spellcasting table shows when you learn more wizard spells of 1st-level or higher. Each of these spells must be a divination, enchantment, or transmutation spell of your choice, and must be of a level for which you have spell slots.",
+						"The spells you learn at 8th, 14th, and 20th level can come from any school of magic.",
+						"Whenever you gain a level in this class, you can replace one of the wizard spells you know with another spell of your choice from the wizard spell list. The new spell must be of a level for which you have spell slots, and it must be a divination, enchantment, or transmutation spell, unless you are replacing the spell you gained at 3rd, 8th, 14th, or 20th level. At 17th and 18th level you can replace a known spell with a 4th-level spell, despite not having 4th-level spell slots.",
+						"You can learn the following spells as if they were enchantment spells from the wizard spell list, using the same rules as described above; {@spell bless}, {@spell command}, {@spell compelled duel}, {@spell gift of alacrity}, {@spell guiding bolt}, {@spell heroism}, {@spell pass without trace}, {@spell shield}, {@spell shield of faith}, {@spell witch bolt} (for thematic purposes it is recommended to use the revised witch bolt spell on page 103), {@spell immovable object}, {@spell zone of truth}, {@spell beacon of hope}, {@spell counterspell}, {@spell dispel magic}, {@spell nondetection}, {@spell pulse wave}, {@spell sending}, and {@spell gravity sinkhole}."
+					]
+				},
+				{
+					"name": "Spellcasting Ability",
+					"type": "entries",
+					"entries": [
+						"Wisdom is your spellcasting ability for your wizard spells, since you learned your spells through deep meditation on the aspects of the Weave. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a wizard spell you can cast and when making an attack roll with one."
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Way of the Weave Spellcasting",
+					"colLabels": [
+						"Monk Level",
+						"Cantrips",
+						"Spells known",
+						"1st",
+						"2nd",
+						"3rd",
+						"4th"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-2 text-center",
+						"col-3 text-center",
+						"col-1 text-center",
+						"col-1 text-center",
+						"col-1 text-center",
+						"col-1 text-center"
+					],
+					"rows": [
+						[
+							"3rd",
+							"2",
+							"3",
+							"2",
+							"-",
+							"-",
+							"-"
+						],
+						[
+							"4th",
+							"2",
+							"4",
+							"3",
+							"-",
+							"-",
+							"-"
+							
+						],
+						[
+							"7th",
+							"2",
+							"5",
+							"4",
+							"2",
+							"-",
+							"-"
+						],
+						[
+							"8th",
+							"2",
+							"6",
+							"4",
+							"2",
+							"-",
+							"-"
+						],
+						[
+							"10th",
+							"3",
+							"7",
+							"4",
+							"3",
+							"-",
+							"-"
+						],
+						[
+							"11th",
+							"3",
+							"8",
+							"4",
+							"3",
+							"-",
+							"-"
+						],
+						[
+							"13th",
+							"3",
+							"9",
+							"4",
+							"3",
+							"2",
+							"-"
+						],
+						[
+							"14th",
+							"3",
+							"10",
+							"4",
+							"3",
+							"2",
+							"-"
+						],
+						[
+							"16th",
+							"3",
+							"11",
+							"4",
+							"3",
+							"3",
+							"-"
+						],
+						[
+							"19th",
+							"3",
+							"12",
+							"4",
+							"3",
+							"3",
+							"1"
+						],
+						[
+							"20th",
+							"3",
+							"13",
+							"4",
+							"3",
+							"3",
+							"1"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Arcane Saber",
+			"source": "LEGDRAG",
+			"page": 67,
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Weave",
+			"subclassSource": "LEGDRAG",
+			"header": 1,
+			"level": 3,
+			"entries": [
+				"At 3rd level, you learn a ritual that transforms one shortsword or longsword into an arcane saber. You perform the ritual over the course of 1 hour, which can be done during a short rest. The weapon must be within your reach throughout the ritual, at the conclusion of which you touch the weapon and transform it, returning your previous arcane blade(s) (if any) to normal. The blade disappears, leaving only the hilt. However, while holding the hilt you can ignite the weapon as part of an object interaction (including the object interaction you use to draw the weapon(s)), creating a blade of magical energy.",
+				"As part of this transformation, the weapon's damage type becomes force, and you can use your arcane saber as a spellcasting focus for your Way of the Weave spells. You can deactivate the energy blade as an object interaction or when you let go of the hilt (unless you throw your arcane saber and it immediately returns to your hand). This weapon counts as a monk weapon for you, and gains all the benefits as if it were an unarmed strike. For example, if a monk feature grants you additional unarmed strike attacks, you can attack with this weapon instead.",
+				"While holding this weapon and not wielding a shield, you can use this weapon for the Deflect Missiles feature against incoming projectiles. If you do, and you would reduce the damage of the missile attack to 0, you can choose not to catch it but immediately reflect it without having to spend any ki points. You can also use the Deflect Missiles feature against projectiles that target an ally within 5 feet of you."
+			]
+		},
+		{
+			"name": "Advanced Weaver Training",
+			"source": "LEGDRAG",
+			"page": 68,
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Weave",
+			"subclassSource": "LEGDRAG",
+			"header": 2,
+			"level": 6,
+			"entries": [
+				"At 6th level, you have mastered the advanced fighting styles of the Silver Knights, granting you additional benefits.",
+				{
+					"type": "list",
+					"items": [
+						"You gain a bonus to any Constitution saving throw you make to maintain your concentration on a spell. The bonus equals your Wisdom modifier (minimum of 1).",
+						"As a bonus action you can throw one arcane saber at a creature within 60 feet, causing it to spin with deadly speed as it collides, and allowing you to use the Attack action to attack it. It immediately returns to your hand.",
+						"You can manipulate the Weave to choke or crush helpless enemies. As a reaction, you can deal 1d6 force damage to creatures of your choice within 30 feet of you that are restrained, stunned, or paralyzed. The damage increases by 1d6 each time you use your reaction this way against the same target. The damage resets when the target is no longer restrained, stunned, or paralyzed. This damage increases with your Martial Arts die.",
+						"While holding a one bladed arcane saber with both hands, you gain a +1 bonus to AC.",
+						"When performing the ritual to create your arcane saber, instead of a single shortsword or longsword, you can transform two shortswords (or longswords if you possess the Dual Wielder feat on page 136) or a large hilt with two blades (one on each end) instead. While dual wielding these two arcane sabers or holding this large hilt with both blades active, you can use the Flurry of Blows feature without having to spend a ki point, but you must spend a ki point when reflecting projectiles even when reflecting them with your arcane saber. While holding this large hilt with both blades active, you gain all the benefits as if you were dual wielding a separate light melee weapon in each hand, each using the weapon's regular damage dice. You can also choose to activate or deactivate only one blade of the large hilt, and wield it as a one bladed arcane saber instead."
+					]
+				}
+			]
+		},
+		{
+			"name": "Flow of the Weave",
+			"source": "LEGDRAG",
+			"page": 68,
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Weave",
+			"subclassSource": "LEGDRAG",
+			"header": 2,
+			"level": 11,
+			"entries": [
+				"Beginning at 11th level, you choose a path which matches your interpretation and use of the Weave the most. Choose one of the following benefits:",
+				{
+					"type": "list",
+					"style": "list-no-bullets",
+					"items": [
+						"{@b Light.} You learn the cure wounds spell, and at 13th level you learn the aura of vitality and revivify spells, which don't count against your number of wizard spells known. When you use these spells to restore hit points to a creature, that creature regains additional hit points equal to your Wisdom modifier (minimum of 1).",
+						"{@b Dark.} You learn the witch bolt spell (page 103), which doesn't count against your number of wizard spells known. When you cast it, the damage increases by 2d12, the target becomes stunned instead of restrained on a failed save, and it can still be stunned this way on a successful save. ",
+						"{@b Gray.} You and friendly creatures within 10 feet of you have advantage on saving throws against spells and other magical effects. The range increases to 30 feet at 17th level."
+					]
+				}
+			]
+		},
+		{
+			"name": "One With the Weave",
+			"source": "LEGDRAG",
+			"page": 68,
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Weave",
+			"subclassSource": "LEGDRAG",
+			"header": 2,
+			"level": 17,
+			"entries": [
+				"At 17th level, your practiced connection to the Weave grants you the power to freely shape your ki into spells. You can now also cast your spells by spending a number of ki points equal to the spell's level, but you cannot spend more than 5 ki points this way. You learn the 5th-level {@spell animate objects}, {@spell hold monster}, {@spell steel wind strike} and {@spell wall of force} spells, and at 17th, 18th, 19th, and 20th level you learn one additional 5th-level (or lower) divination, enchantment, or transmutation spell of your choice from the {@filter wizard spell list|spells|level=5|class=Wizard}."
 			]
 		}
 	],
