@@ -17,6 +17,9 @@
 				"color": "FFAC33"
 			}
 		],
+		"optionalFeatureTypes": {
+			"OPTFEAT:VGTROA:NINJA": "Kuji-Kiri Techniques"
+		},
 		"dateAdded": 1604252046,
 		"dateLastModified": 1703373316,
 		"_dateLastModifiedHash": "ee61c78984"
@@ -1154,60 +1157,86 @@
 			"classSource": "PHB",
 			"subclassFeatures": [
 				"Ninja Tsìn|Rogue|PHB|Ninja Tsìn|VGTROA|3",
-				"Kuji-kiri Superior|Rogue|PHB|Ninja Tsìn|VGTROA|9",
-				"Counterattack|Rogue|PHB|Ninja Tsìn|VGTROA|13",
-				"Mind over body|Rogue|PHB|Ninja Tsìn|VGTROA|17"
+				"Spectral Agility|Rogue|PHB|Ninja Tsìn|VGTROA|9",
+				"Lethal Strike|Rogue|PHB|Ninja Tsìn|VGTROA|13",
+				"Counterattack|Rogue|PHB|Ninja Tsìn|VGTROA|17"
 			],
 			"subclassSpells": [
-				"fog cloud",
-				"invisibility",
-				"misty step",
-				"mirror image",
-				"burning hands",
-				"silence",
-				"minor illusion",
-				"gaseous form",
-				"magic circle",
-				"blur",
-				"hold person",
-				"fireball",
-				"spider climb",
-				"true Seeing",
-				"etherealness"
+				"minor illusion|phb",
+				"control flames|phb"
+				"blur|phb",
+				"zephyr strike|xge",
+				"burning hands|phb",
+				"scorching ray|phb",
+				"darkness|phb",
+				"silence|phb",
+				"misty step|phb",
+				"invisibility|phb",
+				"color spray|phb",
+				"hold person|phb.",
+				"gust of wind|phb",
+				"feather fall|phb",
+				"thunderwave|phb",
+				"pyrotechnics|xge",
+				"invisibility|phb",
+				"darkvision|phb",
+				"mirror image|phb",
+				"silent image|phb",
+				"gaseous form|phb",
+				"haste|phb",
+				"confusion|phb",
+				"fire shield|phb",
+				"shadow of moil|xge",
+				"freedom of movement|phb"
 			],
 			"additionalSpells": [
 				{
 					"innate": {
-						"3": {
+						"_": {
+							"will": [
+								"minor illusion|phb#c",
+								"control flames|phb#c"
+							]
+						},
+						"1": {
 							"resource": {
 								"2": [
-									"fog cloud",
-									"invisibility",
-									"misty step",
-									"mirror image",
-									"burning hands",
-									"silence",
-									"minor illusion"
+									"blur|phb",
+									"zephyr strike|xge",
+									"burning hands|phb",
+									"scorching ray|phb",
+									"darkness|phb",
+									"silence|phb",
+									"misty step|phb",
+									"invisibility|phb",
+									"color spray|phb",
+									"hold person|phb.",
+									"gust of wind|phb",
+									"feather fall|phb",
+									"thunderwave|phb",
+									"pyrotechnics|xge",
+									"invisibility|phb",
+									"darkvision|phb",
+									"mirror image|phb",
+									"silent image|phb"
 								]
 							}
 						},
-						"9": {
+						"13": {
 							"resource": {
-								"4": [							
-									"gaseous form",
-									"magic circle",
-									"blur",
-									"hold person",
-									"fireball",
-									"spider climb",
-									"true Seeing"
+								"4": [
+									"gaseous form|phb",
+									"haste|phb"
 								]
 							}
 						},
 						"17": {
 							"resource": {
-								"8": [							
-									"etherealness"
+								"6": [							
+									"confusion|phb",
+									"fire shield|phb",
+									"shadow of moil|xge",
+									"freedom of movement|phb"
 								]					
 							}
 						}
@@ -1333,14 +1362,19 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"From Level 3 onward, martial arts practice confers the following benefits on you:",
+				"Starting at 3rd level, practicing martial arts gives you the following benefits:",
 				{
 					"type": "list",
 					"items": [
-						"While you wear no armor and wield no shield, your AC is equal to 10 + your Dexterity modifier + your Wisdom modifier.",
-						"When you use your Cunning Action to Sprint, your movement speed is increased by 3 meters, your jump distance is doubled, and you can ignore difficult terrain but only if you are not wearing armor.",
-						"You can roll a d6 instead of your normal weaponless strike damage and use Dexterity instead of Strength for rolls to hit and for damage from your weaponless strikes."
+						"While you wear no armor and wield no shield, your AC is 10 + your Dexterity modifier + your Wisdom modifier.",
+						"You gain proficiency in the {@item poisoner's kit|PHB}.",
+						"You can roll a d6 instead of the normal damage of your weaponless strike and use Dexterity instead of Strength for rolls to hit and for damage of your weaponless strikes."
 					]
+				}
+			],
+			"toolProficiencies": [
+				{
+					"poisoner's kit": true
 				}
 			]
 		},
@@ -1355,13 +1389,14 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"At the 3rd level, you can harness the mystical energy of ki. Your access to this energy is delineated by a number of ki points. You have a number of ki points equal to half your thief level (rounded up) plus your Wisdom modifier, which you can use to power your Kuji-kiri techniques. These techniques are a combination of ingenuity, skill, and magic. If you have ki points from another source, the points from both sources are combined and can be used to fuel any of your ki abilities; you can use your ki to duplicate the effects of certain spells. As an action, you can spend 2 ki points to cast {@spell fog cloud|PHB}, {@spell invisibility|PHB}, {@spell misty step|PHB}, {@spell mirror image|PHB}, {@spell burning hands|PHB} or {@spell silence|PHB}, without providing material components. In addition, you get the {@spell minor illusion|PHB} trick.",
-				"When you spend a ki point, it is not available until you finish a short or long rest, at the end of which all your spent ki points return to you. You must spend at least 30 minutes of the rest meditating to regain your ki points.",
-                "{@b CD of the spell's saving throw} = 8 + your proficiency bonus + your Wisdom modifier."
+				"At the 3rd level, you can harness the mystical energy of ki. Your access to this energy is delineated by a number of ki points. You have a number of ki points equal to half your thief level (rounded up) plus your Wisdom modifier, which you can use to power your Kuji-kiri techniques. These techniques are a combination of ingenuity, skill, and magic. If you have ki points from another source, the points from both sources are combined and can be used to power any of your ki abilities; you can use your ki to duplicate the effects of certain spells.",
+				"At 3rd level, learn Illusion Technique and two other {@filter Kuji-kiri techniques|optionalfeatures|Feature Type=OPTFEAT:VGTROA:NINJA} of your choice. Learn one additional technique at 9th, 13th and 17th levels. Each time you gain a level in this class you can replace an old technique with a new one. In addition, you get the {@spell minor illusion} and {@spell control flames} tricks if you do not already possess them.",
+				"When you spend a ki point, it is not available until you finish a short or long rest, at the end of which you regain all your spent ki points. You must spend at least 30 minutes of the rest meditating to regain your ki points.",
+				"{@b CD of the spell's saving throw} = 8 + your proficiency bonus + your Wisdom modifier."
 			]
 		},
 		{
-			"name": "Kuji-kiri Superior",
+			"name": "Spectral Agility",
 			"source": "VGTROA",
 			"page": 3,
 			"className": "Rogue",
@@ -1371,7 +1406,21 @@
 			"level": 9,
 			"header": 2,
 			"entries": [
-				"At 9th level, you can use your ki to duplicate the effects of additional spells. As an action, you can spend 4 ki points to cast {@spell gaseous form},  {@spell blur},  {@spell hold person},  {@spell fireball},  {@spell spider climb} or  {@spell true seeing}, without providing material components."
+				"At 9th level, you learn to move like a spectre. When you use the sly action to sprint, your movement speed is increased by 3 meters, your jumping distance is doubled, you can ignore difficult terrain, and you gain the ability to move along vertical surfaces and through liquids during your turn without falling while moving, if you are not wearing armor."
+			]
+		},
+		{
+			"name": "Lethal Strike",
+			"source": "VGTROA",
+			"page": 3,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Ninja Tsìn",
+			"subclassSource": "VGTROA",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"At 13th level, you learn how to make your strikes lethal to kill the enemy quickly. Your sneak attack die becomes d8."
 			]
 		},
 		{
@@ -1382,25 +1431,10 @@
 			"classSource": "PHB",
 			"subclassShortName": "Ninja Tsìn",
 			"subclassSource": "VGTROA",
-			"level": 13,
-			"header": 2,
-			"entries": [
-				"At 13th level, you can take advantage of a creature's turn against it when it attacks you. Whenever you use your Prodigious Dodge, you can make an attack with a melee weapon or weaponless strike with advantage against the creature that is attacking you as part of the same reaction."
-			]
-		},
-		{
-			"name": "Mind over body",
-			"source": "VGTROA",
-			"page": 3,
-			"className": "Rogue",
-			"classSource": "PHB",
-			"subclassShortName": "Ninja Tsìn",
-			"subclassSource": "VGTROA",
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"At 17th level Whenever you make a saving throw and fail, you can spend 1 ki point to repeat the throw and keep the second result.",
-                "In addition, you can spend 8 ki points to cast the spell {@spell etherealness|PHB}, without the need for material components."
+				"At 17th level, you can take advantage of a creature's turn against it when it attacks you. Whenever you use your Prodigious Dodge, you can make an attack with a melee weapon or weaponless strike with advantage against the creature that is attacking you as part of the same reaction."
 			]
 		},
 		{
@@ -1495,6 +1529,512 @@
 			"entries": [
 				"At 17th level, a Miko has reached the pinnacle of her power. Not quite a priestess, but quite capable of defending herself, others, and her shrine against evil forces. You can now, again, also cast {@spell spirit guardians|PHB} for 4 ki points, and {@spell dispel evil and good|PHB}, {@spell greater restoration|PHB}, and hallow for 6 ki points.",
 				"Finally, any spell casted through this subclass has it's cost reduced by 1 ki point, and upcasting as per Novice of the Kami now costs 1 ki point per level upcast."
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Technique of Illusion",
+			"source": "VGTROA",
+			"page": 1,
+			"featureType": [
+				"OPTFEAT:VGTROA:NINJA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Rogue"
+						},
+						"subclass": {
+							"name": "Ninja Tsìn"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Kuji-kiri|Rogue|PHB|Ninja Tsìn|VGTROA|3|} feature",
+						"entrySummary": "Ninja Tsìn"
+					}
+				}
+			],
+			"entries": [
+				"Once per turn, you can spend 1 ki point to fool a creature you can see. You gain advantage on your next roll to hit against that creature."
+			]
+		},
+		{
+			"name": "Phantom Dart",
+			"source": "VGTROA",
+			"page": 1,
+			"featureType": [
+				"OPTFEAT:VGTROA:NINJA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Rogue"
+						},
+						"subclass": {
+							"name": "Ninja Tsìn"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Kuji-kiri|Rogue|PHB|Ninja Tsìn|VGTROA|3|} feature",
+						"entrySummary": "Ninja Tsìn"
+					}
+				}
+			],
+			"entries": [
+				"Immediately after making your attack action, you can spend 1 ki point to draw and throw two darts or daggers with a bonus action."
+			]
+		},
+		{
+			"name": "Quick Attack",
+			"source": "VGTROA",
+			"page": 1,
+			"featureType": [
+				"OPTFEAT:VGTROA:NINJA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Rogue"
+						},
+						"subclass": {
+							"name": "Ninja Tsìn"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Kuji-kiri|Rogue|PHB|Ninja Tsìn|VGTROA|3|} feature",
+						"entrySummary": "Ninja Tsìn"
+					}
+				}
+			],
+			"entries": [
+				"You can spend 2 ki points to use your action to attack any number of creatures within 5 feet of you, with a separate roll to hit for each creature."
+			]
+		},
+		{
+			"name": "Agile Mantis",
+			"source": "VGTROA",
+			"page": 1,
+			"featureType": [
+				"OPTFEAT:VGTROA:NINJA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Rogue"
+						},
+						"subclass": {
+							"name": "Ninja Tsìn"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Kuji-kiri|Rogue|PHB|Ninja Tsìn|VGTROA|3|} feature",
+						"entrySummary": "Ninja Tsìn"
+					}
+				}
+			],
+			"entries": [
+				"You can spend 2 ki points to cast the spell {@spell blur|PHB} or {@spell zephyr strike|XGE}."
+			]
+		},
+		{
+			"name": "Sleeping Dragon",
+			"source": "VGTROA",
+			"page": 1,
+			"featureType": [
+				"OPTFEAT:VGTROA:NINJA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Rogue"
+						},
+						"subclass": {
+							"name": "Ninja Tsìn"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Kuji-kiri|Rogue|PHB|Ninja Tsìn|VGTROA|3|} feature",
+						"entrySummary": "Ninja Tsìn"
+					}
+				}
+			],
+			"entries": [
+				"You can spend 2 ki points to cast the spell {@spell burning hands|PHB} or {@spell scorching ray|PHB}."
+			]
+		},
+		{
+			"name": "Spectral Prison",
+			"source": "VGTROA",
+			"page": 1,
+			"featureType": [
+				"OPTFEAT:VGTROA:NINJA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Rogue"
+						},
+						"subclass": {
+							"name": "Ninja Tsìn"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Kuji-kiri|Rogue|PHB|Ninja Tsìn|VGTROA|3|} feature",
+						"entrySummary": "Ninja Tsìn"
+					}
+				}
+			],
+			"entries": [
+				"You can spend 2 ki points to cast the spell {@spell darkness|PHB} or {@spell silence|PHB}."
+			]
+		},
+		{
+			"name": "Phantom Passage",
+			"source": "VGTROA",
+			"page": 1,
+			"featureType": [
+				"OPTFEAT:VGTROA:NINJA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Rogue"
+						},
+						"subclass": {
+							"name": "Ninja Tsìn"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Kuji-kiri|Rogue|PHB|Ninja Tsìn|VGTROA|3|} feature",
+						"entrySummary": "Ninja Tsìn"
+					}
+				}
+			],
+			"entries": [
+				"You can spend 2 ki points to cast the spell {@spell misty step|PHB} or {@spell invisibility|PHB}."
+			]
+		},
+		{
+			"name": "Crouching Tiger",
+			"source": "VGTROA",
+			"page": 1,
+			"featureType": [
+				"OPTFEAT:VGTROA:NINJA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Rogue"
+						},
+						"subclass": {
+							"name": "Ninja Tsìn"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Kuji-kiri|Rogue|PHB|Ninja Tsìn|VGTROA|3|} feature",
+						"entrySummary": "Ninja Tsìn"
+					}
+				}
+			],
+			"entries": [
+				"You can spend 2 ki points to cast the spell {@spell color spray|PHB} or {@spell hold person|PHB}."
+			]
+		},
+		{
+			"name": "Crowned Gru",
+			"source": "VGTROA",
+			"page": 1,
+			"featureType": [
+				"OPTFEAT:VGTROA:NINJA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Rogue"
+						},
+						"subclass": {
+							"name": "Ninja Tsìn"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Kuji-kiri|Rogue|PHB|Ninja Tsìn|VGTROA|3|} feature",
+						"entrySummary": "Ninja Tsìn"
+					}
+				}
+			],
+			"entries": [
+				"You can spend 2 ki points to cast the spell {@spell gust of wind|PHB} or {@spell feather fall|PHB}."
+			]
+		},
+		{
+			"name": "Bombs and Smoke",
+			"source": "VGTROA",
+			"page": 1,
+			"featureType": [
+				"OPTFEAT:VGTROA:NINJA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Rogue"
+						},
+						"subclass": {
+							"name": "Ninja Tsìn"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Kuji-kiri|Rogue|PHB|Ninja Tsìn|VGTROA|3|} feature",
+						"entrySummary": "Ninja Tsìn"
+					}
+				}
+			],
+			"entries": [
+				"You can spend 2 ki points to cast the spell {@spell thunderwave|PHB} or {@spell pyrotechnics|XGE}."
+			]
+		},
+		{
+			"name": "Phantom Vision",
+			"source": "VGTROA",
+			"page": 1,
+			"featureType": [
+				"OPTFEAT:VGTROA:NINJA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Rogue"
+						},
+						"subclass": {
+							"name": "Ninja Tsìn"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Kuji-kiri|Rogue|PHB|Ninja Tsìn|VGTROA|3|} feature",
+						"entrySummary": "Ninja Tsìn"
+					}
+				}
+			],
+			"entries": [
+				"You can spend 2 ki points to cast the spell {@spell see invisibility|PHB} or {@spell darkvision|PHB}."
+			]
+		},
+		{
+			"name": "Silent Chameleon",
+			"source": "VGTROA",
+			"page": 1,
+			"featureType": [
+				"OPTFEAT:VGTROA:NINJA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Rogue"
+						},
+						"subclass": {
+							"name": "Ninja Tsìn"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Kuji-kiri|Rogue|PHB|Ninja Tsìn|VGTROA|3|} feature",
+						"entrySummary": "Ninja Tsìn"
+					}
+				}
+			],
+			"entries": [
+				"You can spend 2 ki points to cast the spell {@spell mirror image|PHB} or {@spell Silent image|PHB}."
+			]
+		},
+		{
+			"name": "Phantom Body",
+			"source": "VGTROA",
+			"page": 1,
+			"featureType": [
+				"OPTFEAT:VGTROA:NINJA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 13,
+						"class": {
+							"name": "Rogue"
+						},
+						"subclass": {
+							"name": "Ninja Tsìn"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Kuji-kiri|Rogue|PHB|Ninja Tsìn|VGTROA|3|} feature",
+						"entrySummary": "Ninja Tsìn"
+					}
+				}
+			],
+			"entries": [
+				"You can spend 4 ki points to cast the spell {@spell gaseous form|PHB}."
+			]
+		},
+		{
+			"name": "Fierce Leopard",
+			"source": "VGTROA",
+			"page": 1,
+			"featureType": [
+				"OPTFEAT:VGTROA:NINJA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 13,
+						"class": {
+							"name": "Rogue"
+						},
+						"subclass": {
+							"name": "Ninja Tsìn"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Kuji-kiri|Rogue|PHB|Ninja Tsìn|VGTROA|3|} feature",
+						"entrySummary": "Ninja Tsìn"
+					}
+				}
+			],
+			"entries": [
+				"You can spend 4 ki points to cast the spell {@spell haste|PHB}."
+			]
+		},
+		{
+			"name": "Drunk Monkey",
+			"source": "VGTROA",
+			"page": 1,
+			"featureType": [
+				"OPTFEAT:VGTROA:NINJA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17,
+						"class": {
+							"name": "Rogue"
+						},
+						"subclass": {
+							"name": "Ninja Tsìn"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Kuji-kiri|Rogue|PHB|Ninja Tsìn|VGTROA|3|} feature",
+						"entrySummary": "Ninja Tsìn"
+					}
+				}
+			],
+			"entries": [
+				"You can spend 6 ki points to cast the spell {@spell confusion|PHB}."
+			]
+		},
+		{
+			"name": "Rising Phoenix",
+			"source": "VGTROA",
+			"page": 1,
+			"featureType": [
+				"OPTFEAT:VGTROA:NINJA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17,
+						"class": {
+							"name": "Rogue"
+						},
+						"subclass": {
+							"name": "Ninja Tsìn"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Kuji-kiri|Rogue|PHB|Ninja Tsìn|VGTROA|3|} feature",
+						"entrySummary": "Ninja Tsìn"
+					}
+				}
+			],
+			"entries": [
+				"You can spend 6 ki points to cast the spell {@spell fire shield|PHB}."
+			]
+		},
+		{
+			"name": "Spectrum",
+			"source": "VGTROA",
+			"page": 1,
+			"featureType": [
+				"OPTFEAT:VGTROA:NINJA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17,
+						"class": {
+							"name": "Rogue"
+						},
+						"subclass": {
+							"name": "Ninja Tsìn"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Kuji-kiri|Rogue|PHB|Ninja Tsìn|VGTROA|3|} feature",
+						"entrySummary": "Ninja Tsìn"
+					}
+				}
+			],
+			"entries": [
+				"You can spend 6 ki points to cast the spell {@spell shadow of moil|XGE}."
+			]
+		},
+		{
+			"name": "Minor Dragon",
+			"source": "VGTROA",
+			"page": 1,
+			"featureType": [
+				"OPTFEAT:VGTROA:NINJA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17,
+						"class": {
+							"name": "Rogue"
+						},
+						"subclass": {
+							"name": "Ninja Tsìn"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Kuji-kiri|Rogue|PHB|Ninja Tsìn|VGTROA|3|} feature",
+						"entrySummary": "Ninja Tsìn"
+					}
+				}
+			],
+			"entries": [
+				"You can spend 6 ki points to cast the spell {@spell freedom of movement|PHB}."
 			]
 		}
 	]
