@@ -6099,6 +6099,147 @@
 	],
 	"monster": [
 		{
+			"name": "Warhound",
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"source": "VGTROA",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d8 + 2",
+				"average": 11
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 12,
+			"int": 3,
+			"wis": 12,
+			"cha": 7,
+			"passive": 13,
+			"cr": "1/4",
+			"shortName": "Warhound",
+			"page": 76,
+			"skill": {
+				"perception": "+3"
+			},
+			"trait": [
+				{
+					"name": "Variant: Robust",
+					"entries": [
+						"The warhound gains a +1 bonus to its hit rolls, damage rolls, Strength checks, and Strength saving throws. The DC of its bite increases by 1."
+					]
+				},
+				{
+					"name": "Variant: Sturdy",
+					"entries": [
+						"The warhound's hit point maximum increases by an amount equal to twice its number of Hit Dice. If the warhound's hit points are enhanced, then it adds this trait's extra hit points on top of its new hit point maximum."
+					]
+				},
+				{
+					"name": "Variant: Clever",
+					"entries": [
+						"The warhound gains advantage on Intelligence, Wisdom, and Charisma checks and saving throws."
+					]
+				},
+				{
+					"name": "Variant: Stubborn",
+					"entries": [
+						"At the start of each of the warhound's turns, it regains hit points equal to its proficiency bonus (or that of its handler or companion, if any) if it has no more than half of its hit points left. It doesn't gain this benefit if it has 0 hit points. It also gains advantage on death saving throws."
+					]
+				},
+				{
+					"name": "Variant: Aggressive",
+					"entries": [
+						"As a bonus action, the warhound can move up to its speed toward a hostile creature it can see or hear. It must end this move closer to the enemy than it started."
+					]
+				},
+				{
+					"name": "Variant: Protective",
+					"entries": [
+						"As a reaction, the warhound can impose disadvantage on the attack roll of one creature it can see that is within 5 feet of it, provided the attack roll is against a creature other than the warhound."
+					]
+				},
+				{
+					"name": "Variant: Good Temperament",
+					"entries": [
+						"Friendly creatures within 30 feet of the warhound gain a +1 bonus to Charisma ability checks."
+					]
+				},
+				{
+					"name": "Variant: Beloved Companion",
+					"entries": [
+						"Friendly creatures within 30 feet of the warhound gain a +1 bonus to all saving throws."
+					]
+				},
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The warhound has advantage on Wisdom (Perception) checks that rely on hearing or smell. Warhounds are often used for both battle and guard duty, and are excellent at tracking down other creatures."
+					]
+				},
+				{
+					"name": "Embowered Attacks",
+					"entries": [
+						"A creature that the warhound is friendly to has advantage on Wisdom (Animal Handling) checks to control or handle it."
+					]
+				}
+			],
+			"traitTags": [
+				"Aggressive",
+				"Keen Senses"
+			],
+			"action": [
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}10 7({@damage 2d4 + 2}) piercing damage. If the target is a creature, it must succeed on a {@dc 11} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://5e.tools/img/bestiary/tokens/ERLW/Valenar%20Hound.webp"
+			},
+			"fluff": {
+				"entries": [
+					"Warhound from the subclass \"\"Grim Slayer\""
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/bestiary/ERLW/Valenar%20Hound.webp"
+						}
+					}
+				]
+			},
+			"savingThrowForced": [
+				"strength"
+			]
+		},
+		{
 			"name": "Albertosaurus",
 			"size": [
 				"L"
