@@ -18,7 +18,8 @@
 			}
 		],
 		"optionalFeatureTypes": {
-			"OPTFEAT:LEGDRAG:SS": "Supply SpeCialist"
+			"OPTFEAT:LEGDRAG:SS": "Supply SpeCialist",
+			"OPTFEAT:LEGDRAG:GS": "Grim Slayer"
 		},
 		"dateAdded": 1604252046,
 		"dateLastModified": 1703373316,
@@ -8358,7 +8359,7 @@
 				"Draconic avatar|Paladin|PHB|Draconic Majesty|LEGDRAG|20"
 			],
 			"subclassSpells": [
-				"absorb elements, ",
+				"absorb elements",
 				"heroism",
 				"dragon's Breath",
 				"hold person",
@@ -8373,7 +8374,7 @@
 				{
 					"prepared": {
 						"3": [
-							"absorb elements, ",
+							"absorb elements",
 							"heroism"
 						],
 						"5": [
@@ -8391,6 +8392,48 @@
 						"17": [
 							"cone of cold",
 							"dominate person"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Grim Slayer",
+			"source": "LEGDRAG",
+			"shortName": "Grim Slayer",
+			"page": 74,
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassFeatures": [
+				"Grim Slayer|Ranger|PHB|Grim Slayer|LEGDRAG|3",
+				"Unstoppable|Ranger|PHB|Grim Slayer|LEGDRAG|7",
+				"Resolve of the Slayer|Ranger|PHB|Grim Slayer|LEGDRAG|11",
+				"Rip and Tear|Ranger|PHB|Grim Slayer|LEGDRAG|15"
+			],
+			"subclassSpells": [
+				"wrathful smite|phb",
+				"see invisibility|phb",
+				"spirit shroud|tce",
+				"freedom of movement|phb",
+				"hold monster|phb"
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"wrathful smite|phb"
+						],
+						"5": [
+							"see invisibility|phb"
+						],
+						"9": [
+							"spirit shroud|tce"
+						],
+						"13": [
+							"freedom of movement|phb"
+						],
+						"17": [
+							"hold monster|phb"
 						]
 					}
 				}
@@ -11953,9 +11996,186 @@
 				},
 				"Once you use this feature, you can't use it again until you finish a long rest."
 			]
+		},
+		{
+			"name": "Grim Slayer",
+			"source": "LEGDRAG",
+			"page": 74,
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Grim Slayer",
+			"subclassSource": "LEGDRAG",
+			"level": 3,
+			"entries": [
+				"Unlike the Monster Slayer, rangers with the Grim Slayer archetype devote themselves to hunting down certain types of monsters. These pragmatic killers come from many backgrounds, and the kind of reputation they they make for themselves is often influenced by the types of creatures they relentlessly hunt down. They could be someone whose sister was murdered by goblins, or a crusader who is on a rampage to slay as many demons as they can, or even a grim vigilante who hunts down criminals. Depending on their prey, they are seen as devoted heroes or obsessed fanatics, and slayers often receive nicknames like Dragon Slayer, Goblin Slayer, Demon Slayer, or just Slayer. Regardless of their reputation however, they are often greatly appreciated by the common folk, as they are willing to do the dirty work that most adventurers shy away from. In a grim world where many people might not meet another sunrise due to the dangers of roaming monsters, it's the Grim Slayer whom the common folk rely on to survive.",
+				"{@b This subclass uses the '}{@optfeature Favored Foe of the Grim Slayer|LEGDRAG}{@b' feature, even if your DM does not use this as a standard feature.}",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Fanatic Devotion|Ranger|PHB|Grim Slayer|LEGDRAG|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Unrelenting|Ranger|PHB|Grim Slayer|LEGDRAG|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Grim Slayer Magic|Ranger|PHB|Grim Slayer|LEGDRAG|3"
+				}
+			]
+		},
+		{
+			"name": "Fanatic Devotion",
+			"source": "LEGDRAG",
+			"page": 74,
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Grim Slayer",
+			"subclassSource": "LEGDRAG",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Beginning at 3rd level, you regain all uses of your Favored Foe class feature when you finish a short or long rest."
+			]
+		},
+		{
+			"name": "Unrelenting",
+			"source": "LEGDRAG",
+			"page": 74,
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Grim Slayer",
+			"subclassSource": "LEGDRAG",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"At 3rd level, you add your Favored Foe's bonus damage each time you hit a creature marked as your favored foe (or who counts as being marked as your favored foe), instead of just the first time you hit the target on each of your turns. If a creature marked as your favored foe hits you with an attack roll, you can use your reaction to roll your Favored Foe damage die and gain a bonus to your AC equal to the number rolled, potentially causing the attack to miss you.",
+				"At 20th level, you add your Wisdom modifier (minimum of 1) to damage rolls you make against creatures marked as your favored foe."
+			]
+		},
+		{
+			"name": "Grim Slayer Magic",
+			"source": "LEGDRAG",
+			"page": 74,
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassSource": "LEGDRAG",
+			"subclassShortName": "Grim Slayer",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You learn an additional spell when you reach certain levels in this class, as shown in the Grim Slayer Spells table. Each spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.",
+				{
+					"type": "table",
+					"caption": "Grim Slayer Spells",
+					"colLabels": [
+						"Ranger Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell wrathful smite|PHB}"
+						],
+						[
+							"5th",
+							"{@spell see invisibility|PHB}"
+						],
+						[
+							"9th",
+							"{@spell spirit shroud|TCE}"
+						],
+						[
+							"13th",
+							"{@spell freedom of movement|PHB}"
+						],
+						[
+							"17th",
+							"{@spell hold monster|PHB}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Unstoppable",
+			"source": "LEGDRAG",
+			"page": 74,
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Grim Slayer",
+			"subclassSource": "LEGDRAG",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"At 7th level, slaying your favored foes reinvigorates you. When you reduce a target marked as your favored foe to 0 hit points, you regain hit points equal to one roll of your Favored Foe damage die + your ranger level."
+			]
+		},
+		{
+			"name": "Resolve of the Slayer",
+			"source": "LEGDRAG",
+			"page": 74,
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Grim Slayer",
+			"subclassSource": "LEGDRAG",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"At 11th level, you become too stubborn to die. If you drop to 0 hit points and you don't die outright, you can make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hit point instead. Each time you use this feature after the first, the DC increases by 5. When you finish a long rest, it resets to 10."
+			]
+		},
+		{
+			"name": "Rip and Tear",
+			"source": "LEGDRAG",
+			"page": 74,
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Grim Slayer",
+			"subclassSource": "LEGDRAG",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"At 15th level, you become the ultimate slayer. When one of your attacks reduces a creature's hit points to a number less than your ranger level, you instantly reduce it to 0 hit points.",
+				"{@b NOTE:} {@i This feature relies on knowledge regarding a monster's remaining hit points. Your DM may want to avoid sharing this information at the table, so if you are worried about this feature getting overlooked in combat, we suggest checking in with them at the start of the session to make sure that they are aware of it.}"
+			]
 		}
 	],
 	"optionalfeature": [
+		{
+			"name": "Favored Foe of the Grim Slayer",
+			"source": "LEGDRAG",
+			"page": 68,
+			"featureType": [
+				"OPTFEAT:LEGDRAG:GS"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Ranger"
+						},
+						"subclass": {
+							"name": "Grim Slayer"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Grim Slayer|Ranger|PHB|Grim Slayer|LEGDRAG|3|} feature",
+						"entrySummary": "Grim Slayer"
+					}
+				}
+			],
+			"entries": [
+				"{@i 1st-level ranger feature, which replaces the Favored Enemy feature and works with the Foe Slayer feature}",
+				"When you hit a creature with an attack roll, you can mark the target as your favored foe for 1 minute. The first time on each of your turns that you hit the favored foe and deal damage to it, including when you mark it, you can increase that damage by 1d4. You can use this feature to mark a favored foe a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest. This feature's extra damage increases to 1d6 at 6th level, and to 1d8 at 14th level. Creatures that are affected by your {@spell hunter's mark|PHB} spell cannot receive this feature's extra damage from you.",
+				"In addition, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy. Choose a type of favored enemy: aberrations, beasts, celestials, constructs, dragons, elementals, fey, fiends, giants, monstrosities, oozes, plants, or undead. Alternatively, you can select two races of humanoid (such as goblins and orcs) as favored enemies. You have advantage on Wisdom (Survival) checks to track your favored enemies, as well as on Intelligence checks to recall information about them. When you gain this feature, you also learn one language of your choice that is spoken by your favored enemies (if any).",
+				"Your favored enemies always count as being marked as your favored foe, increasing your damage against these enemies as described above. You choose one additional favored enemy, as well as an associated language, at 6th and 14th level. As you gain levels, your choices should reflect the types of monsters you have encountered on your adventures. When you reach a level in this class that grants the Ability Score Improvement feature, you can replace one of the options you chose as your favored enemy with another of these options available to you."
+			]
+		},
 		{
 			"name": "Lesser Healing Potion",
 			"source": "LEGDRAG",
