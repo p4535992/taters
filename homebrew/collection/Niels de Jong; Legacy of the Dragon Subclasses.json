@@ -20,7 +20,8 @@
 		"optionalFeatureTypes": {
 			"OPTFEAT:LEGDRAG:SS": "Supply SpeCialist",
 			"OPTFEAT:LEGDRAG:GS": "Grim Slayer",
-			"OPTFEAT:LEGDRAG:DB": "Draconic Bloodline"
+			"OPTFEAT:LEGDRAG:DB": "Draconic Bloodline",
+			"OPTFEAT:LEGDRAG:DD": "Dragon Student/Companion"
 		},
 		"dateAdded": 1604252046,
 		"dateLastModified": 1703373316,
@@ -12786,6 +12787,28 @@
 						"Although it is thematic, dragonborn and half dragon Draconic Bloodline players do not have to pick the same Dragon Ancestor as their racial Draconic Ancestry. This revision adds an additional benefit for players that do go that route, as they already have the dragon's resistance. But it is perfectly reasonable for a half dragon or dragonborn sorcerer to draw their power from one of their other dragon ancestors, granting them a mix of draconic traits from both bloodlines. An example of this is the half black dragon sorceress below, whose magical might comes from her gold dragon ancestor, granting her a unique appearance."
 					]
 				}
+			]
+		}
+	],
+	"feat": [
+		{
+			"name": "Pact of The dragon",
+			"source": "LEGDRAG",
+			"page": 84,
+			"prerequisite": [
+				{
+					"patron": "Dragon Student",
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"When you command your dragon to cast or use a warlock spell, and a creature was hit by this spell (or was hit by an attack roll that was involved with this spell) or a creature failed its saving throw against it, then your dragon gains temporary hit points equal to 1 + your proficiency bonus. It can only gain temporary hit points this way once per turn.",
+				"You can now issue a command to your dragon as a bonus action instead of an action, except when you command it to cast or use a spell (the Dragon Rider invocation is an exception to this rule). You can only issue one command per turn."
 			]
 		}
 	]
