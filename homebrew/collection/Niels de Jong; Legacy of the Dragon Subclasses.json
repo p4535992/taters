@@ -8270,10 +8270,10 @@
 		{
 			"name": "Way of Weave",
 			"source": "LEGDRAG",
+			"shortName": "Weave",
+			"page": 67,
 			"className": "Monk",
 			"classSource": "PHB",
-			"page": 67,
-			"shortName": "Weave",
 			"subclassFeatures": [
 				"Way of Weave|Monk|PHB|Weave|LEGDRAG|3",
 				"Advanced Weaver Training|Monk|PHB|Weave|LEGDRAG|6",
@@ -8340,6 +8340,61 @@
 			],
 			"spellcastingAbility": "wis",
 			"casterProgression": "1/3"
+		},
+		{
+			"name": "Oath of Draconic Majesty",
+			"source": "LEGDRAG",
+			"shortName": "Draconic Majesty",
+			"page": 69,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassFeatures": [
+				"Oath of the Draconic Majesty|Paladin|PHB|Draconic Majesty|LEGDRAG|3",
+				"Aura of the Dragon Queen|Paladin|PHB|Draconic Majesty|LEGDRAG|7",
+				"Aura of the Platinum Dragon|Paladin|PHB|Draconic Majesty|LEGDRAG|7",
+				"Draconic Wings|Paladin|PHB|Draconic Majesty|LEGDRAG|15",
+				"Aura of the Dragon Queen Superior|Paladin|PHB|Draconic Majesty|LEGDRAG|18",
+				"Aura of the Platinum Dragon Superior|Paladin|PHB|Draconic Majesty|LEGDRAG|18",
+				"Draconic avatar|Paladin|PHB|Draconic Majesty|LEGDRAG|20"
+			],
+			"subclassSpells": [
+				"absorb elements, ",
+				"heroism",
+				"dragon's Breath",
+				"hold person",
+				"fear",
+				"protection from energy",
+				"elemental bane",
+				"stoneskin",
+				"cone of cold",
+				"dominate person"
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"absorb elements, ",
+							"heroism"
+						],
+						"5": [
+							"dragon's Breath",
+							"hold person"
+						],
+						"9": [
+							"fear",
+							"protection from energy"
+						],
+						"13": [
+							"elemental bane",
+							"stoneskin"
+						],
+						"17": [
+							"cone of cold",
+							"dominate person"
+						]
+					}
+				}
+			]
 		}
 	],
 	"subclassFeature": [
@@ -11558,6 +11613,345 @@
 			"level": 17,
 			"entries": [
 				"At 17th level, your practiced connection to the Weave grants you the power to freely shape your ki into spells. You can now also cast your spells by spending a number of ki points equal to the spell's level, but you cannot spend more than 5 ki points this way. You learn the 5th-level {@spell animate objects}, {@spell hold monster}, {@spell steel wind strike} and {@spell wall of force} spells, and at 17th, 18th, 19th, and 20th level you learn one additional 5th-level (or lower) divination, enchantment, or transmutation spell of your choice from the {@filter wizard spell list|spells|level=5|class=Wizard}."
+			]
+		},
+		{
+			"name": "Oath of the Draconic Majesty",
+			"source": "LEGDRAG",
+			"page": 69,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassSource": "LEGDRAG",
+			"subclassShortName": "Draconic Majesty",
+			"level": 3,
+			"entries": [
+				"Dragons are some of the most powerful creatures in the multiverse, and there are those who seek to emulate their majesty in all that they do. Whether they wish to use and exercise a dragon's power, help it extend its influence and change the world, or simply fell in love with the mighty creature and its ideals, they all agree that dragonkind has its role to play in the great battles of this world. Those who follow this ideal have made an oath with an ancient or older dragon, which has become their sovereign. Followers of this oath may also choose Bahamut (god of metallic dragons), Tiamat (god of chromatic dragons), or a different dragon god as their Sovereign.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Draconic Tenets|Paladin|PHB|Draconic Majesty|LEGDRAG|3|LEGDRAG"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Oath Spells|Paladin|PHB|Draconic Majesty|LEGDRAG|3|LEGDRAG"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Draconic Oath|Paladin|PHB|Draconic Majesty|LEGDRAG|3|LEGDRAG"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Channel Divinity: Frightening Presence|Paladin|PHB|Draconic Majesty|LEGDRAG|3|LEGDRAG"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Channel Divinity: Wing Buffet|Paladin|PHB|Draconic Majesty|LEGDRAG|3|LEGDRAG"
+				}
+			]
+		},
+		{
+			"name": "Draconic Tenets",
+			"source": "LEGDRAG",
+			"page": 69,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassSource": "LEGDRAG",
+			"subclassShortName": "Draconic Majesty",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Though the exact words and strictures of the Oath of Draconic Majesty vary, paladins of this oath share the following tenets. Majesty. I shall not bring shame to my sovereign, and I will behave in a way befitting of my status. I will be proud.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Treasure",
+							"entries": [
+								"I will gather wealth and unique items, both for my endeavors and for my sovereign. Regardless if they call me greedy. One never has enough riches."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Power (Chromatic sovereign only)",
+							"entries": [
+								"What good is power if it is not used? I shall use my power to advance the goals of my sovereign and myself, and remove all who oppose me."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Goodwill (Metallic sovereign only)",
+							"entries": [
+								"I shall not confuse arrogance and pride, nor shall I think myself above helping the weak and the weary."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Oath Spells",
+			"source": "LEGDRAG",
+			"page": 69,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassSource": "LEGDRAG",
+			"subclassShortName": "Draconic Majesty",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You gain oath spells at the paladin levels listed in the Oath of Draconic Majesty Spells table. See the Sacred Oath class feature for how oath spells work.",
+				{
+					"type": "table",
+					"caption": "Oath of the Draconic Majesty Spells",
+					"colLabels": [
+						"Paladin Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell absorb elements|XGE}, {@spell heroism|PHB}"
+						],
+						[
+							"5th",
+							"{@spell dragon's breath|XGE}, {@spell hold person|PHB}"
+						],
+						[
+							"9th",
+							"{@spell fear|PHB}, {@spell protection from energy|PHB}"
+						],
+						[
+							"13th",
+							"{@spell elemental bane|XGE}, {@spell stoneskin|PHB}"
+						],
+						[
+							"17th",
+							"{@spell cone of cold|PHB}, {@spell dominate person|PHB}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Draconic Oath",
+			"source": "LEGDRAG",
+			"page": 69,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassSource": "LEGDRAG",
+			"subclassShortName": "Draconic Majesty",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"At 3rd level, as you seek to emulate the majesty of dragons, you have learned to speak, read and write Draconic. Additionally, whenever you make a Charisma check when interacting with dragons, your proficiency bonus is doubled if it applies to the check.",
+				"When you choose this oath, you must choose a dragon from the Draconic Oath table, which must be the same dragon type as that of your dragon sovereign. If you choose Bahamut as your sovereign you can choose any metallic dragon, if you choose Tiamat as your sovereign you can choose any chromatic dragon, and if you choose Asgorath (or another dragon god) as your sovereign you can choose any dragon. Steel dragons are metallic dragons; deep and gray dragons are chromatic dragons; Amethyst, crystal, emerald, sapphire and topaz dragons are gem dragons; and celestial, fang, moonstone, and song dragons are their own subspecies of dragon. For game purposes; gem, moonstone, and song dragons count as metallic dragons; while celestial and fang dragons count as chromatic dragons.",
+				{
+					"type": "table",
+					"caption": "Draconic Oath",
+					"colLabels": [
+						"Metallic Dragon",
+						"Chromatic Dragon",
+						"Damage Type"
+					],
+					"colStyles": [
+						"col-4 text-center",
+						"col-4 text-center",
+						"col-4 text-center"
+					],
+					"rows": [
+						[
+							"Copper, Steel",
+							"Black, Fang/Gray",
+							"Acid"
+						],
+						[
+							"Silver",
+							"White",
+							"Cold"
+						],
+						[
+							"Gold, Brass",
+							"Fire",
+							"Fire"
+						],
+						[
+							"Amethyst",
+							"-",
+							"Force"
+						],
+						[
+							"Bronze, Song",
+							"Blue",
+							"Lightning"
+						],
+						[
+							"Topaz",
+							"-",
+							"Necrotic"
+						],
+						[
+							"-",
+							"Green",
+							"Poison"
+						],
+						[
+							"Emerald",
+							"Deep",
+							"Psychic"
+						], 
+						[
+							"Crystal, Moonstone",
+							"Celestial",
+							"Radiant"
+						],
+						[
+							"Sapphire",
+							"-",
+							"Thunder"
+						]
+					]
+				},
+				"The damage type associated with your Draconic Oath's chosen dragon is used by features of this oath.",
+				"When you deal damage with your oath spells, or your Divine Smite and Improved Divine Smite class features, you can now switch the damage type with the one associated with your Draconic Oath."
+			]
+		},
+		{
+			"name": "Channel Divinity: Frightening Presence",
+			"source": "LEGDRAG",
+			"page": 69,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassSource": "LEGDRAG",
+			"subclassShortName": "Draconic Majesty",
+			"level": 3,
+			"header": 1,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
+			"entries": [
+				"As an action, you can use your Channel Divinity to exude a terrifying presence. Each creature of your choice within 30 feet of you must make a Wisdom saving throw if it can see you. On a failed save, the target is frightened of you for 1 minute. The frightened creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success."
+			]
+		},
+		{
+			"name": "Channel Divinity: Wing Buffet",
+			"source": "LEGDRAG",
+			"page": 69,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassSource": "LEGDRAG",
+			"subclassShortName": "Draconic Majesty",
+			"level": 3,
+			"header": 1,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
+			"entries": [
+				"When you take the Attack action, you can replace one of your attacks with a wing buffet, and use your Channel Divinity to summon radiant wings that create a strong wind. Each creature of your choice in a 30-foot cone, which originates from you, must make a Strength saving throw. On a failure, they are pushed back 20 feet away from you and are knocked prone, and if they encounter a solid obstacle take 1d6 + your paladin level bludgeoning damage."
+			]
+		},
+		{
+			"name": "Aura of the Dragon Queen",
+			"source": "LEGDRAG",
+			"page": 69,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassSource": "LEGDRAG",
+			"subclassShortName": "Draconic Majesty",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i Chromatic Draconic Oath only}",
+				"Beginning at 7th level, you imbue your own weapons and those of your allies with the elemental fury of your dragon sovereign. When you or a friendly creature within 10 feet of you hits a creature with a weapon attack, it will deal extra damage equal to your Charisma modifier (minimum of 1) of the type associated with your Draconic Oath. A creature can only deal this extra damage once per turn.",
+				"At 18th level, the range of this aura increases to 30 feet."
+			]
+		},
+		{
+			"name": "Aura of the Dragon Queen Superior",
+			"source": "LEGDRAG",
+			"page": 69,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassSource": "LEGDRAG",
+			"subclassShortName": "Draconic Majesty",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"{@i Chromatic Draconic Oath only}",
+				"Beginning at 18th level, you imbue your own weapons and those of your allies with the elemental fury of your dragon sovereign. When you or a friendly creature within 30 feet of you hits a creature with a weapon attack, it will deal extra damage equal to your Charisma modifier (minimum of 1) of the type associated with your Draconic Oath. A creature can only deal this extra damage once per turn."
+			]
+		},
+		{
+			"name": "Aura of the Platinum Dragon",
+			"source": "LEGDRAG",
+			"page": 69,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassSource": "LEGDRAG",
+			"subclassShortName": "Draconic Majesty",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i Metallic Draconic Oath only}",
+				"Beginning at 7th level, your devotion grants you and those around you the divine protection of your dragon sovereign. You and friendly creatures within 10 feet of you reduce all bludgeoning, piercing, and slashing damage taken by an amount equal to your Charisma modifier (minimum of 1). Creatures reduce damage this way before resistances have been calculated.",
+				"At 18th level, the range of this aura increases to 30 feet."
+			]
+		},
+		{
+			"name": "Aura of the Platinum Dragon Superior",
+			"source": "LEGDRAG",
+			"page": 69,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassSource": "LEGDRAG",
+			"subclassShortName": "Draconic Majesty",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"{@i Metallic Draconic Oath only}",
+				"Beginning at 18th level, your devotion grants you and those around you the divine protection of your dragon sovereign. You and friendly creatures within 30 feet of you reduce all bludgeoning, piercing, and slashing damage taken by an amount equal to your Charisma modifier (minimum of 1). Creatures reduce damage this way before resistances have been calculated."
+			]
+		},
+		{
+			"name": "Draconic Wings",
+			"source": "LEGDRAG",
+			"page": 69,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassSource": "LEGDRAG",
+			"subclassShortName": "Draconic Majesty",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"At 15th level, you gain the ability to sprout a pair of spectral dragon wings from your back, granting you a flying speed equal to your walking speed. You can create these wings as a bonus action on your turn. They last until you dismiss them as a bonus action on your turn.",
+				"While these wings are active, all other friendly creatures who are within 5 feet of you gain half cover."
+			]
+		},
+		{
+			"name": "Draconic Avatar",
+			"source": "LEGDRAG",
+			"page": 69,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassSource": "LEGDRAG",
+			"subclassShortName": "Draconic Majesty",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"At 20th level, you can use your action to temporarily ascend to the ideal of dragonkind, sharing its majesty with those around you. You gain the following benefits for 1 minute:",
+				{
+					"type": "list",
+					"items": [
+						"You have immunity to the damage type associated with your Draconic Oath.",
+						"You gain the effects of the Enlarge option from the {@spell enlarge/reduce} spell.",
+						"You and friendly creatures within 30 feet of you gain half cover, provided your wings are active.",
+						"You can use your bonus action to exhale destructive energy in a 30-foot cone, which leaves your allies unscathed. Each creature of your choice in that area must make a Dexterity saving throw against your spell save DC. Each target takes damage equal to 3d10 + your Charisma modifier on a failed save, or half as much damage on a successful one. The damage type is either radiant damage or the same type as the one associated with your Draconic Oath (your choice)."
+					]
+				},
+				"Once you use this feature, you can't use it again until you finish a long rest."
 			]
 		}
 	],

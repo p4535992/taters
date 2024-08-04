@@ -6742,7 +6742,7 @@
 				{
 					"name": "Frightful Presence",
 					"entries": [
-						"Each creature of the spinosaurus’ choice that is within 120 feet of the spinosaurus and aware of it must succeed on a {@dc 18} Wisdom saving throw or become {@condition frightened} for 1 minute. A {@condition frightened} creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the spinosaurus’ Frightful Presence for the next 24 hours."
+						"Each creature of the spinosaurus' choice that is within 120 feet of the spinosaurus and aware of it must succeed on a {@dc 18} Wisdom saving throw or become {@condition frightened} for 1 minute. A {@condition frightened} creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the spinosaurus' Frightful Presence for the next 24 hours."
 					]
 				},
 				{
@@ -7765,7 +7765,7 @@
 				{
 					"name": "Magic Weapons",
 					"entries": [
-						"The naga’s weapon attacks are magical."
+						"The naga's weapon attacks are magical."
 					]
 				}
 			],
@@ -7802,7 +7802,7 @@
 				{
 					"name": "Coral Trident",
 					"entries": [
-						"{@atk mw,rw} {@hit 7} to hit, reach 5 ft. or range 30/90 ft., one target. {@h}13 ({@damage 2d8 + 4}) piercing damage in melee, or 8 ({@damage 1d8 + 4}) piercing damage at range, plus 4 ({@damage 1d8}) poison damage  and corals grow from the target's wounds. While the target's wounds are infected by these corals it can’t benefit from any healing, it has di-advantage on Dexterity saving throws, and it takes {@damage 2d4} poison damage at the start of each of its turns. A creature can take an action to remove the corals, with a successful {@dc 12} Wisdom (Medicine) check. Only large creatures can wield this magic weapon, and only the naga can attune to it."
+						"{@atk mw,rw} {@hit 7} to hit, reach 5 ft. or range 30/90 ft., one target. {@h}13 ({@damage 2d8 + 4}) piercing damage in melee, or 8 ({@damage 1d8 + 4}) piercing damage at range, plus 4 ({@damage 1d8}) poison damage  and corals grow from the target's wounds. While the target's wounds are infected by these corals it can't benefit from any healing, it has di-advantage on Dexterity saving throws, and it takes {@damage 2d4} poison damage at the start of each of its turns. A creature can take an action to remove the corals, with a successful {@dc 12} Wisdom (Medicine) check. Only large creatures can wield this magic weapon, and only the naga can attune to it."
 					]
 				},
 				{
@@ -8253,7 +8253,7 @@
 				{
 					"name": "Embowered Attacks",
 					"entries": [
-						"The dragon turtle spirit’s attacks count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
+						"The dragon turtle spirit's attacks count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
 					]
 				}
 			],
@@ -15461,7 +15461,7 @@
 			"entries": [
 				"This spell is favored by clerics of the dragon domain. As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects and it is marked until the start of your next turn. ",
 				"The next time the marked creature is hit by an attack by a creature other than you, the attack deals additional radiant damage equal to your spellcasting ability modifier and the mark ends.",
-				"At 5th level, this spell’s damage increases to {@dice 1d8} + your spellcasting ability modifier. The damage roll increases by {@dice 1d8} at 11th level ({@dice 2d8}) and 17th level ({@dice 3d8})."
+				"At 5th level, this spell's damage increases to {@dice 1d8} + your spellcasting ability modifier. The damage roll increases by {@dice 1d8} at 11th level ({@dice 2d8}) and 17th level ({@dice 3d8})."
 			],
 			"source": "LEGDRAG",
 			"page": 144,
@@ -19770,6 +19770,457 @@
 						"href": {
 							"type": "external",
 							"url": "https://i.imgur.com/rMV3KqG.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Witch Bolt of the Dragon",
+			"source": "LEGDRAG",
+			"level": 108,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a twig from a tree that has been struck by lightning"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"A beam of crackling, blue energy lances out toward a creature within range, forming a sustained arc of lightning between you and the target. Make a ranged spell attack against that creature. On a hit, the target takes 1d12 lightning damage, and must make a Constitution saving throw. On a failed save, it is restrained until the end of your next turn. On a successful save, it can't be restrained by you this way for 1 minute. After you hit the target, on each of your turns for the duration, you can use your action to deal {@damage 1d12} lightning damage to the target automatically. If you do, you can use your bonus action to force it to make the saving throw again, provided you can still restrain it this way.",
+				"The spell ends if you use your action to do anything else. The spell also ends if you end your turn, and the target has total cover from you or is outside the spell's range."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@scaledamage 1d12|1-9|1d12} for every two slot levels above 1st."
+					]
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"feats": [
+				{
+					"name": "Aberrant Dragonmark",
+					"source": "ERLW"
+				},
+				{
+					"name": "Divinely Favored",
+					"source": "DSotDQ"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				},
+				{
+					"name": "Strixhaven Initiate",
+					"source": "SCC"
+				}
+			],
+			"fluff": {
+				"entries": [
+					"A beam of crackling, blue energy lances out toward a creature within range, forming a sustained arc of lightning between you and the target. Make a ranged spell attack against that creature. On a hit, the target takes 1d12 lightning damage, and must make a Constitution saving throw. On a failed save, it is restrained until the end of your next turn. On a successful save, it can't be restrained by you this way for 1 minute. After you hit the target, on each of your turns for the duration, you can use your action to deal {@damage 1d12} lightning damage to the target automatically. If you do, you can use your bonus action to force it to make the saving throw again, provided you can still restrain it this way.",
+					"The spell ends if you use your action to do anything else. The spell also ends if you end your turn, and the target has total cover from you or is outside the spell's range.",
+					{
+						"type": "entries",
+						"name": "At Higher Levels",
+						"entries": [
+							"When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@scaledamage 1d12|1-9|1d12} for every two slot levels above 1st."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/CiMGnFz.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "True Strike of the Dragon",
+			"source": "LEGDRAG",
+			"page": 108,
+			"level": 0,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into its defenses. On your next turn you gain advantage on your first melee attack roll against the target, provided that this spell hasn't ended."
+			],
+			"miscTags": [
+				"ADV"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcana Domain",
+							"shortName": "Arcana",
+							"source": "SCAG"
+						}
+					},
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"races": [
+				{
+					"name": "Elf (High)",
+					"source": "PHB",
+					"baseName": "Elf",
+					"baseSource": "PHB"
+				},
+				{
+					"name": "Half-Elf (Variant; Moon Elf or Sun Elf Descent)",
+					"source": "SCAG",
+					"baseName": "Half-Elf",
+					"baseSource": "PHB"
+				},
+				{
+					"name": "Kobold",
+					"source": "MPMM"
+				},
+				{
+					"name": "Merfolk (Ixalan; Blue)",
+					"source": "PSX",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				},
+				{
+					"name": "Merfolk (Zendikar; Cosi Creed)",
+					"source": "PSZ",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				},
+				{
+					"name": "Merfolk (Zendikar; Ula Creed)",
+					"source": "PSZ",
+					"baseName": "Merfolk",
+					"baseSource": "PSZ"
+				}
+			],
+			"optionalfeatures": [
+				{
+					"name": "Pact of the Tome",
+					"source": "PHB",
+					"featureType": [
+						"PB"
+					]
+				}
+			],
+			"feats": [
+				{
+					"name": "Aberrant Dragonmark",
+					"source": "ERLW"
+				},
+				{
+					"name": "Initiate of High Sorcery",
+					"source": "DSotDQ"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				}
+			],
+			"fluff": {
+				"entries": [
+					"You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into its defenses. On your next turn you gain advantage on your first melee attack roll against the target, provided that this spell hasn't ended."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/CiMGnFz.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Crown of Madness of the Dragon",
+			"source": "LEGDRAG",
+			"page": 108,
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"One humanoid of your choice that you can see within range must succeed on a Wisdom saving throw or become charmed by you for the duration, as a twisted crown of jagged iron appears on its head, and a madness glows in its eyes.",
+				"The target can make a Wisdom saving throw at the end of each of its turns, ending the spell on a success. The target must use its action before moving on each of its turns to make one melee weapon attack against a creature other than itself that you mentally choose.",
+				"It loses its action if you didn't choose a creature or if it's unable to attack. If you use your bonus action, you can control the target's movement on its next turn, but you can't move it into harmful terrain."
+			],
+			"conditionInflict": [
+				"charmed"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"affectsCreatureType": [
+				"humanoid"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Paladin",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Oathbreaker",
+							"shortName": "Oathbreaker",
+							"source": "DMG"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"races": [
+				{
+					"name": "Tiefling (Baalzebul)",
+					"source": "MTF",
+					"baseName": "Tiefling",
+					"baseSource": "PHB"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Rakdos Cultist",
+					"source": "GGR"
+				}
+			],
+			"feats": [
+				{
+					"name": "Adept of the Black Robes",
+					"source": "DSotDQ"
+				}
+			],
+			"fluff": {
+				"entries": [
+					"One humanoid of your choice that you can see within range must succeed on a Wisdom saving throw or become charmed by you for the duration, as a twisted crown of jagged iron appears on its head, and a madness glows in its eyes.",
+					"The target can make a Wisdom saving throw at the end of each of its turns, ending the spell on a success. The target must use its action before moving on each of its turns to make one melee weapon attack against a creature other than itself that you mentally choose.",
+					"It loses its action if you didn't choose a creature or if it's unable to attack. If you use your bonus action, you can control the target's movement on its next turn, but you can't move it into harmful terrain."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/CiMGnFz.png"
 						}
 					}
 				]

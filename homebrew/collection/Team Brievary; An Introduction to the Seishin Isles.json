@@ -2912,7 +2912,11 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity|Paladin|PHB|Shugenja|SEIISL|3|SEIISL"
+					"subclassFeature": "Channel Divinity: Eternal Calm|Paladin|PHB|Shugenja|SEIISL|3|SEIISL"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Channel Divinity: Primordial Hand|Paladin|PHB|Shugenja|SEIISL|3|SEIISL"
 				},
 				{
 					"type": "refSubclassFeature",
@@ -3007,7 +3011,7 @@
 			]
 		},
 		{
-			"name": "Channel Divinity",
+			"name": "Channel Divinity: Eternal Calm",
 			"source": "SEIISL",
 			"className": "Paladin",
 			"classSource": "PHB",
@@ -3015,27 +3019,27 @@
 			"subclassShortName": "Shugenja",
 			"level": 3,
 			"header": 1,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
 			"entries": [
-				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
-				{
-					"type": "options",
-					"entries": [
-						{
-							"type": "entries",
-							"name": "Eternal Calm",
-							"entries": [
-								"You can use your Channel Divinity to repel the creatures of the elements. As an action, Each elemental that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is {@condition Frightened} for 1 minute or until it takes any damage. "
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Primordial Hand",
-							"entries": [
-								"You can use your Channel Divinity to send a burst of healing energy to one out of your reach. As a bonus action you can draw from your lay on hands pool to restore a number of Hit Points to a creature you can see within 30 ft., up to the maximum amount remaining in your pool."
-							]
-						}
-					]
-				}
+				"You can use your Channel Divinity to repel the creatures of the elements. As an action, Each elemental that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is {@condition Frightened} for 1 minute or until it takes any damage."
+			]
+		},
+		{
+			"name": "Channel Divinity: Primordial Hand",
+			"source": "SEIISL",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassSource": "SEIISL",
+			"subclassShortName": "Shugenja",
+			"level": 3,
+			"header": 1,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
+			"entries": [
+				"You can use your Channel Divinity to send a burst of healing energy to one out of your reach. As a bonus action you can draw from your lay on hands pool to restore a number of Hit Points to a creature you can see within 30 ft., up to the maximum amount remaining in your pool."
 			]
 		},
 		{
