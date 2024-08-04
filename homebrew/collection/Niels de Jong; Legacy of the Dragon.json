@@ -12422,6 +12422,7 @@
 			"ac": 14,
 			"bonusAc": "+0",
 			"stealth": false,
+			"armor": true,
 			"entries": [
 				"Dragon scale mail made of freely gifted scales is especially supple and sturdy. As such it doesn't impose disadvantage on your Dexterity (Stealth) checks, and it has a base AC of 15 + Dex modifier (max 2).",
 				{
@@ -12472,6 +12473,73 @@
 				"Young Dragonfriend's Armor|LEGDRAG",
 				"Adult Dragonfriend's Armor|LEGDRAG",
 				"Ancient Dragonfriend's Armor|LEGDRAG"
+			]
+		},
+		{
+			"name": "StormScale Armor",
+			"source": "LEGDRAG",
+			"page": 78,
+			"baseItem": "Studded Leather Armor|PHB",
+			"type": "LA",
+			"tier": "major",
+			"rarity": "varies",
+			"reqAttune": true,
+			"weight": 13,
+			"value": 75000,
+			"ac": 13,
+			"bonusAc": "+0",
+			"stealth": false,
+			"armor": true,
+			"entries": [
+				"Stormscale are skilled at interweaving freely gifted dragon scales into light armor. As such it doesn't impose disadvantage on your Dexterity (Stealth) checks, and it has a base AC of 13 + Dex modifier (max 2).",
+				{
+					"type": "table",
+					"caption": "Draconic Heritage Traits",
+					"colLabels": [
+						"Age",
+						"Rarity",
+						"AC Bonus"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-3 text-center",
+						"col-3 text-center"
+					],
+					"rows": [
+						[
+							"Wyrmling",
+							"Uncommon",
+							"+0"
+						],
+						[
+							"Young",
+							"Rare",
+							"+1"
+						],
+						[
+							"Adult",
+							"Very Rare",
+							"+2"
+						],
+						[
+							"Ancient",
+							"Legendary",
+							"+3"
+						]
+					]
+				},
+				"While wearing this armor, you can speak {@language Draconic}",
+				"You gain a bonus to AC based on the age of the dragon",
+				"You have advantage on saving throws against the Frightful Presence and breath weapons of dragons",
+				"You have resistance to one damage type that is determined by the kind of dragon that provided the scales, as shown in the Dragon Species and Damage Types table (page 117).",
+				"You are immune to harmful regional effects and lair actions caused by the dragon that gifted you these scales. If you are subjected to that dragon's breath weapon, you automatically succeed on the saving throw and take no damage.",
+				"If the dragon that gifted these scales dies, this armor loses most of its magic, the supple scales harden, and it becomes magic scale mail that only retains its bonus to AC."
+			],
+			"items": [
+				"Wyrmling StormScale Armor|LEGDRAG",
+				"Young StormScale Armor|LEGDRAG",
+				"Adult StormScale Armor|LEGDRAG",
+				"Ancient StormScale Armor|LEGDRAG"
 			]
 		}
 	],
@@ -13337,6 +13405,7 @@
 			"ac": 15,
 			"bonusAc": "+0",
 			"stealth": false,
+			"armor": true,
 			"entries": [
 				"Dragon scale mail made of freely gifted scales is especially supple and sturdy. As such it doesn't impose disadvantage on your Dexterity (Stealth) checks, and it has a base AC of 15 + Dex modifier (max 2).",
 				{
@@ -13391,6 +13460,7 @@
 			"ac": 15,
 			"bonusAc": "+1",
 			"stealth": false,
+			"armor": true,
 			"entries": [
 				"Dragon scale mail made of freely gifted scales is especially supple and sturdy. As such it doesn't impose disadvantage on your Dexterity (Stealth) checks, and it has a base AC of 15 + Dex modifier (max 2).",
 				{
@@ -13445,6 +13515,7 @@
 			"ac": 15,
 			"bonusAc": "+2",
 			"stealth": false,
+			"armor": true,
 			"entries": [
 				"Dragon scale mail made of freely gifted scales is especially supple and sturdy. As such it doesn't impose disadvantage on your Dexterity (Stealth) checks, and it has a base AC of 15 + Dex modifier (max 2).",
 				{
@@ -13499,8 +13570,229 @@
 			"ac": 15,
 			"bonusAc": "+3",
 			"stealth": false,
+			"armor": true,
 			"entries": [
 				"Dragon scale mail made of freely gifted scales is especially supple and sturdy. As such it doesn't impose disadvantage on your Dexterity (Stealth) checks, and it has a base AC of 15 + Dex modifier (max 2).",			
+				{
+					"type": "list",
+					"items": [
+						"While wearing this armor, you can speak {@language Draconic}",
+						"You gain a bonus to AC based on the age of the dragon",
+						"You have advantage on saving throws against the Frightful Presence and breath weapons of dragons",
+						"You have resistance to one damage type that is determined by the kind of dragon that provided the scales, as shown in the Dragon Species and Damage Types table (page 117).",
+						"You are immune to harmful regional effects and lair actions caused by the dragon that gifted you these scales. If you are subjected to that dragon's breath weapon, you automatically succeed on the saving throw and take no damage."
+					]
+				},
+				"If the dragon that gifted these scales dies, this armor loses most of its magic, the supple scales harden, and it becomes magic scale mail that only retains its bonus to AC."
+			],
+			"fluff": {
+				"entries": [
+					"Dragon scale mail made of freely gifted scales is especially supple and sturdy. As such it doesn't impose disadvantage on your Dexterity (Stealth) checks, and it has a base AC of 15 + Dex modifier (max 2).",			
+					{
+						"type": "list",
+						"items": [
+							"While wearing this armor, you can speak {@language Draconic}",
+							"You gain a bonus to AC based on the age of the dragon",
+							"You have advantage on saving throws against the Frightful Presence and breath weapons of dragons",
+							"You have resistance to one damage type that is determined by the kind of dragon that provided the scales, as shown in the Dragon Species and Damage Types table (page 117).",
+							"You are immune to harmful regional effects and lair actions caused by the dragon that gifted you these scales. If you are subjected to that dragon's breath weapon, you automatically succeed on the saving throw and take no damage."
+						]
+					},
+					"If the dragon that gifted these scales dies, this armor loses most of its magic, the supple scales harden, and it becomes magic scale mail that only retains its bonus to AC."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/l4zyoqS.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Wyrmling Stormscale Armor",
+			"source": "LEGDRAG",
+			"page": 78,
+			"baseItem": "Stormscale Armor|LEGDRAG",
+			"type": "MA",
+			"tier": "major",
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"weight": 13,
+			"value": 75000,
+			"ac": 13,
+			"bonusAc": "+0",
+			"stealth": false,
+			"armor": true,
+			"entries": [
+				"Stormscale are skilled at interweaving freely gifted dragon scales into light armor. As such it doesn't impose disadvantage on your Dexterity (Stealth) checks, and it has a base AC of 13 + Dex modifier (max 2).",
+				{
+					"type": "list",
+					"items": [
+						"While wearing this armor, you can speak {@language Draconic}",
+						"You gain a bonus to AC based on the age of the dragon",
+						"You have advantage on saving throws against the Frightful Presence and breath weapons of dragons",
+						"You have resistance to one damage type that is determined by the kind of dragon that provided the scales, as shown in the Dragon Species and Damage Types table (page 117).",
+						"You are immune to harmful regional effects and lair actions caused by the dragon that gifted you these scales. If you are subjected to that dragon's breath weapon, you automatically succeed on the saving throw and take no damage."
+					]
+				},
+				"If the dragon that gifted these scales dies, this armor loses most of its magic, the supple scales harden, and it becomes magic scale mail that only retains its bonus to AC."
+			],
+			"fluff": {
+				"entries": [
+					"Dragon scale mail made of freely gifted scales is especially supple and sturdy. As such it doesn't impose disadvantage on your Dexterity (Stealth) checks, and it has a base AC of 15 + Dex modifier (max 2).",
+					{
+						"type": "list",
+						"items": [
+							"While wearing this armor, you can speak {@language Draconic}",
+							"You gain a bonus to AC based on the age of the dragon",
+							"You have advantage on saving throws against the Frightful Presence and breath weapons of dragons",
+							"You have resistance to one damage type that is determined by the kind of dragon that provided the scales, as shown in the Dragon Species and Damage Types table (page 117).",
+							"You are immune to harmful regional effects and lair actions caused by the dragon that gifted you these scales. If you are subjected to that dragon's breath weapon, you automatically succeed on the saving throw and take no damage."
+						]
+					},
+					"If the dragon that gifted these scales dies, this armor loses most of its magic, the supple scales harden, and it becomes magic scale mail that only retains its bonus to AC."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/l4zyoqS.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Young Stormscale Armor",
+			"source": "LEGDRAG",
+			"page": 78,
+			"baseItem": "Stormscale Armor|LEGDRAG",
+			"type": "MA",
+			"tier": "major",
+			"rarity": "rare",
+			"reqAttune": true,
+			"weight": 13,
+			"value": 140000,
+			"ac": 13,
+			"bonusAc": "+1",
+			"stealth": false,
+			"armor": true,
+			"entries": [
+				"Stormscale are skilled at interweaving freely gifted dragon scales into light armor. As such it doesn't impose disadvantage on your Dexterity (Stealth) checks, and it has a base AC of 13 + Dex modifier (max 2).",
+				{
+					"type": "list",
+					"items": [
+						"While wearing this armor, you can speak {@language Draconic}",
+						"You gain a bonus to AC based on the age of the dragon",
+						"You have advantage on saving throws against the Frightful Presence and breath weapons of dragons",
+						"You have resistance to one damage type that is determined by the kind of dragon that provided the scales, as shown in the Dragon Species and Damage Types table (page 117).",
+						"You are immune to harmful regional effects and lair actions caused by the dragon that gifted you these scales. If you are subjected to that dragon's breath weapon, you automatically succeed on the saving throw and take no damage."
+					]
+				},
+				"If the dragon that gifted these scales dies, this armor loses most of its magic, the supple scales harden, and it becomes magic scale mail that only retains its bonus to AC."
+			],
+			"fluff": {
+				"entries": [
+					"Dragon scale mail made of freely gifted scales is especially supple and sturdy. As such it doesn't impose disadvantage on your Dexterity (Stealth) checks, and it has a base AC of 15 + Dex modifier (max 2).",
+					{
+						"type": "list",
+						"items": [
+							"While wearing this armor, you can speak {@language Draconic}",
+							"You gain a bonus to AC based on the age of the dragon",
+							"You have advantage on saving throws against the Frightful Presence and breath weapons of dragons",
+							"You have resistance to one damage type that is determined by the kind of dragon that provided the scales, as shown in the Dragon Species and Damage Types table (page 117).",
+							"You are immune to harmful regional effects and lair actions caused by the dragon that gifted you these scales. If you are subjected to that dragon's breath weapon, you automatically succeed on the saving throw and take no damage."
+						]
+					},
+					"If the dragon that gifted these scales dies, this armor loses most of its magic, the supple scales harden, and it becomes magic scale mail that only retains its bonus to AC."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/l4zyoqS.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Adult Stormscale Armor",
+			"source": "LEGDRAG",
+			"page": 78,
+			"baseItem": "Stormscale Armor|LEGDRAG",
+			"type": "MA",
+			"tier": "major",
+			"rarity": "very rare",
+			"reqAttune": true,
+			"weight": 13,
+			"value": 280000,
+			"ac": 13,
+			"bonusAc": "+2",
+			"stealth": false,
+			"armor": true,
+			"entries": [
+				"Stormscale are skilled at interweaving freely gifted dragon scales into light armor. As such it doesn't impose disadvantage on your Dexterity (Stealth) checks, and it has a base AC of 13 + Dex modifier (max 2).",
+				{
+					"type": "list",
+					"items": [
+						"While wearing this armor, you can speak {@language Draconic}",
+						"You gain a bonus to AC based on the age of the dragon",
+						"You have advantage on saving throws against the Frightful Presence and breath weapons of dragons",
+						"You have resistance to one damage type that is determined by the kind of dragon that provided the scales, as shown in the Dragon Species and Damage Types table (page 117).",
+						"You are immune to harmful regional effects and lair actions caused by the dragon that gifted you these scales. If you are subjected to that dragon's breath weapon, you automatically succeed on the saving throw and take no damage."
+					]
+				},
+				"If the dragon that gifted these scales dies, this armor loses most of its magic, the supple scales harden, and it becomes magic scale mail that only retains its bonus to AC."
+			],
+			"fluff": {
+				"entries": [
+					"Stormscale are skilled at interweaving freely gifted dragon scales into light armor. As such it doesn't impose disadvantage on your Dexterity (Stealth) checks, and it has a base AC of 13 + Dex modifier (max 2).",
+					{
+						"type": "list",
+						"items": [
+							"While wearing this armor, you can speak {@language Draconic}",
+							"You gain a bonus to AC based on the age of the dragon",
+							"You have advantage on saving throws against the Frightful Presence and breath weapons of dragons",
+							"You have resistance to one damage type that is determined by the kind of dragon that provided the scales, as shown in the Dragon Species and Damage Types table (page 117).",
+							"You are immune to harmful regional effects and lair actions caused by the dragon that gifted you these scales. If you are subjected to that dragon's breath weapon, you automatically succeed on the saving throw and take no damage."
+						]
+					},
+					"If the dragon that gifted these scales dies, this armor loses most of its magic, the supple scales harden, and it becomes magic scale mail that only retains its bonus to AC."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/l4zyoqS.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Ancient Stormscale Armor",
+			"source": "LEGDRAG",
+			"page": 78,
+			"baseItem": "Stormscale Armor|LEGDRAG",
+			"type": "MA",
+			"tier": "major",
+			"rarity": "legendary",
+			"reqAttune": true,
+			"weight": 13,
+			"value": 560000,
+			"ac": 13,
+			"bonusAc": "+3",
+			"stealth": false,
+			"armor": true,
+			"entries": [
+				"Stormscale are skilled at interweaving freely gifted dragon scales into light armor. As such it doesn't impose disadvantage on your Dexterity (Stealth) checks, and it has a base AC of 13 + Dex modifier (max 2).",			
 				{
 					"type": "list",
 					"items": [
@@ -13553,6 +13845,7 @@
 			"ac": 15,
 			"bonusAc": "+3",
 			"stealth": false,
+			"armor": true,
 			"curse": true,
 			"resist": [
 				"acid", 
@@ -13656,6 +13949,7 @@
 			"ac": 15,
 			"bonusAc": "+3",
 			"stealth": false,
+			"armor": true,
 			"curse": true,
 			"resist": [
 				"acid", 

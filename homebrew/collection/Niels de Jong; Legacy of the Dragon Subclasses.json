@@ -19,7 +19,8 @@
 		],
 		"optionalFeatureTypes": {
 			"OPTFEAT:LEGDRAG:SS": "Supply SpeCialist",
-			"OPTFEAT:LEGDRAG:GS": "Grim Slayer"
+			"OPTFEAT:LEGDRAG:GS": "Grim Slayer",
+			"OPTFEAT:LEGDRAG:DB": "Draconic Bloodline"
 		},
 		"dateAdded": 1604252046,
 		"dateLastModified": 1703373316,
@@ -7991,15 +7992,15 @@
 		{
 			"name": "Draconic Bloodline (Fang)",
 			"source": "LEGDRAG",
-			"shortName": "Draconic Bloodline (Fang)",
+			"shortName": "Draconic (Fang)",
 			"page": 1,
 			"className": "Sorcerer",
 			"classSource": "PHB",
 			"subclassFeatures": [
-				"Draconic Bloodline (Fang)|Sorcerer|PHB|Draconic Bloodline (Fang)|LEGDRAG|1",
-				"Draconic Affinity|Sorcerer|PHB|Draconic Bloodline (Fang)|LEGDRAG|6",
-				"Sorcerous Frenzy|Sorcerer|PHB|Draconic Bloodline (Fang)|LEGDRAG|14",
-				"Draconic Presence|Sorcerer|PHB|Draconic Bloodline (Fang)|LEGDRAG|18"
+				"Draconic Bloodline (Fang)|Sorcerer|PHB|Draconic (Fang)|LEGDRAG|1",
+				"Draconic Affinity|Sorcerer|PHB|Draconic (Fang)|LEGDRAG|6",
+				"Sorcerous Frenzy|Sorcerer|PHB|Draconic (Fang)|LEGDRAG|14",
+				"Draconic Presence|Sorcerer|PHB|Draconic (Fang)|LEGDRAG|18"
 			]
 		},
 		{
@@ -8437,6 +8438,19 @@
 						]
 					}
 				}
+			]
+		},
+		{
+			"name": "Roguish Archetype Stormscale",
+			"source": "LEGDRAG",
+			"shortName": "Stormscale",
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassFeatures": [
+				"Stormscale|Rogue|PHB|Stormscale|LEGDRAG|3",
+				"Stormscale Agent|Rogue|PHB|Stormscale|LEGDRAG|9",
+				"Cloudburst|Rogue|PHB|Stormscale|LEGDRAG|13",
+				"Stormbringer|Rogue|PHB|Stormscale|LEGDRAG|17"
 			]
 		}
 	],
@@ -9156,18 +9170,18 @@
 			"className": "Sorcerer",
 			"classSource": "PHB",
 			"subclassSource": "LEGDRAG",
-			"subclassShortName": "Draconic Bloodline (Fang)",
+			"subclassShortName": "Draconic (Fang)",
 			"page": 1,
 			"level": 1,
 			"entries": [
 				"At 1st level, a sorcerer gains the Sorcerous Origin feature.The following option is available to a sorcerer, in addition to those offered in the Player's Handbook, and Xanthar's Guide to Everything.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Draconic Bloodline|Sorcerer|PHB|Draconic Bloodline (Fang)|LEGDRAG|1|LEGDRAG"
+					"subclassFeature": "Draconic Bloodline|Sorcerer|PHB|Draconic (Fang)|LEGDRAG|1|LEGDRAG"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Draconic Resilience|Sorcerer|PHB|Draconic Bloodline (Fang)|LEGDRAG|1|LEGDRAG"
+					"subclassFeature": "Draconic Resilience|Sorcerer|PHB|Draconic (Fang)|LEGDRAG|1|LEGDRAG"
 				}
 			]
 		},
@@ -9177,7 +9191,7 @@
 			"className": "Sorcerer",
 			"classSource": "PHB",
 			"subclassSource": "LEGDRAG",
-			"subclassShortName": "Draconic Bloodline (Fang)",
+			"subclassShortName": "Draconic (Fang)",
 			"page": 1,
 			"level": 1,
 			"header": 1,
@@ -9191,7 +9205,7 @@
 			"className": "Sorcerer",
 			"classSource": "PHB",
 			"subclassSource": "LEGDRAG",
-			"subclassShortName": "Draconic Bloodline (Fang)",
+			"subclassShortName": "Draconic (Fang)",
 			"page": 1,
 			"level": 1,
 			"header": 1,
@@ -9205,7 +9219,7 @@
 			"className": "Sorcerer",
 			"classSource": "PHB",
 			"subclassSource": "LEGDRAG",
-			"subclassShortName": "Draconic Bloodline (Fang)",
+			"subclassShortName": "Draconic (Fang)",
 			"page": 1,
 			"level": 6,
 			"header": 2,
@@ -9219,7 +9233,7 @@
 			"className": "Sorcerer",
 			"classSource": "PHB",
 			"subclassSource": "LEGDRAG",
-			"subclassShortName": "Draconic Bloodline (Fang)",
+			"subclassShortName": "Draconic (Fang)",
 			"page": 1,
 			"level": 14,
 			"header": 2,
@@ -9244,7 +9258,7 @@
 			"className": "Sorcerer",
 			"classSource": "PHB",
 			"subclassSource": "LEGDRAG",
-			"subclassShortName": "Draconic Bloodline (Fang)",
+			"subclassShortName": "Draconic (Fang)",
 			"page": 1,
 			"level": 18,
 			"header": 2,
@@ -12142,6 +12156,100 @@
 				"At 15th level, you become the ultimate slayer. When one of your attacks reduces a creature's hit points to a number less than your ranger level, you instantly reduce it to 0 hit points.",
 				"{@b NOTE:} {@i This feature relies on knowledge regarding a monster's remaining hit points. Your DM may want to avoid sharing this information at the table, so if you are worried about this feature getting overlooked in combat, we suggest checking in with them at the start of the session to make sure that they are aware of it.}"
 			]
+		},
+		{
+			"name": "Stormscale",
+			"source": "LEGDRAG",
+			"page": 78,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Stormscale",
+			"subclassSource": "LEGDRAG",
+			"level": 3,
+			"entries": [
+				"Stormscale are elite warrior rogues that serve blue dragons. They bend lightning by using dragon magic, and use it to relentlessly pursue opponents. Hard to pin down, they are formidable foes who can turn the tide of battle.",
+				"Stormscale are famous for being able to fulfill multiple roles. They are feared as assassins who lock down spellcasters, or warriors who dash towards their opponents and take them by surprise. Stormscale are students of blue dragon masters, known as a maekrix, who teaches them a secretive form of magic at their conclaves, also known as a Stormshells. Blue dragons are renowned for not only creating half dragon offspring as loyal soldiers, but more so for treating their offspring with equal affection, both full and half dragons. They are aware of the limitations of their mortal offspring, as only a few can \"ascend to dragonhood\", and as such train them to fulfill different roles for their masters. Stormscale are usually half blue dragons, but many other races have been known to be \"adopted\" by blue dragons, after they sensed their distant blue dragon lineage.",
+				"Stormscale are taught how to draw raw magic from their blue dragon heritage, granting them supernatural abilities that allow them to dispatch targets with lightning speed.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Storm Conduit|Rogue|PHB|Stormscale|LEGDRAG|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "UnleasHhed Tempest|Rogue|PHB|Stormscale|LEGDRAG|3"
+				}
+			]
+		},
+		{
+			"name": "Storm Conduit",
+			"source": "LEGDRAG",
+			"page": 78,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Stormscale",
+			"subclassSource": "LEGDRAG",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Starting at 3rd level, when you use your Sneak Attack feature, you can choose to turn the Sneak Attack damage into lightning damage. If you do so, you can also cause a Lightning Arc. Choose another creature within 30 feet of the creature you attacked and force it to make a Dexterity saving throw (DC 8 + your Constitution modifier + your proficiency bonus). On a failure, it takes lightning damage equal to your rogue level. Starting at 9th level, creatures that take lightning damage from you can't take reactions until the end of your next turn."
+			]
+		},
+		{
+			"name": "UnleasHhed Tempest",
+			"source": "LEGDRAG",
+			"page": 78,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Stormscale",
+			"subclassSource": "LEGDRAG",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"At 3rd level, you become quick as lightning. Your speed increases by 5 feet when you aren't wearing heavy armor. This bonus to your speed increases to 10 feet at 9th level, 15 feet at 13th level, and 20 feet at 17th level.",
+				"You also gain an additional way to use your Sneak Attack; you don't need advantage on the attack roll to use your Sneak Attack against a creature if you are within 5 feet of it, you have moved at least 15 feet away from where you began the turn (through teleportation or standard movement), and you don't have disadvantage on the attack roll. All other rules for Sneak Attack still apply to you."
+			]
+		},
+		{
+			"name": "Stormscale Agent",
+			"source": "LEGDRAG",
+			"page": 78,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Stormscale",
+			"subclassSource": "LEGDRAG",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"At 9th level, as a bonus action, you can flare your draconic blood to sense any magic around you. For the next minute you can detect the presence and location of any magic present within 30 feet of you. If the magic was caused by a spell, you learn its school. You also learn if any such magic was active or cast within the past 10 minutes in the area. If you sense magic this way, you can use your action to see a faint aura around any creature or object in the area (visible or not) that bears magic. This aura lasts for 1 minute, even outside the area. You can use this feature a number of times equal to your Constitution modifier (minimum of 1), and you regain all expended uses when you finish a long rest."
+			]
+		},
+		{
+			"name": "Cloudburst",
+			"source": "LEGDRAG",
+			"page": 78,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Stormscale",
+			"subclassSource": "LEGDRAG",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"Beginning at 13th level, you can use your bonus action to briefly become lightning. You end all effects on yourself that reduce your speed (such as the grappled and restrained conditions), and then teleport to an unoccupied space you can see within 30 feet of you. You can use this feature a number of times equal to your Constitution modifier (minimum of 1), and you regain all expended uses when you finish a long rest."
+			]
+		},
+		{
+			"name": "Stormbringer",
+			"source": "LEGDRAG",
+			"page": 78,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Stormscale",
+			"subclassSource": "LEGDRAG",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"Starting at 17th level, when a creature fails its Dexterity saving throw against a Lightning Arc, it becomes the source of a second arc that deals half as much damage as the first (rounded down). You can only generate one additional arc per attack this way. In addition, if a creature generates a Lightning Arc, and there are no other creatures within 30 feet of it that are hostile to you, you can cause the charge to rebound on that creature, dealing half as much lightning damage as the arc would have (rounded down)."
+			]
 		}
 	],
 	"optionalfeature": [
@@ -12493,6 +12601,191 @@
 			"entries": [
 				"{@i (duration, 1 hour)}",
 				"When consumed, the adventurer does not fall unconscious when reduced to 0 hit points for the duration. It still makes death saving throws as normal, and still fails one when it takes damage. If administered to an adventurer that died within the last minute, they return to life with 1 hit point."
+			]
+		},
+		{
+			"name": "Draconic Fury",
+			"source": "LEGDRAG",
+			"page": 79,
+			"featureType": [
+				"OPTFEAT:LEGDRAG:DB"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Sorcerer"
+						},
+						"subclass": {
+							"name": "Draconic Bloodline"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Draconic Bloodline|Sorcerer|PHB|Draconic|PHB|1|} feature",
+						"entrySummary": "Draconic Bloodline"
+					}
+				}
+			],
+			"entries": [
+				"When you cast the primal savagery cantrip, you can spend 2 sorcery points to imbue yourself with the fury of your dragon lineage for 1 minute. For the duration, whenever you cast your primal savagery cantrip, you can make an additional attack with it as a bonus action."
+			]
+		},
+		{
+			"name": "Elemental Ancestry",
+			"source": "LEGDRAG",
+			"page": 79,
+			"featureType": [
+				"OPTFEAT:LEGDRAG:DB"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Sorcerer"
+						},
+						"subclass": {
+							"name": "Draconic Bloodline"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Draconic Bloodline|Sorcerer|PHB|Draconic|PHB|1|} feature",
+						"entrySummary": "Draconic Bloodline"
+					}
+				}
+			],
+			"entries": [
+				"Whenever you deal damage of the type associated with your dragon ancestor, and this damage would be affected by resistance, you can spend 1 sorcery point to draw upon the energy of your ancestors and overwhelm any natural or magical resistances. All damage you deal until the end of your next turn ignores resistance against the damage type associated with your dragon ancestor."
+			]
+		},
+		{
+			"name": "Frightful Spell",
+			"source": "LEGDRAG",
+			"page": 79,
+			"featureType": [
+				"OPTFEAT:LEGDRAG:DB"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Sorcerer"
+						},
+						"subclass": {
+							"name": "Draconic Bloodline"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Draconic Bloodline|Sorcerer|PHB|Draconic|PHB|1|} feature",
+						"entrySummary": "Draconic Bloodline"
+					}
+				}
+			],
+			"entries": [
+				"When you cast a spell that forces one or more creatures to make a saving throw and at least one fails its saving throw, you can spend 2 sorcery points and choose one of the affected creatures that failed its saving throw. The target becomes frightened of you until the end of your next turn."
+			]
+		},
+		{
+			"name": "Enlightened Spell",
+			"source": "LEGDRAG",
+			"page": 79,
+			"featureType": [
+				"OPTFEAT:LEGDRAG:DB"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Sorcerer"
+						}
+					}
+				}
+			],
+			"entries": [
+				"When you cast a 1st level or higher spell, you can spend 1 sorcery point to cast it at a spell level that is one level higher. You can only empower spells of 8th level or lower with this feature. Empowered spells can't exceed 9th level."
+			]
+		},
+		{
+			"name": "Pseudodragon",
+			"source": "LEGDRAG",
+			"page": 79,
+			"featureType": [
+				"OPTFEAT:LEGDRAG:DB"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Sorcerer"
+						},
+						"subclass": {
+							"name": "Draconic Bloodline"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Draconic Bloodline|Sorcerer|PHB|Draconic|PHB|1|} feature",
+						"entrySummary": "Draconic Bloodline"
+					}
+				}
+			],
+			"entries": [
+				"Unlike wizards, sorcerers usually don't have familiars to act as their companions. A way around that is to gain the trust and friendship of a {@creature pseudodragon|LEGDRAG}. This option is not a standard part of this revision and your DM must approve of it.",
+				"At your Dungeon Master's discretion you may be approached by a pseudodragon during your adventures. Due to its advantages, it is recommended that this happens around 5th level. After you have gained the pseudodragon's trust, usually gained over an extended period of time, you may bond with it. Your pseudodragon will gain the game statistics listed in this work instead of those in the {@i Monster Manual}, provided you are a sorcerer or wizard.",
+				"As an action, you can summon your Pseudodragon to appear within 5 feet of you, if it is willing. Should your pseudodragon die, then you can revive it with full health by expending a 1st level (or higher) spell slot. After you revive your pseudodragon, it will not approach you for (usually) 8 hours as it is upset that you allowed it to die. It will however not break the familiar bond it has with you, but be sure to pamper it afterwards, like you would a cat.",
+				"However, even though your pseudodragon loves being pampered, you must avoid calling it your \"pet\" at any cost, for there is a chance that it will leave you if you do. After all, your pseudodragon companion is your friend, not some kind of dog. Despite this, it loves being called cute names, and it adores being cuddled like a pet would.",
+				"Pseudodragons actually revel in the cuteness of their spoken name, and names like Snookie or Cuddles or Boo Boo are quite popular.",
+				"Pseudodragons are also famous for their venom, which is used as a magical ingredient, and fetches a high price on the market. Your pseudodragon will however not allow you to \"milk\" it, and if you slay it you can never bond with another pseudodragon again.",
+				{
+					"name": "note",
+					"type": "inset",
+					"entries": [
+						"Although it is thematic, dragonborn and half dragon Draconic Bloodline players do not have to pick the same Dragon Ancestor as their racial Draconic Ancestry. This revision adds an additional benefit for players that do go that route, as they already have the dragon's resistance. But it is perfectly reasonable for a half dragon or dragonborn sorcerer to draw their power from one of their other dragon ancestors, granting them a mix of draconic traits from both bloodlines. An example of this is the half black dragon sorceress below, whose magical might comes from her gold dragon ancestor, granting her a unique appearance."
+					]
+				}
+			]
+		},
+		{
+			"name": "Pseudodragon - Faerie Dragon Variant",
+			"source": "LEGDRAG",
+			"page": 79,
+			"featureType": [
+				"OPTFEAT:LEGDRAG:DB"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Sorcerer"
+						},
+						"subclass": {
+							"name": "Draconic Bloodline"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Draconic Bloodline|Sorcerer|PHB|Draconic|PHB|1|} feature",
+						"entrySummary": "Draconic Bloodline"
+					}
+				}
+			],
+			"entries": [
+				"Optionally, a DM can allow sorcerer and wizard players to bond with a {@creature Pseudodragon - Faerie Dragon Variant|LEGDRAG|faerie dragon} instead of a {@creature pseudodragon|LEGDRAG}. The faerie dragon is a close relative of the pseudodragon, however they are especially mischievous, and often refered to as the pranksters of the wild. Like true dragons, faerie dragons grow stronger with age, but they mature much more quickly and live shorter lives. Because their predominant scale hue runs the colors of the rainbow over their lifetime, their color is a direct indicator of their age and power. However, faerie dragons who bond with wizards or sorcerers age more rapidly, while extending their overall lifespan. Your faerie dragon follows the same rules as a pseudodragon, but with different stats block.",
+				"At your Dungeon Master's discretion you may be approached by a pseudodragon during your adventures. Due to its advantages, it is recommended that this happens around 5th level. After you have gained the pseudodragon's trust, usually gained over an extended period of time, you may bond with it. Your pseudodragon will gain the game statistics listed in this work instead of those in the {@i Monster Manual}, provided you are a sorcerer or wizard.",
+				"As an action, you can summon your Pseudodragon to appear within 5 feet of you, if it is willing. Should your pseudodragon die, then you can revive it with full health by expending a 1st level (or higher) spell slot. After you revive your pseudodragon, it will not approach you for (usually) 8 hours as it is upset that you allowed it to die. It will however not break the familiar bond it has with you, but be sure to pamper it afterwards, like you would a cat.",
+				"However, even though your pseudodragon loves being pampered, you must avoid calling it your \"pet\" at any cost, for there is a chance that it will leave you if you do. After all, your pseudodragon companion is your friend, not some kind of dog. Despite this, it loves being called cute names, and it adores being cuddled like a pet would.",
+				"Pseudodragons actually revel in the cuteness of their spoken name, and names like Snookie or Cuddles or Boo Boo are quite popular.",
+				"Pseudodragons are also famous for their venom, which is used as a magical ingredient, and fetches a high price on the market. Your pseudodragon will however not allow you to \"milk\" it, and if you slay it you can never bond with another pseudodragon again.",
+				{
+					"name": "note",
+					"type": "inset",
+					"entries": [
+						"Although it is thematic, dragonborn and half dragon Draconic Bloodline players do not have to pick the same Dragon Ancestor as their racial Draconic Ancestry. This revision adds an additional benefit for players that do go that route, as they already have the dragon's resistance. But it is perfectly reasonable for a half dragon or dragonborn sorcerer to draw their power from one of their other dragon ancestors, granting them a mix of draconic traits from both bloodlines. An example of this is the half black dragon sorceress below, whose magical might comes from her gold dragon ancestor, granting her a unique appearance."
+					]
+				}
 			]
 		}
 	]
