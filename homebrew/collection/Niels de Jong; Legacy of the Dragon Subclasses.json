@@ -21,7 +21,7 @@
 			"OPTFEAT:LEGDRAG:SS": "Supply SpeCialist",
 			"OPTFEAT:LEGDRAG:GS": "Grim Slayer",
 			"OPTFEAT:LEGDRAG:DB": "Draconic Bloodline",
-			"OPTFEAT:LEGDRAG:DD": "Dragon Student/Companion"
+			"OPTFEAT:LEGDRAG:DS": "Dragon Student"
 		},
 		"dateAdded": 1604252046,
 		"dateLastModified": 1703373316,
@@ -8445,6 +8445,7 @@
 			"name": "Roguish Archetype Stormscale",
 			"source": "LEGDRAG",
 			"shortName": "Stormscale",
+			"page": 78,
 			"className": "Rogue",
 			"classSource": "PHB",
 			"subclassFeatures": [
@@ -8453,6 +8454,60 @@
 				"Cloudburst|Rogue|PHB|Stormscale|LEGDRAG|13",
 				"Stormbringer|Rogue|PHB|Stormscale|LEGDRAG|17"
 			]
+		},
+		{
+			"name": "Pact of the Dragon Student",
+			"source": "LEGDRAG",
+			"shortName": "Dragon Student",
+			"page": 84,
+			"className": "Warlock",
+			"subclassSpells": [
+				"absorb elements|xge", 
+				"shield|phb",
+				"dragon's breath|xge", 
+				"flaming sphere|phb",
+				"fireball|phb", 
+				"lightning bolt|phb",
+				"freedom of movement|phb", 
+				"wall of fire|phb",
+				"bigby's hand|phb", 
+				"cone of cold|phb"
+			],
+			"additionalSpells": [
+				{
+					"expanded": {
+						"1": [
+							"absorb elements|xge", 
+							"shield|phb"
+						],
+						"3": [
+							"dragon's breath|xge", 
+							"flaming sphere|phb"
+						],
+						"5": [
+							"fireball|phb", 
+							"lightning bolt|phb"
+						],
+						"7": [
+							"freedom of movement|phb", 
+							"wall of fire|phb"
+						],
+						"9": [
+							"bigby's hand|phb", 
+							"cone of cold|phb"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"The Dragon Student|Warlock|PHB|Dragon Student|LEGDRAG|1",
+				"Gifted Instructor|Warlock|PHB|Dragon Student|LEGDRAG|6",
+				"Dragon Magic Mastery|Warlock|PHB|Dragon Student|LEGDRAG|10",
+				"Aerial Superiority|Warlock|PHB|Dragon Student|LEGDRAG|14",
+				"Mystic Arcanum: True PolyMorph|Warlock|PHB|Dragon Student|LEGDRAG|17"
+			],
+			"casterProgression": "pact",
+			"spellcastingAbility": "cha"
 		}
 	],
 	"subclassFeature": [
@@ -12251,6 +12306,417 @@
 			"entries": [
 				"Starting at 17th level, when a creature fails its Dexterity saving throw against a Lightning Arc, it becomes the source of a second arc that deals half as much damage as the first (rounded down). You can only generate one additional arc per attack this way. In addition, if a creature generates a Lightning Arc, and there are no other creatures within 30 feet of it that are hostile to you, you can cause the charge to rebound on that creature, dealing half as much lightning damage as the arc would have (rounded down)."
 			]
+		},
+		{
+			"name": "The Dragon Student",
+			"source": "LEGDRAG",
+			"page": 84,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "LEGDRAG",
+			"subclassShortName": "Dragon Student",
+			"level": 1,
+			"entries": [
+				"The Dragon Student is an unusual patron, as you are the one teaching it. Your power comes from your dragon student, but it is you who helps it harness this awesome power. Technically this power comes from Io, the dragon primordial of creation, who gifted this power as an otherworldly patron. But it's your dragon student who grants it to you directly. This is why you are more warlock than wizard. You are a Dragon Master, a student of the Darastrix Academy.",
+				"At a young age you were bonded with a dragon wyrmling, entrusted to you by its dragon parents. Even though you are a student, you are a master in your own right to your dragon wyrmling, as you teach it to harness its power. Due to the bonding, your wyrmling shares your drive to learn its dragon magic quickly, at the cost of other aspects of its draconic might being weakened. Although you are technically a wizard, the bond that you have made with your dragon has granted you access to its dragon magic, but in exchange your own studies towards the arcane have been limited.",
+				"However, the ability to delve into the secrets of dragon magic more than makes up for that. Now you and your dragon partner go out on adventures, as you seek to put the power of dragon magic into practice. Most Dragon Masters are human, but half dragons have been known to teach siblings. Brown, celestial, deep, fang, gem, gray, moonstone, song, and steel dragons don't send their young to become dragon students, due to their secretive nature. Your magical bond with your dragon companion grants you access to its powerful dragon magic in addition to your own mortal magic.",
+				"For example, a {@spell bigby's hand|PHB} would look like a fist when cast by a humanoid, and as a flaming claw when cast by its red dragon student. And even though you still need to study, most of your magical power comes from this bond. As such, Dragon Masters have a saying when it comes to their dragons: You teach me and I teach you.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Expanded Spell List|Warlock|PHB|Dragon Student|LEGDRAG|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonded Dragon|Warlock|PHB|Dragon Student|LEGDRAG|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Dragon Magic|Warlock|PHB|Dragon Student|LEGDRAG|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "New Eldritch Invocations|Warlock|PHB|Dragon Student|LEGDRAG|1"
+				}
+			]
+		},
+		{
+			"name": "Expanded Spell List",
+			"source": "LEGDRAG",
+			"page": 84,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "LEGDRAG",
+			"subclassShortName": "Dragon Student",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"You can choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
+				{
+					"type": "table",
+					"caption": "Dragon Student Expanded Spells",
+					"colLabels": [
+						"Warlock Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell absorb elements|XGE}, {@spell shield|PHB}"
+						],
+						[
+							"3rd",
+							"{@spell dragon's breath|XGE}, {@spell flaming sphere|PHB}"
+						],
+						[
+							"5th",
+							"{@spell fireball|PHB}, {@spell lightning bolt|PHB}"
+						],
+						[
+							"7th",
+							"{@spell freedom of movement|PHB}, {@spell wall of fire|PHB}"
+						],
+						[
+							"9th",
+							"{@spell bigby's hand|PHB}, {@spell cone of cold|PHB}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Bonded Dragon",
+			"source": "LEGDRAG",
+			"page": 84,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "LEGDRAG",
+			"subclassShortName": "Dragon Student",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"At 1st level you become bonded with a dragon wyrmling, whom you help get in touch with its powerful dragon magic. The Dragon is friendly to you and your companions and obeys your commands. See its game statistics in the Dragon Student stat block, which uses your proficiency bonus (PB) in several places. You must choose your dragon student's dragon type from the Dragon Student table.",
+				{
+					"type": "table",
+					"caption": "Dragon Student",
+					"colLabels": [
+						"Dragon",
+						"Damage Type",
+						"Breath Weapon",
+						"Ability Score",
+						"Dragon Student/Companion"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-2 text-center",
+						"col-4",
+						"col-3",
+						"col-2"
+					],
+					"rows": [
+						[
+							"Amethyst",
+							"Force",
+							"15 ft. cone (Str. save)",
+							"Wisdom",
+							"-"
+						],
+						[
+							"Black",
+							"Acid",
+							"5 by 30 ft. line (Dex. save)",
+							"Constitution",
+							"{@creature Student/Companion Dragon Black|LEGDRAG}"
+						],
+						[
+							"Blue",
+							"Lightning",
+							"5 by 30 ft. line (Dex. save)",
+							"Constitution",
+							"{@creature Student/Companion Dragon Blue|LEGDRAG}"
+						],
+						[
+							"Brass",
+							"Fire",
+							"5 by 30 ft. line (Dex. save)",
+							"Charisma",
+							"{@creature Student/Companion Dragon Brass|LEGDRAG}"
+						],
+						[
+							"Bronze",
+							"Lightning",
+							"5 by 30 ft. line (Dex. save)",
+							"Wisdom",
+							"{@creature Student/Companion Dragon Bronze|LEGDRAG}"
+						],
+						[
+							"Brown",
+							"Acid",
+							"5 by 30 ft. line (Dex. save)",
+							"Constitution",
+							"-"
+						],
+						[
+							"Celestial",
+							"Radiant",
+							"15 ft. cone (Con. save)",
+							"Charisma",
+							"-"
+						],
+						[
+							"Copper",
+							"Acid",
+							"5 by 30 ft. line (Dex. save)",
+							"Charisma",
+							"{@creature Student/Companion Dragon Copper|LEGDRAG}"
+						],
+						[
+							"Crystal",
+							"Radiant",
+							"15 ft. cone (Con. save)",
+							"Charisma",
+							"-"
+						],
+						[
+							"Deep",
+							"Psychic",
+							"15 ft. cone (Wis. save)",
+							"Intelligence",
+							"-"
+						],
+						[
+							"Emerald",
+							"Psychic",
+							"15 ft. cone (Int. save)",
+							"Intelligence",
+							"-"
+						],
+						[
+							"Fang ({@b Officially do not have a Breath Weapon})",
+							"Acid",
+							"5 by 30 ft. line (Dex. save)",
+							"Constitution",
+							"-"
+						],
+						[
+							"Gray",
+							"Acid",
+							"5 by 30 ft. line (Dex. save)",
+							"Constitution",
+							"-"
+						],
+						[
+							"Gold",
+							"Fire",
+							"15 ft. cone (Dex. save)",
+							"Wisdom",
+							"{@creature Student/Companion Dragon Gold|LEGDRAG}"
+						],
+						[
+							"Green",
+							"Poison",
+							"15 ft. cone (Con. save)",
+							"Intelligence",
+							"{@creature Student/Companion Dragon Green|LEGDRAG}"
+						],
+						[
+							"Moonstone",
+							"Radiant",
+							"5 by 30 ft. line (Dex. save)",
+							"Wisdom",
+							"-"
+						],
+						[
+							"Red",
+							"Fire",
+							"15 ft. cone (Dex. save)",
+							"Constitution",
+							"{@creature Student/Companion Dragon Red|LEGDRAG}"
+						],
+						[
+							"Sapphire",
+							"Thunder",
+							"15 ft. cone (Con. save)",
+							"Intelligence",
+							"-"
+						],
+						[
+							"Silver",
+							"Cold",
+							"15 ft. cone (Con. save)",
+							"Intelligence",
+							"{@creature Student/Companion Dragon Silver|LEGDRAG}"
+						],
+						[
+							"Song",
+							"Lighting",
+							"15 ft. cone (Con. save)",
+							"Charisma",
+							"-"
+						],
+						[
+							"Steel",
+							"Acid",
+							"5 by 30 ft. line (Dex. save)",
+							"Intelligence",
+							"-"
+						],
+						[
+							"Topaz",
+							"Necrotic",
+							"15 ft. cone (Con. save)",
+							"Charisma",
+							"-"
+						],
+						[
+							"White",
+							"Cold",
+							"15 ft. cone (Con. save)",
+							"Constitution",
+							"{@creature Student/Companion Dragon White|LEGDRAG}"
+						]
+					]
+				},
+				"In combat, your dragon shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes is the Dodge action, unless you take an action on your turn to command it to take another action. That action can be one in its stat block or some other action. It can use its action to cast or use a spell. If a spell requires a reaction or a bonus action, you must use yours to allow your dragon to cast the spell. If you are incapacitated, your dragon can take any action of its choice, except casting spells. If your dragon has died, you can use your action to touch it and expend a 1st level or higher spell slot. It returns to life after 1 minute with all its hit points restored.",
+				"You can also fully heal your dragon this way while it's alive and you are both out of combat, but entering combat during this minute will waste the spell slot. Whenever your dragon becomes stabilized it immediately regains 1 hit point. Your dragon regains all its hit points after finishing a short or long rest. Each type of dragon has a unique trait as described in the Dragon Companion section. When you damage a creature yourself, you can expend one use of your dragon's Elemental Bite to gain one of its benefits yourself. You can do so a number of times per day equal to your Intelligence modifier (minimum of 0).",
+				"You can speak, read, and write Draconic. Whenever you make a Charisma check when interacting with dragons, your proficiency bonus is doubled if it applies to the check."
+			],
+			"languageProficiencies": [
+				{
+					"draconic": true
+				}
+			]
+		},
+		{
+			"name": "Dragon Magic",
+			"source": "LEGDRAG",
+			"page": 84,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "LEGDRAG",
+			"subclassShortName": "Dragon Student",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"At 1st level, you and your dragon share the same spell slots, and you can both cast your known warlock spells. However, the damage type of your eldritch blast, and all spells that your dragon casts (if and when they deal damage), is changed to the damage type associated with your dragon student, as listed in the Dragon Student table. Your dragon can cast eldritch blast as a melee spell attack. Your dragon uses your Charisma modifer for its spells, and shares your spell save DC and spell attack modifiers. Only you can maintain concentration on spells you both cast. Your dragon can cast spells without requiring material components, except material components that have a cost. As an action, you can expend a spell slot to summon your dragon into an unoccupied space within 60 feet of you. You can also summon your dragon's body this way if it has died.",
+				"You must choose the {@optfeature Pact of the Dragon|LEGDRAG} as your Pact Boon feature at 3rd level, which is a pact that can only be chosen by this subclass."
+			]
+		},
+		{
+			"name": "New Eldritch Invocations",
+			"source": "LEGDRAG",
+			"page": 84,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "LEGDRAG",
+			"subclassShortName": "Dragon Student",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Breath Weapon|LEGDRAG"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Dragon Warrior|LEGDRAG"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Draconic Smite|LEGDRAG"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Improved Breath Weapon|LEGDRAG"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Improved Dragon Warrior|LEGDRAG"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Advanced Dragon Magic|LEGDRAG"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Dragon Rider|LEGDRAG"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Gifted Student|LEGDRAG"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "ElemenTal Fury|LEGDRAG"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Combine Magic|LEGDRAG"
+				}
+			]
+		},
+		{
+			"name": "Gifted Instructor",
+			"source": "LEGDRAG",
+			"page": 84,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "LEGDRAG",
+			"subclassShortName": "Dragon Student",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, your firsthand experience with dragon magic has advanced your own studies substantially, and in return you have taught your dragon how to fly again.",
+				"You gain proficiency in Intelligence saving throws, and whenever you make an Intelligence skill check you can add your Charisma modifier (minimum of 1) to the check. When you cast a Warlock spell yourself that affects other creatures that you can see, you can choose a number of them equal to your Charisma modifier (minimum of 1). The chosen creatures automatically succeed on their saving throws against the spell and take no damage from the spell.",
+				"In addition, your dragon gains a flying speed of 30 feet. While your dragon is carrying a rider, it can't use the flying speed of this feature until you reach 14th level in this class."
+			]
+		},
+		{
+			"name": "Dragon Magic Mastery",
+			"source": "LEGDRAG",
+			"page": 84,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "LEGDRAG",
+			"subclassShortName": "Dragon Student",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"At 10th level, your student's mastery of dragon magic has reached new heights, as has your bond. When you command your dragon to cast a warlock spell that deals damage, it adds your Charisma modifier (minimum of 1) to one damage roll of that spell.",
+				"Moreover, when you or your dragon cast a spell targeting yourselves, you can also affect the other with the spell if you are within 30 feet of each other."
+			]
+		},
+		{
+			"name": "Aerial Superiority",
+			"source": "LEGDRAG",
+			"page": 84,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "LEGDRAG",
+			"subclassShortName": "Dragon Student",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"At 14th level, your dragon's flying speed is increased to 50 feet, and it doesn't provoke opportunity attacks when it flies out of an enemy's reach (nor does its rider).",
+				"While you are mounted on your dragon, you can force an attack targeted at you to target your dragon instead, as it shields you from ongoing attacks. Area effects (such as a dragon's breath) still affect the both of you normally."
+			]
+		},
+		{
+			"name": "Mystic Arcanum: True Polymorph",
+			"source": "LEGDRAG",
+			"page": 84,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "LEGDRAG",
+			"subclassShortName": "Dragon Student",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"If you choose the true polymorph spell as your Mystic Arcanum at 17th level, provided the Dragon Student is your patron, then when you cast this spell on your dragon it will willingly transform into a dragon of the same type with a CR equal to or lower than your level. It cannot change into a different creature this way. While your dragon is transformed this way, you no longer need to use your bonus action to issue a command to your dragon. You must still use your action to command your dragon to cast or use a spell. If you have the Dragon Rider invocation, you can use your bonus action to command your dragon to cast a cantrip that way, and it can still use one more action."
+			]
 		}
 	],
 	"optionalfeature": [
@@ -12788,21 +13254,307 @@
 					]
 				}
 			]
-		}
-	],
-	"feat": [
+		},
 		{
-			"name": "Pact of The dragon",
+			"name": "Breath Weapon",
 			"source": "LEGDRAG",
-			"page": 84,
+			"page": 87,
+			"featureType": [
+				"EI",
+				"OPTFEAT:LEGDRAG:DS"
+			],
 			"prerequisite": [
 				{
-					"patron": "Dragon Student",
+					"pact": "Pact of the Dragon",
 					"level": {
 						"level": 1,
 						"class": {
 							"name": "Warlock"
 						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Bonded Dragon|Warlock|PHB|Dragon Student|LEGDRAG|1|} feature",
+						"entrySummary": "Bonded Dragon feature"
+					},
+					"spell": [
+						"eldritch blast#c"
+					]
+				}
+			],
+			"entries": [
+				"Dragon magic is elemental magic, and a dragon's breath weapon is one of the simplest expressions of this power. Although the bond has weakened many of your Dragon's draconic attributes, it has enhanced its magical potential, and this invocation brings back some of its lost power.",
+				"When you command your Dragon to cast {@spell eldritch blast|PHB}, you can choose to change it into an area attack with a DC saving throw, which is different for each dragon and listed in the Dragon Student table. It damages all creatures in the area.",
+				"Instead of firing additional beams, its breath weapon deals an additional 1d10 damage at 5th level, 11th level, and 17th level this way. A creature takes half damage on a successful save.",
+				"If you possess the Agonizing Blast invocation, then when you deal damage with your {@spell eldritch blast|PHB} cantrip this way, each creature that suffers damage takes additional damage of the same type equal to your Charisma modifier (minimum of 1) times the number of d10's of this breath weapon."
+			]
+		},
+		{
+			"name": "Dragon Warrior",
+			"source": "LEGDRAG",
+			"page": 87,
+			"featureType": [
+				"EI",
+				"OPTFEAT:LEGDRAG:DS"
+			],
+			"prerequisite": [
+				{
+					"pact": "Pact of the Dragon",
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"You gain proficiency with medium armor, shields, and martial weapons.",
+				"Whenever you finish a long rest, you can touch one melee weapon that you are proficient with and that lacks the two-handed property. When you attack with that weapon, you can use your Charisma modifier, instead of Strength or Dexterity, for the attack and damage rolls. It counts as a magic weapon. This benefit lasts until you finish a long rest."
+			],
+			"armorProficiencies": [
+				{
+					"medium": true
+				}
+			],
+			"weaponProficiencies": [
+				{
+					"martial": true,
+					"shield|phb": true
+				}
+			]
+		},
+		{
+			"name": "Draconic Smite",
+			"source": "LEGDRAG",
+			"page": 87,
+			"featureType": [
+				"EI",
+				"OPTFEAT:LEGDRAG:DS"
+			],
+			"prerequisite": [
+				{
+					"pact": "Pact of the Dragon",
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"Once per turn when you hit a creature with a melee weapon, you can expend a warlock spell slot to deal an extra 1d8 damage of the type associated with your dragon student to the target, plus another 1d8 per level of the spell slot, and you can knock the target prone if it is Huge or smaller (flying and swimming creatures will count as prone for game mechanics)."
+			]
+		},
+		{
+			"name": "Improved Breath Weapon",
+			"source": "LEGDRAG",
+			"page": 87,
+			"featureType": [
+				"EI",
+				"OPTFEAT:LEGDRAG:DS"
+			],
+			"prerequisite": [
+				{
+					"pact": "Pact of the Dragon",
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Warlock"
+						}
+					},
+					"spell": [
+						"eldritch blast#c"
+					],
+					"otherSummary": {
+						"entry": "{@optfeature Breath Weapon|LEGDRAG} feature",
+						"entrySummary": "Breath Weapon"
+					}
+				}
+			],
+			"entries": [
+				"When you command your dragon to cast eldritch blast as a breath weapon, you can double its range (a cone becomes 30-foot, and a line becomes 60-feet long and 10 feet wide)."
+			]
+		},
+		{
+			"name": "Improved Dragon Warrior",
+			"source": "LEGDRAG",
+			"page": 87,
+			"featureType": [
+				"EI",
+				"OPTFEAT:LEGDRAG:DS"
+			],
+			"prerequisite": [
+				{
+					"pact": "Pact of the Dragon",
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Warlock"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@optfeature Dragon Warrior|LEGDRAG} feature",
+						"entrySummary": "Dragon Warrior"
+					}
+				}
+			],
+			"entries": [
+				"You can use any weapon that you enhanced with your Dragon Warrior invocation as a spellcasting focus for your warlock spells. You can summon it to your hand as an action as long as it is on the same plane of existence as you.",
+				"Once on each of your turns, when you hit a creature with this weapon, the creature takes an extra 1d8 damage of the type associated with your dragon student. When you reach 14th level, the extra damage increases to 2d8."
+			],
+			"armorProficiencies": [
+				{
+					"medium": true
+				}
+			],
+			"weaponProficiencies": [
+				{
+					"martial": true,
+					"shield|phb": true
+				}
+			]
+		},
+		{
+			"name": "Advanced Dragon Magic",
+			"source": "LEGDRAG",
+			"page": 87,
+			"featureType": [
+				"EI",
+				"OPTFEAT:LEGDRAG:DS"
+			],
+			"prerequisite": [
+				{
+					"pact": "Pact of the Dragon",
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"Your dragon's bite deals additional damage equal to your Charisma modifier (minimum of 1) of the type associated with your dragon student. In addition, all its attacks count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.",
+				"When your dragon receives temporary hit points through the Pact of the Dragon feature, you can add your Charisma modifier (minimum of 1) to this amount."
+			]
+		},
+		{
+			"name": "Dragon Rider",
+			"source": "LEGDRAG",
+			"page": 87,
+			"featureType": [
+				"EI",
+				"OPTFEAT:LEGDRAG:DS"
+			],
+			"prerequisite": [
+				{
+					"pact": "Pact of the Dragon",
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"When you take the Attack action on your turn to make a melee weapon attack (or the Ready action to prepare a melee weapon attack) while riding your dragon, you can now use your bonus action to command your dragon to cast a cantrip spell. You can only make one attack with the Attack action this way. You and your dragon combined can only cast one spell per turn this way."
+			]
+		},
+		{
+			"name": "Gifted Student",
+			"source": "LEGDRAG",
+			"page": 87,
+			"featureType": [
+				"EI",
+				"OPTFEAT:LEGDRAG:DS"
+			],
+			"prerequisite": [
+				{
+					"pact": "Pact of the Dragon",
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"The number of temporary hit points that your dragon receives through the Pact of the Dragon feature increases by 3. When your dragon receives these temporary hit points, you can give them to another creature you can see (including yourself) within 60 feet of your dragon instead. Afterwards, that creature cannot receive temporary hit points this way again until it finishes a short or long rest.",
+				"When your dragon regains hit points while in combat, you can choose to regain these hit points yourself instead, provided you are within 60 feet of your dragon."
+			]
+		},
+		{
+			"name": "ElemenTal Fury",
+			"source": "LEGDRAG",
+			"page": 87,
+			"featureType": [
+				"EI",
+				"OPTFEAT:LEGDRAG:DS"
+			],
+			"prerequisite": [
+				{
+					"pact": "Pact of the Dragon",
+					"level": {
+						"level": 12,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"All damage that you and your dragon deal ignores resistance against your dragon student's damage type."
+			]
+		},
+		{
+			"name": "Combine Magic",
+			"source": "LEGDRAG",
+			"page": 87,
+			"featureType": [
+				"EI",
+				"OPTFEAT:LEGDRAG:DS"
+			],
+			"prerequisite": [
+				{
+					"pact": "Pact of the Dragon",
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"If a Dragon Master shares a particularly strong bond with his or her dragon, the pair can even cast spells together that combine the best of the mortal and dragon forms of magic, going where no mortal or dragon could go before.",
+				"When you use your action to command your dragon to cast a warlock spell that expends a spell slot and deals damage, you can use your bonus action to deal maximum damage with that spell if your dragon is within 30 feet of you. When you use this feature, you can choose any number of creatures that you can see. The chosen creatures automatically succeed on their saving throws against the spell and take no damage from the spell.",
+				"The first time you do so, you and your dragon each suffer 2d12 force damage due to the feedback. If you use this invocation again before finishing a long rest, the force damage increases by 2d12. This damage ignores temporary hit points, resistance, and immunity."
+			]
+		},
+		{
+			"name": "Pact of The dragon",
+			"source": "LEGDRAG",
+			"page": 84,
+			"featureType": [
+				"PB"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Warlock"
+						},
+						"subclass": {
+							"name": "Dragon Student"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Dragon magic|Warlock|PHB|Dragon Student|LEGDRAG|1|} feature",
+						"entrySummary": "Dragon Student"
 					}
 				}
 			],
