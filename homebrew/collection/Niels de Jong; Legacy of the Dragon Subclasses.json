@@ -8461,6 +8461,13 @@
 			"shortName": "Dragon Student",
 			"page": 84,
 			"className": "Warlock",
+			"subclassFeatures": [
+				"The Dragon Student|Warlock|PHB|Dragon Student|LEGDRAG|1",
+				"Gifted Instructor|Warlock|PHB|Dragon Student|LEGDRAG|6",
+				"Dragon Magic Mastery|Warlock|PHB|Dragon Student|LEGDRAG|10",
+				"Aerial Superiority|Warlock|PHB|Dragon Student|LEGDRAG|14",
+				"Mystic Arcanum: True PolyMorph|Warlock|PHB|Dragon Student|LEGDRAG|17"
+			],
 			"subclassSpells": [
 				"absorb elements|xge", 
 				"shield|phb",
@@ -8499,15 +8506,26 @@
 					}
 				}
 			],
-			"subclassFeatures": [
-				"The Dragon Student|Warlock|PHB|Dragon Student|LEGDRAG|1",
-				"Gifted Instructor|Warlock|PHB|Dragon Student|LEGDRAG|6",
-				"Dragon Magic Mastery|Warlock|PHB|Dragon Student|LEGDRAG|10",
-				"Aerial Superiority|Warlock|PHB|Dragon Student|LEGDRAG|14",
-				"Mystic Arcanum: True PolyMorph|Warlock|PHB|Dragon Student|LEGDRAG|17"
-			],
 			"casterProgression": "pact",
 			"spellcastingAbility": "cha"
+		},
+		{
+			"name": "Wyrm Wizard Magic",
+			"source": "LEGDRAG",
+			"shortName": "Wyrm Wizard",
+			"page": 88,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassFeatures": [
+				"Wyrm Wizard|Wizard|PHB|Wyrm Wizard|LEGDRAG|2",
+				"Convert Counterspell|Wizard|PHB|Wyrm Wizard|LEGDRAG|6",
+				"BreaK Spell Resistance|Wizard|PHB|Wyrm Wizard|LEGDRAG|10",
+				"Wyrm Sage|Wizard|PHB|Wyrm Wizard|LEGDRAG|14"
+			],
+			"subclassSpells": [
+				"counterspell|phb",
+				"dispel magic|phb"
+			]
 		}
 	],
 	"subclassFeature": [
@@ -12661,6 +12679,121 @@
 			"entries": [
 				"If you choose the true polymorph spell as your Mystic Arcanum at 17th level, provided the Dragon Student is your patron, then when you cast this spell on your dragon it will willingly transform into a dragon of the same type with a CR equal to or lower than your level. It cannot change into a different creature this way. While your dragon is transformed this way, you no longer need to use your bonus action to issue a command to your dragon. You must still use your action to command your dragon to cast or use a spell. If you have the Dragon Rider invocation, you can use your bonus action to command your dragon to cast a cantrip that way, and it can still use one more action."
 			]
+		},
+		{
+			"name": "Wyrm Wizard",
+			"source": "LEGDRAG",
+			"page": 88,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Wyrm Wizard",
+			"subclassSource": "LEGDRAG",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				{
+					"type": "quote",
+					"entries": [
+						"Each true dragon is like a library full of books so old their titles have been forgotten. Most would pay dearly for a chance to plunder such a resource, but only few have the key to the library doors."
+					],
+					"by": "Doran Stout, wyrm wizard"
+				},
+				"Wyrm wizards are spellcasters who learn new spells by tapping into the vast wealth of arcane knowledge possessed by dragons. Like many other wizards, wyrm wizards spend a great deal of time perfecting their spellcasting techniques, though most of their spells are based on the teachings of friendly dragons. A wyrm wizard and their dragon mentor might spend weeks or months in seclusion, discussing the finer points of spell manipulation or exploring new concepts. Unlike many others who interact with dragons, wyrm wizards also act as comrades to spellcasting dragons, providing insight into magic that the creature might not otherwise possess. Furthermore, thanks to your advanced understanding of magic gleaned from many hours with dragon mentors, you have an uncanny knack for unraveling spells cast by others. Walking this path means that you will have to endure slander by other wizards, as there are some that question your methods of turning to dragons for aid in your arcane studies, or even call you a slave to dragon kind. But you know better, as your ability to make amazing discoveries in conjunction with your dragon allies has given you great confidence to see beyond the accepted rules of magic. Above all, you believe that dragons hold the key to new knowledge and advancement of magical abilities, and that your best course of action is to befriend these majestic creatures and learn new ways to practice magic from them.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Knowledge of the Wyrm|Wizard|PHB|Wyrm Wizard|LEGDRAG|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Draconic Discovery|Wizard|PHB|Wyrm Wizard|LEGDRAG|2"
+				}
+			]
+		},
+		{
+			"name": "Knowledge of the Wyrm",
+			"source": "LEGDRAG",
+			"page": 88,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Wyrm Wizard",
+			"subclassSource": "LEGDRAG",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"You spend a great deal of time exploring the depths of a dragon's magical knowledge, giving you a distinct advantage over spellcasters who do not have the benefit of draconic tutelage.",
+				"Starting at 2nd level, you gain proficiency in the Arcana skill. If you have proficiency in this skill from another source, then your proficiency bonus is doubled for any ability check you make that uses Arcana.",
+				"Additionally, you can now speak, read and write Draconic.",
+				"Whenever you make a Charisma check when interacting with dragons, your proficiency bonus is doubled if it applies to the check.",
+				"You learn one 1st-level spell of your choice from any spell list, which becomes a wizard spell for you and which you always have prepared without having to add it to your spellbook. You must otherwise obey all the restrictions for selecting the spell. You learn an additional spell from any spell list this way when you reach 4th, 6th, 8th and 10th level in this class. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 4th level in this class, you can learn one new spell of 1st or 2nd level from any spell list. From 10th level on, when you gain a level in this class, you can choose one of the spells you gained through this feature, and replace it with another spell from any spell list. It must be a 5th level or lower spell. You cannot add these spells to your spellbook or other spellbooks, and as such you cannot use these spells for the Spell Mastery and Signature Spells features."
+			],
+			"skillProficiencies": [
+				{
+					"arcane": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"draconic": true
+				}
+			]
+		},
+		{
+			"name": "Draconic Discovery",
+			"source": "LEGDRAG",
+			"page": 88,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Wyrm Wizard",
+			"subclassSource": "LEGDRAG",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"At 2nd level, you make startling discoveries into the nature of magic thanks to the unique insight of your dragon mentors. Once per turn, when you cast a 1st level or higher spell, you can empower it and cast it at a spell level that is one level higher, provided the spell grants additional benefits when you cast it at a higher spell level. You can do so a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest. You can only empower spells of 8th level or lower with this feature. Empowered spells can't exceed 9th level. For example; a 5th level wizard casting the magic missile spell with a 3rd level spell slot can empower the spell with this feature to upcast it as though they had cast a 4th level magic missile instead (even though they don't have 4th level spell slots), creating six magic darts of force instead of five."
+			]
+		},
+		{
+			"name": "Convert Counterspell",
+			"source": "LEGDRAG",
+			"page": 88,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Wyrm Wizard",
+			"subclassSource": "LEGDRAG",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, you become a master at countering the spells of enemy spellcasters. You add the counterspell and dispel magic spells to your spellbook if they are not there already. In addition, you can cast both of these spells once at their lowest level without expending a spell slot, and you regain the ability to do so after finishing a long rest.",
+				"Whenever you successfully end a spell with {@spell counterspell|PHB} or {@spell dispel magic|PHB}, or you reduce a creature (of challenge rating 1/4th or higher if it is a non-player creature) to 0 hit points with a 3rd level or higher spell, you regain one use of your {@i Draconic Discovery} feature. You can regain a use of your {@i Draconic Discovery} feature this way a number of times equal to half your proficiency bonus (rounded up), which resets after you finish a long rest."
+			]
+		},
+		{
+			"name": "BreaK Spell Resistance",
+			"source": "LEGDRAG",
+			"page": 88,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Wyrm Wizard",
+			"subclassSource": "LEGDRAG",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"At 10th level, you gain great insight into the way creatures naturally resist magic by studying the magical defenses of dragons. When you force a creature to make a saving throw against one of your spells, it cannot have advantage on that saving throw. Creatures that attempt to counter, dispel, or otherwise end, any spell cast by you have disadvantage on ability checks to do so (if any).",
+				"In addition, you can expend one use of your {@i Draconic Discovery} feature to cast a spell from your spellbook that you do not have prepared. You must still expend the necessary spell slot(s) and provide any necessary materials required to cast the spell normally. Starting at 14th level, you can expend two uses of {@i Draconic Discovery} to cast a 5th level or lower spell you do not know from any list. It is cast at its lowest level, can't be upcast in any way, and you must expend the appropriate spell slot(s) and provide any necessary materials required to cast the spell normally. Additionally, at 14th level, you can instead expend three uses of {@i Draconic Discovery} to cast a 6th, 7th, or 8th level spell this way with the same restrictions, but afterwards you can't do so again until you finish a long rest."
+			]
+		},
+		{
+			"name": "Wyrm Sage",
+			"source": "LEGDRAG",
+			"page": 88,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Wyrm Wizard",
+			"subclassSource": "LEGDRAG",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"At 14th level, you have completed your training under your dragon mentors. You have defied the slander that you were a dragon slave, and instead have formed a strong bond with dragon kind. With their tutelage you have learned new ways to utilize your magical talent, walking in the footsteps of legendary figures like Lina Inverse the Slayer. When you cast a cantrip that has a casting time of 1 action, you can cast it with 1 bonus action instead. If you do, you can still cast non-cantrip spells with your action during the current turn. Any cantrip cast in this way, or attack made while casting that cantrip or as part of that cantrip's effects, deals half damage and cannot grant you resistance to damage."
+			]
 		}
 	],
 	"optionalfeature": [
@@ -13257,13 +13390,13 @@
 			],
 			"armorProficiencies": [
 				{
-					"medium": true
+					"medium": true,
+					"shield|phb": true
 				}
 			],
 			"weaponProficiencies": [
 				{
-					"martial": true,
-					"shield|phb": true
+					"martial": true
 				}
 			]
 		},
@@ -13349,13 +13482,13 @@
 			],
 			"armorProficiencies": [
 				{
-					"medium": true
+					"medium": true,
+					"shield|phb": true
 				}
 			],
 			"weaponProficiencies": [
 				{
-					"martial": true,
-					"shield|phb": true
+					"martial": true
 				}
 			]
 		},
