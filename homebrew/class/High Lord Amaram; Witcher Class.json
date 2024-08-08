@@ -1,4 +1,5 @@
 {
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
 	"_meta": {
 		"sources": [
 			{
@@ -31,21 +32,22 @@
 				"faces": 8
 			},
 			"proficiency": [
-				"dex",
+				"con",
 				"int"
 			],
 			"startingProficiencies": {
 				"armor": [
-					"light",
-					"medium"
+					"light"
 				],
 				"weapons": [
-					"simple",
-					"melee martial",
-					"{@item hand crossbow|phb}"
+					"{@filter simple|items|category=basic|type=simple weapon;!martial weapon}",
+					"{@filter martial melee|items|category=basic|type=martial weapon;melee weapon;!ranged weapon;!simple weapon}",
+					"{@item hand crossbow|phb}",
+					"{@item light crossbow|phb}",
+					"{@item heavy crossbow|phb}"
 				],
 				"tools": [
-					"Alchemist's supplies"
+					"{@item Alchemist's supplies|PHB}"
 				],
 				"skills": [
 					{
@@ -55,9 +57,13 @@
 								"arcana",
 								"athletics",
 								"insight",
+								"intimidation",
 								"investigation",
+								"medicine",
 								"nature",
 								"perception",
+								"persuasion",
+								"stealth",
 								"survival"
 							],
 							"count": 3
@@ -65,56 +71,199 @@
 					}
 				]
 			},
+			"spellcastingAbility": "int",
+			"casterProgression": "1/2",
+			"spellsKnownProgression": [
+				0,
+				2,
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				4,
+				4,
+				4,
+				4,
+				4,
+				5,
+				5,
+				5,
+				5,
+				5
+			],
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"default": [
-					"(a) a {@item longsword|PHB} and a {@item silvered longsword|PHB} or (b) a {@item silvered weapon|PHB}",
-					"(a) {@item scale mail|PHB}, (b) {@item leather armor|PHB}",
-					"(a) {@item hand crossbow|PHB} and a pack with 20 bolts or (b) a {@filter simple weapon|items|source=PHB|category=basic|type=simple weapon}",
-					"(a) an {@item explorer's pack|PHB} or (b) a {@item dungeoneer's pack|PHB}"
+					"{@item leather armor|PHB}",
+					"(a) one {@filter martial weapon|items|category=basic|type=martial weapon} or (b) two {@filter weapons with the light property|items|category=basic|property=light}",
+					"{@item silvered weapon|PHB}",
+					"{@item light crossbow|PHB} and a {@item crossbow bolts (20)|PHB|pack with 20 bolts}",
+					"{@item alchemist's supplies|PHB}",
+					"a Witcher School Medallion",
+					"a Witcher's Bestiary"
 				],
 				"defaultData": [
 					{
-						"a": [
-							"longsword|PHB",
-							"silvered longsword|PHB"
-						],
-						"b": [
-							"silvered weapon|PHB"
+						"_": [
+							"leather armor|phb",
+							"silvered weapon|phb",
+							"light crossbow|phb",
+							"crossbow bolts (20)|phb",
+							"alchemist's supplies|phb",
+							{
+								"special": "Witcher School Medallion",
+								"quantity": 1,
+								"worthValue": 100
+							},
+							{
+								"special": "Witcher's Bestiary",
+								"quantity": 1,
+								"worthValue": 100
+							}
 						]
+						
 					},
 					{
 						"a": [
-							"scale mail|PHB"
-						],
-						"b": [
-							"leather armor|PHB"
-						]
-					},
-					{
-						"a": [
-							"hand crossbow|PHB"
+							{
+								"equipmentType": "weaponMartial",
+								"quantity": 1
+							}
 						],
 						"b": [
 							{
-								"equipmentType": "weaponSimple"
+								"equipmentType": "weapon",
+								"quantity": 2
 							}
 						]
-					},
-					{
-						"a": [
-							"explorer's pack|PHB"
-						],
-						"b": [
-							"dungeoneer's pack|PHB"
-						]
 					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"int": 13,
+					"or" : [
+						{
+							"dex": 13
+						},
+						{
+							"str": 13
+						}
+					]
+				},
+				"proficienciesGained": {
+					"armor": [
+						"light"
+					],
+					"weapons": [
+						"simple",
+						"martial",
+						"{@item hand crossbow|phb}",
+						"{@item light crossbow|phb}",
+						"{@item heavy crossbow|phb}"
+					]
+				},
+				"entries": [
+					"{@b Ability Score Minimum.} You must have at least a 13 in either Strength or Dexterity, and a 13 in Intelligence to take a level in this class, or to take a level in another class if you are already a Witcher.",
+					"{@b Proficiencies.} If Witcher isn't your initial class, you gain proficiency with light armor, {@filter melee simple|items|category=basic|type=simple weapon;!martial weapon} and {@filter martial melee weapons|items|category=basic|type=martial weapon;melee weapon;!ranged weapon;!simple weapon}, and crossbows."
 				]
 			},
 			"classTableGroups": [
 				{
 					"colLabels": [
-						"Focus Points"
+						"Potions Prepared",
+						"Handbombs Prepared"
+					],
+					"rows": [
+						[
+							0,
+							0
+						],
+						[
+							0,
+							0
+						],
+						[
+							2,
+							2
+						],
+						[
+							2,
+							2
+						],
+						[
+							3,
+							2
+						],
+						[
+							3,
+							2
+						],
+						[
+							4,
+							3
+						],
+						[
+							4,
+							3
+						],
+						[
+							5,
+							3
+						],
+						[
+							5,
+							3
+						],
+						[
+							6,
+							4
+						],
+						[
+							6,
+							4
+						],
+						[
+							7,
+							4
+						],
+						[
+							7,
+							4
+						],
+						[
+							8,
+							4
+						],
+						[
+							8,
+							4
+						],
+						[
+							8,
+							5
+						],
+						[
+							8,
+							5
+						],
+						[
+							8,
+							5
+						],
+						[
+							8,
+							5
+						]
+					]
+				},
+				{
+					"colLabels": [
+						"{@filter Spells Known|spells|class=Witcher|source=WITCHER_HLA}"
 					],
 					"rows": [
 						[
@@ -130,6 +279,12 @@
 							2
 						],
 						[
+							2
+						],
+						[
+							3
+						],
+						[
 							3
 						],
 						[
@@ -154,7 +309,7 @@
 							4
 						],
 						[
-							5
+							4
 						],
 						[
 							5
@@ -170,12 +325,158 @@
 						],
 						[
 							5
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=Witcher|source=WITCHER_HLA}",
+						"{@filter 2nd|spells|level=2|class=Witcher|source=WITCHER_HLA}",
+						"{@filter 3rd|spells|level=3|class=Witcher|source=WITCHER_HLA}",
+						"{@filter 4th|spells|level=4|class=Witcher|source=WITCHER_HLA}",
+						"{@filter 5th|spells|level=5|class=Witcher|source=WITCHER_HLA}"
+					],
+					"rowsSpellProgression": [
+						[
+							0,
+							0,
+							0,
+							0,
+							0
 						],
 						[
-							5
+							2,
+							0,
+							0,
+							0,
+							0
 						],
 						[
-							5
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
 						]
 					]
 				}
@@ -1209,28 +1510,72 @@
 			"source": "WITCHER_HLA",
 			"entries": [
 				{
+					"name": "Witcher",
 					"source": "WITCHER_HLA",
+					"type": "section",
 					"page": 1,
 					"entries": [
+						"A man in dark leather armor pulls a handbomb from his pack as he finally locates the werewolf he has been tracking in the night. His cat-like eyes glow in the moonlight, allowing him to see the creature clearly. Throwing the Moondust bomb at the creature's feet, he draws his twin shortswords and charges in at the man ahead, now unable to shapeshift into his bestial form.",
+						"Dancing backward from an oncoming pack of ghouls, a nimble halfling quickly consumes a potion from his belt, granting a surge of magical strength. A moment later an empowered blast of Igni erupts from his palm, washing over the ghouls and burning them to cinder. His blade will make quick work of any who remain standing.",
+						"Swiftly moving her fingers to form the appropriate sign, a half-elf slams a Yrden trap on the ground at her feet, forcing the attacking wraith into a corporeal form. She draws her blade, closing in for the kill.",
+						"Using different approaches, all of these are monster hunters in their own right. Trained in swordplay, magic, alchemy, and crafting, Witchers hunt monsters that make ordinary men flee in terror.",
+						
 						{
-							"type": "quote",
+							"type": "entries",
+							"name": "Monster Hunter for Hire",
 							"entries": [
-								"Indeed, there is nothing more repulsive than these monsters that defy nature and are known by the name of witcher, as they are the offspring of foul sorcery and witchcraft. They are unscrupulous scoundrels without conscience and virtue, veritable creatures from hell capable only of taking lives..."
-							],
-							"by": "Anonymous",
-							"from": "Monstrum, or a Portrayal of Witchers"
+								"Witchers dedicate their lives to hunting monsters, studying their strengths and weaknesses in order to effectively kill them. While Witchers may discover monsters in the wild, the bulk of their work is spent dealing with threats closer to civilization, where people will pay to be rid of the threats. These jobs how Witcher's earn a living, and they frequently move from town to town and city to city, seeking out new contracts.",
+								"It is a life filled with constant danger from the various beasts and monsters in the wilds. Though they train hard and prepare extensively for their fights, not many survive to reach old age."
+							]
 						},
-						"Professional monster slayers for hire, witchers are individuals who have undergone intense training and dangerous mutations to make them both capable and versatile fighters against a vast array of inhuman opponents.",
+						{
+							"type": "entries",
+							"name": "Mistrusted Nomad",
+							"entries": [
+								"Many humans who become Witchers undergo the Trial of the Grasses, a series of mutations designed to help these hunters become the apex predators necessary to hunt the creatures they do. It is perhaps these mutations that lead many commoners to be distrustful of them, due to the physical changes the mutations bring, such as cat-like eyes.",
+								"Another possible reason for their mistrust of Witchers is the general view that the Witchers are greedy vagabonds, preying on the weak and needy to hand over their valuables to deal with their problem. Whenever they do hire a Witcher, it is often as means of last resort, which sometimes results in a far more dire situation the Witcher now faces.",
+								"Some Witchers will work alone to track and fell their quarry, but a number of Witchers will work together or within a party of traveling adventurers in order to more safely face the myriad of dangers in the world, despite having to share the contract's pay."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating a Witcher",
+							"entries": [
+								"As you create your Witcher character, consider the nature of your training. Were you given up to a Witcher school for training by a family who couldn't afford to feed you? Did you turn to the Witcher profession out of desperation when you were exiled? Or perhaps you were yourself saved by a Witcher, and as a result find yourself drawn to do the same for others?",
+								"What is your attitude toward the commoners who mistrust you? Do you have weary patience for their ignorance, or do you find yourself frequently on edge, ready to snap at the next person who claims you're just as much a monster as the ones you're hired to slay?",
+								"Consult with your DM about how best to incorporate Witchers into your world."
+							]
+						},
 						{
 							"type": "entries",
 							"name": "Quick Build",
 							"entries": [
-								"You can make a witcher quickly by following these suggestions. First, Dexterity or Strength should be your highest ability score, followed by Wisdom. Second, choose the {@background outlander} background."
+								"You can make a Witcher quickly by following these suggestions. First, make Strength or Dexterity your highest ability score. Your next-highest score should be Constitution, or Intelligence if you intend to rely on spellcasting and Witcher Preparation. Second, choose the hermit or the outlander background."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Optional Rule: Multiclassing",
+							"entries": [
+								"If you use the multiclassing rule from the {@i Player's Handbook}, here's what you need to know if you take a level in Witcher.",
+								{
+									"type": "list",
+									"style": "list-no-bullets",
+									"items": [
+										"{@b Ability Score Minimum.} You must have at least a 13 in either Strength or Dexterity, and a 13 in Intelligence to take a level in this class, or to take a level in another class if you are already a Witcher.",
+										"{@b Proficiencies.} If Witcher isn't your initial class, you gain proficiency with light armor, simple and martial melee weapons, and crossbows."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Optional Rule: Trial of the Grasses",
+							"entries": [
+								"See the end of this class document for the Human race variant: {@i Trial of the Grasses.}"
 							]
 						}
-					],
-					"name": "Witcher",
-					"type": "section"
+					]
 				}
 			]
 		}

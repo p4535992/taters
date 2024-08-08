@@ -1,4 +1,5 @@
 {
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
 	"_meta": {
 		"sources": [
 			{
@@ -41,11 +42,11 @@
 				],
 				"weapons": [
 					"simple",
-					"melee martial",
+					"{@filter melee martial|items|miscellaneous=mundane|type=martial weapon;melee weapon;!ranged weapon;!simple weapon}",
 					"{@item hand crossbow|phb}"
 				],
 				"tools": [
-					"Alchemist's supplies"
+					"{@item Alchemist's supplies|PHB}"
 				],
 				"skills": [
 					{
