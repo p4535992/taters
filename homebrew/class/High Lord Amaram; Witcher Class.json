@@ -40,6 +40,7 @@
 		{
 			"name": "Witcher",
 			"source": "WITCHERHLA",
+			"page": 3,
 			"hd": {
 				"number": 1,
 				"faces": 8
@@ -497,53 +498,42 @@
 			"classFeatures": [
 				"Witcher's Bestiary|Witcher|WITCHERHLA|1",
 				{
-					"classFeature": "Witcher School|Witcher|WITCHERHLA|1",
+					"classFeature": "Witcher School Feature|Witcher|WITCHERHLA|1",
 					"gainSubclassFeature": true
 				},
 				"Witcher Spellcasting|Witcher|WITCHERHLA|2",
 				"Fighting Style|Witcher|WITCHERHLA|2",
-				{
-					"classFeature": "Witcher Preparation|WITCHERHLA|3",
-					"gainSubclassFeature": true
-				},
+				"Witcher Preparation|Witcher|WITCHERHLA|3",
 				"Blade Oil|Witcher|WITCHERHLA|3",
 				"Ability Score Improvement|Witcher|WITCHERHLA|4",
 				"Extra Attack|Witcher|WITCHERHLA|5",
-				"Monster Are My Trade|Witcher|WITCHERHLA|5",
+				"Monsters Are My Trade|Witcher|WITCHERHLA|5",
 				"Blade Oil Superior|Witcher|WITCHERHLA|6",
 				{
-					"classFeature": "Witcher School|Witcher|WITCHERHLA|6",
+					"classFeature": "Witcher School Feature|Witcher|WITCHERHLA|6",
 					"gainSubclassFeature": true
 				},
-				{
-					"classFeature": "Witcher Preparation|WITCHERHLA|7",
-					"gainSubclassFeature": true
-				},
+				"Greater Witcher Preparation|Witcher|WITCHERHLA|7",
 				"Ability Score Improvement|Witcher|WITCHERHLA|8",
 				{
-					"classFeature": "Witcher School|Witcher|WITCHERHLA|10",
+					"classFeature": "Witcher School Feature|Witcher|WITCHERHLA|10",
 					"gainSubclassFeature": true
 				},
 				"Honed Edge|Witcher|WITCHERHLA|11",
-				{
-					"classFeature": "Witcher Preparation|WITCHERHLA|11",
-					"gainSubclassFeature": true
-				},
+				"Superior Witcher Preparation|Witcher|WITCHERHLA|11",
 				"Ability Score Improvement|Witcher|WITCHERHLA|12",
 				{
-					"classFeature": "Witcher School|Witcher|WITCHERHLA|14",
+					"classFeature": "Witcher School Feature|Witcher|WITCHERHLA|14",
 					"gainSubclassFeature": true
 				},
-				{
-					"classFeature": "Witcher Preparation|WITCHERHLA|15",
-					"gainSubclassFeature": true
-				},
+				"Master Witcher Preparation|Witcher|WITCHERHLA|15",
 				"Ability Score Improvement|Witcher|WITCHERHLA|16",
 				{
-					"classFeature": "Witcher School|Witcher|WITCHERHLA|18",
+					"classFeature": "Witcher School Feature|Witcher|WITCHERHLA|18",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Witcher|WITCHERHLA|19"
+				"Ability Score Improvement|Witcher|WITCHERHLA|19",
+				"Master Witcher|Witcher|WITCHERHLA|20"
 			],
 			"subclassTitle": "Witcher School",
 			"hasFluff": true,
@@ -579,10 +569,171 @@
 			]
 		}
 	],
+	"feat": [
+		{
+			"name": "Hardy",
+			"source": "WITCHERHLA",
+			"page": 21,
+			"ability": [
+				{
+					"con": 1
+				}
+			],
+			"entries": [
+				"You have grown tougher, gaining the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Increase your Constitution score by 1, to a maximum of 20.",
+						"Your hit point maximum increases by an amount equal to half your level rounded up when you gain this feat. Whenever you gain a level thereafter, your hit point maximum increases by an additional 1 Hit Point."
+					]
+				}
+			]
+		},
+		{
+			"name": "Magic Initiate (Expanded)",
+			"source": "WITCHERHLA",
+			"page": 21,
+			"entries": [
+				"Choose a class: Bard, Cleric, Druid, Sorcerer, Warlock, Witcher, or Wizard. You learn two cantrips of your choice from that class spell list.",
+				"In addition, choose one 1st-level spell from that same list. Using this feat, you can cast the spell once at its lowest level, and you must finish a long rest before you can cast it again.",
+				"Your spellcasting ability for these spells depends on the class you chose: Charisma for Bard, Sorcerer, or Warlock; Wisdom for Cleric or Druid; or Intelligence for Witcher or Wizard."
+			]
+		},
+		{
+			"name": "Monster Hunter",
+			"source": "WITCHERHLA",
+			"page": 21,
+			"entries": [
+				"When attacking a non-humanoid creature, you gain a +1 bonus to attack and damage rolls against that creature."
+			]
+		},
+		{
+			"name": "Spell Sniper (Expanded)",
+			"source": "WITCHERHLA",
+			"page": 21,
+			"prerequisite": [
+				{
+					"other": "The ability to cast at least one spell"
+				}
+			],
+			"entries": [
+				"You have learned techniques to enhance your attacks with certain kinds of spells, gaining the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"When you cast a spell that requires you to make an attack roll, the spell's range is doubled.",
+						"Your ranged spell attacks ignore half cover and three-quarters cover.",
+						"You learn one cantrip that requires an attack roll. Choose the cantrip from the Bard, Cleric, Druid, Sorcerer, Warlock, Witcher, or Wizard spell list. Your spellcasting ability for this cantrip depends on the spell list you choose from: Charisma for Bard, Sorcerer, or Warlock; Wisdom for Cleric or Druid; or Intelligence for Witcher or Wizard."
+					]
+				}
+			]
+		},
+		{
+			"name": "Witcher Potion Adept",
+			"source": "WITCHERHLA",
+			"page": 21,
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"con": 13
+						}
+					]
+				}
+			],		
+			"entries": [
+				"You have studied the brewing of Witcher potions, gaining the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You have built up a resistance to the toxicity of Witcher potions and can consume them safely.",
+						"You learn to prepare one Witcher potion of your choice, and gain one use of the Witcher Preparation feature for potions only.",
+						"The tier of the potion you brew is dependent on your highest class level."
+					]
+				},
+				"You can select this feat multiple times. Each time you do so you must select a different potion to learn."
+			]
+		},
+		{
+			"name": "Witcher handbomb Adept",
+			"source": "WITCHERHLA",
+			"page": 21,
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"int": 13
+						}
+					]
+				}
+			],		
+			"entries": [
+				"You have studied the crafting of Witcher handbombs, gaining the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You learn to prepare one Witcher handbomb of your choice, and gain one use of the Witcher Preparation feature for handbombs only.",
+						"The tier of the handbomb you craft is dependent on your highest class level."
+					]
+				},
+				"You can select this feat multiple times. Each time you do so you must select a different handbomb to learn."
+			]
+		},
+		{
+			"name": "Witcher spell Adept",
+			"source": "WITCHERHLA",
+			"page": 21,		
+			"entries": [
+				"You have studied the arcana of Witcher spells, gaining the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You learn a Witcher spell of your choice. You can select from the base Witcher spells or the alternative spells lists, ignoring any prerequisites.",
+						"If the chosen spell is a 1st level spell, you can cast it once at 1st level without using a spell slot. You must finish a long rest before you can cast it in this way again, and you can also cast the spell using any spell slots you have."
+					]
+				}
+			]
+		},
+		{
+			"name": "Versatile Mastery",
+			"source": "WITCHERHLA",
+			"page": 21,		
+			"entries": [
+				"When wielding a versatile weapon, you gain the following benefits:",
+				{
+					"name": "When wielding with one hand",
+					"type": "entries",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"When you apply the grappled condition to a creature as part of the attack action, you can use a bonus action to make a melee weapon attack with a versatile weapon against that creature.",
+								"Once on each of your turns, you may don/doff a shield (no action required by you)."
+							]
+						}
+					]
+				},
+				{
+					"name": "When wielding with two hands",
+					"type": "entries",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"When making an attack with a versatile weapon held in two hands, you can use your bonus action to grapple or shove the target, or make an additional attack using your unarmed strike."
+							]
+						}
+					]
+				}
+			]
+		}
+	],
 	"optionalfeature": [
 		{
 			"name": "Potion: Blizzard",
 			"source": "WITCHERHLA",
+			"page": 13,
 			"featureType": [
 				"OF:WITCHERHLA:P"
 			],
@@ -638,6 +789,7 @@
 		{
 			"name": "Potion: Greater Blizzard",
 			"source": "WITCHERHLA",
+			"page": 13,
 			"featureType": [
 				"OF:WITCHERHLA:PG"
 			],
@@ -693,6 +845,7 @@
 		{
 			"name": "Potion: Superior Blizzard",
 			"source": "WITCHERHLA",
+			"page": 13,
 			"featureType": [
 				"OF:WITCHERHLA:PS"
 			],
@@ -748,6 +901,7 @@
 		{
 			"name": "Potion: Master Blizzard",
 			"source": "WITCHERHLA",
+			"page": 13,
 			"featureType": [
 				"OF:WITCHERHLA:PM"
 			],
@@ -803,6 +957,7 @@
 		{
 			"name": "Potion: Sword Oil",
 			"source": "WITCHERHLA",
+			"page": 13,
 			"featureType": [
 				"OF:WITCHERHLA:P"
 			],
@@ -857,6 +1012,7 @@
 		{
 			"name": "Potion: Greater Sword Oil",
 			"source": "WITCHERHLA",
+			"page": 13,
 			"featureType": [
 				"OF:WITCHERHLA:PG"
 			],
@@ -911,6 +1067,7 @@
 		{
 			"name": "Potion: Superior Sword Oil",
 			"source": "WITCHERHLA",
+			"page": 13,
 			"featureType": [
 				"OF:WITCHERHLA:PS"
 			],
@@ -965,6 +1122,7 @@
 		{
 			"name": "Potion: Master Sword Oil",
 			"source": "WITCHERHLA",
+			"page": 13,
 			"featureType": [
 				"OF:WITCHERHLA:PM"
 			],
@@ -1019,6 +1177,7 @@
 		{
 			"name": "Potion: Black Blood",
 			"source": "WITCHERHLA",
+			"page": 13,
 			"featureType": [
 				"OF:WITCHERHLA:P"
 			],
@@ -1073,6 +1232,7 @@
 		{
 			"name": "Potion: Greater Black Blood",
 			"source": "WITCHERHLA",
+			"page": 13,
 			"featureType": [
 				"OF:WITCHERHLA:PG"
 			],
@@ -1127,6 +1287,7 @@
 		{
 			"name": "Potion: Superior Black Blood",
 			"source": "WITCHERHLA",
+			"page": 13,
 			"featureType": [
 				"OF:WITCHERHLA:PS"
 			],
@@ -1181,6 +1342,7 @@
 		{
 			"name": "Potion: Master Black Blood",
 			"source": "WITCHERHLA",
+			"page": 13,
 			"featureType": [
 				"OF:WITCHERHLA:PM"
 			],
@@ -1235,6 +1397,7 @@
 		{
 			"name": "Potion: Elemental Decoction",
 			"source": "WITCHERHLA",
+			"page": 13,
 			"featureType": [
 				"OF:WITCHERHLA:P"
 			],
@@ -1290,6 +1453,7 @@
 		{
 			"name": "Potion: Greater Elemental Decoction",
 			"source": "WITCHERHLA",
+			"page": 13,
 			"featureType": [
 				"OF:WITCHERHLA:PG"
 			],
@@ -1345,6 +1509,7 @@
 		{
 			"name": "Potion: Superior Elemental Decoction",
 			"source": "WITCHERHLA",
+			"page": 13,
 			"featureType": [
 				"OF:WITCHERHLA:PS"
 			],
@@ -1400,6 +1565,7 @@
 		{
 			"name": "Potion: Master Elemental Decoction",
 			"source": "WITCHERHLA",
+			"page": 13,
 			"featureType": [
 				"OF:WITCHERHLA:PM"
 			],
@@ -1455,6 +1621,7 @@
 		{
 			"name": "Potion: Elixir of the Bear",
 			"source": "WITCHERHLA",
+			"page": 13,
 			"featureType": [
 				"OF:WITCHERHLA:P"
 			],
@@ -1509,6 +1676,7 @@
 		{
 			"name": "Potion: Greater Elixir of the Bear",
 			"source": "WITCHERHLA",
+			"page": 13,
 			"featureType": [
 				"OF:WITCHERHLA:PG"
 			],
@@ -1563,6 +1731,7 @@
 		{
 			"name": "Potion: Superior Elixir of the Bear",
 			"source": "WITCHERHLA",
+			"page": 13,
 			"featureType": [
 				"OF:WITCHERHLA:PS"
 			],
@@ -1617,6 +1786,7 @@
 		{
 			"name": "Potion: Master Elixir of the Bear",
 			"source": "WITCHERHLA",
+			"page": 13,
 			"featureType": [
 				"OF:WITCHERHLA:PM"
 			],
@@ -1671,6 +1841,7 @@
 		{
 			"name": "Potion: Elixir of the Cat",
 			"source": "WITCHERHLA",
+			"page": 13,
 			"featureType": [
 				"OF:WITCHERHLA:P"
 			],
@@ -1725,6 +1896,7 @@
 		{
 			"name": "Potion: Greater Elixir of the Cat",
 			"source": "WITCHERHLA",
+			"page": 13,
 			"featureType": [
 				"OF:WITCHERHLA:PG"
 			],
@@ -1779,6 +1951,7 @@
 		{
 			"name": "Potion: Superior Elixir of the Cat",
 			"source": "WITCHERHLA",
+			"page": 13,
 			"featureType": [
 				"OF:WITCHERHLA:PS"
 			],
@@ -1833,6 +2006,7 @@
 		{
 			"name": "Potion: Master Elixir of the Cat",
 			"source": "WITCHERHLA",
+			"page": 13,
 			"featureType": [
 				"OF:WITCHERHLA:PM"
 			],
@@ -1887,6 +2061,7 @@
 		{
 			"name": "Potion: Elixir of the Griffin",
 			"source": "WITCHERHLA",
+			"page": 13,
 			"featureType": [
 				"OF:WITCHERHLA:P"
 			],
@@ -1942,6 +2117,7 @@
 		{
 			"name": "Potion: Greater Elixir of the Griffin",
 			"source": "WITCHERHLA",
+			"page": 13,
 			"featureType": [
 				"OF:WITCHERHLA:PG"
 			],
@@ -1997,6 +2173,7 @@
 		{
 			"name": "Potion: Superior Elixir of the Griffin",
 			"source": "WITCHERHLA",
+			"page": 13,
 			"featureType": [
 				"OF:WITCHERHLA:PS"
 			],
@@ -2052,6 +2229,7 @@
 		{
 			"name": "Potion: Master Elixir of the Griffin",
 			"source": "WITCHERHLA",
+			"page": 13,
 			"featureType": [
 				"OF:WITCHERHLA:PM"
 			],
@@ -2107,6 +2285,7 @@
 		{
 			"name": "Potion: Elixir of the Manticore",
 			"source": "WITCHERHLA",
+			"page": 14,
 			"featureType": [
 				"OF:WITCHERHLA:P"
 			],
@@ -2161,6 +2340,7 @@
 		{
 			"name": "Potion: Greater Elixir of the Manticore",
 			"source": "WITCHERHLA",
+			"page": 14,
 			"featureType": [
 				"OF:WITCHERHLA:PG"
 			],
@@ -2215,6 +2395,7 @@
 		{
 			"name": "Potion: Superior Elixir of the Manticore",
 			"source": "WITCHERHLA",
+			"page": 14,
 			"featureType": [
 				"OF:WITCHERHLA:PS"
 			],
@@ -2269,6 +2450,7 @@
 		{
 			"name": "Potion: Master Elixir of the Manticore",
 			"source": "WITCHERHLA",
+			"page": 14,
 			"featureType": [
 				"OF:WITCHERHLA:PM"
 			],
@@ -2323,6 +2505,7 @@
 		{
 			"name": "Potion: Elixir of the Viper",
 			"source": "WITCHERHLA",
+			"page": 14,
 			"featureType": [
 				"OF:WITCHERHLA:P"
 			],
@@ -2377,6 +2560,7 @@
 		{
 			"name": "Potion: Greater Elixir of the Viper",
 			"source": "WITCHERHLA",
+			"page": 14,
 			"featureType": [
 				"OF:WITCHERHLA:PG"
 			],
@@ -2431,6 +2615,7 @@
 		{
 			"name": "Potion: Superior Elixir of the Viper",
 			"source": "WITCHERHLA",
+			"page": 14,
 			"featureType": [
 				"OF:WITCHERHLA:PS"
 			],
@@ -2485,6 +2670,7 @@
 		{
 			"name": "Potion: Master Elixir of the Viper",
 			"source": "WITCHERHLA",
+			"page": 14,
 			"featureType": [
 				"OF:WITCHERHLA:PM"
 			],
@@ -2539,6 +2725,7 @@
 		{
 			"name": "Potion: Elixir of the Wolf",
 			"source": "WITCHERHLA",
+			"page": 14,
 			"featureType": [
 				"OF:WITCHERHLA:P"
 			],
@@ -2593,6 +2780,7 @@
 		{
 			"name": "Potion: Greater Elixir of the Wolf",
 			"source": "WITCHERHLA",
+			"page": 14,
 			"featureType": [
 				"OF:WITCHERHLA:PG"
 			],
@@ -2647,6 +2835,7 @@
 		{
 			"name": "Potion: Superior Elixir of the Wolf",
 			"source": "WITCHERHLA",
+			"page": 14,
 			"featureType": [
 				"OF:WITCHERHLA:PS"
 			],
@@ -2701,6 +2890,7 @@
 		{
 			"name": "Potion: Master Elixir of the Wolf",
 			"source": "WITCHERHLA",
+			"page": 14,
 			"featureType": [
 				"OF:WITCHERHLA:PM"
 			],
@@ -2755,6 +2945,7 @@
 		{
 			"name": "Potion: Golden Oriole",
 			"source": "WITCHERHLA",
+			"page": 14,
 			"featureType": [
 				"OF:WITCHERHLA:P"
 			],
@@ -2818,6 +3009,7 @@
 		{
 			"name": "Potion: Greater Golden Oriole",
 			"source": "WITCHERHLA",
+			"page": 14,
 			"featureType": [
 				"OF:WITCHERHLA:PG"
 			],
@@ -2884,6 +3076,7 @@
 		{
 			"name": "Potion: Superior Golden Oriole",
 			"source": "WITCHERHLA",
+			"page": 14,
 			"featureType": [
 				"OF:WITCHERHLA:PS"
 			],
@@ -2953,6 +3146,7 @@
 		{
 			"name": "Potion: Master Golden Oriole",
 			"source": "WITCHERHLA",
+			"page": 14,
 			"featureType": [
 				"OF:WITCHERHLA:PM"
 			],
@@ -3022,6 +3216,7 @@
 		{
 			"name": "Potion: Killer Whale",
 			"source": "WITCHERHLA",
+			"page": 14,
 			"featureType": [
 				"OF:WITCHERHLA:P"
 			],
@@ -3076,6 +3271,7 @@
 		{
 			"name": "Potion: Greater Killer Whale",
 			"source": "WITCHERHLA",
+			"page": 14,
 			"featureType": [
 				"OF:WITCHERHLA:PG"
 			],
@@ -3130,6 +3326,7 @@
 		{
 			"name": "Potion: Superior Killer Whale",
 			"source": "WITCHERHLA",
+			"page": 14,
 			"featureType": [
 				"OF:WITCHERHLA:PS"
 			],
@@ -3184,6 +3381,7 @@
 		{
 			"name": "Potion: Master Killer Whale",
 			"source": "WITCHERHLA",
+			"page": 14,
 			"featureType": [
 				"OF:WITCHERHLA:PM"
 			],
@@ -3238,6 +3436,7 @@
 		{
 			"name": "Potion: Swallow",
 			"source": "WITCHERHLA",
+			"page": 14,
 			"featureType": [
 				"OF:WITCHERHLA:P"
 			],
@@ -3292,6 +3491,7 @@
 		{
 			"name": "Potion: Greater Swallow",
 			"source": "WITCHERHLA",
+			"page": 14,
 			"featureType": [
 				"OF:WITCHERHLA:PG"
 			],
@@ -3346,6 +3546,7 @@
 		{
 			"name": "Potion: Superior Swallow",
 			"source": "WITCHERHLA",
+			"page": 14,
 			"featureType": [
 				"OF:WITCHERHLA:PS"
 			],
@@ -3400,6 +3601,7 @@
 		{
 			"name": "Potion: Master Swallow",
 			"source": "WITCHERHLA",
+			"page": 14,
 			"featureType": [
 				"OF:WITCHERHLA:PM"
 			],
@@ -3454,6 +3656,7 @@
 		{
 			"name": "Potion: Thunderbolt",
 			"source": "WITCHERHLA",
+			"page": 14,
 			"featureType": [
 				"OF:WITCHERHLA:P"
 			],
@@ -3508,6 +3711,7 @@
 		{
 			"name": "Potion: Greater Thunderbolt",
 			"source": "WITCHERHLA",
+			"page": 14,
 			"featureType": [
 				"OF:WITCHERHLA:PG"
 			],
@@ -3562,6 +3766,7 @@
 		{
 			"name": "Potion: Superior Thunderbolt",
 			"source": "WITCHERHLA",
+			"page": 14,
 			"featureType": [
 				"OF:WITCHERHLA:PS"
 			],
@@ -3616,6 +3821,7 @@
 		{
 			"name": "Potion: Master Thunderbolt",
 			"source": "WITCHERHLA",
+			"page": 14,
 			"featureType": [
 				"OF:WITCHERHLA:PM"
 			],
@@ -3670,6 +3876,7 @@
 		{
 			"name": "Bomb: Dancing Star",
 			"source": "WITCHERHLA",
+			"page": 15,
 			"featureType": [
 				"OF:WITCHERHLA:B"
 			],
@@ -3689,6 +3896,7 @@
 		{
 			"name": "Bomb: Greater Dancing Star",
 			"source": "WITCHERHLA",
+			"page": 15,
 			"featureType": [
 				"OF:WITCHERHLA:BG"
 			],
@@ -3708,6 +3916,7 @@
 		{
 			"name": "Bomb: Superior Dancing Star",
 			"source": "WITCHERHLA",
+			"page": 15,
 			"featureType": [
 				"OF:WITCHERHLA:BS"
 			],
@@ -3727,6 +3936,7 @@
 		{
 			"name": "Bomb: Master Dancing Star",
 			"source": "WITCHERHLA",
+			"page": 15,
 			"featureType": [
 				"OF:WITCHERHLA:BM"
 			],
@@ -3746,6 +3956,7 @@
 		{
 			"name": "Bomb: Devil's Puffball",
 			"source": "WITCHERHLA",
+			"page": 15,
 			"featureType": [
 				"OF:WITCHERHLA:B"
 			],
@@ -3765,6 +3976,7 @@
 		{
 			"name": "Bomb: Greater Devil's Puffball",
 			"source": "WITCHERHLA",
+			"page": 15,
 			"featureType": [
 				"OF:WITCHERHLA:BG"
 			],
@@ -3784,6 +3996,7 @@
 		{
 			"name": "Bomb: Superior Devil's Puffball",
 			"source": "WITCHERHLA",
+			"page": 15,
 			"featureType": [
 				"OF:WITCHERHLA:BS"
 			],
@@ -3801,8 +4014,9 @@
 			]
 		},
 		{
-			"name": "Bomb: Superior Devil's Puffball",
+			"name": "Bomb: Master Devil's Puffball",
 			"source": "WITCHERHLA",
+			"page": 15,
 			"featureType": [
 				"OF:WITCHERHLA:BM"
 			],
@@ -3822,6 +4036,7 @@
 		{
 			"name": "Bomb: Dimeritium",
 			"source": "WITCHERHLA",
+			"page": 15,
 			"featureType": [
 				"OF:WITCHERHLA:B"
 			],
@@ -3842,6 +4057,7 @@
 		{
 			"name": "Bomb: Greater Dimeritium",
 			"source": "WITCHERHLA",
+			"page": 15,
 			"featureType": [
 				"OF:WITCHERHLA:BG"
 			],
@@ -3862,6 +4078,7 @@
 		{
 			"name": "Bomb: Superior Dimeritium",
 			"source": "WITCHERHLA",
+			"page": 15,
 			"featureType": [
 				"OF:WITCHERHLA:BS"
 			],
@@ -3882,6 +4099,7 @@
 		{
 			"name": "Bomb: Superior Dimeritium",
 			"source": "WITCHERHLA",
+			"page": 15,
 			"featureType": [
 				"OF:WITCHERHLA:BM"
 			],
@@ -3902,6 +4120,7 @@
 		{
 			"name": "Bomb: Dragon's Dream",
 			"source": "WITCHERHLA",
+			"page": 16,
 			"featureType": [
 				"OF:WITCHERHLA:B"
 			],
@@ -3922,6 +4141,7 @@
 		{
 			"name": "Bomb: Greater Dragon's Dream",
 			"source": "WITCHERHLA",
+			"page": 16,
 			"featureType": [
 				"OF:WITCHERHLA:BG"
 			],
@@ -3942,6 +4162,7 @@
 		{
 			"name": "Bomb: Superior Dragon's Dream",
 			"source": "WITCHERHLA",
+			"page": 16,
 			"featureType": [
 				"OF:WITCHERHLA:BS"
 			],
@@ -3962,6 +4183,7 @@
 		{
 			"name": "Bomb: Master Dragon's Dream",
 			"source": "WITCHERHLA",
+			"page": 16,
 			"featureType": [
 				"OF:WITCHERHLA:BM"
 			],
@@ -3982,6 +4204,7 @@
 		{
 			"name": "Bomb: Grapeshot",
 			"source": "WITCHERHLA",
+			"page": 16,
 			"featureType": [
 				"OF:WITCHERHLA:B"
 			],
@@ -4001,6 +4224,7 @@
 		{
 			"name": "Bomb: Greater Grapeshot",
 			"source": "WITCHERHLA",
+			"page": 16,
 			"featureType": [
 				"OF:WITCHERHLA:BG"
 			],
@@ -4020,6 +4244,7 @@
 		{
 			"name": "Bomb: Superior Grapeshot",
 			"source": "WITCHERHLA",
+			"page": 16,
 			"featureType": [
 				"OF:WITCHERHLA:BS"
 			],
@@ -4039,6 +4264,7 @@
 		{
 			"name": "Bomb: Grapeshot",
 			"source": "WITCHERHLA",
+			"page": 16,
 			"featureType": [
 				"OF:WITCHERHLA:B"
 			],
@@ -4058,6 +4284,7 @@
 		{
 			"name": "Bomb: Moondust",
 			"source": "WITCHERHLA",
+			"page": 16,
 			"featureType": [
 				"OF:WITCHERHLA:B"
 			],
@@ -4078,6 +4305,7 @@
 		{
 			"name": "Bomb: Greater Moondust",
 			"source": "WITCHERHLA",
+			"page": 16,
 			"featureType": [
 				"OF:WITCHERHLA:BG"
 			],
@@ -4098,6 +4326,7 @@
 		{
 			"name": "Bomb: Superior Moondust",
 			"source": "WITCHERHLA",
+			"page": 16,
 			"featureType": [
 				"OF:WITCHERHLA:BS"
 			],
@@ -4118,6 +4347,7 @@
 		{
 			"name": "Bomb: Master Moondust",
 			"source": "WITCHERHLA",
+			"page": 16,
 			"featureType": [
 				"OF:WITCHERHLA:BM"
 			],
@@ -4138,6 +4368,7 @@
 		{
 			"name": "Bomb: Northern Wind",
 			"source": "WITCHERHLA",
+			"page": 16,
 			"featureType": [
 				"OF:WITCHERHLA:B"
 			],
@@ -4157,6 +4388,7 @@
 		{
 			"name": "Bomb: Greater Northern Wind",
 			"source": "WITCHERHLA",
+			"page": 16,
 			"featureType": [
 				"OF:WITCHERHLA:BG"
 			],
@@ -4176,6 +4408,7 @@
 		{
 			"name": "Bomb: Superior Northern Wind",
 			"source": "WITCHERHLA",
+			"page": 16,
 			"featureType": [
 				"OF:WITCHERHLA:BS"
 			],
@@ -4195,6 +4428,7 @@
 		{
 			"name": "Bomb: Master Northern Wind",
 			"source": "WITCHERHLA",
+			"page": 16,
 			"featureType": [
 				"OF:WITCHERHLA:BM"
 			],
@@ -4214,6 +4448,7 @@
 		{
 			"name": "Bomb: Samum",
 			"source": "WITCHERHLA",
+			"page": 16,
 			"featureType": [
 				"OF:WITCHERHLA:B"
 			],
@@ -4233,6 +4468,7 @@
 		{
 			"name": "Bomb: Greater Samum",
 			"source": "WITCHERHLA",
+			"page": 16,
 			"featureType": [
 				"OF:WITCHERHLA:BG"
 			],
@@ -4252,6 +4488,7 @@
 		{
 			"name": "Bomb: Superior Samum",
 			"source": "WITCHERHLA",
+			"page": 16,
 			"featureType": [
 				"OF:WITCHERHLA:BS"
 			],
@@ -4271,6 +4508,7 @@
 		{
 			"name": "Bomb: Master Samum",
 			"source": "WITCHERHLA",
+			"page": 16,
 			"featureType": [
 				"OF:WITCHERHLA:BM"
 			],
@@ -4290,114 +4528,118 @@
 	],
 	"classFeature": [
 		{
-			"name": "Alchemy",
+			"name": "Witcher's Bestiary",
 			"source": "WITCHERHLA",
 			"className": "Witcher",
 			"classSource": "WITCHERHLA",
+			"page": 4,
 			"level": 1,
+			"header": 1,
 			"entries": [
-				"At 1st level, you have been trained in the specialized alchemy used by witchers to prepare themselves for combat. During a short rest, you can use {@item Alchemist's supplies|PHB} to craft a potion, oil, or bomb if you have the required ingredients and know the appropriate {@filter recipe|optionalfeatures|source=null|feature type=OF:WITCHERHLA:R}, a list of which are found at the end of this class description. You can carry 2 alchemy products at any given time, and only you can use the products you create.",
-				"The number of recipes you know is equal to your proficiency bonus + your Intelligence modifier. At the DM's discretion, other recipes may be available for purchase or found in the world."
+				"The Witcher's Bestiary is where a Witcher records the strengths and weaknesses of numerous monsters. Through countless hours of studying your bestiary, you have a chance to recall information you have learned of a non-humanoid creature you are facing when beginning combat.",
+				"When you roll Initiative, you can choose to make an Intelligence-based skill check as determined by the DM to recall helpful information about one creature you can see. You must succeed against a DC set by your DM (in most cases a value of 15 may be appropriate). If you do so, then you gain advantage on attack rolls made as part of the first attack action or cast a spell action you make against that creature or another of the same creature type. Alternatively, you can impose disadvantage on the first saving throw that creature or another of the same creature type makes against one of your spells or abilities.",
+				"If you do not use this benefit within 1 minute, it is lost. You can use this feature twice, and you regain all expended uses after a long rest."
 			]
 		},
 		{
-			"name": "Mutations",
+			"name": "Witcher School Feature",
 			"source": "WITCHERHLA",
 			"className": "Witcher",
 			"classSource": "WITCHERHLA",
+			"page": 4,
 			"level": 1,
+			"header": 1,
 			"entries": [
-				"As a witcher, you have undergone mutations to your body including the perilous Trial of the Grasses. Starting at 1st level, you gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"Your walking speed is increased by 5 feet. At 10th level, this bonus increases to 10 feet. At 18th level, this bonus increases to 20 feet, and you gain a climbing speed equal to your walking speed.",
-						"You have {@sense darkvision}, up to a range of 30 feet. At 10th level, this range increases to 60 feet. At 18th level, this range increases to 120 feet, and you also gain {@sense blindsight} to a range of 30 feet.",
-						"You have advantage on Wisdom ({@skill Perception}) and Wisdom ({@skill Survival}) checks based on smell.",
-						"You are immune to natural diseases.",
-						"You are completely sterile - you can have no children through natural means.",
-						"Your lifespan is extended dramatically - you age at a rate 10 times slower than regular members of your race."
-					]
-				}
+				"At 1st level, you choose a school of training that best represents your style of monster hunting. Your Witcher school grants you features."
 			]
 		},
 		{
-			"name": "Focus",
+			"name": "Witcher School Feature",
 			"source": "WITCHERHLA",
 			"className": "Witcher",
 			"classSource": "WITCHERHLA",
-			"level": 2,
+			"page": 4,
+			"level": 6,
+			"header": 1,
 			"entries": [
-				"At 2nd level, you have learned the art of reading your opponent and the battlefield, allowing you to enhance your attacks and use powerful abilities. Your focus is set to 1 when you roll initiative, and you gain 1 focus each time you successfully hit with a weapon attack, up to your focus cap, which is detailed on the witcher class table. You lose all focus after combat ends.",
-				"When you make a weapon attack, you can spend 2 focus to grant yourself advantage on that attack; if you do so, that attack cannot generate focus.",
-				"Starting at 11th level, your focus is set to 3 when you roll initiative instead of 1."
+				"At 6th level, you choose a school of training that best represents your style of monster hunting. Your Witcher school grants you features."
 			]
 		},
 		{
-			"name": "Signs",
+			"name": "Witcher School Feature",
 			"source": "WITCHERHLA",
 			"className": "Witcher",
 			"classSource": "WITCHERHLA",
-			"level": 2,
+			"page": 4,
+			"level": 10,
+			"header": 1,
 			"entries": [
-				"Starting at 2nd level, you are able to channel your focus to cast a few simple but practical magic hexes used by witchers called signs. You can cast a sign in place of a weapon attack when you take the {@action Attack} action on your turn. Casting a sign costs 1 focus, and you can only cast one sign on your turn. You can't cast a sign while holding something in each hand or wielding a weapon with the two-handed property.",
-				"Signs are considered level 1 evocation spells with somatic components for the purposes of other magical effects, and are not considered weapon attacks.",
-				"You learn two signs at 2nd level, and another at 5th, 9th, and 13th level.",
+				"At 10th level, you choose a school of training that best represents your style of monster hunting. Your Witcher school grants you features."
+			]
+		},
+		{
+			"name": "Witcher School Feature",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"page": 4,
+			"level": 14,
+			"header": 1,
+			"entries": [
+				"At 14th level, you choose a school of training that best represents your style of monster hunting. Your Witcher school grants you features."
+			]
+		},
+		{
+			"name": "Witcher School Feature",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"page": 4,
+			"level": 18,
+			"header": 1,
+			"entries": [
+				"At 18th level, you choose a school of training that best represents your style of monster hunting. Your Witcher school grants you features."
+			]
+		},
+		{
+			"name": "Witcher Spellcasting",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"page": 4,
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"At 2nd level, you have learned a rudimentary form of magic, allowing you to quickly produce magical effects through weaving hand signs. Casting a Witcher spell requires one hand free in order to create the somatic components.",
 				{
+					"name": "Spell Slots",
 					"type": "entries",
-					"name": "Saving Throws",
 					"entries": [
-						"The saving throw DC is calculated as follows:",
-						{
-							"type": "abilityDc",
-							"name": "Sign",
-							"attributes": [
-								"wis"
-							]
-						}
+						"The Witcher table shows how many spell slots you have to cast your Witcher spells. To cast one of these Witcher spells , you must expend a slot of the spell's level or higher. You can learn additional Witcher spells of your choice at higher levels, as shown in the Witcher table. You regain all expended sp ell slots when you finish a Long Rest.",
+						"For example, if you know the 1st-level spell {@spell Aard|WITCHERHLA} and have a 1st-level and a 2nd-level spell slot available, you can cast {@spell Aard|WITCHERHLA} using either slot."
 					]
 				},
 				{
-					"type": "options",
+					"name": "Spells Known off 1st Level and Higher",
+					"type": "entries",
 					"entries": [
+						"You know two {@filter 1st-level spells of your choice from the Witcher spell list|spells|level=1|class=Witcher|source=WITCHERHLA}.",
+						"The Spells Known column of the Witcher table shows when you learn more Witcher spells of your choice. Each of the spells must be of a level for which you have spell slots. For instance, when you reach 6th level in this class, you can learn one new spell of 1st or 2nd level.",
+						"Additionally, when you gain a level in this class, you can choose one of the Witcher spells you know and replace it with another spell from the Witcher Spell list, which also must be of a level for which you have Spell Slots."
+					]
+				},
+				{
+					"name": "Spellcasting Ability",
+					"type": "entries",
+					"entries": [
+						"Intelligence is your spellcasting ability for your witcher spells, since the power of your spellcasting came through rigorous study and practice. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a Witcher spell you cast and when making an attack roll with one.",
+						"{@b Saving throws:} Some spells require a saving throw to resist its effect. The saving throw DC is calculated as follows:",
 						{
-							"type": "entries",
-							"name": "Igni",
-							"entries": [
-								"You blast flames at a creature within 15 feet. It must make a Dexterity saving throw, taking {@dice 2d6} fire damage on a failed save or half that on a successful save. When empowered, all creatures in a 15 foot cone are affected instead.",
-								"This damage increases by {@dice 1d6} at 5th({@dice 3d6}), 11th({@dice 4d6}), and 17th({@dice 5d6}) level.",
-								"You can also cast the {@spell Control Flames} cantrip at will."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Quen",
-							"entries": [
-								"You place a protective shield on yourself. For the next minute, the first time you take damage from a weapon attack, that damage is reduced by {@dice 1d8}. When empowered, you can cast this as a reaction to being attacked.",
-								"This reduction increases by {@dice 1d8} at 5th({@dice 2d8}), 11th({@dice 3d8}), and 17th({@dice 4d8}) level."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Yrden",
-							"entries": [
-								"You place down a magical circle with a radius of 10 feet around you that lasts one minute. Inside the circle is difficult terrain for hostile creatures and enemies resistant to only nonmagical damage lose this ability. When empowered, all ranged attacks from hostile creatures made into the circle from without are made with disadvantage."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Aard",
-							"entries": [
-								"You blow a powerful burst of air at a creature within 15 feet. It must make a Strength saving throw or be pushed 10 feet back and knocked {@condition prone}. When empowered, all creatures in a 5 foot radius sphere around you are affected instead.",
-								"You can also cast the {@spell Gust} cantrip at will."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Axii",
-							"entries": [
-								"You attempt to cloud the mind of a creature within 15 feet. It must make a Wisdom saving throw; on a failed save, the creature has disadvantage on the first attack it makes until the end of its next turn. A creature immune to being {@condition charmed} automatically succeeds on its save. When empowered, the affected creature loses its first attack entirely.",
-								"You can also cast the {@spell Friends} cantrip at will."
+							"type": "list",
+							"style": "list-no-bullets",
+							"items": [
+								"{@b Spell Save DC} = 8 + your proficiency bonus + your Intelligence modifier",
+								"{@b Spell Attack Modifier} = your proficiency bonus + your Intelligence modifier"
 							]
 						}
 					]
@@ -4405,13 +4647,173 @@
 			]
 		},
 		{
-			"name": "Witcher School",
+			"name": "Fighting Style",
 			"source": "WITCHERHLA",
 			"className": "Witcher",
 			"classSource": "WITCHERHLA",
-			"level": 3,
+			"page": 4,
+			"level": 2,
+			"header": 1,
 			"entries": [
-				"At 3rd level, you choose a witcher school whose techniques and style you wish to employ. Choose between the School of the Wolf, Bear, Cat, Griffin, or Viper, detailed at the end of this class description. The school you choose grants you features at 3rd level, then again at 7th, 10th, and 14th level."
+				"Also at 2nd level, you adopt a particular style of fighting as your specialty. {@filter Choose one of the following options|optionalfeatures|source=COMFightStyle|feature type=FS:Witcher}. You can't take the same fighting style option more than once, even if you get to choose again later."
+
+			]
+		},
+		{
+			"name": "Witcher Preparation",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"page": 5,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"The key to a Witcher's success is often found in their preparation, both through alchemy as well as crafting. Among their tools, Witchers are known to utilize specialized {@filter potions|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:P;OF:WITCHERHLA:PG;OF:WITCHERHLA:PS;OF:WITCHERHLA:PM} and {@filter handbombs|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:B;OF:WITCHERHLA:BG;OF:WITCHERHLA:BSOF:WITCHERHLA:BM} in their fights with monsters.",
+				"Starting at 3rd level you gain the Witcher Preparation feature. With this feature you prepare a number of various {@filter potions|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:P} and {@filter handbombs|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:B} from the formulas and schematics you know, which you can then use a number of times equal to your proficiency modifier. {@b Consuming a potion or using a handbomb equals one use of Witcher Preparation.}",
+				"To regain spent uses of this feature you must have alchemist's supplies on your person as well as devote 1 hour during your long rest to preparation.",
+				"{@b Saving throws:} Some Witcher Preparation items require a saving throw to resist its effect. The saving throws use the Spell Save DC.",
+				{
+					"name": "{@filter Potions|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:P}",
+					"type": "entries",
+					"entries": [
+						"You can prepare a number of potion formulas, listed under \"Alchemy\". You gain the ability to prepare additional potions as you gain Witcher levels, as shown in the Potions Prepared column of the Witcher table. Your ability to brew stronger versions of your potions will increase at 7th, 11th, and 15th levels.",
+						"A single potion's effect does not stack with itself during its active duration; if the same potion is used prior to the effects of the first potion wearing off, the effects of the first dissipate and are replaced with the effects of the second.",
+						"A Witcher's potions are highly toxic, and only a Witcher can withstand the toxins due to their conditioning and training. A non-witcher that drinks a Witcher potion must succeed on a Constitution saving throw against your spell save DC or become poisoned for 1 minute. Even if they succeed, they take poison damage determined by the tier of the potion consumed, and do not get any of the benefits of the potion.",
+						"{@b Ingesting a Witcher potion requires your choice of an action or a bonus action.}"
+					]
+				},
+				{
+					"name": "{@filter Handbombs|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:B}",
+					"type": "entries",
+					"entries": [
+						"Potions aren't a Witcher's only form of preparation in hunting monsters. They can also prepare handbombs to tip the scales in their favor, listed under \"Alchemy\". Witchers are able to prepare schematics for crafting 2 handbombs of their choice at level 3. You can prepare an additional schematic as well as improvements to the handbombs at 7th, 11th, and 15th levels, as shown in the Handbombs Prepared column of the Witcher table.",
+						"{@b Using a handbomb requires an action.}"
+					]
+				}
+			]
+		},
+		{
+			"name": "Greater Witcher Preparation",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"page": 5,
+			"level": 7,
+			"header": 1,
+			"entries": [
+				"The key to a Witcher's success is often found in their preparation, both through alchemy as well as crafting. Among their tools, Witchers are known to utilize specialized {@filter potions|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:P;OF:WITCHERHLA:PG;OF:WITCHERHLA:PS;OF:WITCHERHLA:PM} and {@filter handbombs|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:B;OF:WITCHERHLA:BG;OF:WITCHERHLA:BSOF:WITCHERHLA:BM} in their fights with monsters.",
+				"Starting at 7th level you gain the Witcher Preparation feature. With this feature you prepare a number of various {@filter greater potions|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:PG} and {@filter greater handbombs|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:BG} from the formulas and schematics you know, which you can then use a number of times equal to your proficiency modifier. {@b Consuming a potion or using a handbomb equals one use of Witcher Preparation.}",
+				"To regain spent uses of this feature you must have alchemist's supplies on your person as well as devote 1 hour during your long rest to preparation.",
+				"{@b Saving throws:} Some Witcher Preparation items require a saving throw to resist its effect. The saving throws use the Spell Save DC.",
+				{
+					"name": "{@filter Greater Potions|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:PG}",
+					"type": "entries",
+					"entries": [
+						"You can prepare a number of potion formulas, listed under \"Alchemy\". You gain the ability to prepare additional potions as you gain Witcher levels, as shown in the Potions Prepared column of the Witcher table. Your ability to brew stronger versions of your potions will increase at 7th, 11th, and 15th levels.",
+						"A single potion's effect does not stack with itself during its active duration; if the same potion is used prior to the effects of the first potion wearing off, the effects of the first dissipate and are replaced with the effects of the second.",
+						"A Witcher's potions are highly toxic, and only a Witcher can withstand the toxins due to their conditioning and training. A non-witcher that drinks a Witcher potion must succeed on a Constitution saving throw against your spell save DC or become poisoned for 1 minute. Even if they succeed, they take poison damage determined by the tier of the potion consumed, and do not get any of the benefits of the potion.",
+						"{@b Ingesting a Witcher potion requires your choice of an action or a bonus action.}"
+					]
+				},
+				{
+					"name": "{@filter Greater Handbombs|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:BG}",
+					"type": "entries",
+					"entries": [
+						"Potions aren't a Witcher's only form of preparation in hunting monsters. They can also prepare handbombs to tip the scales in their favor, listed under \"Alchemy\". Witchers are able to prepare schematics for crafting 2 handbombs of their choice at level 3. You can prepare an additional schematic as well as improvements to the handbombs at 7th, 11th, and 15th levels, as shown in the Handbombs Prepared column of the Witcher table.",
+						"{@b Using a handbomb requires an action.}"
+					]
+				}
+			]
+		},
+		{
+			"name": "Superior Witcher Preparation",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"page": 5,
+			"level": 11,
+			"header": 1,
+			"entries": [
+				"The key to a Witcher's success is often found in their preparation, both through alchemy as well as crafting. Among their tools, Witchers are known to utilize specialized {@filter potions|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:P;OF:WITCHERHLA:PG;OF:WITCHERHLA:PS;OF:WITCHERHLA:PM} and {@filter handbombs|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:B;OF:WITCHERHLA:BG;OF:WITCHERHLA:BSOF:WITCHERHLA:BM} in their fights with monsters.",
+				"Starting at 11th level you gain the Witcher Preparation feature. With this feature you prepare a number of various {@filter superior potions|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:PS} and {@filter superior handbombs|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:BS} from the formulas and schematics you know, which you can then use a number of times equal to your proficiency modifier. {@b Consuming a potion or using a handbomb equals one use of Witcher Preparation.}",
+				"To regain spent uses of this feature you must have alchemist's supplies on your person as well as devote 1 hour during your long rest to preparation.",
+				"{@b Saving throws:} Some Witcher Preparation items require a saving throw to resist its effect. The saving throws use the Spell Save DC.",
+				{
+					"name": "{@filter Superior Potions|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:PS}",
+					"type": "entries",
+					"entries": [
+						"You can prepare a number of potion formulas, listed under \"Alchemy\". You gain the ability to prepare additional potions as you gain Witcher levels, as shown in the Potions Prepared column of the Witcher table. Your ability to brew stronger versions of your potions will increase at 7th, 11th, and 15th levels.",
+						"A single potion's effect does not stack with itself during its active duration; if the same potion is used prior to the effects of the first potion wearing off, the effects of the first dissipate and are replaced with the effects of the second.",
+						"A Witcher's potions are highly toxic, and only a Witcher can withstand the toxins due to their conditioning and training. A non-witcher that drinks a Witcher potion must succeed on a Constitution saving throw against your spell save DC or become poisoned for 1 minute. Even if they succeed, they take poison damage determined by the tier of the potion consumed, and do not get any of the benefits of the potion.",
+						"{@b Ingesting a Witcher potion requires your choice of an action or a bonus action.}"
+					]
+				},
+				{
+					"name": "{@filter Superior Handbombs|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:BS}",
+					"type": "entries",
+					"entries": [
+						"Potions aren't a Witcher's only form of preparation in hunting monsters. They can also prepare handbombs to tip the scales in their favor, listed under \"Alchemy\". Witchers are able to prepare schematics for crafting 2 handbombs of their choice at level 3. You can prepare an additional schematic as well as improvements to the handbombs at 7th, 11th, and 15th levels, as shown in the Handbombs Prepared column of the Witcher table.",
+						"{@b Using a handbomb requires an action.}"
+					]
+				}
+			]
+		},
+		{
+			"name": "Master Witcher Preparation",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"page": 5,
+			"level": 15,
+			"header": 1,
+			"entries": [
+				"The key to a Witcher's success is often found in their preparation, both through alchemy as well as crafting. Among their tools, Witchers are known to utilize specialized {@filter potions|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:P;OF:WITCHERHLA:PG;OF:WITCHERHLA:PS;OF:WITCHERHLA:PM} and {@filter handbombs|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:B;OF:WITCHERHLA:BG;OF:WITCHERHLA:BSOF:WITCHERHLA:BM} in their fights with monsters.",
+				"Starting at 15th level you gain the Witcher Preparation feature. With this feature you prepare a number of various {@filter master potions|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:PM} and {@filter master handbombs|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:BM} from the formulas and schematics you know, which you can then use a number of times equal to your proficiency modifier. {@b Consuming a potion or using a handbomb equals one use of Witcher Preparation.}",
+				"To regain spent uses of this feature you must have alchemist's supplies on your person as well as devote 1 hour during your long rest to preparation.",
+				"{@b Saving throws:} Some Witcher Preparation items require a saving throw to resist its effect. The saving throws use the Spell Save DC.",
+				{
+					"name": "{@filter Master Potions|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:PM}",
+					"type": "entries",
+					"entries": [
+						"You can prepare a number of potion formulas, listed under \"Alchemy\". You gain the ability to prepare additional potions as you gain Witcher levels, as shown in the Potions Prepared column of the Witcher table. Your ability to brew stronger versions of your potions will increase at 7th, 11th, and 15th levels.",
+						"A single potion's effect does not stack with itself during its active duration; if the same potion is used prior to the effects of the first potion wearing off, the effects of the first dissipate and are replaced with the effects of the second.",
+						"A Witcher's potions are highly toxic, and only a Witcher can withstand the toxins due to their conditioning and training. A non-witcher that drinks a Witcher potion must succeed on a Constitution saving throw against your spell save DC or become poisoned for 1 minute. Even if they succeed, they take poison damage determined by the tier of the potion consumed, and do not get any of the benefits of the potion.",
+						"{@b Ingesting a Witcher potion requires your choice of an action or a bonus action.}"
+					]
+				},
+				{
+					"name": "{@filter Master Handbombs|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:BM}",
+					"type": "entries",
+					"entries": [
+						"Potions aren't a Witcher's only form of preparation in hunting monsters. They can also prepare handbombs to tip the scales in their favor, listed under \"Alchemy\". Witchers are able to prepare schematics for crafting 2 handbombs of their choice at level 3. You can prepare an additional schematic as well as improvements to the handbombs at 7th, 11th, and 15th levels, as shown in the Handbombs Prepared column of the Witcher table.",
+						"{@b Using a handbomb requires an action.}"
+					]
+				}
+			]
+		},
+		{
+			"name": "Blade Oil",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"page": 5,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Starting at 3rd level, you can apply Blade Oil as a bonus action to a weapon or ammunition. Once per turn when you deal damage with a weapon attack with this weapon or ammunition, you can choose one weapon damage die and reroll it, taking the better result. The effects of the oil last for one minute, and you can use this feature twice per long rest."
+			]
+		},
+		{
+			"name": "Blade Oil Superior",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"page": 5,
+			"level": 6,
+			"header": 1,
+			"entries": [
+				"Starting at 6th level, you can apply Blade Oil as a bonus action to a weapon or ammunition. Once per turn when you deal damage with a weapon attack with this weapon or ammunition, you can choose one weapon damage die and reroll it, taking the better result. The effects of the oil last for one minute, and you can use this feature twice per long rest.",
+				"At 6th level, you improve your blade oil to additionally prevent a creature's health from regenerating for one turn."
 			]
 		},
 		{
@@ -4419,9 +4821,63 @@
 			"source": "WITCHERHLA",
 			"className": "Witcher",
 			"classSource": "WITCHERHLA",
+			"page": 6,
 			"level": 4,
+			"header": 1,
 			"entries": [
-				"When you reach 4th, 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"page": 6,
+			"level": 8,
+			"header": 1,
+			"entries": [
+				"When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"page": 6,
+			"level": 12,
+			"header": 1,
+			"entries": [
+				"When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"page": 6,
+			"level": 16,
+			"header": 1,
+			"entries": [
+				"When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"page": 6,
+			"level": 19,
+			"header": 1,
+			"entries": [
+				"When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
 			]
 		},
@@ -4430,164 +4886,81 @@
 			"source": "WITCHERHLA",
 			"className": "Witcher",
 			"classSource": "WITCHERHLA",
+			"page": 6,
 			"level": 5,
+			"header": 1,
 			"entries": [
-				"Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack} action on your turn."
+				"Beginning at 5th level, you can attack twice, rather than once, whenever you take the {@action Attack} action on your turn."
 			]
 		},
 		{
-			"name": "Studious Eye",
+			"name": "Monsters Are My Trade",
 			"source": "WITCHERHLA",
 			"className": "Witcher",
 			"classSource": "WITCHERHLA",
-			"level": 6,
+			"page": 6,
+			"level": 5,
+			"header": 1,
 			"entries": [
-				"By 6th level, you have learned to identify certain traits and characteristics in creatures you fight. By either observing a creature for 1 minute or spending 1 focus as a bonus action, you learn one aspect about the creature of your choice: Creature Type, Armor Class, Senses, Damage Vulnerabilities, Damage Resistances, Damage Immunities, or Condition Immunities. At 13th level you may learn two aspects of your choice instead.",
-				"Additionally, choose one of Intelligence ({@skill Investigation}), Wisdom ({@skill Perception}), Wisdom ({@skill Insight}), or Wisdom ({@skill Survival}) that you are proficient in; your proficiency bonus is doubled for any ability check that uses the chosen skill. At 13th level, you can choose another proficiency from the list."
+				"Also at 5th level, you have improved your ability to earn greater compensation in your craft. You gain advantage on all Charisma-based skill checks related to haggling the price of commissions or rewards from hunting monsters."
 			]
 		},
 		{
-			"name": "Witcher School Feature",
+			"name": "Honed Edge",
 			"source": "WITCHERHLA",
 			"className": "Witcher",
 			"classSource": "WITCHERHLA",
-			"level": 7,
-			"entries": [
-				"At 7th level, you gain a feature from your Witcher School."
-			]
-		},
-		{
-			"name": "Ability Score Improvement",
-			"source": "WITCHERHLA",
-			"className": "Witcher",
-			"classSource": "WITCHERHLA",
-			"level": 8,
-			"entries": [
-				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-			]
-		},
-		{
-			"name": "Empowered Signs",
-			"source": "WITCHERHLA",
-			"className": "Witcher",
-			"classSource": "WITCHERHLA",
-			"level": 9,
-			"entries": [
-				"Starting at 9th level, you can use signs in new, more powerful variants for an enhanced effect. By consuming 2 additional focus, you can cast an alternative form of each sign as detailed in their descriptions."
-			]
-		},
-		{
-			"name": "Witcher School Feature",
-			"source": "WITCHERHLA",
-			"className": "Witcher",
-			"classSource": "WITCHERHLA",
-			"level": 10,
-			"entries": [
-				"At 10th level, you gain a feature from your Witcher School."
-			]
-		},
-		{
-			"name": "Battle Signs",
-			"source": "WITCHERHLA",
-			"className": "Witcher",
-			"classSource": "WITCHERHLA",
+			"page": 6,
 			"level": 11,
+			"header": 1,
 			"entries": [
-				"At 11th level, you can incorporate signs more easily into your assault. When you take the {@action Attack} action on your turn, you can cast a sign without forgoing any of your weapon attacks. Additionally, at the end of each of your turns, if you haven't cast a sign this turn, you gain 1 focus."
+				"Starting at 11th level, you have improved your ability to maintain your weapons to such a degree that your damage dealt is notably stronger. Your weapon attacks now deal an additional 1d8 damage."
 			]
 		},
 		{
-			"name": "Ability Score Improvement",
+			"name": "Master Witcher",
 			"source": "WITCHERHLA",
 			"className": "Witcher",
 			"classSource": "WITCHERHLA",
-			"level": 12,
-			"entries": [
-				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-			]
-		},
-		{
-			"name": "Quick Wits",
-			"source": "WITCHERHLA",
-			"className": "Witcher",
-			"classSource": "WITCHERHLA",
-			"level": 13,
-			"entries": [
-				"Starting at 13th level, you are quick to act and ready to leap into combat at an opportune time. When you roll initiative, you may roll the d20 twice and choose which roll to use."
-			]
-		},
-		{
-			"name": "Witcher School Feature",
-			"source": "WITCHERHLA",
-			"className": "Witcher",
-			"classSource": "WITCHERHLA",
-			"level": 14,
-			"entries": [
-				"At 14th level, you gain a feature from your Witcher School."
-			]
-		},
-		{
-			"name": "Evasion",
-			"source": "WITCHERHLA",
-			"className": "Witcher",
-			"classSource": "WITCHERHLA",
-			"level": 15,
-			"entries": [
-				"At 15th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or a lightning bolt spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
-			]
-		},
-		{
-			"name": "Ability Score Improvement",
-			"source": "WITCHERHLA",
-			"className": "Witcher",
-			"classSource": "WITCHERHLA",
-			"level": 16,
-			"entries": [
-				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-			]
-		},
-		{
-			"name": "Foil",
-			"source": "WITCHERHLA",
-			"className": "Witcher",
-			"classSource": "WITCHERHLA",
-			"level": 17,
-			"entries": [
-				"Starting at 17th level, you are capable of interrupting the spells and abilities of your opponents. When a creature forces you or a friendly creature to make a saving throw, you can use your reaction to make a weapon attack against it. If your attack successfully hits, any creature affected automatically succeeds on their save against the effect. Once you use this feature, you cannot use it again until you complete a long rest."
-			]
-		},
-		{
-			"name": "Alchemy Expertise",
-			"source": "WITCHERHLA",
-			"className": "Witcher",
-			"classSource": "WITCHERHLA",
-			"level": 18,
-			"entries": [
-				"At 18th level, you have mastered efficiently using materials and recycling components in your alchemical crafts. You ignore crafting components when creating Alchemy products. Additionally, you can carry 3 products at a time, instead of 2. When you gain this feature, you learn 4 new {@filter Alchemy recipes|optionalfeatures|source=null|feature type=OF:WITCHERHLA:R} of your choice."
-			]
-		},
-		{
-			"name": "Ability Score Improvement",
-			"source": "WITCHERHLA",
-			"className": "Witcher",
-			"classSource": "WITCHERHLA",
-			"level": 19,
-			"entries": [
-				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-			]
-		},
-		{
-			"name": "Adrenaline Rush",
-			"source": "WITCHERHLA",
-			"className": "Witcher",
-			"classSource": "WITCHERHLA",
+			"page": 6,
 			"level": 20,
+			"header": 1,
 			"entries": [
-				"At 20th level, you can utilize your adrenaline to burst into a rush of action. At the end of your turn, if you have 5 focus available, you can choose to immediately take another turn; at the end of that turn, you lose all focus. Once you use this feature, you cannot use it again until you complete a long rest."
+				"At level 20 you have achieved the rank of Master Witcher. You can choose one from the following abilities to adopt as part of your Witcher combat style:",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Combat Spell Master",
+							"entries": [
+								"When you kill an enemy by casting a spell with a spell slot of 2nd Level or higher, you regain 1 expended spell slot up to 1 level below the level of the spell cast for each creature killed. The enemy killed must have a Challenge Rating equal to half your Witcher level or greater for this effect to be granted.",
+								"For example, if you cast a level 4 spell and kill a single creature with a CR equal to half your Witcher level or greater, you can regain an expended 1st, 2nd, or 3rd level spell slot. If you kill multiple creatures in this way, you can regain an expended spell slot for each creature killed."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Deadly Onslaught",
+							"entries": [
+								"Once per turn, when you take the Attack action or use a bonus action to attack on your turn, you make one additional weapon attack as part of that action. You also expand your critical hit range by 1 for all weapon attacks, stacking with any other bonuses you may already possess."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Swarmslayer",
+							"entries": [
+								"You thrive when attacked by a multitude of foes, gaining the following benefits:",
+								{
+									"type": "list",
+									"items": [
+										"You negate advantage normally given by creatures with the Pack Tactics feature.",
+										"When you have three or more enemies within 10 feet of you, you gain a +3 bonus to AC and damage rolls."
+									]
+								}
+							]
+						}
+					]
+				}
 			]
 		}
 	],
@@ -5064,6 +5437,7 @@
 		{
 			"name": "Witcher",
 			"source": "WITCHERHLA",
+			"page": 2,
 			"entries": [
 				{
 					"name": "Witcher",
