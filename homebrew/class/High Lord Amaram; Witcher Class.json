@@ -22,7 +22,15 @@
 			"OF:WITCHERHLA:PG": "Witcher Greater Potion",
 			"OF:WITCHERHLA:PS": "Witcher Superior Potion",
 			"OF:WITCHERHLA:PM": "Witcher Master Potion",
-			"OF:WITCHERHLA:B": "Witcher Handbombs/Bombs"
+			"OF:WITCHERHLA:B": "Witcher Handbombs/Bombs",
+			"OF:WITCHERHLA:BG": "Witcher Greater Handbombs/Bombs",
+			"OF:WITCHERHLA:BS": "Witcher Superior Handbombs/Bombs",
+			"OF:WITCHERHLA:BM": "Witcher Master Handbombs/Bombs"
+		},
+		"dependencies": {
+			"optionalfeature": [
+				"COMFightStyle"
+			]
 		},
 		"dateAdded": 1557168726,
 		"dateLastModified": 1713958692,
@@ -538,7 +546,37 @@
 				"Ability Score Improvement|Witcher|WITCHERHLA|19"
 			],
 			"subclassTitle": "Witcher School",
-			"hasFluff": true
+			"hasFluff": true,
+			"classSpells": [
+				"control flames|xge",
+				"friends|phb",
+				"frostbite|xge",
+				"guidance|phb",
+				"gust|xge",
+				"lightning lure|tce",
+				"mind silver|tce",
+				"prestidigitation|phb",
+				"produce flame|phb",
+				"ray of frost|phb",
+				"aard|WITCHERHLA",
+				"axii|WITCHERHLA",
+				"charm Person|phb",
+				"firestream|WITCHERHLA",
+				"igni|WITCHERHLA",
+				"quen|WITCHERHLA",
+				"sleep|phb",
+				"sweep|WITCHERHLA",
+				"blindness/deafness|phb",
+				"chains|WITCHERHLA",
+				"heliotrope|WITCHERHLA",
+				"supirre|WITCHERHLA",
+				"glacies|WITCHERHLA",
+				"guardian|WITCHERHLA",
+				"rimefrost|WITCHERHLA",
+				"yrden|WITCHERHLA",
+				"retribution|WITCHERHLA",
+				"somne|WITCHERHLA"
+			]
 		}
 	],
 	"optionalfeature": [
@@ -3636,7 +3674,73 @@
 				"OF:WITCHERHLA:B"
 			],
 			"entries": [
-				"When lobbed up to 30 feet as an action, the bomb detonates dealing {@dice 2d6} fire damage to each creature within a 10 foot radius, or half as much damage on a successful DC 14 Dexterity saving throw. The bomb creates a 10 foot radius patch of fire, dealing {@dice 1d6} fire damage to creatures that enter it or start their turn in it. The fire lasts 1 minute or until extinguished."
+				{
+					"name": "Handbombs/Bombs",
+					"type": "entries",
+					"entries": [
+						"Witchers are nothing if not versatile in their approaches to slaying monsters, and the second tool in their Witcher Preparation arsenal is the handbomb. Highly effective area-of-effect weapons, you can throw them at a point you can see within 60 feet of you to wreak havoc on your enemies.",
+						"Whether used as a simple damage-dealer, or as a method of strategically controlling the battlefield, your chances of survival will improve dramatically when you wield them.",
+						"{@b Using 1 handbomb/bomb equals one use of Witcher Preparation.}"
+					]
+				},
+				"Upon impact, the Dancing Star bomb explodes in a {@i 10-foot radius}, followed by a series of smaller explosions within the area of effect at the start of the Witcher's next turn. Each creature in this area must make a Dexterity saving throw. On a failed save a creature takes {@damage 2d6} fire damage, or half as much on a successful one. Any creature still remaining in the area during the secondary series of explosions must repeat the save or take {@damage 2d4} fire damage."
+			]
+		},
+		{
+			"name": "Bomb: Greater Dancing Star",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:BG"
+			],
+			"entries": [
+				{
+					"name": "Handbombs/Bombs",
+					"type": "entries",
+					"entries": [
+						"Witchers are nothing if not versatile in their approaches to slaying monsters, and the second tool in their Witcher Preparation arsenal is the handbomb. Highly effective area-of-effect weapons, you can throw them at a point you can see within 60 feet of you to wreak havoc on your enemies.",
+						"Whether used as a simple damage-dealer, or as a method of strategically controlling the battlefield, your chances of survival will improve dramatically when you wield them.",
+						"{@b Using 1 handbomb/bomb equals one use of Witcher Preparation.}"
+					]
+				},
+				"Upon impact, the Dancing Star bomb explodes in a {@i 15-foot radius}, followed by a series of smaller explosions within the area of effect at the start of the Witcher's next turn. Each creature in this area must make a Dexterity saving throw. On a failed save a creature takes {@damage 4d6} fire damage, or half as much on a successful one. Any creature still remaining in the area during the secondary series of explosions must repeat the save or take {@damage 4d4} fire damage."
+			]
+		},
+		{
+			"name": "Bomb: Superior Dancing Star",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:BS"
+			],
+			"entries": [
+				{
+					"name": "Handbombs/Bombs",
+					"type": "entries",
+					"entries": [
+						"Witchers are nothing if not versatile in their approaches to slaying monsters, and the second tool in their Witcher Preparation arsenal is the handbomb. Highly effective area-of-effect weapons, you can throw them at a point you can see within 60 feet of you to wreak havoc on your enemies.",
+						"Whether used as a simple damage-dealer, or as a method of strategically controlling the battlefield, your chances of survival will improve dramatically when you wield them.",
+						"{@b Using 1 handbomb/bomb equals one use of Witcher Preparation.}"
+					]
+				},
+				"Upon impact, the Dancing Star bomb explodes in a {@i 20-foot radius}, followed by a series of smaller explosions within the area of effect at the start of the Witcher's next turn. Each creature in this area must make a Dexterity saving throw. On a failed save a creature takes {@damage 6d6} fire damage, or half as much on a successful one. Any creature still remaining in the area during the secondary series of explosions must repeat the save or take {@damage 6d4} fire damage."
+			]
+		},
+		{
+			"name": "Bomb: Master Dancing Star",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:BM"
+			],
+			"entries": [
+				{
+					"name": "Handbombs/Bombs",
+					"type": "entries",
+					"entries": [
+						"Witchers are nothing if not versatile in their approaches to slaying monsters, and the second tool in their Witcher Preparation arsenal is the handbomb. Highly effective area-of-effect weapons, you can throw them at a point you can see within 60 feet of you to wreak havoc on your enemies.",
+						"Whether used as a simple damage-dealer, or as a method of strategically controlling the battlefield, your chances of survival will improve dramatically when you wield them.",
+						"{@b Using 1 handbomb/bomb equals one use of Witcher Preparation.}"
+					]
+				},
+				"Upon impact, the Dancing Star bomb explodes in a {@i 25-foot radius}, followed by a series of smaller explosions within the area of effect at the start of the Witcher's next turn. Each creature in this area must make a Dexterity saving throw. On a failed save a creature takes {@damage 8d6} fire damage, or half as much on a successful one. Any creature still remaining in the area during the secondary series of explosions must repeat the save or take {@damage 8d4} fire damage."
 			]
 		},
 		{
@@ -3646,17 +3750,309 @@
 				"OF:WITCHERHLA:B"
 			],
 			"entries": [
-				"When lobbed up to 30 feet as an action, the bomb detonates releasing poisonous gas in a cloud of radius 10 feet. Creatures that enter or start their turn in the cloud take {@dice 2d8} poison damage, or half as much on a successful DC 14 Constitution saving throw. The gas disperses after 1 minute."
+				{
+					"name": "Handbombs/Bombs",
+					"type": "entries",
+					"entries": [
+						"Witchers are nothing if not versatile in their approaches to slaying monsters, and the second tool in their Witcher Preparation arsenal is the handbomb. Highly effective area-of-effect weapons, you can throw them at a point you can see within 60 feet of you to wreak havoc on your enemies.",
+						"Whether used as a simple damage-dealer, or as a method of strategically controlling the battlefield, your chances of survival will improve dramatically when you wield them.",
+						"{@b Using 1 handbomb/bomb equals one use of Witcher Preparation.}"
+					]
+				},
+				"Upon impact, the Devil's Puffball Bomb releases a cloud of poison in a {@i 10-foot radius}. The poison cloud lingers in the area for the duration or until a moderate wind disperses it, forcing any creature starting their turn within the area to make a Constitution saving throw. On a failed save a creature takes {@damage 2d6} poison damage, or half as much on a successful one. The poison cloud will disperse after 1 minute."
 			]
 		},
 		{
-			"name": "Bomb: Dimetrium Bomb",
+			"name": "Bomb: Greater Devil's Puffball",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:BG"
+			],
+			"entries": [
+				{
+					"name": "Handbombs/Bombs",
+					"type": "entries",
+					"entries": [
+						"Witchers are nothing if not versatile in their approaches to slaying monsters, and the second tool in their Witcher Preparation arsenal is the handbomb. Highly effective area-of-effect weapons, you can throw them at a point you can see within 60 feet of you to wreak havoc on your enemies.",
+						"Whether used as a simple damage-dealer, or as a method of strategically controlling the battlefield, your chances of survival will improve dramatically when you wield them.",
+						"{@b Using 1 handbomb/bomb equals one use of Witcher Preparation.}"
+					]
+				},
+				"Upon impact, the Devil's Puffball Bomb releases a cloud of poison in a {@i 10-foot radius}. The poison cloud lingers in the area for the duration or until a moderate wind disperses it, forcing any creature starting their turn within the area to make a Constitution saving throw. On a failed save a creature takes {@damage 4d6} poison damage, or half as much on a successful one. The poison cloud will disperse after 1 minute."
+			]
+		},
+		{
+			"name": "Bomb: Superior Devil's Puffball",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:BS"
+			],
+			"entries": [
+				{
+					"name": "Handbombs/Bombs",
+					"type": "entries",
+					"entries": [
+						"Witchers are nothing if not versatile in their approaches to slaying monsters, and the second tool in their Witcher Preparation arsenal is the handbomb. Highly effective area-of-effect weapons, you can throw them at a point you can see within 60 feet of you to wreak havoc on your enemies.",
+						"Whether used as a simple damage-dealer, or as a method of strategically controlling the battlefield, your chances of survival will improve dramatically when you wield them.",
+						"{@b Using 1 handbomb/bomb equals one use of Witcher Preparation.}"
+					]
+				},
+				"Upon impact, the Devil's Puffball Bomb releases a cloud of poison in a {@i 15-foot radius}. The poison cloud lingers in the area for the duration or until a moderate wind disperses it, forcing any creature starting their turn within the area to make a Constitution saving throw. On a failed save a creature takes {@damage 6d6} poison damage, or half as much on a successful one. The poison cloud will disperse after 1 minute."
+			]
+		},
+		{
+			"name": "Bomb: Superior Devil's Puffball",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:BM"
+			],
+			"entries": [
+				{
+					"name": "Handbombs/Bombs",
+					"type": "entries",
+					"entries": [
+						"Witchers are nothing if not versatile in their approaches to slaying monsters, and the second tool in their Witcher Preparation arsenal is the handbomb. Highly effective area-of-effect weapons, you can throw them at a point you can see within 60 feet of you to wreak havoc on your enemies.",
+						"Whether used as a simple damage-dealer, or as a method of strategically controlling the battlefield, your chances of survival will improve dramatically when you wield them.",
+						"{@b Using 1 handbomb/bomb equals one use of Witcher Preparation.}"
+					]
+				},
+				"Upon impact, the Devil's Puffball Bomb releases a cloud of poison in a {@i 15-foot radius}. The poison cloud lingers in the area for the duration or until a moderate wind disperses it, forcing any creature starting their turn within the area to make a Constitution saving throw. On a failed save a creature takes {@damage 8d6} poison damage, or half as much on a successful one. The poison cloud will disperse after 1 minute."
+			]
+		},
+		{
+			"name": "Bomb: Dimeritium",
 			"source": "WITCHERHLA",
 			"featureType": [
 				"OF:WITCHERHLA:B"
 			],
 			"entries": [
-				"When lobbed up to 30 feet as an action, the bomb detonates releasing grains of magic-nullifying Dimetrium into a cloud of radius 10 feet. Creatures inside the cloud cannot cast spells, and magic items inside the cloud temporarily lose their magical properties. Any ongoing magical effects from spells of 6th level or lower are dispelled within the cloud. The cloud disperses after 1 minute."
+				{
+					"name": "Handbombs/Bombs",
+					"type": "entries",
+					"entries": [
+						"Witchers are nothing if not versatile in their approaches to slaying monsters, and the second tool in their Witcher Preparation arsenal is the handbomb. Highly effective area-of-effect weapons, you can throw them at a point you can see within 60 feet of you to wreak havoc on your enemies.",
+						"Whether used as a simple damage-dealer, or as a method of strategically controlling the battlefield, your chances of survival will improve dramatically when you wield them.",
+						"{@b Using 1 handbomb/bomb equals one use of Witcher Preparation.}"
+					]
+				},
+				"Upon impact, the Dimeritium Bomb explodes into a mist of Dimeritium shards in a {@i 10-foot radius}, forming a cloud of Dimeritium dust that momentarily stunts magic within the area and forces creatures within the area to make a Dexterity saving throw. On a failed save a creature takes {@damage 1d8} piercing damage, or half as much damage on a successful one. The Dimeritium cloud lingers in the area for the duration or until a moderate non-magical wind disperses it.",
+				"Creatures inside the cloud cannot cast spells below the {@i 2nd Level} level, and magic items inside the cloud temporarily lose their magical properties while in the cloud, including illusions. Any ongoing magical effects from spells are dispelled within the cloud, as well as any attempted spell that would travel through the cloud's radius. Creatures cannot become ethereal within the cloud. The cloud disperses after 3 rounds."
+			]
+		},
+		{
+			"name": "Bomb: Greater Dimeritium",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:BG"
+			],
+			"entries": [
+				{
+					"name": "Handbombs/Bombs",
+					"type": "entries",
+					"entries": [
+						"Witchers are nothing if not versatile in their approaches to slaying monsters, and the second tool in their Witcher Preparation arsenal is the handbomb. Highly effective area-of-effect weapons, you can throw them at a point you can see within 60 feet of you to wreak havoc on your enemies.",
+						"Whether used as a simple damage-dealer, or as a method of strategically controlling the battlefield, your chances of survival will improve dramatically when you wield them.",
+						"{@b Using 1 handbomb/bomb equals one use of Witcher Preparation.}"
+					]
+				},
+				"Upon impact, the Dimeritium Bomb explodes into a mist of Dimeritium shards in a {@i 10-foot radius}, forming a cloud of Dimeritium dust that momentarily stunts magic within the area and forces creatures within the area to make a Dexterity saving throw. On a failed save a creature takes {@damage 2d8} piercing damage, or half as much damage on a successful one. The Dimeritium cloud lingers in the area for the duration or until a moderate non-magical wind disperses it.",
+				"Creatures inside the cloud cannot cast spells below the {@i 3rd Level} level, and magic items inside the cloud temporarily lose their magical properties while in the cloud, including illusions. Any ongoing magical effects from spells are dispelled within the cloud, as well as any attempted spell that would travel through the cloud's radius. Creatures cannot become ethereal within the cloud. The cloud disperses after 3 rounds."
+			]
+		},
+		{
+			"name": "Bomb: Superior Dimeritium",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:BS"
+			],
+			"entries": [
+				{
+					"name": "Handbombs/Bombs",
+					"type": "entries",
+					"entries": [
+						"Witchers are nothing if not versatile in their approaches to slaying monsters, and the second tool in their Witcher Preparation arsenal is the handbomb. Highly effective area-of-effect weapons, you can throw them at a point you can see within 60 feet of you to wreak havoc on your enemies.",
+						"Whether used as a simple damage-dealer, or as a method of strategically controlling the battlefield, your chances of survival will improve dramatically when you wield them.",
+						"{@b Using 1 handbomb/bomb equals one use of Witcher Preparation.}"
+					]
+				},
+				"Upon impact, the Dimeritium Bomb explodes into a mist of Dimeritium shards in a {@i 15-foot radius}, forming a cloud of Dimeritium dust that momentarily stunts magic within the area and forces creatures within the area to make a Dexterity saving throw. On a failed save a creature takes {@damage 3d8} piercing damage, or half as much damage on a successful one. The Dimeritium cloud lingers in the area for the duration or until a moderate non-magical wind disperses it.",
+				"Creatures inside the cloud cannot cast spells below the {@i 4th Level} level, and magic items inside the cloud temporarily lose their magical properties while in the cloud, including illusions. Any ongoing magical effects from spells are dispelled within the cloud, as well as any attempted spell that would travel through the cloud's radius. Creatures cannot become ethereal within the cloud. The cloud disperses after 3 rounds."
+			]
+		},
+		{
+			"name": "Bomb: Superior Dimeritium",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:BM"
+			],
+			"entries": [
+				{
+					"name": "Handbombs/Bombs",
+					"type": "entries",
+					"entries": [
+						"Witchers are nothing if not versatile in their approaches to slaying monsters, and the second tool in their Witcher Preparation arsenal is the handbomb. Highly effective area-of-effect weapons, you can throw them at a point you can see within 60 feet of you to wreak havoc on your enemies.",
+						"Whether used as a simple damage-dealer, or as a method of strategically controlling the battlefield, your chances of survival will improve dramatically when you wield them.",
+						"{@b Using 1 handbomb/bomb equals one use of Witcher Preparation.}"
+					]
+				},
+				"Upon impact, the Dimeritium Bomb explodes into a mist of Dimeritium shards in a {@i 15-foot radius}, forming a cloud of Dimeritium dust that momentarily stunts magic within the area and forces creatures within the area to make a Dexterity saving throw. On a failed save a creature takes {@damage 4d8} piercing damage, or half as much damage on a successful one. The Dimeritium cloud lingers in the area for the duration or until a moderate non-magical wind disperses it.",
+				"Creatures inside the cloud cannot cast spells below the {@i 5th Level} level, and magic items inside the cloud temporarily lose their magical properties while in the cloud, including illusions. Any ongoing magical effects from spells are dispelled within the cloud, as well as any attempted spell that would travel through the cloud's radius. Creatures cannot become ethereal within the cloud. The cloud disperses after 3 rounds."
+			]
+		},
+		{
+			"name": "Bomb: Dragon's Dream",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:B"
+			],
+			"entries": [
+				{
+					"name": "Handbombs/Bombs",
+					"type": "entries",
+					"entries": [
+						"Witchers are nothing if not versatile in their approaches to slaying monsters, and the second tool in their Witcher Preparation arsenal is the handbomb. Highly effective area-of-effect weapons, you can throw them at a point you can see within 60 feet of you to wreak havoc on your enemies.",
+						"Whether used as a simple damage-dealer, or as a method of strategically controlling the battlefield, your chances of survival will improve dramatically when you wield them.",
+						"{@b Using 1 handbomb/bomb equals one use of Witcher Preparation.}"
+					]
+				},
+				"Upon impact, the Dragon's Dream Bomb releases a cloud of explosive gas in a {@i 10-foot radius}. The gas alone does not have any effect on creatures within the area, and will disperse after 1 minute or until a moderate wind disperses it. If any fire enters that area, the gas explodes, dealing {@damage 3d6} fire damage to all creatures caught in the blast.",
+				"If multiple Dragon's Dream Bombs are used and their areas of effect would overlap, the resulting explosive damage does not stack for the overlapped area."
+			]
+		},
+		{
+			"name": "Bomb: Greater Dragon's Dream",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:BG"
+			],
+			"entries": [
+				{
+					"name": "Handbombs/Bombs",
+					"type": "entries",
+					"entries": [
+						"Witchers are nothing if not versatile in their approaches to slaying monsters, and the second tool in their Witcher Preparation arsenal is the handbomb. Highly effective area-of-effect weapons, you can throw them at a point you can see within 60 feet of you to wreak havoc on your enemies.",
+						"Whether used as a simple damage-dealer, or as a method of strategically controlling the battlefield, your chances of survival will improve dramatically when you wield them.",
+						"{@b Using 1 handbomb/bomb equals one use of Witcher Preparation.}"
+					]
+				},
+				"Upon impact, the Dragon's Dream Bomb releases a cloud of explosive gas in a {@i 10-foot radius}. The gas alone does not have any effect on creatures within the area, and will disperse after 1 minute or until a moderate wind disperses it. If any fire enters that area, the gas explodes, dealing {@damage 6d6} fire damage to all creatures caught in the blast.",
+				"If multiple Dragon's Dream Bombs are used and their areas of effect would overlap, the resulting explosive damage does not stack for the overlapped area."
+			]
+		},
+		{
+			"name": "Bomb: Superior Dragon's Dream",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:BS"
+			],
+			"entries": [
+				{
+					"name": "Handbombs/Bombs",
+					"type": "entries",
+					"entries": [
+						"Witchers are nothing if not versatile in their approaches to slaying monsters, and the second tool in their Witcher Preparation arsenal is the handbomb. Highly effective area-of-effect weapons, you can throw them at a point you can see within 60 feet of you to wreak havoc on your enemies.",
+						"Whether used as a simple damage-dealer, or as a method of strategically controlling the battlefield, your chances of survival will improve dramatically when you wield them.",
+						"{@b Using 1 handbomb/bomb equals one use of Witcher Preparation.}"
+					]
+				},
+				"Upon impact, the Dragon's Dream Bomb releases a cloud of explosive gas in a {@i 15-foot radius}. The gas alone does not have any effect on creatures within the area, and will disperse after 1 minute or until a moderate wind disperses it. If any fire enters that area, the gas explodes, dealing {@damage 9d6} fire damage to all creatures caught in the blast.",
+				"If multiple Dragon's Dream Bombs are used and their areas of effect would overlap, the resulting explosive damage does not stack for the overlapped area."
+			]
+		},
+		{
+			"name": "Bomb: Master Dragon's Dream",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:BM"
+			],
+			"entries": [
+				{
+					"name": "Handbombs/Bombs",
+					"type": "entries",
+					"entries": [
+						"Witchers are nothing if not versatile in their approaches to slaying monsters, and the second tool in their Witcher Preparation arsenal is the handbomb. Highly effective area-of-effect weapons, you can throw them at a point you can see within 60 feet of you to wreak havoc on your enemies.",
+						"Whether used as a simple damage-dealer, or as a method of strategically controlling the battlefield, your chances of survival will improve dramatically when you wield them.",
+						"{@b Using 1 handbomb/bomb equals one use of Witcher Preparation.}"
+					]
+				},
+				"Upon impact, the Dragon's Dream Bomb releases a cloud of explosive gas in a {@i 15-foot radius}. The gas alone does not have any effect on creatures within the area, and will disperse after 1 minute or until a moderate wind disperses it. If any fire enters that area, the gas explodes, dealing {@damage 12d6} fire damage to all creatures caught in the blast.",
+				"If multiple Dragon's Dream Bombs are used and their areas of effect would overlap, the resulting explosive damage does not stack for the overlapped area."
+			]
+		},
+		{
+			"name": "Bomb: Grapeshot",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:B"
+			],
+			"entries": [
+				{
+					"name": "Handbombs/Bombs",
+					"type": "entries",
+					"entries": [
+						"Witchers are nothing if not versatile in their approaches to slaying monsters, and the second tool in their Witcher Preparation arsenal is the handbomb. Highly effective area-of-effect weapons, you can throw them at a point you can see within 60 feet of you to wreak havoc on your enemies.",
+						"Whether used as a simple damage-dealer, or as a method of strategically controlling the battlefield, your chances of survival will improve dramatically when you wield them.",
+						"{@b Using 1 handbomb/bomb equals one use of Witcher Preparation.}"
+					]
+				},
+				"Upon impact, the Grapeshot bomb explodes in a {@i 10-foot radius}. Each creature in this area must make a Dexterity saving throw. On a failed save a creature takes {@damage 2d8} piercing damage, or half as much on a successful one. A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw, and structures within the blast take double the damage dealt."
+			]
+		},
+		{
+			"name": "Bomb: Greater Grapeshot",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:BG"
+			],
+			"entries": [
+				{
+					"name": "Handbombs/Bombs",
+					"type": "entries",
+					"entries": [
+						"Witchers are nothing if not versatile in their approaches to slaying monsters, and the second tool in their Witcher Preparation arsenal is the handbomb. Highly effective area-of-effect weapons, you can throw them at a point you can see within 60 feet of you to wreak havoc on your enemies.",
+						"Whether used as a simple damage-dealer, or as a method of strategically controlling the battlefield, your chances of survival will improve dramatically when you wield them.",
+						"{@b Using 1 handbomb/bomb equals one use of Witcher Preparation.}"
+					]
+				},
+				"Upon impact, the Grapeshot bomb explodes in a {@i 15-foot radius}. Each creature in this area must make a Dexterity saving throw. On a failed save a creature takes {@damage 4d8} piercing damage, or half as much on a successful one. A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw, and structures within the blast take double the damage dealt."
+			]
+		},
+		{
+			"name": "Bomb: Superior Grapeshot",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:BS"
+			],
+			"entries": [
+				{
+					"name": "Handbombs/Bombs",
+					"type": "entries",
+					"entries": [
+						"Witchers are nothing if not versatile in their approaches to slaying monsters, and the second tool in their Witcher Preparation arsenal is the handbomb. Highly effective area-of-effect weapons, you can throw them at a point you can see within 60 feet of you to wreak havoc on your enemies.",
+						"Whether used as a simple damage-dealer, or as a method of strategically controlling the battlefield, your chances of survival will improve dramatically when you wield them.",
+						"{@b Using 1 handbomb/bomb equals one use of Witcher Preparation.}"
+					]
+				},
+				"Upon impact, the Grapeshot bomb explodes in a {@i 15-foot radius}. Each creature in this area must make a Dexterity saving throw. On a failed save a creature takes {@damage 6d8} piercing damage, or half as much on a successful one. A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw, and structures within the blast take double the damage dealt."
+			]
+		},
+		{
+			"name": "Bomb: Grapeshot",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:B"
+			],
+			"entries": [
+				{
+					"name": "Handbombs/Bombs",
+					"type": "entries",
+					"entries": [
+						"Witchers are nothing if not versatile in their approaches to slaying monsters, and the second tool in their Witcher Preparation arsenal is the handbomb. Highly effective area-of-effect weapons, you can throw them at a point you can see within 60 feet of you to wreak havoc on your enemies.",
+						"Whether used as a simple damage-dealer, or as a method of strategically controlling the battlefield, your chances of survival will improve dramatically when you wield them.",
+						"{@b Using 1 handbomb/bomb equals one use of Witcher Preparation.}"
+					]
+				},
+				"Upon impact, the Grapeshot bomb explodes in a {@i 20-foot radius}. Each creature in this area must make a Dexterity saving throw. On a failed save a creature takes {@damage 8d8} piercing damage, or half as much on a successful one. A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw, and structures within the blast take double the damage dealt."
 			]
 		},
 		{
@@ -3666,7 +4062,77 @@
 				"OF:WITCHERHLA:B"
 			],
 			"entries": [
-				"When lobbed up to 30 feet as an action, the bomb detonates releasing finely powdered silver into a cloud of radius 10 feet. Creatures inside the cloud cannot transform, and shapechangers affected by this revert to their normal form. The dust disperses after 1 minute."
+				{
+					"name": "Handbombs/Bombs",
+					"type": "entries",
+					"entries": [
+						"Witchers are nothing if not versatile in their approaches to slaying monsters, and the second tool in their Witcher Preparation arsenal is the handbomb. Highly effective area-of-effect weapons, you can throw them at a point you can see within 60 feet of you to wreak havoc on your enemies.",
+						"Whether used as a simple damage-dealer, or as a method of strategically controlling the battlefield, your chances of survival will improve dramatically when you wield them.",
+						"{@b Using 1 handbomb/bomb equals one use of Witcher Preparation.}"
+					]
+				},
+				"Upon impact, the Moondust bomb releases a flurry of silver splinters in a {@i 10-foot radius}. Each creatures in this area must make a Dexterity saving throw. On a failed save a creature takes {@damage 1d8} piercing damage, or half as much on a successful one.",
+				"Shapechangers take additional {@damage 2d6} poison damage regardless of the outcome of the saving throw, are forced to their original form and cannot shapeshift for 1 minute, and cannot regenerate health for 1 turn after taking damage. This poison damage ignores any resistance the creature may have."
+			]
+		},
+		{
+			"name": "Bomb: Greater Moondust",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:BG"
+			],
+			"entries": [
+				{
+					"name": "Handbombs/Bombs",
+					"type": "entries",
+					"entries": [
+						"Witchers are nothing if not versatile in their approaches to slaying monsters, and the second tool in their Witcher Preparation arsenal is the handbomb. Highly effective area-of-effect weapons, you can throw them at a point you can see within 60 feet of you to wreak havoc on your enemies.",
+						"Whether used as a simple damage-dealer, or as a method of strategically controlling the battlefield, your chances of survival will improve dramatically when you wield them.",
+						"{@b Using 1 handbomb/bomb equals one use of Witcher Preparation.}"
+					]
+				},
+				"Upon impact, the Moondust bomb releases a flurry of silver splinters in a {@i 15-foot radius}. Each creatures in this area must make a Dexterity saving throw. On a failed save a creature takes {@damage 2d8} piercing damage, or half as much on a successful one.",
+				"Shapechangers take additional {@damage 4d6} poison damage regardless of the outcome of the saving throw, are forced to their original form and cannot shapeshift for 1 minute, and cannot regenerate health for 1 turn after taking damage. This poison damage ignores any resistance the creature may have."
+			]
+		},
+		{
+			"name": "Bomb: Superior Moondust",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:BS"
+			],
+			"entries": [
+				{
+					"name": "Handbombs/Bombs",
+					"type": "entries",
+					"entries": [
+						"Witchers are nothing if not versatile in their approaches to slaying monsters, and the second tool in their Witcher Preparation arsenal is the handbomb. Highly effective area-of-effect weapons, you can throw them at a point you can see within 60 feet of you to wreak havoc on your enemies.",
+						"Whether used as a simple damage-dealer, or as a method of strategically controlling the battlefield, your chances of survival will improve dramatically when you wield them.",
+						"{@b Using 1 handbomb/bomb equals one use of Witcher Preparation.}"
+					]
+				},
+				"Upon impact, the Moondust bomb releases a flurry of silver splinters in a {@i 15-foot radius}. Each creatures in this area must make a Dexterity saving throw. On a failed save a creature takes {@damage 3d8} piercing damage, or half as much on a successful one.",
+				"Shapechangers take additional {@damage 6d6} poison damage regardless of the outcome of the saving throw, are forced to their original form and cannot shapeshift for 1 minute, and cannot regenerate health for 1 turn after taking damage. This poison damage ignores any resistance the creature may have."
+			]
+		},
+		{
+			"name": "Bomb: Master Moondust",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:BM"
+			],
+			"entries": [
+				{
+					"name": "Handbombs/Bombs",
+					"type": "entries",
+					"entries": [
+						"Witchers are nothing if not versatile in their approaches to slaying monsters, and the second tool in their Witcher Preparation arsenal is the handbomb. Highly effective area-of-effect weapons, you can throw them at a point you can see within 60 feet of you to wreak havoc on your enemies.",
+						"Whether used as a simple damage-dealer, or as a method of strategically controlling the battlefield, your chances of survival will improve dramatically when you wield them.",
+						"{@b Using 1 handbomb/bomb equals one use of Witcher Preparation.}"
+					]
+				},
+				"Upon impact, the Moondust bomb releases a flurry of silver splinters in a {@i 20-foot radius}. Each creatures in this area must make a Dexterity saving throw. On a failed save a creature takes {@damage 4d8} piercing damage, or half as much on a successful one.",
+				"Shapechangers take additional {@damage 8d6} poison damage regardless of the outcome of the saving throw, are forced to their original form and cannot shapeshift for 1 minute, and cannot regenerate health for 1 turn after taking damage. This poison damage ignores any resistance the creature may have."
 			]
 		},
 		{
@@ -3676,7 +4142,73 @@
 				"OF:WITCHERHLA:B"
 			],
 			"entries": [
-				"When lobbed up to 30 feet as an action, the bomb detonates releasing freezing cold gas in a cloud of radius 10 feet. Creatures that enter or start their turn in the cloud take {@dice 1d8} cold damage, or half as much on a successful DC 14 Constitution saving throw. Creatures that take this cold damage have their movement reduced by half until the end of their turn. The gas disperses after 1 minute."
+				{
+					"name": "Handbombs/Bombs",
+					"type": "entries",
+					"entries": [
+						"Witchers are nothing if not versatile in their approaches to slaying monsters, and the second tool in their Witcher Preparation arsenal is the handbomb. Highly effective area-of-effect weapons, you can throw them at a point you can see within 60 feet of you to wreak havoc on your enemies.",
+						"Whether used as a simple damage-dealer, or as a method of strategically controlling the battlefield, your chances of survival will improve dramatically when you wield them.",
+						"{@b Using 1 handbomb/bomb equals one use of Witcher Preparation.}"
+					]
+				},
+				"Upon impact, the Northern Wind bomb releases a burst of freezing cold in a {@i 10-foot radius}. Each creature in this area must make a Constitution saving throw. On a failed save a creature has their movement reduced to 0 until the end of their next turn, and takes {@damage 2d6} cold damage. On a successful save the creature has their movement reduced to half until the end of their next turn and takes only half damage."
+			]
+		},
+		{
+			"name": "Bomb: Greater Northern Wind",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:BG"
+			],
+			"entries": [
+				{
+					"name": "Handbombs/Bombs",
+					"type": "entries",
+					"entries": [
+						"Witchers are nothing if not versatile in their approaches to slaying monsters, and the second tool in their Witcher Preparation arsenal is the handbomb. Highly effective area-of-effect weapons, you can throw them at a point you can see within 60 feet of you to wreak havoc on your enemies.",
+						"Whether used as a simple damage-dealer, or as a method of strategically controlling the battlefield, your chances of survival will improve dramatically when you wield them.",
+						"{@b Using 1 handbomb/bomb equals one use of Witcher Preparation.}"
+					]
+				},
+				"Upon impact, the Northern Wind bomb releases a burst of freezing cold in a {@i 15-foot radius}. Each creature in this area must make a Constitution saving throw. On a failed save a creature has their movement reduced to 0 until the end of their next turn, and takes {@damage 4d6} cold damage. On a successful save the creature has their movement reduced to half until the end of their next turn and takes only half damage."
+			]
+		},
+		{
+			"name": "Bomb: Superior Northern Wind",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:BS"
+			],
+			"entries": [
+				{
+					"name": "Handbombs/Bombs",
+					"type": "entries",
+					"entries": [
+						"Witchers are nothing if not versatile in their approaches to slaying monsters, and the second tool in their Witcher Preparation arsenal is the handbomb. Highly effective area-of-effect weapons, you can throw them at a point you can see within 60 feet of you to wreak havoc on your enemies.",
+						"Whether used as a simple damage-dealer, or as a method of strategically controlling the battlefield, your chances of survival will improve dramatically when you wield them.",
+						"{@b Using 1 handbomb/bomb equals one use of Witcher Preparation.}"
+					]
+				},
+				"Upon impact, the Northern Wind bomb releases a burst of freezing cold in a {@i 15-foot radius}. Each creature in this area must make a Constitution saving throw. On a failed save a creature has their movement reduced to 0 until the end of their next turn, and takes {@damage 6d6} cold damage. On a successful save the creature has their movement reduced to half until the end of their next turn and takes only half damage."
+			]
+		},
+		{
+			"name": "Bomb: Master Northern Wind",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:BM"
+			],
+			"entries": [
+				{
+					"name": "Handbombs/Bombs",
+					"type": "entries",
+					"entries": [
+						"Witchers are nothing if not versatile in their approaches to slaying monsters, and the second tool in their Witcher Preparation arsenal is the handbomb. Highly effective area-of-effect weapons, you can throw them at a point you can see within 60 feet of you to wreak havoc on your enemies.",
+						"Whether used as a simple damage-dealer, or as a method of strategically controlling the battlefield, your chances of survival will improve dramatically when you wield them.",
+						"{@b Using 1 handbomb/bomb equals one use of Witcher Preparation.}"
+					]
+				},
+				"Upon impact, the Northern Wind bomb releases a burst of freezing cold in a {@i 20-foot radius}. Each creature in this area must make a Constitution saving throw. On a failed save a creature has their movement reduced to 0 until the end of their next turn, and takes {@damage 8d6} cold damage. On a successful save the creature has their movement reduced to half until the end of their next turn and takes only half damage."
 			]
 		},
 		{
@@ -3686,7 +4218,73 @@
 				"OF:WITCHERHLA:B"
 			],
 			"entries": [
-				"When lobbed up to 30 feet as an action, the bomb detonates in a bright flash. Creatures within 10 feet of the explosion take {@dice 1d8} radiant damage and must make a DC 14 Constitution saving throw or be {@condition blinded} until the end of their next turn."
+				{
+					"name": "Handbombs/Bombs",
+					"type": "entries",
+					"entries": [
+						"Witchers are nothing if not versatile in their approaches to slaying monsters, and the second tool in their Witcher Preparation arsenal is the handbomb. Highly effective area-of-effect weapons, you can throw them at a point you can see within 60 feet of you to wreak havoc on your enemies.",
+						"Whether used as a simple damage-dealer, or as a method of strategically controlling the battlefield, your chances of survival will improve dramatically when you wield them.",
+						"{@b Using 1 handbomb/bomb equals one use of Witcher Preparation.}"
+					]
+				},
+				"Upon impact, the Samum bomb explodes in a flash of bright white light and deafening sound in a {@i 5-foot radius}. Each creature in this area must make a Constitution saving throw. On a failed save a creature is stunned for 1 turn and takes {@damage 2d4} thunder damage. On a successful save the creature is not stunned and takes only half damage."
+			]
+		},
+		{
+			"name": "Bomb: Greater Samum",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:BG"
+			],
+			"entries": [
+				{
+					"name": "Handbombs/Bombs",
+					"type": "entries",
+					"entries": [
+						"Witchers are nothing if not versatile in their approaches to slaying monsters, and the second tool in their Witcher Preparation arsenal is the handbomb. Highly effective area-of-effect weapons, you can throw them at a point you can see within 60 feet of you to wreak havoc on your enemies.",
+						"Whether used as a simple damage-dealer, or as a method of strategically controlling the battlefield, your chances of survival will improve dramatically when you wield them.",
+						"{@b Using 1 handbomb/bomb equals one use of Witcher Preparation.}"
+					]
+				},
+				"Upon impact, the Samum bomb explodes in a flash of bright white light and deafening sound in a {@i 5-foot radius}. Each creature in this area must make a Constitution saving throw. On a failed save a creature is stunned for 1 turn and takes {@damage 4d4} thunder damage. On a successful save the creature is not stunned and takes only half damage."
+			]
+		},
+		{
+			"name": "Bomb: Superior Samum",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:BS"
+			],
+			"entries": [
+				{
+					"name": "Handbombs/Bombs",
+					"type": "entries",
+					"entries": [
+						"Witchers are nothing if not versatile in their approaches to slaying monsters, and the second tool in their Witcher Preparation arsenal is the handbomb. Highly effective area-of-effect weapons, you can throw them at a point you can see within 60 feet of you to wreak havoc on your enemies.",
+						"Whether used as a simple damage-dealer, or as a method of strategically controlling the battlefield, your chances of survival will improve dramatically when you wield them.",
+						"{@b Using 1 handbomb/bomb equals one use of Witcher Preparation.}"
+					]
+				},
+				"Upon impact, the Samum bomb explodes in a flash of bright white light and deafening sound in a {@i 10-foot radius}. Each creature in this area must make a Constitution saving throw. On a failed save a creature is stunned for 1 turn and takes {@damage 6d4} thunder damage. On a successful save the creature is not stunned and takes only half damage."
+			]
+		},
+		{
+			"name": "Bomb: Master Samum",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:BM"
+			],
+			"entries": [
+				{
+					"name": "Handbombs/Bombs",
+					"type": "entries",
+					"entries": [
+						"Witchers are nothing if not versatile in their approaches to slaying monsters, and the second tool in their Witcher Preparation arsenal is the handbomb. Highly effective area-of-effect weapons, you can throw them at a point you can see within 60 feet of you to wreak havoc on your enemies.",
+						"Whether used as a simple damage-dealer, or as a method of strategically controlling the battlefield, your chances of survival will improve dramatically when you wield them.",
+						"{@b Using 1 handbomb/bomb equals one use of Witcher Preparation.}"
+					]
+				},
+				"Upon impact, the Samum bomb explodes in a flash of bright white light and deafening sound in a {@i 10-foot radius}. Each creature in this area must make a Constitution saving throw. On a failed save a creature is stunned for 1 turn and takes {@damage 8d4} thunder damage. On a successful save the creature is not stunned and takes only half damage."
 			]
 		}
 	],
