@@ -3,8 +3,8 @@
 	"_meta": {
 		"sources": [
 			{
-				"json": "WITCHER_HLA",
-				"abbreviation": "WITCHER_HLA",
+				"json": "WITCHERHLA",
+				"abbreviation": "WITCHERHLA",
 				"full": "Witcher Class by High Lord Amaran (2024-31-01)",
 				"authors": [
 					"u/HighLordAmaram"
@@ -17,7 +17,12 @@
 			}
 		],
 		"optionalFeatureTypes": {
-			"OF:WITCHER_HLA:R": "Alchemy Recipe"
+			"OF:WITCHERHLA:R": "Witcher Alchemy Recipe",
+			"OF:WITCHERHLA:P": "Witcher Potion",
+			"OF:WITCHERHLA:PG": "Witcher Greater Potion",
+			"OF:WITCHERHLA:PS": "Witcher Superior Potion",
+			"OF:WITCHERHLA:PM": "Witcher Master Potion",
+			"OF:WITCHERHLA:B": "Witcher Handbombs/Bombs"
 		},
 		"dateAdded": 1557168726,
 		"dateLastModified": 1713958692,
@@ -26,7 +31,7 @@
 	"class": [
 		{
 			"name": "Witcher",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"hd": {
 				"number": 1,
 				"faces": 8
@@ -263,7 +268,7 @@
 				},
 				{
 					"colLabels": [
-						"{@filter Spells Known|spells|class=Witcher|source=WITCHER_HLA}"
+						"{@filter Spells Known|spells|class=Witcher|source=WITCHERHLA}"
 					],
 					"rows": [
 						[
@@ -331,11 +336,11 @@
 				{
 					"title": "Spell Slots per Spell Level",
 					"colLabels": [
-						"{@filter 1st|spells|level=1|class=Witcher|source=WITCHER_HLA}",
-						"{@filter 2nd|spells|level=2|class=Witcher|source=WITCHER_HLA}",
-						"{@filter 3rd|spells|level=3|class=Witcher|source=WITCHER_HLA}",
-						"{@filter 4th|spells|level=4|class=Witcher|source=WITCHER_HLA}",
-						"{@filter 5th|spells|level=5|class=Witcher|source=WITCHER_HLA}"
+						"{@filter 1st|spells|level=1|class=Witcher|source=WITCHERHLA}",
+						"{@filter 2nd|spells|level=2|class=Witcher|source=WITCHERHLA}",
+						"{@filter 3rd|spells|level=3|class=Witcher|source=WITCHERHLA}",
+						"{@filter 4th|spells|level=4|class=Witcher|source=WITCHERHLA}",
+						"{@filter 5th|spells|level=5|class=Witcher|source=WITCHERHLA}"
 					],
 					"rowsSpellProgression": [
 						[
@@ -482,40 +487,55 @@
 				}
 			],
 			"classFeatures": [
-				"Alchemy|Witcher|WITCHER_HLA|1",
-				"Mutations|Witcher|WITCHER_HLA|1",
-				"Focus|Witcher|WITCHER_HLA|2",
-				"Signs|Witcher|WITCHER_HLA|2",
+				"Witcher's Bestiary|Witcher|WITCHERHLA|1",
 				{
-					"classFeature": "Witcher School|Witcher|WITCHER_HLA|3",
+					"classFeature": "Witcher School|Witcher|WITCHERHLA|1",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Witcher|WITCHER_HLA|4",
-				"Extra Attack|Witcher|WITCHER_HLA|5",
-				"Studious Eye|Witcher|WITCHER_HLA|6",
+				"Witcher Spellcasting|Witcher|WITCHERHLA|2",
+				"Fighting Style|Witcher|WITCHERHLA|2",
 				{
-					"classFeature": "Witcher School Feature|Witcher|WITCHER_HLA|7",
+					"classFeature": "Witcher Preparation|WITCHERHLA|3",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Witcher|WITCHER_HLA|8",
-				"Empowered Signs|Witcher|WITCHER_HLA|9",
+				"Blade Oil|Witcher|WITCHERHLA|3",
+				"Ability Score Improvement|Witcher|WITCHERHLA|4",
+				"Extra Attack|Witcher|WITCHERHLA|5",
+				"Monster Are My Trade|Witcher|WITCHERHLA|5",
+				"Blade Oil Superior|Witcher|WITCHERHLA|6",
 				{
-					"classFeature": "Witcher School Feature|Witcher|WITCHER_HLA|10",
+					"classFeature": "Witcher School|Witcher|WITCHERHLA|6",
 					"gainSubclassFeature": true
 				},
-				"Battle Signs|Witcher|WITCHER_HLA|11",
-				"Ability Score Improvement|Witcher|WITCHER_HLA|12",
-				"Quick Wits|Witcher|WITCHER_HLA|13",
 				{
-					"classFeature": "Witcher School Feature|Witcher|WITCHER_HLA|14",
+					"classFeature": "Witcher Preparation|WITCHERHLA|7",
 					"gainSubclassFeature": true
 				},
-				"Evasion|Witcher|WITCHER_HLA|15",
-				"Ability Score Improvement|Witcher|WITCHER_HLA|16",
-				"Foil|Witcher|WITCHER_HLA|17",
-				"Alchemy Expertise|Witcher|WITCHER_HLA|18",
-				"Ability Score Improvement|Witcher|WITCHER_HLA|19",
-				"Adrenaline Rush|Witcher|WITCHER_HLA|20"
+				"Ability Score Improvement|Witcher|WITCHERHLA|8",
+				{
+					"classFeature": "Witcher School|Witcher|WITCHERHLA|10",
+					"gainSubclassFeature": true
+				},
+				"Honed Edge|Witcher|WITCHERHLA|11",
+				{
+					"classFeature": "Witcher Preparation|WITCHERHLA|11",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Witcher|WITCHERHLA|12",
+				{
+					"classFeature": "Witcher School|Witcher|WITCHERHLA|14",
+					"gainSubclassFeature": true
+				},
+				{
+					"classFeature": "Witcher Preparation|WITCHERHLA|15",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Witcher|WITCHERHLA|16",
+				{
+					"classFeature": "Witcher School|Witcher|WITCHERHLA|18",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Witcher|WITCHERHLA|19"
 			],
 			"subclassTitle": "Witcher School",
 			"hasFluff": true
@@ -523,211 +543,3149 @@
 	],
 	"optionalfeature": [
 		{
-			"name": "Potion: Swallow",
-			"source": "WITCHER_HLA",
-			"featureType": [
-				"OF:WITCHER_HLA:R"
-			],
-			"entries": [
-				{
-					"type": "entries",
-					"name": "Ingredients",
-					"entries": [
-						"The brain of a creature with the monstrosity or abberation type, various herbs worth 10gp, 5gp of alcohol."
-					]
-				},
-				"A light red, sweet liquid. When consumed as a bonus action, your maximum health is reduced by your level until your next short or long rest. For one minute, so long as your health is not reduced to zero, you recover 4 + your Constitution modifier (min 0) hp at the start of each of your turns.",
-				"Starting at 9th level, you can double the max health reduction and healing of this potion when crafting it."
-			]
-		},
-		{
-			"name": "Potion: Thunderbolt",
-			"source": "WITCHER_HLA",
-			"featureType": [
-				"OF:WITCHER_HLA:R"
-			],
-			"entries": [
-				{
-					"type": "entries",
-					"name": "Ingredients",
-					"entries": [
-						"Flesh of a creature with the undead type, various herbs worth 10gp, 5gp of alcohol."
-					]
-				},
-				"A transparent green, sour liquid. When consumed as a bonus action, your maximum health is reduced by your level until your next short or long rest. For one minute, so long as your health is not reduced to zero, your weapon attacks deal an additional {@dice 1d4} damage.",
-				"Starting at 9th level, you can double the max health reduction and and increase the attack bonus of this potion to {@dice 1d8} when crafting it."
-			]
-		},
-		{
-			"name": "Potion: Petri's Philter",
-			"source": "WITCHER_HLA",
-			"featureType": [
-				"OF:WITCHER_HLA:R"
-			],
-			"entries": [
-				{
-					"type": "entries",
-					"name": "Ingredients",
-					"entries": [
-						"Dust from the remains of a creature that has resistance or immunity to nonmagical damage, various herbs worth 10gp, 5gp of alcohol."
-					]
-				},
-				"An opaque white, tasteless liquid. When consumed as a bonus action, your maximum health is reduced by your level until your next short or long rest. For one minute, so long as your health is not reduced to zero, your signs' effects act as if you were 6 levels higher."
-			]
-		},
-		{
-			"name": "Potion: Tawny Owl",
-			"source": "WITCHER_HLA",
-			"featureType": [
-				"OF:WITCHER_HLA:R"
-			],
-			"entries": [
-				{
-					"type": "entries",
-					"name": "Ingredients",
-					"entries": [
-						"Blood of a creature with the beast type, various herbs worth 10gp, 5gp of alcohol."
-					]
-				},
-				"A bitter, deep purple liquid. When consumed as a bonus action, your maximum health is reduced by your level until your next short or long rest. For one minute, so long as your health is not reduced to zero, you gain 1 focus at the start of each of your turns.",
-				"Starting at 9th level, you can double the max health reduction and focus generation of this potion when crafting it."
-			]
-		},
-		{
 			"name": "Potion: Blizzard",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"featureType": [
-				"OF:WITCHER_HLA:R"
+				"OF:WITCHERHLA:P"
 			],
 			"entries": [
 				{
+					"name": "Witcher Potion",
 					"type": "entries",
-					"name": "Ingredients",
 					"entries": [
-						"Remains of a creature with the elemental type, various herbs worth 10gp, 5gp of alcohol."
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
 					]
 				},
-				"A refreshing and cold, clear blue liquid. When consumed as a bonus action, your maximum health is reduced by your level until your next short or long rest. For one minute, so long as your health is not reduced to zero, your AC increases by 1.",
-				"Starting at 9th level, you can double the max health reduction and AC bonus of this potion when crafting it."
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"A refreshing and cold, clear blue liquid. When consumed as a bonus action, {@i your maximum health is reduced by your level} until your next short or long rest.",
+				"For one minute, so long as your health is not reduced to zero, your AC increases by {@i 2}."
+			]
+		},
+		{
+			"name": "Potion: Greater Blizzard",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PG"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"A refreshing and cold, clear blue liquid. When consumed as a bonus action, {@i your maximum health is reduced by your level} until your next short or long rest.",
+				"For one minute, so long as your health is not reduced to zero, your AC increases by {@i 3}."
+			]
+		},
+		{
+			"name": "Potion: Superior Blizzard",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PS"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"A refreshing and cold, clear blue liquid. When consumed as a bonus action, {@i your maximum health is reduced by your level} until your next short or long rest.",
+				"For one minute, so long as your health is not reduced to zero, your AC increases by {@i 4}."
+			]
+		},
+		{
+			"name": "Potion: Master Blizzard",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PM"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"A refreshing and cold, clear blue liquid. When consumed as a bonus action, {@i your maximum health is reduced by your level} until your next short or long rest.",
+				"For one minute, so long as your health is not reduced to zero, your AC increases by {@i 5}."
 			]
 		},
 		{
 			"name": "Potion: Sword Oil",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"featureType": [
-				"OF:WITCHER_HLA:R"
+				"OF:WITCHERHLA:P"
 			],
 			"entries": [
 				{
+					"name": "Witcher Potion",
 					"type": "entries",
-					"name": "Ingredients",
 					"entries": [
-						"Remains of a creature of the desired type, various herbs worth 5gp."
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
 					]
 				},
-				"You can create and apply to one of your weapons an oil for slaying creatures of a specific type (besides humanoid). Until your next long rest, when attacking creatures of that type, your weapon attacks with that weapon deal an additional {@dice 1d4} damage of the weapon's type. Applying another oil replaces any oils previously applied.",
-				"This bonus damage increases to {@dice 1d6} at 9th level."
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"You can create and apply to one of your weapons an oil for slaying creatures of a specific type (besides humanoid). Until your next long rest, when attacking creatures of that type, your weapon attacks with that weapon deal an additional {@dice 1d4} damage of the weapon's type. Applying another oil replaces any oils previously applied."
+			]
+		},
+		{
+			"name": "Potion: Greater Sword Oil",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PG"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"You can create and apply to one of your weapons an oil for slaying creatures of a specific type (besides humanoid). Until your next long rest, when attacking creatures of that type, your weapon attacks with that weapon deal an additional {@dice 1d6} damage of the weapon's type. Applying another oil replaces any oils previously applied."
+			]
+		},
+		{
+			"name": "Potion: Superior Sword Oil",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PS"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"You can create and apply to one of your weapons an oil for slaying creatures of a specific type (besides humanoid). Until your next long rest, when attacking creatures of that type, your weapon attacks with that weapon deal an additional {@dice 1d8} damage of the weapon's type. Applying another oil replaces any oils previously applied."
+			]
+		},
+		{
+			"name": "Potion: Master Sword Oil",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PM"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"You can create and apply to one of your weapons an oil for slaying creatures of a specific type (besides humanoid). Until your next long rest, when attacking creatures of that type, your weapon attacks with that weapon deal an additional {@dice 1d10} damage of the weapon's type. Applying another oil replaces any oils previously applied."
+			]
+		},
+		{
+			"name": "Potion: Black Blood",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:P"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 1 minute, any creature that attacks and hits you with claws, bite, or beak must make a Constitution saving throw. On a failed saving throw, they are subjected to the poisoned condition and take {@dice 1d4} poison damage at the start of each of their turns; this damage ignores poison resistance and immunity. They repeat the saving throw at the end of each of their turns, ending this condition on a success and gaining immunity to Black Blood for 1 hour."
+			]
+		},
+		{
+			"name": "Potion: Greater Black Blood",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PG"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 1 minute, any creature that attacks and hits you with claws, bite, or beak must make a Constitution saving throw. On a failed saving throw, they are subjected to the poisoned condition and take {@dice 2d4} poison damage at the start of each of their turns; this damage ignores poison resistance and immunity. They repeat the saving throw at the end of each of their turns, ending this condition on a success and gaining immunity to Black Blood for 1 hour."
+			]
+		},
+		{
+			"name": "Potion: Superior Black Blood",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PS"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 1 minute, any creature that attacks and hits you with claws, bite, or beak must make a Constitution saving throw. On a failed saving throw, they are subjected to the poisoned condition and take {@dice 3d4} poison damage at the start of each of their turns; this damage ignores poison resistance and immunity. They repeat the saving throw at the end of each of their turns, ending this condition on a success and gaining immunity to Black Blood for 1 hour."
+			]
+		},
+		{
+			"name": "Potion: Master Black Blood",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PM"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 1 minute, any creature that attacks and hits you with claws, bite, or beak must make a Constitution saving throw. On a failed saving throw, they are subjected to the poisoned condition and take {@dice 4d4} poison damage at the start of each of their turns; this damage ignores poison resistance and immunity. They repeat the saving throw at the end of each of their turns, ending this condition on a success and gaining immunity to Black Blood for 1 hour."
+			]
+		},
+		{
+			"name": "Potion: Elemental Decoction",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:P"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 1 minute, you gain increased defense against a particular damage type, reducing the amount of damage taken per instance by {@i 2}.",
+				"This potion can reduce one of any of the following damage types of your choice: Acid, Cold, Fire, Lightning, Necrotic, and Poison. You must select the damage type when you consume the potion."
+			]
+		},
+		{
+			"name": "Potion: Greater Elemental Decoction",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PG"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 1 minute, you gain increased defense against a particular damage type, reducing the amount of damage taken per instance by {@i 4}.",
+				"This potion can reduce one of any of the following damage types of your choice: Acid, Cold, Fire, Lightning, Necrotic, and Poison. You must select the damage type when you consume the potion."
+			]
+		},
+		{
+			"name": "Potion: Superior Elemental Decoction",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PS"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 1 minute, you gain increased defense against a particular damage type, reducing the amount of damage taken per instance by {@i 6}.",
+				"This potion can reduce one of any of the following damage types of your choice: Acid, Cold, Fire, Lightning, Necrotic, and Poison. You must select the damage type when you consume the potion."
+			]
+		},
+		{
+			"name": "Potion: Master Elemental Decoction",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PM"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 1 minute, you gain increased defense against a particular damage type, reducing the amount of damage taken per instance by {@i 8}.",
+				"This potion can reduce one of any of the following damage types of your choice: Acid, Cold, Fire, Lightning, Necrotic, and Poison. You must select the damage type when you consume the potion."
+			]
+		},
+		{
+			"name": "Potion: Elixir of the Bear",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:P"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 10 minutes, you gain {@i 10} temporary hit points, determined by the tier of the potion."
+			]
+		},
+		{
+			"name": "Potion: Greater Elixir of the Bear",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PG"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 10 minutes, you gain {@i 15} temporary hit points, determined by the tier of the potion."
+			]
+		},
+		{
+			"name": "Potion: Superior Elixir of the Bear",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PS"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 10 minutes, you gain {@i 20} temporary hit points, determined by the tier of the potion."
+			]
+		},
+		{
+			"name": "Potion: Master Elixir of the Bear",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PM"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 10 minutes, you gain {@i 25} temporary hit points, determined by the tier of the potion."
+			]
+		},
+		{
+			"name": "Potion: Elixir of the Cat",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:P"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 1 hour, you have {@sense darkvision}, up to a range of {@i 30 feet}."
+			]
+		},
+		{
+			"name": "Potion: Greater Elixir of the Cat",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PG"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 1 hour, you have {@sense darkvision}, up to a range of {@i 60 feet} and the special sense {@i See Through Illusions}."
+			]
+		},
+		{
+			"name": "Potion: Superior Elixir of the Cat",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PS"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 1 hour, you have {@sense darkvision}, up to a range of {@i 90 feet} and the special sense {@i See Through Magical Darkness}."
+			]
+		},
+		{
+			"name": "Potion: Master Elixir of the Cat",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PM"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 1 hour, you have {@sense darkvision}, up to a range of {@i 120 feet} and the special sense {@i Truesight}."
+			]
+		},
+		{
+			"name": "Potion: Elixir of the Griffin",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:P"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 1 minute, the potency of your spells is increased. When casting a spell, you choose to deal {@dice 1d6} additional amounts of damage or imbue yourself with a momentary boost to your health by gain {@dice 2d4} temporary hit points.",
+				"The damage bonus applies to the base damage of a spell, but not to any secondary effect."
+			]
+		},
+		{
+			"name": "Potion: Greater Elixir of the Griffin",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PG"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 1 minute, the potency of your spells is increased. When casting a spell, you choose to deal {@dice 2d6} additional amounts of damage or imbue yourself with a momentary boost to your health by gain {@dice 2d6} temporary hit points.",
+				"The damage bonus applies to the base damage of a spell, but not to any secondary effect."
+			]
+		},
+		{
+			"name": "Potion: Superior Elixir of the Griffin",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PS"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 1 minute, the potency of your spells is increased. When casting a spell, you choose to deal {@dice 3d6} additional amounts of damage or imbue yourself with a momentary boost to your health by gain {@dice 2d8} temporary hit points.",
+				"The damage bonus applies to the base damage of a spell, but not to any secondary effect."
+			]
+		},
+		{
+			"name": "Potion: Master Elixir of the Griffin",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PM"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 1 minute, the potency of your spells is increased. When casting a spell, you choose to deal {@dice 4d6} additional amounts of damage or imbue yourself with a momentary boost to your health by gain {@dice 2d10} temporary hit points.",
+				"The damage bonus applies to the base damage of a spell, but not to any secondary effect."
+			]
+		},
+		{
+			"name": "Potion: Elixir of the Manticore",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:P"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 1 minute, whenever you take piercing, bludgeoning, and slashing damage you reduce the damage by {@i 1} as well as gain a {@i +0} bonus to AC."
+			]
+		},
+		{
+			"name": "Potion: Greater Elixir of the Manticore",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PG"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 1 minute, whenever you take piercing, bludgeoning, and slashing damage you reduce the damage by {@i 1} as well as gain a {@i +1} bonus to AC."
+			]
+		},
+		{
+			"name": "Potion: Superior Elixir of the Manticore",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PS"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 1 minute, whenever you take piercing, bludgeoning, and slashing damage you reduce the damage by {@i 2} as well as gain a {@i +1} bonus to AC."
+			]
+		},
+		{
+			"name": "Potion: Master Elixir of the Manticore",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PM"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 1 minute, whenever you take piercing, bludgeoning, and slashing damage you reduce the damage by {@i 2} as well as gain a {@i +2} bonus to AC."
+			]
+		},
+		{
+			"name": "Potion: Elixir of the Viper",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:P"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 1 minute, enemies have disadvantage on opportunity attacks made against you, and you gain a {@i +10 feet} bonus to your movement speed."
+			]
+		},
+		{
+			"name": "Potion: Greater Elixir of the Viper",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PG"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 1 minute, enemies have disadvantage on opportunity attacks made against you, and you gain a {@i +15 feet} bonus to your movement speed."
+			]
+		},
+		{
+			"name": "Potion: Superior Elixir of the Viper",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PS"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 1 minute, enemies have disadvantage on opportunity attacks made against you, and you gain a {@i +20 feet} bonus to your movement speed."
+			]
+		},
+		{
+			"name": "Potion: Master Elixir of the Viper",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PM"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 1 minute, enemies have disadvantage on opportunity attacks made against you, and you gain a {@i +30 feet} bonus to your movement speed."
+			]
+		},
+		{
+			"name": "Potion: Elixir of the Wolf",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:P"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 1 minute, your weapon attacks have increased accuracy by {@i 1 (attack bonus +1)} as well as an increased critical hit range increased by {@i +0}."
+			]
+		},
+		{
+			"name": "Potion: Greater Elixir of the Wolf",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PG"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 1 minute, your weapon attacks have increased accuracy by {@i 1 (attack bonus +1)} as well as an increased critical hit range increased by {@i +1}."
+			]
+		},
+		{
+			"name": "Potion: Superior Elixir of the Wolf",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PS"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 1 minute, your weapon attacks have increased accuracy by {@i 2 (attack bonus +1)} as well as an increased critical hit range increased by {@i +1}."
+			]
+		},
+		{
+			"name": "Potion: Master Elixir of the Wolf",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PM"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 1 minute, your weapon attacks have increased accuracy by {@i 2 (attack bonus +1)} as well as an increased critical hit range increased by {@i +2}."
+			]
+		},
+		{
+			"name": "Potion: Golden Oriole",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:P"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"Immediately when you drink this potion, for the next minute, if you would be subjected to any of these conditions:",
+				{
+					"type": "list",
+					"items": [
+						"{@condition blinded}",
+						"{@condition deafened}"
+					]
+				},
+				"You have advantage on your saving throws for all listed Conditions.",
+				"Non-Witchers can consume Golden Oriole without taking the {@i Non-Witcher penalty}."
+			]
+		},
+		{
+			"name": "Potion: Greater Golden Oriole",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PG"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"Immediately when you drink this potion, for the next minute, if you would be subjected to any of these conditions:",
+				{
+					"type": "list",
+					"items": [
+						"{@condition blinded}",
+						"{@condition deafened}",
+						"{@condition charmed}",
+						"{@condition frightened}",
+						"{@condition poisoned}"
+					]
+				},
+				"You have advantage on your saving throws for all listed Conditions.",
+				"Non-Witchers can consume Golden Oriole without taking the {@i Non-Witcher penalty}."
+			]
+		},
+		{
+			"name": "Potion: Superior Golden Oriole",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PS"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"Immediately when you drink this potion, for the next minute, if you would be subjected to any of these conditions:",
+				{
+					"type": "list",
+					"items": [
+						"{@condition blinded}",
+						"{@condition deafened}",
+						"{@condition charmed}",
+						"{@condition frightened}",
+						"{@condition poisoned}",
+						"{@condition paralyzed}",
+						"{@condition petrified}",
+						"{@condition stunned}"
+					]
+				},
+				"You have advantage on your saving throws for all listed Conditions.",
+				"Non-Witchers can consume Golden Oriole without taking the {@i Non-Witcher penalty}."
+			]
+		},
+		{
+			"name": "Potion: Master Golden Oriole",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PM"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"Immediately when you drink this potion, for the next minute, if you would be subjected to any conditions.",
+				{
+					"type": "list",
+					"items": [
+						"{@condition blinded}",
+						"{@condition deafened}",
+						"{@condition charmed}",
+						"{@condition frightened}",
+						"{@condition poisoned}",
+						"{@condition paralyzed}",
+						"{@condition petrified}",
+						"{@condition stunned}"
+					]
+				},
+				"You have Immunity for all listed Conditions.",
+				"Non-Witchers can consume Golden Oriole without taking the {@i Non-Witcher penalty}."
+			]
+		},
+		{
+			"name": "Potion: Killer Whale",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:P"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 15 minutes, you can now breathe underwater, and gain a swim speed equal to your movement speed if you do not already have it. Your swim speed increase by {@i 0 feet}."
+			]
+		},
+		{
+			"name": "Potion: Greater Killer Whale",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PG"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 1 hour, you can now breathe underwater, and gain a swim speed equal to your movement speed if you do not already have it. Your swim speed increase by {@i 10 feet}."
+			]
+		},
+		{
+			"name": "Potion: Superior Killer Whale",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PS"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 4 hour, you can now breathe underwater, and gain a swim speed equal to your movement speed if you do not already have it. Your swim speed increase by {@i 20 feet}."
+			]
+		},
+		{
+			"name": "Potion: Master Killer Whale",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PM"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 16 hours, you can now breathe underwater, and gain a swim speed equal to your movement speed if you do not already have it. Your swim speed increase by {@i 30 feet}."
+			]
+		},
+		{
+			"name": "Potion: Swallow",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:P"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"You heal a number of {@dice 1d4} hit points immediately, and again at the start of each of your turns for the next three rounds. If you fall to zero hit points while the potion is still active, you are immediately stabilized but unconscious, and the potions effects end."
+			]
+		},
+		{
+			"name": "Potion: Greater Swallow",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PG"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"You heal a number of {@dice 2d4} hit points immediately, and again at the start of each of your turns for the next three rounds. If you fall to zero hit points while the potion is still active, you are immediately stabilized but unconscious, and the potions effects end."
+			]
+		},
+		{
+			"name": "Potion: Superior Swallow",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PS"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"You heal a number of {@dice 3d4} hit points immediately, and again at the start of each of your turns for the next three rounds. If you fall to zero hit points while the potion is still active, you are immediately stabilized but unconscious, and the potions effects end."
+			]
+		},
+		{
+			"name": "Potion: Master Swallow",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PM"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"You heal a number of {@dice 4d4} hit points immediately, and again at the start of each of your turns for the next three rounds. If you fall to zero hit points while the potion is still active, you are immediately stabilized but unconscious, and the potions effects end."
+			]
+		},
+		{
+			"name": "Potion: Thunderbolt",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:P"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 1 minute, your melee weapon attacks deal greater damage, you ignore resistances to piercing, slashing, and bludgeoning damage and your weapon attacks have increased damage by {@i 0 (damage bonus +0)}."
+			]
+		},
+		{
+			"name": "Potion: Greater Thunderbolt",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PG"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 1 minute, your melee weapon attacks deal greater damage, you ignore resistances to piercing, slashing, and bludgeoning damage and your weapon attacks have increased damage by {@i 2 (damage bonus +2)}."
+			]
+		},
+		{
+			"name": "Potion: Superior Thunderbolt",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PS"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 1 minute, your melee weapon attacks deal greater damage, you ignore resistances to piercing, slashing, and bludgeoning damage and your weapon attacks have increased damage by {@i 4 (damage bonus +4)}."
+			]
+		},
+		{
+			"name": "Potion: Master Thunderbolt",
+			"source": "WITCHERHLA",
+			"featureType": [
+				"OF:WITCHERHLA:PM"
+			],
+			"entries": [
+				{
+					"name": "Witcher Potion",
+					"type": "entries",
+					"entries": [
+						"Any Witcher worth their coin will have a number of prepared potions on their person, ready to be used at a moment's notice to give the Witcher an edge when dealing with deadly foes.",
+						"{@b Consuming 1 vial of a potion is equal to one use of Witcher Preparation.}"
+					]
+				},
+				{
+					"name": "Non-Witcher Penalty",
+					"type": "entries",
+					"entries": [
+						"Non-Witchers who consume Witcher potions must succeed on a Constitution saving throw or be poisoned for one minute. Even if they succeed, they take poison damage depending on the tier potion consumed, and retain none of the potion's benefits. Reference the table below for the damage amounts:",
+						{
+							"type": "table",
+							"colLabels": [
+								"Potion Tier",
+								"Poison Damage Taken"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"Base Potion",
+									"{@dice 1d8}"
+								],
+								[
+									"Greater",
+									"{@dice 2d8}"
+								],
+								[
+									"Superior",
+									"{@dice 3d8}"
+								],
+								[
+									"Master",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					]
+				},
+				"For 1 minute, your melee weapon attacks deal greater damage, you ignore resistances to piercing, slashing, and bludgeoning damage and your weapon attacks have increased damage by {@i 6 (damage bonus +6)}."
 			]
 		},
 		{
 			"name": "Bomb: Dancing Star",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"featureType": [
-				"OF:WITCHER_HLA:R"
+				"OF:WITCHERHLA:B"
 			],
 			"entries": [
-				{
-					"type": "entries",
-					"name": "Ingredients",
-					"entries": [
-						"Salts worth 10gp"
-					]
-				},
 				"When lobbed up to 30 feet as an action, the bomb detonates dealing {@dice 2d6} fire damage to each creature within a 10 foot radius, or half as much damage on a successful DC 14 Dexterity saving throw. The bomb creates a 10 foot radius patch of fire, dealing {@dice 1d6} fire damage to creatures that enter it or start their turn in it. The fire lasts 1 minute or until extinguished."
 			]
 		},
 		{
 			"name": "Bomb: Devil's Puffball",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"featureType": [
-				"OF:WITCHER_HLA:R"
+				"OF:WITCHERHLA:B"
 			],
 			"entries": [
-				{
-					"type": "entries",
-					"name": "Ingredients",
-					"entries": [
-						"Salts worth 5gp, herbs worth 5gp"
-					]
-				},
 				"When lobbed up to 30 feet as an action, the bomb detonates releasing poisonous gas in a cloud of radius 10 feet. Creatures that enter or start their turn in the cloud take {@dice 2d8} poison damage, or half as much on a successful DC 14 Constitution saving throw. The gas disperses after 1 minute."
 			]
 		},
 		{
 			"name": "Bomb: Dimetrium Bomb",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"featureType": [
-				"OF:WITCHER_HLA:R"
+				"OF:WITCHERHLA:B"
 			],
 			"entries": [
-				{
-					"type": "entries",
-					"name": "Ingredients",
-					"entries": [
-						"Salts worth 5gp, an enchanted stone worth 100gp"
-					]
-				},
 				"When lobbed up to 30 feet as an action, the bomb detonates releasing grains of magic-nullifying Dimetrium into a cloud of radius 10 feet. Creatures inside the cloud cannot cast spells, and magic items inside the cloud temporarily lose their magical properties. Any ongoing magical effects from spells of 6th level or lower are dispelled within the cloud. The cloud disperses after 1 minute."
 			]
 		},
 		{
 			"name": "Bomb: Moondust",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"featureType": [
-				"OF:WITCHER_HLA:R"
+				"OF:WITCHERHLA:B"
 			],
 			"entries": [
-				{
-					"type": "entries",
-					"name": "Ingredients",
-					"entries": [
-						"Salts worth 5gp, 10gp of Quicksilver"
-					]
-				},
 				"When lobbed up to 30 feet as an action, the bomb detonates releasing finely powdered silver into a cloud of radius 10 feet. Creatures inside the cloud cannot transform, and shapechangers affected by this revert to their normal form. The dust disperses after 1 minute."
 			]
 		},
 		{
 			"name": "Bomb: Northern Wind",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"featureType": [
-				"OF:WITCHER_HLA:R"
+				"OF:WITCHERHLA:B"
 			],
 			"entries": [
-				{
-					"type": "entries",
-					"name": "Ingredients",
-					"entries": [
-						"Salts worth 5gp, a pearl worth 5gp, acidic solution worth 5gp"
-					]
-				},
 				"When lobbed up to 30 feet as an action, the bomb detonates releasing freezing cold gas in a cloud of radius 10 feet. Creatures that enter or start their turn in the cloud take {@dice 1d8} cold damage, or half as much on a successful DC 14 Constitution saving throw. Creatures that take this cold damage have their movement reduced by half until the end of their turn. The gas disperses after 1 minute."
 			]
 		},
 		{
 			"name": "Bomb: Samum",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"featureType": [
-				"OF:WITCHER_HLA:R"
+				"OF:WITCHERHLA:B"
 			],
 			"entries": [
-				{
-					"type": "entries",
-					"name": "Ingredients",
-					"entries": [
-						"Salts worth 5gp, herbs worth 5gp"
-					]
-				},
 				"When lobbed up to 30 feet as an action, the bomb detonates in a bright flash. Creatures within 10 feet of the explosion take {@dice 1d8} radiant damage and must make a DC 14 Constitution saving throw or be {@condition blinded} until the end of their next turn."
 			]
 		}
@@ -735,20 +3693,20 @@
 	"classFeature": [
 		{
 			"name": "Alchemy",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"level": 1,
 			"entries": [
-				"At 1st level, you have been trained in the specialized alchemy used by witchers to prepare themselves for combat. During a short rest, you can use {@item Alchemist's supplies|PHB} to craft a potion, oil, or bomb if you have the required ingredients and know the appropriate {@filter recipe|optionalfeatures|source=null|feature type=OF:WITCHER_HLA:R}, a list of which are found at the end of this class description. You can carry 2 alchemy products at any given time, and only you can use the products you create.",
+				"At 1st level, you have been trained in the specialized alchemy used by witchers to prepare themselves for combat. During a short rest, you can use {@item Alchemist's supplies|PHB} to craft a potion, oil, or bomb if you have the required ingredients and know the appropriate {@filter recipe|optionalfeatures|source=null|feature type=OF:WITCHERHLA:R}, a list of which are found at the end of this class description. You can carry 2 alchemy products at any given time, and only you can use the products you create.",
 				"The number of recipes you know is equal to your proficiency bonus + your Intelligence modifier. At the DM's discretion, other recipes may be available for purchase or found in the world."
 			]
 		},
 		{
 			"name": "Mutations",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"level": 1,
 			"entries": [
 				"As a witcher, you have undergone mutations to your body including the perilous Trial of the Grasses. Starting at 1st level, you gain the following benefits:",
@@ -767,9 +3725,9 @@
 		},
 		{
 			"name": "Focus",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"level": 2,
 			"entries": [
 				"At 2nd level, you have learned the art of reading your opponent and the battlefield, allowing you to enhance your attacks and use powerful abilities. Your focus is set to 1 when you roll initiative, and you gain 1 focus each time you successfully hit with a weapon attack, up to your focus cap, which is detailed on the witcher class table. You lose all focus after combat ends.",
@@ -779,9 +3737,9 @@
 		},
 		{
 			"name": "Signs",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"level": 2,
 			"entries": [
 				"Starting at 2nd level, you are able to channel your focus to cast a few simple but practical magic hexes used by witchers called signs. You can cast a sign in place of a weapon attack when you take the {@action Attack} action on your turn. Casting a sign costs 1 focus, and you can only cast one sign on your turn. You can't cast a sign while holding something in each hand or wielding a weapon with the two-handed property.",
@@ -850,9 +3808,9 @@
 		},
 		{
 			"name": "Witcher School",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"level": 3,
 			"entries": [
 				"At 3rd level, you choose a witcher school whose techniques and style you wish to employ. Choose between the School of the Wolf, Bear, Cat, Griffin, or Viper, detailed at the end of this class description. The school you choose grants you features at 3rd level, then again at 7th, 10th, and 14th level."
@@ -860,9 +3818,9 @@
 		},
 		{
 			"name": "Ability Score Improvement",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"level": 4,
 			"entries": [
 				"When you reach 4th, 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
@@ -871,9 +3829,9 @@
 		},
 		{
 			"name": "Extra Attack",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"level": 5,
 			"entries": [
 				"Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack} action on your turn."
@@ -881,9 +3839,9 @@
 		},
 		{
 			"name": "Studious Eye",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"level": 6,
 			"entries": [
 				"By 6th level, you have learned to identify certain traits and characteristics in creatures you fight. By either observing a creature for 1 minute or spending 1 focus as a bonus action, you learn one aspect about the creature of your choice: Creature Type, Armor Class, Senses, Damage Vulnerabilities, Damage Resistances, Damage Immunities, or Condition Immunities. At 13th level you may learn two aspects of your choice instead.",
@@ -892,9 +3850,9 @@
 		},
 		{
 			"name": "Witcher School Feature",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"level": 7,
 			"entries": [
 				"At 7th level, you gain a feature from your Witcher School."
@@ -902,9 +3860,9 @@
 		},
 		{
 			"name": "Ability Score Improvement",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"level": 8,
 			"entries": [
 				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
@@ -913,9 +3871,9 @@
 		},
 		{
 			"name": "Empowered Signs",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"level": 9,
 			"entries": [
 				"Starting at 9th level, you can use signs in new, more powerful variants for an enhanced effect. By consuming 2 additional focus, you can cast an alternative form of each sign as detailed in their descriptions."
@@ -923,9 +3881,9 @@
 		},
 		{
 			"name": "Witcher School Feature",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"level": 10,
 			"entries": [
 				"At 10th level, you gain a feature from your Witcher School."
@@ -933,9 +3891,9 @@
 		},
 		{
 			"name": "Battle Signs",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"level": 11,
 			"entries": [
 				"At 11th level, you can incorporate signs more easily into your assault. When you take the {@action Attack} action on your turn, you can cast a sign without forgoing any of your weapon attacks. Additionally, at the end of each of your turns, if you haven't cast a sign this turn, you gain 1 focus."
@@ -943,9 +3901,9 @@
 		},
 		{
 			"name": "Ability Score Improvement",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"level": 12,
 			"entries": [
 				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
@@ -954,9 +3912,9 @@
 		},
 		{
 			"name": "Quick Wits",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"level": 13,
 			"entries": [
 				"Starting at 13th level, you are quick to act and ready to leap into combat at an opportune time. When you roll initiative, you may roll the d20 twice and choose which roll to use."
@@ -964,9 +3922,9 @@
 		},
 		{
 			"name": "Witcher School Feature",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"level": 14,
 			"entries": [
 				"At 14th level, you gain a feature from your Witcher School."
@@ -974,9 +3932,9 @@
 		},
 		{
 			"name": "Evasion",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"level": 15,
 			"entries": [
 				"At 15th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or a lightning bolt spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
@@ -984,9 +3942,9 @@
 		},
 		{
 			"name": "Ability Score Improvement",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"level": 16,
 			"entries": [
 				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
@@ -995,9 +3953,9 @@
 		},
 		{
 			"name": "Foil",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"level": 17,
 			"entries": [
 				"Starting at 17th level, you are capable of interrupting the spells and abilities of your opponents. When a creature forces you or a friendly creature to make a saving throw, you can use your reaction to make a weapon attack against it. If your attack successfully hits, any creature affected automatically succeeds on their save against the effect. Once you use this feature, you cannot use it again until you complete a long rest."
@@ -1005,19 +3963,19 @@
 		},
 		{
 			"name": "Alchemy Expertise",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"level": 18,
 			"entries": [
-				"At 18th level, you have mastered efficiently using materials and recycling components in your alchemical crafts. You ignore crafting components when creating Alchemy products. Additionally, you can carry 3 products at a time, instead of 2. When you gain this feature, you learn 4 new {@filter Alchemy recipes|optionalfeatures|source=null|feature type=OF:WITCHER_HLA:R} of your choice."
+				"At 18th level, you have mastered efficiently using materials and recycling components in your alchemical crafts. You ignore crafting components when creating Alchemy products. Additionally, you can carry 3 products at a time, instead of 2. When you gain this feature, you learn 4 new {@filter Alchemy recipes|optionalfeatures|source=null|feature type=OF:WITCHERHLA:R} of your choice."
 			]
 		},
 		{
 			"name": "Ability Score Improvement",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"level": 19,
 			"entries": [
 				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
@@ -1026,9 +3984,9 @@
 		},
 		{
 			"name": "Adrenaline Rush",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"level": 20,
 			"entries": [
 				"At 20th level, you can utilize your adrenaline to burst into a rush of action. At the end of your turn, if you have 5 focus available, you can choose to immediately take another turn; at the end of that turn, you lose all focus. Once you use this feature, you cannot use it again until you complete a long rest."
@@ -1038,17 +3996,17 @@
 	"subclassFeature": [
 		{
 			"name": "School of the Wolf",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"subclassShortName": "School of the Wolf",
-			"subclassSource": "WITCHER_HLA",
+			"subclassSource": "WITCHERHLA",
 			"level": 3,
 			"entries": [
 				"Based in Kaer Morhen, the School of the Wolf is perhaps the most renowned and populous school still around, although still home to few students. The school focuses on mastering the basic witcher techniques, complementing them with new maneuvers to deal with any kind of monstrous prey.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Battle Trance|Witcher|WITCHER_HLA|School of the Wolf|WITCHER_HLA|3"
+					"subclassFeature": "Battle Trance|Witcher|WITCHERHLA|School of the Wolf|WITCHERHLA|3"
 				}
 			]
 		},
@@ -1057,21 +4015,21 @@
 			"entries": [
 				"Your razor sharp focus guides your attacks in combat. Starting at 3rd level, your weapon attacks deal additional damage equal to your current focus."
 			],
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"subclassShortName": "School of the Wolf",
-			"subclassSource": "WITCHER_HLA",
+			"subclassSource": "WITCHERHLA",
 			"level": 3,
 			"header": 1
 		},
 		{
 			"name": "Spins and Pirouettes",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"subclassShortName": "School of the Wolf",
-			"subclassSource": "WITCHER_HLA",
+			"subclassSource": "WITCHERHLA",
 			"level": 7,
 			"header": 2,
 			"entries": [
@@ -1080,11 +4038,11 @@
 		},
 		{
 			"name": "Arrow Deflection",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"subclassShortName": "School of the Wolf",
-			"subclassSource": "WITCHER_HLA",
+			"subclassSource": "WITCHERHLA",
 			"level": 10,
 			"header": 2,
 			"entries": [
@@ -1093,11 +4051,11 @@
 		},
 		{
 			"name": "Rushing Agility",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"subclassShortName": "School of the Wolf",
-			"subclassSource": "WITCHER_HLA",
+			"subclassSource": "WITCHERHLA",
 			"level": 14,
 			"header": 2,
 			"entries": [
@@ -1125,17 +4083,17 @@
 		},
 		{
 			"name": "School of the Viper",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"subclassShortName": "School of the Viper",
-			"subclassSource": "WITCHER_HLA",
+			"subclassSource": "WITCHERHLA",
 			"level": 3,
 			"entries": [
 				"Based in an unknown location and possibly dissolved, the School of the Viper is a secretive organization, its students few and scattered. The school is known for doing whatever needs to be done for a contract, specializing in hit and run tactics some may call dirty fighting.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Dual Wielder|Witcher|WITCHER_HLA|School of the Viper|WITCHER_HLA|3"
+					"subclassFeature": "Dual Wielder|Witcher|WITCHERHLA|School of the Viper|WITCHERHLA|3"
 				}
 			]
 		},
@@ -1144,21 +4102,21 @@
 			"entries": [
 				"Starting at 3rd level, you can adopt the traditional two-weapon fighting technique of the Viper School. You can ignore the somatic requirement of signs while using two-weapon fighting; additionally, you gain the {@link Two Weapon Fighting|https://5e.tools/optionalfeatures.html#two-weapon%20fighting_phb} fighting style."
 			],
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"subclassShortName": "School of the Viper",
-			"subclassSource": "WITCHER_HLA",
+			"subclassSource": "WITCHERHLA",
 			"level": 3,
 			"header": 1
 		},
 		{
 			"name": "Slippery",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"subclassShortName": "School of the Viper",
-			"subclassSource": "WITCHER_HLA",
+			"subclassSource": "WITCHERHLA",
 			"level": 7,
 			"header": 2,
 			"entries": [
@@ -1167,11 +4125,11 @@
 		},
 		{
 			"name": "Tolerance",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"subclassShortName": "School of the Viper",
-			"subclassSource": "WITCHER_HLA",
+			"subclassSource": "WITCHERHLA",
 			"level": 10,
 			"header": 2,
 			"entries": [
@@ -1180,11 +4138,11 @@
 		},
 		{
 			"name": "Killing Strike",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"subclassShortName": "School of the Viper",
-			"subclassSource": "WITCHER_HLA",
+			"subclassSource": "WITCHERHLA",
 			"level": 14,
 			"header": 2,
 			"entries": [
@@ -1193,17 +4151,17 @@
 		},
 		{
 			"name": "School of the Bear",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"subclassShortName": "School of the Bear",
-			"subclassSource": "WITCHER_HLA",
+			"subclassSource": "WITCHERHLA",
 			"level": 3,
 			"entries": [
 				"Honorable and stout, the witchers of the School of the Bear focus on holding their ground rather than dancing around their foes. Through their unique training, strength, and tenacity, Bear school witchers can stand up to powerful warriors and beasts alike.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Heavy Gear Training|Witcher|WITCHER_HLA|School of the Bear|WITCHER_HLA|3"
+					"subclassFeature": "Heavy Gear Training|Witcher|WITCHERHLA|School of the Bear|WITCHERHLA|3"
 				}
 			]
 		},
@@ -1212,21 +4170,21 @@
 			"entries": [
 				"Starting at 3rd level, you can ignore the somatic requirement of signs while using weapons with the two-handed property. Additionally, you gain proficiency with heavy armor."
 			],
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"subclassShortName": "School of the Bear",
-			"subclassSource": "WITCHER_HLA",
+			"subclassSource": "WITCHERHLA",
 			"level": 3,
 			"header": 1
 		},
 		{
 			"name": "Vitalic Blows",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"subclassShortName": "School of the Bear",
-			"subclassSource": "WITCHER_HLA",
+			"subclassSource": "WITCHERHLA",
 			"level": 7,
 			"header": 2,
 			"entries": [
@@ -1235,11 +4193,11 @@
 		},
 		{
 			"name": "Thick Skin",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"subclassShortName": "School of the Bear",
-			"subclassSource": "WITCHER_HLA",
+			"subclassSource": "WITCHERHLA",
 			"level": 10,
 			"header": 2,
 			"entries": [
@@ -1248,11 +4206,11 @@
 		},
 		{
 			"name": "Ursine Endurance",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"subclassShortName": "School of the Bear",
-			"subclassSource": "WITCHER_HLA",
+			"subclassSource": "WITCHERHLA",
 			"level": 14,
 			"header": 2,
 			"entries": [
@@ -1261,17 +4219,17 @@
 		},
 		{
 			"name": "School of the Cat",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"subclassShortName": "School of the Cat",
-			"subclassSource": "WITCHER_HLA",
+			"subclassSource": "WITCHERHLA",
 			"level": 3,
 			"entries": [
 				"The only school known to accept contracts on humans, the School of the Cat has largely become ostracized by their fellow witchers for this breach of their honor code. The school's effectiveness, however, cannot be doubted. Aggressive and flexible, the school focuses on landing many strikes to exploit weaknesses while avoiding damage through mobility.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Improved Critical|Witcher|WITCHER_HLA|School of the Cat|WITCHER_HLA|3"
+					"subclassFeature": "Improved Critical|Witcher|WITCHERHLA|School of the Cat|WITCHERHLA|3"
 				}
 			]
 		},
@@ -1280,21 +4238,21 @@
 			"entries": [
 				"Starting at 3rd level, you critical strike on a roll of 19 or 20 on the d20. Additionally, when you critically strike you gain focus up to your cap."
 			],
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"subclassShortName": "School of the Cat",
-			"subclassSource": "WITCHER_HLA",
+			"subclassSource": "WITCHERHLA",
 			"level": 3,
 			"header": 1
 		},
 		{
 			"name": "Quick Reflexes",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"subclassShortName": "School of the Cat",
-			"subclassSource": "WITCHER_HLA",
+			"subclassSource": "WITCHERHLA",
 			"level": 7,
 			"header": 2,
 			"entries": [
@@ -1303,11 +4261,11 @@
 		},
 		{
 			"name": "Impeccable Instinct",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"subclassShortName": "School of the Cat",
-			"subclassSource": "WITCHER_HLA",
+			"subclassSource": "WITCHERHLA",
 			"level": 10,
 			"header": 2,
 			"entries": [
@@ -1316,11 +4274,11 @@
 		},
 		{
 			"name": "Deadly Flurry",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"subclassShortName": "School of the Cat",
-			"subclassSource": "WITCHER_HLA",
+			"subclassSource": "WITCHERHLA",
 			"level": 14,
 			"header": 2,
 			"entries": [
@@ -1330,17 +4288,17 @@
 		},
 		{
 			"name": "School of the Griffin",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"subclassShortName": "School of the Griffin",
-			"subclassSource": "WITCHER_HLA",
+			"subclassSource": "WITCHERHLA",
 			"level": 3,
 			"entries": [
 				"With honor and dignity, members of the School of the Griffin pride themselves on dispatching enemies and fulfilling contracts with utmost efficiency. Witchers of the Griffin school focus on enhancing their utilitarian magical spells and weaving them into their combat techniques.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Total Focus|Witcher|WITCHER_HLA|School of the Griffin|WITCHER_HLA|3"
+					"subclassFeature": "Total Focus|Witcher|WITCHERHLA|School of the Griffin|WITCHERHLA|3"
 				}
 			]
 		},
@@ -1349,21 +4307,21 @@
 			"entries": [
 				"At 3rd level, you can close out all irrelevant sensory information to take in the battlefield. As a bonus action, you can mark a creature; the marked creature has disadvantage on saves against all your signs. You can only mark a new creature after either killing the currently marked creature or removing the mark as an action. Additionally, your focus cap increases by 1."
 			],
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"subclassShortName": "School of the Griffin",
-			"subclassSource": "WITCHER_HLA",
+			"subclassSource": "WITCHERHLA",
 			"level": 3,
 			"header": 1
 		},
 		{
 			"name": "Sign Intensity",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"subclassShortName": "School of the Griffin",
-			"subclassSource": "WITCHER_HLA",
+			"subclassSource": "WITCHERHLA",
 			"level": 7,
 			"header": 2,
 			"entries": [
@@ -1412,11 +4370,11 @@
 		},
 		{
 			"name": "Opulence",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"subclassShortName": "School of the Griffin",
-			"subclassSource": "WITCHER_HLA",
+			"subclassSource": "WITCHERHLA",
 			"level": 10,
 			"header": 2,
 			"entries": [
@@ -1425,11 +4383,11 @@
 		},
 		{
 			"name": "Elemental Flow",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA",
+			"classSource": "WITCHERHLA",
 			"subclassShortName": "School of the Griffin",
-			"subclassSource": "WITCHER_HLA",
+			"subclassSource": "WITCHERHLA",
 			"level": 14,
 			"header": 2,
 			"entries": [
@@ -1441,77 +4399,77 @@
 		{
 			"name": "School of the Wolf",
 			"shortName": "School of the Wolf",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"subclassFeatures": [
-				"School of the Wolf|Witcher|WITCHER_HLA|School of the Wolf|WITCHER_HLA|3",
-				"Spins and Pirouettes|Witcher|WITCHER_HLA|School of the Wolf|WITCHER_HLA|7",
-				"Arrow Deflection|Witcher|WITCHER_HLA|School of the Wolf|WITCHER_HLA|10",
-				"Rushing Agility|Witcher|WITCHER_HLA|School of the Wolf|WITCHER_HLA|14"
+				"School of the Wolf|Witcher|WITCHERHLA|School of the Wolf|WITCHERHLA|3",
+				"Spins and Pirouettes|Witcher|WITCHERHLA|School of the Wolf|WITCHERHLA|7",
+				"Arrow Deflection|Witcher|WITCHERHLA|School of the Wolf|WITCHERHLA|10",
+				"Rushing Agility|Witcher|WITCHERHLA|School of the Wolf|WITCHERHLA|14"
 			],
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA"
+			"classSource": "WITCHERHLA"
 		},
 		{
 			"name": "School of the Viper",
 			"shortName": "School of the Viper",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"subclassFeatures": [
-				"School of the Viper|Witcher|WITCHER_HLA|School of the Viper|WITCHER_HLA|3",
-				"Slippery|Witcher|WITCHER_HLA|School of the Viper|WITCHER_HLA|7",
-				"Tolerance|Witcher|WITCHER_HLA|School of the Viper|WITCHER_HLA|10",
-				"Killing Strike|Witcher|WITCHER_HLA|School of the Viper|WITCHER_HLA|14"
+				"School of the Viper|Witcher|WITCHERHLA|School of the Viper|WITCHERHLA|3",
+				"Slippery|Witcher|WITCHERHLA|School of the Viper|WITCHERHLA|7",
+				"Tolerance|Witcher|WITCHERHLA|School of the Viper|WITCHERHLA|10",
+				"Killing Strike|Witcher|WITCHERHLA|School of the Viper|WITCHERHLA|14"
 			],
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA"
+			"classSource": "WITCHERHLA"
 		},
 		{
 			"name": "School of the Bear",
 			"shortName": "School of the Bear",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"subclassFeatures": [
-				"School of the Bear|Witcher|WITCHER_HLA|School of the Bear|WITCHER_HLA|3",
-				"Vitalic Blows|Witcher|WITCHER_HLA|School of the Bear|WITCHER_HLA|7",
-				"Thick Skin|Witcher|WITCHER_HLA|School of the Bear|WITCHER_HLA|10",
-				"Ursine Endurance|Witcher|WITCHER_HLA|School of the Bear|WITCHER_HLA|14"
+				"School of the Bear|Witcher|WITCHERHLA|School of the Bear|WITCHERHLA|3",
+				"Vitalic Blows|Witcher|WITCHERHLA|School of the Bear|WITCHERHLA|7",
+				"Thick Skin|Witcher|WITCHERHLA|School of the Bear|WITCHERHLA|10",
+				"Ursine Endurance|Witcher|WITCHERHLA|School of the Bear|WITCHERHLA|14"
 			],
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA"
+			"classSource": "WITCHERHLA"
 		},
 		{
 			"name": "School of the Cat",
 			"shortName": "School of the Cat",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"subclassFeatures": [
-				"School of the Cat|Witcher|WITCHER_HLA|School of the Cat|WITCHER_HLA|3",
-				"Quick Reflexes|Witcher|WITCHER_HLA|School of the Cat|WITCHER_HLA|7",
-				"Impeccable Instinct|Witcher|WITCHER_HLA|School of the Cat|WITCHER_HLA|10",
-				"Deadly Flurry|Witcher|WITCHER_HLA|School of the Cat|WITCHER_HLA|14"
+				"School of the Cat|Witcher|WITCHERHLA|School of the Cat|WITCHERHLA|3",
+				"Quick Reflexes|Witcher|WITCHERHLA|School of the Cat|WITCHERHLA|7",
+				"Impeccable Instinct|Witcher|WITCHERHLA|School of the Cat|WITCHERHLA|10",
+				"Deadly Flurry|Witcher|WITCHERHLA|School of the Cat|WITCHERHLA|14"
 			],
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA"
+			"classSource": "WITCHERHLA"
 		},
 		{
 			"name": "School of the Griffin",
 			"shortName": "School of the Griffin",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"subclassFeatures": [
-				"School of the Griffin|Witcher|WITCHER_HLA|School of the Griffin|WITCHER_HLA|3",
-				"Sign Intensity|Witcher|WITCHER_HLA|School of the Griffin|WITCHER_HLA|7",
-				"Opulence|Witcher|WITCHER_HLA|School of the Griffin|WITCHER_HLA|10",
-				"Elemental Flow|Witcher|WITCHER_HLA|School of the Griffin|WITCHER_HLA|14"
+				"School of the Griffin|Witcher|WITCHERHLA|School of the Griffin|WITCHERHLA|3",
+				"Sign Intensity|Witcher|WITCHERHLA|School of the Griffin|WITCHERHLA|7",
+				"Opulence|Witcher|WITCHERHLA|School of the Griffin|WITCHERHLA|10",
+				"Elemental Flow|Witcher|WITCHERHLA|School of the Griffin|WITCHERHLA|14"
 			],
 			"className": "Witcher",
-			"classSource": "WITCHER_HLA"
+			"classSource": "WITCHERHLA"
 		}
 	],
 	"classFluff": [
 		{
 			"name": "Witcher",
-			"source": "WITCHER_HLA",
+			"source": "WITCHERHLA",
 			"entries": [
 				{
 					"name": "Witcher",
-					"source": "WITCHER_HLA",
+					"source": "WITCHERHLA",
 					"type": "section",
 					"page": 1,
 					"entries": [
