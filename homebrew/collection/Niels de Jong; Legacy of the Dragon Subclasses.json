@@ -8513,7 +8513,7 @@
 			"name": "Wyrm Wizard Magic",
 			"source": "LEGDRAG",
 			"shortName": "Wyrm Wizard",
-			"page": 88,
+			"page": 90,
 			"className": "Wizard",
 			"classSource": "PHB",
 			"subclassFeatures": [
@@ -8525,6 +8525,21 @@
 			"subclassSpells": [
 				"counterspell|phb",
 				"dispel magic|phb"
+			]
+		},
+		{
+			"name": "School of Necromancy Dracolich",
+			"shortName": "Dracolich",
+			"source": "LEGDRAG",
+			"className": "Wizard",
+			"classSource": "PHB",
+			"page": 88,
+			"subclassFeatures": [
+				"School of Necromancy Dracolich|Wizard|PHB|Dracolich|LEGDRAG|2",
+				"Undead Thralls|Wizard|PHB|Dracolich|LEGDRAG|6",
+				"DreaDful summoner|Wizard|PHB|Dracolich|LEGDRAG|6",
+				"Inured to Undeath|Wizard|PHB|Dracolich|LEGDRAG|10",
+				"Command Undead|Wizard|PHB|Dracolich|LEGDRAG|14"
 			]
 		}
 	],
@@ -12683,7 +12698,7 @@
 		{
 			"name": "Wyrm Wizard",
 			"source": "LEGDRAG",
-			"page": 88,
+			"page": 90,
 			"className": "Wizard",
 			"classSource": "PHB",
 			"subclassShortName": "Wyrm Wizard",
@@ -12712,7 +12727,7 @@
 		{
 			"name": "Knowledge of the Wyrm",
 			"source": "LEGDRAG",
-			"page": 88,
+			"page": 90,
 			"className": "Wizard",
 			"classSource": "PHB",
 			"subclassShortName": "Wyrm Wizard",
@@ -12740,7 +12755,7 @@
 		{
 			"name": "Draconic Discovery",
 			"source": "LEGDRAG",
-			"page": 88,
+			"page": 90,
 			"className": "Wizard",
 			"classSource": "PHB",
 			"subclassShortName": "Wyrm Wizard",
@@ -12754,7 +12769,7 @@
 		{
 			"name": "Convert Counterspell",
 			"source": "LEGDRAG",
-			"page": 88,
+			"page": 90,
 			"className": "Wizard",
 			"classSource": "PHB",
 			"subclassShortName": "Wyrm Wizard",
@@ -12769,7 +12784,7 @@
 		{
 			"name": "BreaK Spell Resistance",
 			"source": "LEGDRAG",
-			"page": 88,
+			"page": 90,
 			"className": "Wizard",
 			"classSource": "PHB",
 			"subclassShortName": "Wyrm Wizard",
@@ -12784,7 +12799,7 @@
 		{
 			"name": "Wyrm Sage",
 			"source": "LEGDRAG",
-			"page": 88,
+			"page": 90,
 			"className": "Wizard",
 			"classSource": "PHB",
 			"subclassShortName": "Wyrm Wizard",
@@ -12793,6 +12808,130 @@
 			"header": 2,
 			"entries": [
 				"At 14th level, you have completed your training under your dragon mentors. You have defied the slander that you were a dragon slave, and instead have formed a strong bond with dragon kind. With their tutelage you have learned new ways to utilize your magical talent, walking in the footsteps of legendary figures like Lina Inverse the Slayer. When you cast a cantrip that has a casting time of 1 action, you can cast it with 1 bonus action instead. If you do, you can still cast non-cantrip spells with your action during the current turn. Any cantrip cast in this way, or attack made while casting that cantrip or as part of that cantrip's effects, deals half damage and cannot grant you resistance to damage."
+			]
+		},
+		{
+			"name": "School of Necromancy Dracolich",
+			"source": "LEGDRAG",
+			"page": 88,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Dracolich",
+			"subclassSource": "LEGDRAG",
+			"level": 2,
+			"entries": [
+				"The School of Dracolich explores the cosmic forces of life, death, and undeath. As you focus your studies in this tradition, you learn to manipulate the energy that animates all living things. As you progress, you learn to sap the life force from a creature as your magic destroys its body, transforming that vital energy into magical power you can manipulate.",
+				"Most people see necromancers as menacing, or even villainous, due to the close association with death. Not all necromancers are evil, but the forces they manipulate are considered taboo by many societies.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Necromancy Savant|Wizard|PHB|Dracolich|LEGDRAG|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Grim Harvest|Wizard|PHB|Dracolich|LEGDRAG|2"
+				}
+			]
+		},
+		{
+			"name": "Grim Harvest",
+			"source": "LEGDRAG",
+			"page": 88,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Dracolich",
+			"subclassSource": "LEGDRAG",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"At 2nd level, you reap life energy from creatures with your spells. Once per turn, when one or more creatures fail a saving throw against or are hit by one of your 1st level or higher spells, or you kill one or more creatures with such a spell, you regain hit points equal to twice the spell's level, or three times its level if the spell belongs to the School of Necromancy Dracolich. This feature can't target constructs or undead."
+			]
+		},
+		{
+			"name": "Necromancy Savant",
+			"source": "LEGDRAG",
+			"page": 88,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Dracolich",
+			"subclassSource": "LEGDRAG",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"Beginning when you select this school at 2nd level, the gold and time you must spend to copy a necromancy spell into your spellbook is halved. The {@spell inflict wounds|PHB}, {@spell speak with dead|PHB} and harm spells count as wizard spells for you."
+			]
+		},
+		{
+			"name": "Undead Thralls",
+			"source": "LEGDRAG",
+			"page": 88,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Dracolich",
+			"subclassSource": "LEGDRAG",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, you can mentally command undead creatures you control and can see without spending any actions. In addition, you add the {@spell animate dead|PHB} and {@spell summon undead|TCE} spells to your spellbook if they are not there already. When you cast {@spell animate dead|PHB}, you can target one additional corpse or pile of bones, creating another undead, as appropriate. You can also cast this spell on one non-humanoid corpse, provided its number of hit dice are equal to or lower than your level. It retains its statistics, and gains the {@creature zombie|DMG} NPC feature ({@i Dungeon Master's Guide} page 282). You can only control one corpse animated this way at a time. The zombie mentioned in this subclass references the standard zombie, and not this animated corpse. The grave bolt ranged spell attack of your summon undead spirit counts as a weapon.",
+				"When you create an undead using a necromancy spell, it has additional benefits (except for the {@creature mob of zombies|LEGDRAG}):",
+				{
+					"type": "list",
+					"items": [
+						"The creature's hit point maximum is increased by an amount equal to your wizard level.",
+						"The creature adds your proficiency bonus to its weapon damage rolls."
+					]
+				}
+			]
+		},
+		{
+			"name": "Dreadful summoner",
+			"source": "LEGDRAG",
+			"page": 88,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Dracolich",
+			"subclassSource": "LEGDRAG",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Also at 6th level, you can create a pocket dimension where you can store your undead minions. As an action, you can send any number of undead you control and can see into this dimension, or summon any number that are already there into unoccupied spaces within 60 feet of you. If you lose control over an undead while it is in this pocket dimension, it will appear into an unoccupied space closest to the space where they were before being sent to this dimension. You can choose to destroy an undead you created when you lose control over it while it is in this dimension. You can also use your action this way to store (or summon back) any number of corpses or piles of bones that you can see within 60 feet of you within this dimension. Undead you control can take their turn on your initiative instead of their own."
+			]
+		},
+		{
+			"name": "Inured to Undeath",
+			"source": "LEGDRAG",
+			"page": 88,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Dracolich",
+			"subclassSource": "LEGDRAG",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"At 10th level, you have resistance to necrotic damage, and your hit point maximum can't be reduced. You have spent so much time dealing with undead and those that create them that you've become inured to some of their worst effects.",
+				"In addition, whenever you create an undead using a necromancy spell, it has additional benefits:",
+				{
+					"type": "list",
+					"items": [
+						"If the creature is not a {@creature mob of zombies|LEGDRAG}, it gains the {@feat Undead Fortitude} trait. If it already has this trait, then the DC of its Undead Fortitude is reduced by 5 instead.",
+						"It can calculate its AC as 10 + your proficiency bonus, provided it is not a zombie or {@creature mob of zombies|LEGDRAG}. This amount can not be increased by any armor or shield."
+					]
+				},
+				"As an action, you can combine four zombies you control and can see into a {@creature mob of zombies|LEGDRAG} that you control (if each zombie is within 5 feet of another of those zombies), or separate the mob if you can see it and it has its maximum hit points. Any wounds the zombies have are transferred to the mob. When the mob is killed, all zombies that were combined in it are destroyed. If you lose control over a zombie in the mob, you lose control over the {@creature mob of zombies|LEGDRAG}."
+			]
+		},
+		{
+			"name": "Command Undead",
+			"source": "LEGDRAG",
+			"page": 88,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Dracolich",
+			"subclassSource": "LEGDRAG",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Starting at 14th level, you can use magic to bring undead under your control, even those created by other wizards. As an action, you can choose one undead that you can see within 60 feet of you. That creature must make a Charisma saving throw against your wizard spell save DC. If it succeeds, you can't use this feature on it again for the next 24 hours. If it fails, it becomes friendly to you and obeys your commands until you use this feature again.",
+				"Intelligent undead are harder to control in this way. If the target has an Intelligence of 8 or higher, it has advantage on the saving throw. If it fails the saving throw and has an Intelligence of 12 or higher, it can repeat the saving throw at the end of every day until it succeeds and breaks free."
 			]
 		}
 	],
