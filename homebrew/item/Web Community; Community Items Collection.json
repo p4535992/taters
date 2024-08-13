@@ -51,6 +51,42 @@
 	],
 	"item": [
 		{
+			"name": "Ring of Protection +3",
+			"source": "COMItems",
+			"page": 1,
+			"type": "RG",
+			"tier": "major",
+			"rarity": "rare",
+			"reqAttune": true,
+			"bonusAc": "+3",
+			"bonusSavingThrow": "+3",
+			"value": 4000000,
+			"entries": [
+				"You gain a +3 bonus to AC and saving throws while wearing this ring."
+			],
+			"optionalfeatures": [
+				"replicate magic item|tce"
+			]
+		},
+		{
+			"name": "Ring of Protection +2",
+			"source": "COMItems",
+			"page": 1,
+			"type": "RG",
+			"tier": "major",
+			"rarity": "rare",
+			"reqAttune": true,
+			"bonusAc": "+2",
+			"bonusSavingThrow": "+2",
+			"value": 2000000,
+			"entries": [
+				"You gain a +2 bonus to AC and saving throws while wearing this ring."
+			],
+			"optionalfeatures": [
+				"replicate magic item|tce"
+			]
+		},
+		{
 			"name": "Spider Staff",
 			"baseItem": "staff|PHB",
 			"type": "GV",
@@ -1831,7 +1867,7 @@
 			}
 		},
 		{
-			"name": "Blacksteel longsword",
+			"name": "Blacksteel longsword +3",
 			"source": "COMItems",
 			"baseItem": "longsword|phb",
 			"page": 0,
@@ -1914,7 +1950,25 @@
 			}
 		},
 		{
-			"name": "Strahd's animated armor",
+			"name": "Ring of Counterspell",
+			"source": "COMItems",
+			"page": 1,
+			"type": "RG",
+			"rarity": "very rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": 3,
+			"charges": 3,
+			"entries": [
+				"While wearing this ring you can use it to cast the {@spell Counterspell|PHB} spell (3 charges/dawn), as an action. Once this property is used three times, it can't be used again until the next dawn."
+			],
+			"attachedSpells": [
+				"Counterspell|phb"
+			]
+		},
+		{
+			"name": "Animated Armor of Strahd +2",
 			"baseItem": "Plate Armor|PHB",
 			"type": "HA",
 			"weight": 65,
@@ -1932,7 +1986,7 @@
 					"type": "list",
 					"items": [
 						"Condition Immunities: A creature that wears this armor is immune to the blinded, charmed, deafened, frightened, paralyzed and petrified condition.",
-						"Summon armor: As a bonus action, the creature attuned to this armor can don it, effectively replacing the armor and/or clothes that it was wearing. The creature can use another bonus action to animate the armor and have it fight alongside it. The stats for Strahd's animated armor can be found on CoS, page 227. The creature attuned to this armor gains no benefits of it when the armor is animated.",
+						"Summon armor: As a bonus action, the creature attuned to this armor can don it, effectively replacing the armor and/or clothes that it was wearing. The creature can use another bonus action to animate the armor and have it fight alongside it. The stats for Animated Armor of Strahd +2 can be found on CoS, page 227. The creature attuned to this armor gains no benefits of it when the armor is animated.",
 						"Legendary action: Shocking Bolt. The wearer gains the abillity to cast the shocking bolt spell as a legendary action once per turn.",
 						"{@spell Shocking bolt (Strahd's New spells)|COMSpells|Shocking bolt}: Ranged Spell Attack: +4 to hit (with advantage on the attack roll if the target is wearing armor made of metal), range 60 ft., one target. Hit: 10 (3d6) lightning damage."
 					]
@@ -1951,7 +2005,7 @@
 				"entries": [
 					{
 						"type": "entries",
-						"name": "Strahd's animated armor",
+						"name": "Animated Armor of Strahd +2",
 						"entries": [
 							"{@link The Real Devil Strahd|https://www.dmsguild.com/product/226077/The-Real-Devil-Strahd--A-CR27-Version-of-the-Devil}",
 							"This armor was infused with the malignancy and hatred of Strahd at the time of his betrayal during the royal wedding giving it life. This armor grants the following benefits to the creature that wears it.",
@@ -1959,7 +2013,7 @@
 								"type": "list",
 								"items": [
 									"Condition Immunities: A creature that wears this armor is immune to the blinded, charmed, deafened, frightened, paralyzed and petrified condition.",
-									"Summon armor: As a bonus action, the creature attuned to this armor can don it, effectively replacing the armor and/or clothes that it was wearing. The creature can use another bonus action to animate the armor and have it fight alongside it. The stats for Strahd's animated armor can be found on CoS, page 227. The creature attuned to this armor gains no benefits of it when the armor is animated.",
+									"Summon armor: As a bonus action, the creature attuned to this armor can don it, effectively replacing the armor and/or clothes that it was wearing. The creature can use another bonus action to animate the armor and have it fight alongside it. The stats for Animated Armor of Strahd +2 can be found on CoS, page 227. The creature attuned to this armor gains no benefits of it when the armor is animated.",
 									"Legendary action: Shocking Bolt. The wearer gains the abillity to cast the shocking bolt spell as a legendary action once per turn.",
 									"Shocking bolt: Ranged Spell Attack: +4 to hit (with advantage on the attack roll if the target is wearing armor made of metal), range 60 ft., one target. Hit: 10 (3d6) lightning damage."
 								]
