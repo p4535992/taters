@@ -550,21 +550,12 @@
 				"ray of frost|phb",
 				"aard|WITCHERHLA",
 				"axii|WITCHERHLA",
-				"charm Person|phb",
-				"firestream|WITCHERHLA",
 				"igni|WITCHERHLA",
 				"quen|WITCHERHLA",
-				"sleep|phb",
-				"sweep|WITCHERHLA",
-				"blindness/deafness|phb",
-				"chains|WITCHERHLA",
 				"heliotrope|WITCHERHLA",
 				"supirre|WITCHERHLA",
 				"glacies|WITCHERHLA",
-				"guardian|WITCHERHLA",
-				"rimefrost|WITCHERHLA",
 				"yrden|WITCHERHLA",
-				"retribution|WITCHERHLA",
 				"somne|WITCHERHLA"
 			]
 		}
@@ -689,7 +680,7 @@
 				{
 					"type": "list",
 					"items": [
-						"You learn a Witcher spell of your choice. You can select from the base Witcher spells or the alternative spells lists, ignoring any prerequisites.",
+						"You learn a Witcher spell of your choice. You can select from the base {@i {@filter Witcher spells|spells|class=Witcher|source=WITCHERHLA}} or the {@i {@subclassFeature alternative witcher spells|Witcher|WITCHERHLA|School of the Griffin|WITCHERHLA|6|}} lists, ignoring any prerequisites.",
 						"If the chosen spell is a 1st level spell, you can cast it once at 1st level without using a spell slot. You must finish a long rest before you can cast it in this way again, and you can also cast the spell using any spell slots you have."
 					]
 				}
@@ -4625,7 +4616,7 @@
 					"entries": [
 						"You know two {@filter 1st-level spells of your choice from the Witcher spell list|spells|level=1|class=Witcher|source=WITCHERHLA}.",
 						"The Spells Known column of the Witcher table shows when you learn more Witcher spells of your choice. Each of the spells must be of a level for which you have spell slots. For instance, when you reach 6th level in this class, you can learn one new spell of 1st or 2nd level.",
-						"Additionally, when you gain a level in this class, you can choose one of the Witcher spells you know and replace it with another spell from the Witcher Spell list, which also must be of a level for which you have Spell Slots."
+						"Additionally, when you gain a level in this class, you can choose one of the Witcher spells you know and replace it with another spell from the {@i Witcher Spell list}, which also must be of a level for which you have Spell Slots."
 					]
 				},
 				{
@@ -4640,6 +4631,77 @@
 							"items": [
 								"{@b Spell Save DC} = 8 + your proficiency bonus + your Intelligence modifier",
 								"{@b Spell Attack Modifier} = your proficiency bonus + your Intelligence modifier"
+							]
+						}
+					]
+				},
+				{
+					"name": "Witcher Spell list",
+					"type": "entries",
+					"entries": [
+						"This is a list of the spells that are available to be learned by Witchers. In addition to a few cantrips, Witchers gain knowledge of simple Witcher spells over the course of their training",
+						{
+							"name": "Cantrips (0 Level)",
+							"type": "list",
+							"items": [
+								"{@spell control flames|xge}",
+								"{@spell friends|phb}",
+								"{@spell frostbite|xge}",
+								"{@spell guidance|phb}",
+								"{@spell gust|xge}",
+								"{@spell lightning lure|tce}",
+								"{@spell mind silver|tce}",
+								"{@spell prestidigitation|phb}",
+								"{@spell produce flame|phb}",
+								"{@spell ray of frost|phb}"
+							]
+						},
+						{
+							"name": "1st Level",
+							"type": "list",
+							"items": [
+								"{@spell aard|WITCHERHLA}",
+								"{@spell axii|WITCHERHLA}",
+								"{@spell charm Person|phb} (Prerequisite: School of the Griffin, {@spell Axii|WITCHERHLA})",
+								"{@spell firestream|WITCHERHLA} (Prerequisite: School of the Griffin, {@spell Igni|WITCHERHLA})",
+								"{@spell igni|WITCHERHLA}",
+								"{@spell quen|WITCHERHLA}",
+								"{@spell sleep|phb} (Prerequisite: School of the Griffin, {@spell Somne|WITCHERHLA})",
+								"{@spell sweep|WITCHERHLA} (Prerequisite: School of the Griffin, {@spell Aard|WITCHERHLA})"
+							]
+						},
+						{
+							"name": "2nd Level",
+							"type": "list",
+							"items": [
+								"{@spell blindness/deafness|phb} (Prerequisite: School of the Griffin, {@spell Supirre|WITCHERHLA})",
+								"{@spell chains|WITCHERHLA} (Prerequisite: School of the Griffin, {@spell Yrden|WITCHERHLA})",
+								"{@spell heliotrope|WITCHERHLA}",
+								"{@spell supirre|WITCHERHLA}"
+							]
+						},
+						{
+							"name": "3rd Level",
+							"type": "list",
+							"items": [
+								"{@spell glacies|WITCHERHLA}",
+								"{@spell guardian|WITCHERHLA} (Prerequisite: School of the Griffin, {@spell heliotrope|WITCHERHLA})"
+							]
+						},
+						{
+							"name": "4th Level",
+							"type": "list",
+							"items": [
+								"{@spell rimefrost|WITCHERHLA} (Prerequisite: School of the Griffin, {@spell glacies|WITCHERHLA})",
+								"{@spell yrden|WITCHERHLA}"
+							]
+						},
+						{
+							"name": "5th Level",
+							"type": "list",
+							"items": [
+								"{@spell retribution|WITCHERHLA} (Prerequisite: School of the Griffin, {@spell Quen|WITCHERHLA})",
+								"{@spell somne|WITCHERHLA}"
 							]
 						}
 					]
@@ -4673,9 +4735,10 @@
 				"To regain spent uses of this feature you must have alchemist's supplies on your person as well as devote 1 hour during your long rest to preparation.",
 				"{@b Saving throws:} Some Witcher Preparation items require a saving throw to resist its effect. The saving throws use the Spell Save DC.",
 				{
-					"name": "{@filter Potions|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:P}",
+					"name": "Potions",
 					"type": "entries",
 					"entries": [
+						"{@filter Potions|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:P}",
 						"You can prepare a number of potion formulas, listed under \"Alchemy\". You gain the ability to prepare additional potions as you gain Witcher levels, as shown in the Potions Prepared column of the Witcher table. Your ability to brew stronger versions of your potions will increase at 7th, 11th, and 15th levels.",
 						"A single potion's effect does not stack with itself during its active duration; if the same potion is used prior to the effects of the first potion wearing off, the effects of the first dissipate and are replaced with the effects of the second.",
 						"A Witcher's potions are highly toxic, and only a Witcher can withstand the toxins due to their conditioning and training. A non-witcher that drinks a Witcher potion must succeed on a Constitution saving throw against your spell save DC or become poisoned for 1 minute. Even if they succeed, they take poison damage determined by the tier of the potion consumed, and do not get any of the benefits of the potion.",
@@ -4683,9 +4746,10 @@
 					]
 				},
 				{
-					"name": "{@filter Handbombs|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:B}",
+					"name": "Handbombs",
 					"type": "entries",
 					"entries": [
+						"{@filter Handbombs|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:B}",
 						"Potions aren't a Witcher's only form of preparation in hunting monsters. They can also prepare handbombs to tip the scales in their favor, listed under \"Alchemy\". Witchers are able to prepare schematics for crafting 2 handbombs of their choice at level 3. You can prepare an additional schematic as well as improvements to the handbombs at 7th, 11th, and 15th levels, as shown in the Handbombs Prepared column of the Witcher table.",
 						"{@b Using a handbomb requires an action.}"
 					]
@@ -4706,9 +4770,10 @@
 				"To regain spent uses of this feature you must have alchemist's supplies on your person as well as devote 1 hour during your long rest to preparation.",
 				"{@b Saving throws:} Some Witcher Preparation items require a saving throw to resist its effect. The saving throws use the Spell Save DC.",
 				{
-					"name": "{@filter Greater Potions|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:PG}",
+					"name": "Greater Potions",
 					"type": "entries",
 					"entries": [
+						"{@filter Greater Potions|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:PG}",
 						"You can prepare a number of potion formulas, listed under \"Alchemy\". You gain the ability to prepare additional potions as you gain Witcher levels, as shown in the Potions Prepared column of the Witcher table. Your ability to brew stronger versions of your potions will increase at 7th, 11th, and 15th levels.",
 						"A single potion's effect does not stack with itself during its active duration; if the same potion is used prior to the effects of the first potion wearing off, the effects of the first dissipate and are replaced with the effects of the second.",
 						"A Witcher's potions are highly toxic, and only a Witcher can withstand the toxins due to their conditioning and training. A non-witcher that drinks a Witcher potion must succeed on a Constitution saving throw against your spell save DC or become poisoned for 1 minute. Even if they succeed, they take poison damage determined by the tier of the potion consumed, and do not get any of the benefits of the potion.",
@@ -4716,9 +4781,10 @@
 					]
 				},
 				{
-					"name": "{@filter Greater Handbombs|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:BG}",
+					"name": "Greater Handbombs",
 					"type": "entries",
 					"entries": [
+						"{@filter Greater Handbombs|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:BG}",
 						"Potions aren't a Witcher's only form of preparation in hunting monsters. They can also prepare handbombs to tip the scales in their favor, listed under \"Alchemy\". Witchers are able to prepare schematics for crafting 2 handbombs of their choice at level 3. You can prepare an additional schematic as well as improvements to the handbombs at 7th, 11th, and 15th levels, as shown in the Handbombs Prepared column of the Witcher table.",
 						"{@b Using a handbomb requires an action.}"
 					]
@@ -4739,9 +4805,10 @@
 				"To regain spent uses of this feature you must have alchemist's supplies on your person as well as devote 1 hour during your long rest to preparation.",
 				"{@b Saving throws:} Some Witcher Preparation items require a saving throw to resist its effect. The saving throws use the Spell Save DC.",
 				{
-					"name": "{@filter Superior Potions|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:PS}",
+					"name": "Superior Potions",
 					"type": "entries",
 					"entries": [
+						"{@filter Superior Potions|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:PS}",
 						"You can prepare a number of potion formulas, listed under \"Alchemy\". You gain the ability to prepare additional potions as you gain Witcher levels, as shown in the Potions Prepared column of the Witcher table. Your ability to brew stronger versions of your potions will increase at 7th, 11th, and 15th levels.",
 						"A single potion's effect does not stack with itself during its active duration; if the same potion is used prior to the effects of the first potion wearing off, the effects of the first dissipate and are replaced with the effects of the second.",
 						"A Witcher's potions are highly toxic, and only a Witcher can withstand the toxins due to their conditioning and training. A non-witcher that drinks a Witcher potion must succeed on a Constitution saving throw against your spell save DC or become poisoned for 1 minute. Even if they succeed, they take poison damage determined by the tier of the potion consumed, and do not get any of the benefits of the potion.",
@@ -4749,9 +4816,10 @@
 					]
 				},
 				{
-					"name": "{@filter Superior Handbombs|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:BS}",
+					"name": "Superior Handbombs",
 					"type": "entries",
 					"entries": [
+						"{@filter Superior Handbombs|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:BS}",
 						"Potions aren't a Witcher's only form of preparation in hunting monsters. They can also prepare handbombs to tip the scales in their favor, listed under \"Alchemy\". Witchers are able to prepare schematics for crafting 2 handbombs of their choice at level 3. You can prepare an additional schematic as well as improvements to the handbombs at 7th, 11th, and 15th levels, as shown in the Handbombs Prepared column of the Witcher table.",
 						"{@b Using a handbomb requires an action.}"
 					]
@@ -4772,9 +4840,10 @@
 				"To regain spent uses of this feature you must have alchemist's supplies on your person as well as devote 1 hour during your long rest to preparation.",
 				"{@b Saving throws:} Some Witcher Preparation items require a saving throw to resist its effect. The saving throws use the Spell Save DC.",
 				{
-					"name": "{@filter Master Potions|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:PM}",
+					"name": "Master Potions",
 					"type": "entries",
 					"entries": [
+						"{@filter Master Potions|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:PM}",
 						"You can prepare a number of potion formulas, listed under \"Alchemy\". You gain the ability to prepare additional potions as you gain Witcher levels, as shown in the Potions Prepared column of the Witcher table. Your ability to brew stronger versions of your potions will increase at 7th, 11th, and 15th levels.",
 						"A single potion's effect does not stack with itself during its active duration; if the same potion is used prior to the effects of the first potion wearing off, the effects of the first dissipate and are replaced with the effects of the second.",
 						"A Witcher's potions are highly toxic, and only a Witcher can withstand the toxins due to their conditioning and training. A non-witcher that drinks a Witcher potion must succeed on a Constitution saving throw against your spell save DC or become poisoned for 1 minute. Even if they succeed, they take poison damage determined by the tier of the potion consumed, and do not get any of the benefits of the potion.",
@@ -4782,9 +4851,10 @@
 					]
 				},
 				{
-					"name": "{@filter Master Handbombs|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:BM}",
+					"name": "Master Handbombs",
 					"type": "entries",
 					"entries": [
+						"{@filter Master Handbombs|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:BM}",
 						"Potions aren't a Witcher's only form of preparation in hunting monsters. They can also prepare handbombs to tip the scales in their favor, listed under \"Alchemy\". Witchers are able to prepare schematics for crafting 2 handbombs of their choice at level 3. You can prepare an additional schematic as well as improvements to the handbombs at 7th, 11th, and 15th levels, as shown in the Handbombs Prepared column of the Witcher table.",
 						"{@b Using a handbomb requires an action.}"
 					]
@@ -4964,162 +5034,111 @@
 			]
 		}
 	],
-	"subclassFeature": [
+	"subclass": [
 		{
-			"name": "School of the Wolf",
+			"name": "School of the Bear",
 			"source": "WITCHERHLA",
+			"shortName": "School of the Bear",
+			"page": 7,
 			"className": "Witcher",
 			"classSource": "WITCHERHLA",
-			"subclassShortName": "School of the Wolf",
-			"subclassSource": "WITCHERHLA",
-			"level": 3,
-			"entries": [
-				"Based in Kaer Morhen, the School of the Wolf is perhaps the most renowned and populous school still around, although still home to few students. The school focuses on mastering the basic witcher techniques, complementing them with new maneuvers to deal with any kind of monstrous prey.",
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Battle Trance|Witcher|WITCHERHLA|School of the Wolf|WITCHERHLA|3"
-				}
+			"subclassFeatures": [
+				"School of the Bear|Witcher|WITCHERHLA|School of the Bear|WITCHERHLA|1",
+				"Implacable|Witcher|WITCHERHLA|School of the Bear|WITCHERHLA|6",
+				"Deadly Counter|Witcher|WITCHERHLA|School of the Bear|WITCHERHLA|10",
+				"Innate Regeneration|Witcher|WITCHERHLA|School of the Bear|WITCHERHLA|14",
+				"Primal Beast|Witcher|WITCHERHLA|School of the Bear|WITCHERHLA|18"
 			]
 		},
 		{
-			"name": "Battle Trance",
-			"entries": [
-				"Your razor sharp focus guides your attacks in combat. Starting at 3rd level, your weapon attacks deal additional damage equal to your current focus."
+			"name": "School of the Cat",
+			"source": "WITCHERHLA",
+			"shortName": "School of the Cat",
+			"page": 8,
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassFeatures": [
+				"School of the Cat|Witcher|WITCHERHLA|School of the Cat|WITCHERHLA|1",
+				"Harass|Witcher|WITCHERHLA|School of the Cat|WITCHERHLA|6",
+				"Hasty Retreat|Witcher|WITCHERHLA|School of the Cat|WITCHERHLA|10",
+				"Stalker's Flurry|Witcher|WITCHERHLA|School of the Cat|WITCHERHLA|14",
+				"Predator's Target|Witcher|WITCHERHLA|School of the Cat|WITCHERHLA|18"
+			]
+		},
+		{
+			"name": "School of the Griffin",
+			"source": "WITCHERHLA",
+			"shortName": "School of the Griffin",
+			"page": 9,
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassFeatures": [
+				"School of the Griffin|Witcher|WITCHERHLA|School of the Griffin|WITCHERHLA|1",
+				"Alternative Witcher Spells|Witcher|WITCHERHLA|School of the Griffin|WITCHERHLA|6",
+				"Arcane Riposte|Witcher|WITCHERHLA|School of the Griffin|WITCHERHLA|10",
+				"Martial Spellcasting|Witcher|WITCHERHLA|School of the Griffin|WITCHERHLA|14",
+				"Dual Casting|Witcher|WITCHERHLA|School of the Griffin|WITCHERHLA|18"
 			],
-			"source": "WITCHERHLA",
-			"className": "Witcher",
-			"classSource": "WITCHERHLA",
-			"subclassShortName": "School of the Wolf",
-			"subclassSource": "WITCHERHLA",
-			"level": 3,
-			"header": 1
-		},
-		{
-			"name": "Spins and Pirouettes",
-			"source": "WITCHERHLA",
-			"className": "Witcher",
-			"classSource": "WITCHERHLA",
-			"subclassShortName": "School of the Wolf",
-			"subclassSource": "WITCHERHLA",
-			"level": 7,
-			"header": 2,
-			"entries": [
-				"Starting at 7th level, you can nimbly leap across the battlefield to engage opponents. Before making a melee weapon attack or casting a sign, you can move 5 feet without spending any of your movement. If this movement provokes an opportunity attack, it is made with disadvantage."
+			"subclassSpells": [
+				"charm Person|phb",
+				"firestream|WITCHERHLA",
+				"sleep|phb",
+				"sweep|WITCHERHLA",
+				"blindness/deafness|phb",
+				"chains|WITCHERHLA",
+				"guardian|WITCHERHLA",
+				"rimefrost|WITCHERHLA",
+				"retribution|WITCHERHLA"
 			]
 		},
 		{
-			"name": "Arrow Deflection",
+			"name": "School of the Manticore",
 			"source": "WITCHERHLA",
+			"shortName": "School of the Manticore",
+			"page": 10,
 			"className": "Witcher",
 			"classSource": "WITCHERHLA",
-			"subclassShortName": "School of the Wolf",
-			"subclassSource": "WITCHERHLA",
-			"level": 10,
-			"header": 2,
-			"entries": [
-				"By 10th level, you have learned to defend yourself from projectiles by parrying them. When a creature makes a ranged weapon attack against you, you can use your reaction and spend 1 focus to make an attack roll with a melee weapon you are holding; if your total is higher than the creature's attack roll, their attack misses."
-			]
-		},
-		{
-			"name": "Rushing Agility",
-			"source": "WITCHERHLA",
-			"className": "Witcher",
-			"classSource": "WITCHERHLA",
-			"subclassShortName": "School of the Wolf",
-			"subclassSource": "WITCHERHLA",
-			"level": 14,
-			"header": 2,
-			"entries": [
-				"At 14th level, you can use your focus to execute especially aggressive attacks. You learn the following maneuvers, which you can use as an action by expending 3 focus:",
-				{
-					"type": "list",
-					"items": [
-						{
-							"type": "entries",
-							"name": "Whirl",
-							"entries": [
-								"You whirl around, attacking all creatures around you. Make a melee weapon attack against each creature of your choice within 5 feet."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Rend",
-							"entries": [
-								"You take a wide, heavy swing at a creature. Make a melee weapon attack; if it hits, the attack automatically critically strikes and the target creature must make a DC 20 Constitution saving throw. On a failed save, the creature's AC is reduced by 2 for one minute. This reduction does not stack."
-							]
-						}
-					]
-				}
+			"subclassFeatures": [
+				"School of the Manticore|Witcher|WITCHERHLA|School of the Manticore|WITCHERHLA|1",
+				"Alchemical Adept|Witcher|WITCHERHLA|School of the Manticore|WITCHERHLA|6",
+				"Human Shield|Witcher|WITCHERHLA|School of the Manticore|WITCHERHLA|10",
+				"Improved Alchemical Adept|Witcher|WITCHERHLA|School of the Manticore|WITCHERHLA|14",
+				"Stand Against the Tide|Witcher|WITCHERHLA|School of the Manticore|WITCHERHLA|18"
 			]
 		},
 		{
 			"name": "School of the Viper",
 			"source": "WITCHERHLA",
+			"shortName": "School of the Viper",
+			"page": 11,
 			"className": "Witcher",
 			"classSource": "WITCHERHLA",
-			"subclassShortName": "School of the Viper",
-			"subclassSource": "WITCHERHLA",
-			"level": 3,
-			"entries": [
-				"Based in an unknown location and possibly dissolved, the School of the Viper is a secretive organization, its students few and scattered. The school is known for doing whatever needs to be done for a contract, specializing in hit and run tactics some may call dirty fighting.",
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Dual Wielder|Witcher|WITCHERHLA|School of the Viper|WITCHERHLA|3"
-				}
+			"subclassFeatures": [
+				"School of the Viper|Witcher|WITCHERHLA|School of the Viper|WITCHERHLA|1",
+				"Explosive Preparation|Witcher|WITCHERHLA|School of the Viper|WITCHERHLA|6",
+				"Improved Viper Strike|Witcher|WITCHERHLA|School of the Viper|WITCHERHLA|10",
+				"Rapid Strike|Witcher|WITCHERHLA|School of the Viper|WITCHERHLA|14",
+				"Viper's Reflexes|Witcher|WITCHERHLA|School of the Viper|WITCHERHLA|18"
 			]
 		},
 		{
-			"name": "Dual Wielder",
-			"entries": [
-				"Starting at 3rd level, you can adopt the traditional two-weapon fighting technique of the Viper School. You can ignore the somatic requirement of signs while using two-weapon fighting; additionally, you gain the {@link Two Weapon Fighting|https://5e.tools/optionalfeatures.html#two-weapon%20fighting_phb} fighting style."
-			],
+			"name": "School of the Wolf",
 			"source": "WITCHERHLA",
+			"shortName": "School of the Wolf",
+			"page": 12,
 			"className": "Witcher",
 			"classSource": "WITCHERHLA",
-			"subclassShortName": "School of the Viper",
-			"subclassSource": "WITCHERHLA",
-			"level": 3,
-			"header": 1
-		},
-		{
-			"name": "Slippery",
-			"source": "WITCHERHLA",
-			"className": "Witcher",
-			"classSource": "WITCHERHLA",
-			"subclassShortName": "School of the Viper",
-			"subclassSource": "WITCHERHLA",
-			"level": 7,
-			"header": 2,
-			"entries": [
-				"At 7th level, you are hard to keep in place and adept at escaping sticky situations. You can expend 1 focus to use {@action Disengage} or {@action Dash} as a bonus action; if you do, you can also remove the {@condition restrained} or {@condition grappled} condition from yourself."
+			"subclassFeatures": [
+				"School of the Wolf|Witcher|WITCHERHLA|School of the Wolf|WITCHERHLA|1",
+				"Thorough Preparation|Witcher|WITCHERHLA|School of the Wolf|WITCHERHLA|6",
+				"Improved Critical|Witcher|WITCHERHLA|School of the Wolf|WITCHERHLA|6",
+				"Improved Arcane Strike|Witcher|WITCHERHLA|School of the Wolf|WITCHERHLA|10",
+				"Improved Thorough Preparation|Witcher|WITCHERHLA|School of the Wolf|WITCHERHLA|14",
+				"Prime Specimen|Witcher|WITCHERHLA|School of the Wolf|WITCHERHLA|18"
 			]
-		},
-		{
-			"name": "Tolerance",
-			"source": "WITCHERHLA",
-			"className": "Witcher",
-			"classSource": "WITCHERHLA",
-			"subclassShortName": "School of the Viper",
-			"subclassSource": "WITCHERHLA",
-			"level": 10,
-			"header": 2,
-			"entries": [
-				"By 10th level, you have become accustomed to metabolizing toxic materials. You have resistance to poison damage, and advantage on saving throws against the effects of poisons and venoms. Additionally, when applying sword oil you can choose humanoid as the target creature type."
-			]
-		},
-		{
-			"name": "Killing Strike",
-			"source": "WITCHERHLA",
-			"className": "Witcher",
-			"classSource": "WITCHERHLA",
-			"subclassShortName": "School of the Viper",
-			"subclassSource": "WITCHERHLA",
-			"level": 14,
-			"header": 2,
-			"entries": [
-				"Starting at 14th level, your strikes are specialized at finishing off weakened enemies. Once per turn, when you hit a creature whose current health is less than half its max health with a weapon attack, your attack deals an additional {@dice 3d6} damage of your weapon's type. Additionally, once per turn when you kill a creature, you gain 2 focus and can make an additional weapon attack as a part of your {@action Attack} action."
-			]
-		},
+		}
+	],
+	"subclassFeature": [
 		{
 			"name": "School of the Bear",
 			"source": "WITCHERHLA",
@@ -5127,65 +5146,137 @@
 			"classSource": "WITCHERHLA",
 			"subclassShortName": "School of the Bear",
 			"subclassSource": "WITCHERHLA",
-			"level": 3,
+			"page": 7,
+			"level": 1,
+			"header": 1,
 			"entries": [
-				"Honorable and stout, the witchers of the School of the Bear focus on holding their ground rather than dancing around their foes. Through their unique training, strength, and tenacity, Bear school witchers can stand up to powerful warriors and beasts alike.",
+				"School of the Bear Witchers are typically the hardiest of the Witchers. They do not attempt to avoid enemy attacks, instead forcing their enemies to get close where they can rain down deadly blows. Their training is typically focused on maintaining survivability in a fight, trusting that the enemy will be the first to fall.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Heavy Gear Training|Witcher|WITCHERHLA|School of the Bear|WITCHERHLA|3"
+					"subclassFeature": "Heavy Gear Training|Witcher|WITCHERHLA|School of the Bear|WITCHERHLA|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Ursun Fortitude|Witcher|WITCHERHLA|School of the Bear|WITCHERHLA|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Stand Your Ground|Witcher|WITCHERHLA|School of the Bear|WITCHERHLA|1"
 				}
 			]
 		},
 		{
 			"name": "Heavy Gear Training",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Bear",
+			"subclassSource": "WITCHERHLA",
+			"page": 7,
+			"level": 1,
+			"header": 1,
 			"entries": [
-				"Starting at 3rd level, you can ignore the somatic requirement of signs while using weapons with the two-handed property. Additionally, you gain proficiency with heavy armor."
+				"When you choose this school at 1st level, you gain the following features:",
+				{
+					"type": "list",
+					"items": [
+						"You gain proficiency in medium and heavy armor.",
+						"You can replace your Proficiency in Intelligence saving throws with Proficiency in Strength saving throws if you choose."
+					]
+				}
 			],
-			"source": "WITCHERHLA",
-			"className": "Witcher",
-			"classSource": "WITCHERHLA",
-			"subclassShortName": "School of the Bear",
-			"subclassSource": "WITCHERHLA",
-			"level": 3,
-			"header": 1
-		},
-		{
-			"name": "Vitalic Blows",
-			"source": "WITCHERHLA",
-			"className": "Witcher",
-			"classSource": "WITCHERHLA",
-			"subclassShortName": "School of the Bear",
-			"subclassSource": "WITCHERHLA",
-			"level": 7,
-			"header": 2,
-			"entries": [
-				"At 7th level, you can imbue your strikes with your own vigor; when you hit with a melee weapon attack, you can expend 2 focus to spend one of your hit dice and add it to your damage on that attack. Starting at 14th level, you can choose to expend 2 hit dice instead. When you use your Vitalic Blows feature, you can make a Shove attack as a bonus action for the rest of the turn."
+			"armorProficiencies": [
+				{
+					"medium": true,
+					"heavy": true
+				}
 			]
 		},
 		{
-			"name": "Thick Skin",
+			"name": "Ursun Fortitude",
 			"source": "WITCHERHLA",
 			"className": "Witcher",
 			"classSource": "WITCHERHLA",
 			"subclassShortName": "School of the Bear",
 			"subclassSource": "WITCHERHLA",
+			"page": 7,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Starting at 1st level, you gain improved constitution from your training, earning you a +2 bonus to your health for each Witcher level."
+			]
+		},
+		{
+			"name": "Stand Your Ground",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Bear",
+			"subclassSource": "WITCHERHLA",
+			"page": 7,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Additionally at 1st level, you can leverage an established position in combat to strike more powerful blows. If you have not moved since the start of your previous turn, you gain a {@dice 1d4} bonus to damage rolls. Moving from your established position in any way interrupts this feature.",
+				"Starting at 10th level, the damage bonus increases to {@dice 1d6}."
+			]
+		},
+		{
+			"name": "Implacable",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Bear",
+			"subclassSource": "WITCHERHLA",
+			"page": 7,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, you have boundless determination to keep going in a fight. As a bonus action on your turn, {@b you can recover hit points equal to 1d10 + your Constitution modifier + your Witcher level}.",
+				"Once you use this feature you must finish a short or long rest before you can use it again.",
+				"Starting at 14th level, you can use it twice before a rest, but only once per turn."
+			]
+		},
+		{
+			"name": "Deadly Counter",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Bear",
+			"subclassSource": "WITCHERHLA",
+			"page": 7,
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"By 10th level, you have developed natural defenses on your body to defend you from the elements; you are resistant to adverse effects due to extreme weather and temperatures, and have resistance to fire and cold damage."
+				"Starting at 10th level, when you take damage from a creature that you can see, you give yourself advantage on the first attack roll on your next turn against that creature."
 			]
 		},
 		{
-			"name": "Ursine Endurance",
+			"name": "Innate Regeneration",
 			"source": "WITCHERHLA",
 			"className": "Witcher",
 			"classSource": "WITCHERHLA",
 			"subclassShortName": "School of the Bear",
 			"subclassSource": "WITCHERHLA",
+			"page": 7,
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"By 14th level, your ability to withstand damage and resist malignant effects has been improved through intense conditioning. You gain proficiency in Constitution and Strength saving throws; additionally, when you fail a saving throw at which you are proficient, you can choose to succeed instead. Once this feature is used, it cannot be used again until you complete a long rest."
+				"At 14th level, you gain innate regenerative powers. At the start of each of your turns, if you are below half your maximum hit points, you regain hit points equal to your Constitution modifier (minimum of 1) + half your Proficiency Bonus (rounded down). You don't gain this benefit if you have 0 hit points or are Petrified or Unconscious."
+			]
+		},
+		{
+			"name": "Primal Beast",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Bear",
+			"subclassSource": "WITCHERHLA",
+			"page": 7,
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"At 18th level, you increase either your Strength or Constitution score by 4. Your maximum for this score is now 24."
 			]
 		},
 		{
@@ -5195,318 +5286,710 @@
 			"classSource": "WITCHERHLA",
 			"subclassShortName": "School of the Cat",
 			"subclassSource": "WITCHERHLA",
-			"level": 3,
+			"page": 8,
+			"level": 1,
+			"header": 1,
 			"entries": [
-				"The only school known to accept contracts on humans, the School of the Cat has largely become ostracized by their fellow witchers for this breach of their honor code. The school's effectiveness, however, cannot be doubted. Aggressive and flexible, the school focuses on landing many strikes to exploit weaknesses while avoiding damage through mobility.",
+				"School of the Cat Witchers focus their training on nimble or ranged fighting to deal damage even as they avoid taking it. Witchers from the School of the Cat are frequently seen wielding ranged weapons more prevalently than other witchers, and they tend to have a reputation for being emotionally distant and cold.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Improved Critical|Witcher|WITCHERHLA|School of the Cat|WITCHERHLA|3"
+					"subclassFeature": "Cat-like Training|Witcher|WITCHERHLA|School of the Cat|WITCHERHLA|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Agile Strike|Witcher|WITCHERHLA|School of the Cat|WITCHERHLA|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Mental Fortitude|Witcher|WITCHERHLA|School of the Cat|WITCHERHLA|1"
+				}
+			]
+		},
+		{
+			"name": "Cat-like Training",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Cat",
+			"subclassSource": "WITCHERHLA",
+			"page": 8,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"When you choose this school at 1st level, you gain the following features:",
+				{
+					"type": "list",
+					"items": [
+						"You gain proficiency in simple and martial ranged weapons.",
+						"You can choose to take a {@item shortbow|PHB} with {@item arrows (20)|PHB|20 arrows} with your starting equipment in place of the {@item light crossbow|PHB} and {@item crossbow bolts (20)|PHB|20 bolts}.",
+						"As long as you have both hands free, you have a climbing speed equal to your base movement speed."
+					]
+				}
+			],
+			"weaponProficiencies": [
+				{
+					"martial": true,
+					"simple": true
+				}
+			]
+		},
+		{
+			"name": "Agile Strike",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Cat",
+			"subclassSource": "WITCHERHLA",
+			"page": 8,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Starting at 1st level, when you use your action to dash, disengage, or hide, you can use your bonus action to make a single weapon attack."
+			]
+		},
+		{
+			"name": "Mental Fortitude",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Cat",
+			"subclassSource": "WITCHERHLA",
+			"page": 8,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Also at 1st level, your emotional distance from others offers you resistance against creatures attempting to mentally influence you. You have advantage on saving throws when a creature you can see attempts to charm or frighten you."
+			]
+		},
+		{
+			"name": "Harass",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Cat",
+			"subclassSource": "WITCHERHLA",
+			"page": 8,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Beginning at 6th level, Once on your turn when you hit a creature with an attack, that creature has disadvantage on its first attack made against a creature other than yourself."
+			]
+		},
+		{
+			"name": "Hasty Retreat",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Cat",
+			"subclassSource": "WITCHERHLA",
+			"page": 8,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"At 10th level, when you take damage from a creature that you can see, you can use your reaction to immediately move up to your movement speed away. Any opportunity attack made against you during this movement is made with disadvantage."
+			]
+		},
+		{
+			"name": "Stalker's Flurry",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Cat",
+			"subclassSource": "WITCHERHLA",
+			"page": 8,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Starting at 14th level, you attack with such speed that you turn a miss into another strike. Once per turn when you miss with a weapon attack, you can make another weapon attack as part of the same action."
+			]
+		},
+		{
+			"name": "Predator's Target",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Cat",
+			"subclassSource": "WITCHERHLA",
+			"page": 8,
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"Starting at 18th level you can establish one creature within 60 feet of you as Prey. Drawing from the information you can recall about the creature, you exploit it's weaknesses, gaining the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"You gain a +2 bonus to attack rolls against the target.",
+						"Your weapon attack deal an additional 1d8 damage against the target.",
+						"You have advantage on saving throws from that creature.",
+						"For the duration of the effect, whenever you move, you can sense if you are moving closer or further away from your Prey."
+					]
+				},
+				"This effect lasts up to 8 hours, even if the target moves out of range. You may establish a new Prey only if the target is killed or subdued, or if you do not have any established Prey still active."
+			]
+		},
+		{
+			"name": "School of the Griffin",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Griffin",
+			"subclassSource": "WITCHERHLA",
+			"page": 9,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"School of the Griffin Witchers spend most of their time studying their spellcraft. While they don't shirk their martial skills, they are most deadly when wielding magic. They spend much of their time studying magic in the company of learned scholars and nobles seeking tutelage, which often allows them to more easily earn the favor of those in the upper class.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Arcane Adept|Witcher|WITCHERHLA|School of the Griffin|WITCHERHLA|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Arcane Scholar|Witcher|WITCHERHLA|School of the Griffin|WITCHERHLA|1"
+				}
+			]
+		},
+		{
+			"name": "Arcane Adept",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Griffin",
+			"subclassSource": "WITCHERHLA",
+			"page": 9,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"When you choose this school at 1st level, you gain the following features:",
+				{
+					"type": "list",
+					"items": [
+						"You learn more spells than Witchers of other schools, learning one additional spell at 2nd level, and again at 6th, 11th, and 16th levels.",
+						"You also learn a number of cantrips in addition to your Witcher spells, learning two cantrips from the {@filter Witcher spell list|spells|class=Witcher|source=WITCHERHLA} early at level 1, as well as an additional cantrip at 4th, 7th, and 11th level. You can find these cantrips listed in the {@i Witcher Spellcasting} section.",
+						"Your extensive research into the arcane grants you additional spell effects for Witcher spells. These effects can be found listed with each spell in the {@i Witcher Spellcasting} section."
+					]
+				}
+			]
+		},
+		{
+			"name": "Arcane Scholar",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Griffin",
+			"subclassSource": "WITCHERHLA",
+			"page": 9,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Also at 1st level, your time spent studying with fellow scholars and interacting with nobility gives you the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You gain proficiency in Arcana and History.",
+						"You learn two additional languages of your choice.",
+						"You have advantage on Charisma-based skill checks when interacting with a member of upper society."
+					]
+				}
+			],
+			"skillProficiencies": [
+				{
+					"arcana": true,
+					"history": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"any": 2
+				}
+			]
+		},
+		{
+			"name": "Alternative Witcher Spells",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Griffin",
+			"subclassSource": "WITCHERHLA",
+			"page": 9,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Beginning at 6th level, you learn alternative forms of casting for the spells you know. For example, if you already know the spell {@spell Igni|WITCHERHLA}, you automatically learn the spell {@spell Firestream|WITCHERHLA} as well. If you know the spell  {@spell Heliotrope|WITCHERHLA}, you will automatically learn the spell  {@spell Guardian|WITCHERHLA} once you reach the level at which you can learn the spell. These alternative spells do not count against the number of spells you know. Reference the {@i Witcher Spellcasting} list for more information."
+			]
+		},
+		{
+			"name": "Arcane Riposte",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Griffin",
+			"subclassSource": "WITCHERHLA",
+			"page": 9,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"At 10th level, you add your Intelligence modifier to the damage you deal with any Witcher cantrips.",
+				"Additionally, when you take damage from a spell or magical effect you can siphon a portion of the magical energy to empower your spells. The next damaging spell you cast deals an extra die of damage to one target."
+			]
+		},
+		{
+			"name": "Martial Spellcasting",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Griffin",
+			"subclassSource": "WITCHERHLA",
+			"page": 9,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Starting at 14th level, you learn how to use your spells to open gaps in a creature's defense. When a creature takes damage from a spell you cast, you have advantage on any weapon attack you make against that creature before the end of your next turn."
+			]
+		},
+		{
+			"name": "Dual Casting",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Griffin",
+			"subclassSource": "WITCHERHLA",
+			"page": 9,
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"At 18th level, when you cast a spell as an action, you can use your bonus action to cast a witcher cantrip, even if the casting time normally requires an action"
+			]
+		},
+		{
+			"name": "School of the Manticore",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Manticore",
+			"subclassSource": "WITCHERHLA",
+			"page": 10,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"School of the Manticore Witchers favor protection and defense over dealing excessive damage, approaching combat with the mentality to wear down their opponents, outlasting them while avoiding taking damage behind their shields. They also excel in the development of Witcher potions, and it is rare you do not see multiple vials at their belts or on a bandolier.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Shield Expert|Witcher|WITCHERHLA|School of the Manticore|WITCHERHLA|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Improved Fortitude|Witcher|WITCHERHLA|School of the Manticore|WITCHERHLA|1"
+				}
+			]
+		},
+		{
+			"name": "Shield Expert",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Manticore",
+			"subclassSource": "WITCHERHLA",
+			"page": 10,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"When you choose this school at 1st level, you gain the following features:",
+				{
+					"type": "list",
+					"items": [
+						"You gain proficiency in medium armor and shields.",
+						"You get a +1 bonus to your AC when wearing only medium armor.",
+						"You can perform somatic components for spells, drink potions, or hold a non-weapon object such as a torch using a hand holding a shield.",
+						"You can use your bonus action to make an offhand weapon attack using your shield. This attack deals {@dice 1d4} bludgeoning damage on a hit and has the finesse property. Starting at 10th level, this damage increases to {@dice 1d6}.",
+						"You can prepare one additional potion formula of your choice at 3rd, 7th, 11th, and 15th levels."
+					]
+				}
+			],
+			"armorProficiencies": [
+				{
+					"medium": true,
+					"shield|phb": true
+				}
+			]
+		},
+		{
+			"name": "Improved Fortitude",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Manticore",
+			"subclassSource": "WITCHERHLA",
+			"page": 10,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Starting at 1st level, you gain improved constitution from your training, earning you a +1 bonus to your health for each Witcher level."
+			]
+		},
+		{
+			"name": "Alchemical Adept",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Manticore",
+			"subclassSource": "WITCHERHLA",
+			"page": 10,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Beginning at 6th level, you have devoted greater study for {@filter Witcher Potions|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:P}, gaining the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Consuming any Witcher potions grants you with temporary hit points equal to 1d8 + your Intelligence modifier. If a potion grants temporary hit points, the temporary hit points gained adds the temporary hit points from the potion with the temporary hit points gained from this ability. When consuming the Swallow potion, instead of gaining temporary hit points you recover additional health equal to 1d6 + your Intelligence modifier on the first turn of healing.",
+						"The first potion you consume per long rest does not count against your Witcher Preparation uses."
+					]
+				}
+			]
+		},
+		{
+			"name": "Human Shield",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Manticore",
+			"subclassSource": "WITCHERHLA",
+			"page": 10,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"At 10th level, when an ally within 5 feet of you takes damage from a non-magical attack, you can use your reaction to interpose yourself in front of your ally, taking the damage yourself instead.",
+				"Additionally, the first two potions you consume per long rest do not count against your Witcher Preparation uses."
+			]
+		},
+		{
+			"name": "Improved Alchemical Adept",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Manticore",
+			"subclassSource": "WITCHERHLA",
+			"page": 10,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Starting at 14th level, you have devoted greater study for {@filter Witcher Potions|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:P}, gaining the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Consuming any Witcher potions grants you with temporary hit points equal to 2d8 + your Intelligence modifier. When consuming the Swallow potion, instead of gaining temporary hit points you recover additional health equal to 2d6 + your Intelligence modifier on the first turn of healing.",
+						"The first three potions you consume per long rest do not count against your Witcher Preparation uses."
+					]
+				}
+			]
+		},
+		{
+			"name": "Stand Against the Tide",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Manticore",
+			"subclassSource": "WITCHERHLA",
+			"page": 10,
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"At 18th level, when a hostile creature misses you with a melee Attack, you can use your reaction to force that creature to repeat the same Attack against another creature (other than itself) of your choice within melee range.",
+				"Additionally, while you are wielding a shield, bludgeoning, piercing, and slashing damage that you take from nonmagical attacks is reduced by 2."
+			]
+		},
+		{
+			"name": "School of the Viper",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Viper",
+			"subclassSource": "WITCHERHLA",
+			"page": 11,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"School of the Viper Witchers are treated warily, as they are known to take contracts on anyone- not just monsters. They often are seen wielding two weapons at once, seeking to inflict maximum damage as quickly as possible. After all, an enemy can't hit you if they're dead.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Viper's Speed|Witcher|WITCHERHLA|School of the Viper|WITCHERHLA|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Viper Strike|Witcher|WITCHERHLA|School of the Viper|WITCHERHLA|1"
+				}
+			]
+		},
+		{
+			"name": "Viper's Speed",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Viper",
+			"subclassSource": "WITCHERHLA",
+			"page": 11,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"When you choose this school at 1st level, you gain the following features:",
+				{
+					"type": "list",
+					"items": [
+						"Your speed increases by 5 feet while wearing only light armor with no shield equipped.",
+						"You can ignore the somatic requirements of spells while wielding weapons.",
+						"You can prepare one additional handbomb schematic of your choice at 7th, 11th, and 15th levels."
+					]
+				}
+			]
+		},
+		{
+			"name": "Viper Strike",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Viper",
+			"subclassSource": "WITCHERHLA",
+			"page": 11,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Also at 1st level, if you are wielding a single weapon with the light property, you may use your bonus action to make a single weapon attack.",
+				"Once per turn, if you miss an attack against a creature, you can deal an extra {@dice 1d6} damage to that creature if you hit on the next attack during that turn.",
+				"Additionally, if you attack the same creature with at least two melee weapon attacks on the same turn, you gain an additional action on your turn. That action can be used only to take the {@action Dash}, {@action Disengage}, {@action Hide}, or {@action Use an Object} action."
+			]
+		},
+		{
+			"name": "Explosive Preparation",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Viper",
+			"subclassSource": "WITCHERHLA",
+			"page": 11,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Beginning at 6th level, you have devoted greater study to the preparation of Witcher Handbombs, gaining the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Handbombs can be thrown using your choice of an action or a bonus action.",
+						"Any handbomb you craft will deal an additional damage equal to 1d6 + your Intelligence modifier in its initial damage.",
+						"The first handbomb you use per long rest does not count against your Witcher Preparation uses."
+					]
+				}
+			]
+		},
+		{
+			"name": "Improved Viper Strike",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Viper",
+			"subclassSource": "WITCHERHLA",
+			"page": 11,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"At 10th Level, you now deal the extra damage on all subsequent melee weapon attacks against a creature after the first attack, regardless if the first attack hits or misses."
+			]
+		},
+		{
+			"name": "Rapid Strike",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Viper",
+			"subclassSource": "WITCHERHLA",
+			"page": 11,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Starting at 14th level, you learn to trade accuracy for swift strikes. Once per turn, if you take the attack action on your turn and have advantage on an attack roll against one of the targets, you can forgo the advantage for that attack roll to make an additional weapon attack against that target as part of the same action.",
+				"Additionally, the first two handbombs you consume per long rest do not count against your Witcher Preparation uses."
+			]
+		},
+		{
+			"name": "Viper's Reflexes",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Viper",
+			"subclassSource": "WITCHERHLA",
+			"page": 11,
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"At 18th level, you have become adept at laying ambushes and quickly escaping danger. You can take two turns during the first round of any Combat. You take your first turn at your normal Initiative and your second turn at your Initiative minus 10. You can’t use this feature when you are surprised."
+			]
+		},
+		{
+			"name": "School of the Wolf",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Wolf",
+			"subclassSource": "WITCHERHLA",
+			"page": 12,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"School of the Wolf Witchers are widely known as the most versatile school of the witchers, expertly utilizing spellcasting, potions, handbombs, and martial combat to adapt to any situation.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Adaptable Hunter|Witcher|WITCHERHLA|School of the Wolf|WITCHERHLA|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Improved Fortitude|Witcher|WITCHERHLA|School of the Wolf|WITCHERHLA|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Arcane Strike|Witcher|WITCHERHLA|School of the Wolf|WITCHERHLA|1"
+				}
+			]
+		},
+		{
+			"name": "Adaptable Hunter",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Wolf",
+			"subclassSource": "WITCHERHLA",
+			"page": 12,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"When you choose this school at 1st level, you gain the following features:",
+				{
+					"type": "list",
+					"items": [
+						"You gain proficiency in medium armor",
+						"You get a +1 bonus to your AC when wearing only medium armor.",
+						"You also learn a number of cantrips in addition to your Witcher spells, learning one cantrip from the Witcher spell list early at level 1, as well as an additional cantrip at 4th, 7th, and 11th level. You can find these cantrips listed in the Witcher Spells section.",
+						"You learn one additional Witcher Spell of your choice at level 2. This does not count against your number of spells known."
+					]
+				}
+			],
+			"armorProficiencies": [
+				{
+					"medium": true
+				}
+			]
+		},
+		{
+			"name": "Improved Fortitude",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Wolf",
+			"subclassSource": "WITCHERHLA",
+			"page": 12,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Starting at 1st level, you gain improved constitution from your training, earning you a +1 bonus to your health for each Witcher level."
+			]
+		},
+		{
+			"name": "Arcane Strike",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Wolf",
+			"subclassSource": "WITCHERHLA",
+			"page": 12,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Also at 1st level, when you deal damage with a spell you can add an extra 1d4 to the damage you deal with any melee weapon attacks using the attack action before the end of your next turn."
+			]
+		},
+		{
+			"name": "Thorough Preparation",
+			"source": "WITCHERHLA",
+			"className": "Witcher",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "School of the Wolf",
+			"subclassSource": "WITCHERHLA",
+			"page": 12,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Beginning at 6th level, you have become more efficient at Witcher Preparation, gaining the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You can prepare one additional potion formula and one additional handbomb schematic.",
+						"Handbombs can be thrown using your choice of an action or a bonus action.",
+						"The first handbomb or potion you use per long rest does not count against your Witcher Preparation uses."
+					]
 				}
 			]
 		},
 		{
 			"name": "Improved Critical",
-			"entries": [
-				"Starting at 3rd level, you critical strike on a roll of 19 or 20 on the d20. Additionally, when you critically strike you gain focus up to your cap."
-			],
 			"source": "WITCHERHLA",
 			"className": "Witcher",
 			"classSource": "WITCHERHLA",
-			"subclassShortName": "School of the Cat",
+			"subclassShortName": "School of the Wolf",
 			"subclassSource": "WITCHERHLA",
-			"level": 3,
-			"header": 1
-		},
-		{
-			"name": "Quick Reflexes",
-			"source": "WITCHERHLA",
-			"className": "Witcher",
-			"classSource": "WITCHERHLA",
-			"subclassShortName": "School of the Cat",
-			"subclassSource": "WITCHERHLA",
-			"level": 7,
+			"page": 12,
+			"level": 6,
 			"header": 2,
 			"entries": [
-				"Starting at 7th level, you are quick to respond to threats and retreat. When a creature makes an attack roll against you, you can choose to consume 1 focus and use your reaction to impose disadvantage on that attack. As a part of the same reaction, you can move 10 feet without provoking opportunity attacks."
+				"Also at 6th Level, your weapon Attacks score a critical hit on a roll of 19 or 20."
 			]
 		},
 		{
-			"name": "Impeccable Instinct",
+			"name": "Improved Arcane Strike",
 			"source": "WITCHERHLA",
 			"className": "Witcher",
 			"classSource": "WITCHERHLA",
-			"subclassShortName": "School of the Cat",
+			"subclassShortName": "School of the Wolf",
 			"subclassSource": "WITCHERHLA",
+			"page": 12,
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"At 10th level, your instincts prevent you from being caught flatfooted. You can add your proficiency bonus to initiative rolls, and cannot be surprised. Additionally, when you make a Dexterity saving throw, you can expend 2 focus to grant yourself advantage."
+				"At 10th level, the damage from your Arcane strike increases to 1d6, and the first weapon attack you make after dealing damage with a cantrip or witcher spell before the end of your next turn has advantage. Additionally, you can now add your Intelligence modifier to the damage of your witcher cantrips."
 			]
 		},
 		{
-			"name": "Deadly Flurry",
+			"name": "Improved Thorough Preparation",
 			"source": "WITCHERHLA",
 			"className": "Witcher",
 			"classSource": "WITCHERHLA",
-			"subclassShortName": "School of the Cat",
+			"subclassShortName": "School of the Wolf",
 			"subclassSource": "WITCHERHLA",
+			"page": 12,
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"At level 14, you can use your focus to unleash a flurry of blows. When you take the {@action Attack} action, you can expend 3 focus to make two additional weapon attacks as part of that action.",
-				"Once you use this feature, you cannot use it again until you complete a long rest or critically strike with a weapon attack."
-			]
-		},
-		{
-			"name": "School of the Griffin",
-			"source": "WITCHERHLA",
-			"className": "Witcher",
-			"classSource": "WITCHERHLA",
-			"subclassShortName": "School of the Griffin",
-			"subclassSource": "WITCHERHLA",
-			"level": 3,
-			"entries": [
-				"With honor and dignity, members of the School of the Griffin pride themselves on dispatching enemies and fulfilling contracts with utmost efficiency. Witchers of the Griffin school focus on enhancing their utilitarian magical spells and weaving them into their combat techniques.",
+				"Starting at 14th level, the effects of your Witcher preparation have increased benefits:",
 				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Total Focus|Witcher|WITCHERHLA|School of the Griffin|WITCHERHLA|3"
-				}
-			]
-		},
-		{
-			"name": "Total Focus",
-			"entries": [
-				"At 3rd level, you can close out all irrelevant sensory information to take in the battlefield. As a bonus action, you can mark a creature; the marked creature has disadvantage on saves against all your signs. You can only mark a new creature after either killing the currently marked creature or removing the mark as an action. Additionally, your focus cap increases by 1."
-			],
-			"source": "WITCHERHLA",
-			"className": "Witcher",
-			"classSource": "WITCHERHLA",
-			"subclassShortName": "School of the Griffin",
-			"subclassSource": "WITCHERHLA",
-			"level": 3,
-			"header": 1
-		},
-		{
-			"name": "Sign Intensity",
-			"source": "WITCHERHLA",
-			"className": "Witcher",
-			"classSource": "WITCHERHLA",
-			"subclassShortName": "School of the Griffin",
-			"subclassSource": "WITCHERHLA",
-			"level": 7,
-			"header": 2,
-			"entries": [
-				"Starting at 7th level, you can channel additional energy into your signs to grant them new applications. When you cast a sign, you can expend 1 extra focus to add an extra effect as listed below.",
-				{
-					"type": "options",
-					"entries": [
-						{
-							"type": "entries",
-							"name": "Igni",
-							"entries": [
-								"Creatures that fail their saving throw against your Igni sign drop any weapons or held items made of metal or flammable materials. Creatures resistant to fire damage are unaffected by this."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Quen",
-							"entries": [
-								"A creature that triggers your Quen shield with a melee attack is pushed back 5 feet. If the attack's damage is reduced to zero, the attacker is also knocked {@condition prone}."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Yrden",
-							"entries": [
-								"Hostile creatures take {@dice 1d12} force damage when they start their turns inside or enter the circle."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Aard",
-							"entries": [
-								"Creatures that fail their saving throw against your Aard sign also take {@dice 1d10} cold damage and have their movement reduced in half until the end of their next turn."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Axii",
-							"entries": [
-								"A creature that fails its saving throw against your Axii sign has disadvantage on all saves to maintain its concentration on a spell until the end of its next turn."
-							]
-						}
+					"type": "list",
+					"items": [
+						"Consuming any Witcher potions grants you with temporary hit points equal to 1d8 + your Intelligence modifier. If a potion grants temporary hit points, the temporary hit points gained adds the temporary hit points from the potion with the temporary hit points gained from this ability. When consuming the Swallow potion, instead of gaining temporary hit points you recover additional health equal to 1d6 + your Intelligence modifier on the first turn of healing.",
+						"Any handbomb you craft will deal an additional damage equal to 1d6 + your Intelligence modifier in its initial damage.",
+						"The first two handbombs or potions you use per long rest do not count against your Witcher Preparation uses."
 					]
 				}
 			]
 		},
 		{
-			"name": "Opulence",
+			"name": "Prime Specimen",
 			"source": "WITCHERHLA",
 			"className": "Witcher",
 			"classSource": "WITCHERHLA",
-			"subclassShortName": "School of the Griffin",
+			"subclassShortName": "School of the Wolf",
 			"subclassSource": "WITCHERHLA",
-			"level": 10,
+			"page": 12,
+			"level": 18,
 			"header": 2,
 			"entries": [
-				"At 10th level, you can channel the royal pride of a griffin to command an air of authority. You gain proficiency in the {@skill Persuasion} skill. Additionally, when you make a Charisma saving throw, you can expend 2 focus to grant yourself advantage."
-			]
-		},
-		{
-			"name": "Elemental Flow",
-			"source": "WITCHERHLA",
-			"className": "Witcher",
-			"classSource": "WITCHERHLA",
-			"subclassShortName": "School of the Griffin",
-			"subclassSource": "WITCHERHLA",
-			"level": 14,
-			"header": 2,
-			"entries": [
-				"Beginning at 14th level, your mastery of signs allows you to use the energy they release to charge your weapon with arcane power. After you cast a sign, you may charge a weapon that you are holding provided it is not already charged with this feature. The next time you hit with a weapon attack using that weapon, that attack deals an additional {@dice 1d6} fire, lightning, or cold (your choice) damage and generates an additional 1 focus. If unused, this effect fades after one minute."
-			]
-		}
-	],
-	"subclass": [
-		{
-			"name": "School of the Wolf",
-			"shortName": "School of the Wolf",
-			"source": "WITCHERHLA",
-			"subclassFeatures": [
-				"School of the Wolf|Witcher|WITCHERHLA|School of the Wolf|WITCHERHLA|3",
-				"Spins and Pirouettes|Witcher|WITCHERHLA|School of the Wolf|WITCHERHLA|7",
-				"Arrow Deflection|Witcher|WITCHERHLA|School of the Wolf|WITCHERHLA|10",
-				"Rushing Agility|Witcher|WITCHERHLA|School of the Wolf|WITCHERHLA|14"
-			],
-			"className": "Witcher",
-			"classSource": "WITCHERHLA"
-		},
-		{
-			"name": "School of the Viper",
-			"shortName": "School of the Viper",
-			"source": "WITCHERHLA",
-			"subclassFeatures": [
-				"School of the Viper|Witcher|WITCHERHLA|School of the Viper|WITCHERHLA|3",
-				"Slippery|Witcher|WITCHERHLA|School of the Viper|WITCHERHLA|7",
-				"Tolerance|Witcher|WITCHERHLA|School of the Viper|WITCHERHLA|10",
-				"Killing Strike|Witcher|WITCHERHLA|School of the Viper|WITCHERHLA|14"
-			],
-			"className": "Witcher",
-			"classSource": "WITCHERHLA"
-		},
-		{
-			"name": "School of the Bear",
-			"shortName": "School of the Bear",
-			"source": "WITCHERHLA",
-			"subclassFeatures": [
-				"School of the Bear|Witcher|WITCHERHLA|School of the Bear|WITCHERHLA|3",
-				"Vitalic Blows|Witcher|WITCHERHLA|School of the Bear|WITCHERHLA|7",
-				"Thick Skin|Witcher|WITCHERHLA|School of the Bear|WITCHERHLA|10",
-				"Ursine Endurance|Witcher|WITCHERHLA|School of the Bear|WITCHERHLA|14"
-			],
-			"className": "Witcher",
-			"classSource": "WITCHERHLA"
-		},
-		{
-			"name": "School of the Cat",
-			"shortName": "School of the Cat",
-			"source": "WITCHERHLA",
-			"subclassFeatures": [
-				"School of the Cat|Witcher|WITCHERHLA|School of the Cat|WITCHERHLA|3",
-				"Quick Reflexes|Witcher|WITCHERHLA|School of the Cat|WITCHERHLA|7",
-				"Impeccable Instinct|Witcher|WITCHERHLA|School of the Cat|WITCHERHLA|10",
-				"Deadly Flurry|Witcher|WITCHERHLA|School of the Cat|WITCHERHLA|14"
-			],
-			"className": "Witcher",
-			"classSource": "WITCHERHLA"
-		},
-		{
-			"name": "School of the Griffin",
-			"shortName": "School of the Griffin",
-			"source": "WITCHERHLA",
-			"subclassFeatures": [
-				"School of the Griffin|Witcher|WITCHERHLA|School of the Griffin|WITCHERHLA|3",
-				"Sign Intensity|Witcher|WITCHERHLA|School of the Griffin|WITCHERHLA|7",
-				"Opulence|Witcher|WITCHERHLA|School of the Griffin|WITCHERHLA|10",
-				"Elemental Flow|Witcher|WITCHERHLA|School of the Griffin|WITCHERHLA|14"
-			],
-			"className": "Witcher",
-			"classSource": "WITCHERHLA"
-		}
-	],
-	"classFluff": [
-		{
-			"name": "Witcher",
-			"source": "WITCHERHLA",
-			"page": 2,
-			"entries": [
-				{
-					"name": "Witcher",
-					"source": "WITCHERHLA",
-					"type": "section",
-					"page": 1,
-					"entries": [
-						"A man in dark leather armor pulls a handbomb from his pack as he finally locates the werewolf he has been tracking in the night. His cat-like eyes glow in the moonlight, allowing him to see the creature clearly. Throwing the Moondust bomb at the creature's feet, he draws his twin shortswords and charges in at the man ahead, now unable to shapeshift into his bestial form.",
-						"Dancing backward from an oncoming pack of ghouls, a nimble halfling quickly consumes a potion from his belt, granting a surge of magical strength. A moment later an empowered blast of Igni erupts from his palm, washing over the ghouls and burning them to cinder. His blade will make quick work of any who remain standing.",
-						"Swiftly moving her fingers to form the appropriate sign, a half-elf slams a Yrden trap on the ground at her feet, forcing the attacking wraith into a corporeal form. She draws her blade, closing in for the kill.",
-						"Using different approaches, all of these are monster hunters in their own right. Trained in swordplay, magic, alchemy, and crafting, Witchers hunt monsters that make ordinary men flee in terror.",
-						
-						{
-							"type": "entries",
-							"name": "Monster Hunter for Hire",
-							"entries": [
-								"Witchers dedicate their lives to hunting monsters, studying their strengths and weaknesses in order to effectively kill them. While Witchers may discover monsters in the wild, the bulk of their work is spent dealing with threats closer to civilization, where people will pay to be rid of the threats. These jobs how Witcher's earn a living, and they frequently move from town to town and city to city, seeking out new contracts.",
-								"It is a life filled with constant danger from the various beasts and monsters in the wilds. Though they train hard and prepare extensively for their fights, not many survive to reach old age."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Mistrusted Nomad",
-							"entries": [
-								"Many humans who become Witchers undergo the Trial of the Grasses, a series of mutations designed to help these hunters become the apex predators necessary to hunt the creatures they do. It is perhaps these mutations that lead many commoners to be distrustful of them, due to the physical changes the mutations bring, such as cat-like eyes.",
-								"Another possible reason for their mistrust of Witchers is the general view that the Witchers are greedy vagabonds, preying on the weak and needy to hand over their valuables to deal with their problem. Whenever they do hire a Witcher, it is often as means of last resort, which sometimes results in a far more dire situation the Witcher now faces.",
-								"Some Witchers will work alone to track and fell their quarry, but a number of Witchers will work together or within a party of traveling adventurers in order to more safely face the myriad of dangers in the world, despite having to share the contract's pay."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Creating a Witcher",
-							"entries": [
-								"As you create your Witcher character, consider the nature of your training. Were you given up to a Witcher school for training by a family who couldn't afford to feed you? Did you turn to the Witcher profession out of desperation when you were exiled? Or perhaps you were yourself saved by a Witcher, and as a result find yourself drawn to do the same for others?",
-								"What is your attitude toward the commoners who mistrust you? Do you have weary patience for their ignorance, or do you find yourself frequently on edge, ready to snap at the next person who claims you're just as much a monster as the ones you're hired to slay?",
-								"Consult with your DM about how best to incorporate Witchers into your world."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Quick Build",
-							"entries": [
-								"You can make a Witcher quickly by following these suggestions. First, make Strength or Dexterity your highest ability score. Your next-highest score should be Constitution, or Intelligence if you intend to rely on spellcasting and Witcher Preparation. Second, choose the hermit or the outlander background."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Optional Rule: Multiclassing",
-							"entries": [
-								"If you use the multiclassing rule from the {@i Player's Handbook}, here's what you need to know if you take a level in Witcher.",
-								{
-									"type": "list",
-									"style": "list-no-bullets",
-									"items": [
-										"{@b Ability Score Minimum.} You must have at least a 13 in either Strength or Dexterity, and a 13 in Intelligence to take a level in this class, or to take a level in another class if you are already a Witcher.",
-										"{@b Proficiencies.} If Witcher isn't your initial class, you gain proficiency with light armor, simple and martial melee weapons, and crossbows."
-									]
-								}
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Optional Rule: Trial of the Grasses",
-							"entries": [
-								"See the end of this class document for the Human race variant: {@i Trial of the Grasses.}"
-							]
-						}
-					]
-				}
+				"Upon reaching 18th level, You get a +2 bonus to two different Ability Scores of your choice. Your maximum for each of these scores is now 22."
 			]
 		}
 	]
