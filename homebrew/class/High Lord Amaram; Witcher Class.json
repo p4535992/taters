@@ -117,8 +117,8 @@
 					"{@item silvered weapon|PHB}",
 					"{@item light crossbow|PHB} and a {@item crossbow bolts (20)|PHB|pack with 20 bolts}",
 					"{@item alchemist's supplies|PHB}",
-					"a Witcher School Medallion",
-					"a Witcher's Bestiary"
+					"a {@item Witcher School Medallion|WITCHERHLA}",
+					"a {@item Witcher Bestiary|WITCHERHLA}"
 				],
 				"defaultData": [
 					{
@@ -128,16 +128,8 @@
 							"light crossbow|phb",
 							"crossbow bolts (20)|phb",
 							"alchemist's supplies|phb",
-							{
-								"special": "Witcher School Medallion",
-								"quantity": 1,
-								"worthValue": 100
-							},
-							{
-								"special": "Witcher's Bestiary",
-								"quantity": 1,
-								"worthValue": 100
-							}
+							"Witcher School Medallion|WITCHERHLA",
+							"Witcher Bestiary|WITCHERHLA"
 						]
 						
 					},
@@ -277,7 +269,7 @@
 				},
 				{
 					"colLabels": [
-						"{@filter Spells Known|spells|class=Witcher|source=WITCHERHLA}"
+						"{@filter Spells Known|spells|class=Witcher (WITCHERHLA)}"
 					],
 					"rows": [
 						[
@@ -345,11 +337,11 @@
 				{
 					"title": "Spell Slots per Spell Level",
 					"colLabels": [
-						"{@filter 1st|spells|level=1|class=Witcher|source=WITCHERHLA}",
-						"{@filter 2nd|spells|level=2|class=Witcher|source=WITCHERHLA}",
-						"{@filter 3rd|spells|level=3|class=Witcher|source=WITCHERHLA}",
-						"{@filter 4th|spells|level=4|class=Witcher|source=WITCHERHLA}",
-						"{@filter 5th|spells|level=5|class=Witcher|source=WITCHERHLA}"
+						"{@filter 1st|spells|level=1|class=Witcher (WITCHERHLA)}",
+						"{@filter 2nd|spells|level=2|class=Witcher (WITCHERHLA)}",
+						"{@filter 3rd|spells|level=3|class=Witcher (WITCHERHLA)}",
+						"{@filter 4th|spells|level=4|class=Witcher (WITCHERHLA)}",
+						"{@filter 5th|spells|level=5|class=Witcher (WITCHERHLA)}"
 					],
 					"rowsSpellProgression": [
 						[
@@ -544,7 +536,7 @@
 				"guidance|phb",
 				"gust|xge",
 				"lightning lure|tce",
-				"mind silver|tce",
+				"mind sliver|tce",
 				"prestidigitation|phb",
 				"produce flame|phb",
 				"ray of frost|phb",
@@ -557,6 +549,87 @@
 				"glacies|WITCHERHLA",
 				"yrden|WITCHERHLA",
 				"somne|WITCHERHLA"
+			]
+		}
+	],
+	"classFluff": [
+		{
+			"name": "Witcher",
+			"source": "WITCHERHLA",
+			"entries": [
+				{
+					"name": "Witcher",
+					"source": "WITCHERHLA",
+					"type": "section",
+					"page": 2,
+					"entries": [
+						"A man in dark leather armor pulls a handbomb from his pack as he finally locates the werewolf he has been tracking in the night. His cat-like eyes glow in the moonlight, allowing him to see the creature clearly. Throwing the Moondust bomb at the creature's feet, he draws his twin shortswords and charges in at the man ahead, now unable to shapeshift into his bestial form.",
+						"Dancing backward from an oncoming pack of ghouls, a nimble halfling quickly consumes a potion from his belt, granting a surge of magical strength. A moment later an empowered blast of Igni erupts from his palm, washing over the ghouls and burning them to cinder. His blade will make quick work of any who remain standing.",
+						"Swiftly moving her fingers to form the appropriate sign, a half-elf slams a Yrden trap on the ground at her feet, forcing the attacking wraith into a corporeal form. She draws her blade, closing in for the kill.",
+						"Using different approaches, all of these are monster hunters in their own right. Trained in swordplay, magic, alchemy, and crafting, Witchers hunt monsters that make ordinary men flee in terror.",
+						{
+							"name": "Monster Hunters for Hire",
+							"type": "entries",
+							"entries": [
+								"Witchers dedicate their lives to hunting monsters, studying their strengths and weaknesses in order to effectively kill them. While Witchers may discover monsters in the wild, the bulk of their work is spent dealing with threats closer to civilization, where people will pay to be rid of the threats. These jobs how Witcher's earn a living, and they frequently move from town to town and city to city, seeking out new contracts.",
+								"It is a life filled with constant danger from the various beasts and monsters in the wilds. Though they train hard and prepare extensively for their fights, not many survive to reach old age."
+							]
+						},
+						{
+							"name": "Mistrusted Nomads",
+							"type": "entries",
+							"entries": [
+								"Many humans who become Witchers undergo the Trial of the Grasses, a series of mutations designed to help these hunters become the apex predators necessary to hunt the creatures they do. It is perhaps these mutations that lead many commoners to be distrustful of them, due to the physical changes the mutations bring, such as cat-like eyes.",
+								"Another possible reason for their mistrust of Witchers is the general view that the Witchers are greedy vagabonds, preying on the weak and needy to hand over their valuables to deal with their problem. Whenever they do hire a Witcher, it is often as means of last resort, which sometimes results in a far more dire situation the Witcher now faces.",
+								"Some Witchers will work alone to track and fell their quarry, but a number of Witchers will work together or within a party of traveling adventurers in order to more safely face the myriad of dangers in the world, despite having to share the contract's pay."
+							]
+						},
+						{
+							"name": "Creating a Witcher",
+							"type": "entries",
+							"entries": [
+								"As you create your Witcher character, consider the nature of your training. Were you given up to a Witcher school for training by a family who couldn't afford to feed you? Did you turn to the Witcher profession out of desperation when you were exiled? Or perhaps you were yourself saved by a Witcher, and as a result find yourself drawn to do the same for others ?",
+								"What is your attitude toward the commoners who mistrust you ? Do you have weary patience for their ignorance, or do you find yourself frequently on edge, ready to snap at the next person who claims you're just as much a monster as the ones you're hired to slay ?",
+								"Consult with your DM about how best to incorporate Witchers into your world."
+							]
+						},
+						{
+							"name": "Quick Build",
+							"type": "entries",
+							"entries": [
+								"You can make a Witcher quickly by following these suggestions. First, make Strength or Dexterity your highest ability score. Your next-highest score should be Constitution, or Intelligence if you intend to rely on spellcasting and Witcher Preparation. Second, choose the hermit or the outlander background."
+							]
+						},
+						{
+							"name": "Optional Rule: Multiclassing",
+							"type": "entries",
+							"entries": [
+								"If you use the multiclassing rule from the Player's Handbook, here's what you need to know if you take a level in Witcher.",
+								{
+									"name": "Ability Score Minimum",
+									"type": "entries",
+									"entries": [
+										"You must have at least a 13 in either Strength or Dexterity, and a 13 in Intelligence to take a level in this class, or to take a level in another class if you are already a Witcher."
+									]
+								},
+								{
+									"name": "Proficiencies",
+									"type": "entries",
+									"entries": [
+										"If Witcher isn't your initial class, you gain proficiency with light armor, simple and martial melee weapons, and crossbows."
+									]
+								}
+							]
+						},
+						{
+							"name": "Optional Rule: Trial of the Grasses",
+							"type": "entries",
+							"entries": [
+								"See the end of this class document for the Human race variant: Trial of the Grasses."
+							]
+						}
+					]
+				}
 			]
 		}
 	],
@@ -680,7 +753,7 @@
 				{
 					"type": "list",
 					"items": [
-						"You learn a Witcher spell of your choice. You can select from the base {@i {@filter Witcher spells|spells|class=Witcher|source=WITCHERHLA}} or the {@i {@subclassFeature alternative witcher spells|Witcher|WITCHERHLA|School of the Griffin|WITCHERHLA|6|}} lists, ignoring any prerequisites.",
+						"You learn a Witcher spell of your choice. You can select from the base {@i {@filter Witcher spells|spells|class=Witcher (WITCHERHLA)}} or the {@i {@subclassFeature alternative witcher spells|Witcher|WITCHERHLA|School of the Griffin|WITCHERHLA|6|}} lists, ignoring any prerequisites.",
 						"If the chosen spell is a 1st level spell, you can cast it once at 1st level without using a spell slot. You must finish a long rest before you can cast it in this way again, and you can also cast the spell using any spell slots you have."
 					]
 				}
@@ -4614,7 +4687,7 @@
 					"name": "Spells Known off 1st Level and Higher",
 					"type": "entries",
 					"entries": [
-						"You know two {@filter 1st-level spells of your choice from the Witcher spell list|spells|level=1|class=Witcher|source=WITCHERHLA}.",
+						"You know two {@filter 1st-level spells of your choice from the Witcher spell list|spells|level=1|class=Witcher (WITCHERHLA)}.",
 						"The Spells Known column of the Witcher table shows when you learn more Witcher spells of your choice. Each of the spells must be of a level for which you have spell slots. For instance, when you reach 6th level in this class, you can learn one new spell of 1st or 2nd level.",
 						"Additionally, when you gain a level in this class, you can choose one of the Witcher spells you know and replace it with another spell from the {@i Witcher Spell list}, which also must be of a level for which you have Spell Slots."
 					]
@@ -4650,7 +4723,7 @@
 								"{@spell guidance|phb}",
 								"{@spell gust|xge}",
 								"{@spell lightning lure|tce}",
-								"{@spell mind silver|tce}",
+								"{@spell mind sliver|tce}",
 								"{@spell prestidigitation|phb}",
 								"{@spell produce flame|phb}",
 								"{@spell ray of frost|phb}"
@@ -5465,7 +5538,7 @@
 					"type": "list",
 					"items": [
 						"You learn more spells than Witchers of other schools, learning one additional spell at 2nd level, and again at 6th, 11th, and 16th levels.",
-						"You also learn a number of cantrips in addition to your Witcher spells, learning two cantrips from the {@filter Witcher spell list|spells|class=Witcher|source=WITCHERHLA} early at level 1, as well as an additional cantrip at 4th, 7th, and 11th level. You can find these cantrips listed in the {@i Witcher Spellcasting} section.",
+						"You also learn a number of cantrips in addition to your Witcher spells, learning two cantrips from the {@filter Witcher spell list|spells|class=Witcher (WITCHERHLA)} early at level 1, as well as an additional cantrip at 4th, 7th, and 11th level. You can find these cantrips listed in the {@i Witcher Spellcasting} section.",
 						"Your extensive research into the arcane grants you additional spell effects for Witcher spells. These effects can be found listed with each spell in the {@i Witcher Spellcasting} section."
 					]
 				}
@@ -5990,6 +6063,1513 @@
 			"header": 2,
 			"entries": [
 				"Upon reaching 18th level, You get a +2 bonus to two different Ability Scores of your choice. Your maximum for each of these scores is now 22."
+			]
+		}
+	],
+	"race": [
+		{
+			"name": "Human (Variant; Trial of the Grasses)",
+			"source": "WITCHERHLA",
+			"page": 22,
+			"ability": [
+				{
+					"con": 2,
+					"choose": {
+						"from": [
+							"dex",
+							"str",
+							"wis",
+							"cha",
+							"int"
+						],
+						"count": 1,
+						"amount": 1
+					}
+				}
+			],
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 35
+			},
+			"darkvision": 60,
+			"entries": [
+				"Your character has a number of traits in common with others who have underwent the Trial of the Grasses.",
+				{
+					"name": "Ability Score Increase",
+					"type": "entries",
+					"entries": [
+						"You have a +2 bonus to Constitution and a +1 bonus to a different ability score of your choice."
+					]
+				},
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"The mutations extend your life span causing you to begin aging at a quarter of your normal rate, beginning at the age you underwent the Trials."
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"Humans do not lean toward any particular alignment, though the Trial tends to emphasize the character traits of a person, meaning if they lean towards one alignment, they become more firmly rooted within it, and are less prone to act in a manner contrary to that alignment."
+					]
+				},
+				{
+					"name": "Size",
+					"type": "entries",
+					"entries": [
+						"Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position within that range, your size is medium."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Speed",
+					"entries": [
+						"Your base walking speed is 35 feet."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"Your eyes now take on the appearance of a cat's, with slitted pupils that glow in the dark (The most common eye color is golden, though the mutations may result in varying colors). You gain darkvision out to a range of 60 feet."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Improved Vigor",
+					"entries": [
+						"You do not need to sleep any more in order to rest. Instead, you meditate deeply, remaining semiconscious, for 4 hours a day. While meditating you gain the same benefit other humans do from 8 hours of sleep."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Improved Constitution",
+					"entries": [
+						"You have advantage on saving throws against {@damage poison}, and against being {@condition poisoned} or {@condition diseased}."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Physical Mutations",
+					"entries": [
+						"Your body develops a random number of weird quirks, such as pigmentless hair, skin, etc. Discuss these abnormalities with your DM. You can use the table below as a guide. Whatever you choose or roll, the mutations your body underwent leave it apparent that you are different from other humans.",
+						{
+							"type": "table",
+							"caption": "d6 Physical Mutations",
+							"colLabels": [
+								"d6",
+								"Mutation"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Your hair loses all pigment, turning white."
+								],
+								[
+									"2",
+									"You are missing patches of hair or develop new patches of hair in abnormal locations, or lose at least one fingernail or toenail."
+								],
+								[
+									"3",
+									"Your core temperature permanently drops and your skin pales."
+								],
+								[
+									"4",
+									"Your emotions become numb, making it rare or difficult for you to have strong emotional reactions."
+								],
+								[
+									"5",
+									"Your reproductive system has been damaged, leaving you infertile."
+								],
+								[
+									"6",
+									"All the hair follicles in your body are dead, causing you to lose all hair."
+								]
+							]
+						}
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write {@language Common|PHB} and one extra language of your choice. Humans typically learn the languages of other people they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elvish muscial expressions, Dwarvish military phrases, and so on."
+					],
+					"type": "entries"
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"other": true
+				}
+			],
+			"age": {
+				"mature": 20,
+				"max": 100
+			},
+			"fluff": {
+				"entries": [
+					"The Trial of the Grasses is a variant Human transformed through various testings and mutagens painful enough to border on torture",
+					"Consult your DM on how best to implement this variant within the setting of your world.",
+					{
+						"name": "Painful Mutations",
+						"entries": [
+							"As a method of preparing yourself to face monstrous foes, you have subjected yourself to the Trial of the Grasses, a brutal transformation process using chemicals and elixirs that has only a 30% survival rate. Consequently, your body mutates, giving you numerous benefits, as well as physical mutations that clearly set you apart from others."
+						],
+						"type": "entries"
+					}
+				]
+			}
+		}
+	],
+	"item": [
+		{
+			"name": "Witcher Bestiary",
+			"source": "WITCHERHLA",
+			"page": 1,
+			"tier": "major",
+			"rarity": "very rare",
+			"weight": 5,
+			"value": 10000,
+			"entries": [
+				"The Witcher's Bestiary is where a Witcher records the strengths and weaknesses of numerous monsters. Through countless hours of studying your bestiary, you have a chance to recall information you have learned of a non-humanoid creature you are facing when beginning combat.",
+				"When you roll Initiative, you can choose to make an Intelligence-based skill check as determined by the DM to recall helpful information about one creature you can see. You must succeed against a DC set by your DM (in most cases a value of 15 may be appropriate). If you do so, then you gain advantage on attack rolls made as part of the first attack action or cast a spell action you make against that creature or another of the same creature type. Alternatively, you can impose disadvantage on the first saving throw that creature or another of the same creature type makes against one of your spells or abilities.",
+				"If you do not use this benefit within 1 minute, it is lost. You can use this feature twice, and you regain all expended uses after a long rest."
+			]
+		},
+		{
+			"name": "Witcher School Medallion",
+			"source": "WITCHERHLA",
+			"page": 1,
+			"tier": "major",
+			"rarity": "very rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"weight": 1,
+			"value": 10000,
+			"entries": [
+				"This finely crafted silver necklace acts as both symbol and as a protective charm for witchers. The appearance of this medallion takes the form of the head of the school of the witcher which this was crafted for. While useful for the detection of magic and for monsters, some creatures seem aloof of its abilities.",
+				"While attuned to this necklace, you can cast {@spell detect magic} at-will.",
+				"A witcher that is attuned to this item can use an action to focus their attention to their surrounds. You can see the faint outline of any non-humanoid creature within 30 feet of you until the start of your next turn."
+			],
+			"attachedSpells": [
+				"detect magic"
+			]
+		},
+		{
+			"name": "Witcher Glyph",
+			"source": "WITCHERHLA",
+			"page": 1,
+			"rarity": "very rare",
+			"weight": 0,
+			"value": 15000,
+			"wondrous": true,
+			"entries": [
+				"Glyphs are only able to be placed on armor.",
+				"Placing a glyph in a witcher item is permanent.", 
+				"An item that can have glyphs placed in it will allow for a number of glyphs slots, as listed in its description.",
+				"No other items can use glyphs in this manner.",
+				{
+					"type": "list",
+					"items": [
+						"Glyph of Aard. Armor: Your aard cantrip push distance is increased to 10 feet against Medium or smaller creatures, or can push one Large creature 5 feet but not knocked prone.",
+						"Glyph of Axii. Armor: Your axii cantrip affects the minds of charmed creatures to defend you and will attack targets that are hostile to you, up to a CR of one quarter of your witcher level.",
+						"Glyph of Igni. Armor: Your igni cantrip's damage die turns into a d8.",
+						"Glyph of Quen. Armor: Your quen cantrip damage reduction die turns into a d6.",
+						"Glyph of Yrden. Armor: Your yrden cantrip damage die turns into a d6."
+					]
+				}
+			]
+		},
+		{
+			"name": "Witcher Lesser Runestone",
+			"source": "WITCHERHLA",
+			"page": 1,
+			"rarity": "very rare",
+			"weight": 0,
+			"value": 15000,
+			"wondrous": true,
+			"entries": [
+				"Runestones are magical enchantments that can be placed in specially crafted weapons.",
+				"Placing a runestone in a witcher item is permanent.",
+				"An item that can have runestones placed in it will allow for a number of runestone slots, as listed in its description.",
+				"No other items can use runestones in this manner.",
+				"Lesser runestones deal 1d4 damage, regular runestones deal 1d6 damage, and greater runestones deal 1d8 damage.",
+				{
+					"type": "list",
+					"items": [
+						"Runestone Chernobog. Weapon: You deal extra {@damage 1d4} force damage the first time you hit a target once per turn.",
+						"Runestone Dazhbog. Weapon: You deal extra {@damage 1d4} fire damage the first time you hit a target once per turn.",
+						"Runestone Morana. Weapon: You deal extra {@damage 1d4} poison damage the first time you hit a target once per turn.",
+						"Runestone Zoria. Weapon: You deal extra {@damage 1d4} cold damage the first time you hit a target once per turn."
+					]
+				}
+			]
+		},
+		{
+			"name": "Witcher Regular Runestone",
+			"source": "WITCHERHLA",
+			"page": 1,
+			"rarity": "very rare",
+			"weight": 0,
+			"value": 15000,
+			"wondrous": true,
+			"entries": [
+				"Runestones are magical enchantments that can be placed in specially crafted weapons.",
+				"Placing a runestone in a witcher item is permanent.",
+				"An item that can have runestones placed in it will allow for a number of runestone slots, as listed in its description.",
+				"No other items can use runestones in this manner.",
+				"Lesser runestones deal 1d4 damage, regular runestones deal 1d6 damage, and greater runestones deal 1d8 damage.",
+				{
+					"type": "list",
+					"items": [
+						"Runestone Chernobog. Weapon: You deal extra {@damage 1d6} force damage the first time you hit a target once per turn.",
+						"Runestone Dazhbog. Weapon: You deal extra {@damage 1d6} fire damage the first time you hit a target once per turn.",
+						"Runestone Morana. Weapon: You deal extra {@damage 1d6} poison damage the first time you hit a target once per turn.",
+						"Runestone Zoria. Weapon: You deal extra {@damage 1d6} cold damage the first time you hit a target once per turn."
+					]
+				}
+			]
+		},
+		{
+			"name": "Witcher Greater Runestone",
+			"source": "WITCHERHLA",
+			"page": 1,
+			"rarity": "very rare",
+			"weight": 0,
+			"value": 15000,
+			"wondrous": true,
+			"entries": [
+				"Runestones are magical enchantments that can be placed in specially crafted weapons.",
+				"Placing a runestone in a witcher item is permanent.",
+				"An item that can have runestones placed in it will allow for a number of runestone slots, as listed in its description.",
+				"No other items can use runestones in this manner.",
+				"Lesser runestones deal 1d4 damage, regular runestones deal 1d6 damage, and greater runestones deal 1d8 damage.",
+				{
+					"type": "list",
+					"items": [
+						"Runestone Chernobog. Weapon: You deal extra {@damage 1d8} force damage the first time you hit a target once per turn.",
+						"Runestone Dazhbog. Weapon: You deal extra {@damage 1d8} fire damage the first time you hit a target once per turn.",
+						"Runestone Morana. Weapon: You deal extra {@damage 1d8} poison damage the first time you hit a target once per turn.",
+						"Runestone Zoria. Weapon: You deal extra {@damage 1d8} cold damage the first time you hit a target once per turn."
+					]
+				}
+			]
+		},
+		{
+			"name": "Witcher Armor",
+			"source": "WITCHERHLA",
+			"page": 1,
+			"type": "MA",
+			"rarity": "uncommon",
+			"weight": 40,
+			"value": 7500,
+			"ac": 15,
+			"reqAttune": true,
+			"wondrous": true,
+			"stealth": false,
+			"strength": "13",
+			"entries": [
+				"This exquisite armor that was designed for the purpose of protecting a witcher from harm. It is crafted in a manner that allows the addition of a number of magical glyphs to be placed in it that it increase its strength for a worthy witcher.",
+				"Once a {@b glyph} is placed inside a set of witcher armor it gains a +1 to its AC per {@b glyph}, as well as it is considered magical."
+			]
+		},
+		{
+			"name": "Witcher Armor (1 Glyphs)",
+			"source": "WITCHERHLA",
+			"page": 1,
+			"type": "MA",
+			"rarity": "rare",
+			"weight": 30,
+			"value": 15000,
+			"ac": 15,
+			"reqAttune": true,
+			"wondrous": true,
+			"stealth": false,
+			"strength": "13",
+			"bonusAc": "+1",
+			"entries": [
+				"This exquisite armor that was designed for the purpose of protecting a witcher from harm. It is crafted in a manner that allows the addition of a number of magical glyphs to be placed in it that it increase its strength for a worthy witcher.",
+				"Once a {@b glyph} is placed inside a set of witcher armor it gains a +1 to its AC per {@b glyph}, as well as it is considered magical."
+			]
+		},
+		{
+			"name": "Witcher Armor (2 Glyphs)",
+			"source": "WITCHERHLA",
+			"page": 1,
+			"type": "MA",
+			"rarity": "very rare",
+			"weight": 30,
+			"value": 35000,
+			"ac": 15,
+			"reqAttune": true,
+			"wondrous": true,
+			"stealth": false,
+			"strength": "13",
+			"bonusAc": "+2",
+			"entries": [
+				"This exquisite armor that was designed for the purpose of protecting a witcher from harm. It is crafted in a manner that allows the addition of a number of magical glyphs to be placed in it that it increase its strength for a worthy witcher.",
+				"Once a {@b glyph} is placed inside a set of witcher armor it gains a +1 to its AC per {@b glyph}, as well as it is considered magical."
+			]
+		},
+		{
+			"name": "Witcher Armor (3 Glyphs)",
+			"source": "WITCHERHLA",
+			"page": 1,
+			"type": "MA",
+			"rarity": "legendary",
+			"weight": 30,
+			"value": 75000,
+			"ac": 15,
+			"reqAttune": true,
+			"wondrous": true,
+			"stealth": false,
+			"strength": "13",
+			"bonusAc": "+3",
+			"entries": [
+				"This exquisite armor that was designed for the purpose of protecting a witcher from harm. It is crafted in a manner that allows the addition of a number of magical glyphs to be placed in it that it increase its strength for a worthy witcher.",
+				"Once a {@b glyph} is placed inside a set of witcher armor it gains a +1 to its AC per {@b glyph}, as well as it is considered magical."
+			]
+		},
+		{
+			"name": "Witcher Silver Longsword",
+			"source": "WITCHERHLA",
+			"page": 1,
+			"type": "M",
+			"rarity": "uncommon",
+			"weight": 3,
+			"value": 7500,
+			"weaponCategory": "martial",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"reqAttune": true,
+			"entries": [
+				"This masterfully crafted longsword was designed with the intention of magical runes to be placed on it. Tempered with the proper alloys, this blade can bear a number of magical runestones that will increase its strength for a worthy witcher. This weapon is silvered for the purpose of overcoming resistance or immunity to mundane weapons.",
+				"Once a {@b runestone} is placed inside of a witcher silver longsword, it gains a +1 to attack and damage rolls per {@b runestone}, as well as itis considered magical for the purpose of overcoming resistance. Should you have more than one runestone placed in this item, you choose which addition damage is dealt (limit of one die per turn)."
+			]
+		},
+		{
+			"name": "Witcher Silver Longsword (1 Runestones)",
+			"source": "WITCHERHLA",
+			"page": 1,
+			"type": "M",
+			"rarity": "rare",
+			"value": 15000,
+			"weight": 3,
+			"weaponCategory": "martial",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"reqAttune": true,
+			"bonusWeapon": "+1",
+			"entries": [
+				"This masterfully crafted longsword was designed with the intention of magical runes to be placed on it. Tempered with the proper alloys, this blade can bear a number of magical runestones that will increase its strength for a worthy witcher. This weapon is silvered for the purpose of overcoming resistance or immunity to mundane weapons.",
+				"Once a {@b runestone} is placed inside of a witcher silver longsword, it gains a +1 to attack and damage rolls per {@b runestone}, as well as itis considered magical for the purpose of overcoming resistance. Should you have more than one runestone placed in this item, you choose which addition damage is dealt (limit of one die per turn)."
+			]
+		},
+		{
+			"name": "Witcher Silver Longsword (2 Runestones)",
+			"source": "WITCHERHLA",
+			"page": 1,
+			"type": "M",
+			"rarity": "very rare",
+			"value": 35000,
+			"weight": 3,
+			"weaponCategory": "martial",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"reqAttune": true,
+			"bonusWeapon": "+2",
+			"entries": [
+				"This masterfully crafted longsword was designed with the intention of magical runes to be placed on it. Tempered with the proper alloys, this blade can bear a number of magical runestones that will increase its strength for a worthy witcher. This weapon is silvered for the purpose of overcoming resistance or immunity to mundane weapons.",
+				"Once a {@b runestone} is placed inside of a witcher silver longsword, it gains a +1 to attack and damage rolls per {@b runestone}, as well as itis considered magical for the purpose of overcoming resistance. Should you have more than one runestone placed in this item, you choose which addition damage is dealt (limit of one die per turn)."
+			]
+		},
+		{
+			"name": "Witcher Silver Longsword (3 Runestones)",
+			"source": "WITCHERHLA",
+			"page": 1,
+			"type": "M",
+			"rarity": "legendary",
+			"value": 75000,
+			"weight": 3,
+			"weaponCategory": "martial",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"reqAttune": true,
+			"bonusWeapon": "+3",
+			"entries": [
+				"This masterfully crafted longsword was designed with the intention of magical runes to be placed on it. Tempered with the proper alloys, this blade can bear a number of magical runestones that will increase its strength for a worthy witcher. This weapon is silvered for the purpose of overcoming resistance or immunity to mundane weapons.",
+				"Once a {@b runestone} is placed inside of a witcher silver longsword, it gains a +1 to attack and damage rolls per {@b runestone}, as well as itis considered magical for the purpose of overcoming resistance. Should you have more than one runestone placed in this item, you choose which addition damage is dealt (limit of one die per turn)."
+			]
+		},
+		{
+			"name": "Witcher Longsword",
+			"source": "WITCHERHLA",
+			"page": 1,
+			"type": "M",
+			"rarity": "uncommon",
+			"value": 7500,
+			"weight": 3,
+			"weaponCategory": "martial",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"reqAttune": true,
+			"entries": [
+				"This masterfully crafted longsword was designed with the intention of magical runes to be placed on it. Tempered with the proper alloys, this blade can bear a number of magical runestones that will increase its strength for a worthy witcher.",
+				"Once a {@b runestone} is placed inside of a witcher steel longsword, it gains a +1 to attack and damage rolls per {@b runestone}, as well as it is considered magical for the urpose of overcoming resistance. Should you have more than one runestone placed in this item, you choose which — addition damage is dealt (limit of one die per turn)."
+			]
+		},
+		{
+			"name": "Witcher Longsword (1 Runestones)",
+			"source": "WITCHERHLA",
+			"page": 1,
+			"type": "M",
+			"rarity": "rare",
+			"value": 15000,
+			"weight": 3,
+			"weaponCategory": "martial",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"reqAttune": true,
+			"bonusWeapon": "+1",
+			"entries": [
+				"This masterfully crafted longsword was designed with the intention of magical runes to be placed on it. Tempered with the proper alloys, this blade can bear a number of magical runestones that will increase its strength for a worthy witcher.",
+				"Once a {@b runestone} is placed inside of a witcher steel longsword, it gains a +1 to attack and damage rolls per {@b runestone}, as well as it is considered magical for the urpose of overcoming resistance. Should you have more than one runestone placed in this item, you choose which — addition damage is dealt (limit of one die per turn)."
+			]
+		},
+		{
+			"name": "Witcher Longsword (2 Runestones)",
+			"source": "WITCHERHLA",
+			"page": 1,
+			"type": "M",
+			"rarity": "very rare",
+			"value": 35000,
+			"weight": 3,
+			"weaponCategory": "martial",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"reqAttune": true,
+			"bonusWeapon": "+2",
+			"entries": [
+				"This masterfully crafted longsword was designed with the intention of magical runes to be placed on it. Tempered with the proper alloys, this blade can bear a number of magical runestones that will increase its strength for a worthy witcher.",
+				"Once a {@b runestone} is placed inside of a witcher steel longsword, it gains a +1 to attack and damage rolls per {@b runestone}, as well as it is considered magical for the urpose of overcoming resistance. Should you have more than one runestone placed in this item, you choose which — addition damage is dealt (limit of one die per turn)."
+			]
+		},
+		{
+			"name": "Witcher Longsword (3 Runestones)",
+			"source": "WITCHERHLA",
+			"page": 1,
+			"type": "M",
+			"rarity": "legendary",
+			"value": 75000,
+			"weight": 3,
+			"weaponCategory": "martial",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"reqAttune": true,
+			"bonusWeapon": "+3",
+			"entries": [
+				"This masterfully crafted longsword was designed with the intention of magical runes to be placed on it. Tempered with the proper alloys, this blade can bear a number of magical runestones that will increase its strength for a worthy witcher.",
+				"Once a {@b runestone} is placed inside of a witcher steel longsword, it gains a +1 to attack and damage rolls per {@b runestone}, as well as it is considered magical for the urpose of overcoming resistance. Should you have more than one runestone placed in this item, you choose which — addition damage is dealt (limit of one die per turn)."
+			]
+		}
+	],
+	"spell": [
+		{
+			"name": "Aard",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 20
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Witcher",
+						"source": "WITCHERHLA"
+					}
+				]
+			},
+			"entries": [
+				"{@b Target:} Self (20-foot cone).",
+				"You send out a blast of thunderous force. Each creature in a 20-foot cone must make a Strength saving throw. A creature takes {@damage 2d6} thunder damage and is pushed back 15 feet in a line away from the caster on a failed save. On a successful save the targets only take half damage and are not moved.",
+				"{@b School of the Griffin bonus:} The damage when casting Aard increases by an additional {@dice 1d6}. Large or smaller creatures that fail the saving throw are also knocked {@condition prone}."
+			],
+			"source": "WITCHERHLA",
+			"page": 17,
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a 2nd level spell slot or higher, the damage increases by {@dice 1d6} for each slot level above 1st."
+					]
+				}
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"damageInflict": [
+				"thunder"
+			],
+			"areaTags": [
+				"N"
+			]
+		},
+		{
+			"name": "Axii",
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Witcher",
+						"source": "WITCHERHLA"
+					}
+				]
+			},
+			"entries": [
+				"{@b Target:} A creature you can see within range.",
+				"You attempt to psychically cloud the mind of a creature. The creature you target must make a Wisdom saving throw. A creature takes {@damage 2d6} psychic damage and has disadvantage on all attacks and ability checks it makes until the end of it's next turn on a failed save. On a successful save the target only takes half damage and does not suffer disadvantage. A creature immune to being {@condition charmed} automatically succeeds on its save.",
+				"{@b School of the Griffin bonus:} You now deal full psychic damage even if the creature succeeds on its saving throw. If the target fails the save, it is {@condition stunned} until the end of its next turn."
+			],
+			"source": "WITCHERHLA",
+			"page": 18,
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a 2nd level spell slot or higher, the damage increases by {@dice 1d6} for each slot level above 1st."
+					]
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Glacies",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Witcher",
+						"source": "WITCHERHLA"
+					}
+				]
+			},
+			"entries": [
+				"{@b Target:} A creature you can see within range.",
+				"You send out a highly concentrated burst of frost at a creature you can see within range. Make a ranged spell attack against the creature. On a hit the target takes {@damage 5d8} cold damage and creatures of large size or smaller must make a Strength saving throw or be encased in ice, becoming {@condition restrained} for 1 minute. Creatures encased in ice can use their action to make a Strength saving throw to attempt to break free. On a successful save, the targets only take half damage and are not {@condition restrained}.",
+				"{@b School of the Griffin bonus:} You can target 1 additional creature when casting Glacies."
+			],
+			"source": "WITCHERHLA",
+			"page": 18,
+			"components": {
+				"s": true
+			},
+			"conditionInflict": [
+				"restrained"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a 4th level spell slot or higher, the damage increases by {@dice 1d8} and the number of creatures you can target increases by 1 for each slot level above 3rd."
+					]
+				}
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"areaTags": [
+				"ST",
+				"MT"
+			]
+		},
+		{
+			"name": "Heliotrope",
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "when you take non-psychic damage from an enemy you can see"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Witcher",
+						"source": "WITCHERHLA"
+					}
+				]
+			},
+			"entries": [
+				"{@b Target:} Self.",
+				"You impose a magical shield between you and incoming damage, reducing the damage from one attack by {@dice 3d8}.",
+				"{@b School of the Griffin bonus:} You can add your Intelligence modifier to the damage reduction rolled."
+			],
+			"source": "WITCHERHLA",
+			"page": 18,
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a 3rd level spell slot or higher, the damage reduction increases by {@dice 1d8} for each slot level above 2nd. "
+					]
+				}
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Igni",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Witcher",
+						"source": "WITCHERHLA"
+					}
+				]
+			},
+			"entries": [
+				"{@b Target:} Self (15-foot cone).",
+				"You release a burst of flame from your hand. Each creature in a 15-foot cone must make a Dexterity saving throw. A creature takes {@damage 2d8} fire damage and is pushed back 5 feet in a line away from the caster on a failed save, and on a successful save the targets only take half damage and are not pushed. ",
+				"{@b School of the Griffin bonus:} Targets take an additional {@damage 1d8} fire damage."
+			],
+			"source": "WITCHERHLA",
+			"page": 18,
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a 2nd level spell slot or higher, the damage increases by {@dice 1d8} for each slot level above 1st. "
+					]
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"N"
+			],
+			"spellAttack": [
+				"R"
+			]
+		},
+		{
+			"name": "Quen",
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Witcher",
+						"source": "WITCHERHLA"
+					}
+				]
+			},
+			"entries": [
+				"{@b Target:} Self.",
+				"You cover yourself in a magical layer of protection. You gain a +2 bonus to AC and Saving Throws for 1 minute. ",
+				"{@i This does not stack with Somne spells.} ",
+				"{@b School of the Griffin bonus:} While the Quen shield is active, you reduce any instance of non-psychic damage by 2."
+			],
+			"source": "WITCHERHLA",
+			"page": 18,
+			"components": {
+				"s": true
+			},
+			"spellAttack": [
+				"M"
+			],
+			"miscTags": [
+				"MAC",
+				"UBA"
+			]
+		},
+		{
+			"name": "Somne",
+			"level": 5,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Witcher",
+						"source": "WITCHERHLA"
+					}
+				]
+			},
+			"entries": [
+				"{@b Target:} A willing creature you can see within range.",
+				"You bolster the energy of yourself and a target within range. Until the spell ends, you and the target of the spell have your base movement speeds doubled, gain a +3 bonus to AC, have advantage on Dexterity saving throws, and gain one additional action. That action can be used only to take the {@action Attack} (one weapon attack only), {@action Dash}, {@action Disengage}, or {@action Hide} action.",
+				"{@i This spell does not stack with castings of the Quen or Somne spells}",
+				"{@b School of the Griffin bonus:} You have advantage on {@status concentration} checks to maintain the spell."
+			],
+			"source": "WITCHERHLA",
+			"page": 19,
+			"components": {
+				"s": true
+			},
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"MAC"
+			]
+		},
+		{
+			"name": "Supirre",
+			"level": 2,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Witcher",
+						"source": "WITCHERHLA"
+					}
+				]
+			},
+			"entries": [
+				"{@b Target:} A creature you can see within range.",
+				"You mark a target with your heightened senses, focusing on that target to the exclusion of all else. Until the spell ends, you have a +2 bonus to attack rolls against this target, and suffer a -2 penalty to AC when attacked by unmarked enemies. Attacks made by you against a marked target also deal an extra {@damage 1d8} damage, and if the target flees, you have advantage on any Wisdom (Perception) or Wisdom (Survival) check you make to find it. If the target drops to 0 hit points before this spell ends, you can use a bonus action on a subsequent turn of yours to mark a new creature. ",
+				"{@b School of the Griffin bonus:} When casting Supirre, you do not suffer the penalty to AC for the duration of the spell."
+			],
+			"source": "WITCHERHLA",
+			"page": 19,
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a 3rd level spell slot or higher, you can mark one additional target for each spell slot higher than 2nd."
+					]
+				}
+			],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"MAC",
+				"UBA"
+			]
+		},
+		{
+			"name": "Yrden",
+			"level": 4,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Witcher",
+						"source": "WITCHERHLA"
+					}
+				]
+			},
+			"entries": [
+				"{@b Target:} A point you can see within range.",
+				"You place a 15-foot-radius magical trap on the ground centered on a point within range you can see. Within the affected area each instance of damage dealt is increased by {@dice 1d4} to all creatures, and hostile creatures must spend 2 feet of movement for each 1 foot they move. Within the area of effect, no being may teleport or planar travel, and incorporeal beings are forced into a corporeal form. Additionally, spells cannot be cast within or pass through this area if they are cast using a spell slot level equal to or less than the spell slot level used to cast this spell.",
+				"{@i If you attempt to place a second trap while the first is still active, the first trap will disappear and its effects will end.}",
+				"{@b School of the Griffin bonus:} Within the affected area hostile creatures must spend 3 feet of movement for each 1 foot they move."
+			],
+			"source": "WITCHERHLA",
+			"page": 19,
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a 5th level spell slot or higher, the additional damage to creatures within the trap is increased by {@dice 1d4} for each slot level higher than 4th. "
+					]
+				}
+			],
+			"spellAttack": [
+				"R"
+			]
+		},
+		{
+			"name": "Chains",
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Witcher",
+							"source": "WITCHERHLA"
+						},
+						"subclass": {
+							"name": "School of the Griffin",
+							"shortName": "School of the Griffin",
+							"source": "WITCHERHLA",
+							"subSubclass": "Yrden"
+						}
+					}
+				]
+			},
+			"entries": [
+				"{@b Target:} Two creatures you can see within range.",
+				"Building from your knowledge of Yrden, you cause ethereal chains to burst from the ground to bind a creature of Large size or smaller within range in place. The target creature must make a Strength saving throw to prevent being {@condition restrained}. If the creature fails they are {@condition restrained} and take {@damage 2d6} lightning damage at the start of their turn until they are able to break free or the spell ends. They can use their action to repeat their Strength saving throw each turn to attempt to break free of the chains. If they succeed they are no longer {@condition restrained} and take no further damage. "
+			],
+			"source": "WITCHERHLA",
+			"page": 19,
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a 3rd level spell slot or higher, you can target one additional creature for each slot level above 1st."
+					]
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"areaTags": [
+				"MT"
+			]
+		},
+		{
+			"name": "Firestream",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Witcher",
+							"source": "WITCHERHLA"
+						},
+						"subclass": {
+							"name": "School of the Griffin",
+							"shortName": "School of the Griffin",
+							"source": "WITCHERHLA",
+							"subSubclass": "Igni"
+						}
+					}
+				]
+			},
+			"entries": [
+				"{@b Target:} A creature you can see within range.",
+				"Building on your knowledge of Igni, you send out a stream of flames towards a creature within range. Make a ranged spell attack against the creature. On a hit the target takes {@damage 3d6} fire damage, and on each of your turns for the duration, if the creature is within 60 feet of you, you can use your bonus action to continue channeling the flames at the target, making another ranged spell attack and dealing {@damage 1d4} fire damage on a hit. ",
+				"This spell ends if the target gains total cover from you, or if you do not use your bonus action to continue to channel the flames. You must maintain one hand dedicated to the channeling of the flames for the duration of the spell."
+			],
+			"source": "WITCHERHLA",
+			"page": 19,
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a 2nd level spell slot or higher, the initial damage increases by {@dice 1d6} for each slot level above 1st, and the subsequent damage from channeling increases by {@dice 1d4}."
+					]
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Guardian",
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "when an ally within 30 feet of you takes damage from a non-psychic attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Witcher",
+							"source": "WITCHERHLA"
+						},
+						"subclass": {
+							"name": "School of the Griffin",
+							"shortName": "School of the Griffin",
+							"source": "WITCHERHLA",
+							"subSubclass": "Heliotrope"
+						}
+					}
+				]
+			},
+			"entries": [
+				"{@b Target:} A willing creature you can see within range.",
+				"Building on your knowledge of Heliotrope, you use your reaction to magically shield that ally from harm, reducing damage from one attack by {@dice 4d6} plus your Intelligence modifier."
+			],
+			"source": "WITCHERHLA",
+			"page": 20,
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a 4th level spell slot or higher, the damage reduction increases by {@dice 1d6} for each slot level above 3rd."
+					]
+				}
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Retribution",
+			"level": 5,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Witcher",
+							"source": "WITCHERHLA"
+						},
+						"subclass": {
+							"name": "School of the Griffin",
+							"shortName": "School of the Griffin",
+							"source": "WITCHERHLA",
+							"subSubclass": "Quen"
+						}
+					}
+				]
+			},
+			"entries": [
+				"{@b Target:} Self.",
+				"Building on your knowledge of Quen, you cast a retaliatory ward around yourself, dealing damage to attacking enemies for 10 minutes. Whenever a creature within 5 feet of you hits you with a melee attack, the ward lashes out and the attacker suffers force damage equal to {@dice 5d4} + your Intelligence modifier."
+			],
+			"source": "WITCHERHLA",
+			"page": 20,
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a 6th level spell slot or higher, the damage dealt by the ward increases by {@dice 1d4} for each slot level above 5th."
+					]
+				}
+			],
+			"spellAttack": [
+				"R"
+			]
+		},
+		{
+			"name": "Rimefrost",
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 20
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Witcher",
+							"source": "WITCHERHLA"
+						},
+						"subclass": {
+							"name": "School of the Griffin",
+							"shortName": "School of the Griffin",
+							"source": "WITCHERHLA",
+							"subSubclass": "Glacies"
+						}
+					}
+				]
+			},
+			"entries": [
+				"{@b Target:} Self (20-foot cone).",
+				"Building on your knowledge of Glacies, you release a burst of frost from your hand. Each creature in a 20-foot cone must make a Constitution saving throw. A creature takes {@damage 8d6} cold damage and has its movement speed reduced by 10 until the start of their next turn on a failed save or half as much damage and no movement speed reduction on a successful one."
+			],
+			"source": "WITCHERHLA",
+			"page": 20,
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a 5th level spell slot or higher, the initial damage increases by {@dice 1d6} for each slot level above 4th."
+					]
+				}
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"N"
+			],
+			"miscTags": [
+				"DFT"
+			]
+		},
+		{
+			"name": "Sweep",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Witcher",
+							"source": "WITCHERHLA"
+						},
+						"subclass": {
+							"name": "School of the Griffin",
+							"shortName": "School of the Griffin",
+							"source": "WITCHERHLA",
+							"subSubclass": "Aard"
+						}
+					}
+				]
+			},
+			"entries": [
+				"{@b Target:} Self (10-foot radius).",
+				"Building on your knowledge of Aard, you send out a blast of thunderous force in an area around you. Each creature in a 10-foot radius must make a Strength saving throw. A creature takes {@damage 2d6} thunder damage, is knocked {@condition prone}, and is pushed back 10 feet in a line away from the caster on a failed save. On a successful save the targets only take half damage and are not moved or knocked {@condition prone}. "
+			],
+			"source": "WITCHERHLA",
+			"page": 20,
+			"components": {
+				"s": true
+			},
+			"conditionInflict": [
+				"prone"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a 2nd level spell slot or higher, the damage increases by {@dice 1d6} for each slot level above 1st."
+					]
+				}
+			],
+			"damageInflict": [
+				"thunder"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"areaTags": [
+				"MT"
 			]
 		}
 	]
