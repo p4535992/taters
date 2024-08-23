@@ -41,6 +41,22 @@
 				},
 				"Strahd can't repeat an effect until they have all been used, and he can't use the same effect two rounds in a row."
 			]
+		},
+		{
+			"name": "Darklords&DomainsVol1LairActionsHazlik",
+			"source": "Darklords&DomainsVol1",
+			"regionalEffects": [
+				"The region around Veneficus is altered by both Hazlik's magic and the results of his arcane experiments, creating the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"Vines and roots wrap themselves around the limbs of creatures that pass too close to the domain.", 
+						"The area within five miles of Veneficus takes twice as long to traverse and is considered difficult terrain. Creatures that take a short or long rest within this area must succeed on a DC 13 Dexterity saving throw or become entangled in vines, being restrained. A creature can escape with a successful DC13 Athletics roll.",
+						"Thorny bushes and hidden brambles grow wild within one mile of Veneficus. For every 10 minutes spent travelling off a path or road, creatures much succeed on a DC 15 Dexterity saving throw or take 7 (2d6) piercing damage"
+					]
+				},
+				"If the Hazlik dies, these effects fade over the course of {@dice ld10} days."
+			]
 		}
 	],
 	"spell": [
@@ -555,6 +571,51 @@
 	],
 	"item": [
 		{
+			"name": "Gauntlets of Dexterity",
+			"source": "Darklords&DomainsVol1",
+			"page": 1,
+			"tier": "major",
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"wondrous": true,
+			"ability": {
+				"static": {
+					"dex": 19
+				}
+			},
+			"entries": [
+				"Your Dexterity score is 19 while you wear these gauntlets. They have no effect on you if your Dexterity is already 19 or higher without them."
+			],
+			"optionalfeatures": [
+				"replicate magic item|tce"
+			]
+		},
+		{
+			"name": "Wand of Fireballs (10 charges)",
+			"source": "Darklords&DomainsVol1",
+			"page": 1,
+			"type": "WD",
+			"tier": "major",
+			"rarity": "rare",
+			"reqAttune": "by a spellcaster",
+			"reqAttuneTags": [
+				{
+					"spellcasting": true
+				}
+			],
+			"weight": 1,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6 + 1}",
+			"charges": 10,
+			"entries": [
+				"This wand has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the {@spell fireball} spell (save DC 15) from it. For 1 charge, you cast the 3rd-level version of the spell. You can increase the spell slot level by one for each additional charge you expend.",
+				"The wand regains {@dice 1d6 + 1} expended charges daily at dawn. If you expend the wand's last charge, roll a {@dice d20}. On a 1, the wand crumbles into ashes and is destroyed."
+			],
+			"attachedSpells": [
+				"fireball"
+			]
+		},
+		{
 			"name": "Floating Dagger +2",
 			"source": "Darklords&DomainsVol1",
 			"page": 1,
@@ -845,7 +906,9 @@
 				"people of Shadow Rift/Arak",
 				"people of Arkandale",
 				"people of Barovia",
-				"people of Borca/Dorvinia"
+				"people of Borca/Dorvinia",
+				"people of Gundarak",
+				"people of Hazlan"
 			],
 			"script": "Elvish"
 		},
@@ -900,7 +963,8 @@
 			"type": "standard",
 			"typicalSpeakers": [
 				"people of Barovia",
-				"people of Borca/Dorvinia"
+				"people of Borca/Dorvinia",
+				"people of Gundarak"
 			],
 			"script": "Elvish"
 		},
@@ -923,6 +987,16 @@
 			"type": "standard",
 			"typicalSpeakers": [
 				"people of Daglan"
+			],
+			"script": "Elvish"
+		},
+		{
+			"name": "Rashemi",
+			"source": "Darklords&DomainsVol1",
+			"page": 1,
+			"type": "standard",
+			"typicalSpeakers": [
+				"people of Hazlan"
 			],
 			"script": "Elvish"
 		},
@@ -958,6 +1032,16 @@
 			"script": "Elvish"
 		},
 		{
+			"name": "Thayan",
+			"source": "Darklords&DomainsVol1",
+			"page": 1,
+			"type": "standard",
+			"typicalSpeakers": [
+				"people of Hazlan"
+			],
+			"script": "Elvish"
+		},
+		{
 			"name": "Vaasi",
 			"source": "Darklords&DomainsVol1",
 			"page": 1,
@@ -965,7 +1049,8 @@
 			"typicalSpeakers": [
 				"people of Shadow Rift/Arak",
 				"people of Shadow Arkandale",
-				"people of Shadow Barovia"
+				"people of Shadow Barovia",
+				"people of Hazlan"
 			],
 			"script": "Elvish"
 		}
@@ -3741,7 +3826,7 @@
 									"entries": [
 										"The main \"monster\" of Forlorn is the goblyns. They were created by the Solleyder (or bogeyman) when the Year of Woe happened. The Year of Woe was the year where Forlorn appeared outside the borders of Barovia, as the first new domain after the formation of Barovia. These monsters resemble normal goblins, but they have no need to eat or sleep and have seemingly no interest in procreation. They live and serve only at the whim of Tristen ApBlanc (the Solleyder of Forfarian myth).",
 										"Forlorn is also host to a number of ghosts and spirits, and there is a persistent rumor of a stone henge haunted by one of these spirits, the Maiden of the Menhir. The Forfarian druids have so far been unable to find the grove that holds the henge.",
-										"More important is a single notorious inhabitant of the Lake of Red Tears, Aggie. Agatha (or “Aggie”) is a sea serpent that lairs at the bottom of the blood-red lake. It is no normal sea serpent, but an undead monstrosity that seems to obey no master, striking when and where she wants. She is also regrettably intelligent, often lying in ambush near the shores of the lake, waiting for the living to come too close before striking. Legends claim that hoards of treasure lie at the bottom of her lake, but no one has been lucky enough to survive trying to plumb the depths of her home."
+										"More important is a single notorious inhabitant of the Lake of Red Tears, Aggie. Agatha (or \"Aggie\") is a sea serpent that lairs at the bottom of the blood-red lake. It is no normal sea serpent, but an undead monstrosity that seems to obey no master, striking when and where she wants. She is also regrettably intelligent, often lying in ambush near the shores of the lake, waiting for the living to come too close before striking. Legends claim that hoards of treasure lie at the bottom of her lake, but no one has been lucky enough to survive trying to plumb the depths of her home."
 									]
 								},
 								{
@@ -3779,7 +3864,7 @@
 											"page": 78,
 											"entries": [
 												"Castle Forfarmax is several hundred years old but has been uninhabited for at least four centuries due to the long-ago tragedy that happened here. Two twins were feuding for the right to the throne (the Seat of Farn) and one, Duncan, invited his brother Donal to a feast. During the feast, Donal and his retinue were slain by the traitor — and not only that, but the men he murdered were never given a proper burial, instead simply buried underneath the stones of the great hall.  A year later, on the anniversary of his death, Donal took his revenge. Duncan was celebrating with his new wife in the hall, calling for a toast to his own kingly glory, when the very stones rose up from the ground, and smashed everyone inside, as the doors barred themselves. Only when the stones had completed their bloody work were the doors able to open once more.",
-												"Foul stories were told of that night. Those who came to check on the castle found only a gruesome bloody mess, and the body of Duncan and his bride laying on the stones as if they were ready to be interred. The stones themselves had returned to their normal place. Now the castle is haunted — the murderous stones come to life each night and “kill” the ghost of Duncan. Duncan has been imprisoned in the murder room of his own design, with no one to keep him company, for over four centuries. The horror has driven him quite mad."
+												"Foul stories were told of that night. Those who came to check on the castle found only a gruesome bloody mess, and the body of Duncan and his bride laying on the stones as if they were ready to be interred. The stones themselves had returned to their normal place. Now the castle is haunted — the murderous stones come to life each night and \"kill\" the ghost of Duncan. Duncan has been imprisoned in the murder room of his own design, with no one to keep him company, for over four centuries. The horror has driven him quite mad."
 											]
 										},
 										{
@@ -3921,6 +4006,588 @@
 													"tag": "creature",
 													"source": "Darklords&DomainsVol1",
 													"name": "Tristen ApBlanc"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Gundarak",
+							"page": 84,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/e2HaWJt.jpg"
+									}
+								},
+								{
+									"type": "quote",
+									"entries": [
+										"The blood is the life!"
+									],
+									"by": "Bram Stoker, Dracula"
+								},
+								"Gundarak and the lord of the land, Duke Gundar are mostly defined by their relationship with one of its neighbors: Barovia. Like that other land, the populace here live in fear of the vampire that rules them, but there are some very significant differences. Strahd rules with a distant touch, one that is firm, but often unseen. Strahd is often seen by the Barovians as harsh but fair, and while some suspect it, very few know that he is a vampire. Gundar is everything that Strahd isn't. Gundar rules overtly with a tyrannical fist that taxes his peasants mercilessly on everything from firewood (the forests are owned by the state, despite being so plentiful) to the birth of a girl instead of a boy. (Gundar believes that women contribute less to the total labor output of Gundarak than men, so families who have girls are punished with a heavy tax. \"Generously\" he gives them 15 years to pay it off, but if it is not paid off by then, he takes the girl away on her 15th birthday. The woman is never seen again.).",
+								"Life under the beastly Gundar isn't easy, and only Falkovnians are worse off, as Gundar is a sadistic ruler who balks at nothing to get his way. But his tyrannical ways keep backfiring and his focus on his semi-constant war with Strahd (more on his side as he continually sends Gundarakite soldiers to harass the Barovians, while Strahd quickly disposes of them) has left him exposed and failing to notice the dangers that have taken root at the very heart of his domain. His closest advisor, a vampire named Dr. Dominiani, was working on a way to introduce the Dr. as the darklord of Kartakass. What he didn't know, or even suspect, was that Dominiani was a double agent. In fact, the Kartakass agent that Dominiani was working with was Ariel Lukas, daughter of Harkon Lukas, and they'd intended to double-cross them both. In the end, Dominiani was successful, though Ariel wasn't. Gundar disappeared, and for 4 years Dominiani ruled Gundarak, though he had little interest in the country itself. When the Grand Conjunction happened, the domain disappeared and the lands were absorbed by Barovia and Invidia who invaded the vacant territory.",
+								"It cannot be overstated how much Duke Gundar hates Strahd. Like dark mirrors of each other, Strahd is smart and calculating, where Gundar is a beast. Strahd uses subtlety to accomplish his goals, where Gundar uses force. Strahd takes the long view, and Gundar the short view. They do have one thing in common: They despise each other. Strahd views Gundar as an idiot, while Gundar views Strahd as a weakling. Gundar is, unknowingly, far over his head and while he could probably take Strahd in a one-on-one fight, he is so outmatched strategically that he might as well give up. Strahd already has contingencies in place to deal with upstarts and hasn't had to update his plans for how to deal with the Duke in over a century.",
+								"This constant war has also led Duke Gundar to outlaw the Vistani within the borders of Gundarak, as he suspects them of being spies for Count Strahd, even if he cannot prove it. Any Vistani found within the border of Gundarak is put to death without question.",
+								"Adventures in Gundarak should focus on this dichotomy. The lords hate each other, but the people look at it differently. Barovians are an insular lot, but they feel a kinship with the Gundarakites, viewing them like their poor cousins, the ones who got a worse deal. Gundarakites, meanwhile, are jealous of the lighter hand of the lord of Barovia, and dream of the day where at least their sons and daughters can be relatively safe. Adventurers therefore could enter Gundarak in an attempt to overthrow Duke Gundar or as part of the plot that Dr. Dominiani and Ariel Lukas are brewing. Perhaps they're trying to rescue one of the young maidens that are sent regularly to the Duke's residence at Castle Hunadora. Or perhaps (even likely) they've been manipulated by Strahd into making a move that'll distract Duke Gundar.",
+								{
+									"type": "table",
+									"caption": "Gundarak",
+									"colLabels": [
+										"Detail",
+										"Description"
+									],
+									"colStyles": [
+										"col-3 text-center",
+										"col-9"
+									],
+									"rows": [
+										[
+											"Culture Level",
+											"Medieval"
+										],
+										[
+											"Climate & Terrain",
+											"Temperate, forest, hill, and  mountains"
+										],
+										[
+											"Year Formed",
+											"593 BC"
+										],
+										[
+											"Population",
+											"30.000"
+										],
+										[
+											"Races (%)",
+											"Humans 99%, Other 1%"
+										],
+										[
+											"Languages",
+											"{@language Balok|Darklords&DomainsVol1}, {@language Common|PHB}, {@language Luktar|Darklords&DomainsVol1}"
+										],
+										[
+											"Religions",
+											"Cult of the Morninglord, Erlin"
+										],
+										[
+											"Government",
+											"Despotism"
+										],
+										[
+											"Ruler(s)",
+											"Duke Nharov Gundar (succeeded in 736 BC by Daclaud Heinfroth (also  known as Dr. Dominiani)"
+										],
+										[
+											"Darklord(s)",
+											"Duke Nharov Gundar (succeeded in 736 BC)"
+										],
+										[
+											"Nationality",
+											"Gundarakite"
+										],
+										[
+											"Analog",
+											"Transylvania"
+										],
+										[
+											"Neighboring domain(s)",
+											"Arkandale, Barovia, Borca, Forlorn, Invidia, Kartakass, Sithicus"
+										]
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/b0AtnlL.jpg"
+									}
+								},
+								{
+									"type": "entries",
+									"name": "Local Fauna",
+									"page": 86,
+									"entries": [
+										"Wolves are the dominant predator in Gundarak, even more so than the danger that they pose elsewhere within the Core, with bats and rats close behind. The forests are somewhat empty of non-predatory life as if herd animals and herbivores avoid the place. Only rarely can deer and other large animals be found in the forest, though farms have plenty of pigs. A few of the very wealthy might own cows, but usually, the populace sticks to pigs and sheep as the taxes on them are far less arduous. Horses are unheard of, outside of those ridden by Duke Gundar's soldiers. In the mountains to the west, the main problem is spiders, especially the ones of gigantic size, along with the bats that roost in the area."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Local Flora",
+									"page": 86,
+									"entries": [
+										"The forests of Gundar, mainly located in the east, are dominated by conifers, though beech and oak manage to hang on among the various pine trees. All of the trees within Gundarak are twisted into almost unrecognizable shapes compared to their brethren elsewhere. The trees here have visages that seem to leer at travelers, while many openings resemble mouths with dagger-like teeth."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Native Horrors",
+									"page": 86,
+									"entries": [
+										"Perhaps unsurprisingly given that Duke Gundar is a vampire, Gundarak has an undead problem. The ones that roam the countryside are normally dealt with by the local constabulary as they tend to be ghouls and zombies. Almost all the undead within Gundarak are unintelligent, no matter how powerful they might be. The exception to this is Duke Gundar's vampiric minions. He's sired a number of vampires and vampire spawn, but they normally stick close to the two cities of Gundarak. Underneath Gundarak lurks another danger, as away from the prying eyes of man, thousands of kobolds have set up their own kingdoms. Whether these are under the control of the Duke or led by someone else is unknown, but whispers speak of the Lizard King as a half-dragon kobold that leads the pests."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Terrain Type",
+									"page": 86,
+									"entries": [
+										"Gundarak is cold most of the year, more so than it should be, and is almost constantly under a heavy cloud cover. Mountains dominate the western portions of the domain, while ancient forests cover the east. In between the two are the hills that seem to make up the majority of the domain and where the populace lives, having set up their cities so that they follow the rivers and streams, and are sheltered from the worst effects of wind and weather."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Important Landmarks",
+									"page": 86,
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Castle Hunadora",
+											"page": 86,
+											"entries": [
+												"Lying 10 miles east of Zeidenburg, Castle Hunadora is an old, but strong fortification, clearly created for defense. It is surrounded by an apple orchard, where all the apples are black when in bloom. In the past, whenever rebellions have struck and the Gundarakites have risen up against the Duke, they've found their leaders in the following days hanging from the tree branches of the orchard. As a result, no one ever eats the apples from here. (The orchard was burned down by the locals following Dr. Dominiani's take-over).",
+												"The building itself gives off an almost palpable aura of evil, and people can be heard screaming in pain during the night, even over the tall, almost impregnable, walls. Those who have been inside the building speak of \"drinking halls\" where Gundar's minions have their victims suspended upside down like swine to the slaughter — rendering them conscious for as long as possible, while they're slowly bled to death."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "The Twisting Tower",
+											"page": 86,
+											"entries": [
+												"Lying on the outskirts of Teufeldorf, the Twisting Tower is said to hold a cabal of black magic users who are held in thrall by Duke Gundar. No one knows the truth of the strange tower, as only one door leads into it and that door is never open. Several windows are seen up in the tower, the lowest of which are at least 50 feet up. And from those windows, on dark nights, can be seen green and red flashes, and minor explosions — perhaps the result of evil experiments."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Towns and villages",
+									"page": 87,
+									"entries": [ 
+										{
+											"type": "entries",
+											"name": "Teufeldorf",
+											"page": 87,
+											"entries": [
+												"Teufeldorf is home to 4,000 souls and is the center of one thing in Gundarak: Crime. The city, despite the work of the local mayor, has had grave problems trying to keep various factions and crime lords at bay. Of course, the mayor is on the take, getting numerous bribes and becoming rich in the process. As for the Duke, he doesn't care, as it merely makes it easier for him to contain such rebellions, and as long as he gets his taxes from those bribes."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Zeidenburg",
+											"page": 87,
+											"entries": [
+												"Home to some 3,000 people, Zeidenburg is busily growing and is a center of trade due to its location. Zeidenburg is heavily defended as it has been built up around the Ashen Stronghold. The Stronghold was built following the very first rebellion against Duke Gundar's reign by local nobles, and as a result, he had the fortress built.",
+												"Zeidenburg is known for being a hotbed of sedition, and whenever a new rebellion starts, it always seems to start there, though the Ashen Stronghold has never fallen to rebel forces, and has managed to hold out for months. The main reason for not simply sacking the city, which the Duke has considered a few times, is because it is located on the best farmland in Gundarak. Nowhere else do crops grow as well as they do here.",
+												"The Cult of Erlin (a local death god — one that the locals see as more of a trickster, as opposed to a bad omen) also has its headquarters here, in a cemetery just outside town. They hold their services in the open air and have no temples apart from the cemeteries. Any ground where people are buried is holy to them, and the local populace often seeks them out for advice.",
+												"Finally, Zeidenburg is home to an infamous inhabitant that the locals do not know about. In an unassuming mansion on the edge of town lives Lyssa von Zarovich. She is a distant cousin to Count Strahd von Zarovich, and for decades she's been plotting and planning ways to incite rebellion against her cousin and take Barovia from him. So far she has proven unsuccessful, but she is hoping to sway things her way and has started looking into ways to fund a new rebellion against Duke Gundar. Perhaps when she's taken Gundarak, she can take Barovia."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Fun Fact",
+									"page": 87,
+									"entries": [
+										"After the destruction of Gundarak following the Grand Conjunction, Duke Gundar was somehow restored to life, but in a lesser form. No longer a Darklord, he now wanders the Core in an effort to restore his former power. Whether he intends to restore Gundarak as it was, or create a new one, is unknown."
+									]
+								},						
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/jj0jNzQ.jpg"
+									}
+								},
+								{
+									"type": "entries",
+									"name": "Duke Nharov Gundar",
+									"page": 88,
+									"entries": [
+										{
+											"type": "quote",
+											"entries": [
+												"It's a shame really.",
+												"He could have been so much more than he was, but he never let himself move beyond the tragedy of his youth."
+											],
+											"by": "Rudolph van Richten"
+										},
+										"Duke Gundar makes no attempt to hide his undead nature, nor the hallmarks that mark him as a vampire. His nails are hooked claws, his teeth horrific fangs, and his eyes are bloodshot and wide. Although he could pass for a human male at a distance, up close he seems to have more in common with the wolf than any other creature.",
+										"Gundar is large and powerfully built. He is possibly the oldest vampire in the Demiplane of Dread, but while Strahd has spent the centuries mastering the necromantic and martial arts, Gundar has made no attempts to increase his power. A bully that enjoys picking on the helpless, Gundar is too lazy to try anything new.",
+										"The duke dresses well in tailored clothes and carries a jeweled walking stick.Though the stick is made of the hardest wood that Gundar can find,  he still regularly breaks it on the skulls of those who displease him.",
+										{
+											"type": "entries",
+											"name": "Background",
+											"page": 88,
+											"entries": [
+												"In the kingdom of Chesrush, the Gundar family was never quite enough. For generations they were pig farmers. Though they were well off, living on a large farm, they still lived in the mud and sold food to their betters. Then came Lord Callar's rebellion. Milak Gundar joined the forces of King Brun to save the kingdom, leaving his young son Nharov and wife behind. When Milak returned two years later, he was missing a hand, and came riding a fine horse,bearing the title of lord. Milak had saved King Brun from an ambitious spearman, at the cost of his hand. The grateful king had given Milak the title of lord and Callar's estates as a thank you. Milak had serfs that would work his farm for him now, as well as hundreds of acres of wineries and farms.",
+												"Milak and his family were welcomed by the king when they moved into the Callar estates in the capital of Navar. Milak was hailed as  a war hero and Nharov thought his life would be perfection. He was very wrong. Callar and his family came from an old house and were well connected and liked by their peers. In giving Callar's land and estates to Milak, the king sent a simple message \"If I can do it to them, I can do it to you.\" Callar and his sons were slain during the rebellion, but his wife and daughter were taken in by relatives when the Gundars evicted them from their home.",
+												"Once the king's attention turned elsewhere the nobles that had fawned over Milak and his family began to openly mock the Gundars for their simple ways and ignorance. In less than a year Milak had lost the fortune he gained during the war through drinking, gambling and whoring. Nharov's mother left and never returned.",
+												"Milak barely noticed his wife's absence. He was too busy begging other nobles for money that slipped through his fingers as soon as he got it. Nharov was left alone, surrounded by nobles that despised him for being born, and enemies that would rather see him dead.",
+												"A few years later, Milak succumbed to a death from alcohol and debauchery. Nharov was left alone. The servants took what they could carry from the estate and left. Duke Nharov Gundar was forced to beg in the streets to find food. Loudly mocked by his peers, whenever he fought back, he always lost to his enemy's great numbers.",
+												"By the time Nharov reached adulthood, he had secured several sources of income, using his vast estates to smuggle in and hide all manner of vice. His vast palace in Navar held nearly a dozen brothels, opiate pits, and other more specialized dens of debauchery. Nharov was even able to bribe another pauper lord for his daughter's hand in marriage. Despite his wealth, Nharov was more of a social and political outcast than ever. Nharov sneered as he was mocked. Some of the nobles mocking him were his best customers. Nharov was their better, and he knew it, but he had no way to prove it. All that changed one night when a stranger arrived at Nharov's doorstep. The stranger offered Nharov a means of revenge. He could slay all the nobles that mocked him, and their numbers would count for nothing. All he wanted in return was Nharov's wife. Nharov agreed immediately, Even as the stranger revealed his long fangs, Nharov had no regrets. When Nharov awoke, he could feel his great strength. He waited until nightfall and then began to move through Navar. Finding nobles, whether by themselves or in small groups, regardless, he slaughtered them all. As he killed the mists arose.",
+												"Nharov found himself in a strange land. Surrounded by people that called him Duke Gundar. He accepted their fealty without comment and set to building his hall.",
+												"Gundar ruled like a petty tyrant. He worked his peasants and taxed everything. He even levied a tax on peasants that had a female baby, as Gundar didn't think they would work as hard. Gundar turned anyone that he thought might be useful into a vampire and didn't give a damn who knew.",
+												"It was this hubris that was his downfall. Dr Daclaud Heinfroth had become a unique type of vampire after transfusing cerebral fluid from one of Gundar's many vampire wives into his own skull. Because the wife had been Gundar's thrall, Heinfroth became so as well. Gundar lauded his mastery over the doctor, berating and beating him mercilessly.",
+												"Eventually Heinfroth had enough. He played on Gundar's ego and convinced the duke that Heinfroth could rule over neighboring Kartakass, should Harkon Lukas be slain. Gundar was desperate to have a thrall in charge of a second domain and agreed. At a crucial moment, Heinfroth abandoned the duke, and Gundar was slain, with a stake piercing his chest. In an instant the flesh shrivelled from Gundar's skeleton and he fell to the ground lifeless."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Current Sketch",
+											"page": 88,
+											"entries": [
+												"The remains of Duke Gundar are part of Professor Arcanus' traveling curiosities show. The Professor doesn't realize that one of the thousands of lies he tells is actually the truth. The stake is still lodged in Gundar's ribcage, and if it were removed the duke would be instantly regenerated. Gundarak is long gone, so Gundar would likely be free to move around Ravenloft, less than a darklord, but not trapped in his domain."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Darklord's Tactics",
+											"page": 88,
+											"entries": [
+												"Duke Gundar is a straightforward and unimaginative combatant. He is strong enough to tear a fully armored man in half. Gundar eschews weapons and armor. He claims he doesn't need them but in reality it's just too much of a hassle for him to worry about."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Borders",
+											"page": 88,
+											"entries": [
+												"When the borders of Gundarak are sealed the mists rise up, forming an eerie white wall. Any creature that enters the mists is hopelessly lost for 1d6 hours. When the mists clear, the creature is back at the border of Gundarak."
+											]
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://i.imgur.com/GJlh3cD.jpg"
+											}
+										},
+										{
+											"name": "Duke Nharov Gundar",
+											"type": "entries",
+											"page": 88,
+											"entries": [
+												{
+													"type": "statblock",
+													"tag": "creature",
+													"source": "Darklords&DomainsVol1",
+													"name": "Duke Nharov Gundar"
+												}
+											]
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://i.imgur.com/9zrHaEw.jpg"
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Hazlan",
+							"page": 92,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/p632xWK.jpg"
+									}
+								},
+								{
+									"type": "quote",
+									"entries": [
+										"Oh my, but art is long and our life is fleeting."
+									],
+									"by": "Faust, by Goethe"
+								},
+								"Hazlan is divided in nature, between the races of the Mulan and the Rashemani. The Mulan only comprise 10% of the population but they're ultimately in control of everything. The Rashemani are a subjugated caste, barely allowed any freedom at all, especially compared to the decadence of the Mulan. The Mulan are nobles, and shave off all their body hair and cover themselves with tattoos, both of which are strictly prohibited to the Rashemani. Both Mulan and Rashemani are incredibly hostile to visitors, believing themselves both superior to any outsider, and have gained a reputation as difficult to deal with because of this.",
+								"The land used to be hostile to magic on the orders of Hazlik, the Red Wizard. He is a powerful wizard in his own right, and his word is law. However, following the Grand Conjunction, he reversed that particular edict and now encourages the people, whether Mulan or Rashemani, to seek power through magic. He has gone so far as to take a Rashemani as his apprentice (much to the discomfort of the ruling Mulan, though none dare question him), and has built an academy that teaches magic to those with the talent for it.",
+								"For all that, Hazlan is an old and dangerous land. Riches and deadly artifacts hide below the surface, and Hazlik constantly experiments with ways of increasing his power.",
+								"Adventures in Hazlan should focus on intrigue, politics, and the dangers of magic. The Mulan constantly scheme amongst themselves, and the Rashemani could be a powerful force of rebellion — but they're too cowed to make a move on their own. Power is all that matters in Hazlan, the power to do as you wish. The power to live. And the power of death over each other. And the easiest way to gain that now, is through magic. And magic is of course where Hazlik shines, so using magic potentially exposes the user to the often fatal attention of the Red Wizard.",
+								{
+									"type": "table",
+									"caption": "Hazlan",
+									"colLabels": [
+										"Detail",
+										"Description"
+									],
+									"colStyles": [
+										"col-3 text-center",
+										"col-9"
+									],
+									"rows": [
+										[
+											"Culture Level",
+											"Medieval"
+										],
+										[
+											"Climate & Terrain",
+											"Temperate, hill, mountains and plains"
+										],
+										[
+											"Year Formed",
+											"714 BC"
+										],
+										[
+											"Population",
+											"26.000"
+										],
+										[
+											"Races (%)",
+											"Humans 92%, Halflings 4%, Gnomes 3%, Other 1%"
+										],
+										[
+											"Languages",
+											"{@language Balok|Darklords&DomainsVol1}, {@language Common|PHB}, {@language Gnome|PHB}, {@language Halfling|PHB}, {@language Rashemi|Darklords&DomainsVol1}, {@language Thayan|Darklords&DomainsVol1}, {@language Vaasi|Darklords&DomainsVol1}"
+										],
+										[
+											"Religions",
+											"Cult of the Lawgiver, Hala"
+										],
+										[
+											"Government",
+											"Feudal ethnocratic despotism"
+										],
+										[
+											"Ruler(s)",
+											"Hazlik"
+										],
+										[
+											"Darklord(s)",
+											"Hazlik"
+										],
+										[
+											"Nationality",
+											"Mulan & Rashemani"
+										],
+										[
+											"Analog",
+											"Thay (Forgotten Realms  Campaign Setting)"
+										],
+										[
+											"Neighboring domain(s)",
+											"Barovia, Forlorn, Kartakass, Nova Vaasa"
+										]
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/3OKxRv4.jpg"
+									}
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/xbDlt9G.jpg"
+									}
+								},
+								{
+									"type": "entries",
+									"name": "Local Fauna",
+									"page": 93,
+									"entries": [
+										"Hazlan is home to the typical animals you'd expect to find in the region, such as wolves and predatory cats, but it is also home to those that are much worse, often twisted, as if warped by proximity to Hazlan's inherent magic, and the creatures that escape from Hazlik's laboratories and the Red Academy. The most common of these are the krenshar, dire panthers or tigers, that stalk the plains and kill a lot of farmers each year. The second are the chuul, that hide in the rivers near Sly-Var and grab unwary sailors who stare into the waters from the supposed safety of their boats. As can be expected from a domain in the Core, undead are a constant problem, though, in Hazlan, the main problem comes from ghouls that, looking for food, seek out the graves of the unfortunate Rashemani."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Local Flora",
+									"page": 94,
+									"entries": [
+										"Hazlan is a land of little variety. While it has mountains, plains, hills, and such, they all seem much the same. This is due to the relative lack of natural resources in the domain, and while Hazlan has many enormous grain fields, they're often infected by molds and insects, leading the farmers to burn the fields in the height of summer, rather than risk sickness spreading. Similarly, there isn't much in the way of trees, except for a few tangled patches of scrub trees, although the broken forest in the west could be used for timber. Unfortunately, the wood taken from there rots extremely quickly, making it useless for constructing buildings, and it is instead used for firewood. There are two plants that stand out in Hazlik, and both for unfortunate reasons. The first is quøvusp, a mildly narcotic plant. The Mulani use it as snuff and gain little effect from this affectation, but the Rashemani treat it as part of a religious ceremony, where a single person will venture into the wild, build a bonfire, and spend the night smoking quøvusp. This supposedly gives the smoker the ability to see the answer to any question that they're facing, but those non-Rashemani who have tried this simply claim that it makes for a strange experience, but not one that gives any sort of insight. The other plant is the poppy flower, and the juicy milk harvested from it, the milk of the poppy, is refined into opium, and many opium dens are found in Mulan circles, though the Rashemani are too poor for this, and merely use flophouses. There seems to be little consequence to those who partake in this while in Hazlik, as long as it does not affect their work."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Native Horrors",
+									"page": 94,
+									"entries": [
+										"No native Horros are documented."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Terrain Type",
+									"page": 94,
+									"entries": [
+										"Hazlan is a mix of plains, hills, and mountains with only the Broken Forest in the west to break up the monotony, save a few tangles of trees. It is always warm, becoming unbearably so in the summer, and insects buzz everywhere during the middle months of the year. Dotted around the landscapes is a strange oddity of Hazlan. The Hazlani Windmills are several long-abandoned windmills that no one knows who built. The style is neither Mulan nor Rashemani in nature and they are shaped like gigantic bee hives, standing four stories tall. They're made from an earthy red mud and have dirty gray sails on the wings of the windmills. Some of them have been decorated by the Rashemani, as one of the few places that they're allowed to. The Mulan however, completely ignore them as being beneath their attention."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Important Landmarks",
+									"page": 94,
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Black Spire",
+											"page": 94,
+											"entries": [
+												"The Black Spire rises from the mountains on the southern end of Hazlik. It is made of an alien purplish-black glassy stone that feels uncomfortable to the touch, though the sensation varies from person to person. Even just moving near it means that you can hear a low, vibrating tone. Local Hazlani claim that when it is struck by lightning, which happens far more frequently than normal, the tone grows in level, becoming an unearthly, alien, and loud note. Anyone standing near it is then transported to.. Somewhere else, though the Hazlani cannot agree on where it ends. Unfortunately, that somewhere else is the alien domain of Bluetspur. And what's worse, is that this portal is one way only. Once through, there is no way to return."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "The Tables",
+											"page": 94,
+											"entries": [
+												"The Tables sit outside Sly-Var and Toyalis. They are squat, domed, stone fortresses with minarets at each of the cardinal points and corners of the buildings. They sit at the heart of each settlement and serve as Hazlik's bases of operations whenever he is away from Veneficus. Underneath each of them is a deep dungeon that holds the fodder of Hazlik's cruelest experiments. In effect, the Tables are fortress, laboratory, and dungeon all collected into one. Whenever the Red Wizard meets with his governors here, he often operates on subjects strapped to tables, causing them to scream out in pain. Whether this is because Hazlik is more focused on his magical studies, or used as an intimidation tactic by him, is unknown."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Veneficus",
+											"page": 94,
+											"entries": [
+												"Veneficus is Hazlik's own private estate and sits about a day's travel to the northeast of Toyalis. The grounds of the estate are covered in a vast garden that is filled with unusual, beautiful, and in many cases, deadly examples of horticulture. Rashemani laborers have their huts on the south-eastern edge of the estate, and they tend to the gardens and buildings of Veneficus. Veneficus is a blur of activity both day and night as if the Red Wizard hardly sleeps. Messengers (normal and supernatural in nature) come and go constantly, and rare are the days where some form of experimentation isn't happening.  Veneficus is opulent and very well-appointed, and very well guarded, by magical constructs and traps, as if Hazlik is showing off his own power. Visitors are not permitted into the inner sanctums of Veneficus with only Hazlik and Eleni (and some of the magical servants) being allowed to delve into the inner mysteries. Visitors, and even Rashemani servants, are confined to the outer areas."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Red Academy",
+											"page": 95,
+											"entries": [
+												"The Red Academy is the center of magical learning in Hazlan. As an institution, it is very young and was only established the year after the Grand Conjunction, when Hazlik reversed his position on the study of magic. Until that point, no one was allowed to study arcane magic apart from Hazlik, and arcane magic users were hunted like animals by his agents. Now that has changed and ALL Hazlani, whether Mulan or Rashemani, are encouraged to learn the magic ways, the Mulan most especially keen to follow in their cultural footsteps. Now it is a path to power, regardless of race, and one that Hazlik's apprentice, the Rashemani woman Eleni, has taken to with a vengeance."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Iron Sanctum",
+											"page": 95,
+											"entries": [
+												"The Iron Sanctum sits in the northern mountains of Hazlan, though its precise location is unknown. It is heavily warded against scrying magic, and local legend has it that it houses the Order of the Guardians, an order of scholarly monks that devote themselves to the study and collection of evil magical items and artifacts. They do not plan to use them but to keep them safe so that they cannot be used by those with ill intent. Rumor states that Hazlik is aware of its existence, but that he has allowed it to remain functional, though none knows why. Perhaps this is due to its most infamous piece, the Iron Flask of Tuerny the Merciless, a magical artifact from far away — one that stores 99 demons within."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "The Lodestone",
+											"page": 95,
+											"entries": [
+												"Inside a large crater outside of Toyalis sits the Lodestone. It is an enormous black basalt obelisk that pulses with arcane energy, as faint traces emanate all the way to the surface. It is surrounded by several layers of semi-collapsed ruins, and is a dangerous dungeon to explore. It is currently being excavated and exposed by local sages. The dig has yet to begin, but plans are moving quickly, and both Mulan overseers and Rashemani laborers will be involved. Excavating it, though they do not know it, is a grave risk, for the Lodestone is a gateway to power for many, enabling people to grow in power by leaps and bounds. But it was buried beneath the surface by the alien El-Koth, its constructors, for a reason. The power comes at a cost and it drives those who partake in it utterly and irrevocably insane."
+											]
+										}
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/pKDMMB1.jpg"
+									}
+								},
+								{
+									"type": "entries",
+									"name": "Towns and villages",
+									"page": 95,
+									"entries": [ 
+										{
+											"type": "entries",
+											"name": "Toyalis",
+											"page": 95,
+											"entries": [
+												"Toyalis is the capital of Hazlan and is home to just over 8,000 people. It is the center of Mulan society and hosts a number of powerful families within it, all of which vie for the position of governor. It is home to several notable people and locations. First is Eleni of Toyalis, the apprentice of Hazlik himself, who hosts her family (to the annoyance of the nobles of the city, they are all Rashemani) at a large estate near the center of the city. It is the home of the Iron Citadel-Fane, the Church of the Lawgiver's center in Hazlik. The Fane is the center of some intra-religious intrigue currently as Pave Stavroz Vatsisk (the spiritual leader) fights off a challenge from his second in command, Aerkebiskop Venin Lols."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Sly-Var",
+											"page": 95,
+											"entries": [
+												"Sly-Var is a mercantile center in the eastern part of Hazlik. Surrounded on three sides by water, the rivers present a great opportunity for its 3,000 inhabitants to make a prosperous living. They're also slightly more friendly than the rest of the Hazlani people. That simply means that they do not assume you're a spy on sight or an agent of nefarious powers, but they still act as if they're superior to anyone else. Sly-Var is ruled by Helenah Kerpatis, a competent governor and a genuine friend to Eleni of Toyalis, a rarity in Hazlik. She is also a true believer in the inherent superiority of the Mulan to everyone else, especially the Rashemani, making her friendship with Eleni even more of an oddity. Helenah has been having trouble in recent months with Kemen Kebasi, a local \"brigand lord\". He has been targeting caravans to rob, and extorts protection money from the Rashemani merchants in the area."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Ramulai",
+											"page": 95,
+											"entries": [
+												"Ramulai sits in a vale at the foot of the largest mountain in Hazlan, Mt. Soren, and it is the newest and smallest settlement in Hazlik. A hamlet of only 300 people, it didn't even exist 20 years ago. It was raised, seemingly overnight, shortly after the Great Upheaval by Hazlik himself, and many of the buildings are made from seamless stone, while most of the roads are channels cut into the very bedrock. The streets are laid out in strange and complex patterns that when studied by visiting spellcasters give them migraines. It is surrounded by a large stone wall that is only broken by a gargantuan gate, and it is much larger than its population calls for, leaving many buildings empty. Staying here is dangerous for visitors, as the students at the Red Academy can sometimes be found prowling the streets of Ramulai for new test subjects."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Fun Fact",
+									"page": 96,
+									"entries": [
+										"Only the Mulan are allowed to have tattoos in Hazlan, along with shaved heads. As a result, Rashemani normally wear their hair long to distinguish themselves from the upper class. Hazlik himself is embarrassed about his tattoos, as they are overtly feminine. None of the Mulan nobles dare comment on this openly, but they do whisper and laugh when they are certain that the Red Wizard cannot hear them."
+									]
+								},						
+								{
+									"type": "entries",
+									"name": "Hazlik",
+									"page": 96,
+									"entries": [
+										{
+											"type": "quote",
+											"entries": [
+												"He is not a creature of the night, but he is a son of darkness. Vampires and werewolves act according to their nature, and they are monsters. Hazlik is a man, which makes his actions all the worse."
+											],
+											"by": "Gonegal"
+										},
+										"When the people of Hazlan refer to their lord, they never dare call him Hazlik, but rather the \"Red Wizard.\" The nickname is apt, as Hazlik wears bright red robes that mark him as a Red Wizard of Thay. His head, neck and torso are covered with bright red tattoos. He doesn't hide his tattoos, but anyone who mentions them is met with icy silence. Hazlik wears a goatee, but never a moustache. His left eye is brown, and his right eye is blue. His people say this is from a magical experiment gone wrong, but no one knows for sure. Hazlik always wears a silver chain with an amulet,with intricately carved runes surrounding a yellow gemstone.",
+										{
+											"type": "entries",
+											"name": "Background",
+											"page": 96,
+											"entries": [
+												"Hazlik is a powerful wizard with an aptitude for study and the magical arts. He rose quickly in the ranks of the Red Wizards and enjoyed his growing personal power and social standing. His rise to power did not go unnoticed and he made many enemies. The most hated of his rivals was Thantosya, a necromancer. Hazlik craved Thantosya's power, her position, and wealth. Most of all, he craved Orliab, Thantoysa's lover.  Hazlik pursued Orliab, and for a time she did not return his affections. After years of dogged pursuit, she finally relented. Orliab agreed to meet Hazlik in her tower, but it was a trap. Thantosya gathered all Hazlik's enemies together and watched as Orliab served him drugged wine. Once Hazlik could no longer defend himself, Thantosya and her allies sprung the trap. Hazlik was easily overwhelmed. Thantosya didn't want to kill Hazlik, that would be too easy and too quick. Thantosya wanted to make an example.",
+												"They marked Hazlik with women's tattoos, deeply humiliating for a Thayan man.  Hazlik's rise to power came to an abrupt halt. His peers ignored him in the streets, and jeered at him behind his back. Hazlik, enraged, threw himself into his craft. He would have his revenge by becoming the most powerful wizard in the history of Thay.  For years Hazlik studied and advanced his magic. While Orliab and Thantosya advanced socially, Hazlik pushed the boundaries of magic. While searching the woods one night for a rare ingredient for one of his experiments, Hazlik came across Orliab and Thantosya unaware. Full of rage, Hazlik easily overcame his enemies. Once Thantosya and Orliab were defeated and helpless, Hazlik gave into years of planned revenge. Hazlik tore the skin from Orliab, and made Thantosya drink the blood of her lover, as well as a hundred acts even more terrible. Then, when Hazlik's lust was sated, he slew them both.",
+												"As Hazlik turned to leave, the mists closed in, as he found himself in the Nightmare Lands. Hazlik was repulsed by the alien nature and soon retreated back into the mist. Hazlik lived in the mist for months. He thought he had fallen into another trap from one of his enemies in Thay, so he plotted his revenge. When the mist lifted, Hazlik had been granted the domain of Hazlan. Once Hazlik realized he had been spirited to a realm he couldn't leave, no matter how much magical power he acquired or knowledge he learned, he went mad. For thirty years, Hazlik was the only person allowed to study arcane magic in Hazlan. Any other arcane spellcaster was hunted down and killed. Hazlik passed the time trying to escape Ravenloft. His experiments usually required the unwilling assistance of some of his subjects. His subjects never survived. This changed during the Grand Conjunction. When the walls of the domain of Dread weakened, Hazlik found himself in Thay. He saw his enemies had gained power and prestige and were raising a new generation. When Hazlik returned to Hazlan he had a new plan. He created the Red Academy and started taking apprentices."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Current Sketch",
+											"page": 96,
+											"entries": [
+												"Hazlik doesn't care about governing his domain. He leaves the collecting of taxes and enforcement of laws to the local satraps he has selected. His satraps know the price of failure or rebellion and Hazlik never hesitates to remind them. Hazlik spends all of his time in the Red Academy. He hopes that one day an apprentice will escape and return to Thay. Hazlik is getting older, but isn't ready to die yet. Hazlik plans to switch bodies with one of the students in his Red Academy, and carefully watches his apprentices to judge which one has the qualities he would want in a new body. He thinks he has found the perfect vessel in Eleni of Toyalis, a talented wizard and Hazlik's closest confidant. Swapping bodies with Eleni isn't a perfect solution because women are looked down upon by the Iron Faith, so Hazlik is keeping his options open for now. Hazlik has outwardly accepted his imprisonment in Ravenloft, but all is not as it seems. The Red Academy and the town it lies in, Ramulai, are designed in unusual ways. Arcane casters can sense the power drawn to the area by the design. Ramulai and the Red Academy were designed by Hazlik himself, and some say built by magic overnight. Hazlik tolerates the Iron Faith. As a wizard, he is anathema to many of the faithful, but Hazlik could have the entire church wiped out overnight. The Iron Faith keeps its rhetoric to a minimum in Hazlan, and Hazlik uses the church as a form of social control and outlet for his subjects. Hazlik's sleep is wracked by nightmares. In them, his enemies are powerful and unstoppable and he cowers before them. Hazlik uses potions and spells to stay awake but constantly seeks for more effective solutions."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Darklord's Tactics",
+											"page": 97,
+											"entries": [
+												"Hazlik is a powerful wizard and never leaves the Red Academy without at least two apprentices and several guards. In combat Hazlik rains fire, lightning and cold upon his enemies. Hazlik may try to avoid hitting a valued apprentice, but will happily slaughter his guards. You don't have to pay dead men."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Borders",
+											"page": 97,
+											"entries": [
+												"Hazlik is able to perform a mysterious ritual that requires concentration to maintain, hoping that the borders of Hazlan and all adjacent areas in the demiplane of dread will be closed. This ceremony requires him to meditate and burn incense on a brazier. The ritual creates a huge wall of flames at the edge of his domain, and as long as he stays focused, even creatures that are usually resistant or immune to fire can be harmed. Hazlik cannot seal the border to Hazlan for long periods though. His guards patrol the borders and his apprentices constantly scry for threats as long as he is not concentrating on the ritual."
+											]
+										},
+										{
+											"name": "Hazlik",
+											"type": "entries",
+											"page": 97,
+											"entries": [
+												{
+													"type": "statblock",
+													"tag": "creature",
+													"source": "Darklords&DomainsVol1",
+													"name": "Hazlik"
 												}
 											]
 										}
@@ -8503,6 +9170,850 @@
 						"href": {
 							"type": "external",
 							"url": "https://i.imgur.com/J8ykuHK.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Duke Nharov Gundar",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "undead",
+				"tags": [
+					"shapechanger"
+				]
+			},
+			"source": "Darklords&DomainsVol1",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d8 + 80",
+				"average": 170
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 19,
+			"con": 18,
+			"int": 17,
+			"wis": 15,
+			"cha": 19,
+			"passive": 18,
+			"cr": "18",
+			"shortName": "Duke Nharov Gundar",
+			"page": 89,
+			"senses": [
+				"blindsight 10 ft.",
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"languages": [
+				"Common",
+				"Elvish",
+				"Luktar"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"save": {
+				"dex": "+10",
+				"wis": "+8",
+				"cha": "+10"
+			},
+			"skill": {
+				"perception": "+8",
+				"stealth": "+16"
+			},
+			"resist": [
+				{
+					"resist": [
+						"necrotic"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons",
+					"cond": true
+				}
+			],
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"If Gundar isn't in sunlight or running water, he can use his action to polymorph into a Tiny bat, a Me-dium cloud of mist, or back into his true form. While in bat form, Gundar can't speak, his walking speed is 5 feet, and he has a flying speed of 30 feet. His statistics, other than his size and speed, are unchanged. Anything he is wearing transforms with him, but nothing he is carrying does. He reverts to his true form if he dies.While in mist form, Gundar can't take any actions, speak, or manipulate objects. He is weight-less, has a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. In addition, if air can pass through a space, the mist can do so without squeez-ing, and he can't pass through water. He has advantage on Strength, Dexterity, and Constitution saving throws, and he is immune to all nonmagical damage, except the damage he takes from sunlight. "
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Gundar fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Indomitable",
+					"entries": [
+						"Gundar can reroll a saving throw that he fails. If he does so, he must use the new roll, and he can't use this feature again until he finishes a long rest. "
+					]
+				},
+				{
+					"name": "Misty Escape",
+					"entries": [
+						"When he drops to 0 hit points outside his resting place, Gundar transforms into a cloud of mist (as in the Shapechanger trait) instead of falling {@condition unconscious}, pro-vided that he  isn't in sunlight or running water. If he can't transform, he is destroyed. While he has 0 hit points in mist form, he can't revert to his vampire form, and he must reach his resting place within 2 hours or be destroyed. Once in his resting place, he reverts to his vampire form. He is then {@condition paralyzed} until he regains at least 1 hit point. After spending 1 hour in his resting place with 0 hit points, he regains 1 hit point."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"Gundar regains 20 hit points at the start of each turn if he has at least 1 hit point and isn't in sunlight or running water. If Gundar takes radiant damage or damage from holy water, this trait doesn't function at the start of his next turn. "
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"Gundar can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Vampire Weaknesses",
+					"entries": [
+						"Gundar has the following flaws:",
+						{
+							"type": "list",
+							"items": [
+								"{@b Forbiddance.} Gundar can't enter a residence without an invitation from one of the occupants.",
+								"{@b Harmed by Running Water.} Gundar takes 20 acid damage if he  ends his turn in running water.",
+								"{@b Stake to the Heart.} If a piercing weapon made of wood is driven into Gundar's heart while the he is {@condition incapacitated} in his resting place, he  is {@condition paralyzed} until the stake is removed.",
+								"{@b Sunlight Hypersensitivity.} Gundar takes 20 radiant damage when he starts his turn in sunlight. While in sunlight, he has disadvantage on attack rolls and ability checks."
+							]
+						}
+					]
+				},
+				{
+					"name": "Blind Fighting",
+					"entries": [
+						"Gundar has blindsight with a range of 10 feet. Within that range, he can effectively see anything that isn't behind total cover, even if he is {@condition blinded} or in darkness. Moreover, he can see an {@condition invisible} creature within that range, unless the creature successfully hides from him. Gundar can't use his blindsight while {@condition deafened}. "
+					]
+				},
+				{
+					"name": "Second Wind",
+					"entries": [
+						"Gundar has a limited well of stamina that he can draw on to protect himself from harm. On his turn, he can use a bonus action to regain hit points equal to {@dice 1d10 + 13}. Once he uses this feature, he must finish a short or long rest before he can use it again."
+					]
+				},
+				{
+					"name": "Action Surge",
+					"entries": [
+						"Gundar can push himself beyond his normal limits for a moment. On his turn, he can take one additional action. Once he uses this feature, he must finish a short or long rest before he can use it again."
+					]
+				},
+				{
+					"name": "Predator Leap",
+					"entries": [
+						"Gundar can use a bonus action to take a jump as a part of his movement and reach great distances, up to 40ft."
+					]
+				},
+				{
+					"name": "Precise Strike",
+					"entries": [
+						"Gundar can use a bonus action to focus his attacks giving him advantage on his attack rolls but also granting a critical hit when he rolls a 19-20. Gundar can use this ability 3 times per long rest."
+					]
+				},
+				{
+					"name": "Primal Predator",
+					"entries": [
+						"Gundar can as an action make a threatening battle cry that can be heard throughout his domain. All creatures that hear this cry must succeed on a {@dc 18} Wisdom saving throw or become {@condition frightened} for 10 minutes ending the effect on a successful roll, rolled at the end of each passing minute. This battle cry activates Gundar's feral instincts and grants him advantage on his Strength and Dexterity rolls for 10 minutes. He also gains a +4 bonus to attack and damage rolls. Once he uses this feature he can't use it again until he finishes a long rest."
+					]
+				},
+				{
+					"name": "Whirlwind Attack",
+					"entries": [
+						"Gundar can use his action to make a melee Attack against any number of creatures within 5 feet of him, with a separate Attack roll for each target. "
+					]
+				},
+				{
+					"name": "Shadow Stealth",
+					"entries": [
+						"While in dim light or darkness, Gundar can take the Hide action as a bonus action."
+					]
+				},
+				{
+					"name": "Limited Magic Immunity",
+					"entries": [
+						"Gundar can't be affected or detected by spells of 3rd level or lower unless he wishes to be. He has advantage on saving throws against all other spells and magical effects."
+					]
+				},
+				{
+					"name": "Grappler",
+					"entries": [
+						"Gundar has advantage on attack rolls against a creature he is grappling. He can use his action to try to pin a creature {@condition grappled} by him. To do so, he makes another grapple check. If he succeeds, Gundar and the creature are both {@condition restrained} until the grapple ends."
+					]
+				},
+				{
+					"name": "Mobile",
+					"entries": [
+						"Gundar is exceptionally speedy and agile.When he uses the Dash action, difficult terrain doesn't cost him extra movement on that turn. When he makes a melee attack against a creature, he doesn't provoke opportunity attacks from that creature for the rest of the turn, whether he hits or not."
+					]
+				},
+				{
+					"name": "Entertainer's Curse",
+					"entries": [
+						"Gundar can curse a target he sees within 30ft with a unique form of undeath. The target must succeed on a {@dc 18} wisdom saving throw or have its type change to undead the next time it finishes a long rest. If a Remove Curse is casted upon the target before it finishes a long rest, it is freed from this curse. While cursed, the target must each day entertain at least one humanoid creature by succeeding on a {@dc 15} Performance check. The target can try to entertain a humanoid enough times equal to its Charisma modifier. If it fails to entertain, it dies the next time it takes a long rest."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Regeneration",
+				"Shapechanger",
+				"Spider Climb",
+				"Sunlight Sensitivity"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"action": [
+				{
+					"name": "Multiattack (Vampire Form Only)",
+					"entries": [
+						"Gundar makes two attacks, only one of which can be a bite attack."
+					]
+				},
+				{
+					"name": "Longsword +2",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d8 + 7}) slashing damage, or 12 ({@damage 1d10 + 7}) slashing damage if used with both hands."
+					]
+				},
+				{
+					"name": "Unarmed Strike (Vampire Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 5}) bludgeoning damage. Instead of dealing damage, Gundar can grapple the target (escape {@dc 18})."
+					]
+				},
+				{
+					"name": "Bite (Bat or Vampire Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one willing creature, or a creature that is {@condition grappled} by the vampire, {@condition incapacitated}, or {@condition restrained}. {@h}8 ({@damage 1d6 + 5}) piercing damage, plus 10 ({@damage 3d6}) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and Gundar regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0. A humanoid slain in this way and then buried in the ground rises the following night as a vampire spawn under Gundar's control."
+					]
+				},
+				{
+					"name": "Charm",
+					"entries": [
+						"Gundar targets one humanoid he can see within 30 ft. of him. If the target can see Gundar, the target must succeed on a {@dc 18} Wisdom saving throw against this magic or be {@condition charmed} by him. The {@condition charmed} target regards Gundar as a trusted friend to be heeded and protected. Although the target isn't under Gundar's control, it takes his requests or actions in the most favorable way it can, andis a willing target for Gundar's bite attack. Each time Gundar or his companions do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until Gundar is destroyed, is on a different plane of existence than the target, or takes a bonus action to end the effect."
+					]
+				},
+				{
+					"name": "Children of the Night (1/Day)",
+					"entries": [
+						"Gundar magically calls {@dice 2d4} swarms of bats or rats, provided that the sun isn't up. While outdoors, Gundar can call {@dice 3d6} wolves instead. The called creatures arrive in {@dice 1d4} rounds, acting as allies of Gundar and obeying his spoken commands. The beasts remain for 1 hour, until Gundar dies, or until he dismisses them as a bonus action."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Second Wind",
+					"entries": [
+						"Gundar has a limited well of stamina that he can draw on to protect himself from harm. On his turn, he can use a bonus action to regain hit points equal to {@dice 1d10 + 13}. Once he uses this feature, he must finish a short or long rest before he can use it again."
+					]
+				},
+				{
+					"name": "Predator Leap",
+					"entries": [
+						"Gundar can use a bonus action to take a jump as a part of his movement and reach great distances, up to 40ft."
+					]
+				},
+				{
+					"name": "Precise Strike",
+					"entries": [
+						"Gundar can use a bonus action to focus his attacks giving him advantage on his attack rolls but also granting a critical hit when he rolls a 19-20. Gundar can use this ability 3 ti"
+					]
+				},
+				{
+					"name": "Shadow Stealth",
+					"entries": [
+						"While in dim light or darkness, Gundar can take the Hide action as a bonus action."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"HPR"
+			],
+			"attachedItems": [
+				"+2 longsword|dmg"
+			],
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"Gundar can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Gundar regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"Gundar moves up to his speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Melee Weapon Attack",
+					"entries": [
+						"Gundar makes one melee weapon attack."
+					]
+				},
+				{
+					"name": "Bite (Costs 2 Actions)",
+					"entries": [
+						"Gundar makes one bite attack."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"N",
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/tJAxykF.png"
+			},
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"It's a shame really.",
+							"He could have been so much more than he was, but he never let himself move beyond the tragedy of his youth."
+						],
+						"by": "Rudolph van Richten"
+					},
+					"Duke Gundar makes no attempt to hide his undead nature, nor the hallmarks that mark him as a vampire. His nails are hooked claws, his teeth horrific fangs, and his eyes are bloodshot and wide. Although he could pass for a human male at a distance, up close he seems to have more in common with the wolf than any other creature.",
+					"Gundar is large and powerfully built. He is possibly the oldest vampire in the Demiplane of Dread, but while Strahd has spent the centuries mastering the necromantic and martial arts, Gundar has made no attempts to increase his power. A bully that enjoys picking on the helpless, Gundar is too lazy to try anything new.",
+					"The duke dresses well in tailored clothes and carries a jeweled walking stick.Though the stick is made of the hardest wood that Gundar can find,  he still regularly breaks it on the skulls of those who displease him.",
+					{
+						"type": "entries",
+						"name": "Background",
+						"page": 88,
+						"entries": [
+							"In the kingdom of Chesrush, the Gundar family was never quite enough. For generations they were pig farmers. Though they were well off, living on a large farm, they still lived in the mud and sold food to their betters. Then came Lord Callar's rebellion. Milak Gundar joined the forces of King Brun to save the kingdom, leaving his young son Nharov and wife behind. When Milak returned two years later, he was missing a hand, and came riding a fine horse,bearing the title of lord. Milak had saved King Brun from an ambitious spearman, at the cost of his hand. The grateful king had given Milak the title of lord and Callar's estates as a thank you. Milak had serfs that would work his farm for him now, as well as hundreds of acres of wineries and farms.",
+							"Milak and his family were welcomed by the king when they moved into the Callar estates in the capital of Navar. Milak was hailed as  a war hero and Nharov thought his life would be perfection. He was very wrong. Callar and his family came from an old house and were well connected and liked by their peers. In giving Callar's land and estates to Milak, the king sent a simple message \"If I can do it to them, I can do it to you.\" Callar and his sons were slain during the rebellion, but his wife and daughter were taken in by relatives when the Gundars evicted them from their home.",
+							"Once the king's attention turned elsewhere the nobles that had fawned over Milak and his family began to openly mock the Gundars for their simple ways and ignorance. In less than a year Milak had lost the fortune he gained during the war through drinking, gambling and whoring. Nharov's mother left and never returned.",
+							"Milak barely noticed his wife's absence. He was too busy begging other nobles for money that slipped through his fingers as soon as he got it. Nharov was left alone, surrounded by nobles that despised him for being born, and enemies that would rather see him dead.",
+							"A few years later, Milak succumbed to a death from alcohol and debauchery. Nharov was left alone. The servants took what they could carry from the estate and left. Duke Nharov Gundar was forced to beg in the streets to find food. Loudly mocked by his peers, whenever he fought back, he always lost to his enemy's great numbers.",
+							"By the time Nharov reached adulthood, he had secured several sources of income, using his vast estates to smuggle in and hide all manner of vice. His vast palace in Navar held nearly a dozen brothels, opiate pits, and other more specialized dens of debauchery. Nharov was even able to bribe another pauper lord for his daughter's hand in marriage. Despite his wealth, Nharov was more of a social and political outcast than ever. Nharov sneered as he was mocked. Some of the nobles mocking him were his best customers. Nharov was their better, and he knew it, but he had no way to prove it. All that changed one night when a stranger arrived at Nharov's doorstep. The stranger offered Nharov a means of revenge. He could slay all the nobles that mocked him, and their numbers would count for nothing. All he wanted in return was Nharov's wife. Nharov agreed immediately, Even as the stranger revealed his long fangs, Nharov had no regrets. When Nharov awoke, he could feel his great strength. He waited until nightfall and then began to move through Navar. Finding nobles, whether by themselves or in small groups, regardless, he slaughtered them all. As he killed the mists arose.",
+							"Nharov found himself in a strange land. Surrounded by people that called him Duke Gundar. He accepted their fealty without comment and set to building his hall.",
+							"Gundar ruled like a petty tyrant. He worked his peasants and taxed everything. He even levied a tax on peasants that had a female baby, as Gundar didn't think they would work as hard. Gundar turned anyone that he thought might be useful into a vampire and didn't give a damn who knew.",
+							"It was this hubris that was his downfall. Dr Daclaud Heinfroth had become a unique type of vampire after transfusing cerebral fluid from one of Gundar's many vampire wives into his own skull. Because the wife had been Gundar's thrall, Heinfroth became so as well. Gundar lauded his mastery over the doctor, berating and beating him mercilessly.",
+							"Eventually Heinfroth had enough. He played on Gundar's ego and convinced the duke that Heinfroth could rule over neighboring Kartakass, should Harkon Lukas be slain. Gundar was desperate to have a thrall in charge of a second domain and agreed. At a crucial moment, Heinfroth abandoned the duke, and Gundar was slain, with a stake piercing his chest. In an instant the flesh shrivelled from Gundar's skeleton and he fell to the ground lifeless."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Current Sketch",
+						"page": 88,
+						"entries": [
+							"The remains of Duke Gundar are part of Professor Arcanus' traveling curiosities show. The Professor doesn't realize that one of the thousands of lies he tells is actually the truth. The stake is still lodged in Gundar's ribcage, and if it were removed the duke would be instantly regenerated. Gundarak is long gone, so Gundar would likely be free to move around Ravenloft, less than a darklord, but not trapped in his domain."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Darklord's Tactics",
+						"page": 88,
+						"entries": [
+							"Duke Gundar is a straightforward and unimaginative combatant. He is strong enough to tear a fully armored man in half. Gundar eschews weapons and armor. He claims he doesn't need them but in reality it's just too much of a hassle for him to worry about."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Borders",
+						"page": 88,
+						"entries": [
+							"When the borders of Gundarak are sealed the mists rise up, forming an eerie white wall. Any creature that enters the mists is hopelessly lost for 1d6 hours. When the mists clear, the creature is back at the border of Gundarak."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/R277C1M.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Hazlik",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "Darklords&DomainsVol1",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				17,
+				{
+					"ac": 19,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "15d6 + 15",
+				"average": 76
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 20,
+			"con": 13,
+			"int": 21,
+			"wis": 11,
+			"cha": 11,
+			"passive": 10,
+			"cr": "15",
+			"shortName": "Hazlik",
+			"page": 97,
+			"languages": [
+				"Draconic",
+				"Vaasi",
+				"Abyssal",
+				"Balok",
+				"Darkonese",
+				"Thayian"
+			],
+			"languageTags": [
+				"DR",
+				"AB"
+			],
+			"save": {
+				"dex": "+10",
+				"int": "+10"
+			},
+			"skill": {
+				"arcana": "+10",
+				"deception": "+5",
+				"insight": "+5",
+				"intimidation": "+5",
+				"religion": "+10"
+			},
+			"trait": [
+				{
+					"name": "War Caster",
+					"entries": [
+						"Hazlik has advantage on Constitution saving throws that he makes to maintain his {@status concentration} on a spell when he takes damage. He can perform the somatic compo-nents of spells even when he has weapons or a shield in one or both hands. When a hostile creature's movement provokes an opportunity attack from Hazlik, he can use his reaction to cast a spell at the creature, rather than making an opportuni-ty attack. The spell must have a casting time of 1 action and must target only that creature. "
+					]
+				},
+				{
+					"name": "Spell Sense",
+					"entries": [
+						"Hazlik can automatically sense every arcane spell that is cast within Hazlan. When a spell is cast, Hazlik instantly becomes aware of the spell's school and the caster's location with a precision of 10 miles as well as the spell's level. "
+					]
+				},
+				{
+					"name": "Undying Soul",
+					"entries": [
+						"Hazlik's amulet radiates a strong necromancy aura when studied with detect magic, though the amulet is not truly magical and functions only for him. If Hazlik is slain, his soul is transferred to the amulet's gem. If a humanoid or monstrous humanoid touches the gem while it contains Haz-lik's soul, the creature must succeed on a Charisma save ({@dc 21}) or be compelled to wear the amulet and defend it to the death. This is a mind-affecting compulsion effect. Unlike the {@spell magic jar|PHB} spell, however, {@spell Protection from Evil and Good|PHB|protection from evil} or a similar ward will not block the amulet's power. The amulet is not a cursed item and can be forcibly removed from a creature that wears it. Each time a creature sleeps while wearing the amulet, they must succeed on a Charisma save ({@dc 21}) or his own soul will be destroyed and replaced by Hazlik's soul. Once reborn, Hazlik keeps his original mental ability scores, skills, feats and abilities. Over the course of the next month, Hazlik's new body is slowly transformed to match his original physical ability scores and appearance. The amulet can be destroyed with a {@spell Disintegrate|PHB} or {@spell Wish|PHB} spell."
+					]
+				},
+				{
+					"name": "Metamagic",
+					"entries": [
+						"Hazlik can twist his spells to suit his needs. He has the following Metamagic options: {@i Empowered Spell} and {@i Quickened Spell}"
+					]
+				},
+				{
+					"name": "Metamagic: Empowered Spell",
+					"entries": [
+						"When he rolls damage for a spell, he can spend 1 sorcery point to reroll up to 5 of the damage dice. He must use the new rolls. He can use Empowered Spell even if he has already used a different Metamagic option during the casting of the spell."
+					]
+				},
+				{
+					"name": "Metamagic: Quickened Spell",
+					"entries": [
+						"When he casts a spell that has a casting time of 1 action, he can spend 2 sorcery points to change the casting time to 1 bonus action for this casting."
+					]
+				},
+				{
+					"name": "Heart of Fire",
+					"entries": [
+						"Whenever Hazlik casts a spell of 1st level or higher that deals fire damage, fiery magic erupts from him. This eruption causes creatures of his choice that he can see within 10 feet of him to take 7 fire damage."
+					]
+				},
+				{
+					"name": "Fire in the Veins",
+					"entries": [
+						"Hazlik gains resistance to fire damage. In ad-dition, spells he casts ignore resistance to fire damage. When he rolls damage for a spell he casts that deals damage of that type, he can treat any 1 on a damage die as a 2."
+					]
+				},
+				{
+					"name": "Pyromancer's Fury",
+					"entries": [
+						"When Hazlik is hit by a melee attack, he can use his reaction to deal 7 fire damage to the attacker. This damage ignores fire resistance."
+					]
+				},
+				{
+					"name": "Mage Slayer",
+					"entries": [
+						"Hazlik has practiced techniques useful in melee combat against spellcasters, gaining the following benefits:",
+						{
+							"type": "list",
+							"items": [
+								"When a creature within 5 feet of him casts a spell, he can use his reaction to make a melee weapon attack against that creature.",
+								"When he damages a creature that is {@status concentration||concentrating} on a spell, that creature has disadvantage on the saving throw it makes to maintain its {@status concentration}."
+							]
+						}
+
+					]
+				},
+				{
+					"name": "Overchannel",
+					"entries": [
+						"Hazlik can increase the power of his simpler spells. When he casts a Wizard spell of 1st through 5th level that deals damage, he can deal maximum damage with that spell. The first time he does so, he suffers no adverse effects. If he uses this feature again before he finishes a Long Rest, he takes {@damage 2d12} necrotic damage for each level of the spell, immediately after he casts it. Each time he uses this feature again before finish-ing a Long Rest, the necrotic damage per spell level increas-es by {@dice 1d12}. This damage ignores Resistance and immunity."
+					]
+				},
+				{
+					"name": "Significant Possessions",
+					"type": "inset",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"1 {@item Bracers of Defense|DMG}",
+								"1 {@item Headband of Intellect|DMG}",
+								"1 {@item Wand of Fireballs (10 charges)|Darklords&DomainsVol1}",
+								"1 {@item Gauntlets of Dexterity|Darklords&DomainsVol1}"
+							]
+						}
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Hazlik is a 15th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 13}, +5 to hit with spell attacks). He can never learn or cast an illusion or enchantment spell. Hazlik has the following Wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell acid splash}",
+								"{@spell blade ward}",
+								"{@spell booming blade|TCE}",
+								"{@spell chill touch}",
+								"{@spell control flames|XGE}",
+								"{@spell create bonfire|XGE}",
+								"{@spell dancing lights}",
+								"{@spell fire bolt}",
+								"{@spell friends}",
+								"{@spell frostbite|XGE}",
+								"{@spell green-flame blade|TCE}",
+								"{@spell gust|XGE}",
+								"{@spell gust barrier|HWCS}",
+								"{@spell infestation|XGE}",
+								"{@spell light}",
+								"{@spell lightning lure|TCE}",
+								"{@spell mage hand}",
+								"{@spell mending}",
+								"{@spell message}",
+								"{@spell mind sliver|TCE}",
+								"{@spell minor illusion}",
+								"{@spell mold earth|XGE}",
+								"{@spell poison spray}",
+								"{@spell prestidigitation}",
+								"{@spell ray of frost}",
+								"{@spell shape water|XGE}",
+								"{@spell shocking grasp}",
+								"{@spell sword burst|TCE}",
+								"{@spell thunderclap|XGE}",
+								"{@spell toll the dead|XGE}",
+								"{@spell true strike}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell alarm}",
+								"{@spell burning hands}",
+								"{@spell expeditious retreat}",
+								"{@spell identify}",
+								"{@spell mage armor}",
+								"{@spell magic missile}",
+								"{@spell protection from evil and good}",
+								"{@spell shield}",
+								"{@spell unseen servant}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell alter self}",
+								"{@spell arcane lock}",
+								"{@spell blindness/deafness}",
+								"{@spell darkness}",
+								"{@spell enlarge/reduce}",
+								"{@spell flaming sphere}",
+								"{@spell knock}",
+								"{@spell Melf's acid arrow}",
+								"{@spell see invisibility}",
+								"{@spell spider climb}",
+								"{@spell web}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell clairvoyance}",
+								"{@spell daylight}",
+								"{@spell dispel magic}",
+								"{@spell fireball}",
+								"{@spell fly}",
+								"{@spell gaseous form}",
+								"{@spell lightning bolt}",
+								"{@spell protection from energy}",
+								"{@spell sending}"
+							],
+							"slots": 2
+						},
+						"4": {
+							"spells": [
+								"{@spell arcane eye}",
+								"{@spell dimension door}",
+								"{@spell ice storm}",
+								"{@spell stoneskin}",
+								"{@spell wall of fire}"
+							],
+							"slots": 2
+						},
+						"5": {
+							"spells": [
+								"{@spell cloudkill}",
+								"{@spell cone of cold}",
+								"{@spell passwall}",
+								"{@spell planar binding}",
+								"{@spell scrying}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell chain lightning}",
+								"{@spell contingency}",
+								"{@spell guards and wards}",
+								"{@spell magic jar}",
+								"{@spell true seeing}"
+							],
+							"slots": 2
+						},
+						"7": {
+							"spells": [
+								"{@spell crown of stars|XGE}",
+								"{@spell delayed blast fireball}",
+								"{@spell forcecage}",
+								"{@spell teleport}"
+							],
+							"slots": 2
+						},
+						"8": {
+							"spells": [
+								"{@spell dark star|EGW}",
+								"{@spell incendiary cloud}",
+								"{@spell maddening darkness|XGE}",
+								"{@spell sunburst}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"action": [
+				{
+					"name": "Dagger +1",
+					"entries": [
+						"{@atk mw,rw} {@hit 11} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}8 ({@damage 1d4 + 6}) piercing damage in melee, or 8 ({@damage 1d4 + 6}) piercing damage at range."
+					]
+				}
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"MLW",
+				"THW",
+				"AOE"
+			],
+			"attachedItems": [
+				"+1 dagger|dmg"
+			],
+			"legendaryGroup": {
+				"name": "Darklords&DomainsVol1LairActionsHazlik",
+				"source": "Darklords&DomainsVol1"
+			},
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"Hazlik can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The monster regains spent legendary actions at the start of his turn."
+			],
+			"legendary": [
+				{
+					"name": "Cast a Spell",
+					"entries": [
+						"Hazlik casts a spell"
+					]
+				},
+				{
+					"name": "Stab",
+					"entries": [
+						"Hazlik makes a dagger attack. "
+					]
+				},
+				{
+					"name": "Fiery Burst (2 actions)",
+					"entries": [
+						"A wave of fiery explosions sweeps out from Hazlik. Each creature in a 15-foot cube originating from him must make a Constitution saving throw. On a failed save, a creature takes {@damage 4d8} fire damage. On a success-ful save, the creature takes half as much damage and isn't pushed. In addition, unsecured and flammable objects that are completely within the area of effect catch fire automati-cally by the spell's effect."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Pyromancer's Fury",
+					"entries": [
+						"When Hazlik is hit by a melee attack, he can use his reaction to deal 7 fire damage to the attacker. This damage ignores fire resistance."
+					]
+				}
+			],
+			"damageTags": [
+				"F",
+				"P"
+			],
+			"damageTagsSpell": [
+				"A",
+				"B",
+				"C",
+				"F",
+				"I",
+				"L",
+				"N",
+				"O",
+				"P",
+				"R",
+				"S",
+				"T",
+				"Y"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"dexterity",
+				"intelligence",
+				"strength",
+				"wisdom"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/7fsvMD2.png"
+			},
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"He is not a creature of the night, but he is a son of darkness. Vampires and werewolves act according to their nature, and they are monsters. Hazlik is a man, which makes his actions all the worse."
+						],
+						"by": "Gonegal"
+					},
+					"When the people of Hazlan refer to their lord, they never dare call him Hazlik, but rather the \"Red Wizard.\" The nickname is apt, as Hazlik wears bright red robes that mark him as a Red Wizard of Thay. His head, neck and torso are covered with bright red tattoos. He doesn't hide his tattoos, but anyone who mentions them is met with icy silence. Hazlik wears a goatee, but never a moustache. His left eye is brown, and his right eye is blue. His people say this is from a magical experiment gone wrong, but no one knows for sure. Hazlik always wears a silver chain with an amulet,with intricately carved runes surrounding a yellow gemstone.",
+					{
+						"type": "entries",
+						"name": "Background",
+						"page": 96,
+						"entries": [
+							"Hazlik is a powerful wizard with an aptitude for study and the magical arts. He rose quickly in the ranks of the Red Wizards and enjoyed his growing personal power and social standing. His rise to power did not go unnoticed and he made many enemies. The most hated of his rivals was Thantosya, a necromancer. Hazlik craved Thantosya's power, her position, and wealth. Most of all, he craved Orliab, Thantoysa's lover.  Hazlik pursued Orliab, and for a time she did not return his affections. After years of dogged pursuit, she finally relented. Orliab agreed to meet Hazlik in her tower, but it was a trap. Thantosya gathered all Hazlik's enemies together and watched as Orliab served him drugged wine. Once Hazlik could no longer defend himself, Thantosya and her allies sprung the trap. Hazlik was easily overwhelmed. Thantosya didn't want to kill Hazlik, that would be too easy and too quick. Thantosya wanted to make an example.",
+							"They marked Hazlik with women's tattoos, deeply humiliating for a Thayan man.  Hazlik's rise to power came to an abrupt halt. His peers ignored him in the streets, and jeered at him behind his back. Hazlik, enraged, threw himself into his craft. He would have his revenge by becoming the most powerful wizard in the history of Thay.  For years Hazlik studied and advanced his magic. While Orliab and Thantosya advanced socially, Hazlik pushed the boundaries of magic. While searching the woods one night for a rare ingredient for one of his experiments, Hazlik came across Orliab and Thantosya unaware. Full of rage, Hazlik easily overcame his enemies. Once Thantosya and Orliab were defeated and helpless, Hazlik gave into years of planned revenge. Hazlik tore the skin from Orliab, and made Thantosya drink the blood of her lover, as well as a hundred acts even more terrible. Then, when Hazlik's lust was sated, he slew them both.",
+							"As Hazlik turned to leave, the mists closed in, as he found himself in the Nightmare Lands. Hazlik was repulsed by the alien nature and soon retreated back into the mist. Hazlik lived in the mist for months. He thought he had fallen into another trap from one of his enemies in Thay, so he plotted his revenge. When the mist lifted, Hazlik had been granted the domain of Hazlan. Once Hazlik realized he had been spirited to a realm he couldn't leave, no matter how much magical power he acquired or knowledge he learned, he went mad. For thirty years, Hazlik was the only person allowed to study arcane magic in Hazlan. Any other arcane spellcaster was hunted down and killed. Hazlik passed the time trying to escape Ravenloft. His experiments usually required the unwilling assistance of some of his subjects. His subjects never survived. This changed during the Grand Conjunction. When the walls of the domain of Dread weakened, Hazlik found himself in Thay. He saw his enemies had gained power and prestige and were raising a new generation. When Hazlik returned to Hazlan he had a new plan. He created the Red Academy and started taking apprentices."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Current Sketch",
+						"page": 96,
+						"entries": [
+							"Hazlik doesn't care about governing his domain. He leaves the collecting of taxes and enforcement of laws to the local satraps he has selected. His satraps know the price of failure or rebellion and Hazlik never hesitates to remind them. Hazlik spends all of his time in the Red Academy. He hopes that one day an apprentice will escape and return to Thay. Hazlik is getting older, but isn't ready to die yet. Hazlik plans to switch bodies with one of the students in his Red Academy, and carefully watches his apprentices to judge which one has the qualities he would want in a new body. He thinks he has found the perfect vessel in Eleni of Toyalis, a talented wizard and Hazlik's closest confidant. Swapping bodies with Eleni isn't a perfect solution because women are looked down upon by the Iron Faith, so Hazlik is keeping his options open for now. Hazlik has outwardly accepted his imprisonment in Ravenloft, but all is not as it seems. The Red Academy and the town it lies in, Ramulai, are designed in unusual ways. Arcane casters can sense the power drawn to the area by the design. Ramulai and the Red Academy were designed by Hazlik himself, and some say built by magic overnight. Hazlik tolerates the Iron Faith. As a wizard, he is anathema to many of the faithful, but Hazlik could have the entire church wiped out overnight. The Iron Faith keeps its rhetoric to a minimum in Hazlan, and Hazlik uses the church as a form of social control and outlet for his subjects. Hazlik's sleep is wracked by nightmares. In them, his enemies are powerful and unstoppable and he cowers before them. Hazlik uses potions and spells to stay awake but constantly seeks for more effective solutions."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Darklord's Tactics",
+						"page": 97,
+						"entries": [
+							"Hazlik is a powerful wizard and never leaves the Red Academy without at least two apprentices and several guards. In combat Hazlik rains fire, lightning and cold upon his enemies. Hazlik may try to avoid hitting a valued apprentice, but will happily slaughter his guards. You don't have to pay dead men."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Borders",
+						"page": 97,
+						"entries": [
+							"Hazlik is able to perform a mysterious ritual that requires concentration to maintain, hoping that the borders of Hazlan and all adjacent areas in the demiplane of dread will be closed. This ceremony requires him to meditate and burn incense on a brazier. The ritual creates a huge wall of flames at the edge of his domain, and as long as he stays focused, even creatures that are usually resistant or immune to fire can be harmed. Hazlik cannot seal the border to Hazlan for long periods though. His guards patrol the borders and his apprentices constantly scry for threats as long as he is not concentrating on the ritual."
+						]
+					},
+					{
+						"name": "Significant Possessions",
+						"type": "inset",
+						"entries": [
+							{
+								"type": "list",
+								"items": [
+									"1 {@item Bracers of Defense|DMG}",
+									"1 {@item Headband of Intellect|DMG}",
+									"1 {@item Wand of Fireballs (10 charges)|Darklords&DomainsVol1}",
+									"1 {@item Gauntlets of Dexterity|Darklords&DomainsVol1}"
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/Ya5ikSj.jpg"
 						}
 					}
 				]
