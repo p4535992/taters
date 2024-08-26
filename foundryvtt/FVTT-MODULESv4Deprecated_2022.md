@@ -183,7 +183,6 @@
 - [NOT ESSENTIAL][ImageDrop](https://gitlab.com/mesfoliesludiques/foundryvtt-image-drop)
 - [NOT EESENTIAL BUT VERY GOOD][JOURNAL][NOte Macro](https://github.com/Kekilla0/Note-Macro)
 - [NOT ESSENTIAL][SCENE][Compendium Scene Viewer](https://github.com/BadIdeasBureau/scene-viewer )
-- [NOT ESSENTIAL MIDI ALREADY DO SOMETHING][COMBAT][Damage Log](https://github.com/cs96and/FoundryVTT-damage-log)
 - [NOT ESSENTIAL][TOKEN][Loot Populater NPC 5E](https://github.com/DanielBoettner/fvtt-loot-populator-npc-5e)
 - [NOT ESSENTIAL][UTILITY][Rollable Tokens](https://github.com/zeel01/roll-tokens)
 - [NOT ESSENTIAL][COMBAT][AMMO TRACKER FVTT](https://github.com/NekroDarkmoon/ammo-tracker-fvtt)

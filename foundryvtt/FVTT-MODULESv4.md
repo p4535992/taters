@@ -60,6 +60,7 @@
 - [UTILITY][Zoom/Pan Options](https://github.com/shemetz/ZoomPanOptions)
 - [UTILITY][Limits](https://github.com/dev7355608/limits)
 - [UTILITY][Condition Lab & Triggler](https://github.com/mclemente/fvtt-condition-lab-triggler)
+- [UTILITY][Beaver's Crafting Module](https://github.com/AngryBeaver/beavers-crafting)
 
 ## [MUST HAVE] COMBAT UTILITY MODULES
 
@@ -77,6 +78,8 @@
 - [COMBAT][Manage Player Targets](https://github.com/dev7355608/manage-player-targets)
 - [COMBAT][Carousel Combat Tracker](https://github.com/theripper93/combat-tracker-dock)
 - [COMBAT][Combat Tracker Extensions](https://github.com/Anderware/Combat-Tracker-Extensions)
+
+- [COMBAT][Damage Log](https://github.com/cs96and/FoundryVTT-damage-log)
 
 ### NOT ESSENTIAL (BUT INTERESTING)
 

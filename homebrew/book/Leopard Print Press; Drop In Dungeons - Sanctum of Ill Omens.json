@@ -336,7 +336,7 @@
 											]
 										},
 										"Underneath the runes is a riddle, stating:",
-										"\"{@i Always coming, but never arrives Makes young lovers husbands and wives While we are waiting, it makes up our lives Something for which, man constantly strives}\"}",
+										"\"{@i Always coming, but never arrives Makes young lovers husbands and wives While we are waiting, it makes up our lives Something for which, man constantly strives}\"",
 										"Below the riddle are runes representing the infernal alphabet. When an incorrect entry is entered, the console will temporarily light up in red before resetting itself to its default state.",
 										"Entering \"{@b future}\" into the runic console will solve the puzzle.",
 										"Due to the console's age, entering the correct password may not disable all of the Bridge Defenses. When a trap is disabled, the rune representing it will stop glowing.",
@@ -507,6 +507,19 @@
 									]
 								},
 								{
+									"name": "Guardian Golem (Difficulty Low Extra Challenge)",
+									"type": "entries",
+									"page": 12,
+									"entries": [
+										{
+											"type": "statblock",
+											"tag": "creature",
+											"source": "LPPDiDSoIO",
+											"name": "Guardian Golem (Difficulty Low Extra Challenge)"
+										}
+									]
+								},
+								{
 									"name": "Guardian Golem (Difficulty Medium)",
 									"type": "entries",
 									"page": 12,
@@ -520,6 +533,19 @@
 									]
 								},
 								{
+									"name": "Guardian Golem (Difficulty Medium Extra Challenge)",
+									"type": "entries",
+									"page": 12,
+									"entries": [
+										{
+											"type": "statblock",
+											"tag": "creature",
+											"source": "LPPDiDSoIO",
+											"name": "Guardian Golem (Difficulty Medium Extra Challenge)"
+										}
+									]
+								},
+								{
 									"name": "Guardian Golem (Difficulty High)",
 									"type": "entries",
 									"page": 12,
@@ -529,6 +555,19 @@
 											"tag": "creature",
 											"source": "LPPDiDSoIO",
 											"name": "Guardian Golem (Difficulty High)"
+										}
+									]
+								},
+								{
+									"name": "Guardian Golem (Difficulty High Extra Challenge)",
+									"type": "entries",
+									"page": 12,
+									"entries": [
+										{
+											"type": "statblock",
+											"tag": "creature",
+											"source": "LPPDiDSoIO",
+											"name": "Guardian Golem (Difficulty High Extra Challenge)"
 										}
 									]
 								}
@@ -699,7 +738,7 @@
 							]
 						},
 						{
-							"name": "Tarot, Tower Keeper",
+							"name": "Tarot, the Tower Keeper",
 							"type": "entries",
 							"page": 17,
 							"entries": [
@@ -707,7 +746,7 @@
 									"type": "statblock",
 									"tag": "creature",
 									"source": "LPPDiDSoIO",
-									"name": "Tarot, Tower Keeper"
+									"name": "Tarot, the Tower Keeper"
 								}
 							]
 						},
@@ -1183,6 +1222,1646 @@
 			"fluff": {
 				"entries": [
 					""
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			}
+		}
+	],
+	"monster": [
+		{
+			"name": "Guardian Golem (Difficulty Low)",
+			"size": [
+				"L"
+			],
+			"type": "construct",
+			"source": "LPPDiDSo3O",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d6 + 24",
+				"average": 45
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 20,
+			"dex": 9,
+			"con": 18,
+			"int": 3,
+			"wis": 8,
+			"cha": 1,
+			"passive": 9,
+			"cr": "4",
+			"shortName": "Guardian Golem (Difficulty Low)",
+			"page": 12,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"understands the languages of its creator but can't  speak"
+			],
+			"immune": [
+				"acid",
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Acid Absorption",
+					"entries": [
+						"Whenever the golem is subjected to acid damage, it takes no damage and instead regains a number of hit points equal to the acid damage dealt."
+					]
+				},
+				{
+					"name": "Berserk",
+					"entries": [
+						"Whenever the golem starts its turn with 20 hit points or fewer, roll a {@dice d6}. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object, with preference for an object smaller than itself. Once the golem goes berserk, it continues to do so until it is destroyed or regains all its hit points."
+					]
+				},
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"The golem is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The golem's weapon attacks are magical."
+					]
+				}
+			],
+			"traitTags": [
+				"Damage Absorption",
+				"Immutable Form",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The golem makes two Golem Halberd attacks. "
+					]
+				},
+				{
+					"name": "Golem Halberd",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d10 + 5}) slashing damage. If the target is a creature, it must succeed on a {@dc 10} Strength saving throw or be moved 5 feet to an unoccupied space, provided the target is no more than one size larger than you."
+					]
+				},
+				{
+					"name": "Haste {@recharge 5}",
+					"entries": [
+						"Until the end of its next turn, the golem magically gains a +2 bonus to its AC, has advantage on Dexterity saving throws, and can use its slam attack as a bonus action."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"damageTags": [
+				"S"
+			],
+			"savingThrowForced": [
+				"strength"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "XXX"
+			},
+			"fluff": {
+				"entries": [
+					"Guardian Golem (Difficulty Low)"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Guardian Golem (Difficulty Low Extra Challenge)",
+			"size": [
+				"L"
+			],
+			"type": "construct",
+			"source": "LPPDiDSo3O",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d6 + 24",
+				"average": 45
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 20,
+			"dex": 9,
+			"con": 18,
+			"int": 3,
+			"wis": 8,
+			"cha": 1,
+			"passive": 9,
+			"cr": "4",
+			"shortName": "Guardian Golem (Difficulty Low)",
+			"page": 12,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"understands the languages of its creator but can't  speak"
+			],
+			"immune": [
+				"acid",
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Acid Absorption",
+					"entries": [
+						"Whenever the golem is subjected to acid damage, it takes no damage and instead regains a number of hit points equal to the acid damage dealt."
+					]
+				},
+				{
+					"name": "Berserk",
+					"entries": [
+						"Whenever the golem starts its turn with 20 hit points or fewer, roll a {@dice d6}. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object, with preference for an object smaller than itself. Once the golem goes berserk, it continues to do so until it is destroyed or regains all its hit points."
+					]
+				},
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"The golem is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The golem's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Sentinel (Extra Challenge)",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"When you hit a creature with an opportunity attack, the creature's speed becomes 0 for the rest of the turn. . Creatures provoke opportunity attacks from you even if they take the Disengage action before leaving your reach.",
+								"When a creature within 5 feet of you makes an attack against a target other than you (and that target doesn't have this feat), you can use your reaction to make a melee weapon attack against the attacking creature."
+							]
+						}
+					]
+				},
+				{
+					"name": "Polearm Master (Extra Challenge)",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"When you take the Attack action and attack with only a glaive, halberd, quarterstaff, or spear, you can use a bonus action to make a melee attack with the opposite end of the weapon. This attack uses the same ability modifier as the primary attack. The weapon's damage die for this attack is a {@dice d4}, and it deals bludgeoning damage.",
+								"While you are wielding a glaive, halberd, pike, quarterstaff, or spear, other creatures provoke an opportunity attack from you when they enter the reach you have with that weapon."
+							]
+						}
+					]
+				}
+			],
+			"traitTags": [
+				"Damage Absorption",
+				"Immutable Form",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The golem makes two Golem Halberd attacks. "
+					]
+				},
+				{
+					"name": "Golem Halberd",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d10 + 5}) slashing damage. If the target is a creature, it must succeed on a {@dc 10} Strength saving throw or be moved 5 feet to an unoccupied space, provided the target is no more than one size larger than you."
+					]
+				},
+				{
+					"name": "Haste {@recharge 5}",
+					"entries": [
+						"Until the end of its next turn, the golem magically gains a +2 bonus to its AC, has advantage on Dexterity saving throws, and can use its slam attack as a bonus action."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"damageTags": [
+				"S"
+			],
+			"savingThrowForced": [
+				"strength"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "XXX"
+			},
+			"fluff": {
+				"entries": [
+					"Guardian Golem (Difficulty Low Extra Challenge)"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Guardian Golem (Difficulty Medium)",
+			"size": [
+				"L"
+			],
+			"type": "construct",
+			"source": "LPPDiDSo3O",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d10 + 40",
+				"average": 95
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 20,
+			"dex": 9,
+			"con": 18,
+			"int": 3,
+			"wis": 8,
+			"cha": 1,
+			"passive": 9,
+			"cr": "4",
+			"shortName": "Guardian Golem (Difficulty Medium)",
+			"page": 12,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"understands the languages of its creator but can't  speak"
+			],
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"acid",
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Acid Absorption",
+					"entries": [
+						"Whenever the golem is subjected to acid damage, it takes no damage and instead regains a number of hit points equal to the acid damage dealt."
+					]
+				},
+				{
+					"name": "Berserk",
+					"entries": [
+						"Whenever the golem starts its turn with 60 hit points or fewer, roll a {@dice d6}. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object, with preference for an object smaller than itself. Once the golem goes berserk, it continues to do so until it is destroyed or regains all its hit points."
+					]
+				},
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"The golem is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The golem has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The golem's weapon attacks are magical."
+					]
+				}
+			],
+			"traitTags": [
+				"Damage Absorption",
+				"Immutable Form",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The golem makes two Golem Halberd attacks. "
+					]
+				},
+				{
+					"name": "Golem Halberd",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d10 + 5}) slashing damage. If the target is a creature, it must succeed on a {@dc 10} Strength saving throw or be moved 5 feet to an unoccupied space, provided the target is no more than one size larger than you."
+					]
+				},
+				{
+					"name": "Haste {@recharge 5}",
+					"entries": [
+						"Until the end of its next turn, the golem magically gains a +2 bonus to its AC, has advantage on Dexterity saving throws, and can use its slam attack as a bonus action."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"damageTags": [
+				"S"
+			],
+			"savingThrowForced": [
+				"strength"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "XXX"
+			},
+			"fluff": {
+				"entries": [
+					"Guardian Golem (Difficulty Medium)"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Guardian Golem (Difficulty Medium Extra Challenge)",
+			"size": [
+				"L"
+			],
+			"type": "construct",
+			"source": "LPPDiDSo3O",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d10 + 40",
+				"average": 95
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 20,
+			"dex": 9,
+			"con": 18,
+			"int": 3,
+			"wis": 8,
+			"cha": 1,
+			"passive": 9,
+			"cr": "4",
+			"shortName": "Guardian Golem (Difficulty Medium)",
+			"page": 12,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"understands the languages of its creator but can't  speak"
+			],
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"acid",
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Acid Absorption",
+					"entries": [
+						"Whenever the golem is subjected to acid damage, it takes no damage and instead regains a number of hit points equal to the acid damage dealt."
+					]
+				},
+				{
+					"name": "Berserk",
+					"entries": [
+						"Whenever the golem starts its turn with 60 hit points or fewer, roll a {@dice d6}. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object, with preference for an object smaller than itself. Once the golem goes berserk, it continues to do so until it is destroyed or regains all its hit points."
+					]
+				},
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"The golem is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The golem has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The golem's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Sentinel (Extra Challenge)",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"When you hit a creature with an opportunity attack, the creature's speed becomes 0 for the rest of the turn. . Creatures provoke opportunity attacks from you even if they take the Disengage action before leaving your reach.",
+								"When a creature within 5 feet of you makes an attack against a target other than you (and that target doesn't have this feat), you can use your reaction to make a melee weapon attack against the attacking creature."
+							]
+						}
+					]
+				},
+				{
+					"name": "Polearm Master (Extra Challenge)",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"When you take the Attack action and attack with only a glaive, halberd, quarterstaff, or spear, you can use a bonus action to make a melee attack with the opposite end of the weapon. This attack uses the same ability modifier as the primary attack. The weapon's damage die for this attack is a {@dice d4}, and it deals bludgeoning damage.",
+								"While you are wielding a glaive, halberd, pike, quarterstaff, or spear, other creatures provoke an opportunity attack from you when they enter the reach you have with that weapon."
+							]
+						}
+					]
+				}
+			],
+			"traitTags": [
+				"Damage Absorption",
+				"Immutable Form",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The golem makes two Golem Halberd attacks. "
+					]
+				},
+				{
+					"name": "Golem Halberd",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d10 + 5}) slashing damage. If the target is a creature, it must succeed on a {@dc 10} Strength saving throw or be moved 5 feet to an unoccupied space, provided the target is no more than one size larger than you."
+					]
+				},
+				{
+					"name": "Haste {@recharge 5}",
+					"entries": [
+						"Until the end of its next turn, the golem magically gains a +2 bonus to its AC, has advantage on Dexterity saving throws, and can use its slam attack as a bonus action."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"damageTags": [
+				"S"
+			],
+			"savingThrowForced": [
+				"strength"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "XXX"
+			},
+			"fluff": {
+				"entries": [
+					"Guardian Golem (Difficulty Medium Extra Challenge)"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Guardian Golem (Difficulty High)",
+			"size": [
+				"L"
+			],
+			"type": "construct",
+			"source": "LPPDiDSo3O",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d10 + 55",
+				"average": 110
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 20,
+			"dex": 9,
+			"con": 18,
+			"int": 3,
+			"wis": 8,
+			"cha": 1,
+			"passive": 9,
+			"cr": "4",
+			"shortName": "Guardian Golem (Difficulty High)",
+			"page": 12,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"understands the languages of its creator but can't  speak"
+			],
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"acid",
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Acid Absorption",
+					"entries": [
+						"Whenever the golem is subjected to acid damage, it takes no damage and instead regains a number of hit points equal to the acid damage dealt."
+					]
+				},
+				{
+					"name": "Berserk",
+					"entries": [
+						"Whenever the golem starts its turn with 60 hit points or fewer, roll a {@dice d6}. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object, with preference for an object smaller than itself. Once the golem goes berserk, it continues to do so until it is destroyed or regains all its hit points."
+					]
+				},
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"The golem is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The golem has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The golem's weapon attacks are magical."
+					]
+				}
+			],
+			"traitTags": [
+				"Damage Absorption",
+				"Immutable Form",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The golem makes two Golem Halberd attacks. "
+					]
+				},
+				{
+					"name": "Golem Halberd",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d10 + 5}) slashing damage. If the target is a creature, it must succeed on a {@dc 10} Strength saving throw or be moved 5 feet to an unoccupied space, provided the target is no more than one size larger than you."
+					]
+				},
+				{
+					"name": "Haste {@recharge 5}",
+					"entries": [
+						"Until the end of its next turn, the golem magically gains a +2 bonus to its AC, has advantage on Dexterity saving throws, and can use its slam attack as a bonus action."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"damageTags": [
+				"S"
+			],
+			"savingThrowForced": [
+				"strength"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "XXX"
+			},
+			"fluff": {
+				"entries": [
+					"Guardian Golem (Difficulty High)"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Guardian Golem (Difficulty High Extra Challenge)",
+			"size": [
+				"L"
+			],
+			"type": "construct",
+			"source": "LPPDiDSo3O",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d10 + 55",
+				"average": 110
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 20,
+			"dex": 9,
+			"con": 18,
+			"int": 3,
+			"wis": 8,
+			"cha": 1,
+			"passive": 9,
+			"cr": "4",
+			"shortName": "Guardian Golem (Difficulty High)",
+			"page": 12,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"understands the languages of its creator but can't  speak"
+			],
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"acid",
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Acid Absorption",
+					"entries": [
+						"Whenever the golem is subjected to acid damage, it takes no damage and instead regains a number of hit points equal to the acid damage dealt."
+					]
+				},
+				{
+					"name": "Berserk",
+					"entries": [
+						"Whenever the golem starts its turn with 60 hit points or fewer, roll a {@dice d6}. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object, with preference for an object smaller than itself. Once the golem goes berserk, it continues to do so until it is destroyed or regains all its hit points."
+					]
+				},
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"The golem is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The golem has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The golem's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Sentinel (Extra Challenge)",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"When you hit a creature with an opportunity attack, the creature's speed becomes 0 for the rest of the turn. . Creatures provoke opportunity attacks from you even if they take the Disengage action before leaving your reach.",
+								"When a creature within 5 feet of you makes an attack against a target other than you (and that target doesn't have this feat), you can use your reaction to make a melee weapon attack against the attacking creature."
+							]
+						}
+					]
+				},
+				{
+					"name": "Polearm Master (Extra Challenge)",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"When you take the Attack action and attack with only a glaive, halberd, quarterstaff, or spear, you can use a bonus action to make a melee attack with the opposite end of the weapon. This attack uses the same ability modifier as the primary attack. The weapon's damage die for this attack is a {@dice d4}, and it deals bludgeoning damage.",
+								"While you are wielding a glaive, halberd, pike, quarterstaff, or spear, other creatures provoke an opportunity attack from you when they enter the reach you have with that weapon."
+							]
+						}
+					]
+				}
+			],
+			"traitTags": [
+				"Damage Absorption",
+				"Immutable Form",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The golem makes two Golem Halberd attacks. "
+					]
+				},
+				{
+					"name": "Golem Halberd",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d10 + 5}) slashing damage. If the target is a creature, it must succeed on a {@dc 10} Strength saving throw or be moved 5 feet to an unoccupied space, provided the target is no more than one size larger than you."
+					]
+				},
+				{
+					"name": "Haste {@recharge 5}",
+					"entries": [
+						"Until the end of its next turn, the golem magically gains a +2 bonus to its AC, has advantage on Dexterity saving throws, and can use its slam attack as a bonus action."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"damageTags": [
+				"S"
+			],
+			"savingThrowForced": [
+				"strength"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "XXX"
+			},
+			"fluff": {
+				"entries": [
+					"Guardian Golem (Difficulty High Extra Challenge)"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Tarot, the Tower Keeper",
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"source": "LPPDiDSo3O",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "with {@spell mage armor|PHB}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "9d8 + 36",
+				"average": 76
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 14,
+			"dex": 14,
+			"con": 18,
+			"int": 17,
+			"wis": 14,
+			"cha": 14,
+			"passive": 12,
+			"cr": "7",
+			"shortName": "Tarot, the Tower Keeper",
+			"page": 17,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Celestial",
+				"Common",
+				"Draconic",
+				"understands the languages of its creator but can't speak"
+			],
+			"languageTags": [
+				"CE",
+				"C",
+				"DR",
+				"CS"
+			],
+			"save": {
+				"str": "+5",
+				"int": "+6"
+			},
+			"skill": {
+				"arcana": "+6",
+				"history": "+6",
+				"insight": "+5"
+			},
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"acid",
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Acid Absorption",
+					"entries": [
+						"Whenever the golem is subjected to acid damage, it takes no damage and instead regains a number of hit points equal to the acid damage dealt."
+					]
+				},
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"The golem is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The golem has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The golem’s weapon attacks are magical. "
+					]
+				}
+			],
+			"traitTags": [
+				"Damage Absorption",
+				"Immutable Form",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Tarot is a 9th-level spellcaster. Its spellcasting ability is intelligence (spell save {@dc 14}, +6 to hit with spell attacks). Tarot has the following wizard spells prepared: "
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell light}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell detect magic}",
+								"{@spell mage armor}",
+								"{@spell magic missile}",
+								"{@spell shield}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell misty step}",
+								"{@spell suggestion}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell fireball}",
+								"{@spell fly}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell greater invisibility}",
+								"{@spell ice storm}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cone of cold}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Tarot makes two slam attacks"
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d10 + 5}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 15} Constitution saving throw or have its hit point maximum reduced by an amount equal to the damage taken. The target dies if this attack reduces its hit point maximum to 0. The reduction lasts until removed by the greater restoration spell or other magic."
+					]
+				},
+				{
+					"name": "Haste {@recharge 5}",
+					"entries": [
+						"Until the end of its next turn, the golem magically gains a +2 bonus to its AC, has advantage on Dexterity saving throws, and can cast a spell as a bonus action."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"damageTags": [
+				"B"
+			],
+			"damageTagsSpell": [
+				"B",
+				"C",
+				"F",
+				"O"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "XXX"
+			},
+			"fluff": {
+				"entries": [
+					"Tarot, the Tower Keeper"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Mizzark,the Cambion",
+			"size": [
+				"M"
+			],
+			"type": "fiend",
+			"source": "LPPDiDSo3O",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item scale mail|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "11d8 + 33",
+				"average": 82
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60
+			},
+			"str": 18,
+			"dex": 18,
+			"con": 16,
+			"int": 14,
+			"wis": 12,
+			"cha": 16,
+			"passive": 17,
+			"cr": "5",
+			"shortName": "Mizzark,the Cambion",
+			"page": 25,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Infernal",
+				"telepathy 60 ft."
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"I",
+				"TP"
+			],
+			"save": {
+				"str": "+7",
+				"con": "+6",
+				"int": "+5",
+				"cha": "+6"
+			},
+			"skill": {
+				"deception": "+9",
+				"insight": "+7",
+				"perception": "+7",
+				"performance": "+6",
+				"persuasion": "+9"
+			},
+			"resist": [
+				{
+					"resist": [
+						"cold",
+						"fire",
+						"lightning",
+						"poison"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"trait": [
+				{
+					"name": "Telepathic Bond",
+					"entries": [
+						"The fiend ignores the range restriction on its telepathy when communicating with a creature it has {@condition charmed}. The two don't even need to be on the same plane of existence."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Mizzark’s innate spellcasting ability is  Charisma (spell save {@dc 14}, +6 to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
+					],
+					"daily": {
+						"3e": [
+							"{@spell command}",
+							"{@spell friends}"
+						],
+						"1e": [
+							"{@spell plane shift}",
+							"{@spell teleport}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Mizzark makes two melee attacks or uses its Fire Ray twice."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) slashing damage, plus 3 ({@damage 1d6}) fire damage."
+					]
+				},
+				{
+					"name": "Fiendish Charm",
+					"entries": [
+						"One humanoid the fiend can see within 30 feet of it must succeed on a {@dc 14} Wisdom saving throw or be magically {@condition charmed} for 1 day. The {@condition charmed} target obeys Mizzark’s verbal or telepathic commands. If the target suffers any harm or receives a suicidal command, it can repeat the saving throw, ending the effect on a success. If the target successfully saves against the effect, or if the effect on it ends, the target is immune to Fiendish Charm for the next 24 hours. Mizzark can have only one target {@condition charmed} at a time. If it charms another, the effect on the previous target ends."
+					]
+				},
+				{
+					"name": "Fire Ray",
+					"entries": [
+						"{@atk rs} {@hit 7} to hit, range 120 ft., one target. {@h}14 ({@damage 3d6 + 4}) fire damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"charmed"
+			],
+			"damageTags": [
+				"F",
+				"S"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"wisdom"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "XXX"
+			},
+			"fluff": {
+				"entries": [
+					"Mizzark,the Cambion"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Errant Clone",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"source": "LPPDiDSo3O",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "with {@spell mage armor|PHB}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "15d8 + 60",
+				"average": 127
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 18,
+			"int": 20,
+			"wis": 15,
+			"cha": 16,
+			"passive": 12,
+			"cr": "12",
+			"shortName": "Errant Clone",
+			"page": 27,
+			"languages": [
+				"any six languages"
+			],
+			"languageTags": [
+				"X"
+			],
+			"save": {
+				"int": "+9",
+				"wis": "+6"
+			},
+			"skill": {
+				"arcana": "+13",
+				"history": "+13"
+			},
+			"resist": [
+				{
+					"resist": [
+						{
+							"special": "damage from spells"
+						}
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"preNote": "non magical",
+					"note": "(from stoneskin)",
+					"cond": true
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The Errant Clone has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Errant Clone is a 15th-level spellcaster. Its spellcasting ability is intelligence (spell save {@dc 17}, +9 to hit with spell attacks). The Errant Clone can cast invisibility at will and has the following wizard spells prepared:"
+					],
+					"footerEntries": [
+						"* The errant clone casts these spells on itself before combat."
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell light}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}",
+								"{@spell shocking grasp}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell detect magic}",
+								"{@spell identify}",
+								"{@spell mage armor}*",
+								"{@spell magic missile}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell detect thoughts}",
+								"{@spell mirror image}",
+								"{@spell misty step}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell fireball}",
+								"{@spell fly}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell banishment}",
+								"{@spell fire shield}",
+								"{@spell stoneskin}*"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cone of cold}",
+								"{@spell scrying}",
+								"{@spell wall of force}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell chain lightning}"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"{@spell reverse gravity}"
+							],
+							"slots": 1
+						},
+						"8": {
+							"spells": [
+								"{@spell mind blank}*"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage in melee, or 4 ({@damage 1d4 + 2}) piercing damage at range."
+					]
+				}
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"MLW",
+				"THW"
+			],
+			"attachedItems": [
+				"dagger|phb"
+			],
+			"reaction": [
+				{
+					"name": "Portent (3/day)",
+					"entries": [
+						"When the Errant Gone or a creature it can see makes an attack roll, saving throw, or an ability check, Errant Clone rolls a {@dice d20} and chooses whether to use that roll in place of the {@dice d20} rolled for the attack roll, saving throw, or ability check."
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"C",
+				"F",
+				"L",
+				"O"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"dexterity",
+				"wisdom"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "XXX"
+			},
+			"fluff": {
+				"entries": [
+					"Errant Clone"
 				],
 				"images": [
 					{
