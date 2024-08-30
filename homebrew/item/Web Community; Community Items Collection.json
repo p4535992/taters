@@ -2933,6 +2933,7 @@
 			}
 		}
 	],
+
 	"itemGroup": [
 		{
 			"name": "Hidden Blade Variant",
@@ -3041,6 +3042,41 @@
 						"type": "entries"
 					}
 				]
+			}
+		}
+	],
+	"magicvariant": [
+		{
+			"name": "Mithril Weapon",
+			"type": "GV",
+			"requires": [
+				{
+					"weapon": true
+				}
+			],
+			"excludes": {
+				"net": true
+			},
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"Mithril armour weighs 1/4 its normal weight, and does not impose disadvantage on Stealth checks.",
+						"Mithril weapons are considered silver weapons, and ignore a target's resistance (if any) to the damage type of the weapon.",
+						"Any item made of mithril costs at least 4x its standard cost.",
+						"A mithril weapon is being non-magnetic and immune to Heat Metal, as well."
+					]
+				}
+
+			],
+			"inherits": {
+				"namePrefix": "Mithril ",
+				"source": "COMItems",
+				"page": 1,
+				"basicRules": true,
+				"tier": "major",
+				"rarity": "unknown",
+				"valueExpression": "[[baseItem.value]] * 4"
 			}
 		}
 	]
