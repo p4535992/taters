@@ -1,0 +1,291 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "TOotSDS",
+				"abbreviation": "TOotSDS",
+				"full": "The Oathbreakers of the Seven Deadly Sins: Alternative Archetypes for Fallen Paladins",
+				"authors": [
+					"Peter Eccleston"
+				],
+				"convertedBy": [
+					"p4535992"
+				],
+				"version": "2024.06.16",
+				"url": "https://www.dmsguild.com/product/347138/The-Oathbreakers-of-the-Seven-Deadly-Sins-Alternative-Archetypes-for-Fallen-Paladins",
+				"color": "33F6FF"
+			}
+		],
+		"dateAdded": 1604252046,
+		"dateLastModified": 1720034514
+	},
+	"subclass": [
+		{
+			"name": "Oathbreaker of Envy",
+			"source": "TOotSDS",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"shortName": "Oathbreaker Envy",
+			"subclassSpells": [
+				"bane",
+				"disguise self",
+				"alter self", 
+				"crown of madness",
+				"bestow curse", 
+				"dispel magic",
+				"polymorph", 
+				"locate creature",
+				"dream", 
+				"hold monster"
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"bane",
+							"disguise self"
+						],
+						"5": [
+							"alter self", 
+							"crown of madness"
+						],
+						"9": [
+							"bestow curse", 
+							"dispel magic"
+						],
+						"13": [
+							"polymorph", 
+							"locate creature"
+						],
+						"17": [
+							"dream", 
+							"hold monster"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Oath of the Oathbreaker Envy|Paladin|PHB|Oathbreaker Envy|TOotSDS|3",
+				"Aura of the Envious|Paladin|PHB|Oathbreaker Envy|TOotSDS|7",
+				"Shapestealer|Paladin|PHB|Oathbreaker Envy|TOotSDS|15",
+				"Envied Form|Paladin|PHB|Oathbreaker Envy|TOotSDS|20"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Oath of the Oathbreaker Envy",
+			"source": "TOotSDS",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassSource": "TOotSDS",
+			"subclassShortName": "Oathbreaker Envy",
+			"level": 3,
+			"entries": [
+				"From the outside looking in, being a Paladin places you at the top of the world. You are the highest position of authority in the fight against evil, you possess powers of divinity that most people would kill to possess, and you are all admired by the masses for your great and noble deeds. However, paladins know that such observations only scratch the service of what life among fellow paladins is like.",
+				"Instead of being placed at the top as best of the best, you are placed at the bottom of a society whose every runge outclasses you in strength, power, and abilities. You are constantly pushing yourself to climb that ladder in front of the pack, win the respect of your peers and superiors alike, and become the paladin everyone wants to be. Most paladins see this journey as an honorable one, knowing at the end of the day, such competition is meant to be healthy and push young paladins to greatness.",
+				"But not every paladin learns this lesson. Some paladins chafe under the constant competition and their own struggles and failings, secretly envying their peers that seem destined for a spot at the top. Soon enough this secret envy turns into a dangerously hateful obsession as they continue to fail while the subject of their jealousy climbs higher and higher with no end in sight.",
+				"Eventually, their sense of common decency begins to fray. They steal their peers prized possessions, spread foul rumors, set traps to cripple their competitors, anything to push their competitors off their pedestal so they claim that spot for their own. Eventually, when the obsession tales over and it is not enough to steal. They must to claim their rival's entire lives as their own. Such paladins turn to darker sources, breaking their oaths to become envious, hateful former paladins who steal the possessions, lives, and even identities of their victims in order to finally reach the top of a summit they will never be worthy of.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Oathbreaker of Envy Spells|Paladin|PHB|Oathbreaker Envy|TOotSDS|3|TOotSDS"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Channel Divinity: Envious Dysmorphia|Paladin|PHB|Oathbreaker Envy|TOotSDS|3|TOotSDS"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Channel Divinity: Mark of Jealousy|Paladin|PHB|Oathbreaker Envy|TOotSDS|3|TOotSDS"
+				}
+			]
+		},
+		{
+			"name": "Oathbreaker of Envy Spells",
+			"source": "TOotSDS",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassSource": "TOotSDS",
+			"subclassShortName": "Oathbreaker Envy",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				{
+					"type": "table",
+					"caption": "Oath of the Oathbreaker Envy Spells",
+					"colLabels": [
+						"Paladin Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell burning hands|PHB}, {@spell chromatic orb|PHB}"
+						],
+						[
+							"5th",
+							"{@spell shatter|PHB}, {@spell rime's binding ice|FTD}"
+						],
+						[
+							"9th",
+							"{@spell lightning bolt|PHB}, {@spell ashardalon's stride|FTD}"
+						],
+						[
+							"13th",
+							"{@spell fire shield|PHB}, {@spell elemental bane|XGE}"
+						],
+						[
+							"17th",
+							"{@spell immolation|XGE}, {@spell hallow|PHB}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Channel Divinity: Envious Dysmorphia",
+			"source": "TOotSDS",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassSource": "TOotSDS",
+			"subclassShortName": "Oathbreaker Envy",
+			"level": 3,
+			"header": 1,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
+			"entries": [
+				"You can use your Channel Divinity to repel the creatures of the elements. As an action, Each elemental that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is {@condition Frightened} for 1 minute or until it takes any damage."
+			]
+		},
+		{
+			"name": "Channel Divinity: Mark of Jealousy",
+			"source": "TOotSDS",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassSource": "TOotSDS",
+			"subclassShortName": "Oathbreaker Envy",
+			"level": 3,
+			"header": 1,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
+			"entries": [
+				"You can use your Channel Divinity to send a burst of healing energy to one out of your reach. As a bonus action you can draw from your lay on hands pool to restore a number of Hit Points to a creature you can see within 30 ft., up to the maximum amount remaining in your pool."
+			]
+		},
+		{
+			"name": "Elemental Burst",
+			"source": "TOotSDS",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassSource": "TOotSDS",
+			"subclassShortName": "Oathbreaker Envy",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"At 3rd level, when you hit a creature with a ranged spell attack of 1st level or higher, you can expend one use of your divine sense to deal additional damage to the target. Roll 2d8. depending on the numbers rolled, determines the attacks damage type based on one of the two rolls, as shown in the Elemental Damage table below below. The creature suffers additional damage equal to the rolled total and selected damage type.",
+				{
+					"type": "table",
+					"caption": "Elemental Damage",
+					"colLabels": [
+						"d8",
+						"Damage Type"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-3 text-cente"
+					],
+					"rows": [
+						[
+							"1",
+							"acid"
+						],
+						[
+							"2",
+							"cold"
+						],
+						[
+							"3",
+							"fire"
+						],
+						[
+							"4",
+							"force"
+						],
+						[
+							"5",
+							"lightning"
+						],
+						[
+							"6",
+							"poison"
+						],
+						[
+							"7",
+							"psychic"
+						],
+						[
+							"8",
+							"thunder"
+						]
+					]
+				},
+				"The extra damage increases by {@dice 1d8} for each spell level higher than 1st, to a maximum of {@dice 5d8}. Additionally, the damage increases by {@dice 1d8} if the target is an undead or a fiend, to a maximum of {@dice 6d8}."
+			]
+		},
+		{
+			"name": "Aura of the Envious",
+			"source": "TOotSDS",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassSource": "TOotSDS",
+			"subclassShortName": "Oathbreaker Envy",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"Starting at 7th level, you and friendly creatures within 10 feet of you gain resistance to acid, cold, fire, lightning, or thunder damage which you choose at the end of a long rest.",
+				"Additionally at 9th level, you can redirect oncoming damage back at assailants. As a reaction upon taking damage of the same type as your {@b Aura of Primordial}, you send a part of the attack back at the creature who hit you. The target takes 1d6 damage of a type equal to your {@b Aura of Primordial}. You can use this feature a number of times equal to your charisma modifier, regain all expended uses after a long rest."
+			]
+		},
+		{
+			"name": "Shapestealer",
+			"source": "TOotSDS",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassSource": "TOotSDS",
+			"subclassShortName": "Oathbreaker Envy",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"At 15th level, when you cast a evocation and transmutation spell of 1st level or higher that targets only one creature, the spell can instead target two creatures within range and within 5 ft. of each other. If the spell consumes its material components, you must provide them for each target."
+			]
+		},
+		{
+			"name": "Envied Form",
+			"source": "TOotSDS",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassSource": "TOotSDS",
+			"subclassShortName": "Oathbreaker Envy",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"At 20th level, as an action, you become the scales of the elements, bringing balance to the chaos. For 1 minute the elements will protect you, granting you the following benefits.",
+				{
+					"type": "list",
+					"items": [
+						"You have advantage on saving throws against spells and other magical effects.",
+						"Whenever a creature casts an evocation spell on you, and you suffer damage, the creature suffers half the amount of damage you took."
+					]
+				},
+				"Once you use this feature, you can't use it again until you finish a long rest."
+			]
+		}
+	]
+}
