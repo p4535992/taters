@@ -73,7 +73,36 @@
 						"The first night they must succeed on a DC 15 Wisdom saving throw or run wild under the night sky, the second night they roll again to resist becoming aggressive and violent, switching their alignment to Chaotic Evil and finally, if they fail the roll of the third night, the character turns completely insane. Until the moon phase changes again, they act as complete lunatics.",
 						"During the three night period, they suffer a -2 penalty on all ability checks and saving throws. A {@spell greater restoration|PHB} spell cast upon an afflicted with moon madness target, stops the current effects of the madness but the target will still have to resist the next night's effects."
 					]
+				},
+				"If the Gabrielle Aderre dies, these effects will remains."
+			]
+		},
+		{
+			"name": "Darklords&DomainsVol1LairActionsAbolethOfLakeZarovich",
+			"source": "Darklords&DomainsVol1",
+			"lairActions": [
+				"On initiative count 20 (losing initiative ties), the trapped aboleth can take a lair action to create one of the magical ef-fects listed below. The trapped aboleth cannot use the same effect two rounds in a row.",
+				{
+					"type": "list",
+					"items": [
+						"{@b Detect:} The trapped aboleth makes a Wisdom (Perception) check.",
+						"{@b Tail Swipe:} The trapped aboleth makes one tail attack.",
+						"{@b Psychic Drain (Costs 2 Actions):} One creature charmed by the trapped aboleth takes 10 ({@damage 3d6}) psychic dam-age, and the trapped aboleth regains Hit Points equal to the damage the creature takes.",
+						"{@b Void Absorbance:} The trapped aboleth can pull the life force from those it has infected to replenish its own life. Any one infected within 30ft of the trapped aboleth takes 18 ({@damage 6d6}) psychic damage and heals the trapped aboleth by the amount rolled."
+					]
 				}
+			],
+			"regionalEffects": [
+				"The regional effects of the trapped aboleth’s lair are the same as that of an aboleth, except as follows:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Water Disease:} Underground surfaces within 1 mile of the trapped aboleth’s lair are slimy and wet and are difficult terrain. Water sources within 1 mile of the lair are supernaturally fouled and can spread the disease of the trapped aboleth. A creature who drinks from such water must make a successful DC 14 Constitution check or become infected. (This is countered by the lake’s peculiar nature and the radius is only limited to the lair of the trapped aboleth). Enemies of the trapped aboleth that drink such water will vomit it back up within minutes.",
+						"{@b Illusion:} As an action, the trapped aboleth can create an illu-sory image of itself within 1 mile of the lair. The copy can appear at any location the trapped aboleth has seen before or in any location a creature charmed by the trapped aboleth can currently see. Once created, the image lasts for as long as the trapped abo-leth maintains concentration, as if concentrating on a spell. Although the image is intangible, it looks, sounds, and can move like the trapped aboleth. The trapped aboleth can sense, speak, and use telepathy from the image’s position as if present at that position. If the image takes any damage, it disappears."
+
+					]
+				},
+				"If the aboleth dies, these effects fade over the course of {@dice ld10} days."
 			]
 		}
 	],
@@ -3899,6 +3928,34 @@
 		}
 	],
 	"language": [
+		{
+			"name": "Void Speech",
+			"source": "Darklords&DomainsVol1",
+			"type": "exotic",
+			"typicalSpeakers": [
+				"{@creature mind flayer|MM|mind flayers}",
+				"{@creature beholder|MM|beholders}",
+				"{@creature aboleth|MM|beholders}"
+			],
+			"script": "none",
+			"entries": [
+				"This is the language of the Outer Darkness in the Midgard campaign setting. It is spoken by vile things that are malevolent toward humanoids and their allies and by those who seek to bring about the ruinous apocalypse of the dark gods. If Void Speech isn't a language in your world, you can substitute Void Speech with any ancient language with an evil reputation or with {@language Deep Speech}."
+			],
+			"otherSources": [
+				{
+					"source": "ToB",
+					"page": 9
+				},
+				{
+					"source": "ToB2",
+					"page": 3
+				},
+				{
+					"source": "ToB3",
+					"page": 6
+				}
+			]
+		},
 		{
 			"name": "Arak",
 			"source": "Darklords&DomainsVol1",
@@ -8304,6 +8361,501 @@
 				"dexterity",
 				"strength"
 			]
+		},
+		{
+			"name": "Strahd’s Shadow",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"source": "Darklords&DomainsVol1",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d8 + 54",
+				"average": 135
+			},
+			"speed": {
+				"fly": {
+					"number": 40,
+					"condition": "(hover)"
+				},
+				"canHover": true,
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 18,
+			"con": 17,
+			"int": 14,
+			"wis": 14,
+			"cha": 19,
+			"passive": 12,
+			"cr": "7",
+			"shortName": "Strahd’s Shadow",
+			"page": 354,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"understands Abyssal",
+				"Common",
+				"Draconic",
+				"Elvish",
+				"Giant",
+				"Infernal but can't speak"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"DR",
+				"E",
+				"GI",
+				"CS",
+				"I"
+			],
+			"save": {
+				"dex": "+7",
+				"con": "+6"
+			},
+			"skill": {
+				"stealth": "+7"
+			},
+			"vulnerable": [
+				"radiant"
+			],
+			"resist": [
+				{
+					"resist": [
+						"acid",
+						"cold",
+						"fire",
+						"lightning",
+						"thunder"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons",
+					"cond": true
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"trait": [
+				{
+					"name": "Amorphous",
+					"entries": [
+						"The shadow can move through a space as narrow as 1 inch wide without squeezing."
+					]
+				},
+				{
+					"name": "Shadow Stealth",
+					"entries": [
+						"While in dim light or darkness, the shadow can take the Hide action as a bonus action. Its Stealth bonus is also Improved to +10. "
+					]
+				},
+				{
+					"name": "Sunlight Weakness",
+					"entries": [
+						"While in sunlight, the shadow has disad-vantage on attack rolls, ability checks, and saving throws. "
+					]
+				},
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"The shadow can move through  other creatures and objects as if they were difficult terrain. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object. "
+					]
+				},
+				{
+					"name": "In My Shadow",
+					"entries": [
+						"The shadow and Strahd can communicate telepathically as long as they are on the same plane. Any new information that the shadow gains is presumed to be immediately learned by Strahd. Strahd also senses when his shadow is killed and where it is, and may resurrect it by personally visiting that location. "
+					]
+				},
+				{
+					"name": "Shadowy Informant",
+					"entries": [
+						"Strahd’s shadow is his primary informa-tion-gathering agent (though far from his only one). It lurks in the shadows, listening to conversations, reading minds, and sometimes siphoning thoughts. If seen or caught it will try to modify a witness’s memory and hide and/or flee, and will only fight if it has no other option. "
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The shadow has advantage on saving throws against spells and other magical effects. "
+					]
+				}
+			],
+			"traitTags": [
+				"Amorphous",
+				"Incorporeal Movement",
+				"Magic Resistance"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The shadow’s innate spellcasting ability is Charisma (spell save {@dc 15}, +7 to hit with spell attacks). It can innately cast the following spells, requiring no material components: "
+					],
+					"daily": {
+						"3e": [
+							"{@spell detect thoughts}",
+							"{@spell fear}",
+							"{@spell invisibility}",
+							"{@spell mind spike|XGE}",
+							"{@spell modify memory}",
+							"{@spell telekinesis}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The shadow makes one bite attack and two claw attacks. "
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d10 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Siphon Thoughts",
+					"entries": [
+						"The shadow touches an {@condition unconscious} creature, which makes a {@dc 15} Wisdom save. On a failure, the shadow learns all of their memories. On a success, the shadow only learns the target’s memories of everything since they last woke up, usually only a day or so."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"damageTags": [
+				"O",
+				"P",
+				"S"
+			],
+			"damageTagsSpell": [
+				"Y"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "XXX"
+			},
+			"fluff": {
+				"entries": [
+					"Strahd has found a way to detach his shadow from his body and utilise it as one of his greatest tools. Strahd’s shadow acts as a spy for Strahd and shares everything it learns with its master. It can siphon the thoughts and memories of any victim making intero-gation needless."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Aboleth of Lake Zarovich",
+			"size": [
+				"L"
+			],
+			"type": "undead",
+			"source": "Darklords&DomainsVol1",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "21d10 + 63",
+				"average": 178
+			},
+			"speed": {
+				"walk": 10,
+				"fly": {
+					"number": 50,
+					"condition": "(hover)"
+				},
+				"canHover": true,
+				"swim": 40
+			},
+			"str": 21,
+			"dex": 9,
+			"con": 16,
+			"int": 18,
+			"wis": 16,
+			"cha": 18,
+			"passive": 21,
+			"cr": "12",
+			"shortName": "Aboleth of Lake Zarovich",
+			"page": 355,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languages": [
+				"Void Speech",
+				"telepathy 120 ft."
+			],
+			"languageTags": [
+				"TP"
+			],
+			"save": {
+				"con": "+7",
+				"int": "+8",
+				"wis": "+7"
+			},
+			"skill": {
+				"arcana": "+8",
+				"history": "+12",
+				"perception": "+11",
+				"religion": "+8",
+				"stealth": "+3"
+			},
+			"resist": [
+				{
+					"resist": [
+						"acid",
+						"fire",
+						"lightning"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons",
+					"cond": true
+				},
+				{
+					"resist": [
+						"thunder"
+					],
+					"note": "(only when in ethereal form)"
+				}
+			],
+			"immune": [
+				{
+					"immune": [
+						"cold",
+						"necrotic",
+						"poison"
+					]
+				},
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons (only when in ethereal form)",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"trait": [
+				{
+					"name": "Undead Fortitude",
+					"entries": [
+						"If damage reduces the trapped aboleth to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is ra-diant or from a critical hit. On a success, the trapped aboleth drops to 1 hit point instead."
+					]
+				},
+				{
+					"name": "Void Aura",
+					"entries": [
+						"The trapped aboleth is surrounded by a chilling cloud. A living creature that starts its turn within 5 feet of it must make a successful {@dc 14} Constitution saving throw or be slowed until the start of its next turn. In addition, any creature that has been infected by the trapped aboleth takes 7 ({@damage 2d6}) cold damage every time it starts its turn within the aura."
+					]
+				},
+				{
+					"name": "Infecting Telepathy",
+					"entries": [
+						"If a creature communicates telepath-ically with the trapped aboleth, or uses a psychic attack against it, the trapped aboleth can spread its disease to the creature. The creature must succeed on a {@dc 14} Wisdom save or become infected with the same disease caused by the trapped aboleth’s tentacle attack."
+					]
+				}
+			],
+			"traitTags": [
+				"Undead Fortitude"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"DIS"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The aboleth makes three tentacle attacks or three withering touches, depending on what form it is in."
+					]
+				},
+				{
+					"name": "Tentacle",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}12 ({@damage 2d6 + 5}) bludgeoning damage. If the target creature is hit, it must make a successful {@dc 14} Constitu-tion saving throw or become diseased. The disease has no effect for 1 minute; during that time, it can be removed by lesser restoration or comparable magic. After 1 minute, the diseased creature’s skin becomes translucent and slimy. The creature cannot regain hit points unless it is entirely underwater, and the disease can only be removed by heal or comparable magic. Unless the creature is fully submerged or frequently doused with water, it takes 6 ({@damage 1d12}) acid damage every 10 minutes. If a creature dies while diseased, it rises in {@dice 1d6} rounds as an abolethic zombie. This zombie is permanently dominated by the aboleth and uses the zombie statblock but has a swim speed of 30ft."
+					]
+				},
+				{
+					"name": "Withering Touch",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}14 ({@damage 3d6 + 4}) necrotic damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}15 ({@damage 3d6 + 5}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Enslave (3/Day)",
+					"entries": [
+						"The trapped aboleth targets one creature it can see within 30 ft. of it. The target must succeed on a {@dc 14} Wisdom saving throw or be magically {@condition charmed} by the trapped aboleth until either it diesor until it is on a different plane of existence from the target. The {@condition charmed} target is under the trapped aboleth’s control and can’t take reactions, and the two can communicate telepathically with each other over any distance. Whenever the {@condition charmed} target takes damage, the target can repeat the saving throw. On a success, the effect ends. No more than once every 24 hours, the target can also repeat the saving throw when it is at least 1 mile away from the trapped aboleth. "
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Tentacles"
+			],
+			"conditionInflict": [
+				"charmed"
+			],
+			"reaction": [
+				{
+					"name": "Constitution of the Void",
+					"entries": [
+						"The trapped aboleth can reduce the damage it takes from a single source to 0. This doesn’t apply to radiant damage."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Darklords&DomainsVol1LairActionsAbolethOfLakeZarovich",
+				"source": "Darklords&DomainsVol1"
+			},
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"The trapped aboleth can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another crea-ture’s turn. The trapped aboleth regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Detect",
+					"entries": [
+						"The trapped aboleth makes a Wisdom (Perception) check."
+					]
+				},
+				{
+					"name": "Tail Swipe",
+					"entries": [
+						"The trapped aboleth makes one tail attack."
+					]
+				},
+				{
+					"name": "Psychic Drain (Costs 2 Actions)",
+					"entries": [
+						"One creature {@condition charmed} by the trapped aboleth takes 10 ({@damage 3d6}) psychic damage, and the trapped aboleth regains hit points equal to the damage the creature takes."
+					]
+				}
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"C",
+				"N",
+				"Y"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "XXX"
+			},
+			"fluff": {
+				"entries": [
+					"This unfortunate Aboleth was resting inside Lake Zarovich when Barovia was dragged into the mist and got trapped in Ravenloft. The beast sought out Vistani victims in particu-lar, hoping to learn the secrets of navigating the mists and fleeing Ravenloft. For years, the Vistani in the area have warned visitors to give Lake Zarovich a wide berth."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Gwydion the Fiend-Sorcerer (Trapped)",
