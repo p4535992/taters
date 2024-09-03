@@ -479,6 +479,391 @@
 			}
 		},
 		{
+			"name": "Create Skeletal Steed",
+			"level": 2,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"This spell created by Strahd animates the skeleton of a large horse or horse-like creature (here the statblocks {@creature Strahd's Skeletal Steed summoned|Darklords&DomainsVol1}). Missing bones reform as long as at least half of the skeleton exists. The creature created lasts until it drops to 0 hp. When it does so, it collapses into a pile of bones, dropping any items carried onto the ground. You can then reuse the pile of bones to cast this spell again to recreate the skeletal steed. The skeletal steed is immediately able to draw a large wagon. You will need to have special saddles created in order to ride it. The mount uses the {@creature Strahd's Skeletal Steed|Darklords&DomainsVol1} stats. The steed can kick and charge like a warhorse. It will not be able to fly even if it has bony wings. It has an intelligence of 6 and can understand and will follow basic commands in any language the caster knows. It can carry up to 500 lbs and may be assigned to a particular rider."
+			],
+			"source": "Darklords&DomainsVol1",
+			"page": 391,
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a the skeleton of a large horse or horse-like creature and a bail of hay"
+			}
+		},
+		{
+			"name": "Allergen",
+			"level": 5,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"This spell plays upon the deep psychological and physiological revulsion towards certain objects that some creatures possess, If the targeted creature fails its Wisdom saving throw, it becomes convinced that the focus item the caster presents is its allergen. How it reacts depends on the creature's personality, how strong its aversion is, and how threatening the caster chooses to be. If The allergen fascinates the subject, enrages it or prevents it from approaching (like garlic to a vampire), then that takes effect nor-mally. If the allergen would normally kill the creature (as wolfsbane does to a werewolf), then the creature must make a Wisdom saving throw or become fright-ened of the item for as long as it can see it. Particu-larly aggressive creatures that succeed at the saving throw may attack, however, trying to wrest the illusory allergen away from the caster. Once the spell ends, the subject's senses return to normal, If they can still see (or otherwise sense) the focus, they realize that the caster has made a fool of them, If not, they may continue to believe that the caster still possesses their allergen. This spell can be used against lycanthropes, vampires, any ghost or ancient dead that has an aller-gen due to some salient power, and any other crea-ture that has a chemical vulnerability or crippling reac-tion to an object of some kind. People with unnaturally strong phobias can also be {@condition frightened} by the allergen."
+			],
+			"source": "Darklords&DomainsVol1",
+			"page": 391,
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an item to pose as an allergen"
+			}
+		},
+		{
+			"name": "Decompose",
+			"level": 0,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You reach out and touch the corpse of a creature. Over the next minute, the corpse begins to rapidly decompose, sprouting fungus and moss as it begins to degrade into compost and mulch. An odd-colored flower or two may also spring from the corpse at this time. Applicable requirements for resurrection are unaffected by this decomposition."
+			],
+			"source": "Darklords&DomainsVol1",
+			"page": 391,
+			"components": {
+				"v": true,
+				"s": true
+			}
+		},
+		{
+			"name": "Frightful Joining",
+			"level": 7,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 12
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"This spell enables a living caster to merge their mind with the body of an undead monster or an undead caster to merge their mind with the body of a living humanoid creature. The caster must target this spell on a living humanoid creature if the caster is undead or an undead creature if the caster is alive. A target that is not a human receives a +2 bonus to their saving throw against this spell. If the saving throw succeeds, the spellcaster is forced back into their original body. If the target's saving throw fails, the spellcaster joins their mind with the target's body. While in the target's body, the caster can use all of the victim's special abilities except memorized spells. Meanwhile, the spell-caster's body remains {@condition incapacitated} and vulnerable to attacks. Once in the target's body, the spellcaster can travel any distance as long as they remain in the same domain as their true body. Once in the target's body, a living caster makes the undead feel as if they were alive again while an undead caster fills the target's mind with ghastly thoughts. At the beginning of each hour during the joining, if the target is a living creature, it must attempt a madness check. Failure means that the undead caster's mind overcomes that of the vic-tim, no further checks are necessary and the undead spellcaster can remain in control of their mortal victim effortlessly for the duration of the spell. A successful madness check means that the undead spellcaster must roll a DC 15 saving throw to remain in the body. If the check succeeds, the mental battle goes on. If it fails, the undead creature's mind is cast from the body, and the victim regains control. However, a target who successfully ejects the undead spellcaster from their body gains a long term madness.  One interesting side effect of the frightful joining is that while in the mortal body, the caster can do things that cannot be done in their own undead body. For example, a vampiric caster can walk in the sunlight and see their reflection in a mirror. "
+			],
+			"source": "Darklords&DomainsVol1",
+			"page": 392,
+			"components": {
+				"v": true,
+				"s": true
+			}
+		},
+		{
+			"name": "Strahd's Choking Fog",
+			"level": 5,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You create a 40-foot-radius sphere of fog centered on a point within range. The sphere spreads around cor-ners, and its area is heavily obscured. It lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it.",
+				"A living creature passing beyond the outer limit of the ring of fog is overcome by a fit of coughing that does {@dice 1d4} points of temporary Constitution damage per turn (no saving throw) until the victim dies. Lost constitu-tion is restored at a rate of one point per round and it can only be restored while outside of the fog ring. The Vistani sell, at the discretion of Count Strahd von Zarovich, an elixir that makes the one that drinks it im-mune to this spell for {@dice 1d4} hours."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 7th level or higher, the radius of the fog increases by 20 feet for each slot level above 1st."
+					]
+				}
+			],
+			"source": "Darklords&DomainsVol1",
+			"page": 392,
+			"components": {
+				"v": true,
+				"s": true
+			}
+		},
+		{
+			"name": "Strahd's Malefic Meld",
+			"level": 5,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"This spell enables the necromancer to create an undead, golem like monster composed of up to three dead bodies. The caster can choose these parts from any selection of dead animals, humanoids, or mon-sters, as long as they span no more than two size cat-egories. For example, the caster could meld a giant boar and an elf, since one is Large and the other is Medium. However, the caster cannot not meld a rat and an elf since the rat is Tiny which is more than one size category different from the elf. Similarly, the caster could not meld a Small, a Medium, and a Large crea-ture. Also, none of the creatures melded together can have more than 5 Hit Dice. The advantage of the meld is that the caster can use various attributes from which-ever of the original creatures used them best though the monster will always have animal Intelligence. Most attributes are associated with a particular piece of the creature's body, which must be used in the meld. At least one attribute must be taken from each creature in the meld. The created monster will always loyally serve its creator. The created monster inherits four attributes from the original creatures: Hit Dice, Armor Class, movement rate and attacks. The monster's armor class becomes the AC of the creature that had the highest, its type is changed to undead and it has advantage to turning undead attempts. The caster can derive the monster's movement rates from multiple creatures as long as they choose only one movement rate per crea-ture per medium (running, swimming, flying, burrowing etc.). The ability scores of the created creature uses the stats of the original creatures in any combination but in accordance to the parts of the creatures used. Constitution score comes from the creature that grants the creation its total hit dice, Strength comes from the creature that gave its arms, Dexterity comes from the creature that gave its legs and speed, Wisdom, Intelli-gence and Charisma is always 8(-1). The caster must transfer the number of attacks per round from a single creature but can give their creation attack forms from any or all of the creatures in the meld. The creature will often have more attack forms than its parts normal-ly have. The appropriate body part for the attack form must exist in the meld. Most physical attacks can be re-tained, including poison, paralysis, web spinning, and breath weapons. Magical or mental powers do not survive the transition into undeath. This includes gaze at-tacks, spellcasting, magic resistance, immunity to non-magical weapons, spell-like abilities, a lycanthrope's cursed bite, etc. One of Strahd's favorite melds is a werewolf, large spider,and gargoyle. This foul creature uses the gargoyle's flying movement and the spider's ground movement. (Even though a werewolf is faster than the spider, he can only pick the legs of one of them and therefore cannot have web movement if he uses the lycanthrope's legs). The Hit Dice are drawn from the werewolf. which has {@dice 9d8} Hit Dice. The Armor Class of 15 is taken from the gargoyle, as are the num-ber of attacks (2). The creature gets the werewolf's bite and the spider's poison and web-spinning abili-ty. Visually, the abomination has spider legs, a were-wolf body and head, and gargoyle wings and arms."
+			],
+			"source": "Darklords&DomainsVol1",
+			"page": 393,
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a dead creatures and a pinch of doppelganger's bone powder"
+			}
+		},
+		{
+			"name": "Ghoul Touch",
+			"level": 3,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You touch a living creature to imbue a minor magical strain of undeath, paralyzing it. The target must suc-ceed on a Constitution saving throw or become para-lyzed for the spell's duration. Constructs and undead automatically succeed on this saving throw. A creature {@condition paralyzed} with this spell exudes a terrible stench that ef-fectively nauseates all other creatures within proximity. During the spell's duration, when a creature first enters or starts its turn within 5 feet of the {@condition paralyzed} creature, it must succeed on a Constitution saving throw or be-come {@condition poisoned} until the start of its next turn. Constructs and undead automatically succeed on this saving throw. "
+			],
+			"source": "Darklords&DomainsVol1",
+			"page": 393,
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a small scrap of a corpse's cloth, wrapped around your hand when you touch the target"
+			}
+		},
+		{
 			"name": "Wall of Fog",
 			"source": "Darklords&DomainsVol1",
 			"level": 3,
@@ -2118,7 +2503,7 @@
 					"The Black Carriage is surprisingly light and has a weight of 500 lbs. Any creature or object travelling upon the carriage does not contribute to its weight.",
 					"Four magic lanterns hang from the sides of the carriage which emit violet light, granting 60ft darkvision to anyone riding it, and boosting undead creatures in the same radius by granting them both advantage to turning and increasing weapon damage by 1d6 necrotic damage. The lanterns can be turned off with a command ({@i lights out}) or turned on with the command ({@i lights on}). The lamps can be removed from the Carriage and still function but if they are not returned within 12 hours, they disappear and reappear by the sides of the carriage.",
 					"The Black Carriage is usually controlled by an invisible coachman similar to an unseen servant which is summoned with it when the figurine takes its carriage form. It can assume the role of driver and direct the carriage, although it can't perform any complex or dangerous driving, and fails any checks made to drive the carriage in such conditions. Any intelligent undead or humanoid creature can replace the unseen servant as the driver. The humanoid creature needs to succeed on a DC 15 Athletics check to be able to control the Black Carriage and rolls with disadvantage when it tries to perform any complex or dangerous driving.",
-					"The Black Carriage does not have any horses pulling it. Any living horses that are tied to it, permanently transform to their undead versions and when they are removed from the cart, they immediately die. Usually the cart is pulled by Strahd's Skeletal Steeds.",
+					"The Black Carriage does not have any horses pulling it. Any living horses that are tied to it, permanently transform to their undead versions and when they are removed from the cart, they immediately die. Usually the cart is pulled by {@creature Strahd's Skeletal Steed|Darklords&DomainsVol1}s.",
 					"Inside the back bench seat is an area of extradimensional space that can hold up to 2000 lbs of creatures and/or materials. Storing or retrieving an item from the bench requires an action. Breathing creatures inside this space can survive for a number of minutes equal to 10 divided by the number of creatures (minimum 1 minute), after which time they begin to suffocate. Placing a {@item Bag of Holding|DMG}, {@item Portable Hole|DMG}, or other extradimensional item inside this space instantly destroys both items and opens a gate to the border ethereal. Any creature and items within 10 feet are sucked through it to the border ethereal. The gate then closes. The gate is one-way and can't be reopened.",
 					"When the Black Carriage is in figurine form it can be placed in extradimensional space. By saying the command words \"Black Carriage reduce\", the carriage shrinks back to its original size at the end of your next turn. During this time any creature inside must succeed on a DC 15 Dexterity saving throw or be cast into the border ethereal."
 				],
@@ -2134,7 +2519,7 @@
 					"The Black Carriage is surprisingly light and has a weight of 500 lbs. Any creature or object travelling upon the carriage does not contribute to its weight.",
 					"Four magic lanterns hang from the sides of the carriage which emit violet light, granting 60ft darkvision to anyone riding it, and boosting undead creatures in the same radius by granting them both advantage to turning and increasing weapon damage by 1d6 necrotic damage. The lanterns can be turned off with a command ({@i lights out}) or turned on with the command ({@i lights on}). The lamps can be removed from the Carriage and still function but if they are not returned within 12 hours, they disappear and reappear by the sides of the carriage.",
 					"The Black Carriage is usually controlled by an invisible coachman similar to an unseen servant which is summoned with it when the figurine takes its carriage form. It can assume the role of driver and direct the carriage, although it can't perform any complex or dangerous driving, and fails any checks made to drive the carriage in such conditions. Any intelligent undead or humanoid creature can replace the unseen servant as the driver. The humanoid creature needs to succeed on a DC 15 Athletics check to be able to control the Black Carriage and rolls with disadvantage when it tries to perform any complex or dangerous driving.",
-					"The Black Carriage does not have any horses pulling it. Any living horses that are tied to it, permanently transform to their undead versions and when they are removed from the cart, they immediately die. Usually the cart is pulled by Strahd's Skeletal Steeds.",
+					"The Black Carriage does not have any horses pulling it. Any living horses that are tied to it, permanently transform to their undead versions and when they are removed from the cart, they immediately die. Usually the cart is pulled by {@creature Strahd's Skeletal Steed|Darklords&DomainsVol1}s.",
 					"Inside the back bench seat is an area of extradimensional space that can hold up to 2000 lbs of creatures and/or materials. Storing or retrieving an item from the bench requires an action. Breathing creatures inside this space can survive for a number of minutes equal to 10 divided by the number of creatures (minimum 1 minute), after which time they begin to suffocate. Placing a {@item Bag of Holding|DMG}, {@item Portable Hole|DMG}, or other extradimensional item inside this space instantly destroys both items and opens a gate to the border ethereal. Any creature and items within 10 feet are sucked through it to the border ethereal. The gate then closes. The gate is one-way and can't be reopened.",
 					"When the Black Carriage is in figurine form it can be placed in extradimensional space. By saying the command words \"Black Carriage reduce\", the carriage shrinks back to its original size at the end of your next turn. During this time any creature inside must succeed on a DC 15 Dexterity saving throw or be cast into the border ethereal."
 				],
@@ -7591,6 +7976,336 @@
 	],
 	"monster": [
 		{
+			"name": "Strahd's Skeletal Steed",
+			"size": [
+				"L"
+			],
+			"type": "undead",
+			"source": "Darklords&DomainsVol1",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d10 + 10",
+				"average": 37
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 15,
+			"int": 6,
+			"wis": 8,
+			"cha": 5,
+			"passive": 9,
+			"cr": "1",
+			"shortName": "Strahd's Skeletal Steed",
+			"page": 354,
+			"languages": [
+				"understands Common but can't speak"
+			],
+			"languageTags": [
+				"C",
+				"CS"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"save": {
+				"str": "+6"
+			},
+			"vulnerable": [
+				"bludgeoning"
+			],
+			"immune": [
+				{
+					"immune": [
+						"cold",
+						"fire",
+						"poison"
+					]
+				},
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Trampling Charge",
+					"entries": [
+						"If the steed moves at least 20 ft. straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the horse can make another attack with its hooves against it as a bonus action."
+					]
+				},
+				{
+					"name": "Permanently Damaged",
+					"entries": [
+						"Any damage the steed takes is permanent and cannot be healed."
+					]
+				},
+				{
+					"name": "Play Dead",
+					"entries": [
+						"The steed can collapse into a pile of bones making it indiscernible from any other pile of bones until it decides to take horse form again. Attacks that target it while in this form have advantage. "
+					]
+				},
+				{
+					"name": "Resistant to Turning",
+					"entries": [
+						"The steed rolls saving throws against abilities that try to turn it, with advantage. "
+					]
+				}
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Hooves",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Breath Weapon (1/Day)",
+					"entries": [
+						"The steed exhales a noxious cloud in a 10-foot cone. Each creature in that area must make a {@dc 14} Dexterity saving throw, taking 10 ({@damage 3d6}) poison damage on a failed save and be {@condition petrified} to the spot for {@dice 1d4 + 1} rounds, or half as much damage on a successful one. A {@condition petrified} creature can end this effect on a successful roll, making the save at the end of each of its turns."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"damageTags": [
+				"B",
+				"I",
+				"P"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "XXX"
+			},
+			"fluff": {
+				"entries": [
+					"Strahd is a potent necromancer who has reanimated the carcass of a dead horse into a skeletal steed to serve his dark purposes. The skeletal steed is stron-ger than a normal horse in many ways as its breath can petrify or even kill those unlucky enough to stand in front of it. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Strahd's Skeletal Steed summoned",
+			"size": [
+				"L"
+			],
+			"type": "undead",
+			"source": "Darklords&DomainsVol1",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d10 + 10",
+				"average": 37
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 15,
+			"int": 6,
+			"wis": 8,
+			"cha": 5,
+			"passive": 9,
+			"cr": "1",
+			"shortName": "Strahd's Skeletal Steed summoned",
+			"page": 354,
+			"languages": [
+				"understand and will follow basic commands in any language the caster knows"
+			],
+			"languageTags": [
+				"X"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"save": {
+				"str": "+6"
+			},
+			"vulnerable": [
+				"bludgeoning"
+			],
+			"immune": [
+				{
+					"immune": [
+						"cold",
+						"fire",
+						"poison"
+					]
+				},
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Trampling Charge",
+					"entries": [
+						"If the steed moves at least 20 ft. straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the horse can make another attack with its hooves against it as a bonus action."
+					]
+				},
+				{
+					"name": "Permanently Damaged",
+					"entries": [
+						"Any damage the steed takes is permanent and cannot be healed."
+					]
+				},
+				{
+					"name": "Play Dead",
+					"entries": [
+						"The steed can collapse into a pile of bones making it indiscernible from any other pile of bones until it decides to take horse form again. Attacks that target it while in this form have advantage. "
+					]
+				},
+				{
+					"name": "Resistant to Turning",
+					"entries": [
+						"The steed rolls saving throws against abilities that try to turn it, with advantage. "
+					]
+				}
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Hooves",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Breath Weapon (1/Day)",
+					"entries": [
+						"The steed exhales a noxious cloud in a 10-foot cone. Each creature in that area must make a {@dc 14} Dexterity saving throw, taking 10 ({@damage 3d6}) poison damage on a failed save and be {@condition petrified} to the spot for {@dice 1d4 + 1} rounds, or half as much damage on a successful one. A {@condition petrified} creature can end this effect on a successful roll, making the save at the end of each of its turns."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "XXX"
+			},
+			"fluff": {
+				"entries": [
+					"Strahd is a potent necromancer who has reanimated the carcass of a dead horse into a skeletal steed to serve his dark purposes. The skeletal steed is stron-ger than a normal horse in many ways as its breath can petrify or even kill those unlucky enough to stand ",
+					"in front of it. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
+						}
+					}
+				]
+			},
+			"damageTags": [
+				"B",
+				"I",
+				"P"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
+			]
+		},
+		{
 			"name": "Gwydion the Fiend-Sorcerer (Trapped)",
 			"size": [
 				"G"
@@ -9561,6 +10276,10 @@
 				"type": "external",
 				"url": "https://i.imgur.com/qhVIAoh.png"
 			},
+			"attachedItems": [
+				"Ring of Water Walking|DMG",
+				"+2 Floating Dagger|Darklords&DomainsVol1"
+			],
 			"fluff": {
 				"entries": [
 					"Nathan Timothy is a man of average build with dark curly hair and brown eyes. His skin is darkened by the sun and rough from hard work. He dresses in simple but well made clothing. and carries a worn dagger, that he uses more as a tool than a weapon. Nathan is a werewolf, and his dire wolf and hybrid forms are massive beasts with sharp claws and fangs like daggers. Nathan would be unremarkable in human form, if it wasn't for his smile. His teeth are long and sharp, and his grin brings to mind images of predators and the feeling of being hunted.",
@@ -10179,6 +10898,12 @@
 				"strength",
 				"wisdom"
 			],
+			"attachedItems": [
+				"Ring of Counterspell|Darklords&DomainsVol1",
+				"Blacksteel longsword +3|Darklords&DomainsVol1",
+				"Strahd's Animated Armor|Darklords&DomainsVol1",
+				"Bead of Force|DMG"
+			],
 			"tokenHref": {
 				"type": "external",
 				"url": "https://i.imgur.com/OsCbbRS.png"
@@ -10478,6 +11203,12 @@
 			"savingThrowForced": [
 				"constitution"
 			],
+			"attachedItems": [
+				"Cloak of Charisma|Darklords&DomainsVol1",
+				"+1 Dagger|DMG",
+				"ring of protection|DMG",
+				"bracers of armor|Darklords&DomainsVol1"
+			],
 			"tokenHref": {
 				"type": "external",
 				"url": "https://i.imgur.com/DyxJ5uV.png"
@@ -10772,6 +11503,11 @@
 			],
 			"savingThrowForced": [
 				"constitution"
+			],
+			"attachedItems": [
+				"+1 Rapier|DMG",
+				"ring of protection|DMG",
+				"bracers of armor|Darklords&DomainsVol1"
 			],
 			"tokenHref": {
 				"type": "external",
@@ -11597,6 +12333,10 @@
 			"savingThrowForcedSpell": [
 				"constitution",
 				"wisdom"
+			],
+			"attachedItems": [
+				"Staff of Withering|DMG",
+				"Wand of Web|DMG"
 			],
 			"tokenHref": {
 				"type": "external",
@@ -12867,9 +13607,6 @@
 				"THW",
 				"AOE"
 			],
-			"attachedItems": [
-				"+1 dagger|dmg"
-			],
 			"legendaryGroup": {
 				"name": "Darklords&DomainsVol1LairActionsHazlik",
 				"source": "Darklords&DomainsVol1"
@@ -12932,6 +13669,12 @@
 				"intelligence",
 				"strength",
 				"wisdom"
+			],
+			"attachedItems": [
+				"Bracers of Defense|DMG",
+				"Headband of Intellect|DMG",
+				"Wand of Fireballs (10 charges)|Darklords&DomainsVol1",
+				"Gauntlets of Dexterity|Darklords&DomainsVol1"
 			],
 			"tokenHref": {
 				"type": "external",
@@ -13289,6 +14032,15 @@
 				"name": "Darklords&DomainsVol1LairActionsGabrielleAderre",
 				"source": "Darklords&DomainsVol1"
 			},
+			"attachedItems": [
+				"Tarroka Deck of Madam Eva|Darklords&DomainsVol1",
+				"Ring of Spell Turning|Darklords&DomainsVol1",
+				"Hat of Disguise|DMG",
+				"Blade of the Crescent Moon|Darklords&DomainsVol1",
+				"Potion of Flight|Darklords&DomainsVol1",
+				"Potion of Greater Healing|DMG",
+				"Potion of Haste|Darklords&DomainsVol1"
+			],
 			"tokenHref": {
 				"type": "external",
 				"url": "https://i.imgur.com/btWUILp.png"
