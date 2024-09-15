@@ -81,13 +81,13 @@
 			"name": "Darklords&DomainsVol1LairActionsAbolethOfLakeZarovich",
 			"source": "Darklords&DomainsVol1",
 			"lairActions": [
-				"On initiative count 20 (losing initiative ties), the trapped aboleth can take a lair action to create one of the magical ef-fects listed below. The trapped aboleth cannot use the same effect two rounds in a row.",
+				"On initiative count 20 (losing initiative ties), the trapped aboleth can take a lair action to create one of the magical effects listed below. The trapped aboleth cannot use the same effect two rounds in a row.",
 				{
 					"type": "list",
 					"items": [
 						"{@b Detect:} The trapped aboleth makes a Wisdom (Perception) check.",
 						"{@b Tail Swipe:} The trapped aboleth makes one tail attack.",
-						"{@b Psychic Drain (Costs 2 Actions):} One creature charmed by the trapped aboleth takes 10 ({@damage 3d6}) psychic dam-age, and the trapped aboleth regains Hit Points equal to the damage the creature takes.",
+						"{@b Psychic Drain (Costs 2 Actions):} One creature charmed by the trapped aboleth takes 10 ({@damage 3d6}) psychic damage, and the trapped aboleth regains Hit Points equal to the damage the creature takes.",
 						"{@b Void Absorbance:} The trapped aboleth can pull the life force from those it has infected to replenish its own life. Any one infected within 30ft of the trapped aboleth takes 18 ({@damage 6d6}) psychic damage and heals the trapped aboleth by the amount rolled."
 					]
 				}
@@ -98,11 +98,27 @@
 					"type": "list",
 					"items": [
 						"{@b Water Disease:} Underground surfaces within 1 mile of the trapped aboleth's lair are slimy and wet and are difficult terrain. Water sources within 1 mile of the lair are supernaturally fouled and can spread the disease of the trapped aboleth. A creature who drinks from such water must make a successful DC 14 Constitution check or become infected. (This is countered by the lake's peculiar nature and the radius is only limited to the lair of the trapped aboleth). Enemies of the trapped aboleth that drink such water will vomit it back up within minutes.",
-						"{@b Illusion:} As an action, the trapped aboleth can create an illu-sory image of itself within 1 mile of the lair. The copy can appear at any location the trapped aboleth has seen before or in any location a creature charmed by the trapped aboleth can currently see. Once created, the image lasts for as long as the trapped abo-leth maintains concentration, as if concentrating on a spell. Although the image is intangible, it looks, sounds, and can move like the trapped aboleth. The trapped aboleth can sense, speak, and use telepathy from the image's position as if present at that position. If the image takes any damage, it disappears."
+						"{@b Illusion:} As an action, the trapped aboleth can create an illusory image of itself within 1 mile of the lair. The copy can appear at any location the trapped aboleth has seen before or in any location a creature charmed by the trapped aboleth can currently see. Once created, the image lasts for as long as the trapped abo-leth maintains concentration, as if concentrating on a spell. Although the image is intangible, it looks, sounds, and can move like the trapped aboleth. The trapped aboleth can sense, speak, and use telepathy from the image's position as if present at that position. If the image takes any damage, it disappears."
 
 					]
 				},
 				"If the aboleth dies, these effects fade over the course of {@dice ld10} days."
+			]
+		},
+		{
+			"name": "Darklords&DomainsVol1LairActionsHarkonLukas",
+			"source": "Darklords&DomainsVol1",
+			"lairActions": [
+				"On initiative count 20 (losing initiative ties), Harkon Lucas can take one lair action to cause one of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"The massive fireplace in the inn roars to life, flinging embers everywhere. Every creature within 50 feet of Harkon must make a DC 15 Dexterity saving throw. They take 21 (6d6) fire damage on a failed save.",
+						"Harkon chooses one creature within 30 feet of him. All the food and drink that creature has in its stomach turns rancid. That creature must make a DC 18 Constitution saving throw. If they fail they take 14 (4d6) poison damage and are poisoned for 1 minute. They may repeat the saving throw at the end of their turn to end the condition.",
+						"Harkon drinks or eats any of the food he finds in the Kartakan Inn. Harkon is healed for 18 (4d8) hit points."
+					]
+				},
+				"Harkon Lucas can’t repeat an effect until they have all been used, and he can’t use the same effect two rounds in a row."
 			]
 		}
 	],
@@ -4157,12 +4173,12 @@
 			"weight": 0.5,
 			"value": 20000,
 			"entries": [
-				"{@b Note: This is a poison and is taken bi ingestion}",
+				"{@b Note: This is a poison and is taken by ingestion}",
 				"Distilled from the umbral weed of Ghastria, Umbral gray can be used both as a paint with a smokey grey colour and as a deadly poison. The poison can only be delivered through ingestion but the substance's strong taste can be detected easily by creatures with a passive perception of 13 or higher. When mixed with carrion crawler venom, the taste goes away and cannot be detected. The method of concealment is known only by Marquis Stezen d'Polarno and Baron Camar D'Marosso. The poison needs 5 minutes to take effect. A creature subjected to this poison must make a DC 14 Constitution saving throw or become poisoned and lose 1d6 Constitution damage per minute. The creature rerolls the saving throw at the end of every minute for the next 5 minutes and ends the effect on a success. Another way was discovered by the inventful Marquis. Even though the skin is usually strong enough to withstand the effects of umbral grey, when exposed for a prolonged period of time (5 hours) then the pigment can still eat into the skin, painting it grey at first and then attacking vital organs. In this state, the poison once again has the same effects associated with umbral grey but the victim is not allowed a saving throw. Also, if the poison is neutralized, it still leaves the skin permanently colored gray. A favorite pastime of d'Polarno is to find someone he particularly does not like during a party, restrain or knock the person unconscious, and slowly apply paint over their naked body and watch them wither away until they die."
 			],
 			"fluff": {
 				"entries": [
-					"{@b Note: This is a poison and is taken bi ingestion}",
+					"{@b Note: This is a poison and is taken by ingestion}",
 					"Distilled from the umbral weed of Ghastria, Umbral gray can be used both as a paint with a smokey grey colour and as a deadly poison. The poison can only be delivered through ingestion but the substance's strong taste can be detected easily by creatures with a passive perception of 13 or higher. When mixed with carrion crawler venom, the taste goes away and cannot be detected. The method of concealment is known only by Marquis Stezen d'Polarno and Baron Camar D'Marosso. The poison needs 5 minutes to take effect. A creature subjected to this poison must make a DC 14 Constitution saving throw or become poisoned and lose 1d6 Constitution damage per minute. The creature rerolls the saving throw at the end of every minute for the next 5 minutes and ends the effect on a success. Another way was discovered by the inventful Marquis. Even though the skin is usually strong enough to withstand the effects of umbral grey, when exposed for a prolonged period of time (5 hours) then the pigment can still eat into the skin, painting it grey at first and then attacking vital organs. In this state, the poison once again has the same effects associated with umbral grey but the victim is not allowed a saving throw. Also, if the poison is neutralized, it still leaves the skin permanently colored gray. A favorite pastime of d'Polarno is to find someone he particularly does not like during a party, restrain or knock the person unconscious, and slowly apply paint over their naked body and watch them wither away until they die."
 				],
 				"images": [
@@ -4561,9 +4577,6 @@
 				"{@i NOTE: This is the same of {@item Potion of Flying|DMG}}",
 				"When you drink this potion, you gain a flying speed equal to your walking speed for 1 hour and can hover. If you're in the air when the potion wears off, you fall unless you have some other means of staying aloft. This potion's clear liquid floats at the top of its container and has cloudy white impurities drifting in it."
 			],
-			"lootTables": [
-				"Magic Item Table D"
-			],
 			"miscTags": [
 				"CNS"
 			]
@@ -4584,12 +4597,46 @@
 			"attachedSpells": [
 				"haste"
 			],
-			"lootTables": [
-				"Magic Item Table D"
-			],
 			"miscTags": [
 				"CNS"
 			]
+		},
+		{
+			"name": "Elixir of Madness",
+			"source": "Darklords&DomainsVol1",
+			"page": 113,
+			"type": "P",
+			"tier": "minor",
+			"rarity": "rare",
+			"weight": 0.5,
+			"value": 5000,
+			"entries": [
+				"{@b Note: This is a poison and is taken by ingestion}",
+				"A dark red liquid that can be easily passed off as wine",
+				"Anyone who drinks the liquid must make a DC 16 constitution saving throw or be affected by the 4th level spell {@spell confusion|PHB} for 1 minute. Creatures affected by the spell can repeat the saving throw at the end of their turn to end the effect."
+			],
+			"attachedSpells": [
+				"confusion|phb#4"
+			],
+			"miscTags": [
+				"CNS"
+			],
+			"fluff": {
+				"entries": [
+					"{@b Note: This is a poison and is taken by ingestion}",
+					"A dark red liquid that can be easily passed off as wine",
+					"Anyone who drinks the liquid must make a DC 16 constitution saving throw or be affected by the 4th level spell confusion for 1 minute. Creatures affected by the spell can repeat the saving throw at the end of their turn to end the effect."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/rdmlm0X.jpg"
+						}
+					}
+				]
+			}
 		}
 	],
 	"language": [
@@ -4615,7 +4662,8 @@
 				"people of Borca/Dorvinia",
 				"people of Gundarak",
 				"people of Hazlan",
-				"people of Invidia"
+				"people of Invidia",
+				"people of Kartakass"
 			],
 			"script": "Elvish"
 		},
@@ -4705,7 +4753,8 @@
 			"page": 1,
 			"type": "standard",
 			"typicalSpeakers": [
-				"people of Daglan"
+				"people of Daglan",
+				"people of Kartakass"
 			],
 			"script": "Elvish"
 		},
@@ -4726,7 +4775,26 @@
 			"type": "standard",
 			"typicalSpeakers": [
 				"people of Arkandale",
-				"people of Barovia"
+				"people of Barovia",
+				"people of Kartakass"
+			],
+			"script": "Elvish"
+		},
+		{
+			"name": "Vaasi",
+			"source": "Darklords&DomainsVol1",
+			"page": 1,
+			"type": "standard",
+			"dialects": [
+				"Kartakan"
+			],
+			"typicalSpeakers": [
+				"people of Shadow Rift/Arak",
+				"people of Shadow Arkandale",
+				"people of Shadow Barovia",
+				"people of Hazlan",
+				"people of Invidia",
+				"people of Kartakass"
 			],
 			"script": "Elvish"
 		},
@@ -4795,20 +4863,6 @@
 			"type": "standard",
 			"typicalSpeakers": [
 				"people of Hazlan"
-			],
-			"script": "Elvish"
-		},
-		{
-			"name": "Vaasi",
-			"source": "Darklords&DomainsVol1",
-			"page": 1,
-			"type": "standard",
-			"typicalSpeakers": [
-				"people of Shadow Rift/Arak",
-				"people of Shadow Arkandale",
-				"people of Shadow Barovia",
-				"people of Hazlan",
-				"people of Invidia"
 			],
 			"script": "Elvish"
 		}
@@ -8355,7 +8409,7 @@
 						},
 						{
 							"type": "entries",
-							"name": "Invdia",
+							"name": "Invidia",
 							"page": 99,
 							"entries": [
 								{
@@ -8703,6 +8757,274 @@
 													"tag": "creature",
 													"source": "Darklords&DomainsVol1",
 													"name": "Baron Bakholis"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Kartakass",
+							"page": 109,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/X2Ia3ak.jpg"
+									}
+								},
+								{
+									"type": "quote",
+									"entries": [
+										"Some people aren’t who they say they are, be cautious of the company you keep, wolf in sheep’s clothing."
+									],
+									"by": "Unknown author"
+								},
+								"Kartakass is sometimes known as the domain of song. And it is the song of the wild, of the animals coming for humanity in the dead of night. It is a primeval kind of place, one that is closer to its natural roots than the realms around it. Echoes of sound and music can be heard from miles around each of the settlements of Kartakass, but most of the domain is unsettled wilderness populated only by wild beasts.",
+								"Much as Harkon Lukas wishes it otherwise, and yearns for a domain filled with people, it is as if the land itself resists the attempts, and the people who live here are fiercely independent though they hold the man they know as the Bard Harkon Lukas in the highest regards. It is also the home of a unique religion known as the Ancestral Choir. It is best worshipped in song, but the main thing that stands out for it is the belief that there is no hell, only two versions of heaven: One for animals and one for humans or sentient beings. Adventures in Kartakass should focus on the strange dichotomy — the people here are open and welcoming, especially to those who are capable musicians, singers, and performers, but the wilderness is dark and dangerous. The deep woods hold many deadly secrets, and while you might think that you’re safe in the comfort of civilization, shapeshifting beasts could be all around.",
+								{
+									"type": "table",
+									"caption": "Kartakass",
+									"colLabels": [
+										"Detail",
+										"Description"
+									],
+									"colStyles": [
+										"col-3 text-center",
+										"col-9"
+									],
+									"rows": [
+										[
+											"Culture Level",
+											"Medieval"
+										],
+										[
+											"Climate & Terrain",
+											"Temperate. forest, hill, mountains"
+										],
+										[
+											"Year Formed",
+											"613 BC"
+										],
+										[
+											"Population",
+											"5.000"
+										],
+										[
+											"Races (%)",
+											"Humans 94%, wolfweres 4%, half-elves 1%, other 1%"
+										],
+										[
+											"Languages",
+											"{@language Balok|Darklords&DomainsVol1}, {@language Common|PHB}, {@language Old Kartakan|Darklords&DomainsVol1}, {@language Sithican|Darklords&DomainsVol1}, {@language Mordentish|Darklords&DomainsVol1}, {@language Vaasi|Darklords&DomainsVol1|Kartakan}"
+										],
+										[
+											"Religions",
+											"Ancestral Choir, Ezra, Hala"
+										],
+										[
+											"Government",
+											"Meritocracy (independent  settlements)"
+										],
+										[
+											"Ruler(s)",
+											"Meistersingers (for each  settlement)"
+										],
+										[
+											"Darklord(s)",
+											"Harkon Lukas"
+										],
+										[
+											"Nationality",
+											"Kartakan"
+										],
+										[
+											"Analog",
+											"Mixture of Scandinavia and the Black Forest"
+										],
+										[
+											"Neighboring domain(s)",
+											"Barovia, Forlorn, Hazlan, Sithicus"
+										]
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/M7T49Z4.jpg"
+									}
+								},
+								{
+									"type": "entries",
+									"name": "Local Fauna",
+									"page": 109,
+									"entries": [
+										"Wild animals are common in Kartakass and form the majority of the food staples within the domain. Wild boars in particular are very common and a favorite at the local inns. Kartakass is also home to a number of predators, with wolves being the most common. Some of the beasts are fearless enough to chase down carriages that move down the roads of the domain, regardless of any armed escorts."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Local Flora",
+									"page": 109,
+									"entries": [
+										"Kartakass is mostly forested with only some open lands around for farming. The woods consist mainly of hardwoods such as beech, oak, and ash, while the grassy dales are filled with crops and wildflowers that bloom over the spring and summer. The soil is rich and dark, making tubers and beets grow very well here. However, two plants stand out in Kartakass, with one being well known to the Kartakans and the other a closely guarded secret. The first is meekulbern, a type of vine that grows only in a few places. It has a sickly-sweet odor, and the berries are a deep crimson. The berries can be distilled into a strong form of ale known as meekulbrau that relaxes the throat and calms the nerves of singers, though the bitter taste is not for everyone.",
+										"Drinking meekulbrau gives a character advantage on either Performance or Persuasion checks for 1 hour (at the end of which they must succeed on a DC 10 Constitution saving throw or become poisoned until they complete a long rest). Drinking meekulbrau stains the lips and teeth blood-red for about an hour, after which it turns brown and flakes away. Some outsiders mistake this for vampirism and often need to have the confusion cleared up by the locals.",
+										"The other plant is a version of wolfsbane known as nightblight. The locals say that it carries an overwhelming stench to those who have changed shape (regardless of whether these are lycanthropes, doppelgangers, spellcasters, or any of a number of others), and that it prevents them from moving closer. (Any creature that has changed shape must succeed on a DC 20 Constitution saving throw or be unable to move within 30 feet of the bloom). The plant only remains potent for a few days after being plucked and loses efficacy after 3–5 days. It also only grows in the Arkalias Hills along the southern border of the domain."
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/HQZpgNx.jpg"
+									}
+								},
+								{
+									"type": "entries",
+									"name": "Native Horrors",
+									"page": 110,
+									"entries": [
+										"Of greater concern to the inhabitants of Kartakass are the kobolds and goblyns that populate the Wolfswood near the border with Barovia. They occupy the natural caverns and ravines that can be found beneath the ancient forest, with limestone caverns being their favorite lairs.",
+										"But the biggest threat in Kartakass is what the locals call narrulve (trickster wolves in the local tongue, known to others as wolfweres). They are fearsome creatures that assume the shape of man and wolf, but unlike the werewolves common elsewhere, the natural form of these creatures is the wolf form, and they voluntarily assume the shape of a human, rather than being subject to the whim of the lunar cycle. They’re unable to pass on their abilities to anything but their physical children, meaning their numbers are stable. They are far more voracious and cunning than the werewolves seen elsewhere and are very hard to detect and catch as a result."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Terrain Type",
+									"page": 110,
+									"entries": [
+										"Kartakass is a land of three: forests, dales, and ravines hidden within either. The forests as mentioned are dark, deep and ancient hardwoods, while the hills are gently rolling, and perfect for farmland and flowers. The ravines appear in both, sometimes without warning, and many wolf packs herd their prey into these ravines, from which there is no escape. A few of the ravines also have openings into extensive limestone caverns that stretch underneath the domain and serve as home to all manner of beasts."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Important Landmarks",
+									"page": 110,
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Ambrose Compound",
+											"page": 110,
+											"entries": [
+												"The Ambrose Compound, a two-story wooden lodge with a few outbuildings and a stable, is the home of the Brotherhood of Broken Blades. It is a small society of mage-finders who hunt down and eliminate evil mages. They believe that ALL non-divine magic is evil, and while they are willing to acknowledge that there are those who use their magic for the betterment of all, they are heavily outnumbered, and best dealt with before they become an issue.",
+												"This has led to the founder and leader, an elderly but capable swordsman, Jonathan Ambrose to suffer a bit of an internal conflict that sometimes sees visitors on the receiving end of his temperament. His step-daughter, Elaine Clairn, a beautiful and kind young woman, is a sorcerer, and his love of her continually duels with his bitter hatred of spellcasters."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Catacombs of Kartakass",
+											"page": 110,
+											"entries": [
+												"Beneath the Arkaliss Hills lie the Catacombs of Kartakass, the remains of an attempt by Radaga — a failed darklord — to establish herself as the ruler of a new domain named Daglan. She failed, but her ruins remain here. From the surface, it is only possible to see the tip of a grim ziggurat that is topped with a statue of a great raven. The raven marks the entrance to the catacombs. It was thought to be uninhabited for a long time, but it seems that the Beast of the Hills is a creature that lives there. It is a hideous female, with black scaly skin, wings, and thin matted hair. Though it looks fearsome, the locals have yet to be able to verify a single instance of it attacking anyone, leading some to speculate if this creature might actually be the opposite of the dangerous wolfweres, in that it looks malevolent, but is benign. (With the wolfweres being the other way around)."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Towns and villages",
+									"page": 101,
+									"entries": [ 
+										{
+											"type": "entries",
+											"name": "Harmonia",
+											"page": 111,
+											"entries": [
+												"Harmonia is the smaller of the two largest settlements in Kartakass, clocking in at 1,500 inhabitants. It is widely considered the cultural center of Harmonia, and ruled by a Meistersinger (Eliska Vokrona) who has won the nomination for the past 15 years running, and who is a competent and uncontroversial ruler. The biggest source of pride to Harmonia is the amphitheater that it is home to, and the source of much of its fame. The amphitheater is carved directly from the rock of the surrounding cliff face and its acoustics are unmatched in the Core. Anyone who takes to the stage and sings can be heard clearly more than halfway through the town. Next to the amphitheater is the Harmonic Hall, the palace widely considered the finest musical academy in the Core, having educated many famous performers over the years.  Finally, Harmonia is home to the Temple of Divine Song, the only known temple dedicated to the Ancestral Choir. It is in poor shape and in need of repair, but the pipe organ has been lovingly restored through the efforts of Tibor Bellock, the baritone lead singer and high priest of Harmornia."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Skald",
+											"page": 111,
+											"entries": [
+												"Skald is the home of some 2,800 individuals, and is the largest settlement in Harmonia, though it is considered less culturally important than Harmonia, despite its bigger size, power, and wealth. It is one of the few fortified towns in Harmonia, with a thick 25-foot tall curtain wall around it, one that once radiated out from the now-vanished Dargacht Keep."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Fun Fact",
+									"page": 111,
+									"entries": [
+										"Rulership of each settlement is determined in meistersinger competitions. These are extended contests where the participants are pitted against each other, first in a mass singing competition, then in a “war of words” where they are to humiliate each other, and finally, in a head-to-head competition where the final two contenders sing against each other."
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/EXRd5TV.jpg"
+									}
+								},					
+								{
+									"type": "entries",
+									"name": "Harkon Lukas",
+									"page": 112,
+									"entries": [
+										{
+											"type": "quote",
+											"entries": [
+												"Greetings friends! Though we have never met, I call you friend all the same. This world can be such a dreary place. Come and drink with me and let us spread some cheer and push back the darkness for a while."
+											],
+											"by": "Harkon Lukas"
+										},
+										"Harkon Lukas is a handsome human male, lookimg to be in his late thirties or early forties. He is friendly, instantly likable, and seems to have friends in every tavern. Harkon’s long black hair, goatee, and mustache are neatly trimmed and washed. Unusually for a Dark Lord, Harkon is genuinely likable, and has a real affection for humans and elves. It is not unheard of for an especially attractive human or elf traveling through the woods of Kartakass to have an escort of dire wolves to keep predators away. This only lasts until Harkon gets hungry, as no company is worth missing a good meal.",
+										{
+											"type": "entries",
+											"name": "Background",
+											"page": 112,
+											"entries": [
+												"Harkon Lukas was born a wolfwere in Cormyr in the Forgotten Realms. Harkon was unusual for a wolfwere, fond of the company of humans, with a genuine interest in their lives. Wolfweres are solitary creatures that are happy to spend their lives alone, but unfond of just his own company, Harkon tried to forge his clan into a tight knit group, but was shunned for this. After trying for years, the embers of rage finally burst in him. Harkon rampaged through the farmlands outside of Cormyr, killing and burning indiscriminately. He was giving chase to an unfortunate child through the forests asthe mists closed in. When the mists cleared, Harkon found himself in Barovia. Harkon wandered through the villages of Barovia for a few years, mostly performing, with the occasional killing spree when he finally met the vampire Strahd von Zarovich.  The lord of Barovia took exception to Harkon hunting his peasants. The battle was short and entirely one sided. Harkon fled from Strahd into the mists and found himself in Kartakass. Since that encounter, Harkon hunts any vampires he finds in his domain down without mercy. The hunt only ends when the vampires flee or are torn to pieces."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Current Sketch",
+											"page": 112,
+											"entries": [
+												"Harkon wants to rule, and have a life of consequence. The powers that gave him his domain have robbed him of that chance. Harkon rules the domain, but full of forests and wild animals, this gives him no opportunity for consequence. Harkon is intelligent and fond of making long term plans, but in Kartakass, none of that matters."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Darklord's Tactics",
+											"page": 112,
+											"entries": [
+												"Harkon always has a pack of dire wolves or wolfweres nearby. Harkon will cast a few spells at the beginning of combat if possible, but al-ways inevitably succumbs to the berserker rage of his cursed sword. Harkon revels in combat and does not fear pain or death. Death never seems to hold him in its grip anyway."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Borders",
+											"page": 112,
+											"entries": [
+												"When Harkon closes the borders, a soporific song starts. Any creature, even undead or constructs, that tries to cross the border falls into a deep sleep. They will awaken an hour later. If they move toward the border again the creature will fall asleep. The wall won’t harm them, but Kartakass is full of large packs of wolves."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Harkon Lukas’ Lair: The Kartakan Inn",
+											"page": 112,
+											"entries": [
+												"In the center of Skald, the largest city in Kartakass, sits the Kartakan Inn. At midday, the inn is comfortable and usually filled with patrons. Harkon Lukas is fond of the inn, and often performs for the crowd. Harkon uses the performances to keep the crowd happy, make a little coin, and choose his next meal. As night approaches and the shadows grow longer, the farmers and crafts-men that fill the inn during the day scatter and the customers become more bestial and brutal. No matter which group is in the inn, Harkon is the center of their attention. Harkon Lukas encountered in his lair has a challenge rating of 15 ( XP)"
+											]
+										},
+										{
+											"name": "Harkon Lukas",
+											"type": "entries",
+											"page": 113,
+											"entries": [
+												{
+													"type": "statblock",
+													"tag": "creature",
+													"source": "Darklords&DomainsVol1",
+													"name": "Harkon Lukas"
 												}
 											]
 										}
@@ -13646,7 +13968,7 @@
 			],
 			"tokenHref": {
 				"type": "external",
-				"url": "XXX"
+				"url": "https://i.imgur.com/M0T2Kkn.png"
 			},
 			"fluff": {
 				"entries": [
@@ -13657,7 +13979,7 @@
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "XXX"
+							"url": "https://i.imgur.com/8pzm15g.jpg"
 						}
 					}
 				]
@@ -13771,11 +14093,20 @@
 			],
 			"tokenHref": {
 				"type": "external",
-				"url": "XXX"
+				"url": "https://i.imgur.com/HtOBzoY.png"
 			},
 			"fluff": {
 				"entries": [
 					"The Last to Follow is the third and last rush of as-saults in the Headless Horseman's arsenal. Like The First to Follow, the Last to Follow is a horde of revived heads of the Horseman's previous victims. They nor-mally swarm the enemies of the Horseman's assaults as a group. In contrast to the First, The Last to Follow is a gathering of flying undead heads which are not the typical humanoid heads; rather, they are the heads of medusae. The flying head of a medusa can bite with its numerous snakes, however, the ordinary medusa's gaze for petrification has been replaced with one that causes paralysis."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/kSoKZBL.jpg"
+						}
+					}
 				]
 			}
 		},
@@ -19594,6 +19925,318 @@
 						"href": {
 							"type": "external",
 							"url": "https://i.imgur.com/Qi1zG5s.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Harkon Lukas",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "beast",
+				"tags": [
+					"shapeshifter"
+				]
+			},
+			"source": "Darklords&DomainsVol1",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"condition": "in human form"
+				},
+				{
+					"ac": 18,
+					"condition": "in wolf or hybrid form"
+				}
+			],
+			"hp": {
+				"formula": "30d8 + 90",
+				"average": 225
+			},
+			"speed": {
+				"walk": {
+					"number": 30,
+					"condition": "in human form, 40 ft. in wolf or hybrid form"
+				}
+			},
+			"str": 18,
+			"dex": 20,
+			"con": 17,
+			"int": 16,
+			"wis": 12,
+			"cha": 22,
+			"passive": 16,
+			"cr": "14",
+			"shortName": "Harkon Lukas",
+			"page": 113,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Dwarvish",
+				"Elven",
+				"Undercommon"
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"U"
+			],
+			"save": {
+				"dex": "+10",
+				"wis": "+6",
+				"cha": "+11"
+			},
+			"skill": {
+				"deception": "+11",
+				"perception": "+6",
+				"performance": "+11",
+				"persuasion": "+11"
+			},
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical attacks not made with cold iron weapons",
+					"cond": true
+				},
+				{
+					"immune": [
+						"thunder"
+					]
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"incapacitated"
+			],
+			"trait": [
+				{
+					"name": "Wolfwere",
+					"entries": [
+						"Harkon appears to be human, but is actually a rare creature called a wolfwere. Wolfweres appear to be similar to werewolves, but have several important differ-ences. Wolfweres start life as a dire wolf, and cannot curse others with their affliction. Wolfweres are unaffected by silver, but often pretend to be afraid to lull victims into a false sense of security. Iron burns wolfweres, leaving bald patches and blistered skin. Wolfweres can change from their dire wolf or hybrid form into a humanoid form at will. "
+					]
+				},
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"Harkon is an accomplished shapechanger that can become any humanoid, but is most fond of his hu-man form.Harkon is fond of changing his gender , and can be either gender in any of his forms. No matter which gender he chooses, Harkon is stunningly attractive. Harkon can use his action to polymorph into a wolf-humanoid hybrid or into a humanoid, or back into its true form, which is a dire wolf. Harkon is fond of changing his gender , and can be either sex in any form. No matter which sex he chooses, Harkon is stunningly attractive. His statistics, other than his AC, are the same in each form. Any equipment he is wearing or carrying isn’t transformed. Harkon reverts to his dire wolf form if he is killed. Harkon cannot be forced to change his shape. "
+					]
+				},
+				{
+					"name": "Cursed Berserker",
+					"entries": [
+						"When Harkon became the lord of Kar-takass, the Dark Powers gifted him with a cursed sword. If Harkon is in his hybrid or humanoid form and starts his turn within, or moves to within 5 feet of an enemy while in combat, the sword immediately appears in his hand. While Harkon is holding the sword he gains 25 temporary hit points, but cannot cast spells, and will continue to attack the nearest enemy until it or Harkon is slain. Harkon will keep attacking the nearest enemy until there are no more visible enemies. If Harkon drops the sword, it appears in his hand at the beginning of his next turn."
+					]
+				},
+				{
+					"name": "Elixir of Madness",
+					"entries": [
+						"Harkon carries a magical bottle that is always full of a dark red liquid. Harkon tells others the liquid is wine, and offers to share it with anyone he meets as a sign of friendship. Anyone who drinks the liquid must make a {@dc 16} constitution saving throw or be affected by the 4th level spell confusion for 1 minute. Creatures affected by the spell can repeat the saving throw at the end of their turn to end the effect. Harkon automatically makes this saving throw. "
+					]
+				},
+				{
+					"name": "Rejuvenation",
+					"entries": [
+						"The woods of Kartakass are filled with massive wolves. If Harkon is killed, his soul immediately jumps into the body of the nearest dire wolf. He regains conciousness and control over his powers within {@dice 2d12} hours, before that, he acts and is like any other Dire Wolf. If Harkon is killed while in this beastial state, he is per-manently slain. The method of Harkon’s death doesn’t matter. Old age, disease, combat etc. always leads to him having his soul transfered to a dire wolf. Harkon doesn’t know how long this will last, but has survived centuries this way. It seems the Dark Powers that granted him this realm are determined to make sure he stays in Kartakass as long as possible. "
+					]
+				}
+			],
+			"traitTags": [
+				"Rejuvenation",
+				"Shapechanger"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Harkon’s innate spellcasting ability is Charisma (+11 to hit, spell save {@dc 19}). He can innately cast the following spells, requiring not material components: "
+					],
+					"will": [
+						"{@spell mage hand}",
+						"{@spell minor illusion}",
+						"{@spell vicious mockery}"
+					],
+					"daily": {
+						"5e": [
+							"{@spell charm person}",
+							"{@spell dissonant whispers}",
+							"{@spell silent image}"
+						],
+						"3e": [
+							"{@spell blindness/deafness}",
+							"{@spell crown of madness}",
+							"{@spell hold person}"
+						],
+						"1e": [
+							"{@spell fear}",
+							"{@spell hypnotic pattern}",
+							"{@spell major image}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"action": [
+				{
+					"name": "Multiattack (Humanoid or Hybrid Form Only)",
+					"entries": [
+						"Harkon makes two attacks with his Berserker Blade."
+					]
+				},
+				{
+					"name": "Berserker Blade (Humanoid or Hybrid Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d10 + 5}) slashing damage, plus 18 ({@damage 4d8}) necrotic damage. ",
+						"The sword is magical and has {@hit 1} to hit and damage."
+					]
+				},
+				{
+					"name": "Bite (Dire Wolf Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}25 ({@damage 6d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Silver Harp {@recharge 5}",
+					"entries": [
+						"Harkon plays one of two songs on his harp.",
+						"The first song, called {@i Lament of the Worldwalker}, drains his opponents’ will to live. Enemies within 50 feet of Harkon must make a {@dc 19} Wisdom saving throw or be slowed as the 3rd level spell of the same name. Slowed characters may repeat the saving throw at the end of their turn to escape the spell. ",
+						"The second, called {@i The Children of the Night}, summons {@dice 2d10} {@creature dire wolf|MM}es. These wolves appear at the end of the turn. The dire wolves are friendly to Harkon and follow his commands."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"legendaryGroup": {
+				"name": "Darklords&DomainsVol1LairActionsHarkonLukas",
+				"source": "Darklords&DomainsVol1"
+			},
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"Harkon Lukas can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature’s turn. Harkon regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Vicious Mockery",
+					"entries": [
+						"Harkon casts {@spell vicious mockery|PHB}."
+					]
+				},
+				{
+					"name": "Berserker Blade",
+					"entries": [
+						"Harkon makes one Berserker Blade attack."
+					]
+				},
+				{
+					"name": "Howl of the Pack",
+					"entries": [
+						"The eerie howling of dozens of wolves fills the air around Harkon Lukas. Every creature within 60 feet of Harkon must make a {@dc 16} Wisdom saving throw. Creatures that fail are {@condition frightened} of Harkon for one minute. Frightened creatures can reroll the Wisdom saving throw at the end of their turn. Creatures that save are immune to this ability for 1 hour. "
+					]
+				}
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			],
+			"damageTagsSpell": [
+				"Y"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"wisdom"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/JpBFwy5.png"
+			},
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"Greetings friends! Though we have never met, I call you friend all the same. This world can be such a dreary place. Come and drink with me and let us spread some cheer and push back the darkness for a while."
+						],
+						"by": "Harkon Lukas"
+					},
+					"Harkon Lukas is a handsome human male, lookimg to be in his late thirties or early forties. He is friendly, instantly likable, and seems to have friends in every tavern. Harkon’s long black hair, goatee, and mustache are neatly trimmed and washed. Unusually for a Dark Lord, Harkon is genuinely likable, and has a real affection for humans and elves. It is not unheard of for an especially attractive human or elf traveling through the woods of Kartakass to have an escort of dire wolves to keep predators away. This only lasts until Harkon gets hungry, as no company is worth missing a good meal.",
+					{
+						"type": "entries",
+						"name": "Background",
+						"page": 112,
+						"entries": [
+							"Harkon Lukas was born a wolfwere in Cormyr in the Forgotten Realms. Harkon was unusual for a wolfwere, fond of the company of humans, with a genuine interest in their lives. Wolfweres are solitary creatures that are happy to spend their lives alone, but unfond of just his own company, Harkon tried to forge his clan into a tight knit group, but was shunned for this. After trying for years, the embers of rage finally burst in him. Harkon rampaged through the farmlands outside of Cormyr, killing and burning indiscriminately. He was giving chase to an unfortunate child through the forests asthe mists closed in. When the mists cleared, Harkon found himself in Barovia. Harkon wandered through the villages of Barovia for a few years, mostly performing, with the occasional killing spree when he finally met the vampire Strahd von Zarovich.  The lord of Barovia took exception to Harkon hunting his peasants. The battle was short and entirely one sided. Harkon fled from Strahd into the mists and found himself in Kartakass. Since that encounter, Harkon hunts any vampires he finds in his domain down without mercy. The hunt only ends when the vampires flee or are torn to pieces."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Current Sketch",
+						"page": 112,
+						"entries": [
+							"Harkon wants to rule, and have a life of consequence. The powers that gave him his domain have robbed him of that chance. Harkon rules the domain, but full of forests and wild animals, this gives him no opportunity for consequence. Harkon is intelligent and fond of making long term plans, but in Kartakass, none of that matters."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Darklord's Tactics",
+						"page": 112,
+						"entries": [
+							"Harkon always has a pack of dire wolves or wolfweres nearby. Harkon will cast a few spells at the beginning of combat if possible, but al-ways inevitably succumbs to the berserker rage of his cursed sword. Harkon revels in combat and does not fear pain or death. Death never seems to hold him in its grip anyway."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Borders",
+						"page": 112,
+						"entries": [
+							"When Harkon closes the borders, a soporific song starts. Any creature, even undead or constructs, that tries to cross the border falls into a deep sleep. They will awaken an hour later. If they move toward the border again the creature will fall asleep. The wall won’t harm them, but Kartakass is full of large packs of wolves."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Harkon Lukas’ Lair: The Kartakan Inn",
+						"page": 112,
+						"entries": [
+							"In the center of Skald, the largest city in Kartakass, sits the Kartakan Inn. At midday, the inn is comfortable and usually filled with patrons. Harkon Lukas is fond of the inn, and often performs for the crowd. Harkon uses the performances to keep the crowd happy, make a little coin, and choose his next meal. As night approaches and the shadows grow longer, the farmers and crafts-men that fill the inn during the day scatter and the customers become more bestial and brutal. No matter which group is in the inn, Harkon is the center of their attention. Harkon Lukas encountered in his lair has a challenge rating of 15 ( XP)"
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/QBU8jPC.jpg"
 						}
 					}
 				]
