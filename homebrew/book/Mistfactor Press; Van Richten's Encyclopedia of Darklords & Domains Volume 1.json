@@ -28,10 +28,11 @@
 			"name": "Darklords&DomainsVol1LairActionsStrahdVonZarovich",
 			"source": "Darklords&DomainsVol1",
 			"lairActions": [
-				"While Strahd is in Castle Ravenloft, he can take lair actions as long as he isn't incapacitated. On initiative count 20 (losing initiative ties), Strahd can take one of the following lair action options, or forgo using any of them in that round: Until initiative count 20 of the next round, Strahd can pass through solid walls, doors, ceilings, and floors as if they weren't there.",
+				"While Strahd is in Castle Ravenloft, he can take lair actions as long as he isn't incapacitated. On initiative count 20 (losing initiative ties), Strahd can take one of the following lair action options, or forgo using any of them in that round:",
 				{
 					"type": "list",
 					"items": [
+						"Until initiative count 20 of the next round, Strahd can pass through solid walls, doors, ceilings, and floors as if they weren't there.",
 						"Strahd targets any number of doors and windows that he can see, causing each one to either open or close as he wishes. Closed doors can be magically locked (needing a successful DC 20 Strength check to force open) until Strahd chooses to end the effect, or until Strahd uses this lair action again.",
 						"Strahd summons the angry spirit of one who has died in the castle. The apparition appears next to a hostile creature that Strahd can see, makes an attack against that creature, and then disappears. The apparition has the statistics of a specter.",
 						"Strahd targets one Medium or smaller creature that casts a shadow. The target's shadow must be visible to Strahd and within 30 feet of him. If the target fails a DC 24 Charisma saving throw, its shadow detaches from it and becomes a shadow that obeys Strahd's commands, acting on initiative count 20. A greater restoration spell or a remove curse spell cast on the target restores its natural shadow, but only if its undead shadow has been destroyed.",
@@ -81,7 +82,7 @@
 			"name": "Darklords&DomainsVol1LairActionsAbolethOfLakeZarovich",
 			"source": "Darklords&DomainsVol1",
 			"lairActions": [
-				"On initiative count 20 (losing initiative ties), the trapped aboleth can take a lair action to create one of the magical effects listed below. The trapped aboleth cannot use the same effect two rounds in a row.",
+				"On initiative count 20 (losing initiative ties), the trapped aboleth can take a lair action to create one of the magical effects listed below:",
 				{
 					"type": "list",
 					"items": [
@@ -90,7 +91,8 @@
 						"{@b Psychic Drain (Costs 2 Actions):} One creature charmed by the trapped aboleth takes 10 ({@damage 3d6}) psychic damage, and the trapped aboleth regains Hit Points equal to the damage the creature takes.",
 						"{@b Void Absorbance:} The trapped aboleth can pull the life force from those it has infected to replenish its own life. Any one infected within 30ft of the trapped aboleth takes 18 ({@damage 6d6}) psychic damage and heals the trapped aboleth by the amount rolled."
 					]
-				}
+				},
+				"The trapped aboleth cannot use the same effect two rounds in a row."
 			],
 			"regionalEffects": [
 				"The regional effects of the trapped aboleth's lair are the same as that of an aboleth, except as follows:",
@@ -118,7 +120,34 @@
 						"Harkon drinks or eats any of the food he finds in the Kartakan Inn. Harkon is healed for 18 (4d8) hit points."
 					]
 				},
-				"Harkon Lucas can’t repeat an effect until they have all been used, and he can’t use the same effect two rounds in a row."
+				"Harkon Lucas can't repeat an effect until they have all been used, and he can't use the same effect two rounds in a row."
+			]
+		},
+		{
+			"name": "Darklords&DomainsVol1LairActionsLordWilfredGodefroy",
+			"source": "Darklords&DomainsVol1",
+			"lairActions": [
+				"On initiative count 20 (losing initiative ties) Godefroy takes a lair action to cause one of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Animated Tapestries:} Drapes, tapestries, and rugs animate and wrap around a creature of Godefroy's choosing. The target is grappled (escape DC 15) until initiative count 20 on the next round.",
+						"{@b Animated Furniture:} A heavy piece of furniture moves, slamming into a creature of Godefroy's choice within 10 feet. The creature must succeed on a DC 15 Strength saving throw or be knocked prone.",
+						"{@b Telekinetic Thrust:} A {@creature Poltergeist|MM} (MM, page 279) spirit trapped in the manor uses its {@i Telekinetic Thrust} ability."
+					]
+				},
+				"Godefroy can't use the same effect two rounds in a row."
+			],
+			"regionalEffects": [
+				"The region containing Godefroy's lair is warped by his presence, which creates the following effect:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Gryphon Manor:} Gryphon Manor is considered a vortex of evil in many Mordentish legends. Creatures that die within 5 miles of Gryphon Manor must succeed on a DC 14 Charisma saving throw or have their soul trapped within the manor. Funeral traditions include practices to ensure that spirits do not linger after their death and become trapped, making them immune to the Manor's influence.",
+						"{@b Involuntarily Drawn:} Ethereal creatures in Mordent must make a Wisdom save or be involuntarily drawn into the manor. The DC to escape the manor's pull is 30 within its walls and drops by 1 for each increment of 1,000 feet between the subject and the manor. Thus, an ethereal creature 10,000 feet away would have to make a Wisdom save of DC 20 or be sucked in. (At distances beyond 30,000 feet, the manor's pull is easily ignored.) Ghosts and other incorporeal creatures add their CR as a morale bonus to this saving throw. . Ethereal creatures must make this Wis-dom save once a day. Godefroy is exempt from this effect, and he can exempt other ethereal creatures by giving them verbal permission to leave. Dead creatures that have their soul trapped can't be returned to life unless their corpse is also in the manor and their spirit can be located."
+					]
+				},
+				"If Godefroy dies and the Manor is destroyed, the effects fade immediately."
 			]
 		}
 	],
@@ -3487,6 +3516,132 @@
 			}
 		},
 		{
+			"name": "Ethereal Musket +1",
+			"source": "Darklords&DomainsVol1",
+			"page": 381,
+			"baseItem": "hunting rifle|dmg",
+			"reqAttune": "by an incorporeal creature or a creature that can travel to the ethereal plane",
+			"rarity": "rare",
+			"type": "R",
+			"weight": 10,
+			"value": 500000,
+			"weaponCategory": "martial",
+			"age": "modern",
+			"property": [
+				"AF",
+				"RLD",
+				"2H"
+			],
+			"range": "40/120",
+			"reload": 5,
+			"dmg1": "1d12",
+			"dmgType": "P",
+			"firearm": true,
+			"ammoType": "modern bullet",
+			"bonusWeapon": "+1",
+			"entries": [
+				"This musket has been forgotten by its owner in the ethereal plane for so many centuries that the materials that made up its body have been altered by ethereal forces. The musket now remains forever anchored to the ethereal plane and can be wielded only by incorporeal creatures or creatures that can enter the ethereal plane. The musket grants the wielder the ability to strike an enemy found on the material plane without having the need to leave the ethereal. This ability can be used 3 times per day."
+			],
+			"fluff": {
+				"entries": [
+					"This musket has been forgotten by its owner in the ethereal plane for so many centuries that the materials that made up its body have been altered by ethereal forces. The musket now remains forever anchored to the ethereal plane and can be wielded only by incorporeal creatures or creatures that can enter the ethereal plane. The musket grants the wielder the ability to strike an enemy found on the material plane without having the need to leave the ethereal. This ability can be used 3 times per day."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/gGX0fBX.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Ethereal Musket +2",
+			"source": "Darklords&DomainsVol1",
+			"page": 381,
+			"baseItem": "hunting rifle|dmg",
+			"reqAttune": "by an incorporeal creature or a creature that can travel to the ethereal plane",
+			"rarity": "rare",
+			"type": "R",
+			"weight": 10,
+			"value": 700000,
+			"weaponCategory": "martial",
+			"age": "modern",
+			"property": [
+				"AF",
+				"RLD",
+				"2H"
+			],
+			"range": "40/120",
+			"reload": 5,
+			"dmg1": "1d12",
+			"dmgType": "P",
+			"firearm": true,
+			"ammoType": "modern bullet",
+			"bonusWeapon": "+2",
+			"entries": [
+				"This musket has been forgotten by its owner in the ethereal plane for so many centuries that the materials that made up its body have been altered by ethereal forces. The musket now remains forever anchored to the ethereal plane and can be wielded only by incorporeal creatures or creatures that can enter the ethereal plane. The musket grants the wielder the ability to strike an enemy found on the material plane without having the need to leave the ethereal. This ability can be used 3 times per day."
+			],
+			"fluff": {
+				"entries": [
+					"This musket has been forgotten by its owner in the ethereal plane for so many centuries that the materials that made up its body have been altered by ethereal forces. The musket now remains forever anchored to the ethereal plane and can be wielded only by incorporeal creatures or creatures that can enter the ethereal plane. The musket grants the wielder the ability to strike an enemy found on the material plane without having the need to leave the ethereal. This ability can be used 3 times per day."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/gGX0fBX.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Ethereal Musket +3",
+			"source": "Darklords&DomainsVol1",
+			"page": 381,
+			"baseItem": "hunting rifle|dmg",
+			"reqAttune": "by an incorporeal creature or a creature that can travel to the ethereal plane",
+			"rarity": "rare",
+			"type": "R",
+			"weight": 10,
+			"value": 1000000,
+			"weaponCategory": "martial",
+			"age": "modern",
+			"property": [
+				"AF",
+				"RLD",
+				"2H"
+			],
+			"range": "40/120",
+			"reload": 5,
+			"dmg1": "1d12",
+			"dmgType": "P",
+			"firearm": true,
+			"ammoType": "modern bullet",
+			"bonusWeapon": "+3",
+			"entries": [
+				"This musket has been forgotten by its owner in the ethereal plane for so many centuries that the materials that made up its body have been altered by ethereal forces. The musket now remains forever anchored to the ethereal plane and can be wielded only by incorporeal creatures or creatures that can enter the ethereal plane. The musket grants the wielder the ability to strike an enemy found on the material plane without having the need to leave the ethereal. This ability can be used 3 times per day."
+			],
+			"fluff": {
+				"entries": [
+					"This musket has been forgotten by its owner in the ethereal plane for so many centuries that the materials that made up its body have been altered by ethereal forces. The musket now remains forever anchored to the ethereal plane and can be wielded only by incorporeal creatures or creatures that can enter the ethereal plane. The musket grants the wielder the ability to strike an enemy found on the material plane without having the need to leave the ethereal. This ability can be used 3 times per day."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/gGX0fBX.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
 			"name": "Dagger of Potent Venom",
 			"source": "Darklords&DomainsVol1",
 			"page": 382,
@@ -4460,13 +4615,55 @@
 			"source": "Darklords&DomainsVol1",
 			"page": 1,
 			"tier": "major",
-			"rarity": "very rare",
+			"rarity": "rare",
 			"reqAttune": true,
 			"wondrous": true,
 			"weight": 0.25,
 			"value": 100000,
 			"entries": [
-				"When you casts {@spell friends|PHB} or {@spell charm person|PHB}, the target must succeed on a DC 18 Wisdom saving throw to know that it was subjected to the spell."
+				"While wearing this cloak, your Charisma is effectively 2 points higher. In addition, if you cast {@spell friends|PHB} or {@spell charm person|PHB}, the target must succeed on a Wisdom saving throw against your spell save DC to know that it was subjected to the spell."
+			]
+		},
+		{
+			"name": "Cloak of Charisma +1",
+			"source": "Darklords&DomainsVol1",
+			"page": 1,
+			"tier": "major",
+			"rarity": "rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"weight": 0.25,
+			"value": 200000,
+			"entries": [
+				"While wearing this cloak, your Charisma is effectively 3 points higher. In addition, if you cast {@spell friends|PHB} or {@spell charm person|PHB}, the target must succeed on a Wisdom saving throw against your spell save DC to know that it was subjected to the spell."
+			]
+		},
+		{
+			"name": "Cloak of Charisma +2",
+			"source": "Darklords&DomainsVol1",
+			"page": 1,
+			"tier": "major",
+			"rarity": "rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"weight": 0.25,
+			"value": 300000,
+			"entries": [
+				"While wearing this cloak, your Charisma is effectively 4 points higher. In addition, if you cast {@spell friends|PHB} or {@spell charm person|PHB}, the target must succeed on a Wisdom saving throw against your spell save DC to know that it was subjected to the spell."
+			]
+		},
+		{
+			"name": "Cloak of Charisma +3",
+			"source": "Darklords&DomainsVol1",
+			"page": 1,
+			"tier": "major",
+			"rarity": "rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"weight": 0.25,
+			"value": 400000,
+			"entries": [
+				"While wearing this cloak, your Charisma is effectively 5 points higher. In addition, if you cast {@spell friends|PHB} or {@spell charm person|PHB}, the target must succeed on a Wisdom saving throw against your spell save DC to know that it was subjected to the spell."
 			]
 		},
 		{
@@ -4637,6 +4834,44 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Walking Stick",
+			"source": "Darklords&DomainsVol1",
+			"page": 122,
+			"type": "M",
+			"rarity": "none",
+			"weight": 2,
+			"value": 1000,
+			"weaponCategory": "martial",
+			"property": [
+				"F",
+				"L"
+			],
+			"dmg1": "1d4",
+			"dmgType": "B",
+			"entries": [
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d6}) bludgeoning damage."
+			]
+		},
+		{
+			"name": "Walking Stick +1",
+			"source": "Darklords&DomainsVol1",
+			"page": 122,
+			"type": "M",
+			"rarity": "none",
+			"weight": 2,
+			"value": 10000,
+			"weaponCategory": "martial",
+			"property": [
+				"F",
+				"L"
+			],
+			"dmg1": "1d4",
+			"dmgType": "B",
+			"entries": [
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) bludgeoning damage and {@dice 1d4} permanent damage to Charisma. The target’s Charisma cannot drop below 1."
+			]
 		}
 	],
 	"language": [
@@ -4697,7 +4932,8 @@
 				"people of Borca/Dorvinia",
 				"barovian vampires",
 				"people of Borca/Dorvinia",
-				"people of Invidia"
+				"people of Invidia",
+				"people of Mordent"
 			],
 			"script": "Elvish"
 		},
@@ -4743,7 +4979,8 @@
 				"people of Shadow Rift/Arak",
 				"people of Arkandale",
 				"people of Borca/Dorvinia",
-				"people of Invidia"
+				"people of Invidia",
+				"people of Mordent"
 			],
 			"script": "Elvish"
 		},
@@ -4794,7 +5031,8 @@
 				"people of Shadow Barovia",
 				"people of Hazlan",
 				"people of Invidia",
-				"people of Kartakass"
+				"people of Kartakass",
+				"people of Mordent"
 			],
 			"script": "Elvish"
 		},
@@ -8779,12 +9017,12 @@
 								{
 									"type": "quote",
 									"entries": [
-										"Some people aren’t who they say they are, be cautious of the company you keep, wolf in sheep’s clothing."
+										"Some people aren't who they say they are, be cautious of the company you keep, wolf in sheep's clothing."
 									],
 									"by": "Unknown author"
 								},
 								"Kartakass is sometimes known as the domain of song. And it is the song of the wild, of the animals coming for humanity in the dead of night. It is a primeval kind of place, one that is closer to its natural roots than the realms around it. Echoes of sound and music can be heard from miles around each of the settlements of Kartakass, but most of the domain is unsettled wilderness populated only by wild beasts.",
-								"Much as Harkon Lukas wishes it otherwise, and yearns for a domain filled with people, it is as if the land itself resists the attempts, and the people who live here are fiercely independent though they hold the man they know as the Bard Harkon Lukas in the highest regards. It is also the home of a unique religion known as the Ancestral Choir. It is best worshipped in song, but the main thing that stands out for it is the belief that there is no hell, only two versions of heaven: One for animals and one for humans or sentient beings. Adventures in Kartakass should focus on the strange dichotomy — the people here are open and welcoming, especially to those who are capable musicians, singers, and performers, but the wilderness is dark and dangerous. The deep woods hold many deadly secrets, and while you might think that you’re safe in the comfort of civilization, shapeshifting beasts could be all around.",
+								"Much as Harkon Lukas wishes it otherwise, and yearns for a domain filled with people, it is as if the land itself resists the attempts, and the people who live here are fiercely independent though they hold the man they know as the Bard Harkon Lukas in the highest regards. It is also the home of a unique religion known as the Ancestral Choir. It is best worshipped in song, but the main thing that stands out for it is the belief that there is no hell, only two versions of heaven: One for animals and one for humans or sentient beings. Adventures in Kartakass should focus on the strange dichotomy — the people here are open and welcoming, especially to those who are capable musicians, singers, and performers, but the wilderness is dark and dangerous. The deep woods hold many deadly secrets, and while you might think that you're safe in the comfort of civilization, shapeshifting beasts could be all around.",
 								{
 									"type": "table",
 									"caption": "Kartakass",
@@ -8889,7 +9127,7 @@
 									"page": 110,
 									"entries": [
 										"Of greater concern to the inhabitants of Kartakass are the kobolds and goblyns that populate the Wolfswood near the border with Barovia. They occupy the natural caverns and ravines that can be found beneath the ancient forest, with limestone caverns being their favorite lairs.",
-										"But the biggest threat in Kartakass is what the locals call narrulve (trickster wolves in the local tongue, known to others as wolfweres). They are fearsome creatures that assume the shape of man and wolf, but unlike the werewolves common elsewhere, the natural form of these creatures is the wolf form, and they voluntarily assume the shape of a human, rather than being subject to the whim of the lunar cycle. They’re unable to pass on their abilities to anything but their physical children, meaning their numbers are stable. They are far more voracious and cunning than the werewolves seen elsewhere and are very hard to detect and catch as a result."
+										"But the biggest threat in Kartakass is what the locals call narrulve (trickster wolves in the local tongue, known to others as wolfweres). They are fearsome creatures that assume the shape of man and wolf, but unlike the werewolves common elsewhere, the natural form of these creatures is the wolf form, and they voluntarily assume the shape of a human, rather than being subject to the whim of the lunar cycle. They're unable to pass on their abilities to anything but their physical children, meaning their numbers are stable. They are far more voracious and cunning than the werewolves seen elsewhere and are very hard to detect and catch as a result."
 									]
 								},
 								{
@@ -8974,7 +9212,7 @@
 											],
 											"by": "Harkon Lukas"
 										},
-										"Harkon Lukas is a handsome human male, lookimg to be in his late thirties or early forties. He is friendly, instantly likable, and seems to have friends in every tavern. Harkon’s long black hair, goatee, and mustache are neatly trimmed and washed. Unusually for a Dark Lord, Harkon is genuinely likable, and has a real affection for humans and elves. It is not unheard of for an especially attractive human or elf traveling through the woods of Kartakass to have an escort of dire wolves to keep predators away. This only lasts until Harkon gets hungry, as no company is worth missing a good meal.",
+										"Harkon Lukas is a handsome human male, lookimg to be in his late thirties or early forties. He is friendly, instantly likable, and seems to have friends in every tavern. Harkon's long black hair, goatee, and mustache are neatly trimmed and washed. Unusually for a Dark Lord, Harkon is genuinely likable, and has a real affection for humans and elves. It is not unheard of for an especially attractive human or elf traveling through the woods of Kartakass to have an escort of dire wolves to keep predators away. This only lasts until Harkon gets hungry, as no company is worth missing a good meal.",
 										{
 											"type": "entries",
 											"name": "Background",
@@ -9004,12 +9242,12 @@
 											"name": "Borders",
 											"page": 112,
 											"entries": [
-												"When Harkon closes the borders, a soporific song starts. Any creature, even undead or constructs, that tries to cross the border falls into a deep sleep. They will awaken an hour later. If they move toward the border again the creature will fall asleep. The wall won’t harm them, but Kartakass is full of large packs of wolves."
+												"When Harkon closes the borders, a soporific song starts. Any creature, even undead or constructs, that tries to cross the border falls into a deep sleep. They will awaken an hour later. If they move toward the border again the creature will fall asleep. The wall won't harm them, but Kartakass is full of large packs of wolves."
 											]
 										},
 										{
 											"type": "entries",
-											"name": "Harkon Lukas’ Lair: The Kartakan Inn",
+											"name": "Harkon Lukas' Lair: The Kartakan Inn",
 											"page": 112,
 											"entries": [
 												"In the center of Skald, the largest city in Kartakass, sits the Kartakan Inn. At midday, the inn is comfortable and usually filled with patrons. Harkon Lukas is fond of the inn, and often performs for the crowd. Harkon uses the performances to keep the crowd happy, make a little coin, and choose his next meal. As night approaches and the shadows grow longer, the farmers and crafts-men that fill the inn during the day scatter and the customers become more bestial and brutal. No matter which group is in the inn, Harkon is the center of their attention. Harkon Lukas encountered in his lair has a challenge rating of 15 ( XP)"
@@ -9029,6 +9267,302 @@
 											]
 										}
 									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/nxNAyZk.jpg"
+									}
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Mordent",
+							"page": 115,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/QNuLU6J.jpg"
+									}
+								},
+								{
+									"type": "quote",
+									"entries": [
+										"One should not lose one's temper unless one is certain of getting more and more angry to the end."
+									],
+									"by": "William Butler Yeats"
+								},
+								"Mordent is a land mired in anger, vengeance, and perseverance. Unlike many other domains, it wasn't created from whole cloth by the entrance of an evil entity into the Mists but was instead ripped from another world by the actions of those who attempted to escape the clutches of the Domains of Dread.",
+								"The story starts when an alchemist named Count Strahd von Zarovich, a man of good heart and alchemical knowledge embarked on his greatest undertaking, the creation of a device known as the Apparatus. Of course, within the Mists, the name Strahd has very different tones, and no one knows if this second Strahd (referred to hereafter as the Alchemist) was a byproduct of Strahd's agreement with the Dark Powers. Perhaps this was where the good parts of his soul were sent, while the remainder turned into the Devil Strahd of Barovia. Regardless, on the night where he activated his device for the first time, he broke down the barriers between the realities of the multiverse.",
+								"At the same time, Strahd and Azalin were attempting to escape the confines of Barovia, and for a time, all three were caught near Mordentshire and Gryphon Manor in particular. Once the dust of that settled, the two of them had been returned to their domains, and the Alchemist had vanished. And that left the ghost of Wilfred Godefroy as the most powerful force of evil within the land. At the time, he had been hiding from the ghosts of his wife and daughter, who were haunting him, after he killed them and later committed suicide to avoid the haunting. His residence at the time, Heather House, was no longer sufficient and he returned to Gryphon Manor and has since been absorbing spirits and souls, strengthening himself.",
+								"Adventures within Mordent are likely to involve Gryphon Manor or Heather House and should feature elements of Godefroy's volatile temper. Crossing him is easy, and annoying him even more so, but he prefers his revenge and striking back to be slow, and instead of merely killing an enemy, will set out to utterly destroy him: mind, body, and soul. Perhaps the group of adventurers is sent here to assist the famed Weathermay family in their pursuit of monsters, and a spirit that they are fighting against is absorbed by Gryphon Manor as the fight draws close to the building. Perhaps they're looking for information on someone who is lost, or perhaps they're here to help cure Lord Weathermay, or strengthen his heir. They may even have been sent as ghost hunters, looking to the famous House on Gryphon Hill, wanting to make sure that earlier adventurers completed the task and drove out the ghosts that the Manor reputedly holds. Of course, those previous adventurers failed, and Godefroy is not likely to make the same mistake twice.",
+								{
+									"type": "table",
+									"caption": "Mordent",
+									"colLabels": [
+										"Detail",
+										"Description"
+									],
+									"colStyles": [
+										"col-3 text-center",
+										"col-9"
+									],
+									"rows": [
+										[
+											"Culture Level",
+											"Renaissance"
+										],
+										[
+											"Climate & Terrain",
+											"Temperate, forest, marsh, and plains"
+										],
+										[
+											"Year Formed",
+											"579 BC"
+										],
+										[
+											"Population",
+											"6.000~"
+										],
+										[
+											"Races (%)",
+											"Humans 99%, Other 1%"
+										],
+										[
+											"Languages",
+											"{@language Common|PHB}, {@language Mordentish|Darklords&DomainsVol1}, {@language Falkovnian|Darklords&DomainsVol1}, {@language Vaasi|Darklords&DomainsVol1}"
+										],
+										[
+											"Religions",
+											"Ezra, Hala"
+										],
+										[
+											"Government",
+											"Hereditary aristocracy"
+										],
+										[
+											"Ruler(s)",
+											"Lord Jules Weathermay"
+										],
+										[
+											"Darklord(s)",
+											"Lord Wilfred Godefroy"
+										],
+										[
+											"Nationality",
+											"Mordentish"
+										],
+										[
+											"Analog",
+											"England (especially Dartmoor and the like)"
+										],
+										[
+											"Neighboring domain(s)",
+											"Dementlieu, Richemulot, The Sea of Shadows, Valachan"
+										]
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/kg0TTdy.jpg"
+									}
+								},
+								{
+									"type": "entries",
+									"name": "Local Fauna",
+									"page": 116,
+									"entries": [
+										"Mordent is rather short on wildlife, as the heaths and moors do not allow much cover for the animals to hide. There are a few deer, boars, foxes, and a number of wolves as well, but there isn't as much animal life as most would expect for such an open area. What is in abundance here are bats. They hide in the attics of old houses, barns, and in the ruins that can be found around the Mordent countryside. In Mordent, the populace doesn't fear the bats refusing to believe in such things as vampires, though they're all too aware that ghosts are real. While the wolves do pose a threat, local custom says that those who kill a wolf will be haunted by their spirits until the entire pack is dead. As a result, most Mordentish folk simply avoid them."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Local Flora",
+									"page": 117,
+									"entries": [
+										"Mordent is dominated by the heaths, and the grass that covers it appears to the casual observer to be practically everything that lives in the domain. And to some degree that is correct though only at first sight. The true variety of plant life in Mordent can be found within the ancient deciduous forests. Here all kinds of trees can be found, though willow trees dominate near the waterways. Of special note here though are the bush known as Devil's Tears and a small white flower called Wraithroot. Devil's Tears, or specifically the berries from the bush, are exceedingly hot when eaten, followed by a sweet rush afterward. They're often added to certain desserts and delicacies as a result, where they can be counteracted in the proper way and ensure that the taste comes to the forefront at the right time. Unfortunately, they are the crux of a favorite practical joke among the young of the Mordentish nobility, where the crushed berries are added to an unsuspecting victim's drink or food. Apparently, it is the height of comedy to watch someone trying to cool themselves after a mouthful of the berries. Wraithroot flowers are small, ivory-colored flowers that reflect even the slightest light back on their source. They're often used to make cemeteries where the flowers will lead a visitor past the graves in the moonlight. Locals insist that it looks romantic with the silver glow, but their stories insist that it is bad luck to use the flowers to lead the way home, so they're not used for marking public roads. More specifically, they believe that spirits are bound to follow the lights of the flowers, and if those lead to a home, they'll haunt the house forever."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Native Horrors",
+									"page": 117,
+									"entries": [
+										"What Mordent lacks in animal life, it more than makes up for in the activity of malign spirits. Ghosts, banshees, poltergeists, and more are extremely common in the land as if they were drawn here. The same is true for the various creatures tied to the Mists, such as the Mist Ferrymen. Encounters with the Headless Horseman are more frequent here than anywhere else in the Mists. There is an exception to this. In a 6-mile radius around Gryphon Manor and Mordentshire, there are hardly any such creatures. Those that do venture here, are inevitably drawn towards the Manor and Godefroy's control. As a result, being here is quite safe, though a few spirits do the work of Godefroy, and they are able to move freely within the area. Special mention must also go to Arden Bay on the west coast of Mordent, where there supposedly is a large sea serpent that rises to the surface during the most violent storms, and who has been blamed for the disappearance of many ships over the years."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Terrain Type",
+									"page": 117,
+									"entries": [
+										"Mordent is flat, with only very slight hills breaking the monotony. As a result, the wind tends to blow fiercely across it, and it's a rare day where the wind isn't blustery. Only in the groves of trees is it possible to find some refuge from it. The other thing that tends to dominate Mordent weather is the rain. It rains for at least an hour, practically every day. When combined with the wind, it gets incredibly cold to be caught in a downpour, even though the domain and temperature might otherwise be quite comfortable. The land is also rather poor when it comes to minerals and stone. As a result, everyone builds their houses from timber and thatch, often using mud and the like to insulate their houses, along with sod roofing. Only the rich can afford to have stone and ironwork as part of their buildings, but even for them, it is sparse. Instead, they use wooden shingles to cover their roofs and show their higher status. Around the domain though are the ruined remains of many older mansions and houses, and these all show a much greater degree of stone and ironwork than even the buildings of the rich. It is as if the land was once much richer, but lost a great degree of mineral wealth when it entered the Mists. Elsewhere, the stones and metals might have been recovered from the ruined buildings, but in Mordent the fear of ghosts is enough to keep people away from them."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Important Landmarks",
+									"page": 117,
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Boistribue Mansion",
+											"page": 117,
+											"entries": [
+												"The remains of the Boistribue Mansion lies within the Forest of the Ancients at the northern edge of Mordent. It once housed the Boistribue family, but they disappeared almost 100 years before Mordent entered the Mists. The family was suspected of inbreeding due to their extreme isolation. Something must have happened on the night that they disappeared. The mansion was found empty except for the bloody remains of servants, claw marks everywhere, and but a single survivor of the family who had been driven so mad that their accounts of the night made no sense. All they could talk about was teeth, claws, and blood. They died in a mental asylum a few years later. Locals suspect that lycanthropes were behind the massacre, but no proof was ever found of it. Moreover, no one knows if the family was victim or perpetrator of the crime, but these days the Mordentish stay away from the Forest of the Ancients once night has fallen. Not for fear of Lycanthropes, but for fear of the Boistribue Manor. The terrible events are said to have given sentience to the house, as well as a means of moving, and it now haunts the forest."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Halloway House",
+											"page": 118,
+											"entries": [
+												"Halloway House sits on a hill overlooking the Arden River and the ruins of Steadwall. It was the home of the Halloway family, who all died in mysterious ways over the years, to the point where the last patriarch of the family became an absolute recluse, lost in his paranoia — never leaving the house. Supposedly that last scion of the Halloways may still live there now unless they too have died. The Halloway family was quite wealthy, but their wealth has never been found, and must still be at the House itself. The only way to access the hill and Halloway House is through the use of Smythe's Shadow. Smythe was the ferryman of Steadwall and is the only living resident left in Steadwall. The old man is too stubborn to move and spends his days ferrying people across the Arden River, though he is particularly eager to ferry adventurers to Halloway House, hoping that finding the wealth may help him too. In fact, Smythe is the reason that the Halloway family has died. After killing a young Halloway bride and groom, and dumping them overboard, he was discovered by one of the dreaded Mist Ferrymen. Pleading for his life, he made a deal with the ferryman. He would receive all the riches of Halloway House in return for killing the entire family and guiding victims into the ferryman's waiting hands. He's done so for years, but the wealth eludes him, as he can no longer leave the crossing, making him unable to retrieve the riches and break the curse that the ferryman has placed on him. He hopes that, eventually, adventurers will successfully recover the riches, after which he will kill them, take the treasure for himself, and finally escape the grasp of the ferryman."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Heather House",
+											"page": 118,
+											"entries": [
+												"Heather House is the home of the Weathermay family and is the unofficial capital building of Mordent and Mordentshire. Here is where Jules Weathermay lives out the remainder of his days, helped by his family, especially that of his son-in-law Daniel Foxgrove. His two grand-daughters meanwhile (Gennifer and Laurie Weather-may-Foxgrove) have become famed monster hunters after spending time under the tutelage of the famed Rudolph van Richten. Regrettably, and unbeknownst to Jules, Daniel is being haunted by Wilfred Godefroy, who has captured the spirit of Alice (Jules' daughter and Daniel's wife) and is threatening to never allow her to pass into the afterlife unless Daniel spies for him.  Wilfred Godefroy visits Heather House on occasion, ensuring that everything is going to plan, but he avoids Jules wherever he can, as Jules seems able to see him or at least pick up on his presence, something that worries Godefroy. After all, he doesn't want monster hunters to come running after him, which is also why he hasn't simply eliminated Jules outright and is simply waiting for him to pass on. Once he does, he will capture his spirit, and gain access to the knowledge that was previously denied him."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "House on Gryphon Hill",
+											"page": 118,
+											"entries": [
+												"Also known as Gryphon Manor, the mansion is a source of legend within Mordent, shunned by the living and absorbing any spirit near Mordentshire itself. The house was built some 600 years ago, by famed explorer Jacques Renier (a long-ago ancestor of Jacqueline Renier of Richemulot), but no family ever lived there for more than a year afterward, until the arrival of Lord Wilfred Godefroy, a man well known for his temper and harsh treatment of servants and wife. He, against all odds, liked it here, and stayed here for a number of years, with his wife giving birth to his daughter. Wilfred was not happy with “just” a daughter, wanting a son, and blamed his wife for all manner of transgressions against him, for failing to secure him a male heir. And eventually, his temper led him to murder his wife and child, pinning the blame on his favorite stallion for it, as an “accident”. While this absolved him of mortal judgment, it didn't free him of the hauntings of his wife and daughter who came back as ghosts and haunted him for almost a year before he finally killed himself on New Year's Eve. This still did not free him of their hauntings, and he fled to Heather House until he became a darklord, at which point he returned. Unfortunately for Godefroy, while his ascent to Darklord gave him great powers, including control over other spirits and undead, it doesn't extend to his wife and daughter, and they still haunt him now, taunting him for his failures and stoking his rage, making it grow ever hotter. The building itself is built in a gothic style, with crenellations and gargoyles on every corner. The roof is made of clay shingles, and in spite of the age and lack of living inhabitants for the last century, it is still in good repair and all the windows are intact (though the garden could use some work). It sits like an angry animal waiting to pounce atop Gryphon Hill, just waiting for the right moment."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Towns and villages",
+									"page": 119,
+									"entries": [ 
+										{
+											"type": "entries",
+											"name": "Blackburn's Crossing",
+											"page": 119,
+											"entries": [
+												"Blackburn's Crossing is named after the Black-burn-Bruce family and is home to 500 souls. The Black-burn-Bruces died out many years ago, but their family manor still sits, literally, astride the river with polished red stones covering a flying, two-story walkway that crosses the river. Apart from this magnificent building the rest of the buildings of Blackburn are utterly unremarkable, which is just the way the inhabitants prefer it. But that is the only “normal” thing about the inhabitants of Blackburn's Crossing. Where the people of Mordent are normally reserved and quite off-putting, the people of Blackburn's Crossing are open and welcoming, which has no doubt helped them to establish themselves as a trade hub within Mordent. The downside of this is that it has given the criminal elements of the population a good place to conduct business. To prevent this, the local authorities, led by the mayor, a half-elf woman named Lily Vidicus, a wizard of some note, have strengthened the local police force of Mordent, known throughout the domain as the Lamplighters."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Mordentshire",
+											"page": 119,
+											"entries": [
+												"Mordentshire is the capital of Mordent, and home to both the Heather House and the Gryphon Manor and sits above the natural harbor of Arden Bay, atop a series of high cliffs. The city is split into two, the higher and lower end. The lower end is the harbor area, from where numerous stairways ascend to the top of the cliffs and into the higher end of Mordentshire.  The city is dark, with the wood of the buildings quickly absorbing the salty smell of the ocean nearby, giving it a perpetual smell of the sea, even on days where there is no wind. It is quite chilly because of the presence of the ocean, and most people wear heavy coats and scarves, even during summer.  All told, some 2,500 people live in the dark city, with the children playing in the alleyways and quiet streets. The city feels safe, at least to the people living here, though outsiders and foreigners get met with cold stares and silences that drag out forever. Countering all of the dark buildings and wood of Mordentshire is the singularly beautiful Chapel of Pure Heart. It is made of white stone akin to marble, and sits like a beacon of light just on the edge of town, on an overlook — a place where it can be seen from everywhere in town. Here, the faithful gather to pray to Ezra for safety. On the opposite side of town, like a dark twin to the Chapel of Pure Heart, sits the House on Gryphon Hill itself."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Steadwall",
+											"page": 119,
+											"entries": [
+												"Steadwall is an abandoned town that lies in ruins thanks to the year-long efforts of Smythe the ferryman. The buildings have started to collapse from neglect, except for Smythe's own, though it too is suffering, and those who venture into Steadwall experience an eerie sensation of being watched from the empty doorways. Once home to 500 souls, it now holds only the empty residences of the families who left or died, though according to Mordent superstition, it may well also be home to several types of undead."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Tumbledown",
+											"page": 119,
+											"entries": [
+												"Tumbledown sits deep within the Lightless Wood, a place that polite society within Mordent has either forgotten or ignored. Built upon and within the ruins of a far older city, the 300 people of Tumbledown prove even more insular than the rest of the people of Mordent.  Tumbledown has a sinister reputation within Mordent. The family that used to own the Lightless Wood, the Gauldamons, were revealed, after centuries, to be worshippers of the demon, Lou'gal the Smiling One. Though the family was driven off or killed (depending on who tells the story), the land remains tainted. Why the residents cling to Tumbledown is unknown, as it is an unpleasant place that sits within a swampy area, but this might be traced to the rulers of the city. Here, the mayor, Alfred Montrose, is a man without power. has succumbed to depression, due to the city's true rulers: the business owners. There aren't many of these here, in fact, only a blacksmith, three tanneries, an “exotic” item store (read: junk, but don't say that to the owner) and a money-changing service are the only businesses that are readily apparent. Why they're clinging on, or what they might be looking for is unknown, but surely there must be some form of riches to keep business folks coming here."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Fun Fact",
+									"page": 119,
+									"entries": [
+										"The people of Mordent are a stoic lot, but many of them have a liking for practical jokes, such as with the Devil's Tears that are added to food. They would never show this to non-Mordent folk, but the glee with which they engage in this behavior is almost childlike."
+									]
+								},				
+								{
+									"type": "entries",
+									"name": "Lord Wilfred Godefroy",
+									"page": 120,
+									"entries": [
+										{
+											"type": "quote",
+											"entries": [
+												"Hell is empty, all the devils are here."
+											],
+											"by": "William Shakespeare \"The Tempest\""
+										},
+										"Lord Wilfred Godefroy is the ghost of a tall human in his mid seventies. He wears a ruffled shirt with a high, stiff collar. He has a tailored jacket with tails . His hair is pulled back into a ponytail held together with a knot. Lord Godefrey always has a severe expression, like someone just asked him to perform a particularly obnoxious task, or he smelled a foul smell. He squints at anyone that approaches him, sometimes through a pincenez. Lord Godefrey talks to everyone like they are a particularly dim child, and hates to be interrupted. He is intelligent with a sadistic streak. Underneath all his arrogance and bluster, Godefrey is a coward at heart.",
+										{
+											"type": "entries",
+											"name": "Background",
+											"page": 120,
+											"entries": [
+												"In the heart of Gryphon Manor lay something evil. The locals shunned the place. The surrounding towns and villages all knew the legends. Gryphon Manor was evil. No one has lasted there for more than a year before fleeing in terror, taking only the clothes on their back and what they could grab in a panicked flight. Then the house would sit empty for a few decades before some other fool moved in.",
+												"Lord Wilfred Godefroy inherited Gryphon Manor nearly 200 years ago. Unlike previous tenants, Lord Godefroy found the home quite comfortable. After living there for a year, he arranged to marry Estelle Weathermay, the daughter of a wealthy local, some 50 years his junior. Godefroy was a cruel and quick tempered man, given to fits of rage at his new wife for imagined slights. When his wife gave birth to a girl, Godefroy began to build an insane fantasy. His wife had cheated on him. His wife had cheated to make sure she wouldn't have a male child. The young girl, Lila, was Estelle's heart and soul. Lila was a sweet child that loved unconditionally. Godefroy stewed in his insanity for years before it finally became too much. One night his temper exploded and he beat his wife to death with his walking stick. When his daughter tried to save her mother, Godefroy killed her as well.",
+												"Godefroy moved quickly to frame one of his servants. Against someone as wealthy and well connected as Godefroy, the man never stood a chance. He was hanged for murders he never committed within a week. For all the centuries Gryphon Manor had been a nexus of evil, no one had ever taken a life there. When Godefroy killed his wife and daughter something deep in the heart of the house awoke. The night after his wife and daughter were buried, their vengeful spirits appeared and tormented Godefroy. Every night for a year Godefroy was tormented by their spirits. Finally it proved to be too much, and Godefroy committed suicide.",
+												"Godefroy haunted his manor for a few years. He was denied the rest of the afterlife, but at least he was free of his wife and daughter. All that changed when the Dark Powers found Mordentshire.",
+												"An alchemist moved into Gryphon Manor, seeking to use the terrible power trapped there to activate an arcane Apparatus he had created. The alchemist activated the Apparatus at the same time that Strahd and Azalin opened a portal to Mordentshire. Strahd and Azalin were trying to escape Ravenloft, but instead pulled all of Mordentshire into the Core. The alchemist was slain, and the Dark Powers chose Lord Godefroy as a darklord.",
+												"At first Lord Godefroy revelled in his new power. Gryphon Manor was full of spirits and Godefroy wasted no time in making thm his unwilling servants. For one day, Godefroy enjoyed Ravenloft. Then night came and his wife and daughter found him. They came one night as the sun set. They tore at his ethereal form, ignoring his powers and pathetic cries for mercy. Despite this, Godefroy rarely left Gryphon Manor, only going as far as his family vault to check on his body.",
+												"A decade ago, a party of adventurers assaulted Gryphon Manor. Godefroy was able to best them, but was nearly slain in the process. The conflict shook Godefroy from his self imposed exile. He used his ability to turn invisible to spy on the moving in Mordentshire. To his horror, he found that the adventures had been around for weeks and openly discussed their plans. Godefroy continued to spy on the living when fortune smiled on him. The mayor of Mordentshire, Daniel Foxgrove, had recently lost his wife, Alice Weathermay. Alice was one of the spirits trapped in Gryphon Manor. Now Foxgrove serves as Godefroy's spy. If Godefroy is disappointed with Foxgrove's information, Alice is punished. If Godefroy is pleased, Alice is allowed to leave the manor and visit her husband for one night."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Current Sketch",
+											"page": 120,
+											"entries": [
+												"Godefroy sees stupidity all around him. He lords himself over the spirits trapped in Gryphon Manor during the day. He forces a spirit to spend its time in one room, cleaning and making minor repairs. Godefroy inspects each room daily. He rages at the spirit if the room is not perfect. If the room is perfect, Godefroy tears the room apart and then punishes the spirit for not stopping him. Godefroy plays the invincible lord during the day, but as the sun sets his demeanor changes. He starts at every small sound. As the terrible screams of his wife Estelle and Lila echo through the house Godefroy flees. No matter where Godefroy hides, his wife and daughter find him. When the morning dawns and Estelle and Lila leave, Godefroy vents his anger on the first creature he sees."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Darklord's Tactics",
+											"page": 121,
+											"entries": [
+												"During the day, Godefroy toys with his victims. He stalks them while he's invisible and then attacks with his walking stick before disappearing again. Godefroy will try to isolate his opponents when he can. He can torture them longer if they're alone. If his opponents escape Gryphon Manor Godefroy will pretend to be anchored to the house. After his opponents have moved out of sight he will turn invisible and follow them. He wreaks bloody revenge on anyone who helps them."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Borders",
+											"page": 121,
+											"entries": [
+												"When Godefroy closes the borders, the mists roll in. Anyone foolish enough to venture out discovers that all the roads head end at Mordentshire. Traveling across the country doesn't fare any better. To make matters worse, spirits fill the mists and it's only a matter of time before they discover a living creature either brave or foolish enough to travel in the mist."
+											]
+										},
+										{
+											"name": "Lord Wilfred Godefroy",
+											"type": "entries",
+											"page": 113,
+											"entries": [
+												{
+													"type": "statblock",
+													"tag": "creature",
+													"source": "Darklords&DomainsVol1",
+													"name": "Lord Wilfred Godefroy"
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": ""
+									}
 								}
 							]
 						}
@@ -15972,7 +16506,7 @@
 				{
 					"name": "Savage Attacker",
 					"entries": [
-						"Once per turn when Nathan rolls damage for a melee weapon attack, he can reroll the weapon's dam-age dice and use either total."
+						"Once per turn when Nathan rolls damage for a melee weapon attack, he can reroll the weapon's damage dice and use either total."
 					]
 				},
 				{
@@ -20036,7 +20570,7 @@
 				{
 					"name": "Shapechanger",
 					"entries": [
-						"Harkon is an accomplished shapechanger that can become any humanoid, but is most fond of his hu-man form.Harkon is fond of changing his gender , and can be either gender in any of his forms. No matter which gender he chooses, Harkon is stunningly attractive. Harkon can use his action to polymorph into a wolf-humanoid hybrid or into a humanoid, or back into its true form, which is a dire wolf. Harkon is fond of changing his gender , and can be either sex in any form. No matter which sex he chooses, Harkon is stunningly attractive. His statistics, other than his AC, are the same in each form. Any equipment he is wearing or carrying isn’t transformed. Harkon reverts to his dire wolf form if he is killed. Harkon cannot be forced to change his shape. "
+						"Harkon is an accomplished shapechanger that can become any humanoid, but is most fond of his hu-man form.Harkon is fond of changing his gender , and can be either gender in any of his forms. No matter which gender he chooses, Harkon is stunningly attractive. Harkon can use his action to polymorph into a wolf-humanoid hybrid or into a humanoid, or back into its true form, which is a dire wolf. Harkon is fond of changing his gender , and can be either sex in any form. No matter which sex he chooses, Harkon is stunningly attractive. His statistics, other than his AC, are the same in each form. Any equipment he is wearing or carrying isn't transformed. Harkon reverts to his dire wolf form if he is killed. Harkon cannot be forced to change his shape. "
 					]
 				},
 				{
@@ -20054,7 +20588,7 @@
 				{
 					"name": "Rejuvenation",
 					"entries": [
-						"The woods of Kartakass are filled with massive wolves. If Harkon is killed, his soul immediately jumps into the body of the nearest dire wolf. He regains conciousness and control over his powers within {@dice 2d12} hours, before that, he acts and is like any other Dire Wolf. If Harkon is killed while in this beastial state, he is per-manently slain. The method of Harkon’s death doesn’t matter. Old age, disease, combat etc. always leads to him having his soul transfered to a dire wolf. Harkon doesn’t know how long this will last, but has survived centuries this way. It seems the Dark Powers that granted him this realm are determined to make sure he stays in Kartakass as long as possible. "
+						"The woods of Kartakass are filled with massive wolves. If Harkon is killed, his soul immediately jumps into the body of the nearest dire wolf. He regains conciousness and control over his powers within {@dice 2d12} hours, before that, he acts and is like any other Dire Wolf. If Harkon is killed while in this beastial state, he is per-manently slain. The method of Harkon's death doesn't matter. Old age, disease, combat etc. always leads to him having his soul transfered to a dire wolf. Harkon doesn't know how long this will last, but has survived centuries this way. It seems the Dark Powers that granted him this realm are determined to make sure he stays in Kartakass as long as possible. "
 					]
 				}
 			],
@@ -20066,7 +20600,7 @@
 				{
 					"name": "Innate Spellcasting",
 					"headerEntries": [
-						"Harkon’s innate spellcasting ability is Charisma (+11 to hit, spell save {@dc 19}). He can innately cast the following spells, requiring not material components: "
+						"Harkon's innate spellcasting ability is Charisma (+11 to hit, spell save {@dc 19}). He can innately cast the following spells, requiring not material components: "
 					],
 					"will": [
 						"{@spell mage hand}",
@@ -20121,7 +20655,7 @@
 					"name": "Silver Harp {@recharge 5}",
 					"entries": [
 						"Harkon plays one of two songs on his harp.",
-						"The first song, called {@i Lament of the Worldwalker}, drains his opponents’ will to live. Enemies within 50 feet of Harkon must make a {@dc 19} Wisdom saving throw or be slowed as the 3rd level spell of the same name. Slowed characters may repeat the saving throw at the end of their turn to escape the spell. ",
+						"The first song, called {@i Lament of the Worldwalker}, drains his opponents' will to live. Enemies within 50 feet of Harkon must make a {@dc 19} Wisdom saving throw or be slowed as the 3rd level spell of the same name. Slowed characters may repeat the saving throw at the end of their turn to escape the spell. ",
 						"The second, called {@i The Children of the Night}, summons {@dice 2d10} {@creature dire wolf|MM}es. These wolves appear at the end of the turn. The dire wolves are friendly to Harkon and follow his commands."
 					]
 				}
@@ -20138,7 +20672,7 @@
 			},
 			"legendaryActions": 3,
 			"legendaryHeader": [
-				"Harkon Lukas can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature’s turn. Harkon regains spent legendary actions at the start of its turn."
+				"Harkon Lukas can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. Harkon regains spent legendary actions at the start of its turn."
 			],
 			"legendary": [
 				{
@@ -20189,7 +20723,7 @@
 						],
 						"by": "Harkon Lukas"
 					},
-					"Harkon Lukas is a handsome human male, lookimg to be in his late thirties or early forties. He is friendly, instantly likable, and seems to have friends in every tavern. Harkon’s long black hair, goatee, and mustache are neatly trimmed and washed. Unusually for a Dark Lord, Harkon is genuinely likable, and has a real affection for humans and elves. It is not unheard of for an especially attractive human or elf traveling through the woods of Kartakass to have an escort of dire wolves to keep predators away. This only lasts until Harkon gets hungry, as no company is worth missing a good meal.",
+					"Harkon Lukas is a handsome human male, lookimg to be in his late thirties or early forties. He is friendly, instantly likable, and seems to have friends in every tavern. Harkon's long black hair, goatee, and mustache are neatly trimmed and washed. Unusually for a Dark Lord, Harkon is genuinely likable, and has a real affection for humans and elves. It is not unheard of for an especially attractive human or elf traveling through the woods of Kartakass to have an escort of dire wolves to keep predators away. This only lasts until Harkon gets hungry, as no company is worth missing a good meal.",
 					{
 						"type": "entries",
 						"name": "Background",
@@ -20219,12 +20753,12 @@
 						"name": "Borders",
 						"page": 112,
 						"entries": [
-							"When Harkon closes the borders, a soporific song starts. Any creature, even undead or constructs, that tries to cross the border falls into a deep sleep. They will awaken an hour later. If they move toward the border again the creature will fall asleep. The wall won’t harm them, but Kartakass is full of large packs of wolves."
+							"When Harkon closes the borders, a soporific song starts. Any creature, even undead or constructs, that tries to cross the border falls into a deep sleep. They will awaken an hour later. If they move toward the border again the creature will fall asleep. The wall won't harm them, but Kartakass is full of large packs of wolves."
 						]
 					},
 					{
 						"type": "entries",
-						"name": "Harkon Lukas’ Lair: The Kartakan Inn",
+						"name": "Harkon Lukas' Lair: The Kartakan Inn",
 						"page": 112,
 						"entries": [
 							"In the center of Skald, the largest city in Kartakass, sits the Kartakan Inn. At midday, the inn is comfortable and usually filled with patrons. Harkon Lukas is fond of the inn, and often performs for the crowd. Harkon uses the performances to keep the crowd happy, make a little coin, and choose his next meal. As night approaches and the shadows grow longer, the farmers and crafts-men that fill the inn during the day scatter and the customers become more bestial and brutal. No matter which group is in the inn, Harkon is the center of their attention. Harkon Lukas encountered in his lair has a challenge rating of 15 ( XP)"
@@ -20237,6 +20771,384 @@
 						"href": {
 							"type": "external",
 							"url": "https://i.imgur.com/QBU8jPC.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Lord Wilfred Godefroy",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"source": "Darklords&DomainsVol1",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor",
+						"{@item ring of protection +2|darklords&domainsvol1}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d12 + 11",
+				"average": 89
+			},
+			"speed": {
+				"walk": 0,
+				"fly": 40
+			},
+			"str": 8,
+			"dex": 13,
+			"con": 10,
+			"int": 15,
+			"wis": 13,
+			"cha": 24,
+			"passive": 16,
+			"cr": "16",
+			"shortName": "Lord Wilfred Godefroy",
+			"page": 121,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Draconic",
+				"Darkonese",
+				"Mordentish"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"save": {
+				"str": "+3",
+				"dex": "+9",
+				"con": "+8",
+				"int": "+3",
+				"wis": "+9",
+				"cha": "+3"
+			},
+			"skill": {
+				"animal handling": "+6",
+				"deception": "+12",
+				"history": "+7",
+				"insight": "+11",
+				"intimidation": "+17",
+				"investigation": "+7",
+				"perception": "+6",
+				"persuasion": "+12"
+			},
+			"resist": [
+				{
+					"resist": [
+						"acid",
+						"fire",
+						"lightning",
+						"thunder"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons",
+					"cond": true
+				}
+			],
+			"immune": [
+				"cold",
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"trait": [
+				{
+					"name": "Ethereal Sight",
+					"entries": [
+						"Godefroy can see 60 ft. into the Ethereal Plane when he is on the Material Plane, and vice versa."
+					]
+				},
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"Godefroy can move through other creatures and objects as if they were difficult terrain. He takes 5 ({@damage 1d10}) force damage if he ends his turn inside an object."
+					]
+				},
+				{
+					"name": "Turn Immunity",
+					"entries": [
+						"Godefroy is immune against any effect that turns undead."
+					]
+				},
+				{
+					"name": "Bolster the Undead",
+					"entries": [
+						"Any undead creature within 300 ft of Godefroy gains a +2 bonus against turning attempts. "
+					]
+				},
+				{
+					"name": "Sense Magic",
+					"entries": [
+						"Godefroy senses magic within 120 feet of him at will. This trait otherwise works like the detect magic spell but isn’t itself magical."
+					]
+				},
+				{
+					"name": "Shielded Body and Mind",
+					"entries": [
+						"Godefroy is immune to scrying and to any effect that would sense his emotions, read his thoughts, or detect his location. Godefroy is also immune to any mind-affecting spells and spells that affect his biological functions."
+					]
+				},
+				{
+					"name": "Rejuvenation",
+					"entries": [
+						"Godefroy cannot be permanently destroyed unless Gryphon Manor is torn down and its stones scattered. If Godefroy is slain, he reforms inside the Manor 24 hours later."
+					]
+				},
+				{
+					"name": "Etherealness",
+					"entries": [
+						"Godefroy enters the Ethereal Plane from the Material Plane, or vice versa. He is visible on the Material Plane while he is in the Border Ethereal, and vice versa, yet he can’t affect or be affected by anything on the other plane."
+					]
+				},
+				{
+					"name": "Ethereal Musket",
+					"entries": [
+						"This magic musket allows the wielder to fire on a target that is on the Material Plane while the wielder is on the Ethereal plane. This ability can be used 3 times per long rest."
+					]
+				},
+				{
+					"name": "Alert",
+					"entries": [
+						"Godefroy is always on the lookout for danger, he gains the following benefits: He can’t be {@status surprised} while he is conscious. He gains a +5 bonus to initiative. Other creatures don’t gain advantage on attack rolls against Godefroy as a result of being hidden from him."
+					]
+				},
+				{
+					"name": "Flyby",
+					"entries": [
+						"Godefroy doesn’t provoke opportunity attacks when he flies out of an enemy’s reach."
+					]
+				},
+				{
+					"name": "Legendary Resistance (1/Day)",
+					"entries": [
+						"If Godefroy fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Curse",
+					"entries": [
+						"Each night, the spirits of his wife, Lady Godefroy, and their child hunt down Godefroy. He is helpless against them and when they find him they tear at his ethereal flesh as they curse him for their murders. No matter how Godefroy hides, they always track him down and find him. The wife and child ",
+						"use the Ghost statblock and he is always {@condition frightened} of them. "
+					]
+				},
+				{
+					"name": "Significant Possessions",
+					"type": "inset",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"1 {@item Ethereal Musket +1|Darklords&DomainsVol1}",
+								"1 {@item Walking Stick +1|Darklords&DomainsVol1}",
+								"1 {@item Cloak of Charisma +2|Darklords&DomainsVol1}",
+								"1 {@item Ring Of Protection +2|Darklords&DomainsVol1}"
+							]
+						}
+					]
+				}
+			],
+			"traitTags": [
+				"Flyby",
+				"Incorporeal Movement",
+				"Legendary Resistances",
+				"Rejuvenation",
+				"Turn Immunity"
+			],
+			"action": [
+				{
+					"name": "Withering Touch",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}15 ({@damage 4d6 + 1}) necrotic damage."
+					]
+				},
+				{
+					"name": "Walking Stick +1",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) bludgeoning damage and {@dice 1d4} permanent damage to Charisma. The target’s Charisma cannot drop below 1."
+					]
+				},
+				{
+					"name": "Ethereal Musket +1",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 40/120 ft., one target. {@h}8 ({@damage 1d12 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Etherealness",
+					"entries": [
+						"Godefroy enters the Ethereal Plane from the Mate-rial Plane, or vice versa. He is visible on the Material Plane while he is in the Border Ethereal, and vice versa, yet he can’t affect or be affected by anything on the other plane."
+					]
+				},
+				{
+					"name": "Invisibility",
+					"entries": [
+						"Godefroy magically turns {@condition invisible} until he attacks or casts a spell, or until his {@status concentration} ends (as if {@status concentration||concentrating} on a spell). Any equipment Godefroy wears or carries is {@condition invisible} with him."
+					]
+				},
+				{
+					"name": "Horrifying Visage",
+					"entries": [
+						"Each non-undead creature within 60 ft. of Godefroy that can see him must succeed on a {@dc 20} Wisdom saving throw or be {@condition frightened} for 1 minute. If the save fails by 5 or more, the target also ages {@dice 1d4 x 10} years. A {@condition frightened} target can repeat the saving throw at the end of each of its turns, ending the fright-ened condition on itself on a success. If a target’s saving throw is successful or the effect ends for it, the target is immune to Go-defroy’s Horrifying Visage for the next 24 hours. The aging effect can be reversed with a greater restoration spell, but only within 24 hours of it occurring."
+					]
+				},
+				{
+					"name": "Possession {@recharge}",
+					"entries": [
+						"One humanoid that Godefroy can see within 5 ft. of him must succeed on a {@dc 20} Charisma saving throw or be possessed by him; Godefroy then disappears, and the tar-get is {@condition incapacitated} and loses control of its body. Godefroy now controls the body but doesn’t deprive the target of awareness. Godefroy can’t be targeted by any attack, spell, or other effect, except ones that turn undead, and he retains his alignment, Intel-ligence, Wisdom, Charisma, and immunity to being {@condition charmed} and {@condition frightened}. He otherwise uses the possessed target’s statistics, but doesn’t gain access to the target’s knowledge, class features, or proficiencies. The possession lasts until the body drops to 0 hit points, Godefroy ends it as a bonus action, or forced out by an ef-fect like the dispel evil and good spell. When the possession ends, Godefroy reappears in an unoccupied space within 5 ft. of the body. The target is immune to Godefroy’s Possession for 24 hours after succeeding on the saving throw or after the possession ends."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"invisible"
+			],
+			"legendaryGroup": {
+				"name": "Darklords&DomainsVol1LairActionsLordWilfredGodefroy",
+				"source": "Darklords&DomainsVol1"
+			},
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"Godefroy can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. Godefroy regains spent legendary actions at the start of his turn."
+			],
+			"legendary": [
+				{
+					"name": "Walking Stick Attack",
+					"entries": [
+						"Godefroy makes a Walking Stick attack."
+					]
+				},
+				{
+					"name": "Forced Obedience",
+					"entries": [
+						"A target that Godefroy can see must succeed on a {@dc 20} Wisdom saving throw or bow until the end of its next turn. Until this bow ends, the target can’t take actions or reactions, and its speed is 0 and can’t be increased."
+					]
+				},
+				{
+					"name": "Indentured Spirits (Costs 3 Actions)",
+					"entries": [
+						"Godefroy conjures {@dice 1d6} Specters within 60 feet of him."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"N",
+				"O",
+				"P"
+			],
+			"savingThrowForced": [
+				"charisma",
+				"wisdom"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "XXX"
+			},
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"Hell is empty, all the devils are here."
+						],
+						"by": "William Shakespeare \"The Tempest\""
+					},
+					"Lord Wilfred Godefroy is the ghost of a tall human in his mid seventies. He wears a ruffled shirt with a high, stiff collar. He has a tailored jacket with tails . His hair is pulled back into a ponytail held together with a knot. Lord Godefrey always has a severe expression, like someone just asked him to perform a particularly obnoxious task, or he smelled a foul smell. He squints at anyone that approaches him, sometimes through a pincenez. Lord Godefrey talks to everyone like they are a particularly dim child, and hates to be interrupted. He is intelligent with a sadistic streak. Underneath all his arrogance and bluster, Godefrey is a coward at heart.",
+					{
+						"type": "entries",
+						"name": "Background",
+						"page": 120,
+						"entries": [
+							"In the heart of Gryphon Manor lay something evil. The locals shunned the place. The surrounding towns and villages all knew the legends. Gryphon Manor was evil. No one has lasted there for more than a year before fleeing in terror, taking only the clothes on their back and what they could grab in a panicked flight. Then the house would sit empty for a few decades before some other fool moved in.",
+							"Lord Wilfred Godefroy inherited Gryphon Manor nearly 200 years ago. Unlike previous tenants, Lord Godefroy found the home quite comfortable. After living there for a year, he arranged to marry Estelle Weathermay, the daughter of a wealthy local, some 50 years his junior. Godefroy was a cruel and quick tempered man, given to fits of rage at his new wife for imagined slights. When his wife gave birth to a girl, Godefroy began to build an insane fantasy. His wife had cheated on him. His wife had cheated to make sure she wouldn't have a male child. The young girl, Lila, was Estelle's heart and soul. Lila was a sweet child that loved unconditionally. Godefroy stewed in his insanity for years before it finally became too much. One night his temper exploded and he beat his wife to death with his walking stick. When his daughter tried to save her mother, Godefroy killed her as well.",
+							"Godefroy moved quickly to frame one of his servants. Against someone as wealthy and well connected as Godefroy, the man never stood a chance. He was hanged for murders he never committed within a week. For all the centuries Gryphon Manor had been a nexus of evil, no one had ever taken a life there. When Godefroy killed his wife and daughter something deep in the heart of the house awoke. The night after his wife and daughter were buried, their vengeful spirits appeared and tormented Godefroy. Every night for a year Godefroy was tormented by their spirits. Finally it proved to be too much, and Godefroy committed suicide.",
+							"Godefroy haunted his manor for a few years. He was denied the rest of the afterlife, but at least he was free of his wife and daughter. All that changed when the Dark Powers found Mordentshire.",
+							"An alchemist moved into Gryphon Manor, seeking to use the terrible power trapped there to activate an arcane Apparatus he had created. The alchemist activated the Apparatus at the same time that Strahd and Azalin opened a portal to Mordentshire. Strahd and Azalin were trying to escape Ravenloft, but instead pulled all of Mordentshire into the Core. The alchemist was slain, and the Dark Powers chose Lord Godefroy as a darklord.",
+							"At first Lord Godefroy revelled in his new power. Gryphon Manor was full of spirits and Godefroy wasted no time in making thm his unwilling servants. For one day, Godefroy enjoyed Ravenloft. Then night came and his wife and daughter found him. They came one night as the sun set. They tore at his ethereal form, ignoring his powers and pathetic cries for mercy. Despite this, Godefroy rarely left Gryphon Manor, only going as far as his family vault to check on his body.",
+							"A decade ago, a party of adventurers assaulted Gryphon Manor. Godefroy was able to best them, but was nearly slain in the process. The conflict shook Godefroy from his self imposed exile. He used his ability to turn invisible to spy on the moving in Mordentshire. To his horror, he found that the adventures had been around for weeks and openly discussed their plans. Godefroy continued to spy on the living when fortune smiled on him. The mayor of Mordentshire, Daniel Foxgrove, had recently lost his wife, Alice Weathermay. Alice was one of the spirits trapped in Gryphon Manor. Now Foxgrove serves as Godefroy's spy. If Godefroy is disappointed with Foxgrove's information, Alice is punished. If Godefroy is pleased, Alice is allowed to leave the manor and visit her husband for one night."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Current Sketch",
+						"page": 120,
+						"entries": [
+							"Godefroy sees stupidity all around him. He lords himself over the spirits trapped in Gryphon Manor during the day. He forces a spirit to spend its time in one room, cleaning and making minor repairs. Godefroy inspects each room daily. He rages at the spirit if the room is not perfect. If the room is perfect, Godefroy tears the room apart and then punishes the spirit for not stopping him. Godefroy plays the invincible lord during the day, but as the sun sets his demeanor changes. He starts at every small sound. As the terrible screams of his wife Estelle and Lila echo through the house Godefroy flees. No matter where Godefroy hides, his wife and daughter find him. When the morning dawns and Estelle and Lila leave, Godefroy vents his anger on the first creature he sees."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Darklord's Tactics",
+						"page": 121,
+						"entries": [
+							"During the day, Godefroy toys with his victims. He stalks them while he's invisible and then attacks with his walking stick before disappearing again. Godefroy will try to isolate his opponents when he can. He can torture them longer if they're alone. If his opponents escape Gryphon Manor Godefroy will pretend to be anchored to the house. After his opponents have moved out of sight he will turn invisible and follow them. He wreaks bloody revenge on anyone who helps them."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Borders",
+						"page": 121,
+						"entries": [
+							"When Godefroy closes the borders, the mists roll in. Anyone foolish enough to venture out discovers that all the roads head end at Mordentshire. Traveling across the country doesn't fare any better. To make matters worse, spirits fill the mists and it's only a matter of time before they discover a living creature either brave or foolish enough to travel in the mist."
+						]
+					},
+					{
+						"name": "Significant Possessions",
+						"type": "inset",
+						"entries": [
+							{
+								"type": "list",
+								"items": [
+									"1 {@item Ethereal Musket +1|Darklords&DomainsVol1}",
+									"1 {@item Walking Stick +1|Darklords&DomainsVol1}",
+									"1 {@item Cloak of Charisma +2|Darklords&DomainsVol1}",
+									"1 {@item Ring Of Protection +2|Darklords&DomainsVol1}"
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
 						}
 					}
 				]
