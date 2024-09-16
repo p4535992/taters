@@ -1,27 +1,48 @@
 {
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
 	"_meta": {
 		"sources": [
 			{
 				"json": "KPDM18",
 				"abbreviation": "DM:CD",
-				"full": "Deep Magic: Combat Divination",
+				"full": "Deep Magic 18: Combat Divination",
 				"authors": [
 					"Matt Corley",
 					"Kobold Press"
 				],
 				"convertedBy": [
-					"Spappz"
+					"Spappz",
+					"p4535992"
 				],
-				"version": "1.0",
+				"version": "2.0.0",
 				"color": "760f0b",
 				"url": "https://koboldpress.com/kpstore/product/deep-magic-combat-divination-pdf-5th-edition/"
 			}
 		],
-		"status": "wip",
+		"optionalFeatureTypes": {
+			"OF:DM:CD": "Farseer Scar"
+		},
+		"dependencies": {
+            "monster": [
+                "CCodex"
+            ]
+        },
+		"status": "ready",
 		"dateAdded": 1725408524,
 		"dateLastModified": 1725408524,
 		"_dateLastModifiedHash": "1e0127bf8d"
 	},
+	"variantrule": [
+		{
+			"name": "Combat Divination At Your Table",
+			"source": "KPDM18",
+			"entries": [
+				"In practical terms, the only way to implement divination in combat is for the GM to tell players what their foes intend to do. By relying heavily on characters' use of reactions—a limited resource with many important uses—players can experience a (very limited) sense of precognition when they interrupt a foe's turn to alter the outcome of the foe's action or boost their defense against it.",
+				"Instead of thinking about this as characters reacting to things that are already happening, think of it as characters acting a split second before the foe, thanks to their magical training.",
+				"When implementing these new spells and class features, remember that reactions are used only on someone else's turn, never on the reacting character's turn; bonus actions are used only on the acting character's turn, never on someone else's turn; and that a character can take only one bonus action per turn and only one reaction per round unless a spell or ability specifically allows more. If a spell is cast as a bonus action, that character can also use their action to cast a cantrip but not to cast another spell of level 1 or higher."
+			]
+		}
+	],
 	"feat": [
 		{
 			"name": "Arcane Prescience",
@@ -45,6 +66,659 @@
 				"You have a mystical connection to the ebb and flow of combat and can anticipate and even influence the actions of nearby combatants.",
 				"You learn one {@filter 1st-level spell of your choice from the divination school of magic|spells|level=1|school=D|cast time=action;bonus}. The spell must have a casting time of 1 reaction or 1 bonus action. Choose Intelligence, Wisdom, or Charisma to be your spellcasting ability for this spell. You can cast the spell a number of times equal to your spellcasting ability modifier (minimum of 1). You regain expended castings after finishing a long rest.",
 				"This feat can be taken more than once. Choose a different spell each time the feat is taken."
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Farseer",
+			"source": "KPDM18",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"shortName": "Farseer",
+			"page": 1,
+			"subclassFeatures": [
+				"Farseer|Sorcerer|PHB|Farseer|KPDM18|1",
+				"Commune with the Unknown|Sorcerer|PHB|Farseer|KPDM18|6",
+				"Time Slip|Sorcerer|PHB|Farseer|KPDM18|14",
+				"Sharing the Dream|Sorcerer|PHB|Farseer|KPDM18|18"
+			]
+		},
+		{
+			"name": "The Sibyl",
+			"source": "KPDM18",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"shortName": "The Sibyl",
+			"subclassSpells": [
+				"alarm|phb",
+				"seer's reaction|KPDM18",
+				"augury|phb",
+				"blindness/deafness|phb",
+				"bestow curse|phb",
+				"clairvoyance|phb",
+				"confusion|phb",
+				"divination|phb",
+				"eidetic memory|midgardHeroesHandbook",
+				"hod's gift|midgardHeroesHandbook"
+			],
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"expanded": {
+						"1": [
+							"alarm|phb",
+							"seer's reaction|KPDM18"
+						],
+						"2": [
+							"augury|phb",
+							"blindness/deafness|phb"
+						],
+						"3": [
+							"bestow curse|phb",
+							"clairvoyance|phb"
+						],
+						"4": [
+							"confusion|phb",
+							"divination|phb"
+						],
+						"5": [
+							"eidetic memory|midgardHeroesHandbook",
+							"hod's gift|midgardHeroesHandbook"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"The Sibyl|Warlock|PHB|The Sibyl|KPDM18|1",
+				"Disastrous Prognostications|Warlock|PHB|The Sibyl|KPDM18|6",
+				"Whispered Warnings|Warlock|PHB|The Sibyl|KPDM18|10",
+				"Pierced the Veil|Warlock|PHB|The Sibyl|KPDM18|14"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Farseer",
+			"source": "KPDM18",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "KPDM18",
+			"subclassShortName": "Farseer",
+			"page": 4,
+			"level": 1,
+			"entries": [
+				{
+					"name": "Combat Divination At Your Table",
+					"type": "inset",
+					"entries": [
+						"In practical terms, the only way to implement divination in combat is for the GM to tell players what their foes intend to do. By relying heavily on characters' use of reactions—a limited resource with many important uses—players can experience a (very limited) sense of precognition when they interrupt a foe's turn to alter the outcome of the foe's action or boost their defense against it.",
+						"Instead of thinking about this as characters reacting to things that are already happening, think of it as characters acting a split second before the foe, thanks to their magical training.",
+						"When implementing these new spells and class features, remember that reactions are used only on someone else's turn, never on the reacting character's turn; bonus actions are used only on the acting character's turn, never on someone else's turn; and that a character can take only one bonus action per turn and only one reaction per round unless a spell or ability specifically allows more. If a spell is cast as a bonus action, that character can also use their action to cast a cantrip but not to cast another spell of level 1 or higher."
+					]
+				},
+				"Your magic comes from a god of prophecy and prognostication who imbued a sliver of its power in your ancestry. Farseers can trace their power through the generations to a single, powerful ancestor whose divine gift gave them access to the webs of fate. Others are plagued by visions and omens with no knowledge of their august lineage. These unfortunate men and women may be driven to madness and ostracized by their uncontrolled, forbidden knowledge. Regardless, the touch of the divine has forever changed you and the skeins of fate unravel in your view.",
+				"Except as noted below, farseers function as sorcerers and use the sorcerer spell list.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Blood of the Seer|Sorcerer|PHB|Farseer|KPDM18|1|KPDM18"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Quickening|Sorcerer|PHB|Farseer|KPDM18|1|KPDM18"
+				}
+			]
+		},
+		{
+			"name": "Blood of the Seer",
+			"source": "KPDM18",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "KPDM18",
+			"subclassShortName": "Farseer",
+			"page": 4,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"When you choose this origin at 1st level, the blood of your ancestors signals your destiny. You become proficient in the skills Insight and History. Your preternatural sense of what is to come also allows you to sense imminent danger, so you make initiative checks with advantage."
+			],
+			"skillProficiencies": [
+				{
+					"insight": true,
+					"history": true
+				}
+			]
+		},
+		{
+			"name": "Quickening",
+			"source": "KPDM18",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Farseer",
+			"subclassSource": "KPDM18",
+			"page": 4,
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"Starting at 1st level, you can take the {@action Dodge} action as a bonus action on your turn. You can do this a number of times equal to your Constitution modifier (minimum of 1). You regain expended uses after finishing a long or short rest."
+			]
+		},
+		{
+			"name": "Commune with the Unknown",
+			"source": "KPDM18",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "KPDM18",
+			"subclassShortName": "Farseer",
+			"page": 4,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Upon reaching 6th level, your prophetic insight allows you to commune with otherworldly powers. By focusing all your attention on a single yes-or-no question for 1 minute, you can pose that question to the powers beyond. The entity that responds to your question has vast knowledge of everything that has happened and of everything that is likely to happen. It isn't omniscient, however; it can predict the future only in terms of what may happen, not what's certain to happen. Questions about the future must be phrased in terms of what's possible or plausible to avoid nonanswers. You must finish a short or long rest before communing with the unknown again."
+			]
+		},
+		{
+			"name": "Time Slip",
+			"source": "KPDM18",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "KPDM18",
+			"subclassShortName": "Farseer",
+			"page": 5,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Beginning at 14th level, the skeins of time enshroud your body, distorting the fabric of reality around you. As an action you can expend 3 sorcery points to step out of sync with probable futures. You can be seen only as an indistinct, shimmery outline. Attacks against you are made with disadvantage and you have resistance against nonmagical bludgeoning, piercing, and slashing damage. Additionally, you can move through other creatures and solid objects as if they were difficult terrain. If you end your turn inside a solid object, you take 5 ({@dice 1d10}) force damage.",
+				"The effect lasts for up to 1 minute, provided you maintain concentration on it as on a spell."
+			],
+			"consumes": {
+				"name": "Sorcery Point",
+				"amount": 3
+			}
+		},
+		{
+			"name": "Sharing the Dream",
+			"source": "KPDM18",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "KPDM18",
+			"subclassShortName": "Farseer",
+			"page": 5,
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"At 18th level, visions of likely futures constantly weave across your consciousness. You can share that foreknowledge with your companions. As an action, you can grant up to five creatures (which can include yourself) advantage on attack rolls or saving throws (each creature chooses for itself) for up to 1 minute, provided you maintain concentration on this effect as on a spell. You must expend 2 sorcery points per affected creature to trigger this effect."
+			],
+			"consumes": {
+				"name": "Sorcery Point",
+				"amount": 2
+			}
+		},
+		{
+			"name": "The Sibyl",
+			"source": "KPDM18",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "KPDM18",
+			"subclassShortName": "The Sibyl",
+			"page": 5,
+			"level": 1,
+			"entries": [
+				{
+					"name": "Combat Divination At Your Table",
+					"type": "inset",
+					"entries": [
+						"In practical terms, the only way to implement divination in combat is for the GM to tell players what their foes intend to do. By relying heavily on characters' use of reactions—a limited resource with many important uses—players can experience a (very limited) sense of precognition when they interrupt a foe's turn to alter the outcome of the foe's action or boost their defense against it.",
+						"Instead of thinking about this as characters reacting to things that are already happening, think of it as characters acting a split second before the foe, thanks to their magical training.",
+						"When implementing these new spells and class features, remember that reactions are used only on someone else's turn, never on the reacting character's turn; bonus actions are used only on the acting character's turn, never on someone else's turn; and that a character can take only one bonus action per turn and only one reaction per round unless a spell or ability specifically allows more. If a spell is cast as a bonus action, that character can also use their action to cast a cantrip but not to cast another spell of level 1 or higher."
+					]
+				},
+				"You have made a pact with the Sibyl, a divine being associated with prophecy, knowledge, and fate. Your patron guides you through visions, portents, and periods of ecstatic clarity to act on its behalf and to further its stratagems. Your relationship to your patron is different from that of its clergy. You are not asked for faith, worship, or adulation; instead, you serve solely through your action and influence in the world. Because of that, you might have a strained relationship with the deity's most dedicated priests and other zealots.",
+				"Except as noted below, you function as a warlock and use the warlock spell list.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Expanded Spell List|Warlock|PHB|The Sibyl|KPDM18|1|KPDM18"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Touched by the Sybil|Warlock|PHB|The Sibyl|KPDM18|1|KPDM18"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "The Sybil and your Pact Boons|Warlock|PHB|The Sibyl|KPDM18|1|KPDM18"
+				}
+			]
+		},
+		{
+			"name": "Expanded Spell List",
+			"source": "KPDM18",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "KPDM18",
+			"subclassShortName": "The Sibyl",
+			"page": 5,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"The Sibyl lets you choose from an extended list of spells when you learn a warlock spell. The following spells are added to the Warlock list for you.",
+				{
+					"type": "table",
+					"colLabels": [
+						"Spell Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell alarm|PHB}, {@spell seer's reaction|KPDM18}"
+						],
+						[
+							"2nd",
+							"{@spell augury|PHB}, {@spell blindness/deafness|PHB}"
+						],
+						[
+							"3rd",
+							"{@spell bestow curse|PHB}, {@spell clairvoyance|PHB}"
+						],
+						[
+							"4th",
+							"{@spell confusion|PHB}, {@spell divination|PHB}"
+						],
+						[
+							"5th",
+							"{@spell eidetic memory|midgardHeroesHandbook}*, {@spell hod's gift|midgardHeroesHandbook}*"
+						]
+					],
+					"footnotes": [
+						"* see {@i Midgard Heroes Handbook}"
+					]
+				}
+			]
+		},
+		{
+			"name": "Touched by the Sybil",
+			"source": "KPDM18",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "KPDM18",
+			"subclassShortName": "The Sibyl",
+			"page": 5,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"At 1st level, you are driven to ecstatic gibbering and utterances through your connection to your patron. Your prophetic commentary, startling insights, and frenetic appearance is unsettling, distracting, and psychically damaging to your target. Although the manifestation is different, this functions identically to the {@spell vicious mockery|PHB} cantrip.",
+				"Additionally, you are proficient at Performance. Your proficiency bonus is doubled for ability checks you make using Performance."
+			],
+			"skillProficiencies": [
+				{
+					"performance": true
+				}
+			]
+		},
+		{
+			"name": "The Sybil and your Pact Boons",
+			"source": "KPDM18",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "KPDM18",
+			"subclassShortName": "The Sibyl",
+			"page": 6,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"When you make a pact with a patron, you are rewarded with a boon a special artifact that symbolizes the eldritch bargain that has been struck.",
+				"This chapter introduces four pact boons for you to choose from blade, chain, tome, and wand.",
+				{
+					"name": "Choosing Your Pact",
+					"entries": [
+						"Choose your pact from one of the following options:",
+						{
+							"type": "list",
+							"items": [
+								"{@b {@optfeature Pact of the Blade|PHB}:} Your weapon is usually, but not always, the weapon favored by your patron. When you create or summon your pact weapon, you can choose whether it does its standard damage type or psychic damage.",
+								"{@b {@optfeature Pact of the Chain|PHB}:} Your patron grants you a special familiar, a {@creature giant moth|CCodex} (see {@i Creature Codex}), to aid you.",
+								"{@b {@optfeature Pact of the Tome|PHB}:} Your tome is an illuminated manuscript with depictions of ancestral prophets foretelling events to come. As your adventuring career progresses, new illuminations appear in the book’s pages, displaying your notable actions in the service of your patron. While this book is on your person, your passive Perception score is increased by 1 when being matched against enemy Stealth check results."
+							]
+						},
+						"Your pact boon artifact bears the unmistakable mark of your patron-fiendish red veins, fey vines and flowers, aberrant runes and etchings, etc. You may decide how your artifact is branded by your patron."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Sealing your Pact",
+					"entries": [
+						"You gain your pact boon artifact once you seal your pact traditionally by means of making a promise or sacrifice to your patron. Choose one of the following, or define your own sealing ritual:",
+						{
+							"type": "list",
+							"items": [
+								"{@b I made a promise:} You have sworn to perform a particular service in the name of your patron. Your promise should be (a) achievable and (b) narrow enough in scope so that it can be reasonably addressed during gameplay.",
+								"{@b I made a sacrifice:} You sacrificed something of great value to your patron."
+							]
+						},
+						"Describe how you sealed your pact with your patron."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Renewing your Pact",
+					"entries": [
+						"If you lose your pact boon artifact, you can spend one point of eldritch favor and perform a 1-hour ceremony to receive a replacement artifact from your patron.",
+						"This ceremony can be performed during a short or long rest, and it destroys the previous boon item.",
+						{
+							"name": "A New Seal",
+							"entries": [
+								"Depending on the circumstances in which you lost your artifact, your patron may demand that you renew your pact with a fresh seal. This may require you to make a new promise or sacrifice."
+							],
+							"type": "entries"
+						}
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Disastrous Prognostications",
+			"source": "KPDM18",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "KPDM18",
+			"subclassShortName": "The Sibyl",
+			"page": 6,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Starting at 6th level, you can direct your patron to infiltrate and overwhelm your target's psyche with prophetic knowledge of failures from the target's immediate future. As an action, target a creature that can see and hear you within 60 feet. It must make a successful Charisma saving throw or be stunned until the end of your next turn.",
+				"After using this feature, you can't use it again until you finish a short or long rest."
+			]
+		},
+		{
+			"name": "Whispered Warnings",
+			"source": "KPDM18",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "KPDM18",
+			"subclassShortName": "The Sibyl",
+			"page": 6,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"Starting at 10th level, the sibylline voices in your mind become clearer and more focused. The voices bolster your mindfulness of your surroundings and grant you a preternatural awareness of creatures that mean you harm. While wearing light or no armor, you can add your Charisma modifier (minimum of 1) to your armor class."
+			]
+		},
+		{
+			"name": "Pierced the Veil",
+			"source": "KPDM18",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "KPDM18",
+			"subclassShortName": "The Sibyl",
+			"page": 6,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Starting at 14th level, when you inflict psychic damage to a target, you can also inundate it with frenetic and discordant voices of doom. The awful truths revealed to the target cause {@dice 8d10} psychic damage and it is confused (as the spell) until the end of its next turn.",
+				"Once you use this feature, you can't use it again until you finish a long rest."
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Fuel to the Fire",
+			"source": "KPDM18",
+			"featureType": [
+				"OF:DM:CD"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Sorcerer"
+						},
+						"subclass": {
+							"name": "Farseer"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Farseer|Sorcerer|PHB|Farseer|KPDM18|1|} feature",
+						"entrySummary": "Farseer"
+					}
+				}
+			],
+			"page": 1,
+			"entries": [
+				"At 1st level, your spellscar keeps you resilient to magic, when you are affected by a spell of 1st level or higher, you can use your reaction to empower your spellscar and gain resistance to one type of the damage dealt if damage was done. When you use this, your spellscar flares, and you can use one of your {@i Spellscarred} Powers up until the end of your next turn."
+			]
+		},
+		{
+			"name": "Headlamp",
+			"source": "KPDM18",
+			"featureType": [
+				"OF:DM:CD"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Sorcerer"
+						},
+						"subclass": {
+							"name": "Farseer"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Farseer|Sorcerer|PHB|Farseer|KPDM18|1|} feature",
+						"entrySummary": "Farseer"
+					}
+				}
+			],
+			"page": 1,
+			"entries": [
+				"At 1st level, your spellscar softly glows, casting dimlight from you in a 5 ft. radius. Without needing to use an action or bonus action you can turn this light to bright light out to a 5 foot radius with dim light another 5 feet beyond that. This light can never be put out, only concealed by clothing. The flames do not cause harm to creatures or objects, but an uncomfortable warmth can sometimes be felt by the wielder of the spellscar."
+			]
+		},
+		{
+			"name": "Burning Resolve",
+			"source": "KPDM18",
+			"featureType": [
+				"OF:DM:CD"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Sorcerer"
+						},
+						"subclass": {
+							"name": "Farseer"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Farseer|Sorcerer|PHB|Farseer|KPDM18|1|} feature",
+						"entrySummary": "Farseer"
+					}
+				}
+			],
+			"page": 1,
+			"entries": [
+				"You can use a bonus action to ready yourself for the next spell, choose a saving throw, when you are forced to resist a magical effect using that saving throw within the next minute, you can use your reaction to choose to automatically succeed. After using the effect the Power ends."
+			]
+		},
+		{
+			"name": "Armor of Fire",
+			"source": "KPDM18",
+			"featureType": [
+				"OF:DM:CD"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Sorcerer"
+						},
+						"subclass": {
+							"name": "Farseer"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Farseer|Sorcerer|PHB|Farseer|KPDM18|1|} feature",
+						"entrySummary": "Farseer"
+					}
+				}
+			],
+			"page": 1,
+			"entries": [
+				"Your spellscar hums, ready to protect you and it from attacks with disorientating flames, you can use a bonus action to gain a bonus to your AC equal to your proficiency bonus for the next minute. You can use your reaction to double this bonus for a single attack, but doing so ends the effect after the attack no matter the time remaining."
+			]
+		},
+		{
+			"name": "Disruptive Burn",
+			"source": "KPDM18",
+			"featureType": [
+				"OF:DM:CD"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Sorcerer"
+						},
+						"subclass": {
+							"name": "Farseer"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Farseer|Sorcerer|PHB|Farseer|KPDM18|1|} feature",
+						"entrySummary": "Farseer"
+					}
+				}
+			],
+			"page": 1,
+			"entries": [
+				"You can make a special attack as your spellscar's flames encoat your hand, teeth, horns, etc. You can use an action to make a melee spell attack, if you hit, you brand the individual with a temporary spellscar, they take fire damage equal to your Charisma modifier, and on concentration checks they must beat your Spell Save DC unless the concentration check calls for a higher roll. They must also make a spellcasting ability check against your Spell Save DC the first time they try to cast a spell of 1st level or higher.",
+				"This spellscar counts as a curse, and can be removed with spells such as remove curse. This lasts for one minute."
+			]
+		},
+		{
+			"name": "Cooperative Flame",
+			"source": "KPDM18",
+			"featureType": [
+				"OF:DM:CD"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Sorcerer"
+						},
+						"subclass": {
+							"name": "Farseer"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Farseer|Sorcerer|PHB|Farseer|KPDM18|1|} feature",
+						"entrySummary": "Farseer"
+					}
+				}
+			],
+			"page": 1,
+			"entries": [
+				"You can use an action to touch another creature and give them a temporary spellscar that grants a small benefit, this spellscar grants a bonus equal to half your proficiency bonus rounded down to saving throws for the next hour.",
+				"This spellscar counts as a curse, and can be removed with spells such as {@spell remove curse|PHB}. This lasts for one minute."
+			]
+		},
+		{
+			"name": "Gift of Life",
+			"source": "KPDM18",
+			"featureType": [
+				"OF:DM:CD"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Sorcerer"
+						},
+						"subclass": {
+							"name": "Farseer"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Farseer|Sorcerer|PHB|Farseer|KPDM18|1|} feature",
+						"entrySummary": "Farseer"
+					}
+				}
+			],
+			"page": 2,
+			"entries": [
+				"You can cast the {@spell Find Familiar|PHB} spell as an action instead of the normal casting time, creating a creature that exists by your flame. Whatever creature you create, it has the {@b {@i Headlamp feature}}. The spell lasts for eight hours, and counts as abjuration magic instead of conjuration."
+			]
+		},
+		{
+			"name": "Gaze of the Plague",
+			"source": "KPDM18",
+			"featureType": [
+				"OF:DM:CD"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Sorcerer"
+						},
+						"subclass": {
+							"name": "Farseer"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Farseer|Sorcerer|PHB|Farseer|KPDM18|1|} feature",
+						"entrySummary": "Farseer"
+					}
+				}
+			],
+			"page": 2,
+			"entries": [
+				"You can grant yourself darkvision as your eyes become backlit with flame. You gain darkvision out to a range of 60 feet, if you already have darkvision, the range doubles to a maximum of 120 feet. This lasts for one hour."
+			]
+		},
+		{
+			"name": "A Burning Sensation",
+			"source": "KPDM18",
+			"featureType": [
+				"OF:DM:CD"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Sorcerer"
+						},
+						"subclass": {
+							"name": "Farseer"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature Farseer|Sorcerer|PHB|Farseer|KPDM18|1|} feature",
+						"entrySummary": "Farseer"
+					}
+				}
+			],
+			"page": 2,
+			"entries": [
+				"When you hit with a weapon attack, you temporarily give them a spellscar, whenever they take damage, an additional 1 fire damage is dealt. This lasts for 1 minute.",
+				"This spellscar counts as a curse, and can be removed with spells such as {@spell remove curse|PHB}. This lasts for one minute."
 			]
 		}
 	]
