@@ -1663,6 +1663,339 @@
 				"Starting at 14th level, when you inflict psychic damage to a target, you can also inundate it with frenetic and discordant voices of doom. The awful truths revealed to the target cause {@dice 8d10} psychic damage and it is confused (as the spell) until the end of its next turn.",
 				"Once you use this feature, you can't use it again until you finish a long rest."
 			]
+		},
+		{
+			"name": "Prescient Knight",
+			"source": "KPDM18",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Prescient Knight",
+			"subclassSource": "KPDM18",
+			"page": 6,
+			"level": 3,
+			"entries": [
+				"The prescient knight is the culmination of long years of study, practice, and dedication to the craft of combat divination by those seeking the ultimate martial expression of that art. Their ability to meld martial prowess with combat divination makes them a formidable force on the field of battle.",
+				"Except as noted below, prescient knights function as fighters.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiency|Fighter|PHB|Prescient Knight|KPDM18|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Reactive Echo|Fighter|PHB|Prescient Knight|KPDM18|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Spellcasting|Fighter|PHB|Prescient Knight|KPDM18|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Martial Caster|Fighter|PHB|Prescient Knight|KPDM18|3"
+				}
+			]
+		},
+		{
+			"name": "Bonus Proficiency",
+			"source": "KPDM18",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Prescient Knight",
+			"subclassSource": "KPDM18",
+			"page": 6,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"When you choose this archetype, you become proficient in the Arcana skill."
+			],
+			"skillProficiencies": [
+				{
+					"arcana": true
+				}
+			]
+		},
+		{
+			"name": "Reactive Echo",
+			"source": "KPDM18",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Prescient Knight",
+			"subclassSource": "KPDM18",
+			"page": 6,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"When choosing this archetype, your ability to anticipate the actions of your foes allows you to take a second reaction during a round in which you use your Action Surge."
+			]
+		},
+		{
+			"name": "Spellcasting",
+			"source": "KPDM18",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Prescient Knight",
+			"subclassSource": "KPDM18",
+			"page": 6,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"At 3rd level, you gain the ability to cast spells.",
+				"{@b Cantrips.} You learn two cantrips of your choice from the wizard spell list. You learn an additional cantrip of your choice from the wizard spell list at 10th level.",
+				"{@b Spell Slots.} The Prescient Knight Spellcasting table indicates how many spell slots you have available for casting spells. You regain used spell slots upon completing a long rest.",
+				{
+					"type": "table",
+					"colLabels": [
+						"Fighter Level",
+						"{@filter Cantrips Known|spells|level=0|class=Fighter}",
+						"Spells Known",
+						"Spell Slots per {@filter 1st Level|spells|level=1|class=Fighter}",
+						"Spell Slots per {@filter 2nd Level|spells|level=2|class=Fighter}",
+						"Spell Slots per {@filter 3rd Level|spells|level=3|class=Fighter}",
+						"Spell Slots per {@filter 4th Level|spells|level=4|class=Fighter}"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-2 text-center",
+						"col-2 text-center",
+						"col-1 text-center",
+						"col-1 text-center",
+						"col-1 text-center",
+						"col-1 text-center"
+					],
+					"rows": [
+						[
+							"3rd",
+							"2",
+							"3",
+							"2",
+							"-",
+							"-",
+							"-"
+						],
+						[
+							"4th",
+							"2",
+							"4",
+							"3",
+							"-",
+							"-",
+							"-"
+						],
+						[
+							"5th",
+							"2",
+							"4",
+							"3",
+							"-",
+							"-",
+							"-"
+						],
+						[
+							"6th",
+							"2",
+							"4",
+							"3",
+							"-",
+							"-",
+							"-"
+						],
+						[
+							"7th",
+							"2",
+							"5",
+							"4",
+							"2",
+							"-",
+							"-"
+						],
+						[
+							"8th",
+							"2",
+							"6",
+							"4",
+							"2",
+							"-",
+							"-"
+						],
+						[
+							"9th",
+							"2",
+							"6",
+							"4",
+							"2",
+							"-",
+							"-"
+						],
+						[
+							"10th",
+							"3",
+							"7",
+							"4",
+							"3",
+							"-",
+							"-"
+						],
+						[
+							"11th",
+							"3",
+							"8",
+							"4",
+							"3",
+							"-",
+							"-"
+						],
+						[
+							"12th",
+							"3",
+							"8",
+							"4",
+							"3",
+							"-",
+							"-"
+						],
+						[
+							"13th",
+							"3",
+							"9",
+							"4",
+							"3",
+							"2",
+							"-"
+						],
+						[
+							"14th",
+							"3",
+							"10",
+							"4",
+							"3",
+							"2",
+							"-"
+						],
+						[
+							"15th",
+							"3",
+							"10",
+							"4",
+							"3",
+							"2",
+							"-"
+						],
+						[
+							"16th",
+							"3",
+							"11",
+							"4",
+							"3",
+							"3",
+							"-"
+						],
+						[
+							"17th",
+							"3",
+							"11",
+							"4",
+							"3",
+							"3",
+							"-"
+						],
+						[
+							"18th",
+							"3",
+							"11",
+							"4",
+							"3",
+							"3",
+							"-"
+						],
+						[
+							"19th",
+							"3",
+							"12",
+							"4",
+							"3",
+							"3",
+							"1"
+						],
+						[
+							"20th",
+							"3",
+							"13",
+							"4",
+							"3",
+							"3",
+							"1"
+						]
+					]
+				},
+				"{@b Spells Known of 1st level and Higher.} The Prescient Knight Spellcasting table shows how many spells are known at 1st level and higher. When choosing this martial tradition, you learn three 1st-level spells. You are limited in your selection to wizard spells of the divination and abjuration schools. Additionally, you can choose any divination spell with a casting time of 1 reaction or 1 bonus action, whether or not it’s on the wizard spell list. You learn additional spells as you progress; newly learned spells have the same school and list restrictions as your original spells. Whenever you gain a level, you can replace one spell you know with another from among those spells you can know.",
+				"{@b Spellcasting Ability.} Intelligence is your spellcasting ability. Use your Intelligence modifier when making an attack roll with a spell and when determining you spell saving throw DC."
+			]
+		},
+		{
+			"name": "Martial Caster",
+			"source": "KPDM18",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Prescient Knight",
+			"subclassSource": "KPDM18",
+			"page": 7,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"At 3rd level you can cast spells having a somatic component while you are wielding a weapon and/or shield, provided you are proficient with those items."
+			]
+		},
+		{
+			"name": "Constant Vigilance",
+			"source": "KPDM18",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Prescient Knight",
+			"subclassSource": "KPDM18",
+			"page": 7,
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"Beginning at 7th level, you have a preternatural awareness of your surroundings in times of duress. If you are surprised but not incapacitated at the start of combat, you can use your Action Surge to negate surprise for yourself and take a normal turn plus one additional action (for the Action Surge) in the first round of combat. Additionally, using your Action Surge this way allows you to give sufficient warning to your allies who are within 15 feet of you so they can also start taking reactions after your turn."
+			]
+		},
+		{
+			"name": "Evasion",
+			"source": "KPDM18",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Prescient Knight",
+			"subclassSource": "KPDM18",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"At 10th level, your foreknowledge of events to come allows you to position yourself in the most advantageous manner. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and half damage if you fail."
+			]
+		},
+		{
+			"name": "Anticipatory Strike",
+			"source": "KPDM18",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Prescient Knight",
+			"subclassSource": "KPDM18",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"At 15th level, your connection to threads of fate strengthens, providing greater insight into the movements and actions of your opponents. When you use an Action Surge, you have advantage on attack rolls and a +2 bonus to your AC until the end of your next turn."
+			]
+		},
+		{
+			"name": "Action Free of Thought",
+			"source": "KPDM18",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Prescient Knight",
+			"subclassSource": "KPDM18",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"At 18th level, your martial mastery of combat divination is such that you are able to react to your opponent without conscious thought and with minimal physical effort. During combat, you can take one reaction every turn instead of one per round."
+			]
 		}
 	]
 }
