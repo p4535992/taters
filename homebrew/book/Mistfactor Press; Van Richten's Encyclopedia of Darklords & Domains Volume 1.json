@@ -149,7 +149,41 @@
 				},
 				"If Godefroy dies and the Manor is destroyed, the effects fade immediately."
 			]
+		},
+		{
+			"name": "Darklords&DomainsVol1LairActionsSirTristenHiregaard",
+			"source": "Darklords&DomainsVol1",
+			"lairActions": [
+				"On initiative count 20 (losing initiative ties), Malken can take one lair action to cause one of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Raucous laughter:} Raucous laughter fills the air. A creature that Malken chooses within 50 feet must make a DC 15 Wisdom saving throw. Creatures that fail find the laughter irresistible and join in. They may only take an action, move action or bonus action on their next turn.",
+						"{@b Distraction Shadow:} The people and creatures inside the painting and tapestries that line the walls of Castle Faerhaaven come alive, subtly moving when Malken's foes can see them out of the corners of their eyes. A creature that Malken can see within 30 feet must make a DC 15 Wisdom saving throw or have disadvantage on their next attack roll.",
+						"{@b Eyes Contact:} Malken locks eyes with one creature he can see within 30 feet. That creature must make a DC 15 Dexterity saving throw or take 21 ({@dice 6d6}) psychic damage."
+					]
+				},
+				"Malken can't repeat an effect until they have all been used, and he can't use the same effect two rounds in a row."
+			]
+		},
+		{
+			"name": "Darklords&DomainsVol1LairActionsJacquelineRenier",
+			"source": "Darklords&DomainsVol1",
+			"lairActions": [
+				"On initiative count 20 (losing initiative ties), Jacqueline can take one lair action to cause one of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Swarm of Rats:} Jacqueline chooses a point within 30 feet. A massive swarm of rats boils out from the walls, ceiling and floor and attacks every creature within 10 feet of that point. Creatures attacked by the swarm must make a DC 15 Dexterity saving throw. They take 18 (4d8) piercing damage on a failed saving throw and half as much on a successful one.",
+						"{@b Crossbow bolt :} A crossbow bolt launches out of the shadows. One creature within 50 feet of Jacqueline must make a DC 17.",
+						"{@b Area of Draining Energy:} Jacqueline chooses a point within 50 feet of her, and the area swarms with vitality draining energy. Creatures within 10 feet of that point that are immune to poison damage become resistant, and creatures resistant to poison damage lose their resistance until initiative count 20 of the next turn."
+					]
+				},
+				"Jacqueline can’t repeat an effect until they have all been used, and she can’t use the same effect two rounds in a row."
+			]
 		}
+
+		
 	],
 	"spell": [
 		{
@@ -4870,7 +4904,7 @@
 			"dmg1": "1d4",
 			"dmgType": "B",
 			"entries": [
-				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) bludgeoning damage and {@dice 1d4} permanent damage to Charisma. The target’s Charisma cannot drop below 1."
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) bludgeoning damage and {@dice 1d4} permanent damage to Charisma. The target's Charisma cannot drop below 1."
 			]
 		}
 	],
@@ -4898,7 +4932,9 @@
 				"people of Gundarak",
 				"people of Hazlan",
 				"people of Invidia",
-				"people of Kartakass"
+				"people of Kartakass",
+				"people of Nova Vaasa",
+				"people of Richemulot"
 			],
 			"script": "Elvish"
 		},
@@ -4919,7 +4955,19 @@
 			"page": 1,
 			"type": "standard",
 			"typicalSpeakers": [
-				"people of Shadow Rift/Arak"
+				"people of Shadow Rift/Arak",
+				"people of Nova Vaasa",
+				"people of Richemulot"
+			],
+			"script": "Elvish"
+		},
+		{
+			"name": "Dementlieuse",
+			"source": "Darklords&DomainsVol1",
+			"page": 1,
+			"type": "standard",
+			"typicalSpeakers": [
+				"people of Richemulot"
 			],
 			"script": "Elvish"
 		},
@@ -4933,7 +4981,9 @@
 				"barovian vampires",
 				"people of Borca/Dorvinia",
 				"people of Invidia",
-				"people of Mordent"
+				"people of Mordent",
+				"people of Nova Vaasa",
+				"people of Richemulot"
 			],
 			"script": "Elvish"
 		},
@@ -4980,7 +5030,8 @@
 				"people of Arkandale",
 				"people of Borca/Dorvinia",
 				"people of Invidia",
-				"people of Mordent"
+				"people of Mordent",
+				"people of Richemulot"
 			],
 			"script": "Elvish"
 		},
@@ -5023,7 +5074,8 @@
 			"page": 1,
 			"type": "standard",
 			"dialects": [
-				"Kartakan"
+				"Kartakan",
+				"Nova Vaasa"
 			],
 			"typicalSpeakers": [
 				"people of Shadow Rift/Arak",
@@ -5032,9 +5084,14 @@
 				"people of Hazlan",
 				"people of Invidia",
 				"people of Kartakass",
-				"people of Mordent"
+				"people of Mordent",
+				"people of Nova Vaasa",
+				"people of Richemulot"
 			],
-			"script": "Elvish"
+			"script": "Elvish",
+			"entries": [
+				"{@b Fun Fact:} While other countries may speak Vaasi, only the Nova Vaasa dialect is considered the true one by the Vaasi themselves. They  consider all other versions  brutish and inferior."
+			]
 		},
 		{
 			"name": "Void Speech",
@@ -5101,6 +5158,16 @@
 			"type": "standard",
 			"typicalSpeakers": [
 				"people of Hazlan"
+			],
+			"script": "Elvish"
+		},
+		{
+			"name": "Tepestani",
+			"source": "Darklords&DomainsVol1",
+			"page": 1,
+			"type": "standard",
+			"typicalSpeakers": [
+				"people of Nova Vaasa"
 			],
 			"script": "Elvish"
 		}
@@ -8789,7 +8856,7 @@
 											"name": "Castle Hunadora",
 											"page": 101,
 											"entries": [
-												"Castle Hunadora used to belong to Duke Gundar, and is now under the control of Gabrielle, the Gundarakite Rebels and their leader Ardonk Szerieza (and the wolfwere bard Matton Blanchard when Ardonk isn't present). It is still being carefully explored by Gabrielle and her men as the castle was extensively trapped, and they're still securing it for themselves, all while building new traps to replace the older ones. As a former home to an oppressive vampire lord, the castle features extensive external defenses and some truly disturbing rooms, such as a “drinking hall”, where victims were suspended upside down to prolong their suffering as they were slowly bled to death."
+												"Castle Hunadora used to belong to Duke Gundar, and is now under the control of Gabrielle, the Gundarakite Rebels and their leader Ardonk Szerieza (and the wolfwere bard Matton Blanchard when Ardonk isn't present). It is still being carefully explored by Gabrielle and her men as the castle was extensively trapped, and they're still securing it for themselves, all while building new traps to replace the older ones. As a former home to an oppressive vampire lord, the castle features extensive external defenses and some truly disturbing rooms, such as a \"drinking hall\", where victims were suspended upside down to prolong their suffering as they were slowly bled to death."
 											]
 										},
 										{
@@ -9190,7 +9257,7 @@
 									"name": "Fun Fact",
 									"page": 111,
 									"entries": [
-										"Rulership of each settlement is determined in meistersinger competitions. These are extended contests where the participants are pitted against each other, first in a mass singing competition, then in a “war of words” where they are to humiliate each other, and finally, in a head-to-head competition where the final two contenders sing against each other."
+										"Rulership of each settlement is determined in meistersinger competitions. These are extended contests where the participants are pitted against each other, first in a mass singing competition, then in a \"war of words\" where they are to humiliate each other, and finally, in a head-to-head competition where the final two contenders sing against each other."
 									]
 								},
 								{
@@ -9439,7 +9506,7 @@
 											"name": "House on Gryphon Hill",
 											"page": 118,
 											"entries": [
-												"Also known as Gryphon Manor, the mansion is a source of legend within Mordent, shunned by the living and absorbing any spirit near Mordentshire itself. The house was built some 600 years ago, by famed explorer Jacques Renier (a long-ago ancestor of Jacqueline Renier of Richemulot), but no family ever lived there for more than a year afterward, until the arrival of Lord Wilfred Godefroy, a man well known for his temper and harsh treatment of servants and wife. He, against all odds, liked it here, and stayed here for a number of years, with his wife giving birth to his daughter. Wilfred was not happy with “just” a daughter, wanting a son, and blamed his wife for all manner of transgressions against him, for failing to secure him a male heir. And eventually, his temper led him to murder his wife and child, pinning the blame on his favorite stallion for it, as an “accident”. While this absolved him of mortal judgment, it didn't free him of the hauntings of his wife and daughter who came back as ghosts and haunted him for almost a year before he finally killed himself on New Year's Eve. This still did not free him of their hauntings, and he fled to Heather House until he became a darklord, at which point he returned. Unfortunately for Godefroy, while his ascent to Darklord gave him great powers, including control over other spirits and undead, it doesn't extend to his wife and daughter, and they still haunt him now, taunting him for his failures and stoking his rage, making it grow ever hotter. The building itself is built in a gothic style, with crenellations and gargoyles on every corner. The roof is made of clay shingles, and in spite of the age and lack of living inhabitants for the last century, it is still in good repair and all the windows are intact (though the garden could use some work). It sits like an angry animal waiting to pounce atop Gryphon Hill, just waiting for the right moment."
+												"Also known as Gryphon Manor, the mansion is a source of legend within Mordent, shunned by the living and absorbing any spirit near Mordentshire itself. The house was built some 600 years ago, by famed explorer Jacques Renier (a long-ago ancestor of Jacqueline Renier of Richemulot), but no family ever lived there for more than a year afterward, until the arrival of Lord Wilfred Godefroy, a man well known for his temper and harsh treatment of servants and wife. He, against all odds, liked it here, and stayed here for a number of years, with his wife giving birth to his daughter. Wilfred was not happy with \"just\" a daughter, wanting a son, and blamed his wife for all manner of transgressions against him, for failing to secure him a male heir. And eventually, his temper led him to murder his wife and child, pinning the blame on his favorite stallion for it, as an \"accident\". While this absolved him of mortal judgment, it didn't free him of the hauntings of his wife and daughter who came back as ghosts and haunted him for almost a year before he finally killed himself on New Year's Eve. This still did not free him of their hauntings, and he fled to Heather House until he became a darklord, at which point he returned. Unfortunately for Godefroy, while his ascent to Darklord gave him great powers, including control over other spirits and undead, it doesn't extend to his wife and daughter, and they still haunt him now, taunting him for his failures and stoking his rage, making it grow ever hotter. The building itself is built in a gothic style, with crenellations and gargoyles on every corner. The roof is made of clay shingles, and in spite of the age and lack of living inhabitants for the last century, it is still in good repair and all the windows are intact (though the garden could use some work). It sits like an angry animal waiting to pounce atop Gryphon Hill, just waiting for the right moment."
 											]
 										}
 									]
@@ -9454,7 +9521,7 @@
 											"name": "Blackburn's Crossing",
 											"page": 119,
 											"entries": [
-												"Blackburn's Crossing is named after the Black-burn-Bruce family and is home to 500 souls. The Black-burn-Bruces died out many years ago, but their family manor still sits, literally, astride the river with polished red stones covering a flying, two-story walkway that crosses the river. Apart from this magnificent building the rest of the buildings of Blackburn are utterly unremarkable, which is just the way the inhabitants prefer it. But that is the only “normal” thing about the inhabitants of Blackburn's Crossing. Where the people of Mordent are normally reserved and quite off-putting, the people of Blackburn's Crossing are open and welcoming, which has no doubt helped them to establish themselves as a trade hub within Mordent. The downside of this is that it has given the criminal elements of the population a good place to conduct business. To prevent this, the local authorities, led by the mayor, a half-elf woman named Lily Vidicus, a wizard of some note, have strengthened the local police force of Mordent, known throughout the domain as the Lamplighters."
+												"Blackburn's Crossing is named after the Black-burn-Bruce family and is home to 500 souls. The Black-burn-Bruces died out many years ago, but their family manor still sits, literally, astride the river with polished red stones covering a flying, two-story walkway that crosses the river. Apart from this magnificent building the rest of the buildings of Blackburn are utterly unremarkable, which is just the way the inhabitants prefer it. But that is the only \"normal\" thing about the inhabitants of Blackburn's Crossing. Where the people of Mordent are normally reserved and quite off-putting, the people of Blackburn's Crossing are open and welcoming, which has no doubt helped them to establish themselves as a trade hub within Mordent. The downside of this is that it has given the criminal elements of the population a good place to conduct business. To prevent this, the local authorities, led by the mayor, a half-elf woman named Lily Vidicus, a wizard of some note, have strengthened the local police force of Mordent, known throughout the domain as the Lamplighters."
 											]
 										},
 										{
@@ -9478,7 +9545,7 @@
 											"name": "Tumbledown",
 											"page": 119,
 											"entries": [
-												"Tumbledown sits deep within the Lightless Wood, a place that polite society within Mordent has either forgotten or ignored. Built upon and within the ruins of a far older city, the 300 people of Tumbledown prove even more insular than the rest of the people of Mordent.  Tumbledown has a sinister reputation within Mordent. The family that used to own the Lightless Wood, the Gauldamons, were revealed, after centuries, to be worshippers of the demon, Lou'gal the Smiling One. Though the family was driven off or killed (depending on who tells the story), the land remains tainted. Why the residents cling to Tumbledown is unknown, as it is an unpleasant place that sits within a swampy area, but this might be traced to the rulers of the city. Here, the mayor, Alfred Montrose, is a man without power. has succumbed to depression, due to the city's true rulers: the business owners. There aren't many of these here, in fact, only a blacksmith, three tanneries, an “exotic” item store (read: junk, but don't say that to the owner) and a money-changing service are the only businesses that are readily apparent. Why they're clinging on, or what they might be looking for is unknown, but surely there must be some form of riches to keep business folks coming here."
+												"Tumbledown sits deep within the Lightless Wood, a place that polite society within Mordent has either forgotten or ignored. Built upon and within the ruins of a far older city, the 300 people of Tumbledown prove even more insular than the rest of the people of Mordent.  Tumbledown has a sinister reputation within Mordent. The family that used to own the Lightless Wood, the Gauldamons, were revealed, after centuries, to be worshippers of the demon, Lou'gal the Smiling One. Though the family was driven off or killed (depending on who tells the story), the land remains tainted. Why the residents cling to Tumbledown is unknown, as it is an unpleasant place that sits within a swampy area, but this might be traced to the rulers of the city. Here, the mayor, Alfred Montrose, is a man without power. has succumbed to depression, due to the city's true rulers: the business owners. There aren't many of these here, in fact, only a blacksmith, three tanneries, an \"exotic\" item store (read: junk, but don't say that to the owner) and a money-changing service are the only businesses that are readily apparent. Why they're clinging on, or what they might be looking for is unknown, but surely there must be some form of riches to keep business folks coming here."
 											]
 										}
 									]
@@ -9556,13 +9623,654 @@
 											]
 										}
 									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Nova Vaasa",
+							"page": 123,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/hz7VILT.jpg"
+									}
+								},
+								{
+									"type": "quote",
+									"entries": [
+										"If I am the chief of sinners, I am the chief of sufferers also."
+									],
+									"by": "Robert Louis Stevenson, The Strange Case of Dr. Jekyll and Mr. Hyde"
+								},
+								"Nova Vaasa is a domain built on duality, where everything seems to come in opposites. The wide plains and steppes are twinned with claustrophobic cities that are almost too narrow for their inhabitants. Nobles and their families are twinned with bandits and raiders. And the noble of heart are twinned with the monstrous, with Sir Tristen Hiregaard facing his opposite in Malken.",
+								"Born from the many murders committed by Tristen Hiregaard, from an old curse placed on his father, his personality was split in two upon his arrival in the Mists. The original, Tristen, and his dark opposite, Malken. While not as noble as he would wish, Tristen, at the end of the day, is a good man, cursed by the actions of his father — indeed, should he die and take Malken with him, the curse will pass on to another member of his extensive family.",
+								"Nova Vaasa is under the control of both the church and Prince Othmar. Normally the Princedom would circulate between the five great families of the kingdom, with a new prince put into power every five years, but Prince Othmar has managed to retain the power for the past 29 years, using a technicality while Tristen Hiregaard was his regent (back when the prince was young), and with the support of the well bribed Church of the Lawgiver, with Divine First Pieter Jergaar lending enthusiastic support to Othmar, as long as the church is given its due. Even Malken sees this state of affairs as beneficial to him, as it allows him to further expand his criminal empire, while others draw attention away from his endeavors.",
+								"All of Nova Vaasa knows of Malken. He has committed hundreds of murders since the creation of the domain, and of his war with Tristen Hiregaard, as it has been well-documented, especially during Tristen's service with the realm's guards. Even after his retirement, Tristen continues to dedicate himself to the pursuit of Malken. It is but ten years ago that Tristen discovered that he and Malken share the same body, and that during his blackouts in periods of rage, Malken takes control and enacts his schemes. Malken understands the state of affairs, however, he does not know that he will be reborn in a different body should Tristen die, and he is not interested in his own death. Tristen would like nothing more than to separate the two so that he can finally kill his nemesis, and for that purpose, he has been exploring ways to split body and soul. Efforts such as Azalin's Doomsday Device and the Apparatus of the Alchemist (in Mordent) have proven of great interest to him. His agents work across the Core to find a cure for his ailment, though they don't know why they are looking. It is unclear if Malken is aware of all the agents that are sent out in this manner, as Tristen has taken steps to avoid the darklord finding out.",
+								"Adventures in Nova Vaasa should focus on this duality, or at the very least include elements of it. There should be an element of conflict between two polar op-posites, so a certain amount of friction is introduced. Good should be opposed by evil, nobles by bandits, and so on. While the heroes should not have direct po-lar opposites, perhaps their employer has, or there is some element introduced of opposing interest to spice things up. For example, the heroes could be hired to retrieve a stolen religious artifact for the Church of the Lawgiver in Kantora, but another group has been hired by either an extreme atheist (perhaps from Lamordia) or the Church of the Lawgiver in Hazlan, as the artifact is used in declaring the position of the Divine Fist.",
+								{
+									"type": "table",
+									"caption": "Nova Vaasa",
+									"colLabels": [
+										"Detail",
+										"Description"
+									],
+									"colStyles": [
+										"col-3 text-center",
+										"col-9"
+									],
+									"rows": [
+										[
+											"Culture Level",
+											"Medieval"
+										],
+										[
+											"Climate & Terrain",
+											"Temperate, forest, hill, and  plains"
+										],
+										[
+											"Year Formed",
+											"682 BC"
+										],
+										[
+											"Population",
+											"68.000"
+										],
+										[
+											"Races (%)",
+											"Humans 91%, Halflings 5%,  Gnomes 3%, Other 1%"
+										],
+										[
+											"Languages",
+											"{@language Common|PHB}, {@language Balok|Darklords&DomainsVol1}, {@language Darkonese|Darklords&DomainsVol1}, {@language Falkovnian|Darklords&DomainsVol1}, {@language Gnomish|PHB}, {@language Halfling|PHB}, {@language Vaasi|Darklords&DomainsVol1|Nova Vaasa} (While other countries may speak Vaasi, only the  Nova Vaasa dialect is considered the true one by the Vaasi themselves. They  consider all other versions  brutish and inferior)"
+										],
+										[
+											"Religions",
+											"The Lawgiver"
+										],
+										[
+											"Government",
+											"Hereditary aristocracy"
+										],
+										[
+											"Ruler(s)",
+											"Prince Othmar Bolshnik"
+										],
+										[
+											"Darklord(s)",
+											"Malken"
+										],
+										[
+											"Nationality",
+											"Vaasi"
+										],
+										[
+											"Analog",
+											"Vaasa (Forgotten Realms), Russia (especially the steppes), The Strange Case of Dr. Jekyll and Mr. Hyde"
+										],
+										[
+											"Neighboring domain(s)",
+											"Barovia, Darkon, Hazlan, Nighmare Lands (via Mistway), Tepest, The Nocturnal Sea"
+										]
+									]
 								},
 								{
 									"type": "image",
 									"href": {
 										"type": "external",
-										"url": ""
+										"url": "https://i.imgur.com/7Q8JjBS.jpg"
 									}
+								},
+								{
+									"type": "entries",
+									"name": "Local Fauna",
+									"page": 125,
+									"entries": [
+										"While all kinds of animals can be found on the plains of Nova Vaasa, there are two that stand out. The plains cat and the horse. The \"plains cats\" are a type of leopard that live on the plains. They are extremely aggressive and seem to have outcompeted the wolves that are present in so much of the rest of the Core. They hunt not only other animals but sometimes deliberately target humans, though they avoid larger groups. The horse is the greatest export of Nova Vaasa, and there are multiple breeds present within the domain, as nearly every noble family breeds their own particular kind of horse. The horses of the Hiregaard family are known to be sturdy and strong warhorses, while those of the Bolshnik family are swift horses, built for racing. Most commoners within Nova Vaasa have access to a horse in one form or another, though this usually amounts to a draft horse that their family owns. And it's not always the nearby family that owns it."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Local Flora",
+									"page": 125,
+									"entries": [
+										"Nova Vaasa is home to a few crops (wheat, oats, and rye) as well as a few pine trees here and there in various small forests on the western borders of the domain. However, what Nova Vaasa is really known for is grass. Lots and lots of it, and in various types. Dead man's grass grows near Ehrendton, and a fungus infection gives it an unhealthy white pallor, rather than the normal yellow-green hue. Locals believe that it's a sign of an unmarked grave. Sea grass is the tallest known type of grass, and grows in the Pommel, an area in the southern part of Nova Vaasa. Due to the height of the grass, the area is infected by stalking felines such as pumas and plains' cats, who find it easy to hide in. Horse grass grows only to knee height and is common on the Tordenmark (or Thundering Plain). The grass has brown or white seeds that stick to horses like burrs, and the seeds are the source of the name. Knife grass grows only in the Dommark (Plains of Judgment). The grass is only about ankle height but the edges of the blades of grass are razor sharp and will cut through unprotected feet. Horses and other animals avoid areas of this grass, which has led to some farmers cultivating it around their fields (though only while wearing heavy work clothing themselves) Wine grass is short and golden with purple seeds and grows on the Kejsermark (the King's Plain). Due to its color when it is blooming, the thick patches of grass look like a royal carpet, hence why it's also sometimes known as the Palace Carpet."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Native Horrors",
+									"page": 125,
+									"entries": [
+										"Nova Vaasa is big enough to have more than its fair share of monsters, with lycanthropes and undead posing the biggest issues. The lycanthropes, while problematic, are rare, but the Vaasi tell stories of the Death Riders — undead horsemen that rampage across the plains, the remains of horsemen and horses that have died of thirst or exposure. They crave the company of the living, but their mere presence is anathema to natural life. Of more immediate concern to those visiting Nova Vaasa are the bandits. There are many of them, and while bandit lords come and go, there are three that have managed to stand the test of time, and who have built a legacy of their own: Dagfinn the Burner, the Tatters Man, and Chezna the Bloodcat. Dagfinn raids fields and farms, putting both lands and the people to the torch when he's finished with them. The Tatters Man ties strips of his victims' clothing to his band's barding and lances, though some whisper that the strips are not clothing, but truly human skin. And finally, the most infamous is Chezna, the one who obtained the poison that Prince Othmar used to kill his sire.. Her band has been active for over thirty years, and she is the only one to regularly raid Bolshnik lands, in retaliation for the prince's attempt on her life following his father's assassination. She's rumored to be a darkling — a cursed Vistani with blood-red hair, one bound to the land but still able to use the terrifying magic of the Vistani."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Terrain Type",
+									"page": 126,
+									"entries": [
+										"Nova Vaasa is mostly flat, with only a few hills and the western forests breaking the monotony of the plains. The land is temperate, but on the cold side, with the winters getting extremely cold. Only on the eastern edge, near the Nocturnal Sea do winter temperatures stay on the side that most humanoids consider survivable. The Vaasi themselves have learned to bundle up and prepare for the cold winters, with both food and firewood being stockpiled throughout the rest of the year. The land is hard enough on its people that they have little time for anything else other than survival."
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/4mObpLC.jpg"
+									}
+								},
+								{
+									"type": "entries",
+									"name": "Important Landmarks",
+									"page": 126,
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Castle Faerhaaven",
+											"page": 126,
+											"entries": [
+												"Castle Faerhaaven is the ancestral home of Sir Tristen Hiregaard, though he spent many years away, working in the city guard of Kantora. It lies a short distance outside Liara, and it is not a pretty construction. It is clearly constructed for defense, with stout walls and imposing towers, though unlike many fortifications in the lands surrounding Nova Vaasa, it is not built to intimidate the populace, merely to defend them. Some attempts have been made to \"brighten up the place\" through the use of colorful pennants and banners, with little success in drawing attention away from the sturdy drawbridge or the barbican.",
+												"This is where Sir Hiregaard retired to, after his years of service to the Crown and city guard, and though now in his 90s, he is very spry and takes an active part in the day-to-day running of the lands surrounding the castle. One of the castle towers stands out from the rest, with the window shutters being even sturdier than the others. The tower rises some 30 feet over the other three towers of the defenses. The whispers of the guards have led the locals to deduce that this is where Sir Tristen retires to, when he is in one of his \"moods\" and needs to get himself back under control. A certain amount of sadness lingers over the buildings here as if the emotion has seeped into the very stones, the result of the murder of Tristen's first wife, and the lovers that Malken has killed along the way. This is not helped by Tristen's current marriage, which is a loveless affair, but one that has borne him four children, who he loves (unlike the half-disdain he has for his wife. Ironically a disdain that seems to be shared by Malken)."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Clinic for the Mentally Distressed",
+											"page": 126,
+											"entries": [
+												"This large building stands outside Egertus and has been empty since the disappearance of its patients and staff in the year 749 BC. Since then the building has been avoided by locals at all costs, except when the city watch was investigating the disappearance. Unbeknownst to the locals, the Clinic now has a twin in the Nightmare Lands — more worryingly, the disappearance of adventurers who have investigated the Clinic over the years seems to indicate the presence of a Mistway between Nova Vaasa and the Nightmare Lands Since there has never been a return, the Mist-way is likely to be one-way only. More information on the current status of the Clinic of the Mentally Distressed can be found under that Domain."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Darkhaaven",
+											"page": 126,
+											"entries": [
+												"Darkhaaven is as much myth as it is real. It's a series of underground chambers, usually connected to the sewers, that manifest in any city of Malken's choice. Darkhaaven can only manifest when Malken is \"in control\" of the body, and as such, it has proven impossible to invade the lair of the darklord, despite Sir Tristen's many attempts. This has led many of Malken's henchmen to believe that the darklord is capable of magic, for how else could he make it impossible for them to retrace their steps to his lair?",
+												"The chambers are filled with all manner of contraband, such as alcohol, drugs, and poisons. There are also torture chambers here, that Malken uses to \"persuade\" his guests to part with information. The whole complex reeks of pain and suffering. Upon Malken's transformation back to Sir Tristen, those who are not prisoners of the darklord are simply expelled into the sewers. The poor prisoners, though, remain within the chambers, unknowing of the transformation or that they are no longer within the \"real\" world. To them, nothing has changed.",
+												"This can prove dangerous in unintended ways, as Malken's victims may die from dehydration or starvation if Sir Tristen is in control for long enough — while it is sometimes annoying, Malken takes fiendish delight in knowing that his counterpart has caused numerous unintended deaths in this manner."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Prince's Palace",
+											"page": 127,
+											"entries": [
+												"The Prince's Palace lies at the center of Kantora, but is usually only occupied by a handful of guards and stewards. Only on the rare occasion that Prince Othmar is present will a larger contingent of guards be assigned to it. The Palace is built for show: Its walls are tall and beautiful, but more-or-less impossible to defend. The gate is far too wide for anything save parades and the towers are too thin to withstand an attack by siege engines, quite aside from being in the wrong locations, creating areas of non-coverage for archers and defenders. It is quite simply, a toy. And Prince Othmar despises it, seeing it as a necessary evil for maintaining power, rather than a place that he wants to live in."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Stonegard",
+											"page": 127,
+											"entries": [
+												"Stonegard is a mighty fortress built by the Bolshnik family and home to Prince Othmar. It lies where the Dnar river meets the Vaughn Dnar, necessitating an odd triangular shape to the fortifications. The fortifica-tions are unusual as well, as the north-western wall is far stronger and more fortified than the south-west and north-east walls. The rivers function as natural impediments to any attackers, so the ancient Bolshniks decided to focus their defenses in one direction, something which has served them well. Stonegard is the main home of Prince Othmar, who prefers it to his other abode, the Prince's Palace (see above), as it keeps him away from the stench of the city and allows him access to his favorite sport: Horseback hunting."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "The Three Sisters",
+											"page": 127,
+											"entries": [
+												"The Three Sisters are three lakes in Nova Vaasa, named after a legend of the Church of the Lawgiver. The Three Sisters are named Jensine, Nielsine, and Vibeke after the three daughters born to the first man and woman. The first and largest lake is named Niel-sine, after the eldest daughter who was the first woman to tame and ride a horse. The second and middle-sized lake is Jensine, named after the middle sister, the first woman to grow crops in the soil of the world. The last and smallest lake is Lake Vibeke, named after the youngest daughter. Legend claims that she was the first woman to be eaten by a plains cat. Whether the legends are true is unknown, but the lakes do seem to have many fish in them, except for Lake Vibeke. It is home to a much larger than normal pride of the plains cats. Some suspect that they might be under the control of a variant of the lycanthropic weretiger — perhaps an unknown strain unique to Nova Vaasa."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Towns and villages",
+									"page": 127,
+									"entries": [ 
+										{
+											"type": "entries",
+											"name": "Arbora",
+											"page": 127,
+											"entries": [
+												"Arbora is home to about 4,500 people, and those from here refer to it as \"the far corner of the world\". It is the southernmost settlement of any decent size in the Core, and is rather isolated from the rest of the world, except for the Nocturnal Sea. Arborans are far more independent than the rest of Nova Vaasa's people, as the geographical distance lends them a degree of security that is not shared by the rest of the domain. The city is ruled by the Chekiv noble family, as the current Duke isn't one for rocking the boat and risking the city (and his lands) or its independence, so he dutifully pays his taxes to the Prince, and ensures that the region sees little trouble.",
+												"Arbora has one minor fame to claim. It is the home of the famed monster hunter George Weathermay. While he is not as famous as them, he is the uncle of the Weathermay-Foxgrove twins. In fact, he blames himself for the injuries suffered by Gennifer at the hands of the werewolf, Natalia Vhorishkova. His trail of revenge first took him to Verbrek, where he slew the entirety of Vhorishkova's clan, not just the men, but the women and the children too. She managed to elude him, and now he hunts her from his base in Arbora, being more than willing to risk his own life, if it enables him to take hers. Where Natalia can be found at this point is unknown, but she knows she's being hunted and wakes up every day bathed in sweat at the dreams that George might be closing in on her."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Bergovitsa",
+											"page": 127,
+											"entries": [
+												"Bergovitsa is a city practically at war with itself. The city falls within the reach of two of the noble families, the Vistins and the Rivtoffs, and practically everyone here has sworn allegiance to one family or the other, with the exception of the city watch. Bergovitsa is under the control of Mayor Araam Tavolys, who is a cousin of the Bolsniks. He's been instructed by Prince Othmar to allow the two families to feud — in some cases, he even seems to encourage this and ensures that even otherwise peaceful overtures between the families are sabotaged. In this manner, the 6,600 folk who call the city home are almost under constant siege. In spite of this, the city is thriving as it is a vital trade stop between the capital of Kantora and the domains of the west. As a result, it has grown rich, making it a prime prize should either of the two noble families ever gain control of it. It is also home to the most famous horse-race of Nova Vaasa, the Vaasi National. Both the race itself, and the horse-trading that surrounds it (and a number of smaller races) are centered around the Avener's District. The district itself, in spite of being famous for its races, is best avoided by outsiders. Not only are they unwelcome, but Avener's District is rife with thugs and thieves. If you walk away with your money and your life, you're either a local, or lucky indeed. Bergovitsa also has the unlucky distinction of being the first place that the Signature Killer struck, an inn known as the Clever Grey Malken (Malken, in the local dialect, means cat), where a barmaid was killed.",
+												"The inn has changed its name to the Clever Grey Mouser to avoid any association with the now infamous crime lord. Recently, some have come to doubt whether Malken is the Signature Killer. The Killer went dormant for a number of years, where Malken was active, and Malken was nearly destroyed a number of years ago when Sir Tristen Hiregaard uncovered the scheme of the cult known as the Claws of Sekhmaa. These two lapses between each criminal's reigns of terror seem to indicate that the two are different individuals, though no one knows for sure. As it is a recent development most still believe Malken to be the Signature Killer — regardless, the Signature Killer is a terrifying prospect for most of Nova Vaasa as he has killed more than 100 women, leaving each dismembered and practically torn apart for the city watch to find. Bergovitsans breathe slightly more easily than others might, as the Killer has only rarely struck here, seeming to favor Kantora (and Liara in recent years).",
+												"A final mention should also be made of the Mudman of Bergovitsa. No one knows for sure what the creature is, but it is said to be a \"man with skin of mud, who rises from the streets to drown anyone unlucky enough to be nearby\". No confirmed sightings of the creature have been reported, but victims have been found with lungs filled with mud."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Egertus",
+											"page": 128,
+											"entries": [
+												"Egertus stands at the eastern end of Nova Vaasa, and was, for the longest while, considered to be a lost cause by most of the Vaasi. When it arrived, only half the city seemed to have been transported, with empty docks, shipyards, and quays resting on the grounds outside the city, and the ends of some of the quays even extending into the Mists beyond the edges of the domain. This terrified most of the locals so much that they moved to Kantora instead, and for many years, only a few traders dared to brave the miles between Kantora and Egertus. This all changed with the appearance of the Nocturnal Sea in 750 BC, when suddenly Egertus found itself with a shoreline again, and the old quays came back in use (though many required much repair). The people of Egertus were quick to take advantage of this new state of affairs and suddenly found that resources were flowing back from Kantora, through Egertus, and into trade with the realms that had appeared within the Nocturnal Sea. As a result, the small town is now almost back to full strength with some 4,000 souls now calling it home. Egertus had the dubious fortune of being the home of the Clinic of the Mentally Distressed before the disappearance of its entire staff and all the patients in 749 BC. A thorough search and investigation was conducted by the city watch, as one of the recently admitted patients to the clinic was a relative of Prince Othmar, a man who had killed a dozen people and who had gained the nickname of the \"Kantora Strangler\"."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Kantora",
+											"page": 128,
+											"entries": [
+												"Kantora is the capital of Nova Vaasa. A city of some 17,000 people, the city is practically split into two, though the split isn't even. The rich quarter of Kantora is well-maintained and brightly lit, even gaudy at times. Patrols of the city watch are frequent, and the districts are safe, though people who \"don't belong here\" are quickly ejected by the watch. The poorer quarters of Kantora are a seething morass of humanity and riddled with crime. The watch comes here only rarely, and most crimes are ignored (including murder), as long as it doesn't involve the nobles or the richer merchants. It, more than any other city in Nova Vaasa, is cramped, and this isn't helped by the smell of horses permeating every inch of the city, most notably around the Great Corral. The Great Corral is a gigantic fenced-in area for horse-trading, and, every fortnight, traders from across the Core congregate here for the auctions, hoping to get good deals for strong horses or set up new breeding programs to improve their stock.",
+												"Here, and only here in Nova Vaasa, the Vistani are welcomed with open arms and treated well, as they are considered to be expert horse-trainers and breeders, something which is appreciated here. Kantora is also the location of the Prince's Palace (described above), though it's rare for Prince Othmar to be here. Kantora is home to the Mausoleum of the Elect, a series of mausoleums created for the use of the elected Princes. In theory, anyone who dies while wearing the crown of Nova Vaasa, is interred here, but the Church of the Lawgiver often uses this as a propaganda tool. Princ-es who are unpopular with the Church, or considered too liberal by the clergy, are proclaimed to have been struck down by the Lawgiver and denied entry into the Mausoleum. Those who commit suicide (such as Sir Tristen Hiregaard's father who killed himself while wearing the crown) or who die dishonorably are also denied entry."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Liara",
+											"page": 129,
+											"entries": [
+												"Liara, even more so than Kantora, lives up to the duality aspect of Nova Vaasa. 8,000 people call the place home, and during the day they live in the safest city in Nova Vaasa, under the control of its kindest ruler, Sir Tristen Hiregaard. The watch is attentive and diligent in their duties, though during the day they often have little to do. During the night, this all changes, due to the Signature Killer. The murderer has conducted his business in Liara more often than in any other city in the domain, and the people here live in fear of the maniac striking again.",
+												"In spite of this, they have taken an almost aggressive counter-approach, refusing to stay their hands, and during the night Liara descends into depravity, partying as if there is no tomorrow, and alcohol and drugs flowing freely. During the night, visitors would do well to stay indoors unless they intend to find (or be sought out by) trouble.",
+												"This strange state of affairs is epitomized by two central buildings in Liara. First, the Passelot is a squat, strong stone fortress, and the home of the City Watch. It is constantly busy with its stables and armory at work at all hours. It radiates an area of calm and watchmen patrol the walls at all hours during the day. Secretly, they hope that all who were sent on patrol at sunset will return unscathed. Realistically they know that at least some of their number will be hurt, but they hope that at least they'll return alive. The other building, the dark twin to Passelot's light, is the Staggering Stallion inn. It is the center of all the criminal activities in Liara and offers everything from alcohol, drugs, and gambling, to beast fighting, and companionship. While none of these are illegal in Nova Vaasa, the degree to which the patrons of the Staggering Stallion engage in the activities is so high that it contributes significantly to the troubles facing Liara at night.",
+												"The owner of the Stallion, a man named Canute Dorisz, a fat and (falsely) jolly man who has the hygiene of a swine, claims that he has nothing to do with it. After all, it is all legal. The watch knows that the money generated by the Staggering Stallion ends up in the pockets of Malken, but they've been unable to prove it decisively. Each attempt they've made, where they haven't been 100% certain, has ended in disaster and made the next attempt much more difficult. For now they hold back until they've gathered all that they need. The city watch looks forward to the day that Sir Tristen unleashes them upon the filth they see gathering at the Inn, and they believe that vengeance will soon be theirs. After all, so many of their friends have had their lives taken by the patrons, that it seems only fair to return the compliment."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Fun Fact",
+									"page": 129,
+									"entries": [
+										"The people of Nova Vaasa do not hold too much in the way of artistry, with one exception: They've taken the art of the “epic poem” to such heights that even the Meistersingers of Kartakass come here to learn at the feet of the bardic masters. All other forms of art are either discouraged, illegal or thoroughly under the control of the church."
+									]
+								},				
+								{
+									"type": "entries",
+									"name": "Sir Tristen Hiregaard",
+									"page": 130,
+									"entries": [
+										{
+											"type": "quote",
+											"entries": [
+												"A madman is loose in my castle. He slaughters the women and children, those who cannot defend themselves. He thwarts my every effort to find him, but I will persist. I shall bring this brigand to justice or perish in the attempt."
+											],
+											"by": "Sir Tristen Hiregaard"
+										},
+										"Sir Tristen Hiregaard is a human in his late seventies. Despite his advancing years, his rugged good looks make him quite the ladies man. His hair and moustache are still black, though peppered with enough gray to make him appear wise yet not distract from his vigour. A man in his seventies could be forgiven for not taking exercise every day, yet Tristen does so, and still comfortably wears chain mail and swings his family's ancestral sword when there is need. In times when he doesn't expect trouble, he dons comfortable loose black trousers and a bright red shirt. Malken is hunched and twisted, with heavily muscled arms that are far too long, his massive hands ending in jagged claws. Malken runs on all fours and is frighteningly fast, giggling uncontrollably as he lopes. The giggling is the last sound that his victims hear. Their last sight is his bloodshot mad eyes.",
+										{
+											"type": "entries",
+											"name": "Background",
+											"page": 130,
+											"entries": [
+												"Tristen's curse began with his father, Romir Hiregaard. Romir was a good ruler who was fair and, sometimes, even kind. Romir's only weakness was jealousy. If his young wife showed even polite interest in another man, he would descend into a rage. The rages became worse as time progressed. One day he found his wife in the arms of another man and killed them both. After the rage subsided, Romir realized the man was his wife's dance instructor. With her dying breath, Romir's wife cursed him. Romir would kill any woman he loved or any man that angered him. Overwhelmed with shame over what he had done, Romir killed himself. The curse passed on to the 15 year old Tristen. Tristen first learned of the curse less than a year later when he murdered the daughter of a servant family. Over the next six years, Tristen killed nine more women. To make matters worse, the more Tristen killed, the more he enjoyed it. Eventually the Dark Powers took notice and pulled Tristen into Ravenloft. When Tristen was pulled into Ravenloft, Malken manifested fully, a raging mad man that was everything Tristen despised. There is no way out for Tristen. If he is killed and Malken chooses to let him die, then the curse is transferred on to his eldest son, Yorgi. The curse that created Malken can only be defeated when the Hiregaard line ends."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Current Sketch",
+											"page": 130,
+											"entries": [
+												"Sir Tristen is a stern but just ruler. He pays every cent of the taxes he owes to Prince Othmar, the nominal ruler of Nova Vaasa. Tristen treats his peasants fairly and at the yearly conclave of nobles  argues that the poor folk should have their taxes reduced. His entreaties fall upon deaf ears, but still he keeps trying. Tristen has four sons from a loveless marriage that lasted for forty years. Tristen's oldest son is in his early fifties and his youngest is three years old. Tristen's youngest son is being raised by his brothers who constantly dote on the child.Sir Tristen knows of the curse and tries to stop Malken from killing his lovers and enemies. When Tristen starts to feel the hate rising, he seals himself in his quarters in Castle Faerhaaven and prays it is enough. Malken is a madman. His only goals are to cause as much misery as possible. Malken knows Sir Tristen is a good person, and wants to make him suffer the most. Malken knows that Tristan tries to lock him in the tower that serves as his personal quarters, but Malken is clever and escapes nearly every time."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Darklord's Tactics",
+											"page": 130,
+											"entries": [
+												"Sir Tristen is a fair and honorable combatant. He allows his enemies to prepare and gives quarter to opponents that ask for it. Malken is a deranged psychopath. He doesn't fight. He hunts. Malken uses his speed to dart into his foes and carve bloody chunks from them before disappearing into the shadows. Malken loves to make his foes beg for their lives. Of course, once they've debased themselves, Malken kills them anyway."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Borders",
+											"page": 130,
+											"entries": [
+												"Because of his dual nature and his constant internal battles with Tristen, Malken cannot close the border."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Lair: Castle Faerhaaven",
+											"page": 130,
+											"entries": [
+												"Castle Faerhaaven is a stately castle where Tristen lives with his four sons, their wives and families. The walls are tall and strong and the castle is surrounded by a moat. The castle is well maintained. Tristen considers its appearance to be a reflection of him and his rule. Castle Faerhaaven is riddled with holes and secret passages that seem to move at random. Sir Tristen and his family are unaware of them. Malken knows where all of the secret passages are and where they lead. Malken can disappear into the walls and reappear at any point in the castle at will. Malken encountered in his lair has a challenge rating of 17 (18,000 XP)."
+											]
+										},
+										{
+											"name": "Sir Tristen Hiregaard",
+											"type": "entries",
+											"page": 131,
+											"entries": [
+												{
+													"type": "statblock",
+													"tag": "creature",
+													"source": "Darklords&DomainsVol1",
+													"name": "Sir Tristen Hiregaard"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Richemulot",
+							"page": 132,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/HEXmlhj.jpg"
+									}
+								},
+								{
+									"type": "quote",
+									"entries": [
+										"Love Jo all your days, if you choose, but don't let it spoil you, for it's wicked to throw away so many good gifts because you can't have the one you want."
+									],
+									"by": "Louisa May Alcott, Little Women"
+								},
+								"Richemulot is a land under siege from an invisible threat, an illness that is nearly impossible to cure, and which spreads like wildfire when unleashed. Lurking underneath the city streets, and in the houses of the populace, most know of the threat but can do little to fight against it. In essence, the domain hides the bestial underneath a thin veneer of civility and sophistication.",
+								"This disease is that of lycanthropy, specifically that which turns people into wererats. It is also the reason that so much of Richemulot is empty of people, even though it has room for far more. People crowd together for safety, as many as can comfortably be kept in a single building or estate as possible. Ironically the term, rats in a cage, fits only too well, not only for the wererats but also for those that they prey upon.",
+								"The darklord, Jacqueline Renier, is cut from the same cloth as Richemulot's original darklord — her grandfather, Claude Renier. But she rules with far more sophistication and charm than her predecessor ever did. And this is where Richemulot truly shines, not in the pestilence of the wererat, the (innumerable) intrigues of the noble houses or the stabbings in back alleys, but in the realm of lost love. Jacqueline CAN and DOES love others on occasion, though she is cursed to assume her rat form in their presence. And inevitable doom soon comes to the bond, twisting it into animosity — often through no action of Jacqueline's. Adventures in Richemulot should feature any and all of these. Perhaps one of the heroes has fallen in love with a noblewoman from Richemulot, but she has been promised to someone else. That person is a wererat in disguise and tolerates no interference from others and sets their pack upon them. Perhaps they're trying to find a cure for lycanthropy for another strain than wererat, but have heard of experts in Richemulot, only to find that the sage has been kidnapped by wererats, and no one knows where they are. Or perhaps, one of the heroes is infected and will soon turn into a wererat, and they're taking the others home as a peace offering to their future family.",
+								{
+									"type": "table",
+									"caption": "Richemulot",
+									"colLabels": [
+										"Detail",
+										"Description"
+									],
+									"colStyles": [
+										"col-3 text-center",
+										"col-9"
+									],
+									"rows": [
+										[
+											"Culture Level",
+											"Chivalric"
+										],
+										[
+											"Climate & Terrain",
+											"Temperate, forest, hills, and plains"
+										],
+										[
+											"Year Formed",
+											"694 BC"
+										],
+										[
+											"Population",
+											"50.000 (at any given time, an  estimated 10% are wererats)"
+										],
+										[
+											"Races (%)",
+											"Humans 93%, halflings 5%, half-Vistani 1%, Other 1%"
+										],
+										[
+											"Languages",
+											"{@language Common|PHB}, {@language Balok|Darklords&DomainsVol1}, {@language Darkonese|Darklords&DomainsVol1}, {@language Dementlieuse|Darklords&DomainsVol1}, {@language Falkovnian|Darklords&DomainsVol1}, {@language Halfling|PHB}, {@language Mordentish|Darklords&DomainsVol1}, {@language Vaasi|Darklords&DomainsVol1}"
+										],
+										[
+											"Religions",
+											"Ezra, Hala"
+										],
+										[
+											"Government",
+											"Hereditary aristocracy"
+										],
+										[
+											"Ruler(s)",
+											"Jacqueline Renier"
+										],
+										[
+											"Darklord(s)",
+											"Jacqueline Renier"
+										],
+										[
+											"Nationality",
+											"Richemuloise"
+										],
+										[
+											"Analog",
+											"France"
+										],
+										[
+											"Neighboring domain(s)",
+											"Borca, Dementlieu, Falkovnia, Mordent, Verbrek"
+										]
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/gcOoS0r.jpg"
+									}
+								},
+								{
+									"type": "entries",
+									"name": "Local Fauna",
+									"page": 133,
+									"entries": [
+										"The forest of Richemulot teems with wildlife like deer, boar, ermines, and other animals. It is a prime hunting ground for nobles who are looking for easy sport as bears, badgers, and other predators are in short supply. Even wolves tend to stay away from here, despite the proximity of Verbrek. Scholars believe that this is due to the overshadowing presence of the rats. They are present in such numbers, that they have taken over the typical role reserved for predators in most environments. And they truly are everywhere, at least when you're in the city. Locals often refer to them as the \"threat in the walls\" for their ability to get in anywhere. Ratcatchers get rich here, but those that are too successful seem to attract unwanted attention from wererats and find themselves as prey to the ultimate predators in the land."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Local Flora",
+									"page": 134,
+									"entries": [
+										"Richemulot is heavily forested, and during the summer turns into a scene of stunning beauty as the green leaves of oak, ash, and chestnut trees try to outshine the others. The areas that aren't covered by trees are instead beautiful meadows with colorful flowers. Most especially, the orchids around the forest known as the House of the Sages are famous for their lustrous and vibrant colors. Some of the locals, what few there are, turn the flowers into powders that are used throughout the Core for coloring cloth. These fetch top prices all over and are coveted by nobles and the rich everywhere."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Native Horrors",
+									"page": 134,
+									"entries": [
+										"Generally speaking, apart from wererats, there are few monsters within Richemulot, but those that there are stick to the three cities, and normally have an ability to hide among humans. Shapeshifters, doppelgangers, and lycanthropes of all kinds are here (though any lycanthrope that isn't a wererat would be wise to keep their presence hidden), as can a few disembodied undead such as ghosts. Most travelers to Richemulot find it to be peaceful and civilized when compared to other parts of the Core. This pretense is of course intensified as the wererats have successfully infiltrated society at all levels, and work hard to keep up the mask of civility that drapes across the land."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Terrain Type",
+									"page": 134,
+									"entries": [
+										"Richemulot is mostly forest, with a few meadows, and gently rolling hills. The Musarde River flows through the domain, carrying trade to and from the cities, along with the highway known as the Road of Whispers, the only major road in Richemulot. All three cities of Richemulot lie near the Musarde and the Road of Whispers, allow-ing them all to take advantage of the trade that passes nearby. This also increases the importance that each city plays on the cultural life of the Core."
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/S6Q1Qcv.jpg"
+									}
+								},
+								{
+									"type": "entries",
+									"name": "Important Landmarks",
+									"page": 134,
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Castle with No Gate",
+											"page": 134,
+											"entries": [
+												"The Castle with No Gate is a semi-legendary castle that lies somewhere within the House of the Sages. It is an immense fortress, but it doesn't have a gate, and this doesn't look to be a matter of the gate being walled up after the rest of the castle was built, but something that was done at the same time. Its battlements stand empty with no guards, but local legends claim that it houses a beautiful maiden whose name is unknown. Supposedly she waits to be rescued, but no one who has ever scaled the walls has come back, at least none that can be verified. There are some discussions in Richemulot as to whether the castle is even real, as it doesn't seem to stay in the same location."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "House of the Sages",
+											"page": 134,
+											"entries": [
+												"The House of the Sages is a raised limestone plateau that sits east of the Musarde River. Upon the plateau is the forest that shares its name. The landscape here is somewhat rugged, with isolated farms and cottages, along with the crumbling ruins of castles, monasteries, and more. At least one hermit is known to live in one of the caves of the plateau. The region has a reputation for hiding those whose crimes are best forgotten or who are too monstrous to be contemplated and constant rumors fly about Richemulot speaking of mystic cults, evil spellcasters, and necromancers on the loose. Its two most famous locations though are the Castle with No Gate and the Sanctuary of the Forgotten Lady."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Sanctuary of the Forgotten Lady",
+											"page": 134,
+											"entries": [
+												"The Sanctuary of the Forgotten Lady sits on the borders of Borca and consists of a ruined chapel at the center of a stone-filled meadow. Its ivy-clad walls hide a temple of Hala, a rarity of a faith that normally prefers shrines and hidden groves. It is one of the oldest buildings in Richemulot, though the roof has collapsed, exposing the interior to the sky. The chapel only has one priest, Balihnda, a blind old matron with wild hair. To many, she comes across as addlebrained, though pleasant, but the reality is far worse. Balihnda is an annis hag of terrible power and rage, who has taken up residence here after a prolonged fight with the famed monster hunter van Richten. While originally she only took up residence here as a temporary measure, she developed a genuine interest in the teachings of Hala, and this interest has tempered her bloodlust to the point where most travelers are hosted amicably and generously while here, often remembering their time with fondness. Those who profess to follow the teachings of Hala however are tortured for information about their faith, before being eaten."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Tinctnoire Manor",
+											"page": 135,
+											"entries": [
+												"Tinctnoire Manor is in near-ruin, lying deep within the House of Sages. It is a cursed place that has fallen under the terrible power of the hungry dead, specifically a group of shadows once cursed to stay here. Legend holds that the tower of Tinctnoire Manor holds a bell that once held incredible power. It had to be rung every hour, to keep evil spirits in check, but a single night of failure to do so, for the sake of an illicit tryst, caused the entire manor and all its inhabitants to succumb to the darkness. Now, it is an evil place, and wise folk stay away from here, especially at night."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Towns and villages",
+									"page": 135,
+									"entries": [ 
+										{
+											"type": "entries",
+											"name": "Mortigny",
+											"page": 135,
+											"entries": [
+												"Mortigny is a small city that holds about 8,200 people and it is home to most of the glassware that makes its way into the domains of the Core, with especially the blue “melancholy” glassware being prized among the nobility and rich. Mortigny is bright and vibrant, teeming with eager life, and its distance from Jacqueline Renier and her ilk doesn't hurt it. It is home to one of the few arcane colleges in the Core, though even here it hides and disguises itself as an observatory. It's an open secret among the locals, but one they hold to as there are several strongholds of various faiths (most notably the Church of Ezra) in town, and they do not take kindly to anything they perceive as heresy.",
+												"Mortigny is also home to a secret society known as the Lock and Key, whose members hide behind hideous masks, and work to protect the city. These members are often calibans (half-orcs) or others who are easily recognizable as non-humans when without their mask, but they work day and night to keep Mortigny safe, and their strong morals have made them popular among the locals, even if they don't know who the people are behind the masks. If they did, their gratitude would likely wane quickly."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Ste. Ronges",
+											"page": 135,
+											"entries": [
+												"Saint Ronges is the smallest of the three cities of Richemulot, but what it lacks in size it makes up for in viciousness. It is also the only one of the three who has a fortified wall around it, though these are leftover from a time before Richemulot joined the other domains within the Mists, and no one knows who built them, or why. Most of the 6,500 people who live in Ste. Ronges are involved in a criminal trade of some sort, though most keep it very quiet. Only a few career criminals exist here, but they are powerful enough to make the nobles think twice before acting.",
+												"Apart from its criminal underworld, Ste. Ronges is also famous for the quality of its steel and the swords that the smiths of Ste. Ronges put out. They are the highest quality blades available in the core, and as many of the smiths are devotees of Ezra, weaving prayers over the blades as they are made, legend holds that anyone who uses one of these swords to kill a man without mercy, will feel the wrath of Ezra herself."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Pont-a-Museau ",
+											"page": 135,
+											"entries": [
+												"Pont-a-Museau, home of more than 16,000 souls, is both built next to and on top of, the Musard river. Stone bridges cross it in many places, and the shorelines have been reinforced and built upon as well. Mansions and the houses of the common folk are all in excellent quality, courtesy of the amount of coin that flows through Pont-a-Musea.",
+												"By many, the city is also considered the birthplace of culture in the Mists. If it didn't originate here then, to many, it isn't worth as much as it could be. This, unfortunately, includes the locals, but the truth is that they are — at least to some degree — correct. The Grand Theatre of the Musarde stands here, as does the Academy of Richemulot, where the elite can go to get a classical education, including literature, philosophy, languages, and insight into the natural sciences. And of course, it is home to Chateau Delanuit (the Castle of the Night) where the Grande Dame, Jacqueline Renier, and her extended family live. With such residence comes danger and intrigue, and though no human of Richemulot suspects it, she is at the heart of the wererat infestation that plagues Richemulot."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Fun Fact",
+									"page": 135,
+									"entries": [
+										"The Richemuloise prefer to live close together for safety, which means that houses are often overcrowded. This has also left the cities feeling strangely crowded in some places, while utterly empty in others. At any given time, each city within Richemulot could easily handle increasing its population by one-third. This also means that many of the buildings are in good condition (locks and shutters especially so), while others are falling into ruin. Everything to keep safe from the wererats and the menace in the walls."
+									]
+								},				
+								{
+									"type": "entries",
+									"name": "Jacqueline Renier",
+									"page": 136,
+									"entries": [
+										{
+											"type": "quote",
+											"entries": [
+												"You think because I'm not some clod in armor or waving my hands in the air while muttering that I am not a threat. Good. Keep thinking that. I know where you are and what you are doing before you do. I have thousands of eyes. I have thousands of hands and each of them holds a dagger."
+											],
+											"by": "Jacqueline Renier"
+										},
+										"Jacqueline appears to be an attractive human female. Her age is almost impossible to guess, as she could easily pass for someone in her twenties or forties. Jacqueline dresses well but avoids overt symbols of wealth. Her outfits are always alluring but simple. Intelligent and well educated, Jacqueline is comfortable discussing dozens of esoteric topics and not afraid to make anyone who underestimates her look like a fool.",
+										{
+											"type": "entries",
+											"name": "Background",
+											"page": 136,
+											"entries": [
+												"Jacqueline was a child when she came to Ravenloft. Her small family of wererats were cornered by a group of adventurers, as a portal filled with mist appeared. When faced with the choice of certain death by the sword or the chance of safety through an unknown portal, the Reniers chose the portal.",
+												"The Reniers found themselves in the sewers under Silbervas, a city in Falkovnia. For a time the Renier clan grew and prospered, but they eventually came to the attention of Vlad Drakov, the dark lord of Falkovnia. Vlad sent a legion into the sewers to clean them out. The Reniers were chased out of the sewers and through the countryside. They were chased by dogs and men with murder in their eyes. Finally the Reniers were able to flee to the mists.",
+												"When the mists cleared, the Reniers were in Richemulot. They were instantly at home in the sewers under Pont-a-Museau, and found the Chateau Delanuit. Jacqueline's grandfather ruled as the dark lord of Richemulot for a time until Jacqueline killed the old man and took his place twenty five years ago."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Current Sketch",
+											"page": 136,
+											"entries": [
+												"Jacqueline has networks of informants all over Richemulot and the surrounding domains. She is extremely intelligent, manipulative, and one step ahead of anyone who dares to attack her. Jacqueline's curse forces her to fall deeply in love, but she is forced into her rat form whenever she sees the object of her desire. Jacqueline's twin sister, Louise, is not cursed and regularly takes lovers when she wishes. This drives Jacqueline mad with jealousy and the lovers inevitably disappear within a few days. This has led to a rift between the women, as Louise has started to become annoyed with having to replace her paramores so often. The citizens of Richemulot consider the Renier's to be fair rulers. Their taxes are light, and people are required to be armed at all times by law. Jacqueline wants her citizens armed and prepared for one of Falkovnia's frequent invasions. Most of the citizens don't know that the Reniers are wererats, and threats to the family will be met by an angry mob."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Darklord's Tactics",
+											"page": 136,
+											"entries": [
+												"Jacqueline doesn't hesitate to use any dirty trick or underhanded tactic. She will gladly sacrifice a minion or member of her clan if it will allow her to leave or gain an advantage. She prefers to pretend she is helpless and afraid until her enemy lowers their guard before she turns into her hybrid form and launches a flurry of attacks with her dagger."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Borders",
+											"page": 136,
+											"entries": [
+												"When the borders of Richulemot are closed, Jacqueline summons a monstrous swarm of rats. The swarm is at least 50 feet thick. The rats cover the walls, trees, and boil up out of the ground. If a creature tries to fly over the swarm, an invisible force pulls them down into the snapping jaws."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Jacqueline Renier's Lair: Château Delanuit",
+											"page": 136,
+											"entries": [
+												"Chateau Delanuit is a stately manor house on the Musarde River in the heart of Pont-a-Museau. The house and grounds are kept in immaculate shape by Jacqueline's army of servants. The rooms that the public have access to, as well as Jacqueline and Louise bed chambers, are well appointed but not gaudy. Moving past these rooms, the house quickly becomes run down and infested with vermin, especially rats. Rats pour from holes in the walls and ceiling. The Renier wererat clan resides here and are quick to sound the alarm when intruders are spotted. Jacqueline Renier encountered in her lair has a challenge rating of 18 (20,000 XP)"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "How to defeat the Darklord",
+											"page": 136,
+											"entries": [
+												"Jacqueline must be attacked and devoured by every wererat she has created within her own home. If even a single wererat is missing, Jacqueline will assume her mist form and try to escape. Lye is her biggest fear as it stops her regeneration and mist form traits."
+											]
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://i.imgur.com/JJJPiib.jpg"
+											}
+										},
+										{
+											"name": "Jacqueline Renier",
+											"type": "entries",
+											"page": 137,
+											"entries": [
+												{
+													"type": "statblock",
+													"tag": "creature",
+													"source": "Darklords&DomainsVol1",
+													"name": "Jacqueline Renier"
+												}
+											]
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://i.imgur.com/f1dkz0u.jpg"
+											}
+										},
+										{
+											"name": "Claude Renier",
+											"type": "entries",
+											"page": 137,
+											"entries": [
+												{
+													"type": "statblock",
+													"tag": "creature",
+													"source": "Darklords&DomainsVol1",
+													"name": "Claude Renier"
+												}
+											]
+										}
+									]
 								}
 							]
 						}
@@ -12844,7 +13552,7 @@
 			},
 			"fluff": {
 				"entries": [
-					"Broken ones are twisted fusions of people and animals who live in Markovia, but they can also be found in other regions. They are also dubbed as “beast men” and “animal men.” Broken ones are extraordinarily resilient and regenerate wounds at a rapid rate, despite their misshaped form. A broken one's food and behavioral patterns are usually related to its animal origin. A broken one may also have a single exceptional skill gained from their animal ancestors. Broken ones may also be found in Darkon, Falkovnia, Forlorn, Hazlan, Lamordia, Nova Vaasa, and the Shadow Rift."
+					"Broken ones are twisted fusions of people and animals who live in Markovia, but they can also be found in other regions. They are also dubbed as \"beast men\" and \"animal men.\" Broken ones are extraordinarily resilient and regenerate wounds at a rapid rate, despite their misshaped form. A broken one's food and behavioral patterns are usually related to its animal origin. A broken one may also have a single exceptional skill gained from their animal ancestors. Broken ones may also be found in Darkon, Falkovnia, Forlorn, Hazlan, Lamordia, Nova Vaasa, and the Shadow Rift."
 				],
 				"images": [
 					{
@@ -12982,7 +13690,7 @@
 			},
 			"fluff": {
 				"entries": [
-					"Broken ones are twisted fusions of people and animals who live in Markovia, but they can also be found in other regions. They are also dubbed as “beast men” and “animal men.” Broken ones are extraordinarily resilient and regenerate wounds at a rapid rate, despite their misshaped form. A broken one's food and behavioral patterns are usually related to its animal origin. A broken one may also have a single exceptional skill gained from their animal ancestors. Broken ones may also be found in Darkon, Falkovnia, Forlorn, Hazlan, Lamordia, Nova Vaasa, and the Shadow Rift."
+					"Broken ones are twisted fusions of people and animals who live in Markovia, but they can also be found in other regions. They are also dubbed as \"beast men\" and \"animal men.\" Broken ones are extraordinarily resilient and regenerate wounds at a rapid rate, despite their misshaped form. A broken one's food and behavioral patterns are usually related to its animal origin. A broken one may also have a single exceptional skill gained from their animal ancestors. Broken ones may also be found in Darkon, Falkovnia, Forlorn, Hazlan, Lamordia, Nova Vaasa, and the Shadow Rift."
 				],
 				"images": [
 					{
@@ -13115,7 +13823,7 @@
 			},
 			"fluff": {
 				"entries": [
-					"Broken ones are twisted fusions of people and animals who live in Markovia, but they can also be found in other regions. They are also dubbed as “beast men” and “animal men.” Broken ones are extraordinarily resilient and regenerate wounds at a rapid rate, despite their misshaped form. A broken one's food and behavioral patterns are usually related to its animal origin. A broken one may also have a single exceptional skill gained from their animal ancestors. Broken ones may also be found in Darkon, Falkovnia, Forlorn, Hazlan, Lamordia, Nova Vaasa, and the Shadow Rift."
+					"Broken ones are twisted fusions of people and animals who live in Markovia, but they can also be found in other regions. They are also dubbed as \"beast men\" and \"animal men.\" Broken ones are extraordinarily resilient and regenerate wounds at a rapid rate, despite their misshaped form. A broken one's food and behavioral patterns are usually related to its animal origin. A broken one may also have a single exceptional skill gained from their animal ancestors. Broken ones may also be found in Darkon, Falkovnia, Forlorn, Hazlan, Lamordia, Nova Vaasa, and the Shadow Rift."
 				],
 				"images": [
 					{
@@ -13240,7 +13948,7 @@
 			},
 			"fluff": {
 				"entries": [
-					"Broken ones are twisted fusions of people and animals who live in Markovia, but they can also be found in other regions. They are also dubbed as “beast men” and “animal men.” Broken ones are extraordinarily resilient and regenerate wounds at a rapid rate, despite their misshaped form. A broken one's food and behavioral patterns are usually related to its animal origin. A broken one may also have a single exceptional skill gained from their animal ancestors. Broken ones may also be found in Darkon, Falkovnia, Forlorn, Hazlan, Lamordia, Nova Vaasa, and the Shadow Rift."
+					"Broken ones are twisted fusions of people and animals who live in Markovia, but they can also be found in other regions. They are also dubbed as \"beast men\" and \"animal men.\" Broken ones are extraordinarily resilient and regenerate wounds at a rapid rate, despite their misshaped form. A broken one's food and behavioral patterns are usually related to its animal origin. A broken one may also have a single exceptional skill gained from their animal ancestors. Broken ones may also be found in Darkon, Falkovnia, Forlorn, Hazlan, Lamordia, Nova Vaasa, and the Shadow Rift."
 				],
 				"images": [
 					{
@@ -13380,7 +14088,7 @@
 			},
 			"fluff": {
 				"entries": [
-					"Broken ones are twisted fusions of people and animals who live in Markovia, but they can also be found in other regions. They are also dubbed as “beast men” and “animal men.” Broken ones are extraordinarily resilient and regenerate wounds at a rapid rate, despite their misshaped form. A broken one's food and behavioral patterns are usually related to its animal origin. A broken one may also have a single exceptional skill gained from their animal ancestors. Broken ones may also be found in Darkon, Falkovnia, Forlorn, Hazlan, Lamordia, Nova Vaasa, and the Shadow Rift."
+					"Broken ones are twisted fusions of people and animals who live in Markovia, but they can also be found in other regions. They are also dubbed as \"beast men\" and \"animal men.\" Broken ones are extraordinarily resilient and regenerate wounds at a rapid rate, despite their misshaped form. A broken one's food and behavioral patterns are usually related to its animal origin. A broken one may also have a single exceptional skill gained from their animal ancestors. Broken ones may also be found in Darkon, Falkovnia, Forlorn, Hazlan, Lamordia, Nova Vaasa, and the Shadow Rift."
 				],
 				"images": [
 					{
@@ -20564,13 +21272,13 @@
 				{
 					"name": "Wolfwere",
 					"entries": [
-						"Harkon appears to be human, but is actually a rare creature called a wolfwere. Wolfweres appear to be similar to werewolves, but have several important differ-ences. Wolfweres start life as a dire wolf, and cannot curse others with their affliction. Wolfweres are unaffected by silver, but often pretend to be afraid to lull victims into a false sense of security. Iron burns wolfweres, leaving bald patches and blistered skin. Wolfweres can change from their dire wolf or hybrid form into a humanoid form at will. "
+						"Harkon appears to be human, but is actually a rare creature called a wolfwere. Wolfweres appear to be similar to werewolves, but have several important differ-ences. Wolfweres start life as a dire wolf, and cannot curse others with their affliction. Wolfweres are unaffected by silver, but often pretend to be afraid to lull victims into a false sense of security. Iron burns wolfweres, leaving bald patches and blistered skin. Wolfweres can change from their dire wolf or hybrid form into a humanoid form at will."
 					]
 				},
 				{
 					"name": "Shapechanger",
 					"entries": [
-						"Harkon is an accomplished shapechanger that can become any humanoid, but is most fond of his hu-man form.Harkon is fond of changing his gender , and can be either gender in any of his forms. No matter which gender he chooses, Harkon is stunningly attractive. Harkon can use his action to polymorph into a wolf-humanoid hybrid or into a humanoid, or back into its true form, which is a dire wolf. Harkon is fond of changing his gender , and can be either sex in any form. No matter which sex he chooses, Harkon is stunningly attractive. His statistics, other than his AC, are the same in each form. Any equipment he is wearing or carrying isn't transformed. Harkon reverts to his dire wolf form if he is killed. Harkon cannot be forced to change his shape. "
+						"Harkon is an accomplished shapechanger that can become any humanoid, but is most fond of his hu-man form.Harkon is fond of changing his gender , and can be either gender in any of his forms. No matter which gender he chooses, Harkon is stunningly attractive. Harkon can use his action to polymorph into a wolf-humanoid hybrid or into a humanoid, or back into its true form, which is a dire wolf. Harkon is fond of changing his gender , and can be either sex in any form. No matter which sex he chooses, Harkon is stunningly attractive. His statistics, other than his AC, are the same in each form. Any equipment he is wearing or carrying isn't transformed. Harkon reverts to his dire wolf form if he is killed. Harkon cannot be forced to change his shape."
 					]
 				},
 				{
@@ -20582,13 +21290,13 @@
 				{
 					"name": "Elixir of Madness",
 					"entries": [
-						"Harkon carries a magical bottle that is always full of a dark red liquid. Harkon tells others the liquid is wine, and offers to share it with anyone he meets as a sign of friendship. Anyone who drinks the liquid must make a {@dc 16} constitution saving throw or be affected by the 4th level spell confusion for 1 minute. Creatures affected by the spell can repeat the saving throw at the end of their turn to end the effect. Harkon automatically makes this saving throw. "
+						"Harkon carries a magical bottle that is always full of a dark red liquid. Harkon tells others the liquid is wine, and offers to share it with anyone he meets as a sign of friendship. Anyone who drinks the liquid must make a {@dc 16} constitution saving throw or be affected by the 4th level spell confusion for 1 minute. Creatures affected by the spell can repeat the saving throw at the end of their turn to end the effect. Harkon automatically makes this saving throw."
 					]
 				},
 				{
 					"name": "Rejuvenation",
 					"entries": [
-						"The woods of Kartakass are filled with massive wolves. If Harkon is killed, his soul immediately jumps into the body of the nearest dire wolf. He regains conciousness and control over his powers within {@dice 2d12} hours, before that, he acts and is like any other Dire Wolf. If Harkon is killed while in this beastial state, he is per-manently slain. The method of Harkon's death doesn't matter. Old age, disease, combat etc. always leads to him having his soul transfered to a dire wolf. Harkon doesn't know how long this will last, but has survived centuries this way. It seems the Dark Powers that granted him this realm are determined to make sure he stays in Kartakass as long as possible. "
+						"The woods of Kartakass are filled with massive wolves. If Harkon is killed, his soul immediately jumps into the body of the nearest dire wolf. He regains conciousness and control over his powers within {@dice 2d12} hours, before that, he acts and is like any other Dire Wolf. If Harkon is killed while in this beastial state, he is per-manently slain. The method of Harkon's death doesn't matter. Old age, disease, combat etc. always leads to him having his soul transfered to a dire wolf. Harkon doesn't know how long this will last, but has survived centuries this way. It seems the Dark Powers that granted him this realm are determined to make sure he stays in Kartakass as long as possible."
 					]
 				}
 			],
@@ -20641,7 +21349,7 @@
 				{
 					"name": "Berserker Blade (Humanoid or Hybrid Form Only)",
 					"entries": [
-						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d10 + 5}) slashing damage, plus 18 ({@damage 4d8}) necrotic damage. ",
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d10 + 5}) slashing damage, plus 18 ({@damage 4d8}) necrotic damage.",
 						"The sword is magical and has {@hit 1} to hit and damage."
 					]
 				},
@@ -20655,7 +21363,7 @@
 					"name": "Silver Harp {@recharge 5}",
 					"entries": [
 						"Harkon plays one of two songs on his harp.",
-						"The first song, called {@i Lament of the Worldwalker}, drains his opponents' will to live. Enemies within 50 feet of Harkon must make a {@dc 19} Wisdom saving throw or be slowed as the 3rd level spell of the same name. Slowed characters may repeat the saving throw at the end of their turn to escape the spell. ",
+						"The first song, called {@i Lament of the Worldwalker}, drains his opponents' will to live. Enemies within 50 feet of Harkon must make a {@dc 19} Wisdom saving throw or be slowed as the 3rd level spell of the same name. Slowed characters may repeat the saving throw at the end of their turn to escape the spell.",
 						"The second, called {@i The Children of the Night}, summons {@dice 2d10} {@creature dire wolf|MM}es. These wolves appear at the end of the turn. The dire wolves are friendly to Harkon and follow his commands."
 					]
 				}
@@ -20690,7 +21398,7 @@
 				{
 					"name": "Howl of the Pack",
 					"entries": [
-						"The eerie howling of dozens of wolves fills the air around Harkon Lukas. Every creature within 60 feet of Harkon must make a {@dc 16} Wisdom saving throw. Creatures that fail are {@condition frightened} of Harkon for one minute. Frightened creatures can reroll the Wisdom saving throw at the end of their turn. Creatures that save are immune to this ability for 1 hour. "
+						"The eerie howling of dozens of wolves fills the air around Harkon Lukas. Every creature within 60 feet of Harkon must make a {@dc 16} Wisdom saving throw. Creatures that fail are {@condition frightened} of Harkon for one minute. Frightened creatures can reroll the Wisdom saving throw at the end of their turn. Creatures that save are immune to this ability for 1 hour."
 					]
 				}
 			],
@@ -20905,13 +21613,13 @@
 				{
 					"name": "Bolster the Undead",
 					"entries": [
-						"Any undead creature within 300 ft of Godefroy gains a +2 bonus against turning attempts. "
+						"Any undead creature within 300 ft of Godefroy gains a +2 bonus against turning attempts."
 					]
 				},
 				{
 					"name": "Sense Magic",
 					"entries": [
-						"Godefroy senses magic within 120 feet of him at will. This trait otherwise works like the detect magic spell but isn’t itself magical."
+						"Godefroy senses magic within 120 feet of him at will. This trait otherwise works like the detect magic spell but isn't itself magical."
 					]
 				},
 				{
@@ -20929,7 +21637,7 @@
 				{
 					"name": "Etherealness",
 					"entries": [
-						"Godefroy enters the Ethereal Plane from the Material Plane, or vice versa. He is visible on the Material Plane while he is in the Border Ethereal, and vice versa, yet he can’t affect or be affected by anything on the other plane."
+						"Godefroy enters the Ethereal Plane from the Material Plane, or vice versa. He is visible on the Material Plane while he is in the Border Ethereal, and vice versa, yet he can't affect or be affected by anything on the other plane."
 					]
 				},
 				{
@@ -20941,13 +21649,13 @@
 				{
 					"name": "Alert",
 					"entries": [
-						"Godefroy is always on the lookout for danger, he gains the following benefits: He can’t be {@status surprised} while he is conscious. He gains a +5 bonus to initiative. Other creatures don’t gain advantage on attack rolls against Godefroy as a result of being hidden from him."
+						"Godefroy is always on the lookout for danger, he gains the following benefits: He can't be {@status surprised} while he is conscious. He gains a +5 bonus to initiative. Other creatures don't gain advantage on attack rolls against Godefroy as a result of being hidden from him."
 					]
 				},
 				{
 					"name": "Flyby",
 					"entries": [
-						"Godefroy doesn’t provoke opportunity attacks when he flies out of an enemy’s reach."
+						"Godefroy doesn't provoke opportunity attacks when he flies out of an enemy's reach."
 					]
 				},
 				{
@@ -20960,7 +21668,7 @@
 					"name": "Curse",
 					"entries": [
 						"Each night, the spirits of his wife, Lady Godefroy, and their child hunt down Godefroy. He is helpless against them and when they find him they tear at his ethereal flesh as they curse him for their murders. No matter how Godefroy hides, they always track him down and find him. The wife and child ",
-						"use the Ghost statblock and he is always {@condition frightened} of them. "
+						"use the Ghost statblock and he is always {@condition frightened} of them."
 					]
 				},
 				{
@@ -20996,7 +21704,7 @@
 				{
 					"name": "Walking Stick +1",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) bludgeoning damage and {@dice 1d4} permanent damage to Charisma. The target’s Charisma cannot drop below 1."
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) bludgeoning damage and {@dice 1d4} permanent damage to Charisma. The target's Charisma cannot drop below 1."
 					]
 				},
 				{
@@ -21008,7 +21716,7 @@
 				{
 					"name": "Etherealness",
 					"entries": [
-						"Godefroy enters the Ethereal Plane from the Mate-rial Plane, or vice versa. He is visible on the Material Plane while he is in the Border Ethereal, and vice versa, yet he can’t affect or be affected by anything on the other plane."
+						"Godefroy enters the Ethereal Plane from the Mate-rial Plane, or vice versa. He is visible on the Material Plane while he is in the Border Ethereal, and vice versa, yet he can't affect or be affected by anything on the other plane."
 					]
 				},
 				{
@@ -21020,13 +21728,13 @@
 				{
 					"name": "Horrifying Visage",
 					"entries": [
-						"Each non-undead creature within 60 ft. of Godefroy that can see him must succeed on a {@dc 20} Wisdom saving throw or be {@condition frightened} for 1 minute. If the save fails by 5 or more, the target also ages {@dice 1d4 x 10} years. A {@condition frightened} target can repeat the saving throw at the end of each of its turns, ending the fright-ened condition on itself on a success. If a target’s saving throw is successful or the effect ends for it, the target is immune to Go-defroy’s Horrifying Visage for the next 24 hours. The aging effect can be reversed with a greater restoration spell, but only within 24 hours of it occurring."
+						"Each non-undead creature within 60 ft. of Godefroy that can see him must succeed on a {@dc 20} Wisdom saving throw or be {@condition frightened} for 1 minute. If the save fails by 5 or more, the target also ages {@dice 1d4 x 10} years. A {@condition frightened} target can repeat the saving throw at the end of each of its turns, ending the fright-ened condition on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to Go-defroy's Horrifying Visage for the next 24 hours. The aging effect can be reversed with a greater restoration spell, but only within 24 hours of it occurring."
 					]
 				},
 				{
 					"name": "Possession {@recharge}",
 					"entries": [
-						"One humanoid that Godefroy can see within 5 ft. of him must succeed on a {@dc 20} Charisma saving throw or be possessed by him; Godefroy then disappears, and the tar-get is {@condition incapacitated} and loses control of its body. Godefroy now controls the body but doesn’t deprive the target of awareness. Godefroy can’t be targeted by any attack, spell, or other effect, except ones that turn undead, and he retains his alignment, Intel-ligence, Wisdom, Charisma, and immunity to being {@condition charmed} and {@condition frightened}. He otherwise uses the possessed target’s statistics, but doesn’t gain access to the target’s knowledge, class features, or proficiencies. The possession lasts until the body drops to 0 hit points, Godefroy ends it as a bonus action, or forced out by an ef-fect like the dispel evil and good spell. When the possession ends, Godefroy reappears in an unoccupied space within 5 ft. of the body. The target is immune to Godefroy’s Possession for 24 hours after succeeding on the saving throw or after the possession ends."
+						"One humanoid that Godefroy can see within 5 ft. of him must succeed on a {@dc 20} Charisma saving throw or be possessed by him; Godefroy then disappears, and the tar-get is {@condition incapacitated} and loses control of its body. Godefroy now controls the body but doesn't deprive the target of awareness. Godefroy can't be targeted by any attack, spell, or other effect, except ones that turn undead, and he retains his alignment, Intel-ligence, Wisdom, Charisma, and immunity to being {@condition charmed} and {@condition frightened}. He otherwise uses the possessed target's statistics, but doesn't gain access to the target's knowledge, class features, or proficiencies. The possession lasts until the body drops to 0 hit points, Godefroy ends it as a bonus action, or forced out by an ef-fect like the dispel evil and good spell. When the possession ends, Godefroy reappears in an unoccupied space within 5 ft. of the body. The target is immune to Godefroy's Possession for 24 hours after succeeding on the saving throw or after the possession ends."
 					]
 				}
 			],
@@ -21043,7 +21751,7 @@
 			},
 			"legendaryActions": 3,
 			"legendaryHeader": [
-				"Godefroy can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. Godefroy regains spent legendary actions at the start of his turn."
+				"Godefroy can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Godefroy regains spent legendary actions at the start of his turn."
 			],
 			"legendary": [
 				{
@@ -21055,7 +21763,7 @@
 				{
 					"name": "Forced Obedience",
 					"entries": [
-						"A target that Godefroy can see must succeed on a {@dc 20} Wisdom saving throw or bow until the end of its next turn. Until this bow ends, the target can’t take actions or reactions, and its speed is 0 and can’t be increased."
+						"A target that Godefroy can see must succeed on a {@dc 20} Wisdom saving throw or bow until the end of its next turn. Until this bow ends, the target can't take actions or reactions, and its speed is 0 and can't be increased."
 					]
 				},
 				{
@@ -21077,7 +21785,7 @@
 			],
 			"tokenHref": {
 				"type": "external",
-				"url": "XXX"
+				"url": "https://i.imgur.com/QY71SJs.png"
 			},
 			"fluff": {
 				"entries": [
@@ -21148,7 +21856,623 @@
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "XXX"
+							"url": "https://i.imgur.com/zqGp3dV.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Sir Tristen Hiregaard",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"source": "Darklords&DomainsVol1",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"{@item +2 chain mail}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "25d8 + 25",
+				"average": 138
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 15,
+			"con": 12,
+			"int": 13,
+			"wis": 14,
+			"cha": 18,
+			"passive": 15,
+			"cr": "8",
+			"shortName": "Sir Tristen Hiregaard",
+			"page": 131,
+			"languages": [
+				"Common",
+				"Dwarvish",
+				"Elvish"
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"E"
+			],
+			"save": {
+				"wis": "+5"
+			},
+			"skill": {
+				"history": "+4",
+				"perception": "+5",
+				"persuasion": "+9"
+			},
+			"conditionImmune": [
+				"frightened"
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Tristen/Malken makes saving throws with advantage against spells and spell-like effects."
+					]
+				},
+				{
+					"name": "Call Forth the Beast",
+					"entries": [
+						"If Tristen is angry or jealous he must make a {@dc 20} Wisdom saving throw. If Tristen is in combat, he must repeat this saving throw at the start of his turn. If he fails he turns into Malken. If Tristen fails a saving throw against a spell from the enchantment school or is subjected to the {@condition charmed}, {@condition blinded}, {@condition deafened}, {@condition incapacitated}, {@condition restrained}, {@condition stunned}, or uncon-scious conditions, he becomes Malken. If Tristen is reduced to 0 hit points he becomes Malken."
+					]
+				},
+				{
+					"name": "The Beast",
+					"entries": [
+						"Malken is Tristen's other personality, a brutal beast with no regard for right and wrong. He is a monster of rage and madness. Malken's Strength and Constitution are 22 (+6) and he has 350 hit points. Malken is proficient with Strength, Constitu-tion, and Wisdom saving throws. Malken is immune to all spells from the enchantment school and any condition that can cause Tristen to change into Malken. Malken's arms are unnaturally long and his nails lengthen and harden into jagged claws. Even more disturbing, these claws drip thick poisonous globs. Malken has a speed of 40 feet. Malken's CR is 16. "
+					]
+				},
+				{
+					"name": "Enrage (Malken only)",
+					"entries": [
+						"If Malken takes more than 30 hit points of damage in one turn he becomes enraged. He gains +4 damage to his slash attack and makes melee attack rolls with advantage during his next turn. "
+					]
+				},
+				{
+					"name": "Regenerate (Malken only)",
+					"entries": [
+						"Malken regains 10 hit points at the start of his turn. This trait does not function if Malken took radiant damage at the end of his last turn. If Malken is reduced to 0 hit points and this trait does not function, he falls lifeless to the ground and his body turns to dust. Tristen will be reborn in his castle 24 hours later."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day, Malken only)",
+					"entries": [
+						"If Malken fails a saving throw, he can choose to succeed instead.  "
+					]
+				},
+				{
+					"name": "Into the Shadows (Malken only)",
+					"entries": [
+						"At night or in an area of shadows Malken can make Dexterity (Stealth) skill checks as a bonus action."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Tristen makes 2 attacks with his defender longsword. Malken uses his aura of pain and makes three slash attacks."
+					]
+				},
+				{
+					"name": "Defender Longsword",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d8 + 6}) slashing damage, or 12 ({@damage 1d10 + 6}) slashing damage if used with both hands."
+					]
+				},
+				{
+					"name": "Slash",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}13 ({@damage 2d6 + 6}) slashing damage, plus 5 ({@damage 1d8}) poison damage. Creatures that take damage from the poison must make a {@dc 15} Constitution saving throw. Creatures that fail are {@condition poisoned} until the end of Malken's next turn. "
+					]
+				},
+				{
+					"name": "Aura of Pain",
+					"entries": [
+						"Every creature within 30 feet of Malken must make a {@dc 16} Wisdom saving throw. Creatures take 27 ({@damage 6d8}) psychic damage and may not take reactions on a failed saving throw. Creatures take half damage and may use reactions as normal on a successful saving throw. "
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RCH"
+			],
+			"attachedItems": [
+				"defender longsword|dmg"
+			],
+			"legendaryGroup": {
+				"name": "Darklords&DomainsVol1LairActionsSirTristenHiregaard",
+				"source": "Darklords&DomainsVol1"
+			},
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"Malken can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Malken regains spent legendary actions at the start of his turn. "
+			],
+			"legendary": [
+				{
+					"name": "Slash",
+					"entries": [
+						"Malken makes one slash attack."
+					]
+				},
+				{
+					"name": "Leap",
+					"entries": [
+						"Malken may leap to any empty space within 30 feet. This leap does not provoke attacks of opportunity."
+					]
+				},
+				{
+					"name": "Spit",
+					"entries": [
+						"Malken spits a glob of thick fluid into the face of an enemy within 10 feet. That enemy must make a {@dc 16} Dexterity saving throw. If they fail they are {@condition blinded} until they use an action to wipe the fluid out of their eyes. "
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Into the Shadows (Malken only)",
+					"entries": [
+						"At night or in an area of shadows Malken can make Dexterity (Stealth) skill checks as a bonus action."
+					]
+				}
+			],
+			"damageTags": [
+				"I",
+				"S",
+				"Y"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/uFylcNp.png"
+			},
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"A madman is loose in my castle. He slaughters the women and children, those who cannot defend themselves. He thwarts my every effort to find him, but I will persist. I shall bring this brigand to justice or perish in the attempt."
+						],
+						"by": "Sir Tristen Hiregaard"
+					},
+					"Sir Tristen Hiregaard is a human in his late seventies. Despite his advancing years, his rugged good looks make him quite the ladies man. His hair and moustache are still black, though peppered with enough gray to make him appear wise yet not distract from his vigour. A man in his seventies could be forgiven for not taking exercise every day, yet Tristen does so, and still comfortably wears chain mail and swings his family's ancestral sword when there is need. In times when he doesn't expect trouble, he dons comfortable loose black trousers and a bright red shirt. Malken is hunched and twisted, with heavily muscled arms that are far too long, his massive hands ending in jagged claws. Malken runs on all fours and is frighteningly fast, giggling uncontrollably as he lopes. The giggling is the last sound that his victims hear. Their last sight is his bloodshot mad eyes.",
+					{
+						"type": "entries",
+						"name": "Background",
+						"page": 130,
+						"entries": [
+							"Tristen's curse began with his father, Romir Hiregaard. Romir was a good ruler who was fair and, sometimes, even kind. Romir's only weakness was jealousy. If his young wife showed even polite interest in another man, he would descend into a rage. The rages became worse as time progressed. One day he found his wife in the arms of another man and killed them both. After the rage subsided, Romir realized the man was his wife's dance instructor. With her dying breath, Romir's wife cursed him. Romir would kill any woman he loved or any man that angered him. Overwhelmed with shame over what he had done, Romir killed himself. The curse passed on to the 15 year old Tristen. Tristen first learned of the curse less than a year later when he murdered the daughter of a servant family. Over the next six years, Tristen killed nine more women. To make matters worse, the more Tristen killed, the more he enjoyed it. Eventually the Dark Powers took notice and pulled Tristen into Ravenloft. When Tristen was pulled into Ravenloft, Malken manifested fully, a raging mad man that was everything Tristen despised. There is no way out for Tristen. If he is killed and Malken chooses to let him die, then the curse is transferred on to his eldest son, Yorgi. The curse that created Malken can only be defeated when the Hiregaard line ends."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Current Sketch",
+						"page": 130,
+						"entries": [
+							"Sir Tristen is a stern but just ruler. He pays every cent of the taxes he owes to Prince Othmar, the nominal ruler of Nova Vaasa. Tristen treats his peasants fairly and at the yearly conclave of nobles  argues that the poor folk should have their taxes reduced. His entreaties fall upon deaf ears, but still he keeps trying. Tristen has four sons from a loveless marriage that lasted for forty years. Tristen's oldest son is in his early fifties and his youngest is three years old. Tristen's youngest son is being raised by his brothers who constantly dote on the child.Sir Tristen knows of the curse and tries to stop Malken from killing his lovers and enemies. When Tristen starts to feel the hate rising, he seals himself in his quarters in Castle Faerhaaven and prays it is enough. Malken is a madman. His only goals are to cause as much misery as possible. Malken knows Sir Tristen is a good person, and wants to make him suffer the most. Malken knows that Tristan tries to lock him in the tower that serves as his personal quarters, but Malken is clever and escapes nearly every time."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Darklord's Tactics",
+						"page": 130,
+						"entries": [
+							"Sir Tristen is a fair and honorable combatant. He allows his enemies to prepare and gives quarter to opponents that ask for it. Malken is a deranged psychopath. He doesn't fight. He hunts. Malken uses his speed to dart into his foes and carve bloody chunks from them before disappearing into the shadows. Malken loves to make his foes beg for their lives. Of course, once they've debased themselves, Malken kills them anyway."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Borders",
+						"page": 130,
+						"entries": [
+							"Because of his dual nature and his constant internal battles with Tristen, Malken cannot close the border."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Lair: Castle Faerhaaven",
+						"page": 130,
+						"entries": [
+							"Castle Faerhaaven is a stately castle where Tristen lives with his four sons, their wives and families. The walls are tall and strong and the castle is surrounded by a moat. The castle is well maintained. Tristen considers its appearance to be a reflection of him and his rule. Castle Faerhaaven is riddled with holes and secret passages that seem to move at random. Sir Tristen and his family are unaware of them. Malken knows where all of the secret passages are and where they lead. Malken can disappear into the walls and reappear at any point in the castle at will. Malken encountered in his lair has a challenge rating of 17 (18,000 XP)."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/YHBjZWp.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Jacqueline Renier",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human",
+					"shapechanger"
+				]
+			},
+			"source": "Darklords&DomainsVol1",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "22d8 + 66",
+				"average": 165
+			},
+			"speed": {
+				"walk": 40,
+				"burrow": 20,
+				"climb": 40
+			},
+			"str": 17,
+			"dex": 22,
+			"con": 16,
+			"int": 18,
+			"wis": 14,
+			"cha": 20,
+			"passive": 18,
+			"cr": "17",
+			"shortName": "Jacqueline Renier",
+			"page": 137,
+			"senses": [
+				"blindsight 20 ft.",
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"languages": [
+				"Common",
+				"Elvish",
+				"Thieves' cant",
+				"Mordentish",
+				"Balok",
+				"Falkovnian (can't speak in rat form)"
+			],
+			"languageTags": [
+				"C",
+				"E",
+				"TC"
+			],
+			"save": {
+				"dex": "+12",
+				"int": "+10",
+				"cha": "+11"
+			},
+			"skill": {
+				"acrobatics": "+12",
+				"persuasion": "+11",
+				"perception": "+8",
+				"sleight of hand": "+12",
+				"stealth": "+12"
+			},
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical attacks not made of silver",
+					"cond": true
+				},
+				{
+					"immune": [
+						"poison",
+						"psychic"
+					]
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"incapacitated",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"Jacqueline can use her action to polymorph into a rat-humanoid hybrid or into a giant rat, or back into her true form, which is humanoid. Her statistics, other than her size , are the same in each form. Any equipment she's wearing or carrying is transformed. "
+					]
+				},
+				{
+					"name": "Loss of Control",
+					"entries": [
+						"Jacqueline can control her transformations perfectly. She is cursed however to transform into her rat form when she is in the presence of anyone she truly loves."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"Jacqueline regenerates 10 hit points at the start of her turn. If Jacqueline takes damage from a silver melee weapon, this trait doesn't function at the start of her next turn. If Jacqueline is reduced to 0 hit points and this trait does not function, she is forced into her mist form. "
+					]
+				},
+				{
+					"name": "Mist Form",
+					"entries": [
+						"Jacqueline can turn into a foul smelling mist at will. While in this form, Jacqueline is immune to damage and regenerates one hit point per round. While in her mist form Jacqueline has a fly speed of 30. If Jacqueline is reduced to 0 hit points she is forced into her mist form until she regains at least half her hit points."
+					]
+				},
+				{
+					"name": "Slippery Mind",
+					"entries": [
+						"Jacqueline is incredibly devious, even for a were-rat. Her plots are works of art and have dozens of moving parts that always seem to work out how Jacqueline thought they would. Jacqueline is immune to psychic damage and enchant-ment schools."
+					]
+				},
+				{
+					"name": "Monophobia",
+					"entries": [
+						"Jacqueline is terrified of being alone. If Jacqueline is fighting alone, she has disadvantage on all her attack rolls."
+					]
+				},
+				{
+					"name": "Surprising Friends",
+					"entries": [
+						"Jacqueline always has {@dice 2d8} wererat minions nearby. She will not hesitate to sacrifice them so she can escape. A wererat infected by Jacqueline is automatically {@condition charmed} by Jac-queline as long as she is within 30 feet of that wererat."
+					]
+				},
+				{
+					"name": "Sneak Attack",
+					"entries": [
+						"If Jacqueline has advantage on a melee or ranged attack roll against an enemy, or has an ally within 5 feet of an ene-my she is attacking, she inflicts an extra {@dice 5d6} points of damage. This damage is the same type as the weapon Jacqueline is wielding. "
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"Jacqueline can climb any surface as if under the effect of a spider climb spell that cannot be dispelled."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Jacqueline has advantage on saving throws against spells and spell-like effects."
+					]
+				},
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"Jacqueline has advantage on Wisdom (Perception) checks that rely on smell."
+					]
+				},
+				{
+					"name": "Allergic Reaction",
+					"entries": [
+						"If Jacqueline consumes a drink or food that is spiked with Lye or is damaged by a weapon that has lye applied on it, a severe allergic reaction due to her wererat lycanthropic nature occurs. Jacqueline's regeneration and mist form traits don't function and she is considered {@condition poisoned} until she takes a long rest or lesser restoration is cast upon her. Lye is the only known substance that can poison her."
+					]
+				},
+				{
+					"name": "Gnaw",
+					"entries": [
+						"Whenever Jacqueline hits an object, with a bite attack, the hit is a critical hit."
+					]
+				},
+				{
+					"name": "Improved Initiative",
+					"entries": [
+						"Jacqueline rolls initiative with advantage."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Magic Resistance",
+				"Regeneration",
+				"Shapechanger",
+				"Sneak Attack",
+				"Spider Climb"
+			],
+			"miscTags": [
+				"MW",
+				"CUR",
+				"MLW",
+				"RW"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Jacqueline makes three attacks, only one of which can be a bite."
+					]
+				},
+				{
+					"name": "Bite (Rat or Hybrid form only)",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage, plus 18 ({@damage 4d8}) poison damage. If the target is a humanoid it must succeed on a {@dc 18} Constitution saving throw or be cursed with wererat lycanthropy. All creatures that become a wererat through this effect are under the absolute control of Jacqueline."
+					]
+				},
+				{
+					"name": "Dagger of Potent Venom (humanoid or Hybrid Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d4 + 6}) piercing damage, plus 22 ({@damage 4d10}) poison damage. A creature damaged by this dagger must make a {@dc 17} Constitution saving throw. If they fail they are {@condition poisoned} for 1 minute. "
+					]
+				},
+				{
+					"name": "Pistol +1 (humanoid or Hybrid Form Only)",
+					"entries": [
+						"{@atk rw} {@hit 13} to hit, range 30/90 ft., one target. {@h}12 ({@damage 1d10 + 7}) piercing damage."
+					]
+				},
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"Jacqueline can use her action to polymorph into a rat-humanoid hybrid or into a giant rat, or back into her true form, which is humanoid. Her statistics, other than her size , are the same in each form. Any equipment she's wearing or carrying is transformed. "
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"attachedItems": [
+				"+1 pistol|dmg"
+			],
+			"legendaryGroup": {
+				"name": "Darklords&DomainsVol1LairActionsJacquelineRenier",
+				"source": "Darklords&DomainsVol1"
+			},
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"Jacqueline Renier can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Jacqueline Renier regains spent legendary actions at the start of her turn."
+			],
+			"legendary": [
+				{
+					"name": "Bite (Hybrid or Rat form only)",
+					"entries": [
+						"Jacqueline makes one bite attack."
+					]
+				},
+				{
+					"name": "Dagger of Potent Venom (Hybrid or Human form only)",
+					"entries": [
+						"Jacqueline makes one Dagger of Potent Venom attack."
+					]
+				},
+				{
+					"name": "Scuttle",
+					"entries": [
+						"Jacqueline digs into the ground and burrows to an empty space within 20 feet. "
+					]
+				},
+				{
+					"name": "Handful of Dirt",
+					"entries": [
+						"Jacqueline throws a handful of dirt into the eyes of one of her opponents. Jacqueline chooses an opponent within 10 feet and they must make a {@dc 16} Dexterity saving throw. Creatures that fail are {@condition blinded} until they use an action to clean their eyes. "
+					]
+				}
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/WzJdLA7.png"
+			},
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"You think because I'm not some clod in armor or waving my hands in the air while muttering that I am not a threat. Good. Keep thinking that. I know where you are and what you are doing before you do. I have thousands of eyes. I have thousands of hands and each of them holds a dagger."
+						],
+						"by": "Jacqueline Renier"
+					},
+					"Jacqueline appears to be an attractive human female. Her age is almost impossible to guess, as she could easily pass for someone in her twenties or forties. Jacqueline dresses well but avoids overt symbols of wealth. Her outfits are always alluring but simple. Intelligent and well educated, Jacqueline is comfortable discussing dozens of esoteric topics and not afraid to make anyone who underestimates her look like a fool.",
+					{
+						"type": "entries",
+						"name": "Background",
+						"page": 136,
+						"entries": [
+							"Jacqueline was a child when she came to Ravenloft. Her small family of wererats were cornered by a group of adventurers, as a portal filled with mist appeared. When faced with the choice of certain death by the sword or the chance of safety through an unknown portal, the Reniers chose the portal.",
+							"The Reniers found themselves in the sewers under Silbervas, a city in Falkovnia. For a time the Renier clan grew and prospered, but they eventually came to the attention of Vlad Drakov, the dark lord of Falkovnia. Vlad sent a legion into the sewers to clean them out. The Reniers were chased out of the sewers and through the countryside. They were chased by dogs and men with murder in their eyes. Finally the Reniers were able to flee to the mists.",
+							"When the mists cleared, the Reniers were in Richemulot. They were instantly at home in the sewers under Pont-a-Museau, and found the Chateau Delanuit. Jacqueline's grandfather ruled as the dark lord of Richemulot for a time until Jacqueline killed the old man and took his place twenty five years ago."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Current Sketch",
+						"page": 136,
+						"entries": [
+							"Jacqueline has networks of informants all over Richemulot and the surrounding domains. She is extremely intelligent, manipulative, and one step ahead of anyone who dares to attack her. Jacqueline's curse forces her to fall deeply in love, but she is forced into her rat form whenever she sees the object of her desire. Jacqueline's twin sister, Louise, is not cursed and regularly takes lovers when she wishes. This drives Jacqueline mad with jealousy and the lovers inevitably disappear within a few days. This has led to a rift between the women, as Louise has started to become annoyed with having to replace her paramores so often. The citizens of Richemulot consider the Renier's to be fair rulers. Their taxes are light, and people are required to be armed at all times by law. Jacqueline wants her citizens armed and prepared for one of Falkovnia's frequent invasions. Most of the citizens don't know that the Reniers are wererats, and threats to the family will be met by an angry mob."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Darklord's Tactics",
+						"page": 136,
+						"entries": [
+							"Jacqueline doesn't hesitate to use any dirty trick or underhanded tactic. She will gladly sacrifice a minion or member of her clan if it will allow her to leave or gain an advantage. She prefers to pretend she is helpless and afraid until her enemy lowers their guard before she turns into her hybrid form and launches a flurry of attacks with her dagger."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Borders",
+						"page": 136,
+						"entries": [
+							"When the borders of Richulemot are closed, Jacqueline summons a monstrous swarm of rats. The swarm is at least 50 feet thick. The rats cover the walls, trees, and boil up out of the ground. If a creature tries to fly over the swarm, an invisible force pulls them down into the snapping jaws."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Jacqueline Renier's Lair: Château Delanuit",
+						"page": 136,
+						"entries": [
+							"Chateau Delanuit is a stately manor house on the Musarde River in the heart of Pont-a-Museau. The house and grounds are kept in immaculate shape by Jacqueline's army of servants. The rooms that the public have access to, as well as Jacqueline and Louise bed chambers, are well appointed but not gaudy. Moving past these rooms, the house quickly becomes run down and infested with vermin, especially rats. Rats pour from holes in the walls and ceiling. The Renier wererat clan resides here and are quick to sound the alarm when intruders are spotted. Jacqueline Renier encountered in her lair has a challenge rating of 18 (20,000 XP)"
+						]
+					},
+					{
+						"type": "entries",
+						"name": "How to defeat the Darklord",
+						"page": 136,
+						"entries": [
+							"Jacqueline must be attacked and devoured by every wererat she has created within her own home. If even a single wererat is missing, Jacqueline will assume her mist form and try to escape. Lye is her biggest fear as it stops her regeneration and mist form traits."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/BYJhdNG.jpg"
 						}
 					}
 				]
