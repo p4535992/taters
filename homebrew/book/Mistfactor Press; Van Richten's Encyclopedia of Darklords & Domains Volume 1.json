@@ -181,9 +181,23 @@
 				},
 				"Jacqueline can't repeat an effect until they have all been used, and she can't use the same effect two rounds in a row."
 			]
+		},
+		{
+			"name": "Darklords&DomainsVol1LairActionsLordSoth",
+			"source": "Darklords&DomainsVol1",
+			"lairActions": [
+				"On initiative count 20 (losing initiative ties), Lord Soth can take one lair action to cause one of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Wife of Soth:} The spirit of a beautiful woman appears next to Soth. After a second, her face transforms into a hideous mockery of beauty, and she wails. Every creature within 30 feet of Lord Soth must make a DC 15 Constitution saving throw. Creatures that fail are reduced to 0 hit points. Constructs and undead automatically pass the save.",
+						"{@b Voice of Despair:} A disembodied voice sings a song of loss and despair. Every crea-ture within 50 feet of Lord Soth must make a DC 18 Wisdom saving throw. Creatures take 28 ({@dice 8d6}) psychic damage on a failed save and half as much on a successful one.",
+						"{@b Walls are moving:} Nedragaard Keep suddenly changes. Walls appear where none were before, doors and windows flow like water around the room. Creatures in the same room as Lord Soth must make a DC 16 Dexterity check. Creatures that fail are pulled into a different room from the rest of their companions and enemies. They must find their own way back to their companions. Lord Soth can choose to succeed or fail on this save."
+					]
+				},
+				"Lord Soth can’t repeat an effect until they have all been used, and he can’t use the same effect two rounds in a row."
+			]
 		}
-
-		
 	],
 	"spell": [
 		{
@@ -5215,6 +5229,69 @@
 			"dmgType": "B",
 			"entries": [
 				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) bludgeoning damage and {@dice 1d4} permanent damage to Charisma. The target's Charisma cannot drop below 1."
+			]
+		},
+		{
+			"name": "+3 Adamantine Plate Armor",
+			"source": "Darklords&DomainsVol1",
+			"page": 150,
+			"baseItem": "+3 Plate Armor|DMG",
+			"type": "HA",
+			"rarity": "rare",
+			"weight": 65,
+			"value": 1000000,
+			"ac": 18,
+			"strength": "15",
+			"stealth": true,
+			"tier": "major",
+			"bonusAc": "+3",
+			"entries": [
+				"You have a +3 bonus to AC while wearing this armor.",
+				"This suit of armor is reinforced with adamantine, one of the hardest substances in existence. While you're wearing it, any critical hit against you becomes a normal hit.",
+				"The wearer has Disadvantage on Dexterity ({@skill Stealth}) checks.",
+				"If the wearer has a Strength score lower than 15, their speed is reduced by 10 feet."
+			]
+		},
+		{
+			"name": "+2 Adamantine Plate Armor",
+			"source": "Darklords&DomainsVol1",
+			"page": 150,
+			"baseItem": "+2 Plate Armor|DMG",
+			"type": "HA",
+			"rarity": "very rare",
+			"weight": 65,
+			"value": 800000,
+			"ac": 18,
+			"strength": "15",
+			"stealth": true,
+			"tier": "major",
+			"bonusAc": "+2",
+			"entries": [
+				"You have a +2 bonus to AC while wearing this armor.",
+				"This suit of armor is reinforced with adamantine, one of the hardest substances in existence. While you're wearing it, any critical hit against you becomes a normal hit.",
+				"The wearer has Disadvantage on Dexterity ({@skill Stealth}) checks.",
+				"If the wearer has a Strength score lower than 15, their speed is reduced by 10 feet."
+			]
+		},
+		{
+			"name": "+1 Adamantine Plate Armor",
+			"source": "Darklords&DomainsVol1",
+			"page": 150,
+			"baseItem": "+1 Plate Armor|DMG",
+			"type": "HA",
+			"rarity": "very rare",
+			"weight": 65,
+			"value": 400000,
+			"ac": 18,
+			"strength": "15",
+			"stealth": true,
+			"tier": "major",
+			"bonusAc": "+1",
+			"entries": [
+				"You have a +1 bonus to AC while wearing this armor.",
+				"This suit of armor is reinforced with adamantine, one of the hardest substances in existence. While you're wearing it, any critical hit against you becomes a normal hit.",
+				"The wearer has Disadvantage on Dexterity ({@skill Stealth}) checks.",
+				"If the wearer has a Strength score lower than 15, their speed is reduced by 10 feet."
 			]
 		}
 	],
@@ -22746,13 +22823,13 @@
 				{
 					"name": "The Beast",
 					"entries": [
-						"Malken is Tristen's other personality, a brutal beast with no regard for right and wrong. He is a monster of rage and madness. Malken's Strength and Constitution are 22 (+6) and he has 350 hit points. Malken is proficient with Strength, Constitu-tion, and Wisdom saving throws. Malken is immune to all spells from the enchantment school and any condition that can cause Tristen to change into Malken. Malken's arms are unnaturally long and his nails lengthen and harden into jagged claws. Even more disturbing, these claws drip thick poisonous globs. Malken has a speed of 40 feet. Malken's CR is 16. "
+						"Malken is Tristen's other personality, a brutal beast with no regard for right and wrong. He is a monster of rage and madness. Malken's Strength and Constitution are 22 (+6) and he has 350 hit points. Malken is proficient with Strength, Constitu-tion, and Wisdom saving throws. Malken is immune to all spells from the enchantment school and any condition that can cause Tristen to change into Malken. Malken's arms are unnaturally long and his nails lengthen and harden into jagged claws. Even more disturbing, these claws drip thick poisonous globs. Malken has a speed of 40 feet. Malken's CR is 16."
 					]
 				},
 				{
 					"name": "Enrage (Malken only)",
 					"entries": [
-						"If Malken takes more than 30 hit points of damage in one turn he becomes enraged. He gains +4 damage to his slash attack and makes melee attack rolls with advantage during his next turn. "
+						"If Malken takes more than 30 hit points of damage in one turn he becomes enraged. He gains +4 damage to his slash attack and makes melee attack rolls with advantage during his next turn."
 					]
 				},
 				{
@@ -22794,13 +22871,13 @@
 				{
 					"name": "Slash",
 					"entries": [
-						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}13 ({@damage 2d6 + 6}) slashing damage, plus 5 ({@damage 1d8}) poison damage. Creatures that take damage from the poison must make a {@dc 15} Constitution saving throw. Creatures that fail are {@condition poisoned} until the end of Malken's next turn. "
+						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}13 ({@damage 2d6 + 6}) slashing damage, plus 5 ({@damage 1d8}) poison damage. Creatures that take damage from the poison must make a {@dc 15} Constitution saving throw. Creatures that fail are {@condition poisoned} until the end of Malken's next turn."
 					]
 				},
 				{
 					"name": "Aura of Pain",
 					"entries": [
-						"Every creature within 30 feet of Malken must make a {@dc 16} Wisdom saving throw. Creatures take 27 ({@damage 6d8}) psychic damage and may not take reactions on a failed saving throw. Creatures take half damage and may use reactions as normal on a successful saving throw. "
+						"Every creature within 30 feet of Malken must make a {@dc 16} Wisdom saving throw. Creatures take 27 ({@damage 6d8}) psychic damage and may not take reactions on a failed saving throw. Creatures take half damage and may use reactions as normal on a successful saving throw."
 					]
 				}
 			],
@@ -22821,7 +22898,7 @@
 			},
 			"legendaryActions": 3,
 			"legendaryHeader": [
-				"Malken can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Malken regains spent legendary actions at the start of his turn. "
+				"Malken can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Malken regains spent legendary actions at the start of his turn."
 			],
 			"legendary": [
 				{
@@ -22839,7 +22916,7 @@
 				{
 					"name": "Spit",
 					"entries": [
-						"Malken spits a glob of thick fluid into the face of an enemy within 10 feet. That enemy must make a {@dc 16} Dexterity saving throw. If they fail they are {@condition blinded} until they use an action to wipe the fluid out of their eyes. "
+						"Malken spits a glob of thick fluid into the face of an enemy within 10 feet. That enemy must make a {@dc 16} Dexterity saving throw. If they fail they are {@condition blinded} until they use an action to wipe the fluid out of their eyes."
 					]
 				}
 			],
@@ -23032,7 +23109,7 @@
 				{
 					"name": "Shapechanger",
 					"entries": [
-						"Jacqueline can use her action to polymorph into a rat-humanoid hybrid or into a giant rat, or back into her true form, which is humanoid. Her statistics, other than her size , are the same in each form. Any equipment she's wearing or carrying is transformed. "
+						"Jacqueline can use her action to polymorph into a rat-humanoid hybrid or into a giant rat, or back into her true form, which is humanoid. Her statistics, other than her size , are the same in each form. Any equipment she's wearing or carrying is transformed."
 					]
 				},
 				{
@@ -23044,7 +23121,7 @@
 				{
 					"name": "Regeneration",
 					"entries": [
-						"Jacqueline regenerates 10 hit points at the start of her turn. If Jacqueline takes damage from a silver melee weapon, this trait doesn't function at the start of her next turn. If Jacqueline is reduced to 0 hit points and this trait does not function, she is forced into her mist form. "
+						"Jacqueline regenerates 10 hit points at the start of her turn. If Jacqueline takes damage from a silver melee weapon, this trait doesn't function at the start of her next turn. If Jacqueline is reduced to 0 hit points and this trait does not function, she is forced into her mist form."
 					]
 				},
 				{
@@ -23074,7 +23151,7 @@
 				{
 					"name": "Sneak Attack",
 					"entries": [
-						"If Jacqueline has advantage on a melee or ranged attack roll against an enemy, or has an ally within 5 feet of an ene-my she is attacking, she inflicts an extra {@dice 5d6} points of damage. This damage is the same type as the weapon Jacqueline is wielding. "
+						"If Jacqueline has advantage on a melee or ranged attack roll against an enemy, or has an ally within 5 feet of an ene-my she is attacking, she inflicts an extra {@dice 5d6} points of damage. This damage is the same type as the weapon Jacqueline is wielding."
 					]
 				},
 				{
@@ -23144,7 +23221,7 @@
 				{
 					"name": "Dagger of Potent Venom (humanoid or Hybrid Form Only)",
 					"entries": [
-						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d4 + 6}) piercing damage, plus 22 ({@damage 4d10}) poison damage. A creature damaged by this dagger must make a {@dc 17} Constitution saving throw. If they fail they are {@condition poisoned} for 1 minute. "
+						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d4 + 6}) piercing damage, plus 22 ({@damage 4d10}) poison damage. A creature damaged by this dagger must make a {@dc 17} Constitution saving throw. If they fail they are {@condition poisoned} for 1 minute."
 					]
 				},
 				{
@@ -23156,7 +23233,7 @@
 				{
 					"name": "Shapechanger",
 					"entries": [
-						"Jacqueline can use her action to polymorph into a rat-humanoid hybrid or into a giant rat, or back into her true form, which is humanoid. Her statistics, other than her size , are the same in each form. Any equipment she's wearing or carrying is transformed. "
+						"Jacqueline can use her action to polymorph into a rat-humanoid hybrid or into a giant rat, or back into her true form, which is humanoid. Her statistics, other than her size , are the same in each form. Any equipment she's wearing or carrying is transformed."
 					]
 				}
 			],
@@ -23190,13 +23267,13 @@
 				{
 					"name": "Scuttle",
 					"entries": [
-						"Jacqueline digs into the ground and burrows to an empty space within 20 feet. "
+						"Jacqueline digs into the ground and burrows to an empty space within 20 feet."
 					]
 				},
 				{
 					"name": "Handful of Dirt",
 					"entries": [
-						"Jacqueline throws a handful of dirt into the eyes of one of her opponents. Jacqueline chooses an opponent within 10 feet and they must make a {@dc 16} Dexterity saving throw. Creatures that fail are {@condition blinded} until they use an action to clean their eyes. "
+						"Jacqueline throws a handful of dirt into the eyes of one of her opponents. Jacqueline chooses an opponent within 10 feet and they must make a {@dc 16} Dexterity saving throw. Creatures that fail are {@condition blinded} until they use an action to clean their eyes."
 					]
 				}
 			],
@@ -23459,13 +23536,13 @@
 				{
 					"name": "Multiattack (Humanoid or Hybrid Form Only)",
 					"entries": [
-						"Claude makes two attacks, only one of which can be a bite. "
+						"Claude makes two attacks, only one of which can be a bite."
 					]
 				},
 				{
 					"name": "Bite (Rat or Hybrid Form Only)",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage. If the target is a humanoid, it must succeed on a {@dc 12} Constitution saving throw or be cursed with wererat lycanthropy. "
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage. If the target is a humanoid, it must succeed on a {@dc 12} Constitution saving throw or be cursed with wererat lycanthropy."
 					]
 				},
 				{
@@ -23776,7 +23853,7 @@
 				{
 					"name": "Shadow Form",
 					"entries": [
-						"Twice per day, Inza can transform into a {@creature shadow demon|MM} (MM, pg. 64) for 1 hour or back to her true humanoid form using an action. In this form she keeps her original ability scores and Hit Points, she cannot cast spells but she can wield items and use her other abilities. "
+						"Twice per day, Inza can transform into a {@creature shadow demon|MM} (MM, pg. 64) for 1 hour or back to her true humanoid form using an action. In this form she keeps her original ability scores and Hit Points, she cannot cast spells but she can wield items and use her other abilities."
 					]
 				},
 				{
@@ -23900,7 +23977,7 @@
 				{
 					"name": "Shadow Form",
 					"entries": [
-						"Twice per day, Inza can transform into a {@creature shadow demon|MM} (MM, pg. 64) for 1 hour or back to her true humanoid form using an action. In this form she keeps her original ability scores and Hit Points, she cannot cast spells but she can wield items and use her other abilities. "
+						"Twice per day, Inza can transform into a {@creature shadow demon|MM} (MM, pg. 64) for 1 hour or back to her true humanoid form using an action. In this form she keeps her original ability scores and Hit Points, she cannot cast spells but she can wield items and use her other abilities."
 					]
 				},
 				{
@@ -24011,6 +24088,348 @@
 						"href": {
 							"type": "external",
 							"url": "https://i.imgur.com/baoSwUr.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Lord Soth",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"source": "Darklords&DomainsVol1",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"{@item +3 Adamantine Plate Armor|Darklords&DomainsVol1}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "35d8 + 175",
+				"average": 333
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 22,
+			"dex": 15,
+			"con": 20,
+			"int": 12,
+			"wis": 18,
+			"cha": 20,
+			"passive": 21,
+			"cr": "21",
+			"shortName": "Lord Soth",
+			"page": 150,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languages": [
+				"Abyssal",
+				"Common"
+			],
+			"languageTags": [
+				"AB",
+				"C"
+			],
+			"save": {
+				"dex": "+10",
+				"wis": "+11",
+				"cha": "+12"
+			},
+			"skill": {
+				"intimidation": "+10",
+				"perception": "+11"
+			},
+			"immune": [
+				"fire",
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Undead Nature",
+					"entries": [
+						"Lord Soth doesn't require air, food, drink, or sleep."
+					]
+				},
+				{
+					"name": "Adamantine Plate",
+					"entries": [
+						"Lord Soth treats critical melee hits as normal melee hits."
+					]
+				},
+				{
+					"name": "Well of Fear",
+					"entries": [
+						"Any creature that starts its turn or moves within 10 feet of Lord Soth must make a {@dc 20} Wisdom saving throw. Those that fail are {@condition frightened} of Lord Soth for 1 minute. Creatures may repeat the Wisdom saving throw at the end of their turn to end the condition. This ability ignores immunities."
+					]
+				},
+				{
+					"name": "Greater Magic Resistance",
+					"entries": [
+						"Lord Soth has advantage on saving throws against spells and other magical effects. If Lord Soth suc-ceeds by 10 or more, the spell is reflected back to the caster."
+					]
+				},
+				{
+					"name": "Marshal Undead",
+					"entries": [
+						"Unless Lord Soth is {@condition incapacitated}, he and un-dead creatures within 60 feet of him have advantage on saving throws against features that turn undead."
+					]
+				},
+				{
+					"name": "Control Undead",
+					"entries": [
+						"Lord Soth can exert complete control over any lesser undead of up to CR 3 and control other undead up to CR 8 as if he was casting {@spell command|PHB}."
+					]
+				},
+				{
+					"name": "Turn Immunity",
+					"entries": [
+						"Lord Soth is immune to effects that turn undead."
+					]
+				},
+				{
+					"name": "Shadow Walking",
+					"entries": [
+						"Lord Soth uses his move action to step into an area of shadow within 5 feet of him and re-appears in another area of shadow within 120 ft.  "
+					]
+				},
+				{
+					"name": "Soth's Rejuvenation",
+					"entries": [
+						"When Soth is killed, his body turns to mist and dissipates. After {@dice 2d6} days, he reforms on his castle's throne with all of his hit points"
+					]
+				}
+			],
+			"traitTags": [
+				"Turn Immunity"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Lord Soth's innate spellcasting ability is Cha-risma (spell save {@dc 20}, +12 to hit with spell attacks). He can in-nately cast the following spells, requiring no material components:"
+					],
+					"footerEntries": [
+						"* You can use only use one type of \"power word\" spell each day"
+					],
+					"will": [
+						"{@spell bestow curse|PHB}",
+						"{@spell detect magic|PHB}",
+						"{@spell wall of ice|PHB}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell power word kill|PHB}*",
+							"{@spell power word pain|XGE}*",
+							"{@spell power word stun|PHB}*",
+							"{@spell symbol|PHB}"
+						]
+					},
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Lord Soth is a 20th level spellcaster. His spellcasting ability is Charisma (spell save {@dc 20}, +12 to hit with spell attacks). He has the following paladin spells prepared: "
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell command|PHB}",
+								"{@spell compelled duel|PHB}",
+								"{@spell searing smite|PHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell branding smite|PHB}",
+								"{@spell hold person|PHB}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell blinding smite|PHB}",
+								"{@spell dispel magic|PHB}",
+								"{@spell elemental weapon|PHB}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell banishment|PHB}",
+								"{@spell staggering smite|PHB}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell circle of power|PHB}",
+								"{@spell destructive wave|PHB}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I",
+				"CP"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Lord Soth can make 4 attacks with his longsword +1, Traitor's Lament."
+					]
+				},
+				{
+					"name": "Traitor's Lament",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d8 + 6}) slashing damage, or 11 ({@damage 1d10 + 6}) slashing damage if used with both hands. Traitor's Lament also functions as a {@item sword of wounding|DMG}.",
+						"Hit points lost to this weapon's damage can be regained only through a short or long rest, rather than by regeneration, magic, or any other means.",
+						"Once per turn, when you hit a creature with an attack using this magic weapon, you can wound the target. At the start of each of the wounded creature's turns, it takes {@dice 1d4} necrotic damage for each time you've wounded it, and it can then make a {@dc 15} Constitution saving throw, ending the effect of all such wounds on itself on a success. Alternatively, the wounded creature, or a creature within 5 feet of it, can use an action to make a {@dc 15} Wisdom ({@skill Medicine}) check, ending the effect of such wounds on it on a success."
+					]
+				},
+				{
+					"name": "Rod of Elemental Fire",
+					"entries": [
+						"Lord Soth won this rod in a battle on the Plane of Fire. The Rod is three feet of blackened steel with one constantly burning end. While Lord Soth holds the rod, he is immune to fire damage. The rod has 7 charges. The rod regains {@dice 1d6 + 4} expended charges at dawn.",
+						"Spells.",
+						"Lord Soth may use an action to expend 1 or more charges to cast one of the following spells:",
+						{
+							"type": "list",
+							"items": [
+								"{@spell burning hands|PHB} (1 charge)",
+								"{@spell scorching ray|PHB} (2 charges)",
+								"{@spell fireball|PHB} (3 charges)",
+								"{@spell incendiary cloud|PHB} (6 charges)"
+							]
+						}
+					]
+				},
+				{
+					"name": "Summon Fire Elemental",
+					"entries": [
+						"Lord Soth may use an action to expend 1 or more charges from the rod. For every charge he expends, a {@creature fire elemental|MM} appears in the closest empty space. These fire elementals are friendly to Lord Soth and remain for 1 minute before fading into a pile of ash."
+					]
+				},
+				{
+					"name": "Hellfire Orb (1/Day).",
+					"entries": [
+						"{@atk rw} {@hit 9} to hit, range 0/120 ft., one target. {@h}42 ({@damage 12d6}) fire damage, plus 42 ({@damage 12d6}) necrotic damage on a failed save, or half as much on a successful one.",
+						"Lord Soth hurls a magical ball of fire that ex-plodes at a point he can see within 120 feet. Each creature wiDhin a 20 foot radius sphere centered on that point must make a {@dc 20} Dexterity saving throw. The sphere spreads around corners. A creature takes 42 ({@damage 12d6}) fire damage and 42 ({@damage 12d6}) necrotic damage on a failed save, or half as much on a successful one."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"Lord Soth adds 6 to his AC against one melee attack that would hit it. To do so, he must see the attacker and be wielding a melee weapon."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Darklords&DomainsVol1LairActionsLordSoth",
+				"source": "Darklords&DomainsVol1"
+			},
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"Lord Soth can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. Lord Soth regains spent leg-",
+				"endary actions at the start of his turn."
+			],
+			"legendary": [
+				{
+					"name": "Wall of Ice",
+					"entries": [
+						"Lord Soth casts wall of ice."
+					]
+				},
+				{
+					"name": "Shadow Walks",
+					"entries": [
+						"Lord Soth uses his shadow walking ability."
+					]
+				},
+				{
+					"name": "Traitor's Lament",
+					"entries": [
+						"Lord Soth makes one melee attack with Traitor's Lament."
+					]
+				}
+			],
+			"damageTags": [
+				"F",
+				"N",
+				"S"
+			],
+			"damageTagsSpell": [
+				"A",
+				"C",
+				"F",
+				"L",
+				"N",
+				"R",
+				"T",
+				"Y"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"dexterity",
+				"intelligence",
+				"wisdom"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "XXX"
+			},
+			"fluff": {
+				"entries": [
+					"TEST"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "XXX"
 						}
 					}
 				]
