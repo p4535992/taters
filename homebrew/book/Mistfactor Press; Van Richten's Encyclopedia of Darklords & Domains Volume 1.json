@@ -191,11 +191,27 @@
 					"type": "list",
 					"items": [
 						"{@b Wife of Soth:} The spirit of a beautiful woman appears next to Soth. After a second, her face transforms into a hideous mockery of beauty, and she wails. Every creature within 30 feet of Lord Soth must make a DC 15 Constitution saving throw. Creatures that fail are reduced to 0 hit points. Constructs and undead automatically pass the save.",
-						"{@b Voice of Despair:} A disembodied voice sings a song of loss and despair. Every crea-ture within 50 feet of Lord Soth must make a DC 18 Wisdom saving throw. Creatures take 28 ({@dice 8d6}) psychic damage on a failed save and half as much on a successful one.",
+						"{@b Voice of Despair:} A disembodied voice sings a song of loss and despair. Every creature within 50 feet of Lord Soth must make a DC 18 Wisdom saving throw. Creatures take 28 ({@dice 8d6}) psychic damage on a failed save and half as much on a successful one.",
 						"{@b Walls are moving:} Nedragaard Keep suddenly changes. Walls appear where none were before, doors and windows flow like water around the room. Creatures in the same room as Lord Soth must make a DC 16 Dexterity check. Creatures that fail are pulled into a different room from the rest of their companions and enemies. They must find their own way back to their companions. Lord Soth can choose to succeed or fail on this save."
 					]
 				},
 				"Lord Soth can't repeat an effect until they have all been used, and he can't use the same effect two rounds in a row."
+			]
+		},
+		{
+			"name": "Darklords&DomainsVol1LairActionsAzalinRex",
+			"source": "Darklords&DomainsVol1",
+			"lairActions": [
+				"When fighting inside his lair, Azalin can invoke the ambient magic to take lair actions. On initiative count 20 (losing initiative ties), Azalin can take one lair action to cause one of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Target:} Azalin targets one creature he can see within 30 feet of him. A crackling cord of negative energy tethers Azalin to the target. Whenever Azalin takes damage, the target must make a DC 21 Constitution saving throw. On a failed save, Azalin takes half damage (rounded up), and the target takes the remaining damage. This tether lasts until initiative count 20 on the next round or until Azalin or the target is no longer in Azalin's lair.",  
+						"{@b Call:} Azalin calls forth the spirits of creatures that died in his lair. These apparitions materialize and attack one creature that Azalin can see within 60 feet of it. The target must succeed on a DC 21 Constitution saving throw, taking 38 (10d6) necrotic damage on a failed save, or half as much damage on a success. The apparitions then disappear.",
+						"{@b Order:} Azalin orders the hidden dead to muster. During the next round, 1d6 undead creatures appropriate to the environment with an individual CR of 1 extricate themselves from the surroundings within 120 feet of Azalin. They obey Azalin's commands and act on initiative count 20. The undead remain for 1 hour, until Azalin dies, or until he dismisses them as a bonus action."
+					]
+				},
+				"Azalin can't repeat an effect until they have all been used, and he can't use the same effect two rounds in a row."
 			]
 		}
 	],
@@ -5470,7 +5486,8 @@
 				"people of Kartakass",
 				"people of Nova Vaasa",
 				"people of Richemulot",
-				"people of Sithicus"
+				"people of Sithicus",
+				"people of Verbrek"
 			],
 			"script": "Elvish"
 		},
@@ -5493,7 +5510,8 @@
 			"typicalSpeakers": [
 				"people of Shadow Rift/Arak",
 				"people of Nova Vaasa",
-				"people of Richemulot"
+				"people of Richemulot",
+				"people of Darkon"
 			],
 			"script": "Elvish"
 		},
@@ -5519,7 +5537,8 @@
 				"people of Invidia",
 				"people of Mordent",
 				"people of Nova Vaasa",
-				"people of Richemulot"
+				"people of Richemulot",
+				"people of Darkon"
 			],
 			"script": "Elvish"
 		},
@@ -5540,6 +5559,7 @@
 			"page": 1,
 			"type": "standard",
 			"typicalSpeakers": [
+				"people of Darkon"
 			],
 			"script": "Elvish"
 		},
@@ -5569,7 +5589,9 @@
 				"people of Mordent",
 				"people of Richemulot",
 				"people of Sithicus",
-				"people of Valachan"
+				"people of Valachan",
+				"people of Verbrek",
+				"people of Darkon"
 			],
 			"script": "Elvish"
 		},
@@ -5612,7 +5634,50 @@
 				"people of Barovia",
 				"people of Kartakass",
 				"people of Sithicus",
-				"people of Valachan"
+				"people of Valachan",
+				"people of Verbrek"
+			],
+			"script": "Elvish"
+		},
+		{
+			"name": "Testani",
+			"source": "Darklords&DomainsVol1",
+			"page": 1,
+			"type": "standard",
+			"typicalSpeakers": [
+				"people of Castle Island"
+			],
+			"script": "Elvish"
+		},
+		{
+			"name": "Tepestani",
+			"source": "Darklords&DomainsVol1",
+			"page": 1,
+			"type": "standard",
+			"typicalSpeakers": [
+				"people of Nova Vaasa",
+				"people of Shadow Rift/Arak",
+				"people of Darkon"
+			],
+			"script": "Elvish"
+		},
+		{
+			"name": "Thaani",
+			"source": "Darklords&DomainsVol1",
+			"page": 1,
+			"type": "standard",
+			"typicalSpeakers": [
+				"people of Barovia"
+			],
+			"script": "Elvish"
+		},
+		{
+			"name": "Thayan",
+			"source": "Darklords&DomainsVol1",
+			"page": 1,
+			"type": "standard",
+			"typicalSpeakers": [
+				"people of Hazlan"
 			],
 			"script": "Elvish"
 		},
@@ -5636,7 +5701,9 @@
 				"people of Nova Vaasa",
 				"people of Richemulot",
 				"people of Sithicus",
-				"people of Valachan"
+				"people of Valachan",
+				"people of Verbrek",
+				"people of Darkon"
 			],
 			"script": "Elvish",
 			"entries": [
@@ -5678,46 +5745,6 @@
 			"type": "standard",
 			"typicalSpeakers": [
 				"people of Vechor"
-			],
-			"script": "Elvish"
-		},
-		{
-			"name": "Tepestani",
-			"source": "Darklords&DomainsVol1",
-			"page": 1,
-			"type": "standard",
-			"typicalSpeakers": [
-				"people of Shadow Rift/Arak"
-			],
-			"script": "Elvish"
-		},
-		{
-			"name": "Thaani",
-			"source": "Darklords&DomainsVol1",
-			"page": 1,
-			"type": "standard",
-			"typicalSpeakers": [
-				"people of Barovia"
-			],
-			"script": "Elvish"
-		},
-		{
-			"name": "Thayan",
-			"source": "Darklords&DomainsVol1",
-			"page": 1,
-			"type": "standard",
-			"typicalSpeakers": [
-				"people of Hazlan"
-			],
-			"script": "Elvish"
-		},
-		{
-			"name": "Tepestani",
-			"source": "Darklords&DomainsVol1",
-			"page": 1,
-			"type": "standard",
-			"typicalSpeakers": [
-				"people of Nova Vaasa"
 			],
 			"script": "Elvish"
 		}
@@ -11468,7 +11495,7 @@
 									"name": "Fun Fact",
 									"page": 154,
 									"entries": [
-										"The House of Lament, or the spirit of Mara, releases the “guests” after the chosen one is left behind, but even if every member of a visitor's group is killed, the House seemingly never kills unintelligent animals. These are released unharmed, and scholars have theorized that this is Mara recognizing that animals, especially cats and dogs, have suffered similar fates to her."
+										"The House of Lament, or the spirit of Mara, releases the \"guests\" after the chosen one is left behind, but even if every member of a visitor's group is killed, the House seemingly never kills unintelligent animals. These are released unharmed, and scholars have theorized that this is Mara recognizing that animals, especially cats and dogs, have suffered similar fates to her."
 									]
 								},	
 								{
@@ -11868,7 +11895,7 @@
 								"Valachan is the story of the beast — turned man — turned monster. The story of Urik von Kharkov, and the story of the domain itself, are intertwined in this manner. Nothing in the domain is ever straightforward, even travel is difficult as the ground is broken apart, and the trees that cover the domain in trackless greenery are ancient, and blot out the sun and sky above.",
 								"Here, life is cheap, both for man and for the beast, and neither knows who is the hunter. But above them all rises one beast, one man, and one monster more powerful than all of them. Urik von Kharkov himself. Law enforcement in Valachan is handled by the Black Leopards, a group of soldiers, woodsmen, and essentially monstrous sadists who enforce the will of Urik von Kharkov, including collecting taxes and running the bridal lottery. Each and every one of them is unknown to the populace, werepanthers, or those aspiring to be. Even the name, Black Leopards, is a sly nod to this fact.",
 								"Unique to Valachan is their worship of Yutow the Peacebringer, also known as the Dead God. The belief of Yutow is one of unflinching stoicism and endurance of the trials of life. Even the history of Valachan itself is a nod to this fact, as Yutow supposedly died to pacify Valachan. Now his faithful do the same, believing that those who follow the rules will be rewarded, and those who don't will be eaten by animals or swallowed by the mists.",
-								"Adventures in Valachan should focus on this man vs. beast theme that's present in the domain. There should always be a feeling of “Am I in the right here?” for everything that happens, as adventurers question their own decision-making process, and are forced to reevaluate their own motives. Are they doing what they do for a higher purpose, or have they fallen to some baser desire? And of the danger of arousing the animals to a wave of instinctual anger that you cannot understand.",
+								"Adventures in Valachan should focus on this man vs. beast theme that's present in the domain. There should always be a feeling of \"Am I in the right here?\" for everything that happens, as adventurers question their own decision-making process, and are forced to reevaluate their own motives. Are they doing what they do for a higher purpose, or have they fallen to some baser desire? And of the danger of arousing the animals to a wave of instinctual anger that you cannot understand.",
 								{
 									"type": "image",
 									"href": {
@@ -12026,7 +12053,7 @@
 											"name": "Ungrad",
 											"page": 161,
 											"entries": [
-												"Ungrad is the smallest of the main towns of Valachan, holding only 1,500 souls. But it is the ugliest. It is a backwater of mud, rust, and fungus. The inhabitants are friendly but completely deluded about the benevolence of their ruler, which is all down to the work of Dr. Antianette Despini-Hoyer, the mayor and an extremely capable physician. She just happens to be a nosferatu claiming to look for a cure for the White Fever, her drinking from her subjects. Her clinic is a good place to seek out a cure for certain illnesses, but one must make sure not to fall to the depredations of the “good” doctor while being cured."
+												"Ungrad is the smallest of the main towns of Valachan, holding only 1,500 souls. But it is the ugliest. It is a backwater of mud, rust, and fungus. The inhabitants are friendly but completely deluded about the benevolence of their ruler, which is all down to the work of Dr. Antianette Despini-Hoyer, the mayor and an extremely capable physician. She just happens to be a nosferatu claiming to look for a cure for the White Fever, her drinking from her subjects. Her clinic is a good place to seek out a cure for certain illnesses, but one must make sure not to fall to the depredations of the \"good\" doctor while being cured."
 											]
 										}
 									]
@@ -12066,7 +12093,7 @@
 											"page": 162,
 											"entries": [
 												"Kharkov was born a panther in Toril. A Red Wizard of Thay, Morphayus, polymorphed Kharkov into a human to use him as an agent against a rival wizard, Selena. Morphayus wiped out Kharkov's memory and sent him to be educated and trained in combat. When Morphayus thought Kharkov was ready, he had an ally introduce him to Selena. Selena and Kharkov soon fell in love. When Selena was at her most vulnerable, Morphayus removed the polymorph spell and returned Kharkov to his panther form. In the confusion, Kharkov tore Selena to shreds with his claws before passing out. When Kharkov woke up, he had returned to his human form. Kharkov was convinced Morphayus was going to use him as a sleeper agent against all of his enemies. Kharkov would fight a war in the shadows, taking on increasingly more dangerous foes until Kharkov was slain.",
-												"Kharkov fled that night. He was enveloped by the mists and soon found himself wandering the domain of Darkon. Perhaps Kharkov had already started to draw power from Ravenloft, but he found he could transform from human to panther form at will. Kharkov found killing easy and his bestial side, what Kharkov would come to call the “Beast.” Kharkov didn't want to be used as someone else's private murderer, but had no problems killing for his own pleasure. After a few years he was recruited into the Kargat, Darkon's secret police. Kharkov served in the Kargat for 20 years, becoming a vampire in the process, before fleeing into the mists when his vampire master was slain. Kharkov wandered the mists for a time. Even Kharkov is unsure which domain he was in when he ran into Morphayus. Kharkov willingly became the Beast when he saw Morphayus, shredding him and the corpse. As Kharkov feasted, the mists closed in."
+												"Kharkov fled that night. He was enveloped by the mists and soon found himself wandering the domain of Darkon. Perhaps Kharkov had already started to draw power from Ravenloft, but he found he could transform from human to panther form at will. Kharkov found killing easy and his bestial side, what Kharkov would come to call the \"Beast.\" Kharkov didn't want to be used as someone else's private murderer, but had no problems killing for his own pleasure. After a few years he was recruited into the Kargat, Darkon's secret police. Kharkov served in the Kargat for 20 years, becoming a vampire in the process, before fleeing into the mists when his vampire master was slain. Kharkov wandered the mists for a time. Even Kharkov is unsure which domain he was in when he ran into Morphayus. Kharkov willingly became the Beast when he saw Morphayus, shredding him and the corpse. As Kharkov feasted, the mists closed in."
 											]
 										},
 										{
@@ -12139,13 +12166,13 @@
 								{
 									"type": "quote",
 									"entries": [
-										"That’s why humans hate Fantastica and everything comes from here. They want to destroy it. And they don’t realize that by trying to destroy it they multiply the lies that keep flooding the human world. For these lies are nothing other than creatures of Fantastica who have ceased to be themselves and survive only as living corpses, poisoning the souls of men with their fetid smell. But humans don’t know it. Isn’t that a good joke?"
+										"That's why humans hate Fantastica and everything comes from here. They want to destroy it. And they don't realize that by trying to destroy it they multiply the lies that keep flooding the human world. For these lies are nothing other than creatures of Fantastica who have ceased to be themselves and survive only as living corpses, poisoning the souls of men with their fetid smell. But humans don't know it. Isn't that a good joke?"
 									],
 									"by": "Michael Ende, The Never ending Story"
 								},
-								"Verbrek is an uncivilized place at the best of times, in spite of its cultural level. That is because its primary inhabitants are not humans or what most people consider humanoids. Instead, they are lycanthropes. They are the primary predators here, and atop that pile sit the werewolves. Here, they are in charge, and the humans living in the forests with them are prey to be eaten, turned, or sacrificed to the Wolf God. The worship of the Wolf God and the myths of the god permeate the stories of both humans and werewolves alike. In human society, the “beasts that walk” are told of in myths where they are able to talk, but they’re always outwitted by the humans. In werewolf society they tell the same stories, but with a subtle twist so that it’s the werewolf that comes out on top.",
+								"Verbrek is an uncivilized place at the best of times, in spite of its cultural level. That is because its primary inhabitants are not humans or what most people consider humanoids. Instead, they are lycanthropes. They are the primary predators here, and atop that pile sit the werewolves. Here, they are in charge, and the humans living in the forests with them are prey to be eaten, turned, or sacrificed to the Wolf God. The worship of the Wolf God and the myths of the god permeate the stories of both humans and werewolves alike. In human society, the \"beasts that walk\" are told of in myths where they are able to talk, but they're always outwitted by the humans. In werewolf society they tell the same stories, but with a subtle twist so that it's the werewolf that comes out on top.",
 								"The Cult of the Wolf God rules the life of the were-wolves and none stand above Alfred Timothy, the high priest of the Wolf God. He does not brook any challenge from those under him, and in years past, he would have destroyed them in his anger. Now, as he becomes human whenever he suffers strong emotions, he has to hold them back. This leads many of the packs underneath him to challenge him for being weak, and unaggressive, and for refusing to take a mate. This is also what has led to some splintering among the wolf clans, though they usually do not last long before Alfred moves to reassert his dominance. Any traveler moving through the domain had best beware the howls of the wolves in the night, as many are werewolves under his control. And like him, they HATE non-werewolves.",
-								"These elements should be visible when the heroes are exploring and adventuring in the domain. At any given point, ANYONE they run into can turn out to be a were-wolf, a beast in disguise. And even when they’re not, some of them act as bad as the animals themselves. There should never be any respite from paranoia.",
+								"These elements should be visible when the heroes are exploring and adventuring in the domain. At any given point, ANYONE they run into can turn out to be a were-wolf, a beast in disguise. And even when they're not, some of them act as bad as the animals themselves. There should never be any respite from paranoia.",
 								{
 									"type": "image",
 									"href": {
@@ -12231,7 +12258,7 @@
 									"name": "Local Fauna",
 									"page": 166,
 									"entries": [
-										"The vast woodlands of Verbrek are home to all kinds of animals, such as boar, deer, elk, otters, weasels, hares, and red squirrels. In short, prey is plentiful for the predators that call Verbrek their home. The woods house bears, foxes, badgers, wild cats, and most notably the gray wolves that Verbrek is notorious for. The wolves deserve their own special mention, as they are enormous in Verbrek, stronger than elsewhere, and as cunning as most humanoids. They’re such a threat and so vicious that even goblins who’d normally engage with these creatures avoid them. In this manner, while being a threat themselves, the wolves scare away the goblins that infect the woods of the rest of the Core. The people living in Verbrek loathe and fear the wolves, as they attribute so many qualities to them, and view them as the very living representation of evil. (This is also why wolves feature in so many of the Verbrek tales). They’re accused of stealing babies, slaughtering families, and killing the old and infirm in the dead of night."
+										"The vast woodlands of Verbrek are home to all kinds of animals, such as boar, deer, elk, otters, weasels, hares, and red squirrels. In short, prey is plentiful for the predators that call Verbrek their home. The woods house bears, foxes, badgers, wild cats, and most notably the gray wolves that Verbrek is notorious for. The wolves deserve their own special mention, as they are enormous in Verbrek, stronger than elsewhere, and as cunning as most humanoids. They're such a threat and so vicious that even goblins who'd normally engage with these creatures avoid them. In this manner, while being a threat themselves, the wolves scare away the goblins that infect the woods of the rest of the Core. The people living in Verbrek loathe and fear the wolves, as they attribute so many qualities to them, and view them as the very living representation of evil. (This is also why wolves feature in so many of the Verbrek tales). They're accused of stealing babies, slaughtering families, and killing the old and infirm in the dead of night."
 									]
 								},
 								{
@@ -12239,8 +12266,8 @@
 									"name": "Local Flora",
 									"page": 167,
 									"entries": [
-										"Like most of the Core, the trees in Verbrek are of the deciduous type. They’re essentially untouched by humanoid hands, with the virgin trees in the center of the domain left untouched since the dawn of time. Only the animals and werewolves that call the domain home can make it safely there. Along the rivers, the land has been cleared and there are small patches of wheat, rye, and the like.",
-										"In the forests’ deeper parts, an unwary traveler might come across carnivorous plants as they grow large, and strong here — just like the local fauna. Many herbs and useful lichen and mosses can be found here too, making Verbrek a haven for herbalists and practitioners of medicine. This has also led to most Verbrekers having a rudimentary knowledge of herbalism and of useful plants for things like easing headaches and cleaning wounds.",
+										"Like most of the Core, the trees in Verbrek are of the deciduous type. They're essentially untouched by humanoid hands, with the virgin trees in the center of the domain left untouched since the dawn of time. Only the animals and werewolves that call the domain home can make it safely there. Along the rivers, the land has been cleared and there are small patches of wheat, rye, and the like.",
+										"In the forests' deeper parts, an unwary traveler might come across carnivorous plants as they grow large, and strong here — just like the local fauna. Many herbs and useful lichen and mosses can be found here too, making Verbrek a haven for herbalists and practitioners of medicine. This has also led to most Verbrekers having a rudimentary knowledge of herbalism and of useful plants for things like easing headaches and cleaning wounds.",
 										"Moonflower plants grow only in Verbrek, and ONLY in the circles dedicated to the Wolf God. His disciples view them as holy and prevent outsiders from attempting to harvest them. Each plant produces blossoms from spring to fall, with 1d4 blossoms appearing at the height of the lunar cycle each month. This supposedly helps afflicted lycanthropes alleviate the effects of the cycle, enabling them to prevent themselves from transforming during the full moon. This also affects others who have been afflicted with similar polymorph effects, giving advantage on saving throws to avoid changing, for 24 hours after being imbibed."
 									]
 								},
@@ -12259,7 +12286,7 @@
 									"name": "Terrain Type",
 									"page": 167,
 									"entries": [
-										"Verbrek is one large uninterrupted forest. To the uninitiated or casual visitor that’s all there is to it, but within the forests, one can find hilly parts and deeper dells. The various parts of the forests tend to be of the same tree types, enabling experienced woodsmen to find their way across the domain with relative assurance. But to everyone else, the rivers that crisscross the do-main are a far safer method to use, even if one runs the risk of running into Captain Nathan Timothy. (See Arkandale for more details on Nathan Timothy, the father of Alfred Timothy)."
+										"Verbrek is one large uninterrupted forest. To the uninitiated or casual visitor that's all there is to it, but within the forests, one can find hilly parts and deeper dells. The various parts of the forests tend to be of the same tree types, enabling experienced woodsmen to find their way across the domain with relative assurance. But to everyone else, the rivers that crisscross the do-main are a far safer method to use, even if one runs the risk of running into Captain Nathan Timothy. (See Arkandale for more details on Nathan Timothy, the father of Alfred Timothy)."
 									]
 								},
 								{
@@ -12283,7 +12310,7 @@
 											"name": "The Circle",
 											"page": 168,
 											"entries": [
-												"This stone henge is the center of the worship of the Wolf God. Every night, rituals are performed here by the werewolves to the Wolf God, and while they’re not as common as Alfred Timothy would like, sacrifices of intelligent creatures happen at least once a month. The henge itself looks to be thousands of years old, and gatherings of up to 200 are not unusual, with some even claiming that the Wolf God himself appears on some holy days. Whether this is true or not is unknown, but it is claimed by many werewolves. However, part of the rituals partaken in by the faithful includes burning types of incense that may induce hallucinations. The Circle is the domain of Alfred Timothy. Here he is the (mostly) unquestioned master, and from here he leads the worship of the Wolf God, directing their hunt across Verbrek, and trying to destroy all of humanity whom he despises."
+												"This stone henge is the center of the worship of the Wolf God. Every night, rituals are performed here by the werewolves to the Wolf God, and while they're not as common as Alfred Timothy would like, sacrifices of intelligent creatures happen at least once a month. The henge itself looks to be thousands of years old, and gatherings of up to 200 are not unusual, with some even claiming that the Wolf God himself appears on some holy days. Whether this is true or not is unknown, but it is claimed by many werewolves. However, part of the rituals partaken in by the faithful includes burning types of incense that may induce hallucinations. The Circle is the domain of Alfred Timothy. Here he is the (mostly) unquestioned master, and from here he leads the worship of the Wolf God, directing their hunt across Verbrek, and trying to destroy all of humanity whom he despises."
 											]
 										},
 										{
@@ -12321,7 +12348,7 @@
 											"name": "Fylfot",
 											"page": 168,
 											"entries": [
-												"Fylfot is a typical village for Verbrek. Small, at some 70 people, its people survive by farming vegetables and gathering nuts and berries in the nearby forest, with the village’s hunters sometimes bringing back boun-tiful meat. Like other villages, Fylfot has a palisade, but the one in Fylfot is far bigger and more imposing than those found elsewhere. Furthermore, it has been strengthened by the presence of gated areas, traps, and primitive siege defenses. Whether this is all need-ed or a result of the paranoia of Tremeur Hallowmore (the village’s watch commander) is unknown, but the hamlet has a distinct “under siege” feel, and is ready to repel the persistent wolf and werewolf attacks that it suffers from."
+												"Fylfot is a typical village for Verbrek. Small, at some 70 people, its people survive by farming vegetables and gathering nuts and berries in the nearby forest, with the village's hunters sometimes bringing back boun-tiful meat. Like other villages, Fylfot has a palisade, but the one in Fylfot is far bigger and more imposing than those found elsewhere. Furthermore, it has been strengthened by the presence of gated areas, traps, and primitive siege defenses. Whether this is all need-ed or a result of the paranoia of Tremeur Hallowmore (the village's watch commander) is unknown, but the hamlet has a distinct \"under siege\" feel, and is ready to repel the persistent wolf and werewolf attacks that it suffers from."
 											]
 										}
 									]
@@ -12342,7 +12369,7 @@
 										{
 											"type": "quote",
 											"entries": [
-												"You have one hour. Make it to the border and you can go with the Wolf God’s blessing. Now run little deer. Run!"
+												"You have one hour. Make it to the border and you can go with the Wolf God's blessing. Now run little deer. Run!"
 											],
 											"by": "Alfred Timothy"
 										},
@@ -12352,7 +12379,7 @@
 											"name": "Background",
 											"page": 169,
 											"entries": [
-												"Alfred is one of six children born to Nathan Timothy, the darklord of Arkandale. Alfred rejected his father’s desire to live peacefully with his human subjects. Alfred thinks people are little better than cattle, and he would be hard pressed to choose the more intelligent species. At a young age, Alfred embraced the Cult of the Wolf God. The Cult sacrifices victims to their savage god on the night of the full moon and takes joy in hunting sentient creatures. Disgusted with his father, Alfred left Arkandale at a young age. He wandered Ravenloft for years until he was captured by a group of shepherds while slaughtering their sheep. Alfred was rescued by a Vistani tribe. The Vistani offered to set Alfred free if he swore he would never attack one of them again. Alfred agreed. Once he was free, he immediately tried to kill the Vistani’s leader. The Vistani drove him off and forced Alfred to flee into the mists. When the mists cleared he was in Verbrek. Verbrek was south of Arkandale and absorbed that realm during the Grand Conjunction."
+												"Alfred is one of six children born to Nathan Timothy, the darklord of Arkandale. Alfred rejected his father's desire to live peacefully with his human subjects. Alfred thinks people are little better than cattle, and he would be hard pressed to choose the more intelligent species. At a young age, Alfred embraced the Cult of the Wolf God. The Cult sacrifices victims to their savage god on the night of the full moon and takes joy in hunting sentient creatures. Disgusted with his father, Alfred left Arkandale at a young age. He wandered Ravenloft for years until he was captured by a group of shepherds while slaughtering their sheep. Alfred was rescued by a Vistani tribe. The Vistani offered to set Alfred free if he swore he would never attack one of them again. Alfred agreed. Once he was free, he immediately tried to kill the Vistani's leader. The Vistani drove him off and forced Alfred to flee into the mists. When the mists cleared he was in Verbrek. Verbrek was south of Arkandale and absorbed that realm during the Grand Conjunction."
 											]
 										},
 										{
@@ -12360,7 +12387,7 @@
 											"name": "Current Sketch",
 											"page": 169,
 											"entries": [
-												"Alfred fears the Vistani and allows them free passage through Verbrek. Anyone else is fair game. One of Alfred’s favorite pastimes is to capture a traveller and take their possessions. The traveller is given one hour to run before Alfred and his pack track them down. If the traveller makes it to the border they are safe (as safe as they can be in Ravenloft with no means to defend themselves). Sometimes the pack is too anxious to give the traveller the full hour. Alfred enjoys these hunts but has to be careful. If Alfred ful-ly gives into his natural instincts, he changes back to his human form. He considers this a test from the Wolf God and kills anyone who finds out."
+												"Alfred fears the Vistani and allows them free passage through Verbrek. Anyone else is fair game. One of Alfred's favorite pastimes is to capture a traveller and take their possessions. The traveller is given one hour to run before Alfred and his pack track them down. If the traveller makes it to the border they are safe (as safe as they can be in Ravenloft with no means to defend themselves). Sometimes the pack is too anxious to give the traveller the full hour. Alfred enjoys these hunts but has to be careful. If Alfred ful-ly gives into his natural instincts, he changes back to his human form. He considers this a test from the Wolf God and kills anyone who finds out."
 											]
 										},
 										{
@@ -12368,7 +12395,7 @@
 											"name": "Darklord's Tactics",
 											"page": 169,
 											"entries": [
-												"Because of his curse, Alfred is cautious in battle. He will send in his pack mates and let them wear his opponents down. Alfred casts spells to hinder his foes and aid his allies until his opponents can’t fight anymore. Once his opponents are bloody and beaten Alfred moves in for the kill."
+												"Because of his curse, Alfred is cautious in battle. He will send in his pack mates and let them wear his opponents down. Alfred casts spells to hinder his foes and aid his allies until his opponents can't fight anymore. Once his opponents are bloody and beaten Alfred moves in for the kill."
 											]
 										},
 										{
@@ -12376,7 +12403,7 @@
 											"name": "Borders",
 											"page": 169,
 											"entries": [
-												"Timothy summons dozens of packs of were-wolves and dire wolves to patrol the border. He cannot seal the borders of Verbrek completely. "
+												"Timothy summons dozens of packs of were-wolves and dire wolves to patrol the border. He cannot seal the borders of Verbrek completely."
 											]
 										},									
 										{
@@ -12408,23 +12435,31 @@
 				{
 					"type": "section",
 					"name": "Chapter 3: Domains of the Northern Core",
-					"page": 22,
+					"page": 171,
 					"entries": [
 						{
 							"type": "quote",
-							"entries": [],
-							"by": ""
+							"entries": [
+								"Magic is never totally scientifically explainable, but science has always been, at one time or another, considered magic."
+							],
+							"by": "Anton LaVey"
 						},
 						{
 							"type": "entries",
 							"name": "Overview",
-							"page": 22,
-							"entries": []
+							"page": 171,
+							"entries": [
+								"Knowledge is power. Power corrupts. Absolute power corrupts absolutely. It is not always the knowledge itself that perverts. Sometimes the pursuit becomes an obsession. When the ends justify any means, dark paths are discovered; and those paths lead into The Mists.",
+								"Within the Northern Core lie lands more advanced in many, dreadful ways, than their southern neighbors. Each gain in technology, be it scientific, arcane, or military is borne from the unhealthy fixations of their Dark Lords, and allowed to metastasize, like a tumor, throughout their citizenry.",
+								"When one of these dark inspirations takes root, a scab is placed in the mind. That scab screams to be picked and scratched at until it begins to bleed. Once the putrid liquid begins to flow, rivulets of infection soak into every vital tis-sue. At the point of pestilent saturation, not even one's own sanity or mortality can staunch the hot, sickly flow. These lands are stained by the creations of their lords.",
+								"Scientific instruments like The Apparatus, Doomsday De-vice, and Rift Spanner; Arcane Anomalies such as The Key to the Abyss, The Soulstone, and the Bell of Doom; and tactical military mistakes known as The Dead Man's Cam-paign, The Starving March, and the Tepestani Inquisition all owe their existence to the ‘advancements' of infected minds. Each has a dreadful impact beyond its intended consequence – but for the obsessed each loss, greater than the last, remains the price of progress.",
+								"The Domains of the Northern Core ({@b Darkon, Keening, Lamordia, Falkovnia, Tepest, Dementlieu, Castle Island, and Necropolis}) each strive for knowledge. They care not whether it be magical, technological, or religious. All seek to expand their influence, yet all remain acutely unaware of the price they pay for their relentless obsessions."
+							]
 						},
 						{
 							"type": "entries",
 							"name": "Mistways",
-							"page": 22,
+							"page": 171,
 							"entries": [
 								{
 									"type": "table",
@@ -12439,24 +12474,16 @@
 									],
 									"rows": [
 										[
-											"{@b The Outlander's Gate}",
-											"Allows travel from The Prime Material Plane into Barovia. This is a one way trip."
+											"{@b he Heretic's Egress}",
+											"Connects southwestern G'henna with north-central Darkon."
 										],
 										[
-											"{@b The Path of Innocence}",
-											"Unreliably connects Valachan with Odiare (an Island of Terror)."
+											"{@b The Shrouded Way}",
+											"Connects southern Paridon with north-western Darkon."
 										],
 										[
-											"{@b The Serpent's Coils}",
-											"Connects eastern Nova Vaasa to Paridon."
-										],
-										[
-											"{@b The Shattered Passage}",
-											"Connects southern Kartakass to Bluetspur."
-										],
-										[
-											"{@b The Oak of Screams}",
-											"Connects Invidia to unknown destinations. It is said one can choose where they wish to go, but must provide the heart of an innocent under a full-moon."
+											"{@b Via Corona}",
+											"Connects eastern Nidala with north-eastern Darkon."
 										]
 									]
 								}
@@ -12465,15 +12492,704 @@
 						{
 							"type": "entries",
 							"name": "Chronology",
-							"page": 22,
+							"page": 171,
 							"entries": [
 								{
 									"type": "list",
 									"style": "list-no-bullets",
 									"items": [
-										"351BC - {@i Strahd} seals his pact with his brother's blood. {@b Barovia} is taken by the Mists.", 
-										
-										"752BC - {@i Inza Kulchevich} betrays {@i Azrael} and becomes the new Dark Lord of {@b Sithicus}."
+										"579 BC - {@i Azalin} slaughters those who refuse to acknowledge his rule. {@b Darkon} forms.",
+										"588 BC - {@i Tristessa} curses the land as she and her child die. {@b Keening} forms.",
+										"683 BC - {@i Adam} brutalizes Elise, and kills Eva Mordenheim. {@b Lamordia} forms.",
+										"690 BC - {@i Vlad Drakov} pikes those slain by his army. {@b Falkovnia} forms.",
+										"691 BC - {@i The Mindefisk Sisters} become Hags. {@b Tepest} forms.",
+										"707 BC - {@i Dominic d'Honaire} manipulates his nanny to suicide. @b Dementlieu} forms.",
+										"740 BC - {@i THE GRAND CONJUNCTION} {@b Darkon} absorbs {@b Arak}.",
+										"744 BC - {@i The Lady of the Lake} sacrifices her offspring to avenge her husband. {@b Castle Island} forms in Lake Kronov, {@b Tep est}.",
+										"750 BC - {@i Azalin} unleashes {@b The Requiem}, and loses his corporeal form.",
+										"755 BC - {@i Death} is punished for causing the Shrouded Years. {@b Necropolis} forms."
+									]
+								}
+							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://i.imgur.com/N6vhYOl.jpg"
+							}
+						},
+						{
+							"type": "entries",
+							"name": "Castle Island",
+							"page": 173,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/3gPEvvj.jpg"
+									}
+								},
+								{
+									"type": "quote",
+									"entries": [
+										"So wondrous wild, the whole might seem the scenery of a fairy dream."
+									],
+									"by": "Sir Walter Scott, The Lady of the Lake"
+								},
+								"Castle Island is inspired by two myths from England and Wales. The tales of King Arthur (specifically the Lady of the Lake) and a Welsh mythological creature known as the Avanc. The story of Castle Island combines both, but adds a twist to them as well, meshing them into a new whole. At the same time, it manages to add a tragic and horrific twist to the story of both. The story told here is one of lost love and vengeance gone wrong. The Lady loved the man who became the avanc, but when he died in an accident (after having been cursed to be a monster by a hag), the Lady took vengeance — not on the hag who originally cursed the man, but on the people who had slain what they thought to be a monster. And the way she did it was truly horrible, slowly tearing a family apart, killing the lord of the castle's wife, and watching him die as he realized he had been seduced and betrayed. As he slipped into oblivion, she was taken by the Mists, and the lord was released from what she had intended to be eternal pain.",
+								"Adventures centered around Castle Island will be short, simply by virtue of its size, and they should re-volve around the idea of lost love or vengeance. Per-haps someone that the heroes care for heard the siren song of the Lady and disappeared (likely eaten by the avanc), or perhaps one of them descends from the original lord, and they now want to restore the keep, not knowing that it is \"haunted\" by the Lady of the Lake. In order to move here, they will have to deal with the Lady and the avanc both, though likely not at the same time.",
+								{
+									"type": "table",
+									"caption": "Castle Island",
+									"colLabels": [
+										"Detail",
+										"Description"
+									],
+									"colStyles": [
+										"col-3 text-center",
+										"col-9"
+									],
+									"rows": [
+										[
+											"Culture Level",
+											"Savage (currently), Dark Age (ruins)"
+										],
+										[
+											"Climate & Terrain",
+											"Temperate, hill and lake"
+										],
+										[
+											"Year Formed",
+											"744 BC"
+										],
+										[
+											"Population",
+											"1"
+										],
+										[
+											"Races (%)",
+											"Siren 100%"
+										],
+										[
+											"Languages",
+											"{@language Common|PHB}, {@language Primordial|PHB|Aquan}, {@language Sylvan|PHB}, {@language Testani|Darklords&DomainsVol1}"
+										],
+										[
+											"Religions",
+											"None"
+										],
+										[
+											"Government",
+											"None"
+										],
+										[
+											"Ruler(s)",
+											"None"
+										],
+										[
+											"Darklord(s)",
+											"Lady of the Lake"
+										],
+										[
+											"Nationality",
+											"Tepestani"
+										],
+										[
+											"Analog",
+											"Wales"
+										],
+										[
+											"Neighboring domain(s)",
+											"Tepest"
+										]
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/PvC1r73.jpg"
+									}
+								},
+								{
+									"type": "entries",
+									"name": "Local Fauna",
+									"page": 173,
+									"entries": [
+										"Castle Island is too small to have much in the way of wildlife. The only things that go there are birds, as they are the only creatures that can safely cross the waters of Lake Kronov without being eaten by the Avanc. As a result, Castle Island feels strangely devoid of life, as not even rodents scurry through the undergrowth, though the occasional frog might sit and croak in the reeds surrounding it."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Local Flora",
+									"page": 173,
+									"entries": [
+										"Castle Island is partly overgrown with weeds and moss, of types that do not match those in the rest of Tepest. However, for a ruin and island that has been abandoned for centuries, it is still quite tidy without any of the excessive overgrowth that could be expected. Weeds and grass, along with some creeping vines are the mainstays here, but the waters surrounding the island are filled with the expected reeds, algae, and pond scum.."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Native Horrors",
+									"page": 173,
+									"entries": [
+										"Castle Island, and Lake Kronov itself, is home to only two monsters: The Lady of the Lake herself, and the avanc. The locals believe that the avanc was once an evil man, one that had been cursed by a wicked fey being, paying for his crimes with transformation into his current monstrous form. Most believe that it was the Lady of the Lake herself who did so when he broke an agreement between the two. Whatever the case, the avanc is the cause of many a lost catch of fish,and sightings of it are frequent. The locals do not begrudge the creature its food: The simple reason is that it's better for it to eat their fish than for it to eat them instead. In the past decade, they've learned that the larger the meal the avanc has, the longer it'll remain dormant at the bottom of the lake, giving them some measure of safety."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Terrain Type",
+									"page": 174,
+									"entries": [
+										"Castle Island consists of a small hill in the middle of a lake. There are only two trees on the island that have grown through the floor of part of the ruined castle, but grass, moss, and weeds are everywhere. The water that surrounds the island, from the shore and about a quarter-mile out, is colder than the rest of Lake Kronov, and has less life than the rest of the lake. There are simply fewer fish, fewer frogs, and fewer of everything than in the rest of the lake."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Important Landmarks",
+									"page": 174,
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Demnach Keep",
+											"page": 174,
+											"entries": [
+												"Demnach Keep keep dominates Castle Island. There is barely room for anything else beyond the tiny keep itself. The keep isn't even much more than a single tower, a grand hall, and a defensive wall around it. Occupying all of the island, it sits in a highly defensible position, should it ever be restored. However, it has been neglected for centuries and has fallen into ruin, with the grand hall partially collapsed, though the tower remains strong. From within its stone walls is where the Lady's song can be heard. Anyone lucky enough to come here when the Lady is out in the waters will find that the furniture has rotted away into nothing, with only the barest hint of a throne remaining at the place of honor at the grand hall.",
+												"The wooden floors are strong, but rotted through in places, making moving across them precarious for heavier creatures. Any signs of the previous inhabitants are long gone, save for two very different skeletons. The first skeleton lies near the outer wall of the keep and is of monstrous proportions.",
+												"Standing tall, the creature would have been around twelve feet, but the hunch on its back would have reduced it to about eight. It vaguely resembles a human being, but its proportions are all wrong. From the way it has fallen and the stones around it, it's clear that the creature was strong enough to break through the outer wall, but what killed it isn't clear. The other skeleton lies near the throne and is a normal human being, curled up as if it died in agony."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Towns and villages",
+									"page": 174,
+									"entries": [ 
+										"None"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Fun Fact",
+									"page": 174,
+									"entries": [
+										"The avanc never attacks the Lady of the Lake and was once her lover. The real avanc was killed before Castle Island sprung into life, and the current avanc is a terrible monster, though as intelligent as a human. Its personality and spirit bear no semblance to the original avanc, a cursed man that the Lady once loved."
+									]
+								},	
+								{
+									"type": "entries",
+									"name": "Lady of the Lake",
+									"page": 175,
+									"entries": [
+										{
+											"type": "quote",
+											"entries": [
+												"Can you hear her now? That voice. That lovely voice. The wind carries it for miles around here.",
+												"It's the Lady of the Lake and that is her song. Her song is beauty given form. It is the very definition of sublime.Now get the hell out of here and never return.\""
+											],
+											"by": "Gregor, resident of Viktal (missing)"
+										},
+										"The Lady of the Lake is cloaked in a powerful illusion, appearing as the ideal of beauty to any creature looking at her. To each creature she appears in a different semblance. To anyone that can see through illusion, the Lady looks like a bloated corpse, with near transparent skin, and dark blue veins snaking under her flesh.. Her lips are blue and her green hair sways as if moving in an invisible current. Her fingers end in  long sharp claws and a short sword is belted at her hip.",
+										{
+											"type": "entries",
+											"name": "Background",
+											"page": 175,
+											"entries": [
+												"The Lady formed  years ago, although whether she was called into being or if she was spontaneously formed, even she doesn't know. One day she was just there, in the shallows of the lake.  A hermit that lived on the north side of the lake gained the Lady's attention, and they fell in love. Soon the Lady and the hermit were expecting their first child, a girl.",
+												"As the Lady drew close to her time to give birth, an evil fey cornered the hermit. The fey, a hag of prodigious power and vicious temper, demanded the hermit help her with her plans to gain magic and power. The hermit refused.",
+												"In a rage, the fey turned the hermit into an avanc, but left his soul and mind untouched. The hermit was trapped in the body of a monster, and soon the local townspeople were terrified of the beast.",
+												"The tales of a monster in the lake drew the attention of Ione Demnach, a paladin and member of the famed Demnach clan, monster hunters one and all. The Demnach clan had a keep on the island in the middle of the lake. They had been prosperous once, but had started to dwindle. Ione trapped the avanc in shallow water and slew the hermit.",
+												"The Lady was beside herself with rage. She left her lake and searched for creatures that could give her revenge. She found a coven of hags in the domain of Tepest and sung her bitter song. The hags offered the Lady a deal. Her daughter would grow up and die in a fraction of the time a mortal normally received, but she would be a sorceress of incredible power. The Lady agreed without hesitation.",
+												"The Lady's daughter, Katherine, was born a few days later and grew to beautiful adulthood in  afew years. The Lady sent Katherine to seduce Ione, who rapidly fell victim to Katherine's beguiling spells. Ione's wife discovered the tryst and fled to the lakeshore. There the broken hearted woman wept. She was answered by a beautiful song. The wife found a sirine, the Lady, singing to her about the beauty of the Fae Realm and the treachery of men. The sirine offered to take Ione's wife away from all the pain and suffering. Ione's wife accepted and took the Lady's offered hand. The woman's body was found the next day.",
+												"Katherine soon gave birth to Ione's son, a caliban with fish features, thick scales, and arms strong enough to uproot trees. For one year, the Lady fed Ione's son, whom she called Madchen, nothing but hate.",
+												"After the year had passed the Lady sent Katherine and her son back to Demnach island to end the clan. Katherine fell to the arrows of the guards, but Madchen tore the gate from its hinges and slaughtered everyone inside the keep.",
+												"While dueling Ione, the last of the keep's defenders, Madchen was slain and Ione was mortally wounded. The Lady took her chance, she approached Ione with a vial of magical poison. The poison would never let Ione die, but would also never let him heal. Ione would be in pain for all eternity.",
+												"As Ione drank the potion, the Lady sang of her victory. She closed her eyes to savor the moment, and when she opened them, everything had changed. Demnach Keep was in ruins and Ione was a brittle skeleton. Something had robbed her of her revenge and trapped her on her island."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Current Sketch",
+											"page": 175,
+											"entries": [
+												"The Lady of the Lake is stuck on her island. If she moves more than a quarter mile beyond its shores, she's immediately teleported back. The Lady is bored and has a blinding hatred of men. She uses her song to lure men to her island, and as they reach land, she uses her powerful charm ability to force the men to serve her. The men are tortured and starved until they are too weak to survive. The Lady has her other servants dump the bodies in the water and sings to attract more men."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Darklord's Tactics",
+											"page": 176,
+											"entries": [
+												"The Lady will try to charm as many people as possible before combat begins. The sirine possesses a powerful charm ability and anyone charmed by her will immediately leap to her defense when she is attacked. If the Lady is forced into combat, she will use her greater invisibility ability and her short sword of quickness. The sirine is lightning fast and will target spellcasters and rogues before moving on to tougher targets."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Borders",
+											"page": 176,
+											"entries": [
+												"The Lady of the Lake cannot close the borders to her domain"
+											]
+										},									
+										{
+											"name": "Lady of the Lake",
+											"type": "entries",
+											"page": 176,
+											"entries": [
+												{
+													"type": "statblock",
+													"tag": "creature",
+													"source": "Darklords&DomainsVol1",
+													"name": "Lady of the Lake"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Darkon",
+							"page": 177,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/cRj8mL5.jpg"
+									}
+								},
+								{
+									"type": "quote",
+									"entries": [
+										"Intelligence without ambition is a bird without wings."
+									],
+									"by": "Walter H. Cottingham"
+								},
+								"Darkon is by far the largest domain within the mists, taking up the northern third of the Core, with a population that is far bigger than any other domain. Ruled by a lich obsessed with the search for power, and his attempts to escape the grasp of the mist, Darkon has in some ways suffered more than any other domain. His attempts to escape have nearly destroyed Ravenloft itself more than once, and resulted in the loss of the capital Il Aluk, to a former underling. Now ruled by Death, and named Necropolis, Azalin has yet to establish his capital elsewhere, continuing instead to rule from his seat of power at Castle Avernus, where he continues to rule, disguised as a mortal man. The ruler of Darkon is the wizard king Azalin Rex — a careful illusion crafted by the real Azalin, who is a lich. While he appears as alive in his guise as the king, many suspect that he is not, and his agents most often know the truth. Darkon itself is an extension of both his powers, but also of his limitations. Those who visit Darkon for more than three months find themselves losing their memories and becoming other people (they can regain their memories by leaving once more, but with their new personalities, they most often do not want to). While this allows Azalin to more easily manipulate the populace, it also reminds him of his own limitations and how he's not able to acquire new spells, even if he has become a master at manipulating the ones he already knew. No discussion of Darkon is complete without mention of the Kargat. These are the spies, assassins, and secret police of Azalin, both in his formal rule of a king and in his informal rule as a powerful undead. Many of the Kargat are undead themselves, led by Lady Kazandra, Beryl Silvertress, and Venrith Chole — the first two of these are vampires, while the last is a werewolf. The Kargat also employs plenty of living agents, but only the undead or truly monstrous make it to the top of the Kargat. All must be able to pass off as living in one form or another. Adventurers in Darkon should rarely tangle with Azalin as he is far too powerful for most to handle, especially with his ability to modify the memories of anyone in his domain and control the hordes of undead here. Instead, heroes are far more likely to run into the Kargat, and stories of memory loss and forgotten trinkets and objects should abound, as such intrigue and the theme of escapism from not just Darkon but the Mists in general. Adventures should focus on the accumulation of knowledge and power, in a similar vein to Azalin himself. While they shouldn't run into him, perhaps they're working for one of his agents in trying to obtain a rare spellbook or some strange components that Azalin needs to complete a new experiment. Or perhaps they're trying to find a friend who is in Darkon, one who stayed for more than three months and lost themselves. Or perhaps, the heroes themselves are beginning to drift from their memories, and they're now in a race against time to escape.",
+								{
+									"type": "table",
+									"caption": "Darkon",
+									"colLabels": [
+										"Detail",
+										"Description"
+									],
+									"colStyles": [
+										"col-3 text-center",
+										"col-9"
+									],
+									"rows": [
+										[
+											"Culture Level",
+											"Dark Ages to Chivalric (depends on area)"
+										],
+										[
+											"Climate & Terrain",
+											"Temperate, forests, hills, plains, mountains, and swamps"
+										],
+										[
+											"Year Formed",
+											"579 BC"
+										],
+										[
+											"Population",
+											"117.300"
+										],
+										[
+											"Races (%)",
+											"Humans 75%, Halflings14%, Gnomes 5%, Elves 3%, Half-Elves 1%, Dwarves 1%, Other 1%"
+										],
+										[
+											"Languages",
+											"{@language Common|PHB}, {@language Darkonese|Darklords&DomainsVol1}, {@language Dwarvish|PHB}, {@language Elvish|PHB}, {@language Testani|Darklords&DomainsVol1}, {@language Falkovnian|Darklords&DomainsVol1}, {@language Gnomish|PHB}, {@language Halfling|PHB}, {@language Lamordian|Darklords&DomainsVol1}, {@language Mordentish|Darklords&DomainsVol1}, {@language Tepestani|Darklords&DomainsVol1}, {@language Vaasis|Darklords&DomainsVol1}"
+										],
+										[
+											"Religions",
+											"The Eternal Order, Ezra"
+										],
+										[
+											"Government",
+											"Feudal hereditary monarchy"
+										],
+										[
+											"Ruler(s)",
+											"Azalin Rex"
+										],
+										[
+											"Darklord(s)",
+											"Azalin"
+										],
+										[
+											"Nationality",
+											"Darkonian"
+										],
+										[
+											"Analog",
+											"Europe"
+										],
+										[
+											"Neighboring domain(s)",
+											"Falkovnia, Keening, Lamordia, Liffe, Nova Vaasa, Tepest, The Nocturnal Sea, The Shadow Rift"
+										]
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/2PxqyOa.jpg"
+									}
+								},
+								{
+									"type": "entries",
+									"name": "Local Fauna",
+									"page": 178,
+									"entries": [
+										"Within Darkon, there are two types of areas: Those that have been civilized, and those that have not. The throng of humanity overrun certain areas, especially near the cities, to the point that there are no large predators as they've been hunted to extinction by the locals. The most dangerous native creature that you're likely to encounter in that area is a rabid dog. In the wild regions, bears and wolves are common, while the waters off the Darkonian coast have a relatively high amount of sharks, attracted by the readily available food supply from the coastal cities, especially near Rutledge. Even in the wilder regions though, large animals are rare, with deers being the biggest ones commonly found. Smaller animals, like birds, rats, rabbits, and the like are far more easily found. In the Mountains of Misery, in the south and south-eastern parts of Darkon, large spiders are rather common, to the point where the locals often have a small bounty going for anyone able to take down some of the spiders."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Local Flora",
+									"page": 179,
+									"entries": [
+										"Darkon, due to its sheer size, has great variety in the plants found within its borders. The trees are mainly deciduous, though conifers are the majority near the border with Falkovnia (though they do not have the black bark of their Falkovnian cousins). There are a number of fruit trees in Darkon, mainly pear and ap-ple trees, but only the apple trees are considered useful by the locals. Pears are a \"poor man's fruit\", eaten or fermented only by those who cannot afford better. Apples are often used as a food source, and Darkon is well known for an extremely potent apple wine that the locals near the smaller towns bottle. Near the larger towns, the fields are dedicated to various types of grain, with wheat being the main harvest. Darkon is also known for two distinct types of plant: Spuma Vitae and Somnos Berries. Spuma Vitae is a type of algae that when devoured causes the body's system to close wounds at an astonishing rate. When eaten, the imbiber regenerates one hit point per round, but once reduced to zero the regeneration stops. If a creature dies within a week of imbibing the algae, the algae that are left in the system infect the body, preventing it from being resurrected. A week after death, the body turns into a vine blight. The somnos berries are used for a type of wine that causes the imbiber to lose their inhibitions — the wine, as a result, is illegal within Darkon, but the berries are too plentiful to be eliminated. Instead, certain homemade distilleries and smugglers still brew the wine and then sell it in places like Dementlieu and Richemulot."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Native Horrors",
+									"page": 179,
+									"entries": [
+										"Darkon, due to its size, is filled with the horrors that populate the domains of Ravenloft. But none are more prevalent within the domain than the undead. Ghosts, ghouls, and worse populate the ranks of the unliving, with Azalin himself sitting atop the heap amid (true) ru-mors that he is a lich. The undead are so prevalent, and so under the control of the darklord, that they have become known as the Eyes and Ears (and Voice) of Azalin, capable of bringing information to him from with-in anywhere in the domain. Less known, but perhaps more horrifying than the undead is the memory loss inflicted on those who spend time in Darkon. Within the space of three months, the memories of any creature in the domain are modified, so that they always believe that they have been a resident of the domain, and often ignore signs that should tell them otherwise.",
+										"Only upon leaving Darkon do they regain their memories, but most do not feel so inclined. There are two exceptions to this: Anyone who lives in Martira Bay is apparently immune to this effect, and anyone who vis-its regains their lost memories. This means that the city tends to be overrun with those from elsewhere, who desperately cling to their true memories and person-alities, afraid of losing themselves upon leaving. (Of course, those actually from Darkon are unaffected, and believe these to be tall tales).",
+										"The other group of unaffected are those rare few who have visited Castle Avernus and somehow gained access to its vast library. Hidden within this reposito-ry of knowledge is said to be a book (called the Book of Names) that contains the true memories of anyone who has ever been in Darkon, and had their memo-ries changed. Upon touching the book, the creature re-gains all its lost memories and becomes immune to the mind-altering effects of the domain. Only an extremely rare few adventurers have survived the trek to Castle Avernus, and many of them have died subsequently. They report that while they can read the stories of oth-er people, and see if they did indeed have a past (as well as their true name), but were unable to regain the memories of others."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Terrain Type",
+									"page": 179,
+									"entries": [
+										"Due to its size, it's possible to find all kinds of terrain within Darkon. Grasslands, forests, hills, and mountains are all present, as are swamps and marshes. In many ways, Darkon is a country of extremes and opposites, and this is evident in the land as well. There are more living creatures than anywhere else, but also more undead. Summers are extremely hot, and winters extremely cold, with springs and autumns brief but blissfully pleasant by comparison. In the fertile areas, it is nearly as lush as neighboring Darkon, but in the inhospitable ones, no living (sane) soul would dare to tread."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Important Landmarks",
+									"page": 180,
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Castle Avernus",
+											"page": 180,
+											"entries": [
+												"Sitting a few miles south of Il Aluk, Castle Avernus is the lair of Azalin. Named not after the first layer of Hell, as so many outsiders believe, but because of a peculiar property of the castle that means that only a few types of bird (named avis in Darkonese) will fly over the castle, such as vultures, crows, and ravens. Any other type of bird that flies over simply drops dead as soon as their shadows hit the spires of the castle. Castle Avernus is built as a defensive fortification. The windows are narrow arrow-slits, about six inches wide, allowing the defenders to see out while remaining protected. The spires, while appearing ornamental, actually give a commanding view of the countryside and are sturdily built to withstand a siege. And on the walls of Castle Avernus patrol Azalin's doom guard — armored skeletons and zombies, though he keeps the more outrageous types of undead out of sight. Here is where Azalin holds court when he wishes to do so, and there are even chambers for living guests. It is rare for Azalin to have company unless it is a captive either being interrogated or used for magical experimentation. During the night, visitors can hear a spirit moaning from the tallest, central spire, and while it tugs at their life strings, it is too far away to affect them. Anyone inside the castle buildings (apart from the central spire) cannot hear it — unless they are of elvish descent, in which case they hear it far more clearly than anyone else. Underneath Castle Avernus lies the best-kept secret of Azalin, even beyond the location and nature of his phylactery. It used to be the lair of Ebb, a shadow dragon ally of Azalin. He maintains the pretense that she still lives there, but in fact, she has moved to the Mountains of Misery to be with her mate Gloom. They keep the fact that there are two of them secret by only venturing out one at a time. And known only to Ebb, Gloom, and Azalin is the fact that they have eggs, and that these are about to hatch."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Forest of Shadows",
+											"page": 180,
+											"entries": [
+												"The Forest of Shadows is a large deciduous forest that dominates the south and west-central regions of Darkon. While relatively unremarkable, apart from its size, during the few years when Azalin was inactive, a halfling wererat bandit leader took up the mantle of leadership in the region. While less powerful than Azalin, he's managed to amass a small fortune and become enough of a nuisance in the region that local merchants have reached out to Azalin, asking for his assistance in dealing with the bandit. Galf Kloggin, the bandit leader, committed at least one murder before being infected with lycanthropy and is considered incredibly dangerous by the locals."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Forgotten Hills",
+											"page": 180,
+											"entries": [
+												"The Forgotten Hills are the foothills to the Mountains of Misery, the mountains that once bordered the domain of Arak, and were a part of it. Following the Great Upheaval, the old Arakian lands were added to the holdings of Darkon, and the people who'd previously lived there mostly disappeared. Instead, the Forgotten Hills have become far more dangerous as they're inhabited by brigands, bandits, and monsters who often prey on merchants and travelers heading to and from Nova Vaasa. Azalin has yet to take action against them. There are a few ruined buildings left, following what appears to be a side effect of the Scouring of Arak (see Keening for more), but otherwise, the original Arakian population has vanished. Scholars debate if these are now the undead of Keening, or simply died during the Scouring, but none know for sure."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Strigos Road",
+											"page": 180,
+											"entries": [
+												"The Strigos Road (\"Rawboned Road\" or Via Strigos in the local tongue) is one of Azalin's newest projects. Established to facilitate trade between Darkon and Nova Vaasa and circumventing Keening, The eventual aim is to link up with the Old Svalich Road in Barovia, but no one knows what Azalin's timeframe for finishing the road is, nor has anyone else got an idea of how far along construction is. One thing that is known is that it should, once completed, drastically decrease the amount of bandit and monster attacks that a traveler suffers while moving through the Forgotten Hills."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Vuchar River",
+											"page": 180,
+											"entries": [
+												"The Vuchar River was once a major trade artery that ran through Il Aluk. It carried more trade and had more fish and the like in it, than any other river in Darkon. However, after the turning of Il Aluk this is no longer the case. Upstream from Il Aluk things remain the same, but downstream, the water is rotten for miles, and not a single living thing resides in it. Only once you get more than ten miles away does it return to some semblance of normality, and only those who have no choice use it for transport. No one dares to fish in it downstream anymore."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Towns and villages",
+									"page": 180,
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Corvia",
+											"page": 180,
+											"entries": [
+												"Corvia lies near the Tempe Falls, and relies on those for the raw materials that are brought into town, and which supplies the craftspeople there. The town also contains the Baronial Tower, which belongs to the dwarven Baron Urjo Mustanen, the ruler of the town. The tower holds the royal mint, responsible for the pressing of all Darkonian coins, as well as the treasury of the domain. Rumor has it that this treasury is a front for the real one, that lies somewhere in Castle Avernus, but heavily armored and escorted carriages certainly come and go here often enough for it to contain the real treasury. Due to the wealth of the city, it is particularly well-protected. It is also home to the powerful dwarven woman Beryl Silvertress, though she does not tolerate intrusions into her private life."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Creeana",
+											"page": 181,
+											"entries": [
+												"Creeana was destroyed some time ago by the Whistling Fiend, which has left the town in ruins. While it could be rebuilt, only the truly desperate have returned here (giving it a population of only around 30 people). As a result, only the barest of repairs have been attempted to any of the buildings, and those few that have been properly restored resemble fortresses more than they do homes."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Delagia",
+											"page": 181,
+											"entries": [
+												"Delagia lies partly upon an island, and partly above Lake Korst and the Foaming River, standing on sturdy poles. The mainly halfling population subsists on fish farming, but there is a strong trading community here, though traders have to use riverboats in order to reach the town. It (and neighboring Sidnar) is currently ruled by the siblings Baroness Almeta and Baron Kasen, from the Constantine family. The family is new to nobility, as they only replaced the previous rulers within the last few years (who were killed by Azalin following his return)."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Karg",
+											"page": 181,
+											"entries": [
+												"Karg is a medium-sized town, with a large number of non-humans as part of the accepted population. It is divided into the Upper and Lower Wards, with the rich inhabitants living in the Upper Ward alongside the city's industries, with the Lower Ward left to the poor. The Upper and Lower definitions refer not only to the economic strength of the inhabitants but also to its physical location, as the Lower Ward is in a shadowy depression in the land. Surrounding the city are ancient fortifications, giving the town an air of imprisonment. It is one of the safest cities in Darkon, however, at least from outside attacks. Karg is ruled by Baron Lucien Warbois, but the true power behind the throne is Venrith Chole, a former werewolf (now a ghost, after dying near Il Alluk) who was caught in mid-transformation on death, making this the ghost's true form. Venrith is no longer fully trusted by Azalin, as he has been exposed to potentially corrupting influences from Death and Il Aluk, and is simmering in his own anger."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Martira Bay",
+											"page": 181,
+											"entries": [
+												"Martira Bay with its more than 10,000 inhabitants is Darkon's biggest city — at least after the loss of Il Aluk. Normally that would put it next in line to be the capital, but a peculiar feature of Martira Bay prevents Azalin from doing that. The presence of the night hag Styrix presents him with a problem. She affects reality around her in such a way that the memory loss that visitors and inhabitants suffer elsewhere in Darkon falls away here, in a similar manner to them leaving the domain. This makes it very difficult for him to directly influence events there (at least in a subtle manner), though he still has full control over the undead there. Styrix is also the builder responsible for an artifact known as the Rift Spanner — a device that may be of interest to Azalin's ongoing attempts to escape. So far, it has not been activated and remains hidden somewhere within the city. The local Kargat is led by Lady Kazandra, a beautiful and cunning woman with a rakish eyepatch. She owns the Cosmopolis Club, a posh club in town (and a suspected brothel, but nothing's been proven), and is influential behind the scenes, though the local ruler, Baroness Karimana Reldkasen, has firmly rebuffed attempts to control her directly. Kazandra posed a threat to Azalin's rule upon his return, but she was firmly put in her place, and his protection seems to extend to the Baroness."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Maykle",
+											"page": 181,
+											"entries": [
+												"Maykle is a mostly human town that sprouted almost organically from a particularly deep natural harbor along the Vuchar River. It used to be a thriving trade community, but the fall of Il Aluk has severely limited its ability to send trade on from here, even though it still gathers it as quickly as before. Unlike most Darkonian cities, it is only fortified with a crude wooden palisade, as there are fewer undead in the region than elsewhere in Darkon. Apart from the now faltering trade, Maykle's claim to fame comes from the Clangor Asylum, where more than a hundred patients are under the care of Dr. Quentin Clangor (the great-great-grandson of the original founder), and his staff. It is at the cutting edge of the medicinal arts, second only to the Asylum for the Mentally Disturbed in Dominia, though Dr. Clangor keeps a far tighter rein on the methods employed - though they still range from strange to practically torture. Its most infamous inhabitant is Errol Sturlock, the father of the current Baroness of Maykle (his daughter Iris Sturlock) — he was found one day, eating his elven wife, and now is kept in a cell, his head locked in a cage to prevent him feasting on his own flesh. Evil tongues wonder whether his daughter caused his madness in a power-grab, or if she'll inherit a similar disturbance."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Mayvin",
+											"page": 182,
+											"entries": [
+												"Mayvin is a primarily gnome settlement, that is — to most others — incredibly disturbing to visit. No two buildings are the same, with a multitude of different styles on display, ranging from classic to outrageously dissimilar. Sculpted archways, glass domes, strangely shaped or weirdly proportioned windows and more dominate the landscape. Everyone in Mayven seems to love to experiment, though happily, most buildings are on a scale where an average human can still stand upright comfortably. Mayvin is primarily known for the Patent Hall and the Clockworks. The Patent Hall is where inventors in Darkon register the patents of their devices, but as part of this process, they must provide a functioning scale model which then goes on permanent display. Unfortunately, Baroness Narglin's ability to enforce the 20-year exclusivity license that each inventor gets is limited, so most simply seek it as a matter of pride. Something seems to inhabit the Patent Hall, as many of the devices seem to develop a malignant intelligence, though no one knows if this is the devices being possessed by a spirit, or if they're actually gaining sentience on their own.The Clockworks is an ornate wooden clock tower that stands in the center of town. Entirely autonomous and powered by an underground conduit, it rings out every hour on the hour, with automated dancers appearing. For some reason, it sometimes refuses to chime, and several of the figures have disappeared over the years. Most simply believe that it's a matter of vandalism, but some local drunks claim to have seen the figures walking off on their own."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Nartok",
+											"page": 182,
+											"entries": [
+												"Nartok is a fortified lumber town, with the operations of most of the lumber companies centered in the Old Town. The Old Town has walled fortifications that surround it, built after the First Dead Man's War to ward off Vlad Drakov's forces and the undead that repelled them. Beyond the lumber operations, Nartok is home to a temple dedicated to the Eternal Order. Locals believe that this is where Death, the lord of Il Aluk, was born, and it remains desecrated as a result."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Neblus",
+											"page": 182,
+											"entries": [
+												"Neblus is a large town with a slight elven majority. Though the difference is slight, it feels like more, as many of the human residents have assimilated into the elven culture, and wear the same clothes, and have the same manners. The town is quiet, and eerie, as the buildings are somber, and the ancient gravestones have been used to pave the streets — the locals have a saying for this \"By keeping the dead underfoot, we keep them from rising to claim our city\". This obsession with death and the afterlife seems to carry over into other aspects of life in Neblus, meaning that the locals rarely raise their voices. In fact, they barely acknowledge each other in the open streets, though they speak normally when inside. Neblus is also home to the Shrine of the Spirits, the oldest temple of the Eternal Order in Darkon."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Nevuchar Springs",
+											"page": 182,
+											"entries": [
+												"Nevuchar Springs is a small town, with an almost entirely elven population, built on the extreme eastern end of Darkon. It's often forgotten, which suits the locals just fine. It's only notable for being the source of the Vuchar river and for lying in an optional location for having a port to the Nocturnal Sea. However, the locals have no interest in expanding, so no port is being made. The Vuchar River also powers the Baths, a set of mineral pools used for recuperating those with various ailments. During the years where Azalin was missing, some of the pools and baths spoiled, and while they've since been cleared of the slime, rumors persist that some pools now drain the bathers rather than recuperating them. Nevuchar Springs also houses the Library Pharmacologae, an archive of text that describes various herbal and medicinal cures — all of which have been assembled by a group of elven mystics, who guard the Nevuchar Shrine. They're worried, as some of the books have started changing in recent years, first slowly, but then increasing in speed. Necromantic passages suddenly appear, spreading through the books, like a blighted disease in a tree.  Finally, Nevuchar Springs is the birthplace of the Darkonian arm of the Church of Ezra and is home to The Last Redoubt. Run by Bastion Teodorus Raines, the upper portions act as a temple, while the catacombs underneath serve as prisons and torture chambers for Raines' prisoners. These prisoners are usually monsters, as the Church of Ezra seeks to eliminate them from Darkon, however, the man is ambitious enough that some might be political enemies."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Rivalis",
+											"page": 182,
+											"entries": [
+												"Rivalis is a small village close to the Darkonian border with Lamordia, and rare within the Mists for the fact that the majority of its population are halflings. It is the original home of Galf Kloggin who now terrorizes the surrounding Forest of Shadows. It has only two claims to fame beyond the population. First is the botanical gardens that it houses, called the Crystal Garden — the gardeners of the places are often looking to hire adventurers to deal with the dangerous plants that the Garden somehow seems to attract, even though they are extremely rigorous in ensuring that no such seeds make it in. Its other claim to fame is more along the lines of infamy: It smells badly of cheese, due to the Two Brothers, a small factory that produces Underjack, a hard type of smelly cheese."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Rookhausen",
+											"page": 183,
+											"entries": [
+												"Rookhausen is a failed experiment to establish a colony in Darkon on the edge of the Nocturnal Sea. The community lasted about 5 years and sat not far from the border with Nova Vaasa together with Rutledge to the south. Unlike Rutledge, the town has been abandoned and the town has fallen into ruins."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Rutledge",
+											"page": 183,
+											"entries": [
+												"Rutledge is a port on the border between Darkon and Nova Vaasa. While unclear which state controls it, it lies within Azalin's control and as such should be considered part of Darkon. Home to some 250 people, its main source of income is fishing, but it has gained notoriety as a pirate haven, as four islands just off the coast (known as the Dismal Four) provide shelter for the harbor. The lighthouse that sat on the smallest island was destroyed in a storm a few years back and has yet to be restored. Surprisingly both the mayor and the sheriff of the town are law-abiding citizens and only tolerate the presence of the pirates on three conditions: they behave while in town, they don't kill anyone unless they have to, and they're only welcome as long as the community requires the coin that the pirates put into their coffers. Once any of these three conditions end, they'll be happy to wave goodbye to the pirate haven reputation."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Sidnar",
+											"page": 183,
+											"entries": [
+												"The sister city to Delagia, Sidnar lies on the other edge of Lake Korst and is also ruled by the Constantine family. Unlike its sister city, it has mainly an elven population who reside in the hills. The inhabitants here are capable miners and many of their products make it to the center of Darkon, though it is not as common as the products of Temple Falls, especially as recent washouts, rockslides, and more, have rendered access to the town impossible to reach, except on foot. Once the Strigos road is completed, it is expected to pass through Sidnar, and give the city a significant trade boost."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Tempe Falls",
+											"page": 183,
+											"entries": [
+												"Tempe Falls is a dwarven mining town in the Mountains of Misery. It takes its name from the spectacular waterfalls that cascade down the nearby mountains, and which arcs rainbows across the sky on sunny days — on gloomier days though, the rainbows are more like twisting whirlwinds that the locals say are the spirits of the dwarves who died in the mines. Tempe Falls is home to the Nova Vaasan embassy (the chief envoy is Myar Hiregaard, the son of Tristen Hiregaard — one of the few who have retained their memories, on the command of Azalin). It is also the home of Geraldine Enrich, an elderly human woman who has completely immersed herself in dwarven culture, and who runs the well-guarded Geraldine' Gem Emporium that sells figures made from the gems mined beneath the town. She even worships at the Ancestral Vault, the local dwarven temple."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Tidemore",
+											"page": 183,
+											"entries": [
+												"Tidemore sits north of the ruins of Rookhausen and is governed by Burgomeister Borganov. It is a small fishing port and is not welcoming to strangers at all, with rumors abounding in Rutledge of the locals performing strange rituals and sacrifices on the beaches. They also say that the real rumor is his sister Hilde, who has strange powers, rather like a werewolf, but transforming into a strange fish instead."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Viaki",
+											"page": 183,
+											"entries": [
+												"Viaki is one of the bigger cities in Darkon, but despite this, feels much smaller than it actually is. This is because it has allowed itself to spread far further across the land than is normal, giving it the nickname \"the village that never ends\". The people in Viaki are incredibly poor, subsisting on trapping and farming, as well as peat harvesting and other simple trades. Despite their poverty, the local leaders still attempt to squeeze every last bit of coin out of the locals that they can, particularly with the help of a local midwife and healer named Glennis McFadden. Unknown to the locals, Glennis is actually a green hag, who is trying to subvert Viaki, in revenge for the murder of the rest of her coven — only the woman named Isha Goldtree (who the locals call the Lost Seer, for her supposed ability to foresee the future) knows the truth, of which she's failed to convince anyone else. As such, to avoid attracting attention from Glennis, she now plays the role of Seer, hoping to direct powerful adventurers to destroy the hag."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Fun Fact",
+									"page": 183,
+									"entries": [
+										"Darkonians put great value on memorabilia, possibly due to their false memories. As such, many shops in Darkon cater to these needs and sell small trinkets to adults and children alike."
+									]
+								},	
+								{
+									"type": "entries",
+									"name": "Azalin Rex",
+									"page": 184,
+									"entries": [
+										{
+											"type": "quote",
+											"entries": [
+												"I know more about the ground you stand on than any other. I have studied the arcane arts for centuries. I am the doom of the powers that keep me prisoner here. I will escape. I will break my curse. Then I will drag these Dark Powers into the light. I will cast them down into hells of my creation and watch them suffer. I am eternal. I am their doom. I am Azalin."
+											],
+											"by": "Azalin Rex"
+										},
+										"Azalin is the lich lord of Darkon. In his true form Azalin is an emaciated corpse, reeking of decay, with eyes glowing like red pin pricks. The flesh around his mouth has pulled back, revealing cracked yellow teeth. If Azalin wishes to shock someone, especially if that person is going to be dragged to one of his many torture or experiment chambers, then he wears a loin cloth, and black cape with blood red trim and several expensive pieces of jewelry. Usually Azalin wears flowing robes and several rings. The rings are powerful magic items.",
+										"When Azalin appears before his subjects, he cloaks his appearance in powerful illusions. In these illusions, Azalin looks like an ancient human. He regularly changes his features, but it's unknown if Azalin changes his appearance for esoteric reasons or merely because it suits his whims. ",
+										"Azalin is prone to quick decisions and has a dangerous temper. His vanity doesn't allow him to admit a mistake, so he will never admit error during one of his outbursts. Instead Azalin will use magic or intimidation to force a minion, even one that couldn't possibly have made the choice, to admit their guilt. The poor minion is quickly dragged away to Azalin's laboratory. Azalin wore a heavy iron crown mounted with a spike until the events of the Requiem. The crown was lost during the planar chaos that rocked Ravenloft.",
+										{
+											"type": "entries",
+											"name": "Background",
+											"page": 184,
+											"entries": [
+												"Firan Zal'honan was the second son of Duke Tiralitan Zal'honan, a minor noble in a forgotten world. At birth his prospects were bleak, Firan couldn't inherit land and he did not have the strength of arms to join a company of mercenaries. The duchy was small and surrounded by hostile tribes of humanoids. The young noble respected his father and older brother, Ranald, but had no love for them. The only person Firan developed any connection for was his younger brother Irik. Irik was kind and slow to anger. He was the only person who could calm Firan's temper when the young noble lost control. Firan's father hated magic in any form and forbade it in his lands. At first Firan respected his father's rules and avoided magic, but as he grew Firan realized magic offered him what nothing else could, control. The discipline necessary to study the arcane arts gave Azalin control over himself and the spells he studied gave him control over others. As Firan grew in ability he realized another desire magic could achieve. Power.",
+												"Firan soon confided in Irik about his arcane pursuits, the pair soon joining together in studying under the wizard Quantarius. Quantarius was a powerful wizard who kept to the shadows to avoid the wrath of the boy's father. Firan mastered magic quickly, but soon his grasp exceeded even his considerable reach. When he was 15, Firan and Irik tried to summon a fiend. The fiend quickly overpowered both of the young mages and went on a rampage. Quantarius was able to slay the fiend, but not before Irik lost his life. Quantarius had saved the duchy, but was outed as a mage, and banished. Firan chose to follow Quantarius into exile and continue his studies.",
+												"Over time, Firan mastered powerful magic. He could drain the vitality of others to extend his life and heal his wounds. He could steal spells from the minds of other mages and learn them in an instant. Firan studied dark magic and soon moved beyond what Quantarius was willing to teach him. When Firan studied on his own he learned even faster.",
+												"During his exile, Tiralitan died, and Ranald inherited the duchy. Under Ranald's rule his people suffered. Ranald was a harsh and petty tyrant who drank and whored the treasury to nothing. The people suffered, both from Ranald's drinking and from the raids of the surrounding tribes. Constant drinking and feasting took its toll on Ranald and within a few years he passed. Firan returned from exile as an Azal'Lan, a Wizard King.",
+												"Azal'Lan was a harsh but fair ruler. Magic was embraced and Azal'Lan conducted a series of brutal mercenary campaigns against the neighboring tribes. His duchy became powerful militarily and economically. His people procured, as long as they obeyed. Anyone who broke the law was severely punished, even Azal'Lan's own son, Irik. Irik, like his namesake, was a kind soul. When Azal'Lan imprisoned several political prisoners Irik led a doomed attempt to free them. Irik was tried for treason and found guilty by his own father. While Irik's conspirators and the prisoners were executed by a headsman, Azal'Lan beheaded Irik himself. After the death of his son Azal'Lan became obsessed with immortality and restoring his son to life. He would race toward any hint of new magic to add to his immense library. It was a shock when the secret to lichdom was offered to Azal'Lan by a shadowy figure in his own lab. Azal'Lan was wary, but could not resist the power undeath offered. After his apotheosis, Azal'Lan ruled for decades, greatly expanding his territory and power. Despite the decades Azal'Lan still desired to resurrect his son. One day a traveller told the lich king of a new magic that would bring the dead to life without the interference of the gods. Azal'Lan took a small retinue of guards and set off after the rumors. Once outside of his duchy Azal'Lan and his guards were ambushed by a combined force of tribal warriors and mercenaries. Azal'Lan's guards were slaughtered but the lich was more than a match for his assailants. He laughed as he drained their lives away, dissolved their bones, and shattered their minds. As the last tribeman died the mist came for Azal'Lan.",
+												"When the mists cleared Azal'Lan was in Barovia. The first person he met mispronounced his title as Azalin. It was a name Azal'Lan quickly adopted in his new home. Azalin traveled for a time and eventually found Strahd von Zarovich, the lord of Barovia and the only creature in Barovia that Azalin could consider an equal. Even then Azalin knew he could kill Strahd if he so wished. Azalin stayed at Castle Ravenloft for years. He quickly learned about his prison and began to experiment with the nature of the demiplane and the Dark Powers. One of his earliest experiments involved creating the arcane machine, the Apparatus, that opened a portal to Mordent and in the chaos that followed dragged the entire country through to become a new dark domain. After the experiment failed, relations between Strahd and Azalin, already strained, reached a breaking point. Azalin knew he could destroy Strahd, but was concerned Barovia would dissolve into the mists with the death of its lord. Because Mordent had been pulled into the mists and now lay outside of Barovia's borders, Azalin deduced that new countries may exist or be created in the mists. Azalin left Castle Ravenloft and walked into the mists. He was gifted the realm of Darkon. For a time after the creation of Darkon, Azalin was split into two beings. Firan was a mage who couldn't remember anything about himself. Firan helped those in need, but felt pulled to Castle Avernus. There Firan fought and defeated a powerful undead entity called Daraculas. When Daraculas was slain, its undead essence merged with Firan and Azalin was reborn. At first Azalin raged against the Dark Powers and swore to break free of their control and get his revenge. After some time and research, Azalin has come to believe that the Dark Powers had granted him a chance as Firan to escape Ravenloft and return home. Azalin established his rule at Castle Avernus, but the nearby city of Il Aluk became the political and economic center of Darkon. While exploring the castle, Azalin found the crypt of his son, Irik in the catacombs beneath the castle.",
+												"Azalin himself is unsure, but at some point after he was taken by the mists, he lost the ability to learn new magic. Azalin remembers creating new types of golems and researching the complicated magical rituals for his first attempt to breach Ravenloft. He also remembers teaching Strahd the spells needed to activate the Apparatus. Azalin's memory changes every time he tries to remember, and interrupting one of these reveries is a sure way to die a painful death.",
+												"Azalin quickly established his rule in Darkon. He assembled the Kargat, a secret police of human informants, werewolves, and vampires, charged with crushing dissent and ferreting out spies. Over the years the Kargat expanded their activities to carry Azalin's will to other domains as spies and assassins.",
+												"Azalin continued his research into the nature of the demiplane of dread. He tried to escape several times, all of which have failed. One such attempt, now called the Grand Conjunction, nearly tore the demiplane apart and reordered the domains that were trapped. His most recent attempt, the Requiem, drained the life force of an entire city, Il Aluk, and created a new dark lord, Death. The events of the Requiem were supposed to grant Azalin enough energy that he could break free of his corporeal body and escape Ravenloft. Instead Azalin's body was blasted apart and his mind scattered across Darkon. Azalin struggled to reassemble his mind for five years. Finally Azalin could possess the body of his son and be reborn."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Current Sketch",
+											"page": 185,
+											"entries": [
+												"Azalin has recovered some of his ability to learn new magic. If the subject is extremely closely related to a subject that he is familiar with, then Azalin can learn about this new magic, though it will take him decades longer than a mortal mage to master the new magic. Since his return Azalin has also gained a new ability to look into the minds and alter the memories of anyone currently in Darkon. Azalin retains his abilities to control any undead in Darkon, even intelligent undead. Neither of these abilities extends to creatures in Il Aluk, which causes Azalin considerable alarm Azalin's new experiments have moved beyond escaping Ravenloft. He has sent an agent known only as “S” into the neighboring domains. It is unknown what S is looking for, but S is searching with a feverish intensity. In his absence, members of the Kargat attempted to take over Darkon, leading to shadow war between different factions of the organization. Azalin devotes considerable time and effort to stamping out any faction of the Kargat that denies his right to rule. Azalin's subjects believe he is draconian, but human. They admit he uses dark magic to extend his life through unnatural means, but even if presented with incontrovertible proof of his true nature they will dismiss it and accuse the presenter of manufacturing lies. If the presenter persists Azalin's subjects will become increasingly distressed and quickly escalate to violence.",
+												{
+													"type": "entries",
+													"name": "The Eternal Order",
+													"page": 186,
+													"entries": [
+														"Azalin concocted a faith from whole cloth, The Eternal Order, with themes of ancestral worship, lawful conduct, and reverence for the dead. The Eternal Order is the state religion of Darkon and is practiced by a majority of Darkon's citizens with varying degrees of attentiveness. Despite its madeup origin, clerics and paladins of The Eternal Order nevertheless receive divine powers, and their healing evocation spells which normally exclude undead may heal them for half effectiveness when cast using a spell slot at least one higher than base level. Most ranking clergy are simply another arm of Azalin's intelligence and state control apparatus and have little faith, but some sects are truly faithful and call upon the powers of the dead to protect the living, investigate cold cases, protect tombs, judge and aid the undead with valid grievances against the living, and put to rest those they cannot help. Players who want to create a character with a background in The Eternal Order should choose any non-chaotic alignment, but barbarians following the Path of the Ancestral Guardians are always welcome in the Order's ranks."
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Darklord's Tactics",
+											"page": 186,
+											"entries": [
+												"Azalin has mastered magic for longer than anyone in Ravenloft has been alive. He scries his enemies in Darkon and other domains and his informants everywhere. Azalin will dispatch members of the Kargat to deal with a potential threat long before it gets close to Azalin. If his enemies manage to repeatedly avoid or slay his agents, Azalin will become involved. He will carefully watch his enemies until he knows all their abilities. Azalin will choose the ideal spot for an ambush. When Azalin attacks he will unleash his most devastating spells and flood the area with mindless undead and kargat members. Azalin doesn't care if his minions are incinerated by his spells as long as his enemies are slain. Azalin's phylactery is a massive golden dragon skull. The skull weighs more than 1,000 pounds and its bone has been magically hardened beyond the strength of adamantine. Azalin has woven dozens of protective spells over the skull, and has undead and fiends nearby to protect it.",
+												{
+													"type": "entries",
+													"name": "Undead Nature",
+													"page": 186,
+													"entries": [
+														"Azalin doesn't require air, food, or drink. Azalin is cursed to sleep at intervals, but does not require it."
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Utility Belt",
+													"page": 186,
+													"entries": [
+														"Azalin wears a belt with several wands, scrolls, and other items that are situationally useful. The belt also holsters a spell component pouch, costly spell components like silver soul cages, a mirror for scrying and cornering spells, consumable items, and whatever else appeals to your sensibilities. Items specifically prepared for the belt easily release and reattach, but never fall off during the chaos of combat. The utility belt was designed by a master thief to allow the user to swiftly exchange the objects they are holding. If Azalin is holding an object he drew from the belt, instead of dropping it, he may stow it without consuming his free action. Azalin poisons or minorly curses valuable items to deter thieving hands. The nature of those curses is left as an exercise for the GM."
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Book of Knowledge",
+													"page": 186,
+													"entries": [
+														"While studying the Book of Names which replaces memories with false ones, Azalin had a curious idea. Could he overwrite a wizard's memory of the spells he has prepared? Could he implant the memory of a spell he has never used, thus allowing him to cast spells he cannot learn otherwise? Braiding several threads of thought on the nature of the mind, magic, and time into one research project, Azalin created the Book of Knowledge, a memory-altering tome that targets his own mind and rapidly replaces spells he has prepared with the memories of ones he has prepared in the past. Although Azalin's goal to cast new spells has proven elusive, being able to swap spells in the chaos of battle is the envy of any wizard, no less with a book stored in a secure location. Azalin's Book of Knowledge is an absolute secret, even from his son."
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Borders",
+											"page": 186,
+											"entries": [
+												"Instead of closing Darkon's misty borders, Azalin can command an army of undead forces to rise from the ground and defend it or prevent specific targets of Azalin's ire from leaving. In battles, slain enemy creatures stand back up to fight their former comrades. The crowd of undead is at least 20 creatures deep. The undead at the border cannot be turned. If a creature attempts to fly over the horde they are forced down to the ground by an invisible force. Any attempt to teleport past the horde partially fails. The creature is instead teleported into the middle of the undead horde. Undead near the border inerrantly know the location of creatures Azalin does not want to leave Darkon, and the undead relentlessly assemble and attack in greater and greater numbers until the targets turn back from the border —- in which case they are harried no further. Azalin himself doesn't automatically learn about attempted escapes of creatures he forbade from leaving Darkon, but he is likely to receive reports of an unexplained mass rising of undead and put two-and-two together."
+											]
+										},	
+										{
+											"type": "quote",
+											"page": 187,
+											"entries": [
+												"The lust for power, for dominating others, inflames the heart more than any other passion."
+											],
+											"by": "Tacitus"
+										},							
+										{
+											"name": "Azalin Rex",
+											"type": "entries",
+											"page": 187,
+											"entries": [
+												{
+													"type": "statblock",
+													"tag": "creature",
+													"source": "Darklords&DomainsVol1",
+													"name": "Azalin Rex"
+												}
+											]
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://i.imgur.com/dTSNKLY.jpg"
+											}
+										}
 									]
 								}
 							]
@@ -26032,13 +26748,13 @@
 				{
 					"name": "Move",
 					"entries": [
-						"Von Kharkov moves up to his speed without provoking opportunity attacks. "
+						"Von Kharkov moves up to his speed without provoking opportunity attacks."
 					]
 				},
 				{
 					"name": "Weapon attack",
 					"entries": [
-						"Von Kharkov makes one weapon attack. "
+						"Von Kharkov makes one weapon attack."
 					]
 				},
 				{
@@ -26077,7 +26793,7 @@
 						"page": 162,
 						"entries": [
 							"Kharkov was born a panther in Toril. A Red Wizard of Thay, Morphayus, polymorphed Kharkov into a human to use him as an agent against a rival wizard, Selena. Morphayus wiped out Kharkov's memory and sent him to be educated and trained in combat. When Morphayus thought Kharkov was ready, he had an ally introduce him to Selena. Selena and Kharkov soon fell in love. When Selena was at her most vulnerable, Morphayus removed the polymorph spell and returned Kharkov to his panther form. In the confusion, Kharkov tore Selena to shreds with his claws before passing out. When Kharkov woke up, he had returned to his human form. Kharkov was convinced Morphayus was going to use him as a sleeper agent against all of his enemies. Kharkov would fight a war in the shadows, taking on increasingly more dangerous foes until Kharkov was slain.",
-							"Kharkov fled that night. He was enveloped by the mists and soon found himself wandering the domain of Darkon. Perhaps Kharkov had already started to draw power from Ravenloft, but he found he could transform from human to panther form at will. Kharkov found killing easy and his bestial side, what Kharkov would come to call the “Beast.” Kharkov didn't want to be used as someone else's private murderer, but had no problems killing for his own pleasure. After a few years he was recruited into the Kargat, Darkon's secret police. Kharkov served in the Kargat for 20 years, becoming a vampire in the process, before fleeing into the mists when his vampire master was slain. Kharkov wandered the mists for a time. Even Kharkov is unsure which domain he was in when he ran into Morphayus. Kharkov willingly became the Beast when he saw Morphayus, shredding him and the corpse. As Kharkov feasted, the mists closed in."
+							"Kharkov fled that night. He was enveloped by the mists and soon found himself wandering the domain of Darkon. Perhaps Kharkov had already started to draw power from Ravenloft, but he found he could transform from human to panther form at will. Kharkov found killing easy and his bestial side, what Kharkov would come to call the \"Beast.\" Kharkov didn't want to be used as someone else's private murderer, but had no problems killing for his own pleasure. After a few years he was recruited into the Kargat, Darkon's secret police. Kharkov served in the Kargat for 20 years, becoming a vampire in the process, before fleeing into the mists when his vampire master was slain. Kharkov wandered the mists for a time. Even Kharkov is unsure which domain he was in when he ran into Morphayus. Kharkov willingly became the Beast when he saw Morphayus, shredding him and the corpse. As Kharkov feasted, the mists closed in."
 						]
 					},
 					{
@@ -26190,7 +26906,7 @@
 			"languages": [
 				"Common",
 				"Mordentish",
-				"Balok (can’t speak in wolf form)"
+				"Balok (can't speak in wolf form)"
 			],
 			"languageTags": [
 				"C"
@@ -26214,7 +26930,7 @@
 						"piercing",
 						"slashing"
 					],
-					"note": "from nonmagical weapons that aren’t silvered",
+					"note": "from nonmagical weapons that aren't silvered",
 					"cond": true
 				}
 			],
@@ -26222,7 +26938,7 @@
 				{
 					"name": "Shapechanger",
 					"entries": [
-						"Alfred can use his action to polymorph into a wolf-humanoid hybrid or into a wolf, or back into his true form, which is humanoid. His statistics, other than his AC, are the same in each form. Any equipment he is wearing or carrying isn’t transformed. He reverts to his true form if he dies."
+						"Alfred can use his action to polymorph into a wolf-humanoid hybrid or into a wolf, or back into his true form, which is humanoid. His statistics, other than his AC, are the same in each form. Any equipment he is wearing or carrying isn't transformed. He reverts to his true form if he dies."
 					]
 				},
 				{
@@ -26258,8 +26974,8 @@
 				{
 					"name": "Channel Divinity: Turn Undead",
 					"entries": [
-						"As an action, Alfred presents his holy symbol and speaks a prayer censuring the undead. Each undead that can see or hear him with-in 30 feet of him must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage. A turned creature must spend its turns trying to move as far away from Alfred as it can, and it can’t willingly move to a space within 30 feet of him. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the {@action Dodge} action.",
-						"{@b Destroy Undead.} When an undead fails its saving throw against Alfred’s Turn Undead feature, the creature is instantly destroyed if its challenge rating is at or below (CR 1/2)."
+						"As an action, Alfred presents his holy symbol and speaks a prayer censuring the undead. Each undead that can see or hear him with-in 30 feet of him must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage. A turned creature must spend its turns trying to move as far away from Alfred as it can, and it can't willingly move to a space within 30 feet of him. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the {@action Dodge} action.",
+						"{@b Destroy Undead.} When an undead fails its saving throw against Alfred's Turn Undead feature, the creature is instantly destroyed if its challenge rating is at or below (CR 1/2)."
 					]
 				},
 				{
@@ -26277,7 +26993,7 @@
 				{
 					"name": "Destroy Undead",
 					"entries": [
-						"When an undead fails its saving throw against Alfred’s Turn Undead feature, the creature is instantly destroyed if its challenge rating is at or below (CR 1/2)."
+						"When an undead fails its saving throw against Alfred's Turn Undead feature, the creature is instantly destroyed if its challenge rating is at or below (CR 1/2)."
 					]
 				},
 				{
@@ -26289,7 +27005,7 @@
 				{
 					"name": "Shadow Walk",
 					"entries": [
-						"Alfred can, with an action, use the shadows to move within his domain. To use the shadow walk, he must be in an area of shadowy illumination. He is then transported along a coiling path of shadow-stuff to the edge of the Material Plane where it borders the Plane of Shadow. The effect is largely illuso-ry, but the path is quasi-real. In the region of shadow, he moves at a rate of 50 miles per hour, moving normally on the borders of the Plane of Shadow but much more rapidly relative to the Material Plane. Thus, he can travel rapidly by stepping onto the Plane of Shadow, moving the desired distance, and then stepping back onto the Material Plane. Because of the blurring of reality between the Plane of Shadow and the Material Plane, he can’t make out details of the terrain or areas he passes over during transit, nor can he predict perfectly where his travel will end. It’s impossible to judge distances accurately, making the spell virtu-ally useless for scouting or spying."
+						"Alfred can, with an action, use the shadows to move within his domain. To use the shadow walk, he must be in an area of shadowy illumination. He is then transported along a coiling path of shadow-stuff to the edge of the Material Plane where it borders the Plane of Shadow. The effect is largely illuso-ry, but the path is quasi-real. In the region of shadow, he moves at a rate of 50 miles per hour, moving normally on the borders of the Plane of Shadow but much more rapidly relative to the Material Plane. Thus, he can travel rapidly by stepping onto the Plane of Shadow, moving the desired distance, and then stepping back onto the Material Plane. Because of the blurring of reality between the Plane of Shadow and the Material Plane, he can't make out details of the terrain or areas he passes over during transit, nor can he predict perfectly where his travel will end. It's impossible to judge distances accurately, making the spell virtu-ally useless for scouting or spying."
 					]
 				},
 				{
@@ -26319,14 +27035,14 @@
 				{
 					"name": "Shapechanger",
 					"entries": [
-						"Alfred can use his action to polymorph into a wolf-humanoid hybrid or into a wolf, or back into his true form, which is humanoid. His statistics, other than his AC, are the same in each form. Any equipment he is wearing or carrying isn’t transformed. He reverts to his true form if he dies."
+						"Alfred can use his action to polymorph into a wolf-humanoid hybrid or into a wolf, or back into his true form, which is humanoid. His statistics, other than his AC, are the same in each form. Any equipment he is wearing or carrying isn't transformed. He reverts to his true form if he dies."
 					]
 				},
 				{
 					"name": "Channel Divinity: Turn Undead",
 					"entries": [
-						"As an action, Alfred presents his holy symbol and speaks a prayer censuring the undead. Each undead that can see or hear him with-in 30 feet of him must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage. A turned creature must spend its turns trying to move as far away from Alfred as it can, and it can’t willingly move to a space within 30 feet of him. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the {@action Dodge} action.",
-						"{@b Destroy Undead.} When an undead fails its saving throw against Alfred’s Turn Undead feature, the creature is instantly destroyed if its challenge rating is at or below (CR 1/2)."
+						"As an action, Alfred presents his holy symbol and speaks a prayer censuring the undead. Each undead that can see or hear him with-in 30 feet of him must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage. A turned creature must spend its turns trying to move as far away from Alfred as it can, and it can't willingly move to a space within 30 feet of him. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the {@action Dodge} action.",
+						"{@b Destroy Undead.} When an undead fails its saving throw against Alfred's Turn Undead feature, the creature is instantly destroyed if its challenge rating is at or below (CR 1/2)."
 					]
 				},
 				{
@@ -26338,13 +27054,13 @@
 				{
 					"name": "Multiattack (Humanoid or Hybrid Form Only)",
 					"entries": [
-						"Alfred makes two attacks: one with his bite and one with his claws. "
+						"Alfred makes two attacks: one with his bite and one with his claws."
 					]
 				},
 				{
 					"name": "Bite (Wolf or Hybrid Form Only)",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage. If the target is a humanoid, it must succeed on a {@dc 16} Constitu-tion saving throw or be cursed with Alfred lycanthropy. "
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage. If the target is a humanoid, it must succeed on a {@dc 16} Constitu-tion saving throw or be cursed with Alfred lycanthropy."
 					]
 				},
 				{
@@ -26469,7 +27185,7 @@
 					{
 						"type": "quote",
 						"entries": [
-							"You have one hour. Make it to the border and you can go with the Wolf God’s blessing. Now run little deer. Run!"
+							"You have one hour. Make it to the border and you can go with the Wolf God's blessing. Now run little deer. Run!"
 						],
 						"by": "Alfred Timothy"
 					},
@@ -26479,7 +27195,7 @@
 						"name": "Background",
 						"page": 169,
 						"entries": [
-							"Alfred is one of six children born to Nathan Timothy, the darklord of Arkandale. Alfred rejected his father’s desire to live peacefully with his human subjects. Alfred thinks people are little better than cattle, and he would be hard pressed to choose the more intelligent species. At a young age, Alfred embraced the Cult of the Wolf God. The Cult sacrifices victims to their savage god on the night of the full moon and takes joy in hunting sentient creatures. Disgusted with his father, Alfred left Arkandale at a young age. He wandered Ravenloft for years until he was captured by a group of shepherds while slaughtering their sheep. Alfred was rescued by a Vistani tribe. The Vistani offered to set Alfred free if he swore he would never attack one of them again. Alfred agreed. Once he was free, he immediately tried to kill the Vistani’s leader. The Vistani drove him off and forced Alfred to flee into the mists. When the mists cleared he was in Verbrek. Verbrek was south of Arkandale and absorbed that realm during the Grand Conjunction."
+							"Alfred is one of six children born to Nathan Timothy, the darklord of Arkandale. Alfred rejected his father's desire to live peacefully with his human subjects. Alfred thinks people are little better than cattle, and he would be hard pressed to choose the more intelligent species. At a young age, Alfred embraced the Cult of the Wolf God. The Cult sacrifices victims to their savage god on the night of the full moon and takes joy in hunting sentient creatures. Disgusted with his father, Alfred left Arkandale at a young age. He wandered Ravenloft for years until he was captured by a group of shepherds while slaughtering their sheep. Alfred was rescued by a Vistani tribe. The Vistani offered to set Alfred free if he swore he would never attack one of them again. Alfred agreed. Once he was free, he immediately tried to kill the Vistani's leader. The Vistani drove him off and forced Alfred to flee into the mists. When the mists cleared he was in Verbrek. Verbrek was south of Arkandale and absorbed that realm during the Grand Conjunction."
 						]
 					},
 					{
@@ -26487,7 +27203,7 @@
 						"name": "Current Sketch",
 						"page": 169,
 						"entries": [
-							"Alfred fears the Vistani and allows them free passage through Verbrek. Anyone else is fair game. One of Alfred’s favorite pastimes is to capture a traveller and take their possessions. The traveller is given one hour to run before Alfred and his pack track them down. If the traveller makes it to the border they are safe (as safe as they can be in Ravenloft with no means to defend themselves). Sometimes the pack is too anxious to give the traveller the full hour. Alfred enjoys these hunts but has to be careful. If Alfred ful-ly gives into his natural instincts, he changes back to his human form. He considers this a test from the Wolf God and kills anyone who finds out."
+							"Alfred fears the Vistani and allows them free passage through Verbrek. Anyone else is fair game. One of Alfred's favorite pastimes is to capture a traveller and take their possessions. The traveller is given one hour to run before Alfred and his pack track them down. If the traveller makes it to the border they are safe (as safe as they can be in Ravenloft with no means to defend themselves). Sometimes the pack is too anxious to give the traveller the full hour. Alfred enjoys these hunts but has to be careful. If Alfred ful-ly gives into his natural instincts, he changes back to his human form. He considers this a test from the Wolf God and kills anyone who finds out."
 						]
 					},
 					{
@@ -26495,7 +27211,7 @@
 						"name": "Darklord's Tactics",
 						"page": 169,
 						"entries": [
-							"Because of his curse, Alfred is cautious in battle. He will send in his pack mates and let them wear his opponents down. Alfred casts spells to hinder his foes and aid his allies until his opponents can’t fight anymore. Once his opponents are bloody and beaten Alfred moves in for the kill."
+							"Because of his curse, Alfred is cautious in battle. He will send in his pack mates and let them wear his opponents down. Alfred casts spells to hinder his foes and aid his allies until his opponents can't fight anymore. Once his opponents are bloody and beaten Alfred moves in for the kill."
 						]
 					},
 					{
@@ -26503,7 +27219,7 @@
 						"name": "Borders",
 						"page": 169,
 						"entries": [
-							"Timothy summons dozens of packs of were-wolves and dire wolves to patrol the border. He cannot seal the borders of Verbrek completely. "
+							"Timothy summons dozens of packs of were-wolves and dire wolves to patrol the border. He cannot seal the borders of Verbrek completely."
 						]
 					},
 					{
@@ -26525,6 +27241,931 @@
 						"href": {
 							"type": "external",
 							"url": "https://i.imgur.com/b0srH6T.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Lady of the Lake",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "fey",
+				"tags": [
+					"humanoid"
+				]
+			},
+			"source": "Darklords&DomainsVol1",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d8 + 21",
+				"average": 52
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 11,
+			"dex": 14,
+			"con": 16,
+			"int": 18,
+			"wis": 17,
+			"cha": 20,
+			"passive": 13,
+			"cr": "9",
+			"shortName": "Lady of the Lake",
+			"page": 176,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Elvish",
+				"telepathy 30 ft."
+			],
+			"languageTags": [
+				"C",
+				"E",
+				"TP"
+			],
+			"save": {
+				"con": "+7",
+				"cha": "+9"
+			},
+			"skill": {
+				"medicine": "+7",
+				"performance": "+9",
+				"stealth": "+6",
+				"survival": "+7"
+			},
+			"resist": [
+				{
+					"resist": [
+						"poison"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed"
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The Lady has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The Lady can breathe air and water."
+					]
+				},
+				{
+					"name": "Poisonous Touch",
+					"entries": [
+						"Creatures touched by the Lady must succeed on a {@dc 17} saving throw or become {@condition poisoned} for a min-ute,  their Intelligence dropping to 2. The touch automatical-ly succeeds on {@condition charmed} individuals, but requires an attack roll for others. A successful dispel magic restores the victim's Intelligence, as does the Lady's touch if she so desires."
+					]
+				},
+				{
+					"name": "Immune to Gas attacks",
+					"entries": [
+						"The Lady is immune to all gas attacks such as cloud kill or poisonous gas."
+					]
+				},
+				{
+					"name": "Sword of Quickness",
+					"entries": [
+						"The Lady's magic sword allows her to always act first during combat. The lady does not need to roll for initiative and cannot be slowed down to act at a later initiative score."
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious",
+				"Magic Resistance"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The Lady's innate spellcasting ability is Charisma (spell save {@dc 17}, +9 to hit with spell attacks). She can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell fog cloud|PHB}",
+						"{@spell ray of frost|PHB}",
+						"{@spell shape water|XGE}",
+						"{@spell thaumaturgy|PHB}",
+						"{@spell water walk|PHB}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell charm person|PHB}",
+							"{@spell sleep|PHB}",
+							"{@spell water breathing|PHB}"
+						],
+						"1e": [
+							"{@spell control water|PHB}",
+							"{@spell greater invisibility|PHB}",
+							"{@spell polymorph|PHB} (self only),",
+							"{@spell wall of water|XGE}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"conditionInflict": [
+				"poisoned",
+				"stunned"
+			],
+			"action": [
+				{
+					"name": "Stupefying Touch",
+					"entries": [
+						"The Lady touches one creature she can see within 5 feet of her. The creature must succeed on a {@dc 17} Intelligence saving throw or take 13 ({@damage 3d6 + 3}) psychic damage and be {@condition stunned} until the start of the Lady's next turn."
+					]
+				},
+				{
+					"name": "Shortsword +2",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"attachedItems": [
+				"+2 shortsword|dmg"
+			],
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"The Lady can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The Lady regains spent legendary actions at the start of her turn."
+			],
+			"legendary": [
+				{
+					"name": "Shortsword Attack",
+					"entries": [
+						"The Lady makes a shortsword attack."
+					]
+				},
+				{
+					"name": "Misty Escape",
+					"entries": [
+						"The Lady momentarily becomes mist and reforms 20ft away from her previous position."
+					]
+				},
+				{
+					"name": "Drowning Kiss (2 Actions)",
+					"entries": [
+						"The Lady chooses a creature within 5ft and kisses it to forcefully draw the breath from its lungs. The creature must succeed on a {@dc 17} Constitution saving throw or begin to suffocate. The effect ends if the creature succeeds at a constitution saving throw rolled at the end of each of its turns."
+					]
+				}
+			],
+			"damageTags": [
+				"P",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"B",
+				"C"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"intelligence"
+			],
+			"savingThrowForcedSpell": [
+				"strength",
+				"wisdom"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/qiQXKFo.png"
+			},
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"Can you hear her now? That voice. That lovely voice. The wind carries it for miles around here.",
+							"It's the Lady of the Lake and that is her song. Her song is beauty given form. It is the very definition of sublime.Now get the hell out of here and never return.\""
+						],
+						"by": "Gregor, resident of Viktal (missing)"
+					},
+					"The Lady of the Lake is cloaked in a powerful illusion, appearing as the ideal of beauty to any creature looking at her. To each creature she appears in a different semblance. To anyone that can see through illusion, the Lady looks like a bloated corpse, with near transparent skin, and dark blue veins snaking under her flesh.. Her lips are blue and her green hair sways as if moving in an invisible current. Her fingers end in  long sharp claws and a short sword is belted at her hip.",
+					{
+						"type": "entries",
+						"name": "Background",
+						"page": 175,
+						"entries": [
+							"The Lady formed  years ago, although whether she was called into being or if she was spontaneously formed, even she doesn't know. One day she was just there, in the shallows of the lake.  A hermit that lived on the north side of the lake gained the Lady's attention, and they fell in love. Soon the Lady and the hermit were expecting their first child, a girl.",
+							"As the Lady drew close to her time to give birth, an evil fey cornered the hermit. The fey, a hag of prodigious power and vicious temper, demanded the hermit help her with her plans to gain magic and power. The hermit refused.",
+							"In a rage, the fey turned the hermit into an avanc, but left his soul and mind untouched. The hermit was trapped in the body of a monster, and soon the local townspeople were terrified of the beast.",
+							"The tales of a monster in the lake drew the attention of Ione Demnach, a paladin and member of the famed Demnach clan, monster hunters one and all. The Demnach clan had a keep on the island in the middle of the lake. They had been prosperous once, but had started to dwindle. Ione trapped the avanc in shallow water and slew the hermit.",
+							"The Lady was beside herself with rage. She left her lake and searched for creatures that could give her revenge. She found a coven of hags in the domain of Tepest and sung her bitter song. The hags offered the Lady a deal. Her daughter would grow up and die in a fraction of the time a mortal normally received, but she would be a sorceress of incredible power. The Lady agreed without hesitation.",
+							"The Lady's daughter, Katherine, was born a few days later and grew to beautiful adulthood in  afew years. The Lady sent Katherine to seduce Ione, who rapidly fell victim to Katherine's beguiling spells. Ione's wife discovered the tryst and fled to the lakeshore. There the broken hearted woman wept. She was answered by a beautiful song. The wife found a sirine, the Lady, singing to her about the beauty of the Fae Realm and the treachery of men. The sirine offered to take Ione's wife away from all the pain and suffering. Ione's wife accepted and took the Lady's offered hand. The woman's body was found the next day.",
+							"Katherine soon gave birth to Ione's son, a caliban with fish features, thick scales, and arms strong enough to uproot trees. For one year, the Lady fed Ione's son, whom she called Madchen, nothing but hate.",
+							"After the year had passed the Lady sent Katherine and her son back to Demnach island to end the clan. Katherine fell to the arrows of the guards, but Madchen tore the gate from its hinges and slaughtered everyone inside the keep.",
+							"While dueling Ione, the last of the keep's defenders, Madchen was slain and Ione was mortally wounded. The Lady took her chance, she approached Ione with a vial of magical poison. The poison would never let Ione die, but would also never let him heal. Ione would be in pain for all eternity.",
+							"As Ione drank the potion, the Lady sang of her victory. She closed her eyes to savor the moment, and when she opened them, everything had changed. Demnach Keep was in ruins and Ione was a brittle skeleton. Something had robbed her of her revenge and trapped her on her island."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Current Sketch",
+						"page": 175,
+						"entries": [
+							"The Lady of the Lake is stuck on her island. If she moves more than a quarter mile beyond its shores, she's immediately teleported back. The Lady is bored and has a blinding hatred of men. She uses her song to lure men to her island, and as they reach land, she uses her powerful charm ability to force the men to serve her. The men are tortured and starved until they are too weak to survive. The Lady has her other servants dump the bodies in the water and sings to attract more men."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Darklord's Tactics",
+						"page": 176,
+						"entries": [
+							"The Lady will try to charm as many people as possible before combat begins. The sirine possesses a powerful charm ability and anyone charmed by her will immediately leap to her defense when she is attacked. If the Lady is forced into combat, she will use her greater invisibility ability and her short sword of quickness. The sirine is lightning fast and will target spellcasters and rogues before moving on to tougher targets."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Borders",
+						"page": 176,
+						"entries": [
+							"The Lady of the Lake cannot close the borders to her domain"
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/daVLN0j.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Azalin Rex",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "undead",
+				"tags": [
+					"humanoid"
+				]
+			},
+			"source": "Darklords&DomainsVol1",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d8 + 80",
+				"average": 170
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 16,
+			"con": 19,
+			"int": 23,
+			"wis": 12,
+			"cha": 17,
+			"passive": 18,
+			"cr": "24",
+			"shortName": "Azalin Rex",
+			"page": 187,
+			"senses": [
+				"truesight 120 ft."
+			],
+			"senseTags": [
+				"U"
+			],
+			"languages": [
+				"Common",
+				"Darkonese",
+				"Balok",
+				"Draconic",
+				"Dwarven",
+				"Elven",
+				"Infernal",
+				"Mordentish",
+				"Vaasi"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"I"
+			],
+			"save": {
+				"con": "+11",
+				"int": "+13",
+				"wis": "+8"
+			},
+			"skill": {
+				"arcana": "+20",
+				"deception": "+10",
+				"history": "+13",
+				"insight": "+8",
+				"intimidation": "+10",
+				"investigation": "+13",
+				"perception": "+8",
+				"persuasion": "+10",
+				"stealth": "+10"
+			},
+			"immune": [
+				{
+					"immune": [
+						"cold",
+						"lightning",
+						"necrotic",
+						"poison"
+					]
+				},
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Azalin fails a saving throw, he can choose to succeed instead. "
+					]
+				},
+				{
+					"name": "Rejuvenation",
+					"entries": [
+						"If Azalin has still his phylactery, he gains a new body in 3 days, regaining all his hit points and becoming active again. The new body appears within 5 feet of the phylactery. "
+					]
+				},
+				{
+					"name": "Turn Resistance",
+					"entries": [
+						"Azalin has advantage on saving throws against any effect that turns undead."
+					]
+				},
+				{
+					"name": "Switch Spells (4/Day)",
+					"entries": [
+						"Four times per day, Azalin can use a bonus action to use his book of knowledge and switch one of his prepared spells with any other from the wizard spell list. The spells switched must be of the same level. "
+					]
+				},
+				{
+					"name": "Illusory Appearance",
+					"entries": [
+						"Azalin uses illusions to disguise himself as he appeared in life. Divination spells falsely detect Azalin as a living human, not undead, with no aura of necromancy emitting from him. Azalin can dispel these illusions as a bonus action, or if he uses Frightening Gaze, drops to 30 hit points or fewer, or a dispel magic spell is cast on him."
+					]
+				},
+				{
+					"name": "Inability to Learn",
+					"entries": [
+						"Azalin is cursed to not be able to learn new spells. His known spells never change."
+					]
+				},
+				{
+					"name": "Grasp of Details",
+					"entries": [
+						"Azalin knows who has visited his kingdom in the past and current. He can identify any Darkonian by name, on sight. He can also peer into the memories of anyone inside his domain."
+					]
+				},
+				{
+					"name": "Modify Memories",
+					"entries": [
+						"Azalin can shape the false memories created by Darkon. Azalin can shield specific individuals from having their memories stolen, restore such memories once taken or even imprint new, false memories at any time in any subject within Darkon's borders. Unlike the modify memory spell, there is no limit to the amount of time Azalin can rewrite in the subject's mind. The target receives no saving throw. However, as with Darkon's standard memory drain, subjects immediately re-gain their true memories the moment they leave the domain. In addition, whenever Azalin enters the memories of his subjects, their minds subconsciously touch his thoughts as well. Thus, people whose recollections Azalin reads or alters will always have disturbing, incongruent elements subtly woven into their relevant memories."
+					]
+				},
+				{
+					"name": "Undead Dominion",
+					"entries": [
+						"Azalin can animate any humanoid corpse in Darkon as a zombie or skeleton, as the {@spell animate dead|PHB} spell without a limit on the number he can raise and control at any time. Azalin automatically commands all undead creatures in Darkon and can see, hear and even speak through any non-intelligent undead he commands."
+					]
+				},
+				{
+					"name": "Immunities",
+					"entries": [
+						"Azalin is immune to any spell or effect that would alter his form, induce sleep, lower his Strength score, or affect his mind. Spells like {@spell disintegrate|PHB}, {@spell finger of death|PHB}, or other similar death magic spells damage him but do not affect him otherwise. Creatures of 6 hit dice or less cannot harm him by any means."
+					]
+				},
+				{
+					"name": "Contingency",
+					"entries": [
+						"The first time a creature attacks Azalin from behind is hit by a {@spell flesh to stone|PHB} contingency spell."
+					]
+				},
+				{
+					"name": "Imp Assistants",
+					"entries": [
+						"Azalin's Imps, Skeever and Squalimous, grant him a regeneration of 5 hit points per turn and extra spell slots while at least one of them is alive."
+					]
+				},
+				{
+					"name": "Sleeping Curse",
+					"entries": [
+						"Azalin's curse cuts into his productivity by forcing him to fall asleep. On average, Azalin's sleep to wake cycle is one:five, so he could choose to take four hours off every day or one day out of every six. He varies the schedule to avoid predictability. If Azalin pushes himself he can stay up for weeks on end, but the curse weighs more heavily upon him until he is forced to fall asleep wherever he may be. While asleep, Azalin experiences the collective unconsciousness of Darkon's citizens. Azalin becomes aware of topics and figures who have earned the attention of the nation's psyche. While asleep, Azalin can mass alter the memories or dispositions of Darkon's citizens .",
+						"{@b Rewriting a name} disappearing someone from everyone's memory, encouraging a certain bias, or heightening a fear. Like mass suggestion, Azalin can't force Darkon's citizens to believe or act unreasonably. Newcomers to Darkon are immune to Azalin's mind tampering, but their vulnerability increases the longer they spend in Darkon."
+					]
+				},
+				{
+					"name": "Spell Resistance",
+					"entries": [
+						"Azalin has advantage on saving throws from spells or spell attacks"
+					]
+				},
+				{
+					"name": "Archlich Reborn (1/Day)",
+					"entries": [
+						"Azalin regains an 8th level or lower spell slot. All creatures in a 15ft burst are pulled back 10ft and must succeed on a {@dc 21} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Prepared",
+					"entries": [
+						"As part of his daily/weekly routine, Azalin casts the following spells upon himself outside of battle: {@spell contingency|PHB}, {@spell mind blank|PHB}, {@spell disguise self|PHB}, and {@spell Nystul's Magic Aura|PHB}."
+					]
+				},
+				{
+					"name": "Synaptic Static (3/Day)",
+					"entries": [
+						"Azalin chooses a point within range and causes psychic energy to explode there. Each creature in a 20-foot-radius sphere centered on that point must make a {@dc 21} Intelligence saving throw. A creature with an Intelligence score of 2 or lower can't be affected by this spell. A target takes {@damage 8d6} psychic damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Avernus Phylactery",
+					"entries": [
+						"A minuscule amount of life energy is collected from Darkon's living people when they conduct sunset ritual prayers for The Eternal Order and the other religions that Azalin has subverted. The tithe is channeled into a pool of de-fensive energy in Azalin's phylactery. This grants Azalin's Avernus phylactery temporary hit points unless he expends the energy for himself. Stopping Darkon's citizens from performing prayers and rituals diminishes the pool of defensive energy available for the next day. Some scheduled disruptive events, like holidays and country-wide festivals, increase truancy. A widely-seen, well-timed disturbance may also suffice: interesting skywrit-ing, a volcanic eruption, a vivid meteorite, a dragon flyover in a populated area, etc. Mass death or religious conversion also weaken or negate the Avernus phylactery's energy collection. If the Avernus phylactery's ability has been weakened, make the following change: {@b Weakened Avernus Phylactery}"
+					]
+				},
+				{
+					"name": "Weakened Avernus Phylactery",
+					"entries": [
+						"While Azalin maintains a link to his phylactery in Castle Avernus, once per day, Azalin may choose to activate one of its two abilities. He cannot choose another until the phylactery's defensive energy pool regener-ates at sunset.",
+						{
+							"type": "list",
+							"items":[
+								"{@b Damage Absorption:} Activated at the start of Azalin's turn, the next 20 hit points of damage that he takes is transferred to the phylactery. Azalin takes any leftover damage. This ability terminates at sunset.",
+								"{@b One-turn damage resistance:} As a reaction to an attack or other imminent source of damage, all damage to Azalin is halved until the end of the turn."
+							]
+						},
+						"Azalin can, as a bonus action on his turn, break his link to the Avernus phylactery and cancel any ongoing effects. This does not affect his Rejuvenation. Azalin can re-establish his link to the Avernus phylactery as a bonus action on his turn, but only while in Castle Avernus or its environs. The abilities of the Avernus phylactery are suppressed if it or Azalin is fully within an {@i anti-magic} field. (If weakened, subtract 1 from Azalin's CR.)"
+					]
+				},
+				{
+					"name": "Significant Possessions",
+					"type": "inset",
+					"entries": [
+						"Azalin has accumulated a vast collection of scrolls and magic items, many crafted by his own hand, including a wide variety of cursed items. If Azalin has time to prepare, he will often wield magic items specifically tailored to his foes' weaknesses or see to it that cursed items fall into his foes' hands."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Rejuvenation",
+				"Turn Resistance"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Azalin is an 18th-level spellcaster. His spell-casting ability is Intelligence (spell save {@dc 21}, +13 to hit with spell attacks). Azalin has the following wizard spells prepared: "
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell acid splash|PHB}",
+								"{@spell blade ward|PHB}",
+								"{@spell booming blade|TCE}",
+								"{@spell chill touch|PHB}",
+								"{@spell control flames|XGE}",
+								"{@spell create bonfire|XGE}",
+								"{@spell dancing lights|PHB}",
+								"{@spell fire bolt|PHB}",
+								"{@spell friends|PHB}",
+								"{@spell frostbite|XGE}",
+								"{@spell green-flame blade|TCE}",
+								"{@spell gust|XGE}",
+								"{@spell gust barrier|HWCS}",
+								"{@spell infestation|XGE}",
+								"{@spell light|PHB}",
+								"{@spell lightning lure|TCE}",
+								"{@spell mage hand|PHB}",
+								"{@spell mending|PHB}",
+								"{@spell message|PHB}",
+								"{@spell mind sliver|TCE}",
+								"{@spell minor illusion|PHB}",
+								"{@spell mold earth|XGE}",
+								"{@spell poison spray|PHB}",
+								"{@spell prestidigitation|PHB}",
+								"{@spell ray of frost|PHB}",
+								"{@spell shape water|XGE}",
+								"{@spell shocking grasp|PHB}",
+								"{@spell sword burst|TCE}",
+								"{@spell thunderclap|XGE}",
+								"{@spell toll the dead|XGE}",
+								"{@spell true strike|PHB}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell alarm|PHB}",
+								"{@spell charm person|PHB}",
+								"{@spell comprehend languages|PHB}",
+								"{@spell disguise self|PHB}",
+								"{@spell fog cloud|PHB}",
+								"{@spell identify|PHB}",
+								"{@spell magic missile|PHB}",
+								"{@spell protection from evil and good|PHB}",
+								"{@spell silent image|PHB}",
+								"{@spell Tasha's hideous laughter|PHB}",
+								"{@spell Tenser's floating disk|PHB}",
+								"{@spell thunderwave|PHB}",
+								"{@spell unseen servant|PHB}"
+							],
+							"slots": 6
+						},
+						"2": {
+							"spells": [
+								"{@spell alter self|PHB}",
+								"{@spell arcane lock|PHB}",
+								"{@spell darkness|PHB}",
+								"{@spell enlarge/reduce|PHB}",
+								"{@spell flaming sphere|PHB}",
+								"{@spell hold person|PHB}",
+								"{@spell invisibility|PHB}",
+								"{@spell knock|PHB}",
+								"{@spell locate object|PHB}",
+								"{@spell magic mouth|PHB}",
+								"{@spell Melf's acid arrow|PHB}",
+								"{@spell mirror image|PHB}",
+								"{@spell ray of enfeeblement|PHB}",
+								"{@spell see invisibility|PHB}",
+								"{@spell shatter|PHB}",
+								"{@spell suggestion|PHB}",
+								"{@spell web|PHB}"
+							],
+							"slots": 6
+						},
+						"3": {
+							"spells": [
+								"{@spell animate dead|PHB}",
+								"{@spell bestow curse|PHB}",
+								"{@spell clairvoyance|PHB}",
+								"{@spell daylight|PHB}",
+								"{@spell dispel magic|PHB}",
+								"{@spell fireball|PHB}",
+								"{@spell fly|PHB}",
+								"{@spell gaseous form|PHB}",
+								"{@spell haste|PHB}",
+								"{@spell lightning bolt|PHB}",
+								"{@spell nondetection|PHB}",
+								"{@spell sending|PHB}",
+								"{@spell wind wall|PHB}"
+							],
+							"slots": 6
+						},
+						"4": {
+							"spells": [
+								"{@spell arcane eye|PHB}",
+								"{@spell charm monster|XGE}",
+								"{@spell confusion|PHB}",
+								"{@spell dimension door|PHB}",
+								"{@spell Evard's black tentacles|PHB}",
+								"{@spell ice storm|PHB}",
+								"{@spell phantasmal killer|PHB}",
+								"{@spell stoneskin|PHB}",
+								"{@spell summon greater demon|XGE}"
+							],
+							"slots": 5
+						},
+						"5": {
+							"spells": [
+								"{@spell Bigby's hand|PHB}",
+								"{@spell contagion|PHB}",
+								"{@spell dominate person|PHB}",
+								"{@spell geas|PHB}",
+								"{@spell hold monster|PHB}",
+								"{@spell legend lore|PHB}",
+								"{@spell planar binding|PHB}",
+								"{@spell scrying|PHB}",
+								"{@spell telekinesis|PHB}",
+								"{@spell wall of stone|PHB}"
+							],
+							"slots": 5
+						},
+						"6": {
+							"spells": [
+								"{@spell contingency|PHB}",
+								"{@spell disintegrate|PHB}",
+								"{@spell eyebite|PHB}",
+								"{@spell flesh to stone|PHB}",
+								"{@spell globe of invulnerability|PHB}",
+								"{@spell guards and wards|PHB}",
+								"{@spell summon fiend|TCE}",
+								"{@spell true seeing|PHB}",
+								"{@spell wall of ice|PHB}"
+							],
+							"slots": 5
+						},
+						"7": {
+							"spells": [
+								"{@spell finger of death|PHB}",
+								"{@spell forcecage|PHB}",
+								"{@spell project image|PHB}",
+								"{@spell symbol|PHB}"
+							],
+							"slots": 4
+						},
+						"8": {
+							"spells": [
+								"{@spell feeblemind|PHB}",
+								"{@spell maze|PHB}",
+								"{@spell power word stun|PHB}"
+							],
+							"slots": 3
+						},
+						"9": {
+							"spells": [
+								"{@spell foresight|PHB}",
+								"{@spell gate|PHB}",
+								"{@spell power word kill|PHB}",
+								"{@spell prismatic wall|PHB}",
+								"{@spell wish|PHB}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"bonus": [
+				{
+					"name": "Switch Spells (4/Day)",
+					"entries": [
+						"Four times per day, Azalin can use a bonus action to use his book of knowledge and switch one of his prepared spells with any other from the wizard spell list. The spells switched must be of the same level. "
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"CUR",
+				"AOE"
+			],
+			"conditionInflict": [
+				"frightened",
+				"paralyzed",
+				"prone"
+			],
+			"action": [
+				{
+					"name": "Paralyzing Touch",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}10 ({@damage 3d6}) cold damage. The target must succeed on a {@dc 21} Constitution saving throw or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. "
+					]
+				},
+				{
+					"name": "Night Blade",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}12 ({@damage 1d12 + 6}) force damage, plus 4 ({@damage 1d8}) necrotic damage."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Darklords&DomainsVol1LairActionsAzalinRex",
+				"source": "Darklords&DomainsVol1"
+			},
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"Azalin can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Azalin regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Cantrip",
+					"entries": [
+						"Azalin casts a cantrip."
+					]
+				},
+				{
+					"name": "Paralyzing Touch (Costs 2 Actions)",
+					"entries": [
+						"Azalin uses his Paralyzing Touch."
+					]
+				},
+				{
+					"name": "Frightening Gaze (Costs 2 Actions)",
+					"entries": [
+						"Azalin fixes his gaze on one creature he can see within 10 feet of him. The target must succeed on a {@dc 21} Wisdom saving throw against this magic or become {@condition Frightened|PHB} for 1 minute. The {@condition Frightened|PHB} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a target's saving throw is suc-cessful or the effect ends for it, the target is immune to Azalin's gaze for the next 24 hours. Azalin's false appearance is dispelled by this action."
+					]
+				},
+				{
+					"name": "Disrupt Life (Costs 3 Actions)",
+					"entries": [
+						"Each living creature within 20 feet of Azalin must make a {@dc 21} Constitution saving throw against this magic, taking 21 ({@damage 6d6}) necrotic damage on a failed save, or ",
+						"half as much damage on a successful one."
+					]
+				}
+			],
+			"damageTags": [
+				"C",
+				"N",
+				"O",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"A",
+				"B",
+				"C",
+				"F",
+				"I",
+				"L",
+				"N",
+				"O",
+				"P",
+				"S",
+				"T",
+				"Y"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"intelligence",
+				"strength",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"dexterity",
+				"intelligence",
+				"strength",
+				"wisdom"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/9MSf631.png"
+			},
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"I know more about the ground you stand on than any other. I have studied the arcane arts for centuries. I am the doom of the powers that keep me prisoner here. I will escape. I will break my curse. Then I will drag these Dark Powers into the light. I will cast them down into hells of my creation and watch them suffer. I am eternal. I am their doom. I am Azalin."
+						],
+						"by": "Azalin Rex"
+					},
+					"Azalin is the lich lord of Darkon. In his true form Azalin is an emaciated corpse, reeking of decay, with eyes glowing like red pin pricks. The flesh around his mouth has pulled back, revealing cracked yellow teeth. If Azalin wishes to shock someone, especially if that person is going to be dragged to one of his many torture or experiment chambers, then he wears a loin cloth, and black cape with blood red trim and several expensive pieces of jewelry. Usually Azalin wears flowing robes and several rings. The rings are powerful magic items.",
+					"When Azalin appears before his subjects, he cloaks his appearance in powerful illusions. In these illusions, Azalin looks like an ancient human. He regularly changes his features, but it's unknown if Azalin changes his appearance for esoteric reasons or merely because it suits his whims. ",
+					"Azalin is prone to quick decisions and has a dangerous temper. His vanity doesn't allow him to admit a mistake, so he will never admit error during one of his outbursts. Instead Azalin will use magic or intimidation to force a minion, even one that couldn't possibly have made the choice, to admit their guilt. The poor minion is quickly dragged away to Azalin's laboratory. Azalin wore a heavy iron crown mounted with a spike until the events of the Requiem. The crown was lost during the planar chaos that rocked Ravenloft.",
+					{
+						"type": "entries",
+						"name": "Background",
+						"page": 184,
+						"entries": [
+							"Firan Zal'honan was the second son of Duke Tiralitan Zal'honan, a minor noble in a forgotten world. At birth his prospects were bleak, Firan couldn't inherit land and he did not have the strength of arms to join a company of mercenaries. The duchy was small and surrounded by hostile tribes of humanoids. The young noble respected his father and older brother, Ranald, but had no love for them. The only person Firan developed any connection for was his younger brother Irik. Irik was kind and slow to anger. He was the only person who could calm Firan's temper when the young noble lost control. Firan's father hated magic in any form and forbade it in his lands. At first Firan respected his father's rules and avoided magic, but as he grew Firan realized magic offered him what nothing else could, control. The discipline necessary to study the arcane arts gave Azalin control over himself and the spells he studied gave him control over others. As Firan grew in ability he realized another desire magic could achieve. Power.",
+							"Firan soon confided in Irik about his arcane pursuits, the pair soon joining together in studying under the wizard Quantarius. Quantarius was a powerful wizard who kept to the shadows to avoid the wrath of the boy's father. Firan mastered magic quickly, but soon his grasp exceeded even his considerable reach. When he was 15, Firan and Irik tried to summon a fiend. The fiend quickly overpowered both of the young mages and went on a rampage. Quantarius was able to slay the fiend, but not before Irik lost his life. Quantarius had saved the duchy, but was outed as a mage, and banished. Firan chose to follow Quantarius into exile and continue his studies.",
+							"Over time, Firan mastered powerful magic. He could drain the vitality of others to extend his life and heal his wounds. He could steal spells from the minds of other mages and learn them in an instant. Firan studied dark magic and soon moved beyond what Quantarius was willing to teach him. When Firan studied on his own he learned even faster.",
+							"During his exile, Tiralitan died, and Ranald inherited the duchy. Under Ranald's rule his people suffered. Ranald was a harsh and petty tyrant who drank and whored the treasury to nothing. The people suffered, both from Ranald's drinking and from the raids of the surrounding tribes. Constant drinking and feasting took its toll on Ranald and within a few years he passed. Firan returned from exile as an Azal'Lan, a Wizard King.",
+							"Azal'Lan was a harsh but fair ruler. Magic was embraced and Azal'Lan conducted a series of brutal mercenary campaigns against the neighboring tribes. His duchy became powerful militarily and economically. His people procured, as long as they obeyed. Anyone who broke the law was severely punished, even Azal'Lan's own son, Irik. Irik, like his namesake, was a kind soul. When Azal'Lan imprisoned several political prisoners Irik led a doomed attempt to free them. Irik was tried for treason and found guilty by his own father. While Irik's conspirators and the prisoners were executed by a headsman, Azal'Lan beheaded Irik himself. After the death of his son Azal'Lan became obsessed with immortality and restoring his son to life. He would race toward any hint of new magic to add to his immense library. It was a shock when the secret to lichdom was offered to Azal'Lan by a shadowy figure in his own lab. Azal'Lan was wary, but could not resist the power undeath offered. After his apotheosis, Azal'Lan ruled for decades, greatly expanding his territory and power. Despite the decades Azal'Lan still desired to resurrect his son. One day a traveller told the lich king of a new magic that would bring the dead to life without the interference of the gods. Azal'Lan took a small retinue of guards and set off after the rumors. Once outside of his duchy Azal'Lan and his guards were ambushed by a combined force of tribal warriors and mercenaries. Azal'Lan's guards were slaughtered but the lich was more than a match for his assailants. He laughed as he drained their lives away, dissolved their bones, and shattered their minds. As the last tribeman died the mist came for Azal'Lan.",
+							"When the mists cleared Azal'Lan was in Barovia. The first person he met mispronounced his title as Azalin. It was a name Azal'Lan quickly adopted in his new home. Azalin traveled for a time and eventually found Strahd von Zarovich, the lord of Barovia and the only creature in Barovia that Azalin could consider an equal. Even then Azalin knew he could kill Strahd if he so wished. Azalin stayed at Castle Ravenloft for years. He quickly learned about his prison and began to experiment with the nature of the demiplane and the Dark Powers. One of his earliest experiments involved creating the arcane machine, the Apparatus, that opened a portal to Mordent and in the chaos that followed dragged the entire country through to become a new dark domain. After the experiment failed, relations between Strahd and Azalin, already strained, reached a breaking point. Azalin knew he could destroy Strahd, but was concerned Barovia would dissolve into the mists with the death of its lord. Because Mordent had been pulled into the mists and now lay outside of Barovia's borders, Azalin deduced that new countries may exist or be created in the mists. Azalin left Castle Ravenloft and walked into the mists. He was gifted the realm of Darkon. For a time after the creation of Darkon, Azalin was split into two beings. Firan was a mage who couldn't remember anything about himself. Firan helped those in need, but felt pulled to Castle Avernus. There Firan fought and defeated a powerful undead entity called Daraculas. When Daraculas was slain, its undead essence merged with Firan and Azalin was reborn. At first Azalin raged against the Dark Powers and swore to break free of their control and get his revenge. After some time and research, Azalin has come to believe that the Dark Powers had granted him a chance as Firan to escape Ravenloft and return home. Azalin established his rule at Castle Avernus, but the nearby city of Il Aluk became the political and economic center of Darkon. While exploring the castle, Azalin found the crypt of his son, Irik in the catacombs beneath the castle.",
+							"Azalin himself is unsure, but at some point after he was taken by the mists, he lost the ability to learn new magic. Azalin remembers creating new types of golems and researching the complicated magical rituals for his first attempt to breach Ravenloft. He also remembers teaching Strahd the spells needed to activate the Apparatus. Azalin's memory changes every time he tries to remember, and interrupting one of these reveries is a sure way to die a painful death.",
+							"Azalin quickly established his rule in Darkon. He assembled the Kargat, a secret police of human informants, werewolves, and vampires, charged with crushing dissent and ferreting out spies. Over the years the Kargat expanded their activities to carry Azalin's will to other domains as spies and assassins.",
+							"Azalin continued his research into the nature of the demiplane of dread. He tried to escape several times, all of which have failed. One such attempt, now called the Grand Conjunction, nearly tore the demiplane apart and reordered the domains that were trapped. His most recent attempt, the Requiem, drained the life force of an entire city, Il Aluk, and created a new dark lord, Death. The events of the Requiem were supposed to grant Azalin enough energy that he could break free of his corporeal body and escape Ravenloft. Instead Azalin's body was blasted apart and his mind scattered across Darkon. Azalin struggled to reassemble his mind for five years. Finally Azalin could possess the body of his son and be reborn."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Current Sketch",
+						"page": 185,
+						"entries": [
+							"Azalin has recovered some of his ability to learn new magic. If the subject is extremely closely related to a subject that he is familiar with, then Azalin can learn about this new magic, though it will take him decades longer than a mortal mage to master the new magic. Since his return Azalin has also gained a new ability to look into the minds and alter the memories of anyone currently in Darkon. Azalin retains his abilities to control any undead in Darkon, even intelligent undead. Neither of these abilities extends to creatures in Il Aluk, which causes Azalin considerable alarm Azalin's new experiments have moved beyond escaping Ravenloft. He has sent an agent known only as “S” into the neighboring domains. It is unknown what S is looking for, but S is searching with a feverish intensity. In his absence, members of the Kargat attempted to take over Darkon, leading to shadow war between different factions of the organization. Azalin devotes considerable time and effort to stamping out any faction of the Kargat that denies his right to rule. Azalin's subjects believe he is draconian, but human. They admit he uses dark magic to extend his life through unnatural means, but even if presented with incontrovertible proof of his true nature they will dismiss it and accuse the presenter of manufacturing lies. If the presenter persists Azalin's subjects will become increasingly distressed and quickly escalate to violence.",
+							{
+								"type": "entries",
+								"name": "The Eternal Order",
+								"page": 186,
+								"entries": [
+									"Azalin concocted a faith from whole cloth, The Eternal Order, with themes of ancestral worship, lawful conduct, and reverence for the dead. The Eternal Order is the state religion of Darkon and is practiced by a majority of Darkon's citizens with varying degrees of attentiveness. Despite its madeup origin, clerics and paladins of The Eternal Order nevertheless receive divine powers, and their healing evocation spells which normally exclude undead may heal them for half effectiveness when cast using a spell slot at least one higher than base level. Most ranking clergy are simply another arm of Azalin's intelligence and state control apparatus and have little faith, but some sects are truly faithful and call upon the powers of the dead to protect the living, investigate cold cases, protect tombs, judge and aid the undead with valid grievances against the living, and put to rest those they cannot help. Players who want to create a character with a background in The Eternal Order should choose any non-chaotic alignment, but barbarians following the Path of the Ancestral Guardians are always welcome in the Order's ranks."
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Darklord's Tactics",
+						"page": 186,
+						"entries": [
+							"Azalin has mastered magic for longer than anyone in Ravenloft has been alive. He scries his enemies in Darkon and other domains and his informants everywhere. Azalin will dispatch members of the Kargat to deal with a potential threat long before it gets close to Azalin. If his enemies manage to repeatedly avoid or slay his agents, Azalin will become involved. He will carefully watch his enemies until he knows all their abilities. Azalin will choose the ideal spot for an ambush. When Azalin attacks he will unleash his most devastating spells and flood the area with mindless undead and kargat members. Azalin doesn't care if his minions are incinerated by his spells as long as his enemies are slain. Azalin's phylactery is a massive golden dragon skull. The skull weighs more than 1,000 pounds and its bone has been magically hardened beyond the strength of adamantine. Azalin has woven dozens of protective spells over the skull, and has undead and fiends nearby to protect it.",
+							{
+								"type": "entries",
+								"name": "Undead Nature",
+								"page": 186,
+								"entries": [
+									"Azalin doesn't require air, food, or drink. Azalin is cursed to sleep at intervals, but does not require it."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Utility Belt",
+								"page": 186,
+								"entries": [
+									"Azalin wears a belt with several wands, scrolls, and other items that are situationally useful. The belt also holsters a spell component pouch, costly spell components like silver soul cages, a mirror for scrying and cornering spells, consumable items, and whatever else appeals to your sensibilities. Items specifically prepared for the belt easily release and reattach, but never fall off during the chaos of combat. The utility belt was designed by a master thief to allow the user to swiftly exchange the objects they are holding. If Azalin is holding an object he drew from the belt, instead of dropping it, he may stow it without consuming his free action. Azalin poisons or minorly curses valuable items to deter thieving hands. The nature of those curses is left as an exercise for the GM."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Book of Knowledge",
+								"page": 186,
+								"entries": [
+									"While studying the Book of Names which replaces memories with false ones, Azalin had a curious idea. Could he overwrite a wizard's memory of the spells he has prepared? Could he implant the memory of a spell he has never used, thus allowing him to cast spells he cannot learn otherwise? Braiding several threads of thought on the nature of the mind, magic, and time into one research project, Azalin created the Book of Knowledge, a memory-altering tome that targets his own mind and rapidly replaces spells he has prepared with the memories of ones he has prepared in the past. Although Azalin's goal to cast new spells has proven elusive, being able to swap spells in the chaos of battle is the envy of any wizard, no less with a book stored in a secure location. Azalin's Book of Knowledge is an absolute secret, even from his son."
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Borders",
+						"page": 186,
+						"entries": [
+							"Instead of closing Darkon's misty borders, Azalin can command an army of undead forces to rise from the ground and defend it or prevent specific targets of Azalin's ire from leaving. In battles, slain enemy creatures stand back up to fight their former comrades. The crowd of undead is at least 20 creatures deep. The undead at the border cannot be turned. If a creature attempts to fly over the horde they are forced down to the ground by an invisible force. Any attempt to teleport past the horde partially fails. The creature is instead teleported into the middle of the undead horde. Undead near the border inerrantly know the location of creatures Azalin does not want to leave Darkon, and the undead relentlessly assemble and attack in greater and greater numbers until the targets turn back from the border —- in which case they are harried no further. Azalin himself doesn't automatically learn about attempted escapes of creatures he forbade from leaving Darkon, but he is likely to receive reports of an unexplained mass rising of undead and put two-and-two together."
+						]
+					},	
+					{
+						"type": "quote",
+						"page": 187,
+						"entries": [
+							"The lust for power, for dominating others, inflames the heart more than any other passion."
+						],
+						"by": "Tacitus"
+					},
+					{
+						"name": "Significant Possessions",
+						"type": "inset",
+						"entries": [
+							"Azalin has accumulated a vast collection of scrolls and magic items, many crafted by his own hand, including a wide variety of cursed items. If Azalin has time to prepare, he will often wield magic items specifically tailored to his foes' weaknesses or see to it that cursed items fall into his foes' hands."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/cvH7myt.jpg"
 						}
 					}
 				]
