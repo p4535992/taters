@@ -115,9 +115,9 @@
 				{
 					"type": "list",
 					"items": [
-						"The massive fireplace in the inn roars to life, flinging embers everywhere. Every creature within 50 feet of Harkon must make a DC 15 Dexterity saving throw. They take 21 (6d6) fire damage on a failed save.",
-						"Harkon chooses one creature within 30 feet of him. All the food and drink that creature has in its stomach turns rancid. That creature must make a DC 18 Constitution saving throw. If they fail they take 14 (4d6) poison damage and are poisoned for 1 minute. They may repeat the saving throw at the end of their turn to end the condition.",
-						"Harkon drinks or eats any of the food he finds in the Kartakan Inn. Harkon is healed for 18 (4d8) hit points."
+						"{@b Ember Fireplace:} The massive fireplace in the inn roars to life, flinging embers everywhere. Every creature within 50 feet of Harkon must make a DC 15 Dexterity saving throw. They take 21 (6d6) fire damage on a failed save.",
+						"{@b Stomach Turn:} Harkon chooses one creature within 30 feet of him. All the food and drink that creature has in its stomach turns rancid. That creature must make a DC 18 Constitution saving throw. If they fail they take 14 (4d6) poison damage and are poisoned for 1 minute. They may repeat the saving throw at the end of their turn to end the condition.",
+						"{@b Healing Food:} Harkon drinks or eats any of the food he finds in the Kartakan Inn. Harkon is healed for 18 (4d8) hit points."
 					]
 				},
 				"Harkon Lucas can't repeat an effect until they have all been used, and he can't use the same effect two rounds in a row."
@@ -215,7 +215,7 @@
 			]
 		},
 		{
-			"name": "Darklords&DomainsVol1LairActionsDominicD_onaire",
+			"name": "Darklords&DomainsVol1LairActionsDominicD_Honaire",
 			"source": "Darklords&DomainsVol1",
 			"regionalEffects": [
 				"Dementlieu is affected by Dominic's presence, which creates the following effects:",
@@ -227,6 +227,22 @@
 					]
 				},
 				"If the Dominic d'Honaire dies, these effects fade over the course of {@dice ld10} days."
+			]
+		},
+		{
+			"name": "Darklords&DomainsVol1LairActionsVladDrakov",
+			"source": "Darklords&DomainsVol1",
+			"lairActions": [
+				"On initiative count 20 (losing initiative ties), Vlad Drakov can take one lair action to cause one of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"{@b The crossbowmen line:} The crossbowmen that line the walls pepper Vlad’s enemies with bolts. Every enemy within 30 feet of Vlad must make a DC 18 dexterity check. They take 22 ({@dice 4d10}) piercing damage on a failed save and half as much on a successful one.",
+						"{@b The spikes line:} The spikes that line the walls of several of the floors in the inside of Castle Falkovnia twist and lengthen to impale a crea-ture Vlad chooses with 100 feet. That creature must make a DC 16 Strength saving throw. Creatures that fail take 40 ({@dice 10d8}) piercing damage and are grappled until initiative count 20 of the following round.",
+						"{@b Horns of battle:} Horns of battle fill the air. Vlad and any allies within 30 feet fight with renewed vigor. Vlad and his allies make attack rolls and saving throws with advantage until initiative count 20 of the following round."
+					]
+				},
+				"Vlad Drakov can't repeat an effect until they have all been used, and he can't use the same effect two rounds in a row."
 			]
 		}
 	],
@@ -2095,61 +2111,6 @@
 				"fromSubclass": [
 					{
 						"class": {
-							"name": "Bard",
-							"source": "XPHB"
-						},
-						"subclass": {
-							"name": "College of Lore",
-							"shortName": "Lore",
-							"source": "XPHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "XPHB"
-						},
-						"subclass": {
-							"name": "Arcana Domain",
-							"shortName": "Arcana",
-							"source": "SCAG"
-						}
-					},
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "XPHB"
-						},
-						"subclass": {
-							"name": "Eldritch Knight",
-							"shortName": "Eldritch Knight",
-							"source": "XPHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Ranger",
-							"source": "XPHB"
-						},
-						"subclass": {
-							"name": "Swarmkeeper",
-							"shortName": "Swarmkeeper",
-							"source": "TCE"
-						}
-					},
-					{
-						"class": {
-							"name": "Rogue",
-							"source": "XPHB"
-						},
-						"subclass": {
-							"name": "Arcane Trickster",
-							"shortName": "Arcane Trickster",
-							"source": "XPHB"
-						}
-					},
-					{
-						"class": {
 							"name": "Cleric",
 							"source": "PHB"
 						},
@@ -2267,13 +2228,7 @@
 					"name": "Pact of the Tome",
 					"source": "PHB",
 					"featureType": [
-						"PB"
-					]
-				},
-				{
-					"name": "Pact of the Tome",
-					"source": "XPHB",
-					"featureType": [
+						"PB",
 						"EI"
 					]
 				}
@@ -2304,10 +2259,6 @@
 				{
 					"name": "Magic Initiate",
 					"source": "PHB"
-				},
-				{
-					"name": "Magic Initiate",
-					"source": "XPHB"
 				},
 				{
 					"name": "Scion of the Outer Planes",
@@ -5475,6 +5426,115 @@
 				"The wearer has Disadvantage on Dexterity ({@skill Stealth}) checks.",
 				"If the wearer has a Strength score lower than 15, their speed is reduced by 10 feet."
 			]
+		},
+		{
+			"name": "Rod of Flailing",
+			"source": "Darklords&DomainsVol1",
+			"page": 202,
+			"type": "M",
+			"rarity": "very rare",
+			"weight": 1,
+			"value": 50000,
+			"weaponCategory": "martial",
+			"property": [
+				"M"
+			],
+			"range": "5/10",
+			"dmg1": "1d8",
+			"dmgType": "B",
+			"reqAttune": true,
+			"entries": [
+				"While the rod is closed it counts as a light mace that inflicts plus {@damage 1d8} necrotic damage. As a bonus action the user can depress a button on the shaft and turn the rod into a flail that inflicts plus {@damage 1d8} necrotic damage. The user can use a bonus action to depress a second button on the shaft that gives the flail +5 ft. reach ability. The rod of flailing is attuned to the user's thoughts and emotion and can appear in his hand with a thought. The user's does not need to use an action to draw the rod. If the user's drops the rod it returns to his hand at the start of his next turn."
+			],
+			"fluff": {
+				"entries": [
+					"While the rod is closed it counts as a light mace that inflicts plus {@damage 1d8} necrotic damage. As a bonus action the user can depress a button on the shaft and turn the rod into a flail that inflicts plus {@damage 1d8} necrotic damage. The user can use a bonus action to depress a second button on the shaft that gives the flail +5 ft. reach ability. The rod of flailing is attuned to the user's thoughts and emotion and can appear in his hand with a thought. The user's does not need to use an action to draw the rod. If the user's drops the rod it returns to his hand at the start of his next turn."
+				]
+			}
+		},
+		{
+			"name": "+1 Rod of Flailing",
+			"source": "Darklords&DomainsVol1",
+			"page": 202,
+			"type": "M",
+			"rarity": "very rare",
+			"weight": 1,
+			"value": 100000,
+			"weaponCategory": "martial",
+			"property": [
+				"M",
+			],
+			"range": "5/10",
+			"dmg1": "1d8",
+			"dmgType": "B",
+			"reqAttune": true,
+			"bonusWeapon": "+1",
+			"entries": [
+				"You have a +1 bonus to attack and damage rolls made with this magic weapon.",
+				"While the rod is closed it counts as a light mace that inflicts plus {@damage 1d8} necrotic damage. As a bonus action the user can depress a button on the shaft and turn the rod into a flail that inflicts plus {@damage 1d8} necrotic damage. The user can use a bonus action to depress a second button on the shaft that gives the flail +5 ft. reach ability. The rod of flailing is attuned to the user's thoughts and emotion and can appear in his hand with a thought. The user's does not need to use an action to draw the rod. If the user's drops the rod it returns to his hand at the start of his next turn."
+			],
+			"fluff": {
+				"entries": [
+					"You have a +1 bonus to attack and damage rolls made with this magic weapon.",
+					"While the rod is closed it counts as a light mace that inflicts plus {@damage 1d8} necrotic damage. As a bonus action the user can depress a button on the shaft and turn the rod into a flail that inflicts plus {@damage 1d8} necrotic damage. The user can use a bonus action to depress a second button on the shaft that gives the flail +5 ft. reach ability. The rod of flailing is attuned to the user's thoughts and emotion and can appear in his hand with a thought. The user's does not need to use an action to draw the rod. If the user's drops the rod it returns to his hand at the start of his next turn."
+				]
+			}
+		},
+		{
+			"name": "+2 Rod of Flailing",
+			"source": "Darklords&DomainsVol1",
+			"page": 202,
+			"type": "M",
+			"rarity": "very rare",
+			"weight": 1,
+			"value": 250000,
+			"weaponCategory": "martial",
+			"property": [
+				"M",
+			],
+			"range": "5/10",
+			"dmg1": "1d8",
+			"dmgType": "B",
+			"reqAttune": true,
+			"bonusWeapon": "+2",
+			"entries": [
+				"You have a +2 bonus to attack and damage rolls made with this magic weapon.",
+				"While the rod is closed it counts as a light mace that inflicts plus {@damage 1d8} necrotic damage. As a bonus action the user can depress a button on the shaft and turn the rod into a flail that inflicts plus {@damage 1d8} necrotic damage. The user can use a bonus action to depress a second button on the shaft that gives the flail +5 ft. reach ability. The rod of flailing is attuned to the user's thoughts and emotion and can appear in his hand with a thought. The user's does not need to use an action to draw the rod. If the user's drops the rod it returns to his hand at the start of his next turn."
+			],
+			"fluff": {
+				"entries": [
+					"You have a +2 bonus to attack and damage rolls made with this magic weapon.",
+					"While the rod is closed it counts as a light mace that inflicts plus {@damage 1d8} necrotic damage. As a bonus action the user can depress a button on the shaft and turn the rod into a flail that inflicts plus {@damage 1d8} necrotic damage. The user can use a bonus action to depress a second button on the shaft that gives the flail +5 ft. reach ability. The rod of flailing is attuned to the user's thoughts and emotion and can appear in his hand with a thought. The user's does not need to use an action to draw the rod. If the user's drops the rod it returns to his hand at the start of his next turn."
+				]
+			}
+		},
+		{
+			"name": "+3 Rod of Flailing",
+			"source": "Darklords&DomainsVol1",
+			"page": 202,
+			"type": "M",
+			"rarity": "very rare",
+			"weight": 1,
+			"value": 400000,
+			"weaponCategory": "martial",
+			"property": [
+				"M",
+			],
+			"range": "5/10",
+			"dmg1": "1d8",
+			"dmgType": "B",
+			"reqAttune": true,
+			"bonusWeapon": "+3",
+			"entries": [
+				"You have a +3 bonus to attack and damage rolls made with this magic weapon.",
+				"While the rod is closed it counts as a light mace that inflicts plus {@damage 1d8} necrotic damage. As a bonus action the user can depress a button on the shaft and turn the rod into a flail that inflicts plus {@damage 1d8} necrotic damage. The user can use a bonus action to depress a second button on the shaft that gives the flail +5 ft. reach ability. The rod of flailing is attuned to the user's thoughts and emotion and can appear in his hand with a thought. The user's does not need to use an action to draw the rod. If the user's drops the rod it returns to his hand at the start of his next turn."
+			],
+			"fluff": {
+				"entries": [
+					"You have a +3 bonus to attack and damage rolls made with this magic weapon.",
+					"While the rod is closed it counts as a light mace that inflicts plus {@damage 1d8} necrotic damage. As a bonus action the user can depress a button on the shaft and turn the rod into a flail that inflicts plus {@damage 1d8} necrotic damage. The user can use a bonus action to depress a second button on the shaft that gives the flail +5 ft. reach ability. The rod of flailing is attuned to the user's thoughts and emotion and can appear in his hand with a thought. The user's does not need to use an action to draw the rod. If the user's drops the rod it returns to his hand at the start of his next turn."
+				]
+			}
 		}
 	],
 	"language": [
@@ -5505,7 +5565,8 @@
 				"people of Nova Vaasa",
 				"people of Richemulot",
 				"people of Sithicus",
-				"people of Verbrek"
+				"people of Verbrek",
+				"people of Falkovnia"
 			],
 			"script": "Elvish"
 		},
@@ -5529,7 +5590,8 @@
 				"people of Shadow Rift/Arak",
 				"people of Nova Vaasa",
 				"people of Richemulot",
-				"people of Darkon"
+				"people of Darkon",
+				"people of Falkovnia"
 			],
 			"script": "Elvish"
 		},
@@ -5557,7 +5619,8 @@
 				"people of Nova Vaasa",
 				"people of Richemulot",
 				"people of Darkon",
-				"people of Dementlieu"
+				"people of Dementlieu",
+				"people of Falkovnia"
 			],
 			"script": "Elvish"
 		},
@@ -5579,7 +5642,8 @@
 			"type": "standard",
 			"typicalSpeakers": [
 				"people of Darkon",
-				"people of Dementlieu"
+				"people of Dementlieu",
+				"people of Falkovnia"
 			],
 			"script": "Elvish"
 		},
@@ -5612,7 +5676,8 @@
 				"people of Valachan",
 				"people of Verbrek",
 				"people of Darkon",
-				"people of Dementlieu"
+				"people of Dementlieu",
+				"people of Falkovnia"
 			],
 			"script": "Elvish"
 		},
@@ -9776,7 +9841,7 @@
 									"entries": [
 										"Kartakass is mostly forested with only some open lands around for farming. The woods consist mainly of hardwoods such as beech, oak, and ash, while the grassy dales are filled with crops and wildflowers that bloom over the spring and summer. The soil is rich and dark, making tubers and beets grow very well here. However, two plants stand out in Kartakass, with one being well known to the Kartakans and the other a closely guarded secret. The first is meekulbern, a type of vine that grows only in a few places. It has a sickly-sweet odor, and the berries are a deep crimson. The berries can be distilled into a strong form of ale known as meekulbrau that relaxes the throat and calms the nerves of singers, though the bitter taste is not for everyone.",
 										"Drinking meekulbrau gives a character advantage on either Performance or Persuasion checks for 1 hour (at the end of which they must succeed on a DC 10 Constitution saving throw or become poisoned until they complete a long rest). Drinking meekulbrau stains the lips and teeth blood-red for about an hour, after which it turns brown and flakes away. Some outsiders mistake this for vampirism and often need to have the confusion cleared up by the locals.",
-										"The other plant is a version of wolfsbane known as nightblight. The locals say that it carries an overwhelming stench to those who have changed shape (regardless of whether these are lycanthropes, doppelgangers, spellcasters, or any of a number of others), and that it prevents them from moving closer. (Any creature that has changed shape must succeed on a DC 20 Constitution saving throw or be unable to move within 30 feet of the bloom). The plant only remains potent for a few days after being plucked and loses efficacy after 3–5 days. It also only grows in the Arkalias Hills along the southern border of the domain."
+										"The other plant is a version of wolfsbane known as nightblight. The locals say that it carries an overwhelming stench to those who have changed shape (regardless of whether these are lycanthropes, doppelgangers, spellcasters, or any of a number of others), and that it prevents them from moving closer. (Any creature that has changed shape must succeed on a DC 20 Constitution saving throw or be unable to move within 30 feet of the bloom). The plant only remains potent for a few days after being plucked and loses efficacy after 3-5 days. It also only grows in the Arkalias Hills along the southern border of the domain."
 									]
 								},
 								{
@@ -12473,7 +12538,7 @@
 								"Knowledge is power. Power corrupts. Absolute power corrupts absolutely. It is not always the knowledge itself that perverts. Sometimes the pursuit becomes an obsession. When the ends justify any means, dark paths are discovered; and those paths lead into The Mists.",
 								"Within the Northern Core lie lands more advanced in many, dreadful ways, than their southern neighbors. Each gain in technology, be it scientific, arcane, or military is borne from the unhealthy fixations of their Dark Lords, and allowed to metastasize, like a tumor, throughout their citizenry.",
 								"When one of these dark inspirations takes root, a scab is placed in the mind. That scab screams to be picked and scratched at until it begins to bleed. Once the putrid liquid begins to flow, rivulets of infection soak into every vital tis-sue. At the point of pestilent saturation, not even one's own sanity or mortality can staunch the hot, sickly flow. These lands are stained by the creations of their lords.",
-								"Scientific instruments like The Apparatus, Doomsday De-vice, and Rift Spanner; Arcane Anomalies such as The Key to the Abyss, The Soulstone, and the Bell of Doom; and tactical military mistakes known as The Dead Man's Cam-paign, The Starving March, and the Tepestani Inquisition all owe their existence to the ‘advancements' of infected minds. Each has a dreadful impact beyond its intended consequence – but for the obsessed each loss, greater than the last, remains the price of progress.",
+								"Scientific instruments like The Apparatus, Doomsday De-vice, and Rift Spanner; Arcane Anomalies such as The Key to the Abyss, The Soulstone, and the Bell of Doom; and tactical military mistakes known as The Dead Man's Cam-paign, The Starving March, and the Tepestani Inquisition all owe their existence to the ‘advancements' of infected minds. Each has a dreadful impact beyond its intended consequence - but for the obsessed each loss, greater than the last, remains the price of progress.",
 								"The Domains of the Northern Core ({@b Darkon, Keening, Lamordia, Falkovnia, Tepest, Dementlieu, Castle Island, and Necropolis}) each strive for knowledge. They care not whether it be magical, technological, or religious. All seek to expand their influence, yet all remain acutely unaware of the price they pay for their relentless obsessions."
 							]
 						},
@@ -13132,7 +13197,7 @@
 											"name": "Current Sketch",
 											"page": 185,
 											"entries": [
-												"Azalin has recovered some of his ability to learn new magic. If the subject is extremely closely related to a subject that he is familiar with, then Azalin can learn about this new magic, though it will take him decades longer than a mortal mage to master the new magic. Since his return Azalin has also gained a new ability to look into the minds and alter the memories of anyone currently in Darkon. Azalin retains his abilities to control any undead in Darkon, even intelligent undead. Neither of these abilities extends to creatures in Il Aluk, which causes Azalin considerable alarm Azalin's new experiments have moved beyond escaping Ravenloft. He has sent an agent known only as “S” into the neighboring domains. It is unknown what S is looking for, but S is searching with a feverish intensity. In his absence, members of the Kargat attempted to take over Darkon, leading to shadow war between different factions of the organization. Azalin devotes considerable time and effort to stamping out any faction of the Kargat that denies his right to rule. Azalin's subjects believe he is draconian, but human. They admit he uses dark magic to extend his life through unnatural means, but even if presented with incontrovertible proof of his true nature they will dismiss it and accuse the presenter of manufacturing lies. If the presenter persists Azalin's subjects will become increasingly distressed and quickly escalate to violence.",
+												"Azalin has recovered some of his ability to learn new magic. If the subject is extremely closely related to a subject that he is familiar with, then Azalin can learn about this new magic, though it will take him decades longer than a mortal mage to master the new magic. Since his return Azalin has also gained a new ability to look into the minds and alter the memories of anyone currently in Darkon. Azalin retains his abilities to control any undead in Darkon, even intelligent undead. Neither of these abilities extends to creatures in Il Aluk, which causes Azalin considerable alarm Azalin's new experiments have moved beyond escaping Ravenloft. He has sent an agent known only as \"S\" into the neighboring domains. It is unknown what S is looking for, but S is searching with a feverish intensity. In his absence, members of the Kargat attempted to take over Darkon, leading to shadow war between different factions of the organization. Azalin devotes considerable time and effort to stamping out any faction of the Kargat that denies his right to rule. Azalin's subjects believe he is draconian, but human. They admit he uses dark magic to extend his life through unnatural means, but even if presented with incontrovertible proof of his true nature they will dismiss it and accuse the presenter of manufacturing lies. If the presenter persists Azalin's subjects will become increasingly distressed and quickly escalate to violence.",
 												{
 													"type": "entries",
 													"name": "The Eternal Order",
@@ -13234,7 +13299,7 @@
 									],
 									"by": "Aristophanes, Plutus"
 								},
-								"Dementlieu was built in France during the Renaissance amid the machinations and infighting that were common among the nobles of that time. As a result, it is highly civilized and technologically advanced (one of the most advanced domains in existence), and outwardly claims to be a republic. In reality, it is run by Dominic d'Honaire. Dominic is the darklord of Dementlieu and prefers to remain the “power behind the throne” of his puppet, Marcel Guignol, an old man too feeble to defend himself from Dominic's mental onslaught. Dominic has no real ambitions of expanding his domain and spends his time setting his subjects upon themselves through his manipulations and schemes. However, he is being challenged by a newcomer to the domain, the Living Brain. The Living Brain is a brain that somehow survived the care of Dr. Mordenheim and was transferred from its body into a waiting receptacle, a glass jar, with mechanical legs. The Living Brain escaped and found that its unlocked mental powers made it a formidable foe for Dominic.  Adventures based in Dementlieu should contain an element of manipulation. The heroes should always feel like someone is trying to pluck their strings and control or direct their actions. They might get involved in the power struggle between Dominic and the Living Brain, and while they might attempt to avoid getting entangled, this should prove difficult at best. Dominic is likely destined to win this battle, as his powers are stronger than that of the Living Brain, but it has emerged as the first real contender that Dominic has ever faced. Furthermore, if any of the heroes is an attractive female, they should be able to see the true monster that hides behind Dominic's smiling visage, even if the rest of the heroes might never discover it.",
+								"Dementlieu was built in France during the Renaissance amid the machinations and infighting that were common among the nobles of that time. As a result, it is highly civilized and technologically advanced (one of the most advanced domains in existence), and outwardly claims to be a republic. In reality, it is run by Dominic d'Honaire. Dominic is the darklord of Dementlieu and prefers to remain the \"power behind the throne\" of his puppet, Marcel Guignol, an old man too feeble to defend himself from Dominic's mental onslaught. Dominic has no real ambitions of expanding his domain and spends his time setting his subjects upon themselves through his manipulations and schemes. However, he is being challenged by a newcomer to the domain, the Living Brain. The Living Brain is a brain that somehow survived the care of Dr. Mordenheim and was transferred from its body into a waiting receptacle, a glass jar, with mechanical legs. The Living Brain escaped and found that its unlocked mental powers made it a formidable foe for Dominic.  Adventures based in Dementlieu should contain an element of manipulation. The heroes should always feel like someone is trying to pluck their strings and control or direct their actions. They might get involved in the power struggle between Dominic and the Living Brain, and while they might attempt to avoid getting entangled, this should prove difficult at best. Dominic is likely destined to win this battle, as his powers are stronger than that of the Living Brain, but it has emerged as the first real contender that Dominic has ever faced. Furthermore, if any of the heroes is an attractive female, they should be able to see the true monster that hides behind Dominic's smiling visage, even if the rest of the heroes might never discover it.",
 								{
 									"type": "table",
 									"caption": "Dementlieu",
@@ -13419,7 +13484,7 @@
 											"page": 193,
 											"entries": [
 												"For nearly all of his life, Dominic has ruled Dementlieu, and all its people have succumbed to his mind control and manipulations. Dominic has had plenty of people removed with his powers, manipulating others to do his dirty work for him. Dominic has only committed such a deed himself once, in his early years. This experience caused him to shy away from physical confrontation.",
-												"Dominic is the darklord of Dementlieu and prefers to remain the “power behind the throne” of his puppet, Marcel Guignol, an old man too feeble to defend himself from Dominic's mental onslaught. However, a new threat has appeared. Someone has started to interrupt Dominic's plans. One of Dr Mordenhiem's twisted experiments, a living brain captured in a jar, has found its war into Dominic's domain and is trying to usurp his rule. Dominic has never faced a real threat before, and is just starting to plan his retaliation.",
+												"Dominic is the darklord of Dementlieu and prefers to remain the \"power behind the throne\" of his puppet, Marcel Guignol, an old man too feeble to defend himself from Dominic's mental onslaught. However, a new threat has appeared. Someone has started to interrupt Dominic's plans. One of Dr Mordenhiem's twisted experiments, a living brain captured in a jar, has found its war into Dominic's domain and is trying to usurp his rule. Dominic has never faced a real threat before, and is just starting to plan his retaliation.",
 												"To most people, Dominic is an attractive man. But to those that he feels an attraction to, this otherwise callous man starts to appear as a hideous monster. The more attracted he is, the uglier he becomes to that person. Frustratingly for Dominic, even his powerful mind-powers are unable to overcome this revulsion."
 											]
 										},
@@ -13453,6 +13518,313 @@
 											]
 										}
 									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Falkovnia",
+							"page": 196,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/keKURr6.jpg"
+									}
+								},
+								{
+									"type": "quote",
+									"entries": [
+										"History has shown there are no invincible armies."
+									],
+									"by": "Joseph Stalin"
+								},
+								"Falkovnia draws upon several sources of inspira-tion. The main source is the story of the actual Dracula of history, i.e. the man known as Vlad Dracul (the Son of the Dragon), Vlad III, or most infamously, Vlad the Impaler. Along with this are inspirations that hail from the fascist regimes of both Hitler and Stalin (in the way that he suppresses the populace of Falkovnia). Finally, and most well-hidden is his inspiration from Alexander the Great, in his insatiable lust for conquest. The quote (which, incidentally isn't correct) that sums up Vlad Dra-kov is the one that Hans Gruber mentions in Die Hard: \"And when Alexander saw the breadth of his domain, he wept, for there were no more worlds to conquer.\"",
+								"Here though, Vlad is even more frustrated. He can SEE the domains around him, but he cannot ever conquer them. Adventures in Falkovnia should run into these points. The populace should be oppressed by the mil-itary, with everyone being a potential recruit. They're suspicious of everyone, and try to avoid attracting the attention of the soldiers, who are above them in status. The masses are treated little better than slaves, and all their labor is owned by the state (and the state IS Vlad Drakov). But they're so indoctrinated into a cult of ha-tred, that they hate and fear foreigners, outsiders, and those of other races, seeing themselves as inherently superior, despite their harsh lot in life. This should be evident in all interactions with the natives of Falkovnia. Furthermore, the heroes should constantly be remind-ed of the Hawk's cruelty and find that all lawbreakers are punished harshly, with even relatively minor infrac-tions being punished with impalement. The populace is poor, overworked, and underfed, in spite of the fertility of the land around them. Only the barest minimum of food is distributed to the locals, while everything else is exported to the domains around Falkovnia, in return for the coin that the Kingfuhrer required to keep his war machines running.",
+								{
+									"type": "table",
+									"caption": "Falkovnia",
+									"colLabels": [
+										"Detail",
+										"Description"
+									],
+									"colStyles": [
+										"col-3 text-center",
+										"col-9"
+									],
+									"rows": [
+										[
+											"Culture Level",
+											"Medieval"
+										],
+										[
+											"Climate & Terrain",
+											"Temperate, forest, hill, marsh and plains"
+										],
+										[
+											"Year Formed",
+											"690 BC"
+										],
+										[
+											"Population",
+											"64.000"
+										],
+										[
+											"Races (%)",
+											"Humans 93%, Halflings 2%,  Half-Elves 2%, Gnomes 1%,  Elves 1%, Other 1%"
+										],
+										[
+											"Languages",
+											"{@language Common|PHB}, {@language Balok|Darklords&DomainsVol1}, {@language Darkonese|Darklords&DomainsVol1}, {@language Dwarvish|PHB}, {@language Elvish|PHB}, {@language Falkovnian|Darklords&DomainsVol1}, {@language Gnomish|PHB}, {@language Halfling|PHB}, {@language Lamordian|Darklords&DomainsVol1}, {@language Mordentish|Darklords&DomainsVol1}"
+										],
+										[
+											"Religions",
+											"Hala, Ezra (no official state  religion - Falkovnians generally do not believe in an after life)"
+										],
+										[
+											"Government",
+											"Military Despotism"
+										],
+										[
+											"Ruler(s)",
+											"Kingfuhrer Vlad Drakov"
+										],
+										[
+											"Darklord(s)",
+											"Vlad Drakov"
+										],
+										[
+											"Nationality",
+											"Falkovnian"
+										],
+										[
+											"Analog",
+											"Transylvania (mixed with  inspiration from Germany and Russia)"
+										],
+										[
+											"Neighboring domain(s)",
+											"Borca, Darkon, Dementlieu, Lamordia, Richemulot, The Shadow Rift"
+										]
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Local Fauna",
+									"page": 196,
+									"entries": [
+										"Falkovnia teems with wildlife, though there are few if any, monsters native to the domain. Beasts of all kinds flourish here, with many growing to extreme sizes, be-coming extremely vicious as a result. They remain nat-ural (if dangerous) however. In particular, deer, boars, and ermine are hunted here (the first two for their meat, the latter for their warm coat). Wolves and bears can be found here too, though as with other animals they sometimes reach an extreme size, known to sages as Dire creatures. Hunting birds are extremely common here as well, especially hawks and falcons. Crows and ravens are a common sight in the domain, due to the proliferation of the unburied dead - a result of the harsh laws of the domain. They're so common and so associated with the dead that they feast upon, that the populace sometimes refers to them as the \"dead birds\". Unique among the hunting birds of Falkovnia are the zweifalk - a species of vicious two-headed hunting falcons, whose favorite tactic is to rip out the eyes of their prey - a tactic which the Talons of the Hawk often use during one of their \"escaped slave hunts\"."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Local Flora",
+									"page": 197,
+									"entries": [
+										"Tragically, for the local populace, the countryside is truly beautiful. As with the local fauna, the flora of Falkovnian grows strong, wild, and tall. The forest con-sists mostly of massive older trees, such as oak, beech, cherry, spruce, and some pine. The broadleaves tend to dominate, but the pines (and other evergreen trees) are far more common in the eastern and northern parts of the domain. Strangely, no matter where they're orig-inally from, all trees grown in Falkovnia have a strange black bark, though this does not change the color of the lumber itself. Beyond the trees, the land is covered in choking vines and creepers, in the areas where the populace doesn't venture often. However, while the land is covered in lush forests, it is mostly known for its rich crops. While the fields themselves are relatively small compared to the size of Falkovnia and its forests, they are incredibly fertile and grow far more crops than Falkovnia needs to feed its own people. Many there-fore call Falkovnia the \"Breadbasket of the Core\" and imagine it as lush fields stretching from horizon to horizon, but this is not so."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Native Horrors",
+									"page": 197,
+									"entries": [
+										"One type of “monster” that is common in Falkovnia though, are the ones that could in theory be classified as “animals”. These are things like hippogriffs, griffons, and owlbears. All of them tend to have animal intelli-gence and can be avoided with caution.However, while the countryside is relatively safe, the same cannot be said for the teeming masses of humanity that call Falkovnia's settlements home. These places are home to all kinds of shapechangers, from doppelgangers and lycanthropes to humanoid undead and hags. Any-thing that can hide its presence and at least pass as human can be found here. There are two exceptions to this: The Spawn of the Lizard, who have encamped between Morfenzi and Aerie. This group of kobolds is led by a large and vicious specimen called the Basilisk. The Spawn of the Lizard has proven to be a thorn in the side of the Hawk himself, sometimes waylaying his soldiers and using guerilla tactics against his forces. Generally speaking, they're a minor threat, but they re-main one of the most effective resistance movements in the country. No one is sure what is the cause of the other problem: a strange mutating disease known as the Blight. Some Falkovnians tell tales of the Green Maiden, a beautiful fey creature, citing it as the source of the disease. It warps the creatures infested with it into an unimaginable horror of eyes, tentacles, mouths, and worse - all while retaining only the slightest recognizable connection to its original appearance."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Terrain Type",
+									"page": 197,
+									"entries": [
+										"Anyone visiting Falkovnia will likely first note the beau-ty of the land. The trees are tall, strong, and plentiful. The grass is green and lush, and the crops are strong. The rivers flow deep and strong as well. Had these been any place else, Falkovnia would be a godsend of resources for a generous ruler. The heartland, around Blacksoil Vale, is covered in crops, making it a true bread-basket for many domains (though not for its own citizens). Falkovnia has a few marshes that can be treacherous for people, but mostly the land is safe in and of itself. The weather is temperate, but uncomfort-ably warm in the summer, filled with aggressive bees and wasps that swarm, especially around bodies of water. Locals also like to complain that it rains a lot, but this is far less common than they say, and gener-ally, the weather is ideal for growing crops. Occasional storms rage the country at times, and these are very powerful, and wise travelers make sure that they seek cover before it breaks."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Important Landmarks",
+									"page": 192,
+									"entries": [										
+										{
+											"type": "entries",
+											"name": "Castle Draccipetri",
+											"page": 197,
+											"entries": [
+												"Draccipetri is Vlad Drakov's main castle. It is a forebod-ing and intimidating construction of stone, one that tow-ers above the nearby city of Lekar. The castle is squat and ugly, built more for the purpose of dominating the land around it than anything else.",
+												"It is located on an island, connected to the mainland by a bridge, making its sole entrance easily defensi-ble. No maps of the castle exist anywhere in Falkovnia, and any that are rumored to have surfaced in the Core will be sought out by agents of Drakov and destroyed. What is common knowledge is that the building is steeped deeply in the atrocities committed by Vlad Drakov and his soldiers, as every night, Drakov sits in the main courtyard, eating his evening meal, while mu-sic plays from a gallery above. All accompanied by the screams of impaled criminals from around the realm – brought here, specifically for the entertainment of the Kingfuhrer.",
+												"The only thing that the inhabitants of Lekar appreciate of this, is that at least it's not as bad as the city of Silbervas, which is the home of Silberkopf, Drakov's summer palace. At least in Lekar, they can't hear the screams."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Selberhas Aerie",
+											"page": 197,
+											"entries": [
+												"Located in Aerie, this huge stone spire (500 feet in diameter and over 60 feet tall) towers above the city around it. A set of tall narrow steps leads from the bot-tom of the spire to the jagged outcrops at the top, but while the landmark makes the locals feel ill-at-ease, no one knows what it was originally used for or why. However, every six hours, the city guards check that the gates to Crucea Park (where the Selberhas Aerie is located) are locked – ensuring the safety of the populace.",
+												"Those who claim to be able to see into the spirit world report that numerous ethereal doorways lead off from the stairs surrounding the spire, and into it. But these are not visible to the naked eye, and no one has been allowed into Crucea Park for decades."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Silberkopf",
+											"page": 197,
+											"entries": [
+												"Silberkopf is Drakov's summer residence, sitting on the edge of Lake Kriegsvogel near Silbervas. The palace is beautiful, looking more like what an outlander would find in decadent Dementlieu than in stoic and down-trodden Falkovnia. Unfortunately, for the inhabitants of Silbervas, the REAL centerpiece of Silberkopf is not its magnificent appearance, but the generous acoustics of the main court, that allows the screams of the executed to be heard all over the city, rather than just within the walls of the compound."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Towns and villages",
+									"page": 198,
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Aerie",
+											"page": 198,
+											"entries": [
+												"Aerie is the southernmost city of Falkovnia, and in comparison to the others, it is positively open and wel-coming, being far more cosmopolitan than the rest of them. It is still a Falkovnian city, despite its focus on trade, and the Stadtfuhrer Igor Feiggein is constantly coming up with new and inventive methods of cruelty to lawbreakers. Only the combined efforts of the city's Wachekapitan and Handelleutenant (trade lieutenant) keep Igor from going overboard. This means that Aerie still completes its shipments of prisoners to Draccipetri while keeping it open and (somewhat) inviting to visit-ing merchants. Aerie lives up to its name in that it is far more spacious than other Falkovnian cities, with little of the closed-in and brooding feeling that the other towns are mired in. However, it is still filled with dangerous alleys and shadowy warrens that are home to thieves, beggars, and worse."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Grashen Falls",
+											"page": 198,
+											"entries": [
+												"Grashen Falls is a small village located near a water-fall where the Grashen River meets the Drogach River. Its sole claim to fame (or infamy) is that it was once haunted by a succubus that has since moved on from Falkovnia to prey upon the more sophisticated do-mains of Borca, Dementlieu, and Richemulot."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Lekat",
+											"page": 198,
+											"entries": [
+												"Lekar is the capital of Falkovnia and the seat of Dracci-petri. It is a large walled city with a population of nearly 16,000. While more urban than most of the other cities of Falkovnia (and having a population of more non-hu-mans than the other cities), it is also far more subdued. The soldiers and officers that are stationed here know that they are under the watchful eye of Vlad Drakov himself, and as a result, they're much harsher in their enforcement of his laws than anywhere else in the do-main. This results in nearly a quarter of the city being in a state of ruin and ashes, after the various punish-ments and pogroms of the soldiers. The city itself is built with an eye for defense, with each of the city's districts walled off separately, though this is more often used as a means of quarantining and detaining parts of the civilian population by the soldiers, than for defense. In fact, apart from Drakov's own campaign when he conquered the domain, Lekar has never fallen to en-emy hands, nor even been threatened. Lekar is also home to a large number of vampires that hide under the protective cloak of the Slumlord Vladimir Ludzig, who owns a large portion of the buildings in Lekar, all with the implied protection of the Drakov family. Lekar is also home to the Radiant Tower – the only place in Falkovnia that is openly receptive to practitioners of arcane magic. Drakov innately distrusts magic but has in recent years realized that he needs such methods to combat the lords and ladies surrounding him, so while the tower in years past was a dilapidated ruin, today its white walls rise above the city, striking even more fear into the populace than in the past."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Morfenzi",
+											"page": 198,
+											"entries": [
+												"Before the Grand Conjunction, Morfenzi (or Butch-er's Burg as it is nicknamed) was far more important than today, as it served as a trade hub for much of the eastward trade from Falkovnia. Now instead it sits on the edge of the Shadow Rift, diminishing a little in trade importance every day. Fortunately for Morfenzi, it is unlikely to ever fade entirely from prominence in Falkovnia, even if its influence is diminished, for the reason that almost all Falkovnian livestock is slaugh-tered here, in one of the many abattoirs that fill the city. It is named Butcher's Burg for this simple reason. The region is also home to the finest livestock in all of Falkovnia and the Northern Core. The amount of live-stock that passes through Morfenzi has led to a local custom of bringing animal totems out into the streets in the morning, to ensure that the animals stay calm when being brought to the butcher's block. At night they're taken back into the houses and placed in po-sitions of honor to placate the spirits themselves. The vast amounts of animals being butchered in Morfenzi mean that the city is constantly surrounded by a mi-asma of death, with vast mounds of dung and animal blood clogging the streets, while the stench of tanner-ies fills the air. All this is coupled with enormous clouds of fat flies that are a constant reminder of the city's claim to fame. These stinking mounds and the amount of animal refuse in the city lead to rampant diseases in the town, as its aging drainage system cannot possibly keep up with the sheer amount of industrious waste. That is of little concern to the local government, as they are only interested in keeping up or increasing produc-tion further.",
+												"Rumors persist of a creature that lives underneath the city, the Dark Lurker of Morfenzi. Supposedly the crea-ture has a humanoid form and comes out at night to prowl, but no one knows for certain. As such, Stadt-fuehrer Weistocht Theodorn has put out the call for experienced monster hunters to take care of the crea-ture, as the local soldiers are incapable of containing the threat."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Silbervas",
+											"page": 199,
+											"entries": [
+												"Silbervas is the “Jewel of Falkovnia”. Unlike the mil-itaristic cities of Falkovnia, Silbervas looks more like something that you'd find in Dementlieu or Richemulot. Its walls remain thick and sturdy, but they are white and have artistic crenellations, rather than simply being for defense.",
+												"Silbervas is also the unfortunate home to Silberkopf (described above), and people here have learned to turn a deaf ear to the screams coming from Drakov's palace. The screams are at their worst around dinner time, as new victims are impaled for Drakov's enter-tainment.",
+												"Holding 6,000 people, Silbervas is dependent on the fishing that can be found in the nearby lake Kriegvo-gel. Recently, the fishermen have been worried about a monstrous creature lurking in the depths of Kreigvo-gel. Seen only once, it resembles a great grey eel and is referred to as the Grey Wyrm, but Drakov has so far stalled any investigation into this."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Stangengrad",
+											"page": 199,
+											"entries": [
+												"Stangengrad lies close to the Falkovnian border with Darkon. And it is by far the most restrictive city in Falkovnia, which, for a military domain, says a lot. It is in a constant state of curfew and readiness for warfare. The Stangengrad Military Academy calls the city home as well, and it is filled with more soldiers than any other city in Falkovnia.",
+												"Surrounded by strong stone walls, the city is a hotbed of activity at any time of day, building war machines for Drakov's next incursions, while blacksmiths hammer out weapons and armor for his armies. It is also home to some of the strangest sites in Falkovnia, including the Tower of Horns (a building that was locked up decades ago – no one currently knows what lives inside.",
+												"But every night, at the start of every hour, horns sound from the tower, echoing across the city).",
+												"Nothing is stranger than the Gears. Sitting inside a warehouse in the south quarter of Stangengrad, it is bigger than most houses, a hissing, clanking, noisy square block of machinery that no one knows what it does. Some believe it's a dormant clockwork mon-strosity of some sort, others that it's a faulty war ma-chine of Drakov's fiendish imagination, or that it's a doomsday clock counting down to the end of the world. No one knows for sure, but speculations run rampant. Stangengrad also holds the distinction of having the highest-ranking female officer in the Falkovnian army serving there, Wachekapitan Lana Dusklicht (none have reached the rank of Falkenfuhrer or Talon, the personal bodyguard/company of Drakov himself). In patriarchal Falkovnia, that is no small feat indeed, and evidence of the woman's ambition, ruthlessness, and efficiency."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Fun Fact",
+									"page": 199,
+									"entries": [
+										"Falkovnians marry very young, often as young as 12 or 13, due to the extremely short lifespan that most Falkovnians face. This also ties into a particularly de-spicable Falkovnian custom, that of the “right of the first night”. For a couple to be legally married in Falkovnia, they must go to a local brandtoffizir (or a ranking mili-tary officer), hand over some legal papers, and pay 1 gold piece. The paperwork is then processed, which takes roughly a week. After this, the Falkovnians nor-mally marry in a quiet, personal gathering. The “right of the first night” can then be evoked by any Falkovnian ranking officer, giving them the judicial right to spend the first night with the bride. And Vlad Drakov often par-takes in this himself, saving the most beautiful brides for himself. This has led to Drakov having the largest extended family of any darklord, even if most of these bastards are never recognized officially."
+									]
+								},	
+								{
+									"type": "entries",
+									"name": "Vlad Drakov",
+									"page": 200,
+									"entries": [
+										{
+											"type": "quote",
+											"entries": [
+												"I am the fury of the thunderstorm. I am the con-queror. One day I will ride across this land and force these petty lords to kneel before me and exclaim my greatness. I will listen to them plead as I strip the flesh from their bones. I will create a forest of my impaled enemies and dip my bread in their blood."
+											],
+											"by": "Vlad Drakov"
+										},
+										{
+											"type": "quote",
+											"entries": [
+												"I have no idea who that person is."
+											],
+											"by": "Azalin Rex"
+										},
+										"Vlad is a large human in his mid eighties. Despite his advanced age, he has the health and physical vigor of a warrior half his age. His unkempt hair is still light brown and is only starting to turn grey at the temples. Vlad is always armed and armored, and never wears a crown. The symbol of his authority is a black cape, trimmed with winter wolf fur, held together with a sil-ver clasp in the shape of a screaming eagle. Vlad's paranoia is all encompassing. He regularly slaughters his own advisors and bodyguards for minor failures or imagined slights.",
+										{
+											"type": "entries",
+											"name": "Background",
+											"page": 200,
+											"entries": [
+												"Vlad started his life as a mercenary on a continent far from the Domains of Dread.. Little is known about Vlad's childhood, and none are keen to ask. Vlad's history seems to begin when he became a mercenary for the followers of the cruel god, Hith. Vlad's ruthless nature and obvious intelligence served him well as a mercenary, and soon his coffers were overflowing with gold and his services in demand all across the continent. Despite this, Vlad felt empty. His clients fought for his services and paid him well, but they looked down on him as little more than a rabid dog. This scorn drove Vlad to vent his fury on his vic-tims, engaging in ever greater acts of cruelty and tor-ture. After decades of bathing in the blood of innocents, he was pulled into Ravenloft by the Dark Powers. Af-ter one particularly long night of torture and mutilation, Vlad and his men found themselves in Darkon, the realm of Azalin the lich.",
+												"Vlad tried to conquer Darkon, severely underestimating the lich lord of the realm and his defenses. As Vlad's troops were slain by hordes of undead, they rose as zombies and joined the endless ranks of the enemy. Vlad's considerable experience and tactical brilliance accounted for nothing and his troops fell before the re-lentless attacks of the undead. Before he knew what had happened, he was pushed back into the mists sur-rounding Darkon."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Current Sketch",
+											"page": 200,
+											"entries": [
+												"Vlad rules his domain with an iron fist. His men are fiercely loyal and follow his com-mands to the letter. Even the impossible ones. Despite this, Vlad feels hollow. Falkovnia is a small realm and Vlad yearns to conquer. This is impossible, as all of his neighbors within Ravenloft are far more powerful than he. Vlad has attempted to invade Darkon no fewer than five times over the decades and been repulsed with heavy losses every time. Azalin hasn't even bothered to send an envoy demanding an end to the attacks or asking for peace. It seems no matter what Vlad does, Azalin hasn't even noticed him. Vlad takes this out on the people of his domain. He demands at least one execution a day, and eats his dinner while watching his victim being tortured to death. On special occa-sions Vlad will have as many as forty people execut-ed. His favorite method is impalement, but Vlad is al-ways on the lookout for fascinating new ways to slowly and painfully kill. Falkovnia is the breadbasket of the Domains of Dread, and Vlad could starve the armies of his neighbors by the simple act of just not sending them grain. Vlad will never even consider this, as to his mind that is how a coward conquers."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Darklord's Tactics",
+											"page": 200,
+											"entries": [
+												"Vlad has been fighting longer than most people have been alive. Intelligent and ruth-less in the extreme, no trick is too dirty, no tactic too un-derhanded. Vlad will regularly sacrifice men for tactical advantage, to save his own life, or because he wants to watch them die."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Borders",
+											"page": 200,
+											"entries": [
+												"Vlad cannot seal the borders of his domain."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Vlad Drakov's Lair: Castle Draccipetri",
+											"page": 200,
+											"entries": [
+												"Castle Draccipetri is a massive edifice that sits out-side the city of Lekar. Castle Draccipetri's thick walls and tall towers are covered in spikes, hooks and cag-es. Commoners and nobles alike are impaled on the hooks or spikes and left to die. Others are locked in the cages and left to succumb to exposure and starvation. Screams rebound from the stone walls and high tow-ers. The walls, once light grey, have become dark with dried blood. Guards line the walls day and night, as Vlad is always ready for an attack. Local legend says that you only walk through the gates to the castle once. Vlad Drakov encountered in his lair has a challenge rating of 16 (15,000 XP)."
+											]
+										},									
+										{
+											"name": "Vlad Drakov",
+											"type": "entries",
+											"page": 201,
+											"entries": [
+												{
+													"type": "statblock",
+													"tag": "creature",
+													"source": "Darklords&DomainsVol1",
+													"name": "Vlad Drakov"
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/uqURvgv.jpg"
+									}
 								}
 							]
 						}
@@ -18985,18 +19357,18 @@
 						{
 							"type": "list",
 							"items": [
-								"1st finger — {@spell charm person}",
-								"2nd finger — {@spell sleep}",
-								"3rd finger — {@spell hold person}",
-								"4th finger — {@spell vampiric touch}",
-								"5th finger — {@spell fear}",
-								"6th finger — {@spell shatter}",
+								"1st finger — {@spell charm person|PHB}",
+								"2nd finger — {@spell sleep|PHB}",
+								"3rd finger — {@spell hold person|PHB}",
+								"4th finger — {@spell vampiric touch|PHB}",
+								"5th finger — {@spell fear|PHB}",
+								"6th finger — {@spell shatter|PHB}",
 								"7th finger — {@spell power word pain|XGE}",
-								"8th finger — {@spell ray of enfeeblement}",
+								"8th finger — {@spell ray of enfeeblement|PHB}",
 								"9th finger — {@spell chaos bolt|XGE}",
-								"10th finger — {@spell finger of death}",
+								"10th finger — {@spell finger of death|PHB}",
 								"11th finger — {@spell enervation|XGE}",
-								"12th finger — {@spell harm}",
+								"12th finger — {@spell harm|PHB}",
 								"13th finger — {@spell sickening radiance|XGE}"
 							]
 						},
@@ -19004,18 +19376,18 @@
 					],
 					"will": [
 						"{@spell chaos bolt|XGE}",
-						"{@spell charm person}",
+						"{@spell charm person|PHB}",
 						"{@spell enervation|XGE}",
-						"{@spell fear}",
-						"{@spell finger of death}",
-						"{@spell harm}",
-						"{@spell hold person}",
+						"{@spell fear|PHB}",
+						"{@spell finger of death|PHB}",
+						"{@spell harm|PHB}",
+						"{@spell hold person|PHB}",
 						"{@spell power word pain|XGE}",
-						"{@spell ray of enfeeblement}",
-						"{@spell shatter}",
+						"{@spell ray of enfeeblement|PHB}",
+						"{@spell shatter|PHB}",
 						"{@spell sickening radiance|XGE}",
-						"{@spell sleep}",
-						"{@spell vampiric touch}"
+						"{@spell sleep|PHB}",
+						"{@spell vampiric touch|PHB}"
 					],
 					"ability": "cha",
 					"type": "spellcasting"
@@ -27121,13 +27493,13 @@
 				{
 					"name": "Feline Spies",
 					"entries": [
-						"As an action, von Kharkov can share the senses of any feline creature in Valachan. For as long as von Kharkov maintains his {@status Concentration|XPHB}, as if he were {@status Concentration|XPHB|Concentrating} on a spell, von Kharkov can see and hear through its senses in addition to his own. He cannot control the animal in any way, but he experiences everything that the cat experiences. His human body is in a trance during this process and is completely unaware of its surroundings. Only the pain of a wound can bring him out of the trance before he decides to break it."
+						"As an action, von Kharkov can share the senses of any feline creature in Valachan. For as long as von Kharkov maintains his {@status Concentration|PHB}, as if he were {@status Concentration|PHB|Concentrating} on a spell, von Kharkov can see and hear through its senses in addition to his own. He cannot control the animal in any way, but he experiences everything that the cat experiences. His human body is in a trance during this process and is completely unaware of its surroundings. Only the pain of a wound can bring him out of the trance before he decides to break it."
 					]
 				},
 				{
 					"name": "Misty Escape",
 					"entries": [
-						"If reduced to 0 hit points, he is forced to assume a gaseous form and flee to his coffin or resting place. He must remain there for eight hours before he can rise again, fully restored. If he cannot reach a coffin or appropriate resting place within two hours, he is utterly destroyed. While he has 0 Hit Points in mist form, he can't revert to his vampire form, and he must reach his resting place within 2 hours or be destroyed. Once in his resting place, he reverts to his vampire form. He is then {@condition Paralyzed|XPHB} until he regains at least 1 hit point. After spend-ing 1 hour in his resting place with 0 Hit Points, he regains 1 hit point."
+						"If reduced to 0 hit points, he is forced to assume a gaseous form and flee to his coffin or resting place. He must remain there for eight hours before he can rise again, fully restored. If he cannot reach a coffin or appropriate resting place within two hours, he is utterly destroyed. While he has 0 Hit Points in mist form, he can't revert to his vampire form, and he must reach his resting place within 2 hours or be destroyed. Once in his resting place, he reverts to his vampire form. He is then {@condition Paralyzed|PHB} until he regains at least 1 hit point. After spend-ing 1 hour in his resting place with 0 Hit Points, he regains 1 hit point."
 					]
 				},
 				{
@@ -27182,7 +27554,7 @@
 				{
 					"name": "Feline Spies",
 					"entries": [
-						"As an action, von Kharkov can share the senses of any feline creature in Valachan. For as long as von Kharkov maintains his {@status Concentration|XPHB}, as if he were {@status Concentration|XPHB|Concentrating} on a spell, von Kharkov can see and hear through its senses in addition to his own. He cannot control the animal in any way, but he experiences everything that the cat experiences. His human body is in a trance during this process and is completely unaware of its surroundings. Only the pain of a wound can bring him out of the trance before he decides to break it."
+						"As an action, von Kharkov can share the senses of any feline creature in Valachan. For as long as von Kharkov maintains his {@status Concentration|PHB}, as if he were {@status Concentration|PHB|Concentrating} on a spell, von Kharkov can see and hear through its senses in addition to his own. He cannot control the animal in any way, but he experiences everything that the cat experiences. His human body is in a trance during this process and is completely unaware of its surroundings. Only the pain of a wound can bring him out of the trance before he decides to break it."
 					]
 				},
 				{
@@ -28596,7 +28968,7 @@
 						"name": "Current Sketch",
 						"page": 185,
 						"entries": [
-							"Azalin has recovered some of his ability to learn new magic. If the subject is extremely closely related to a subject that he is familiar with, then Azalin can learn about this new magic, though it will take him decades longer than a mortal mage to master the new magic. Since his return Azalin has also gained a new ability to look into the minds and alter the memories of anyone currently in Darkon. Azalin retains his abilities to control any undead in Darkon, even intelligent undead. Neither of these abilities extends to creatures in Il Aluk, which causes Azalin considerable alarm Azalin's new experiments have moved beyond escaping Ravenloft. He has sent an agent known only as “S” into the neighboring domains. It is unknown what S is looking for, but S is searching with a feverish intensity. In his absence, members of the Kargat attempted to take over Darkon, leading to shadow war between different factions of the organization. Azalin devotes considerable time and effort to stamping out any faction of the Kargat that denies his right to rule. Azalin's subjects believe he is draconian, but human. They admit he uses dark magic to extend his life through unnatural means, but even if presented with incontrovertible proof of his true nature they will dismiss it and accuse the presenter of manufacturing lies. If the presenter persists Azalin's subjects will become increasingly distressed and quickly escalate to violence.",
+							"Azalin has recovered some of his ability to learn new magic. If the subject is extremely closely related to a subject that he is familiar with, then Azalin can learn about this new magic, though it will take him decades longer than a mortal mage to master the new magic. Since his return Azalin has also gained a new ability to look into the minds and alter the memories of anyone currently in Darkon. Azalin retains his abilities to control any undead in Darkon, even intelligent undead. Neither of these abilities extends to creatures in Il Aluk, which causes Azalin considerable alarm Azalin's new experiments have moved beyond escaping Ravenloft. He has sent an agent known only as \"S\" into the neighboring domains. It is unknown what S is looking for, but S is searching with a feverish intensity. In his absence, members of the Kargat attempted to take over Darkon, leading to shadow war between different factions of the organization. Azalin devotes considerable time and effort to stamping out any faction of the Kargat that denies his right to rule. Azalin's subjects believe he is draconian, but human. They admit he uses dark magic to extend his life through unnatural means, but even if presented with incontrovertible proof of his true nature they will dismiss it and accuse the presenter of manufacturing lies. If the presenter persists Azalin's subjects will become increasingly distressed and quickly escalate to violence.",
 							{
 								"type": "entries",
 								"name": "The Eternal Order",
@@ -28779,42 +29151,42 @@
 						"*Dominic can only prepare enchantment spells as he is not truly a wizard and his powers come from his silver-tongue."
 					],
 					"will": [
-						"{@spell dancing lights|XPHB}",
-						"{@spell message|XPHB}",
-						"{@spell minor illusion|XPHB}",
-						"{@spell poison spray|XPHB}"
+						"{@spell dancing lights|PHB}",
+						"{@spell message|PHB}",
+						"{@spell minor illusion|PHB}",
+						"{@spell poison spray|PHB}"
 					],
 					"spells": {
 						"1": {
 							"spells": [
-								"{@spell charm person|XPHB}",
-								"{@spell illusory script|XPHB}",
-								"{@spell sleep|XPHB}",
-								"{@spell Tasha's hideous laughter|XPHB}"
+								"{@spell charm person|PHB}",
+								"{@spell illusory script|PHB}",
+								"{@spell sleep|PHB}",
+								"{@spell Tasha's hideous laughter|PHB}"
 							],
 							"slots": 4
 						},
 						"2": {
 							"spells": [
-								"{@spell blindness/deafness|XPHB}",
-								"{@spell detect thoughts|XPHB}",
-								"{@spell hold person|XPHB}",
-								"{@spell suggestion|XPHB}"
+								"{@spell blindness/deafness|PHB}",
+								"{@spell detect thoughts|PHB}",
+								"{@spell hold person|PHB}",
+								"{@spell suggestion|PHB}"
 							],
 							"slots": 3
 						},
 						"3": {
 							"spells": [
-								"{@spell fear|XPHB}",
-								"{@spell hypnotic pattern|XPHB}",
-								"{@spell sending|XPHB}"
+								"{@spell fear|PHB}",
+								"{@spell hypnotic pattern|PHB}",
+								"{@spell sending|PHB}"
 							],
 							"slots": 3
 						},
 						"4": {
 							"spells": [
-								"{@spell confusion|XPHB}",
-								"{@spell phantasmal killer|XPHB}"
+								"{@spell confusion|PHB}",
+								"{@spell phantasmal killer|PHB}"
 							],
 							"slots": 1
 						}
@@ -28859,6 +29231,10 @@
 			"conditionInflict": [
 				"charmed"
 			],
+			"legendaryGroup": {
+				"name": "Darklords&DomainsVol1LairActionsDominicD_Honaire",
+				"source": "Darklords&DomainsVol1"
+			},
 			"legendaryActions": 3,
 			"legendaryHeader": [
 				"Dominic can take 3 legendary actions, choosing from the op-tions below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Dominic regains spent legendary actions at the start of its turn. "
@@ -28930,7 +29306,7 @@
 						"page": 193,
 						"entries": [
 							"For nearly all of his life, Dominic has ruled Dementlieu, and all its people have succumbed to his mind control and manipulations. Dominic has had plenty of people removed with his powers, manipulating others to do his dirty work for him. Dominic has only committed such a deed himself once, in his early years. This experience caused him to shy away from physical confrontation.",
-							"Dominic is the darklord of Dementlieu and prefers to remain the “power behind the throne” of his puppet, Marcel Guignol, an old man too feeble to defend himself from Dominic's mental onslaught. However, a new threat has appeared. Someone has started to interrupt Dominic's plans. One of Dr Mordenhiem's twisted experiments, a living brain captured in a jar, has found its war into Dominic's domain and is trying to usurp his rule. Dominic has never faced a real threat before, and is just starting to plan his retaliation.",
+							"Dominic is the darklord of Dementlieu and prefers to remain the \"power behind the throne\" of his puppet, Marcel Guignol, an old man too feeble to defend himself from Dominic's mental onslaught. However, a new threat has appeared. Someone has started to interrupt Dominic's plans. One of Dr Mordenhiem's twisted experiments, a living brain captured in a jar, has found its war into Dominic's domain and is trying to usurp his rule. Dominic has never faced a real threat before, and is just starting to plan his retaliation.",
 							"To most people, Dominic is an attractive man. But to those that he feels an attraction to, this otherwise callous man starts to appear as a hideous monster. The more attracted he is, the uglier he becomes to that person. Frustratingly for Dominic, even his powerful mind-powers are unable to overcome this revulsion."
 						]
 					},
@@ -28973,6 +29349,386 @@
 						"href": {
 							"type": "external",
 							"url": "https://i.imgur.com/SzaQgp6.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Vlad Drakov",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"source": "Darklords&DomainsVol1",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 23,
+					"from": [
+						"{@item +3 plate armor}",
+						"{@item +3 shield}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d10 + 75",
+				"average": 157
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 21,
+			"dex": 10,
+			"con": 20,
+			"int": 16,
+			"wis": 12,
+			"cha": 18,
+			"passive": 17,
+			"cr": "15",
+			"shortName": "Vlad Drakov",
+			"page": 201,
+			"languages": [
+				"Common",
+				"Falkovnian",
+				"Darkonese",
+				"Mordentish"
+			],
+			"languageTags": [
+				"C"
+			],
+			"save": {
+				"str": "+10",
+				"con": "+10",
+				"wis": "+6",
+				"cha": "+9"
+			},
+			"skill": {
+				"animal handling": "+7",
+				"athletics": "+11",
+				"insight": "+7",
+				"intimidation": "+10",
+				"investigation": "+9",
+				"perception": "+7"
+			},
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical attacks",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"prone"
+			],
+			"trait": [
+				{
+					"name": "Rod of Flailing +3",
+					"entries": [
+						"Vlad keeps the rod of flailing in a sheath in his belt. While the rod is closed it counts as a light mace +3 that inflicts plus {@damage 1d8} necrotic damage. As a bonus action Vlad can depress a button on the shaft and turn the rod into a flail +3 that inflicts plus {@damage 1d8} necrotic damage. Vlad can use a bonus action to depress a second button on the shaft that gives the flail +3 reach ability. The rod of flailing +3 is attuned to Vlad's thoughts and emotion and can appear in his hand with a thought. Vlad does not need to use an action to draw the rod. If Vlad drops the rod it returns to his hand at the start of his next turn."
+					]
+				},
+				{
+					"name": "Hand Axe of Throwing",
+					"entries": [
+						"The magical hand axe can be thrown as a normal hand axe and returns to Vlad as soon as it strikes or misses the target. The hand axe of throwing twists around obstacles to strike its target, ignoring cover. "
+					]
+				},
+				{
+					"name": "Alert",
+					"entries": [
+						"Vlad is paranoid in the extreme and expects a threat round every corner. Vlad has +5 to initiative rolls and cannot be {@status surprised}. "
+					]
+				},
+				{
+					"name": "Arcane Hatred",
+					"entries": [
+						"Despite using magic items himself, Vlad hates magic and magic users. He will target magic users first in combat and the land grants him advantage on all saving throws versus spells and spell-like effects. "
+					]
+				},
+				{
+					"name": "Limited Magic Immunity",
+					"entries": [
+						"Vlad is immune to any spell of 3rd level or lower. Vlad cannot voluntarily suppress this ability, even against beneficial spells."
+					]
+				},
+				{
+					"name": "Rule through Fear",
+					"entries": [
+						"Vlad doesn't care if his minions are afraid of his enemies, as long as they fear him more. If an ally of Vlad's within 10 feet becomes {@condition frightened} they take 5 ({@damage 1d10}) psychic damage and they become immune to the {@condition frightened} condition for 24 hours."
+					]
+				},
+				{
+					"name": "Feeding off the Common Folk",
+					"entries": [
+						"If Vlad is reduced to 0 hit points then his body dies. He will be reborn with full hit points in his castle's bed chambers 24 hours later. The only way to kill Vlad permanently is to convince the people of Falkovnia to rise up and take back their land. Vlad's constant aura of fear, his mas-sive army of loyal guards, and the stifling of any hope makes this an impossible task. A commoner must inflict at least 100 points of damage in melee combat to Vlad for Vlad to permanently die. "
+					]
+				},
+				{
+					"name": "Sense Disruption",
+					"entries": [
+						"Vlad senses any disruption to his land, such as those created by the spellcasting of a paladin or the reality wrin-kle of a fiend or celestial creature. Vlad immediately knows the approximate direction of the disruption but not exact location."
+					]
+				},
+				{
+					"name": "Boots of Speed",
+					"entries": [
+						"While Vlad wears these boots, he can use a Bonus Action and click the boots' heels together. If he does so, the boots double his walking speed, and any creature that makes an opportunity Attack against him has disadvantage on the Attack roll. If Vlad clicks his heels together again, he ends the Effect. When the boots' property has been used for a total of 10 minutes, the magic ceases to function until Vlad finishes a Long Rest."
+					]
+				},
+				{
+					"name": "Fighter's Abilities",
+					"entries": [
+						"Vlad is a 15th-level fighter. He can use the following Fighter traits, Second Wind and Action Surge once before needing to take a long rest."
+					]
+				},
+				{
+					"name": "Indomitable",
+					"entries": [
+						"Vlad can reroll a saving throw that he fails. If he does so, he must use the new roll. Vlad can use this feature twice between long rests."
+					]
+				},
+				{
+					"name": "Charger",
+					"entries": [
+						"When Vlad uses his action to Dash, he can use a bonus action to make one melee weapon attack or to shove a creature. If he moves at least 10 feet in a straight line immediately before taking this bonus action, he either gains a +5 bonus to the at-tack's damage roll (if he choses to make a melee attack and hit) or push the target up to 10 feet away from him (if he chooses to shove and he succeed)."
+					]
+				},
+				{
+					"name": "Combat Superiority: Maneuvers",
+					"entries": [
+						"Vlad knows 10 maneuvers. He can use only one maneuver per attack. He knows the following maneuvers which are explained in the fighter's martial archetype: Battle Master, PHB 72pg: Bait and Switch, Disarming Attack, Distracting Strike, Feinting Attack, Lunging Attack, Precision Attack, Quick Toss, Sweeping Attack, Trip Attack Commander's Strike.  "
+					]
+				},
+				{
+					"name": "Combat Superiority: Superiority Dice",
+					"entries": [
+						"Vlad has six superiority dice, which are d10s. A superiority die is expended when he uses it. Vlad regains all of his expended superiority dice when he finishes a short or long rest.  "
+					]
+				},
+				{
+					"name": "Combat Superiority: Saving Throws",
+					"entries": [
+						"Some of Vlad's maneuvers require his target to make a saving throw to resist the maneuver's effects. The saving throw DC is 19."
+					]
+				},
+				{
+					"name": "Thrown Weapon Fighting",
+					"entries": [
+						"Vlad can draw a weapon that has the thrown property as part of the attack he makes with the weapon. In addition, when he hits with a ranged attack using a thrown weapon, he gains a +2 bonus to the damage roll."
+					]
+				},
+				{
+					"name": "Significant Possessions",
+					"type": "inset",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"1 {@item Belt of Giant Strength|DMG}",
+								"1 {@item +3 Rod of Flailing|Darklords&DomainsVol1}",
+								"1 {@item Boots of Speed|DMG}",
+								"1 {@item Hand Axe of Throwing|Darklords&DomainsVol1}",
+								"1 {@item +3 Plate Armor|DMG}",
+								"1 {@item +3 Shield|DMG}"
+							]
+						}
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Rod of Flailing +3",
+					"entries": [
+						"Vlad keeps the rod of flailing in a sheath in his belt. While the rod is closed it counts as a light mace +3 that inflicts plus {@damage 1d8} necrotic damage. As a bonus action Vlad can depress a button on the shaft and turn the rod into a flail +3 that inflicts plus {@damage 1d8} necrotic damage. Vlad can use a bonus action to depress a second button on the shaft that gives the flail +3 reach ability. The rod of flailing +3 is attuned to Vlad's thoughts and emotion and can appear in his hand with a thought. Vlad does not need to use an action to draw the rod. If Vlad drops the rod it returns to his hand at the start of his next turn."
+					]
+				},
+				{
+					"name": "Boots of Speed",
+					"entries": [
+						"While Vlad wears these boots, he can use a Bonus Action and click the boots' heels together. If he does so, the boots double his walking speed, and any creature that makes an opportunity Attack against him has disadvantage on the Attack roll. If Vlad clicks his heels together again, he ends the Effect. When the boots' property has been used for a total of 10 minutes, the magic ceases to function until Vlad finishes a Long Rest."
+					]
+				},
+				{
+					"name": "Charger",
+					"entries": [
+						"When Vlad uses his action to Dash, he can use a bonus action to make one melee weapon attack or to shove a creature. If he moves at least 10 feet in a straight line immediately before taking this bonus action, he either gains a +5 bonus to the at-tack's damage roll (if he choses to make a melee attack and hit) or push the target up to 10 feet away from him (if he chooses to shove and he succeed)."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Vlad Drakov uses his aura of dread ability and makes 3 attacks with his rod of flailing +3 or hand axe of throwing or three ranged attacks with his hand axe of throwing. "
+					]
+				},
+				{
+					"name": "Aura of Dread",
+					"entries": [
+						"Each creature of Vlad Drakov's choice within ",
+						"50 feet and that is aware of Vlad Drakov must make a {@dc 18} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of their turns, ending the effect on itself on a success. That creature is immune to this ability for 24 hours. "
+					]
+				},
+				{
+					"name": "Rod of Flailing +3",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 10 ft., one target. {@h}12 ({@damage 1d8 + 8}) bludgeoning damage, plus 4 ({@damage 1d8}) necrotic damage."
+					]
+				},
+				{
+					"name": "Hand Axe of Throwing",
+					"entries": [
+						"{@atk mw,rw} {@hit 13} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}8 ({@damage 1d6 + 5}) slashing damage in melee, or 8 ({@damage 1d6 + 5}) slashing damage at range."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"legendaryHeader": [
+				"Vlad Drakov can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Vlad Drakov regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Rod of Flailing +3",
+					"entries": [
+						"Vlad makes one attack with his Rod of Flailing +3."
+					]
+				},
+				{
+					"name": "Tactical Repositioning",
+					"entries": [
+						"Vlad and up to three allies within 30 feet of him can move up to 30 feet. This movement does not provoke attacks of opportunity."
+					]
+				},
+				{
+					"name": "Potion of Greater Healing (2 actions)",
+					"entries": [
+						"Vlad drinks a potion and heals 20 ({@dice 8d4}) hit points."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Darklords&DomainsVol1LairActionsVladDrakov",
+				"source": "Darklords&DomainsVol1"
+			},
+			"legendaryActions": 3,
+			"damageTags": [
+				"B",
+				"N",
+				"S",
+				"Y"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/9xLxkNS.png"
+			},
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"I am the fury of the thunderstorm. I am the con-queror. One day I will ride across this land and force these petty lords to kneel before me and exclaim my greatness. I will listen to them plead as I strip the flesh from their bones. I will create a forest of my impaled enemies and dip my bread in their blood."
+						],
+						"by": "Vlad Drakov"
+					},
+					{
+						"type": "quote",
+						"entries": [
+							"I have no idea who that person is."
+						],
+						"by": "Azalin Rex"
+					},
+					"Vlad is a large human in his mid eighties. Despite his advanced age, he has the health and physical vigor of a warrior half his age. His unkempt hair is still light brown and is only starting to turn grey at the temples. Vlad is always armed and armored, and never wears a crown. The symbol of his authority is a black cape, trimmed with winter wolf fur, held together with a sil-ver clasp in the shape of a screaming eagle. Vlad's paranoia is all encompassing. He regularly slaughters his own advisors and bodyguards for minor failures or imagined slights.",
+					{
+						"type": "entries",
+						"name": "Background",
+						"page": 200,
+						"entries": [
+							"Vlad started his life as a mercenary on a continent far from the Domains of Dread.. Little is known about Vlad's childhood, and none are keen to ask. Vlad's history seems to begin when he became a mercenary for the followers of the cruel god, Hith. Vlad's ruthless nature and obvious intelligence served him well as a mercenary, and soon his coffers were overflowing with gold and his services in demand all across the continent. Despite this, Vlad felt empty. His clients fought for his services and paid him well, but they looked down on him as little more than a rabid dog. This scorn drove Vlad to vent his fury on his vic-tims, engaging in ever greater acts of cruelty and tor-ture. After decades of bathing in the blood of innocents, he was pulled into Ravenloft by the Dark Powers. Af-ter one particularly long night of torture and mutilation, Vlad and his men found themselves in Darkon, the realm of Azalin the lich.",
+							"Vlad tried to conquer Darkon, severely underestimating the lich lord of the realm and his defenses. As Vlad's troops were slain by hordes of undead, they rose as zombies and joined the endless ranks of the enemy. Vlad's considerable experience and tactical brilliance accounted for nothing and his troops fell before the re-lentless attacks of the undead. Before he knew what had happened, he was pushed back into the mists sur-rounding Darkon."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Current Sketch",
+						"page": 200,
+						"entries": [
+							"Vlad rules his domain with an iron fist. His men are fiercely loyal and follow his com-mands to the letter. Even the impossible ones. Despite this, Vlad feels hollow. Falkovnia is a small realm and Vlad yearns to conquer. This is impossible, as all of his neighbors within Ravenloft are far more powerful than he. Vlad has attempted to invade Darkon no fewer than five times over the decades and been repulsed with heavy losses every time. Azalin hasn't even bothered to send an envoy demanding an end to the attacks or asking for peace. It seems no matter what Vlad does, Azalin hasn't even noticed him. Vlad takes this out on the people of his domain. He demands at least one execution a day, and eats his dinner while watching his victim being tortured to death. On special occa-sions Vlad will have as many as forty people execut-ed. His favorite method is impalement, but Vlad is al-ways on the lookout for fascinating new ways to slowly and painfully kill. Falkovnia is the breadbasket of the Domains of Dread, and Vlad could starve the armies of his neighbors by the simple act of just not sending them grain. Vlad will never even consider this, as to his mind that is how a coward conquers."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Darklord's Tactics",
+						"page": 200,
+						"entries": [
+							"Vlad has been fighting longer than most people have been alive. Intelligent and ruth-less in the extreme, no trick is too dirty, no tactic too un-derhanded. Vlad will regularly sacrifice men for tactical advantage, to save his own life, or because he wants to watch them die."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Borders",
+						"page": 200,
+						"entries": [
+							"Vlad cannot seal the borders of his domain."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Vlad Drakov's Lair: Castle Draccipetri",
+						"page": 200,
+						"entries": [
+							"Castle Draccipetri is a massive edifice that sits out-side the city of Lekar. Castle Draccipetri's thick walls and tall towers are covered in spikes, hooks and cag-es. Commoners and nobles alike are impaled on the hooks or spikes and left to die. Others are locked in the cages and left to succumb to exposure and starvation. Screams rebound from the stone walls and high tow-ers. The walls, once light grey, have become dark with dried blood. Guards line the walls day and night, as Vlad is always ready for an attack. Local legend says that you only walk through the gates to the castle once. Vlad Drakov encountered in his lair has a challenge rating of 16 (15,000 XP)."
+						]
+					},
+					{
+						"name": "Significant Possessions",
+						"type": "inset",
+						"entries": [
+							{
+								"type": "list",
+								"items": [
+									"1 {@item Belt of Giant Strength|DMG}",
+									"1 {@item +3 Rod of Flailing|Darklords&DomainsVol1}",
+									"1 {@item Boots of Speed|DMG}",
+									"1 {@item Hand Axe of Throwing|Darklords&DomainsVol1}",
+									"1 {@item +3 Plate Armor|DMG}",
+									"1 {@item +3 Shield|DMG}"
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/gYmF52R.jpg"
 						}
 					}
 				]
