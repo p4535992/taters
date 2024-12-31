@@ -5050,7 +5050,7 @@
 			]
 		},
 		{
-			"name": "Wand of Fireballs (10 charges)",
+			"name": "Wand of Fireballs Superior",
 			"source": "Darklords&DomainsVol1",
 			"page": 1,
 			"type": "WD",
@@ -5067,11 +5067,36 @@
 			"rechargeAmount": "{@dice 1d6 + 1}",
 			"charges": 10,
 			"entries": [
-				"This wand has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the {@spell fireball} spell (save DC 15) from it. For 1 charge, you cast the 3rd-level version of the spell. You can increase the spell slot level by one for each additional charge you expend.",
+				"This wand has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the {@spell fireball|PHB} spell (save DC 15) from it. For 1 charge, you cast the 3rd-level version of the spell. You can increase the spell slot level by one for each additional charge you expend.",
 				"The wand regains {@dice 1d6 + 1} expended charges daily at dawn. If you expend the wand's last charge, roll a {@dice d20}. On a 1, the wand crumbles into ashes and is destroyed."
 			],
 			"attachedSpells": [
 				"fireball"
+			]
+		},
+		{
+			"name": "Wand of Slow Superior",
+			"source": "Darklords&DomainsVol1",
+			"page": 1,
+			"type": "WD",
+			"tier": "major",
+			"rarity": "rare",
+			"reqAttune": "by a spellcaster",
+			"reqAttuneTags": [
+				{
+					"spellcasting": true
+				}
+			],
+			"weight": 1,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d4 + 1}",
+			"charges": 7,
+			"entries": [
+				"This wand has 7 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the {@spell slow|PHB} spell (save DC 15) from it.",
+				"The wand regains {@dice 1d4 + 1} expended charges daily at dawn. If you expend the wand's last charge, roll a {@dice d20}. On a 1, the wand crumbles into ashes and is destroyed."
+			],
+			"attachedSpells": [
+				"slow"
 			]
 		},
 		{
@@ -5593,7 +5618,10 @@
 				"people of Richemulot",
 				"people of Darkon",
 				"people of Falkovnia",
-				"people of Keening"
+				"people of Keening",
+				"people of Lamordia",
+				"people of Necropolis",
+				"people of Tepest"
 			],
 			"script": "Elvish"
 		},
@@ -5622,7 +5650,9 @@
 				"people of Richemulot",
 				"people of Darkon",
 				"people of Dementlieu",
-				"people of Falkovnia"
+				"people of Falkovnia",
+				"people of Lamordia",
+				"people of Necropolis"
 			],
 			"script": "Elvish"
 		},
@@ -5645,7 +5675,8 @@
 			"typicalSpeakers": [
 				"people of Darkon",
 				"people of Dementlieu",
-				"people of Falkovnia"
+				"people of Falkovnia",
+				"people of Lamordia"
 			],
 			"script": "Elvish"
 		},
@@ -5679,7 +5710,9 @@
 				"people of Verbrek",
 				"people of Darkon",
 				"people of Dementlieu",
-				"people of Falkovnia"
+				"people of Falkovnia",
+				"people of Lamordia",
+				"people of Necropolis"
 			],
 			"script": "Elvish"
 		},
@@ -5745,7 +5778,8 @@
 			"typicalSpeakers": [
 				"people of Nova Vaasa",
 				"people of Shadow Rift/Arak",
-				"people of Darkon"
+				"people of Darkon",
+				"people of Tepest"
 			],
 			"script": "Elvish"
 		},
@@ -5791,11 +5825,12 @@
 				"people of Sithicus",
 				"people of Valachan",
 				"people of Verbrek",
-				"people of Darkon"
+				"people of Darkon",
+				"people of Tepest"
 			],
 			"script": "Elvish",
 			"entries": [
-				"{@b Fun Fact:} While other countries may speak Vaasi, only the Nova Vaasa dialect is considered the true one by the Vaasi themselves. They  consider all other versions  brutish and inferior."
+				"{@b Fun Fact:} While other countries may speak Vaasi, only the {@i Nova Vaasa} dialect is considered the true one by the Vaasi themselves. They consider all other versions brutish and inferior."
 			]
 		},
 		{
@@ -6174,6 +6209,19 @@
 					"name": "Chapter 1: Domains and Darklords",
 					"page": 6,
 					"entries": [
+						{
+							"name": "Note from the converter",
+							"type": "inset",
+							"entries": [
+								"Note from the converter the book brilliantly summarized the entire world of the dark realms, but for more details not included in this book I invite you to visit the following sites:",
+								{
+									"type": "list",
+									"items": [
+										"{@link https://fraternityofshadows.com/wiki/Main_Page|Fraternity of Shadow}"
+									]
+								}
+							]
+						},
 						{
 							"type": "entries",
 							"name": "Map of the Core",
@@ -14500,7 +14548,7 @@
 									"name": "Terrain Type",
 									"page": 219,
 									"entries": [
-										"Necropolis is a settled domain, the majority being a city. The domain is only four miles in diameter, and this area contains the former Il Aluk itself, along with some satellite villages and surrounding farmland. It is bisect-ed by the Vuchar River — this is where the river fish die. Anything downstream is inedible for miles, though the undead fish mostly still swim within the domain. Il Aluk itself sits in a small hollow with farmlands and vil-lages sat on small hills. The three villages have since been renamed by the undead locals to Despondia, De-gradia, and Desolatus (which sit on the northern end of the domain) and Decimus which sits south of Il Aluk. Of these, Despondia stands out as the one furthest away, and only half of it sits within the domain of Necropolis — the shroud bisects it neatly. That said, while only half of the village sits in the \"dead zone”, the other locals have completely abandoned the place, thinking it to be cursed."
+										"Necropolis is a settled domain, the majority being a city. The domain is only four miles in diameter, and this area contains the former Il Aluk itself, along with some satellite villages and surrounding farmland. It is bisect-ed by the Vuchar River — this is where the river fish die. Anything downstream is inedible for miles, though the undead fish mostly still swim within the domain. Il Aluk itself sits in a small hollow with farmlands and vil-lages sat on small hills. The three villages have since been renamed by the undead locals to Despondia, De-gradia, and Desolatus (which sit on the northern end of the domain) and Decimus which sits south of Il Aluk. Of these, Despondia stands out as the one furthest away, and only half of it sits within the domain of Necropolis — the shroud bisects it neatly. That said, while only half of the village sits in the \"dead zone\", the other locals have completely abandoned the place, thinking it to be cursed."
 									]
 								},
 								{
@@ -14513,7 +14561,7 @@
 											"name": "Aluk Meridian",
 											"page": 219,
 											"entries": [
-												"Aluk Meridian is larger than all the other areas com-bined, with a population of 17,000. This is where the city's most important buildings are: the Grim Fastness, the Temple of Eternal Penance, the City Guard's Head-quarters, the Hospital, and the famed University of Il Aluk. This is the calmest area of Necropolis as Death's minions keep a tight watch over the area, and do not suffer troublemakers — the main problem is that most of the ghouls of Necropolis lair somewhere in the sew-ers beneath Aluk Meridian. The Temple of Eternal Pen-ance was the center of the worship of the Eternal Order in Il Aluk, and it was led by Brege Heuss and George d'Arcy. Unknown to George, Brege was a werewolf at the time, one who kept her predations very quiet, often disposing of her kills in the sewers below the city. Af-ter the Requiem, when both of them became undead (Brege turning into a wight, and George into a vampire) they came to an odd truce, that allowed them to share control of the Unholy Order — the main religion of the Necropolitans. This order is dedicated to the worship of Death, and functions as both priesthood and secret police in a similar manner to the Kargat for Azalin. The few who still subscribe to the worship of the Eternal Order consider them heretics and have started wor-shiping at the Temple of Undying Order in Degradia instead. The Hospital holds one of Il Aluk's best-kept secrets: This is where a few priests gathered during the Requiem to try to stop the Hour of Ascension — the climax of the Requiem. But they failed. They survive as undead and are among the few whose morals have yet to be corrupted. Led by Serinda Brecht, who turned into a powerful mummy lord, they meet here once a month in the nursery of the otherwise abandoned hos-pital, secure in the knowledge that the ward's associ-ation with birth will keep Death and his minions away. The University of Il Aluk was once the highest center of learning in Darkon, and even now, under the auspices of the lich Vice-Chancellor August Montalva, it retains its reputation as a center of learning. He accomplish-es this by maintaining a link with \"The University of Il Aluk in Exile”, which is a traveling center of learning in Darkon. He also invites learned undead creatures from across the Core to visit and partake in its wealth of knowledge, provided they pledge to add to its sizable library."
+												"Aluk Meridian is larger than all the other areas com-bined, with a population of 17,000. This is where the city's most important buildings are: the Grim Fastness, the Temple of Eternal Penance, the City Guard's Head-quarters, the Hospital, and the famed University of Il Aluk. This is the calmest area of Necropolis as Death's minions keep a tight watch over the area, and do not suffer troublemakers — the main problem is that most of the ghouls of Necropolis lair somewhere in the sew-ers beneath Aluk Meridian. The Temple of Eternal Pen-ance was the center of the worship of the Eternal Order in Il Aluk, and it was led by Brege Heuss and George d'Arcy. Unknown to George, Brege was a werewolf at the time, one who kept her predations very quiet, often disposing of her kills in the sewers below the city. Af-ter the Requiem, when both of them became undead (Brege turning into a wight, and George into a vampire) they came to an odd truce, that allowed them to share control of the Unholy Order — the main religion of the Necropolitans. This order is dedicated to the worship of Death, and functions as both priesthood and secret police in a similar manner to the Kargat for Azalin. The few who still subscribe to the worship of the Eternal Order consider them heretics and have started wor-shiping at the Temple of Undying Order in Degradia instead. The Hospital holds one of Il Aluk's best-kept secrets: This is where a few priests gathered during the Requiem to try to stop the Hour of Ascension — the climax of the Requiem. But they failed. They survive as undead and are among the few whose morals have yet to be corrupted. Led by Serinda Brecht, who turned into a powerful mummy lord, they meet here once a month in the nursery of the otherwise abandoned hos-pital, secure in the knowledge that the ward's associ-ation with birth will keep Death and his minions away. The University of Il Aluk was once the highest center of learning in Darkon, and even now, under the auspices of the lich Vice-Chancellor August Montalva, it retains its reputation as a center of learning. He accomplish-es this by maintaining a link with \"The University of Il Aluk in Exile\", which is a traveling center of learning in Darkon. He also invites learned undead creatures from across the Core to visit and partake in its wealth of knowledge, provided they pledge to add to its sizable library."
 											]
 										},
 										{
@@ -14648,7 +14696,7 @@
 										{
 											"name": "Death",
 											"type": "entries",
-											"page": 214,
+											"page": 223,
 											"entries": [
 												{
 													"type": "statblock",
@@ -14657,6 +14705,362 @@
 													"name": "Death"
 												}
 											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Tepest",
+							"page": 225,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/eeyswaW.jpg"
+									}
+								},
+								{
+									"type": "quote",
+									"entries": [
+										"Oh, you dear children, who brought you here ? Just come in and stay with me. No harm will come to you."
+									],
+									"by": "Hansel and Gretel, Brothers Grimm."
+								},
+								"To live in Tepest is to be mired in superstition as the residents of this (barely civilized) domain are convinced that they're under attack by the \"fey\" at ev-ery turn. Their belief that the \"fey\" are out to get them leaves them so deluded that they can no longer distin-guish between actual fey creatures, humanoids, and monsters. Anything that seems to be non-human has a good chance of being convicted as being fey. As has any creature with access to magic, whether this is from training (such as a wizard) or by nature (such as the spell-like abilities of various creatures). There is SOME truth to this idea, as before the emergence of Tepest, the inhabitants were under siege by the fey, but when they erupted into the misty realms of Ravenloft, these \"fey creatures\" seem to have disappeared into the background. With the rise of the Tepestani Inquisition, this is, even more, the truth, and they now operate in secret (but are no less prominent).",
+								"Tepest has no central rulership, as each village is under the control of a local lord or council, but Tepest is the domain of the Mindefisk Sisters. Three sisters who seduced, murdered, and ate men alive before coming to Ravenloft, and who —- upon their arrival — were transformed into hideous hags, hiding in the Worm-wood, concocting plots, and enjoying bringing misery to the mortals around them.",
+								"Adventures in Tepest should focus on the tales of evil hags and fey, and of the danger of greed like the Min-defisk sisters. Perhaps the heroes come here looking for riches, like the famous pot of gold at the end of the rainbow. Perhaps they've heard tales of a house made of food or of dwarven mines rich with gold. The greed that drives them here, should bring them into conflict with the fey realms and from there, they'll simply have to follow to see how deep the rabbit hole goes.",
+								{
+									"type": "table",
+									"caption": "Tepest",
+									"colLabels": [
+										"Detail",
+										"Description"
+									],
+									"colStyles": [
+										"col-3 text-center",
+										"col-9"
+									],
+									"rows": [
+										[
+											"Culture Level",
+											"Early Medieval"
+										],
+										[
+											"Climate & Terrain",
+											"Temperate, forest, hills, and rivers"
+										],
+										[
+											"Year Formed",
+											"691 BC"
+										],
+										[
+											"Population",
+											"15.500"
+										],
+										[
+											"Races (%)",
+											"Humans 99%, Other 1%."
+										],
+										[
+											"Languages",
+											"{@language Common|PHB}, {@language Darkonese|Darklords&DomainsVol1}, {@language Goblin|PHB}, {@language Sylvan|PHB}, {@language Tepestani|Darklords&DomainsVol1}, {@language Vaasi|Darklords&DomainsVol1}"
+										],
+										[
+											"Religions",
+											"Belenus, Ezra, Lugh, The Lawgiver"
+										],
+										[
+											"Government",
+											"Aristocratic and theocratic  settlements (each indepen- dent of the others)"
+										],
+										[
+											"Ruler(s)",
+											"None"
+										],
+										[
+											"Darklord(s)",
+											"The Three Hags (Sisters Mindefisk)"
+										],
+										[
+											"Nationality",
+											"Tepestani"
+										],
+										[
+											"Analog",
+											"Black Forest of the Brothers Grimm"
+										],
+										[
+											"Neighboring domain(s)",
+											"Darkon, Keening, Nova Vaasa, The Shadow Rift"
+										]
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/Oq74eO2.jpg"
+									}
+								},
+								{
+									"type": "entries",
+									"name": "Local Fauna",
+									"page": 226,
+									"entries": [
+										"Animals in Tepest are plentiful, with cold-region ani-mals like deer and stoats being common. Boars prowl the deeper forests, and beavers have been known to stem the water flows on some of the smaller river-by-ways. The lakes and rivers have plentiful fishing, with Lake Kronov having large catches of pike and sturgeon (though the animals in Lake Kronov avoid Castle Is-land). Tepestani do not keep much in the way of live-stock, but when they do, it is usually sheep and goats — smaller and nimbler animals, rather than the pigs and cows common elsewhere. Birds are slightly less common, but hawks, sparrows, and ravens are plen-tiful. There are an unfortunately large amount of pred-ators, such as wolves, bears, and wolverines. More disturbingly, many of these reach monstrous sizes and appear twisted in both form and mind, being more ag-gressive than their counterparts elsewhere. The locals refer to these creatures as \"goblin beasts\", so named after local goblins who often tame them, but elsewhere they're known as \"dire\" beasts."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Local Flora",
+									"page": 226,
+									"entries": [
+										"Tepest is a domain covered in thick and ancient forests of hardwood, mainly beech, oak, and hazelnut. It is occasionally interrupted with pine or spruce, but there are none of the warm-weather trees present here. All the forests are gnarled and twisted, far beyond what they should be, even for their age. Even trees that are known to grow straight and true in other lands are twist-ed here, almost as if the land itself is trying to scare away the unwary, giving the domain the appearance of an evil fairytale forest. The trees are strong and healthy, with thick crowns that block out the sun, and in the eternal gloom underneath the boughs, numerous mushrooms and mosses can be found. In the forests are occasional, natural clearings that the locals refer to as \"fey rings\". Within these clearings, explosions of colors can be found, as they are covered in flowers and grasses, and some strange property of them caus-es spring and summer to linger here, longer than in the lands around them. The locals avoid the rings until they've been \"cleansed\" by a priest, as they believe that they're home to fey creatures, who lure in and trick mortals. Once the clearings have been cleansed, however, they're favorite spots of local herders. Three plants that are native to Tepest warrant mention: cloud-berries, fairy stools, and wichtingourds. Cloudberries grow only naturally in the bogs of the southern woods, and the southern shores of Lake Kronov. Attempts to cultivate them elsewhere have failed, except for a suc-cessful planting on the hillsides overlooking the Black-mist River. These cloudberries make for a potent and fruity wine that's won acclaim and fame in Nova Vaasa in the past 20 years and is quickly becoming a favorite of the nobles of that realm. Fairy stools resemble fly agarics, with red caps and white spots. They grow in lines, circles, or spirals, but a peculiar property of them is that they flourish wherever magic has been cast — sprouting like crazy within 2 hours of being exposed to magic, almost as if they draw some form of suste-nance from the magic. The locals believe that these mushrooms sprout only in the presence of fey, but use them as a form of primitive detect magic. Moved to a tray and passed across the body of an accused, they believe that if the mushroom sprouts more, it is a sign of fey witchcraft.",
+										"Wichtingourds are also believed to only grow when exposed to fey influences, but instead of working like primitive detection devices, the Tepestani have re-alized that these have two peculiar properties. If the gourds are dried and turned into a rattle, they can be used to great effect for settling infants and the restless. If the dried wichtingourd is rattled, everyone within 5 feet must make a DC 8 Wisdom save. Failure means that the creature is exhausted (at level 1) for 2 (1d4) rounds. Anyone already exhausted must make another DC 8 Wisdom save or fall asleep. A new saving throw must be made each round that the gourd is rattled, though deaf creatures are immune.",
+										"The second property affects only fey creatures and outsiders. If a dried ground is broken open, and the seeds spilled in a 10-foot line or 5-foot circle, they must make a DC 12 Wisdom save to avoid having to pick up and count all the seeds. Picking up and counting the seeds requires a DC 10 Acrobatics check, and takes 1d4 rounds. If the creature has failed the Wisdom sav-ing throw, it is incapable of crossing the line or circle, until the seeds have been picked up, forming a barrier similar to a wall of force that affects only the creature itself."
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/0Ly8Tfa.jpg"
+									}
+								},
+								{
+									"type": "entries",
+									"name": "Native Horrors",
+									"page": 227,
+									"entries": [
+										"While Tepestani view all monsters as \"fey\" or controlled by them at least, that isn't entirely true. While there is a large amount of them present in the domain, such as nymphs and sprites, and more dangerous varieties, they aren't the only monsters around. Goblins and \"gob-lin beasts\" are far more prevalent than any fey, but that is not how the Tepestani view it. There are a number of treants here as well, all corrupted by the presence of the Mindefisk sisters, but their greatest achievement is Blackroot, a twisted undead treant that rules the Hag's Wood (Brujamonte) south of Viktal. These are all on top of the monsters that wander in from other domains, but there is one thing that the Tepestani are correct in: The fey are NOW a threat — their numbers have increased exponentially since the appearance of the Shadow Rift. Of far greater danger than the mon-sters or any fey in Tepest is the Tepestani Inquisition. Created by Wyan of Viktal, out of good intent to root out dangerous fey and those under their influence, it has grown and mutated beyond his control. The fur-ther away from Wyan and Viktal that the Inquisitors get, the more brazen they become, with some only giving lip-service to the ideals that they supposedly uphold. Many of the Tepestani themselves have come to see the Inquisition as a useful tool to remove obstacles, with many neighbors blaming even minor incidents on each other and accusing one another of consorting with fey. To the Tepestani Inquisition there are only 4 levels of guilt: Innocent, the accused is bewitched (bheict faoihk raiocht in Tepestani), the accused is a fey consort (fealltóir), or the accused is one of the fey themselves. Suffice to say, that very rarely is anyone found innocent, though those who are bewitched are generally treated as innocent by way of being manipu-lated, so their punishment is light. Those who consort or are one of the fey are often forced to confess via torture and then burned at the stake. As the Inquisition also works as the law enforcement in Tepest, running afoul of them is highly dangerous."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Terrain Type",
+									"page": 228,
+									"entries": [
+										"Tepest is fairly flat, with only the occasional peak breaking through the forest canopy. Hills are common but are usually buried so far beneath the trees that it's difficult to see where the hilly terrain begins or ends. The forests are the main dominating feature of the ter-rain, along with the rivers and the clear areas around them. The weather is fairly harsh, with cold winters and mild summers, but most of the domain avoids the harsh winds that could easily make it far colder, as it shelters among the trees."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Important Landmarks",
+									"page": 228,
+									"entries": [										
+										{
+											"type": "entries",
+											"name": "Castle Island",
+											"page": 228,
+											"entries": [
+												"Castle Island is home to the Avanc and the Lady of the Lake. More details on this pocket domain can be found under the Castle Island heading."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Cottage of the Sisters Three",
+											"page": 228,
+											"entries": [
+												"Located deep in the Wormwood, this ramshackle cot-tage is surrounded by wooden frames from which hang the skins of both animal and human. Near the entrance is a massive cauldron, constantly bubbling away at all times, nourished by a huge fire. Bones and skulls dec-orate the ground near it. The wooden cottage is the home of the coven of hags that are the darklords of Tepest. Each sister is more disgusting than the other, and within their hut can be found only the terror of all the dark stories of hags, crones, and old women who eat children and deceive the good folk of the world."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Hag's Wood (Brujamonte)",
+											"page": 228,
+											"entries": [
+												"The deepest and darkest of all of the woods in Tepest, the Hag's Wood is twisted so much that even goblins refuse to enter it. What lies within its dark interior is unknown, though it is the home of Blackroot, the dread undead treant. The presence of this creature seems to be what has transformed the Hag's Wood into a place inimical to life. All natural beasts avoid the place instinctively, and only the bravest, strongest, or most foolhardy enter the wood of their own accord."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Towns and villages",
+									"page": 228,
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Briggdarrow",
+											"page": 228,
+											"entries": [
+												"Briggdarrow is the smallest noteworthy settlement in Tepest. It has approximately 300 people living in it who survive mostly by fishing. The outskirts of the village are mostly abandoned and falling into ruin, as many of the inhabitants left when the Shadow Rift appeared, afraid to face the fey that might come from it.",
+												"According to the Tepestani Inquisition, this is also the hotbed of fey activity in Tepest, with the village suffer-ing more attacks, and being more under the influence of the fey than any other settlement in Tepest. Wheth-er this is true or not is unknown, but what is certain is that the Inquisition are more active and convicts at least twice as many in comparison in Briggdarrow than elsewhere, even cities far bigger than it.",
+												"Of further note for Briggdarrow is that it is home to The Spider House, the singularly best public house avail-able in Tepest, with the owners Kerwin and Maryan en-suring that everyone feels at home in their inn."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Keelee",
+											"page": 228,
+											"entries": [
+												"Keelee is the most open community in Tepest. Run by the aging Gerald Ferrier, it is utterly pristine in appear-ance, to the point where the militia will admonish inhab-itants for letting their houses fall into disrepair, and chil-dren can be seen collecting dung from the animal pens twice per day, for it to be distributed on the surrounding fields. The one exception to the pristine appearance of the city is the cottage of the town's best trapper, a man named Leobe.",
+												"He seems to take sadistic glee in annoying Ferrier and is incredibly rude and antisocial in general. Ferrier is an expatriate from Falkovnia and runs the Hawk's Ha-ven (apart from being the town's mayor) and his love of organization and harsh adherence to discipline proba-bly comes from his upbringing in Falkovnia. His inn is immaculate as a result, and the favorite stop of Nova Vaasan traders, as the food is an intriguing mix of Vaa-si, Tepestani, and Falkovnian fare, that most travelers seem to enjoy.",
+												"Keelee was, until recently, the only place in Tepest where it was possible to avoid the Tepestani Inquisi-tion, as Ferrier did not allow them to operate within the township's borders. Instead, he has his own militia (the only really organized armed force in Tepest, as the In-quisition is quite disorganized). That changed when his wife, the local priest of Belenus, was murdered along with all the visitors that were at the Hawk's Haven that night. Ferrier was innocent, as he was not present, and the Inquisition judged the culprit, a visitor from Nova Vaasa, to be fey, and burned him at the stake. Privately Ferrier has his doubts about the veracity of this, and still curbs the Inquisition presence in Kelee, but to a much lesser degree than before."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Linde",
+											"page": 229,
+											"entries": [
+												"Linde is marginally bigger than Briggdarrow, with only 10 or 20 more inhabitants than the other village. Before the appearance of the Shadow Rift, it was experienc-ing a minor boom period, as the main growing area for cloudberries, and the subsequent brewing of cloudber-ry wine. After the appearance of the Shadow Rift, many inhabitants left, and Linde only really clings on because of how easy it is to grow and harvest the cloudberries. Once harvested, some people brew the cloudberry wine in their own breweries, but most congregate at the Nocturne (the local inn) where they brew the wine and subsequently sell it on to traders.",
+												"Linde is also home to the nicest Inquisitor in Tepest. A huge bear of a man, Mannen is not only an Inquisitor but also the mayor of Linde, as well as a priest of Bele-nus. He is openly critical of many of the other members of the Inquisition, thinking that they have gone too far in their zealous pursuit of the fey and that they've lost sight of the reasoning behind the Inquisition. His lack of bloodthirst is often a worry to those who believe in the Inquisition, leading many to avoid him. Those who don't find him to be a wise man who is always willing to help."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Viktal",
+											"page": 229,
+											"entries": [
+												"Viktal, with its population of 3,500 is the largest town in Tepest and the de facto capital. Small fields surround the town, and on most days fishing boats can be seen plying Lake Kronov - and avoiding Castle Island. Most of the buildings in Viktal are unremarkable, with two exceptions. The first is the temple to Belenus, which is the only temple to the god in Tepest that does not have an open-air area. It is instead a much darker brooding structure than other temples and features pews of the worshipers to sit on (The open-air affairs that are nor-mal to Belenus do not have places for the lay-folk to sit). The other structure is the home of Wyan, the founder and leader of the Tepestani Inquisition. Both of these structures sit within the same compound, and on the outside, Wyan's house is ostentatious when compared to the four buildings in Tepest. Inside, it is clear that the man is humble, but values knowledge, having the only (small) library in Tepest within his house. Furthermore, the man has invented a written language for Tepestani (which doesn't feature writing of its own). But while the man is smart, he is also driven. The death of his second wife at the hands of the fey broke something in him, and he created the Inquisition and led hundreds of courts, which led to the death of many fey. His re-cord-keeping is immaculate and he was always thor-ough, but when his own daughter fell under the sway of the fey and nearly caused him to condemn an innocent to death, he withdrew to heal his daughter and search his records and feelings to see if he had been too vig-orous. Only in the last year or so has Wyan reemerged as the leader of the Inquisition, but he now spends most of his time curbing their worst excesses. This has many of the other influential Inquisitors worried as Wyan acquits far more people than any other mem-ber of the Inquisition, but his immaculate record-keep-ing (that he insists other Inquisitors follow) reveals that he still performs his work to the best of his ability."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Fun Fact",
+									"page": 229,
+									"entries": [
+										"Contrary to popular belief, the fairy mushrooms of Te-pest aren't hallucinogenic. Instead, they're nutritious and filling, but the locals avoid them as they see it as simply another way for the fey to corrupt the populace."
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/a52bncZ.jpg"
+									}
+								},
+								{
+									"type": "entries",
+									"name": "The Three Hags",
+									"page": 230,
+									"entries": [
+										{
+											"type": "quote",
+											"entries": [
+												"Double, double, toil and trouble,",
+												"Fire burn and cauldron bubble,", 
+												"Scale of dragon, tooth of wolf,", 
+												"Witches mummy; maw and gulf."
+											],
+											"by": "Macbeth-William Shakespeare"
+										},
+										"The three hags of Tepest are sisters that live deep in the Wormwood. They can change their appearance at will, and alter their features on a whim. Laveeda pre-fers to have dark hair and long black nails. Leticia's hair and clothes flow around her like she is in a strong cur-rent, and wears elaborate necklaces. Lorinda is always well dressed in animal skins of questionable origin.",
+										"Despite their outward appearance, the sisters see each other's true forms. They are twisted and hunched ogresses. They have razor sharp nails and thick teeth perfect for crunching bones.",
+										"Laveeda is an annis hag. She is the strongest of the sisters and her nails and teeth are made of iron. Leticia is a sea hag. Her skin is a deep blue and she is cov-ered in small scales. Seaweed grows in her hair and she smells of rotting fish if she doesn't use magic to cover the odor. Lorinda has become a green hag. Her skin is green and rough like the bark of an ancient tree.",
+										"The sisters have a cozy cottage in the middle of the Wormwood, and regularly entertain travellers and lost adventurers. Laveeda will cook them a splendid meal while Leticia and Lorinda distract their guests. The hags are talented potion makers and their guests are left awake but helpless after dinner is served. Once the hags have slain their victims no part of the body is left to waste. The skin and bones are eaten, the teeth and any organs not needed for an immediate potion are crafted into beautiful jewelry. The remaining organs are either used to craft potions or preserved for a snack later.",
+										{
+											"type": "entries",
+											"name": "Background",
+											"page": 230,
+											"entries": [
+												"Rudella Mindefisk desperately wanted daughters. She and her brutish husband, Holger, had several sons, but Rudella prayed for a daughter. In her desperation Rudella didn't think about who she was praying to.",
+												"One morning the sound of a baby crying met Rudella when she awoke. She followed the cries to the door of her house and, much to her joy, found three baby girls left on her doorstep. Holger wanted to drown the infants in a nearby river. They were sickly and weak, but Rudella didn't care. They were her beautiful baby girls and Rudella would die before she let any harm come to them. Rudella named them Laveeda, Leticia, and Lorinda.",
+												"Under Rudella's care the three girls regained their strength quickly. In a few years the girls grew strong, As the girls grew strong Rudella started to weaken. By the time the girls were three, Rudella was sickly. By the time the girls were five Rudella was too weak to leave her bed. Right after the girls turned six, Rudella died.",
+												"Holger wasted no time grieving for his wife. Instead, he considered taking the girls into the forest and leav-ing them to die of exposure, but decided to keep them around as long as they would keep the house clean and cook for him and his sons. For years Holger and his sons would ignore the sisters until they wanted to be fed or have something cleaned.",
+												"The girls grew into intelligent and talented teenagers. Laveeda was a brilliant cook, with the exception of mutton, which she always burnt or under cooked. Laveeda could take almost any ingredient and make wonderful meals. She got a job at a local inn and her cooking brought in travellers for miles around. Laveeda was happy at first, but her father demanded her wages. Holger forced Laveeda to work sick, and never let her rest. Laveeda soon quit the tavern.",
+												"Leticia fashioned beautiful jewelry, often out of worthless stones and polished animal bones. On the rare occasion Leticia had actual gems, she could craft as-tounding works of art. Leticia even attracted the atten-tion of a few local nobles, who paid a hefty sum for Leticia's art. Holger took the gold and drank it away. Leticia soon stopped making jewelry.",
+												"Lorinda was a seamstress beyond comparison. Lorinda had a natural talent for stitchery and how fabric fell around a body. Lorinda could work with any materi-al, animal skins, wool, even silk when she could find some. The local villagers even became suspicious of Holger and his sons. How could a poor farmer afford such elegant clothing? Lorinda refused any commissions, no matter the cost. She had seen the greedy look in her father's eyes as he took her sister's money. Lorinda would be damned before she would become a slave for her father.",
+												"The three sisters were desperate to leave their abusive father, but knew they needed gold to survive. They saw their chance when a wealthy stranger stopped at their farmhouse. The stranger had gold and was will-ing to pay gold for any food the sisters could spare. A silent agreement was reached in an instant. Leticia and Lorinda entertained the traveller while Laveeda cooked a wonderful meal. Laveeda could mask any flavor and the stranger never tasted the poison that killed him. The sisters took care of the body quickly. Laveeda cooked the meat into stew for Holger and her brothers. Leticia polished his bones and turned them into jewelry. Lorinda tanned the skin into wonderful new vests for her father and brothers. The sisters had found a way to get the gold they needed, while taking a small amount of revenge on Holger and their broth-ers. They continued to murder innocent strangers for years, amassing a vast fortune buried in the woods. One day an absolutely beautiful man appeared at the gates to the farmhouse. He was witty, intelligent, and told the sisters exactly what they wanted to hear. The three sisters fought for the man's affections, shower-ing him with gold and gifts. The man spent the money on a lavish lifestyle, and disappeared as soon as the money was gone. The sisters realized they had been played and were furious. They tracked him down and took their time cutting him to ribbons. The sisters were broke and hungry. They had no food and no way to get any, so they turned to the only meat they had on hand. As they devoured the dandy, the Mists clouded in. When the Mists cleared, the sisters had changed. They were hags now and revelled in their new power and abilities."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Current Sketch",
+											"page": 231,
+											"entries": [
+												"The hags are the darklords of Tepest, but have no political power. Most of the inhabitants don't even know the hags exist. Anyone that goes missing is blamed on the goblins that infest the Worm-wood. The goblin tribes in that terrible forest pay nom-inal obedience to the sisters, but it's a loyalty born of fear. The sisters don't care about the loyalty of goblins or if the locks know they exist.",
+												"They have become talented potion makes and have found the powerful Cauldron of Resurrection. The sis-ters enjoy their life and have become cannibal gour-mands. Laveeda can smell humans at half a mile, and can hear the quietest footfalls. She has never been surprised by an enemy. Lorinda is the only creature that has ever snuck up on her, as the plants of the for-est move out of her way so she can pass and Lorinda never makes a sound."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Darklord's Tactics",
+											"page": 231,
+											"entries": [
+												"The three hags have known each other their entire lives and their tactics compliment each other perfectly. Laveeda likes to dig in with her iron claws. Her jaws are strong enough to crush bones in armor. Laveeda's favorite trick is to bite the arms off the biggest warrior in the enemy party, then crush their head in her vice-like grip. Leticia will cast spells to pro-tect her sisters then indulge in a bizarre obsession for a sea hag, fire. Leticia loves to burn things with her magic and floods the battlefield with fire. Against oppo-nents that are immune to fire Leticia uses her deadly gaze. Lorinda holds back and uses her magic to heal her sisters and strip beneficial magic from their oppo-nents. Lorinda will also use defensive magic to counter any enemy spellcasters."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Borders",
+											"page": 231,
+											"entries": [
+												"When the hags seal the borders of Tepest, a violent storm encircles the domain. Wind and light-ning bar the way of anyone who tries to get through. If a creature presses on into the storm the lightning drives them to their knees while the wind flays the skin from their bones. Magic has no effect on the storm."
+											]
+										},		
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://i.imgur.com/Awaa1Yx.jpg"
+											}
+										},
+										{
+											"name": "Leticia Mindefisk",
+											"type": "entries",
+											"page": 233,
+											"entries": [
+												{
+													"type": "statblock",
+													"tag": "creature",
+													"source": "Darklords&DomainsVol1",
+													"name": "Leticia Mindefisk"
+												}
+											]
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://i.imgur.com/nMG3car.jpg"
+											}
+										},
+										{
+											"name": "Laveeda Mindefisk",
+											"type": "entries",
+											"page": 234,
+											"entries": [
+												{
+													"type": "statblock",
+													"tag": "creature",
+													"source": "Darklords&DomainsVol1",
+													"name": "Laveeda Mindefisk"
+												}
+											]
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://i.imgur.com/Fkiz9lz.jpg"
+											}
+										},									
+										{
+											"name": "Lorinda Mindefisk",
+											"type": "entries",
+											"page": 235,
+											"entries": [
+												{
+													"type": "statblock",
+													"tag": "creature",
+													"source": "Darklords&DomainsVol1",
+													"name": "Lorinda Mindefisk"
+												}
+											]
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://i.imgur.com/lwMs7kd.jpg"
+											}
 										}
 									]
 								}
@@ -25108,7 +25512,7 @@
 			"attachedItems": [
 				"Bracers of Defense|DMG",
 				"Headband of Intellect|DMG",
-				"Wand of Fireballs (10 charges)|Darklords&DomainsVol1",
+				"Wand of Fireballs Superior|Darklords&DomainsVol1",
 				"Gauntlets of Dexterity|Darklords&DomainsVol1"
 			],
 			"tokenHref": {
@@ -31189,7 +31593,7 @@
 				{
 					"name": "Adam's Family (Once/Day)",
 					"entries": [
-						"Adam calls his \"children” for aid, summoning {@dice 1d4 + 1} {@creature flesh golem|MM}s. They arrive in {@dice 1d6} rounds and act as allies."
+						"Adam calls his \"children\" for aid, summoning {@dice 1d4 + 1} {@creature flesh golem|MM}s. They arrive in {@dice 1d6} rounds and act as allies."
 					]
 				},
 				{
@@ -31638,25 +32042,25 @@
 				{
 					"name": "Flyby",
 					"entries": [
-						"Death doesn’t provoke opportunity attacks when he flies out of an enemy’s reach."
+						"Death doesn't provoke opportunity attacks when he flies out of an enemy's reach."
 					]
 				},
 				{
 					"name": "Semi-Ethereal",
 					"entries": [
-						"Death’s only solid parts of his body are the fleshless skull and hands, which float unsupported in a cloak-like body of shadowy mist. Death can enter the space of another creature as if they weren’t there. There is a 25% chance of any non-spell attack of being a miss. "
+						"Death's only solid parts of his body are the fleshless skull and hands, which float unsupported in a cloak-like body of shadowy mist. Death can enter the space of another creature as if they weren't there. There is a 25% chance of any non-spell attack of being a miss. "
 					]
 				},
 				{
 					"name": "Command Undead",
 					"entries": [
-						"Death can command any undead creature within 60ft. All undead creatures that have a lower CR than Death, are automatically under Death’s control and remain so for as long as Death is within 60ft of them. Death can command an unlimited number of undead minions in this manner, sending mental orders as a free action. Creatures that became undead when they first entered the domain are immune to this effect for 1 day per their level upon entry. Afterwards, Death can com-mand them normally. "
+						"Death can command any undead creature within 60ft. All undead creatures that have a lower CR than Death, are automatically under Death's control and remain so for as long as Death is within 60ft of them. Death can command an unlimited number of undead minions in this manner, sending mental orders as a free action. Creatures that became undead when they first entered the domain are immune to this effect for 1 day per their level upon entry. Afterwards, Death can com-mand them normally. "
 					]
 				},
 				{
 					"name": "Corrupting Essence",
 					"entries": [
-						"Any non-undead creatures that pass through Death’s incorporeal form, including creatures that make successful melee attacks against it, take {@dice 1d6} points of necrotic damage."
+						"Any non-undead creatures that pass through Death's incorporeal form, including creatures that make successful melee attacks against it, take {@dice 1d6} points of necrotic damage."
 					]
 				},
 				{
@@ -31674,19 +32078,19 @@
 				{
 					"name": "Touch of the Reaper",
 					"entries": [
-						"Creatures hit by Death’s touch attack must succeed on a {@dc 18} Constitution Saving throw or receive an instant negative death saving throw result when they fall {@condition unconscious}. A creature can receive a maximum of 2 negative death saving throw results before falling {@condition unconscious}. When death has bestowed 10 negative death results, it increases its maximum hit points by {@dice 5d8} and is healed by the same amount rolled. This increase remains for 24 hours. This ability affects undead creatures."
+						"Creatures hit by Death's touch attack must succeed on a {@dc 18} Constitution Saving throw or receive an instant negative death saving throw result when they fall {@condition unconscious}. A creature can receive a maximum of 2 negative death saving throw results before falling {@condition unconscious}. When death has bestowed 10 negative death results, it increases its maximum hit points by {@dice 5d8} and is healed by the same amount rolled. This increase remains for 24 hours. This ability affects undead creatures."
 					]
 				},
 				{
 					"name": "Life Aversion",
 					"entries": [
-						"Death recoils from objects associated with birth such as an infant’s blanket, as a vampire recoils from holy symbols. If Death hears the sound of a crying newborn creature (though not from a figment or other artificial recreation), he loses control of all creatures under his command. As long as he is exposed to the sound, Death cannot use its command undead or touch of the reaper abilities."
+						"Death recoils from objects associated with birth such as an infant's blanket, as a vampire recoils from holy symbols. If Death hears the sound of a crying newborn creature (though not from a figment or other artificial recreation), he loses control of all creatures under his command. As long as he is exposed to the sound, Death cannot use its command undead or touch of the reaper abilities."
 					]
 				},
 				{
 					"name": "Traits of Undeath",
 					"entries": [
-						"Death is immune to disease and mind influencing spells and effects. Death’s ability scores cannot be reduced and is immune to any spell or effect that would alter its form."
+						"Death is immune to disease and mind influencing spells and effects. Death's ability scores cannot be reduced and is immune to any spell or effect that would alter its form."
 					]
 				},
 				{
@@ -31727,7 +32131,7 @@
 				{
 					"name": "Innate Spellcasting",
 					"headerEntries": [
-						"Death’s innate spellcasting ability is Wisdom (spell save {@dc 18}, +10 to hit with spell attacks). He can innately cast the following spells, requiring no material com-ponents:"
+						"Death's innate spellcasting ability is Wisdom (spell save {@dc 18}, +10 to hit with spell attacks). He can innately cast the following spells, requiring no material com-ponents:"
 					],
 					"will": [
 						"{@spell bestow curse|PHB}",
@@ -31768,7 +32172,7 @@
 				{
 					"name": "Touch of the Reaper.",
 					"entries": [
-						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}19 ({@damage 4d6 + 5}) necrotic damage. Any creature killed through this attack rises as a {@creature zombie|MM} under Death’s control after 1 turn."
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}19 ({@damage 4d6 + 5}) necrotic damage. Any creature killed through this attack rises as a {@creature zombie|MM} under Death's control after 1 turn."
 					]
 				}
 			],
@@ -31797,7 +32201,7 @@
 			],
 			"legendaryActions": 3,
 			"legendaryHeader": [
-				"Death can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. Death regains spent legendary actions at the start of his turn."
+				"Death can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Death regains spent legendary actions at the start of his turn."
 			],
 			"legendary": [
 				{
@@ -31815,7 +32219,7 @@
 				{
 					"name": "Scythe Whirlwind (2 Actions)",
 					"entries": [
-						"Each creature in Death’s space must make a {@dc 18} Strength saving throw. On a failure, a target takes 15 ({@damage 3d8 + 2}) slashing damage and is flung up 20 feet away from Death in a random direction and knocked {@condition prone}. If a thrown target strikes an object, such as a wall or floor, the tar-get takes 3 ({@damage 1d6}) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that crea-ture must succeed on a {@dc 18} Dexterity saving throw or take the same damage and be knocked {@condition prone}. If the saving throw is successful, the target takes half the Slashing damage and isn’t flung away or knocked {@condition prone}."
+						"Each creature in Death's space must make a {@dc 18} Strength saving throw. On a failure, a target takes 15 ({@damage 3d8 + 2}) slashing damage and is flung up 20 feet away from Death in a random direction and knocked {@condition prone}. If a thrown target strikes an object, such as a wall or floor, the tar-get takes 3 ({@damage 1d6}) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that crea-ture must succeed on a {@dc 18} Dexterity saving throw or take the same damage and be knocked {@condition prone}. If the saving throw is successful, the target takes half the Slashing damage and isn't flung away or knocked {@condition prone}."
 					]
 				}
 			],
@@ -32002,7 +32406,7 @@
 				{
 					"name": "Flyby",
 					"entries": [
-						"The Skull doesn’t provoke opportunity attacks when it flies out of an enemy’s reach."
+						"The Skull doesn't provoke opportunity attacks when it flies out of an enemy's reach."
 					]
 				}
 			],
@@ -32016,7 +32420,7 @@
 				{
 					"name": "Innate Spellcasting",
 					"headerEntries": [
-						"The Skull’s innate spellcasting ability is Intelligence (spell save {@dc 13}, +5 to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
+						"The Skull's innate spellcasting ability is Intelligence (spell save {@dc 13}, +5 to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
 					],
 					"footerEntries": [
 						"{@b *} Always active, as it is cast when the duration ends."
@@ -32090,6 +32494,511 @@
 						"href": {
 							"type": "external",
 							"url": "https://i.imgur.com/6AEAlQ5.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Leticia Mindefisk",
+			"size": [
+				"M"
+			],
+			"type": "fey",
+			"source": "Darklords&DomainsVol1",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 22,
+					"from": [
+						"natural armor",
+						"{@item bracers of armor|darklords&domainsvol1}",
+						"{@item ring of protection|dmg}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d8 + 10d4 + 81",
+				"average": 119
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 20,
+				"swim": 40
+			},
+			"str": 19,
+			"dex": 18,
+			"con": 21,
+			"int": 16,
+			"wis": 15,
+			"cha": 16,
+			"passive": 17,
+			"cr": "15",
+			"page": 233,
+			"shortName": "Leticia Mindefisk",
+			"senses": [
+				"darkvision 90 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Aquan",
+				"Common",
+				"Giant",
+				"Sylvan",
+				"Tepestani"
+			],
+			"languageTags": [
+				"AQ",
+				"C",
+				"GI",
+				"S"
+			],
+			"save": {
+				"str": "+1",
+				"dex": "+10",
+				"con": "+11",
+				"int": "+1",
+				"wis": "+1",
+				"cha": "+9"
+			},
+			"skill": {
+				"arcana": "+8",
+				"deception": "+8",
+				"investigation": "+8",
+				"medicine": "+7",
+				"nature": "+8",
+				"perception": "+7",
+				"stealth": "+9"
+			},
+			"resist": [
+				"fire",
+				"poison"
+			],
+			"immune": [
+				"cold"
+			],
+			"conditionImmune": [
+				"poisoned",
+				"restrained"
+			],
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"Leticia can breathe air and water."
+					]
+				},
+				{
+					"name": "Horrific Appearance",
+					"entries": [
+						"Any humanoid that starts its turn within 30 feet of Leticia and can see her true form must make a {@dc 16} Wisdom saving throw. On a failed save, the creature is {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, with disadvantage if Leticia is within line of sight, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to Leticia's Horrific Appearance for the next 24 hours. Unless the target is {@status surprised|XPHB} or the revelation of Leticia's true form is sudden, the target can avert its eyes and avoid making the initial saving throw. Until the start of her next turn, a creature that averts its eyes has disadvantage on attack rolls against Leticia."
+					]
+				},
+				{
+					"name": "Curse of the Sea",
+					"entries": [
+						"When Leticia hits a creature with a spell's attack or when a creature fails a saving throw against that spell, she can curse the target until the end of her next turn or until she curses a different creature with this feature. Once per turn when she casts a spell, she can trigger the curse with a bonus action, if that spell deals cold or lightning damage to the cursed target or forces it to move. Doing so reduces the target's speed by 15 feet until the end of her next turn. If the spell already reduces the target's speed, use whichever reduction is greater."
+					]
+				},
+				{
+					"name": "Alert",
+					"entries": [
+						"Leticia is always on the lookout for danger; she can't be {@status surprised|XPHB} while she is conscious. She gains a +5 bonus to initiative and other creatures don't gain advantage on attack rolls against her as a result of being hidden from her."
+					]
+				},
+				{
+					"name": "Watery Form",
+					"entries": [
+						"Leticia has the ability to defend herself by mo-mentarily assuming a watery form. As a reaction when she is hit by an attack and takes bludgeoning, piercing, or slashing damage from it, she can reduce that damage by 18, and then she can move up to 30 feet without provoking opportunity attacks. Leticia can also enter a liquid state while moving. When she moves on her turn, she takes only half damage from opportunity attacks, and she can move through any enemy's space but can't willingly end her move there. On her turn, she can move through any space that is at least 3 inches in diameter and do so without squeezing. When she stops moving, the regular squeezing rules apply if she is in a space one size smaller than her. She can't willingly stop in a space smaller than that, and if she is forced to do so, she immediately flows to the nearest space that can fit her, back along the path of her movement. "
+					]
+				},
+				{
+					"name": "Significant Possessions",
+					"type": "inset",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"1 {@item Bracers of Armor|Darklords&DomainsVol1}",
+								"1 {@item Hag Eye|MM}",
+								"1 {@item Ring of Protection|DMG}",
+								"1 {@item Cloak of Charisma|Darklords&DomainsVol1}",
+								"1 {@item Wand of Slow Superior|Darklords&DomainsVol1}"
+							]
+						}
+					]
+				},
+				{
+					"name": "Hag Eye (Coven Only)",
+					"entries": [
+						"A hag coven can craft a magic item called a hag eye, which is made from a real eye coated in varnish and often fitted to a pendant or other wearable item. The hag eye is usually entrusted to a minion for safe-keeping and transport. A hag in the coven can take an action to see what the hag eye sees if the hag eye is on the same plane of existence. A hag eye has AC 10, 1 hit point, and darkvision with a radius of 60 feet. If it is destroyed, each coven member takes {@damage 3d10} psychic damage and is {@condition blinded} for 24 hours. A hag coven can have only one hag eye at a time, and creating a new one requires all three members of the coven to perform a ritual. The ritual takes 1 hour, and the hags can't perform it while {@condition blinded}. During the ritual, if the hags take any action other than performing the ritual, they must start over."
+					]
+				},
+				{
+					"name": "Shy The Sun",
+					"entries": [
+						"While in sunlight, the hags have disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight. They take 1 radiant damage per turn and cannot cast magic such as polymorph to alter themselves."
+					]
+				},
+				{
+					"name": "Cackle Mimicry",
+					"entries": [
+						"The hags can mimic any sound made from a creature they have heard, though after two rounds of this, there is a 35% chance they will cackle strangely. A creature that hears the sounds can tell they are imitations with a successful {@dc 16} Wisdom (Insight) check, if the hag cackled, the creature rolls with advantage."
+					]
+				},
+				{
+					"name": "Ravenous Appetite",
+					"entries": [
+						"The hags can devour an {@condition unconscious} medium-sized opponent in just 10 minutes."
+					]
+				},
+				{
+					"name": "Telepathy Amongst Sisters",
+					"entries": [
+						"The three sisters can communicate telepathically. They are not limited by distance, nor does a rock wall or any other substance impair them. They always know what each other thinks, where they are located and their emotional state."
+					]
+				},
+				{
+					"name": "Riddle Match",
+					"entries": [
+						"The sisters underestimate an opponent's intelligence. Perhaps this is why they enjoy riddle matches. They rarely resist a challenge to engage in one. If a victim yells out a clever riddle before the hag strikes (as a reaction), there's an excellent chance the hag will pause, venture an answer, and pose another riddle to the opponent. In theory, this can continue until the opponent misses an answer (and is eaten). The hags may pose virtually any riddle, but here are two of their favorites: 1) What walks on four legs when young, two when mature, and three when old? (A man; the third leg is a cane.); 2) Blue mirror of midnight's soul, sometimes half but always whole. (The moon). When asked a riddle in return, the hag rarely offers a response it is unsure of, and instead remains {@condition stunned} for a single turn or until it can think of an answer. It may offer a wrong answer, but it may never admit it, and the match will continue until it misses several more and becomes disgruntled. (Posing riddles that are difficult can be just as dangerous as posing none.) If the opponent is clever and lucky, the match will last until sunrise, when the hag trundles away to avoid the light. For a stranger or new opponent, the chance this riddle match will occur at all is 75%. But if the hag knows the victim and has been aggravated by him for a while, this is far less likely, only 25%."
+					]
+				},
+				{
+					"name": "Cauldron of Regeneration",
+					"entries": [
+						"Tepest's hags appear dead if they are reduced to 0 hit points. If one sister survives, however, she has an excellent chance of re-creating the others. By placing any shred or particle of her sisters' bodies in their cauldron of regeneration (mixing in other vile, slimy ingre-dients), a hag can re-form her lost sisters over the course of a day. The special cauldron is located in the woods, not far from the hag's cottage. If a hag cannot be re-created in this way, it is likely that one of her children will take her place. "
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious"
+			],
+			"conditionInflict": [
+				"frightened",
+				"paralyzed"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Leticia is a 15-level spellcaster. Her spellcasting ability is Charisma (spell save {@dc 16}, +8 to hit with spell attacks). Leticia has the following Sorcerer spells prepared: "
+					],
+					"footerEntries": [
+						"{@b *} All of Leticia's spells that deal fire damage, deal cold damage instead. Their visuals are adjusted accordingly. "
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell dancing lights|PHB}",
+								"{@spell detect magic|PHB}",
+								"{@spell frostbite|XGE}",
+								"{@spell mending|PHB}",
+								"{@spell ray of frost|PHB}",
+								"{@spell resistance|PHB}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell charm person|PHB}",
+								"{@spell color spray|PHB}",
+								"{@spell ice knife|XGE}",
+								"{@spell mage armor|PHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell chromatic orb|PHB}",
+								"{@spell flaming sphere|PHB} *",
+								"{@spell Melf's acid arrow|PHB}",
+								"{@spell scorching ray|PHB} *"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell lightning bolt|PHB}",
+								"{@spell suggestion|PHB}",
+								"{@spell Snilloc's Snowball Swarm|XGE}"
+							],
+							"slots": 2
+						},
+						"4": {
+							"spells": [
+								"{@spell fire shield|PHB} *",
+								"{@spell ice storm|PHB}",
+								"{@spell stoneskin|PHB}",
+								"{@spell wall of fire|PHB} *"
+							],
+							"slots": 2
+						},
+						"5": {
+							"spells": [
+								"{@spell cone of cold|PHB}",
+								"{@spell dominate person|PHB}",
+								"{@spell hold monster|PHB}",
+								"{@spell passwall|PHB}",
+								"{@spell teleport|PHB}",
+								"{@spell wall of stone|PHB}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell flesh to stone|PHB}",
+								"{@spell mass suggestion|PHB}",
+								"{@spell wall of ice|PHB}"
+							],
+							"slots": 2
+						},
+						"7": {
+							"spells": [
+								"{@spell delayed blast fireball|PHB}",
+								"{@spell reverse gravity|PHB}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Shared Spellcasting (Coven Only)",
+					"headerEntries": [
+						"The three hags can each cast the following spells from the wizard's spell list but must share the spell slots among themselves, because they are telepathically linked, they need not be near each other as they cast. The connection is natural and instantaneous, although engaging one of them in battle or any other preoccupying activity prevents them from casting their group spells if they are not within 30ft from each other."
+					],
+					"footerEntries": [
+						"For casting these spells, each hag is a 12th-level spell-caster that uses Intelligence as her spellcasting ability. {@b The spell save DC is 12+the hag's Intelligence modifier} and the {@b spell attack bonus is 4+the hag's Intelligence modifier}."
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell identify|PHB}",
+								"{@spell ray of sickness|PHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell hold person|PHB}",
+								"{@spell locate object|PHB}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell animate dead|PHB}",
+								"{@spell bestow curse|PHB}",
+								"{@spell counterspell|PHB}",
+								"{@spell lightning bolt|PHB}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell phantasmal killer|PHB}",
+								"{@spell polymorph|PHB}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell contact other plane|PHB}",
+								"{@spell scrying|PHB}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell eyebite|PHB}"
+							],
+							"slots": 2
+						},
+						"7": {
+							"spells": [
+								"{@spell forcecage|PHB}",
+								"{@spell Mind Blank|PHB}"
+							],
+							"slots": 1
+						},
+						"8": {
+							"spells": [
+								"{@spell control weather|PHB}"
+							],
+							"slots": 1
+						}
+					},
+					"type": "spellcasting"
+				},
+				{
+					"name": "Shapechange and Magic",
+					"headerEntries": [
+						"The hags can cast the following spells as Innate spellcasting"
+					],
+					"will": [
+						"{@spell alter self|PHB}",
+						"{@spell fog cloud|PHB}",
+						"{@spell invisibility|PHB}",
+						"{@spell pass without trace|PHB}",
+						"{@spell speak with animals|PHB}"
+					],
+					"daily": {
+						"2": [
+							"{@spell polymorph|PHB} (self only)"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CS",
+				"S",
+				"CW",
+				"O"
+			],
+			"action": [
+				{
+					"name": "Rending Claws",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}14 ({@damage 3d6 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Deadly Glance",
+					"entries": [
+						"Leticia can cast a deadly glance, up to three times per day, on any creature within thirty feet. Ifthe victim fails a {@dc 16} Constitution saving throw, roll a percentile die, on a result of 1–25 the creature instantly dies of sheer horror, on a roll of 26–100 the creature becomes {@condition paralyzed} for three days, rolling a new saving throw every 24 hours, ending the effect on a success. A greater restoration spell, removes the paralysis on the target. A creature that suc-ceeds on the initial saving throw becomes immune to the Deadly Glance for 24 hours. "
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"bonus": [
+				{
+					"name": "Curse of the Sea",
+					"entries": [
+						"When Leticia hits a creature with a spell's attack or when a creature fails a saving throw against that spell, she can curse the target until the end of her next turn or until she curses a different creature with this feature. Once per turn when she casts a spell, she can trigger the curse with a bonus action, if that spell deals cold or lightning damage to the cursed target or forces it to move. Doing so reduces the target's speed by 15 feet until the end of her next turn. If the spell already reduces the target's speed, use whichever reduction is greater."
+					]
+				}
+			],
+			"damageTags": [
+				"R",
+				"S"
+			],
+			"damageTagsSpell": [
+				"A",
+				"B",
+				"C",
+				"F",
+				"I",
+				"L",
+				"N",
+				"O",
+				"P",
+				"S",
+				"T",
+				"Y"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"dexterity",
+				"intelligence",
+				"wisdom"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/67Z274h.png"
+			},
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"Double, double, toil and trouble,",
+							"Fire burn and cauldron bubble,", 
+							"Scale of dragon, tooth of wolf,", 
+							"Witches mummy; maw and gulf."
+						],
+						"by": "Macbeth-William Shakespeare"
+					},
+					"The three hags of Tepest are sisters that live deep in the Wormwood. They can change their appearance at will, and alter their features on a whim. Laveeda pre-fers to have dark hair and long black nails. Leticia's hair and clothes flow around her like she is in a strong cur-rent, and wears elaborate necklaces. Lorinda is always well dressed in animal skins of questionable origin.",
+					"Despite their outward appearance, the sisters see each other's true forms. They are twisted and hunched ogresses. They have razor sharp nails and thick teeth perfect for crunching bones.",
+					"Laveeda is an annis hag. She is the strongest of the sisters and her nails and teeth are made of iron. Leticia is a sea hag. Her skin is a deep blue and she is cov-ered in small scales. Seaweed grows in her hair and she smells of rotting fish if she doesn't use magic to cover the odor. Lorinda has become a green hag. Her skin is green and rough like the bark of an ancient tree.",
+					"The sisters have a cozy cottage in the middle of the Wormwood, and regularly entertain travellers and lost adventurers. Laveeda will cook them a splendid meal while Leticia and Lorinda distract their guests. The hags are talented potion makers and their guests are left awake but helpless after dinner is served. Once the hags have slain their victims no part of the body is left to waste. The skin and bones are eaten, the teeth and any organs not needed for an immediate potion are crafted into beautiful jewelry. The remaining organs are either used to craft potions or preserved for a snack later.",
+					{
+						"type": "entries",
+						"name": "Background",
+						"page": 230,
+						"entries": [
+							"Rudella Mindefisk desperately wanted daughters. She and her brutish husband, Holger, had several sons, but Rudella prayed for a daughter. In her desperation Rudella didn't think about who she was praying to.",
+							"One morning the sound of a baby crying met Rudella when she awoke. She followed the cries to the door of her house and, much to her joy, found three baby girls left on her doorstep. Holger wanted to drown the infants in a nearby river. They were sickly and weak, but Rudella didn't care. They were her beautiful baby girls and Rudella would die before she let any harm come to them. Rudella named them Laveeda, Leticia, and Lorinda.",
+							"Under Rudella's care the three girls regained their strength quickly. In a few years the girls grew strong, As the girls grew strong Rudella started to weaken. By the time the girls were three, Rudella was sickly. By the time the girls were five Rudella was too weak to leave her bed. Right after the girls turned six, Rudella died.",
+							"Holger wasted no time grieving for his wife. Instead, he considered taking the girls into the forest and leav-ing them to die of exposure, but decided to keep them around as long as they would keep the house clean and cook for him and his sons. For years Holger and his sons would ignore the sisters until they wanted to be fed or have something cleaned.",
+							"The girls grew into intelligent and talented teenagers. Laveeda was a brilliant cook, with the exception of mutton, which she always burnt or under cooked. Laveeda could take almost any ingredient and make wonderful meals. She got a job at a local inn and her cooking brought in travellers for miles around. Laveeda was happy at first, but her father demanded her wages. Holger forced Laveeda to work sick, and never let her rest. Laveeda soon quit the tavern.",
+							"Leticia fashioned beautiful jewelry, often out of worthless stones and polished animal bones. On the rare occasion Leticia had actual gems, she could craft as-tounding works of art. Leticia even attracted the atten-tion of a few local nobles, who paid a hefty sum for Leticia's art. Holger took the gold and drank it away. Leticia soon stopped making jewelry.",
+							"Lorinda was a seamstress beyond comparison. Lorinda had a natural talent for stitchery and how fabric fell around a body. Lorinda could work with any materi-al, animal skins, wool, even silk when she could find some. The local villagers even became suspicious of Holger and his sons. How could a poor farmer afford such elegant clothing? Lorinda refused any commissions, no matter the cost. She had seen the greedy look in her father's eyes as he took her sister's money. Lorinda would be damned before she would become a slave for her father.",
+							"The three sisters were desperate to leave their abusive father, but knew they needed gold to survive. They saw their chance when a wealthy stranger stopped at their farmhouse. The stranger had gold and was will-ing to pay gold for any food the sisters could spare. A silent agreement was reached in an instant. Leticia and Lorinda entertained the traveller while Laveeda cooked a wonderful meal. Laveeda could mask any flavor and the stranger never tasted the poison that killed him. The sisters took care of the body quickly. Laveeda cooked the meat into stew for Holger and her brothers. Leticia polished his bones and turned them into jewelry. Lorinda tanned the skin into wonderful new vests for her father and brothers. The sisters had found a way to get the gold they needed, while taking a small amount of revenge on Holger and their broth-ers. They continued to murder innocent strangers for years, amassing a vast fortune buried in the woods. One day an absolutely beautiful man appeared at the gates to the farmhouse. He was witty, intelligent, and told the sisters exactly what they wanted to hear. The three sisters fought for the man's affections, shower-ing him with gold and gifts. The man spent the money on a lavish lifestyle, and disappeared as soon as the money was gone. The sisters realized they had been played and were furious. They tracked him down and took their time cutting him to ribbons. The sisters were broke and hungry. They had no food and no way to get any, so they turned to the only meat they had on hand. As they devoured the dandy, the Mists clouded in. When the Mists cleared, the sisters had changed. They were hags now and revelled in their new power and abilities."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Current Sketch",
+						"page": 231,
+						"entries": [
+							"The hags are the darklords of Tepest, but have no political power. Most of the inhabitants don't even know the hags exist. Anyone that goes missing is blamed on the goblins that infest the Worm-wood. The goblin tribes in that terrible forest pay nom-inal obedience to the sisters, but it's a loyalty born of fear. The sisters don't care about the loyalty of goblins or if the locks know they exist.",
+							"They have become talented potion makes and have found the powerful Cauldron of Resurrection. The sis-ters enjoy their life and have become cannibal gour-mands. Laveeda can smell humans at half a mile, and can hear the quietest footfalls. She has never been surprised by an enemy. Lorinda is the only creature that has ever snuck up on her, as the plants of the for-est move out of her way so she can pass and Lorinda never makes a sound."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Darklord's Tactics",
+						"page": 231,
+						"entries": [
+							"The three hags have known each other their entire lives and their tactics compliment each other perfectly. Laveeda likes to dig in with her iron claws. Her jaws are strong enough to crush bones in armor. Laveeda's favorite trick is to bite the arms off the biggest warrior in the enemy party, then crush their head in her vice-like grip. Leticia will cast spells to pro-tect her sisters then indulge in a bizarre obsession for a sea hag, fire. Leticia loves to burn things with her magic and floods the battlefield with fire. Against oppo-nents that are immune to fire Leticia uses her deadly gaze. Lorinda holds back and uses her magic to heal her sisters and strip beneficial magic from their oppo-nents. Lorinda will also use defensive magic to counter any enemy spellcasters."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Borders",
+						"page": 231,
+						"entries": [
+							"When the hags seal the borders of Tepest, a violent storm encircles the domain. Wind and light-ning bar the way of anyone who tries to get through. If a creature presses on into the storm the lightning drives them to their knees while the wind flays the skin from their bones. Magic has no effect on the storm."
+						]
+					},
+					{
+						"name": "Significant Possessions",
+						"type": "inset",
+						"entries": [
+							{
+								"type": "list",
+								"items": [
+									"1 {@item Bracers of Armor|Darklords&DomainsVol1}",
+									"1 {@item Hag Eye|MM}",
+									"1 {@item Ring of Protection|DMG}",
+									"1 {@item Cloak of Charisma|Darklords&DomainsVol1}",
+									"1 {@item Wand of Slow Superior|Darklords&DomainsVol1}"
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/AZ5bM7X.jpg"
 						}
 					}
 				]
