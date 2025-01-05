@@ -245,6 +245,34 @@
 				},
 				"Vlad Drakov can't repeat an effect until they have all been used, and he can't use the same effect two rounds in a row."
 			]
+		},
+		{
+			"name": "Darklords&DomainsVol1LairActionsAlthea",
+			"source": "Darklords&DomainsVol1",
+			"lairActions": [
+				"On initiative count 20 (losing initiative ties), Althea can take one lair action to cause one of the following effects which affect Althea the same as the other creatures:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Labyrinth of the mind:} Althea provokes the Labyrinth's ability to cast {@spell mental prison|XGE} or {@spell maze|PHB} (DM's choice) to a random target within the lair (up to DM's discretion).",
+						"{@b Illusions:} Althea commands the Labyrinth to alter the illusions of the lair as if she has cast {@spell hallucinatory terrain|PHB}.",
+						"{@b Stone allies:} Althea commands up to three petrified creatures within 50ft range to animate and fight on her side until they or Althea are destroyed. These creatures use the same statblock as a {@creature Gargoyle|MM}."
+					]
+				},
+				"Althea can't repeat an effect until they have all been used, and she can't use the same effect two rounds in a row."
+			],
+			"regionalEffects": [
+				"The Labyrinth housing Althea's lair is affected by her presence, which creates one or more of the following effects which affect Althea the same as everyone within:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Labyrinth Prison:} Four times per day, the Labyrinth casts {@spell mental prison|XGE} or {@spell maze|PHB} on a random target within its walls (up to DM's discretion). The {@spell maze|PHB} spell functions the same as the standard spell, with one difference; the creature is teleported inside the Labyrinth instead of a labyrinthine demiplane.",
+						"{@b Labyrinth Mirage:} The Labyrinth is always under the effect of {@spell mirage arcane|PHB}. The effects of the spell change randomly (up to DM's discretion).",
+						"{@b Labyrinth Whitout exit:} The layout of the Labyrinth changes three times per day, making it almost impossible for anyone to leave."
+					]
+				},
+				"If Althea dies, these effects fade over the course of {@dice ld10} days."
+			]
 		}
 	],
 	"spell": [
@@ -4703,7 +4731,7 @@
 			"value": 75000,
 			"weight": 0.1,
 			"recharge": "dawn",
-			"rechargeAmount": "{@dice 1}",
+			"rechargeAmount": "1",
 			"charges": 1,
 			"attachedSpells": [
 				"charm person|phb"
@@ -5586,9 +5614,6 @@
 			"weight": 1,
 			"value": 50000,
 			"weaponCategory": "martial",
-			"property": [
-				"M"
-			],
 			"range": "5/10",
 			"dmg1": "1d8",
 			"dmgType": "B",
@@ -5611,9 +5636,6 @@
 			"weight": 1,
 			"value": 100000,
 			"weaponCategory": "martial",
-			"property": [
-				"M"
-			],
 			"range": "5/10",
 			"dmg1": "1d8",
 			"dmgType": "B",
@@ -5639,9 +5661,6 @@
 			"weight": 1,
 			"value": 250000,
 			"weaponCategory": "martial",
-			"property": [
-				"M"
-			],
 			"range": "5/10",
 			"dmg1": "1d8",
 			"dmgType": "B",
@@ -5667,9 +5686,6 @@
 			"weight": 1,
 			"value": 400000,
 			"weaponCategory": "martial",
-			"property": [
-				"M"
-			],
 			"range": "5/10",
 			"dmg1": "1d8",
 			"dmgType": "B",
@@ -14493,7 +14509,7 @@
 												"When Dr. Mordenheim was young, he became obsessed with creating life. Science could do anything magic could do, and the creation of life would prove it. After decades of experimentation, he created Adam. Adam was created with the body of a truly massive man and the mind of a child, intelligent but completely new to the world.",
 												"It wasn't until he left Mordenheim's castle that he realized that no one would ever regard him as anything but a monster. People grabbed their children and fled from Adam, screaming for help. Adam didn't under-stand this at first, but eventually he realized the peo-ple saw him as a monster. Weeping, he returned to the castle. Dr. Mordenheim tried to socialize.",
 												"Adam by adopting a half starved orphan child named Eva, as a companion for him. At first, Eva was afraid of Adam, though he tried to be kind to her. Accord-ing to Adam, after a few years, Eva began to see the man beneath his monstrous appearance and one night begged him for aid. She hated Dr. Mordenheim and wanted to flee, but he wouldn't let her. The doc-tor wanted Eva to be the subject in his next round of grisly experiments. As Adam and Eva talked, Dr. Mor-denheim's wife, Elise, came upon them. Elise thought Adam,standing over Eva, was on the verge of attack-ing the girl, and she grabbed an ornamental pike from the wall.",
-												"She attacked Adam and a vicious struggle ensued. In the struggle, Adam nearly killed Elise, and Eva was thrown from a window. As Adam left the castle, Dr. Mordenheim found his mortally wounded wife. Mordenheim swore revenge that night and the Dark Pow-ers brought Lamordia into Ravenloft. "
+												"She attacked Adam and a vicious struggle ensued. In the struggle, Adam nearly killed Elise, and Eva was thrown from a window. As Adam left the castle, Dr. Mordenheim found his mortally wounded wife. Mordenheim swore revenge that night and the Dark Pow-ers brought Lamordia into Ravenloft."
 											]
 										},
 										{
@@ -15550,6 +15566,516 @@
 										"type": "external",
 										"url": "https://i.imgur.com/GNRMYck.jpg"
 									}
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Demise",
+							"page": 243,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/040z8HB.jpg"
+									}
+								},
+								{
+									"type": "quote",
+									"entries": [
+										"When Medusa looks in the mirror, she sees the Lady of Sorrows."
+									],
+									"by": "Mason Cooley"
+								},
+								"Demise and its darklord Althea are inspired by Greek mythology. Her name, Althea is derived easily from Athena (and is evidenced by her ranged attacks), she is a medusa (like the famous Me-dusa of the Gorgon sisters, the one killed by Perseus), and her prison is inspired by the maze that kept the minotaur of Minos away from prying eyes.",
+								"Her island of Demise is equally embedded in myth. The name of it suggests that Althea is the Medusa of Greek legend, the one who died at the hands of Perseus, but was sent here to suffer. Perhaps she is a slightly different version, one who became monstrous not by accident (unlike our Medusa who was cursed by a goddess), but by her own actions.",
+								"Perhaps she killed the men who came to see her, ever-seeking a perfect but non-existent, mate. The island itself, and its build-up bring those parables to mind as well. A barren island to those who pass it by (like the Cyclopean Islands of the Odyssey), even the lush caldera at the center of the volcano can be lik-ened to the eye of the Cyclops — alive, but alone.",
+								"Adventures on Demise should focus on Althea and her search for a mate, but maedar (male medusae) are incredibly rare, and she'll try to lure others into her embrace. Her greatest hope is that one day she'll find a mate, someone to spend her time with, though of course, with her deadly gaze, such an idea is folly. Adventurers who come to Demise should come here of their own volition, as Althea will not set traps to lure them here — she believes her mate will come willingly.",
+								"Over the years, rumors have spread of the beautiful princess caught at the center of a deadly maze, and each year, more men come here, only to disappear.",
+								{
+									"type": "table",
+									"caption": "Demise",
+									"colLabels": [
+										"Detail",
+										"Description"
+									],
+									"colStyles": [
+										"col-3 text-center",
+										"col-9"
+									],
+									"rows": [
+										[
+											"Culture Level",
+											"Bronze Age"
+										],
+										[
+											"Climate & Terrain",
+											"Temperate, mountain and  volcano, warm jungle in the caldera"
+										],
+										[
+											"Year Formed",
+											"686 BC"
+										],
+										[
+											"Population",
+											"1"
+										],
+										[
+											"Races (%)",
+											"Medusa 100%"
+										],
+										[
+											"Languages",
+											"{@language Common|PHB}"
+										],
+										[
+											"Religions",
+											"None"
+										],
+										[
+											"Government",
+											"None"
+										],
+										[
+											"Ruler(s)",
+											"None"
+										],
+										[
+											"Darklord(s)",
+											"Althea"
+										],
+										[
+											"Nationality",
+											"None"
+										],
+										[
+											"Analog",
+											"Greek Mythology, Ancient Greek Island of Thera"
+										],
+										[
+											"Neighboring domain(s)",
+											"Lamordia, Sea of Sorrows"
+										]
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/9Lx6JgZ.jpg"
+									}
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/InTfSuD.jpg"
+									}
+								},
+								{
+									"type": "entries",
+									"name": "Local Fauna",
+									"page": 244,
+									"entries": [
+										"Demise is, in many ways, an island of death. There are no living creatures on the island, and even birds and fish stay at least a mile away from the island. Ani-mals forced onto the island are skittish and will bolt for it as soon as they can."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Local Flora",
+									"page": 244,
+									"entries": [
+										"The outside of Demise's volcano has no plant life, and it is completely barren. This seems to be no fault of the earth itself there, as, if it is transported away from the shores, plantlife will grow extremely well in it. Inside the caldera is a plethora of plants, but the first thing that strikes those who go there is simply the heat. It is much warmer in the caldera than it has any right to be this far north. The plants make this clear as well, as the caldera is filled with jungle and enormous trees. It is rich in fruit and water (though the water is fairly bitter). The fruit here is dominated by coconuts, pineapples, oranges, and bananas."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Native Horrors",
+									"page": 245,
+									"entries": [
+										"Nothing lives on Demise, with the only living thing be-ing the monster that is Althea. The closest thing to a living creature are the victims that were turned into statues. They occasionally animate as gargoyles."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Terrain Type",
+									"page": 245,
+									"entries": [
+										"The waters around Demise are filled with jagged rocks, and any boat larger than a rowboat or a small dinghy is likely to flounder and break apart. As a re-sult, most sailors give the island a wide berth. It is almost impossible to climb the outside of Demise and enter the caldera itself, as the terrain is mountain-ous and rocky. Most of the stones on the outside are loose, so even those able to use magic to climb find it difficult to do without falling. The caldera hides a thick jungle, with trees and bushes growing very close together. Contrary to normal jungles, which are fairly passable at the forest bottom, the jungle in Demise is densely packed, making progress through it difficult. Any paths carved disappear in a matter of days, with the jungle reclaiming any openings."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Important Landmarks",
+									"page": 245,
+									"entries": [										
+										{
+											"type": "entries",
+											"name": "The Labyrinth",
+											"page": 245,
+											"entries": [
+												"There is only one building on Demise, the Labyrinth. Made from white marble, it is a style of building that is unlike any seen elsewhere within the Mists. It is dom-inated by columns and decorated in reliefs that call upon ancien human-like gods. Inside, the Labyrinth is far bigger than on the outside, with long, empty, echoing corridors, and cavernous rooms.",
+												"They are all empty of furniture, but the columns dom-inate the walls here too. Every so often, a trespasser will come across lifelike statues, beautifully carved, of the same white marble as the columns, but all bearing horrific expressions of fear.",
+												"The halls are silent, though sometimes beautiful and haunting songs can be heard echoing through the emptiness, calling the listener, urging them to find the source.",
+												"The Labyrinth is both larger than it looks and completely immersed in illusions. These are designed to keep anyone entering from escaping, turning even the most experienced explorers around, and getting them hopelessly lost. The illusions are mostly visual and have only the slightest effect on other senses. This makes it easier to escape if a creature is able to navigate without the use of sight."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Towns and villages",
+									"page": 245,
+									"entries": [
+										"None"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Fun Fact",
+									"page": 245,
+									"entries": [
+										"Earth or dirt transplanted from Demise is extremely fertile, and plants grown in it usually achieve at least twice the size of similar ones. Rumor has it that these plants when fully grown and treated correctly, are ca-pable of turning petrified creatures back into flesh."
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/zXeIIbp.jpg"
+									}
+								},
+								{
+									"type": "entries",
+									"name": "Althea",
+									"page": 246,
+									"entries": [
+										{
+											"type": "quote",
+											"entries": [
+												"I know now the nature of the beast that stalks me. After the petrification of Varshon, I knew that I must confront the thing or die myself. Escape, it seems, is no longer an option."
+											],
+											"by": "Johan Wehner"
+										},
+										"Northwest of the domain of Lamordia, past the horrible Isle of Agony, lies a little island referred to only as Demise. Mariners who travel to this island almost never return, for the main thing to be found on the island of Demise is death. Althea, its ruler, is a me-dusa, one of that horrible race that sport braids of fatal snakes rather than hair on their heads. Like all her kind, Althea's body is that of a thin, even shapely human woman. Her face is awful, having the over-all highlights of a human face, coupled with the scales and surface of a reptile. Her eyes are sim-ply dark spheres, her mouth however is a lipless cut through which her forked tongue slips in and out to taste the air for human sweat and other odours.",
+										{
+											"type": "entries",
+											"name": "Background",
+											"page": 246,
+											"entries": [
+												"Althea is not a native of Ravenloft, but no one knows where she came from. Her island's terrain is volcanic and differs greatly from the other island in the Western Sea. The island may be a relic of Althea's world, or another twisted nightmare of the Dark Powers made real. No one knows.",
+												"Demise was first discovered nearly fifty years ago by a Lamordian fishing boat that was blown off course in a storm. The captain, Johan Wehner, and his men found themselves offshore of a small island with for-midable cliffs and dense forests.",
+												"Johan and his crew explored the forest and found an immense structure in the center of the forest. Runes ran along the entrance archway and the whole struc-ture was made of white stone. Wehner and his men decided to explore the building after using their knives to fashion crude spears for protection.",
+												"Inside, Wehner and his crew discovered featureless white walls and twisting corridors. They were soon lost in the Labyrinth. Wehner and his men began to discover statues so lifelike they expected them to move. Most were locked in positions of pain and fear.",
+												"After a day of exploring, Wehner called for a camp and posted a guard. He and his men quickly fell asleep, hopeful they would find the way out tomorrow. Wehner awoke to horror. During the night something had turned the guard to stone. What's more, as they walked that day, they all caught glimpses of some dark creature following them. Soon, one by one, the men were disappearing. After a few hours only Weh-ner was left. He tied a blindfold around his eyes and tried to meet his fate bravely. To his shock the crea-ture didn't charge him, but instead approached him slowly, entreating him to stay, to enjoy her wealth and companionship. Her voice was lovely, but offset by the sibilant hissing of serpents. Wehner lashed out and felt his blade connect. The creature screamed and ripped off Wehner's blindfold. Something spat venom in his eyes, burning them in the sockets. Weh-ner turned and ran. He miraculously made his way out of the maze and back to his ship. The remainder of his crew took him back to Lamordia. He has since vanished without a trace."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Current Sketch",
+											"page": 246,
+											"entries": [
+												"Althea lives caught in a maze at the center of the volcanic crater that comprises the greater part of the island. The maze isn't of her manufac-ture, and she is similarly as helpless against the con-founding deceptions within as any intruders are. Fine sculptures of men, ladies, and demihumans are found everywhere within. For each situation these were so similar and complex that Wehner and his men believed that these statues may rather be magical, instead of being sculpted. The sculptures speak of an incredible number of voyagers, adventurers, and pirates. Despite their numerous distinctions, they all share one attribute: the very essence of the sculptures share a sense of sickening terror and repugnance. Inside this white marble labyrinth, isolation and loneliness devours Althea, as she hopes to eventually discover a mate to live with her.“You need not fear me, brave sailor. I shall not harm you. I, Althea, have chosen you above all others. You and I are meant to be together. Look upon me, am I not attractive in your eyes ?\""
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Darklord's Tactics",
+											"page": 246,
+											"entries": [
+												"As a medusa, Althea's main weapon is her petrifying gaze. This gaze is even more powerful than most medusas, extending into the ethereal and astral planes. If her gaze doesn't work or the creature she is fighting is blindalthea is still a deadly combatant. The snakes that crown her head can bite and spit their terrible venom at oppo-nents. Althea also wields a short sword and short bow with precision and grace. The shortsword is highly ornamented with gems and the bow is pol-ished and made of a rare type of wood not found in the Demiplane of Dread. Althea will cover her arrows and blades in her venom if she has time to prepare."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Borders",
+											"page": 246,
+											"entries": [
+												"Creatures that enter Demise are lost in an endless labyrinth of twisting corridors and shifting stone walls. Even Althea cannot escape."
+											]
+										},
+										{
+											"name": "Althea",
+											"type": "entries",
+											"page": 241,
+											"entries": [
+												{
+													"type": "statblock",
+													"tag": "creature",
+													"source": "Darklords&DomainsVol1",
+													"name": "Althea"
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/7JaAmay.jpg"
+									}
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Dominia",
+							"page": 249,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/jy1IWQE.jpg"
+									}
+								},
+								{
+									"type": "quote",
+									"entries": [
+										"Science and moral absolutes do not make easy bedfellows."
+									],
+									"by": "Hugo Strange, Gotham"
+								},
+								"Dominia lies within the Sea of Sorrows and is the personal domain of Dr. Dominia, also known as Da-claud Heinfroth. Dominia is the domain of mental an-guish as the doctor performs experiments and torture on subjects at the Asylum for the Mentally Disrupted (known to some as Heinfroth's Home for the Mentally Ill).",
+								"Dominia is a small island, some five miles long and wide, but worryingly it is a domain that is expand-ing. The darklord briefly held control over Gund-arak before the Grand Conjunction, but his inter-ests did not include running a domain, and he was a poor ruler. His interests lie in the many afflictions that can affect the human mind as he tries to save himself from the madness that runs in his family.",
+								"When the island originally appeared, it was no more than a mile across, barely able to contain the com-pound of the Asylum, and it was adrift in the mists. As Daclaud delved deeper and deeper into his atrocious experiments, inflicting greater and greater anguish on his subjects, the domain grew, and eventually joined the Sea of Sorrows as an island. With each step as it grew, he gained more power and more control. Some-thing else strange happened, as Daclaud disappeared in 740 BC, creating his small domain in the mists, but he remembers spending several years here. How-ever, everyone else knows that the island-domain in the Sea of Sorrows appeared that same year.",
+								"Given time, if he is allowed to continue his experiments, the island may grow to rival the size of the domains of the Core, but what then will happen? ",
+								"There are two overriding themes in Dominia — mental suffering and total control. The doctor conducts his gruesome work and has learned more about men-tal illness than anyone else in Ravenloft and his fa-cility is the most advanced in these areas, with the possible exception of Dr. Illhousen and Dr. Tasker at the Clinic for the Mentally Distressed. When that facility vanished from Nova Vaasa, Dr. Heinfroth be-came the “destination of choice” for the suffering. Anyone who comes here has a mental illness or issue that they're dealing with — and if they don't, the Dr. conducts experiments on them until they do.",
+								"The second overriding theme is one of control and oversight. Everyone here, whether orderly or pa-tient, dresses the same, in neutral gray-colored robes, and wearing smiling, white, clay masks. This is all to cause a loss of individual identity and arouse suspicion so that you never know when you're safe. The masks especially reinforce this, as the smiling masks look friendly, to begin with, but the longer one looks on them, the more mocking they become.",
+								"Adventures in Dominia should naturally revolve around these: Perhaps one of the heroes has suffered great trauma and magic has proven unhelpful, and the heroes bring their friend here in the hopes of a cure. Or perhaps they come here looking for a patient that was sent here, but which no one has heard from. Finding someone who has lost their identity amid a sea of gray robes and clay masks should prove dif-ficult. They should also always feel that they're be-ing watched. Daclaud is ALWAYS watching, whether through the prying eyes of his orderlies or through magic.",
+								{
+									"type": "table",
+									"caption": "Dominia",
+									"colLabels": [
+										"Detail",
+										"Description"
+									],
+									"colStyles": [
+										"col-3 text-center",
+										"col-9"
+									],
+									"rows": [
+										[
+											"Culture Level",
+											"Renaissance"
+										],
+										[
+											"Climate & Terrain",
+											"Temperate, forest and cliffs"
+										],
+										[
+											"Year Formed",
+											"740 BC"
+										],
+										[
+											"Population",
+											"100 (estimated, amount of  patients vary at any given  time)"
+										],
+										[
+											"Races (%)",
+											"Humans 98%, Other 2%"
+										],
+										[
+											"Languages",
+											"{@language Common|PHB}, {@language Balok|Darklords&DomainsVol1}, {@language Luktar|Darklords&DomainsVol1}"
+										],
+										[
+											"Religions",
+											"None"
+										],
+										[
+											"Government",
+											"Medicinal Technocracy"
+										],
+										[
+											"Ruler(s)",
+											"Dr. Daclaud Heinfroth"
+										],
+										[
+											"Darklord(s)",
+											"Dr. Daclaud Heinfroth"
+										],
+										[
+											"Nationality",
+											"Dominion (no natives)"
+										],
+										[
+											"Analog",
+											"Horrific mental institution, hospital from {@i One Flew Over The Cuckoo's Nest}"
+										],
+										[
+											"Neighboring domain(s)",
+											"Sea of Sorrows"
+										]
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/0vzHr5U.jpg"
+									}
+								},
+								{
+									"type": "entries",
+									"name": "Local Fauna",
+									"page": 251,
+									"entries": [
+										"Dominia is such a small island that it has no real an-imal life. There are a number of gray seagulls and a few very large wolves, as well as a couple of animals that keep the wolves alive. Beyond that Dominia has nothing much to call attention to itself. The only other livestock or animal life on the island is what the order-lies keep for the patients of the Asylum."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Local Flora",
+									"page": 251,
+									"entries": [
+										"There really isn't much to stand out on Dominia, as it is dominated by forest, atop a 500-foot tall cliff. Es-sentially the island is one great mesa set in the Sea of Sorrows, covered in forest, with only two tracks lead-ing through it. One from the docks to the Asylum, and one from the Asylum leading to the dump. The trees of Dominia are mainly pine, though a few conifers can be found. There are no flowers of any kind on the is-land, and the groundcover consists only of grass or moss."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Native Horrors",
+									"page": 251,
+									"entries": [
+										"There are no natural monsters on Dominia, apart from those brought in to help at, or created at, the Asylum, making it relatively safe IF one can escape the notice of the orderlies and the doctor. Of course, with the orderlies and the doctor being vampires, escaping their attention could prove very difficult."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Terrain Type",
+									"page": 251,
+									"entries": [
+										"None"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Important Landmarks",
+									"page": 251,
+									"entries": [										
+										{
+											"type": "entries",
+											"name": "Asylum for the Mentally Disrupted",
+											"page": 251,
+											"entries": [
+												"The Asylum sits like an ugly, stone octagonal building in a large clearing, behind a sturdy stone wall rein-forced with iron spikes. Surrounding it are a few other timber buildings, of similar — if less severe — design. As ugly as the Asylum is on the outside, it's much worse on the inside.",
+												"Here are rooms created solely for the purpose of triggering anxieties, instilling paranoia, and generally making anyone coming here worse. Ironically most casual visitors will never see this, as the physical needs of the patients are always well-tended to, so they're in good shape and live for a long time when there. Underneath it all is where the horror hides. In the cellar, in hidden rooms, and in the attic.",
+												"Everywhere that is out of bounds to the casual visitor is a nightmarish horror scene where Dr. Heinfroth or one of his assistants can conduct their horrible work. Only rarely are the vampires allowed to feed, and Heinfroth does not want any more of his own kind to appear."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Towns and villages",
+									"page": 251,
+									"entries": [
+										"None"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Fun Fact",
+									"page": 251,
+									"entries": [
+										"Dominia is dependent on the mainland for much of its food supplies, but the sailors, who are tasked with bringing food and patients to the island, are strictly forbidden from dining on those who come with them. The ship known as the {@i Mercy} is the ultimate irony of this. Because there is no mercy for those who come within the grasp of its captain, as the sadistic vampire brings them to the Asylum for the doctor to work on."
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/wVRbj0o.jpg"
+									}
+								},
+								{
+									"type": "entries",
+									"name": "Doctor Daclaud Heinfroth",
+									"page": 252,
+									"entries": [
+										{
+											"type": "quote",
+											"entries": [
+												"You will feel better after I'm done, don't worry.",
+												"Yes, the needle is quite large, but it has to be.",
+												"First we slide the needle in between the vertebrae. You feel the shock, yes? You cannot move ?",
+												"Excellent.",
+												"Soon you will lose sensation in your fingers and toes. The more fluid I take the more numb they will become. Next your arms and legs will go numb. Then you will not be able to speak. Strangely, I believe the last thing to go will be your eyes, but by the time that happens you will have long lost the ability to speak, so I can't be sure..."
+											],
+											"by": "Dr Daclaud Heinfroth"
+										},
+										"The good doctor appears to be a thin human standing slightly shorter than average. His hair is dark and his eyes are set deep into his skull. The doctor always seems to study any intelligent creature he meets. Hein-froth asks probing questions and always seems to con-sider an answer very carefully before responding. After talking with an intelligent creature for a surprisingly short time, Doctor Heinfroth seems to lose interest. He is a keen judge of character and talented psychologist and can anticipate the answers and motivations of any intelligent creature he talks to after a short conversation.",
+										"Heinforth dresses in dark, well tailored suits with no decoration. The suits are made of the finest materials and indistinguishable from each other.",
+										{
+											"type": "entries",
+											"name": "Background",
+											"page": 252,
+											"entries": [
+												"Heinfroth's obsession with madness began when he was a boy growing up in the domain of Gundarak before the Grand Conjunction. His mother was a serious, driven woman that was the matriarch of a small but prosperous clan of textile merchants. When Heinfroth was seven, she was suddenly struck with a violent disease that rapidly eroded her ability to rea-son. After a few weeks she could no longer recognize her only son. After a month she could not speak more than two words at a time and had trouble remembering basic concepts. By six months she had to be bound to keep herself and others safe. She died screaming in fear and rage a few days later. In six months the dis-ease had torn her mind apart, then taken her life.",
+												"After her funeral, Heinfroth began to research his ancestry. He found that every single one of his relatives on his mother's side had died of the same disease, most before the age of thirty. The disease always worked the same way, their minds were rapidly torn apart by a mysterious disease, then death.",
+												"Heinfroth was determined that he would not suffer the same fate. He began to kidnap anyone that wouldn't be missed and experiment on them. He would break the mind of his victims through torture and manipulation, then try to heal them of the afflictions he caused.",
+												"Within a few years Heinfroth was no closer to curing the madness that had taken his mother, but was a master at psychologically damaging innocent people. What's more he found he enjoyed tearing apart the minds of his victims, and had a natural affinity for it. His half hearted attempts at curing the madness he caused were no match for the zeal he had in inflicting it on his victims.",
+												"After a few years of torturing vagabonds and transients, Heinfroth finally had a breakthrough. He used long syringes to take spinal fluid out of healthy victims and injected it directly into the spine and skulls of suf-fering patients. To his surprise, the patients showed some improvement.",
+												"Using his new techniques, Heinfroth was accepted to study at the Asylum for the Mentally Disturbed. The asylum provided the perfect cover for Heinfroth's work. Hienfroth began to refine his technique and soon was a master at draining every last drop of spinal fluid. It killed his victims, but sacrifices in the name of science were acceptable losses for him.",
+												"By the time he was twenty eight, Heinfroth was recognized as the premier medical doctor in all of Gundarak. It was just after that birthday that Heinfroth noticed the tremors for the first time. His hands began to shake, ever so slightly. Then he began to forget things. Small things at first, but soon he was forgetting the names of people and places he had known all his life. The mad-ness had him in its grasp and it was only a matter of time before he fully succumbed.",
+												"Heinfroth found a woman near his home in the prime of health and quickly spirited her away. He bound her and drained every last ounce of spinal fluid from her, then injected it directly into his brain. Unfortunately for Heinfroth, Duke Gundar, a powerful vampire and lord of Gundarak had chosen the woman to be his next vampire bride. Her spinal fluid, steeped in the life drain-ing energies that were the result of a feeding vampire, mixed with his to create a new and powerful undead. The cerebral vampire is a type of undead that must drain its victims of spinal fluid rather than blood. Their fangs are longer and stronger than a traditional vampire, perfectly formed to slip in between vertebrae or puncture the skull.",
+												"Duke Gundar was furious with Heinfroth and nearly killed him. The only thing that saved his life was his total obedience to Duke Gundar and his weakness versus the Duke's mind dominating gaze. Gundar forced the doctor to move into his castle and serve as his full time physician.",
+												"After years of dominating Heinfroth, Gundar conceived a plan to make the doctor the lord of neighboring Kar-takass, the domain of Harkon Lukas. Gundar tried to manipulate a party of adventurers into killing Harkon, but the wolfwere proved too canny a foe. The adven-turers uncovered the plot and returned to Gundarak, seeking revenge. Duke Gundar sought to lure them into a trap by using himself as bait. Gundar thought of his control over Heinfroth to ensure he would release the duke from his cage and Gundar could slaughter the fools at will.",
+												"Much to the dismay of Gundar, Heinfroth was finally able to resist the mental domination of Duke Gundar. The adventurers wasted little time in staking the duke and fleeing the domain.",
+												"With the death of Duke Gundar, Heinfroth assumed control of the domain. He moved back to the asylum to continue his research and ignored the rest of Gundarak. When the Grand Conjunction shattered Ravenloft, Gundarak was dissolved and the asylum became its own domain in the Core.",
+												"Originally Dominia was small, just the asylum and its grounds, but as Heinfroth began to give into his sadism and cruelly experimenting on his victims, Dominia has slowly expanded."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Current Sketch",
+											"page": 253,
+											"entries": [
+												"Heinfroth lives in constant fear of his heritage of crippling madness. He is willing to try any experiment, no matter how cruel on one of his patients or another cerebral vampire that he believes has the slightest chance of curing or preventing the lunacy. Un-fortunately, most of his victims are not suffering from madness, so Heinfroth has no way of knowing whether the experiment worked or not.",
+												"Heinfroth has started injecting his own spinal fluid into patients that are displaying signs of actual lunacy. This practice has even brought respite to his patients, albeit temporarily. Trotting out these poor victims has con-vinced the people of Dominia that Heinfroth is a living saint, living his life to bring succor to the mentally ill. In truth Heinfroth is nothing but a sadist that uses his keen understanding of psychology to toture the people in his care.",
+												"The good doctor knows the secret to making more cerebral vampires, but rarely does so. He prefers for their numbers to stay low, and thus be hidden from the mon-ster hunters that occasionally traverse the Demiplane of Dread."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Darklord's Tactics",
+											"page": 253,
+											"entries": [
+												"Heinfroth makes full use of his cunning mind and deep understanding of the drives of intelligent creatures in combat to torture and con-fuse his foes. Heinfroth plays on their insecurities and hidden fears to keep his opponents confused and off guard until he is ready to close for the kill. Because of deep understanding of the motivations of intelligent creatures, Heinfroth is rarely caught off guard, especially in the massive asylum that serves as his domain.",
+												"Heinfroth is a cerebral vampire, and is even stronger than the average specimen. Heinfroth revels in luring opponents into a false sense of security and then tear-ing them to shreds with his inhuman strength. Cerebral vampires are a rare strain of vampirism and Heinfroth uses its unique nature to confuse hunters in his do-main. Heinfroth does not fear the rays of the sun and has developed a love of garlic. He makes a show of eating garlic raw. By the time most hunters are stalking Heinfroth through his asylum, they think the Doctor is a werewolf. "
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Borders",
+											"page": 253,
+											"entries": [
+												"When the doctor closes the borders of Dominia, the borders are cloaked in impenetrable dark-ness. No light, magical or mundane, functions inside the darkness. Creatures take 1d10 cold damage ev-ery round they spend in the darkness. This damage ignores resistance and immunity. It is very easy for creatures to get confused and lost inside this darkness."
+											]
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://i.imgur.com/6nUUB4o.jpg"
+											}
+										},
+										{
+											"name": "Doctor Daclaud Heinfroth",
+											"type": "entries",
+											"page": 254,
+											"entries": [
+												{
+													"type": "statblock",
+													"tag": "creature",
+													"source": "Darklords&DomainsVol1",
+													"name": "Doctor Daclaud Heinfroth"
+												}
+											]
+										}
+									]
 								}
 							]
 						}
@@ -18456,7 +18982,7 @@
 			},
 			"fluff": {
 				"entries": [
-					"Baltoi is a tanar'ri marilith that lives in a comatose condition beneath a mining shaft in Lamordia's Sleep-ing Beast Mountains. She was a key figure in the ongoing {@i Blood War on the lower worlds}. The armies of Chaos suffered a devastating loss under her command, and as a result, she was imprisoned in Ravenloft by another significant evil power, as her ability to gate was taken away. {@i The Dark Powers} saw fit to compensate for her loss with a gift of increased overall size and power, making one of Ravenloft's most fearsome foes even more dangerous. A sorceress called Eserine confined her within her mountain lair once she was discovered. Though she still slumbers, the spell's potency is dwindling on a regular basis. Baltoi drives things insane, causes confusion, corrupts life, and induces hyper-regeneration within a 400-foot radius of where she is dormant. This reality wrinkle will expand to 40,000 feet when she awakens. Her phylactery is a massive, uncut black diamond."
+					"Baltoi is a tanar'ri marilith that lives in a comatose condition beneath a mining shaft in Lamordia's Sleeping Beast Mountains. She was a key figure in the ongoing {@i Blood War on the lower worlds}. The armies of Chaos suffered a devastating loss under her command, and as a result, she was imprisoned in Ravenloft by another significant evil power, as her ability to gate was taken away. {@i The Dark Powers} saw fit to compensate for her loss with a gift of increased overall size and power, making one of Ravenloft's most fearsome foes even more dangerous. A sorceress called Eserine confined her within her mountain lair once she was discovered. Though she still slumbers, the spell's potency is dwindling on a regular basis. Baltoi drives things insane, causes confusion, corrupts life, and induces hyper-regeneration within a 400-foot radius of where she is dormant. This reality wrinkle will expand to 40,000 feet when she awakens. Her phylactery is a massive, uncut black diamond."
 				],
 				"images": [
 					{
@@ -18573,7 +19099,8 @@
 							"items": [
 								"{@b Forbiddance.} The vampire cannot enter a residence without an invitation from one of the occupants.",
 								"{@b Harmed by Running Water.} The cerebral vampire takes 20 acid damage if it ends its turn in running water.",
-								"{@b Stake to the Heart.} If a piercing weapon made of wood is driven into the vampire's heart while the vampire is in its resting place, the vampire is {@condition paralyzed} until the stake is removed."
+								"{@b Stake to the Heart.} If a piercing weapon made of wood is driven into the vampire's heart while the vampire is in its resting place, the vampire is {@condition paralyzed} until the stake is removed.",
+								"{@b Sunlight Hypersensitivity.} The cerebral vampire takes 20 radiant damage when he starts his turn in sunlight. While in sunlight, he has disadvantage on attack rolls and ability checks."
 							]
 						}
 					]
@@ -22835,6 +23362,7 @@
 						{
 							"type": "list",
 							"items": [
+								"{@b Forbiddance.} This Weakness do not apply to Stradh.",
 								"{@b Harmed by Running Water.} He takes 10 acid damage if he ends his turn in running water.",
 								"{@b Stake to the Heart.} If a piercing weapon made of wood is driven into his heart while he is {@condition incapacitated} in his coffin, he is {@condition paralyzed} until the stake is removed.",
 								"{@b Sunlight Hypersensitivity.} While in sunlight, Strahd takes 20 radiant damage at the start of his turn, and he has disadvantage on attack rolls and ability checks."
@@ -25358,7 +25886,7 @@
 							"type": "list",
 							"items": [
 								"{@b Forbiddance.} Gundar can't enter a residence without an invitation from one of the occupants.",
-								"{@b Harmed by Running Water.} Gundar takes 20 acid damage if he  ends his turn in running water.",
+								"{@b Harmed by Running Water.} Gundar takes 20 acid damage if he ends his turn in running water.",
 								"{@b Stake to the Heart.} If a piercing weapon made of wood is driven into Gundar's heart while the he is {@condition incapacitated} in his resting place, he  is {@condition paralyzed} until the stake is removed.",
 								"{@b Sunlight Hypersensitivity.} Gundar takes 20 radiant damage when he starts his turn in sunlight. While in sunlight, he has disadvantage on attack rolls and ability checks."
 							]
@@ -29197,6 +29725,8 @@
 							"type": "list",
 							"items": [
 								"{@b Aversion to wine and holy water.} If von Kharkov drinks red wine or is splashed with holy water, he takes 20 acid damage.",
+								"{@b Forbiddance.} Von Kharkov can't enter a residence without an invitation from one of the occupants.",
+								"{@b Harmed by Running Water.} Von Kharkov takes 20 acid damage if he ends his turn in running water.",
 								"{@b Stake to the Heart.} If a piercing weapon made of wood is driven into von Kharkov's heart while he is {@condition incapacitated} in his resting place, von Kharkov is {@condition paralyzed} until the stake is removed.",
 								"{@b Sunlight Hypersensitivity.} Von Kharkov takes 20 radiant damage when he starts its turn in sunlight. While in sunlight, he has disadvantage on attack rolls and ability checks."
 							]
@@ -32056,13 +32586,13 @@
 				{
 					"name": "Soul Bound",
 					"entries": [
-						"Adam feels wounds inflicted on Dr. Mordenheim, although it does not hinder his fighting ability. "
+						"Adam feels wounds inflicted on Dr. Mordenheim, although it does not hinder his fighting ability."
 					]
 				},
 				{
 					"name": "Spell Absorption",
 					"entries": [
-						"Adam is immune to cold and lightning weath-er conditions. All spells that deal lightning or cold damage cause him to regenerate hit points at a rate of the damage rolled from the spell cast upon him. Additionally, Adam is able to absorb the energy of certain magical items that do not mimic cold/ lightning spells. If a ring, a wand, or other magical item is used against him to cast a spell with an effect of a non-damaging na-ture, Adam absorbs the energy, regenerating hit points at a rate of 15 hit points per level of the spell the magical device replicates. "
+						"Adam is immune to cold and lightning weath-er conditions. All spells that deal lightning or cold damage cause him to regenerate hit points at a rate of the damage rolled from the spell cast upon him. Additionally, Adam is able to absorb the energy of certain magical items that do not mimic cold/ lightning spells. If a ring, a wand, or other magical item is used against him to cast a spell with an effect of a non-damaging na-ture, Adam absorbs the energy, regenerating hit points at a rate of 15 hit points per level of the spell the magical device replicates."
 					]
 				},
 				{
@@ -32074,7 +32604,7 @@
 				{
 					"name": "Strangulation",
 					"entries": [
-						"If Adam hits with both slam attacks, he grap-ples the target and starts strangling it. The strangulation deals {@damage 8d8} bludgeoning damage at the start of Adam's turn and the target cannot breath. The grapple can be escaped by a contested athletics check against Adam's grapple check. "
+						"If Adam hits with both slam attacks, he grap-ples the target and starts strangling it. The strangulation deals {@damage 8d8} bludgeoning damage at the start of Adam's turn and the target cannot breath. The grapple can be escaped by a contested athletics check against Adam's grapple check."
 					]
 				},
 				{
@@ -32099,7 +32629,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Adam makes two slam attacks. "
+						"Adam makes two slam attacks."
 					]
 				},
 				{
@@ -32136,7 +32666,7 @@
 				{
 					"name": "Frightful Roar (Costs 2 Actions)",
 					"entries": [
-						"Adam lets out a scream that would unnerve even the bravest adversary. All enemy creatures within 30ft of Adam who can hear him must succeed on a {@dc 20} Saving throw or become {@condition frightened} of him for 1 minute. A creature can end this effect by succeeding on a saving throw rolled at the end of its consecutive turns. "
+						"Adam lets out a scream that would unnerve even the bravest adversary. All enemy creatures within 30ft of Adam who can hear him must succeed on a {@dc 20} Saving throw or become {@condition frightened} of him for 1 minute. A creature can end this effect by succeeding on a saving throw rolled at the end of its consecutive turns."
 					]
 				}
 			],
@@ -32171,7 +32701,7 @@
 							"When Dr. Mordenheim was young, he became obsessed with creating life. Science could do anything magic could do, and the creation of life would prove it. After decades of experimentation, he created Adam. Adam was created with the body of a truly massive man and the mind of a child, intelligent but completely new to the world.",
 							"It wasn't until he left Mordenheim's castle that he realized that no one would ever regard him as anything but a monster. People grabbed their children and fled from Adam, screaming for help. Adam didn't under-stand this at first, but eventually he realized the peo-ple saw him as a monster. Weeping, he returned to the castle. Dr. Mordenheim tried to socialize.",
 							"Adam by adopting a half starved orphan child named Eva, as a companion for him. At first, Eva was afraid of Adam, though he tried to be kind to her. Accord-ing to Adam, after a few years, Eva began to see the man beneath his monstrous appearance and one night begged him for aid. She hated Dr. Mordenheim and wanted to flee, but he wouldn't let her. The doc-tor wanted Eva to be the subject in his next round of grisly experiments. As Adam and Eva talked, Dr. Mor-denheim's wife, Elise, came upon them. Elise thought Adam,standing over Eva, was on the verge of attack-ing the girl, and she grabbed an ornamental pike from the wall.",
-							"She attacked Adam and a vicious struggle ensued. In the struggle, Adam nearly killed Elise, and Eva was thrown from a window. As Adam left the castle, Dr. Mordenheim found his mortally wounded wife. Mordenheim swore revenge that night and the Dark Pow-ers brought Lamordia into Ravenloft. "
+							"She attacked Adam and a vicious struggle ensued. In the struggle, Adam nearly killed Elise, and Eva was thrown from a window. As Adam left the castle, Dr. Mordenheim found his mortally wounded wife. Mordenheim swore revenge that night and the Dark Pow-ers brought Lamordia into Ravenloft."
 						]
 					},
 					{
@@ -32371,7 +32901,7 @@
 							"When Dr. Mordenheim was young, he became obsessed with creating life. Science could do anything magic could do, and the creation of life would prove it. After decades of experimentation, he created Adam. Adam was created with the body of a truly massive man and the mind of a child, intelligent but completely new to the world.",
 							"It wasn't until he left Mordenheim's castle that he realized that no one would ever regard him as anything but a monster. People grabbed their children and fled from Adam, screaming for help. Adam didn't under-stand this at first, but eventually he realized the peo-ple saw him as a monster. Weeping, he returned to the castle. Dr. Mordenheim tried to socialize.",
 							"Adam by adopting a half starved orphan child named Eva, as a companion for him. At first, Eva was afraid of Adam, though he tried to be kind to her. Accord-ing to Adam, after a few years, Eva began to see the man beneath his monstrous appearance and one night begged him for aid. She hated Dr. Mordenheim and wanted to flee, but he wouldn't let her. The doc-tor wanted Eva to be the subject in his next round of grisly experiments. As Adam and Eva talked, Dr. Mor-denheim's wife, Elise, came upon them. Elise thought Adam,standing over Eva, was on the verge of attack-ing the girl, and she grabbed an ornamental pike from the wall.",
-							"She attacked Adam and a vicious struggle ensued. In the struggle, Adam nearly killed Elise, and Eva was thrown from a window. As Adam left the castle, Dr. Mordenheim found his mortally wounded wife. Mordenheim swore revenge that night and the Dark Pow-ers brought Lamordia into Ravenloft. "
+							"She attacked Adam and a vicious struggle ensued. In the struggle, Adam nearly killed Elise, and Eva was thrown from a window. As Adam left the castle, Dr. Mordenheim found his mortally wounded wife. Mordenheim swore revenge that night and the Dark Pow-ers brought Lamordia into Ravenloft."
 						]
 					},
 					{
@@ -32517,7 +33047,7 @@
 				{
 					"name": "Improved Initiative",
 					"entries": [
-						"Death has advantage on initiative rolls. "
+						"Death has advantage on initiative rolls."
 					]
 				},
 				{
@@ -32535,13 +33065,13 @@
 				{
 					"name": "Semi-Ethereal",
 					"entries": [
-						"Death's only solid parts of his body are the fleshless skull and hands, which float unsupported in a cloak-like body of shadowy mist. Death can enter the space of another creature as if they weren't there. There is a 25% chance of any non-spell attack of being a miss. "
+						"Death's only solid parts of his body are the fleshless skull and hands, which float unsupported in a cloak-like body of shadowy mist. Death can enter the space of another creature as if they weren't there. There is a 25% chance of any non-spell attack of being a miss."
 					]
 				},
 				{
 					"name": "Command Undead",
 					"entries": [
-						"Death can command any undead creature within 60ft. All undead creatures that have a lower CR than Death, are automatically under Death's control and remain so for as long as Death is within 60ft of them. Death can command an unlimited number of undead minions in this manner, sending mental orders as a free action. Creatures that became undead when they first entered the domain are immune to this effect for 1 day per their level upon entry. Afterwards, Death can com-mand them normally. "
+						"Death can command any undead creature within 60ft. All undead creatures that have a lower CR than Death, are automatically under Death's control and remain so for as long as Death is within 60ft of them. Death can command an unlimited number of undead minions in this manner, sending mental orders as a free action. Creatures that became undead when they first entered the domain are immune to this effect for 1 day per their level upon entry. Afterwards, Death can com-mand them normally."
 					]
 				},
 				{
@@ -32700,7 +33230,7 @@
 				{
 					"name": "Touch of Death",
 					"entries": [
-						"Death makes a Touch of the Reaper attack. "
+						"Death makes a Touch of the Reaper attack."
 					]
 				},
 				{
@@ -32875,7 +33405,7 @@
 				{
 					"name": "Rejuvenation",
 					"entries": [
-						"If the Skull is destroyed, it regains all its hit points in 1 hour as long as Death has at least 1 hit point, unless holy water is sprinkled on its remains, at which point a Necroman-cer will need to perform a 1 hour ritual with 200gp as material components to restore this ability. If Death has no hit points, it remains destroyed until Death is brought back. "
+						"If the Skull is destroyed, it regains all its hit points in 1 hour as long as Death has at least 1 hit point, unless holy water is sprinkled on its remains, at which point a Necroman-cer will need to perform a 1 hour ritual with 200gp as material components to restore this ability. If Death has no hit points, it remains destroyed until Death is brought back."
 					]
 				},
 				{
@@ -32887,7 +33417,7 @@
 				{
 					"name": "Death Burst",
 					"entries": [
-						"When the Skull dies, it explodes in a burst of miasmic cloud. Each creature within 10 ft. of it must make a {@dc 13} Dexterity saving throw, taking 10 ({@damage 4d4}) necrotic damage on a failed save, or half as much damage on a successful one. "
+						"When the Skull dies, it explodes in a burst of miasmic cloud. Each creature within 10 ft. of it must make a {@dc 13} Dexterity saving throw, taking 10 ({@damage 4d4}) necrotic damage on a failed save, or half as much damage on a successful one."
 					]
 				},
 				{
@@ -33101,7 +33631,7 @@
 				{
 					"name": "Watery Form",
 					"entries": [
-						"Leticia has the ability to defend herself by mo-mentarily assuming a watery form. As a reaction when she is hit by an attack and takes bludgeoning, piercing, or slashing damage from it, she can reduce that damage by 18, and then she can move up to 30 feet without provoking opportunity attacks. Leticia can also enter a liquid state while moving. When she moves on her turn, she takes only half damage from opportunity attacks, and she can move through any enemy's space but can't willingly end her move there. On her turn, she can move through any space that is at least 3 inches in diameter and do so without squeezing. When she stops moving, the regular squeezing rules apply if she is in a space one size smaller than her. She can't willingly stop in a space smaller than that, and if she is forced to do so, she immediately flows to the nearest space that can fit her, back along the path of her movement. "
+						"Leticia has the ability to defend herself by mo-mentarily assuming a watery form. As a reaction when she is hit by an attack and takes bludgeoning, piercing, or slashing damage from it, she can reduce that damage by 18, and then she can move up to 30 feet without provoking opportunity attacks. Leticia can also enter a liquid state while moving. When she moves on her turn, she takes only half damage from opportunity attacks, and she can move through any enemy's space but can't willingly end her move there. On her turn, she can move through any space that is at least 3 inches in diameter and do so without squeezing. When she stops moving, the regular squeezing rules apply if she is in a space one size smaller than her. She can't willingly stop in a space smaller than that, and if she is forced to do so, she immediately flows to the nearest space that can fit her, back along the path of her movement."
 					]
 				},
 				{
@@ -33143,7 +33673,7 @@
 				{
 					"name": "Cauldron of Regeneration",
 					"entries": [
-						"Tepest's hags appear dead if they are reduced to 0 hit points. If one sister survives, however, she has an excellent chance of re-creating the others. By placing any shred or particle of her sisters' bodies in their cauldron of regeneration (mixing in other vile, slimy ingre-dients), a hag can re-form her lost sisters over the course of a day. The special cauldron is located in the woods, not far from the hag's cottage. If a hag cannot be re-created in this way, it is likely that one of her children will take her place. "
+						"Tepest's hags appear dead if they are reduced to 0 hit points. If one sister survives, however, she has an excellent chance of re-creating the others. By placing any shred or particle of her sisters' bodies in their cauldron of regeneration (mixing in other vile, slimy ingre-dients), a hag can re-form her lost sisters over the course of a day. The special cauldron is located in the woods, not far from the hag's cottage. If a hag cannot be re-created in this way, it is likely that one of her children will take her place."
 					]
 				},
 				{
@@ -33177,7 +33707,7 @@
 						"Leticia is a 15-level spellcaster. Her spellcasting ability is Charisma (spell save {@dc 16}, +8 to hit with spell attacks). Leticia has the following Sorcerer spells prepared: "
 					],
 					"footerEntries": [
-						"{@b *} All of Leticia's spells that deal fire damage, deal cold damage instead. Their visuals are adjusted accordingly. "
+						"{@b *} All of Leticia's spells that deal fire damage, deal cold damage instead. Their visuals are adjusted accordingly."
 					],
 					"spells": {
 						"0": {
@@ -33359,7 +33889,7 @@
 				{
 					"name": "Deadly Glance",
 					"entries": [
-						"Leticia can cast a deadly glance, up to three times per day, on any creature within thirty feet. Ifthe victim fails a {@dc 16} Constitution saving throw, roll a percentile die, on a result of 1-25 the creature instantly dies of sheer horror, on a roll of 26-100 the creature becomes {@condition paralyzed} for three days, rolling a new saving throw every 24 hours, ending the effect on a success. A greater restoration spell, removes the paralysis on the target. A creature that suc-ceeds on the initial saving throw becomes immune to the Deadly Glance for 24 hours. "
+						"Leticia can cast a deadly glance, up to three times per day, on any creature within thirty feet. Ifthe victim fails a {@dc 16} Constitution saving throw, roll a percentile die, on a result of 1-25 the creature instantly dies of sheer horror, on a roll of 26-100 the creature becomes {@condition paralyzed} for three days, rolling a new saving throw every 24 hours, ending the effect on a success. A greater restoration spell, removes the paralysis on the target. A creature that suc-ceeds on the initial saving throw becomes immune to the Deadly Glance for 24 hours."
 					]
 				}
 			],
@@ -33723,7 +34253,7 @@
 				{
 					"name": "Combat Caster",
 					"entries": [
-						"Being within five feet of a hostile creature doesn't impose disadvantage on Laveeda's ranged attack rolls. She has advantage on Constitution saving throws that she makes to maintain her {@status Concentration|PHB} on a spell when she takes damage. "
+						"Being within five feet of a hostile creature doesn't impose disadvantage on Laveeda's ranged attack rolls. She has advantage on Constitution saving throws that she makes to maintain her {@status Concentration|PHB} on a spell when she takes damage."
 					]
 				},
 				{
@@ -33735,31 +34265,31 @@
 				{
 					"name": "Keen Scent",
 					"entries": [
-						"Laveeda has advantage on Wisdom (Perception) checks that rely on smell. She can smell any humanoid within half a mile, regardless of wind direction. She can even detect the humanoid's race. If Laveeda has detected a particular individual before, she automatically recognizes its personal scent. "
+						"Laveeda has advantage on Wisdom (Perception) checks that rely on smell. She can smell any humanoid within half a mile, regardless of wind direction. She can even detect the humanoid's race. If Laveeda has detected a particular individual before, she automatically recognizes its personal scent."
 					]
 				},
 				{
 					"name": "Chew and Rake",
 					"entries": [
-						"If Laveeda makes three successful attacks in a single round against a single target, she automatically grapples her opponent; all subsequent attacks automati-cally hit as she heartily rakes and chews her victim alive. "
+						"If Laveeda makes three successful attacks in a single round against a single target, she automatically grapples her opponent; all subsequent attacks automati-cally hit as she heartily rakes and chews her victim alive."
 					]
 				},
 				{
 					"name": "Dark Devotion",
 					"entries": [
-						"Laveeda has advantage on saving throws against being {@condition charmed} or {@condition frightened}. "
+						"Laveeda has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
 					]
 				},
 				{
 					"name": "Pack Tactics",
 					"entries": [
-						"Laveeda has advantage on an attack roll against a creature if at least one of her allies is within 5 ft. of the creature and the ally isn't {@condition incapacitated}. "
+						"Laveeda has advantage on an attack roll against a creature if at least one of her allies is within 5 ft. of the creature and the ally isn't {@condition incapacitated}."
 					]
 				},
 				{
 					"name": "Reckless",
 					"entries": [
-						"At the start of her turn, Laveeda can gain advan-tage on all melee weapon attack rolls she makes during that turn, but attack rolls against her have advantage until the start of her next turn. "
+						"At the start of her turn, Laveeda can gain advan-tage on all melee weapon attack rolls she makes during that turn, but attack rolls against her have advantage until the start of her next turn."
 					]
 				},
 				{
@@ -33801,7 +34331,7 @@
 				{
 					"name": "Cauldron of Regeneration",
 					"entries": [
-						"Tepest's hags appear dead if they are reduced to 0 hit points. If one sister survives, however, she has an excellent chance of re-creating the others. By placing any shred or particle of her sisters' bodies in their cauldron of regeneration (mixing in other vile, slimy ingre-dients), a hag can re-form her lost sisters over the course of a day. The special cauldron is located in the woods, not far from the hag's cottage. If a hag cannot be re-created in this way, it is likely that one of her children will take her place. "
+						"Tepest's hags appear dead if they are reduced to 0 hit points. If one sister survives, however, she has an excellent chance of re-creating the others. By placing any shred or particle of her sisters' bodies in their cauldron of regeneration (mixing in other vile, slimy ingre-dients), a hag can re-form her lost sisters over the course of a day. The special cauldron is located in the woods, not far from the hag's cottage. If a hag cannot be re-created in this way, it is likely that one of her children will take her place."
 					]
 				},
 				{
@@ -33830,7 +34360,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Laveeda makes three attacks: one with her bite and two with her claws. "
+						"Laveeda makes three attacks: one with her bite and two with her claws."
 					]
 				},
 				{
@@ -34044,7 +34574,7 @@
 				{
 					"name": "Amphibious",
 					"entries": [
-						"Lorinda can breathe air and water. "
+						"Lorinda can breathe air and water."
 					]
 				},
 				{
@@ -34056,43 +34586,43 @@
 				{
 					"name": "Weakness (3/Day)",
 					"entries": [
-						"Lorinda targets a creature and tries to weaken it. The creature must succeed on a {@dc 15} Con-stitution saving throw or take a -5 penalty on any two attributes chosen by Lorinda. The reduction remains for 24 hours and can be removed with a remove curse spell. "
+						"Lorinda targets a creature and tries to weaken it. The creature must succeed on a {@dc 15} Con-stitution saving throw or take a -5 penalty on any two attributes chosen by Lorinda. The reduction remains for 24 hours and can be removed with a remove curse spell."
 					]
 				},
 				{
 					"name": "Cunning Action",
 					"entries": [
-						"On each of her turns, Lorinda can use a bonus action to take the {@action Dash}, {@action Disengage}, or {@action Hide} action. "
+						"On each of her turns, Lorinda can use a bonus action to take the {@action Dash}, {@action Disengage}, or {@action Hide} action."
 					]
 				},
 				{
 					"name": "Assassinate",
 					"entries": [
-						"During her first turn, Lorinda has advantage on attack rolls against any creature that hasn't taken a turn. Any hit that Lorinda scores against a {@status surprised|PHB} crea-ture is a critical hit. "
+						"During her first turn, Lorinda has advantage on attack rolls against any creature that hasn't taken a turn. Any hit that Lorinda scores against a {@status surprised|PHB} crea-ture is a critical hit."
 					]
 				},
 				{
 					"name": "Favored by the Dark Powers",
 					"entries": [
-						"Unholy power guards Lorinda's destiny. If she fails a saving throw or misses with an attack roll, she can roll {@dice 2d4} and add it to the total, possibly changing the outcome. Once she uses this feature, she can't use it again until she finishes a short or long rest. "
+						"Unholy power guards Lorinda's destiny. If she fails a saving throw or misses with an attack roll, she can roll {@dice 2d4} and add it to the total, possibly changing the outcome. Once she uses this feature, she can't use it again until she finishes a short or long rest."
 					]
 				},
 				{
 					"name": "Empowered Healing",
 					"entries": [
-						"Whenever Lorinda or an ally within 5 feet of her rolls dice to determine the number of hit points a spell restores, she can reroll any number of those dice once, provided she isn't {@condition incapacitated}. She can use this feature only once per turn. "
+						"Whenever Lorinda or an ally within 5 feet of her rolls dice to determine the number of hit points a spell restores, she can reroll any number of those dice once, provided she isn't {@condition incapacitated}. She can use this feature only once per turn."
 					]
 				},
 				{
 					"name": "Evasion",
 					"entries": [
-						"If Lorinda is subjected to an effect that allows her to make a Dexterity saving throw to take only half damage, Lorinda instead takes no damage if she succeeds on the saving throw, and only half damage if she fails. "
+						"If Lorinda is subjected to an effect that allows her to make a Dexterity saving throw to take only half damage, Lorinda instead takes no damage if she succeeds on the saving throw, and only half damage if she fails."
 					]
 				},
 				{
 					"name": "Hocus Pocus",
 					"entries": [
-						"Lorinda can cast {@spell Hex|PHB} and {@spell witch bolt|PHB} at will. "
+						"Lorinda can cast {@spell Hex|PHB} and {@spell witch bolt|PHB} at will."
 					]
 				},
 				{
@@ -34134,7 +34664,7 @@
 				{
 					"name": "Cauldron of Regeneration",
 					"entries": [
-						"Tepest's hags appear dead if they are reduced to 0 hit points. If one sister survives, however, she has an excellent chance of re-creating the others. By placing any shred or particle of her sisters' bodies in their cauldron of regeneration (mixing in other vile, slimy ingre-dients), a hag can re-form her lost sisters over the course of a day. The special cauldron is located in the woods, not far from the hag's cottage. If a hag cannot be re-created in this way, it is likely that one of her children will take her place. "
+						"Tepest's hags appear dead if they are reduced to 0 hit points. If one sister survives, however, she has an excellent chance of re-creating the others. By placing any shred or particle of her sisters' bodies in their cauldron of regeneration (mixing in other vile, slimy ingre-dients), a hag can re-form her lost sisters over the course of a day. The special cauldron is located in the woods, not far from the hag's cottage. If a hag cannot be re-created in this way, it is likely that one of her children will take her place."
 					]
 				},
 				{
@@ -34319,7 +34849,7 @@
 				{
 					"name": "Cunning Action",
 					"entries": [
-						"On each of her turns, Lorinda can use a bonus action to take the {@action Dash}, {@action Disengage}, or {@action Hide} action. "
+						"On each of her turns, Lorinda can use a bonus action to take the {@action Dash}, {@action Disengage}, or {@action Hide} action."
 					]
 				}
 			],
@@ -34492,19 +35022,19 @@
 				{
 					"name": "Parry",
 					"entries": [
-						"Bluebeard adds 2 to his AC against one melee attack that would hit him. To do so, Bluebeard must see the attacker and be wielding a melee weapon. "
+						"Bluebeard adds 2 to his AC against one melee attack that would hit him. To do so, Bluebeard must see the attacker and be wielding a melee weapon."
 					]
 				},
 				{
 					"name": "Detect Lies",
 					"entries": [
-						"Bluebeard automatically understands if any piece of information is a lie. "
+						"Bluebeard automatically understands if any piece of information is a lie."
 					]
 				},
 				{
 					"name": "Modify Minds",
 					"entries": [
-						"Bluebeard can cast the modify memory and charm person spells at will. The modify memory spell can only be cast upon a native of Blaustein. "
+						"Bluebeard can cast the modify memory and charm person spells at will. The modify memory spell can only be cast upon a native of Blaustein."
 					]
 				},
 				{
@@ -34516,13 +35046,13 @@
 				{
 					"name": "Second Wind",
 					"entries": [
-						"Bluebeard has a limited well of stamina that he can draw on to protect himself from harm. On his turn, he can use a bonus action to regain hit points equal to {@dice 1d10 + 9}. Once he uses this feature, he must finish a short or long rest before he can use it again. "
+						"Bluebeard has a limited well of stamina that he can draw on to protect himself from harm. On his turn, he can use a bonus action to regain hit points equal to {@dice 1d10 + 9}. Once he uses this feature, he must finish a short or long rest before he can use it again."
 					]
 				},
 				{
 					"name": "Action Surge",
 					"entries": [
-						"Bluebeard can push himself beyond his normal limits for a moment. On his turn, he can take one additional action. Once he uses this feature, he must finish a short or long rest before he can use it again. "
+						"Bluebeard can push himself beyond his normal limits for a moment. On his turn, he can take one additional action. Once he uses this feature, he must finish a short or long rest before he can use it again."
 					]
 				},
 				{
@@ -34534,55 +35064,67 @@
 				{
 					"name": "Combat Superiority (5/Short Rest)",
 					"entries": [
-						"Bluebeard knows many maneuvers which he can use to enhance an attack in some way. He can use only one maneuver per attack. Bluebeard has five superiority dice, which are d10s."
+						"Bluebeard knows many maneuvers which he can use to enhance an attack in some way. He can use only one maneuver per attack. Bluebeard has five superiority dice, which are d10s.",
+						{
+							"type": "list",
+							"items": [
+								"Combat Superiority: Bait and Switch",
+								"Combat Superiority: Commander's Strike",
+								"Combat Superiority: Commanding Presence",
+								"Combat Superiority: Disarming Attack",
+								"Combat Superiority: Feinting Attack",
+								"Combat Superiority: Sweeping Attack",
+								"Combat Superiority: Riposte"
+							]
+						}
 					]
 				},
 				{
-					"name": "Combat Superiority - Bait and Switch",
+					"name": "Combat Superiority: Bait and Switch",
 					"entries": [
-						"When Bluebeard is within 5 feet of a creature on his turn, he can expend one superiority die and switch places with that creature, provided he spends at least 5 feet of movement and the creature is willing and isn't {@condition incapacitated}. This movement doesn't provoke opportunity attacks. Roll the superiority die. Until the start of his next turn, he or the other creature (Blue-beard's choice) gains a bonus to AC equal to the number rolled. "
+						"When Bluebeard is within 5 feet of a creature on his turn, he can expend one superiority die and switch places with that creature, provided he spends at least 5 feet of movement and the creature is willing and isn't {@condition incapacitated}. This movement doesn't provoke opportunity attacks. Roll the superiority die. Until the start of his next turn, he or the other creature (Blue-beard's choice) gains a bonus to AC equal to the number rolled."
 					]
 				},
 				{
-					"name": "Combat Superiority - Commander's Strike",
+					"name": "Combat Superiority: Commander's Strike",
 					"entries": [
 						"When Bluebeard takes the Attack action on his turn, he can forgo one of his attacks and use a bonus action to direct one of his companions to strike. When he does so, choose a friendly creature who can see or hear him and expend one superiority die. That creature can immediately use its reaction to make one weapon attack, adding the superiority die to the attack's damage roll."
 					]
 				},
 				{
-					"name": "Combat Superiority - Commanding Presence",
+					"name": "Combat Superiority: Commanding Presence",
 					"entries": [
 						"When Bluebeard makes a Charisma (Intimidation), a Charisma (Performance), or a Charisma (Persuasion) check, he can expend one superiority die and add the superiority die to the ability check."
 					]
 				},
 				{
-					"name": "Combat Superiority - Disarming Attack",
+					"name": "Combat Superiority: Disarming Attack",
 					"entries": [
 						"When Bluebeard hits a creature with a weapon attack, he can expend one superiority die to attempt to disarm the target, forc-ing it to drop one item of your choice that it's holding. He adds the superiority die to the attack's damage roll, and the target must make a {@dc 16} Strength saving throw. On a failed save, it drops the object that Bluebeard chooses. The object lands at its feet."
 					]
 				},
 				{
-					"name": "Combat Superiority - Feinting Attack",
+					"name": "Combat Superiority: Feinting Attack",
 					"entries": [
 						"Bluebeard can expend one superiority die and use a bonus action on his turn to feint, choosing one creature within 5 feet of him as his target. He has advantage on his next attack roll against that creature before the end of his turn. If that attack hits, add the superiority die to the attack's damage roll."
 					]
 				},
 				{
-					"name": "Combat Superiority - Sweeping Attack",
+					"name": "Combat Superiority: Sweeping Attack",
 					"entries": [
 						"When Bluebeard hits a creature with a melee weapon attack, he can expend one superiority die to attempt to damage another creature with the same attack. Choose another creature within 5 feet of the original target and within his reach. If the original attack roll would hit the second creature, it takes damage equal to the number he rolled on his superiority die. The damage is of the same type dealt by the original attack."
 					]
 				},
 				{
-					"name": "Combat Superiority - Riposte",
+					"name": "Combat Superiority: Riposte",
 					"entries": [
-						"When a creature misses Bluebeard with a melee attack, he can use his reaction and expend one superiority die to make a me-lee weapon attack against the creature. If he hits, he adds the superiority die to the attack's damage roll. "
+						"When a creature misses Bluebeard with a melee attack, he can use his reaction and expend one superiority die to make a me-lee weapon attack against the creature. If he hits, he adds the superiority die to the attack's damage roll."
 					]
 				},
 				{
 					"name": "Know Your Enemy",
 					"entries": [
-						"If Bluebeard spends at least 1 minute observing or interacting with another creature outside combat, he can learn information about its capabilities compared to his own. Bluebeard learns if a creature is his equal, superior, or inferior in regard to two of the following characteristics of Bluebeard's choice: Strength score, Dexterity score, Constitution scoreArmor Class, Current hit points, Total class levels, if any, Fighter class levels, if any. "
+						"If Bluebeard spends at least 1 minute observing or interacting with another creature outside combat, he can learn information about its capabilities compared to his own. Bluebeard learns if a creature is his equal, superior, or inferior in regard to two of the following characteristics of Bluebeard's choice: Strength score, Dexterity score, Constitution scoreArmor Class, Current hit points, Total class levels, if any, Fighter class levels, if any."
 					]
 				}
 			],
@@ -34593,7 +35135,7 @@
 				{
 					"name": "Second Wind",
 					"entries": [
-						"Bluebeard has a limited well of stamina that he can draw on to protect himself from harm. On his turn, he can use a bonus action to regain hit points equal to {@dice 1d10 + 9}. Once he uses this feature, he must finish a short or long rest before he can use it again. "
+						"Bluebeard has a limited well of stamina that he can draw on to protect himself from harm. On his turn, he can use a bonus action to regain hit points equal to {@dice 1d10 + 9}. Once he uses this feature, he must finish a short or long rest before he can use it again."
 					]
 				},
 				{
@@ -34679,7 +35221,52 @@
 			},
 			"fluff": {
 				"entries": [
-					"XXX"
+					{
+						"type": "quote",
+						"entries": [
+							"Alas my beloved, duty calls me away.", 
+							"I have a gift for you. This ring of keys can open any door in the castle. This castle is your home now and you are welcome to explore its many rooms and treasures, with one exception. Do you see this little gold key? This little gold key opens a door at the top of the tallest tower in the castle. Under no circumstances are you to enter that room. To do so would invite disaster on yourself and our marriage. But I must away! I shall count the minutes until I see you again!"
+						],
+						"by": "Bluebeard"
+					},
+					"Bluebeard is a tall human male in his mid thirties, with an unremarkable appearance. He is tall, but not too tall, and his eyes are brown, as is his hair. Bluebeard is in shape, but has neither the muscular build of most fighters or the lithe grace of a rogue. The only unusual thing about him is his beard, which is midnight blue.",
+					{
+						"type": "entries",
+						"name": "Background",
+						"page": 240,
+						"entries": [
+							"Before he was brought into the Demiplane of Dread, Bluebeard would have considered his current physical appearance to be a gift from the gods. Bluebeard was, to say in no uncertain terms, hideous. His skin was red and blotchy, his lips were swollen and a disturbing shade of purple. If Bluebeard didn't con-centrate, his tongue would protrude from his mouth. His beard was cobalt blue and hung in thick braids to his chest. He looked for all the world like a corpse. De-spite this, Bluebeard was very popular with the women of his small kingdom, Blaustein. Undeniably charming, Bluebeard always had a humorous story or ribald joke at the ready. It didn't hurt that he was fabulously wealthy, owning gold and silver mines that he used to fund successful trading ventures all over the world. His castle was large and well appointed, with rarities such as mirrors and gear driven clocks in every room. Bluebeard was often away on business ventures that took him far from Castle Bluebeard and Blaustein, but he would return as soon as possible. The people of Blaustein considered Bluebeard a just lord, but whispered about his great tragedy. They didn't whisper about his looks, which you grew accustomed to after a while, but his wives. By the time Bluebeard was in his early twenties he had been married three times. Each time he had only been married for a few months be-fore his wife met a tragic end. The people of Blaustein whispered that Castle Bluebeard was haunted, that the spirit of either Bluebeard's first wife, or his long dead mother, haunted the castle and killed the wives when they were alone. Others thought the castle itself was evil and devoured the young women. The truth was far darker.. Bluebeard's fourth wife was Marcella, a beau-tiful and cunning young woman. Marcella was as witty as her new husband, and helped him make several shrewd business decisions soon after they were mar-ried. She also learned some important facts about her husband. Bluebeard treated his opinions like facts and hated it when someone disagreed with him. Even rea-soned and well thought arguments that he disagreed with would be met with disdain and a refusal to accept that he could be wrong. Marcella soon learned her life with Bluebeard would be much happier if she agreed with her husband, no matter what she actually thought. It didn't hurt that Bluebeard showered his new bride with gifts when she agreed with him.",
+							"A month after their wedding, Bluebeard left to attend to business affairs in a neighboring kingdom. Before he left, Bluebeard gave his wife a large ring of keys. He told her that the keys would open every room in the castle, and she was free to explore as long as she followed one rule. Bluebeard held up a small golden key and told Marcella that it unlocked the room at the top of the tallest tower in the castle. Marcella was not to enter that room under any circumstances. To do so would invite disaster for her and their marriage. She agreed and Bluebeard left the next day. For a month she explored the castle, and the room at the top of the tower was never far from her mind. Twice she placed the key in the lock but lost her nerve at the last second. Finally after a few months of wondering, Marcella couldn't stand it any more. She stole up to the room and, before she could think twice, placed the key in the lock and opened the door.",
+							"The first thing that told her what a terrible mistake she had made was the smell. The room was dark, and reeked of carrion and stale blood. When her eyes ad-justed to the darkness, Marcella shrieked in horror. Bluebeard's three past wives were in the small room. They had been hung from hooks and their throats had been slit. The cuts were so deep that the spine of one of the wives had been gouged and nicked by the blade.",
+							"Marcella slammed the door and ran screaming back to her chambers. Once she returned to her room she realized, much to her renewed horror, that the lit-tle golden key had turned blood red. Marcella stared at the key, realizing it spelled her doom, when she heard her husband's voice behind her demanding to know what she had done. Bluebeard dragged his wife through the castle, bemoaning his fate. Marcella had been his favorite, but now she couldn't be trusted. He hauled her up the stairs and they disappeared into the room. No one knows how many wives Bluebeard had before he was claimed by the mists, although Blue-beard himself thinks he may now be on his eighth wife."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Current Sketch",
+						"page": 241,
+						"entries": [
+							"Bluebeard still rules Blaustein from Castle Bluebeard. His people love him and consider him responsible for every time of prosperity and even good fortune. Bad luck or unfortunate circumstances are blamed on evil spirits living in and around Castle Bluebeard. Bluebeard's looks have improved over the last century. The change was gradual at first, but af-ter the first 50 years Bluebeard realized his skin had cleared and his lips were no longer purple. The change seems to have sped up in the last decade or so, and Bluebeard checks his reflection eagerly every day.",
+							"Bluebeard still longs to marry, but will never marry a woman from Blaustein. Whenever he looks at a woman from his country, he sees one of the faces of his dead wives smiling back at him. Because of this, Bluebeard looks for wives from outside Blaustein. His people know of his preferences and look for a suitable bride from anyone drawn into his domain by the mists. His last wife was an outlander named Lorel that came into Blaustein seeking him. Bluebeard gladly took her in, became her teacher, and in time her husband. Sad-ly Lorel was killed under mysterious circumstances but a month after the wedding.",
+							"Bluebeard is beloved by his people, which is good for him as he routinely avoids Castle Bluebeard at night. If the darklord actually sleeps in his castle, he is awak-ened by the spectres of his former wives. His wives dote on him and fulfill his every desire, but Bluebeard is overwhelmed with revulsion and guilt just by looking at the women."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Darklord's Tactics",
+						"page": 241,
+						"entries": [
+							"Bluebeard is an intelligent and experienced combatant. He is accompanied by guards and usually has a skilled court wizard or cleric nearby. During the first round of combat, either one of Blue-beard's guards or Bluebeard himself will raise an alarm and attempt to summon reinforcements. Bluebeard will not sacrifice the lives of his men without good cause and they are fanatically loyal to him. At night the spec-ters of his wives will join the fray, howling for the blood of anyone that threatens their beloved."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Borders",
+						"page": 241,
+						"entries": [
+							"Bluebeard cannot close the borders of his domain, but the local villages keep a close eye on any strangers, especially attractive females, and report everything they know to Bluebeard or one of his lieutenants."
+						]
+					}
 				],
 				"images": [
 					{
@@ -34687,6 +35274,658 @@
 						"href": {
 							"type": "external",
 							"url": "https://i.imgur.com/PGYQgsb.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Althea",
+			"size": [
+				"M"
+			],
+			"type": "monstrosity",
+			"source": "Darklords&DomainsVol1",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item breastplate|phb}",
+						"{@item cloak of protection|dmg}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "24d8 + 120",
+				"average": 228
+			},
+			"speed": {
+				"walk": 40,
+				"swim": 40
+			},
+			"str": 14,
+			"dex": 18,
+			"con": 20,
+			"int": 13,
+			"wis": 15,
+			"cha": 22,
+			"passive": 17,
+			"cr": "13",
+			"shortName": "Althea",
+			"page": 247,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"save": {
+				"dex": "+10",
+				"con": "+11",
+				"cha": "+12"
+			},
+			"skill": {
+				"deception": "+11",
+				"insight": "+7",
+				"perception": "+7",
+				"stealth": "+9",
+				"performance": "+11"
+			},
+			"resist": [
+				"acid"
+			],
+			"immune": [
+				{
+					"immune": [
+						"poison"
+					]
+				},
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"poisoned",
+				"prone"
+			],
+			"trait": [
+				{
+					"name": "Mobile",
+					"entries": [
+						"Althea is exceptionally speedy and agile. When she uses the Dash action, difficult terrain doesn't cost her extra movement on that turn. Also, when she makes a melee attack against a creature, she doesn't provoke opportunity attacks from that creature for the rest of the turn, whether she hits or not."
+					]
+				},
+				{
+					"name": "Can't Escape",
+					"entries": [
+						"The power of Althea's gaze is so great that it extends into the Astral and Ethereal planes. Indeed, she is able to see creatures moving about in these nether regions as plainly as she sees those on the Prime Material Plane."
+					]
+				},
+				{
+					"name": "Petrifying Gaze",
+					"entries": [
+						"When a creature that can see Althea's eyes starts its turn within 30 ft. of her, she can force it to make a {@dc 19} Constitution saving throw if she isn't {@condition incapacitated} and can see the creature. If the saving throw fails by 5 or more, the crea-ture is instantly {@condition petrified}. Otherwise, a creature that fails the save begins to turn to stone and is {@condition restrained}. The {@condition restrained} creature must repeat the saving throw at the end of its next turn, becoming {@condition petrified} on a failure or ending the effect on a success. The petrification lasts until the creature is freed by the greater restoration spell or other magic. Unless {@status surprised|XPHB}, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see Althea until the start of its next turn, when it can avert its eyes again. If the crea-ture looks at her in the meantime, it must immediately make the save. If Althea sees herself reflected on a polished surface within 30 ft. of it and in an area of bright light, she is, due to her curse, affected by her own gaze."
+					]
+				},
+				{
+					"name": "Even in Death",
+					"entries": [
+						"Death does not instantly halt the effect of Althea's deadly gaze. Looking into the eyes of the slain medusa's head still requires a saving throw, although this is made with a +1 bonus per day that has passed since the creature died. Any natural roll of 1 is an automatic failure on this saving throw, no matter how many days have passed. This gaze weapon still has a 5% chance of functioning for centuries after the actual death of the creature. Though if she is turned to stone, looking upon her {@condition petrified} remains no longer carries the risk of petrification. Her head becomes non-magical until it is returned to flesh."
+					]
+				},
+				{
+					"name": "Apply Poison (1/Day)",
+					"entries": [
+						"As a Bonus Action, Althea applies a powerful poison to her weapons that increase the poison damage from {@dice 2d6} to {@dice 4d6} for 1 minute. While this effect is active, any creature that is hit by Althea's weapon attacks, must succeed on a {@dc 19} Constitution saving throw or become {@condition Poisoned|XPHB} for 1 minute. The {@condition poisoned} target can repeat the saving throw at the end of each of its turns. A creature that saves successfully becomes immune to this effect for 24 hours."
+					]
+				},
+				{
+					"name": "Althea's Spit",
+					"entries": [
+						"Althea's snakes can spit their venom to blind her enemies. At the beginning of her turn, every enemy within 10ft radius must succeed on a Dexterity saving throw {@dc 19} or become permanently {@condition blinded}. The victim is unable to see until a greater restoration spell is used on them."
+					]
+				},
+				{
+					"name": "Medusa's Charm chain",
+					"entries": [
+						"Althea has advantage and a +5 bonus to all performance checks made for singing and attracting creatures. She can also cast Charm Person once a day by singing ({@dc 19})."
+					]
+				},
+				{
+					"name": "Significant Possessions",
+					"type": "inset",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"1 {@item Bracers of Archery|DMG}",
+								"1 {@item Cloak of Protection|DMG}",
+								"1 {@item Medusa's Charm chain|DMGDarklords&DomainsVol1}"
+							]
+						}
+					]
+				}
+			],
+			"conditionInflict": [
+				"blinded",
+				"petrified",
+				"poisoned",
+				"restrained"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Althea's innate spellcasting ability is Charisma (spell save {@dc 19}, +11 to hit with spell attacks). She can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell hold person|PHB}",
+						"{@spell Melf's acid arrow|PHB}",
+						"{@spell ray of sickness|PHB}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell elemental bane|XGE}",
+							"{@spell mirror image|PHB}",
+							"{@spell stinking cloud|PHB}"
+						],
+						"1e": [
+							"{@spell cloudkill|PHB}",
+							"{@spell storm of vengeance|PHB}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"bonus": [
+				{
+					"name": "Apply Poison (1/Day)",
+					"entries": [
+						"As a Bonus Action, Althea applies a powerful poison to her weapons that increase the poison damage from {@dice 2d6} to {@dice 4d6} for 1 minute. While this effect is active, any creature that is hit by Althea's weapon attacks, must succeed on a {@dc 19} Constitution saving throw or become {@condition Poisoned|XPHB} for 1 minute. The {@condition poisoned} target can repeat the saving throw at the end of each of its turns. A creature that saves successfully becomes immune to this effect for 24 hours."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Althea makes either three melee attacks — one with her Deadly Snake Hair and two with her shortsword — or two ranged attacks with her Shortbow."
+					]
+				},
+				{
+					"name": "Deadly Snake Hair",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}1 ({@damage 1d1}) piercing damage. Any creature hit by this attack must succeed on a Constitution saving throw {@dc 19} or die instantly. Creatures immune to poison damage automatically succeed on this roll."
+					]
+				},
+				{
+					"name": "Shortsword +1",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 5}) slashing damage, plus 7 ({@damage 2d6}) poison damage."
+					]
+				},
+				{
+					"name": "Shortbow +1",
+					"entries": [
+						"{@atk rw} {@hit 10} to hit, range 150/600 ft., one target. {@h}8 ({@damage 1d6 + 5}) piercing damage, plus 7 ({@damage 2d6}) poison damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW",
+				"RNG"
+			],
+			"attachedItems": [
+				"+1 shortbow|dmg",
+				"+1 shortsword|dmg"
+			],
+			"legendaryGroup": {
+				"name": "Darklords&DomainsVol1LairActionsAlthea",
+				"source": "Darklords&DomainsVol1"
+			},
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"Althea can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Althea regains spent legendary actions at the start of her turn."
+			],
+			"legendary": [
+				{
+					"name": "Look at Me!",
+					"entries": [
+						"Althea casts {@spell hold person|PHB}."
+					]
+				},
+				{
+					"name": "Slither Away",
+					"entries": [
+						"Althea disengages and makes one attack with her short bow or takes the {@action hide} action."
+					]
+				},
+				{
+					"name": "Miasma",
+					"entries": [
+						"Althea spits forth bolts of venom in a 20ft straight line at a targeted area within 30ft range, leaving toxic clouds of debilitating Poison which remain until the start of her next turn. Any creature that enters the {@condition poisoned} area takes {@damage 2d6} poison damage. This area is considered as difficult terrain for the re-mainder of the effect."
+					]
+				}
+			],
+			"damageTags": [
+				"I",
+				"P",
+				"S"
+			],
+			"damageTagsSpell": [
+				"A",
+				"B",
+				"C",
+				"F",
+				"I",
+				"L",
+				"T"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/qN2IPWc.png"
+			},
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"I know now the nature of the beast that stalks me. After the petrification of Varshon, I knew that I must confront the thing or die myself. Escape, it seems, is no longer an option."
+						],
+						"by": "Johan Wehner"
+					},
+					"Northwest of the domain of Lamordia, past the horrible Isle of Agony, lies a little island referred to only as Demise. Mariners who travel to this island almost never return, for the main thing to be found on the island of Demise is death. Althea, its ruler, is a me-dusa, one of that horrible race that sport braids of fatal snakes rather than hair on their heads. Like all her kind, Althea's body is that of a thin, even shapely human woman. Her face is awful, having the over-all highlights of a human face, coupled with the scales and surface of a reptile. Her eyes are sim-ply dark spheres, her mouth however is a lipless cut through which her forked tongue slips in and out to taste the air for human sweat and other odours.",
+					{
+						"type": "entries",
+						"name": "Background",
+						"page": 246,
+						"entries": [
+							"Althea is not a native of Ravenloft, but no one knows where she came from. Her island's terrain is volcanic and differs greatly from the other island in the Western Sea. The island may be a relic of Althea's world, or another twisted nightmare of the Dark Powers made real. No one knows.",
+							"Demise was first discovered nearly fifty years ago by a Lamordian fishing boat that was blown off course in a storm. The captain, Johan Wehner, and his men found themselves offshore of a small island with for-midable cliffs and dense forests.",
+							"Johan and his crew explored the forest and found an immense structure in the center of the forest. Runes ran along the entrance archway and the whole struc-ture was made of white stone. Wehner and his men decided to explore the building after using their knives to fashion crude spears for protection.",
+							"Inside, Wehner and his crew discovered featureless white walls and twisting corridors. They were soon lost in the Labyrinth. Wehner and his men began to discover statues so lifelike they expected them to move. Most were locked in positions of pain and fear.",
+							"After a day of exploring, Wehner called for a camp and posted a guard. He and his men quickly fell asleep, hopeful they would find the way out tomorrow. Wehner awoke to horror. During the night something had turned the guard to stone. What's more, as they walked that day, they all caught glimpses of some dark creature following them. Soon, one by one, the men were disappearing. After a few hours only Weh-ner was left. He tied a blindfold around his eyes and tried to meet his fate bravely. To his shock the crea-ture didn't charge him, but instead approached him slowly, entreating him to stay, to enjoy her wealth and companionship. Her voice was lovely, but offset by the sibilant hissing of serpents. Wehner lashed out and felt his blade connect. The creature screamed and ripped off Wehner's blindfold. Something spat venom in his eyes, burning them in the sockets. Weh-ner turned and ran. He miraculously made his way out of the maze and back to his ship. The remainder of his crew took him back to Lamordia. He has since vanished without a trace."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Current Sketch",
+						"page": 246,
+						"entries": [
+							"Althea lives caught in a maze at the center of the volcanic crater that comprises the greater part of the island. The maze isn't of her manufac-ture, and she is similarly as helpless against the con-founding deceptions within as any intruders are. Fine sculptures of men, ladies, and demihumans are found everywhere within. For each situation these were so similar and complex that Wehner and his men believed that these statues may rather be magical, instead of being sculpted. The sculptures speak of an incredible number of voyagers, adventurers, and pirates. Despite their numerous distinctions, they all share one attribute: the very essence of the sculptures share a sense of sickening terror and repugnance. Inside this white marble labyrinth, isolation and loneliness devours Althea, as she hopes to eventually discover a mate to live with her.“You need not fear me, brave sailor. I shall not harm you. I, Althea, have chosen you above all others. You and I are meant to be together. Look upon me, am I not attractive in your eyes ?\""
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Darklord's Tactics",
+						"page": 246,
+						"entries": [
+							"As a medusa, Althea's main weapon is her petrifying gaze. This gaze is even more powerful than most medusas, extending into the ethereal and astral planes. If her gaze doesn't work or the creature she is fighting is blindalthea is still a deadly combatant. The snakes that crown her head can bite and spit their terrible venom at oppo-nents. Althea also wields a short sword and short bow with precision and grace. The shortsword is highly ornamented with gems and the bow is pol-ished and made of a rare type of wood not found in the Demiplane of Dread. Althea will cover her arrows and blades in her venom if she has time to prepare."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Borders",
+						"page": 246,
+						"entries": [
+							"Creatures that enter Demise are lost in an endless labyrinth of twisting corridors and shifting stone walls. Even Althea cannot escape."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/KuDtC43.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Doctor Daclaud Heinfroth",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "undead",
+				"tags": [
+					"shapechanger"
+				]
+			},
+			"source": "Darklords&DomainsVol1",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d8 + 42",
+				"average": 105
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 17,
+			"int": 18,
+			"wis": 17,
+			"cha": 9,
+			"passive": 18,
+			"cr": "13",
+			"shortName": "Doctor Daclaud Heinfroth",
+			"page": 254,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languages": [
+				"Common",
+				"Luktar"
+			],
+			"languageTags": [
+				"C"
+			],
+			"save": {
+				"dex": "+6",
+				"wis": "+8"
+			},
+			"skill": {
+				"deception": "+4",
+				"medicine": "+8",
+				"perception": "+8",
+				"persuasion": "+4",
+				"stealth": "+6"
+			},
+			"resist": [
+				"cold",
+				"lightning",
+				"necrotic"
+			],
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"paralyzed"
+			],
+			"trait": [
+				{
+					"name": "shapechanger",
+					"entries": [
+						"If Daclaud isn't in sunlight or running water, he can use his action to polymorph into a Tiny bat,a Medium cloud of mist, or back into his true form. While in bat form, Daclaud can't speak, his walking speed is 5 feet, and he has a flying speed of 30 feet. his statistics, other than his size and speed, are unchanged. Anything he is wearing transforms with him, but nothing he is carrying does. He reverts to his true form if he dies.While in mist form, Daclaud can't take any actions, speak, or manipulate objects. He is weightless, has a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. In addition, if air can pass through a space, the mist can do so without squeezing, and it can't pass through water.  He has advantage on Strength, Dexterity, and Constitution saving throws, and he is immune to all nonmagical damage, except the damage he takes from sunlight."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Daclaud fails a saving throw, he can choose to succeed instead. "
+					]
+				},
+				{
+					"name": "Misty Escape",
+					"entries": [
+						"When he drops to 0 hit points outside his rest-ing place, Daclaud transforms into a cloud of mist (as in the Shapechanger trait) instead of falling {@condition unconscious}, provided that he isn't in sunlight or running water. If he can't transform, he is destroyed. While he has 0 hit points in mist form, he can't revert to his vampire form, and he must reach his resting place within 2 hours or be destroyed. Once in his resting place, he re-verts to his vampire form. He is then {@condition paralyzed} until he regains at least 1 hit point. After spending 1 hour in his resting place with 0 hit points, he regains 1 hit point. "
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"Daclaud regains 20 hit points at the start of his turn if he has at least 1 hit point and isn't in sunlight or running water. If he takes radiant damage or damage from holy water, this trait doesn't function at the start of Daclaud's next turn. "
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"Daclaud can climb difficult surfaces, including up-side down on ceilings, without needing to make an ability check. "
+					]
+				},
+				{
+					"name": "Vampire Weaknesses",
+					"entries": [
+						"Daclaud has the following flaws:",
+						{
+							"type": "list",
+							"items": [
+								"{@b Forbiddance.} Daclaud can't enter a residence without an invitation from one of the occupants.",
+								"{@b Harmed by Running Water.} Daclaud takes 20 acid damage if he ends his turn in running water.",
+								"{@b Stake to the Heart.} If a piercing weapon made of wood is driven into Daclaud's heart while the he is {@condition incapacitated} in his resting place, he  is {@condition paralyzed} until the stake is removed.",
+								"{@b Sunlight Hypersensitivity.} Daclaud takes 20 radiant damage when he starts his turn in sunlight. While in sunlight, he has disadvantage on attack rolls and ability checks."
+							]
+						}
+					]
+				},
+				{
+					"name": "Partially Immune to Sunlight",
+					"entries": [
+						"Daclaud is partially immune to the effects of sunlight and can withstand exposure to it for a full round before suffering any harm. "
+					]
+				},
+				{
+					"name": "Werewolf-like Visage",
+					"entries": [
+						"Heinfroth plays up his werewolf-like visage to fool his opponents into thinking he is a lycanthrope in-stead of a vampire. His odd affinity for (and immunity to) garlic gives him another tool of deception in concealing his vampiric nature. A creature that tries to understand the real nature of Daclaud rolls with disadvantage. "
+					]
+				},
+				{
+					"name": "Shadow Stealth",
+					"entries": [
+						"While in dim light or darkness, Daclaud can take the {@action Hide} action as a bonus action. "
+					]
+				},
+				{
+					"name": "Turn Resistance",
+					"entries": [
+						"Daclaud has advantage on saving throws against any effect that turns undead."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Regeneration",
+				"Shapechanger",
+				"Spider Climb",
+				"Sunlight Sensitivity",
+				"Turn Resistance"
+			],
+			"bonus": [
+				{
+					"name": "Shadow Stealth",
+					"entries": [
+						"While in dim light or darkness, Daclaud can take the {@action Hide} action as a bonus action. "
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Fluid Drain Bite (Bat or Vampire Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one willing creature, or a creature that is {@condition grappled} by Daclaud, {@condition incapacitated}, or {@condition restrained}. {@h}7 ({@damage 1d6 + 4}) piercing damage. There is a additional plus 3 ({@damage 1d6}) damage Intelligence or Wisdom damage ( Daclaud's choice). The reduction is permanent. The target becomes mad if this effect reduces its intelligence score to 0. Nothing short of a {@spell wish|PHB} spell can revert this madness. "
+					]
+				},
+				{
+					"name": "Unarmed Strike (Vampire Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) bludgeoning damage. Instead of dealing damage, Daclaud can grapple the target (escape {@dc 18}). "
+					]
+				},
+				{
+					"name": "Charm",
+					"entries": [
+						"Daclaud targets one humanoid he can see within 30 ft. of him. If the target can see Daclaud, the target must succeed on a {@dc 17} Wisdom saving throw against this magic or be {@condition charmed} by him. The {@condition charmed} target regards Daclaud as a trust-ed friend to be heeded and protected. Although the target isn't under his control, it takes Daclaud's requests or actions in the most favorable way it can, and it is a willing target for Daclaud's bite attack. Each time Daclaud or Daclaud's companions do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until Daclaud is destroyed, is on a different plane of existence than the target, or takes a bonus action to end the effect. "
+					]
+				},
+				{
+					"name": "Read Thoughts",
+					"entries": [
+						"Daclaud magically reads the surface thoughts of one creature within 15 ft. of him that he can see. While the target is in range, Daclaud can continue reading its thoughts, as long as Daclaud's {@status Concentration|XPHB} isn't broken (as if {@status Concentration|XPHB|Concentrating} on a spell). While reading the target's mind, Daclaud has advantage on Wisdom (Insight) and Charisma (Deception, Intimidation, and Persuasion) checks against the target. "
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"charmed"
+			],
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"Daclaud can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Daclaud regains spent legendary actions at the start of his turn. "
+			],
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"Daclaud moves up to his speed without provoking opportunity attacks. "
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"Daclaud makes one unarmed strike. "
+					]
+				},
+				{
+					"name": "Bite (Costs 2 Actions)",
+					"entries": [
+						"Daclaud makes one bite attack."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/6bpLso7.png"
+			},
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"You will feel better after I'm done, don't worry.",
+							"Yes, the needle is quite large, but it has to be.",
+							"First we slide the needle in between the vertebrae. You feel the shock, yes? You cannot move ?",
+							"Excellent.",
+							"Soon you will lose sensation in your fingers and toes. The more fluid I take the more numb they will become. Next your arms and legs will go numb. Then you will not be able to speak. Strangely, I believe the last thing to go will be your eyes, but by the time that happens you will have long lost the ability to speak, so I can't be sure..."
+						],
+						"by": "Dr Daclaud Heinfroth"
+					},
+					"The good doctor appears to be a thin human standing slightly shorter than average. His hair is dark and his eyes are set deep into his skull. The doctor always seems to study any intelligent creature he meets. Hein-froth asks probing questions and always seems to con-sider an answer very carefully before responding. After talking with an intelligent creature for a surprisingly short time, Doctor Heinfroth seems to lose interest. He is a keen judge of character and talented psychologist and can anticipate the answers and motivations of any intelligent creature he talks to after a short conversation.",
+					"Heinforth dresses in dark, well tailored suits with no decoration. The suits are made of the finest materials and indistinguishable from each other.",
+					{
+						"type": "entries",
+						"name": "Background",
+						"page": 252,
+						"entries": [
+							"Heinfroth's obsession with madness began when he was a boy growing up in the domain of Gundarak before the Grand Conjunction. His mother was a serious, driven woman that was the matriarch of a small but prosperous clan of textile merchants. When Heinfroth was seven, she was suddenly struck with a violent disease that rapidly eroded her ability to rea-son. After a few weeks she could no longer recognize her only son. After a month she could not speak more than two words at a time and had trouble remembering basic concepts. By six months she had to be bound to keep herself and others safe. She died screaming in fear and rage a few days later. In six months the dis-ease had torn her mind apart, then taken her life.",
+							"After her funeral, Heinfroth began to research his ancestry. He found that every single one of his relatives on his mother's side had died of the same disease, most before the age of thirty. The disease always worked the same way, their minds were rapidly torn apart by a mysterious disease, then death.",
+							"Heinfroth was determined that he would not suffer the same fate. He began to kidnap anyone that wouldn't be missed and experiment on them. He would break the mind of his victims through torture and manipulation, then try to heal them of the afflictions he caused.",
+							"Within a few years Heinfroth was no closer to curing the madness that had taken his mother, but was a master at psychologically damaging innocent people. What's more he found he enjoyed tearing apart the minds of his victims, and had a natural affinity for it. His half hearted attempts at curing the madness he caused were no match for the zeal he had in inflicting it on his victims.",
+							"After a few years of torturing vagabonds and transients, Heinfroth finally had a breakthrough. He used long syringes to take spinal fluid out of healthy victims and injected it directly into the spine and skulls of suf-fering patients. To his surprise, the patients showed some improvement.",
+							"Using his new techniques, Heinfroth was accepted to study at the Asylum for the Mentally Disturbed. The asylum provided the perfect cover for Heinfroth's work. Hienfroth began to refine his technique and soon was a master at draining every last drop of spinal fluid. It killed his victims, but sacrifices in the name of science were acceptable losses for him.",
+							"By the time he was twenty eight, Heinfroth was recognized as the premier medical doctor in all of Gundarak. It was just after that birthday that Heinfroth noticed the tremors for the first time. His hands began to shake, ever so slightly. Then he began to forget things. Small things at first, but soon he was forgetting the names of people and places he had known all his life. The mad-ness had him in its grasp and it was only a matter of time before he fully succumbed.",
+							"Heinfroth found a woman near his home in the prime of health and quickly spirited her away. He bound her and drained every last ounce of spinal fluid from her, then injected it directly into his brain. Unfortunately for Heinfroth, Duke Gundar, a powerful vampire and lord of Gundarak had chosen the woman to be his next vampire bride. Her spinal fluid, steeped in the life drain-ing energies that were the result of a feeding vampire, mixed with his to create a new and powerful undead. The cerebral vampire is a type of undead that must drain its victims of spinal fluid rather than blood. Their fangs are longer and stronger than a traditional vampire, perfectly formed to slip in between vertebrae or puncture the skull.",
+							"Duke Gundar was furious with Heinfroth and nearly killed him. The only thing that saved his life was his total obedience to Duke Gundar and his weakness versus the Duke's mind dominating gaze. Gundar forced the doctor to move into his castle and serve as his full time physician.",
+							"After years of dominating Heinfroth, Gundar conceived a plan to make the doctor the lord of neighboring Kar-takass, the domain of Harkon Lukas. Gundar tried to manipulate a party of adventurers into killing Harkon, but the wolfwere proved too canny a foe. The adven-turers uncovered the plot and returned to Gundarak, seeking revenge. Duke Gundar sought to lure them into a trap by using himself as bait. Gundar thought of his control over Heinfroth to ensure he would release the duke from his cage and Gundar could slaughter the fools at will.",
+							"Much to the dismay of Gundar, Heinfroth was finally able to resist the mental domination of Duke Gundar. The adventurers wasted little time in staking the duke and fleeing the domain.",
+							"With the death of Duke Gundar, Heinfroth assumed control of the domain. He moved back to the asylum to continue his research and ignored the rest of Gundarak. When the Grand Conjunction shattered Ravenloft, Gundarak was dissolved and the asylum became its own domain in the Core.",
+							"Originally Dominia was small, just the asylum and its grounds, but as Heinfroth began to give into his sadism and cruelly experimenting on his victims, Dominia has slowly expanded."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Current Sketch",
+						"page": 253,
+						"entries": [
+							"Heinfroth lives in constant fear of his heritage of crippling madness. He is willing to try any experiment, no matter how cruel on one of his patients or another cerebral vampire that he believes has the slightest chance of curing or preventing the lunacy. Un-fortunately, most of his victims are not suffering from madness, so Heinfroth has no way of knowing whether the experiment worked or not.",
+							"Heinfroth has started injecting his own spinal fluid into patients that are displaying signs of actual lunacy. This practice has even brought respite to his patients, albeit temporarily. Trotting out these poor victims has con-vinced the people of Dominia that Heinfroth is a living saint, living his life to bring succor to the mentally ill. In truth Heinfroth is nothing but a sadist that uses his keen understanding of psychology to toture the people in his care.",
+							"The good doctor knows the secret to making more cerebral vampires, but rarely does so. He prefers for their numbers to stay low, and thus be hidden from the mon-ster hunters that occasionally traverse the Demiplane of Dread."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Darklord's Tactics",
+						"page": 253,
+						"entries": [
+							"Heinfroth makes full use of his cunning mind and deep understanding of the drives of intelligent creatures in combat to torture and con-fuse his foes. Heinfroth plays on their insecurities and hidden fears to keep his opponents confused and off guard until he is ready to close for the kill. Because of deep understanding of the motivations of intelligent creatures, Heinfroth is rarely caught off guard, especially in the massive asylum that serves as his domain.",
+							"Heinfroth is a cerebral vampire, and is even stronger than the average specimen. Heinfroth revels in luring opponents into a false sense of security and then tear-ing them to shreds with his inhuman strength. Cerebral vampires are a rare strain of vampirism and Heinfroth uses its unique nature to confuse hunters in his do-main. Heinfroth does not fear the rays of the sun and has developed a love of garlic. He makes a show of eating garlic raw. By the time most hunters are stalking Heinfroth through his asylum, they think the Doctor is a werewolf. "
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Borders",
+						"page": 253,
+						"entries": [
+							"When the doctor closes the borders of Dominia, the borders are cloaked in impenetrable dark-ness. No light, magical or mundane, functions inside the darkness. Creatures take 1d10 cold damage ev-ery round they spend in the darkness. This damage ignores resistance and immunity. It is very easy for creatures to get confused and lost inside this darkness."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/Q46Rcug.jpg"
 						}
 					}
 				]
