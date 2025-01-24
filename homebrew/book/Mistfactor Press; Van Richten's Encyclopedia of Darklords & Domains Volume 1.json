@@ -273,6 +273,23 @@
 				},
 				"If Althea dies, these effects fade over the course of {@dice ld10} days."
 			]
+		},
+		{
+			"name": "Darklords&DomainsVol1LairActionsFrantisekMarkov",
+			"source": "Darklords&DomainsVol1",
+			"lairActions": [
+				"While Frantisek is in the House of Diosamblet, he can take lair actions as long as he is not incapacitated.",
+				"On initiative count 20 (losing initiative ties), Frantisek can take the following lair action options, or forgo using any of them that round: ",
+				{
+					"type": "list",
+					"items": [
+						"{@b Pass through solid:} Until initiative count 20 of the next round, Frantisek can pass through solid walls, doors, ceilings, and floors as if they weren't there. As he does, he appears to disappear into them like a chameleon.", 
+						"{@b Deformation:} Frantisek channels his power as a Darklord in an attempt to deform one creature he can see in his lair. The target must succeed on a DC 17 Wisdom saving throw or suffer the effects of the {@spell polymorph|PHB} spell until initiative count 20 on the next round.", 
+						"{@b No Concentration:} Frantisek does not need to concentrate on the spell when cast this way."
+					]
+				},
+				"Frantisek can't repeat an effect until they have all been used, and he can't use the same effect two rounds in a row."
+			]
 		}
 	],
 	"spell": [
@@ -4875,7 +4892,7 @@
 			"rarity": "very rare",
 			"wondrous": true,
 			"weight": 1,
-			"value": 500,
+			"value": 100000,
 			"entries": [
 				"Said by some to have originated on another plane (or Demiplane), this frightening device appears to be nothing more than a large, sturdy medical syringe, at least to those familiar with such technology. It has an unusually sturdy needle, about six inches long. To use the syringe, the user drives the needle up through the base of the skull and into the victim's brain, then draws out the cerebrospinal fluids. This process kills the victim, painfully and slowly over a period of some ten minutes, unless a {@spell greater restoration|PHB} or a {@spell heal|PHB} spell is cast upon it within this time period. Note that the victim must be restrained and incapacitated to complete this maneuver. Next, the user drives the needle up through the base of the skull and into the recipient's brain and injects the fluid. The recipient immediately gains {@dice 1d6} points of Intelligence, up to a maximum of 20. The Intelligence increase lasts for one month, after which the points fade away at the rate of one point per week. Immediately after injecting the foreign brain fluids, the recipient must succeed on a DC 15 Wisdom saving throw or lose one point of Wisdom. If the recipient's Wisdom is reduced to 3 or less, the recipient immediately becomes homicidally insane, with no saving throw allowed. The insanity can be cured by a {@spell wish|PHB} or a {@spell heal|PHB} spell."
 			],
@@ -5742,6 +5759,22 @@
 			"entries": [
 				"You gain a +2 bonus to attack and damage rolls made with this magic weapon. In addition, you can make one attack with it as a bonus action on each of your turns."
 			]
+		},
+		{
+			"name": "Book of Revelations of the Prince of Twilight",
+			"source": "Darklords&DomainsVol1",
+			"page": 280,
+			"baseItem": "book|phb",
+			"tier": "major",
+			"type": "G",
+			"rarity": "very rare",
+			"weight": 5,
+			"value": 2500,
+			"entries": [
+				"The book of Revelations of the Prince of Twilight is an ancient tome whose teachings are so heretical that the Church of Ezra and the church of bane consider it heresy. The Church of Ezra condemns anyone who reads the book. The Church of Bane has the book burned and its owner slain or burned with the book.",
+				"The book was written in 702 by Renthon Vorishtok, a monk of the Borcan order. Renthon was a cleric of exceptional ability that claimed he could cure plagues and banish famine through acts of faith alone. At first the Borcan order thought Renthon was a font of holy power, but he soon descended into hubris and madness. Renthon demanded to be the head of the order, and was forced to flee the wrath of angry monks.",
+				"He wondered the domains until he came to the broken shores of Lamordia. The domain was in the depths of winter and Renthon was weak from lack of food and shelter. As night fell Renthon was visited by the Prince of Twilight. The Prince talked to Renthon, telling him how every mortal had been cheated and damaged years ago. Mortals used to possess two souls. The Prince told Renthon how to summon his other soul from the beyond, and instructed the cleric to write his instructions down. Renthon disappeared shortly after the Grand Conjunction, leaving over 1,000 copies of the text in his house."
+			]
 		}
 	],
 	"language": [
@@ -5774,7 +5807,8 @@
 				"people of Sithicus",
 				"people of Verbrek",
 				"people of Falkovnia",
-				"people of Dominia"
+				"people of Dominia",
+				"people of Markovia"
 			],
 			"script": "Elvish"
 		},
@@ -5804,7 +5838,8 @@
 				"people of Lamordia",
 				"people of Necropolis",
 				"people of Tepest",
-				"people of Blaustein"
+				"people of Blaustein",
+				"people of Sea of Sorrows"
 			],
 			"script": "Elvish"
 		},
@@ -5835,7 +5870,8 @@
 				"people of Dementlieu",
 				"people of Falkovnia",
 				"people of Lamordia",
-				"people of Necropolis"
+				"people of Necropolis",
+				"people of Tha Isle"
 			],
 			"script": "Elvish"
 		},
@@ -5860,7 +5896,8 @@
 				"people of Dementlieu",
 				"people of Falkovnia",
 				"people of Lamordia",
-				"people of Blaustein"
+				"people of Blaustein",
+				"people of Sea of Sorrows"
 			],
 			"script": "Elvish"
 		},
@@ -5899,7 +5936,9 @@
 				"people of Lamordia",
 				"people of Necropolis",
 				"people of Blaustein",
-				"people of Ghastria"
+				"people of Ghastria",
+				"people of Sea of Sorrows",
+				"people of Tha Isle"
 			],
 			"script": "Elvish"
 		},
@@ -16361,6 +16400,1115 @@
 											]
 										}
 									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Markovia",
+							"page": 262,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/KiERSQY.jpg"
+									}
+								},
+								{
+									"type": "quote",
+									"entries": [
+										"An animal may be ferocious and cunning enough, but it takes a real man to tell a lie."
+									],
+									"by": "H.G. Wells, The Island of Doctor Moreau"
+								},
+								"Markovia is a land where man meets beast in the most literal way possible. There are no men, nor even humanoids here. Instead, there are animals, half-transformed into humanoids, the legendary Beast-Men, who make their living here. The island wasn't even always an island, as it used to lie in the Core, but when the Grand Conjunction happened, it was ripped from its place and thrust into the Sea of Sorrows. The island's master and the darklord of the domain is Dr. Frantisek Markov, named so only by himself. He has no formal education, instead once being a Barovian butcher, but one who fled into the mists when it was discovered that he had experimented on animals, per-forming gruesome surgeries on them, and one day had turned his skills upon his wife when she discov-ered his experiments. Everyone on the island is one of two things: One of the Beast-Men or one of Markov's victims-to-be. The doctor has performed many experi-ments and surgeries on the only readily available sub-jects on the island: the animals. And he has achieved a level of success with this that can only be rivaled by the performance of Victor Mordenheim in Lamordia. The doctor is capable of turning animals into thinking beings without the use of magic. Unfortunately, this requires extensive surgery, vivisection, transplants, and even brain surgery to a horrific level, using vari-ous surgical and alchemical techniques, and it leaves most of the subjects in constant pain.",
+								"Apart from the pain is the fact that none of them remember their past lives - both those that were animals and those that were once humanoids have their minds erased as part of the surgery. Markov also has high expectations of his subjects, and so far only three have been deemed successes in his eyes, though a fourth one escaped him — likely his greatest success to date. One day he hopes that the surgery is perfected enough that he can attempt it on himself, and retain his memories at the same time. Adventures in Markovia should focus on the things that Markov has dodged: responsibility, human identity, and the fact that humans should not try to interfere too much with nature. Any heroes who run into the darklord should be in danger of being ex-perimented on by a man or creature completely devoid of emotion or compassion, where they should find that the subjects — the Beast-Men —who appear horrific are the compassionate and human ones who lend a hand. But they should also find that the more “success-ful” these creatures are in the eyes of the doctor, the more horrific their actions should be — as evidenced especially by his three assistants (Orson, a brown bear Beast-Man, Felix, a leopard Beast-Man, and Delphi, a dolphin Beast-Woman) and Akanga (described below in Akanga's village)...",
+								{
+									"type": "table",
+									"caption": "Markovia",
+									"colLabels": [
+										"Detail",
+										"Description"
+									],
+									"colStyles": [
+										"col-3 text-center",
+										"col-9"
+									],
+									"rows": [
+										[
+											"Culture Level",
+											"Stone Age (Beast-Men), Renaissance (Dr. Frantisek  Markov)"
+										],
+										[
+											"Climate & Terrain",
+											"Warm, forests or jungle,hills, and mountains"
+										],
+										[
+											"Year Formed",
+											"698 BC"
+										],
+										[
+											"Population",
+											"Unknown"
+										],
+										[
+											"Races (%)",
+											"Beast-Men 100%"
+										],
+										[
+											"Languages",
+											"{@language Common|PHB}, {@language Balok|Darklords&DomainsVol1}"
+										],
+										[
+											"Religions",
+											"Diosamblet"
+										],
+										[
+											"Government",
+											"None"
+										],
+										[
+											"Ruler(s)",
+											"Dr. Frantisek Markov"
+										],
+										[
+											"Darklord(s)",
+											"Dr. Frantisek Markov"
+										],
+										[
+											"Nationality",
+											"Markovian"
+										],
+										[
+											"Analog",
+											"The Island of Doctor Moreau"
+										],
+										[
+											"Neighboring domain(s)",
+											"Sea of Sorrows"
+										]
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/hWKHdDP.jpg"
+									}
+								},
+								{
+									"type": "entries",
+									"name": "Local Fauna",
+									"page": 263,
+									"entries": [
+										"Markovia is ALIVE. There are animals of all kinds here, mostly of tropical varieties. Great cats, colorful birds, monkeys, bats, and more are all here in large num-bers, living off the fertile plants that make up the forest of Markovia. Jungle is a more appropriate word for it or will be in a few more years, once the plant and animal life has removed all traces of its old position. There are still a few of the tougher animals alive here as well, from where it was before, including a few older brown bears and at least one colony of badgers. For the most part, they've become extinct, unable to survive in the new environment where they suddenly found them-selves competing with animals more suited for the temperature."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Local Flora",
+									"page": 264,
+									"entries": [
+										"The fauna of Markovia is an odd mix. The currently vi-brantly alive plants are all tropical, such as palms and beautiful flowers and orchids, but the overturned trunks of trees and the dead grass that lies in certain places are all from a much colder climate. The transition that happened when Markovia moved from the temperate climate in the Core to the tropical climate that it now has was not perfect, and as such many plants are still coming into their full size now, many years later.",
+										"This has given rise to a few unique plants, such as a needle-covered palm tree, referred to by the Beast-Men as “pine palms” and several other odd mixes. As time has passed, the island has been taken over mostly by the plants you'd expect in a warm and humid climate."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Native Horrors",
+									"page": 264,
+									"entries": [
+										"The only monsters present on the island are the Beast-Men that Dr. Markov has created, as well as the doctor himself. Whether the Beast-Men really ARE monsters can be debated, but Dr. Markov certainly is."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Terrain Type",
+									"page": 264,
+									"entries": [
+										"The island is covered in forests except near the House of Diosamblet, and some of the villages where land has been cleared to make way for crops. Most of the domain sits on hills and mountain tops, a relic of its old placement within the Core, where it sat in the area between Hazlik and Barovia, high in the mountains. Strangely the ground became more fertile and less rocky when the domain moved, allowing for more of the Beast-Men to subsist on a decent diet."
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/KVWw4k8.jpg"
+									}
+								},
+								{
+									"type": "entries",
+									"name": "Important Landmarks",
+									"page": 264,
+									"entries": [										
+										{
+											"type": "entries",
+											"name": "House of Diosamblet",
+											"page": 264,
+											"entries": [
+												"Surrounded by a 7' tall wooden palisade, the House of Diosamblet (the God Who Walks Among Us) is both a place of holiness and terror to the Beast-Men of Mar-kovia. It is a rough-hewn manor made from the lum-ber that was available when Markovia was still in the Core, so it has an imported look. It sits on a low hill and is surrounded by a well-tended grassy field filled with flower and vegetable gardens - often tended to by the beautiful Delphi. While rough-hewn, the manor is well built from spruce, fire, and the like and is so tightly jointed that even a tropical storm and high winds can-not penetrate the walls, even with the roof being made from thatch.",
+												"There are plenty of windows, but no glass and shutters hang open during the day and are closed during the night. The House has four inhabitants, Dr. Frantisek Markov himself rules the house with a firm hand, per-forming his surgery in the laboratory whenever he can. Orson is his most trusted Beast-Man, created from a brown bear. Orson is slow, methodical, and loyal to a fault, but is not the smartest creature around, the only thing that Markov regrets about him. Orson spends most of his day tending to the grounds and during the night he retreats to a smaller building near the manor.",
+												"Felix is the cook of the house and was created from a leopard. Felix makes all the appearance of being a loyal servant, but sharp observers will note that he sometimes sneaks off to Akanga's village to report the goings-on at the House. Delphi is the final inhabitant and was created when a wounded dolphin washed ashore on Markovia. She's the youngest of the house's inhabitants and incredibly beautiful, but young and un-aware of how the world works. She sees the doctor. as her father, and while not accepting of his behavior, she is too cowed to do anything about it and simply sees it as “his nature”. She is very curious and will try to observe any newcomers to the island, but when not distracted in this manner, she'll spend her time tending to the house and the gardens."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Monastery of the Lost",
+											"page": 264,
+											"entries": [
+												"On the southern edge of the island stands a single stone monastery, and here can be found a splinter cell of the Order of the Guardians located in Hazlik. When Markovia moved, their monastery was moved with it, but they retained their original mandate: to keep magical artifacts and cursed objects away from the outside world and keep the world safe. The order hides a terrible secret though. One of the items that they keep safe is the Tablet of Life. Unfortunately, it was able to affect them when the domain moved, and they were all turned into mummies upon the transition. This is not readily apparent to any unwanted visitors (the monks do not generally let anyone in), but Dr. Mar-kov has realized that there is something different about these monks, though he's not sure what. As such, the Beast-Men who are still loyal to him keep an eye on the monastery, but he and they leave it in peace."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Great Stone Men",
+											"page": 265,
+											"entries": [
+												"The Great Stone Men are several large statues that are partially sunk into the northern beach and only ap-peared after Markovia was moved during the Grand Conjunction. They are partially submerged into the sands and only their heads, arms, and bare shoulders are visible. They seem to be stretching and trying to escape the pull from underneath the ground, and their faces, both male and female, are all contorted in pain and agony."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Towns and villages",
+									"page": 265,
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Abandoned Villages",
+											"page": 265,
+											"entries": [
+												"There are several abandoned villages strewn across Markovia, all of which show varying degrees of techno-logical refinement, far beyond that of the Beast-Men. These are the remnants of prior inhabitants of Marko-via or the failed attempts of settlement here. The latest one was from Lamordia, and while the rest have fallen into decay, the Lamordian settlement is still recogniz-able. A small sign at the edge of the village read “Zu-hauseweg” (translated into common it means “Home Away”). The ruins are often scoured by the Beast-Men looking for tools to use, while the inhabitants were tak-en away by Markov to be experimented on. None of the inhabitants survive in their old forms, and those that survived the drastic surgery of the doctor have forgotten who they were."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Akanga's Village",
+											"page": 265,
+											"entries": [
+												"Akanga is perhaps the greatest success that Markov has ever experienced, but to the doctor's great dis-appointment the tiger Beast-Man turned out to be a traitor who turned his back on him. Akanga sought to overthrow the doctor but failed, and now spends his time licking his wounds and readying himself for another try.",
+												"This village of 100 souls is his fiefdom, and the Beast-Men that live here are all utterly loyal to him (as is Fe-lix who lives within Markov's compound at the House of Diosamblet). The village is not very developed, with the huts being made from simple mud and sticks. For the Beast-Men though, they serve their purpose."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Fun Fact",
+									"page": 265,
+									"entries": [
+										"Those who have been under the tender care of the doctor refer to those who haven't as clearskins — a clear sign that they know that they would no longer be considered as fellow members of whatever race they were before."
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/Xp8S3jg.jpg"
+									}
+								},
+								{
+									"type": "entries",
+									"name": "Frantisek Markov",
+									"page": 266,
+									"entries": [
+										{
+											"type": "quote",
+											"entries": [
+												"Hidden deep within the bowels of every living creature is the secret of life. By mastering the secret of life I will find the cure for my...condition.",
+												"So really, your sacrifice is for the greater good. You may be hiding the secrets to all life some-where in your heart or stomach. At the very least I may learn how you handle pain.",
+												"Even that will be worth learning."
+											],
+											"by": "Frantisek Markov"
+										},
+										"Frantisek Markov is a tall man with broad features. He stands well over six feet tall but walks hunched over, sometimes even using his heavily muscled arms for support. He wears thick robes and leather gloves. Markov's eyes are black, perfectly matching the thick black hair he keeps slicked back. Frantisek talks slow-ly and carefully considers his words before speaking. If he is talking to someone that knows very little about the sciences, especially biology or chemistry, he will speak very slowly and use small words, as if the per-son he is speaking to is a particularly dense child.",
+										{
+											"type": "entries",
+											"name": "Background",
+											"page": 266,
+											"entries": [
+												"The Markovs were a minor noble family in Barovia when it was taken by the Dark Powers to form the first domain of Ravenloft. Several Mar-kovs were in Castle Ravenloft the night that Strahd became a vampire and slew his brother. The lucky Markovs in the castle were slain when Strahd vented his rage and bloodlust on the wedding guests. The unlucky ones disappeared into the bowels of the cas-tle and were never seen again.",
+												"The remaining Markovs fled the village of Barovia and settled in and around the village of Vallaki. It was on a small pig farm outside Vallaki that Frantisek Markov was born. Frantisek was an intelligent child, quick to outpace the tutors his family could afford, especially in the sciences of biology and chemistry. Despite his quick and eager mind, Frantisek seemed doomed to the life of a pig farmer.",
+												"Perhaps because of his interest in biology or because Frantisek seemed to have a certain way with knives, his family allowed him to butcher the hogs that were ready to go to market. Butchering the hogs gave the young boy a chance to study anatomy in a far more real way than studying books, and Frantisek began to indulge his curiosity. At first he would choose one pig from a herd and see how long it could last before the pain of being butchered killed it. He perfected a variety of alchemical concoctions that would paralyze the poor animal while he sliced it open. Frantisek made sure his custom elixirs wouldn't dull the animal's pain, lest some secret of its anatomy escape his notice. Soon he was vivisecting two and three hogs at the same time while happily and efficiently butchering the rest of the herd for sale. Once Frantisek had learned all he could of hogs, he began to seek new prey.",
+												"At first, it was small animals around his farm, birds, cats, dogs, and rats. Then Frantisek would go into the woods and set traps for the animals that lived there. Soon he was experimenting on wolves, squirrels and even the occasional bear. As Frantisek grew older, strangers that visited his village sometimes disap-peared. Their clothes and money would be found in the woods around Vallaki. The villagers assumed the fools had tried to save some coin by spending the night in the woods around the village and paid for it with their lives. The truth was far worse. Frantisek started his greatest experiments, grafting parts from one creature to another. The surgery proved fatal for both creatures, but Frantisek never worried. The ones that lived were abandoned to the forest, and the ones that didn't were given to the pigs.",
+												"If his family knew of his experiments, they indulged them. It gave the boy something to do and good butchers were hard to find. If nothing else Frantisek was a talented butcher.",
+												"When he was a young man his family arranged for him to marry one of the local women in Vallaki. Lud-milla was beautiful, friendly, and several of her suitors were crushed to see her married to a butcher, even if his family was well connected.",
+												"Frantisek took money he had saved from butchering animals for the local farmers and the occasional trust-ing stranger and opened a butcher shop in the village. At first things went well. Frantisek and Ludmilla made a decent living carving animals and always had some-thing to eat, and when the butcher shop closed Fran-tisek retreated to his labs to continue his experiments. At first Ludmilla was glad to be away from her distant and intimidating husband, but soon became curious about his experiments.",
+												"One night Frantisek, usually so careful, left the door to his laboratory unlocked. His wife, overcome with curi-osity, opened the door and screamed at what she saw inside. Dead animals, twitching halves of beasts and unholy combinations of animals no god ever dreamed of stared at her with pleading eyes. They were silently begging her for release from a life of pain. She only stopped screaming when she saw her husband, star-ing at her, eyes wild with rage. Lady Markov berated her husband and threatened to tell the village of Fran-tisek's sick secrets. Frantisek grabbed his wife and drug her into his lab, slamming the door shut. She lived for three days. When Ludmilla could no longer serve his curiosity, Markov dumped her body in the forest as he had with so many other victims, but it proved to be a nearly fatal mistake. At first hunters thought they had found a horribly mangled beast, but when they moved closer they saw the once familiar face on the butchered corpse. Ludmilla was pretty and popular, and when her corpse was found, the village wanted answers. They came to the butcher shop at night and broke down the door. Frantisek was found in his lab and the dozens of missing travelers, hun-dreds of dead mutilated animals, and unnumbered vile experiments suddenly had a cause. The mob dragged Frantisek into the village square and began pelting him with stones. Markov, desperate to escape, charged through the mob and dashed headlong into the mists. When the mists finally cleared, he had been given his domain, Markovia."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Current Sketch",
+											"page": 267,
+											"entries": [
+												"Frantisek is a master at surgically vivisecting creatures and combining the best and worst aspects into one hideous whole. The mon-strous creatures Frantisek creates live, even though they shouldn't, and spend their lives in hideous pain. The creatures won't attack Markov, but any creature not given Markov's protection will be immediately at-tacked.",
+												"Markov is desperate to get his human body back. He frantically operates on creatures he finds on his island to try and uncover their secrets. He is convinced that the Dark Powers have hidden the secrets of his human form inside one of the animals on his island. Frantisek spends long hours in his labs dissecting creatures, making new monsters, and desperately searching for a cure for his condition. Since Markovia was flung into the Sea of Sorrows during the Grand Conjunction, his test subjects have become increasingly few and far between. Because of this, Markov is careful to make sure his subjects are thoroughly vivisected, and every inch of their anatomy explored and observed before he combines them with other creatures and casts them aside. Markov descended into madness long ago, and the dark power will never let his research succeed."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Darklord's Tactics",
+											"page": 267,
+											"entries": [
+												"The Dark Powers have gifted Markov with the ability to shapechange into any beast at will. Markov gains the Strength, Dexterity, and Con-stitution plus any special abilities of his new form, while retaining his Intelligence, Wisdom, and Charisma. Mar-kov's attacks vary with his form, but he is a master at playing to the strengths of his many forms. No matter what form he chooses, Markov's head always remains the same, meaning he can never have a bite attack or any other ability associated with a bite attack (venom for instance). Markov can no longer assume his original form, but usually chooses the shape of a gorilla. Mar-kov tries to pass himself off as a massive human and hides his body under thick robes and heavy gloves."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Borders",
+											"page": 267,
+											"entries": [
+												"When Markov closes the borders, the seas around Markovia become rough and push any boats back towards the rocky shore. Sharks swim in the waters waiting for any sail-or unfortunate enough to fall into the water."
+											]
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://i.imgur.com/utYKXni.jpg"
+											}
+										},
+										{
+											"name": "Frantisek Markov",
+											"type": "entries",
+											"page": 268,
+											"entries": [
+												{
+													"type": "statblock",
+													"tag": "creature",
+													"source": "Darklords&DomainsVol1",
+													"name": "Frantisek Markov"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Sea of Sorrows",
+							"page": 269,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/sJ3fSHw.jpg"
+									}
+								},
+								{
+									"type": "quote",
+									"entries": [
+										"Every man has his secret sorrows which the world knows not; and oftentimes we call a man cold when he is only sad."
+									],
+									"by": "Henry Wadsworth Longfellow"
+								},
+								"The Sea of Sorrows is the only domain that was created without a Darklord, though one did eventually emerge to take control of it. The Sea is an exercise in futility, made even more so after the arrival of Captain van Riese. The Sea was sup-posedly created to house the Islands of Terror, and has become home to a number of pirates, such as Urdogen the Red (a ghost pirate who has been soundly trounced by Captain Pieter in the past when he became too unruly), to the Seawolves of the Fin-ger in Lamordia and others. AS such, it is a dangerous domain, but made more so by the presence of the mists that obscure everything. This means that routes can differ for different ships. Two ships that set out on the same heading do not always arrive at the same location, nor is the location always the same later on. This is not helped by the inability of those travelling on the seas to distinguish between the Sea of Sorrow itself and the surrounding mists. As such they often end up in entirely different loca-tions that have no physical connection with the Sea of Sorrows.",
+								"This effect became more pronounced after the arrival of van Riese, always frustrating his attempts to map the sea and plot out routes. Only when his ship has been chartered by others will he arrive at the location he intends.",
+								"Adventures on the Sea of Sorrows should feature this frustrating inability to carefully plan where a ship is headed. Dungeon Masters should use this to their advantage and introduce complications or new adventures where they can. ",
+								{
+									"type": "table",
+									"caption": "Sea of Sorrows",
+									"colLabels": [
+										"Detail",
+										"Description"
+									],
+									"colStyles": [
+										"col-3 text-center",
+										"col-9"
+									],
+									"rows": [
+										[
+											"Culture Level",
+											"Varies by island and ship"
+										],
+										[
+											"Climate & Terrain",
+											"Temperate to cold, ocean  with the islands varying from that"
+										],
+										[
+											"Year Formed",
+											"630 BC"
+										],
+										[
+											"Population",
+											"1.300 (does not include those living on the islands belonging to other domains)"
+										],
+										[
+											"Races (%)",
+											"Humans 99%, Other 1%"
+										],
+										[
+											"Languages",
+											"{@language Common|PHB}, {@language Darkonese|Darklords&DomainsVol1}, {@language Lamordian|Darklords&DomainsVol1}, {@language Mordentish|Darklords&DomainsVol1}"
+										],
+										[
+											"Religions",
+											"Any (most sailors revere  Ezra or Hala)"
+										],
+										[
+											"Government",
+											"No government — each  island might have its own"
+										],
+										[
+											"Ruler(s)",
+											"None"
+										],
+										[
+											"Darklord(s)",
+											"Captain Pieter van Riese"
+										],
+										[
+											"Nationality",
+											"None"
+										],
+										[
+											"Analog",
+											"The cold oceans of the world"
+										],
+										[
+											"Neighboring domain(s)",
+											"Blaustein, Darkon, Dementlieu, Dominia, Ghastria, Lamordia, Markovia, Mordent, Valachan"
+										]
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/ZAvIvO2.jpg"
+									}
+								},
+								{
+									"type": "entries",
+									"name": "Local Fauna",
+									"page": 270,
+									"entries": [
+										"The islands in the Sea of Sorrows vary wildly in who or what lives on them. But the Sea of Sorrows itself is a mostly cold ocean, one that holds whales, herrings, the occasional giant squid, and salmon. Mackerel and other types of fish can be caught as well, though the exact types vary by location — especially near the isles the change in species can be drastic. Of all the normal species of animals that live here, sharks are the greatest threat as they are plentiful in these cold waters."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Local Flora",
+									"page": 270,
+									"entries": [
+										"There are no flowers or grasses that grow on the Sea itself, though the islands can hold all kinds of plants. The main vegetation in the Sea of Sorrows are things like algae and seaweed, but these are all so far below the surface that most travelers across the Sea itself see nothing more than the mists that hang above the waters."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Native Horrors",
+									"page": 270,
+									"entries": [
+										"No one seems to know what lurks beneath dark waves, apart from the fish and such, but there are rumors of all kinds of monsters lurking beneath the waves, from weresharks, sirens, and the seawolves to rumors of a kraken. Of course, ghost ships are the most famous threats, with the Relentless being the primary one among them."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Terrain Type",
+									"page": 271,
+									"entries": [
+										"The Sea of Sorrows itself is featureless, bro-ken only by the islands. It is cold for most of the year and perpetually swathed in mist."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Important Landmarks",
+									"page": 271,
+									"entries": [										
+										{
+											"type": "entries",
+											"name": "Relentless",
+											"page": 271,
+											"entries": [
+												"The Relentless is the ship that Captain Pieter van Riese brought with him when he entered the mists. It is a ghost ship, but with concentration, the captain can force it to become physical. He normally does this to take on passengers and fare or bring new sailors into the fold. The ship is only crewed by the Captain himself when it is in its ghostly form, but when in phys-ical form its crew reappears — though none of them know where they went in the meantime, which caus-es temporary crewmembers a degree of difficulty with finding out where and when they are — especially as the ship appears capable of traveling both in place AND time — but the Captain can only direct the direc-tion when he has active passengers. The ship itself is a large ship, an exploration vessel more than a trad-ing vessel, built for speed and combat when needed.",
+												"It appears heavily armed but has never really needed them, due to its ghostly nature. Only when van Riese wants to show his power does it retain physical form in combat."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Towns and villages",
+									"page": 271,
+									"entries": [
+										"None on the sea itself, though several islands are inhabited."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Fun Fact",
+									"page": 271,
+									"entries": [
+										"Captain van Riese isn't the only captain who has had trouble plotting the islands and routes of the Sea of Sorrows, as the islands move around in unpredict-able patterns. This is normally not visible from other islands due to the heavy fog that always hangs over the ocean."
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/Ra2H0KM.jpg"
+									}
+								},
+								{
+									"type": "entries",
+									"name": "Captain Pieter van Riese",
+									"page": 272,
+									"entries": [
+										{
+											"type": "quote",
+											"entries": [
+												"I do not fail.",
+												"I have been through fields of ice as far as the eye can see. I have braved storms that froze men to the decks of my ship.",
+												"I do not fail.",
+												"I do not know where my ship and I sail. I do not know where this damnable sea and its shifting , floating islands comes from, but I will tame it.",
+												"I will find its secrets and I will bend it to my will.", 
+												"I do not fail."
+											],
+											"by": "Pieter van Riese"
+										},
+										"In life Pieter van Riese was a broad shouldered man with weathered features, his dark eyes constantly scanning the horizon. His hair and beard were dark, a touch of grey appearing at the temples and at his mouth's corners. In death he appears much the same, yet a chill clings to him, and his hair and beard shift and move as if he was in a violent storm. When he speaks his breath is visible, as if he talks in the depths of winter. Despite this, Pieter never complains of the cold and seems comfortable, no matter the weather.",
+										"Captain Riese's ship, the {@i Relentless}, is an extremely well armed and maintained merchant ship. Its timbers have been worn by years of harsh weather and the sea. Like its master, the ship is an apparition, and per-ceptive individuals see through the ship and captain, especially at the hours of dawn and dusk.",
+										{
+											"type": "entries",
+											"name": "Background",
+											"page": 272,
+											"entries": [
+												"Captain Pieter van Riese spent his life on the open sea, and continues to do so in death.. He started as a cabin boy serving on a merchant ship hail-ing from the Netherlands of Gothic Earth, and through hard work and boundless ambition, slowly rose up the ranks of sailors until he could afford to purchase and outfit his own ship. This, Riese christened the {@i Relentless}. The Captain seemed to have an innate understanding of the ocean and sailing,predicting storms and sailing his ship through the worst of them without losing a single sailor. Despite his mastery of the sea, Riese cut a haunting figure amongst the sail-ors of Gothic Earth. Discipline was strictly enforced on his ship, with harsh punishment meted out for the smallest of infractions. Any sailor that questioned the captain or his methods would soon find themselves bound hand and foot and thrown to the sharks that followed the {@i Relentless}.",
+												"Riese was a wealthy man, but money meant nothing to him. His sole cares were his ship and his reputa-tionfor doing the impossible. It was this reputation that would spell Riese's doom.",
+												"In a forgotten port in the Far East of Gothic Earth, whilst unloading cargo, Riese first heard of the leg-endary Northwest Passage. The means to travel from Europe to Asia by traveling through the icy waters north of the American continent, a ship that could find that passage could transport cargo from Europe to Asia in less than half the time of other ships, and gain fame and untold wealth.",
+												"Riese attempted to find the Northwest Passage twice, but crushing icebergs and violent blizzards made him turn back each time. For Riese, this was completely unacceptable. Riese had sailed his ship through hur-ricanes, pirates, and doldrums, only to be defeated by ice. He began to obsess about finding the passage. When he sailed to find the passage a third time, Riese would not be defeated.",
+												"As ice and snow closed in around the {@i Relentless}, Riese ordered the ship onward. The crew grew ner-vous as the ice closed in, and lost their nerve when the {@i Relentless} was battered by high seas, icebergs the size of mountains threatening to smash the ship to tinder. A blizzard was closing in, and already the air was freezing, as the snow fell heavily. The crew appointed a spokesman to take their concerns to the captain. They wished to abandon the {@i Relentless}, and man lifeboats back to safety and civilization.",
+												"Riese was far past simple enragement. He strangled the spokesman with his bare hands, and told the crew that they would either find the passage or die trying. The crew, defeated, returned to their positions and prayed to whatever gods they held dear. The blizzard grew stronger and stronger, the air seemed to freeze and snow fell so thick it was a white sheet that ob-scured everything.",
+												"Riese, realizing he and his ship were doomed, called out to any being that would listen, offering up the lives of his men if any entity would allow himself and the {@i Relentless} to make the passage. Something dark reached out from the edges of sanity, accept-ing Riese's offer. The crew was torn from the ship, and the {@i Relentless} and her captain lost their physical forms and became apparitions sailing through a mist bound sea. When the mist cleared Riese found him-self in a new sea."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Current Sketch",
+											"page": 272,
+											"entries": [
+												"Riese travels the Sea of Sorrows endlessly. He seeks to return to Gothic Earth and prove that the Northwest Passage is real and that he discovered it. He charts the islands he finds in the Sea of Sorrows, but this relatively simple task constantly vexes him.",
+												"The island of the Sea of Sorrow moves. Riese constantly corrects his charts, only to sail further and find the same island in a new location in a different area of the sea. As a proud sailor and ship master, this is intolerable. Riese cannot leave the {@i Relentless}, nor can the ship leave the sea. The {@i Relentless} endlessly crisscrosses the Sea of Sorrows, desperately trying to make sense of the madness.",
+												"For sailors on the Sea of Sorrows, the {@i Relentless} is a dark omen of storms and bloodshed. Haunted sto-ries are told of the {@i Relentless} appearing just before plague descends on a ship, rogue waves shatter the hull, or a storm appears on the horizon.",
+												"When Captain Riese wills it, the {@i Relentless} can be-come solid and can even carry cargo and passengers for an extended period of time. Riese can control the ship with an act of will, the sails adjusting themselves, and the ropes tying and untying themselves from the rigging at his command. Riese will not act like this is unusual or respond to any questions about it."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Darklord's Tactics",
+											"page": 272,
+											"entries": [
+												"Riese is a fearless combatant. His touch freezes skin, and saps the heat from the bones of his victims. Riese attacks with a scooping motion that tears large gobbets of flesh from his victim. Riese can dominate the minds of any creature that meets his gaze, and uses these poor fools as his lackeys on land.",
+												"Any creature seeing the {@i Relentless} will be frozen in fear at the dire portents that surround the ship. Some unfortunate victims will stay that way until the ship passes from sight."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Borders",
+											"page": 272,
+											"entries": [
+												"When Riese closes the borders of the Sea of Sorrows, the sea is surrounded by a thick wall of fog. Ships that sail into the wall find themselves leav-ing it seconds, hours, or weeks later in a different part of the Sea. Riese can prevent ships from reaching the islands in the Sea of Sorrows, but cannot land on the islands themselves, or enter the domains of other darklords and Riese has no control over them."
+											]
+										},
+										{
+											"name": "Captain Pieter van Riese",
+											"type": "entries",
+											"page": 273,
+											"entries": [
+												{
+													"type": "statblock",
+													"tag": "creature",
+													"source": "Darklords&DomainsVol1",
+													"name": "Captain Pieter van Riese"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "The Isle",
+							"page": 275,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/xOKvFWr.jpg"
+									}
+								},
+								{
+									"type": "quote",
+									"entries": [
+										"The soul, fortunately, has an interpreter - often an unconscious but still a faithful interpreter - in the eye."
+									],
+									"by": "Charlotte Brontë, Jane Eyre"
+								},
+								"The Isle has no other name as none of the natives care, Dr. Ramsay doesn't care either, and few enough people survive landing here to provide it with any other name. At this point, since it's been there for more than 100 years, the sailors of the Sea of Sorrows simply name it the Isle or “The Mid-night Isle” due to the fact that it is always night on the island and the waters immediately surrounding it. The Darklord of the Isle, Dr. Blake, is obsessed with harvesting a pair of fresh blue eyes for his daughter Liza — who is kept restrained, as a flesh golem, in the basement of the Ramsay Manor. He has played with life, trying to sustain her after an accident killed her, following which he raised her in her current monstrous form. To this end, he slaughtered his wife and his two boys, for parts to keep Liza alive. Adventures on the Isle should focus on surviving the attacks of Dr. Blake and his attempts to obtain new eyes for his daughter, or on the destruction of the monstrous man and his dread creation. They should show the folly of trying to sustain life beyond a certain point, and the manic in-sanity of a man obsessed with preserving his legacy.",
+								{
+									"type": "table",
+									"caption": "The Isle",
+									"colLabels": [
+										"Detail",
+										"Description"
+									],
+									"colStyles": [
+										"col-3 text-center",
+										"col-9"
+									],
+									"rows": [
+										[
+											"Culture Level",
+											"Renaissance"
+										],
+										[
+											"Climate & Terrain",
+											"Temperate, forest, hill, mountains"
+										],
+										[
+											"Year Formed",
+											"652 BC"
+										],
+										[
+											"Population",
+											"Unknown"
+										],
+										[
+											"Races (%)",
+											"Humans 100%"
+										],
+										[
+											"Languages",
+											"None (the natives), {@language Common|PHB}, {@language Falkovnian|Darklords&DomainsVol1}, {@language Mordentish|Darklords&DomainsVol1}, {@language Vaasi|Darklords&DomainsVol1} (Dr. Blake)"
+										],
+										[
+											"Religions",
+											"None"
+										],
+										[
+											"Government",
+											"None"
+										],
+										[
+											"Ruler(s)",
+											"None"
+										],
+										[
+											"Darklord(s)",
+											"Dr. Blake Ramsay"
+										],
+										[
+											"Nationality",
+											"None (the natives), Morden tish (Dr. Blake)"
+										],
+										[
+											"Analog",
+											"English countryside"
+										],
+										[
+											"Neighboring domain(s)",
+											"Sea of Sorrows"
+										]
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/WHIg8M5.jpg"
+									}
+								},
+								{
+									"type": "entries",
+									"name": "Local Fauna",
+									"page": 276,
+									"entries": [
+										"There are a large number of deer on the Isle, which helps sustain the natives. Apart from these, only smaller animals survive here, and there are no nat-ural predators. However, a large population of bats swarms the island, and they attack larger animals and people. There are many poisonous spiders on the Isle, which tend to crawl into sleeping bags and under blankets during the night."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Local Flora",
+									"page": 276,
+									"entries": [
+										"The Isle is mostly covered in grassy areas and the deciduous forest that the natives hide in. There are no strange plants or weird creations here, only the natural plants and vegetation that are to be expected in a temperate forest. The forest is unusually dense, and progress off the beaten path is slow. The natives use this to their advantage to avoid both the zombies and the loose flesh golem as well as any visitors to the island. Somehow the trees and other vegetation that survive on the island do so without sunlight."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Native Horrors",
+									"page": 276,
+									"entries": [
+										"The Isle is remarkably safe for a domain, with the only threats posed by Dr. Ramsay, a flesh golem (an at-tempt to create an entirely new body for his daugh-ter Liza, an attempt that failed and subsequently es-caped), and a large number of zombies. The zombies are Ramsay's victims that underwent torture and surgery (all have at least one eye missing, and many miss limbs or both eyes) in his insane attempts to harvest new eyes and invent new procedures. These creatures escaped and mindlessly stalked the island."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Terrain Type",
+									"page": 2797,
+									"entries": [
+										"The Isle is a small island, some 20 miles wide by 30 miles long, with the south side of the island descend-ing towards the sea, while the north rises to cliffs several hundred feet high. Forest covers the north-ern end, and a large lake dominates the center. The main feature of the island is the perpetual darkness. As with the clock in the Ramsay Manor (see below), the whole of the Isle is stuck at the cusp of midnight on All Hallow's Eve. The moon is always visible in the sky, nearing its apex."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Important Landmarks",
+									"page": 277,
+									"entries": [										
+										{
+											"type": "entries",
+											"name": "Ramsay Manor",
+											"page": 277,
+											"entries": [
+												"Ramsay Manor is a large manor sitting on the north-ern edge of the Isle. It is made from strong, but aged wood and it is caked in the dust of a century of disuse. Behind the house is a large hedge maze. The rooms inside are as they were when the tragedy happened a century ago, with the only room that is impeccably clean being that of Liza — Dr. Ramsay takes great care to keep that room EXACTLY as it was for when his daughter comes back to him.  A large grandfather clock stands in the living room of the manor, stuck at one minute to midnight, unable to move until the day the curse is lifted. Like it, the Isle itself is stuck in time and will not move forward until it does.  While the rooms in the manor are unremarkable in themselves, several of the rooms are haunted by the ghosts of Dr. Ramsay's family — the remains of the wife and two sons who he brutally murdered, and later burned in the wood stove to keep warm as he worked on his daughter's body. They are perpetually stuck here, a constant reminder to the doctor of his failure. Under-neath the manor lies true horror, as it is here, in the basement, that the doctor conducts his experiments. A large operating theater is where he conducts his gruesome experiments, never using anesthetic or any other form of sedation on his victims as he carves out their eyes and removes their limbs. This is where his daughter, now in the form of a flesh golem, is strapped to a gurney in a side room, and cells hold the victims that he plans to use, and the ones who have been discarded afterward. Sometimes some of the discard-ed ones escape, but Ramsay never spends time on improving security. It has no importance to him."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "South Lake of the Isle",
+											"page": 277,
+											"entries": [
+												"The lake is quite large and the source of freshwater for the natives of the Isle. It isn't as filled with life as Squirrel Pond to the north of it. It is a favorite hunting ground for the natives as they lie in wait for deer to come here to drink."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Squirrel Pond",
+											"page": 277,
+											"entries": [
+												"Located to the west of Ramsay Manor, Squirrel Pond is the main source of freshwater for the manor itself. It is cleaner than is normal for a pond and teeming with fish like carp and trout. The natives sometimes sneak up here, when food is scarce, to access its resources while attempting to remain unseen by Dr. Ramsay."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "White Falls",
+											"page": 277,
+											"entries": [
+												"White Falls is a series of waterfalls on the western edge of the Isle. The footing is treacherous here and freak gusts of wind rise up out of nowhere, which is strong enough to even knock over powerful creatures."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Towns and villages",
+									"page": 277,
+									"entries": [
+										"None"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Fun Fact",
+									"page": 277,
+									"entries": [
+										"Due to the lack of sunlight on the Isle, the natives are so pale that in other domains they would be consid-ered albinos. In truth, they bear a stark resemblance to many cave-dwelling animals who never see the sun either, including pale skin and oversized eyes."
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/Ahfngb3.jpg"
+									}
+								},
+								{
+									"type": "entries",
+									"name": "Dr. Blake Ramsay",
+									"page": 278,
+									"entries": [
+										{
+											"type": "quote",
+											"entries": [
+												"You have blue eyes! Excellent. Her eyes were blue before she fell.", 
+												"Can you see? I mean, do you have good eyesight ?", 
+												"Don't mind the spiders, several varieties live on the island.",  
+												"Don't change the subject, is your eyesight good ?",  
+												"Actually a large group of spiders is called a clutter, not a swarm, stop changing the subject.",  
+												"CAN YOU SEE ?", 
+												"You can? Excellent, excellent.",  
+												"Now, you are going to feel a few dozen painful stabs, that's the fangs. You will be dead soon.", 
+												"You were dead the second you set foot on my island, but don't worry, your eyes will live on."
+											],
+											"by": "Dr Blake Ramsay"
+										},
+										"Dr Blake Ramsay is a short rotund man with thinning black hair and beady eyes. The doctor dresses in well tailored but functional clothes without decoration. He wears glasses connected to a gold chain that runs to his lapel. Ramsay has quick sure hands that con-stantly twitch as if looking for something to do. Ram-say doesn't like people and never looks someone in the eye when he talks to them. The good doctor is only capable of short conversations with anyone oth-er than his daughter before he becomes irritable and starts looking around, almost as if he wants to flee. If Ramsay becomes angry or annoyed by a chatty guest, he will summon a pack of wolves or swarm of stinging insects to bedevil his guests, and take the opportunity to make his exit.",
+										{
+											"type": "entries",
+											"name": "Background",
+											"page": 278,
+											"entries": [
+												"In the dead of night, Dr Blake Ramsay loaded his wife, Lady Helen Ramsay, and daughter, Lyza, into a boat he had purchased in secret, and fled the domain of Mordentshire, scant minutes ahead of ruthless bounty hunters. Ramsay was a brilliant researcher who was relentless in his search for the truth, and that was why he had to flee. Ramsay cared little for such mundane things as curing a disease or replacing a defective organ without killing the patient. Such things were child's play for the doctor. What Ramsay wanted to discover was the nature and limits of pain.",
+												"How much pain could someone take? A man? A wom-an? A child? What would happen if he removed an organ without anesthesia? What would happen if he removed the pain centers of the brain? What would happen if he stimulated the pain centers beyond what a mortal could possibly endure? Ramsay had to know the answers to these questions.",
+												"Understandably, Blake had trouble finding volunteers to help him with his research. He began to take them from the undesirables of Mordentshire. At first he took in beggars and homeless, but soon he wanted differ-ent patients. Undesirables were sickly and poorly fed. Their ability to withstand pain was limited compared to a healthy patient, so Ramsay began to find his sub-jects from the wealthy. Soon the children of the elite began to disappear, only to reappear two weeks later with their organs removed, their scalps pulled back and their brains pierced with silver needles. The lucky ones were found dead.",
+												"None of the survivors knew what happened. All they remembered was blinding pain and a cold detached voice asking them questions they couldn't possibly answer.",
+												"As Ramsay pursued his research on his unwilling subjects, he began to lose all caution. Things fell apart one night when a cry was raised as he struggled with a surprisingly strong subject. The doctor turned to see nearly a dozen people racing to stop him. They had seen his face, as had his hapless “volunteer”. Des-perate, Ramsay slit the throat of the man and fled into the darkness. He and his family left Mordentshire less than twelve hours later.",
+												"Ramsay and his family sailed for days before reaching a lonely island. Ramsay began to build a house and a laboratory for himself and his family. He was aided by a group of silent islanders that appeared to aid him, then vanished from the island.",
+												"The doctor realized he would never be able to complete his research on this island, and began to look for an heir to complete his work after his passing. Blake was fond of his daughter, who had a brilliant mind, but he wondered if he could produce an heir that was better able to continue his research. Ramsay's wife soon fell pregnant and their second child, Gregory, was born. Gregory's body was covered in weeping sores and his body was sickly and twisted. After a few years, Blake's wife gave birth to a second son, Blake Jr. The child was cold and distant, but never devel-oped his father's brilliance. Blake soon dismissed his son as a dullard and concentrated all his efforts on his daughter. The doctor made his daughter study endlessly, with very few breaks to sleep, eat, or play. It was during one of these breaks that as she took the airs, Ramsay watched her slip from the cliffs that surrounded the island. Blake sprinted down the three hundred foot cliff face, to find the broken body of his daughter.",
+												"Ramsay brought her body back to his laboratory and started working. He would not be robbed of his only chance at immortality by something so trivial as death. For two weeks Blake labored to fix his daughter, re-fusing food and sleep. The accident had driven Blake mad, and in his madness he found strength.",
+												"After two weeks of failure Ramsay heard a voice in the back of his mind telling him to use his wife and sons to fix his daughter. Ramsay raced to his home and slaughtered his family. He brought the corpses back to his lab and carefully repaired his daughter. At midnight her eyes snapped open and she asked what had transpired.Although his daughter seemed like she was alive, Blake was horrified to discover that her eyes, once a deep blue, were now an almost venom-ous green. Blake has tried dozens of times since that night to replace his daughter's eyes, but they always revert to green."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Current Sketch",
+											"page": 279,
+											"entries": [
+												"Despite his intelligence and careful note taking, Ramsay doesn't realize he's been on the Isle for over a century. The doctor believes he has been on the island for a few years at the most, but is desperate to restore his daughter so she can take over his research before he dies. Ramsay continues to kill any trespassers on his island to try and find the eyes he believes will make his daughter whole. When the mists and the sea don't present victims for his daughter, Ramsay spends his time in the lab. His research into the border between life and death is his only true love.",
+												"The ghosts of his wife and son continue to haunt him, interrupting his research and helping anyone foolish or unlucky enough to find the Isle. They cannot phys-ically affect anything on the Isle, but the animals and beasts that live on the Isle find their presence deeply unsettling. The good doctor also possesses a copy of The Revelations of the Prince of Twilight, and an intellect syringe. The Revelations is an ancient tome whose teachings are so heretical that the Church of Ezra and the church of bane consider it heresy. The Church of Ezra condemns anyone who reads the book. The Church of Bane has the book burned and its owner slain or burned with the book.",
+												"The book was written in 702 by Renthon Vorishtok, a monk of the Borcan order. Renthon was a cleric of exceptional ability that claimed he could cure plagues and banish famine through acts of faith alone. At first the Borcan order thought Renthon was a font of holy power, but he soon descended into hubris and mad-ness. Renthon demanded to be the head of the order, and was forced to flee the wrath of angry monks.",
+												"He wondered the domains until he came to the broken shores of Lamordia. The domain was in the depths of winter and Renthon was weak from lack of food and shelter. As night fell Renthon was visited by the Prince of Twilight. The Prince talked to Renthon, telling him how every mortal had been cheated and damaged years ago. Mortals used to possess two souls. The Prince told Renthon how to summon his other soul from the beyond, and instructed the cleric to write his instructions down. Renthon disappeared shortly after the Grand Conjunction, leaving over 1,000 copies of the text in his house.",
+												"The intellect syringe is a syringe with a sturdy six inch needle, magically hardened and sharpened. By driv-ing the needle into the brain of an intelligent creature and drawing out their cerebral fluid (a process which takes about 10 minutes and kills the victim), and then injecting the fluid directly into his own brain, the doctor can increase his intelligence dramatically for a short time."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Darklord's Tactics",
+											"page": 279,
+											"entries": [
+												"The good doctor has no combat abilities, and has no interest in learning. Learning how to fight would take away from his research and Blake doesn't need the skills anyway. Ramsay is effective-ly immortal, even grievous wounds healing instantly. The doctor can step into a shadow and reappear in any shadow on the island. Ramsay can control any monster on the island and enjoys swarming his ene-mies with stinging flies and monstrous hairy spiders. No matter how desperate the combat becomes, Blake will never go for his opponent's eyes, his daughter may need them."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Borders",
+											"page": 279,
+											"entries": [
+												"When Dr Ramsay closes the border, any ship or desperate swimmer attempting to flee disap-pears once it reaches 100 yards from shore and reap-pears on one of the beaches of the Isle. "
+											]
+										},
+										{
+											"name": "Dr. Blake Ramsay",
+											"type": "entries",
+											"page": 280,
+											"entries": [
+												{
+													"type": "statblock",
+													"tag": "creature",
+													"source": "Darklords&DomainsVol1",
+													"name": "Dr. Blake Ramsay"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Chapter 5: The Eastern Sea",
+					"page": 281,
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"I'm drowning in the violent seas……Shallow end of misery, please take me away……Screaming for a place like home."
+							],
+							"by": "Violent Seas, Taproot"
+						},
+						{
+							"type": "entries",
+							"name": "Overview",
+							"page": 281,
+							"entries": [
+								"What lies beneath the surface of dark and violent waters ? Sometimes it is best not to know, but uncertainty fills in the gaps within our minds. What is worse – to know the ter-ror lurking, stalking, and waiting; or to imagine the threat is real, when nothing is there? To see your blood staining the water, your entrails no more than chum for aquatic demons, as you beg for the cold, dark silence of drowning ? Or to watch as the shadows beneath the waves reveal the true size of the leviathan that pursues you ?",
+								"he unrelenting squalls of The Nocturnal Sea have been the downfall of many a daring captain and crew. Forging into the unknown is their calling. Their reluctance to turn back their doom. There is a fine line between bravery and folly, and the violence of the waves obscures it mercilessly. The Domains within The Nocturnal Sea ({@b Vechor, L'île de la Tempête, The Isle of Ravens, Liffe, and the islands of Nebligtode in the nocturnal sea}) are difficult to reach, and even more difficult from which to return. The geographies and climates of the islands, even at the same latitude, vary greatly.",
+								"Preparing an excursion to one is likely to leave a crew un-prepared for reaching the shores of another. When the winds assail the masts and the waters cover the decks, solace in one's own thoughts becomes just as hard to find."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Mistways",
+							"page": 281,
+							"entries": [
+								{
+									"type": "table",
+									"caption": "Mistways on the Eastern Sea",
+									"colLabels": [
+										"Mistway",
+										"Description"
+									],
+									"colStyles": [
+										"col-3 text-center",
+										"col-9"
+									],
+									"rows": [
+										[
+											"{@b The Nocturnal Sea forms the Eastern border of Darkon and Nova Vassa}",
+											"The Nocturnal Sea forms the Eastern border of Darkon and Nova Vassa. Reportedly, navigating the Sea can lead to The Nightmare Lands."
+										],
+										[
+											"{@b The Jackal's Ruse}",
+											"The Jackal's Ruse leads from the Nocturnal Sea into West-ern Har'Akir."
+										],
+										[
+											"{@b The Wake of the Loa}",
+											"The Wake of the Loa connects the Nocturnal Sea with Souragne."
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Chronology",
+							"page": 281,
+							"entries": [
+								{
+									"type": "list",
+									"style": "list-no-bullets",
+									"items": [
+										"600 BC - {@i Easan the Mad} uses living subjects to learn of spir-its. Vechor forms.",
+										"635 BC - {@i Meredoth} poisons and reanimates the Graben Family. Nebligtode forms.",
+										"677 BC - {@i Captain Monette curses his mutinous crew & be-comes a werebat. L'île de la Tempête forms.",
+										"740 BC - {@i THE GRAND CONJUNCTION} {@i Vechor (an Island of Terror)} disappears from The Core.",
+										"750 BC - {@i Meredoth's} continued necromantic research con-tinues. The Nocturnal Sea appears.",
+										"750 BC - {@i Vechor} reappears within the Nocturnal Sea.",
+										"750 BC - {@i Baron Evensong's} desire for magical knowledge  dooms him. Liffe forms.",
+										"750 BC - {@i The Lady of Ravens} uses her flock to kill her 'lover' and his betrothed. The Isle of Ravens forms."
+									]
+								}
+							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://i.imgur.com/dL0BtZg.jpg"
+							}
+						},
+						{
+							"type": "entries",
+							"name": "Isle of the Ravens",
+							"page": 238,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/KQpQ2gp.jpg"
+									}
+								},
+								{
+									"type": "quote",
+									"entries": [
+										"Come, the croaking raven doth bellow for revenge."
+									],
+									"by": "William Shakespeare, Hamlet"
+								},
+								"The Isle of the Ravens is so named for the clouds of ravens that surround it. Created by the vin-dictive woman known only as the Lady of Ravens, it is her vengeance upon the world: to turn the men who angered, hurt, and betrayed her, into ravens. Leav-ing her evermore lonely to wallow in her misery. The Isle of the Ravens is small, so any adventures here should revolve around its main feature: the ravens and the Lady herself, though she may well be out of the reach of many adventurers to face directly. Adven-tures should involve the telling of revenge, of those who came here, spent time with the Lady and inevi-tably betrayed her by trying to leave — suffocating in her attention, and ultimately desperately trying to es-cape, not just in spite of her best efforts, but because of them. Adventurers might be sent here to rescue someone, or even to ask the Lady for ways to revert magical transformation. Nonetheless, a great risk lurks in such a journey. Adventurers will face great dangers and will have to take great sacrifices. After all, the Lady may take a liking to one of them. And those she likes, never get to leave. And if they try, they’ll spend the rest of their lives as ravens, following in her flock.",
+								{
+									"type": "table",
+									"caption": "Isle of the Ravens",
+									"colLabels": [
+										"Detail",
+										"Description"
+									],
+									"colStyles": [
+										"col-3 text-center",
+										"col-9"
+									],
+									"rows": [
+										[
+											"Culture Level",
+											"Dark Ages"
+										],
+										[
+											"Climate & Terrain",
+											"Cold, forest"
+										],
+										[
+											"Year Formed",
+											"750 BC (unknown if it exist ed before this time)"
+										],
+										[
+											"Population",
+											"1"
+										],
+										[
+											"Races (%)",
+											"Human 100%"
+										],
+										[
+											"Languages",
+											"{@language Common|PHB}, {@language Draconic|PHB}"
+										],
+										[
+											"Religions",
+											"None"
+										],
+										[
+											"Government",
+											"None"
+										],
+										[
+											"Ruler(s)",
+											"Lady of Ravens"
+										],
+										[
+											"Darklord(s)",
+											"Lady of Ravens"
+										],
+										[
+											"Nationality",
+											"Unknown"
+										],
+										[
+											"Analog",
+											"Aeaea, Isle of Circe, Homer’s Odyssey"
+										],
+										[
+											"Neighboring domain(s)",
+											"Nocturnal Sea"
+										]
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/BzhQMfN.jpg"
+									}
+								},
+								{
+									"type": "entries",
+									"name": "Local Fauna",
+									"page": 283,
+									"entries": [
+										"The Isle of the Ravens does not have much in the way of wildlife, though the waters around the island are full of fish. The skies, however, are dominated by the ravens that give the island its name, hundreds, if not thousands, of these birds in the sky at any given time. They so completely dominate the Isle that no other birds can be found, not even seagulls from the Noc-turnal Sea. How the ravens sustain themselves is un-known, though most expect that they survive off grubs and worms and whatever they find underneath the bark of the dark trees. There are no known monsters on the island, as none have ever been seen. The few sailors brave enough to sail close to the shore swear that, alongside men,they have seen monsters turned to ravens by the Lady of Ravens, but many suspect that these stories are merely tales or the result of too much drink."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Local Flora",
+									"page": 283,
+									"entries": [
+										"Given the climate, most expect pine trees to be the main tree that dominates the mile wide island, but it is mainly covered by twisted oaks,often hundreds of years old. There are a few tangerine trees, and most expect that there are other trees further in, but none have ever come back to confirm this. There are no other living plants found on the island, though moss and lichen cover many of the trees near the shores."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Native Horrors",
+									"page": 283,
+									"entries": [
+										"None"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Terrain Type",
+									"page": 283,
+									"entries": [
+										"The Isle of Ravens is only a mile in length and width, and completely covered in trees that grow right up to the waterline. The landscape appears to be slightly hilly, rising up near the middle of the island, but it is impossible to tell with any degree of accuracy as the treeline plays havoc with the perspective of any viewer."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Important Landmarks",
+									"page": 283,
+									"entries": [										
+										{
+											"type": "entries",
+											"name": "Tower of the Ravens",
+											"page": 283,
+											"entries": [
+												"Located at the center of the Isle of Ravens, the Tower of the Ravens reaches hundreds of feet into the sky. Built in an old style, it appears rickety and in danger of blowing over in the slightest wind. Nevertheless, witnesses report that it stands rock-solid against even the strongest gale. The tower looks to consist of many levels, though any degree of accuracy is re-stricted to those who go close to the tower, and those unfortunates are never heard from again. Flashes of fell green come from the top level of the tower at night, as if the occupant performs some foul ritual."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Towns and villages",
+									"page": 283,
+									"entries": [
+										"None"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Fun Fact",
+									"page": 283,
+									"entries": [
+										"In spite of the tragic nature of the ravens of the Isle of Ravens, many of those who sail the Nocturnal Sea consider it good luck to have acquired the feather of one of these, as long as they did not kill the raven. They believe it wards off bad luck."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Lady of Ravens",
+									"page": 284,
+									"entries": [
+										{
+											"type": "quote",
+											"entries": [
+												"I know you think I’m a useless old waste, but I’ve been here longer than most captains. I saw plenty of pretty boys like you come and go. Take my advice and get yourself a raven. Take care of it. Make sure it’s fed and watered, even if it means you have to go without.",
+												"Then pray you never go near that island. If you do, release the raven and pray she likes it more than you."
+											],
+											"by": "Morgan “One Eye” LeBlanc. Quartermaster on the merchant ship “Rellin’s Ghost"
+										},
+										"No one knows the Lady of Raven’s true name, includ-ing the Lady herself. She is a petite woman with long dark hair styled around elaborate combs. Her eyes are the same color as her hair and both are a perfect com-plement to her pale skin. Her demeanor is cold and haughty. The Lady of Ravens looks at people the same way she might look at something she just stepped in. The Lady rarely allows her icy demeanor to crack, and when she does, she can stun people with the force of her personality. Her emotional highs and lows are cap-tivating, to behold. She can dominate a group of peo-ple through sheer force of personality alone. The Lady is more likely to relax around the isle of ravens.",
+										{
+											"type": "entries",
+											"name": "Background",
+											"page": 284,
+											"entries": [
+												"The Lady of Ravens was born into a world of silence and isolation. She was the last in a long line of nobility that had long fallen into inbreed-ing and insanity. Her mother died when the Lady was a toddler and the Lady of Ravens neither remembers her nor cares. The Lady’s father spent his days in a drugged haze and wandered the halls of the castle, talking to unseen spirits and friends long dead. The Lady never talked to the servants that raised her or took care of her day to day needs,not considering them important enough to matter in any way. The Lady despised the other children that lived in the castle, and they soon learned to avoid her altogether. The Lady of Raven’s only joy was the Tower of Flint. A 400 foot tall edifice of gray stone that sat in the middle of her cas-tle, hundreds of ravens roosted in the tower. The Lady of Ravens had inherited the ability to talk to ravens, passed down by her mother. The Lady spent hours in the tower, telling the ravens stories, and listening to the tales they told her in return. After her father’s death the Lady rarely left the tower, spending days in conversa-tion with her ravens. This was the way of things un-til the Lady reached her late teens. Looking from the windows of her tower, she spotted a handsome young man. The Lady became obsessed with the man, the son of a servant, and set her ravens to follow his every move. When he departed to fight in some nameless war, she was devastated, barely sleeping or eating for a year. She was overjoyed to hear the news from one of her ravens—the man had returned. Her joy turned to rage when the young man immediately fell into the arms of another woman.. Devastated and enraged, the Lady sent her ravens to tear the young lovers apart. Grief stricken, the Lady spent several days in her tower mourning the death of her obsession. When she left she found the Tower of Flint was standing alone on an isle in the middle of a vast sea. To make matters worse, the Lady found she could not remember her own name. Even more devastating, although she could command the ravens of her isle with an act of will, she could no longer talk to her friends."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Current Sketch",
+											"page": 284,
+											"entries": [
+												"The Lady of Ravens is obsessed with talking to her beloved raven friends again. She believes that finding her lost name is the key to this, as the abili-ty was passed down from her ancestors, and her name represents her ancestry. If a group of humans lands in the Lady’s isle and appears to be well learned or intelli-gent enough to aid the Lady in her quest, she may offer them treasure or hospitality if they agree to aid her. If they don’t agree to help the Lady then she will force them to serve with her magic. The Lady has magical means to track and communicate with her minions. Oc-casionally, the Lady of Ravens becomes enamoured with a handsome sailor or adventurer. That individual is gifted a raven as a mark of the Lady’s favor. While the raven is alive, that individual will have great fortune in the seas around the Isle of Ravens. The individual will amass great wealth and avoid the worst storms, so long as that raven survives. If the raven dies, the indi-vidual loses the Lady’s favor instantly, and all his good luck turns to ash—their treasure will be stolen, food will rot in their mouth, and their friends will abandon them or die. Eventually the Lady of Ravens will appear, and change her paramour into a raven to replace her lost friend that she entrusted to that sailor. No raven gifted in this way has lived longer than two months."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Darklord's Tactics",
+											"page": 284,
+											"entries": [
+												"Combat revolts the Lady. If she believes her opponents have nothing to offer her, she will use her Circe’s Eye ability to change them into ra-vens as a warning to others. If pressed into actual com-bat, the Lady will use her powerful spells to crush her enemies from afar. If hard pressed, she will command her ravens to attack her foes, but is loath to put her precious birds in danger."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Borders",
+											"page": 284,
+											"entries": [
+												"When the Lady of Ravens closes her borders, storms encircle her isle. Any attempt to move through the storm is hopeless. The winds and lashing waves will blind and disorient anyone attempting to cross and push them back to the Isle of Ravens."
+											]
+										},
+										{
+											"name": "Lady of Ravens",
+											"type": "entries",
+											"page": 285,
+											"entries": [
+												{
+													"type": "statblock",
+													"tag": "creature",
+													"source": "Darklords&DomainsVol1",
+													"name": "Lady of Ravens"
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/o2gdnVo.jpg"
+									}
 								}
 							]
 						}
@@ -36300,7 +37448,7 @@
 				{
 					"name": "Mighty Swing",
 					"entries": [
-						"When Stezen attacks without moving during his turn, he makes his rapier attacks with advantage. "
+						"When Stezen attacks without moving during his turn, he makes his rapier attacks with advantage."
 					]
 				},
 				{
@@ -36318,25 +37466,25 @@
 				{
 					"name": "Indomitable",
 					"entries": [
-						"Stezen can reroll a saving throw that he fails. If he does so, he must use the new roll, and can't use this feature again until he finishes a long rest. "
+						"Stezen can reroll a saving throw that he fails. If he does so, he must use the new roll, and can't use this feature again until he finishes a long rest."
 					]
 				},
 				{
 					"name": "Improved Critical",
 					"entries": [
-						"Stezen's weapon attacks score a critical hit on a roll of 19 or 20. "
+						"Stezen's weapon attacks score a critical hit on a roll of 19 or 20."
 					]
 				},
 				{
 					"name": "Mobile",
 					"entries": [
-						"When Stezen makes a melee attack against a creature, he doesn't provoke opportunity attacks from that creature for the rest of the turn, whether he hits or not. Additionally, when Stezen uses the {@action Dash} action, difficult terrain doesn't cost him extra movement on that turn. "
+						"When Stezen makes a melee attack against a creature, he doesn't provoke opportunity attacks from that creature for the rest of the turn, whether he hits or not. Additionally, when Stezen uses the {@action Dash} action, difficult terrain doesn't cost him extra movement on that turn."
 					]
 				},
 				{
 					"name": "Second Wind",
 					"entries": [
-						"Stezen has a limited well of stamina that he can draw on to protect himself from harm. On his turn, he can use a bonus action to regain hit points equal to {@dice 1d10 + 10}. Once he uses this feature, he must finish a short or long rest before he can use it again. "
+						"Stezen has a limited well of stamina that he can draw on to protect himself from harm. On his turn, he can use a bonus action to regain hit points equal to {@dice 1d10 + 10}. Once he uses this feature, he must finish a short or long rest before he can use it again."
 					]
 				},
 				{
@@ -36348,19 +37496,19 @@
 				{
 					"name": "Painting's Regeneration",
 					"entries": [
-						"Stezen regains 5 hit points at the start of his turn if he has at least 1 hit point. Stezen is able to restore lost limbs and body parts. Even if he is dismembered and burned, his body will fully reform in 24 hours in front of his painting. After he has reformed, his ability to restore body parts and regeneration ceases to function for 5 hours. If he is slain in this time period, he is permanently destroyed. "
+						"Stezen regains 5 hit points at the start of his turn if he has at least 1 hit point. Stezen is able to restore lost limbs and body parts. Even if he is dismembered and burned, his body will fully reform in 24 hours in front of his painting. After he has reformed, his ability to restore body parts and regeneration ceases to function for 5 hours. If he is slain in this time period, he is permanently destroyed."
 					]
 				},
 				{
 					"name": "Drain for Immortality",
 					"entries": [
-						"Stezen does not age. Not a single gray hair has graced his head since he appeared in Ravenloft. Once every three months he can use his magic portrait to drain the life force of up to 50 creatures that gaze at the painting. This effect is similar to the magic jar spell. All creatures that gaze at the painting while Stezen makes his wish for longevity must succeed on a {@dc 20} charisma saving throw or die. A creature wearing an amulet of health is immune to this effect. Stezen gains an extra week of life per drained creature and his alignment changes to chaotic evil and his Charisma becomes 17 for one day for each drained creature. "
+						"Stezen does not age. Not a single gray hair has graced his head since he appeared in Ravenloft. Once every three months he can use his magic portrait to drain the life force of up to 50 creatures that gaze at the painting. This effect is similar to the magic jar spell. All creatures that gaze at the painting while Stezen makes his wish for longevity must succeed on a {@dc 20} charisma saving throw or die. A creature wearing an amulet of health is immune to this effect. Stezen gains an extra week of life per drained creature and his alignment changes to chaotic evil and his Charisma becomes 17 for one day for each drained creature."
 					]
 				},
 				{
 					"name": "Unnatural Resilience",
 					"entries": [
-						"Stezen is immune to disease and the effects of aging. In addition, he cannot bleed and Umbral Gray paint does not affect him. "
+						"Stezen is immune to disease and the effects of aging. In addition, he cannot bleed and Umbral Gray paint does not affect him."
 					]
 				},
 				{
@@ -36385,7 +37533,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Stezen makes two rapier attacks and one as a bonus action. "
+						"Stezen makes two rapier attacks and one as a bonus action."
 					]
 				},
 				{
@@ -36402,7 +37550,7 @@
 				{
 					"name": "Second Wind",
 					"entries": [
-						"Stezen has a limited well of stamina that he can draw on to protect himself from harm. On his turn, he can use a bonus action to regain hit points equal to {@dice 1d10 + 10}. Once he uses this feature, he must finish a short or long rest before he can use it again. "
+						"Stezen has a limited well of stamina that he can draw on to protect himself from harm. On his turn, he can use a bonus action to regain hit points equal to {@dice 1d10 + 10}. Once he uses this feature, he must finish a short or long rest before he can use it again."
 					]
 				}
 			],
@@ -36414,7 +37562,7 @@
 				{
 					"name": "Redirect Attack",
 					"entries": [
-						"When a creature that Stezen can see targets him with an attack, he can choose another enemy within 5 feet of him. They swap places, and the chosen enemy crea-ture becomes the target of the attack instead. "
+						"When a creature that Stezen can see targets him with an attack, he can choose another enemy within 5 feet of him. They swap places, and the chosen enemy crea-ture becomes the target of the attack instead."
 					]
 				}
 			],
@@ -36510,6 +37658,922 @@
 						"href": {
 							"type": "external",
 							"url": "https://i.imgur.com/0VcdXww.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Frantisek Markov",
+			"size": [
+				"H"
+			],
+			"type": "monstrosity",
+			"source": "Darklords&DomainsVol1",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "25d12 + 125",
+				"average": 287
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40
+			},
+			"str": 23,
+			"dex": 14,
+			"con": 20,
+			"int": 18,
+			"wis": 13,
+			"cha": 16,
+			"passive": 16,
+			"cr": "13",
+			"shortName": "Frantisek Markov",
+			"page": 268,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languages": [
+				"Balok",
+				"Common",
+				"Mordentish",
+				"Tepestani",
+				"Vaasi"
+			],
+			"languageTags": [
+				"C"
+			],
+			"save": {
+				"con": "+10",
+				"int": "+9",
+				"wis": "+6"
+			},
+			"skill": {
+				"athletics": "+11",
+				"deception": "+8",
+				"medicine": "+11",
+				"perception": "+6",
+				"performance": "+8",
+				"persuasion": "+8"
+			},
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't adamantine",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Blessing of the Mists",
+					"entries": [
+						"Frantisek is shielded against divination magic, as though protected by a nondetection spell."
+					]
+				},
+				{
+					"name": "Keen Senses",
+					"entries": [
+						"Frantisek has advantage on Wisdom (Perception) checks that rely on sight, hearing, or smell."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Frantisek fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Frantisek has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Mimicry",
+					"entries": [
+						"Frantisek can mimic simple sounds he has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful {@dc 17} Wisdom (Insight) check."
+					]
+				},
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"Frantisek can use his action to polymorph into any Huge or smaller beast with a CR equal to or lower than his own. When he does so, he regains {@dice 2d6} hit points and gains the statistics of the chosen animal with the following exceptions.",
+						{
+							"type": "list",
+							"items": [
+								"He retains his Intelligence, Wisdom, and Charisma scores.",
+								"He always has his own face and not the face of the animal. Because of this, Frantisek can never have a bite attack.",
+								"He can only take the Move and Frightening Gaze Legendary Actions.",
+								"He retains his own hit points but gains temporary hit points equal to twice the chosen animal form's CR. These temporary hit points disappear if Frantisek changes form again."
+							]
+						}
+					]
+				},
+				{
+					"name": "Rampage",
+					"entries": [
+						"When Frantisek reduces a creature to 0 hit points with a melee attack on its turn, Frantisek can take a bonus action to move up to half his speed and make an unarmed strike attack."
+					]
+				},
+				{
+					"name": "Reckless",
+					"entries": [
+						"At the start of his turn, Frantisek can gain advantage on all melee weapon attack rolls he makes during that turn, but attack rolls against him have advantage until the start of his next turn."
+					]
+				},
+				{
+					"name": "Create Broken Ones",
+					"entries": [
+						"Markov can transform any Medium-size or Large animal, beast or humanoid into a broken one (see appendix). The creature must be helpless, and Markov must de-vote at least eight hours a day to the meticulous surgeries that the transformation requires. The process takes {@dice 3d6} days, after which the creature emerges as a broken one. Creatures rescued after the transformation has begun but before it is complete suffer {@dice 1d4} permanent Constitution drain each day they are out of Markov's care."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Mimicry",
+				"Rampage",
+				"Reckless",
+				"Shapechanger"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Frantisek makes three unarmed strikes or hurls two rocks."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}22 ({@damage 3d10 + 6}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Rock",
+					"entries": [
+						"{@atk rw} {@hit 11} to hit, range 50/100 ft., one target. {@h}30 ({@damage 7d6 + 6}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 19} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Rampage",
+					"entries": [
+						"When Frantisek reduces a creature to 0 hit points with a melee attack on its turn, Frantisek can take a bonus action to move up to half his speed and make an unarmed strike attack."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"frightened",
+				"prone"
+			],
+			"legendaryGroup": {
+				"name": "Darklords&DomainsVol1LairActionsFrantisekMarkov",
+				"source": "Darklords&DomainsVol1"
+			},
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"Frantisek can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Frantisek regains spent legendary actions at the start of his turn."
+			],
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"Frantisek moves up to his speed."
+					]
+				},
+				{
+					"name": "Fist Attack",
+					"entries": [
+						"Frantisek makes an unarmed strike."
+					]
+				},
+				{
+					"name": "Rock Attack (Costs 2 Actions)",
+					"entries": [
+						"Frantisek hurls a rock."
+					]
+				},
+				{
+					"name": "Frightening Gaze (Costs 2 Actions)",
+					"entries": [
+						"Frantisek fixes his gaze on one creature he can see within 10 feet of him. The target must succeed on a {@dc 17} Wisdom saving throw against this magic or become {@condition frightened} for 1 minute. The {@condition frightened} target can re-peat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a target's saving throw is success-ful or the effect ends for it, the target is immune to Frantisek's gaze for the next 24 hours."
+					]
+				}
+			],
+			"damageTags": [
+				"B"
+			],
+			"savingThrowForced": [
+				"strength",
+				"wisdom"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/AORI9Cq.png"
+			},
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"Hidden deep within the bowels of every living creature is the secret of life. By mastering the secret of life I will find the cure for my...condition.",
+							"So really, your sacrifice is for the greater good. You may be hiding the secrets to all life some-where in your heart or stomach. At the very least I may learn how you handle pain.",
+							"Even that will be worth learning."
+						],
+						"by": "Frantisek Markov"
+					},
+					"Frantisek Markov is a tall man with broad features. He stands well over six feet tall but walks hunched over, sometimes even using his heavily muscled arms for support. He wears thick robes and leather gloves. Markov's eyes are black, perfectly matching the thick black hair he keeps slicked back. Frantisek talks slow-ly and carefully considers his words before speaking. If he is talking to someone that knows very little about the sciences, especially biology or chemistry, he will speak very slowly and use small words, as if the per-son he is speaking to is a particularly dense child.",
+					{
+						"type": "entries",
+						"name": "Background",
+						"page": 266,
+						"entries": [
+							"The Markovs were a minor noble family in Barovia when it was taken by the Dark Powers to form the first domain of Ravenloft. Several Mar-kovs were in Castle Ravenloft the night that Strahd became a vampire and slew his brother. The lucky Markovs in the castle were slain when Strahd vented his rage and bloodlust on the wedding guests. The unlucky ones disappeared into the bowels of the cas-tle and were never seen again.",
+							"The remaining Markovs fled the village of Barovia and settled in and around the village of Vallaki. It was on a small pig farm outside Vallaki that Frantisek Markov was born. Frantisek was an intelligent child, quick to outpace the tutors his family could afford, especially in the sciences of biology and chemistry. Despite his quick and eager mind, Frantisek seemed doomed to the life of a pig farmer.",
+							"Perhaps because of his interest in biology or because Frantisek seemed to have a certain way with knives, his family allowed him to butcher the hogs that were ready to go to market. Butchering the hogs gave the young boy a chance to study anatomy in a far more real way than studying books, and Frantisek began to indulge his curiosity. At first he would choose one pig from a herd and see how long it could last before the pain of being butchered killed it. He perfected a variety of alchemical concoctions that would paralyze the poor animal while he sliced it open. Frantisek made sure his custom elixirs wouldn't dull the animal's pain, lest some secret of its anatomy escape his notice. Soon he was vivisecting two and three hogs at the same time while happily and efficiently butchering the rest of the herd for sale. Once Frantisek had learned all he could of hogs, he began to seek new prey.",
+							"At first, it was small animals around his farm, birds, cats, dogs, and rats. Then Frantisek would go into the woods and set traps for the animals that lived there. Soon he was experimenting on wolves, squirrels and even the occasional bear. As Frantisek grew older, strangers that visited his village sometimes disap-peared. Their clothes and money would be found in the woods around Vallaki. The villagers assumed the fools had tried to save some coin by spending the night in the woods around the village and paid for it with their lives. The truth was far worse. Frantisek started his greatest experiments, grafting parts from one creature to another. The surgery proved fatal for both creatures, but Frantisek never worried. The ones that lived were abandoned to the forest, and the ones that didn't were given to the pigs.",
+							"If his family knew of his experiments, they indulged them. It gave the boy something to do and good butchers were hard to find. If nothing else Frantisek was a talented butcher.",
+							"When he was a young man his family arranged for him to marry one of the local women in Vallaki. Lud-milla was beautiful, friendly, and several of her suitors were crushed to see her married to a butcher, even if his family was well connected.",
+							"Frantisek took money he had saved from butchering animals for the local farmers and the occasional trust-ing stranger and opened a butcher shop in the village. At first things went well. Frantisek and Ludmilla made a decent living carving animals and always had some-thing to eat, and when the butcher shop closed Fran-tisek retreated to his labs to continue his experiments. At first Ludmilla was glad to be away from her distant and intimidating husband, but soon became curious about his experiments.",
+							"One night Frantisek, usually so careful, left the door to his laboratory unlocked. His wife, overcome with curi-osity, opened the door and screamed at what she saw inside. Dead animals, twitching halves of beasts and unholy combinations of animals no god ever dreamed of stared at her with pleading eyes. They were silently begging her for release from a life of pain. She only stopped screaming when she saw her husband, star-ing at her, eyes wild with rage. Lady Markov berated her husband and threatened to tell the village of Fran-tisek's sick secrets. Frantisek grabbed his wife and drug her into his lab, slamming the door shut. She lived for three days. When Ludmilla could no longer serve his curiosity, Markov dumped her body in the forest as he had with so many other victims, but it proved to be a nearly fatal mistake. At first hunters thought they had found a horribly mangled beast, but when they moved closer they saw the once familiar face on the butchered corpse. Ludmilla was pretty and popular, and when her corpse was found, the village wanted answers. They came to the butcher shop at night and broke down the door. Frantisek was found in his lab and the dozens of missing travelers, hun-dreds of dead mutilated animals, and unnumbered vile experiments suddenly had a cause. The mob dragged Frantisek into the village square and began pelting him with stones. Markov, desperate to escape, charged through the mob and dashed headlong into the mists. When the mists finally cleared, he had been given his domain, Markovia."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Current Sketch",
+						"page": 267,
+						"entries": [
+							"Frantisek is a master at surgically vivisecting creatures and combining the best and worst aspects into one hideous whole. The mon-strous creatures Frantisek creates live, even though they shouldn't, and spend their lives in hideous pain. The creatures won't attack Markov, but any creature not given Markov's protection will be immediately at-tacked.",
+							"Markov is desperate to get his human body back. He frantically operates on creatures he finds on his island to try and uncover their secrets. He is convinced that the Dark Powers have hidden the secrets of his human form inside one of the animals on his island. Frantisek spends long hours in his labs dissecting creatures, making new monsters, and desperately searching for a cure for his condition. Since Markovia was flung into the Sea of Sorrows during the Grand Conjunction, his test subjects have become increasingly few and far between. Because of this, Markov is careful to make sure his subjects are thoroughly vivisected, and every inch of their anatomy explored and observed before he combines them with other creatures and casts them aside. Markov descended into madness long ago, and the dark power will never let his research succeed."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Darklord's Tactics",
+						"page": 267,
+						"entries": [
+							"The Dark Powers have gifted Markov with the ability to shapechange into any beast at will. Markov gains the Strength, Dexterity, and Con-stitution plus any special abilities of his new form, while retaining his Intelligence, Wisdom, and Charisma. Mar-kov's attacks vary with his form, but he is a master at playing to the strengths of his many forms. No matter what form he chooses, Markov's head always remains the same, meaning he can never have a bite attack or any other ability associated with a bite attack (venom for instance). Markov can no longer assume his original form, but usually chooses the shape of a gorilla. Mar-kov tries to pass himself off as a massive human and hides his body under thick robes and heavy gloves."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Borders",
+						"page": 267,
+						"entries": [
+							"When Markov closes the borders, the seas around Markovia become rough and push any boats back towards the rocky shore. Sharks swim in the waters waiting for any sail-or unfortunate enough to fall into the water."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/C0PL8ta.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Captain Pieter van Riese",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "undead",
+				"tags": [
+					"human"
+				]
+			},
+			"source": "Darklords&DomainsVol1",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 30",
+				"average": 75
+			},
+			"speed": {
+				"walk": 30,
+				"fly": {
+					"number": 40,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 17,
+			"int": 14,
+			"wis": 9,
+			"cha": 16,
+			"passive": 9,
+			"cr": "9",
+			"shortName": "Captain Pieter van Riese",
+			"page": 273,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"save": {
+				"con": "+7",
+				"cha": "+7"
+			},
+			"skill": {
+				"history": "+6",
+				"nature": "+6",
+				"stealth": "+6",
+				"survival": "+3",
+				"investigation": "+6"
+			},
+			"resist": [
+				{
+					"resist": [
+						"acid",
+						"fire",
+						"lightning"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"cold",
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"trait": [
+				{
+					"name": "Summon Bowlyns",
+					"entries": [
+						"Pieter calls upon the damned spirits of the sailors that were doomed in the seas to assist him. {@dice 2d4+1} bowlyns appear to assist him. This ability can be used two times per day. "
+					]
+				},
+				{
+					"name": "Summon Shadows (1/Day)",
+					"entries": [
+						"Pieter draws power from the negative energy of the seas to summon {@dice 1d6} {@creature shadow|MM} monsters to aid him. This ability can be used once per day."
+					]
+				},
+				{
+					"name": "Misty Escape",
+					"entries": [
+						"Pieter's instinctive connection to the Mists allows him to escape from the danger of certain area effects, such as a red dragon's fiery-breath or a fireball spell. When he is subjected to an effect that allows him to make a Dex-terity saving throw to take only half damage, if he succeeds on the saving throw he may use his reaction to Misty Step to the nearest unoccupied square, up to 20ft away and instead he takes no damage. "
+					]
+				},
+				{
+					"name": "Misty Vision",
+					"entries": [
+						"Fighting in heavily obscured areas no longer troubles Pieter. Pieter can see through mist as if he had a 15ft blindsight. "
+					]
+				},
+				{
+					"name": "Misty Form",
+					"entries": [
+						"Pieter moves so fluidly through the Mist, it is difficult for his foes to track him. When he uses Misty Step, he may then cast mirror image as part of the same bonus action without requiring spell components. These duplicates move with Pieter as normal. He may use this ability three times per day. "
+					]
+				},
+				{
+					"name": "Mist Clone",
+					"entries": [
+						"Pieter can shape the Mist around him to form a tangible duplicate of himself to aid him in combat. As an action, choose an unoccupied space within 20ft. A clone of Pieter appears in that square and is physically identical to him in appearance, including carried equipment— with the exception that all carried equipment on the clone has no magical properties. This ability lasts for 1 minute and cannot be used again until he finishes a long rest. The clone's ability scores, hit points, proficiency bonus and AC are identical to Pieter's stats at the moment of activating this ability, excluding any additional magic bonus(es) he might have had active— with the exception that the damage it deals is mag-ical for the purpose overcoming resistance and immunity to nonmagical attacks and damage.In addition it uses Pieter's Charisma modifier for all attack and damage rolls, and any attacks that the clone makes use only the base damage for the weapon it is wielding, regardless if the weapon(s) you were wielding had additional magical properties when ac-tivating this ability. If the clone is required to make a saving throw, roll a {@dice d20} and add 3 to determine whether it suc-ceeds or fails. As the clone is formed through Pieter's deep connection to the Mist, it can fight alongside him without requiring actions to issue it commands. Acting on Pieter's turn, he may have the duplicate take the following actions, in addition to its move action: The clone can take the attack action and can take a bonus action to attack if Pieter was wielding two weapons when he created the duplicate. The clone can interact with an object. The clone can Misty Step. The clone can take the Help action. The clone cannot speak or take any additional actions, reaction, or bonus actions other than the ones listed above, except actions taken in an attempt to free itself from a spell or condition— like escap-ing a grapple or trying to break free from a web spell. If the clone's hit points drop to 0 or if a spell or effect would cause it to no longer be on the same plane of existence as Pieter, it is destroyed. It is also immune to being {@condition charmed}, {@condition frightened}, {@condition petrified}, {@condition poisoned} and {@condition paralyzed}. "
+					]
+				},
+				{
+					"name": "Ethereal Sight",
+					"entries": [
+						"Pieter can see 60 feet into the Ethereal Plane when it is on the Material Plane, and vice versa. "
+					]
+				},
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"Pieter can move through other creatures and objects as if they were difficult terrain. He takes 5 ({@damage 1d10}) force damage if he ends his turn inside an object. "
+					]
+				},
+				{
+					"name": "Cloak of Mists",
+					"entries": [
+						"Tendrils of mist form and constantly wrap around Pieter protectively. Creatures targeting Pieter with ranged attacks suffer disadvantage on their attack rolls. A spell that creates strong winds such as gust stops the cloak from protecting the wearer for {@dice 1d4} turns. "
+					]
+				}
+			],
+			"traitTags": [
+				"Incorporeal Movement"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Pieter can manipulate the mists found in the seas. Pieter's innate spellcasting ability is Charisma (spell save {@dc 15}, +7 to hit with spell attacks). He can innately cast the following spells, requiring no material components: "
+					],
+					"will": [
+						"{@spell fog cloud|PHB}",
+						"{@spell misty step|PHB}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell dominate person|PHB}",
+							"{@spell solid fog|Darklords&DomainsVol1}",
+							"{@spell tidal wave|XGE}",
+							"{@spell wall of fog|Darklords&DomainsVol1}"
+						],
+						"1e": [
+							"{@spell cloudkill|PHB}",
+							"{@spell conjure elemental|PHB|conjure air elemental}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"bonus": [
+				{
+					"name": "Misty Form",
+					"entries": [
+						"Pieter moves so fluidly through the Mist, it is difficult for his foes to track him. When he uses Misty Step, he may then cast mirror image as part of the same bonus action without requiring spell components. These duplicates move with Pieter as normal. He may use this ability three times per day. "
+					]
+				}
+			],
+			"attachedItems": [
+				"+1 shortsword|dmg"
+			],
+			"action": [
+				{
+					"name": "Shortsword +1",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Withering Touch.",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}18 ({@damage 4d6 + 4}) necrotic damage, plus 6 ({@damage 1d12}) cold damage."
+					]
+				},
+				{
+					"name": "Pieter's Visage",
+					"entries": [
+						"Each non-undead creature within 60 feet of Pieter that can see him must succeed on a {@dc 15} Wisdom saving throw or be {@condition frightened} for 1 minute. If the save fails by 5 or more, the target also ages {@dice 1d4 × 10} years. A fright-ened target can repeat the saving throw at the end of each of its turns, ending the {@condition frightened} condition on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to Pieter's Visage for the next 24 hours. The aging effect can be reversed with a great-er restoration spell, but only within 24 hours of it occurring. If a target dies from this effect, they are transformed into Bowlyns and become part of Pieter's crew after 24 hours. "
+					]
+				},
+				{
+					"name": "Etherealness",
+					"entries": [
+						"Pieter enters the Ethereal Plane from the Material Plane, or vice versa. He is visible on the Material Plane while he is in the Border Ethereal, and vice versa, yet he can't affect or be affected by anything on the other plane. "
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"reaction": [
+				{
+					"name": "Misty Veil",
+					"entries": [
+						"Pieter adds 2 to his AC against one melee attack that would hit him. To do so, Pieter must be able to see the attacker."
+					]
+				}
+			],
+			"damageTags": [
+				"C",
+				"N",
+				"O",
+				"P"
+			],
+			"damageTagsSpell": [
+				"B",
+				"I"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/gQIsidf.png"
+			},
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"I do not fail.",
+							"I have been through fields of ice as far as the eye can see. I have braved storms that froze men to the decks of my ship.",
+							"I do not fail.",
+							"I do not know where my ship and I sail. I do not know where this damnable sea and its shifting , floating islands comes from, but I will tame it.",
+							"I will find its secrets and I will bend it to my will.", 
+							"I do not fail."
+						],
+						"by": "Pieter van Riese"
+					},
+					"In life Pieter van Riese was a broad shouldered man with weathered features, his dark eyes constantly scanning the horizon. His hair and beard were dark, a touch of grey appearing at the temples and at his mouth's corners. In death he appears much the same, yet a chill clings to him, and his hair and beard shift and move as if he was in a violent storm. When he speaks his breath is visible, as if he talks in the depths of winter. Despite this, Pieter never complains of the cold and seems comfortable, no matter the weather.",
+					"Captain Riese's ship, the {@i Relentless}, is an extremely well armed and maintained merchant ship. Its timbers have been worn by years of harsh weather and the sea. Like its master, the ship is an apparition, and per-ceptive individuals see through the ship and captain, especially at the hours of dawn and dusk.",
+					{
+						"type": "entries",
+						"name": "Background",
+						"page": 272,
+						"entries": [
+							"Captain Pieter van Riese spent his life on the open sea, and continues to do so in death.. He started as a cabin boy serving on a merchant ship hail-ing from the Netherlands of Gothic Earth, and through hard work and boundless ambition, slowly rose up the ranks of sailors until he could afford to purchase and outfit his own ship. This, Riese christened the {@i Relentless}. The Captain seemed to have an innate understanding of the ocean and sailing,predicting storms and sailing his ship through the worst of them without losing a single sailor. Despite his mastery of the sea, Riese cut a haunting figure amongst the sail-ors of Gothic Earth. Discipline was strictly enforced on his ship, with harsh punishment meted out for the smallest of infractions. Any sailor that questioned the captain or his methods would soon find themselves bound hand and foot and thrown to the sharks that followed the {@i Relentless}.",
+							"Riese was a wealthy man, but money meant nothing to him. His sole cares were his ship and his reputa-tionfor doing the impossible. It was this reputation that would spell Riese's doom.",
+							"In a forgotten port in the Far East of Gothic Earth, whilst unloading cargo, Riese first heard of the leg-endary Northwest Passage. The means to travel from Europe to Asia by traveling through the icy waters north of the American continent, a ship that could find that passage could transport cargo from Europe to Asia in less than half the time of other ships, and gain fame and untold wealth.",
+							"Riese attempted to find the Northwest Passage twice, but crushing icebergs and violent blizzards made him turn back each time. For Riese, this was completely unacceptable. Riese had sailed his ship through hur-ricanes, pirates, and doldrums, only to be defeated by ice. He began to obsess about finding the passage. When he sailed to find the passage a third time, Riese would not be defeated.",
+							"As ice and snow closed in around the {@i Relentless}, Riese ordered the ship onward. The crew grew ner-vous as the ice closed in, and lost their nerve when the {@i Relentless} was battered by high seas, icebergs the size of mountains threatening to smash the ship to tinder. A blizzard was closing in, and already the air was freezing, as the snow fell heavily. The crew appointed a spokesman to take their concerns to the captain. They wished to abandon the {@i Relentless}, and man lifeboats back to safety and civilization.",
+							"Riese was far past simple enragement. He strangled the spokesman with his bare hands, and told the crew that they would either find the passage or die trying. The crew, defeated, returned to their positions and prayed to whatever gods they held dear. The blizzard grew stronger and stronger, the air seemed to freeze and snow fell so thick it was a white sheet that ob-scured everything.",
+							"Riese, realizing he and his ship were doomed, called out to any being that would listen, offering up the lives of his men if any entity would allow himself and the {@i Relentless} to make the passage. Something dark reached out from the edges of sanity, accept-ing Riese's offer. The crew was torn from the ship, and the {@i Relentless} and her captain lost their physical forms and became apparitions sailing through a mist bound sea. When the mist cleared Riese found him-self in a new sea."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Current Sketch",
+						"page": 272,
+						"entries": [
+							"Riese travels the Sea of Sorrows endlessly. He seeks to return to Gothic Earth and prove that the Northwest Passage is real and that he discovered it. He charts the islands he finds in the Sea of Sorrows, but this relatively simple task constantly vexes him.",
+							"The island of the Sea of Sorrow moves. Riese constantly corrects his charts, only to sail further and find the same island in a new location in a different area of the sea. As a proud sailor and ship master, this is intolerable. Riese cannot leave the {@i Relentless}, nor can the ship leave the sea. The {@i Relentless} endlessly crisscrosses the Sea of Sorrows, desperately trying to make sense of the madness.",
+							"For sailors on the Sea of Sorrows, the {@i Relentless} is a dark omen of storms and bloodshed. Haunted sto-ries are told of the {@i Relentless} appearing just before plague descends on a ship, rogue waves shatter the hull, or a storm appears on the horizon.",
+							"When Captain Riese wills it, the {@i Relentless} can be-come solid and can even carry cargo and passengers for an extended period of time. Riese can control the ship with an act of will, the sails adjusting themselves, and the ropes tying and untying themselves from the rigging at his command. Riese will not act like this is unusual or respond to any questions about it."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Darklord's Tactics",
+						"page": 272,
+						"entries": [
+							"Riese is a fearless combatant. His touch freezes skin, and saps the heat from the bones of his victims. Riese attacks with a scooping motion that tears large gobbets of flesh from his victim. Riese can dominate the minds of any creature that meets his gaze, and uses these poor fools as his lackeys on land.",
+							"Any creature seeing the {@i Relentless} will be frozen in fear at the dire portents that surround the ship. Some unfortunate victims will stay that way until the ship passes from sight."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Borders",
+						"page": 272,
+						"entries": [
+							"When Riese closes the borders of the Sea of Sorrows, the sea is surrounded by a thick wall of fog. Ships that sail into the wall find themselves leav-ing it seconds, hours, or weeks later in a different part of the Sea. Riese can prevent ships from reaching the islands in the Sea of Sorrows, but cannot land on the islands themselves, or enter the domains of other darklords and Riese has no control over them."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/LtpC3r2.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Dr. Blake Ramsay",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"source": "Darklords&DomainsVol1",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 18",
+				"average": 45
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 15,
+			"con": 16,
+			"int": 17,
+			"wis": 14,
+			"cha": 12,
+			"passive": 23,
+			"cr": "6",
+			"shortName": "Dr. Blake Ramsay",
+			"page": 280,
+			"languages": [
+				"Common",
+				"Mordentish",
+				"Falkovnian",
+				"Vaasi"
+			],
+			"languageTags": [
+				"C"
+			],
+			"save": {
+				"con": "+6",
+				"int": "+6"
+			},
+			"skill": {
+				"deception": "+4",
+				"history": "+6",
+				"medicine": "+8",
+				"perception": "+8",
+				"sleight of hand": "+5"
+			},
+			"trait": [
+				{
+					"name": "Shadow Door",
+					"entries": [
+						"Ramsay can step from one shadow into another.  When he is in dim light or darkness, as a bonus action he can teleport up to 60 feet to an unoccupied space he can see that is also in dim light or darkness. He then has advantage on the first melee attack he makes before the end of the turn. If Ramsay is {@condition restrained} while he uses this ability, his shackles are left behind and he is freed. He can use this ability only within the confine-ments of his manor. "
+					]
+				},
+				{
+					"name": "Rejuvenation",
+					"entries": [
+						"Due to the powerful curse that the doctor has brought onto his family, he can be killed only if flames engulf his entire family and him at once. Any blow that would indicate death merely places him in a deathlike state for 1 round, from which he awakens fully rejuvenated and aware. All of his hit points are healed and any missing body parts are regenerated."
+					]
+				},
+				{
+					"name": "Timeless",
+					"entries": [
+						"Ramsay is not affected by the passing of time. In addi-tion, he is immune to age affecting abilities "
+					]
+				},
+				{
+					"name": "Control Over The Unnatural",
+					"entries": [
+						"Ramsay has total control over all of the unnatural creatures such as the Demonic Sawflies, Death Linen, Living Webs and Zombies, found in his domain. "
+					]
+				},
+				{
+					"name": "Trapped Inside",
+					"entries": [
+						"Blake Ramsay cannot leave the manor. If forci-bly removed from the premises, he immediately fades away and reappears somewhere inside the house within 1 round. "
+					]
+				},
+				{
+					"name": "Healer",
+					"entries": [
+						"Ramsay is an able physician, allowing him to mend wounds quickly and get his allies back in the fight. When he uses a healer's kit to stabilize a dying creature, that creature also regains 1 hit point. As an action, Ramsay can spend one use of a healer's kit to tend to a creature and restore {@dice 1d6 + 4} hit points to it, plus additional hit points equal to the creature's maximum number of Hit Dice. The creature can't regain hit points from this feat again until it finishes a short or long rest. "
+					]
+				},
+				{
+					"name": "Observant",
+					"entries": [
+						"Quick to notice details of his environment, if Ramsay can see a creature's mouth while it is speaking a language he understands, Ramsay can interpret what it's saying by reading its lips. In addition, Ramsay has a +5 bonus to his passive Wisdom (Perception) (included) and passive Intelligence (Investiga-tion) scores. "
+					]
+				},
+				{
+					"name": "Create Horror",
+					"entries": [
+						"Ramsay can spend 12 hours to create a Zombie or 30 days to create a Flesh Golem provided that he has the appropriate materials such as body parts. "
+					]
+				},
+				{
+					"name": "Homunculus Servant",
+					"entries": [
+						"Ramsay was given a pet homunculus by a wizard. As a bonus action, Ramsay can command the {@creature homunculus|MM} (MM, pg. 188) to take an action. "
+					]
+				},
+				{
+					"name": "Significant Possessions",
+					"type": "inset",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"1 {@item Book of Revelations of the Prince of Twilight|Darklords&DomainsVol1}",
+								"1 {@item Intellect Syringe|Darklords&DomainsVol1}"
+							]
+						}
+					]
+				}
+			],
+			"traitTags": [
+				"Rejuvenation"
+			],
+			"bonus": [
+				{
+					"name": "Homunculus Servant",
+					"entries": [
+						"Ramsay was given a pet homunculus by a wizard. As a bonus action, Ramsay can command the {@creature homunculus|MM} (MM, pg. 188) to take an action. "
+					]
+				},
+				{
+					"name": "Shadow Door",
+					"entries": [
+						"Ramsay can step from one shadow into another.  When he is in dim light or darkness, as a bonus action he can teleport up to 60 feet to an unoccupied space he can see that is also in dim light or darkness. He then has advantage on the first melee attack he makes before the end of the turn. If Ramsay is {@condition restrained} while he uses this ability, his shackles are left behind and he is freed. He can use this ability only within the confine-ments of his manor. "
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Scalpel",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Pistol",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 30/90 ft., one target. {@h}7 ({@damage 1d10 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Extract Eyes",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}16 ({@damage 4d6 + 2}) slashing damage and one of the target's eyes is extracted. If both eyes are extracted, the target is permanently {@condition blinded}. "
+					]
+				},
+				{
+					"name": "Intellect Syringe",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one {@condition incapacitated} and {@condition restrained} humanoid. {@h}4 ({@damage 1}) piercing damage. The target remains {@condition incapacitated} and dies if a {@spell greater restoration|PHB} or a {@spell heal|PHB} spell is not cast on it within 10 minutes. Ramsay immediately gains {@dice 1d6} points of Intelligence, up to a maximum of 20. The Intelligence increase lasts for one month, after which the points fade away at the rate of one point per week. Immediately after injecting the foreign brain fluids, Ramsay must succeed on a {@dc 15} Wisdom saving throw or lose one point of Wisdom. If Ramsay's Wisdom is reduced to 3 or less, the recipient immediately becomes homicidally insane, with no saving throw allowed. The insanity can be cured by a wish or a heal spell. "
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			],
+			"attachedItems": [
+				"pistol|dmg"
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/cs0xRJ9.png"
+			},
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"You have blue eyes! Excellent. Her eyes were blue before she fell.", 
+							"Can you see? I mean, do you have good eyesight ?", 
+							"Don't mind the spiders, several varieties live on the island.",  
+							"Don't change the subject, is your eyesight good ?",  
+							"Actually a large group of spiders is called a clutter, not a swarm, stop changing the subject.",  
+							"CAN YOU SEE ?", 
+							"You can? Excellent, excellent.",  
+							"Now, you are going to feel a few dozen painful stabs, that's the fangs. You will be dead soon.", 
+							"You were dead the second you set foot on my island, but don't worry, your eyes will live on."
+						],
+						"by": "Dr Blake Ramsay"
+					},
+					"Dr Blake Ramsay is a short rotund man with thinning black hair and beady eyes. The doctor dresses in well tailored but functional clothes without decoration. He wears glasses connected to a gold chain that runs to his lapel. Ramsay has quick sure hands that con-stantly twitch as if looking for something to do. Ram-say doesn't like people and never looks someone in the eye when he talks to them. The good doctor is only capable of short conversations with anyone oth-er than his daughter before he becomes irritable and starts looking around, almost as if he wants to flee. If Ramsay becomes angry or annoyed by a chatty guest, he will summon a pack of wolves or swarm of stinging insects to bedevil his guests, and take the opportunity to make his exit.",
+					{
+						"type": "entries",
+						"name": "Background",
+						"page": 278,
+						"entries": [
+							"In the dead of night, Dr Blake Ramsay loaded his wife, Lady Helen Ramsay, and daughter, Lyza, into a boat he had purchased in secret, and fled the domain of Mordentshire, scant minutes ahead of ruthless bounty hunters. Ramsay was a brilliant researcher who was relentless in his search for the truth, and that was why he had to flee. Ramsay cared little for such mundane things as curing a disease or replacing a defective organ without killing the patient. Such things were child's play for the doctor. What Ramsay wanted to discover was the nature and limits of pain.",
+							"How much pain could someone take? A man? A wom-an? A child? What would happen if he removed an organ without anesthesia? What would happen if he removed the pain centers of the brain? What would happen if he stimulated the pain centers beyond what a mortal could possibly endure? Ramsay had to know the answers to these questions.",
+							"Understandably, Blake had trouble finding volunteers to help him with his research. He began to take them from the undesirables of Mordentshire. At first he took in beggars and homeless, but soon he wanted differ-ent patients. Undesirables were sickly and poorly fed. Their ability to withstand pain was limited compared to a healthy patient, so Ramsay began to find his sub-jects from the wealthy. Soon the children of the elite began to disappear, only to reappear two weeks later with their organs removed, their scalps pulled back and their brains pierced with silver needles. The lucky ones were found dead.",
+							"None of the survivors knew what happened. All they remembered was blinding pain and a cold detached voice asking them questions they couldn't possibly answer.",
+							"As Ramsay pursued his research on his unwilling subjects, he began to lose all caution. Things fell apart one night when a cry was raised as he struggled with a surprisingly strong subject. The doctor turned to see nearly a dozen people racing to stop him. They had seen his face, as had his hapless “volunteer”. Des-perate, Ramsay slit the throat of the man and fled into the darkness. He and his family left Mordentshire less than twelve hours later.",
+							"Ramsay and his family sailed for days before reaching a lonely island. Ramsay began to build a house and a laboratory for himself and his family. He was aided by a group of silent islanders that appeared to aid him, then vanished from the island.",
+							"The doctor realized he would never be able to complete his research on this island, and began to look for an heir to complete his work after his passing. Blake was fond of his daughter, who had a brilliant mind, but he wondered if he could produce an heir that was better able to continue his research. Ramsay's wife soon fell pregnant and their second child, Gregory, was born. Gregory's body was covered in weeping sores and his body was sickly and twisted. After a few years, Blake's wife gave birth to a second son, Blake Jr. The child was cold and distant, but never devel-oped his father's brilliance. Blake soon dismissed his son as a dullard and concentrated all his efforts on his daughter. The doctor made his daughter study endlessly, with very few breaks to sleep, eat, or play. It was during one of these breaks that as she took the airs, Ramsay watched her slip from the cliffs that surrounded the island. Blake sprinted down the three hundred foot cliff face, to find the broken body of his daughter.",
+							"Ramsay brought her body back to his laboratory and started working. He would not be robbed of his only chance at immortality by something so trivial as death. For two weeks Blake labored to fix his daughter, re-fusing food and sleep. The accident had driven Blake mad, and in his madness he found strength.",
+							"After two weeks of failure Ramsay heard a voice in the back of his mind telling him to use his wife and sons to fix his daughter. Ramsay raced to his home and slaughtered his family. He brought the corpses back to his lab and carefully repaired his daughter. At midnight her eyes snapped open and she asked what had transpired.Although his daughter seemed like she was alive, Blake was horrified to discover that her eyes, once a deep blue, were now an almost venom-ous green. Blake has tried dozens of times since that night to replace his daughter's eyes, but they always revert to green."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Current Sketch",
+						"page": 279,
+						"entries": [
+							"Despite his intelligence and careful note taking, Ramsay doesn't realize he's been on the Isle for over a century. The doctor believes he has been on the island for a few years at the most, but is desperate to restore his daughter so she can take over his research before he dies. Ramsay continues to kill any trespassers on his island to try and find the eyes he believes will make his daughter whole. When the mists and the sea don't present victims for his daughter, Ramsay spends his time in the lab. His research into the border between life and death is his only true love.",
+							"The ghosts of his wife and son continue to haunt him, interrupting his research and helping anyone foolish or unlucky enough to find the Isle. They cannot phys-ically affect anything on the Isle, but the animals and beasts that live on the Isle find their presence deeply unsettling. The good doctor also possesses a copy of The Revelations of the Prince of Twilight, and an intellect syringe. The Revelations is an ancient tome whose teachings are so heretical that the Church of Ezra and the church of bane consider it heresy. The Church of Ezra condemns anyone who reads the book. The Church of Bane has the book burned and its owner slain or burned with the book.",
+							"The book was written in 702 by Renthon Vorishtok, a monk of the Borcan order. Renthon was a cleric of exceptional ability that claimed he could cure plagues and banish famine through acts of faith alone. At first the Borcan order thought Renthon was a font of holy power, but he soon descended into hubris and mad-ness. Renthon demanded to be the head of the order, and was forced to flee the wrath of angry monks.",
+							"He wondered the domains until he came to the broken shores of Lamordia. The domain was in the depths of winter and Renthon was weak from lack of food and shelter. As night fell Renthon was visited by the Prince of Twilight. The Prince talked to Renthon, telling him how every mortal had been cheated and damaged years ago. Mortals used to possess two souls. The Prince told Renthon how to summon his other soul from the beyond, and instructed the cleric to write his instructions down. Renthon disappeared shortly after the Grand Conjunction, leaving over 1,000 copies of the text in his house.",
+							"The intellect syringe is a syringe with a sturdy six inch needle, magically hardened and sharpened. By driv-ing the needle into the brain of an intelligent creature and drawing out their cerebral fluid (a process which takes about 10 minutes and kills the victim), and then injecting the fluid directly into his own brain, the doctor can increase his intelligence dramatically for a short time."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Darklord's Tactics",
+						"page": 279,
+						"entries": [
+							"The good doctor has no combat abilities, and has no interest in learning. Learning how to fight would take away from his research and Blake doesn't need the skills anyway. Ramsay is effective-ly immortal, even grievous wounds healing instantly. The doctor can step into a shadow and reappear in any shadow on the island. Ramsay can control any monster on the island and enjoys swarming his ene-mies with stinging flies and monstrous hairy spiders. No matter how desperate the combat becomes, Blake will never go for his opponent's eyes, his daughter may need them."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Borders",
+						"page": 279,
+						"entries": [
+							"When Dr Ramsay closes the border, any ship or desperate swimmer attempting to flee disap-pears once it reaches 100 yards from shore and reap-pears on one of the beaches of the Isle. "
+						]
+					},
+					{
+						"name": "Significant Possessions",
+						"type": "inset",
+						"entries": [
+							{
+								"type": "list",
+								"items": [
+									"1 {@item Book of Revelations of the Prince of Twilight|Darklords&DomainsVol1}",
+									"1 {@item Intellect Syringe|Darklords&DomainsVol1}"
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/YtYkaJ9.jpg"
 						}
 					}
 				]
