@@ -290,6 +290,23 @@
 				},
 				"Frantisek can't repeat an effect until they have all been used, and he can't use the same effect two rounds in a row."
 			]
+		},
+		{
+			"name": "Darklords&DomainsVol1LairActionsLeederikThePhantomLover",
+			"source": "Darklords&DomainsVol1",
+			"lairActions": [
+				"When fighting inside its lair, the Phantom Lover can invoke the ambient magic to take lair actions.",
+				"On initiative count 20 (losing initiative ties), it can take one lair action to cause one of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Summon Zombies:} The ground of a 40ft square of the Phantom Lover's choosing erupts as arms claw their way out of the earth to grasp the ankles of a passerby, and then slowly rise up to attack, like common zombies. A creature caught in this effect must succeed on a DC 16 Strength saving throw or become restrained for 1 turn. One turn later, {@dice 3d4} {@creature zombie|MM}s rise from the ground and attack.",     
+						"{@b Invisible Threat:} Low drifting veils of mist rise up and conceal the Phantom Lover making it invisible and heavily obscuring the Phantom Lover's shape. Rustles of leaves, footsteps or other noises betray the Phantom Lover's current location granting advantage to any pursuer that tries to detect it.",
+						"{@b Visage of a loved one:} The Phantom Lover takes on the visage of someone its attackers know. Either one of them, or a companion who recently died or a loved person. The Phantom Lover is considered to be under the effects of the {@spell sanctuary|PHB} spell."
+					]
+				},
+				"The Phantom Lover can't repeat an effect until they have all been used, and it can't use the same effect two rounds in a row."
+			]
 		}
 	],
 	"spell": [
@@ -2313,6 +2330,308 @@
 				{
 					"name": "Strixhaven Initiate",
 					"source": "SCC"
+				}
+			]
+		},
+		{
+			"name": "Enlarge",
+			"source": "Darklords&DomainsVol1",
+			"page": 285,
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 237
+				}
+			],
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a pinch of powdered iron"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": false
+				}
+			],
+			"entries": [
+				"You cause a creature or an object you can see within range to grow larger for the duration. Choose either a creature or an object that is neither worn nor carried. If the target is unwilling, it can make a Constitution saving throw. On a success, the spell has no effect.",
+				"If the target is a creature, everything it is wearing and carrying changes size with it. Any item dropped by an affected creature returns to normal size at once.",
+				{
+					"name": "Enlarge",
+					"type": "entries",
+					"entries": [
+						"The target's size doubles in all dimensions, and its weight is multiplied by eight. This growth increases its size by one category—from Medium to Large, for example. If there isn't enough room for the target to double its size, the creature or object attains the maximum possible size in the space available. Until the spell ends, the target also has advantage on Strength checks and Strength saving throws. The target's weapons also grow to match its new size. While these weapons are enlarged, the target's attacks with them deal {@damage 1d4} extra damage."
+					]
+				}
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"ADV",
+				"OBJ",
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					}
+				],
+				"fromClassListVariant": [
+					{
+						"name": "Bard",
+						"source": "PHB",
+						"definedInSource": "TCE"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB",
+						"definedInSource": "TCE"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"races": [
+				{
+					"name": "Duergar",
+					"source": "MPMM"
+				},
+				{
+					"name": "Fairy",
+					"source": "MPMM"
+				},
+				{
+					"name": "Dwarf (Duergar)",
+					"source": "MTF",
+					"baseName": "Dwarf",
+					"baseSource": "PHB"
+				},
+				{
+					"name": "Fairy",
+					"source": "WBtW"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Quandrix Student",
+					"source": "SCC"
+				},
+				{
+					"name": "Simic Scientist",
+					"source": "GGR"
+				}
+			],
+			"feats": [
+				{
+					"name": "Adept of the Red Robes",
+					"source": "DSotDQ"
+				}
+			]
+		},
+		{
+			"name": "Reduce",
+			"source": "Darklords&DomainsVol1",
+			"page": 285,
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 237
+				}
+			],
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a pinch of powdered iron"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": false
+				}
+			],
+			"entries": [
+				"You cause a creature or an object you can see within range to grow smaller for the duration. Choose either a creature or an object that is neither worn nor carried. If the target is unwilling, it can make a Constitution saving throw. On a success, the spell has no effect.",
+				"If the target is a creature, everything it is wearing and carrying changes size with it. Any item dropped by an affected creature returns to normal size at once.",
+				{
+					"name": "Reduce",
+					"type": "entries",
+					"entries": [
+						"The target's size is halved in all dimensions, and its weight is reduced to one-eighth of normal. This reduction decreases its size by one category—from Medium to Small, for example. Until the spell ends, the target also has disadvantage on Strength checks and Strength saving throws. The target's weapons also shrink to match its new size. While these weapons are reduced, the target's attacks with them deal {@damage 1d4} less damage (this can't reduce the damage below 1)."
+					]
+				}
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"ADV",
+				"OBJ",
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					}
+				],
+				"fromClassListVariant": [
+					{
+						"name": "Bard",
+						"source": "PHB",
+						"definedInSource": "TCE"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB",
+						"definedInSource": "TCE"
+					}
+				],
+				"fromSubclass": [				
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"races": [
+				{
+					"name": "Duergar",
+					"source": "MPMM"
+				},
+				{
+					"name": "Fairy",
+					"source": "MPMM"
+				},
+				{
+					"name": "Dwarf (Duergar)",
+					"source": "MTF",
+					"baseName": "Dwarf",
+					"baseSource": "PHB"
+				},
+				{
+					"name": "Fairy",
+					"source": "WBtW"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Quandrix Student",
+					"source": "SCC"
+				},
+				{
+					"name": "Simic Scientist",
+					"source": "GGR"
+				}
+			],
+			"feats": [
+				{
+					"name": "Adept of the Red Robes",
+					"source": "DSotDQ"
 				}
 			]
 		}
@@ -5887,6 +6206,16 @@
 			"script": "Elvish"
 		},
 		{
+			"name": "Graben",
+			"source": "Darklords&DomainsVol1",
+			"page": 1,
+			"type": "standard",
+			"typicalSpeakers": [
+				"Graben family"
+			],
+			"script": "Elvish"
+		},
+		{
 			"name": "Lamordian",
 			"source": "Darklords&DomainsVol1",
 			"page": 1,
@@ -5982,7 +6311,8 @@
 				"people of Kartakass",
 				"people of Sithicus",
 				"people of Valachan",
-				"people of Verbrek"
+				"people of Verbrek",
+				"people of Liffe"
 			],
 			"script": "Elvish"
 		},
@@ -6052,7 +6382,8 @@
 				"people of Valachan",
 				"people of Verbrek",
 				"people of Darkon",
-				"people of Tepest"
+				"people of Tepest",
+				"people of Liffe"
 			],
 			"script": "Elvish",
 			"entries": [
@@ -16709,7 +17040,7 @@
 								},
 								"The Sea of Sorrows is the only domain that was created without a Darklord, though one did eventually emerge to take control of it. The Sea is an exercise in futility, made even more so after the arrival of Captain van Riese. The Sea was sup-posedly created to house the Islands of Terror, and has become home to a number of pirates, such as Urdogen the Red (a ghost pirate who has been soundly trounced by Captain Pieter in the past when he became too unruly), to the Seawolves of the Fin-ger in Lamordia and others. AS such, it is a dangerous domain, but made more so by the presence of the mists that obscure everything. This means that routes can differ for different ships. Two ships that set out on the same heading do not always arrive at the same location, nor is the location always the same later on. This is not helped by the inability of those travelling on the seas to distinguish between the Sea of Sorrow itself and the surrounding mists. As such they often end up in entirely different loca-tions that have no physical connection with the Sea of Sorrows.",
 								"This effect became more pronounced after the arrival of van Riese, always frustrating his attempts to map the sea and plot out routes. Only when his ship has been chartered by others will he arrive at the location he intends.",
-								"Adventures on the Sea of Sorrows should feature this frustrating inability to carefully plan where a ship is headed. Dungeon Masters should use this to their advantage and introduce complications or new adventures where they can. ",
+								"Adventures on the Sea of Sorrows should feature this frustrating inability to carefully plan where a ship is headed. Dungeon Masters should use this to their advantage and introduce complications or new adventures where they can.",
 								{
 									"type": "table",
 									"caption": "Sea of Sorrows",
@@ -17181,7 +17512,7 @@
 											"name": "Borders",
 											"page": 279,
 											"entries": [
-												"When Dr Ramsay closes the border, any ship or desperate swimmer attempting to flee disap-pears once it reaches 100 yards from shore and reap-pears on one of the beaches of the Isle. "
+												"When Dr Ramsay closes the border, any ship or desperate swimmer attempting to flee disap-pears once it reaches 100 yards from shore and reap-pears on one of the beaches of the Isle."
 											]
 										},
 										{
@@ -17305,7 +17636,7 @@
 									],
 									"by": "William Shakespeare, Hamlet"
 								},
-								"The Isle of the Ravens is so named for the clouds of ravens that surround it. Created by the vin-dictive woman known only as the Lady of Ravens, it is her vengeance upon the world: to turn the men who angered, hurt, and betrayed her, into ravens. Leav-ing her evermore lonely to wallow in her misery. The Isle of the Ravens is small, so any adventures here should revolve around its main feature: the ravens and the Lady herself, though she may well be out of the reach of many adventurers to face directly. Adven-tures should involve the telling of revenge, of those who came here, spent time with the Lady and inevi-tably betrayed her by trying to leave — suffocating in her attention, and ultimately desperately trying to es-cape, not just in spite of her best efforts, but because of them. Adventurers might be sent here to rescue someone, or even to ask the Lady for ways to revert magical transformation. Nonetheless, a great risk lurks in such a journey. Adventurers will face great dangers and will have to take great sacrifices. After all, the Lady may take a liking to one of them. And those she likes, never get to leave. And if they try, they’ll spend the rest of their lives as ravens, following in her flock.",
+								"The Isle of the Ravens is so named for the clouds of ravens that surround it. Created by the vin-dictive woman known only as the Lady of Ravens, it is her vengeance upon the world: to turn the men who angered, hurt, and betrayed her, into ravens. Leav-ing her evermore lonely to wallow in her misery. The Isle of the Ravens is small, so any adventures here should revolve around its main feature: the ravens and the Lady herself, though she may well be out of the reach of many adventurers to face directly. Adven-tures should involve the telling of revenge, of those who came here, spent time with the Lady and inevi-tably betrayed her by trying to leave — suffocating in her attention, and ultimately desperately trying to es-cape, not just in spite of her best efforts, but because of them. Adventurers might be sent here to rescue someone, or even to ask the Lady for ways to revert magical transformation. Nonetheless, a great risk lurks in such a journey. Adventurers will face great dangers and will have to take great sacrifices. After all, the Lady may take a liking to one of them. And those she likes, never get to leave. And if they try, they'll spend the rest of their lives as ravens, following in her flock.",
 								{
 									"type": "table",
 									"caption": "Isle of the Ravens",
@@ -17364,7 +17695,7 @@
 										],
 										[
 											"Analog",
-											"Aeaea, Isle of Circe, Homer’s Odyssey"
+											"Aeaea, Isle of Circe, Homer's Odyssey"
 										],
 										[
 											"Neighboring domain(s)",
@@ -17450,18 +17781,18 @@
 										{
 											"type": "quote",
 											"entries": [
-												"I know you think I’m a useless old waste, but I’ve been here longer than most captains. I saw plenty of pretty boys like you come and go. Take my advice and get yourself a raven. Take care of it. Make sure it’s fed and watered, even if it means you have to go without.",
+												"I know you think I'm a useless old waste, but I've been here longer than most captains. I saw plenty of pretty boys like you come and go. Take my advice and get yourself a raven. Take care of it. Make sure it's fed and watered, even if it means you have to go without.",
 												"Then pray you never go near that island. If you do, release the raven and pray she likes it more than you."
 											],
-											"by": "Morgan “One Eye” LeBlanc. Quartermaster on the merchant ship “Rellin’s Ghost"
+											"by": "Morgan “One Eye” LeBlanc. Quartermaster on the merchant ship “Rellin's Ghost"
 										},
-										"No one knows the Lady of Raven’s true name, includ-ing the Lady herself. She is a petite woman with long dark hair styled around elaborate combs. Her eyes are the same color as her hair and both are a perfect com-plement to her pale skin. Her demeanor is cold and haughty. The Lady of Ravens looks at people the same way she might look at something she just stepped in. The Lady rarely allows her icy demeanor to crack, and when she does, she can stun people with the force of her personality. Her emotional highs and lows are cap-tivating, to behold. She can dominate a group of peo-ple through sheer force of personality alone. The Lady is more likely to relax around the isle of ravens.",
+										"No one knows the Lady of Raven's true name, includ-ing the Lady herself. She is a petite woman with long dark hair styled around elaborate combs. Her eyes are the same color as her hair and both are a perfect com-plement to her pale skin. Her demeanor is cold and haughty. The Lady of Ravens looks at people the same way she might look at something she just stepped in. The Lady rarely allows her icy demeanor to crack, and when she does, she can stun people with the force of her personality. Her emotional highs and lows are cap-tivating, to behold. She can dominate a group of peo-ple through sheer force of personality alone. The Lady is more likely to relax around the isle of ravens.",
 										{
 											"type": "entries",
 											"name": "Background",
 											"page": 284,
 											"entries": [
-												"The Lady of Ravens was born into a world of silence and isolation. She was the last in a long line of nobility that had long fallen into inbreed-ing and insanity. Her mother died when the Lady was a toddler and the Lady of Ravens neither remembers her nor cares. The Lady’s father spent his days in a drugged haze and wandered the halls of the castle, talking to unseen spirits and friends long dead. The Lady never talked to the servants that raised her or took care of her day to day needs,not considering them important enough to matter in any way. The Lady despised the other children that lived in the castle, and they soon learned to avoid her altogether. The Lady of Raven’s only joy was the Tower of Flint. A 400 foot tall edifice of gray stone that sat in the middle of her cas-tle, hundreds of ravens roosted in the tower. The Lady of Ravens had inherited the ability to talk to ravens, passed down by her mother. The Lady spent hours in the tower, telling the ravens stories, and listening to the tales they told her in return. After her father’s death the Lady rarely left the tower, spending days in conversa-tion with her ravens. This was the way of things un-til the Lady reached her late teens. Looking from the windows of her tower, she spotted a handsome young man. The Lady became obsessed with the man, the son of a servant, and set her ravens to follow his every move. When he departed to fight in some nameless war, she was devastated, barely sleeping or eating for a year. She was overjoyed to hear the news from one of her ravens—the man had returned. Her joy turned to rage when the young man immediately fell into the arms of another woman.. Devastated and enraged, the Lady sent her ravens to tear the young lovers apart. Grief stricken, the Lady spent several days in her tower mourning the death of her obsession. When she left she found the Tower of Flint was standing alone on an isle in the middle of a vast sea. To make matters worse, the Lady found she could not remember her own name. Even more devastating, although she could command the ravens of her isle with an act of will, she could no longer talk to her friends."
+												"The Lady of Ravens was born into a world of silence and isolation. She was the last in a long line of nobility that had long fallen into inbreed-ing and insanity. Her mother died when the Lady was a toddler and the Lady of Ravens neither remembers her nor cares. The Lady's father spent his days in a drugged haze and wandered the halls of the castle, talking to unseen spirits and friends long dead. The Lady never talked to the servants that raised her or took care of her day to day needs,not considering them important enough to matter in any way. The Lady despised the other children that lived in the castle, and they soon learned to avoid her altogether. The Lady of Raven's only joy was the Tower of Flint. A 400 foot tall edifice of gray stone that sat in the middle of her cas-tle, hundreds of ravens roosted in the tower. The Lady of Ravens had inherited the ability to talk to ravens, passed down by her mother. The Lady spent hours in the tower, telling the ravens stories, and listening to the tales they told her in return. After her father's death the Lady rarely left the tower, spending days in conversa-tion with her ravens. This was the way of things un-til the Lady reached her late teens. Looking from the windows of her tower, she spotted a handsome young man. The Lady became obsessed with the man, the son of a servant, and set her ravens to follow his every move. When he departed to fight in some nameless war, she was devastated, barely sleeping or eating for a year. She was overjoyed to hear the news from one of her ravens—the man had returned. Her joy turned to rage when the young man immediately fell into the arms of another woman.. Devastated and enraged, the Lady sent her ravens to tear the young lovers apart. Grief stricken, the Lady spent several days in her tower mourning the death of her obsession. When she left she found the Tower of Flint was standing alone on an isle in the middle of a vast sea. To make matters worse, the Lady found she could not remember her own name. Even more devastating, although she could command the ravens of her isle with an act of will, she could no longer talk to her friends."
 											]
 										},
 										{
@@ -17469,7 +17800,7 @@
 											"name": "Current Sketch",
 											"page": 284,
 											"entries": [
-												"The Lady of Ravens is obsessed with talking to her beloved raven friends again. She believes that finding her lost name is the key to this, as the abili-ty was passed down from her ancestors, and her name represents her ancestry. If a group of humans lands in the Lady’s isle and appears to be well learned or intelli-gent enough to aid the Lady in her quest, she may offer them treasure or hospitality if they agree to aid her. If they don’t agree to help the Lady then she will force them to serve with her magic. The Lady has magical means to track and communicate with her minions. Oc-casionally, the Lady of Ravens becomes enamoured with a handsome sailor or adventurer. That individual is gifted a raven as a mark of the Lady’s favor. While the raven is alive, that individual will have great fortune in the seas around the Isle of Ravens. The individual will amass great wealth and avoid the worst storms, so long as that raven survives. If the raven dies, the indi-vidual loses the Lady’s favor instantly, and all his good luck turns to ash—their treasure will be stolen, food will rot in their mouth, and their friends will abandon them or die. Eventually the Lady of Ravens will appear, and change her paramour into a raven to replace her lost friend that she entrusted to that sailor. No raven gifted in this way has lived longer than two months."
+												"The Lady of Ravens is obsessed with talking to her beloved raven friends again. She believes that finding her lost name is the key to this, as the ability was passed down from her ancestors, and her name represents her ancestry. If a group of humans lands in the Lady's isle and appears to be well learned or intelli-gent enough to aid the Lady in her quest, she may offer them treasure or hospitality if they agree to aid her. If they don't agree to help the Lady then she will force them to serve with her magic. The Lady has magical means to track and communicate with her minions. Oc-casionally, the Lady of Ravens becomes enamoured with a handsome sailor or adventurer. That individual is gifted a raven as a mark of the Lady's favor. While the raven is alive, that individual will have great fortune in the seas around the Isle of Ravens. The individual will amass great wealth and avoid the worst storms, so long as that raven survives. If the raven dies, the indi-vidual loses the Lady's favor instantly, and all his good luck turns to ash—their treasure will be stolen, food will rot in their mouth, and their friends will abandon them or die. Eventually the Lady of Ravens will appear, and change her paramour into a raven to replace her lost friend that she entrusted to that sailor. No raven gifted in this way has lived longer than two months."
 											]
 										},
 										{
@@ -17477,7 +17808,7 @@
 											"name": "Darklord's Tactics",
 											"page": 284,
 											"entries": [
-												"Combat revolts the Lady. If she believes her opponents have nothing to offer her, she will use her Circe’s Eye ability to change them into ra-vens as a warning to others. If pressed into actual com-bat, the Lady will use her powerful spells to crush her enemies from afar. If hard pressed, she will command her ravens to attack her foes, but is loath to put her precious birds in danger."
+												"Combat revolts the Lady. If she believes her opponents have nothing to offer her, she will use her Circe's Eye ability to change them into ravens as a warning to others. If pressed into actual combat, the Lady will use her powerful spells to crush her enemies from afar. If hard pressed, she will command her ravens to attack her foes, but is loath to put her precious birds in danger."
 											]
 										},
 										{
@@ -17509,6 +17840,727 @@
 										"type": "external",
 										"url": "https://i.imgur.com/o2gdnVo.jpg"
 									}
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "L'île de la Tempête",
+							"page": 287,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/oBt7NSf.jpg"
+									}
+								},
+								{
+									"type": "quote",
+									"entries": [
+										"If this island is to be my Hell, then it shall be Hell for every man that washes ashore.",
+										"Only the damned come here and only the dead shall leave."
+									],
+									"by": "Captain Alain Monette"
+								},
+								"The story of L'île de la Tempête is the story of cruelty against your fellows. Those who should be look-ing up to you, and keeping you company, but whom you mistreat. It is the physical embodiment of Alain Monette as he fed off the misery of his crews, before coming to the island, where he fed upon the bats, as they fed upon him, in a strange cycle of mutual misery and sustenance. Now that he has become the master of the island, and left the cave behind where he origi-nally came across the bats, he has discovered the true misery. He is alone and doomed to be forever stuck on the rocky outcropping of his own misery. Adventures on the island should focus on the idea of loss, and the physical danger that Alain Monette poses. Even in his best mood, he is a predator, and he hunts down those that are shipwrecked on his island. But he takes plea-sure in prolonging the agony, so each night, when he attacks he'll take out only one. And during the day he'll hide and enjoy the misery that he is causing.",
+								{
+									"type": "table",
+									"caption": "L'île de la Tempête",
+									"colLabels": [
+										"Detail",
+										"Description"
+									],
+									"colStyles": [
+										"col-3 text-center",
+										"col-9"
+									],
+									"rows": [
+										[
+											"Culture Level",
+											"Chivalric"
+										],
+										[
+											"Climate & Terrain",
+											"Cold, cliffs and forest"
+										],
+										[
+											"Year Formed",
+											"677 BC"
+										],
+										[
+											"Population",
+											"1"
+										],
+										[
+											"Races (%)",
+											"Human (werebat) 100%"
+										],
+										[
+											"Languages",
+											"{@language Common|PHB}"
+										],
+										[
+											"Religions",
+											"None"
+										],
+										[
+											"Government",
+											"None"
+										],
+										[
+											"Ruler(s)",
+											"Captain Alain Monette"
+										],
+										[
+											"Darklord(s)",
+											"Captain Alain Monette"
+										],
+										[
+											"Nationality",
+											"Gothic Earth French"
+										],
+										[
+											"Analog",
+											"The island from Robinson"
+										],
+										[
+											"Neighboring domain(s)",
+											"Nocturnal Sea"
+										]
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/NOityr5.jpg"
+									}
+								},
+								{
+									"type": "entries",
+									"name": "Local Fauna",
+									"page": 288,
+									"entries": [
+										"There aren't any living animals on L'île de la Tempête that are bigger than an insect. Anything else is hunt-ed down and drained by the enormous population of bats that the island does manage to sustain. These bats hide during the day, but during the night they flock in swarms of thousands. The drone of their wings can be heard from miles around when they do so, often in the company of Alain himself. Beyond that though, the only animals of any size are grubs, insects, and the occasional fish that washes ashore."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Local Flora",
+									"page": 288,
+									"entries": [
+										"Plantlife is sparse on the island. There are a few lonely trees, but the main ground cover is simply shrubs that cling desperately to the rocky soil. Nothing here has much chance of growing unless it is exceedingly hardy, and none of it is edible to humans."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Native Horrors",
+									"page": 288,
+									"entries": [
+										"The only inhabitant of the island is Alain, and while the bats are frightening, they are just normal ones."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Terrain Type",
+									"page": 288,
+									"entries": [
+										"The 10-mile long island is cold and windswept, offering little cover outside of the cliffsides that ring the island. Those rockfaces are not only treacherous and danger-ous but also riddled with caves. It is easy to take refuge in one of these if you can get to them, but be prepared to deal with the bats in them. As treacherous as the rock faces are, they are nothing compared to the dan-gers hidden in the reefs around the island. The sharp jagged rocks there are capable of tearing through the hull of even the strongest ship. And the currents, while unpredictable on their own, become even worse with Alain awake, as he is able to control, change, and re-direct them at will."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Important Landmarks",
+									"page": 288,
+									"entries": [										
+										{
+											"type": "entries",
+											"name": "The Lighthouse",
+											"page": 288,
+											"entries": [
+												"The lighthouse of Alain Monette isn't a lighthouse as such. It is a huge pile of rocks, topped with a skull that sends out a beam of light for miles around. Unlike a normal lighthouse, the beam is constant, and therefore attracts ships to it, thinking it a safe harbor. Only when it is too late do they realize the peril that they are in, and by then, as Alain can control the tides and cur-rents around the island, it is too late. Unfortunately for the sailors of the multiverse, the beam of light from the lighthouse isn't limited to the waters of the Nocturnal Sea. It reaches into the planes and beyond, and those following it may well find themselves drawn into the cold embrace of the mists."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Towns and villages",
+									"page": 288,
+									"entries": [
+										"None"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Fun Fact",
+									"page": 288,
+									"entries": [
+										"While Alain kills the crews of the ships that he causes to wreck on the rocks, he doesn't do anything with the cargo. The area around L'île de la Tempête is therefore filled with treasure and valuables, for those brave or stupid enough to try their luck."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Captain Alain Monette",
+									"page": 289,
+									"entries": [
+										{
+											"type": "quote",
+											"entries": [
+												"If this island is to be my Hell, then it shall be Hell for every man that washes ashore.",
+												"Only the damned come here and only the dead shall leave."
+											],
+											"by": "Captain Alain Monette"
+										},
+										"Alain Monette has three forms: human and a macabre hybrid of man and bat. In his human form Monette is nearly seven feet tall and almost impossibly thin. His eyes are as gray as a stormy sky and he never seems to blink. His face is craggy and marred by a jagged scar. Monette's expression is stern, even when his words are friendly. Alain is a captain and still wears a spotless blue uniform. The uniform is blue, but so dark it appears to be black. His gold buttons are polished until they shine.",
+										"In his hybrid form, he's a grotesque mix of bat and hu-man, covered with gray fur, with his arms becoming wings tipped with vicious claws. The captain's head is crowned with large ears, his eyes become red and bloodshot and his mouth is full of needle sharp fangs. Monette cannot control his transformations, but only hunts in his hybrid shape.",
+										{
+											"type": "entries",
+											"name": "Background",
+											"page": 289,
+											"entries": [
+												"Alain Monette was the infamous captain of the privateer vessel {@i Ouragan}. Monette was an incredible captain. He knew every rope, nail, and barrel of ballast on the Ouragan. He had seen every hazard on the open sea and feared no obstacle, whether natu-ral, magical, or man made. Monette's skill as a captain and his legendary conquests brought sailors flocking to his flag. Once the new sailors were at sea, they found out why Captain Alain Monette constantly took on new crew. Monette was an absolute despot on his ship. Even minor infractions of his complicated and extensive code resulted in brutal beatings and floggings. The shred-ded skins of the sailors that Monette had keelhauled were hung from the yard arms as grisly trophies. Even-tually the crew had too much. Monette had gaff hooks inserted under the rib cage of a sailor who violated one of his obscure codes then dragged the poor fool behind the ship. It didn't take long before splashes of the sailor and trail of blood attracted the attention of sharks. After the sailor stopped screaming the crew, angry and tired of being whipped like dogs, spontaneously mutinied. The officer's joined the crew and Monette was dragged from his cabin and savagely beaten.. The crew tied ropes to his hands and legs then keelhauled. Much to the crew's surprise, Monette survived. The crew simply keelhauled him again, and when he survived a third time. Monette stubbornly clung to life, cursing and swearing revenge. The crew stripped Monette and tied him to the mast. The captain was flogged for over an hour. Still Monette refused to die. Out of ideas and tired of the stubborn captain's refusal to die, the crew simply threw him overboard and sailed away. When the crew was out of sight, the captain finally surrendered into unconsciousness. Monette awoke in a cave. Dozens of furry bodies covered him, licking the blood out of his wounds. Bats. Monette was covered in dozens of small bats. He survived the next few days by catching what bats he could and devouring the screeching creatures raw. At night when his wounds proved too much the bats descended and fed on him in turn. Monette didn't know it, but the Dark Powers had noticed the captain and refused to let him die. As he feasted on the bats, the Dark Powers made them one. After a week, Mon-ette could move around and explore his surroundings, finding himself on a small barren island in the middle of a vast sea. At night the constellations were similar to the ones from his home, but somehow wrong. The seas surrounding Monette's island were treacherous and full of shipwrecks. The beaches were covered in the desiccated skeletons of hundreds of sailors. Almost unconsciously, he started stacking the bones at the top of the tallest point of his island. Impossibly the bones fused together, forming a tower. Monette worked tire-lessly for over a month, living off the bats he caught and the plants that grew in the thin soil of his island. The last bone Monette placed was a skull. The skull was set on top of a pillar of fused spines in the highest room of the tower. When the skull was set, it began to glow and raised into the air above the pillar of spines. Monette's tower, a lighthouse he called the Eye of Midnight, was complete. Monette tried to escape the island on a small boat that he cobbled together from detritus that washed ashore on his island. The further he sailed from the island, the weaker Monette became. Before he had sailed a mile, Monette knew he would be dead if he sailed any further. He was trapped."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Current Sketch",
+											"page": 289,
+											"entries": [
+												"The light of the Eye of Midnight reaches far beyond Ravenloft into hundreds of other worlds. Sailors that see its light inevitably follow it into the treacherous reefs that surround L'île de la Tempête. Their ships are dashed upon the rocks. The few sailors that survive the storm and the waves to make it ashore are far from safe. If Monette is in his human form, he will greet the sailors and ask where they came from. Monette can be polite, even charming when he wants to be, but it's all a facade. Monette is merely buying time until he can transform. Monette is an afflicted ly-canthrope. He cannot control when he changes, but knows it has no connection to the moon. Monette isn't positive, but has recently started to suspect it is con-nected to the changing of the tide. Once he becomes the beast, Monette relentlessly hunts the sailors on his island. He devours the first few victims he kills but toys with his remaining victims. When Monette changes back to his human form, he will pretend to help them remaining prey on his island, telling them about the beast that lives in his island and begging them for help, reveling in their fear and helplessness. When Monette becomes the beast, the hunt starts again. Monette finds the isolation and boredom of L'île de la Tempête maddening. He constantly searches for a way off the island, but to no avail."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Darklord's Tactics",
+											"page": 290,
+											"entries": [
+												"Alain avoids combat in his human form. If he is trapped, he is expert with his ornate cut-lass and flintlock pistol. In hybrid form, Monette prefers to pick off his opponents one at a time. Small victims are snatched and carried to great heights before being dropped onto sharp rocks or into the sea. Larger vic-tims are cut into bloody ribbons with claws and fangs while Monette stays in the air, using his ability to fly to keep out of harm's way."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Borders",
+											"page": 290,
+											"entries": [
+												"Monette can control the seas around L'île de la Tempête. Any ship trying to escape will be swamped by rogue waves and dashed against jagged rocks. Anyone foolish enough to try and swim will be dragged under the waves and never seen again. Monette has to concentrate to use this ability, so it is possible for a ship to escape if he can be distracted for long enough."
+											]
+										},
+										{
+											"name": "Captain Alain Monette",
+											"type": "entries",
+											"page": 290,
+											"entries": [
+												{
+													"type": "statblock",
+													"tag": "creature",
+													"source": "Darklords&DomainsVol1",
+													"name": "Captain Alain Monette"
+												}
+											]
+										},
+										{
+											"name": "Captain Alain Monette (Bat Form)",
+											"type": "entries",
+											"page": 290,
+											"entries": [
+												{
+													"type": "statblock",
+													"tag": "creature",
+													"source": "Darklords&DomainsVol1",
+													"name": "Captain Alain Monette (Bat Form)"
+												}
+											]
+										}	
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Leederik's Tower",
+							"page": 292,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/4dBBKgR.jpg"
+									}
+								},
+								{
+									"type": "quote",
+									"entries": [
+										"Loneliness will sit over our roofs with brooding wings."
+									],
+									"by": "Bram Stoker, Dracula"
+								},
+								"Leederik's Tower, or the Tower of the Phantom Lover, is a unique construct, even within the Mists of Ravenloft, in that it can reliably send sections of itself into extremely limited parts of the multiverse. The big-gest part sits in the Mists of Ravenloft and consists of the Tower itself as well as a maze that stretches around it. The second part consists of the bedroom of a grieving widow, one whose grief is so deep that she is willing to do anything to get her dead husband back. And the third part consists of the nearest cemetery.",
+								"Leederik is the worst perversion of consent and a living embodiment of gaslighting. When he senses a widow who misses her husband so much that she's willing to do anything, he will open a portal for one hour to her bedroom. The door will become locked, and while she can leave at any time that she wants, no one else can enter, and he cannot leave. He then spends that time convincing the grieving widow that he is the spirit of her dead husband, leading her to believe that she can still be with him if only she can rescue him. This goes on night after night, though he seeks consent at each stage, and only moves on if she lets him. This is of course increasingly unlikely as time goes on, as her will is destroyed and she starts to disappear into her own shell during the day, only for her to come out at night for the one hour that she has with him. Eventually, she becomes willing to steal, lie, and even murder for his attention — because he instills the fear that he'll never return and she'll lose her husband permanently. And that is when he makes his ultimate move. On the final night, he beckons to her, asking her to forsake the rest of the world and follow him where he leads. This is to the graveyard, where they appear at the gates of the cemetery, and then they wander onwards to an open grave. There, in front of a stone engraved with the woman's name is a large rectangular pit, with no bottom. This is a portal to his domain, to the laby-rinth itself, and the woman is never seen again. The only thing left behind is a single garment at the grave.",
+								"In fact, she does not die, and anyone can use the portal while it's open. (It opens every night at the cemetery for the hour that he is in her bedroom — anyone ob-serving the grieving widow could put this together, as the victims tend to haunt the cemetery during the day (where the portal is closed and the Phantom Lover is in their domain) without knowing why. The poor victim instead languishes in the labyrinth, unable to survive in the damp, dark realm, and unable to leave. Perhaps she is simply too weak, or perhaps she is paralyzed by the realization of what she has done. This eventually leads to her death, and the cycle then starts again, as the Phantom Lover is doomed to always experience loneliness, no matter how much they want it otherwise. Adventures within this domain should involve foiling the Phantom Lover. For while they cannot be slain while grief and sorrow exist within the multiverse, they can be stopped — at least temporarily. Perhaps the heroes know a friend who has suffered a terrible loss and has become a widow. She might mention that she's been having visions of her husband (perhaps she's even somewhat resistant to his advances), but in order to truly save her, they'll need to confront the Phantom Lover directly, and destroy them within their own domain.",
+								{
+									"type": "table",
+									"caption": "L'île de la Tempête",
+									"colLabels": [
+										"Detail",
+										"Description"
+									],
+									"colStyles": [
+										"col-3 text-center",
+										"col-9"
+									],
+									"rows": [
+										[
+											"Culture Level",
+											"Chivalrous"
+										],
+										[
+											"Climate & Terrain",
+											"Temperate, underground"
+										],
+										[
+											"Year Formed",
+											"565 BC"
+										],
+										[
+											"Population",
+											"1"
+										],
+										[
+											"Races (%)",
+											"Other 100%"
+										],
+										[
+											"Languages",
+											"{@language Common|PHB}, Any"
+										],
+										[
+											"Religions",
+											"None"
+										],
+										[
+											"Government",
+											"None"
+										],
+										[
+											"Ruler(s)",
+											"The Phantom Lover"
+										],
+										[
+											"Darklord(s)",
+											"The Phantom Lover"
+										],
+										[
+											"Nationality",
+											"None"
+										],
+										[
+											"Analog",
+											"Dracula"
+										],
+										[
+											"Neighboring domain(s)",
+											"The Nocturnal Sea (in theory the Phantom Lover has access to a tiny part of all other domains)"
+										]
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/WZYYmhz.jpg"
+									}
+								},
+								{
+									"type": "entries",
+									"name": "Local Fauna",
+									"page": 293,
+									"entries": [
+										"There are no animals of any sort within the domain that contains Leederik's Tower. Nothing lives here, and there is nothing here to sustain anyone."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Local Flora",
+									"page": 294,
+									"entries": [
+										"Like animals, there are no plants here. The under-ground environment is empty, while water drips from the sky above the tower (the labyrinth has no sky as it is entirely underground, and the tower sits within a large cavern). Even light dies here — torches and fire sputter out almost immediately after arriving, and even magical lighting only lights up a small five-foot square in a strange red glow."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Native Horrors",
+									"page": 294,
+									"entries": [
+										"There are no natives here, except for the Phantom Lover."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Terrain Type",
+									"page": 294,
+									"entries": [
+										"The entirety of the domain is encapsulated within an underground cavern, but only the tower can see the “sky”, as the labyrinth itself is entirely underground. Everything here is stone, though slick and shiny from the water that drips down everything."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Important Landmarks",
+									"page": 294,
+									"entries": [										
+										{
+											"type": "entries",
+											"name": "Leederik's Tower",
+											"page": 294,
+											"entries": [
+												"Leederik's Tower is a tower with no windows, but a small stair at the bottom of the tower leads into a room at the top where he keeps his living victims when they're not in the labyrinth. From this top room, the roof can be accessed, but one cannot see much from the crenelated top of the tower. All that lies beyond the tow-er is eternal darkness and fog. Even the ground is not visible, and a dropped stone will fall for all eternity. At least, no sound is ever heard."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Towns and villages",
+									"page": 294,
+									"entries": [
+										"None"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Fun Fact",
+									"page": 294,
+									"entries": [
+										"The Phantom Lover MUST obtain consent in order to continue with their escapades. If a woman that they are attempting to enthrall resists and denies them, they cannot continue their pursuit of her and must start over elsewhere."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "The Phantom Lover",
+									"page": 295,
+									"entries": [
+										{
+											"type": "quote",
+											"entries": [
+												"Erik returned to me last night!",
+												"He was here! As handsome as ever and as real as myself!",
+												"We will be together soon. He says so. He just has to prepare the way.",
+												"Soon. I cannot wait. Soon."
+											],
+											"by": "Diary of Ingrid von Schloss (deceased)"
+										},
+										"Describing the Phantom Lover is like attempting to describe a dream. Their form changes to match his victims' ideal of beauty, yet no matter what form they take, their left foot remains scaled and clawed, like that of a drag-on. Their hair can be of any color or any style; long, short, bald, blonde, auburn or whatever. One reported form that they take is that of a great black snake with solid blood red eyes; none can tell whether this is their true form or just one of the many in their repertoire.",
+										{
+											"type": "entries",
+											"name": "Background",
+											"page": 295,
+											"entries": [
+												"The first record of a victim of the Phantom Lover is from the world of Toril. There is no name associ-ated with this, so the victim may be one woman or many that fell to the Phantom's wiles.",
+												"The woman's fiancé was brutally taken from her on their wedding day. His corpse was found suspended from the ceiling, nailed to it by his wrists, his organs ripped out and looped on the floor beneath him. Like an abattoir, blood coated the ceiling, walls and floor. His family and friends had been outside the door and not one of them had heard a single sound.",
+												"The young woman never recovered, and withdrew from her family, rarely eating or sleeping. Never talking. As time went on she grew pale and gaunt.",
+												"Then one night her lover returned to her. It was impossible. She knew that, but here he was. She wept and gladly accepted him into her arms. He smelled sweet. He told her all would be well. It was just a matter of time. She smiled for the first time in months.",
+												"Her lover returned night after night. Telling her it was almost time. The woman's family wondered at the sudden change in her mood, for now she ate and laughed, even though with the passing of every night she seemed to become increasingly pale and gaunt. This continued un-til the night her lover appeared and told her that it was time. Finally they could be together forever. They would be wed beneath the stars. The woman took out her wedding dress. She had not touched it since the wedding day. She dressed herself, brushing her long hair, and as she put on her garter, her fiancé held out his hand. She followed him, all the way to her family graveyard. Her husband-to-be beckoned her to an open grave. This is how they could be together. This would be their marital home. He beckoned once more. Her family discovered she was missing the fol-lowing morning. The only evidence that was found was her garter, lying abandoned at the bottom of an empty grave. She was never seen again."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Current Sketch",
+											"page": 295,
+											"entries": [
+												"The Phantom Lover's domain is one of the few domains that travels past the misty borders of Raven-loft. The Lover seems to open a small portal through into other worlds, reaching the chamber of a woman whose heart has been broken through the darkest tragedy. As the Phantom Lover enters the woman's chambers, the windows and doors lock and magically become almost im-pregnable. Sweet smelling mists loop and curl around the windows.. The portal only opens at night, when the wom-an is alone, and closes with the rising of the sun, taking the Lover with it."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Darklord's Tactics",
+											"page": 295,
+											"entries": [
+												"The Phantom Lover will not fight within the chambers of their conquest. They merely disap-pear with a longing look toward the bride-to-be. In their domain, it is another story entirely. The Phantom Lover can move any object or person with powerful telekinesis, raise the remains of their past victims, and is possessed of tremendous strength and vitality. Their abilities have been compared to a vampire, and the comparison has some merit, though the Lover seems to have none of their weaknesses.",
+												"The Lover may try to {@i charm} some of their opponents into protecting them. Against foes that can't be charmed the Lover will use their life draining touch. If one of their oppo-nents is a female with a high Charisma (15 or higher), the Phantom Lover may try to take abduct them and imprison within their tower, where they will drain her of her force of will and love of life before returning to the Material Plane to search for more victims. It is unknown if the Phantom can die. Their wounds heal no matter how grievous. The Phantom thinks they are immortal, but is unwilling to test the theory."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Borders",
+											"page": 295,
+											"entries": [
+												"The Phantom Lover's domain is surrounded by mists, and when the Lover closes their borders, the laby-rinth that leads to them turns into an impossible series of loops and turns that eventually returns to the base of the tower. A creature who jumps from the tower disappears and awakens somewhere in the labyrinth, unharmed but still at the mercy of the Phantom."
+											]
+										},
+										{
+											"name": "Leederik, the Phantom Lover",
+											"type": "entries",
+											"page": 296,
+											"entries": [
+												{
+													"type": "statblock",
+													"tag": "creature",
+													"source": "Darklords&DomainsVol1",
+													"name": "Leederik, the Phantom Lover"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Liffe",
+							"page": 298,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/HgycDjx.jpg"
+									}
+								},
+								{
+									"type": "quote",
+									"entries": [
+										"Virtue is beauty, but the beauteous evil. Are empty trunks o'erflourished by the devil."
+									],
+									"by": "William Shakespeare"
+								},
+								"Liffe is the home of Baron Evensong, a vain bard, who believes himself to be an arbiter of what is moral and right. The man craves attention, so of course, the Mists deny him this for years on end.",
+								"Liffe itself is actually a relatively large island, but a quiet one. Home to only three settlements, and less than 7,000 inhabitants, it has become something of a stopover for sailors on the Nocturnal sea — a useful place for someone to restock supplies and food, and maybe trade off a few wares. As a result, Liffe is the kind of place that the locals describe as “nothing inter-esting ever happens here”, but they'd be very wrong. Neverwere mansion is the crux of many (true) local ru-mors about disappearances and the like, while Moon-dale has been subjected to not only vampire attacks but those of werewolves too. The town of Armeikos, meanwhile, was subjected to a strange ghost that pos-sessed people and forced them to commit murders on his behalf. So “nothing ever happens” is patently un-true. With everything going on in such a small place, it's difficult to nail down a particular theme, but the sto-ries that take place are often the ones that Baron Lyron Evensong creates during the centuries that he spends in his exile during the night in Neverwere Mansion. Of course, he believes that he is only writing stories about heroes overcoming evil, and his murders during the night never strike him as wrong. Adventures in Liffe al-most inevitably involve going to Neverwere Mansion for the night, as the Baron invites anyone interesting to spend the night, knowing full well that he cannot prey upon the locals without arousing suspicion. Long-lived heroes, like elves and dwarves, are particularly likely to be invited, as is anyone that the Baron might find at-tractive. Of course, getting into the Mansion is the easy part. Slaying the Baron or surviving 100 years might not prove as easy.",
+								{
+									"type": "table",
+									"caption": "L'île de la Tempête",
+									"colLabels": [
+										"Detail",
+										"Description"
+									],
+									"colStyles": [
+										"col-3 text-center",
+										"col-9"
+									],
+									"rows": [
+										[
+											"Culture Level",
+											"Medieval"
+										],
+										[
+											"Climate & Terrain",
+											"Temperate, forest, hill, and plains"
+										],
+										[
+											"Year Formed",
+											"750 BC"
+										],
+										[
+											"Population",
+											"6.000"
+										],
+										[
+											"Races (%)",
+											"Humans 98%, Other 2%"
+										],
+										[
+											"Languages",
+											"{@language Common|PHB}, {@language Sithican|Darklords&DomainsVol1}, {@language Vaasi|Darklords&DomainsVol1}"
+										],
+										[
+											"Religions",
+											"Ezra, the Lawgiver"
+										],
+										[
+											"Government",
+											"Aristocracy"
+										],
+										[
+											"Ruler(s)",
+											"Baron Lyron Evensong"
+										],
+										[
+											"Darklord(s)",
+											"Baron Lyron Evensong"
+										],
+										[
+											"Nationality",
+											"Liffen"
+										],
+										[
+											"Analog",
+											"Orkney islands"
+										],
+										[
+											"Neighboring domain(s)",
+											"The Nocturnal Sea"
+										]
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/bQxU3xJ.jpg"
+									}
+								},
+								{
+									"type": "entries",
+									"name": "Local Fauna",
+									"page": 299,
+									"entries": [
+										"Liffe is mostly tamed, with little in the way of wildlife. Most of what you'll find on Liffe are livestock — es-pecially sheep, as the Liffen grow them hardy and strong, as they're able to subsist on the grass that grows here."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Local Flora",
+									"page": 299,
+									"entries": [
+										"LIffe is a place of farmland, grass, and light forests. The forests here do not hide much in the way of wild-life or monsters, as they're far too light to do so, and the grasslands are mainly home to herds of sheep. The farmland produces plenty of crops, but because of the lack of nutrients in the soil, they're considered slightly sub-standard by most merchants. Liffe does have one particular crop that stands out, a strange blue type of wheat. Used correctly during distilling, it produces an excellent whiskey that retains its blue color. It has proven to be the Liffe's most profitable export, and one of the only reasons that the island's nobles still have wealth to work with, as they would otherwise have spent it all on foreign merchants' wares."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Native Horrors",
+									"page": 299,
+									"entries": [
+										"There are few wolves or any of the predators found elsewhere, but there are enough so that a casual sighting of one doesn't have the locals screaming “werewolf”. But there are werewolves here, as well as vampires and other monsters. And they are the real danger — monsters that take on the appearance of the people around them. "
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Terrain Type",
+									"page": 299,
+									"entries": [
+										"Liffe has a mild climate and should be able to grow more crops than they do, but the quality of what comes out is, unfortunately, sub-par due to the poor soil. The forests, while filled with conifers, aren't deep enough to supply much lumber, so while it's enough to have a small fishing fleet, and keep it in repair, that's all it can do. The natural harbor at Armeikos is what brings people to Liffe as it's an ex-cellent stopover on the Nocturnal Sea, and the locals have built warehouses to keep goods flowing to and from the island."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Important Landmarks",
+									"page": 300,
+									"entries": [										
+										{
+											"type": "entries",
+											"name": "Neverwere Mansion",
+											"page": 300,
+											"entries": [
+												"Neverwere Mansion is the home of Baron Evensong, and situated in Claveria. It is a place with a dark rep-utation among the locals. They tell stories of people entering every day and then disappearing without a trace during the night over the last fourteen days. As this happens every night, it has aroused a lot of suspicion, and it is being investigated though Baron Lyron Evensong appears to be unworried about this.",
+												"The mansion is well-built, but nothing special. It's solid and nice looking and quite sizable with a lot of guest rooms. Inside the mansion, time passes differ-ently. Each night inside lasts 100 years and there is no escape, except for an endless void.", 
+												"For those unlucky enough to be caught inside, they either die of old age while stuck there — forced to entertain the Baron for a century. Or they get close to discovering his secret and the way to escape, and he murders them. Either way, the Baron finds his entertainment one way or another."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Towns and villages",
+									"page": 300,
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Armeikos",
+											"page": 300,
+											"entries": [
+												"Armeikos is the largest settlement on Liffe, with some 3,000 inhabitants. It has a deep natural harbor, and it is the seat of the emerging middle class of merchants. A number of warehouses line the docks here enabling the merchants and the visiting sailors to conduct business. Armeikos is also home to the only institute of higher learning on Liffe, a college, though it is not dedicated to any particular line of learning. So far, the study of economics and trade stands out, but should any gifted teacher appear or be hired here, they could easily take it in any direction.",
+												"Armeikos suffered at the hands of a strange killer recently — Ejrik Spellbender, a disembodied ghost that inhabited the body of an unknowing adventurer. Using the body, Ejrik took great pleasure in murder-ing the weak and hearing their pleas for mercy. Ejrik was defeated and his heart, the one that magically allowed him to take control over others and live on, was supposedly destroyed."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Claveria",
+											"page": 300,
+											"entries": [
+												"Claveria is a quiet town of 1,100 souls, without much to speak of. It is surrounded by farms that grow wheat and other crops. The locals are a very solemn bunch, who do not think highly of their town leader, Baron Evensong, even though they are all his tenants. Rumors fly of people who enter his mansion and how never leave again. This is seemingly a daily occurrence, but every time that the Baron emerges he carries with him a new song or book, making him easily the most prolific writer and song maker on the island."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Moondale",
+											"page": 300,
+											"entries": [
+												"Moondale is a town of 1,600. It is the home of the Liffe militia but often suffers from unseemly winter weather, with the whole place sometimes being cut off from the rest of the island for weeks on end by extremely deep snow drifts. During those times, the militia usually tries to disperse across the island, before the winter storms hit.",
+												"Moondale has had a troubled past. Almost twenty years ago, it suffered under the depredations of a number of vampires, who were eventually fought off by visiting adventurers. The only surviving adventur-er was Dante Lysin, who settled down and took over the local inn, which he has ever since. More recently, the town suffered a number of werewolf attacks, where suspicions had been laid on some traveling mercenaries. They turned it around and revealed that the true werewolf was a captain of the militia, a man named Alec Rapacion.",
+												"Whether that is the end of Moondale's troubles remains to be seen."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Fun Fact",
+									"page": 300,
+									"entries": [
+										"The Liffen whiskey has become famed across the Core and is the main export from the island. The blue liquid is said by some to have magical powers, though this is patently untrue. It is extremely potent, and local doctors in Lamordia and Richemulot have discovered that the whiskey can be used as an anti-septic. This makes it much cheaper than the normal methods for cleaning that the doctors would use, though it does stain the area blue for a few weeks afterward, making it very easy to see where surgery has taken place."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Baron Lyron Evensong",
+									"page": 301,
+									"entries": [
+										{
+											"type": "quote",
+											"entries": [
+												"Greetings!",
+												"Welcome to my home, brave adventurers!",
+												"Please eat, drink. Join me in conversation.",
+												"The feast is already laid out.",
+												"Eat like it's the last day of your life."
+											],
+											"by": "Baron Lyron Evensong"
+										},
+										"Baron Lyron Evensong is a tall thin man with blonde hair and blue eyes. The baron dresses well, prefer-ring brighter colors, especially white and bright red. When he first meets someone, he is friendly and outgoing, but soon loses interest.",
+										"Lyron is a natural talker who has a way with people, instantly likeable, but will quickly turn every conver-sation to his favorite topic, himself. Lyron is a natural actor who creates a convincing illusion of normality for a time, but it always falls apart, revealing the truth; that Lyron is a complete sociopath who cares about no one save himself.",
+										{
+											"type": "entries",
+											"name": "Background",
+											"page": 301,
+											"entries": [
+												"Lyron Evensong was a bard of exceptional ability, who came from the same world as Lord Soth and Vlad Drakov. His bardic talents were only exceeded by his complete self absorption. Lyron was incapable of seeing other people as anything but tools to be used and discarded. It mattered not whether his victims were women nor men, rich nor poor, royalty nor the basest peasant, as long as they did what Lyron wanted. He thought this was the natural way of things, and that anything he forced his victims to do was inherently good, because Lyron himself was inherently good.",
+												"As his fame as a performer grew, Lyron amassed a better treasury than most kings. He paid a wizard to enchant his favorite instrument, a harpsichord, to en-snare the senses of those who heard it. If the wizard did his work well, the harpsichord would play of its own accord any song Lyron knew just as well as he could, and it would cast a spell on anyone who heard it, making them into Lyron's slaves. But something went wrong. Horribly wrong.",
+												"The wizard didn't make the harpsichord part of Lyron, he made Lyron part of the harpsichord. The bard couldn't move more than a few hundred feet from the instrument. The harpsichord couldn't play on its own, but Lyron could change from a living, breathing being to an immaterial specter. While he was immaterial, Lyron couldn't be attacked by blade nor spell, but could cast spells of his own.",
+												"Lyron continued to manipulate everyone around him to gain himself more wealth and favors, but with a new sadistic streak. The bard thought he was untouchable. A god. He could get away with murder, blackmail, and thievery, and no one could stop him.",
+												"The few that resisted Lyron's powerful compulsions soon became the target of his undying hatred. Most met their end thanks to Lyron's wickedly sharp dagger. The few that Lyron thought might prove able to defeat him were betrayed by enspelled friends or family.",
+												"One night, Lyron was the guest of a small noble family, well off, but extremely well connected. For some unfathomable reason the mother resisted Lyron's spells. Lyron, infuriated beyond comprehension, her children slaughter their mother, then feast on the remains. The Dark Powers took Lyron into Ravenloft and gave him his own domain, Claveria."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Current Sketch",
+											"page": 301,
+											"entries": [
+												"Lyron cares little for his domain. During the day he roams around his manor house, keeping an ear out for rumors from the village about new or interesting strangers that entered into the do-main. Adventurers are a particular favorite. Once he finds these strangers, he invites them to his manor house for a feast.",
+												"In addition to his domain, the Dark Powers gifted Lyran with a unique curse. Every night the library within his manor house becomes its own domain. Lyran and any guests that are in the library when the sun sets are trapped in the library for a century. Only a single night passes in Claveria. The library never runs out of air and the living trapped in it have no need of food or water, yet continue to age normally. Lyron himself does not age, and has spent over a thousand years trapped in the library of his own home. The only way out is to destroy his enchanted harpsichord, sitting in a quiet corner of the library."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Darklord's Tactics",
+											"page": 301,
+											"entries": [
+												"Lyron disdains combat, finding it boring. The Dark Powers won't let their plaything die anyway. He's been killed several times, only to be returned to life twenty-four hours later.",
+												"When Lyron is immaterial, no attack can affect him, but Lyron cannot inflict any hit point damage. Lyron can cast spells from the illusion and enchantment schools. When he is in his material form he can be attacked normally. Lyron is always armed with a dagger and has several weapons hidden around the library. Lyron will ignore any physical threat, unless they attack his harpsichord. If the instrument is in danger Lyron immediately returns to material form and attacks."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Borders",
+											"page": 301,
+											"entries": [
+												"Lyron cannot close the borders to Claveria. During the night the library of the manor house becomes a pocket domain that everyone, including Lyron, is trapped inside."
+											]
+										},
+										{
+											"name": "Baron Lyron Evensong",
+											"type": "entries",
+											"page": 302,
+											"entries": [
+												{
+													"type": "statblock",
+													"tag": "creature",
+													"source": "Darklords&DomainsVol1",
+													"name": "Baron Lyron Evensong"
+												}
+											]
+										}
+									]
 								}
 							]
 						}
@@ -38069,7 +39121,7 @@
 				{
 					"name": "Summon Bowlyns",
 					"entries": [
-						"Pieter calls upon the damned spirits of the sailors that were doomed in the seas to assist him. {@dice 2d4+1} bowlyns appear to assist him. This ability can be used two times per day. "
+						"Pieter calls upon the damned spirits of the sailors that were doomed in the seas to assist him. {@dice 2d4+1} bowlyns appear to assist him. This ability can be used two times per day."
 					]
 				},
 				{
@@ -38081,43 +39133,43 @@
 				{
 					"name": "Misty Escape",
 					"entries": [
-						"Pieter's instinctive connection to the Mists allows him to escape from the danger of certain area effects, such as a red dragon's fiery-breath or a fireball spell. When he is subjected to an effect that allows him to make a Dex-terity saving throw to take only half damage, if he succeeds on the saving throw he may use his reaction to Misty Step to the nearest unoccupied square, up to 20ft away and instead he takes no damage. "
+						"Pieter's instinctive connection to the Mists allows him to escape from the danger of certain area effects, such as a red dragon's fiery-breath or a fireball spell. When he is subjected to an effect that allows him to make a Dex-terity saving throw to take only half damage, if he succeeds on the saving throw he may use his reaction to Misty Step to the nearest unoccupied square, up to 20ft away and instead he takes no damage."
 					]
 				},
 				{
 					"name": "Misty Vision",
 					"entries": [
-						"Fighting in heavily obscured areas no longer troubles Pieter. Pieter can see through mist as if he had a 15ft blindsight. "
+						"Fighting in heavily obscured areas no longer troubles Pieter. Pieter can see through mist as if he had a 15ft blindsight."
 					]
 				},
 				{
 					"name": "Misty Form",
 					"entries": [
-						"Pieter moves so fluidly through the Mist, it is difficult for his foes to track him. When he uses Misty Step, he may then cast mirror image as part of the same bonus action without requiring spell components. These duplicates move with Pieter as normal. He may use this ability three times per day. "
+						"Pieter moves so fluidly through the Mist, it is difficult for his foes to track him. When he uses Misty Step, he may then cast mirror image as part of the same bonus action without requiring spell components. These duplicates move with Pieter as normal. He may use this ability three times per day."
 					]
 				},
 				{
 					"name": "Mist Clone",
 					"entries": [
-						"Pieter can shape the Mist around him to form a tangible duplicate of himself to aid him in combat. As an action, choose an unoccupied space within 20ft. A clone of Pieter appears in that square and is physically identical to him in appearance, including carried equipment— with the exception that all carried equipment on the clone has no magical properties. This ability lasts for 1 minute and cannot be used again until he finishes a long rest. The clone's ability scores, hit points, proficiency bonus and AC are identical to Pieter's stats at the moment of activating this ability, excluding any additional magic bonus(es) he might have had active— with the exception that the damage it deals is mag-ical for the purpose overcoming resistance and immunity to nonmagical attacks and damage.In addition it uses Pieter's Charisma modifier for all attack and damage rolls, and any attacks that the clone makes use only the base damage for the weapon it is wielding, regardless if the weapon(s) you were wielding had additional magical properties when ac-tivating this ability. If the clone is required to make a saving throw, roll a {@dice d20} and add 3 to determine whether it suc-ceeds or fails. As the clone is formed through Pieter's deep connection to the Mist, it can fight alongside him without requiring actions to issue it commands. Acting on Pieter's turn, he may have the duplicate take the following actions, in addition to its move action: The clone can take the attack action and can take a bonus action to attack if Pieter was wielding two weapons when he created the duplicate. The clone can interact with an object. The clone can Misty Step. The clone can take the Help action. The clone cannot speak or take any additional actions, reaction, or bonus actions other than the ones listed above, except actions taken in an attempt to free itself from a spell or condition— like escap-ing a grapple or trying to break free from a web spell. If the clone's hit points drop to 0 or if a spell or effect would cause it to no longer be on the same plane of existence as Pieter, it is destroyed. It is also immune to being {@condition charmed}, {@condition frightened}, {@condition petrified}, {@condition poisoned} and {@condition paralyzed}. "
+						"Pieter can shape the Mist around him to form a tangible duplicate of himself to aid him in combat. As an action, choose an unoccupied space within 20ft. A clone of Pieter appears in that square and is physically identical to him in appearance, including carried equipment— with the exception that all carried equipment on the clone has no magical properties. This ability lasts for 1 minute and cannot be used again until he finishes a long rest. The clone's ability scores, hit points, proficiency bonus and AC are identical to Pieter's stats at the moment of activating this ability, excluding any additional magic bonus(es) he might have had active— with the exception that the damage it deals is mag-ical for the purpose overcoming resistance and immunity to nonmagical attacks and damage.In addition it uses Pieter's Charisma modifier for all attack and damage rolls, and any attacks that the clone makes use only the base damage for the weapon it is wielding, regardless if the weapon(s) you were wielding had additional magical properties when ac-tivating this ability. If the clone is required to make a saving throw, roll a {@dice d20} and add 3 to determine whether it suc-ceeds or fails. As the clone is formed through Pieter's deep connection to the Mist, it can fight alongside him without requiring actions to issue it commands. Acting on Pieter's turn, he may have the duplicate take the following actions, in addition to its move action: The clone can take the attack action and can take a bonus action to attack if Pieter was wielding two weapons when he created the duplicate. The clone can interact with an object. The clone can Misty Step. The clone can take the Help action. The clone cannot speak or take any additional actions, reaction, or bonus actions other than the ones listed above, except actions taken in an attempt to free itself from a spell or condition— like escap-ing a grapple or trying to break free from a web spell. If the clone's hit points drop to 0 or if a spell or effect would cause it to no longer be on the same plane of existence as Pieter, it is destroyed. It is also immune to being {@condition charmed}, {@condition frightened}, {@condition petrified}, {@condition poisoned} and {@condition paralyzed}."
 					]
 				},
 				{
 					"name": "Ethereal Sight",
 					"entries": [
-						"Pieter can see 60 feet into the Ethereal Plane when it is on the Material Plane, and vice versa. "
+						"Pieter can see 60 feet into the Ethereal Plane when it is on the Material Plane, and vice versa."
 					]
 				},
 				{
 					"name": "Incorporeal Movement",
 					"entries": [
-						"Pieter can move through other creatures and objects as if they were difficult terrain. He takes 5 ({@damage 1d10}) force damage if he ends his turn inside an object. "
+						"Pieter can move through other creatures and objects as if they were difficult terrain. He takes 5 ({@damage 1d10}) force damage if he ends his turn inside an object."
 					]
 				},
 				{
 					"name": "Cloak of Mists",
 					"entries": [
-						"Tendrils of mist form and constantly wrap around Pieter protectively. Creatures targeting Pieter with ranged attacks suffer disadvantage on their attack rolls. A spell that creates strong winds such as gust stops the cloak from protecting the wearer for {@dice 1d4} turns. "
+						"Tendrils of mist form and constantly wrap around Pieter protectively. Creatures targeting Pieter with ranged attacks suffer disadvantage on their attack rolls. A spell that creates strong winds such as gust stops the cloak from protecting the wearer for {@dice 1d4} turns."
 					]
 				}
 			],
@@ -38157,7 +39209,7 @@
 				{
 					"name": "Misty Form",
 					"entries": [
-						"Pieter moves so fluidly through the Mist, it is difficult for his foes to track him. When he uses Misty Step, he may then cast mirror image as part of the same bonus action without requiring spell components. These duplicates move with Pieter as normal. He may use this ability three times per day. "
+						"Pieter moves so fluidly through the Mist, it is difficult for his foes to track him. When he uses Misty Step, he may then cast mirror image as part of the same bonus action without requiring spell components. These duplicates move with Pieter as normal. He may use this ability three times per day."
 					]
 				}
 			],
@@ -38180,13 +39232,13 @@
 				{
 					"name": "Pieter's Visage",
 					"entries": [
-						"Each non-undead creature within 60 feet of Pieter that can see him must succeed on a {@dc 15} Wisdom saving throw or be {@condition frightened} for 1 minute. If the save fails by 5 or more, the target also ages {@dice 1d4 × 10} years. A fright-ened target can repeat the saving throw at the end of each of its turns, ending the {@condition frightened} condition on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to Pieter's Visage for the next 24 hours. The aging effect can be reversed with a great-er restoration spell, but only within 24 hours of it occurring. If a target dies from this effect, they are transformed into Bowlyns and become part of Pieter's crew after 24 hours. "
+						"Each non-undead creature within 60 feet of Pieter that can see him must succeed on a {@dc 15} Wisdom saving throw or be {@condition frightened} for 1 minute. If the save fails by 5 or more, the target also ages {@dice 1d4 × 10} years. A fright-ened target can repeat the saving throw at the end of each of its turns, ending the {@condition frightened} condition on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to Pieter's Visage for the next 24 hours. The aging effect can be reversed with a great-er restoration spell, but only within 24 hours of it occurring. If a target dies from this effect, they are transformed into Bowlyns and become part of Pieter's crew after 24 hours."
 					]
 				},
 				{
 					"name": "Etherealness",
 					"entries": [
-						"Pieter enters the Ethereal Plane from the Material Plane, or vice versa. He is visible on the Material Plane while he is in the Border Ethereal, and vice versa, yet he can't affect or be affected by anything on the other plane. "
+						"Pieter enters the Ethereal Plane from the Material Plane, or vice versa. He is visible on the Material Plane while he is in the Border Ethereal, and vice versa, yet he can't affect or be affected by anything on the other plane."
 					]
 				}
 			],
@@ -38362,7 +39414,7 @@
 				{
 					"name": "Shadow Door",
 					"entries": [
-						"Ramsay can step from one shadow into another.  When he is in dim light or darkness, as a bonus action he can teleport up to 60 feet to an unoccupied space he can see that is also in dim light or darkness. He then has advantage on the first melee attack he makes before the end of the turn. If Ramsay is {@condition restrained} while he uses this ability, his shackles are left behind and he is freed. He can use this ability only within the confine-ments of his manor. "
+						"Ramsay can step from one shadow into another.  When he is in dim light or darkness, as a bonus action he can teleport up to 60 feet to an unoccupied space he can see that is also in dim light or darkness. He then has advantage on the first melee attack he makes before the end of the turn. If Ramsay is {@condition restrained} while he uses this ability, his shackles are left behind and he is freed. He can use this ability only within the confine-ments of his manor."
 					]
 				},
 				{
@@ -38380,37 +39432,37 @@
 				{
 					"name": "Control Over The Unnatural",
 					"entries": [
-						"Ramsay has total control over all of the unnatural creatures such as the Demonic Sawflies, Death Linen, Living Webs and Zombies, found in his domain. "
+						"Ramsay has total control over all of the unnatural creatures such as the Demonic Sawflies, Death Linen, Living Webs and Zombies, found in his domain."
 					]
 				},
 				{
 					"name": "Trapped Inside",
 					"entries": [
-						"Blake Ramsay cannot leave the manor. If forci-bly removed from the premises, he immediately fades away and reappears somewhere inside the house within 1 round. "
+						"Blake Ramsay cannot leave the manor. If forci-bly removed from the premises, he immediately fades away and reappears somewhere inside the house within 1 round."
 					]
 				},
 				{
 					"name": "Healer",
 					"entries": [
-						"Ramsay is an able physician, allowing him to mend wounds quickly and get his allies back in the fight. When he uses a healer's kit to stabilize a dying creature, that creature also regains 1 hit point. As an action, Ramsay can spend one use of a healer's kit to tend to a creature and restore {@dice 1d6 + 4} hit points to it, plus additional hit points equal to the creature's maximum number of Hit Dice. The creature can't regain hit points from this feat again until it finishes a short or long rest. "
+						"Ramsay is an able physician, allowing him to mend wounds quickly and get his allies back in the fight. When he uses a healer's kit to stabilize a dying creature, that creature also regains 1 hit point. As an action, Ramsay can spend one use of a healer's kit to tend to a creature and restore {@dice 1d6 + 4} hit points to it, plus additional hit points equal to the creature's maximum number of Hit Dice. The creature can't regain hit points from this feat again until it finishes a short or long rest."
 					]
 				},
 				{
 					"name": "Observant",
 					"entries": [
-						"Quick to notice details of his environment, if Ramsay can see a creature's mouth while it is speaking a language he understands, Ramsay can interpret what it's saying by reading its lips. In addition, Ramsay has a +5 bonus to his passive Wisdom (Perception) (included) and passive Intelligence (Investiga-tion) scores. "
+						"Quick to notice details of his environment, if Ramsay can see a creature's mouth while it is speaking a language he understands, Ramsay can interpret what it's saying by reading its lips. In addition, Ramsay has a +5 bonus to his passive Wisdom (Perception) (included) and passive Intelligence (Investiga-tion) scores."
 					]
 				},
 				{
 					"name": "Create Horror",
 					"entries": [
-						"Ramsay can spend 12 hours to create a Zombie or 30 days to create a Flesh Golem provided that he has the appropriate materials such as body parts. "
+						"Ramsay can spend 12 hours to create a Zombie or 30 days to create a Flesh Golem provided that he has the appropriate materials such as body parts."
 					]
 				},
 				{
 					"name": "Homunculus Servant",
 					"entries": [
-						"Ramsay was given a pet homunculus by a wizard. As a bonus action, Ramsay can command the {@creature homunculus|MM} (MM, pg. 188) to take an action. "
+						"Ramsay was given a pet homunculus by a wizard. As a bonus action, Ramsay can command the {@creature homunculus|MM} (MM, pg. 188) to take an action."
 					]
 				},
 				{
@@ -38434,13 +39486,13 @@
 				{
 					"name": "Homunculus Servant",
 					"entries": [
-						"Ramsay was given a pet homunculus by a wizard. As a bonus action, Ramsay can command the {@creature homunculus|MM} (MM, pg. 188) to take an action. "
+						"Ramsay was given a pet homunculus by a wizard. As a bonus action, Ramsay can command the {@creature homunculus|MM} (MM, pg. 188) to take an action."
 					]
 				},
 				{
 					"name": "Shadow Door",
 					"entries": [
-						"Ramsay can step from one shadow into another.  When he is in dim light or darkness, as a bonus action he can teleport up to 60 feet to an unoccupied space he can see that is also in dim light or darkness. He then has advantage on the first melee attack he makes before the end of the turn. If Ramsay is {@condition restrained} while he uses this ability, his shackles are left behind and he is freed. He can use this ability only within the confine-ments of his manor. "
+						"Ramsay can step from one shadow into another.  When he is in dim light or darkness, as a bonus action he can teleport up to 60 feet to an unoccupied space he can see that is also in dim light or darkness. He then has advantage on the first melee attack he makes before the end of the turn. If Ramsay is {@condition restrained} while he uses this ability, his shackles are left behind and he is freed. He can use this ability only within the confine-ments of his manor."
 					]
 				}
 			],
@@ -38460,13 +39512,13 @@
 				{
 					"name": "Extract Eyes",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}16 ({@damage 4d6 + 2}) slashing damage and one of the target's eyes is extracted. If both eyes are extracted, the target is permanently {@condition blinded}. "
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}16 ({@damage 4d6 + 2}) slashing damage and one of the target's eyes is extracted. If both eyes are extracted, the target is permanently {@condition blinded}."
 					]
 				},
 				{
 					"name": "Intellect Syringe",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one {@condition incapacitated} and {@condition restrained} humanoid. {@h}4 ({@damage 1}) piercing damage. The target remains {@condition incapacitated} and dies if a {@spell greater restoration|PHB} or a {@spell heal|PHB} spell is not cast on it within 10 minutes. Ramsay immediately gains {@dice 1d6} points of Intelligence, up to a maximum of 20. The Intelligence increase lasts for one month, after which the points fade away at the rate of one point per week. Immediately after injecting the foreign brain fluids, Ramsay must succeed on a {@dc 15} Wisdom saving throw or lose one point of Wisdom. If Ramsay's Wisdom is reduced to 3 or less, the recipient immediately becomes homicidally insane, with no saving throw allowed. The insanity can be cured by a wish or a heal spell. "
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one {@condition incapacitated} and {@condition restrained} humanoid. {@h}4 ({@damage 1}) piercing damage. The target remains {@condition incapacitated} and dies if a {@spell greater restoration|PHB} or a {@spell heal|PHB} spell is not cast on it within 10 minutes. Ramsay immediately gains {@dice 1d6} points of Intelligence, up to a maximum of 20. The Intelligence increase lasts for one month, after which the points fade away at the rate of one point per week. Immediately after injecting the foreign brain fluids, Ramsay must succeed on a {@dc 15} Wisdom saving throw or lose one point of Wisdom. If Ramsay's Wisdom is reduced to 3 or less, the recipient immediately becomes homicidally insane, with no saving throw allowed. The insanity can be cured by a wish or a heal spell."
 					]
 				}
 			],
@@ -38551,7 +39603,7 @@
 						"name": "Borders",
 						"page": 279,
 						"entries": [
-							"When Dr Ramsay closes the border, any ship or desperate swimmer attempting to flee disap-pears once it reaches 100 yards from shore and reap-pears on one of the beaches of the Isle. "
+							"When Dr Ramsay closes the border, any ship or desperate swimmer attempting to flee disap-pears once it reaches 100 yards from shore and reap-pears on one of the beaches of the Isle."
 						]
 					},
 					{
@@ -38574,6 +39626,1846 @@
 						"href": {
 							"type": "external",
 							"url": "https://i.imgur.com/YtYkaJ9.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Lady of Ravens (Raven Form)",
+			"source": "Darklords&DomainsVol1",
+			"page": 285,
+			"size": [
+				"T"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 2,
+				"formula": "1d4"
+			},
+			"speed": {
+				"walk": 10,
+				"fly": 50
+			},
+			"str": 2,
+			"dex": 14,
+			"con": 10,
+			"int": 14,
+			"wis": 16,
+			"cha": 22,
+			"skill": {
+				"perception": "+3"
+			},
+			"passive": 13,
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Mimicry",
+					"entries": [
+						"The raven can mimic simple sounds it has heard, such as a whisper or chitter. A hearer can discern the sounds are imitations with a successful {@dc 10} Wisdom ({@skill Insight|XPHB}) check."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Beak",
+					"entries": [
+						"{@atkr m} {@hit 4}, reach 5 ft. {@h}1 Piercing damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Mimicry"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"token": {
+				"name": "Raven",
+				"source": "MM"
+			},
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/raven.mp3"
+			},
+			"fluff": {
+				"entries": [
+					"The Dark Powers have gifted the Lady the ability to change her form. She can use an action to magically transform into a raven or back into her true form. While in raven form, she replaces her statistics with that of a {@creature raven|MM} except for her Intelligence, Wisdom and Charisma scores {@creature Lady of Ravens (Raven Form)|Darklords&DomainsVol1}. While she is transformed she cannot speak, attack, or cast spells. Transforming doesn't break her concentration on a spell she has already cast, or prevent her from taking actions that are part of a spell, such as {@spell call lightning|PHB}. She can still use class features while transformed. If she is reduced to 0 hit points or falls unconscious she transforms back into her true form. Any excess damage from being reduced to 0 hit points is carried over to her true form."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/tokens/MM/Raven.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Lady of Ravens",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"source": "Darklords&DomainsVol1",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item robe of the archmagi|dmg}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d6 + 36",
+				"average": 108
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 7,
+			"dex": 12,
+			"con": 14,
+			"int": 14,
+			"wis": 16,
+			"cha": 22,
+			"passive": 13,
+			"cr": "15",
+			"shortName": "Lady of Ravens",
+			"page": 285,
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"save": {
+				"con": "+7",
+				"cha": "+11"
+			},
+			"skill": {
+				"arcana": "+7",
+				"deception": "+11",
+				"history": "+7",
+				"persuasion": "+11"
+			},
+			"resist": [
+				"necrotic"
+			],
+			"conditionImmune": [
+				"charmed"
+			],
+			"trait": [
+				{
+					"name": "Improved Initiative",
+					"entries": [
+						"The Lady gains a +5 bonus to her initiative rolls."
+					]
+				},
+				{
+					"name": "Feather Roost",
+					"entries": [
+						"If slain in combat, the Lady of Ravens will disappear in an explosion of mist and black feathers; one week later at sunrise one of the ravens circling the tower will swoop to the floor of the highest room in the tower and transform into a petite woman with black hair and eyes and white skin. The transformation takes 10 rounds and if the Lady is slain during this transformation she is permanently killed. During that week, the border will remain open and the Lady's summoned minions and the transformed humanoids will be under no authority; they may flee, attack, and protect the Lady depending on circumstances. Turning them back into their original form however is impossible, short of a {@spell wish} spell."
+					]
+				},
+				{
+					"name": "Raven Telepathy",
+					"entries": [
+						"The Lady can communicate with any raven within her domain telepathically. Additionally, as an action, she can see through the raven's eyes and hear what it hears until the start of her next turn, gaining the benefits of any special senses that the raven has. During this time, she is deaf and blind with regard to her own senses."
+					]
+				},
+				{
+					"name": "Touch of the Claw",
+					"entries": [
+						"When the Lady casts a spell with a range of touch, a raven that she can see can deliver the spell as if it had cast the spell. The raven must be within 100 feet of her, and it must use its Reaction to deliver the spell when she casts it. If the spell requires an Attack roll, she uses her Attack modifier for the roll."
+					]
+				},
+				{
+					"name": "Permanent Tongues",
+					"entries": [
+						"The Lady is permanently under the effect of the {@spell tongues|PHB} spell."
+					]
+				},
+				{
+					"name": "Circe's Eye (1/Day)",
+					"entries": [
+						"Once per day, the Lady may cause any and all persons she can see to make a {@dc 22} Wisdom saving throw or be transformed into a {@creature raven|MM}. There is no maximum number that can be affected, and she may protect selected individuals from the spell. If she is unaware of a person, (for example, due to {@spell invisibility|PHB}) this ability does not affect that person. Persons transformed into ravens in this fashion instantly fall under her control. All creatures transformed revert to their original form if they leave the domain, if the Lady dies or with a {@spell wish|PHB} spell."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The Lady has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Claw of the Raven",
+					"entries": [
+						"The Lady's spells that deal Cold or Necrotic damage deal 6 additional damage. In addition, whenever she kills a creature on her turn, she gains 9 temporary Hit Points. Temporary points taken from this ability stack. She can also spend 2 sorcery points to double the temporary hit points gained from this feature."
+					]
+				},
+				{
+					"name": "Staff of the Black Claw",
+					"entries": [
+						"Whenever the Lady scores a critical hit with a spell attack, the target takes an extra {@damage 3d6} necrotic damage."
+					]
+				},
+				{
+					"name": "Wing of the Raven(1/Day)",
+					"entries": [
+						"The Dark Powers have gifted the Lady the ability to change her form. She can use an action to magically transform into a raven or back into her true form. While in raven form, she replaces her statistics with that of a {@creature raven|MM} except for her Intelligence, Wisdom and Charisma scores {@creature Lady of Ravens (Raven Form)|Darklords&DomainsVol1}. While she is transformed she cannot speak, attack, or cast spells. Transforming doesn't break her {@status Concentration|XPHB} on a spell she has already cast, or prevent her from taking actions that are part of a spell, such as {@spell call lightning|PHB}. She can still use class features while transformed. If she is reduced to 0 hit points or falls {@condition unconscious} she transforms back into her true form. Any excess damage from being reduced to 0 hit points is carried over to her true form."
+					]
+				},
+				{
+					"name": "Call of the Raven",
+					"entries": [
+						"Spells the Lady casts ignore resistances to Cold and Necrotic damage and treat immunities to Cold and Necrotic damage as resistances. In addition, the lady can spend 5 sorcery points to unleash the power of the Ravens. Each creature of the Lady's choice in a 60-foot cube originating from her must make a {@dc 22} Charisma saving throw. A cloud of frozen feathers rain from above, causing {@damage 5d10} Cold damage and {@damage 5d10} Necrotic damage to a target on a failed save; this damage is halved with a successful save."
+					]
+				},
+				{
+					"name": "Spell Sniper",
+					"entries": [
+						"When the Lady casts a spell that requires her to make an attack roll, the spell's range is doubled.Her ranged spell attacks ignore half cover and three-quarters cover."
+					]
+				},
+				{
+					"name": "Font of Magic",
+					"entries": [
+						"The Lady has 18 sorcery points. She regains all spent sorcery points when she finishes a long rest.She can use her sorcery points to gain additional spell slots, or sacrifice spell slots to gain additional sorcery points.Creating Spell Slots/sorcery points. She can transform unexpended sorcery points into one spell slot or vice versa as a bonus action on her turn. The Creating Spell Slots table of the Sorcerer shows the cost of creating a spell slot of a given level. She can create spell slots no higher in level than 5th. Any spell slot she creates with this feature vanishes when she finishes a long rest."
+					]
+				},
+				{
+					"name": "Metamagic",
+					"entries": [
+						"The Lady can alter the effects of her spells by using Metamagic. She can use only one Metamagic option on a spell when she casts it, unless otherwise noted. She knows the following Metamagic options: {@i {@optfeature Careful Spell|PHB}, {@optfeature Extended Spell|PHB}, {@optfeature Heightened Spell|PHB}, {@optfeature Quickened Spell|PHB}, {@optfeature Subtle Spell|PHB}}. Each option is described in the Sorcerer class in the Player's Handbook."
+					]
+				},
+				{
+					"name": "Significant Possessions",
+					"type": "inset",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"1 {@item Robe of the Archmagi|DMG}",
+								"1 {@item Staff of the Black Claw|Darklords&DomainsVol1}",
+								"1 {@item Cloak of Charisma|Darklords&DomainsVol1}"
+							]
+						}
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Lady is a 18th-level spellcaster. Her spellcast-ing ability is Charisma (spell save {@dc 22}, +11 to hit with spell attacks). The Lady has the following Sorcerer spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell chill touch|PHB}",
+								"{@spell dancing lights|PHB}",
+								"{@spell light|PHB}",
+								"{@spell mage hand|PHB}",
+								"{@spell prestidigitation|PHB}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell chaos bolt|XGE}",
+								"{@spell charm person|PHB}",
+								"{@spell enlarge|Darklords&DomainsVol1}",
+								"{@spell feather fall|PHB}",
+								"{@spell protection from evil and good|PHB}",
+								"{@spell shield|PHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell augury|PHB}",
+								"{@spell blindness/deafness|PHB}",
+								"{@spell detect thoughts|PHB}",
+								"{@spell hold person|PHB}",
+								"{@spell invisibility|PHB}",
+								"{@spell rope trick|PHB}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell fly|PHB}",
+								"{@spell speak with dead|PHB}",
+								"{@spell suggestion|PHB}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell death ward|PHB}",
+								"{@spell greater invisibility|PHB}",
+								"{@spell polymorph|PHB}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell dominate person|PHB}",
+								"{@spell geas|PHB}",
+								"{@spell hallow|PHB}",
+								"{@spell telekinesis|PHB}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell disintegrate|PHB}",
+								"{@spell Otiluke's freezing sphere|PHB}"
+							],
+							"slots": 2
+						},
+						"7": {
+							"spells": [
+								"{@spell symbol|XPHB}",
+								"{@spell teleport|XPHB}"
+							],
+							"slots": 2
+						},
+						"8": {
+							"spells": [
+								"{@spell maze|PHB}",
+								"{@spell power word stun|PHB}"
+							],
+							"slots": 1
+						},
+						"9": {
+							"spells": [
+								"{@spell power word kill|PHB}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CS"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"MA",
+				"AOE"
+			],
+			"action": [
+				{
+					"name": "Masterwork Dagger +2",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Touch of the Raven",
+					"entries": [
+						"{@atk ms} {@hit 11} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d1}) bludgeoning damage. If the attack is successful and the target is a humanoid, it must succeed on a {@dc 22} Wisdom saving throw or be transformed into a {@creature raven|MM} under the control of the Lady."
+					]
+				},
+				{
+					"name": "Children of the Feather (1/Day)",
+					"entries": [
+						"The Lady magically calls {@dice 2d6} {@creature swarm of ravens|MM}. While outdoors, the Lady can call {@dice 3d4} {@creature giant raven|SKT}s instead. The called creatures arrive in {@dice 1d4} rounds, acting as allies of the Lady and obeying her spoken commands. The birds remain for 1 hour, until the Lady dies, or until she dismisses them as a bonus action."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"damageTagsSpell": [
+				"A",
+				"C",
+				"F",
+				"I",
+				"L",
+				"N",
+				"O",
+				"T",
+				"Y"
+			],
+			"savingThrowForced": [
+				"charisma",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"dexterity",
+				"intelligence",
+				"wisdom"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/qGv7z7J.png"
+			},
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"I know you think I'm a useless old waste, but I've been here longer than most captains. I saw plenty of pretty boys like you come and go. Take my advice and get yourself a raven. Take care of it. Make sure it's fed and watered, even if it means you have to go without.",
+							"Then pray you never go near that island. If you do, release the raven and pray she likes it more than you."
+						],
+						"by": "Morgan “One Eye” LeBlanc. Quartermaster on the merchant ship “Rellin's Ghost"
+					},
+					"No one knows the Lady of Raven's true name, includ-ing the Lady herself. She is a petite woman with long dark hair styled around elaborate combs. Her eyes are the same color as her hair and both are a perfect com-plement to her pale skin. Her demeanor is cold and haughty. The Lady of Ravens looks at people the same way she might look at something she just stepped in. The Lady rarely allows her icy demeanor to crack, and when she does, she can stun people with the force of her personality. Her emotional highs and lows are cap-tivating, to behold. She can dominate a group of peo-ple through sheer force of personality alone. The Lady is more likely to relax around the isle of ravens.",
+					{
+						"type": "entries",
+						"name": "Background",
+						"page": 284,
+						"entries": [
+							"The Lady of Ravens was born into a world of silence and isolation. She was the last in a long line of nobility that had long fallen into inbreed-ing and insanity. Her mother died when the Lady was a toddler and the Lady of Ravens neither remembers her nor cares. The Lady's father spent his days in a drugged haze and wandered the halls of the castle, talking to unseen spirits and friends long dead. The Lady never talked to the servants that raised her or took care of her day to day needs,not considering them important enough to matter in any way. The Lady despised the other children that lived in the castle, and they soon learned to avoid her altogether. The Lady of Raven's only joy was the Tower of Flint. A 400 foot tall edifice of gray stone that sat in the middle of her cas-tle, hundreds of ravens roosted in the tower. The Lady of Ravens had inherited the ability to talk to ravens, passed down by her mother. The Lady spent hours in the tower, telling the ravens stories, and listening to the tales they told her in return. After her father's death the Lady rarely left the tower, spending days in conversa-tion with her ravens. This was the way of things un-til the Lady reached her late teens. Looking from the windows of her tower, she spotted a handsome young man. The Lady became obsessed with the man, the son of a servant, and set her ravens to follow his every move. When he departed to fight in some nameless war, she was devastated, barely sleeping or eating for a year. She was overjoyed to hear the news from one of her ravens—the man had returned. Her joy turned to rage when the young man immediately fell into the arms of another woman.. Devastated and enraged, the Lady sent her ravens to tear the young lovers apart. Grief stricken, the Lady spent several days in her tower mourning the death of her obsession. When she left she found the Tower of Flint was standing alone on an isle in the middle of a vast sea. To make matters worse, the Lady found she could not remember her own name. Even more devastating, although she could command the ravens of her isle with an act of will, she could no longer talk to her friends."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Current Sketch",
+						"page": 284,
+						"entries": [
+							"The Lady of Ravens is obsessed with talking to her beloved raven friends again. She believes that finding her lost name is the key to this, as the ability was passed down from her ancestors, and her name represents her ancestry. If a group of humans lands in the Lady's isle and appears to be well learned or intelli-gent enough to aid the Lady in her quest, she may offer them treasure or hospitality if they agree to aid her. If they don't agree to help the Lady then she will force them to serve with her magic. The Lady has magical means to track and communicate with her minions. Oc-casionally, the Lady of Ravens becomes enamoured with a handsome sailor or adventurer. That individual is gifted a raven as a mark of the Lady's favor. While the raven is alive, that individual will have great fortune in the seas around the Isle of Ravens. The individual will amass great wealth and avoid the worst storms, so long as that raven survives. If the raven dies, the indi-vidual loses the Lady's favor instantly, and all his good luck turns to ash—their treasure will be stolen, food will rot in their mouth, and their friends will abandon them or die. Eventually the Lady of Ravens will appear, and change her paramour into a raven to replace her lost friend that she entrusted to that sailor. No raven gifted in this way has lived longer than two months."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Darklord's Tactics",
+						"page": 284,
+						"entries": [
+							"Combat revolts the Lady. If she believes her opponents have nothing to offer her, she will use her Circe's Eye ability to change them into ravens as a warning to others. If pressed into actual combat, the Lady will use her powerful spells to crush her enemies from afar. If hard pressed, she will command her ravens to attack her foes, but is loath to put her precious birds in danger."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Borders",
+						"page": 284,
+						"entries": [
+							"When the Lady of Ravens closes her borders, storms encircle her isle. Any attempt to move through the storm is hopeless. The winds and lashing waves will blind and disorient anyone attempting to cross and push them back to the Isle of Ravens."
+						]
+					},
+					{
+						"name": "Significant Possessions",
+						"type": "inset",
+						"entries": [
+							{
+								"type": "list",
+								"items": [
+									"1 {@item Robe of the Archmagi|DMG}",
+									"1 {@item Staff of the Black Claw|Darklords&DomainsVol1}",
+									"1 {@item Cloak of Charisma|Darklords&DomainsVol1}"
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/aXIuzKP.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Captain Alain Monette",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"shapechanger"
+				]
+			},
+			"source": "Darklords&DomainsVol1",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d10 + 4d8 + 7d6 + 33",
+				"average": 103
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 40
+			},
+			"str": 16,
+			"dex": 17,
+			"con": 14,
+			"int": 15,
+			"wis": 10,
+			"cha": 12,
+			"passive": 16,
+			"cr": "7",
+			"shortName": "Captain Alain Monette",
+			"page": 290,
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"languages": [
+				"Common",
+				"Thieves' Cant"
+			],
+			"languageTags": [
+				"C"
+			],
+			"save": {
+				"str": "+6",
+				"dex": "+5"
+			},
+			"skill": {
+				"acrobatics": "+5",
+				"intimidation": "+4",
+				"perception": "+6",
+				"sleight of hand": "+5",
+				"stealth": "+8"
+			},
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't silvered",
+					"cond": true
+				}
+			],
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"Alain can use his action to polymorph into a Medium bat-humanoid hybrid or back into his true form, which is humanoid but not during the tide whence he unwillingly changes to his hybrid form for the duration. His statistics, other than its size, are the same in each form. Any equipment he is wearing or carrying isn't transformed. He reverts to his true form if he dies."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity (Hybrid Form Only)",
+					"entries": [
+						"While in sunlight, Alain has disadvantage on attack rolls, as well as on Wisdom (Percep-tion) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Rejuvenation",
+					"entries": [
+						"Alain's hatred for his crew burns so hotly that not even death will keep him from exacting his revenge. If Alain is slain, he and his equipment melt to bat guano. A week later, a flock of bats start frantically flitting above the Eye of Midnight from dusk to dawn. At first light, they merge together and in a dark light explosion, Captain Alain emerges in his hybrid form with his equipment on hand. During this week, the borders of the domain remain open for anyone to escape. The only possible way for Alain to truly die is for the ship and mutineers to happen upon the island. If the mutineers are slain and the ship is burned while within the domain, then Alain loses the ability to rejuvenate."
+					]
+				},
+				{
+					"name": "Keen Hearing (Hybrid Form Only)",
+					"entries": [
+						"Alain has advantage on Wis-dom (Perception) checks that rely on hearing."
+					]
+				},
+				{
+					"name": "Echolocation (Hybrid Form Only)",
+					"entries": [
+						"Alain can't use his blindsight while {@condition deafened}."
+					]
+				},
+				{
+					"name": "Nimble Escape (Humanoid Form Only)",
+					"entries": [
+						"Alain can take the Disen-gage or Hide action as a bonus action on each of his turns."
+					]
+				},
+				{
+					"name": "Second Wind",
+					"entries": [
+						"Alain has a limited well of stamina that he can draw on to protect himself from harm. On his turn, he can use a bonus action to regain hit points equal to {@dice 1d10 + 5}. Once he uses this feature, he must finish a short or long rest before he can use it again."
+					]
+				},
+				{
+					"name": "Action Surge",
+					"entries": [
+						"Alain can push himself beyond his normal limits for a moment. On his turn, he can take one additional action. Once he uses this feature, he must finish a short or long rest before he can use it again."
+					]
+				},
+				{
+					"name": "Ranged Fighting Specialist",
+					"entries": [
+						"Alain gains a +2 bonus to attack rolls he makes with ranged weapons (included)."
+					]
+				},
+				{
+					"name": "Gunner",
+					"entries": [
+						"Alain has a quick hand and keen eye when employing firearms. He ignores the loading property of firearms. Being with-in 5 feet of a hostile creature doesn't impose disadvantage on his ranged attack rolls."
+					]
+				},
+				{
+					"name": "Trick Shots",
+					"entries": [
+						"Alain knows two trick shots. Each use of a trick shot must be declared before the attack roll is made. He can use only one trick shot per attack."
+					]
+				},
+				{
+					"name": "Trick Shots - Disarming Shot",
+					"entries": [
+						"When Alain makes a firearm attack against a creature, he can expend one grit point to attempt to shoot an object from their hands. On a hit, the creature suffers normal damage and must succeed on a {@dc 14} Strength saving throw or drop 1 held object of Alain's choice and have that object be pushed 10 feet away from them."
+					]
+				},
+				{
+					"name": "Trick Shots - Dazing Shot",
+					"entries": [
+						"When Alain makes a firearm attack against a creature, he can expend one grit point to attempt to dizzy his opponent. On a hit, the creature suffers normal damage and must make a {@dc 14} Constitution saving throw or suffer disadvantage on attacks until the end of their next turn."
+					]
+				},
+				{
+					"name": "Grit",
+					"entries": [
+						"Alain has 1 grit point. He regains 1 expended grit point each time he rolls a 20 on the {@dice d20} roll for an attack with a firearm, or deals a killing blow with a firearm. He regains all expended grit points after a short or long rest."
+					]
+				},
+				{
+					"name": "Sneak Attack",
+					"entries": [
+						"Alain knows how to strike subtly and exploit a foe's distraction. Once per turn, he can deal an extra {@damage 2d6} damage to one creature he hits with an attack if he has advantage. The attack must use a finesse or a ranged weapon. He doesn't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't {@condition incapacitated}, he is within 5ft of the target, no other creatures are within 5 feet of him and he doesn't have disadvantage on the attack roll."
+					]
+				},
+				{
+					"name": "Fancy Footwork",
+					"entries": [
+						"Alain knows how to land a strike and then slip away without reprisal. During his turn, if he makes a melee attack against a creature, that creature can't make opportunity attacks against him for the rest of Alain's turn."
+					]
+				},
+				{
+					"name": "Rakish Audacity",
+					"entries": [
+						"Alain's confidence propels him into battle. He rolls initiative with a +1 bonus on the die."
+					]
+				},
+				{
+					"name": "Master of Reach",
+					"entries": [
+						"Alain can keep his enemies at bay with reach weapons. When he takes the Attack action and attacks with a reach weapon, he can use a bonus action to make a melee attack with the opposite end of the weapon. The weapon's damage die for this attack is a {@dice d4}, and the attack deals bludgeoning damage. Also, other creatures provoke an opportunity attack from him when they enter his reach."
+					]
+				},
+				{
+					"name": "Sentinel",
+					"entries": [
+						"Alain has mastered techniques to take advantage of every drop in any enemy's guard, gaining the following benefits: ",
+						{
+							"type": "list",
+							"items": [
+								"When he hits a creature with an opportunity attack, the creature's speed becomes 0 for the rest of the turn.",
+								"Creatures within 5 feet of him provoke opportunity attacks from him even if they take the Disengage action before leaving his reach.",
+								"When a creature within 5 feet of Alain makes an attack against a target other than himself (and that target doesn't have this feat), Alain can use his reaction to make a melee weapon attack against the attacking creature."
+							]
+						}
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Rejuvenation",
+				"Shapechanger",
+				"Sneak Attack",
+				"Sunlight Sensitivity"
+			],
+			"conditionInflict": [
+				"incapacitated",
+				"prone"
+			],
+			"bonus": [
+				{
+					"name": "Nimble Escape (Humanoid Form Only)",
+					"entries": [
+						"Alain can take the Disen-gage or Hide action as a bonus action on each of his turns."
+					]
+				},
+				{
+					"name": "Second Wind",
+					"entries": [
+						"Alain has a limited well of stamina that he can draw on to protect himself from harm. On his turn, he can use a bonus action to regain hit points equal to {@dice 1d10 + 5}. Once he uses this feature, he must finish a short or long rest before he can use it again."
+					]
+				},
+				{
+					"name": "Master of Reach",
+					"entries": [
+						"Alain can keep his enemies at bay with reach weapons. When he takes the Attack action and attacks with a reach weapon, he can use a bonus action to make a melee attack with the opposite end of the weapon. The weapon's damage die for this attack is a {@dice d4}, and the attack deals bludgeoning damage. Also, other creatures provoke an opportunity attack from him when they enter his reach."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack (Humanoid or Hybrid Form Only)",
+					"entries": [
+						"In humanoid form, Alain makes two Great Trident attacks or two Pistol attacks. In hy-brid form, he can make one bite or claw attack and one weapon attack."
+					]
+				},
+				{
+					"name": "Great Trident +1 (Humanoid or Hybrid Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}9 ({@damage 1d10 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Pistol +1 (Humanoid or Hybrid Form Only)",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 60/240 ft., one target. {@h}8 ({@damage 1d10 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Bite (Hybrid Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Claw (Hybrid Form Only).",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 2d4 + 3}) slashing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"MLW",
+				"RW",
+				"RNG"
+			],
+			"attachedItems": [
+				"+1 pistol|dmg"
+			],
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"Alain can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Alain regains spent legendary actions at the start of his turn."
+			],
+			"legendary": [
+				{
+					"name": "Detect",
+					"entries": [
+						"Alain makes a Wisdom (Perception) check."
+					]
+				},
+				{
+					"name": "Attack",
+					"entries": [
+						"Alain makes a weapon attack of his choice."
+					]
+				},
+				{
+					"name": "Tidal Wave (2 Actions)",
+					"entries": [
+						"Alain conjures up a wave of water that crashes down on an area near the coast of his island. The area can be up to 30 feet long, up to 10 feet wide, and up to 10 feet tall. Each creature in that area must make a {@dc 14} Dexterity saving throw. On a failed save, a creature takes {@damage 4d8} bludgeoning damage and is knocked {@condition prone}. On a successful save, a creature takes half as much damage and isn't knocked {@condition prone}. The water then spreads out across the ground in all directions, extinguish-ing unprotected flames in its area and within 30 feet of it, and then withdraws back into the sea. At this point, a creature must succeed on a {@dc 14} Strength saving throw or be pulled 40ft. into the furious sea."
+					]
+				}
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"strength"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/nB8acbU.png"
+			},
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"If this island is to be my Hell, then it shall be Hell for every man that washes ashore.",
+							"Only the damned come here and only the dead shall leave."
+						],
+						"by": "Captain Alain Monette"
+					},
+					"Alain Monette has three forms: human and a macabre hybrid of man and bat. In his human form Monette is nearly seven feet tall and almost impossibly thin. His eyes are as gray as a stormy sky and he never seems to blink. His face is craggy and marred by a jagged scar. Monette's expression is stern, even when his words are friendly. Alain is a captain and still wears a spotless blue uniform. The uniform is blue, but so dark it appears to be black. His gold buttons are polished until they shine.",
+					"In his hybrid form, he's a grotesque mix of bat and hu-man, covered with gray fur, with his arms becoming wings tipped with vicious claws. The captain's head is crowned with large ears, his eyes become red and bloodshot and his mouth is full of needle sharp fangs. Monette cannot control his transformations, but only hunts in his hybrid shape.",
+					{
+						"type": "entries",
+						"name": "Background",
+						"page": 289,
+						"entries": [
+							"Alain Monette was the infamous captain of the privateer vessel {@i Ouragan}. Monette was an incredible captain. He knew every rope, nail, and barrel of ballast on the Ouragan. He had seen every hazard on the open sea and feared no obstacle, whether natu-ral, magical, or man made. Monette's skill as a captain and his legendary conquests brought sailors flocking to his flag. Once the new sailors were at sea, they found out why Captain Alain Monette constantly took on new crew. Monette was an absolute despot on his ship. Even minor infractions of his complicated and extensive code resulted in brutal beatings and floggings. The shred-ded skins of the sailors that Monette had keelhauled were hung from the yard arms as grisly trophies. Even-tually the crew had too much. Monette had gaff hooks inserted under the rib cage of a sailor who violated one of his obscure codes then dragged the poor fool behind the ship. It didn't take long before splashes of the sailor and trail of blood attracted the attention of sharks. After the sailor stopped screaming the crew, angry and tired of being whipped like dogs, spontaneously mutinied. The officer's joined the crew and Monette was dragged from his cabin and savagely beaten.. The crew tied ropes to his hands and legs then keelhauled. Much to the crew's surprise, Monette survived. The crew simply keelhauled him again, and when he survived a third time. Monette stubbornly clung to life, cursing and swearing revenge. The crew stripped Monette and tied him to the mast. The captain was flogged for over an hour. Still Monette refused to die. Out of ideas and tired of the stubborn captain's refusal to die, the crew simply threw him overboard and sailed away. When the crew was out of sight, the captain finally surrendered into unconsciousness. Monette awoke in a cave. Dozens of furry bodies covered him, licking the blood out of his wounds. Bats. Monette was covered in dozens of small bats. He survived the next few days by catching what bats he could and devouring the screeching creatures raw. At night when his wounds proved too much the bats descended and fed on him in turn. Monette didn't know it, but the Dark Powers had noticed the captain and refused to let him die. As he feasted on the bats, the Dark Powers made them one. After a week, Mon-ette could move around and explore his surroundings, finding himself on a small barren island in the middle of a vast sea. At night the constellations were similar to the ones from his home, but somehow wrong. The seas surrounding Monette's island were treacherous and full of shipwrecks. The beaches were covered in the desiccated skeletons of hundreds of sailors. Almost unconsciously, he started stacking the bones at the top of the tallest point of his island. Impossibly the bones fused together, forming a tower. Monette worked tire-lessly for over a month, living off the bats he caught and the plants that grew in the thin soil of his island. The last bone Monette placed was a skull. The skull was set on top of a pillar of fused spines in the highest room of the tower. When the skull was set, it began to glow and raised into the air above the pillar of spines. Monette's tower, a lighthouse he called the Eye of Midnight, was complete. Monette tried to escape the island on a small boat that he cobbled together from detritus that washed ashore on his island. The further he sailed from the island, the weaker Monette became. Before he had sailed a mile, Monette knew he would be dead if he sailed any further. He was trapped."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Current Sketch",
+						"page": 289,
+						"entries": [
+							"The light of the Eye of Midnight reaches far beyond Ravenloft into hundreds of other worlds. Sailors that see its light inevitably follow it into the treacherous reefs that surround L'île de la Tempête. Their ships are dashed upon the rocks. The few sailors that survive the storm and the waves to make it ashore are far from safe. If Monette is in his human form, he will greet the sailors and ask where they came from. Monette can be polite, even charming when he wants to be, but it's all a facade. Monette is merely buying time until he can transform. Monette is an afflicted ly-canthrope. He cannot control when he changes, but knows it has no connection to the moon. Monette isn't positive, but has recently started to suspect it is con-nected to the changing of the tide. Once he becomes the beast, Monette relentlessly hunts the sailors on his island. He devours the first few victims he kills but toys with his remaining victims. When Monette changes back to his human form, he will pretend to help them remaining prey on his island, telling them about the beast that lives in his island and begging them for help, reveling in their fear and helplessness. When Monette becomes the beast, the hunt starts again. Monette finds the isolation and boredom of L'île de la Tempête maddening. He constantly searches for a way off the island, but to no avail."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Darklord's Tactics",
+						"page": 290,
+						"entries": [
+							"Alain avoids combat in his human form. If he is trapped, he is expert with his ornate cut-lass and flintlock pistol. In hybrid form, Monette prefers to pick off his opponents one at a time. Small victims are snatched and carried to great heights before being dropped onto sharp rocks or into the sea. Larger vic-tims are cut into bloody ribbons with claws and fangs while Monette stays in the air, using his ability to fly to keep out of harm's way."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Borders",
+						"page": 290,
+						"entries": [
+							"Monette can control the seas around L'île de la Tempête. Any ship trying to escape will be swamped by rogue waves and dashed against jagged rocks. Anyone foolish enough to try and swim will be dragged under the waves and never seen again. Monette has to concentrate to use this ability, so it is possible for a ship to escape if he can be distracted for long enough."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/GBOPTSy.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Captain Alain Monette (Bat Form)",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"shapechanger"
+				]
+			},
+			"source": "Darklords&DomainsVol1",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d10 + 4d8 + 7d6 + 33",
+				"average": 103
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 40
+			},
+			"str": 16,
+			"dex": 17,
+			"con": 14,
+			"int": 15,
+			"wis": 10,
+			"cha": 12,
+			"passive": 16,
+			"cr": "7",
+			"shortName": "Captain Alain Monette",
+			"page": 290,
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"languages": [
+				"Common",
+				"Thieves' Cant"
+			],
+			"languageTags": [
+				"C"
+			],
+			"save": {
+				"str": "+6",
+				"dex": "+5"
+			},
+			"skill": {
+				"acrobatics": "+5",
+				"intimidation": "+4",
+				"perception": "+6",
+				"sleight of hand": "+5",
+				"stealth": "+8"
+			},
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't silvered",
+					"cond": true
+				}
+			],
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"Alain can use his action to polymorph into a Medium bat-humanoid hybrid or back into his true form, which is humanoid but not during the tide whence he unwillingly changes to his hybrid form for the duration. His statistics, other than its size, are the same in each form. Any equipment he is wearing or carrying isn't transformed. He reverts to his true form if he dies."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity (Hybrid Form Only)",
+					"entries": [
+						"While in sunlight, Alain has disadvantage on attack rolls, as well as on Wisdom (Percep-tion) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Rejuvenation",
+					"entries": [
+						"Alain's hatred for his crew burns so hotly that not even death will keep him from exacting his revenge. If Alain is slain, he and his equipment melt to bat guano. A week later, a flock of bats start frantically flitting above the Eye of Midnight from dusk to dawn. At first light, they merge together and in a dark light explosion, Captain Alain emerges in his hybrid form with his equipment on hand. During this week, the borders of the domain remain open for anyone to escape. The only possible way for Alain to truly die is for the ship and mutineers to happen upon the island. If the mutineers are slain and the ship is burned while within the domain, then Alain loses the ability to rejuvenate."
+					]
+				},
+				{
+					"name": "Keen Hearing (Hybrid Form Only)",
+					"entries": [
+						"Alain has advantage on Wis-dom (Perception) checks that rely on hearing."
+					]
+				},
+				{
+					"name": "Echolocation (Hybrid Form Only)",
+					"entries": [
+						"Alain can't use his blindsight while {@condition deafened}."
+					]
+				},
+				{
+					"name": "Nimble Escape (Humanoid Form Only)",
+					"entries": [
+						"Alain can take the Disen-gage or Hide action as a bonus action on each of his turns."
+					]
+				},
+				{
+					"name": "Second Wind",
+					"entries": [
+						"Alain has a limited well of stamina that he can draw on to protect himself from harm. On his turn, he can use a bonus action to regain hit points equal to {@dice 1d10 + 5}. Once he uses this feature, he must finish a short or long rest before he can use it again."
+					]
+				},
+				{
+					"name": "Action Surge",
+					"entries": [
+						"Alain can push himself beyond his normal limits for a moment. On his turn, he can take one additional action. Once he uses this feature, he must finish a short or long rest before he can use it again."
+					]
+				},
+				{
+					"name": "Ranged Fighting Specialist",
+					"entries": [
+						"Alain gains a +2 bonus to attack rolls he makes with ranged weapons (included)."
+					]
+				},
+				{
+					"name": "Gunner",
+					"entries": [
+						"Alain has a quick hand and keen eye when employing firearms. He ignores the loading property of firearms. Being with-in 5 feet of a hostile creature doesn't impose disadvantage on his ranged attack rolls."
+					]
+				},
+				{
+					"name": "Trick Shots",
+					"entries": [
+						"Alain knows two trick shots. Each use of a trick shot must be declared before the attack roll is made. He can use only one trick shot per attack."
+					]
+				},
+				{
+					"name": "Trick Shots - Disarming Shot",
+					"entries": [
+						"When Alain makes a firearm attack against a creature, he can expend one grit point to attempt to shoot an object from their hands. On a hit, the creature suffers normal damage and must succeed on a {@dc 14} Strength saving throw or drop 1 held object of Alain's choice and have that object be pushed 10 feet away from them."
+					]
+				},
+				{
+					"name": "Trick Shots - Dazing Shot",
+					"entries": [
+						"When Alain makes a firearm attack against a creature, he can expend one grit point to attempt to dizzy his opponent. On a hit, the creature suffers normal damage and must make a {@dc 14} Constitution saving throw or suffer disadvantage on attacks until the end of their next turn."
+					]
+				},
+				{
+					"name": "Grit",
+					"entries": [
+						"Alain has 1 grit point. He regains 1 expended grit point each time he rolls a 20 on the {@dice d20} roll for an attack with a firearm, or deals a killing blow with a firearm. He regains all expended grit points after a short or long rest."
+					]
+				},
+				{
+					"name": "Sneak Attack",
+					"entries": [
+						"Alain knows how to strike subtly and exploit a foe's distraction. Once per turn, he can deal an extra {@damage 2d6} damage to one creature he hits with an attack if he has advantage. The attack must use a finesse or a ranged weapon. He doesn't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't {@condition incapacitated}, he is within 5ft of the target, no other creatures are within 5 feet of him and he doesn't have disadvantage on the attack roll."
+					]
+				},
+				{
+					"name": "Fancy Footwork",
+					"entries": [
+						"Alain knows how to land a strike and then slip away without reprisal. During his turn, if he makes a melee attack against a creature, that creature can't make opportunity attacks against him for the rest of Alain's turn."
+					]
+				},
+				{
+					"name": "Rakish Audacity",
+					"entries": [
+						"Alain's confidence propels him into battle. He rolls initiative with a +1 bonus on the die."
+					]
+				},
+				{
+					"name": "Master of Reach",
+					"entries": [
+						"Alain can keep his enemies at bay with reach weapons. When he takes the Attack action and attacks with a reach weapon, he can use a bonus action to make a melee attack with the opposite end of the weapon. The weapon's damage die for this attack is a {@dice d4}, and the attack deals bludgeoning damage. Also, other creatures provoke an opportunity attack from him when they enter his reach."
+					]
+				},
+				{
+					"name": "Sentinel",
+					"entries": [
+						"Alain has mastered techniques to take advantage of every drop in any enemy's guard, gaining the following benefits: ",
+						{
+							"type": "list",
+							"items": [
+								"When he hits a creature with an opportunity attack, the creature's speed becomes 0 for the rest of the turn.",
+								"Creatures within 5 feet of him provoke opportunity attacks from him even if they take the Disengage action before leaving his reach.",
+								"When a creature within 5 feet of Alain makes an attack against a target other than himself (and that target doesn't have this feat), Alain can use his reaction to make a melee weapon attack against the attacking creature."
+							]
+						}
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Rejuvenation",
+				"Shapechanger",
+				"Sneak Attack",
+				"Sunlight Sensitivity"
+			],
+			"conditionInflict": [
+				"incapacitated",
+				"prone"
+			],
+			"bonus": [
+				{
+					"name": "Nimble Escape (Humanoid Form Only)",
+					"entries": [
+						"Alain can take the Disen-gage or Hide action as a bonus action on each of his turns."
+					]
+				},
+				{
+					"name": "Second Wind",
+					"entries": [
+						"Alain has a limited well of stamina that he can draw on to protect himself from harm. On his turn, he can use a bonus action to regain hit points equal to {@dice 1d10 + 5}. Once he uses this feature, he must finish a short or long rest before he can use it again."
+					]
+				},
+				{
+					"name": "Master of Reach",
+					"entries": [
+						"Alain can keep his enemies at bay with reach weapons. When he takes the Attack action and attacks with a reach weapon, he can use a bonus action to make a melee attack with the opposite end of the weapon. The weapon's damage die for this attack is a {@dice d4}, and the attack deals bludgeoning damage. Also, other creatures provoke an opportunity attack from him when they enter his reach."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack (Humanoid or Hybrid Form Only)",
+					"entries": [
+						"In humanoid form, Alain makes two Great Trident attacks or two Pistol attacks. In hy-brid form, he can make one bite or claw attack and one weapon attack."
+					]
+				},
+				{
+					"name": "Great Trident +1 (Humanoid or Hybrid Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}9 ({@damage 1d10 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Pistol +1 (Humanoid or Hybrid Form Only)",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 60/240 ft., one target. {@h}8 ({@damage 1d10 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Bite (Hybrid Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Claw (Hybrid Form Only).",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 2d4 + 3}) slashing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"MLW",
+				"RW",
+				"RNG"
+			],
+			"attachedItems": [
+				"+1 pistol|dmg"
+			],
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"Alain can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Alain regains spent legendary actions at the start of his turn."
+			],
+			"legendary": [
+				{
+					"name": "Detect",
+					"entries": [
+						"Alain makes a Wisdom (Perception) check."
+					]
+				},
+				{
+					"name": "Attack",
+					"entries": [
+						"Alain makes a weapon attack of his choice."
+					]
+				},
+				{
+					"name": "Tidal Wave (2 Actions)",
+					"entries": [
+						"Alain conjures up a wave of water that crashes down on an area near the coast of his island. The area can be up to 30 feet long, up to 10 feet wide, and up to 10 feet tall. Each creature in that area must make a {@dc 14} Dexterity saving throw. On a failed save, a creature takes {@damage 4d8} bludgeoning damage and is knocked {@condition prone}. On a successful save, a creature takes half as much damage and isn't knocked {@condition prone}. The water then spreads out across the ground in all directions, extinguish-ing unprotected flames in its area and within 30 feet of it, and then withdraws back into the sea. At this point, a creature must succeed on a {@dc 14} Strength saving throw or be pulled 40ft. into the furious sea."
+					]
+				}
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"strength"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/AZOYohB.png"
+			},
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"If this island is to be my Hell, then it shall be Hell for every man that washes ashore.",
+							"Only the damned come here and only the dead shall leave."
+						],
+						"by": "Captain Alain Monette"
+					},
+					"Alain Monette has three forms: human and a macabre hybrid of man and bat. In his human form Monette is nearly seven feet tall and almost impossibly thin. His eyes are as gray as a stormy sky and he never seems to blink. His face is craggy and marred by a jagged scar. Monette's expression is stern, even when his words are friendly. Alain is a captain and still wears a spotless blue uniform. The uniform is blue, but so dark it appears to be black. His gold buttons are polished until they shine.",
+					"In his hybrid form, he's a grotesque mix of bat and hu-man, covered with gray fur, with his arms becoming wings tipped with vicious claws. The captain's head is crowned with large ears, his eyes become red and bloodshot and his mouth is full of needle sharp fangs. Monette cannot control his transformations, but only hunts in his hybrid shape.",
+					{
+						"type": "entries",
+						"name": "Background",
+						"page": 289,
+						"entries": [
+							"Alain Monette was the infamous captain of the privateer vessel {@i Ouragan}. Monette was an incredible captain. He knew every rope, nail, and barrel of ballast on the Ouragan. He had seen every hazard on the open sea and feared no obstacle, whether natu-ral, magical, or man made. Monette's skill as a captain and his legendary conquests brought sailors flocking to his flag. Once the new sailors were at sea, they found out why Captain Alain Monette constantly took on new crew. Monette was an absolute despot on his ship. Even minor infractions of his complicated and extensive code resulted in brutal beatings and floggings. The shred-ded skins of the sailors that Monette had keelhauled were hung from the yard arms as grisly trophies. Even-tually the crew had too much. Monette had gaff hooks inserted under the rib cage of a sailor who violated one of his obscure codes then dragged the poor fool behind the ship. It didn't take long before splashes of the sailor and trail of blood attracted the attention of sharks. After the sailor stopped screaming the crew, angry and tired of being whipped like dogs, spontaneously mutinied. The officer's joined the crew and Monette was dragged from his cabin and savagely beaten.. The crew tied ropes to his hands and legs then keelhauled. Much to the crew's surprise, Monette survived. The crew simply keelhauled him again, and when he survived a third time. Monette stubbornly clung to life, cursing and swearing revenge. The crew stripped Monette and tied him to the mast. The captain was flogged for over an hour. Still Monette refused to die. Out of ideas and tired of the stubborn captain's refusal to die, the crew simply threw him overboard and sailed away. When the crew was out of sight, the captain finally surrendered into unconsciousness. Monette awoke in a cave. Dozens of furry bodies covered him, licking the blood out of his wounds. Bats. Monette was covered in dozens of small bats. He survived the next few days by catching what bats he could and devouring the screeching creatures raw. At night when his wounds proved too much the bats descended and fed on him in turn. Monette didn't know it, but the Dark Powers had noticed the captain and refused to let him die. As he feasted on the bats, the Dark Powers made them one. After a week, Mon-ette could move around and explore his surroundings, finding himself on a small barren island in the middle of a vast sea. At night the constellations were similar to the ones from his home, but somehow wrong. The seas surrounding Monette's island were treacherous and full of shipwrecks. The beaches were covered in the desiccated skeletons of hundreds of sailors. Almost unconsciously, he started stacking the bones at the top of the tallest point of his island. Impossibly the bones fused together, forming a tower. Monette worked tire-lessly for over a month, living off the bats he caught and the plants that grew in the thin soil of his island. The last bone Monette placed was a skull. The skull was set on top of a pillar of fused spines in the highest room of the tower. When the skull was set, it began to glow and raised into the air above the pillar of spines. Monette's tower, a lighthouse he called the Eye of Midnight, was complete. Monette tried to escape the island on a small boat that he cobbled together from detritus that washed ashore on his island. The further he sailed from the island, the weaker Monette became. Before he had sailed a mile, Monette knew he would be dead if he sailed any further. He was trapped."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Current Sketch",
+						"page": 289,
+						"entries": [
+							"The light of the Eye of Midnight reaches far beyond Ravenloft into hundreds of other worlds. Sailors that see its light inevitably follow it into the treacherous reefs that surround L'île de la Tempête. Their ships are dashed upon the rocks. The few sailors that survive the storm and the waves to make it ashore are far from safe. If Monette is in his human form, he will greet the sailors and ask where they came from. Monette can be polite, even charming when he wants to be, but it's all a facade. Monette is merely buying time until he can transform. Monette is an afflicted ly-canthrope. He cannot control when he changes, but knows it has no connection to the moon. Monette isn't positive, but has recently started to suspect it is con-nected to the changing of the tide. Once he becomes the beast, Monette relentlessly hunts the sailors on his island. He devours the first few victims he kills but toys with his remaining victims. When Monette changes back to his human form, he will pretend to help them remaining prey on his island, telling them about the beast that lives in his island and begging them for help, reveling in their fear and helplessness. When Monette becomes the beast, the hunt starts again. Monette finds the isolation and boredom of L'île de la Tempête maddening. He constantly searches for a way off the island, but to no avail."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Darklord's Tactics",
+						"page": 290,
+						"entries": [
+							"Alain avoids combat in his human form. If he is trapped, he is expert with his ornate cut-lass and flintlock pistol. In hybrid form, Monette prefers to pick off his opponents one at a time. Small victims are snatched and carried to great heights before being dropped onto sharp rocks or into the sea. Larger vic-tims are cut into bloody ribbons with claws and fangs while Monette stays in the air, using his ability to fly to keep out of harm's way."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Borders",
+						"page": 290,
+						"entries": [
+							"Monette can control the seas around L'île de la Tempête. Any ship trying to escape will be swamped by rogue waves and dashed against jagged rocks. Anyone foolish enough to try and swim will be dragged under the waves and never seen again. Monette has to concentrate to use this ability, so it is possible for a ship to escape if he can be distracted for long enough."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/Vn6IIQz.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Leederik, the Phantom Lover",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"shapechanger"
+				]
+			},
+			"source": "Darklords&DomainsVol1",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "21d8 + 63",
+				"average": 157
+			},
+			"speed": {
+				"walk": 30,
+				"fly": {
+					"number": 30,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 17,
+			"int": 17,
+			"wis": 14,
+			"cha": 18,
+			"passive": 17,
+			"cr": "16",
+			"shortName": "Leederik, the Phantom Lover",
+			"page": 296,
+			"languages": [
+				"Common",
+				"Draconic",
+				"Vaasi",
+				"Giant"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"GI"
+			],
+			"senses": [
+				"blindsight 30 ft.",
+				"darkvision 90 ft."
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"save": {
+				"dex": "+6",
+				"wis": "+7",
+				"cha": "+6"
+			},
+			"skill": {
+				"animal handling": "+7",
+				"athletics": "+8",
+				"deception": "+11",
+				"perception": "+7",
+				"persuasion": "+6",
+				"stealth": "+11"
+			},
+			"resist": [
+				"acid",
+				"cold",
+				"necrotic",
+				"poison"
+			],
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical and non blessed attacks",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"restrained"
+			],
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"If the Phantom Lover isn't in sunlight, it can use its action to polymorph into a medium snake, a medium cloud of mist, a medium gargoyle, or back into its true form While in snake or gargoyle form, the Phantom Lover can speak normally. Its statistics are unchanged. Anything it is wearing transforms with it, but nothing it is carrying does. It reverts to its true form if it dies. While in mist form, the Phantom Lover can't take any actions, speak, or manipulate objects. It is weightless, has a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. In addition, if air can pass through a space, the mist can do so without squeezing, and it can't pass through water. It has advantage on Strength, Dexterity, and Constitution saving throws."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the Phantom Lover fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The Phantom Lover regains 20 hit points at the start of its turn if it has at least 1 hit point and isn't in sunlight or running water. If the Phantom Lover takes radiant damage or damage from holy water, this trait doesn't function at the start of its next turn."
+					]
+				},
+				{
+					"name": "Control Doors",
+					"entries": [
+						"The Phantom Lover can cast the knock spell at will and open/close any door or window within the house of the victim. The door to the victim's chambers does more than simply prevent access from the outside. When someone's hand is on the knob, it alerts the Phantom Lover as if an alarm spell was casted on it, the Phantom Lover with a bonus action can change the knob's shape, so that it holds fast to the person's hand and strives to crush it even as it heats to sear the skin, dealing {@dice 1d4} bludgeoning and {@damage 1d4} fire damage. The wood of the door may twist and warp to form another hand that reaches for the throat of someone nearby, gouging their skin with shards of wood. It has a {@hit 6} to hit and deals {@dice 1d6} points of piercing damage."
+					]
+				},
+				{
+					"name": "Ethereal Entity",
+					"entries": [
+						"As a bonus action, the Phantom Lover can magically shift from the Material Plane to the Ethereal Plane, or vice versa. It can see 60ft into the Ethereal plane from the Material plane and vice versa. If it wishes, it is visible on The Material Plane while it is in the Border Ethereal, and vice versa, yet it can't affect or be affected by anything on the other plane."
+					]
+				},
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"The Phantom Lover can move through other creatures and objects as if they were difficult terrain. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The Phantom Lover has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Mysterious Powers",
+					"entries": [
+						"The Phantom Lover can cast the {@spell plane shift|PHB}, {@spell misty step|PHB}, {@spell darkness|PHB}, {@spell hold person|PHB}, {@spell tongues|PHB}, {@spell telekinesis|PHB} and {@spell sleep|PHB} spells at will. The Phantom Lover can use the plane shift spell to exit its Domain but only to either enter the chambers of a victim or to return back to its Domain, and only itself can benefit from the spell. The sleep spell affects Creatures that are immune to sleep such as Elves too. The hold person can affect any number of creatures that are guarding the chamber of the victim from within and they become {@condition frightened} for as long as they can see the Phantom Lover and take {@damage 1d6} psychic damage at the start of their turn for as long as they remain {@condition paralyzed}. The darkness spell can only be casted as he arrives into the victim's chamber. Every time the Phantom Lover uses the misty step spell, a swarm of poisonous snakes is left behind at the Phantom Lover's place and it disappears at the end of the Phantom Lover's next turn. The telekinesis spell can only be used as a Legendary action."
+					]
+				},
+				{
+					"name": "In the Eyes of the Victim",
+					"entries": [
+						"The Phantom Lover's Charisma score becomes 18 when it comes to rolls against its main victims. The main victim of the Phantom Lover does not notice the Phantom Lover's grotesque serpent-like leg or any other traits that might alienate it."
+					]
+				},
+				{
+					"name": "Draining Love",
+					"entries": [
+						"Any creature that spends the night with the Phantom Lover loses {@dice 1d4} Strength points. A creature dies if its Strength score reaches 0."
+					]
+				},
+				{
+					"name": "Limited Reach",
+					"entries": [
+						"The Phantom Lover can only affect victims that are found within their chambers. A victim that spends three consecutive nights outside of any room that can be considered a chamber and in open air, is freed from the Phantom Lover's grasp. Moving the victim to another room does not thwart the Phantom Lover; it simply invades the new chamber. Only keeping the victim in the open air can dissuade the Phantom Lover. The victim will resist staying outside until the charm is broken and will try to return to their chamber if they can. A protection from evil and good spell will not stop the Phantom Lover."
+					]
+				},
+				{
+					"name": "Weaknesses",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"{@b Sunlight Hypersensitivity.} The Phantom Lover takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks.",
+								"{@b Holy Water.} If holy water is sprinkled on the Phantom Lover, it becomes {@condition incapacitated} until the end of the next creature in initiative order's turn.",
+								"{@b Driving the fiend away.} A {@spell dispel evil and good|PHB} spell or a {@spell sunbeam|PHB} spell will force the Phantom Lover to return to its domain although it can still try to succeed at its saving throw to avoid it. It is unlikely that the Phantom Lover will return to the same victim again after this is accomplished."
+							]
+						}
+					]
+				},
+				{
+					"name": "Immortality",
+					"entries": [
+						"The Phantom Lover enjoys (or suffers) true immortality. They cannot be completely destroyed, and will return time and time again for as long as there are sorrows and grief of immense proportions. When the Phantom Lover is slain, it will reform at the top of its tower, ten nights later."
+					]
+				}
+			],
+			"traitTags": [
+				"Incorporeal Movement",
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Regeneration",
+				"Shapechanger"
+			],
+			"action": [
+				{
+					"name": "Multiattack (True Form Only)",
+					"entries": [
+						"The Phantom Lover makes two attacks, only one of which can be a Wisdom Drain attack."
+					]
+				},
+				{
+					"name": "Wisdom Drain",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) necrotic damage. The target's Wisdom score is reduced by {@dice 1d4}. The target dies if this reduces its Wisdom to 0. Otherwise, the reduction lasts until the target finishes a short or long rest."
+					]
+				},
+				{
+					"name": "Unarmed Strike (bludgeoning)",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) bludgeoning damage. Instead of dealing damage, the Phantom Lover can grapple the target (escape {@dc 16})."
+					]
+				},
+				{
+					"name": "Unarmed Strike (slashing)",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage. Instead of dealing damage, the Phantom Lover can grapple the target (escape {@dc 16})."
+					]
+				},
+				{
+					"name": "Charm",
+					"entries": [
+						"The Phantom Lover charms one humanoid it can see within 30 ft. of it. If the target can see the Phantom Lover, the target must succeed on a {@dc 16} Wisdom saving throw rolling with disadvantage, against this magic or be {@condition charmed} by the Phantom Lover. The {@condition charmed} target regards the Phantom Lover as a trusted friend to be heeded and protected. Although the target isn't under the Phantom Lover's control, it takes the Phantom Lover's requests or actions in the most favorable way it can. Each time the Phantom Lover or its companions do anything harmful to the target, it can repeat the saving throw with a -5 penalty, ending the effect on itself on a success. Otherwise, the effect lasts for 3 nights or until the Phantom Lover is destroyed, is on a different plane of existence than the target for more than 3 nights, or takes a bonus action to end the effect."
+					]
+				},
+				{
+					"name": "Serpentine and Stone Children (1/Day)",
+					"entries": [
+						"The Phantom Lover magically calls {@dice 4d4} poisonous snakes or {@dice 2d4} gargoyles, provided that the sun isn't up. The called creatures arrive 1 round later, acting as allies of the Phantom Lover and obeying its spoken commands. The creatures remain for 1 hour, until the Phantom Lover dies, or until it dismisses them as a bonus action."
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Each creature of the Phantom Lover's choice that is within 120 feet of the Phantom Lover and aware of it must succeed on a {@dc 16} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the Phantom Lover's Frightful Presence for the next 24 hours."
+					]
+				}
+			],
+			"actionTags": [
+				"Frightful Presence",
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"charmed",
+				"frightened"
+			],
+			"bonus": [
+				{
+					"name": "Control Doors",
+					"entries": [
+						"The Phantom Lover can cast the knock spell at will and open/close any door or window within the house of the victim. The door to the victim's chambers does more than simply prevent access from the outside. When someone's hand is on the knob, it alerts the Phantom Lover as if an alarm spell was casted on it, the Phantom Lover with a bonus action can change the knob's shape, so that it holds fast to the person's hand and strives to crush it even as it heats to sear the skin, dealing {@dice 1d4} bludgeoning and {@damage 1d4} fire damage. The wood of the door may twist and warp to form another hand that reaches for the throat of someone nearby, gouging their skin with shards of wood. It has a {@hit 6} to hit and deals {@dice 1d6} points of piercing damage."
+					]
+				},
+				{
+					"name": "Ethereal Entity",
+					"entries": [
+						"As a bonus action, the Phantom Lover can magically shift from the Material Plane to the Ethereal Plane, or vice versa. It can see 60ft into the Ethereal plane from the Material plane and vice versa. If it wishes, it is visible on The Material Plane while it is in the Border Ethereal, and vice versa, yet it can't affect or be affected by anything on the other plane."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Darklords&DomainsVol1LairActionsLeederikThePhantomLover",
+				"source": "Darklords&DomainsVol1"
+			},
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"The Phantom Lover can take 3 legendary actions, choosing from ",
+				"the options below. Only one legendary action option can be used ",
+				"at a time and only at the end of another creature's turn. The Phantom Lover regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"The Phantom Lover moves up to its speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"The Phantom Lover makes one unarmed strike."
+					]
+				},
+				{
+					"name": "Telekinesis (3 actions)",
+					"entries": [
+						"The Phantom Lover casts the {@spell telekinesis|PHB} spell."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"N",
+				"O",
+				"R",
+				"S"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/Iub5XS8.png"
+			},
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"Erik returned to me last night!",
+							"He was here! As handsome as ever and as real as myself!",
+							"We will be together soon. He says so. He just has to prepare the way.",
+							"Soon. I cannot wait. Soon."
+						],
+						"by": "Diary of Ingrid von Schloss (deceased)"
+					},
+					"Describing the Phantom Lover is like attempting to describe a dream. Their form changes to match his victims' ideal of beauty, yet no matter what form they take, their left foot remains scaled and clawed, like that of a drag-on. Their hair can be of any color or any style; long, short, bald, blonde, auburn or whatever. One reported form that they take is that of a great black snake with solid blood red eyes; none can tell whether this is their true form or just one of the many in their repertoire.",
+					{
+						"type": "entries",
+						"name": "Background",
+						"page": 295,
+						"entries": [
+							"The first record of a victim of the Phantom Lover is from the world of Toril. There is no name associ-ated with this, so the victim may be one woman or many that fell to the Phantom's wiles.",
+							"The woman's fiancé was brutally taken from her on their wedding day. His corpse was found suspended from the ceiling, nailed to it by his wrists, his organs ripped out and looped on the floor beneath him. Like an abattoir, blood coated the ceiling, walls and floor. His family and friends had been outside the door and not one of them had heard a single sound.",
+							"The young woman never recovered, and withdrew from her family, rarely eating or sleeping. Never talking. As time went on she grew pale and gaunt.",
+							"Then one night her lover returned to her. It was impossible. She knew that, but here he was. She wept and gladly accepted him into her arms. He smelled sweet. He told her all would be well. It was just a matter of time. She smiled for the first time in months.",
+							"Her lover returned night after night. Telling her it was almost time. The woman's family wondered at the sudden change in her mood, for now she ate and laughed, even though with the passing of every night she seemed to become increasingly pale and gaunt. This continued un-til the night her lover appeared and told her that it was time. Finally they could be together forever. They would be wed beneath the stars. The woman took out her wedding dress. She had not touched it since the wedding day. She dressed herself, brushing her long hair, and as she put on her garter, her fiancé held out his hand. She followed him, all the way to her family graveyard. Her husband-to-be beckoned her to an open grave. This is how they could be together. This would be their marital home. He beckoned once more. Her family discovered she was missing the fol-lowing morning. The only evidence that was found was her garter, lying abandoned at the bottom of an empty grave. She was never seen again."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Current Sketch",
+						"page": 295,
+						"entries": [
+							"The Phantom Lover's domain is one of the few domains that travels past the misty borders of Raven-loft. The Lover seems to open a small portal through into other worlds, reaching the chamber of a woman whose heart has been broken through the darkest tragedy. As the Phantom Lover enters the woman's chambers, the windows and doors lock and magically become almost im-pregnable. Sweet smelling mists loop and curl around the windows.. The portal only opens at night, when the wom-an is alone, and closes with the rising of the sun, taking the Lover with it."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Darklord's Tactics",
+						"page": 295,
+						"entries": [
+							"The Phantom Lover will not fight within the chambers of their conquest. They merely disap-pear with a longing look toward the bride-to-be. In their domain, it is another story entirely. The Phantom Lover can move any object or person with powerful telekinesis, raise the remains of their past victims, and is possessed of tremendous strength and vitality. Their abilities have been compared to a vampire, and the comparison has some merit, though the Lover seems to have none of their weaknesses.",
+							"The Lover may try to {@i charm} some of their opponents into protecting them. Against foes that can't be charmed the Lover will use their life draining touch. If one of their oppo-nents is a female with a high Charisma (15 or higher), the Phantom Lover may try to take abduct them and imprison within their tower, where they will drain her of her force of will and love of life before returning to the Material Plane to search for more victims. It is unknown if the Phantom can die. Their wounds heal no matter how grievous. The Phantom thinks they are immortal, but is unwilling to test the theory."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Borders",
+						"page": 295,
+						"entries": [
+							"The Phantom Lover's domain is surrounded by mists, and when the Lover closes their borders, the laby-rinth that leads to them turns into an impossible series of loops and turns that eventually returns to the base of the tower. A creature who jumps from the tower disappears and awakens somewhere in the labyrinth, unharmed but still at the mercy of the Phantom."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/N40LWeN.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Baron Lyron Evensong",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"source": "Darklords&DomainsVol1",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item breastplate|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d8 + 18",
+				"average": 58
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 15,
+			"con": 15,
+			"int": 14,
+			"wis": 12,
+			"cha": 17,
+			"passive": 11,
+			"cr": "5",
+			"shortName": "Baron Lyron Evensong",
+			"page": 302,
+			"languages": [
+				"Sithican",
+				"Darkonese",
+				"Draconic",
+				"Vaasi",
+				"Graben",
+				"Elven",
+				"Halfling",
+				"Sylvan",
+				"Dwarven",
+				"Gnome",
+				"Giant"
+			],
+			"languageTags": [
+				"DR",
+				"H",
+				"S",
+				"GI"
+			],
+			"save": {
+				"dex": "+5",
+				"cha": "+6"
+			},
+			"skill": {
+				"acrobatics": "+5",
+				"performance": "+9",
+				"persuasion": "+9",
+				"sleight of hand": "+5"
+			},
+			"trait": [
+				{
+					"name": "Delusional",
+					"entries": [
+						"Lyron does not recognise the evil of his character and believes himself to be lawful good. He will never attack other characters himself unless they attempt to destroy his harpsichord. "
+					]
+				},
+				{
+					"name": "Immaterial",
+					"entries": [
+						"Lyron does not possess a physical body and only his spirit roams around. If a creature tries to attack or even touch Baron Lyron, the creature's weapon or limb simply passes through him as though he were smoke. He is immune to all damage while immaterial. Otherwise, Lyron appears perfectly solid and cannot pass through the walls or doors of his mansion. Lyron can only materialize if his harpsichord is attacked. It takes a full turn for him to become material. "
+					]
+				},
+				{
+					"name": "Seemingly Immortal",
+					"entries": [
+						"Time does not run the same for Lyron as it does for other creatures. One hundred years for each day he spends in Claviera pass for him. Thus, when a week passes in the outside world, Lyron has lived 700 years in his study. Lyron shall live a full life of 75 years, one century at a time. If he is defeated, by the time of sunset, he will reap-pear in his study. He can only be truly slain if his harpsichord is destroyed. The harpsichord has an AC of 15 and 100 hit points.  "
+					]
+				},
+				{
+					"name": "House Arrest",
+					"entries": [
+						"Lyron can never leave his mansion and that, no matter where he is in the mansion, when the sun goes down, he reappears back in his study. "
+					]
+				},
+				{
+					"name": "Countercharm",
+					"entries": [
+						"Lyron's musical notes or words of power can disrupt mind-influencing effects. As an action, he can start a performance that lasts until the end of his next turn. During that time, he and any friendly creatures within 30 feet of him have advantage on saving throws against being {@condition frightened} or {@condition charmed}. A creature must be able to hear Lyron to gain this benefit. The performance ends early if Lyron is {@condition incapacitated} or silenced or if he voluntarily ends it (no action required). "
+					]
+				},
+				{
+					"name": "Taunt (2/Day)",
+					"entries": [
+						"Lyron can use a bonus action on his turn to target one creature within 30 feet of him. If the target can hear Lyron, the target must succeed on a {@dc 14} Charisma saving throw or have disadvantage on ability checks, attack rolls, and saving throws until the start of Lyron's next turn. "
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Lyron's innate spellcasting ability is Charisma (spell save {@dc 14}, +6 to hit with spell attacks). He can innately cast the following spells, requiring no material components: "
+					],
+					"will": [
+						"{@spell charm person|PHB}",
+						"{@spell color spray|PHB}",
+						"{@spell expeditious retreat|PHB}",
+						"{@spell friends|PHB}",
+						"{@spell grease|PHB}",
+						"{@spell mage hand|PHB}",
+						"{@spell message|PHB}",
+						"{@spell Tasha's hideous laughter|PHB}",
+						"{@spell vicious mockery|PHB}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell counterspell|PHB}",
+							"{@spell healing word|PHB}",
+							"{@spell hold person|PHB}",
+							"{@spell hypnotic pattern|PHB}",
+							"{@spell mirror image|PHB}",
+							"{@spell tongues|PHB}"
+						],
+						"1e": [
+							"{@spell dominate person|PHB}",
+							"{@spell haste|PHB}",
+							"{@spell slow|PHB}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"action": [
+				{
+					"name": "Club",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage in melee, or 4 ({@damage 1d4 + 2}) piercing damage at range."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW",
+				"THW"
+			],
+			"attachedItems": [
+				"club|phb",
+				"dagger|phb"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"damageTagsSpell": [
+				"Y"
+			],
+			"savingThrowForced": [
+				"charisma"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/nglCR97.png"
+			},
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"Greetings!",
+							"Welcome to my home, brave adventurers!",
+							"Please eat, drink. Join me in conversation.",
+							"The feast is already laid out.",
+							"Eat like it's the last day of your life."
+						],
+						"by": "Baron Lyron Evensong"
+					},
+					"Baron Lyron Evensong is a tall thin man with blonde hair and blue eyes. The baron dresses well, prefer-ring brighter colors, especially white and bright red. When he first meets someone, he is friendly and outgoing, but soon loses interest.",
+					"Lyron is a natural talker who has a way with people, instantly likeable, but will quickly turn every conver-sation to his favorite topic, himself. Lyron is a natural actor who creates a convincing illusion of normality for a time, but it always falls apart, revealing the truth; that Lyron is a complete sociopath who cares about no one save himself.",
+					{
+						"type": "entries",
+						"name": "Background",
+						"page": 301,
+						"entries": [
+							"Lyron Evensong was a bard of exceptional ability, who came from the same world as Lord Soth and Vlad Drakov. His bardic talents were only exceeded by his complete self absorption. Lyron was incapable of seeing other people as anything but tools to be used and discarded. It mattered not whether his victims were women nor men, rich nor poor, royalty nor the basest peasant, as long as they did what Lyron wanted. He thought this was the natural way of things, and that anything he forced his victims to do was inherently good, because Lyron himself was inherently good.",
+							"As his fame as a performer grew, Lyron amassed a better treasury than most kings. He paid a wizard to enchant his favorite instrument, a harpsichord, to en-snare the senses of those who heard it. If the wizard did his work well, the harpsichord would play of its own accord any song Lyron knew just as well as he could, and it would cast a spell on anyone who heard it, making them into Lyron's slaves. But something went wrong. Horribly wrong.",
+							"The wizard didn't make the harpsichord part of Lyron, he made Lyron part of the harpsichord. The bard couldn't move more than a few hundred feet from the instrument. The harpsichord couldn't play on its own, but Lyron could change from a living, breathing being to an immaterial specter. While he was immaterial, Lyron couldn't be attacked by blade nor spell, but could cast spells of his own.",
+							"Lyron continued to manipulate everyone around him to gain himself more wealth and favors, but with a new sadistic streak. The bard thought he was untouchable. A god. He could get away with murder, blackmail, and thievery, and no one could stop him.",
+							"The few that resisted Lyron's powerful compulsions soon became the target of his undying hatred. Most met their end thanks to Lyron's wickedly sharp dagger. The few that Lyron thought might prove able to defeat him were betrayed by enspelled friends or family.",
+							"One night, Lyron was the guest of a small noble family, well off, but extremely well connected. For some unfathomable reason the mother resisted Lyron's spells. Lyron, infuriated beyond comprehension, her children slaughter their mother, then feast on the remains. The Dark Powers took Lyron into Ravenloft and gave him his own domain, Claveria."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Current Sketch",
+						"page": 301,
+						"entries": [
+							"Lyron cares little for his domain. During the day he roams around his manor house, keeping an ear out for rumors from the village about new or interesting strangers that entered into the do-main. Adventurers are a particular favorite. Once he finds these strangers, he invites them to his manor house for a feast.",
+							"In addition to his domain, the Dark Powers gifted Lyran with a unique curse. Every night the library within his manor house becomes its own domain. Lyran and any guests that are in the library when the sun sets are trapped in the library for a century. Only a single night passes in Claveria. The library never runs out of air and the living trapped in it have no need of food or water, yet continue to age normally. Lyron himself does not age, and has spent over a thousand years trapped in the library of his own home. The only way out is to destroy his enchanted harpsichord, sitting in a quiet corner of the library."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Darklord's Tactics",
+						"page": 301,
+						"entries": [
+							"Lyron disdains combat, finding it boring. The Dark Powers won't let their plaything die anyway. He's been killed several times, only to be returned to life twenty-four hours later.",
+							"When Lyron is immaterial, no attack can affect him, but Lyron cannot inflict any hit point damage. Lyron can cast spells from the illusion and enchantment schools. When he is in his material form he can be attacked normally. Lyron is always armed with a dagger and has several weapons hidden around the library. Lyron will ignore any physical threat, unless they attack his harpsichord. If the instrument is in danger Lyron immediately returns to material form and attacks."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Borders",
+						"page": 301,
+						"entries": [
+							"Lyron cannot close the borders to Claveria. During the night the library of the manor house becomes a pocket domain that everyone, including Lyron, is trapped inside."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/z5Sgokh.jpg"
 						}
 					}
 				]
